@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""Run a command on an NVIDIA GPU that nobody else is using, and get out of the way if someone arrives.
+
+The node is shared. Before every run this checks each GPU and only picks one that has no compute
+process, almost no memory in use and idle utilization, and that none of our own jobs holds. While the
+command runs it keeps watching that GPU; if a process that is not ours shows up (or memory we cannot
+account for), the command is killed and, by default, re-queued.
+
+    gpu_run [--max-wait SEC] [--no-requeue] [--] <command ...>
+    gpu_run --status
+
+Exit codes: the command's own code; 75 if it could not get a GPU in time or was preempted with
+--no-requeue.
+"""
+from __future__ import annotations
+
+import argparse
+import fcntl
+import os
+import signal
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+LOCK_DIR = Path(os.environ.get("GPU_GUARD_LOCK_DIR", "/tmp/gpu_run_locks"))
+MAX_OURS = int(os.environ.get("GPU_GUARD_MAX_OURS", "4"))
+ALLOWED = [int(x) for x in os.environ.get("GPU_GUARD_GPUS", "0,1,2,3").split(",")]
+FREE_MEM_MIB = 1024
+FREE_UTIL = 5
+FOREIGN_MEM_MIB = 1536
+POLL = 30
+WATCH = 3
+EX_TEMPFAIL = 75
+
+
+def log(msg: str) -> None:
+    print(f"[gpu_run {time.strftime('%H:%M:%S')}] {msg}", file=sys.stderr, flush=True)
+
+
+def smi(query: str, kind: str = "gpu") -> list[list[str]]:
+    flag = "--query-gpu" if kind == "gpu" else "--query-compute-apps"
+    out = subprocess.run(["nvidia-smi", f"{flag}={query}", "--format=csv,noheader,nounits"],
+                         capture_output=True, text=True, timeout=60).stdout
+    return [[c.strip() for c in line.split(",")] for line in out.strip().splitlines() if line.strip()]
+
+
+def gpu_state() -> dict[int, dict]:
+    gpus = {}
+    for idx, uuid, util, mem in smi("index,uuid,utilization.gpu,memory.used"):
+        gpus[int(idx)] = {"uuid": uuid, "util": int(util), "mem": int(mem), "procs": []}
+    by_uuid = {g["uuid"]: g for g in gpus.values()}
+    for pid, uuid, mem in smi("pid,gpu_uuid,used_memory", "apps"):
+        if uuid in by_uuid:
+            by_uuid[uuid]["procs"].append((int(pid), int(mem) if mem.isdigit() else 0))
+    return gpus
+
+
+def looks_free(g: dict) -> bool:
+    return not g["procs"] and g["mem"] <= FREE_MEM_MIB and g["util"] <= FREE_UTIL
+
+
+def held_by_us(idx: int) -> bool:
+    path = LOCK_DIR / f"gpu{idx}.lock"
+    if not path.exists():
+        return False
+    with open(path, "a") as f:
+        try:
+            fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return True
+        fcntl.flock(f, fcntl.LOCK_UN)
+    return False
+
+
+def try_lock(idx: int):
+    f = open(LOCK_DIR / f"gpu{idx}.lock", "a+")
+    try:
+        fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        f.close()
+        return None
+    f.seek(0)
+    f.truncate()
+    f.write(f"{os.getpid()} {time.strftime('%F %T')} {' '.join(sys.argv[1:])[:200]}\n")
+    f.flush()
+    return f
+
+
+def acquire(max_wait: float):
+    LOCK_DIR.mkdir(parents=True, exist_ok=True)
+    start, last_note = time.time(), 0.0
+    while True:
+        gpus = gpu_state()
+        ours = sum(held_by_us(i) for i in gpus)
+        if ours < MAX_OURS:
+            for idx in ALLOWED:
+                if idx in gpus and looks_free(gpus[idx]) and not held_by_us(idx):
+                    f = try_lock(idx)
+                    if f is None:
+                        continue
+                    time.sleep(1.5)
+                    again = gpu_state()[idx]
+                    if looks_free(again):
+                        return idx, f
+                    f.close()
+        waited = time.time() - start
+        if waited > max_wait:
+            return None, None
+        if time.time() - last_note > 300:
+            busy = [i for i in ALLOWED if i in gpus and not looks_free(gpus[i])]
+            log(f"waiting for a free GPU (busy with other users: {busy}; ours: {ours}/{MAX_OURS}; "
+                f"waited {waited / 60:.0f} min)")
+            last_note = time.time()
+        time.sleep(POLL)
+
+
+def ancestors(pid: int) -> set[int]:
+    seen = set()
+    while pid > 1 and pid not in seen:
+        seen.add(pid)
+        try:
+            pid = int(Path(f"/proc/{pid}/stat").read_text().rsplit(")", 1)[1].split()[1])
+        except (OSError, IndexError, ValueError):
+            break
+    return seen
+
+
+def foreign_activity(idx: int, child: int) -> tuple[str, str] | None:
+    g = gpu_state()[idx]
+    ours_mem = 0
+    for pid, mem in g["procs"]:
+        if child in ancestors(pid):
+            ours_mem += mem
+        else:
+            return "proc", f"process {pid} that is not ours"
+    if g["mem"] - ours_mem > FOREIGN_MEM_MIB:
+        return "mem", f"{g['mem'] - ours_mem} MiB of memory that is not ours"
+    return None
+
+
+def kill_group(proc: subprocess.Popen) -> None:
+    for sig, wait in ((signal.SIGTERM, 10), (signal.SIGKILL, 5)):
+        try:
+            os.killpg(proc.pid, sig)
+        except ProcessLookupError:
+            return
+        try:
+            proc.wait(wait)
+            return
+        except subprocess.TimeoutExpired:
+            pass
+
+
+def run_once(cmd: list[str], idx: int) -> tuple[int, bool]:
+    env = dict(os.environ, CUDA_VISIBLE_DEVICES=str(idx), GPU_GUARD_HELD="1", GPU_GUARD_GPU=str(idx))
+    # gpu_run itself may run under the guarded venv python, whose startup hook marks this process as blocked
+    env.pop("GPU_GUARD_BLOCKED", None)
+    proc = subprocess.Popen(cmd, env=env, start_new_session=True)
+
+    def forward(signum, _frame):
+        kill_group(proc)
+        sys.exit(128 + signum)
+
+    for sig in (signal.SIGHUP, signal.SIGTERM):
+        signal.signal(sig, forward)
+    streak = {"proc": 0, "mem": 0}
+    try:
+        while True:
+            try:
+                return proc.wait(WATCH), False
+            except subprocess.TimeoutExpired:
+                pass
+            found = foreign_activity(idx, proc.pid)
+            # our own processes come and go (memory is released a moment after exit), so a signal must persist
+            for kind in streak:
+                streak[kind] = streak[kind] + 1 if found and found[0] == kind else 0
+            if streak["proc"] >= 2 or streak["mem"] >= 3:
+                why = found[1]
+                log(f"PREEMPTED: GPU {idx} now has {why}; stopping our job so theirs is unaffected")
+                kill_group(proc)
+                return EX_TEMPFAIL, True
+    except KeyboardInterrupt:
+        kill_group(proc)
+        raise
+
+
+def status() -> int:
+    gpus = gpu_state()
+    for idx, g in sorted(gpus.items()):
+        lock = LOCK_DIR / f"gpu{idx}.lock"
+        holder = lock.read_text().strip() if held_by_us(idx) else ""
+        state = "ours: " + holder if holder else ("free" if looks_free(g) else "busy (other user)")
+        print(f"GPU {idx}: util {g['util']:3d}%  mem {g['mem']:6d} MiB  procs {len(g['procs'])}  {state}")
+    return 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--max-wait", type=float, default=float(os.environ.get("GPU_GUARD_MAX_WAIT", 6 * 3600)))
+    ap.add_argument("--no-requeue", action="store_true")
+    ap.add_argument("--status", action="store_true")
+    ap.add_argument("cmd", nargs=argparse.REMAINDER)
+    args = ap.parse_args()
+    if args.status:
+        return status()
+    cmd = args.cmd[1:] if args.cmd[:1] == ["--"] else args.cmd
+    if not cmd:
+        ap.error("no command given")
+    if os.environ.get("GPU_GUARD_HELD") == "1":
+        return subprocess.call(cmd)
+    while True:
+        idx, lock = acquire(args.max_wait)
+        if idx is None:
+            log(f"no free GPU within {args.max_wait / 60:.0f} min; giving up")
+            return EX_TEMPFAIL
+        log(f"running on GPU {idx}")
+        try:
+            code, preempted = run_once(cmd, idx)
+        finally:
+            lock.close()
+        if not preempted or args.no_requeue:
+            return code
+        log("re-queueing the preempted command")
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
