@@ -36,7 +36,9 @@ done
 
 echo "[launch_team] Iteration $ITER — launching ${#ROLES[@]} agent(s): ${ROLES[*]}" >&2
 
-# Set AGENT_TIMEOUT_ENFORCE=1 to kill an agent after the Timeout its role declares
+# Set AGENT_TIMEOUT_ENFORCE=1 to kill an agent after the Timeout its role declares; EAT_MODEL picks the agents' model
+MODEL_ARGS=()
+[ -n "${EAT_MODEL:-}" ] && MODEL_ARGS=(--model "$EAT_MODEL")
 launch_agent() {
     local ROLE="$1"
     local PROMPT_FILE="$ITER_DIR/${ROLE}_prompt.txt"
@@ -48,7 +50,7 @@ launch_agent() {
 
     echo "[launch_team] Starting agent: $ROLE" >&2
     # Prompt goes through stdin: argv breaks on prompts starting with '-' and on >128KB prompts
-    "${LIMIT[@]}" claude --print --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"} \
+    "${LIMIT[@]}" claude --print "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"} \
         < "$PROMPT_FILE" > "$AGENT_OUTPUT" 2> "$ITER_DIR/${ROLE}_stderr.txt"
     echo "[launch_team] Agent '$ROLE' finished (exit $?)." >&2
 }
@@ -147,9 +149,11 @@ for line in lines[-80:]:
         echo ""
     done
 
-    echo "## Current kernel.cu (first 50 lines)"
-    head -50 "tasks/$TASK/kernel.cu" 2>/dev/null || echo "(not found)"
-    echo ""
+    if [ -f "tasks/$TASK/kernel.cu" ]; then
+        echo "## Current kernel.cu (first 50 lines)"
+        head -50 "tasks/$TASK/kernel.cu"
+        echo ""
+    fi
 
     if [ -f "tasks/$TASK/results.tsv" ]; then
         echo "## Results History"

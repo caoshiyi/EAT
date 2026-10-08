@@ -16,7 +16,12 @@
 #   start_iter: first iteration number when resuming a run (default: 1)
 # Environment: EVAL_CMD (official eval run after each team, see launch_team.sh), RESUME_SESSION_ID (persistent mode:
 #   continue an earlier supervisor session), CLAUDE_EXTRA_DISALLOWED (extra tools denied to every agent, e.g.
-#   "WebSearch,WebFetch" for clean-room runs)
+#   "WebSearch,WebFetch" for clean-room runs), SCORE_KEY (the `key = number` line of the official eval that is the
+#   score; default mean_vs_base), EAT_MODEL / EAT_SUPERVISOR_MODEL (claude --model for the agents / the supervisor;
+#   default: the CLI's own default, and the supervisor follows EAT_MODEL)
+# Per-task overrides, used when the file exists: agent_team/SUPERVISOR.<task>.md (supervisor instructions),
+#   tasks/<task>/supervisor_intro.md (the first lines of the supervisor's prompt), tasks/<task>/bootstrap.md
+#   (the "last team's output" of iteration 1)
 
 set -euo pipefail
 
@@ -42,6 +47,12 @@ TEAM_OUTPUT="$SCRIPT_DIR/TEAM_OUTPUT.md"
 TEAM_CONFIG="$SCRIPT_DIR/TEAM_CONFIG.md"
 BUDGET_LOG="$SCRIPT_DIR/BUDGET.md"
 CUMULATIVE_COST=0
+SCORE_KEY="${SCORE_KEY:-mean_vs_base}"
+SUP_MODEL="${EAT_SUPERVISOR_MODEL:-${EAT_MODEL:-}}"
+SUP_MODEL_ARGS=()
+[ -n "$SUP_MODEL" ] && SUP_MODEL_ARGS=(--model "$SUP_MODEL")
+SUPERVISOR_MD="$SCRIPT_DIR/SUPERVISOR.md"
+[ -f "$SCRIPT_DIR/SUPERVISOR.$TASK.md" ] && SUPERVISOR_MD="$SCRIPT_DIR/SUPERVISOR.$TASK.md"
 
 # For persistent mode, generate a valid UUID session ID
 # RESUME_SESSION_ID continues an earlier persistent supervisor session when restarting with START_ITER
@@ -63,7 +74,7 @@ import re, json, glob, os
 
 official = '$iter_dir/official_eval.txt'
 if os.path.exists(official):
-    m = re.findall(r'mean_vs_base\s*=\s*([\d.]+)', open(official).read())
+    m = re.findall(r'\b' + re.escape('$SCORE_KEY') + r'\s*=\s*(-?[\d.]+)', open(official).read())
     if m:
         print(m[-1]); import sys; sys.exit(0)
 
@@ -113,14 +124,20 @@ except:
 
 # Build the supervisor system prompt (used once in persistent mode, every time in stateless)
 build_supervisor_system_prompt() {
-    cat <<SYSTEM_PROMPT
+    if [ -f "$PROJECT_DIR/tasks/$TASK/supervisor_intro.md" ]; then
+        cat "$PROJECT_DIR/tasks/$TASK/supervisor_intro.md"
+    else
+        cat <<INTRO
 You are the supervisor for a GPU kernel optimization team.
 Task: $TASK
 
 CRITICAL: Your final output MUST end with the ---BEGIN TEAM_CONFIG--- / ---END TEAM_CONFIG--- block in the exact template format shown below. You may read files and run eval commands to inform your decisions, but you MUST NOT spawn agents or modify kernel files — your ONLY deliverable is the team configuration block. Do NOT skip the template.
+INTRO
+    fi
+    cat <<SYSTEM_PROMPT
 
 ## Your instructions
-$(cat "$SCRIPT_DIR/SUPERVISOR.md")
+$(cat "$SUPERVISOR_MD")
 
 $(cat "$SCRIPT_DIR/requirements/$TASK.md")
 
@@ -187,13 +204,13 @@ run_supervisor() {
             full_prompt="$(build_supervisor_system_prompt)
 
 $(build_iter_prompt "$iter")"
-            claude --print --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
+            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
                 --session-id "$SESSION_ID" \
                 < <(printf '%s\n' "$full_prompt") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
         else
             # Subsequent iterations: resume same session with just the iter prompt
             echo "[supervisor] Resuming persistent session ($SESSION_ID)..."
-            claude --print --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
+            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
                 --resume "$SESSION_ID" \
                 < <(build_iter_prompt "$iter") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
         fi
@@ -204,7 +221,7 @@ $(build_iter_prompt "$iter")"
         full_prompt="$(build_supervisor_system_prompt)
 
 $(build_iter_prompt "$iter")"
-        claude --print --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
+        claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
             < <(printf '%s\n' "$full_prompt") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
     fi
 }
@@ -238,6 +255,9 @@ print(0)
 fi
 
 # Initialize TEAM_OUTPUT.md for first iteration (no prior team)
+if [ ! -f "$TEAM_OUTPUT" ] && [ -f "$PROJECT_DIR/tasks/$TASK/bootstrap.md" ]; then
+    cp "$PROJECT_DIR/tasks/$TASK/bootstrap.md" "$TEAM_OUTPUT"
+fi
 if [ ! -f "$TEAM_OUTPUT" ]; then
     cat > "$TEAM_OUTPUT" << EOF
 # Team Output — Iteration 0 (Bootstrap)
@@ -324,11 +344,11 @@ RETRY_PROMPT
         )"
 
         if [ "$SUPERVISOR_MODE" = "persistent" ]; then
-            claude --print --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
+            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
                 --resume "$SESSION_ID" \
                 < <(printf '%s\n' "$RETRY_PROMPT") > $SCRIPT_DIR/.supervisor_retry.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
         else
-            claude --print --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
+            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
                 < <(printf '%s\n' "$RETRY_PROMPT") > $SCRIPT_DIR/.supervisor_retry.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
         fi
 
