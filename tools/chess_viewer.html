@@ -50,6 +50,8 @@ tr.pick{cursor:pointer}tr.pick:hover td{background:var(--surface-0)}
 .res{display:inline-block;min-width:44px}
 .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 8px;margin:1px 4px 1px 0;font-size:12px;color:var(--text-secondary)}
 .empty{color:var(--text-muted);padding:18px 0}
+#runs a{color:var(--text-secondary);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 11px;font-size:13px}
+#runs a.on{color:var(--text-primary);border-color:var(--series-1);font-weight:650}
 </style>
 </head>
 <body>
@@ -57,6 +59,7 @@ tr.pick{cursor:pointer}tr.pick:hover td{background:var(--surface-0)}
 <header>
   <h1>EAT · Chess</h1>
   <span class="sub">a supervisor-evolved agent team learning chess over 200 rated games against Stockfish</span>
+  <nav class="ctl" id="runs" aria-label="Runs"></nav>
   <span class="live"><span class="dot" id="dot"></span><span id="upd">connecting…</span></span>
 </header>
 <section class="tiles" id="tiles"></section>
@@ -194,6 +197,8 @@ async function poll(){
   try{
     const r=await fetch('data.json',{cache:'no-store'}); D=await r.json();
     renderTiles();renderChart();renderGames();renderTeams();renderSelect();
+    $('runs').innerHTML=D.runs.length>1?D.runs.map(n=>`<a href="../${encodeURIComponent(n)}/" class="${n===D.run?'on':''}">${esc(n)}</a>`).join(''):'';
+    document.title='EAT · Chess · '+D.run;
     $('dot').classList.add('on'); $('upd').textContent=D.updated?'last move recorded '+D.updated.replace('T',' ').replace('Z',' UTC'):'waiting for the first game';
     if(live||!G||(G&&!G.end)) await loadGame();
   }catch(e){$('dot').classList.remove('on');$('upd').textContent='connection lost — retrying'}

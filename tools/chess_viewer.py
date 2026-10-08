@@ -2,10 +2,11 @@
 """Live, read-only viewer of a chess run: the rating over the rated games, the board of the game in progress,
 every finished game, and the team of each iteration.
 
-    python tools/chess_viewer.py [--port 17777] [--host 0.0.0.0]
+    python tools/chess_viewer.py [--port 17777] [--host 0.0.0.0] [--run NAME=REPO_DIR ...]
 
-It reads the arena's ledger (CHESS_ARENA_DIR, as chess_arena.py) and agent_team/ (team configs, BUDGET.md) on
-every poll and never writes. The page polls /data.json every 3 s.
+Each run is a checkout of this repository (default: one run, this checkout). For each it reads the arena's ledger
+(tasks/chess/arena/) and agent_team/ (team configs, BUDGET.md) on every poll and never writes. A run's page is
+/r/NAME/ and polls /r/NAME/data.json every 3 s.
 """
 import argparse
 import json
@@ -20,15 +21,16 @@ import chess_arena as A
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = Path(__file__).with_name("chess_viewer.html")
-_cache = {"key": None, "data": None}
+RUNS: dict[str, Path] = {}
+_cache: dict[str, dict] = {}
 _lock = threading.Lock()
 
 
-def read_events() -> list[dict]:
+def read_events(root: Path) -> list[dict]:
     """The ledger as it is now; a half-written last line (the arena is appending) is left for the next poll."""
-    out = []
-    if A.LEDGER.exists():
-        for line in A.LEDGER.read_text().splitlines():
+    out, ledger = [], root / "tasks" / "chess" / "arena" / "ledger.jsonl"
+    if ledger.exists():
+        for line in ledger.read_text().splitlines():
             try:
                 out.append(json.loads(line))
             except ValueError:
@@ -45,14 +47,14 @@ def sans(g: dict) -> list[str]:
     return out
 
 
-def teams() -> list[dict]:
+def teams(root: Path) -> tuple[list[dict], float]:
     """Per iteration: role names (from its team_config.md), team cost and score (from BUDGET.md)."""
     out = {}
-    for cfg in sorted((ROOT / "agent_team").glob("iter_*/team_config.md"), key=lambda p: int(p.parent.name[5:])):
+    for cfg in sorted((root / "agent_team").glob("iter_*/team_config.md"), key=lambda p: int(p.parent.name[5:])):
         n = int(cfg.parent.name[5:])
         out[n] = {"iter": n, "roles": re.findall(r"^### Role:\s*(.+?)\s*$", cfg.read_text(errors="replace"), re.M),
                   "cost": None, "score": None}
-    budget = ROOT / "agent_team" / "BUDGET.md"
+    budget = root / "agent_team" / "BUDGET.md"
     total = 0.0
     if budget.exists():
         for line in budget.read_text().splitlines():
@@ -68,12 +70,14 @@ def teams() -> list[dict]:
     return [out[k] for k in sorted(out)], total
 
 
-def build() -> dict:
-    events = read_events()
+def build(name: str) -> dict:
+    root = RUNS[name]
+    events = read_events(root)
     key = (len(events), events[-1]["hash"] if events else "")
     with _lock:
-        if _cache["key"] == key:
-            data = _cache["data"]
+        c = _cache.setdefault(name, {"key": None, "data": None})
+        if c["key"] == key:
+            data = c["data"]
         else:
             gs = A.games(events)
             rated = A.rated(gs)
@@ -102,13 +106,13 @@ def build() -> dict:
                     "practice": {"games": sum(g["kind"] == "practice" for g in gs.values()),
                                  "plies": sum(len(g["moves"]) for g in gs.values() if g["kind"] == "practice")},
                     "opp_rating": A.OPP_RATING, "updated": events[-1]["ts"] if events else None}
-            _cache.update(key=key, data=data)
-    t, spent = teams()
-    return dict(data, teams=t, spent=spent)
+            c.update(key=key, data=data)
+    t, spent = teams(root)
+    return dict(data, teams=t, spent=spent, run=name, runs=list(RUNS))
 
 
-def game_detail(gid: str) -> dict | None:
-    g = A.games(read_events()).get(gid)
+def game_detail(name: str, gid: str) -> dict | None:
+    g = A.games(read_events(RUNS[name])).get(gid)
     if not g:
         return None
     b, fens = chess.Board(), [chess.STARTING_BOARD_FEN]
@@ -132,11 +136,25 @@ class Handler(BaseHTTPRequestHandler):
         path = self.path.split("?")[0]
         try:
             if path in ("/", "/index.html"):
+                self.send_response(302)
+                self.send_header("Location", f"/r/{next(iter(RUNS))}/")
+                self.end_headers()
+                return
+            m = re.fullmatch(r"/r/([A-Za-z0-9_.-]{1,40})(/.*)?", path)
+            if not m or m.group(1) not in RUNS:
+                return self._send(404, b"not found", "text/plain")
+            name, rest = m.group(1), m.group(2)
+            if rest is None:
+                self.send_response(302)
+                self.send_header("Location", f"/r/{name}/")
+                self.end_headers()
+                return
+            if rest == "/":
                 return self._send(200, PAGE.read_bytes(), "text/html; charset=utf-8")
-            if path == "/data.json":
-                return self._send(200, json.dumps(build()).encode(), "application/json")
-            m = re.fullmatch(r"/game/(p?\d{1,4})\.json", path)
-            if m and (d := game_detail(m.group(1))):
+            if rest == "/data.json":
+                return self._send(200, json.dumps(build(name)).encode(), "application/json")
+            g = re.fullmatch(r"/game/(p?\d{1,4})\.json", rest)
+            if g and (d := game_detail(name, g.group(1))):
                 return self._send(200, json.dumps(d).encode(), "application/json")
             self._send(404, b"not found", "text/plain")
         except Exception as e:      # a poll must never take the server down
@@ -150,6 +168,10 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--port", type=int, default=17777)
     p.add_argument("--host", default="0.0.0.0")
+    p.add_argument("--run", action="append", default=[], metavar="NAME=REPO_DIR")
     a = p.parse_args()
-    print(f"chess viewer on http://{a.host}:{a.port}/  (ledger: {A.LEDGER})", flush=True)
+    for spec in a.run or [f"run={ROOT}"]:
+        n, _, d = spec.partition("=")
+        RUNS[n] = Path(d).expanduser().resolve()
+    print(f"chess viewer on http://{a.host}:{a.port}/  runs: " + ", ".join(f"{n} ({d})" for n, d in RUNS.items()), flush=True)
     ThreadingHTTPServer((a.host, a.port), Handler).serve_forever()
