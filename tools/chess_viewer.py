@@ -141,6 +141,13 @@ class Handler(BaseHTTPRequestHandler):
                 self.end_headers()
                 return
             m = re.fullmatch(r"/r/([A-Za-z0-9_.-]{1,40})(/.*)?", path)
+            if m and m.group(1) not in RUNS:      # a renamed run: an old link or an open page finds it by its prefix
+                close = [n for n in RUNS if n.startswith(m.group(1))]
+                if close:
+                    self.send_response(302)
+                    self.send_header("Location", f"/r/{close[0]}{m.group(2) or '/'}")
+                    self.end_headers()
+                    return
             if not m or m.group(1) not in RUNS:
                 return self._send(404, b"not found", "text/plain")
             name, rest = m.group(1), m.group(2)
