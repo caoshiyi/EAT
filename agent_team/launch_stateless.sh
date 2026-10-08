@@ -12,8 +12,12 @@
 #   task: a directory under tasks/ with a matching agent_team/requirements/<task>.md
 #   max_iterations: max supervisor turns (default: 20)
 #   max_team_size: max agents per iteration (default: 3)
-#   budget: total budget in dollars (default: 800)
-#   start_iter: first iteration number when resuming a run (default: 1)
+#   budget: total budget in dollars (default: 800); `none` = no dollar limit (cost is still recorded)
+#   start_iter: first iteration number when resuming a run (default: 1); `auto` = continue where the run stopped:
+#     the first iteration without an official eval, with the same persistent supervisor session. A run started
+#     with `auto` is resumed by running the same command again, at any point, also in the middle of an iteration
+#     (its team is relaunched: agents that finished are skipped, an interrupted one is told it was interrupted).
+# Every claude call goes through claude_retry.sh: a usage limit, an overload or a login problem is waited out.
 # Environment: EVAL_CMD (official eval run after each team, see launch_team.sh), RESUME_SESSION_ID (persistent mode:
 #   continue an earlier supervisor session), CLAUDE_EXTRA_DISALLOWED (extra tools denied to every agent, e.g.
 #   "WebSearch,WebFetch" for clean-room runs), SCORE_KEY (the `key = number` line of the official eval that is the
@@ -54,11 +58,22 @@ SUP_MODEL_ARGS=()
 SUPERVISOR_MD="$SCRIPT_DIR/SUPERVISOR.md"
 [ -f "$SCRIPT_DIR/SUPERVISOR.$TASK.md" ] && SUPERVISOR_MD="$SCRIPT_DIR/SUPERVISOR.$TASK.md"
 
+NO_BUDGET=0
+case "$BUDGET" in none|0) NO_BUDGET=1; BUDGET=none ;; esac
+SESSION_FILE="$SCRIPT_DIR/.supervisor_session_id"
+if [ "$START_ITER" = "auto" ]; then
+    START_ITER=1
+    while [ -f "$SCRIPT_DIR/iter_${START_ITER}/official_eval.txt" ]; do START_ITER=$((START_ITER + 1)); done
+    if [ -z "${RESUME_SESSION_ID:-}" ] && [ -f "$SESSION_FILE" ]; then RESUME_SESSION_ID="$(< "$SESSION_FILE")"; fi
+    echo "[resume] start_iter=auto -> iteration $START_ITER${RESUME_SESSION_ID:+, supervisor session $RESUME_SESSION_ID}"
+fi
+
 # For persistent mode, generate a valid UUID session ID
 # RESUME_SESSION_ID continues an earlier persistent supervisor session when restarting with START_ITER
 SESSION_ID="${RESUME_SESSION_ID:-$(python3 -c "import uuid; print(uuid.uuid4())")}"
 
 cd "$PROJECT_DIR"
+[ "$SUPERVISOR_MODE" = "persistent" ] && echo "$SESSION_ID" > "$SESSION_FILE"
 
 add_cost() {
     local iter="$1" role="$2" cost="$3" score="${4:-}"
@@ -95,6 +110,7 @@ print('N/A')
 }
 
 check_budget() {
+    [ "$NO_BUDGET" = "1" ] && return 0
     if (( $(python3 -c "print(1 if $CUMULATIVE_COST >= $BUDGET else 0)") )); then
         echo "[budget] \$$BUDGET budget exhausted. Stopping."
         return 1
@@ -152,9 +168,14 @@ build_iter_prompt() {
     cat <<ITER_PROMPT
 ## Iteration $iter
 
-## Budget
-Total budget: \$$BUDGET. Spent so far: \$$CUMULATIVE_COST. Remaining: \$$(python3 -c "print(round($BUDGET - $CUMULATIVE_COST, 2))").
-Design the team size and agent timeouts accordingly — do not overspend.
+$(if [ "$NO_BUDGET" = "1" ]; then
+    echo "## Cost"
+    echo "Spent so far: \$$CUMULATIVE_COST (recorded; there is no dollar limit on this run)."
+else
+    echo "## Budget"
+    echo "Total budget: \$$BUDGET. Spent so far: \$$CUMULATIVE_COST. Remaining: \$$(python3 -c "print(round($BUDGET - $CUMULATIVE_COST, 2))")."
+    echo "Design the team size and agent timeouts accordingly — do not overspend."
+fi)
 
 ## Last team's output
 $(cat "$TEAM_OUTPUT")
@@ -192,37 +213,30 @@ Agents launch in phases. Agents within the same phase run in parallel. Phases ru
 ITER_PROMPT
 }
 
+# One supervisor call (prompt text, output file) through claude_retry.sh. Persistent mode: the session is created
+# on its first successful call and resumed afterwards (claude_retry.sh looks for its transcript).
+sup_call() {
+    local prompt="$1" out="$2"
+    printf '%s\n' "$prompt" > "$SCRIPT_DIR/.supervisor_prompt.txt"
+    local sid=""
+    [ "$SUPERVISOR_MODE" = "persistent" ] && sid="$SESSION_ID"
+    CR_SESSION_ID="$sid" CR_NO_NOTE=1 bash "$SCRIPT_DIR/claude_retry.sh" "$SCRIPT_DIR/.supervisor_prompt.txt" "$out" \
+        "$SCRIPT_DIR/supervisor_stderr.log" 0 -- "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json \
+        --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" || true
+}
+
 # Run supervisor and write output to $SCRIPT_DIR/.supervisor_output.json
 run_supervisor() {
     local iter="$1"
-
-    if [ "$SUPERVISOR_MODE" = "persistent" ]; then
-        if [ "$iter" -eq "$START_ITER" ] && [ -z "${RESUME_SESSION_ID:-}" ]; then
-            # First iteration: start new session with system prompt + iter prompt
-            echo "[supervisor] Starting persistent session ($SESSION_ID)..."
-            local full_prompt
-            full_prompt="$(build_supervisor_system_prompt)
-
-$(build_iter_prompt "$iter")"
-            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
-                --session-id "$SESSION_ID" \
-                < <(printf '%s\n' "$full_prompt") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
-        else
-            # Subsequent iterations: resume same session with just the iter prompt
-            echo "[supervisor] Resuming persistent session ($SESSION_ID)..."
-            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
-                --resume "$SESSION_ID" \
-                < <(build_iter_prompt "$iter") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
-        fi
+    if [ "$SUPERVISOR_MODE" = "persistent" ] && compgen -G "$HOME/.claude/projects/*/${SESSION_ID}.jsonl" > /dev/null; then
+        echo "[supervisor] Resuming persistent session ($SESSION_ID)..."
+        sup_call "$(build_iter_prompt "$iter")" "$SCRIPT_DIR/.supervisor_output.json"
     else
-        # Stateless: fresh session each time with everything
-        echo "[supervisor] Starting fresh session..."
-        local full_prompt
-        full_prompt="$(build_supervisor_system_prompt)
+        # A new persistent session, or a stateless turn: the instructions and the iteration prompt together
+        echo "[supervisor] Starting $SUPERVISOR_MODE session${SESSION_ID:+ ($SESSION_ID)}..."
+        sup_call "$(build_supervisor_system_prompt)
 
-$(build_iter_prompt "$iter")"
-        claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
-            < <(printf '%s\n' "$full_prompt") > $SCRIPT_DIR/.supervisor_output.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
+$(build_iter_prompt "$iter")" "$SCRIPT_DIR/.supervisor_output.json"
     fi
 }
 
@@ -283,6 +297,11 @@ for ITER in $(seq "$START_ITER" "$MAX_ITERS"); do
     echo "============================================"
     echo ""
 
+    # An iteration that was interrupted after its team was configured: relaunch that team, no new supervisor turn
+    if [ -f "$SCRIPT_DIR/iter_${ITER}/team_config.md" ] && [ ! -f "$SCRIPT_DIR/iter_${ITER}/official_eval.txt" ]; then
+        echo "[resume] Iteration $ITER was interrupted; relaunching its team with the same configuration."
+        cp "$SCRIPT_DIR/iter_${ITER}/team_config.md" "$TEAM_CONFIG"
+    else
     # ---- SUPERVISOR TURN ----
     run_supervisor "$ITER"
 
@@ -343,14 +362,7 @@ $(cat "$TEAM_CONFIG")
 RETRY_PROMPT
         )"
 
-        if [ "$SUPERVISOR_MODE" = "persistent" ]; then
-            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
-                --resume "$SESSION_ID" \
-                < <(printf '%s\n' "$RETRY_PROMPT") > $SCRIPT_DIR/.supervisor_retry.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
-        else
-            claude --print "${SUP_MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" \
-                < <(printf '%s\n' "$RETRY_PROMPT") > $SCRIPT_DIR/.supervisor_retry.json 2>>"$SCRIPT_DIR/supervisor_stderr.log"
-        fi
+        sup_call "$RETRY_PROMPT" "$SCRIPT_DIR/.supervisor_retry.json"
 
         RETRY_COST=$(extract_cost $SCRIPT_DIR/.supervisor_retry.json | tr -d '[:space:]')
         add_cost "$ITER" "supervisor-retry-$RETRY" "$RETRY_COST"
@@ -367,6 +379,7 @@ RETRY_PROMPT
 
     echo "[supervisor] Team config written to $TEAM_CONFIG"
     echo ""
+    fi
 
     # ---- LAUNCH TEAM ----
     echo "[team] Launching team for iteration $ITER..."

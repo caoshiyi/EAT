@@ -48,10 +48,20 @@ launch_agent() {
         LIMIT=(timeout --signal=TERM --kill-after=60 "$(< "$ITER_DIR/${ROLE}_timeout")m")
     fi
 
-    echo "[launch_team] Starting agent: $ROLE" >&2
+    # A relaunch of an interrupted iteration: an agent that finished is not run again; one that was started and did
+    # not finish is told so (claude_retry.sh puts a note ahead of its prompt)
+    if [ -s "$AGENT_OUTPUT" ] && [ "$(python3 "$SCRIPT_DIR/call_status.py" "$AGENT_OUTPUT")" = "ok" ]; then
+        echo "[launch_team] Agent '$ROLE' already finished in an earlier launch of this iteration; not run again." >&2
+        return 0
+    fi
+    local RESTARTED=0
+    [ -f "$ITER_DIR/${ROLE}_started" ] && RESTARTED=1
+    touch "$ITER_DIR/${ROLE}_started"
+
+    echo "[launch_team] Starting agent: $ROLE$([ "$RESTARTED" = 1 ] && echo ' (restarted)')" >&2
     # Prompt goes through stdin: argv breaks on prompts starting with '-' and on >128KB prompts
-    "${LIMIT[@]}" claude --print "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"} \
-        < "$PROMPT_FILE" > "$AGENT_OUTPUT" 2> "$ITER_DIR/${ROLE}_stderr.txt"
+    "${LIMIT[@]}" bash "$SCRIPT_DIR/claude_retry.sh" "$PROMPT_FILE" "$AGENT_OUTPUT" "$ITER_DIR/${ROLE}_stderr.txt" "$RESTARTED" -- \
+        "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"}
     echo "[launch_team] Agent '$ROLE' finished (exit $?)." >&2
 }
 
