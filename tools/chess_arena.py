@@ -3,9 +3,9 @@
 move in an append-only, hash-chained ledger, and computes the rating. Agents only submit moves.
 
 Rated games are one stream of TOTAL games on a fixed schedule (the benchmark this task mirrors: pairs of
-full-strength, skill-0, elo-1800-setting, each as White then Black), played one at a time. Each supervisor
-iteration may play BLOCK more of them (tools/eval_chess.py closes a block after the team finishes). Practice
-games are unrated, unlimited, and may run in parallel.
+full-strength, skill-0, elo-1800-setting, each as White then Black), played one at a time. How many of them a team plays
+before the supervisor looks again is the supervisor's choice, as its use of the budget is (tools/eval_chess.py
+marks where each iteration ended). Practice games are unrated, unlimited, and may run in parallel.
 
     chess_arena.py status                         where the run stands, the active games, the rating
     chess_arena.py new                            start the next rated game
@@ -18,7 +18,7 @@ games are unrated, unlimited, and may run in parallel.
     chess_arena.py rating
 
 Environment: CHESS_ARENA_DIR (ledger; default tasks/chess/arena), CHESS_ENGINE (the Stockfish binary),
-CHESS_BLOCK (rated games per iteration, 12), CHESS_NODES (opponent search limit per move, 200000).
+CHESS_NODES (opponent search limit per move, 200000).
 """
 import argparse
 import fcntl
@@ -37,7 +37,6 @@ ARENA = Path(os.environ.get("CHESS_ARENA_DIR", ROOT / "tasks" / "chess" / "arena
 LEDGER = ARENA / "ledger.jsonl"
 ENGINE = os.environ.get("CHESS_ENGINE", str(ROOT / ".work" / "engine" / "usr" / "games" / "stockfish"))
 TOTAL = 200
-BLOCK = int(os.environ.get("CHESS_BLOCK", "12"))
 NODES = int(os.environ.get("CHESS_NODES", "200000"))
 ALLOW_LEGAL = os.environ.get("CHESS_ALLOW_LEGAL", "1") != "0"
 
@@ -119,8 +118,9 @@ def rated(gs: dict) -> list[dict]:
     return sorted((g for g in gs.values() if g["kind"] == "rated"), key=lambda g: int(g["id"]))
 
 
-def blocks_closed(events: list[dict]) -> int:
-    return sum(e["ev"] == "block_close" for e in events)
+def iteration_ends(events: list[dict]) -> list[int]:
+    """Rated games finished when each iteration ended (eval_chess.py --end-iteration)."""
+    return [e["rated_finished"] for e in events if e["ev"] == "iter_end"]
 
 
 def rating(gs: dict) -> dict:
@@ -215,11 +215,8 @@ def cmd_new(events, gs, a):
     if any(not g["end"] for g in r):
         raise Refused(f"rated game {[g['id'] for g in r if not g['end']][0]} is still in progress; finish it first")
     n = len(r) + 1
-    allowed = min(TOTAL, BLOCK * (blocks_closed(events) + 1))
     if n > TOTAL:
         raise Refused(f"all {TOTAL} rated games are played")
-    if n > allowed:
-        raise Refused(f"this iteration's rated games are used up ({allowed} of {TOTAL} played); practice games stay open")
     opp, color = schedule(n)
     append(events, ev="start", game=str(n), kind="rated", opponent=opp, color=color)
     g = {"id": str(n), "kind": "rated", "opponent": opp, "color": color, "moves": [], "illegal": 0, "end": None}
@@ -294,8 +291,9 @@ def cmd_rating(events, gs, a):
 def cmd_status(events, gs, a):
     r = rated(gs)
     done = [g for g in r if g["end"]]
-    allowed = min(TOTAL, BLOCK * (blocks_closed(events) + 1))
-    print(f"rated games: {len(done)} finished of {TOTAL}; this iteration may play up to game {allowed}")
+    ends = iteration_ends(events)
+    print(f"rated games: {len(done)} finished of {TOTAL}, {TOTAL - len(done)} remain "
+          f"(iteration {len(ends) + 1}: {len(done) - (ends[-1] if ends else 0)} finished in it so far)")
     if len(r) < TOTAL:
         opp, color = schedule(len(r) + 1) if len(done) == len(r) else (r[-1]["opponent"], r[-1]["color"])
         print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {opp} as {color}")

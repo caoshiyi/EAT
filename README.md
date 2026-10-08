@@ -64,7 +64,7 @@ Agents run with `--dangerously-skip-permissions`: run on a machine (or in `clean
 ### The chess task
 
 `tasks/chess` applies the same loop to a task that is not code: the team plays a stream of 200 rated games against
-Stockfish (fixed schedule, one game at a time, 12 per iteration) and the score is its Elo over the last 50 rated
+Stockfish (fixed schedule, one game at a time; the supervisor decides how many each team plays) and the score is its Elo over the last 50 rated
 games. The team makes every move itself; `tools/chess_arena.py` owns the board and records every move in a
 hash-chained ledger (`tasks/chess/arena/`), and the team keeps whatever it wants to remember in `tasks/chess/team/`.
 
@@ -74,13 +74,14 @@ python3 -m venv $EAT_VENV && $EAT_VENV/bin/pip install chess          # python-c
 (mkdir -p $EAT_WORK/dl && cd $EAT_WORK/dl && apt-get download stockfish && dpkg -x stockfish_*.deb $EAT_WORK/engine)
 git checkout -b chess/run1
 export SCORE_KEY=elo CLAUDE_EXTRA_DISALLOWED=WebSearch,WebFetch EAT_MODEL=<model id>
-export EVAL_CMD='source $EAT_VENV/bin/activate && python tools/eval_chess.py --close-block'
+export EVAL_CMD='source $EAT_VENV/bin/activate && python tools/eval_chess.py --end-iteration'
+export STOP_CMD='source $EAT_VENV/bin/activate && python tools/eval_chess.py --done'     # stop once all 200 are played
 tmux new-session -d -s ${EAT_SESSION}1 \
-  "bash agent_team/launch_stateless.sh --persistent chess 17 3 300 1 2>&1 | tee -a $EAT_LOG"
+  "bash agent_team/launch_stateless.sh --persistent chess 100 3 300 1 2>&1 | tee -a $EAT_LOG"
 $EAT_VENV/bin/python tools/chess_viewer.py --port 17777               # live page: rating, board, games, teams
 ```
 
-17 iterations of 12 games cover the 200. The engine is unpacked under `.work/`, off `PATH`; the rules forbid the
+The iteration limit is only a ceiling: the run stops when the 200 games are played. The engine is unpacked under `.work/`, off `PATH`; the rules forbid the
 agents any engine or position-searching code, and `cleanroom/audit_clean_traces.py` checks the transcripts.
 
 ### Clean-room runs

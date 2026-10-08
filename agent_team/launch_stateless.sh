@@ -17,7 +17,7 @@
 # Environment: EVAL_CMD (official eval run after each team, see launch_team.sh), RESUME_SESSION_ID (persistent mode:
 #   continue an earlier supervisor session), CLAUDE_EXTRA_DISALLOWED (extra tools denied to every agent, e.g.
 #   "WebSearch,WebFetch" for clean-room runs), SCORE_KEY (the `key = number` line of the official eval that is the
-#   score; default mean_vs_base), EAT_MODEL / EAT_SUPERVISOR_MODEL (claude --model for the agents / the supervisor;
+#   score; default mean_vs_base), STOP_CMD (run after each iteration; exit 0 ends the run: the task is finished), EAT_MODEL / EAT_SUPERVISOR_MODEL (claude --model for the agents / the supervisor;
 #   default: the CLI's own default, and the supervisor follows EAT_MODEL)
 # Per-task overrides, used when the file exists: agent_team/SUPERVISOR.<task>.md (supervisor instructions),
 #   tasks/<task>/supervisor_intro.md (the first lines of the supervisor's prompt), tasks/<task>/bootstrap.md
@@ -385,6 +385,10 @@ RETRY_PROMPT
     git commit -m "iter $ITER: task=$TASK cost=\$$TEAM_COST cumulative=\$$CUMULATIVE_COST score=$CURRENT_SCORE" --allow-empty 2>/dev/null || true
 
     echo "[team] Iteration $ITER complete. Results in $TEAM_OUTPUT"
+    if [ -n "${STOP_CMD:-}" ] && bash -c "$STOP_CMD" >/dev/null 2>&1; then
+        echo "[loop] STOP_CMD reports the task is finished. Stopping."
+        break
+    fi
     echo ""
     echo "[loop] Moving to next supervisor iteration..."
 done

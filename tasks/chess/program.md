@@ -12,8 +12,8 @@ are part of the schedule and recorded, but carry no rating. Every rated game cou
 ## Schedule
 Fixed, in pairs, the first of each pair as White and the second as Black:
 `full-strength, full-strength, skill-0, skill-0, elo-1800-setting, elo-1800-setting`, repeated. Rated games are
-played one at a time. Each supervisor iteration may play up to 12 more of them; a rated game left unfinished is
-continued by the next team.
+played one at a time. How many of them a team plays before the supervisor looks again is the supervisor's
+choice, stated in each agent's prompt; a rated game left unfinished is continued by the next team.
 
 ## The arena
 All play goes through `tools/chess_arena.py` (it runs the opponent, checks and records every move):
@@ -36,7 +36,7 @@ Practice games are unlimited, unrated, against any of the three opponents, and s
   own reasoning. The arena's own commands (including `legal`) are allowed, and so are scripts that only keep
   records or reformat them.
 - No web access for chess content.
-- Never modify `tools/`, `tasks/chess/arena/`, or the engine under `.work/`; never run `eval_chess.py --close-block`.
+- Never modify `tools/`, `tasks/chess/arena/`, or the engine under `.work/`; never run `eval_chess.py --end-iteration`.
 - Whatever the team wants to remember (notes, opening choices, reviews of lost games, checklists) goes in
   `tasks/chess/team/`, in any form the team chooses. It is committed after every iteration and is the only thing,
   besides the arena's records, that the next team inherits.

@@ -2,8 +2,9 @@
 """Official score of the chess task: the rating over the last 50 rated games in the arena's ledger (prints `elo = N`).
 
     python tools/eval_chess.py                  report only
-    python tools/eval_chess.py --close-block    the harness, after a team finishes: report, then allow the next
-                                                CHESS_BLOCK rated games (agents never pass this flag)
+    python tools/eval_chess.py --end-iteration  the launcher, after a team finishes: report, then record that the
+                                                iteration ended here (agents never pass this flag)
+    python tools/eval_chess.py --done           exit 0 when all rated games are played (the launcher's STOP_CMD)
 """
 import fcntl
 import sys
@@ -20,11 +21,13 @@ def main() -> int:
         gs = A.games(events)
         rated = A.rated(gs)
         done = [g for g in rated if g["end"]]
-        closed = A.blocks_closed(events)
-        first = A.BLOCK * closed + 1
+        if "--done" in sys.argv[1:]:
+            return 0 if len(done) >= A.TOTAL else 1
+        ends = A.iteration_ends(events)
+        first = (ends[-1] if ends else 0) + 1
         block = [g for g in done if int(g["id"]) >= first]
-        print(f"rated games finished: {len(done)} of {A.TOTAL}   (iteration block {closed + 1}: games {first}-"
-              f"{min(A.TOTAL, first + A.BLOCK - 1)}, {len(block)} finished)")
+        print(f"rated games finished: {len(done)} of {A.TOTAL}, {A.TOTAL - len(done)} remain   "
+              f"(iteration {len(ends) + 1}: {len(block)} finished" + (f", games {first}-{len(done)})" if block else ")"))
         for g in block:
             print(f"  game {g['id']:>3} vs {g['opponent']:<17} as {g['color']:<5} {g['end']['result']:<7} "
                   f"{g['end']['reason']:<22} plies={len(g['moves'])} illegal={g['illegal']}")
@@ -43,10 +46,10 @@ def main() -> int:
         r = A.rating(gs)
         print(f"rating over the last {r['window']} rated-opponent games: {r['estimate']} "
               f"(95% range {r['lower']} to {r['upper']}); full-strength games are not rated")
-        print("a 12-game block moves this number by chance alone: read the range, not the point")
+        print("a few games move this number by chance alone: read the range, not the point")
         print(f"elo = {r['estimate']}")
-        if "--close-block" in sys.argv[1:]:
-            A.append(events, ev="block_close", n=closed + 1, rated_finished=len(done))
+        if "--end-iteration" in sys.argv[1:]:
+            A.append(events, ev="iter_end", n=len(ends) + 1, rated_finished=len(done))
     return 0
 
 

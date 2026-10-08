@@ -84,7 +84,7 @@ def build() -> dict:
                 seen[g["id"]] = g
                 history.append(dict(A.rating(seen), game=int(g["id"]), opponent=g["opponent"], color=g["color"],
                                     result=g["end"]["result"], score=g["end"]["score"]))
-            blocks = [e["rated_finished"] for e in events if e["ev"] == "block_close"]
+            blocks = A.iteration_ends(events)
             rows = []
             for g in gs.values():
                 b = A.board_of(g)
@@ -95,7 +95,7 @@ def build() -> dict:
             done = [g for g in rated if g["end"]]
             by = {o: {"score": sum(g["end"]["score"] for g in done if g["opponent"] == o),
                       "n": sum(g["opponent"] == o for g in done)} for o in A.ORDER}
-            data = {"total": A.TOTAL, "block": A.BLOCK, "blocks_closed": blocks, "rating": A.rating(gs),
+            data = {"total": A.TOTAL, "blocks_closed": blocks, "rating": A.rating(gs),
                     "history": history, "games": rows, "by_opponent": by,
                     "wdl": [sum(g["end"]["score"] == s for g in done) for s in (1.0, 0.5, 0.0)],
                     "illegal": sum(g["illegal"] for g in rated),

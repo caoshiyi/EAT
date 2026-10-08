@@ -33,8 +33,8 @@ svg{display:block;width:100%;height:auto;overflow:visible}
 .tip{position:absolute;pointer-events:none;background:var(--surface-1);border:1px solid var(--line);border-radius:8px;padding:6px 9px;
   font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.14);white-space:nowrap;display:none;font-variant-numeric:tabular-nums}
 .tip b{font-weight:650}
-.board{display:grid;grid-template-columns:repeat(8,1fr);aspect-ratio:1;border-radius:6px;overflow:hidden;margin:10px 0;max-width:420px}
-.sq{display:flex;align-items:center;justify-content:center;font-size:clamp(22px,4.4vw,40px);line-height:1;user-select:none}
+.board{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);aspect-ratio:1;border-radius:6px;overflow:hidden;margin:10px 0;max-width:420px}
+.sq{display:flex;align-items:center;justify-content:center;aspect-ratio:1;min-width:0;min-height:0;overflow:hidden;font-size:clamp(22px,4.4vw,40px);line-height:1;user-select:none}
 .sq.l{background:var(--sq-light)}.sq.d{background:var(--sq-dark)}.sq.m{box-shadow:inset 0 0 0 100px color-mix(in srgb,var(--sq-mark) 55%,transparent)}
 .pw{color:#fff;text-shadow:0 0 1px #000,0 0 1px #000,0 1px 2px #000}.pb{color:#111;text-shadow:0 0 1px rgba(255,255,255,.5)}
 .ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
@@ -103,7 +103,7 @@ function renderTiles(){
     tile('vs Skill 0',pct(b['skill-0']),`${b['skill-0'].score} of ${b['skill-0'].n} points`)+
     tile('vs Elo 1800 setting',pct(b['elo-1800-setting']),`${b['elo-1800-setting'].score} of ${b['elo-1800-setting'].n} points`)+
     tile('vs Full strength',pct(b['full-strength']),`${b['full-strength'].score} of ${b['full-strength'].n} · unrated`)+
-    tile('Iteration',it,`${D.teams.length?D.teams[D.teams.length-1].roles.length+' agents in the latest team':'no team yet'}`)+
+    tile('Iteration',it,`${D.teams.length?(n=>n+(n===1?' agent':' agents')+' in the latest team')(D.teams[D.teams.length-1].roles.length):'no team yet'}`)+
     tile('Practice games',D.practice.games,`${D.practice.plies} plies · ${D.illegal} illegal moves in rated games`);
 }
 
