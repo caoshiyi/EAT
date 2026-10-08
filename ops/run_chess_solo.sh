@@ -17,7 +17,7 @@ SID_FILE="$LOG_DIR/.session_id"
 SID="$(< "$SID_FILE")"
 BUDGET=agent_team/BUDGET.md
 [ -f "$BUDGET" ] || printf '# Cost (single agent, no limit)\n| Call | Role | Cost ($) | Cumulative ($) | Score |\n|------|------|----------|----------------|-------|\n' > "$BUDGET"
-moves() { wc -l < tasks/chess/arena/ledger.jsonl 2>/dev/null || echo 0; }
+moves() { if [ -f tasks/chess/arena/ledger.jsonl ]; then wc -l < tasks/chess/arena/ledger.jsonl; else echo 0; fi; }
 idle=0
 n=$(ls "$LOG_DIR"/call_*.json 2>/dev/null | wc -l)
 echo "[solo] model $MODEL, session $SID, $n earlier call(s)"
