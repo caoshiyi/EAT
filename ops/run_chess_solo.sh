@@ -1,5 +1,6 @@
 #!/bin/bash
-# The single-agent baseline of the chess task: ONE Claude Code session given a native /goal (tasks/chess/solo_goal.txt),
+# The single-agent baseline of the chess task: ONE Claude Code session given a native /goal (tasks/chess/solo_goal.txt:
+# the objective itself, the rating; /goal is the hook that keeps the session going when it would stop),
 # no supervisor and no team; its context is managed by Claude Code's own compaction. Start it, or continue it where it
 # stopped, with the same command:
 #   bash ops/run_chess_solo.sh MODEL
@@ -15,6 +16,8 @@ LOG_DIR=agent_team/solo; mkdir -p "$LOG_DIR"
 SID_FILE="$LOG_DIR/.session_id"
 [ -f "$SID_FILE" ] || python3 -c "import uuid; print(uuid.uuid4())" > "$SID_FILE"
 SID="$(< "$SID_FILE")"
+# Claude Code keeps its own memory per git repository, so checkouts of one repository share it: give this run its own
+MEMORY_DIR="$EAT_WORK/claude_memory"; mkdir -p "$MEMORY_DIR"
 BUDGET=agent_team/BUDGET.md
 [ -f "$BUDGET" ] || printf '# Cost (single agent, no limit)\n| Call | Role | Cost ($) | Cumulative ($) | Score |\n|------|------|----------|----------------|-------|\n' > "$BUDGET"
 moves() { if [ -f tasks/chess/arena/ledger.jsonl ]; then wc -l < tasks/chess/arena/ledger.jsonl; else echo 0; fi; }
@@ -26,7 +29,8 @@ until "$PY" tools/eval_chess.py --done; do
     echo "[solo] $(date -u +%H:%M:%SZ) call $n: $("$PY" tools/chess_arena.py status | head -1)"
     CR_SESSION_ID="$SID" CR_NO_NOTE=1 bash agent_team/claude_retry.sh tasks/chess/solo_goal.txt "$LOG_DIR/call_$n.json" \
         "$LOG_DIR/stderr.log" 0 -- --model "$MODEL" --dangerously-skip-permissions --output-format json \
-        --disallowedTools "WebSearch,WebFetch"
+        --disallowedTools "WebSearch,WebFetch" \
+        --settings "{\"autoMemoryDirectory\":\"$MEMORY_DIR\"}"
     "$PY" tools/eval_chess.py > "$LOG_DIR/eval_$n.txt" 2>&1
     elo=$(grep -oE '^elo = -?[0-9]+' "$LOG_DIR/eval_$n.txt" | grep -oE '\-?[0-9]+$')
     python3 - "$LOG_DIR/call_$n.json" "$BUDGET" "$n" "${elo:-}" <<'PYEOF'
