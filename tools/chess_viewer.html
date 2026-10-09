@@ -197,7 +197,7 @@ async function poll(){
   try{
     const r=await fetch('data.json',{cache:'no-store'}); D=await r.json();
     renderTiles();renderChart();renderGames();renderTeams();renderSelect();
-    $('runs').innerHTML=D.runs.length>1?D.runs.map(n=>`<a href="../${encodeURIComponent(n)}/" class="${n===D.run?'on':''}">${esc(n)}</a>`).join(''):'';
+    $('runs').innerHTML=D.runs.length>1?'<a href="../../">All runs</a>'+D.runs.map(n=>`<a href="../${encodeURIComponent(n)}/" class="${n===D.run?'on':''}">${esc(n)}</a>`).join(''):'';
     document.title='EAT · Chess · '+D.run;
     $('dot').classList.add('on'); $('upd').textContent=D.updated?'last move recorded '+D.updated.replace('T',' ').replace('Z',' UTC'):'waiting for the first game';
     if(live||!G||(G&&!G.end)) await loadGame();

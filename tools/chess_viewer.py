@@ -21,6 +21,7 @@ import chess_arena as A
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = Path(__file__).with_name("chess_viewer.html")
+OVERVIEW = Path(__file__).with_name("chess_overview.html")
 RUNS: dict[str, Path] = {}
 _cache: dict[str, dict] = {}
 _lock = threading.Lock()
@@ -111,6 +112,19 @@ def build(name: str) -> dict:
     return dict(data, teams=t, spent=spent, run=name, runs=list(RUNS))
 
 
+def overview() -> dict:
+    """Every run on one page: its rating after each rated game and where it stands."""
+    runs = []
+    for name in RUNS:
+        d = build(name)
+        runs.append({"name": name, "history": [[h["game"], h["estimate"], h["lower"], h["upper"]] for h in d["history"]],
+                     "rating": d["rating"], "done": sum(d["wdl"]), "wdl": d["wdl"], "by_opponent": d["by_opponent"],
+                     "iteration": len(d["blocks_closed"]) + 1 if d["teams"] else None,
+                     "roles": d["teams"][-1]["roles"] if d["teams"] else [], "spent": d["spent"],
+                     "updated": d["updated"]})
+    return {"runs": runs, "total": A.TOTAL, "opp_rating": A.OPP_RATING}
+
+
 def game_detail(name: str, gid: str) -> dict | None:
     g = A.games(read_events(RUNS[name])).get(gid)
     if not g:
@@ -136,10 +150,14 @@ class Handler(BaseHTTPRequestHandler):
         path = self.path.split("?")[0]
         try:
             if path in ("/", "/index.html"):
+                if len(RUNS) > 1:
+                    return self._send(200, OVERVIEW.read_bytes(), "text/html; charset=utf-8")
                 self.send_response(302)
                 self.send_header("Location", f"/r/{next(iter(RUNS))}/")
                 self.end_headers()
                 return
+            if path == "/all.json":
+                return self._send(200, json.dumps(overview()).encode(), "application/json")
             m = re.fullmatch(r"/r/([A-Za-z0-9_.-]{1,40})(/.*)?", path)
             if m and m.group(1) not in RUNS:      # a renamed run: an old link or an open page finds it by its prefix
                 close = [n for n in RUNS if n.startswith(m.group(1))]
