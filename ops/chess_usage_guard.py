@@ -35,7 +35,9 @@ def five_hour():
         req = urllib.request.Request("https://api.anthropic.com/api/oauth/usage", headers={
             "Authorization": "Bearer " + tok, "anthropic-beta": "oauth-2025-04-20", "Content-Type": "application/json"})
         d = json.load(urllib.request.urlopen(req, timeout=30))["five_hour"]
-        return float(d["utilization"]), dt.datetime.fromisoformat(d["resets_at"])
+        # right after a reset the window has no resets_at until something is used in it: it is empty, not unknown
+        resets = dt.datetime.fromisoformat(d["resets_at"]) if d.get("resets_at") else dt.datetime.now(dt.timezone.utc)
+        return float(d["utilization"] or 0), resets
     except Exception as e:     # a failed read is skipped; the next poll tries again
         log(f"usage read failed: {type(e).__name__}: {e}")
         return None
