@@ -1,7 +1,7 @@
 #!/bin/bash
 # The single-agent setting of the chess task: ONE Claude Code session following program.chess.md, no supervisor and no
-# time limit. A native Stop hook (ops/chess_keep_going.sh) answers "keep going" whenever the agent tries to stop before
-# the 200 rated games are played. If the process itself ends early (a crash or a usage limit), run this again: it
+# time limit. The session starts with ops/chess_single_prompt.txt, and a native Stop hook (ops/chess_keep_going.sh) gives
+# that same prompt again whenever the agent tries to stop before the 200 rated games are played. If the process itself ends early (a crash or a usage limit), run this again: it
 # resumes the same session.
 #   bash ops/run_chess_single.sh MODEL
 set -uo pipefail
@@ -19,9 +19,9 @@ ARGS=(--print --model "$MODEL" --dangerously-skip-permissions --output-format js
 n=$(ls "$LOG"/call_*.json 2>/dev/null | wc -l); n=$((n + 1))
 echo "[single] $(date -u +%H:%M:%SZ) call $n, session $SID: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
 if compgen -G "$HOME/.claude/projects/*/$SID.jsonl" > /dev/null; then
-    echo "keep going" | claude "${ARGS[@]}" --resume "$SID" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
+    claude "${ARGS[@]}" --resume "$SID" < ops/chess_single_prompt.txt > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 else
-    echo "Read program.chess.md and follow it." | claude "${ARGS[@]}" --session-id "$SID" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
+    claude "${ARGS[@]}" --session-id "$SID" < ops/chess_single_prompt.txt > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 fi
 echo "[single] $(date -u +%H:%M:%SZ) session ended: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
 "$EAT_VENV/bin/python" tools/eval_chess.py --done || echo "[single] not finished: run the same command to resume the session."
