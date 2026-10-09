@@ -92,13 +92,16 @@ def build(name: str) -> dict:
         else:
             gs = A.games(events)
             rated = A.rated(gs)
-            history, seen = [], {}
-            for g in rated:                              # the rating after each finished rated game
-                if not g["end"]:
-                    continue
-                seen[g["id"]] = g
-                history.append(dict(A.rating(seen, opp), game=int(g["id"]), opponent=label.get(g["opponent"], g["opponent"]), color=g["color"],
-                                    result=g["end"]["result"], score=g["end"]["score"]))
+            finished = [g for g in rated if g["end"]]
+            hc = _cache.setdefault(name + "#history", {"n": 0, "history": []})
+            if hc["n"] != len(finished):                 # recomputed only when a rated game has finished
+                history, seen = [], {}
+                for g in finished:                       # the rating after each finished rated game
+                    seen[g["id"]] = g
+                    history.append(dict(A.rating(seen, opp), game=int(g["id"]), opponent=label.get(g["opponent"], g["opponent"]),
+                                        color=g["color"], result=g["end"]["result"], score=g["end"]["score"]))
+                hc.update(n=len(finished), history=history)
+            history = hc["history"]
             blocks = A.iteration_ends(events)
             rows = []
             for g in gs.values():
@@ -132,10 +135,10 @@ def overview() -> dict:
                      "rating": d["rating"], "done": sum(d["wdl"]), "wdl": d["wdl"], "by_opponent": d["by_opponent"],
                      "iteration": len(d["blocks_closed"]) + 1 if d["teams"] else None,
                      "roles": d["teams"][-1]["roles"] if d["teams"] else [], "spent": d["spent"],
-                     "updated": d["updated"]})
+                     "updated": d["updated"], "opp_rating": d["opp_rating"]})
     refs = {}
-    for name in RUNS:
-        refs.update(build(name)["opp_rating"])
+    for r in runs:
+        refs.update(r.pop("opp_rating"))
     return {"runs": runs, "total": A.TOTAL, "opp_rating": refs}
 
 
