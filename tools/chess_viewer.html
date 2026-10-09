@@ -93,7 +93,7 @@ tr.pick{cursor:pointer}tr.pick:hover td{background:var(--surface-0)}
 <script>
 const $=id=>document.getElementById(id), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const GLYPH={k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟'};
-const OPP={'full-strength':'Full strength','skill-0':'Skill 0','elo-1800-setting':'Elo 1800 setting'};
+const OPP=new Proxy({},{get:(_,k)=>k});   // the server sends display names
 let D=null, G=null, sel=null, live=true, ply=null;
 
 function tile(k,v,n){return `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${n||'&nbsp;'}</div></div>`}
@@ -103,9 +103,8 @@ function renderTiles(){
   $('tiles').innerHTML=
     tile('Elo',r.window?r.estimate.toLocaleString():'–',r.window?`95% range ${r.lower}–${r.upper} · ${r.window} games`:'no rated games yet')+
     tile('Rated games',`${done} / ${D.total}`,`${D.wdl[0]} W · ${D.wdl[1]} D · ${D.wdl[2]} L`)+
-    tile('vs Skill 0',pct(b['skill-0']),`${b['skill-0'].score} of ${b['skill-0'].n} points`)+
-    tile('vs Elo 1800 setting',pct(b['elo-1800-setting']),`${b['elo-1800-setting'].score} of ${b['elo-1800-setting'].n} points`)+
-    tile('vs Full strength',pct(b['full-strength']),`${b['full-strength'].score} of ${b['full-strength'].n} · unrated`)+
+    tile('Score',done?Math.round(100*(D.wdl[0]+D.wdl[1]/2)/done)+'%':'–',`${D.wdl[0]+D.wdl[1]/2} of ${done} points`)+
+    `<div class="tile" style="grid-column:span 2"><div class="k">By opponent${D.ladder?' (levels hidden from the agents)':''}</div><div class="n" style="font-size:12.5px;line-height:1.7;color:var(--text-secondary)">${(D.order||[]).map(o=>{const x=b[o];return x&&x.n?`${o}: <b style="color:var(--text-primary)">${x.score}/${x.n}</b>`:`${o}: –`}).join(' · ')}</div></div>`+
     tile('Iteration',it,`${D.teams.length?(n=>n+(n===1?' agent':' agents')+' in the latest team')(D.teams[D.teams.length-1].roles.length):'no team yet'}`)+
     tile('Practice games',D.practice.games,`${D.practice.plies} plies · ${D.illegal} illegal moves in rated games`);
 }
@@ -121,7 +120,7 @@ function renderChart(){
   for(let v=y0;v<=y1;v+=(y1-y0)>1400?400:200) s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--text-muted)">${v}</text>`;
   for(let g=0;g<=D.total;g+=25) s+=`<text x="${x(g)}" y="${Ht-8}" text-anchor="middle" font-size="11" fill="var(--text-muted)">${g}</text>`;
   for(const g of D.blocks_closed) s+=`<line x1="${x(g)}" x2="${x(g)}" y1="${m.t+ih}" y2="${m.t+ih+5}" stroke="var(--text-muted)"/>`;
-  for(const [o,v] of Object.entries(D.opp_rating)) s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--text-muted)" stroke-dasharray="3 4"/><text x="${W-m.r+6}" y="${y(v)+4}" font-size="11" fill="var(--text-muted)">${o==='skill-0'?'Skill 0':'1800'}</text>`;
+  for(const [o,v] of Object.entries(D.opp_rating)) s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--text-muted)" stroke-dasharray="3 4"/><text x="${W-m.r+6}" y="${y(v)+4}" font-size="11" fill="var(--text-muted)">${o}</text>`;
   const up=H.map(h=>`${x(h.game)},${y(h.upper)}`), lo=H.map(h=>`${x(h.game)},${y(h.lower)}`).reverse();
   s+=`<polygon points="${up.concat(lo).join(' ')}" fill="var(--series-1)" opacity=".14"/>`;
   s+=`<polyline points="${H.map(h=>`${x(h.game)},${y(h.estimate)}`).join(' ')}" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;

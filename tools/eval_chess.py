@@ -29,7 +29,7 @@ def main() -> int:
         print(f"rated games finished: {len(done)} of {A.TOTAL}, {A.TOTAL - len(done)} remain   "
               f"(iteration {len(ends) + 1}: {len(block)} finished" + (f", games {first}-{len(done)})" if block else ")"))
         for g in block:
-            print(f"  game {g['id']:>3} vs {g['opponent']:<17} as {g['color']:<5} {g['end']['result']:<7} "
+            print(f"  game {g['id']:>3} vs {A.shown(g['opponent']):<24} as {g['color']:<5} {g['end']['result']:<7} "
                   f"{g['end']['reason']:<22} plies={len(g['moves'])} illegal={g['illegal']}")
         live = [g for g in rated if not g["end"]]
         if live:
@@ -38,14 +38,17 @@ def main() -> int:
         for g in done:
             by[g["opponent"]][0] += g["end"]["score"]
             by[g["opponent"]][1] += 1
-        print("score by opponent (all games so far; win 1, draw 0.5): " +
-              ", ".join(f"{o} {by[o][0]:g}/{by[o][1]}" for o in A.ORDER if by[o][1]))
+        if A.RUN and not A.SHOW_LEVELS:   # the ladder's levels stay hidden from the agents and the supervisor
+            print(f"score (all rated games so far; win 1, draw 0.5): {sum(v[0] for v in by.values()):g}/{len(done)}")
+        else:
+            print("score by opponent (all games so far; win 1, draw 0.5): " +
+                  ", ".join(f"{A.shown(o)} {by[o][0]:g}/{by[o][1]}" for o in A.ORDER if by[o][1]))
         practice = [g for g in gs.values() if g["kind"] == "practice"]
         print(f"practice games: {len(practice)} started, {sum(len(g['moves']) for g in practice)} plies; "
               f"illegal moves in rated games: {sum(g['illegal'] for g in rated)}")
         r = A.rating(gs)
         print(f"rating over the last {r['window']} rated-opponent games: {r['estimate']} "
-              f"(95% range {r['lower']} to {r['upper']}); full-strength games are not rated")
+              f"(95% range {r['lower']} to {r['upper']})" + ("" if A.RUN else "; full-strength games are not rated"))
         print("a few games move this number by chance alone: read the range, not the point")
         print(f"elo = {r['estimate']}")
         if "--end-iteration" in sys.argv[1:]:

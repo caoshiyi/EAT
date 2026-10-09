@@ -3,12 +3,13 @@
 # time limit. The session starts with ops/chess_single_prompt.txt, and a native Stop hook (ops/chess_keep_going.sh) gives
 # that same prompt again whenever the agent tries to stop before the 200 rated games are played. If the process itself ends early (a crash or a usage limit), run this again: it
 # resumes the same session.
-#   bash ops/run_chess_single.sh MODEL
+#   bash ops/run_chess_single.sh MODEL LADDER        (LADDER: opus | haiku, see ops/chess_ladder.sh)
 set -uo pipefail
 cd "$(dirname "$0")/.."
 MODEL="${1:?usage: run_chess_single.sh MODEL}"
 export EAT_TASK=chess
 source ops/env.sh
+bash ops/chess_ladder.sh "${2:?usage: run_chess_single.sh MODEL LADDER}" || exit 1
 ROOT="$(pwd)"
 LOG=agent_team/single; mkdir -p "$LOG"
 [ -f "$LOG/session_id" ] || python3 -c "import uuid; print(uuid.uuid4())" > "$LOG/session_id"

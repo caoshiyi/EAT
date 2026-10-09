@@ -36,6 +36,10 @@ done
 
 echo "[launch_team] Iteration $ITER — launching ${#ROLES[@]} agent(s): ${ROLES[*]}" >&2
 
+# TEAM_WALL_MIN: the team's wall-clock limit in minutes -- every agent still running then is stopped (and agents of
+# later phases are not started); the official eval runs as usual. The agents and the supervisor are not told.
+TEAM_DEADLINE=""
+[ -n "${TEAM_WALL_MIN:-}" ] && TEAM_DEADLINE=$(( $(date +%s) + ${TEAM_WALL_SEC:-$(( TEAM_WALL_MIN * 60 ))} ))
 # Set AGENT_TIMEOUT_ENFORCE=1 to kill an agent after the Timeout its role declares; EAT_MODEL picks the agents' model
 MODEL_ARGS=()
 [ -n "${EAT_MODEL:-}" ] && MODEL_ARGS=(--model "$EAT_MODEL")
@@ -60,7 +64,7 @@ launch_agent() {
 
     echo "[launch_team] Starting agent: $ROLE$([ "$RESTARTED" = 1 ] && echo ' (restarted)')" >&2
     # Prompt goes through stdin: argv breaks on prompts starting with '-' and on >128KB prompts
-    "${LIMIT[@]}" bash "$SCRIPT_DIR/claude_retry.sh" "$PROMPT_FILE" "$AGENT_OUTPUT" "$ITER_DIR/${ROLE}_stderr.txt" "$RESTARTED" -- \
+    CR_DEADLINE="$TEAM_DEADLINE" "${LIMIT[@]}" bash "$SCRIPT_DIR/claude_retry.sh" "$PROMPT_FILE" "$AGENT_OUTPUT" "$ITER_DIR/${ROLE}_stderr.txt" "$RESTARTED" -- \
         "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"}
     echo "[launch_team] Agent '$ROLE' finished (exit $?)." >&2
 }

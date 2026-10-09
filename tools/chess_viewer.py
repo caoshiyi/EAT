@@ -71,8 +71,18 @@ def teams(root: Path) -> tuple[list[dict], float]:
     return [out[k] for k in sorted(out)], total
 
 
+def run_conf(root: Path) -> dict | None:
+    f = root / ".work" / "chess_run.json"
+    return json.loads(f.read_text()) if f.exists() else None
+
+
 def build(name: str) -> dict:
     root = RUNS[name]
+    conf = run_conf(root)
+    opp = A.opp_ratings(conf)
+    label = ({c: f"Elo {l}" for l, c in A.ladder_codes(conf).items()} if conf else
+             {"full-strength": "Full strength", "skill-0": "Skill 0", "elo-1800-setting": "Elo 1800 setting"})
+    order = ([A.ladder_codes(conf)[l] for l in conf["ladder"]] if conf else ["skill-0", "elo-1800-setting", "full-strength"])
     events = read_events(root)
     key = (len(events), events[-1]["hash"] if events else "")
     with _lock:
@@ -87,26 +97,27 @@ def build(name: str) -> dict:
                 if not g["end"]:
                     continue
                 seen[g["id"]] = g
-                history.append(dict(A.rating(seen), game=int(g["id"]), opponent=g["opponent"], color=g["color"],
+                history.append(dict(A.rating(seen, opp), game=int(g["id"]), opponent=label.get(g["opponent"], g["opponent"]), color=g["color"],
                                     result=g["end"]["result"], score=g["end"]["score"]))
             blocks = A.iteration_ends(events)
             rows = []
             for g in gs.values():
                 b = A.board_of(g)
-                rows.append({"id": g["id"], "kind": g["kind"], "opponent": g["opponent"], "color": g["color"],
+                rows.append({"id": g["id"], "kind": g["kind"], "opponent": label.get(g["opponent"], g["opponent"].replace("practice-", "Elo ")), "color": g["color"],
                              "plies": len(g["moves"]), "illegal": g["illegal"], "started": g.get("started"),
                              "end": g["end"], "fen": b.fen(),
                              "last": (sans(g)[-1] if g["moves"] else None)})
             done = [g for g in rated if g["end"]]
-            by = {o: {"score": sum(g["end"]["score"] for g in done if g["opponent"] == o),
-                      "n": sum(g["opponent"] == o for g in done)} for o in A.ORDER}
-            data = {"total": A.TOTAL, "blocks_closed": blocks, "rating": A.rating(gs),
+            by = {label[o]: {"score": sum(g["end"]["score"] for g in done if g["opponent"] == o),
+                             "n": sum(g["opponent"] == o for g in done)} for o in order}
+            data = {"total": A.TOTAL, "blocks_closed": blocks, "rating": A.rating(gs, opp), "order": [label[o] for o in order],
                     "history": history, "games": rows, "by_opponent": by,
                     "wdl": [sum(g["end"]["score"] == s for g in done) for s in (1.0, 0.5, 0.0)],
                     "illegal": sum(g["illegal"] for g in rated),
                     "practice": {"games": sum(g["kind"] == "practice" for g in gs.values()),
                                  "plies": sum(len(g["moves"]) for g in gs.values() if g["kind"] == "practice")},
-                    "opp_rating": A.OPP_RATING, "updated": events[-1]["ts"] if events else None}
+                    "opp_rating": ({} if conf else {"Skill 0": 1320, "Elo 1800 setting": 1800}),
+                    "ladder": conf["ladder"] if conf else None, "updated": events[-1]["ts"] if events else None}
             c.update(key=key, data=data)
     t, spent = teams(root)
     return dict(data, teams=t, spent=spent, run=name, runs=list(RUNS))
@@ -122,10 +133,15 @@ def overview() -> dict:
                      "iteration": len(d["blocks_closed"]) + 1 if d["teams"] else None,
                      "roles": d["teams"][-1]["roles"] if d["teams"] else [], "spent": d["spent"],
                      "updated": d["updated"]})
-    return {"runs": runs, "total": A.TOTAL, "opp_rating": A.OPP_RATING}
+    refs = {}
+    for name in RUNS:
+        refs.update(build(name)["opp_rating"])
+    return {"runs": runs, "total": A.TOTAL, "opp_rating": refs}
 
 
 def game_detail(name: str, gid: str) -> dict | None:
+    conf = run_conf(RUNS[name])
+    label = {c: f"Elo {l}" for l, c in A.ladder_codes(conf).items()} if conf else {}
     g = A.games(read_events(RUNS[name])).get(gid)
     if not g:
         return None
@@ -133,7 +149,8 @@ def game_detail(name: str, gid: str) -> dict | None:
     for u in g["moves"]:
         b.push_uci(u)
         fens.append(b.board_fen())
-    return {"id": gid, "kind": g["kind"], "opponent": g["opponent"], "color": g["color"], "end": g["end"],
+    return {"id": gid, "kind": g["kind"], "opponent": label.get(g["opponent"], g["opponent"].replace("practice-", "Elo ")),
+            "color": g["color"], "end": g["end"],
             "sans": sans(g), "ucis": g["moves"], "fens": fens}
 
 

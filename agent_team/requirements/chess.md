@@ -2,8 +2,9 @@
 1. The task is `tasks/chess`: play a stream of 200 rated chess games against Stockfish and improve along the way. Every agent must read `tasks/chess/program.md` in full before working.
 2. Score = `elo` from `python tools/eval_chess.py` (rating over the last 50 rated games against the two limited opponents). Each rated game is played once and counts. State in the prompt how many rated games this agent (and this team in total) plays in this iteration, and that it must not start more.
 3. No chess engine in any form: no Stockfish or other engine, no tablebase or opening database, no code that searches or evaluates positions, no web lookups. Every move comes from an agent's own reasoning. Allowed: the arena's commands (including `legal`), the team's own files, record-keeping scripts.
-4. All play goes through `python tools/chess_arena.py` (see program.md). Do NOT modify `tools/`, `tasks/chess/arena/` or `.work/`, and never run `eval_chess.py --end-iteration`. Do not push to any git remote.
+4. Every rated game is against Stockfish at a hidden level from a fixed range; the level is never shown. All play goes through `python tools/chess_arena.py` (see program.md); do not read `.work/` or the arena's ledger to work out the levels. Do NOT modify `tools/`, `tasks/chess/arena/` or `.work/`, and never run `eval_chess.py --end-iteration`. Do not push to any git remote.
 5. Environment for every shell command: `cd $EAT_ROOT && source $EAT_VENV/bin/activate`.
+6. No one will answer questions during the run: never stop to ask for permission or a decision; decide and continue.
 
 ## How many rated games per iteration (the supervisor's decision)
 There is no fixed number. The 200 rated games are a second budget next to the dollars: each iteration you decide how many of the remaining games this team plays before you look again, and you write that number into the prompts. A team that plays many games gives you more evidence per look but spends games on a team you can no longer change; a team that plays few lets you change it sooner on thinner evidence. The run ends when all 200 are played. The arena does not enforce your number; the prompts do.

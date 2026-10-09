@@ -18,7 +18,13 @@ marks where each iteration ended). Practice games are unrated, unlimited, and ma
     chess_arena.py rating
 
 Environment: CHESS_ARENA_DIR (ledger; default tasks/chess/arena), CHESS_ENGINE (the Stockfish binary),
-CHESS_NODES (opponent search limit per move, 200000).
+CHESS_NODES (opponent search limit per move, 200000), CHESS_RUN (the run's configuration; default .work/chess_run.json).
+
+Two schedules. Without a run configuration: the mirrored benchmark's (full-strength, skill-0, elo-1800-setting in pairs).
+With one ({"ladder": [Elo, ...], "seed": N}): a LADDER -- Stockfish at each listed UCI_Elo, every level once as White
+and once as Black per rotation of 2 x len(ladder) games, the rotation shuffled with the seed, the same for every run that
+uses that configuration. Ladder levels are HIDDEN: the ledger and every command show an opaque code per level; the
+code -> Elo map is in the run configuration (outside the agents' files). Practice games name a level openly.
 """
 import argparse
 import fcntl
@@ -28,6 +34,8 @@ import os
 import sys
 import time
 from pathlib import Path
+
+import random
 
 import chess
 import chess.engine
@@ -39,6 +47,8 @@ ENGINE = os.environ.get("CHESS_ENGINE", str(ROOT / ".work" / "engine" / "usr" / 
 TOTAL = 200
 NODES = int(os.environ.get("CHESS_NODES", "200000"))
 ALLOW_LEGAL = os.environ.get("CHESS_ALLOW_LEGAL", "1") != "0"
+RUN_FILE = Path(os.environ.get("CHESS_RUN", ROOT / ".work" / "chess_run.json"))
+RUN = json.loads(RUN_FILE.read_text()) if RUN_FILE.exists() else None
 
 # The opponents, with the options the mirrored benchmark's data file records for them.
 OPPONENTS = {
@@ -50,6 +60,25 @@ ORDER = ("full-strength", "skill-0", "elo-1800-setting")
 # Rated = the two limited opponents, at Stockfish's own nominal numbers (skill 0 is the bottom of its UCI_Elo
 # range, 1320). Full-strength games are played and recorded but carry no rating information.
 OPP_RATING = {"skill-0": 1320, "elo-1800-setting": 1800}
+def ladder_codes(run: dict) -> dict:
+    """Level -> opaque code of a run configuration (deterministic from its seed; not ordered by strength)."""
+    levels = [int(x) for x in run["ladder"]]
+    codes = random.Random(run["seed"] * 7919 + 1).sample(range(100, 1000), len(levels))
+    return {lvl: f"stockfish-{c}" for lvl, c in zip(levels, codes)}
+
+
+def opp_ratings(run: dict | None) -> dict:
+    """Opponent id -> the Elo it counts as in the rating, for a run configuration (None: the mirrored benchmark)."""
+    return {c: lvl for lvl, c in ladder_codes(run).items()} if run else {"skill-0": 1320, "elo-1800-setting": 1800}
+
+
+if RUN:
+    LEVELS = [int(x) for x in RUN["ladder"]]
+    CODE = ladder_codes(RUN)
+    LEVEL_OF = {c: lvl for lvl, c in CODE.items()}
+    OPPONENTS = {c: {"Hash": 64, "Threads": 1, "UCI_LimitStrength": True, "UCI_Elo": lvl} for lvl, c in CODE.items()}
+    OPP_RATING = {c: lvl for lvl, c in CODE.items()}
+    ORDER = tuple(CODE[l] for l in LEVELS)
 WINDOW = 50
 GRID = range(-150, 3151, 5)     # flat prior; its 95% range is the benchmark's (-70, 3070) at 1500
 
@@ -60,7 +89,26 @@ class Refused(Exception):
 
 def schedule(n: int) -> tuple[str, str]:
     """Opponent and the agent's colour in rated game n (1-based)."""
+    if RUN:
+        k = len(LEVELS) * 2
+        rot, i = divmod(n - 1, k)
+        slots = [(CODE[l], c) for l in LEVELS for c in ("white", "black")]
+        random.Random(RUN["seed"] * 1000003 + rot).shuffle(slots)
+        return slots[i]
     return ORDER[((n - 1) // 2) % len(ORDER)], "white" if n % 2 else "black"
+
+
+SHOW_LEVELS = os.environ.get("CHESS_SHOW_LEVELS") == "1"   # for the people watching (viewer, our reports), never agents
+
+
+def shown(opp: str) -> str:
+    """How an opponent appears: a ladder level is hidden ("stockfish (level hidden)") unless CHESS_SHOW_LEVELS=1;
+    practice levels are named openly; the mirrored benchmark's opponents keep their names."""
+    if RUN and opp in LEVEL_OF:
+        return f"stockfish {LEVEL_OF[opp]}" if SHOW_LEVELS else "stockfish (level hidden)"
+    if opp.startswith("practice-"):
+        return f"stockfish {opp[9:]} (practice)"
+    return opp
 
 
 def read_ledger() -> list[dict]:
@@ -123,17 +171,18 @@ def iteration_ends(events: list[dict]) -> list[int]:
     return [e["rated_finished"] for e in events if e["ev"] == "iter_end"]
 
 
-def rating(gs: dict) -> dict:
+def rating(gs: dict, opp_rating: dict | None = None) -> dict:
     """Posterior over the agent's rating from its last WINDOW rated-opponent games (Elo model, flat prior):
     the median and the central 95% range, rounded to 10."""
-    done = [g for g in rated(gs) if g["end"] and g["opponent"] in OPP_RATING]
+    opp_rating = OPP_RATING if opp_rating is None else opp_rating
+    done = [g for g in rated(gs) if g["end"] and g["opponent"] in opp_rating]
     window = done[-WINDOW:]
     logp = []
     import math
     for r in GRID:
         lp = 0.0
         for g in window:
-            e = 1.0 / (1.0 + 10 ** ((OPP_RATING[g["opponent"]] - r) / 400.0))
+            e = 1.0 / (1.0 + 10 ** ((opp_rating[g["opponent"]] - r) / 400.0))
             s = g["end"]["score"]
             lp += s * math.log(e) + (1 - s) * math.log(1 - e)
         logp.append(lp)
@@ -149,6 +198,8 @@ def rating(gs: dict) -> dict:
 
 
 def engine_reply(b: chess.Board, opponent: str) -> chess.Move:
+    if opponent not in OPPONENTS and opponent.startswith("practice-"):
+        OPPONENTS[opponent] = {"Hash": 64, "Threads": 1, "UCI_LimitStrength": True, "UCI_Elo": int(opponent[9:])}
     eng = chess.engine.SimpleEngine.popen_uci(ENGINE)
     try:
         eng.configure(OPPONENTS[opponent])
@@ -199,7 +250,7 @@ def render(g: dict) -> str:
         sans.append(t.san(m))
         t.push(m)
     pgn = " ".join((f"{i // 2 + 1}. " if i % 2 == 0 else "") + s for i, s in enumerate(sans))
-    lines = [f"game {g['id']} ({g['kind']}) vs {g['opponent']} -- you are {g['color']}",
+    lines = [f"game {g['id']} ({g['kind']}) vs {shown(g['opponent'])} -- you are {g['color']}",
              str(b if g["color"] == "white" else b.transform(chess.flip_vertical).transform(chess.flip_horizontal)),
              f"(board shown from your side; lowercase = black)   FEN: {b.fen()}",
              f"moves: {pgn or '(none)'}"]
@@ -226,7 +277,16 @@ def cmd_new(events, gs, a):
 
 
 def cmd_practice(events, gs, a):
-    if a.opponent not in OPPONENTS:
+    if RUN:   # practice names a level openly: --opponent 1700 (any UCI_Elo Stockfish allows, 1320-3190)
+        try:
+            lvl = int(a.opponent)
+        except ValueError:
+            raise Refused("practice opponent: a Stockfish Elo level between 1320 and 3190, e.g. --opponent 1700")
+        if not 1320 <= lvl <= 3190:
+            raise Refused("practice opponent: a Stockfish Elo level between 1320 and 3190")
+        a.opponent = f"practice-{lvl}"
+        OPPONENTS[a.opponent] = {"Hash": 64, "Threads": 1, "UCI_LimitStrength": True, "UCI_Elo": lvl}
+    elif a.opponent not in OPPONENTS:
         raise Refused(f"opponent must be one of {', '.join(OPPONENTS)}")
     gid = "p" + str(sum(g["kind"] == "practice" for g in gs.values()) + 1)
     append(events, ev="start", game=gid, kind="practice", opponent=a.opponent, color=a.color)
@@ -280,7 +340,7 @@ def cmd_legal(events, gs, a):
 def cmd_history(events, gs, a):
     for g in gs.values():
         if g["end"]:
-            print(f"{g['id']:>4}  {g['kind']:<8} {g['opponent']:<17} {g['color']:<5} {g['end']['result']:<7} "
+            print(f"{g['id']:>4}  {g['kind']:<8} {shown(g['opponent']):<24} {g['color']:<5} {g['end']['result']:<7} "
                   f"{g['end']['reason']:<22} plies={len(g['moves'])} illegal={g['illegal']}")
 
 
@@ -296,9 +356,9 @@ def cmd_status(events, gs, a):
           f"(iteration {len(ends) + 1}: {len(done) - (ends[-1] if ends else 0)} finished in it so far)")
     if len(r) < TOTAL:
         opp, color = schedule(len(r) + 1) if len(done) == len(r) else (r[-1]["opponent"], r[-1]["color"])
-        print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {opp} as {color}")
+        print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {shown(opp)} as {color}")
     live = [g for g in gs.values() if not g["end"]]
-    print("active: " + (", ".join(f"{g['id']} ({g['kind']}, {g['opponent']})" for g in live) or "none"))
+    print("active: " + (", ".join(f"{g['id']} ({g['kind']}, {shown(g['opponent'])})" for g in live) or "none"))
     print("rating: " + json.dumps(rating(gs)))
 
 
