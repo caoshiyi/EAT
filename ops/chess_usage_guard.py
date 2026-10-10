@@ -6,7 +6,7 @@ other work on the same subscription keeps room.
         --run RUN_DIR=TMUX_WINDOW="RESUME COMMAND" ... > guard.log 2>&1 &
 
 Every --poll seconds it reads the 5-hour utilization (the endpoint Claude Code's own usage view uses, with the login
-in ~/.claude/.credentials.json). At or above --threshold it pauses every run: it writes RUN_DIR/.work/PAUSED (which
+in $CLAUDE_CONFIG_DIR/.credentials.json, default ~/.claude: run one guard per account, each with its own --state). At or above --threshold it pauses every run: it writes RUN_DIR/.work/PAUSED (which
 ops/chess_single_watch.sh respects) and stops every process of the run's tmux window, except the window's shell. Once
 the window has reset (now past the resets_at seen when pausing, and utilization below the threshold) it removes the
 PAUSED files and types each run's resume command into its window (the run commands continue where they stopped).
@@ -21,6 +21,7 @@ import time
 import urllib.request
 from pathlib import Path
 
+CONFIG = Path(os.environ.get("CLAUDE_CONFIG_DIR", Path.home() / ".claude"))   # the account whose meter is read
 STATE = Path.home() / "EAT" / ".work" / "chess_usage_guard.json"
 
 
@@ -31,7 +32,7 @@ def log(msg):
 def five_hour():
     """(utilization percent, resets_at datetime) or None if the meter cannot be read now."""
     try:
-        tok = json.load(open(Path.home() / ".claude" / ".credentials.json"))["claudeAiOauth"]["accessToken"]
+        tok = json.load(open(CONFIG / ".credentials.json"))["claudeAiOauth"]["accessToken"]
         req = urllib.request.Request("https://api.anthropic.com/api/oauth/usage", headers={
             "Authorization": "Bearer " + tok, "anthropic-beta": "oauth-2025-04-20", "Content-Type": "application/json"})
         d = json.load(urllib.request.urlopen(req, timeout=30))["five_hour"]
@@ -115,11 +116,13 @@ def main():
     a = argparse.ArgumentParser()
     a.add_argument("--threshold", type=float, default=80)
     a.add_argument("--poll", type=int, default=300)
+    a.add_argument("--state", default=str(STATE), help="state file; one per guard when several accounts each have a guard")
     a.add_argument("--run", action="append", required=True, help='RUN_DIR=TMUX_WINDOW=RESUME_COMMAND (empty command: '
                    'a watcher restarts the run once PAUSED is gone)')
     a = a.parse_args()
     runs = [r.split("=", 2) for r in a.run]
-    state = json.loads(STATE.read_text()) if STATE.exists() else {"paused": False}
+    state_file = Path(a.state)
+    state = json.loads(state_file.read_text()) if state_file.exists() else {"paused": False}
     log(f"threshold {a.threshold:g}%, poll {a.poll}s, runs: {[r[0] for r in runs]}, state {state}")
     while True:
         u = five_hour()
@@ -130,14 +133,14 @@ def main():
                 for run, win, _ in runs:
                     pause(run, win)
                 state = {"paused": True, "resets_at": resets.isoformat()}
-                STATE.write_text(json.dumps(state))
+                state_file.write_text(json.dumps(state))
             elif state["paused"] and dt.datetime.now(dt.timezone.utc) > dt.datetime.fromisoformat(state["resets_at"]) \
                     and util < a.threshold:
                 log(f"window reset (now {util:g}%): resuming")
                 for run, win, cmd in runs:
                     resume(run, win, cmd)
                 state = {"paused": False}
-                STATE.write_text(json.dumps(state))
+                state_file.write_text(json.dumps(state))
             else:
                 log(f"5-hour {util:g}%, resets {resets:%H:%M}Z, {'paused' if state['paused'] else 'running'}")
         time.sleep(a.poll)

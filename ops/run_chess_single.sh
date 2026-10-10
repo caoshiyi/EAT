@@ -22,7 +22,7 @@ SETTINGS=$(python3 -c "import json,sys; print(json.dumps({'autoMemoryDirectory':
 ARGS=(--print --model "$MODEL" --dangerously-skip-permissions --output-format json --disallowedTools "WebSearch,WebFetch" --settings "$SETTINGS")
 n=$(ls "$LOG"/call_*.json 2>/dev/null | wc -l); n=$((n + 1))
 echo "[single] $(date -u +%H:%M:%SZ) call $n, session $SID: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
-if compgen -G "$HOME/.claude/projects/*/$SID.jsonl" > /dev/null; then
+if compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/$SID.jsonl" > /dev/null; then
     claude "${ARGS[@]}" --resume "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 else
     claude "${ARGS[@]}" --session-id "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"

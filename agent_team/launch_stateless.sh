@@ -228,7 +228,7 @@ sup_call() {
 # Run supervisor and write output to $SCRIPT_DIR/.supervisor_output.json
 run_supervisor() {
     local iter="$1"
-    if [ "$SUPERVISOR_MODE" = "persistent" ] && compgen -G "$HOME/.claude/projects/*/${SESSION_ID}.jsonl" > /dev/null; then
+    if [ "$SUPERVISOR_MODE" = "persistent" ] && compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/${SESSION_ID}.jsonl" > /dev/null; then
         echo "[supervisor] Resuming persistent session ($SESSION_ID)..."
         sup_call "$(build_iter_prompt "$iter")" "$SCRIPT_DIR/.supervisor_output.json"
     else

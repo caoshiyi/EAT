@@ -39,7 +39,7 @@ while :; do
     fi
     SESSION_ARGS=()
     if [ -n "${CR_SESSION_ID:-}" ]; then
-        if compgen -G "$HOME/.claude/projects/*/${CR_SESSION_ID}.jsonl" > /dev/null; then
+        if compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/${CR_SESSION_ID}.jsonl" > /dev/null; then
             SESSION_ARGS=(--resume "$CR_SESSION_ID")
         else
             SESSION_ARGS=(--session-id "$CR_SESSION_ID")
