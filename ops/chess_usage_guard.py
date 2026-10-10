@@ -29,19 +29,30 @@ def log(msg):
     print(f"[guard] {dt.datetime.now(dt.timezone.utc):%H:%M:%SZ} {msg}", flush=True)
 
 
-def five_hour():
-    """(utilization percent, resets_at datetime) or None if the meter cannot be read now."""
+def meter():
+    """The account's meter, or None if it cannot be read now: {"five": (percent, resets_at), "week": (percent, resets_at),
+    "extra_used": paid extra-usage credits used this month (None if the account has no extra usage)}."""
     try:
         tok = json.load(open(CONFIG / ".credentials.json"))["claudeAiOauth"]["accessToken"]
         req = urllib.request.Request("https://api.anthropic.com/api/oauth/usage", headers={
             "Authorization": "Bearer " + tok, "anthropic-beta": "oauth-2025-04-20", "Content-Type": "application/json"})
-        d = json.load(urllib.request.urlopen(req, timeout=30))["five_hour"]
-        # right after a reset the window has no resets_at until something is used in it: it is empty, not unknown
-        resets = dt.datetime.fromisoformat(d["resets_at"]) if d.get("resets_at") else dt.datetime.now(dt.timezone.utc)
-        return float(d["utilization"] or 0), resets
+        d = json.load(urllib.request.urlopen(req, timeout=30))
+        now = dt.datetime.now(dt.timezone.utc)
+
+        def window(w):   # right after a reset a window has no resets_at until something is used in it: empty, not unknown
+            w = w or {}
+            return float(w.get("utilization") or 0), dt.datetime.fromisoformat(w["resets_at"]) if w.get("resets_at") else now
+        extra = d.get("extra_usage") or {}
+        return {"five": window(d.get("five_hour")), "week": window(d.get("seven_day")),
+                "extra_used": float(extra["used_credits"]) if extra.get("is_enabled") and extra.get("used_credits") is not None else None}
     except Exception as e:     # a failed read is skipped; the next poll tries again
         log(f"usage read failed: {type(e).__name__}: {e}")
         return None
+
+
+def five_hour():
+    m = meter()
+    return m and m["five"]
 
 
 def procs():
@@ -114,7 +125,10 @@ def resume(run, window, cmd):
 
 def main():
     a = argparse.ArgumentParser()
-    a.add_argument("--threshold", type=float, default=80)
+    a.add_argument("--threshold", type=float, default=80, help="pause at this 5-hour percent, until the window resets")
+    a.add_argument("--weekly-threshold", type=float, help="also pause at this weekly percent, until the week resets")
+    a.add_argument("--no-extra", action="store_true", help="pause, and stay paused until a person resumes, as soon as any "
+                   "paid extra-usage credit is used (accounts with extra usage turned on)")
     a.add_argument("--poll", type=int, default=300)
     a.add_argument("--state", default=str(STATE), help="state file; one per guard when several accounts each have a guard")
     a.add_argument("--run", action="append", required=True, help='RUN_DIR=TMUX_WINDOW=RESUME_COMMAND (empty command: '
@@ -123,26 +137,45 @@ def main():
     runs = [r.split("=", 2) for r in a.run]
     state_file = Path(a.state)
     state = json.loads(state_file.read_text()) if state_file.exists() else {"paused": False}
-    log(f"threshold {a.threshold:g}%, poll {a.poll}s, runs: {[r[0] for r in runs]}, state {state}")
+    log(f"threshold {a.threshold:g}% (5-hour)" + (f", {a.weekly_threshold:g}% (weekly)" if a.weekly_threshold else "")
+        + (", no extra usage" if a.no_extra else "") + f", poll {a.poll}s, runs: {[r[0] for r in runs]}, state {state}")
     while True:
-        u = five_hour()
-        if u:
-            util, resets = u
-            if not state["paused"] and util >= a.threshold:
-                log(f"5-hour window at {util:g}% (>= {a.threshold:g}%), resets {resets:%H:%M}Z: pausing")
+        m = meter()
+        if m:
+            (f_pct, f_reset), (w_pct, w_reset), extra = m["five"], m["week"], m["extra_used"]
+            if a.no_extra and extra is not None and "extra_base" not in state:
+                state["extra_base"] = extra           # credits already used before this guard started are not ours
+                state_file.write_text(json.dumps(state))
+            blocks = []                               # (why, until when)
+            if f_pct >= a.threshold:
+                blocks.append((f"5-hour window at {f_pct:g}% (>= {a.threshold:g}%)", f_reset))
+            if a.weekly_threshold and w_pct >= a.weekly_threshold:
+                blocks.append((f"weekly at {w_pct:g}% (>= {a.weekly_threshold:g}%)", w_reset))
+            spent = a.no_extra and extra is not None and extra > state.get("extra_base", 0) + 1e-9
+            if spent:
+                blocks.append((f"extra-usage credits used: {extra:g} (was {state.get('extra_base', 0):g})", None))
+            line = f"5-hour {f_pct:g}% (resets {f_reset:%H:%M}Z), weekly {w_pct:g}%" + (f", extra used {extra:g}" if extra is not None else "")
+            if not state["paused"] and blocks:
+                log(line + " -> pausing: " + "; ".join(w for w, _ in blocks))
                 for run, win, _ in runs:
                     pause(run, win)
-                state = {"paused": True, "resets_at": resets.isoformat()}
+                until = [u for _, u in blocks if u]
+                state.update(paused=True, resets_at=max(until).isoformat() if until else None, locked=bool(spent))
                 state_file.write_text(json.dumps(state))
-            elif state["paused"] and dt.datetime.now(dt.timezone.utc) > dt.datetime.fromisoformat(state["resets_at"]) \
-                    and util < a.threshold:
-                log(f"window reset (now {util:g}%): resuming")
+            elif state["paused"] and spent and not state.get("locked"):
+                state["locked"] = True                # extra usage while paused: never resume on our own
+                state_file.write_text(json.dumps(state))
+                log(line + " -> extra usage used: stays paused until a person resumes")
+            elif state["paused"] and not state.get("locked") and not blocks and \
+                    dt.datetime.now(dt.timezone.utc) > dt.datetime.fromisoformat(state["resets_at"]):
+                log(line + " -> limits clear: resuming")
                 for run, win, cmd in runs:
                     resume(run, win, cmd)
-                state = {"paused": False}
+                state.update(paused=False, resets_at=None, locked=False)
                 state_file.write_text(json.dumps(state))
             else:
-                log(f"5-hour {util:g}%, resets {resets:%H:%M}Z, {'paused' if state['paused'] else 'running'}")
+                log(line + (", PAUSED until a person resumes (extra usage)" if state.get("locked")
+                            else ", paused" if state["paused"] else ", running"))
         time.sleep(a.poll)
 
 
