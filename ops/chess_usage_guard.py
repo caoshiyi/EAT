@@ -50,6 +50,34 @@ def meter():
         return None
 
 
+LAST = {"five": None}   # the last 5-hour percent read, for the token refresh below
+
+
+def keep_login_fresh():
+    """While an account's runs are paused nothing uses its login, so its OAuth token can expire (8 h) and the meter
+    becomes unreadable. Claude Code refreshes a token only when it makes a call: when the token is within 20 minutes
+    of expiring, make one tiny Haiku call with that account (never when its 5-hour window is at 95% or more, so it
+    cannot spend paid extra usage)."""
+    try:
+        exp = json.load(open(CONFIG / ".credentials.json"))["claudeAiOauth"].get("expiresAt", 0) / 1000
+    except (OSError, ValueError, KeyError):
+        return
+    if exp - time.time() > 20 * 60:
+        return
+    if LAST["five"] is not None and LAST["five"] >= 95:
+        log(f"login token expires soon, but the 5-hour window is at {LAST['five']:g}%: not refreshing"); return
+    env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}
+    env["CLAUDE_CONFIG_DIR"] = str(CONFIG)
+    scratch = Path(os.environ.get("TMPDIR", "/tmp")) / "chess_guard_refresh"; scratch.mkdir(exist_ok=True)
+    r = subprocess.run(["claude", "-p", "--model", "haiku", "Reply OK."], cwd=scratch, env=env,
+                       capture_output=True, text=True, timeout=180)
+    try:
+        new = json.load(open(CONFIG / ".credentials.json"))["claudeAiOauth"].get("expiresAt", 0) / 1000
+    except (OSError, ValueError, KeyError):
+        new = 0
+    log("login token refreshed" if new > exp else f"login token refresh failed: {(r.stdout or r.stderr).strip()[:160]}")
+
+
 def five_hour():
     m = meter()
     return m and m["five"]
@@ -140,9 +168,11 @@ def main():
     log(f"threshold {a.threshold:g}% (5-hour)" + (f", {a.weekly_threshold:g}% (weekly)" if a.weekly_threshold else "")
         + (", no extra usage" if a.no_extra else "") + f", poll {a.poll}s, runs: {[r[0] for r in runs]}, state {state}")
     while True:
+        keep_login_fresh()
         m = meter()
         if m:
             (f_pct, f_reset), (w_pct, w_reset), extra = m["five"], m["week"], m["extra_used"]
+            LAST["five"] = f_pct
             if a.no_extra and extra is not None and "extra_base" not in state:
                 state["extra_base"] = extra           # credits already used before this guard started are not ours
                 state_file.write_text(json.dumps(state))
