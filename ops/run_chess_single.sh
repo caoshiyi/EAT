@@ -9,6 +9,7 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 MODEL="${1:?usage: run_chess_single.sh MODEL}"
 export EAT_TASK=chess
+unset EAT_ROOT EAT_WORK EAT_REFS EAT_VENV EAT_CACHE EAT_LOG EAT_SESSION EAT_CLAUDE_SETTINGS   # this checkout's own paths, never ones left in a reused shell
 source ops/env.sh
 bash ops/chess_ladder.sh "${2:?usage: run_chess_single.sh MODEL LADDER}" || exit 1
 ROOT="$(pwd)"

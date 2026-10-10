@@ -6,6 +6,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export EAT_TASK=chess EAT_MODEL="${1:?usage: run_chess.sh MODEL LADDER [max_team_size]}"
+unset EAT_ROOT EAT_WORK EAT_REFS EAT_VENV EAT_CACHE EAT_LOG EAT_SESSION EAT_CLAUDE_SETTINGS   # this checkout's own paths, never ones left in a reused shell
 source ops/env.sh
 bash ops/chess_ladder.sh "${2:?usage: run_chess.sh MODEL LADDER [max_team_size]}" || exit 1
 export TEAM_WALL_MIN="${TEAM_WALL_MIN:-120}"
