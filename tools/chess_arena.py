@@ -60,11 +60,31 @@ ORDER = ("full-strength", "skill-0", "elo-1800-setting")
 # Rated = the two limited opponents, at Stockfish's own nominal numbers (skill 0 is the bottom of its UCI_Elo
 # range, 1320). Full-strength games are played and recorded but carry no rating information.
 OPP_RATING = {"skill-0": 1320, "elo-1800-setting": 1800}
+def phases(run: dict) -> list[tuple[int, list[int]]]:
+    """(first rated game, ladder) of each phase of a run configuration: the base ladder from game 1, then any
+    "phases": [{"from": N, "ladder": [...]}] entries (a later, e.g. stronger, ladder from game N on)."""
+    return [(1, [int(x) for x in run["ladder"]])] + [(int(p["from"]), [int(x) for x in p["ladder"]])
+                                                      for p in sorted(run.get("phases", []), key=lambda p: int(p["from"]))]
+
+
+def all_levels(run: dict) -> list[int]:
+    out = []
+    for _, ladder in phases(run):
+        out += [l for l in ladder if l not in out]
+    return out
+
+
 def ladder_codes(run: dict) -> dict:
-    """Level -> opaque code of a run configuration (deterministic from its seed; not ordered by strength)."""
+    """Level -> opaque code of a run configuration (deterministic from its seed; not ordered by strength). The base
+    ladder's codes never change; a level a later phase adds gets a new code, a level it repeats keeps its code."""
     levels = [int(x) for x in run["ladder"]]
     codes = random.Random(run["seed"] * 7919 + 1).sample(range(100, 1000), len(levels))
-    return {lvl: f"stockfish-{c}" for lvl, c in zip(levels, codes)}
+    out = {lvl: f"stockfish-{c}" for lvl, c in zip(levels, codes)}
+    for j, (_, ladder) in enumerate(phases(run)[1:], start=1):
+        new = [l for l in ladder if l not in out]
+        free = [c for c in range(100, 1000) if f"stockfish-{c}" not in out.values()]
+        out.update({lvl: f"stockfish-{c}" for lvl, c in zip(new, random.Random(run["seed"] * 7919 + 1 + j).sample(free, len(new)))})
+    return out
 
 
 def opp_ratings(run: dict | None) -> dict:
@@ -73,7 +93,7 @@ def opp_ratings(run: dict | None) -> dict:
 
 
 if RUN:
-    LEVELS = [int(x) for x in RUN["ladder"]]
+    LEVELS = all_levels(RUN)
     CODE = ladder_codes(RUN)
     LEVEL_OF = {c: lvl for lvl, c in CODE.items()}
     OPPONENTS = {c: {"Hash": 64, "Threads": 1, "UCI_LimitStrength": True, "UCI_Elo": lvl} for lvl, c in CODE.items()}
@@ -89,11 +109,12 @@ class Refused(Exception):
 
 def schedule(n: int) -> tuple[str, str]:
     """Opponent and the agent's colour in rated game n (1-based)."""
-    if RUN:
-        k = len(LEVELS) * 2
-        rot, i = divmod(n - 1, k)
-        slots = [(CODE[l], c) for l in LEVELS for c in ("white", "black")]
-        random.Random(RUN["seed"] * 1000003 + rot).shuffle(slots)
+    if RUN:   # rotations of 2 x len(ladder) games, counted from the start of the phase the game falls in
+        j, (start, ladder) = [(j, ph) for j, ph in enumerate(phases(RUN)) if ph[0] <= n][-1]
+        k = len(ladder) * 2
+        rot, i = divmod(n - start, k)
+        slots = [(CODE[l], c) for l in ladder for c in ("white", "black")]
+        random.Random(RUN["seed"] * 1000003 + rot + 1009 * j).shuffle(slots)
         return slots[i]
     return ORDER[((n - 1) // 2) % len(ORDER)], "white" if n % 2 else "black"
 

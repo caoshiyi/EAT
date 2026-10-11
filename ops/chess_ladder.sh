@@ -14,6 +14,8 @@ WANT="{\"ladder\": $L, \"seed\": 1}"
 mkdir -p .work
 if [ -f .work/chess_run.json ]; then
     [ "$(cat .work/chess_run.json)" = "$WANT" ] && exit 0
+    # a configuration that adds later "phases" to this same base ladder and seed is this run, continued
+    python3 -c "import json,sys; r=json.load(open('.work/chess_run.json')); w=json.loads(sys.argv[1]); sys.exit(0 if (r['ladder'],r['seed'])==(w['ladder'],w['seed']) and 'phases' in r else 1)" "$WANT" && exit 0
     echo "this checkout already has a different run configuration (.work/chess_run.json); not changed" >&2; exit 1
 fi
 echo "$WANT" > .work/chess_run.json

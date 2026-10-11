@@ -82,7 +82,7 @@ def build(name: str) -> dict:
     opp = A.opp_ratings(conf)
     label = ({c: f"Elo {l}" for l, c in A.ladder_codes(conf).items()} if conf else
              {"full-strength": "Full strength", "skill-0": "Skill 0", "elo-1800-setting": "Elo 1800 setting"})
-    order = ([A.ladder_codes(conf)[l] for l in conf["ladder"]] if conf else ["skill-0", "elo-1800-setting", "full-strength"])
+    order = ([A.ladder_codes(conf)[l] for l in A.all_levels(conf)] if conf else ["skill-0", "elo-1800-setting", "full-strength"])
     events = read_events(root)
     key = (len(events), events[-1]["hash"] if events else "")
     with _lock:
