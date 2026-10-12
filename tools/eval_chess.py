@@ -43,6 +43,8 @@ def main() -> int:
         else:
             print("score by opponent (all games so far; win 1, draw 0.5): " +
                   ", ".join(f"{A.shown(o)} {by[o][0]:g}/{by[o][1]}" for o in A.ORDER if by[o][1]))
+        if A.RUN and A.RUN.get("show_levels"):
+            print("(opponent levels are shown in this run.) " + A.PLAY_ON)
         practice = [g for g in gs.values() if g["kind"] == "practice"]
         print(f"practice games: {len(practice)} started, {sum(len(g['moves']) for g in practice)} plies; "
               f"illegal moves in rated games: {sum(g['illegal'] for g in rated)}")

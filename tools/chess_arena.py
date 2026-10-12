@@ -140,7 +140,12 @@ def schedule(n: int, gs: dict | None = None) -> tuple[str, str]:
     return ORDER[((n - 1) // 2) % len(ORDER)], "white" if n % 2 else "black"
 
 
-SHOW_LEVELS = os.environ.get("CHESS_SHOW_LEVELS") == "1"   # for the people watching (viewer, our reports), never agents
+# Levels are shown to the people watching (CHESS_SHOW_LEVELS=1: viewer, our reports) and, in a run whose configuration
+# says "show_levels": true, to the agents too (before, during and after a game).
+SHOW_LEVELS = os.environ.get("CHESS_SHOW_LEVELS") == "1" or bool(RUN and RUN.get("show_levels"))
+PLAY_ON = ("Play every game out: the rating rises only by scoring against opponents at or above your level, and those are "
+           "the games the arena gives you. A game given up early is a full loss and teaches nothing; resign only a position "
+           "that is lost on the board, never because of the opponent's level and never to save time.")
 
 
 def shown(opp: str) -> str:
@@ -474,8 +479,11 @@ def cmd_status(events, gs, a):
     print("rating: " + json.dumps(rating(gs)))
     if ADAPTIVE or CLOCK:
         print("this run: " + "; ".join(x for x in (
-            ADAPTIVE and f"each rated game's opponent is a hidden level ({min(LEVELS)}-{max(LEVELS)}) near your rating",
+            ADAPTIVE and f"each rated game's opponent is a level ({min(LEVELS)}-{max(LEVELS)}) near your rating, "
+                         + ("shown" if RUN.get("show_levels") else "hidden"),
             CLOCK and f"{CLOCK // 60} minutes of your own time per rated game, lost when it runs out") if x))
+        if RUN.get("show_levels"):
+            print(PLAY_ON)
 
 
 def main() -> int:
