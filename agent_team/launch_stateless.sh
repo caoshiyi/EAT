@@ -383,6 +383,9 @@ RETRY_PROMPT
 
     # ---- LAUNCH TEAM ----
     echo "[team] Launching team for iteration $ITER..."
+    # Keep the supervisor's whole answer of this iteration (its reflection, not only the team configuration) with the
+    # iteration's files, so the iteration's commit holds it
+    mkdir -p "$SCRIPT_DIR/iter_${ITER}" && cp "$SCRIPT_DIR/.supervisor_raw.txt" "$SCRIPT_DIR/iter_${ITER}/supervisor.md" 2>/dev/null || true
     TEAM_COST=$(bash "$SCRIPT_DIR/launch_team.sh" "$TASK" "$ITER" "$TEAM_CONFIG" "$TEAM_OUTPUT" "$MAX_TEAM_SIZE" | tr -d '[:space:]')
 
     # Extract score from agent JSON outputs
