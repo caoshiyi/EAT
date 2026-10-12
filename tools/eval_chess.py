@@ -53,6 +53,8 @@ def main() -> int:
         print(f"elo = {r['estimate']}")
         if "--end-iteration" in sys.argv[1:]:
             A.append(events, ev="iter_end", n=len(ends) + 1, rated_finished=len(done))
+            if A.CLOCK and A.clock_state(events, "")[1]:     # no team is running now: the game clock stops
+                A.append(events, ev="clock", action="pause")
     return 0
 
 

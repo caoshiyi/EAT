@@ -3,7 +3,7 @@
 # time limit. The session starts with "Read PROGRAM and follow it." (agent_team/single/prompt.txt), and a native Stop hook (ops/chess_keep_going.sh) gives
 # that same prompt again whenever the agent tries to stop before the 200 rated games are played. If the process itself ends early (a crash or a usage limit), run this again: it
 # resumes the same session.
-#   bash ops/run_chess_single.sh MODEL LADDER [PROGRAM]   (LADDER: opus | haiku | low, see ops/chess_ladder.sh;
+#   bash ops/run_chess_single.sh MODEL LADDER [PROGRAM]   (LADDER: opus | haiku | low | adaptive30, see ops/chess_ladder.sh;
 #   PROGRAM: program.chess.md by default, program.chess.skill.md keeps what is learned as an Agent Skill)
 set -uo pipefail
 cd "$(dirname "$0")/.."
@@ -23,10 +23,13 @@ SETTINGS=$(python3 -c "import json,sys; print(json.dumps({'autoMemoryDirectory':
 ARGS=(--print --model "$MODEL" --dangerously-skip-permissions --output-format json --disallowedTools "WebSearch,WebFetch" --settings "$SETTINGS")
 n=$(ls "$LOG"/call_*.json 2>/dev/null | wc -l); n=$((n + 1))
 echo "[single] $(date -u +%H:%M:%SZ) call $n, session $SID: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
+# the game clock (runs with one) is running only while the session is; a stop that was missed is repaired by `resume`
+CHESS_HARNESS=1 "$EAT_VENV/bin/python" tools/chess_arena.py clock resume > /dev/null
 if compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/$SID.jsonl" > /dev/null; then
     claude "${ARGS[@]}" --resume "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 else
     claude "${ARGS[@]}" --session-id "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 fi
+CHESS_HARNESS=1 "$EAT_VENV/bin/python" tools/chess_arena.py clock pause > /dev/null
 echo "[single] $(date -u +%H:%M:%SZ) session ended: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
 "$EAT_VENV/bin/python" tools/eval_chess.py --done || echo "[single] not finished: run the same command to resume the session."

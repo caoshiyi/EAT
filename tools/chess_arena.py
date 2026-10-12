@@ -16,6 +16,7 @@ marks where each iteration ended). Practice games are unrated, unlimited, and ma
     chess_arena.py legal [--game ID]              legal moves in the position (off with CHESS_ALLOW_LEGAL=0)
     chess_arena.py history                        every finished game: opponent, colour, result
     chess_arena.py rating
+    chess_arena.py clock pause|resume             the harness only (CHESS_HARNESS=1): stop / restart the game clock
 
 Environment: CHESS_ARENA_DIR (ledger; default tasks/chess/arena), CHESS_ENGINE (the Stockfish binary),
 CHESS_NODES (opponent search limit per move, 200000), CHESS_RUN (the run's configuration; default .work/chess_run.json).
@@ -25,8 +26,17 @@ With one ({"ladder": [Elo, ...], "seed": N}): a LADDER -- Stockfish at each list
 and once as Black per rotation of 2 x len(ladder) games, the rotation shuffled with the seed, the same for every run that
 uses that configuration. Ladder levels are HIDDEN: the ledger and every command show an opaque code per level; the
 code -> Elo map is in the run configuration (outside the agents' files). Practice games name a level openly.
+
+A run configuration may also set:
+  "pairing": "adaptive"   no fixed schedule: when a rated game starts, its opponent is drawn from the ladder's levels
+                          near the agents' current rating (the rating over their last PAIR_WINDOW rated games), so the
+                          opponents follow the agents up and down the whole ladder; colours alternate.
+  "clock_s": N            a game clock: the agents have N seconds of their own thinking time per rated game, and lose
+                          the game when it runs out. The clock runs while they are on move and the harness has it
+                          running (`clock pause|resume`, harness only: between teams and during pauses it is stopped).
 """
 import argparse
+import calendar
 import fcntl
 import hashlib
 import json
@@ -100,6 +110,11 @@ if RUN:
     OPP_RATING = {c: lvl for lvl, c in CODE.items()}
     ORDER = tuple(CODE[l] for l in LEVELS)
 WINDOW = 50
+ADAPTIVE = bool(RUN) and RUN.get("pairing") == "adaptive"
+PAIR_WINDOW = 16                # adaptive pairing follows the rating over this many last games (moves fast)
+PAIR_BAND = (-150, 250)         # opponents are drawn from the levels this far below / above that rating
+PAIR_EXPLORE = 0.15             # ... and this share of games from the whole ladder
+CLOCK = int(RUN.get("clock_s", 0)) if RUN else 0     # the agents' seconds per rated game; 0: no clock
 GRID = range(-150, 3151, 5)     # flat prior; its 95% range is the benchmark's (-70, 3070) at 1500
 
 
@@ -107,8 +122,14 @@ class Refused(Exception):
     pass
 
 
-def schedule(n: int) -> tuple[str, str]:
-    """Opponent and the agent's colour in rated game n (1-based)."""
+def schedule(n: int, gs: dict | None = None) -> tuple[str, str]:
+    """Opponent and the agent's colour in rated game n (1-based). Adaptive pairing needs the games so far (gs)."""
+    if ADAPTIVE:   # a level near the rating over the last PAIR_WINDOW games; now and then any level; colours alternate
+        rng = random.Random(RUN["seed"] * 1000003 + n)
+        est = rating(gs or {}, window=PAIR_WINDOW)["estimate"]
+        near = [l for l in LEVELS if est + PAIR_BAND[0] <= l <= est + PAIR_BAND[1]] or [min(LEVELS, key=lambda l: abs(l - est))]
+        lvl = rng.choice(LEVELS if rng.random() < PAIR_EXPLORE else near)
+        return CODE[lvl], "white" if n % 2 else "black"
     if RUN:   # rotations of 2 x len(ladder) games, counted from the start of the phase the game falls in
         j, (start, ladder) = [(j, ph) for j, ph in enumerate(phases(RUN)) if ph[0] <= n][-1]
         k = len(ladder) * 2
@@ -151,7 +172,8 @@ def _digest(body: dict) -> str:
 
 
 def append(events: list[dict], **fields) -> dict:
-    body = {"seq": len(events) + 1, "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+    now = time.time()
+    body = {"seq": len(events) + 1, "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(now)), "t": round(now, 2),
             "prev": events[-1]["hash"] if events else "", **fields}
     e = dict(body, hash=_digest(body))
     with LEDGER.open("a") as f:
@@ -192,12 +214,12 @@ def iteration_ends(events: list[dict]) -> list[int]:
     return [e["rated_finished"] for e in events if e["ev"] == "iter_end"]
 
 
-def rating(gs: dict, opp_rating: dict | None = None) -> dict:
+def rating(gs: dict, opp_rating: dict | None = None, window: int = WINDOW) -> dict:
     """Posterior over the agent's rating from its last WINDOW rated-opponent games (Elo model, flat prior):
     the median and the central 95% range, rounded to 10."""
     opp_rating = OPP_RATING if opp_rating is None else opp_rating
     done = [g for g in rated(gs) if g["end"] and g["opponent"] in opp_rating]
-    window = done[-WINDOW:]
+    window = done[-window:]
     logp = []
     import math
     for r in GRID:
@@ -216,6 +238,52 @@ def rating(gs: dict, opp_rating: dict | None = None) -> dict:
             if name not in q and acc >= level:
                 q[name] = int(round(r / 10.0) * 10)
     return dict(q, window=len(window), rated_games_total=len(done))
+
+
+def _t(e: dict) -> float:
+    return e["t"] if "t" in e else calendar.timegm(time.strptime(e["ts"], "%Y-%m-%dT%H:%M:%SZ"))
+
+
+def clock_state(events: list[dict], gid: str, now: float | None = None) -> tuple[float, bool]:
+    """(seconds of the agents' clock used in game gid, whether the harness has the clock running). Time counts while
+    the agents are on move in that game and the clock is running; `now` adds the turn still open."""
+    used, turn, running, mark = 0.0, False, True, 0.0
+    def flush(t):
+        nonlocal used
+        if turn and running:
+            used += max(0.0, t - mark)
+    for e in events:
+        t = e.get("at", _t(e))      # "at": a pause recorded after the fact (see cmd_clock)
+        if e["ev"] == "clock":
+            flush(t); running = e["action"] == "resume"; mark = t
+        elif e.get("game") == gid:
+            if e["ev"] == "start":
+                turn, mark = e["color"] == "white", t
+            elif e["ev"] == "move":
+                flush(t); turn, mark = e["by"] == "engine", t
+            elif e["ev"] == "end":
+                flush(t); turn = False
+    if now is not None:
+        flush(now)
+    return used, running
+
+
+def flag_fallen(events: list[dict], g: dict) -> bool:
+    """End a rated game the agents have lost on time. Returns whether it did."""
+    if not CLOCK or g["kind"] != "rated" or g["end"] or clock_state(events, g["id"], time.time())[0] <= CLOCK:
+        return False
+    append(events, ev="end", game=g["id"], result="0-1" if g["color"] == "white" else "1-0", reason="time_forfeit", score=0.0)
+    return True
+
+
+def clock_line(events: list[dict], g: dict) -> str | None:
+    if not CLOCK or g["kind"] != "rated":
+        return None
+    used, running = clock_state(events, g["id"], None if g["end"] else time.time())
+    mmss = lambda s: f"{int(s) // 60}:{int(s) % 60:02d}"
+    if g["end"]:
+        return f"your clock: {mmss(min(used, CLOCK))} used of {mmss(CLOCK)}"
+    return f"your clock: {mmss(max(0, CLOCK - used))} left of {mmss(CLOCK)}" + ("" if running else " (stopped: no team is running)")
 
 
 def engine_reply(b: chess.Board, opponent: str) -> chess.Move:
@@ -263,7 +331,7 @@ def pick(gs: dict, gid: str | None, active_only: bool = True) -> dict:
     return live[0]
 
 
-def render(g: dict) -> str:
+def render(g: dict, events: list[dict] | None = None) -> str:
     b = board_of(g)
     sans, t = [], chess.Board()
     for u in g["moves"]:
@@ -279,6 +347,8 @@ def render(g: dict) -> str:
         lines.append(f"over: {g['end']['result']} by {g['end']['reason']} -- your score {g['end']['score']}")
     else:
         lines.append(f"to move: {'white' if b.turn else 'black'}" + (" (you)" if (b.turn == chess.WHITE) == (g["color"] == "white") else ""))
+    if events is not None and clock_line(events, g):
+        lines.append(clock_line(events, g))
     return "\n".join(lines)
 
 
@@ -289,12 +359,12 @@ def cmd_new(events, gs, a):
     n = len(r) + 1
     if n > TOTAL:
         raise Refused(f"all {TOTAL} rated games are played")
-    opp, color = schedule(n)
+    opp, color = schedule(n, gs)
     append(events, ev="start", game=str(n), kind="rated", opponent=opp, color=color)
     g = {"id": str(n), "kind": "rated", "opponent": opp, "color": color, "moves": [], "illegal": 0, "end": None}
     if color == "black":
         engine_turn(events, g, chess.Board())
-    print(render(g))
+    print(render(g, events))
 
 
 def cmd_practice(events, gs, a):
@@ -322,7 +392,7 @@ def cmd_move(events, gs, a):
     b = board_of(g)
     if (b.turn == chess.WHITE) != (g["color"] == "white"):
         engine_turn(events, g, b)            # a reply lost to an interrupted call: play it, then ask again
-        print(render(g))
+        print(render(g, events))
         raise Refused("the opponent's reply was pending and has now been played; send your move again")
     try:
         try:
@@ -338,17 +408,17 @@ def cmd_move(events, gs, a):
     g["moves"].append(mv.uci())
     if not finish_if_over(events, g, b):
         engine_turn(events, g, b)
-    print(render(games(events)[g["id"]]))
+    print(render(games(events)[g["id"]], events))
 
 
 def cmd_resign(events, gs, a):
     g = pick(gs, a.game)
     append(events, ev="end", game=g["id"], result="0-1" if g["color"] == "white" else "1-0", reason="resignation", score=0.0)
-    print(render(games(events)[g["id"]]))
+    print(render(games(events)[g["id"]], events))
 
 
 def cmd_show(events, gs, a):
-    print(render(pick(gs, a.game, active_only=False)))
+    print(render(pick(gs, a.game, active_only=False), events))
 
 
 def cmd_legal(events, gs, a):
@@ -369,6 +439,26 @@ def cmd_rating(events, gs, a):
     print(json.dumps(rating(gs)))
 
 
+def cmd_clock(events, gs, a):
+    """The harness stops the game clock when no team can play (between teams, a usage pause) and restarts it when one
+    starts. A restart with the clock still running means the last team died without a stop: the time since the
+    ledger's last entry is not charged (a stop is recorded at that entry's time)."""
+    if os.environ.get("CHESS_HARNESS") != "1":
+        raise Refused("the clock is stopped and started by the harness only")
+    if not CLOCK:
+        print("no game clock in this run"); return
+    running = clock_state(events, "")[1]
+    if a.action == "pause" and running:
+        append(events, ev="clock", action="pause")
+    elif a.action == "resume":
+        if running and any(not g["end"] for g in rated(gs)) and events:
+            append(events, ev="clock", action="pause", at=_t(events[-1]), note="no stop was recorded; stopped at the last entry")
+            running = False
+        if not running:
+            append(events, ev="clock", action="resume")
+    print("game clock: " + ("running" if clock_state(events, "")[1] else "stopped"))
+
+
 def cmd_status(events, gs, a):
     r = rated(gs)
     done = [g for g in r if g["end"]]
@@ -376,11 +466,16 @@ def cmd_status(events, gs, a):
     print(f"rated games: {len(done)} finished of {TOTAL}, {TOTAL - len(done)} remain "
           f"(iteration {len(ends) + 1}: {len(done) - (ends[-1] if ends else 0)} finished in it so far)")
     if len(r) < TOTAL:
-        opp, color = schedule(len(r) + 1) if len(done) == len(r) else (r[-1]["opponent"], r[-1]["color"])
-        print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {shown(opp)} as {color}")
+        opp, color = schedule(len(r) + 1, gs) if len(done) == len(r) else (r[-1]["opponent"], r[-1]["color"])
+        print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {shown(opp)} as {color}"
+              + (f"   {clock_line(events, r[-1])}" if len(done) < len(r) and CLOCK else ""))
     live = [g for g in gs.values() if not g["end"]]
     print("active: " + (", ".join(f"{g['id']} ({g['kind']}, {shown(g['opponent'])})" for g in live) or "none"))
     print("rating: " + json.dumps(rating(gs)))
+    if ADAPTIVE or CLOCK:
+        print("this run: " + "; ".join(x for x in (
+            ADAPTIVE and f"each rated game's opponent is a hidden level ({min(LEVELS)}-{max(LEVELS)}) near your rating",
+            CLOCK and f"{CLOCK // 60} minutes of your own time per rated game, lost when it runs out") if x))
 
 
 def main() -> int:
@@ -396,12 +491,16 @@ def main() -> int:
     sp.add_argument("--game")
     for name in ("resign", "show", "legal"):
         sub.add_parser(name).add_argument("--game")
+    sub.add_parser("clock").add_argument("action", choices=("pause", "resume"))
     a = p.parse_args()
     ARENA.mkdir(parents=True, exist_ok=True)
     with open(ARENA / ".lock", "w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         try:
             events = read_ledger()
+            for g in games(events).values():     # commands that only look (or set the clock) never end a game
+                if a.cmd not in ("clock", "status", "history", "rating") and flag_fallen(events, g):
+                    print(f"game {g['id']}: your clock ran out -- the game is lost on time", file=sys.stderr)
             globals()["cmd_" + a.cmd](events, games(events), a)
         except Refused as e:
             print(f"REFUSED: {e}", file=sys.stderr)

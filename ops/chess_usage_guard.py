@@ -141,6 +141,9 @@ def pause(run, window):
             os.kill(p, signal.SIGKILL)
         except ProcessLookupError:
             pass
+    # a run with a game clock: no agent can move now, so the clock stops (the run's launcher restarts it)
+    subprocess.run([str(Path(run) / ".work" / "venv" / "bin" / "python"), "tools/chess_arena.py", "clock", "pause"], cwd=run,
+                   env=dict(os.environ, CHESS_HARNESS="1"), capture_output=True)
     log(f"paused {run} ({window}); {len(left)} process(es) needed SIGKILL")
 
 

@@ -69,6 +69,9 @@ launch_agent() {
     echo "[launch_team] Agent '$ROLE' finished (exit $?)." >&2
 }
 
+# PRE_TEAM_CMD: a task's own step right before its agents start (e.g. the chess task restarts its game clock)
+[ -n "${PRE_TEAM_CMD:-}" ] && { bash -c "$PRE_TEAM_CMD" >&2 || true; }
+
 # Launch agents in phases (disable set -e to prevent agent failures from killing the loop)
 set +e
 PHASE_NUM=0

@@ -11,7 +11,9 @@ There is no team and no supervisor: you are the only agent, and the run is one c
 
 ## Goal
 **Maximize `elo`** from `python tools/eval_chess.py`: your rating when the 200th rated game is played. Every rated
-game is played once and counts. There is no time limit and nothing is gained by finishing sooner.
+game is played once and counts. Each rated game has a 30-minute clock for your own moves (`tasks/chess/program.md`,
+"The game clock"): run out and the game is lost. Between games there is no time limit, and nothing is gained by
+finishing the run sooner.
 
 ## The loop
 1. **Read current state**: `status`, your notes, the last games (`history`, `show --game ID`).
