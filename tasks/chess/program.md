@@ -35,7 +35,7 @@ Each rated game gives your side **30 minutes of thinking time in total**, with n
 - `new`, `move`, `show` and `status` print the time left.
 - The clock is stopped while no team is running (after a team ends or is stopped, while the supervisor works, during
   a pause of the run) and starts again the moment the next team starts, also in a game left unfinished.
-- Time between rated games is free: reviews, notes and practice games cost no clock time. Practice games have no clock.
+- Time between rated games is free: reviews and notes cost no clock time.
 
 ## The arena
 All play goes through `tools/chess_arena.py` (it runs the opponent, checks and records every move):
@@ -47,10 +47,9 @@ python tools/chess_arena.py show [--game ID]       board, FEN and moves of any g
 python tools/chess_arena.py legal [--game ID]      legal moves in the position
 python tools/chess_arena.py resign [--game ID]
 python tools/chess_arena.py history                every finished game
-python tools/chess_arena.py practice --opponent 1700 --color white        an unrated game (ids p1, p2, ...)
 ```
-Practice games are unlimited, unrated, against Stockfish at any Elo level you name (1320 to 3190, e.g.
-`--opponent 1700`), and several may run at once (pass `--game ID`). An illegal move is refused and recorded; the game
+**There are no practice games: every game you play is a rated game.** Learn from the rated games themselves (their
+full records stay readable with `history` and `show --game ID`). An illegal move is refused and recorded; the game
 continues.
 
 ## Rules

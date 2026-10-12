@@ -31,6 +31,7 @@ A run configuration may also set:
   "pairing": "adaptive"   no fixed schedule: when a rated game starts, its opponent is drawn from the ladder's levels
                           near the agents' current rating (the rating over their last PAIR_WINDOW rated games), so the
                           opponents follow the agents up and down the whole ladder; colours alternate.
+  "practice": false       no practice games: every game is a rated game (practice games already started are closed).
   "clock_s": N            a game clock: the agents have N seconds of their own thinking time per rated game, and lose
                           the game when it runs out. The clock runs while they are on move and the harness has it
                           running (`clock pause|resume`, harness only: between teams and during pauses it is stopped).
@@ -115,6 +116,7 @@ PAIR_WINDOW = 16                # adaptive pairing follows the rating over this 
 PAIR_BAND = (-150, 250)         # opponents are drawn from the levels this far below / above that rating
 PAIR_EXPLORE = 0.15             # ... and this share of games from the whole ladder
 CLOCK = int(RUN.get("clock_s", 0)) if RUN else 0     # the agents' seconds per rated game; 0: no clock
+PRACTICE = not (RUN and RUN.get("practice") is False)  # "practice": false -- no practice games; rated games only
 GRID = range(-150, 3151, 5)     # flat prior; its 95% range is the benchmark's (-70, 3070) at 1500
 
 
@@ -326,10 +328,12 @@ def pick(gs: dict, gid: str | None, active_only: bool = True) -> dict:
         if gid not in gs:
             raise Refused(f"no game {gid!r}")
         g = gs[gid]
+        if active_only and not PRACTICE and g["kind"] == "practice":
+            raise Refused("there are no practice games in this run; only rated games can be played")
         if active_only and g["end"]:
             raise Refused(f"game {gid} is over ({g['end']['result']}, {g['end']['reason']})")
         return g
-    live = [g for g in gs.values() if not g["end"]]
+    live = [g for g in gs.values() if not g["end"] and (PRACTICE or g["kind"] == "rated")]
     if len(live) != 1:
         raise Refused("no active game; start one with `new` or `practice`" if not live else
                       "several games are active (" + ", ".join(g["id"] for g in live) + "): pass --game ID")
@@ -373,6 +377,8 @@ def cmd_new(events, gs, a):
 
 
 def cmd_practice(events, gs, a):
+    if not PRACTICE:
+        raise Refused("there are no practice games in this run: every game is a rated game (`new`)")
     if RUN:   # practice names a level openly: --opponent 1700 (any UCI_Elo Stockfish allows, 1320-3190)
         try:
             lvl = int(a.opponent)
@@ -474,14 +480,15 @@ def cmd_status(events, gs, a):
         opp, color = schedule(len(r) + 1, gs) if len(done) == len(r) else (r[-1]["opponent"], r[-1]["color"])
         print(("next" if len(done) == len(r) else "in progress") + f": game {len(done) + 1} vs {shown(opp)} as {color}"
               + (f"   {clock_line(events, r[-1])}" if len(done) < len(r) and CLOCK else ""))
-    live = [g for g in gs.values() if not g["end"]]
+    live = [g for g in gs.values() if not g["end"] and (PRACTICE or g["kind"] == "rated")]
     print("active: " + (", ".join(f"{g['id']} ({g['kind']}, {shown(g['opponent'])})" for g in live) or "none"))
     print("rating: " + json.dumps(rating(gs)))
     if ADAPTIVE or CLOCK:
         print("this run: " + "; ".join(x for x in (
             ADAPTIVE and f"each rated game's opponent is a level ({min(LEVELS)}-{max(LEVELS)}) near your rating, "
                          + ("shown" if RUN.get("show_levels") else "hidden"),
-            CLOCK and f"{CLOCK // 60} minutes of your own time per rated game, lost when it runs out") if x))
+            CLOCK and f"{CLOCK // 60} minutes of your own time per rated game, lost when it runs out",
+            not PRACTICE and "no practice games") if x))
         if RUN.get("show_levels"):
             print(PLAY_ON)
 

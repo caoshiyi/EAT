@@ -11,7 +11,7 @@
 - **Opponents.** The arena pairs every rated game automatically: a Stockfish level near the team's rating over its last 16 rated games (levels 1320 to 3190 in steps of about 100; about one game in seven comes from the whole range). The opponents therefore follow the team up and down; nobody chooses them. Their levels are shown, to you and to the team: in `history`, during each game, and as a score per level in `python tools/eval_chess.py` (also in the team output you receive). Use it to see where the team stops winning. The rating counts each opponent at its level, so only playing better raises it; a team that gives up games against strong opponents throws away the only games that can raise it. The team is White in odd-numbered rated games.
 - **Game clock.** 30 minutes of the team's own time per rated game, no increment; out of time = the game is lost (shown as `time_forfeit` in `history`). It runs only while the team is on move. It is stopped when a team ends and while you work, and starts again when the next team starts, so a game left unfinished costs the next team clock time from its first second (reading its prompt and notes included).
 - **Team time limit.** A team is stopped 2 hours after it starts: agents still running are ended, a rated game in progress stays unfinished and the next team continues it. Plan the number of games and the agents' work to fit.
-- **Practice games** are unrated, have no clock, and name their opponent level openly (any Elo from 1320 to 3190).
+- **No practice games.** Every game is a rated game; the arena refuses `practice`. The team learns from its rated games (`history`, `show --game ID`).
 
 ## How many rated games per iteration (the supervisor's decision)
 There is no fixed number. The 200 rated games are a second budget next to the dollars: each iteration you decide how many of the remaining games this team plays before you look again, and you write that number into the prompts. A team that plays many games gives you more evidence per look but spends games on a team you can no longer change; a team that plays few lets you change it sooner on thinner evidence. The run ends when all 200 are played. The arena does not enforce your number; the prompts do.
@@ -21,7 +21,6 @@ All agents run in the SAME working directory (`$EAT_ROOT`) and share one arena.
 
 ### Board ownership (MUST be in every agent's prompt)
 - Rated games are played one at a time. Tell each agent whether it may submit moves in rated games, and for how many games; at most one agent may be on move in the rated game at any moment. If several agents share a rated game (for example one proposes and one checks), say exactly who calls `move`.
-- Practice games are free: an agent that starts one owns its id (`p1`, `p2`, ...) and passes `--game ID` on every command.
 - A rated game still unfinished when the team stops is continued by the next team; say in the prompt whether one is in progress (`chess_arena.py status`).
 
 ### What the team keeps (MUST be in every agent's prompt)

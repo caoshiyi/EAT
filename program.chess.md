@@ -18,7 +18,7 @@ finishing the run sooner.
 ## The loop
 1. **Read current state**: `status`, your notes, the last games (`history`, `show --game ID`).
 2. **Analyze**: what is losing points, and what could change it.
-3. **Prepare**: whatever helps the next games — notes, a way of choosing or checking moves, practice games.
+3. **Prepare**: whatever helps the next games — notes, a way of choosing or checking moves.
 4. **Play** the next rated game (`new`, then `move` until it ends).
 5. **Review** it and update your notes in `tasks/chess/team/`.
 6. Repeat until all 200 rated games are played.

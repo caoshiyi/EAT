@@ -5,14 +5,15 @@
 #   (10 levels; a rotation is 20 games; seed 1)
 #   adaptive30: 1320 1400 1500 ... 3100 3190, no fixed order -- each rated game's opponent is drawn near the agents'
 #   current rating (tools/chess_arena.py, "pairing": "adaptive") --, a 30-minute game clock ("clock_s": 1800), and the
-#   opponent's level shown to the agents ("show_levels"; the other ladders keep their levels hidden)
+#   opponent's level shown to the agents ("show_levels"; the other ladders keep their levels hidden), and no practice
+#   games ("practice": false)
 cd "$(dirname "$0")/.."
 case "${1:-}" in
     opus)  L="[1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400]" ;;
     haiku) L="[1320, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200]" ;;
     low)   L="[1320, 1400, 1475, 1550, 1625, 1700, 1775, 1850, 1925, 2000]" ;;
     adaptive30) L="[1320, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3190]"
-                X=', "pairing": "adaptive", "clock_s": 1800, "show_levels": true' ;;
+                X=', "pairing": "adaptive", "clock_s": 1800, "show_levels": true, "practice": false' ;;
     *) echo "ladder must be opus, haiku, low or adaptive30" >&2; exit 1 ;;
 esac
 WANT="{\"ladder\": $L, \"seed\": 1${X:-}}"

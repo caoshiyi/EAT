@@ -46,6 +46,8 @@ def main() -> int:
         if A.RUN and A.RUN.get("show_levels"):
             print("(opponent levels are shown in this run.) " + A.PLAY_ON)
         practice = [g for g in gs.values() if g["kind"] == "practice"]
+        if not A.PRACTICE:
+            print("there are no practice games in this run: every game is a rated game")
         print(f"practice games: {len(practice)} started, {sum(len(g['moves']) for g in practice)} plies; "
               f"illegal moves in rated games: {sum(g['illegal'] for g in rated)}")
         r = A.rating(gs)
