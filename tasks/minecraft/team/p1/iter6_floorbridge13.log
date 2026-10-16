@@ -1,0 +1,37 @@
+program #2271 on p1: 20.9 s
+--- output ---
+KIT_START [["quartz",7,null],["sweet_berries",13,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["crafting_table",1,null],["stone_axe",1,5],["stone_pickaxe",1,100],["netherrack",39,null],["blackstone",2,null],["polished_blackstone",2,null],["stone_pickaxe",1,100],["iron_pickaxe",1,3],["red_mushroom",2,null]]
+CONSUMED_PROPOSAL 1792178580020 {"origin":[-267,61,-418],"path":[[-267,61,-418],[-267,61,-419],[-267,61,-420],[-267,61,-421],[-267,61,-422],[-267,61,-423],[-267,61,-424],[-267,61,-425],[-267,61,-426],[-267,61,-427],[-267,61,-428],[-267,61,-429]],"when":1792178580020}
+BRIDGE_CLOSURE_BUDGET (-267, 61, -419) 12 43
+DIG_BUDGET_ACTUAL netherrack (-267, 62, -419) 2600
+DIG_BUDGET_ACTUAL netherrack (-267, 61, -419) 2600
+ACTUAL_COVERED_STEP (-267, 61, -419) (-266.50352538839496, 61, -418.33225650416387) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -420) 14 45
+ACTUAL_COVERED_STEP (-267, 61, -420) (-266.5019860109065, 61, -419.5) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -421) 14 44
+ACTUAL_COVERED_STEP (-267, 61, -421) (-266.5007031948674, 61, -420.3322883295356) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -422) 14 43
+ACTUAL_COVERED_STEP (-267, 61, -422) (-266.5007031948674, 61, -421.5) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -423) 14 42
+ACTUAL_COVERED_STEP (-267, 61, -423) (-266.5004466316596, 61, -422.33229084591017) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -424) 14 41
+ACTUAL_COVERED_STEP (-267, 61, -424) (-266.5004466316596, 61, -423.5) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -425) 14 40
+ACTUAL_COVERED_STEP (-267, 61, -425) (-266.5004466316596, 61, -424.33229118175086) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -426) 14 39
+ACTUAL_COVERED_STEP (-267, 61, -426) (-266.5004466316596, 61, -425.5) 20
+BRIDGE_CLOSURE_BUDGET (-267, 61, -427) 14 38
+ACTUAL_COVERED_STEP (-267, 61, -426) (-266.5004466316596, 61, -425.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-267,61,-426],"back":[-267,61,-425],"built":[[-267,60,-420],[-267,60,-421],[-267,60,-422],[-267,60,-423],[-267,60,-424],[-267,60,-425],[-267,60,-426],[-268,60,-426],[-268,61,-426],[-268,62,-426],[-266,60,-426],[-266,61,-426],[-266,62,-426],[-266,63,-426],[-267,63,-426],[-267,60,-427],[-267,61,-427],[-267,62,-427],[-267,61,-425],[-267,62,-425]],"steps":8,"hp":20,"food":19,"mats":25}
+FINAL (-266.5004466316596, 61, -425.5) the_nether 20 19 dead false adopted true
+--- error ---
+Error: FORWARD_FOE ghast (-287.559326171875, 47.240478515625, -485.121826171875)
+    at guard (p1-program-2271.js:11:1664)
+    at put (p1-program-2271.js:13:934)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+    at async p1-program-2271.js:30:1097
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-266.5, 61, -425.5) in the_nether, health 20/20, food 19/20, alive

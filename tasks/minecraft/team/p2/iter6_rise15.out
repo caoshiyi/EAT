@@ -1,0 +1,37 @@
+program #2094 on p2: 38.2 s
+--- output ---
+UP_FULL (74, 12, 115) 20 20
+UP_FULL (74, 13, 115) 20 20
+UP_FULL (74, 14, 115) 20 20
+UP_FULL (74, 15, 115) 20 20
+UP_FULL (74, 16, 115) 20 20
+UP_FULL (74, 17, 115) 20 20
+UP_FULL (74, 18, 115) 20 20
+UP_FULL (74, 19, 115) 20 20
+UP_FULL (74, 20, 115) 20 20
+UP_FULL (74, 21, 115) 20 20
+UP_FULL (74, 22, 115) 20 20
+UP_FULL (74, 23, 115) 20 20
+UP_FULL (74, 24, 115) 20 20
+UP_FULL (74, 25, 115) 20 20
+UP_FULL (74, 26, 115) 20 20
+FINAL (74, 26, 115) 20 20 FULL true LOST false STEPS 15 KIT [
+  [ 'cooked_cod', 1, null ],
+  [ 'coal', 4, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'spruce_planks', 1, null ],
+  [ 'diamond_sword', 1, 23 ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'stone_pickaxe', 1, 79 ],
+  [ 'stone_pickaxe', 1, 78 ],
+  [ 'wooden_pickaxe', 1, 24 ],
+  [ 'torch', 4, null ],
+  [ 'cobblestone', 2, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1_COVERED_SEALED (-316, 61, -357) SOUTHback(-316, 61, -356) actualsteps16 HP20
+p1: P1 small3 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p2 now: (74.5, 26, 115.5) in overworld, health 20/20, food 20/20, alive

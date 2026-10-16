@@ -1,0 +1,46 @@
+program #2455 on p1: 12.6 s
+--- output ---
+KIT_START [["quartz",7,null],["stone_pickaxe",1,100],["crafting_table",1,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["netherrack",5,null],["basalt",10,null],["sweet_berries",7,null],["stone_axe",1,47],["nether_bricks",5,null],["blackstone",3,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,100],["red_mushroom",2,null]]
+CONSUMED_PROPOSAL 1792183302909 {"origin":[-141,60,-430],"path":[[-141,60,-430],[-142,60,-430],[-143,60,-430]],"when":1792183302909}
+BRIDGE_CLOSURE_BUDGET (-142, 60, -430) 8 24
+DIG_BUDGET_ACTUAL nether_bricks (-142, 61, -430) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-142, 60, -430) 3000
+COURIER_SHIELDED_ACTUAL (-142, 60, -430) (-141.77223600211218, 60, -429.34242831807205) 20
+BRIDGE_CLOSURE_BUDGET (-143, 60, -430) 8 26
+COURIER_SHIELDED_ACTUAL (-143, 60, -430) (-142.63693423865158, 60, -429.3424283180718) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-143,60,-430],"back":[-142,60,-430],"built":[[-143,60,-431],[-143,61,-431],[-143,62,-431],[-143,62,-430],[-144,60,-430],[-144,61,-430],[-142,60,-430],[-142,61,-430]],"steps":2,"hp":20,"food":17,"mats":18}
+LOADED_RESOURCE nether_bricks [
+  '(-143, 59, -430)',
+  '(-143, 60, -429)',
+  '(-144, 59, -430)',
+  '(-144, 60, -429)',
+  '(-143, 59, -431)',
+  '(-143, 59, -429)',
+  '(-142, 59, -430)',
+  '(-142, 60, -429)'
+]
+LOADED_RESOURCE spawner [ '(-131, 63, -431)', '(-155, 57, -501)' ]
+LOADED_RESOURCE chest [
+  '(-141, 54, -446)',
+  '(-125, 54, -451)',
+  '(-233, 68, -367)',
+  '(-237, 58, -358)',
+  '(-244, 58, -362)'
+]
+LOADED_RESOURCE warped_nylium [
+  '(-96, 61, -344)',
+  '(-89, 63, -348)',
+  '(-88, 63, -348)',
+  '(-81, 62, -353)',
+  '(-80, 62, -353)',
+  '(-81, 62, -352)',
+  '(-79, 61, -353)',
+  '(-95, 55, -342)'
+]
+FINAL (-142.59281065626016, 60, -429.4014308289494) the_nether 20 17 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 RECEIVER PROGRAM ACTUALLY RUNNING at243; staysFULLuntilP1within15, thenauto-opensEhead24261 andannouncesAIR. 120sfinitewait, no giverholdingneededuntilnear.
+p3: P3 <=30sec EMPTYBODY route qualification camp->OUTSIDEportal6,z89->camp, no gate/portal crossing/cuts. Fresh unsupported4,67,88 isAIRoverAIR; usinghorizontalgoals+actualground/dry check, maxDropDown3.
+--- p1 now: (-142.6, 60, -429.4) in the_nether, health 20/20, food 17/20, alive

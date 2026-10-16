@@ -1,0 +1,45 @@
+program #2462 on p3: 17.7 s
+--- output ---
+CROP_ACTUAL Vec3 { x: 1, y: 66, z: 94 } { age: '3' } STANCE Vec3 { x: 1, y: 66, z: 93 }
+DOOR exit true (6.559002526537267, 66, 78.7731052445459)
+LANDED_ACTUAL 1 93 (1.4940621853229106, 66, 93.5) air
+LANDED_ACTUAL 6 79 (6.5, 66, 79.4811380415421) snow
+DOOR enter true (6.559002804491831, 67.5625, 82.71526980490745)
+--- returned ---
+{
+ "issue": null,
+ "received": 3,
+ "bankDelta": [
+  0,
+  3
+ ],
+ "dead": false,
+ "lost": false,
+ "protectedEnd": true,
+ "hp": 19.833332061767578,
+ "food": 17,
+ "p": {
+  "x": 6.559002804491831,
+  "y": 67.5625,
+  "z": 82.71526980490745
+ },
+ "inventory": [
+  [
+   "rotten_flesh",
+   1
+  ]
+ ],
+ "eyes": {}
+}
+--- chat since this player's previous program ---
+p4: P4 receiver2453 expiredFULL/no donor/no transfer; no opening occurred, Iamstill243 FULL20/20/NETH1. P1 FIRSTUSE takespriority—doNOTwaitformeet. Read2439/actualnewcorner:17460 hitonly2.033damage (20->17.966) because firstattack~0.25sec afterpick->AXEswitch,
+p4:  before1.25scharge; wait25ticksAFTERequip ifanotherstrike. Moredecisive: knockbackmovedBlaze4mOFFdoor tox146.3/z431.3. Door142 nowclearer; killnotlogicallyrequiredforexit ifyouchooseboundedWestshield/sprint withactualfloors/endchecks. Namedbarrier changed,
+p4:  not globalmobclearproof. Stockhandoffcanbedeferred; readyfarmstillretained.
+p4: P1 FOOTPRINT: P4 FULLroom24360z430 hasE24260/61closed, W24460/61closed, body243occupied. DoNOTmine242/244throughmylivebody. ForFIRSTUSEpasswithoutgift, existingNorthlane z432/floor59 canbypass243cage, rejoin245/z430 afterfreshcoldchecks. Ifdonating, stop24
+p4: 1 andlook6ticks ->throughHEAD24261, retreat239; receiverprepared andwillopenonlyonnearEastapproach. Yourcarrierprogresspriority, no meetingwait required.
+p4: P4 RECEIVER PROGRAM ACTUALLY RUNNING at243; staysFULLuntilP1within15, thenauto-opensEhead24261 andannouncesAIR. 120sfinitewait, no giverholdingneededuntilnear.
+p1: P1 actual2455 SMALL2courierPASSED FULL(-143,60,-430)20HP/17food/ROD1/mats18. Extendingto241existingcagehandoff, bound140sec; shieldfacesnearestBlazeX, onwithin32/projectile48, nativeBRICKfloors only, health17stop/fullroomfallback. P4 receivercanprepare180s
+p1: ec startingNOW; Iseal241thenrequest242headopening toavoidclosure race. Realhandoff donorstone31/blocks5/berries2, not10 ifreturnreserve insufficient.
+p1: P1 bounded128 WESTRODcourier BRICKfloor only, BLAZEexposure explicit/shieldfacingnearest, HP17stop/fullending: freshhazardguards, exactclosurebudget+2, actualfloor/arrival then fullendpoint or fallback: INTERMEDIATEtravel EXPOSED underfreshhazardguards; co
+p1: nsumesmaterials; ENDING requiresactualfullpersonalroom+settledbody, notwholecorridor.
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 19.8/20, food 17/20, alive

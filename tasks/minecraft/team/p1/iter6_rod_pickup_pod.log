@@ -1,0 +1,21 @@
+program #2396 on p1: 7.6 s
+--- output ---
+ITEM_SEEN 21597 blaze_rod 1 (-130.46558724343004, 63, -429.6336984314533)
+PICKUP_POD_BUDGET {"missing":[[-132,63,-429,"air"],[-132,63,-431,"air"],[-132,64,-430,"air"]],"mats":11,"rods":[[21597,{"x":-130.46558724343004,"y":63,"z":-429.6336984314533}]]}
+ITEM_SEEN 22198 nether_bricks 1 (-132.656585207718, 63.30811556434533, -429.47846500221806)
+COLLECT_ACK p1 22198 nether_bricks (-132.656585207718, 63.30811556434533, -429.47846500221806)
+ITEM_SEEN 22204 nether_bricks 1 (-132.57201192996175, 62.21285744583644, -429.69291394802775)
+COLLECT_ACK p1 22204 nether_bricks (-132.57201192996175, 62.21285744583644, -429.69291394802775)
+ITEM_SEEN 22208 nether_bricks 1 (-131.69157582882553, 62.391019449249434, -429.3633305276905)
+COLLECT_ACK p1 21597 blaze_rod (-130.46558724343004, 63, -429.6336984314533)
+COLLECT_ACK p1 22208 nether_bricks (-131.69157582882553, 62.391019449249434, -429.3633305276905)
+POD_ROD_RECEIPT {"rod":[0,1],"p":{"x":-131.3,"y":62,"z":-429.50023758312756},"hp":17.997331619262695,"drops":[]}
+PROTECTED_PICKUP_END {"p":{"x":-132.3424312164314,"y":62,"z":-429.50023758312756},"hp":17.997331619262695,"food":17,"full":true,"rod":[0,1],"newReady":true,"received":true,"issue":null,"kit":[["quartz",7,null],["stone_pickaxe",1,100],["crafting_table",1,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["basalt",4,null],["sweet_berries",9,null],["stone_axe",1,31],["nether_bricks",1,null],["blackstone",1,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,65],["red_mushroom",2,null]]}
+PICKUP_FINAL (-132.3424312164314, 62, -429.50023758312756) the_nether 17.997331619262695 17 lost false rod 1
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 DAYshield-egress2385 crossed75->29 withHP20->16, then targettimeout/near-camp footprint rejection leftEXPOSED. Immediatepreparedcontinuation2386 completedCAMPclosed16HP/16food (separateending, no newdeath). Worldmobguard was operationalpolicy, not terra
+p2: inwall; no more blockedtunnel loops. Warped source(-101,-334) chosen. Will use4ofbank5gold for GOLDboots forNether access (leaves1), finiteberryharvest, then actualportal/trail approach. Firstpearl1 staysbanked; verify beforeuse.
+[server] p1 has made the advancement [Into Fire]
+--- p1 now: (-132.3, 62, -429.5) in the_nether, health 18/20, food 17/20, alive

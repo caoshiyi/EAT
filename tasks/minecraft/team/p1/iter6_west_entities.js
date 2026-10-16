@@ -1,0 +1,1 @@
+console.log('ACTUAL',bot.entity.position.toString(),bot.health,bot.food);console.log('BLAZES',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='blaze'&&e.position.distanceTo(bot.entity.position)<15).map(e=>({id:e.id,p:e.position,hp:e.metadata?.[9]}))));

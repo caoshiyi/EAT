@@ -1,0 +1,78 @@
+program #2069 on p1: 44.9 s
+--- output ---
+CONSUMED_PROPOSAL 1792176620030 {"origin":[-316,61,-334],"path":[[-316,61,-334],[-316,61,-335],[-316,61,-336],[-316,61,-337],[-316,61,-338],[-316,61,-339],[-316,61,-340],[-316,61,-341],[-316,61,-342]],"when":1792176620030}
+ENDPOINT_BUILD_BUDGET (-316, 61, -335) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -335)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -335) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -335)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -335) 4500
+ACTUAL_COVERED_STEP (-316, 61, -335) (-315.5, 61, -334.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -336) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -336)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -336) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -336)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -336) 4500
+ACTUAL_COVERED_STEP (-316, 61, -336) (-315.5, 61, -335.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -337) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -337)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -337) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -337)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -337) 4500
+ACTUAL_COVERED_STEP (-316, 61, -337) (-315.5, 61, -336.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -338) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -338)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -338) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -338)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -338) 4500
+ACTUAL_COVERED_STEP (-316, 61, -338) (-315.5, 61, -337.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -339) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -339)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -339) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -339)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -339) 4500
+ACTUAL_COVERED_STEP (-316, 61, -339) (-315.5, 61, -338.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -340) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -340)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -340) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -340)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -340) 4500
+ACTUAL_COVERED_STEP (-316, 61, -340) (-315.5, 61, -339.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -341) 2 6
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -341)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -341) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -341)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -341) 4500
+ACTUAL_COVERED_STEP (-316, 61, -341) (-315.5, 61, -340.33229118175086) 20
+NATURAL_BUDGET_STOP 7
+COVERED_ENDPOINT_VERIFIED {"origin":[-316,61,-341],"back":[-316,61,-340],"built":[[-316,61,-340],[-316,62,-340]],"steps":7,"hp":20,"food":19,"mats":4}
+LOADED_RESOURCE nether_bricks [
+  '(-269, 60, -429)',
+  '(-269, 59, -429)',
+  '(-269, 58, -429)',
+  '(-269, 57, -429)',
+  '(-269, 56, -429)',
+  '(-269, 55, -429)',
+  '(-269, 54, -429)',
+  '(-269, 53, -429)'
+]
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [
+  '(-269, 58, -358)',
+  '(-265, 68, -367)',
+  '(-253, 35, -356)',
+  '(-244, 58, -362)',
+  '(-237, 58, -358)',
+  '(-233, 39, -326)',
+  '(-233, 68, -367)'
+]
+LOADED_RESOURCE warped_nylium []
+FINAL (-315.5, 61, -340.39129369262844) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 iteration6 active until CR_DEADLINE20:49:37UTC. Retained endpoint360 (-163,60,-180), kit20/20. Continuing fortress access; closure roof-reference fix small test first. P1 please coordinate overlap: own approach stays >3m from your body, no room cuts. Re
+p4: usable evidence p4/ITER5_CURRENT_METHODS.md; buried rise/walk/rebury tested, no fortress yet.
+p3: Iteration6 active deadline20:49:37 from CR_DEADLINE. Testing integrated per-placement cleanup at own shelter(6,65,2), west upper cap(5,66,2); no route/portal changes. Then independent useful acquisition; own kit only.
+p4: P1: your iron has4uses; I retain3stonepicks ~76uses each and fresh iron. Choosing finite delivery of2stonepicks via historical route, retaining my own pick, rather than duplicate final brick approach. Continue your approach; I will announce proximity and v
+p4: erify receipt before assuming transfer. Shared route floors restored; no cuts within3m of you.
+--- p1 now: (-315.5, 61, -340.4) in the_nether, health 20/20, food 19/20, alive

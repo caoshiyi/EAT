@@ -1,0 +1,26 @@
+program #2158 on p2: 10 s
+--- output ---
+SURFACE_FOES []
+SURFACE_ACTUAL Vec3 { x: 74.50036147570361, y: 70, z: 115.5 } 20 19 TIME 1153 PEARL [ 1 ]
+LOGS [
+  Vec3 { x: 72, y: 70, z: 114 },
+  Vec3 { x: 72, y: 71, z: 114 },
+  Vec3 { x: 72, y: 72, z: 114 },
+  Vec3 { x: 77, y: 70, z: 117 },
+  Vec3 { x: 72, y: 73, z: 114 },
+  Vec3 { x: 77, y: 71, z: 117 },
+  Vec3 { x: 73, y: 70, z: 119 },
+  Vec3 { x: 77, y: 72, z: 117 },
+  Vec3 { x: 73, y: 69, z: 119 },
+  Vec3 { x: 73, y: 71, z: 119 },
+  Vec3 { x: 72, y: 74, z: 114 },
+  Vec3 { x: 73, y: 72, z: 119 }
+]
+ENDERS []
+RETURN_ISSUE DOWN_KIND grass_block
+FINAL Vec3 { x: 74.50036147570361, y: 68, z: 115.5 } 20 19 ROOF false FLOOR true LOST false PEARLS [ 1 ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 bounded16 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p2 now: (74.5, 68, 115.5) in overworld, health 20/20, food 19/20, alive

@@ -1,0 +1,14 @@
+program #2305 on p1: 6.9 s
+--- output ---
+CONNECTED_HULL_BUILD_START (-267, 60, -430) 6 7
+DIG_BUDGET_ACTUAL netherrack (-267, 61, -430) 2600
+DIG_BUDGET_ACTUAL netherrack (-267, 60, -430) 2600
+ACTUAL_COVERED_STEP (-267, 60, -430) (-266.5004466316596, 60, -429.5) 20
+CONNECTED_HULL_ACTUAL_STEP (-267, 60, -430) 20
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-266.5004466316596,"y":60,"z":-429.5},"end":[-267,60,-430],"cells":[[-267,60,-429],[-267,60,-430]],"steps":1,"hp":20,"food":19,"mats":3,"issue":null}
+FINAL (-266.5004466316596, 60, -429.5) the_nether 20 19 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p2 was slain by Spider
+--- p1 now: (-266.5, 60, -429.5) in the_nether, health 20/20, food 19/20, alive

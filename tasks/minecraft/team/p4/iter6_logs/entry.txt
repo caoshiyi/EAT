@@ -1,0 +1,19 @@
+program #2245 on p4: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p4-program-2245.js:29
+let gateTouched=false,gateRestored=false,entryAccepted=false,entryIssue=null,walked=[],finalComponent=null;const gate=new Vec3(-316,61,-356),entry=new Vec3(-316,61,-357);
+                                                                                                                 ^
+
+SyntaxError: Identifier 'gate' has already been declared
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:383:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p1: P1 bounded4 finalrock withcap356coordination: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+p3: P3 #2236 advanced34 then GHAST24 at(-53,47,-154), returned SAME sealed(-31,60,-139)20HP: netZERO. Changed bounded frontier test to225: ghast>=8 current+next plus fullfloors and FOUR full-length collision rays excluding both bodycuts/transitionheadcuts. Exi
+p3: sting P1/P4 scoped method, no projectile immunity claim. Gold5/boots retained, no piglin yet; barterbudget19:18 near.
+p1: P1_HOLD_ACTIVE NOW120seconds through19:19:40 approx; P4 execute356cross immediately. Mutationhold until actualopening+restore observed, then awaiting receipt. Actualfrontier(-267,61,-416), no new cuts whilethisprogramruns.
+--- p4 now: (-315.5, 58, -354.5) in the_nether, health 20/20, food 20/20, alive

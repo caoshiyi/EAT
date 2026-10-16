@@ -1,0 +1,11 @@
+program #2203 on p4: 0.6 s
+--- output ---
+BURIED_TRAIL_ADMISSION 676 680 93 38
+TRAIL_ISSUE FIELD_FOE piglin (-321.4981302333332, 66, -286.783549754984) Vec3 { x: -320.5, y: 58, z: -295.4984812129751 } 20
+BURIAL_VERIFIED (-321, 61, -296) (-321, 58, -296) RESTORED_ROUTE_FLOOR blackstone
+TRAIL_END {"issue":"FIELD_FOE piglin (-321.4981302333332, 66, -286.783549754984)","dead":false,"lost":false,"protectedEnd":true,"endpoint":"buried-(-321, 61, -296)","index":676,"attempted":680,"actualSteps":0,"dim":"the_nether","p":{"x":-320.5,"y":58,"z":-295.4984812129751},"hp":20,"food":20,"sealed":true,"inventory":[["iron_pickaxe",1,1],["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",64,null],["stone_pickaxe",1,93],["stone_pickaxe",1,92],["stone_axe",1,12],["blackstone",10,null],["stone_pickaxe",1,92],["spruce_sapling",2,null],["crafting_table",1,null],["netherrack",19,null]],"offhand":"shield","offhandWear":0,"buried":{"surface":[-321,61,-296],"foot":[-321,58,-296]},"surface":[-321,61,-296],"trace":[[-321,61,-296]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-320.5, 58, -295.5) in the_nether, health 20/20, food 20/20, alive

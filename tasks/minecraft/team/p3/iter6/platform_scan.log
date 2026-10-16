@@ -1,0 +1,122 @@
+program #2092 on p3: 0 s
+--- output ---
+PLATFORM -3 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'magma_block', 'air', 'air' ] ],
+  [ 2, [ 'basalt', 'magma_block', 'air', 'air' ] ],
+  [ 3, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 4, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 6, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 7, [ 'basalt', 'lava', 'air', 'air' ] ]
+]
+PLATFORM -2 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'magma_block', 'air', 'air' ] ],
+  [ 2, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 3, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 4, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 6, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 7, [ 'basalt', 'lava', 'air', 'air' ] ]
+]
+PLATFORM -1 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'magma_block', 'air', 'air' ] ],
+  [ 2, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 3, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 4, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 6, [ 'basalt', 'basalt', 'basalt', 'air' ] ],
+  [ 7, [ 'basalt', 'magma_block', 'air', 'air' ] ]
+]
+PLATFORM 0 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 2, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 3, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 4, [ 'basalt', 'lava', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 6, [ 'basalt', 'basalt', 'basalt', 'air' ] ],
+  [ 7, [ 'basalt', 'magma_block', 'air', 'air' ] ]
+]
+PLATFORM 1 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 2, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 3, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 4, [ 'basalt', 'basalt', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'cobblestone', 'cobblestone', 'air' ] ],
+  [ 6, [ 'basalt', 'basalt', 'basalt', 'dirt' ] ],
+  [ 7, [ 'basalt', 'basalt', 'basalt', 'air' ] ]
+]
+PLATFORM 2 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'obsidian', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [ 1, [ 'obsidian', 'air', 'air', 'air' ] ],
+  [ 2, [ 'obsidian', 'air', 'air', 'air' ] ],
+  [ 3, [ 'obsidian', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [ 4, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 5, [ 'basalt', 'cobblestone', 'cobblestone', 'dirt' ] ],
+  [ 6, [ 'basalt', 'air', 'air', 'dirt' ] ],
+  [ 7, [ 'basalt', 'basalt', 'dirt', 'air' ] ]
+]
+PLATFORM 3 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'blackstone', 'air', 'air' ] ],
+  [ 1, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ 2, [ 'obsidian', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [
+    3,
+    [ 'obsidian', 'nether_portal', 'nether_portal', 'nether_portal' ]
+  ],
+  [
+    4,
+    [ 'obsidian', 'nether_portal', 'nether_portal', 'nether_portal' ]
+  ],
+  [ 5, [ 'obsidian', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [ 6, [ 'basalt', 'cobblestone', 'cobblestone', 'air' ] ],
+  [ 7, [ 'basalt', 'air', 'air', 'air' ] ]
+]
+PLATFORM 4 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'basalt', 'cobblestone', 'cobblestone', 'air' ] ],
+  [ 1, [ 'basalt', 'air', 'air', 'cobblestone' ] ],
+  [ 2, [ 'cobblestone_slab', 'cobblestone', 'cobblestone', 'air' ] ],
+  [ 3, [ 'spruce_planks', 'air', 'air', 'air' ] ],
+  [ 4, [ 'spruce_planks', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'air', 'air', 'air', 'air' ] ],
+  [ 7, [ 'basalt', 'air', 'air', 'air' ] ]
+]
+PLATFORM 5 [
+  [ -2, [ 'air', 'air', 'air', 'air' ] ],
+  [ -1, [ 'air', 'air', 'air', 'air' ] ],
+  [ 0, [ 'air', 'air', 'blackstone', 'air' ] ],
+  [ 1, [ 'cobblestone_slab', 'cobblestone', 'cobblestone', 'air' ] ],
+  [ 2, [ 'air', 'air', 'air', 'air' ] ],
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'air', 'air', 'air', 'air' ] ],
+  [ 7, [ 'air', 'air', 'air', 'air' ] ]
+]
+MOBS [ [ 'item', Vec3 { x: 4.875, y: 65, z: 2.2250443220895524 } ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.3, 65, 2.5) in the_nether, health 20/20, food 20/20, alive

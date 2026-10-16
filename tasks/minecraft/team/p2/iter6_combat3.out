@@ -1,0 +1,32 @@
+program #2124 on p2: 15.9 s
+--- output ---
+FIGHT_TARGETS [{"id":67,"p":[75.5750726283905,25,113.69993101438763],"hp":28,"flags":[true,true]},{"id":132,"p":[124.49946290254593,-4,127.69995430733346],"hp":32,"flags":[]}]
+FIGHT_SELECTED 67 (75.5750726283905, 25, 113.69993101438763) virtualclear true SKIP_GAZE_ANGRY_OR_CLOSE true
+FIGHT_POSITION 67 (75.5750726283905, 25, 113.69993101438763) 2.0605773481300784 28 HP 20
+FIGHT_SWING 67 2.0605773481300784
+FIGHT_HURT_ACK 67 [null,null,null,null,null,null,null,null,null,28,null,null,null,null,null,0,0,true,true] 20
+FIGHT_SWING 67 2.985678560712071
+FIGHT_HURT_ACK 67 [null,null,null,null,null,null,null,null,null,27.225040435791016,null,null,null,null,null,4,0,true,true] 20
+FIGHT_SWING 67 2.737375798222582
+FIGHT_HURT_ACK 67 [null,null,null,null,null,null,null,null,null,20.225040435791016,null,null,null,null,null,4,0,true,true] 20
+FIGHT_POSITION 67 (75.49839224572187, 25, 112.41008205986218) 3.2477059343180086 13.225040435791016 HP 20
+FIGHT_SWING 67 3.147528943785359
+FIGHT_HURT_ACK 67 [null,null,null,null,null,null,null,null,null,13.225040435791016,null,null,null,null,null,4,0,true,true] 20
+FIGHT_SWING 67 2.2794538073824353
+FIGHT_HURT_ACK 67 [null,null,null,null,null,null,null,null,null,6.225040435791016,null,null,null,null,null,4,0,true,true] 20
+FIGHT_DEAD_ACK 67
+FIGHT_RESULT true 5 target 67 HP 20
+PEARL_DROPS [{"id":2394,"p":[75.57764080291894,25,113.57421532129754],"count":1}]
+PEARL_CARRY []
+FIGHT_FINAL (75.49937154079436, 26, 115.5) 20 20 FULL true dead false SWORDwear 34
+PEARL_PICKUP_TARGETS [[2394,"(75.125, 25, 113.04042947659168)"]]
+PEARL_ACTUAL_RECEIPT [ 1 ] (75.49988466721004, 25, 112.5) 20
+PEARL_PICKUP_FINAL (75.4998846672102, 26, 115.33229118175082) 20 20 FULL true PEARLS [ 1 ]
+RETAINED_NET 0 1 LIFE_LOST false BODY Vec3 { x: 75.4998846672102, y: 26, z: 115.33229118175082 } HP 20
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 #2118 windowtest zero swings/hits/deaths; actualrecap FULL20/20. Blockingcube363 nowY56 east(-184,-182), awayfromwestwardroute. Changedworldcondition supports bounded8 crossing retry with sameadmission, no thresholds relaxed. Otherguard can stillreject.
+p4:  Delivery remains pending.
+p1: P1 bounded16 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p2 now: (75.5, 26, 115.3) in overworld, health 20/20, food 20/20, alive

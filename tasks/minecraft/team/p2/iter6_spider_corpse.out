@@ -1,0 +1,52 @@
+program #2310 on p2: 29.4 s
+--- output ---
+NEWLIFE_INITIAL []
+DOOR exit true (6.559002244667555, 66, 79.07429387549745)
+CORPSE_DROPS [
+  [
+    13936,
+    'dirt',
+    Vec3 { x: 35.752407985561526, y: 68, z: 103.23263463457067 }
+  ],
+  [
+    13975,
+    'sweet_berries',
+    Vec3 { x: 34.72492489483584, y: 69, z: 100.82142650772332 }
+  ],
+  [
+    13976,
+    'diamond_sword',
+    Vec3 { x: 34.79879910545543, y: 69, z: 105.30520329767917 }
+  ],
+  [
+    13977,
+    'crafting_table',
+    Vec3 { x: 37.42515096288414, y: 69, z: 99.24419785071697 }
+  ],
+  [ 13978, 'coal', Vec3 { x: 39.875, y: 69, z: 99.20492934026007 } ],
+  [
+    13979,
+    'wooden_pickaxe',
+    Vec3 { x: 39.875, y: 68, z: 96.19907330838083 }
+  ],
+  [ 13980, 'stick', Vec3 { x: 36.00621075285027, y: 69, z: 101.875 } ],
+  [
+    13981,
+    'spruce_planks',
+    Vec3 { x: 35.755834669565466, y: 69, z: 98.01805271416313 }
+  ],
+  [ 13982, 'shield', Vec3 { x: 34.125, y: 69, z: 100.78138257033133 } ]
+]
+ACTUAL_CORPSE_RECEIPT [ [ 'sweet_berries', 5, null ], [ 'stick', 2, null ] ] OFF shield
+DOOR enter true (6.629132629155047, 67.5625, 82.73413177510992)
+CORPSE_RECOVERY_FINAL Vec3 { x: 6.629132629155047, y: 67.5625, z: 82.73413177510992 } 15.833333015441895 16 CAMP true DEAD false KIT [
+  [ 'sweet_berries', 5, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'stick', 2, null ],
+  [ 'spruce_planks', 9, null ]
+] OFF shield
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.6, 67.6, 82.7) in overworld, health 15.8/20, food 16/20, alive

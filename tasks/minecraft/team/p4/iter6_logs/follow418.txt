@@ -1,0 +1,13 @@
+program #2319 on p4: 4.4 s
+--- output ---
+FOLLOW_FRAME_PRE 143 (-267, 61, -417) (-267, 61, -418) missing 2 mats 13
+PLACED (-267, 61, -419)
+PLACED (-267, 62, -419)
+FOLLOW_ACCEPTED 144 13
+FOLLOW_END {"issue":null,"accepted":true,"dead":false,"lost":false,"p":{"x":-266.4999997076918,"y":61,"z":-417.3322911817508},"onGround":true,"hp":20,"food":20,"protectedCorridor":true,"cells":144,"inventory":[["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",13,null],["stone_axe",1,12],["stone_pickaxe",1,104],["spruce_sapling",2,null],["crafting_table",1,null]],"target":[-267,61,-418]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #2312 quarrySIX PASSED retained BRICK2->14 (+12), totalmats17, protected57HP20/19/deck59restored. Returning2oldsteps+3pillarsto(-267,60,-430) NOW20sec. P4 keepold429roof62/back42861 solid duringupperhullprecheck; ifyouarein42960sharedroom willretain2cel
+p1: lupperhull ratherthancapyou. No freshquarry afterthis; nextEastrodapproach.
+--- p4 now: (-266.5, 61, -417.3) in the_nether, health 20/20, food 20/20, alive

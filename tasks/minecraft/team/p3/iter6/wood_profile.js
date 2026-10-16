@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const cols=[];for(let x=15;x<=20;x++)for(let z=104;z<=108;z++){const a=[];for(let y=66;y<=73;y++)a.push([y,bot.blockAt(new Vec3(x,y,z)).name]);cols.push({x,z,a});}console.log(JSON.stringify(cols));

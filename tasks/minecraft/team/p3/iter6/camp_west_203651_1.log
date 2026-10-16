@@ -1,0 +1,122 @@
+program #2447 on p3: 0.9 s
+--- output ---
+WEST_BEFORE [{"y":67,"name":"air","props":{},"shapes":[]},{"y":68,"name":"air","props":{},"shapes":[]},{"y":69,"name":"dirt","props":{},"shapes":[[0,0,0,1,1,1]]}] RAY null
+--- returned ---
+{
+ "issue": null,
+ "before": [
+  {
+   "y": 67,
+   "name": "air",
+   "props": {},
+   "shapes": []
+  },
+  {
+   "y": 68,
+   "name": "air",
+   "props": {},
+   "shapes": "[repeated reference]"
+  },
+  {
+   "y": 69,
+   "name": "dirt",
+   "props": {},
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  }
+ ],
+ "placed": [
+  {
+   "y": 67,
+   "name": "spruce_stairs",
+   "props": {
+    "waterlogged": false,
+    "shape": "straight",
+    "half": "bottom",
+    "facing": "east"
+   },
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     0.5,
+     1
+    ],
+    [
+     0.5,
+     0.5,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "y": 68,
+   "name": "spruce_stairs",
+   "props": {
+    "waterlogged": false,
+    "shape": "straight",
+    "half": "bottom",
+    "facing": "east"
+   },
+   "shapes": "[repeated reference]"
+  }
+ ],
+ "westTorsoHit": {
+  "p": {
+   "x": 5,
+   "y": 68,
+   "z": 83
+  },
+  "name": "spruce_stairs"
+ },
+ "hp": 20,
+ "p": {
+  "x": 6.376351095295876,
+  "y": 67.5625,
+  "z": 83.24856979479897
+ },
+ "onGround": true,
+ "doors": [
+  {
+   "x": 6,
+   "name": "spruce_door",
+   "props": {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   }
+  },
+  {
+   "x": 7,
+   "name": "spruce_door",
+   "props": {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "east"
+   }
+  }
+ ],
+ "inventory": [],
+ "eyeObserverPersistent": true,
+ "actualEyes": 0
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.4, 67.6, 83.2) in overworld, health 20/20, food 20/20, alive

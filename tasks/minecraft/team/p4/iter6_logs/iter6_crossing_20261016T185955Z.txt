@@ -1,0 +1,60 @@
+program #2148 on p4: 49.9 s
+--- output ---
+BURIED_TRAIL_ADMISSION 528 575 54 42
+SHAFT_TOP_CAP_PROFILE_VERIFIED
+RISE_COMPLETE_ROUTE_FLOOR_RESTORED (-272, 71, -231) netherrack
+TRAIL_ACTUAL 529 (-271, 71, -231) 20
+TRAIL_ACTUAL 530 (-270, 71, -231) 20
+TRAIL_ACTUAL 531 (-270, 71, -232) 20
+TRAIL_ACTUAL 532 (-270, 71, -233) 20
+TRAIL_ACTUAL 533 (-270, 71, -234) 20
+TRAIL_ACTUAL 534 (-270, 71, -235) 20
+TRAIL_ACTUAL 535 (-270, 71, -236) 20
+TRAIL_ACTUAL 536 (-270, 71, -237) 20
+TRAIL_ACTUAL 537 (-270, 71, -238) 20
+TRAIL_ACTUAL 538 (-270, 71, -239) 20
+TRAIL_ACTUAL 539 (-271, 71, -239) 20
+TRAIL_ACTUAL 540 (-272, 71, -239) 20
+TRAIL_ACTUAL 541 (-273, 71, -239) 20
+TRAIL_ACTUAL 542 (-274, 71, -239) 20
+TRAIL_ACTUAL 543 (-275, 71, -239) 20
+TRAIL_ACTUAL 544 (-275, 71, -240) 20
+TRAIL_ACTUAL 545 (-275, 71, -241) 20
+TRAIL_ACTUAL 546 (-275, 71, -242) 20
+TRAIL_ACTUAL 547 (-275, 71, -243) 20
+TRAIL_ACTUAL 548 (-275, 71, -244) 20
+TRAIL_ACTUAL 549 (-275, 71, -245) 20
+TRAIL_ACTUAL 550 (-275, 71, -246) 20
+TRAIL_ACTUAL 551 (-275, 71, -247) 20
+TRAIL_ACTUAL 552 (-275, 71, -248) 20
+TRAIL_ACTUAL 553 (-275, 71, -249) 20
+TRAIL_ACTUAL 554 (-275, 71, -250) 20
+TRAIL_ACTUAL 555 (-274, 71, -250) 20
+TRAIL_ACTUAL 556 (-274, 71, -251) 20
+TRAIL_ACTUAL 557 (-274, 71, -252) 20
+TRAIL_ACTUAL 558 (-274, 71, -253) 20
+TRAIL_ACTUAL 559 (-274, 71, -254) 20
+TRAIL_ACTUAL 560 (-274, 71, -255) 20
+TRAIL_ACTUAL 561 (-274, 71, -256) 20
+TRAIL_ACTUAL 562 (-275, 71, -256) 20
+TRAIL_ACTUAL 563 (-275, 71, -257) 20
+TRAIL_ACTUAL 564 (-275, 71, -258) 20
+TRAIL_ACTUAL 565 (-275, 71, -259) 20
+TRAIL_ACTUAL 566 (-275, 71, -260) 20
+TRAIL_ACTUAL 567 (-276, 71, -260) 20
+TRAIL_ACTUAL 568 (-277, 71, -260) 20
+TRAIL_ACTUAL 569 (-277, 70, -259) 20
+TRAIL_ACTUAL 570 (-278, 70, -259) 20
+TRAIL_ACTUAL 571 (-279, 70, -259) 20
+TRAIL_ACTUAL 572 (-279, 70, -258) 20
+TRAIL_ACTUAL 573 (-280, 69, -258) 20
+TRAIL_ACTUAL 574 (-281, 69, -258) 20
+TRAIL_ACTUAL 575 (-281, 69, -257) 20
+PLACED_ACTUAL Vec3 { x: -281, y: 68, z: -257 } netherrack
+BURIAL_VERIFIED (-281, 69, -257) (-281, 66, -257) RESTORED_ROUTE_FLOOR netherrack
+TRAIL_END {"issue":null,"dead":false,"lost":false,"protectedEnd":true,"endpoint":"buried-(-281, 69, -257)","index":575,"attempted":575,"actualSteps":47,"dim":"the_nether","p":{"x":-280.5000001169233,"y":66,"z":-256.5390119259529},"hp":20,"food":20,"sealed":true,"inventory":[["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",63,null],["stone_pickaxe",1,78],["stone_pickaxe",1,78],["stone_axe",1,12],["stone_pickaxe",1,78],["iron_pickaxe",1,1],["spruce_sapling",2,null],["crafting_table",1,null],["netherrack",11,null]],"offhand":"shield","offhandWear":0,"buried":{"surface":[-281,69,-257],"foot":[-281,66,-257]},"surface":[-281,69,-257],"trace":[[-272,71,-231],[-271,71,-231],[-270,71,-231],[-270,71,-232],[-270,71,-233],[-270,71,-234],[-270,71,-235],[-270,71,-236],[-270,71,-237],[-270,71,-238],[-270,71,-239],[-271,71,-239],[-272,71,-239],[-273,71,-239],[-274,71,-239],[-275,71,-239],[-275,71,-240],[-275,71,-241],[-275,71,-242],[-275,71,-243],[-275,71,-244],[-275,71,-245],[-275,71,-246],[-275,71,-247],[-275,71,-248],[-275,71,-249],[-275,71,-250],[-274,71,-250],[-274,71,-251],[-274,71,-252],[-274,71,-253],[-274,71,-254],[-274,71,-255],[-274,71,-256],[-275,71,-256],[-275,71,-257],[-275,71,-258],[-275,71,-259],[-275,71,-260],[-276,71,-260],[-277,71,-260],[-277,70,-259],[-278,70,-259],[-279,70,-259],[-279,70,-258],[-280,69,-258],[-281,69,-258],[-281,69,-257]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 bounded16 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p4 now: (-280.5, 66, -256.5) in the_nether, health 20/20, food 20/20, alive

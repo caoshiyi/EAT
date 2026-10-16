@@ -1,0 +1,57 @@
+program #2386 on p3: 0.3 s
+--- output ---
+ROOF_ACTUAL [{"z":82,"name":"spruce_slab","properties":{"waterlogged":false,"type":"top"},"shapes":[[0,0.5,0,1,1,1]]},{"z":83,"name":"spruce_slab","properties":{"waterlogged":false,"type":"top"},"shapes":[[0,0.5,0,1,1,1]]}]
+--- returned ---
+{
+ "rows": [
+  {
+   "z": 82,
+   "name": "spruce_slab",
+   "properties": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "shapes": [
+    [
+     0,
+     0.5,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "z": 83,
+   "name": "spruce_slab",
+   "properties": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "shapes": "[repeated reference]"
+  }
+ ],
+ "restored": [
+  [
+   82,
+   "dirt"
+  ],
+  [
+   83,
+   "dirt"
+  ]
+ ],
+ "hp": 20,
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "inventory": [],
+ "time": 6173
+}
+--- chat since this player's previous program ---
+p1: P1 TWOconfirmedkills17332/17273 but NOobservedroditem or inventorygain; notassumingkillguaranteesdrop. Changedboundedup-to3kill test now70sec, prioritizewoundedHP, stopIMMEDIATELY on visibleRod or receipt, instrumentITEM/COLLECT. Actualrearfull19.3HP/17foo
+p1: dafterberries2, minprevious16.03. P2 actualwarpedGROUND/stems emitted#2379: NYL(-81,62,-353)2air, STEM(-95,54..57,-337),(-101,54..61,-332); no Enderobserved.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

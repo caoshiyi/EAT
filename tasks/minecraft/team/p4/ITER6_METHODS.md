@@ -1,0 +1,32 @@
+# Iteration6 reusable evidence and continuation
+
+Current time window: CR_DEADLINE1792183777 =2026-10-16 20:49:37 UTC. Historical deadlines stale. p4 only; OWN P4.md and p4/ only. No subagents.
+
+Objective: dragon defeat, evaluator world truth. Opening5milestones/dragon0/deaths44; independent18:57 evaluator6/dragon0/deaths44 after P2 actual retained pearl. P4 objective contribution currently finite delivery2stonepicks to P1; own usable pick retained. Review19:06, receipt budget19:12. Alternative own localgold/secondstructure branch if delivery cannot convert; no indefinite courier framework. P1 already hand-cutting north fromx-316,y61; do not duplicate final lead approach. Current frontier in P1.md/chat.
+
+Read LATEST_TRAIL.json for ACTUAL accepted endpoint; attempted/traceforward is not retained endpoint on rollback. P4.md header updated by iter6_record.py after each completion. p4Trail5 globals intentionally hold path/index/buried, no callbacks. Shield intentionally raised in trail finally; cleared/deactivated at subsequent action. Active jobs via iter6_batch.py include up to3 sequential bounded segments, STOP on ANY issue/nonfull/death/lost/nonprogress/HP<17. Check arena/PTY if active state uncertain. Never run another body.
+
+Restart: globals absent in #2071. Restore matched actual body to saved buried foot before injecting P4_TRAIL_ROUTE.json and index. iter6_restore.js has OLD360 coordinates: DO NOT replay now. Generate current restore only from fresh actual match + LATEST_TRAIL. Full historical route724points endpointP1oldroom[-316,61,-334]; beyond reachedindex it is proposal requiring fresh geometry.
+
+Tested capabilities:
+- #2078 fixed roof-reference failure: seal uses a completed NONBACK side wall. Prior2064 had tried roof support on skipped-back wall, reversed to360. First fixed24 steps retained384/FULL20/20. iter6_trail.js.
+- #2102 physical connected hull ONEcell: frame next3outerfaces+roof while current wall stillfull; verify two-cell outerhull before/after cutting shared internal wall; move+seal. Actual385/FULL20/20. iter6_frame_one.js. Costs8blocks on this exposed bridge, too expensive whole11-cell gap from42stock. Not universal placement/failure proof. Its attempted408 field was stale target from reused source; actual385/steps1 authoritative; file subsequently corrected attemptedidx+1.
+- #2113 crossing test rejected cube atY60.94 near bridgefeet63 BEFORE moving. EarlierY58 snapshot was NOT clearance; mobilejump invalidates static below assumptions. Same385/FULL20/20.
+- #2118 lowerwindow combat20sec: zero swings/hurts/deaths; fullrecap passed. No kill/combat capability claim. Cube363 moved east/downY56; materially changed hazard allowed #2122 eight actual steps to393/FULL20/20. NO BELOW_CROSSING_TEST lines there, so new admission branch remained unexercised in that test.
+- iter6_crossing.js adds scoped tactical admission only piglin/magma with actual current AND next full floors, both distance>=7 and conservative top>=2.5 below feet. Other guard remains. This is risk hypothesis, NOT projectile/jump immunity; record actual accept lines. Following43+48step batches retained436/484, full20/20 with kit. Need inspect logs before claiming branch exercised.
+- Shaft(-272,-231): #2137 actual cold center59..70, full surrounding sides, upper71/72AIR/roof73full, no threat25. #2139 approached37 and climbed FIRST1 to64/fullsealed. #2143 climbedremaining7 to71, buried68 and restoredTOP70/full20/20. Source iter6_shaft_first.js then iter6_crossing.js. These prove NORMAL tested sequence, not arbitrary failure universal safety. Intermediate vertical column is a filled pillar route, not walking floors: burial leaves68/69AIR but restores upperfloor70; rise refills it. Original lower sharedwalkingfloor62 staysfull.
+
+P1 transfer: do not toss until actual recipient position/proximity + opportunity verified. P1 rear caps atx-316,y61/62,z-333/-340/-356. Chat19:00 notified intended fresh reopening and restoration behind passage; actual acceptance/changes to be logged. Never cut within3m of peer, no assumed empty oldroom. Recipient actual inventory gain required; sender disappearance not receipt.
+
+Sources/evidence iter6_logs/*.txt, ITER6_LOG.md. Current runner iter6_batch.py passed1segment successfully before requested3. It records each observed ending and stops on failure; log name timestamp. `python` unavailable; usepython3. No tools/server/baseline/peer-memory modifications.
+
+## 19:12 critical live correction
+Current canonical route is P4_COURIER_ROUTE.json, length741 ending[-316,61,-355], not original724. OLDindices712..715 removed because OLD714body61 isOLD710floor61; new proposal connectsOLD711 directly easttoOLD716 (onecell shortcut UNEXECUTED before2224). Post711 currentindices shifted-4, originalindex descriptions are provenance only. Current accepted679 as of2220; LATEST_TRAIL authoritative. Runner2224 etc pending.
+
+Original receipt19:12 MISSED, no item transfer. Owner compared continuedcourier (freshiron249uses +2stone~35each +blocks enabling P1gap) vs ownlocalgold duplicatingP3; chose finite continuation/review19:18. Not a new lifecycle deadline.
+
+New tested#2207 emergencecage: build whole surfacecage while below, verify vertical5high exterior wall/floor/roof union thenrise. Zero routeadvance, FULLactualsurface676/20HP. #2208/#2209 2flatframes retained677/678; #2220 oneUP exact5voxel union fullybuilt before anycut, verifiedouteraftereachcut; actual679/FULL20/20. These are real bounded normalworldtests; not generic safeeverywhere or universal failure guarantee. Files iter6_emergence_cage.js, iter6_frame_one.js, iter6_frame_stair.js. Guard range18test2203 was blocked by differentnear9m piglin; new rangebranch NOT physically exercised.
+
+Source review discovered current+next body skip mask missed stair headclearance cuts. iter6_courier.js now skips cur+2 onUP andnext+2 onDOWN when testing remainingrock rays, so blocks aboutto be removed cannot certify cover.
+
+Important shared boundary: P1tunnelSafe scans WHOLEcomponent after eachbatch. Even temporary floor60 removal during burial INSIDE cells357..427 could make hischeckfail. Therefore currenttail ends-355 outsidecomponent; enterthroughcap356 only after coordinating P1batchhold. Do NOT bury or sealcap inside hisknowncomponent. P1 authorized reopening old333/340/356; hook restores eachbehind at334/341/357. First two restored normal batches stillpending. Actual receipt remains mandatory.

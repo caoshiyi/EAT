@@ -1,0 +1,30 @@
+program #2312 on p1: 17.2 s
+--- output ---
+DIG_BUDGET_ACTUAL nether_bricks (-267, 58, -431) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-267, 57, -431) 3000
+ACTUAL_COVERED_STEP (-267, 57, -431) (-266.5004466316596, 57, -430.33229118175086) 20
+DIG_BUDGET_ACTUAL nether_bricks (-267, 58, -432) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-267, 57, -432) 3000
+ACTUAL_COVERED_STEP (-267, 57, -432) (-266.5004466316596, 57, -431.5) 20
+DIG_BUDGET_ACTUAL nether_bricks (-266, 58, -432) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-266, 57, -432) 3000
+ACTUAL_COVERED_STEP (-266, 57, -432) (-265.66815544990874, 57, -431.5000000000003) 20
+DIG_BUDGET_ACTUAL nether_bricks (-266, 58, -431) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-266, 57, -431) 3000
+ACTUAL_COVERED_STEP (-266, 57, -431) (-265.5299994976202, 57, -430.67925610118067) 20
+DIG_BUDGET_ACTUAL nether_bricks (-266, 58, -430) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-266, 57, -430) 3000
+ACTUAL_COVERED_STEP (-266, 57, -430) (-265.5161469816895, 57, -429.5) 20
+ACTUAL_COVERED_STEP (-266, 57, -431) (-265.50691128648606, 57, -430.33215080428545) 20
+ACTUAL_COVERED_STEP (-267, 57, -431) (-266.32754709338104, 57, -430.47095096156886) 20
+DIG_BUDGET_ACTUAL nether_bricks (-268, 58, -431) 3000
+DIG_BUDGET_ACTUAL nether_bricks (-268, 57, -431) 3000
+ACTUAL_COVERED_STEP (-268, 57, -431) (-267.5, 57, -430.484546993418) 20
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-267.5,"y":57,"z":-430.484546993418},"end":[-268,57,-431],"cells":[[-267,57,-430],[-267,57,-431],[-267,57,-432],[-266,57,-432],[-266,57,-431],[-266,57,-430],[-268,57,-431]],"steps":8,"hp":20,"food":19,"mats":17,"issue":null}
+QUARRY_SIX_RECEIPT {"fresh":6,"before":[["quartz",7],["sweet_berries",13],["crafting_table",1],["cobblestone_slab",2],["gold_nugget",5],["netherrack",2],["stone_axe",1],["stone_pickaxe",1],["nether_bricks",2],["polished_blackstone",1],["stone_pickaxe",1],["iron_pickaxe",1],["red_mushroom",2]],"after":[["quartz",7,null],["sweet_berries",13,null],["crafting_table",1,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["netherrack",2,null],["stone_axe",1,5],["stone_pickaxe",1,100],["nether_bricks",14,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,29],["red_mushroom",2,null]],"originalDeck59":"nether_bricks"}
+FINAL (-267.5, 57, -430.484546993418) the_nether 20 19 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-267.5, 57, -430.5) in the_nether, health 20/20, food 19/20, alive

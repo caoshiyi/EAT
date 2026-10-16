@@ -1,0 +1,1 @@
+const ids=['dirt','grass_block'].map(n=>bot.registry.blocksByName[n].id);const xs=bot.findBlocks({matching:ids,maxDistance:14,count:80}).filter(p=>!(p.x>=4&&p.x<=9&&p.z>=80&&p.z<=94));console.log('SOIL',JSON.stringify(xs.slice(0,20).map(p=>({p,name:bot.blockAt(p).name,above:bot.blockAt(p.offset(0,1,0)).name}))));

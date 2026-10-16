@@ -1,0 +1,164 @@
+program #2326 on p3: 86 s
+--- output ---
+EXPECTED_WORLD_RESPAWN
+GATE_ACTUAL false overworld Vec3 { x: 6.435216081295179, y: 68, z: 89.12930034158647 }
+DOOR enter true (6.559002667472195, 67.5625, 82.73413161995089)
+--- returned ---
+{
+ "issue": null,
+ "done": 66,
+ "outcome": {
+  "issue": null,
+  "dead": false,
+  "lost": false,
+  "protectedEnd": true,
+  "endpoint": "camp",
+  "dimension": "overworld",
+  "p": {
+   "x": 6.559002667472195,
+   "y": 67.5625,
+   "z": 82.73413161995089
+  },
+  "hp": 19.539077758789062,
+  "food": 20,
+  "inventory": [
+   [
+    "gold_nugget",
+    6,
+    null
+   ],
+   [
+    "gravel",
+    1,
+    null
+   ],
+   [
+    "quartz",
+    4,
+    null
+   ],
+   [
+    "gold_ingot",
+    5,
+    null
+   ],
+   [
+    "basalt",
+    28,
+    null
+   ],
+   [
+    "snowball",
+    13,
+    null
+   ],
+   [
+    "dirt",
+    1,
+    null
+   ],
+   [
+    "cobblestone",
+    6,
+    null
+   ],
+   [
+    "crafting_table",
+    1,
+    null
+   ],
+   [
+    "blackstone",
+    5,
+    null
+   ],
+   [
+    "netherrack",
+    31,
+    null
+   ]
+  ],
+  "doors": [
+   [
+    6,
+    "spruce_door",
+    {
+     "powered": false,
+     "open": false,
+     "hinge": "left",
+     "half": "lower",
+     "facing": "north"
+    }
+   ],
+   [
+    7,
+    "air",
+    {}
+   ]
+  ]
+ },
+ "dimension": "overworld",
+ "p": "[repeated reference]",
+ "hp": 19.539077758789062,
+ "food": 20,
+ "inventory": [
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "quartz",
+   4,
+   null
+  ],
+  [
+   "gold_ingot",
+   5,
+   null
+  ],
+  [
+   "basalt",
+   28,
+   null
+  ],
+  [
+   "snowball",
+   13,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   5,
+   null
+  ],
+  [
+   "netherrack",
+   31,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 19.5/20, food 20/20, alive

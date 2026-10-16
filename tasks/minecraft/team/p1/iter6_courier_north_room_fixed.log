@@ -1,0 +1,14 @@
+program #2436 on p1: 2.9 s
+--- output ---
+CONNECTED_HULL_BUILD_START (-141, 60, -429) 0 23
+DIG_BUDGET_ACTUAL basalt (-141, 61, -429) 2850
+DIG_BUDGET_ACTUAL nether_bricks (-141, 60, -429) 3000
+ACTUAL_COVERED_STEP (-141, 60, -429) (-140.49999999999997, 60, -428.66794640137874) 17.997331619262695
+CONNECTED_HULL_ACTUAL_STEP (-141, 60, -429) 17.997331619262695
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-140.49999999999997,"y":60,"z":-428.60894389050117},"end":[-141,60,-429],"cells":[[-141,60,-430],[-141,60,-429]],"steps":1,"hp":17.997331619262695,"food":17,"mats":25,"issue":null}
+FINAL (-140.49999999999997, 60, -428.60894389050117) the_nether 17.997331619262695 17 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-140.5, 60, -428.6) in the_nether, health 18/20, food 17/20, alive

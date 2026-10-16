@@ -1,0 +1,75 @@
+program #2074 on p3: 1.1 s
+--- output ---
+WEST_SURVEY [
+  [ -1, [ 'basalt', 'cobblestone', 'air', 'dirt' ] ],
+  [ -2, [ 'basalt', 'air', 'air', 'air' ] ],
+  [ -3, [ 'obsidian', 'obsidian', 'obsidian', 'obsidian' ] ]
+]
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "repairs": [
+  {
+   "q": {
+    "x": 5,
+    "y": 66,
+    "z": 2
+   },
+   "full": true
+  }
+ ],
+ "full": true,
+ "health": 20,
+ "food": 20,
+ "position": {
+  "x": 6.330632391915857,
+  "y": 65,
+  "z": 2.5110432326282663
+ },
+ "inventory": [
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   45
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   35
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.3, 65, 2.5) in the_nether, health 20/20, food 20/20, alive

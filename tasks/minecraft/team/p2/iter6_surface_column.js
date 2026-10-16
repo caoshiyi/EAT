@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');for(let y=28;y<=76;y++)console.log('UPCOL',y,[[0,0],[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>bot.blockAt(new Vec3(74+x,y,115+z))?.name));console.log('TIME',bot.time.timeOfDay,bot.time.day,'BODY',bot.entity.position,bot.health,bot.food);

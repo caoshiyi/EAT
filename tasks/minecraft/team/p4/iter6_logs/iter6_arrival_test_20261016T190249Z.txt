@@ -1,0 +1,23 @@
+program #2165 on p4: 13.5 s
+--- output ---
+BURIED_TRAIL_ADMISSION 623 634 80 44
+RISE_COMPLETE_ROUTE_FLOOR_RESTORED (-317, 62, -265) netherrack
+TRAIL_ACTUAL 624 (-317, 62, -266) 20
+TRAIL_ACTUAL 625 (-317, 61, -267) 20
+TRAIL_ACTUAL 626 (-317, 60, -268) 20
+TRAIL_ACTUAL 627 (-317, 60, -269) 20
+TRAIL_ACTUAL 628 (-317, 60, -270) 20
+TRAIL_ACTUAL 629 (-317, 60, -271) 20
+TRAIL_ACTUAL 630 (-317, 59, -272) 20
+TRAIL_ACTUAL 631 (-317, 58, -273) 20
+TRAIL_ACTUAL 632 (-317, 58, -274) 20
+TRAIL_ACTUAL 633 (-317, 58, -275) 20
+TRAIL_ACTUAL 634 (-317, 58, -276) 20
+PLACED_ACTUAL Vec3 { x: -317, y: 57, z: -276 } blackstone
+BURIAL_VERIFIED (-317, 58, -276) (-317, 55, -276) RESTORED_ROUTE_FLOOR blackstone
+TRAIL_END {"issue":null,"dead":false,"lost":false,"protectedEnd":true,"endpoint":"buried-(-317, 58, -276)","index":634,"attempted":634,"actualSteps":11,"dim":"the_nether","p":{"x":-316.50006006909314,"y":55,"z":-275.5},"hp":20,"food":20,"sealed":true,"inventory":[["iron_pickaxe",1,1],["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",64,null],["stone_pickaxe",1,84],["stone_pickaxe",1,84],["stone_axe",1,12],["stone_pickaxe",1,84],["spruce_sapling",2,null],["crafting_table",1,null],["netherrack",16,null]],"offhand":"shield","offhandWear":0,"buried":{"surface":[-317,58,-276],"foot":[-317,55,-276]},"surface":[-317,58,-276],"trace":[[-317,62,-265],[-317,62,-266],[-317,61,-267],[-317,60,-268],[-317,60,-269],[-317,60,-270],[-317,60,-271],[-317,59,-272],[-317,58,-273],[-317,58,-274],[-317,58,-275],[-317,58,-276]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-316.5, 55, -275.5) in the_nether, health 20/20, food 20/20, alive

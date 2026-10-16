@@ -1,0 +1,45 @@
+program #2067 on p3: 0 s
+--- output ---
+BODY Vec3 { x: 6, y: 65, z: 2 } 20 20 the_nether
+COL 4 0 [ 'basalt', 'lava', 'air', 'air', 'air' ]
+COL 4 1 [ 'basalt', 'basalt', 'air', 'air', 'air' ]
+COL 4 2 [ 'basalt', 'air', 'air', 'air', 'air' ]
+COL 4 3 [
+  'obsidian',
+  'nether_portal',
+  'nether_portal',
+  'nether_portal',
+  'obsidian'
+]
+COL 5 0 [ 'basalt', 'basalt', 'air', 'air', 'air' ]
+COL 5 1 [ 'basalt', 'cobblestone', 'cobblestone', 'air', 'air' ]
+COL 5 2 [ 'basalt', 'cobblestone', 'cobblestone', 'dirt', 'air' ]
+COL 5 3 [ 'obsidian', 'obsidian', 'obsidian', 'obsidian', 'obsidian' ]
+COL 6 0 [ 'basalt', 'basalt', 'basalt', 'air', 'air' ]
+COL 6 1 [ 'basalt', 'basalt', 'basalt', 'dirt', 'air' ]
+COL 6 2 [ 'basalt', 'air', 'air', 'dirt', 'air' ]
+COL 6 3 [ 'basalt', 'cobblestone', 'cobblestone', 'air', 'air' ]
+COL 7 0 [ 'basalt', 'magma_block', 'air', 'air', 'air' ]
+COL 7 1 [ 'basalt', 'basalt', 'basalt', 'air', 'air' ]
+COL 7 2 [ 'basalt', 'basalt', 'dirt', 'air', 'air' ]
+COL 7 3 [ 'basalt', 'air', 'air', 'air', 'air' ]
+COL 8 0 [ 'basalt', 'basalt', 'basalt', 'air', 'air' ]
+COL 8 1 [ 'basalt', 'basalt', 'basalt', 'air', 'air' ]
+COL 8 2 [ 'basalt', 'air', 'air', 'air', 'air' ]
+COL 8 3 [ 'basalt', 'air', 'air', 'air', 'air' ]
+ENTITIES []
+INV [
+  [ 'gravel', 1, null ],
+  [ 'cooked_cod', 1, null ],
+  [ 'wooden_pickaxe', 1, 45 ],
+  [ 'stone_pickaxe', 1, 34 ],
+  [ 'dirt', 1, null ],
+  [ 'wooden_pickaxe', 1, 2 ],
+  [ 'cobblestone', 7, null ],
+  [ 'crafting_table', 1, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: Iteration6 active. CR_DEADLINE=20:49:37 UTC current. P1 resuming brick lead from (-316,61,-334); own bounded direct approach. P4 please avoid duplicating final lead approach; coordinate kit/tool receipt or distinct avenue. Will report actual progress.
+--- p3 now: (6.3, 65, 2.5) in the_nether, health 20/20, food 20/20, alive

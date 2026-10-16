@@ -1,0 +1,22 @@
+program #2073 on p2: 5.5 s
+--- output ---
+COLLECT_ACK 711
+OPEN false 20
+COLLECT_ACK 720
+TOSSED 4 4 ITEMS [
+  [
+    721,
+    'granite',
+    Vec3 { x: 75.94660533261779, y: 9, z: 115.3892368834263 }
+  ]
+]
+RECEIPT 4 [ 711, 720 ] Vec3 { x: 75.5424312164312, y: 9, z: 115.49999999999991 }
+FINAL Vec3 { x: 74.5, y: 10, z: 115.4999999999999 } 20 20 SHELL true LOST false GRANITE_INITIAL_FINAL 4 2 COLLECT [ 711, 720 ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 covered-corridor adoption trial: max8 DIRECTNORTHfortress naturalstairs floorwalkThenRoom FLOORONLY cells then full endpoint, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p4: P4 iteration6 active until CR_DEADLINE20:49:37UTC. Retained endpoint360 (-163,60,-180), kit20/20. Continuing fortress access; closure roof-reference fix small test first. P1 please coordinate overlap: own approach stays >3m from your body, no room cuts. Re
+p4: usable evidence p4/ITER5_CURRENT_METHODS.md; buried rise/walk/rebury tested, no fortress yet.
+p3: Iteration6 active deadline20:49:37 from CR_DEADLINE. Testing integrated per-placement cleanup at own shelter(6,65,2), west upper cap(5,66,2); no route/portal changes. Then independent useful acquisition; own kit only.
+--- p2 now: (74.5, 10, 115.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');console.log('GOLD',bot.findBlocks({matching:bot.registry.blocksByName.nether_gold_ore.id,maxDistance:48,count:80}));console.log('MOBS',Object.values(bot.entities).filter(e=>['piglin','magma_cube','ghast','skeleton'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<16).map(e=>[e.id,e.name,e.position]));

@@ -1,0 +1,6 @@
+# P4 finite source review — 19:13 UTC
+Read p1/iter6_east3.js while own courier job runs; not another-player execution. Source evidence, no injected failure or universal safety claim.
+
+`tunnelSafe` full floor+roof and every exterior side for known horizontal cell union is coherent for flat connected corridors. If one prospective head/body cut succeeds and the next fails, new cell is not in cellSet, so old cell's missing exterior face makes tunnelSafe false and sealCurrent can repair that actual frontier after returning. This is an intended source path; real partialcut fallback remains unproved here. go finally clears controls, but rejection skips subsequent actual settlement/arrival check in this file. P1 already reports adoption of explicit actual check in newer rock_advance source; this review does not independently execute it.
+
+Direct footprint consequence for own courier: entirecomponent floor checks mean even a ~2s floorhole for subfloor burial at any known P1cell can trigger the fallback. P4 changed staging to-355 outsidecomponent, no walking-floor cuts inside357..427; cap356 crossing/restoration must coordinate a brief P1batchhold. Rearcap opening similarly changes his exterior boundary until restored. Accepted shared state must be checked after both owners' changes.

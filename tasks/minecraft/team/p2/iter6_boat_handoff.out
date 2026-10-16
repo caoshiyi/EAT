@@ -1,0 +1,66 @@
+program #2468 on p2: 57.8 s
+--- output ---
+PROVIDER_RUNNING_READY receiverfeet35,69,104 boat 1
+RECEIVER_ACTUAL p3 147 Vec3 { x: 35.077566687306444, y: 69, z: 104.14243942266388 }
+COLLECT_EVENT {"actor":"p2","item":29642,"name":"dirt","p":{"x":33.31126278646019,"y":68.19605767044676,"z":103.54589273533102}}
+BOAT_SENT 0 RECEIVER p3 Vec3 { x: 35.499929968556444, y: 69, z: 104.50010543828888 }
+COLLECT_EVENT {"actor":"p3","item":29657,"name":"spruce_boat","p":{"x":35.59280489090761,"y":69,"z":104.64736620807217}}
+COLLECT_EVENT {"actor":"p2","item":29665,"name":"dirt","p":{"x":33.87501275679852,"y":68.52870895430625,"z":103.12499614444393}}
+COLLECT_EVENT {"actor":"p2","item":29670,"name":"dirt","p":{"x":33.20978437700174,"y":67.58650417316338,"z":103.12492623523606}}
+COLLECT_EVENT {"actor":"p2","item":29673,"name":"dirt","p":{"x":33.712330282163386,"y":66.271948636125,"z":103.4548603970286}}
+HANDOFF_FINAL Vec3 { x: 33.5, y: 66, z: 103.32909220769442 } 20 20 FULL true LOST false BOAT 1 0 COLLECT [
+  {
+    actor: 'p2',
+    item: 29642,
+    name: 'dirt',
+    p: Vec3 {
+      x: 33.31126278646019,
+      y: 68.19605767044676,
+      z: 103.54589273533102
+    }
+  },
+  {
+    actor: 'p3',
+    item: 29657,
+    name: 'spruce_boat',
+    p: Vec3 { x: 35.59280489090761, y: 69, z: 104.64736620807217 }
+  },
+  {
+    actor: 'p2',
+    item: 29665,
+    name: 'dirt',
+    p: Vec3 {
+      x: 33.87501275679852,
+      y: 68.52870895430625,
+      z: 103.12499614444393
+    }
+  },
+  {
+    actor: 'p2',
+    item: 29670,
+    name: 'dirt',
+    p: Vec3 {
+      x: 33.20978437700174,
+      y: 67.58650417316338,
+      z: 103.12492623523606
+    }
+  },
+  {
+    actor: 'p2',
+    item: 29673,
+    name: 'dirt',
+    p: Vec3 {
+      x: 33.712330282163386,
+      y: 66.271948636125,
+      z: 103.4548603970286
+    }
+  }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3#2466 REALfailedcrop age1 afteractualfieldarrival: ACTUAL_CROP_NOT_RIPE then SAMEoperationland6,79/doorenter/closednameddoors/grounded, nodeath/discontinuity19.83HP. Normal2462banked3berries; scopednormal+failurephysicalreturnnowproven. Fresh2469bankPEAR
+p3: L1/berries3/gold1/nug6/water1/flint1/gate1. P2 boatreceiverboundedapproachnow.
+p1: P1_GIVER_RUNNING NOW head24261 controlledopening, lower24260preserved. Tosslook6tick thenimmediateEast239retreat, countactualrecipientdelta; Rod1staysP1.
+p1: P1_COVERED_SEALED (-239, 60, -430) SOUTHback(-240, 60, -430) actualsteps0 HP20
+--- p2 now: (33.5, 66, 103.3) in overworld, health 20/20, food 20/20, alive

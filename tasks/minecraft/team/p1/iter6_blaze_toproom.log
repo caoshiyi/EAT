@@ -1,0 +1,14 @@
+program #2363 on p1: 11 s
+--- output ---
+TOP_EXACT_BUDGET {"missing":[[-132,63,-430,"air"],[-133,63,-431,"air"],[-133,64,-430,"air"],[-135,62,-430,"air"],[-134,62,-431,"air"],[-135,63,-430,"air"],[-134,63,-431,"air"],[-134,64,-430,"air"]],"anchor":"air","above":"netherrack","mats":23,"mobs":[[17056,{"x":-137.2426969855718,"y":60,"z":-429.4844694491485}],[17168,{"x":-128.30003403116345,"y":63,"z":-428.30009713052254}],[17169,{"x":-130.40414984299179,"y":64,"z":-429.8761740089899}],[17273,{"x":-129.13651587093582,"y":63,"z":-429.9028262506991}],[17274,{"x":-129.18808986422994,"y":63,"z":-428.9287617004915}],[17275,{"x":-128.53358257449796,"y":63,"z":-429.06847556741184}],[17332,{"x":-131.22574720937456,"y":64,"z":-430.37809108495}],[17460,{"x":-129.916148387193,"y":64,"z":-430.86282186016}]]}
+DIG_BUDGET_ACTUAL nether_bricks (-133, 62, -430) 3000
+ASCEND_ACTUAL (-133, 61, -430) 20
+ASCEND_ACTUAL (-133, 62, -430) 20
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-132.60870630737165,"y":62,"z":-429.5002375831266},"end":[-133,62,-430],"cells":[[-133,62,-430],[-134,62,-430]],"steps":0,"hp":20,"food":19,"mats":13,"issue":null}
+BLAZE_TOP_ROOM_READY {"p":{"x":-132.60870630737165,"y":62,"z":-429.5002375831266},"cells":[[-133,62,-430],[-134,62,-430]],"frontWindow":[-132,63,-430,"nether_bricks"],"roof":"nether_bricks","kit":[["quartz",7,null],["sweet_berries",13,null],["crafting_table",1,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["basalt",4,null],["stone_axe",1,5],["stone_pickaxe",1,100],["nether_bricks",7,null],["blackstone",1,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,57],["red_mushroom",2,null]]}
+FINAL (-132.60870630737165, 62, -429.5002375831266) the_nether 20 19 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-132.6, 62, -429.5) in the_nether, health 20/20, food 19/20, alive

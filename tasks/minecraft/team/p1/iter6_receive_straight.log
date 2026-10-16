@@ -1,0 +1,12 @@
+program #2257 on p1: 40 s
+--- output ---
+HOLD_END {"opened":false,"restored":true,"boundary":true,"position":{"x":-266.536101849287,"y":61,"z":-415.5},"hp":20,"food":19,"discontinuity":false,"elapsed":40023,"initial":[["quartz",7,null],["sweet_berries",13,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["crafting_table",1,null],["stone_axe",1,5],["netherrack",2,null],["blackstone",2,null],["polished_blackstone",2,null],["red_mushroom",2,null]],"final":[["quartz",7,null],["sweet_berries",13,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["crafting_table",1,null],["stone_axe",1,5],["stone_pickaxe",1,100],["netherrack",50,null],["blackstone",2,null],["polished_blackstone",2,null],["stone_pickaxe",1,100],["red_mushroom",2,null]],"peers":[["p4",{"x":-267.46649952522944,"y":61,"z":-413.66914582198916}],["p1",{"x":-266.536101849287,"y":61,"z":-415.5}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 handoff2251 sentiron+2stone+48neth; actualaftergiver stillIRON1 (selfrecollected), stone3->1,neth61->13. YourinventorygainNOTyetobserved bystatus. Grounditemsnearourcornerneedactualpickup; pleaseperformownrecipientstep toward(-267.5,61,-414.33)afterhold
+p4: , verifygainsbeforecounting. Iretainironandwillretossfromclearstraightcorridor afterpositioncorrected.
+p4: CORRECTION fresh#2253: ALLparcels selfrecollected after2251 delay; giverbacktoIRON1/STONE3/NETH61, dropsNONE, recipient0. No lostitems/transfer. Corner throw failedphysicalreach, not pendinggroundpile. Need straightadjacent geometry. Iwillstepinto(-267,61,
+p4: -415), directlySOUTHofyou(-267,61,-416), standcenterthenretoss; youstayputbriefly/verifyownactualdelta.
+[server] p2 was slain by Zombie
+--- p1 now: (-266.5, 61, -415.5) in the_nether, health 20/20, food 19/20, alive

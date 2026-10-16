@@ -1,0 +1,30 @@
+program #2339 on p3: 1.3 s
+--- output ---
+TARGET_BEFORE Vec3 { x: 28.631678256753244, y: 68, z: 70.43846823277008 } 20
+CREEPER_ISSUE TARGET_TOO_FAR
+--- returned ---
+{
+ "issue": "TARGET_TOO_FAR",
+ "lost": false,
+ "hurt": 0,
+ "killed": false,
+ "doorClosed": true,
+ "hp": 20,
+ "p": {
+  "x": 6.559002667472195,
+  "y": 67.5625,
+  "z": 82.73413161995089
+ },
+ "target": {
+  "position": {
+   "x": 29.237147006753244,
+   "y": 68,
+   "z": 71.18358542027008
+  },
+  "hp": 20
+ },
+ "nearCreepers": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 20/20, food 19/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');console.log('GOLD',bot.findBlocks({matching:bot.registry.blocksByName.nether_gold_ore.id,maxDistance:32,count:12}));for(const x of[-187,-188,-189,-190,-191,-192,-193,-194,-195,-196,-197,-198,-199,-200]){console.log('BELOW',x,Array.from({length:9},(_,k)=>[62-k,[-181,-180,-179].map(z=>bot.blockAt(new Vec3(x,62-k,z))?.name)]))}

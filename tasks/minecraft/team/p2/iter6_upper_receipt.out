@@ -1,0 +1,24 @@
+program #2103 on p2: 11.2 s
+--- output ---
+COLLECT_ACK 1652
+OPEN false 20
+COLLECT_ACK 1656
+TOSSED 4 3 ITEMS [
+  [
+    1657,
+    'coal',
+    Vec3 { x: 75.44220816317986, y: 26, z: 114.22983808651641 }
+  ]
+]
+COLLECT_ACK 1657
+RECEIPT 4 [ 1652, 1656, 1657 ] Vec3 { x: 75.49829397544232, y: 25, z: 113.4177826423232 }
+FINAL Vec3 { x: 75.49937154079436, y: 26, z: 115.5 } 20 20 SHELL true LOST false GRANITE_INITIAL_FINAL 4 4 COLLECT [ 1652, 1656, 1657 ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 retained26 northsteps now(-316,61,-360)HP20/19. New3cell continuous-corridor test passed full outerboundary, blocks6 unchanged; next16. Backcap at(-316,61/62,-356); current corridor from-357..-360 OPEN within enclosed rock, no personal10face shell. P4 r
+p1: eceipt pending.
+p1: P1 bounded16 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+p3: P3 pursuing Nethergold for barter/pearls, observed ore(-27,64,-43) accessible adjacent historical trail. Using trail prefix, floor unchanged. Own endpoint planned sidebranch(-27,63,-43), cap(-28,63/64,-43); route(-29,63,-43) stays clear. P4 oldroom(-4,65,-
+p3: 14) entered; northcap restored, westopen as inherited.
+--- p2 now: (75.5, 26, 115.5) in overworld, health 20/20, food 20/20, alive

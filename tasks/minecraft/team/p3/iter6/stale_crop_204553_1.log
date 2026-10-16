@@ -1,0 +1,36 @@
+program #2466 on p3: 16.6 s
+--- output ---
+CROP_ACTUAL Vec3 { x: 1, y: 66, z: 94 } { age: '1' } STANCE Vec3 { x: 1, y: 66, z: 93 }
+DOOR exit true (6.559002526537267, 66, 78.77186156987092)
+LANDED_ACTUAL 1 93 (1.4940820143736946, 66, 93.5) air
+BERRY_ISSUE ACTUAL_CROP_NOT_RIPE
+LANDED_ACTUAL 6 79 (6.5, 66, 79.48106095888731) snow
+DOOR enter true (6.559002804491831, 67.5625, 82.71519272225267)
+--- returned ---
+{
+ "issue": "ACTUAL_CROP_NOT_RIPE",
+ "received": 0,
+ "bankDelta": null,
+ "dead": false,
+ "lost": false,
+ "protectedEnd": true,
+ "hp": 19.833332061767578,
+ "food": 17,
+ "p": {
+  "x": 6.559002804491831,
+  "y": 67.5625,
+  "z": 82.71519272225267
+ },
+ "inventory": [
+  [
+   "rotten_flesh",
+   1
+  ]
+ ],
+ "eyes": {}
+}
+--- chat since this player's previous program ---
+p2: P3 focused FIRSTUSE help: BOAT1 actualretained P2pit33,66,10320/20. Couldreceive+bankforP1 whilecouriercomes; optional, nevergateEye. Preparedgiver programstartingNOW90sec: waitprotected until yourACTUALfeet(35,69,104), then3UP/toss towardyou/look6ticks/im
+p2: mediate3DOWN+FULLrecap. Standreceiver35,69,104 (floor68full/body69-70AIR); no needACKtimerwhileP2prepares. Verifyownboat0->1 thenbanklowerchest0->1, not giverlabels. Avoidold35,69,103 HOLE; knownfield14,67,79->26,68,86->receiver. Chooseownsafeexecution.
+p2: P2 BOAT_PROVIDER ACTUALRUNNING protectedpit33,66,103; receiverP3orP1 stand35,69,104. OpensONLYonactualpresence, ~90secwait; thenlooks6ticks/toss/retreat3DOWN/recap. No exposedACKhold needed.
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 19.8/20, food 17/20, alive

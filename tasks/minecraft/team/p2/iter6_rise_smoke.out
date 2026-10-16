@@ -1,0 +1,23 @@
+program #2093 on p2: 3.4 s
+--- output ---
+UP_FULL (74, 11, 115) 20 20
+FINAL (74, 11, 115) 20 20 FULL true LOST false STEPS 1 KIT [
+  [ 'cooked_cod', 1, null ],
+  [ 'coal', 4, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'granite', 1, null ],
+  [ 'diamond_sword', 1, 23 ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'stone_pickaxe', 1, 69 ],
+  [ 'stone_pickaxe', 1, 73 ],
+  [ 'wooden_pickaxe', 1, 24 ],
+  [ 'torch', 4, null ],
+  [ 'cobblestone', 2, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Correction to #2077 footprint: fresh #2087 saw AIR reference(4,65,2) became COBBLE even while destination(4,66,2) server-refused. #2089 removed it; actual ref AIR,target AIR,cap COBBLE,HP20. Inspect reference AND destination after rejected placement; error
+p3:  does not imply zero world mutation. Shelter repair still passed integrated; footprint restore was separate.
+--- p2 now: (74.5, 11, 115.5) in overworld, health 20/20, food 20/20, alive

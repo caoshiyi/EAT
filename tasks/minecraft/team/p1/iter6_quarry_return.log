@@ -1,0 +1,16 @@
+program #2318 on p1: 4.8 s
+--- output ---
+ACTUAL_COVERED_STEP (-267, 57, -431) (-266.66783335717605, 57, -430.49326964836797) 20
+ACTUAL_COVERED_STEP (-267, 57, -430) (-266.5290331998923, 57, -429.672633841473) 20
+DIG_BUDGET_ACTUAL nether_bricks (-267, 59, -430) 3000
+ASCEND_ACTUAL (-267, 58, -430) 20
+ASCEND_ACTUAL (-267, 59, -430) 20
+ASCEND_ACTUAL (-267, 60, -430) 20
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-266.5290331998923,"y":60,"z":-429.6136313305954},"end":[-267,60,-430],"cells":[[-267,60,-429],[-267,60,-430]],"steps":0,"hp":20,"food":19,"mats":15,"issue":null}
+QUARRY_RETURN_RECEIPT {"p":{"x":-266.5290331998923,"y":60,"z":-429.6136313305954},"deck59":"nether_bricks","kit":[["quartz",7,null],["sweet_berries",13,null],["crafting_table",1,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["netherrack",2,null],["stone_axe",1,5],["stone_pickaxe",1,100],["nether_bricks",12,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,30],["red_mushroom",2,null]],"peers":[["p4",{"x":-266.5139545555913,"y":61,"z":-416.331787109375}],["p1",{"x":-266.5290331998923,"y":60,"z":-429.6136313305954}]]}
+FINAL (-266.5290331998923, 60, -429.6136313305954) the_nether 20 19 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-266.5, 60, -429.6) in the_nether, health 20/20, food 19/20, alive

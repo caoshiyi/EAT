@@ -1,0 +1,58 @@
+program #2169 on p4: 45.6 s
+--- output ---
+BURIED_TRAIL_ADMISSION 634 676 80 41
+RISE_COMPLETE_ROUTE_FLOOR_RESTORED (-317, 58, -276) netherrack
+TRAIL_ACTUAL 635 (-317, 58, -277) 20
+TRAIL_ACTUAL 636 (-317, 58, -278) 20
+TRAIL_ACTUAL 637 (-318, 58, -278) 20
+TRAIL_ACTUAL 638 (-319, 58, -278) 20
+TRAIL_ACTUAL 639 (-320, 58, -278) 20
+TRAIL_ACTUAL 640 (-320, 58, -279) 20
+TRAIL_ACTUAL 641 (-320, 58, -280) 20
+TRAIL_ACTUAL 642 (-320, 58, -281) 20
+TRAIL_ACTUAL 643 (-320, 58, -282) 20
+TRAIL_ACTUAL 644 (-320, 58, -283) 20
+TRAIL_ACTUAL 645 (-320, 58, -284) 20
+TRAIL_ACTUAL 646 (-320, 58, -285) 20
+TRAIL_ACTUAL 647 (-320, 58, -286) 20
+TRAIL_ACTUAL 648 (-321, 58, -286) 20
+TRAIL_ACTUAL 649 (-321, 58, -287) 20
+TRAIL_ACTUAL 650 (-321, 58, -288) 20
+TRAIL_ACTUAL 651 (-321, 58, -289) 20
+TRAIL_ACTUAL 652 (-321, 58, -290) 20
+TRAIL_ACTUAL 653 (-321, 58, -291) 20
+TRAIL_ACTUAL 654 (-321, 58, -292) 20
+TRAIL_ACTUAL 655 (-321, 58, -293) 20
+TRAIL_ACTUAL 656 (-322, 58, -293) 20
+TRAIL_ACTUAL 657 (-323, 58, -293) 20
+TRAIL_ACTUAL 658 (-324, 58, -293) 20
+TRAIL_ACTUAL 659 (-325, 58, -293) 20
+TRAIL_ACTUAL 660 (-326, 58, -293) 20
+TRAIL_ACTUAL 661 (-327, 58, -293) 20
+TRAIL_ACTUAL 662 (-327, 58, -294) 20
+TRAIL_ACTUAL 663 (-327, 58, -295) 20
+TRAIL_ACTUAL 664 (-327, 58, -296) 20
+TRAIL_ACTUAL 665 (-327, 58, -297) 20
+TRAIL_ACTUAL 666 (-327, 58, -298) 20
+TRAIL_ACTUAL 667 (-327, 58, -299) 20
+TRAIL_ACTUAL 668 (-326, 59, -299) 20
+TRAIL_ACTUAL 669 (-325, 59, -299) 20
+TRAIL_ACTUAL 670 (-324, 59, -299) 20
+TRAIL_ACTUAL 671 (-324, 59, -298) 20
+TRAIL_ACTUAL 672 (-323, 60, -298) 20
+TRAIL_ACTUAL 673 (-323, 60, -297) 20
+TRAIL_ACTUAL 674 (-323, 61, -296) 20
+TRAIL_ACTUAL 675 (-322, 61, -296) 20
+TRAIL_ACTUAL 676 (-321, 61, -296) 20
+PLACED_ACTUAL Vec3 { x: -321, y: 60, z: -296 } blackstone
+BURIAL_VERIFIED (-321, 61, -296) (-321, 58, -296) RESTORED_ROUTE_FLOOR blackstone
+TRAIL_END {"issue":null,"dead":false,"lost":false,"protectedEnd":true,"endpoint":"buried-(-321, 61, -296)","index":676,"attempted":676,"actualSteps":42,"dim":"the_nether","p":{"x":-320.5,"y":58,"z":-295.49999979120844},"hp":20,"food":20,"sealed":true,"inventory":[["iron_pickaxe",1,1],["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",64,null],["stone_pickaxe",1,89],["stone_pickaxe",1,89],["stone_axe",1,12],["blackstone",7,null],["stone_pickaxe",1,88],["spruce_sapling",2,null],["crafting_table",1,null],["netherrack",19,null]],"offhand":"shield","offhandWear":0,"buried":{"surface":[-321,61,-296],"foot":[-321,58,-296]},"surface":[-321,61,-296],"trace":[[-317,58,-276],[-317,58,-277],[-317,58,-278],[-318,58,-278],[-319,58,-278],[-320,58,-278],[-320,58,-279],[-320,58,-280],[-320,58,-281],[-320,58,-282],[-320,58,-283],[-320,58,-284],[-320,58,-285],[-320,58,-286],[-321,58,-286],[-321,58,-287],[-321,58,-288],[-321,58,-289],[-321,58,-290],[-321,58,-291],[-321,58,-292],[-321,58,-293],[-322,58,-293],[-323,58,-293],[-324,58,-293],[-325,58,-293],[-326,58,-293],[-327,58,-293],[-327,58,-294],[-327,58,-295],[-327,58,-296],[-327,58,-297],[-327,58,-298],[-327,58,-299],[-326,59,-299],[-325,59,-299],[-324,59,-299],[-324,59,-298],[-323,60,-298],[-323,60,-297],[-323,61,-296],[-322,61,-296],[-321,61,-296]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 EASTsmall3 rejected BEFOREcuts: eastneighbor(-314,61,-427)AIR. No second identical retry. Changed approach flat fullrock planner found retrace33 toz-394 then E41/N22 detour, endpoint13m frombrick; ~70newcuts. Small actualturn test33old+3new next. P4 ant
+p1: icipate receipt atz-394 branch, not old427front.
+p1: P1 bounded36 ROCK proposal: retrace33 then newE3 actualturn test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+p2: P2 retained pearl1 FULL shaft74,67,115 near surface70. Corrected exit/return #2161 passed; useful roundtrip #2171 retained3newlogs plus pearl1. Returning camp to BANK first pearl in existing lower chest7,67,82; will verify container delta, no structural ca
+p2: mp changes. Next stock source surface hunt, review19:10.
+--- p4 now: (-320.5, 58, -295.5) in the_nether, health 20/20, food 20/20, alive

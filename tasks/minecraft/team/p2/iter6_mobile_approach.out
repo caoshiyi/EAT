@@ -1,0 +1,50 @@
+program #2252 on p2: 25.1 s
+--- output ---
+SURFACE_FOES []
+SURFACE_ACTUAL Vec3 { x: 32.52595129377809, y: 69, z: 104.5 } 20 20 TIME 22493 PEARL []
+LOGS [
+  Vec3 { x: 35, y: 69, z: 105 },
+  Vec3 { x: 35, y: 70, z: 105 },
+  Vec3 { x: 35, y: 71, z: 105 },
+  Vec3 { x: 32, y: 69, z: 100 },
+  Vec3 { x: 32, y: 70, z: 100 },
+  Vec3 { x: 35, y: 72, z: 105 },
+  Vec3 { x: 32, y: 71, z: 100 },
+  Vec3 { x: 36, y: 69, z: 102 },
+  Vec3 { x: 36, y: 70, z: 102 },
+  Vec3 { x: 36, y: 71, z: 102 },
+  Vec3 { x: 32, y: 72, z: 100 },
+  Vec3 { x: 35, y: 73, z: 105 }
+]
+ENDERS []
+FINAL Vec3 { x: 32.52595129377809, y: 69, z: 104.5 } 20 20 ROOF true FLOOR true LOST false PEARLS []
+MOBILE_LOG_RECEIPT 0 3
+MOBILE_TARGET undefined undefined BODY Vec3 { x: 35.320790492641585, y: 69, z: 105.51367902175376 } TIME 22733
+MOBILE_RETAINED Vec3 { x: 39.4372831556294, y: 63, z: 127.36211695087005 } 20 20
+MOBILE_TARGET 8438 Vec3 { x: 80.28012071279367, y: 66, z: 231.26777870465406 } BODY Vec3 { x: 39.4372831556294, y: 63, z: 127.36211695087005 } TIME 22873
+MOBILE_ISSUE The goal was changed before it could be completed!
+MOBILE_ENDING_ISSUE noarrival 40,62,128 (40.6919596355112, 63, 128.24446739357492)
+MOBILE_FINAL Vec3 { x: 40.6919596355112, y: 63, z: 128.24446739357492 } 20 20 REFUGE false DEAD false TARGET undefined KIT [
+  [ 'coal', 7, null ],
+  [ 'moss_block', 1, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'diamond_sword', 1, 34 ],
+  [ 'crafting_table', 1, null ],
+  [ 'spruce_planks', 14, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'stone_pickaxe', 1, 110 ],
+  [ 'wooden_pickaxe', 1, 43 ],
+  [ 'torch', 4, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 #2242 retained38steps to225 surface(-67,63,-141), buried(-67,60,-141)FULL20HP/19food, GOLD5/boots retained. No GHAST_COVER_ACCEPT lines: scopednewbranch UNEXERCISED, ghast moved outside threshold; no guardproof claimed. Next actual contact attempt towar
+p3: d NetherWastes; firstbarter19:18 budget likelymiss, no newgoldquota. P2: sampled nearerbiomes allbasalt; no warped/endermen observed.
+p1: P1 observedACTUAL cap356restored; continuecourier, waitingforactualreceipt.
+p4: P4 CAP356 RESTORED both61/62 afterentry, P1 boundarywhole again. Courierwalking existingcorridortoyou now; no floorcuts/caps inside.
+p4: P1 handoff2251 sentiron+2stone+48neth; actualaftergiver stillIRON1 (selfrecollected), stone3->1,neth61->13. YourinventorygainNOTyetobserved bystatus. Grounditemsnearourcornerneedactualpickup; pleaseperformownrecipientstep toward(-267.5,61,-414.33)afterhold
+p4: , verifygainsbeforecounting. Iretainironandwillretossfromclearstraightcorridor afterpositioncorrected.
+p4: CORRECTION fresh#2253: ALLparcels selfrecollected after2251 delay; giverbacktoIRON1/STONE3/NETH61, dropsNONE, recipient0. No lostitems/transfer. Corner throw failedphysicalreach, not pendinggroundpile. Need straightadjacent geometry. Iwillstepinto(-267,61,
+p4: -415), directlySOUTHofyou(-267,61,-416), standcenterthenretoss; youstayputbriefly/verifyownactualdelta.
+--- p2 now: (40.7, 63, 128.2) in overworld, health 20/20, food 20/20, alive

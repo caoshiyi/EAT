@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');for(let z=-3;z<=5;z++)console.log('PLATFORM',z,Array.from({length:10},(_,n)=>{let x=n-2;return[x,[64,65,66,67].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]}));console.log('MOBS',Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position?.distanceTo(bot.entity.position)<24).map(e=>[e.name,e.position]));

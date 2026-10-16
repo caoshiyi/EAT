@@ -1,0 +1,107 @@
+program #2120 on p3: 19.8 s
+--- output ---
+ACTUAL Vec3 { x: -28, y: 63, z: -43 }
+ACTUAL Vec3 { x: -29, y: 63, z: -43 }
+ACTUAL Vec3 { x: -29, y: 63, z: -44 }
+ACTUAL Vec3 { x: -29, y: 63, z: -45 }
+ACTUAL Vec3 { x: -29, y: 63, z: -46 }
+ACTUAL Vec3 { x: -29, y: 63, z: -47 }
+ACTUAL Vec3 { x: -29, y: 63, z: -48 }
+ACTUAL Vec3 { x: -29, y: 63, z: -49 }
+ACTUAL Vec3 { x: -29, y: 63, z: -50 }
+ACTUAL Vec3 { x: -29, y: 63, z: -51 }
+ACTUAL Vec3 { x: -29, y: 63, z: -52 }
+ACTUAL Vec3 { x: -29, y: 63, z: -53 }
+ACTUAL Vec3 { x: -29, y: 63, z: -54 }
+ACTUAL Vec3 { x: -29, y: 63, z: -55 }
+ACTUAL Vec3 { x: -29, y: 63, z: -56 }
+ACTUAL Vec3 { x: -29, y: 63, z: -57 }
+ACTUAL Vec3 { x: -29, y: 63, z: -58 }
+ACTUAL Vec3 { x: -29, y: 63, z: -59 }
+ACTUAL Vec3 { x: -29, y: 63, z: -60 }
+ACTUAL Vec3 { x: -29, y: 63, z: -61 }
+ACTUAL Vec3 { x: -29, y: 63, z: -62 }
+ACTUAL Vec3 { x: -29, y: 63, z: -63 }
+ACTUAL Vec3 { x: -29, y: 63, z: -64 }
+ACTUAL Vec3 { x: -29, y: 63, z: -65 }
+ACTUAL Vec3 { x: -29, y: 63, z: -66 }
+ACTUAL Vec3 { x: -29, y: 63, z: -67 }
+ACTUAL Vec3 { x: -29, y: 63, z: -68 }
+ACTUAL Vec3 { x: -29, y: 63, z: -69 }
+ACTUAL Vec3 { x: -30, y: 63, z: -69 }
+ACTUAL Vec3 { x: -31, y: 63, z: -69 }
+ACTUAL Vec3 { x: -30, y: 63, z: -69 }
+TRAIL_ISSUE Server refused to place block at (-29, 64, -69): the block is still air
+ACTUAL Vec3 { x: -30, y: 63, z: -69 }
+ACTUAL Vec3 { x: -31, y: 63, z: -69 }
+ACTUAL Vec3 { x: -30, y: 63, z: -69 }
+RECOVERY_FAILED NOT_ARRIVED (-29, 63, -69)
+--- returned ---
+{
+ "issue": "Server refused to place block at (-29, 64, -69): the block is still air",
+ "lost": false,
+ "p": {
+  "x": -29.667708818249192,
+  "y": 63,
+  "z": -68.49999994780214
+ },
+ "hp": 20,
+ "sealed": false,
+ "inventory": [
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   45
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   48
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 #2118 windowtest zero swings/hits/deaths; actualrecap FULL20/20. Blockingcube363 nowY56 east(-184,-182), awayfromwestwardroute. Changedworldcondition supports bounded8 crossing retry with sameadmission, no thresholds relaxed. Otherguard can stillreject.
+p4:  Delivery remains pending.
+p1: P1 bounded16 continuous rock corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p3 now: (-29.7, 63, -68.5) in the_nether, health 20/20, food 20/20, alive

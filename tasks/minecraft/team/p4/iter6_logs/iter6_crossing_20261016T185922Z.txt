@@ -1,0 +1,19 @@
+program #2143 on p4: 12.8 s
+--- output ---
+BURIED_TRAIL_ADMISSION 521 528 54 42
+SHAFT_TOP_CAP_PROFILE_VERIFIED
+SHAFT_UP_ACTUAL 522 (-272, 65, -231) 20
+SHAFT_UP_ACTUAL 523 (-272, 66, -231) 20
+SHAFT_UP_ACTUAL 524 (-272, 67, -231) 20
+SHAFT_UP_ACTUAL 525 (-272, 68, -231) 20
+SHAFT_UP_ACTUAL 526 (-272, 69, -231) 20
+SHAFT_UP_ACTUAL 527 (-272, 70, -231) 20
+SHAFT_UP_ACTUAL 528 (-272, 71, -231) 20
+PLACED_ACTUAL Vec3 { x: -272, y: 70, z: -231 } netherrack
+BURIAL_VERIFIED (-272, 71, -231) (-272, 68, -231) RESTORED_ROUTE_FLOOR netherrack
+TRAIL_END {"issue":null,"dead":false,"lost":false,"protectedEnd":true,"endpoint":"buried-(-272, 71, -231)","index":528,"attempted":528,"actualSteps":7,"dim":"the_nether","p":{"x":-271.5,"y":68,"z":-230.50000187912661},"hp":20,"food":20,"sealed":true,"inventory":[["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["netherrack",54,null],["stone_pickaxe",1,70],["stone_pickaxe",1,70],["stone_axe",1,12],["stone_pickaxe",1,70],["iron_pickaxe",1,1],["spruce_sapling",2,null],["crafting_table",1,null]],"offhand":"shield","offhandWear":0,"buried":{"surface":[-272,71,-231],"foot":[-272,68,-231]},"surface":[-272,71,-231],"trace":[[-272,64,-231],[-272,65,-231],[-272,66,-231],[-272,67,-231],[-272,68,-231],[-272,69,-231],[-272,70,-231],[-272,71,-231]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-271.5, 68, -230.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,25 @@
+program #2357 on p2: 4 s
+--- output ---
+CAVE_START [ 56, 65, 82 ] DIR 1 0 LIMIT 1
+CUT_ACTUAL (57, 66, 82) dirt
+CUT_ACTUAL (57, 65, 82) dirt
+ARRIVAL_ACTUAL [ 57, 65, 82 ] (57.38648788335738, 65, 82.50187009352153)
+CAVE_ROOM_FULL {"feet":[57,65,82],"back":[56,65,82],"steps":[],"time":1792180384881} 20 20
+STEP_DONE 1 (57.39127295252126, 65, 82.50187009352153) 20 TOOLS [ [ 'wooden_pickaxe', 14 ] ]
+CAVE_FINAL [ 57, 65, 82 ] (57.39127295252126, 65, 82.50187009352153) 20 20 dead false fullshell true steps 1 phase DONE INV [
+  [ 'crafting_table', 1, null ],
+  [ 'sweet_berries', 1, null ],
+  [ 'dirt', 2, null ],
+  [ 'stick', 2, null ],
+  [ 'spruce_planks', 21, null ],
+  [ 'diamond_sword', 1, 37 ],
+  [ 'coal', 7, null ],
+  [ 'wooden_pickaxe', 1, 14 ],
+  [ 'spider_eye', 1, null ],
+  [ 'string', 1, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (57.4, 65, 82.5) in overworld, health 20/20, food 20/20, alive

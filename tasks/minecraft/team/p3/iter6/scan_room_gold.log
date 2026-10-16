@@ -1,0 +1,144 @@
+program #2101 on p3: 0.2 s
+--- output ---
+POINT [ -5, 65, -14 ]
+LAYER -1 [
+  [ 'blackstone', 'air', 'air' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 0 [
+  [ 'air', 'air', 'air' ],
+  [ 'air', 'air', 'basalt' ],
+  [ 'basalt', 'air', 'cobblestone' ]
+]
+LAYER 1 [
+  [ 'air', 'air', 'air' ],
+  [ 'air', 'air', 'basalt' ],
+  [ 'basalt', 'air', 'cobblestone' ]
+]
+LAYER 2 [
+  [ 'air', 'air', 'air' ],
+  [ 'air', 'air', 'basalt' ],
+  [ 'basalt', 'cobblestone', 'air' ]
+]
+POINT [ -29, 63, -42 ]
+LAYER -1 [
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'netherrack', 'netherrack', 'basalt' ]
+]
+LAYER 0 [
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'air', 'air', 'air' ],
+  [ 'netherrack', 'basalt', 'basalt' ]
+]
+LAYER 1 [
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'air', 'air', 'air' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 2 [
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+POINT [ -29, 63, -43 ]
+LAYER -1 [
+  [ 'netherrack', 'netherrack', 'netherrack' ],
+  [ 'netherrack', 'netherrack', 'netherrack' ],
+  [ 'netherrack', 'netherrack', 'netherrack' ]
+]
+LAYER 0 [
+  [ 'netherrack', 'netherrack', 'netherrack' ],
+  [ 'air', 'air', 'air' ],
+  [ 'netherrack', 'netherrack', 'basalt' ]
+]
+LAYER 1 [
+  [ 'basalt', 'netherrack', 'netherrack' ],
+  [ 'air', 'air', 'air' ],
+  [ 'netherrack', 'basalt', 'basalt' ]
+]
+LAYER 2 [
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+POINT [ -27, 64, -43 ]
+LAYER -1 [
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'netherrack', 'netherrack', 'netherrack' ],
+  [ 'basalt', 'netherrack', 'netherrack' ]
+]
+LAYER 0 [
+  [ 'netherrack', 'basalt', 'basalt' ],
+  [ 'basalt', 'nether_gold_ore', 'basalt' ],
+  [ 'basalt', 'basalt', 'netherrack' ]
+]
+LAYER 1 [
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 2 [
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+POINT [ -8, 48, -30 ]
+LAYER -1 [
+  [ 'netherrack', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 0 [
+  [ 'nether_gold_ore', 'nether_gold_ore', 'basalt' ],
+  [ 'nether_gold_ore', 'nether_gold_ore', 'netherrack' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 1 [
+  [ 'netherrack', 'basalt', 'basalt' ],
+  [ 'netherrack', 'netherrack', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+LAYER 2 [
+  [ 'basalt', 'basalt', 'basalt' ],
+  [ 'netherrack', 'basalt', 'basalt' ],
+  [ 'basalt', 'basalt', 'basalt' ]
+]
+GOLD [
+  Vec3 { x: -8, y: 48, z: -30 },
+  Vec3 { x: -9, y: 48, z: -30 },
+  Vec3 { x: -8, y: 48, z: -31 },
+  Vec3 { x: -9, y: 48, z: -31 },
+  Vec3 { x: -18, y: 62, z: -41 },
+  Vec3 { x: -30, y: 71, z: -34 },
+  Vec3 { x: -27, y: 64, z: -43 },
+  Vec3 { x: -33, y: 79, z: -39 },
+  Vec3 { x: 4, y: 111, z: -27 },
+  Vec3 { x: -47, y: 87, z: -20 },
+  Vec3 { x: -1, y: 49, z: -60 },
+  Vec3 { x: -47, y: 87, z: -21 },
+  Vec3 { x: -50, y: 68, z: -31 },
+  Vec3 { x: -1, y: 48, z: -60 },
+  Vec3 { x: -47, y: 88, z: -20 },
+  Vec3 { x: -47, y: 88, z: -21 },
+  Vec3 { x: -50, y: 67, z: -32 },
+  Vec3 { x: -48, y: 87, z: -20 },
+  Vec3 { x: -48, y: 87, z: -21 },
+  Vec3 { x: -48, y: 88, z: -20 },
+  Vec3 { x: -51, y: 69, z: -31 },
+  Vec3 { x: -48, y: 88, z: -21 },
+  Vec3 { x: -8, y: 114, z: -26 },
+  Vec3 { x: -2, y: 116, z: -16 },
+  Vec3 { x: -2, y: 116, z: -17 },
+  Vec3 { x: -9, y: 115, z: -26 },
+  Vec3 { x: -2, y: 117, z: -16 },
+  Vec3 { x: -2, y: 117, z: -17 },
+  Vec3 { x: 13, y: 66, z: -64 },
+  Vec3 { x: 14, y: 66, z: -64 }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-3.5, 65, -13.5) in the_nether, health 20/20, food 20/20, alive

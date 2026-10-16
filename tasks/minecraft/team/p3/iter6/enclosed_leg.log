@@ -1,0 +1,134 @@
+program #2153 on p3: 28.8 s
+--- output ---
+MINED_STEP (-30, 60, -70)
+MINED_STEP (-31, 59, -70)
+MINED_STEP (-32, 58, -70)
+MINED_STEP (-33, 57, -70)
+MINED_STEP (-34, 57, -70)
+MINED_STEP (-35, 57, -70)
+MINED_STEP (-36, 57, -70)
+MINED_STEP (-37, 57, -70)
+MINED_STEP (-38, 57, -70)
+MINED_STEP (-39, 57, -70)
+MINED_STEP (-40, 57, -70)
+MINED_STEP (-41, 57, -70)
+MINED_STEP (-42, 57, -70)
+--- returned ---
+{
+ "issue": null,
+ "done": 13,
+ "lost": false,
+ "protectedHull": true,
+ "p": {
+  "x": -41.5,
+  "y": 57,
+  "z": -69.50037638728844
+ },
+ "hp": 20,
+ "food": 20,
+ "hull": {
+  "cells": [
+   "-30,62,-70",
+   "-30,63,-70",
+   "-30,61,-70",
+   "-30,60,-70",
+   "-31,61,-70",
+   "-31,60,-70",
+   "-31,59,-70",
+   "-32,60,-70",
+   "-32,59,-70",
+   "-32,58,-70",
+   "-33,59,-70",
+   "-33,58,-70",
+   "-33,57,-70",
+   "-34,58,-70",
+   "-34,57,-70",
+   "-35,58,-70",
+   "-35,57,-70",
+   "-36,58,-70",
+   "-36,57,-70",
+   "-37,58,-70",
+   "-37,57,-70",
+   "-38,58,-70",
+   "-38,57,-70",
+   "-39,58,-70",
+   "-39,57,-70",
+   "-40,58,-70",
+   "-40,57,-70",
+   "-41,58,-70",
+   "-41,57,-70",
+   "-42,58,-70",
+   "-42,57,-70"
+  ],
+  "foot": [
+   -42,
+   57,
+   -70
+  ]
+ },
+ "inventory": [
+  [
+   "wooden_pickaxe",
+   1,
+   45
+  ],
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   26,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   84
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   1,
+   null
+  ],
+  [
+   "gold_nugget",
+   20,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-41.5, 57, -69.5) in the_nether, health 20/20, food 20/20, alive

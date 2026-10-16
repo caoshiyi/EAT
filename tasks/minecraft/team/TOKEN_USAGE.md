@@ -31,3 +31,10 @@ Current iter5 completed subset: lead_converter input180622/cached147456/output23
 
 ## 18:41 UTC live checkpoint, iteration5
 Read permitted agent_team/iter_5/*_output.json again. Only acquisition_owner, lead_converter and reliability_builder have completed measured wrappers. Their explicit usage totals remain input563079, cached465536, noncached97543, output6590, input+output569669. Cached input is a subset, not added twice. Current P4 and mission_scientist measurements and full-team total are unavailable; ongoing work is not zero usage. No current team commit association or cost is inferred.
+
+## Iteration6 opening18:56 UTC
+Current permitted agent_team/iter_6 result files enumerated at launch contain prompts/start/timeout metadata, no completed measured output wrappers observed. Current session and whole-team token usage unavailable, not zero. No current commit attribution or extrapolation. Historical partial measurements above remain scoped to their recorded iterations.
+
+2026-10-16T19:36:46.878330+00:00 iteration6 livecheck: permitted agent_team/iter_6/*_output.json containsno completedwrappers; currentplayer/coordinator/whole-teamusageunavailable, notzero. No costextrapolation/commit attribution.
+
+2026-10-16T20:47:50.632216+00:00 Current-run closing check of permitted agent_team/iter_6/*_output.json: 0 completed wrapper files. No measured current-session/team usage is available; unavailable is not zero. No cost or commit attribution invented.

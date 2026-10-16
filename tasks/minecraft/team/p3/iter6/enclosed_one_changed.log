@@ -1,0 +1,78 @@
+program #2146 on p3: 0 s
+--- output ---
+MINE_ISSUE OUTER_BOUNDARY -29,63,-69:air
+--- returned ---
+{
+ "issue": "OUTER_BOUNDARY -29,63,-69:air",
+ "done": 0,
+ "lost": false,
+ "protectedHull": true,
+ "p": {
+  "x": -29.504832883940807,
+  "y": 62,
+  "z": -69.5280516692021
+ },
+ "hp": 20,
+ "food": 20,
+ "hull": {
+  "cells": [
+   "-30,62,-70",
+   "-30,63,-70"
+  ],
+  "foot": [
+   -30,
+   62,
+   -70
+  ]
+ },
+ "inventory": [
+  [
+   "wooden_pickaxe",
+   1,
+   45
+  ],
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   55
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "gold_nugget",
+   20,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-29.5, 62, -69.5) in the_nether, health 20/20, food 20/20, alive

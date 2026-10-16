@@ -1,0 +1,16 @@
+program #2351 on p1: 5.1 s
+--- output ---
+DIG_BUDGET_ACTUAL nether_bricks (-141, 59, -430) 3000
+QUARRY_DESCEND_ACTUAL (-141, 59, -430) 20
+DIG_BUDGET_ACTUAL nether_bricks (-141, 58, -430) 3000
+QUARRY_DESCEND_ACTUAL (-141, 58, -430) 20
+DIG_BUDGET_ACTUAL nether_bricks (-141, 57, -430) 3000
+QUARRY_DESCEND_ACTUAL (-141, 57, -430) 20
+ENCLOSED_ENDPOINT_VERIFIED {"position":{"x":-140.60870630737165,"y":57,"z":-429.5002375831243},"end":[-141,57,-430],"cells":[[-141,57,-430]],"steps":3,"hp":20,"food":19,"mats":7,"issue":null}
+QUARRY_SHAFT_END {"before":[["quartz",7],["sweet_berries",13],["crafting_table",1],["cobblestone_slab",2],["gold_nugget",5],["stone_axe",1],["stone_pickaxe",1],["nether_bricks",3],["blackstone",1],["polished_blackstone",1],["stone_pickaxe",1],["iron_pickaxe",1],["red_mushroom",2]],"after":[["quartz",7,null],["sweet_berries",13,null],["crafting_table",1,null],["cobblestone_slab",2,null],["gold_nugget",5,null],["stone_axe",1,5],["stone_pickaxe",1,100],["nether_bricks",5,null],["blackstone",1,null],["polished_blackstone",1,null],["stone_pickaxe",1,100],["iron_pickaxe",1,37],["red_mushroom",2,null]],"restoredDeck":[-141,59,-430,"nether_bricks"],"fullRoom":true,"p":{"x":-140.60870630737165,"y":57,"z":-429.5002375831243}}
+FINAL (-140.60870630737165, 57, -429.5002375831243) the_nether 20 19 dead false adopted true issue null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-140.6, 57, -429.5) in the_nether, health 20/20, food 19/20, alive

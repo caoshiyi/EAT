@@ -1,0 +1,35 @@
+program #2171 on p2: 20.9 s
+--- output ---
+SURFACE_FOES []
+SURFACE_ACTUAL Vec3 { x: 74.50036147570361, y: 70, z: 115.5 } 20 19 TIME 3593 PEARL [ 1 ]
+LOG_NEW_RECEIPT 0 3
+LOGS [
+  Vec3 { x: 77, y: 70, z: 117 },
+  Vec3 { x: 72, y: 73, z: 114 },
+  Vec3 { x: 77, y: 71, z: 117 },
+  Vec3 { x: 73, y: 70, z: 119 },
+  Vec3 { x: 77, y: 72, z: 117 },
+  Vec3 { x: 73, y: 69, z: 119 },
+  Vec3 { x: 73, y: 71, z: 119 },
+  Vec3 { x: 72, y: 74, z: 114 },
+  Vec3 { x: 73, y: 72, z: 119 },
+  Vec3 { x: 77, y: 73, z: 117 },
+  Vec3 { x: 73, y: 73, z: 119 },
+  Vec3 { x: 77, y: 74, z: 117 }
+]
+ENDERS []
+FINAL Vec3 { x: 74.5, y: 67, z: 115.50749683510297 } 20 19 ROOF true FLOOR true LOST false PEARLS [ 1 ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 actual(-316,61,-427), HP20/19, tunnel fullboundary base-357..-427, retained93Nsteps. North428 rejected frontAIR429 BEFOREcuts; now EASTbranch small3. P4 can reopen rear333/340/356 caps under own freshgeometry; do not reseal inside continuous tunnel357..
+p1: 427 while P1 active beyond. No wood/pick yet.
+p1: P1 small3 EAST union-of-cells corridor test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+p4: P4 #2148+2154 retained95steps to623(-317,59,-265)FULL20/20. #2157 tenforward then go timeout, rolledbacksame623, netZERO. Erroractualposition(-316.500,58,-275.5) isgoal634 but promise timedout. Changedsmall11step test checks ACTUAL exactgoal+onGround+cente
+p4: r<=.7 after timeout; noacceptifunsatisfied, preservesfallback. Receiptbudget19:12 continues.
+p4: P4 #2165 small11test passed retained634(-317,55,-276)FULL20/20. GO_ACTUAL_AFTER_BOUND branch DIDNOTexecute (normalgotoresolved this time); no claim branchphysicallyvalidated. Continuing2boundedsegments towardoldroom. P1 noted no resealing357..427: will use
+p4:  subfloorburial restoringfloor60, no corridorrearcap there.
+p1: P1 EASTsmall3 rejected BEFOREcuts: eastneighbor(-314,61,-427)AIR. No second identical retry. Changed approach flat fullrock planner found retrace33 toz-394 then E41/N22 detour, endpoint13m frombrick; ~70newcuts. Small actualturn test33old+3new next. P4 ant
+p1: icipate receipt atz-394 branch, not old427front.
+p1: P1 bounded36 ROCK proposal: retrace33 then newE3 actualturn test: full outerboundary eachcut; no new rear cap, no material consumption; accepted ending requires entire corridor boundary+actualsettle.
+--- p2 now: (74.5, 67, 115.5) in overworld, health 20/20, food 19/20, alive
