@@ -10,7 +10,9 @@ Reads the world's files, .work/mc/records/ and the bot host's /status on every p
 """
 import argparse
 import json
+import os
 import sys
+import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -41,6 +43,54 @@ def tail_jsonl(name: str, max_bytes: int = 4_000_000) -> list[dict]:
     return out
 
 
+def first_program_time() -> str | None:
+    p = A.RECORDS / "programs.jsonl"
+    try:
+        with open(p) as f:
+            return json.loads(f.readline()).get("time")
+    except (OSError, ValueError):
+        return None
+
+
+CODEX_SESSIONS = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex")) / "sessions"
+_usage = {"at": 0, "data": None}
+
+
+def codex_usage() -> dict | None:
+    """The ChatGPT plan's limits (latest Codex session) and this run's tokens (Codex sessions started in this checkout),
+    re-read at most every 30 s."""
+    if time.time() - _usage["at"] < 30:
+        return _usage["data"]
+    root, run, limits, latest = str(A.ROOT), {"input": 0, "cached": 0, "output": 0, "sessions": 0}, None, 0
+    for f in CODEX_SESSIONS.rglob("rollout-*.jsonl") if CODEX_SESSIONS.exists() else []:
+        mine, total, rl = False, None, None
+        try:
+            for line in open(f, errors="replace"):
+                if '"session_meta"' in line:
+                    mine = json.loads(line).get("payload", {}).get("cwd", "").startswith(root)
+                elif '"token_count"' in line:
+                    info = json.loads(line).get("payload", {})
+                    total = (info.get("info") or {}).get("total_token_usage") or total
+                    rl = info.get("rate_limits") or rl
+        except (OSError, ValueError):
+            continue
+        if rl and f.stat().st_mtime > latest:
+            latest, limits = f.stat().st_mtime, rl
+        if mine and total:
+            run["sessions"] += 1
+            run["input"] += total.get("input_tokens", 0)
+            run["cached"] += total.get("cached_input_tokens", 0)
+            run["output"] += total.get("output_tokens", 0)
+    windows = []
+    for k in ("primary", "secondary"):
+        w = (limits or {}).get(k)
+        if w:
+            windows.append({"minutes": w.get("window_minutes"), "used": w.get("used_percent"), "resets_at": w.get("resets_at")})
+    _usage.update(at=time.time(), data={"plan": (limits or {}).get("plan_type"), "windows": windows, "run": run,
+                                        "as_of": latest or None})
+    return _usage["data"]
+
+
 def build() -> dict:
     ms, deaths = E.milestones(record=False)
     try:
@@ -65,6 +115,8 @@ def build() -> dict:
         "death_counts": deaths,
         "restarts": [e for e in events if e["type"] == "restart"][-10:],
         "programs": sum(1 for p in progs if not p.get("refused")),
+        "start": first_program_time(),
+        "usage": codex_usage(),
     }
 
 
@@ -94,13 +146,17 @@ pre { margin:4px 0 0; background:#f3f4f6; border-radius:6px; padding:6px 8px; fo
       max-height:160px; overflow:auto; white-space:pre-wrap; word-break:break-word; }
 details summary { cursor:pointer; font-size:13px; }
 .err { color:var(--bad); }
+#stairs svg { width:100%; height:auto; display:block; } #stairs text { font-size:10.5px; fill:var(--mute); }
+.bar { height:8px; background:#eceff3; border-radius:4px; overflow:hidden; margin:3px 0 6px; } .bar i { display:block; height:100%; background:var(--acc); }
 @media (max-width: 900px) { main { grid-template-columns:1fr; height:auto; } .views { height:80vh; } }
 </style></head><body>
 <header><h1>Minecraft arena</h1><span id="sum"></span></header>
 <main>
   <section class="views" id="views"></section>
   <aside class="side">
+    <div class="card"><h2>The run, step by step</h2><div id="stairs"></div></div>
     <div class="card"><h2>Milestones</h2><div class="ms" id="ms"></div></div>
+    <div class="card"><h2>Usage (Codex, ChatGPT plan)</h2><div id="usage" class="mute">no Codex usage yet</div></div>
     <div class="card"><h2>Bodies</h2><div id="bodies"></div></div>
     <div class="card chat"><h2>Chat</h2><div id="chat"></div></div>
     <div class="card deaths"><h2>Deaths</h2><div id="deaths"></div></div>
@@ -129,7 +185,45 @@ function views(players, status) {
     v.querySelector('.tag').innerHTML = `<b>${p}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
   });
 }
+const PCOL = {p1:'#1aa1b5', p2:'#8e5bd6', p3:'#e08a1e', p4:'#3f9a4e'};
+function stairs(d) {
+  const W = 400, H = 250, L = 104, R = 10, T = 8, B = 26;
+  const short = n => n.replace(/\s*\(.*\)$/, '').replace(/^Ender Dragon defeated$/, 'dragon');
+  const names = ['bare hands'].concat(d.milestones.map(m => short(m.name)));
+  const t0 = d.start ? Date.parse(d.start) : null;
+  const pts = d.milestones.map((m, i) => m.reached[0] ? {i: i + 1, t: Date.parse(m.reached[0].time), p: m.reached[0].player} : null).filter(Boolean)
+                .sort((a, b) => a.t - b.t);
+  const now = Date.now();
+  const hrs = t0 ? Math.max(1, (now - t0) / 3.6e6) : 1;
+  const step = hrs <= 3 ? 0.5 : hrs <= 8 ? 1 : hrs <= 24 ? 3 : 6;
+  const X = h => L + (W - L - R) * h / (Math.ceil(hrs / step) * step), Y = i => H - B - (H - B - T) * i / (names.length - 1);
+  let g = '';
+  names.forEach((n, i) => g += `<line x1="${L}" x2="${W - R}" y1="${Y(i)}" y2="${Y(i)}" stroke="#eef0f3"/><text x="${L - 6}" y="${Y(i) + 3.5}" text-anchor="end">${esc(n)}</text>`);
+  for (let h = 0; h <= Math.ceil(hrs / step) * step + 1e-9; h += step) g += `<text x="${X(h)}" y="${H - 8}" text-anchor="middle">${h}h</text>`;
+  if (t0) {
+    let level = 0, x = X(0);
+    pts.forEach(q => {
+      const xq = X(Math.max(0, (q.t - t0) / 3.6e6));
+      g += `<line x1="${x}" x2="${xq}" y1="${Y(level)}" y2="${Y(level)}" stroke="#9aa3ae" stroke-width="2"/>`;
+      const top = Math.max(level, q.i);
+      g += `<line x1="${xq}" x2="${xq}" y1="${Y(level)}" y2="${Y(top)}" stroke="${PCOL[q.p] || '#555'}" stroke-width="2.5"/><circle cx="${xq}" cy="${Y(q.i)}" r="3.5" fill="${PCOL[q.p] || '#555'}"><title>${esc(names[q.i])}: ${esc(q.p)} at +${((q.t - t0) / 3.6e6).toFixed(2)}h</title></circle>`;
+      level = top; x = xq;
+    });
+    g += `<line x1="${x}" x2="${X(hrs)}" y1="${Y(level)}" y2="${Y(level)}" stroke="#9aa3ae" stroke-width="2" stroke-dasharray="3 3"/>`;
+  }
+  const legend = Object.entries(PCOL).map(([p, c]) => `<span style="color:${c}">● ${p}</span>`).join(' &nbsp;');
+  document.getElementById('stairs').innerHTML = `<svg viewBox="0 0 ${W} ${H}">${g}</svg><div style="font-size:12px">${legend} <span class="mute">· hours since the first program; each step coloured by who reached it first</span></div>`;
+}
+function usage(u) {
+  if (!u || (!u.windows.length && !u.run.sessions)) return;
+  const win = m => m >= 10080 ? 'weekly' : m >= 300 ? (m / 60) + '-hour' : m + '-min';
+  const rows = u.windows.map(w => `<div>${win(w.minutes)} limit: <b>${w.used}%</b> used <span class="mute">· resets ${t(new Date(w.resets_at * 1000))}</span></div><div class="bar"><i style="width:${Math.min(100, w.used)}%"></i></div>`).join('');
+  const k = n => n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e3 ? (n / 1e3).toFixed(0) + 'k' : n;
+  const r = u.run;
+  document.getElementById('usage').innerHTML = `${u.plan ? '<div class="mute">plan: ' + esc(u.plan) + '</div>' : ''}${rows}<div>this run: ${k(r.input)} input tokens (${r.input ? Math.round(100 * r.cached / r.input) : 0}% cached), ${k(r.output)} output, ${r.sessions} Codex sessions</div>${u.as_of ? '<div class="mute">limits as of ' + t(new Date(u.as_of * 1000)) + '</div>' : ''}`;
+}
 function render(d) {
+  stairs(d); usage(d.usage);
   const st = d.status;
   views(d.players, st);
   const n = d.milestones.filter(m => m.reached.length).length;
