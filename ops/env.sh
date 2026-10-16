@@ -9,3 +9,6 @@ export EAT_LOG="${EAT_LOG:-$EAT_WORK/eat_$EAT_TASK.log}"     # tee target of lau
 export EAT_SESSION="${EAT_SESSION:-eat_$EAT_TASK}"           # tmux session prefix of the run
 export EAT_GPUS="${EAT_GPUS:-0}"                             # GPUs the run may use, in preference order (HIP/CUDA numbering)
 mkdir -p "$EAT_WORK" "$EAT_CACHE"
+# Agent CLI: claude (default), or Codex through its claude-compatible wrapper (log in once with `codex login`):
+#   export EAT_AGENT_CLI="$EAT_ROOT/agent_team/codex_cli.py" EAT_MODEL=<codex model>
+export EAT_AGENT_CLI="${EAT_AGENT_CLI:-claude}"

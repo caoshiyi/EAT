@@ -8,7 +8,7 @@
 # Environment: CR_SESSION_ID (a persistent session: resumed if its transcript exists, else created with that id),
 #   CR_DEADLINE (epoch seconds: the call is stopped then, with every process it started, and not retried -- a team's
 #   wall-clock limit), EAT_CLAUDE_SETTINGS (passed as --settings to every call, e.g. this run's own memory directory),
-#   CR_NO_NOTE=1 (never add the note: the supervisor's turns), CLAUDE_RETRY_WAIT (seconds between tries after a limit, default 300), CLAUDE_RETRY_ERRORS (default 3).
+#   CR_NO_NOTE=1 (never add the note: the supervisor's turns), EAT_AGENT_CLI (the agent CLI: claude, or agent_team/codex_cli.py for Codex), CLAUDE_RETRY_WAIT (seconds between tries after a limit, default 300), CLAUDE_RETRY_ERRORS (default 3).
 set -uo pipefail
 PROMPT_FILE="$1"; OUT="$2"; ERRLOG="$3"; RESTARTED="$4"; shift 5
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -39,7 +39,7 @@ while :; do
     fi
     SESSION_ARGS=()
     if [ -n "${CR_SESSION_ID:-}" ]; then
-        if compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/${CR_SESSION_ID}.jsonl" > /dev/null; then
+        if bash "$HERE/session_exists.sh" "$CR_SESSION_ID"; then
             SESSION_ARGS=(--resume "$CR_SESSION_ID")
         else
             SESSION_ARGS=(--session-id "$CR_SESSION_ID")
@@ -50,7 +50,7 @@ while :; do
     else
         cp "$PROMPT_FILE" "$OUT.prompt"
     fi
-    run_call claude --print "$@" "${EXTRA[@]}" "${SESSION_ARGS[@]}" < "$OUT.prompt" > "$OUT.try" 2> "$OUT.err"
+    run_call "${EAT_AGENT_CLI:-claude}" --print "$@" "${EXTRA[@]}" "${SESSION_ARGS[@]}" < "$OUT.prompt" > "$OUT.try" 2> "$OUT.err"
     rc=$?
     rm -f "$OUT.prompt"
     if [ "$rc" = 124 ] && [ -n "${CR_DEADLINE:-}" ]; then

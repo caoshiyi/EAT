@@ -64,7 +64,8 @@ launch_agent() {
 
     echo "[launch_team] Starting agent: $ROLE$([ "$RESTARTED" = 1 ] && echo ' (restarted)')" >&2
     # Prompt goes through stdin: argv breaks on prompts starting with '-' and on >128KB prompts
-    CR_DEADLINE="$TEAM_DEADLINE" "${LIMIT[@]}" bash "$SCRIPT_DIR/claude_retry.sh" "$PROMPT_FILE" "$AGENT_OUTPUT" "$ITER_DIR/${ROLE}_stderr.txt" "$RESTARTED" -- \
+    # EAT_ROLE / EAT_ITER: who is acting, for environments that hold each role to its own resources (e.g. one body each)
+    EAT_ROLE="$ROLE" EAT_ITER="$ITER" CR_DEADLINE="$TEAM_DEADLINE" "${LIMIT[@]}" bash "$SCRIPT_DIR/claude_retry.sh" "$PROMPT_FILE" "$AGENT_OUTPUT" "$ITER_DIR/${ROLE}_stderr.txt" "$RESTARTED" -- \
         "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"}
     echo "[launch_team] Agent '$ROLE' finished (exit $?)." >&2
 }

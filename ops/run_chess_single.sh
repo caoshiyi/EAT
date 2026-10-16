@@ -25,10 +25,10 @@ n=$(ls "$LOG"/call_*.json 2>/dev/null | wc -l); n=$((n + 1))
 echo "[single] $(date -u +%H:%M:%SZ) call $n, session $SID: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"
 # the game clock (runs with one) is running only while the session is; a stop that was missed is repaired by `resume`
 CHESS_HARNESS=1 "$EAT_VENV/bin/python" tools/chess_arena.py clock resume > /dev/null
-if compgen -G "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/projects/*/$SID.jsonl" > /dev/null; then
-    claude "${ARGS[@]}" --resume "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
+if bash "$ROOT/agent_team/session_exists.sh" "$SID"; then
+    "${EAT_AGENT_CLI:-claude}" "${ARGS[@]}" --resume "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 else
-    claude "${ARGS[@]}" --session-id "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
+    "${EAT_AGENT_CLI:-claude}" "${ARGS[@]}" --session-id "$SID" < "$LOG/prompt.txt" > "$LOG/call_$n.json" 2>> "$LOG/stderr.log"
 fi
 CHESS_HARNESS=1 "$EAT_VENV/bin/python" tools/chess_arena.py clock pause > /dev/null
 echo "[single] $(date -u +%H:%M:%SZ) session ended: $("$EAT_VENV/bin/python" tools/chess_arena.py status | head -1)"

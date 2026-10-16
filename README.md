@@ -59,6 +59,14 @@ tmux new-session -d -s ${EAT_SESSION}1 \
 Arguments: mode, task, max iterations, max team size, budget in dollars, first iteration. Each iteration leaves
 `agent_team/iter_<n>/` (team config, every agent's prompt and output, the official eval) and a commit
 `iter <n>: task=... cost=... score=...`; `agent_team/BUDGET.md` accumulates cost and score.
+### Codex agents
+
+The same harness drives OpenAI Codex: `agent_team/codex_cli.py` takes the arguments the harness gives `claude
+--print` and runs `codex exec` (sessions, model, read-only supervisor, web search off for clean runs), so nothing
+else changes. Log in once with `codex login`, then
+`export EAT_AGENT_CLI=$EAT_ROOT/agent_team/codex_cli.py EAT_MODEL=<codex model>` before launching. Costs are
+estimated from token counts and `CODEX_PRICE_INPUT/CACHED/OUTPUT` ($ per million tokens).
+
 Agents run with `--dangerously-skip-permissions`: run on a machine (or in `cleanroom/sandbox.sh`) where that is acceptable.
 
 ### The chess task
