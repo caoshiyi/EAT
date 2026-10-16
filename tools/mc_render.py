@@ -218,8 +218,9 @@ def clear(blocks: anvil.Blocks, a: tuple, b: tuple, skip: tuple = ()) -> bool:
 
 def camera(blocks: anvil.Blocks, b: dict) -> tuple[tuple, tuple]:
     """A third-person camera: behind and above the body (its saved facing), else the first spot around it with a clear
-    view of its head. A body shut in (a hut, a tunnel) is shot from above with everything from two blocks over its feet
-    up cut away (sets blocks.clip), else from close in. Returns (camera position, the point it looks at)."""
+    view of its head. A body shut in (a hut, a cave, deep underground) is shot from above with everything from two
+    blocks over its feet up cut away (sets blocks.clip): the sun then lights it. Returns (camera position, the point it
+    looks at); the camera is always in air."""
     eye = (b["x"], b["y"] + 1.5, b["z"])
     x, y, z = (math.floor(b[k]) for k in "xyz")
     own = ((x, y, z), (x, y + 1, z))
@@ -233,18 +234,14 @@ def camera(blocks: anvil.Blocks, b: dict) -> tuple[tuple, tuple]:
                     return cam, (eye[0], eye[1] - 0.4, eye[2])
         return None
 
-    found = around(((6, 3.5), (5, 2.5), (4, 1.5), (3, 1.0)))
+    # underground or shut in (little sky reaches the head) the inside is near black: always the sunlit cutaway
+    found = around(((6, 3.5), (5, 2.5), (4, 1.5), (3, 1.0))) if sky_open(blocks, b) >= 0.15 else None
     if found:
         return found
     blocks.clip = math.floor(b["y"]) + 2
     found = around(((4, 6), (3, 7), (2, 8)))
-    if found:
-        return found
-    blocks.clip = None
-    found = around(((2.2, 0.5),))
-    if found:
-        return found
-    return (eye[0], eye[1] + 0.3, eye[2]), (eye[0] - math.sin(math.radians(b["yaw"])), eye[1], eye[2])
+    # straight down into the cutaway: always clear, since everything above the body's head block is clipped
+    return found or ((eye[0] + 0.01, eye[1] + 9, eye[2] + 0.01), (eye[0], eye[1] - 0.5, eye[2]))
 
 
 def sky_open(blocks: anvil.Blocks, b: dict) -> float:
@@ -327,12 +324,17 @@ def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool) -> dict:
          "sky": {"mode": "SIMULATED", "simulatedSky": "Preetham", "horizonOffset": 0.1, "cloudsEnabled": False},
          "actors": actors, "entities": [],
          "renderer": "ChunkyClRenderer" if gpu else "PathTracingRenderer", "previewRenderer": "PreviewRenderer"}
+    # Chunky defaults to the pre-1.18 heights (0..256): without these the overworld below y=0 is not loaded at all
+    lo, hi = (0, 256) if nether or end else (-64, 320)
+    s.update(yClipMin=lo, yMin=lo, yClipMax=hi, yMax=hi)
     if blocks.clip is not None:
-        s["yClipMax"] = blocks.clip   # the cutaway: Chunky loads no blocks from here up
+        s.update(yClipMax=blocks.clip, yMax=blocks.clip)   # the cutaway: Chunky loads no blocks from here up
     if nether or end:
-        s["sky"] = {"mode": "BLACK"}
-        s["sun"] = {"altitude": 1.2, "azimuth": 2.2, "intensity": 0.0, "drawTexture": False}
-        s["exposure"] = 1.6
+        # no daylight there: a dim coloured sky as ambient light, and a faint sun that only reaches into a cutaway
+        s["sky"] = {"mode": "SOLID_COLOR", "color": {"red": 0.35, "green": 0.12, "blue": 0.08} if nether else
+                    {"red": 0.12, "green": 0.08, "blue": 0.2}}
+        s["sun"] = {"altitude": 1.2, "azimuth": 2.2, "intensity": 0.6, "drawTexture": False}
+        s["exposure"] = max(2.0, s["exposure"])
     return s
 
 
