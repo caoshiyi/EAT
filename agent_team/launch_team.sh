@@ -105,6 +105,19 @@ EVAL_CMD="${EVAL_CMD:-python tools/eval_${TASK}.py}"
 echo "[launch_team] Official eval: $EVAL_CMD" >&2
 bash -c "$EVAL_CMD" > "$ITER_DIR/official_eval.txt" 2>&1 || true
 
+# A task's observer (tasks/<task>/observer.md): an independent witness the harness runs after every team, never the
+# supervisor's choice. It checks the team's claims against the records and reports; it cannot write.
+OBSERVER_OUTPUT="$ITER_DIR/harness_observer_output.json"
+if [ -f "tasks/$TASK/observer.md" ] && ! { [ -s "$OBSERVER_OUTPUT" ] && [ "$(python3 "$SCRIPT_DIR/call_status.py" "$OBSERVER_OUTPUT")" = "ok" ]; }; then
+    { cat "tasks/$TASK/observer.md"
+      printf '\n\nIteration %s. The team has finished: its configuration, every agent'"'"'s prompt and output are in %s, the official eval is %s/official_eval.txt.\n' "$ITER" "$ITER_DIR" "$ITER_DIR"
+    } > "$ITER_DIR/harness_observer_prompt.txt"
+    echo "[launch_team] Starting the observer" >&2
+    EAT_ROLE=observer EAT_ITER="$ITER" bash "$SCRIPT_DIR/claude_retry.sh" "$ITER_DIR/harness_observer_prompt.txt" "$OBSERVER_OUTPUT" \
+        "$ITER_DIR/harness_observer_stderr.txt" 0 -- "${MODEL_ARGS[@]}" --dangerously-skip-permissions --output-format json \
+        --disallowedTools "Agent,Write,Edit,NotebookEdit${CLAUDE_EXTRA_DISALLOWED:+,$CLAUDE_EXTRA_DISALLOWED}" || true
+fi
+
 # Sum up costs from all agents
 TEAM_TOTAL_COST=$(python3 -c "
 import json, glob
@@ -134,6 +147,12 @@ echo "[launch_team] Team cost for iteration $ITER: \$$TEAM_TOTAL_COST" >&2
     echo "## Current Score (official eval run by the harness after the team finished)"
     tail -25 "$ITER_DIR/official_eval.txt"
     echo ""
+
+    if [ -s "$OBSERVER_OUTPUT" ]; then
+        echo "## Observer report (independent witness run by the harness; not part of the team)"
+        python3 "$SCRIPT_DIR/extract_result.py" "$OBSERVER_OUTPUT" 2>/dev/null | tail -80 || echo "(parse error)"
+        echo ""
+    fi
 
     if [ -f "$SCRIPT_DIR/OPERATOR_NOTES.md" ]; then
         cat "$SCRIPT_DIR/OPERATOR_NOTES.md"
