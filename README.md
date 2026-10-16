@@ -109,6 +109,15 @@ python3 tools/eval_minecraft.py --audit
 python3 tools/mc_viewer.py --port 17779          # live page: the four bodies' views, milestones, chat, deaths, programs
 ```
 
+Delayed, realistic renders from the saved world (read-only), shown on the same page (a "Map" tab, a "Rendered" card):
+
+```bash
+bash tools/mc_render/setup.sh [--pixel-perfection]   # pinned BlueMap, Chunky + OpenCL plugin, client jar (sha-checked)
+python3 tools/mc_render.py map --every 300           # BlueMap web map, incremental, bodies as markers
+python3 tools/mc_render.py shots --every 300         # a path-traced (GPU) third-person shot of each body per cycle
+python3 tools/mc_render.py timelapse --player p1     # the kept shots as an mp4
+```
+
 ### Clean-room runs
 
 To show that a result was not copied from code released after a cutoff, run the whole loop inside
