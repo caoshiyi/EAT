@@ -11,6 +11,8 @@ Reads the world's files, .work/mc/records/ and the bot host's /status on every p
 import argparse
 import json
 import os
+import select
+import socket
 import sys
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -172,10 +174,9 @@ function views(players, status) {
   const box = document.getElementById('views');
   players.forEach((p, i) => {
     let v = document.getElementById('v-' + p);
-    const port = 3001 + i;
     if (!v) {
       v = document.createElement('div'); v.className = 'view'; v.id = 'v-' + p;
-      v.innerHTML = `<iframe src="${location.protocol}//${location.hostname}:${port}/" title="${p}"></iframe><div class="tag"></div>`;
+      v.innerHTML = `<iframe src="view/${p}/" title="${p}"></iframe><div class="tag"></div>`;
       box.appendChild(v);
     }
     const s = status && status[p];
@@ -262,8 +263,66 @@ poll();
 """
 
 
+def proxy(h, port: int, path: str):
+    """Pass one request to a body's view on 127.0.0.1:port (only the viewer's own port is reachable from outside),
+    websocket upgrades included: socket.io connects at the page's path + socket.io, so the views work under /view/pN/."""
+    h.close_connection = True
+    try:
+        up = socket.create_connection(("127.0.0.1", port), timeout=10)
+    except OSError:
+        h.send_error(502, "view not running")
+        return
+    ws = h.headers.get("Upgrade", "").lower() == "websocket"
+    head = [f"{h.command} {path} HTTP/1.1"]
+    for k, v in h.headers.items():
+        if k.lower() not in ("connection", "keep-alive", "proxy-connection") or ws:
+            head.append(f"{k}: {v}")
+    if not ws:
+        head.append("Connection: close")
+    body = h.rfile.read(int(h.headers.get("Content-Length") or 0))
+    up.sendall(("\r\n".join(head) + "\r\n\r\n").encode() + body)
+    up.settimeout(None)
+    client = h.connection
+    conns = [client, up] if ws else [up]
+    while True:
+        r, _, _ = select.select(conns, [], [], 300)
+        if not r:
+            break
+        done = False
+        for c in r:
+            try:
+                data = c.recv(65536)
+            except OSError:
+                data = b""
+            if not data:
+                done = True
+                break
+            (up if c is client else client).sendall(data)
+        if done:
+            break
+    up.close()
+
+
 class Handler(BaseHTTPRequestHandler):
+    def route_view(self) -> bool:
+        parts = self.path.split("/", 3)   # '', 'view', 'p1', rest
+        if len(parts) < 3 or parts[1] != "view" or parts[2] not in A.PLAYERS:
+            return False
+        if len(parts) == 3:
+            self.send_response(301)
+            self.send_header("Location", self.path + "/")
+            self.end_headers()
+            return True
+        proxy(self, 3001 + list(A.PLAYERS).index(parts[2]), "/" + parts[3])
+        return True
+
+    def do_POST(self):
+        if not self.route_view():
+            self.send_error(404)
+
     def do_GET(self):
+        if self.route_view():
+            return
         if self.path.split("?")[0] == "/data.json":
             body, ctype = json.dumps(build()).encode(), "application/json"
         elif self.path.split("?")[0] in ("/", "/index.html"):
