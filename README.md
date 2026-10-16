@@ -106,7 +106,7 @@ python3 tools/mc_arena.py up                     # server + bot host (supervised
 python3 tools/mc_arena.py status
 python3 tools/mc_arena.py down                   # save, stop, confirm exited
 python3 tools/eval_minecraft.py --audit
-python3 tools/mc_viewer.py --port 17778          # live page: the four bodies' views, milestones, chat, deaths, programs
+python3 tools/mc_viewer.py --port 17779          # live page: the four bodies' views, milestones, chat, deaths, programs
 ```
 
 ### Clean-room runs

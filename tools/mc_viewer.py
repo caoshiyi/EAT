@@ -3,7 +3,7 @@
 host on ports 3001..3004) in a 2x2 grid, and beside them the milestones, each body's state, the chat, the deaths and
 each player's last program with its output.
 
-    python tools/mc_viewer.py [--port 17778] [--host 0.0.0.0]
+    python tools/mc_viewer.py [--port 17779] [--host 0.0.0.0]
 
 Reads the world's files, .work/mc/records/ and the bot host's /status on every poll and never writes. The page polls
 /data.json every 3 s.
@@ -190,7 +190,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--port", type=int, default=17778)
+    ap.add_argument("--port", type=int, default=17779)
     ap.add_argument("--host", default="0.0.0.0")
     a = ap.parse_args()
     print(f"minecraft viewer on http://{a.host}:{a.port}/", flush=True)
