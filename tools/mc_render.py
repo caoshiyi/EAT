@@ -339,10 +339,14 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None
                        capture_output=True, text=True, timeout=max(600, 4 * a.every))
     secs = time.time() - t0
     out = (r.stdout + r.stderr).replace("\r", "\n")
-    png = scenes / "snapshots" / f"{p}-{target}.png"
-    if r.returncode or not png.exists():
+    # named by the samples actually taken: the CPU renderer may go past the target to finish a pass
+    pngs = sorted((scenes / "snapshots").glob(f"{p}-*.png"), key=lambda f: f.stat().st_mtime)
+    png = pngs[-1] if pngs and pngs[-1].stat().st_mtime >= t0 else None
+    if r.returncode or png is None:
         log(f"{p}: chunky failed ({r.returncode}): " + "\n".join(l for l in out.splitlines() if "%" not in l)[-1500:])
         return None
+    if not gpu:
+        spp = int(png.stem.rsplit("-", 1)[1])
     m = re.search(r"Total rendering time: (\d+) hours, (\d+) minutes, (\d+) seconds", out)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     d = SHOTS / p
