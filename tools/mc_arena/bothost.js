@@ -277,10 +277,45 @@ function writeLocks (locks) {
   fs.writeFileSync(LOCKS + '.tmp', JSON.stringify(locks, null, 1))
   fs.renameSync(LOCKS + '.tmp', LOCKS)
 }
+// Who is asking: the agent process (codex exec / claude --print) nearest above the process that opened the connection.
+// Found from the socket itself, so it cannot be claimed: not by EAT_ROLE, not by a direct HTTP request, not by an agent
+// an agent starts (that one is its own agent). null when no agent is above (a person or the harness).
+function peerAgent (sock) {
+  try {
+    const hex = n => n.toString(16).toUpperCase().padStart(4, '0')
+    let inode = null
+    for (const f of ['/proc/net/tcp', '/proc/net/tcp6']) {
+      for (const line of fs.readFileSync(f, 'utf8').split('\n').slice(1)) {
+        const c = line.trim().split(/\s+/)
+        if (c[1] && c[1].endsWith(':' + hex(sock.remotePort)) && c[2] && c[2].endsWith(':' + hex(sock.localPort))) { inode = c[9]; break }
+      }
+      if (inode) break
+    }
+    if (!inode) return null
+    let pid = null
+    for (const d of fs.readdirSync('/proc')) {
+      if (!/^\d+$/.test(d)) continue
+      try {
+        if (fs.readdirSync(`/proc/${d}/fd`).some(fd => { try { return fs.readlinkSync(`/proc/${d}/fd/${fd}`) === `socket:[${inode}]` } catch (e) { return false } })) { pid = d; break }
+      } catch (e) {}
+    }
+    for (let n = 0; pid && pid !== '1' && n < 64; n++) {
+      const argv = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8').split('\0')
+      const exe = path.basename(argv[0] || '')
+      if ((exe === 'codex' && argv.includes('exec')) || (exe === 'claude' && argv.includes('--print'))) {
+        const start = fs.readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ')[1].split(' ')[19]
+        return `${pid}:${start}`
+      }
+      pid = fs.readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ')[1].split(' ')[1]
+    }
+  } catch (e) {}
+  return null
+}
+
 function ownerName (o) { return `role '${o.role}'` + (o.iter ? ` (iteration ${o.iter})` : '') }
 
 function refuse (req, reason) {
-  append('programs.jsonl', { n: null, time: now(), iteration: req.iter || null, role: req.role, player: req.player,
+  append('programs.jsonl', { n: null, time: now(), iteration: req.iter || null, role: req.role, agent: req.agent || null, player: req.player,
     code: String(req.code ?? ''), refused: reason })
   return { refused: reason }
 }
@@ -290,15 +325,21 @@ async function runProgram (req) {
   if (!body) return { refused: `unknown player '${req.player}' (players: ${PLAYERS.join(', ')})` }
   if (typeof req.code !== 'string' || !req.code.trim()) return refuse(req, 'empty program')
   if (!req.role) return refuse(req, 'no role given (the CLI sends EAT_ROLE)')
-  const me = { role: String(req.role), iter: req.iter ? String(req.iter) : '' }
+  // the lock holds the agent process, not the role name it gives: a name can be set by anyone
+  const me = { role: String(req.role), iter: req.iter ? String(req.iter) : '', agent: req.agent || null }
+  const same = o => o.role === me.role && o.iter === me.iter && (o.agent || null) === me.agent
   const locks = readLocks()
   const held = locks[body.name]
-  if (held && (held.role !== me.role || held.iter !== me.iter)) {
-    return refuse(req, `${body.name} is controlled by ${ownerName(held)} in this iteration; another role may not run programs on it`)
+  if (held && !held.agent && me.agent && held.role === me.role && held.iter === me.iter) {   // a lock from before agents were recorded
+    held.agent = me.agent
+    writeLocks(locks)
+  }
+  if (held && !same(held)) {
+    return refuse(req, `${body.name} is controlled by ${ownerName(held)} in this iteration; no other agent may run programs on it`)
   }
   if (!held) {
-    const other = Object.entries(locks).find(([p, o]) => o.role === me.role && o.iter === me.iter)
-    if (other) return refuse(req, `${ownerName(me)} already controls ${other[0]}; a role controls only one body`)
+    const other = Object.entries(locks).find(([p, o]) => same(o) || (me.agent && o.agent === me.agent))
+    if (other) return refuse(req, `this agent already controls ${other[0]}; an agent controls only one body`)
   }
   if (body.running) {
     const r = body.running
@@ -359,7 +400,7 @@ async function runProgram (req) {
     state: state(body),
     chat: body.chat.splice(0)
   }
-  append('programs.jsonl', { n: prog.n, time: new Date(prog.start).toISOString(), iteration: req.iter || null, role: me.role,
+  append('programs.jsonl', { n: prog.n, time: new Date(prog.start).toISOString(), iteration: req.iter || null, role: me.role, agent: me.agent,
     player: body.name, code: req.code, timeout, duration_s: res.duration_s, timed_out: timedOut, output: res.output,
     return: res.return, error: res.error, background: res.background, state: res.state })
   return res
@@ -455,7 +496,10 @@ const api = http.createServer(async (req, res) => {
       return send(200, { ready: Object.values(spawned).every(Boolean), spawned })
     }
     if (req.method === 'GET' && req.url === '/status') return send(200, status())
-    if (req.method === 'POST' && req.url === '/run') return send(200, await runProgram(await readBody(req)))
+    if (req.method === 'POST' && req.url === '/run') {
+      const agent = peerAgent(req.socket)   // read before the body: the client may close as soon as it has sent it
+      return send(200, await runProgram({ ...(await readBody(req)), agent }))
+    }
     if (req.method === 'POST' && req.url === '/locks/clear') {
       writeLocks({})
       append('events.jsonl', { time: now(), type: 'locks_cleared' })
