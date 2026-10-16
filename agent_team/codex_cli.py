@@ -18,6 +18,7 @@ Codex reads CLAUDE.md as its project instructions, as claude does. The prompt co
 import json
 import os
 import pathlib
+import signal
 import subprocess
 import sys
 
@@ -66,11 +67,15 @@ def main():
                   "--disable", "computer_use"]
     thread = thread_of(a["session"])
     cmd = [CODEX, "exec", "resume", *flags, thread, "-"] if thread else [CODEX, "exec", *flags, "-"]
-    p = subprocess.run(cmd, input=prompt, capture_output=True, text=True)
-    sys.stderr.write(p.stderr)
+    p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+    stopped = []
+    # a stop (the team's time limit) still leaves a result: the agent's last message so far
+    signal.signal(signal.SIGTERM, lambda *_: (stopped.append(1), p.terminate()))
+    p.stdin.write(prompt)
+    p.stdin.close()
 
     last, errors, usage, turns = "", [], {"input_tokens": 0, "cached_input_tokens": 0, "output_tokens": 0}, 0
-    for line in p.stdout.splitlines():
+    for line in p.stdout:
         try:
             e = json.loads(line)
         except ValueError:
@@ -88,14 +93,17 @@ def main():
                 usage[k] += (e.get("usage") or {}).get(k, 0) or 0
         elif t in ("turn.failed", "error"):
             errors.append(str((e.get("error") or {}).get("message") or e.get("message") or e))
+    p.wait()
+    if stopped:
+        errors.insert(0, "Stopped before finishing. Last message so far:\n" + (last or "(none)"))
 
     price = {k: float(os.environ.get(f"CODEX_PRICE_{k.upper()}", 0) or 0) for k in ("input", "cached", "output")}
     cost = ((usage["input_tokens"] - usage["cached_input_tokens"]) * price["input"]
             + usage["cached_input_tokens"] * price["cached"] + usage["output_tokens"] * price["output"]) / 1e6
-    failed = p.returncode != 0 or (errors and not last)
+    failed = bool(stopped) or p.returncode != 0 or (errors and not last)
     print(json.dumps({
         "type": "result", "subtype": "error" if failed else "success", "is_error": bool(failed),
-        "result": ("\n".join(errors) or p.stderr[-2000:]) if failed else last,
+        "result": ("\n".join(errors) or f"codex exited with {p.returncode}") if failed else last,
         "session_id": a["session"] or thread, "codex_thread_id": thread, "num_turns": turns,
         "total_cost_usd": round(cost, 4), "usage": usage}))
     return p.returncode if failed else 0
