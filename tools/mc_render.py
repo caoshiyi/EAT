@@ -344,16 +344,17 @@ def chunky_cmd(target: int, a) -> list[str]:
             + (["-texture", str(PACK)] if a.pack else []))   # the pack over the vanilla textures
 
 
-TARGET_LUMA = 110   # mean 8-bit luma of a well exposed shot
+TARGET_LUMA = 210   # 90th-percentile 8-bit luma of a well exposed shot: bright parts bright, none blown out
 
 
 def brightness(png: Path) -> float:
-    """Mean luma (0..255) of an image, on a downscaled copy."""
+    """90th-percentile luma (0..255) of an image, on a downscaled copy; unlike the mean it does not push a snowfield
+    dark or a cave bright."""
     from PIL import Image
     im = Image.open(png).convert("L")
     im.thumbnail((160, 90))
-    px = list(im.getdata())
-    return sum(px) / len(px)
+    px = sorted(im.tobytes())
+    return float(px[int(len(px) * 0.9)])
 
 
 def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a, retake: bool = True) -> dict | None:
@@ -392,7 +393,7 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a, retake: bool =
     luma = brightness(png)
     nxt = min(6.0, max(0.25, exposure * (TARGET_LUMA / max(luma, 1.0)) ** 0.85))
     (d / "exposure.json").write_text(json.dumps({"exposure": round(nxt, 3), "last_luma": round(luma, 1)}))
-    if retake and not 0.7 < luma / TARGET_LUMA < 1.4:   # far off: take it again now at the corrected exposure
+    if retake and not 0.85 < luma / TARGET_LUMA < 1.12:   # far off: take it again now at the corrected exposure
         log(f"{p}: luma {luma:.0f} at exposure {exposure:.2f}; retaking at {nxt:.2f}")
         png.unlink()
         return shot(p, b, everyone, spp, gpu, a, retake=False)
