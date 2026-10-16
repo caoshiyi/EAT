@@ -337,10 +337,10 @@ poll();
 """
 
 
-# prismarine-viewer 1.33.0 aims its third-person camera at the body once, when the page opens; this makes it follow
-# the body (keeping the viewer's own orbit offset), so a body that walks away stays in view
+# prismarine-viewer 1.33.0 aims its third-person camera at the body once, from 20 blocks up and back, when the page
+# opens; this starts it close behind the body and makes it follow (keeping the viewer's own orbit offset)
 FOLLOW_OLD = "t.y>0&&s&&(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1)"
-FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1):"
+FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y+1,t.z),u.camera.position.set(t.x,t.y+5,t.z+7),h.update(),s=!1):"
               "(new n.Tween(u.camera.position).to({x:u.camera.position.x+t.x-h.target.x,y:u.camera.position.y+t.y-h.target.y,"
               "z:u.camera.position.z+t.z-h.target.z},50).start(),new n.Tween(h.target).to({x:t.x,y:t.y,z:t.z},50)"
               ".onUpdate((()=>h.update())).start()))")   # moves with the body's own 50 ms tween, so the two stay in step
