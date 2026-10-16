@@ -1,6 +1,6 @@
 ## Hard Requirements (MUST be in every agent's prompt)
 1. The task is `tasks/minecraft`: defeat the Ender Dragon in a shared Minecraft survival world. Every agent must read `tasks/minecraft/program.md` in full before working.
-2. Score = `python tools/eval_minecraft.py`, read from the world: `dragon` (0/1) and `milestones` (of 13 steps). Agents' reports are not the score.
+2. Score = `python tools/eval_minecraft.py`, read from the world: `dragon` (0/1) and `milestones` (of 12 steps). Agents' reports are not the score.
 3. The world has exactly four players, `p1` to `p4`; no more can be added. Each agent that plays controls one player, named in its prompt, and only that one (the arena enforces it: the first program an agent runs on a player claims it for the iteration). Agents that do not play must not run programs.
 4. Survival rules only: no server commands, no access to the server, its console, its files or `.work/`. All play goes through `python tools/mc_arena.py`. Do NOT modify `tools/` or the server. Do not push to any git remote.
 5. Environment for every shell command: `cd $EAT_ROOT`.

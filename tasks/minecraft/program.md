@@ -6,7 +6,7 @@ to share the work.
 
 ## Score
 `python tools/eval_minecraft.py` reads the world itself (advancements and statistics), never anyone's report:
-`dragon = 1` when the Ender Dragon is defeated, and `milestones` = how many of the 13 steps from bare hands to the
+`dragon = 1` when the Ender Dragon is defeated, and `milestones` = how many of the 12 steps from bare hands to the
 dragon any player has reached, with when and by whom.
 
 ## The world
@@ -23,10 +23,10 @@ the world, and you read the text that comes back. No pixels, keyboard or mouse.
 ```
 python tools/mc_arena.py status                              every player: position, health, inventory, who controls it
 python tools/mc_arena.py run --player p1 [--timeout 60] FILE  run a program as p1 (FILE, or - for stdin)
-python tools/mc_arena.py chat [--since N]                    the game's chat
+python tools/mc_arena.py chat [--since N] [--last N]         the game's chat
 python tools/mc_arena.py say --player p1 TEXT                say something in the chat as p1
-python tools/mc_arena.py events                              deaths, advancements, server restarts
-python tools/mc_arena.py programs [--player p1] [--last N]   every program run so far, with its output
+python tools/mc_arena.py events [--type T] [--last N]        deaths, advancements, joins, restarts
+python tools/mc_arena.py programs [--player p1] [--last N] [--full]   every program run so far, with its output
 ```
 A program is the body of an async function that receives `bot` (with the pathfinder plugin loaded; `Movements` and
 `goals` are available). It may load Node's built-in modules and the installed Mineflayer packages, but cannot start
