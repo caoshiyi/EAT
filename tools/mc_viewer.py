@@ -116,6 +116,14 @@ def build() -> dict:
         status = A.api("GET", "/status", timeout=3)
     except (OSError, ValueError):
         status = None
+    try:   # facing from tools/mc_arena/facing.js, for a bot host whose /status does not report it yet
+        facing = json.loads((A.MC / "facing.json").read_text())
+    except (OSError, ValueError):
+        facing = {}
+    for p, f in facing.items():
+        s = (status or {}).get(p)
+        if s and s.get("connected") and s.get("yaw") is None and time.time() * 1000 - f.get("time", 0) < 30_000:
+            s["yaw"] = f["yaw"]
     progs = tail_jsonl("programs.jsonl")
     last = {}
     for p in progs:
