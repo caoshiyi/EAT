@@ -92,9 +92,10 @@ def bodies() -> dict[str, dict]:
         if p in A.PLAYERS and s.get("connected") and s.get("position"):
             dim = s.get("dimension") or "overworld"
             dim = dim if ":" in dim else "minecraft:" + dim
-            # /status has no facing: the saved one is kept
             out[p] = (out.get(p) or {"yaw": 0.0, "pitch": 0.0, "uuid": uuids()[p]}) | s["position"] | {
                 "dimension": dim, "source": "live"}
+            if s.get("yaw") is not None:   # mineflayer radians (0 faces north) to Minecraft degrees (0 faces south)
+                out[p] |= {"yaw": 180 - math.degrees(s["yaw"]), "pitch": -math.degrees(s.get("pitch") or 0)}
     return out
 
 
