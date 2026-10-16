@@ -433,7 +433,11 @@ def proxy(h, port: int, path: str):
             if not data:
                 done = True
                 break
-            (up if c is client else client).sendall(data)
+            try:
+                (up if c is client else client).sendall(data)
+            except OSError:   # the browser left (an endless MJPEG stream ends only this way)
+                done = True
+                break
         if done:
             break
     up.close()
@@ -483,42 +487,33 @@ def static(h, root: Path, rel: str):
     h.wfile.write(body)
 
 
+LIVE_PORT = int(os.environ.get("MC_LIVE_PORT", "17791"))   # tools/mc_live.py --port
+
 HD_PAGE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Minecraft run</title>
 <style>
 :root { --bg:#0f1218; --ink:#e8ebf0; --mute:#9aa3ae; }
-* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-header { padding:10px 16px; display:flex; gap:16px; align-items:baseline; flex-wrap:wrap; }
-header h1 { font-size:17px; margin:0; } header span { color:var(--mute); } header a { color:#8ab4ff; margin-left:auto; }
-.grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; padding:0 6px 6px; }
-figure { margin:0; position:relative; background:#000; aspect-ratio:16/9; }
-figure img { width:100%; height:100%; object-fit:cover; display:block; }
-figcaption { position:absolute; left:8px; top:8px; background:rgba(0,0,0,.6); padding:3px 8px; border-radius:6px; font-size:13px; }
-@media (max-width: 800px) { .grid { grid-template-columns:1fr; } }
+* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+header { padding:12px 16px; display:flex; gap:16px; align-items:baseline; flex-wrap:wrap; }
+header h1 { font-size:18px; margin:0; } header span { color:var(--mute); } header a { color:#8ab4ff; margin-left:auto; }
+main { padding:0 16px 16px; } .ms div { padding:2px 0; } .ms .n { color:#5b6470; } .ms small { color:var(--mute); margin-left:8px; }
+.box { background:#171b23; border-radius:8px; padding:12px 14px; margin-bottom:12px; }
 </style></head><body>
 <header><h1>Minecraft run</h1><span id="sum"></span><a href="dash">full dashboard</a></header>
-<div class="grid" id="grid"></div>
+<main>
+<div class="box mute" id="live">Live HD view of the bodies: being set up.</div>
+<div class="box"><b>Milestones</b><div class="ms" id="ms"></div></div>
+</main>
 <script>
-// path-traced shots of the four bodies (the world as last saved, a new one about every 5 minutes); plain images, no 3D
-const PCOL = {p1:'#1aa1b5', p2:'#8e5bd6', p3:'#e08a1e', p4:'#3f9a4e'};
-const ago = s => { const m = Math.round((Date.now() - Date.parse(s)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : Math.round(m / 60) + ' h ago'; };
 async function poll() {
   try {
     const d = await (await fetch('data.json', {cache: 'no-store'})).json();
     const n = d.milestones.filter(m => m.reached.length).length;
     const deaths = Object.values(d.death_counts).reduce((a, b) => a + b, 0);
     document.getElementById('sum').textContent = `${n} of ${d.milestones.length} milestones · ${d.programs} programs · ${deaths} deaths`;
-    const g = document.getElementById('grid');
-    d.players.forEach(p => {
-      let f = document.getElementById('f-' + p);
-      if (!f) { f = document.createElement('figure'); f.id = 'f-' + p; f.innerHTML = '<img alt=""><figcaption></figcaption>'; g.appendChild(f); }
-      const m = (d.shots || {})[p], st = d.status && d.status[p];
-      const img = f.querySelector('img');
-      if (m) { const src = `shots/${p}/${encodeURIComponent(m.file)}`; if (img.getAttribute('src') !== src) img.src = src; }
-      f.querySelector('figcaption').innerHTML = `<b style="color:${PCOL[p]}">${p}</b>` + (m ? ` · ${ago(m.time)}` : ' · no shot yet')
-        + (st && st.connected ? ` · ${String(st.dimension).replace('minecraft:', '')} · ♥ ${st.health}` : '');
-    });
+    document.getElementById('ms').innerHTML = d.milestones.map(m => { const r = m.reached[0];
+      return `<div class="${r ? '' : 'n'}">${r ? '✓' : '○'} ${m.name}${r ? `<small>${r.player} · ${new Date(r.time).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</small>` : ''}</div>`; }).join('');
   } catch (e) { document.getElementById('sum').textContent = 'not reachable'; }
   setTimeout(poll, 15000);
 }
@@ -545,12 +540,19 @@ class Handler(BaseHTTPRequestHandler):
             proxy(self, port, "/" + parts[3])
         return True
 
+    def route_live(self) -> bool:
+        """/live/...: the live HD view's local server (tools/mc_live.py), stream included."""
+        if not self.path.startswith("/live/"):
+            return False
+        proxy(self, LIVE_PORT, self.path[len("/live"):])
+        return True
+
     def do_POST(self):
-        if not self.route_view():
+        if not self.route_view() and not self.route_live():
             self.send_error(404)
 
     def do_GET(self):
-        if self.route_view():
+        if self.route_view() or self.route_live():
             return
         path = self.path.split("?")[0]
         if path in ("/map", "/shots"):
