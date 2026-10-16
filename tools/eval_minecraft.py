@@ -145,9 +145,14 @@ AUDIT = [
 ]
 
 
-def audit() -> int:
+def audit(everything: bool = False) -> int:
+    """Suspicious programs and chat of the current iteration (since the world last came up), or of the whole run."""
     findings = []
+    ups = [e for e in read_jsonl("events.jsonl") if e.get("type") == "up"]
+    since = "" if everything or not ups else ups[-1].get("time", "")
     for p in read_jsonl("programs.jsonl"):
+        if (p.get("time") or "") < since:
+            continue
         code = p.get("code") or ""
         for kind, rx in AUDIT:
             for m in rx.finditer(code):
@@ -165,9 +170,9 @@ def audit() -> int:
             findings.append(("require refused", f"program #{p.get('n')} {p.get('player')} role={p.get('role')}: "
                                                 f"{p['error'].splitlines()[0]}"))
     for i, c in enumerate(read_jsonl("chat.jsonl"), start=1):
-        if c.get("text", "").lstrip().startswith("/"):
+        if (c.get("time") or "") >= since and c.get("text", "").lstrip().startswith("/"):
             findings.append(("command in chat", f"chat #{i} {c.get('player')}: {c['text'][:140]}"))
-    print(f"audit: {len(findings)} finding(s)")
+    print(f"audit: {len(findings)} finding(s)" + ("" if not since else f" since the world came up at {since}"))
     for kind, text in findings:
         print(f"  [{kind}] {text}")
     print(f"audit_findings = {len(findings)}")
@@ -198,7 +203,7 @@ def main() -> int:
     print(f"programs = {len(progs)}")
     print(f"dragon = {int(bool(ms[-1]['reached']))}")
     if "--audit" in sys.argv[1:]:
-        audit()
+        audit(everything="--all" in sys.argv[1:])
     return 0
 
 
