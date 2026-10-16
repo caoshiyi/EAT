@@ -269,25 +269,36 @@ FOLLOW_OLD = "t.y>0&&s&&(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y
 FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),s=!1):"
               "(u.camera.position.x+=t.x-h.target.x,u.camera.position.y+=t.y-h.target.y,u.camera.position.z+=t.z-h.target.z,"
               "h.target.set(t.x,t.y,t.z)),h.update())")
-_client = {}
+_assets = {}
 
 
-def view_client(h, port: int):
-    """The views' page script, patched to follow the body."""
-    if "js" not in _client:
+def view_asset(h, port: int, rel: str):
+    """The views' static files (the same for every body; worker.js alone is ~60 MB): fetched once, the page script
+    patched to follow the body, served gzipped and cacheable by the browser."""
+    if rel not in _assets:
+        import gzip
         import urllib.request
         try:
-            js = urllib.request.urlopen(f"http://127.0.0.1:{port}/index.js", timeout=10).read().decode()
+            r = urllib.request.urlopen(f"http://127.0.0.1:{port}/{rel}", timeout=60)
+            raw, ctype = r.read(), r.headers.get("content-type", "application/octet-stream")
         except OSError:
             h.send_error(502, "view not running")
             return
-        if FOLLOW_OLD not in js:
-            print("view client script changed; camera follow not applied", flush=True)
-        _client["js"] = js.replace(FOLLOW_OLD, FOLLOW_NEW).encode()
-    body = _client["js"]
+        if rel == "index.js":
+            js = raw.decode()
+            if FOLLOW_OLD not in js:
+                print("view client script changed; camera follow not applied", flush=True)
+            raw = js.replace(FOLLOW_OLD, FOLLOW_NEW).encode()
+        _assets[rel] = (ctype, raw, gzip.compress(raw, 6))
+    ctype, raw, gz = _assets[rel]
+    use_gz = "gzip" in h.headers.get("Accept-Encoding", "")
+    body = gz if use_gz else raw
     h.send_response(200)
-    h.send_header("content-type", "application/javascript; charset=utf-8")
+    h.send_header("content-type", ctype)
+    if use_gz:
+        h.send_header("content-encoding", "gzip")
     h.send_header("content-length", str(len(body)))
+    h.send_header("cache-control", "public, max-age=86400")
     h.end_headers()
     h.wfile.write(body)
 
@@ -343,8 +354,9 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             return True
         port = 3001 + list(A.PLAYERS).index(parts[2])
-        if self.command == "GET" and parts[3].split("?")[0] == "index.js":
-            view_client(self, port)
+        rel = parts[3].split("?")[0]
+        if self.command == "GET" and (rel in ("index.js", "worker.js") or rel.startswith(("textures/", "blocksStates/"))):
+            view_asset(self, port, rel)
         else:
             proxy(self, port, "/" + parts[3])
         return True
