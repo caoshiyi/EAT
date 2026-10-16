@@ -92,6 +92,23 @@ $EAT_VENV/bin/python tools/chess_viewer.py --port 17777               # live pag
 The iteration limit is only a ceiling: the run stops when the 200 games are played. The engine is unpacked under `.work/`, off `PATH`; the rules forbid the
 agents any engine or position-searching code, and `cleanroom/audit_clean_traces.py` checks the transcripts.
 
+### The minecraft task
+
+`tasks/minecraft` reproduces a team of coding agents beating Minecraft: four players (bodies `p1`..`p4`) share one
+vanilla 1.20.4 survival world (Easy, no commands) and must defeat the Ender Dragon. A player acts only by running a
+JavaScript program on its mineflayer bot through `tools/mc_arena.py run`; the bot host (`tools/mc_arena/bothost.js`)
+runs it and returns what it logged and returned, the body's state and the chat. The score is read from the world's
+advancement and stat files (`tools/eval_minecraft.py`: `milestones = N` of 12, `dragon = 0|1`).
+
+```bash
+MC_SEED=<seed> bash tasks/minecraft/setup.sh     # server jar (sha1-checked), config, node deps; state in .work/mc/
+python3 tools/mc_arena.py up                     # server + bot host (supervised, restarted after a crash); clears body locks
+python3 tools/mc_arena.py status
+python3 tools/mc_arena.py down                   # save, stop, confirm exited
+python3 tools/eval_minecraft.py --audit
+python3 tools/mc_viewer.py --port 17778          # live page: the four bodies' views, milestones, chat, deaths, programs
+```
+
 ### Clean-room runs
 
 To show that a result was not copied from code released after a cutoff, run the whole loop inside
