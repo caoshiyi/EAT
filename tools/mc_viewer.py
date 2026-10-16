@@ -263,6 +263,35 @@ poll();
 """
 
 
+# prismarine-viewer 1.33.0 aims its third-person camera at the body once, when the page opens; this makes it follow
+# the body (keeping the viewer's own orbit offset), so a body that walks away stays in view
+FOLLOW_OLD = "t.y>0&&s&&(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1)"
+FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),s=!1):"
+              "(u.camera.position.x+=t.x-h.target.x,u.camera.position.y+=t.y-h.target.y,u.camera.position.z+=t.z-h.target.z,"
+              "h.target.set(t.x,t.y,t.z)),h.update())")
+_client = {}
+
+
+def view_client(h, port: int):
+    """The views' page script, patched to follow the body."""
+    if "js" not in _client:
+        import urllib.request
+        try:
+            js = urllib.request.urlopen(f"http://127.0.0.1:{port}/index.js", timeout=10).read().decode()
+        except OSError:
+            h.send_error(502, "view not running")
+            return
+        if FOLLOW_OLD not in js:
+            print("view client script changed; camera follow not applied", flush=True)
+        _client["js"] = js.replace(FOLLOW_OLD, FOLLOW_NEW).encode()
+    body = _client["js"]
+    h.send_response(200)
+    h.send_header("content-type", "application/javascript; charset=utf-8")
+    h.send_header("content-length", str(len(body)))
+    h.end_headers()
+    h.wfile.write(body)
+
+
 def proxy(h, port: int, path: str):
     """Pass one request to a body's view on 127.0.0.1:port (only the viewer's own port is reachable from outside),
     websocket upgrades included: socket.io connects at the page's path + socket.io, so the views work under /view/pN/."""
@@ -313,7 +342,11 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", self.path + "/")
             self.end_headers()
             return True
-        proxy(self, 3001 + list(A.PLAYERS).index(parts[2]), "/" + parts[3])
+        port = 3001 + list(A.PLAYERS).index(parts[2])
+        if self.command == "GET" and parts[3].split("?")[0] == "index.js":
+            view_client(self, port)
+        else:
+            proxy(self, port, "/" + parts[3])
         return True
 
     def do_POST(self):
