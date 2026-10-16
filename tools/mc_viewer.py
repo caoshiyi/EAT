@@ -505,13 +505,21 @@ main iframe { width:100%; height:100%; border:0; border-radius:8px; background:#
 </style></head><body>
 <header><h1>Minecraft run</h1><span id="sum"></span><a href="dash">full dashboard</a></header>
 <main>
-<iframe src="map/" title="the world in 3D (BlueMap): drag to turn, scroll to zoom; the bodies move live, the terrain is a minute or two old"></iframe>
+<iframe id="map" title="the world in 3D (BlueMap): drag to turn, scroll to zoom; the bodies move live, the terrain is a minute or two old"></iframe>
 <div class="box"><b>Milestones</b><div class="ms" id="ms"></div></div>
 </main>
 <script>
+// the map opens on the bodies in a tilted 3D view (BlueMap's address: map:x:y:z:distance:rotation:angle:tilt:ortho:mode)
+function openMap(d) {
+  const ps = Object.values(d.status || {}).filter(s => s.connected && s.position && String(s.dimension).endsWith('overworld'));
+  const c = ps.length ? ['x', 'y', 'z'].map(k => ps.reduce((a, s) => a + s.position[k], 0) / ps.length) : null;
+  document.getElementById('map').src = 'map/' + (c ? `#overworld:${c[0].toFixed(0)}:${c[1].toFixed(0)}:${c[2].toFixed(0)}:70:0.6:1.0:0:0:perspective` : '');
+}
+let opened = false;
 async function poll() {
   try {
     const d = await (await fetch('data.json', {cache: 'no-store'})).json();
+    if (!opened) { opened = true; openMap(d); }
     const n = d.milestones.filter(m => m.reached.length).length;
     const deaths = Object.values(d.death_counts).reduce((a, b) => a + b, 0);
     document.getElementById('sum').textContent = `${n} of ${d.milestones.length} milestones · ${d.programs} programs · ${deaths} deaths`;
