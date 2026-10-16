@@ -1,0 +1,51 @@
+const{Vec3}=require('vec3');
+function p2Inside(){const p=bot.entity.position;return p.x>6.2&&p.x<7.8&&p.z>82.3&&p.z<84&&p.y>=67&&p.y<68;}
+async function p2NorthOpen(check){check();const p=new Vec3(6,67,81);if(!bot.blockAt(p).getProperties().open){await bot.activateBlock(bot.blockAt(p));await bot.waitForTicks(4);check();}}
+async function p2NorthClose(check){check();const p=new Vec3(6,67,81);if(bot.blockAt(p).getProperties().open){await bot.activateBlock(bot.blockAt(p));await bot.waitForTicks(4);check();}}
+async function p2Exit(check){check();bot.pathfinder.setGoal(null);bot.clearControlStates();bot.deactivateItem();await bot.waitForTicks(4);await p2NorthOpen(check);for(let n=0;n<35;n++){check();await bot.lookAt(new Vec3(6.59375,bot.entity.position.y+1.6,76),true);bot.setControlState('jump',false);bot.setControlState('forward',true);await bot.waitForTicks(2);check();if(bot.entity.position.z<79.4)break;}bot.clearControlStates();await bot.waitForTicks(4);check();if(bot.entity.position.z>=79.4)throw Error('EXIT NOT REACHED');await p2NorthClose(check);}
+// Core physical motion proved #1097: NORTH-facing raised-shield BACK movement over bottomslab80, nojump.
+async function p2BackEntry(check){check();bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);await p2NorthOpen(check);await bot.lookAt(bot.entity.position.offset(0,1.6,-12),true);bot.activateItem(true);await bot.waitForTicks(6);for(let n=0;n<100;n++){check();await bot.lookAt(bot.entity.position.offset(0,1.6,-12),true);bot.setControlState('jump',false);const x=bot.entity.position.x;if(x<6.505||x>6.68){bot.setControlState('back',false);bot.setControlState('left',x>6.59375);bot.setControlState('right',x<6.59375);}else{bot.setControlState('left',false);bot.setControlState('right',false);bot.setControlState('back',true);}if(!bot.blockAt(new Vec3(6,67,81)).getProperties().open){bot.clearControlStates();await p2NorthOpen(check);await bot.lookAt(bot.entity.position.offset(0,1.6,-12),true);bot.activateItem(true);}await bot.waitForTicks(2);check();if(bot.entity.position.z>83.35)break;}bot.clearControlStates();if(!p2Inside())throw Error('BACKENTRY NOT INSIDE');await p2NorthClose(check);bot.deactivateItem();}
+
+// Read-only factory. Apply only after live landing-hostile preflight.
+// Synthetic getMoveForward test #1041 proved blocksToAvoid(magma) alone DOES NOT reject a magma FLOOR.
+// This helper has not yet been physically validated in the Nether.
+function netherSafeMovements(bot,Movements){
+ const {Vec3}=require('vec3');const m=new Movements(bot);
+ m.canDig=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;m.infiniteLiquidDropdownDistance=false;
+ for(const n of['fire','soul_fire','lava','magma_block'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);
+ // Cardinal paths avoid diagonal corner clipping; still require actual position/health checks.
+ m.getMoveDiagonal=()=>{};
+ const old=m.getNeighbors.bind(m),hot=new Set(['fire','soul_fire','lava','magma_block']);
+ m.getNeighbors=node=>old(node).filter(n=>{const q=new Vec3(n.x,n.y,n.z),f=bot.blockAt(q.offset(0,-1,0)),feet=bot.blockAt(q),head=bot.blockAt(q.offset(0,1,0));return f&&feet&&head&&!hot.has(f.name)&&!hot.has(feet.name)&&!hot.has(head.name)});
+ return m;
+}
+
+function topology(origin,radius=20,cap=2000){
+ const {Vec3}=require('vec3');const hot=new Set(['lava','fire','soul_fire','magma_block','nether_portal']);
+ const empty=p=>{const b=bot.blockAt(p);return b&&b.boundingBox==='empty'&&!hot.has(b.name)};
+ const valid=p=>{const f=bot.blockAt(p.offset(0,-1,0));return f&&f.boundingBox==='block'&&!hot.has(f.name)&&empty(p)&&empty(p.offset(0,1,0))};
+ const queue=[origin],seen=new Set([origin.toString()]);let head=0;
+ while(head<queue.length&&queue.length<cap){const p=queue[head++];for(const[dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]])for(const dy of[0,-1,1]){const q=p.offset(dx,dy,dz);if(Math.abs(q.x-origin.x)>radius||Math.abs(q.z-origin.z)>radius||Math.abs(q.y-origin.y)>6||seen.has(q.toString())||!valid(q))continue;if(dy===1&&!empty(p.offset(0,2,0)))continue;if(dy===-1&&!empty(q.offset(0,2,0)))continue;seen.add(q.toString());queue.push(q);}}
+ const best=(axis,sgn)=>queue.reduce((a,b)=>sgn*b[axis]>sgn*a[axis]?b:a,origin);return{count:queue.length,capped:queue.length>=cap,origin:origin.toString(),east:best('x',1).toString(),west:best('x',-1).toString(),south:best('z',1).toString(),north:best('z',-1).toString()};
+}
+
+let lost=false,expect=false,phase='camp';const dead=()=>{lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates()},resp=()=>{if(!expect)dead()};bot.on('death',dead);bot.on('respawn',resp);const life=()=>{if(lost||bot.health<=0)throw Error('LIFE DISCONTINUITY')};
+const hot=new Set(['magma_block','fire','soul_fire','lava']);function foes(r){return Object.values(bot.entities).filter(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<r)}
+let m=new Movements(bot);m.canDig=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;m.infiniteLiquidDropdownDistance=false;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1200;
+async function go(x,y,z,ms=4000){life();let t;const g=new goals.GoalBlock(x,y,z);try{await Promise.race([bot.pathfinder.goto(g),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('NAV BOUND'))},ms))]);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4)}life();if(!g.isEnd(bot.entity.position.floored()))throw Error('NO ACTUAL ARRIVAL '+[x,y,z]);}
+function dry(q,portal=false){const f=bot.blockAt(q.offset(0,-1,0)),a=bot.blockAt(q),h=bot.blockAt(q.offset(0,1,0));return f?.boundingBox==='block'&&!hot.has(f.name)&&a?.boundingBox==='empty'&&h?.boundingBox==='empty'&&!hot.has(a.name)&&!hot.has(h.name)&&(portal||a.name!=='nether_portal');}
+async function flat(q,ms=3500){life();const start=Date.now();bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);while(Date.now()-start<ms){life();if(Math.hypot(q.x-bot.entity.position.x,q.z-bot.entity.position.z)<.13)break;await bot.lookAt(new Vec3(q.x,bot.entity.position.y+1.6,q.z),true);bot.setControlState('forward',true);bot.setControlState('jump',false);await bot.waitForTicks(2);}bot.clearControlStates();await bot.waitForTicks(6);life();if(Math.hypot(q.x-bot.entity.position.x,q.z-bot.entity.position.z)>.3)throw Error('MANUAL STAGE FAILED');}
+try{
+ if(!p2Inside()||bot.health<19||bot.food<18||bot.inventory.slots[45]?.name!=='shield'||!bot.inventory.items().some(i=>i.name==='wooden_pickaxe'))throw Error('KIT/START NOT READY');
+ if(foes(14).some(e=>Math.abs(e.position.y-bot.entity.position.y)<5))throw Error('OW HOSTILE PREFLIGHT');
+ await p2Exit(life);phase='owroute';for(const a of[[4,67,88],[5,68,89],[6,68,89]]){if(foes(9).some(e=>Math.abs(e.position.y-bot.entity.position.y)<5))throw Error('OW ROUTE THREAT');await go(...a);}
+ const gate=new Vec3(6,68,90);if(!bot.blockAt(gate).name.endsWith('fence_gate'))throw Error('GATE CHANGED');if(!bot.blockAt(gate).getProperties().open){await bot.activateBlock(bot.blockAt(gate));await bot.waitForTicks(4);life();}if(!bot.blockAt(gate).getProperties().open)throw Error('GATE NOT OPEN');
+ expect=true;await flat(new Vec3(6.5,68,91.5));if(bot.game.dimension==='overworld'&&bot.blockAt(gate).getProperties().open){await bot.activateBlock(bot.blockAt(gate));await bot.waitForTicks(4);}let end=Date.now()+8000;while(bot.game.dimension==='overworld'&&Date.now()<end){await bot.waitForTicks(2);life();}if(bot.game.dimension!=='the_nether')throw Error('NO NETHER CHANGE');expect=false;phase='nether';await bot.waitForTicks(8);life();const np=bot.entity.position.clone();global.P2Landing={portal:np,time:Date.now()};
+ bot.clearControlStates();bot.activateItem(true);await bot.waitForTicks(4);const near=foes(16);console.log('ARRIVAL FIRST GATE',np.toString(),bot.health,bot.food,near.map(e=>[e.id,e.name,e.position.toString(),e.metadata?.[9]]));
+ if(near.length){global.P2Landing.status='THREAT AT ARRIVAL';await bot.lookAt(near[0].position.offset(0,1,0),true);console.log('STOP NO MOVEMENT threatgate');return;}
+ const b=np.floored();for(let dx=-1;dx<=1;dx++)for(let dz=-1;dz<=1;dz++){const q=b.offset(dx,0,dz);console.log('NEAR TILE',q.toString(),dry(q),[ -1,0,1].map(dy=>bot.blockAt(q.offset(0,dy,0))?.name));}
+ let selected=null,path=null;for(const o of[[0,-1],[1,1],[-1,1],[0,1],[1,0],[-1,0]]){const q=b.offset(o[0],0,o[1]);if(!dry(q))continue;if(o[0]&&o[1]){const mid=b.offset(o[0],0,0);if(!dry(mid,true))continue;path=[mid.offset(.5,0,.5),q.offset(.5,0,.5)];}else path=[q.offset(.5,0,.5)];selected=q;break;}
+ if(!selected){global.P2Landing.status='NO OFFPORTAL TILE';console.log('NO OFFPORTAL drytile; holdshield portal, requestfreshstate');return;}
+ for(const q of path){if(foes(16).length)throw Error('NEW THREAT BEFORE STAGE');await flat(q);}
+ if(bot.blockAt(bot.entity.position)?.name==='nether_portal'||!bot.entity.onGround)throw Error('NOT DRY OFFPORTAL');const t=topology(bot.entity.position.floored());global.P2Landing={...global.P2Landing,stage:bot.entity.position.clone(),topology:t,status:'DRY UNSEALED STAGING'};console.log('STAGING VERIFIED',bot.entity.position.toString(),bot.health,bot.food,'pose',bot.entity.metadata[8],JSON.stringify(t));console.log('EAST NEAR',JSON.stringify([3,4,5].map(x=>[x,[64,65,66,67].map(y=>[y,bot.blockAt(new Vec3(x,y,3))?.name])])));
+}catch(e){console.log('STAGE ISSUE',phase,e.message);if(!lost&&bot.game.dimension==='overworld'&&!p2Inside()){try{bot.deactivateItem();for(const a of[[4,67,88],[4,66,79],[6,66,79]]){try{await go(...a,5000)}catch(x){console.log('HOMELEG',x.message)}}await p2BackEntry(life);}catch(x){console.log('HOME FAILED',x.message)}}}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();if(!lost&&bot.game.dimension==='the_nether')bot.activateItem(true);bot.removeListener('death',dead);bot.removeListener('respawn',resp);console.log('POST ACTUAL',bot.game.dimension,bot.entity.position.toString(),bot.health,bot.food,lost,global.P2Landing?.status);}

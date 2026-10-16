@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let ore=[];for(let x=20;x<=33;x++)for(let z=97;z<=114;z++)for(let y=55;y<=66;y++){const b=bot.blockAt(new Vec3(x,y,z));if(b?.name==='iron_ore')ore.push([x,y,z]);}console.log('SHALLOW_ORE',ore);

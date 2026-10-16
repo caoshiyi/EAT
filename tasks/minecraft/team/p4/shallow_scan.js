@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');for(const [x,z]of [[24,103],[25,104],[26,105],[27,105],[26,104],[27,104],[24,100],[21,97],[23,101]])console.log('COL',x,z,Array.from({length:11},(_,i)=>{let y=70-i;return[y,bot.blockAt(new Vec3(x,y,z))?.name]}));console.log('PEERS',Object.values(bot.entities).filter(e=>e.type==='player').map(e=>[e.username,e.position.toString()]));

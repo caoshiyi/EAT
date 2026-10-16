@@ -1,26 +1,53 @@
-# Current plan — 10:16 UTC
-Objective defeat Ender Dragon through survival. p1 execution_lead / p2 explorer / p3 experimenter / p4 reliability_lead own bodies; coordinator only observes. No approvals needed, no supplied deadline.
+# Final verified state — 11:33:54 UTC
+Objective NOT achieved: dragon=0, milestones=5/12, deaths=37, programs=1015, failure restarts=1. Start4/12/deaths28/programs681: +1 milestone, +9 deaths, +334 programs. Nether earned by p1 at11:02:55. No fortress/pearls/rods/eyes/stronghold/End/dragon. This section supersedes older snapshot counts and current-state assumptions below.
 
-IMMEDIATE MATERIAL HANDOFFS (beforemoregather/crafttests): P1holdsWOODPICK+STEAK; P2holdsFLINT1+LOGS2. P3needswoodpick/log1 fororebootstrap andflintforsteel. P1bankwoodpickloan (orP2banklog1forfreshpick), P2BANKFLINT1NOW. P4stopduplicateflintcycling, resourcealreadyexists inP2inventory. P4lowhealth12.5food17inside canuseP1steakifneeded. Verifyactualdepotcontents/recipientinventory, notpromisedhandoff. Portalrebuildbeforeoptionalfirst-foraykit.
+All4 alive20hp at Overworldcamp, no active program in final status. p1food19, stoneaxe+stonepick+woodpick, shield, berries6/slabs5. p2food20 EMPTY. p3food20 stonepick/cobble5/dirt4/sandstone3/FENCEGATE1 CRAFTED #1014, not installed. p4food20 EMPTY respawn.
 
-World: FRAME8/10, onlytop(6/7,71,91) absent. Lowbarrierx9,z91/92,y68..71 nowDIRT verifiedrepair#615; front(9,68,90) stillneedspatch. Keep4floatingDIRTsupportcaps70. P3lava/Zombiedeath10:06:19 at12.5,66,91.5 lostbucket/steel/pick; P1#635 SAFEcampitemscan nowP3DROPS[] (no recoverytarget), so resourcefallbackisconcrete.
+CRITICAL correction: events confirm P4 ENDerman death11:32:07 at(6,66,79.6) DURING #1010. Earlier reading of #1010 END20 as a surviving return was WRONG: new bed body continued after death. No retained P4 shield/axe/pick/food capability now. Root memory explicitly preserves this correction. Final #1010 chest list is still a real storage observation: waterbucket1/steel1/iron3/coal3/cobble11/berries15; ownership counts can change, inspect fresh before use.
 
-Responsibilities / nextoutcomes:
-- P3: borrow/craftWOODpick, mine3cobble->STONEpick BEFOREiron; westvein4ore observed(-1,55,77),(-1,54,77),(-1/-2,53,78), accessunproven. Controlledstair/return, no nearpoolquarry. Get4rawiron/smelt, rebuildbucket+steel. Existingcoal1/dirt4/sticks3 onP3; flintP2, woodP1/P2. No kitrebuilddelayforduplicategravel/woodtrips.
-- P2: flint/loghandoff, thenLOWfrontpatch/captureDECKsafety outcome. Proposedfloorx9..11,y67,z88..90 plusshortsouthrailx10/11,y68,z91, preservecapturestand10,68,89 andrayto13/14,66,90. Owngeometry onlyafterfreshblockscan, no obsidian/framechange; testphysicalreturnbeforeP3usesit.
-- P4: currentlyINSIDEclosed afterstrictentry#631, recovered12.5hpfood17; healbeforefield. Guardactualworkerposition/time throughreturn, NOTunrelated35sloops. P3deathworkbeganAFTERoldescortended. No pooldive, no newguardtileduplicateP2deck. Doorcontrollerstrictalignment; loose.18tolerancewedgedoutsideandcosthealth.
-- P1: immediatewoodpick/steakhandoff, then food/resource/safe-base support. P1firstNetherobservation remainsconditionalonportalreadyandbasictool; do notreservealltoolswhileportalblocked. Can rebuildcheapwoodkitfromP2logs later.
+Available outcomes: active10-frame/6portal; actual Nether small entry-return; bottomslab80 no-jump entrance physically proved #975; eleven-bush farm and berries15bank #978/#1010; shared route floor restored #997; second chest physically exists, access proof not independently inspected; fencegate item crafted #1014.
+UNAVAILABLE/unfinished: protected Nether shelter, installed OW gate, annex (abandoned, old wall intact), safe route to fortress/pearls, spider kill. #995 spider aliveHP2 ~7.5mEast, HITS[]/KILLS[], GATEtrue distance-only. Doorway zombie8243 not proved killed (#1005/#1007/#1013 blocked/onehurt/no kill); closed doors alone do not protect respawn82.5. Do not blind-recover P4 drops or reuse hostile-free arrival assumption.
 
-Currentall4inside, P1/P2/P3full20/20, P4healing. Camp chest7,67,82; table6,66,82; BEDfoot6,67,83/head7,67,83; furnace5,66,80; roofTOPslabs69.5. All4activatedbed, actualrespawnsnowcampverified. Safeinside requiresz>82.15+closeddoor; doorcell/outsideisnotprotection.
+Next bounded independent work remains owned: p1 food/useful route assessment, p2 camp/storage/counterevidence, p3 OW gate with shared-passage handoff, p4 current-body recovery/Nether cover only after fresh preflight. No body unassigned. Players autonomous, no coordinator permission wait. Coordinator ran NO player program/observational program, spawned NO agent, changed NO identity, edited only its three files. Final records preserve failures, not victory claims.
 
-Observedfailurechain: TOPfromstand71 couldnotreachLOWbarrier9,68,92, woodbarrierFIREseen, repairedDIRTfromlowbank; returnnavfailedthenunprotecteddeath12slater. Mustfixprotectedwork/return/capturedeck BEFOREthirdkitfieldrisk. Watermethodworkedonebucketseveraltimes; no needredesignit. Aftertopcasts clearALL6interiorcellsx6/7,y68..70,z91, verify10obsidian+air/fluid, ignite/checkportalblocks, thenactualNetherdimension.
+Independent coordinator SOURCE audit #931 completed11:31: full home helper existed but cleanup bypassed it with Z-only branches; offhand shield omitted by ordinary-inventory loan search. Slab refusal cause still unproved. Shared-route mining #976 invalidated old coordinates; #991 observed and #997 restored. Do not collapse distinct return failures into one door-alignment explanation.
 
-Lastofficialeval09:50 dragon0 milestones4/12 deaths21; laterP2Creeper+P3lava imply23pendingeval. NoNetherentry. Keepactualstatechecks before/afterprogram andduringdeath/discontinuity; normalreturncontroltogglepersistsbutNOTphysicalfloatsafety. Helperssmalltests first; no safeclaimfromprogramlabelalone. Savefailures/handoffs inownjournals.
+Some player journal sections still lag: P4 may label #1010 active/healthy; P2 old annex proposal is abandoned; P3 old 'home proof pending' superseded by #975; newest authoritative program/events and this timestamp take precedence. Journal archives remain useful for tools/limits.
 
-10:19 HANDOFFS NOWVERIFIED: P3woodpickloaninactualinventory#645; P2#644 depositedFLINT1/gravel1 andlogs2banked; P1steakbankedP4healingfood20. Stopnewflint/woodtrips; oreaccessnext.
+---
+# Review-ready snapshot — 11:30 UTC (minute55)
+Objective NOT complete. Official evaluator: dragon0, milestones5/12, deaths36 (p1=10,p2=10,p3=7,p4=9), programs1004, failure restarts1. Start4/12,deaths28,programs681 => +1 milestone,+8 deaths,+323 programs. Nether first entered p1 at11:02:55. No fortress, pearls, rods, eyes, stronghold, End or dragon recorded.
 
-NEW CAMPHOLE #645: P3dugEASTwall(8,67/68,83), then'not outside hatch' threwBEFOREpatchstep. Check/restore2wallcellsifnotcompletinghatchnow; closednorthdooralone doesNOTproveenclosure. P3onBED67.5625 meanshead69.36; perimeterroof(8,69,83) maystillbottom69 (onlyinterior4roofcellsTOPslabs69.5). ThisrooflipisTESTABLEcauseofeast-egresscollision. Needclearance/stepgeometryactualcheck, notmoreblindforward. Preservebed/patchonfailurebeforeplanning, no newexposureforhealingP4.
+Coordinator controls no body, ran no player programs, spawned no agents, changed no identities. Only PLAN/COORDINATOR/EVOLUTION_HISTORY edited. All four runner owners remain assigned. Continue useful bounded work, final verification near11:34; no stop/permission request.
 
-10:23 OPPORTUNITY: P3 NOWOUTSIDEeast(9.9,67,83.5) woodpick+coal+sticks, hatchpassphysicallyworked. #656 'need3dirtpatch' stoppedbootstrap becauseP3onlydirt2. P1INSIDEholdsDIRT3 (likelyhatchdrops) -> P1restore3eastcells(8,67/68/69,83) andverify whileP3proceedswestore, avoidinganotherresourcewait. Do notblockoreworkonP3ownpatchreserve whileP1canclosefrominside. P4northentry#655 failedz79.7; don'tassumeprotected, useactualverifiedcontroller/fallback andstatecheck.
+Current bottleneck: usable safe Nether route beyond spawn; repeated OW return losses and live doorway threat. One owner per next outcome:
+- p1: current food/support and useful NW route-tool assessment; no duplicate p4 field fight.
+- p2: storage/current camp hazard evidence; annex ABANDONED within revised review, old wall intact.
+- p3: OW portal gate/control; respect p4 passage handoff and shared floors.
+- p4: scoped Nether hostile/cover assessment, actual return proof. No clearance claim from distance-only boolean.
 
-10:25 latestP3 #659 stairtrial stoppedafter2SANDsteps forGRAVITYCEILING (correcthazardabort, noore/cobblegain). Returnedbodyinsidehp8.7food17, patchHatchagainthrew'need3dirtpatch'. P2actualDIRT6inside -> restore/verifyeast3cells nowbeforemoredeckwork, ratherthanP3borrow-loop. P1woodtrip#658 returnedNOlogs, thenoutsidefailedentry; currentinside20/20again. P3healprotectedbeforeore, no repeatunprotectedlowhealthfieldwork. P1foodsupport canuseknownberrysourcewithoutaxe ifneeded (previousripe4bushes81..92,73..79, freshverificationrequired); nexttest deliverusablefood, no staleanimal-coordinatehunt. P3firststonebootstrapmustfindSAFEactualSTONE ratherthansandstairundergravity; orepositionsalonearen'taccess.
+Actual bodies at11:30: all4 Overworldcamp20hp, no active program at status. p1food19/axe+woodpick/shield/berries6/slabs5. p2food20/EMPTY. p3food20/stonepick/cobble5/dirt4/sandstone3/sticks4. p4food19/stoneaxe+pick/shield/torch/pork1/flesh5/woodaxe. Coordinates allx6.5..6.6,z82.6..83.7; p3front82.6, othersbedback. CLOSEDDOOR alone NOT safe: zombie8243 observednear6.52,67,82.03, withinreach ofrespawn; p2#1005 attackBLOCKED/hurt0/killfalse, threat unresolved.
+
+Evidence table:
+| Claim | Observation/program | UTC | Limitations | Next decision |
+|---|---|---|---|---|
+| Official5/12,dragon0,deaths36 | eval |11:30:05| historical milestones vs available gear | final eval11:34 |
+| Portal complete/active | #896/#903 |11:02/03| no latest damage reported | preserve; current threat preflight |
+| Nether entry/return works | #902,#995 |11:02/27| not safe farther route | bounded different approach, no blind re-entry |
+| Nether spider alive | #995 spider8258 HP2 ~7.5mEast |11:27| HITS[]KILLS[], finalGATEtrue onlydistance | no “cleared” claim |
+| No-jump entrance proved | #975; ENTRY80.md |11:22| geometry proof, hostile exposure remains | use fullXYZ/threat checks |
+| Route floor restored | #997 sixsand +actuallegacywaypoint |11:28| return FAILED/thenp2death11:28:14 | spatial footprint protected |
+| Food15berries bank/healp1 | #978 |11:23| countmaychange | named receipt, not stale food stock |
+| Water/steel banked | #904/#907 |11:03/04| fresh full chest check needed | preserve/inspect before use |
+| Second chest exists | p1#1003 CHEST2chest |11:29:50| both-access proof not inspected by coordinator | p2 journal evidence needed |
+| OW gate UNBUILT | p3#999 no recipe spruce_fence_gate |11:29:17| craft onlysticks, no new geometry | inspect inventory/grid before retry |
+| Annex NOTBUILT | p2chat544 |11:26| materials retained, oldwall intact | no phantom extra parking |
+
+Critical lessons: P2#976 removed sharedroute support during sandgather; p3#991 found changedfeet, p2#997 restored. Floor change, not merely controller defect. Multiple return bugs differ: falseZ-onlyinside, skippedcamp branch, strictstaleheight, simultaneousdoor toggles, live doorcell mob. Don't collapse into one alignment explanation. Long chat can split into accidental slash-leading chunk (#946), refusal binding; shortplainchat. No server-command literal in that program; don't conflate with prior identity-bypass violation/#418 falsepositive.
+
+Two similar failures or10min without useful change: independent counterevidence + genuinely different bounded proposal before unchanged repeat. Architecture alternatives received; specific independent #931 sourceaudit still not produced. Preserve this limitation. Owners update own journals with final actualstate/activeprogram+timeout immediately; no other agent edits peers' files.
+
+11:31 independent coordinator SOURCE audit #931 now completed (read-only record, NO execution). Precise finding: home() hadX/Zbounds but FINALLY NEVERCALLEDhome; branches useonlyz<=82.2/z>82.2, sooutsideX3.85,z82.85 skippedretreat andenteredloan-returncode. entered acceptancealsoZ-only. Fixinghelperdefinitionalone wouldnotfixcallpath. Loan inventory.items searchedwithoutunequippingoffhand, so BANK[] didnotprove shieldabsence frombody. Actualshieldlaterrecovered#950. SlabrefusalcauseNOTprovenbysource; bodyoverlaphypothesisremains. This supersedes earlier "independentauditabsent" only from11:31 onward, not retroactively.
+P4chat553 explicitly nohit/kill, finalGATEdistanceonly; permissiontoresumeOWgatehandedback. Continueownedboundedwork/finaljournalupdates; finalofficialchecknear11:34.
+
+11:32 FRESHbank #1010 verifieswaterbucket1/steel1/iron3/coal3/cobble11/berries15. Available reserves nowcurrent, notjusthistorical. P4quarryABORTEDdoorfailed, mined0, returnedclosed20/20; no16coverclaim. P3#1008cursorPLANKS2 actual explainsno-recipe aftersticks; clearcursor/grid+actualinventoryacceptancebeforecraft, no api-impossibleclaim. Gate/shelterstillunbuiltatlastcheck. Zombie8243 P2#1007onehurt20->19.06 thenBLOCKED, no killproof. Finalverification~11:34, updateownjournalswiththeseunresolvedstates.

@@ -1,0 +1,5 @@
+# Offhand shield review
+Permitted Mineflayer docs/api.md: bot.activateItem(offHand=false), bot.deactivateItem(), bot.equip(item,'off-hand'). Installedinventory.js activateItem setsclientusingHeldItem=true thenwritesuse_item hand1fortrue; deactivateItem releasesuse. Clientflagisnotserveracceptanceandmayresetbyinventorycallbacks.
+P4 #834 equippedactualshield andmetadata8=3afteractivateItem(true); flagfalse possible. Metadata indicatesactiveoffhand butdoesnotproveblockedattack.
+P4 #840 fixedtile(9.5,68,88.5) shieldprobe: metadata3, entity_status29 observed, HP20 unchanged, thenloweredmetadata2 andreturnedinside20/20. This is actualshieldblockevidenceforthatplayer/stance, notprotectionforP3nearby. Alwaysfaceincomingattacker. Shieldslowsmovement; re-aimafterequip/activateBlock/clickfunctions. Deactivatebeforeusingmainhandbucket, food, orotheritem. Boundedcallbacks removedfinally; persistenceatnormalprogramreturn mustbechosenexplicitly, neverassumedcleared.
+Do notclaim arrowsafe escort simplybecauseguardhasshield. Workerrequiresowncover/avoidactualrangedthreats. SourceassessmentonlyP3; physicalprobecontrolledP4, notP3.

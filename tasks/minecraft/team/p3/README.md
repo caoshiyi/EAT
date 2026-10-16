@@ -1,3 +1,21 @@
+# Current operation index — 2026-10-16 11:53 UTC
+
+Read ../P3.md for LIVE inventory/position/run state. Historical names below are evidence, not current applicability.
+
+- portal_front_gate_auto.js: CURRENT #1049, parked healthy bedback, waits for daylight then builds/tests front enclosure. NOT YET VERIFIED. Current FRONT open, feet67; no gate placed until output proves otherwise. Rear already verified #1035.
+- portal_rear_cap_v2.js: #1035 actual rear cells x6/7,z92,y67..70 solid, portal6 intact, return20hp. Correct stance(4,66,92), not inherited67.
+- ENTRY80.md / entry_walk80_test.js: #975 actual NOJUMP66->66.5 bottom slab80->67, protectedreturn20hp. TEST deposits ALL inventory; don't copy as production blindly. Shield/attack case not proven.
+- safe_trip_lib.js: Overworld only. Observed slab80 disablesjump, fullXYZ+closeddoors/eastwall structural check, delayedclosurepostcheck, boundedgo, death/respawnabort, lowhealthretreat. Structuralclosure does NOT exclude already-inside mobs; bedback safer than front.
+- observed_feet_lib.js: read-only solid-support/headroom selector. #991/#1027 actual heights. Not path/connectivity proof. Quarry/restoration changes heights; inspect each use.
+- cast_top6_sync.js #885 / cast_top7_sync.js #891 / ignite_portal_sync.js #896: completeportal + protectedreturns20hp. Framealreadycomplete; don't rerun casts on obsidian.
+- reserve_stair_test.js #909 / reserve_iron_trip.js #914: actual coal3/iron4/cobble reserves + protectedreturns. Known four ore cells exhausted; not repeat-anywhere miners.
+- review_nether_movements.js: host-only synthetic package comparison, no arena/player/network. P2 floor-filter passed five cases, NOT fieldproof.
+- guard_dispatch.py: read-only tested; superseded by in-program chat barrier. Hostdispatch NOT validated. Chat --since inclusive.
+
+Failures/evidence: EXPERIMENT_HISTORY.md. Exact contracts: CAPABILITIES.md. Planned gate coordinates are not current world claims.
+
+---
+
 # P3 reusable capabilities
 
 All scripts control only their supplied bot; run as your own assigned player after adapting coordinates. Arena records provide the actual evidence. Never infer inventory gain from a dig/craft return alone.
@@ -22,3 +40,5 @@ Camp doorway: door 6 at `(6,67,81)` faces north. Open it, align player center x 
 Water elevator experiments reached y20 -> y57 but never completed a safe surface exit. **Normal program return preserves controls.** My explicit `clearControlStates()` caused the subsequent falls; timeout also stops controls. Old `water_elevator.js` retains this failure for reproduction and must not be treated as a safe escape program. P2 independently verified control persistence.
 
 P4 #603 directly observed FIRE in the wooden pool barrier and missing lower cells. Use dirt/stone for all barriers near lava. #609 reclaimed 12 dirt from lower nonfalling scaffold columns while preserving four floating top-support blocks at y70; this is ordinary survival scaffold reuse. Rebuild barriers from low bank, near-old-cell cleared first, far column placed first to maintain sight lines.
+
+Iteration2: `safe_trip_lib.js` and `stair_manual_test.js` implement local camp/west(-1,66,85) dry navigation, no-dig/no-parkour, strictdoor and positionchecks; #702/#717/#739 actualreturninside. #712 exitfailed duringoverlappingdoortraffic; currenthelper reopensmidpassage. Arrival floored cell canoccur MIDFALL (#739 y64.92) so helper nowwaits6ticks; do not inferstanding fromgoal. `sand_stair_test.js` verifiedfirst2steps(-1,65,84),(-1,64,83); thirdstep manual #739(-1,63,82). These are coordinate-specific openstair tests, not a generic safe cave miner. No completedironaccess yet. Death/respawn listeners cleaned in finally; drylandcontrols explicitlycleared. Never use these in water.

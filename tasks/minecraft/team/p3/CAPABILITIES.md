@@ -1,0 +1,23 @@
+# Capability evidence and limits (iteration 2)
+
+## Local dry trip / safe_trip_lib.js
+Preconditions: overworld, HP>=12, campnorthdoor6 intact, clear observed surface route, no swimming; controlled onlyassignedplayer. Intended: move with bounded no-dig route, verify actual settled feet, returncampz>82.2 closeddoor. Acceptance: #702/#717/#739/#759 actualinside positions andHP. Limitations: overlapdoortraffic #712 canclosemidpassage; updatedreopen loop. #739 floorcheck acceptedmidfall so6ticksettleadded, not universalledgeproof. maxDropDown1 preventsordinarydescent; P2source+pairreview correctedto2 (physicaltest#769pending). No combat guarantee. death/respawn listener abort and finallyremove; controls cleared ondryland, never water. No background interval installed.
+
+## Open sand staircase
+Preconditions: supported adjacentstand, column onecell NORTH ofbody, inspect solidbelowtarget, nofluid, clear TOP thenhead thenfoot; bounded8digattempts percell. Intended: safe access undergravityoverburden withoutstandingunderit. Acceptance #717first2steps, #739third, #7594th/5th plusactual sand63,80 refilledonce thenair, sand12inventory, protectedreturnunchanged19.67HP. Limitations: coordinate-specific x=-1,z85->80, y66->61 onlysofar; repeatedfallbound8; no caves/lava supportfall accepted. Exactfulloreaccess NOT YET VERIFIED. Continuousmanualforward #755 overshot, pulses1tick/coast3 #759 yielded5precisesteps. Prefer fixed maxDrop2 planner if physicallyverified.
+
+## Craft stonepick
+Preconditions: insidecamp, table6,66,82, actual3cobble+2sticks afterchestwithdrawsync. Intended: stonepick inventory, clean cursor/grid. Acceptance #735 stonepick1actual, cursorNULL andgrid0..4NULL. Limitation: bot.craft bugs stillpossible; inspect actualresult and useP4manualcraft onlyifneeded. One craft percall.
+
+## Safe stationary east axe strikes
+Preconditions: insidefront6.5,67,82.5, woodenaxe, livezombie<3.2m, HP>=14. Intended: damage+knockback blocker withoutchasing. Acceptance #688 zombie106metadata16.4->9.5->2.88 and1028.5->1.6, P3HP20unchanged. Limitation: concurrentP4hits possible, nosolokillclaim, noknownfullfightguarantee, noarrowsprotection. Callbacksremovedfinally. Hatchclosure wasP2downwardHEAD+P4footer, notcombatalone.
+
+## Current portal candidate (NOT YET VALIDATED)
+portal_route_test.js: no critical tools, bounded explicit weststairs->northcapture11->weststairs->shelter. Criticalkit BANKED RESERVED#836. P4READY#823 abortedsameinstant due skeleton; P3correctlyneverdeparted. P4shield#834 servermetadata8=3 afteroffhandactivation, DAMAGEblockingunproven. usingHeldItem changesclientonlyandcanbe resetbyinventorycallbacks. Mineflayer docs/source activateItem(true) usesoffhand; deactivateItem releases. Escortshielddoesnotprotectcasterfromarrows.
+portal_safe_lib.js requires actualwaterbucket+pick+steel, fourDIRTcaps70, eightDIRTbarriers, frontsolidbarrier andverifiedfullroute. No passiveintervalcallbacks. Onlyperformonecastperguardwindow; inspectobsidian+waterbucket+bodyinside. Lowhealth MUSTallowretreat: newlibraryretreating flagreducesworkthreshold12 toalive1 forhome; stillabortsdeath/respawn/discontinuity. Prior scripts stoppedretreatbelow12 andshouldnotbeusedasgeneralrescues.
+
+## Verified complete top casting operation
+Preconditions: healthy overworld p3; waterbucket+stonepick+steel; four DIRT caps70 at6/7,z91/92; intact barriers9,z91/92,y68..71 andfront9,68,90; full dryroute verified; actual guard token and daylight preflight.
+Intended effect: one top block obsidian, water back in bucket, body CLOSED inside. Acceptance #885 TOP6 obsidian + waterbucket + insideHP20/food20; #891 TOP7 same. ExactREADY andSTART same timestamp; guardcoveredfull41/38soperation. Freshlava14,66,88 then14,66,90 fromcapture11; visible source chosen bycurrentlevel0/raycast/distance<4.8. No hardcoded depleted source.
+Limitations: coordinate-specific prepared fixture; not general portal builder. No arrowprotection. Old top code's passiveattackinterval and parkour retired. Low moatclear happens fromlowbank, not highstand. Onceframecomplete, do NOT rerun castTop on obsidian target (currentcandidate treatsunexpectedtarget asrefusal). Partialwater/lavastates afterinterruption require explicitinspection/resume, notblindcall. `cast_top6_day.js` fallback onlyPREPARED, NOT RUN; don'tlabelverified.
+Event sync: p3 listenerbeforeARMED, p4 exactREADY->immediatework; ABORT cancelswork/nav, permitsretreat; listenerremovedfinally. #853 sameinstantREADY+ABORT correctlydidnotdepart; #859 fullwaitcancelledinside. `P3_FINISHED` meansbodyprotected, notoperationproved; relystructuredverifiedflag andactualblocks.
