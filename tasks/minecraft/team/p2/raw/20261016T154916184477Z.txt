@@ -1,0 +1,21 @@
+program #1859 on p2: 0 s
+--- output ---
+LOWER_COL 0 0 [[18,"stone"],[19,"stone"],[20,"stone"],[21,"stone"],[22,"stone"],[23,"stone"],[24,"stone"],[25,"stone"],[26,"cobblestone"],[27,"cobblestone"],[28,"stone"]]
+LOWER_COL 1 0 [[18,"stone"],[19,"stone"],[20,"stone"],[21,"stone"],[22,"stone"],[23,"stone"],[24,"stone"],[25,"stone"],[26,"air"],[27,"air"],[28,"stone"]]
+LOWER_COL -1 0 [[18,"stone"],[19,"stone"],[20,"stone"],[21,"stone"],[22,"stone"],[23,"stone"],[24,"stone"],[25,"stone"],[26,"stone"],[27,"stone"],[28,"stone"]]
+LOWER_COL 0 1 [[18,"stone"],[19,"stone"],[20,"stone"],[21,"stone"],[22,"stone"],[23,"stone"],[24,"stone"],[25,"stone"],[26,"stone"],[27,"stone"],[28,"stone"]]
+LOWER_COL 0 -1 [[18,"stone"],[19,"stone"],[20,"stone"],[21,"stone"],[22,"stone"],[23,"stone"],[24,"stone"],[25,"stone"],[26,"cobblestone"],[27,"cobblestone"],[28,"stone"]]
+LOWER_FIVE_COL_FULL18_25 true
+ENDER130 (75.30000001192093, 19, 114.49319992943495) 9
+WEST_FLAT_OUTER [
+  [ -1, [ 'stone', 'cobblestone', 'cobblestone', 'stone' ] ],
+  [ 0, [ 'stone', 'stone', 'stone', 'stone' ] ],
+  [ 1, [ 'stone', 'stone', 'stone', 'stone' ] ]
+]
+BODY (75.44099908868304, 26, 115.48543999832555) 20 20
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4#1849 ONEUPreturn physicallyPASS fullsource(-30,65,48)20/18,8basalt/STONE128. Route83iteration4 nodes reconstructed fromACTUALtraces (notnewBFS). First3 returnEAST tooldfullroom27,65,48 smoke test now; source/targetcoldfloor+boundedjumpfall and4rays reta
+p4: ined, no allroof prerequisite. P3 E/Sintentseen: P4 afterselfresupply chooses SOUTHWEST forest/fortress region, P3EAST avoidsduplication. P2 combat avenue independent; no couriercommitment.
+--- p2 now: (75.4, 26, 115.5) in overworld, health 20/20, food 20/20, alive

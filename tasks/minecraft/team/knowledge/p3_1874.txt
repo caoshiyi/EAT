@@ -1,0 +1,8 @@
+== #1874 2026-10-16T15:54:59 p3 role=execution_engineer iter=4 1.2 s
+const{Vec3}=require('vec3');let lost=false;const die=()=>lost=true;bot.on('death',die);bot.on('respawn',die);try{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('START',bot.entity.position,bot.health);if(bot.game.dimension!=='overworld'||bot.health<=0)throw Error('notlivecamp');const c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));try{for(const n of['sand','gravel']){const i=c.containerItems().find(i=>i.name===n);if(i)await c.withdraw(i.type,null,i.count);}}finally{c.close();await bot.waitForTicks(3);}for(const y of[67,68,69]){if(lost||bot.health<=0)throw Error('lifechange');const q=new Vec3(8,y,83);if(bot.blockAt(q).boundingBox==='block')continue;const i=['dirt','sand','gravel','spruce_planks'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!i)throw Error('nomaterial');await bot.equip(i,'hand');await bot.placeBlock(bot.blockAt(q.offset(0,-1,0)),new Vec3(0,1,0));await bot.waitForTicks(3);console.log('EAST_PATCH',y,bot.blockAt(q).name);}console.log('POST',bot.health,bot.entity.position,'EAST',[67,68,69].map(y=>bot.blockAt(new Vec3(8,y,83)).name),'MOBS',Object.values(bot.entities).filter(e=>e.name==='zombie'&&e.position.distanceTo(bot.entity.position)<6).map(e=>[e.id,e.position]));}finally{bot.clearControlStates();bot.removeListener('death',die);bot.removeListener('respawn',die);}
+-- output --
+START Vec3 { x: 6.5, y: 67, z: 82.5 } 20
+EAST_PATCH 67 sand
+EAST_PATCH 68 dirt
+EAST_PATCH 69 sand
+POST 20 Vec3 { x: 6.5, y: 67, z: 82.5 } EAST [ 'sand', 'dirt', 'sand' ] MOBS []

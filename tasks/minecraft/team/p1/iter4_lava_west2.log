@@ -1,0 +1,17 @@
+program #1726 on p1: 8.4 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":8727,"name":"piglin","pos":"(-242.29316407442093, 49.00129881501198, -161.54427694098854)","distance":31.64623250609974,"top":50.95129881501198,"contained":true,"below":false,"occluded":false,"current":"(-252, 63, -189)","next":"(-252, 63, -189)"}
+ACTUAL_COVERED_STEP (-253, 63, -189) (-252.3270100678037, 63, -188.48110786602098) 20
+ACTUAL_COVERED_STEP (-254, 63, -189) (-253.5, 63, -188.49008704725196) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-254,63,-189],"back":[-253,63,-189],"built":[[-253,63,-189],[-253,64,-189]],"steps":2,"hp":20,"food":19,"mats":48}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest []
+LOADED_RESOURCE warped_nylium [ '(-239, 40, -65)', '(-238, 39, -65)', '(-237, 37, -65)' ]
+FINAL (-253.5, 63, -188.49008704725196) the_nether 20 19 dead false adopted true
+PICK_WEAR_ACTUAL [["iron_pickaxe",245],["stone_pickaxe",98],["stone_pickaxe",98],["stone_pickaxe",97]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-253.5, 63, -188.5) in the_nether, health 20/20, food 19/20, alive

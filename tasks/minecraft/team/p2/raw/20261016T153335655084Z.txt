@@ -1,0 +1,34 @@
+program #1809 on p2: 8 s
+--- output ---
+FIGHT_TARGETS [{"id":130,"p":[75.74037865275125,25,113.63895852438714],"hp":30,"flags":[true,true]},{"id":4107,"p":[75.30000825197223,25,112.88701870122937],"hp":26,"flags":[true,true]}]
+FIGHT_SELECTED 130 (75.74037865275125, 25, 113.63895852438714) virtualclear true
+FIGHT_HURT_ACK 130 [null,null,null,null,null,null,null,null,null,30,null,null,null,null,null,4,24843,true,true] 20
+FIGHT_GAZE_META [1,null,null,null,null,null,null,null,null,26,null,null,null,null,null,0,24843,true,true]
+FIGHT_SWITCH_CLOSE 130 4107
+FIGHT_POSITION 4107 (75.30000825197223, 25, 113.34697963872937) 2.3649294123928186 26 HP 20
+FIGHT_SWING 4107 2.3649294123928186
+FIGHT_HURT_ACK 4107 [null,null,null,null,null,null,null,null,null,26,null,null,null,null,null,0,5798,true,true] 20
+FIGHT_SWING 4107 2.0489657737715072
+FIGHT_HURT_ACK 4107 [null,null,null,null,null,null,null,null,null,19,null,null,null,null,null,0,5798,true,true] 20
+FIGHT_SWING 4107 2.077653745328116
+FIGHT_HURT_ACK 4107 [null,null,null,null,null,null,null,null,null,12,null,null,null,null,null,0,5798,true,true] 20
+FIGHT_POSITION 4107 (75.48381151752537, 25, 112.49503316482048) 3.1534688731517795 5 HP 20
+FIGHT_SWING 4107 2.3481880450896986
+FIGHT_HURT_ACK 4107 [null,null,null,null,null,null,null,null,null,5,null,null,null,null,null,4,5798,true,true] 20
+FIGHT_DEAD_ACK 4107
+FIGHT_RESULT true 5 target 4107 HP 20
+PEARL_DROPS [{"id":13600,"p":[75.49411258680297,25,113.67038429584453],"count":1}]
+PEARL_CARRY []
+FIGHT_FINAL (75.44099908868304, 26, 115.48543999832555) 20 20 FULL true dead false SWORDwear 8
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #1798 ACTUALGOLDboots EQUIPPEDfeet slot8, SHIELDretained, nuggets5/ingot0/TABLErecovered1/fullroom270,71,-23920/19. Finitegoldtest CLOSED before15:33. Need800worldticks afterlastgoldmine forpossibleanger (willcheckactualage); then boundednaturalgroundtr
+p1: ial vscontinuingHANDstraight. No pearls/fortressclaim.
+p4: P4 changeafter2NOgaze: lower43virtualvantages nearest(-30,62,42); geometry-only route11 DOWN/FLAT nodesproposed. Originalhazardplanner expanded1 because GHAST64 policy, notterrain; geometryproposal isNOTsafetyapproval. Physicalfirst2 WEST thenNORTH1DOWN to
+p4:  naturalcolumn(-30,64,47), fullcurrent/next fieldrays+actualfloor/tempRoof followedlowerroof/fullendpoint;24basalt. No unverifiedfall/chase.
+p1: P1 #1798 GOLDbootsactualfeet/fullroom20/19/table1. #1801 currentworldAge491163-lastGold490103=1060ticks; anger800tickwindowpassed. ROproposal16nodes/27cuts ->OPENnaturalground275,71,-250 viaW5+N11. BoundedphysicalprefixW5now; thenN11freshchecks. Goldregula
+p1: rPIGLINskip ONLY equippedarmor+elapsed800; brutes/magma/ghasts unchanged. Proposalnotarrival.
+p1: P1 covered-corridor adoption trial: max5 WEST naturalfieldapproach HANDnetherrack covered cells, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p1: P1_COVERED_SEALED (-275, 71, -239) EASTback(-274, 71, -239) actualsteps5 HP20
+--- p2 now: (75.4, 26, 115.5) in overworld, health 20/20, food 20/20, alive

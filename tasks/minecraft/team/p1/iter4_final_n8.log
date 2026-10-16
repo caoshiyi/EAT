@@ -1,0 +1,74 @@
+program #1971 on p1: 43.7 s
+--- output ---
+CONSUMED_PROPOSAL 1792168875482 {"origin":[-316,61,-326],"path":[[-316,61,-326],[-316,61,-327],[-316,61,-328],[-316,61,-329],[-316,61,-330],[-316,61,-331],[-316,61,-332],[-316,61,-333],[-316,61,-334]],"when":1792168875482}
+ENDPOINT_BUILD_BUDGET (-316, 61, -327) 4 7
+DIG_BUDGET_ACTUAL blackstone (-316, 62, -327) 2900
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -327)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -327) 4500
+ACTUAL_COVERED_STEP (-316, 61, -327) (-315.5, 61, -326.3487990747315) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -328) 5 8
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -328)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -328) 4500
+ACTUAL_COVERED_STEP (-316, 61, -328) (-315.5, 61, -327.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -329) 5 8
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -329)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -329) 4500
+ACTUAL_COVERED_STEP (-316, 61, -329) (-315.5, 61, -328.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -330) 4 8
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -330)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -330) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -330)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -330) 4500
+ACTUAL_COVERED_STEP (-316, 61, -330) (-315.5, 61, -329.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -331) 2 8
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -331)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -331) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -331)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -331) 4500
+ACTUAL_COVERED_STEP (-316, 61, -331) (-315.5, 61, -330.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -332) 2 8
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -332)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -332) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -332)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -332) 4500
+ACTUAL_COVERED_STEP (-316, 61, -332) (-315.5, 61, -331.5) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -333) 2 8
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -333)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -333) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -333)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -333) 4500
+ACTUAL_COVERED_STEP (-316, 61, -333) (-315.5, 61, -332.33229118175086) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -334) 2 8
+HAND_CUT_NO_HARVEST netherrack (-316, 62, -334)
+DIG_BUDGET_ACTUAL netherrack (-316, 62, -334) 4500
+HAND_CUT_NO_HARVEST netherrack (-316, 61, -334)
+DIG_BUDGET_ACTUAL netherrack (-316, 61, -334) 4500
+ACTUAL_COVERED_STEP (-316, 61, -334) (-315.5, 61, -333.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-316,61,-334],"back":[-316,61,-333],"built":[[-316,61,-333],[-316,62,-333]],"steps":8,"hp":20,"food":19,"mats":6}
+LOADED_RESOURCE nether_bricks [
+  '(-269, 60, -429)',
+  '(-269, 59, -429)',
+  '(-269, 58, -429)',
+  '(-269, 57, -429)',
+  '(-269, 56, -429)',
+  '(-269, 55, -429)',
+  '(-269, 54, -429)',
+  '(-269, 53, -429)'
+]
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [
+  '(-269, 58, -358)',
+  '(-265, 68, -367)',
+  '(-253, 35, -356)',
+  '(-244, 58, -362)',
+  '(-237, 58, -358)',
+  '(-233, 39, -326)',
+  '(-233, 68, -367)'
+]
+LOADED_RESOURCE warped_nylium []
+FINAL (-315.5, 61, -333.5) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-315.5, 61, -333.5) in the_nether, health 20/20, food 19/20, alive

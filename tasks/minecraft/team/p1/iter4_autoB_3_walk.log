@@ -1,0 +1,58 @@
+program #1917 on p1: 47.8 s
+--- output ---
+CONSUMED_PROPOSAL 1792167192444 {"origin":[-327,58,-298],"path":[[-327,58,-298],[-327,58,-299],[-327,58,-300],[-327,58,-301],[-327,58,-302],[-327,58,-303],[-327,58,-304],[-327,57,-305],[-327,57,-306],[-327,57,-307]],"target":[-327,57,-307],"cutCost":9,"when":1792167192444}
+HAND_CUT_NO_HARVEST blackstone (-327, 59, -299)
+DIG_BUDGET_ACTUAL blackstone (-327, 59, -299) 10000
+HAND_CUT_NO_HARVEST blackstone (-327, 58, -299)
+DIG_BUDGET_ACTUAL blackstone (-327, 58, -299) 10000
+ACTUAL_COVERED_STEP (-327, 58, -299) (-326.5, 58, -298.5) 20
+ACTUAL_COVERED_STEP (-327, 58, -300) (-326.5, 58, -299.33229118175086) 20
+HAND_CUT_NO_HARVEST netherrack (-327, 58, -301)
+DIG_BUDGET_ACTUAL netherrack (-327, 58, -301) 4500
+ACTUAL_COVERED_STEP (-327, 58, -301) (-326.5, 58, -300.5) 20
+HAND_CUT_NO_HARVEST netherrack (-327, 59, -302)
+DIG_BUDGET_ACTUAL netherrack (-327, 59, -302) 4500
+HAND_CUT_NO_HARVEST netherrack (-327, 58, -302)
+DIG_BUDGET_ACTUAL netherrack (-327, 58, -302) 4500
+ACTUAL_COVERED_STEP (-327, 58, -302) (-326.5, 58, -301.33229118175086) 20
+HAND_CUT_NO_HARVEST netherrack (-327, 59, -303)
+DIG_BUDGET_ACTUAL netherrack (-327, 59, -303) 4500
+HAND_CUT_NO_HARVEST netherrack (-327, 58, -303)
+DIG_BUDGET_ACTUAL netherrack (-327, 58, -303) 4500
+ACTUAL_COVERED_STEP (-327, 58, -303) (-326.5, 58, -302.5) 20
+HAND_CUT_NO_HARVEST netherrack (-327, 59, -304)
+DIG_BUDGET_ACTUAL netherrack (-327, 59, -304) 4500
+HAND_CUT_NO_HARVEST netherrack (-327, 58, -304)
+DIG_BUDGET_ACTUAL netherrack (-327, 58, -304) 4500
+ACTUAL_COVERED_STEP (-327, 58, -304) (-326.5, 58, -303.33229118175086) 20
+ACTUAL_COVERED_STEP (-327, 57, -305) (-326.5, 57, -304.58745889565057) 20
+ACTUAL_COVERED_STEP (-327, 57, -306) (-326.5, 57, -305.5) 20
+ACTUAL_COVERED_STEP (-327, 57, -307) (-326.5, 57, -306.33229118175086) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-327,57,-307],"back":[-327,57,-306],"built":[[-326,57,-307],[-326,58,-307],[-326,59,-307],[-327,59,-307],[-327,57,-306],[-327,58,-306]],"steps":9,"hp":20,"food":19,"mats":22}
+LOADED_RESOURCE nether_bricks [
+  '(-269, 57, -429)',
+  '(-269, 56, -429)',
+  '(-269, 58, -429)',
+  '(-269, 55, -429)',
+  '(-269, 59, -429)',
+  '(-269, 54, -429)',
+  '(-269, 60, -429)',
+  '(-269, 53, -429)'
+]
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [
+  '(-269, 58, -358)',
+  '(-265, 68, -367)',
+  '(-253, 35, -356)',
+  '(-233, 39, -326)',
+  '(-244, 58, -362)',
+  '(-237, 58, -358)',
+  '(-233, 68, -367)'
+]
+LOADED_RESOURCE warped_nylium []
+FINAL (-326.5, 57, -306.39129369262844) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-326.5, 57, -306.4) in the_nether, health 20/20, food 19/20, alive

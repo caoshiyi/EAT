@@ -1,0 +1,16 @@
+# P3 current — 2026-10-16 15:12 UTC
+- Own p3 ONLY; edit P3.md/p3/ only. Fulltask/memoryread. ObjectiveUNFINISHED.
+- Actual #1744 FULLSEALED privatefeet(25,55,91),20hp19food, shieldOFFHAND0, STONEaxe0/pick62used, COBBLE18/DIRT3/PLANK1/STICK1/COD1/RAWIRON4/SAPLING1. Roof57COBBLE, sides/floorfull.
+- Active up_eight_checked batch max2 stages55->61->63/RAW4 retained, fresh actualpost checks aftereach. Thencoal28,63,91 +DAYcampconversion; finite FOURore job, no endlessreserve/courier.
+- #1711 FOURraw actual/fullseal23,51,95. #1723/24 firstreturnUP1passed. #1730/#1736 UPone lowceiling placement REFUSEDtwice; eachresealed20hp/RAW4, batchSTOP. Alternate#1741 nativeNORTH-UP +flat actualpassed/fullseal23,53,94; #1743 fiveoldroutecells reachedshaft25,53,91/fullseal. No protected-endingfailure inthesecases.
+- Source generic_place.js awaits defaultlookAt insideplaceBlock; suspectedextra tick whilefalling. Changed UPonly _placeBlockWithOptions(forceLook:true); #1744 twoactualpillars/fullsealpassed. Openheadroom proof only; next6includes lowceiling endpoint, notcertifiedyet. No thirdidenticaloldmethodretry.
+- #1683 first4DOWNactualSTONE layers64..61+cap/fullshell passed5.7s. Reservepriority bug consumedPLANK despitecobble; fixed explicitcobble/dirt/sandstone/planks-last fornextbatch. Capplank retrievable63, notcarried.
+- #1653 actualWOOD2 +PRIVATEsealedrefuge25,65,91. #1666 actual3pillarEXIT+closedCAMP20/20 andthirdLOGactualpickup (NOW3received). #1670 actual3logs->SHIELDoffhand0+STONEaxe0+STICKS4, sharedBANK2sticks/2planks/oldwoodtools. No raw3cut=3receipt claim beforeexit.
+- #1673 separate DAY11744 transit->PRIVATE25,65,91 adoptedFULL20/19; no campfloor/eastwall/portal edits. Oldrefugecap67COBBLE, shaft65/66/67DIRT thenredig; currentlowercap63PLANK.
+- Lowerbank last#1670: IRON1, STEEL1wear0, WATERbucket1, STICKS2/PLANKS2, COD2, oldWOODpick44/AXE29, othermisc. Coal0. Ownshieldconsumedoneofrecovered2iron. No duplicateironallocation.
+- P2 recovery CLOSED: #1620 independentlyactualBANKraw2/tools/cobble6/cod ->smelt2ingotsbank. Originaltrip#1564 STILL FAILED/death14:47:08Skeleton. P3deaths9/team40.
+- #1569 recovery lackedlifeguard andcontinuedafterrespawn; retired. Newrecoveries MUST life/worldcheck too. #1584/P2concurrentSkeleton1205dead actualACK, no solekillclaim.
+- #1637 plannedreturn includedunwalkednode afterbad14,86foot, exposed20hp. #1642 immediateclosedreturn20/20. Newwoodrefugeoperation preflightsallfeet+reverseONLYactualwalked; #1649 leafrefusal->actualclosedreturn20/20. #1653 bounded2leafcuts solveddemonstratedwoodrayblock.
+- Reusable wood_operation_refuge.js/config limits4leafcuts/4logs, actualdelta/life/recovery/type/endpoint record. Physicalcapability #1653/#1666; builderolderwood_operation.js stillUNSAFEplannedreturntemplate, retired.
+- Next: inspectbatchRAW4/fullseal; loadedcoal snapshot, then decide finite ownkit/Nethergoldbarter avenue. Needtablewood/fuel before newfieldcommitment; no nighttimecampreturn.
+- Official15:06 p3/eval_1506.txt dragon0,milestones5/12,deaths40/programs1682(snapshotwhile1684running). No victory. Detailedhistory p3/EXPERIMENT_HISTORY.md; prioriteration p3/P3_ITER3_FINAL.md.

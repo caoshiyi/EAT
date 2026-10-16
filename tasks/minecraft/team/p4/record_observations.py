@@ -10,7 +10,7 @@ program=None;added=[]
 for line in r.stdout.splitlines():
  m=re.match(r'^== #(\d+)\s+(\S+)',line)
  if m:program=int(m[1]);time=m[2];continue
- m=re.match(r'^(BRIDGE_POST|QUARRY_POST_JSON|ANCHOR_POST|SUPPORT_POST|P4_TUNNEL_POST_JSON|GAP_POST_JSON|ANCHOR_ACTUAL_JSON|P4_SHELF_ANCHOR_JSON) (\{.*\})$',line)
+ m=re.match(r'^(BRIDGE_POST|QUARRY_POST_JSON|ANCHOR_POST|SUPPORT_POST|P4_TUNNEL_POST_JSON|GAP_POST_JSON|ANCHOR_ACTUAL_JSON|P4_SHELF_ANCHOR_JSON|ENDPOINT_ACTUAL|ROOF_BRIDGE_POST) (\{.*\})$',line)
  if not m or program is None:continue
  key=(program,m[1])
  if key in keys:continue

@@ -1,0 +1,68 @@
+program #1730 on p3: 3.9 s
+--- output ---
+ISSUE Server refused to place cobblestone at (23, 52, 96): the block is still air
+SHAFT_SEALED Vec3 { x: 23, y: 52, z: 96 } true 20
+--- returned ---
+{
+ "steps": 0,
+ "issue": "Server refused to place cobblestone at (23, 52, 96): the block is still air",
+ "protectedEnd": true,
+ "lost": false,
+ "health": 20,
+ "food": 19,
+ "position": {
+  "x": 23.543262657610452,
+  "y": 52,
+  "z": 96.49003823715883
+ },
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   19,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   53
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (23.5, 52, 96.5) in overworld, health 20/20, food 19/20, alive

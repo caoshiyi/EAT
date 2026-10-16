@@ -1,0 +1,69 @@
+program #1711 on p3: 5.7 s
+--- output ---
+FLAT_ACTUAL 1 Vec3 { x: 23, y: 51, z: 95 }
+WALL_ACTUAL Vec3 { x: 24, y: 51, z: 95 } cobblestone
+WALL_ACTUAL Vec3 { x: 24, y: 52, z: 95 } cobblestone
+ENCLOSURE_ACTUAL Vec3 { x: 23, y: 51, z: 95 } true 20
+--- returned ---
+{
+ "steps": 1,
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "position": {
+  "x": 23.53250746129185,
+  "y": 51,
+  "z": 95.50804368604257
+ },
+ "health": 20,
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   19,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   45
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (23.5, 51, 95.5) in overworld, health 20/20, food 19/20, alive

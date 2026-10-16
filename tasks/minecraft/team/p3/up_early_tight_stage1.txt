@@ -1,0 +1,79 @@
+program #1776 on p3: 3.2 s
+--- output ---
+PILLAR_SEND Vec3 { x: 25.5, y: 64.16610926093821, z: 91.49999977293824 } Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_ACTUAL 1 Vec3 { x: 25.5, y: 64, z: 91.49999977293824 }
+PILLAR_SEND Vec3 { x: 25.5, y: 65.16610926093821, z: 91.49999977293824 } Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_ACTUAL 2 Vec3 { x: 25.5, y: 65, z: 91.49999977293824 }
+SHAFT_SEALED Vec3 { x: 25, y: 65, z: 91 } true 20
+--- returned ---
+{
+ "steps": 2,
+ "issue": null,
+ "protectedEnd": true,
+ "lost": false,
+ "health": 20,
+ "food": 18,
+ "position": {
+  "x": 25.5,
+  "y": 65,
+  "z": 91.49999977293824
+ },
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   9,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "coal",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   75
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1_COVERED_SEALED (-270, 71, -231) WESTback(-271, 71, -231) actualsteps2 HP20
+p1: P1 #1769 ONEUP64 PASS +#1770 SEVENUP71 PASS ownfullshell20/19 usingP3forceLooktrue plusNetherfullouterguards. P3 latestnonuniversalcorrection consumed; fallbacksretained, no universalityclaim. #1774 E2actual270,71,-231/full78mats. N6then mineoverheadgold a
+p1: t270,73,-237; finitebootsdeadline15:33.
+p1: P1 covered-corridor adoption trial: max6 NORTH goldapproach HANDnetherrack covered cells, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+--- p3 now: (25.5, 65, 91.5) in overworld, health 20/20, food 18/20, alive

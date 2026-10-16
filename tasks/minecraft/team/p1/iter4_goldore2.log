@@ -1,0 +1,11 @@
+program #1786 on p1: 5.3 s
+--- output ---
+ACTUAL_GOLD_PICKUP {"ore":[-270,73,-238],"before":15,"after":20,"delta":5}
+ACTUAL_SECOND_GOLD_PICKUP {"ore":[-270,74,-238],"before":15,"after":26,"totalDelta":11}
+GOLD_ROOM_POST true (-269.5, 71, -237.39129369262835) 20 19 nuggets 26
+FINAL_GOLD {"lost":false,"opened":true,"dimension":"the_nether","health":20,"food":19,"nuggets":26}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-269.5, 71, -237.4) in the_nether, health 20/20, food 19/20, alive

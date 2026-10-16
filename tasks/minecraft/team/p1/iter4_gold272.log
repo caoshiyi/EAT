@@ -1,0 +1,47 @@
+program #1760 on p1: 0.8 s
+--- output ---
+BODY (-271.5, 63, -230.5) the_nether 20 19
+GOLD nether_gold_ore [
+  [ -270, 73, -237 ],
+  [ -270, 73, -238 ],
+  [ -269, 73, -238 ],
+  [ -270, 73, -239 ],
+  [ -267, 51, -233 ],
+  [ -269, 73, -239 ],
+  [ -270, 74, -238 ],
+  [ -267, 51, -234 ],
+  [ -269, 74, -238 ],
+  [ -266, 51, -233 ],
+  [ -263, 73, -229 ],
+  [ -264, 74, -230 ]
+]
+GOLD gold_block [
+  [ -262, 39, -344 ],
+  [ -261, 35, -358 ],
+  [ -260, 35, -358 ],
+  [ -262, 35, -359 ],
+  [ -260, 35, -359 ],
+  [ -261, 35, -360 ],
+  [ -257, 48, -365 ],
+  [ -262, 43, -367 ],
+  [ -263, 40, -367 ],
+  [ -264, 39, -367 ],
+  [ -263, 39, -367 ],
+  [ -225, 48, -365 ]
+]
+LOCAL_COLUMN [
+  [ -8, 'air' ],        [ -7, 'air' ],
+  [ -6, 'air' ],        [ -5, 'netherrack' ],
+  [ -4, 'netherrack' ], [ -3, 'netherrack' ],
+  [ -2, 'netherrack' ], [ -1, 'netherrack' ],
+  [ 0, 'air' ],         [ 1, 'air' ],
+  [ 2, 'netherrack' ],  [ 3, 'netherrack' ],
+  [ 4, 'netherrack' ],  [ 5, 'netherrack' ],
+  [ 6, 'netherrack' ],  [ 7, 'netherrack' ],
+  [ 8, 'netherrack' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-271.5, 63, -230.5) in the_nether, health 20/20, food 19/20, alive

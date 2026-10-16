@@ -1,0 +1,80 @@
+program #1749 on p3: 6.5 s
+--- output ---
+PILLAR_SEND Vec3 { x: 25.5, y: 56.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 1 Vec3 { x: 25.5, y: 56, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 57.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 2 Vec3 { x: 25.5, y: 57, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 58.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 3 Vec3 { x: 25.5, y: 58, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 59.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 4 Vec3 { x: 25.5, y: 59, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 60.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 5 Vec3 { x: 25.5, y: 60, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 61.121599998474125, z: 91.49999980425727 } Vec3 { x: 0, y: -0.1552320045166016, z: 0 }
+UP_ACTUAL 6 Vec3 { x: 25.5, y: 61, z: 91.49999980425727 }
+SHAFT_SEALED Vec3 { x: 25, y: 61, z: 91 } true 20
+--- returned ---
+{
+ "steps": 6,
+ "issue": null,
+ "protectedEnd": true,
+ "lost": false,
+ "health": 20,
+ "food": 18,
+ "position": {
+  "x": 25.5,
+  "y": 61,
+  "z": 91.49999980425727
+ },
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   13,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   63
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4#1735 finalcheap2 zeroMOVEMENT, newGHASTafter2doorcuts; partialendpointRESEALED actual-27,65,48 20/18 BASALT42. No falsefinalgoal. ChangedFULLcovered2 walls+frontcaps builtBEFOREcut; enoughmats, no radiusrelaxation/wait. Thenactualgaze test near-29,65,48
+p4:  ifaccepted. P4goalstillpearl, noaggro yet.
+--- p3 now: (25.5, 61, 91.5) in overworld, health 20/20, food 18/20, alive

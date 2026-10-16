@@ -1,0 +1,17 @@
+program #1844 on p1: 14.3 s
+--- output ---
+CONSUMED_PROPOSAL 1792165339121 {"origin":[-275,71,-249],"path":[[-275,71,-249],[-275,71,-250],[-274,71,-250],[-274,71,-251],[-274,71,-252],[-274,71,-253],[-274,71,-254],[-274,71,-255],[-274,71,-256],[-274,71,-257],[-274,71,-258],[-274,71,-259],[-274,71,-260],[-273,71,-260]],"target":[-273,71,-260],"cutCost":3,"when":1792165339121}
+ACTUAL_COVERED_STEP (-275, 71, -250) (-274.4995797329582, 71, -249.33229118175078) 20
+ACTUAL_COVERED_STEP (-274, 71, -250) (-273.6787468573966, 71, -249.46991685148865) 20
+ACTUAL_COVERED_STEP (-274, 71, -251) (-273.536295413547, 71, -250.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-274,71,-251],"back":[-274,71,-250],"built":[[-275,70,-251],[-275,71,-251],[-275,72,-251],[-273,72,-251],[-274,73,-251],[-274,71,-252],[-274,72,-252],[-274,71,-250],[-274,72,-250]],"steps":3,"hp":20,"food":19,"mats":67}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [ '(-269, 58, -358)', '(-265, 68, -367)' ]
+LOADED_RESOURCE warped_nylium []
+FINAL (-273.536295413547, 71, -250.5) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-273.5, 71, -250.5) in the_nether, health 20/20, food 19/20, alive

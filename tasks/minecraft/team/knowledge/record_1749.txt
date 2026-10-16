@@ -1,0 +1,29 @@
+== #1749 2026-10-16T15:20:15 p3 role=execution_engineer iter=4 6.5 s
+const job={"origin":[25,55,91],"layers":6,"caps":[57]};
+if(!Number.isInteger(job.layers)||job.layers<1||job.layers>8)throw Error('bounded layers1..8 only');
+const{Vec3}=require('vec3');let lost=false,issue=null,steps=0,protectedEnd=false;const die=()=>{lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',die);bot.on('respawn',die);
+const cold=b=>b&&b.boundingBox==='block'&&!/lava|water|magma|fire|gravel|sand$/.test(b.name);
+const dirs=[[1,0],[-1,0],[0,1],[0,-1]];
+function check(){if(lost||bot.game.dimension!=='overworld'||bot.health<12)throw Error('life/world/health');const p=bot.entity.position.floored();if(p.x!==job.origin[0]||p.z!==job.origin[2])throw Error('shaft horizontal discontinuity');}
+function sides(p){return dirs.every(([x,z])=>[0,1].every(y=>cold(bot.blockAt(p.offset(x,y,z)))));}
+async function seal(){check();await bot.waitForTicks(5);const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(!bot.entity.onGround||!cold(bot.blockAt(p.offset(0,-1,0)))||!sides(p))throw Error('cannot seal unstable/open actualfoot '+p);if(!cold(bot.blockAt(q))){if(bot.blockAt(q).boundingBox!=='empty')throw Error('cap unexpected');const i=['cobblestone','dirt','sandstone','spruce_planks'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!i)throw Error('no cap material');const d=dirs.find(([x,z])=>cold(bot.blockAt(q.offset(x,0,z))));if(!d)throw Error('cap reference absent');await bot.equip(i,'hand');await bot.placeBlock(bot.blockAt(q.offset(d[0],0,d[1])),new Vec3(-d[0],0,-d[1]));await bot.waitForTicks(6);}protectedEnd=cold(bot.blockAt(q))&&cold(bot.blockAt(p.offset(0,-1,0)))&&sides(p)&&bot.entity.onGround;console.log('SHAFT_SEALED',p,protectedEnd,bot.health);if(!protectedEnd)throw Error('cap post failed');}
+try{bot.pathfinder.setGoal(null);bot.clearControlStates();check();const start=bot.entity.position;if(start.distanceTo(new Vec3(job.origin[0]+.41,job.origin[1],job.origin[2]+.31))>.6||!cold(bot.blockAt(start.floored().offset(0,2,0)))||!sides(start.floored()))throw Error('start not actual sealed origin');for(let k=0;k<job.layers;k++){check();const p=bot.entity.position.floored(),q=p.offset(0,1,0);if(!bot.entity.onGround||!sides(q))throw Error('next UP sides notfull');const head=p.offset(0,2,0),block=bot.blockAt(head);if(block.boundingBox==='block'){if(!Array.isArray(job.caps)||!job.caps.includes(head.y)||!['cobblestone','spruce_planks','dirt'].includes(block.name))throw Error('unknown UP cap '+head+' '+block.name);await bot.equip(bot.inventory.items().find(i=>i.name==='stone_pickaxe'),'hand');let t;try{await Promise.race([bot.dig(block),new Promise((_,r)=>t=setTimeout(()=>{bot.stopDigging();r(Error('cap dig bound'));},5000))]);}finally{clearTimeout(t);}await bot.waitForTicks(6);check();}if(!['air','cave_air'].includes(bot.blockAt(head).name))throw Error('UP head notair');const base=bot.blockAt(p.offset(0,-1,0)),i=['cobblestone','dirt','sandstone'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!i||!cold(base))throw Error('pillar base/material');await bot.equip(i,'hand');await bot.lookAt(base.position.offset(.5,1,.5),true);bot.setControlState('jump',true);try{let high=false;for(let t=0;t<15;t++){check();await bot.waitForTicks(1);if(bot.entity.position.y>p.y+1.01){high=true;break;}}if(!high)throw Error('jump actual low');await bot.waitForTicks(2);console.log('PILLAR_SEND',bot.entity.position,bot.entity.velocity);await bot._placeBlockWithOptions(base,new Vec3(0,1,0),{forceLook:true,swingArm:'right'});}finally{bot.setControlState('jump',false);}await bot.waitForTicks(10);check();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.15)throw Error('UP actualsettle');steps++;console.log('UP_ACTUAL',steps,bot.entity.position);}}
+
+catch(e){issue=e.message;console.log('ISSUE',issue);}finally{try{if(!lost)await seal();}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();bot.removeListener('death',die);bot.removeListener('respawn',die);}}
+return{steps,issue,protectedEnd,lost,health:bot.health,food:bot.food,position:bot.entity.position,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+PILLAR_SEND Vec3 { x: 25.5, y: 56.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 1 Vec3 { x: 25.5, y: 56, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 57.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 2 Vec3 { x: 25.5, y: 57, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 58.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 3 Vec3 { x: 25.5, y: 58, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 59.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 4 Vec3 { x: 25.5, y: 59, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 60.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 5 Vec3 { x: 25.5, y: 60, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 61.121599998474125, z: 91.49999980425727 } Vec3 { x: 0, y: -0.1552320045166016, z: 0 }
+UP_ACTUAL 6 Vec3 { x: 25.5, y: 61, z: 91.49999980425727 }
+SHAFT_SEALED Vec3 { x: 25, y: 61, z: 91 } true 20
+-- returned --
+{"steps": 6, "issue": null, "protectedEnd": true, "lost": false, "health": 20, "food": 18, "position": {"x": 25.5, "y": 61, "z": 91.49999980425727}, "inventory": [["stone_axe", 1, 0], ["stick", 1, null], ["cooked_cod", 1, null], ["dirt", 3, null], ["cobblestone", 13, null], ["spruce_planks", 1, null], ["raw_iron", 4, null], ["stone_pickaxe", 1, 63], ["spruce_sapling", 1, null]]}

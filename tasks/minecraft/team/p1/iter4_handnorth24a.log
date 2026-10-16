@@ -1,0 +1,42 @@
+program #1717 on p1: 47.2 s
+--- output ---
+ACTUAL_HAND_NETHERRACK (-252, 64, -182)
+ACTUAL_HAND_NETHERRACK (-252, 63, -182)
+ACTUAL_COVERED_STEP (-252, 63, -182) (-251.49060008750573, 63, -181.5) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -183)
+ACTUAL_HAND_NETHERRACK (-252, 63, -183)
+ACTUAL_COVERED_STEP (-252, 63, -183) (-251.49598780936375, 63, -182.3322425242005) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -184)
+ACTUAL_HAND_NETHERRACK (-252, 63, -184)
+ACTUAL_COVERED_STEP (-252, 63, -184) (-251.49778374830174, 63, -183.5) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -185)
+ACTUAL_HAND_NETHERRACK (-252, 63, -185)
+ACTUAL_COVERED_STEP (-252, 63, -185) (-251.49906656434095, 63, -184.33228832953554) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -186)
+ACTUAL_HAND_NETHERRACK (-252, 63, -186)
+ACTUAL_COVERED_STEP (-252, 63, -186) (-251.4993231275488, 63, -185.5) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -187)
+ACTUAL_HAND_NETHERRACK (-252, 63, -187)
+ACTUAL_COVERED_STEP (-252, 63, -187) (-251.49957969075663, 63, -186.33229084591014) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -188)
+ACTUAL_HAND_NETHERRACK (-252, 63, -188)
+ACTUAL_COVERED_STEP (-252, 63, -188) (-251.49957969075663, 63, -187.5) 20
+ACTUAL_HAND_NETHERRACK (-252, 64, -189)
+ACTUAL_HAND_NETHERRACK (-252, 63, -189)
+ACTUAL_COVERED_STEP (-252, 63, -189) (-251.49957969075663, 63, -188.33229118175078) 20
+ACTUAL_COVERED_STEP (-252, 63, -189) (-251.49957969075663, 63, -188.33229118175078) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-252,63,-189],"back":[-252,63,-188],"built":[[-252,63,-188],[-252,64,-188]],"steps":8,"hp":20,"food":19,"mats":46}
+FINAL (-251.49957969075663, 63, -188.39129369262835) the_nether 20 19 dead false adopted true
+--- error ---
+Error: FLUID_GRAVITY_OR_UNKNOWN (-251, 64, -191) lava
+    at dryScan (p1-program-1717.js:6:211)
+    at p1-program-1717.js:20:157
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+p3: P3 batchphysicalPASS #1709/#1710/#1711: fourRAWIRONactual, sealed23,51,95/20hp19food, stonepick45used/COBBLE19/shield0/axe0. Threechecks exactXYZ/fullseal/life/ironcounts passed. Useful ownmaterial reserve; NOTcampbankyet. Newdriver p3/run_mine_batch.py li
+p3: mited6stages stopsfirstfailure.
+p4: P4#1707 currentFULLrim(-17,65,48)20/18/BASALT75+NETH5+BLACK5,picks130/128. #1715 destination(-29,65,48) virtualEYEclear toENDER273; no needY64descent. Boundedcheaproof2WEST trial now: floor+lowroof, fullendpoint; BELOWMAGMA topgap6/dist8/fullfloors copied 
+p4: P1 actualfieldpolicy, GHAST4rays nextproposedcut excluded. Savesmaterial vs fullbridge; no mandatorylongreturn.
+--- p1 now: (-251.5, 63, -188.4) in the_nether, health 20/20, food 19/20, alive

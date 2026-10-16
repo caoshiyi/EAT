@@ -1,0 +1,43 @@
+== #1820 2026-10-16T15:36:51 p3 role=execution_engineer iter=4 45.2 s
+const{Vec3}=require('vec3');let lost=false,f=null,issue=null;const die=()=>{lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',die);bot.on('respawn',die);
+const foot=new Vec3(35,66,80),roof=foot.offset(0,2,0),dirs=[[1,0],[-1,0],[0,1],[0,-1]];
+const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
+const full=b=>b&&b.boundingBox==='block'&&!/water|lava|fire|magma/.test(b.name)&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+function check(){if(lost||bot.health<16||bot.game.dimension!=='overworld'||!bot.entity.position.floored().equals(foot))throw Error('forge body/life');}
+function protectedNow(){return full(bot.blockAt(foot.offset(0,-1,0)))&&full(bot.blockAt(roof))&&dirs.every(([x,z])=>[0,1].every(y=>full(bot.blockAt(foot.offset(x,y,z)))));}
+async function dig(q){check();const b=bot.blockAt(q);if(!['cobblestone','stone','dirt','grass_block','sandstone'].includes(b.name))throw Error('forge cutunexpected '+b.name);await bot.equip(bot.inventory.items().find(i=>i.name==='stone_pickaxe'),'hand');let t;try{await Promise.race([bot.dig(b),new Promise((_,r)=>t=setTimeout(()=>{bot.stopDigging();r(Error('forge dig bound'));},6000))]);}finally{clearTimeout(t);}await bot.waitForTicks(6);check();}
+async function craft(name,n,table=null){const r=bot.recipesFor(bot.registry.itemsByName[name].id,null,1,table)[0];if(!r)throw Error('recipe '+name);const before=count(name);await bot.craft(r,n,table);await bot.waitForTicks(6);check();console.log('CRAFT_RECEIPT',name,before,count(name));if(count(name)<=before)throw Error('craft missing '+name);}
+let furnacePos=null;
+try{bot.pathfinder.setGoal(null);bot.clearControlStates();check();if(!protectedNow()||count('raw_iron')!==4||count('coal')<1||count('spruce_log')<1||count('cobblestone')<8||count('stick')<2)throw Error('forge preconditions');
+console.log('PRE',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));await craft('spruce_planks',1);await craft('crafting_table',1);
+await dig(roof);await bot.equip(bot.inventory.items().find(i=>i.name==='crafting_table'),'hand');await bot.placeBlock(bot.blockAt(roof.offset(1,0,0)),new Vec3(-1,0,0));await bot.waitForTicks(6);check();if(bot.blockAt(roof).name!=='crafting_table'||!protectedNow())throw Error('table roof not actual');console.log('TABLE_ROOF_ACTUAL',roof);
+await craft('furnace',1,bot.blockAt(roof));
+for(const[x,z]of dirs){const q=foot.offset(x,0,z),b=bot.blockAt(q);if(!['stone','dirt','grass_block','sandstone'].includes(b.name))continue;if(!full(bot.blockAt(q.offset(0,-1,0)))||!full(bot.blockAt(q.offset(0,1,0)))||/sand$|gravel/.test(bot.blockAt(q.offset(0,1,0)).name))continue;const outward=q.offset(x,0,z),perp=[q.offset(-z,0,x),q.offset(z,0,-x)];if(![outward,...perp].every(p=>full(bot.blockAt(p))))continue;furnacePos=q;break;}
+if(!furnacePos)throw Error('no fully-contained furnacewall');await dig(furnacePos);await bot.equip(bot.inventory.items().find(i=>i.name==='furnace'),'hand');await bot.placeBlock(bot.blockAt(furnacePos.offset(0,-1,0)),new Vec3(0,1,0));await bot.waitForTicks(6);check();if(bot.blockAt(furnacePos).name!=='furnace'||!protectedNow())throw Error('furnacewall not actual');console.log('FURNACE_WALL_ACTUAL',furnacePos);
+f=await bot.openFurnace(bot.blockAt(furnacePos));if(f.inputItem()||f.outputItem())throw Error('newfurnaceoccupied');await f.putInput(bot.registry.itemsByName.raw_iron.id,null,4);await f.putFuel(bot.registry.itemsByName.coal.id,null,1);const end=Date.now()+55000;while(Date.now()<end){check();if(f.outputItem()?.name==='iron_ingot'&&f.outputItem().count===4&&!f.inputItem())break;await bot.waitForTicks(10);}if(f.outputItem()?.name!=='iron_ingot'||f.outputItem().count!==4)throw Error('four ingots not actual');await f.takeOutput();f.close();f=null;await bot.waitForTicks(6);check();if(count('iron_ingot')!==4||count('raw_iron')!==0)throw Error('closed ingot receipt');console.log('INGOTS_ACTUAL',count('iron_ingot'));
+await craft('iron_pickaxe',1,bot.blockAt(roof));if(!bot.inventory.items().some(i=>i.name==='iron_pickaxe'&&i.durabilityUsed===0))throw Error('fresh ironpick missing');const food=bot.inventory.items().find(i=>i.name==='cooked_cod');if(food&&bot.food<20){await bot.equip(food,'hand');await bot.consume();await bot.waitForTicks(6);check();}
+}catch(e){issue=e.message;console.log('FORGE_ISSUE',issue);}finally{if(f)f.close();try{if(!lost&&!full(bot.blockAt(roof))){await bot.equip(bot.inventory.items().find(i=>['cobblestone','dirt'].includes(i.name)),'hand');await bot.placeBlock(bot.blockAt(roof.offset(1,0,0)),new Vec3(-1,0,0));await bot.waitForTicks(5);}}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();bot.removeListener('death',die);bot.removeListener('respawn',die);}}
+return{issue,lost,protectedEnd:!lost&&protectedNow(),position:bot.entity.position,health:bot.health,food:bot.food,table:bot.blockAt(roof).name,furnace:furnacePos?.toString(),inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),shield:bot.inventory.slots[45]?.name};
+-- output --
+PRE Vec3 { x: 35.31497854544737, y: 66, z: 80.49999999999994 } 20 [
+  [ 'stick', 3 ],
+  [ 'cooked_cod', 1 ],
+  [ 'stone_axe', 1 ],
+  [ 'cobblestone', 9 ],
+  [ 'spruce_planks', 2 ],
+  [ 'raw_iron', 4 ],
+  [ 'coal', 4 ],
+  [ 'dirt', 3 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'spruce_log', 4 ]
+]
+CRAFT_RECEIPT spruce_planks 2 6
+CRAFT_RECEIPT crafting_table 0 1
+TABLE_ROOF_ACTUAL Vec3 { x: 35, y: 68, z: 80 }
+CRAFT_RECEIPT furnace 0 1
+FURNACE_WALL_ACTUAL Vec3 { x: 36, y: 66, z: 80 }
+INGOTS_ACTUAL 4
+CRAFT_RECEIPT iron_pickaxe 0 1
+-- returned --
+{"issue": null, "lost": false, "protectedEnd": true, "position": {"x": 35.31497854544737, "y": 66, "z": 80.49999999999994}, "health": 20, "food": 18, "table": "crafting_table", "furnace": "(36, 66, 80)", "inventory": [["spruce_log", 3, null], ["spruce_planks", 2, null], ["cobblestone", 1, null], ["iron_ingot", 1, null], ["coal", 3, null], ["stick", 1, null], ["iron_pickaxe", 1, 0], ["stone_axe", 1, 10], ["cooked_cod", 1, null], ["dirt", 4, null], ["stone_pickaxe", 1, 82], ["spruce_sapling", 1, null]], "shield": "shield"}

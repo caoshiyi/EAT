@@ -1,0 +1,76 @@
+program #1837 on p3: 10.5 s
+--- output ---
+FLAT_ACTUAL 1 Vec3 { x: 35, y: 66, z: 79 }
+FLAT_ACTUAL 2 Vec3 { x: 35, y: 66, z: 78 }
+FLAT_ACTUAL 3 Vec3 { x: 35, y: 66, z: 77 }
+WALL_ACTUAL Vec3 { x: 35, y: 66, z: 78 } dirt
+WALL_ACTUAL Vec3 { x: 35, y: 67, z: 78 } dirt
+ENCLOSURE_ACTUAL Vec3 { x: 35, y: 66, z: 77 } true 20
+--- returned ---
+{
+ "steps": 3,
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "position": {
+  "x": 35.49989839234148,
+  "y": 66,
+  "z": 77.54184718590521
+ },
+ "health": 20,
+ "inventory": [
+  [
+   "spruce_log",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "iron_ingot",
+   1,
+   null
+  ],
+  [
+   "coal",
+   3,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stone_axe",
+   1,
+   10
+  ],
+  [
+   "dirt",
+   21,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   104
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (35.5, 66, 77.5) in overworld, health 20/20, food 20/20, alive

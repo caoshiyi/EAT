@@ -1,0 +1,75 @@
+== #1953 2026-10-16T16:32:16 p3 role=execution_engineer iter=4 32 s
+const{Vec3}=require('vec3');let dead=false,lost=false,phase='ow-exit',armedUntil=0,retreat=false,issue=null,protectedEnd=false,endpoint='none';const death=()=>{dead=true;lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};const respawn=()=>{bot.pathfinder.setGoal(null);bot.clearControlStates();if(Date.now()<armedUntil&&phase==='transition')console.log('EXPECTED_WORLD_RESPAWN');else lost=true;};bot.on('death',death);bot.on('respawn',respawn);
+const full=b=>b&&b.boundingBox==='block'&&!/lava|water|magma_block|fire/.test(b.name)&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),dirs=[[1,0],[-1,0],[0,1],[0,-1]],count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
+function check(w){if(dead||lost||bot.health<(retreat?1:12))throw Error('life/health');if(w&&bot.game.dimension!==w)throw Error('world '+bot.game.dimension+' expected '+w);}
+async function ticks(n){check();await bot.waitForTicks(n);check();}
+async function go(x,y,z,ms=12000){check();const m=new Movements(bot);m.canDig=false;m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;for(const n of['water','lava','fire','soul_fire','magma_block'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);if(bot.game.dimension==='the_nether')m.getMoveDiagonal=()=>{};const prior=m.getNeighbors.bind(m);m.getNeighbors=node=>prior(node).filter(n=>{const f=bot.blockAt(new Vec3(n.x,n.y-1,n.z));return f&&!['lava','water','fire','magma_block'].includes(f.name);});bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=2000;let t;const goal=new goals.GoalBlock(x,y,z);try{await Promise.race([bot.pathfinder.goto(goal),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('go bound'));},ms))]);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();}await ticks(4);if(!goal.isEnd(bot.entity.position.floored()))throw Error('not arrived '+[x,y,z]+' '+bot.entity.position);}
+async function dig(q){check();const b=bot.blockAt(q);if(!['crafting_table','dirt','grass_block','cobblestone','sand'].includes(b.name))throw Error('unknown owncut '+b.name+' '+q);const pick=bot.inventory.items().filter(i=>i.name.endsWith('_pickaxe')).sort((a,b)=>(a.durabilityUsed||0)-(b.durabilityUsed||0))[0];if(b.name==='cobblestone')await bot.equip(pick,'hand');else await bot.unequip('hand');let t;try{await Promise.race([bot.dig(b),new Promise((_,r)=>t=setTimeout(()=>{bot.stopDigging();r(Error('dig bound'));},6500))]);}finally{clearTimeout(t);}await ticks(6);}
+async function put(q,ref,face){check();if(full(bot.blockAt(q)))return;if(!['air','cave_air','void_air','snow'].includes(bot.blockAt(q)?.name))throw Error('target occupied '+q+' '+bot.blockAt(q)?.name);if(!full(bot.blockAt(ref)))throw Error('reference absent '+ref);const i=['dirt','cobblestone'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!i)throw Error('no cold material BEFOREplace');await bot.equip(i,'hand');await bot._placeBlockWithOptions(bot.blockAt(ref),face,{forceLook:true,swingArm:'right'});await ticks(3);if(!full(bot.blockAt(q)))throw Error('placement notactual '+q);console.log('PLACED_ACTUAL',q,bot.blockAt(q).name);}
+async function pillar(n){for(let k=0;k<n;k++){check();const p=bot.entity.position.floored(),base=bot.blockAt(p.offset(0,-1,0));if(!full(base)||bot.blockAt(p.offset(0,2,0)).boundingBox!=='empty')throw Error('pillar floor/head');const i=['dirt','cobblestone'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!i)throw Error('pillar reserve');await bot.equip(i,'hand');await bot.lookAt(base.position.offset(.5,1,.5),true);bot.setControlState('jump',true);try{let high=false;for(let j=0;j<15;j++){await ticks(1);if(bot.entity.position.y>p.y+1.15){high=true;break;}}if(!high)throw Error('pillar nothigh');await bot._placeBlockWithOptions(base,new Vec3(0,1,0),{forceLook:true,swingArm:'right'});}finally{bot.setControlState('jump',false);}await ticks(10);if(Math.abs(bot.entity.position.y-p.y-1)>.15)throw Error('pillar notsettled');console.log('UP_ACTUAL',bot.entity.position);}}
+async function gate(south){check('overworld');const gp=new Vec3(6,68,90);let b=bot.blockAt(gp);if(!b.name.endsWith('_door'))throw Error('portaldoor changed');if(!b.getProperties().open){await bot.activateBlock(b);await ticks(5);}b=bot.blockAt(gp);const s=b.shapes[0],tx=s[3]<.5?6+(s[3]+1)/2:6+s[0]/2;for(let k=0;k<35&&Math.abs(bot.entity.position.x-tx)>.04;k++){await bot.lookAt(bot.entity.position.offset(Math.sign(tx-bot.entity.position.x)*3,1.62,0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await ticks(1);bot.clearControlStates();await ticks(3);}if(Math.abs(bot.entity.position.x-tx)>.05)throw Error('gate alignment');await bot.lookAt(bot.entity.position.offset(0,1.62,south?3:-3),true);bot.setControlState('forward',true);try{for(let k=0;k<75;k++){await ticks(1);if(bot.game.dimension!=='overworld'||(south?bot.entity.position.z>91.15:bot.entity.position.z<89.6))break;}}finally{bot.clearControlStates();}if(bot.game.dimension==='overworld'){if(south?bot.entity.position.z<91.1:bot.entity.position.z>89.8)throw Error('gate didnotpass');b=bot.blockAt(gp);if(b.getProperties().open){await bot.activateBlock(b);await ticks(5);}}console.log('GATE_ACTUAL',south,bot.game.dimension,bot.entity.position);}
+async function waitWorld(w,ms){const end=Date.now()+ms;while(bot.game.dimension!==w&&Date.now()<end)await ticks(4);check(w);}
+function cube(q){return full(bot.blockAt(q.offset(0,-1,0)))&&full(bot.blockAt(q.offset(0,2,0)))&&dirs.every(([x,z])=>[0,1].every(y=>full(bot.blockAt(q.offset(x,y,z)))));}
+async function owRefuge(){check('overworld');if(bot.entity.position.z>89.8)await gate(false);await go(12,67,82);const p=new Vec3(12,67,82);const capItem=['dirt','cobblestone'].map(n=>bot.inventory.items().find(i=>i.name===n)).find(Boolean);if(!capItem)throw Error('no OWcap BEFOREdig');for(const y of[66,65,64]){await dig(new Vec3(12,y,82));await ticks(8);}await put(new Vec3(12,66,82),new Vec3(13,66,82),new Vec3(-1,0,0));protectedEnd=cube(new Vec3(12,64,82));endpoint='ow-refuge12';}
+try{bot.pathfinder.setGoal(null);bot.clearControlStates();check('overworld');if(!bot.entity.position.floored().equals(new Vec3(36,65,80))||!cube(new Vec3(36,65,80)))throw Error('startnotsealed36');if(count('dirt')+count('cobblestone')<19||!count('stone_pickaxe'))throw Error('landing budget/kit');await dig(new Vec3(35,67,80));await ticks(15);if(!count('crafting_table'))throw Error('table not actualreceived');await put(new Vec3(35,67,80),new Vec3(35,66,80),new Vec3(0,1,0));await dig(new Vec3(36,67,80));await dig(new Vec3(36,68,80));await pillar(4);for(const q of[[26,68,86],[4,67,88],[6,68,89]])await go(...q);
+phase='transition';armedUntil=Date.now()+20000;await gate(true);await waitWorld('the_nether',16000);await ticks(5);phase='nether-build';armedUntil=0;console.log('NETHER_ACTUAL',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));if(bot.entity.position.distanceTo(new Vec3(4.5,65,3.5))>3)throw Error('newlanding mismatch');
+console.log('STRUCTURES_LOADED',bot.findBlocks({matching:[bot.registry.blocksByName.nether_bricks.id,bot.registry.blocksByName.nether_brick_fence.id],maxDistance:160,count:12}).map(p=>[p.x,p.y,p.z]));console.log('GOLD_LOADED',bot.findBlocks({matching:bot.registry.blocksByName.nether_gold_ore.id,maxDistance:64,count:20}).map(p=>[p.x,p.y,p.z]));console.log('LANDING_ENTITIES',Object.values(bot.entities).filter(e=>e.position&&e!==bot.entity&&e.position.distanceTo(bot.entity.position)<24).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]));
+const q=new Vec3(6,65,2);await put(q.offset(0,-1,0),new Vec3(5,64,2),new Vec3(1,0,0));for(const[x,z]of[[1,0],[0,1],[0,-1]])await put(q.offset(x,-1,z),q.offset(0,-1,0),new Vec3(x,0,z));for(const[x,z]of[[1,0],[0,1],[0,-1]])for(const y of[0,1])await put(q.offset(x,y,z),q.offset(x,y-1,z),new Vec3(0,1,0));await put(new Vec3(6,67,1),new Vec3(6,66,1),new Vec3(0,1,0));await put(new Vec3(6,67,2),new Vec3(6,67,1),new Vec3(0,0,1));await put(new Vec3(5,67,2),new Vec3(6,67,2),new Vec3(-1,0,0));
+for(const p of[[4,65,2],[5,65,2],[6,65,2]])await go(...p,5000);for(const y of[65,66])await put(new Vec3(5,y,2),new Vec3(5,y-1,2),new Vec3(0,1,0));protectedEnd=cube(q)&&bot.entity.position.floored().equals(q);endpoint='nether-east6';console.log('NETHER_EAST_FULL',protectedEnd,bot.health,q);if(!protectedEnd)throw Error('nether end notfull');
+}catch(e){issue=e.message;console.log('MISSION_ISSUE',issue,bot.game.dimension,bot.entity.position,bot.health);retreat=true;try{if(!dead&&!lost){if(bot.game.dimension==='overworld'){phase='ow-recover';await owRefuge();}else{const q=new Vec3(6,65,2);if(bot.entity.position.floored().equals(q)){try{for(const y of[65,66])await put(new Vec3(5,y,2),new Vec3(5,y-1,2),new Vec3(0,1,0));protectedEnd=cube(q);endpoint='nether-east6';}catch(x){console.log('ROOM_REPAIR_ISSUE',x.message);}}if(!protectedEnd){for(const y of[66,65]){const b=bot.blockAt(new Vec3(5,y,2));if(['dirt','cobblestone'].includes(b.name))await dig(b.position);}phase='transition';armedUntil=Date.now()+35000;try{await go(4,65,3,6000);}catch(x){if(bot.game.dimension!=='overworld')console.log('RETURN_PORTAL_GO',x.message);}await waitWorld('overworld',26000);await ticks(5);phase='ow-recover';armedUntil=0;await owRefuge();}}}}catch(x){console.log('RECOVERY_FAILED_ACTUAL',x.message,bot.entity.position,bot.health);}}
+finally{bot.pathfinder.setGoal(null);bot.clearControlStates();bot.removeListener('death',death);bot.removeListener('respawn',respawn);}
+return{issue,dead,lost,protectedEnd,endpoint,dimension:bot.game.dimension,position:bot.entity.position,health:bot.health,food:bot.food,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+PLACED_ACTUAL Vec3 { x: 35, y: 67, z: 80 } dirt
+UP_ACTUAL Vec3 { x: 36.5, y: 66, z: 80.50047272185967 }
+UP_ACTUAL Vec3 { x: 36.5, y: 67, z: 80.50047272185967 }
+UP_ACTUAL Vec3 { x: 36.5, y: 68, z: 80.50047272185967 }
+UP_ACTUAL Vec3 { x: 36.5, y: 69, z: 80.50047272185967 }
+GATE_ACTUAL true overworld Vec3 { x: 6.389079332675251, y: 68, z: 91.46768542423779 }
+EXPECTED_WORLD_RESPAWN
+NETHER_ACTUAL Vec3 { x: 3.3890793326752506, y: 65, z: 3.5 } 20 [
+  [ 'gravel', 1 ],
+  [ 'cooked_cod', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'dirt', 6 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'cobblestone', 11 ],
+  [ 'crafting_table', 1 ]
+]
+STRUCTURES_LOADED []
+GOLD_LOADED [
+  [ -8, 48, -30 ],  [ -9, 48, -30 ],
+  [ -8, 48, -31 ],  [ -9, 48, -31 ],
+  [ -30, 71, -34 ], [ -2, 116, -16 ],
+  [ 4, 111, -27 ],  [ -27, 64, -43 ],
+  [ -2, 117, -16 ], [ -46, 87, 20 ],
+  [ -29, 115, 9 ],  [ -29, 115, 10 ],
+  [ -30, 115, 9 ],  [ -28, 109, 30 ],
+  [ -30, 115, 10 ], [ -29, 116, 9 ],
+  [ -29, 116, 10 ], [ -28, 110, 30 ],
+  [ -30, 116, 9 ],  [ -29, 109, 31 ]
+]
+LANDING_ENTITIES [
+  [
+    27307,
+    'magma_cube',
+    Vec3 {
+      x: 4.324912854309202,
+      y: 66.11770387687683,
+      z: 2.4962182470975636
+    },
+    1
+  ]
+]
+PLACED_ACTUAL Vec3 { x: 7, y: 66, z: 2 } dirt
+PLACED_ACTUAL Vec3 { x: 6, y: 65, z: 3 } dirt
+PLACED_ACTUAL Vec3 { x: 6, y: 66, z: 3 } dirt
+PLACED_ACTUAL Vec3 { x: 6, y: 67, z: 1 } dirt
+PLACED_ACTUAL Vec3 { x: 6, y: 67, z: 2 } dirt
+PLACED_ACTUAL Vec3 { x: 5, y: 67, z: 2 } dirt
+PLACED_ACTUAL Vec3 { x: 5, y: 65, z: 2 } cobblestone
+PLACED_ACTUAL Vec3 { x: 5, y: 66, z: 2 } cobblestone
+NETHER_EAST_FULL true 20 Vec3 { x: 6, y: 65, z: 2 }
+-- returned --
+{"issue": null, "dead": false, "lost": false, "protectedEnd": true, "endpoint": "nether-east6", "dimension": "the_nether", "position": {"x": 6.330632391915857, "y": 65, "z": 2.5110432326282663}, "health": 20, "food": 20, "inventory": [["gravel", 1, null], ["cooked_cod", 1, null], ["wooden_pickaxe", 1, 45], ["stone_pickaxe", 1, 31], ["wooden_pickaxe", 1, 2], ["cobblestone", 10, null], ["crafting_table", 1, null]]}

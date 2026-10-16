@@ -1,0 +1,16 @@
+program #1833 on p1: 13.7 s
+--- output ---
+ACTUAL_COVERED_STEP (-275, 71, -247) (-274.4995797329582, 71, -246.5) 20
+ACTUAL_COVERED_STEP (-275, 71, -248) (-274.4995797329582, 71, -247.33229118175078) 20
+ACTUAL_COVERED_STEP (-275, 71, -249) (-274.4995797329582, 71, -248.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-275,71,-249],"back":[-275,71,-248],"built":[[-276,70,-249],[-276,71,-249],[-276,72,-249],[-275,73,-249],[-275,71,-250],[-275,72,-250],[-275,71,-248],[-275,72,-248]],"steps":3,"hp":20,"food":19,"mats":74}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [ '(-269, 58, -358)', '(-265, 68, -367)' ]
+LOADED_RESOURCE warped_nylium []
+FINAL (-274.4995797329582, 71, -248.5) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-274.5, 71, -248.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,19 @@
+program #1612 on p1: 3.1 s
+--- output ---
+ACTUAL (-100.50000000000277, 63, -179.39129369262835) the_nether 20 19 [["quartz",3,null],["sweet_berries",13,null],["iron_pickaxe",1,245],["cobblestone_slab",2,null],["gold_ingot",1,null],["crafting_table",1,null],["gold_nugget",11,null],["basalt",9,null],["stone_axe",1,4],["stone_pickaxe",1,58],["netherrack",35,null],["blackstone",26,null],["polished_blackstone",2,null],["stone_pickaxe",1,57],["stone_pickaxe",1,57],["basalt",64,null]]
+RES nether_bricks []
+RES spawner []
+RES chest []
+RES warped_stem []
+RES crimson_stem []
+RES warped_nylium []
+RES crimson_nylium []
+BIOMES {"nether_wastes":{"p":[-149,63,-196],"d":50.59644256269407},"warped_forest":{"p":[-213,63,-84],"d":147.5127113166862},"basalt_deltas":{"p":[-101,63,-180],"d":0},"soul_sand_valley":{"p":[11,63,-100],"d":137.63720427268203}}
+DIRECTION -1 0 solidprefix 7 gaps [[8,"blackstone","blackstone","blackstone"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"],[13,"air","air","air"],[14,"air","air","air"],[15,"air","air","air"],[16,"air","air","air"],[17,"air","air","air"],[18,"air","air","air"],[19,"air","air","air"]]
+DIRECTION 0 -1 solidprefix 21 gaps [[22,"basalt","basalt","basalt"],[23,"basalt","basalt","basalt"],[24,"basalt","basalt","basalt"],[25,"basalt","basalt","basalt"],[26,"basalt","basalt","basalt"],[27,"basalt","basalt","basalt"],[29,"air","basalt","basalt"],[30,"air","basalt","basalt"],[31,"air","basalt","basalt"],[32,"air","basalt","basalt"],[33,"air","air","basalt"],[34,"air","air","air"]]
+DIRECTION 1 0 solidprefix 15 gaps [[16,"basalt","basalt","magma_block"],[17,"basalt","basalt","magma_block"],[18,"basalt","basalt","magma_block"],[20,"basalt","basalt","basalt"],[28,"basalt","basalt","basalt"],[29,"air","air","air"],[30,"air","air","air"],[31,"air","air","air"],[32,"air","air","air"],[33,"air","air","air"],[34,"air","air","air"],[35,"air","air","air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-100.5, 63, -179.4) in the_nether, health 20/20, food 19/20, alive

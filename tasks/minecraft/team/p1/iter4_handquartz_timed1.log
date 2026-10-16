@@ -1,0 +1,27 @@
+program #1908 on p1: 25 s
+--- output ---
+CONSUMED_PROPOSAL 1792166910536 {"origin":[-320,58,-285],"path":[[-320,58,-285],[-320,58,-286]],"when":1792166910536}
+HAND_CUT_NO_HARVEST nether_quartz_ore (-320, 59, -286)
+DIG_BUDGET_ACTUAL nether_quartz_ore (-320, 59, -286) 17500
+HAND_CUT_NO_HARVEST netherrack (-320, 58, -286)
+DIG_BUDGET_ACTUAL netherrack (-320, 58, -286) 4500
+ACTUAL_COVERED_STEP (-320, 58, -286) (-319.49959668343075, 58, -285.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-320,58,-286],"back":[-320,58,-285],"built":[[-320,58,-285],[-320,59,-285]],"steps":1,"hp":20,"food":19,"mats":36}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [
+  '(-269, 58, -358)',
+  '(-233, 39, -326)',
+  '(-265, 68, -367)',
+  '(-253, 35, -356)',
+  '(-244, 58, -362)',
+  '(-237, 58, -358)',
+  '(-233, 68, -367)'
+]
+LOADED_RESOURCE warped_nylium []
+FINAL (-319.49959668343075, 58, -285.5) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_ROOF_BRIDGE_SEALED 0,67,44 steps27 issueFOE magma_cube 2.884919177702371,69,3.325842724481235
+--- p1 now: (-319.5, 58, -285.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,62 @@
+program #1945 on p3: 5.8 s
+--- output ---
+ROUTE_ACTUAL 1 Vec3 { x: 39, y: 63, z: 80 }
+ROUTE_ACTUAL 2 Vec3 { x: 38, y: 63, z: 80 }
+ROUTE_ACTUAL 3 Vec3 { x: 37, y: 63, z: 80 }
+ROUTE_ACTUAL 4 Vec3 { x: 36, y: 63, z: 80 }
+WALL_ACTUAL Vec3 { x: 37, y: 63, z: 80 } cobblestone
+WALL_ACTUAL Vec3 { x: 37, y: 64, z: 80 } cobblestone
+ENCLOSURE_ACTUAL Vec3 { x: 36, y: 63, z: 80 } true 20
+--- returned ---
+{
+ "steps": 4,
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "position": {
+  "x": 36.5,
+  "y": 63,
+  "z": 80.50047272185967
+ },
+ "health": 20,
+ "inventory": [
+  [
+   "gravel",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   45
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   30
+  ],
+  [
+   "dirt",
+   8,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   13,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (36.5, 63, 80.5) in overworld, health 20/20, food 20/20, alive

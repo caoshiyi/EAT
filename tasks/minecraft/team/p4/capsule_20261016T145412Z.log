@@ -1,0 +1,46 @@
+program #1623 on p4: 25.1 s
+--- output ---
+ENCLOSED_ROUTE_PROPOSAL {"origin":[-2,65,56],"goal":[-36,56,47],"best":[-15,63,50],"remaining":38,"visited":921,"path":[[-3,65,56],[-4,65,56],[-5,65,56],[-6,65,56],[-7,65,56],[-8,65,56],[-9,65,56],[-10,65,56],[-11,65,56],[-12,65,56],[-13,65,56],[-14,65,56],[-15,65,56],[-15,65,55],[-15,65,54],[-15,65,53],[-15,65,52],[-15,64,51],[-15,63,50]]}
+ENDERMEN [{"id":273,"p":[-35.669896987470665,56,47.69999998807907],"d":36.42405061604215},{"id":293,"p":[23.81340106577536,55,96.6109624676229],"d":48.46813525811618},{"id":2950,"p":[-4.737520618965554,67,123.30672029545794],"d":66.91570445591026},{"id":306,"p":[-21.256480088498193,72,142.45640080504086],"d":88.47743205594216},{"id":2259,"p":[-57.49593678688071,89,127.61371317828485],"d":93.64757800750034}]
+PROPOSAL_CONSUMED {"origin":[-2,65,56],"best":[-15,63,50],"count":8}
+CUT_ACTUAL -3,66,56 basalt air
+CUT_ACTUAL -3,65,56 netherrack air
+MANUAL_STEP_ACTUAL {"target":[-3,65,56],"actual":[-2.7,65,56.499803278855246],"onGround":true}
+STEP_ACTUAL -3,65,56 20 18
+CUT_ACTUAL -4,66,56 netherrack air
+CUT_ACTUAL -4,65,56 netherrack air
+MANUAL_STEP_ACTUAL {"target":[-4,65,56],"actual":[-3.7,65,56.49980353984523],"onGround":true}
+STEP_ACTUAL -4,65,56 20 18
+CUT_ACTUAL -5,66,56 netherrack air
+CUT_ACTUAL -5,65,56 basalt air
+MANUAL_STEP_ACTUAL {"target":[-5,65,56],"actual":[-4.7,65,56.49980380083522],"onGround":true}
+STEP_ACTUAL -5,65,56 20 18
+CUT_ACTUAL -6,66,56 netherrack air
+CUT_ACTUAL -6,65,56 basalt air
+MANUAL_STEP_ACTUAL {"target":[-6,65,56],"actual":[-5.7,65,56.4998040618252],"onGround":true}
+STEP_ACTUAL -6,65,56 20 18
+CUT_ACTUAL -7,66,56 basalt air
+CUT_ACTUAL -7,65,56 netherrack air
+MANUAL_STEP_ACTUAL {"target":[-7,65,56],"actual":[-6.7,65,56.49980432281519],"onGround":true}
+STEP_ACTUAL -7,65,56 20 18
+CUT_ACTUAL -8,66,56 basalt air
+CUT_ACTUAL -8,65,56 basalt air
+MANUAL_STEP_ACTUAL {"target":[-8,65,56],"actual":[-7.7,65,56.49980458380517],"onGround":true}
+STEP_ACTUAL -8,65,56 20 18
+CUT_ACTUAL -9,66,56 basalt air
+CUT_ACTUAL -9,65,56 basalt air
+MANUAL_STEP_ACTUAL {"target":[-9,65,56],"actual":[-8.7,65,56.49980484479516],"onGround":true}
+STEP_ACTUAL -9,65,56 20 18
+CUT_ACTUAL -10,66,56 basalt air
+CUT_ACTUAL -10,65,56 basalt air
+MANUAL_STEP_ACTUAL {"target":[-10,65,56],"actual":[-9.7,65,56.49980510578514],"onGround":true}
+STEP_ACTUAL -10,65,56 20 18
+MANUAL_STEP_ACTUAL {"target":[-10,65,56],"actual":[-9.489859965319404,65,56.499805053587124],"onGround":true}
+ENDPOINT_ACTUAL {"p":[-10,65,56],"sealed":true,"onGround":true,"hp":20,"food":18,"trace":[[-2,65,56],[-3,65,56],[-4,65,56],[-5,65,56],[-6,65,56],[-7,65,56],[-8,65,56],[-9,65,56],[-10,65,56]],"issue":null,"dead":false,"inventory":[["sweet_berries",1,null],["basalt",64,null],["basalt",41,null],["netherrack",5,null],["blackstone",1,null],["crafting_table",1,null],["cobblestone_slab",1,null],["stone_pickaxe",1,122],["stone_axe",1,2],["spruce_button",1,null],["stone_pickaxe",1,121]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #1616 W8actual109,-180/fullshell20/19/143mats. #1621 bothW/Nvoid next; covered8blocks/cell limitsrange. Changedobjective-linked test: TWOwest flooronly bridgecells using coldcardinalmovement+belowMAGMA6/dist8/ranged64 gates, then constructFULLendpointro
+p1: om or reverseold109. 24materialreserve, no sharedspace. Success enables cheapercrossing, failure retains109.
+p1: P1 covered-corridor adoption trial: max2 WEST FLOORONLY cells then full endpoint, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+--- p4 now: (-9.5, 65, 56.5) in the_nether, health 20/20, food 18/20, alive

@@ -1,0 +1,25 @@
+program #1708 on p1: 8.6 s
+--- output ---
+ACTUAL (-251.39129369262835, 63, -179.49957973295776) the_nether 20 19 [["quartz",7,null],["sweet_berries",13,null],["iron_pickaxe",1,245],["cobblestone_slab",2,null],["gold_ingot",1,null],["crafting_table",1,null],["gold_nugget",11,null],["stone_axe",1,4],["stone_pickaxe",1,97],["netherrack",5,null],["blackstone",43,null],["polished_blackstone",2,null],["stone_pickaxe",1,96],["stone_pickaxe",1,96]]
+RES nether_bricks []
+RES spawner []
+RES chest [ [ -233, 39, -326 ] ]
+RES warped_stem []
+RES crimson_stem []
+RES warped_nylium [
+  [ -239, 40, -65 ],
+  [ -238, 39, -65 ],
+  [ -237, 37, -65 ],
+  [ -236, 36, -65 ],
+  [ -241, 40, -63 ]
+]
+RES crimson_nylium []
+BIOMES {"soul_sand_valley":{"p":[-364,63,-260],"d":137.63720427268203},"nether_wastes":{"p":[-252,63,-180],"d":0},"basalt_deltas":{"p":[-172,63,-148],"d":86.16263691415207},"warped_forest":{"p":[-236,63,-68],"d":113.13708498984761}}
+DIRECTION -1 0 solidprefix 4 floors [1,2,3,4,5,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64] gaps [[5,"netherrack","netherrack","netherrack"],[6,"air","air","air"],[7,"air","air","air"],[8,"air","air","air"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"],[13,"air","air","air"],[14,"air","air","air"],[15,"air","air","air"],[16,"air","air","air"]]
+DIRECTION 0 -1 solidprefix 10 floors [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64] gaps [[11,"netherrack","netherrack","netherrack"]]
+DIRECTION 1 0 solidprefix 2 floors [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64] gaps [[3,"netherrack","air","air"],[4,"netherrack","air","air"],[5,"netherrack","air","air"],[6,"netherrack","air","air"],[7,"netherrack","air","air"],[8,"netherrack","air","air"],[9,"netherrack","air","air"],[10,"netherrack","air","air"],[11,"netherrack","air","air"],[12,"netherrack","air","air"],[13,"netherrack","air","air"],[14,"netherrack","air","air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-251.4, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

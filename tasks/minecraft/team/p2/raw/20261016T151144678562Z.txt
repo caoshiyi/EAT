@@ -1,0 +1,52 @@
+program #1712 on p2: 0 s
+--- output ---
+BLOCKER_ACTUAL (83, 40, 104) 20 20 NEXT (83, 39, 103)
+FACE floor (83, 38, 103) air column [
+  [ 0, 'air' ],
+  [ 1, 'stone' ],
+  [ 2, 'stone' ],
+  [ 3, 'stone' ],
+  [ 4, 'stone' ],
+  [ 5, 'stone' ],
+  [ 6, 'stone' ],
+  [ 7, 'stone' ]
+]
+FACE roof (83, 42, 103) stone column [
+  [ 0, 'stone' ],
+  [ 1, 'stone' ],
+  [ 2, 'stone' ],
+  [ 3, 'stone' ],
+  [ 4, 'stone' ],
+  [ 5, 'stone' ],
+  [ 6, 'stone' ],
+  [ 7, 'stone' ]
+]
+FACE leftfoot (82, 39, 103) stone column [
+  [ 0, 'stone' ],
+  [ 1, 'stone' ],
+  [ 2, 'stone' ],
+  [ 3, 'stone' ],
+  [ 4, 'stone' ],
+  [ 5, 'stone' ],
+  [ 6, 'stone' ],
+  [ 7, 'stone' ]
+]
+FACE rightfoot (84, 39, 103) stone column [
+  [ 0, 'stone' ],
+  [ 1, 'stone' ],
+  [ 2, 'stone' ],
+  [ 3, 'stone' ],
+  [ 4, 'stone' ],
+  [ 5, 'stone' ],
+  [ 6, 'stone' ],
+  [ 7, 'stone' ]
+]
+ENDERMEN [
+  [ 130, '(83.73823846300671, 24, 83.63641936193596)' ],
+  [ 4107, '(82.62537863519078, 25, 85.73418355748747)' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_ROOF_BRIDGE_SEALED -17,65,48 steps4 issuenull
+--- p2 now: (83.5, 40, 104.4) in overworld, health 20/20, food 20/20, alive

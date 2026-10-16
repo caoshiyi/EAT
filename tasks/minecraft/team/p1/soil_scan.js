@@ -1,0 +1,1 @@
+console.log('BODY',bot.entity.position.toString(),bot.health,bot.food);for(const n of ['soul_soil','soul_sand'])console.log('SOIL',n,bot.findBlocks({matching:bot.registry.blocksByName[n].id,maxDistance:112,count:10}).map(p=>[p.x,p.y,p.z]));

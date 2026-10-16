@@ -1,0 +1,53 @@
+program #1692 on p1: 0 s
+--- output ---
+BODY (-219.39129369262835, 63, -179.49957973295776) 20 19
+nether_gold_ore [
+  [ -211, 55, -183 ], [ -214, 54, -187 ],
+  [ -210, 55, -182 ], [ -211, 54, -183 ],
+  [ -214, 53, -186 ], [ -210, 55, -183 ],
+  [ -213, 54, -187 ], [ -214, 53, -187 ],
+  [ -210, 54, -182 ], [ -209, 55, -182 ],
+  [ -210, 54, -183 ], [ -213, 54, -188 ],
+  [ -209, 55, -183 ], [ -221, 49, -179 ],
+  [ -213, 53, -187 ], [ -209, 54, -182 ]
+]
+netherrack [
+  [ -221, 63, -180 ], [ -220, 62, -180 ],
+  [ -220, 63, -181 ], [ -220, 63, -179 ],
+  [ -219, 63, -180 ], [ -221, 62, -180 ],
+  [ -220, 62, -181 ], [ -220, 62, -179 ],
+  [ -219, 62, -180 ], [ -218, 62, -180 ],
+  [ -217, 62, -180 ], [ -216, 62, -180 ],
+  [ -215, 62, -180 ], [ -214, 62, -180 ],
+  [ -213, 62, -180 ], [ -212, 62, -180 ]
+]
+COLUMN [
+  [ 63, 'air' ],        [ 64, 'air' ],
+  [ 65, 'netherrack' ], [ 66, 'air' ],
+  [ 67, 'air' ],        [ 68, 'air' ],
+  [ 69, 'air' ],        [ 70, 'air' ],
+  [ 71, 'air' ],        [ 72, 'air' ],
+  [ 73, 'air' ],        [ 74, 'air' ],
+  [ 75, 'air' ],        [ 76, 'air' ],
+  [ 77, 'air' ],        [ 78, 'air' ],
+  [ 79, 'air' ],        [ 80, 'air' ],
+  [ 81, 'air' ],        [ 82, 'air' ]
+]
+PIGLINS [
+  {
+    id: 6473,
+    pos: '(-197.6887266383087, 63, -179.49595144677681)',
+    held: undefined,
+    equipment: [ <5 empty items> ]
+  }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4#1675 covered1 physicallyPASS currentSEALED(-16,65,53)20/18,97basalt+5neth+1black,picks124/124. Fulltargetfloor/roof/sides/front built BEFOREhead/footcut; then bothposition actualtorso+eye solidrays inclGHAST. No uncoveredfutureaccepted. Scale3WEST cells
+p4: , cap100s; then freshfield/ray/materialcheck. Directviewvantage still17m away, no aggro/pearls.
+p4: P4_ROOF_BRIDGE_SEALED -16,65,53 steps0 issueFOE magma_cube -26.76163654750224,60,54.775913158716435
+p4: knowledge_engineer P4 newexactassumption: #1687 0opening MAGMA11m/top3below blocked in FULLsealedroom because newbridgehelper only BELOW6 lacked priorown>=8+solidray branch. Changed1 adds FOURcurrent/next torso+eye blockedrays with BOTHdist>=8, fullframeBE
+p4: FOREcut remains. Tests containment vs below-only policy, no blindthreshold removal. Current-16,65,53 healthy97basalt, no injury.
+p4: P4_ROOF_BRIDGE_SEALED -17,65,53 steps1 issuenull
+--- p1 now: (-219.4, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

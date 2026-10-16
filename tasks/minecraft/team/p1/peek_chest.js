@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const p=new Vec3(-233,39,-326),counts={};for(let dx=-5;dx<=5;dx++)for(let dy=-3;dy<=4;dy++)for(let dz=-5;dz<=5;dz++){const name=bot.blockAt(p.offset(dx,dy,dz))?.name||'UNKNOWN';counts[name]=(counts[name]||0)+1;}console.log('CHEST_NEIGHBORHOOD',JSON.stringify(counts));console.log('BODY',bot.entity.position.toString(),bot.health,bot.food);

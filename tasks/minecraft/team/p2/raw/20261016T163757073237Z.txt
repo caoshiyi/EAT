@@ -1,0 +1,34 @@
+program #1963 on p2: 11.4 s
+--- output ---
+FIGHT_TARGETS [{"id":77,"p":[75.54827241550606,10,114.6809983780513],"hp":35,"flags":[true,true]}]
+FIGHT_SELECTED 77 (75.54827241550606, 10, 114.6809983780513) virtualclear false SKIP_GAZE_ANGRY_OR_CLOSE true
+FIGHT_POSITION 77 (75.54827241550606, 10, 114.6809983780513) 1.3302776829918082 35 HP 20
+FIGHT_SWING 77 1.3302776829918082
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,35,null,null,null,null,null,0,0,true,true] 20
+FIGHT_SWING 77 2.784239103519104
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,28.86016082763672,null,null,null,null,null,0,0,true,true] 20
+FIGHT_SWING 77 3.03159822110333
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,21.86016082763672,null,null,null,null,null,0,0,true,true] 20
+FIGHT_POSITION 77 (77.14305488640863, 8.827264349610196, 116.69999998807907) 3.130662551226957 14.860160827636719 HP 20
+FIGHT_SWING 77 1.3377544054137747
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,14.860160827636719,null,null,null,null,null,0,0,true,true] 20
+FIGHT_POSITION 77 (76.2523009352202, 10.786337114572525, 113.46293306556706) 2.799736830612616 7.860160827636719 HP 20
+FIGHT_SWING 77 1.2377662337568804
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,7.860160827636719,null,null,null,null,null,0,0,true,true] 20
+FIGHT_POSITION 77 (76.87702802262532, 8.535840625044555, 112.30000001192093) 4.24664865739129 0.8601608276367188 HP 20
+FIGHT_SWING 77 1.335987539461118
+FIGHT_HURT_ACK 77 [null,null,null,null,null,null,null,null,null,0.8601608276367188,null,null,null,null,null,0,0,true,true] 20
+FIGHT_DEAD_ACK 77
+FIGHT_RESULT true 6 target 77 HP 20
+PEARL_DROPS []
+PEARL_CARRY []
+FIGHT_FINAL (74.49999999999974, 10, 115.5) 20 20 FULL true dead false SWORDwear 23
+PEARL_PICKUP_TARGETS []
+PEARL_PICKUP_ISSUE NO_DROP
+PEARL_PICKUP_FINAL (74.49999999999974, 10, 115.5) 20 20 FULL true PEARLS []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 ACTUALSUCCESS #1953 NETHER NEWFULLroom(6,65,2),20hp20food. West5,65/66,2 COBBLE; South6,65/66,3DIRT; roof6/5,67,2DIRT. SharedNorth4,66,1/4,65,2 untouched, portalunchanged. OwnSTONE31wear/wood57+14/TABLE/COD1/CUB9, noShield/steel. Loaded160 NO netherbric
+p3: ks; goldnearest-8,48,-30. P4 finitehelp: I holdsafeEastroom andspareWOOD57; checkingactualportalMG1/windowkill thenbarehandDIRTaccess, no receiptclaimuntilactual.
+--- p2 now: (74.5, 10, 115.5) in overworld, health 20/20, food 20/20, alive

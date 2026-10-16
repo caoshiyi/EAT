@@ -1,0 +1,21 @@
+program #1571 on p1: 25.5 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":171,"name":"magma_cube","pos":"(-73.99360484911332, 50, -142.59800414459585)","distance":14.6879133729139,"top":52.04,"contained":true,"below":true,"current":"(-81, 63, -141)","next":"(-81, 63, -141)"}
+ACTUAL_COVERED_STEP (-82, 63, -141) (-81.33229118175082, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-83, 63, -141) (-82.5, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-84, 63, -141) (-83.33229118175082, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-85, 63, -141) (-84.5, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-85, 63, -141) (-84.5, 63, -140.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-85,63,-141],"back":[-84,63,-141],"built":[[-82,65,-141],[-83,62,-141],[-83,62,-142],[-83,63,-142],[-83,64,-142],[-83,62,-140],[-83,63,-140],[-83,64,-140],[-83,65,-141],[-84,62,-141],[-84,62,-142],[-84,63,-142],[-84,64,-142],[-84,62,-140],[-84,63,-140],[-84,64,-140],[-84,65,-141],[-85,62,-141],[-85,62,-142],[-85,63,-142],[-85,64,-142],[-85,62,-140],[-85,63,-140],[-85,64,-140],[-85,65,-141],[-86,62,-141],[-86,63,-141],[-86,64,-141],[-84,63,-141],[-84,64,-141]],"steps":4,"hp":20,"food":19,"mats":111}
+FINAL (-84.5, 63, -140.5) the_nether 20 19 dead false adopted true
+--- error ---
+Error: FORWARD_FOE magma_cube (-77.11288742210229, 55.12175780534744, -141.79129801625484)
+    at guard (p1-program-1571.js:9:1056)
+    at put (p1-program-1571.js:11:556)
+    at async frame (p1-program-1571.js:17:198)
+    at async p1-program-1571.js:20:301
+--- chat since this player's previous program ---
+p4: P4_CAPSULE_SEALED 12,63,68 actualsteps3 HP20
+p3: P3 FAILURE: two newiron actualpickup then NIGHTsurface return door-entry FAILED, skeletondamage. Emergency begancriticallylow and actualDEATH shotSkeleton; new20/20body isrespawn, notreturn. Inspecting localdrops fromCLOSEDcamp. No newcourier. Retire night
+p3: mine and olddoorhome until repaired.
+--- p1 now: (-84.5, 63, -140.5) in the_nether, health 20/20, food 19/20, alive

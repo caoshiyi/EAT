@@ -1,0 +1,30 @@
+program #1958 on p1: 18.8 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":27538,"name":"ghast","pos":"(-376.762451171875, 60, -303)","distance":63.86916999784937,"top":64,"contained":false,"below":false,"occluded":false,"rearPiglin":false,"remaining":true,"current":"(-318, 61, -327)","next":"(-318, 61, -327)"}
+CONSUMED_PROPOSAL 1792168431924 {"origin":[-318,61,-327],"path":[[-318,61,-327],[-318,61,-326],[-317,61,-326],[-316,61,-326],[-317,62,-326],[-317,63,-327],[-317,64,-328],[-317,64,-329],[-317,65,-330],[-317,66,-331],[-317,67,-332],[-318,68,-332],[-319,69,-332],[-320,69,-332],[-320,69,-333],[-320,70,-334],[-321,70,-334],[-322,70,-334],[-323,70,-334],[-324,70,-334],[-324,70,-335],[-324,70,-336],[-324,70,-337],[-324,70,-338],[-324,70,-339],[-324,70,-340],[-324,70,-341],[-325,69,-341],[-326,68,-341],[-325,67,-341],[-324,67,-341]],"target":[-324,67,-341],"cutCost":7,"estimatedSeconds":29.800000000000004,"progress":13.891288786259409,"mode":"FORTRESS_APPROACH","when":1792168431924}
+ENDPOINT_BUILD_BUDGET (-318, 61, -326) 3 16
+HAND_CUT_NO_HARVEST netherrack (-318, 62, -326)
+DIG_BUDGET_ACTUAL netherrack (-318, 62, -326) 4500
+HAND_CUT_NO_HARVEST netherrack (-318, 61, -326)
+DIG_BUDGET_ACTUAL netherrack (-318, 61, -326) 4500
+ACTUAL_COVERED_STEP (-318, 61, -326) (-317.47941024840395, 61, -325.68772702109055) 20
+ENDPOINT_BUILD_BUDGET (-317, 61, -326) 6 16
+HAND_CUT_NO_HARVEST netherrack (-317, 61, -326)
+DIG_BUDGET_ACTUAL netherrack (-317, 61, -326) 4500
+ACTUAL_COVERED_STEP (-317, 61, -326) (-316.661984470916, 61, -325.5311297257731) 20
+ENDPOINT_BUILD_BUDGET (-316, 61, -326) 9 16
+ACTUAL_COVERED_STEP (-316, 61, -326) (-315.5, 61, -325.51650789298066) 20
+ENDPOINT_BUILD_BUDGET (-317, 62, -326) 11 16
+ACTUAL_COVERED_STEP (-316, 61, -326) (-315.5, 61, -325.51650789298066) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-316,61,-326],"back":[-315,61,-326],"built":[[-316,61,-325],[-316,62,-325],[-316,62,-327],[-316,63,-327],[-316,63,-326],[-317,61,-326],[-317,62,-326],[-315,61,-326],[-315,62,-326]],"steps":3,"hp":20,"food":19,"mats":7}
+FINAL (-315.5, 61, -325.51650789298066) the_nether 20 19 dead false adopted true
+--- error ---
+Error: Server refused to place blackstone at (-317, 60, -326): the block is still netherrack
+    at placeBlockWithOptions (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:42:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Proxy.placeBlock (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:48:5)
+    at async put (p1-program-1958.js:13:942)
+    at async p1-program-1958.js:23:1132
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-315.5, 61, -325.5) in the_nether, health 20/20, food 19/20, alive

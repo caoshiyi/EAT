@@ -1,0 +1,33 @@
+program #1778 on p1: 35.9 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":11470,"name":"ghast","pos":"(-221.8984375, 54.47216796875, -269.485595703125)","distance":63.709925886176606,"top":58.47216796875,"contained":true,"below":false,"occluded":false,"current":"(-270, 71, -231)","next":"(-270, 71, -231)"}
+ACTUAL_COVERED_STEP (-270, 71, -232) (-269.5, 71, -231.33229118175106) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -233)
+ACTUAL_HAND_NETHERRACK (-270, 71, -233)
+ACTUAL_COVERED_STEP (-270, 71, -233) (-269.5, 71, -232.5) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -234)
+ACTUAL_HAND_NETHERRACK (-270, 71, -234)
+ACTUAL_COVERED_STEP (-270, 71, -234) (-269.5, 71, -233.33229118175078) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -235)
+ACTUAL_HAND_NETHERRACK (-270, 71, -235)
+ACTUAL_COVERED_STEP (-270, 71, -235) (-269.5, 71, -234.5) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -236)
+ACTUAL_HAND_NETHERRACK (-270, 71, -236)
+ACTUAL_COVERED_STEP (-270, 71, -236) (-269.5, 71, -235.33229118175078) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -237)
+BARRIER_MOB_AUDIT {"id":11728,"name":"ghast","pos":"(-217.322021484375, 89.855224609375, -205.301025390625)","distance":63.08674870417912,"top":93.855224609375,"contained":true,"below":false,"occluded":false,"current":"(-270, 71, -236)","next":"(-270, 71, -236)"}
+ACTUAL_HAND_NETHERRACK (-270, 71, -237)
+ACTUAL_COVERED_STEP (-270, 71, -237) (-269.5, 71, -236.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-270,71,-237],"back":[-270,71,-236],"built":[[-270,71,-236],[-270,72,-236]],"steps":6,"hp":20,"food":19,"mats":78}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [ '(-269, 58, -358)' ]
+LOADED_RESOURCE warped_nylium []
+FINAL (-269.5, 71, -236.5) the_nether 20 19 dead false adopted true
+PICK_WEAR_ACTUAL [["iron_pickaxe",245],["stone_pickaxe",118],["stone_pickaxe",112],["stone_pickaxe",111]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 #1752 gravity-supportedFLAT12 PASS shaft68,40,104 full20/20; verticalpilot3 +#1765 elevenDOWN PASS now68,26,104 FULL20/20. Shaftarrival cutoff MET at15:24 actualtargetheight. #1772 boundedRO finds18node allrock path to75,26,115 uppercap75,27,114 virtual
+p2: EYErayclear toENDER130(84.90,24,82.94). Newstage actualpath+gaze/ACK budget15:38, twofailedgazes changegeometry. No pearl yet.
+--- p1 now: (-269.5, 71, -236.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,25 @@
+program #1965 on p2: 0 s
+--- output ---
+LATE_TARGETS [{"id":26206,"p":[78.59032183700437,39,73.50002304660812],"hp":40,"d":51.202820203732195,"hit":["stone","(74, 11, 114)"]}]
+LATE_CAPS [
+  [ '(75, 11, 115)', 'stone', 'stone' ],
+  [ '(75, 11, 116)', 'granite', 'granite' ]
+]
+BODY (74, 10, 115) 20 20 CARRY [
+  [ 'cooked_cod', 1, null ],
+  [ 'coal', 4, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'granite', 5, null ],
+  [ 'diamond_sword', 1, 23 ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'stone_pickaxe', 1, 62 ],
+  [ 'stone_pickaxe', 1, 73 ],
+  [ 'wooden_pickaxe', 1, 24 ],
+  [ 'torch', 4, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (74.5, 10, 115.5) in overworld, health 20/20, food 20/20, alive

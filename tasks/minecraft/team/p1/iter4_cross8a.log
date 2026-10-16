@@ -1,0 +1,19 @@
+program #1556 on p1: 18.9 s
+--- output ---
+ACTUAL_COVERED_STEP (-76, 63, -141) (-75.33229118175082, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-77, 63, -141) (-76.5, 63, -140.5) 20
+ACTUAL_COVERED_STEP (-77, 63, -141) (-76.5, 63, -140.5) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-77,63,-141],"back":[-76,63,-141],"built":[[-76,62,-142],[-76,63,-142],[-76,64,-142],[-76,62,-140],[-76,63,-140],[-76,64,-140],[-76,65,-141],[-77,62,-141],[-77,62,-142],[-77,63,-142],[-77,64,-142],[-77,62,-140],[-77,63,-140],[-77,64,-140],[-77,65,-141],[-78,62,-141],[-78,63,-141],[-78,64,-141],[-76,63,-141],[-76,64,-141]],"steps":2,"hp":20,"food":19,"mats":184}
+FINAL (-76.5, 63, -140.5) the_nether 20 19 dead false adopted true
+--- error ---
+Error: FORWARD_FOE magma_cube (-86.42267024243321, 51.53533202409744, -136.040380528932)
+    at guard (p1-program-1556.js:9:1003)
+    at put (p1-program-1556.js:11:556)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+    at async frame (p1-program-1556.js:17:34)
+    at async p1-program-1556.js:20:301
+--- chat since this player's previous program ---
+p4: P4_TUNNEL_SEALED feet=9,63,71 backSouth=9,63,72 actual newcells=8 HP20
+--- p1 now: (-76.5, 63, -140.5) in the_nether, health 20/20, food 19/20, alive

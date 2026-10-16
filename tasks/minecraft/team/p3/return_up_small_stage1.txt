@@ -1,0 +1,72 @@
+program #1723 on p3: 4.1 s
+--- output ---
+FLAT_ACTUAL 1 Vec3 { x: 24, y: 51, z: 95 }
+WALL_ACTUAL Vec3 { x: 23, y: 51, z: 95 } cobblestone
+WALL_ACTUAL Vec3 { x: 23, y: 52, z: 95 } cobblestone
+ENCLOSURE_ACTUAL Vec3 { x: 24, y: 51, z: 95 } true 20
+--- returned ---
+{
+ "steps": 1,
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "position": {
+  "x": 24.5,
+  "y": 51,
+  "z": 95.50470832473228
+ },
+ "health": 20,
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   19,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   47
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4#1707 currentFULLrim(-17,65,48)20/18/BASALT75+NETH5+BLACK5,picks130/128. #1715 destination(-29,65,48) virtualEYEclear toENDER273; no needY64descent. Boundedcheaproof2WEST trial now: floor+lowroof, fullendpoint; BELOWMAGMA topgap6/dist8/fullfloors copied 
+p4: P1 actualfieldpolicy, GHAST4rays nextproposedcut excluded. Savesmaterial vs fullbridge; no mandatorylongreturn.
+p1: P1_COVERED_SEALED (-252, 63, -189) SOUTHback(-252, 63, -188) actualsteps8 HP20
+p4: P4_ROOF_BRIDGE_SEALED -19,65,48 steps2 issuenull
+--- p3 now: (24.5, 51, 95.5) in overworld, health 20/20, food 19/20, alive

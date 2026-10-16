@@ -1,0 +1,38 @@
+program #1898 on p1: 0 s
+--- output ---
+ACTUAL (-319.49959668343075, 58, -284.39129335678774) 20 19 [
+  [ 'quartz', 7, null ],
+  [ 'sweet_berries', 13, null ],
+  [ 'iron_pickaxe', 1, 245 ],
+  [ 'cobblestone_slab', 2, null ],
+  [ 'gold_nugget', 5, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_axe', 1, 5 ],
+  [ 'blackstone', 36, null ],
+  [ 'polished_blackstone', 2, null ],
+  [ 'red_mushroom', 2, null ]
+]
+COLUMN (-320, 58, -286) [
+  'netherrack',
+  'netherrack',
+  'nether_quartz_ore',
+  'nether_quartz_ore'
+]
+COLUMN (-320, 58, -287) [
+  'netherrack',
+  'netherrack',
+  'nether_quartz_ore',
+  'nether_quartz_ore'
+]
+COLUMN (-320, 58, -288) [ 'netherrack', 'netherrack', 'netherrack', 'netherrack' ]
+COLUMN (-321, 58, -285) [ 'netherrack', 'netherrack', 'netherrack', 'cave_air' ]
+COLUMN (-322, 58, -285) [ 'netherrack', 'cave_air', 'cave_air', 'cave_air' ]
+COLUMN (-323, 58, -285) [ 'netherrack', 'netherrack', 'netherrack', 'cave_air' ]
+COLUMN (-319, 58, -285) [ 'netherrack', 'netherrack', 'blackstone', 'blackstone' ]
+COLUMN (-318, 58, -285) [ 'netherrack', 'netherrack', 'netherrack', 'cave_air' ]
+COLUMN (-317, 58, -285) [ 'netherrack', 'netherrack', 'netherrack', 'netherrack' ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_ROOF_BRIDGE_SEALED 0,67,44 steps55 issueCUT cobblestone
+--- p1 now: (-319.5, 58, -284.4) in the_nether, health 20/20, food 19/20, alive

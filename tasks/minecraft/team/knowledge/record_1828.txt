@@ -1,0 +1,16 @@
+== #1828 2026-10-16T15:39:50 p1 role=objective_lead iter=4 0 s
+const{Vec3}=require('vec3');const target=new Vec3(-276,72,-247);console.log('BODY',bot.entity.position.toString(),bot.health,bot.food);console.log('TARGET_BLOCK',bot.blockAt(target)?.name,JSON.stringify(bot.blockAt(target)?.shapes));for(const e of Object.values(bot.entities)){if(e.position.distanceTo(target)>8)continue;console.log('NEAR_ENTITY',e.id,e.name,e.position.toString(),e.width,e.height,e.type,e.metadata?.[17],e.metadata?.[18]);}for(const p of[new Vec3(-275,71,-248),new Vec3(-275,71,-250)])console.log('ENDPOINT',p.toString(),[-1,0,1,2].map(dy=>bot.blockAt(p.offset(0,dy,0))?.name),[-1,1].map(dx=>[-1,0,1,2].map(dy=>bot.blockAt(p.offset(dx,dy,0))?.name)));
+-- output --
+BODY (-274.4995797329582, 71, -245.60870630737165) 20 19
+TARGET_BLOCK air []
+NEAR_ENTITY 163 player (-274.4995797329582, 71, -245.60870630737165) 0.6 1.8 player 127 undefined
+NEAR_ENTITY 13716 zombified_piglin (-275.4940974602882, 72, -246.76383555050845) 0.6 1.95 hostile undefined undefined
+NEAR_ENTITY 13717 zombified_piglin (-279.9710000001851, 71, -250.52169121361615) 0.6 1.95 hostile undefined undefined
+ENDPOINT (-275, 71, -248) [ 'netherrack', 'netherrack', 'air', 'air' ] [
+  [ 'netherrack', 'air', 'air', 'air' ],
+  [ 'netherrack', 'netherrack', 'netherrack', 'netherrack' ]
+]
+ENDPOINT (-275, 71, -250) [ 'netherrack', 'air', 'air', 'air' ] [
+  [ 'air', 'air', 'air', 'air' ],
+  [ 'netherrack', 'netherrack', 'air', 'air' ]
+]

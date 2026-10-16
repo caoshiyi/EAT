@@ -1,0 +1,16 @@
+program #1696 on p1: 0.7 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":6473,"name":"piglin","pos":"(-197.57951477114253, 63, -179.50621552166155)","distance":21.81177993088746,"top":64.95,"contained":true,"below":false,"occluded":false,"current":"(-220, 63, -180)","next":"(-220, 63, -180)"}
+ACTUAL_COVERED_STEP (-220, 63, -180) (-219.39129369262835, 63, -179.49957973295776) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-220,63,-180],"back":[-219,63,-180],"built":[],"steps":0,"hp":20,"food":19,"mats":70}
+FINAL (-219.39129369262835, 63, -179.49957973295776) the_nether 20 19 dead false adopted true
+--- error ---
+Error: FORWARD_FOE piglin (-197.57951477114253, 63, -179.50621552166155)
+    at guard (p1-program-1696.js:9:1312)
+    at p1-program-1696.js:20:94
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-219.4, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,75 @@
+program #1705 on p3: 4.7 s
+--- output ---
+FLAT_ACTUAL 1 Vec3 { x: 24, y: 52, z: 96 }
+WALL_ACTUAL Vec3 { x: 23, y: 52, z: 96 } cobblestone
+WALL_ACTUAL Vec3 { x: 23, y: 53, z: 96 } cobblestone
+ENCLOSURE_ACTUAL Vec3 { x: 24, y: 52, z: 96 } true 20
+--- returned ---
+{
+ "steps": 1,
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "position": {
+  "x": 24.456960746501423,
+  "y": 52,
+  "z": 96.48908756403083
+ },
+ "health": 20,
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   21,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   40
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 #1696 ZEROsteps/noopening/full22020/19: unknownhandpiglin6473 at197onOLDbridge behind CLOSEDback219 triggers32. Changed exactbarrier rule: PIGLIN>=8BOTH, behindrootdirection, actualrootBACKfoot/headfull, BOTHsolidrays =>allowawaytravel. Doesnotrelaxforw
+p1: ardpiglin/crossbowradius; oldEastcap219remainsclosed. Repeating32W in this changedcontract, notwaitingforunknownmob.
+p1: P1 covered-corridor adoption trial: max32 WEST FLOORONLY cells then full endpoint, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p4: P4#1698 RO actualterrain: Northx-17 z52..48 has naturalfloor/roof, only WESTside open; can reachrimcheaply before gap. GHASTnonewithin48 snapshot, not globalclear. Changed coveredNORTH1 orientation trial; consume usablepickdown to1remaining (handfallback p
+p4: hysicallyproved), verifyharvestactual not promises. Then freshcheaproofbridge comparison. CurrentSEALED-17,65,53 HP20/18.
+p4: P4_ROOF_BRIDGE_SEALED -17,65,52 steps1 issuenull
+p1: P1_COVERED_SEALED (-252, 63, -180) EASTback(-251, 63, -180) actualsteps32 HP20
+--- p3 now: (24.5, 52, 96.5) in overworld, health 20/20, food 19/20, alive

@@ -1,0 +1,16 @@
+== #1866 2026-10-16T15:50:52 p3 role=execution_engineer iter=4 30.4 s
+const{Vec3}=require('vec3');let lost=false;const die=()=>lost=true;bot.on('death',die);bot.on('respawn',die);const foot=new Vec3(35,66,80),qs=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(v=>foot.offset(...v));try{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('START',bot.health,bot.food,bot.entity.position,'CUBE',qs.map(p=>[p,bot.blockAt(p)?.name]),'OFFHAND',bot.inventory.slots[45]?.name,'NEAR',Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<6).map(e=>[e.name,e.position]));const end=Date.now()+30000;while(bot.health<18&&Date.now()<end){if(lost||!bot.entity.position.floored().equals(foot)||!qs.every(p=>bot.blockAt(p)?.boundingBox==='block'))throw Error('healingprotection/life changed');await bot.waitForTicks(10);}console.log('HEAL_POST',bot.health,bot.food,'FULL',qs.every(p=>bot.blockAt(p)?.boundingBox==='block'),'BODY',bot.entity.position,'TIME',bot.time.timeOfDay);}finally{bot.removeListener('death',die);bot.removeListener('respawn',die);bot.clearControlStates();}
+-- output --
+START 14.333333969116211 17 Vec3 { x: 35.460226549497335, y: 66, z: 80.41139926435939 } CUBE [
+  [ Vec3 { x: 35, y: 65, z: 80 }, 'stone' ],
+  [ Vec3 { x: 35, y: 68, z: 80 }, 'dirt' ],
+  [ Vec3 { x: 36, y: 66, z: 80 }, 'dirt' ],
+  [ Vec3 { x: 36, y: 67, z: 80 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 66, z: 80 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 67, z: 80 }, 'dirt' ],
+  [ Vec3 { x: 35, y: 66, z: 81 }, 'cobblestone' ],
+  [ Vec3 { x: 35, y: 67, z: 81 }, 'dirt' ],
+  [ Vec3 { x: 35, y: 66, z: 79 }, 'dirt' ],
+  [ Vec3 { x: 35, y: 67, z: 79 }, 'dirt' ]
+] OFFHAND shield NEAR []
+HEAL_POST 14.333333969116211 17 FULL true BODY Vec3 { x: 35.460226549497335, y: 66, z: 80.41139926435939 } TIME 20684

@@ -1,0 +1,6 @@
+== #1870 2026-10-16T15:52:48 p3 role=execution_engineer iter=4 20.2 s
+const{Vec3}=require('vec3');let lost=false;const die=()=>lost=true;bot.on('death',die);bot.on('respawn',die);const p=new Vec3(35,66,80),qs=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(v=>p.offset(...v));try{bot.pathfinder.setGoal(null);bot.clearControlStates();const end=Date.now()+40000;while(Date.now()<end&&bot.health<18){if(lost||!bot.entity.position.floored().equals(p)||!qs.every(q=>bot.blockAt(q)?.boundingBox==='block'))throw Error('heal protection/life');const food=bot.inventory.items().find(i=>i.name==='rotten_flesh');if(bot.food<18&&food){await bot.equip(food,'hand');await bot.consume();await bot.waitForTicks(5);console.log('ATE_FLESH',bot.food,bot.health);}else if(bot.food<18&&!food)break;await bot.waitForTicks(10);}console.log('HEAL_REAL',bot.health,bot.food,bot.entity.position,'FULL',qs.every(q=>bot.blockAt(q)?.boundingBox==='block'));}finally{bot.clearControlStates();bot.removeListener('death',die);bot.removeListener('respawn',die);}
+-- output --
+ATE_FLESH 20 14.333333969116211
+ATE_FLESH 20 17
+HEAL_REAL 18.53333282470703 19 Vec3 { x: 35.460226549497335, y: 66, z: 80.41139926435939 } FULL true

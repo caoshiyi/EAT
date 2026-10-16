@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-16T16:24:37+00:00",
+  "command": [
+    "events",
+    "--last",
+    "20"
+  ],
+  "exit": 0,
+  "stdout": "2026-10-16T14:38:52 leave          player=p3\n2026-10-16T14:38:52 leave          player=p2\n2026-10-16T14:38:52 leave          player=p4\n2026-10-16T14:38:52 bothost_stop   pid=591914\n2026-10-16T14:38:59 server_stop    pid=591579 exit=0\n2026-10-16T14:39:00 down           \n2026-10-16T14:42:32 server_start   pid=852873\n2026-10-16T14:42:42 bothost_start  pid=853199\n2026-10-16T14:42:42 join           player=p1\n2026-10-16T14:42:43 join           player=p2\n2026-10-16T14:42:43 join           player=p4\n2026-10-16T14:42:43 join           player=p3\n2026-10-16T14:42:44 locks_cleared  \n2026-10-16T14:42:44 up             iteration=None\n2026-10-16T14:47:08 death          player=p3 cause=p3 was shot by Skeleton position={'x': 7.7, 'y': 66, 'z': 80.7} dimension=overworld\n2026-10-16T14:48:21 advancement    player=p2 title=Not Today, Thank You kind=made the advancement\n2026-10-16T14:48:30 advancement    player=p2 title=Monster Hunter kind=made the advancement\n2026-10-16T15:46:55 death          player=p3 cause=p3 was slain by Zombie position={'x': 35.3, 'y': 66, 'z': 80.7} dimension=overworld\n2026-10-16T15:53:33 death          player=p3 cause=p3 was slain by Zombie position={'x': 11.4, 'y': 67, 'z': 81.7} dimension=overworld\n2026-10-16T16:24:00 death          player=p4 cause=p4 tried to swim in lava to escape Magma Cube position={'x': 4.7, 'y': 24.4, 'z': 5.6} dimension=the_nether\n",
+  "stderr": ""
+}

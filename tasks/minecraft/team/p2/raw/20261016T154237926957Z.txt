@@ -1,0 +1,74 @@
+program #1840 on p2: 0 s
+--- output ---
+STATION_COLUMN 0 0 [
+  [ 30, 'andesite' ], [ 29, 'diorite' ],
+  [ 28, 'stone' ],    [ 27, 'air' ],
+  [ 26, 'air' ],      [ 25, 'stone' ],
+  [ 24, 'stone' ],    [ 23, 'stone' ],
+  [ 22, 'stone' ],    [ 21, 'stone' ],
+  [ 20, 'stone' ],    [ 19, 'stone' ],
+  [ 18, 'stone' ],    [ 17, 'stone' ],
+  [ 16, 'stone' ],    [ 15, 'stone' ],
+  [ 14, 'stone' ],    [ 13, 'stone' ],
+  [ 12, 'stone' ],    [ 11, 'stone' ]
+]
+STATION_COLUMN 1 0 [
+  [ 30, 'andesite' ], [ 29, 'diorite' ],
+  [ 28, 'stone' ],    [ 27, 'stone' ],
+  [ 26, 'stone' ],    [ 25, 'air' ],
+  [ 24, 'air' ],      [ 23, 'air' ],
+  [ 22, 'air' ],      [ 21, 'air' ],
+  [ 20, 'air' ],      [ 19, 'moss_block' ],
+  [ 18, 'stone' ],    [ 17, 'stone' ],
+  [ 16, 'stone' ],    [ 15, 'stone' ],
+  [ 14, 'air' ],      [ 13, 'air' ],
+  [ 12, 'air' ],      [ 11, 'air' ]
+]
+STATION_COLUMN -1 0 [
+  [ 30, 'andesite' ],    [ 29, 'diorite' ],
+  [ 28, 'stone' ],       [ 27, 'cobblestone' ],
+  [ 26, 'cobblestone' ], [ 25, 'stone' ],
+  [ 24, 'stone' ],       [ 23, 'stone' ],
+  [ 22, 'stone' ],       [ 21, 'stone' ],
+  [ 20, 'stone' ],       [ 19, 'stone' ],
+  [ 18, 'stone' ],       [ 17, 'stone' ],
+  [ 16, 'stone' ],       [ 15, 'stone' ],
+  [ 14, 'stone' ],       [ 13, 'stone' ],
+  [ 12, 'stone' ],       [ 11, 'granite' ]
+]
+STATION_COLUMN 0 1 [
+  [ 30, 'andesite' ], [ 29, 'diorite' ],
+  [ 28, 'stone' ],    [ 27, 'stone' ],
+  [ 26, 'stone' ],    [ 25, 'stone' ],
+  [ 24, 'stone' ],    [ 23, 'stone' ],
+  [ 22, 'stone' ],    [ 21, 'stone' ],
+  [ 20, 'stone' ],    [ 19, 'stone' ],
+  [ 18, 'stone' ],    [ 17, 'stone' ],
+  [ 16, 'stone' ],    [ 15, 'stone' ],
+  [ 14, 'stone' ],    [ 13, 'granite' ],
+  [ 12, 'granite' ],  [ 11, 'granite' ]
+]
+STATION_COLUMN 0 -1 [
+  [ 30, 'andesite' ],    [ 29, 'diorite' ],
+  [ 28, 'stone' ],       [ 27, 'spruce_planks' ],
+  [ 26, 'stone' ],       [ 25, 'cobblestone' ],
+  [ 24, 'cobblestone' ], [ 23, 'air' ],
+  [ 22, 'air' ],         [ 21, 'air' ],
+  [ 20, 'air' ],         [ 19, 'air' ],
+  [ 18, 'stone' ],       [ 17, 'stone' ],
+  [ 16, 'stone' ],       [ 15, 'stone' ],
+  [ 14, 'air' ],         [ 13, 'air' ],
+  [ 12, 'air' ],         [ 11, 'air' ]
+]
+ANGRY_ENDERS [{"id":130,"p":[75.30000001192093,19,114.49319992943495],"hp":9,"angry":true},{"id":14817,"p":[84.94730042131108,26,80.66289112849955],"hp":40}]
+BODY (75, 26, 115) 20 20
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #1827 1actualstep247 thensameSIDErefusal, returned246FULL20/19. #1828 actualCAUSE: ZOMBIFIEDpiglin13716(-275.494,72,-246.764) bbox INTERSECTS target276,72,-247. Earliercorner/latencyhypothesis unsupported. Changed3North FLOORwalk thenroom249 skipsoccupi
+p1: edside247/248; typedAABBoccupancycheck added tobuild, nohit/killneutralmob.
+p1: P1 covered-corridor adoption trial: max3 NORTH occupiedcellbypass floorwalkThenRoom FLOORONLY cells then full endpoint, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p1: P1_COVERED_SEALED (-275, 71, -249) SOUTHback(-275, 71, -248) actualsteps3 HP20
+p3: P3 FOURoreassignment CLOSED #1820: actualSMELT4->IRONpick0+ingot1, protectedFIELDforge35,66,80/20hp; TABLEroof35,68,80 FURNACEEast36,66,80. Ownenduseverified notcampbank. Nowfinitecoldblocks for E/SNether protectedlanding: RO7South+3North cells fullybounde
+p3: d, reuse4stage boundedmine/reopen, thenrecoverportableforge/leave. No genericreserve extension.
+--- p2 now: (75.4, 26, 115.5) in overworld, health 20/20, food 20/20, alive

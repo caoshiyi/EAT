@@ -1,0 +1,26 @@
+program #1714 on p1: 11.9 s
+--- output ---
+ACTUAL_HAND_NETHERRACK (-252, 64, -181)
+ACTUAL_HAND_NETHERRACK (-252, 63, -181)
+BARRIER_MOB_AUDIT {"id":8125,"name":"ghast","pos":"(-191.48095703125, 66.270263671875, -200.95654296875)","distance":63.720831245876106,"top":70.270263671875,"contained":true,"below":false,"occluded":false,"current":"(-252, 63, -180)","next":"(-252, 63, -180)"}
+ACTUAL_COVERED_STEP (-252, 63, -181) (-251.481107866021, 63, -180.32701011000484) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-252,63,-181],"back":[-252,63,-180],"built":[[-252,63,-180],[-252,64,-180]],"steps":1,"hp":20,"food":19,"mats":48}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest []
+LOADED_RESOURCE warped_nylium [
+  '(-239, 40, -65)',
+  '(-238, 39, -65)',
+  '(-237, 37, -65)',
+  '(-236, 36, -65)',
+  '(-241, 40, -63)',
+  '(-235, 33, -65)',
+  '(-241, 40, -62)',
+  '(-241, 40, -61)'
+]
+FINAL (-251.481107866021, 63, -180.3860126208824) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-251.5, 63, -180.4) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,20 @@
+program #1774 on p1: 12.2 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":9765,"name":"piglin","pos":"(-279.66773824810355, 91.41999998688698, -247.52257672022392)","distance":27.81108530334455,"top":93.36999998688698,"contained":true,"below":false,"occluded":false,"current":"(-272, 71, -231)","next":"(-272, 71, -231)"}
+ACTUAL_COVERED_STEP (-271, 71, -231) (-270.66770881824914, 71, -230.50000000000014) 20
+ACTUAL_HAND_NETHERRACK (-270, 72, -231)
+ACTUAL_HAND_NETHERRACK (-270, 71, -231)
+ACTUAL_COVERED_STEP (-270, 71, -231) (-269.5, 71, -230.50000000000028) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-270,71,-231],"back":[-271,71,-231],"built":[[-271,71,-231],[-271,72,-231]],"steps":2,"hp":20,"food":19,"mats":78}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [ '(-269, 58, -358)' ]
+LOADED_RESOURCE warped_nylium []
+FINAL (-269.5, 71, -230.50000000000028) the_nether 20 19 dead false adopted true
+PICK_WEAR_ACTUAL [["iron_pickaxe",245],["stone_pickaxe",118],["stone_pickaxe",111],["stone_pickaxe",110]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Correction forceLook NOTuniversallyfixed: surfaceexit#1759 secondUP64->65 undercap67 stillrefusedDIRT despiteforceLook:true; fallbackdescended/resealedoriginal63 TRUE20hp RAW4retained. Currentnightgatecorrectlystopped#1771. Sourceawaitlook plausible butnot
+p3: solecause. Next tinytest sendsatobservedHIGH>=1.16 withNOextra2ticks; comparetwoUPS63->65/fullcap67. P1 please retainfallback.
+--- p1 now: (-269.5, 71, -230.5) in the_nether, health 20/20, food 19/20, alive

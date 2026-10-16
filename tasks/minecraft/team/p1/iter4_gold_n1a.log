@@ -1,0 +1,15 @@
+program #1784 on p1: 6.9 s
+--- output ---
+ACTUAL_COVERED_STEP (-270, 71, -238) (-269.5, 71, -237.33229118175078) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-270,71,-238],"back":[-270,71,-237],"built":[[-270,71,-237],[-270,72,-237]],"steps":1,"hp":20,"food":19,"mats":77}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest [ '(-269, 58, -358)' ]
+LOADED_RESOURCE warped_nylium []
+FINAL (-269.5, 71, -237.39129369262835) the_nether 20 19 dead false adopted true
+PICK_WEAR_ACTUAL [["iron_pickaxe",245],["stone_pickaxe",118],["stone_pickaxe",113],["stone_pickaxe",113]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-269.5, 71, -237.4) in the_nether, health 20/20, food 19/20, alive

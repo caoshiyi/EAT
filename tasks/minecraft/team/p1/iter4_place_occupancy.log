@@ -1,0 +1,20 @@
+program #1828 on p1: 0 s
+--- output ---
+BODY (-274.4995797329582, 71, -245.60870630737165) 20 19
+TARGET_BLOCK air []
+NEAR_ENTITY 163 player (-274.4995797329582, 71, -245.60870630737165) 0.6 1.8 player 127 undefined
+NEAR_ENTITY 13716 zombified_piglin (-275.4940974602882, 72, -246.76383555050845) 0.6 1.95 hostile undefined undefined
+NEAR_ENTITY 13717 zombified_piglin (-279.9710000001851, 71, -250.52169121361615) 0.6 1.95 hostile undefined undefined
+ENDPOINT (-275, 71, -248) [ 'netherrack', 'netherrack', 'air', 'air' ] [
+  [ 'netherrack', 'air', 'air', 'air' ],
+  [ 'netherrack', 'netherrack', 'netherrack', 'netherrack' ]
+]
+ENDPOINT (-275, 71, -250) [ 'netherrack', 'air', 'air', 'air' ] [
+  [ 'air', 'air', 'air', 'air' ],
+  [ 'netherrack', 'netherrack', 'air', 'air' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-274.5, 71, -245.6) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,71 @@
+program #1750 on p3: 6 s
+--- output ---
+PILLAR_SEND Vec3 { x: 25.5, y: 62.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 1 Vec3 { x: 25.5, y: 62, z: 91.49999980425727 }
+PILLAR_SEND Vec3 { x: 25.5, y: 63.25220334025373, z: 91.49999980425727 } Vec3 { x: 0, y: -0.07544406518948656, z: 0 }
+UP_ACTUAL 2 Vec3 { x: 25.5, y: 63, z: 91.49999980425727 }
+SHAFT_SEALED Vec3 { x: 25, y: 63, z: 91 } true 20
+--- returned ---
+{
+ "steps": 2,
+ "issue": null,
+ "protectedEnd": true,
+ "lost": false,
+ "health": 20,
+ "food": 18,
+ "position": {
+  "x": 25.5,
+  "y": 63,
+  "z": 91.49999980425727
+ },
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   10,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "raw_iron",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   64
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (25.5, 63, 91.5) in overworld, health 20/20, food 18/20, alive

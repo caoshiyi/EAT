@@ -1,0 +1,18 @@
+program #1625 on p1: 13.8 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":2194,"name":"magma_cube","pos":"(-98.06716911329758, 68, -188.95960009098053)","distance":14.944428576721739,"top":70.04,"contained":true,"below":false,"occluded":true,"current":"(-109, 63, -180)","next":"(-109, 63, -180)"}
+BARRIER_MOB_AUDIT {"id":2195,"name":"magma_cube","pos":"(-100.94489258019541, 68, -182.8957857450905)","distance":9.67542574782283,"top":70.04,"contained":true,"below":false,"occluded":true,"current":"(-109, 63, -180)","next":"(-109, 63, -180)"}
+ACTUAL_COVERED_STEP (-110, 63, -180) (-109.33229118175082, 63, -179.49957973295776) 20
+ACTUAL_COVERED_STEP (-111, 63, -180) (-110.5, 63, -179.49957973295776) 20
+ACTUAL_COVERED_STEP (-111, 63, -180) (-110.5, 63, -179.49957973295776) 20
+ADOPT_FAILED_TRY_ORIGIN ENDPOINT_SHELL_POST
+ACTUAL_COVERED_STEP (-111, 63, -180) (-110.5, 63, -179.49957973295776) 20
+FINAL (-110.5, 63, -179.49957973295776) the_nether 20 19 dead false adopted false
+--- error ---
+Error: COLD_TARGET_CHANGED (-110, 63, -180)
+    at go (p1-program-1625.js:14:72)
+    at p1-program-1625.js:22:228
+--- chat since this player's previous program ---
+p4: P4_CAPSULE_SEALED -10,65,56 actualsteps8 HP20
+p4: P4_CAPSULE_SEALED -12,65,56 actualsteps2 HP20
+--- p1 now: (-110.5, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

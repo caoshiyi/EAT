@@ -1,0 +1,16 @@
+program #1823 on p1: 3.7 s
+--- output ---
+ACTUAL_COVERED_STEP (-275, 71, -246) (-274.4995797329582, 71, -245.3912933567877) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-275,71,-246],"back":[-275,71,-245],"built":[[-275,71,-247],[-275,72,-247]],"steps":0,"hp":20,"food":19,"mats":79}
+FINAL (-274.4995797329582, 71, -245.3912933567877) the_nether 20 19 dead false adopted true
+--- error ---
+Error: Server refused to place netherrack at (-276, 72, -247): the block is still air
+    at placeBlockWithOptions (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:42:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Proxy.placeBlock (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:48:5)
+    at async put (p1-program-1823.js:11:564)
+    at async frame (p1-program-1823.js:17:323)
+    at async p1-program-1823.js:20:390
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-274.5, 71, -245.4) in the_nether, health 20/20, food 19/20, alive

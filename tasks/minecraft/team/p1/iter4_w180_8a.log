@@ -1,0 +1,23 @@
+program #1616 on p1: 28.7 s
+--- output ---
+BARRIER_MOB_AUDIT {"id":2194,"name":"magma_cube","pos":"(-95.8567300050437, 68, -188.9649038656023)","distance":11.756443679538368,"top":70.04,"contained":true,"below":false,"occluded":true,"current":"(-101, 63, -180)","next":"(-101, 63, -180)"}
+BARRIER_MOB_AUDIT {"id":2195,"name":"magma_cube","pos":"(-99.04034695688637, 72.00920897722244, -186.35573067582473)","distance":11.480410092608098,"top":74.04920897722245,"contained":true,"below":false,"occluded":true,"current":"(-101, 63, -180)","next":"(-101, 63, -180)"}
+ACTUAL_COVERED_STEP (-102, 63, -180) (-101.32743037704986, 63, -179.48110786602098) 20
+ACTUAL_COVERED_STEP (-103, 63, -180) (-102.5, 63, -179.49008704725196) 20
+ACTUAL_COVERED_STEP (-104, 63, -180) (-103.3322341573, 63, -179.49598785156488) 20
+ACTUAL_COVERED_STEP (-105, 63, -180) (-104.5, 63, -179.49778379050287) 20
+ACTUAL_COVERED_STEP (-106, 63, -180) (-105.33228832953553, 63, -179.49906660654207) 20
+ACTUAL_COVERED_STEP (-107, 63, -180) (-106.5, 63, -179.4993231697499) 20
+ACTUAL_COVERED_STEP (-108, 63, -180) (-107.33229084591018, 63, -179.49957973295776) 20
+ACTUAL_COVERED_STEP (-109, 63, -180) (-108.5, 63, -179.49957973295776) 20
+COVERED_ENDPOINT_VERIFIED {"origin":[-109,63,-180],"back":[-108,63,-180],"built":[[-109,62,-181],[-109,63,-181],[-109,64,-181],[-110,62,-180],[-110,63,-180],[-110,64,-180],[-108,63,-180],[-108,64,-180]],"steps":8,"hp":20,"food":19,"mats":143}
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE chest []
+LOADED_RESOURCE warped_nylium []
+FINAL (-108.5, 63, -179.49957973295776) the_nether 20 19 dead false adopted true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-108.5, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,68 @@
+program #1710 on p3: 3.6 s
+--- output ---
+DOWN_ACTUAL 1 Vec3 { x: 24.489460743138515, y: 51, z: 95.53296690889891 } iron_ore
+SHAFT_SEALED Vec3 { x: 24, y: 51, z: 95 } true 20
+--- returned ---
+{
+ "steps": 1,
+ "issue": null,
+ "protectedEnd": true,
+ "lost": false,
+ "health": 20,
+ "food": 19,
+ "position": {
+  "x": 24.489460743138515,
+  "y": 51,
+  "z": 95.53296690889891
+ },
+ "inventory": [
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cooked_cod",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "cobblestone",
+   20,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   3,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   43
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (24.5, 51, 95.5) in overworld, health 20/20, food 19/20, alive

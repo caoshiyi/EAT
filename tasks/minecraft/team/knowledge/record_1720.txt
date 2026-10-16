@@ -1,0 +1,60 @@
+== #1720 2026-10-16T15:13:12 p2 role=alternative_lead iter=4 1.3 s
+const{Vec3}=require('vec3'),q=bot.entity.position.floored(),n=q.offset(0,-1,-1),f=n.offset(0,-1,0);console.log('REPAIR_START',q.toString(),bot.health,bot.food);for(const [x,z]of[[83,103],[83,104],[82,103],[84,103],[84,102]])console.log('DOWNPROFILE',x,z,Array.from({length:18},(_,i)=>[40-i,bot.blockAt(new Vec3(x,40-i,z))?.name]));if(q.toString()!=='(83, 40, 104)'||bot.health<18)throw Error('START');if(bot.blockAt(f)?.name!=='air'||bot.blockAt(n)?.boundingBox!=='block')throw Error('NOT_OBSERVED_CASE');const item=bot.inventory.items().find(i=>i.name==='cobblestone');if(!item)throw Error('NO_STOCK');await bot.equip(item,'hand');await bot.placeBlock(bot.blockAt(n),new Vec3(0,-1,0));await bot.waitForTicks(6);console.log('FLOOR_REPAIR_ACTUAL',f.toString(),bot.blockAt(f)?.name,'BODY',bot.entity.position.toString(),bot.health,'INV',bot.inventory.items().filter(i=>i.name==='cobblestone').map(i=>i.count));
+-- output --
+REPAIR_START (83, 40, 104) 20 20
+DOWNPROFILE 83 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 83 104 [
+  [ 40, 'air' ],   [ 39, 'stone' ],
+  [ 38, 'stone' ], [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 82 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 84 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'stone' ], [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 84 102 [
+  [ 40, 'stone' ], [ 39, 'andesite' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+FLOOR_REPAIR_ACTUAL (83, 38, 103) cobblestone BODY (83.50004757276412, 40, 104.4265466840094) 20 INV [ 21 ]

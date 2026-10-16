@@ -1,0 +1,19 @@
+program #1655 on p1: 8 s
+--- output ---
+ACTUAL (-175.39129369262835, 63, -179.49957973295776) the_nether 20 19 [["quartz",7,null],["sweet_berries",13,null],["iron_pickaxe",1,245],["cobblestone_slab",2,null],["gold_ingot",1,null],["crafting_table",1,null],["gold_nugget",11,null],["netherrack",6,null],["stone_axe",1,4],["stone_pickaxe",1,91],["netherrack",64,null],["blackstone",43,null],["polished_blackstone",2,null],["stone_pickaxe",1,90],["stone_pickaxe",1,90],["basalt",29,null]]
+RES nether_bricks []
+RES spawner []
+RES chest []
+RES warped_stem []
+RES crimson_stem []
+RES warped_nylium []
+RES crimson_nylium []
+BIOMES {"nether_wastes":{"p":[-176,63,-180],"d":0},"warped_forest":{"p":[-224,63,-68],"d":121.85236969382254},"basalt_deltas":{"p":[-160,63,-164],"d":22.627416997969522}}
+DIRECTION -1 0 solidprefix 0 gaps [[1,"basalt","basalt","basalt"],[2,"air","air","air"],[3,"air","air","air"],[4,"air","air","air"],[5,"air","air","air"],[6,"air","air","air"],[7,"air","air","air"],[8,"air","air","air"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"]]
+DIRECTION 0 -1 solidprefix 0 gaps [[1,"basalt","basalt","netherrack"],[2,"air","air","netherrack"],[3,"air","netherrack","netherrack"],[4,"air","netherrack","netherrack"],[8,"netherrack","netherrack","netherrack"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"],[13,"air","air","air"],[14,"air","air","air"],[15,"air","air","air"]]
+DIRECTION 1 0 solidprefix 0 gaps [[1,"basalt","basalt","basalt"],[2,"basalt","air","air"],[38,"blackstone","air","air"],[40,"basalt","basalt","basalt"],[41,"basalt","air","air"],[42,"basalt","air","air"],[43,"basalt","air","air"],[44,"basalt","air","air"],[45,"basalt","air","air"],[46,"basalt","air","air"],[47,"basalt","air","air"],[48,"basalt","air","air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-175.4, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,20 @@
+program #1621 on p1: 3.1 s
+--- output ---
+ACTUAL (-108.5, 63, -179.49957973295776) the_nether 20 19 [["quartz",3,null],["sweet_berries",13,null],["iron_pickaxe",1,245],["cobblestone_slab",2,null],["gold_ingot",1,null],["crafting_table",1,null],["gold_nugget",11,null],["basalt",7,null],["stone_axe",1,4],["stone_pickaxe",1,63],["netherrack",35,null],["blackstone",35,null],["polished_blackstone",2,null],["stone_pickaxe",1,63],["stone_pickaxe",1,62],["basalt",64,null]]
+RES nether_bricks []
+RES spawner []
+RES chest []
+RES warped_stem []
+RES crimson_stem []
+RES warped_nylium []
+RES crimson_nylium []
+BIOMES {"nether_wastes":{"p":[-141,63,-212],"d":45.254833995939045},"warped_forest":{"p":[-221,63,-68],"d":158.39191898578665},"basalt_deltas":{"p":[-109,63,-180],"d":0}}
+DIRECTION -1 0 solidprefix 0 gaps [[1,"basalt","basalt","basalt"],[2,"air","air","air"],[3,"air","air","air"],[4,"air","air","air"],[5,"air","air","air"],[6,"air","air","air"],[7,"air","air","air"],[8,"air","air","air"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"]]
+DIRECTION 0 -1 solidprefix 0 gaps [[1,"basalt","basalt","basalt"],[2,"air","air","air"],[3,"air","air","air"],[4,"air","air","air"],[5,"air","air","air"],[6,"air","air","air"],[7,"air","air","air"],[8,"air","air","air"],[9,"air","air","air"],[10,"air","air","air"],[11,"air","air","air"],[12,"air","air","air"]]
+DIRECTION 1 0 solidprefix 23 gaps [[24,"basalt","basalt","magma_block"],[25,"basalt","basalt","magma_block"],[26,"basalt","basalt","magma_block"],[28,"basalt","basalt","basalt"],[36,"basalt","basalt","basalt"],[37,"air","air","air"],[38,"air","air","air"],[39,"air","air","air"],[40,"air","air","air"],[41,"air","air","air"],[42,"air","air","air"],[43,"air","air","air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4#1613 changed manualFLAT single6,64,57->6,64,56 physicallyPASSED/fullshell20/18; native NAV_BOUND was not terrainproof. Currentpickwear105/105,80basalt+2blackstone. Next bounded <=3x8 with autoSTOP firstissue/toolreserve; nearerENDER273 still(-35.67,56,4
+p4: 7.70). WideY45..75 proposal SAMEpartialend: heightbound not cause thiscomponentlimit.
+--- p1 now: (-108.5, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

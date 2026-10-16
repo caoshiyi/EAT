@@ -1,3 +1,16 @@
+# Iteration4 current reusable operations (read P4.md first)
+- Own player p4 only. Active body/endpoint in P4.md; old iteration3 helper origins INVALID now.
+- `enclosed_route_probe.js`: RO snapshot bounded 3D natural-rock capsule route toward Enderman273 floor(-36,56,47); fullnatural envelope is sufficient policy, not necessary. `enclosed_wide_height_probe.js` y45..75 yielded samepartialcomponent; not global no-path proof.
+- `enclosed_route_execute.js`: small3 then8 physical prefixes; entire excavated-volume exterior checked full; target rays exclude proposed cut volume; actual-arrival and sealed endpoint required. No reusable origin assumed; consumes exact-origin proposal.
+- `enclosed_hand_one.js` #1628 and `enclosed_hand_three.js` #1641: hand basalt/blackstone cuts physicallypass, no harvestclaim; preservespicks. Hand mining changes latency, not need for cold floor/roof/closure. Timer10s hand vs6s pick.
+- `covered_bridge_one.js` #1675/#1689/#1704: full future floor/roof/sides/front built BEFORE cut, then actual pass+newfullshell. Vector dir supportsWEST/NORTH; NORTH1 and4 physicallypassed. Config EXACTorigin; do not rerun oldprefixedconfig.
+- `cheap_roof_two.js` #1722: two WEST floor+lowroof steps then fullendpoint -19,65,48 HP20/18. Retainsprojectile current+next eye/torso four actual fullrock rays; target cells excluded beforecut. MAGMA bothfeet TOPgap>6/dist>=8/fullfloors policy copiedfrom P1 fieldproof, firstownphysical2 testpassed. This is a changed hazard policy versus oldbelow+ray helper, not a software bugfix or universal safety claim.
+- `cheap_roof_eight.js`: pending at this write from EXACT-19,65,48 toward-27; inspect actualpost before reuse. Endpoint construction first; failure tries protectedpartial then reverse tooldroom. Recovery is conditional, not guaranteed: accept onlyactual ROOF_BRIDGE_POST sealed/onGround/deadfalse.
+- `advance_capsules.py`: host arena-only orchestrator max3segments, firstsmall1 accepted; later3stopped firstNAV_BOUND as intended. Records outputs+actualheaders after each segment. It invokes only p4, never readsserver. Current fixed bundle is natural enclosed; do not use for cheapbridge.
+- `record_observations.py`: arena record RO -> own JSONL, now ENDPOINT_ACTUAL/ROOF_BRIDGE_POST supported. Smalllast3 added1 then dedup0, broadlast45 added19. Inventory/controllerreceipt is physical, JSON policyfields alone not proof beyond their predicate.
+
+Critical interfaces: maxDropDown2 allows one-feet-block descent because installed getLandingBlock compares supportY (64feet-62support=2). #1593 max1 noPath/unchanged; #1597 max2 SAMEedge physicalPASS. Manual bounded flat/down controller #1613 passed where native3s timedout; retained actualXYZ/onGround. Use .unit with capturedlength; .normalize mutates. Enderman entity.position is base; standingeye1.62 is not crouched1.27. Live gaze/hurt/dead/drop still unverified as of15:15.
+
 # P4 tested helpers
 
 All play must remain on each agent's own assigned player. These files are programs, not server tools. Read current P4.md and inspect actual state before reuse. Old files not listed below are experiments, often unsafe or superseded.

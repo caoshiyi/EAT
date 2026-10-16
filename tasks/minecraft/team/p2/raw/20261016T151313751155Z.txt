@@ -1,0 +1,70 @@
+program #1720 on p2: 1.3 s
+--- output ---
+REPAIR_START (83, 40, 104) 20 20
+DOWNPROFILE 83 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 83 104 [
+  [ 40, 'air' ],   [ 39, 'stone' ],
+  [ 38, 'stone' ], [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 82 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 84 103 [
+  [ 40, 'stone' ], [ 39, 'stone' ],
+  [ 38, 'stone' ], [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+DOWNPROFILE 84 102 [
+  [ 40, 'stone' ], [ 39, 'andesite' ],
+  [ 38, 'air' ],   [ 37, 'air' ],
+  [ 36, 'air' ],   [ 35, 'air' ],
+  [ 34, 'air' ],   [ 33, 'air' ],
+  [ 32, 'air' ],   [ 31, 'air' ],
+  [ 30, 'air' ],   [ 29, 'air' ],
+  [ 28, 'air' ],   [ 27, 'air' ],
+  [ 26, 'air' ],   [ 25, 'air' ],
+  [ 24, 'air' ],   [ 23, 'air' ]
+]
+FLOOR_REPAIR_ACTUAL (83, 38, 103) cobblestone BODY (83.50004757276412, 40, 104.4265466840094) 20 INV [ 21 ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #1701 ALL32Wcells actual252,-180 naturalrock/fullshell20/19/50mats. #1708 NORTH64fullfloors/mostouterfaces; ACTUALchest233,39,-326 north146m (notfortressclaim), noNetherbricks160. Stones97/96/96. TestingONE northcell HANDnetherrack, no materialharvestcl
+p1: aim; onpass repeatN24 towardchest/search, preservepicksforore/blackstone.
+p1: P1 covered-corridor adoption trial: max1 NORTH HANDnetherrack covered cells, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p1: P1_COVERED_SEALED (-252, 63, -181) SOUTHback(-252, 63, -180) actualsteps1 HP20
+p1: P1 covered-corridor adoption trial: max24 NORTH HANDnetherrack covered cells, frame missing outerblocks before each actualstep, thensealnewendpoint or fallbacksameorigin. No mandatorylongreturn.
+p3: P3 batchphysicalPASS #1709/#1710/#1711: fourRAWIRONactual, sealed23,51,95/20hp19food, stonepick45used/COBBLE19/shield0/axe0. Threechecks exactXYZ/fullseal/life/ironcounts passed. Useful ownmaterial reserve; NOTcampbankyet. Newdriver p3/run_mine_batch.py li
+p3: mited6stages stopsfirstfailure.
+--- p2 now: (83.5, 40, 104.4) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,21 @@
+program #1605 on p4: 16.2 s
+--- output ---
+ENCLOSED_ROUTE_PROPOSAL {"origin":[8,63,57],"goal":[-36,56,47],"best":[-15,63,50],"remaining":38,"visited":972,"path":[[7,64,57],[6,64,57],[6,64,56],[5,64,56],[4,65,56],[3,65,56],[2,65,56],[1,65,56],[0,65,56],[-1,65,56],[-2,65,56],[-3,65,56],[-4,65,56],[-5,65,56],[-6,65,56],[-7,65,56],[-8,65,56],[-9,65,56],[-10,65,56],[-11,65,56],[-12,65,56],[-13,65,56],[-14,65,56],[-15,65,56],[-15,65,55],[-15,65,54],[-15,65,53],[-15,65,52],[-15,64,51],[-15,63,50]]}
+ENDERMEN [{"id":293,"p":[23.81340106577536,55,96.6109624676229],"d":42.75534011550193},{"id":273,"p":[-35.669896987470665,56,47.69999998807907],"d":45.78271531263426},{"id":306,"p":[-30.598617706799658,72,152.40123267632217],"d":103.03196331810982},{"id":650,"p":[15.647318446430289,43,159.3888969637933],"d":104.07710864250565},{"id":290,"p":[-35.535794821458595,72,152.27459601949175],"d":104.8904921919174}]
+PROPOSAL_CONSUMED {"origin":[8,63,57],"best":[-15,63,50],"count":8}
+CUT_ACTUAL 8,65,57 basalt air
+CUT_ACTUAL 7,65,57 basalt air
+CUT_ACTUAL 7,64,57 basalt air
+STEP_ACTUAL 7,64,57 20 18
+CUT_ACTUAL 6,65,57 basalt air
+CUT_ACTUAL 6,64,57 basalt air
+STEP_ACTUAL 6,64,57 20 18
+CUT_ACTUAL 6,65,56 basalt air
+CUT_ACTUAL 6,64,56 basalt air
+ISSUE NAV_BOUND
+ENDPOINT_ACTUAL {"p":[6,64,57],"sealed":true,"onGround":true,"hp":20,"food":18,"trace":[[8,63,57],[7,64,57],[6,64,57]],"issue":"NAV_BOUND","dead":false,"inventory":[["sweet_berries",1,null],["basalt",16,null],["blackstone",2,null],["basalt",64,null],["crafting_table",1,null],["cobblestone_slab",1,null],["stone_pickaxe",1,104],["stone_axe",1,2],["spruce_button",1,null],["stone_pickaxe",1,104]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1_COVERED_SEALED (-101, 63, -166) SOUTHback(-101, 63, -165) actualsteps24 HP20
+--- p4 now: (6.5, 64, 57.3) in the_nether, health 20/20, food 18/20, alive
