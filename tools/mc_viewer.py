@@ -203,53 +203,73 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const t = s => s ? new Date(s).toLocaleString([], {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}) : '';
 const seenConnects = {};
 let open = {};
-let shown = null;
+// main panel: one body and one mode at a time -- photo (the latest path-traced shot), live 3D (prismarine view, heavy
+// for a browser) or map (BlueMap following the body); four live WebGL views at once are too heavy for one tab
+let body = null, mode = 'photo', lastShots = {}, freeMap = false, freshFollow = true;
+const MODES = [['photo', 'Photo'], ['live', 'Live 3D'], ['map', 'Map']];
+function frameSrc() { return mode === 'map' ? 'map/' : `view/${body}/`; }
 function views(players, status) {
-  // one 3D view at a time: four live WebGL views and their workers are too heavy for one browser tab
   const box = document.getElementById('views');
-  if (!shown) {
-    const h = location.hash.slice(1);   // #map or #p2 opens that tab
-    shown = h === 'map' || players.includes(h) ? h : players[0];
-    box.innerHTML = `<div class="tabs" id="tabs"></div><div class="view"><iframe id="vf" src="${shown === 'map' ? 'map/' : 'view/' + shown + '/'}" title="view"></iframe><div class="tag" id="vtag"></div></div>`;
+  if (!body) {
+    const h = location.hash.slice(1).split('/');   // #p2, #p2/live, #map ...
+    body = players.includes(h[0]) ? h[0] : players[0];
+    const m = MODES.map(x => x[0]).find(x => h.includes(x)); if (m) mode = m;
+    box.innerHTML = `<div class="tabs" id="tabs"></div><div class="view" id="vbox"></div>`;
+    layout();
   }
   document.getElementById('tabs').innerHTML = players.map(p => {
     const s = status && status[p];
-    return `<button class="${p === shown ? 'on' : ''}" onclick="show('${p}')">${p}${s && s.connected ? ' · ' + esc(s.dimension) + ' · ♥ ' + s.health : ' · offline'}</button>`;
-  }).join('') + `<button class="${shown === 'map' ? 'on' : ''}" onclick="show('map')" title="BlueMap, re-rendered every few minutes from the saved world">Map</button>`;
-  document.getElementById('vtag').style.display = shown === 'map' ? 'none' : '';   // BlueMap has its own controls there
-  if (shown === 'map') {
-    document.getElementById('tabs').innerHTML += ` <span class="mute" style="align-self:center">follow:</span>` + players.concat(['off']).map(p =>
-      `<button class="${(follow || 'off') === p ? 'on' : ''}" onclick="setFollow('${p}')">${p}</button>`).join('');
-    followMap(status);
-    return;
+    return `<button class="${p === body ? 'on' : ''}" onclick="pick('${p}', null)">${p}${s && s.connected ? ' · ' + esc(s.dimension) + ' · ♥ ' + s.health : ' · offline'}</button>`;
+  }).join('') + '<span style="flex:1"></span>' + MODES.map(([m, label]) =>
+    `<button class="${m === mode ? 'on' : ''}" onclick="pick(null, '${m}')">${label}</button>`).join('')
+    + (mode === 'map' ? `<button class="${freeMap ? 'on' : ''}" onclick="freeMap = !freeMap; freshFollow = true; poll1()" title="stop following the body">free</button>` : '');
+  if (mode === 'photo') photo();
+  if (mode === 'map' && !freeMap) followMap(status && status[body]);
+  if (mode === 'live') {
+    const s = status && status[body], c = s ? s.connects : null;
+    if (c != null && seenConnects[body] != null && c !== seenConnects[body]) document.getElementById('vf').src += '';   // body reconnected
+    if (c != null) seenConnects[body] = c;
   }
-  const s = status && status[shown];
-  const c = s ? s.connects : null;
-  if (c != null && seenConnects[shown] != null && c !== seenConnects[shown]) document.getElementById('vf').src += '';   // body reconnected
-  if (c != null) seenConnects[shown] = c;
-  document.getElementById('vtag').innerHTML = `<b>${shown}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
 }
-// the map follows a body by rewriting BlueMap's camera address (map:x:y:z:distance:rotation:angle:tilt:ortho:mode):
-// centred on it and turned to its facing, keeping the zoom and tilt the viewer has set; terrain minutes old, body live
-let follow = null;
+function layout() {
+  const v = document.getElementById('vbox');
+  if (mode === 'photo') v.innerHTML = `<img id="ph" alt="" style="width:100%;height:100%;object-fit:contain;background:#11151c"><div class="tag" id="vtag"></div>`;
+  else v.innerHTML = `<iframe id="vf" src="${frameSrc()}" title="view"></iframe>`;
+}
+function pick(p, m) {
+  if (p) body = p;
+  if (m) mode = m;
+  freshFollow = true;
+  layout(); poll1();
+}
+function photo() {
+  const m = lastShots[body], img = document.getElementById('ph');
+  if (!img) return;
+  if (!m) { document.getElementById('vtag').innerHTML = `<b>${body}</b> no rendered shot yet`; img.removeAttribute('src'); return; }
+  const src = `shots/${body}/${encodeURIComponent(m.file)}`;
+  if (img.getAttribute('src') !== src) img.src = src;
+  document.getElementById('vtag').innerHTML = `<b>${body}</b> path-traced ${ago(m.time)} · ${esc(m.dimension.replace('minecraft:', ''))} (${m.position.x}, ${m.position.y}, ${m.position.z}) · the world as last saved`;
+}
+// the map follows the body by rewriting BlueMap's camera address (map:x:y:z:distance:rotation:angle:tilt:ortho:mode):
+// centred on it and turned to its facing; zoom and tilt start close and are then the viewer's own
 const MAPS = {overworld: 'overworld', the_nether: 'nether', nether: 'nether', the_end: 'end', end: 'end'};
-function setFollow(p) { follow = p === 'off' ? null : p; poll1(); }
-function followMap(status) {
-  const s = follow && status && status[follow];
+function followMap(s) {
   if (!s || !s.connected || !s.position) return;
   let w;
   try { w = document.getElementById('vf').contentWindow; } catch (e) { return; }
   if (!w || !w.location) return;
   const cur = w.location.hash.slice(1).split(':');
-  const keep = cur.length === 10 ? cur.slice(4) : ['40', '0', '1.1', '0', '0', 'perspective'];
+  const keep = cur.length === 10 && !freshFollow ? cur.slice(4) : ['35', '0', '1.0', '0', '0', 'perspective'];
   // behind the body, looking where it looks: BlueMap looks along (sin r, -cos r), mineflayer along (-sin yaw, -cos yaw)
   const turn = s.yaw != null && (cur.length !== 10 || Math.abs(Math.atan2(Math.sin(-s.yaw - cur[5]), Math.cos(-s.yaw - cur[5]))) > 0.2);
   if (s.yaw != null) keep[1] = (-s.yaw).toFixed(2);
   const map = MAPS[String(s.dimension).replace('minecraft:', '')] || 'overworld';
   const next = [map, s.position.x.toFixed(1), s.position.y.toFixed(1), s.position.z.toFixed(1)].concat(keep).join(':');
-  if (turn || cur.length !== 10 || cur[0] !== map || Math.hypot(cur[1] - s.position.x, cur[3] - s.position.z) > 1.5) w.location.hash = next;
+  if (freshFollow || turn || cur.length !== 10 || cur[0] !== map || Math.hypot(cur[1] - s.position.x, cur[3] - s.position.z) > 1.5) {
+    w.location.hash = next;
+    if (cur.length === 10 || w.document.readyState === 'complete') freshFollow = false;
+  }
 }
-function show(p) { if (p === shown) return; shown = p; document.getElementById('vf').src = p === 'map' ? 'map/' : `view/${p}/`; delete seenConnects[p]; poll1(); }
 const ago = s => { const m = Math.round((Date.now() - Date.parse(s)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' h ago' : Math.round(m / 1440) + ' d ago'; };
 function rendered(sh) {
   const ps = Object.keys(sh || {}).sort();
@@ -298,6 +318,7 @@ function usage(u) {
   document.getElementById('usage').innerHTML = `${u.plan ? '<div class="mute">plan: ' + esc(u.plan) + '</div>' : ''}${rows}<div>this run: ${k(r.input)} input tokens (${r.input ? Math.round(100 * r.cached / r.input) : 0}% cached), ${k(r.output)} output, ${r.sessions} Codex sessions</div>${u.as_of ? '<div class="mute">limits as of ' + t(new Date(u.as_of * 1000)) + '</div>' : ''}`;
 }
 function render(d) {
+  lastShots = d.shots || {};
   stairs(d); usage(d.usage); rendered(d.shots);
   const st = d.status;
   views(d.players, st);
@@ -338,9 +359,9 @@ poll();
 
 
 # prismarine-viewer 1.33.0 aims its third-person camera at the body once, from 20 blocks up and back, when the page
-# opens; this starts it close behind the body and makes it follow (keeping the viewer's own orbit offset)
+# opens; this starts it nearer (9 up, 9 back: close, yet over a hut's walls) and makes it follow (keeping the viewer's own orbit offset)
 FOLLOW_OLD = "t.y>0&&s&&(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1)"
-FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y+1,t.z),u.camera.position.set(t.x,t.y+5,t.z+7),h.update(),s=!1):"
+FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y+1,t.z),u.camera.position.set(t.x,t.y+9,t.z+9),h.update(),s=!1):"
               "(new n.Tween(u.camera.position).to({x:u.camera.position.x+t.x-h.target.x,y:u.camera.position.y+t.y-h.target.y,"
               "z:u.camera.position.z+t.z-h.target.z},50).start(),new n.Tween(h.target).to({x:t.x,y:t.y,z:t.z},50)"
               ".onUpdate((()=>h.update())).start()))")   # moves with the body's own 50 ms tween, so the two stay in step
