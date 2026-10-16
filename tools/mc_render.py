@@ -356,7 +356,7 @@ def brightness(png: Path) -> float:
     return sum(px) / len(px)
 
 
-def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None:
+def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a, retake: bool = True) -> dict | None:
     scenes = CH / "scenes"
     (scenes / "snapshots").mkdir(parents=True, exist_ok=True)
     for ext in (".dump", ".octree2", ".json.backup"):   # a fresh render each time, not a continuation
@@ -392,6 +392,10 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None
     luma = brightness(png)
     nxt = min(6.0, max(0.25, exposure * (TARGET_LUMA / max(luma, 1.0)) ** 0.85))
     (d / "exposure.json").write_text(json.dumps({"exposure": round(nxt, 3), "last_luma": round(luma, 1)}))
+    if retake and not 0.7 < luma / TARGET_LUMA < 1.4:   # far off: take it again now at the corrected exposure
+        log(f"{p}: luma {luma:.0f} at exposure {exposure:.2f}; retaking at {nxt:.2f}")
+        png.unlink()
+        return shot(p, b, everyone, spp, gpu, a, retake=False)
     os.replace(png, d / f"{stamp}.png")
     shutil.copyfile(d / f"{stamp}.png", d / "latest.png.tmp")
     os.replace(d / "latest.png.tmp", d / "latest.png")
