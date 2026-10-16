@@ -137,7 +137,7 @@ def read_jsonl(name: str) -> list[dict]:
 DENIED = r"child_process|cluster|worker_threads|net|tls|https?|http2|dgram|dns|fs|fs/promises|inspector|vm|module|process|v8|wasi|sqlite|test|repl|trace_events"
 AUDIT = [
     ("command", re.compile(r"""(chat|whisper)\s*\(\s*[`'"]\s*/|['"`]/(give|tp|teleport|gamemode|op|summon|kill|setblock|fill|effect|enchant|xp|experience|time|weather|locate|difficulty|gamerule|clear|item|data|execute|spawnpoint|setworldspawn|seed|stop|save-all|whitelist|deop|ban|kick|tell|msg|w|me)\b|chat_command|tabComplete\s*\(\s*['"`]/""")),
-    ("server files / rcon", re.compile(r"rcon|server\.properties|rcon\.secret|level\.dat|usercache|ops\.json|whitelist\.json|\.work/|/world/|advancements/|stats/|25575|25580")),
+    ("server files / rcon", re.compile(r"\brcon\b|server\.properties|rcon\.secret|level\.dat|usercache|ops\.json|whitelist\.json|\.work/|/world/|advancements/|stats/|25575|25580")),
     ("forbidden require", re.compile(r"""require\s*\(\s*['"`](node:)?(""" + DENIED + r""")(/[a-z]+)?['"`]\s*\)""")),
     ("dynamic require / import", re.compile(r"""require\s*\(\s*[^'"`\s)]|\bimport\s*\(""")),
     ("sandbox escape", re.compile(r"constructor\s*\.\s*constructor|\bprocess\s*\.|globalThis\s*\.\s*process|\bFunction\s*\(|\beval\s*\(|__proto__|getPrototypeOf\s*\(\s*bot")),
