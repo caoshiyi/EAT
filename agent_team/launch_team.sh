@@ -34,6 +34,14 @@ for PHASE_ROLES_CSV in "${PHASE_LINES[@]}"; do
     ROLES+=("${PHASE_ROLES[@]}")
 done
 
+# A task's general instructions (tasks/<task>/agent_general.md) open every team agent's prompt, whatever the supervisor wrote
+if [ -f "tasks/$TASK/agent_general.md" ]; then
+    for ROLE in "${ROLES[@]}"; do
+        { cat "tasks/$TASK/agent_general.md"; echo; cat "$ITER_DIR/${ROLE}_prompt.txt"; } > "$ITER_DIR/${ROLE}_prompt.tmp"
+        mv "$ITER_DIR/${ROLE}_prompt.tmp" "$ITER_DIR/${ROLE}_prompt.txt"
+    done
+fi
+
 echo "[launch_team] Iteration $ITER — launching ${#ROLES[@]} agent(s): ${ROLES[*]}" >&2
 
 # TEAM_WALL_MIN: the team's wall-clock limit in minutes -- every agent still running then is stopped (and agents of
