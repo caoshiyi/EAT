@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Live, read-only viewer of a minecraft run: the four bodies' third-person views (prismarine-viewer, served by the bot
-host on ports 3001..3004) in a 2x2 grid, and beside them the milestones, each body's state, the chat, the deaths and
+host on ports 3001..3004, served through this port), one at a time with a tab per body, and beside them the milestones, each body's state, the chat, the deaths and
 each player's last program with its output.
 
     python tools/mc_viewer.py [--port 17779] [--host 0.0.0.0]
@@ -132,7 +132,9 @@ body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 system-u
 header { padding:10px 16px; display:flex; gap:16px; align-items:baseline; border-bottom:1px solid var(--line); background:var(--card); }
 header h1 { font-size:17px; margin:0; } header span { color:var(--mute); }
 main { display:grid; grid-template-columns:minmax(0,1fr) 430px; gap:12px; padding:12px; height:calc(100vh - 46px); }
-.views { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:8px; min-height:0; }
+.views { display:flex; flex-direction:column; gap:8px; min-height:0; }
+.tabs { display:flex; gap:6px; } .tabs button { font:inherit; border:1px solid var(--line); background:var(--card); border-radius:6px; padding:4px 12px; cursor:pointer; }
+.tabs button.on { background:var(--acc); color:#fff; border-color:var(--acc); } .view { flex:1; }
 .view { position:relative; background:#cfd6df; border-radius:8px; overflow:hidden; border:1px solid var(--line); }
 .view iframe { width:100%; height:100%; border:0; }
 .view .tag { position:absolute; left:8px; top:8px; background:rgba(255,255,255,.92); border-radius:6px; padding:3px 8px; font-size:12.5px; }
@@ -170,22 +172,25 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const t = s => s ? new Date(s).toLocaleString([], {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}) : '';
 const seenConnects = {};
 let open = {};
+let shown = null;
 function views(players, status) {
+  // one 3D view at a time: four live WebGL views and their workers are too heavy for one browser tab
   const box = document.getElementById('views');
-  players.forEach((p, i) => {
-    let v = document.getElementById('v-' + p);
-    if (!v) {
-      v = document.createElement('div'); v.className = 'view'; v.id = 'v-' + p;
-      v.innerHTML = `<iframe src="view/${p}/" title="${p}"></iframe><div class="tag"></div>`;
-      box.appendChild(v);
-    }
+  if (!shown) {
+    shown = players[0];
+    box.innerHTML = `<div class="tabs" id="tabs"></div><div class="view"><iframe id="vf" src="view/${shown}/" title="view"></iframe><div class="tag" id="vtag"></div></div>`;
+  }
+  document.getElementById('tabs').innerHTML = players.map(p => {
     const s = status && status[p];
-    const c = s ? s.connects : null;
-    if (c != null && seenConnects[p] != null && c !== seenConnects[p]) v.querySelector('iframe').src += '';   // body reconnected
-    if (c != null) seenConnects[p] = c;
-    v.querySelector('.tag').innerHTML = `<b>${p}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
-  });
+    return `<button class="${p === shown ? 'on' : ''}" onclick="show('${p}')">${p}${s && s.connected ? ' · ' + esc(s.dimension) + ' · ♥ ' + s.health : ' · offline'}</button>`;
+  }).join('');
+  const s = status && status[shown];
+  const c = s ? s.connects : null;
+  if (c != null && seenConnects[shown] != null && c !== seenConnects[shown]) document.getElementById('vf').src += '';   // body reconnected
+  if (c != null) seenConnects[shown] = c;
+  document.getElementById('vtag').innerHTML = `<b>${shown}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
 }
+function show(p) { if (p === shown) return; shown = p; document.getElementById('vf').src = `view/${p}/`; delete seenConnects[p]; poll1(); }
 const PCOL = {p1:'#1aa1b5', p2:'#8e5bd6', p3:'#e08a1e', p4:'#3f9a4e'};
 function stairs(d) {
   const W = 400, H = 250, L = 104, R = 10, T = 8, B = 26;
@@ -254,10 +259,10 @@ function render(d) {
       <pre>${esc(g.code)}</pre>${g.output ? `<pre>${esc(g.output)}</pre>` : ''}${res}</details>`;
   }).join('');
 }
-async function poll() {
+async function poll1() {
   try { render(await (await fetch('data.json', {cache: 'no-store'})).json()); } catch (e) { document.getElementById('sum').textContent = 'viewer not reachable'; }
-  setTimeout(poll, 3000);
 }
+async function poll() { await poll1(); setTimeout(poll, 3000); }
 poll();
 </script></body></html>
 """
@@ -266,9 +271,10 @@ poll();
 # prismarine-viewer 1.33.0 aims its third-person camera at the body once, when the page opens; this makes it follow
 # the body (keeping the viewer's own orbit offset), so a body that walks away stays in view
 FOLLOW_OLD = "t.y>0&&s&&(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1)"
-FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),s=!1):"
-              "(u.camera.position.x+=t.x-h.target.x,u.camera.position.y+=t.y-h.target.y,u.camera.position.z+=t.z-h.target.z,"
-              "h.target.set(t.x,t.y,t.z)),h.update())")
+FOLLOW_NEW = ("t.y>0&&(s?(h.target.set(t.x,t.y,t.z),u.camera.position.set(t.x,t.y+20,t.z+20),h.update(),s=!1):"
+              "(new n.Tween(u.camera.position).to({x:u.camera.position.x+t.x-h.target.x,y:u.camera.position.y+t.y-h.target.y,"
+              "z:u.camera.position.z+t.z-h.target.z},50).start(),new n.Tween(h.target).to({x:t.x,y:t.y,z:t.z},50)"
+              ".onUpdate((()=>h.update())).start()))")   # moves with the body's own 50 ms tween, so the two stay in step
 _assets = {}
 
 
