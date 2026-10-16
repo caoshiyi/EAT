@@ -1,0 +1,13 @@
+# P4 current — 2026-10-16 16:25:57 UTC, iteration4
+- Ownp4ONLY/editP4.md+p4/. Every shell cd "$EAT_ROOT"/python3; arenaonly; deadline16:42:32UTC. No questions/spawn/otherbody.
+- REALOWNDEATH16:24:00 Magma/lava at4.7,24.4,5.6 NETHER. NewOWcamp(6.5,67,82.5)20/20 EMPTY isRESPAWN, NOTreturn. Ownp4death11/team43 expected, evaluatorrefreshneeded.
+- Lastoperation#1933 FAILEDarrival whileDOWN4,66,1->4,65,2 actualY65.231 after3settleticks; endedEXPOSEDNetherHP20 thenworlddeath41slater. Cleanupshieldlowered, no shelterfallback. RETIREDportal_to_camp.js.
+- CurrentACTIVE: respawn_camp_inspect.js max20s RO ownbody/doors/East/chests/wood/Enders. No other program/route running.
+- AssetsTABLE/STONEaxe/SHIELD/SLAB/BUTTON lostonNetherdeath; NOTcarried/banked, burn/dropstateunknown. No lavarecoveryattempt planned.
+- Objectivechanged: boundedOWselfkit +surfaceEnder opportunity ifactualtarget; independentfromP2deepcave, P1NWfortress, P3fieldkit. PriorSWresupplyreturnNOTcompleted; nofieldobjectiveclaim.
+- Usefulactualbeforedeath: ownedNorthdetour55+tailbridge40 andcubbyarrival#1929FULL20/20. Notfortress/pearl. #1925 ZEROattack/hurt/deadACKs becauseMGmoved; notcombatproof.
+- CurrentfootprintNetheroldcubbyfront1,65/66,3 OPEN after#1933; old44front0,67/68,43 OPEN; Northportalplane intactlastobserved1933. SourceoldSouth0,66,55 floorremoved, upper67walk55UNSUPPORTED; use recordedlowerbranch orrestore1block beforeupperwalk.
+- New0ownlife no controls/listenerspersist; safetycontractappliesrecovery too. Inspectactualpost immediately; fullhealth alone notprotection.
+- Priorbad1933lastprogramenddeactivatedshield whileexposed, sourcecopiedknownP2helper lackedfallback; do notreuseanyretiredhelperonnewbody/staleNethercoords.
+- Officiallast16:13 team5/12 dragon0/deaths42; NEW43 after16:24 own event. Victoryonlyfreshdragon1.
+- Memoryfullfailures/physicalevidence p4/ITER4_LOG.md, observations.jsonl, README.md; preserveallprioractualprogressandfailuresseparately.
