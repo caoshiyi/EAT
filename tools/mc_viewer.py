@@ -497,12 +497,15 @@ HD_PAGE = r"""<!doctype html>
 * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
 header { padding:12px 16px; display:flex; gap:16px; align-items:baseline; flex-wrap:wrap; }
 header h1 { font-size:18px; margin:0; } header span { color:var(--mute); } header a { color:#8ab4ff; margin-left:auto; }
-main { padding:0 16px 16px; } .ms div { padding:2px 0; } .ms .n { color:#5b6470; } .ms small { color:var(--mute); margin-left:8px; }
-.box { background:#171b23; border-radius:8px; padding:12px 14px; margin-bottom:12px; }
+main { display:grid; grid-template-columns:minmax(0,1fr) 250px; gap:10px; padding:0 10px 10px; height:calc(100vh - 50px); }
+main iframe { width:100%; height:100%; border:0; border-radius:8px; background:#000; }
+.ms div { padding:2px 0; font-size:14px; } .ms .n { color:#5b6470; } .ms small { display:block; color:var(--mute); margin-left:18px; font-size:12px; }
+.box { background:#171b23; border-radius:8px; padding:12px 14px; overflow-y:auto; }
+@media (max-width: 800px) { main { grid-template-columns:1fr; height:auto; } main iframe { height:75vh; } }
 </style></head><body>
 <header><h1>Minecraft run</h1><span id="sum"></span><a href="dash">full dashboard</a></header>
 <main>
-<div class="box mute" id="live">Live HD view of the bodies: being set up.</div>
+<iframe src="map/" title="the world in 3D (BlueMap): drag to turn, scroll to zoom; the bodies move live, the terrain is a minute or two old"></iframe>
 <div class="box"><b>Milestones</b><div class="ms" id="ms"></div></div>
 </main>
 <script>

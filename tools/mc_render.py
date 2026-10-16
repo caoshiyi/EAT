@@ -8,6 +8,8 @@
         every N s, a path-traced third-person shot of each body (Chunky, OpenCL on the GPU) into
         .work/mc/render/shots/<player>/<time>.png and latest.png; without --spp the samples per pixel are chosen
         so that a cycle of four shots takes about half the interval
+    python3 tools/mc_render.py players [--every 2]
+        the bodies as BlueMap players (head and name) at their live positions, every N s
     python3 tools/mc_render.py timelapse --player p1 [--fps 12]
         the player's kept shots as .work/mc/render/shots/<player>/timelapse.mp4
 
@@ -169,6 +171,53 @@ def write_markers(where: dict[str, dict]) -> None:
         os.replace(tmp, live / "markers.json")
 
 
+def players_live() -> bool:
+    """Whether the players loop has written the bodies' positions in the last 30 s."""
+    f = BM / "web" / "maps" / "overworld" / "live" / "players.json"
+    return f.exists() and time.time() - f.stat().st_mtime < 30
+
+
+def write_heads(where: dict[str, dict]) -> None:
+    """Each body's face (from its default skin, with the hat layer) where BlueMap looks for player heads."""
+    from PIL import Image
+    for name in MAPS:
+        heads = BM / "web" / "maps" / name / "assets" / "playerheads"
+        if not heads.parent.parent.exists():
+            continue
+        heads.mkdir(parents=True, exist_ok=True)
+        for p, b in where.items():
+            out = heads / f"{b['uuid']}.png"
+            if out.exists():
+                continue
+            im = Image.open(skin(p)).convert("RGBA")
+            face = im.crop((8, 8, 16, 16))
+            face.alpha_composite(im.crop((40, 8, 48, 16)))
+            face.resize((64, 64), Image.NEAREST).save(out)
+
+
+def players_cycle(a) -> None:
+    """The bodies as BlueMap players (head icon and name), from the bot host's live positions: the web app polls
+    maps/<map>/live/players.json every second, so they move on the map while its terrain is minutes old."""
+    where = bodies()
+    write_heads(where)
+    for name, dim in MAPS.items():
+        live = BM / "web" / "maps" / name / "live"
+        if not live.parent.exists():
+            continue
+        live.mkdir(exist_ok=True)
+        players = [{"uuid": b["uuid"], "name": p, "foreign": b["dimension"] != dim,
+                    "position": {"x": b["x"], "y": b["y"], "z": b["z"]},
+                    "rotation": {"pitch": b.get("pitch", 0.0), "yaw": b.get("yaw", 0.0), "roll": 0.0}}
+                   for p, b in sorted(where.items())]
+        tmp = live / "players.json.tmp"
+        tmp.write_text(json.dumps({"players": players}))
+        os.replace(tmp, live / "players.json")
+        if (live / "markers.json").exists():   # no second dot per body next to its head
+            tmp = live / "markers.json.tmp"
+            tmp.write_text("{}")
+            os.replace(tmp, live / "markers.json")
+
+
 def map_cycle(a) -> None:
     jar = JARS / "bluemap-5.16-cli.jar"
     need(jar)
@@ -188,7 +237,8 @@ def map_cycle(a) -> None:
         log(f"bluemap exited {r.returncode}: {out[-2000:]}")
     else:
         log(f"map rendered in {time.time() - t0:.0f} s")
-    write_markers(bodies())   # positions again: a render can take minutes
+    if not players_live():   # the players loop shows the bodies itself, live
+        write_markers(bodies())   # positions again: a render can take minutes
 
 
 # ---- shots: Chunky ----
@@ -337,6 +387,22 @@ def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool, exposure: float)
     return s
 
 
+# Chunky's OpenCL kernels and the live view's GL client (tools/mc_live.py) cannot share the GPU: the client freezes
+# and the driver kills it (Xid 109). While anyone watches the live view the shots wait; it waits for a shot under way.
+LIVE_WATCHING = A.MC / "live" / "watching"
+BUSY = CH / "busy"
+
+
+def wait_for_live() -> None:
+    waited = time.time()
+    while LIVE_WATCHING.exists() and time.time() - LIVE_WATCHING.stat().st_mtime < 15:
+        if time.time() - waited < 1:
+            log("the live view is being watched: shots wait")
+        time.sleep(5)
+    if time.time() - waited > 5:
+        log(f"shots resume after {time.time() - waited:.0f} s")
+
+
 def chunky_cmd(target: int, a) -> list[str]:
     cp = ":".join(str(j) for j in sorted((JARS / "chunky").glob("*.jar")))
     return (["java", f"-Xmx{a.mem}", f"-Dchunky.home={CH / 'home'}", "-cp", cp, "se.llbit.chunky.main.Chunky",
@@ -375,9 +441,15 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a, retake: bool =
         exposure = 1.0
     s = scene(p, b, everyone, target, gpu, exposure)
     (scenes / f"{p}.json").write_text(json.dumps(s, indent=1))
+    if gpu:
+        wait_for_live()
     t0 = time.time()
-    r = subprocess.run(chunky_cmd(target, a) + (["-threads", str(a.threads)] if not gpu else []) + ["-render", p],
-                       capture_output=True, text=True, timeout=max(600, 4 * a.every))
+    BUSY.write_text(str(os.getpid()))   # the live view waits for this shot before taking the GPU
+    try:
+        r = subprocess.run(chunky_cmd(target, a) + (["-threads", str(a.threads)] if not gpu else []) + ["-render", p],
+                           capture_output=True, text=True, timeout=max(600, 4 * a.every))
+    finally:
+        BUSY.unlink(missing_ok=True)
     secs = time.time() - t0
     out = (r.stdout + r.stderr).replace("\r", "\n")
     # named by the samples actually taken: the CPU renderer may go past the target to finish a pass
@@ -458,7 +530,7 @@ def loop(fn, a, *args) -> None:
             log(f"cycle failed: {type(e).__name__}: {e}")
         if a.once:
             return
-        time.sleep(max(5, a.every - (time.time() - t0)))
+        time.sleep(max(1, a.every - (time.time() - t0)))
 
 
 def timelapse(a) -> int:
@@ -499,13 +571,18 @@ def main() -> int:
             s.add_argument("--spp", type=int, default=0, help="samples per pixel (default: fit the interval)")
             s.add_argument("--keep", type=int, default=200, help="shots kept per player (0: all)")
             s.add_argument("--cpu", action="store_true", help="Chunky's CPU path tracer instead of OpenCL")
+    pl = sub.add_parser("players")
+    pl.add_argument("--every", type=int, default=2, help="seconds between position updates")
+    pl.add_argument("--once", action="store_true", help="one update, then exit")
     t = sub.add_parser("timelapse")
     t.add_argument("--player", required=True, choices=A.PLAYERS)
     t.add_argument("--fps", type=int, default=12)
     a = ap.parse_args()
     if a.cmd == "timelapse":
         return timelapse(a)
-    if a.cmd == "map":
+    if a.cmd == "players":
+        loop(players_cycle, a)
+    elif a.cmd == "map":
         loop(map_cycle, a)
     else:
         loop(shots_cycle, a, {})
