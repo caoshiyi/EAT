@@ -12,7 +12,7 @@ Translates the claude arguments the harness uses and nothing else:
                                    -> web search and browser tools off; other names have no Codex counterpart
   --settings JSON                  ignored (Claude Code settings)
   --session-id ID / --resume ID    one persistent conversation per ID: resumed if this ID has a Codex thread
-Codex reads CLAUDE.md as its project instructions, as claude does. The prompt comes on stdin, as for claude. Cost is estimated from token counts and the CODEX_PRICE_* environment
+Codex reads CLAUDE.md as its project instructions, as claude does. CODEX_EFFORT sets the reasoning effort. The prompt comes on stdin, as for claude. Cost is estimated from token counts and the CODEX_PRICE_* environment
 ($ per million tokens; unset prices count as 0), since a ChatGPT-plan login is not billed per call.
 """
 import json
@@ -58,6 +58,8 @@ def main():
     flags = ["--json", "--skip-git-repo-check", "-c", 'project_doc_fallback_filenames=["CLAUDE.md"]']   # same project notes as claude
     if a["model"]:
         flags += ["-m", a["model"]]
+    if os.environ.get("CODEX_EFFORT"):   # reasoning effort (low | medium | high | xhigh); unset = the model's default
+        flags += ["-c", f'model_reasoning_effort="{os.environ["CODEX_EFFORT"]}"']
     if {"Write", "Edit"} & a["deny"]:
         flags += ["-c", 'sandbox_mode="read-only"']   # resume has no --sandbox flag
     elif a["bypass"]:
