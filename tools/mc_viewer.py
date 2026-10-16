@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Live, read-only viewer of a minecraft run: the four bodies' third-person views (prismarine-viewer, served by the bot
 host on ports 3001..3004, served through this port), one at a time with a tab per body, and beside them the milestones, each body's state, the chat, the deaths and
-each player's last program with its output.
+each player's last program with its output. With tools/mc_render.py running, also its delayed renders: the BlueMap
+map (a "Map" tab, served under /map/) and each body's latest path-traced shot (served under /shots/).
 
     python tools/mc_viewer.py [--port 17779] [--host 0.0.0.0]
 
@@ -93,6 +94,22 @@ def codex_usage() -> dict | None:
     return _usage["data"]
 
 
+RENDER = A.MC / "render"
+BLUEMAP_WEB = RENDER / "bluemap" / "web"
+SHOTS = RENDER / "shots"
+
+
+def shots() -> dict:
+    """Each body's latest rendered shot (tools/mc_render.py shots), if any."""
+    out = {}
+    for p in A.PLAYERS:
+        try:
+            out[p] = json.loads((SHOTS / p / "latest.json").read_text())
+        except (OSError, ValueError):
+            pass
+    return out
+
+
 def build() -> dict:
     ms, deaths = E.milestones(record=False)
     try:
@@ -119,6 +136,8 @@ def build() -> dict:
         "programs": sum(1 for p in progs if not p.get("refused")),
         "start": first_program_time(),
         "usage": codex_usage(),
+        "shots": shots(),
+        "map": (BLUEMAP_WEB / "settings.json").exists(),
     }
 
 
@@ -152,12 +171,16 @@ details summary { cursor:pointer; font-size:13px; }
 .err { color:var(--bad); }
 #stairs svg { width:100%; height:auto; display:block; } #stairs text { font-size:10.5px; fill:var(--mute); }
 .bar { height:8px; background:#eceff3; border-radius:4px; overflow:hidden; margin:3px 0 6px; } .bar i { display:block; height:100%; background:var(--acc); }
+.shots { display:grid; grid-template-columns:1fr 1fr; gap:6px; } .shots a { position:relative; display:block; }
+.shots img { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:6px; display:block; background:#cfd6df; }
+.shots span { position:absolute; left:4px; bottom:4px; background:rgba(255,255,255,.9); border-radius:5px; padding:1px 6px; font-size:12px; }
 @media (max-width: 900px) { main { grid-template-columns:1fr; height:auto; } .views { height:80vh; } }
 </style></head><body>
 <header><h1>Minecraft arena</h1><span id="sum"></span></header>
 <main>
   <section class="views" id="views"></section>
   <aside class="side">
+    <div class="card"><h2>Rendered</h2><div id="shots" class="mute">no rendered shots yet (tools/mc_render.py shots)</div></div>
     <div class="card"><h2>The run, step by step</h2><div id="stairs"></div></div>
     <div class="card"><h2>Milestones</h2><div class="ms" id="ms"></div></div>
     <div class="card"><h2>Usage (Codex, ChatGPT plan)</h2><div id="usage" class="mute">no Codex usage yet</div></div>
@@ -177,20 +200,33 @@ function views(players, status) {
   // one 3D view at a time: four live WebGL views and their workers are too heavy for one browser tab
   const box = document.getElementById('views');
   if (!shown) {
-    shown = players[0];
-    box.innerHTML = `<div class="tabs" id="tabs"></div><div class="view"><iframe id="vf" src="view/${shown}/" title="view"></iframe><div class="tag" id="vtag"></div></div>`;
+    const h = location.hash.slice(1);   // #map or #p2 opens that tab
+    shown = h === 'map' || players.includes(h) ? h : players[0];
+    box.innerHTML = `<div class="tabs" id="tabs"></div><div class="view"><iframe id="vf" src="${shown === 'map' ? 'map/' : 'view/' + shown + '/'}" title="view"></iframe><div class="tag" id="vtag"></div></div>`;
   }
   document.getElementById('tabs').innerHTML = players.map(p => {
     const s = status && status[p];
     return `<button class="${p === shown ? 'on' : ''}" onclick="show('${p}')">${p}${s && s.connected ? ' · ' + esc(s.dimension) + ' · ♥ ' + s.health : ' · offline'}</button>`;
-  }).join('');
+  }).join('') + `<button class="${shown === 'map' ? 'on' : ''}" onclick="show('map')" title="BlueMap, re-rendered every few minutes from the saved world">Map</button>`;
+  document.getElementById('vtag').style.display = shown === 'map' ? 'none' : '';   // BlueMap has its own controls there
+  if (shown === 'map') return;
   const s = status && status[shown];
   const c = s ? s.connects : null;
   if (c != null && seenConnects[shown] != null && c !== seenConnects[shown]) document.getElementById('vf').src += '';   // body reconnected
   if (c != null) seenConnects[shown] = c;
   document.getElementById('vtag').innerHTML = `<b>${shown}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
 }
-function show(p) { if (p === shown) return; shown = p; document.getElementById('vf').src = `view/${p}/`; delete seenConnects[p]; poll1(); }
+function show(p) { if (p === shown) return; shown = p; document.getElementById('vf').src = p === 'map' ? 'map/' : `view/${p}/`; delete seenConnects[p]; poll1(); }
+const ago = s => { const m = Math.round((Date.now() - Date.parse(s)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' h ago' : Math.round(m / 1440) + ' d ago'; };
+function rendered(sh) {
+  const ps = Object.keys(sh || {}).sort();
+  if (!ps.length) return;
+  document.getElementById('shots').className = 'shots';
+  document.getElementById('shots').innerHTML = ps.map(p => {
+    const m = sh[p], src = `shots/${p}/${encodeURIComponent(m.file)}`;
+    return `<a href="${src}" target="_blank" title="${esc(m.dimension)} (${m.position.x}, ${m.position.y}, ${m.position.z}) · ${m.spp} spp in ${m.seconds} s"><img src="${src}" alt="${p}" loading="lazy"><span><b style="color:${PCOL[p] || '#333'}">${p}</b> · ${ago(m.time)}</span></a>`;
+  }).join('');
+}
 const PCOL = {p1:'#1aa1b5', p2:'#8e5bd6', p3:'#e08a1e', p4:'#3f9a4e'};
 function stairs(d) {
   const W = 400, H = 250, L = 104, R = 10, T = 8, B = 26;
@@ -229,7 +265,7 @@ function usage(u) {
   document.getElementById('usage').innerHTML = `${u.plan ? '<div class="mute">plan: ' + esc(u.plan) + '</div>' : ''}${rows}<div>this run: ${k(r.input)} input tokens (${r.input ? Math.round(100 * r.cached / r.input) : 0}% cached), ${k(r.output)} output, ${r.sessions} Codex sessions</div>${u.as_of ? '<div class="mute">limits as of ' + t(new Date(u.as_of * 1000)) + '</div>' : ''}`;
 }
 function render(d) {
-  stairs(d); usage(d.usage);
+  stairs(d); usage(d.usage); rendered(d.shots);
   const st = d.status;
   views(d.players, st);
   const n = d.milestones.filter(m => m.reached.length).length;
@@ -349,6 +385,50 @@ def proxy(h, port: int, path: str):
     up.close()
 
 
+CTYPES = {".html": "text/html; charset=utf-8", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
+          ".png": "image/png", ".svg": "image/svg+xml", ".ttf": "font/ttf", ".webmanifest": "application/manifest+json",
+          ".mp4": "video/mp4"}
+
+
+def static(h, root: Path, rel: str):
+    """A file under root, read-only. BlueMap stores its map data gzipped (x.json.gz for x.json, .prbm.gz tiles): those
+    are sent as they are with content-encoding gzip, and a tile that was never rendered is 204, as BlueMap expects."""
+    rel = rel.split("?")[0].split("#")[0] or "index.html"
+    from urllib.parse import unquote
+    f = (root / unquote(rel)).resolve()
+    if not f.is_relative_to(root.resolve()):
+        h.send_error(403)
+        return
+    gz = False
+    if not f.is_file() and Path(str(f) + ".gz").is_file():
+        f, gz = Path(str(f) + ".gz"), True
+    if not f.is_file():
+        if "/tiles/" in rel:
+            h.send_response(204)
+            h.send_header("cache-control", "no-cache")
+            h.end_headers()
+        else:
+            h.send_error(404)
+        return
+    st = f.stat()
+    etag = f'"{st.st_mtime_ns:x}-{st.st_size:x}"'
+    if h.headers.get("If-None-Match") == etag:
+        h.send_response(304)
+        h.end_headers()
+        return
+    body = f.read_bytes()
+    h.send_response(200)
+    name = f.name[:-3] if gz else f.name
+    h.send_header("content-type", CTYPES.get(Path(name).suffix, "application/octet-stream"))
+    if gz:
+        h.send_header("content-encoding", "gzip")
+    h.send_header("content-length", str(len(body)))
+    h.send_header("etag", etag)
+    h.send_header("cache-control", "no-cache")   # revalidated each time: renders change in place
+    h.end_headers()
+    h.wfile.write(body)
+
+
 class Handler(BaseHTTPRequestHandler):
     def route_view(self) -> bool:
         parts = self.path.split("/", 3)   # '', 'view', 'p1', rest
@@ -373,6 +453,18 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.route_view():
+            return
+        path = self.path.split("?")[0]
+        if path in ("/map", "/shots"):
+            self.send_response(301)
+            self.send_header("Location", path + "/")
+            self.end_headers()
+            return
+        if path.startswith("/map/"):
+            static(self, BLUEMAP_WEB, self.path[len("/map/"):])
+            return
+        if path.startswith("/shots/"):
+            static(self, SHOTS, self.path[len("/shots/"):])
             return
         if self.path.split("?")[0] == "/data.json":
             body, ctype = json.dumps(build()).encode(), "application/json"
