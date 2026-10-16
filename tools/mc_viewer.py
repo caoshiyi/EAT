@@ -221,8 +221,8 @@ function views(players, status) {
   if (c != null) seenConnects[shown] = c;
   document.getElementById('vtag').innerHTML = `<b>${shown}</b> ` + (s && s.connected ? `${esc(s.dimension)} · ♥ ${s.health} · 🍗 ${s.food}` : 'offline');
 }
-// the map follows a body by rewriting BlueMap's camera address (map:x:y:z:distance:rotation:angle:tilt:ortho:mode),
-// keeping the zoom and angle the viewer has set; the terrain is minutes old, the position is live
+// the map follows a body by rewriting BlueMap's camera address (map:x:y:z:distance:rotation:angle:tilt:ortho:mode):
+// centred on it and turned to its facing, keeping the zoom and tilt the viewer has set; terrain minutes old, body live
 let follow = null;
 const MAPS = {overworld: 'overworld', the_nether: 'nether', nether: 'nether', the_end: 'end', end: 'end'};
 function setFollow(p) { follow = p === 'off' ? null : p; poll1(); }
@@ -233,10 +233,13 @@ function followMap(status) {
   try { w = document.getElementById('vf').contentWindow; } catch (e) { return; }
   if (!w || !w.location) return;
   const cur = w.location.hash.slice(1).split(':');
-  const keep = cur.length === 10 ? cur.slice(4) : ['60', '0', '0.9', '0', '0', 'perspective'];
+  const keep = cur.length === 10 ? cur.slice(4) : ['40', '0', '1.1', '0', '0', 'perspective'];
+  // behind the body, looking where it looks: BlueMap looks along (sin r, -cos r), mineflayer along (-sin yaw, -cos yaw)
+  const turn = s.yaw != null && (cur.length !== 10 || Math.abs(Math.atan2(Math.sin(-s.yaw - cur[5]), Math.cos(-s.yaw - cur[5]))) > 0.2);
+  if (s.yaw != null) keep[1] = (-s.yaw).toFixed(2);
   const map = MAPS[String(s.dimension).replace('minecraft:', '')] || 'overworld';
   const next = [map, s.position.x.toFixed(1), s.position.y.toFixed(1), s.position.z.toFixed(1)].concat(keep).join(':');
-  if (cur.length !== 10 || cur[0] !== map || Math.hypot(cur[1] - s.position.x, cur[3] - s.position.z) > 1.5) w.location.hash = next;
+  if (turn || cur.length !== 10 || cur[0] !== map || Math.hypot(cur[1] - s.position.x, cur[3] - s.position.z) > 1.5) w.location.hash = next;
 }
 function show(p) { if (p === shown) return; shown = p; document.getElementById('vf').src = p === 'map' ? 'map/' : `view/${p}/`; delete seenConnects[p]; poll1(); }
 const ago = s => { const m = Math.round((Date.now() - Date.parse(s)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' h ago' : Math.round(m / 1440) + ' d ago'; };

@@ -426,6 +426,8 @@ function status () {
       const b = body.bot
       s.held = b.heldItem ? `${b.heldItem.name} x${b.heldItem.count}` : null
       s.inventory = inventory(b)
+      s.yaw = Math.round(b.entity.yaw * 100) / 100   // facing, for the viewer's map camera; not in program results
+      s.pitch = Math.round(b.entity.pitch * 100) / 100
     }
     s.controller = locks[body.name] || null
     s.running = body.running ? { n: body.running.n, for_s: r1((Date.now() - body.running.start) / 1000) } : null
