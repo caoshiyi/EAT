@@ -203,7 +203,16 @@ function connect (body) {
     const chat = bot.chat
     bot.chat = (message) => {
       if (String(message).split('\n').some(l => l.trimStart().startsWith('/'))) throw new Error('commands are not allowed: bot.chat refuses messages starting with "/"')
-      return chat(message)
+      // mineflayer cuts a long message into 256-character pieces and sends a piece that starts with '/' as a command;
+      // cut it here instead, never just before a '/', so text like "a/b" is never refused half way
+      let rest = String(message)
+      while (rest.length > 256) {
+        let cut = 256
+        while (cut > 1 && rest[cut] === '/') cut--
+        chat(rest.slice(0, cut))
+        rest = rest.slice(cut)
+      }
+      return chat(rest)
     }
     bot.whisper = () => { throw new Error('bot.whisper sends a /tell command, and commands are not allowed; use bot.chat') }
     const setMovements = bot.pathfinder.setMovements
