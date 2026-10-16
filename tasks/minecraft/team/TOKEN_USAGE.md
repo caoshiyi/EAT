@@ -24,3 +24,10 @@ Iter2 coordinator measured input25609945/cached25198464/output54441; observer646
 16:13:30UTC: permittediter4wrappercheckfound0files; currentcomplete-teamusageunavailable. Nozero-consumptionclaim; explicitnonzeroJSONusageonlyqualifiesmeasurement.
 
 16:33:15 UTC: permitted agent_team/iter_4/*_output.json still contains 0 wrappers. Current usage unavailable. No extrapolation or prohibited-path access.
+
+## Iteration5 opening — 2026-10-16 16:49 UTC
+Permitted completed wrappers now report iter4 harness_observer input448578/cached371584/output3351: noncached76994, input+output451929. Other iter4 wrappers are timeout/error with num_turns0/all-zero usage: measurements unavailable, not zero work. No iter4 summary commit association verified in this check.
+Current iter5 completed subset: lead_converter input180622/cached147456/output2323; reliability_builder107301/77952/1514; acquisition_owner275156/240128/2753. Sum input563079/cached465536/noncached97543/output6590/input+output569669. Source agent_team/iter_5/*_output.json explicit usage fields. Subset only; capability_operator and mission_scientist ongoing/unavailable. No full-team total or cost inferred. No current commit identifier attribution.
+
+## 18:41 UTC live checkpoint, iteration5
+Read permitted agent_team/iter_5/*_output.json again. Only acquisition_owner, lead_converter and reliability_builder have completed measured wrappers. Their explicit usage totals remain input563079, cached465536, noncached97543, output6590, input+output569669. Cached input is a subset, not added twice. Current P4 and mission_scientist measurements and full-team total are unavailable; ongoing work is not zero usage. No current team commit association or cost is inferred.

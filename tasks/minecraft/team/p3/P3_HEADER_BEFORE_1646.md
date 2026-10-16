@@ -1,0 +1,12 @@
+# P3 current — 2026-10-16 16:09:31 UTC
+- Ownp3ONLY/filesP3.md+p3/. GoalUNFINISHED: freshp3/eval_live.txt dragon0/milestones5of12/deaths42(P3=11), programs1907(snapshotduringwoodjob).
+- THIRDiteration4death #1872 EastCAMPreturnZombie; restoredrespawncamp#1874 EAST67SAND/68DIRT/69SAND actual20/20,noinsidefoes. ALL EASThatchreturnsRETIRED. Northdoorunchanged, sharedfloor3,66,86..90 untouched.
+- #1880 DAY4164 lootvisible11..16,75..87, FOESnone20m; waited/preparedtoolTOOLONG. #1886 actualprioritypickupsALL0 exceptownedPLANK2; dropsgonebeforeexecution. DO NOTclaimrecoveredIronkit. LostIRONpick0/SHIELD/TABLE/FURNACE/INGOT1/COAL3/LOGS3/PLANK2/DIRT~18/axe/oldpick.
+- Actualnewbody#1886 FULLprivateREFUGE(12,64,82),20/20, WOODpick44used(16left), GRAVEL1/COD1/SAND3/PLANK1. Roof66PLANK, floor63SANDSTONE, sides64/65SANDfull. Campsparewoodpick/plank2/cod1withdrawn; bankcod1/iron1/steel1/sticks2 remainlastobserved.
+- Active starter_wood_27.js timeout100: barehandLOCALtree27,72/73,94, explicitclear3drop-columnleaves, adjacentstance26,68,94. Firsttree34,68,94 REFUSEDcreeper18.6m. No radiusweakening; alternate27 fartherfromcreeper.
+- Entireoperation plannedENDKNOWN35,66,80 via35,69,80 +3dig+DIRT/PLANKcap; materialfallbackgeneric, NOToldcobble-only. Ifwoodreceipt>=2 thenon-siteTABLE/newWOODpick beforecontrolled3Cobble acquisition. DoNOTreturnCAMP/Easthatchagain.
+- Priorownnewkit#1820 conversionREAL, butlost#1851 death15:46:55; #1860 firstrescueREALfullkit/HP12->heal18 thenLOSTagain#1872. Historymustpreserveseparateoutcomes, no healthyreturnclaim.
+- Earlierdeath#1564 nightdoor14:47:08, P2laterrecoveredraw2/tools actual#1620. PrioriterationNether#1474 packetDELIVEREDthenreturnFAILED/death14:06 remainsretired.
+- Usefulphysicalops: boundedDOWN/FLAT/whole-volume route+exactpost driver; #1741 stairalternative passed aftertwoUPrefusals. CurrentUP >1.15/noextra2ticks/forceLook true smallcasespassed; priorforceLook+2ticks10passesANDlaterfailure. P1independentlyadopted8UP thenactualgoldboots, no universalityclaim.
+- ProposedEASTNetheravenue NOTEXECUTED. P4SWcomplements, P1NW; bodyrebuildcannotbeclaimedobjectiveprogress. No indefinitecourier accepted. Nextinspectwoodreceipt/knownfullendpoint IMMEDIATELY, thenactualself-containedkit orchoosebarelimitedrecon; stoplongpreparation.
+- Fullhistoriesp3/EXPERIMENT_HISTORY.md/p3/P3_BEFORE_THIRDDEATH.md. CampEastchangedmaterialsSand/Dirt/Sand affectdigwhitelists; neverassumeallDIRT.
