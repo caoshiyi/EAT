@@ -296,7 +296,7 @@ def skin(p: str) -> str:
     return str(out)
 
 
-def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool) -> dict:
+def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool, exposure: float) -> dict:
     blocks = anvil.Blocks(WORLD, b["dimension"])
     cam, at = camera(blocks, b)
     cx, cz = math.floor(b["x"]) >> 4, math.floor(b["z"]) >> 4
@@ -312,7 +312,7 @@ def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool) -> dict:
                        "gear": armor(WORLD / "playerdata" / f"{o['uuid']}.dat"), "scale": 1.0, "headScale": 1.0})
     nether, end = b["dimension"].endswith("nether"), b["dimension"].endswith("end")
     s = {"sdfVersion": 10, "name": p, "width": WIDTH, "height": HEIGHT, "spp": 0, "renderTime": 0, "sppTarget": spp,
-         "exposure": round(1 + 2 * (1 - sky_open(blocks, b)) ** 3, 2), "outputMode": "PNG", "pathTrace": True, "rayDepth": 6,
+         "exposure": exposure, "postprocess": "TONEMAP2", "outputMode": "PNG", "pathTrace": True, "rayDepth": 6,
          "saveSnapshots": False, "dumpFrequency": 0, "emittersEnabled": True, "emitterIntensity": 13,
          "biomeColorsEnabled": True, "transparentSky": False,
          "world": {"path": str(WORLD), "dimension": b["dimension"]},
@@ -334,7 +334,6 @@ def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool) -> dict:
         s["sky"] = {"mode": "SOLID_COLOR", "color": {"red": 0.35, "green": 0.12, "blue": 0.08} if nether else
                     {"red": 0.12, "green": 0.08, "blue": 0.2}}
         s["sun"] = {"altitude": 1.2, "azimuth": 2.2, "intensity": 0.6, "drawTexture": False}
-        s["exposure"] = max(2.0, s["exposure"])
     return s
 
 
@@ -343,6 +342,18 @@ def chunky_cmd(target: int, a) -> list[str]:
     return (["java", f"-Xmx{a.mem}", f"-Dchunky.home={CH / 'home'}", "-cp", cp, "se.llbit.chunky.main.Chunky",
              "-scene-dir", str(CH / "scenes"), "-target", str(target), "-f", "-reload-chunks"]
             + (["-texture", str(PACK)] if a.pack else []))   # the pack over the vanilla textures
+
+
+TARGET_LUMA = 110   # mean 8-bit luma of a well exposed shot
+
+
+def brightness(png: Path) -> float:
+    """Mean luma (0..255) of an image, on a downscaled copy."""
+    from PIL import Image
+    im = Image.open(png).convert("L")
+    im.thumbnail((160, 90))
+    px = list(im.getdata())
+    return sum(px) / len(px)
 
 
 def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None:
@@ -354,7 +365,14 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None
     # partial block: GPU shots are whole multiples of 1024 spp, asked for as one pass more
     spp = max(1024, round(spp / 1024) * 1024) if gpu else spp
     target = spp + 1 if gpu else spp
-    s = scene(p, b, everyone, target, gpu)
+    d = SHOTS / p
+    d.mkdir(parents=True, exist_ok=True)
+    # exposure adapts per body from its last shot's brightness, as an eye would (snow and caves differ a lot)
+    try:
+        exposure = json.loads((d / "exposure.json").read_text())["exposure"]
+    except (OSError, ValueError, KeyError):
+        exposure = 1.0
+    s = scene(p, b, everyone, target, gpu, exposure)
     (scenes / f"{p}.json").write_text(json.dumps(s, indent=1))
     t0 = time.time()
     r = subprocess.run(chunky_cmd(target, a) + (["-threads", str(a.threads)] if not gpu else []) + ["-render", p],
@@ -371,14 +389,15 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None
         spp = int(png.stem.rsplit("-", 1)[1])
     m = re.search(r"Total rendering time: (\d+) hours, (\d+) minutes, (\d+) seconds", out)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    d = SHOTS / p
-    d.mkdir(parents=True, exist_ok=True)
+    luma = brightness(png)
+    nxt = min(6.0, max(0.25, exposure * (TARGET_LUMA / max(luma, 1.0)) ** 0.85))
+    (d / "exposure.json").write_text(json.dumps({"exposure": round(nxt, 3), "last_luma": round(luma, 1)}))
     os.replace(png, d / f"{stamp}.png")
     shutil.copyfile(d / f"{stamp}.png", d / "latest.png.tmp")
     os.replace(d / "latest.png.tmp", d / "latest.png")
     meta = {"player": p, "time": datetime.now(timezone.utc).isoformat(timespec="seconds"), "file": f"{stamp}.png",
             "position": {k: round(b[k], 1) for k in "xyz"}, "dimension": b["dimension"], "source": b["source"],
-            "camera": s["camera"]["position"], "spp": spp, "seconds": round(secs, 1),
+            "camera": s["camera"]["position"], "spp": spp, "exposure": exposure, "luma": round(luma, 1), "seconds": round(secs, 1),
             "render_seconds": int(m[1]) * 3600 + int(m[2]) * 60 + int(m[3]) if m else None,
             "renderer": s["renderer"], "gpu_failed": "Failed to load ChunkyCL" in out}
     (d / "latest.json.tmp").write_text(json.dumps(meta))
@@ -387,7 +406,7 @@ def shot(p: str, b: dict, everyone: dict, spp: int, gpu: bool, a) -> dict | None
     for f in kept[:-a.keep] if a.keep > 0 else []:
         f.unlink()
     log(f"{p}: {spp} spp in {secs:.1f} s ({meta['render_seconds']} s tracing, {s['renderer']}) at {meta['position']} "
-        f"{b['dimension']} ({b['source']})")
+        f"{b['dimension']} ({b['source']}), exposure {exposure:.2f} -> luma {luma:.0f}")
     return meta
 
 
