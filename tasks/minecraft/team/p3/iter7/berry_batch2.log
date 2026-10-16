@@ -1,0 +1,33 @@
+program #2503 on p3: 18.8 s
+--- output ---
+CROP_ACTUAL Vec3 { x: 0, y: 66, z: 95 } { age: '3' } STANCE Vec3 { x: 0, y: 65, z: 94 }
+DOOR exit true (6.559002560987943, 66, 78.77135953419112)
+LANDED_ACTUAL 0 94 (0.5, 65, 94.5) snow
+BERRY_ISSUE NO_NEW_BERRY_RECEIPT
+LANDED_ACTUAL 6 79 (6.5, 66, 79.47813674411263) snow
+DOOR enter true (6.559003450441873, 67.5625, 82.71226849455836)
+--- returned ---
+{
+ "issue": "NO_NEW_BERRY_RECEIPT",
+ "received": 0,
+ "bankDelta": null,
+ "dead": false,
+ "lost": false,
+ "protectedEnd": true,
+ "hp": 18.833332061767578,
+ "food": 17,
+ "p": {
+  "x": 6.559003450441873,
+  "y": 67.5625,
+  "z": 82.71226849455836
+ },
+ "inventory": [
+  [
+   "rotten_flesh",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 18.8/20, food 17/20, alive

@@ -1,0 +1,56 @@
+program #2717 on p2: 5.3 s
+--- output ---
+BOAT_RAY Vec3 { x: 75.48678335299817, y: 26, z: 116.46540693657674 } Vec3 { x: 76, y: 24, z: 113 } cobblestone RANGE 4.084684354177087
+SPAWN_TERRAIN []
+SPAWN_COLLISIONS []
+BOAT_ACTUAL 8593 Vec3 { x: 76.5007709816809, y: 25, z: 113.50051262736297 } PASSENGERS [
+  [
+    1798,
+    'enderman',
+    Vec3 { x: 75.47126131812675, y: 25, z: 114.56739042051983 }
+  ]
+] CARRY 0
+ENDERS [
+  [
+    111,
+    Vec3 { x: 74.43561144709791, y: 17, z: 113.55234632023033 },
+    undefined,
+    true
+  ],
+  [
+    1798,
+    Vec3 { x: 75.47126131812675, y: 25, z: 114.56739042051983 },
+    8593,
+    true
+  ]
+]
+CAP_INTENT Vec3 { x: 75, y: 26, z: 115 } diorite
+CAP_ACTUAL Vec3 { x: 75, y: 26, z: 115 } diorite
+CAP_INTENT Vec3 { x: 75, y: 27, z: 115 } dirt
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 115 } dirt
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 75.48678335299817, y: 26, z: 116.46540693657674 } 18.5 19 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 2, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'cobblestone', 32, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'stone_pickaxe', 1, 53 ],
+  [ 'andesite', 5, null ],
+  [ 'stone_pickaxe', 1, 50 ],
+  [ 'stone_axe', 1, 9 ],
+  [ 'dirt', 3, null ],
+  [ 'granite', 8, null ],
+  [ 'stone_pickaxe', 1, 3 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 EXIToperation CLOSED ACK yourmanualdoor+aside worked2702, P4actualfield2,66,93 HP20/20 nohostiles. Firstnewrefuge preflightcaughtTOP SAND (no dig, sourcewhitelist); fresh2711 column65SAND/64DIRT/63DIRT/floor62DIRT+hullfull. ChangeexplicitSANDhandharvest
+p4:  ONLYown2,65,93, nonfallDIRTcap65; noP3geometrywrite. NextactualFULLprivate beforecrop. No berriesyet, no needreceivewindow.
+p1: P1 actual2702 FIRSTCAPreuseSUCCESS FULL10163z16220HP/Rod1 stock0, rearACTUAL+2/frontACTUAL+2 then30steps/end4caps. No side/roof/floor mining; current113endsOPEN retainsroof/sides. Multi-rayretainedCUBEbarrier admission exercised2entities/nohealthloss. Cont
+p1: inuefreshcheapestEXISTINGendpoints100, notper-cellnewroomstock. EarliestfirstEye stillreturn~250cells, P3frontboatACKnotOWnear.
+p4: P4 PRIVATEactualFULL2,63,93 HP20 noinsidehostiles. CAP2,65,93DIRT/nonfall, floor62DIRT. StockSAND1+DIRT1 retained; readyfiniteharvestexistingripepatch thenreturnownending.
+--- p2 now: (75.5, 26, 116.5) in overworld, health 18.5/20, food 19/20, alive

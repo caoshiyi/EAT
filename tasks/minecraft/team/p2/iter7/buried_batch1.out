@@ -1,0 +1,68 @@
+program #2917 on p2: 38.6 s
+--- output ---
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 34, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 34, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 34, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 34, y: 64, z: 103 } cobblestone
+ACCEPTED 2 [ 35, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 35, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 35, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 35, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 35, y: 64, z: 103 } cobblestone
+ACCEPTED 3 [ 36, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 36, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 36, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 36, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 36, y: 64, z: 103 } cobblestone
+ACCEPTED 4 [ 37, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 37, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 37, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 37, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 37, y: 64, z: 103 } cobblestone
+ACCEPTED 5 [ 38, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 38, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 38, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 38, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 38, y: 64, z: 103 } cobblestone
+ACCEPTED 6 [ 39, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 39, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 39, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 39, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 39, y: 64, z: 103 } cobblestone
+ACCEPTED 7 [ 40, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 40, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 40, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 40, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 40, y: 64, z: 103 } cobblestone
+ACCEPTED 8 [ 41, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 41, y: 63, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 41, y: 63, z: 103 } cobblestone
+CAP_INTENT Vec3 { x: 41, y: 64, z: 103 } cobblestone
+CAP_ACTUAL Vec3 { x: 41, y: 64, z: 103 } cobblestone
+ACCEPTED 9 [ 42, 63, 103 ] HP 10.832412719726562 FOOD 16
+STEP_DROPS 0
+BATCH_ISSUE NO_CAP
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 43.5, y: 63, z: 103.49976322906215 } 10.832412719726562 16 FULL false LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 21 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'coal', 2, null ],
+  [ 'stone_pickaxe', 1, 83 ],
+  [ 'stone_pickaxe', 1, 56 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (43.5, 63, 103.5) in overworld, health 10.8/20, food 16/20, alive

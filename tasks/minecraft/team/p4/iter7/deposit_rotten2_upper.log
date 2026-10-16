@@ -1,0 +1,15 @@
+program #3059 on p4: 0.5 s
+--- output ---
+(nothing logged)
+--- error ---
+Error: POST_DELTA
+    at p4-program-3059.js:1:874
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p1: P1_BOTH_BED_CLEAR_ACTUAL (6.541750167087152, 67, 82.37019199082704) HP20 boundsZ+.3<83=true no pendingcontrols, P4returnedactualclosed2377. P3mayBEDopwhenactualP2ready. camp_receive program READY includescobble1PROBEack beforekit; STOPatREADY_UPprotectedro
+p1: of62, freshP2explicit62release thenP1separateUP7, no prematurecapdig.
+p3: P4 AUTHORIZEsoleBANKwriter UPPER7,68,82 depositEXACTROTTEN2 now (visiblefromfront), thenCLOSE+RELEASEBANK_P1. P1 afterACTUALP4depositACK yousoleUPPERwriter withdrawEXACT2→ownrotten2→4 thenCLOSE+RELEASE_P3. No otherstockwrites, P3bedprogramusesNOchest. Food
+p3: 4actualcarried toP2sameSHAFTop. P3actualfront3051(6.492,67,82.3) bedclear/20HP/doorsCLOSED. Bothbedremove+restore sourcesparsechecked; waitactualP2ready.
+p2: P2index50actual8,60,85 FULL10.83HP15food; final2steps+roomquarry now~20sec. ALLcampbedclearACK2382/2383; P3donotdiguntilmyROOM_READYactual. HandoffalsoCOAL2forcampcooking (P1passP3), noextrafoodquota. P2explicitRELEASE_ROOF62_P1 onlyAFTERwholekitactual and
+p2: programending; P1stopREADY_UPthenawaitrelease.
+--- p4 now: (6.4, 67, 82.4) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,13 @@
+program #2677 on p1: 0.4 s
+--- output ---
+ISSUE RECLAIM_RANGE_FOE magma_cube,magma_cube,magma_cube,magma_cube,magma_cube,magma_cube,magma_cube
+SHIELD_STEP (-120, 63, -180) 20 3
+SHELL_ACTUAL (-120, 63, -180) 20 3
+ROUTE_RESULT {"issue":"RECLAIM_RANGE_FOE magma_cube,magma_cube,magma_cube,magma_cube,magma_cube,magma_cube,magma_cube","current":[-120,63,-180],"steps":0}
+FINAL {"p":{"x":-119.53154358252694,"y":63,"z":-179.5527261955087},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":3,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["blackstone",3,null],["stone_pickaxe",1,130],["iron_pickaxe",1,174],["red_mushroom",2,null]],"built":[],"trace":[[-120,63,-180]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 ACTUALDEATH verified2673 NEWLIFEcamp6.5,67,82.5 Overworld20/20 EMPTY. Prior2664 changedhandstairs FAILED13560 HP20->13.5, retreatthenfallbackhanddigABORTED byhealthcallback duringfire/combat, endedEXPOSED4.5; laterBlaze death. No newROD/retention. Allow
+p4: noldAXE/SHIELD/TABLElostNether142430; NO recoveryrequest/rodcarrierwait. P4 remainingRODproposalFAILED/RELEASED. EarliestFIRSTEye stillP1Rod1; P3 owncampdoor/chestinterfaces respected. IassessnewlifeOWsupportcurrentuse, no blindreturntodeathsite.
+--- p1 now: (-119.5, 63, -179.6) in the_nether, health 20/20, food 19/20, alive

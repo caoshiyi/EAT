@@ -1,0 +1,9 @@
+program #2759 on p4: 0.5 s
+--- output ---
+BANK_RECEIPT {"before":[["water_bucket",1],["gold_ingot",1],["flint_and_steel",1],["spruce_fence_gate",1],["sweet_berries",8],["spruce_boat",1],["ender_pearl",1],["gold_nugget",6],["arrow",1],["rotten_flesh",2]],"after":[["water_bucket",1],["gold_ingot",1],["flint_and_steel",1],["spruce_fence_gate",1],["sweet_berries",14],["spruce_boat",1],["ender_pearl",1],["gold_nugget",6],["arrow",1],["rotten_flesh",2]],"expectedDelta":6,"actualDelta":6,"received":true}
+BANK_END {"issue":null,"lost":false,"received":true,"p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"doors":[[6,{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"north"}],[7,{"powered":false,"open":false,"hinge":"right","half":"lower","facing":"north"}]],"kit":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was slain by Zombie
+--- p4 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,98 @@
+program #2732 on p3: 4.3 s
+--- output ---
+DOOR_ACTUAL exit (6.593652937807883, 66.60956799090576, 79.87474549172742)
+BOAT_RECOVER_ISSUE ACTUAL_LAND_BAD
+BOAT_RETURN_FAILED ACTUAL_LAND_BAD
+--- returned ---
+{
+ "issue": "ACTUAL_LAND_BAD",
+ "removed": false,
+ "received": false,
+ "bankDelta": null,
+ "endpoint": null,
+ "protectedEnd": false,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 6.593652937807883,
+  "y": 66.60956799090576,
+  "z": 79.5
+ },
+ "dead": false,
+ "lost": false,
+ "boat": {
+  "id": 8807,
+  "placed": 1792186175703,
+  "p": {
+   "x": 7.547152470712319,
+   "y": 66,
+   "z": 79.24838133343025
+  },
+  "borrowed": true
+ },
+ "inv": [],
+ "life": {
+  "token": [
+   1792184820747,
+   2,
+   2
+  ],
+  "events": [
+   {
+    "type": "death",
+    "t": 1792185441864,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185441866,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "death",
+    "t": 1792185559511,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185559513,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   }
+  ]
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 EXISTING_ENDPOINT accepted(-31, 63, -132) FULLtrue HP20 rod1; REUSEDfront/rearcaps ONLY, previousroomroof/sides/floorpreserved/endsOPEN.
+p4: P3/P1 P4 smallnewlifeoperation2719 PASSED: private2,63,93 ->3supportedpillarUP ->RIPEexistingbush1,66,94 ->ACTUALberries0->3 ->SAMEoperationFULLprivate20/20/noinsidehostiles, continuouslife. Nowfiniteexistingpatchbatchcarry>=24 (20forP1travel+4ownfood), no
+p4:  planting/infrastructure. Forbankdelivery propose CHANGEDsmalltest: P3keepBOTHdoorsCLOSED, standinside6.5,67,82.3; Ioutside6,66,80 tossONEberrytowarddoor, seeifnormalpickupthroughcloseddoor withinpickupAABB succeeds. No aperture/entry, actualrecipientdelta
+p4: only. Waitforbatchactual beforewindow.
+p1: P1 #2723 acceptedFULL(-31,63,-132),20HP/19food/Rod1 after100existing-roomsteps. Actualextra pickup step solved4-capreceipt; DOUBLEslabsrepairedpreviousmissingcap, reusableequivalent1. ~150cellsportal, stillNether. P3ACKclearfrontboatbeforeactualarrival, pe
+p1: arlbankuntouched. Nextexisting100, thenfreshportalgeometry; no standingreceiverrequestyet.
+p4: P4 BERRIESactualcarry6 net3 SAMEoperationFULL2,63,93 HP20; recipientnotyetbanked, P3 CLOSEDdooroneberrytestnextafterACK.
+p2: P2 #2717 ACTUAL boat8593 at76.5,25,113.5 capture1798/vehicle8593, boatcarry1->0; normalactivate succeeded AFTERFULLterrainAABBclear, earlierfailedpointclippedSTONEcorner. #2724 boatboundEnder actualHURT+DEAD(onehitremainingHP1), SAMEoperation FULLrear11620
+p2: HP/17food/insidehostiles[], NO pearlvisible/carry0. Firstkillnotasset. Boat retainedworld, nextfiniteactual111capture/access test; no repeatedboatprep.
+--- p3 now: (6.6, 66.6, 79.5) in overworld, health 20/20, food 20/20, alive

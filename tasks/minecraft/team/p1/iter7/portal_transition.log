@@ -1,0 +1,21 @@
+program #2749 on p1: 7.4 s
+--- output ---
+PORTAL_BRIDGE_FLOOR cobblestone_slab { waterlogged: false, type: 'bottom' } [ [ 0, 0, 0, 1, 0.5, 1 ] ]
+ACTUAL_BUFFER Vec3 { x: 3.6159635578459053, y: 65, z: 4.559943145841444 } 20
+EXPECTED_DIMENSION_RESPAWN overworld
+PORTAL_OW_BLOCKS [[88,[[5,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[6,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[7,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[8,[["snow",null],["air",null],["air",null],["air",null],["air",null]]],[9,[["sand",null],["grass_block",null],["snow",null],["air",null],["air",null]]]]],[89,[[5,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[6,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[7,[["air",null],["air",null],["air",null],["air",null],["air",null]]],[8,[["air",null],["cobblestone",null],["snow",null],["air",null],["air",null]]],[9,[["air",null],["grass_block",null],["snow",null],["air",null],["air",null]]]]],[90,[[5,[["sand",null],["sand",null],["snow",null],["air",null],["air",null]]],[6,[["air",null],["dirt",null],["spruce_door",{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"south"}],["spruce_door",{"powered":false,"open":false,"hinge":"left","half":"upper","facing":"south"}],["sandstone",null]]],[7,[["air",null],["dirt",null],["cobblestone",null],["cobblestone",null],["cobblestone",null]]],[8,[["sand",null],["snow",null],["air",null],["air",null],["air",null]]],[9,[["stone",null],["dirt",null],["grass_block",null],["snow",null],["air",null]]]]],[91,[[5,[["sand",null],["cobblestone",null],["obsidian",null],["obsidian",null],["obsidian",null]]],[6,[["sand",null],["obsidian",null],["nether_portal",null],["nether_portal",null],["nether_portal",null]]],[7,[["dirt",null],["obsidian",null],["nether_portal",null],["nether_portal",null],["nether_portal",null]]],[8,[["sand",null],["spruce_planks",null],["obsidian",null],["obsidian",null],["obsidian",null]]],[9,[["stone",null],["dirt",null],["dirt",null],["dirt",null],["dirt",null]]]]],[92,[[5,[["sand",null],["cobblestone",null],["spruce_planks",null],["spruce_planks",null],["snow",null]]],[6,[["dirt",null],["dirt",null],["cobblestone",null],["cobblestone",null],["dirt",null]]],[7,[["dirt",null],["dirt",null],["sandstone",null],["cobblestone",null],["dirt",null]]],[8,[["dirt",null],["spruce_planks",null],["snow",null],["air",null],["air",null]]],[9,[["stone",null],["dirt",null],["dirt",null],["dirt",null],["dirt",null]]]]],[93,[[5,[["snow",null],["air",null],["air",null],["air",null],["air",null]]],[6,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[7,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[8,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[9,[["stone",null],["dirt",null],["dirt",null],["dirt",null],["snow",null]]]]],[94,[[5,[["snow",null],["air",null],["air",null],["air",null],["air",null]]],[6,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[7,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[8,[["grass_block",null],["snow",null],["air",null],["air",null],["air",null]]],[9,[["stone",null],["snow",null],["air",null],["air",null],["air",null]]]]]]
+PORTAL_RESULT {
+  dimension: 'overworld',
+  p: Vec3 { x: 7.5, y: 68, z: 91.5 },
+  hp: 20,
+  dead: false,
+  lost: false,
+  expectedRespawns: 1,
+  rod: 1
+}
+FINAL {"p":{"x":7.5,"y":68,"z":91.5},"hp":20,"food":18,"dead":false,"lost":false,"adopted":true,"full":false,"mats":5,"kit":[["quartz",3,null],["cobblestone",1,null],["blaze_rod",1,null],["gold_nugget",5,null],["cobblestone_slab",2,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["basalt",1,null],["netherrack",2,null],["stone_pickaxe",1,130],["iron_pickaxe",1,208],["red_mushroom",2,null]],"built":[],"trace":[[1,65,4]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (7.5, 68, 91.5) in overworld, health 20/20, food 18/20, alive

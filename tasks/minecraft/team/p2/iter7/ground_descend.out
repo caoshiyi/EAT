@@ -1,0 +1,63 @@
+program #2761 on p2: 10 s
+--- output ---
+DOWN Vec3 { x: 75.50033499825484, y: 25, z: 116.33229115384275 }
+DOWN Vec3 { x: 75.50033499825484, y: 20, z: 116.33229115384275 }
+ENDERS [
+  [ 111, Vec3 { x: 75.40476586445841, y: 19, z: 114.40994793680315 } ],
+  [ 153, Vec3 { x: 145.69999998807907, y: 6, z: 145.50213287159747 } ],
+  [
+    3573,
+    Vec3 { x: 103.30000001192093, y: -4.9375, z: 98.5028753691261 }
+  ],
+  [ 4802, Vec3 { x: 124.28168433593537, y: 20, z: 162.5468053590472 } ],
+  [ 5981, Vec3 { x: 137.502841771525, y: 2, z: 156.69999998807907 } ],
+  [ 7467, Vec3 { x: 12.301848073344594, y: 5, z: 29.683001694987283 } ],
+  [
+    8103,
+    Vec3 { x: 129.50275207185993, y: -15, z: 109.69999998807907 }
+  ],
+  [ 9605, Vec3 { x: 118.47587943560872, y: 1, z: 142.38560218223515 } ],
+  [ 9835, Vec3 { x: 48.258515993917335, y: 72, z: 78.74948382851207 } ],
+  [ 10033, Vec3 { x: 84.59838310651546, y: 15, z: 91.69161131266888 } ],
+  [
+    10347,
+    Vec3 { x: 49.8454267166542, y: -40, z: 14.797917074541814 }
+  ]
+]
+CAP_INTENT Vec3 { x: 75, y: 20, z: 116 } diorite
+CAP_ACTUAL Vec3 { x: 75, y: 20, z: 116 } diorite
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 75.50033499825484, y: 18, z: 116.33229115384275 } 20 17 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 2, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'granite', 8, null ],
+  [ 'cobblestone', 38, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'stone_axe', 1, 11 ],
+  [ 'andesite', 5, null ],
+  [ 'stone_pickaxe', 1, 57 ],
+  [ 'dirt', 4, null ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'stone_pickaxe', 1, 3 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 ACK actualOW2749. CurrentP3inside6.61,67,82.3 HP20/20 BOTHdoorsNORTH/CLOSED/frontBOATREMOVEDbank1, no insidehostiles. P4briefCHESTsolewriter forberries6deposit8->14; P3resumesonlyCLOSED ACK. Prepare actualthreshold6.5,67,81.3 withshield, doNOTopenCAMPdo
+p3: ors. Iwill testBERRY1 FIRST then moveaside toavoidselfrepick; youractualnet+1 chat P1_BERRY_RECEIVED. Onlythen freshPEARL1withdraw/toss/moveaside; yournetpearl0->1 chat P1_PEARL_RECEIVED. <=20s fromactualreceivernear; ifberryfails nopearlprobe, changedcont
+p3: rolledENTRY. Holdsafeplaceuntilready—no outsideemptywait.
+p1: P3 portalEXIT shortNOW P1solegate6,68,90 writer (campdoorsuntouched). ActualgateSOUTHclosed; Ialign/open/sneaknorthledge thenONEsupportblock6,67,89 tostand68outside+closegateBEFORE3blockdrop. FreshfloorAIRverified; supportimmediateuse notquarry. Willannoun
+p1: ceactualgeometry/ending, thenapproachcampthresholdonlyafterhostilecheck.
+p1: P1 PORTAL_GATE_CLOSED actual(6.406525625303063, 68, 89.42052452650688) HP20; ONEnewFULLsupport(6,67,89) forretained68exit, portaldoor6,68,90SOUTH+CLOSED. Campdoorsuntouched. Nextgroundroutefreshcheck, old6,89Y65nowchangedto68.
+p4: URGENT P1/P3 closedtest2744 FAILED BEFORETOSS: P4waitedOUTSIDE6.47,66.5,80.319 forREADY; Zombie9609arrivedduringwait/HP20->death, newlifeINSIDE6.5,67,82.5. NOinbound/outboundreceiptproof, 6berriesdroppedfront; currentinsideinventoryauditnextmessage. RETIRE
+p4: BAREfrontwait (readinessguardnotdynamic). P1ARMEDcourier pleasefreshclearactualfront9609 beforeoutsidehandoff; doNOTassumesafebecauseP4saidnohostilesatarrival. P3 keepdoorsCLOSED; P4 no outside repeat.
+[server] p1 was slain by Zombie
+p4: P4 CHESToperation CLOSED banklower7,67,82 ACTUALberries8->14 (+6), carry6->0; Pearl1/boat1/water1unchangedobserved. NEWLIFE20/20closedcamp, doorsuntouched. RELEASECHESTwriterBACKtoP3NOW forP1firstEye handoff; no P4morebankwrites. Newlife6receipt notclaimed
+p4: continuoussurvivalofdeadfielddonor.
+p3: P4 criticalP1handoff needs INSIDEaside: afterfooddeposit8->14/CLOSED returnCHESTwriterP3 and stepHEADbed7.5,67.56,83.5 (awayfront6.5,82.3) untilP1PEARLreceipt; otherwise competingpickup couldtakepearl. P3willalsostepasideafterthrow topreventselfrepick. P1r
+p3: eceiveractualthresholdonly whenfreshsafe/yourprogramready; keepCAMPdoorsCLOSED. P3berrytestprogram ready, no speculativepearlwithdraw.
+--- p2 now: (75.5, 18, 116.3) in overworld, health 20/20, food 17/20, alive

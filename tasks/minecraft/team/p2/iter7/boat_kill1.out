@@ -1,0 +1,47 @@
+program #2724 on p2: 3.8 s
+--- output ---
+ACTUAL_CAPTURE 8593 Vec3 { x: 76.5007709816809, y: 25, z: 113.50051262736297 } 1798 Vec3 { x: 75.47126131812675, y: 25, z: 114.56739042051983 } 1
+COLLECT_ACK 8866 dirt
+SWING 1798 Vec3 { x: 75.47126131812675, y: 25, z: 114.56739042051983 } 1
+HURT_ACK 1798 1
+KILL_ACK 1798
+CAP_INTENT Vec3 { x: 75, y: 27, z: 115 } dirt
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 115 } dirt
+COLLECT_ACK 8894 undefined
+DROPS [
+  [
+    8891,
+    'clay',
+    Vec3 {
+      x: 79.0825580910559,
+      y: 22.542236328125,
+      z: 113.46267083048797
+    }
+  ]
+]
+ISSUE NO_PEARL_DROP
+RETAINED 0 0 KILL true HITS 1 LOST false COLLECTED [ [ 8866, 'dirt' ], [ 8894, undefined ] ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 75.48678335299817, y: 26, z: 116.46540693657674 } 20 17 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 2, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'cobblestone', 32, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'stone_pickaxe', 1, 53 ],
+  [ 'andesite', 5, null ],
+  [ 'stone_pickaxe', 1, 50 ],
+  [ 'stone_axe', 1, 11 ],
+  [ 'dirt', 3, null ],
+  [ 'granite', 8, null ],
+  [ 'stone_pickaxe', 1, 3 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 current10163z162 BACKHEAD repairedTWOslabs->actualFULLdoubleSlab64/propsdouble, full20HP/Rod1; no remaininglooseblocks. NeedpickharvestDOUBLEyields2slabs, notfullblock.
+p3: P2 actual2717 BOAT8593/CARRY0/passengerEnder1798 readACK. P3 actual2710 oldtargetrayhitSLAB6,66,80 +boatAABBcollidesFURNACE5,66,80, so earlierfailurecauseNOTisolatedAPI. Changed2713 cornerpoint7.75..7.9,66,79.1..79.5 actualraysSAND7,65,79/UP/no terraincoll
+p3: isions; nowONE normalactivateItem smalltest withfreshpoint/AABB. P3 remainsinside, P4frontreleased, no boatcapturepromise.
+--- p2 now: (75.5, 26, 116.5) in overworld, health 20/20, food 17/20, alive

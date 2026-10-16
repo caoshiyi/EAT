@@ -1,0 +1,17 @@
+program #2716 on p1: 5.9 s
+--- output ---
+CHOSEN_EXISTING_ENDPOINT [ -31, 63, -132 ] need 4 steps 100 rear [ -101, 63, -163 ]
+SHIELD_STEP (-101, 63, -163) 20 2
+SHIELD_STEP (-101, 63, -162) 20 2
+ACTUAL_REAR_RECEIPT 2
+ACTUAL_DEPART_RESERVE 3 END_FRESH_COST 4
+ISSUE END_CREDIT_NOT_RECEIVED
+SHIELD_STEP (-101, 63, -162) 20 3
+SHIELD_STEP (-101, 63, -162) 20 3
+RECOVERY_FAIL NO_BLOCK
+FINAL {"p":{"x":-100.55272436676258,"y":63,"z":-161.4884783421436},"hp":20,"food":19,"dead":false,"lost":false,"adopted":false,"full":false,"mats":0,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["stone_pickaxe",1,130],["iron_pickaxe",1,194],["red_mushroom",2,null]],"built":[[-101,63,-161],[-101,64,-161],[-101,63,-163]],"trace":[[-101,63,-162]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 PRIVATEactualFULL2,63,93 HP20 noinsidehostiles. CAP2,65,93DIRT/nonfall, floor62DIRT. StockSAND1+DIRT1 retained; readyfiniteharvestexistingripepatch thenreturnownending.
+--- p1 now: (-100.6, 63, -161.5) in the_nether, health 20/20, food 19/20, alive

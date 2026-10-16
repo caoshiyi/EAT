@@ -1,0 +1,25 @@
+program #2597 on p4: 84.5 s
+--- output ---
+HAND_NO_HARVEST Vec3 { x: -245, y: 61, z: -431 } basalt
+HAND_NO_HARVEST Vec3 { x: -245, y: 60, z: -431 } netherrack
+HAND_NO_HARVEST Vec3 { x: -244, y: 61, z: -432 } nether_bricks
+HAND_NO_HARVEST Vec3 { x: -244, y: 60, z: -432 } nether_bricks
+EAST_PROGRESS Vec3 { x: -240, y: 60, z: -432 } 20 2
+HAND_NO_HARVEST Vec3 { x: -236, y: 60, z: -430 } nether_bricks
+EAST_PROGRESS Vec3 { x: -220, y: 60, z: -430 } 20 2
+EAST_PROGRESS Vec3 { x: -200, y: 60, z: -430 } 20 2
+EAST_PROGRESS Vec3 { x: -180, y: 60, z: -430 } 20 2
+EAST_PROGRESS Vec3 { x: -160, y: 60, z: -430 } 20 2
+HAND_ENDPOINT FULL143 STEPS 104
+END {"issue":null,"lost":false,"p":{"x":-142.66770881824922,"y":60,"z":-429.50000000002734},"hp":20,"food":20,"minHP":20,"full":true,"mats":0,"kit":[["sweet_berries",3,null],["bone_meal",4,null],["stone_axe",1,21],["spruce_sapling",2,null]],"mobs":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 RETURN actual (-315, 61, -394) fulltrue HP20 rod1 steps80
+p3: P2 ACK offered sword+woodpick+planks3 useful. Proposed solewriters: P3 DOORS+CHEST (resumingbankwriter ONLY afteryourACK), P2 OUTSIDEcombat+toss only. Actualreceiverinside6.56,67,82.3; donor6,66,79 aimUP atreceiverhead6.56,68.62,82.3 LOOK6ticks then toss. 
+p3: Aperture<=15sec ONLY actualP2near+nohostiles12; close immediately onreceipt/damage. No emptywindow now. Food6return thenYOURnetgainACK, no rawdispatch claim.
+p1: P1 actual2593 FULL31561z394 HP20/19/Rod1,80returncells retained. Continuingknownroute. P2/P3toolhandoffuseful, noEye-readinessneeded untilactualcarrierapproach. FutureEnduse: snowballs canbreakEndcrystals, optional cheapwoodshovel+snowstock AFTERactualcam
+p1: p/foodstable; nevergatesfirstEye. Needpearlsplural afterfirst: locationtripwillrevealactualportalEyequota, notgeneric12assumed.
+p2: P3 ACK YOUsoleDOORS+CHEST resumed, P2OUTSIDEtoss/combat only. #2598 NO_SAFE_BANK_APPROACH, no chestmutation. Actual newfieldberries0->9->7 retained, HP20/19 SAMEoperationFULL33,66,103; no kills. DECLINEfoodreturn (my7enough, preservebank). Dispatching dono
+p2: rstonesword+woodpick+planks3 toactualnorth6,79; openONLY actualpresence/nohostiles. Willlook6ticks UP receiverhead then toss, verifyyourdelta notdispatch. Program max120s thenprotectedreturn.
+--- p4 now: (-142.7, 60, -429.5) in the_nether, health 20/20, food 20/20, alive

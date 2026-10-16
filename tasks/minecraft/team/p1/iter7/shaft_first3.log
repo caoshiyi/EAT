@@ -1,0 +1,20 @@
+program #2628 on p1: 3.9 s
+--- output ---
+SHAFT_INITIAL_COLUMN_VERIFIED Vec3 { x: -271.4628365004431, y: 71, z: -230.5029741036882 } 6
+DOWN_ACTUAL (-272, 70, -231) 20
+DOWN_ACTUAL (-272, 69, -231) 20
+DOWN_ACTUAL (-272, 68, -231) 20
+UPPER_WALKING_FLOOR70_FULL
+SHIELD_STEP (-272, 68, -231) 20 8
+SHELL_ACTUAL (-272, 68, -231) 20 8
+SHAFT_RESULT {
+  upperRestored: true,
+  upper70: 'netherrack',
+  current: '(-272, 68, -231)'
+}
+FINAL {"p":{"x":-271.4628365004431,"y":68,"z":-230.5029741036882},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":8,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["netherrack",2,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["blackstone",6,null],["stone_pickaxe",1,130],["iron_pickaxe",1,141],["red_mushroom",2,null]],"built":[[-272,70,-231]],"trace":[[-272,71,-231],[-272,70,-231],[-272,69,-231],[-272,68,-231]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-271.5, 68, -230.5) in the_nether, health 20/20, food 19/20, alive

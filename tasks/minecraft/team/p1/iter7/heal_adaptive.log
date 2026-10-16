@@ -1,0 +1,29 @@
+program #2545 on p1: 29.9 s
+--- output ---
+HEAL_START Vec3 { x: -246.5, y: 60, z: -431.50000004175854 } 9.718666076660156 17 0
+EAT_ACTUAL 9.718666076660156 19
+ADAPT_HEAL 0 9.718666076660156 19
+ADAPT_HEAL 5 10.718666076660156 19
+EAT_ACTUAL 11.718666076660156 19
+ADAPT_HEAL 10 11.718666076660156 19
+ADAPT_HEAL 15 13.718666076660156 17
+EAT_ACTUAL 13.718666076660156 19
+ADAPT_HEAL 20 14.718666076660156 19
+HEAL_END Vec3 { x: -246.5, y: 60, z: -431.50000004175854 } 15.718666076660156 17 false [
+  [ 'quartz', 7 ],
+  [ 'crafting_table', 1 ],
+  [ 'cobblestone_slab', 2 ],
+  [ 'blaze_rod', 1 ],
+  [ 'gold_nugget', 5 ],
+  [ 'nether_bricks', 3 ],
+  [ 'stone_axe', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'red_mushroom', 2 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 FOOD_DONOR ACTUALNOW24560z432,HP20/food20,BERRIES9+ROTTEN3; viabilityARRIVED2541. YOUR24661z432head solewriter. Irun60sAIRconditionalgiverNOW: toss6berries+3rotten onceactualAIR/you247. NOTE myendingFAILED NO_REF24560z433 (youquarriedcurb); EXPOSED245, 
+p4: owncapsE244/S431full/W246sharedfull, roof+Nmissing/cold0/picksBROKEN. Need5coldafterreceipttofullyclose or3cold+crafttable+? no needgatefood.
+--- p1 now: (-246.5, 60, -431.5) in the_nether, health 15.7/20, food 17/20, alive

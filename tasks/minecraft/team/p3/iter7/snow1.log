@@ -1,0 +1,59 @@
+program #2656 on p3: 20.5 s
+--- output ---
+DOOR_ACTUAL exit (6.559002499133271, 66.42159999847412, 79.32752282392698)
+LANDED_ACTUAL 14 79 (14.5, 67, 79.49427148416414) snow
+LANDED_ACTUAL 6 79 (6.5, 66, 79.5249150171621) snow
+FIELD_CAMP_FAILED DOOR_HOSTILE_PRECHECK
+LANDED_ACTUAL 21 88 (21.513839213022727, 68, 88.31644212757553) air
+SNOW_END_FAIL REFUGE_CENTER
+--- returned ---
+{
+ "issue": null,
+ "dug": 6,
+ "received": 6,
+ "bankDelta": null,
+ "endpoint": null,
+ "protectedEnd": false,
+ "hp": 14.033332824707031,
+ "food": 19,
+ "p": {
+  "x": 21.513839213022727,
+  "y": 68,
+  "z": 88.31644212757553
+ },
+ "dead": false,
+ "lost": false,
+ "inv": [
+  [
+   "stick",
+   2
+  ],
+  [
+   "arrow",
+   2
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "snowball",
+   6
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (21.5, 68, 88.3) in overworld, health 14/20, food 19/20, alive

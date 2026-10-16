@@ -1,0 +1,1 @@
+const fs=require('fs');const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;for(const f of process.argv.slice(2)){new AsyncFunction('bot','Movements','goals',fs.readFileSync(f,'utf8'));console.log('PARSE_OK',f)}

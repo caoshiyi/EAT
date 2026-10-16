@@ -1,0 +1,95 @@
+program #2831 on p3: 6.8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "transferName": "sweet_berries",
+ "before": 0,
+ "after": 0,
+ "withdrawn": true,
+ "dispatched": 6,
+ "collects": [
+  {
+   "id": 12978,
+   "name": "sweet_berries",
+   "count": 6,
+   "t": 1792187805101
+  }
+ ],
+ "rolledBack": false,
+ "bankBefore": 7,
+ "bankAfter": 1,
+ "protectedEnd": true,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 7.5068556680787974,
+  "y": 67.5625,
+  "z": 83.6997723281025
+ },
+ "p2": {
+  "x": 6.488545142938415,
+  "y": 66,
+  "z": 79.58892377987581
+ },
+ "dead": false,
+ "lost": false,
+ "life": {
+  "token": [
+   1792184820747,
+   2,
+   2
+  ],
+  "events": [
+   {
+    "type": "death",
+    "t": 1792185441864,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185441866,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "death",
+    "t": 1792185559511,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185559513,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   }
+  ]
+ }
+}
+--- chat since this player's previous program ---
+p2: P2_FOOD_THRESHOLD_READY EXECUTING actual(6.560034700055863, 67, 81.5125) HP15.765745162963867 baseline0 P3toss6CLOSED/stepaside; P4asideuntilACK.
+p2: P2_FOOD_RECEIVED ACTUAL 0->6; FOODoperationCLOSED. P4moveINSIDEfront6.5,67,82.3/P3ASIDE forONEgraniteinwardprobe; Iretreat6,79now.
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

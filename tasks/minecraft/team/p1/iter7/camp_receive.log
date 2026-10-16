@@ -1,0 +1,33 @@
+program #3071 on p1: 72.2 s
+--- output ---
+SAND_FALL_ACTUAL Vec3 { x: 7.509363009268608, y: 66, z: 83.46732011131547 } 0
+SAND_FALL_ACTUAL Vec3 { x: 7.509363009268608, y: 65, z: 83.46732011131547 } 1
+SAND_FALL_ACTUAL Vec3 { x: 7.509363009268608, y: 64, z: 83.46732011131547 } 2
+SAND_FALL_ACTUAL Vec3 { x: 7.509363009268608, y: 63, z: 83.46732011131547 } 3
+PROBE_ACTUAL 1 Vec3 { x: 7.509363009268608, y: 60, z: 83.46732011131547 } 20
+KIT_RECEIVED_ACTUAL [
+  [ 'rotten_flesh', 4, null ],
+  [ 'sand', 4, null ],
+  [ 'cobblestone', 5, null ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'spruce_boat', 1, null ],
+  [ 'torch', 4, null ],
+  [ 'coal', 2, null ],
+  [ 'shield', 1, 0 ]
+] OFFHAND undefined
+CAMP_RECEIVE_ISSUE RECEIVE GIFT_INCOMPLETE
+CAMP_RECEIVE_END {"phase":"RECEIVE","issue":"GIFT_INCOMPLETE","p":{"x":7.509363009268608,"y":60,"z":83.46732011131547},"hp":20,"cold":5,"kit":[["rotten_flesh",4,null],["sand",4,null],["cobblestone",5,null],["stone_pickaxe",1,56],["stone_axe",1,19],["spruce_boat",1,null],["torch",4,null],["coal",2,null],["shield",1,0]]}
+FIELD_FINAL {"p":{"x":7.509363009268608,"y":60,"z":83.46732011131547},"hp":20,"food":20,"lost":false,"water":false,"kit":[["rotten_flesh",4,null],["sand",4,null],["cobblestone",5,null],["stone_pickaxe",1,56],["stone_axe",1,19],["spruce_boat",1,null],["torch",4,null],["coal",2,null],["shield",1,0]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2_ROOF62_RECAP_ACTUAL P1inside(7.509363009268608, 60, 83.46732011131547) FULL3cellhull. Probe1cobblethenactualreceipt beforecriticalkit; pleaseFOODtossSOUTH towardP2root84.7, P1remain83.5.
+p4: P4_BED_TRANSFER_RECONCILED upper1/own0 AFTERCLOSE actual, CHESTCLOSED RELEASEBANK_P3 BEDwithdraw+restore. 3072deposit0->1 succeeded; maininventory readWHILEopen reportedstale1, afterclose0. NOduplicatewrite. P4frontclear20HP no pendingmutators.
+p3: P3 BEDactual3074 upper1→0/own0→1 WHITE_BED retained20HP, CHESTCLOSED, restorewriterP3. P1probeactualNET1 ACK; needwholekit/cold>=7/food4P2receipt thenexplicit62release andUP7. Currentdeadline22:52:42 (~2m45), finishsharedshaftfloor66+bothbedcellsCLEAR befo
+p3: reP3restore (sourceprechecksall). P3standingfront6.489,67,82.3; P4frontsameclear. No doorwrites/openings.
+p2: P2_HANDOFF_END actualP2FOODrotten0 criticalgiftoutbestpick/axe/boat/torch4/coal2/shield+cold7 inclprobe. P1mustACKactualinventory independently. RoomHULLbad0 P2remainsbelowroot84; RELEASE_ROOF62_P1: P1digcap7,62,83withpickBEFOREUP7; P1solepillar7,83 untilc
+p2: ampclear thenP3bedrestore. P2doesNOshaft83writes.
+p4: P1/P2 actualSTATUS22:50:15 P1KITweapon/shield/boat/pick/torch/coal received BUT COLD onlyCOBBLE5 (plusSAND4); P2stillSANDSTONE4. ContractUP7needs7cold: cheapestchangedfix P2exactSANDSTONE2 tossNORTH toactualP1(7.5,60,83.5), retain2; actualP1cold5->7 thenUP
+p4: . No newquarry/quota. P4bothbedclear/nointerfacewrites; food4stillP1 noP2receipt.
+--- p1 now: (7.5, 60, 83.5) in overworld, health 20/20, food 20/20, alive

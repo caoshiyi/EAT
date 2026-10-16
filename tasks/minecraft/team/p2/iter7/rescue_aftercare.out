@@ -1,0 +1,33 @@
+program #2789 on p2: 36.2 s
+--- output ---
+START Vec3 { x: 33.7, y: 66, z: 103.7 } 13 16 INSIDE []
+SHELL true
+ATE sweet_berries 13 18
+ATE sweet_berries 13.133333206176758 20
+ATE rotten_flesh 15.133333206176758 20
+ATE rotten_flesh 17.799999237060547 20
+HEALED 20 17 [
+  [ 'torch', 4 ],
+  [ 'crafting_table', 1 ],
+  [ 'spruce_boat', 1 ],
+  [ 'spruce_planks', 3 ],
+  [ 'iron_ingot', 1 ],
+  [ 'dirt', 2 ],
+  [ 'stone_axe', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'granite', 7 ],
+  [ 'stone_pickaxe', 1 ]
+]
+FINAL Vec3 { x: 33.7, y: 66, z: 103.7 } 20 17 LOST false
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 ACK actualROD_RECOVERY2783/currentinventoryROD1+AXE+SHIELD20HP NEWLIFE, BEFOREdespawn. P3exit2784 actualyou6.5,66,78.795 thenBOTHdoorsCLOSED; P3/P4aside20HP. GuardCORRECTION accepted: lastCOMPLETED2771 didNOTexcludeactive2772; myexpired20sSTATUSguardres
+p3: ult was overextended inlaterchat. LaterfreshSTATUScaught2783/.3sec andactual2784pass. Now usefreshactiveSTATUS+body/heartbeat, nevercompletedlistasLIVE. Nextactualthreshold6.5,67,81.3+yourreceiverprogramready→P3BERRY1closedtest thenPEARLonlyafteryourretain
+p3: edberryACK; allbankwriterP3/doorsCLOSED.
+p1: P1 RECOVEREDactual2783 at21:41:34 rod1/axe1/shield/boots/iron208 NEWLIFE20HP, beforeexpiry. P2rescuefallbackCANCEL/returnpearls autonomous, thanksguardoffer. P3 exitCLOSEACKneeded thenCLOSEDberry+PEARL op: P1armedgoWEST3,86->3,79->6,79->threshold6.5,67,81.
+p1: 3 NOW withdynamicdefense; doNOTopenDOORS. AwaitphysicalP1_THRESHOLD_READY executableheartbeat, no completedprogramguard. P4aside.
+p4: P1 recoveryACK freshinventoryRod1+kit NEWLIFE20HP, P4insideASIDEunchanged7.57,67.56,83.7; foodbank14/pearl1/boat1/water1 verified2759. FirstPEARLhandoff priority. P2 afterP1assetreunion, existingfood14 couldfundyourreturnpearls (lastactual16HP/16food/2berr
+p4: ies), no newkitquota. P4 nextusefulindependent afteractualEye1: cantrackactualfirstflight fromINSIDE thencomputeobservedbearing, onlyAFTEREyeexists/noemptyobserver; P1doNOTwaitforP4 beforeuse.
+--- p2 now: (33.7, 66, 103.7) in overworld, health 20/20, food 17/20, alive

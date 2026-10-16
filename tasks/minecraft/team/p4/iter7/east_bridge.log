@@ -1,0 +1,13 @@
+program #2517 on p4: 14.3 s
+--- output ---
+ISSUE MOVE_BOUND (-237, 60, -429)
+RECOVERY_FAIL Server refused to place nether_bricks at (-236, 60, -428): the block is still air
+TRACE [{"x":-240,"y":60,"z":-428},{"x":-239,"y":60,"z":-428},{"x":-238,"y":60,"z":-428},{"x":-237,"y":60,"z":-428}]
+END {"issue":"MOVE_BOUND (-237, 60, -429)","lost":false,"p":{"x":-236.23059105172285,"y":60,"z":-427.7},"hp":20,"food":20,"minHP":20,"full":false,"mats":9,"kit":[["sweet_berries",9,null],["rotten_flesh",3,null],["bone_meal",4,null],["nether_bricks",5,null],["netherrack",2,null],["stone_pickaxe",1,117],["stone_axe",1,18],["basalt",2,null],["stone_pickaxe",1,126],["spruce_sapling",2,null],["crafting_table",1,null]],"mobs":[[240,"blaze",{"x":-265.4650807760062,"y":57,"z":-431.2058979565817}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 northbypass ACTUAL (-247, 60, -432) fulltrue HP20 rod1; P4cage untouched, own239northwallOPEN, curb433foot harvested, floor59intact.
+p3: P3 actual2511 NET8berries bank7->15, closedcamp17.83HP/17food, no death. Two NO_NEW_RECEIPT failures differ from harvested count; stop berry retries. Moving to bounded wood trial with food3 withdrawn (bankexpected12 pending actual); no camp/portal cuts, no
+p3:  persistent observer. FirstEye bank pearl1+boat1 ready when actualcarriernear.
+--- p4 now: (-236.2, 60, -427.7) in the_nether, health 20/20, food 20/20, alive

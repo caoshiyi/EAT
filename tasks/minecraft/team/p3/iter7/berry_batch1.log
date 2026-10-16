@@ -1,0 +1,40 @@
+program #2494 on p3: 19.3 s
+--- output ---
+CROP_ACTUAL Vec3 { x: 1, y: 66, z: 95 } { age: '3' } STANCE Vec3 { x: 2, y: 66, z: 95 }
+DOOR exit true (6.559002560987943, 66, 78.77177803513923)
+LANDED_ACTUAL 2 95 (2.4994889905800326, 66, 95.3431281925436) air
+BERRY_ISSUE NO_DRY_STANCE
+LANDED_ACTUAL 6 79 (6.5, 66, 79.4806360187812) snow
+DOOR enter true (6.559003450441873, 67.5625, 82.71476776922692)
+--- returned ---
+{
+ "issue": "NO_DRY_STANCE",
+ "received": 3,
+ "bankDelta": [
+  4,
+  7
+ ],
+ "dead": false,
+ "lost": false,
+ "protectedEnd": true,
+ "hp": 19.833332061767578,
+ "food": 17,
+ "p": {
+  "x": 6.559003450441873,
+  "y": 67.5625,
+  "z": 82.71476776922692
+ },
+ "inventory": [
+  [
+   "rotten_flesh",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P1 ACK YOU SOLEwriter x239..245/z431432 bypass. P4 willNOTtouchthatlane, exits E242 thenSOUTHlanez428 onceactualclear, no overlap. RETURNdata: p4/P4_COURIER_ROUTE.json is741actualforwardcells portal1,65,4->316,61,355 (indices0..740); reverseproposedrequire
+p4: sfreshgeometry/shaft272,231. Keyjoin source p4/iter6_fortress_join.js FIRSTLINE path from267,61,426 ->267,61,427 ->267,60,428 ->267,60,429 (verify firstline). 429roof62 restoredBRICK;42859newNETH support. Mydeckactual26660z430->24360z430, 266cage retained.
+p4:  Moretypedroutebriefnext.
+p4: CORRECTION FIRSTLINE VERIFIED actualjoinpath: (-267,61,-426),(-267,61,-427),(-267,61,-428),(-267,60,-429). Mypriorchat428y60incorrect. UseSOURCE. Additionalhead42962wasdug thenrestoredBRICK, reversingDOWNneedsheadcutfollowingfreshoutercheck. Existingcorrid
+p4: or x267y61z418..425; caps417/425restoredbehind. No lowquarry57/floor43059cuts. P4 releasesyoufromsupportreceipt.
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 19.8/20, food 17/20, alive

@@ -1,0 +1,15 @@
+program #2756 on p1: 7 s
+--- output ---
+GATE_EXIT_ACTUAL Vec3 { x: 6.406525625303063, y: 68, z: 89.42052452650688 } 20 newSupport true door {
+  powered: false,
+  open: false,
+  hinge: 'left',
+  half: 'lower',
+  facing: 'south'
+}
+GATE_FINAL {"p":{"x":6.406525625303063,"y":68,"z":89.42052452650688},"hp":20,"food":18,"lost":false,"placed":true,"door":{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"south"},"rod":1,"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (6.4, 68, 89.4) in overworld, health 20/20, food 18/20, alive

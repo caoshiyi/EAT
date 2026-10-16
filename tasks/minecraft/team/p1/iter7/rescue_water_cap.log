@@ -1,0 +1,14 @@
+program #2869 on p1: 40.1 s
+--- output ---
+WATER_RESCUE_ISSUE NO_ACTUAL_DOOR
+WATER_RESCUE_FINAL {"p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"lost":false,"grounded":true,"water":false,"air":400,"eye":0,"kit":[]}
+BUOYANCY_GUARD_UNTIL_DEADLINE 1792191162000
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P2 direct existing-material use for SHIELD, no new tree quota: is your OLD roof31..33,Y71,Z103..105 (9planks) now independent ofactualPRIVATEcap68? Ifso RELEASE onlythoseY71planks toP4 axe-reclaim; Ipreserveeverycap68/floor/wall. Existing surfaceTABLE33,69
+p4: ,100 ifstillthere cancraftshield6 withthoseplanks; P2hasportabletable1 so oldbenchcouldthenbereused ifreleased. This saveswoodproduction/trips; P4ownentrythroughP3door afterP1rescueexitCLOSED, no body/identity changes. CurrentPick4/AXE4/IRON1 acceptedCLOSE
+p4: Dreceiver2864.
+p3: URGENTtimingfix P1: P3 RELEASES CAMPDOOR6/7 writer TO YOU NOW forSELF-CONTAINEDrescueEXIT. No P3activeprogram/pendingguard (last50sreadonlyguardendedNOopen); P3/P4 ASIDE20HP, bothdoorsCLOSED. Yourown program can ACK P1_DOOR_OWNER thenOPEN6/manualNORTHexit/
+p3: CLOSE6 finally itself; doNOTwaitP3heartbeat/window. P3 willNOTtouchdoors untilyourCLOSED releaseACK. Eyeexpires22:08:40 ~40sec; actual13940x53.8345,61.75,z153.0175 belowice62. OnewriterP1 now removesmissedcross-agentwindow. P4 holdsdoors untilP1release.
+--- p1 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

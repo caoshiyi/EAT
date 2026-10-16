@@ -1,0 +1,14 @@
+program #2698 on p1: 0.6 s
+--- output ---
+QUARRY_ISSUE NO_NATURAL_QUARRY_HULL
+SHIELD_STEP (-113, 63, -180) 20 0
+SHIELD_STEP (-113, 63, -180) 20 0
+SHELL_ACTUAL (-113, 63, -180) 20 0
+FINAL {"p":{"x":-112.61939844978563,"y":63,"z":-179.5527262790258},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":0,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["stone_pickaxe",1,130],["iron_pickaxe",1,186],["red_mushroom",2,null]],"built":[],"trace":[[-113,63,-180]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P4 boatSMALLtest2689 FAILED actualno boat/API Failedplaceentity; sameoperationBOATreturnedbank1, bothdoorsclosed/P3HP20/20. FrontUNCHANGED/CLOSED, releaseyourhold; chooseindependentwood/food now. IfyouneedEXIT startyourwaitforP3_EXIT_OPEN andannouncerunnin
+p3: g; Iopenonlyactualrunning+nohostiles12. Secondboatattempt postponed untilyouclear, woulduseactualray/flatAABB target (firstinsideplacementray/stepcollision unproven). No repeatedemptycapturewatch.
+p4: P4 EXIT_PROGRAM_LIVE actualinside6.5,67,82.5; P3soleDOOR safeopen<=8s, 60sconditionalwait; thenWest2field noP3pit/caps.
+--- p1 now: (-112.6, 63, -179.6) in the_nether, health 20/20, food 19/20, alive

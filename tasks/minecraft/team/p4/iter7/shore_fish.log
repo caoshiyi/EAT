@@ -1,0 +1,54 @@
+program #2987 on p4: 51.2 s
+--- output ---
+DOOR_ACTUAL exit (6.593653356697029, 66.42159999847412, 79.28405420788279)
+LANDED_ACTUAL -1 79 (-0.39355045084926604, 60, 79.50975175248972) snow
+LANDED_ACTUAL -7 75 (-6.511739851331969, 64, 75.5) snow
+LANDED_ACTUAL -13 70 (-12.630924184388613, 63, 70.49488808808168) snow
+LANDED_ACTUAL -18 64 (-17.5, 63, 64.5) air
+LANDED_ACTUAL -22 56 (-21.5, 63, 56.32965438504937) air
+LANDED_ACTUAL -22 48 (-21.500000202149817, 63, 48.67919845574074) air
+FISH_ISSUE SHORE_GUARD
+LANDED_ACTUAL -22 48 (-21.500000202149817, 63, 48.67919845574074) air
+LANDED_ACTUAL -22 56 (-21.49999999999968, 63, 56.32965438504937) air
+LANDED_ACTUAL -18 64 (-17.58184826307114, 63, 64.3228844533491) air
+LANDED_ACTUAL -13 70 (-12.460153736993943, 63, 70.5) snow
+LANDED_ACTUAL -7 75 (-6.5, 64, 75.49985249488404) snow
+LANDED_ACTUAL -1 79 (-0.521739369214917, 60, 79.34880410473377) snow
+LANDED_ACTUAL 6 79 (6.5, 66, 79.48030401297636) snow
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.45861891293434)
+--- returned ---
+{
+ "gain": 0,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "issue": "SHORE_GUARD",
+ "p": {
+  "x": 7.626312656880306,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": []
+}
+--- chat since this player's previous program ---
+p2: P1 LOANREADY actual2960 protected3cellroom X40..42,Y63/64,Z102, INSIDE[]10.83HP; P2stands42.5,63,102.5. Receivercolumn41: TOPfeet69; blocks68GRASS/67DIRT/66AIR/65SOFTDIRT/P2premindedstone; floor62STONE. Dig ONLY41,Y68,67,65 fromTOP withsettledchecks, desce
+p2: ndDRY into41,63,102. Actualsurfacefoes14m NONEat22:35:32 (recheckyours). GIFTpick56(75uses)+DIORITE2+COBBLE3 (5fullblocks) heldSAFEuntilYOURactualbodyinside, no worldcachetimer. Your3DIRT+2DIORITE fundUP5 to68 thenJUMP EASTto42,69,102 grass68; reserveCOBBL
+p2: E3 forfreshpickcraft atmyTABLE33,69,103. P1SOLEshaft41writer untilclosed; P2no changes41 whileactualyoutransit. Ready120sec thenreassess, notoutsidewait.
+p3: P4 currentbeneficiaryfish: bankupperSPRUCE_STAIRS1 can fuel~1.5smelts; lowerGATE1 alsooptional fuel butfallbackreserve. Ifactualsalmon>=1, smallestcook convertsraw2food→cooked6 usingSTAIRS1 (furnace5,66,80 outside). P3canpreparecooking afteractualreceipt/l
+p3: ease; no wood/coalquota. Tradealternative2976 foundNOvillagers orfoodmobs<48m, soemerald4 notcurrentfoodsource. P1wood2sufficientkitapproachACK.
+p1: P1 CORRECTION2975 WOOD0/NEW_THREAT aborted102; returnexact91goalfailed actual9.43,68,89.7, HP20 foodreserved. P1KEEPS6 untilactualreturn/close; oldgenericexitreleaseWRONG, fixedfuturehelper. ReturningNOW no fieldplanning.
+p3: P1/P4 RECONCILE: exitCLOSEDrelease received, but P1promisedSAMEopreturn pending. P3IMMEDIATELY RETURNDOOR6 toP1 forremainderWOOD+RETURN+close (no P3/P4writes), avoids changingactiveinterfacewhileP1returnqueued. P4leaseAFTERP1realinsideclosed or explicitP1D
+p3: EPART_NO_RETURN. P1confirmactualreturnending/authority, notexit-onlysuccess. P2loangift helduntilactualreceiver solvesexpiry.
+p3: P1 URGENT2983actual DOOR6OPEN/7CLOSED; youACTUALLYinside(6.589,67.5625,82.757) onBED. Source2981 TRANSIT_ACTUAL checks abs(y-67)>.2 BEFOREdoorclosure, soBED+.5625 causesfalsefailure andSKIPSclose. SmallfixacceptstableonGroundbedheight67..67.57 withactualin
+p3: sideXZ, AND reachableclosurefinallyindependentofarrivalassert. NOWYOUsolewriter close6+aside+release; no P3interference/no mobs12currently.
+p1: P1_REAL_INSIDE_CLOSED_ASIDE RELEASE6directP4 forONE90secfishop, P3hold6/7. Actual(7.480459334582661, 67.5625, 83.6999999217029) HP20 food1/flesh2. 2981insideBEDfeet67.5625 falselyrejectedstrict67, correctedactual>=67<=67.6. NextP1LOANroomREADY; P2holdgiftu
+p1: ntilbody, fishendsreturn6P1.
+p3: P1/P4 ACK2986 ACTUALboth6/7CLOSED, P1ASIDE, P3safeCamptrue20/20/onGround67.5625/insidehostilesNONE. P1bedrepair physicallyclosedendingverified; sourcefinallyclosurefailurebranch stilldistinct unproved. P4owns6ONE90sFISH thenreturn6P1 perP1handoff, P3no6/7w
+p3: rites. Owncommon.js nowboundsinsidefeet67..67.65 (bedaccepted, roof70rejectedsynthetic), currentphysicalcampadmissionpassed.
+p1: P4 actualCLOSED-ASIDE2985/2986 writer6yours since22:38:26; ifreadypleaseexecuteNOW90s orreleaseP1oneEXITonly. P1loan_complete.js parsecheckedready<=180s, foodcarried, P2actualroomREADY, north-route/no woodwaiting. P2 Iwilladmit41dig68/67/65 ONLY, cap65from
+p1: inside, foodtossEthenaside40.5, wait50s actualpick+5blocks. YourindependentfoodACK+mykitACK+shaftclosedrelease completejointop.
+p3: P1 afteryouractualDEPART_NO_RETURN pleasehandoff6P3 (P4fishcompletefirst). BoundedindependentP3contribution: plantbank3saplings onfreshFULLsoil clearNorthpatch near14,79 (known2946actualdryground), SAMEprogramreturncamp; no digpit/corpse/genericrefuge. May
+p3: growafterdawn fornextwood, NOTguaranteedtimelylogs. P3needsownretainedkit; no duplicatedloan/observerwindow. P1travelpriority preserved.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

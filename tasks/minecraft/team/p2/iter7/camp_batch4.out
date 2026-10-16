@@ -1,0 +1,84 @@
+program #3047 on p2: 39.9 s
+--- output ---
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 14, y: 60, z: 99 } cobblestone
+CAP_ACTUAL Vec3 { x: 14, y: 60, z: 99 } cobblestone
+CAP_INTENT Vec3 { x: 14, y: 61, z: 99 } cobblestone
+CAP_ACTUAL Vec3 { x: 14, y: 61, z: 99 } cobblestone
+ACCEPTED 31 [ 13, 60, 99 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 13, y: 60, z: 99 } cobblestone
+CAP_ACTUAL Vec3 { x: 13, y: 60, z: 99 } cobblestone
+CAP_INTENT Vec3 { x: 13, y: 61, z: 99 } cobblestone
+CAP_ACTUAL Vec3 { x: 13, y: 61, z: 99 } cobblestone
+ACCEPTED 32 [ 13, 60, 98 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 13, y: 60, z: 98 } cobblestone
+CAP_ACTUAL Vec3 { x: 13, y: 60, z: 98 } cobblestone
+CAP_INTENT Vec3 { x: 13, y: 61, z: 98 } cobblestone
+CAP_ACTUAL Vec3 { x: 13, y: 61, z: 98 } cobblestone
+ACCEPTED 33 [ 12, 60, 98 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 12, y: 60, z: 98 } cobblestone
+CAP_ACTUAL Vec3 { x: 12, y: 60, z: 98 } cobblestone
+CAP_INTENT Vec3 { x: 12, y: 61, z: 98 } cobblestone
+CAP_ACTUAL Vec3 { x: 12, y: 61, z: 98 } cobblestone
+ACCEPTED 34 [ 12, 60, 97 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 12, y: 60, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 12, y: 60, z: 97 } cobblestone
+CAP_INTENT Vec3 { x: 12, y: 61, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 12, y: 61, z: 97 } cobblestone
+ACCEPTED 35 [ 11, 60, 97 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 11, y: 60, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 11, y: 60, z: 97 } cobblestone
+CAP_INTENT Vec3 { x: 11, y: 61, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 11, y: 61, z: 97 } cobblestone
+ACCEPTED 36 [ 10, 60, 97 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 97 } cobblestone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 97 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 97 } cobblestone
+ACCEPTED 37 [ 10, 60, 96 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 96 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 96 } cobblestone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 96 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 96 } cobblestone
+ACCEPTED 38 [ 10, 60, 95 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 95 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 95 } cobblestone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 95 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 95 } cobblestone
+ACCEPTED 39 [ 10, 60, 94 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 94 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 94 } cobblestone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 94 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 94 } cobblestone
+ACCEPTED 40 [ 10, 60, 93 ] HP 10.832412719726562 FOOD 15
+BATCH_PROGRESS 40 54 [ 10, 60, 93 ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 10.499554168660046, y: 60, z: 93.5 } 10.832412719726562 15 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 113 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'coal', 2, null ],
+  [ 'stone_pickaxe', 1, 83 ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'cobblestone', 5, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Bedremove.js PREPARED/PARSECHECKED NOTRUN: checksactualP2near7,60,83+all3bodiesclear BOTHbedcells6/7,83, doorsCLOSED, originalEASThead7. CapturesACTUALbedcollect/netreceipt; ifotherplayergetsbed NOsandgrantuntilknownretainedholder/restorationplan. P1PLEASE
+p3: moveFRONT6.5,82.4 now, old6.54,83.7 blocksrestore/removalprecheck. P4frontclearACK; fishlease dormantpleaseexplicitCLOSED_RELEASE_P3 forfloorop. No doubleobserverwindow; waitingACTUALP2ready.
+p4: P4_FISH_END gain=0 retainedCamp=true HP20 actual(6.355490558421577, 67.5625, 83.7) closed6=true RELEASE_P3 no pendingdooractions.
+p3: ACKP4actualFISH_END CLOSED_RELEASE_P3 gain0; P3sole6/7now. P4pleaseMOVEFRONTagain (latest6.355,83.7 occupiesBED6); P1same. ALLbodiesmustZ+0.3<83 forBEDrestore, P3movingFRONTnow. P2arrivalpending, bed/floorintact. P3suspendsownwoodtrip forCURRENTbeneficiary
+p3:  integratedkitreceipt/bedrestoration.
+--- p2 now: (10.5, 60, 93.5) in overworld, health 10.8/20, food 15/20, alive

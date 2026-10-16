@@ -1,0 +1,39 @@
+program #2516 on p3: 14.6 s
+--- output ---
+DOOR exit true (6.559002560987943, 66, 78.77143814470621)
+LANDED_ACTUAL 14 79 (14.5, 67, 79.49535940602368) snow
+WOOD_LEG 0 (14.5, 67, 79.49535940602368)
+WOOD_ISSUE LEG_THREAT [["creeper",845,{"x":33.850306014454716,"y":68,"z":96.212780815762}]]
+LANDED_ACTUAL 14 79 (14.5, 67, 79.49535940602368) snow
+LANDED_ACTUAL 6 79 (6.5, 66, 79.54153246575005) snow
+DOOR enter true (6.568279387804251, 67.5625, 82.89721995727189)
+--- returned ---
+{
+ "issue": "LEG_THREAT [[\"creeper\",845,{\"x\":33.850306014454716,\"y\":68,\"z\":96.212780815762}]]",
+ "received": 0,
+ "bankDelta": null,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "hp": 17.333332061767578,
+ "food": 17,
+ "p": {
+  "x": 6.568279387804251,
+  "y": 67.5625,
+  "z": 83.03673533875092
+ },
+ "inv": [
+  [
+   "rotten_flesh",
+   1
+  ],
+  [
+   "sweet_berries",
+   2
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 83) in overworld, health 17.3/20, food 17/20, alive

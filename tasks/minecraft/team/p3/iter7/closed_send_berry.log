@@ -1,0 +1,101 @@
+program #2793 on p3: 6.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "transferName": "sweet_berries",
+ "before": 0,
+ "after": 0,
+ "withdrawn": true,
+ "dispatched": 1,
+ "collects": [
+  {
+   "id": 11450,
+   "name": "sweet_berries",
+   "count": 1,
+   "t": 1792187122201
+  }
+ ],
+ "rolledBack": false,
+ "bankBefore": 14,
+ "bankAfter": 13,
+ "protectedEnd": true,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 7.528274082588496,
+  "y": 67.5625,
+  "z": 83.6997723281025
+ },
+ "p1": {
+  "x": 6.448666502213281,
+  "y": 67,
+  "z": 81.5125
+ },
+ "dead": false,
+ "lost": false,
+ "life": {
+  "token": [
+   1792184820747,
+   2,
+   2
+  ],
+  "events": [
+   {
+    "type": "death",
+    "t": 1792185441864,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185441866,
+    "hp": 0,
+    "p": {
+     "x": 22.69440954190249,
+     "y": 68,
+     "z": 94.25853551027846
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "death",
+    "t": 1792185559511,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   },
+   {
+    "type": "respawn",
+    "t": 1792185559513,
+    "hp": 0,
+    "p": {
+     "x": 21.3,
+     "y": 65,
+     "z": 88.3
+    },
+    "dimension": "overworld"
+   }
+  ]
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 RECOVEREDactual2783 at21:41:34 rod1/axe1/shield/boots/iron208 NEWLIFE20HP, beforeexpiry. P2rescuefallbackCANCEL/returnpearls autonomous, thanksguardoffer. P3 exitCLOSEACKneeded thenCLOSEDberry+PEARL op: P1armedgoWEST3,86->3,79->6,79->threshold6.5,67,81.
+p1: 3 NOW withdynamicdefense; doNOTopenDOORS. AwaitphysicalP1_THRESHOLD_READY executableheartbeat, no completedprogramguard. P4aside.
+p4: P1 recoveryACK freshinventoryRod1+kit NEWLIFE20HP, P4insideASIDEunchanged7.57,67.56,83.7; foodbank14/pearl1/boat1/water1 verified2759. FirstPEARLhandoff priority. P2 afterP1assetreunion, existingfood14 couldfundyourreturnpearls (lastactual16HP/16food/2berr
+p4: ies), no newkitquota. P4 nextusefulindependent afteractualEye1: cantrackactualfirstflight fromINSIDE thencomputeobservedbearing, onlyAFTEREyeexists/noemptyobserver; P1doNOTwaitforP4 beforeuse.
+p1: P3 nextapproach2787 STOPPEDafterGoalXZ3,86 whileairborne62.77; actualsettledNEWbody(3.3,62,86.5) HP20/Rod1/kit, notthreshold, noopening. ChangedwaitACTUALsettledgroundbeforelandaccept thenpath3,79->6,79; standaloneidledefense90s keptarmedbody20HP duringpla
+p1: nning (no killclaim). StartingcorrectedreceiverNOW, awaitactualP1_THRESHOLD_READY heartbeat, doorsCLOSED.
+p2: P1 rescueCLOSED ACK actual2783 rod1/kit restored beforeexpiry. P2 #2781 actualKILL9609 Zombie3chargedaxeACK near14,79; guard10,88 sawrodABSENT/P1kitactual, nevercollectedyourloot. SAMEreturnprivate33,66,103 captrue HP13/16 aftercombat/endingdamage; afterca
+p2: re explicitlyFULL/INSIDE[] thenhealed (rawpending). Resumeautonomouspearls withretainedkit, no duplicateEyeobserver. Lower111 injuredhealth14/Y10, boatrecoveredactual2753 carry1.
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

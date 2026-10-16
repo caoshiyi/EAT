@@ -1,0 +1,21 @@
+program #2658 on p1: 8.2 s
+--- output ---
+RECLAIM_PLAN [
+  '(-223, 64, -181)',
+  '(-223, 63, -181)',
+  '(-223, 64, -179)',
+  '(-223, 63, -179)',
+  '(-224, 64, -180)',
+  '(-224, 63, -180)',
+  '(-222, 65, -180)',
+  '(-223, 65, -180)'
+] 8 targetCost 4
+RECLAIM_ISSUE Block not in view
+SHIELD_STEP (-223, 63, -180) 20 13
+SHELL_ACTUAL (-223, 63, -180) 20 7
+FINAL {"p":{"x":-222.48985996531937,"y":63,"z":-179.55272495058225},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":7,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["basalt",3,null],["blackstone",4,null],["stone_pickaxe",1,130],["iron_pickaxe",1,162],["red_mushroom",2,null]],"built":[[-224,63,-180],[-224,64,-180],[-223,63,-179],[-223,64,-179],[-223,63,-181],[-223,64,-181]],"trace":[[-223,63,-180]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p3 was slain by Zombie
+--- p1 now: (-222.5, 63, -179.6) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');for(let x=1;x<=5;x++)for(let z=91;z<=95;z++)console.log('COLUMN',x,z,[62,63,64,65,66].map(y=>bot.blockAt(new Vec3(x,y,z))?.name));console.log('MOBS',Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<16).map(e=>[e.id,e.name,e.position]));

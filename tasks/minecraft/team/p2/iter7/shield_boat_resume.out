@@ -1,0 +1,45 @@
+program #2575 on p2: 3.8 s
+--- output ---
+START Vec3 { x: 39.7, y: 66, z: 101.59013032343725 } 15.833332061767578 17
+ANCHOR_FULL false
+REOPEN_ACTUAL [ [ 1, 'air' ], [ 0, 'cobblestone' ] ]
+CRAFT spruce_planks 0 4
+CRAFT spruce_planks 4 8
+CRAFT spruce_planks 8 12
+CRAFT spruce_planks 12 16
+CRAFT shield 0 1
+CRAFT spruce_boat 0 1
+BUSHES [
+  Vec3 { x: 1, y: 66, z: 99 },
+  Vec3 { x: 1, y: 66, z: 98 },
+  Vec3 { x: 1, y: 66, z: 97 },
+  Vec3 { x: 1, y: 66, z: 96 },
+  Vec3 { x: 1, y: 66, z: 95 },
+  Vec3 { x: 1, y: 66, z: 94 },
+  Vec3 { x: 0, y: 66, z: 98 },
+  Vec3 { x: 0, y: 66, z: 97 },
+  Vec3 { x: 0, y: 66, z: 96 },
+  Vec3 { x: 0, y: 66, z: 95 }
+]
+FINAL Vec3 { x: 33.488695973428385, y: 66, z: 100.5 } 15.833332061767578 17 KIT [
+  [ 'stick', 1, null ],
+  [ 'spruce_planks', 5, null ],
+  [ 'stone_sword', 1, 0 ],
+  [ 'coal', 1, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'dirt', 13, null ],
+  [ 'wooden_pickaxe', 1, 3 ],
+  [ 'stone_pickaxe', 1, 43 ],
+  [ 'stone_axe', 1, 4 ],
+  [ 'granite', 8, null ],
+  [ 'cobblestone', 1, null ]
+] OFF shield
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 FOOD+CLOSUREoperation CLOSED VERIFIEDFULL245432HP20 food20. ACTUALsupportgift receipt TABLE+1/BRICK+2 plusminedwindowNETH1, used5blocks; firstroofclickfailedoninteractiveTABLE, changedSNEAKroofplacementpassed. YOURshared246headFULLquartz untouched. P1de
+p4: pendencyRELEASED, continuefirstEye; myfarmnexttoolblocker picksBROKEN (no newrods).
+[server] p3 was slain by Zombie
+--- p2 now: (33.5, 66, 100.5) in overworld, health 15.8/20, food 17/20, alive

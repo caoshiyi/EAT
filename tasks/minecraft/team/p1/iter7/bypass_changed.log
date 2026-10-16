@@ -1,0 +1,12 @@
+program #2508 on p1: 1.5 s
+--- output ---
+ISSUE PEER_CUT (-239, 60, -431)
+STEP (-239, 60, -430) 20 2
+STEP (-239, 60, -430) 20 3
+SHELL_ACTUAL (-239, 60, -430) 20 2
+FINAL {"p":{"x":-238.51676846971367,"y":60,"z":-429.5},"hp":20,"food":17,"dead":false,"lost":false,"adopted":true,"full":true,"mats":2,"kit":[["quartz",7,null],["crafting_table",1,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",5,null],["nether_bricks",1,null],["stone_axe",1,47],["polished_blackstone",1,null],["stone_pickaxe",1,104],["iron_pickaxe",1,107],["red_mushroom",2,null]],"built":[[-239,61,-431]],"trace":[[-239,60,-430]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-238.5, 60, -429.5) in the_nether, health 20/20, food 17/20, alive

@@ -1,0 +1,14 @@
+program #2727 on p4: 13.8 s
+--- output ---
+FIELD_RISE_ACK Vec3 { x: 2.50045986889038, y: 66, z: 93.5 } 20
+HARVEST_ACTUAL Vec3 { x: 1, y: 66, z: 95 } 3 6
+HARVEST_ACTUAL Vec3 { x: 1, y: 66, z: 97 } 0 6
+ISSUE NO_CROP_RECEIPT
+BERRY_RESULT {"before":3,"after":6,"net":3,"harvested":[[{"x":1,"y":66,"z":95},3],[{"x":1,"y":66,"z":97},0]]}
+OW_END {"issue":"NO_CROP_RECEIPT","dead":false,"lost":false,"endpoint":"FULL(2, 63, 93)","p":{"x":2.5004598375712113,"y":63,"z":93.53241402460384},"hp":20,"food":20,"minHP":20,"ground":true,"protected":true,"kit":[["sweet_berries",6,null],["sand",1,null],["dirt",1,null]],"hostiles":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #2723 acceptedFULL(-31,63,-132),20HP/19food/Rod1 after100existing-roomsteps. Actualextra pickup step solved4-capreceipt; DOUBLEslabsrepairedpreviousmissingcap, reusableequivalent1. ~150cellsportal, stillNether. P3ACKclearfrontboatbeforeactualarrival, pe
+p1: arlbankuntouched. Nextexisting100, thenfreshportalgeometry; no standingreceiverrequestyet.
+--- p4 now: (2.5, 63, 93.5) in overworld, health 20/20, food 20/20, alive

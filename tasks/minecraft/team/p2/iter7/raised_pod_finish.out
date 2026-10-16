@@ -1,0 +1,20 @@
+program #2883 on p2: 10.9 s
+--- output ---
+DOWN_COLLECTION 1 1
+DIRT_RECEIPT Vec3 { x: 33, y: 66, z: 102 } 1
+DIRT_RECEIPT Vec3 { x: 33, y: 66, z: 104 } 2
+DIRT_RECEIPT Vec3 { x: 34, y: 66, z: 103 } 3
+FINAL Vec3 { x: 33.37521012964528, y: 67, z: 103.49999238640302 } 10.832412719726562 16 FULL true MISSING [] INSIDE [] KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stick', 2, null ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'stone_pickaxe', 1, 79 ],
+  [ 'stone_pickaxe', 1, 56 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (33.4, 67, 103.5) in overworld, health 10.8/20, food 16/20, alive

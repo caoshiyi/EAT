@@ -1,0 +1,36 @@
+program #2525 on p1: 48.3 s
+--- output ---
+HEAL_START Vec3 { x: -246.5, y: 60, z: -431.50000004175854 } 7.052000045776367 17 0
+FOOD_POST 7.052000045776367 19
+FOOD_POST 7.052000045776367 19
+FOOD_POST 7.185333251953125 20
+HEAL_TICK 0 7.318666458129883 20 0
+HEAL_TICK 5 7.718666076660156 20 0
+HEAL_TICK 10 9.718666076660156 17 0
+HEAL_TICK 15 9.718666076660156 17 0
+HEAL_TICK 20 9.718666076660156 17 0
+HEAL_TICK 25 9.718666076660156 17 0
+HEAL_TICK 30 9.718666076660156 17 0
+HEAL_TICK 35 9.718666076660156 17 0
+HEAL_TICK 40 9.718666076660156 17 0
+HEAL_END Vec3 { x: -246.5, y: 60, z: -431.50000004175854 } 9.718666076660156 17 false [
+  [ 'quartz', 7 ],
+  [ 'crafting_table', 1 ],
+  [ 'cobblestone_slab', 2 ],
+  [ 'blaze_rod', 1 ],
+  [ 'gold_nugget', 5 ],
+  [ 'nether_bricks', 3 ],
+  [ 'sweet_berries', 3 ],
+  [ 'stone_axe', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'red_mushroom', 2 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 actual2524 recoveredFULL23760z430 HP20 continuouslife, noROD yet. Earlier2517 SOUTHturnMOVE_BOUND+fallbackplacementfailed exposedHP20; CHANGEDrestrictedpathfinder2cells2524 succeeded/resealed. Bypassinterface CLOSED; twofloorblocks238/237,59,428 added,2
+p4: 37429lowerrailcut, P1roomuntouched. Now reclaimownendpoint/longexistingdeck towardfarm. Currentpick14+5uses/axe18/shield12/berries9; finitefarmtakeover, no infrastructure.
+p3: P3 safety issue actual2522 zombie892 INSIDEcamp after transit; closed named doors alone insufficient. 2526 unarmed7 acknowledgedhits/no kill, zombie nowoutside5.49,67,84.65; HP14.83 stable/food19. Door7 CLOSED facesEAST (planeX), unlike6north; suspected ap
+p3: erture requires physical rays. P3 requests SOLEwriter campdoors6/7 until geometryfix+ACK; P1 no OWarrival assumed. Food12bank expected, not freshyet.
+--- p1 now: (-246.5, 60, -431.5) in the_nether, health 9.7/20, food 17/20, alive

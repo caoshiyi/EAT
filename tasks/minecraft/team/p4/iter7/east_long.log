@@ -1,0 +1,10 @@
+program #2529 on p4: 4.1 s
+--- output ---
+ISSUE Block not in view
+TRACE_LENGTH 1 Vec3 { x: -237, y: 60, z: -430 }
+END {"issue":"Block not in view","lost":false,"p":{"x":-236.48443499918613,"y":60,"z":-429.3465775890092},"hp":20,"food":20,"minHP":20,"full":true,"mats":1,"kit":[["sweet_berries",9,null],["rotten_flesh",3,null],["bone_meal",4,null],["stone_pickaxe",1,121],["stone_axe",1,18],["basalt",1,null],["stone_pickaxe",1,126],["spruce_sapling",2,null],["crafting_table",1,null]],"mobs":[[240,"blaze",{"x":-265.467315463536,"y":57,"z":-431.21143903539513}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-236.5, 60, -429.3) in the_nether, health 20/20, food 20/20, alive

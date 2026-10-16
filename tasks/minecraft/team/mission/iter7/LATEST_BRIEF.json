@@ -1,0 +1,33 @@
+{
+  "time": "UTC 2026-10-16T22:52:12.431236+00:00 raw 20261016T225212Z.json",
+  "state": [
+    "p1: (6.5, 67, 82.4) in overworld, health 20/20, food 20/20, alive; controlled by lead_converter (iteration 7)",
+    "p2: (8.7, 60, 84.6) in overworld, health 19.4/20, food 19/20, alive; controlled by acquisition_owner (iteration 7), running program #3084 for 45.8 s",
+    "p3: (6.4, 67, 82.6) in overworld, health 20/20, food 20/20, alive; controlled by reliability_builder (iteration 7)",
+    "p4: (6.4, 67, 82.4) in overworld, health 20/20, food 20/20, alive; controlled by capability_operator (iteration 7)"
+  ],
+  "new": {
+    "p3": "#3087 {\"issue\":null,\"protectedEnd\":true,\"p\":{\"x\":6.363472626882695,\"y\":67,\"z\":82.62009369337065},\"hp\":20,\"inventory\":[],\"bed\":[[6,\"white_bed\",{\"part\":\"foot\",\"occupied\":false,\"facing\":\"east\"}],[7,\"white_bed\",{\"part\":\"head\",\"occupied\":false,\"facing\":\"east\"}]],\"shaftFl"
+  },
+  "events": [],
+  "chat": [
+    "CHAT #2427 2026-10-16T22:51:28 p2: P2_FOOD_ACTUAL ownROTTEN4 SAMEbody(8.7, 60, 84.60397960067509) HP10.832412719726562 verifiedreceipt. Kit+9coldactualP1, roof62P1solewriter; finishUP7+P3BEDrestore. P2retainedbelowprivatepod, no shaftwrites.",
+    "CHAT #2428 2026-10-16T22:51:44 p1: P1 actualUP7complete3083 CAMP67/20HP/shieldoffhand/axeHAND/boat/pick57/torch4/coal2/cobble3/sand4; food4actualP2receipt2427. BEDbothcellsCLEAR, P3RESTOREnow finalsharedoperationclosure. P1planonlyiflease+>=45sec: ONE<=35s groundBOATSTEERINGsmoke outside6,7",
+    "CHAT #2429 2026-10-16T22:51:44 p1: 9 thenSAMEcampreturn; newboatinputearns2secsmallworldtest beforestrongholdlongtrip. P3canlease6AFTERbedactualrestore; no P1exitwithoutACK. OrbankCOAL2 exactdepositP3authorize (actualsourceP2forcampcooking).",
+    "CHAT #2430 2026-10-16T22:52:10 p3: JOINT_FINAL3087 ACTUAL WHITE_BED6foot/7head67,83 BOTH EAST/restored; ownbed1\u21920; shaft7,66,83COBBLEfull; BOTH6/7CLOSED; P3HP20/insideNONE. First3085serverrefusedbed retained1; changedlookEastSETTLE5ticks thenplacementignorelook3087 physicalSUCCESS (scopeonl",
+    "CHAT #2431 2026-10-16T22:52:10 p3: y). P1kitretained/P2FOOD4ACK separatelyverified. Deadline22:52:42 now~40sec: no35sboatlease; P1soleBANKauthorize EXACTCOAL2 depositlower NOW close+afterclosebank2/own0ACKthenRELEASE_P3; no othermutators/doors. P3cleanup+officialeval next."
+  ],
+  "score": [
+    "milestones = 9",
+    "deaths = 68",
+    "programs = 3087",
+    "dragon = 0"
+  ],
+  "failures": [],
+  "actual_inventory": {
+    "p1": "held: stone_axe x1; inventory: coal x2, cobblestone x3, sand x4, spruce_boat x1, stone_axe x1, stone_pickaxe x1, torch x4; worn: offhand: shield",
+    "p2": "held: nothing; inventory: sandstone x2, spruce_sapling x2, stone_pickaxe x2",
+    "p3": "held: nothing; inventory: empty",
+    "p4": "held: nothing; inventory: empty"
+  }
+}

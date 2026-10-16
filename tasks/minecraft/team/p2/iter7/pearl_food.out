@@ -1,0 +1,16 @@
+program #2794 on p2: 19.4 s
+--- output ---
+ISSUE CREEPER_NEAR
+ARRIVAL_CHECK 14 96 Vec3 { x: 14.68168987270873, y: 67, z: 96.68895763131745 } true air
+LEG Vec3 { x: 14.68168987270873, y: 67, z: 96.68895763131745 } 20 16
+ARRIVAL_CHECK 26 100 Vec3 { x: 26.5, y: 68, z: 100.50044664890969 } true air
+LEG Vec3 { x: 26.5, y: 68, z: 100.50044664890969 } 20 16
+ARRIVAL_CHECK 33 103 Vec3 { x: 33.5, y: 69, z: 103.49937996675601 } true air
+LEG Vec3 { x: 33.5, y: 69, z: 103.49937996675601 } 20 16
+INSIDE_FINAL []
+FINAL Vec3 { x: 33.7, y: 66, z: 103.3 } 15.765745162963867 16 LOST false KILLS 0 BERRIES 0 CAP true
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (33.7, 66, 103.3) in overworld, health 15.8/20, food 16/20, alive

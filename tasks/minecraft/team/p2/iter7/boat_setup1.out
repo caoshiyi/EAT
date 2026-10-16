@@ -1,0 +1,48 @@
+program #2687 on p2: 13.4 s
+--- output ---
+CAP_INTENT Vec3 { x: 75, y: 26, z: 115 } andesite
+CAP_ACTUAL Vec3 { x: 75, y: 26, z: 115 } andesite
+CAP_INTENT Vec3 { x: 75, y: 27, z: 115 } andesite
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 115 } andesite
+REAR_FULL true
+ISSUE Failed to place entity
+CAP_INTENT Vec3 { x: 75, y: 26, z: 115 } granite
+CAP_ACTUAL Vec3 { x: 75, y: 26, z: 115 } granite
+CAP_INTENT Vec3 { x: 75, y: 27, z: 115 } andesite
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 115 } andesite
+FINAL Vec3 { x: 75.46456787713683, y: 26, z: 116.5 } 20 18 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'sweet_berries', 6, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 2, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'stone_pickaxe', 1, 2 ],
+  [ 'stone_pickaxe', 1, 49 ],
+  [ 'andesite', 4, null ],
+  [ 'dirt', 4, null ],
+  [ 'diorite', 1, null ],
+  [ 'stone_pickaxe', 1, 49 ],
+  [ 'stone_axe', 1, 9 ],
+  [ 'spruce_boat', 1, null ],
+  [ 'granite', 7, null ],
+  [ 'cobblestone', 32, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 RETURN actual (-120, 63, -180) fulltrue HP20 rod1 steps0
+p4: P4 ACTUALDEATH verified2673 NEWLIFEcamp6.5,67,82.5 Overworld20/20 EMPTY. Prior2664 changedhandstairs FAILED13560 HP20->13.5, retreatthenfallbackhanddigABORTED byhealthcallback duringfire/combat, endedEXPOSED4.5; laterBlaze death. No newROD/retention. Allow
+p4: noldAXE/SHIELD/TABLElostNether142430; NO recoveryrequest/rodcarrierwait. P4 remainingRODproposalFAILED/RELEASED. EarliestFIRSTEye stillP1Rod1; P3 owncampdoor/chestinterfaces respected. IassessnewlifeOWsupportcurrentuse, no blindreturntodeathsite.
+p3: URGENT correction2670 FULL HULL was NOT safe: retainedsword+snow6 then cappedrefuge21,65,88, HP15.33, but zombie_villager6198 fellINTOsame1cell duringdig. Actualdeath21:19:19 nowtoken2/2 (FOURp3deathsiteration7). Currentnewlifeemptycamp20/20/doorsclosed. S
+p3: ourcefailure: privatehullpredicate omitted INSIDEHOSTILE unlikecamp. No mobilecombatrecovery proof; stop samebarefieldapproach. Private21,65,88 nowTRAPPEDHOSTILE, doNOTopen/enter. Updatingtruthfulmemory/source, currentbank8/pearl1+boat1 separate.
+p4: P3 newusefulP4supportproposal: P4 NEWLIFEcamp20/20empty can salvage actualFREE olddrops6341/6342/6344 near24,68,92 (from21:17death, despawnsoon21:22). WillNOTtouchtrapped6198/pit21,65..67,88. NeedYOURsoleDOORwriter controlledEXIT onactualP4presence; Igo no
+p4: rth6,79->26,86 thenfreshsafeitems, finishNEWownprivatecubbyawaypit ifreturnunsafe. Acceptanceactualitem0->retained+protectendpoint thenbank/handoff. ACKdoorwindow? No repeatedfieldopeningifhostilesnear.
+p3: P4/P1 proposal currentbeneficiary SAFEcampapproach: P3 borrowsbankBOAT1 for smallactual mobtrap at6,66,79 (outsidecampfront), staysINSIDE, solecampdoors+frontplacementwriter. Pearl/wateruntouched. Boatwouldblockfronttemporarily, restoreactualbankreceiptbef
+p3: orehandoff. NeedACK P4 holdfronttransit whileplacement/test; P1 tellifactualOWnear (stillNetherlaststate). This CHANGESapproach after4p3deaths; no fieldrefugereuse whiletrappedzombievillager6198 inside21,65,88.
+p3: P4 ACK priorityyourboundedEXIT FIRST beforeboat. Run EXITwait for P3_EXIT_OPEN (P3solewriter), yourfreshhazard/endpointpolicy; IopenONLY actualyourprogramrunning+insidepresent+nohostiles12; <=8sec expiry oractualP4z<79.5 thenCLOSE. P3 staysINSIDE. DoNOTent
+p3: erpit21,65,88. Proposedboatplacement postponeduntilyouclearfront/ACK. Oldtools despawn21:22:21 approx, no guaranteedavailability.
+p1: P1 RETURN actual (-120, 63, -180) fulltrue HP20 rod1 steps0
+p4: P3 ACK YOUsoleDOORS+front6,79 boatplacement; P4 holdsfronttransit now60s (actualinside20/20empty). Oldwoodtool6341/2 salvagewindowexpired, no gatefirstuse forit. Ican contribute unarmedattack frominside IFactualzombieboat6,79 inreach+yourcontrolleddoorwind
+p4: ow; boatstationarymob andactualhurt/kill/retentionproof only, no emptykillwatch. EarliestP1returnstillNether. OnceyourinterfaceCLOSED/released Ichooseindependentwood/food outcome usingprivateendingaway6198pit.
+--- p2 now: (75.5, 26, 116.5) in overworld, health 20/20, food 18/20, alive

@@ -1,0 +1,96 @@
+program #3063 on p2: 97.4 s
+--- output ---
+HELD [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'coal', 2, null ],
+  [ 'stone_pickaxe', 1, 95 ],
+  [ 'sandstone', 4, null ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'cobblestone', 5, null ]
+]
+COLLECT [ 'p4', 160, 19846, 'white_bed', 1792190928149 ]
+COLLECT [ 'p1', 168, 19925, 'sand', 1792190963451 ]
+COLLECT [ 'p1', 168, 19931, 'sand', 1792190964549 ]
+COLLECT [ 'p1', 168, 19933, 'sand', 1792190965701 ]
+COLLECT [ 'p1', 168, 19934, 'sand', 1792190966800 ]
+ACTUAL_P1_TOP_STABLE Vec3 {
+  x: 7.509363009268608,
+  y: 63.000078485087016,
+  z: 83.46732011131547
+}
+COLLECT [ 'p2', 157, 19936, 'sandstone', 1792190969099 ]
+P1_BODY_ACTUAL Vec3 { x: 7.509363009268608, y: 60, z: 83.46732011131547 }
+CAP_INTENT Vec3 { x: 7, y: 62, z: 83 } sandstone
+CAP_ACTUAL Vec3 { x: 7, y: 62, z: 83 } sandstone
+DONOR_EDGE Vec3 { x: 7.50650317217265, y: 60, z: 84.7 }
+TOSS_ACTUAL cobblestone 1 COLDS 8
+COLLECT [ 'p1', 168, 19940, 'cobblestone', 1792190972351 ]
+PROBE_RECEIPT_TRUE
+TOSS_ACTUAL stone_pickaxe 1 COLDS 8
+TOSS_ACTUAL stone_axe 1 COLDS 8
+COLLECT [ 'p1', 168, 19946, 'stone_pickaxe', 1792190974649 ]
+TOSS_ACTUAL spruce_boat 1 COLDS 8
+COLLECT [ 'p1', 168, 19948, 'stone_axe', 1792190975698 ]
+TOSS_ACTUAL torch 4 COLDS 8
+COLLECT [ 'p1', 168, 19952, 'spruce_boat', 1792190976749 ]
+TOSS_ACTUAL coal 2 COLDS 8
+COLLECT [ 'p1', 168, 19956, 'torch', 1792190977799 ]
+TOSS_ACTUAL shield 1 COLDS 8
+COLLECT [ 'p1', 168, 19957, 'coal', 1792190978850 ]
+TOSS_ACTUAL cobblestone 4 COLDS 4
+COLLECT [ 'p1', 168, 19959, 'shield', 1792190979999 ]
+TOSS_ACTUAL sandstone 2 COLDS 2
+COLLECT [ 'p1', 168, 19962, 'cobblestone', 1792190981049 ]
+COLLECT [ 'p2', 157, 19968, 'sandstone', 1792190982101 ]
+FOOD_RECEIPT 0 PICKUPS [
+  [ 'p4', 160, 19846, 'white_bed', 1792190928149 ],
+  [ 'p1', 168, 19925, 'sand', 1792190963451 ],
+  [ 'p1', 168, 19931, 'sand', 1792190964549 ],
+  [ 'p1', 168, 19933, 'sand', 1792190965701 ],
+  [ 'p1', 168, 19934, 'sand', 1792190966800 ],
+  [ 'p2', 157, 19936, 'sandstone', 1792190969099 ],
+  [ 'p1', 168, 19940, 'cobblestone', 1792190972351 ],
+  [ 'p1', 168, 19946, 'stone_pickaxe', 1792190974649 ],
+  [ 'p1', 168, 19948, 'stone_axe', 1792190975698 ],
+  [ 'p1', 168, 19952, 'spruce_boat', 1792190976749 ],
+  [ 'p1', 168, 19956, 'torch', 1792190977799 ],
+  [ 'p1', 168, 19957, 'coal', 1792190978850 ],
+  [ 'p1', 168, 19959, 'shield', 1792190979999 ],
+  [ 'p1', 168, 19962, 'cobblestone', 1792190981049 ],
+  [ 'p2', 157, 19968, 'sandstone', 1792190982101 ]
+] HELD_END [
+  [ 'sandstone', 4, null ],
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_pickaxe', 1, 96 ]
+]
+ROOM_END_BAD []
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 7.50650317217265, y: 60, z: 84.7 } 10.832412719726562 15 FULL false LOST false KIT [
+  [ 'sandstone', 4, null ],
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_pickaxe', 1, 96 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1_UPPER_FOOD_ACTUAL NET+2 totalROTTEN4 SAMEbody20HP, CHESTCLOSED RELEASEBANK_P3. ReservedP2shaftdelivery; P1frontBEDclear stays. No P2foodreceiptclaimedbeforeactualtoss/collection.
+p3: BED3066 ACTUALremovedboth67AIR; first3064headrayBLOCKEDnochange→changedVISIBLEfootdigsuccess. ActualcollectP4whitebed1, freshSTATUS22:49:01 confirmsRETAINEDP4. P3bed0 truthful. GRANTP1SAND66..63 NOW (P2roomREADY+active3063); STOPactualfeet63 signalP2. P4te
+p3: mporaryBANKwriter depositEXACTWHITE_BED1 UPPER7,68,82→closeRELEASE_P3, P3withdrawthenownrestore aftercoldfloor66/P1clear. No P4bedplacement, P3soleBEDwriter; thisbanktransferparallelP1descent. P3front20/20/bodyclear7/doorsCLOSED.
+p4: P3 CRITICAL ACTUAL22:48:52status P4AUTO-COLLECTED WHITE_BED1, ownfood0/bed1, bodyFRONT6.355,67,82.422 clearbothbed. KNOWNRETAINEDHOLDER P4; no loss/no restoreyet. NeedYOUR exacthandoff: grantUPPERdepositBED1→releaseP3 forwithdraw/restore OR delegatefinalEA
+p4: STbedrestoreP4 afterP1clears. Iholdbed safely, no worldwrites/no duplicatebedcraft.
+p1: P1 LIVE22:49:03 status BEDactualP4white_bed1 (P3removealreadyeffect?); P1stillfront4FLESH. Changedcheapbedcontract: ifP3agrees P4KEEPbed andSOLErestore AFTERP1UP67+bothcellsactualCLEAR, no unnecessarybank-transfer. P3SAND66..63granttoP1 needsactualbedAIR+r
+p1: etainedholderP4+restorewriterACK, thenIrunreceiveNOW. ProgramASYNC-BODYsyntaxchecksmokespositive+negative passed; top-levelmodulecheckerwrongforreturn, correctedtool.
+p1: P1 ACKP3GRANT2393 SAND66..63 NOW; knownretainedbedP4→UPPER→P3 parallelrestorecontractaccepted, myalternativeNOTchangingactiveP3bedplan. Startingcamp_receive NOW <=150s actual4FLESH, stopREADY_UPafterkit needfresh62release. P2actualFEET63in~7sec notoldroom.
+p1: P1_FEET63_ACTUAL (7.509363009268608, 63, 83.46732011131547) HP20 SAND3 roof62stillsandstone P2yousole62OPENthenRECAP afteractualfall60.
+p1: P1_BOTTOM60_ACTUAL (7.509363009268608, 60, 83.46732011131547) HP20 P2KITdonornowactualbodycheck. FOODflesh4outSOUTH afterkit; need7COLDfullblocks notsand forpillar.
+p1: P1_PROBE_COBBLE_ACTUAL NET1 count1 HP20 samebody(7.509363009268608, 60, 83.46732011131547) READYKIT exactwholeoffer now.
+p4: P4_BED_TRANSFER_RECONCILED upper1/own0 AFTERCLOSE actual, CHESTCLOSED RELEASEBANK_P3 BEDwithdraw+restore. 3072deposit0->1 succeeded; maininventory readWHILEopen reportedstale1, afterclose0. NOduplicatewrite. P4frontclear20HP no pendingmutators.
+p3: P3 BEDactual3074 upper1→0/own0→1 WHITE_BED retained20HP, CHESTCLOSED, restorewriterP3. P1probeactualNET1 ACK; needwholekit/cold>=7/food4P2receipt thenexplicit62release andUP7. Currentdeadline22:52:42 (~2m45), finishsharedshaftfloor66+bothbedcellsCLEAR befo
+p3: reP3restore (sourceprechecksall). P3standingfront6.489,67,82.3; P4frontsameclear. No doorwrites/openings.
+--- p2 now: (7.5, 60, 84.7) in overworld, health 10.8/20, food 15/20, alive

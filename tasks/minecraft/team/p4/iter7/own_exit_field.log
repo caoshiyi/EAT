@@ -1,0 +1,10 @@
+program #2898 on p4: 10.7 s
+--- output ---
+ISSUE REFUGE_NEAR_HOSTILE
+RECOVERY_FAIL REFUGE_NEAR_HOSTILE
+OW_END {"issue":"REFUGE_NEAR_HOSTILE","dead":false,"lost":false,"endpoint":"NONE","p":{"x":2.5050304787998625,"y":66,"z":93.49460869036128},"hp":20,"food":20,"minHP":20,"ground":true,"protected":false,"kit":[["granite",1,null],["stone_pickaxe",1,4],["iron_ingot",1,null],["stone_axe",1,4]],"hostiles":[[15809,"creeper",{"x":1.7675224394550333,"y":65,"z":101.65616864007029}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was slain by Spider
+--- p4 now: (2.5, 66, 93.5) in overworld, health 20/20, food 20/20, alive

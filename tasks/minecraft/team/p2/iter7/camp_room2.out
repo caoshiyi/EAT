@@ -1,0 +1,34 @@
+program #3062 on p2: 6.3 s
+--- output ---
+ROOM_READY {"at":1792190901664,"root":[7,60,84],"receiver":[7,60,83],"rear":[8,60,84],"volume":["(7, 60, 84)","(7, 61, 84)","(7, 60, 83)","(7, 61, 83)","(8, 60, 84)","(8, 61, 84)"],"cold":9} COLUMN [
+  [ 62, 'sandstone' ],
+  [ 63, 'sand' ],
+  [ 64, 'sand' ],
+  [ 65, 'sand' ],
+  [ 66, 'sand' ],
+  [ 67, 'white_bed' ],
+  [ 68, 'air' ]
+] BODIES [
+  [ 'p2', Vec3 { x: 7.506919304505999, y: 60, z: 84.5 } ],
+  [ 'p3', Vec3 { x: 6.4922560108391085, y: 67, z: 82.3 } ],
+  [ 'p4', Vec3 { x: 6.355490450371635, y: 67, z: 82.41276715334882 } ],
+  [ 'p1', Vec3 { x: 6.541750167087152, y: 67, z: 82.37019199082704 } ]
+]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 7.506919304505999, y: 60, z: 84.5 } 10.832412719726562 15 FULL false LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'coal', 2, null ],
+  [ 'stone_pickaxe', 1, 95 ],
+  [ 'sandstone', 4, null ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'cobblestone', 5, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_UPPER_FOOD_RECONCILED actualUPPERrott2/own0 after3059depositPOST_DELTA immediatecheckfailed (asynchcauseUNPROVED). READONLYfresh3060confirmsfood2banked/CHESTclosed RELEASEBANK_P1 exact2withdraw; P4no pendingbankwrites.
+--- p2 now: (7.5, 60, 84.5) in overworld, health 10.8/20, food 15/20, alive

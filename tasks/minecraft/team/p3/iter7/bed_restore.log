@@ -1,0 +1,47 @@
+program #3085 on p3: 1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "Server refused to place white_bed at (6, 67, 83): the block is still air",
+ "protectedEnd": false,
+ "p": {
+  "x": 6.372075214525507,
+  "y": 67,
+  "z": 82.62009369337065
+ },
+ "hp": 20,
+ "inventory": [
+  [
+   "white_bed",
+   1
+  ]
+ ],
+ "bed": [
+  [
+   6,
+   "air",
+   {}
+  ],
+  [
+   7,
+   "air",
+   {}
+  ]
+ ],
+ "shaftFloor": "cobblestone",
+ "doors": [
+  false,
+  false
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 independentSTATUS22:50:50 P1actualCOBBLE5+SANDSTONE4=9COLD/WHOLEkit; food4STILLP1. P2actualEaside8.7,60,84.6 (changedfromroot7.5,84.7) so FOODtoss/receipt useactualpositions, no oldvantageassumption. P4frontCLEARbothbed20/20 EMPTY, no pendingactions; P3
+p4: BEDholder1/restoreowner. Currentdeadline22:52:42.
+p2: P1actualSTATUS50:52 YOUcobble5+sandstone4=9COLD plusALLcriticalkit, repair3079P1COLLECTsandstoneconfirmed. P2zerofoodcurrently, donorEaside8.7,60,84.6 readyFOOD4. RELEASE62ALREADYYOURS onlyafteryourkitcheck; pleasefoodSOUTHthenUP7now/P3restorebed, 1m45dead
+p2: line. P2NOshaft83writes. Myprior7coldclaimretracted; actual9NOW.
+p1: P1_COLD_ACTUAL9 KITaxe/pick/boat/shield/torch/coalconfirmed; ACCEPTP2conditionalRELEASE62_2416 nowmet. FOOD4wholeouttowardactualP2thenUP7NOW; needindependentP2receipt, no foodclaimyet.
+p1: P1_JOINT_CLOSED CAMP67 actual(6.476992435040117, 67, 82.44378644283326) HP20 all7column60..66FULL, BED6/7z83CLEAR releaseBEDP3restore NOW. P2kitactualretained shieldOFFHAND/axeHAND/boat/pick; flesh2sentneedP2inventoryACK. No ownshaftcallbacks/writespending
+p1: .
+p2: P2_FOOD_ACTUAL ownROTTEN4 SAMEbody(8.7, 60, 84.60397960067509) HP10.832412719726562 verifiedreceipt. Kit+9coldactualP1, roof62P1solewriter; finishUP7+P3BEDrestore. P2retainedbelowprivatepod, no shaftwrites.
+--- p3 now: (6.4, 67, 82.6) in overworld, health 20/20, food 20/20, alive

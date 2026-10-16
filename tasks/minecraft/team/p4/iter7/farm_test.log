@@ -1,0 +1,20 @@
+program #2643 on p4: 10.4 s
+--- output ---
+COLLECT_ACK [ 5484, 'crafting_table' ] 0
+COLLECT_ACK [ 5496, 'crafting_table' ] 0
+HAND_NO_HARVEST Vec3 { x: -140, y: 61, z: -430 } nether_bricks
+FARM_ISSUE front-window Digging aborted Vec3 { x: -140.66770881824922, y: 60, z: -429.4960000000279 } 13.5
+FARM_RESULT {"phase":"front-window","issue":"Digging aborted","endpoint":"FULL141rollback","initialRod":0,"rod":0,"farmReached":false,"killed":[],"hits":0,"swings":0,"collects":[[5484,"crafting_table"],[5496,"crafting_table"]],"minHP":13.5}
+END {"issue":"Digging aborted","lost":false,"p":{"x":-140.66770881824922,"y":60,"z":-429.4960000000279},"hp":13.5,"food":20,"minHP":13.5,"full":true,"mats":0,"kit":[["sweet_berries",3,null],["bone_meal",4,null],["stone_axe",1,25],["spruce_sapling",2,null]],"mobs":[[3584,"blaze",{"x":-132.44740077575094,"y":64,"z":-430.29999248822975}],[3585,"blaze",{"x":-129.20639268767587,"y":63,"z":-428.2999483450455}],[3716,"blaze",{"x":-133.03643279152823,"y":64,"z":-430.50764226290664}],[3802,"blaze",{"x":-129.70531994435254,"y":63,"z":-428.9233477551936}],[3803,"blaze",{"x":-156.1649199263346,"y":60,"z":-429.74797328730415}],[3908,"blaze",{"x":-133.3820581380219,"y":64,"z":-431.1675768218244}],[3976,"blaze",{"x":-128.5260261079038,"y":63,"z":-429.0644669176244}],[4521,"blaze",{"x":-128.30003445674177,"y":63,"z":-428.2999690071093}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 SHAFT actual63 FULLtrue HP20 upperwalkingfloor70RESTOREDtrue rod1; solewriterP1, lowerroute62floorpreserved.
+p2: P2 21:12 actual2629 FULL74,67,115 HP20/18 shield/axe/3picks/table/boat/torch/berries6, lifecontinuous. KitoperationP3CLOSED confirmedreceipt+doors. Officialdragon0/8/deaths59(p2unchanged22). NEXT PEARLS: actualcaveEnders111+1798 at84..85,26,80 stable; fres
+p2: hcheckeddownshaft thenboundedcontact/kill/receipt+protectedreturn. No oldkit assumptions, no waitingfirstEye.
+p1: SHAFToperation CLOSED actualFULL(-272,63,-231),20HP/19/rod1; eightoneblockdrops, upper70walkingfloorRESTORED NETH, lower62floorUNCHANGED, newroof65NETH. Top71body71/72remainsAIR. P4 future reverseUP stillneedsfreshpillaroperation. Continue~520cellsportal. 
+p1: P4 provenrodreceipt prior p1/iter6_rod_pickup_pod.js+logs useful ifdropstuck; killsalone notretainedrod.
+p1: P1 RETURN actual (-223, 63, -180) fulltrue HP20 rod1 steps100
+p3: P3 normal2634 REFUGEexit3UP passed, actualTREE_NOT_GROWN aftermeal3 then SAMEoperation stricterdoorENTER+closedcamp20/20/token0/0. No wood; scopesresourcefailure/normalnewentry only, notcombatproof. Stone2639 precheckcaughtliquidadjacency NOdig. Newexactqu
+p3: arry10/11,y65,z89/90 hasfullsupport+nonliquidneighbors; outsideportalroute6,z89 andnoobsidiancuts. Testing3stone thenshovel/axe, notEyegate.
+--- p4 now: (-140.7, 60, -429.5) in the_nether, health 13.5/20, food 20/20, alive

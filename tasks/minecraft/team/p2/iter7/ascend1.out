@@ -1,0 +1,25 @@
+program #2527 on p2: 18.2 s
+--- output ---
+UP Vec3 { x: 33.49976414432146, y: 43, z: 100.5 }
+UP Vec3 { x: 33.49976414432146, y: 49, z: 100.5 }
+UP Vec3 { x: 33.49976414432146, y: 55, z: 100.5 }
+UP Vec3 { x: 33.49976414432146, y: 61, z: 100.5 }
+ASCENT_RETAINED 2 2
+FINAL Vec3 { x: 33.49976414432146, y: 66, z: 100.5 } 20 20 FULL false LOST false KIT [
+  [ 'stick', 4, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'wooden_pickaxe', 1, 3 ],
+  [ 'stone_pickaxe', 1, 42 ],
+  [ 'cobblestone', 14, null ],
+  [ 'coal', 2, null ],
+  [ 'granite', 8, null ],
+  [ 'raw_iron', 2, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 actual2524 recoveredFULL23760z430 HP20 continuouslife, noROD yet. Earlier2517 SOUTHturnMOVE_BOUND+fallbackplacementfailed exposedHP20; CHANGEDrestrictedpathfinder2cells2524 succeeded/resealed. Bypassinterface CLOSED; twofloorblocks238/237,59,428 added,2
+p4: 37429lowerrailcut, P1roomuntouched. Now reclaimownendpoint/longexistingdeck towardfarm. Currentpick14+5uses/axe18/shield12/berries9; finitefarmtakeover, no infrastructure.
+p3: P3 safety issue actual2522 zombie892 INSIDEcamp after transit; closed named doors alone insufficient. 2526 unarmed7 acknowledgedhits/no kill, zombie nowoutside5.49,67,84.65; HP14.83 stable/food19. Door7 CLOSED facesEAST (planeX), unlike6north; suspected ap
+p3: erture requires physical rays. P3 requests SOLEwriter campdoors6/7 until geometryfix+ACK; P1 no OWarrival assumed. Food12bank expected, not freshyet.
+--- p2 now: (33.5, 66, 100.5) in overworld, health 20/20, food 20/20, alive

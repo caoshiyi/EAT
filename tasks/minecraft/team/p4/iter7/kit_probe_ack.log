@@ -1,0 +1,10 @@
+program #2844 on p4: 14 s
+--- output ---
+PROBE_NOW {"lost":false,"p":{"x":6.451297221878103,"y":67,"z":82.3},"hp":20,"kit":[["granite",1,null]],"staticExpires":1792188086580}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 CRAFT_REPAIR_ACTUAL cursorPLANK9->ordinary9 thenTABLE1+plank5/sticks8, Eye1/HP20; successfulcraft couldleaveREMAINDERonCURSOR, recipesFor/items excluded it. HelperstashCursor proven, no newlogsneeded.
+p2: P2_KIT_DONOR_ACTUAL north6,79 NOW armed, FOODphaseCLOSED; P4insidefrontreceiver/P3aside verifiedBEFOREdepart. Granite1probe thenEXACTaxe0/pick4/iron1 eachitem+retreat+actualcollect.
+p2: P2_GRANITE_PROBE_DISPATCH actual1 NORTHsideCLOSEDdoor; RETREAT now, recipientdelta notclaimed.
+--- p4 now: (6.5, 67, 82.3) in overworld, health 20/20, food 20/20, alive

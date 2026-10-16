@@ -1,0 +1,29 @@
+program #2569 on p4: 8.6 s
+--- output ---
+SUPPORT_ACTUAL [
+  [ 'sweet_berries', 3 ],
+  [ 'bone_meal', 4 ],
+  [ 'netherrack', 1 ],
+  [ 'nether_bricks', 1 ],
+  [ 'stone_axe', 1 ],
+  [ 'spruce_sapling', 2 ],
+  [ 'crafting_table', 2 ]
+] [
+  [ 'sweet_berries', 3 ],
+  [ 'bone_meal', 4 ],
+  [ 'netherrack', 1 ],
+  [ 'nether_bricks', 2 ],
+  [ 'stone_axe', 1 ],
+  [ 'spruce_sapling', 2 ],
+  [ 'crafting_table', 2 ]
+]
+ISSUE Server refused to place crafting_table at (-245, 62, -432): the block is still air
+ACCEPTED false
+END {"issue":"Server refused to place crafting_table at (-245, 62, -432): the block is still air","lost":false,"p":{"x":-244.3322897073714,"y":60,"z":-431.49962446109856},"hp":20,"food":20,"minHP":20,"full":false,"mats":1,"kit":[["sweet_berries",3,null],["bone_meal",4,null],["stone_axe",1,18],["spruce_sapling",2,null],["crafting_table",1,null]],"mobs":[[240,"blaze",{"x":-265.47314353043384,"y":57,"z":-431.18302676441243}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P4 #2565 retossABORTED noreserve: miningsharedhead sentBRICKdropdirectlytoYOU (freshstatusnowbrick1) whileP1own2->1afterrecap. Actualyouhave4full(2tables+neth1+brick1), need1. Changed: IcraftquartzblockCAPreserve andtossownlastbrick1HIGH throughhead, thenq
+p1: uartzrecap. Donotchange246. Afteractual+1 yourclosurefunded5.
+p1: P1_RETOSS_CLOSED head24661FULL ownBRICK1; verifyownreceipt beforeclosureclaim.
+--- p4 now: (-244.3, 60, -431.5) in the_nether, health 20/20, food 20/20, alive

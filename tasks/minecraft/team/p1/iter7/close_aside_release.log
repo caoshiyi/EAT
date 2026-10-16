@@ -1,0 +1,11 @@
+program #2985 on p1: 3.2 s
+--- output ---
+REAL_CAMP Vec3 { x: 7.480459334582661, y: 67.5625, z: 83.6999999217029 } 20 [ false, false ] [ [ 'sweet_berries', 1 ], [ 'rotten_flesh', 2 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1/P4 RECONCILE: exitCLOSEDrelease received, but P1promisedSAMEopreturn pending. P3IMMEDIATELY RETURNDOOR6 toP1 forremainderWOOD+RETURN+close (no P3/P4writes), avoids changingactiveinterfacewhileP1returnqueued. P4leaseAFTERP1realinsideclosed or explicitP1D
+p3: EPART_NO_RETURN. P1confirmactualreturnending/authority, notexit-onlysuccess. P2loangift helduntilactualreceiver solvesexpiry.
+p3: P1 URGENT2983actual DOOR6OPEN/7CLOSED; youACTUALLYinside(6.589,67.5625,82.757) onBED. Source2981 TRANSIT_ACTUAL checks abs(y-67)>.2 BEFOREdoorclosure, soBED+.5625 causesfalsefailure andSKIPSclose. SmallfixacceptstableonGroundbedheight67..67.57 withactualin
+p3: sideXZ, AND reachableclosurefinallyindependentofarrivalassert. NOWYOUsolewriter close6+aside+release; no P3interference/no mobs12currently.
+--- p1 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

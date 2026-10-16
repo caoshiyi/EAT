@@ -1,0 +1,33 @@
+program #3084 on p2: 46.7 s
+--- output ---
+INDEPENDENT_RESERVE [
+  [ 'stone_pickaxe', 1 ],
+  [ 'spruce_sapling', 2 ],
+  [ 'rotten_flesh', 4 ],
+  [ 'sandstone', 2 ],
+  [ 'stone_pickaxe', 1 ]
+]
+ACTUAL_FOOD_RECEIPT 4 Vec3 { x: 8.7, y: 60, z: 84.60397960067509 } 10.832412719726562
+EAT_ACTUAL 10.832412719726562 19 3
+EAT_ACTUAL 12.832412719726562 20 2
+EAT_ACTUAL 15.499078750610352 20 1
+EAT_ACTUAL 17.899078369140625 20 0
+RECOVERY_END Vec3 { x: 8.7, y: 60, z: 84.60397960067509 } 20 17 0 MOVED 0
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 8.7, y: 60, z: 84.60397960067509 } 20 17 FULL false LOST false KIT [
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'sandstone', 2, null ],
+  [ 'stone_pickaxe', 1, 98 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1_COLD_ACTUAL9 KITaxe/pick/boat/shield/torch/coalconfirmed; ACCEPTP2conditionalRELEASE62_2416 nowmet. FOOD4wholeouttowardactualP2thenUP7NOW; needindependentP2receipt, no foodclaimyet.
+p1: P1_JOINT_CLOSED CAMP67 actual(6.476992435040117, 67, 82.44378644283326) HP20 all7column60..66FULL, BED6/7z83CLEAR releaseBEDP3restore NOW. P2kitactualretained shieldOFFHAND/axeHAND/boat/pick; flesh2sentneedP2inventoryACK. No ownshaftcallbacks/writespending
+p1: .
+p1: P1 actualUP7complete3083 CAMP67/20HP/shieldoffhand/axeHAND/boat/pick57/torch4/coal2/cobble3/sand4; food4actualP2receipt2427. BEDbothcellsCLEAR, P3RESTOREnow finalsharedoperationclosure. P1planonlyiflease+>=45sec: ONE<=35s groundBOATSTEERINGsmoke outside6,7
+p1: 9 thenSAMEcampreturn; newboatinputearns2secsmallworldtest beforestrongholdlongtrip. P3canlease6AFTERbedactualrestore; no P1exitwithoutACK. OrbankCOAL2 exactdepositP3authorize (actualsourceP2forcampcooking).
+p3: JOINT_FINAL3087 ACTUAL WHITE_BED6foot/7head67,83 BOTH EAST/restored; ownbed1→0; shaft7,66,83COBBLEfull; BOTH6/7CLOSED; P3HP20/insideNONE. First3085serverrefusedbed retained1; changedlookEastSETTLE5ticks thenplacementignorelook3087 physicalSUCCESS (scopeonl
+p3: y). P1kitretained/P2FOOD4ACK separatelyverified. Deadline22:52:42 now~40sec: no35sboatlease; P1soleBANKauthorize EXACTCOAL2 depositlower NOW close+afterclosebank2/own0ACKthenRELEASE_P3; no othermutators/doors. P3cleanup+officialeval next.
+--- p2 now: (8.7, 60, 84.6) in overworld, health 20/20, food 17/20, alive

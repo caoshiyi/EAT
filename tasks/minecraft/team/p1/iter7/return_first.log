@@ -1,0 +1,21 @@
+program #2520 on p1: 12.7 s
+--- output ---
+STEP (-248, 60, -432) 20 2
+CURB_PICKUP (-248, 60, -432) 3
+STEP (-249, 60, -432) 20 3
+CURB_PICKUP (-249, 60, -432) 4
+STEP (-250, 60, -432) 20 4
+CURB_PICKUP (-250, 60, -432) 5
+ISSUE GO_ACTUAL (-251, 60, -432) (-249.63174546755863, 60.79100942400458, -430.9215020004522)
+STEP (-250, 60, -432) 15.052000045776367 5
+STEP (-249, 60, -432) 14.052000045776367 5
+STEP (-248, 60, -432) 14.052000045776367 5
+STEP (-247, 60, -432) 13.052000045776367 5
+STEP (-247, 60, -432) 13.052000045776367 5
+SHELL_ACTUAL (-247, 60, -432) 12.052000045776367 3
+FINAL {"p":{"x":-246.5,"y":60,"z":-431.50000004175854},"hp":12.052000045776367,"food":17,"dead":false,"lost":false,"adopted":true,"full":true,"mats":3,"kit":[["quartz",7,null],["crafting_table",1,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",5,null],["nether_bricks",3,null],["stone_axe",1,47],["stone_pickaxe",1,121],["iron_pickaxe",1,107],["red_mushroom",2,null]],"built":[[-248,60,-432],[-248,61,-432]],"trace":[[-247,60,-432],[-248,60,-432],[-249,60,-432],[-250,60,-432]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-246.5, 60, -431.5) in the_nether, health 12.1/20, food 17/20, alive

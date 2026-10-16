@@ -1,0 +1,84 @@
+program #3054 on p2: 34.1 s
+--- output ---
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 93 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 93 } cobblestone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 93 } cobblestone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 93 } cobblestone
+ACCEPTED 41 [ 10, 60, 92 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 92 } sandstone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 92 } sandstone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 92 } sandstone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 92 } sandstone
+ACCEPTED 42 [ 10, 60, 91 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 10, y: 60, z: 91 } sandstone
+CAP_ACTUAL Vec3 { x: 10, y: 60, z: 91 } sandstone
+CAP_INTENT Vec3 { x: 10, y: 61, z: 91 } sandstone
+CAP_ACTUAL Vec3 { x: 10, y: 61, z: 91 } sandstone
+ACCEPTED 43 [ 9, 60, 91 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 9, y: 60, z: 91 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 60, z: 91 } sandstone
+CAP_INTENT Vec3 { x: 9, y: 61, z: 91 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 61, z: 91 } sandstone
+ACCEPTED 44 [ 9, 60, 90 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 9, y: 60, z: 90 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 60, z: 90 } sandstone
+CAP_INTENT Vec3 { x: 9, y: 61, z: 90 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 61, z: 90 } sandstone
+ACCEPTED 45 [ 9, 60, 89 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 9, y: 60, z: 89 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 60, z: 89 } sandstone
+CAP_INTENT Vec3 { x: 9, y: 61, z: 89 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 61, z: 89 } sandstone
+ACCEPTED 46 [ 9, 60, 88 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 9, y: 60, z: 88 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 60, z: 88 } sandstone
+CAP_INTENT Vec3 { x: 9, y: 61, z: 88 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 61, z: 88 } sandstone
+ACCEPTED 47 [ 9, 60, 87 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 9, y: 60, z: 87 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 60, z: 87 } sandstone
+CAP_INTENT Vec3 { x: 9, y: 61, z: 87 } sandstone
+CAP_ACTUAL Vec3 { x: 9, y: 61, z: 87 } sandstone
+ACCEPTED 48 [ 8, 60, 87 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 8, y: 60, z: 87 } sandstone
+CAP_ACTUAL Vec3 { x: 8, y: 60, z: 87 } sandstone
+CAP_INTENT Vec3 { x: 8, y: 61, z: 87 } sandstone
+CAP_ACTUAL Vec3 { x: 8, y: 61, z: 87 } sandstone
+ACCEPTED 49 [ 8, 60, 86 ] HP 10.832412719726562 FOOD 15
+STEP_DROPS 7
+CAP_INTENT Vec3 { x: 8, y: 60, z: 86 } sandstone
+CAP_ACTUAL Vec3 { x: 8, y: 60, z: 86 } sandstone
+CAP_INTENT Vec3 { x: 8, y: 61, z: 86 } sandstone
+CAP_ACTUAL Vec3 { x: 8, y: 61, z: 86 } sandstone
+ACCEPTED 50 [ 8, 60, 85 ] HP 10.832412719726562 FOOD 15
+BATCH_PROGRESS 50 54 [ 8, 60, 85 ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 8.507810482806894, y: 60, z: 85.5 } 10.832412719726562 15 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'coal', 2, null ],
+  [ 'stone_pickaxe', 1, 87 ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'cobblestone', 5, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 actual3044 CLOSED_RELEASE_P3 61.4s SAMElife20/20 WESTbed6.355,83.7. SALMON0, nofishswings/cuts, rawguardALLPASS25samples/nohostiles/ICE; targetfishmovedoutofreach, retirestaticfishstance. RETAINEDACTUALfoodROTTEN2 fromempty normalworldpickup, availableP
+p4: 2healing/P1travel. MovingFRONTnowclearsBOTHbedcells; requestP3exactBANKdeposit2 thenrelease (oractualrecipientP1). No fishretry.
+p4: P4_BOTH_BED_CLEAR_AGAIN actual(6.355490450371635, 67, 82.42181233438667) HP20 retainedFLESH2 controlsNONE. FloorleaseP3/contract; no worldwrites.
+p1: P1_BOTH_BED_CLEAR_ACTUAL (6.541750167087152, 67, 82.37019199082704) HP20 boundsZ+.3<83=true no pendingcontrols, P4returnedactualclosed2377. P3mayBEDopwhenactualP2ready. camp_receive program READY includescobble1PROBEack beforekit; STOPatREADY_UPprotectedro
+p1: of62, freshP2explicit62release thenP1separateUP7, no prematurecapdig.
+--- p2 now: (8.5, 60, 85.5) in overworld, health 10.8/20, food 15/20, alive

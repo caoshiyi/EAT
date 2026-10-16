@@ -1,0 +1,1 @@
+const {Vec3}=require('vec3');console.log('BODY',bot.entity.position,bot.health,bot.food);for(let y=61;y<=74;y++)console.log('COLUMN',y,[[0,0],[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>bot.blockAt(new Vec3(-272+x,y,-231+z))?.name));console.log('PEERS',Object.values(bot.entities).filter(e=>e.type==='player').map(e=>[e.username,e.position]));

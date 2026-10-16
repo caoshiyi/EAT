@@ -1,0 +1,182 @@
+program #2751 on p1: 0.4 s
+--- output ---
+ACTUAL overworld Vec3 { x: 7.5, y: 68, z: 91.5 } 20 18 true [
+  [ 'quartz', 3, null ],
+  [ 'cobblestone', 1, null ],
+  [ 'blaze_rod', 1, null ],
+  [ 'gold_nugget', 5, null ],
+  [ 'cobblestone_slab', 2, null ],
+  [ 'sweet_berries', 3, null ],
+  [ 'stone_axe', 1, 47 ],
+  [ 'rotten_flesh', 3, null ],
+  [ 'basalt', 1, null ],
+  [ 'netherrack', 2, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'iron_pickaxe', 1, 208 ],
+  [ 'red_mushroom', 2, null ]
+]
+PORTALS [
+  '(7, 68, 91)',
+  '(6, 68, 91)',
+  '(7, 69, 91)',
+  '(6, 69, 91)',
+  '(7, 70, 91)',
+  '(6, 70, 91)'
+]
+ROW 87 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'air', 'air', 'air', 'air' ] ],
+  [ 7, [ 'air', 'air', 'air', 'air' ] ],
+  [ 8, [ 'air', 'air', 'air', 'air' ] ],
+  [ 9, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 10, [ 'air', 'air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'air', 'air', 'air' ] ]
+]
+ROW 88 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'air', 'air', 'air', 'air' ] ],
+  [ 7, [ 'air', 'air', 'air', 'air' ] ],
+  [ 8, [ 'air', 'air', 'air', 'air' ] ],
+  [ 9, [ 'grass_block', 'snow', 'air', 'air' ] ],
+  [ 10, [ 'air', 'air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'air', 'air', 'air' ] ]
+]
+ROW 89 [
+  [ 3, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'air', 'air', 'air', 'air' ] ],
+  [ 7, [ 'air', 'air', 'air', 'air' ] ],
+  [ 8, [ 'cobblestone', 'snow', 'air', 'air' ] ],
+  [ 9, [ 'grass_block', 'snow', 'air', 'air' ] ],
+  [ 10, [ 'cobblestone', 'air', 'air', 'air' ] ],
+  [ 11, [ 'grass_block', 'air', 'air', 'air' ] ]
+]
+ROW 90 [
+  [ 3, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'sand', 'snow', 'air', 'air' ] ],
+  [
+    6,
+    [
+      'dirt',
+      'spruce_door{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"south"}',
+      'spruce_door{"powered":false,"open":false,"hinge":"left","half":"upper","facing":"south"}',
+      'sandstone'
+    ]
+  ],
+  [ 7, [ 'dirt', 'cobblestone', 'cobblestone', 'cobblestone' ] ],
+  [ 8, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 9, [ 'dirt', 'grass_block', 'snow', 'air' ] ],
+  [ 10, [ 'grass_block', 'air', 'air', 'air' ] ],
+  [ 11, [ 'grass_block', 'cave_air', 'air', 'air' ] ]
+]
+ROW 91 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 5, [ 'cobblestone', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [
+    6,
+    [ 'obsidian', 'nether_portal', 'nether_portal', 'nether_portal' ]
+  ],
+  [
+    7,
+    [ 'obsidian', 'nether_portal', 'nether_portal', 'nether_portal' ]
+  ],
+  [ 8, [ 'spruce_planks', 'obsidian', 'obsidian', 'obsidian' ] ],
+  [ 9, [ 'dirt', 'dirt', 'dirt', 'dirt' ] ],
+  [ 10, [ 'air', 'grass_block', 'air', 'air' ] ],
+  [ 11, [ 'air', 'grass_block', 'air', 'air' ] ]
+]
+ROW 92 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'cobblestone', 'spruce_planks', 'spruce_planks', 'snow' ] ],
+  [ 6, [ 'dirt', 'cobblestone', 'cobblestone', 'dirt' ] ],
+  [ 7, [ 'dirt', 'sandstone', 'cobblestone', 'dirt' ] ],
+  [ 8, [ 'spruce_planks', 'snow', 'air', 'air' ] ],
+  [ 9, [ 'dirt', 'dirt', 'dirt', 'dirt' ] ],
+  [ 10, [ 'air', 'air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'cave_air', 'air', 'air' ] ]
+]
+ROW 93 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 7, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 8, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 9, [ 'dirt', 'dirt', 'dirt', 'snow' ] ],
+  [ 10, [ 'air', 'cave_air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'cave_air', 'air', 'air' ] ]
+]
+ROW 94 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'air', 'air', 'air', 'air' ] ],
+  [ 6, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 7, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 8, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 9, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 10, [ 'air', 'air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'cave_air', 'air', 'air' ] ]
+]
+ROW 95 [
+  [ 3, [ 'air', 'air', 'air', 'air' ] ],
+  [ 4, [ 'air', 'air', 'air', 'air' ] ],
+  [ 5, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 6, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 7, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 8, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 9, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 10, [ 'snow', 'air', 'air', 'air' ] ],
+  [ 11, [ 'air', 'air', 'air', 'air' ] ]
+]
+FOES [
+  [
+    'skeleton',
+    undefined,
+    '(35.49712520963189, 66, 87.27497227895991)'
+  ],
+  [ 'boat', undefined, '(6.42503804482311, 63, 124.52496981611436)' ],
+  [
+    'zombie',
+    undefined,
+    '(6.42503804482311, 62.837500005960464, 124.52496981611436)'
+  ],
+  [ 'player', 'p3', '(6.609662796601506, 67, 82.3)' ],
+  [ 'player', 'p4', '(6.5, 67, 82.5)' ],
+  [ 'player', 'p1', '(7.5, 68, 91.5)' ],
+  [
+    'zombie_villager',
+    undefined,
+    '(21.69999998807907, 65, 88.69999998807907)'
+  ],
+  [ 'item', undefined, '(0.8165918813711053, 66, 96.4601345358448)' ],
+  [ 'zombie', undefined, '(5.804070439642609, 66, 68.19630250428233)' ],
+  [
+    'spider',
+    undefined,
+    '(36.32533736559216, 69, 100.63820466154743)'
+  ],
+  [ 'spider', undefined, '(36.97914651621624, 69, 108.2451107653357)' ],
+  [
+    'spider',
+    undefined,
+    '(38.78302231132059, 68, 111.81239847919556)'
+  ],
+  [
+    'spider',
+    undefined,
+    '(37.24568904399735, 69, 111.30000001192093)'
+  ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (7.5, 68, 91.5) in overworld, health 20/20, food 18/20, alive

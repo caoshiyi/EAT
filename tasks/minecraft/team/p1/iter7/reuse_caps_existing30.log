@@ -1,0 +1,54 @@
+program #2706 on p1: 19.5 s
+--- output ---
+SHIELD_STEP (-114, 63, -180) 20 2
+SHIELD_STEP (-113, 63, -180) 20 2
+ACTUAL_REAR_RECEIPT 2
+ACTUAL_DEPART_RESERVE 4 END_FRESH_COST 4
+SHIELD_STEP (-112, 63, -180) 20 4
+SHIELD_STEP (-111, 63, -180) 20 4
+SHIELD_STEP (-110, 63, -180) 20 4
+SHIELD_STEP (-109, 63, -180) 20 4
+SHIELD_STEP (-108, 63, -180) 20 4
+SHIELD_STEP (-107, 63, -180) 20 4
+SHIELD_STEP (-106, 63, -180) 20 4
+RETAINED_CUBE_BARRIER 6665 11.998393336789812 (-94.84229332450668, 69, -177.84045525950935) (-106, 63, -180) (-105, 63, -180)
+SHIELD_STEP (-105, 63, -180) 20 4
+SHIELD_STEP (-104, 63, -180) 20 4
+SHIELD_STEP (-103, 63, -180) 20 4
+SHIELD_STEP (-102, 63, -180) 20 4
+SHIELD_STEP (-101, 63, -180) 20 4
+RETAINED_CUBE_BARRIER 6803 11.963812998256534 (-95.47980004549026, 71, -171.4130240624342) (-101, 63, -179) (-101, 63, -179)
+SHIELD_STEP (-101, 63, -179) 20 4
+SHIELD_STEP (-101, 63, -178) 20 4
+SHIELD_STEP (-101, 63, -177) 20 4
+SHIELD_STEP (-101, 63, -176) 20 4
+SHIELD_STEP (-101, 63, -175) 20 4
+SHIELD_STEP (-101, 63, -174) 20 4
+SHIELD_STEP (-101, 63, -173) 20 4
+SHIELD_STEP (-101, 63, -172) 20 4
+SHIELD_STEP (-101, 63, -171) 20 4
+SHIELD_STEP (-101, 63, -170) 20 4
+SHIELD_STEP (-101, 63, -169) 20 4
+SHIELD_STEP (-101, 63, -168) 20 4
+SHIELD_STEP (-101, 63, -167) 20 4
+SHIELD_STEP (-101, 63, -166) 20 4
+SHIELD_STEP (-101, 63, -165) 20 4
+SHIELD_STEP (-101, 63, -164) 20 4
+SHIELD_STEP (-101, 63, -163) 20 4
+SHIELD_STEP (-101, 63, -162) 20 4
+SHIELD_STEP (-101, 63, -162) 20 4
+SHELL_ACTUAL (-101, 63, -162) 20 0
+FINAL {"p":{"x":-100.55272436702354,"y":63,"z":-161.45760032166052},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":0,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["stone_pickaxe",1,130],["iron_pickaxe",1,190],["red_mushroom",2,null]],"built":[[-101,63,-161],[-101,64,-161],[-101,63,-163],[-101,64,-163]],"trace":[[-113,63,-180],[-112,63,-180],[-111,63,-180],[-110,63,-180],[-109,63,-180],[-108,63,-180],[-107,63,-180],[-106,63,-180],[-105,63,-180],[-104,63,-180],[-103,63,-180],[-102,63,-180],[-101,63,-180],[-101,63,-179],[-101,63,-178],[-101,63,-177],[-101,63,-176],[-101,63,-175],[-101,63,-174],[-101,63,-173],[-101,63,-172],[-101,63,-171],[-101,63,-170],[-101,63,-169],[-101,63,-168],[-101,63,-167],[-101,63,-166],[-101,63,-165],[-101,63,-164],[-101,63,-163],[-101,63,-162]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 firstEXIT2696 failedACTUAL_LAND unchanged6.5,67,82.5 FULLhealth20, NOTtraversal. Genericgoto resolvedempty; no worldprogress. PleaseCLOSEyourdoorifstillopen. ChangednextDIRECTmanualNorth whilecheckingactualdoorcollision/xcenter/y, notanothergoto. Ourbod
+p4: iesOVERLAPsame6.5,67,82.5; canyoustepasideINSIDE7ishifclearsafe? No capchanges. Iwillannouncechangedprogramrunning beforefreshopen.
+p4: P4 EXIT_PROGRAM_LIVE2 CHANGEDmanual actualinside6.5,67,82.5; P3soleDOOR safeopen<=8s, 60sconditionalwait; thenWest2field noP3pit/caps.
+p2: P3 boatAPI note: mylandplaceEntity trial2687 ALSO Failedplaceentity/boatstill1. No successclaim. Testing ACTUALray/freeentityAABB +normalactivateItem (sourceplaceEntity use_item omitssequence vsactivateItemincludes; causeNOTisolated). Also2694 lowHPguard a
+p2: bortedclosure; immediate2697 separateheadseal restoredFULLrear75,26,116 HP16.5. Fixinghealthguard topermitrecoverybeforeanotherexposure. Yourbankboat unaffected.
+p3: P3_EXIT_OPEN P4 now <=8sec, soleP3doorwriter; actualP4inside/nohostiles12. Exitnorth6,79 thenclearfront.
+p4: P4 EXIT_ACTUAL (6.625861346559715, 66, 78.8452431634198) P3closeyourDOOR now; frontreleasedforboat whileIgowestfield.
+p3: P4 ACK2705 ACTUALyouclearedfront to6.626,66,78.94; BOTHdoorsNORTH/CLOSED verified, P3aside7.57,67.5625,83.7 HP20/20/noinsidehostiles. First2699 windowexpiredNOexit, changedmanual+P3aside ACTUALpass; interfaceCLOSED/released. Tellactualreturnnear fornewshor
+p3: treceive, no standingready. P2 ACKsameboatAPIcounterexample; P3 nextgeometry/ray/AABBpreviewonly, awaityouractualnormalactivate evidence ratherthanduplicatesequenceexperiment.
+--- p1 now: (-100.6, 63, -161.5) in the_nether, health 20/20, food 19/20, alive

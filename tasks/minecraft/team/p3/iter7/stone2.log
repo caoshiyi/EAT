@@ -1,0 +1,58 @@
+program #2645 on p3: 20.9 s
+--- output ---
+DOOR_ACTUAL exit (6.559002522622415, 66.26636799395752, 79.17487369679559)
+LANDED_ACTUAL 10 89 (10.5, 68, 89.41844792032416) air
+LANDED_ACTUAL 11 89 (11.329551718919896, 68, 89.48592055816506) air
+STONE_ISSUE STONE_NO_RECEIPT
+LANDED_ACTUAL 6 79 (6.5, 66, 79.54189547897451) snow
+DOOR_ACTUAL enter (6.5590027849175465, 67, 82.30437592702447)
+--- returned ---
+{
+ "issue": "STONE_NO_RECEIPT",
+ "got": 0,
+ "crafted": [],
+ "endpoint": "camp",
+ "protectedEnd": true,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 6.5590027849175465,
+  "y": 67,
+  "z": 82.56016848341595
+ },
+ "dead": false,
+ "lost": false,
+ "inv": [
+  [
+   "arrow",
+   2
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "spruce_planks",
+   3
+  ]
+ ],
+ "life": {
+  "token": [
+   1792184820747,
+   0,
+   0
+  ],
+  "events": []
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67, 82.6) in overworld, health 20/20, food 20/20, alive

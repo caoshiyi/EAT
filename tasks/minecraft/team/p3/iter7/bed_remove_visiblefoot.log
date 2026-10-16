@@ -1,0 +1,54 @@
+program #3066 on p3: 2.7 s
+--- output ---
+BED_REMOVED_ACTUAL {
+  at: 1792190928604,
+  bedName: 'white_bed',
+  life: '1792184820747:2:2',
+  phase: 'BED_REMOVED_NO_SAND_GRANT_YET',
+  retained: 0,
+  collects: [ { who: 160, name: 'p4', item: 'white_bed' } ]
+}
+--- returned ---
+{
+ "issue": null,
+ "bedName": "white_bed",
+ "retained": 0,
+ "collects": [
+  {
+   "who": 160,
+   "name": "p4",
+   "item": "white_bed"
+  }
+ ],
+ "protectedEnd": true,
+ "p": {
+  "x": 6.489220385539179,
+  "y": 67,
+  "z": 82.3
+ },
+ "hp": 20,
+ "inv": [],
+ "floor": [
+  [
+   6,
+   "cobblestone"
+  ],
+  [
+   7,
+   "sand"
+  ]
+ ],
+ "bed": [
+  [
+   6,
+   "air"
+  ],
+  [
+   7,
+   "air"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1_UPPER_FOOD_ACTUAL NET+2 totalROTTEN4 SAMEbody20HP, CHESTCLOSED RELEASEBANK_P3. ReservedP2shaftdelivery; P1frontBEDclear stays. No P2foodreceiptclaimedbeforeactualtoss/collection.
+--- p3 now: (6.5, 67, 82.3) in overworld, health 20/20, food 20/20, alive

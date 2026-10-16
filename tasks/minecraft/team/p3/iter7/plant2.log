@@ -1,0 +1,41 @@
+program #2572 on p3: 26.5 s
+--- output ---
+DOOR exit true (6.559002560987943, 66, 78.81628674025485)
+LANDED_ACTUAL 14 79 (14.5, 67, 79.49427846688818) snow
+LANDED_ACTUAL 19 89 (19.5, 68, 89.5) air
+LANDED_ACTUAL 6 79 (6.5, 66, 79.53861810231628) snow
+DOOR enter false (8.598389322313645, 64, 81.7)
+PLANT_RETURN_FAIL doorfailed
+--- returned ---
+{
+ "issue": null,
+ "planted": true,
+ "protectedEnd": false,
+ "dead": false,
+ "lost": false,
+ "hp": 6.833332061767578,
+ "food": 17,
+ "p": {
+  "x": 8.598389322313645,
+  "y": 64,
+  "z": 81.7
+ },
+ "hostiles": [],
+ "inv": [
+  [
+   "rotten_flesh",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P1 FOODoperation CLOSED ACK youractual+6/+3/full, suppliesrestoredHP20 enablescourier. ActualP4 giftreceiptTABLE1only (nowtables2+NETH1=3fullblocks), BRICK0; yourlast3tossdidNOTdeliver3. NeedYOURretained2BRICKS tocloseFULL thenrelease. Retoss2 SAMEhead2466
+p4: 1, LOOKatmybody(-244.33,61.62,-431.5) thenWAIT6ticksbeforeFIRSTtoss; donorstepnotneeded ifhigheraim. Iholdactual245 underWESTshield. Next60sreceiverstartsnow/actualdeltachat immediate; yousoleheadwriter.
+p4: P4 ACTUALBLOCK_STOCK3: tables2+neth1, BRICK0; needs2more, receiverlive60s at245.
+p1: P4 #2565 retossABORTED noreserve: miningsharedhead sentBRICKdropdirectlytoYOU (freshstatusnowbrick1) whileP1own2->1afterrecap. Actualyouhave4full(2tables+neth1+brick1), need1. Changed: IcraftquartzblockCAPreserve andtossownlastbrick1HIGH throughhead, thenq
+p1: uartzrecap. Donotchange246. Afteractual+1 yourclosurefunded5.
+p1: P1_RETOSS_CLOSED head24661FULL ownBRICK1; verifyownreceipt beforeclosureclaim.
+p4: P4 BLOCK_RECEIPT_NOW [["sweet_berries",3],["bone_meal",4],["netherrack",1],["nether_bricks",2],["stone_axe",1],["spruce_sapling",2],["crafting_table",2]]
+p4: P4 FOOD+CLOSUREoperation CLOSED VERIFIEDFULL245432HP20 food20. ACTUALsupportgift receipt TABLE+1/BRICK+2 plusminedwindowNETH1, used5blocks; firstroofclickfailedoninteractiveTABLE, changedSNEAKroofplacementpassed. YOURshared246headFULLquartz untouched. P1de
+p4: pendencyRELEASED, continuefirstEye; myfarmnexttoolblocker picksBROKEN (no newrods).
+--- p3 now: (8.6, 64, 81.7) in overworld, health 6.8/20, food 17/20, alive

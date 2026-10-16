@@ -1,0 +1,47 @@
+program #2753 on p2: 9.1 s
+--- output ---
+EXACT_BOAT_DROP 9846 Vec3 { x: 76.97386287121343, y: 25, z: 113.51191918759406 }
+COLLECT_ACK 10045 cobblestone
+COLLECT_ACK 10047 dirt
+COLLECT_ACK 9846 spruce_boat
+EXACT_BOAT_RECEIPT 1
+CAP_INTENT Vec3 { x: 75, y: 26, z: 115 } cobblestone
+CAP_ACTUAL Vec3 { x: 75, y: 26, z: 115 } cobblestone
+CAP_INTENT Vec3 { x: 75, y: 27, z: 115 } cobblestone
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 115 } cobblestone
+RETAINED 0 0 KILL false HITS 0 LOST false COLLECTED [
+  [ 10045, 'cobblestone' ],
+  [ 10047, 'dirt' ],
+  [ 9846, 'spruce_boat' ]
+]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 75.50033499825484, y: 26, z: 116.33229115384275 } 20 17 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 2, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'stone_pickaxe', 1, 55 ],
+  [ 'cobblestone', 30, null ],
+  [ 'sweet_berries', 4, null ],
+  [ 'stone_axe', 1, 11 ],
+  [ 'andesite', 5, null ],
+  [ 'stone_pickaxe', 1, 50 ],
+  [ 'dirt', 4, null ],
+  [ 'diorite', 1, null ],
+  [ 'granite', 8, null ],
+  [ 'stone_pickaxe', 1, 3 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 actual2743 FULLNether(1,65,4),20HP18food/Rod1/iron206. Portalblocks3/4,65,3 freshlyverified. Shortbridge2,64,4 slab+3,64,4 plank: boundedbridge/expected-dimensiontransitionNOW, P1soleown2capswriter. OWarrivalnotyet, no campopening. P3 freshbank+frontsta
+p1: tus needed afteractualcrossing.
+p1: P1 ACTUAL_OVERWORLD_RETURN (7.5, 68, 91.5) HP20 food18 retainedROD1 expectedDIMrespawns1; portalbufferendingUNVERIFIED, no campreadyclaim.
+p1: P3/P4 ACTUALOW#2749 (7.5,68,91.5) HP20/food18/Rod1/shield+axe, no death; gate6,68,90 beforecamp. P1ownsPORTALgate crossingonly, yousoleCAMPdoors/chest. P4deathclosedtest NOTproof. Icheckactualhostiles thenapproach6,67,81.3 closeddoor threshold ifsafe; prop
+p1: ose YOUtossPEARL1 NORTHwhileCLOSED afteractualP1near. Neednamedcurrentdonor+freshbankwithdraw/receipt; keepdoorsclosed.
+p3: P4 CLOSEDtest2747 correctlyREFUSED donor_not_threshold: actualyouNEWLIFEinsidecamp, chatZombie death, notoutside6,80. P3 received0/doorsclosed/20HP. DoNOTrepeatbareoutsidewait forberrytest. CHANGEDusefulhandoff: P3 RELEASES CHESTwriter toP4 NOW forinsidebe
+p3: rries6deposit lower7,67,82 expected8->14; yousoleCHEST, P3keepsDOORSclosed/no inventorybankwrites untilyourCLOSED/actualendingACK. P1 closed OUTWARD method willtestnoncriticalberry only onACTUALOWnear withshield, thenpearlreceipt, never criticalpearlasprob
+p3: e.
+--- p2 now: (75.5, 26, 116.3) in overworld, health 20/20, food 17/20, alive

@@ -38,3 +38,8 @@ Current permitted agent_team/iter_6 result files enumerated at launch contain pr
 2026-10-16T19:36:46.878330+00:00 iteration6 livecheck: permitted agent_team/iter_6/*_output.json containsno completedwrappers; currentplayer/coordinator/whole-teamusageunavailable, notzero. No costextrapolation/commit attribution.
 
 2026-10-16T20:47:50.632216+00:00 Current-run closing check of permitted agent_team/iter_6/*_output.json: 0 completed wrapper files. No measured current-session/team usage is available; unavailable is not zero. No cost or commit attribution invented.
+
+## Iteration 7 — 2026-10-16T20:53:50.798624+00:00
+Token usage unavailable: no permitted session-history measurement evidence exposed. No fabricated count or commit identifier.
+
+2026-10-16T22:13:24.717691+00:00 Iteration7: permitted agent_team file listing exposed no iteration7 *_output.json measurements. Current coordinator/player/team token usage remains unavailable; historical iteration wrappers are not current evidence. No counts or costs fabricated.

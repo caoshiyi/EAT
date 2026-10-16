@@ -1,0 +1,220 @@
+program #2739 on p3: 0.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "stock": [
+  {
+   "y": 67,
+   "items": [
+    [
+     "water_bucket",
+     1
+    ],
+    [
+     "gold_ingot",
+     1
+    ],
+    [
+     "flint_and_steel",
+     1
+    ],
+    [
+     "spruce_fence_gate",
+     1
+    ],
+    [
+     "sweet_berries",
+     8
+    ],
+    [
+     "spruce_boat",
+     1
+    ],
+    [
+     "ender_pearl",
+     1
+    ],
+    [
+     "gold_nugget",
+     6
+    ],
+    [
+     "arrow",
+     1
+    ],
+    [
+     "rotten_flesh",
+     2
+    ]
+   ]
+  },
+  {
+   "y": 68,
+   "items": [
+    [
+     "leather",
+     1
+    ],
+    [
+     "arrow",
+     4
+    ],
+    [
+     "spruce_sapling",
+     3
+    ],
+    [
+     "feather",
+     6
+    ],
+    [
+     "emerald",
+     4
+    ],
+    [
+     "filled_map",
+     1
+    ],
+    [
+     "spruce_stairs",
+     1
+    ]
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "p": [
+    6,
+    67,
+    81
+   ],
+   "name": "spruce_door",
+   "properties": {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   },
+   "shapes": [
+    [
+     0,
+     0,
+     0.8125,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": [
+    7,
+    67,
+    81
+   ],
+   "name": "spruce_door",
+   "properties": {
+    "powered": false,
+    "open": false,
+    "hinge": "right",
+    "half": "lower",
+    "facing": "north"
+   },
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": [
+    5,
+    67,
+    83
+   ],
+   "name": "spruce_stairs",
+   "properties": {
+    "waterlogged": false,
+    "shape": "straight",
+    "half": "bottom",
+    "facing": "east"
+   },
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     0.5,
+     1
+    ],
+    [
+     0.5,
+     0.5,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": [
+    5,
+    68,
+    83
+   ],
+   "name": "spruce_stairs",
+   "properties": {
+    "waterlogged": false,
+    "shape": "straight",
+    "half": "bottom",
+    "facing": "east"
+   },
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": [
+    5,
+    69,
+    82
+   ],
+   "name": "dirt",
+   "properties": {},
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": [
+    5,
+    69,
+    83
+   ],
+   "name": "dirt",
+   "properties": {},
+   "shapes": "[repeated reference]"
+  }
+ ],
+ "removedObserverHandlers": [],
+ "controls": {},
+ "onGround": true,
+ "p": {
+  "x": 6.609844934107566,
+  "y": 67.5625,
+  "z": 82.73422945732808
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [],
+ "dimension": "overworld"
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 20/20, food 20/20, alive

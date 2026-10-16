@@ -1,0 +1,18 @@
+program #2566 on p3: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p3-program-2566.js:13
+let c=null,planted=false,issue=null,protectedEnd=false;try{check('overworld');if(!safeCamp())throw Error('CAMP_NOT_READY');const q=new Vec3(20,67,89);if(!['dirt','grass_block'].includes(bot.blockAt(q).name)||!['air','snow'].includes(bot.blockAt(q.offset(0,1,0)).name))throw Error('SOIL_CHANGED');if(Object.values(bot.entities).some(e=>['zombie','skeleton','spider','creeper'].includes(e.name)&&e.position.distanceTo(q)<10))throw Error('PLANT_THREAT');c=await bot.openChest(bot.blockAt(new Vec3(7,68,82)));await c.withdraw(bot.registry.itemsByName.spruce_sapling.id,null,1);await c.close();c=null;await door('exit');await landXZ(14,79);await landXZ(19,89);if(bot.entity.position.offset(0,1.62,0).distanceTo(q.offset(.5,1,.5))>4.5)throw Error('PLANT_REACH');await bot.equip(bot.inventory.items().find(i=>i.name==='spruce_sapling'),'hand');await bot._placeBlockWithOptions(bot.blockAt(q),new Vec3(0,1,0),{forceLook:true,swingArm:'right'});await ticks(8);planted=bot.blockAt(q.offset(0,1,0)).name==='spruce_sapling';if(!planted)throw Error('PLANT_POSTCONDITION');}
+                         ^
+
+SyntaxError: Identifier 'issue' has already been declared
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:383:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p1: P4 #2559 HEALEDactual20HP/19food, berries3+rotten3 remain; rod1/full. RETOSSchangedhighaim2bricks NOW ONLYifactualyou24560z432, P1sole246headwriter; youshouldmoveWESTwithinowncellnearwall forpickup. Freshstatusshowsyou2tables+neth1, +2brick wouldfund5closu
+p1: re. P1windowrecaps immediately thenneedsyourACK receipt+ending beforedeparture.
+p1: P1_RETOSS_CLOSED head24661FULL ownBRICK1; verifyownreceipt beforeclosureclaim.
+--- p3 now: (6.6, 67.6, 82.8) in overworld, health 18.8/20, food 17/20, alive

@@ -1,0 +1,22 @@
+> LIVE HANDOFF REFRESH20:43 — KEEP PLAYING until20:49:37 UTC or verified victory. Each owner refresh OWN current top header now: body/dimension/health/food/kit/wear/offhand; actual retained assets; active programID+timeout orNONE; accepted endpoint versus attempted/rollback; exact shared caps/route changes; persistent controls/listeners and expiry; unresolved failures and next bounded action. P3 fresh bank stock observation if feasible for carrier. No early final or stop at this request; reporting must not gate immediate useful action. Coordinator independently checks the closing world near20:49.
+
+# Iteration6 live board — 20:38 world checkpoint
+
+**Defeat the Ender Dragon. Deadline20:49:37 UTC**, runner CR_DEADLINE1792183777. Official20:38:46 dragon0/milestones8/deaths57/programs2452. Do not stop at this checkpoint.
+
+| Owner | Actual state and next decisive outcome |
+|---|---|
+| p1 | Rod1 retained/FULL near(-141,60,-430),20HP/17food. Exit-clear test2452 hit1/no kill after two no-swing trials. No actual courier/transfer/Eye yet; preserve existing rod and choose bounded first-use progress from current state. |
+| p4 | Actual wither kill2438/FULL(-243,60,-430),20HP/shield12/stock1/pick125. Proposed existing-cage handoff; no meeting/receipt or takeover arrival. |
+| p2 | New-life FULLrefuge(33,66,103),20HP. Boat/table/sticks and supplies retained; no old sword/boots or new pearl. Bankpearl1 confirmed2435. |
+| p3 | Actual doors6/7 named+CLOSED; westAIR5,67/68,83 repaired with2cheststairs2447, torso ray nowblocked, body20HP. Partial geometry limits remain. Eye observer persistent to20:49:37, actualEyes0. Bank2435 pearl1/gold1/nuggets6. |
+
+At20:43 update OWN current header while useful play CONTINUES: actual body/health/food/kit/offhand/wear, activeID+timeout orNONE, accepted ending and new assets, exact sharedcaps/routechanges, callbacks/controls and expiry, unresolved failures/nextboundedaction. P3 fresh bank contents if feasible for returning carrier; do not infer stock from milestones. Reports are not a prerequisite for immediate safe action.
+
+Independent closing evaluation near20:49, actual deadline20:49:37. Stop only verified victory/currentdeadline/explicitcurrentstop/runnertermination. Local agent listing only/root; no guessed targets/spawning/playerprograms/peer edits. Sharedfile requests not claimed delivered without ACK. Rawmission/iter6/REVIEW.md/history preserve failures. Tokenusageunavailable.
+
+2026-10-16T20:42:11.259156+00:00 Physical route qualification #2454: P3 camp→horizontalgoal6,z89 ACTUALlandedY65/snow, return6,z79 ACTUALY66/snow, then campenter20:40:25. End17.83HP/20food/lifecontinuous, nextstatus19.8HP; no gate/portal crossing/cuts. This replaces unsupported exact-foot assumption for THIS tested leg, not a fullportal-transition safety guarantee. Useful carrier evidence with explicit damage cost/current-state checks. Receiver#2453 ran120s but DONOR_NOT_NEAR, deltasALL0, stayedFULL20HP; protective conditional opening worked, actualhandofffailed. Another token window alone would not resolve donor exit dependency.
+
+2026-10-16T20:46:13.134073+00:0020:45 live evidence: P1#2464 retained98weststeps toFULL(-241,60,-430),20HP/17food/rod1/mats11, adjacentP4cage; notEye/Overworldreturn. P4AIRannouncement20:44:58 predatesP1ending20:45:11, whose builtlist explicitlyincludes(-242,61,-430). Thus that earlierAIRmessage can be stale after donorclosure; currentblock/actualreceiverdelta must be checked, no transfer inferred from proximity. This is a real shared-ending race, distinct from expired readiness. P3#2462 actualberries3 receipt→bankdelta0→3/returnedcamp19.83HP, useful near-term carrierfood; noEyeobserved.20:45 agentlistingonly/root, allrolesrecentexecution/observerevidence, no supportedprematurecompletion. Continueuntil20:49:37; finalworldevaluationpending.
+
+2026-10-16T20:47:50.632216+00:00 Actual late supporthandoff #2472/#2473: P1donorstonewear100/blocks3/berries2 dispatched and freshP4 inventory nowSTONE100+old126, BRICK4+NETH1, BERRIES9 (prior7), faces/roofFULL20HP. Actualrecipientdelta verifies supportreceipt, not rodtransfer; P1rod1retained/FULL(-239,60,-430)20HP/mats1 afterretreat. ReceiveroldAIR message was overwritten bydonorclosure, then newcontrolledgiveropening resolved actualworldstate; first receiverresultfalse/0gift not retroactively successful. #2469 freshestbank20:46:13 pearl1/gold1/nuggets6/berries3/water1/flint1/gate1; noEye.

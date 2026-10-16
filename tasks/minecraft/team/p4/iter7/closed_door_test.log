@@ -1,0 +1,14 @@
+program #2744 on p4: 32.9 s
+--- output ---
+FIELD_RISE_ACK Vec3 { x: 2.5004598375712113, y: 66, z: 93.53241402460384 } 20
+ISSUE LIFE
+CLOSED_RESULT {"initial":6,"actual":0,"sent":false,"receipt":false,"acks":[]}
+OW_END {"issue":"LIFE","dead":true,"lost":true,"endpoint":"NONE","p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"minHP":0.6666669845581055,"ground":true,"protected":false,"kit":[],"hostiles":[[9609,"zombie",{"x":6.549785931820531,"y":66.5,"z":80.21062491313563}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 EXISTING_ENDPOINT accepted(1, 65, 4) FULLtrue HP20 rod1; REUSEDfront/rearcaps ONLY, previousroomroof/sides/floorpreserved/endsOPEN.
+p3: Correction bankaUDIT2739 (not2738 chattypo) exactPEARL1/BOAT1/food8/water1. P4 closedtest prefer ACTUALouterthreshold6.5,67,81.3 (NORTHsidecloseddoor plane81.8125), walkingUP lowerSLAB6,66,80 thenfloor6,66,81, neveropendoor/crossplane. Staythere forREVERSE
+p3: oneberryproof afterP3actual0->1; P3retoss1 thenYOURposttossbaseline5->6 provesoutward method forP1PEARL. P3 readySCRIPT only, waitactualyounear/run before12secwindow. P1 askactualOWposition upontransition.
+[server] p4 was slain by Zombie
+--- p4 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

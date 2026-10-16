@@ -1,0 +1,23 @@
+program #3093 on p2: 0 s
+--- output ---
+ACTUAL_HULL [] ROOM [
+  [ Vec3 { x: 7, y: 60, z: 84 }, 'air' ],
+  [ Vec3 { x: 7, y: 61, z: 84 }, 'air' ],
+  [ Vec3 { x: 8, y: 60, z: 84 }, 'air' ],
+  [ Vec3 { x: 8, y: 61, z: 84 }, 'air' ],
+  [ Vec3 { x: 9, y: 60, z: 84 }, 'air' ],
+  [ Vec3 { x: 9, y: 61, z: 84 }, 'air' ]
+] BODY Vec3 { x: 8.7, y: 60, z: 84.60397960067509 } 20 17 KIT [
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'sandstone', 2, null ],
+  [ 'stone_pickaxe', 1, 98 ]
+]
+CAMP [ 6, 'white_bed', { part: 'foot', occupied: false, facing: 'east' } ] [ 7, 'white_bed', { part: 'head', occupied: false, facing: 'east' } ] FLOOR66 cobblestone CONTROLS {}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 saw3085bedREFUSED/bed1retained/floor66COBBLE/doorsCLOSED. Possibleclickdeltaignored→lookfacesSOUTH (unproved); changednormalplacement option explicitlookEAST yaw=-PI/2 then _placeBlockWithOptions(ref,UP,{forceLook:false}) preservesEastorientation. Check
+p4: bothcellsafter. P4remainsFRONT6.355,82.413 clearbothbed; no P4writes. Deadline22:52:42 ~40s.
+p1: P1_COAL_BANK_ACTUAL NET+2 lower0→2 OWN0 afterCLOSE RELEASEBANK_P3; JOINToperationCLOSED P3BEDrestored/full66, P2food4actualheal, P1KITretained20HP. No boatlease/trial; untestedboatinputnotmobilityclaim.
+--- p2 now: (8.7, 60, 84.6) in overworld, health 20/20, food 17/20, alive

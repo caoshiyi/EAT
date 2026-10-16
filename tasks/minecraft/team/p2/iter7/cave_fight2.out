@@ -1,0 +1,44 @@
+program #2660 on p2: 3.4 s
+--- output ---
+TARGETS [
+  [
+    4802,
+    Vec3 { x: 95.62867681779292, y: 25, z: 131.50780351431177 },
+    Vec3 { x: 75, y: 27, z: 116 }
+  ],
+  [
+    1798,
+    Vec3 { x: 84.30000001192093, y: 26, z: 80.30000001192093 },
+    undefined
+  ]
+]
+SELECTED 1798 Vec3 { x: 84.30000001192093, y: 26, z: 80.30000001192093 }
+ANGER 1798 [ true, true ]
+FIGHT 1798 Vec3 { x: 84.30000001192093, y: 26, z: 80.30000001192093 } 20
+ISSUE TARGET_LEFT_LEVEL 16
+CAP_INTENT Vec3 { x: 75, y: 27, z: 114 } andesite
+CAP_ACTUAL Vec3 { x: 75, y: 27, z: 114 } andesite
+PEARL_RETAINED 0 0 KILL false HITS 0 LOST false COLLECTED []
+FINAL Vec3 { x: 75.33138873244816, y: 26, z: 115.48243057899388 } 20 18 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'sweet_berries', 6, null ],
+  [ 'rotten_flesh', 2, null ],
+  [ 'spruce_planks', 1, null ],
+  [ 'iron_ingot', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 41 ],
+  [ 'andesite', 7, null ],
+  [ 'dirt', 4, null ],
+  [ 'diorite', 1, null ],
+  [ 'stone_pickaxe', 1, 49 ],
+  [ 'stone_axe', 1, 6 ],
+  [ 'granite', 8, null ],
+  [ 'stone_pickaxe', 1, 2 ],
+  [ 'cobblestone', 30, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p3 was slain by Zombie
+--- p2 now: (75.3, 26, 115.5) in overworld, health 20/20, food 18/20, alive

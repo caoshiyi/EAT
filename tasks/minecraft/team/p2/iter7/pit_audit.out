@@ -1,0 +1,48 @@
+program #2817 on p2: 0.3 s
+--- output ---
+ACTUAL_FACES [
+  [ Vec3 { x: 33, y: 65, z: 103 }, 'stone', 'block' ],
+  [ Vec3 { x: 33, y: 68, z: 103 }, 'grass_block', 'block' ],
+  [ Vec3 { x: 34, y: 66, z: 103 }, 'dirt', 'block' ],
+  [ Vec3 { x: 34, y: 67, z: 103 }, 'dirt', 'block' ],
+  [ Vec3 { x: 32, y: 66, z: 103 }, 'dirt', 'block' ],
+  [ Vec3 { x: 32, y: 67, z: 103 }, 'air', 'empty' ],
+  [ Vec3 { x: 33, y: 66, z: 104 }, 'dirt', 'block' ],
+  [ Vec3 { x: 33, y: 67, z: 104 }, 'air', 'empty' ],
+  [ Vec3 { x: 33, y: 66, z: 102 }, 'dirt', 'block' ],
+  [ Vec3 { x: 33, y: 67, z: 102 }, 'granite', 'block' ]
+]
+MISSING_FACE Vec3 { x: 32, y: 67, z: 103 } air
+CAP_INTENT Vec3 { x: 32, y: 67, z: 103 } granite
+CAP_ACTUAL Vec3 { x: 32, y: 67, z: 103 } granite
+MISSING_FACE Vec3 { x: 33, y: 67, z: 104 } air
+CAP_INTENT Vec3 { x: 33, y: 67, z: 104 } granite
+CAP_ACTUAL Vec3 { x: 33, y: 67, z: 104 } granite
+AFTER_PATCH true
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 33.49951173674955, y: 66, z: 103.32578171177138 } 15.765745162963867 15 FULL true LOST false KIT [
+  [ 'torch', 4, null ],
+  [ 'spruce_planks', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stick', 2, null ],
+  [ 'stone_axe', 1, 0 ],
+  [ 'iron_ingot', 1, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'stone_axe', 1, 19 ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_pickaxe', 1, 71 ],
+  [ 'stone_pickaxe', 1, 56 ],
+  [ 'granite', 4, null ],
+  [ 'stone_pickaxe', 1, 4 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P2 concrete donation proposal after your FOOD6 receipt: keep doors CLOSED; P3 steps aside, P4 moves inside front as recipient. Test ONE GRANITE inward, then donate ONE stone pick with >=100 uses remaining and IRON1 for my shield. Toss one item then retreat
+p4:  north to prevent repick; verify my actual gains. This funds P4 rods5 with proper tools/food/24 dirt and a built fallback, replacing failed hand mining. No chest writes by P4. P3 keeps door ownership; your pearl work resumes after bounded handoff.
+p3: P1 TRAVEL2809 ACTUALyourcollectwater11933/boat11954/FOOD4 stack11963; freshstatuswater1/boat1/berries4->8 retained20HP. Istartedoriginal4 beforeyournewrequest6, TOPUP2 NOWsameclosedpath tocomplete6 (bank9->7 leavesP2reserved6). ThenallkitCLOSED/frontreleas
+p3: ed, Eye11654prioritybefore21:51:40. P2 keepdefendedapproach; P1currentlythresholdreceiver so doNOToverlap; P3willtoss6whenactualP1clears.
+p1: P3 actualtravelbundle0received atthreshold/HP20, notsuccess. Eye11654expires~21:51:40 in<2min; ILEAVENOW recoverEyeviaN6,79/E10,79/S10,94->8,94 thenRETURNsameCLOSEDthreshold withphysicalheartbeat. Abort/rollbackUNSENTkit ifmybodyaway; acceptedFOOD4 (not6) 
+p1: leaves9bank/P26. P3soleCHEST/doorsCLOSED; no newaperture. P4 renewedRodproposalACK nameddependency, P2sparepick/iron/axe support accepted, no firstEyeobservergate.
+p1: P1_EYE_RECOVERED_ACTUAL carry1 HP20 at(8.5, 67, 94.50000017616833) continuousNEWlife; returnclosedthresholdforoptionaltravelkit.
+--- p2 now: (33.5, 66, 103.3) in overworld, health 15.8/20, food 15/20, alive

@@ -1,0 +1,18 @@
+program #2680 on p1: 0.4 s
+--- output ---
+RECLAIM_CUBE_REMAINING_ROCK 6665 25.49723952098853
+RECLAIM_CUBE_REMAINING_ROCK 6666 25.133358400494327
+RECLAIM_CUBE_REMAINING_ROCK 6803 29.86449701106802
+RECLAIM_CUBE_BELOW 7000 46.5189215479328
+RECLAIM_CUBE_BELOW 7114 45.04397062535715
+RECLAIM_CUBE_BELOW 7162 31.826621581863158
+ISSUE RECLAIM_RANGE_FOE 6594:magma_cube
+SHIELD_STEP (-120, 63, -180) 20 3
+SHELL_ACTUAL (-120, 63, -180) 20 3
+ROUTE_RESULT {"issue":"RECLAIM_RANGE_FOE 6594:magma_cube","current":[-120,63,-180],"steps":0}
+FINAL {"p":{"x":-119.53154358252694,"y":63,"z":-179.5527261955087},"hp":20,"food":19,"dead":false,"lost":false,"adopted":true,"full":true,"mats":3,"kit":[["quartz",3,null],["cobblestone_slab",2,null],["blaze_rod",1,null],["gold_nugget",5,null],["sweet_berries",3,null],["stone_axe",1,47],["rotten_flesh",3,null],["blackstone",3,null],["stone_pickaxe",1,130],["iron_pickaxe",1,174],["red_mushroom",2,null]],"built":[],"trace":[[-120,63,-180]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-119.5, 63, -179.6) in the_nether, health 20/20, food 19/20, alive

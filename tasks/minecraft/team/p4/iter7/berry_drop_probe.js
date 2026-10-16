@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');console.log('CROPS',[94,95,97,98,99].map(z=>[z,bot.blockAt(new Vec3(1,66,z))?.getProperties()]));console.log('DROPS',Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<24).map(e=>[e.id,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count,e.position]));

@@ -1,0 +1,18 @@
+program #2824 on p1: 26.9 s
+--- output ---
+TRAVEL_PROGRESS Vec3 { x: 10.499761855716036, y: 66, z: 100.30265682596423 } 20 20 remain 2111.921022199331
+TRAVEL_PROGRESS Vec3 { x: 24.580792753991506, y: 64, z: 120.24152716352769 } 20 20 remain 2091.171056599566
+TRAVEL_PROGRESS Vec3 { x: 28.321489568755293, y: 63, z: 132.5 } 20 20 remain 2078.7211856753643
+TRAVEL_ISSUE NO_ACTUAL_PROGRESS
+TRAVEL_FINAL {"p":{"x":28.321489568755293,"y":63,"z":132.5},"hp":20,"food":20,"lost":false,"accepted":false,"grounded":true,"eye":1,"powder":1,"water":1,"kit":[["sweet_berries",10,null],["red_mushroom",2,null],["spruce_planks",1,null],["basalt",1,null],["snowball",16,null],["snowball",10,null],["blaze_powder",1,null],["spruce_boat",1,null],["ender_eye",1,null],["stone_pickaxe",1,130],["cobblestone_slab",2,null],["netherrack",2,null],["rotten_flesh",3,null],["iron_pickaxe",1,208],["stone_axe",1,61],["quartz",3,null],["water_bucket",1,null],["gold_nugget",5,null]],"foes":[]}
+IDLE_DEFENSE_INSTALLED 1792187736830
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 ACK FRESH21:51:57 status EYE1/WATER1/BOAT1/BERRIES10/20HP confirmsALLtravel+EyeCLOSED, no duplicatekitneeded. YourbodySTILL6.5,67,81.5 untildeparture; correctionmy21:51:33 frontclearannouncementusedolder10,92 position andwasSTALE afteryourreturn. P2 rem
+p3: ainsprotected untilactualP1clear; sourcecompeting-player veto protectsfood. P1 secondbearing usefulifLATERALLYoffset firstray (exactalong-ray flightcollinear), gridcandidateNOTphysicalproof; no observergate. P4inwardkitphaseafterP2foodsourceACK.
+p4: P1 current shared-interface blocker: P3 confirms Eye1+travel kit COMPLETE, but your body still occupies threshold6,81.5, so P2 FOOD6 and P4 fast-tool handoff cannot proceed. Please clear this actual pickup area by >=3m under your defense now, before longer
+p4:  navigation planning; no door change needed. This immediately releases both acquisition dependencies. P4 remains inside aside, no competing pickup.
+p3: P1 practicalfrontrelease NOW helpsnextteamop: allkit/Eyealreadyretained, currentyouSTILL6.5,67,81.5. ThisblocksP2FOOD6→P4RODtoolhandoff. PleaseexecuteSHORTguarded N6,79 thenE10,79 (yourtestedEyeapproachroute), confirmACTUALclear BEFORElongtravelplanning; n
+p3: o doorwrite/no newreadywait. P3keepsCAMPclosed/P2foodreserved, P4aside. We willnotinferreleasefromfuture-intentchat.
+--- p1 now: (28.3, 63, 132.5) in overworld, health 20/20, food 20/20, alive

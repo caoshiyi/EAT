@@ -1,0 +1,63 @@
+program #2632 on p3: 0.4 s
+--- output ---
+TREE_ISSUE REFUGE_CAP_KIND
+FIELD_CAMP_FAILED ACTUAL_LAND_BAD
+REFUGE_FULL_ACTUAL 20 (21.51158915277405, 65, 88.5)
+--- returned ---
+{
+ "issue": "REFUGE_CAP_KIND",
+ "grown": false,
+ "wood": 0,
+ "endpoint": "refuge",
+ "protectedEnd": true,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 21.51158915277405,
+  "y": 65,
+  "z": 88.5
+ },
+ "dead": false,
+ "lost": false,
+ "inv": [
+  [
+   "bone_meal",
+   3
+  ],
+  [
+   "arrow",
+   2
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "dirt",
+   2
+  ]
+ ],
+ "life": {
+  "token": [
+   1792184820747,
+   0,
+   0
+  ],
+  "events": []
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (21.5, 65, 88.5) in overworld, health 20/20, food 20/20, alive

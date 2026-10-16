@@ -1,0 +1,33 @@
+program #2922 on p1: 0 s
+--- output ---
+PRE Vec3 { x: 6.620088515947556, y: 67, z: 82.63899281771587 } {
+  powered: false,
+  open: false,
+  hinge: 'left',
+  half: 'lower',
+  facing: 'north'
+} {
+  powered: false,
+  open: false,
+  hinge: 'left',
+  half: 'upper',
+  facing: 'north'
+}
+POST Vec3 { x: 6.620088515947556, y: 67, z: 82.63899281771587 } 20 {
+  powered: false,
+  open: false,
+  hinge: 'left',
+  half: 'lower',
+  facing: 'north'
+} {
+  powered: false,
+  open: false,
+  hinge: 'left',
+  half: 'upper',
+  facing: 'north'
+}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (6.6, 67, 82.6) in overworld, health 20/20, food 20/20, alive

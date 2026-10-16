@@ -1,0 +1,8 @@
+# Future fight method evidence (NOT world proof)
+Public vanilla-derived source fetched21:14UTC:
+https://raw.githubusercontent.com/mahtomedi/minecraft/main/src/main/java/net/minecraft/world/entity/boss/enderdragon/EnderDragon.java
+Stored EnderDragon_public.java. Branch version not independently pinned to1.20.4, so verify real health/phase/hit ACK before scaling.
+- Constructor parts head/neck/body/tails/wings. hurt(DamageSource,float) delegates to hurt(body,...), server side. Thus normal bot.attack(dragon actual entity) can plausibly damage BODY; no synthetic multipart IDs needed. Non-head damage becomes damage/4+min(damage,1). Stoneaxe9 charged body≈3.25 if accepted, ~62hits for200HP; verify actual metadatahealthdelta/entityHurt, not attack dispatch.
+- Known survival method: snowballs destroy End crystals on hit; two iron-bar cages need actual access/trajectory. P3 optionalwoodshovel+snowstock requested AFTER stablecamp/food, neverEye gate. Test one projectile/one actual crystal destruction beforebulkshooting. Projectile speed/drag/aim unqualified; use actual trajectories.
+- Perched dragon offers melee opportunity. Flight/head positions/metadata phases require actual scan; do not assume exposed phase means landed or reachable. Shield/food/water/solidcover needed against incidental damage; persistent fire can continue after a full shell (our2520), assess retainedbody afterending.
+- Stronghold Eye ray points toward start stairs, not guaranteed portalroom. Two sufficiently separated observations can propose intersection; bearings.py pure smoke passed. Actual stronghold/portal/End/dragon only evalworld evidence.

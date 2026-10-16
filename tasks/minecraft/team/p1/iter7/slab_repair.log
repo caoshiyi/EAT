@@ -1,0 +1,20 @@
+program #2720 on p1: 0.6 s
+--- output ---
+SLAB_FIRST_ACTUAL cobblestone_slab { waterlogged: false, type: 'bottom' } [ 1 ]
+DOUBLE_SLAB_ACTUAL { waterlogged: false, type: 'double' } [ [ 0, 0, 0, 1, 1, 1 ] ] full true remaining []
+SLAB_FINAL Vec3 { x: -100.55272436676258, y: 63, z: -161.4884783421436 } 20 false [
+  [ 'quartz', 3 ],
+  [ 'blaze_rod', 1 ],
+  [ 'gold_nugget', 5 ],
+  [ 'sweet_berries', 3 ],
+  [ 'stone_axe', 1 ],
+  [ 'rotten_flesh', 3 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'red_mushroom', 2 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-100.6, 63, -161.5) in the_nether, health 20/20, food 19/20, alive
