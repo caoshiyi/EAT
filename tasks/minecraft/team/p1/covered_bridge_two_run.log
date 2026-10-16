@@ -1,0 +1,41 @@
+program #1511 on p1: 17.8 s
+--- output ---
+COVERED_STEP (-68, 63, -141) (-67.33229118175082, 63, -140.5) 20
+COLD_BLOCK_PLACED (-69, 62, -141)
+COLD_BLOCK_PLACED (-69, 62, -142)
+COLD_BLOCK_PLACED (-69, 63, -142)
+COLD_BLOCK_PLACED (-69, 64, -142)
+COLD_BLOCK_PLACED (-69, 65, -141)
+COVERED_STEP (-69, 63, -141) (-68.5, 63, -140.5) 20
+COLD_BLOCK_PLACED (-70, 62, -141)
+COLD_BLOCK_PLACED (-70, 62, -142)
+COLD_BLOCK_PLACED (-70, 63, -142)
+COLD_BLOCK_PLACED (-70, 64, -142)
+COLD_BLOCK_PLACED (-70, 62, -140)
+COLD_BLOCK_PLACED (-70, 63, -140)
+COLD_BLOCK_PLACED (-70, 64, -140)
+COLD_BLOCK_PLACED (-70, 65, -141)
+COVERED_STEP (-70, 63, -141) (-69.33229118175082, 63, -140.5) 20
+COLD_BLOCK_PLACED (-71, 62, -141)
+COLD_BLOCK_PLACED (-71, 63, -141)
+COLD_BLOCK_PLACED (-71, 64, -141)
+NEW_COVERED_CORRIDOR_VERIFIED {"walked":[[-67,63,-141],[-68,63,-141],[-69,63,-141],[-70,63,-141]],"endcap":[-71,63,-141],"built":[[-69,62,-141],[-69,62,-142],[-69,63,-142],[-69,64,-142],[-69,65,-141],[-70,62,-141],[-70,62,-142],[-70,63,-142],[-70,64,-142],[-70,62,-140],[-70,63,-140],[-70,64,-140],[-70,65,-141],[-71,62,-141],[-71,63,-141],[-71,64,-141]]}
+COVERED_STEP (-70, 63, -141) (-69.33229118175082, 63, -140.5) 20
+COVERED_STEP (-69, 63, -141) (-68.5, 63, -140.5) 20
+COVERED_STEP (-68, 63, -141) (-67.66770881824918, 63, -140.5) 20
+COVERED_STEP (-67, 63, -141) (-66.5, 63, -140.5) 20
+COLD_BLOCK_PLACED (-68, 63, -141)
+COLD_BLOCK_PLACED (-68, 64, -141)
+ROOT_RESEALED true (-66.5, 63, -140.5) 20 19 built [[-69,62,-141],[-69,62,-142],[-69,63,-142],[-69,64,-142],[-69,65,-141],[-70,62,-141],[-70,62,-142],[-70,63,-142],[-70,64,-142],[-70,62,-140],[-70,63,-140],[-70,64,-140],[-70,65,-141],[-71,62,-141],[-71,63,-141],[-71,64,-141],[-68,63,-141],[-68,64,-141]]
+FINAL (-66.5, 63, -140.5) the_nether 20 19 dead false trace [
+  [ -67, 63, -141 ],
+  [ -68, 63, -141 ],
+  [ -69, 63, -141 ],
+  [ -70, 63, -141 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Handoff P3.md14:25 truthful: EMPTYsafe20/20, fresh1508 BOTHclosed/Eastsolid/nofoes6m; STEEL1zeroWearBANK. PacketP1usedforTWOnewpicks; finalreturnFAILED/deathpreserved. FuturedeliverypreferrecipientadvanceTWOcells/courieradoptoldsealedroom (proposedP3adapta
+p3: tion), notmandatoryOVbridge return. No newfieldjob.
+--- p1 now: (-66.5, 63, -140.5) in the_nether, health 20/20, food 19/20, alive

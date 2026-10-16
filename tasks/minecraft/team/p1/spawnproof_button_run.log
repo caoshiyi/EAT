@@ -1,0 +1,69 @@
+program #1475 on p1: 5.1 s
+--- output ---
+BUTTON_SPEC empty
+computed output polished_blackstone 4
+CRAFT VERIFIED polished_blackstone before 0 after 4 inventory [
+  [ 'quartz', 3 ],
+  [ 'sweet_berries', 13 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'cobblestone_slab', 2 ],
+  [ 'gold_ingot', 1 ],
+  [ 'polished_blackstone', 4 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'basalt', 62 ],
+  [ 'netherrack', 20 ],
+  [ 'basalt', 64 ],
+  [ 'basalt', 11 ],
+  [ 'basalt', 64 ],
+  [ 'blackstone', 10 ],
+  [ 'stone_axe', 1 ],
+  [ 'gold_nugget', 11 ]
+]
+computed output polished_blackstone_button 1
+CRAFT VERIFIED polished_blackstone_button before 0 after 1 inventory [
+  [ 'quartz', 3 ],
+  [ 'sweet_berries', 13 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'cobblestone_slab', 2 ],
+  [ 'gold_ingot', 1 ],
+  [ 'polished_blackstone_button', 1 ],
+  [ 'polished_blackstone', 3 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'basalt', 62 ],
+  [ 'netherrack', 20 ],
+  [ 'basalt', 64 ],
+  [ 'basalt', 11 ],
+  [ 'basalt', 64 ],
+  [ 'blackstone', 10 ],
+  [ 'stone_axe', 1 ],
+  [ 'gold_nugget', 11 ]
+]
+BUTTON_WORLD_VERIFIED polished_blackstone_button { powered: false, facing: 'south', face: 'floor' } (-48.5, 63, -140.5) 20 19
+POST_INV [
+  [ 'quartz', 3 ],
+  [ 'sweet_berries', 13 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'cobblestone_slab', 2 ],
+  [ 'gold_ingot', 1 ],
+  [ 'basalt', 64 ],
+  [ 'polished_blackstone', 3 ],
+  [ 'iron_pickaxe', 1 ],
+  [ 'basalt', 62 ],
+  [ 'netherrack', 20 ],
+  [ 'basalt', 64 ],
+  [ 'basalt', 11 ],
+  [ 'blackstone', 10 ],
+  [ 'stone_axe', 1 ],
+  [ 'gold_nugget', 11 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 packetpathREAD205nodes/fixed-49 verified. Changedwoodmethod ONE45sSAFEinside watcher -> immediate2logworker onactual14mclear window (no agentlatency). Never600s wait;120cap reservesreturn. Ifblocked, acceptedoldTABLE/4sticks/spare118packet remains, fres
+p3: hARM onlyaftercodeREADY.
+p3: P1 WOODfinalactual1LOG (initialaccept0 butreturnpicked1), nowNEWtable1CRAFTED +4sticks held; NOoldtabletouchneeded. Giftstone13preserved>=100 remaining: useOLD106 pickuntil8reserve, thenbestonlywhilewear<31. Packet205routecodepreparingNOW; no indefinitewoo
+p3: dwait.
+p3: P3_CODE_READY_PACKET_V1 prepCOMPLETE. ACTUALNEWtable1 +4sticks +bestSTONE>=100preserved (OLDpickusedfirstuntil8reserve). NOoldTABLEtouch. Path205dataREAD; exacttokenssource-tested +syntaxPASS. Starting580scourier insidefreshARM60s now; receiver360s enougho
+p3: utbound~170s.
+p3: P3_CODE_READY_PACKET_V1
+--- p1 now: (-48.5, 63, -140.5) in the_nether, health 20/20, food 19/20, alive

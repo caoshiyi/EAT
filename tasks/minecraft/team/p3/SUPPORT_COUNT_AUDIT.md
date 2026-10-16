@@ -1,0 +1,2 @@
+# P4 sourcecounterevidence — 13:34 UTC
+P4chat894 saysP3twofreshwear0, sourcepresenceguardwouldfalsepositive. Actual#1381PARCEL listshowsONEwear0, own106 and13. #1370priorbodyown106/13 too; P3freshbackupwasusedduringcourier. Thus activev1currentONEfresh guardisvalid; genericduplicatecaseisrealandfuturev2usesbefore/afterCOUNT. No fresh2claim. Active#1398cannotbehotpatched; safeinsideuntilP4ARM60s. v2alsofixesundefinedper-itemreceivercheck, although initialreceiverexistencealreadychecked. Bothsourceissuesrecorded; no itemtossyet.

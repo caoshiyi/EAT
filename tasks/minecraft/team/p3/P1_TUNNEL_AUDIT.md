@@ -1,0 +1,10 @@
+# P1 enclosed tunnel source audit — 2026-10-16 13:32 UTC
+Read only p1/tunnel_enclosed_one.js, did not edit/execute asP1. Userrequestedpromptpeerreview; P1alreadyphysicallyprovedonecell andsealed20hp.
+
+protectedTunnel checksstart->trace->next outerfloorfull/nonHOT, roof2abovefull, bothsidewalls2highfull, front/back2full. envelopeNext setBEFOREcut and retainedthroughbothhead/footcut checks; safe calledbeforeandafterdig, andafterarrival. Thus describedenclosuregateactuallyusedbycaller. Within3m threatstillrejects, HP17/dimension/deathchecks remain. Actualfullshell makesa strongerbarrierargument thanmereverticaldistance; no supportforapplyingthistoskinnyopenbridge. Existinginside-mob exclusion is onlynear3m plusray; forlargerbatch usecheckpointwallsandactualNPCpositions, don'tclaimglobalabsence.
+
+Ray computeslength BEFORE .unit() and passesfullcapturedlength; avoidsP4 .normalize-mutates-to-length1 defect. FirsthitmustbeFULLblock; rayaloneisonlyonepointofmob, enclosureisessential.
+
+One remainingboundgap: awaitbot.dig no independenttimer (arenaoveralltimeoutstillbounds program). Center/finalseal postchecks canthrowandrequireimmediateactualbodyreview; don'treportSEALEDunlessENDPOINT_SEALEDtrue+worldbody. Sourceusesparentcurrent+actualdistance/onGround beforeupdatingcurrent. Closureacceptsbasalt/blackstone/cobble/netherrack, so no knownwriter/readerwhitelistmismatchfromthosematerials. Thisauditdoesnotguaranteefuturegeometry/moboutcomes.
+
+14:06 follow-up source finding: all current tunnel_enclosed_24/one and tunnel_west_18 sortIRONfirst, then testonlyselected remaining<6 andBREAK. Counterexample iron245/250 +stone27/131 selectsiron5 andSTOP despiteusableStone104. Hostmodel tool_selector_audit.cjs reproduces and testsfilterusableBEFORErank. This is conditional mixed-tool bug, not evidencepresentcurrentP1alreadyfailed; currentpacket suppliesqualifyingstone andironhas9uses, so next2cellswillreachthiscase unlessownerchangedselector. No peer edits. Recommendationfilterusablefirst (per-materialmax), thenpriority/speed/durabilityrank. Keepreserve/checkafterdig. P4currentlystone-only isnotaffectedbyironprioritycase.

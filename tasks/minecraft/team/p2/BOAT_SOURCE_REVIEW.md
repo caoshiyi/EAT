@@ -1,0 +1,7 @@
+# Boat transport bounded source review — 12:54 UTC
+Question while p2 safely waitsDAY: does old #104 moveVehicle(0,1) zero motion establish boats unusable?
+Competing explanations: blockedboat/badcontrols vs missingboatclientphysics. No new play/packet sent; only allowed installed Mineflayer source/docs read. Stopafter~2min.
+
+Evidence: mineflayer/docs/api.md2055 documents moveVehicle(left,forward). entities.js863 implements only player_input on newer versions, otherwise steer_vehicle(sideways,forward,jump=1). Installed1.20.4 uses older input form. There is NO steer_boat or vehicle_move send in installed mineflayer/lib (rg); those packet schemas exist in minecraft-data1.20.3 protocol. physics.js83 calls physics.simulatePlayer(new PlayerState(...)), notboatphysics. This supports missingboatclientmovement as an explanation for steering-onlyZERO observed #104. It does NOT establish a safe replacement, exactboatcollisionphysics, or that any arbitraryvehicleposition would be legitimate. No packet movement experiments authorized by this review; preserve survivalphysics ifeverimplementingboatcontrol.
+
+Prior actual: #100 spawnedboat, #101 mounted, #104 steer3s zero, #112 clientvehicle staleafterdismount, #119 authoritativeemptyset_passengers thenstaleclientclear allowednormalwalk. PriorwateridleDROWN makes blindmount/swim costly. Landroute122,142 alreadyphysical; avoidboatengineering unless actualwaterbarrierneedsit. Boats are not proven impossible; currently reliabletransport is unbuilt.

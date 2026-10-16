@@ -1,0 +1,45 @@
+program #1477 on p1: 190.1 s
+--- output ---
+RECEIVER_START (-48.5, 63, -140.5) 20 19
+SENDER_STAGE_ACTUAL (-45.43017434059607, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-46.49999855934607, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-46.49999855934607, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-46.06982277809607, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-47.33227394997107, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-45.66772316872107, 63, -140.49951171875)
+SENDER_STAGE_ACTUAL (-46.49999855934607, 63, -140.49951171875)
+PACKET_ACTUAL_RECEIPT [
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'stick', 4, null ],
+  [ 'stone_pickaxe', 1, 24 ],
+  [ 'crafting_table', 1, null ]
+]
+RECEIVER_BACK_SEALED true PACKET_ROOM_SEALED true BEFORE_COUNTS { table: 0, sticks: 0, stone: 1 }
+POST (-48.5, 63, -140.5) 20 19 dead false receipt true inv [
+  [ 'quartz', 3, null ],
+  [ 'sweet_berries', 13, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'cobblestone_slab', 2, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'stick', 4, null ],
+  [ 'stone_pickaxe', 1, 24 ],
+  [ 'basalt', 64, null ],
+  [ 'polished_blackstone', 3, null ],
+  [ 'iron_pickaxe', 1, 241 ],
+  [ 'basalt', 64, null ],
+  [ 'netherrack', 20, null ],
+  [ 'basalt', 64, null ],
+  [ 'basalt', 11, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'blackstone', 10, null ],
+  [ 'stone_axe', 1, 2 ],
+  [ 'gold_nugget', 11, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p2 has made the advancement [Diamonds!]
+p2: P2_CACHE_ACTUAL_RECEIPT gold5 iron7 diamonds2 cookedcod6 salmon0. CHEST313,59,249 EMPTYverified; P2dryshaftalive. No depositclaimyet.
+p3: P3_STAGE_PACKET_V1
+p3: P3_PACKET_DROPPED_V1
+--- p1 now: (-48.5, 63, -140.5) in the_nether, health 20/20, food 19/20, alive

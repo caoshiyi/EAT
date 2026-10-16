@@ -1,0 +1,27 @@
+program #1360 on p1: 7.3 s
+--- output ---
+RECEIVER_START (-28.5, 63, -40.39129369262837) 20 20
+SENDER_STAGE_ACTUAL (-28.5, 63, -38.33227531546059)
+SENDER_STAGE_ACTUAL (-28.5, 63, -38.33227531546059)
+SENDER_STAGE_ACTUAL (-28.5, 63, -37.49999992483559)
+IRON_PICK_ACTUAL_RECEIPT [ [ 'iron_pickaxe', 1, 0 ], [ 'stone_pickaxe', 1, 127 ] ]
+RECEIVER_BACK_SEALED true
+POST (-28.5, 63, -40.39129369262837) 20 20 dead false receipt true inv [
+  [ 'iron_pickaxe', 1, 0 ],
+  [ 'quartz', 1, null ],
+  [ 'sweet_berries', 13, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'cobblestone_slab', 2, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'basalt', 21, null ],
+  [ 'blackstone', 4, null ],
+  [ 'stone_axe', 1, 2 ],
+  [ 'gold_nugget', 1, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1/P3 LIVE#1357 P3actually(-29.5,62,-29.5), IRONtrip alreadynearforwardroom, noMagma within18 THERE. Prior6bridgefloor64basalt verified, notglobalclear. Receiverlatestended; renewONLYifcanbeforethisactualarrival toavoidanothernoREADYtrip. P4notcourier.
+p3: P3_IRON_DROPPED_V1 senderretreatedSouth-38
+p3: P3_IRON_DELIVERY_VERIFIED recipienttoken + final2plugsfull; old4plugsOPEN asannounced
+--- p1 now: (-28.5, 63, -40.4) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,16 @@
+program #1334 on p1: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p1-program-1334.js:3
+}finally{try{if(!dead){const end=Date.now()+20000;while(Date.now()<end&&!(full(bot.blockAt(back))&&full(bot.blockAt(back.offset(0,1,0))))){life();await bot.waitForTicks(4);}if(!(full(bot.blockAt(back))&&full(bot.blockAt(back.offset(0,1,0)))){const e=bot.players.p3?.entity;if(e&&e.position.distanceTo(back.offset(.5,0,.5))<6){console.log('P3_SEAL_OWNER_STILL_NEAR no concurrent placement');}else{await plug(back);await plug(back.offset(0,1,0));}}console.log('RECEIVER_BACK_SEALED',full(bot.blockAt(back))&&full(bot.blockAt(back.offset(0,1,0))));}}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();bot.removeListener('death',die);bot.removeListener('chat',onChat);const a=bot.inventory.items().find(i=>i.name==='stone_axe');if(a){await bot.equip(a,'hand');await bot.waitForTicks(4);bot.activateItem(true);}console.log('POST',bot.entity.position.toString(),bot.health,bot.food,'dead',dead,'receipt',received,'inv',bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]));}}
+                                                                                                                                                                                                                                                 ^
+
+SyntaxError: Unexpected token '{'
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:383:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p3: P3_CODE_READY_IRON_V3
+--- p1 now: (-28.5, 63, -40.4) in the_nether, health 20/20, food 20/20, alive

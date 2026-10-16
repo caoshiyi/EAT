@@ -1,0 +1,44 @@
+program #1405 on p1: 11.8 s
+--- output ---
+ENCLOSED_MOB_AUDIT {"id":4620,"name":"magma_cube","pos":"(-22.260099977254868, 71, -62.080438958007036)","distance":11.948357199855867,"rayLength":11.542427811138671,"firstBlock":["(-29, 65, -69)","nether_gold_ore"],"envelopeFull":true}
+ENCLOSED_MOB_AUDIT {"id":7182,"name":"magma_cube","pos":"(-21.803000886308062, 72, -66.02396890962441)","distance":11.465340106469387,"rayLength":10.985373173316205,"firstBlock":["(-29, 65, -69)","nether_gold_ore"],"envelopeFull":true}
+DRY_CUT (-30, 64, -69) nether_gold_ore air
+DRY_CUT (-30, 63, -69) basalt air
+ACTUAL_TUNNEL_STEP (-30, 63, -69) (-29.327430377047076, 63, -68.48110786602109) 20 20
+DRY_CUT (-31, 64, -69) basalt air
+DRY_CUT (-31, 63, -69) basalt air
+ACTUAL_TUNNEL_STEP (-31, 63, -69) (-30.5, 63, -68.4900870472521) 20 20
+ENDPOINT_SEALED true (-31, 63, -69) [["(-32, 63, -69)","basalt"],["(-32, 64, -69)","blackstone"],["(-30, 63, -69)","basalt"],["(-30, 64, -69)","basalt"],["(-31, 63, -70)","basalt"],["(-31, 64, -70)","blackstone"],["(-31, 63, -68)","basalt"],["(-31, 64, -68)","basalt"]]
+LOADED_RESOURCE nether_bricks []
+LOADED_RESOURCE spawner []
+LOADED_RESOURCE nether_wart []
+LOADED_RESOURCE warped_nylium []
+LOADED_RESOURCE nether_gold_ore [
+  '(-30, 64, -70)',
+  '(-30, 65, -69)',
+  '(-30, 65, -70)',
+  '(-29, 64, -70)',
+  '(-29, 65, -69)',
+  '(-29, 65, -70)',
+  '(-29, 66, -68)',
+  '(-29, 54, -82)'
+]
+LOADED_BIOMES {"basalt_deltas":{"p":[-31,63,-69],"distance":0},"soul_sand_valley":{"p":[17,63,-69],"distance":48}}
+POST (-30.5, 63, -68.4900870472521) 20 20 dead false current (-31, 63, -69) INV [
+  [ 'quartz', 3, null ],
+  [ 'sweet_berries', 13, null ],
+  [ 'iron_pickaxe', 1, 61 ],
+  [ 'basalt', 3, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'cobblestone_slab', 2, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'basalt', 64, null ],
+  [ 'blackstone', 4, null ],
+  [ 'stone_axe', 1, 2 ],
+  [ 'gold_nugget', 11, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-30.5, 63, -68.5) in the_nether, health 20/20, food 20/20, alive

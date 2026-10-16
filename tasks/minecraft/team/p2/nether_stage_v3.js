@@ -27,7 +27,7 @@ function topology(origin,radius=20,cap=2000){
 }
 
 let lost=false,expect=false,phase='camp';const dead=()=>{lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates()},resp=()=>{if(!expect)dead()};bot.on('death',dead);bot.on('respawn',resp);const life=()=>{if(lost||bot.health<=0)throw Error('LIFE DISCONTINUITY')};
-const hot=new Set(['magma_block','fire','soul_fire','lava']);function foes(r){return Object.values(bot.entities).filter(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<r)}
+const hot=new Set(['magma_block','fire','soul_fire','lava']);function foes(r){return Object.values(bot.entities).filter(e=>(e.type==='hostile'||e.kind==='Hostile mobs'||['piglin','piglin_brute','hoglin','zoglin'].includes(e.name))&&e.position.distanceTo(bot.entity.position)<r)}
 let m=new Movements(bot);m.canDig=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;m.infiniteLiquidDropdownDistance=false;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1200;
 async function go(x,y,z,ms=4000){life();let t;const g=new goals.GoalBlock(x,y,z);try{await Promise.race([bot.pathfinder.goto(g),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('NAV BOUND'))},ms))]);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4)}life();if(!g.isEnd(bot.entity.position.floored()))throw Error('NO ACTUAL ARRIVAL '+[x,y,z]);}
 function dry(q,portal=false){const f=bot.blockAt(q.offset(0,-1,0)),a=bot.blockAt(q),h=bot.blockAt(q.offset(0,1,0));return f?.boundingBox==='block'&&!hot.has(f.name)&&a?.boundingBox==='empty'&&h?.boundingBox==='empty'&&!hot.has(a.name)&&!hot.has(h.name)&&(portal||a.name!=='nether_portal');}

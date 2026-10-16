@@ -1,0 +1,18 @@
+# Token usage evidence — 2026-10-16 12:40 UTC
+No permitted session-history usage data has been supplied or identified. Token usage is **unavailable**, not zero. No .work/server paths accessed. Git log supplies genuine identifiers e3afe29b and9627a82e (iteration2 summary), but no token measurement tied to either; no usage attribution is made. Model context budgets and git cost=$0.0 labels are not measured token consumption. Will update only if permitted actual usage evidence becomes available.
+
+## Permitted session summary data found — 2026-10-16 approximately12:41 UTC
+Read only `agent_team/iter_1/*_output.json` and `agent_team/iter_2/*_output.json`, outside prohibited locations. Method: take explicit `usage.input_tokens`, `cached_input_tokens`, `output_tokens` from completed result wrappers; sum input+output (cached input is a subset, do not add it again); report noncached=input-cached. These are recorded wrapper measurements, not independently reconstructed API billing. Timeout/error wrappers with num_turns0 and all-zero usage indicate missing measurement; they are NOT proof of zero consumption. Missing reviewer outputs also unavailable.
+
+| Genuine supplied commit | Scope with measured data | Input | Cached subset | Noncached input | Output | Input+output |
+|---|---|---:|---:|---:|---:|---:|
+| 68a3d828b685e84dce0e89eae42c1d753e7c3db7 (iter1 summary from git log) | harness_observer only |492440|405120|87320|3625|496065|
+| 9627a82ef6206343a48aef43bdbe4aecf061c248 (iter2 summary from git log) | evidence_coordinator + harness_observer only |26256867|25752064|504803|58049|26314916|
+
+Iter2 coordinator measured input25609945/cached25198464/output54441; observer646922/553600/3608. Iter1 observer492440/405120/3625. Remaining four player wrappers per iteration and coordinator iter1 are error/timeout zero placeholders; all-team totals **unavailable**. Iter3 ongoing usage unavailable. Commit association identifies iteration summary only; it does not claim the commit itself consumed tokens or that these are complete iteration totals. e3afe29b is a real subsequent chat-fix commit with no attributable usage evidence. No cost conversion attempted.
+
+13:51 UTC ongoing checkpoint: current iteration3 measured usage remains unavailable in the permitted result summaries inspected; no iteration3 commit identifier supplied. Prior partial totals above remain the only attributed measurements. No extrapolation from elapsed time/program count/context budget or zero-cost labels. Reviewer has not accessed .work/server files. Current review/output still running, so this is not final session usage.
+
+14:27 UTC checkpoint: permitted `agent_team/iter_3/*_output.json` search returned no matching completed result files. Current measured iteration3 usage remains unavailable; no genuine current commit identifier supplied for attribution. This search did not read `.work` or server files, and a missing result is not zero consumption. Prior measured partial totals and their limitations remain unchanged.
+
+14:37:54 UTC new permitted partial measurement: agent_team/iter_3/capability_engineer_output.json now exists and reports success/completed wrapper, input32,048,068, cached31,290,112, output203,202. Arithmetic: noncached757,956; input+output32,251,270. Cached input is a subset, not added again. This is P3 only, not an iteration/team total. No genuine iteration3 summary commit identifier has been supplied (latest git log still e3afe29b chat-fix), so this measurement remains UNATTRIBUTED to a commit; it is not assigned to e3afe29b or an invented hash. Other current-role usage remains unavailable. Prior missing-result checkpoints were accurate when observed; this later wrapper supersedes only P3 availability.

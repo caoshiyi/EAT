@@ -1,38 +1,14 @@
-# P1 Nether navigation / shelter — live evidence
+# Nether operations — 13:53 UTC
+Current authoritative P1 state: ../P1.md. Actual205node route +permissions: FORWARD_PACKET_ROUTE.json. This file supersedes older NETHER_TO_1458.md.
 
-## Safe room #1033
-Body1.5,65,4.5; fullfloor1,64,4 BASALT; FULLwalls x0/2,y65/66,z4 andx1,y65/66,z3/5; FULLroof1,67,4 COBBLE. Entrance1,65/66,3 plugs. Topfront1,67,3 bottomslab isreferenceonly, canremain. Bottomslabfoundations2,64,4 +1,64,5; west0,64,4 naturalbasalt. DO NOTassumeadjacentfloor: firstbuildfailednoreferenceeast. 9cobble+3slabsbuiltroom. Portal1.543,65,2.5 unmodified. Toexplore, remove2frontplugs, actualrecover2cobbleBEFOREleaving, returnexactbodyroomthenreplaceboth, reverifyall8walls/roof/floor+airhead. StopSEALED, avoidmandatoryOWnightreturns.
+P1 sealed(-49,63,-141), backEAST(-48,63/64,-141), floor62 roof65,20hp19food. IRON241/250; STONE127/131. Holdingfixedendpoint for P3 TABLE/STICKS4/STONEpick packet. No packetreceipt yet. p1/packet_receiver.js prepared/notrunning, actualthreeitemdeltas required. P3sole finalseal owner. OriginalP1table(-30,63,-31) fullWestlowerwall, reclaim+two-wall repair authorized. CampTABLE untouched.
 
-## Walking proof
-P2safe-movements factory adapted in `cubby_walk.js`: no dig/bridge/diagonal/parkour; finalgetNeighbors excludesHOTdestinationFLOOR/feet/head. `blocksToAvoid(MAGMA)` ALONE notenough P2#1041. P1firstgraphmissedHOTfloorcheck (73unsafe nodes), correctedBEFOREmovement#1048 ->50safe nodes.
-#1050 sixphysicalsteps+back+reseal13.6s HP20food20. #1056 FULL21steps+back+reseal32.6s HP20food20. Everyactualstep targetdistance<.65,onGround, fullnonHOTfloor; graphisnotworldproofuntilwalked.
-Pathnodes (#1056 allphysicallyverified bothdirections):
-```
-[1,65,4],[1,65,3],[2,65,3],[3,65,3],[4,65,3],[4,65,2],
-[4,66,1],[3,65,1],[2,65,1],[1,65,1],[0,65,1],[0,65,0],
-[0,66,-1],[0,66,-2],[0,66,-3],[0,66,-4],[0,67,-5],
-[-1,66,-5],[-1,67,-6],[-2,66,-6],[-3,66,-6],[-4,65,-6]
-```
-The NWroute FIRSTgoesEAST to4,66,1 thenaroundportalnorth. BlindGoalXZ(-3,-3) isunavailablecolumn(#917), notproofNWblocked.
+Owned walked path: Northjoin1,65,1 ->NW(0,66,-4),(-4,65,-6) ->carvedN(-4,65,-14) ->zigzagbridges floor64 to(-20,65,-29) ->drop(-20,64,-30) ->orecut(-21,64,-30),(-22,63,-30) ->lowerlandloop y59..63 ->(-29,63,-30), North31..69 ->West2(-31,63,-69) ->North141 ->West18 current49. Do not replayunsupported former(-22,64,-30); goldsupport63mined. Exact nodes inJSON. Pathfeet/head fullplugs authorized toP3 only, preservefloors/roofs/sides. ExtraEastback at-48,63/64,-141 final mustreseal. Lava(-29,64,-71) deliberately capped/bypassed.
 
-## Frontier actual #1056
-Body(-3.5,65,-5.5), footnode(-4,65,-6), nohostiles32 then.
-- NORTH(-4,-7): y64BASALT,65BLACKSTONE,66BASALT,67BASALT,68AIR. Candidatecontrolled2-highdrycut withfloor64retained, side/upfluid+gravitychecksFIRST.
-- WEST(-5,-6): y64..68 ALLAIR -> VOID/no walk.
-- SOUTH(-4,-5): y64..68 ALLAIR -> VOID/no walk.
-- EAST(-3,-6):64BASALT,65BASALT,66..68AIR -> knownreturnfoot66.
-`cubby_dry_cell.js` nextboundedtrial walks21, attemptsONE Ncell onlyifdry/solidfloor/no gravity/nearfluid, logsactualdig+arrival+loot, thenback+reseal. Check latestarenaoutcome, no claimyet.
+P1tunnels: enclosed24North, West18; dynamicactualorigin, fullshell preflight; fullcoldfloor/roof +bothsides +outercaps acrossentiretrace+next; kind/namedmobgate; >=3m mobexception only iffullenvelope+full-lengthrayhitsfullblock. Neverapplyonopenbridge. P4/P3 scopedsourceaudits read and physicalonecell#1385 accepted. Per-dig6s bound. Each12cells checkpoint; actualarrival/onGround; finallyfullshell/HP/dimension. Failurescanstillthrow beforeseal: inspectactualstateimmediately. No unconditionalsafe labels.
 
-## Targets / absence limits
-Gold(-21/-22,64,-30),(-22,63,-30); deeper(-8/-9,48,-30/-31)NOTdirect. Othergold(-18,62,-41),(-30,71,-34),(-27,64,-43),(-33,79,-39).
-Brownmushrooms(-26,60,-27),(-27,61,-28); RED(13,89,-32),(12,89,-33)high24m -> NOTeasyfoodsource.
-No netherbricks96/warped48/crimson48 inloadedchunks fromfrontier; NOTglobalabsence. Basaltfloor, biomenameempty/unreliable.
-P2NetherdeathspiderpushedFIRE8.9,65,2.3. P4#995 NOhit/kill, spiderHP2 near9,65,3.4 thenunchased. P1#1023/#1033/#1040/#1056 freshMOBSnone16/24/32; noSPIDERkillclaim.
+Portal: ORIGINALx1/2,z2 AIR preserved, NEWx3/4,y65..67,z3 active, postsx2/5. OldoffPortal2,65,3 BLOCKEDobsidian; oldeast3/4,65,3 nowportal. NewNorthjoin from4,65,2 manualjump4,66,1 (aimONCE thenpersistentjump+forward), descend3,65,1->2,65,1->1,65,1. OWreturn reverseintoNEW4,65,3 afterverifiedcooldownoffportal2/3,65,1. OldNorthAIR1,65,2 iscoldpath; doNOTreignite withoutP4routecoordination. P4oldcubby1,65,4 frontnowOPEN afterSouthforwardanchor; no currentP1use.
 
-OWgate/front maychangeunderP3: originalfrontfeet67 +GoalBlock6,68,91 hopworked. Newfeet68/GATE6,68,90 wasPLANNEDonly asof#1038, don'tuseuntilP3actualverifiedresult. RearCAP8solids67..70verified#1035. AlwaysfreshworldscanbeforeOWreturn/entry. NewOWcampNOJUMPslab80verified#958/#975; copiedoldjumphelpersSTALE.
+Loadedsearch latestcurrentno fortressbrick/spawner/wart, no chest/bastionblocks/gildedblackstone inloaded160scan. Notglobalabsence. CurrentDelta; Wastes(-129,63,-221)sample113mNW, SoulValley(15,63,-93)80mEast. P4Warpedtargetactualnylium(-15,70,139),stem(-13,70..79,150),Southbridgefloor0,66,z5..43 thenrock/bridgeextension. Do not assumeP4arrival frombiomemap.
 
-## First excavation VERIFIED #1077
-`cubby_dry_cell_v2.js`39.7s20hp19food,22physicalsteps. Newnode **(-4,65,-7)** head66BASALT/foot65BLACKSTONE dug; floor64BASALTretained; ceiling67nongravity; nearbyfluid/firecheckempty. ActuallootBasalt1+Blackstone1, returnedSEALED. NextN(-4,-8):64Basalt65Blackstone66Basalt67Basalt68Basalt. W(-5,-7)VOID64..68; E(-3,-7)64..66Basalt,67..68air. Noore/fortressyet.
-Important closurefix: #1062 recoveredonlyONEplug ->failedtopseal; #1066 top66DOUBLEslab FULLshape repaired. #1077 moveFRONT(1,65,3)+wait20t BEFOREbudgetverification, recovered1cobble+2slabs; closingacceptsBasalt/Blackstone/fullblocks OR2slabmerge. Nowtopplug66BASALTfull, bottom65COBBLE. Oldhelperexpects2COBBLE stale. Genericv2ready.
-`cubby_dry_batch.js` activeMAX4northcells, completepathnotold21cap, currentworldrefresh +reportnextfloor, reverse+reseal. Inspectactualprogrambeforeclaimingadditionalcells.
-OWgateNOWACTUAL #1049 closed6,68,90/newfrontFEET68, leftpost5,67..69,90SAND. OnOWreturn MUSTopen gatebeforewalkingNORTH6,68,89 thenclose; oldfrontfeet67sourceSTALE. ReadP3currentgatehelper/ENTRY80 beforeexitNether.
+History/source failures: Magma type=mob,kind=Hostile mobs; oldhostile-onlyNONEreports incomplete. .normalize mutates Vec3, use.unit pluspreviouslength. Fullhealthcanrespawn: actualdeath/inventory/dimension required. No newP1deaththissession (officialcount10unchanged). Partialparcel#1159 table+berries only, dooritemEast8.24,65,3.37. OldfirstNether/OWhelpers stale andmustnotrunfromcurrentNWbody.

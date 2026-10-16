@@ -1,3 +1,4 @@
+throw Error('RETIRED geometry after new Nether frame at2,65..67,3; old offPortal2,65,3 BLOCKED. Read P4.md and #1267 before adapting.');
 const {Vec3}=require('vec3');
 const m=new Movements(bot);m.canDig=false;m.allowParkour=false;m.maxDropDown=2;m.allow1by1towers=false;m.scafoldingBlocks=[];m.infiniteLiquidDropdownDistance=false;for(const n of ['lava','water'])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1500;let dead=false;const die=()=>dead=true;bot.once('death',die);function alive(){if(dead||bot.health<=0)throw Error('LIFE_DISCONTINUITY')}async function ticks(n){alive();await bot.waitForTicks(n);alive()}
 

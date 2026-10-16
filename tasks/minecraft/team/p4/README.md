@@ -29,3 +29,28 @@ Hazards: Do not use old `dirt.js` (can remove overlapping support and drop into 
 - `entry_step_feedback.js` #771 VERIFIED: jumpANDforwardtogetheruntilz80.35, thenJUMPfalse whileforwardcontinues; inside20hp. Newquarry_lib incorporated. #789 fullreturnalsoentryworked. Re-aimafteranydooractivate becauseactivatingturnsaimbacktowarddoor; P1confirmed independently.
 - `escort_rekit.js` #797 fullfood20, STONEaxeactualcrafted, bankoldwoodaxe+sticks2. Reservefoodreconcileeachtime; doesconsumematerials.
 - `cast_guard.js`: preparedsyntaxcheckedonly, waitsoperationalKITREADYbeforeuse; willannounce60scoverageAFTERactualguardtilearrival. No chase/arrows/eastpool/southknockoffcoverage. No proofyetofnewroundtrip; inspectactualendpoint.
+
+## Iteration 3 validated / limits
+- `door_sender_v1.js` #1160: table1 and berries10 actualrecipientP1, door landed EAST8.242,65,3.368; PARTIAL. FullreceiptACKfalse. P4 roundtrip68.9s campTRUE20/20 no death. Do not rerun three-item toss unchanged.
+- `toss_settle_small.js` #1184: ONE camp BASALT low-value test, aimEAST wait6ticks thenWEST wait6ticks -> actualitemWESTdx-.443. P3autopickup verified by arena inventory. Supports waiting after aim; does NOT prove Nether throw.
+- `spare_sender_v2.js`: ONEfreshpick payload, wait6ticks afteraim, actualrecipienttoken required. #1202 abortedpreflightMagma beforemovement; no physicalhandoff yet. P1nextcourierDAYonly; coordinatefreshARM, don't send whileownerexplores.
+- `clear_portal_cube.js` #1217: ONEaxeswing, actualmagma2191entityDead, no nearbycube after30t, noownhurt andactualclosedOWcamp20hp18food. Immediateblockerremoved, not permanentclear. Savedsource re-raises shield aftergateinteraction; originalrun didnot include this correction.
+- `farm_parcel.js` #1145 harvest10bushes ->berries2to19, body18hp16food inside but strictpostthrew. Immediate `settle_farm.js` #1148 BOTHdoorsclosed/fullXYZ andate2; #1156 full20/20 afterhealing. Damage2 observed, no death. Cause of strictpostfailure unproved; startup/readiness hypothesis reported byP3 independently. Not a damage-free farm claim.
+- `wood_new34.js` #1178 actualBANK3logs (cut4), loanwoodaxe returned,20hp19food30.9s. Source34,y68..71,z90 DEPLETED; don't reuse unchanged.
+- `own_stonepick.js` #1187 actualfreshpick crafted from1log3cobble; bankwoodpick+2planks+2sticks. P1reservedpick remainedbanked atthatpoint. `prepare_spare.js` withdrawsreservedpick ONLYifownfresh+recipientfresh counts2 verified.
+- `northeast_branch.js` #1231 actualroute0,66,-4; NEXTfloor1,65,-4MAGMA, refused, mined0/added0. Returnedcamp20/20deadFALSE59.7s. `northeast_cover_v2.js` changes to raisedcoldfloor atY66 andfeet67; activefirsttrial pending, do not claim capabilityyet.
+- `hazard_filter.js`: sourcefragment combining type/kind/named hazards. ActualMagma typeMOB/kindHostile counterevidence means old hostile-only NONE claims incomplete. Fullcoldfloor/feet/head check and mobgate solve different problems.
+
+## Latest actual state — iteration3 14:36
+Authoritative P4.md TOP overrides old helpers. NEWsealedanchor feet(9,63,80), backWEST(8,63/64,80) full, Southwall9,63/64,81+floor9,62,81, roof9,65,80. Old77South78 OPEN after#1528adoption; cannot use old room as protectedfallback without resealing.
+- `shelf_room_supported.js` #1528 first physical proof: actual12step77->9,63,80, supportfloor-first shelter construction, actual full8walls/roof/floor, HP20food18/deadfalse,26basalt remaining. STRICTOLD77start; DO NOT rerun atnewanchor.
+- `shelf_step_six.js` #1515 actualsixstep prefix+reverse/reseal77; `shelf_step_twelve.js` #1524 actual12+reverse/reseal77. Both strictoldanchor. #1519 stoppedGHAST beforeopening. Neither firsttrialadopted.
+- `shelf_room_twelve.js` #1526 partial2EASTwallblocks thenNOREF, reverse/reseal77healthy. Changed supportfloorfirst resolvedactualfailure #1528.
+- `shelf_occluded_proposal.js` READONLY existingcoldfloor4direction boundedA*. Snapshotproposals only. #1530 neworigin9,63,80 partialEastup to20,64,79; NOT physicalnextpathproof, target20,56,109 unreached.
+- `shelf_newroom_east_three.js` NEWSTRICT9,63,80/sourceparsePASS, #1532 ACTIVE90s at14:36; actualresultneeded. Opens/resealsEAST10,63/64,80, returnsnewanchor. Proposalorigin checked.
+- `preflight_1434.js` #1522 four pure currentORnext radiusfixturesPASS; actualfreshmobscan. Integrationonlymatches correctedP4six/twelve/newhelpers, not oldercurrent-onlysources orP1.
+- `P3_RETURN_DEATH_AUDIT.md` independentactualsourceaudit targetrisk-veto canthrowoutofreturnfinally; cleanupunconditionallyloweredshield/no protectedfallback. Originalpacketdeliveredbutreturnfailed/death14:06 remains. No replacement P3 tactic tested.
+
+Ray `.unit()` with capturedlength; normalize mutates. Magma kind/name filter. Current+next hazardcandidates; >=8m twooccludedMagma exception is CHANGEDacceptancepolicy, no generalsafetyclaim. Projectile64 unchanged. Hypothetical futurecut can change cover; field guard aftereverycut/place/move. Reverse omitsoutboundveto to avoid knowncourierdeadlock. A healthy body requires death/event reconciliation before continuityclaim.
+
+14:37 #1532 actualFAILEDforwardgate afterheadcut, 0steps, head10,64,80 RESEALED; current9,63,80 FULL20/18/deadfalse, basalt25/picks55+72. No furtherunchangedretry. Thishelperparsedandreturnedprotectedbut EASTpathNOTphysicallyvalidated. #1530 proposedup/Eastpathremainsvirtual.
