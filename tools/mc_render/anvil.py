@@ -74,6 +74,7 @@ class Blocks:
     def __init__(self, world: Path, dimension: str = "minecraft:overworld"):
         self.dir = world / DIM_DIRS.get(dimension, "") / "region"
         self.chunks = {}
+        self.clip = None   # blocks at this height and above read as air (a cutaway)
 
     def _chunk(self, cx: int, cz: int):
         key = (cx, cz)
@@ -101,6 +102,8 @@ class Blocks:
 
     def at(self, x: int, y: int, z: int) -> str | None:
         """The block's name, None where the chunk is not saved."""
+        if self.clip is not None and y >= self.clip:
+            return "minecraft:air"
         secs = self._chunk(x >> 4, z >> 4)
         if secs is None:
             return None

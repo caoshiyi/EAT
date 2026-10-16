@@ -193,19 +193,22 @@ def map_cycle(a) -> None:
 # ---- shots: Chunky ----
 
 # blocks a camera and its line of sight may pass through
-SEE_THROUGH = re.compile(r"(air|^minecraft:(snow|short_grass|grass|tall_grass|fern|large_fern|dead_bush|torch|wall_torch|"
+SEE_THROUGH = re.compile(r"^minecraft:(air|cave_air|void_air|snow|short_grass|grass|tall_grass|fern|large_fern|dead_bush|torch|wall_torch|"
                          r"redstone_torch|vine|glass|glass_pane|.*_glass|.*_glass_pane|dandelion|poppy|.*_tulip|"
                          r"azure_bluet|oxeye_daisy|cornflower|allium|blue_orchid|lily_of_the_valley|sweet_berry_bush|"
                          r"sugar_cane|rail|.*_carpet|.*_button|lever|ladder|.*_sign|.*_wall_sign|seagrass|tall_seagrass|"
-                         r"water|bubble_column|cobweb|light)$)")
+                         r"water|bubble_column|cobweb|light)$")
 
 
-def clear(blocks: anvil.Blocks, a: tuple, b: tuple) -> bool:
-    """The segment from a to b crosses only see-through blocks (and b keeps 0.3 blocks from anything solid)."""
+def clear(blocks: anvil.Blocks, a: tuple, b: tuple, skip: tuple = ()) -> bool:
+    """The segment from a to b crosses only see-through blocks (and b keeps 0.3 blocks from anything solid); the
+    blocks in skip (where the body stands: an open door, a bed) do not count."""
     n = max(2, int(math.dist(a, b) / 0.2))
     pts = [tuple(a[k] + (b[k] - a[k]) * i / n for k in range(3)) for i in range(1, n + 1)]
     pts += [(b[0] + dx, b[1] + dy, b[2] + dz) for dx in (-.3, .3) for dy in (-.3, .3) for dz in (-.3, .3)]
     for x, y, z in pts:
+        if (math.floor(x), math.floor(y), math.floor(z)) in skip:
+            continue
         name = blocks.at(math.floor(x), math.floor(y), math.floor(z))
         if name is None or not SEE_THROUGH.search(name):
             return False
@@ -214,19 +217,33 @@ def clear(blocks: anvil.Blocks, a: tuple, b: tuple) -> bool:
 
 def camera(blocks: anvil.Blocks, b: dict) -> tuple[tuple, tuple]:
     """A third-person camera: behind and above the body (its saved facing), else the first spot around it with a clear
-    view of its head, closer in if need be; returns (camera position, the point it looks at)."""
+    view of its head. A body shut in (a hut, a tunnel) is shot from above with everything from two blocks over its feet
+    up cut away (sets blocks.clip), else from close in. Returns (camera position, the point it looks at)."""
     eye = (b["x"], b["y"] + 1.5, b["z"])
-    for dist, up in ((6, 3.5), (5, 2.5), (4, 1.5), (3, 1.0), (2.2, 0.5)):
-        for turn in (0, 35, -35, 70, -70, 110, -110, 145, -145, 180):
-            a = math.radians(b["yaw"] + turn)
-            cam = (eye[0] + math.sin(a) * dist, eye[1] + up, eye[2] - math.cos(a) * dist)   # Minecraft faces (-sin, cos)
-            if clear(blocks, eye, cam):
-                return cam, (eye[0], eye[1] - 0.4, eye[2])
-    for up in (4, 3, 2):
-        cam = (eye[0] + 0.01, eye[1] + up, eye[2])
-        if clear(blocks, eye, cam):
-            return cam, (eye[0], eye[1] - 0.5, eye[2])
-    return (eye[0], eye[1] + 0.3, eye[2]), (eye[0] + math.sin(math.radians(b["yaw"])) * -1, eye[1], eye[2])
+    x, y, z = (math.floor(b[k]) for k in "xyz")
+    own = ((x, y, z), (x, y + 1, z))
+
+    def around(tiers):
+        for dist, up in tiers:
+            for turn in (0, 35, -35, 70, -70, 110, -110, 145, -145, 180):
+                a = math.radians(b["yaw"] + turn)
+                cam = (eye[0] + math.sin(a) * dist, eye[1] + up, eye[2] - math.cos(a) * dist)   # Minecraft faces (-sin, cos)
+                if clear(blocks, eye, cam, own):
+                    return cam, (eye[0], eye[1] - 0.4, eye[2])
+        return None
+
+    found = around(((6, 3.5), (5, 2.5), (4, 1.5), (3, 1.0)))
+    if found:
+        return found
+    blocks.clip = math.floor(b["y"]) + 2
+    found = around(((4, 6), (3, 7), (2, 8)))
+    if found:
+        return found
+    blocks.clip = None
+    found = around(((2.2, 0.5),))
+    if found:
+        return found
+    return (eye[0], eye[1] + 0.3, eye[2]), (eye[0] - math.sin(math.radians(b["yaw"])), eye[1], eye[2])
 
 
 def sky_open(blocks: anvil.Blocks, b: dict) -> float:
@@ -309,6 +326,8 @@ def scene(p: str, b: dict, everyone: dict, spp: int, gpu: bool) -> dict:
          "sky": {"mode": "SIMULATED", "simulatedSky": "Preetham", "horizonOffset": 0.1, "cloudsEnabled": False},
          "actors": actors, "entities": [],
          "renderer": "ChunkyClRenderer" if gpu else "PathTracingRenderer", "previewRenderer": "PreviewRenderer"}
+    if blocks.clip is not None:
+        s["yClipMax"] = blocks.clip   # the cutaway: Chunky loads no blocks from here up
     if nether or end:
         s["sky"] = {"mode": "BLACK"}
         s["sun"] = {"altitude": 1.2, "azimuth": 2.2, "intensity": 0.0, "drawTexture": False}
@@ -388,17 +407,18 @@ def shots_cycle(a, state: dict) -> None:
         if p not in where:
             log(f"{p}: no position yet")
             continue
-        spp = a.spp or state.get("spp", 64 if gpu else 16)
+        spp = a.spp or state.setdefault("spp", {}).get(p, 1024 if gpu else 16)
         meta = shot(p, where[p], where, spp, gpu, a)
         if meta and meta["gpu_failed"] and gpu:
             log("OpenCL renderer failed; falling back to the CPU renderer")
-            state["gpu"] = gpu = False
+            state["gpu"], state["spp"] = False, {}
+            gpu = False
             gpu_ok(argparse.Namespace(**{**vars(a), "cpu": True}))
         if meta and not a.spp and meta["render_seconds"] is not None:
-            # samples per pixel for the next shot: about half the interval for the cycle's four tracings
+            # this body's samples per pixel next cycle: the cycle's four shots in about half the interval
             budget = a.every * 0.5 / len(A.PLAYERS) - (meta["seconds"] - meta["render_seconds"])
             rate = meta["spp"] / max(meta["render_seconds"], 1)
-            state["spp"] = int(min(4096, max(16, rate * max(budget, 1))))
+            state["spp"][p] = int(min(4096, max(16, rate * max(budget, 1))))
     log(f"shots cycle took {time.time() - t0:.0f} s")
 
 
