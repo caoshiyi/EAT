@@ -1,0 +1,4 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const {Vec3}=require('vec3');console.log('START',bot.entity.position,bot.health,'feet',bot.blockAt(bot.entity.position.floored())?.name,'head',bot.blockAt(bot.entity.position.floored().offset(0,1,0))?.name);
+console.log('waternear',bot.findBlocks({matching:bot.registry.blocksByName.water.id,maxDistance:16,count:15}));
+for(let i=0;i<4;i++){await bot.lookAt(new Vec3(-5,bot.entity.position.y+1.6,-26),true);bot.setControlState('jump',true);bot.setControlState('forward',true);await bot.waitForTicks(100);console.log('ASCEND',bot.entity.position,bot.health);if(bot.entity.position.y>62)break;}
+bot.clearControlStates();console.log('END',bot.entity.position,'feet',bot.blockAt(bot.entity.position.floored())?.name,'head',bot.blockAt(bot.entity.position.floored().offset(0,1,0))?.name,'hp',bot.health);

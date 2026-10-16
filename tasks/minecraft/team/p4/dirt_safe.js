@@ -1,0 +1,3 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);for(let n=0;n<12;n++){
+const p=bot.entity.position.floored();const bs=bot.findBlocks({matching:[bot.registry.blocksByName.dirt.id,bot.registry.blocksByName.grass_block.id],maxDistance:4,count:80}).map(p=>bot.blockAt(p)).filter(b=>bot.canDigBlock(b)&&b.position.y>=p.y&&!b.position.equals(p.offset(0,-1,0))).sort((a,b)=>a.position.distanceTo(bot.entity.position)-b.position.distanceTo(bot.entity.position));if(!bs.length)break;await bot.dig(bs[0]);await bot.waitForTicks(8);console.log('dug',bs[0].position.toString());}
+console.log('inventory',bot.inventory.items().map(i=>[i.name,i.count]));

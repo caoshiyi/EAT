@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));const l=c.containerItems().find(i=>i.name==='spruce_log');if(!l||l.count<2)throw Error('needlogs2');await c.withdraw(l.type,null,2);c.close();await bot.waitForTicks(4);global.p4craft={name:'spruce_planks',times:2};

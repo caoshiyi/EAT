@@ -1,0 +1,7 @@
+const {Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const a=bot.inventory.items().find(i=>i.name==='stone_axe');if(a)await bot.equip(a,'hand');const door=bot.blockAt(new Vec3(6,67,81));if(door.name==='spruce_door')await bot.dig(door);await bot.waitForTicks(4);
+const m=new Movements(bot);m.canDig=false;m.maxDropDown=2;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1500;
+for(const name of ['iron_chestplate','iron_pickaxe','shield','bucket','bucket','flint_and_steel','stone_pickaxe','sweet_berries']){
+const e=Object.values(bot.entities).filter(e=>e.name==='item'&&e.getDroppedItem?.()?.name===name&&bot.entity.position.distanceTo(e.position)<35).sort((a,b)=>bot.entity.position.distanceTo(a.position)-bot.entity.position.distanceTo(b.position))[0];if(!e)continue;
+const p=e.position.clone();console.log('recover',name,p);const t=setTimeout(()=>bot.pathfinder.setGoal(null),4000);try{await bot.pathfinder.goto(new goals.GoalNear(p.x,p.y,p.z,0.5));}catch(err){console.log(err.message);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();}await bot.waitForTicks(4);const ar=bot.inventory.items().find(i=>i.name==='iron_chestplate');if(ar)await bot.equip(ar,'torso');console.log('now',bot.entity.position,bot.health);if(bot.health<8)break;
+}
+console.log('RECOVERED',bot.inventory.items().map(i=>[i.name,i.count]),'hp',bot.health);

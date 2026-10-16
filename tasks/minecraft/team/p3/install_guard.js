@@ -1,0 +1,5 @@
+// BOUNDED 120s attack-only guard. Candidate: action counters are diagnostics, not proof of mob damage.
+// Does not navigate, aim, equip, block arrows, or handle creepers. Choose own weapon before installing.
+if(global.p3guard)clearInterval(global.p3guard);global.p3guardHits=global.p3guardHits||[];
+const guardHandle=setInterval(()=>{try{const e=Object.values(bot.entities).filter(e=>['zombie','zombie_villager','skeleton','spider'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<3).filter(e=>{const eye=bot.entity.position.offset(0,1.62,0),v=e.position.offset(0,1,0).minus(eye),len=v.norm();return len>0&&!bot.world.raycast(eye,v.scaled(1/len),len);}).sort((a,b)=>a.position.distanceTo(bot.entity.position)-b.position.distanceTo(bot.entity.position))[0];if(e){bot.attack(e);global.p3guardHits.push({t:Date.now(),n:e.name,id:e.id,d:e.position.distanceTo(bot.entity.position),hp:bot.health});if(global.p3guardHits.length>40)global.p3guardHits.shift();}}catch(e){console.log('guard error',e.message);}},650);global.p3guard=guardHandle;
+setTimeout(()=>{clearInterval(guardHandle);if(global.p3guard===guardHandle)global.p3guard=null;},120000);

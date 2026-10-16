@@ -1,0 +1,4 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const p=bot.entity.position.floored();console.log('position',bot.entity.position.toString(),'health',bot.health,'food',bot.food,'ground',bot.entity.onGround,'under',bot.blockAt(p.offset(0,-1,0)).name,'feet',bot.blockAt(p).name,'head',bot.blockAt(p.offset(0,1,0)).name);
+console.log('column',Array.from({length:45},(_,i)=>{const b=bot.blockAt(p.offset(0,i+2,0));return[b.position.y,b.name]}).filter(a=>a[1]!=='air'&&a[1]!=='cave_air'));
+console.log('dirt',bot.findBlocks({matching:[bot.registry.blocksByName.dirt.id,bot.registry.blocksByName.grass_block.id],maxDistance:8,count:20}).map(p=>p.toString()));
+console.log('near mobs',Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<30).map(e=>({name:e.name,p:e.position.toString()})));

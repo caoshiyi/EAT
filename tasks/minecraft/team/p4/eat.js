@@ -1,0 +1,1 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const f=bot.inventory.items().find(i=>i.name==='cooked_mutton');if(f&&bot.food<20){await bot.equip(f,'hand');await bot.consume();await bot.waitForTicks(5);}console.log('health',bot.health,'food',bot.food);

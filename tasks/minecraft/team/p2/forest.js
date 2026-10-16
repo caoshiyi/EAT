@@ -1,0 +1,8 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);
+const m=new Movements(bot);m.canDig=true;m.maxDropDown=1;for(const n of ['chest','crafting_table','furnace','obsidian','dirt'])m.blocksCantBreak.add(bot.registry.blocksByName[n].id);m.exclusionAreasStep.push(b=>b.position.z>=89&&b.position.z<=95&&b.position.x>=4&&b.position.x<=10?100:0);bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1500;
+for(const target of [[2,67,96],[5,67,99]]){const t=setTimeout(()=>bot.pathfinder.setGoal(null),7000);try{await bot.pathfinder.goto(new goals.GoalNear(...target,1));}catch(e){console.log(e.message);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();}await bot.waitForTicks(4);}
+console.log('forestpos',bot.entity.position);
+const bs=bot.findBlocks({matching:bot.registry.blocksByName.spruce_log.id,maxDistance:5,count:20}).map(p=>bot.blockAt(p)).filter(b=>bot.canDigBlock(b)&&bot.entity.position.distanceTo(b.position)<4.5&&b.position.y>=bot.entity.position.y-1).sort((a,b)=>a.position.y-b.position.y);
+for(const b of bs.slice(0,5)){const a=bot.inventory.items().find(i=>i.name==='wooden_axe');if(a)await bot.equip(a,'hand');console.log('chop',b.position);await bot.dig(b);await bot.waitForTicks(5);if(bot.health<12)break;}
+console.log('drops',Object.values(bot.entities).filter(e=>e.name==='item'&&e.getDroppedItem?.()?.name==='spruce_log'&&bot.entity.position.distanceTo(e.position)<10).map(e=>({p:e.position,c:e.getDroppedItem?.()?.count})));
+console.log('inv',bot.inventory.items().map(i=>[i.name,i.count]),'p',bot.entity.position,'hp',bot.health);

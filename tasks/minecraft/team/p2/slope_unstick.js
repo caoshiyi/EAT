@@ -1,0 +1,3 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const p=bot.entity.position.floored();console.log('slope actual',bot.entity.position,bot.health);if(p.y<65||p.z < -4||p.z>0)throw Error('Not known slope: inspect');
+for(const off of [[0,0,1],[0,1,1],[0,1,2],[0,2,2],[0,2,3]]){const b=bot.blockAt(p.offset(...off));if(b&&['grass_block','dirt','snow','spruce_leaves'].includes(b.name)&&bot.canDigBlock(b)){console.log('clear',b.name,b.position);await bot.dig(b);}}
+await bot.lookAt(bot.entity.position.offset(0,1.6,15),true);bot.setControlState('jump',true);await bot.waitForTicks(4);bot.setControlState('forward',true);await bot.waitForTicks(50);bot.clearControlStates();console.log('slope result',bot.entity.position,bot.health);
