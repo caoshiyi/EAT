@@ -483,6 +483,50 @@ def static(h, root: Path, rel: str):
     h.wfile.write(body)
 
 
+HD_PAGE = r"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft run</title>
+<style>
+:root { --bg:#0f1218; --ink:#e8ebf0; --mute:#9aa3ae; }
+* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+header { padding:10px 16px; display:flex; gap:16px; align-items:baseline; flex-wrap:wrap; }
+header h1 { font-size:17px; margin:0; } header span { color:var(--mute); } header a { color:#8ab4ff; margin-left:auto; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; padding:0 6px 6px; }
+figure { margin:0; position:relative; background:#000; aspect-ratio:16/9; }
+figure img { width:100%; height:100%; object-fit:cover; display:block; }
+figcaption { position:absolute; left:8px; top:8px; background:rgba(0,0,0,.6); padding:3px 8px; border-radius:6px; font-size:13px; }
+@media (max-width: 800px) { .grid { grid-template-columns:1fr; } }
+</style></head><body>
+<header><h1>Minecraft run</h1><span id="sum"></span><a href="dash">full dashboard</a></header>
+<div class="grid" id="grid"></div>
+<script>
+// path-traced shots of the four bodies (the world as last saved, a new one about every 5 minutes); plain images, no 3D
+const PCOL = {p1:'#1aa1b5', p2:'#8e5bd6', p3:'#e08a1e', p4:'#3f9a4e'};
+const ago = s => { const m = Math.round((Date.now() - Date.parse(s)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : Math.round(m / 60) + ' h ago'; };
+async function poll() {
+  try {
+    const d = await (await fetch('data.json', {cache: 'no-store'})).json();
+    const n = d.milestones.filter(m => m.reached.length).length;
+    const deaths = Object.values(d.death_counts).reduce((a, b) => a + b, 0);
+    document.getElementById('sum').textContent = `${n} of ${d.milestones.length} milestones · ${d.programs} programs · ${deaths} deaths`;
+    const g = document.getElementById('grid');
+    d.players.forEach(p => {
+      let f = document.getElementById('f-' + p);
+      if (!f) { f = document.createElement('figure'); f.id = 'f-' + p; f.innerHTML = '<img alt=""><figcaption></figcaption>'; g.appendChild(f); }
+      const m = (d.shots || {})[p], st = d.status && d.status[p];
+      const img = f.querySelector('img');
+      if (m) { const src = `shots/${p}/${encodeURIComponent(m.file)}`; if (img.getAttribute('src') !== src) img.src = src; }
+      f.querySelector('figcaption').innerHTML = `<b style="color:${PCOL[p]}">${p}</b>` + (m ? ` · ${ago(m.time)}` : ' · no shot yet')
+        + (st && st.connected ? ` · ${String(st.dimension).replace('minecraft:', '')} · ♥ ${st.health}` : '');
+    });
+  } catch (e) { document.getElementById('sum').textContent = 'not reachable'; }
+  setTimeout(poll, 15000);
+}
+poll();
+</script></body></html>
+"""
+
+
 class Handler(BaseHTTPRequestHandler):
     def route_view(self) -> bool:
         parts = self.path.split("/", 3)   # '', 'view', 'p1', rest
@@ -523,6 +567,8 @@ class Handler(BaseHTTPRequestHandler):
         if self.path.split("?")[0] == "/data.json":
             body, ctype = json.dumps(build()).encode(), "application/json"
         elif self.path.split("?")[0] in ("/", "/index.html"):
+            body, ctype = HD_PAGE.encode(), "text/html; charset=utf-8"
+        elif self.path.split("?")[0] in ("/dash", "/dash/"):
             body, ctype = PAGE.encode(), "text/html; charset=utf-8"
         else:
             self.send_error(404)
