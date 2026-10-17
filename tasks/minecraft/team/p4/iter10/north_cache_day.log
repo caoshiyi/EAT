@@ -1,0 +1,182 @@
+program #4720 on p4: 88.1 s
+--- output ---
+DOOR_ACTUAL exit (6.601361475462681, 66.42159999847412, 79.28405421962731)
+CACHE_LEG_ACTUAL (20, 68, 60) Vec3 { x: 20.5049830206456, y: 68, z: 60.69319010893789 } 20
+CACHE_LEG_ACTUAL (24, 68, 60) Vec3 { x: 24.32668172387285, y: 68, z: 60.49711333889446 } 20
+CACHE_LEG_ACTUAL (24, 71, 36) Vec3 { x: 24.442976947081508, y: 71, z: 36.5 } 20
+CACHE_LEG_ACTUAL (18, 67, 16) Vec3 { x: 18.468821689821553, y: 67, z: 16.6909616664889 } 20
+CACHE_LEG_ACTUAL (18, 64, -8) Vec3 { x: 18.50411187976938, y: 64, z: -7.686723172135761 } 20
+CACHE_ISSUE The goal was changed before it could be completed! Vec3 { x: 14.205139717192926, y: 68, z: -24.850339807653278 } 20
+DOOR_ACTUAL enter (6.603246914844249, 67, 82.4783149058303)
+--- returned ---
+{
+ "issue": "The goal was changed before it could be completed!",
+ "recoveryIssue": null,
+ "chestContents": null,
+ "furnaceContents": null,
+ "expected": {},
+ "receipts": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.670556669361421,
+  "y": 67.5625,
+  "z": 83.69999999999996
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "own": [
+  [
+   "bone",
+   2,
+   null
+  ]
+ ],
+ "guardAborted": null,
+ "goalTrace": [
+  {
+   "at": 1792209863067,
+   "goal": null,
+   "intended": false,
+   "p": {
+    "x": 14.205139717192926,
+    "y": 68,
+    "z": -24.850339807653278
+   },
+   "hp": 20,
+   "stack": [
+    "    at EventEmitter.goalWatch (p4-program-4720.js:36:1374)",
+    "    at EventEmitter.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:86:24)",
+    "    at EventEmitter.emit (node:events:531:35)",
+    "    at bot.pathfinder.setGoal (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/index.js:145:9)"
+   ]
+  },
+  {
+   "at": 1792209863283,
+   "goal": [
+    18,
+    64,
+    -8
+   ],
+   "intended": true,
+   "p": {
+    "x": 14.205139717192926,
+    "y": 68,
+    "z": -24.850339807653278
+   },
+   "hp": 19,
+   "stack": null
+  },
+  {
+   "at": 1792209869946,
+   "goal": [
+    18,
+    67,
+    16
+   ],
+   "intended": true,
+   "p": {
+    "x": 18.508109994229965,
+    "y": 64,
+    "z": -7.684296094089208
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209879990,
+   "goal": [
+    24,
+    71,
+    36
+   ],
+   "intended": true,
+   "p": {
+    "x": 18.461391180479808,
+    "y": 67,
+    "z": 16.5
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209885976,
+   "goal": [
+    24,
+    68,
+    60
+   ],
+   "intended": true,
+   "p": {
+    "x": 24.509350863860234,
+    "y": 71,
+    "z": 36.5
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209893991,
+   "goal": [
+    20,
+    68,
+    60
+   ],
+   "intended": true,
+   "p": {
+    "x": 24.50160552802582,
+    "y": 68,
+    "z": 60.361165869912284
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209895407,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 20.67021466857049,
+    "y": 68,
+    "z": 60.50159474818422
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209901724,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 6.4852418930888245,
+    "y": 66,
+    "z": 79.5
+   },
+   "hp": 20,
+   "stack": null
+  }
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,36 @@
+program #4527 on p2: 17.6 s
+--- output ---
+FAST_STAGE_PLAN 0 23 Vec3 { x: -4, y: 65, z: -14 }
+ROUTE_SERVER_DIG_ACK Vec3 { x: 1, y: 66, z: 3 } 0 1 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: 1, y: 65, z: 3 } 1 2 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4968235082205654, y: 65, z: 3.504755854374312 } 20
+OWN_EXIT_PASSED Vec3 { x: 1.4968235082205654, y: 65, z: 3.504755854374312 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.4968230384386112, y: 65, z: 1.5369940413876255 } 20
+FAST_SEGMENT_ACTUAL 1 3 Vec3 { x: 1.4968230384386112, y: 65, z: 1.5369940413876255 } 20 TICKS 10
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.43241573712032366, y: 65, z: 1.5415985408160549 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.42196560405195843, y: 65, z: 0.4771912394977673 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.42196551009559935, y: 66, z: -0.4146767141501166 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -4 } Vec3 { x: 0.42196477932365994, y: 66, z: -3.437110713462546 } 20
+FAST_SEGMENT_ACTUAL 6 9 Vec3 { x: 0.42196477932365994, y: 66, z: -3.437110713462546 } 20 TICKS 15
+EXACT_STEP Vec3 { x: 0, y: 67, z: -5 } Vec3 { x: 0.42196463316930377, y: 67, z: -4.490542763335095 } 20
+EXACT_STEP Vec3 { x: -1, y: 66, z: -5 } Vec3 { x: -0.4494676005392296, y: 66, z: -4.48611698571525 } 20
+EXACT_STEP Vec3 { x: -1, y: 67, z: -6 } Vec3 { x: -0.4445015539125247, y: 67, z: -5.536654102328628 } 20
+EXACT_STEP Vec3 { x: -2, y: 66, z: -6 } Vec3 { x: -1.4341693147162495, y: 66, z: -5.547287830465252 } 20
+EXACT_STEP Vec3 { x: -3, y: 66, z: -6 } Vec3 { x: -2.488601352986644, y: 66, z: -5.547287569475316 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -6 } Vec3 { x: -3.4931979210034676, y: 65, z: -5.547287360683386 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.4886694326835803, y: 65, z: -13.530319246465462 } 20
+FAST_SEGMENT_ACTUAL 15 23 Vec3 { x: -3.4886694326835803, y: 65, z: -13.530319246465462 } 20 TICKS 37
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.4886694326835803, y: 65, z: -13.530319246465462 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-4,65,-14],"surface":[-4,65,-14],"index":23} 20 19
+FAST_STAGE_END {"issue":null,"closed":true,"startIndex":0,"endIndex":23,"currentIndex":23,"p":{"x":-3.4886694326835803,"y":65,"z":-13.530319246465462},"hp":20,"food":19,"lost":false,"elapsed":17583}
+FINAL_KIT [["snowball",7,null],["wooden_sword",1,0],["wooden_pickaxe",1,37],["sweet_berries",1,null],["crafting_table",1,null],["snow_block",1,null],["stone_pickaxe",1,2]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 4520 CORRIDOR_BUSY refused0cuts atP4newspawn; current03:17:31 ACTUALP4rear7.6,83.7/frontempty changed, no pushedbody. RetryingONE3logtrip onlywithfreshguards. P4Spiderdeathseen ownercurrentHP20newlife; no oldkit/rescueclaim. P3front6EXITnow<=10s thenrel
+p3: ease.
+p1: P1 #4517 repair BOTHascentspassed then +100m to113,62,177 FULL20/18. Currentnight skeleton7.7m+zombie4m aboveground preventsroofexit. Alternative useful underground3southcells (head+footcuts only/nativeFULLdryenvelope) ->FULLend beyondmob insteadofidlewait
+p1:  orriskroof. Smallphysical3steps now, thenrouteuse; no campsupply/doorlease.
+--- p2 now: (-3.5, 65, -13.5) in the_nether, health 20/20, food 19/20, alive

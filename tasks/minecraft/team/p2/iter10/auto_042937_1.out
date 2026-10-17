@@ -1,0 +1,18 @@
+program #4815 on p2: 3.8 s
+--- output ---
+EXACT_STEP Vec3 { x: -271, y: 63, z: -231 } Vec3 { x: -270.55080362171265, y: 63, z: -230.43922944323367 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -271, 64, -231 ], [ -271, 63, -231 ] ] 9 15
+EXACT_STEP Vec3 { x: -272, y: 63, z: -231 } Vec3 { x: -271.42841957631225, y: 63, z: -230.4392294432337 } 20
+FAST_STAGE_PLAN 520 720 Vec3 { x: -316, y: 61, z: -335 }
+FAST_STAGE_ISSUE NO_ROUTE_FLOOR_(-272, 64, -231) 520 520 Vec3 { x: -271.42841957631225, y: 63, z: -230.4392294432337 } 20
+EXACT_STEP Vec3 { x: -272, y: 63, z: -231 } Vec3 { x: -271.42399214215965, y: 63, z: -230.4392294432337 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-272,63,-231],"surface":[-272,63,-231],"index":520,"placed":[[-271,63,-231],[-271,64,-231]]} 20 20
+FAST_STAGE_END {"issue":"NO_ROUTE_FLOOR_(-272, 64, -231)","closed":true,"startIndex":520,"endIndex":720,"currentIndex":520,"p":{"x":-271.42399214215965,"y":63,"z":-230.4392294432337},"hp":20,"food":20,"lost":false,"sharedPending":[],"elapsed":3812}
+FINAL_KIT [["crafting_table",1,null],["snowball",15,null],["stick",2,null],["wooden_pickaxe",1,4],["stone_pickaxe",1,47],["wooden_shovel",1,41],["snow_block",3,null],["basalt",1,null],["cobblestone",1,null],["blackstone",1,null],["nether_bricks",1,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-271.4, 63, -230.4) in the_nether, health 20/20, food 20/20, alive

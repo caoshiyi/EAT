@@ -1,0 +1,58 @@
+program #4703 on p4: 9.5 s
+--- output ---
+DOOR_ACTUAL exit (6.588382332983701, 66.42159999847412, 79.28405421962731)
+CACHE_ISSUE PREFLIGHT_NPC Vec3 { x: 6.588382332983701, y: 66, z: 78.75702017485028 } 20
+DOOR_ACTUAL enter (6.596816548679113, 67, 82.4783149058303)
+--- returned ---
+{
+ "issue": "PREFLIGHT_NPC",
+ "recoveryIssue": null,
+ "chestContents": null,
+ "furnaceContents": null,
+ "expected": {},
+ "receipts": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.664126303196285,
+  "y": 67.5625,
+  "z": 83.69999999999996
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "own": [],
+ "guardAborted": null,
+ "goalTrace": [
+  {
+   "at": 1792209486906,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 6.588382332983701,
+    "y": 66,
+    "z": 78.75702017485028
+   },
+   "hp": 20,
+   "stack": null
+  }
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

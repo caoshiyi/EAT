@@ -1,0 +1,45 @@
+program #4606 on p4: 18.4 s
+--- output ---
+E_EXACT_RECAP Vec3 { x: 4.103073959537781, y: 65, z: 4.141498016950204 } 20
+EXPECTED_DIMENSION_RESPAWN overworld
+OW_ACTUAL Vec3 { x: 7.103073959537688, y: 68, z: 91.5 } 20
+RETURN_ISSUE Took to long to decide path to goal! overworld Vec3 { x: 12.739068667570129, y: 68, z: 88.91476823175476 } 20
+ORDINARY_RETURN_FAILED Took to long to decide path to goal!
+OW_CURRENT_RECOVERY_FAILED OUTSIDE_CORRIDOR_SCOPE
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "recoveryIssue": "OUTSIDE_CORRIDOR_SCOPE",
+ "protectedEnd": false,
+ "eastRecapped": true,
+ "transitioned": true,
+ "p": {
+  "x": 12.78364112884611,
+  "y": 68.02442408821369,
+  "z": 88.98985362892354
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "dim": "overworld",
+ "own": [
+  [
+   "gold_ingot",
+   1
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 #4598 changedshallowwetbranch actual+120m→195,63,343 DRY_HOLD20/19/noNPC/7false. Nextknownoldfatalundericevicinity so recoveryadds boundednormalICEhatchdig ONLYifnoopenwatercolumnwithin5m/visibleice<=4.3reach/actualAIRabove; selfpacketairguard+sameprogr
+p1: amobservedsurface required. No passiveunderwaterjumpendclaim. Engineer reviewadvance.js whileboundedobjectivecrossing. Next2x60s stages; no moreprep.
+--- p4 now: (12.8, 68, 89) in overworld, health 20/20, food 20/20, alive

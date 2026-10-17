@@ -1,0 +1,39 @@
+program #4710 on p4: 3.3 s
+--- output ---
+CACHE_ISSUE DOOR_HOSTILE_PRECHECK Vec3 { x: 6.442949997816952, y: 67, z: 82.3 } 20
+--- returned ---
+{
+ "issue": "DOOR_HOSTILE_PRECHECK",
+ "recoveryIssue": null,
+ "chestContents": null,
+ "furnaceContents": null,
+ "expected": {},
+ "receipts": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 6.442949997816952,
+  "y": 67,
+  "z": 82.3
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "own": [],
+ "guardAborted": null,
+ "goalTrace": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.4, 67, 82.3) in overworld, health 20/20, food 20/20, alive

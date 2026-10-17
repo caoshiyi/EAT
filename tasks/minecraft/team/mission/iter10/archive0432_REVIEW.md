@@ -1,0 +1,12 @@
+# Iteration10 review — 2026-10-17T04:22:49.743575+00:00
+Official04:22:01 dragon0/milestones9/deaths92/programs4778/restarts1. Since04:13 +36programs/+1death/no milestone; opening+419programs/+5deaths. Current05:01:33deadlinecontinues.
+
+P1 completedanother387.6m stage then4751 +48m endedTHREAT_ESCAPE_INCOMPLETE/UNRESOLVEDwater nearDrowned3.21m (earliercompactalertlistedothers6.8–7.4m; nearest3.21m isimportant). Freshstatus15HP thenworlddeath04:17:36. ThirdP1post-threatendingdeaththisiteration. RooturgentpublicationAFTERdeath again, nottimelyrescue; observation/protectednormalcasesdidnotmakeactualrecoverywork. Priorpartialrecovery+replacement+~1419mtravelconsumed~40min beforekit/potionlostagain. Descent/potionplanneverexecuted. CurrentemptycampNEWLIFE, dropsunknown. Primaryproposalresetrequested04:23; no inheritedapproachmandate/autofourthkit.
+
+P2 targetedmushroomclassificationfixreachedactual4741 andretained23→114,4748→289,4757threatstop→306. Fresh4761actualbodyhull10/10FULL20HP20food. Thisisgenuineaccessgain, no blazecontact/rod. 4777 tiny-mobpreflightnegative/0swings confirmshelpercontractnotmet, notmobkill/globalrouteceiling. Remote121restorationstillnotphysicallytested; actualsourceadoptionisnotignoredbutnotoverclaimed.
+
+P3 retainedfourclosedstageendingsbutnext4774magma-cubethreat33.3s leftclosedfalse/fullfalse atoldpod20HP18food. EarlierFULLisnotcurrent. Immediateownerrepairrequestpublished04:22; noACK/currentendingyet. Nextusefulrock/contactexperimentdependsontheactualfirstthreat/fallbackbranch, notanotherglobalpitchtest/materialquota. No currentEndercontact/pearl.
+
+P4 materiallychangedinsidecamp operationproducedLOG5total, tools+LOG2banked andownaxe. Initial3mealnogrowth wasboundednegative, final1mealactualgrowthchangedworld; lateLOG72receiptcorrectedearlyzero. Thisisusefulcompleteacquisition/conversion/deposit. ImmediateP1beneficiaryoffered; recipientuseunobserved. FarmfoodattemptblockedbyP1bodybeforeexit, 0fruit; no unchangedreplay. Currentbankfresh4775supersedesoldassumptions: no potion/food/rod/eye/iron/shovel. Oldcache/Ender/mapretired.
+
+Reviewpriorities: actualP3ending now; P1 materiallychangedproposal/currentbody; P2 nextthreatdecision; P4recipient/passageresolution/finitefoodoutcome. RequestsarenotACKs. Supportedagentlistingonlyroot, no completedresultwrappers/IDs/followuptargets; no spawn/replacement/identitychanges. Tokensunavailable. Nextreview04:32/liveness04:23.

@@ -1,0 +1,166 @@
+program #4867 on p2: 35.6 s
+--- output ---
+LOWER_ADVANCE_ACTUAL -205 5.333335876464844 17 2 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 68 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 5, null ],
+  [ 'nether_bricks', 3, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -204 5.333335876464844 17 4 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 70 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 6, null ],
+  [ 'nether_bricks', 4, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -203 5.333335876464844 17 6 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 72 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 7, null ],
+  [ 'nether_bricks', 5, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -202 5.333335876464844 17 8 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 74 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 8, null ],
+  [ 'nether_bricks', 6, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -201 5.333335876464844 17 10 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 76 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 7, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -200 5.333335876464844 17 12 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 78 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 10, null ],
+  [ 'nether_bricks', 8, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -199 5.333335876464844 17 14 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 80 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 10, null ],
+  [ 'nether_bricks', 10, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -198 5.333335876464844 17 17 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 82 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 12, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -197 5.333335876464844 17 19 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 84 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 14, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -196 5.333335876464844 17 21 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 86 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 16, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ISSUE LOWER_FENCE_FLOOR Vec3 { x: -196, y: 57, z: -430 } Vec3 { x: -195.40253121787995, y: 57, z: -429.4710469855429 } 5.333335876464844
+--- returned ---
+{
+ "issue": "LOWER_FENCE_FLOOR",
+ "closed": true,
+ "lost": false,
+ "p": {
+  "x": -195.3994303133953,
+  "y": 57,
+  "z": -429.4710469855429
+ },
+ "hp": 5.333335876464844,
+ "food": 17,
+ "cuts": 21,
+ "elapsed": 35556,
+ "kit": [
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   86
+  ],
+  [
+   "wooden_shovel",
+   1,
+   43
+  ],
+  [
+   "netherrack",
+   7,
+   null
+  ],
+  [
+   "nether_bricks",
+   16,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 correctionapplied4846 reachedrockFULL20HP after4actualMagmaDEAD/nohurt.4857 PICK_RESERVE→actualFULL(-93,59,78)/20HP/woodpick54. Fresh4860 last12route onlysoftDIRT+NYLIUM2 andstationentryCOBBLE2, no newBasalt; handcutsoft/pickreserve1forhead. Existingsta
+p3: tion9platform+roof needsno13COBBLE/IRONquota. Nopearlyet.
+p4: P4 actual4856 emergencyEbarrier COMPLETE measuredcollision: FOOT8,67,83 CLOSEDspruceGATE facingEAST (height1.5); HEAD8,68,83 DIRT full; CAP69 AIR (.5topslitbelowmainroof69.5). Thisblocksnormalplayer/Spiderpassage geometrically; NOToriginalfullcubeE3/nottra
+p4: velqualified. SOUTHdonor7,69,84 nowAIR, itsDIRT67+68remainFULL, main4roofSLABSunchanged. 4850roof69placementfailedcauseunisolated; 4856HEAD68ordinaryplacementPASS. NEWlife2 20/20/7false/ownEMPTY. AllE/S writersRELEASED. No field/corpse/axe replay.
+--- p2 now: (-195.4, 57, -429.5) in the_nether, health 5.3/20, food 17/20, alive

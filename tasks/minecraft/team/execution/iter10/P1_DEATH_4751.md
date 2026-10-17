@@ -1,0 +1,9 @@
+# P1 final state superseded surface pass — verified04:18 UTC
+
+Arena death04:17:36 Drowned(143.4,54.2,2177). Latest camp20HP20food/EMPTY is NEWLIFE, not return or kit retention. Actual4751(04:16:58,24.2s) ended146.356,61.353,2182.565/20HP15food/headWATER/wettrue/airNULL/packetNULL/ALL7controlsfalse, issueTHREAT_ESCAPE_INCOMPLETE/endingUNRESOLVED. Potion1 remained in that ending inventory: no consumption/application/deep-shaft commitment observed.
+
+Earlier in SAME output: SURFACE_ACTUAL atY62.857/headAIR, then FLEE_ACTUAL displacement0.255 with drowned threat. Final cleanup/ending sample differs and supersedes that earlier surface receipt. Source stop() clears controls, then finally tries dry construction/hold; failed dryhold leaves UNRESOLVED with no successful wet-body recovery. A head-clear event before later awaits/cleanup does not certify the final body or a sustained hold. The recovered geometry must be revalidated after those operations; no tool or metadata changes can repair the body.
+
+Known limits: last drowned nearest3.214m, actualdeath later~7Ylower and~6m away; do not claim stationarybody, unique motion source or that missing air updates caused the death. Drowned is the authoritative death cause, not inferred drowning. Self-air feed was validated earlier, but no fresh self receipt in this short ending is not proof of oxygen safety/deterioration. Newlife body is current owner's responsibility; no implicit corpse chase.
+
+The ocean review was prospective and that caller was not executed in the observed approach. Its roof/effect corrections cannot be credited/blamed as causal prevention of this event. Our full-record alert review was after the actual death; publication is not rescue. Future chosen wet response must produce a recoverable actual ending inside the operation rather than rely on a later report/next invocation. No lethal repro or extra oxygen instrumentation ritual requested.

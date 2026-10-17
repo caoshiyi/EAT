@@ -1,0 +1,243 @@
+program #4925 on p3: 56.2 s
+--- output ---
+UNARMED_NO_HARVEST Vec3 { x: -97, y: 64, z: 86 } cobblestone
+UNARMED_NO_HARVEST Vec3 { x: -97, y: 63, z: 86 } cobblestone
+ACTUAL -97,63,86 21411
+ACTUAL -97,62,85 22113
+ACTUAL -96,63,85 22713
+ACTUAL -96,62,84 23414
+ACTUAL -95,63,84 24016
+ACTUAL -95,62,83 24716
+ACTUAL -95,61,82 25419
+ACTUAL -95,60,81 26121
+ACTUAL -95,60,80 26623
+ACTUAL -95,61,79 27227
+ACTUAL -95,60,78 27878
+ACTUAL -94,60,78 28379
+ACTUAL -93,59,78 29029
+UNARMED_NO_HARVEST Vec3 { x: -92, y: 60, z: 78 } basalt
+UNARMED_NO_HARVEST Vec3 { x: -92, y: 59, z: 78 } basalt
+UNARMED_NO_HARVEST Vec3 { x: -92, y: 58, z: 78 } basalt
+ACTUAL -92,58,78 48735
+ACTUAL -91,57,78 49386
+ACTUAL -90,56,78 50037
+ACTUAL -89,55,78 50691
+ACTUAL -88,54,78 51342
+ACTUAL -87,54,78 51893
+ACTUAL -86,54,78 52395
+ACTUAL -85,54,78 52895
+ACTUAL -84,54,78 53445
+ACTUAL -83,54,78 53946
+ACTUAL -82,54,78 54497
+ACTUAL -81,54,78 54997
+HELD_RECOVERY_SUB Vec3 { x: -82, y: 54, z: 78 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -82, y: 55, z: 78 } dirt basalt
+--- returned ---
+{
+ "caller": "iter10_return_rock",
+ "entityId": 170,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -80.52855420220514,
+  "y": 54,
+  "z": 78.50000032720241
+ },
+ "hp": 20,
+ "food": 19,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -97,
+   63,
+   86
+  ],
+  [
+   -97,
+   62,
+   85
+  ],
+  [
+   -96,
+   63,
+   85
+  ],
+  [
+   -96,
+   62,
+   84
+  ],
+  [
+   -95,
+   63,
+   84
+  ],
+  [
+   -95,
+   62,
+   83
+  ],
+  [
+   -95,
+   61,
+   82
+  ],
+  [
+   -95,
+   60,
+   81
+  ],
+  [
+   -95,
+   60,
+   80
+  ],
+  [
+   -95,
+   61,
+   79
+  ],
+  [
+   -95,
+   60,
+   78
+  ],
+  [
+   -94,
+   60,
+   78
+  ],
+  [
+   -93,
+   59,
+   78
+  ],
+  [
+   -92,
+   58,
+   78
+  ],
+  [
+   -91,
+   57,
+   78
+  ],
+  [
+   -90,
+   56,
+   78
+  ],
+  [
+   -89,
+   55,
+   78
+  ],
+  [
+   -88,
+   54,
+   78
+  ],
+  [
+   -87,
+   54,
+   78
+  ],
+  [
+   -86,
+   54,
+   78
+  ],
+  [
+   -85,
+   54,
+   78
+  ],
+  [
+   -84,
+   54,
+   78
+  ],
+  [
+   -83,
+   54,
+   78
+  ],
+  [
+   -82,
+   54,
+   78
+  ],
+  [
+   -81,
+   54,
+   78
+  ]
+ ],
+ "elapsed": 56151,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   2
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   58
+  ],
+  [
+   "wooden_shovel",
+   1,
+   5
+  ],
+  [
+   "warped_nylium",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   21,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   60
+  ],
+  [
+   "blackstone",
+   2,
+   null
+  ],
+  [
+   "ender_pearl",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 currentFOOD4919 0exit/0fruit/closed20 due21719SPIDER; fresh4926 ONLYthatfoe24m, actualnight13185/bushes3allMATURE. P4 ifretainedSWORDbank available P2 willuseONEbounded21719clear atactualWeststance4,65,80 (oldother22561nowABSENT); no field/S/E changes b
+p2: eforeweaponreceipt. BenefitactualFOODfornewP1/P4 andP3return. No tree/sourcegatherqueue.
+p4: P4 4922 verticaljumpactualY68.74/roofexactrecap/20HP/life2 butSTICK0. Cached31251STICK2 at6.136,70,84.875 NOTreceipt; freshness/causeunknown. ONEchangedinsideposez83.65 (closerthan83.50) withplayerCollectlogger, sameone-roofexactrestore. Ifsecond0 retirepi
+p4: ckup/no furtherroof project; bankplank2 remains, no weaponclaim.
+--- p3 now: (-80.5, 54, 78.5) in the_nether, health 20/20, food 19/20, alive

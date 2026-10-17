@@ -1,0 +1,69 @@
+program #4909 on p2: 1.6 s
+--- output ---
+UPPER_FACE_PREDICTION Vec3 { x: -131, y: 63, z: -431 } Vec3 { x: -130.5, y: 63.95, z: -430 }
+UPPER_FACE_ACTUAL_VISIBLE Vec3 { x: -131, y: 63, z: -431 } Vec3 { x: -130.5, y: 63.95, z: -430 }
+LOFT_CLOSED_ACTUAL Vec3 { x: -131.485211168844, y: 61, z: -429.4710516363834 } 5.333335876464844
+HIGH_FULL_ACTUAL Vec3 { x: -131.485211168844, y: 62, z: -429.4710516363834 } 5.333335876464844 17
+--- returned ---
+{
+ "issue": null,
+ "raised": true,
+ "lost": false,
+ "p": {
+  "x": -131.485211168844,
+  "y": 62,
+  "z": -429.4710516363834
+ },
+ "hp": 5.333335876464844,
+ "full": true,
+ "kit": [
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   24
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "wooden_shovel",
+   1,
+   43
+  ],
+  [
+   "netherrack",
+   5,
+   null
+  ],
+  [
+   "nether_bricks",
+   64,
+   null
+  ],
+  [
+   "blackstone",
+   2,
+   null
+  ],
+  [
+   "nether_bricks",
+   47,
+   null
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-131.5, 62, -429.5) in the_nether, health 5.3/20, food 17/20, alive

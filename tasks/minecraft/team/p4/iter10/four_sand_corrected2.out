@@ -1,0 +1,43 @@
+program #4580 on p4: 22.2 s
+--- output ---
+DOOR_ACTUAL exit (6.587898445768796, 66.42159999847412, 79.28405420788279)
+SAND_RECEIPT (5, 65, 76) 5
+SAND_RECEIPT (4, 65, 76) 6
+SAND_RECEIPT (4, 65, 75) 7
+SAND_RECEIPT (5, 65, 75) 8
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.44399474673051)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "cuts": 4,
+ "delta": 4,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312656880306,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "own": [
+  [
+   "sand",
+   8
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,36 @@
+program #4525 on p3: 3.4 s
+--- output ---
+WORK_ISSUE DOOR_HOSTILE_PRECHECK
+--- returned ---
+{
+ "caller": "iter10_pearl_kit_wood_v1",
+ "entityId": 170,
+ "issue": "DOOR_HOSTILE_PRECHECK",
+ "recoveryIssue": null,
+ "cut": 0,
+ "logs": 0,
+ "gain": 0,
+ "protectedEnd": true,
+ "elapsed": 3423,
+ "p": {
+  "x": 7.537203515469127,
+  "y": 67.5625,
+  "z": 83.69999996868118
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

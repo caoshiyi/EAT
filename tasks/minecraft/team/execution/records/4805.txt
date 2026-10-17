@@ -1,0 +1,10 @@
+== #4805 2026-10-17T04:28:31 p1 role=lead_converter iter=10 0.6 s
+const cnt=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);async function park(){if(bot.currentWindow)bot.closeWindow(bot.currentWindow);await bot.waitForTicks(3);if(bot.inventory.selectedItem){const k=bot.inventory.slots.findIndex((v,k)=>k>=9&&k<=44&&!v);await bot.clickWindow(k,0,0);await bot.waitForTicks(2);}}for(let k=0;k<2;k++){const r=bot.recipesFor(bot.registry.itemsByName.spruce_planks.id,null,1,null)[0];if(!r)throw Error('NO_LOG');await bot.craft(r,1,null);await park();}for(const n of['crafting_table','stick']){const r=bot.recipesFor(bot.registry.itemsByName[n].id,null,1,null)[0];if(!r)throw Error('NO_RECIPE_'+n);await bot.craft(r,1,null);await park();}console.log('CURRENT_KIT',bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),bot.health,bot.food);
+-- output --
+CURRENT_KIT [
+  [ 'wooden_pickaxe', 1, 0 ],
+  [ 'wooden_sword', 1, 0 ],
+  [ 'spruce_planks', 2, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'stick', 4, null ]
+] 20 20

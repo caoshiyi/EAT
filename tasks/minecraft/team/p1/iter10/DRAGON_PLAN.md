@@ -1,0 +1,4 @@
+# After actual stronghold entry: survival bed alternative
+Goal remains actualdragon=1, notmilestone/measurement. No portal/Endentry claimed yet.
+Potential faster end fight than10crystals+bow: strongholdLIBRARY cobwebs→STRING withSTONEsword→WOOL(4string), woodfloors/planks→BEDS. 5beds needs15wool=60string+15planks; 1extraOVERWORLDspawn bed adds3wool. StandardEnd bedexplosions can damageperchingdragon fasterthancrystalhealing; properbedrock/Endstonecover andownblastdamage/same-lifechecks essential. This is a proposedsurvivalmethod, NOTqualifiedcombat/guaranteedkill. Libraryorretainedwoolactualreceiptbeforecraft; no longprepquota bydefault.
+Fallbackbow also needs3webstring+3sticks; snowballs canbreakcrystals ifnormalballisticreach+actualhit, no assumeddamage. P1currentstoneSword/Pick suffice forweb/Endstone/wood acquisition. Strongholdloot canprovidefood/ironarmor/bucket. Actualportalframeeyes willnamewhat remains forP2/P3; no cachedframe/score shortcut.

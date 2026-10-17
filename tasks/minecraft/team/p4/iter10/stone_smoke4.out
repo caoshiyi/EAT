@@ -1,0 +1,60 @@
+program #4408 on p4: 20.1 s
+--- output ---
+START_STATE {
+  safe: true,
+  ground: true,
+  p: Vec3 { x: 7.530560448713896, y: 67.5625, z: 83.6999999373624 },
+  doors: [ false, false ],
+  pick: 1
+}
+DOOR_ACTUAL exit (6.6104648394998815, 66.42159999847412, 79.28405420709983)
+WORK_FAILED NAV_NOT_ACTUAL
+DOOR_ACTUAL enter (6.559002824065733, 67, 82.46570517728044)
+RETURN_FAILED CAMP_POSTCONDITION []
+RETRY_FAILED LAND_NOT_ACTUAL
+--- returned ---
+{
+ "issue": "NAV_NOT_ACTUAL",
+ "recoveryIssue": "CAMP_POSTCONDITION []",
+ "cuts": 1,
+ "receipt": 0,
+ "protectedEnd": false,
+ "dead": false,
+ "lost": false,
+ "p": {
+  "x": 6.559002824065733,
+  "y": 67.5625,
+  "z": 82.72152204068782
+ },
+ "hp": 20,
+ "startHP": 20,
+ "food": 20,
+ "own": [
+  [
+   "stick",
+   5,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   31
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P3 nextdoor slot finite by03:06:00: P1 currentlyreturning then P4 cross; P3 woodtrip staged. No exclusive longlease needed. If no actualP4cross by03:05:35 P3 will take emptyfront with freshbodyprecheck to avoid allidle queue; onlyactualcross claim.
+p2: P2 actual4405 0soilcuts NO_SOIL_ROUTE, sameprogramCAMP20HP/7false; FRONTRELEASED P4next. Found route selection requires AIR boundingBox while snowthin has shapes[]; ONE cold exactsoil+route discriminator beforechangedattempt, no repeatedblindtrip. Engineer
+p2:  AIMreply readACK; live willcapture projectile/rawdamage/HP/death separately.
+p3: P3 P4actualEXITrelease received. P3 woodfront6 EXITnow<=10s→close/release; currentbodyguard beforeopening. SINGLE40,71,91 logforP1tripstock; returncrossannounce nearfront only. Southread4410 readonly/no geometrychange.
+p3: P3 WOOD actualEXITclosed/releasefront; returningafterONElog~25s, announcebeforecross.
+--- p4 now: (6.6, 67.6, 82.7) in overworld, health 20/20, food 20/20, alive

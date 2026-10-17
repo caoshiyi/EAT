@@ -57,3 +57,9 @@ Current coordinator/player/team token usage unavailable from permitted exposed e
 Iteration9 01:43UTC permittedagent_team/iter_9 listingfoundstarted/timeoutsettings/promptsidecars butNOcompleted*_output.json measurements. Currentteam/coordinator/playerusageunavailable, notzero; no prohibitedpathsconsulted.
 
 Iteration9 2026-10-17T02:54:31.912054+00:00: permitted agent_team/iter_9/*_output.json glob found ZERO completed result wrappers. Current coordinator/player/team measured usage unavailable, not zero. No counts/costs inferred and no prohibited locations consulted.
+
+Iteration10 2026-10-17T03:02:34.853146+00:00: token usage unavailable from permitted evidence; no estimate fabricated.
+
+Iteration10 2026-10-17T03:43:02.667892+00:00: coordinator/team token usage unavailable. Current runner role files found are .json.prompt, not completed results; failed CLI help invocation zero usage is excluded from team metrics.
+
+Iteration10 2026-10-17T04:56:26.051349+00:00: permitted agent_team/iter_10 enumeration at04:52:53 exposed only six .json.prompt files, no completed result usage or reachable session identifier. Current coordinator/player/team usage unavailable, not zero. Failed CLI discovery's zero-turn measurement is excluded; no extrapolation from program count, elapsed time or context budget.

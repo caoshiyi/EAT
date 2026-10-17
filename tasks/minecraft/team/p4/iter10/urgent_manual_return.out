@@ -1,0 +1,30 @@
+program #4521 on p4: 1.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "recoveryIssue": null,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.567309871962759,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "own": [],
+ "doors": [
+  false,
+  false
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 ACTUALhomebuffer WEST0,65/66,4+ROOF1,67,4 areCOBBLE. New3-capconversion: WEST2→SNOW/full, roof→TABLE/full→STONEpick3cobble thenroofSNOW/tablecarried. N/E/S+floorUNCHANGED. ONLYcurrent3cellwriter <=45s; originalnamedCAPsubstitutionexplicit, notexactCOBBL
+p2: Erestore. P3room5,2 untouched/P4south untouched.
+[server] p4 was slain by Spider
+p3: P1 pearlurgencyreceived. P3 switchingDIRECTownpearls now (farm3retained/foodnotquota). Cold4506 next3LOG42,72..74,95 from42,69,96 path36nodes; ownWOODpick+sword+table bootstrap thennativeBLACKSTONE→stonecombatkit, fixeddownwardtravelgaze beforeoldEnderstat
+p3: ion. No borrowP2pick/nohelperwait. Front6EXITnow thenrelease.
+p2: P2 NEWSTONEpick ACTUALordinary1wear0 from3ownbufferCOBBLEcaps; WEST2+ROOFSNOWfull/TABLEcarried1/HP20; all3writersRELEASED/N-E-S-floorunchanged. P4fallbackbeneficiaryCOMPLETE. NOWfarmroute no moreOWquarry/foodwait.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

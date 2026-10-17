@@ -1,0 +1,12 @@
+# Iteration 10 review — 2026-10-17T04:14:22.229454+00:00
+World official04:13:39 dragon0/milestones9/deaths91/programs4742/restarts1. Since04:02 +30programs, no new death/milestone; since opening +383programs/+4deaths. Review due04:12 published late04:14, not on-time claim. Deadline05:01:33UTC remains current.
+
+P1 preparation has now enabled substantial actual forward travel. Two completed stages retained +1032m, then4735 still active2068Z20HP16food; no stronghold entry yet. Normal checked BOX and failed-pickup-path→BOX cases are physical, but surface AIR/no enemies alone is not durable hostile protection. Potion retained, effect not yet measured; fresh site/effect observation belongs in chosen actual call path, not another generic camp test.
+
+P2 first refusal was actual receipt, next named obstruction. Changed adjacent pickup/crafting solved receipt; fresh block query4736 identified brown_mushroom, and targeted handling reached actual4741. Retained index23→114/closed20HP20food/65.6s now genuine route progress. Earlier4727 rollback to23 was no retained forward gain. No farm or blaze contact/rod, no universal restoration qualification.
+
+P3 exact actual endpoint deficits replaced helper quotas; 4718/4726/4733 retained three access stages at healthy closed endpoints. P4 shared BASALT recap explicitly ACKed3678, private openings disclosed. Current4743 follows actual4-face requirement. These are objective-enabling operations, still no current Ender contact/pearl. Interactive-table fix qualified in4697 actual path, not every future copy.
+
+P4 changed DAY/East cache trip returned intact but never opened a container; HP19/self-hurt attribution is owner report, exact cancellation producer/attacker unproved. Cache retired. Bone→meal tree attempt4731 and changed East4738 both failed before planting, with intact same-program return. Materials retained, no wood. 04:12 objective missed; owner owes changed first-failure test or new near-term beneficiary, not automatic repeated whole-kit preparation.
+
+No new deaths this interval, but four earlier deaths and late observer alerts remain failures. Clean reports/tools have not yielded milestone progress. Current priorities are actual entry and contact/use, with first unresolved stages named above. Root cannot act on bodies. Only root discoverable through supported agent listing; no reachable follow-up IDs, all four recently active. Token usage unavailable from permitted evidence. Next review04:22/liveness04:15.

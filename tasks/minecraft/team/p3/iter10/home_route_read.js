@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{p:bot.entity.position.clone(),hp:bot.health,cells:[[1,64,5],[1,65,5],[1,66,5],[1,67,5],[1,65,4],[1,66,4],[1,67,4]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])};

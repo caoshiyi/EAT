@@ -22,7 +22,7 @@ def summarize_return(raw):
         return value
     keys = ['p','actual','dimension','dim','hp','health','food','issue','error','phase',
             'full','closed','protected','protectedEnd','safe','floating','air','buried','recovered','lost','dead','died',
-            'discontinuity','elapsed','delta','logDelta','retainedLogs','pearl','rod',
+            'discontinuity','elapsed','ending','recoveryIssue','workIssue','qualified','entityId','caller','bodyInside','wetHead','wetAir','doorAir','wetReceipt','doorReceipt','selfAirPackets','otherAirPackets','delta','logDelta','retainedLogs','pearl','rod',
             'received','transition','gateClosed','ground','onGround','controls',
             'physicsListeners','deathListeners','selfAir','water','grounded',
             'target','aims','swings','hits','killed','pearlDelta','opened','platform','overhang','doors']
@@ -78,10 +78,11 @@ def ending_alert(record):
         return None
     final = states[-1]
     health = final.get('hp', final.get('health', 0))
-    exposed = any(final.get(k) is False for k in ('protected','protectedEnd','full','closed'))
-    if final.get('lost') or final.get('dead') or final.get('died') or not health or health <= 0:
+    exposed = any(final.get(k) is False for k in ('protected','protectedEnd','full','closed')) or final.get('ending') == 'UNRESOLVED'
+    if final.get('lost') or final.get('dead') or final.get('died') or not isinstance(health, (int, float)) or isinstance(health, bool) or health <= 0:
         return None
-    if not (exposed and (final.get('issue') or final.get('error') or final.get('floating'))):
+    reported_failure = final.get('issue') or final.get('error') or final.get('floating') or final.get('recoveryIssue') or re.search(r'(?m)^(?:RECOVERY_ISSUE|RETURN_FAILED|ENDING_FAILED)\b', record)
+    if not (exposed and reported_failure):
         return None
     alert = dict(summarize_return(json.dumps(final)))
     # Preserve explicit self-air observation immediately preceding final state.

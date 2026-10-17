@@ -1,0 +1,76 @@
+program #4750 on p4: 5.7 s
+--- output ---
+MEAL_EFFECT 1 spruce_log { axis: 'y' }
+--- returned ---
+{
+ "issue": null,
+ "planted": true,
+ "grew": true,
+ "mealUses": 1,
+ "cut": true,
+ "logGain": 1,
+ "root": "air",
+ "soil": "dirt",
+ "upper": [
+  [
+   70,
+   "spruce_log"
+  ],
+  [
+   71,
+   "spruce_log"
+  ],
+  [
+   72,
+   "spruce_log"
+  ],
+  [
+   73,
+   "spruce_log"
+  ],
+  [
+   74,
+   "spruce_log"
+  ],
+  [
+   75,
+   "spruce_leaves"
+  ],
+  [
+   76,
+   "spruce_leaves"
+  ]
+ ],
+ "p": {
+  "x": 6.3,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "protectedEnd": true,
+ "own": [
+  [
+   "bone_meal",
+   2
+  ],
+  [
+   "spruce_log",
+   1
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.3, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

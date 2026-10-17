@@ -1,0 +1,98 @@
+program #4944 on p3: 15.6 s
+--- output ---
+UNARMED_NO_HARVEST Vec3 { x: 1, y: 65, z: 5 } blackstone
+SHARED_TABLE_ACTUAL_PICKUP
+ACTUAL 1,65,5 13701
+ACTUAL 1,65,4 14203
+SHARED_SOUTH_TYPES [ 'blackstone', 'crafting_table', 'dirt' ]
+--- returned ---
+{
+ "caller": "iter10_return_home",
+ "entityId": 170,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 1.497279375357623,
+  "y": 65,
+  "z": 4.525403770103322
+ },
+ "hp": 20,
+ "food": 19,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   1,
+   65,
+   5
+  ],
+  [
+   1,
+   65,
+   4
+  ]
+ ],
+ "elapsed": 15556,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   2
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   58
+  ],
+  [
+   "wooden_shovel",
+   1,
+   5
+  ],
+  [
+   "warped_nylium",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   9,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   60
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 19/20, alive

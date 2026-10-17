@@ -1,0 +1,76 @@
+program #4907 on p3: 1.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "caller": "iter10_station_loot_roof2",
+ "activeDropId": 29401,
+ "entityId": 170,
+ "p": {
+  "x": -97.46196794510723,
+  "y": 63,
+  "z": 86.5026739401111
+ },
+ "hp": 20,
+ "food": 19,
+ "issue": "THREAT_BEFORE_CUT",
+ "hurt": false,
+ "lost": false,
+ "full": true,
+ "pearlBefore": 1,
+ "pearlNow": 1,
+ "elapsed": 1185,
+ "trace": [
+  [
+   "FRESH_DROP",
+   29401,
+   {
+    "x": -100.02218596097006,
+    "y": 63,
+    "z": 85.49074906597419
+   },
+   1792212579216
+  ],
+  [
+   "UNARMED_NO_HARVEST",
+   {
+    "x": -99,
+    "y": 64,
+    "z": 86
+   }
+  ],
+  [
+   "ROOF_EXTENSION_FULL",
+   {
+    "x": -100,
+    "y": 65,
+    "z": 86
+   }
+  ],
+  [
+   "CURRENT_THREAT",
+   27990,
+   "enderman",
+   {
+    "x": -98.559308257311,
+    "y": 63,
+    "z": 87.30009764432907
+   },
+   24,
+   true,
+   true
+  ],
+  [
+   "CAP",
+   {
+    "x": -99,
+    "y": 64,
+    "z": 86
+   },
+   "basalt"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-97.5, 63, 86.5) in the_nether, health 20/20, food 19/20, alive

@@ -1,0 +1,49 @@
+program #4912 on p2: 1.1 s
+--- output ---
+LIVE_CLOSED_CANDIDATES [[31703,{"x":-129.69999998807907,"y":63.13337889313698,"z":-429.5055732639189},20,null,{"p":{"x":-129.69999998807907,"y":63.83337889313698,"z":-429.5055732639189},"d":1.7982494973535066}],[31542,{"x":-129.04765999115787,"y":63,"z":-428.30000001192093},20,0,{"p":{"x":-129.04765999115787,"y":63.7,"z":-428.30000001192093},"d":2.7054422283602957}],[31543,{"x":-128.49332002632434,"y":63,"z":-430.2140541831674},20,null,{"p":{"x":-128.49332002632434,"y":63.7,"z":-430.2140541831674},"d":3.083806964324297}]]
+LIVE_THROW_DISPATCH {"target":31703,"targetP":{"x":-129.70463865995407,"y":63.04304686188698,"z":-429.5042146586911},"targetHP":20,"aim":{"x":-129.69999998807907,"y":63.95227537751198,"z":-429.5044587993161},"d":1.8161778340691253,"p":{"x":-131.485211168844,"y":62,"z":-429.4710516363834},"yaw":-1.5524702098591656,"pitch":0.18325949156446386,"utc":"2026-10-17T04:50:33.499Z"}
+LIVE_PROJECTILE_SPAWN {"id":31829,"p":{"x":-131.485211168844,"y":63.520000003278255,"z":-429.4710516363834},"v":{"x":1.463625,"y":0.253125,"z":-0.031625},"utc":"2026-10-17T04:50:33.500Z"}
+LIVE_DAMAGE_PACKET {"entityId":31658,"sourceTypeId":39,"sourceCauseId":170,"sourceDirectId":31830,"utc":"2026-10-17T04:50:33.545Z"}
+LIVE_PROJECTILE_AFTER2 [{"id":31829,"valid":false}]
+LIVE_ONE_ISSUE Server refused to place netherrack at (-131, 63, -430): the block is still air Vec3 { x: -131.485211168844, y: 62, z: -429.4710516363834 } 5.333335876464844
+LIVE_ONE_END_FAILED Server refused to place netherrack at (-131, 63, -430): the block is still air
+--- returned ---
+{
+ "issue": "Server refused to place netherrack at (-131, 63, -430): the block is still air",
+ "lost": false,
+ "thrown": true,
+ "target": 31703,
+ "raw": [
+  {
+   "entityId": 31658,
+   "sourceTypeId": 39,
+   "sourceCauseId": 170,
+   "sourceDirectId": 31830,
+   "utc": "2026-10-17T04:50:33.545Z"
+  }
+ ],
+ "kills": [],
+ "ammo": [
+  15,
+  14
+ ],
+ "rod": [
+  0,
+  0
+ ],
+ "hp": [
+  5.333335876464844,
+  5.333335876464844
+ ],
+ "p": {
+  "x": -131.485211168844,
+  "y": 62,
+  "z": -429.4710516363834
+ },
+ "full": false,
+ "openMs": null,
+ "elapsed": 1059
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-131.5, 62, -429.5) in the_nether, health 5.3/20, food 17/20, alive

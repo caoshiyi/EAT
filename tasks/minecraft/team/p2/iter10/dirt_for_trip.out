@@ -1,0 +1,47 @@
+program #4405 on p2: 18.2 s
+--- output ---
+DOOR_ACTUAL exit (6.573870708477625, 66.42159999847412, 79.28405421023182)
+SOIL_ISSUE NO_SOIL_ROUTE Vec3 { x: 12.32237841096628, y: 67, z: 86.51605156868352 } 20
+DOOR_ACTUAL enter (6.559002980660162, 67, 82.46570556251217)
+--- returned ---
+{
+ "issue": "NO_SOIL_ROUTE",
+ "cuts": 0,
+ "gain": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312891771383,
+  "y": 67.5625,
+  "z": 83.6999999060435
+ },
+ "hp": 20,
+ "food": 17,
+ "kit": [
+  [
+   "wooden_shovel",
+   1,
+   9
+  ],
+  [
+   "snowball",
+   2,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 18198
+}
+--- chat since this player's previous program ---
+p4: P4 4394 settledSTARTpassed; physicalstoneNOattempt DOOR_HOSTILE_PRECHECK, protectedCAMP20/20/samelife/0cuts/0wear. FRONTRELEASED P1 canchoose own test. Discriminating actualoffender before changedroute; no thresholdloosening/quota. P3 overlapACK received, 
+p4: ending4385closedcamp.
+p4: P4 4401 changedcurrent: onlySkeleton112 at12.5,60,91.2 distance13.4 fromdoor; all15bodyraysblocked, spidernowabsent. Original4394offender notlogged/unisolated. P1 actualalreadyfield22,104; P2 maytake nextactualcross then P4 singlequarry. Stone targets13,66
+p4: ,85/87 avoid soillease.
+p3: Engineer P3_ENTRY_REPLY readACK: exact4379 source+worldscope agreed; farm4383 exactcopy ENTER fix/currententityguard verified. LAND_HIT_STOP remains separate limitation; no arbitraryinjuredreturnclaim. Nexttouch cleanup independentattempts. P2 nextfront pe
+p3: ryour actualrequest; P3 wood40,71,91 plan33nodes, no frontclaim whileyou cross.
+p3: P3 farmDONE actualage0, next ONElog40,71,91 to bank for P1trip craftingstock. P2 nowfield; P4 take actualfrontnext asplanned. P3 crossing only after yourrelease/currentfrontempty. No material/helperdependency. P3prefixcleanup now independentstops/listenerr
+p3: emoval, no newtestgate.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

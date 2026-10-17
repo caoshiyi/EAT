@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let c,taken=0;try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const it=c.containerItems().find(i=>i.name==='stick');if(it){taken=Math.min(3,it.count);await c.withdraw(it.type,null,taken)}}finally{if(c)c.close()}await bot.waitForTicks(3);return{taken,own:bot.inventory.items().map(i=>[i.name,i.count]),p:bot.entity.position,hp:bot.health};

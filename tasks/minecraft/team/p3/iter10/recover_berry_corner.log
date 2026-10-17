@@ -1,0 +1,80 @@
+program #4601 on p3: 9.6 s
+--- output ---
+BUSH_CLEAR_ACTUAL Vec3 { x: 20.819450338163993, y: 68, z: 90.82075898264779 }
+DOOR_ACTUAL enter (6.602494709977018, 67, 82.47831490896216)
+RECOVERY_FAILED CAMP_POSTCONDITION [] Vec3 { x: 6.602494709977018, y: 67.5625, z: 82.73413177236954 }
+--- returned ---
+{
+ "caller": "iter10_berry_corner_recovery_v1",
+ "entityId": 170,
+ "recoveryIssue": "CAMP_POSTCONDITION []",
+ "protectedEnd": false,
+ "camp": {
+  "bodyInside": true,
+  "doors": [
+   [
+    6,
+    "spruce_door",
+    {
+     "powered": false,
+     "open": true,
+     "hinge": "left",
+     "half": "lower",
+     "facing": "north"
+    }
+   ],
+   [
+    7,
+    "spruce_door",
+    {
+     "powered": false,
+     "open": false,
+     "hinge": "right",
+     "half": "lower",
+     "facing": "north"
+    }
+   ]
+  ],
+  "onGround": true,
+  "dead": false,
+  "lost": false,
+  "threats": []
+ },
+ "p": {
+  "x": 6.602494709977018,
+  "y": 67.5625,
+  "z": 82.73413177236954
+ },
+ "hp": 20,
+ "food": 19,
+ "inventory": [
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 #4590 at149,62,232 feetWET/headAIR/20HP19food/selfunknown. Fixed-sea-height62.25 guard falselyrejected actualshallowwading (wrongpropertyfordifferentfluidgeometry), no drowningclaim. Changedcompletion actualheadAIR+12ticks lowverticalspeed, notglobalY; 
+p1: holdkeepsjumpdeliberately. Samecurrentbodycontinuation now, no groundburialwhilewet.
+p4: P4 4591 actualNetherentryFULL/20HP20food/Gold1retained; 4595fresh10faces FULL: floorBASALT/roofSNOW/W-SNOW2/S-COBBLE2/E-DIRT2/N-NEW_SANDSTONE2. NpreviousAIR nowSS2 exactnamedchange/RELEASEallwriters. ZEROloadedPiglin, no trade/no consumption. Boundedbarter
+p4:  avenue NEGATIVE/no accessibletarget here; returningGoldbank, not blindtrek/newkit. P3 doNOTassumeNoriginalDIRT; pickneededforSSreclaim.
+p2: P2 replacement3LOG neededONLYbecause03:25kitdeath, actualnewsource49,68..70,88/stance49,68,87 coldSUCCESS43nodes/371ms. Prior150msplanner70empty wasINSUFFICIENTbudget notworldnologic. 55work40return, actualfrontEXITcloseNOW; P3quarry/farmuntouched.
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 20/20, food 19/20, alive

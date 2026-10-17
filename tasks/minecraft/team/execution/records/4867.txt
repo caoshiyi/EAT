@@ -1,0 +1,111 @@
+== #4867 2026-10-17T04:41:16 p2 role=acquisition_owner iter=10 35.6 s
+const{Vec3}=require("vec3");bot.clearControlStates();bot.pathfinder.setGoal(null);const start=Date.now(),entity=bot.entity,initialHP=bot.health,full=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(",")==="0,0,0,1,1,1"),cold=()=>bot.inventory.items().find(i=>["nether_bricks","netherrack","basalt","blackstone"].includes(i.name));let q=bot.entity.position.floored(),issue=null,closed=false,lost=false,cuts=0;const die=()=>{lost=true;bot.clearControlStates()};bot.on("death",die);async function t(n){for(let k=0;k<n;k++){await bot.waitForTicks(1);if(lost||bot.entity!==entity||bot.game.dimension!=="the_nether"||bot.health<=0)throw Error("LIFE")}}function shell(p){return[p.offset(0,-1,0),p.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[0,1].map(y=>p.offset(x,y,z)))].every(full)}
+function guard(next){const skip=new Set([q,next].flatMap(p=>[p.toString(),p.offset(0,1,0).toString()]));for(const e of Object.values(bot.entities)){if(!["blaze","ghast","skeleton","wither_skeleton","piglin","hoglin","magma_cube"].includes(e.name)||e.position.distanceTo(next.offset(.5,0,.5))>64)continue;for(const body of[q,next])for(const h of[.5,1.62])for(const eh of[.4,Math.min(e.height||1.8,2),Math.max(1.5,(e.height||1.8)*.9)]){const eye=body.offset(.5,h,.5),v=e.position.offset(0,eh,0).minus(eye);if(!bot.world.raycast(eye,v.unit(),v.norm(),(b,it)=>!skip.has(b.position.toString())&&full(b.position)&&!!it.intersect(b.shapes,b.position)))throw Error("LOWER_EXPOSED_"+e.name+"_"+e.id)}}}
+async function put(p){if(full(p))return;const eye=bot.entity.position.offset(0,1.62,0);let ref=null;for(const d of[[0,-1,0],[0,1,0],[-1,0,0],[1,0,0],[0,0,1],[0,0,-1]]){const r=p.offset(...d);if(!full(r))continue;const face=p.minus(r),click=r.offset(.5+face.x*.5,.5+face.y*.5,.5+face.z*.5),v=click.minus(eye),hit=bot.world.raycast(eye,v.unit(),v.norm()+.01,(b,it)=>!!it.intersect(b.shapes,b.position));if(hit?.position.equals(r)){ref=r;break}}if(!ref||!cold())throw Error("LOWER_PUT_REF_"+p);await bot.equip(cold(),"hand");bot.setControlState("sneak",true);try{await bot._placeBlockWithOptions(bot.blockAt(ref),p.minus(ref),{forceLook:true})}finally{bot.clearControlStates()}await t(2);if(!full(p))throw Error("LOWER_PUT_ACK")}
+async function cut(p){const b=bot.blockAt(p);if(b?.name==="air")return;if(!["nether_bricks","netherrack","basalt","blackstone","nether_brick_fence"].includes(b?.name))throw Error("LOWER_KIND_"+b?.name);for(const d of[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]]){const n=bot.blockAt(p.offset(...d));if(!n||/lava|water|fire/.test(n.name))throw Error("LOWER_FLUID")}const pick=b.name==="nether_brick_fence"?null:bot.inventory.items().find(i=>i.name==="stone_pickaxe"&&i.durabilityUsed<127)||bot.inventory.items().find(i=>i.name==="wooden_pickaxe"&&i.durabilityUsed<57);if(pick)await bot.equip(pick,"hand");else await bot.unequip("hand");if(Date.now()-start+bot.digTime(b)>65000)throw Error("LOWER_WORK_END");await bot.dig(b);await t(3);if(bot.blockAt(p)?.name!=="air")throw Error("LOWER_CUT_ACK");cuts++}
+async function move(p){for(const a of["z","x"]){let k=0;while(Math.abs(bot.entity.position[a]-p[a]-.5)>.10&&k++<35){await bot.lookAt(bot.entity.position.offset(a==="x"?Math.sign(p[a]+.5-bot.entity.position.x)*3:0,1.4,a==="z"?Math.sign(p[a]+.5-bot.entity.position.z)*3:0),true);bot.setControlState("forward",true);await t(1);bot.clearControlStates();await t(2)}}await t(3);if(bot.entity.position.distanceTo(p.offset(.5,0,.5))>.24||!bot.entity.onGround)throw Error("LOWER_MOVE_ACTUAL")}
+try{if(!shell(q)||q.y!==57||q.z!==-430||bot.health<5||q.x>=-133)throw Error("LOWER_START");for(let stage=0;stage<16&&q.x<-133;stage++){if(Date.now()-start>55000)throw Error("LOWER_WORK_END");if(bot.health<initialHP-.01)throw Error("LOWER_DAMAGE");const next=q.offset(1,0,0);if(!full(next.offset(0,-1,0))||!full(next.offset(0,2,0)))throw Error("LOWER_FLOOR_ROOF");for(const z of[-1,1])for(const y of[0,1]){const side=next.offset(0,y,z);if(!full(side)&&bot.blockAt(side)?.name!=="nether_brick_fence")throw Error("LOWER_SIDE_KIND");if(!full(side)&&!full(side.offset(0,-1,0)))throw Error("LOWER_FENCE_FLOOR")}guard(next);await cut(next.offset(0,1,0));await cut(next);for(const z of[-1,1])for(const y of[0,1]){const side=next.offset(0,y,z);if(!full(side)){await cut(side);await put(side)}}guard(next);await move(next);q=next;console.log("LOWER_ADVANCE_ACTUAL",q.x,bot.health,bot.food,cuts,bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]));} }catch(e){issue=e.message;console.log("LOWER_ISSUE",issue,q,bot.entity.position,bot.health)}finally{bot.clearControlStates();if(!lost)try{const p=bot.entity.position;const actual=new Vec3(Math.floor(p.x),Math.round(p.y),Math.floor(p.z));if(Math.abs(p.y-57)>.1)throw Error("ENDING_HEIGHT");q=actual;for(const [x,z]of[[1,0],[-1,0],[0,1],[0,-1]])for(const y of[0,1])await put(q.offset(x,y,z));closed=shell(q);if(closed)global.P2NetherStage={kind:"LOWER_ROOM",feet:[q.x,q.y,q.z],at:Date.now()};}catch(e){console.log("LOWER_END_FAILED",e.message,bot.entity.position,bot.health)}bot.clearControlStates();bot.removeListener("death",die)}return{issue,closed,lost,p:bot.entity.position,hp:bot.health,food:bot.food,cuts,elapsed:Date.now()-start,kit:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+LOWER_ADVANCE_ACTUAL -205 5.333335876464844 17 2 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 68 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 5, null ],
+  [ 'nether_bricks', 3, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -204 5.333335876464844 17 4 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 70 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 6, null ],
+  [ 'nether_bricks', 4, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -203 5.333335876464844 17 6 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 72 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 7, null ],
+  [ 'nether_bricks', 5, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -202 5.333335876464844 17 8 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 74 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 8, null ],
+  [ 'nether_bricks', 6, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -201 5.333335876464844 17 10 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 76 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 7, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -200 5.333335876464844 17 12 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 78 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 10, null ],
+  [ 'nether_bricks', 8, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -199 5.333335876464844 17 14 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 80 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 10, null ],
+  [ 'nether_bricks', 10, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -198 5.333335876464844 17 17 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 82 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 12, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -197 5.333335876464844 17 19 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 84 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 14, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ADVANCE_ACTUAL -196 5.333335876464844 17 21 [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 86 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 9, null ],
+  [ 'nether_bricks', 16, null ],
+  [ 'crafting_table', 1, null ]
+]
+LOWER_ISSUE LOWER_FENCE_FLOOR Vec3 { x: -196, y: 57, z: -430 } Vec3 { x: -195.40253121787995, y: 57, z: -429.4710469855429 } 5.333335876464844
+-- returned --
+{"issue": "LOWER_FENCE_FLOOR", "closed": true, "lost": false, "p": {"x": -195.3994303133953, "y": 57, "z": -429.4710469855429}, "hp": 5.333335876464844, "food": 17, "cuts": 21, "elapsed": 35556, "kit": [["snowball", 15, null], ["stick", 2, null], ["wooden_pickaxe", 1, 6], ["stone_pickaxe", 1, 86], ["wooden_shovel", 1, 43], ["netherrack", 7, null], ["nether_bricks", 16, null], ["crafting_table", 1, null]]}

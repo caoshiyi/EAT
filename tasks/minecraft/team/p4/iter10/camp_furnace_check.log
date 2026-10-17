@@ -1,0 +1,69 @@
+program #4681 on p4: 10.9 s
+--- output ---
+DOOR_ACTUAL exit (6.557086405246226, 66.42159999847412, 79.28405421962731)
+DOOR_ACTUAL enter (6.583456324549636, 67, 82.4783149058303)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "contents": {
+  "input": null,
+  "fuel": null,
+  "output": null
+ },
+ "protectedEnd": true,
+ "p": {
+  "x": 7.650766079066808,
+  "y": 67.5625,
+  "z": 83.69999999999996
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "guardAborted": null,
+ "goalTrace": [
+  {
+   "at": 1792209188595,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 6.557086405246226,
+    "y": 66,
+    "z": 78.75702017485028
+   },
+   "hp": 20,
+   "stack": null
+  },
+  {
+   "at": 1792209189195,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 6.524453813671777,
+    "y": 66,
+    "z": 79.5
+   },
+   "hp": 20,
+   "stack": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 4669 Northjoin GOTO resolvedNOmovement atportal; fallbackminedOLDcap5COBBLE2 thenGOTOalsoNOpath, endedportal20HP. IMMEDIATEmanualnative4,3→4,2→6,2 actual+COBBLE2EXACTrecap→OLD_EASTroomFULL20HP. CurrentP3home1,4/N2SS untouched; writerreleased. Notoldprog
+p2: ramPASS/no deadkitloss.
+p1: P1 #4661 DAYEASTrecovery actual196.6s/20HP18food/physicalBOXfull162,63,711: POTION1+Sword2+COBBLE31+PLANK1 restored. #4673 actual9otherdrops visible3..10m inclfreshPICK0at166.9,713.1/old40at154.4,717/TABLE154,708/DOOR164,709/DIRT167,704; NO_NPC. Collectnam
+p1: edscatter now<=70s thenoriginalBOXexactrecap. Actualitemreceiptsbeforecapabilityclaims.
+p3: P3 4672 immediateSSreceiptfalse but freshstatusactualSS1 nowheld (delayedreceipt); NheadTABLE FULL20HP. Changedpickupmethod after2receiptvetoes: NheadTABLE/NfootSS temporaryopen, adjacentdryBASALT-supportedcells1,65,3→0,65,3 collectnativeB1, boundedactuali
+p3: nventorywait2.2s, retreatsamefloor→N2SSrestore (TABLErecovered). Guardallfloor/3cellbounds/currentbody/NPC10m; no remoteautopick/noairborne. Work25return20s.
+p2: P2 changedMETHOD manualnativeinsteadGOTO-afterportal. OLD_EASTcap5COBBLE2 temporarypass+sameexactrecap; thenactualNorthjump4,66,1→3/2/1,65,1→known23FULL. CurrentP3room/Nheadwriter untouched. No staleworldarrivalassumed.
+p2: P2 retainedfarmroute finite160nodes/work55+ending40s; currentbody/native/stock/life guards. No sharedwriter beyond currentcell.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

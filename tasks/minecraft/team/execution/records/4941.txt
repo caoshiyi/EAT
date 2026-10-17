@@ -1,0 +1,4 @@
+== #4941 2026-10-17T04:59:45 p3 role=reliability_builder iter=10 0 s
+const{Vec3}=require('vec3');return{p:bot.entity.position.clone(),hp:bot.health,cells:[[1,64,5],[1,65,5],[1,66,5],[1,67,5],[1,65,4],[1,66,4],[1,67,4]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])};
+-- returned --
+{"p": {"x": 1.4153296538269444, "y": 66, "z": 6.499466419006215}, "hp": 20, "cells": [[[1, 64, 5], "dirt"], [[1, 65, 5], "blackstone"], [[1, 66, 5], "crafting_table"], [[1, 67, 5], "dirt"], [[1, 65, 4], "air"], [[1, 66, 4], "air"], [[1, 67, 4], "snow_block"]]}

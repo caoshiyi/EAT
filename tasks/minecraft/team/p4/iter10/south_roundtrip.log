@@ -1,0 +1,72 @@
+program #4786 on p4: 10.1 s
+--- output ---
+SOUTH_ISSUE AXIS_z Vec3 { x: 7.7, y: 67.5625, z: 83.7 } 20
+--- returned ---
+{
+ "issue": "AXIS_z",
+ "repairIssue": null,
+ "opened": true,
+ "exit": false,
+ "entered": false,
+ "receipts": [
+  [
+   68,
+   0,
+   1
+  ],
+  [
+   67,
+   1,
+   2
+  ]
+ ],
+ "p": {
+  "x": 7.7,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "south": [
+  [
+   "(7, 67, 84)",
+   "dirt"
+  ],
+  [
+   "(7, 68, 84)",
+   "dirt"
+  ]
+ ],
+ "protectedEnd": true,
+ "own": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "bone_meal",
+   2,
+   null
+  ],
+  [
+   "wooden_axe",
+   1,
+   2
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

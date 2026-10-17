@@ -1,0 +1,18 @@
+program #4835 on p2: 4.7 s
+--- output ---
+FORWARD_EXIT_COLUMN_RECLAIM [ [ -283, 61, -394 ], [ -283, 62, -394 ] ]
+EXACT_STEP Vec3 { x: -283, y: 61, z: -394 } Vec3 { x: -282.5413771905078, y: 61, z: -393.59963754091274 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -283, 62, -394 ], [ -283, 61, -394 ] ] 2 15
+EXACT_STEP Vec3 { x: -284, y: 61, z: -394 } Vec3 { x: -283.4189931451074, y: 61, z: -393.59963752003347 } 20
+FAST_STAGE_ISSUE RECLAIM_BODY_RESERVE 811 811 Vec3 { x: -283.4189931451074, y: 61, z: -393.59963752003347 } 20
+EXACT_STEP Vec3 { x: -284, y: 61, z: -394 } Vec3 { x: -283.4145657109548, y: 61, z: -393.59963752003347 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-284,61,-394],"surface":[-284,61,-394],"index":811,"placed":[[-283,61,-394],[-283,62,-394]]} 20 20
+FAST_STAGE_END {"issue":"RECLAIM_BODY_RESERVE","closed":true,"startIndex":811,"endIndex":-1,"currentIndex":811,"p":{"x":-283.4145657109548,"y":61,"z":-393.59963752003347},"hp":20,"food":20,"lost":false,"sharedPending":[],"elapsed":4727}
+FINAL_KIT [["crafting_table",1,null],["snowball",15,null],["stick",2,null],["wooden_pickaxe",1,4],["stone_pickaxe",1,60],["wooden_shovel",1,43]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],"air"],[[-133,64,-430],"nether_bricks"],[[-141,60,-430],"air"],[[-141,62,-430],"nether_bricks"],[[-132,63,-430],"nether_bricks"]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-283.4, 61, -393.6) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,35 @@
+program #4510 on p4: 13.7 s
+--- output ---
+DOOR_ACTUAL exit (6.587898392266181, 66.42159999847412, 79.28405420396803)
+WORK_FAILED Took to long to decide path to goal!
+DOOR_ACTUAL enter (6.555753008699962, 67, 82.45930748042832)
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "recoveryIssue": null,
+ "delta": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.623062893712041,
+  "y": 67.5625,
+  "z": 83.699999921703
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "own": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: Newadvance smallfield #4508 actual20swork+4.7ending, moved76m→29,61,122 nativeSHAFTFULL20HP18food/all7false; pickwear0. Nextsameverifiedcapability toward147,230berries thenstronghold, no moreairinstrumentation. P3fooddependencyreleased usingknownberryroute
+p1: ; missingremainingeyes/pearls nowmoreurgent thanquotafood ifownmethodavailable. P4BOAT retainedhistorical1043secZEROmotion soNOTtransport/retest; thankyou actualpick.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

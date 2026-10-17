@@ -1,0 +1,75 @@
+== #4718 2026-10-17T04:03:36 p3 role=reliability_builder iter=10 31 s
+bot.pathfinder.LOSWhenPlacingBlocks=false;
+global.P3LowerRoute9={origin:[1,66,6],path:[[0,67,6],...Array.from({length:52},(_,i)=>[0,67,7+i])],at:Date.now()};
+const originals=new Map();
+const {Vec3}=require('vec3');const V=a=>new Vec3(...a),began=Date.now(),home=bot.entity.position.floored(),dim=bot.game.dimension,health=bot.health;const self=bot.entity;let hurt=false;let phase='work',dead=false,issue=null,walked=[],closed=false;const f=b=>b&&b.boundingBox==='block'&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|magma|fire|water/.test(b.name);const faces=p=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>p.offset(...d));const shell=p=>faces(p).every(q=>f(bot.blockAt(q)));const capNames=['dirt','granite','basalt','blackstone','cobblestone','netherrack','spruce_planks'];const held=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((n,i)=>n+i.count,0);
+const stop=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)};bot.on('death',stop);bot.on('respawn',stop);const hd=e=>{if(e===bot.entity){hurt=true;if(phase==='work'){bot.clearControlStates();bot.pathfinder.setGoal(null);bot.stopDigging()}}};bot.on('entityHurt',hd);bot.clearControlStates();bot.pathfinder.setGoal(null);
+const check=()=>{if(dead||bot.entity!==self||bot.game.dimension!==dim||bot.health<=0)throw Error('DISCONTINUITY');if(Date.now()-began>(phase==='work'?60000:110000))throw Error('TIME_'+phase);if(phase==='work'&&(hurt||bot.health<health))throw Error('HURT');};
+const tick=async n=>{check();await bot.waitForTicks(n);check();};
+const threat=(next=bot.entity.position.floored())=>Object.values(bot.entities).find(e=>{if(!['magma_cube','piglin','hoglin','blaze','ghast'].includes(e.name)&&!(e.name==='enderman'&&(e.metadata?.[17]===true||e.metadata?.[18]===true)))return false;let cur=bot.entity.position,range=e.name==='ghast'?32:e.name==='enderman'?6:5;if(Math.min(e.position.distanceTo(cur),e.position.distanceTo(next))>=range)return false;for(let a of[cur,next.offset(.5,0,.5)])for(let y of[.5,1.6]){const from=a.offset(0,y,0);if(bot.blockAt(from.floored())?.boundingBox!=='empty')continue;const to=e.position.offset(0,(e.height||2)*.5,0),delta=to.minus(from);if(!bot.world.raycast(from,delta.unit(),delta.norm()))return true;}return false;});
+async function cut(q){let b=bot.blockAt(q);if(['(0, 67, 6)','(1, 68, 6)'].includes(q.toString())&&b?.boundingBox!=='empty'&&!originals.has(q.toString()))originals.set(q.toString(),b?.name);if(b?.boundingBox==='empty')return;if(!['basalt','blackstone','granite','dirt','cobblestone','netherrack','warped_nylium','spruce_planks'].includes(b?.name))throw Error('CUT_'+b?.name);for(let d of[[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]])if(/lava|fire|magma|water|gravel|sand/.test(bot.blockAt(q.offset(...d))?.name||'null'))throw Error('CUT_HOT');if(b.name==='dirt'){await bot.unequip('hand');await bot.dig(b,true);await tick(3);if(bot.blockAt(q).boundingBox!=='empty')throw Error('SOFT_CUT_ACK');return;}throw Error('UNEXPECTED_HARD_OBSTACLE_'+b.name);}
+async function put(q){if(f(bot.blockAt(q)))return;if(['brown_mushroom','red_mushroom','warped_roots','nether_sprouts'].includes(bot.blockAt(q)?.name)){await bot.dig(bot.blockAt(q));await tick(2);}const original=originals.get(q.toString());const it=bot.inventory.items().find(i=>i.name===(original||'dirt'));if(!it)throw Error('CAP_STOCK');for(let d of[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]]){let r=bot.blockAt(q.offset(...d));if(f(r)){await bot.equip(it,'hand');bot.setControlState('sneak',true);await tick(1);await bot._placeBlockWithOptions(r,V(d.map(v=>-v)),{forceLook:true});await tick(3);bot.clearControlStates();if(!f(bot.blockAt(q)))throw Error('CAP_ACK');return;}}throw Error('CAP_REF');}
+async function close(p){bot.clearControlStates();await tick(10);const settled=bot.entity.position.floored();if(!settled.equals(p)){console.log('CLOSE_SETTLED_CHANGE',p,settled);p=settled;}await move(p);await tick(3);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-p.x-.5)>.18||Math.abs(bot.entity.position.z-p.z-.5)>.18)throw Error('CLOSE_BODY_PRE');let need=faces(p).filter(q=>!f(bot.blockAt(q)));const extra=[[1,0],[-1,0],[0,1],[0,-1]].filter(([x,z])=>!f(bot.blockAt(p.offset(x,0,z)))&&!f(bot.blockAt(p.offset(x,-1,z)))).length+(!f(bot.blockAt(p.offset(0,2,0)))&&!f(bot.blockAt(p.offset(1,2,0)))?1:0);const stockBefore=held();if(stockBefore<need.length+extra)throw Error('CLOSE_NEED_'+need.length+'_HELD_'+stockBefore);for(let d of[[1,0],[-1,0],[0,1],[0,-1]]){let lo=p.offset(d[0],0,d[1]);if(!f(bot.blockAt(lo))){let below=lo.offset(0,-1,0);if(!f(bot.blockAt(below)))await put(below);await put(lo);}await put(lo.offset(0,1,0));}if(!f(bot.blockAt(p.offset(0,2,0)))){await put(p.offset(1,2,0));await put(p.offset(0,2,0));}return shell(p);}
+async function move(q){check();let p=bot.entity.position.floored(),dy=q.y-p.y;let t=Date.now(),jumpTicks=0;try{while(true){let a=bot.entity.position,dx=q.x+.5-a.x,dz=q.z+.5-a.z;if(Math.hypot(dx,dz)<.13&&Math.abs(a.y-q.y)<.08&&bot.entity.onGround)break;if(Date.now()-t>4500)throw Error('MOVE_BOUND_'+q);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');if(phase==='work'&&threat(q))throw Error('THREAT_'+threat(q).name);await bot.look(Math.atan2(-dx,-dz),-Math.PI/2,true);bot.setControlState('jump',dy>0&&jumpTicks++<4);bot.setControlState('sneak',dy>=0&&Math.hypot(dx,dz)<.7);bot.setControlState('forward',Math.hypot(dx,dz)>.1);await tick(1);}}finally{bot.clearControlStates()}await tick(2);if(!bot.entity.position.floored().equals(q)||!bot.entity.onGround)throw Error('MOVE_ACTUAL');}
+try{const plan=global.P3LowerRoute9;if(!plan||!home.equals(V(plan.origin))||!shell(home)||health<12)throw Error('START');const endpoint=V([0,67,58]);const need=faces(endpoint).filter(q=>!f(bot.blockAt(q)));if(need.length!==2||need.some(q=>q.x!==0||q.z!==57||![67,68].includes(q.y)))throw Error('ENDPOINT_CHANGED');await cut(V([1,68,6]));const re=Date.now()+2500;while(held()<1&&Date.now()<re){bot.setControlState('jump',true);await tick(2);}bot.clearControlStates();for(let n=0;n<25&&!bot.entity.onGround;n++)await tick(1);if(held()<1)throw Error('ROOF_RECEIPT');for(let a of plan.path){check();const q=V(a),p=bot.entity.position.floored();if(threat(q))throw Error('THREAT_'+threat(q).name);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');let cs=[q.offset(0,1,0),q];if(q.y>p.y)cs.unshift(p.offset(0,2,0));if(q.y<p.y)cs.unshift(q.offset(0,2,0));for(let c of cs){await cut(c);check();}if(threat(q))throw Error('THREAT_AFTER_CUT');await move(q);walked.push(a);if(a[0]===0&&a[2]===6){const receiptEnd=Date.now()+2500;while(held()<2&&Date.now()<receiptEnd)await tick(2);if(held()<2)throw Error('LONG_LEG_STOCK_ACTUAL');console.log('OPENING_DIRT_RECEIVED',held());}console.log('ACTUAL',a.join(','),Date.now()-began);}
+phase='recovery';closed=await close(bot.entity.position.floored());}
+catch(e){issue=e.message;console.log('ISSUE',issue,'actual',bot.entity.position);bot.clearControlStates();bot.pathfinder.setGoal(null);phase='recovery';try{closed=await close(bot.entity.position.floored())}catch(e){console.log('LOCAL_CLOSE_FAIL',e.message);try{for(let a of walked.slice(0,-1).reverse())await move(V(a));await move(home);closed=await close(home);console.log('ROLLBACK_ACTUAL',closed)}catch(e){console.log('ROLLBACK_FAILED',e.message)}}}
+finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.deactivateItem();bot.removeListener('death',stop);bot.removeListener('respawn',stop);bot.removeListener('entityHurt',hd);}
+return{caller:'iter10_bridge_endpoint_v1',entityId:bot.entity.id,hurt,p:bot.entity.position.clone(),hp:bot.health,food:bot.food,issue,closed,full:shell(bot.entity.position.floored()),walked,elapsed:Date.now()-began,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+OPENING_DIRT_RECEIVED 2
+ACTUAL 0,67,6 2963
+ACTUAL 0,67,7 3463
+ACTUAL 0,67,8 4016
+ACTUAL 0,67,9 4517
+ACTUAL 0,67,10 5104
+ACTUAL 0,67,11 5606
+ACTUAL 0,67,12 6158
+ACTUAL 0,67,13 6658
+ACTUAL 0,67,14 7158
+ACTUAL 0,67,15 7672
+ACTUAL 0,67,16 8173
+ACTUAL 0,67,17 8724
+ACTUAL 0,67,18 9225
+ACTUAL 0,67,19 9776
+ACTUAL 0,67,20 10276
+ACTUAL 0,67,21 10832
+ACTUAL 0,67,22 11345
+ACTUAL 0,67,23 11846
+ACTUAL 0,67,24 12400
+ACTUAL 0,67,25 12903
+ACTUAL 0,67,26 13456
+ACTUAL 0,67,27 13911
+ACTUAL 0,67,28 14463
+ACTUAL 0,67,29 14964
+ACTUAL 0,67,30 15556
+ACTUAL 0,67,31 16058
+ACTUAL 0,67,32 16560
+ACTUAL 0,67,33 17009
+ACTUAL 0,67,34 17361
+ACTUAL 0,67,35 17863
+ACTUAL 0,67,36 18413
+ACTUAL 0,67,37 18913
+ACTUAL 0,67,38 19414
+ACTUAL 0,67,39 19974
+ACTUAL 0,67,40 20466
+ACTUAL 0,67,41 21018
+ACTUAL 0,67,42 21522
+ACTUAL 0,67,43 22074
+ACTUAL 0,67,44 22580
+ACTUAL 0,67,45 23133
+ACTUAL 0,67,46 23636
+ACTUAL 0,67,47 24136
+ACTUAL 0,67,48 24696
+ACTUAL 0,67,49 25198
+ACTUAL 0,67,50 25752
+ACTUAL 0,67,51 26251
+ACTUAL 0,67,52 26803
+ACTUAL 0,67,53 27303
+ACTUAL 0,67,54 27715
+ACTUAL 0,67,55 28224
+ACTUAL 0,67,56 28727
+ACTUAL 0,67,57 29284
+ACTUAL 0,67,58 29826
+-- returned --
+{"caller": "iter10_bridge_endpoint_v1", "entityId": 170, "hurt": false, "p": {"x": 0.4998575486563157, "y": 67, "z": 58.487969307928275}, "hp": 20, "food": 19, "issue": null, "closed": true, "full": true, "walked": [[0, 67, 6], [0, 67, 7], [0, 67, 8], [0, 67, 9], [0, 67, 10], [0, 67, 11], [0, 67, 12], [0, 67, 13], [0, 67, 14], [0, 67, 15], [0, 67, 16], [0, 67, 17], [0, 67, 18], [0, 67, 19], [0, 67, 20], [0, 67, 21], [0, 67, 22], [0, 67, 23], [0, 67, 24], [0, 67, 25], [0, 67, 26], [0, 67, 27], [0, 67, 28], [0, 67, 29], [0, 67, 30], [0, 67, 31], [0, 67, 32], [0, 67, 33], [0, 67, 34], [0, 67, 35], [0, 67, 36], [0, 67, 37], [0, 67, 38], [0, 67, 39], [0, 67, 40], [0, 67, 41], [0, 67, 42], [0, 67, 43], [0, 67, 44], [0, 67, 45], [0, 67, 46], [0, 67, 47], [0, 67, 48], [0, 67, 49], [0, 67, 50], [0, 67, 51], [0, 67, 52], [0, 67, 53], [0, 67, 54], [0, 67, 55], [0, 67, 56], [0, 67, 57], [0, 67, 58]], "elapsed": 30993, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "inv": [["wooden_sword", 1, 2], ["stick", 1, null], ["stone_sword", 1, 0], ["sweet_berries", 4, null], ["wooden_pickaxe", 1, 8], ["wooden_shovel", 1, 5]]}

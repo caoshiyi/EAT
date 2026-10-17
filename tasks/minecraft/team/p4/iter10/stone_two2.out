@@ -1,0 +1,57 @@
+program #4441 on p4: 33.7 s
+--- output ---
+DOOR_ACTUAL exit (6.563547078501106, 66.42159999847412, 79.28405421336359)
+STONE_RECEIPT { q: Vec3 { x: 10, y: 66, z: 95 }, wear: 33, total: 2 }
+STONE_RECEIPT { q: Vec3 { x: 11, y: 66, z: 95 }, wear: 34, total: 3 }
+DOOR_ACTUAL enter (6.559002824065733, 67, 82.46638879754354)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "cuts": 2,
+ "delta": 2,
+ "total": 3,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "p": {
+  "x": 7.626312682978839,
+  "y": 67.5625,
+  "z": 83.6999999373624
+ },
+ "hp": 20,
+ "food": 20,
+ "own": [
+  [
+   "stick",
+   5,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   34
+  ],
+  [
+   "cobblestone",
+   3,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P3 actual4434 TWOlogs retained/39.6s/CAMP20HP20food/7false/issueNULL/recoveryNULL; currentbody+door-separate returnhelper adoptedactualcaller, no ASIDEfalse final. Frontreleased. Deposited2LOG nowBANK3 totalforP1tripcraftstock (table/boat/sticks choices yo
+p3: urs); no withdrawalwait. NextP3 own tool+pearl contribution afteroldWOODpick reusable.
+p2: P2 SNOW batch returncrossNOW actualnearfront/no futurelease; currentbodyreturn first.
+p1: Changedsite P3 historicalsource -19,62,60; physicalwetprobe with immediate knownland-18,63,60. P1door1+dirt1 actualforplatform at-19,60,60 ONLYifsideanchorFULL+source61/62. Max6s immersed, jump-egress<4blocks. No longreadingswait. P1nextfrontEXITclosed~10s
+p1:  thenrelease; no P2/P4footprint.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

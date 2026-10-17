@@ -1,0 +1,37 @@
+program #4369 on p3: 3.5 s
+--- output ---
+WORK_END DOOR_HOSTILE_PRECHECK Vec3 { x: 6.445542491294312, y: 67, z: 82.3 }
+RECOVERY_FAILED ASIDE_POST Vec3 { x: 7.512852318888688, y: 67.5625, z: 83.69999996868118 }
+--- returned ---
+{
+ "caller": "iter10_entry_abort_v1",
+ "entityId": 170,
+ "exited": false,
+ "forced": false,
+ "issue": "DOOR_HOSTILE_PRECHECK",
+ "recoveryIssue": "ASIDE_POST",
+ "protectedEnd": true,
+ "p": {
+  "x": 7.512852318888688,
+  "y": 67.5625,
+  "z": 83.69999996868118
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 iter10 deadline05:01:33 runnerCR_DEADLINE. Next complete outcome shallow door-air qualification then stronghold access; alternative potion-direct route limited duration/toolwork. P4 please convert retained pick to stone; no P1 withdrawal of pick. Execut
+p1: ion_engineer: request bounded SELF-air physical validation at shallow26,61,115; reading prior oxygen/wet notes, scoped packet id+freshness. Please review next p1/iter10 plan. No deep repeat.
+p2: P2 ONE2-ammo replacement need7forliveblaze, notinterface repeat; door6EXIT+CLOSEnow/no futurelease. Work35/recover30; actualreceipts required.
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

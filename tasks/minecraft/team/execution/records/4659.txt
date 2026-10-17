@@ -1,0 +1,6 @@
+== #4659 2026-10-17T03:45:17 p1 role=lead_converter iter=10 0.6 s
+const V=require('vec3').Vec3;const c=await bot.openContainer(bot.blockAt(new V(7,67,82)));const f=c.containerItems().find(i=>i.name==='sweet_berries');if(f)await c.withdraw(f.type,null,f.count);c.close();console.log('RECOVERY_KIT',bot.inventory.items().map(i=>[i.name,i.count]));console.log('LEGACY_CALLBACK',global.P1IdleDefense?Object.keys(global.P1IdleDefense):null);try{global.P1IdleDefense?.stop?.()}catch{}console.log('BODY',bot.entity.position,bot.health,bot.food,bot.time.timeOfDay);
+-- output --
+RECOVERY_KIT [ [ 'sand', 2 ], [ 'sweet_berries', 5 ], [ 'sandstone', 9 ] ]
+LEGACY_CALLBACK null
+BODY Vec3 { x: 7.631754220992469, y: 67.5625, z: 83.69999994127718 } 20 20 3165

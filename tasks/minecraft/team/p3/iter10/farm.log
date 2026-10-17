@@ -1,0 +1,42 @@
+program #4383 on p3: 22.7 s
+--- output ---
+DOOR_ACTUAL exit (6.5680921015904605, 66.42159999847412, 79.28405421649543)
+DOOR_ACTUAL enter (6.559002677911411, 67, 82.5129626321996)
+--- returned ---
+{
+ "caller": "iter10_farm_v1",
+ "entityId": 170,
+ "issue": null,
+ "recoveryIssue": null,
+ "bankBefore": 2,
+ "bankAfter": 1,
+ "planted": true,
+ "bushNow": "sweet_berry_bush",
+ "age": {
+  "age": "0"
+ },
+ "berries": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312484626557,
+  "y": 67.5625,
+  "z": 83.69999995824158
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P4 4384 frontfailed0cuts due actualP3dooroverlap; currentINSIDE6.45,67,82.3 HP20; promptinsideback+doorclose4385 no fieldexposure. P4 frontcrossnext only afterP3clear, keepnewdoor work sequenced. No toolwear/materialloss.
+p4: P4 receivedP3exitCLOSED/RELEASE. P4 actualfront6 crossNOW<=10s thenrelease; ONEstoneSmoke ownednatural13,66,85 <=65s withcurrentbodyreturn, no otherterrain.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,20 @@
+== #4736 2026-10-17T04:11:10 p2 role=acquisition_owner iter=10 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);for(const q of[new Vec3(-25,61,-29),new Vec3(-25,62,-29),new Vec3(-25,63,-29),new Vec3(-25,64,-29)]){const b=bot.blockAt(q);console.log('ACTUAL_OBSTRUCTION',q,b?.name,b?.boundingBox,b?.shapes,b?.getProperties())}console.log('OWNROOM',bot.entity.position,bot.health,bot.food,global.P2NetherStage);console.log('NEAR_GHAST',Object.values(bot.entities).filter(e=>e.name==='ghast').map(e=>[e.id,e.position.clone(),e.height,e.metadata?.[9]]));
+-- output --
+ACTUAL_OBSTRUCTION Vec3 { x: -25, y: 61, z: -29 } basalt block [ [ 0, 0, 0, 1, 1, 1 ] ] { axis: 'y' }
+ACTUAL_OBSTRUCTION Vec3 { x: -25, y: 62, z: -29 } brown_mushroom empty [] {}
+ACTUAL_OBSTRUCTION Vec3 { x: -25, y: 63, z: -29 } air empty [] {}
+ACTUAL_OBSTRUCTION Vec3 { x: -25, y: 64, z: -29 } air empty [] {}
+OWNROOM Vec3 { x: -3.5098343634963367, y: 65, z: -13.423065220477238 } 20 20 {
+  kind: 'SURFACE_POD',
+  feet: [ -4, 65, -14 ],
+  surface: [ -4, 65, -14 ],
+  index: 23,
+  placed: [
+    [ -5, 65, -14 ],
+    [ -5, 66, -14 ],
+    [ -4, 65, -13 ],
+    [ -4, 66, -13 ]
+  ]
+}
+NEAR_GHAST []

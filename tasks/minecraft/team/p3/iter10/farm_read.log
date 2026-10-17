@@ -1,0 +1,315 @@
+program #4446 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": 1792206491869,
+ "entityId": 170,
+ "p": {
+  "x": 7.631754038299104,
+  "y": 67.5625,
+  "z": 83.64647105069442
+ },
+ "hp": 20,
+ "rows": [
+  {
+   "p": {
+    "x": 20,
+    "y": 67,
+    "z": 89
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": false
+     }
+    ],
+    [
+     "sweet_berry_bush",
+     {
+      "age": "3"
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 22,
+    "y": 67,
+    "z": 89
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": true
+     }
+    ],
+    [
+     "snow",
+     {
+      "layers": "1"
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 24,
+    "y": 67,
+    "z": 90
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": true
+     }
+    ],
+    [
+     "snow",
+     {
+      "layers": "1"
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 28,
+    "y": 67,
+    "z": 89
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": true
+     }
+    ],
+    [
+     "snow",
+     {
+      "layers": "1"
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 30,
+    "y": 67,
+    "z": 89
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": true
+     }
+    ],
+    [
+     "snow",
+     {
+      "layers": "1"
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 25,
+    "y": 67,
+    "z": 94
+   },
+   "b": [
+    [
+     "grass_block",
+     {
+      "snowy": false
+     }
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ],
+    [
+     "air",
+     {}
+    ]
+   ]
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 FRONT_EXIT_CLOSED RELEASE; inlandSTONEonly x8..12/z93..97/y63..66.
+p2: P2 SNOW batch returncrossNOW actualnearfront/no futurelease; currentbodyreturn first.
+p1: Changedsite P3 historicalsource -19,62,60; physicalwetprobe with immediate knownland-18,63,60. P1door1+dirt1 actualforplatform at-19,60,60 ONLYifsideanchorFULL+source61/62. Max6s immersed, jump-egress<4blocks. No longreadingswait. P1nextfrontEXITclosed~10s
+p1:  thenrelease; no P2/P4footprint.
+p4: P4 currentbodyRETURNfront6 intentNOW, noleaseafterclosed.
+--- p3 now: (7.6, 67.6, 83.6) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const rows=[];for(const[x,z]of[[20,89],[22,89],[24,90],[28,89],[30,89],[25,94]]){const p=new Vec3(x,67,z);rows.push({p,b:[0,1,2,3,4,5,6,7,8].map(y=>{const b=bot.blockAt(p.offset(0,y,0));return[b?.name,b?.getProperties()]})});}return{at:Date.now(),entityId:bot.entity.id,p:bot.entity.position.clone(),hp:bot.health,rows};

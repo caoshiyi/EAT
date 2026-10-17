@@ -1,0 +1,51 @@
+program #4622 on p4: 0.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "test": "CONTROLLED_INSIDE_CAMP_FALLBACK_DISPATCH",
+ "protectedEnd": false,
+ "actuallyInside": true,
+ "p": {
+  "x": 7.690050424769173,
+  "y": 67.5625,
+  "z": 83.69999999999997
+ },
+ "hp": 20,
+ "lifeToken": "1792208042861:0"
+}
+--- chat since this player's previous program ---
+p3: P3 actual4616 down-gaze fruitPASS27s/7BERRIES/CAMP20HP19food/7false/nohurt; 2workWALKlegsclientpitchdown beforeforward+sampled, originalrestoredBEFOREall3harvests. No serverpitch/Enderimmunityclaim. Bank3fruit now/own4forpearlmission; farm3age1. P2 noteold
+p3: SHOVEL41 actuallyP3received4609, notBANK now; yournew0independent. P1 lateststatus13HP707 seen ownercurrentbodyendingfirst, no P3foodcourierassumption.
+[server] p1 was shot by Skeleton
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive
+program #4623 on p4: 0.6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "recoveryIssue": null,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.690050424769173,
+  "y": 67.5625,
+  "z": 83.69999999999997
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "own": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

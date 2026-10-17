@@ -1,0 +1,68 @@
+program #4540 on p4: 15.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "opened": true,
+ "swings": 2,
+ "seen": [
+  [
+   2083,
+   {
+    "x": 6.997842784785994,
+    "y": 68.10000002384186,
+    "z": 81.11250001192093
+   },
+   2.5099220232206347
+  ]
+ ],
+ "killed": [],
+ "hurtIDs": [
+  [
+   3442,
+   2083,
+   16
+  ],
+  [
+   4242,
+   2083,
+   14.580480575561523
+  ]
+ ],
+ "hurt": false,
+ "dead": false,
+ "entityStart": 167,
+ "entityEnd": 167,
+ "p": {
+  "x": 6.60513867289922,
+  "y": 67.5625,
+  "z": 83.50946388801817
+ },
+ "hp": 20,
+ "food": 20,
+ "inside": true,
+ "doors": [
+  false,
+  false
+ ],
+ "own": [
+  [
+   "wooden_sword",
+   1,
+   2
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

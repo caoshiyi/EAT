@@ -1,0 +1,1 @@
+return {test:'assembly-only'};

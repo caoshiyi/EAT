@@ -1,0 +1,60 @@
+program #4738 on p4: 10.8 s
+--- output ---
+DOOR_ACTUAL exit (6.587048807409879, 66.42159999847412, 79.28400959594892)
+TREE_ISSUE PATH_timeout Vec3 { x: 6.587048807409879, y: 66, z: 78.75697570915317 } 20
+DOOR_ACTUAL enter (6.596952024632295, 67, 82.47829124920234)
+--- returned ---
+{
+ "issue": "PATH_timeout",
+ "recoveryIssue": null,
+ "planted": false,
+ "grew": false,
+ "mealUses": 0,
+ "cuts": 0,
+ "logGain": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.664640856919731,
+  "y": 67.5625,
+  "z": 83.6997723613787
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "own": [
+  [
+   "bone",
+   1
+  ],
+  [
+   "bone_meal",
+   3
+  ],
+  [
+   "spruce_sapling",
+   1
+  ]
+ ],
+ "goalTrace": [
+  {
+   "at": 1792210282883,
+   "goal": [
+    6,
+    66,
+    79
+   ],
+   "intended": true,
+   "p": {
+    "x": 6.587048807409879,
+    "y": 66,
+    "z": 78.75697570915317
+   },
+   "hp": 20,
+   "stack": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

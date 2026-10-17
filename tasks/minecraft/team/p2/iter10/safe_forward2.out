@@ -1,0 +1,106 @@
+program #4727 on p2: 68 s
+--- output ---
+EXACT_STEP Vec3 { x: -5, y: 65, z: -14 } Vec3 { x: -4.561169155797157, y: 65, z: -13.488124701641333 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -5, 66, -14 ], [ -5, 65, -14 ] ] 5 15
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.5072116980569934, y: 65, z: -13.488124701641475 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -13 } Vec3 { x: -3.4967618544785273, y: 65, z: -12.423717400323037 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -4, 66, -13 ], [ -4, 65, -13 ] ] 7 15
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.4967618544786228, y: 65, z: -13.476601263133805 } 20
+FAST_STAGE_PLAN 23 223 Vec3 { x: -65, y: 63, z: -141 }
+EXACT_STEP Vec3 { x: -5, y: 65, z: -14 } Vec3 { x: -4.561169155797061, y: 65, z: -13.487804645815453 } 20
+OWN_EXIT_PASSED Vec3 { x: -4.561169155797061, y: 65, z: -13.487804645815453 } 20
+EXACT_STEP Vec3 { x: -5, y: 65, z: -15 } Vec3 { x: -4.571618999375444, y: 65, z: -14.552211947133891 } 20
+EXACT_STEP Vec3 { x: -6, y: 65, z: -15 } Vec3 { x: -5.4448075198224375, y: 65, z: -14.562661790712145 } 20
+EXACT_STEP Vec3 { x: -6, y: 65, z: -16 } Vec3 { x: -5.440380085669893, y: 65, z: -15.43585031115914 } 20
+EXACT_STEP Vec3 { x: -7, y: 65, z: -16 } Vec3 { x: -6.5047873869883315, y: 65, z: -15.43142287700649 } 20
+EXACT_STEP Vec3 { x: -7, y: 65, z: -17 } Vec3 { x: -6.515237230566714, y: 65, z: -16.49583017832493 } 20
+EXACT_STEP Vec3 { x: -8, y: 65, z: -17 } Vec3 { x: -7.579644531885153, y: 65, z: -16.506280021903148 } 20
+EXACT_STEP Vec3 { x: -8, y: 65, z: -18 } Vec3 { x: -7.5900943754635355, y: 65, z: -17.570687323221588 } 20
+EXACT_STEP Vec3 { x: -9, y: 65, z: -18 } Vec3 { x: -8.46328289591053, y: 65, z: -17.581137166799834 } 20
+EXACT_STEP Vec3 { x: -9, y: 65, z: -19 } Vec3 { x: -8.458855461757985, y: 65, z: -18.454325687246833 } 20
+EXACT_STEP Vec3 { x: -10, y: 65, z: -19 } Vec3 { x: -9.523262763076422, y: 65, z: -18.449898253094176 } 20
+EXACT_STEP Vec3 { x: -10, y: 65, z: -20 } Vec3 { x: -9.533712606654806, y: 65, z: -19.514305554412616 } 20
+EXACT_STEP Vec3 { x: -11, y: 65, z: -20 } Vec3 { x: -10.598119907973244, y: 65, z: -19.524755397990834 } 20
+EXACT_STEP Vec3 { x: -11, y: 65, z: -21 } Vec3 { x: -10.403185143221872, y: 65, z: -20.59961254288759 } 20
+EXACT_STEP Vec3 { x: -12, y: 65, z: -21 } Vec3 { x: -11.481757133268657, y: 65, z: -20.599612542887556 } 20
+EXACT_STEP Vec3 { x: -12, y: 65, z: -22 } Vec3 { x: -11.477330216099514, y: 65, z: -21.472801063334554 } 20
+EXACT_STEP Vec3 { x: -13, y: 65, z: -22 } Vec3 { x: -12.541737517417952, y: 65, z: -21.468373629181897 } 20
+EXACT_STEP Vec3 { x: -13, y: 65, z: -23 } Vec3 { x: -12.552187360996335, y: 65, z: -22.532780930500337 } 20
+EXACT_STEP Vec3 { x: -14, y: 65, z: -23 } Vec3 { x: -13.42537588144333, y: 65, z: -22.543230774078584 } 20
+EXACT_STEP Vec3 { x: -14, y: 65, z: -24 } Vec3 { x: -13.420948447290785, y: 65, z: -23.412703310645544 } 20
+EXACT_STEP Vec3 { x: -15, y: 65, z: -24 } Vec3 { x: -14.485355748609223, y: 65, z: -23.407947884294614 } 20
+EXACT_STEP Vec3 { x: -15, y: 65, z: -25 } Vec3 { x: -14.495805592187606, y: 65, z: -24.472355185613054 } 20
+EXACT_STEP Vec3 { x: -16, y: 65, z: -25 } Vec3 { x: -15.560212893506044, y: 65, z: -24.482805029191272 } 20
+EXACT_STEP Vec3 { x: -16, y: 65, z: -26 } Vec3 { x: -15.570662737084428, y: 65, z: -25.547212330509712 } 20
+EXACT_STEP Vec3 { x: -17, y: 65, z: -26 } Vec3 { x: -16.443851257531424, y: 65, z: -25.55766217408796 } 20
+EXACT_STEP Vec3 { x: -17, y: 65, z: -27 } Vec3 { x: -16.43942382337887, y: 65, z: -26.430850694534957 } 20
+EXACT_STEP Vec3 { x: -18, y: 65, z: -27 } Vec3 { x: -17.50383112469731, y: 65, z: -26.4264232603823 } 20
+EXACT_STEP Vec3 { x: -18, y: 65, z: -28 } Vec3 { x: -17.514280968275685, y: 65, z: -27.49083056170074 } 20
+EXACT_STEP Vec3 { x: -19, y: 65, z: -28 } Vec3 { x: -18.578688269594124, y: 65, z: -27.50128040527896 } 20
+EXACT_STEP Vec3 { x: -19, y: 65, z: -29 } Vec3 { x: -18.5891381131725, y: 65, z: -28.565687706597398 } 20
+EXACT_STEP Vec3 { x: -20, y: 65, z: -29 } Vec3 { x: -19.462326633619497, y: 65, z: -28.576137550175645 } 20
+EXACT_STEP Vec3 { x: -20, y: 64, z: -30 } Vec3 { x: -19.457899199466944, y: 64, z: -29.494615391670244 } 20
+EXACT_STEP Vec3 { x: -21, y: 64, z: -30 } Vec3 { x: -20.522306500785383, y: 64, z: -29.489859965319315 } 20
+EXACT_STEP Vec3 { x: -22, y: 63, z: -30 } Vec3 { x: -21.494615391670244, y: 63, z: -29.48985996531929 } 20
+EXACT_STEP Vec3 { x: -22, y: 62, z: -29 } Vec3 { x: -21.48985996531919, y: 62, z: -28.50019220451543 } 20
+EXACT_STEP Vec3 { x: -23, y: 62, z: -29 } Vec3 { x: -22.55426726663763, y: 62, z: -28.504722710344204 } 20
+EXACT_STEP Vec3 { x: -24, y: 63, z: -29 } Vec3 { x: -23.498617227710838, y: 63, z: -28.504722710344158 } 20
+FAST_STAGE_ISSUE ROUTE_OBSTRUCTION_KIND_(-25, 62, -29) 60 60 Vec3 { x: -23.498617227710838, y: 63, z: -28.504722710344158 } 20
+EXACT_STEP Vec3 { x: -23, y: 62, z: -29 } Vec3 { x: -22.52354622014513, y: 62, z: -28.50472271034429 } 20
+EXACT_STEP Vec3 { x: -22, y: 62, z: -29 } Vec3 { x: -21.46911436741165, y: 62, z: -28.50472271034443 } 20
+EXACT_STEP Vec3 { x: -22, y: 63, z: -30 } Vec3 { x: -21.45225428398185, y: 63, z: -29.55525982695796 } 20
+EXACT_STEP Vec3 { x: -21, y: 64, z: -30 } Vec3 { x: -20.550894978138615, y: 64, z: -29.572421386720595 } 20
+EXACT_STEP Vec3 { x: -20, y: 64, z: -30 } Vec3 { x: -19.496235146515108, y: 64, z: -29.572421386720738 } 20
+EXACT_STEP Vec3 { x: -20, y: 65, z: -29 } Vec3 { x: -19.47937496407203, y: 65, z: -28.521884270107208 } 20
+EXACT_STEP Vec3 { x: -19, y: 65, z: -29 } Vec3 { x: -18.40997432440664, y: 65, z: -28.511250304678743 } 20
+EXACT_STEP Vec3 { x: -19, y: 65, z: -28 } Vec3 { x: -18.405482022151617, y: 65, z: -27.446843003360303 } 20
+EXACT_STEP Vec3 { x: -18, y: 65, z: -28 } Vec3 { x: -17.53229350170462, y: 65, z: -27.436393159782174 } 20
+EXACT_STEP Vec3 { x: -18, y: 65, z: -27 } Vec3 { x: -17.536720935857044, y: 65, z: -26.563204639335176 } 20
+EXACT_STEP Vec3 { x: -17, y: 65, z: -27 } Vec3 { x: -16.472313634538605, y: 65, z: -26.56763207348792 } 20
+EXACT_STEP Vec3 { x: -17, y: 65, z: -26 } Vec3 { x: -16.461863790960113, y: 65, z: -25.50322477216948 } 20
+EXACT_STEP Vec3 { x: -16, y: 65, z: -26 } Vec3 { x: -15.58867527051312, y: 65, z: -25.492774928591352 } 20
+EXACT_STEP Vec3 { x: -16, y: 65, z: -25 } Vec3 { x: -15.59310270466553, y: 65, z: -24.428367627272912 } 20
+EXACT_STEP Vec3 { x: -15, y: 65, z: -25 } Vec3 { x: -14.528695403347092, y: 65, z: -24.417917783694794 } 20
+EXACT_STEP Vec3 { x: -15, y: 65, z: -24 } Vec3 { x: -14.518245559768621, y: 65, z: -23.544729263247795 } 20
+EXACT_STEP Vec3 { x: -14, y: 65, z: -24 } Vec3 { x: -13.434021476853648, y: 65, z: -23.54915669740056 } 20
+EXACT_STEP Vec3 { x: -14, y: 65, z: -23 } Vec3 { x: -13.434021476853452, y: 65, z: -22.48474939608212 } 20
+EXACT_STEP Vec3 { x: -13, y: 65, z: -23 } Vec3 { x: -12.560832956406458, y: 65, z: -22.47429955250399 } 20
+EXACT_STEP Vec3 { x: -13, y: 65, z: -22 } Vec3 { x: -12.565260390558867, y: 65, z: -21.40989225118555 } 20
+EXACT_STEP Vec3 { x: -12, y: 65, z: -22 } Vec3 { x: -11.490403245662145, y: 65, z: -21.404883971719595 } 20
+EXACT_STEP Vec3 { x: -12, y: 65, z: -21 } Vec3 { x: -11.49040324566197, y: 65, z: -20.531695451272597 } 20
+EXACT_STEP Vec3 { x: -11, y: 65, z: -21 } Vec3 { x: -10.425995944343532, y: 65, z: -20.536122885425343 } 20
+EXACT_STEP Vec3 { x: -11, y: 65, z: -20 } Vec3 { x: -10.415546100765042, y: 65, z: -19.471715584106903 } 20
+EXACT_STEP Vec3 { x: -10, y: 65, z: -20 } Vec3 { x: -9.542357580318047, y: 65, z: -19.461265740528773 } 20
+EXACT_STEP Vec3 { x: -10, y: 65, z: -19 } Vec3 { x: -9.546785014470457, y: 65, z: -18.585788267926485 } 20
+EXACT_STEP Vec3 { x: -9, y: 65, z: -19 } Vec3 { x: -8.482377713152019, y: 65, z: -18.591254886357735 } 20
+EXACT_STEP Vec3 { x: -9, y: 65, z: -18 } Vec3 { x: -8.471927869573529, y: 65, z: -17.526847585039295 } 20
+EXACT_STEP Vec3 { x: -8, y: 65, z: -18 } Vec3 { x: -7.407520568255089, y: 65, z: -17.516397741461176 } 20
+EXACT_STEP Vec3 { x: -8, y: 65, z: -17 } Vec3 { x: -7.4070369593142615, y: 65, z: -16.441540596564472 } 20
+EXACT_STEP Vec3 { x: -7, y: 65, z: -17 } Vec3 { x: -6.523882389582205, y: 65, z: -16.441540596564604 } 20
+EXACT_STEP Vec3 { x: -7, y: 65, z: -16 } Vec3 { x: -6.528309739584558, y: 65, z: -15.56835207611761 } 20
+EXACT_STEP Vec3 { x: -6, y: 65, z: -16 } Vec3 { x: -5.463902438266119, y: 65, z: -15.572779510270356 } 20
+EXACT_STEP Vec3 { x: -6, y: 65, z: -15 } Vec3 { x: -5.453452594687632, y: 65, z: -14.508372208951918 } 20
+EXACT_STEP Vec3 { x: -5, y: 65, z: -15 } Vec3 { x: -4.580264074240638, y: 65, z: -14.497922365373793 } 20
+EXACT_STEP Vec3 { x: -5, y: 65, z: -14 } Vec3 { x: -4.584691508393051, y: 65, z: -13.433515064055355 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.520284207074612, y: 65, z: -13.423065220477238 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.5098343634963367, y: 65, z: -13.423065220477238 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-4,65,-14],"surface":[-4,65,-14],"index":23,"placed":[[-5,65,-14],[-5,66,-14],[-4,65,-13],[-4,66,-13]]} 20 20
+FAST_STAGE_END {"issue":"ROUTE_OBSTRUCTION_KIND_(-25, 62, -29)","closed":true,"startIndex":23,"endIndex":223,"currentIndex":23,"p":{"x":-3.5098343634963367,"y":65,"z":-13.423065220477238},"hp":20,"food":20,"lost":false,"sharedPending":[],"elapsed":68011}
+FINAL_KIT [["crafting_table",1,null],["stick",2,null],["wooden_pickaxe",1,4],["stone_pickaxe",1,7],["wooden_shovel",1,39],["snow_block",3,null],["snowball",15,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 #4707 MINIMUMrebuildCOMPLETE34.9s: LOG3actual→freshSTONEpick0/DOOR3/TABLEcarried/STICK2, Sword6/POTIONunconsumed retained; FULL165,60,715/20HP18food. No moreprep. NOWdirectstronghold147,2212 2x180s boundedstages+30endingreserve; actualBOX/nativeending r
+p1: equiredifNPC. Nextnamedoutcomeactualbrickentry. CurrentPEARL/ROD production remainspeerowned; no helperlease.
+p3: P3 live4711 bridge53floorsFULL/noobstaclesexceptownWheadDIRT; END0,67,58 already8/10FULL, ONLYN2AIR needs2caps. No8blockreadinessgate: ownroof1,68,6+Whead0,67,6 reclaimedDIRT2 fundsEND2exact. DepartingprivateSouthpod leavesTHOSE2AIR/no peerreturnqueue; pub
+p3: lichome1,65,4 FULL unaffected S65B/S66TABLE/S67DIRT. WALKdownpitch/workangryEnder guard; reverse+ownpodclosure budget110s. Endreceiptbeforeclaim.
+p4: P4 NIGHTcachebudget04:02 retiredguardeddepartures, no loot. ChangedDAY hypothesis nowactual4714 FRONT4s/21snapshots ZEROfoes<12/closed20HP/token0 (not guardbugclaim). ExistingEastdetour +groundfix retained; nextsingleDAYphysicaldepot outcome by04:06. Exact
+p4: sameguard nowlogsactualvetoNPC ifany; no lowering/no blindtimeincrease. Cachecurrentlyunknown andunmodified.
+p4: P4 Northdepot EXITactualclosed/release; old10,66,-35cache only, no fieldwriter elsewhere.
+p3: P3 actual4718 bridge53 PASS31s/END0,67,58FULL20HP19food/7false/DIRT2fundedEND N2. OwnSouthpodroof+Whead nowAIR/departed, publichomeFULLunchanged. Nextretained29nodes→-19,65,48 fullendpointprecheck; reclaimownBridgeN2DIRT and oldendE2COBBLE, original-ifheld
+p3:  +heldrecoverySUBlogged, WOODpicklegitimatehardharvest. P4sharedWest-20BASALT untouchedthisstage. No queuedreturn/pearlclaim.
+p3: P3 4723 ENDPOINT_CHANGED waspre-action0steps/fullBridge20HP. Fresh4724 -19pod8/10FULL onlyE-18Y65/66AIR; P4W-20BASALT2FULL. Applyingactualcost2 fromownBridgeDIRT2, notrequiringalreadysealedarrival. Same29route/worldguards, no genericthresholdwaiver. CloseE
+p3: 2DIRT atactual-19; Wshareduntouched. OwnBridgeN57becomesAIRafterdeparture/nopeerqueue.
+--- p2 now: (-3.5, 65, -13.4) in the_nether, health 20/20, food 20/20, alive

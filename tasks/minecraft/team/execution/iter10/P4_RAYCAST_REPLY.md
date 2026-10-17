@@ -1,0 +1,15 @@
+# P4 raycast — source confirmation and actual caller evidence, 04:52 UTC
+
+Request chat3779/3780 at04:45:52; initial spoken finding about04:48, written confirmation04:52. No player program run by execution specialist.
+
+Installed prismarine-world/src/worldsync.js raycast starts `pos=from`; getBlock floors lookup, but default `iter.intersect(block.shapes,position)` uses fractional `position` on the first cell. RaycastIterator stores actual eye as `this.pos`, and translates shapes by supplied offset. Thus first-cell shape translation can be wrong. Keep the actual fractional eye/ray origin; use integer `block.position` ONLY as shape offset. Flooring the eye itself would change visibility.
+
+Actual owner4887 compares same actual eye(7.419,69.1825,83.519), same directions/ranges: default roof ray NULL versus corrected top-slab bottomY69.5; vertical defaultY69.6825 versus corrected69.5; DIRT wall control identical; range0.1 negative NULL. This is world client geometry evidence, not server receipt of an action. Preserve those discrepancies.
+
+`intersect` does not reject negative t or clamp by range itself. A local matcher should retain actual eye, normalized direction, block.position shape offset, forward dot>=0 (small documented numerical tolerance only), along<=range, nearest occluder semantics, and actual operation reach. Distance alone cannot reject a hit behind eye. Actual4899 includes dot guard and target equality in visibleDig; normal bot.dig remains action path. No installed tool changes.
+
+Actual adoption already predates this written review:4890 uses integer-origin/forward-range matcher, grounded step68.5 passed but log remained genuinely leaf-occluded; cleanup ROOF_CAP_STOCK left one roof AIR. Separate4892 restores two top slabs.4894 is explicitly hypothetical ray from prior actual step (not current body) and identifies leaf blocker. Actual4899(04:47:49,17.1s) uses corrected matcher, removes identified leaf, obtains LOG+1, returns same life20HP, two top-slab roof receipts, stepAIR, seven controlsfalse, issuesNULL. This qualifies the executed bounded operation; correction alone did not eliminate the real occluder, and our later document did not cause its success.
+
+4905 then crafts LOG→4planks, fills south(7,69,84) and east(8,69,83) holes, reopens chest to verify spare planks0→2. Same life20HP, no carried items, controlsfalse. East is named closed GATE67 + DIRT68 + PLANK69, not original all-full-cube wall. No universal camp immunity/travel clearance claim.
+
+04:55 counterexample after successful LOGoperation:4922/4929 inside roof-opening+jumps peakedY68.739, returnedsame-life20HP/exactroof; ordinarySTICKgain0, secondactualcallercollectlistener[] and unchangedclientitemrecords. Owner3801 retirespickupaftertwo. Cliententity31251 cached STICK2 near6.136,70,84.875 is not inventoryreceipt or freshserveritemproof. No collection event alone does not prove worlditem vanished, unreachable, deteriorated or was recovered; keep lastknownentity and failedactualpickup separate. No universalraycast/pickuprangeconclusion.

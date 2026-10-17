@@ -1,0 +1,6 @@
+== #4701 2026-10-17T03:57:52 p1 role=lead_converter iter=10 0 s
+const V=require('vec3').Vec3,p=bot.entity.position.floored();console.log('BODY',bot.entity.position,bot.health,bot.food,bot.time.timeOfDay);console.log('MOBS',JSON.stringify(Object.values(bot.entities).filter(e=>['skeleton','zombie','creeper','spider','drowned'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<35).map(e=>[e.id,e.name,e.position.clone(),e.position.distanceTo(bot.entity.position)])));console.log('WALLS',JSON.stringify([[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>[x,z,[0,1].map(y=>bot.blockAt(p.offset(x,y,z))?.name)])));
+-- output --
+BODY Vec3 { x: 163.4389333356227, y: 63, z: 711.4948699632512 } 20 18 18245
+MOBS [[13406,"spider",{"x":193.00290551266175,"y":70,"z":699.0094907150872},32.84681332877246],[13447,"creeper",{"x":184.4913655954004,"y":67,"z":716.1866516707527},21.936675218532425]]
+WALLS [[1,0,["sand","cobblestone"]],[-1,0,["cobblestone","cobblestone"]],[0,1,["cobblestone","cobblestone"]],[0,-1,["cobblestone","cobblestone"]]]

@@ -1,0 +1,282 @@
+{
+  "p": {
+    "x": 6.300000023489143,
+    "y": 67.5625,
+    "z": 83.7
+  },
+  "hp": 20,
+  "food": 20,
+  "dimension": "overworld",
+  "life": {
+    "started": 1792208042861,
+    "life": 2,
+    "world": 2,
+    "lastDeath": {
+      "at": 1792211702289,
+      "p": {
+        "x": 10.3,
+        "y": 66,
+        "z": 83.52042364485364
+      },
+      "dimension": "overworld"
+    }
+  },
+  "entity": 167,
+  "own": [],
+  "controlBefore": {
+    "forward": false,
+    "back": false,
+    "left": false,
+    "right": false,
+    "jump": false,
+    "sprint": false,
+    "sneak": false
+  },
+  "controls": {
+    "forward": false,
+    "back": false,
+    "left": false,
+    "right": false,
+    "jump": false,
+    "sprint": false,
+    "sneak": false
+  },
+  "goal": null,
+  "doors": [
+    {
+      "q": [
+        6,
+        67,
+        81
+      ],
+      "name": "spruce_door",
+      "properties": {
+        "powered": false,
+        "open": false,
+        "hinge": "left",
+        "half": "lower",
+        "facing": "north"
+      },
+      "shapes": [
+        [
+          0,
+          0,
+          0.8125,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "q": [
+        7,
+        67,
+        81
+      ],
+      "name": "spruce_door",
+      "properties": {
+        "powered": false,
+        "open": false,
+        "hinge": "right",
+        "half": "lower",
+        "facing": "north"
+      },
+      "shapes": "[repeated reference]"
+    }
+  ],
+  "east": [
+    {
+      "q": [
+        8,
+        67,
+        83
+      ],
+      "name": "spruce_fence_gate",
+      "properties": {
+        "powered": false,
+        "open": false,
+        "in_wall": false,
+        "facing": "east"
+      },
+      "shapes": [
+        [
+          0.375,
+          0,
+          0,
+          0.625,
+          1.5,
+          1
+        ]
+      ]
+    },
+    {
+      "q": [
+        8,
+        68,
+        83
+      ],
+      "name": "dirt",
+      "properties": {},
+      "shapes": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "q": [
+        8,
+        69,
+        83
+      ],
+      "name": "spruce_planks",
+      "properties": {},
+      "shapes": "[repeated reference]"
+    }
+  ],
+  "south": [
+    {
+      "q": [
+        7,
+        67,
+        84
+      ],
+      "name": "dirt",
+      "properties": {},
+      "shapes": "[repeated reference]"
+    },
+    {
+      "q": [
+        7,
+        68,
+        84
+      ],
+      "name": "dirt",
+      "properties": {},
+      "shapes": "[repeated reference]"
+    },
+    {
+      "q": [
+        7,
+        69,
+        84
+      ],
+      "name": "spruce_planks",
+      "properties": {},
+      "shapes": "[repeated reference]"
+    }
+  ],
+  "roof": [
+    {
+      "q": [
+        6,
+        69,
+        82
+      ],
+      "name": "spruce_slab",
+      "properties": {
+        "waterlogged": false,
+        "type": "top"
+      },
+      "shapes": [
+        [
+          0,
+          0.5,
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "q": [
+        6,
+        69,
+        83
+      ],
+      "name": "spruce_slab",
+      "properties": {
+        "waterlogged": false,
+        "type": "top"
+      },
+      "shapes": "[repeated reference]"
+    },
+    {
+      "q": [
+        7,
+        69,
+        82
+      ],
+      "name": "spruce_slab",
+      "properties": {
+        "waterlogged": false,
+        "type": "top"
+      },
+      "shapes": "[repeated reference]"
+    },
+    {
+      "q": [
+        7,
+        69,
+        83
+      ],
+      "name": "spruce_slab",
+      "properties": {
+        "waterlogged": false,
+        "type": "top"
+      },
+      "shapes": "[repeated reference]"
+    }
+  ],
+  "step": {
+    "q": [
+      6,
+      68,
+      83
+    ],
+    "name": "air",
+    "properties": {},
+    "shapes": []
+  },
+  "sapling": {
+    "q": [
+      5,
+      69,
+      83
+    ],
+    "name": "spruce_sapling",
+    "properties": {
+      "stage": "0"
+    },
+    "shapes": "[repeated reference]"
+  },
+  "lastLog": {
+    "q": [
+      5,
+      74,
+      83
+    ],
+    "name": "air",
+    "properties": {},
+    "shapes": "[repeated reference]"
+  },
+  "nearFoes": [
+    [
+      21719,
+      "spider",
+      {
+        "x": 6.300000011920929,
+        "y": 65.10000002384186,
+        "z": 81.69999998807907
+      },
+      16
+    ]
+  ]
+}

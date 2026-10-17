@@ -1,0 +1,165 @@
+program #4468 on p3: 13.4 s
+--- output ---
+DOOR_ACTUAL exit (6.587898578090994, 66.42159999847412, 79.28405421336355)
+RETURN_FAILED Took to long to decide path to goal!
+--- returned ---
+{
+ "caller": "iter10_farm_wait_pass_v1",
+ "entityId": 170,
+ "issue": null,
+ "recoveryIssue": "Took to long to decide path to goal!",
+ "harvests": [
+  {
+   "p": {
+    "x": 20,
+    "y": 68,
+    "z": 89
+   },
+   "age": "2",
+   "gain": 1
+  }
+ ],
+ "newPlants": [],
+ "berries": 1,
+ "net": 1,
+ "crops": [
+  [
+   {
+    "x": 20,
+    "y": 68,
+    "z": 89
+   },
+   "sweet_berry_bush",
+   {
+    "age": "1"
+   }
+  ],
+  [
+   {
+    "x": 22,
+    "y": 68,
+    "z": 89
+   },
+   "sweet_berry_bush",
+   {
+    "age": "0"
+   }
+  ],
+  [
+   {
+    "x": 24,
+    "y": 68,
+    "z": 90
+   },
+   "sweet_berry_bush",
+   {
+    "age": "1"
+   }
+  ],
+  [
+   {
+    "x": 20,
+    "y": 68,
+    "z": 91
+   },
+   "air",
+   {}
+  ],
+  [
+   {
+    "x": 22,
+    "y": 68,
+    "z": 91
+   },
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   {
+    "x": 24,
+    "y": 68,
+    "z": 92
+   },
+   "air",
+   {}
+  ],
+  [
+   {
+    "x": 26,
+    "y": 68,
+    "z": 89
+   },
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   {
+    "x": 26,
+    "y": 68,
+    "z": 91
+   },
+   "snow",
+   {
+    "layers": "1"
+   }
+  ]
+ ],
+ "protectedEnd": false,
+ "camp": {
+  "bodyInside": false,
+  "doors": [
+   [
+    6,
+    "spruce_door",
+    {
+     "powered": false,
+     "open": false,
+     "hinge": "left",
+     "half": "lower",
+     "facing": "north"
+    }
+   ],
+   [
+    7,
+    "spruce_door",
+    {
+     "powered": false,
+     "open": false,
+     "hinge": "right",
+     "half": "lower",
+     "facing": "north"
+    }
+   ]
+  ],
+  "onGround": true,
+  "dead": false,
+  "lost": false,
+  "threats": []
+ },
+ "elapsed": 13434,
+ "p": {
+  "x": 19.952628026769503,
+  "y": 68,
+  "z": 83.93548384061997
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P2 NEWportalEapproachbridge exact7,67,89 +6,67,90 SNAPSHOT AIR→SNOW_BLOCK2; avoidsfailedWEST3floorroute. Work65/recover40/nativeactual. OWNonly2cells writer now; front6EXITclosed thenrelease. Liveblazeammo7untouched.
+--- p3 now: (20, 68, 83.9) in overworld, health 20/20, food 20/20, alive

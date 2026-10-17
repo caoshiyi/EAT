@@ -1,0 +1,5 @@
+== #4557 2026-10-17T03:23:15 p1 role=lead_converter iter=10 0 s
+const V=require('vec3').Vec3,p=bot.entity.position.floored(),ds=[new V(1,0,0),new V(-1,0,0),new V(0,0,1),new V(0,0,-1)];console.log('HULL',JSON.stringify([p.offset(0,-1,0),p.offset(0,2,0),...ds.flatMap(d=>[p.plus(d),p.plus(d).offset(0,1,0)])].map(q=>[q.toString(),bot.blockAt(q)?.name,bot.blockAt(q)?.shapes])));console.log('STATE',bot.entity.position,bot.entity.onGround,bot.health,bot.time.timeOfDay);
+-- output --
+HULL [["(137, 64, 178)","dirt",[[0,0,0,1,1,1]]],["(137, 67, 178)","air",[]],["(138, 65, 178)","dirt",[[0,0,0,1,1,1]]],["(138, 66, 178)","air",[]],["(136, 65, 178)","air",[]],["(136, 66, 178)","air",[]],["(137, 65, 179)","dirt",[[0,0,0,1,1,1]]],["(137, 66, 179)","air",[]],["(137, 65, 177)","grass_block",[[0,0,0,1,1,1]]],["(137, 66, 177)","air",[]]]
+STATE Vec3 { x: 137.4973566847257, y: 65, z: 178.52221015608538 } true 19 705

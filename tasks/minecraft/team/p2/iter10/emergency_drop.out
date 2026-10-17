@@ -1,0 +1,45 @@
+program #4843 on p2: 0 s
+--- output ---
+DROP_CURRENT Vec3 { x: -205.3, y: 58, z: -429.4710462652107 } 5.333335876464844
+DROP_ISSUE START Vec3 { x: -205.3, y: 58, z: -429.4710462652107 } 5.333335876464844
+--- returned ---
+{
+ "issue": "START",
+ "p": {
+  "x": -205.3,
+  "y": 58,
+  "z": -429.4710462652107
+ },
+ "hp": 5.333335876464844,
+ "food": 17,
+ "stage": {
+  "kind": "SURFACE_POD",
+  "feet": [
+   -284,
+   61,
+   -394
+  ],
+  "surface": [
+   -284,
+   61,
+   -394
+  ],
+  "index": 811,
+  "placed": [
+   [
+    -283,
+    61,
+    -394
+   ],
+   [
+    -283,
+    62,
+    -394
+   ]
+  ]
+ }
+}
+--- chat since this player's previous program ---
+p4: URGENT P4 THIRDDEATH04:35 Spider after4839 EEXITclosed20HP then returnDIRTreceipt0 (P1actualnowDIRT1)→AXIS_x knockbackoutside→0.33HP/failed4840lifechange. E(8,Y67/68/69,Z83) currentlyAIR3! P1 currentTABLE1+DIRT1 canCLOSEFOOT67 TABLE +HEAD68 DIRT (SNEAKagai
+p4: nstTABLE), soil66SAND, releasesafe0.5topgap69. P4newbodyEMPTY20 front6.5,67,82.5 NOTrescue. I am gettinginside-spareblocks forimmediateEclosure, nofield/corpse.
+--- p2 now: (-205.3, 58, -429.5) in the_nether, health 5.3/20, food 17/20, alive

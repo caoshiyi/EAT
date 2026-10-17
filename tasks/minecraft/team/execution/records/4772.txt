@@ -1,0 +1,4 @@
+== #4772 2026-10-17T04:20:44 p1 role=lead_converter iter=10 0 s
+const V=require('vec3').Vec3;bot.pathfinder.setGoal(null);bot.clearControlStates();for(const x of[6,7]){const b=bot.blockAt(new V(x,67,81));if(b?.getProperties().open)await bot.activateBlock(b);}console.log('CURRENT_NEWLIFE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+CURRENT_NEWLIFE Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20 []

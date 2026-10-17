@@ -1,0 +1,47 @@
+program #4626 on p2: 2.2 s
+--- output ---
+QUARRY_ISSUE PRE Vec3 { x: 6.682860749057462, y: 67.5625, z: 83.65402327037539 } 20
+QUARRY_RETURN_FAILED ASIDE_POST {"bodyInside":true,"doors":[[6,"spruce_door",{"powered":false,"open":true,"hinge":"left","half":"lower","facing":"north"}],[7,"spruce_door",{"powered":false,"open":false,"hinge":"right","half":"lower","facing":"north"}]],"onGround":true,"dead":false,"lost":false,"threats":[]} Vec3 { x: 7.5348196606071065, y: 67.5625, z: 83.6540231920783 } 20
+--- returned ---
+{
+ "issue": "PRE",
+ "recoveryIssue": "ASIDE_POST {\"bodyInside\":true,\"doors\":[[6,\"spruce_door\",{\"powered\":false,\"open\":true,\"hinge\":\"left\",\"half\":\"lower\",\"facing\":\"north\"}],[7,\"spruce_door\",{\"powered\":false,\"open\":false,\"hinge\":\"right\",\"half\":\"lower\",\"facing\":\"north\"}]],\"onGround\":true,\"dead\":false,\"lost\":false,\"threats\":[]}",
+ "cuts": 0,
+ "gain": 0,
+ "entryDug": false,
+ "restored": false,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.5400304688938915,
+  "y": 67.5625,
+  "z": 83.6540231920783
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stick",
+   4,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ]
+ ],
+ "elapsed": 2206
+}
+--- chat since this player's previous program ---
+p1: P1 salvage EXITclosed release
+--- p2 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

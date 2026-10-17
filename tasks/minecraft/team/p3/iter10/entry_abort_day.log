@@ -1,0 +1,36 @@
+program #4379 on p3: 9 s
+--- output ---
+DOOR_ACTUAL exit (6.603953716301823, 66.42159999847412, 79.28405421336355)
+WORK_END CONTROLLED_ABORT_AFTER_EXIT Vec3 { x: 6.603953716301823, y: 66, z: 78.75702016858652 }
+DOOR_ACTUAL enter (6.6039539042149, 67, 82.38288758787802)
+--- returned ---
+{
+ "caller": "iter10_entry_abort_v1",
+ "entityId": 170,
+ "exited": true,
+ "forced": true,
+ "issue": "CONTROLLED_ABORT_AFTER_EXIT",
+ "recoveryIssue": null,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.671263710930046,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

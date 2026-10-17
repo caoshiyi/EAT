@@ -1,0 +1,30 @@
+== #4534 2026-10-17T03:19:46 p1 role=lead_converter iter=10 55.4 s
+global.P1TunnelSteps=22;
+const{Vec3}=require('vec3');const began=Date.now(),workEnd=began+75000,hardEnd=began+95000;let lost=false,issue=null,steps=0;const start=bot.entity.position.floored(),limit=global.P1TunnelSteps||3,d=new Vec3(1,0,0),side=new Vec3(0,0,1);const full=b=>!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),items=()=>bot.inventory.items().find(i=>['dirt','cobblestone','granite','andesite','diorite','spruce_planks'].includes(i.name));const die=()=>{lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates();bot.stopDigging();};bot.on('death',die);bot.on('respawn',die);bot.pathfinder.LOSWhenPlacingBlocks=false;bot.pathfinder.setGoal(null);bot.clearControlStates();const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];const hull=p=>[p.offset(0,-1,0),p.offset(0,2,0),...dirs.flatMap(d=>[p.plus(d),p.plus(d).offset(0,1,0)])].every(q=>full(bot.blockAt(q)));function check(){if(lost||bot.health<15||Date.now()>hardEnd||bot.game.dimension!=='overworld')throw Error('LIFE_TIME');}async function tick(n=1){check();await bot.waitForTicks(n);check();}async function cut(q){const b=bot.blockAt(q);if(!['dirt','grass_block','stone','granite','diorite','andesite','cobblestone'].includes(b?.name))throw Error('CUT_KIND_'+b?.name);const pick=bot.inventory.items().find(i=>i.name.endsWith('_pickaxe'));if(['dirt','grass_block'].includes(b.name))await bot.unequip('hand');else if(pick)await bot.equip(pick,'hand');else throw Error('NO_PICK');await bot.dig(b,true);await tick(4);if(full(bot.blockAt(q)))throw Error('CUT_NOT_ACK');}
+async function closeBehind(){const p=bot.entity.position.floored(),back=p.minus(d);for(const y of[0,1]){const q=back.offset(0,y,0);if(full(bot.blockAt(q)))continue;const m=items();if(!m)throw Error('CAP_STOCK');const ref=y===0?q.offset(0,-1,0):back;if(!full(bot.blockAt(ref)))throw Error('CAP_REF');await bot.equip(m,'hand');await bot.placeBlock(bot.blockAt(ref),new Vec3(0,1,0));await tick(3);if(!full(bot.blockAt(q)))throw Error('CAP_ACK');}return hull(p);}
+try{if(!bot.entity.onGround||!hull(start))throw Error('NOT_NATIVE_START');for(let n=0;n<limit&&Date.now()<workEnd;n++){const p=bot.entity.position.floored(),q=p.plus(d);const envelope=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(side),q.plus(side).offset(0,1,0),q.minus(side),q.minus(side).offset(0,1,0),q.plus(d),q.plus(d).offset(0,1,0)];if(!envelope.every(q=>full(bot.blockAt(q)))||envelope.some(q=>['sand','gravel','lava','water'].includes(bot.blockAt(q)?.name)))throw Error('NATIVE_ENVELOPE');await cut(q.offset(0,1,0));await cut(q);await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);try{for(let k=0;k<35&&bot.entity.position.x<q.x+.42;k++)await tick();}finally{bot.clearControlStates();}await tick(2);if(!bot.entity.onGround||!bot.entity.position.floored().equals(q)||Math.abs(bot.entity.position.z-q.z-.5)>.2)throw Error('STEP_NOT_ACTUAL');steps++;console.log('ACTUAL_STEP',steps,bot.entity.position.clone(),bot.health);}}
+catch(e){issue=e.message;console.log('TUNNEL_ISSUE',issue)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);let protectedEnd=false;try{protectedEnd=await closeBehind();if(protectedEnd)global.P1SafeShaft={feet:bot.entity.position.floored(),roof:bot.entity.position.floored().offset(0,2,0)};}catch(e){console.log('CAP_FAILED',e.message);}bot.removeListener('death',die);bot.removeListener('respawn',die);console.log('TUNNEL_END',JSON.stringify({steps,issue,protectedEnd,p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),above:Array.from({length:8},(_,i)=>[i+2,bot.blockAt(bot.entity.position.floored().offset(0,i+2,0))?.name]),time:bot.time.timeOfDay,lost}));}
+-- output --
+ACTUAL_STEP 1 Vec3 { x: 117.50733551632992, y: 62, z: 177.4961419658884 } 20
+ACTUAL_STEP 2 Vec3 { x: 118.47491025269264, y: 62, z: 177.4984509857403 } 20
+ACTUAL_STEP 3 Vec3 { x: 119.50725036975366, y: 62, z: 177.4996824452918 } 20
+ACTUAL_STEP 4 Vec3 { x: 120.47483863554231, y: 62, z: 177.4996824041859 } 20
+ACTUAL_STEP 5 Vec3 { x: 121.50718248994964, y: 62, z: 177.49968236033962 } 20
+ACTUAL_STEP 6 Vec3 { x: 122.47477082234327, y: 62, z: 177.49968231923373 } 20
+ACTUAL_STEP 7 Vec3 { x: 123.5071146767506, y: 62, z: 177.49968227538744 } 20
+ACTUAL_STEP 8 Vec3 { x: 124.47470300914424, y: 62, z: 177.49968223428155 } 20
+ACTUAL_STEP 9 Vec3 { x: 125.50704686355157, y: 62, z: 177.49968219043527 } 20
+ACTUAL_STEP 10 Vec3 { x: 126.53939172629032, y: 62, z: 177.49968214658898 } 20
+ACTUAL_STEP 11 Vec3 { x: 127.50698005868395, y: 62, z: 177.4996821054831 } 20
+ACTUAL_STEP 12 Vec3 { x: 128.5393239130913, y: 62, z: 177.4996820616368 } 20
+ACTUAL_STEP 13 Vec3 { x: 129.50691224548495, y: 62, z: 177.4996820205309 } 20
+ACTUAL_STEP 14 Vec3 { x: 130.5392560998923, y: 62, z: 177.49968197668463 } 20
+ACTUAL_STEP 15 Vec3 { x: 131.50684443228596, y: 62, z: 177.49968193557874 } 20
+ACTUAL_STEP 16 Vec3 { x: 132.5391882866933, y: 62, z: 177.49968189173245 } 20
+ACTUAL_STEP 17 Vec3 { x: 133.50677661908696, y: 62, z: 177.49968185062656 } 20
+ACTUAL_STEP 18 Vec3 { x: 134.5391204734943, y: 62, z: 177.49968180678027 } 20
+ACTUAL_STEP 19 Vec3 { x: 135.50670880588797, y: 62, z: 177.49968176567438 } 20
+ACTUAL_STEP 20 Vec3 { x: 136.5390526602953, y: 62, z: 177.4996817218281 } 20
+ACTUAL_STEP 21 Vec3 { x: 137.50664099268897, y: 62, z: 177.4996816807222 } 20
+ACTUAL_STEP 22 Vec3 { x: 138.53898484709632, y: 62, z: 177.49968163687592 } 20
+TUNNEL_END {"steps":22,"issue":null,"protectedEnd":true,"p":{"x":138.55842191347884,"y":62,"z":177.49968163687592},"hp":20,"food":18,"ground":true,"inv":[["potion",1,null],["sweet_berries",1,null],["crafting_table",1,null],["torch",1,null],["spruce_door",1,null],["dirt",12,null],["andesite",3,null],["stone_pickaxe",1,38],["cobblestone",35,null]],"above":[[2,"dirt"],[3,"dirt"],[4,"dirt"],[5,"grass_block"],[6,"air"],[7,"spruce_leaves"],[8,"spruce_leaves"],[9,"spruce_leaves"]],"time":21625,"lost":false}

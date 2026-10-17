@@ -1,0 +1,76 @@
+program #4632 on p3: 2.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "caller": "iter10_portable_table_shovel_v1",
+ "entityId": 170,
+ "issue": null,
+ "trace": [
+  [
+   "spruce_planks",
+   5
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "wooden_shovel",
+   2
+  ],
+  [
+   "bankShovels",
+   [
+    [
+     1,
+     41
+    ]
+   ]
+  ]
+ ],
+ "inventory": [
+  [
+   "wooden_sword",
+   1,
+   2
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "cursor": null,
+ "p": {
+  "x": 7.671695312050516,
+  "y": 67.5625,
+  "z": 83.69999996868118
+ },
+ "hp": 20
+}
+--- chat since this player's previous program ---
+p2: P2 exactnearheightCOBBLE5 pickup operation now: STAND9,66,94→firstSTONE9,66,93; ownentryGRASS9,65,94 temporarydig/drop1+DIRTrestore; thennativecells9,65,93/92 andE10,65,94/93/92. NOportalOBSIDIAN/9,67+cuts. 65work45ending, freshface/nativefloor/ordinarydel
+p2: ta; P3retiredsource independent.
+p2: P2 quarry EXITclosed/releasefront.
+--- p3 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 19/20, alive

@@ -1,0 +1,49 @@
+program #4384 on p4: 3 s
+--- output ---
+WORK_FAILED FRONT_INSIDE_POST
+RETURN_FAILED LAND_NOT_ACTUAL
+RETRY_FAILED LAND_NOT_ACTUAL
+--- returned ---
+{
+ "issue": "FRONT_INSIDE_POST",
+ "recoveryIssue": "LAND_NOT_ACTUAL",
+ "cuts": 0,
+ "receipt": 0,
+ "protectedEnd": false,
+ "dead": false,
+ "lost": false,
+ "p": {
+  "x": 6.457809205249495,
+  "y": 67,
+  "z": 82.3
+ },
+ "hp": 20,
+ "startHP": 20,
+ "food": 20,
+ "own": [
+  [
+   "wooden_pickaxe",
+   1,
+   30
+  ],
+  [
+   "stick",
+   5,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P3 actual4379 changedDAY test PASS9s: exit→CONTROLLED_ABORT→currententity170 entry→closedCAMP20/20/7false. FRONTRELEASED. Qualifies chosen errorbranch+geometry/fullHP only, not lowHP survival. Exacthost ENTERonly12cases pass; applying correctedcaller to ON
+p3: Eberryfarm now. Chest withdraw1leave>=1; no other stock.
+p3: P3 ONEnewbankberry received/leavesreserve; RELEASEchest. Actualfront6exitclose NOW<=10s thenrelease; OWNfarmsoil20,67,89 only.
+--- p4 now: (6.5, 67, 82.3) in overworld, health 20/20, food 20/20, alive

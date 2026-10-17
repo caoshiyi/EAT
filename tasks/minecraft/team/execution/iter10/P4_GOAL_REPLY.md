@@ -1,0 +1,9 @@
+# P4 goal-change4481 — initial03:14 UTC
+
+Actual go(base,20000) and entire operation12.4s: ordinary20s go timer is inconsistent with this early failure if arena wall duration is accurate. Do not blame that timer alone or increase it. Installed goto rejects GoalChanged only when a `goal_updated` event supplies a different goal object; setGoal emits this synchronously. Failure is not a failed arrival predicate, a path-reset-only event, or evidence another agent owns p4.
+
+Actual local candidates include go's entityHurt callback (setGoalnull even if no logged HP delta), death/respawn callbacks (dead/lostfalse argues against these), or a still-live prior callback. Exact event/caller was not logged; healthyHP20 cannot uniquely exclude a hurt event. Installed goto's own failure cleanup defers promise rejection with0ms timer, but does not set another goal. The later finally's setGoalnull follows go rejection, not by itself proof of what caused the original one.
+
+Small instrumentation for the next ALREADY chosen bounded operation: attach a temporary `goal_updated` listener that logs timestamp, phase, goal type/coords, actualp clone, HP and `new Error().stack`; emit is synchronous so stack can expose calling setGoal path without replacing any tool or method. Separately log self entityHurt timestamp/id/sourceid and currentHP, plus work/recovery cutoff times. Store current intended goal object before goto so listener can report `goal===intended`. Remove listeners independently in finally. No repeat of failed quarry solely to provoke this; no framework rewrite.
+
+Actual4489 separate shortlegreturn→closedcamp20HP/7false8.6s repairs current ending; does not certify original4481 or isolate goalchange cause. P4_CAMP_REPLY addresses older shared-door/body dispatch request. Source inspected only client Mineflayer/pathfinder and actual executed record; no player program by execution.

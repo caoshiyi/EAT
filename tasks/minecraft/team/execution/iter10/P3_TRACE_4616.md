@@ -1,0 +1,11 @@
+# Actual useful walk-pitch application4616 — 03:35 UTC
+
+Actualcalleriter10_down_gaze_harvest_v1 executed26.95s, currententity170. TWOoutboundworkWALKlegs installthewrapper, preservepathfinderrequestedyaw/forceandreturnpromise; actualbeforeForwardclientpitch-1.5707963401106637. Leg1 stores30physicsTick samples, leg2stores19, allthatpitch (~1.3e-8 fromstraightdown). Actualbodymoves; installedtrue/ownedAtRestoretrue/restoredtruebothlegs. Sourcefinallyrestoresoriginalbeforeeachnormalharvest, as wellasonwalkfailure; no writer/metadata/velocityedit.
+
+Actualthreeharvestsgain3+2+2=7berries, hurtTraceEMPTY; closedcamp20HP19food/7controlsfalse/protectedEndtrue. CampcomponentreceiptbodyInside/doorsclosed/onGround/deadfalse/lostfalse/threats[] supportsreportedending. Subsequent4620 bank3/own4 is separate retainedbenefit, owner4621states exactscope.
+
+This physicallyqualifies clientpitchcontrol+movement+restore/interactions in this usefulhealthyOverworldoperation. It is strongerthanrequestonlyorhelperexists. It doesNOTmeasureoutboundserverpitch(`serverPitchReceipt:false` explicitlyreported), Enderangerimmunity, Nethermovement, arbitraryreturnphases orinjury. Wrappercoversonlytwoworklegs; door/returngaze remainsnormal. Sourceboundsrejectwetwalk; no wetcasequalified. No repeatcompatibilityritualneeded; carrysameexactscopeintoimminentpearlcallerandverifythatcalleractuallywrapsitsWALKphases.
+
+Laterauditchat3557(03:33:05) explicitlyACKsLOOK_REPLY BEFORE4616, names4609smallinstall/clientpitch/restoretest andactualharvestapplication. Delivery/read+actualcalleradoptionareverified; ownerindependentlyproposedwrapper, so no isolatedcausalcreditforsuccess. No playerprogram byexecution.
+
+03:40 actualnextcaller4637SNOW_caps_v1 hasNOdownWalk/lookreplacement/straightdownconstant/pitchreceipt inexecutedsource. It doesnotinherit4616'sWALKpitchqualification. Actualgain4/NO_NATIVE_SNOW/returnplannerfailedoutside6.5,66,79.46/20HP; separate4639directdoorentryclosedcamp20HP/7false/4snowretained repairsending. No claims of angerfromthiscase. Applyexactscopepercaller; a successfulusefulprototypeisnotallcopiesfixed.

@@ -1,0 +1,25 @@
+program #4859 on p2: 1.2 s
+--- output ---
+TABLE_ITEMS [
+  [
+    27276,
+    Vec3 { x: -205.66446161204786, y: 60, z: -429.37323627881494 },
+    'crafting_table'
+  ]
+]
+TABLE_RECEIPT [ 1 ]
+TABLE_END null 5.333335876464844 Vec3 { x: -205.3, y: 57, z: -429.4710462652107 } true [
+  [ 'snowball', 15, null ],
+  [ 'stick', 2, null ],
+  [ 'wooden_pickaxe', 1, 6 ],
+  [ 'stone_pickaxe', 1, 66 ],
+  [ 'wooden_shovel', 1, 43 ],
+  [ 'netherrack', 4, null ],
+  [ 'nether_bricks', 2, null ],
+  [ 'crafting_table', 1, null ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-205.3, 57, -429.5) in the_nether, health 5.3/20, food 17/20, alive

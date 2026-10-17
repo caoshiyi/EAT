@@ -1,0 +1,45 @@
+== #4908 2026-10-17T04:49:43 p2 role=acquisition_owner iter=10 0 s
+const{Vec3}=require("vec3");bot.clearControlStates();bot.pathfinder.setGoal(null);console.log("ACTUAL",JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,stage:global.P2NetherStage,kit:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));const cells=[];for(let x=-133;x<=-131;x++)for(let y=60;y<=64;y++)for(let z=-431;z<=-429;z++){const q=new Vec3(x,y,z),b=bot.blockAt(q);cells.push([x,y,z,b?.name,b?.shapes])}console.log("FARM_GEOMETRY",JSON.stringify(cells));console.log("BLAZES",JSON.stringify(Object.values(bot.entities).filter(e=>["blaze","wither_skeleton","skeleton","ghast","item"].includes(e.name)&&e.position.distanceTo(bot.entity.position)<25).map(e=>[e.id,e.name,e.position,e.metadata?.[9],e.getDroppedItem?.()?.name])));
+
+console.log("BLAZE_KEYS",bot.registry.entitiesByName.blaze.metadataKeys);console.log("BLAZE_META",Object.values(bot.entities).filter(e=>e.name==="blaze").map(e=>[e.id,e.position,e.metadata]));
+-- output --
+ACTUAL {"p":{"x":-131.485211168844,"y":61,"z":-429.4710516363834},"hp":5.333335876464844,"food":17,"stage":{"kind":"FARM_LOW","feet":[-132,61,-430],"at":1792212564066,"routeIndex":994},"kit":[["snowball",15,null],["stone_pickaxe",1,23],["stone_pickaxe",1,130],["wooden_shovel",1,43],["netherrack",7,null],["nether_bricks",64,null],["blackstone",2,null],["nether_bricks",46,null],["basalt",3,null]]}
+FARM_GEOMETRY [[-133,60,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-133,60,-430,"netherrack",[[0,0,0,1,1,1]]],[-133,60,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-133,61,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-133,61,-430,"netherrack",[[0,0,0,1,1,1]]],[-133,61,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-133,62,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-133,62,-430,"netherrack",[[0,0,0,1,1,1]]],[-133,62,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-133,63,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-133,63,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-133,63,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-133,64,-431,"air",[]],[-133,64,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-133,64,-429,"nether_brick_fence",[[0.375,0,0,0.625,1.5,1]]],[-132,60,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-132,60,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-132,60,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-132,61,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-132,61,-430,"air",[]],[-132,61,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-132,62,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-132,62,-430,"air",[]],[-132,62,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-132,63,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-132,63,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-132,63,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-132,64,-431,"air",[]],[-132,64,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-132,64,-429,"air",[]],[-131,60,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-131,60,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-131,60,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-131,61,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-131,61,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-131,61,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-131,62,-431,"nether_bricks",[[0,0,0,1,1,1]]],[-131,62,-430,"nether_bricks",[[0,0,0,1,1,1]]],[-131,62,-429,"nether_bricks",[[0,0,0,1,1,1]]],[-131,63,-431,"spawner",[[0,0,0,1,1,1]]],[-131,63,-430,"air",[]],[-131,63,-429,"air",[]],[-131,64,-431,"air",[]],[-131,64,-430,"air",[]],[-131,64,-429,"air",[]]]
+BLAZES [[31211,"item",{"x":-150.65418214680324,"y":56,"z":-429.875},null,"crafting_table"],[31432,"blaze",{"x":-128.81230034654894,"y":63,"z":-430.7828845959797},20,null],[31542,"blaze",{"x":-129.90525226216954,"y":64,"z":-430.0141611330518},20,null],[31543,"blaze",{"x":-128.49415151687066,"y":63.16610806758928,"z":-429.2868005439142},20,null],[31609,"blaze",{"x":-131.2681175352859,"y":64,"z":-428.49129205678133},20,null]]
+BLAZE_KEYS [
+  'shared_flags',        'air_supply',
+  'custom_name',         'custom_name_visible',
+  'silent',              'no_gravity',
+  'pose',                'ticks_frozen',
+  'living_entity_flags', 'health',
+  'effect_color',        'effect_ambience',
+  'arrow_count',         'stinger_count',
+  'sleeping_pos',        'mob_flags',
+  'flags'
+]
+BLAZE_META [
+  [
+    31432,
+    Vec3 { x: -128.81230034654894, y: 63, z: -430.7828845959797 },
+    [ <9 empty items>, 20, <5 empty items>, 2 ]
+  ],
+  [
+    31542,
+    Vec3 { x: -129.90525226216954, y: 64, z: -430.0141611330518 },
+    [ <9 empty items>, 20, <5 empty items>, 2 ]
+  ],
+  [
+    31543,
+    Vec3 {
+      x: -128.49415151687066,
+      y: 63.16610806758928,
+      z: -429.2868005439142
+    },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    31609,
+    Vec3 { x: -131.2681175352859, y: 64, z: -428.49129205678133 },
+    [ <9 empty items>, 20 ]
+  ]
+]

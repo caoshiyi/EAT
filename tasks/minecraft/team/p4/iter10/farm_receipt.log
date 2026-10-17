@@ -1,0 +1,50 @@
+program #4768 on p4: 4.8 s
+--- output ---
+FARM_ISSUE FRONT_OCCUPIED Vec3 { x: 6.3, y: 67.5625, z: 83.7 } 20
+--- returned ---
+{
+ "issue": "FRONT_OCCUPIED",
+ "recoveryIssue": null,
+ "harvests": [],
+ "fruitGain": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 6.3,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "own": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "bone_meal",
+   2,
+   null
+  ],
+  [
+   "wooden_axe",
+   1,
+   2
+  ]
+ ],
+ "guardAborted": null,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.3, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

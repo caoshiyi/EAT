@@ -1,0 +1,4 @@
+== #4670 2026-10-17T03:49:23 p4 role=capability_operator iter=10 16.2 s
+const{Vec3}=require('vec3');const names=['chest','barrel','furnace','blast_furnace','smoker'];let blocks={};for(const n of names){const id=bot.registry.blocksByName[n]?.id;if(id!==undefined)blocks[n]=bot.findBlocks({matching:id,maxDistance:160,count:64}).map(p=>[p.x,p.y,p.z]);}return{blocks,carts:Object.values(bot.entities).filter(e=>e.name?.includes('chest')||e.name?.includes('villager')).map(e=>[e.id,e.name,e.position.clone()]),p:bot.entity.position,hp:bot.health,food:bot.food,day:bot.time.timeOfDay};
+-- returned --
+{"blocks": {"chest": [[7, 67, 82], [7, 68, 82], [-33, -18, 90], [16, -26, 142], [12, -26, 144], [8, -26, 19], [10, 66, -35]], "barrel": [], "furnace": [[5, 66, 80], [34, 66, 100], [62, 61, 135], [11, 66, -35]], "blast_furnace": [], "smoker": []}, "carts": [], "p": {"x": 7.536183873907051, "y": 67.5625, "z": 83.69999999999996}, "hp": 20, "food": 20, "day": 8065}

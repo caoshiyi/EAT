@@ -1,0 +1,4 @@
+== #4705 2026-10-17T03:58:23 p1 role=lead_converter iter=10 0.1 s
+const qs=bot.findBlocks({matching:b=>b.name.endsWith('_log'),maxDistance:64,count:250}).filter(q=>['dirt','grass_block','podzol'].includes(bot.blockAt(q.offset(0,-1,0))?.name)).sort((a,b)=>a.distanceTo(bot.entity.position)-b.distanceTo(bot.entity.position));console.log('ACTUAL_ROOTS',JSON.stringify(qs.slice(0,8).map(q=>[q.toString(),q.distanceTo(bot.entity.position)])));
+-- output --
+ACTUAL_ROOTS [["(165, 63, 715)",3.837038663494141],["(161, 63, 718)",6.947309739073348],["(174, 63, 708)",11.124308749286712],["(162, 64, 724)",12.627304002848902],["(168, 66, 724)",13.64483808452455],["(169, 63, 698)",14.595786301899167],["(175, 66, 721)",15.264526177830772],["(179, 66, 715)",16.230610965324548]]

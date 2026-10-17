@@ -1,0 +1,41 @@
+program #4940 on p2: 0 s
+--- output ---
+DAY {
+  doDaylightCycle: true,
+  bigTime: 1459985n,
+  time: 1459985,
+  timeOfDay: 19985,
+  day: 60,
+  isDay: false,
+  moonPhase: 4,
+  bigAge: 1439322n,
+  age: 1439322,
+  clocks: {}
+}
+FOES [{"id":21719,"n":"spider","p":{"x":6.300000011920929,"y":65.10000002384186,"z":81.69999998807907},"hp":16,"sky":15,"light":3,"metadata":[null,null,null,null,null,null,null,null,null,16,null,null,null,null,null,null,1]},{"id":32820,"n":"zombie","p":{"x":12.450996091592511,"y":60,"z":83.13362222923634},"hp":20,"sky":0,"light":0,"metadata":[null,null,null,null,null,null,null,null,null,20,null,null,null,null,null,0]}]
+BUSHES [
+  [ [ 20, 68, 89 ], 'sweet_berry_bush', { age: '3' } ],
+  [ [ 22, 68, 89 ], 'sweet_berry_bush', { age: '3' } ],
+  [ [ 24, 68, 90 ], 'sweet_berry_bush', { age: '3' } ]
+]
+E [
+  [ [ 8, 67, 83 ], 'spruce_fence_gate' ],
+  [ [ 8, 68, 83 ], 'dirt' ],
+  [ [ 8, 69, 83 ], 'spruce_planks' ],
+  [ [ 9, 66, 83 ], 'sand' ],
+  [ [ 9, 67, 83 ], 'snow' ],
+  [ [ 9, 68, 83 ], 'air' ]
+]
+--- returned ---
+{
+ "p": {
+  "x": 7.57275122858784,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20
+}
+--- chat since this player's previous program ---
+p3: P3 actual4934 FULL(-19,65,48),20HP/PEARL2/swordsretained; sharedWEST(-20,Y65/66,Z48) BASALT2 exactrecap/released. ETAcamp~2min. P1PLEASE clear6.5,82.5 entryfootprintNOW; P2/P4backbedsfine. P3primaryfrontreturn+bankWOODsword thenPEARL2. CurrentfrontSpiderkn
+p3: own; noEcuts planned.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

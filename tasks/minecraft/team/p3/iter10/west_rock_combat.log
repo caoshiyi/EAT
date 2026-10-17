@@ -1,0 +1,438 @@
+program #4830 on p3: 52.6 s
+--- output ---
+OWN_N_OPENED_NOT_YET_RECEIVED
+OWN_N_ACTUAL_RECEIPT 3
+ALL_FIVE_END_OR_REVERSE_CAPS 5
+ACTUAL -47,59,71 5424
+ACTUAL -47,59,72 5975
+ACTUAL -47,59,73 6476
+ACTUAL -47,58,74 7176
+ACTUAL -48,58,74 7677
+ACTUAL -48,57,75 8330
+ACTUAL -49,58,75 8983
+ACTUAL -50,59,75 9785
+ACTUAL -50,59,76 10288
+ACTUAL -51,58,76 10940
+ACTUAL -52,58,76 11491
+ACTUAL -53,58,76 11991
+ACTUAL -53,57,77 12691
+ACTUAL -53,56,78 13393
+ACTUAL -54,57,78 13993
+ACTUAL -55,57,78 14493
+ACTUAL -56,56,78 15256
+ACTUAL -57,55,78 16026
+ACTUAL -58,54,78 16728
+ACTUAL -59,54,78 17280
+ACTUAL -60,54,78 17781
+ACTUAL -61,54,78 18334
+ACTUAL -62,55,78 18935
+ACTUAL -62,54,79 19636
+ACTUAL -63,54,79 20136
+ACTUAL -64,54,79 20687
+ACTUAL -64,53,80 21339
+ACTUAL -65,53,80 21839
+ACTUAL -66,53,80 22390
+ACTUAL -67,53,80 22890
+ACTUAL -68,54,80 23492
+ACTUAL -69,53,80 24243
+ACTUAL -70,53,80 24793
+ACTUAL -71,53,80 25295
+ACTUAL -72,53,80 25847
+ACTUAL -73,53,80 26750
+ACTUAL -74,52,80 27402
+ACTUAL -75,52,80 27903
+ISSUE THREAT_magma_cube actual Vec3 {
+  x: -74.48062145744612,
+  y: 53.00133597911215,
+  z: 80.24303677884501
+}
+CLOSE_SETTLED_CHANGE Vec3 { x: -75, y: 53, z: 80 } Vec3 { x: -75, y: 53, z: 79 }
+LOCAL_CLOSE_FAIL CLOSE_NEED_9_HELD_5
+ROLLBACK_ACTUAL true
+--- returned ---
+{
+ "caller": "iter10_west_rock_combat_v1",
+ "entityId": 170,
+ "threatTrace": [
+  {
+   "at": 1792211604990,
+   "id": 25744,
+   "name": "magma_cube",
+   "p": {
+    "x": -75.72980004549026,
+    "y": 53.5,
+    "z": 79.44161506376066
+   },
+   "width": 2.04,
+   "own": {
+    "x": -74.48062145744612,
+    "y": 53.00133597911215,
+    "z": 80.24303677884501
+   },
+   "next": {
+    "x": -75,
+    "y": 53,
+    "z": 79
+   },
+   "onGround": false
+  },
+  {
+   "at": 1792211604990,
+   "id": 25744,
+   "name": "magma_cube",
+   "p": {
+    "x": -75.72980004549026,
+    "y": 53.5,
+    "z": 79.44161506376066
+   },
+   "width": 2.04,
+   "own": {
+    "x": -74.48062145744612,
+    "y": 53.00133597911215,
+    "z": 80.24303677884501
+   },
+   "next": {
+    "x": -75,
+    "y": 53,
+    "z": 79
+   },
+   "onGround": false
+  }
+ ],
+ "combatTrace": [
+  {
+   "type": "SWING",
+   "id": 23463,
+   "hpBefore": 4,
+   "size": 2,
+   "aim": {
+    "x": -74.15835203790886,
+    "y": 53.25,
+    "z": 80.10120840317585
+   },
+   "own": {
+    "x": -71.82493029427354,
+    "y": 53,
+    "z": 80.49981396618595
+   },
+   "ownHP": 20,
+   "at": 1792211602935
+  },
+  {
+   "type": "HURT_ACK",
+   "id": 23463,
+   "p": {
+    "x": -74.15835203790886,
+    "y": 53,
+    "z": 80.10120840317585
+   },
+   "hp": 4,
+   "at": 1792211602945
+  },
+  {
+   "type": "SWING",
+   "id": 23463,
+   "hpBefore": 3.214879274368286,
+   "size": 2,
+   "aim": {
+    "x": -75.45516026184838,
+    "y": 53.25,
+    "z": 80.06769279805228
+   },
+   "own": {
+    "x": -73.24436895278487,
+    "y": 53,
+    "z": 80.49989093514837
+   },
+   "ownHP": 20,
+   "at": 1792211603937
+  },
+  {
+   "type": "HURT_ACK",
+   "id": 23463,
+   "p": {
+    "x": -75.45516026184838,
+    "y": 53,
+    "z": 80.06769279805228
+   },
+   "hp": 3.214879274368286,
+   "at": 1792211603941
+  },
+  {
+   "type": "DEAD_ACK",
+   "id": 23463,
+   "p": {
+    "x": -75.45516026184838,
+    "y": 53,
+    "z": 80.06769279805228
+   },
+   "at": 1792211603943
+  },
+  {
+   "type": "HURT_ACK",
+   "id": 22234,
+   "p": {
+    "x": -75.12672748090297,
+    "y": 53,
+    "z": 78.77128870465734
+   },
+   "hp": 4,
+   "at": 1792211603943
+  }
+ ],
+ "combatSwings": 2,
+ "hurt": false,
+ "p": {
+  "x": -46.498999673915385,
+  "y": 59,
+  "z": 70.50585102452314
+ },
+ "hp": 20,
+ "food": 18,
+ "issue": "THREAT_magma_cube",
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -47,
+   59,
+   71
+  ],
+  [
+   -47,
+   59,
+   72
+  ],
+  [
+   -47,
+   59,
+   73
+  ],
+  [
+   -47,
+   58,
+   74
+  ],
+  [
+   -48,
+   58,
+   74
+  ],
+  [
+   -48,
+   57,
+   75
+  ],
+  [
+   -49,
+   58,
+   75
+  ],
+  [
+   -50,
+   59,
+   75
+  ],
+  [
+   -50,
+   59,
+   76
+  ],
+  [
+   -51,
+   58,
+   76
+  ],
+  [
+   -52,
+   58,
+   76
+  ],
+  [
+   -53,
+   58,
+   76
+  ],
+  [
+   -53,
+   57,
+   77
+  ],
+  [
+   -53,
+   56,
+   78
+  ],
+  [
+   -54,
+   57,
+   78
+  ],
+  [
+   -55,
+   57,
+   78
+  ],
+  [
+   -56,
+   56,
+   78
+  ],
+  [
+   -57,
+   55,
+   78
+  ],
+  [
+   -58,
+   54,
+   78
+  ],
+  [
+   -59,
+   54,
+   78
+  ],
+  [
+   -60,
+   54,
+   78
+  ],
+  [
+   -61,
+   54,
+   78
+  ],
+  [
+   -62,
+   55,
+   78
+  ],
+  [
+   -62,
+   54,
+   79
+  ],
+  [
+   -63,
+   54,
+   79
+  ],
+  [
+   -64,
+   54,
+   79
+  ],
+  [
+   -64,
+   53,
+   80
+  ],
+  [
+   -65,
+   53,
+   80
+  ],
+  [
+   -66,
+   53,
+   80
+  ],
+  [
+   -67,
+   53,
+   80
+  ],
+  [
+   -68,
+   54,
+   80
+  ],
+  [
+   -69,
+   53,
+   80
+  ],
+  [
+   -70,
+   53,
+   80
+  ],
+  [
+   -71,
+   53,
+   80
+  ],
+  [
+   -72,
+   53,
+   80
+  ],
+  [
+   -73,
+   53,
+   80
+  ],
+  [
+   -74,
+   52,
+   80
+  ],
+  [
+   -75,
+   52,
+   80
+  ]
+ ],
+ "elapsed": 52632,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   2
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   19
+  ],
+  [
+   "wooden_shovel",
+   1,
+   5
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 newboundedOUTCOME alternateEASTaccess forP1/P4food, notcombat/kit: actual4824 floor8+9,Y66,Z83 FULLSAND, outsideground67 sameasinsidefloor; Ecap8,Y67/68/69,Z83=SAND/DIRT/SAND, toproveexactroundtrip. Roofcapalreadyactualvisible4823 unlikefailedSroof. ONL
+p4: YthatE3columnlease temporarycut/recap; directEcorrectiveentry, NOfrontstagingfallback. Targetspiderunderfront4.13mfromexit, noEfoe<3.2/noCreeper9/ranged16. One<=25sroundtrip+55recovery; iffailretire.
+--- p3 now: (-46.5, 59, 70.5) in the_nether, health 20/20, food 18/20, alive

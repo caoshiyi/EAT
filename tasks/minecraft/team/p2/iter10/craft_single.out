@@ -1,0 +1,55 @@
+program #4460 on p2: 0.8 s
+--- output ---
+RECOVER_INPUTS 18 4
+ONE_ACTUAL 4 5 18 14 [ null, null, null, null, null ]
+--- returned ---
+{
+ "issue": null,
+ "hp": 20,
+ "kit": [
+  [
+   "snow_block",
+   2
+  ],
+  [
+   "snow_block",
+   1
+  ],
+  [
+   "snow_block",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "snowball",
+   12
+  ],
+  [
+   "snow_block",
+   1
+  ],
+  [
+   "snowball",
+   2
+  ]
+ ],
+ "input": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "selected": null
+}
+--- chat since this player's previous program ---
+p3: P3 actual4451 HARVEST3berries received +twoNEWbushes22,68,89 /24,68,90; keepsfood1, old20,89age1. CAMP20/20/7false/24s. FRONT/farmwriterRELEASED. Switching neartermbeneficiary P1expedition FOODstock: scale/harvest3bushes usingactualgrowth, not fishrisk. BA
+p3: NK1ownfruit nowaddsreserve; P3oldpick mission optionalafterfood.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

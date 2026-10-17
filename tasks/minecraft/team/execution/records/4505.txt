@@ -1,0 +1,4 @@
+== #4505 2026-10-17T03:14:58 p4 role=capability_operator iter=10 0 s
+const{Vec3}=require('vec3');const q=new Vec3(13,66,95);return{q,source:bot.blockAt(q)?.name,sides:[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]].map(d=>[d,bot.blockAt(q.offset(...d))?.name]),stance:[12,67,95],p:bot.entity.position,hp:bot.health};
+-- returned --
+{"q": {"x": 13, "y": 66, "z": 95}, "source": "grass_block", "sides": [[[1, 0, 0], "stone"], [[-1, 0, 0], "stone"], [[0, 1, 0], "air"], [[0, -1, 0], "sand"], [[0, 0, 1], "grass_block"], [[0, 0, -1], "stone"]], "stance": [12, 67, 95], "p": {"x": 7.631754351486929, "y": 67.5625, "z": 83.699999921703}, "hp": 20}

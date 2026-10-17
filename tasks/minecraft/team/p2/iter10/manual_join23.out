@@ -1,0 +1,98 @@
+program #4682 on p2: 21.6 s
+--- output ---
+EXACT_STEP Vec3 { x: 5, y: 65, z: 2 } Vec3 { x: 5.423231331500401, y: 65, z: 2.425142855102912 } 20
+EXACT_STEP Vec3 { x: 4, y: 65, z: 2 } Vec3 { x: 4.5351548107121955, y: 65, z: 2.425142855102932 } 20
+OLD_EAST_RECAP_ACTUAL Vec3 { x: 4.539582119155366, y: 65, z: 2.425142855102932 } 20
+JOIN_TARGET Vec3 { x: 4, y: 66, z: 1 } [ 'basalt', 'air', 'air' ]
+EXACT_STEP Vec3 { x: 4, y: 66, z: 1 } Vec3 { x: 4.539582119155293, y: 66, z: 1.5013827722891593 } 20
+JOIN_TARGET Vec3 { x: 3, y: 65, z: 1 } [ 'basalt', 'air', 'air' ]
+EXACT_STEP Vec3 { x: 3, y: 65, z: 1 } Vec3 { x: 3.5499143583514265, y: 65, z: 1.491167984115721 } 20
+JOIN_TARGET Vec3 { x: 2, y: 65, z: 1 } [ 'basalt', 'air', 'air' ]
+EXACT_STEP Vec3 { x: 2, y: 65, z: 1 } Vec3 { x: 2.495482320080882, y: 65, z: 1.4911679841157688 } 20
+JOIN_TARGET Vec3 { x: 1, y: 65, z: 1 } [ 'basalt', 'air', 'air' ]
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.4156074981753903, y: 65, z: 1.4911679841158165 } 20
+JOIN_ACTUAL Vec3 { x: 1.4156074981753903, y: 65, z: 1.4911679841158165 } 20
+FAST_STAGE_PLAN 3 23 Vec3 { x: -4, y: 65, z: -14 }
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5281140345768691, y: 65, z: 1.4911679841158356 } 20
+OWN_EXIT_PASSED Vec3 { x: 0.5281140345768691, y: 65, z: 1.4911679841158356 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5325413479430892, y: 65, z: 0.4267606827973969 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.5325413479430168, y: 66, z: -0.49861722771084044 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -4 } Vec3 { x: 0.5325413479427494, y: 66, z: -3.531443579105099 } 20
+FAST_SEGMENT_ACTUAL 6 9 Vec3 { x: 0.5325413479427494, y: 66, z: -3.531443579105099 } 20 TICKS 14
+EXACT_STEP Vec3 { x: 0, y: 67, z: -5 } Vec3 { x: 0.5325413479426961, y: 67, z: -4.581980695718626 } 20
+EXACT_STEP Vec3 { x: -1, y: 66, z: -5 } Vec3 { x: -0.4571264128611699, y: 66, z: -4.592614661147258 } 20
+EXACT_STEP Vec3 { x: -1, y: 67, z: -6 } Vec3 { x: -0.45259590703241553, y: 67, z: -5.49861722771084 } 20
+EXACT_STEP Vec3 { x: -2, y: 66, z: -6 } Vec3 { x: -1.4422636678362808, y: 66, z: -5.508832015884277 } 20
+EXACT_STEP Vec3 { x: -3, y: 66, z: -6 } Vec3 { x: -2.496695706106825, y: 66, z: -5.508832015884228 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -6 } Vec3 { x: -3.5012922741237906, y: 65, z: -5.508832015884208 } 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -12 } Vec3 { x: -3.4967618544785473, y: 65, z: -11.54913186043635 } 20
+FAST_SEGMENT_ACTUAL 15 21 Vec3 { x: -3.4967618544785473, y: 65, z: -11.54913186043635 } 20 TICKS 28
+ROUTE_SERVER_DIG_ACK Vec3 { x: -4, y: 66, z: -13 } 34 35 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -4, y: 65, z: -13 } 35 36 20
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.496761854478719, y: 65, z: -13.488124701641377 } 20
+FAST_SEGMENT_ACTUAL 21 23 Vec3 { x: -3.496761854478719, y: 65, z: -13.488124701641377 } 20 TICKS 9
+EXACT_STEP Vec3 { x: -4, y: 65, z: -14 } Vec3 { x: -3.496761854478719, y: 65, z: -13.488124701641377 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-4,65,-14],"surface":[-4,65,-14],"index":23} 20 20
+FAST_STAGE_END {"issue":null,"closed":true,"startIndex":3,"endIndex":23,"currentIndex":23,"p":{"x":-3.496761854478719,"y":65,"z":-13.488124701641377},"hp":20,"food":20,"lost":false,"elapsed":13784}
+FINAL_KIT [["crafting_table",1,null],["stick",2,null],["snowball",15,null],["wooden_pickaxe",1,4],["stone_pickaxe",1,4],["wooden_shovel",1,36],["snow_block",5,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+{
+ "issue": null,
+ "joined": true,
+ "protectedEnd": true,
+ "lost": false,
+ "p": {
+  "x": -3.496761854478719,
+  "y": 65,
+  "z": -13.488124701641377
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   4
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   4
+  ],
+  [
+   "wooden_shovel",
+   1,
+   36
+  ],
+  [
+   "snow_block",
+   5,
+   null
+  ]
+ ],
+ "elapsed": 21584
+}
+--- chat since this player's previous program ---
+p1: P1 #4661 DAYEASTrecovery actual196.6s/20HP18food/physicalBOXfull162,63,711: POTION1+Sword2+COBBLE31+PLANK1 restored. #4673 actual9otherdrops visible3..10m inclfreshPICK0at166.9,713.1/old40at154.4,717/TABLE154,708/DOOR164,709/DIRT167,704; NO_NPC. Collectnam
+p1: edscatter now<=70s thenoriginalBOXexactrecap. Actualitemreceiptsbeforecapabilityclaims.
+p3: P3 4672 immediateSSreceiptfalse but freshstatusactualSS1 nowheld (delayedreceipt); NheadTABLE FULL20HP. Changedpickupmethod after2receiptvetoes: NheadTABLE/NfootSS temporaryopen, adjacentdryBASALT-supportedcells1,65,3→0,65,3 collectnativeB1, boundedactuali
+p3: nventorywait2.2s, retreatsamefloor→N2SSrestore (TABLErecovered). Guardallfloor/3cellbounds/currentbody/NPC10m; no remoteautopick/noairborne. Work25return20s.
+p4: P4 furnace actualEXITclosed/release, returnwithin10s.
+--- p2 now: (-3.5, 65, -13.5) in the_nether, health 20/20, food 20/20, alive

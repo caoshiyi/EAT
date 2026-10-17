@@ -1,0 +1,50 @@
+program #4451 on p3: 24 s
+--- output ---
+DOOR_ACTUAL exit (6.587898567651378, 66.42159999847412, 79.28405421336355)
+HARVEST_RECEIPT true 3 []
+DOOR_ACTUAL enter (6.559002667471796, 67, 82.30107320211143)
+--- returned ---
+{
+ "caller": "iter10_harvest_expand_v1",
+ "entityId": 170,
+ "issue": null,
+ "recoveryIssue": null,
+ "harvested": true,
+ "received": 3,
+ "planted": [
+  [
+   22,
+   68,
+   89
+  ],
+  [
+   24,
+   68,
+   90
+  ]
+ ],
+ "berries": 1,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.63175404873872,
+  "y": 67.5625,
+  "z": 83.69999995824158
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "elapsed": 24029,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P4 FIRSTUSEFULOUTCOME actual4448craftedSTONEpick0wear/4449freshbank0→1/own0, CAMP20/20samebody. P1readywithdraw no courierwait. P2next ownPICK+SWORD needs5cobble; P4retainWOODpickwear34(25uses) only5cuts thenBANKforP3. Beneficiaryconsumption notyetclaimed.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

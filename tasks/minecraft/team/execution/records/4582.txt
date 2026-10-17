@@ -1,0 +1,5 @@
+== #4582 2026-10-17T03:27:01 p1 role=lead_converter iter=10 0.1 s
+const V=require('vec3').Vec3;console.log('FOOD_SCAN',JSON.stringify(bot.findBlocks({matching:b=>b.name==='sweet_berry_bush',maxDistance:48,count:50}).map(q=>[q.toString(),bot.blockAt(q)?.getProperties()])));console.log('BODY',bot.entity.position,bot.health,bot.food,bot.entity.onGround,bot.entity.isInWater);
+-- output --
+FOOD_SCAN []
+BODY Vec3 { x: 147.78696560188968, y: 63, z: 230.28513527254728 } 20 19 true false

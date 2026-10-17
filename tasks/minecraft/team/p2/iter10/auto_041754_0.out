@@ -1,0 +1,32 @@
+program #4757 on p2: 15.9 s
+--- output ---
+EXACT_STEP Vec3 { x: -101, y: 63, z: -170 } Vec3 { x: -100.47870396249628, y: 63, z: -169.573093674173 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -101, 64, -170 ], [ -101, 63, -170 ] ] 9 15
+EXACT_STEP Vec3 { x: -101, y: 63, z: -171 } Vec3 { x: -100.47870396249631, y: 63, z: -170.45070962877261 } 20
+EXACT_STEP Vec3 { x: -101, y: 63, z: -172 } Vec3 { x: -100.47870396249638, y: 63, z: -171.51301340327788 } 20
+COLUMN_ACTUAL_RECEIPT [ [ -101, 64, -172 ], [ -101, 63, -172 ] ] 11 15
+EXACT_STEP Vec3 { x: -101, y: 63, z: -171 } Vec3 { x: -100.47870396249617, y: 63, z: -170.45742483215867 } 20
+FAST_STAGE_PLAN 289 489 Vec3 { x: -254, y: 63, z: -218 }
+EXACT_STEP Vec3 { x: -101, y: 63, z: -172 } Vec3 { x: -100.47870396249624, y: 63, z: -171.50694956246667 } 20
+OWN_EXIT_PASSED Vec3 { x: -100.47870396249624, y: 63, z: -171.50694956246667 } 20
+EXACT_STEP Vec3 { x: -101, y: 63, z: -180 } Vec3 { x: -100.47870396249677, y: 63, z: -179.50486401926025 } 20
+FAST_SEGMENT_ACTUAL 290 298 Vec3 { x: -100.47870396249677, y: 63, z: -179.50486401926025 } 20 TICKS 37
+EXACT_STEP Vec3 { x: -109, y: 63, z: -180 } Vec3 { x: -108.47563199734121, y: 63, z: -179.50486401926028 } 20
+FAST_SEGMENT_ACTUAL 298 306 Vec3 { x: -108.47563199734121, y: 63, z: -179.50486401926028 } 20 TICKS 38
+THREAT_DETAILS [{"id":21550,"n":"magma_cube","p":{"x":-116.90313173072623,"y":63,"z":-179.76154233316603},"hp":1}]
+FAST_STAGE_ISSUE FAST_THREAT 306 313 Vec3 { x: -108.47563199734121, y: 63, z: -179.50486401926028 } 20
+EXACT_STEP Vec3 { x: -109, y: 63, z: -180 } Vec3 { x: -108.47102809522741, y: 63, z: -179.50486401926028 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-109,63,-180],"surface":[-109,63,-180],"index":306,"placed":[[-108,63,-180],[-108,64,-180],[-110,63,-180],[-110,64,-180]]} 20 20
+FAST_STAGE_END {"issue":"FAST_THREAT","closed":true,"startIndex":289,"endIndex":489,"currentIndex":306,"p":{"x":-108.47102809522741,"y":63,"z":-179.50486401926028},"hp":20,"food":20,"lost":false,"sharedPending":[],"elapsed":15913}
+FINAL_KIT [["crafting_table",1,null],["snowball",15,null],["stick",2,null],["wooden_pickaxe",1,4],["stone_pickaxe",1,21],["wooden_shovel",1,41],["snow_block",5,null],["cobblestone",1,null],["dirt",1,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was slain by Drowned
+p4: P4 4750 treeGREW+rootLOG1 actualown, 20HP/token0/closedcamp. RemainingLOG70..74 at5,83; fresh4753 actualvisible rays toLOG70 throughwestslit; harvestingONLY70/71→3logs total for AXE/PICK/SWORD immediatep4 use, no wall/roofcuts. 2MEALretained. Cacheexpired/
+p4: retired. Official04:17 dragon0/9/deaths91.
+p4: P1 actualNEWemptybodyseen04:17, P4completed4756 TREE→freshWOODpick+sword+axe. 4758 BANKlower7,67,82 fresh0→1each PICK+SWORD immediatelyavailable foryourchosenrecovery; no withdrawalneededfromotherkits. P4retainsAXE+sticks3+meal2, canharvestvisibleuppertrun
+p4: k withoutfieldtrip. Receiptbankonly, notP1useyet.
+--- p2 now: (-108.5, 63, -179.5) in the_nether, health 20/20, food 20/20, alive

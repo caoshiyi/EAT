@@ -1,0 +1,27 @@
+== #4475 2026-10-17T03:11:29 p1 role=lead_converter iter=10 1.1 s
+const {Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);let c;
+try{c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));console.log('BANK_PRE',c.containerItems().map(i=>[i.name,i.count]));for(const[n,k]of [['stone_pickaxe',1],['spruce_log',2],['potion',1],['spruce_door',1]]){const i=c.containerItems().find(i=>i.name===n);if(!i||i.count<k)throw Error('BANK_MISSING_'+n);await c.withdraw(i.type,null,k);}const berries=c.containerItems().find(i=>i.name==='sweet_berries');if(berries&&berries.count>1)await c.withdraw(berries.type,null,berries.count-1);c.close();c=null;
+async function park(){if(bot.currentWindow)bot.closeWindow(bot.currentWindow);await bot.waitForTicks(3);if(bot.inventory.selectedItem){const slot=bot.inventory.slots.findIndex((v,k)=>k>=9&&k<=44&&!v);if(slot<9)throw Error('NO_CURSOR_SLOT');await bot.clickWindow(slot,0,0);await bot.waitForTicks(2);}}
+for(let k=0;k<2;k++){const r=bot.recipesFor(bot.registry.itemsByName.spruce_planks.id,null,1,null)[0];if(!r)throw Error('PLANK_RECIPE');await bot.craft(r,1,null);await park();}
+const r=bot.recipesFor(bot.registry.itemsByName.crafting_table.id,null,1,null)[0];if(!r)throw Error('TABLE_RECIPE');await bot.craft(r,1,null);await park();
+console.log('KIT_RETAINED',JSON.stringify(bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed,nbt:i.nbt}))));}catch(e){console.log('KIT_ISSUE',e.message)}finally{if(c)c.close();console.log('BODY',bot.entity.position,bot.health,bot.food);}
+-- output --
+BANK_PRE [
+  [ 'stick', 3 ],
+  [ 'sweet_berries', 2 ],
+  [ 'flint_and_steel', 1 ],
+  [ 'spruce_fence_gate', 1 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 1 ],
+  [ 'potion', 1 ],
+  [ 'spruce_door', 1 ],
+  [ 'spruce_log', 2 ],
+  [ 'arrow', 1 ],
+  [ 'spruce_boat', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'wooden_sword', 1 ],
+  [ 'wooden_shovel', 1 ]
+]
+KIT_RETAINED [{"name":"spruce_door","count":2,"wear":null,"nbt":null},{"name":"stone_pickaxe","count":1,"wear":0,"nbt":{"type":"compound","value":{"Damage":{"type":"int","value":0}}}},{"name":"spruce_planks","count":4,"wear":null,"nbt":null},{"name":"potion","count":1,"wear":null,"nbt":{"type":"compound","value":{"Potion":{"type":"string","value":"minecraft:water_breathing"}}}},{"name":"sweet_berries","count":1,"wear":null,"nbt":null},{"name":"crafting_table","count":1,"wear":null,"nbt":null},{"name":"torch","count":1,"wear":null,"nbt":null},{"name":"dirt","count":1,"wear":null,"nbt":null}]
+BODY Vec3 { x: 7.641939507428076, y: 67.5625, z: 83.69999996868118 } 20 18

@@ -1,0 +1,63 @@
+program #4428 on p4: 28.8 s
+--- output ---
+START_STATE {
+  safe: true,
+  ground: true,
+  p: Vec3 { x: 6.55900292846179, y: 67.5625, z: 83.7 },
+  doors: [ false, false ],
+  pick: 1
+}
+DOOR_ACTUAL exit (6.559002277031019, 66.42159999847412, 79.28405421962735)
+CUT_ACK { block: 'air', wear0: 31, wear1: 32, receipt: 1 }
+DOOR_ACTUAL enter (6.559002824065733, 67, 82.46638879754354)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "cuts": 1,
+ "receipt": 1,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "p": {
+  "x": 7.626312682978839,
+  "y": 67.5625,
+  "z": 83.6999999373624
+ },
+ "hp": 20,
+ "startHP": 20,
+ "food": 20,
+ "own": [
+  [
+   "stick",
+   5,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   32
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P3 correction4424 ACTUALinsidebody17020HP/doorsclosed changed6 OPEN→CLOSED provesdooropen atrepair; no campThreats defect established/earlierspeculationwithdrawn. 4414 wood retained+separate4424repair, notwholetripPASS. BANKLOG1 nowforP1craftstock; bankrec
+p3: eiptiniter10/bank_log.log. New returnfix separatebodyInsidefromdoors to avoid routingOUTifalreadyinside.
+p1: P1 #4415 separatecurrentbodyCAMPclosed20/18/7false, frontRELEASED. Changed nextwettest actualDOOR→adjacentwater with explicitper5tickpose; set pathfinder.LOSWhenPlacingBlocksfalse (oldpendingsteeringpossible, unisolated). No newdoor/terrain, no longwetwait
+p1: . P3 actualreturnfirst ifnearfront; P1cross in~10s.
+p1: P1 FRONT_EXIT_CLOSED RELEASE
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

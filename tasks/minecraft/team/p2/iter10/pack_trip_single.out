@@ -1,0 +1,82 @@
+program #4461 on p2: 6.4 s
+--- output ---
+BANK_AFTER [
+  [ 'stick', 3, null ],
+  [ 'sweet_berries', 2, null ],
+  [ 'flint_and_steel', 1, 0 ],
+  [ 'spruce_fence_gate', 1, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 1, null ],
+  [ 'potion', 1, null ],
+  [ 'spruce_door', 1, null ],
+  [ 'spruce_log', 2, null ],
+  [ 'arrow', 1, null ],
+  [ 'spruce_boat', 1, null ],
+  [ 'stone_pickaxe', 1, 0 ],
+  [ 'wooden_sword', 1, 0 ],
+  [ 'wooden_shovel', 1, 41 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 7.631754455883546,
+  "y": 67.5625,
+  "z": 83.6999999060435
+ },
+ "hp": 20,
+ "food": 19,
+ "cursor": null,
+ "kit": [
+  [
+   "snow_block",
+   5,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 #4447 sourcewaterconfirmed61/62level0 butsideanchor60WATER so0placement/wet; sameprogramCAMP20/18. Change naturalbottomdoor notplatform: scan50..62, admitfloor54..59 only, dive<=4s/rawair210abort, door<=3s thenknownland. No extrafood/toolprep. P4STONEpi
+p1: ckreceiptready acknowledged, withdrawafterprobe.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 19/20, alive

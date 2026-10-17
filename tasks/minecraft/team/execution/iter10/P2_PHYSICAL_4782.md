@@ -1,0 +1,9 @@
+# Actual corrected restoration4782 — 04:24 UTC
+
+**Physical dependency correction exercised:** SHARED_RECAP_ACTUAL(-121,63,-180) DIRT using FULLfloor(-121,62,-180). The old floor-only FOOT anchor actually exists in this current world and the lower cap was restored. This is world evidence beyond the host fixture/source-only adoption. It does not uniquely reconstruct predeath4567 geometry or isolate why the old execution failed.
+
+**Remaining head is not missing a reference:** captured SHARED_PENDING_WORLD for(-121,64,-180) explicitly shows below(-121,63,-180)=DIRT/FULLtrue and allfiveotherneighborsAIR. Source skips when either reference OR exactoriginalmaterial is absent; this current reference is present. StartingDIRT1 was spent on FOOT; final kit/retention has no secondDIRT. The remaining gate is therefore exact-original-material availability, not a floating pair or unknown anchor. Preserve that distinction; generic SHARED_DEPENDENCY wording hides two different predicates. Log selectedref and original-material count/reason separately on the next attempt.
+
+**Actual body recovery now succeeds while terrain remains pending:** FAST_STAGE_ENDclosedtrue20HP20food/lostfalse at-119.487,63,-179.505, elapsed16.381s; sharedPending contains ONLYHEAD64DIRT. This exercises the revised separation of body ending from incomplete shared repair. It is not proof the shared pair or whole route is restored. One lowercap restored + one pendinghead, no double-counting.
+
+Owner chooses exactDIRT receipt or an explicitly permitted named substitution; do not invent a new external-anchor requirement, universal cap quota, or falsely call the original shared contract complete. No extra hazardous test is needed just to establish the floor/reference again. No document-causal credit: owner proposed the ordering and this was a changed operation with other conditions.

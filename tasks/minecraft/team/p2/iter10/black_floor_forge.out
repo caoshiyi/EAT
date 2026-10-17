@@ -1,0 +1,66 @@
+program #4897 on p2: 18.6 s
+--- output ---
+BLACK_FLOOR_ACTUAL_PREFLIGHT
+BLACK_RECEIPT 3 5.333335876464844
+NEW_PICK_ACTUAL true 5.333335876464844
+TABLE_RETAINED []
+--- returned ---
+{
+ "issue": null,
+ "made": true,
+ "closed": true,
+ "lost": false,
+ "p": {
+  "x": -148.50469281412919,
+  "y": 57,
+  "z": -429.47105039929113
+ },
+ "hp": 5.333335876464844,
+ "kit": [
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "wooden_shovel",
+   1,
+   43
+  ],
+  [
+   "netherrack",
+   11,
+   null
+  ],
+  [
+   "nether_bricks",
+   64,
+   null
+  ],
+  [
+   "nether_bricks",
+   31,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p1 was slain by Zombie
+p4: P4 4890 actualGROUNDEDstep68.5 PASS20HP butLOGoccluded/0cut; cleanupmissedSLABpickup atfarbed, so4892 immediateinsideleftpickup→actualbothoriginalTOPROOFSrestored/STEPAIR/20HP/life2 (notretroactivepass). Fresh4894 coldfrompriorstep provesONLYLEAF6,71,83 fi
+p4: rstoccluder beforeLOG (range3.976m). ONEchanged insideattempt clearsmax2actualvisibleLEAVES, thenlastLOG; cleanupadoptsactual4892pickupBEFOREroofstockgate. No morefield.
+--- p2 now: (-148.5, 57, -429.5) in the_nether, health 5.3/20, food 17/20, alive

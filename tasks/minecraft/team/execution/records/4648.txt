@@ -1,0 +1,14 @@
+== #4648 2026-10-17T03:41:56 p2 role=acquisition_owner iter=10 1.2 s
+const{Vec3}=require('vec3'),cnt=n=>bot.inventory.items().filter(i=>i.name===n).reduce((n,i)=>n+i.count,0);let issue=null;bot.clearControlStates();bot.pathfinder.setGoal(null);try{if(bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(new Vec3(7,67,83))>2||cnt('cobblestone')!==4)throw Error('BODY_KIT');const table=bot.blockAt(new Vec3(6,66,82)),r=bot.recipesFor(bot.registry.itemsByName.stone_pickaxe.id,null,1,table)[0];if(!r)throw Error('RECIPE');await bot.craft(r,1,table);if(bot.currentWindow)bot.closeWindow(bot.currentWindow);await bot.waitForTicks(10);if(bot.inventory.selectedItem){await bot.clickWindow(bot.inventory.firstEmptyInventorySlot(),0,0);await bot.waitForTicks(4)}if(cnt('stone_pickaxe')!==1||cnt('cobblestone')!==1||cnt('stick')!==2)throw Error('ACTUAL_RECIPE_RECEIPT');console.log('RETAINED_STONE_PICK',bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]));}catch(e){issue=e.message}return{issue,hp:bot.health,food:bot.food,kit:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+RETAINED_STONE_PICK [
+  [ 'crafting_table', 1, null ],
+  [ 'cobblestone', 1, null ],
+  [ 'stick', 2, null ],
+  [ 'stone_pickaxe', 1, 0 ],
+  [ 'wooden_pickaxe', 1, 4 ],
+  [ 'wooden_shovel', 1, 3 ],
+  [ 'dirt', 2, null ]
+]
+-- returned --
+{"issue": null, "hp": 20, "food": 20, "kit": [["crafting_table", 1, null], ["cobblestone", 1, null], ["stick", 2, null], ["stone_pickaxe", 1, 0], ["wooden_pickaxe", 1, 4], ["wooden_shovel", 1, 3], ["dirt", 2, null]]}

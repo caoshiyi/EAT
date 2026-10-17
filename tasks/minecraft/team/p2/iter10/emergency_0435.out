@@ -1,0 +1,87 @@
+program #4841 on p2: 5.3 s
+--- output ---
+EMERGENCY_ACTUAL Vec3 { x: -206, y: 60, z: -430 } 4 9 true
+EXACT_STEP Vec3 { x: -206, y: 60, z: -430 } Vec3 { x: -205.42261459846438, y: 60, z: -429.40391875589904 } 10.833335876464844
+EMERGENCY_END_ERROR BURY_SETTLE Vec3 { x: -205.3, y: 58.92159999847412, z: -429.4710462652107 } 8.333335876464844
+--- returned ---
+{
+ "closed": false,
+ "lost": false,
+ "p": {
+  "x": -205.3,
+  "y": 58.92159999847412,
+  "z": -429.4710462652107
+ },
+ "hp": 8.333335876464844,
+ "stage": {
+  "kind": "SURFACE_POD",
+  "feet": [
+   -284,
+   61,
+   -394
+  ],
+  "surface": [
+   -284,
+   61,
+   -394
+  ],
+  "index": 811,
+  "placed": [
+   [
+    -283,
+    61,
+    -394
+   ],
+   [
+    -283,
+    62,
+    -394
+   ]
+  ]
+ },
+ "kit": [
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   5
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   64
+  ],
+  [
+   "wooden_shovel",
+   1,
+   43
+  ],
+  [
+   "netherrack",
+   4,
+   null
+  ],
+  [
+   "nether_bricks",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-205.3, 58.9, -429.5) in the_nether, health 8.3/20, food 17/20, alive

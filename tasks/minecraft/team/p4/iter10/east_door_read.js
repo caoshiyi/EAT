@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const blocks=[];for(const x of[6,7,8])for(const z of[79,80,81,82])blocks.push([x,z,[64,65,66,67,68,69].map(y=>{const b=bot.blockAt(new Vec3(x,y,z));return[y,b?.name,b?.shapes]})]);return{blocks,p:bot.entity.position,hp:bot.health,peers:Object.values(bot.entities).filter(e=>e.type==='player').map(e=>[e.username,e.position])};

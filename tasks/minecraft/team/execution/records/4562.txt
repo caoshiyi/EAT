@@ -1,0 +1,4 @@
+== #4562 2026-10-17T03:23:41 p3 role=reliability_builder iter=10 0.3 s
+const{Vec3}=require('vec3');let c,issue=null,before,after;try{if(bot.game.dimension!=='overworld'||bot.health!==20)throw Error('BODY');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const it=c.containerItems().find(i=>i.name==='wooden_sword');if(!it)throw Error('NO_SWORD');before=it.count;await c.withdraw(it.type,null,1);await bot.waitForTicks(3);after=c.containerItems().filter(i=>i.name==='wooden_sword').reduce((s,i)=>s+i.count,0);}catch(e){issue=e.message}finally{if(c)c.close();bot.pathfinder.setGoal(null);bot.clearControlStates();}await bot.waitForTicks(3);return{issue,before,after,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),p:bot.entity.position.clone(),hp:bot.health};
+-- returned --
+{"issue": null, "before": 1, "after": 0, "inventory": [["wooden_sword", 1, 2]], "p": {"x": 7.542645079581289, "y": 67.5625, "z": 83.69999996868118}, "hp": 20}

@@ -1,0 +1,49 @@
+program #4586 on p4: 1.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "steps": [
+  [
+   0,
+   1,
+   8,
+   4
+  ],
+  [
+   1,
+   2,
+   4,
+   0
+  ]
+ ],
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 7.631754220992469,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "own": [
+  [
+   "gold_ingot",
+   1
+  ],
+  [
+   "sandstone",
+   2
+  ]
+ ],
+ "cursor": null,
+ "grid": [
+  null,
+  null,
+  null,
+  null
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1147,63,230 actual20HP19food afterlastberry; fresh48m scanZERO bushes (historicalpatchharvested, no assumedregrowth). No foodquota/wait, currenthungeradequateforwalk. Bury/hold false atshore duecenterwater butfootcornerland support; freshonGroundtrue/noNP
+p1: C. Fixcorner-supportmeasurement; nextONEaccessiblelog sparepick/sword ifrealvisible, otherwiseproceed147,2212.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

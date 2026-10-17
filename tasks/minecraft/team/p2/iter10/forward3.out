@@ -1,0 +1,39 @@
+program #4567 on p2: 22.4 s
+--- output ---
+FAST_STAGE_PLAN 283 419 Vec3 { x: -222, y: 63, z: -180 }
+ROUTE_SERVER_DIG_ACK Vec3 { x: -101, y: 64, z: -166 } 12 13 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -101, y: 63, z: -166 } 13 14 20
+EXACT_STEP Vec3 { x: -101, y: 63, z: -166 } Vec3 { x: -100.42882667723055, y: 63, z: -165.46508113614226 } 20
+OWN_EXIT_PASSED Vec3 { x: -100.42882667723055, y: 63, z: -165.46508113614226 } 20
+EXACT_STEP Vec3 { x: -101, y: 63, z: -174 } Vec3 { x: -100.42882860855669, y: 63, z: -173.45225711338077 } 20
+FAST_SEGMENT_ACTUAL 284 292 Vec3 { x: -100.42882860855669, y: 63, z: -173.45225711338077 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -101, y: 63, z: -180 } Vec3 { x: -100.4288300701008, y: 63, z: -179.4824162043839 } 20
+FAST_SEGMENT_ACTUAL 292 298 Vec3 { x: -100.4288300701008, y: 63, z: -179.4824162043839 } 20 TICKS 28
+EXACT_STEP Vec3 { x: -109, y: 63, z: -180 } Vec3 { x: -108.42575810494411, y: 63, z: -179.48241427305882 } 20
+FAST_SEGMENT_ACTUAL 298 306 Vec3 { x: -108.42575810494411, y: 63, z: -179.48241427305882 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -116, y: 63, z: -180 } Vec3 { x: -115.53521277433711, y: 63, z: -179.48241255052562 } 20
+FAST_SEGMENT_ACTUAL 306 313 Vec3 { x: -115.53521277433711, y: 63, z: -179.48241255052562 } 20 TICKS 33
+EXACT_STEP Vec3 { x: -117, y: 63, z: -180 } Vec3 { x: -116.5996200756554, y: 63, z: -179.48241228953574 } 20
+EXACT_STEP Vec3 { x: -118, y: 63, z: -180 } Vec3 { x: -117.48769659644348, y: 63, z: -179.48241208074387 } 20
+EXACT_STEP Vec3 { x: -119, y: 63, z: -180 } Vec3 { x: -118.5423558546109, y: 63, z: -179.482411819754 } 20
+EXACT_STEP Vec3 { x: -120, y: 63, z: -180 } Vec3 { x: -119.43042863790755, y: 63, z: -179.48241161096212 } 20
+P1_GRANTED_TRANSIT_OPEN Vec3 { x: -121, y: 64, z: -180 } dirt
+ROUTE_SERVER_DIG_ACK Vec3 { x: -121, y: 64, z: -180 } 14 15 20
+P1_GRANTED_TRANSIT_OPEN Vec3 { x: -121, y: 63, z: -180 } dirt
+ROUTE_SERVER_DIG_ACK Vec3 { x: -121, y: 63, z: -180 } 15 16 20
+EXACT_STEP Vec3 { x: -121, y: 63, z: -180 } Vec3 { x: -120.4904086307511, y: 63, z: -179.48241134997224 } 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -122, y: 64, z: -180 } 16 17 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -122, y: 63, z: -180 } 17 18 20
+EXACT_STEP Vec3 { x: -122, y: 63, z: -180 } Vec3 { x: -121.56503501982229, y: 63, z: -179.48241108898236 } 20
+FAST_STAGE_ISSUE SHARED_RESTORE_REF 319 319 Vec3 { x: -121.56503501982229, y: 63, z: -179.48241108898236 } 20
+FAST_STAGE_RECOVERY_FAILED SHARED_RESTORE_REF Vec3 { x: -121.56503501982229, y: 63, z: -179.48241108898236 } 20
+FAST_STAGE_END {"issue":"SHARED_RESTORE_REF","closed":false,"startIndex":283,"endIndex":419,"currentIndex":319,"p":{"x":-121.56503501982229,"y":63,"z":-179.48241108898236},"hp":20,"food":19,"lost":false,"elapsed":22370}
+FINAL_KIT [["snowball",7,null],["wooden_sword",1,0],["dirt",4,null],["wooden_pickaxe",1,37],["sweet_berries",1,null],["crafting_table",1,null],["snow_block",1,null],["stone_pickaxe",1,18],["blackstone",2,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],null],[[-133,64,-430],null],[[-141,60,-430],null],[[-141,62,-430],null],[[-132,63,-430],null]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Engineer imminentP3pearls travel request p3/iter10/PEARL_TRAVEL_REQUEST.md: WALK-only requestedyaw/pitchstraightdown intercept+restore, integrate ONEusefulSNOWcap route; no forcedanger/causalclaim/peergate. Prior4155 angercauseunlogged, materialdispatch co
+p3: rrectedbuttravelnotqualified. Woodkitactive; reviewinparallel ifuseful.
+--- p2 now: (-121.6, 63, -179.5) in the_nether, health 20/20, food 19/20, alive

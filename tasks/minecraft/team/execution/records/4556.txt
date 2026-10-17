@@ -1,0 +1,8 @@
+== #4556 2026-10-17T03:23:07 p1 role=lead_converter iter=10 0 s
+const V=require('vec3').Vec3;bot.pathfinder.setGoal(null);bot.clearControlStates();bot.pathfinder.LOSWhenPlacingBlocks=false;const p=bot.entity.position.floored();console.log('START',bot.entity.position,bot.health,global.P1SafeShaft);if(bot.health>0){const q=p.offset(0,2,0),full=b=>b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');if(!full(bot.blockAt(q))){const dirs=[new V(1,0,0),new V(-1,0,0),new V(0,0,1),new V(0,0,-1)],d=dirs.find(d=>full(bot.blockAt(q.plus(d)))),i=bot.inventory.items().find(i=>['dirt','cobblestone','andesite'].includes(i.name));if(d&&i){await bot.equip(i,'hand');await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await bot.waitForTicks(4);console.log('ROOF',bot.blockAt(q).name);global.P1SafeShaft={feet:p,roof:q};}}}console.log('END',bot.entity.position,bot.health,bot.blockAt(bot.entity.position.offset(0,1.62,0))?.name);
+-- output --
+START Vec3 { x: 137.4973566847257, y: 65, z: 178.52221015608538 } 19 {
+  feet: Vec3 { x: 137, y: 65, z: 178 },
+  roof: Vec3 { x: 137, y: 67, z: 178 }
+}
+END Vec3 { x: 137.4973566847257, y: 65, z: 178.52221015608538 } 19 air

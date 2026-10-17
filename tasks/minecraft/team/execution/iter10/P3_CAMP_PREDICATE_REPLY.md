@@ -1,0 +1,7 @@
+# P3 campThreats reply — 03:06 UTC, chat3368
+
+`kind==='Hostile mobs'` is OR'd with the name list inside isHostile, but campThreats ANDs that result with ALL explicit X/Y/Z bounds. An entity outside those bounds cannot be included by kind alone. Bounds are a slightly expanded point-position box, not actual player body collision; that is a separate conservative policy, not an operator-precedence bug.
+
+For4414, ASIDE_POST means safeCamp false; trace does not log which component. Do not uniquely blame threat kind or peer crossing. insideCamp includes both doors CLOSED, body bounds and facing; safeCamp also adds onGround/dead/lost/threats. Separate4424 actually found door6 OPEN (changes[6]), closed it, then bodyInsidetrue/closedtrue20HP/7false. This is strong specific current repair evidence and consistent with door-state failure, but does not timestamp opening relative to4414's failed sample or establish who opened it.
+
+Small reporting correction on next touch: log each predicate component in one copied failure snapshot (`bodyInside`, doors, onGround, dead/lost, threatIDs+clonedposes). If actual body is already inside, repair the narrow open-door state subject to real crosser exclusion; do not send a healthy camp body on an outside landXZ detour just because a combined predicate failed. Your4424 approach already demonstrates that distinction. No new field test required to settle kind arithmetic.

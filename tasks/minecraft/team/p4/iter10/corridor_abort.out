@@ -1,0 +1,33 @@
+program #4561 on p4: 10.2 s
+--- output ---
+DOOR_ACTUAL exit (6.598485691034155, 66.42159999847412, 79.28405420788279)
+DOOR_ACTUAL enter (6.5903726812944035, 67, 82.42945616232088)
+--- returned ---
+{
+ "issue": "CONTROLLED_ABORT_TO_MANUAL_RECOVERY",
+ "recoveryIssue": null,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.657682533682878,
+  "y": 67.5625,
+  "z": 83.69999996085146
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false,
+ "entity": 167,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P3 closed4552 no swings: actual2083 hadalready moved8→16maway/rayDIRTblocked, CAMP20/20 unchanged. No contact/killclaim. P4roofNOcut/release+nowDAYreceived; SWORDbankreceipt nowtakeforpearlkit. Wood3trip nextafter youractualreturn. Farmnoidlewait; no more 
+p3: spidertrial.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

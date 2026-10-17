@@ -1,0 +1,42 @@
+program #4847 on p2: 0.3 s
+--- output ---
+SELF 169 Vec3 { x: -205.3, y: 58, z: -429.4710462652107 } 5.333335876464844 17 0
+FOOD_SOURCE chest []
+FOOD_SOURCE brown_mushroom [
+  Vec3 { x: -194, y: 72, z: -436 },
+  Vec3 { x: -193, y: 73, z: -437 },
+  Vec3 { x: -192, y: 74, z: -437 },
+  Vec3 { x: -191, y: 75, z: -431 },
+  Vec3 { x: -191, y: 75, z: -429 },
+  Vec3 { x: -191, y: 75, z: -435 },
+  Vec3 { x: -190, y: 76, z: -437 },
+  Vec3 { x: -188, y: 77, z: -437 },
+  Vec3 { x: -188, y: 77, z: -438 },
+  Vec3 { x: -188, y: 78, z: -436 },
+  Vec3 { x: -186, y: 79, z: -437 },
+  Vec3 { x: -186, y: 79, z: -438 }
+]
+FOOD_SOURCE red_mushroom [
+  Vec3 { x: -208, y: 57, z: -420 },
+  Vec3 { x: -200, y: 56, z: -410 },
+  Vec3 { x: -199, y: 55, z: -410 },
+  Vec3 { x: -217, y: 41, z: -382 },
+  Vec3 { x: -219, y: 43, z: -381 },
+  Vec3 { x: -224, y: 45, z: -382 },
+  Vec3 { x: -218, y: 42, z: -381 },
+  Vec3 { x: -219, y: 43, z: -380 },
+  Vec3 { x: -217, y: 41, z: -380 },
+  Vec3 { x: -224, y: 45, z: -380 },
+  Vec3 { x: -221, y: 45, z: -379 },
+  Vec3 { x: -217, y: 41, z: -379 }
+]
+FOOD_SOURCE crimson_stem []
+FOOD_SOURCE warped_stem []
+THREATS [[25889,"piglin",{"x":-190.86943703724472,"y":103,"z":-432.52271075596997},16,null],[26126,"piglin",{"x":-209.98653227719083,"y":72,"z":-399.4832446025619},16,null],[26164,"blaze",{"x":-239.4989551962092,"y":60,"z":-420.80601866189426},20,null],[26165,"blaze",{"x":-242.1990582656544,"y":61,"z":-440.7204628244186},20,null],[26415,"ghast",{"x":-225.99855458061424,"y":91.60643155488228,"z":-403.0016311340932},10,null]]
+LOCAL [[-207,58,-431,"nether_bricks"],[-207,59,-431,"nether_bricks"],[-207,60,-431,"air"],[-207,61,-431,"air"],[-207,62,-431,"air"],[-207,58,-430,"nether_bricks"],[-207,59,-430,"nether_bricks"],[-207,60,-430,"air"],[-207,61,-430,"air"],[-207,62,-430,"air"],[-207,58,-429,"nether_bricks"],[-207,59,-429,"nether_bricks"],[-207,60,-429,"nether_bricks"],[-207,61,-429,"air"],[-207,62,-429,"air"],[-206,58,-431,"nether_bricks"],[-206,59,-431,"nether_bricks"],[-206,60,-431,"air"],[-206,61,-431,"air"],[-206,62,-431,"air"],[-206,58,-430,"air"],[-206,59,-430,"air"],[-206,60,-430,"crafting_table"],[-206,61,-430,"air"],[-206,62,-430,"air"],[-206,58,-429,"nether_bricks"],[-206,59,-429,"nether_bricks"],[-206,60,-429,"nether_bricks"],[-206,61,-429,"air"],[-206,62,-429,"air"],[-205,58,-431,"nether_bricks"],[-205,59,-431,"nether_bricks"],[-205,60,-431,"air"],[-205,61,-431,"air"],[-205,62,-431,"air"],[-205,58,-430,"nether_bricks"],[-205,59,-430,"nether_bricks"],[-205,60,-430,"air"],[-205,61,-430,"air"],[-205,62,-430,"air"],[-205,58,-429,"nether_bricks"],[-205,59,-429,"nether_bricks"],[-205,60,-429,"nether_bricks"],[-205,61,-429,"air"],[-205,62,-429,"air"],[-204,58,-431,"nether_bricks"],[-204,59,-431,"nether_bricks"],[-204,60,-431,"air"],[-204,61,-431,"air"],[-204,62,-431,"air"],[-204,58,-430,"nether_bricks"],[-204,59,-430,"nether_bricks"],[-204,60,-430,"air"],[-204,61,-430,"air"],[-204,62,-430,"air"],[-204,58,-429,"nether_bricks"],[-204,59,-429,"nether_bricks"],[-204,60,-429,"nether_bricks"],[-204,61,-429,"air"],[-204,62,-429,"air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 4830 ACTUAL2swings/Medium23463 DEAD_ACK/noownhurt, thenNEWsplitchild25744 metadataHP+sizeUNDEFINED triggeredoldacquisitionveto midjump; FULLreverse20HP18food. Changedexplicitcombatgroup: rootlowHP + recent size2-parent children (orbothdefaults after600m
+p3: s) TARGETS, notharmlessclassification; 12swings/HP16+anyhurtreturn budgets. InferredTinyflaglogged, actualray<=2.85/DEADs determineoutcome. Pre-equipSword+14ticksBEFORElongleg (equipresetcooldown fixed). Otherfoesunchanged.
+--- p2 now: (-205.3, 58, -429.5) in the_nether, health 5.3/20, food 17/20, alive

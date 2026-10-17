@@ -1,0 +1,68 @@
+program #4800 on p4: 4.1 s
+--- output ---
+DOOR_RISK_ACTUAL {
+  id: 22561,
+  name: 'spider',
+  p: Vec3 { x: 8.843074558802233, y: 65, z: 79.49591921924707 },
+  own: Vec3 { x: 6.445307064101864, y: 67, z: 82.3 },
+  day: 5245
+}
+COMBAT_ISSUE DOOR_HOSTILE_PRECHECK Vec3 { x: 6.445307064101864, y: 67, z: 82.3 } 20
+--- returned ---
+{
+ "issue": "DOOR_HOSTILE_PRECHECK",
+ "recoveryIssue": null,
+ "swings": 0,
+ "hurts": [],
+ "killACK": false,
+ "stringGain": 0,
+ "attackTrace": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.513147655470173,
+  "y": 67.5625,
+  "z": 83.6997723613787
+ },
+ "hp": 20,
+ "food": 20,
+ "lifeStart": "1792208042861:0",
+ "lifeEnd": "1792208042861:0",
+ "target": {
+  "p": {
+   "x": 6.300000011920929,
+   "y": 65.10000002384186,
+   "z": 81.69999998807907
+  },
+  "hp": 16,
+  "valid": true
+ },
+ "own": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "bone_meal",
+   2,
+   null
+  ],
+  [
+   "wooden_axe",
+   1,
+   2
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

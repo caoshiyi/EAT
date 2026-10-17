@@ -1,0 +1,31 @@
+== #4926 2026-10-17T04:53:39 p2 role=acquisition_owner iter=10 0 s
+const{Vec3}=require("vec3");bot.clearControlStates();bot.pathfinder.setGoal(null);console.log("DAY",bot.time);console.log("FOES",JSON.stringify(Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<24&&!e.username&&e.name!=="item").map(e=>{const b=bot.blockAt(e.position.offset(0,1,0));return{id:e.id,n:e.name,p:e.position,hp:e.metadata?.[9],sky:b?.skyLight,light:b?.light,metadata:e.metadata}})));console.log("BUSHES",[[20,68,89],[22,68,89],[24,68,90]].map(a=>{const b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.getProperties()]}));console.log("E",[[8,67,83],[8,68,83],[8,69,83],[9,66,83],[9,67,83],[9,68,83]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name]));return{p:bot.entity.position,hp:bot.health};
+-- output --
+DAY {
+  doDaylightCycle: true,
+  bigTime: 1453185n,
+  time: 1453185,
+  timeOfDay: 13185,
+  day: 60,
+  isDay: false,
+  moonPhase: 4,
+  bigAge: 1432522n,
+  age: 1432522,
+  clocks: {}
+}
+FOES [{"id":21719,"n":"spider","p":{"x":6.300000011920929,"y":65.10000002384186,"z":81.69999998807907},"hp":16,"sky":15,"light":3,"metadata":[null,null,null,null,null,null,null,null,null,16,null,null,null,null,null,null,1]}]
+BUSHES [
+  [ [ 20, 68, 89 ], 'sweet_berry_bush', { age: '3' } ],
+  [ [ 22, 68, 89 ], 'sweet_berry_bush', { age: '3' } ],
+  [ [ 24, 68, 90 ], 'sweet_berry_bush', { age: '3' } ]
+]
+E [
+  [ [ 8, 67, 83 ], 'spruce_fence_gate' ],
+  [ [ 8, 68, 83 ], 'dirt' ],
+  [ [ 8, 69, 83 ], 'spruce_planks' ],
+  [ [ 9, 66, 83 ], 'sand' ],
+  [ [ 9, 67, 83 ], 'snow' ],
+  [ [ 9, 68, 83 ], 'air' ]
+]
+-- returned --
+{"p": {"x": 7.57275122858784, "y": 67.5625, "z": 83.69999994127718}, "hp": 20}

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let columns=[];for(const[x,z]of[[29,98],[28,98],[30,98],[29,97],[27,96],[25,95],[32,98]]){const col=[];for(let y=60;y<=72;y++)col.push([y,bot.blockAt(new Vec3(x,y,z))?.name]);columns.push([x,z,col]);}return{columns,p:bot.entity.position,hp:bot.health};
