@@ -1,0 +1,483 @@
+program #8502 on p4: 21.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:16:36.531Z",
+ "world": "overworld",
+ "lifeId": 157,
+ "currentId": 157,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 149.37305862026503,
+  "y": -38,
+  "z": 2244.500876868094
+ },
+ "hp": 20,
+ "food": 19,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   12
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "stone_bricks",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   2,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "ARROW24577_ACTUAL",
+   {
+    "x": 152.125,
+    "y": -36,
+    "z": 2248.633626940732
+   },
+   {
+    "present": true,
+    "itemId": 798,
+    "itemCount": 2
+   }
+  ],
+  [
+   "CUT",
+   [
+    150,
+    -37,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "CUT",
+   [
+    150,
+    -38,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "STEP",
+   [
+    150,
+    -38,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2244
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    151,
+    -37,
+    2245
+   ],
+   "mossy_stone_bricks"
+  ],
+  [
+   "CUT",
+   [
+    151,
+    -38,
+    2245
+   ],
+   "cracked_stone_bricks"
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2245
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    151,
+    -36,
+    2246
+   ]
+  ],
+  [
+   "CUT",
+   [
+    151,
+    -37,
+    2246
+   ],
+   "stone_bricks"
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2246
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    151,
+    -36,
+    2247
+   ]
+  ],
+  [
+   "CUT",
+   [
+    151,
+    -37,
+    2247
+   ],
+   "cracked_stone_bricks"
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2247
+   ],
+   20
+  ],
+  [
+   "ACTUAL_ARROW_ADOPTION",
+   2,
+   null
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2247
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2245
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    151,
+    -38,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    150,
+    -38,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    149,
+    -38,
+    2244
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    150,
+    -38,
+    2244
+   ]
+  ],
+  [
+   "CAP",
+   [
+    150,
+    -37,
+    2244
+   ]
+  ]
+ ],
+ "items": [
+  [
+   24578,
+   {
+    "x": 152.33018858797547,
+    "y": -36,
+    "z": 2249.1249506566833
+   },
+   "bone",
+   {
+    "present": true,
+    "itemId": 958,
+    "itemCount": 1
+   }
+  ]
+ ],
+ "foes": [
+  [
+   311,
+   "creeper",
+   {
+    "x": 150.7877425515813,
+    "y": -38,
+    "z": 2252.847789808935
+   },
+   20
+  ],
+  [
+   312,
+   "spider",
+   {
+    "x": 144.30000001192093,
+    "y": -36.89999997615814,
+    "z": 2246.699999988079
+   },
+   15
+  ],
+  [
+   313,
+   "zombie",
+   {
+    "x": 138.9739503402364,
+    "y": -42,
+    "z": 2247.344931114032
+   },
+   20
+  ],
+  [
+   328,
+   "zombie",
+   {
+    "x": 138.11422106074482,
+    "y": -42,
+    "z": 2246.347121745396
+   },
+   20
+  ],
+  [
+   331,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2247.1166532541183
+   },
+   20
+  ],
+  [
+   334,
+   "zombie",
+   {
+    "x": 138.7550638631026,
+    "y": -42,
+    "z": 2246.484416777163
+   },
+   20
+  ],
+  [
+   335,
+   "zombie",
+   {
+    "x": 140.51327168396867,
+    "y": -41.46415937495544,
+    "z": 2246.5249558656706
+   },
+   20
+  ],
+  [
+   336,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2247.049521515301
+   },
+   20
+  ],
+  [
+   337,
+   "zombie",
+   {
+    "x": 144.69998702774313,
+    "y": -38,
+    "z": 2247.699955730065
+   },
+   20
+  ],
+  [
+   338,
+   "zombie",
+   {
+    "x": 137.30000001192093,
+    "y": -42.58000001311302,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   341,
+   "creeper",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2247.699999988079
+   },
+   20
+  ],
+  [
+   343,
+   "zombie",
+   {
+    "x": 143.6635634568094,
+    "y": -39,
+    "z": 2247.699999988079
+   },
+   20
+  ],
+  [
+   344,
+   "zombie",
+   {
+    "x": 136.69582105681542,
+    "y": -41.5,
+    "z": 2247.413009522683
+   },
+   20
+  ],
+  [
+   12824,
+   "zombie",
+   {
+    "x": 156.69995112492794,
+    "y": -33.5,
+    "z": 2254.4276336260273
+   },
+   20
+  ],
+  [
+   16972,
+   "creeper",
+   {
+    "x": 156.08133798970957,
+    "y": -33,
+    "z": 2253.811961893631
+   },
+   20
+  ]
+ ],
+ "retreatIssue": null,
+ "arrow": 2,
+ "route": [
+  [
+   149,
+   -38,
+   2244
+  ],
+  [
+   150,
+   -38,
+   2244
+  ],
+  [
+   151,
+   -38,
+   2244
+  ],
+  [
+   151,
+   -38,
+   2245
+  ],
+  [
+   151,
+   -38,
+   2246
+  ],
+  [
+   151,
+   -38,
+   2247
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P1staletarget FINAL CLOSED: noalive/removed/deadcheck inStrafe1; privateg clearedbegin/assignedsetTarget. SamephasePhaseManagerrequestreturnsWITHOUTbegin. CrystalDestroy delegatesCURRENTphase: Holdingoverride setsStrafe.target(player), butalreadyStrafe inh
+p2: eritsEMPTYcallback, soanothercrystalshotdoesNOTretargetthere. ThusvisibleliveP1NOTguaranteedhelpifgoldother. ActualgidentityUNKNOWN; deathcoordsNOTtargetproof/no deadspot/peekmission prescribed. stale_target_routes/FINDING.md.
+p1: 8497 actual57combat TENnormalSWORDattacks/dragonHPmin196.25 butENDING200, allphase1; fullHP20closed54 retained. UsefulcontactYES/netdamageNO, won'trepeat. SelectNEW stale-targetocclusion test: inspectoldP1death5.3Y60z-1.3 roof62; removeONLY oldroofifreacha
+p1: ble whileownbedrock59kept, immediatelyDOWN54 watchactualphase/fireball. No livebodypeek.
+--- p4 now: (149.4, -38, 2244.5) in overworld, health 20/20, food 19/20, alive

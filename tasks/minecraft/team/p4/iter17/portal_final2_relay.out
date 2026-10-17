@@ -1,0 +1,214 @@
+program #8516 on p4: 67.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:21:00.483Z",
+ "world": "overworld",
+ "lifeId": 157,
+ "currentId": 157,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 132.4159523002606,
+  "y": -36,
+  "z": 2276.499707687381
+ },
+ "hp": 20,
+ "food": 19,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   18
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "EXACT_P1_READY",
+   {
+    "at": 1792264854458,
+    "message": "READY_ARROW_2",
+    "tool": false
+   }
+  ],
+  [
+   "CUT",
+   [
+    133,
+    -35,
+    2276
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "CUT",
+   [
+    133,
+    -36,
+    2276
+   ],
+   "cracked_stone_bricks"
+  ],
+  [
+   "STEP",
+   [
+    133,
+    -36,
+    2276
+   ],
+   20
+  ],
+  [
+   "ARROW_ISSUED",
+   1792264857224,
+   2,
+   0
+  ],
+  [
+   "CAP_RETRY_ACK",
+   [
+    133,
+    -36,
+    2276
+   ],
+   0,
+   "stone_bricks"
+  ],
+  [
+   "CAP_RETRY_ACK",
+   [
+    133,
+    -35,
+    2276
+   ],
+   0,
+   "cobbled_deepslate"
+  ]
+ ],
+ "items": [],
+ "foes": [
+  [
+   308,
+   "spider",
+   {
+    "x": 141.30000001192093,
+    "y": -37.899809761047365,
+    "z": 2264.711970879932
+   },
+   16
+  ],
+  [
+   25274,
+   "zombie",
+   {
+    "x": 128.67495929225544,
+    "y": -40,
+    "z": 2264.4802479937803
+   },
+   20
+  ]
+ ],
+ "issued": true,
+ "ready": "[repeated reference]",
+ "before": 2,
+ "after": 0,
+ "spawned": [
+  [
+   26298,
+   {
+    "x": 133.61114893941556,
+    "y": -34.81109281604744,
+    "z": 2276.401946033851
+   },
+   null,
+   null
+  ],
+  [
+   26303,
+   {
+    "x": 133.6306322062952,
+    "y": -35.552980374754824,
+    "z": 2276.6170674916384
+   },
+   null,
+   null
+  ],
+  [
+   26304,
+   {
+    "x": 133.61853576734615,
+    "y": -34.68000000715256,
+    "z": 2276.4990406230404
+   },
+   null,
+   null
+  ]
+ ],
+ "gone": [
+  [
+   26298,
+   1792264856383,
+   {
+    "x": 133.61114893941556,
+    "y": -34.81109281604744,
+    "z": 2276.401946033851
+   }
+  ],
+  [
+   26303,
+   1792264857034,
+   {
+    "x": 133.6306322062952,
+    "y": -35.552980374754824,
+    "z": 2276.6170674916384
+   }
+  ],
+  [
+   26304,
+   1792264857686,
+   {
+    "x": 133.61853576734615,
+    "y": -34.68000000715256,
+    "z": 2276.4990406230404
+   }
+  ]
+ ],
+ "endingIssue": null
+}
+--- chat since this player's previous program ---
+p3: Current19:19:55/deadline19:24:04. Closingreserve: yourlibrary hardDate19:23:50 ischeckedinESCAPEtoo; actualLOWclosuremustprecedeit. Recentfullshotunits~30s, so do notstartsuchunitafter~19:23:10 withoutknownshortercompleteescape. Keepdeadlineend distinctfro
+p3: msourceguard. P3noactivecallbacks/owncover8456 verified.
+p1: 8514 oldeightSIDEcaps actualvented/ownbedrockretained/LOW54HP20 but15secALLphase1/NOfireball; targethypothesisUNCONFIRMED. No repeatedvent/peek. MovingnativeDIRECT81now~19:20:45, P4holdARROW2 forREADY_ARROW_2. Needuseactual2 forremainingcrystals thenfinale
+p1: valbefore19:24:04.
+p1: READY_ARROW_2
+--- p4 now: (132.4, -36, 2276.5) in overworld, health 20/20, food 19/20, alive

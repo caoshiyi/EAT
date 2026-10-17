@@ -1,0 +1,469 @@
+program #8393 on p1: 16.9 s
+--- output ---
+ATTEMPT_CUT [ 80, 50, 0 ] end_stone
+ATTEMPT_CUT [ 80, 49, 0 ] end_stone
+ATTEMPT_CUT [ 82, 50, 0 ] cobbled_deepslate
+ATTEMPT_CUT [ 82, 49, 0 ] cobbled_deepslate
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 158,
+ "p": {
+  "x": 81.48913410067829,
+  "y": 49,
+  "z": 0.5000361327674625
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 11,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    50,
+    0
+   ],
+   "cobbled_deepslate",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    49,
+    0
+   ],
+   "cobbled_deepslate",
+   20
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 81.6655748129403,
+    "y": 49,
+    "z": 0.5001131017314671
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 84.13505603008856,
+    "y": 49,
+    "z": 0.5001131017312184
+   },
+   {
+    "x": 0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.94043175348597,
+    "y": 49,
+    "z": 0.5001131017309697
+   },
+   {
+    "x": 0.15321595083943673,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 89.74659839100124,
+    "y": 49,
+    "z": 0.500113101730721
+   },
+   {
+    "x": 0.15321679833108137,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 92.55276689084272,
+    "y": 49,
+    "z": 0.5001131017304723
+   },
+   {
+    "x": 0.15321680032662788,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 95.35893539506931,
+    "y": 49,
+    "z": 0.5001131017302236
+   },
+   {
+    "x": 0.15321680033132665,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 98.16510389930626,
+    "y": 49,
+    "z": 0.5001131017299749
+   },
+   {
+    "x": 0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "ORDINARY_INPUT_CHECK",
+   true,
+   1,
+   [
+    116,
+    1
+   ]
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 99.90078807632108,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 97.4313068591728,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 94.6259311357754,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15321595083943673,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 91.81976449826013,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15321679833108137,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 89.01359599841865,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15321680032662788,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.20742749419206,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15321680033132665,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 83.40125898995511,
+    "y": 49,
+    "z": 0.5001131017298506
+   },
+   {
+    "x": -0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "inventory": [
+  [
+   "arrow",
+   1,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   116
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   6
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   9,
+   null
+  ],
+  [
+   "bow",
+   1,
+   3
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "out": true,
+ "receipt": true,
+ "before": {
+  "arrow": 0,
+  "picks": [
+   112
+  ]
+ },
+ "after": {
+  "arrow": 1,
+  "picks": [
+   116,
+   1
+  ]
+ },
+ "itemsBefore": [
+  [
+   17649,
+   {
+    "x": 100.90464160465929,
+    "y": 49,
+    "z": 0.5269440413285439
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 798,
+     "itemCount": 1
+    }
+   ]
+  ],
+  [
+   17652,
+   {
+    "x": 100.68852709742701,
+    "y": 49,
+    "z": 0.4924437087477076
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 821,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 1
+       }
+      }
+     }
+    }
+   ]
+  ]
+ ],
+ "remainingItems": []
+}
+--- chat since this player's previous program ---
+p4: P4 ARROWportalISSUED at 2026-10-17T18:42:35.131Z donor1→0; inspectactualEndspawn/ordinaryreceipt beforeclaim. P4returnsOWL132, noentry.
+p3: 8392 empty End-item scan ended about18:42:33, BEFORE P4 issued the packet at18:42:35. It cannot test that transfer. Fresh recipient observation is now the minimum check. Donor8390 has ARROW1→0 and the spare pick removed; recipient inventory still needs its
+p3:  own ARROW/PICK acknowledgement. This is a timing distinction, not a transfer failure.
+--- p1 now: (81.5, 49, 0.5) in the_end, health 20/20, food 20/20, alive

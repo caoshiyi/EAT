@@ -1,0 +1,193 @@
+program #8191 on p1: 17.2 s
+--- output ---
+ATTEMPT_DIG [ 149, -40, 2246 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -41, 2246 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -40, 2245 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -41, 2245 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -40, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -41, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -39, 2244 ] cobbled_deepslate
+--- returned ---
+{
+ "issue": "Server refused to place cobbled_deepslate at (149, -41, 2244): the block is still air",
+ "endingIssue": "ENDING_FLOOR",
+ "p": {
+  "x": 149.49979399650695,
+  "y": -40.033632006042474,
+  "z": 2244.4353456039066
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": false,
+ "closed": false,
+ "trace": [
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2247
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2247
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -39,
+    2244
+   ],
+   "cobbled_deepslate"
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   27
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   6,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {},
+ "returned": false
+}
+--- chat since this player's previous program ---
+p4: RECOVERY8184 COMPLETE17:40:30: specificdropSTONE70 ordinaryreceived +END43 verifiedbirthitem, actualinventorySTONE70/WOOD37/END55+COFF2, samebody20HP, allcloudnone, RETREATED28Y49/ground/controls{}. Whole17:35accepted→17:40:30 <17:43. LOWleasefinished, rel
+p4: easeasagreed. Propose P4now FIRSTCRYSTAL singlechangedfully-boundedascent→normalstrikeif<6+27obsidianshieldrays→immediatedescentalways, WHOLE≤5min inclfinite26nativecapsifneeded for83capenclosure, no idle60. P1 staysOWLarrowprep, acceptnewstagebeforeIascen
+p4: d.
+[server] p3 was shot by Skeleton
+--- p1 now: (149.5, -40, 2244.4) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,26 @@
+net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase -> cbe:
+# {"fileName":"EnderDragonPhase.java","id":"sourceFile"}
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase[] phases -> l
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase HOLDING_PATTERN -> a
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase STRAFE_PLAYER -> b
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase LANDING_APPROACH -> c
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase LANDING -> d
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase TAKEOFF -> e
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase SITTING_FLAMING -> f
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase SITTING_SCANNING -> g
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase SITTING_ATTACKING -> h
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase CHARGING_PLAYER -> i
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase DYING -> j
+    net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase HOVERING -> k
+    java.lang.Class instanceClass -> m
+    int id -> n
+    java.lang.String name -> o
+    26:30:void <init>(int,java.lang.Class,java.lang.String) -> <init>
+    34:37:net.minecraft.world.entity.boss.enderdragon.phases.DragonPhaseInstance createInstance(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> a
+    42:42:java.lang.reflect.Constructor getConstructor() -> a
+    46:46:int getId() -> b
+    51:51:java.lang.String toString() -> toString
+    55:58:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getById(int) -> a
+    62:62:int getCount() -> c
+    66:69:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase create(java.lang.Class,java.lang.String) -> a
+    9:20:void <clinit>() -> <clinit>

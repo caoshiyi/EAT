@@ -1,0 +1,12 @@
+# Two-plank bow-stick contribution: budget FAILED, useful prefix delivered
+P1 accepted optional2PLANKS chat6556–57 at17:54:21, whole deadline17:57:21 includingordinarygift/retainedending. New P1opened143,-36,2241 branch materiallychanged old8002occlusion; no generalkit/table/newquota orEndentry. P2handonly11.5HP/food9 throughout.
+
+8259 actualpreflight1.7s: fiveAIRsteps→143.479,-36,2241.474; fullfloor/airbody, allmeasuredfoeraysblocked. Actual143,-33bookshelf;143,-32planks;142,-34/-33bookshelves and142,-32planks. 8263 fiveordinaryhandcuts16.7s succeeded; BOOK9+PLANK1 actualinventory, secondPLANKentity8326 at143.481,Y-33,z2242.109 restingonroof, notreceived. ReturnedSOUTH1462243 unchangedHP/controls{}; TWO_PLANK_ORDINARY_RECEIPT_1 explicitlypartial.
+
+Changedpickup8266 routedthrough1462242, but P1returnoccupiedit: PEER_DEST beforeaction. **Ownbug:** finallyattempted entireplannedretreat although noforwardprogress, crosseddiagonal from1462243 andstalled145.3,-36,2243.3 (MOVE_BOUND), retained11.5HP/ground/controls{}. 8270 changedroute1452242 thenrefusedBODY_FLOOR there; actual8276 showed P1returnmacro hadclosed145body/headwithCOFF. Workdeadlineexpired, furtherproduction/pickupretired. No additionalcuts. Actualsupport8326roofwasBASALT, nothypothesizedBOOK; changedworldinspection outrankstemplate. P1reopenedtwoCOFFblocks/restoredaccess afterreport. No blame assignedtoserver ortools.
+
+Failurecleanup8279 at17:58:36: actualretainedPLANK1 normalnorthgift with4aimticks, donor1→0, independentP1ordinary0→1; ownSOUTH146.509,-36,2243.600/11.5HP/controls{}. Originalwholebudget MISSED by at least1m15 for evenprefixdelivery; neverclaim2deliveredbyP2. P1tookover specificremaining8326 handling withownpick/roofrestore, separatechangedhandling/no newwoodquota; laterstatusP1PLANK2 verifies combinedactualinput, notP2secondgift.
+
+SeparateexplicitexistingCOFF1 request17:58:41 forfreshpickgap: actual8284 at17:59:10 donor1→0; P1COFF5 = prior2+ownroadrepair2+P2gift1. OwnnowBASALT1+SLAB2+BOOK9; no tools/food/COFF/planks, sameHP/controls{}. Whole1minrequest met in29s. New tool/physicalbowadoption stillrequiresactualcraft/receipt; no inferencefrommaterials.
+
+Localroutebug prompted narrow `local_move.inc.js` withactualcompletedwaypointstack/cardinalscope. One meaningful abort/rollback smoke8292 PASS18:01:11, inventory/HPunchanged/floor+roofFULL/controls{}. No broadframework/newkit orrepeatedwoodattempt. Original8002optional failure and current3minMISS bothpreserved, currentpartialinputuseful separately.

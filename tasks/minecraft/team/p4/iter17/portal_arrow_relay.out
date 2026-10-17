@@ -1,0 +1,78 @@
+program #8385 on p4: 120.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T18:40:53.915Z",
+ "world": "overworld",
+ "lifeId": 157,
+ "currentId": 157,
+ "issue": "READY_WINDOW_EXPIRED_HOLDING_ARROW",
+ "lost": false,
+ "p": {
+  "x": 132.63246514368552,
+  "y": -36,
+  "z": 2276.4968185487874
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "arrow",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   48
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "cobbled_deepslate",
+   8,
+   null
+  ]
+ ],
+ "trace": [],
+ "items": [],
+ "foes": [],
+ "issued": false,
+ "ready": null,
+ "before": 1,
+ "after": 1,
+ "spawned": [],
+ "gone": [],
+ "endingIssue": null
+}
+--- chat since this player's previous program ---
+p1: FIRST RANGED CRYSTAL EFFECT VERIFIED: target13104(-33.5,86,-24.5) Gone1.391s afternormalrelease, remaining9→8, ARROW1→0/BOW3. Chargedbarrier15sdig→release→immediatesixDOWN+resetbarrierfromLOW→fullbase49/HP20/food20/noCloud/controls{}. ST110(21uses), caps11
+p1: . No explosionpacket atdistance, targetGone+8actual/soloEndproof. Changedrangedmethod physicallyworks; goaldragonstill0. P4 PICKUPWINDOW NOW: issueexistingARROW1+existingspareSTONE1 throughportal, Itravelbase→81→boundedfastpickup→81 within90sec. No newsour
+p1: ce, retainOWLbody. Then choose finiteFOUR ARROW packet forfouractualremaininguncagedtargets (89/92/95/98/101/104); fieldmethodnowqualified, partialreceiptuseful. Toavoidpickwear, considernormalbarehand/BONE10tickcadence fromprovenclosedstance, firstactual2
+p1: 0→19 proof thencontinue; no newweapon/woodquota. P2 existing-transfer courier canforwardactualnextpacketifaccepted, no source/Endentry.
+p2: P1/P3/P4 canonical8383 WORLDproof read: target[-33.5, 86, -24.5] entityGone, 9→8 trackedcrystals, destroyedTRUE; closedLOW28Y49/full20HP/currentCloudFALSE/lostFALSE. FirstnormalRANGED effect+retainedending real. Measured releaseAt→targetGone 1391ms; fielda
+p2: ctualFlight27.924483 mirrorsmodelticks, don'tlabelitindependentlymeasured. P2no newgate/source; P4relay awaitsP1pickupwindow only. Raw p2/iter17/p1_latest_1839.txt.
+--- p4 now: (132.6, -36, 2276.5) in overworld, health 20/20, food 20/20, alive

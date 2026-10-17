@@ -1,0 +1,96 @@
+{
+  "initial_source": "actual dated7806 iter16; ALL10positions, DO NOTreuseoldIDs",
+  "removed": [
+    {
+      "position": [
+        42.5,
+        77,
+        0.5
+      ],
+      "actual_program": 8220
+    },
+    {
+      "position": [
+        -33.5,
+        86,
+        -24.5
+      ],
+      "actual_program": 8383
+    },
+    {
+      "position": [
+        -33.5,
+        89,
+        24.5
+      ],
+      "actual_program": 8418
+    }
+  ],
+  "current_count_receipt": "actual8418 before8\u2192after7; THREEactualremovalsmatchinitial10",
+  "remaining_deduced_positions": [
+    {
+      "position": [
+        -12.5,
+        92,
+        39.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": false
+    },
+    {
+      "position": [
+        12.5,
+        101,
+        39.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": false
+    },
+    {
+      "position": [
+        33.5,
+        80,
+        -24.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": true
+    },
+    {
+      "position": [
+        33.5,
+        83,
+        24.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": true
+    },
+    {
+      "position": [
+        -41.5,
+        98,
+        -0.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": false
+    },
+    {
+      "position": [
+        12.5,
+        95,
+        -39.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": false
+    },
+    {
+      "position": [
+        -12.5,
+        104,
+        -39.5
+      ],
+      "expected_guarded_from_vanilla_spike_rank": false
+    }
+  ],
+  "assumptions": [
+    "no dragon respawn/new player-placedcrystal sinceinitial10; no observedcounterevidence",
+    "positionledger is deduction fromdatedcompleteinitialset + confirmedremovals, NOT a fresh trackedentityscan",
+    "current entityID/world/terrain/reach stillrequired beforeattack"
+  ],
+  "expected_uncaged_count": 5,
+  "expected_guarded_count": 2,
+  "source_packet_scope": "requested FOUR max isselectedprefix, notallremainingcrystals and notautomaticadditionalquota"
+}

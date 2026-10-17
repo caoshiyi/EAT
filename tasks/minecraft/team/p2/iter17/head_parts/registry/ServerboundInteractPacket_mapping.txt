@@ -1,0 +1,18 @@
+net.minecraft.network.protocol.game.ServerboundInteractPacket -> aed:
+# {"fileName":"ServerboundInteractPacket.java","id":"sourceFile"}
+    int entityId -> a
+    net.minecraft.network.protocol.game.ServerboundInteractPacket$Action action -> b
+    boolean usingSecondaryAction -> c
+    net.minecraft.network.protocol.game.ServerboundInteractPacket$Action ATTACK_ACTION -> d
+    18:22:void <init>(int,boolean,net.minecraft.network.protocol.game.ServerboundInteractPacket$Action) -> <init>
+    25:25:net.minecraft.network.protocol.game.ServerboundInteractPacket createAttackPacket(net.minecraft.world.entity.Entity,boolean) -> a
+    29:29:net.minecraft.network.protocol.game.ServerboundInteractPacket createInteractionPacket(net.minecraft.world.entity.Entity,boolean,net.minecraft.world.InteractionHand) -> a
+    33:33:net.minecraft.network.protocol.game.ServerboundInteractPacket createInteractionPacket(net.minecraft.world.entity.Entity,boolean,net.minecraft.world.InteractionHand,net.minecraft.world.phys.Vec3) -> a
+    36:41:void <init>(net.minecraft.network.FriendlyByteBuf) -> <init>
+    45:49:void write(net.minecraft.network.FriendlyByteBuf) -> a
+    53:54:void handle(net.minecraft.network.protocol.game.ServerGamePacketListener) -> a
+    58:58:net.minecraft.world.entity.Entity getTarget(net.minecraft.server.level.ServerLevel) -> a
+    62:62:boolean isUsingSecondaryAction() -> a
+    66:67:void dispatch(net.minecraft.network.protocol.game.ServerboundInteractPacket$Handler) -> a
+    13:13:void handle(net.minecraft.network.PacketListener) -> a
+    158:158:void <clinit>() -> <clinit>

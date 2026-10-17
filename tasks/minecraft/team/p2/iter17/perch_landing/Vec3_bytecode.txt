@@ -1,0 +1,1156 @@
+Compiled from "SourceFile"
+public class elt implements ir {
+  public static final com.mojang.serialization.Codec<elt> a;
+
+  public static final elt b;
+
+  public final double c;
+
+  public final double d;
+
+  public final double e;
+
+  public static elt a(int);
+    Code:
+       0: iload_0
+       1: bipush        16
+       3: ishr
+       4: sipush        255
+       7: iand
+       8: i2d
+       9: ldc2_w        #27                 // double 255.0d
+      12: ddiv
+      13: dstore_1
+      14: iload_0
+      15: bipush        8
+      17: ishr
+      18: sipush        255
+      21: iand
+      22: i2d
+      23: ldc2_w        #27                 // double 255.0d
+      26: ddiv
+      27: dstore_3
+      28: iload_0
+      29: sipush        255
+      32: iand
+      33: i2d
+      34: ldc2_w        #27                 // double 255.0d
+      37: ddiv
+      38: dstore        5
+      40: new           #2                  // class elt
+      43: dup
+      44: dload_1
+      45: dload_3
+      46: dload         5
+      48: invokespecial #32                 // Method "<init>":(DDD)V
+      51: areturn
+
+  public static elt a(jb);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: invokevirtual #44                 // Method jb.u:()I
+       8: i2d
+       9: aload_0
+      10: invokevirtual #47                 // Method jb.v:()I
+      13: i2d
+      14: aload_0
+      15: invokevirtual #50                 // Method jb.w:()I
+      18: i2d
+      19: invokespecial #32                 // Method "<init>":(DDD)V
+      22: areturn
+
+  public static elt a(jb, double, double, double);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: invokevirtual #44                 // Method jb.u:()I
+       8: i2d
+       9: dload_1
+      10: dadd
+      11: aload_0
+      12: invokevirtual #47                 // Method jb.v:()I
+      15: i2d
+      16: dload_3
+      17: dadd
+      18: aload_0
+      19: invokevirtual #50                 // Method jb.w:()I
+      22: i2d
+      23: dload         5
+      25: dadd
+      26: invokespecial #32                 // Method "<init>":(DDD)V
+      29: areturn
+
+  public static elt b(jb);
+    Code:
+       0: aload_0
+       1: ldc2_w        #53                 // double 0.5d
+       4: ldc2_w        #53                 // double 0.5d
+       7: ldc2_w        #53                 // double 0.5d
+      10: invokestatic  #56                 // Method a:(Ljb;DDD)Lelt;
+      13: areturn
+
+  public static elt c(jb);
+    Code:
+       0: aload_0
+       1: ldc2_w        #53                 // double 0.5d
+       4: dconst_0
+       5: ldc2_w        #53                 // double 0.5d
+       8: invokestatic  #56                 // Method a:(Ljb;DDD)Lelt;
+      11: areturn
+
+  public static elt a(jb, double);
+    Code:
+       0: aload_0
+       1: ldc2_w        #53                 // double 0.5d
+       4: dload_1
+       5: ldc2_w        #53                 // double 0.5d
+       8: invokestatic  #56                 // Method a:(Ljb;DDD)Lelt;
+      11: areturn
+
+  public elt(double, double, double);
+    Code:
+       0: aload_0
+       1: invokespecial #60                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: dload_1
+       6: putfield      #62                 // Field c:D
+       9: aload_0
+      10: dload_3
+      11: putfield      #64                 // Field d:D
+      14: aload_0
+      15: dload         5
+      17: putfield      #66                 // Field e:D
+      20: return
+
+  public elt(org.joml.Vector3f);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #74                 // Method org/joml/Vector3f.x:()F
+       5: f2d
+       6: aload_1
+       7: invokevirtual #77                 // Method org/joml/Vector3f.y:()F
+      10: f2d
+      11: aload_1
+      12: invokevirtual #80                 // Method org/joml/Vector3f.z:()F
+      15: f2d
+      16: invokespecial #32                 // Method "<init>":(DDD)V
+      19: return
+
+  public elt a(elt);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_1
+       5: getfield      #62                 // Field c:D
+       8: aload_0
+       9: getfield      #62                 // Field c:D
+      12: dsub
+      13: aload_1
+      14: getfield      #64                 // Field d:D
+      17: aload_0
+      18: getfield      #64                 // Field d:D
+      21: dsub
+      22: aload_1
+      23: getfield      #66                 // Field e:D
+      26: aload_0
+      27: getfield      #66                 // Field e:D
+      30: dsub
+      31: invokespecial #32                 // Method "<init>":(DDD)V
+      34: areturn
+
+  public elt d();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: aload_0
+      14: getfield      #64                 // Field d:D
+      17: dmul
+      18: dadd
+      19: aload_0
+      20: getfield      #66                 // Field e:D
+      23: aload_0
+      24: getfield      #66                 // Field e:D
+      27: dmul
+      28: dadd
+      29: invokestatic  #89                 // Method java/lang/Math.sqrt:(D)D
+      32: dstore_1
+      33: dload_1
+      34: ldc2_w        #90                 // double 1.0E-4d
+      37: dcmpg
+      38: ifge          45
+      41: getstatic     #93                 // Field b:Lelt;
+      44: areturn
+      45: new           #2                  // class elt
+      48: dup
+      49: aload_0
+      50: getfield      #62                 // Field c:D
+      53: dload_1
+      54: ddiv
+      55: aload_0
+      56: getfield      #64                 // Field d:D
+      59: dload_1
+      60: ddiv
+      61: aload_0
+      62: getfield      #66                 // Field e:D
+      65: dload_1
+      66: ddiv
+      67: invokespecial #32                 // Method "<init>":(DDD)V
+      70: areturn
+
+  public double b(elt);
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_1
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: aload_1
+      14: getfield      #64                 // Field d:D
+      17: dmul
+      18: dadd
+      19: aload_0
+      20: getfield      #66                 // Field e:D
+      23: aload_1
+      24: getfield      #66                 // Field e:D
+      27: dmul
+      28: dadd
+      29: dreturn
+
+  public elt c(elt);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: getfield      #64                 // Field d:D
+       8: aload_1
+       9: getfield      #66                 // Field e:D
+      12: dmul
+      13: aload_0
+      14: getfield      #66                 // Field e:D
+      17: aload_1
+      18: getfield      #64                 // Field d:D
+      21: dmul
+      22: dsub
+      23: aload_0
+      24: getfield      #66                 // Field e:D
+      27: aload_1
+      28: getfield      #62                 // Field c:D
+      31: dmul
+      32: aload_0
+      33: getfield      #62                 // Field c:D
+      36: aload_1
+      37: getfield      #66                 // Field e:D
+      40: dmul
+      41: dsub
+      42: aload_0
+      43: getfield      #62                 // Field c:D
+      46: aload_1
+      47: getfield      #64                 // Field d:D
+      50: dmul
+      51: aload_0
+      52: getfield      #64                 // Field d:D
+      55: aload_1
+      56: getfield      #62                 // Field c:D
+      59: dmul
+      60: dsub
+      61: invokespecial #32                 // Method "<init>":(DDD)V
+      64: areturn
+
+  public elt d(elt);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #62                 // Field c:D
+       5: aload_1
+       6: getfield      #64                 // Field d:D
+       9: aload_1
+      10: getfield      #66                 // Field e:D
+      13: invokevirtual #97                 // Method a:(DDD)Lelt;
+      16: areturn
+
+  public elt a(double, double, double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dneg
+       3: dload_3
+       4: dneg
+       5: dload         5
+       7: dneg
+       8: invokevirtual #99                 // Method b:(DDD)Lelt;
+      11: areturn
+
+  public elt e(elt);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #62                 // Field c:D
+       5: aload_1
+       6: getfield      #64                 // Field d:D
+       9: aload_1
+      10: getfield      #66                 // Field e:D
+      13: invokevirtual #99                 // Method b:(DDD)Lelt;
+      16: areturn
+
+  public elt b(double, double, double);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dload_1
+       9: dadd
+      10: aload_0
+      11: getfield      #64                 // Field d:D
+      14: dload_3
+      15: dadd
+      16: aload_0
+      17: getfield      #66                 // Field e:D
+      20: dload         5
+      22: dadd
+      23: invokespecial #32                 // Method "<init>":(DDD)V
+      26: areturn
+
+  public boolean a(ir, double);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #103,  1          // InterfaceMethod ir.a:()D
+       7: aload_1
+       8: invokeinterface #105,  1          // InterfaceMethod ir.b:()D
+      13: aload_1
+      14: invokeinterface #107,  1          // InterfaceMethod ir.c:()D
+      19: invokevirtual #110                // Method c:(DDD)D
+      22: dload_2
+      23: dload_2
+      24: dmul
+      25: dcmpg
+      26: ifge          33
+      29: iconst_1
+      30: goto          34
+      33: iconst_0
+      34: ireturn
+
+  public double f(elt);
+    Code:
+       0: aload_1
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dsub
+       9: dstore_2
+      10: aload_1
+      11: getfield      #64                 // Field d:D
+      14: aload_0
+      15: getfield      #64                 // Field d:D
+      18: dsub
+      19: dstore        4
+      21: aload_1
+      22: getfield      #66                 // Field e:D
+      25: aload_0
+      26: getfield      #66                 // Field e:D
+      29: dsub
+      30: dstore        6
+      32: dload_2
+      33: dload_2
+      34: dmul
+      35: dload         4
+      37: dload         4
+      39: dmul
+      40: dadd
+      41: dload         6
+      43: dload         6
+      45: dmul
+      46: dadd
+      47: invokestatic  #89                 // Method java/lang/Math.sqrt:(D)D
+      50: dreturn
+
+  public double g(elt);
+    Code:
+       0: aload_1
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dsub
+       9: dstore_2
+      10: aload_1
+      11: getfield      #64                 // Field d:D
+      14: aload_0
+      15: getfield      #64                 // Field d:D
+      18: dsub
+      19: dstore        4
+      21: aload_1
+      22: getfield      #66                 // Field e:D
+      25: aload_0
+      26: getfield      #66                 // Field e:D
+      29: dsub
+      30: dstore        6
+      32: dload_2
+      33: dload_2
+      34: dmul
+      35: dload         4
+      37: dload         4
+      39: dmul
+      40: dadd
+      41: dload         6
+      43: dload         6
+      45: dmul
+      46: dadd
+      47: dreturn
+
+  public double c(double, double, double);
+    Code:
+       0: dload_1
+       1: aload_0
+       2: getfield      #62                 // Field c:D
+       5: dsub
+       6: dstore        7
+       8: dload_3
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: dsub
+      14: dstore        9
+      16: dload         5
+      18: aload_0
+      19: getfield      #66                 // Field e:D
+      22: dsub
+      23: dstore        11
+      25: dload         7
+      27: dload         7
+      29: dmul
+      30: dload         9
+      32: dload         9
+      34: dmul
+      35: dadd
+      36: dload         11
+      38: dload         11
+      40: dmul
+      41: dadd
+      42: dreturn
+
+  public boolean a(elt, double, double);
+    Code:
+       0: aload_1
+       1: invokevirtual #117                // Method a:()D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dsub
+       9: dstore        6
+      11: aload_1
+      12: invokevirtual #118                // Method b:()D
+      15: aload_0
+      16: getfield      #64                 // Field d:D
+      19: dsub
+      20: dstore        8
+      22: aload_1
+      23: invokevirtual #119                // Method c:()D
+      26: aload_0
+      27: getfield      #66                 // Field e:D
+      30: dsub
+      31: dstore        10
+      33: dload         6
+      35: dload         10
+      37: invokestatic  #124                // Method auo.e:(DD)D
+      40: dload_2
+      41: invokestatic  #127                // Method auo.k:(D)D
+      44: dcmpg
+      45: ifge          63
+      48: dload         8
+      50: invokestatic  #130                // Method java/lang/Math.abs:(D)D
+      53: dload         4
+      55: dcmpg
+      56: ifge          63
+      59: iconst_1
+      60: goto          64
+      63: iconst_0
+      64: ireturn
+
+  public elt a(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dload_1
+       3: dload_1
+       4: invokevirtual #133                // Method d:(DDD)Lelt;
+       7: areturn
+
+  public elt e();
+    Code:
+       0: aload_0
+       1: ldc2_w        #134                // double -1.0d
+       4: invokevirtual #137                // Method a:(D)Lelt;
+       7: areturn
+
+  public elt h(elt);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #62                 // Field c:D
+       5: aload_1
+       6: getfield      #64                 // Field d:D
+       9: aload_1
+      10: getfield      #66                 // Field e:D
+      13: invokevirtual #133                // Method d:(DDD)Lelt;
+      16: areturn
+
+  public elt d(double, double, double);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dload_1
+       9: dmul
+      10: aload_0
+      11: getfield      #64                 // Field d:D
+      14: dload_3
+      15: dmul
+      16: aload_0
+      17: getfield      #66                 // Field e:D
+      20: dload         5
+      22: dmul
+      23: invokespecial #32                 // Method "<init>":(DDD)V
+      26: areturn
+
+  public elt a(auv, float);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #144,  1          // InterfaceMethod auv.i:()F
+       7: ldc           #145                // float 0.5f
+       9: fsub
+      10: fload_2
+      11: fmul
+      12: f2d
+      13: aload_1
+      14: invokeinterface #144,  1          // InterfaceMethod auv.i:()F
+      19: ldc           #145                // float 0.5f
+      21: fsub
+      22: fload_2
+      23: fmul
+      24: f2d
+      25: aload_1
+      26: invokeinterface #144,  1          // InterfaceMethod auv.i:()F
+      31: ldc           #145                // float 0.5f
+      33: fsub
+      34: fload_2
+      35: fmul
+      36: f2d
+      37: invokevirtual #99                 // Method b:(DDD)Lelt;
+      40: areturn
+
+  public double f();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: aload_0
+      14: getfield      #64                 // Field d:D
+      17: dmul
+      18: dadd
+      19: aload_0
+      20: getfield      #66                 // Field e:D
+      23: aload_0
+      24: getfield      #66                 // Field e:D
+      27: dmul
+      28: dadd
+      29: invokestatic  #89                 // Method java/lang/Math.sqrt:(D)D
+      32: dreturn
+
+  public double g();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: aload_0
+      14: getfield      #64                 // Field d:D
+      17: dmul
+      18: dadd
+      19: aload_0
+      20: getfield      #66                 // Field e:D
+      23: aload_0
+      24: getfield      #66                 // Field e:D
+      27: dmul
+      28: dadd
+      29: dreturn
+
+  public double h();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #66                 // Field e:D
+      13: aload_0
+      14: getfield      #66                 // Field e:D
+      17: dmul
+      18: dadd
+      19: invokestatic  #89                 // Method java/lang/Math.sqrt:(D)D
+      22: dreturn
+
+  public double i();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: dmul
+       9: aload_0
+      10: getfield      #66                 // Field e:D
+      13: aload_0
+      14: getfield      #66                 // Field e:D
+      17: dmul
+      18: dadd
+      19: dreturn
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     7
+       5: iconst_1
+       6: ireturn
+       7: aload_1
+       8: instanceof    #2                  // class elt
+      11: ifne          16
+      14: iconst_0
+      15: ireturn
+      16: aload_1
+      17: checkcast     #2                  // class elt
+      20: astore_2
+      21: aload_2
+      22: getfield      #62                 // Field c:D
+      25: aload_0
+      26: getfield      #62                 // Field c:D
+      29: invokestatic  #155                // Method java/lang/Double.compare:(DD)I
+      32: ifeq          37
+      35: iconst_0
+      36: ireturn
+      37: aload_2
+      38: getfield      #64                 // Field d:D
+      41: aload_0
+      42: getfield      #64                 // Field d:D
+      45: invokestatic  #155                // Method java/lang/Double.compare:(DD)I
+      48: ifeq          53
+      51: iconst_0
+      52: ireturn
+      53: aload_2
+      54: getfield      #66                 // Field e:D
+      57: aload_0
+      58: getfield      #66                 // Field e:D
+      61: invokestatic  #155                // Method java/lang/Double.compare:(DD)I
+      64: ifne          71
+      67: iconst_1
+      68: goto          72
+      71: iconst_0
+      72: ireturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: invokestatic  #161                // Method java/lang/Double.doubleToLongBits:(D)J
+       7: lstore_2
+       8: lload_2
+       9: lload_2
+      10: bipush        32
+      12: lushr
+      13: lxor
+      14: l2i
+      15: istore_1
+      16: aload_0
+      17: getfield      #64                 // Field d:D
+      20: invokestatic  #161                // Method java/lang/Double.doubleToLongBits:(D)J
+      23: lstore_2
+      24: bipush        31
+      26: iload_1
+      27: imul
+      28: lload_2
+      29: lload_2
+      30: bipush        32
+      32: lushr
+      33: lxor
+      34: l2i
+      35: iadd
+      36: istore_1
+      37: aload_0
+      38: getfield      #66                 // Field e:D
+      41: invokestatic  #161                // Method java/lang/Double.doubleToLongBits:(D)J
+      44: lstore_2
+      45: bipush        31
+      47: iload_1
+      48: imul
+      49: lload_2
+      50: lload_2
+      51: bipush        32
+      53: lushr
+      54: lxor
+      55: l2i
+      56: iadd
+      57: istore_1
+      58: iload_1
+      59: ireturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: aload_0
+       5: getfield      #64                 // Field d:D
+       8: aload_0
+       9: getfield      #66                 // Field e:D
+      12: invokedynamic #176,  0            // InvokeDynamic #0:makeConcatWithConstants:(DDD)Ljava/lang/String;
+      17: areturn
+
+  public elt a(elt, double);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: dload_2
+       5: aload_0
+       6: getfield      #62                 // Field c:D
+       9: aload_1
+      10: getfield      #62                 // Field c:D
+      13: invokestatic  #179                // Method auo.d:(DDD)D
+      16: dload_2
+      17: aload_0
+      18: getfield      #64                 // Field d:D
+      21: aload_1
+      22: getfield      #64                 // Field d:D
+      25: invokestatic  #179                // Method auo.d:(DDD)D
+      28: dload_2
+      29: aload_0
+      30: getfield      #66                 // Field e:D
+      33: aload_1
+      34: getfield      #66                 // Field e:D
+      37: invokestatic  #179                // Method auo.d:(DDD)D
+      40: invokespecial #32                 // Method "<init>":(DDD)V
+      43: areturn
+
+  public elt a(float);
+    Code:
+       0: fload_1
+       1: invokestatic  #183                // Method auo.b:(F)F
+       4: fstore_2
+       5: fload_1
+       6: invokestatic  #185                // Method auo.a:(F)F
+       9: fstore_3
+      10: aload_0
+      11: getfield      #62                 // Field c:D
+      14: dstore        4
+      16: aload_0
+      17: getfield      #64                 // Field d:D
+      20: fload_2
+      21: f2d
+      22: dmul
+      23: aload_0
+      24: getfield      #66                 // Field e:D
+      27: fload_3
+      28: f2d
+      29: dmul
+      30: dadd
+      31: dstore        6
+      33: aload_0
+      34: getfield      #66                 // Field e:D
+      37: fload_2
+      38: f2d
+      39: dmul
+      40: aload_0
+      41: getfield      #64                 // Field d:D
+      44: fload_3
+      45: f2d
+      46: dmul
+      47: dsub
+      48: dstore        8
+      50: new           #2                  // class elt
+      53: dup
+      54: dload         4
+      56: dload         6
+      58: dload         8
+      60: invokespecial #32                 // Method "<init>":(DDD)V
+      63: areturn
+
+  public elt b(float);
+    Code:
+       0: fload_1
+       1: invokestatic  #183                // Method auo.b:(F)F
+       4: fstore_2
+       5: fload_1
+       6: invokestatic  #185                // Method auo.a:(F)F
+       9: fstore_3
+      10: aload_0
+      11: getfield      #62                 // Field c:D
+      14: fload_2
+      15: f2d
+      16: dmul
+      17: aload_0
+      18: getfield      #66                 // Field e:D
+      21: fload_3
+      22: f2d
+      23: dmul
+      24: dadd
+      25: dstore        4
+      27: aload_0
+      28: getfield      #64                 // Field d:D
+      31: dstore        6
+      33: aload_0
+      34: getfield      #66                 // Field e:D
+      37: fload_2
+      38: f2d
+      39: dmul
+      40: aload_0
+      41: getfield      #62                 // Field c:D
+      44: fload_3
+      45: f2d
+      46: dmul
+      47: dsub
+      48: dstore        8
+      50: new           #2                  // class elt
+      53: dup
+      54: dload         4
+      56: dload         6
+      58: dload         8
+      60: invokespecial #32                 // Method "<init>":(DDD)V
+      63: areturn
+
+  public elt c(float);
+    Code:
+       0: fload_1
+       1: invokestatic  #183                // Method auo.b:(F)F
+       4: fstore_2
+       5: fload_1
+       6: invokestatic  #185                // Method auo.a:(F)F
+       9: fstore_3
+      10: aload_0
+      11: getfield      #62                 // Field c:D
+      14: fload_2
+      15: f2d
+      16: dmul
+      17: aload_0
+      18: getfield      #64                 // Field d:D
+      21: fload_3
+      22: f2d
+      23: dmul
+      24: dadd
+      25: dstore        4
+      27: aload_0
+      28: getfield      #64                 // Field d:D
+      31: fload_2
+      32: f2d
+      33: dmul
+      34: aload_0
+      35: getfield      #62                 // Field c:D
+      38: fload_3
+      39: f2d
+      40: dmul
+      41: dsub
+      42: dstore        6
+      44: aload_0
+      45: getfield      #66                 // Field e:D
+      48: dstore        8
+      50: new           #2                  // class elt
+      53: dup
+      54: dload         4
+      56: dload         6
+      58: dload         8
+      60: invokespecial #32                 // Method "<init>":(DDD)V
+      63: areturn
+
+  public static elt a(els);
+    Code:
+       0: aload_0
+       1: getfield      #190                // Field els.i:F
+       4: aload_0
+       5: getfield      #193                // Field els.j:F
+       8: invokestatic  #196                // Method a:(FF)Lelt;
+      11: areturn
+
+  public static elt a(float, float);
+    Code:
+       0: fload_1
+       1: fneg
+       2: ldc           #198                // float 0.017453292f
+       4: fmul
+       5: ldc           #199                // float 3.1415927f
+       7: fsub
+       8: invokestatic  #183                // Method auo.b:(F)F
+      11: fstore_2
+      12: fload_1
+      13: fneg
+      14: ldc           #198                // float 0.017453292f
+      16: fmul
+      17: ldc           #199                // float 3.1415927f
+      19: fsub
+      20: invokestatic  #185                // Method auo.a:(F)F
+      23: fstore_3
+      24: fload_0
+      25: fneg
+      26: ldc           #198                // float 0.017453292f
+      28: fmul
+      29: invokestatic  #183                // Method auo.b:(F)F
+      32: fneg
+      33: fstore        4
+      35: fload_0
+      36: fneg
+      37: ldc           #198                // float 0.017453292f
+      39: fmul
+      40: invokestatic  #185                // Method auo.a:(F)F
+      43: fstore        5
+      45: new           #2                  // class elt
+      48: dup
+      49: fload_3
+      50: fload         4
+      52: fmul
+      53: f2d
+      54: fload         5
+      56: f2d
+      57: fload_2
+      58: fload         4
+      60: fmul
+      61: f2d
+      62: invokespecial #32                 // Method "<init>":(DDD)V
+      65: areturn
+
+  public elt a(java.util.EnumSet<ic$a>);
+    Code:
+       0: aload_1
+       1: getstatic     #204                // Field ic$a.a:Lic$a;
+       4: invokevirtual #209                // Method java/util/EnumSet.contains:(Ljava/lang/Object;)Z
+       7: ifeq          21
+      10: aload_0
+      11: getfield      #62                 // Field c:D
+      14: invokestatic  #212                // Method auo.a:(D)I
+      17: i2d
+      18: goto          25
+      21: aload_0
+      22: getfield      #62                 // Field c:D
+      25: dstore_2
+      26: aload_1
+      27: getstatic     #214                // Field ic$a.b:Lic$a;
+      30: invokevirtual #209                // Method java/util/EnumSet.contains:(Ljava/lang/Object;)Z
+      33: ifeq          47
+      36: aload_0
+      37: getfield      #64                 // Field d:D
+      40: invokestatic  #212                // Method auo.a:(D)I
+      43: i2d
+      44: goto          51
+      47: aload_0
+      48: getfield      #64                 // Field d:D
+      51: dstore        4
+      53: aload_1
+      54: getstatic     #216                // Field ic$a.c:Lic$a;
+      57: invokevirtual #209                // Method java/util/EnumSet.contains:(Ljava/lang/Object;)Z
+      60: ifeq          74
+      63: aload_0
+      64: getfield      #66                 // Field e:D
+      67: invokestatic  #212                // Method auo.a:(D)I
+      70: i2d
+      71: goto          78
+      74: aload_0
+      75: getfield      #66                 // Field e:D
+      78: dstore        6
+      80: new           #2                  // class elt
+      83: dup
+      84: dload_2
+      85: dload         4
+      87: dload         6
+      89: invokespecial #32                 // Method "<init>":(DDD)V
+      92: areturn
+
+  public double a(ic$a);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #62                 // Field c:D
+       5: aload_0
+       6: getfield      #64                 // Field d:D
+       9: aload_0
+      10: getfield      #66                 // Field e:D
+      13: invokevirtual #221                // Method ic$a.a:(DDD)D
+      16: dreturn
+
+  public elt a(ic$a, double);
+    Code:
+       0: aload_1
+       1: getstatic     #204                // Field ic$a.a:Lic$a;
+       4: if_acmpne     11
+       7: dload_2
+       8: goto          15
+      11: aload_0
+      12: getfield      #62                 // Field c:D
+      15: dstore        4
+      17: aload_1
+      18: getstatic     #214                // Field ic$a.b:Lic$a;
+      21: if_acmpne     28
+      24: dload_2
+      25: goto          32
+      28: aload_0
+      29: getfield      #64                 // Field d:D
+      32: dstore        6
+      34: aload_1
+      35: getstatic     #216                // Field ic$a.c:Lic$a;
+      38: if_acmpne     45
+      41: dload_2
+      42: goto          49
+      45: aload_0
+      46: getfield      #66                 // Field e:D
+      49: dstore        8
+      51: new           #2                  // class elt
+      54: dup
+      55: dload         4
+      57: dload         6
+      59: dload         8
+      61: invokespecial #32                 // Method "<init>":(DDD)V
+      64: areturn
+
+  public elt a(ic, double);
+    Code:
+       0: aload_1
+       1: invokevirtual #227                // Method ic.q:()Ljb;
+       4: astore        4
+       6: new           #2                  // class elt
+       9: dup
+      10: aload_0
+      11: getfield      #62                 // Field c:D
+      14: dload_2
+      15: aload         4
+      17: invokevirtual #44                 // Method jb.u:()I
+      20: i2d
+      21: dmul
+      22: dadd
+      23: aload_0
+      24: getfield      #64                 // Field d:D
+      27: dload_2
+      28: aload         4
+      30: invokevirtual #47                 // Method jb.v:()I
+      33: i2d
+      34: dmul
+      35: dadd
+      36: aload_0
+      37: getfield      #66                 // Field e:D
+      40: dload_2
+      41: aload         4
+      43: invokevirtual #50                 // Method jb.w:()I
+      46: i2d
+      47: dmul
+      48: dadd
+      49: invokespecial #32                 // Method "<init>":(DDD)V
+      52: areturn
+
+  public final double a();
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field c:D
+       4: dreturn
+
+  public final double b();
+    Code:
+       0: aload_0
+       1: getfield      #64                 // Field d:D
+       4: dreturn
+
+  public final double c();
+    Code:
+       0: aload_0
+       1: getfield      #66                 // Field e:D
+       4: dreturn
+
+  public org.joml.Vector3f j();
+    Code:
+       0: new           #70                 // class org/joml/Vector3f
+       3: dup
+       4: aload_0
+       5: getfield      #62                 // Field c:D
+       8: d2f
+       9: aload_0
+      10: getfield      #64                 // Field d:D
+      13: d2f
+      14: aload_0
+      15: getfield      #66                 // Field e:D
+      18: d2f
+      19: invokespecial #232                // Method org/joml/Vector3f."<init>":(FFF)V
+      22: areturn
+
+  private static java.util.List i(elt);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method a:()D
+       4: invokestatic  #237                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       7: aload_0
+       8: invokevirtual #118                // Method b:()D
+      11: invokestatic  #237                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      14: aload_0
+      15: invokevirtual #119                // Method c:()D
+      18: invokestatic  #237                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      21: invokestatic  #243                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+      24: areturn
+
+  private static com.mojang.serialization.DataResult a(java.util.List);
+    Code:
+       0: aload_0
+       1: iconst_3
+       2: invokestatic  #249                // Method ac.a:(Ljava/util/List;I)Lcom/mojang/serialization/DataResult;
+       5: invokedynamic #267,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      10: invokevirtual #273                // Method com/mojang/serialization/DataResult.map:(Ljava/util/function/Function;)Lcom/mojang/serialization/DataResult;
+      13: areturn
+
+  private static elt b(java.util.List);
+    Code:
+       0: new           #2                  // class elt
+       3: dup
+       4: aload_0
+       5: iconst_0
+       6: invokeinterface #278,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      11: checkcast     #151                // class java/lang/Double
+      14: invokevirtual #281                // Method java/lang/Double.doubleValue:()D
+      17: aload_0
+      18: iconst_1
+      19: invokeinterface #278,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      24: checkcast     #151                // class java/lang/Double
+      27: invokevirtual #281                // Method java/lang/Double.doubleValue:()D
+      30: aload_0
+      31: iconst_2
+      32: invokeinterface #278,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      37: checkcast     #151                // class java/lang/Double
+      40: invokevirtual #281                // Method java/lang/Double.doubleValue:()D
+      43: invokespecial #32                 // Method "<init>":(DDD)V
+      46: areturn
+
+  static {};
+    Code:
+       0: getstatic     #288                // Field com/mojang/serialization/Codec.DOUBLE:Lcom/mojang/serialization/codecs/PrimitiveCodec;
+       3: invokeinterface #294,  1          // InterfaceMethod com/mojang/serialization/codecs/PrimitiveCodec.listOf:()Lcom/mojang/serialization/Codec;
+       8: invokedynamic #299,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+      13: invokedynamic #304,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+      18: invokeinterface #308,  3          // InterfaceMethod com/mojang/serialization/Codec.comapFlatMap:(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+      23: putstatic     #310                // Field a:Lcom/mojang/serialization/Codec;
+      26: new           #2                  // class elt
+      29: dup
+      30: dconst_0
+      31: dconst_0
+      32: dconst_0
+      33: invokespecial #32                 // Method "<init>":(DDD)V
+      36: putstatic     #93                 // Field b:Lelt;
+      39: return
+}

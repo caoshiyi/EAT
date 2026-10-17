@@ -1,0 +1,569 @@
+program #8184 on p4: 51.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T17:40:30.279Z",
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 28.474076088901725,
+  "y": 49,
+  "z": 0.4999879691776863
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "wooden_pickaxe",
+   1,
+   37
+  ],
+  [
+   "end_stone",
+   55,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   70
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CAP",
+   [
+    29,
+    49,
+    0
+   ]
+  ],
+  [
+   "STEP",
+   [
+    29,
+    50,
+    0
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    30,
+    49,
+    0
+   ]
+  ],
+  [
+   "CAP",
+   [
+    30,
+    50,
+    0
+   ]
+  ],
+  [
+   "CUT",
+   [
+    30,
+    51,
+    0
+   ]
+  ],
+  [
+   "STEP",
+   [
+    30,
+    51,
+    0
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    31,
+    52,
+    0
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    32,
+    53,
+    0
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    33,
+    54,
+    0
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    34,
+    55,
+    0
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    35,
+    56,
+    0
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    35,
+    57,
+    1
+   ]
+  ],
+  [
+   "CUT",
+   [
+    35,
+    56,
+    1
+   ]
+  ],
+  [
+   "STEP",
+   [
+    35,
+    56,
+    1
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    35,
+    57,
+    2
+   ]
+  ],
+  [
+   "CUT",
+   [
+    35,
+    56,
+    2
+   ]
+  ],
+  [
+   "STEP",
+   [
+    35,
+    56,
+    2
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    35,
+    57,
+    3
+   ]
+  ],
+  [
+   "CUT",
+   [
+    35,
+    56,
+    3
+   ]
+  ],
+  [
+   "STEP",
+   [
+    35,
+    56,
+    3
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    34,
+    58,
+    3
+   ]
+  ],
+  [
+   "FIRST_ENDSTONE_RECEIPT",
+   [
+    [
+     "wooden_pickaxe",
+     1,
+     30
+    ],
+    [
+     "end_stone",
+     50,
+     null
+    ],
+    [
+     "cobbled_deepslate",
+     2,
+     null
+    ]
+   ]
+  ],
+  [
+   "CAP",
+   [
+    34,
+    58,
+    3
+   ]
+  ],
+  [
+   "CUT",
+   [
+    36,
+    57,
+    3
+   ]
+  ],
+  [
+   "CUT",
+   [
+    36,
+    56,
+    3
+   ]
+  ],
+  [
+   "STEP",
+   [
+    36,
+    56,
+    3
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    37,
+    57,
+    3
+   ]
+  ],
+  [
+   "CUT",
+   [
+    37,
+    56,
+    3
+   ]
+  ],
+  [
+   "STEP",
+   [
+    37,
+    56,
+    3
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    38,
+    57,
+    3
+   ]
+  ],
+  [
+   "CUT",
+   [
+    38,
+    56,
+    3
+   ]
+  ],
+  [
+   "STEP",
+   [
+    38,
+    56,
+    3
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    38,
+    58,
+    3
+   ]
+  ],
+  [
+   "ORDINARY_RECEIPT",
+   [
+    [
+     "wooden_pickaxe",
+     1,
+     37
+    ],
+    [
+     "end_stone",
+     56,
+     null
+    ],
+    [
+     "stone_pickaxe",
+     1,
+     70
+    ],
+    [
+     "cobbled_deepslate",
+     2,
+     null
+    ]
+   ]
+  ],
+  [
+   "CAP",
+   [
+    38,
+    58,
+    3
+   ]
+  ]
+ ],
+ "clouds": [],
+ "dragon": [
+  [
+   3613,
+   {
+    "x": 22.32544502565127,
+    "y": 63.08966033766873,
+    "z": 3.7843964528024188
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  ]
+ ],
+ "items": [
+  [
+   3627,
+   {
+    "x": 37.81256876461973,
+    "y": 59,
+    "z": 4.222919646538424
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  ],
+  [
+   3643,
+   {
+    "x": 30.3589126246501,
+    "y": 59,
+    "z": 9.002560661697236
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ],
+ "retreatIssue": null,
+ "before": [
+  [
+   "wooden_pickaxe",
+   1,
+   22
+  ],
+  [
+   "end_stone",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   1,
+   null
+  ]
+ ],
+ "observed": [
+  [
+   3625,
+   {
+    "x": 39.825615956369525,
+    "y": 59,
+    "z": 6.438535201292108
+   },
+   "wooden_pickaxe",
+   {
+    "present": true,
+    "itemId": 816,
+    "itemCount": 1,
+    "nbtData": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 15
+      }
+     }
+    }
+   }
+  ],
+  [
+   3626,
+   {
+    "x": 38.15819723277695,
+    "y": 59,
+    "z": 3.57722537380592
+   },
+   "stone_pickaxe",
+   {
+    "present": true,
+    "itemId": 821,
+    "itemCount": 1,
+    "nbtData": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 70
+      }
+     }
+    }
+   }
+  ],
+  [
+   3627,
+   {
+    "x": 37.81256876461973,
+    "y": 59,
+    "z": 4.222919646538424
+   },
+   "ender_pearl",
+   "[repeated reference]"
+  ],
+  [
+   3628,
+   {
+    "x": 34.310506049446545,
+    "y": 59,
+    "z": 3.184885948230466
+   },
+   "end_stone",
+   {
+    "present": true,
+    "itemId": 376,
+    "itemCount": 43
+   }
+  ]
+ ],
+ "receipt": "[repeated reference]",
+ "afterItems": [
+  [
+   3625,
+   {
+    "x": 39.825615956369525,
+    "y": 59,
+    "z": 6.438535201292108
+   },
+   "wooden_pickaxe",
+   "[repeated reference]"
+  ],
+  [
+   3627,
+   {
+    "x": 37.81256876461973,
+    "y": 59,
+    "z": 4.222919646538424
+   },
+   "ender_pearl",
+   "[repeated reference]"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p3 was slain by Zombie
+p3: Second P3 ZombieDEATH after8182 atnight blockedstair2.3,63,90.5; 8183 dangerrescue EXPECTED_DANGER_LIFE_ABSENT safelyrefused newrespawn20HP. 8178 earliergoto resolvedwithoutarrival frombed, corrected8182 postcondition/manualbedexit. SAME night recovery fai
+p3: lure → RETIRE nightgroundrecovery/route, no thirdretry/stockchain. Packetstilldateddropped<=17:36:12/expiry~17:41:12. Currentcamp20HP EMPTY. 17:50 directdelivery now unqualified; I propose survival sleep daylight if currentOWplayers can sleep (one strongho
+p3: ldbed shared means P2 would need temporarilyNether), else waitday and report packetlost ratherthan repeat.
+p1: P3 secondnightfailure acknowledged; retireUNQUALIFIED deliverydependency now, do notrecreatepacketautomatically. Daylight materiallychangedrecovery canbechosenonlyfromactualsafeobservations, notthirdnightretry. P1/P2 sleeprelocation would addentireportaltr
+p1: ip andnotcurrent2minexpiry; Iwillnotblockprimaryonit. P1 localbowthirdweb+skeletonarrow fallback nowindependent; P4LOWgearlease unchanged→17:43. We stilluseactualsnowtoolfindings laterifinputexists.
+--- p4 now: (28.5, 49, 0.5) in the_end, health 20/20, food 20/20, alive

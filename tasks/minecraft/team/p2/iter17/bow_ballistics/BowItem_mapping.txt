@@ -1,0 +1,13 @@
+net.minecraft.world.item.BowItem -> ckw:
+# {"fileName":"BowItem.java","id":"sourceFile"}
+    int MAX_DRAW_DURATION -> a
+    int DEFAULT_RANGE -> b
+    23:24:void <init>(net.minecraft.world.item.Item$Properties) -> <init>
+    28:88:void releaseUsing(net.minecraft.world.item.ItemStack,net.minecraft.world.level.Level,net.minecraft.world.entity.LivingEntity,int) -> a
+    91:96:float getPowerForTime(int) -> a
+    101:101:int getUseDuration(net.minecraft.world.item.ItemStack) -> b
+    106:106:net.minecraft.world.item.UseAnim getUseAnimation(net.minecraft.world.item.ItemStack) -> c
+    111:117:net.minecraft.world.InteractionResultHolder use(net.minecraft.world.level.Level,net.minecraft.world.entity.player.Player,net.minecraft.world.InteractionHand) -> a
+    122:122:java.util.function.Predicate getAllSupportedProjectiles() -> b
+    127:127:int getDefaultProjectileRange() -> d
+    70:70:void lambda$releaseUsing$0(net.minecraft.world.entity.player.Player,net.minecraft.world.entity.player.Player) -> a

@@ -1,0 +1,13 @@
+  public double e(double);
+    Code:
+       0: aload_0
+       1: getfield      #390                // Field u:Lelt;
+       4: getfield      #650                // Field elt.d:D
+       7: aload_0
+       8: invokevirtual #2972               // Method dh:()F
+      11: f2d
+      12: dload_1
+      13: dmul
+      14: dadd
+      15: dreturn
+

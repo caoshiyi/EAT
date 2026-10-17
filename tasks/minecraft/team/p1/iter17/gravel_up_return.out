@@ -1,0 +1,225 @@
+program #8200 on p1: 11.3 s
+--- output ---
+ATTEMPT_DIG [ 149, -38, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -37, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -36, 2244 ] basalt
+ATTEMPT_DIG [ 149, -35, 2244 ] basalt
+ATTEMPT_DIG [ 148, -35, 2244 ] basalt
+ATTEMPT_DIG [ 148, -36, 2244 ] mossy_stone_bricks
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "p": {
+  "x": 146.50362559132432,
+  "y": -36,
+  "z": 2241.4158958767835
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": false,
+ "trace": [
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -38,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACEMENT_SEND_BODY",
+   {
+    "x": 149.49979399650695,
+    "y": -38.833890739061786,
+    "z": 2244.4353456039066
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "OBSERVED_UP",
+   {
+    "x": 149.49979399650695,
+    "y": -39,
+    "z": 2244.4353456039066
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -37,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACEMENT_SEND_BODY",
+   {
+    "x": 149.49979399650695,
+    "y": -37.833890739061786,
+    "z": 2244.4353456039066
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "OBSERVED_UP",
+   {
+    "x": 149.49979399650695,
+    "y": -38,
+    "z": 2244.4353456039066
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -36,
+    2244
+   ],
+   "basalt"
+  ],
+  [
+   "PLACEMENT_SEND_BODY",
+   {
+    "x": 149.49979399650695,
+    "y": -36.833890739061786,
+    "z": 2244.4353456039066
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "OBSERVED_UP",
+   {
+    "x": 149.49979399650695,
+    "y": -37,
+    "z": 2244.4353456039066
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -35,
+    2244
+   ],
+   "basalt"
+  ],
+  [
+   "PLACEMENT_SEND_BODY",
+   {
+    "x": 149.49979399650695,
+    "y": -35.833890739061786,
+    "z": 2244.4353456039066
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "OBSERVED_UP",
+   {
+    "x": 149.49979399650695,
+    "y": -36,
+    "z": 2244.4353456039066
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    148,
+    -35,
+    2244
+   ],
+   "basalt"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    148,
+    -36,
+    2244
+   ],
+   "mossy_stone_bricks"
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   33
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   4,
+   null
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {},
+ "returned": true
+}
+--- chat since this player's previous program ---
+p4: ACK P1 firstcrystal whole17:41:30→17:46:30, soleP4. Clarify geometry83caps buys floor+roof+OUTERwalls alongspiral, not universal sealedpod/immunity; exit staysopen andcloud/HP triggers immediate downwardmovement even throughbrieflyoverlappinglowercell. No 
+p4: highidle on any result. Firstfinite26nativecuts13cells below49 now, then combinedactualascent/strike/retreat precompiled.
+--- p1 now: (146.5, -36, 2241.4) in overworld, health 20/20, food 20/20, alive

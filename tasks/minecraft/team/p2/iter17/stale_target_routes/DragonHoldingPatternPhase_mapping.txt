@@ -1,0 +1,16 @@
+net.minecraft.world.entity.boss.enderdragon.phases.DragonHoldingPatternPhase -> cau:
+# {"fileName":"DragonHoldingPatternPhase.java","id":"sourceFile"}
+    net.minecraft.world.entity.ai.targeting.TargetingConditions NEW_TARGET_TARGETING -> b
+    net.minecraft.world.level.pathfinder.Path currentPath -> c
+    net.minecraft.world.phys.Vec3 targetLocation -> d
+    boolean clockwise -> e
+    27:28:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    32:32:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getPhase() -> i
+    37:41:void doServerTick() -> c
+    45:47:void begin() -> d
+    52:52:net.minecraft.world.phys.Vec3 getFlyTargetLocation() -> g
+    56:117:void findNewTarget() -> j
+    120:122:void strafePlayer(net.minecraft.world.entity.player.Player) -> a
+    125:139:void navigateToNextPathNode() -> k
+    143:146:void onCrystalDestroyed(net.minecraft.world.entity.boss.enderdragon.EndCrystal,net.minecraft.core.BlockPos,net.minecraft.world.damagesource.DamageSource,net.minecraft.world.entity.player.Player) -> a
+    18:18:void <clinit>() -> <clinit>

@@ -1,0 +1,155 @@
+program #8263 on p2: 16.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T17:56:17.918Z",
+ "issue": "TWO_PLANK_ORDINARY_RECEIPT_1",
+ "endingIssue": null,
+ "p": {
+  "x": 146.52838523380123,
+  "y": -36,
+  "z": 2243.453340715229
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "ground": true,
+ "trace": [
+  [
+   "CUT",
+   [
+    143,
+    -33,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "CUT",
+   [
+    143,
+    -32,
+    2241
+   ],
+   "oak_planks"
+  ],
+  [
+   "CUT",
+   [
+    142,
+    -34,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "CUT",
+   [
+    142,
+    -33,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "CUT",
+   [
+    142,
+    -32,
+    2241
+   ],
+   "oak_planks"
+  ],
+  [
+   143,
+   -36,
+   2241
+  ],
+  [
+   143,
+   -36,
+   2242
+  ],
+  [
+   144,
+   -36,
+   2242
+  ],
+  [
+   145,
+   -36,
+   2242
+  ],
+  [
+   146,
+   -36,
+   2242
+  ],
+  [
+   146,
+   -36,
+   2243
+  ]
+ ],
+ "plankBefore": 0,
+ "inv": [
+  [
+   "cobbled_deepslate",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {},
+ "goal": null,
+ "items": [
+  [
+   8326,
+   {
+    "x": 143.48083296918378,
+    "y": -33,
+    "z": 2242.108763524182
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 36,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: PORTALDELIVERY COMPLETE8258 17:55:21: freshSTONE0 ordinaryinventory received plusCOFF1 smoke; oldST129 brokeopening82door. FastOUT+RETURN81Y49 within8.4sexposure, ownHP20 throughout/controls{}/ground, spawnitems[]. This verifies reusable itemportal supply 
+p4: withoutP1entry. Actualwidened91..97bothsides14floors (spent14caps), currentSTONE0/WOOD56/END22+COFF1. Nextsourcepriced16extracuts toreplacebridge-spent input inexistingsecondapproach, no deliveryquota. 17:58usebudgetmayMISS, continueactualsecondcrystal/ret
+p4: ainedending.
+--- p2 now: (146.5, -36, 2243.5) in overworld, health 11.5/20, food 9/20, alive

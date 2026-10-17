@@ -1,0 +1,199 @@
+{
+  "at": "2026-10-17T19:22:20.500Z",
+  "world": "overworld",
+  "entityId": 157,
+  "p": {
+    "x": 132.4159523002606,
+    "y": -36,
+    "z": 2276.499707687381
+  },
+  "hp": 20,
+  "food": 19,
+  "ground": true,
+  "controls": {},
+  "held": null,
+  "cursor": null,
+  "armor": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "inv": [
+    [
+      "stick",
+      2,
+      null
+    ],
+    [
+      "stone_pickaxe",
+      1,
+      18
+    ],
+    [
+      "cobblestone_stairs",
+      2,
+      null
+    ],
+    [
+      "bone",
+      2,
+      null
+    ],
+    [
+      "cracked_stone_bricks",
+      1,
+      null
+    ],
+    [
+      "book",
+      12,
+      null
+    ]
+  ],
+  "closed": true,
+  "faces": [
+    [
+      [
+        132,
+        -37,
+        2276
+      ],
+      "basalt",
+      true
+    ],
+    [
+      [
+        132,
+        -34,
+        2276
+      ],
+      "cracked_stone_bricks",
+      true
+    ],
+    [
+      [
+        133,
+        -36,
+        2276
+      ],
+      "stone_bricks",
+      true
+    ],
+    [
+      [
+        133,
+        -35,
+        2276
+      ],
+      "cobbled_deepslate",
+      true
+    ],
+    [
+      [
+        131,
+        -36,
+        2276
+      ],
+      "mossy_stone_bricks",
+      true
+    ],
+    [
+      [
+        131,
+        -35,
+        2276
+      ],
+      "stone_bricks",
+      true
+    ],
+    [
+      [
+        132,
+        -36,
+        2277
+      ],
+      "basalt",
+      true
+    ],
+    [
+      [
+        132,
+        -35,
+        2277
+      ],
+      "basalt",
+      true
+    ],
+    [
+      [
+        132,
+        -36,
+        2275
+      ],
+      "basalt",
+      true
+    ],
+    [
+      [
+        132,
+        -35,
+        2275
+      ],
+      "basalt",
+      true
+    ]
+  ],
+  "ownNamedListeners": [
+    [
+      "death",
+      []
+    ],
+    [
+      "respawn",
+      []
+    ],
+    [
+      "health",
+      []
+    ],
+    [
+      "chat",
+      []
+    ],
+    [
+      "entitySpawn",
+      []
+    ],
+    [
+      "entityGone",
+      []
+    ]
+  ],
+  "adjacentRoof": [
+    132,
+    -34,
+    2275,
+    "air"
+  ],
+  "iteration": 17,
+  "deadline_utc": "2026-10-17T19:24:04Z",
+  "deadline_source": "CR_DEADLINE=1792265044 observed17:24/current runner; provenance.json",
+  "active_program": null,
+  "objective_complete": false,
+  "last_official_eval": "eval_1920.txt",
+  "dragon": 0,
+  "milestones": 11,
+  "deaths": 122,
+  "transfer": {
+    "issued_at": "2026-10-17T19:20:57.224Z",
+    "amount": 2,
+    "recipient": "p1",
+    "ordinary_receipt_evidence": "p1/iter17/final_packet_pickup.out #8522",
+    "donor_ending": "portal_final2_relay.out",
+    "whole_target_utc": "19:13:00",
+    "receipt_confirmation_utc": "19:21:20",
+    "whole_budget_missed": true
+  },
+  "shared_approach": "131/133 bothY-36/-35 FULLcaps, clearbeforewalking; no currentcourier"
+}

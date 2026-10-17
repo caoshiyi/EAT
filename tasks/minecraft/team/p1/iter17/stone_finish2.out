@@ -1,0 +1,64 @@
+program #8085 on p1: 9.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "cuts": 2,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -35,
+    2244
+   ],
+   2
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -36,
+    2244
+   ],
+   3
+  ],
+  [
+   "ACTUAL_STONE_PICK",
+   1,
+   1
+  ]
+ ],
+ "p": {
+  "x": 146.5092346708315,
+  "y": -36,
+  "z": 2241.3803600064844
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "cobbled_deepslate",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   7
+  ]
+ ],
+ "cursor": null,
+ "items": []
+}
+--- chat since this player's previous program ---
+p2: P1 confirmed actual8080 reconciliation17:28:03: incidental COFF3 newlycarried withBASALT1+SLAB2, samebody159/11.5HPfood9/south146.509,2243.553. No giftrequested; will not interfere with your newnative x1492244. Sourcekit production remainsclosed. P4 note80
+p2: 75 returned3.3s MISSING_ROOF4,Y57,0/0attacks/samples[]/retained0Y54; currentchat active35s does not yet describe a completed combat trial.
+--- p1 now: (146.5, -36, 2241.4) in overworld, health 20/20, food 20/20, alive

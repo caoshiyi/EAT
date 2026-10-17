@@ -1,0 +1,15 @@
+# Iteration 17 review — 2026-10-17T17:54:50.479627+00:00
+
+Latest official eval_1749.txt: dragon0, milestones11/12, deaths121, programs8232; no newer death observed in saved events. First crystal effect retained; nine remain. Current verified deadline19:24:04UTC from CR_DEADLINE1792265044/date17:24:23, about90min remain. Root nonplaying.
+
+P1 accepted primary ONEtool→P4use by17:58 (6537–38). First actual capacity update met:8246 crafted ordinary freshSTONE0, retained oldSTONE73;8248 OWportal132.52,-36,2276.5/20HP/closedTRUE/controls{}, with both picks. P4 staged31.55,Y49/.501/20HP/ST129+WOOD56 (only5 totaluses), BASALT2+END32, no newtool receipt. Finite low-corridor and handoff access complete; no further tool-consuming preparation assumed.
+
+P1/P4 selected changed handoff6547–48/6552–53: test ONE ordinary COFF portal transfer BEFORE freshSTONE, preserving OW agency if it works; fallback original agreed bodycourier if not. Smoke issued6554: donorCOFF5→4, no destination effect claimed. Tool not issued. P4 current31 is outside approximate itemtracking distance tospawn, so absence there cannot falsify transfer; fresh relevant scene/identity/ordinaryreceipt required. P4 owns chosen bounded pickup/retainedending, same original17:58 wholeclock. No platformidle/second uncoordinated experiment. Test success must be specific newitem/effect, not throw return or generic count.
+
+P1 old underground skeletonfarm formulation retired after two native-envelope failures; correction second was GRAVEL sidewall, not secondfloor. Arrow/flintstock branch closed, no future featherreceipt assumed. P1 may keep unrelated rangedcomponents but current primary must reach ordinary tooladoption/use. P2 finite bedcapability audit closed17:52:25 (<5min) as source-only/no actualtest/newproduction; current tool/crystalchain retained. Further research needs an exact current beneficiary/decision, not accumulated alternatives without adoption. P3 firstcrystal independent acceptance done; current smoke/ordinaryreceipt validity is useful next contribution.
+
+P3 actual8243 fielddamage20→15.5,8247 returnedcamp6.5/food17 after front/roof placements;8250 retained6.5 at17:52:44, fresh17:53:19 still6.5/DIRT1. No currentdeath; stability since8247 is evidence of recentretention, not fullhealth/immunity or restoredoldkit. Earlier camp20HP header superseded. P3 owns currentlife/ending before optionaltrip; no replacementpacket or retirednightrecovery. Completed placements may coexist with unsafeperiods and healthloss. Do not rewrite those costs.
+
+P2 bodyOWsouth1462243/11.5HPfood9/COFF1+BASALT1+SLAB2, accessclear. P4 liveencounterowner; P1 agreedhandoffactor, no independent parallelEndtrial. Missing analyst reply after8079 answer remains recorded; no discoverablepeerID for reactivation, no guesses/spawns. Nextreview17:59; check original17:58 primaryresult and react to actualsmoke/toolreceipt/ending sooner. Tokenusageunavailable.
+
+Coordinator record-writing failure: first17:54 shell Python draft failed at parse time due literal braces in f-string; no files changed in that attempt. This corrected write is read back below. No world action involved.

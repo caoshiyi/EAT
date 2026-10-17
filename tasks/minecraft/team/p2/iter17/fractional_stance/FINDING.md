@@ -1,0 +1,4 @@
+# Fractional stance proposal — RETIRED without production or play
+Independent <=5min question proposed17:28:56 as fallback only if plainY58 never reached. At17:28:59 actual P4 announced8079 FOUR normal parent attacks fromY58/HP20 retained, proving missing reach does not require fractional hardware. Closed at17:31; no trapdoor production, delivery or physicaltest assigned. Do not reopen under new label.
+
+Exact public matched1.20.4 TrapDoorBlock confirms closed BOTTOM collision3/16 (static shape k), shape getShape chooses it when !OPEN and HALF=BOTTOM. Hypothetical floor57+trapdoor58 ->feet58.1875/eye59.8075/top59.9875, roof60 clearance0.0125. This is geometry-only, narrow margin and actualclient/server pose/step untested. No safety or cloud immunity claim. Actual plainY58 reach makes this optional mechanism unnecessary.

@@ -1,0 +1,13 @@
+# Iteration17 review 1814 — 2026-10-17T18:14:15.744482+00:00
+
+Official latest eval_death5.txt: dragon0/11milestones/122deaths/programs8293; no new deaths observed. Current deadline19:24:04UTC from currentCR_DEADLINE1792265044, about70min remain. Root nonplaying. First crystal retained; no second effect.
+
+P1 actual8317 BOW0→1 from ordinarySTRING3/STICKS3, OWbed20HP/STONE81/SWORD6/Mossy1/flint1/gravel2/books27; ARROW absent. Existingthirdstring8315adoptionclosed, no morestring production. P4 originalarrowwhole18:07:40 MISSED; physical8314/8316 laterpreparation retained. 8316 had transienthealthloss before regen20, so DiggingAborted didnotmean no damage; P4healthhandler canabortdig onhurt. Exactminimum/shooter not independentlyisolated. Sourcechange selected same-levelintruder, notoldUP/roofopening.
+
+Actual8320 cap refused beforeattack, target340 overlappingproposedblock; actual8321 then SEVENnormalattacks/HP20→17.048→...→2.048/targetkilled, ordinaryBONE1. Returned18:12:30 lower149.606,Y-45,2244.5/HP20/food20/closedTRUE/controls{}/cursorNULL/issueNULL/retreatIssueNULL/endingIssueNULL. STONE39→55, COFF17+BASALT2+Brick2. **Interaction + targeteffect + retainedending accepted for this case; requestedARROW stillnotreceived.** Distinguish kill/loot from desiredinput. P3 exactcurrentitemscene/ordinarycounts shoulddiscriminate uncollecteddrop vs absentarrow before repeatedproduction; no lootceiling/impossibility fromonekill. No renewed5minclock or generalfarmframework.
+
+P2 conditionalcageMODEL answer completed18:12:31 before18:14. It models clearance candidates, notactualterrain/hitrate/shot. Currentfirstarrow/plainbowtestmustnotwaitforoldcagedtarget; no newresource/entry/gate. P2continuitybody11.5HPfood9/BASALT1+SLAB2+BOOK9. P3 owncamp6.5HPfood17/DIRT1 stable, settledstandingpickup8302 physicallimitedcase accepted; no sourcepacket revival. Source/parent/ballistics/bed/geometryanswersreleased; nextsupport needs exact currentbeneficiary/completion.
+
+Whole-objective completion estimate still unprovided. One lastingcrystal effect, five deaths, and~50min elapsed sinceopening show that morepreparation alone is notgoalprogress. After actualarrow input, P1owns smallestnormalbowshot/receipt, selectedusefultargeteffect and retainedending, with wholeprice before anotherlargecommitment. Methodsremainplayerderived; do notinherit8282current-nodeDEST_CLOUD nonescape merely undernewrangedlabel. RootdoesnotprescribeMinecraftmethod/route/recipe/combat.
+
+Nextreview18:19/sooneractualarrow/shot/effect/death. Original18:07:40failedbudget preserved. Tokenusageunavailable. Newrecord.py memorywriter smallnote smokePASS/readback before firstreview use; onlyauthorizedmemorywrites, no worldoperations.

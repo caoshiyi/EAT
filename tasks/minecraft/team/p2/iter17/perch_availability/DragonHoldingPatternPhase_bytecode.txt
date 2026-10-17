@@ -1,0 +1,342 @@
+Compiled from "SourceFile"
+public class cau extends caq {
+  private static final bwz b;
+
+  private efg c;
+
+  private elt d;
+
+  private boolean e;
+
+  public cau(cao);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #23                 // Method caq."<init>":(Lcao;)V
+       5: return
+
+  public cbe<cau> i();
+    Code:
+       0: getstatic     #35                 // Field cbe.a:Lcbe;
+       3: areturn
+
+  public void c();
+    Code:
+       0: aload_0
+       1: getfield      #38                 // Field d:Lelt;
+       4: ifnonnull     11
+       7: dconst_0
+       8: goto          39
+      11: aload_0
+      12: getfield      #38                 // Field d:Lelt;
+      15: aload_0
+      16: getfield      #40                 // Field a:Lcao;
+      19: invokevirtual #46                 // Method cao.dr:()D
+      22: aload_0
+      23: getfield      #40                 // Field a:Lcao;
+      26: invokevirtual #49                 // Method cao.dt:()D
+      29: aload_0
+      30: getfield      #40                 // Field a:Lcao;
+      33: invokevirtual #52                 // Method cao.dx:()D
+      36: invokevirtual #57                 // Method elt.c:(DDD)D
+      39: dstore_1
+      40: dload_1
+      41: ldc2_w        #58                 // double 100.0d
+      44: dcmpg
+      45: iflt          76
+      48: dload_1
+      49: ldc2_w        #60                 // double 22500.0d
+      52: dcmpl
+      53: ifgt          76
+      56: aload_0
+      57: getfield      #40                 // Field a:Lcao;
+      60: getfield      #64                 // Field cao.P:Z
+      63: ifne          76
+      66: aload_0
+      67: getfield      #40                 // Field a:Lcao;
+      70: getfield      #67                 // Field cao.Q:Z
+      73: ifeq          80
+      76: aload_0
+      77: invokevirtual #70                 // Method j:()V
+      80: return
+
+  public void d();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #73                 // Field c:Lefg;
+       5: aload_0
+       6: aconst_null
+       7: putfield      #38                 // Field d:Lelt;
+      10: return
+
+  public elt g();
+    Code:
+       0: aload_0
+       1: getfield      #38                 // Field d:Lelt;
+       4: areturn
+
+  private void j();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field c:Lefg;
+       4: ifnull        216
+       7: aload_0
+       8: getfield      #73                 // Field c:Lefg;
+      11: invokevirtual #80                 // Method efg.c:()Z
+      14: ifeq          216
+      17: aload_0
+      18: getfield      #40                 // Field a:Lcao;
+      21: invokevirtual #84                 // Method cao.dM:()Lctp;
+      24: getstatic     #88                 // Field doq$a.f:Ldoq$a;
+      27: new           #90                 // class hx
+      30: dup
+      31: aload_0
+      32: getfield      #40                 // Field a:Lcao;
+      35: invokevirtual #94                 // Method cao.u:()Lhx;
+      38: invokestatic  #99                 // Method drt.a:(Lhx;)Lhx;
+      41: invokespecial #102                // Method hx."<init>":(Ljb;)V
+      44: invokevirtual #107                // Method ctp.a:(Ldoq$a;Lhx;)Lhx;
+      47: astore_1
+      48: aload_0
+      49: getfield      #40                 // Field a:Lcao;
+      52: invokevirtual #111                // Method cao.gc:()Ldmt;
+      55: ifnonnull     62
+      58: iconst_0
+      59: goto          72
+      62: aload_0
+      63: getfield      #40                 // Field a:Lcao;
+      66: invokevirtual #111                // Method cao.gc:()Ldmt;
+      69: invokevirtual #116                // Method dmt.e:()I
+      72: istore_2
+      73: aload_0
+      74: getfield      #40                 // Field a:Lcao;
+      77: invokevirtual #120                // Method cao.eg:()Lauv;
+      80: iload_2
+      81: iconst_3
+      82: iadd
+      83: invokeinterface #125,  2          // InterfaceMethod auv.a:(I)I
+      88: ifne          105
+      91: aload_0
+      92: getfield      #40                 // Field a:Lcao;
+      95: invokevirtual #129                // Method cao.gb:()Lcbf;
+      98: getstatic     #131                // Field cbe.c:Lcbe;
+     101: invokevirtual #136                // Method cbf.a:(Lcbe;)V
+     104: return
+     105: aload_0
+     106: getfield      #40                 // Field a:Lcao;
+     109: invokevirtual #84                 // Method cao.dM:()Lctp;
+     112: getstatic     #138                // Field b:Lbwz;
+     115: aload_0
+     116: getfield      #40                 // Field a:Lcao;
+     119: aload_1
+     120: invokevirtual #140                // Method hx.u:()I
+     123: i2d
+     124: aload_1
+     125: invokevirtual #143                // Method hx.v:()I
+     128: i2d
+     129: aload_1
+     130: invokevirtual #146                // Method hx.w:()I
+     133: i2d
+     134: invokevirtual #149                // Method ctp.a:(Lbwz;Lbml;DDD)Lcfi;
+     137: astore        5
+     139: aload         5
+     141: ifnull        161
+     144: aload_1
+     145: aload         5
+     147: invokevirtual #154                // Method cfi.dk:()Lelt;
+     150: invokevirtual #157                // Method hx.b:(Lir;)D
+     153: ldc2_w        #158                // double 512.0d
+     156: ddiv
+     157: dstore_3
+     158: goto          165
+     161: ldc2_w        #160                // double 64.0d
+     164: dstore_3
+     165: aload         5
+     167: ifnull        216
+     170: aload_0
+     171: getfield      #40                 // Field a:Lcao;
+     174: invokevirtual #120                // Method cao.eg:()Lauv;
+     177: dload_3
+     178: ldc2_w        #162                // double 2.0d
+     181: dadd
+     182: d2i
+     183: invokeinterface #125,  2          // InterfaceMethod auv.a:(I)I
+     188: ifeq          209
+     191: aload_0
+     192: getfield      #40                 // Field a:Lcao;
+     195: invokevirtual #120                // Method cao.eg:()Lauv;
+     198: iload_2
+     199: iconst_2
+     200: iadd
+     201: invokeinterface #125,  2          // InterfaceMethod auv.a:(I)I
+     206: ifne          216
+     209: aload_0
+     210: aload         5
+     212: invokevirtual #166                // Method a:(Lcfi;)V
+     215: return
+     216: aload_0
+     217: getfield      #73                 // Field c:Lefg;
+     220: ifnull        233
+     223: aload_0
+     224: getfield      #73                 // Field c:Lefg;
+     227: invokevirtual #80                 // Method efg.c:()Z
+     230: ifeq          372
+     233: aload_0
+     234: getfield      #40                 // Field a:Lcao;
+     237: invokevirtual #169                // Method cao.A:()I
+     240: istore_1
+     241: iload_1
+     242: istore_2
+     243: aload_0
+     244: getfield      #40                 // Field a:Lcao;
+     247: invokevirtual #120                // Method cao.eg:()Lauv;
+     250: bipush        8
+     252: invokeinterface #125,  2          // InterfaceMethod auv.a:(I)I
+     257: ifne          279
+     260: aload_0
+     261: aload_0
+     262: getfield      #171                // Field e:Z
+     265: ifne          272
+     268: iconst_1
+     269: goto          273
+     272: iconst_0
+     273: putfield      #171                // Field e:Z
+     276: iinc          2, 6
+     279: aload_0
+     280: getfield      #171                // Field e:Z
+     283: ifeq          292
+     286: iinc          2, 1
+     289: goto          295
+     292: iinc          2, -1
+     295: aload_0
+     296: getfield      #40                 // Field a:Lcao;
+     299: invokevirtual #111                // Method cao.gc:()Ldmt;
+     302: ifnull        318
+     305: aload_0
+     306: getfield      #40                 // Field a:Lcao;
+     309: invokevirtual #111                // Method cao.gc:()Ldmt;
+     312: invokevirtual #116                // Method dmt.e:()I
+     315: ifge          332
+     318: iinc          2, -12
+     321: iload_2
+     322: bipush        7
+     324: iand
+     325: istore_2
+     326: iinc          2, 12
+     329: goto          344
+     332: iload_2
+     333: bipush        12
+     335: irem
+     336: istore_2
+     337: iload_2
+     338: ifge          344
+     341: iinc          2, 12
+     344: aload_0
+     345: aload_0
+     346: getfield      #40                 // Field a:Lcao;
+     349: iload_1
+     350: iload_2
+     351: aconst_null
+     352: invokevirtual #174                // Method cao.a:(IILefe;)Lefg;
+     355: putfield      #73                 // Field c:Lefg;
+     358: aload_0
+     359: getfield      #73                 // Field c:Lefg;
+     362: ifnull        372
+     365: aload_0
+     366: getfield      #73                 // Field c:Lefg;
+     369: invokevirtual #176                // Method efg.a:()V
+     372: aload_0
+     373: invokevirtual #179                // Method k:()V
+     376: return
+
+  private void a(cfi);
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field a:Lcao;
+       4: invokevirtual #129                // Method cao.gb:()Lcbf;
+       7: getstatic     #190                // Field cbe.b:Lcbe;
+      10: invokevirtual #136                // Method cbf.a:(Lcbe;)V
+      13: aload_0
+      14: getfield      #40                 // Field a:Lcao;
+      17: invokevirtual #129                // Method cao.gb:()Lcbf;
+      20: getstatic     #190                // Field cbe.b:Lcbe;
+      23: invokevirtual #193                // Method cbf.b:(Lcbe;)Lcay;
+      26: checkcast     #195                // class cbc
+      29: aload_1
+      30: invokevirtual #198                // Method cbc.a:(Lbml;)V
+      33: return
+
+  private void k();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field c:Lefg;
+       4: ifnull        96
+       7: aload_0
+       8: getfield      #73                 // Field c:Lefg;
+      11: invokevirtual #80                 // Method efg.c:()Z
+      14: ifne          96
+      17: aload_0
+      18: getfield      #73                 // Field c:Lefg;
+      21: invokevirtual #200                // Method efg.g:()Lhx;
+      24: astore_1
+      25: aload_0
+      26: getfield      #73                 // Field c:Lefg;
+      29: invokevirtual #176                // Method efg.a:()V
+      32: aload_1
+      33: invokevirtual #203                // Method jb.u:()I
+      36: i2d
+      37: dstore_2
+      38: aload_1
+      39: invokevirtual #204                // Method jb.w:()I
+      42: i2d
+      43: dstore        4
+      45: aload_1
+      46: invokevirtual #205                // Method jb.v:()I
+      49: i2f
+      50: aload_0
+      51: getfield      #40                 // Field a:Lcao;
+      54: invokevirtual #120                // Method cao.eg:()Lauv;
+      57: invokeinterface #208,  1          // InterfaceMethod auv.i:()F
+      62: ldc           #209                // float 20.0f
+      64: fmul
+      65: fadd
+      66: f2d
+      67: dstore        6
+      69: dload         6
+      71: aload_1
+      72: invokevirtual #205                // Method jb.v:()I
+      75: i2d
+      76: dcmpg
+      77: iflt          45
+      80: aload_0
+      81: new           #54                 // class elt
+      84: dup
+      85: dload_2
+      86: dload         6
+      88: dload         4
+      90: invokespecial #212                // Method elt."<init>":(DDD)V
+      93: putfield      #38                 // Field d:Lelt;
+      96: return
+
+  public void a(can, hx, bkt, cfi);
+    Code:
+       0: aload         4
+       2: ifnull        23
+       5: aload_0
+       6: getfield      #40                 // Field a:Lcao;
+       9: aload         4
+      11: invokevirtual #217                // Method cao.c:(Lbml;)Z
+      14: ifeq          23
+      17: aload_0
+      18: aload         4
+      20: invokevirtual #166                // Method a:(Lcfi;)V
+      23: return
+
+  static {};
+    Code:
+       0: invokestatic  #225                // Method bwz.a:()Lbwz;
+       3: invokevirtual #227                // Method bwz.d:()Lbwz;
+       6: putstatic     #138                // Field b:Lbwz;
+       9: return
+}

@@ -1,0 +1,106 @@
+program #8049 on p1: 21.4 s
+--- output ---
+ATTEMPT_DIG Vec3 { x: 147, y: -32, z: 2239 }
+ATTEMPT_DIG Vec3 { x: 148, y: -32, z: 2239 }
+ATTEMPT_DIG Vec3 { x: 149, y: -32, z: 2239 }
+ATTEMPT_DIG Vec3 { x: 148, y: -32, z: 2238 }
+ATTEMPT_DIG Vec3 { x: 149, y: -32, z: 2238 }
+--- returned ---
+{
+ "issue": null,
+ "trace": [
+  [
+   "ISSUED_DIG_RETURN",
+   [
+    147,
+    -32,
+    2239
+   ],
+   true
+  ],
+  [
+   "ISSUED_DIG_RETURN",
+   [
+    148,
+    -32,
+    2239
+   ],
+   true
+  ],
+  [
+   "ISSUED_DIG_RETURN",
+   [
+    149,
+    -32,
+    2239
+   ],
+   true
+  ],
+  [
+   "ISSUED_DIG_RETURN",
+   [
+    148,
+    -32,
+    2238
+   ],
+   true
+  ],
+  [
+   "ISSUED_DIG_RETURN",
+   [
+    149,
+    -32,
+    2238
+   ],
+   true
+  ]
+ ],
+ "observedWood": 4,
+ "p": {
+  "x": 146.4722562112778,
+  "y": -36,
+  "z": 2241.554905967947
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "oak_planks",
+   4
+  ]
+ ],
+ "items": [
+  [
+   {
+    "x": 147.14746654563882,
+    "y": -33,
+    "z": 2238.420317294677
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 36,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 finite stance answer: 8017 only phase1 samples, min rootY65.694 and feet58 eye59.62 => vertical gap6.074 already >6; measured total6.291. Thus zeroattacks does NOT test parent damage path. At feet58 parent reach requires actual rootY<65.62 AND eyeXZ wit
+p3: hin root halfwidth8 (exact AABB gap<6). Need one bounded phase5/6/7 sitting window with root/min AABB gap, bossHP, cloudY/radius; no speculative ascent59/60. Roof alone cannot stop cloud/contact. If no sitting sample, low stance remains untested rather tha
+p3: n impossible.
+p3: P1 camp8042 upperchest actual STRING1+FEATHER6, no bow/arrows. I leave contents untouched; no physical rangedtest possible yet. Chest7,68,82 near camp6.5,67,82.4. If your selected ranged chain needs those existing inputs, ordinary delivery must be explicit
+p3: ly priced; no assumed receipt.
+p3: P1 YES actual8051 snow layers at5,67,80 and roof5,69,82/6,69,81 etc adjacent camp, no snowblock. Empty p3 needs one ordinary shovel; local wood/table present, I price <=4min first actual snowball and retained camp ending, then bounded projectile effect tes
+p3: t. No bulk delivery chain until acceptance.
+--- p1 now: (146.5, -36, 2241.6) in overworld, health 20/20, food 20/20, alive

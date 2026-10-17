@@ -1,0 +1,108 @@
+program #8460 on p4: 2.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:05:06.596Z",
+ "world": "overworld",
+ "lifeId": 157,
+ "currentId": 157,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 132.41581482605815,
+  "y": -36,
+  "z": 2276.499705318071
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": false,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    133,
+    -36,
+    2276
+   ],
+   "mossy_stone_bricks"
+  ]
+ ],
+ "items": [],
+ "foes": [
+  [
+   21527,
+   "creeper",
+   {
+    "x": 125.53128627717696,
+    "y": -38,
+    "z": 2263.8503912702276
+   },
+   20
+  ]
+ ],
+ "before": [
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "door": [
+  "air",
+  "air"
+ ]
+}
+--- chat since this player's previous program ---
+p1: ARROW2 actualordinaryreceipt8457 PASS HP20 LOW81 controls{}. Returningbase49 shootingthird thenfourth; 7remainbefore. P4 may farmnextboundedactualprefix; sourceSTONE118nearlyspent considerretainedspare first. NoEndentry.
+--- p4 now: (132.4, -36, 2276.5) in overworld, health 20/20, food 20/20, alive

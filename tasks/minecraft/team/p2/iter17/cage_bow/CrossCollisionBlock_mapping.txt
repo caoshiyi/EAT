@@ -1,0 +1,26 @@
+net.minecraft.world.level.block.CrossCollisionBlock -> cym:
+# {"fileName":"CrossCollisionBlock.java","id":"sourceFile"}
+    net.minecraft.world.level.block.state.properties.BooleanProperty NORTH -> a
+    net.minecraft.world.level.block.state.properties.BooleanProperty EAST -> b
+    net.minecraft.world.level.block.state.properties.BooleanProperty SOUTH -> c
+    net.minecraft.world.level.block.state.properties.BooleanProperty WEST -> d
+    net.minecraft.world.level.block.state.properties.BooleanProperty WATERLOGGED -> e
+    java.util.Map PROPERTY_BY_DIRECTION -> f
+    net.minecraft.world.phys.shapes.VoxelShape[] collisionShapeByIndex -> g
+    net.minecraft.world.phys.shapes.VoxelShape[] shapeByIndex -> h
+    it.unimi.dsi.fastutil.objects.Object2IntMap stateToIndex -> i
+    32:43:void <init>(float,float,float,float,float,net.minecraft.world.level.block.state.BlockBehaviour$Properties) -> <init>
+    com.mojang.serialization.MapCodec codec() -> a
+    49:85:net.minecraft.world.phys.shapes.VoxelShape[] makeShapes(float,float,float,float,float) -> a
+    90:90:boolean propagatesSkylightDown(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos) -> a_
+    95:95:net.minecraft.world.phys.shapes.VoxelShape getShape(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.phys.shapes.CollisionContext) -> a
+    100:100:net.minecraft.world.phys.shapes.VoxelShape getCollisionShape(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.phys.shapes.CollisionContext) -> b
+    104:104:int indexFor(net.minecraft.core.Direction) -> a
+    108:108:int getAABBIndex(net.minecraft.world.level.block.state.BlockState) -> g
+    128:131:net.minecraft.world.level.material.FluidState getFluidState(net.minecraft.world.level.block.state.BlockState) -> c_
+    136:136:boolean isPathfindable(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.level.pathfinder.PathComputationType) -> a
+    141:149:net.minecraft.world.level.block.state.BlockState rotate(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.block.Rotation) -> a
+    155:163:net.minecraft.world.level.block.state.BlockState mirror(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.block.Mirror) -> a
+    109:122:int lambda$getAABBIndex$1(net.minecraft.world.level.block.state.BlockState) -> h
+    28:28:boolean lambda$static$0(java.util.Map$Entry) -> a
+    23:28:void <clinit>() -> <clinit>

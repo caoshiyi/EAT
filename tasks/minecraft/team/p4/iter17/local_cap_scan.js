@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);const{Vec3}=require('vec3');let rows=[];for(let z=2242;z<=2245;z++){let row=[];for(let x=146;x<=160;x++)row.push([x,...[-37,-36,-35,-34].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]);rows.push([z,row])}return{p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),rows};

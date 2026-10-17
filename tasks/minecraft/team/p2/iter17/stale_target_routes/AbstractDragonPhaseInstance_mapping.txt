@@ -1,0 +1,14 @@
+net.minecraft.world.entity.boss.enderdragon.phases.AbstractDragonPhaseInstance -> caq:
+# {"fileName":"AbstractDragonPhaseInstance.java","id":"sourceFile"}
+    net.minecraft.world.entity.boss.enderdragon.EnderDragon dragon -> a
+    15:17:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    21:21:boolean isSitting() -> a
+    26:26:void doClientTick() -> b
+    30:30:void doServerTick() -> c
+    34:34:void onCrystalDestroyed(net.minecraft.world.entity.boss.enderdragon.EndCrystal,net.minecraft.core.BlockPos,net.minecraft.world.damagesource.DamageSource,net.minecraft.world.entity.player.Player) -> a
+    38:38:void begin() -> d
+    42:42:void end() -> e
+    46:46:float getFlySpeed() -> f
+    52:52:net.minecraft.world.phys.Vec3 getFlyTargetLocation() -> g
+    57:57:float onHurt(net.minecraft.world.damagesource.DamageSource,float) -> a
+    62:65:float getTurnSpeed() -> h

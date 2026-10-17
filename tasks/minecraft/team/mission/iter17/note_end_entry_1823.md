@@ -1,0 +1,7 @@
+# Iteration17 note end_entry_1823 — 2026-10-17T18:23:43.650301+00:00
+
+Actual8352 P1Endnative81.203,Y49,.5/HP20food20/BOWwear1/ARROW1/ST83/SW6/MOSS1, ground/lostfalse/issueNULL, **endingIssueplacementrefusal80,Y49,0/closedFALSE**. Actualarrivalandretainedkitaretrue; requestedlocalcapsuleclosurefailed, notprotectedendingproof. No damage/deathreported. Ownerselectsnextboundedoperation/actualendingfromfreshbody, no repeateddeliveryqualification or automaticstockbecauseoflabel. Earlierinitialcapgate correctedtoactualdoorordinaryinput whilepost-mining2retained; worldentrypassed, fullwhole-endingcapacitystillnotprovedbythatminimum. NoEndRANGEDshotyet.
+
+P3currentranged_stair_trial source skipsachievedcurrentnode andallowsretreatmovement throughcurrentcloud, removing8282exactsource trap; no actualcloudescapeproof fromread. Nextphysicalsixstepascent+immediatelowreturn distinctfromlaterbow/crystaleffect. P1soleEndoperator, P4OWonly.
+
+Source-restorationreadback:8342 restores FIVEborrowedcells asactualBASALT at141Y-36/-35/-34/-33,z2241 and140Y-34,z2241. 8345 restorationfield140,-34,2240 saysbasalt; P4chatlatercallsCOFF replacement, materialreportdisagreesbutfullgeometryclaimed. Preserveactualfielddifference, do notclaimunobservedmaterialchange. No rootpeeredit; ownerreconcileifsharedinterfaceaffected. Toolsourcewhole18:19→18:21:12MET3min, twofreshcraftcrossedlaterONEtoolmessage; no addedquota.

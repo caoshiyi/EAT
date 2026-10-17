@@ -1,0 +1,5 @@
+# Iteration17 note moving_target_1828 — 2026-10-17T18:28:41.790200+00:00
+
+Full8360 samples: firsttarget332 HP20/range8.565, next9.172→...→11.043 over~2.3s, attacksEMPTY, TARGET_RETAINED_ALIVE, retained149LOW/20HP. Callerarrow_adaptive.js DOESawaitgo(chosenstance); no missingroutebranchestablished. Itchoosesentityfrompredicted<2.7stance thenawaitsstancecut/move,equip,18ticksBEFOREfirstmeasuredsample. Selection-timeposition/range notlogged, so targetmovement/interveningpreparation is plausible but exactcauseunisolated. P4mustchangethis availabilityhypothesisafterequivalentzerodispatchresults, notcalllootfailure orassumeextraquantityfixesactiongate. Nextdecisiveobservation=actualselection/action geometryandtiming, ownerderivesmethod. No rootMinecraftstrategy/routeprescribed.
+
+OriginalONEadditionalARROW+portalissue18:27 MISSED, no packet/normalattack from8360. RetainedfirstARROWremainsP1Endinput. Continueauthorizedobjectivework, no taskstop orclockreset. CurrentP1base28Y49,z-20/HP20, localroofrepairs8362 consumedMossy+oneactualEndstone/retainedBOW+ARROW, notnewquarry. Rangedstairphysicalcontinuation/effectstillpending atlastsnapshot.

@@ -1,0 +1,25 @@
+net.minecraft.world.level.levelgen.Heightmap$Types -> doq$a:
+# {"fileName":"Heightmap.java","id":"sourceFile"}
+    net.minecraft.world.level.levelgen.Heightmap$Types WORLD_SURFACE_WG -> a
+    net.minecraft.world.level.levelgen.Heightmap$Types WORLD_SURFACE -> b
+    net.minecraft.world.level.levelgen.Heightmap$Types OCEAN_FLOOR_WG -> c
+    net.minecraft.world.level.levelgen.Heightmap$Types OCEAN_FLOOR -> d
+    net.minecraft.world.level.levelgen.Heightmap$Types MOTION_BLOCKING -> e
+    net.minecraft.world.level.levelgen.Heightmap$Types MOTION_BLOCKING_NO_LEAVES -> f
+    com.mojang.serialization.Codec CODEC -> g
+    java.lang.String serializationKey -> h
+    net.minecraft.world.level.levelgen.Heightmap$Usage usage -> i
+    java.util.function.Predicate isOpaque -> j
+    net.minecraft.world.level.levelgen.Heightmap$Types[] $VALUES -> k
+    36:36:net.minecraft.world.level.levelgen.Heightmap$Types[] values() -> values
+    36:36:net.minecraft.world.level.levelgen.Heightmap$Types valueOf(java.lang.String) -> valueOf
+    52:56:void <init>(java.lang.String,int,java.lang.String,net.minecraft.world.level.levelgen.Heightmap$Usage,java.util.function.Predicate) -> <init>
+    59:59:java.lang.String getSerializationKey() -> a
+    63:63:boolean sendToClient() -> b
+    67:67:boolean keepAfterWorldgen() -> d
+    71:71:java.util.function.Predicate isOpaque() -> e
+    76:76:java.lang.String getSerializedName() -> c
+    42:42:boolean lambda$static$1(net.minecraft.world.level.block.state.BlockState) -> a
+    41:41:boolean lambda$static$0(net.minecraft.world.level.block.state.BlockState) -> b
+    36:36:net.minecraft.world.level.levelgen.Heightmap$Types[] $values() -> f
+    36:46:void <clinit>() -> <clinit>

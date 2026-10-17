@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(35);return{p:bot.entity.position,hp:bot.health,food:bot.food,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.x>95).map(e=>[e.id,e.position,e.metadata]),clouds:Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud').map(e=>[e.position,e.metadata])};

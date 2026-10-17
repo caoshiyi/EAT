@@ -1,0 +1,74 @@
+Compiled from "SourceFile"
+public abstract class caq implements cay {
+  protected final cao a;
+
+  public caq(cao);
+    Code:
+       0: aload_0
+       1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #16                 // Field a:Lcao;
+       9: return
+
+  public boolean a();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public void b();
+    Code:
+       0: return
+
+  public void c();
+    Code:
+       0: return
+
+  public void a(can, hx, bkt, cfi);
+    Code:
+       0: return
+
+  public void d();
+    Code:
+       0: return
+
+  public void e();
+    Code:
+       0: return
+
+  public float f();
+    Code:
+       0: ldc           #36                 // float 0.6f
+       2: freturn
+
+  public elt g();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public float a(bkt, float);
+    Code:
+       0: fload_2
+       1: freturn
+
+  public float h();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field a:Lcao;
+       4: invokevirtual #46                 // Method cao.dp:()Lelt;
+       7: invokevirtual #51                 // Method elt.h:()D
+      10: d2f
+      11: fconst_1
+      12: fadd
+      13: fstore_1
+      14: fload_1
+      15: ldc           #52                 // float 40.0f
+      17: invokestatic  #58                 // Method java/lang/Math.min:(FF)F
+      20: fstore_2
+      21: ldc           #59                 // float 0.7f
+      23: fload_2
+      24: fdiv
+      25: fload_1
+      26: fdiv
+      27: freturn
+}

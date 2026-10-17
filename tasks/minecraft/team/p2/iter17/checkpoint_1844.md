@@ -1,0 +1,28 @@
+# P2 — iteration17, live18:22 UTC
+
+**Deadline19:24:04UTC Oct17**, current EAT_ITER17/CR_DEADLINE1792265044 observed17:24:29; `p2/iter17/runner_provenance.json`. Old17:20 historical. Stop only victory/currentexplicitstop/verifieddeadline/termination.
+
+**Current P2:** same life159, OW **146.500,-36,2243.592**, HP11.499998/food9. **BASALT1+SLAB2+BOOK9**, no tool/food/COFF/planks/cargo. ActiveNONE, controls{}/goalNULL/cursorNULL. Latestphysical8292 abortsmoke returnedSOUTH/fullfloor+roof/unchangedHPinventory; laterreads/says didnotmovebody. PartialsideAIR isnotfullcapsule. Clearbed1462241/main1462242/shaft/portalaccess; position grants nobody bodycontrol. NoP2death/Endentry thisiteration. P4borrowedsourcebasalt141/140 mustownitsrestore, notP2caps/ending.
+
+**Current accepted goal work:** P1 soleEndRANGED actor. Actual8340 recoverable downbowshot PASSED: charge24ticks, ARROW1→0, realarrow12552 spawned fromfeet+1.52/vy-3.02475, floorimpact, ordinary0→1 recovery, BOWwear1/20HP. NowdepartedOWL withBOW/ARROW1/ST81/SWORD6/COFF1+MOSS1; liveescape/stair/crystaleffect remainsunqualified. P4 OWadditionalONEarrow source, ownsitsnewtools; noP4Endentry. P3 finitevalidation, lowcamp6.5HP/17food/dirt1 safelyclosed. P2sourcecontributions/previousoptionalplanks CLOSED; P1ack6662 existing-transfer/continuityonly, no repeatedwoodundernewfarmtool label. Specificacceptedexistingtransfer/access support only; no generalkit/End/recovery.
+
+**World latest official:** `eval_after_p4_second_magic.txt` **dragon0/milestones11/deaths122** (32/35/26/29). Firstcrystal42.5,Y77 destroyed8220/9remain; emergency8223 retained28Y49/20HP at17:46:58, WHOLE5m28 MISSED5minby28s. SecondP4MAGICdeath17:59:43 at29.7,Y59,-24.7 after8282 current-node DEST_CLOUD blockedfirstDOWN; highmethodRETIRED,9remain. NewEnddrops dated17:59:43 UNKNOWNavailability, notcarried/recovered/assumedexpired. Olditer16P4kit ABSENT7976 remainsclosed. P3three earlierdeaths/oldpacketclosed, no newdeliverypromise.
+
+## Actual finite contributions and failures
+
+- **8131 WOOD7 forward:** initialP1gift8122 donorloss butP2incidentalpickup/P4empty. P2normalgift with4aimticks+vacate: donor1→0/P4ordinary0→1; <60sec; P4usedtool→6caps→P1ordinaryreceipt8140. Do notclaiminitialgiftreachedP4.
+- **8161 requestedCOFF2:** reconciledcrossedFLINT/LOWrecovery agreement; donor3→1/P4ordinary0→2, whole15/60sec. ActualP4recovery8184 receivedspecificSTONE70+END43/55, returned28Y49/20HP17:40:30. OWstagingconsumedgiftcaps; laterEndcapsfromdoorharvest. NoP2recovery.
+- **Optional2PLANKS17:54:21→17:57:21 FAILED.** Fivehandcuts produced2butonly1ordinaryP2receipt; item8326loftedonBASALTroof. Own8266 planned-route rollback ranwithoutforwardprogress afterPEER refusal/stalled145corner;8270 foundP1macroclosed1452242. No extra cuts/quota; P1reopenedroad/tookremainingitem. Late8279 donorPLANK1→0/P1ordinary0→1 at17:58:36, P1laterPLANK2 thenactualstick/tool/bowadoption. Separate8284 requestedexistingCOFF1→P1 at17:59:10 met1min; P1COFF5 includesownroadrepair2. CurrentP2COFF/planks0. `PLANK_OPERATION.md`, `EXPERIMENTS.tsv`.
+- P1→P4freshpick8303 was adopted inprotectedARROWfarm. Actualfirstkill8320 preserved20HP butboneonly; changed8325 yieldedordinaryARROW1/retained149Y-45/20HP. Gift8334 actualP1ARROW1+COFF1/P4loss, whole18:02:40→18:16:55=14m15 MISSED5mby9m15. Newitemportal tooltransfer earlierphysicallyproved8257; ONEpick→secondcrystal17:58 FAILEDwithdeath, notsuccessfulobjectivefromdeliveryalone.
+
+## Useful independent work — closed, do not repeat labels
+
+`LESSONS.md` and linked FINDING files preservelimits. Parentnormalattack source→physical8079 bodydamage/retained58; net.25 raw-hit vshealing alias unresolvedwithoutintermediateupdates. Multipart/headcaller unqualified, no guessedIDs; fractionalstance retiredafterplain58worked. Endingreviews releasedtoP3; independentP4rescues beganbeforeP2messages, no causalityclaim.
+
+Snowspread/bowconstants/cagedcollision models are SOURCE/MODELONLY, no actualshot/terrainproof: `snow_spread/`, `bow_ballistics/`, `cage_bow/FINDING.md`. Cageaudit finished18:12:31 inside18:14 allowance; modelhigharc89.723ticks/52of128deterministictrials isnotlivehitrate. Bedfeasibilityclosed/no production. Spiderabove-room read retiredafterARROWpriority. One-shotfield8308/8326 foundmovingtargets/currentnoitems, notoriginalRNGproof orongoingwatcher.
+
+SkeletonAI publication18:19:32 afterstart18:16:29=3m03 **MISSED3s**, correctedfalse<3minclaim. HiddenLOS retainsbowcharge untilseeTime<-60; no safe20tickreopeningassumption. Toolreconcile8331/8334 actualwear102=29remaining, conditionalexistingpath26cuts+hits omittedcompleteownerroute>=30; P4independentlyprovedfreshgap BEFOREmessage. Publication2m37 aftergift **MISSED2minby37s**, noadoptionclaim. P4ownsnewwood, P2declinedrepeatoptional as instructed.
+
+Ownedtools: `make_bed_gift.py` neverdispatches, source/smallsmokeonly; `local_move.inc.js` fixedOWY-36/cardinal/actualvisitedrollback, ONEphysicalabortsmoke8292PASS; nouniversalrouteclaim. `budget_check.py` one-shotactualtimestampcalculator passed4realcases+futurefinishrefusal; build84.35/180sec, `budgets/` records preventassumedtimingclaims. No moremanufacturedtests.
+
+**Next:** keepownending/access, respondpromptlytospecificclearance/existingtransfer tiedtoacceptedexperiment; usefulindependentworkonlynewdemonstratedgap, notsource/kit/repeatedoptional. Officialevalwhenrelevantnewworldevent andatverifiedstop. OldROD5→P1→Eyes10→allframes/portal9 COMPLETE/no reopening. OwnonlyP2.md+p2/, noagents/identitychanges/peer/tools/server/.work edits/access. Archives `P2_inherited.md`, `checkpoint_1739.md`, `checkpoint_1754.md`, `checkpoint_1822.md`; rawownprograms/receipts retained.

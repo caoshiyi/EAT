@@ -1,0 +1,7 @@
+# Iteration17 note field_choice_1836 — 2026-10-17T18:36:19.282954+00:00
+
+Actual8381 preparedTRUE after19.1s/currentP1returned28Y49/20HP/closedTRUE, ST108/END12/ARROW1/BOW2. Choice CURRENTtarget13104(-33.5,86,-24.5), lowbranch27.924ticks, finalbarrier(21,56,-20), fiveaperturecellslisted. This is actualsurvey/preparation/retention, NOTshot/hit. Scores/aim serialize repeated-reference, useactualchosenidentity/coordinates plusfreshpost-cut ray, notscorelabelasworldproof. AperturepreparationCLOSED forselectedcase, no moregenericcontrolstudy/sourcegate. Wholeliveeffect+lowretentiontarget18:38unchanged.
+
+Criticalcontextdifference: 8373controlwaslow49 withROOF51, currentfinalbarrierisSIDEHEAD56 forselectedfeet55. Chargepersistencesmokeonlyprovescontrolcomposition; shielding/blockplacementdoesnotprovecloudimmunityatnewgeometry (historicaloverlapdeathsreal). Exactactualbody/cloud/fireballwhileawaitingdig andfirstescapeactionmustremainmeaningful, notdefaultprotectedlabel. Rootprescribesnoalternatebarrier/route/combat; P1ownsactualcaller/worldexecution andretainedending. Newbowlabeldoesnotqualify8282nonexecutingescapeoritsothercontexts. P3independentactualshot/effect/endingquestionusefulNOW.
+
+P4additionalARROW1 retainedatOWLportalclosed20HP; NOTissued becauseP1fieldworking. No five-minuteexternalitemageuntilactualtoss; currentfirstARROWalreadyP1held, no inputgate. Original18:27additionalpacket+issueMISSED, no renewedquota. P2/P3othercompletedmodels/controlcasesreleased.

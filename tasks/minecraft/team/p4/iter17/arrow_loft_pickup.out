@@ -1,0 +1,576 @@
+program #8371 on p4: 14.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T18:30:16.029Z",
+ "world": "overworld",
+ "lifeId": 157,
+ "currentId": 157,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 149.60609324883134,
+  "y": -45,
+  "z": 2244.500382859198
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "arrow",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   46
+  ],
+  [
+   "stone_bricks",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "cobbled_deepslate",
+   16,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "ACTUAL_EXISTING_ARROW",
+   14453,
+   {
+    "x": 137.26095563739787,
+    "y": -41.5,
+    "z": 2246.99756163264
+   }
+  ],
+  [
+   "CUT",
+   [
+    148,
+    -44,
+    2244
+   ],
+   "basalt"
+  ],
+  [
+   "CUT",
+   [
+    148,
+    -45,
+    2244
+   ],
+   "basalt"
+  ],
+  [
+   "STEP",
+   [
+    148,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    147,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    146,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2245
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    144,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    143,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    142,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    141,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    140,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    139,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    138,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    137,
+    -42,
+    2247
+   ],
+   "stone_brick_slab"
+  ],
+  [
+   "CUT",
+   [
+    137,
+    -43,
+    2247
+   ],
+   "stone_bricks"
+  ],
+  [
+   "ORDINARY_EXISTING_ARROW",
+   1
+  ],
+  [
+   "CAP",
+   [
+    137,
+    -43,
+    2247
+   ]
+  ],
+  [
+   "CAP",
+   [
+    137,
+    -42,
+    2247
+   ]
+  ],
+  [
+   "STEP",
+   [
+    138,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    139,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    140,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    141,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    142,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    143,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    144,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2246
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2245
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    145,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    146,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    147,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    148,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    149,
+    -45,
+    2244
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    148,
+    -45,
+    2244
+   ]
+  ],
+  [
+   "CAP",
+   [
+    148,
+    -44,
+    2244
+   ]
+  ]
+ ],
+ "items": [
+  [
+   14892,
+   {
+    "x": 136.67589443470152,
+    "y": -41.5,
+    "z": 2247.875
+   },
+   "stone_brick_slab",
+   {
+    "present": true,
+    "itemId": 270,
+    "itemCount": 1
+   }
+  ]
+ ],
+ "foes": [
+  [
+   311,
+   "creeper",
+   {
+    "x": 149.83428616918263,
+    "y": -38,
+    "z": 2252.827186948367
+   },
+   20
+  ],
+  [
+   312,
+   "spider",
+   {
+    "x": 144.30000001192093,
+    "y": -36.89999997615814,
+    "z": 2246.699999988079
+   },
+   15
+  ],
+  [
+   313,
+   "zombie",
+   {
+    "x": 143.6998698960739,
+    "y": -39,
+    "z": 2248.4663773551297
+   },
+   20
+  ],
+  [
+   328,
+   "zombie",
+   {
+    "x": 135.28752107622685,
+    "y": -42,
+    "z": 2246.508945222412
+   },
+   20
+  ],
+  [
+   333,
+   "creeper",
+   {
+    "x": 143.96358136372467,
+    "y": -38.23367343902588,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   334,
+   "zombie",
+   {
+    "x": 138.29993444031933,
+    "y": -41.950000047683716,
+    "z": 2247.4974589192693
+   },
+   20
+  ],
+  [
+   335,
+   "zombie",
+   {
+    "x": 143.37590357593004,
+    "y": -39,
+    "z": 2246.3329265863713
+   },
+   20
+  ],
+  [
+   337,
+   "zombie",
+   {
+    "x": 141.3286459387956,
+    "y": -41,
+    "z": 2247.750439465046
+   },
+   20
+  ],
+  [
+   338,
+   "zombie",
+   {
+    "x": 144.69993504239204,
+    "y": -38,
+    "z": 2247.056347668171
+   },
+   20
+  ],
+  [
+   339,
+   "skeleton",
+   {
+    "x": 136.994798325908,
+    "y": -41,
+    "z": 2247.50226649143
+   },
+   20
+  ],
+  [
+   343,
+   "zombie",
+   {
+    "x": 142.2286975851047,
+    "y": -39.70329102873802,
+    "z": 2246.339533918722
+   },
+   20
+  ],
+  [
+   344,
+   "zombie",
+   {
+    "x": 143.0985898846757,
+    "y": -39.5,
+    "z": 2248.5915432770616
+   },
+   20
+  ],
+  [
+   12824,
+   "zombie",
+   {
+    "x": 149.74602667314042,
+    "y": -36,
+    "z": 2247.5343590680086
+   },
+   20
+  ]
+ ],
+ "retreatIssue": null,
+ "before": 0,
+ "arrow": 1,
+ "supports": [
+  [
+   {
+    "x": 137,
+    "y": -43,
+    "z": 2247
+   },
+   "stone_bricks",
+   "basalt"
+  ],
+  [
+   {
+    "x": 137,
+    "y": -42,
+    "z": 2247
+   },
+   "stone_brick_slab",
+   "basalt"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: Independent3min newfinal-combat question: exactLandingPhase rootheight target vsfountainheightmap, notanotherheadID/kit/source task. This wasnot inpeerstance records (onlyflight8079/phase1 samples). No input/entry/actions assigned; conditionalfuturelowerst
+p2: ance math needsactualP1perchroot beforeuse. Budgettimestamped p2/iter17/perch_landing/budget_start.json; no gateoncurrentstair/firstshot.
+p3: 8365 independently accepted: trialComplete and storedDryReturn true; all six UP nodes 27Y50→22Y55 and return28Y49 in the same program. HP20, currentCloud=false, closed=true, arrow1 untouched, ST102/caps12. This proves the actual route and retained low endi
+p3: ng without an overlapping cloud; it does not yet prove cloud escape or a crystal hit. No additional source/entry gate from this review.
+p2: Finalcombat sourcequestion answered (no currentinputgate): exactLandingPhase targets atBottomCenterOf(currentMOTION_BLOCKING_NO_LEAVES heightmap atpodium), cachedperphase; within1m switchesSITTING_SCANNING. IFactualfountainhighestsolid62, targetrootY63; lo
+p2: werunderbedrockfeet56 eye57.62 hasverticalgap5.38<6 whenactualroot<63.62. Floor58 meansfeet57cannotfitdirectlyunderit;56isgeometryonly. No actualperch/attack/access/cloudescape proof, no build/kit assigned. Recordforlaterclosingcombat, notanotherhigh60stan
+p2: ce fromflight-onlysamples.
+--- p4 now: (149.6, -45, 2244.5) in overworld, health 20/20, food 20/20, alive

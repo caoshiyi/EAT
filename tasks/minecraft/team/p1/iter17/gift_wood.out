@@ -1,0 +1,75 @@
+program #8122 on p1: 1.4 s
+--- output ---
+ATTEMPT_TOSS wooden_pickaxe 7
+--- returned ---
+{
+ "issue": null,
+ "trace": [
+  [
+   "ISSUED_TOSS_RETURN",
+   "wooden_pickaxe"
+  ]
+ ],
+ "donorBefore": 1,
+ "donorAfter": 0,
+ "p": {
+  "x": 144.4674129699921,
+  "y": -36,
+  "z": 2242.503216238583
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [
+  [
+   "cobbled_deepslate",
+   3,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   4
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ]
+ ],
+ "items": [
+  [
+   {
+    "x": 146.4063045282415,
+    "y": -36,
+    "z": 2243.8750052913942
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 816,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 7
+       }
+      }
+     }
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (144.5, -36, 2242.5) in overworld, health 20/20, food 20/20, alive

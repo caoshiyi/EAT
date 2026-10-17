@@ -1,0 +1,67 @@
+program #8111 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T17:31:57.463Z",
+ "issue": "START",
+ "lost": false,
+ "p": {
+  "x": 146.5,
+  "y": -36,
+  "z": 2241.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [],
+ "trace": [],
+ "clouds": [],
+ "dragon": [],
+ "items": [],
+ "retreatIssue": "LIFE_TIME",
+ "attack": null,
+ "destroyed": false,
+ "samples": [],
+ "dragonHistory": [
+  [
+   1792258283883,
+   171,
+   {
+    "x": 46.245850054490205,
+    "y": 74.23812212597772,
+    "z": 31.02913385629539
+   },
+   200,
+   0
+  ],
+  [
+   1792258286181,
+   171,
+   {
+    "x": 56.639404741990205,
+    "y": 75.33480181347772,
+    "z": 1.2161455750453882
+   },
+   200,
+   1
+  ],
+  [
+   1792258290033,
+   171,
+   {
+    "x": 43.955566851365205,
+    "y": 79.83699907910272,
+    "z": -11.046061456204612
+   },
+   200,
+   0
+  ]
+ ],
+ "crystals": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (146.5, -36, 2241.5) in overworld, health 20/20, food 20/20, alive

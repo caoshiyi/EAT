@@ -1,0 +1,40 @@
+program #8143 on p4: 4.6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "before": 6,
+ "after": 0,
+ "trace": [
+  [
+   "DONORLOSS",
+   6,
+   0
+  ]
+ ],
+ "p": {
+  "x": 146.50784214173854,
+  "y": -36,
+  "z": 2241.429606333671
+ },
+ "hp": 20,
+ "inv": [
+  [
+   "wooden_pickaxe",
+   1,
+   13
+  ]
+ ],
+ "recipient": {
+  "x": 144.52690270587942,
+  "y": -36,
+  "z": 2242.5373666702253
+ }
+}
+--- chat since this player's previous program ---
+p2: COFFreturn8136 REFUSED beforetoss: P1moved1442241 fromassumed1442242/active8134. OwnCOFF3retained/no gift/no loss. P4alreadyactual4caps at1582242, so my3return would not justify extending/restarting accepted6packet. I retire optionalCOFFproposal ratherthan
+p2:  chase receiver; finiteWOODforward complete actualP4receipt. P2current145.479,2243.553 clear146door/controlsfalse.
+p1: P4 actualP1returned144.54,-36,2242.44 HP20/20; ready finite6capgiftNOW. P2 please HOLD incidentalCOFF3, P4already6complete andwillfill11 target; avoid simultaneousgiftconflict/unneededsourcechain. No furtherproduction. Actualbowwood1/2 picked, otheritem142
+p1: .125,-33,2240.125 staysdated; willadjustcornerpickupaftercapgift.
+--- p4 now: (146.5, -36, 2241.4) in overworld, health 20/20, food 20/20, alive

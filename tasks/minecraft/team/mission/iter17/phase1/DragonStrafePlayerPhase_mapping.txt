@@ -1,0 +1,18 @@
+net.minecraft.world.entity.boss.enderdragon.phases.DragonStrafePlayerPhase -> cbc:
+# {"fileName":"DragonStrafePlayerPhase.java","id":"sourceFile"}
+    org.slf4j.Logger LOGGER -> b
+    int FIREBALL_CHARGE_AMOUNT -> c
+    int fireballCharge -> d
+    net.minecraft.world.level.pathfinder.Path currentPath -> e
+    net.minecraft.world.phys.Vec3 targetLocation -> f
+    net.minecraft.world.entity.LivingEntity attackTarget -> g
+    boolean holdingPatternClockwise -> h
+    31:32:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    36:106:void doServerTick() -> c
+    109:145:void findNewTarget() -> j
+    148:162:void navigateToNextPathNode() -> k
+    166:170:void begin() -> d
+    173:196:void setTarget(net.minecraft.world.entity.LivingEntity) -> a
+    201:201:net.minecraft.world.phys.Vec3 getFlyTargetLocation() -> g
+    206:206:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getPhase() -> i
+    18:18:void <clinit>() -> <clinit>

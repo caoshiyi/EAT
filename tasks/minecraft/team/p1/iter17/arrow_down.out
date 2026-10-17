@@ -1,0 +1,353 @@
+program #8216 on p1: 34.1 s
+--- output ---
+ATTEMPT_DIG [ 149, -37, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -38, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -39, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -40, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -41, 2244 ] cobbled_deepslate
+ATTEMPT_DIG [ 149, -42, 2244 ] deepslate
+ATTEMPT_DIG [ 149, -43, 2244 ] deepslate
+ATTEMPT_DIG [ 149, -44, 2244 ] deepslate
+ATTEMPT_DIG [ 149, -45, 2244 ] deepslate
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "p": {
+  "x": 149.56295160462048,
+  "y": -45,
+  "z": 2244.500818437568
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "trace": [
+  [
+   "OBSERVED_PLACE",
+   [
+    148,
+    -36,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    148,
+    -35,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -37,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -35,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -37,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -38,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -36,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -38,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -39,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -37,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -39,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -38,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -40,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -39,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -41,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -42,
+    2244
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -42,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -43,
+    2244
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -43,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -44,
+    2244
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -42,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -44,
+    "z": 2244.500818437568
+   },
+   20
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -45,
+    2244
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -43,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_DESCENT",
+   {
+    "x": 149.56295160462048,
+    "y": -45,
+    "z": 2244.500818437568
+   },
+   20
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   42
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P3 owns finite firstcrystal resultacceptance; avoidduplicatewatcher: P2endingreview released. Actual8207 attackNULL/destroyedFALSE/all10crystals retained; SHIELD_RAYS allENDSTONE, retreatstuck39.3Y68. P4independentlystarted8212 emergency BEFOREmy8214 messa
+p2: ge, statusalready28Y49.8/HP20. No claimmyadvicecausedrescue. SourcegetSeenPercent seesENDSTONEtoo BEFOREblockfinalization; allENDSTONEfirsthits alone do notdisprove underlyingobsidian. Actualtop38.5018,Y71,z.4461, target42.5,77,.5; P4owns revisedshieldtest
+p2: .
+p3: P4 finiteactual8207 observation: SHIELD_RAYS were issued from lastASCENT38.502,Y71,z.446 (not returned39.3,Y68 afterfailedretreat), attackNULL/destroyedFALSE/10crystalsstilllisted. All27 FIRSThitsENDSTONE establishes foregroundendstone, NOT absence of back
+p3: ingobsidian; do not addheight/stock solely fromthatlabel. Minimum nextdecision observation: for same27segments, skipforeground-only rayhits to see actualobsidian/bedrock intersection beforecrystal. 8212 independentlycompleted28Y49/HP20; earlierretreatIssue
+p3:  notretainedending.
+p4: 8207 reached71/fullHP butZEROattack: strictshieldfirsthitENDSTONE rejected (ownroof beforeobsidian, requires raymatcher resistantblocks). Returnblockedat68 byfutureloopfloor actingtargetlowceiling; IMMEDIATE8212 mined7specificdescentceilings→28Y49/full20HP
+p4: . No death/noeffect yet. Newhighcloud71.777 radius6.86 seen; no highidle. Changed retrywithinoriginal17:46:30: lowerfinalstance39Y70 actualr5.74, preflightcurrentcloud+toolbudget, raymatcherOBSIDIAN/BEDROCK throughfragilecaps, descentclearq+2 beforestepdow
+p4: n. No newsourcequota.
+--- p1 now: (149.6, -45, 2244.5) in overworld, health 20/20, food 20/20, alive

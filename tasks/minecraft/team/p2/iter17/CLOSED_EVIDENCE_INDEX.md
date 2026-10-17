@@ -1,0 +1,35 @@
+# P2 closed evidence index — iteration17, 18:58UTC
+
+All entries below are completed evidence, not new assignments or gates. Reuse relevant facts; verify current body/world and the exact beneficiary before any action. Source/model conclusions and physical receipts are deliberately distinguished. Current assignment/body/deadline live in ../../P2.md. Official evaluator alone scores dragon victory.
+
+| Current question | Saved evidence | What it establishes / limit |
+|---|---|---|
+| Normal interaction reach / wall attacks | [parent_dispatch/FINDING.md](parent_dispatch/FINDING.md) | Matched public handler: actual eye→target AABB strictly<6, no block-LOS test; ordinary tracked parent dispatch. Physical8079 dragon body HP decrement, not yet Skeleton3..5.5 proof. No raw packets/synthetic IDs. |
+| What net dragon damage means | [HEALING_ALIAS.md](HEALING_ALIAS.md) | 10tick observation can combine rawhit and1HP heal. Net.25 is not measured rawdamage. Do not promise per-hit damage from a sampled window. |
+| Head IDs / multipart targeting | [head_parts/FINDING.md](head_parts/FINDING.md) | No qualified normal synthetic-part caller. CLOSED, do not guess IDs or rebuild dispatcher. |
+| Lower landing root / fit | [perch_landing/FINDING.md](perch_landing/FINDING.md) | Source target is bottom-centre of highest motion-blocking podium column, cached perphase. IFtop62 thenroot63; feet56 fits belowfloor58/eye57.62 gap5.38. Actual root, terrain, phase, access and retained ending UNQUALIFIED. |
+| Does a low player prevent perching? | [perch_availability/FINDING.md](perch_availability/FINDING.md) | No: pathDONE landing lottery runs BEFOREnearestplayer.1/(crystals+3) perdecision, nottick/time guarantee. Later scan range20/absY<=10/LOS can fail; no actualperch or safewindow proof. |
+| Ordinary bow flight constants | [bow_ballistics/FINDING.md](bow_ballistics/FINDING.md) | Exact public fullcharge20ticks/speed3/drag.99/gravity.050000000745; fixtures passed. Source/free-space math is not terrain or livehit proof. |
+| Cage apertures / long high arc | [cage_bow/FINDING.md](cage_bow/FINDING.md) | Exact bar shapes/collider and arrow inflation; deterministic sampled model only.89.723tick candidate NOT liveprobability or safe pose. P1 actuallib110tick cap alreadycorrect; no85tick repair request. |
+| Snowball random spread | [snow_spread/FINDING.md](snow_spread/FINDING.md) | Triangle-noise envelope plus shooter velocity matters. Model fixtures, no actual clearpath/hitrate proof. |
+| Hidden skeleton bow charge | [skeleton_bow_ai/FINDING.md](skeleton_bow_ai/FINDING.md) | LOS loss need<-60seeTime tostopbowuse. Reopening is not automatically a fresh20tick grace. Publication183sec MISSED180by3. |
+| Tool price before extra source | [TOOL_RECONCILE.md](TOOL_RECONCILE.md) | Actual remaining29 vs complete farm route>=30; conditional26 lowerbound omitted ownerpath. Actualgap valid; P4 independentlypriced beforeP2 message. Publication157sec MISSED120by37. |
+| Bed combat feasibility | [bed_feasibility/FINDING.md](bed_feasibility/FINDING.md) | Inputs and actual cover/contact unqualified; source maxblast is not a one-perch kill. Sitting arrows ignored; sitting accumulated damage threshold causes takeoff. CLOSED/no production. |
+| Optional planks and rollback failure | [PLANK_OPERATION.md](PLANK_OPERATION.md) | Original2PLANKS failedwhole17:57:21. Blind planned rollback bug, laterP1closedroad. P2deliveredonly1lateprefix; P1ownedsecondpickup. Actualvisited rollback supersedes blindpath. |
+| Finite existing-cargo courier | [COURIER_READINESS_CLOSED.md](COURIER_READINESS_CLOSED.md) | No packet by18:49 cutoff; no portaltrip, safeSOUTH. Dependency failure, no RNGinference or renewal. Prepared58nodeprogram neverused. |
+| Joint spawn clearance | [FINITE_YIELD_CLOSED.md](FINITE_YIELD_CLOSED.md) | 47nodesOUT/ownyield passed; P4near all21samples, pairfarTicks0. Hypothesis UNTESTED.18newIDs elsewhere/none within24 farm; initial0 report corrected. Get actualpartnerREADY beforemoving. |
+| Canonical arena result reader | [RECEIPT_TOOL.md](RECEIPT_TOOL.md) | One-shot saved-response parser/exactheaders/reportedfields/fullraw; rejects missing/truncated. Actual8393/8405/8418 verified. Not worldscore or independent success. |
+| Whole budgets / small tool validation | [BUDGET_TOOL.md](BUDGET_TOOL.md) | Actual finish must include publication. Future-end refusal and fourrealcases checked. No manual early within-budget claim. |
+| Local physical movement scope | [LOCAL_MOVE_TOOL.md](LOCAL_MOVE_TOOL.md) | OWY-36 cardinal actualvisitedrollback. Oneabortsmoke8292 plusactual2cellreceipt/cleanup and47nodeOUT+return8423. No universalroute/cloudescape proof. |
+
+Physical shared outcomes: WOOD7forward8131 and COFF2gift8161 had donor+recipient effects. P1arrow/pick secondpacket8390→8393 canonical ordinaryreceipt and safe81 retention in SECOND_ARROW_RECEIPT.json. P1 firsttwo RANGED shots8383/8418 actually destroyedtargets9→8→7 and returnedfullLOW49; FIRST_RANGED_PROOF.json and SECOND_RANGED_PROOF.json. Neither inventory gains nor crystalcount is dragon victory. Official eval_second_ranged.txt18:54:43 dragon0/11/deaths122.
+
+Current source production remains P4's agency. Bone20hits killed339 at18:57 reported actualARROW20744 drop; NOT ordinarypickup/delivery yet. P2source/rod-delivery/activation CLOSED, no tool/wood restock, Endentry or corpse job. No repeated optional work under new names.
+
+Cloud creation distinction: [perch_cloud/FINDING.md](perch_cloud/FINDING.md) (155.45/180sec inclpublication). Perchedflame head-outwardcolumn/firstnonAIR+1 differsfromflyingfireball which canrelocatecloudtofirsteligibleLivingfeet withinexpandedAABB+distance<4/noLOS. No actualperch/build/cloudsafetyproof.
+
+Additional closed objective interpretations: [REMAINING_CRYSTAL_LEDGER.md](REMAINING_CRYSTAL_LEDGER.md) completeinitial10 minusconfirmedremovals/deducedpositions, no oldIDs/automaticammoquota; [COMBAT_CYCLE_EXAMPLE.md](COMBAT_CYCLE_EXAMPLE.md) positivehit vsheal/takeoffcycle conditionalarithmetic; [PERCH_HEAL_CANDIDATES.md](PERCH_HEAL_CANDIDATES.md) phase-specificexpandedAABBpotentialcandidates atCONDITIONALroot63. These arenotfreshperch/healing/safetyproof. Actualthird/fourth8461/8468→7→6→5 withfullLOW49ending: THIRD_FOURTH_RANGED_PROOF.json. Latestboss8468 HP200phase1, notvictory.
+
+Currentphase1actualquestion answered toP3: [phase1_liveness/FINDING.md](phase1_liveness/FINDING.md),151.71/180sec. Strafe1 exitsitsdoServerTick onlynulltarget/fireballspawn; no timeout/pathDONElanding. Actualtarget/LOS/chargeUNKNOWN. EarlierHoldinglottery conditional remainscorrectbutnotapplicablewhile1. No exposedpeek/death/probe assigned.
+
+P1specificstale-target clears: [stale_target_routes/FINDING.md](stale_target_routes/FINDING.md),131.02/180sec. CurrentStrafe inheritsno-opcrystalevent; Holdingcallbacksetsphase+targetonlywhenHoldingcurrent. Noalive/removedtest; samephasephaseManagerrequestdoesnotbegin/clear. ActualtargetidentityUNOBSERVED; no deadspot/recovery/unsafepeekprescription. Actual8497min196.25→ending200 shows contactdoesnotestablishretaineddamage.

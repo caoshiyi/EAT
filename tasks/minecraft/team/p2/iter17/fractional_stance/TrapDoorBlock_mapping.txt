@@ -1,0 +1,32 @@
+net.minecraft.world.level.block.TrapDoorBlock -> dfc:
+# {"fileName":"TrapDoorBlock.java","id":"sourceFile"}
+    com.mojang.serialization.MapCodec CODEC -> a
+    net.minecraft.world.level.block.state.properties.BooleanProperty OPEN -> b
+    net.minecraft.world.level.block.state.properties.EnumProperty HALF -> c
+    net.minecraft.world.level.block.state.properties.BooleanProperty POWERED -> d
+    net.minecraft.world.level.block.state.properties.BooleanProperty WATERLOGGED -> e
+    int AABB_THICKNESS -> f
+    net.minecraft.world.phys.shapes.VoxelShape EAST_OPEN_AABB -> g
+    net.minecraft.world.phys.shapes.VoxelShape WEST_OPEN_AABB -> h
+    net.minecraft.world.phys.shapes.VoxelShape SOUTH_OPEN_AABB -> i
+    net.minecraft.world.phys.shapes.VoxelShape NORTH_OPEN_AABB -> j
+    net.minecraft.world.phys.shapes.VoxelShape BOTTOM_AABB -> k
+    net.minecraft.world.phys.shapes.VoxelShape TOP_AABB -> l
+    net.minecraft.world.level.block.state.properties.BlockSetType type -> m
+    44:44:com.mojang.serialization.MapCodec codec() -> a
+    63:66:void <init>(net.minecraft.world.level.block.state.properties.BlockSetType,net.minecraft.world.level.block.state.BlockBehaviour$Properties) -> <init>
+    70:83:net.minecraft.world.phys.shapes.VoxelShape getShape(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.phys.shapes.CollisionContext) -> a
+    89:97:boolean isPathfindable(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.level.pathfinder.PathComputationType) -> a
+    103:108:net.minecraft.world.InteractionResult use(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.Level,net.minecraft.core.BlockPos,net.minecraft.world.entity.player.Player,net.minecraft.world.InteractionHand,net.minecraft.world.phys.BlockHitResult) -> a
+    113:117:void onExplosionHit(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.Level,net.minecraft.core.BlockPos,net.minecraft.world.level.Explosion,java.util.function.BiConsumer) -> a
+    120:128:void toggle(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.Level,net.minecraft.core.BlockPos,net.minecraft.world.entity.player.Player) -> b
+    131:133:void playSound(net.minecraft.world.entity.player.Player,net.minecraft.world.level.Level,net.minecraft.core.BlockPos,boolean) -> a
+    137:153:void neighborChanged(net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.Level,net.minecraft.core.BlockPos,net.minecraft.world.level.block.Block,net.minecraft.core.BlockPos,boolean) -> a
+    157:169:net.minecraft.world.level.block.state.BlockState getStateForPlacement(net.minecraft.world.item.context.BlockPlaceContext) -> a
+    174:175:void createBlockStateDefinition(net.minecraft.world.level.block.state.StateDefinition$Builder) -> a
+    179:182:net.minecraft.world.level.material.FluidState getFluidState(net.minecraft.world.level.block.state.BlockState) -> c_
+    187:191:net.minecraft.world.level.block.state.BlockState updateShape(net.minecraft.world.level.block.state.BlockState,net.minecraft.core.Direction,net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.LevelAccessor,net.minecraft.core.BlockPos,net.minecraft.core.BlockPos) -> a
+    195:195:net.minecraft.world.level.block.state.properties.BlockSetType getType() -> g
+    37:40:com.mojang.datafixers.kinds.App lambda$static$1(com.mojang.serialization.codecs.RecordCodecBuilder$Instance) -> a
+    38:38:net.minecraft.world.level.block.state.properties.BlockSetType lambda$static$0(net.minecraft.world.level.block.TrapDoorBlock) -> a
+    37:58:void <clinit>() -> <clinit>

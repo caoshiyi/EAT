@@ -1,0 +1,57 @@
+program #8087 on p1: 6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "EXACT_MATERIAL_(151, -35, 2244)_mossy_stone_bricks",
+ "cuts": 2,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    150,
+    -35,
+    2244
+   ],
+   1
+  ],
+  [
+   "WORLD_CUT",
+   [
+    150,
+    -36,
+    2244
+   ],
+   2
+  ]
+ ],
+ "p": {
+  "x": 150.59273564273818,
+  "y": -36,
+  "z": 2244.499442515401
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "cobbled_deepslate",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   7
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   2
+  ]
+ ],
+ "cursor": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (150.6, -36, 2244.5) in overworld, health 20/20, food 20/20, alive

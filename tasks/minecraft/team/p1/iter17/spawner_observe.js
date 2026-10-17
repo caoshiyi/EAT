@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const ps=bot.findBlocks({matching:bot.registry.blocksByName.spawner.id,maxDistance:96,count:12});return{p:bot.entity.position,spawners:ps.map(q=>{const b=bot.blockAt(q);return{p:q,properties:b.getProperties(),entity:b.entity,nbt:b.nbt}}),arrows:bot.inventory.items().filter(i=>i.name==='arrow').map(i=>[i.count])};

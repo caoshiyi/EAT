@@ -1,0 +1,221 @@
+Compiled from "SourceFile"
+public final class doq$a extends java.lang.Enum<doq$a> implements avk {
+  public static final doq$a a;
+
+  public static final doq$a b;
+
+  public static final doq$a c;
+
+  public static final doq$a d;
+
+  public static final doq$a e;
+
+  public static final doq$a f;
+
+  public static final com.mojang.serialization.Codec<doq$a> g;
+
+  private final java.lang.String h;
+
+  private final doq$b i;
+
+  private final java.util.function.Predicate<djh> j;
+
+  private static final doq$a[] k;
+
+  public static doq$a[] values();
+    Code:
+       0: getstatic     #42                 // Field k:[Ldoq$a;
+       3: invokevirtual #47                 // Method "[Ldoq$a;".clone:()Ljava/lang/Object;
+       6: checkcast     #43                 // class "[Ldoq$a;"
+       9: areturn
+
+  public static doq$a valueOf(java.lang.String);
+    Code:
+       0: ldc           #2                  // class doq$a
+       2: aload_0
+       3: invokestatic  #52                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #2                  // class doq$a
+       9: areturn
+
+  private doq$a(java.lang.String, doq$b, java.util.function.Predicate<djh>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #59                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: aload_3
+       8: putfield      #61                 // Field h:Ljava/lang/String;
+      11: aload_0
+      12: aload         4
+      14: putfield      #63                 // Field i:Ldoq$b;
+      17: aload_0
+      18: aload         5
+      20: putfield      #65                 // Field j:Ljava/util/function/Predicate;
+      23: return
+
+  public java.lang.String a();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field h:Ljava/lang/String;
+       4: areturn
+
+  public boolean b();
+    Code:
+       0: aload_0
+       1: getfield      #63                 // Field i:Ldoq$b;
+       4: getstatic     #72                 // Field doq$b.c:Ldoq$b;
+       7: if_acmpne     14
+      10: iconst_1
+      11: goto          15
+      14: iconst_0
+      15: ireturn
+
+  public boolean d();
+    Code:
+       0: aload_0
+       1: getfield      #63                 // Field i:Ldoq$b;
+       4: getstatic     #74                 // Field doq$b.a:Ldoq$b;
+       7: if_acmpeq     14
+      10: iconst_1
+      11: goto          15
+      14: iconst_0
+      15: ireturn
+
+  public java.util.function.Predicate<djh> e();
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field j:Ljava/util/function/Predicate;
+       4: areturn
+
+  public java.lang.String c();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field h:Ljava/lang/String;
+       4: areturn
+
+  private static boolean a(djh);
+    Code:
+       0: aload_0
+       1: invokevirtual #81                 // Method djh.d:()Z
+       4: ifne          17
+       7: aload_0
+       8: invokevirtual #85                 // Method djh.u:()Leer;
+      11: invokevirtual #89                 // Method eer.c:()Z
+      14: ifne          31
+      17: aload_0
+      18: invokevirtual #92                 // Method djh.b:()Lcwq;
+      21: instanceof    #94                 // class daz
+      24: ifne          31
+      27: iconst_1
+      28: goto          32
+      31: iconst_0
+      32: ireturn
+
+  private static boolean b(djh);
+    Code:
+       0: aload_0
+       1: invokevirtual #81                 // Method djh.d:()Z
+       4: ifne          17
+       7: aload_0
+       8: invokevirtual #85                 // Method djh.u:()Leer;
+      11: invokevirtual #89                 // Method eer.c:()Z
+      14: ifne          21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  private static doq$a[] f();
+    Code:
+       0: bipush        6
+       2: anewarray     #2                  // class doq$a
+       5: dup
+       6: iconst_0
+       7: getstatic     #97                 // Field a:Ldoq$a;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #99                 // Field b:Ldoq$a;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #101                // Field c:Ldoq$a;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #103                // Field d:Ldoq$a;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #105                // Field e:Ldoq$a;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #107                // Field f:Ldoq$a;
+      40: aastore
+      41: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class doq$a
+       3: dup
+       4: ldc           #111                // String WORLD_SURFACE_WG
+       6: iconst_0
+       7: ldc           #111                // String WORLD_SURFACE_WG
+       9: getstatic     #74                 // Field doq$b.a:Ldoq$b;
+      12: getstatic     #113                // Field doq.b:Ljava/util/function/Predicate;
+      15: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+      18: putstatic     #97                 // Field a:Ldoq$a;
+      21: new           #2                  // class doq$a
+      24: dup
+      25: ldc           #117                // String WORLD_SURFACE
+      27: iconst_1
+      28: ldc           #117                // String WORLD_SURFACE
+      30: getstatic     #72                 // Field doq$b.c:Ldoq$b;
+      33: getstatic     #113                // Field doq.b:Ljava/util/function/Predicate;
+      36: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+      39: putstatic     #99                 // Field b:Ldoq$a;
+      42: new           #2                  // class doq$a
+      45: dup
+      46: ldc           #119                // String OCEAN_FLOOR_WG
+      48: iconst_2
+      49: ldc           #119                // String OCEAN_FLOOR_WG
+      51: getstatic     #74                 // Field doq$b.a:Ldoq$b;
+      54: getstatic     #121                // Field doq.c:Ljava/util/function/Predicate;
+      57: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+      60: putstatic     #101                // Field c:Ldoq$a;
+      63: new           #2                  // class doq$a
+      66: dup
+      67: ldc           #123                // String OCEAN_FLOOR
+      69: iconst_3
+      70: ldc           #123                // String OCEAN_FLOOR
+      72: getstatic     #125                // Field doq$b.b:Ldoq$b;
+      75: getstatic     #121                // Field doq.c:Ljava/util/function/Predicate;
+      78: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+      81: putstatic     #103                // Field d:Ldoq$a;
+      84: new           #2                  // class doq$a
+      87: dup
+      88: ldc           #127                // String MOTION_BLOCKING
+      90: iconst_4
+      91: ldc           #127                // String MOTION_BLOCKING
+      93: getstatic     #72                 // Field doq$b.c:Ldoq$b;
+      96: invokedynamic #143,  0            // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+     101: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+     104: putstatic     #105                // Field e:Ldoq$a;
+     107: new           #2                  // class doq$a
+     110: dup
+     111: ldc           #145                // String MOTION_BLOCKING_NO_LEAVES
+     113: iconst_5
+     114: ldc           #145                // String MOTION_BLOCKING_NO_LEAVES
+     116: getstatic     #125                // Field doq$b.b:Ldoq$b;
+     119: invokedynamic #149,  0            // InvokeDynamic #1:test:()Ljava/util/function/Predicate;
+     124: invokespecial #115                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Ldoq$b;Ljava/util/function/Predicate;)V
+     127: putstatic     #107                // Field f:Ldoq$a;
+     130: invokestatic  #151                // Method f:()[Ldoq$a;
+     133: putstatic     #42                 // Field k:[Ldoq$a;
+     136: invokedynamic #160,  0            // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+     141: invokestatic  #163                // InterfaceMethod avk.a:(Ljava/util/function/Supplier;)Lavk$a;
+     144: putstatic     #165                // Field g:Lcom/mojang/serialization/Codec;
+     147: return
+}

@@ -1,0 +1,7 @@
+# Iteration17 note real_drop_1858 — 2026-10-17T18:58:49.612335+00:00
+
+Actual8426 BONEtool physicalPASS:20normalhits each1damage onCURRENT339, killed/retainedclosed149Y-41/full20HP, only4newpickuses (93→97). RequestedinventoryARROW0 DOESNOTmeanzerodrop: fullitems/8429 freshscene **entity20744 ARROWcount2 at142.25499,Y-40.5,z2247.59786**, boneentity20745 count2. Kill/dropbirth~18:56:14 (lastattack18:56:13.986), loadedexpiry~19:01:14estimate, NOTresetbyinspection. Specific TWOactualarrowscanserveP1partialrequest, notyetcarried/delivered. No morekill/sourcequota while actualdropadoption unresolved.
+
+8431 pickupattempt18:57:19→18:57:34 refusedSIDE_ROOT141,-42,2246/retainedclosed149Y-41/HP20/pick104/COFF7. This is actualaccess/placement-supportgate, notRNG/noarrow/impossibility. P4owns changedlocaladoption/ordinarydelta/retainedending fromfreshdrop, notrootmethod. OriginalmaxTWO-kill/FOURcap hadfirstzeroarrowthenactual2drop, quantityneverpromised4. Continuedagingclockcritical; additionalworldreadnotrenewal.
+
+P2yield8423 closed18:56:06 withbothfarTicks0: hypothesisUNTESTED, notnaturalspawnfailure. 18newtrackedIDselsewhere but0within24ofbothfarmcentres corrected676?; fieldcoverage/range matters. Pairproposalneverjointlyarmed/P4nearfield, notclaimoneownerbrokeafullyagreedwindow. No renewal, P2safeSOUTH/11.5HP/inventoryunchanged. Futurecoordinationmustuseactualcompatibleparticipantcondition/ACK, notoneawaytimer.

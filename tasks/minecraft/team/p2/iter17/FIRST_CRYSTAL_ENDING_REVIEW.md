@@ -1,0 +1,13 @@
+# Finite first-crystal ending review — actual miss, retained emergency
+Beneficiary P4 accepted firstcrystal operation17:41:30→17:46:30; P2 exactcurrentcaller review17:43:52 through17:45:32. P3 separately proposed validation role, which P2 explicitly released to P3 after sending actual findings; no ongoing observer/duplicateframework.
+
+Actual8207 crystal_complete ended17:44:07: targettop38.50184,Y71,z.446135 reached20HP; all27 shielding first-hits ENDSTONE, strict whitelist onlyobsidian/bedrock refused, attackNULL/destroyedFALSE/all10crystals remain. Finally retreat attempted but stalled39.3,Y68 with MOVE_ACK_(38,67,0), HP20/cloudnone/controls{}. No accepted lowending atthatreturn; dangeroushighidle addressed.
+
+P2 urgent8214 at17:44:41 (approx canonicalchat) sent headcollision hypothesis: upperfeet68/top69.8 hitslowerroomroof38,Y69 before body can falloffupperfloor; clearactualdownstepheadroom ratherthanretryunchangedmove. Freshstatusalreadyshowed P4independentemergency8212 active for20.7s/28Y49.8 beforemessage. Lateractualstatus28.5,Y49/20HP/controls{}: retainedemergencyending accepted, no claim P2causedcorrection. P4owns actualsource/worldproof of descent.
+
+Shield rejection means ownEndstone occluded rays, not evidence underlyingobsidian absent. Exactpublicsource Explosion.getSeenPercent treats solidEndstone ascollider before blockfinalization too; rayfirst-hit classification and blast-resistant retainedterrain aredifferentquestions. P2 conditionalcurrentpose/shadowoldrow math not a waivedshield criterion or actualattack. Actualnormalzeroexposureblast1raw couldtriggergenericHPguard afterattack; classify worldtargeteffect+HP+retreat separatelyfromissue label. Here noattack occurred atall.
+
+Initial8207 had no effect and was retained only after emergency; this was an intermediate failure, not the final whole-operation result. Changed8220 later physically DESTROYED firstcrystal, described below. P2 noEndentry/peeredit/identitychange.
+
+## Updated actual whole-operation result17:47
+P3/P4 exact8220: normalattack trackedcrystal42.5,Y77/.5, range5.7435,27resistantobsidianrays; entityGone1mslater, targetabsent and9remaining, own20→19.6667. GenericDAMAGE_CLOUD_FIREBALL issue was actualHPguard, not lackofeffect. MainretreatFAILED BODY_FLOOR39,68,0 atY69; separate8223 FULLRETREAT completed17:46:58 at28Y49/20HP/ground/controls{}. Whole17:41:30→17:46:58=5m28, MISSED5min budgetby28s, physicalcrystaleffect+retainedending accepted. Universalcombinedretreat stillNOTqualified. P3ownsvalidation, P2notclaiming its messagescausedoperatorchanges. Canonicalreturns archivedp4_crystal_returns_1748.txt.

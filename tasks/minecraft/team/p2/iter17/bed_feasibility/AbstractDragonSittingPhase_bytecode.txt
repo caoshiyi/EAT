@@ -1,0 +1,32 @@
+Compiled from "SourceFile"
+public abstract class car extends caq {
+  public car(cao);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #9                  // Method caq."<init>":(Lcao;)V
+       5: return
+
+  public boolean a();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public float a(bkt, float);
+    Code:
+       0: aload_1
+       1: invokevirtual #22                 // Method bkt.c:()Lblv;
+       4: instanceof    #24                 // class cfo
+       7: ifeq          20
+      10: aload_1
+      11: invokevirtual #22                 // Method bkt.c:()Lblv;
+      14: iconst_1
+      15: invokevirtual #30                 // Method blv.g:(I)V
+      18: fconst_0
+      19: freturn
+      20: aload_0
+      21: aload_1
+      22: fload_2
+      23: invokespecial #32                 // Method caq.a:(Lbkt;F)F
+      26: freturn
+}

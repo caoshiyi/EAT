@@ -1,0 +1,68 @@
+program #8292 on p2: 0.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T18:01:11.406Z",
+ "issue": "EXPECTED_ABORT_SMOKE",
+ "endingIssue": null,
+ "lifeSame": true,
+ "p": {
+  "x": 146.49991369716318,
+  "y": -36,
+  "z": 2243.4718981934707
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "ground": true,
+ "visited": [
+  [
+   146,
+   -36,
+   2243
+  ]
+ ],
+ "inventoryBefore": [
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "inventoryAfter": [
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "controls": {},
+ "goal": null,
+ "cursor": null,
+ "floorFull": true,
+ "roofFull": true,
+ "limit": "one new helper abort/rollback physical smoke; no mining/placement/transfer"
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (146.5, -36, 2243.5) in overworld, health 11.5/20, food 9/20, alive

@@ -1,0 +1,305 @@
+Compiled from "SourceFile"
+public class daq extends cym {
+  public static final com.mojang.serialization.MapCodec<daq> i;
+
+  public com.mojang.serialization.MapCodec<? extends daq> a();
+    Code:
+       0: getstatic     #31                 // Field i:Lcom/mojang/serialization/MapCodec;
+       3: areturn
+
+  protected daq(djg$d);
+    Code:
+       0: aload_0
+       1: fconst_1
+       2: fconst_1
+       3: ldc           #36                 // float 16.0f
+       5: ldc           #36                 // float 16.0f
+       7: ldc           #36                 // float 16.0f
+       9: aload_1
+      10: invokespecial #39                 // Method cym."<init>":(FFFFFLdjg$d;)V
+      13: aload_0
+      14: aload_0
+      15: getfield      #43                 // Field E:Ldji;
+      18: invokevirtual #47                 // Method dji.b:()Ldjj;
+      21: checkcast     #49                 // class djh
+      24: getstatic     #52                 // Field a:Ldjy;
+      27: iconst_0
+      28: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      31: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      34: checkcast     #49                 // class djh
+      37: getstatic     #63                 // Field b:Ldjy;
+      40: iconst_0
+      41: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      44: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      47: checkcast     #49                 // class djh
+      50: getstatic     #66                 // Field c:Ldjy;
+      53: iconst_0
+      54: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      57: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      60: checkcast     #49                 // class djh
+      63: getstatic     #68                 // Field d:Ldjy;
+      66: iconst_0
+      67: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      70: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      73: checkcast     #49                 // class djh
+      76: getstatic     #71                 // Field e:Ldjy;
+      79: iconst_0
+      80: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      83: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      86: checkcast     #49                 // class djh
+      89: invokevirtual #75                 // Method k:(Ldjh;)V
+      92: return
+
+  public djh a(cph);
+    Code:
+       0: aload_1
+       1: invokevirtual #84                 // Method cph.q:()Lctp;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #87                 // Method cph.a:()Lhx;
+       9: astore_3
+      10: aload_1
+      11: invokevirtual #84                 // Method cph.q:()Lctp;
+      14: aload_1
+      15: invokevirtual #87                 // Method cph.a:()Lhx;
+      18: invokevirtual #93                 // Method ctp.b_:(Lhx;)Leer;
+      21: astore        4
+      23: aload_3
+      24: invokevirtual #97                 // Method hx.e:()Lhx;
+      27: astore        5
+      29: aload_3
+      30: invokevirtual #100                // Method hx.f:()Lhx;
+      33: astore        6
+      35: aload_3
+      36: invokevirtual #103                // Method hx.g:()Lhx;
+      39: astore        7
+      41: aload_3
+      42: invokevirtual #106                // Method hx.h:()Lhx;
+      45: astore        8
+      47: aload_2
+      48: aload         5
+      50: invokeinterface #112,  2          // InterfaceMethod csv.a_:(Lhx;)Ldjh;
+      55: astore        9
+      57: aload_2
+      58: aload         6
+      60: invokeinterface #112,  2          // InterfaceMethod csv.a_:(Lhx;)Ldjh;
+      65: astore        10
+      67: aload_2
+      68: aload         7
+      70: invokeinterface #112,  2          // InterfaceMethod csv.a_:(Lhx;)Ldjh;
+      75: astore        11
+      77: aload_2
+      78: aload         8
+      80: invokeinterface #112,  2          // InterfaceMethod csv.a_:(Lhx;)Ldjh;
+      85: astore        12
+      87: aload_0
+      88: invokevirtual #116                // Method o:()Ldjh;
+      91: getstatic     #52                 // Field a:Ldjy;
+      94: aload_0
+      95: aload         9
+      97: aload         9
+      99: aload_2
+     100: aload         5
+     102: getstatic     #119                // Field ic.d:Lic;
+     105: invokevirtual #122                // Method djh.d:(Lcsv;Lhx;Lic;)Z
+     108: invokevirtual #125                // Method a:(Ldjh;Z)Z
+     111: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     114: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     117: checkcast     #49                 // class djh
+     120: getstatic     #66                 // Field c:Ldjy;
+     123: aload_0
+     124: aload         10
+     126: aload         10
+     128: aload_2
+     129: aload         6
+     131: getstatic     #127                // Field ic.c:Lic;
+     134: invokevirtual #122                // Method djh.d:(Lcsv;Lhx;Lic;)Z
+     137: invokevirtual #125                // Method a:(Ldjh;Z)Z
+     140: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     143: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     146: checkcast     #49                 // class djh
+     149: getstatic     #68                 // Field d:Ldjy;
+     152: aload_0
+     153: aload         11
+     155: aload         11
+     157: aload_2
+     158: aload         7
+     160: getstatic     #129                // Field ic.f:Lic;
+     163: invokevirtual #122                // Method djh.d:(Lcsv;Lhx;Lic;)Z
+     166: invokevirtual #125                // Method a:(Ldjh;Z)Z
+     169: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     172: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     175: checkcast     #49                 // class djh
+     178: getstatic     #63                 // Field b:Ldjy;
+     181: aload_0
+     182: aload         12
+     184: aload         12
+     186: aload_2
+     187: aload         8
+     189: getstatic     #131                // Field ic.e:Lic;
+     192: invokevirtual #122                // Method djh.d:(Lcsv;Lhx;Lic;)Z
+     195: invokevirtual #125                // Method a:(Ldjh;Z)Z
+     198: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     201: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     204: checkcast     #49                 // class djh
+     207: getstatic     #71                 // Field e:Ldjy;
+     210: aload         4
+     212: invokevirtual #136                // Method eer.a:()Leeq;
+     215: getstatic     #141                // Field ees.c:Leep;
+     218: if_acmpne     225
+     221: iconst_1
+     222: goto          226
+     225: iconst_0
+     226: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     229: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     232: checkcast     #49                 // class djh
+     235: areturn
+
+  public djh a(djh, ic, djh, ctq, hx, hx);
+    Code:
+       0: aload_1
+       1: getstatic     #71                 // Field e:Ldjy;
+       4: invokevirtual #163                // Method djh.c:(Ldkk;)Ljava/lang/Comparable;
+       7: checkcast     #54                 // class java/lang/Boolean
+      10: invokevirtual #167                // Method java/lang/Boolean.booleanValue:()Z
+      13: ifeq          36
+      16: aload         4
+      18: aload         5
+      20: getstatic     #141                // Field ees.c:Leep;
+      23: getstatic     #141                // Field ees.c:Leep;
+      26: aload         4
+      28: invokevirtual #172                // Method eep.a:(Lcts;)I
+      31: invokeinterface #177,  4          // InterfaceMethod ctq.a:(Lhx;Leeq;I)V
+      36: aload_2
+      37: invokevirtual #180                // Method ic.o:()Lic$a;
+      40: invokevirtual #182                // Method ic$a.d:()Z
+      43: ifeq          86
+      46: aload_1
+      47: getstatic     #185                // Field f:Ljava/util/Map;
+      50: aload_2
+      51: invokeinterface #191,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      56: checkcast     #193                // class dkk
+      59: aload_0
+      60: aload_3
+      61: aload_3
+      62: aload         4
+      64: aload         6
+      66: aload_2
+      67: invokevirtual #196                // Method ic.g:()Lic;
+      70: invokevirtual #122                // Method djh.d:(Lcsv;Lhx;Lic;)Z
+      73: invokevirtual #125                // Method a:(Ldjh;Z)Z
+      76: invokestatic  #58                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      79: invokevirtual #61                 // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+      82: checkcast     #49                 // class djh
+      85: areturn
+      86: aload_0
+      87: aload_1
+      88: aload_2
+      89: aload_3
+      90: aload         4
+      92: aload         5
+      94: aload         6
+      96: invokespecial #198                // Method cym.a:(Ldjh;Lic;Ldjh;Lctq;Lhx;Lhx;)Ldjh;
+      99: areturn
+
+  public emm c(djh, csv, hx, ely);
+    Code:
+       0: invokestatic  #205                // Method emj.a:()Lemm;
+       3: areturn
+
+  public boolean a(djh, djh, ic);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: invokevirtual #210                // Method djh.a:(Lcwq;)Z
+       5: ifeq          75
+       8: aload_3
+       9: invokevirtual #180                // Method ic.o:()Lic$a;
+      12: invokevirtual #182                // Method ic$a.d:()Z
+      15: ifne          20
+      18: iconst_1
+      19: ireturn
+      20: aload_1
+      21: getstatic     #185                // Field f:Ljava/util/Map;
+      24: aload_3
+      25: invokeinterface #191,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      30: checkcast     #193                // class dkk
+      33: invokevirtual #163                // Method djh.c:(Ldkk;)Ljava/lang/Comparable;
+      36: checkcast     #54                 // class java/lang/Boolean
+      39: invokevirtual #167                // Method java/lang/Boolean.booleanValue:()Z
+      42: ifeq          75
+      45: aload_2
+      46: getstatic     #185                // Field f:Ljava/util/Map;
+      49: aload_3
+      50: invokevirtual #196                // Method ic.g:()Lic;
+      53: invokeinterface #191,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      58: checkcast     #193                // class dkk
+      61: invokevirtual #163                // Method djh.c:(Ldkk;)Ljava/lang/Comparable;
+      64: checkcast     #54                 // class java/lang/Boolean
+      67: invokevirtual #167                // Method java/lang/Boolean.booleanValue:()Z
+      70: ifeq          75
+      73: iconst_1
+      74: ireturn
+      75: aload_0
+      76: aload_1
+      77: aload_2
+      78: aload_3
+      79: invokespecial #212                // Method cym.a:(Ldjh;Ldjh;Lic;)Z
+      82: ireturn
+
+  public final boolean a(djh, boolean);
+    Code:
+       0: aload_1
+       1: invokestatic  #216                // Method j:(Ldjh;)Z
+       4: ifne          11
+       7: iload_2
+       8: ifne          31
+      11: aload_1
+      12: invokevirtual #219                // Method djh.b:()Lcwq;
+      15: instanceof    #2                  // class daq
+      18: ifne          31
+      21: aload_1
+      22: getstatic     #225                // Field ash.L:Lasw;
+      25: invokevirtual #228                // Method djh.a:(Lasw;)Z
+      28: ifeq          35
+      31: iconst_1
+      32: goto          36
+      35: iconst_0
+      36: ireturn
+
+  protected void a(dji$a<cwq, djh>);
+    Code:
+       0: aload_1
+       1: iconst_5
+       2: anewarray     #193                // class dkk
+       5: dup
+       6: iconst_0
+       7: getstatic     #52                 // Field a:Ldjy;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #63                 // Field b:Ldjy;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #68                 // Field d:Ldjy;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #66                 // Field c:Ldjy;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #71                 // Field e:Ldjy;
+      34: aastore
+      35: invokevirtual #234                // Method dji$a.a:([Ldkk;)Ldji$a;
+      38: pop
+      39: return
+
+  static {};
+    Code:
+       0: invokedynamic #255,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+       5: invokestatic  #258                // Method b:(Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
+       8: putstatic     #31                 // Field i:Lcom/mojang/serialization/MapCodec;
+      11: return
+}

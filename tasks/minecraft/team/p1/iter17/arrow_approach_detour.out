@@ -1,0 +1,127 @@
+program #8232 on p1: 5.8 s
+--- output ---
+ATTEMPT_DIG [ 145, -44, 2245 ] deepslate
+ATTEMPT_DIG [ 145, -45, 2245 ] deepslate
+--- returned ---
+{
+ "issue": "PUT_KIND_(145, -44, 2247)_gravel",
+ "endingIssue": null,
+ "p": {
+  "x": 145.4931034062416,
+  "y": -45,
+  "z": 2245.6383877635217
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "trace": [
+  [
+   "OBSERVED_PLACE",
+   [
+    144,
+    -44,
+    2245
+   ],
+   "basalt"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    145,
+    -44,
+    2245
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    145,
+    -45,
+    2245
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_STEP",
+   [
+    145,
+    -45,
+    2245
+   ],
+   20
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    145,
+    -45,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    145,
+    -44,
+    2244
+   ],
+   "cobbled_deepslate"
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   52
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: Nextgeometry useful reuse: source26 corridor already28,Y49,z0→-13, halfwaytowardsecondcrystal33.5,Y80,-24.5. I can clearbounded7morecells toz-20 withremainingWOOD20uses thenholdlow; freshpick actualdelivery neededbeforeascent. P1 no urgencyforhighgear/newa
+p4: mmo chain: onefreshSTONE canenable secondactualcrystaleffect, courierlowernative81→45detour→28 clear. Proposedwholeinput/adoption/use≤10min to17:58; pleasecoordinateactor ratherthansilentparallelentry.
+--- p1 now: (145.5, -45, 2245.6) in overworld, health 20/20, food 20/20, alive

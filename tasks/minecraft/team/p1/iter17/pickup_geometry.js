@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let cols=[];for(let x=147;x<=149;x++)for(let z=2237;z<=2239;z++){let a=[];for(let y=-38;y<=-32;y++)a.push(bot.blockAt(new Vec3(x,y,z))?.name);cols.push([x,z,a])}return{p:bot.entity.position,cols};

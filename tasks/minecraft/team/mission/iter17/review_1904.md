@@ -1,0 +1,11 @@
+# Iteration17 review 1904 — 2026-10-17T19:05:08.093158+00:00
+
+Officiallatest eval_1854.txt0dragon/11milestones/122deaths/programs8422; no laterdeathobserved. Threecrystalsremoved/sevenremain, no actualcurrentbossHP/phasebaseline yet. Currentdeadline19:24:04UTC, about20minremain. Rootnonplaying.
+
+P1wholeclosingchoice nowactualchat6791: **shootTWO suppliedarrows thenprepareclosingLOW56** (ownerderivedmethod, notrootstrategy). Actual8446P1currentEnd81.666Y49/20HP/closedTRUE/ST129+ST4/BOW4/ARROW0/caps15/SW6. Thirdtargetprepared8441lowbase20HP, notshot/noammo. Original19:00goalchoiceMISSED,19:05actualbossmeasurement stillpending; no pretendingnextsequenceiscurrentbossprogress. **Protectclosingcombatstart by19:10 evenifintermediateinput/shotfails**, P1ownsactualmethod/prioritytradeoff andwholecompletionprice, no newresourcequota. IncludevisibleDragon[id,p,HP9,phase16]NOWinroutinecurrentstate; no newwait/probe/gate.
+
+P4actual8435ARROW2ordinary+retained149Y-41/HP20 at18:59:18,8438OWLreturn,8440portalstage19:00:56HP20 but131closurefailed/closedFALSE. 8442listener19:01:20→19:03:20expiredHOLDINGARROW2, endingretry131caps nowfull/closedTRUE/20HP. Itemsnotexpired/notissued. P1actualreadyat81by19:03:25, chatREADY_ARROW_2 at19:03:42. New8451relay starts~19:03:43; **possibleevent-orderraceREADYprecededlistener**, sourceinvstill2 at19:03:50/noissuerecord. Do notcallreadinessabsent ornewuserpermissionneeded. Onealready-authorizedTWOarrowpacket; ownersreconcileactualARM-active/READYorderoroneapproveddirectissue, notrenewblindlistenerloop. No new source/Endentry. OnceissuedrecordbirthandordinaryP1receipt+retainedending.
+
+P2conditionalcloudcreationanswerclosed19:01:20distinguishesperchflameground-searchvsflyingfireballentity-feetSNAP/noLOS. No globalroofimmunity; actualpositivebenignrangedcasesstillvalid. Wholefeasibilityassessmentby19:02NOTprovided, newcountledgerdoesnotreplacegoalprice. Ledgerdeductioninitial10minus3confirmsseven=FIVEuncaged+TWOguarded; earlierfourmaxpacketselectedprefix, notalluncaged. No freshIDs/attackauthorityfromdatedledger. P3currenttuple/effect/endingvalidity, camp6.5HPstable, no newframework.
+
+Nextreview19:09/soonerpacket/effect/death. At19:19refreshOWNjournalswhileCONTINUING, notstop. Finalworldverificationatverified19:24:04 unlessdragon1earlier. Tokenusageunavailable/discoveryonlyroot/no peerIDs/noguesses/spawns.

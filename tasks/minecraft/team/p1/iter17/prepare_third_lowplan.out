@@ -1,0 +1,991 @@
+program #8441 on p1: 16.3 s
+--- output ---
+LOW49_MODEL 546 216 [
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -11.85, 93.35, 38.85 ],
+    branch: 'low',
+    ticks: 38.831830863847365,
+    holes: 3,
+    model: { hits: 42, N: 48 }
+  },
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -12.5, 93.35, 38.85 ],
+    branch: 'low',
+    ticks: 39.09006296917588,
+    holes: 3,
+    model: { hits: 42, N: 48 }
+  },
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -11.85, 92.8, 38.85 ],
+    branch: 'low',
+    ticks: 38.4035761851529,
+    holes: 3,
+    model: { hits: 39, N: 48 }
+  },
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -12.5, 92.8, 38.85 ],
+    branch: 'low',
+    ticks: 38.65691695621891,
+    holes: 3,
+    model: { hits: 39, N: 48 }
+  },
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -11.85, 93.8, 38.85 ],
+    branch: 'low',
+    ticks: 39.1984010995305,
+    holes: 3,
+    model: { hits: 32, N: 48 }
+  },
+  {
+    id: 13093,
+    target: [ -12.5, 92, 39.5 ],
+    aim: [ -12.5, 93.8, 38.85 ],
+    branch: 'low',
+    ticks: 39.465907099049694,
+    holes: 3,
+    model: { hits: 31, N: 48 }
+  },
+  {
+    id: 13102,
+    target: [ -41.5, 98, -0.5 ],
+    aim: [ -42.15, 99.8, 0.15000000000000002 ],
+    branch: 'high',
+    ticks: 62.53278228119805,
+    holes: 2,
+    model: { hits: 28, N: 48 }
+  },
+  {
+    id: 13102,
+    target: [ -41.5, 98, -0.5 ],
+    aim: [ -42.15, 99.8, -0.5 ],
+    branch: 'high',
+    ticks: 62.743959385920874,
+    holes: 2,
+    model: { hits: 27, N: 48 }
+  },
+  {
+    id: 13102,
+    target: [ -41.5, 98, -0.5 ],
+    aim: [ -42.15, 99.8, -1.15 ],
+    branch: 'high',
+    ticks: 62.94607581505432,
+    holes: 2,
+    model: { hits: 20, N: 48 }
+  }
+]
+ATTEMPT_CUT [ 28, 51, -20 ] end_stone
+ATTEMPT_CUT [ 27, 50, -20 ] end_stone
+ACTUAL_SELECTED 13093 [ -12.5, 92, 39.5 ] [ -11.85, 93.35, 38.85 ] low 38.83196650103011 [ 22, 57, -20 ] [ [ 22, 57, -20 ], [ 22, 57, -19 ], [ 21, 58, -18 ] ] { hits: 42, N: 48 }
+ATTEMPT_CUT [ 22, 57, -19 ] end_stone
+ATTEMPT_CUT [ 21, 58, -18 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 158,
+ "p": {
+  "x": 28.428945475216107,
+  "y": 49,
+  "z": -19.50001993038641
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 15,
+ "trace": [
+  [
+   "LOW49_ARC_SURVEY",
+   546,
+   216,
+   [
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -11.85,
+      93.35,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 38.831830863847365,
+     "holes": 3,
+     "model": {
+      "hits": 42,
+      "N": 48
+     }
+    },
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -12.5,
+      93.35,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 39.09006296917588,
+     "holes": 3,
+     "model": {
+      "hits": 42,
+      "N": 48
+     }
+    },
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -11.85,
+      92.8,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 38.4035761851529,
+     "holes": 3,
+     "model": {
+      "hits": 39,
+      "N": 48
+     }
+    },
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -12.5,
+      92.8,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 38.65691695621891,
+     "holes": 3,
+     "model": {
+      "hits": 39,
+      "N": 48
+     }
+    },
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -11.85,
+      93.8,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 39.1984010995305,
+     "holes": 3,
+     "model": {
+      "hits": 32,
+      "N": 48
+     }
+    },
+    {
+     "id": 13093,
+     "target": [
+      -12.5,
+      92,
+      39.5
+     ],
+     "aim": [
+      -12.5,
+      93.8,
+      38.85
+     ],
+     "branch": "low",
+     "ticks": 39.465907099049694,
+     "holes": 3,
+     "model": {
+      "hits": 31,
+      "N": 48
+     }
+    },
+    {
+     "id": 13102,
+     "target": [
+      -41.5,
+      98,
+      -0.5
+     ],
+     "aim": [
+      -42.15,
+      99.8,
+      0.15000000000000002
+     ],
+     "branch": "high",
+     "ticks": 62.53278228119805,
+     "holes": 2,
+     "model": {
+      "hits": 28,
+      "N": 48
+     }
+    },
+    {
+     "id": 13102,
+     "target": [
+      -41.5,
+      98,
+      -0.5
+     ],
+     "aim": [
+      -42.15,
+      99.8,
+      -0.5
+     ],
+     "branch": "high",
+     "ticks": 62.743959385920874,
+     "holes": 2,
+     "model": {
+      "hits": 27,
+      "N": 48
+     }
+    },
+    {
+     "id": 13102,
+     "target": [
+      -41.5,
+      98,
+      -0.5
+     ],
+     "aim": [
+      -42.15,
+      99.8,
+      -1.15
+     ],
+     "branch": "high",
+     "ticks": 62.94607581505432,
+     "holes": 2,
+     "model": {
+      "hits": 20,
+      "N": 48
+     }
+    }
+   ]
+  ],
+  [
+   "WORLD_CUT",
+   [
+    28,
+    51,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    27,
+    50,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    27,
+    50,
+    -20
+   ],
+   {
+    "x": 27.426554452497392,
+    "y": 50,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    26,
+    51,
+    -20
+   ],
+   {
+    "x": 26.426554452497392,
+    "y": 51,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    25,
+    52,
+    -20
+   ],
+   {
+    "x": 25.426554452497392,
+    "y": 52,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    24,
+    53,
+    -20
+   ],
+   {
+    "x": 24.426554452497392,
+    "y": 53,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    23,
+    54,
+    -20
+   ],
+   {
+    "x": 23.426554452497392,
+    "y": 54,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    22,
+    55,
+    -20
+   ],
+   {
+    "x": 22.426554452497392,
+    "y": 55,
+    "z": -19.50001993038572
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    22,
+    57,
+    -19
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    21,
+    58,
+    -18
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 22.38267189037093,
+    "y": 55,
+    "z": -19.50001993038572
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 23.009578463791993,
+    "y": 55,
+    "z": -19.50001993038579
+   },
+   {
+    "x": 0.10738456979716976,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 23.7,
+    "y": 54.76636799395752,
+    "z": -19.500019930385843
+   },
+   {
+    "x": 0,
+    "y": -0.230527368912964,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    23,
+    54,
+    -20
+   ],
+   {
+    "x": 23.5137956220264,
+    "y": 54,
+    "z": -19.500019930385843
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 23.5137956220264,
+    "y": 54,
+    "z": -19.500019930385843
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 24.111483888525303,
+    "y": 54,
+    "z": -19.500019930385914
+   },
+   {
+    "x": 0.10609066409984266,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 24.686382037972106,
+    "y": 53.53584062504456,
+    "z": -19.50001993038595
+   },
+   {
+    "x": 0.060627075326754466,
+    "y": -0.30431682745754424,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    24,
+    53,
+    -20
+   ],
+   {
+    "x": 24.466784907965447,
+    "y": 53,
+    "z": -19.50001993038595
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 24.466784907965447,
+    "y": 53,
+    "z": -19.50001993038595
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 25.055852048637167,
+    "y": 53,
+    "z": -19.50001993038602
+   },
+   {
+    "x": 0.10570888551647412,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 25.7,
+    "y": 52.76636799395752,
+    "z": -19.500019930386074
+   },
+   {
+    "x": 0,
+    "y": -0.230527368912964,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    25,
+    52,
+    -20
+   ],
+   {
+    "x": 25.5137956220264,
+    "y": 52,
+    "z": -19.500019930386074
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 25.5137956220264,
+    "y": 52,
+    "z": -19.500019930386074
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 26.111483888525303,
+    "y": 52,
+    "z": -19.500019930386145
+   },
+   {
+    "x": 0.10609066409984266,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 26.686382037972106,
+    "y": 51.53584062504456,
+    "z": -19.50001993038618
+   },
+   {
+    "x": 0.060627075326754466,
+    "y": -0.30431682745754424,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    26,
+    51,
+    -20
+   ],
+   {
+    "x": 26.466784907965447,
+    "y": 51,
+    "z": -19.50001993038618
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 26.466784907965447,
+    "y": 51,
+    "z": -19.50001993038618
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 27.055852048637167,
+    "y": 51,
+    "z": -19.50001993038625
+   },
+   {
+    "x": 0.10570888551647412,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 27.7,
+    "y": 50.76636799395752,
+    "z": -19.500019930386305
+   },
+   {
+    "x": 0,
+    "y": -0.230527368912964,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    27,
+    50,
+    -20
+   ],
+   {
+    "x": 27.5137956220264,
+    "y": 50,
+    "z": -19.500019930386305
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 27.5137956220264,
+    "y": 50,
+    "z": -19.500019930386305
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 28.111483888525303,
+    "y": 50,
+    "z": -19.500019930386376
+   },
+   {
+    "x": 0.10609066409984266,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 28.686382037972106,
+    "y": 49.53584062504456,
+    "z": -19.50001993038641
+   },
+   {
+    "x": 0.060627075326754466,
+    "y": -0.30431682745754424,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    28,
+    49,
+    -20
+   ],
+   {
+    "x": 28.466784907965447,
+    "y": 49,
+    "z": -19.50001993038641
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    28,
+    51,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    27,
+    50,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   "ACTUAL_RETAINED_LOW",
+   {
+    "x": 28.428945475216107,
+    "y": 49,
+    "z": -19.50001993038641
+   },
+   20,
+   true
+  ]
+ ],
+ "inventory": [
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   6
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   13,
+   null
+  ],
+  [
+   "bow",
+   1,
+   4
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   2
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "lowModelMs": 546,
+ "prepared": true,
+ "choice": {
+  "targetId": 13093,
+  "target": [
+   -12.5,
+   92,
+   39.5
+  ],
+  "aim": "[repeated reference]",
+  "branch": "low",
+  "ticks": 38.83196650103011,
+  "barrier": [
+   22,
+   57,
+   -20
+  ],
+  "holes": [
+   [
+    22,
+    57,
+    -20
+   ],
+   [
+    22,
+    57,
+    -19
+   ],
+   [
+    21,
+    58,
+    -18
+   ]
+  ],
+  "model": "[repeated reference]"
+ },
+ "scores": "[repeated reference]"
+}
+--- chat since this player's previous program ---
+p2: P2finiteyield8423 CLOSED18:56:06: actual47AIRnodes→1282270/HPunchanged; P4near149Y-41 throughoutobservedhold, BOTHfarTicks0/newtrackedSkeletonIDs0. ThusPAIRwindowUNFULFILLED/hypothesisNOTtested, notspawnfailure. Conservativeactualvisitedreturnreserve→SOUT
+p2: H/fullfloorroof/zerofoerays/controls{}/sameinventory. Whole18:53:25→18:58:25 unchanged; NOrenewal/watcher. Corridorclear.
+p2: CORRECTION8428 report newtrackedSkeletonIDs0 wasWRONGunfiltered: canonical8423 has18 newlytrackedIDs ELSEWHERE; ZEROwithin24ofeithertwofarmcentres. Exactcoords p2/iter17/FINITE_YIELD_RESULT.json. bothfarTicks0/21samplesP4near unchanged, sohypothesisUNTESTE
+p2: D. OwnsafeSOUTHending unchanged. P4specificclose6764 acknowledged/no renewal.
+p4: P4 bone20hits killed339/HP20, actualARROW20744 at142.25,-40.5,2247.60 now retrieving. Handler range3..5.5 NOTtested because existing under3 succeeded. Protected lower pickup then selfdeliver actual prefix. P2 both-away was unfulfilled, no renew.
+p4: P4 pickup firstattempt rejectedPARTIALsideSTAIR141,-42,2246 before openingownbody, full14920HP. ChangedreplaceONLYobservedstairs withfullcap; higherlootroof anchoredfromexistingownroof beforedrop. Actualarrow20744 remains. Budget<=160s.
+p2: P2 memoryonly: CLOSED_EVIDENCE_INDEX.md maps17 completedquestions→exactartifacts/limits. Common6m-handler result alreadyparent_dispatch/FINDING.md (notSkeletonphysicalproof); landingheight/perchlottery/cage/bow/AI allclosedconditional, notnewgates. Bonekil
+p2: l339/Arrow20744 drop actualP4report distinguishedfrompendingpickup. P2SOUTH/corridorclear/no activejob; no renewals.
+p4: P4 pickup2 refused higherroof occupied bymob, full14920HP. Changedmechanism: removeONLY arrow stair142,-41,2247; KEEP ownroof142,-41,2246 andfullside142,-42/-43,2247. Arrowdropshalfblock to+2Y standing pickup, no newmob opening/higherroof. Actual20744 stil
+p4: lwithin5min. 
+p2: P2 NEWindependent180sec closing-combat uncertainty: exactSITTING_FLAMING cloudplacement floor-search vs proposedLOWperchpod; priorP3cloudaudit established.5height/damage, not thiscreationpath. Existingpublicmatchedclass alreadyowned, no worldprobe/input/bu
+p2: ild/gate. Needdistinguishperch-generatedcloud fromflyingfireball, no globalroof/cloudsafetyclaim.
+p4: ACTUAL ordinaryARROW0→2 pickup8435 PASS18:59:18, held2 notpredicted. Full149Y-41/20HP/ST118/COFF7. Five roof-firstUP→bed→selfportalstage now, target19:02 stage if handlingpasses. P1 agree actual2arrow ready token READY_ARROW_2 when at81; do not start item 
+p4: age until ready.
+--- p1 now: (28.4, 49, -19.5) in the_end, health 20/20, food 20/20, alive

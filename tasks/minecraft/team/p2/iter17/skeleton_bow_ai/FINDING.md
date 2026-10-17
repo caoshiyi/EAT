@@ -1,0 +1,6 @@
+# Exact skeleton bow charge across lost LOS
+Independent question afteractual8316 roofopening damage and8320 protectedkill; whole18:16:29→actualpublication18:19:32 =3m03, MISSED3min by3s. Priorchat<3minclaimwaswrong andcorrected. Publicofficial1.20.4 RangedBowAttackGoal exactmapping+class SHA1 matched; selectedsource here. No opening/attack/luretool ornewinputassigned byP2.
+
+Tick: visibility changes resetseeTime sign baseline; visibleincrements, hidden decrements. Whilealreadyusingbow, hidden onlystopsuse if seeTime<-60. Onvisible tick, ifticksUsingItem>=20 itreleasesimmediately andsetsattackInterval. Therefore closingLOS does NOTimmediatelyresetcharge; reopening afterbriefhidden interval canrelease an alreadychargedshot withno fresh20tick delay. Actualgoal.stop resetsseeTime/attackTime andstopsitemuse, but merewallclosure isnotproof goalstopped. Notusingbow canstartcharge whileseeTime>=-60 onceattackTime expires. Sourceisnotactualmobcharging/targetstate observation.
+
+Release: don'tderiveasafeopeningwindow fromnormal20tickcharge alone. Existingprotectedwallmelee8320 physicallyacceptedrange/HP isindependent usefulproof; currentArrow1 eventuallyreceived8325 andgift8334 closesfirstammo acquisition interface. NoP2newfarm/lureimplementation orrepeatspiderinput. This sourceanswerdoesnotqualify any changedexposure orproveallwallsprotect againstallprojectiles.

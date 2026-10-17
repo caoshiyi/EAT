@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3'),p=bot.entity.position.floored();return{p,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),rows:[[0,0],[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>[x,z,[0,1,2,3].map(y=>{const b=bot.blockAt(p.offset(x,y,z));return[y,b?.name,b?.shapes]})])};

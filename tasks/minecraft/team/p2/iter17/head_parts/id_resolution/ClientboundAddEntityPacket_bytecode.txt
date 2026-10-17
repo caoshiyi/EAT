@@ -1,0 +1,429 @@
+Compiled from "SourceFile"
+public class zb implements xf<za> {
+  private static final double a;
+
+  private static final double b;
+
+  private final int c;
+
+  private final java.util.UUID d;
+
+  private final blz<?> e;
+
+  private final double f;
+
+  private final double g;
+
+  private final double h;
+
+  private final int i;
+
+  private final int j;
+
+  private final int k;
+
+  private final byte l;
+
+  private final byte m;
+
+  private final byte n;
+
+  private final int o;
+
+  public zb(blv);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: invokespecial #38                 // Method "<init>":(Lblv;I)V
+       6: return
+
+  public zb(blv, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #48                 // Method blv.aj:()I
+       5: aload_1
+       6: invokevirtual #52                 // Method blv.cw:()Ljava/util/UUID;
+       9: aload_1
+      10: invokevirtual #56                 // Method blv.dr:()D
+      13: aload_1
+      14: invokevirtual #59                 // Method blv.dt:()D
+      17: aload_1
+      18: invokevirtual #62                 // Method blv.dx:()D
+      21: aload_1
+      22: invokevirtual #66                 // Method blv.dE:()F
+      25: aload_1
+      26: invokevirtual #69                 // Method blv.dC:()F
+      29: aload_1
+      30: invokevirtual #73                 // Method blv.ai:()Lblz;
+      33: iload_2
+      34: aload_1
+      35: invokevirtual #77                 // Method blv.dp:()Lelt;
+      38: aload_1
+      39: invokevirtual #80                 // Method blv.cp:()F
+      42: f2d
+      43: invokespecial #83                 // Method "<init>":(ILjava/util/UUID;DDDFFLblz;ILelt;D)V
+      46: return
+
+  public zb(blv, int, hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #48                 // Method blv.aj:()I
+       5: aload_1
+       6: invokevirtual #52                 // Method blv.cw:()Ljava/util/UUID;
+       9: aload_3
+      10: invokevirtual #90                 // Method hx.u:()I
+      13: i2d
+      14: aload_3
+      15: invokevirtual #93                 // Method hx.v:()I
+      18: i2d
+      19: aload_3
+      20: invokevirtual #96                 // Method hx.w:()I
+      23: i2d
+      24: aload_1
+      25: invokevirtual #66                 // Method blv.dE:()F
+      28: aload_1
+      29: invokevirtual #69                 // Method blv.dC:()F
+      32: aload_1
+      33: invokevirtual #73                 // Method blv.ai:()Lblz;
+      36: iload_2
+      37: aload_1
+      38: invokevirtual #77                 // Method blv.dp:()Lelt;
+      41: aload_1
+      42: invokevirtual #80                 // Method blv.cp:()F
+      45: f2d
+      46: invokespecial #83                 // Method "<init>":(ILjava/util/UUID;DDDFFLblz;ILelt;D)V
+      49: return
+
+  public zb(int, java.util.UUID, double, double, double, float, float, blz<?>, int, elt, double);
+    Code:
+       0: aload_0
+       1: invokespecial #102                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #104                // Field c:I
+       9: aload_0
+      10: aload_2
+      11: putfield      #106                // Field d:Ljava/util/UUID;
+      14: aload_0
+      15: dload_3
+      16: putfield      #108                // Field f:D
+      19: aload_0
+      20: dload         5
+      22: putfield      #110                // Field g:D
+      25: aload_0
+      26: dload         7
+      28: putfield      #112                // Field h:D
+      31: aload_0
+      32: fload         9
+      34: ldc           #113                // float 256.0f
+      36: fmul
+      37: ldc           #114                // float 360.0f
+      39: fdiv
+      40: invokestatic  #119                // Method auo.d:(F)I
+      43: i2b
+      44: putfield      #121                // Field l:B
+      47: aload_0
+      48: fload         10
+      50: ldc           #113                // float 256.0f
+      52: fmul
+      53: ldc           #114                // float 360.0f
+      55: fdiv
+      56: invokestatic  #119                // Method auo.d:(F)I
+      59: i2b
+      60: putfield      #123                // Field m:B
+      63: aload_0
+      64: dload         14
+      66: ldc2_w        #124                // double 256.0d
+      69: dmul
+      70: ldc2_w        #126                // double 360.0d
+      73: ddiv
+      74: invokestatic  #130                // Method auo.a:(D)I
+      77: i2b
+      78: putfield      #132                // Field n:B
+      81: aload_0
+      82: aload         11
+      84: putfield      #134                // Field e:Lblz;
+      87: aload_0
+      88: iload         12
+      90: putfield      #136                // Field o:I
+      93: aload_0
+      94: aload         13
+      96: getfield      #140                // Field elt.c:D
+      99: ldc2_w        #141                // double -3.9d
+     102: ldc2_w        #14                 // double 3.9d
+     105: invokestatic  #145                // Method auo.a:(DDD)D
+     108: ldc2_w        #11                 // double 8000.0d
+     111: dmul
+     112: d2i
+     113: putfield      #147                // Field i:I
+     116: aload_0
+     117: aload         13
+     119: getfield      #149                // Field elt.d:D
+     122: ldc2_w        #141                // double -3.9d
+     125: ldc2_w        #14                 // double 3.9d
+     128: invokestatic  #145                // Method auo.a:(DDD)D
+     131: ldc2_w        #11                 // double 8000.0d
+     134: dmul
+     135: d2i
+     136: putfield      #151                // Field j:I
+     139: aload_0
+     140: aload         13
+     142: getfield      #153                // Field elt.e:D
+     145: ldc2_w        #141                // double -3.9d
+     148: ldc2_w        #14                 // double 3.9d
+     151: invokestatic  #145                // Method auo.a:(DDD)D
+     154: ldc2_w        #11                 // double 8000.0d
+     157: dmul
+     158: d2i
+     159: putfield      #155                // Field k:I
+     162: return
+
+  public zb(ui);
+    Code:
+       0: aload_0
+       1: invokespecial #102                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: invokevirtual #170                // Method ui.n:()I
+       9: putfield      #104                // Field c:I
+      12: aload_0
+      13: aload_1
+      14: invokevirtual #173                // Method ui.p:()Ljava/util/UUID;
+      17: putfield      #106                // Field d:Ljava/util/UUID;
+      20: aload_0
+      21: aload_1
+      22: getstatic     #178                // Field kd.g:Lib;
+      25: invokevirtual #181                // Method ui.a:(Lim;)Ljava/lang/Object;
+      28: checkcast     #183                // class blz
+      31: putfield      #134                // Field e:Lblz;
+      34: aload_0
+      35: aload_1
+      36: invokevirtual #186                // Method ui.readDouble:()D
+      39: putfield      #108                // Field f:D
+      42: aload_0
+      43: aload_1
+      44: invokevirtual #186                // Method ui.readDouble:()D
+      47: putfield      #110                // Field g:D
+      50: aload_0
+      51: aload_1
+      52: invokevirtual #186                // Method ui.readDouble:()D
+      55: putfield      #112                // Field h:D
+      58: aload_0
+      59: aload_1
+      60: invokevirtual #190                // Method ui.readByte:()B
+      63: putfield      #121                // Field l:B
+      66: aload_0
+      67: aload_1
+      68: invokevirtual #190                // Method ui.readByte:()B
+      71: putfield      #123                // Field m:B
+      74: aload_0
+      75: aload_1
+      76: invokevirtual #190                // Method ui.readByte:()B
+      79: putfield      #132                // Field n:B
+      82: aload_0
+      83: aload_1
+      84: invokevirtual #170                // Method ui.n:()I
+      87: putfield      #136                // Field o:I
+      90: aload_0
+      91: aload_1
+      92: invokevirtual #194                // Method ui.readShort:()S
+      95: putfield      #147                // Field i:I
+      98: aload_0
+      99: aload_1
+     100: invokevirtual #194                // Method ui.readShort:()S
+     103: putfield      #151                // Field j:I
+     106: aload_0
+     107: aload_1
+     108: invokevirtual #194                // Method ui.readShort:()S
+     111: putfield      #155                // Field k:I
+     114: return
+
+  public void a(ui);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #104                // Field c:I
+       5: invokevirtual #198                // Method ui.c:(I)Lui;
+       8: pop
+       9: aload_1
+      10: aload_0
+      11: getfield      #106                // Field d:Ljava/util/UUID;
+      14: invokevirtual #201                // Method ui.a:(Ljava/util/UUID;)Lui;
+      17: pop
+      18: aload_1
+      19: getstatic     #178                // Field kd.g:Lib;
+      22: aload_0
+      23: getfield      #134                // Field e:Lblz;
+      26: invokevirtual #204                // Method ui.a:(Lim;Ljava/lang/Object;)V
+      29: aload_1
+      30: aload_0
+      31: getfield      #108                // Field f:D
+      34: invokevirtual #207                // Method ui.a:(D)Lui;
+      37: pop
+      38: aload_1
+      39: aload_0
+      40: getfield      #110                // Field g:D
+      43: invokevirtual #207                // Method ui.a:(D)Lui;
+      46: pop
+      47: aload_1
+      48: aload_0
+      49: getfield      #112                // Field h:D
+      52: invokevirtual #207                // Method ui.a:(D)Lui;
+      55: pop
+      56: aload_1
+      57: aload_0
+      58: getfield      #121                // Field l:B
+      61: invokevirtual #209                // Method ui.k:(I)Lui;
+      64: pop
+      65: aload_1
+      66: aload_0
+      67: getfield      #123                // Field m:B
+      70: invokevirtual #209                // Method ui.k:(I)Lui;
+      73: pop
+      74: aload_1
+      75: aload_0
+      76: getfield      #132                // Field n:B
+      79: invokevirtual #209                // Method ui.k:(I)Lui;
+      82: pop
+      83: aload_1
+      84: aload_0
+      85: getfield      #136                // Field o:I
+      88: invokevirtual #198                // Method ui.c:(I)Lui;
+      91: pop
+      92: aload_1
+      93: aload_0
+      94: getfield      #147                // Field i:I
+      97: invokevirtual #211                // Method ui.l:(I)Lui;
+     100: pop
+     101: aload_1
+     102: aload_0
+     103: getfield      #151                // Field j:I
+     106: invokevirtual #211                // Method ui.l:(I)Lui;
+     109: pop
+     110: aload_1
+     111: aload_0
+     112: getfield      #155                // Field k:I
+     115: invokevirtual #211                // Method ui.l:(I)Lui;
+     118: pop
+     119: return
+
+  public void a(za);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokeinterface #217,  2          // InterfaceMethod za.a:(Lzb;)V
+       7: return
+
+  public int a();
+    Code:
+       0: aload_0
+       1: getfield      #104                // Field c:I
+       4: ireturn
+
+  public java.util.UUID d();
+    Code:
+       0: aload_0
+       1: getfield      #106                // Field d:Ljava/util/UUID;
+       4: areturn
+
+  public blz<?> e();
+    Code:
+       0: aload_0
+       1: getfield      #134                // Field e:Lblz;
+       4: areturn
+
+  public double f();
+    Code:
+       0: aload_0
+       1: getfield      #108                // Field f:D
+       4: dreturn
+
+  public double g();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field g:D
+       4: dreturn
+
+  public double h();
+    Code:
+       0: aload_0
+       1: getfield      #112                // Field h:D
+       4: dreturn
+
+  public double i();
+    Code:
+       0: aload_0
+       1: getfield      #147                // Field i:I
+       4: i2d
+       5: ldc2_w        #11                 // double 8000.0d
+       8: ddiv
+       9: dreturn
+
+  public double j();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field j:I
+       4: i2d
+       5: ldc2_w        #11                 // double 8000.0d
+       8: ddiv
+       9: dreturn
+
+  public double k();
+    Code:
+       0: aload_0
+       1: getfield      #155                // Field k:I
+       4: i2d
+       5: ldc2_w        #11                 // double 8000.0d
+       8: ddiv
+       9: dreturn
+
+  public float l();
+    Code:
+       0: aload_0
+       1: getfield      #121                // Field l:B
+       4: sipush        360
+       7: imul
+       8: i2f
+       9: ldc           #113                // float 256.0f
+      11: fdiv
+      12: freturn
+
+  public float m();
+    Code:
+       0: aload_0
+       1: getfield      #123                // Field m:B
+       4: sipush        360
+       7: imul
+       8: i2f
+       9: ldc           #113                // float 256.0f
+      11: fdiv
+      12: freturn
+
+  public float n();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field n:B
+       4: sipush        360
+       7: imul
+       8: i2f
+       9: ldc           #113                // float 256.0f
+      11: fdiv
+      12: freturn
+
+  public int o();
+    Code:
+       0: aload_0
+       1: getfield      #136                // Field o:I
+       4: ireturn
+
+  public void a(uo);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #214                // class za
+       5: invokevirtual #222                // Method a:(Lza;)V
+       8: return
+}

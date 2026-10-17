@@ -1,0 +1,232 @@
+program #8188 on p1: 18.9 s
+--- output ---
+ATTEMPT_DIG [ 149, -40, 2245 ] deepslate
+ATTEMPT_DIG [ 149, -41, 2245 ] deepslate
+ATTEMPT_DIG [ 149, -40, 2246 ] deepslate
+ATTEMPT_DIG [ 149, -41, 2246 ] deepslate
+ATTEMPT_DIG [ 149, -42, 2247 ] gravel
+ATTEMPT_DIG [ 149, -40, 2247 ] deepslate
+ATTEMPT_DIG [ 149, -41, 2247 ] deepslate
+ATTEMPT_DIG [ 149, -41, 2248 ] gravel
+ATTEMPT_DIG [ 148, -41, 2248 ] gravel
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "p": {
+  "x": 149.49956308961987,
+  "y": -41,
+  "z": 2247.5486438766
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "trace": [
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2245
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2245
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2244
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2246
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2246
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2245
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -42,
+    2247
+   ],
+   "gravel"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -42,
+    2247
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -40,
+    2247
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2247
+   ],
+   "deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -40,
+    2246
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    149,
+    -41,
+    2248
+   ],
+   "gravel"
+  ],
+  [
+   "OBSERVED_AIR",
+   [
+    148,
+    -41,
+    2248
+   ],
+   "gravel"
+  ],
+  [
+   "OBSERVED_GRAVEL_INPUT",
+   2,
+   1
+  ],
+  [
+   "OBSERVED_PLACE",
+   [
+    149,
+    -41,
+    2248
+   ],
+   "cobbled_deepslate"
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   20
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   6,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (149.5, -41, 2247.5) in overworld, health 20/20, food 20/20, alive

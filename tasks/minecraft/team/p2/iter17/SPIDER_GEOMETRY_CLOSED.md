@@ -1,0 +1,4 @@
+# Read-only alternative spider position, retired after priority change
+One actual read8299 at18:03:05, no movement/attack/loot. CurrentSpider312 at144.300,-36.900,2246.700, width1.4/height.9, HP15. Proposedexistingroompose143.65,-36,2243.65 hasfullmossyfloor+roof/AIRbody andeye→actualAABB2.8543 (<3); firstblockray143,-35,2244. Arrival/attack nottested; lootXZgapstillrequiresdifferentactualapproach. This wouldavoidnewlowercavetraversal forinitialcontactonly, notproveordinarystringreceipt.
+
+ConcurrentP1changedpriority to SKELETON ARROW (freshSTONE+2caps) andowns guaranteedremainingweb for thirdstring, so optionalspiderread is RETIRED. No toolloan/request, newsource, corpsejourney, playerentry orattack wasdone. Do notrepeatitundernewlabel; onlyusefreshgeometryifactualactorlaterchooseschangedexperiment.

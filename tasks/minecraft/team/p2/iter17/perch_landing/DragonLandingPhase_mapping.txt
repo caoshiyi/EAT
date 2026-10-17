@@ -1,0 +1,11 @@
+net.minecraft.world.entity.boss.enderdragon.phases.DragonLandingPhase -> cax:
+# {"fileName":"DragonLandingPhase.java","id":"sourceFile"}
+    net.minecraft.world.phys.Vec3 targetLocation -> b
+    18:19:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    23:38:void doClientTick() -> b
+    42:50:void doServerTick() -> c
+    54:54:float getFlySpeed() -> f
+    59:62:float getTurnSpeed() -> h
+    67:68:void begin() -> d
+    73:73:net.minecraft.world.phys.Vec3 getFlyTargetLocation() -> g
+    78:78:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getPhase() -> i

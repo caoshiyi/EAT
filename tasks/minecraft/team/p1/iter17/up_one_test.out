@@ -1,0 +1,88 @@
+program #8197 on p1: 0.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "p": {
+  "x": 149.49979399650695,
+  "y": -40,
+  "z": 2244.4353456039066
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "trace": [
+  [
+   "PLACEMENT_SEND_BODY",
+   {
+    "x": 149.49979399650695,
+    "y": -39.833890739061786,
+    "z": 2244.4353456039066
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "OBSERVED_UP",
+   {
+    "x": 149.49979399650695,
+    "y": -40,
+    "z": 2244.4353456039066
+   },
+   20
+  ]
+ ],
+ "inventory": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   27
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "string",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   6,
+   null
+  ]
+ ],
+ "cursor": null,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (149.5, -40, 2244.4) in overworld, health 20/20, food 20/20, alive

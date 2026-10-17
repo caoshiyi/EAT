@@ -1,0 +1,11 @@
+# Iteration17 review 1909 — 2026-10-17T19:13:23.295905+00:00
+
+Latestofficial0dragon/11milestones/122deaths; fivecrystalsremoved/fiveremain. Currentdeadline19:24:04UTC, ~11minremain. RootNONPLAYING. No newdeathobserved, but currentP1endingrequiresactualresolution.
+
+8478 closingLOW56sample actual90s/90phase1HP200/issued0, minrecordedrange5.8773 vscaller<5.8. Zeroactiongate/flightonly, NOTparentrejection/perchtest. Retainedclosed54HP20. P3discriminatoraccepted. P1ownerchangedhigher57/5.98test, firstDRY8487 ended19:11:44 withMOVE_BOUND3Y56z1 ANDendingMOVE_BOUND3Y55z2; current3.499Y55.42,z2.2804/HP20/closedFALSE. Plannedhigherroute/return NOTqualified, no bossactionyet. Immediateowneractualendingpriority; don'treplayunchangeddescentorlabelcoordinatesasretainedsafe. Current8474lowerdrycasepassedpreviously, no universalgeometryclaim.
+
+Rootexactpublicmatchedphasecheckcompletedmission/iter17/phase1/: parserPASS/SHA1sizeverified/publicclientselectedcbc.class+javaponly, no game/server/.work/playerexecution. **phase1 STRAFE_PLAYER** hasHoldingexitforNULLtarget orafteronefireballlaunch; no elapsedtimeout/finished-pathHoldingexit. Nonnulltarget/noLOScharge-decrementcanpersistphase1, soHoldinglandinglotterydoesnotapplyyet. Actualtarget/LOSnotobserved—hypothesis/sourcefact, notceiling/methodprescription. P2startedduplicateStrafeaudit19:11:18; rootpublished19:12, usealreadyverifiedartifact/crosscheckquickly, closewithoutnewsource/download/taskgate. P1deriveworldoperationfromfacts, no rootexposure/route/combatdirections.
+
+P4ONEfreshpick8482actual0/returnedOWL20HP, STold130removed/fresh0+sticks2/softwoodinputadopted; whole19:05→19:13source+farm+handoff stillpending. 8485 lower2to149Y-38/HP20/closedTRUE/NO_CURRENT_RANGE/attacksEMPTY; currentfreshpick2/COFF1, noARROW. Primaryprefixnotrealinventory, quantitynotpromised. P4bodyavailablebutnoEndentry; no newwood/courier/protocol loops. P2SOUTH11.5HP/inventoryunchanged; P3camp6.5HPstable/currentend-statevalidity. No moregenericgeometry/sourceaudits; currentliveclosingpriority.
+
+At19:19 allownersupdateOWNjournals exactcurrentlife/body/kit/WIP/ending whileCONTINUING. Rootwillverifyfinalworldat19:24:04 unlessvictoryearlier; don'tstopforclosingcheckpoint. Nextreview19:14/earlieractualending/bossdelta/death. Tokenusageunavailable/no supportedpeerIDsreactivate/no guesses/spawns.

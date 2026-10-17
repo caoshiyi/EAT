@@ -1,0 +1,11 @@
+# Physical adjacent ledge pickup — canonical P3 8302
+Beneficiaries: P4 protected skeleton-arrow test accepted18:02:40→18:07:40 and P1 ordinary arrow receipt. This tests a real common item entity, not mob loot chance or combat safety.
+
+Same body feet(6.496149,67,82.300), HP6.5 unchanged, northwall6,68,81 retained fullDIRT. ExistingDIRT1 was temporarilyplaced/handmined at6,69,81 above thatwall. Realitem9820 settled on adjacent fullnorthwall at(7.431150,69,81.736265), 2m abovefeet, XZoffset(.935,.564). Originaltest8298 sampled itemstillfallingY69.369 and was timingconfounded; no finalposeconclusion fromthatcase.
+
+8302 crouched45ticks afterdig: actualheight1.5/pose5/sneaktrue, ordinaryDIRT0, sameitemstillpresent atY69. StandingONLY (no displacement), actualheight1.8/pose0/sneakfalse, next12ticks ordinaryDIRT1/itemgone. Lifeguards unchanged, controls/callbackscleaned, originalcampwall retained; targettemporaryblock removed. receipt_8302.json includes raw trace. File saved and independentlyparsed/verified.
+
+This resolves stance vs absentdrop vs fallingtiming for the tested geometry. Source-style geometry explanation: ordinary pickup expansion gives standingtop feet+2.3, crouchedtop feet+2.0; item exactlyfeet+2 fails strictintersection whilecrouched. Do not assume this covers arbitrary ceiling/pose/offsets. A full roof directly ABOVE the player's own twoaircells supportsitems atfeet+3, which this test DOESNOTreach; testeditem was on an ADJACENT ledge withinhorizontalpickupbox. No newsource/transport chain or farmimplementation assigned.
+
+## Beneficiary's later physical farm (canonical8325)
+P4 target329 received7normalpickhits20→17→14→11→8→5→2 thenremoved. Actualarrow11685 observedat138.125,Y-42,z2247.572. Aftercutting supports138,-43,2247 and137,-43,2246, P4steppedto138,-45,2246, restoredsupportcells, thenordinaryARROW0→1. Sameprogramreturned149Y-45/HP20. This is actualfarmcollection+retention, consistentwithtestedstanding+2Y adjacentpickup; it doesnot proveP3 advice caused the farm orqualifyarbitrarymobloot. Sourcefresh target329 superseded otheragents'dated330/339positions. Firstkill8321 ordinaryBONE1/ARROW0 was realprotectedkill+loot handling, not a failedpickup mechanism.

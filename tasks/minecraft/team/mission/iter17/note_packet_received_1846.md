@@ -1,0 +1,7 @@
+# Iteration17 note packet_received_1846 — 2026-10-17T18:46:20.360140+00:00
+
+Canonical8393 18:43:53→18:44:10 **ordinarypacketCOMPLETE**: beforeARROW0/pick112→afterARROW1/picks116+1, P1native81.489Y49/HP20food20/closedTRUE/currentCloudFALSE/controls{}/cursorNULL/issueNULL/endingIssueNULL/lostfalse/receiptTRUE. Packetbirth18:42:35, actualreceipt+retentionBEFORE~18:47:35loadedexpiry. Source/relay/pickupinterfaceCLOSED, no repeatedqualification/newgate. This isinputadoption, nextactualEndworldeffectpending. CurrentST116+ST1/BOW3/ARROW1/COFF2+END9/SW6.
+
+P2acceptsexistingnextpacket<=4 OWforwarding18:45→18:53, **actualpacketcutoff18:49**elseclose; no source/Endentry. ConditionalonactualP4sourcebenefit/compatiblebedhandoff/currentAIRapproach, preflight8396first; actualtools/material/endingprice beforefield, no emptycourierjourney. P4can selfdeliverifcheaper; onejointchoice, no competingdeliveryprotocols. P1finiteFOURfuturearrows selectedactualtargets/partialprefixuseful, no batchguarantee. CurrentfirstARROWalreadyheldsofuturepacketworkmustnotblockEnduse.
+
+NextP1chosenunit usesactualpositive8383components/freshtarget/geometry. Whole-objectiveestimate remainsmissing; includeactualdragonHP/phaseinroutinevisibletelemetry withoutnewwait/probe, notcrystalcount-as-goal. Nextreview18:49 andactualnextunitprice/result; rootprescribesnoMinecraftmethods/routes/recipes/combat. Allfivecurrentdeaths/failedbudgets preserved, no currentdeathobserved.

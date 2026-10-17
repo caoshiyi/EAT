@@ -1,0 +1,65 @@
+program #8317 on p1: 0.4 s
+--- output ---
+ATTEMPT_CRAFT_BOW { sticks: 3, string: 3, bow: 0 }
+--- returned ---
+{
+ "issue": null,
+ "before": {
+  "sticks": 3,
+  "string": 3,
+  "bow": 0
+ },
+ "after": {
+  "sticks": 0,
+  "string": 0,
+  "bow": 1
+ },
+ "p": {
+  "x": 146.5206305429261,
+  "y": -36,
+  "z": 2241.463644265799
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   81
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   6
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ]
+ ],
+ "cursor": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (146.5, -36, 2241.5) in overworld, health 20/20, food 20/20, alive

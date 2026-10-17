@@ -1,0 +1,212 @@
+Compiled from "SourceFile"
+public class drt extends dru<duf> {
+  public static final int a;
+
+  public static final int b;
+
+  public static final int c;
+
+  public static final float d;
+
+  private static final hx an;
+
+  private final boolean ao;
+
+  public static hx a(hx);
+    Code:
+       0: getstatic     #26                 // Field an:Lhx;
+       3: aload_0
+       4: invokevirtual #31                 // Method hx.a:(Ljb;)Lhx;
+       7: areturn
+
+  public drt(boolean);
+    Code:
+       0: aload_0
+       1: getstatic     #39                 // Field duf.a:Lcom/mojang/serialization/Codec;
+       4: invokespecial #42                 // Method dru."<init>":(Lcom/mojang/serialization/Codec;)V
+       7: aload_0
+       8: iload_1
+       9: putfield      #44                 // Field ao:Z
+      12: return
+
+  public boolean a(drw<duf>);
+    Code:
+       0: aload_1
+       1: invokevirtual #54                 // Method drw.e:()Lhx;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #57                 // Method drw.b:()Lcuk;
+       9: astore_3
+      10: new           #28                 // class hx
+      13: dup
+      14: aload_2
+      15: invokevirtual #61                 // Method hx.u:()I
+      18: iconst_4
+      19: isub
+      20: aload_2
+      21: invokevirtual #64                 // Method hx.v:()I
+      24: iconst_1
+      25: isub
+      26: aload_2
+      27: invokevirtual #67                 // Method hx.w:()I
+      30: iconst_4
+      31: isub
+      32: invokespecial #70                 // Method hx."<init>":(III)V
+      35: new           #28                 // class hx
+      38: dup
+      39: aload_2
+      40: invokevirtual #61                 // Method hx.u:()I
+      43: iconst_4
+      44: iadd
+      45: aload_2
+      46: invokevirtual #64                 // Method hx.v:()I
+      49: bipush        32
+      51: iadd
+      52: aload_2
+      53: invokevirtual #67                 // Method hx.w:()I
+      56: iconst_4
+      57: iadd
+      58: invokespecial #70                 // Method hx."<init>":(III)V
+      61: invokestatic  #73                 // Method hx.a:(Lhx;Lhx;)Ljava/lang/Iterable;
+      64: invokeinterface #79,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+      69: astore        4
+      71: aload         4
+      73: invokeinterface #87,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      78: ifeq          284
+      81: aload         4
+      83: invokeinterface #91,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      88: checkcast     #28                 // class hx
+      91: astore        5
+      93: aload         5
+      95: aload_2
+      96: ldc2_w        #92                 // double 2.5d
+      99: invokevirtual #96                 // Method hx.a:(Ljb;D)Z
+     102: istore        6
+     104: iload         6
+     106: ifne          121
+     109: aload         5
+     111: aload_2
+     112: ldc2_w        #97                 // double 3.5d
+     115: invokevirtual #96                 // Method hx.a:(Ljb;D)Z
+     118: ifeq          281
+     121: aload         5
+     123: invokevirtual #64                 // Method hx.v:()I
+     126: aload_2
+     127: invokevirtual #64                 // Method hx.v:()I
+     130: if_icmpge     182
+     133: iload         6
+     135: ifeq          154
+     138: aload_0
+     139: aload_3
+     140: aload         5
+     142: getstatic     #103                // Field cws.F:Lcwq;
+     145: invokevirtual #109                // Method cwq.o:()Ldjh;
+     148: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     151: goto          281
+     154: aload         5
+     156: invokevirtual #64                 // Method hx.v:()I
+     159: aload_2
+     160: invokevirtual #64                 // Method hx.v:()I
+     163: if_icmpge     281
+     166: aload_0
+     167: aload_3
+     168: aload         5
+     170: getstatic     #115                // Field cws.fz:Lcwq;
+     173: invokevirtual #109                // Method cwq.o:()Ldjh;
+     176: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     179: goto          281
+     182: aload         5
+     184: invokevirtual #64                 // Method hx.v:()I
+     187: aload_2
+     188: invokevirtual #64                 // Method hx.v:()I
+     191: if_icmple     210
+     194: aload_0
+     195: aload_3
+     196: aload         5
+     198: getstatic     #117                // Field cws.a:Lcwq;
+     201: invokevirtual #109                // Method cwq.o:()Ldjh;
+     204: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     207: goto          281
+     210: iload         6
+     212: ifne          231
+     215: aload_0
+     216: aload_3
+     217: aload         5
+     219: getstatic     #103                // Field cws.F:Lcwq;
+     222: invokevirtual #109                // Method cwq.o:()Ldjh;
+     225: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     228: goto          281
+     231: aload_0
+     232: getfield      #44                 // Field ao:Z
+     235: ifeq          261
+     238: aload_0
+     239: aload_3
+     240: new           #28                 // class hx
+     243: dup
+     244: aload         5
+     246: invokespecial #120                // Method hx."<init>":(Ljb;)V
+     249: getstatic     #123                // Field cws.fx:Lcwq;
+     252: invokevirtual #109                // Method cwq.o:()Ldjh;
+     255: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     258: goto          281
+     261: aload_0
+     262: aload_3
+     263: new           #28                 // class hx
+     266: dup
+     267: aload         5
+     269: invokespecial #120                // Method hx."<init>":(Ljb;)V
+     272: getstatic     #117                // Field cws.a:Lcwq;
+     275: invokevirtual #109                // Method cwq.o:()Ldjh;
+     278: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     281: goto          71
+     284: iconst_0
+     285: istore        4
+     287: iload         4
+     289: iconst_4
+     290: if_icmpge     316
+     293: aload_0
+     294: aload_3
+     295: aload_2
+     296: iload         4
+     298: invokevirtual #126                // Method hx.b:(I)Lhx;
+     301: getstatic     #103                // Field cws.F:Lcwq;
+     304: invokevirtual #109                // Method cwq.o:()Ldjh;
+     307: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     310: iinc          4, 1
+     313: goto          287
+     316: aload_2
+     317: iconst_2
+     318: invokevirtual #126                // Method hx.b:(I)Lhx;
+     321: astore        4
+     323: getstatic     #129                // Field ic$c.a:Lic$c;
+     326: invokevirtual #130                // Method ic$c.iterator:()Ljava/util/Iterator;
+     329: astore        5
+     331: aload         5
+     333: invokeinterface #87,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     338: ifeq          385
+     341: aload         5
+     343: invokeinterface #91,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     348: checkcast     #10                 // class ic
+     351: astore        6
+     353: aload_0
+     354: aload_3
+     355: aload         4
+     357: aload         6
+     359: invokevirtual #133                // Method hx.a:(Lic;)Lhx;
+     362: getstatic     #136                // Field cws.cq:Lcwq;
+     365: invokevirtual #109                // Method cwq.o:()Ldjh;
+     368: getstatic     #142                // Field dfq.g:Ldkb;
+     371: aload         6
+     373: invokevirtual #147                // Method djh.a:(Ldkk;Ljava/lang/Comparable;)Ljava/lang/Object;
+     376: checkcast     #144                // class djh
+     379: invokevirtual #112                // Method a:(Lctx;Lhx;Ldjh;)V
+     382: goto          331
+     385: iconst_1
+     386: ireturn
+
+  static {};
+    Code:
+       0: getstatic     #162                // Field hx.b:Lhx;
+       3: putstatic     #26                 // Field an:Lhx;
+       6: return
+}

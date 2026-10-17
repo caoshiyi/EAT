@@ -1,0 +1,8 @@
+# P4 requested actual .25-per-hit interpretation
+17:28:59 P4 requested P2 explanation after actual8079 (combat58_2.out). Response8097 at17:29:40 (41s). Scope finite explanation of current actual attack receipts, not another kit or entry.
+
+Actual FOUR normal parent attacks500ms apart while flightphase1, from5.6,Y58, actualAABBdistance5.10..5.80. SampledbossHP200→199.75→199.5→199.25→200, ownHP20/cloudnone/immediate ordinary lowerretreat0Y54 retained20HP. This is first verified physicaldragon damage (later healed) and parentdispatch adoption. Not victory.
+
+Current loop suspends in await tick(10) after each attack, samples only after return. Existing exactsource fullhand BODYdamage1.25 and crystalheal1/every10ticks predicts NET.25 each sampled10ticks. Therefore net .25 cannot alone imply raw .25/cooldownfailure. Discriminator suggested entityUpdate listener on actualdragonmetadata[9] while waits run, or tick1 trace, to capture expected200→198.75→199.75 transitions. Installed Mineflayer entities.js453–458 updatesmetadata and emitsentityUpdate(entity). This remains a causal hypothesis until actual intermediate transition; no claim source guarantees firsthit1.25.
+
+P4 selected changed crystal melee/shield experiment at17:29:39, rendering head efficiency optional. Legitimate head IDs/geometry NOTqualified: exact EnderDragon ctor creates8part entities headfirst, recreateFromPacket bytecode maps array[i].id=packet.id+i. Must reconcile packet.ID/serverpart registry and nativehead geometry, not assume parent+1 or attack guessed IDs. Current tracked parent normal attack already physically works; tracked endcrystal test needs no headparts. No P2 multipartattack implementation/execution.

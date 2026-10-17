@@ -1,0 +1,511 @@
+Compiled from "SourceFile"
+public interface cts extends css,csz,cuf,cuq$a {
+  public abstract dld a(int, int, dli, boolean);
+
+  public abstract boolean b(int, int);
+
+  public abstract int a(doq$a, int, int);
+
+  public abstract int C_();
+
+  public abstract cuq G_();
+
+  public default ih<cuo> t(hx);
+    Code:
+       0: aload_0
+       1: invokeinterface #44,  1           // InterfaceMethod G_:()Lcuq;
+       6: aload_1
+       7: invokevirtual #46                 // Method cuq.a:(Lhx;)Lih;
+      10: areturn
+
+  public default java.util.stream.Stream<djh> c(elo);
+    Code:
+       0: aload_1
+       1: getfield      #57                 // Field elo.a:D
+       4: invokestatic  #62                 // Method auo.a:(D)I
+       7: istore_2
+       8: aload_1
+       9: getfield      #65                 // Field elo.d:D
+      12: invokestatic  #62                 // Method auo.a:(D)I
+      15: istore_3
+      16: aload_1
+      17: getfield      #67                 // Field elo.b:D
+      20: invokestatic  #62                 // Method auo.a:(D)I
+      23: istore        4
+      25: aload_1
+      26: getfield      #70                 // Field elo.e:D
+      29: invokestatic  #62                 // Method auo.a:(D)I
+      32: istore        5
+      34: aload_1
+      35: getfield      #72                 // Field elo.c:D
+      38: invokestatic  #62                 // Method auo.a:(D)I
+      41: istore        6
+      43: aload_1
+      44: getfield      #75                 // Field elo.f:D
+      47: invokestatic  #62                 // Method auo.a:(D)I
+      50: istore        7
+      52: aload_0
+      53: iload_2
+      54: iload         4
+      56: iload         6
+      58: iload_3
+      59: iload         5
+      61: iload         7
+      63: invokeinterface #78,  7           // InterfaceMethod a:(IIIIII)Z
+      68: ifeq          79
+      71: aload_0
+      72: aload_1
+      73: invokeinterface #80,  2           // InterfaceMethod a:(Lelo;)Ljava/util/stream/Stream;
+      78: areturn
+      79: invokestatic  #86                 // InterfaceMethod java/util/stream/Stream.empty:()Ljava/util/stream/Stream;
+      82: areturn
+
+  public default int a(hx, cta);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: aload_1
+       3: invokeinterface #97,  2           // InterfaceMethod t:(Lhx;)Lih;
+       8: invokeinterface #102,  1          // InterfaceMethod ih.a:()Ljava/lang/Object;
+      13: checkcast     #104                // class cuo
+      16: aload_1
+      17: invokevirtual #107                // Method hx.u:()I
+      20: i2d
+      21: aload_1
+      22: invokevirtual #110                // Method hx.w:()I
+      25: i2d
+      26: invokeinterface #116,  6          // InterfaceMethod cta.getColor:(Lcuo;DD)I
+      31: ireturn
+
+  public default ih<cuo> getNoiseBiome(int, int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #125                // Method is.e:(I)I
+       5: iload_3
+       6: invokestatic  #125                // Method is.e:(I)I
+       9: getstatic     #130                // Field dli.f:Ldli;
+      12: iconst_0
+      13: invokeinterface #132,  5          // InterfaceMethod a:(IILdli;Z)Ldld;
+      18: astore        4
+      20: aload         4
+      22: ifnull        34
+      25: aload         4
+      27: iload_1
+      28: iload_2
+      29: iload_3
+      30: invokevirtual #136                // Method dld.getNoiseBiome:(III)Lih;
+      33: areturn
+      34: aload_0
+      35: iload_1
+      36: iload_2
+      37: iload_3
+      38: invokeinterface #138,  4          // InterfaceMethod a:(III)Lih;
+      43: areturn
+
+  public abstract ih<cuo> a(int, int, int);
+
+  public abstract boolean y_();
+
+  public abstract int A_();
+
+  public abstract dmq E_();
+
+  public default int J_();
+    Code:
+       0: aload_0
+       1: invokeinterface #147,  1          // InterfaceMethod E_:()Ldmq;
+       6: invokevirtual #152                // Method dmq.n:()I
+       9: ireturn
+
+  public default int K_();
+    Code:
+       0: aload_0
+       1: invokeinterface #147,  1          // InterfaceMethod E_:()Ldmq;
+       6: invokevirtual #156                // Method dmq.o:()I
+       9: ireturn
+
+  public default hx a(doq$a, hx);
+    Code:
+       0: new           #22                 // class hx
+       3: dup
+       4: aload_2
+       5: invokevirtual #107                // Method hx.u:()I
+       8: aload_0
+       9: aload_1
+      10: aload_2
+      11: invokevirtual #107                // Method hx.u:()I
+      14: aload_2
+      15: invokevirtual #110                // Method hx.w:()I
+      18: invokeinterface #159,  4          // InterfaceMethod a:(Ldoq$a;II)I
+      23: aload_2
+      24: invokevirtual #110                // Method hx.w:()I
+      27: invokespecial #163                // Method hx."<init>":(III)V
+      30: areturn
+
+  public default boolean u(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #169,  2          // InterfaceMethod a_:(Lhx;)Ldjh;
+       7: invokevirtual #174                // Method djh.i:()Z
+      10: ireturn
+
+  public default boolean v(hx);
+    Code:
+       0: aload_1
+       1: invokevirtual #177                // Method hx.v:()I
+       4: aload_0
+       5: invokeinterface #179,  1          // InterfaceMethod A_:()I
+      10: if_icmplt     21
+      13: aload_0
+      14: aload_1
+      15: invokeinterface #182,  2          // InterfaceMethod h:(Lhx;)Z
+      20: ireturn
+      21: new           #22                 // class hx
+      24: dup
+      25: aload_1
+      26: invokevirtual #107                // Method hx.u:()I
+      29: aload_0
+      30: invokeinterface #179,  1          // InterfaceMethod A_:()I
+      35: aload_1
+      36: invokevirtual #110                // Method hx.w:()I
+      39: invokespecial #163                // Method hx."<init>":(III)V
+      42: astore_2
+      43: aload_0
+      44: aload_2
+      45: invokeinterface #182,  2          // InterfaceMethod h:(Lhx;)Z
+      50: ifne          55
+      53: iconst_0
+      54: ireturn
+      55: aload_2
+      56: invokevirtual #185                // Method hx.d:()Lhx;
+      59: astore_2
+      60: aload_2
+      61: invokevirtual #177                // Method hx.v:()I
+      64: aload_1
+      65: invokevirtual #177                // Method hx.v:()I
+      68: if_icmple     105
+      71: aload_0
+      72: aload_2
+      73: invokeinterface #169,  2          // InterfaceMethod a_:(Lhx;)Ldjh;
+      78: astore_3
+      79: aload_3
+      80: aload_0
+      81: aload_2
+      82: invokevirtual #188                // Method djh.b:(Lcsv;Lhx;)I
+      85: ifle          97
+      88: aload_3
+      89: invokevirtual #191                // Method djh.k:()Z
+      92: ifne          97
+      95: iconst_0
+      96: ireturn
+      97: aload_2
+      98: invokevirtual #185                // Method hx.d:()Lhx;
+     101: astore_2
+     102: goto          60
+     105: iconst_1
+     106: ireturn
+
+  public default float w(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #196,  2          // InterfaceMethod x:(Lhx;)F
+       7: ldc           #197                // float 0.5f
+       9: fsub
+      10: freturn
+
+  public default float x(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #201,  2          // InterfaceMethod A:(Lhx;)I
+       7: i2f
+       8: ldc           #202                // float 15.0f
+      10: fdiv
+      11: fstore_2
+      12: fload_2
+      13: ldc           #203                // float 4.0f
+      15: ldc           #204                // float 3.0f
+      17: fload_2
+      18: fmul
+      19: fsub
+      20: fdiv
+      21: fstore_3
+      22: aload_0
+      23: invokeinterface #147,  1          // InterfaceMethod E_:()Ldmq;
+      28: invokevirtual #208                // Method dmq.s:()F
+      31: fload_3
+      32: fconst_1
+      33: invokestatic  #211                // Method auo.i:(FFF)F
+      36: freturn
+
+  public default dld y(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #107                // Method hx.u:()I
+       5: invokestatic  #218                // Method iz.a:(I)I
+       8: aload_1
+       9: invokevirtual #110                // Method hx.w:()I
+      12: invokestatic  #218                // Method iz.a:(I)I
+      15: invokeinterface #221,  3          // InterfaceMethod a:(II)Ldld;
+      20: areturn
+
+  public default dld a(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: getstatic     #223                // Field dli.n:Ldli;
+       6: iconst_1
+       7: invokeinterface #132,  5          // InterfaceMethod a:(IILdli;Z)Ldld;
+      12: areturn
+
+  public default dld a(int, int, dli);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: aload_3
+       4: iconst_1
+       5: invokeinterface #132,  5          // InterfaceMethod a:(IILdli;Z)Ldld;
+      10: areturn
+
+  public default csv c(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: getstatic     #227                // Field dli.c:Ldli;
+       6: iconst_0
+       7: invokeinterface #132,  5          // InterfaceMethod a:(IILdli;Z)Ldld;
+      12: areturn
+
+  public default boolean z(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #232,  2          // InterfaceMethod b_:(Lhx;)Leer;
+       7: getstatic     #237                // Field asm.a:Lasw;
+      10: invokevirtual #242                // Method eer.a:(Lasw;)Z
+      13: ireturn
+
+  public default boolean d(elo);
+    Code:
+       0: aload_1
+       1: getfield      #57                 // Field elo.a:D
+       4: invokestatic  #62                 // Method auo.a:(D)I
+       7: istore_2
+       8: aload_1
+       9: getfield      #65                 // Field elo.d:D
+      12: invokestatic  #245                // Method auo.c:(D)I
+      15: istore_3
+      16: aload_1
+      17: getfield      #67                 // Field elo.b:D
+      20: invokestatic  #62                 // Method auo.a:(D)I
+      23: istore        4
+      25: aload_1
+      26: getfield      #70                 // Field elo.e:D
+      29: invokestatic  #245                // Method auo.c:(D)I
+      32: istore        5
+      34: aload_1
+      35: getfield      #72                 // Field elo.c:D
+      38: invokestatic  #62                 // Method auo.a:(D)I
+      41: istore        6
+      43: aload_1
+      44: getfield      #75                 // Field elo.f:D
+      47: invokestatic  #245                // Method auo.c:(D)I
+      50: istore        7
+      52: new           #20                 // class hx$a
+      55: dup
+      56: invokespecial #248                // Method hx$a."<init>":()V
+      59: astore        8
+      61: iload_2
+      62: istore        9
+      64: iload         9
+      66: iload_3
+      67: if_icmpge     142
+      70: iload         4
+      72: istore        10
+      74: iload         10
+      76: iload         5
+      78: if_icmpge     136
+      81: iload         6
+      83: istore        11
+      85: iload         11
+      87: iload         7
+      89: if_icmpge     130
+      92: aload_0
+      93: aload         8
+      95: iload         9
+      97: iload         10
+      99: iload         11
+     101: invokevirtual #251                // Method hx$a.d:(III)Lhx$a;
+     104: invokeinterface #169,  2          // InterfaceMethod a_:(Lhx;)Ldjh;
+     109: astore        12
+     111: aload         12
+     113: invokevirtual #254                // Method djh.u:()Leer;
+     116: invokevirtual #256                // Method eer.c:()Z
+     119: ifne          124
+     122: iconst_1
+     123: ireturn
+     124: iinc          11, 1
+     127: goto          85
+     130: iinc          10, 1
+     133: goto          74
+     136: iinc          9, 1
+     139: goto          64
+     142: iconst_0
+     143: ireturn
+
+  public default int A(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: invokeinterface #264,  1          // InterfaceMethod C_:()I
+       8: invokeinterface #267,  3          // InterfaceMethod c:(Lhx;I)I
+      13: ireturn
+
+  public default int c(hx, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #107                // Method hx.u:()I
+       4: ldc_w         #268                // int -30000000
+       7: if_icmplt     40
+      10: aload_1
+      11: invokevirtual #110                // Method hx.w:()I
+      14: ldc_w         #268                // int -30000000
+      17: if_icmplt     40
+      20: aload_1
+      21: invokevirtual #107                // Method hx.u:()I
+      24: ldc_w         #269                // int 30000000
+      27: if_icmpge     40
+      30: aload_1
+      31: invokevirtual #110                // Method hx.w:()I
+      34: ldc_w         #269                // int 30000000
+      37: if_icmplt     43
+      40: bipush        15
+      42: ireturn
+      43: aload_0
+      44: aload_1
+      45: iload_2
+      46: invokeinterface #271,  3          // InterfaceMethod b:(Lhx;I)I
+      51: ireturn
+
+  public default boolean f(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #218                // Method iz.a:(I)I
+       5: iload_2
+       6: invokestatic  #218                // Method iz.a:(I)I
+       9: invokeinterface #273,  3          // InterfaceMethod b:(II)Z
+      14: ireturn
+
+  public default boolean B(hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #107                // Method hx.u:()I
+       5: aload_1
+       6: invokevirtual #110                // Method hx.w:()I
+       9: invokeinterface #276,  3          // InterfaceMethod f:(II)Z
+      14: ireturn
+
+  public default boolean a(hx, hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #107                // Method hx.u:()I
+       5: aload_1
+       6: invokevirtual #177                // Method hx.v:()I
+       9: aload_1
+      10: invokevirtual #110                // Method hx.w:()I
+      13: aload_2
+      14: invokevirtual #107                // Method hx.u:()I
+      17: aload_2
+      18: invokevirtual #177                // Method hx.v:()I
+      21: aload_2
+      22: invokevirtual #110                // Method hx.w:()I
+      25: invokeinterface #78,  7           // InterfaceMethod a:(IIIIII)Z
+      30: ireturn
+
+  public default boolean a(int, int, int, int, int, int);
+    Code:
+       0: iload         5
+       2: aload_0
+       3: invokeinterface #279,  1          // InterfaceMethod J_:()I
+       8: if_icmplt     21
+      11: iload_2
+      12: aload_0
+      13: invokeinterface #282,  1          // InterfaceMethod al:()I
+      18: if_icmplt     23
+      21: iconst_0
+      22: ireturn
+      23: aload_0
+      24: iload_1
+      25: iload_3
+      26: iload         4
+      28: iload         6
+      30: invokeinterface #285,  5          // InterfaceMethod b:(IIII)Z
+      35: ireturn
+
+  public default boolean b(int, int, int, int);
+    Code:
+       0: iload_1
+       1: invokestatic  #218                // Method iz.a:(I)I
+       4: istore        5
+       6: iload_3
+       7: invokestatic  #218                // Method iz.a:(I)I
+      10: istore        6
+      12: iload_2
+      13: invokestatic  #218                // Method iz.a:(I)I
+      16: istore        7
+      18: iload         4
+      20: invokestatic  #218                // Method iz.a:(I)I
+      23: istore        8
+      25: iload         5
+      27: istore        9
+      29: iload         9
+      31: iload         6
+      33: if_icmpgt     74
+      36: iload         7
+      38: istore        10
+      40: iload         10
+      42: iload         8
+      44: if_icmpgt     68
+      47: aload_0
+      48: iload         9
+      50: iload         10
+      52: invokeinterface #273,  3          // InterfaceMethod b:(II)Z
+      57: ifne          62
+      60: iconst_0
+      61: ireturn
+      62: iinc          10, 1
+      65: goto          40
+      68: iinc          9, 1
+      71: goto          29
+      74: iconst_1
+      75: ireturn
+
+  public abstract iu I_();
+
+  public abstract chs I();
+
+  public default <T> ij<T> a(ahf<? extends it<? extends T>>);
+    Code:
+       0: aload_0
+       1: invokeinterface #292,  1          // InterfaceMethod I_:()Liu;
+       6: aload_1
+       7: invokeinterface #297,  2          // InterfaceMethod iu.d:(Lahf;)Lit;
+      12: astore_2
+      13: aload_2
+      14: invokeinterface #303,  1          // InterfaceMethod it.p:()Lij$c;
+      19: aload_0
+      20: invokeinterface #305,  1          // InterfaceMethod I:()Lchs;
+      25: invokeinterface #308,  2          // InterfaceMethod ij$c.a:(Lchs;)Lij;
+      30: areturn
+}

@@ -1,0 +1,227 @@
+program #8065 on p4: 9.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T17:26:51.259Z",
+ "issue": "MISSING_ROOF_(5, 58, 0)",
+ "lost": false,
+ "p": {
+  "x": 3.7095603765325804,
+  "y": 57,
+  "z": 0.5000687742114103
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "wooden_pickaxe",
+   1,
+   15
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   38
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "end_stone",
+   24,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "STEP",
+   [
+    1,
+    54,
+    0
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    2,
+    54,
+    0
+   ]
+  ],
+  [
+   "STEP",
+   [
+    2,
+    55,
+    0
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    3,
+    55,
+    0
+   ]
+  ],
+  [
+   "CUT",
+   [
+    3,
+    56,
+    0
+   ]
+  ],
+  [
+   "STEP",
+   [
+    3,
+    56,
+    0
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    4,
+    58,
+    0
+   ]
+  ],
+  [
+   "CUT",
+   [
+    4,
+    57,
+    0
+   ]
+  ],
+  [
+   "STEP",
+   [
+    4,
+    57,
+    0
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    4,
+    59,
+    0
+   ]
+  ]
+ ],
+ "clouds": [],
+ "dragon": [
+  [
+   171,
+   {
+    "x": 12.931316025260656,
+    "y": 70.6194968644243,
+    "z": 13.800661616251944
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  ]
+ ],
+ "items": [
+  [
+   1006,
+   {
+    "x": -1.007004914262916,
+    "y": 60,
+    "z": -12.173729732836104
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  ],
+  [
+   1123,
+   {
+    "x": -7.561791331629785,
+    "y": 60,
+    "z": -1.9813657633907351
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ],
+ "recoveryIssue": "MOVE_ACK_(3, 56, 0)",
+ "pickupBefore": [
+  [
+   "wooden_pickaxe",
+   1,
+   15
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   34
+  ],
+  [
+   "end_stone",
+   23,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P3 finite snowtest accepted. Prefer snow for ONE crystal effect test over bow with unqualified arrows. Please prove ordinary shovel→snowball→projectile first, then price existing-route delivery of small remaining packet to stronghold P1; no newroute/stockq
+p1: uota assumed. I own localpick+route staging to support actual Endshot only after P4 agreement. P4 sole encounter operator remains; can adopt snowshot yourself if gear/reach trial fails.
+--- p4 now: (3.7, 57, 0.5) in the_end, health 20/20, food 20/20, alive

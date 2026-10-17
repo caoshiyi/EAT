@@ -1,0 +1,253 @@
+program #8374 on p2: 0.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "rays": [
+  [
+   "creeper",
+   {
+    "x": 150.18663799219573,
+    "y": -38,
+    "z": 2252.5914375684283
+   },
+   {
+    "x": 149,
+    "y": -37,
+    "z": 2251
+   }
+  ],
+  [
+   "spider",
+   {
+    "x": 144.30000001192093,
+    "y": -36.89999997615814,
+    "z": 2246.699999988079
+   },
+   {
+    "x": 144,
+    "y": -36,
+    "z": 2246
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 143.36409306988037,
+    "y": -39,
+    "z": 2246.300000011921
+   },
+   {
+    "x": 143,
+    "y": -38,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 142.24115893908584,
+    "y": -40,
+    "z": 2247.8754618551166
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 143.99097810141498,
+    "y": -38.07840000152588,
+    "z": 2247.699999988079
+   },
+   {
+    "x": 144,
+    "y": -36,
+    "z": 2246
+   }
+  ],
+  [
+   "creeper",
+   {
+    "x": 142.96102801637068,
+    "y": -39.5,
+    "z": 2247.91289120417
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 142.8661975991628,
+    "y": -39.5,
+    "z": 2247.2410042796664
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 143.69993229409616,
+    "y": -39,
+    "z": 2248.6999983345013
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2248
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 144.28521686551753,
+    "y": -38,
+    "z": 2246.300105518398
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2247.7000061334047
+   },
+   {
+    "x": 138,
+    "y": -40,
+    "z": 2247
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 143.4671433683497,
+    "y": -39,
+    "z": 2246.843387150161
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "skeleton",
+   {
+    "x": 136.2583297780413,
+    "y": -42,
+    "z": 2254.2686116864934
+   },
+   {
+    "x": 137,
+    "y": -40,
+    "z": 2253
+   }
+  ],
+  [
+   "creeper",
+   {
+    "x": 143.0456057606966,
+    "y": -39.5,
+    "z": 2248.6678808914435
+   },
+   {
+    "x": 144,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 141.95619893571336,
+    "y": -39.70329102873802,
+    "z": 2247.1696258163106
+   },
+   {
+    "x": 143,
+    "y": -37,
+    "z": 2245
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 137.41368254600079,
+    "y": -41,
+    "z": 2247.417264676028
+   },
+   {
+    "x": 138,
+    "y": -40,
+    "z": 2247
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 148.3640553434568,
+    "y": -36,
+    "z": 2246.5458269405467
+   },
+   {
+    "x": 148,
+    "y": -35,
+    "z": 2245
+   }
+  ]
+ ],
+ "roof": "basalt",
+ "at": "2026-10-17T18:31:03.591Z",
+ "issue": null,
+ "tossed": false,
+ "p": {
+  "x": 146.49991369716318,
+  "y": -36,
+  "z": 2243.5922055970473
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "controls": {},
+ "cursor": null,
+ "goal": null,
+ "inv": [
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+p1: Actual8365 SIX-UP55+SIX-DOWN49 drytrial COMPLETE/full20HP/12Endstone/ST102/globaldryReturnTRUE, no highidle. NewSMALL controltest atnativeLOW49 ONLY: activatebowbehindclosedroof, ordinaryDIG ownroof51 WHILE stillholding/drawingbow, thenaimDOWN/release+reco
+p1: verarrow andrestore roof. Hypothesis normaldig preservesfullbowcharge so finalfieldroof can be minedwhileprotectedcharged, reducingexposure; actualarrowspawn/velocity/ammodelta decide. Ifcancelled/notshot, usealreadyvalidatednormalcut→24tickcharge→immediat
+p1: eretreat withfreshfireballguard. Never assumecombo works.
+--- p2 now: (146.5, -36, 2243.6) in overworld, health 11.5/20, food 9/20, alive

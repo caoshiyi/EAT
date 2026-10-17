@@ -1,0 +1,27 @@
+{
+  "assumptions": [
+    "normal unenchanted noncritical5 incomingdamage actuallyreachesBODY",
+    "all23 attacksaccepted with fullnominalstrength13ticks apart",
+    "maxHP200; sittingdamagecounter starts0",
+    "a retainedhealingcrystal keepshealing1HP/10ticks wheneverbelowmax",
+    "no otherdamage/healing/phasechange beforethreshold;20TPS ONLYfor secondsconversion"
+  ],
+  "incoming_damage": 5,
+  "body_damage": 2.25,
+  "sitting_threshold_strictly_over": 50.0,
+  "first_hit_count_crossing": 23,
+  "gross_damage": 51.75,
+  "first_to_last_span_ticks": 286,
+  "span_seconds_at20TPS": 14.3,
+  "healing_over_span_phase_range": [
+    28,
+    29
+  ],
+  "illustrative_net_hp_lost_range": [
+    22.75,
+    23.75
+  ],
+  "connected_flight_ticks_to_reheal_at_most": 240,
+  "connected_flight_seconds_at20TPS": 12.0,
+  "status": "conditional arithmetic, NOTlivebossHP/DPS/phase-duration/cadence recommendation or impossibilityproof"
+}

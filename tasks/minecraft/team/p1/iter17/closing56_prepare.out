@@ -1,0 +1,412 @@
+program #8474 on p1: 12.8 s
+--- output ---
+ATTEMPT_CUT [ 2, 56, 0 ] end_stone
+ATTEMPT_CUT [ 1, 57, 0 ] end_stone
+ATTEMPT_CUT [ 0, 57, 0 ] end_stone
+ATTEMPT_CUT [ 0, 56, 0 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 158,
+ "p": {
+  "x": 2.4289454752161075,
+  "y": 54,
+  "z": 0.5000124103564554
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 13,
+ "trace": [
+  [
+   "OBSERVED_MOVE",
+   [
+    2,
+    54,
+    0
+   ],
+   {
+    "x": 2.489494783426644,
+    "y": 54,
+    "z": 0.4998584720399559
+   },
+   {
+    "x": 0.00960391752289592,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    2,
+    57,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    2,
+    56,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    1,
+    54,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    1,
+    57,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    0,
+    55,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    0,
+    57,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    0,
+    56,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    1,
+    55,
+    0
+   ],
+   {
+    "x": 1.3996150827780955,
+    "y": 55,
+    "z": 0.4998584720399559
+   },
+   {
+    "x": -0.034837022835793756,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    0,
+    56,
+    0
+   ],
+   {
+    "x": 0.42655445249738666,
+    "y": 56,
+    "z": 0.4998584720399559
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "ACTUAL_LOW56_REACHED",
+   {
+    "x": 0.42655445249738666,
+    "y": 56,
+    "z": 0.4998584720399559
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 0.42655445249738666,
+    "y": 56,
+    "z": 0.4998584720399559
+   },
+   {
+    "x": -0.02186598188113837,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 1.0095784637919858,
+    "y": 56,
+    "z": 0.4998584720398791
+   },
+   {
+    "x": 0.10544127112144516,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 1.7,
+    "y": 55.76636799395752,
+    "z": 0.5001150352476664
+   },
+   {
+    "x": 0,
+    "y": -0.230527368912964,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    1,
+    55,
+    0
+   ],
+   {
+    "x": 1.5137956220263997,
+    "y": 55,
+    "z": 0.5001150352476664
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 1.5137956220263997,
+    "y": 55,
+    "z": 0.5001150352476664
+   },
+   {
+    "x": -0.014559017039985604,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 2.111483888525306,
+    "y": 55,
+    "z": 0.5001150352475896
+   },
+   {
+    "x": 0.10609066409984266,
+    "y": -0.0784000015258789,
+    "z": -1.0465256568857115e-14
+   },
+   20,
+   null
+  ],
+  [
+   "ESCAPE_BODY",
+   {
+    "x": 2.686382551135533,
+    "y": 54.53584062504456,
+    "z": 0.5000124103564554
+   },
+   {
+    "x": 0.060627297813996624,
+    "y": -0.30431682745754424,
+    "z": 1.0921400154796096e-18
+   },
+   20,
+   null
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    2,
+    54,
+    0
+   ],
+   {
+    "x": 2.466784907965448,
+    "y": 54,
+    "z": 0.5000124103564554
+   },
+   {
+    "x": -0.018854786748896003,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "escape",
+   false
+  ],
+  [
+   "ACTUAL_DRY_DOWN_TWO",
+   {
+    "x": 2.466784907965448,
+    "y": 54,
+    "z": 0.5000124103564554
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    2,
+    56,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    1,
+    55,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "ACTUAL_RETAINED_LOW",
+   {
+    "x": 2.4289454752161075,
+    "y": 54,
+    "z": 0.5000124103564554
+   },
+   20,
+   true
+  ]
+ ],
+ "inventory": [
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   6
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   10,
+   null
+  ],
+  [
+   "bow",
+   1,
+   6
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   24
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "dry": true,
+ "dragon": [
+  [
+   13050,
+   {
+    "x": 31.746092540451325,
+    "y": 72.67745429217892,
+    "z": 16.083496892282955
+   },
+   200,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: 8470 actual54 HP20/noCloud but CLOSEDfalse: cap1,54,0 stillAIR, endingIssue placementrefused. This is endinggap notbossattackfailure; repairnativeclosure beforewaiting/perch. Currentdragon13050 HP200phase1 verifiedreceipt; futurehit HPdelta nowinterpretabl
+p3: e.
+p2: Canonicalfourthheader is8468 (notreported8467): actual6→5/Arrow1→0/target12.5Y101,+39.5GONE/fullLOW49HP20; freshdragon13050 root20.1246Y70.263z6.905/HP200phase1. Raw p2/iter17/p1_third_fourth.txt. Thuscrystaleffectsretained butbossHPstill200 inthissnapshot
+p2: . P2normalreader flaggedtrailingSAYrecordNO_RETURN; fixingonlyevidencehandling, no gate/probe.
+p3: 8470 caprefusal discriminator: bodyX2.2516 with0.6width => minX1.9516 overlaps intendedcapX1..2 by0.0484. Actorcollision candidate, notstock/path. Ifnativefloor/roofvalid, centerX>=2.31 clearscap face; then checkactualfullblock+body, notplacepromise. No p3
+p3: peeraction executed.
+--- p1 now: (2.4, 54, 0.5) in the_end, health 20/20, food 20/20, alive

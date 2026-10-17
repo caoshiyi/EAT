@@ -1,0 +1,11 @@
+net.minecraft.server.network.ServerGamePacketListenerImpl$1 -> aoc$1:
+# {"fileName":"ServerGamePacketListenerImpl.java","id":"sourceFile"}
+    net.minecraft.server.level.ServerLevel val$level -> a
+    net.minecraft.world.entity.Entity val$target -> b
+    net.minecraft.server.network.ServerGamePacketListenerImpl this$0 -> c
+    1529:1529:void <init>(net.minecraft.server.network.ServerGamePacketListenerImpl,net.minecraft.server.level.ServerLevel,net.minecraft.world.entity.Entity) -> <init>
+    1531:1543:void performInteraction(net.minecraft.world.InteractionHand,net.minecraft.server.network.ServerGamePacketListenerImpl$EntityInteraction) -> a
+    1547:1548:void onInteraction(net.minecraft.world.InteractionHand) -> a
+    1552:1553:void onInteraction(net.minecraft.world.InteractionHand,net.minecraft.world.phys.Vec3) -> a
+    1557:1569:void onAttack() -> a
+    1552:1552:net.minecraft.world.InteractionResult lambda$onInteraction$0(net.minecraft.world.phys.Vec3,net.minecraft.server.level.ServerPlayer,net.minecraft.world.entity.Entity,net.minecraft.world.InteractionHand) -> a
