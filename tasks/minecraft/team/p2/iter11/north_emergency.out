@@ -1,0 +1,24 @@
+program #5102 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "BODY",
+ "dead": false,
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "north": [
+  "stone",
+  "dirt"
+ ],
+ "kit": []
+}
+--- chat since this player's previous program ---
+[server] p2 went up in flames
+--- p2 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

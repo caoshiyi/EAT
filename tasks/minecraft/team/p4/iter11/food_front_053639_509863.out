@@ -1,0 +1,60 @@
+program #5197 on p4: 23.9 s
+--- output ---
+DOOR_ACTUAL exit (6.515738714954545, 66.42159999847412, 79.28405421962735)
+FRUIT_ACTUAL Vec3 { x: 20, y: 68, z: 89 } 2 { age: '1' }
+FRUIT_ACTUAL Vec3 { x: 22, y: 68, z: 89 } 0 { age: '1' }
+FOOD_WORK_ISSUE FRUIT_RECEIPT Vec3 { x: 21.51721069101734, y: 68, z: 89.37132900619656 } 9.833333015441895
+DOOR_ACTUAL enter (6.58892314924993, 67, 82.47831490583026)
+--- returned ---
+{
+ "issue": "FRUIT_RECEIPT",
+ "recoveryIssue": null,
+ "harvests": [
+  [
+   [
+    20,
+    68,
+    89
+   ],
+   2
+  ]
+ ],
+ "gain": 2,
+ "protectedEnd": true,
+ "p": {
+  "x": 6.58892314924993,
+  "y": 67,
+  "z": 82.7
+ },
+ "hp": 9.833333015441895,
+ "food": 17,
+ "scope": {
+  "inner": [
+   "cobblestone",
+   "cobblestone"
+  ],
+  "south": [
+   [
+    "air",
+    "air",
+    "air"
+   ],
+   [
+    "air",
+    "air",
+    "air"
+   ]
+  ]
+ },
+ "kit": [
+  [
+   "sweet_berries",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 23900
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.6, 67, 82.7) in overworld, health 9.8/20, food 17/20, alive

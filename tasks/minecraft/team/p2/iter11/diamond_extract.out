@@ -1,0 +1,69 @@
+program #5406 on p2: 23.1 s
+--- output ---
+ORE_FRESH [
+  [ [ 3, -27, 69 ], 'deepslate_diamond_ore' ],
+  [ [ 2, -27, 69 ], 'deepslate_diamond_ore' ],
+  [ [ 2, -27, 68 ], 'deepslate_diamond_ore' ],
+  [ [ 3, -28, 69 ], 'deepslate_diamond_ore' ],
+  [ [ 2, -28, 69 ], 'deepslate_diamond_ore' ],
+  [ [ 2, -28, 68 ], 'deepslate_diamond_ore' ]
+]
+ORE_RECEIPT Vec3 { x: 3, y: -27, z: 69 } 1 20
+ORE_RECEIPT Vec3 { x: 2, y: -27, z: 69 } 2 20
+ORE_RECEIPT Vec3 { x: 2, y: -27, z: 68 } 3 20
+RECOVERY_END_FULL true Vec3 { x: 3, y: -28, z: 69 } 20
+RECOVERY_END_FULL true Vec3 { x: 3, y: -28, z: 69 } 20
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "gain": 6,
+ "diamond": 6,
+ "p": {
+  "x": 3.4653704554899902,
+  "y": -28,
+  "z": 69.4740133947888
+ },
+ "hp": 20,
+ "kit": [
+  [
+   "cobblestone",
+   34,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   196
+  ],
+  [
+   "andesite",
+   31,
+   null
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   30,
+   null
+  ],
+  [
+   "diamond",
+   6,
+   null
+  ]
+ ],
+ "elapsed": 23060
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (3.5, -28, 69.5) in overworld, health 20/20, food 20/20, alive

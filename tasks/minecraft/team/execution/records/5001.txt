@@ -1,0 +1,4 @@
+== #5001 2026-10-17T05:08:09 p3 role=continuity_owner iter=11 0.4 s
+return{time:bot.time.timeOfDay,berries:bot.findBlocks({matching:b=>b.name==='sweet_berry_bush',maxDistance:64,count:30}).map(p=>[p,bot.blockAt(p).getProperties()]),logs:bot.findBlocks({matching:b=>b.name==='spruce_log',maxDistance:24,count:12}),near:Object.values(bot.entities).filter(e=>['spider','skeleton','creeper','zombie'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<24).map(e=>[e.id,e.name,e.position,e.metadata?.[9]])};
+-- returned --
+{"time": 2923, "berries": [[{"x": 20, "y": 68, "z": 89}, {"age": "3"}], [{"x": 22, "y": 68, "z": 89}, {"age": "3"}], [{"x": 24, "y": 68, "z": 90}, {"age": "3"}]], "logs": [], "near": [[108, "zombie", {"x": 12.196133012785067, "y": 60, "z": 97.52387942985035}, 20]]}

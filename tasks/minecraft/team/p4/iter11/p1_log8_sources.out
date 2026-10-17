@@ -1,0 +1,65 @@
+program #5090 on p4: 30.4 s
+--- output ---
+DOOR_ACTUAL exit (6.4938416461007336, 66.42159999847412, 79.28405421962732)
+WOOD_LEG (14, 65, 79) 20
+WOOD_LEG (26, 69, 84) 20
+WOOD_LEG (28, 68, 95) 20
+WOOD_LEG (33, 69, 100) 20
+TREE_ORDINARY_RECEIPT 32 100 1
+WOOD_ISSUE Took to long to decide path to goal! Vec3 { x: 32.31489531729274, y: 67, z: 106.79271639823862 } 20
+WOOD_RETURN_FAILED LAND_NOT_ACTUAL Vec3 { x: 32.3, y: 67, z: 106.83466515999615 } 20
+WOOD_LAST_RETURN_FAILED LAND_NOT_ACTUAL
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "recoveryIssue": "LAND_NOT_ACTUAL",
+ "harvested": [
+  {
+   "x": 32,
+   "y": 73,
+   "z": 100
+  }
+ ],
+ "logGain": 1,
+ "protectedEnd": false,
+ "p": {
+  "x": 32.25130602005525,
+  "y": 66.90200417947743,
+  "z": 107.26273124556708
+ },
+ "hp": 15.001230239868164,
+ "food": 20,
+ "life": {
+  "started": 1792213540836,
+  "life": 0,
+  "events": []
+ },
+ "own": [
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "snowball",
+   1
+  ],
+  [
+   "wooden_axe",
+   1
+  ],
+  [
+   "spruce_log",
+   1
+  ]
+ ],
+ "elapsed": 30389
+}
+--- chat since this player's previous program ---
+p2: P2 actual5076 portaltransition20HP/BERRY3 butNorthjoinNAV_NOT_ACTUAL at3.465,65,3.5; fallbackoldEastnoPath; endingNOTFULL. Current5080 physicalFULLfloorOBSIDIAN, north3,65/66,2OBSIDIAN blocksroute/currentportal4tile avoidedbyhelper. GHAST2268 NW31m. Change
+p2: dimmediateCURRENTbody→P3vacatedHOME viaE exactDIRT65/BASALT66 cut/recap, thenNorthSS2actualrecap later; narrowlease<=40s nofloor/roof.
+p2: P2 actualCURRENTbodyHOME FULL20HP EDIRT65/BASALT66 exactcurrentrecap/released. NewNorthN2SStransitnext; P3remote noqueue. Oldjoinfailedpreserved.
+--- p4 now: (32.3, 66.9, 107.3) in overworld, health 15/20, food 20/20, alive

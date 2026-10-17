@@ -1,0 +1,152 @@
+program #5480 on p2: 89.9 s
+--- output ---
+FRESH_IRON_FOR_P1 [
+  Vec3 { x: -2, y: 40, z: 88 },
+  Vec3 { x: -2, y: 40, z: 89 },
+  Vec3 { x: -3, y: 40, z: 88 },
+  Vec3 { x: -3, y: 40, z: 89 },
+  Vec3 { x: 10, y: 40, z: 79 },
+  Vec3 { x: 10, y: 39, z: 79 }
+]
+DOOR_ACTUAL exit (6.501631400474107, 66.42159999847412, 79.28405421962735)
+CURRENT_NATIVE_PATH [
+  [ 6, 66, 79 ],  [ 7, 66, 79 ],  [ 8, 65, 79 ],
+  [ 9, 64, 79 ],  [ 10, 64, 79 ], [ 10, 64, 80 ],
+  [ 11, 65, 80 ], [ 11, 65, 81 ], [ 11, 66, 82 ],
+  [ 12, 67, 82 ], [ 13, 68, 82 ], [ 14, 68, 82 ],
+  [ 15, 68, 82 ], [ 16, 68, 82 ], [ 17, 68, 82 ],
+  [ 18, 67, 82 ], [ 19, 67, 82 ], [ 20, 67, 82 ],
+  [ 21, 67, 82 ], [ 21, 67, 83 ], [ 21, 67, 84 ],
+  [ 21, 67, 85 ], [ 21, 67, 86 ], [ 21, 67, 87 ],
+  [ 21, 68, 88 ], [ 21, 68, 89 ], [ 21, 68, 90 ],
+  [ 20, 68, 90 ], [ 19, 68, 90 ], [ 19, 68, 91 ],
+  [ 19, 68, 92 ], [ 19, 68, 93 ], [ 19, 68, 94 ],
+  [ 18, 68, 94 ], [ 18, 68, 95 ], [ 17, 68, 95 ],
+  [ 16, 67, 95 ], [ 15, 67, 95 ], [ 14, 67, 95 ],
+  [ 13, 67, 95 ], [ 12, 66, 95 ], [ 11, 66, 95 ],
+  [ 10, 66, 95 ], [ 10, 67, 94 ], [ 10, 67, 93 ]
+]
+CURRENT_NATIVE_NODE (6, 66, 79) 20
+CURRENT_NATIVE_NODE (7, 66, 79) 20
+CURRENT_NATIVE_NODE (8, 65, 79) 20
+CURRENT_NATIVE_NODE (9, 64, 79) 20
+CURRENT_NATIVE_NODE (10, 64, 79) 20
+CURRENT_NATIVE_NODE (10, 64, 80) 20
+CURRENT_NATIVE_NODE (11, 65, 80) 20
+CURRENT_NATIVE_NODE (11, 65, 81) 20
+CURRENT_NATIVE_NODE (11, 66, 82) 20
+CURRENT_NATIVE_NODE (12, 67, 82) 20
+CURRENT_NATIVE_NODE (13, 68, 82) 20
+CURRENT_NATIVE_NODE (14, 68, 82) 20
+CURRENT_NATIVE_NODE (15, 68, 82) 20
+CURRENT_NATIVE_NODE (16, 68, 82) 20
+CURRENT_NATIVE_NODE (17, 68, 82) 20
+CURRENT_NATIVE_NODE (18, 67, 82) 20
+CURRENT_NATIVE_NODE (19, 67, 82) 20
+CURRENT_NATIVE_NODE (20, 67, 82) 20
+CURRENT_NATIVE_NODE (21, 67, 82) 20
+CURRENT_NATIVE_NODE (21, 67, 83) 20
+CURRENT_NATIVE_NODE (21, 67, 84) 20
+CURRENT_NATIVE_NODE (21, 67, 85) 20
+CURRENT_NATIVE_NODE (21, 67, 86) 20
+CURRENT_NATIVE_NODE (21, 67, 87) 20
+CURRENT_NATIVE_NODE (21, 68, 88) 20
+CURRENT_NATIVE_NODE (21, 68, 89) 20
+CURRENT_NATIVE_NODE (21, 68, 90) 20
+CURRENT_NATIVE_NODE (20, 68, 90) 20
+CURRENT_NATIVE_NODE (19, 68, 90) 20
+CURRENT_NATIVE_NODE (19, 68, 91) 20
+CURRENT_NATIVE_NODE (19, 68, 92) 20
+CURRENT_NATIVE_NODE (19, 68, 93) 20
+CURRENT_NATIVE_NODE (19, 68, 94) 20
+CURRENT_NATIVE_NODE (18, 68, 94) 20
+CURRENT_NATIVE_NODE (18, 68, 95) 20
+CURRENT_NATIVE_NODE (17, 68, 95) 20
+CURRENT_NATIVE_NODE (16, 67, 95) 20
+CURRENT_NATIVE_NODE (15, 67, 95) 20
+CURRENT_NATIVE_NODE (14, 67, 95) 20
+CURRENT_NATIVE_NODE (13, 67, 95) 20
+CURRENT_NATIVE_NODE (12, 66, 95) 20
+CURRENT_NATIVE_NODE (11, 66, 95) 20
+CURRENT_NATIVE_NODE (10, 66, 95) 20
+CURRENT_NATIVE_NODE (10, 67, 94) 20
+CURRENT_NATIVE_NODE (10, 67, 93) 20
+POOL_ACTUAL Vec3 { x: 10.501689525581547, y: 67, z: 93.47064162760381 } 20
+COVERED_LANDING_SOURCE []
+OBSIDIAN_RETAINED 0 Vec3 { x: 11, y: 66, z: 94 } 1 20
+OBSIDIAN_RETAINED 1 Vec3 { x: 11, y: 66, z: 93 } 2 20
+CURRENT_NATIVE_PATH [
+  [ 11, 66, 93 ], [ 11, 66, 92 ],
+  [ 11, 66, 91 ], [ 11, 65, 90 ],
+  [ 11, 65, 89 ], [ 11, 65, 88 ],
+  [ 11, 65, 87 ], [ 11, 66, 86 ],
+  [ 11, 67, 85 ], [ 11, 67, 84 ],
+  [ 10, 66, 84 ], [ 10, 66, 83 ],
+  [ 10, 65, 82 ], [ 9, 65, 82 ],
+  [ 8, 65, 82 ],  [ 8, 64, 81 ],
+  [ 8, 65, 80 ],  [ 7, 65, 80 ],
+  [ 7, 66, 79 ],  [ 6, 66, 79 ]
+]
+CURRENT_NATIVE_NODE (11, 66, 93) 20
+CURRENT_NATIVE_NODE (11, 66, 92) 20
+CURRENT_NATIVE_NODE (11, 66, 91) 20
+OBS_ISSUE NATIVE_BODY_(11, 65, 90) Vec3 { x: 11.499537253540728, y: 66, z: 91.3 } 20
+CURRENT_NATIVE_PATH [
+  [ 11, 66, 91 ], [ 11, 65, 90 ],
+  [ 11, 65, 89 ], [ 11, 65, 88 ],
+  [ 11, 65, 87 ], [ 11, 66, 86 ],
+  [ 11, 67, 85 ], [ 11, 67, 84 ],
+  [ 10, 66, 84 ], [ 10, 66, 83 ],
+  [ 10, 65, 82 ], [ 9, 65, 82 ],
+  [ 8, 65, 82 ],  [ 8, 64, 81 ],
+  [ 8, 65, 80 ],  [ 7, 65, 80 ],
+  [ 7, 66, 79 ],  [ 6, 66, 79 ]
+]
+CURRENT_NATIVE_NODE (11, 66, 91) 20
+OBS_BACK_FAIL NATIVE_BODY_(11, 65, 90) Vec3 { x: 11.499843880551927, y: 66, z: 91.3 } 20
+OBS_EMERGENCY_FAIL BURIAL_ENVELOPE Vec3 { x: 11.499843880551927, y: 66, z: 91.3 } 20
+--- returned ---
+{
+ "issue": "NATIVE_BODY_(11, 65, 90)",
+ "banked": false,
+ "closed": false,
+ "gained": 2,
+ "plugs": 0,
+ "p": {
+  "x": 11.499843880551927,
+  "y": 66,
+  "z": 91.3
+ },
+ "hp": 20,
+ "kit": [
+  [
+   "diamond_pickaxe",
+   1,
+   10
+  ],
+  [
+   "obsidian",
+   2,
+   null
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 89859
+}
+--- chat since this player's previous program ---
+p1: P1 actualFLINT1 retained #5478, HP20 sealed6,47,88. Recycling fixed:24tick pickup before replace (8ticks ejected uncollected drops). Need oneIRON smelt via spareWOODpickfuel, currently bounded nearestore test. No ignitionyet.
+p3: P3 upper final5475 NO_VISIBLE/full20; forest approach built but target still occluded, no production claim. Returning now with PEARL4 carried (bank3 separate=7 total), newSTONEpick19 +old100, axes44/46. SharedWEST andSbench use announced near crossing; no 
+p3: present lease. Next complete outcome bankdeposit+independentreceipt.
+p4: P4 fresh06:54 timing: oldfortress700m route is historical/unexecutedsuffix, so IRONloan acknowledgedbutnotwithdrawnuntilfiniteuse. Can own newportalframe10OBS whileP1smeltsSTEEL if P2bank10ready; please exactchosenframe/Netherdestination toavoidduplicate. 
+p4: CheckingcurrentOWportal now.
+p4: Correction4218: same-callclockwas06:52:33 (not06:54). Currentportal actual6/7,Y68..70,Z91 active. P4 can independently testexistingportal→NetherLOW entry eightcells usingloanIRON, finite3min+return, avoidingP1sharedshaft; P1 ownsnewOBSportal. Please specif
+p4: icclearanceonlyifconflict.
+p1: P4 clearanceYES LOW8probe existingportal isyours, noP1Netherbody. P1 actualSTEEL0 retained #5489 smelted rawIRON1 using spareWOODpickfuel; 20HP closed6,39,88 returningcamp forDIApick+OBS10. Newportal intendedNether18,276 nearoldstrongholdOW147,2212 but noc
+p1: urrentframeproof. NeedLOWentry result.
+p4: P4 boundedPORTALroundtrip90s+100sreturn; FRONT6exit now, Southbridge10→6 route, no sharedshaft/capcuts. Netherstatedependsfresharrival, notoldroute.
+p4: P4 actualEXITclosed; frontRELEASED.
+--- p2 now: (11.5, 66, 91.3) in overworld, health 20/20, food 17/20, alive

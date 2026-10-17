@@ -1,0 +1,31 @@
+program #5351 on p4: 0.6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 6.3856558761043996,
+  "y": 67.48409999847412,
+  "z": 82.34117664286038
+ },
+ "hp": 12.366665840148926,
+ "life": {
+  "started": 1792213540836,
+  "life": 1,
+  "events": [
+   [
+    "death",
+    1792214288275
+   ],
+   [
+    "respawn",
+    1792214288281,
+    "overworld"
+   ]
+  ]
+ },
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.4, 67.5, 82.3) in overworld, health 12.4/20, food 17/20, alive

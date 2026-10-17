@@ -1,0 +1,34 @@
+program #5242 on p2: 16.8 s
+--- output ---
+DOOR_ACTUAL exit (6.512405288898395, 66.42159999847412, 79.28405421962735)
+BRIDGE_ISSUE Took to long to decide path to goal! Vec3 { x: 12.53929543564991, y: 68, z: 84.59491698638642 } 20
+DOOR_ACTUAL enter (6.500000293614266, 67, 82.46570513499974)
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "recoveryIssue": null,
+ "placed": [],
+ "passes": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.5673101460027405,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "cobblestone",
+   2
+  ],
+  [
+   "dirt",
+   2
+  ]
+ ],
+ "elapsed": 16762
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

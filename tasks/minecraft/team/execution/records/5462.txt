@@ -1,0 +1,4 @@
+== #5462 2026-10-17T06:49:28 p3 role=continuity_owner iter=11 0 s
+const{Vec3}=require('vec3');const cells=[];for(const z of[106,105,104])for(let y=84;y<=87;y++){const p=new Vec3(-110,y,z);cells.push([p,bot.blockAt(p)?.name])}return{p:bot.entity.position,hp:bot.health,cells};
+-- returned --
+{"p": {"x": -107.43171110507198, "y": 85, "z": 109.50057504684136}, "hp": 20, "cells": [[{"x": -110, "y": 84, "z": 106}, "warped_wart_block"], [{"x": -110, "y": 85, "z": 106}, "air"], [{"x": -110, "y": 86, "z": 106}, "air"], [{"x": -110, "y": 87, "z": 106}, "warped_wart_block"], [{"x": -110, "y": 84, "z": 105}, "shroomlight"], [{"x": -110, "y": 85, "z": 105}, "air"], [{"x": -110, "y": 86, "z": 105}, "air"], [{"x": -110, "y": 87, "z": 105}, "warped_wart_block"], [{"x": -110, "y": 84, "z": 104}, "warped_stem"], [{"x": -110, "y": 85, "z": 104}, "warped_stem"], [{"x": -110, "y": 86, "z": 104}, "shroomlight"], [{"x": -110, "y": 87, "z": 104}, "warped_wart_block"]]}

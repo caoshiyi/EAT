@@ -1,0 +1,4 @@
+== #5097 2026-10-17T05:18:38 p3 role=continuity_owner iter=11 0 s
+return{enders:Object.values(bot.entities).filter(e=>e.name==='enderman'&&e.position.distanceTo(bot.entity.position)<12).map(e=>({id:e.id,type:e.type,kind:e.kind,p:e.position,h:e.height,w:e.width,metadata:e.metadata,valid:e.isValid,vehicle:e.vehicle?.id})),p:bot.entity.position};
+-- returned --
+{"enders": [{"id": 1477, "type": "hostile", "kind": "Hostile mobs", "p": {"x": -99.94235292423294, "y": 64, "z": 87.47450336255262}, "h": 2.9, "w": 0.6, "metadata": [null, null, null, null, null, null, null, null, null, 21, null, null, null, null, null, null, 18591], "valid": true}, {"id": 1495, "type": "hostile", "kind": "Hostile mobs", "p": {"x": -99.3001057097722, "y": 64, "z": 87.57499998807907}, "h": 2.9, "w": 0.6, "metadata": [null, null, null, null, null, null, null, null, null, 37, null, null, null, null, null, null, 0], "valid": true}], "p": {"x": -97.49814462521132, "y": 63, "z": 86.50218199917454}}

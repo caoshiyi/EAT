@@ -1,0 +1,5 @@
+== #5013 2026-10-17T05:09:05 p1 role=experiment_owner iter=11 0 s
+console.log('FOES',JSON.stringify(Object.values(bot.entities).filter(e=>['spider','zombie','skeleton','creeper','witch'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<30).map(e=>[e.id,e.name,e.position,e.metadata?.[9]])));console.log('PICKUP',bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+FOES [[108,"zombie",{"x":12.49442478711411,"y":60,"z":93.77532692601423},20],[130,"creeper",{"x":7.449318524947392,"y":62,"z":104.22905310826393},20]]
+PICKUP []

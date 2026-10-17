@@ -1,0 +1,5 @@
+== #5296 2026-10-17T06:02:38 p1 role=experiment_owner iter=11 0 s
+console.log('FRESH_DROPS',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&['diamond_pickaxe','flint_and_steel','bucket'].includes(e.getDroppedItem?.()?.name)).map(e=>[e.id,e.position,e.getDroppedItem().name])));console.log('OWN',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+FRESH_DROPS [[9855,{"x":14.875,"y":59,"z":79.875},"diamond_pickaxe"],[9862,{"x":14.875,"y":59,"z":79.34486306258721},"bucket"],[9866,{"x":11.214540208518548,"y":60,"z":79.125},"flint_and_steel"]]
+OWN Vec3 { x: 7.338072988707901, y: 67.5625, z: 83.69999993540492 } 20 []

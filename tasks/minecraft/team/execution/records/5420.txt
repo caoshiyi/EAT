@@ -1,0 +1,107 @@
+== #5420 2026-10-17T06:40:34 p2 role=independent_operator iter=11 9.5 s
+const workEnd=Date.now()+100000,recoveryEnd=Date.now()+140000;let phase='PRE',transitionUntil=0;
+const{Vec3}=require('vec3');let dead=false,lost=false,retreat=false,issue=null,protectedEnd=false;const death=()=>{dead=true;lost=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};const respawn=()=>{bot.pathfinder.setGoal(null);bot.clearControlStates();if(phase==='PORTAL'&&Date.now()<transitionUntil)console.log('EXPECTED_DIMENSION_RESPAWN',bot.game.dimension);else lost=true;};bot.on('death',death);bot.on('respawn',respawn);
+const full=b=>b&&b.boundingBox==='block'&&!/lava|water|magma_block|fire/.test(b.name)&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),dirs=[[1,0],[-1,0],[0,1],[0,-1]],count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
+const currentEntity=bot.entity,currentEntityId=bot.entity.id,currentWorld=bot.game.dimension;
+const lifeStart=global.P2LifeTracker?[global.P2LifeTracker.started,global.P2LifeTracker.life,global.P2LifeTracker.world].join(':'):null;
+const isHostile=e=>e.kind==='Hostile mobs'||['zombie','zombie_villager','skeleton','creeper','spider','husk','drowned','stray','witch','pillager','phantom'].includes(e.name);
+function check(w){if(bot.entity!==currentEntity||bot.entity.id!==currentEntityId||bot.game.dimension!==currentWorld){lost=true;throw Error('CURRENT_BODY_CHANGED');}if(Date.now()>(retreat?recoveryEnd:workEnd))throw Error('INTERNAL_DEADLINE');if(lifeStart&&global.P2LifeTracker&&[global.P2LifeTracker.started,global.P2LifeTracker.life,global.P2LifeTracker.world].join(':')!==lifeStart){lost=true;throw Error('LIFE_TOKEN_CHANGED');}if(dead||lost||bot.health<=0)throw Error('life/health');if(w&&bot.game.dimension!==w)throw Error('world '+bot.game.dimension+' expected '+w);}
+async function ticks(n){check();await bot.waitForTicks(n);check();}
+
+const openingCells=new Set([6,7].flatMap(x=>[67,68].map(y=>new Vec3(x,y,81).toString())));
+// Proposal to paste over exposedAt in P2 actual food caller; specialist does NOT run this on a player.
+// Uses caller's existing bot, Vec3, full, openingCells. Maintains caller's outer standoff radii.
+// Present exposure only, NOT future walking/climbing reachability.
+function exposedAt(e, p) {
+  if (!e?.position || !p) return true;
+  const eye = e.position.offset(0, (e.height || 1.8) * .9, 0);
+  for (const [dx, dz] of [[0,0],[-.3,-.3],[-.3,.3],[.3,-.3],[.3,.3]]) {
+    for (const h of [.1,.9,1.7]) {
+      const target = p.offset(dx,h,dz), v = target.minus(eye), len = v.norm();
+      if (!Number.isFinite(len) || len < .05) return true;
+      const dir = v.scaled(1 / len);
+      // Unknown-only rays have no proven occluder and remain exposed.
+      const hit = bot.world.raycast(eye, dir, len, (b,it) => {
+        if (!b) return false;
+        if (openingCells.has(b.position.toString()) || !full(b)) return false;
+        const x = it.intersect(b.shapes, b.position); // integer shape offset, fractional eye retained
+        if (!x) return false;
+        const q = x.pos.minus(eye), along = q.x*dir.x + q.y*dir.y + q.z*dir.z;
+        return along >= 0 && along < len - .02;
+      });
+      if (!hit) return true;
+    }
+  }
+  return false;
+}
+
+async function door(mode){check('overworld');const dp=new Vec3(6,67,81),targetX=6.59375,hp0=bot.health;let hurt=false;const damaged=e=>{if(e===bot.entity){hurt=true;if(mode!=='enter')bot.clearControlStates();}};function guardDoor(){check('overworld');if(mode!=='enter'&&(bot.health<8||hurt||bot.health<hp0-.1))throw Error('DOOR_DAMAGE_STOP');if(bot.entity.position.y<65.7||bot.entity.position.z<77||bot.entity.position.z>84)throw Error('DOOR_BODY_DISCONTINUITY');}bot.pathfinder.setGoal(null);bot.clearControlStates();if(bot.entity.position.distanceTo(new Vec3(6.5,67,81.5))>6)throw Error('DOOR_NOT_NEAR');if(mode!=='enter'&&Object.values(bot.entities).some(e=>isHostile(e)&&e.position.distanceTo(new Vec3(6.5,67,81.5))<(['skeleton','stray','pillager','witch'].includes(e.name)?16:6)&&[new Vec3(6.6,66,79.3),new Vec3(6.6,66.5,80.1),new Vec3(6.6,67,80.8),new Vec3(6.6,67,81.5),new Vec3(6.6,67,82.3)].some(p=>exposedAt(e,p))))throw Error('DOOR_HOSTILE_PRECHECK_'+JSON.stringify(Object.values(bot.entities).filter(e=>isHostile(e)&&e.position.distanceTo(new Vec3(6.5,67,81.5))<16).map(e=>[e.id,e.name,e.position])));function fitsDoorX(){const b=bot.blockAt(dp),p=bot.entity.position;return b?.getProperties().open&&p.x-.3>6&&p.x+.3<7&&b.shapes.every(s=>p.x+.3<=6+s[0]||p.x-.3>=6+s[3])}bot.on('entityHurt',damaged);try{await ticks(5);let b=bot.blockAt(dp);if(b.name!=='spruce_door'||b.getProperties().facing!=='north')throw Error('DOOR_GEOMETRY');if(!b.getProperties().open){await bot.activateBlock(b);await ticks(5);}for(let n=0;n<40&&Math.abs(bot.entity.position.x-targetX)>.04&&!fitsDoorX();n++){guardDoor();bot.setControlState('sneak',true);await bot.lookAt(bot.entity.position.offset(Math.sign(targetX-bot.entity.position.x)*2,-.5,0),true);bot.setControlState('forward',true);await ticks(1);bot.clearControlStates();await ticks(3);}bot.setControlState('sneak',false);if(Math.abs(bot.entity.position.x-targetX)>.045&&!fitsDoorX())throw Error('DOOR_ALIGNMENT');await bot.lookAt(bot.entity.position.offset(0,-.5,mode==='exit'?-2:2),true);if(mode==='enter'&&bot.entity.position.y<66.95){const f=bot.blockAt(new Vec3(6,66,80));bot.setControlState('jump',!(f.name==='cobblestone_slab'&&f.getProperties().type==='bottom'));}bot.setControlState('forward',true);for(let n=0;n<(mode==='enter'?120:45);n++){guardDoor();if(Math.abs(bot.entity.position.x-targetX)>.35)throw Error('DOOR_LATERAL_STOP');await ticks(1);if(mode==='enter'&&bot.entity.position.z>80.35)bot.setControlState('jump',false);if(mode==='exit'?bot.entity.position.z<79.5:bot.entity.position.z>82.3)break;}guardDoor();const p=bot.entity.position,ok=mode==='exit'?p.z<80:p.z>82.15&&p.z<84&&Math.abs(p.x-6.6)<.5&&p.y>=67&&p.y<=67.65;if(!ok)throw Error('DOOR_NOT_ARRIVED');console.log('DOOR_ACTUAL',mode,p.toString());}finally{bot.clearControlStates();if(!dead&&!lost&&bot.game.dimension==='overworld')for(const x of[6,7]){const b=bot.blockAt(new Vec3(x,67,81));if(b?.name==='spruce_door'&&b.getProperties().open&&bot.entity.position.distanceTo(b.position.offset(.5,.5,.5))<4.5){try{await bot.activateBlock(b);await bot.waitForTicks(3);}catch(e){console.log('DOOR_CLOSE_FAILED',x,e.message);}}}bot.removeListener('entityHurt',damaged);}}
+
+
+function insideCamp(){const p=bot.entity.position;return bot.game.dimension==='overworld'&&p.x>5.5&&p.x<8&&p.z>82.15&&p.z<84&&p.y>=67&&p.y<=67.65&&[6,7].every(x=>{const b=bot.blockAt(new Vec3(x,67,81));return b?.name==='spruce_door'&&b.getProperties().open===false&&b.getProperties().facing==='north'})}
+async function landXZ(x,z){check('overworld');movement();let damaged=false;const hit=e=>{if(e===bot.entity){damaged=true;bot.pathfinder.setGoal(null);bot.clearControlStates();}};bot.on('entityHurt',hit);let t;try{await Promise.race([bot.pathfinder.goto(new goals.GoalXZ(x,z)),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('LAND_BOUND'));},25000))]);}finally{clearTimeout(t);bot.removeListener('entityHurt',hit);bot.pathfinder.setGoal(null);bot.clearControlStates();}if(damaged)throw Error('LAND_HIT_STOP');await ticks(6);const p=bot.entity.position;if(!bot.entity.onGround||Math.hypot(p.x-x-.5,p.z-z-.5)>.7||['water','lava'].includes(bot.blockAt(p.floored()).name))throw Error('LAND_NOT_ACTUAL');}
+
+function campThreats(){return Object.values(bot.entities).filter(e=>isHostile(e)&&e.position.x>5.5&&e.position.x<8.3&&e.position.z>81.7&&e.position.z<84.2&&e.position.y>66&&e.position.y<70).map(e=>[e.id,e.name,e.position]);}
+function safeCamp(){return !dead&&!lost&&insideCamp()&&bot.entity.onGround&&campThreats().length===0;}
+function inCampBody(){const p=bot.entity.position;return !dead&&!lost&&bot.entity===currentEntity&&bot.game.dimension==='overworld'&&p.x>5.5&&p.x<8&&p.z>82.15&&p.z<84&&p.y>=67&&p.y<=67.65;}
+async function settleInside(){bot.pathfinder.setGoal(null);bot.clearControlStates();if(!inCampBody())throw Error('INSIDE_BODY_REQUIRED');if(safeCamp())return;for(let n=0;n<30;n++){check('overworld');const crossers=Object.values(bot.entities).filter(e=>e.username&&e.id!==bot.entity.id&&e.position.x>5.65&&e.position.x<8.35&&e.position.z>80.3&&e.position.z<82.15&&e.position.y>65.7&&e.position.y<69);if(!crossers.length)break;if(n===29)throw Error('CURRENT_CROSSER');await ticks(1);}for(const x of[6,7]){const b=bot.blockAt(new Vec3(x,67,81));if(b?.name!=='spruce_door')throw Error('DOOR_KIND');if(b.getProperties().open){await bot.activateBlock(b);await ticks(3);}}await ticks(3);if(!safeCamp())throw Error('INSIDE_FINAL '+JSON.stringify(campSnapshot()));}
+async function returnCamp(){retreat=true;if(!dead&&!lost&&!inCampBody()){const p=bot.entity.position,inFrame=p.x>5.8&&p.x<7.3&&p.z>=80.35&&p.z<=82.15&&p.y>65.7&&p.y<67.8;if(!inFrame){if(p.x>14)await landXZ(13,79);await go(new Vec3(6,66,79),18000)}else console.log('FRAME_DIRECT_ENTER',p);bot.chat('P2 currentfront RETURNcross now<=8s; releaseafteractualclosedcamp.');await door('enter');}if(inCampBody())await settleInside();await ticks(5);if(!safeCamp())throw Error('CAMP_POSTCONDITION '+JSON.stringify(campThreats()));}
+function campSnapshot(){return{bodyInside:inCampBody(),doors:[6,7].map(x=>{const b=bot.blockAt(new Vec3(x,67,81));return[x,b?.name,b?.getProperties()]}),onGround:bot.entity.onGround,dead,lost,threats:campThreats().map(e=>[e[0],e[1],e[2].clone()])};}
+function cleanup(){for(const [label,stop]of[['controls',()=>bot.clearControlStates()],['goal',()=>bot.pathfinder.setGoal(null)],['deathListener',()=>bot.removeListener('death',death)],['respawnListener',()=>bot.removeListener('respawn',respawn)]]){try{stop()}catch(e){console.log('CLEANUP_FAILED',label,e.message)}}}
+async function frontInside(){if(!safeCamp())throw Error('NOT_SAFE_CAMP');bot.setControlState('sneak',true);await bot.lookAt(bot.entity.position.offset(-3,1.62,0),true);bot.setControlState('forward',true);for(let i=0;i<45&&bot.entity.position.x>6.57;i++)await ticks(1);bot.clearControlStates();await ticks(4);await bot.lookAt(bot.entity.position.offset(0,1.62,-3),true);bot.setControlState('forward',true);for(let i=0;i<20&&bot.entity.position.z>82.25;i++)await ticks(1);bot.clearControlStates();await ticks(5);if(!safeCamp()||Math.abs(bot.entity.position.x-6.55)>.3||bot.entity.position.z>82.5)throw Error('FRONT_INSIDE_POST');}
+async function asideInside(){await bot.lookAt(bot.entity.position.offset(0,1.62,3),true);bot.setControlState('forward',true);for(let i=0;i<20&&bot.entity.position.z<83.4;i++)await ticks(1);bot.clearControlStates();await bot.lookAt(bot.entity.position.offset(3,1.62,0),true);bot.setControlState('forward',true);for(let i=0;i<16&&bot.entity.position.x<7.25;i++)await ticks(1);bot.clearControlStates();await ticks(5);if(!safeCamp())throw Error('ASIDE_POST '+JSON.stringify(campSnapshot()));}
+function movement(){const m=new Movements(bot);m.canDig=false;m.canOpenDoors=false;m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;for(const n of['water','lava','fire','magma_block','sweet_berry_bush','nether_portal','powder_snow'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);const hazard=b=>!b||/^(water|lava|fire|soul_fire|magma_block|cactus|powder_snow|nether_portal)$/.test(b.name);const safeCell=(x,y,z)=>{const f=bot.blockAt(new Vec3(x,y-1,z));return !hazard(f)&&f.boundingBox==='block'&&!hazard(bot.blockAt(new Vec3(x,y,z)))&&!hazard(bot.blockAt(new Vec3(x,y+1,z)));};const prior=m.getNeighbors.bind(m);m.getNeighbors=n=>prior(n).filter(v=>safeCell(v.x,v.y,v.z)&&(!(v.x!==n.x&&v.z!==n.z)||(safeCell(v.x,v.y,n.z)&&safeCell(n.x,v.y,v.z)))&&Math.abs(v.y-n.y)<=1&&!Object.values(bot.entities).some(e=>['skeleton','stray','witch','creeper','zombie','zombie_villager','spider','drowned'].includes(e.name)&&e.position.distanceTo(new Vec3(v.x+.5,v.y,v.z+.5))<(['skeleton','stray','witch'].includes(e.name)?16:e.name==='creeper'?9:6)&&!(retreat&&e.position.distanceTo(new Vec3(v.x+.5,v.y,v.z+.5))>e.position.distanceTo(new Vec3(n.x+.5,n.y,n.z+.5))+.02)&&[0,.25,.5,.75,1].some(t=>exposedAt(e,new Vec3(n.x+.5+(v.x-n.x)*t,n.y+(v.y-n.y)*t,n.z+.5+(v.z-n.z)*t)))));bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=3500;}
+async function go(p,ms){movement();let timer,damaged=false;const hurt=e=>{if(e===bot.entity){damaged=true;bot.pathfinder.setGoal(null);}};bot.on('entityHurt',hurt);try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(p.x,p.y,p.z)),new Promise((_,r)=>timer=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('NAV_BOUND'));},ms))]);}finally{clearTimeout(timer);bot.removeListener('entityHurt',hurt);bot.pathfinder.setGoal(null);bot.clearControlStates();}await ticks(4);if(damaged||!bot.entity.onGround||!bot.entity.position.floored().equals(p))throw Error('NAV_NOT_ACTUAL');}
+
+
+
+
+
+
+
+
+
+let q=new Vec3(8,65,78),closed=false,found=false;const begin=Date.now();const solid=p=>full(bot.blockAt(p)),name=p=>bot.blockAt(p)?.name;async function center(dest){bot.pathfinder.setGoal(null);bot.clearControlStates();for(const a of['x','z'])for(let k=0;k<80&&Math.abs(bot.entity.position[a]-dest[a]-.5)>.06;k++){check();await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(dest.x+.5-bot.entity.position.x)*3:0,0,a==='z'?Math.sign(dest.z+.5-bot.entity.position.z)*3:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await ticks(1);bot.clearControlStates();await ticks(1)}for(let k=0;k<25&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-dest.y)>.05);k++)await ticks(1);if(bot.entity.position.distanceTo(dest.offset(.5,0,.5))>.17||!bot.entity.onGround)throw Error('CENTER_ACTUAL')};async function cut(p){if(['air','cave_air','snow'].includes(name(p))){if(name(p)==='snow'){await bot.unequip('hand');await bot.dig(bot.blockAt(p));await ticks(1)}return}if(!['sandstone','stone','cobblestone','sand','dirt','andesite','diorite','granite','deepslate','cobbled_deepslate','tuff','calcite','moss_block'].includes(name(p))&&!/_ore$/.test(name(p)))throw Error('CUT_KIND_'+name(p));for(const d of[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]])if(!bot.blockAt(p.offset(...d))||/water|lava|fire/.test(name(p.offset(...d))))throw Error('CUT_FLUID');await bot.equip(bot.inventory.items().find(i=>i.name==='iron_pickaxe'),'hand');await bot.dig(bot.blockAt(p));await ticks(2);if(!['air','cave_air'].includes(name(p)))throw Error('CUT_ACK')};async function put(p){if(solid(p))return;const it=bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','sandstone','diorite','andesite','granite','tuff','dirt'].includes(i.name)),ref=[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(a=>p.offset(...a)).find(solid);if(!it||!ref)throw Error('CAP_REF_STOCK_'+p);await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot._placeBlockWithOptions(bot.blockAt(ref),p.minus(ref),{forceLook:true})}finally{bot.clearControlStates()}await ticks(2);if(!solid(p))throw Error('CAP_ACK_'+p)};async function seal(){const p=bot.entity.position,cur=new Vec3(Math.floor(p.x),Math.round(p.y),Math.floor(p.z));if(!bot.entity.onGround||Math.abs(p.y-cur.y)>.05||!solid(cur.offset(0,-1,0)))throw Error('END_FLOOR');q=cur;for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]])for(const y of[0,1])await put(q.offset(x,y,z));await put(q.offset(0,2,0));closed=[q.offset(0,-1,0),q.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[0,1].map(y=>q.offset(x,y,z)))].every(solid);console.log('RECOVERY_END_FULL',closed,q,bot.health)};
+
+
+
+const stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','andesite','diorite','granite','dirt','tuff'].includes(i.name));
+async function up(surface=false){q=bot.entity.position.floored();await center(q);if(!solid(q.offset(0,-1,0)))throw Error('UP_FLOOR');if(!surface)for(const[x,z]of dirs)for(const y of[0,1,2])if(!solid(q.offset(x,y,z)))await put(q.offset(x,y,z));await cut(q.offset(0,2,0));if(!stock())throw Error('UP_STOCK');await bot.equip(stock(),'hand');await bot.lookAt(q.offset(.5,0,.5),true);bot.setControlState('jump',true);try{for(let k=0;k<20&&bot.entity.position.y<q.y+1.01;k++)await ticks(1);if(bot.entity.position.y<q.y+1.01||bot.entity.velocity.y<0)throw Error('UP_RISING');console.log('UP_SEND',q,bot.entity.position.y,bot.entity.velocity.y);await bot._placeBlockWithOptions(bot.blockAt(q.offset(0,-1,0)),new Vec3(0,1,0),{forceLook:'ignore'});}finally{bot.setControlState('jump',false)}for(let k=0;k<25&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y-1)>.05);k++)await ticks(1);if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y-1)>.05||!solid(q))throw Error('UP_ACK');q=q.offset(0,1,0);}
+
+async function nativeStep(t){if(!solid(t.offset(0,-1,0))||[0,1].some(y=>!['air','cave_air','snow','short_grass','fern'].includes(name(t.offset(0,y,0)))))throw Error('NATIVE_GEOMETRY_'+t);for(let k=0,stable=0;k<65;k++){const p=bot.entity.position,d=Math.hypot(p.x-t.x-.5,p.z-t.z-.5),ground=bot.entity.onGround&&Math.abs(p.y-t.y)<.11;bot.clearControlStates();if(ground&&d<.11&&Math.hypot(bot.entity.velocity.x,bot.entity.velocity.z)<.05){if(++stable>=3)return;}else stable=0;if(d>.05){await bot.lookAt(new Vec3(t.x+.5,p.y+1.4,t.z+.5),true);bot.setControlState('sneak',ground);bot.setControlState('forward',true)}bot.setControlState('jump',t.y>p.y+.1);await ticks(1)}throw Error('NATIVE_BODY_'+t)}
+let banked=false,surfaced=false;
+try{q=bot.entity.position.floored();if(q.x!==8||q.y!==62||q.z!==78||count('diamond')!==6)throw Error('START');
+const threats=Object.values(bot.entities).filter(e=>isHostile(e)&&e.position.distanceTo(new Vec3(7.5,65,79.5))<(['skeleton','stray','witch','creeper'].includes(e.name)?16:7)&&exposedAt(e,new Vec3(8.5,65,78.5)));
+console.log('SURFACE_THREATS',threats.map(e=>[e.id,e.name,e.position]));if(threats.length)throw Error('SURFACE_FOE_NO_EXIT');
+bot.chat('P2 6DIAMOND surface3m RETURN now<=15s, frontrelease.');for(let k=0;k<3;k++)await up(true);surfaced=true;
+await nativeStep(new Vec3(8,65,79));await nativeStep(new Vec3(7,66,79));await nativeStep(new Vec3(6,66,79));await door('enter');await settleInside();await asideInside();if(!safeCamp())throw Error('CAMP');
+let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));console.log('BANK_BEFORE',c.containerItems().map(i=>[i.name,i.count]));await c.deposit(bot.registry.itemsByName.diamond.id,null,6);c.close();c=null;await ticks(5);c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const diamonds=c.containerItems().filter(i=>i.name==='diamond').reduce((a,i)=>a+i.count,0);console.log('BANK_DIAMOND_RECEIPT',diamonds,c.containerItems().map(i=>[i.name,i.count]));banked=diamonds>=6;c.close();c=null;await ticks(4);}finally{c?.close()}
+if(!banked||count('diamond')!==0)throw Error('BANK_POST');
+bot.chat('P2 ACTUAL BANK6DIAMOND chest7,67,82 andclosedCAMP HP'+bot.health+'. P1 take3 fornewpick. P2 other3 forownobsidian/portalcapability next; no pickcrafted/recipientreceiptyet. IRONloanretainedwear'+bot.inventory.items().find(i=>i.name==='iron_pickaxe')?.durabilityUsed);
+}catch(e){issue=e.message;console.log('SURFACE_BANK_ISSUE',issue,bot.entity.position,bot.health)}finally{retreat=true;bot.clearControlStates();if(!dead&&!lost)try{if(inCampBody()){await settleInside();closed=safeCamp()}else if(!surfaced){await seal()}else{const p=bot.entity.position;if(p.x>7.2||p.y<65.7){await nativeStep(new Vec3(8,65,79));await nativeStep(new Vec3(7,66,79));await nativeStep(new Vec3(6,66,79))}await door('enter');await settleInside();closed=safeCamp()}}catch(e){console.log('SURFACE_INLINE_END_FAILED',e.message,bot.entity.position,bot.health)}cleanup()}
+return{issue,banked,closed,p:bot.entity.position,hp:bot.health,kit:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),elapsed:Date.now()-begin};
+-- output --
+SURFACE_THREATS []
+UP_SEND Vec3 { x: 8, y: 62, z: 78 } 63.166109260938214 0.08307781780646721
+UP_SEND Vec3 { x: 8, y: 63, z: 78 } 64.16610926093821 0.08307781780646721
+UP_SEND Vec3 { x: 8, y: 64, z: 78 } 65.16610926093821 0.08307781780646721
+DOOR_ACTUAL enter (6.515039509838015, 67, 82.47756423852786)
+BANK_BEFORE [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+BANK_DIAMOND_RECEIPT 6 [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'diamond', 6 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+-- returned --
+{"issue": null, "banked": true, "closed": true, "p": {"x": 7.587790926338653, "y": 67.5625, "z": 83.69999994127718}, "hp": 20, "kit": [["iron_pickaxe", 1, 207], ["moss_block", 2, null], ["cobbled_deepslate", 7, null]], "elapsed": 9531}

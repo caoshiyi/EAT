@@ -1,0 +1,250 @@
+== #5524 2026-10-17T06:57:17 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');console.log('LOW_COLUMNS',JSON.stringify([-4,-3,-2,-1,0,1,2].flatMap(x=>[0,1,2,3,4].map(z=>({x,z,n:[64,63,62,61,60,59,58].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)})))));console.log('THREATS',Object.values(bot.entities).filter(e=>['ghast','blaze','magma_cube','piglin','hoglin'].includes(e.name)).map(e=>[e.name,e.position]));bot.chat('P1 clearportal stance3.5,65,4.46 onPLANK64; columnbelow63..53 allAIR, noP1floorcuts. P2HOME1,4 below64 requiredfreshnative beforecut; P4LOW8resultneeded, sixminleft.');
+-- output --
+LOW_COLUMNS [{"x":-4,"z":0,"n":["air","air","air","air","air","air","air"]},{"x":-4,"z":1,"n":["air","air","air","air","air","air","air"]},{"x":-4,"z":2,"n":["air","air","air","air","air","air","air"]},{"x":-4,"z":3,"n":["air","air","air","air","air","air","air"]},{"x":-4,"z":4,"n":["air","air","air","air","air","air","air"]},{"x":-3,"z":0,"n":["air","air","air","air","air","air","air"]},{"x":-3,"z":1,"n":["air","air","air","air","air","air","air"]},{"x":-3,"z":2,"n":["air","air","air","air","air","air","air"]},{"x":-3,"z":3,"n":["air","air","air","air","air","air","air"]},{"x":-3,"z":4,"n":["air","air","air","air","air","air","air"]},{"x":-2,"z":0,"n":["air","air","air","air","air","air","air"]},{"x":-2,"z":1,"n":["air","air","air","air","air","air","air"]},{"x":-2,"z":2,"n":["air","air","air","air","air","air","air"]},{"x":-2,"z":3,"n":["air","air","air","air","air","air","air"]},{"x":-2,"z":4,"n":["air","air","air","air","air","air","air"]},{"x":-1,"z":0,"n":["air","air","air","air","air","air","air"]},{"x":-1,"z":1,"n":["air","air","air","air","air","air","air"]},{"x":-1,"z":2,"n":["air","air","air","air","air","air","air"]},{"x":-1,"z":3,"n":["air","air","air","air","air","air","air"]},{"x":-1,"z":4,"n":["air","air","air","air","air","air","air"]},{"x":0,"z":0,"n":["basalt","air","air","air","air","air","air"]},{"x":0,"z":1,"n":["basalt","air","air","air","air","air","air"]},{"x":0,"z":2,"n":["obsidian","air","air","air","air","air","air"]},{"x":0,"z":3,"n":["basalt","air","air","air","air","air","air"]},{"x":0,"z":4,"n":["basalt","air","air","air","air","air","air"]},{"x":1,"z":0,"n":["basalt","air","air","air","air","air","air"]},{"x":1,"z":1,"n":["basalt","air","air","air","air","air","air"]},{"x":1,"z":2,"n":["obsidian","air","air","air","air","air","air"]},{"x":1,"z":3,"n":["basalt","air","air","air","air","air","air"]},{"x":1,"z":4,"n":["basalt","air","air","air","air","air","air"]},{"x":2,"z":0,"n":["basalt","air","air","air","air","air","air"]},{"x":2,"z":1,"n":["basalt","air","air","air","air","air","air"]},{"x":2,"z":2,"n":["obsidian","air","air","air","air","air","air"]},{"x":2,"z":3,"n":["obsidian","air","air","air","air","air","air"]},{"x":2,"z":4,"n":["cobblestone_slab","air","air","air","air","air","air"]}]
+THREATS [
+  [
+    'magma_cube',
+    Vec3 { x: -15.937833433898884, y: 53, z: 43.120205649228964 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -1.225676057531881, y: 34, z: 73.6055733684244 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -54.17966575694609, y: 87, z: 60.73077262869608 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -108.13189125308138, y: 84, z: 46.71643569592919 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -12.311677689163792, y: 33, z: 60.36191163984859 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -30.04039990901947, y: 73, z: 107.57584417127494 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -110.45203834524172, y: 37, z: 14.2597905009813 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -37.56820580699522, y: 37, z: 85.41091800934161 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -33.337774578345076, y: 37, z: 81.8268462653842 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -73.67726743990025, y: 54, z: 53.45521267831879 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -19.449669081715413, y: 85, z: 106.45929117906317 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -26.116859330760292, y: 41, z: 78.16946198237329 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -65.82752114991658, y: 75, z: 109.72291159076755 }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: 8.385638539481821,
+      y: 31.626778969255284,
+      z: 70.93084448575974
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 10.808651075761807, y: 58, z: -37.28683996652252 }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: -90.60906046610846,
+      y: 92.95115232467651,
+      z: 38.44255558412172
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -9.114477014143144, y: 51, z: 48.39278394434221 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -21.231192926759306, y: 41, z: 77.5014731633469 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -19.06383570282183, y: 65, z: 80.09814858074306 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -8.514475187109403, y: 52, z: 65.69529052569226 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 86.04039990901947, y: 95, z: 58.28140518798876 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 110.19026971800916, y: 90, z: 36.415304489772424 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -41.54412945064036, y: 70, z: 103.52693978497449 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -40.94399592465002, y: 76, z: 95.46720499514205 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -43.392196128152904, y: 70, z: 103.53873890447697 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 17.831768565031435, y: 65, z: 118.72274835562666 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 60.679944131024826, y: 59, z: 105.86469428937029 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -17.98265717864152, y: 81, z: 46.81307219560163 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -14.187770034909429, y: 81, z: 55.42428015217218 }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: -4.919067712381473,
+      y: 104.95115232467651,
+      z: 65.43446882656308
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: 9.520286270838024,
+      y: 73.28625977039337,
+      z: 77.02720969210681
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: -14.561399208767394,
+      y: 55.32434570789337,
+      z: 37.41734773760047
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -27.240470904407836, y: 39, z: -90.65887449986401 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 93.82549973137198, y: 50, z: 81.25912984696937 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -76.47980004549026, y: 40, z: 12.475382476856396 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -81.32438376836993, y: 38, z: 40.64982878400112 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 2.6797855920325846, y: 95, z: 124.75370733041647 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -15.558954775036646, y: 94, z: 110.7881076173303 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -6.093688315311182, y: 81, z: 50.10886646616337 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -4.514865422142744, y: 81, z: 54.04931200830499 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -81.9966911320723, y: 91, z: -4.724556744033584 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -77.9338449165743, y: 88, z: -3.235626833440081 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -82.9100017279916, y: 34, z: 33.15928367056023 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 0.5281417457729859, y: 67, z: 66.57956316709165 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -57.92083520338726, y: 107, z: 18.01747625105421 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -18.90327822837712, y: 97, z: -57.9976332327996 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -11.280970359052496, y: 55, z: 42.50436607463193 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 5.926604936845477, y: 64, z: 87.78214377945501 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -60.378089966314235, y: 67, z: 87.94247396612451 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -104.2522003046914, y: 93, z: 2.4742556475512334 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 2.4121380825532355, y: 66, z: 87.26116498563051 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 56.380636368257655, y: 47, z: 104.99660454505103 }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: 20.058973697590137, y: 68, z: 124.6975778185447 }
+  ],
+  [
+    'magma_cube',
+    Vec3 {
+      x: -82.3299827034967,
+      y: 51.295390605926514,
+      z: 53.575510261437195
+    }
+  ],
+  [
+    'magma_cube',
+    Vec3 { x: -82.7431640625, y: 51.55419921875, z: 57.57080078125 }
+  ]
+]

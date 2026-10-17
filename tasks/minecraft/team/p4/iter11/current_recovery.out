@@ -1,0 +1,64 @@
+program #5098 on p4: 1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "err": null,
+ "closed": true,
+ "p": {
+  "x": 7.567309871962759,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "own": [],
+ "life": {
+  "started": 1792213540836,
+  "life": 1,
+  "events": [
+   [
+    "death",
+    1792214288275
+   ],
+   [
+    "respawn",
+    1792214288281,
+    "overworld"
+   ]
+  ]
+ },
+ "foes": [
+  [
+   108,
+   "zombie",
+   {
+    "x": 6.7243727113605605,
+    "y": 60,
+    "z": 82.4676912952998
+   }
+  ],
+  [
+   2755,
+   "creeper",
+   {
+    "x": -5.24650074764491,
+    "y": 64,
+    "z": 83.7536849215019
+   }
+  ],
+  [
+   2758,
+   "creeper",
+   {
+    "x": -10.380027468907997,
+    "y": 64,
+    "z": 78.09771587437835
+   }
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

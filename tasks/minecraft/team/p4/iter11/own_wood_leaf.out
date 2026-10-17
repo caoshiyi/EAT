@@ -1,0 +1,68 @@
+program #5059 on p4: 53.2 s
+--- output ---
+DOOR_ACTUAL exit (6.494068200312884, 66.42159999847412, 79.28405421962732)
+WOOD_LEG (14, 65, 79) 20
+WOOD_LEG (26, 69, 84) 20
+WOOD_LEG (28, 68, 95) 20
+WOOD_LEG (28, 69, 105) 20
+WOOD_LEG (24, 66, 109) 20
+ACTUAL_LEAF_CLEAR Vec3 { x: 24, y: 68, z: 109 }
+ACTUAL_LEAF_CLEAR Vec3 { x: 24, y: 69, z: 109 }
+DOOR_ACTUAL enter (6.588932513815841, 67, 82.47831490583029)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "harvested": [
+  {
+   "x": 24,
+   "y": 68,
+   "z": 110
+  },
+  {
+   "x": 24,
+   "y": 69,
+   "z": 110
+  },
+  {
+   "x": 24,
+   "y": 70,
+   "z": 110
+  }
+ ],
+ "logGain": 3,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.656242320531169,
+  "y": 67.5625,
+  "z": 83.6999999686811
+ },
+ "hp": 20,
+ "food": 20,
+ "life": {
+  "started": 1792213540836,
+  "life": 0,
+  "events": []
+ },
+ "own": [
+  [
+   "snowball",
+   1
+  ],
+  [
+   "spruce_log",
+   3
+  ]
+ ],
+ "elapsed": 53179
+}
+--- chat since this player's previous program ---
+p2: P2 ownSNOW38 finite95work45ending, 24→6travelcaps/14futureammo; currentminimalRODkit only. Nativefloor snowlayercuts, no sharedwalls/soil/P3field. Front6EXIT<=8s thenrelease.
+p3: P3 actualNetherroomFULL E lowerDIRT upperBASALT exactcurrentrecap/N2SS RELEASEwriters. Nativeownstone/Enderavenue, no pearlclaim.
+p2: P2 SNOW batch returncrossNOW actualnearfront/no futurelease; currentbodyreturn first.
+p2: P2 currentfront RETURNcross now<=8s; releaseafteractualclosedcamp.
+p3: P3 actual5052 NetherHOME FULL20HP/BOAT1/BERRY4; E currentDIRT/BASALT exactrecap RELEASED. NOW Sbench BLACKSTONE/TABLE/DIRT transit<=25s; actualTABLEpickup required, restorelowerBK beforeTABLE thenDIRT. No otherqueue. P2food actualUSE next ownberry1 from19f
+p3: ood beforecombat.
+p2: P2 ownSNOW38 finite95work45ending, 24→6travelcaps/14futureammo; currentminimalRODkit only. Nativefloor snowlayercuts, no sharedwalls/soil/P3field. Front6EXIT<=8s thenrelease.
+p3: P3 actual5060 SouthFULL20HP; Sbench exactBLACKSTONE65/TABLE66/DIRT67 at1,5 restored+released, E currentDIRT/BASALT closed earlier5052. P2 fourberries receipt5009, actualoneCONSUMED now19→20food/remaining3 confirmsuse. Beginprivatebridge leg; no campqueue.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

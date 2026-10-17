@@ -1,0 +1,168 @@
+program #5414 on p3: 7.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "caller": "iter11_native_axe_one",
+ "issue": "NO_VISIBLE_TARGET",
+ "killed": false,
+ "swings": 0,
+ "gazed": false,
+ "looted": false,
+ "pearlBefore": 3,
+ "pearlNow": 3,
+ "hp": 20,
+ "food": 19,
+ "p": {
+  "x": -106.50317472917558,
+  "y": 56,
+  "z": 109.4998272270317
+ },
+ "full": true,
+ "hurt": false,
+ "lost": false,
+ "trace": [
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -106.49474885187445,
+    "y": 56,
+    "z": 109.49985684889467
+   },
+   0
+  ],
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -105.4731192858438,
+    "y": 56,
+    "z": 109.4998568488945
+   },
+   0
+  ],
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -104.50203418858719,
+    "y": 56,
+    "z": 109.49985684889434
+   },
+   0
+  ],
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -104.49948878196561,
+    "y": 56,
+    "z": 110.52872592401972
+   },
+   0
+  ],
+  [
+   "ISSUE",
+   "NO_VISIBLE_TARGET"
+  ],
+  [
+   "HURT",
+   15901,
+   40
+  ]
+ ],
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   23
+  ],
+  [
+   "sweet_berries",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   3,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "netherrack",
+   19,
+   null
+  ],
+  [
+   "warped_nylium",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   32
+  ],
+  [
+   "warped_wart_block",
+   3,
+   null
+  ],
+  [
+   "warped_roots",
+   2,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   26
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   91
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "warped_fungus",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 7660
+}
+--- chat since this player's previous program ---
+p4: P1/P2 actual5387 BRIDGE4 worldCOMPLETE: DIR T9/8/7,Y67,Z89 +6,67,90 allfull. ActualedgeplaceACKs+walk10→6.5,68,90.5 portalFRONT(no transition)→10.55,68,89.5/HP12.366same. LongreturnplannerFAILED at8.77,65,81.73; immediate5396 NATIVE return8,65,80→8,65,79→7
+p4: ,66,79→6,66,79→door actualCAMP7.581,67.56,83.7/HPsame/life1 in7.5s. AllbridgewritersRELEASED, no floorAIRat4targetsnow. HangingGRASS10,68,91clearedactualDIRT1. ProofrouteSsidequalifiespublicfrontwalk; initialfailedreturnpreserved.
+--- p3 now: (-106.5, 56, 109.5) in the_nether, health 20/20, food 19/20, alive

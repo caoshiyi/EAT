@@ -1,0 +1,4 @@
+== #5460 2026-10-17T06:49:01 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3'),q=new Vec3(7,47,90);console.log('NEXT_ENUM',JSON.stringify([q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.offset(0,0,-1),q.offset(0,1,-1),q.offset(1,0,0),q.offset(1,1,0),q.offset(-1,0,0),q.offset(-1,1,0)].map(v=>[v,bot.blockAt(v)?.name])));
+-- output --
+NEXT_ENUM [[{"x":7,"y":47,"z":90},"stone"],[{"x":7,"y":48,"z":90},"stone"],[{"x":7,"y":46,"z":90},"stone"],[{"x":7,"y":49,"z":90},"stone"],[{"x":7,"y":47,"z":89},"gravel"],[{"x":7,"y":48,"z":89},"stone"],[{"x":8,"y":47,"z":90},"stone"],[{"x":8,"y":48,"z":90},"stone"],[{"x":6,"y":47,"z":90},"stone"],[{"x":6,"y":48,"z":90},"stone"]]

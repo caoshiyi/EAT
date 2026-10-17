@@ -1,0 +1,8 @@
+== #5310 2026-10-17T06:09:06 p1 role=experiment_owner iter=11 0.9 s
+const{Vec3}=require('vec3');async function craft(n,bench=null){const r=bot.recipesFor(bot.registry.itemsByName[n].id,null,1,bench)[0];if(!r)throw Error('RECIPE_'+n);await bot.craft(r,1,bench);if(bot.currentWindow)bot.closeWindow(bot.currentWindow);await bot.waitForTicks(3);if(bot.inventory.selectedItem){const k=bot.inventory.slots.findIndex((v,k)=>k>=9&&k<=44&&!v);await bot.clickWindow(k,0,0);await bot.waitForTicks(2)}}await craft('spruce_planks');await craft('stick');await craft('wooden_pickaxe',bot.blockAt(new Vec3(6,66,82)));console.log('ACTUAL_TOOL',bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),bot.entity.position,bot.health);
+-- output --
+ACTUAL_TOOL [
+  [ 'stick', 2, null ],
+  [ 'spruce_planks', 3, null ],
+  [ 'wooden_pickaxe', 1, 0 ]
+] Vec3 { x: 6.3057025116421475, y: 67.5625, z: 83.7 } 20

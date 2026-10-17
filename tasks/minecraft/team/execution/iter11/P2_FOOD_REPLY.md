@@ -1,0 +1,19 @@
+# P2 food request 3824/25 — initial reply 05:07 UTC
+
+Beneficiary: P2 finite mature-berry harvest and actual camp receipt; named current P1/P4 users. Imminent experiment: bounded day harvest, P3 front-entry priority. No historical farm audit.
+
+Actual source `p2/iter10/current_food.js`: `exposedAt` returns true for every non skeleton/stray/pillager, and also every entity closer than4, before reading terrain. Door EXIT uses this at12m; movement uses it at6m melee/9m creeper/16m ranged with five segment samples. So this is NOT a single24m guard. Actual `returnCamp` sets retreat=true and already allows distance-increasing neighbors, while `door('enter')` skips exit-only hostile precheck. Keep those distinctions.
+
+Small owner-adaptable correction: apply the existing terrain-ray body-sample test to melee too (remove the unconditional non-ranged/near4 `return true`), and correct its first-cell integer shape origin/forward range filter. Keep live hostile distance standoff in movement and retain current damage-stop/recovery. This changes the policy from “nearby implies exposed” to “nearby AND some sampled body point is presently exposed.” It does NOT prove no walking/climbing path exists. Spider can climb; vertical offset alone is not exclusion. Do not label a ray-occluded mob permanently irrelevant.
+
+`openingCells` must stay transparent in prospective EXIT test, otherwise closed camp doors incorrectly certify post-open cover. Need current terrain and foe positions; cached geometry alone is not physical proof. Missing blocks should conservatively remain exposed. Full solid blocks suffice as conservative occluders; partial shapes can remain non-occluding here without manufacturing false safety.
+
+No blanket melee-height whitelist, removal of other hostile guards, universal connectivity solver or required diagnostic preflight. Use within the imminent finite operation with owner-chosen standoff and current threat refresh; current-operation health, return and ordinary food/chest deltas are the acceptance evidence. The changed branch must execute in the actual food caller, not merely a separately tested helper.
+
+Code proposal and host fixture follow under execution/iter11; not yet adopted. Players own every world validation and choice. Publication is not ACK.
+
+05:07 proposal available: `food_exposure_proposal.js` replaces actual exposedAt only. Host-only `food_exposure_test.cjs` passes melee/near4 terrain evaluation, 15sample blocking, integer offsets, behind/beyond hits rejected, prospective door transparency, unknown-only conservative exposure. First fixture run FAILED because test used `6,67,81` rather than installed Vec3.toString() `(6, 67, 81)` for openingCells; corrected fixture and reran. Then inspected installed worldsync.js: null blocks bypass matcher; proposal makes no null-callback detection promise. Final fixture mirrors that. Not world validation.
+
+P2 NEW rod request3846/47 acknowledged here for later use; current actual operation is FOOD per3849/50. Rod analysis queued only after this finite operation/actual caller evidence; no work blocked on audit. P3 actual4980 camp/PEARL bank1→3 and spare sword0→1 per executed receipt needs separately reviewed source; not P2 withdrawal yet.
+
+**05:07:06 actual4989 overrides initial underground-Spider premise**: spider109 now(9.472,67.177,86.885), HP16, while p2 camp(7.548,67.5625,83.7). Actual4986 changed door bound to6melee/16ranged but retained unconditional melee exposedAt; aborted DOOR_HOSTILE_PRECHECK, gain0/protectedEndtrue/20HP. No adoption of our proposal. This is a currently near-surface mobile spider, not a certified roof-separated stationary foe; do not use initial Y63 observation as reason to waive guard now. Owner should act from its current useful-operation state. Same spider climbed/moved substantially in~1min; ray-hidden≠permanently inaccessible cave mob counterexample is physical, not theoretical.

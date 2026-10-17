@@ -1,0 +1,9 @@
+== #5584 2026-10-17T07:03:13 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');console.log('RIGHT_FRESH',JSON.stringify([[7,66,81],[7,67,81],[7,68,81],[7,69,81],[8,67,81],[8,68,81]].map(a=>{let b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.shapes]})));console.log('SPIDER',bot.entities[20256]&&{p:bot.entities[20256].position,hp:bot.entities[20256].metadata[9]});console.log('BODY',bot.entity.position,bot.health);
+-- output --
+RIGHT_FRESH [[[7,66,81],"air",[]],[[7,67,81],"air",[]],[[7,68,81],"air",[]],[[7,69,81],"cobblestone",[[0,0,0,1,1,1]]],[[8,67,81],"air",[]],[[8,68,81],"air",[]]]
+SPIDER {
+  p: Vec3 { x: 10.91217802107461, y: 63, z: 81.09623378920348 },
+  hp: 14
+}
+BODY Vec3 { x: 6.500000076339715, y: 67.5625, z: 83.33807287126218 } 20

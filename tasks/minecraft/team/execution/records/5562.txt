@@ -1,0 +1,57 @@
+== #5562 2026-10-17T07:00:45 p1 role=experiment_owner iter=11 9.5 s
+// v6: verified slab80 means NOJUMP, enter staging checked before opening, full inside predicate + closed door. v5: optional check callback aborts on life discontinuity before/after every navigation or manual pulse. v4: v3 SNEAK alignment + #780 feedback aim after any door activation, entry jump only before z80.35. Verify endpoint and closed door.
+const {Vec3}=require('vec3');
+async function p1Door(mode,check=()=>{}){
+ check();const ip=bot.entity.position;const insideNow=ip.x>5.3&&ip.x<7.7&&ip.z>82.2&&ip.z<84&&ip.y>=67&&ip.y<68.5;if(mode==='enter'&&insideNow){const d=bot.blockAt(new Vec3(6,67,81));if(d.getProperties().open){await bot.activateBlock(d);await bot.waitForTicks(4);}return{mode,ok:!bot.blockAt(new Vec3(6,67,81)).getProperties().open,p:bot.entity.position.toString(),hp:bot.health};}if(mode==='enter'&&(ip.z<78.8||ip.z>81||ip.y<65.8||ip.y>67.5))throw Error('ENTRY_NOT_AT_FRONT '+ip);
+ bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);check();const dp=new Vec3(6,67,81);let d=bot.blockAt(dp);if(!d.name.endsWith('_door'))throw Error('campdoor missing');if(!d.getProperties().open){await bot.activateBlock(d);await bot.waitForTicks(6);check()}d=bot.blockAt(dp);const s=d.shapes[0];let x=6.5;if(s&&s[3]<.5)x=6+(s[3]+1)/2;else if(s&&s[0]>.5)x=6+s[0]/2;
+ for(let i=0;i<40&&Math.abs(bot.entity.position.x-x)>.025;i++){check();const p=bot.entity.position;bot.setControlState('sneak',true);await bot.lookAt(p.offset(Math.sign(x-p.x)*10,1.6,0),true);check();bot.setControlState('forward',true);await bot.waitForTicks(Math.abs(p.x-x)>.5?4:1);bot.setControlState('forward',false);await bot.waitForTicks(3)}
+ bot.setControlState('sneak',false);check();if(Math.abs(bot.entity.position.x-x)>.045)throw Error('DOOR_MISALIGNED '+bot.entity.position);console.log('DOOR_ALIGN',x,bot.entity.position);
+ for(let i=0;i<35;i++){check();if(!bot.blockAt(dp).getProperties().open){await bot.activateBlock(bot.blockAt(dp));await bot.waitForTicks(2);check()}await bot.lookAt(mode==='enter'?new Vec3(6.59375,bot.entity.position.y+1.6,84):bot.entity.position.offset(0,1.6,-12),true);bot.setControlState('jump',mode==='enter'&&bot.blockAt(new Vec3(6,66,80)).getProperties().type!=='bottom'&&bot.entity.position.z<80.35);bot.setControlState('forward',true);await bot.waitForTicks(2);check();const p=bot.entity.position;if(mode==='exit'?p.z<79.6:p.z>82.25)break;}bot.clearControlStates();await bot.waitForTicks(4);check();const p=bot.entity.position;let ok=mode==='exit'?p.z<80:(p.x>5.3&&p.x<7.7&&p.z>82.2&&p.z<84&&p.y>=67&&p.y<68.5);if(ok)for(let n=0;n<3&&bot.blockAt(dp).getProperties().open;n++){await bot.activateBlock(bot.blockAt(dp));await bot.waitForTicks(4);check();}if(mode==='enter')ok=ok&&!bot.blockAt(dp).getProperties().open;return{mode,ok,p:bot.entity.position.toString(),hp:bot.health};
+}
+async function p1Go(g,ms=5000,check=()=>{}){check();let t;try{await Promise.race([bot.pathfinder.goto(g),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('bounded nav'))},ms))])}catch(e){console.log(e.message)}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates()}check();}
+
+bot.pathfinder.setGoal(null);bot.clearControlStates();const begin=Date.now(),self=bot.entity;function check(){if(bot.entity!==self||bot.game.dimension!=='overworld'||bot.health<16||Date.now()-begin>50000)throw Error('LIFE_BOUND');}
+const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','lava','water','powder_snow'].includes(bot.blockAt(q)?.name),empty=q=>['air','cave_air','snow','short_grass','fern'].includes(bot.blockAt(q)?.name);
+async function step(q){if(!full(q.offset(0,-1,0))||!empty(q)||!empty(q.offset(0,1,0)))throw Error('GEOM_'+q);
+for(let k=0,stable=0;k<65;k++){check();const p=bot.entity.position,d=Math.hypot(p.x-q.x-.5,p.z-q.z-.5),ground=bot.entity.onGround&&Math.abs(p.y-q.y)<.11;bot.clearControlStates();if(ground&&d<.11&&Math.hypot(bot.entity.velocity.x,bot.entity.velocity.z)<.05){if(++stable>=3)return;}else stable=0;if(d>.05){await bot.lookAt(new Vec3(q.x+.5,p.y+1.4,q.z+.5),true);bot.setControlState('sneak',ground);bot.setControlState('forward',true);}bot.setControlState('jump',q.y>p.y+.1);await bot.waitForTicks(1);}throw Error('BODY_'+q);}
+let issue=null;try{console.log('EXIT',await p1Door('exit',check));await bot.waitForTicks(8);
+const start=bot.entity.position.floored(),goal=new Vec3(6,68,90),key=p=>p.toString(),dirs=[[1,0],[-1,0],[0,1],[0,-1]],valid=q=>full(q.offset(0,-1,0))&&empty(q)&&empty(q.offset(0,1,0));
+let queue=[start],seen=new Set([key(start)]),prev=new Map(),found=null;
+for(let i=0;i<queue.length&&i<2400;i++){let a=queue[i];if(a.equals(goal)){found=a;break;}for(let [x,z] of dirs)for(let y of[0,1,-1]){let q=a.offset(x,y,z);if(q.x<4||q.x>16||q.z<77||q.z>94||q.y<64||q.y>71||seen.has(key(q))||!valid(q))continue;if(y>0&&!empty(a.offset(0,2,0)))continue;if(y<0&&!empty(q.offset(0,2,0)))continue;seen.add(key(q));prev.set(key(q),a);queue.push(q);}}
+if(!found)throw Error('NO_ROUTE');let route=[];for(let q=found;!q.equals(start);q=prev.get(key(q)))route.unshift(q);console.log('ROUTE',route);for(const q of route)await step(q);console.log('PORTAL_FRONT_ACTUAL',bot.entity.position);
+}catch(e){issue=e.message;console.log('ISSUE',issue);}finally{bot.clearControlStates();console.log('END',bot.entity.position,bot.health,bot.food);}
+-- output --
+DOOR_ALIGN 6.59375 Vec3 { x: 6.591985654633581, y: 67, z: 82.5319075423033 }
+EXIT {
+  mode: 'exit',
+  ok: true,
+  p: '(6.5919855836443295, 66, 79.10620142367293)',
+  hp: 20
+}
+ROUTE [
+  Vec3 { x: 7, y: 66, z: 79 },
+  Vec3 { x: 8, y: 65, z: 79 },
+  Vec3 { x: 9, y: 64, z: 79 },
+  Vec3 { x: 10, y: 64, z: 79 },
+  Vec3 { x: 10, y: 64, z: 80 },
+  Vec3 { x: 11, y: 65, z: 80 },
+  Vec3 { x: 11, y: 65, z: 81 },
+  Vec3 { x: 11, y: 66, z: 82 },
+  Vec3 { x: 12, y: 67, z: 82 },
+  Vec3 { x: 12, y: 68, z: 83 },
+  Vec3 { x: 12, y: 68, z: 84 },
+  Vec3 { x: 12, y: 67, z: 85 },
+  Vec3 { x: 12, y: 67, z: 86 },
+  Vec3 { x: 12, y: 67, z: 87 },
+  Vec3 { x: 12, y: 67, z: 88 },
+  Vec3 { x: 12, y: 67, z: 89 },
+  Vec3 { x: 11, y: 68, z: 89 },
+  Vec3 { x: 10, y: 68, z: 89 },
+  Vec3 { x: 9, y: 68, z: 89 },
+  Vec3 { x: 8, y: 68, z: 89 },
+  Vec3 { x: 7, y: 68, z: 89 },
+  Vec3 { x: 6, y: 68, z: 89 },
+  Vec3 { x: 6, y: 68, z: 90 }
+]
+ISSUE LIFE_BOUND
+END Vec3 { x: 11.79162334786215, y: 65.06125540709496, z: 81.7 } 11.555360794067383 20

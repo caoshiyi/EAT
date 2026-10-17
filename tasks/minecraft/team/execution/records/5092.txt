@@ -1,0 +1,6 @@
+== #5092 2026-10-17T05:17:46 p1 role=experiment_owner iter=11 0 s
+console.log('IRON',JSON.stringify(bot.findBlocks({matching:b=>b.name==='iron_ore',maxDistance:20,count:20})));console.log('COAL',JSON.stringify(bot.findBlocks({matching:b=>b.name==='coal_ore',maxDistance:14,count:8})));console.log('T',bot.time.timeOfDay);
+-- output --
+IRON [{"x":10,"y":40,"z":78},{"x":10,"y":40,"z":79},{"x":11,"y":40,"z":78},{"x":11,"y":40,"z":77},{"x":11,"y":40,"z":79},{"x":10,"y":39,"z":78},{"x":10,"y":39,"z":79},{"x":11,"y":39,"z":78},{"x":11,"y":39,"z":77},{"x":11,"y":39,"z":79},{"x":4,"y":34,"z":78},{"x":4,"y":34,"z":79},{"x":3,"y":34,"z":78},{"x":3,"y":34,"z":79},{"x":22,"y":41,"z":75},{"x":22,"y":41,"z":74},{"x":4,"y":33,"z":78},{"x":22,"y":40,"z":75},{"x":4,"y":33,"z":79},{"x":22,"y":40,"z":74}]
+COAL [{"x":14,"y":53,"z":76},{"x":14,"y":53,"z":75},{"x":14,"y":54,"z":76},{"x":15,"y":53,"z":77},{"x":14,"y":53,"z":74},{"x":14,"y":54,"z":75},{"x":15,"y":53,"z":76},{"x":15,"y":54,"z":77}]
+T 14443

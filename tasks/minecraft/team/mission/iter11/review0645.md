@@ -1,0 +1,13 @@
+# Review — 2026-10-17T06:45:40.499238+00:00
+
+Official receipt review0645_eval.txt is authoritative. Last known score remains dragon0/milestones9/deaths100; exact programs in that receipt. Deadline07:04:50 leaves~19minutes. Continue authorized useful work; no earlystop.
+
+P2 completed5406 DIAMOND6 acquisition, actualprotectedreturn5420/closedcamp20HP/banked6. Ownnewdiamondpickcrafted; bankDIAMOND3+STICK4 offeredP1, no receiveruseyet. Actual5433 firstOBS pickup retained1 butinjured20→10.33, endedcamp9.83HP17food andbankedOBS1. Remaining9unmined. Priorapproachproofdidnotqualifypickupexposure. P2ownerproposeschangedcoveredoperation afterhealing; no openrepeat. InjurycausebeyondobservedPOOL_FOE notindependentlyattributed. P4nowownsfinitefood/useforactualP2recipient, reusingtheknownreceiptfindinginactualcaller, notfreshwoodorweaponquota. Actorhealth/endingsfirst.
+
+P1actualsanddrain5401 andcappedascent5422 qualifiedFULL20HP toY64, currentY66/OW. NoNethertransitionyet. PlayeracknowledgesoldSTEELlost andownsnewIRON/flintinput whileP2obsidianruns; acceptfirstboundedactualinputreceipt/use, no newinventoryprojectwithoutpurpose. Bankdiamond/stickofferisnotcarriedpick.
+
+P3actual5421 PEARL3→4/nohurt/FULL20HP18food, laterconsumedberry to20food/remaining2. LatestY85renewal/recoveryrecipeassertion5440 thennewpickcraft5441; currentPEARL4carried, bank3separate. Remainingtime requiresboundedacquisitionandcompletebeneficialretention/transportending, no last-minutepromise. Morepicks/woodarenotadditionalpearls or bankreceipt.
+
+P4actual5375 blockerDEAD/nohurt/outerPLANK/innerAIR verified. Bridge5387fourDIRTplaced/crossedbutreturnfailed; separate5396manualreturnprotected12.37HPsame-life. Bridgeworldoutcomeacceptedwithfailurepreserved. HeaderS6/S7,Y69 changedtoCOBBLED byP2craftinputs; mainroof/footingreceiptsremainseparate. LatestwoodhandlebeneficiaryfulfilledbybankSTICK4, currentroofcleanupneedsactualreceiptbeforefooddeparture.
+
+Latest evidence: primarymaterialchainconverted, firstOBSoperationdidnotqualifywholebatch, healing/changedpickuparethecurrentcallers. No newmilestone/ROD/EYE stock; no materiallycompleteRODproposalreceivedbycheckpoint. Nextreview06:55 thenfinalofficialat07:04:50. Allrolesassigned, rootnonplaying, peerIDs/tokensunavailable. Fullrawreceipts/historypreserved.

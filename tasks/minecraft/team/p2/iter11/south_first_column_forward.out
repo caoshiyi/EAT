@@ -1,0 +1,51 @@
+program #5202 on p2: 11.2 s
+--- output ---
+ACTUAL_REAR_AND_OCCUPANTS Vec3 { x: 6.500000113530967, y: 67.5625, z: 83.53101284333503 } []
+S6_ACTUAL {"closed":true,"placed":[[6,66,84,"cobblestone"],[6,67,84,"cobblestone"],[6,68,84,"cobblestone"]],"hp":20,"p":{"x":6.500000113530967,"y":67.5625,"z":83.6181860201665},"swings":0}
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "lost": false,
+ "placed": [
+  [
+   6,
+   66,
+   84,
+   "cobblestone"
+  ],
+  [
+   6,
+   67,
+   84,
+   "cobblestone"
+  ],
+  [
+   6,
+   68,
+   84,
+   "cobblestone"
+  ]
+ ],
+ "swings": 0,
+ "p": {
+  "x": 6.500000113530967,
+  "y": 67.5625,
+  "z": 83.6181860201665
+ },
+ "hp": 20,
+ "inner6": "air",
+ "kit": [
+  [
+   "cobblestone",
+   12
+  ],
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.5, 67.6, 83.6) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,295 @@
+program #5426 on p3: 11.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "caller": "iter11_native_axe_one",
+ "issue": null,
+ "target": 15821,
+ "killed": true,
+ "swings": 3,
+ "gazed": true,
+ "looted": false,
+ "pearlBefore": 4,
+ "pearlNow": 4,
+ "hp": 20,
+ "food": 18,
+ "p": {
+  "x": -106.41118119469833,
+  "y": 56,
+  "z": 109.49992767385537
+ },
+ "full": true,
+ "hurt": false,
+ "lost": false,
+ "trace": [
+  [
+   "REJECTIONS",
+   {
+    "x": -107,
+    "y": 56,
+    "z": 109
+   },
+   [
+    [
+     15821,
+     {
+      "x": -105.5299005319403,
+      "y": 56,
+      "z": 116.25421844492428
+     },
+     [
+      "netherrack",
+      {
+       "x": -107,
+       "y": 57,
+       "z": 110
+      }
+     ],
+     false
+    ]
+   ]
+  ],
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -106.52551854228442,
+    "y": 56,
+    "z": 109.49985070489316
+   },
+   0
+  ],
+  [
+   "REJECTIONS",
+   {
+    "x": -106,
+    "y": 56,
+    "z": 109
+   },
+   [
+    [
+     15821,
+     {
+      "x": -105.5299005319403,
+      "y": 56,
+      "z": 116.25421844492428
+     },
+     null,
+     false
+    ]
+   ]
+  ],
+  [
+   "ACQUIRE_POSE",
+   {
+    "x": -105.50388905067987,
+    "y": 56,
+    "z": 109.49985070489299
+   },
+   1
+  ],
+  [
+   "BAIT_TARGET",
+   15821,
+   {
+    "x": -105.5299005319403,
+    "y": 56,
+    "z": 116.25421844492428
+   },
+   40,
+   {
+    "x": -105.50388905067987,
+    "y": 56,
+    "z": 109.49985070489299
+   }
+  ],
+  [
+   "GAZE",
+   true,
+   true,
+   {
+    "x": -105.5299005319403,
+    "y": 56,
+    "z": 116.25421844492428
+   }
+  ],
+  [
+   "ACTUAL_COMBAT_CENTER",
+   {
+    "x": -106.41118119469833,
+    "y": 56,
+    "z": 109.49992767385537
+   }
+  ],
+  [
+   "AXE_AIR",
+   15821,
+   40,
+   {
+    "x": -104.70004555364062,
+    "y": 56,
+    "z": 110.53993614769611
+   },
+   {
+    "x": -106.41118119469833,
+    "y": 56.121599998474125,
+    "z": 109.49992767385537
+   },
+   -0.1552320045166016
+  ],
+  [
+   "HURT",
+   15821,
+   40
+  ],
+  [
+   "AXE_AIR",
+   15821,
+   26.5,
+   {
+    "x": -104.51111554556958,
+    "y": 56,
+    "z": 110.50029295682907
+   },
+   {
+    "x": -106.41118119469833,
+    "y": 56.121599998474125,
+    "z": 109.49992767385537
+   },
+   -0.1552320045166016
+  ],
+  [
+   "HURT",
+   15821,
+   26.5
+  ],
+  [
+   "AXE_AIR",
+   15821,
+   13,
+   {
+    "x": -104.60029652953259,
+    "y": 56,
+    "z": 110.48124998807907
+   },
+   {
+    "x": -106.41118119469833,
+    "y": 56.121599998474125,
+    "z": 109.49992767385537
+   },
+   -0.1552320045166016
+  ],
+  [
+   "HURT",
+   15821,
+   13
+  ],
+  [
+   "DEAD",
+   15821,
+   {
+    "x": -104.60029652953259,
+    "y": 56,
+    "z": 110.48124998807907
+   }
+  ]
+ ],
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   23
+  ],
+  [
+   "sweet_berries",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   4,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "netherrack",
+   19,
+   null
+  ],
+  [
+   "warped_nylium",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   41
+  ],
+  [
+   "warped_wart_block",
+   3,
+   null
+  ],
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   46
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   91
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 11247
+}
+--- chat since this player's previous program ---
+p2: P2 actualbank6diamond verified5420. Need2PLANK→4STICK for2picks; finiteborrow S6/S7upper69Z84 PLANK→COBBLEDreplacement now<=30s, no mainroof/doorcut. BankSTICK2 usedforownpick; new4STICK bankforP1pick. P1 take3DIAMOND afteractualcraftreceipt.
+p4: Fresh5412 bankSTICK2 only, P2actualDIAMOND6 meanssecondDIAMONDpick stillneeds2morehandles. P4 finiteONELOG75→8STICKbank goal usingexistinggrownprotectedtree (freshLOG5,75,83;73/74AIR). No field/kit/loan: temporarily2TOPslabs→BOTTOMstep68.5→combineDOUBLEtop
+p4: 69 actualsmallcase→LOG75 ordinary→removeDOUBLE→restorebothoriginalTOP. HeldDIRT1backup, allpeersoffroof. Cap3min/currentdispatch, no furtherwoodquota. NeedactualDOUBLE/refstate, wrapperdestinationmayreportfalsefailureonSLABmerge.
+--- p3 now: (-106.4, 56, 109.5) in the_nether, health 20/20, food 18/20, alive

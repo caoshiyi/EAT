@@ -1,0 +1,11 @@
+== #5470 2026-10-17T06:50:59 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);
+const q=new Vec3(6,48,88),ref=q.offset(0,-1,0),start=Date.now();let issue=null,n=0;
+try{if(bot.entity.position.distanceTo(new Vec3(7.5,47,88.5))>.5||bot.health<19)throw Error('BODY');if(bot.blockAt(ref)?.name!=='stone')throw Error('FLOOR');
+while(n<40&&Date.now()-start<48000&&!bot.inventory.items().some(i=>i.name==='flint')){
+let b=bot.blockAt(q);if(b.name==='air'){let g=bot.inventory.items().find(i=>i.name==='gravel');if(!g)throw Error('NO_GRAVEL');await bot.equip(g,'hand');await bot.placeBlock(bot.blockAt(ref),new Vec3(0,1,0));b=bot.blockAt(q);}
+if(b.name!=='gravel')throw Error('KIND_'+b.name);await bot.unequip('hand');await bot.dig(b,true);await bot.waitForTicks(8);n++;
+}
+}catch(e){issue=e.message}finally{bot.clearControlStates();if(bot.blockAt(q)?.name==='air'){await bot.equip(bot.inventory.items().find(i=>i.name==='cobblestone'),'hand');await bot.placeBlock(bot.blockAt(ref),new Vec3(0,1,0));}console.log('FLINT',JSON.stringify({n,issue,hp:bot.health,p:bot.entity.position,wall:bot.blockAt(q)?.name,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}
+-- output --
+FLINT {"n":0,"issue":"FLOOR","hp":20,"p":{"x":7.4993422308049995,"y":47,"z":88.3},"wall":"gravel","inv":[["wooden_pickaxe",1,9],["sand",8,null],["stick",1,null],["gravel",2,null],["crafting_table",1,null],["cobblestone",36,null],["stone_pickaxe",1,96],["torch",4,null],["sandstone",1,null],["stone_pickaxe",1,10],["dirt",6,null],["diorite",4,null]]}

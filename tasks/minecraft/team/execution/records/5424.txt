@@ -1,0 +1,19 @@
+== #5424 2026-10-17T06:41:01 p2 role=independent_operator iter=11 0 s
+const {Vec3}=require('vec3');console.log('CRAFT_INPUTS',{kit:bot.inventory.items().map(i=>[i.name,i.count]),table:bot.findBlocks({matching:bot.registry.blocksByName.crafting_table.id,maxDistance:5,count:10}).map(p=>[p,bot.blockAt(p)?.name]),logs:bot.findBlocks({matching:bot.registry.blocksByName.spruce_log.id,maxDistance:6,count:20}).map(p=>[p,bot.blockAt(p)?.name]),blocks:[[6,67,82],[6,68,82],[7,67,82],[5,69,83],[5,70,83]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])});
+-- output --
+CRAFT_INPUTS {
+  kit: [
+    [ 'iron_pickaxe', 1 ],
+    [ 'moss_block', 2 ],
+    [ 'cobbled_deepslate', 7 ]
+  ],
+  table: [ [ [Vec3], 'crafting_table' ] ],
+  logs: [],
+  blocks: [
+    [ [Array], 'air' ],
+    [ [Array], 'air' ],
+    [ [Array], 'chest' ],
+    [ [Array], 'dirt' ],
+    [ [Array], 'air' ]
+  ]
+}

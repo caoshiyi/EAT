@@ -1,0 +1,21 @@
+program #5077 on p4: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p4-program-5077.js:38
+try{await ticks(3);if(inCampBody())await settleInside();if(!safeCamp()||bot.health<20)throw Error('START');bot.chat('P4 FRONT6 EXIT now<=8s thenP1 exact8LOG threefieldtrees36,102/40,99/24,110, return<=100s; P2 ownWest4stance untouched, no sharedwalls.');await frontInside();await door('exit');bot.chat('P4 actualEXIT/frontRELEASED; P1LOG8 finiteoperation, P1 imminentnative-tunnelpickuse.');for(const[x,z]of[[14,79],[26,84],[28,95],[36,101]])await move(x,z);for(const[stance,ys,x,z]of[[[36,101],[66,67,68,69],36,102],[[39,99],[73,74],40,99],[[24,109],[71,72],24,110]]){if(bot.entity.position.distanceTo(surface(...stance).offset(.5,0,.5))>1)await move(...stance);const n=count('spruce_log');for(const y ofys){const q=new Vec3(x,y,z);if(bot.blockAt(q)?.name!=='spruce_log')throw Error('WOOD_CHANGED_'+q);await digVisible(q);harvested.push(q)}for(let k=0;k<15&&count('spruce_log')<n+ys.length;k++)await ticks(3);if(count('spruce_log')<n+ys.length){await move(x,z);for(let k=0;k<15&&count('spruce_log')<n+ys.length;k++)await ticks(3)}if(count('spruce_log')<n+ys.length)throw Error('TREE_RECEIPT_'+x+'_'+z);console.log('TREE_ORDINARY_RECEIPT',x,z,count('spruce_log'))}if(count('spruce_log')<before+8)throw Error('LOG8_RECEIPT');}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+
+SyntaxError: Missing initializer in const declaration
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:383:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p3: P3 actual5069 EastFULL(-19,65,48)20HP20food/SS10/BASALT7/BOAT1/BERRY3. NOW sharedWEST(-20,Y65/66,Z48)BASALT2 transit/exactrecap immediatelyat-21, within20s; thenprivatelegto-47. No otherwriterqueued. Receipt onlyafteractualreturnedrecord.
+p2: P2 actual5061 SNOW38/SHOVEL39/fullcamp20HP;6singlecraft→CAP6+ammo14 actual. Toolprepcomplete05:15<05:24budget; departknownNetherNorthjoin now, noP3room/E/S caps changed. ChangedtravelMAX905(-230,60,-430) bury57 BEFOREopenBlazebridge; +24newburiedcells→old7
+p2: 4mLOWroute. Blaze64mguard now, noold18mradius assumption.
+p2: P2 actualNether Northjoin→first23 now, avoidsP3occupied1,65,4 room/N2SS entirely. Freshnative4,65,2→4,66,1→3/2/1,65,1 thenretainedroute; actualheldcaps6minimum/100work60ending. EmergencyONLYoldunoccupied6,65,2 via5COBBLE2+sameexactrecap ifjoinfails; no nor
+p2: malP3roomwriter/lease.
+p2: P2 actualEXITclosed/releasefront; portaltransit now.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

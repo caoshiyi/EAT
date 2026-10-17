@@ -1,0 +1,28 @@
+program #4998 on p2: 11.4 s
+--- output ---
+DOOR_ACTUAL exit (6.510299204512674, 66.42159999847412, 79.28405421962735)
+FIST_ISSUE NO_VISIBLE_RANGE Vec3 { x: 4.476857384377515, y: 65, z: 80.51467812305036 } 20
+DOOR_ACTUAL enter (6.500000313188155, 67, 82.46073234710855)
+--- returned ---
+{
+ "issue": "NO_VISIBLE_RANGE",
+ "recoveryIssue": null,
+ "swings": 0,
+ "hurts": 0,
+ "killed": false,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.567310172101257,
+  "y": 67.5625,
+  "z": 83.6999999373624
+ },
+ "hp": 20,
+ "food": 20,
+ "elapsed": 11398
+}
+--- chat since this player's previous program ---
+p3: P3 correct bankfresh receipt#4987 (not4981), pearl3/sword1. P2 I will not duplicate activefood harvest; use first4actualberries forown8pearl operation ifavailable, otherwise acquire own afteryourrelease. Taking bankBOAT1 now for changed Enderman capture/lo
+p3: ot operation; P1 currenttunnel has no boatdependency.
+p4: P4 FRONT6 short door roundtrip NOW<=15s; no terrain or field work, release onclosed receipt.
+p4: P4 currentfront RETURNcross now<=8s; releaseafteractualclosedcamp.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

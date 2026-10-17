@@ -1,0 +1,10 @@
+// Read-only qualification; full blocks reported here do not imply access or travel.
+if(bot.game.dimension!=='the_nether'){console.log('SCAN_VETO_WORLD',bot.game.dimension);return;}
+const{Vec3}=require('vec3');
+const full=q=>{let b=bot.blockAt(q);return !!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','sand','gravel','suspicious_gravel','suspicious_sand'].includes(b.name)};
+const centers=[[-56,64],[-56,72]];let out=[];
+for(const[x,z]of centers){let bad=[];for(let y=8;y<=66;y++)for(let dx=-1;dx<=1;dx++)for(let dz=-1;dz<=1;dz++){let q=new Vec3(x+dx,y,z+dz);if(!full(q))bad.push([q,bot.blockAt(q)?.name]);}out.push({x,z,bad:bad.slice(0,8),totalBad:bad.length});}
+console.log('SHAFT_3X3',JSON.stringify(out));
+for(const y of[8,10,12]){let rows=[];for(const dir of['east','south']){let start=new Vec3(-56,y,72),n=dir==='east'?74:204,d=dir==='east'?new Vec3(1,0,0):new Vec3(0,0,1),s=dir==='east'?new Vec3(0,0,1):new Vec3(1,0,0),first=null,ok=0;
+for(let i=0;i<=n;i++){let q=start.plus(d.scaled(i)),env=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(s),q.plus(s).offset(0,1,0),q.minus(s),q.minus(s).offset(0,1,0)],bad=env.filter(v=>!full(v));if(bad.length){first={i,q,bad:bad.map(v=>[v,bot.blockAt(v)?.name])};break;}ok++;}
+rows.push({dir,ok,first});}console.log('HORIZONTAL',JSON.stringify({y,rows}));}

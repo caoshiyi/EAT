@@ -1,0 +1,15 @@
+== #5025 2026-10-17T05:09:59 p1 role=experiment_owner iter=11 0.2 s
+const{Vec3}=require('vec3');const before=bot.inventory.items().map(i=>[i.name,i.count]);let c;try{c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));console.log('BANK_PRE',c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]));for(const[n,k]of[['wooden_pickaxe',1],['spruce_planks',4],['stick',2]]){const i=c.containerItems().find(i=>i.name===n);if(!i||i.count<k)throw Error('MISSING_'+n);await c.withdraw(i.type,null,k);}c.close();c=null;await bot.waitForTicks(5);const r=bot.recipesFor(bot.registry.itemsByName.crafting_table.id,null,1,null)[0];if(!r)throw Error('TABLE_RECIPE');await bot.craft(r,1,null);await bot.waitForTicks(5);if(bot.inventory.selectedItem){const k=bot.inventory.slots.findIndex((v,k)=>k>=9&&k<=44&&!v);if(k<9)throw Error('CURSOR');await bot.clickWindow(k,0,0);await bot.waitForTicks(3);}console.log('ACTUAL_RECEIPT',JSON.stringify({before,after:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),hp:bot.health,p:bot.entity.position}));}finally{if(c)c.close();}
+-- output --
+BANK_PRE [
+  [ 'spruce_planks', 5, null ],
+  [ 'sweet_berries', 1, null ],
+  [ 'flint_and_steel', 1, 0 ],
+  [ 'wooden_pickaxe', 1, 0 ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 3, null ],
+  [ 'stick', 2, null ],
+  [ 'arrow', 1, null ]
+]
+ACTUAL_RECEIPT {"before":[],"after":[["wooden_pickaxe",1,0],["crafting_table",1,null],["stick",2,null]],"hp":20,"p":{"x":7.339386074283022,"y":67.5625,"z":83.7}}

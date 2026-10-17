@@ -1,0 +1,66 @@
+program #5590 on p4: 0.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "before": {
+  "p": {
+   "x": 7.605734476923773,
+   "y": 67.5625,
+   "z": 83.69999984340599
+  },
+  "hp": 12.926748275756836
+ },
+ "err": "CAP_RAY_7,67,81_chest_(7, 68, 82)",
+ "placed": [
+  [
+   7,
+   68,
+   81
+  ]
+ ],
+ "p": {
+  "x": 7.605734476923773,
+  "y": 67.5625,
+  "z": 83.69999984340599
+ },
+ "hp": 12.926748275756836,
+ "stock": 1,
+ "right": [
+  [
+   66,
+   "air"
+  ],
+  [
+   67,
+   "air"
+  ],
+  [
+   68,
+   "sandstone"
+  ],
+  [
+   69,
+   "cobblestone"
+  ]
+ ],
+ "spider": [
+  [
+   20256,
+   {
+    "x": 11.30005540794786,
+    "y": 66.10002187728882,
+    "z": 89.30000001192093
+   },
+   14
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 bridge58 FULL20 now, NorthboundSouth52cells~30s→Sbench. P2 holdclearplease. P1/P4 campDOOR7AIR noted: I carry5PEARLS/armedSTONEaxes+sword. Needfront7closure beforearrival~60s; bankSS7available, Spider20256 mayblockHEAD (foot67belowSpider68.1 cancap). I 
+p3: willdepositonactualinsidebody evenifprotectionunresolved; no protectedclaimfromHP.
+p1: P4 fresh5584 RIGHT67/68AIR, below66alsoAIR! Roof7,69,81COFF FULL reference exists. CROUCHbackslabeye68.83 BELOWroof69 can placeHEAD68 via roofDOWN first; foot67 mayneed side6,67,81DOOR Eface lowz.09 (thincloseddoorz81..81.1875), sneakavoidactivation. Predi
+p1: ctionsONLY, validatefirsthit. Spider20256 now10.91,63,81.10 HP14/outofcell.
+p2: P3 Eexit attemptsMOSSreceiptfailed, ownbody1.7,65,4.5 stoppedatEwall/nohurt. Reconcileactualcaps now; no more simultaneousEcuts, floor/Sbench untouched. IfyouareHOMEreturning, P2canstayprotectedthroughdeadline, ownsDIApick15wear only. No actualOWreturn/ban
+p2: kclaim.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 12.9/20, food 16/20, alive

@@ -1,0 +1,42 @@
+program #5595 on p4: 2.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "utc": "2026-10-17T07:04:06.236Z",
+ "before": {
+  "hp": 12.926748275756836,
+  "food": 16,
+  "items": [
+   [
+    "spider_eye",
+    1
+   ],
+   [
+    "string",
+    1
+   ],
+   [
+    "sweet_berries",
+    1
+   ]
+  ]
+ },
+ "err": null,
+ "hp": 12.926748275756836,
+ "food": 18,
+ "items": [
+  [
+   "spider_eye",
+   1
+  ],
+  [
+   "string",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P3 exactCURRENT HOME Efoot2,65,4=MOSS/full, HEAD2,66,4=AIR, ownstock0. NeedONEyourheldBASALT atHEAD66 viaexistingfootMOSS UP afterHOMEarrival; P2no morecuts/staysinsideclear, no FULLclaimuntilreceipt. Floor1,64,4 BASALT intact, Sbenchoriginalallunchanged. 
+p2: Insidepickup/range assumptions failed, ownDIA15 retained/20HP.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 12.9/20, food 18/20, alive

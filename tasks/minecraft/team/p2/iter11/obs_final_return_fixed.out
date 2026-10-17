@@ -1,0 +1,114 @@
+program #5504 on p2: 48.6 s
+--- output ---
+FAILED_DROP_HEAD_FRESH [
+  [ 65, 'air' ],
+  [ 66, 'air' ],
+  [ 67, 'grass_block' ],
+  [ 68, 'cave_air' ]
+]
+CURRENT_NATIVE_PATH [
+  [ 11, 66, 91 ], [ 11, 66, 92 ], [ 12, 66, 92 ],
+  [ 13, 67, 92 ], [ 13, 66, 93 ], [ 13, 67, 94 ],
+  [ 13, 67, 95 ], [ 14, 67, 95 ], [ 15, 67, 95 ],
+  [ 16, 67, 95 ], [ 17, 68, 95 ], [ 18, 68, 95 ],
+  [ 19, 68, 95 ], [ 20, 68, 95 ], [ 21, 68, 95 ],
+  [ 21, 68, 94 ], [ 21, 68, 93 ], [ 21, 68, 92 ],
+  [ 21, 68, 91 ], [ 21, 68, 90 ], [ 21, 68, 89 ],
+  [ 21, 68, 88 ], [ 20, 68, 88 ], [ 20, 67, 87 ],
+  [ 20, 67, 86 ], [ 20, 67, 85 ], [ 19, 67, 85 ],
+  [ 18, 67, 85 ], [ 18, 67, 84 ], [ 17, 67, 84 ],
+  [ 16, 67, 84 ], [ 15, 67, 84 ], [ 14, 67, 84 ],
+  [ 13, 68, 84 ], [ 12, 68, 84 ], [ 11, 67, 84 ],
+  [ 10, 66, 84 ], [ 10, 66, 83 ], [ 10, 65, 82 ],
+  [ 9, 65, 82 ],  [ 8, 65, 82 ],  [ 8, 64, 81 ],
+  [ 8, 65, 80 ],  [ 7, 65, 80 ],  [ 7, 66, 79 ],
+  [ 6, 66, 79 ]
+]
+CURRENT_NATIVE_NODE (11, 66, 91) 20
+CURRENT_NATIVE_NODE (11, 66, 92) 20
+CURRENT_NATIVE_NODE (12, 66, 92) 20
+CURRENT_NATIVE_NODE (13, 67, 92) 20
+CURRENT_NATIVE_NODE (13, 66, 93) 20
+CURRENT_NATIVE_NODE (13, 67, 94) 20
+CURRENT_NATIVE_NODE (13, 67, 95) 20
+CURRENT_NATIVE_NODE (14, 67, 95) 20
+CURRENT_NATIVE_NODE (15, 67, 95) 20
+CURRENT_NATIVE_NODE (16, 67, 95) 20
+CURRENT_NATIVE_NODE (17, 68, 95) 20
+CURRENT_NATIVE_NODE (18, 68, 95) 20
+CURRENT_NATIVE_NODE (19, 68, 95) 20
+CURRENT_NATIVE_NODE (20, 68, 95) 20
+CURRENT_NATIVE_NODE (21, 68, 95) 20
+CURRENT_NATIVE_NODE (21, 68, 94) 20
+CURRENT_NATIVE_NODE (21, 68, 93) 20
+CURRENT_NATIVE_NODE (21, 68, 92) 20
+CURRENT_NATIVE_NODE (21, 68, 91) 20
+CURRENT_NATIVE_NODE (21, 68, 90) 20
+CURRENT_NATIVE_NODE (21, 68, 89) 20
+CURRENT_NATIVE_NODE (21, 68, 88) 20
+CURRENT_NATIVE_NODE (20, 68, 88) 20
+CURRENT_NATIVE_NODE (20, 67, 87) 20
+CURRENT_NATIVE_NODE (20, 67, 86) 20
+CURRENT_NATIVE_NODE (20, 67, 85) 20
+CURRENT_NATIVE_NODE (19, 67, 85) 20
+CURRENT_NATIVE_NODE (18, 67, 85) 20
+CURRENT_NATIVE_NODE (18, 67, 84) 20
+CURRENT_NATIVE_NODE (17, 67, 84) 20
+CURRENT_NATIVE_NODE (16, 67, 84) 20
+CURRENT_NATIVE_NODE (15, 67, 84) 20
+CURRENT_NATIVE_NODE (14, 67, 84) 20
+CURRENT_NATIVE_NODE (13, 68, 84) 20
+CURRENT_NATIVE_NODE (12, 68, 84) 20
+CURRENT_NATIVE_NODE (11, 67, 84) 20
+CURRENT_NATIVE_NODE (10, 66, 84) 20
+CURRENT_NATIVE_NODE (10, 66, 83) 20
+CURRENT_NATIVE_NODE (10, 65, 82) 20
+CURRENT_NATIVE_NODE (9, 65, 82) 20
+CURRENT_NATIVE_NODE (8, 65, 82) 20
+CURRENT_NATIVE_NODE (8, 64, 81) 20
+CURRENT_NATIVE_NODE (8, 65, 80) 20
+CURRENT_NATIVE_NODE (7, 65, 80) 20
+CURRENT_NATIVE_NODE (7, 66, 79) 20
+CURRENT_NATIVE_NODE (6, 66, 79) 20
+DOOR_ACTUAL enter (6.592044601395687, 67, 82.49193040085427)
+OBS_PARTIAL_BANK [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'diamond_pickaxe', 1 ],
+  [ 'obsidian', 10 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "banked": true,
+ "p": {
+  "x": 7.664796017896324,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "kit": [
+  [
+   "diamond_pickaxe",
+   1,
+   10
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P1/P2 P4actualNEWpoolfloor10,66,91.5/14.37HP (nohurt), old10,67,91 goalnowNAV_NOT_ACTUAL afterOBSmining; returnalsoLAND_NOT_ACTUAL. Freshgeometry read now thennativeup/return; P2pleasepoolfootprint10,66,91clear whileP4moves. NoNetherentryyet; LOWtestnotpro
+p4: ved.
+p4: P4 actualpool10,66,91 recoveringviaONEretainedDIRTpillar at10,66,91 thennorthgrassstep10,68,90; poolminingcomplete? Onlythisonecellwrite, P2specificclearanceplease.
+p4: P1 changedcase actualDIRTstep10,66,91 +northUP10,68,90→bridgeportalFRONT successful/nohurt. OldhistoricalportalDOOR6,68,90 isAIR, so myoldgatepreconditionvetoed notrealobstruction. Returningbodycurrently11.5,67,84.9; immediatefreshnative recovery thenchang
+p4: edgateAIR test. Do notcopyoldgatehelper.
+--- p2 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

@@ -1,0 +1,4 @@
+== #5595 2026-10-17T07:04:04 p4 role=integration_operator iter=11 2.2 s
+bot.clearControlStates();const before={hp:bot.health,food:bot.food,items:bot.inventory.items().map(i=>[i.name,i.count])};const i=bot.inventory.items().find(i=>i.name==='sweet_berries');let err=null;try{if(i&&bot.food<20){await bot.equip(i,'hand');await bot.consume();await bot.waitForTicks(12)}}catch(e){err=e.message}finally{bot.clearControlStates()}return{utc:new Date().toISOString(),before,err,hp:bot.health,food:bot.food,items:bot.inventory.items().map(i=>[i.name,i.count])};
+-- returned --
+{"utc": "2026-10-17T07:04:06.236Z", "before": {"hp": 12.926748275756836, "food": 16, "items": [["spider_eye", 1], ["string", 1], ["sweet_berries", 1]]}, "err": null, "hp": 12.926748275756836, "food": 18, "items": [["spider_eye", 1], ["string", 1]]}

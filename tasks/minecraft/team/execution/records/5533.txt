@@ -1,0 +1,9 @@
+== #5533 2026-10-17T06:57:50 p2 role=independent_operator iter=11 0 s
+const{Vec3}=require('vec3'),full=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),home=new Vec3(1,65,4);for(const y of[65,66]){const q=new Vec3(2,y,4);if(!full(q)){const ref=[[0,-1,0],[0,1,0],[-1,0,0],[1,0,0],[0,0,-1],[0,0,1]].map(d=>q.offset(...d)).find(full);await bot.equip(bot.inventory.items().find(i=>i.name==='moss_block'),'hand');await bot._placeBlockWithOptions(bot.blockAt(ref),q.minus(ref),{forceLook:true});await bot.waitForTicks(3);if(!full(q))throw Error('ACTUAL_CAP');}}console.log('HOME_ACTUAL_FULL',JSON.stringify({closed:[home.offset(0,-1,0),home.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[0,1].map(y=>home.offset(x,y,z)))].every(full),p:bot.entity.position,hp:bot.health,below:[64,63,62,61,60,59].map(y=>[y,bot.blockAt(new Vec3(1,y,4))?.name]),kit:bot.inventory.items().map(i=>[i.name,i.count])}));bot.chat('P2 actualHOME E BOTHMOSS full repair, SNOW/DIRT substitutionexplicit; originalpickupsunreceived (P1nearby). FreshHOMEbelow63AIR confirmsno directburial; FLOOR64UNTOUCHED. No LOWproof, alternative floorcolumn searchnowfinite. P1/P4currentstaging remainsoutsidefloorlease(no floorcut).');
+-- error --
+Error: Invalid item object in equip (item is null or typeof item is not object)
+    at Proxy.equip (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/simple_inventory.js:93:13)
+    at p2-program-5533.js:1:287
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:386:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

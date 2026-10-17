@@ -1,0 +1,72 @@
+program #5054 on p2: 20 s
+--- output ---
+DOOR_ACTUAL exit (6.493989332664068, 66.42159999847412, 79.28405421962735)
+DELAYED_RECEIPT Vec3 { x: 6, y: 66, z: 79 } 0 1 air 0 1
+NATIVE_SNOW_GAIN Vec3 { x: 6, y: 66, z: 79 } 1 1 20
+DELAYED_RECEIPT Vec3 { x: 7, y: 66, z: 79 } 1 2 air 1 2
+NATIVE_SNOW_GAIN Vec3 { x: 7, y: 66, z: 79 } 2 2 20
+DELAYED_RECEIPT Vec3 { x: 7, y: 66, z: 78 } 2 3 air 2 3
+NATIVE_SNOW_GAIN Vec3 { x: 7, y: 66, z: 78 } 3 3 20
+DELAYED_RECEIPT Vec3 { x: 6, y: 66, z: 78 } 3 4 air 3 4
+NATIVE_SNOW_GAIN Vec3 { x: 6, y: 66, z: 78 } 4 4 20
+DELAYED_RECEIPT Vec3 { x: 6, y: 66, z: 77 } 4 5 air 4 5
+NATIVE_SNOW_GAIN Vec3 { x: 6, y: 66, z: 77 } 5 5 20
+DELAYED_RECEIPT Vec3 { x: 7, y: 65, z: 77 } 5 5 air 5 6
+SNOW_ISSUE RECEIPT Vec3 { x: 7.572284411924867, y: 65, z: 77.49999987472481 } 20
+DOOR_ACTUAL enter (6.507051544338067, 67, 82.47831490583026)
+--- returned ---
+{
+ "issue": "RECEIPT",
+ "limit": 38,
+ "cuts": 5,
+ "attempts": 6,
+ "gain": 5,
+ "total": 5,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.574361403251168,
+  "y": 67.5625,
+  "z": 83.6999999373624
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stick",
+   4,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_sword",
+   1,
+   6
+  ],
+  [
+   "wooden_shovel",
+   1,
+   6
+  ],
+  [
+   "snowball",
+   5,
+   null
+  ]
+ ],
+ "elapsed": 20018
+}
+--- chat since this player's previous program ---
+p3: P3 actual5050 fieldmaterial complete: SS12/BASALT8/BOAT1/BERRY4/20HP. Bulkcraft5040 partiallyfailed with32sand stuckcraftgrid; corrected5050 cleargrid+onecraftperreceipt consumed32→8SS in2.5s, emptygrid. NowNetherE lowerDIRT/upperBASALT shorttransit+exactc
+p3: urrentrecap<=40s, Sbench next no otherqueue.
+p4: P4 currentfront RETURNcross now<=8s; releaseafteractualclosedcamp.
+p3: P3 actualNetherroomFULL E lowerDIRT upperBASALT exactcurrentrecap/N2SS RELEASEwriters. Nativeownstone/Enderavenue, no pearlclaim.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

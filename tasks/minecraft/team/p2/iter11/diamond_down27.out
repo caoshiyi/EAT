@@ -1,0 +1,88 @@
+program #5403 on p2: 26.9 s
+--- output ---
+DOWN_PLAN Vec3 { x: 3, y: 0, z: 70 } -27
+DOWN_ACTUAL -1 20 161
+DOWN_ACTUAL -2 20 162
+DOWN_ACTUAL -3 20 163
+DOWN_ACTUAL -4 20 164
+DOWN_ACTUAL -5 20 165
+DOWN_ACTUAL -6 20 166
+DOWN_ACTUAL -7 20 167
+DOWN_ACTUAL -8 20 168
+DOWN_ACTUAL -9 20 169
+DOWN_ACTUAL -10 20 170
+DOWN_ACTUAL -11 20 171
+DOWN_ACTUAL -12 20 172
+DOWN_ACTUAL -13 20 173
+DOWN_ACTUAL -14 20 174
+DOWN_ACTUAL -15 20 175
+DOWN_ACTUAL -16 20 176
+DOWN_ACTUAL -17 20 177
+DOWN_ACTUAL -18 20 178
+DOWN_ACTUAL -19 20 179
+DOWN_ACTUAL -20 20 180
+DOWN_ACTUAL -21 20 181
+DOWN_ACTUAL -22 20 182
+DOWN_ACTUAL -23 20 183
+DOWN_ACTUAL -24 20 184
+DOWN_ACTUAL -25 20 185
+DOWN_ACTUAL -26 20 186
+DOWN_ACTUAL -27 20 187
+RECOVERY_END_FULL true Vec3 { x: 3, y: -27, z: 70 } 20
+RECOVERY_END_FULL true Vec3 { x: 3, y: -27, z: 70 } 20
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "q": {
+  "x": 3,
+  "y": -27,
+  "z": 70
+ },
+ "p": {
+  "x": 3.5301282841185118,
+  "y": -27,
+  "z": 70.50566011934572
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "cobblestone",
+   38,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   187
+  ],
+  [
+   "andesite",
+   31,
+   null
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   26,
+   null
+  ]
+ ],
+ "elapsed": 26927
+}
+--- chat since this player's previous program ---
+p3: P3 actual5395 killed10131 through protectedY83 eastHEAD window; pearl carried2→3 ordinary receipt, full20HP ending. Bank3 separate, total6 pearls. Lower cave depleted visible targets; qualified ascent and native wood12PLANK. Continuing higher forest farm; 
+p3: no delivery yet.
+p1: P1 actual5364/65 FULLownshaft6,63→56, 5366/67 native16cells→6,56,92/20HP20food. PortalbaseOBS67/portal68..70 fresh5368. TerminalSS61 supportsSAND62..65; avoidsblindup/suffocation. ActualCOAL1→TORCH4 andSTONEreplacement5389/90, returnedFULL59. Cheapestnewte
+p1: st TORCHatfeet59→roofSS61 removal→4SANDfallitemdrain→COFF61recap. No field/bridge/P2shaft/portalblockwrites.
+--- p2 now: (3.5, -27, 70.5) in overworld, health 20/20, food 20/20, alive

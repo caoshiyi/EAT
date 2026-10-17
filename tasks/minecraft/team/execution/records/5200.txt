@@ -1,0 +1,5 @@
+== #5200 2026-10-17T05:36:57 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');const paths=[[[0,0,-1],12,[-1,0,0],8],[[-1,0,0],8,[0,0,-1],12]];for(const route of paths){let p=bot.entity.position.floored(),bad=[];for(let k=0;k<4;k+=2){const d=new Vec3(...route[k]);for(let n=0;n<route[k+1];n++){const q=p.plus(d),side=[new Vec3(d.z,0,d.x),new Vec3(-d.z,0,-d.x)];for(const v of[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])]){const b=bot.blockAt(v);if(!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')||['sand','gravel'].includes(b.name))bad.push([v,b?.name]);}p=q;}}console.log('ROUTE_CHECK',JSON.stringify({route,bad}));}
+-- output --
+ROUTE_CHECK {"route":[[0,0,-1],12,[-1,0,0],8],"bad":[[{"x":11,"y":41,"z":75},"gravel"],[{"x":11,"y":41,"z":74},"gravel"],[{"x":11,"y":41,"z":73},"gravel"],[{"x":12,"y":40,"z":73},"gravel"],[{"x":11,"y":41,"z":72},"gravel"],[{"x":12,"y":40,"z":72},"gravel"]]}
+ROUTE_CHECK {"route":[[-1,0,0],8,[0,0,-1],12],"bad":[[{"x":9,"y":39,"z":78},"air"],[{"x":9,"y":40,"z":78},"air"],[{"x":8,"y":39,"z":78},"air"],[{"x":8,"y":40,"z":78},"air"]]}

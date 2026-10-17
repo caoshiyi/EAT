@@ -1,0 +1,176 @@
+program #5599 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "utc": "2026-10-17T07:04:50.375Z",
+ "p": {
+  "x": 7.605734476923773,
+  "y": 67.5625,
+  "z": 83.69999984340599
+ },
+ "hp": 14.926748275756836,
+ "front": [
+  [
+   [
+    5,
+    66,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    5,
+    67,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    5,
+    68,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    5,
+    69,
+    81
+   ],
+   "cobblestone",
+   {}
+  ],
+  [
+   [
+    6,
+    66,
+    81
+   ],
+   "cobblestone",
+   {}
+  ],
+  [
+   [
+    6,
+    67,
+    81
+   ],
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   [
+    6,
+    68,
+    81
+   ],
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "upper",
+    "facing": "north"
+   }
+  ],
+  [
+   [
+    6,
+    69,
+    81
+   ],
+   "cobblestone",
+   {}
+  ],
+  [
+   [
+    7,
+    66,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    7,
+    67,
+    81
+   ],
+   "sandstone",
+   {}
+  ],
+  [
+   [
+    7,
+    68,
+    81
+   ],
+   "sandstone",
+   {}
+  ],
+  [
+   [
+    7,
+    69,
+    81
+   ],
+   "cobblestone",
+   {}
+  ],
+  [
+   [
+    8,
+    66,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    8,
+    67,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    8,
+    68,
+    81
+   ],
+   "air",
+   {}
+  ],
+  [
+   [
+    8,
+    69,
+    81
+   ],
+   "air",
+   {}
+  ]
+ ],
+ "spiders": []
+}
+--- chat since this player's previous program ---
+p1: P4/P3 actual5596 LOWER7,67,81=SANDSTONE success viaUPPER68 DOWN whilebackLEFT+sneak, nofrontmovement/nohurt. BOTHRIGHTcapsnowfull, LEFTdoor6closed, P1same20HP controlsfalse/empty. RepairCOMPLETEreceipt; independentverifywelcome. P3campentryusesLEFT6dooronl
+p1: y; doNOThelperrequireRIGHT7door.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 14.9/20, food 16/20, alive

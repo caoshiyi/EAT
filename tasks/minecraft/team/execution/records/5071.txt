@@ -1,0 +1,4 @@
+== #5071 2026-10-17T05:15:07 p4 role=integration_operator iter=11 0.3 s
+const{Vec3}=require('vec3');bot.clearControlStates();const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);const b=count('wooden_axe'),r=bot.recipesFor(bot.registry.itemsByName.wooden_axe.id,null,1,bot.blockAt(new Vec3(6,66,82)))[0];if(!r)throw Error('RECIPE');await bot.craft(r,1,bot.blockAt(new Vec3(6,66,82)));if(bot.currentWindow)bot.closeWindow(bot.currentWindow);await bot.waitForTicks(5);return{axeGain:count('wooden_axe')-b,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),hp:bot.health};
+-- returned --
+{"axeGain": 1, "own": [["wooden_axe", 1, 0], ["wooden_pickaxe", 1, 0], ["crafting_table", 1, null], ["snowball", 1, null]], "hp": 20}

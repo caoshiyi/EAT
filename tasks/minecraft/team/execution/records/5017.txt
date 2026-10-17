@@ -1,0 +1,4 @@
+== #5017 2026-10-17T05:09:20 p3 role=continuity_owner iter=11 0 s
+const {Vec3}=require('vec3');return{p:bot.entity.position,doors:[6,7].map(x=>bot.blockAt(new Vec3(x,67,81)).getProperties()),peers:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position])};
+-- returned --
+{"p": {"x": 7.631753829507174, "y": 67.5625, "z": 83.7}, "doors": [{"powered": false, "open": false, "hinge": "left", "half": "lower", "facing": "north"}, {"powered": false, "open": false, "hinge": "right", "half": "lower", "facing": "north"}], "peers": [["p2", {"x": 7.661707220343236, "y": 67.5625, "z": 83.6999999373624}], ["p1", {"x": 7.339386074283022, "y": 67.5625, "z": 83.7}], ["p3", "[repeated reference]"], ["p4", {"x": 6.589223554214806, "y": 67.5625, "z": 82.73409031041822}]]}

@@ -1,0 +1,4 @@
+== #5547 2026-10-17T06:59:11 p1 role=experiment_owner iter=11 4.2 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);if(bot.game.dimension==='the_nether'){await bot.lookAt(new Vec3(4.5,66.4,3),true);bot.setControlState('forward',true);try{for(let n=0;n<15&&bot.game.dimension==='the_nether'&&bot.entity.position.z>3.5;n++)await bot.waitForTicks(1);}finally{bot.clearControlStates();}for(let n=0;n<125&&bot.game.dimension==='the_nether';n++)await bot.waitForTicks(1);}console.log('RETURN_WORLD',JSON.stringify({dim:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])}));bot.clearControlStates();
+-- output --
+RETURN_WORLD {"dim":"overworld","p":{"x":7.517410953687081,"y":68,"z":91.5},"hp":20,"food":20,"inv":[["torch",4],["diamond_pickaxe",1],["obsidian",10],["flint_and_steel",1],["cobblestone",14],["stone_pickaxe",1],["stone_pickaxe",1],["dirt",9],["diorite",5]]}

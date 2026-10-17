@@ -1,0 +1,803 @@
+program #4956 on p4: 0.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "utc": "2026-10-17T05:05:41.063Z",
+ "p": {
+  "x": 6.300000023489143,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "food": 20,
+ "dimension": "overworld",
+ "time": {
+  "doDaylightCycle": true,
+  "bigTime": "1463943",
+  "time": 1463943,
+  "timeOfDay": 23943,
+  "day": 60,
+  "isDay": false,
+  "moonPhase": 4,
+  "bigAge": "1443280",
+  "age": 1443280,
+  "clocks": {}
+ },
+ "life": {
+  "started": 1792213540836,
+  "life": 0,
+  "events": []
+ },
+ "own": [],
+ "players": [
+  [
+   "p2",
+   {
+    "x": 7.57275122858784,
+    "y": 67.5625,
+    "z": 83.69999994127718
+   }
+  ],
+  [
+   "p1",
+   {
+    "x": 7.339386074283022,
+    "y": 67.5625,
+    "z": 83.7
+   }
+  ],
+  [
+   "p4",
+   "[repeated reference]"
+  ]
+ ],
+ "foes": [
+  [
+   108,
+   "zombie",
+   {
+    "x": 12.500109758158551,
+    "y": 60,
+    "z": 97.29660711649919
+   },
+   null,
+   true
+  ],
+  [
+   109,
+   "spider",
+   {
+    "x": 4.1199313331272,
+    "y": 63.92159999847412,
+    "z": 86.93039481987874
+   },
+   null,
+   true
+  ],
+  [
+   130,
+   "creeper",
+   {
+    "x": 5.846146726855276,
+    "y": 61,
+    "z": 113.4982669917615
+   },
+   null,
+   true
+  ],
+  [
+   132,
+   "zombie",
+   {
+    "x": 12.481860566068681,
+    "y": 66,
+    "z": 108.06832551463845
+   },
+   null,
+   true
+  ]
+ ],
+ "bushes": [
+  [
+   [
+    20,
+    68,
+    89
+   ],
+   "sweet_berry_bush",
+   {
+    "age": "3"
+   }
+  ],
+  [
+   [
+    22,
+    68,
+    89
+   ],
+   "sweet_berry_bush",
+   {
+    "age": "3"
+   }
+  ],
+  [
+   [
+    24,
+    68,
+    90
+   ],
+   "sweet_berry_bush",
+   {
+    "age": "3"
+   }
+  ]
+ ],
+ "cells": [
+  [
+   4,
+   65,
+   80,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   5,
+   66,
+   80,
+   "furnace",
+   {
+    "lit": false,
+    "facing": "south"
+   }
+  ],
+  [
+   5,
+   67,
+   80,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   5,
+   69,
+   81,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   70,
+   81,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   5,
+   67,
+   82,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   68,
+   82,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   69,
+   82,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   70,
+   82,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   5,
+   67,
+   83,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   68,
+   83,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   69,
+   83,
+   "spruce_sapling",
+   {
+    "stage": "0"
+   }
+  ],
+  [
+   5,
+   67,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   68,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   5,
+   69,
+   84,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   6,
+   65,
+   80,
+   "sand",
+   {}
+  ],
+  [
+   6,
+   66,
+   80,
+   "cobblestone_slab",
+   {
+    "waterlogged": false,
+    "type": "bottom"
+   }
+  ],
+  [
+   6,
+   66,
+   81,
+   "cobblestone",
+   {}
+  ],
+  [
+   6,
+   67,
+   81,
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   6,
+   68,
+   81,
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "upper",
+    "facing": "north"
+   }
+  ],
+  [
+   6,
+   69,
+   81,
+   "dirt",
+   {}
+  ],
+  [
+   6,
+   70,
+   81,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   6,
+   66,
+   82,
+   "crafting_table",
+   {}
+  ],
+  [
+   6,
+   69,
+   82,
+   "spruce_slab",
+   {
+    "waterlogged": false,
+    "type": "top"
+   }
+  ],
+  [
+   6,
+   70,
+   82,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   6,
+   66,
+   83,
+   "cobblestone",
+   {}
+  ],
+  [
+   6,
+   67,
+   83,
+   "white_bed",
+   {
+    "part": "foot",
+    "occupied": false,
+    "facing": "east"
+   }
+  ],
+  [
+   6,
+   69,
+   83,
+   "spruce_slab",
+   {
+    "waterlogged": false,
+    "type": "top"
+   }
+  ],
+  [
+   6,
+   65,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   6,
+   67,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   6,
+   68,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   6,
+   69,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   6,
+   70,
+   84,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   6,
+   65,
+   85,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   7,
+   65,
+   80,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   7,
+   66,
+   81,
+   "cobblestone",
+   {}
+  ],
+  [
+   7,
+   67,
+   81,
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "right",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   7,
+   68,
+   81,
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "right",
+    "half": "upper",
+    "facing": "north"
+   }
+  ],
+  [
+   7,
+   69,
+   81,
+   "dirt",
+   {}
+  ],
+  [
+   7,
+   70,
+   81,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   7,
+   65,
+   82,
+   "sand",
+   {}
+  ],
+  [
+   7,
+   67,
+   82,
+   "chest",
+   {
+    "waterlogged": false,
+    "type": "single",
+    "facing": "east"
+   }
+  ],
+  [
+   7,
+   68,
+   82,
+   "chest",
+   {
+    "waterlogged": false,
+    "type": "single",
+    "facing": "west"
+   }
+  ],
+  [
+   7,
+   69,
+   82,
+   "spruce_slab",
+   {
+    "waterlogged": false,
+    "type": "top"
+   }
+  ],
+  [
+   7,
+   70,
+   82,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   7,
+   65,
+   83,
+   "cobblestone",
+   {}
+  ],
+  [
+   7,
+   66,
+   83,
+   "cobblestone",
+   {}
+  ],
+  [
+   7,
+   67,
+   83,
+   "white_bed",
+   {
+    "part": "head",
+    "occupied": false,
+    "facing": "east"
+   }
+  ],
+  [
+   7,
+   69,
+   83,
+   "spruce_slab",
+   {
+    "waterlogged": false,
+    "type": "top"
+   }
+  ],
+  [
+   7,
+   65,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   7,
+   66,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   7,
+   67,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   7,
+   68,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   7,
+   69,
+   84,
+   "spruce_planks",
+   {}
+  ],
+  [
+   7,
+   65,
+   85,
+   "sand",
+   {}
+  ],
+  [
+   7,
+   66,
+   85,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   8,
+   65,
+   80,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   8,
+   65,
+   82,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   8,
+   65,
+   83,
+   "sand",
+   {}
+  ],
+  [
+   8,
+   66,
+   83,
+   "sand",
+   {}
+  ],
+  [
+   8,
+   67,
+   83,
+   "spruce_fence_gate",
+   {
+    "powered": false,
+    "open": false,
+    "in_wall": false,
+    "facing": "east"
+   }
+  ],
+  [
+   8,
+   68,
+   83,
+   "dirt",
+   {}
+  ],
+  [
+   8,
+   69,
+   83,
+   "spruce_planks",
+   {}
+  ],
+  [
+   8,
+   65,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   8,
+   66,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   8,
+   67,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   8,
+   68,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   8,
+   69,
+   84,
+   "dirt",
+   {}
+  ],
+  [
+   8,
+   70,
+   84,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   8,
+   65,
+   85,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   9,
+   65,
+   81,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   9,
+   65,
+   82,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   9,
+   65,
+   83,
+   "sand",
+   {}
+  ],
+  [
+   9,
+   66,
+   83,
+   "sand",
+   {}
+  ],
+  [
+   9,
+   67,
+   83,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   9,
+   65,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   9,
+   66,
+   84,
+   "sand",
+   {}
+  ],
+  [
+   9,
+   67,
+   84,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ],
+  [
+   9,
+   65,
+   85,
+   "snow",
+   {
+    "layers": "1"
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.3, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

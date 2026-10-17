@@ -1,0 +1,13 @@
+# Review — 2026-10-17T06:26:24.623925+00:00
+
+Official review0625_eval.txt: **dragon0, milestones9, deaths100, programs5354, restarts1**. Sincepreviouscheck:+32programs, no death/milestone; iteration405programs/fourdeaths. Currentdeadline07:04:50, ~39minutesremain.
+
+P2's actual5321 positiveentry precededthe06:15review; thatreview'spendingentryclaimwascorrectedfromrawevidence, withno creditto laterP4dispatch. New5343 corridor advanced15cells, actualFULL20HP20food at(3.53,39,70.51), thenCUT_KIND_copper_ore stoppedsourceclassification; IRONwear125. Thisisrealprogress and a narrowimplementationveto, notblockedworldgeometry. Updateactualallowed-kind/capacitycase beforearoutedetourorwhole-operationscale. Nextboundedmaterial/endingoutcomeby06:35; actualcraftinginputsandremainingreturncapacityrequired.
+
+P1actual5330failedraisedstepbutcleanuprestoredoriginalTOPslabs/STEP_AIR20HP. Changed5336/5340 retainedLOG2 withfullcleanup, finallyconverted5345 toSTONEpick0/TABLE/PLANK4/WOODpick6. ThreeheadercapsS6/7+E,Y69 are nowfullPLANKsubstitutions, notCOBBLE. Acceptplayer-proposedindependentLOWNether8cellfirstprobe≤5min withactualending andnamedprerequisitebeneficiary beforeoldfortressscale. Preparationfinallyproducedminimalcapacity, notrouteorrodqualification.
+
+P3actual5337 southpickupFULL20HP19food/nohurt convertedordinaryPEARL1→2. Bank3separate, no handoff/eye/newmilestone. Nativecombat/renewalcapacityreal; latest5342zero-target doesnoterasepickuporjustifyanotherunchangedloop. Nextretainedadditionalpearl/use by06:35, notkills/toolinventoryasobjectivecredit.
+
+P4changedbridgeattempt5339safelyvetoedbeforeplacement. Itthenplayer-proposedprotectedlive-blocker test:5348STARTvetoonchangeduppermaterial;5350temporarilyremovedEHEADDIRT(8,68,83), thenDIRT_RECEIPT andNO_RECAP_DIRT,0swings/closedfalse/12.37HP. Currentgateremainsclosed1.5high/upperPLANK69intact; thisisnotfullheadclosure. Spiderclimbed68.1, P4retreatedfront/noownhurt, andrequestedoneactualP1materialcap. P1hasrealinputsatcamp; immediateactualhandoff/placedreceiptneeded beforemorecombat/departure. Do notrepeatmissing-original-stockcleanup; no rootrescue/tacticclaim. Exactforemostfailedbranch mattersmorethanmoreequipment.
+
+Latest evidence keepsP2primarynativeowner, acceptsP1independentfirstprobe, verifiesP3retention, andprioritizesP4's unfinishedcurrentending. No whole-teamrestorationqueue. Newengineeringonlyifit enables exactcurrentcopper-kind/admission/closurecase chosenbyowner, notstalegenericframework. Preparationstilldominateswithobjectiveunmet. Nextreview06:35; allfourassigned/rootnonplaying/nopeerIDs/tokensavailable.

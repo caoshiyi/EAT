@@ -1,0 +1,244 @@
+program #5570 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "utc": "2026-10-17T07:01:35.746Z",
+ "p": {
+  "x": 7.605734476923773,
+  "y": 67.5625,
+  "z": 83.69999984340599
+ },
+ "hp": 12.926748275756836,
+ "food": 16,
+ "life": {
+  "started": 1792213540836,
+  "life": 1,
+  "events": [
+   [
+    "death",
+    1792214288275
+   ],
+   [
+    "respawn",
+    1792214288281,
+    "overworld"
+   ],
+   [
+    "respawn",
+    1792220186170,
+    "the_nether"
+   ],
+   [
+    "respawn",
+    1792220380019,
+    "overworld"
+   ]
+  ]
+ },
+ "doors": [
+  [
+   6,
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   7,
+   "air",
+   {}
+  ]
+ ],
+ "walls": [
+  [
+   [
+    5,
+    67,
+    83
+   ],
+   "dirt"
+  ],
+  [
+   [
+    5,
+    68,
+    83
+   ],
+   "dirt"
+  ],
+  [
+   [
+    6,
+    67,
+    84
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    6,
+    68,
+    84
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    7,
+    67,
+    84
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    7,
+    68,
+    84
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    8,
+    67,
+    83
+   ],
+   "spruce_fence_gate"
+  ],
+  [
+   [
+    8,
+    68,
+    83
+   ],
+   "spruce_planks"
+  ],
+  [
+   [
+    6,
+    69,
+    83
+   ],
+   "spruce_slab"
+  ],
+  [
+   [
+    7,
+    69,
+    83
+   ],
+   "spruce_slab"
+  ]
+ ],
+ "foes": [
+  [
+   108,
+   "zombie",
+   {
+    "x": 12.499493056634337,
+    "y": 60,
+    "z": 92.13812653137781
+   }
+  ],
+  [
+   9425,
+   "zombie",
+   {
+    "x": 9.289110065817834,
+    "y": 60,
+    "z": 82.30000001192093
+   }
+  ],
+  [
+   10066,
+   "zombie",
+   {
+    "x": 12.501152901187965,
+    "y": 60,
+    "z": 92.81743162870407
+   }
+  ],
+  [
+   16067,
+   "zombie",
+   {
+    "x": 8.642291804651562,
+    "y": 60,
+    "z": 82.69999998807907
+   }
+  ],
+  [
+   19949,
+   "zombie",
+   {
+    "x": 7.5520294887695165,
+    "y": 62,
+    "z": 91.22887480717775
+   }
+  ],
+  [
+   19987,
+   "zombie",
+   {
+    "x": 7.938834495871696,
+    "y": 60,
+    "z": 82.30000001192093
+   }
+  ],
+  [
+   20218,
+   "zombie",
+   {
+    "x": 8.822085081544099,
+    "y": 66,
+    "z": 84.55531446339256
+   }
+  ],
+  [
+   20219,
+   "zombie",
+   {
+    "x": 10.261572244292706,
+    "y": 63,
+    "z": 80.45603002258508
+   }
+  ],
+  [
+   20256,
+   "spider",
+   {
+    "x": 7.120733675876052,
+    "y": 68.10019531846046,
+    "z": 81.1125031755349
+   }
+  ]
+ ],
+ "players": [
+  [
+   "p1",
+   {
+    "x": 6.5,
+    "y": 67,
+    "z": 82.5
+   }
+  ],
+  [
+   "p4",
+   "[repeated reference]"
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+[server] p1 was slain by Zombie
+p1: P1 NEWDEATH actual07:01:03 Zombie11.1,63,81.7, EMPTYrespawnCAMP20. Thirdportalattempt5562 nativeBFS reusedgeometrywithoutmobrayguard, ended11.8,65.1,81.7/11.56HP then recovery5565 foundalreadyrespawned. LOSSonlySTONEpicks130/23+closing27+TORCH4; criticalOB
+p1: S10/DIA0/STEEL0 bank5556 beforehand. RETIREunguardedportalBFS; donotcorpserunpit. P4loanIRONbankplease freshverify.
+p3: P2 request holdHOME/offSouthbridge for~70s: P3 Northbound arrivingbridge58 now, PEARL5 delivery tocamp before07:04:50. CurrentlyEast(-19,65,48)FULL20; sharedWEST BASALT2 exactrestored5561 RELEASED. Please no simultaneousSouthbench cross/write; I announceac
+p3: tualpodthenHOME.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 12.9/20, food 16/20, alive

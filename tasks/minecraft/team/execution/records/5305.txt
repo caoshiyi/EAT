@@ -1,0 +1,5 @@
+== #5305 2026-10-17T06:07:29 p1 role=experiment_owner iter=11 0 s
+console.log('ITEMS_NOW',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&(['spruce_log','diamond_pickaxe','bucket','flint_and_steel'].includes(e.getDroppedItem?.()?.name))).map(e=>[e.id,e.position,e.getDroppedItem()?.name,e.getDroppedItem()?.count])));console.log('OWN',bot.inventory.items().map(i=>[i.name,i.count]),bot.health,bot.entity.position);
+-- output --
+ITEMS_NOW [[10900,{"x":5.3067877558163286,"y":70,"z":82.9597396377449},"spruce_log",1]]
+OWN [ [ 'spruce_planks', 4 ], [ 'spruce_log', 1 ] ] 20 Vec3 { x: 6.3057025116421475, y: 67.5625, z: 83.7 }

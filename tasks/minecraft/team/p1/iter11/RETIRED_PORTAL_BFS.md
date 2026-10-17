@@ -1,0 +1,2 @@
+RETIRE portal_approach.js, portal_return.js, emergency_return.js unchanged.
+Healthy5518/5549 passages did not prove future safety.5562 reused geometry-only BFS without mob/ray guards and fell/was knocked into Zombie pit;07:01:03death. Exact movement cause unisolated. All future planners must reject live threats over whole swept body, handle HP loss within same bounded caller, validate body+world continuity, and reserve a demonstrated protected endpoint. Do not make a small helper retest into a life-risk expedition. Current assets bank5556 survived.

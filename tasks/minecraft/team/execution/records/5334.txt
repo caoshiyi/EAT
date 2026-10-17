@@ -1,0 +1,5 @@
+== #5334 2026-10-17T06:18:16 p1 role=experiment_owner iter=11 2.8 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();for(const[a,target]of[['z',83.7],['x',7.3]])for(let n=0;n<30&&Math.abs(bot.entity.position[a]-target)>.06;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(target-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(target-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1);bot.setControlState('forward',false);await bot.waitForTicks(2);}bot.clearControlStates();await bot.waitForTicks(3);console.log('ACTUAL_ASIDE',bot.entity.position,bot.health);console.log('HEADROOM',JSON.stringify([6,7].flatMap(x=>[69,70,71].map(y=>[x,y,bot.blockAt(new Vec3(x,y,83))?.name]))));
+-- output --
+ACTUAL_ASIDE Vec3 { x: 7.267612759969455, y: 67.5625, z: 83.69202109340405 } 20
+HEADROOM [[6,69,"spruce_slab"],[6,70,"spruce_leaves"],[6,71,"spruce_leaves"],[7,69,"spruce_slab"],[7,70,"air"],[7,71,"spruce_leaves"]]

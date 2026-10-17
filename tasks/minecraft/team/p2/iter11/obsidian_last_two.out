@@ -1,0 +1,67 @@
+program #5474 on p2: 27.7 s
+--- output ---
+FRESH_IRON_FOR_P1 [
+  Vec3 { x: -2, y: 40, z: 88 },
+  Vec3 { x: -2, y: 40, z: 89 },
+  Vec3 { x: 10, y: 40, z: 79 },
+  Vec3 { x: 10, y: 39, z: 79 },
+  Vec3 { x: -3, y: 40, z: 88 },
+  Vec3 { x: -3, y: 40, z: 89 }
+]
+DOOR_ACTUAL exit (6.497125091978676, 66.42159999847412, 79.28405421962735)
+OBS_ISSUE NAV_NOT_ACTUAL Vec3 { x: 14.5, y: 65, z: 79.50784398034831 } 20
+CURRENT_NATIVE_PATH [
+  [ 14, 65, 79 ],
+  [ 13, 65, 79 ],
+  [ 12, 65, 79 ],
+  [ 12, 65, 80 ],
+  [ 11, 65, 80 ],
+  [ 10, 64, 80 ],
+  [ 9, 64, 80 ],
+  [ 8, 65, 80 ],
+  [ 7, 65, 80 ],
+  [ 7, 66, 79 ],
+  [ 6, 66, 79 ]
+]
+CURRENT_NATIVE_NODE (14, 65, 79) 20
+CURRENT_NATIVE_NODE (13, 65, 79) 20
+CURRENT_NATIVE_NODE (12, 65, 79) 20
+CURRENT_NATIVE_NODE (12, 65, 80) 20
+CURRENT_NATIVE_NODE (11, 65, 80) 20
+CURRENT_NATIVE_NODE (10, 64, 80) 20
+CURRENT_NATIVE_NODE (9, 64, 80) 20
+CURRENT_NATIVE_NODE (8, 65, 80) 20
+CURRENT_NATIVE_NODE (7, 65, 80) 20
+CURRENT_NATIVE_NODE (7, 66, 79) 20
+CURRENT_NATIVE_NODE (6, 66, 79) 20
+DOOR_ACTUAL enter (6.531738250500441, 67, 82.49060940120444)
+--- returned ---
+{
+ "issue": "NAV_NOT_ACTUAL",
+ "banked": false,
+ "closed": true,
+ "gained": 0,
+ "plugs": 0,
+ "p": {
+  "x": 7.599048102888916,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "kit": [
+  [
+   "diamond_pickaxe",
+   1,
+   8
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 27715
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

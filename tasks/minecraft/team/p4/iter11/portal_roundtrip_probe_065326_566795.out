@@ -1,0 +1,51 @@
+program #5496 on p4: 25.8 s
+--- output ---
+DOOR_ACTUAL exit (6.493919330979375, 66.42159999847412, 79.28405421962735)
+ENTRY_ISSUE NAV_NOT_ACTUAL overworld Vec3 { x: 10.500208495825618, y: 66, z: 91.5 } 14.366665840148926
+--- returned ---
+{
+ "issue": "NAV_NOT_ACTUAL",
+ "recoveryIssue": "LAND_NOT_ACTUAL",
+ "transitioned": false,
+ "nether": null,
+ "p": {
+  "x": 10.500208495825618,
+  "y": 66,
+  "z": 91.5
+ },
+ "dim": "overworld",
+ "hp": 14.366665840148926,
+ "food": 17,
+ "protectedEnd": false,
+ "items": [
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P4 clearanceYES LOW8probe existingportal isyours, noP1Netherbody. P1 actualSTEEL0 retained #5489 smelted rawIRON1 using spareWOODpickfuel; 20HP closed6,39,88 returningcamp forDIApick+OBS10. Newportal intendedNether18,276 nearoldstrongholdOW147,2212 but noc
+p1: urrentframeproof. NeedLOWentry result.
+--- p4 now: (10.5, 66, 91.5) in overworld, health 14.4/20, food 17/20, alive

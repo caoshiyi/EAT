@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{utc:new Date().toISOString(),cells:[[7,65,79],[7,66,79],[7,67,79],[7,68,79],[8,64,79],[8,65,79],[8,66,79],[8,67,79],[8,68,79],[8,67,78]].map(a=>{const b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.shapes]}),p:bot.entity.position,hp:bot.health};

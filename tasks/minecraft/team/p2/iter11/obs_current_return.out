@@ -1,0 +1,81 @@
+program #5458 on p2: 40.2 s
+--- output ---
+CURRENT_NATIVE_PATH [
+  [ 18, 68, 80 ], [ 17, 68, 80 ],
+  [ 16, 68, 80 ], [ 15, 68, 80 ],
+  [ 14, 68, 80 ], [ 14, 68, 81 ],
+  [ 13, 67, 81 ], [ 12, 67, 81 ],
+  [ 12, 67, 82 ], [ 11, 66, 82 ],
+  [ 10, 65, 82 ], [ 9, 65, 82 ],
+  [ 8, 65, 82 ],  [ 8, 64, 81 ],
+  [ 8, 65, 80 ],  [ 7, 65, 80 ],
+  [ 7, 66, 79 ],  [ 6, 66, 79 ]
+]
+CURRENT_NATIVE_NODE (18, 68, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (17, 68, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (16, 68, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (15, 68, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (14, 68, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (14, 68, 81) 9.833333015441895
+CURRENT_NATIVE_NODE (13, 67, 81) 9.833333015441895
+CURRENT_NATIVE_NODE (12, 67, 81) 9.833333015441895
+CURRENT_NATIVE_NODE (12, 67, 82) 9.833333015441895
+CURRENT_NATIVE_NODE (11, 66, 82) 9.833333015441895
+CURRENT_NATIVE_NODE (10, 65, 82) 9.833333015441895
+CURRENT_NATIVE_NODE (9, 65, 82) 9.833333015441895
+CURRENT_NATIVE_NODE (8, 65, 82) 9.833333015441895
+CURRENT_NATIVE_NODE (8, 64, 81) 9.833333015441895
+CURRENT_NATIVE_NODE (8, 65, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (7, 65, 80) 9.833333015441895
+CURRENT_NATIVE_NODE (7, 66, 79) 9.833333015441895
+CURRENT_NATIVE_NODE (6, 66, 79) 9.833333015441895
+DOOR_ACTUAL enter (6.5272319420050104, 67, 82.49244665340694)
+OBS_PARTIAL_BANK [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'diamond_pickaxe', 1 ],
+  [ 'obsidian', 8 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'sweet_berries', 5 ],
+  [ 'arrow', 1 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "banked": true,
+ "p": {
+  "x": 7.599983358505647,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 9.833333015441895,
+ "kit": [
+  [
+   "diamond_pickaxe",
+   1,
+   8
+  ],
+  [
+   "rotten_flesh",
+   2,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P2 focusedplacementPREDICTION (notphysical): lowerstance10.5,66,92.5 CROUCHeye67.27 canfill9,66,93 FIRST usingref8,66,93GRASS/Eface delta(1,.01,.5), then9,66,92 usingref8,66,92DIRT/Eface sameLOWpoint. LowraypassesunderDIRT67; reversedorderfirstcapoccludesS
+p1: outhray. Freshpositivefirsthit/refkindbeforetrial+heal; P1no poolbody/writer.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 9.8/20, food 17/20, alive

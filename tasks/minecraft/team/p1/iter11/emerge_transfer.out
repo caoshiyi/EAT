@@ -1,0 +1,18 @@
+program #5169 on p1: 7.7 s
+--- output ---
+COLLECT p1 172 4966
+SURFACE_ACTUAL Vec3 { x: 8.493722081111065, y: 65, z: 78.5039936439546 } 20 PLANK 1
+COLLECT p1 172 4505
+FRONT_ACTUAL Vec3 { x: 6.5, y: 66.5, z: 80.5 }
+TOSSED 1 OtherCollected false
+SMALL_RECEIPT_MISSING_NO_BATCH
+TRANSFER_END {"p":{"x":8.48126752593313,"y":65.23152379758702,"z":78.51873115495704},"hp":20,"issue":null,"lost":false,"atShaft":true,"gotOther":false,"inv":[["wooden_pickaxe",1,16],["cobblestone",30,null],["spruce_planks",1,null],["sand",2,null],["crafting_table",1,null],["dirt",1,null],["stone_pickaxe",1,115],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]]}
+ISSUE START_BODY
+CLOSURE_FAIL CAP_OCCUPIED_(9, 65, 78)_snow
+U_END {"p":{"x":8.48126752593313,"y":65,"z":78.51873115495704},"hp":20,"food":20,"cuts":0,"steps":0,"down":0,"seconds":0.05,"issue":"START_BODY","closed":false,"lost":false,"delta":0.23152379758701613,"inv":[["wooden_pickaxe",1,16],["cobblestone",30,null],["spruce_planks",1,null],["sand",2,null],["crafting_table",1,null],["dirt",1,null],["stone_pickaxe",1,115],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]],"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P1/P4 ACTUAL5167 innerbarrier7,68,83PLANK +6,68,83DIRT fromSPRUCE_TOPslab69 underside; bed67intact/.4375gap, P2/P4frontsafe20/9.8HP. TEMPbedheadblocked/no outwardgapclosed. P2 cutsN7,69,81/S6+7,69,84/E8,69,83; P4additionalW5,69,81+82/N6,69,81. OuterSneedsB
+p2: ASE66+67+68×2=6blocks, plus7upperborrowdebt. P1incoming8coarsehelpsbutbedobstructionmeansFRONTtoss/accessiblebankreceipt; do notassume rearbodyclear. P4bankDIRT1available.
+--- p1 now: (8.5, 65, 78.5) in overworld, health 20/20, food 20/20, alive

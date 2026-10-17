@@ -1,0 +1,46 @@
+== #5375 2026-10-17T06:32:45 p4 role=integration_operator iter=11 15.7 s
+const{Vec3}=require('vec3'),inside=new Vec3(7,68,83),outer=new Vec3(8,68,83),upper=new Vec3(8,69,83),entity=bot.entity,life=global.P4Iter11.life,start=Date.now(),hp0=bot.health,e=bot.entities[10314];let issue=null,cut=false,swings=0,outerClosed=false,innerClosed=false,hit=[],hurt=[];const n=()=>bot.inventory.items().filter(i=>i.name==='spruce_planks').reduce((s,i)=>s+i.count,0);function stop(){bot.clearControlStates();bot.pathfinder.setGoal(null)}function guard(){if(bot.entity!==entity||global.P4Iter11.life!==life||bot.game.dimension!=='overworld'||bot.health<=0||Date.now()-start>38000)throw Error('BODY_TIME')}async function tick(k){await bot.waitForTicks(k);guard()}async function move(x,z){for(let k=0;k<45&&Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.07;k++){stop();await bot.lookAt(new Vec3(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await tick(1)}stop();await tick(3)}function target(){if(!e?.isValid)return null;const eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0);for(const dx of[-.2,0,.15,.3]){const p=new Vec3(e.position.x+dx,e.position.y+(e.height||.9)-.02,Math.max(e.position.z-.65,Math.min(e.position.z+.65,bot.entity.position.z))),v=p.minus(eye),dir=v.unit();if(v.norm()>3)continue;const h=bot.world.raycast(eye,dir,v.norm()-.01,(b,it)=>{const j=it.intersect(b.shapes,b.position);if(!j)return false;const t=j.pos.minus(eye).dot(dir);return t>=0&&t<=v.norm()-.01});if(!h)return p}return null}function occupied(){return Object.values(bot.entities).some(x=>x!==entity&&x.position&&x.position.x+(x.width||.6)/2>8&&x.position.x-(x.width||.6)/2<9&&x.position.z+(x.width||.6)/2>83&&x.position.z-(x.width||.6)/2<84&&x.position.y+(x.height||1.8)>68&&x.position.y<69)}const onHurt=x=>{if(x===entity)hurt.push([Date.now(),bot.health]);if(x===e)hit.push([Date.now(),e.metadata?.[9]])};bot.on('entityHurt',onHurt);stop();let before=null,after=null;
+try{if(bot.blockAt(inside)?.name!=='spruce_planks'||bot.blockAt(outer)?.name!=='air'||!e?.isValid||e.name!=='spider'||bot.health<8)throw Error('START');await move(6.32,83.5);await bot.unequip('hand');await bot.dig(bot.blockAt(inside),true,new Vec3(-1,0,0));cut=bot.blockAt(inside)?.name==='air';for(let k=0;k<15&&n()<1;k++)await tick(2);if(n()<1){await move(7.55,83.6);for(let k=0;k<10&&n()<1;k++)await tick(2)}if(n()<1)throw Error('PLANK_RECEIPT');await move(7.55,83.6);bot.setControlState('sneak',true);await tick(3);const aim=target();if(!aim)throw Error('NO_ACTUAL_RAY');before=e.metadata?.[9];for(let k=0;k<160&&e.isValid&&e.metadata?.[9]!==0&&swings<22;k++){if(hurt.length||bot.health<8)throw Error('OWN_HURT_STOP');const a=target();if(a){await bot.lookAt(a,true);bot.attack(e);swings++;console.log('SPIDER_SWING',swings,e.metadata?.[9],e.position.clone());await tick(12)}else await tick(2)}if(e.isValid&&e.metadata?.[9]!==0)throw Error('KILL_BUDGET');for(let k=0;k<30&&e.isValid;k++)await tick(1);if(occupied())throw Error('POST_DEATH_OCCUPANCY');await bot.equip(bot.inventory.items().find(i=>i.name==='spruce_planks'),'hand');bot.setControlState('sneak',true);await bot.placeBlock(bot.blockAt(upper),new Vec3(0,-1,0));await tick(4);outerClosed=bot.blockAt(outer)?.name==='spruce_planks';if(!outerClosed)throw Error('OUTER_CAP_ACK')}
+catch(x){issue=x.message;console.log('RELOCATE_ISSUE',issue,bot.entity.position.clone(),bot.health)}finally{stop();if(!outerClosed){await move(6.4,82.3);if(cut&&n()>0&&bot.blockAt(inside)?.name==='air')try{await bot.equip(bot.inventory.items().find(i=>i.name==='spruce_planks'),'hand');await bot.placeBlock(bot.blockAt(new Vec3(7,68,84)),new Vec3(0,0,-1));await tick(4);innerClosed=bot.blockAt(inside)?.name==='spruce_planks'}catch(x){console.log('INNER_FALLBACK_FAIL',x.message)}}stop();await tick(4);after=e?.metadata?.[9];bot.removeListener('entityHurt',onHurt)}return{issue,cut,swings,before,after,hit,hurt,hp0,hp:bot.health,outerClosed,innerClosed,outer:bot.blockAt(outer)?.name,inner:bot.blockAt(inside)?.name,p:bot.entity.position,foe:e&&{p:e.position,hp:e.metadata?.[9]},own:bot.inventory.items().map(i=>[i.name,i.count]),life:global.P4Iter11,controls:bot.controlState};
+-- output --
+SPIDER_SWING 1 15 Vec3 {
+  x: 9.324999988079071,
+  y: 68.10000002384186,
+  z: 83.22403044398564
+}
+SPIDER_SWING 2 14 Vec3 { x: 9.915377353459924, y: 67, z: 82.91026932615962 }
+SPIDER_SWING 3 13 Vec3 { x: 10.18387658713948, y: 67, z: 82.46414938834448 }
+SPIDER_SWING 4 12 Vec3 {
+  x: 9.324892175506351,
+  y: 68.10019531846046,
+  z: 83.20327695202143
+}
+SPIDER_SWING 5 11 Vec3 {
+  x: 9.324892175506351,
+  y: 68.06015625596046,
+  z: 83.21035703014643
+}
+SPIDER_SWING 6 10 Vec3 { x: 9.705960771914931, y: 67, z: 82.94446592298345 }
+SPIDER_SWING 7 9 Vec3 { x: 10.21531768608325, y: 67, z: 82.39092140366212 }
+SPIDER_SWING 8 8 Vec3 { x: 9.32502377055494, y: 68.10019531846046, z: 83.109377252829 }
+SPIDER_SWING 9 7 Vec3 { x: 9.873574323534104, y: 67, z: 82.92213371102758 }
+SPIDER_SWING 10 6 Vec3 {
+  x: 9.324999988079071,
+  y: 68.10019531846046,
+  z: 83.37490465709428
+}
+SPIDER_SWING 11 5 Vec3 { x: 9.70752875569357, y: 67, z: 83.1612061945705 }
+SPIDER_SWING 12 4 Vec3 {
+  x: 9.324999988079071,
+  y: 68.10019531846046,
+  z: 83.4312321281581
+}
+SPIDER_SWING 13 3 Vec3 {
+  x: 9.324902368172078,
+  y: 67.71372070908546,
+  z: 83.32515997237995
+}
+SPIDER_SWING 14 2 Vec3 { x: 9.52981394967239, y: 67, z: 83.06979807740333 }
+SPIDER_SWING 15 1 Vec3 { x: 9.786346390564146, y: 67, z: 82.5426710163129 }
+-- returned --
+{"issue": null, "cut": true, "swings": 15, "before": 15, "after": 0, "hit": [[1792218770751, 15], [1792218771352, 14], [1792218772067, 13], [1792218772664, 12], [1792218773265, 11], [1792218773867, 10], [1792218774464, 9], [1792218775064, 8], [1792218775669, 7], [1792218776265, 6], [1792218776866, 5], [1792218777465, 4], [1792218778064, 3], [1792218778665, 2], [1792218779266, 1]], "hurt": [], "hp0": 12.366665840148926, "hp": 12.366665840148926, "outerClosed": true, "innerClosed": false, "outer": "spruce_planks", "inner": "air", "p": {"x": 7.491011138804023, "y": 67.5625, "z": 83.60304938252195}, "foe": {"p": {"x": 10.300000011920929, "y": 65, "z": 81.83517562737752}, "hp": 0}, "own": [["spruce_sapling", 1], ["stick", 2]], "life": {"started": 1792213540836, "life": 1, "events": [["death", 1792214288275], ["respawn", 1792214288281, "overworld"]]}, "controls": {}}

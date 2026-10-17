@@ -1,0 +1,4 @@
+== #5471 2026-10-17T06:51:03 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');console.log('WALL',JSON.stringify([[6,47,88],[6,48,88],[6,49,88],[7,47,89],[7,48,89],[7,49,89]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])));
+-- output --
+WALL [[[6,47,88],"gravel"],[[6,48,88],"gravel"],[[6,49,88],"stone"],[[7,47,89],"cobblestone"],[[7,48,89],"cobblestone"],[[7,49,89],"stone"]]

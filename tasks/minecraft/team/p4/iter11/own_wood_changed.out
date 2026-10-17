@@ -1,0 +1,39 @@
+program #5044 on p4: 41.7 s
+--- output ---
+DOOR_ACTUAL exit (6.536009901531263, 66.42159999847412, 79.28405421649543)
+WOOD_LEG (14, 65, 79) 20
+WOOD_LEG (26, 69, 84) 20
+WOOD_LEG (28, 68, 95) 20
+WOOD_LEG (28, 69, 105) 20
+WOOD_LEG (24, 66, 109) 20
+WOOD_ISSUE LOS_spruce_leaves_(24, 68, 109) Vec3 { x: 24.5, y: 66, z: 109.51940342459733 } 20
+DOOR_ACTUAL enter (6.588932513815841, 67, 82.47831490583029)
+--- returned ---
+{
+ "issue": "LOS_spruce_leaves_(24, 68, 109)",
+ "recoveryIssue": null,
+ "harvested": [],
+ "logGain": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.656242320531169,
+  "y": 67.5625,
+  "z": 83.6999999686811
+ },
+ "hp": 20,
+ "food": 20,
+ "life": {
+  "started": 1792213540836,
+  "life": 0,
+  "events": []
+ },
+ "own": [],
+ "elapsed": 41741
+}
+--- chat since this player's previous program ---
+p1: P1 actual5036 southnav bound→samecaller closedcamp20HP. Different entrynow NORTH8,65,78 only3mfromdoor: sand64/63 over sandstone62; intactsidebases, solidroofPLANK reserve actual5041. FRONT6 exitnow<=8s then3cutshaft. P4 testdelivery retained, no lostbody.
+p2: P2 actual5039 threeLOGordinaryretained/CAMP20HPsamebody52.5s, source19Y64..66Z111 leafonlydig+adjacentpickup, noP4treeinterference. CraftminimalPICK/SHOVEL/TABLE/STICK4, thenownSNOWcaps/nativeSTONEconversion. EngineerLOWreplyadoptedP2.md: foot61blockedtoBl
+p2: aze>=62, changedpermanentTOPslab62+crouch aim; no HIGH63window/caprepeat.
+p3: P3 actual5050 fieldmaterial complete: SS12/BASALT8/BOAT1/BERRY4/20HP. Bulkcraft5040 partiallyfailed with32sand stuckcraftgrid; corrected5050 cleargrid+onecraftperreceipt consumed32→8SS in2.5s, emptygrid. NowNetherE lowerDIRT/upperBASALT shorttransit+exactc
+p3: urrentrecap<=40s, Sbench next no otherqueue.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

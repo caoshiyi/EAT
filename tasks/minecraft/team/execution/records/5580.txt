@@ -1,0 +1,8 @@
+== #5580 2026-10-17T07:02:42 p1 role=experiment_owner iter=11 0.7 s
+bot.clearControlStates();bot.pathfinder.setGoal(null);const self=bot.entity,start=Date.now();let hits=0,issue=null;
+try{await bot.unequip('hand');while(hits<22&&Date.now()-start<21000){if(bot.entity!==self||bot.game.dimension!=='overworld'||bot.health<18)throw Error('LIFE_HP');const e=bot.entities[20256];if(!e||e.isValid===false){console.log('TARGET_ABSENT');break;}if(e.name!=='spider'||bot.entity.position.distanceTo(e.position)>3.1)throw Error('TARGET_RANGE');const a=bot.entity.position.offset(0,bot.entity.height||1.62,0),b=e.position.offset(0,.45,0),v=b.minus(a),l=v.norm();const hit=bot.world.raycast(a,v.scaled(1/l),l,(bl,it)=>!!it.intersect(bl.shapes,bl.position));if(hit&&hit.intersect&&hit.intersect.distanceTo(a)<l-.1)throw Error('OCCLUDED_'+hit.position);
+await bot.lookAt(b,true);bot.attack(e);hits++;await bot.waitForTicks(15);console.log('HIT',hits,e.metadata,bot.health);}
+}catch(e){issue=e.message;}finally{bot.clearControlStates();console.log('COMBAT_END',JSON.stringify({hits,issue,p:bot.entity.position,hp:bot.health,target:bot.entities[20256]&&{p:bot.entities[20256].position,metadata:bot.entities[20256].metadata}}));}
+-- output --
+HIT 1 [ <9 empty items>, 15, <5 empty items>, 4, 0 ] 20
+COMBAT_END {"hits":1,"issue":"TARGET_RANGE","p":{"x":6.500000076339715,"y":67.5625,"z":83.33807287126218},"hp":20,"target":{"p":{"x":7.2731043766843175,"y":66.76636799395752,"z":80.13788988948811},"metadata":[null,null,null,null,null,null,null,null,null,15,null,null,null,null,null,4,0]}}

@@ -1,0 +1,33 @@
+program #5110 on p2: 16.5 s
+--- output ---
+DOOR_ACTUAL exit (6.499999342304675, 66.42159999847412, 79.28405421962735)
+EXPECTED_DIMENSION_RESPAWN the_nether
+CURRENT_HOME_ISSUE HOME_NATIVE Vec3 { x: 3.4640224171404714, y: 65, z: 3.5 } 20
+--- returned ---
+{
+ "issue": null,
+ "result": {
+  "issue": "HOME_NATIVE",
+  "closed": false,
+  "lost": false,
+  "p": {
+   "x": 3.4640224171404714,
+   "y": 65,
+   "z": 3.5
+  },
+  "hp": 20,
+  "kit": []
+ },
+ "p": "[repeated reference]",
+ "hp": 20,
+ "dim": "the_nether",
+ "kit": []
+}
+--- chat since this player's previous program ---
+p3: P3 actual5089/5094 stationFULL(-98,63,86)20HP20food/SS9+BASALT1/BOAT1/BERRY3. SharedWEST recapped/released5074, noqueue. CurrentEnders1477HP21/1495HP37 atSouthcorner64; originalheadBASALT, footCOBBLE, EnderplacedNETHERRACK obstructsboatline. Smallboatplace
+p3: ment caller willcutonlyWhead/foot+thatNETHERRACK thenrecap, HPdamageabort.
+p1: Observed actualP4death in5095 chat. P1 does NOT assume8LOGdelivery or corpsecontents. OwnCLOSED20HP at14,54,78.5, no surface/corpse expedition. Finite nearbyCOAL→IRON3pick conversion underway while currentnight; addresses demonstrated~4600cut need. Aftercu
+p1: rrentstate I own remainingwoodcondition; no automaticP4 rekit requested.
+p4: P1 LOG8 operation FAILED:5090 LOG1 collected, nav timeout→twoLAND_NOT_ACTUAL returns→exposed15HP32,67,107; Zombie death before5098 recoverydispatch, nowNEWlife1 campEMPTY20HP. Your8LOG dependency RELEASED now05:19, no phantomdelivery. Willnotrepeatfieldkit
+p4: . Specific changedoption: borrowyourretainedWOODpick throughactualhandoff for protected underground tree-root access, then8LOG use; onlyifyouchooseimmediatehandoff. Otherwise I pursue nakedprotectedaccess independently, not wait.
+--- p2 now: (3.5, 65, 3.5) in the_nether, health 20/20, food 20/20, alive

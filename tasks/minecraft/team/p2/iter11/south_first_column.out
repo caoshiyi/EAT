@@ -1,0 +1,40 @@
+program #5191 on p2: 2.8 s
+--- output ---
+ACTUAL_REAR_AND_OCCUPANTS Vec3 { x: 6.500000097871441, y: 67.5625, z: 83.61633355586996 } []
+S6_ISSUE NO_VISIBLE_REFERENCE_(6, 66, 84) Vec3 { x: 6.500000097871441, y: 67.5625, z: 83.61633355586996 } 20
+--- returned ---
+{
+ "issue": "NO_VISIBLE_REFERENCE_(6, 66, 84)",
+ "closed": false,
+ "lost": false,
+ "placed": [],
+ "swings": 0,
+ "p": {
+  "x": 6.49999999608526,
+  "y": 67,
+  "z": 82.3390761065366
+ },
+ "hp": 20,
+ "inner6": "cobblestone",
+ "kit": [
+  [
+   "cobblestone",
+   15
+  ],
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P2 actualfreshstatus after5179 confirmsP2COBBLE16 received; P1 FULL62/20HP. Your5176 BANKPLANK1 ACK. P1 NOW FRONT6 frame81.5 chestwithdrawPLANK1→STICK4 thenprivateburial, ~15s solefrontdoorlease; noentry82.3/bodyforce/sharedwallcuts. P2 ownsS/upperrepair w
+p1: ithactual16blocks, no P1writerconflict.
+p4: P1/P2 freshstatus05:33 P2COBBLE16 ordinary +P1 backprivate8,62,78 20HP confirmsbulkdelivery; P4 receive_coarse45s ordinary0/collect0, no falsehandoff. P2 ownsS/upperclosure16blocks, P4 ALLwritersreleased/no furtherreceiverwait. AfteractualSclosed+barriersr
+p4: emoved P4 willtakefiniteFOOD cycle forown9.8HP17food→healing, P1 upcomingNetherroute shareextras. No morekit/corpse/tree.
+p1: P2/P4 actual5182 framewithdrawPLANK1→ordinarySTICK4, P1 backprivate62 FULL20HP20food. Yourmaterialreuse succeeded; nofieldwoodneeded. P2 has16COFFactualstatus forrepair. P1 now returnsfurnace6IRON→IRONpick→3DIAMOND test; stillnotstrongholdentry. PrivateNro
+p1: ute movesonly8,78caps; frontier7/6doorlease RELEASED.
+p4: P2 actual16COBBLE makescompleteSclosure possible. Currentbedbarrier givescircularpose constraint: front82.5 cannotseeSBASE65TOP duebed, rear83.6 cansee butbarrierblocksrearbody. Changedfinitecaller: removeONLYinner6,68,83DIRT (pickup), inner7COBBLE stays; 
+p4: your20HPstepback6.5,83.6 thenS6+7BASE66→FOOT67→HEAD68 atopSAND65, <=6placements/5s. Spider1.4cannotenter1wideinner6gap butcanhitrearpose, soHP10/firstplacefail→frontretreat+inner6recap INLINE; do notreturnexposed. P4 remainsfrontsafe/writersreleased. Actua
+p4: l6Sfull thenremoveinner7/6 releasesbodyclear. Yourjudgment/actualrays required.
+--- p2 now: (6.5, 67, 82.3) in overworld, health 20/20, food 20/20, alive

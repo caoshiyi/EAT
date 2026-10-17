@@ -1,0 +1,4 @@
+== #5459 2026-10-17T06:49:00 p4 role=integration_operator iter=11 0.8 s
+const{Vec3}=require('vec3');let c;try{const it=bot.inventory.items().find(i=>i.name==='sweet_berries');if(!it)throw Error('NO_BERRIES');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const before=c.containerItems().filter(i=>i.name==='sweet_berries').reduce((s,i)=>s+i.count,0);await c.deposit(it.type,null,it.count);c.close();c=null;await bot.waitForTicks(4);c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));return{before,after:c.containerItems().filter(i=>i.name==='sweet_berries').reduce((s,i)=>s+i.count,0),own:bot.inventory.items().map(i=>[i.name,i.count]),hp:bot.health,food:bot.food,p:bot.entity.position}}finally{if(c)c.close();bot.clearControlStates()};
+-- returned --
+{"before": 0, "after": 5, "own": [["dirt", 1], ["spider_eye", 1], ["string", 1]], "hp": 12.366665840148926, "food": 17, "p": {"x": 7.661535300310367, "y": 67.5625, "z": 83.69999994127718}}

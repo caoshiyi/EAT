@@ -1,0 +1,245 @@
+== #5155 2026-10-17T05:27:45 p2 role=independent_operator iter=11 12.9 s
+const{Vec3}=require('vec3');const full=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),initial=bot.entity,start=Date.now();let lost=false,issue=null,cuts=[],placed=[];const death=()=>{lost=true;bot.clearControlStates()};bot.on('death',death);async function t(n){await bot.waitForTicks(n);if(lost||bot.entity!==initial||bot.game.dimension!=='overworld'||Date.now()-start>35000)throw Error('LIFE_TIME')};async function put(q){if(full(q))return;const it=bot.inventory.items().find(i=>['dirt','spruce_planks'].includes(i.name)),ref=[[0,-1,0],[1,0,0],[-1,0,0],[0,1,0],[0,0,1],[0,0,-1]].map(a=>q.offset(...a)).find(full);if(!it||!ref)throw Error('STOCK_REF_'+q);await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot._placeBlockWithOptions(bot.blockAt(ref),q.minus(ref),{forceLook:true})}finally{bot.clearControlStates()}await t(3);if(!full(q))throw Error('CAP_ACK_'+q);placed.push([q.x,q.y,q.z,bot.blockAt(q).name])};const need=[[7,67,84],[7,68,84],[6,67,84],[6,68,84]].map(a=>new Vec3(...a));try{bot.clearControlStates();bot.pathfinder.setGoal(null);if(bot.entity.position.distanceTo(new Vec3(6.5,67,82.5))>2||bot.health<15)throw Error('BODY');bot.chat('P2 URGENTcampSrepair NOW<=35s: borrowedupperE8,69,83PLANK/S7,69,84PLANK/S6,69,84DIRT/N7,69,81DIRT→S7foot67/head68 thenS6foot/head. No floor/door/mainTOPslab cuts. P4 frontstayawayS, urgentnamedmaterialdebt; P1 capconversiondeferredtorepair.');for(const a of[[7,69,81],[6,69,84],[7,69,84],[8,69,83]]){if(need.every(full))break;const q=new Vec3(...a),b=bot.blockAt(q);if(!['dirt','spruce_planks'].includes(b?.name))throw Error('SOURCE_'+q+'_'+b?.name);await bot.unequip('hand');await bot.dig(b);await t(3);cuts.push([q.x,q.y,q.z,b.name]);for(let k=0;k<20&&!bot.inventory.items().some(i=>['dirt','spruce_planks'].includes(i.name));k++)await t(1);for(const dest of need)if(!full(dest)&&bot.inventory.items().some(i=>['dirt','spruce_planks'].includes(i.name)))await put(dest)}console.log('ACTUAL_SOUTH_REPAIR',JSON.stringify({closed:need.every(full),cuts,placed,hp:bot.health,p:bot.entity.position,upper:[[7,69,81],[6,69,84],[7,69,84],[8,69,83]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])}));}catch(e){issue=e.message;console.log('S_REPAIR_ISSUE',issue,bot.entity.position,bot.health)}finally{bot.clearControlStates();bot.removeListener('death',death)}return{issue,cuts,placed,south:need.map(q=>[q,bot.blockAt(q)?.name,full(q)]),hp:bot.health,p:bot.entity.position,kit:bot.inventory.items().map(i=>[i.name,i.count])};
+-- output --
+S_REPAIR_ISSUE STOCK_REF_(7, 67, 84) Vec3 { x: 6.5, y: 67, z: 82.5 } 20
+-- returned --
+{"issue": "STOCK_REF_(7, 67, 84)", "cuts": [[7, 69, 81, "dirt"], [6, 69, 84, "dirt"], [7, 69, 84, "spruce_planks"], [8, 69, 83, "spruce_planks"]], "placed": [], "south": [[{"x": 7, "y": 67, "z": 84}, "air", false], [{"x": 7, "y": 68, "z": 84}, "air", false], [{"x": 6, "y": 67, "z": 84}, "air", false], [{"x": 6, "y": 68, "z": 84}, "air", false]], "hp": 20, "p": {"x": 6.5, "y": 67, "z": 82.5}, "kit": [["spruce_planks", 1]]}
+== #5157 2026-10-17T05:28:10 p4 role=integration_operator iter=11 5.3 s
+const{Vec3}=require('vec3'),entity=bot.entity,life=global.P4Iter11.life,start=Date.now(),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);let issue=null,c=null,cut=[],placed=[];bot.clearControlStates();bot.pathfinder.setGoal(null);const caps=[[5,69,81],[5,69,82],[6,69,81],[7,69,81]].map(a=>new Vec3(...a)),south=[6,7].flatMap(x=>[67,68].map(y=>new Vec3(x,y,84)));function guard(){if(bot.entity!==entity||global.P4Iter11.life!==life||bot.health<=0||Date.now()-start>45000)throw Error('BODY_TIME')}async function tick(n){await bot.waitForTicks(n);guard()};try{guard();c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const b=c.containerItems().find(i=>i.name==='sweet_berries');if(b)await c.withdraw(b.type,null,1);c.close();c=null;await tick(4);const food=bot.inventory.items().find(i=>i.name==='sweet_berries');if(food&&bot.food<20){await bot.equip(food,'hand');await bot.consume();await tick(5)}if(south.every(q=>bot.blockAt(q)?.boundingBox==='block'))return{alreadyClosed:true,hp:bot.health,food:bot.food};bot.chat('P4 urgentcurrentS6/7Y67/68AIR injury; taking Sclosure NOW<=40s. Harvest4 upperDIRT N/Wcaps5,69,81+82/6+7,69,81 thenSfoot/head cap. OriginalmainROOFslabs and E/SPLANK untouched. P2 keepfrontbody; no sharedexit untilactualend.');for(const q of caps){if(bot.blockAt(q)?.name!=='dirt')throw Error('DIRT_SUBJECT_'+q);await bot.unequip('hand');await bot.dig(bot.blockAt(q),true);cut.push(q);await tick(4)}for(let k=0;k<15&&count('dirt')<4;k++)await tick(3);if(count('dirt')<4)throw Error('DIRT_RECEIPT_'+count('dirt'));for(const x of[6,7])for(const y of[67,68]){const q=new Vec3(x,y,84);if(bot.blockAt(q)?.boundingBox==='block')continue;const ref=y===67?new Vec3(x===6?5:8,67,84):new Vec3(x,67,84),face=y===67?new Vec3(x===6?1:-1,0,0):new Vec3(0,1,0);if(bot.blockAt(ref)?.boundingBox!=='block')throw Error('S_REF_'+ref);await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(bot.blockAt(ref),face);await tick(4);if(bot.blockAt(q)?.name!=='dirt')throw Error('S_CAP_'+q);placed.push(q)}}catch(e){issue=e.message;console.log('EMERGENCY_ISSUE',issue)}finally{if(c)c.close();if(bot.currentWindow)bot.closeWindow(bot.currentWindow);bot.clearControlStates();bot.pathfinder.setGoal(null)}return{issue,cut,placed,south:south.map(q=>[q,bot.blockAt(q)?.name]),upper:caps.map(q=>[q,bot.blockAt(q)?.name]),hp:bot.health,food:bot.food,p:bot.entity.position,own:bot.inventory.items().map(i=>[i.name,i.count]),life:global.P4Iter11,controls:bot.controlState};
+-- output --
+EMERGENCY_ISSUE DIRT_SUBJECT_(7, 69, 81)
+-- returned --
+{"issue": "DIRT_SUBJECT_(7, 69, 81)", "cut": [{"x": 5, "y": 69, "z": 81}, {"x": 5, "y": 69, "z": 82}, {"x": 6, "y": 69, "z": 81}], "placed": [], "south": [[{"x": 6, "y": 67, "z": 84}, "air"], [{"x": 6, "y": 68, "z": 84}, "air"], [{"x": 7, "y": 67, "z": 84}, "air"], [{"x": 7, "y": 68, "z": 84}, "air"]], "upper": [["[repeated reference]", "air"], ["[repeated reference]", "air"], ["[repeated reference]", "air"], [{"x": 7, "y": 69, "z": 81}, "air"]], "hp": 7.8333330154418945, "food": 19, "p": {"x": 6.456736861772305, "y": 67, "z": 82.3}, "own": [["dirt", 1]], "life": {"started": 1792213540836, "life": 1, "events": [["death", 1792214288275], ["respawn", 1792214288281, "overworld"]]}, "controls": {}}
+== #5158 2026-10-17T05:28:15 p3 role=continuity_owner iter=11 0 s
+const{Vec3}=require('vec3'),cells=[];for(let x=-126;x<=-122;x++)for(let z=92;z<=96;z++)cells.push([x,z,[48,49,50,51,52,53,54].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]);return{cells,stem:[47,48,49,50,51,52,53,54,55].map(y=>[y,bot.blockAt(new Vec3(-124,y,94))?.name]),foes:Object.values(bot.entities).filter(e=>['magma_cube','ghast','hoglin','piglin','blaze'].includes(e.name)&&e.position.distanceTo(new Vec3(-124,50,94))<18).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]),enders:Object.values(bot.entities).filter(e=>e.name==='enderman'&&e.position.distanceTo(bot.entity.position)<12).map(e=>[e.id,e.position,e.metadata?.[9],e.metadata?.[17],e.metadata?.[18]])};
+-- returned --
+{"cells": [[-126, 92, ["warped_wart_block", "air", "air", "air", "air", "air", "air"]], [-126, 93, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-126, 94, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-126, 95, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-126, 96, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-125, 92, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-125, 93, ["warped_wart_block", "air", "warped_wart_block", "warped_wart_block", "warped_wart_block", "air", "air"]], [-125, 94, ["air", "air", "warped_wart_block", "warped_wart_block", "warped_wart_block", "air", "air"]], [-125, 95, ["air", "warped_wart_block", "warped_wart_block", "air", "warped_wart_block", "air", "air"]], [-125, 96, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-124, 92, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-124, 93, ["warped_wart_block", "air", "warped_wart_block", "warped_wart_block", "warped_wart_block", "air", "air"]], [-124, 94, ["warped_stem", "warped_stem", "warped_stem", "warped_stem", "warped_wart_block", "air", "air"]], [-124, 95, ["air", "air", "warped_wart_block", "warped_wart_block", "warped_wart_block", "air", "air"]], [-124, 96, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-123, 92, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-123, 93, ["air", "warped_wart_block", "air", "air", "warped_wart_block", "air", "air"]], [-123, 94, ["air", "shroomlight", "warped_wart_block", "warped_wart_block", "warped_wart_block", "air", "air"]], [-123, 95, ["air", "air", "air", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block"]], [-123, 96, ["warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block"]], [-122, 92, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-122, 93, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-122, 94, ["warped_wart_block", "warped_wart_block", "air", "air", "air", "air", "air"]], [-122, 95, ["warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block", "warped_wart_block"]], [-122, 96, ["warped_wart_block", "air", "air", "air", "air", "air", "air"]]], "stem": [[47, "warped_stem"], [48, "warped_stem"], [49, "warped_stem"], [50, "warped_stem"], [51, "warped_stem"], [52, "warped_wart_block"], [53, "air"], [54, "air"], [55, "air"]], "foes": [[2584, "magma_cube", {"x": -122.39228181423462, "y": 50, "z": 91.22945782750787}, 16]], "enders": [[1477, {"x": -99.30000001192093, "y": 64, "z": 87.69999998807907}, 21, null, null], [3528, {"x": -99.30000001192093, "y": 64, "z": 87.30000001192093}, 40, null, null], [3705, {"x": -100.15361326932907, "y": 64, "z": 87.70006913844924}, 40, null, null], [4150, {"x": -100.40515489200283, "y": 63, "z": 86.9709543348587}, 40, null, null]]}
+== #5156 2026-10-17T05:27:58 p1 role=experiment_owner iter=11 20.9 s
+{
+global.P1UMode='south';global.P1UDir=[0,0,-1];global.P1USteps=1;
+// Scoped survival mining. Every operation finishes at a measured closed capsule.
+const {Vec3}=require('vec3');const begun=Date.now(),workEnd=begun+(global.P1UWorkMs||40000),hardEnd=begun+65000;let lost=false,issue=null,cuts=0,steps=0,down=0;
+const dim=bot.game.dimension,origin=bot.entity.position.clone();const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];
+const full=q=>{const b=bot.blockAt(q);return !!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['gravel','suspicious_sand','suspicious_gravel'].includes(b.name)};
+const solidNames=['sand','stone','sandstone','dirt','grass_block','granite','diorite','andesite','cobblestone','deepslate','cobbled_deepslate','tuff','coal_ore','iron_ore','copper_ore','deepslate_iron_ore','deepslate_coal_ore','deepslate_copper_ore','spruce_planks'];
+const air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);const stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','dirt','sandstone','granite','diorite','andesite','tuff','spruce_planks'].includes(i.name));
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}function death(){lost=true;stop();bot.stopDigging();}bot.on('death',death);bot.on('respawn',death);bot.on('end',death);stop();bot.pathfinder.LOSWhenPlacingBlocks=false;
+function check(){if(lost||bot.game.dimension!==dim||bot.health<12||Date.now()>hardEnd||Date.now()>1792220690000)throw Error('LIFE_TIME_HP');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+function shell(p){return full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0))))}
+async function center(p){for(const a of['x','z']){for(let n=0;n<35&&Math.abs(bot.entity.position[a]-p[a]-.5)>.05;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}if(Math.abs(bot.entity.position[a]-p[a]-.5)>.14)throw Error('CENTER');}}
+async function cut(q){check();const b=bot.blockAt(q);if(!solidNames.includes(b?.name))throw Error('CUT_KIND_'+b?.name+'_'+q);const pick=bot.inventory.items().filter(i=>i.name.endsWith('_pickaxe')&&i.durabilityUsed<(i.name==='wooden_pickaxe'?57:i.name==='stone_pickaxe'?129:248)).sort((a,b)=>(a.name==='stone_pickaxe'?-1:0)-(b.name==='stone_pickaxe'?-1:0))[0];if(!pick)throw Error('PICK_RESERVE');await bot.equip(pick,'hand');if(Date.now()+bot.digTime(b)>hardEnd-8000)throw Error('CUT_BOUND');await bot.dig(b,true);await tick(1);if(!air(q))throw Error('CUT_ACK_'+q);cuts++;}
+async function put(q){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED_'+q+'_'+bot.blockAt(q)?.name);const it=stock();if(!it)throw Error('CAP_STOCK');const faces=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)],d=faces.find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF_'+q);await bot.equip(it,'hand');if(bot.currentWindow)bot.closeWindow(bot.currentWindow);bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));}finally{bot.setControlState('sneak',false);}await tick(2);if(!full(q))throw Error('CAP_ACK_'+q);}
+async function closure(){stop();for(let n=0;n<30&&!bot.entity.onGround;n++)await tick();const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater||Math.abs(bot.entity.position.y-p.y)>.1)throw Error('CLOSE_BODY');for(const d of dirs)for(const y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));if(!shell(p))throw Error('SHELL');global.P1U={p:p.clone(),at:Date.now()};return true;}
+try{
+ const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater)throw Error('START_BODY');await center(p);
+ const mode=global.P1UMode||'south';
+ if(mode==='entry'){
+  const p=bot.entity.position.floored();if(![-1,-2,-3,-4].every(y=>full(p.offset(0,y,0)))||!dirs.every(d=>[-3,-2,-1].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('ENTRY_ENVELOPE');for(let y=-1;y>=-3;y--){const q=p.offset(0,y,0);await cut(q);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('ENTRY_FALL');down++;}
+ }else if(mode==='down'){
+  const goalY=global.P1UGoalY||40;while(bot.entity.position.y>goalY+.1&&Date.now()<workEnd){const p=bot.entity.position.floored(),floor=p.offset(0,-1,0),next=p.offset(0,-1,0);if(!full(floor)||!full(p.offset(0,-2,0))||!dirs.every(d=>[0,1].every(y=>full(next.plus(d).offset(0,y,0)))))throw Error('DESCENT_ENVELOPE_'+floor);await cut(floor);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-next.y)>.1);n++)await tick();if(!bot.entity.onGround||!bot.entity.position.floored().equals(next)||Math.abs(bot.entity.position.y-next.y)>.1)throw Error('DOWN_SETTLE');down++;}
+ }else{
+  const d=new Vec3(...(global.P1UDir||[0,0,1]));const side=dirs.filter(v=>Math.abs(v.dot(d))<.1);const max=global.P1USteps||16;
+  while(steps<max&&Date.now()<workEnd){const p=bot.entity.position.floored(),q=p.plus(d);const envelope=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!envelope.filter(v=>!v.equals(q)&&!v.equals(q.offset(0,1,0))&&!v.equals(q.plus(d))&&!v.equals(q.plus(d).offset(0,1,0))).every(v=>full(v)&&!["sand","gravel"].includes(bot.blockAt(v).name)))throw Error('HEADING_ENVELOPE_'+q+'_'+envelope.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));
+   if(!air(q.offset(0,1,0)))await cut(q.offset(0,1,0));if(!air(q))await cut(q);await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('forward',true);try{for(let n=0;n<24&&bot.entity.position.minus(q.offset(.5,0,.5)).dot(d)<-.08;n++)await tick();}finally{stop();}await tick(2);if(!bot.entity.onGround||!bot.entity.position.floored().equals(q)||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('HEADING_BODY');steps++;}
+ }
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();let closed=false;try{closed=await closure();}catch(e){console.log('CLOSURE_FAIL',e.message);}bot.removeListener('death',death);bot.removeListener('respawn',death);bot.removeListener('end',death);console.log('U_END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,cuts,steps,down,seconds:(Date.now()-begun)/1000,issue,closed,lost,delta:bot.entity.position.distanceTo(origin),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState}));}
+
+}
+if(Math.abs(bot.entity.position.z-78.5)>.4||Math.floor(bot.entity.position.y)!==39)throw Error("NORTH_RETURN_NOT_ACTUAL");
+{
+global.P1UMode='south';global.P1UDir=[-1,0,0];global.P1USteps=3;
+// Scoped survival mining. Every operation finishes at a measured closed capsule.
+const {Vec3}=require('vec3');const begun=Date.now(),workEnd=begun+(global.P1UWorkMs||40000),hardEnd=begun+65000;let lost=false,issue=null,cuts=0,steps=0,down=0;
+const dim=bot.game.dimension,origin=bot.entity.position.clone();const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];
+const full=q=>{const b=bot.blockAt(q);return !!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['gravel','suspicious_sand','suspicious_gravel'].includes(b.name)};
+const solidNames=['sand','stone','sandstone','dirt','grass_block','granite','diorite','andesite','cobblestone','deepslate','cobbled_deepslate','tuff','coal_ore','iron_ore','copper_ore','deepslate_iron_ore','deepslate_coal_ore','deepslate_copper_ore','spruce_planks'];
+const air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);const stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','dirt','sandstone','granite','diorite','andesite','tuff','spruce_planks'].includes(i.name));
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}function death(){lost=true;stop();bot.stopDigging();}bot.on('death',death);bot.on('respawn',death);bot.on('end',death);stop();bot.pathfinder.LOSWhenPlacingBlocks=false;
+function check(){if(lost||bot.game.dimension!==dim||bot.health<12||Date.now()>hardEnd||Date.now()>1792220690000)throw Error('LIFE_TIME_HP');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+function shell(p){return full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0))))}
+async function center(p){for(const a of['x','z']){for(let n=0;n<35&&Math.abs(bot.entity.position[a]-p[a]-.5)>.05;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}if(Math.abs(bot.entity.position[a]-p[a]-.5)>.14)throw Error('CENTER');}}
+async function cut(q){check();const b=bot.blockAt(q);if(!solidNames.includes(b?.name))throw Error('CUT_KIND_'+b?.name+'_'+q);const pick=bot.inventory.items().filter(i=>i.name.endsWith('_pickaxe')&&i.durabilityUsed<(i.name==='wooden_pickaxe'?57:i.name==='stone_pickaxe'?129:248)).sort((a,b)=>(a.name==='stone_pickaxe'?-1:0)-(b.name==='stone_pickaxe'?-1:0))[0];if(!pick)throw Error('PICK_RESERVE');await bot.equip(pick,'hand');if(Date.now()+bot.digTime(b)>hardEnd-8000)throw Error('CUT_BOUND');await bot.dig(b,true);await tick(1);if(!air(q))throw Error('CUT_ACK_'+q);cuts++;}
+async function put(q){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED_'+q+'_'+bot.blockAt(q)?.name);const it=stock();if(!it)throw Error('CAP_STOCK');const faces=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)],d=faces.find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF_'+q);await bot.equip(it,'hand');if(bot.currentWindow)bot.closeWindow(bot.currentWindow);bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));}finally{bot.setControlState('sneak',false);}await tick(2);if(!full(q))throw Error('CAP_ACK_'+q);}
+async function closure(){stop();for(let n=0;n<30&&!bot.entity.onGround;n++)await tick();const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater||Math.abs(bot.entity.position.y-p.y)>.1)throw Error('CLOSE_BODY');for(const d of dirs)for(const y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));if(!shell(p))throw Error('SHELL');global.P1U={p:p.clone(),at:Date.now()};return true;}
+try{
+ const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater)throw Error('START_BODY');await center(p);
+ const mode=global.P1UMode||'south';
+ if(mode==='entry'){
+  const p=bot.entity.position.floored();if(![-1,-2,-3,-4].every(y=>full(p.offset(0,y,0)))||!dirs.every(d=>[-3,-2,-1].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('ENTRY_ENVELOPE');for(let y=-1;y>=-3;y--){const q=p.offset(0,y,0);await cut(q);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('ENTRY_FALL');down++;}
+ }else if(mode==='down'){
+  const goalY=global.P1UGoalY||40;while(bot.entity.position.y>goalY+.1&&Date.now()<workEnd){const p=bot.entity.position.floored(),floor=p.offset(0,-1,0),next=p.offset(0,-1,0);if(!full(floor)||!full(p.offset(0,-2,0))||!dirs.every(d=>[0,1].every(y=>full(next.plus(d).offset(0,y,0)))))throw Error('DESCENT_ENVELOPE_'+floor);await cut(floor);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-next.y)>.1);n++)await tick();if(!bot.entity.onGround||!bot.entity.position.floored().equals(next)||Math.abs(bot.entity.position.y-next.y)>.1)throw Error('DOWN_SETTLE');down++;}
+ }else{
+  const d=new Vec3(...(global.P1UDir||[0,0,1]));const side=dirs.filter(v=>Math.abs(v.dot(d))<.1);const max=global.P1USteps||16;
+  while(steps<max&&Date.now()<workEnd){const p=bot.entity.position.floored(),q=p.plus(d);const envelope=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!envelope.filter(v=>!v.equals(q)&&!v.equals(q.offset(0,1,0))&&!v.equals(q.plus(d))&&!v.equals(q.plus(d).offset(0,1,0))).every(v=>full(v)&&!["sand","gravel"].includes(bot.blockAt(v).name)))throw Error('HEADING_ENVELOPE_'+q+'_'+envelope.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));
+   if(!air(q.offset(0,1,0)))await cut(q.offset(0,1,0));if(!air(q))await cut(q);await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('forward',true);try{for(let n=0;n<24&&bot.entity.position.minus(q.offset(.5,0,.5)).dot(d)<-.08;n++)await tick();}finally{stop();}await tick(2);if(!bot.entity.onGround||!bot.entity.position.floored().equals(q)||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('HEADING_BODY');steps++;}
+ }
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();let closed=false;try{closed=await closure();}catch(e){console.log('CLOSURE_FAIL',e.message);}bot.removeListener('death',death);bot.removeListener('respawn',death);bot.removeListener('end',death);console.log('U_END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,cuts,steps,down,seconds:(Date.now()-begun)/1000,issue,closed,lost,delta:bot.entity.position.distanceTo(origin),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState}));}
+
+}
+if(Math.floor(bot.entity.position.x)!==8||Math.floor(bot.entity.position.y)!==39)throw Error("WEST_RETURN_NOT_ACTUAL");
+{global.P1LiftY=55;
+const{Vec3}=require('vec3'),start=bot.entity.position.clone(),self=bot.entity,world=bot.game.dimension,begin=Date.now(),goal=global.P1LiftY??Math.floor(start.y)+1;let issue=null,lost=false,up=0;
+const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)],full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','sandstone','granite','diorite','andesite','dirt','tuff'].includes(i.name));
+const die=()=>{lost=true;bot.clearControlStates();bot.stopDigging()};bot.on('death',die);bot.on('respawn',die);bot.pathfinder.setGoal(null);bot.clearControlStates();bot.pathfinder.LOSWhenPlacingBlocks=false;function check(){if(lost||bot.entity!==self||bot.game.dimension!==world||bot.health<16||Date.now()>begin+55000)throw Error('LIFE_TIME');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+async function cap(){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(full(q))return;const it=stock(),d=dirs.find(d=>full(q.plus(d)));if(!it||!d)throw Error('CAP_DEPENDENCY');await bot.equip(it,'hand');await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3);if(!full(q))throw Error('CAP_ACK');}
+try{const cp=bot.entity.position.floored();for(const a of['x','z'])for(let k=0;k<35&&Math.abs(bot.entity.position[a]-cp[a]-.5)>.05;k++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}while(bot.entity.position.y<goal-.1&&up<16){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-p.x-.5)>.16||Math.abs(bot.entity.position.z-p.z-.5)>.16||!full(p.offset(0,-1,0)))throw Error('START_BODY');if(!dirs.every(d=>[0,1,2].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('LIFT_SIDE');if(full(q)){const b=bot.blockAt(q);if(!['cobblestone','stone','sandstone','andesite','diorite','granite','dirt','spruce_planks'].includes(b.name))throw Error('ROOF_KIND_'+b.name);const pick=bot.inventory.items().find(i=>i.name==='stone_pickaxe')||bot.inventory.items().find(i=>i.name.endsWith('_pickaxe'));if(!pick)throw Error('NO_PICK');await bot.equip(pick,'hand');await bot.dig(b,true);await tick(2);}if(!['air','cave_air'].includes(bot.blockAt(q)?.name))throw Error('ROOF_NOT_AIR');const m=stock();if(!m)throw Error('UP_STOCK');await bot.equip(m,'hand');await bot.lookAt(p.offset(.5,0,.5),true);bot.setControlState('jump',true);try{for(let n=0;n<20&&bot.entity.position.y<p.y+1.01;n++)await tick();console.log('UP_SEND',bot.entity.position,bot.entity.velocity);await bot._placeBlockWithOptions(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0),{forceLook:true});}finally{bot.setControlState('jump',false)}for(let n=0;n<20&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1||!full(p))throw Error('UP_ACK');up++;}}
+catch(e){issue=e.message;console.log('LIFT_ISSUE',issue)}finally{bot.clearControlStates();try{await cap()}catch(e){console.log('CAP_FAILED',e.message)}bot.removeListener('death',die);bot.removeListener('respawn',die);const p=bot.entity.position.floored();console.log('LIFT_END',JSON.stringify({p:bot.entity.position,hp:bot.health,up,issue,lost,closed:full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0)))),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}
+
+}
+-- output --
+U_END {"p":{"x":11.491902070188825,"y":39,"z":78.3},"hp":20,"food":20,"cuts":2,"steps":1,"down":0,"seconds":3.01,"issue":null,"closed":true,"lost":false,"delta":1.4000685351725126,"inv":[["wooden_pickaxe",1,16],["andesite",6,null],["sand",2,null],["crafting_table",1,null],["cobblestone",42,null],["stone_pickaxe",1,102],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]],"controls":{}}
+U_END {"p":{"x":8.3,"y":39,"z":78.503993673316},"hp":20,"food":20,"cuts":6,"steps":3,"down":0,"seconds":6.219,"issue":null,"closed":true,"lost":false,"delta":3.1984140201713505,"inv":[["wooden_pickaxe",1,16],["andesite",10,null],["sand",2,null],["crafting_table",1,null],["cobblestone",42,null],["stone_pickaxe",1,108],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]],"controls":{}}
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 40.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 41.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 42.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 43.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 44.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 45.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 46.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 47.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 48.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 49.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 50.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 51.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 52.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 53.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 54.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.552724591988628,
+  y: 55.166109260938214,
+  z: 78.50399363416749
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+LIFT_END {"p":{"x":8.552724591988628,"y":55,"z":78.50399363416749},"hp":20,"up":16,"issue":null,"lost":false,"closed":true,"inv":[["wooden_pickaxe",1,16],["sand",2,null],["crafting_table",1,null],["cobblestone",40,null],["stone_pickaxe",1,113],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]]}
+== #5159 2026-10-17T05:28:32 p3 role=continuity_owner iter=11 3.5 s
+const{Vec3}=require('vec3'),m=new Movements(bot);m.canDig=false;m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=1;for(const n of['lava','fire','soul_fire','magma_block','water','nether_portal'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);m.exclusionAreasStep.push(n=>Object.values(bot.entities).some(e=>['magma_cube','ghast','blaze','hoglin','piglin'].includes(e.name)&&e.position.distanceTo(new Vec3(n.x+.5,n.y,n.z+.5))<(e.name==='ghast'?24:8))?10000:0);const gen=bot.pathfinder.getPathFromTo(m,new Vec3(-98.5,63,86.5),new goals.GoalNear(-106,57,109,1),{timeout:3500,tickTimeout:3500});const v=gen.next(),r=v.value?.result||v.value;global.P3StemPlan11=r?.status==='success'?r.path.map(p=>[p.x,p.y,p.z]):null;return{status:r?.status,cost:r?.cost,len:r?.path?.length,last:r?.path?.slice(-4).map(p=>[p.x,p.y,p.z]),stem:[52,53,54,55,56,57,58,59].map(y=>[y,bot.blockAt(new Vec3(-106,y,109))?.name]),nearCells:[[-107,57,109],[-105,57,109],[-106,57,108],[-106,57,110]].map(a=>[a,[-1,0,1,2].map(y=>bot.blockAt(new Vec3(...a).offset(0,y,0))?.name)])};
+-- returned --
+{"status": "partial", "cost": 85.0832611206852, "len": 63, "last": [[-118.5, 54, 109.5], [-117.5, 55, 108.5], [-117.5, 56, 109.5], [-116.5, 57, 109.5]], "stem": [[52, "netherrack"], [53, "netherrack"], [54, "netherrack"], [55, "netherrack"], [56, "warped_stem"], [57, "warped_stem"], [58, "netherrack"], [59, "netherrack"]], "nearCells": [[[-107, 57, 109], ["netherrack", "netherrack", "netherrack", "netherrack"]], [[-105, 57, 109], ["air", "air", "netherrack", "netherrack"]], [[-106, 57, 108], ["nether_gold_ore", "netherrack", "netherrack", "netherrack"]], [[-106, 57, 110], ["air", "air", "netherrack", "netherrack"]]]}
+== #5160 2026-10-17T05:28:35 p4 role=integration_operator iter=11 0 s
+bot.chat("P2 STOPoverlapresolution: your3977Srepair precededmy3978 butcrossedbeforeIread. P4 RELEASES ALLS/N/Wwriters NOW. Actual5157 cutW5,69,81+82 andN6,69,81 DIRT\u2192AIR, then7,69,81 alreadyAIR veto; ownDIRT1 only, S0placements. Foodberry1 consumed\u219219food/HP7.8 front6.46,82.3. YourSclosurepriority; P1 coarseblocks restoreupper3plusyourdebt afteractualbank. No P4morecuts.")
+== #5161 2026-10-17T05:29:09 p1 role=experiment_owner iter=11 3.9 s
+global.P1LiftY=62;
+const{Vec3}=require('vec3'),start=bot.entity.position.clone(),self=bot.entity,world=bot.game.dimension,begin=Date.now(),goal=global.P1LiftY??Math.floor(start.y)+1;let issue=null,lost=false,up=0;
+const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)],full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','sandstone','granite','diorite','andesite','dirt','tuff'].includes(i.name));
+const die=()=>{lost=true;bot.clearControlStates();bot.stopDigging()};bot.on('death',die);bot.on('respawn',die);bot.pathfinder.setGoal(null);bot.clearControlStates();bot.pathfinder.LOSWhenPlacingBlocks=false;function check(){if(lost||bot.entity!==self||bot.game.dimension!==world||bot.health<16||Date.now()>begin+55000)throw Error('LIFE_TIME');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+async function cap(){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(full(q))return;const it=stock(),d=dirs.find(d=>full(q.plus(d)));if(!it||!d)throw Error('CAP_DEPENDENCY');await bot.equip(it,'hand');await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3);if(!full(q))throw Error('CAP_ACK');}
+try{const cp=bot.entity.position.floored();for(const a of['x','z'])for(let k=0;k<35&&Math.abs(bot.entity.position[a]-cp[a]-.5)>.05;k++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}while(bot.entity.position.y<goal-.1&&up<16){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-p.x-.5)>.16||Math.abs(bot.entity.position.z-p.z-.5)>.16||!full(p.offset(0,-1,0)))throw Error('START_BODY');if(!dirs.every(d=>[0,1,2].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('LIFT_SIDE');if(full(q)){const b=bot.blockAt(q);if(!['cobblestone','stone','sandstone','andesite','diorite','granite','dirt','spruce_planks'].includes(b.name))throw Error('ROOF_KIND_'+b.name);const pick=bot.inventory.items().find(i=>i.name==='stone_pickaxe')||bot.inventory.items().find(i=>i.name.endsWith('_pickaxe'));if(!pick)throw Error('NO_PICK');await bot.equip(pick,'hand');await bot.dig(b,true);await tick(2);}if(!['air','cave_air'].includes(bot.blockAt(q)?.name))throw Error('ROOF_NOT_AIR');const m=stock();if(!m)throw Error('UP_STOCK');await bot.equip(m,'hand');await bot.lookAt(p.offset(.5,0,.5),true);bot.setControlState('jump',true);try{for(let n=0;n<20&&bot.entity.position.y<p.y+1.01;n++)await tick();console.log('UP_SEND',bot.entity.position,bot.entity.velocity);await bot._placeBlockWithOptions(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0),{forceLook:true});}finally{bot.setControlState('jump',false)}for(let n=0;n<20&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1||!full(p))throw Error('UP_ACK');up++;}}
+catch(e){issue=e.message;console.log('LIFT_ISSUE',issue)}finally{bot.clearControlStates();try{await cap()}catch(e){console.log('CAP_FAILED',e.message)}bot.removeListener('death',die);bot.removeListener('respawn',die);const p=bot.entity.position.floored();console.log('LIFT_END',JSON.stringify({p:bot.entity.position,hp:bot.health,up,issue,lost,closed:full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0)))),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}
+-- output --
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 56.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 57.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 58.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 59.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 60.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 61.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 8.493722081111065,
+  y: 62.166109260938214,
+  z: 78.5039936439546
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+LIFT_END {"p":{"x":8.493722081111065,"y":62,"z":78.5039936439546},"hp":20,"up":7,"issue":null,"lost":false,"closed":true,"inv":[["wooden_pickaxe",1,16],["sand",2,null],["crafting_table",1,null],["cobblestone",34,null],["stone_pickaxe",1,114],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]]}
+== #5162 2026-10-17T05:29:22 p4 role=integration_operator iter=11 0.8 s
+const{Vec3}=require('vec3');let c;try{const it=bot.inventory.items().find(i=>i.name==='dirt');if(!it)throw Error('NO_DIRT');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const before=c.containerItems().filter(i=>i.name==='dirt').reduce((s,i)=>s+i.count,0);await c.deposit(it.type,null,it.count);c.close();c=null;await bot.waitForTicks(4);c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));return{before,after:c.containerItems().filter(i=>i.name==='dirt').reduce((s,i)=>s+i.count,0),own:bot.inventory.items().map(i=>[i.name,i.count]),hp:bot.health,food:bot.food,p:bot.entity.position}}finally{if(c)c.close();bot.clearControlStates()};
+-- returned --
+{"before": 0, "after": 1, "own": [], "hp": 9.833333015441895, "food": 17, "p": {"x": 6.456736861772305, "y": 67, "z": 82.3}}
+== #5163 2026-10-17T05:29:23 p4 role=integration_operator iter=11 0 s
+bot.chat("P2 actualP4 DIRT1banked foryourSrepair NOW; myS/N/Wwritersreleased. STOCK_REF cause anchor: S6/7 Y66 alsoAIR, outer5/8 mayalsoAIR. Need BASE6/7,66,84 thenfoot67/head68=6blocks total. LastlocalqueryS7,65,84 SANDfull; placeBASE66 atopSAND65 thenstack67/68. Facefromfront82.5 occludedbybed/floor; actualrearbed83.6 givesvisiblegroundtop (butSpiderattackrisk; your20HP vsmy9.8). P1 actualcoarse8incoming, no unackedrescuecredit.")
+== #5164 2026-10-17T05:29:35 p2 role=independent_operator iter=11 0 s
+const{Vec3}=require('vec3');let issue=null,placed=[];bot.clearControlStates();bot.pathfinder.setGoal(null);try{if(bot.game.dimension!=='overworld'||bot.entity.position.z>=82.71)throw Error('BODY_CLEARANCE');bot.chat('P2 changedimmediateSPIDERbarrier: INNERHEAD6+7,Y68,Z83 fromintactTOPslab69 underside; BED67.5625 remains so0.4375gap excludesSpiderbody. TemporaryBEDheadobstruction; outsideSstillunrepaired. BothP2/P4frontz82.3..82.5 clear. TwoactualheldblocksusedNOW, no more sourcecuts.');for(const x of[7,6]){const q=new Vec3(x,68,83),ref=new Vec3(x,69,83),b=bot.blockAt(q),roof=bot.blockAt(ref);if(b?.name!=='air')throw Error('TARGET_'+b?.name);if(roof?.name!=='cobblestone_slab'||roof.getProperties().type!=='top')throw Error('ROOF');if(Object.values(bot.entities).some(e=>e.username&&e.position.x+.3>x&&e.position.x-.3<x+1&&e.position.z+.3>83&&e.position.z-.3<84&&e.position.y+1.8>68&&e.position.y<69))throw Error('PEER_OCCUPANCY');const it=bot.inventory.items().find(i=>['dirt','spruce_planks'].includes(i.name));if(!it)throw Error('STOCK');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot._placeBlockWithOptions(roof,new Vec3(0,-1,0),{forceLook:true,delta:new Vec3(.5,.5,.5)})}finally{bot.clearControlStates()}await bot.waitForTicks(4);if(bot.blockAt(q)?.boundingBox!=='block')throw Error('PLACE_RECEIPT');placed.push([x,68,83,bot.blockAt(q).name])}console.log('INNER_GUARD_ACTUAL',JSON.stringify({placed,hp:bot.health,p:bot.entity.position,beds:[6,7].map(x=>[x,bot.blockAt(new Vec3(x,67,83))?.name,bot.blockAt(new Vec3(x,67,83))?.shapes]),roof:[6,7].map(x=>[x,bot.blockAt(new Vec3(x,69,83))?.getProperties()])}));}catch(e){issue=e.message;console.log('INNER_GUARD_ISSUE',issue,bot.entity.position,bot.health)}finally{bot.clearControlStates()}return{issue,placed,p:bot.entity.position,hp:bot.health,kit:bot.inventory.items().map(i=>[i.name,i.count])};
+-- output --
+INNER_GUARD_ISSUE ROOF Vec3 { x: 6.5, y: 67, z: 82.5 } 20
+-- returned --
+{"issue": "ROOF", "placed": [], "p": {"x": 6.5, "y": 67, "z": 82.5}, "hp": 20, "kit": [["spruce_planks", 1], ["dirt", 1]]}
+== #5165 2026-10-17T05:29:49 p2 role=independent_operator iter=11 0 s
+const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,cells:[[6,68,83],[7,68,83],[6,69,83],[7,69,83],[6,67,83],[7,67,83],[6,65,84],[7,65,84],[6,66,84],[7,66,84]].map(a=>{const b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.getProperties(),b?.shapes]}),peers:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position,e.metadata?.[9]])};
+-- returned --
+{"p": {"x": 6.5, "y": 67, "z": 82.5}, "hp": 20, "cells": [[[6, 68, 83], "air", {}, []], [[7, 68, 83], "air", {}, "[repeated reference]"], [[6, 69, 83], "spruce_slab", {"waterlogged": false, "type": "top"}, [[0, 0.5, 0, 1, 1, 1]]], [[7, 69, 83], "spruce_slab", {"waterlogged": false, "type": "top"}, "[repeated reference]"], [[6, 67, 83], "white_bed", {"part": "foot", "occupied": false, "facing": "east"}, [[0, 0, 0, 0.1875, 0.5625, 0.1875], [0, 0, 0.8125, 0.1875, 0.5625, 1], [0, 0.1875, 0.1875, 1, 0.5625, 0.8125], [0.1875, 0.1875, 0, 1, 0.5625, 0.1875], [0.1875, 0.1875, 0.8125, 1, 0.5625, 1]]], [[7, 67, 83], "white_bed", {"part": "head", "occupied": false, "facing": "east"}, [[0.8125, 0, 0, 1, 0.5625, 0.1875], [0.8125, 0, 0.8125, 1, 0.5625, 1], [0, 0.1875, 0, 0.8125, 0.5625, 1], [0.8125, 0.1875, 0.1875, 1, 0.5625, 0.8125]]], [[6, 65, 84], "sand", {}, [[0, 0, 0, 1, 1, 1]]], [[7, 65, 84], "sand", {}, "[repeated reference]"], [[6, 66, 84], "air", {}, "[repeated reference]"], [[7, 66, 84], "air", {}, "[repeated reference]"]], "peers": [["p2", "[repeated reference]", 20], ["p1", {"x": 8.493722081111065, "y": 62, "z": 78.5039936439546}, 20], ["p4", {"x": 6.456736861772305, "y": 67, "z": 82.3}, 9.833333015441895]]}
+== #5167 2026-10-17T05:29:56 p2 role=independent_operator iter=11 0.4 s
+const{Vec3}=require('vec3');let issue=null,placed=[];bot.clearControlStates();bot.pathfinder.setGoal(null);try{if(bot.game.dimension!=='overworld'||bot.entity.position.z>=82.71)throw Error('BODY_CLEARANCE');bot.chat('P2 changedimmediateSPIDERbarrier: INNERHEAD6+7,Y68,Z83 fromintactTOPslab69 underside; BED67.5625 remains so0.4375gap excludesSpiderbody. TemporaryBEDheadobstruction; outsideSstillunrepaired. BothP2/P4frontz82.3..82.5 clear. TwoactualheldblocksusedNOW, no more sourcecuts.');for(const x of[7,6]){const q=new Vec3(x,68,83),ref=new Vec3(x,69,83),b=bot.blockAt(q),roof=bot.blockAt(ref);if(b?.name!=='air')throw Error('TARGET_'+b?.name);if(roof?.name!=='spruce_slab'||roof.getProperties().type!=='top')throw Error('ROOF');if(Object.values(bot.entities).some(e=>e.username&&e.position.x+.3>x&&e.position.x-.3<x+1&&e.position.z+.3>83&&e.position.z-.3<84&&e.position.y+1.8>68&&e.position.y<69))throw Error('PEER_OCCUPANCY');const it=bot.inventory.items().find(i=>['dirt','spruce_planks'].includes(i.name));if(!it)throw Error('STOCK');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot._placeBlockWithOptions(roof,new Vec3(0,-1,0),{forceLook:true,delta:new Vec3(.5,.5,.5)})}finally{bot.clearControlStates()}await bot.waitForTicks(4);if(bot.blockAt(q)?.boundingBox!=='block')throw Error('PLACE_RECEIPT');placed.push([x,68,83,bot.blockAt(q).name])}console.log('INNER_GUARD_ACTUAL',JSON.stringify({placed,hp:bot.health,p:bot.entity.position,beds:[6,7].map(x=>[x,bot.blockAt(new Vec3(x,67,83))?.name,bot.blockAt(new Vec3(x,67,83))?.shapes]),roof:[6,7].map(x=>[x,bot.blockAt(new Vec3(x,69,83))?.getProperties()])}));}catch(e){issue=e.message;console.log('INNER_GUARD_ISSUE',issue,bot.entity.position,bot.health)}finally{bot.clearControlStates()}return{issue,placed,p:bot.entity.position,hp:bot.health,kit:bot.inventory.items().map(i=>[i.name,i.count])};
+-- output --
+INNER_GUARD_ACTUAL {"placed":[[7,68,83,"spruce_planks"],[6,68,83,"dirt"]],"hp":20,"p":{"x":6.5,"y":67,"z":82.5},"beds":[[6,"white_bed",[[0,0,0,0.1875,0.5625,0.1875],[0,0,0.8125,0.1875,0.5625,1],[0,0.1875,0.1875,1,0.5625,0.8125],[0.1875,0.1875,0,1,0.5625,0.1875],[0.1875,0.1875,0.8125,1,0.5625,1]]],[7,"white_bed",[[0.8125,0,0,1,0.5625,0.1875],[0.8125,0,0.8125,1,0.5625,1],[0,0.1875,0,0.8125,0.5625,1],[0.8125,0.1875,0.1875,1,0.5625,0.8125]]]],"roof":[[6,{"waterlogged":false,"type":"top"}],[7,{"waterlogged":false,"type":"top"}]]}
+-- returned --
+{"issue": null, "placed": [[7, 68, 83, "spruce_planks"], [6, 68, 83, "dirt"]], "p": {"x": 6.5, "y": 67, "z": 82.5}, "hp": 20, "kit": []}

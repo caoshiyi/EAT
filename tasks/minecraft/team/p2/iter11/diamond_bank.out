@@ -1,0 +1,57 @@
+program #5420 on p2: 9.5 s
+--- output ---
+SURFACE_THREATS []
+UP_SEND Vec3 { x: 8, y: 62, z: 78 } 63.166109260938214 0.08307781780646721
+UP_SEND Vec3 { x: 8, y: 63, z: 78 } 64.16610926093821 0.08307781780646721
+UP_SEND Vec3 { x: 8, y: 64, z: 78 } 65.16610926093821 0.08307781780646721
+DOOR_ACTUAL enter (6.515039509838015, 67, 82.47756423852786)
+BANK_BEFORE [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+BANK_DIAMOND_RECEIPT 6 [
+  [ 'stick', 2 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'diamond', 6 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "banked": true,
+ "closed": true,
+ "p": {
+  "x": 7.587790926338653,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "kit": [
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "moss_block",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ]
+ ],
+ "elapsed": 9531
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

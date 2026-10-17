@@ -1,0 +1,6 @@
+== #5203 2026-10-17T05:37:18 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');for(const y of[38,37,36]){let bad=[];let p=new Vec3(11,y,79);for(const[d,n]of[[new Vec3(0,0,-1),12],[new Vec3(-1,0,0),8]])for(let k=0;k<n;k++){const q=p.plus(d),side=[new Vec3(d.z,0,d.x),new Vec3(-d.z,0,-d.x)];for(const v of[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])]){const b=bot.blockAt(v);if(!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')||['sand','gravel'].includes(b.name))bad.push([v,b?.name]);}p=q;}console.log('LEVEL_ROUTE',JSON.stringify({y,bad}));}
+-- output --
+LEVEL_ROUTE {"y":38,"bad":[]}
+LEVEL_ROUTE {"y":37,"bad":[]}
+LEVEL_ROUTE {"y":36,"bad":[]}

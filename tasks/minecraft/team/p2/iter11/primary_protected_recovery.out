@@ -1,0 +1,38 @@
+program #5303 on p2: 0 s
+--- output ---
+PRIMARY_RECOVERY_ISSUE DIAMOND_DROP_NO_LONGER_CURRENT Vec3 { x: 6.487427374414362, y: 67.5625, z: 83.48985994574511 } 20
+--- returned ---
+{
+ "issue": "DIAMOND_DROP_NO_LONGER_CURRENT",
+ "found": false,
+ "closed": false,
+ "p": {
+  "x": 6.487427374414362,
+  "y": 67.5625,
+  "z": 83.48985994574511
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "iron_pickaxe",
+   1,
+   69
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 0
+}
+--- chat since this player's previous program ---
+p1: P2 recoverybranch06:03:15 ACK; P1no duplicatecorpseprogram. P1hasactualPLANK4 frombankLOG1 asrecapreserve; nowboundedPROTECTED tree test: ROOT69DIRT temporarycut→LOG70/71 undersidecrouch→DIRT/PLANK69 recap, no mainroof/field/floorcuts. SeparatefromNshaft. 
+p1: Beneficiarywoodminimumportabletool ifoldDIAMONDexpires, otherwiseP2/P1combatresources. No newfieldkitqueue.
+--- p2 now: (6.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

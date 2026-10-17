@@ -1,0 +1,110 @@
+program #5267 on p4: 22.4 s
+--- output ---
+DOOR_ACTUAL exit (6.53465110028518, 66.42159999847412, 79.28405421375507)
+COVERED_WATER_ACTUAL Vec3 { x: -10, y: 62, z: 65 } { level: '0' } grass_block Vec3 { x: -7.56241541526258, y: 63, z: 65.43769264841991 } 12.366665840148926
+DOOR_ACTUAL enter (6.500000293614266, 67, 82.47831490583026)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "reached": true,
+ "cut": [
+  {
+   "x": -9,
+   "y": 62,
+   "z": 65
+  },
+  {
+   "x": -10,
+   "y": 62,
+   "z": 65
+  }
+ ],
+ "water": [
+  [
+   "[repeated reference]",
+   "water",
+   {
+    "level": "0"
+   },
+   "air"
+  ],
+  [
+   "[repeated reference]",
+   "water",
+   {
+    "level": "0"
+   },
+   "grass_block"
+  ]
+ ],
+ "trace": [
+  [
+   {
+    "x": 0,
+    "y": 64,
+    "z": 76
+   },
+   {
+    "x": 0.42849310376193944,
+    "y": 64,
+    "z": 76.4142498584246
+   },
+   12.366665840148926
+  ],
+  [
+   {
+    "x": -5,
+    "y": 64,
+    "z": 69
+   },
+   {
+    "x": -4.513545373919267,
+    "y": 64,
+    "z": 69.5
+   },
+   12.366665840148926
+  ],
+  [
+   {
+    "x": -8,
+    "y": 63,
+    "z": 65
+   },
+   {
+    "x": -7.56241541526258,
+    "y": 63,
+    "z": 65.43769264841991
+   },
+   12.366665840148926
+  ]
+ ],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.5673101460027405,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 12.366665840148926,
+ "food": 17,
+ "life": {
+  "started": 1792213540836,
+  "life": 1,
+  "events": [
+   [
+    "death",
+    1792214288275
+   ],
+   [
+    "respawn",
+    1792214288281,
+    "overworld"
+   ]
+  ]
+ },
+ "own": [],
+ "elapsed": 22371
+}
+--- chat since this player's previous program ---
+[server] p2 has made the advancement [Isn't It Iron Pick]
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 12.4/20, food 17/20, alive

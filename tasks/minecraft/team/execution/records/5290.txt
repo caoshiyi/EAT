@@ -1,0 +1,5 @@
+== #5290 2026-10-17T06:01:24 p1 role=experiment_owner iter=11 0.6 s
+const{Vec3}=require('vec3');const log=bot.inventory.items().find(i=>i.name==='spruce_log');if(log){const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));try{await c.deposit(log.type,null,1);console.log('BANK_LOG_ACTUAL',c.containerItems().filter(i=>i.name==='spruce_log').map(i=>i.count));}finally{c.close()}}await bot.waitForTicks(3);console.log('BODY',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+BANK_LOG_ACTUAL [ 1 ]
+BODY Vec3 { x: 7.338072988707901, y: 67.5625, z: 83.69999993540492 } 20 []

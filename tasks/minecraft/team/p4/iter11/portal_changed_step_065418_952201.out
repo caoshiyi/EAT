@@ -1,0 +1,45 @@
+program #5506 on p4: 9.9 s
+--- output ---
+PILLAR_ACTUAL Vec3 { x: 10.500208495825618, y: 67, z: 91.5 } 14.366665840148926
+ENTRY_ISSUE GATE_KIND_air overworld Vec3 { x: 6.499664761128541, y: 68, z: 90.55302125354184 } 14.366665840148926
+--- returned ---
+{
+ "issue": "GATE_KIND_air",
+ "recoveryIssue": "Took to long to decide path to goal!",
+ "transitioned": false,
+ "nether": null,
+ "p": {
+  "x": 11.57451053540197,
+  "y": 67,
+  "z": 85.05764600550941
+ },
+ "dim": "overworld",
+ "hp": 14.366665840148926,
+ "food": 17,
+ "protectedEnd": false,
+ "items": [
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (11.6, 67, 85.1) in overworld, health 14.4/20, food 17/20, alive

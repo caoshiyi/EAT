@@ -1,0 +1,7 @@
+== #5541 2026-10-17T06:58:39 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3'),full=q=>{let b=bot.blockAt(q);return b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','gravel','sand'].includes(b.name)},empty=q=>['air','cave_air','short_grass','warped_roots','crimson_roots'].includes(bot.blockAt(q)?.name),start=bot.entity.position.floored(),goal=new Vec3(-56,69,64),key=p=>p.toString(),valid=q=>full(q.offset(0,-1,0))&&empty(q)&&empty(q.offset(0,1,0));
+const queue=[start],seen=new Set([key(start)]),prev=new Map();let found=null;
+for(let i=0;i<queue.length&&i<70000;i++){const a=queue[i];if(a.equals(goal)){found=a;break;}for(let[dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]])for(let dy of[0,1,-1]){const q=a.offset(dx,dy,dz);if(q.x< -115||q.x>20||q.z< -20||q.z>115||q.y<30||q.y>100||seen.has(key(q))||!valid(q)||dy>0&&!empty(a.offset(0,2,0))||dy<0&&!empty(q.offset(0,2,0)))continue;seen.add(key(q));prev.set(key(q),a);queue.push(q);}}
+let route=[];if(found){for(let q=found;!q.equals(start);q=prev.get(key(q)))route.unshift(q);global.P1NorthShaftRoute=route;}console.log('BFS',JSON.stringify({found:!!found,visited:queue.length,route:route.filter((q,i)=>i%12===0||i===route.length-1),steps:route.length}));
+-- output --
+BFS {"found":false,"visited":2,"route":[],"steps":0}

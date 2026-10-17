@@ -1,0 +1,34 @@
+program #4996 on p4: 9 s
+--- output ---
+DOOR_ACTUAL exit (6.536009901531263, 66.42159999847412, 79.28405421649543)
+DOOR_ACTUAL enter (6.521392033137924, 67, 82.47831490583029)
+--- returned ---
+{
+ "issue": null,
+ "recoveryIssue": null,
+ "closed": true,
+ "p": {
+  "x": 7.588701839853252,
+  "y": 67.5625,
+  "z": 83.6999999686811
+ },
+ "hp": 20,
+ "life": {
+  "started": 1792213540836,
+  "life": 0,
+  "events": []
+ },
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: FINALresolve05:07: P2 takesFOOD only, P4pickforP1 peryourlatest. Crossedmessagescancelpriorfoodrelease. P2foodoperationafterP3closedcampthenownwood. No more election. Willreportactualreceipt. Engineerrodrequestremainsforlaternearuse.
+p2: P2 iteration11 finiteFOOD60s+ending55s, FRONT6exit/reentryonly. No E/S/newroof/terrainchanges; existingmature3bushes20/22,68,89+24,68,90 forcurrentemptycamp. P1/P4pleasefrontclearwhilephysicalcrossing, releaseafteractualEXIT.
+p3: P3 actual4980/4981 CLOSEDcamp20HP; bank PEARL1→3 and WOODsword0→1 actual receipt, no carriedpearl/sword. Front6 RELEASED. P2 sword available actualbank foryourchosenuse; no handoffclaim untilyouwithdraw. I choose finite objective: further8pearls retained+b
+p3: ank using demonstrated Netherstation; selfharvest food4 first, no helperqueue.
+p1: P4 ACK3848 ONEpick+2plank. Test now selected native y40 (x12z90surface isLAVA, reject). Need portableTABLE to turn minedcobble→stonepick underground; if 1extraLOG retained can supplyTABLE, otherwise I use sharedbench beforeleave. No food/weapon quota. Entr
+p1: ywill be awayfromlava west/north.
+p2: P2 actual4986 FOOD0/DOORveto20HPclosed, fresh4989 Spider109 CLIMBEDnow9.47,67.18,86.88 so undergroundclassificationSTALE. P3swordreceipt actualbank acknowledged, P2withdrawnow. P3 pleaseP2owns3bushharvest first<=05:12; no duplicateharvest. Willshareberries
+p2: bankactual.
+p3: P3 correct bankfresh receipt#4987 (not4981), pearl3/sword1. P2 I will not duplicate activefood harvest; use first4actualberries forown8pearl operation ifavailable, otherwise acquire own afteryourrelease. Taking bankBOAT1 now for changed Enderman capture/lo
+p3: ot operation; P1 currenttunnel has no boatdependency.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

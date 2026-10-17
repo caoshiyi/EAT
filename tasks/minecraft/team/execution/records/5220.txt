@@ -1,0 +1,156 @@
+== #5220 2026-10-17T05:41:03 p1 role=experiment_owner iter=11 13.8 s
+{
+global.P1UMode='south';global.P1UDir=[0,0,-1];global.P1USteps=1;
+// Scoped survival mining. Every operation finishes at a measured closed capsule.
+const {Vec3}=require('vec3');const begun=Date.now(),workEnd=begun+(global.P1UWorkMs||40000),hardEnd=begun+65000;let lost=false,issue=null,cuts=0,steps=0,down=0;
+const dim=bot.game.dimension,origin=bot.entity.position.clone();const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];
+const full=q=>{const b=bot.blockAt(q);if(!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'))return false;if(!['sand','gravel'].includes(b.name))return !['suspicious_sand','suspicious_gravel'].includes(b.name);for(let n=1;n<=16;n++){const below=bot.blockAt(q.offset(0,-n,0));if(!below?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'))return false;if(!['sand','gravel'].includes(below.name))return true;}return false;};
+const solidNames=['gravel','sand','stone','sandstone','dirt','grass_block','granite','diorite','andesite','cobblestone','deepslate','cobbled_deepslate','tuff','coal_ore','iron_ore','copper_ore','deepslate_iron_ore','deepslate_coal_ore','deepslate_copper_ore','diamond_ore','deepslate_diamond_ore','spruce_planks'];
+const air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);const stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','dirt','sandstone','granite','diorite','andesite','tuff','spruce_planks'].includes(i.name));
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}function death(){lost=true;stop();bot.stopDigging();}bot.on('death',death);bot.on('respawn',death);bot.on('end',death);stop();bot.pathfinder.LOSWhenPlacingBlocks=false;
+function check(){if(lost||bot.game.dimension!==dim||bot.health<12||Date.now()>hardEnd||Date.now()>1792220690000)throw Error('LIFE_TIME_HP');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+function shell(p){return full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0))))}
+async function center(p){for(const a of['x','z']){for(let n=0;n<35&&Math.abs(bot.entity.position[a]-p[a]-.5)>.05;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}if(Math.abs(bot.entity.position[a]-p[a]-.5)>.14)throw Error('CENTER');}}
+async function cut(q){check();const b=bot.blockAt(q);if(!solidNames.includes(b?.name))throw Error('CUT_KIND_'+b?.name+'_'+q);const durations={wooden_pickaxe:59,stone_pickaxe:131,iron_pickaxe:250,diamond_pickaxe:1561,netherite_pickaxe:2031,golden_pickaxe:32},priority={diamond_pickaxe:0,netherite_pickaxe:0,iron_pickaxe:1,stone_pickaxe:2,wooden_pickaxe:3,golden_pickaxe:4};const pick=bot.inventory.items().filter(i=>durations[i.name]&&i.durabilityUsed<durations[i.name]-2).sort((a,b)=>priority[a.name]-priority[b.name])[0];if(!pick)throw Error('PICK_RESERVE');if(b.name.includes('diamond_ore')&&!['iron_pickaxe','diamond_pickaxe','netherite_pickaxe'].includes(pick.name))throw Error('DIAMOND_HARVEST_TOOL');await bot.equip(pick,'hand');if(Date.now()+bot.digTime(b)>hardEnd-8000)throw Error('CUT_BOUND');await bot.dig(b,true);await tick(1);if(!air(q))throw Error('CUT_ACK_'+q);cuts++;}
+async function put(q){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED_'+q+'_'+bot.blockAt(q)?.name);const it=stock();if(!it)throw Error('CAP_STOCK');const faces=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)],d=faces.find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF_'+q);await bot.equip(it,'hand');if(bot.currentWindow)bot.closeWindow(bot.currentWindow);bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));}finally{bot.setControlState('sneak',false);}await tick(2);if(!full(q))throw Error('CAP_ACK_'+q);}
+async function closure(){stop();for(let n=0;n<30&&!bot.entity.onGround;n++)await tick();const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater||Math.abs(bot.entity.position.y-p.y)>.1)throw Error('CLOSE_BODY');for(const d of dirs)for(const y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));if(!shell(p))throw Error('SHELL');global.P1U={p:p.clone(),at:Date.now()};return true;}
+try{
+ const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater)throw Error('START_BODY');await center(p);
+ const mode=global.P1UMode||'south';
+ if(mode==='entry'){
+  const p=bot.entity.position.floored();if(![-1,-2,-3,-4].every(y=>full(p.offset(0,y,0)))||!dirs.every(d=>[-3,-2,-1].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('ENTRY_ENVELOPE');for(let y=-1;y>=-3;y--){const q=p.offset(0,y,0);await cut(q);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('ENTRY_FALL');down++;}
+ }else if(mode==='down'){
+  const goalY=global.P1UGoalY||40;while(bot.entity.position.y>goalY+.1&&Date.now()<workEnd){const p=bot.entity.position.floored(),floor=p.offset(0,-1,0),next=p.offset(0,-1,0);if(!full(floor)||!full(p.offset(0,-2,0))||!dirs.every(d=>[0,1].every(y=>full(next.plus(d).offset(0,y,0)))))throw Error('DESCENT_ENVELOPE_'+floor);await cut(floor);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-next.y)>.1);n++)await tick();if(!bot.entity.onGround||!bot.entity.position.floored().equals(next)||Math.abs(bot.entity.position.y-next.y)>.1)throw Error('DOWN_SETTLE');down++;}
+ }else{
+  const d=new Vec3(...(global.P1UDir||[0,0,1]));const side=dirs.filter(v=>Math.abs(v.dot(d))<.1);const max=global.P1USteps||16;
+  while(steps<max&&Date.now()<workEnd){const p=bot.entity.position.floored(),q=p.plus(d);const envelope=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!envelope.filter(v=>!v.equals(q)&&!v.equals(q.offset(0,1,0))&&!v.equals(q.plus(d))&&!v.equals(q.plus(d).offset(0,1,0))).every(v=>full(v)&&!["sand","gravel"].includes(bot.blockAt(v).name)))throw Error('HEADING_ENVELOPE_'+q+'_'+envelope.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));
+   if(!air(q.offset(0,1,0)))await cut(q.offset(0,1,0));if(!air(q))await cut(q);await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('forward',true);try{for(let n=0;n<24&&bot.entity.position.minus(q.offset(.5,0,.5)).dot(d)<-.08;n++)await tick();}finally{stop();}await tick(2);if(!bot.entity.onGround||!bot.entity.position.floored().equals(q)||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('HEADING_BODY');steps++;}
+ }
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();let closed=false;try{closed=await closure();}catch(e){console.log('CLOSURE_FAIL',e.message);}bot.removeListener('death',death);bot.removeListener('respawn',death);bot.removeListener('end',death);console.log('U_END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,cuts,steps,down,seconds:(Date.now()-begun)/1000,issue,closed,lost,delta:bot.entity.position.distanceTo(origin),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState}));}
+
+}
+if(Math.floor(bot.entity.position.z)!==67||Math.floor(bot.entity.position.y)!==14)throw Error("N_RETURN_NOT_ACTUAL");
+{
+global.P1UMode='south';global.P1UDir=[1,0,0];global.P1USteps=1;
+// Scoped survival mining. Every operation finishes at a measured closed capsule.
+const {Vec3}=require('vec3');const begun=Date.now(),workEnd=begun+(global.P1UWorkMs||40000),hardEnd=begun+65000;let lost=false,issue=null,cuts=0,steps=0,down=0;
+const dim=bot.game.dimension,origin=bot.entity.position.clone();const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];
+const full=q=>{const b=bot.blockAt(q);if(!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'))return false;if(!['sand','gravel'].includes(b.name))return !['suspicious_sand','suspicious_gravel'].includes(b.name);for(let n=1;n<=16;n++){const below=bot.blockAt(q.offset(0,-n,0));if(!below?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'))return false;if(!['sand','gravel'].includes(below.name))return true;}return false;};
+const solidNames=['gravel','sand','stone','sandstone','dirt','grass_block','granite','diorite','andesite','cobblestone','deepslate','cobbled_deepslate','tuff','coal_ore','iron_ore','copper_ore','deepslate_iron_ore','deepslate_coal_ore','deepslate_copper_ore','diamond_ore','deepslate_diamond_ore','spruce_planks'];
+const air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);const stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','dirt','sandstone','granite','diorite','andesite','tuff','spruce_planks'].includes(i.name));
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}function death(){lost=true;stop();bot.stopDigging();}bot.on('death',death);bot.on('respawn',death);bot.on('end',death);stop();bot.pathfinder.LOSWhenPlacingBlocks=false;
+function check(){if(lost||bot.game.dimension!==dim||bot.health<12||Date.now()>hardEnd||Date.now()>1792220690000)throw Error('LIFE_TIME_HP');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+function shell(p){return full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0))))}
+async function center(p){for(const a of['x','z']){for(let n=0;n<35&&Math.abs(bot.entity.position[a]-p[a]-.5)>.05;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(p[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}if(Math.abs(bot.entity.position[a]-p[a]-.5)>.14)throw Error('CENTER');}}
+async function cut(q){check();const b=bot.blockAt(q);if(!solidNames.includes(b?.name))throw Error('CUT_KIND_'+b?.name+'_'+q);const durations={wooden_pickaxe:59,stone_pickaxe:131,iron_pickaxe:250,diamond_pickaxe:1561,netherite_pickaxe:2031,golden_pickaxe:32},priority={diamond_pickaxe:0,netherite_pickaxe:0,iron_pickaxe:1,stone_pickaxe:2,wooden_pickaxe:3,golden_pickaxe:4};const pick=bot.inventory.items().filter(i=>durations[i.name]&&i.durabilityUsed<durations[i.name]-2).sort((a,b)=>priority[a.name]-priority[b.name])[0];if(!pick)throw Error('PICK_RESERVE');if(b.name.includes('diamond_ore')&&!['iron_pickaxe','diamond_pickaxe','netherite_pickaxe'].includes(pick.name))throw Error('DIAMOND_HARVEST_TOOL');await bot.equip(pick,'hand');if(Date.now()+bot.digTime(b)>hardEnd-8000)throw Error('CUT_BOUND');await bot.dig(b,true);await tick(1);if(!air(q))throw Error('CUT_ACK_'+q);cuts++;}
+async function put(q){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED_'+q+'_'+bot.blockAt(q)?.name);const it=stock();if(!it)throw Error('CAP_STOCK');const faces=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)],d=faces.find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF_'+q);await bot.equip(it,'hand');if(bot.currentWindow)bot.closeWindow(bot.currentWindow);bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));}finally{bot.setControlState('sneak',false);}await tick(2);if(!full(q))throw Error('CAP_ACK_'+q);}
+async function closure(){stop();for(let n=0;n<30&&!bot.entity.onGround;n++)await tick();const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater||Math.abs(bot.entity.position.y-p.y)>.1)throw Error('CLOSE_BODY');for(const d of dirs)for(const y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));if(!shell(p))throw Error('SHELL');global.P1U={p:p.clone(),at:Date.now()};return true;}
+try{
+ const p=bot.entity.position.floored();if(!bot.entity.onGround||bot.entity.isInWater)throw Error('START_BODY');await center(p);
+ const mode=global.P1UMode||'south';
+ if(mode==='entry'){
+  const p=bot.entity.position.floored();if(![-1,-2,-3,-4].every(y=>full(p.offset(0,y,0)))||!dirs.every(d=>[-3,-2,-1].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('ENTRY_ENVELOPE');for(let y=-1;y>=-3;y--){const q=p.offset(0,y,0);await cut(q);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('ENTRY_FALL');down++;}
+ }else if(mode==='down'){
+  const goalY=global.P1UGoalY||40;while(bot.entity.position.y>goalY+.1&&Date.now()<workEnd){const p=bot.entity.position.floored(),floor=p.offset(0,-1,0),next=p.offset(0,-1,0);if(!full(floor)||!full(p.offset(0,-2,0))||!dirs.every(d=>[0,1].every(y=>full(next.plus(d).offset(0,y,0)))))throw Error('DESCENT_ENVELOPE_'+floor);await cut(floor);for(let n=0;n<30&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-next.y)>.1);n++)await tick();if(!bot.entity.onGround||!bot.entity.position.floored().equals(next)||Math.abs(bot.entity.position.y-next.y)>.1)throw Error('DOWN_SETTLE');down++;}
+ }else{
+  const d=new Vec3(...(global.P1UDir||[0,0,1]));const side=dirs.filter(v=>Math.abs(v.dot(d))<.1);const max=global.P1USteps||16;
+  while(steps<max&&Date.now()<workEnd){const p=bot.entity.position.floored(),q=p.plus(d);const envelope=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...side.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!envelope.filter(v=>!v.equals(q)&&!v.equals(q.offset(0,1,0))&&!v.equals(q.plus(d))&&!v.equals(q.plus(d).offset(0,1,0))).every(v=>full(v)&&!["sand","gravel"].includes(bot.blockAt(v).name)))throw Error('HEADING_ENVELOPE_'+q+'_'+envelope.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));
+   if(!air(q.offset(0,1,0)))await cut(q.offset(0,1,0));if(!air(q))await cut(q);await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('forward',true);try{for(let n=0;n<24&&bot.entity.position.minus(q.offset(.5,0,.5)).dot(d)<-.08;n++)await tick();}finally{stop();}await tick(2);if(!bot.entity.onGround||!bot.entity.position.floored().equals(q)||Math.abs(bot.entity.position.y-q.y)>.1)throw Error('HEADING_BODY');steps++;}
+ }
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();let closed=false;try{closed=await closure();}catch(e){console.log('CLOSURE_FAIL',e.message);}bot.removeListener('death',death);bot.removeListener('respawn',death);bot.removeListener('end',death);console.log('U_END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,cuts,steps,down,seconds:(Date.now()-begun)/1000,issue,closed,lost,delta:bot.entity.position.distanceTo(origin),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState}));}
+
+}
+if(Math.floor(bot.entity.position.x)!==3||Math.floor(bot.entity.position.y)!==14)throw Error("E_RETURN_NOT_ACTUAL");
+{global.P1LiftY=30;
+const{Vec3}=require('vec3'),start=bot.entity.position.clone(),self=bot.entity,world=bot.game.dimension,begin=Date.now(),goal=global.P1LiftY??Math.floor(start.y)+1;let issue=null,lost=false,up=0;
+const dirs=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)],full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),stock=()=>bot.inventory.items().find(i=>['cobblestone','cobbled_deepslate','sandstone','granite','diorite','andesite','dirt','tuff'].includes(i.name));
+const die=()=>{lost=true;bot.clearControlStates();bot.stopDigging()};bot.on('death',die);bot.on('respawn',die);bot.pathfinder.setGoal(null);bot.clearControlStates();bot.pathfinder.LOSWhenPlacingBlocks=false;function check(){if(lost||bot.entity!==self||bot.game.dimension!==world||bot.health<16||Date.now()>begin+55000)throw Error('LIFE_TIME');}async function tick(n=1){check();await bot.waitForTicks(n);check();}
+async function cap(){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(full(q))return;const it=stock(),d=dirs.find(d=>full(q.plus(d)));if(!it||!d)throw Error('CAP_DEPENDENCY');await bot.equip(it,'hand');await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3);if(!full(q))throw Error('CAP_ACK');}
+try{const cp=bot.entity.position.floored();for(const a of['x','z'])for(let k=0;k<35&&Math.abs(bot.entity.position[a]-cp[a]-.5)>.05;k++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0,1.4,a==='z'?Math.sign(cp[a]+.5-bot.entity.position[a])*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick();bot.clearControlStates();}while(bot.entity.position.y<goal-.1&&up<16){const p=bot.entity.position.floored(),q=p.offset(0,2,0);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-p.x-.5)>.16||Math.abs(bot.entity.position.z-p.z-.5)>.16||!full(p.offset(0,-1,0)))throw Error('START_BODY');if(!dirs.every(d=>[0,1,2].every(y=>full(p.plus(d).offset(0,y,0)))))throw Error('LIFT_SIDE');if(full(q)){const b=bot.blockAt(q);if(!['cobblestone','stone','sandstone','andesite','diorite','granite','dirt','spruce_planks'].includes(b.name))throw Error('ROOF_KIND_'+b.name);const pick=bot.inventory.items().find(i=>i.name==='diamond_pickaxe')||bot.inventory.items().find(i=>i.name==='iron_pickaxe')||bot.inventory.items().find(i=>i.name==='stone_pickaxe')||bot.inventory.items().find(i=>i.name.endsWith('_pickaxe'));if(!pick)throw Error('NO_PICK');await bot.equip(pick,'hand');await bot.dig(b,true);await tick(2);}if(!['air','cave_air'].includes(bot.blockAt(q)?.name))throw Error('ROOF_NOT_AIR');const m=stock();if(!m)throw Error('UP_STOCK');await bot.equip(m,'hand');await bot.lookAt(p.offset(.5,0,.5),true);bot.setControlState('jump',true);try{for(let n=0;n<20&&bot.entity.position.y<p.y+1.01;n++)await tick();console.log('UP_SEND',bot.entity.position,bot.entity.velocity);await bot._placeBlockWithOptions(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0),{forceLook:true});}finally{bot.setControlState('jump',false)}for(let n=0;n<20&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1);n++)await tick();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-p.y-1)>.1||!full(p))throw Error('UP_ACK');up++;}}
+catch(e){issue=e.message;console.log('LIFT_ISSUE',issue)}finally{bot.clearControlStates();try{await cap()}catch(e){console.log('CAP_FAILED',e.message)}bot.removeListener('death',die);bot.removeListener('respawn',die);const p=bot.entity.position.floored();console.log('LIFT_END',JSON.stringify({p:bot.entity.position,hp:bot.health,up,issue,lost,closed:full(p.offset(0,-1,0))&&full(p.offset(0,2,0))&&dirs.every(d=>[0,1].every(y=>full(p.plus(d).offset(0,y,0)))),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}
+
+}
+-- output --
+U_END {"p":{"x":2.5080978510863297,"y":14,"z":67.3},"hp":20,"food":20,"cuts":2,"steps":1,"down":0,"seconds":2.533,"issue":null,"closed":true,"lost":false,"delta":1.400068539819752,"inv":[["sand",2,null],["iron_ingot",3,null],["diamond",1,null],["raw_copper",2,null],["raw_iron",1,null],["wooden_pickaxe",1,41],["diamond_pickaxe",1,2],["andesite",10,null],["iron_pickaxe",1,69],["cobblestone",64,null],["cobblestone",17,null],["dirt",4,null],["stone_pickaxe",1,130],["crafting_table",1,null],["diorite",11,null]],"controls":{}}
+U_END {"p":{"x":3.7,"y":14,"z":67.52195084214365},"hp":20,"food":20,"cuts":2,"steps":1,"down":0,"seconds":3.059,"issue":null,"closed":true,"lost":false,"delta":1.2123914008740344,"inv":[["sand",2,null],["iron_ingot",3,null],["diamond",1,null],["raw_copper",2,null],["raw_iron",1,null],["wooden_pickaxe",1,41],["diamond_pickaxe",1,4],["andesite",8,null],["iron_pickaxe",1,69],["cobblestone",64,null],["cobblestone",18,null],["dirt",5,null],["stone_pickaxe",1,130],["crafting_table",1,null],["diorite",11,null]],"controls":{}}
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 15.166109260938216,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 16.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 17.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 18.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 19.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 20.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 21.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 22.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 23.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 24.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 25.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 26.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 27.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 28.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 29.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+UP_SEND Vec3 {
+  x: 3.4472754080113712,
+  y: 30.166109260938214,
+  z: 67.52195088129211
+} Vec3 { x: 0, y: 0.08307781780646721, z: 0 }
+LIFT_END {"p":{"x":3.4472754080113712,"y":30,"z":67.52195088129211},"hp":20,"up":16,"issue":null,"lost":false,"closed":true,"inv":[["sand",2,null],["iron_ingot",3,null],["diamond",1,null],["raw_copper",2,null],["raw_iron",1,null],["wooden_pickaxe",1,41],["diamond_pickaxe",1,5],["iron_pickaxe",1,69],["cobblestone",55,null],["cobblestone",19,null],["dirt",5,null],["stone_pickaxe",1,130],["crafting_table",1,null],["diorite",11,null]]}

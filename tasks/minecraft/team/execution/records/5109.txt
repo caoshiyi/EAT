@@ -1,0 +1,5 @@
+== #5109 2026-10-17T05:20:16 p1 role=experiment_owner iter=11 0.2 s
+console.log('DIAMOND_CHUNK_LEADS',JSON.stringify(bot.findBlocks({matching:b=>['diamond_ore','deepslate_diamond_ore'].includes(b.name),maxDistance:125,count:12})));console.log('HP',bot.health,'BODY',bot.entity.position);
+-- output --
+DIAMOND_CHUNK_LEADS [{"x":3,"y":15,"z":67},{"x":2,"y":15,"z":68},{"x":3,"y":14,"z":67},{"x":2,"y":14,"z":68},{"x":27,"y":7,"z":94},{"x":28,"y":6,"z":93},{"x":28,"y":5,"z":93},{"x":-9,"y":1,"z":54},{"x":-9,"y":1,"z":53},{"x":-8,"y":-6,"z":79},{"x":-8,"y":-7,"z":79},{"x":0,"y":-5,"z":49}]
+HP 20 BODY Vec3 { x: 14.490875313559153, y: 54, z: 76.3 }

@@ -1,0 +1,5 @@
+== #5379 2026-10-17T06:33:17 p1 role=experiment_owner iter=11 0 s
+console.log('NEAREST_COAL',JSON.stringify(bot.findBlocks({matching:b=>b.name==='coal_ore',maxDistance:18,count:6})));console.log('BODY',bot.entity.position,bot.health);
+-- output --
+NEAREST_COAL [{"x":3,"y":50,"z":88},{"x":4,"y":50,"z":87},{"x":3,"y":49,"z":89},{"x":2,"y":49,"z":90},{"x":4,"y":49,"z":88},{"x":2,"y":49,"z":89}]
+BODY Vec3 { x: 6.500619174965205, y: 56, z: 92.7 } 20

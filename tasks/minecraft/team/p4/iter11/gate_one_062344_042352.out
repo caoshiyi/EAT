@@ -1,0 +1,64 @@
+program #5348 on p4: 0.2 s
+--- output ---
+GATE_ONE_ISSUE START
+--- returned ---
+{
+ "issue": "START",
+ "opened": false,
+ "closed": true,
+ "swings": 0,
+ "before": null,
+ "after": 16,
+ "hits": [],
+ "ownHurt": [],
+ "hp0": 12.366665840148926,
+ "hp": 12.366665840148926,
+ "p": {
+  "x": 7.548400330841097,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "eye": 1.62,
+ "foe": {
+  "id": 10314,
+  "p": {
+   "x": 9.324999988079071,
+   "y": 67.10000002384186,
+   "z": 83.15099136052474
+  },
+  "hp": 16,
+  "valid": true
+ },
+ "cell": "dirt",
+ "gate": {
+  "powered": false,
+  "open": false,
+  "in_wall": false,
+  "facing": "east"
+ },
+ "own": [
+  [
+   "spruce_sapling",
+   1
+  ]
+ ],
+ "life": {
+  "started": 1792213540836,
+  "life": 1,
+  "events": [
+   [
+    "death",
+    1792214288275
+   ],
+   [
+    "respawn",
+    1792214288281,
+    "overworld"
+   ]
+  ]
+ },
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.5, 67.6, 83.7) in overworld, health 12.4/20, food 17/20, alive

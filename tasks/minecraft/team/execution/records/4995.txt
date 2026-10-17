@@ -1,0 +1,4 @@
+== #4995 2026-10-17T05:07:29 p3 role=continuity_owner iter=11 0.2 s
+const{Vec3}=require('vec3');const c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));let receipt;try{const b=c.containerItems().find(i=>i.name==='spruce_boat');if(!b)throw Error('NO_BOAT');await c.withdraw(b.type,null,1);await bot.waitForTicks(3);receipt=bot.inventory.items().some(i=>i.name==='spruce_boat')}finally{c.close()}return{boatReceipt:receipt,p:bot.entity.position,hp:bot.health};
+-- returned --
+{"boatReceipt": false, "p": {"x": 7.631753829507174, "y": 67.5625, "z": 83.7}, "hp": 20}

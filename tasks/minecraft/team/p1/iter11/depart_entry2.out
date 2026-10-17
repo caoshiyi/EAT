@@ -1,0 +1,27 @@
+program #5036 on p1: 23.5 s
+--- output ---
+DOOR_ALIGN 6.59375 Vec3 { x: 6.580160769103911, y: 67.5625, z: 83.23750012214325 }
+EXIT_ACTUAL {
+  mode: 'exit',
+  ok: true,
+  p: '(6.580160230420384, 66, 79.28110223645919)',
+  hp: 20
+}
+bounded nav
+DEPART_FAIL TARGET_NOT_ACTUAL
+DOOR_ALIGN 6.59375 Vec3 { x: 6.618005021755126, y: 66, z: 79.48014966423487 }
+CAMP_RETURN {
+  mode: 'enter',
+  ok: true,
+  p: '(6.607743085747517, 67.5625, 82.91074913630202)',
+  hp: 20
+}
+DEPART_END {"p":{"x":6.607743085747517,"y":67.5625,"z":82.91074913630202},"hp":20,"atEntry":false,"lost":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 FRONT6 EXIT now<=8s thenwood3LOG at24,66,110, return<=100s; P2 ownWest4stance untouched, no sharedwalls.
+p4: P4 actualEXIT/frontRELEASED; fieldOWN_PRIMARY_WOOD3 only, ownprimaryentryability.
+p2: P2 minimalROD ownWOOD3 nowsource19,Y64..66,Z111 (NOTP4tree24,110). FRONT6EXIT<=8s/release; leavesonlynavdig allowed/nativefloors, no fullblockrouteexcavation. 60work55ending, no oldlostkitquota.
+p2: P2 ownWOODactualEXIT/front6RELEASED
+--- p1 now: (6.6, 67.6, 82.9) in overworld, health 20/20, food 20/20, alive

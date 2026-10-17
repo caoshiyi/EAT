@@ -1,0 +1,71 @@
+program #5333 on p2: 16.3 s
+--- output ---
+DOWN_PLAN Vec3 { x: 8, y: 62, z: 78 } 39
+DOWN_ACTUAL 61 20 73
+DOWN_ACTUAL 60 20 74
+DOWN_ACTUAL 59 20 75
+DOWN_ACTUAL 58 20 76
+DOWN_ACTUAL 57 20 77
+DOWN_ACTUAL 56 20 78
+DOWN_ACTUAL 55 20 79
+DOWN_ACTUAL 54 20 80
+DOWN_ACTUAL 53 20 81
+DOWN_ACTUAL 52 20 82
+DOWN_ACTUAL 51 20 83
+DOWN_ACTUAL 50 20 84
+DOWN_ACTUAL 49 20 85
+DOWN_ACTUAL 48 20 86
+DOWN_ACTUAL 47 20 87
+DOWN_ACTUAL 46 20 88
+DOWN_ACTUAL 45 20 89
+DOWN_ACTUAL 44 20 90
+DOWN_ACTUAL 43 20 91
+DOWN_ACTUAL 42 20 92
+DOWN_ACTUAL 41 20 93
+DOWN_ACTUAL 40 20 94
+DOWN_ACTUAL 39 20 95
+RECOVERY_END_FULL true Vec3 { x: 8, y: 39, z: 78 } 20
+RECOVERY_END_FULL true Vec3 { x: 8, y: 39, z: 78 } 20
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "q": {
+  "x": 8,
+  "y": 39,
+  "z": 78
+ },
+ "p": {
+  "x": 8.494100029020807,
+  "y": 39,
+  "z": 78.49980257192517
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "cobblestone",
+   24,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   95
+  ],
+  [
+   "andesite",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 16324
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (8.5, 39, 78.5) in overworld, health 20/20, food 20/20, alive

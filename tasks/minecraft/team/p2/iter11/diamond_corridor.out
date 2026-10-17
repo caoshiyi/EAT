@@ -1,0 +1,68 @@
+program #5343 on p2: 40.1 s
+--- output ---
+CORRIDOR_ACTUAL (8, 39, 79) 20 97
+CORRIDOR_ACTUAL (7, 39, 79) 20 99
+CORRIDOR_ACTUAL (6, 39, 79) 20 101
+CORRIDOR_ACTUAL (5, 39, 79) 20 103
+CORRIDOR_ACTUAL (4, 39, 79) 20 105
+CORRIDOR_ACTUAL (3, 39, 79) 20 107
+CORRIDOR_ACTUAL (3, 39, 78) 20 109
+CORRIDOR_ACTUAL (3, 39, 77) 20 111
+CORRIDOR_ACTUAL (3, 39, 76) 20 113
+CORRIDOR_ACTUAL (3, 39, 75) 20 115
+CORRIDOR_ACTUAL (3, 39, 74) 20 117
+CORRIDOR_ACTUAL (3, 39, 73) 20 119
+CORRIDOR_ACTUAL (3, 39, 72) 20 121
+CORRIDOR_ACTUAL (3, 39, 71) 20 123
+CORRIDOR_ACTUAL (3, 39, 70) 20 125
+CORRIDOR_ISSUE CUT_KIND_copper_ore Vec3 { x: 3.5301282841185118, y: 39, z: 70.52868809037298 } 20
+RECOVERY_END_FULL true Vec3 { x: 3, y: 39, z: 70 } 20
+--- returned ---
+{
+ "issue": "CUT_KIND_copper_ore",
+ "closed": true,
+ "q": {
+  "x": 3,
+  "y": 39,
+  "z": 70
+ },
+ "p": {
+  "x": 3.5301282841185118,
+  "y": 39,
+  "z": 70.50566011934572
+ },
+ "hp": 20,
+ "food": 20,
+ "kit": [
+  [
+   "cobblestone",
+   24,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   125
+  ],
+  [
+   "andesite",
+   30,
+   null
+  ]
+ ],
+ "elapsed": 40063
+}
+--- chat since this player's previous program ---
+p1: P4 ACTUAL P1back7.268,67.56,83.692 FRONTreleasednow; 5330STEPtestfailed/LOG0, BOTHoriginalTOPslabsrestored andSTEP6,68,83AIR/20HP. You maycross; no P1field/poolwriter. HEADROOMfresh5334 provesLEAVES6,70,83 obstructstep (ceiling70→maxfeet68.2 <step68.5). P1
+p1: onechangedcase clearsactualLEAF70 afterroofcut, nofrontdoorlease.
+p4: P1 actualFRONTrelease4138 ACK. P4 bridge4south now executing; guardsSTEP6,68,83AIR andno frontpeer beforeexit. Roof/stepwritesyours untouched. Budget5min startsactualdispatch now; firstoneedgeplacement proof thenremaining andphysicalroundtrip. ShortFRONT6e
+p4: xit<=8s thenrelease.
+p4: P4 FRONT6 BRIDGE4 southapproach EXIT<=8s; gatherDIRT4 then9/8/7,67,89+6,67,90 only, no dimensionchange.
+p1: P1 actual5336+5340 raisedLOG73/74 retained2, originalTOPslabsrestored STEP AIR/20HP. NeedSTONEpick+4closingblocks forindependentLOWNether8cellprobe whileP2DIAMONDprimary. FiniteheaderconversionNOW: S6/7,69,84+E8,69,83 COFF→PLANK3, samefullcubes/materialrec
+p1: eipt; yieldsCOFF3→STONEpick. ExistingPLANK4left capstock, TABLEfromownLOG2. No Nshaft/bridge/floor/mainroof writes.
+--- p2 now: (3.5, 39, 70.5) in overworld, health 20/20, food 20/20, alive

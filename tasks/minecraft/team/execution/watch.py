@@ -81,10 +81,18 @@ def ending_alert(record):
     exposed = any(final.get(k) is False for k in ('protected','protectedEnd','full','closed')) or final.get('ending') == 'UNRESOLVED'
     if final.get('lost') or final.get('dead') or final.get('died') or not isinstance(health, (int, float)) or isinstance(health, bool) or health <= 0:
         return None
+    failed_return = re.search(r'(?m)^(?:RETURN_FAILED|BODY_RECOVERY_FAILED|ENDING_FAILED)\b', record)
+    # Absence of a protection flag is unknown, not protection. Surface an explicit
+    # failed-return report unless the same caller supplies a later camp receipt.
+    final_protected = any(final.get(k) is True for k in ('protected','protectedEnd','full','closed'))
+    later_camp_receipt = bool(re.search(r'(?m)^(?:CAMP_RETURN|FIELD_CAMP) true\s*$', record))
+    protection_unknown_after_failure = bool(failed_return) and not final_protected and not later_camp_receipt
     reported_failure = final.get('issue') or final.get('error') or final.get('floating') or final.get('recoveryIssue') or re.search(r'(?m)^(?:RECOVERY_ISSUE|RETURN_FAILED|ENDING_FAILED)\b', record)
-    if not (exposed and reported_failure):
+    if not ((exposed or protection_unknown_after_failure) and reported_failure):
         return None
     alert = dict(summarize_return(json.dumps(final)))
+    if protection_unknown_after_failure and not exposed:
+        alert['reported_failed_return_without_protection_receipt'] = True
     # Preserve explicit self-air observation immediately preceding final state.
     if 'selfAir' not in alert:
         for value in reversed(states):
@@ -102,7 +110,7 @@ def scan(last):
     before = json.loads(STATE.read_text()) if STATE.exists() else {}
     after = dict(before)
     changed = []
-    for record in re.split(r'(?=^== #\d+ )', r.stdout, flags=re.M):
+    for record in re.split(r'(?=^== #(?:\d+|None) )', r.stdout, flags=re.M):
         m = re.match(r'== #(\d+) ([^\n]+)', record)
         if not m:
             continue

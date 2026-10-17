@@ -1,0 +1,4 @@
+== #5024 2026-10-17T05:09:59 p3 role=continuity_owner iter=11 0 s
+return{p:bot.entity.position,time:bot.time.timeOfDay,near:Object.values(bot.entities).filter(e=>['spider','zombie','skeleton','creeper'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<24).map(e=>[e.id,e.name,e.position,e.metadata?.[9]])};
+-- returned --
+{"p": {"x": 6.4698936628197, "y": 67, "z": 82.3}, "time": 5123, "near": [[108, "zombie", {"x": 10.71366306836411, "y": 60, "z": 97.48699684788923}, 20]]}

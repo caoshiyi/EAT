@@ -1,0 +1,245 @@
+== #5003 2026-10-17T05:08:11 p1 role=experiment_owner iter=11 0 s
+const{Vec3}=require('vec3');console.log('ENTRY_TOPS',[-2,0,2,4].flatMap(x=>[76,78,80,90,94,98].map(z=>({x,z,blocks:[60,61,62,63,64,65,66].map(y=>[y,bot.blockAt(new Vec3(x,y,z))?.name])}))));
+-- output --
+ENTRY_TOPS [
+  {
+    x: -2,
+    z: 76,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: -2,
+    z: 78,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: -2,
+    z: 80,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: -2,
+    z: 90,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: -2,
+    z: 94,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: -2,
+    z: 98,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 76,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 78,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 80,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 90,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 94,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 0,
+    z: 98,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 76,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 78,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 80,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 90,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 94,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 2,
+    z: 98,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 76,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 78,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 80,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 90,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 94,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  },
+  {
+    x: 4,
+    z: 98,
+    blocks: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ]
+  }
+]

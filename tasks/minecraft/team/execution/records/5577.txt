@@ -1,0 +1,4 @@
+== #5577 2026-10-17T07:02:13 p1 role=experiment_owner iter=11 0.6 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.lookAt(new Vec3(6.5,68.4,83.5),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);try{for(let n=0;n<30&&bot.entity.position.z<83.25;n++)await bot.waitForTicks(1);}finally{bot.clearControlStates();}console.log('BACKLEFT',bot.entity.position,bot.health);bot.chat('P4 actualP1backLEFT6.5,67,83.26 frontCLEARNOW; right7,67,81 AIR confirmed5576 whileleft6doorclosed. P4ownsRIGHTcaprepairBANKSS7, P1no capwriter. LoanIRON207recipientactualverified5576; critical10OBS/DIA0/STEEL0 intact.');
+-- output --
+BACKLEFT Vec3 { x: 6.500000076339715, y: 67.5625, z: 83.26399995300335 } 20

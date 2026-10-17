@@ -1,0 +1,37 @@
+== #5513 2026-10-17T06:55:08 p1 role=experiment_owner iter=11 0.5 s
+const{Vec3}=require('vec3');let c;try{c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));console.log('BEFORE',c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]));for(const n of['furnace','crafting_table','sand','gravel','sandstone','stick']){let i=bot.inventory.items().find(i=>i.name===n);if(i)await c.deposit(i.type,null,i.count);}const p=c.containerItems().find(i=>i.name==='diamond_pickaxe');if(p)await c.withdraw(p.type,null,1);console.log('AFTER',c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]));}finally{if(c)c.close();bot.clearControlStates();}console.log('INV',bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]));
+-- output --
+BEFORE [
+  [ 'stick', 2, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'diamond_pickaxe', 1, 0 ],
+  [ 'obsidian', 10, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 3, null ],
+  [ 'arrow', 1, null ]
+]
+AFTER [
+  [ 'stick', 3, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'obsidian', 10, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 3, null ],
+  [ 'furnace', 1, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'sand', 8, null ],
+  [ 'arrow', 1, null ],
+  [ 'gravel', 6, null ],
+  [ 'sandstone', 7, null ]
+]
+INV [
+  [ 'torch', 4, null ],
+  [ 'diamond_pickaxe', 1, 0 ],
+  [ 'flint_and_steel', 1, 0 ],
+  [ 'cobblestone', 14, null ],
+  [ 'stone_pickaxe', 1, 130 ],
+  [ 'stone_pickaxe', 1, 23 ],
+  [ 'dirt', 8, null ],
+  [ 'diorite', 5, null ]
+]

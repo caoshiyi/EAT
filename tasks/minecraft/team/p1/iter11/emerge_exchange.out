@@ -1,0 +1,23 @@
+program #5182 on p1: 13.3 s
+--- output ---
+COLLECT p1 172 5434
+SURFACE_ACTUAL Vec3 { x: 8.48126752593313, y: 65, z: 78.51873115495704 } 20 PLANK 1
+FRONT_ACTUAL Vec3 { x: 6.5, y: 66.5, z: 80.5 }
+FRAME_ACTUAL Vec3 { x: 6.5000001957426115, y: 67, z: 81.79149879611148 }
+BANK_NOW [
+  [ 'spruce_planks', 1 ],
+  [ 'dirt', 1 ],
+  [ 'flint_and_steel', 1 ],
+  [ 'gold_ingot', 1 ],
+  [ 'gold_nugget', 6 ],
+  [ 'ender_pearl', 3 ],
+  [ 'arrow', 1 ]
+]
+STICK_ACTUAL 4
+TRANSFER_END {"p":{"x":8.652422638668655,"y":65,"z":78.50595625440253},"hp":20,"issue":null,"lost":false,"atShaft":true,"gotOther":false,"inv":[["wooden_pickaxe",1,16],["stick",4,null],["sand",2,null],["crafting_table",1,null],["cobblestone",14,null],["dirt",1,null],["stone_pickaxe",1,123],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]]}
+U_END {"p":{"x":8.463944296525089,"y":62,"z":78.50595628376388},"hp":20,"food":20,"cuts":3,"steps":0,"down":3,"seconds":3.12,"issue":null,"closed":true,"lost":false,"delta":3.0059148500011084,"inv":[["wooden_pickaxe",1,16],["stick",4,null],["sand",2,null],["crafting_table",1,null],["cobblestone",15,null],["dirt",1,null],["stone_pickaxe",1,126],["diorite",12,null],["raw_copper",2,null],["sandstone",1,null]],"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (8.5, 62, 78.5) in overworld, health 20/20, food 20/20, alive

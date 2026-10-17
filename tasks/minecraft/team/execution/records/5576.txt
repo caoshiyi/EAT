@@ -1,0 +1,21 @@
+== #5576 2026-10-17T07:02:06 p1 role=experiment_owner iter=11 0.3 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const p=bot.entity.position.clone();let c;try{c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));console.log('BANK_ACTUAL',c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]));}finally{if(c)c.close();}console.log('BODY_ACTUAL',JSON.stringify({world:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,onGround:bot.entity.onGround,inventory:bot.inventory.items().map(i=>[i.name,i.count]),doors:[6,7].map(x=>[x,bot.blockAt(new Vec3(x,67,81))?.getProperties()]),nearInside:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.x>5&&e.position.x<9&&e.position.z>81&&e.position.z<85&&e.position.y>66).map(e=>[e.name,e.position]),controls:bot.controlState}));
+-- output --
+BANK_ACTUAL [
+  [ 'stick', 3, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'obsidian', 10, null ],
+  [ 'diamond_pickaxe', 1, 0 ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 3, null ],
+  [ 'furnace', 1, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'sand', 8, null ],
+  [ 'arrow', 1, null ],
+  [ 'gravel', 6, null ],
+  [ 'sandstone', 7, null ],
+  [ 'flint_and_steel', 1, 0 ],
+  [ 'iron_pickaxe', 1, 207 ]
+]
+BODY_ACTUAL {"world":"overworld","p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"onGround":true,"inventory":[],"doors":[[6,{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"north"}],[7,{}]],"nearInside":[["spider",{"x":7.101690707126052,"y":68.10019531846046,"z":81.1125031755349}]],"controls":{}}
