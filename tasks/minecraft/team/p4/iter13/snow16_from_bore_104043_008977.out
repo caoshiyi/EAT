@@ -1,0 +1,53 @@
+program #6691 on p4: 20.2 s
+--- output ---
+SNOW16_CASE NO_QUALIFIED_SNOW_ROUTE Vec3 { x: 2.554361173567783, y: 65, z: 78.55764071450481 }
+--- returned ---
+{
+ "issue": "NO_QUALIFIED_SNOW_ROUTE",
+ "endIssue": null,
+ "emerged": true,
+ "harvest": [],
+ "buried": false,
+ "fullPocket": false,
+ "protectedEnd": true,
+ "at": "2026-10-17T10:41:03.294Z",
+ "p": {
+  "x": 6.589861852013547,
+  "y": 67.5625,
+  "z": 83.51306208967102
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   4
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

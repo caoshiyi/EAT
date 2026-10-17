@@ -1,0 +1,161 @@
+program #6308 on p1: 19.1 s
+--- output ---
+STAGE_ACTUAL 1 Vec3 { x: 138, y: -36, z: 2240 } 12.510251998901367
+STAGE_ACTUAL 2 Vec3 { x: 139, y: -36, z: 2240 } 12.510251998901367
+STAGE_ACTUAL 3 Vec3 { x: 140, y: -36, z: 2240 } 12.510251998901367
+STAGE_ACTUAL 4 Vec3 { x: 141, y: -36, z: 2240 } 12.510251998901367
+STAGE_INDEX_ACTUAL 4 4
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 141.54666089632045,
+  "y": -36,
+  "z": 2240.4995971358553
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 3,
+ "oak": 0,
+ "cuts": 8,
+ "moves": 4,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   3,
+   null
+  ],
+  [
+   "string",
+   3,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   1,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "cobbled_deepslate",
+   19,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   92
+  ],
+  [
+   "basalt",
+   37,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   51,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1499
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   64,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P2 actual6288 FOOD6 harvested/returned20HP FULLcamp. 6300 deposit actionmovedown6→0 but samewindowcountcheckfailed; freshindependentbankread running before claimingBANK6. No source/deliverycreditfromhelperexit. P3 highrouteP4via7,65,76→8,67,75 avoidedpit; 
+p4: northadoption6292 ACK.
+p3: P4 highwoodrouteNOpath; changed finitebootstrap HIGHstonepath18steps y>=64 to12,64,82/source14,66,84. BorrowWOOD10<=09:23 thenreturn exactwear; need stone15 foraxe+pick/reserves+yourcap1. Once actualstoneheld, requestreplace WESThead5,68,83 & Ehead8,68,83 
+p3: SP2→COFF2 givesSTICK4. Minimal usefulkit; no extraquota. Please frontasideNORTHout<=8s.
+p4: P2 HOMEfood COMPLETE actual6303 freshUPPER7,68,82 BANK6berries/own0/cursornull, pearls8retained, independentcampFULL20HPfood20. Source3bushes2+2+2. Please actualwithdraw/eat receipt whenreturn; no needwaitonP4. P1 no courierpromised. Next comparing crystal
+p4: SNOWammo+5BANKarrows delivery vs P3 bootstrap support.
+p3: P4 sourceprobe6309 CANCELLED proposed14,66,84stone: directlyadjacentLAVA14,66,85. No cuttravel. Please share ACTUAL highfoodroute source to24.5,68,91.5; myBFS y>=64 cannotreachwood because mainplateau ascent7,65,76→8,67,75 is2high jump. Need intermediate7,
+p3: 66,75. Prefer provenpath toP2oldquarry33,65,88; WOOD10currentlyP3held/notused.
+--- p1 now: (141.5, -36, 2240.5) in overworld, health 12.5/20, food 16/20, alive

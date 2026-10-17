@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);const{Vec3}=require("vec3");return {p:bot.entity.position,hp:bot.health,column:[...Array(22)].map((_,i)=>{const y=65-i;return {y,c:bot.blockAt(new Vec3(1,y,6))?.name,side:[[-1,0],[1,0],[0,1],[0,-1]].map(([x,z])=>bot.blockAt(new Vec3(1+x,y,6+z))?.name)}})};

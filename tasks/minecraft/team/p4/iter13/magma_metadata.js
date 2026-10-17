@@ -1,0 +1,1 @@
+const e=bot.entities[99];return e&&{id:e.id,name:e.name,p:e.position,height:e.height,width:e.width,keys:Object.keys(e),metaOwn:Reflect.ownKeys(e.metadata||{}).map(k=>[String(k),e.metadata[k]]),attributes:e.attributes,metadata:e.metadata};

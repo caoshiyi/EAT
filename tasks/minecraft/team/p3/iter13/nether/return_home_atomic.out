@@ -1,0 +1,17 @@
+program #6728 on p3: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p3-program-6728.js:18
+try{const plan=global.P3LowerRoute9;if(!plan||!home.equals(V(plan.origin))||!shell(home)||health<18||!bot.inventory.items().some(i=>i.name==='iron_sword'&&i.durabilityUsed<230))throw Error('START');const endpoint=V([1, 65, 4]);if(!shell(endpoint)||![64,67].every(y=>f(bot.blockAt(new Vec3(1,y,5))))throw Error('WHOLE_TWO_STEP_PRE');if(!f(bot.blockAt(endpoint.offset(0,-1,0)))||!f(bot.blockAt(endpoint.offset(0,2,0)))||held()<2)throw Error('END_OR_STOCK_CHANGED');await bot.equip(bot.inventory.items().find(i=>i.name==='iron_sword'),'hand');await tick(14);for(let a of plan.path){check();const q=V(a),p=bot.entity.position.floored();await engageNearby();if(threat(q))throw Error('THREAT_'+threat(q).name);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');let cs=[q.offset(0,1,0),q];if(q.y>p.y)cs.unshift(p.offset(0,2,0));if(q.y<p.y)cs.unshift(q.offset(0,2,0));const removing=new Set(cs.map(c=>c.toString())),needNow=faces(q).filter(c=>!f(bot.blockAt(c))||removing.has(c.toString())).length,extraNow=[[1,0],[-1,0],[0,1],[0,-1]].filter(([x,z])=>!f(bot.blockAt(q.offset(x,0,z)))&&!f(bot.blockAt(q.offset(x,-1,z)))).length+((!f(bot.blockAt(q.offset(0,2,0)))||removing.has(q.offset(0,2,0).toString()))&&!f(bot.blockAt(q.offset(1,2,0)))?1:0);if(!(q.x===1&&q.y===65&&q.z===5)&&held()<needNow+extraNow)throw Error('NEXT_CELL_CLOSURE_STOCK_'+needNow+'_'+extraNow+'_'+held());for(let c of cs){await cut(c);check();}if(threat(q))throw Error('THREAT_AFTER_CUT');await move(q);walked.push(a);if(a[0]===-47&&a[2]===71){const sr=Date.now()+2200;while(held()<5&&Date.now()<sr)await tick(2);if(held()<5)throw Error('LONG_LEG_ACTUAL_STOCK5');console.log('ALL_FIVE_END_OR_REVERSE_CAPS',held());await bot.equip(bot.inventory.items().find(i=>i.name==='iron_sword'),'hand');await tick(14);}console.log('ACTUAL',a.join(','),Date.now()-began);}
+                                                                                                                                                                                                                                                                                                          ^^^^^
+
+SyntaxError: Unexpected token 'throw'
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:383:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p1: P1 actual6717 returnedDEST OW163.500,-26,2232.566 FULL20HP/all7off; portal6active/transitverified. Currentnextlibrary descent/nativeframe route, ARROW5/EndBED1 retained, noEYE/Rod/PEARL. Sourcepacket9BLACK/2IRONswords/TABLE/21caps/OAK/STICK/GOLD allthreead
+p1: opted; wholecourier actual09:34→10:47 greatlyexceeded20-25estimate. ContinuefiniteROD+PEARL/noP1wait.
+--- p3 now: (1.5, 66, 6.5) in the_nether, health 20/20, food 20/20, alive

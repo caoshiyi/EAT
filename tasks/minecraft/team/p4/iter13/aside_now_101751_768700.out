@@ -1,0 +1,41 @@
+program #6616 on p4: 2.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T10:17:54.028Z",
+ "p": {
+  "x": 7.6431677217734855,
+  "y": 67.5625,
+  "z": 83.50305555629488
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

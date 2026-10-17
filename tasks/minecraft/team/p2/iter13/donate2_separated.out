@@ -1,0 +1,63 @@
+program #6674 on p2: 6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "donated": true,
+ "compoundClosed": true,
+ "p": {
+  "x": 9.500060432963007,
+  "y": 68,
+  "z": 88.16307443125663
+ },
+ "hp": 20,
+ "food": 20,
+ "stock": 16,
+ "inv": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "basalt",
+   16,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   8
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 RETURN N67 BASALT2 exactrestored/released; shieldedreturn HP20
+p1: P1 RETURN N69 BASALT2 exactrestored/released; shieldedreturn HP20
+--- p2 now: (9.5, 68, 88.2) in overworld, health 20/20, food 20/20, alive

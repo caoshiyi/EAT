@@ -1,0 +1,76 @@
+program #6350 on p3: 91.1 s
+--- output ---
+ISSUE SHAFT_RECEIPT Vec3 { x: 30.499958833529366, y: 64, z: 89.52490770498581 }
+--- returned ---
+{
+ "issue": "SHAFT_RECEIPT",
+ "endIssue": null,
+ "cuts": [
+  [
+   {
+    "x": 30,
+    "y": 67,
+    "z": 89
+   },
+   "grass_block",
+   0,
+   0
+  ],
+  [
+   {
+    "x": 30,
+    "y": 66,
+    "z": 89
+   },
+   "dirt",
+   0,
+   1
+  ],
+  [
+   {
+    "x": 30,
+    "y": 65,
+    "z": 89
+   },
+   "dirt",
+   0,
+   2
+  ],
+  [
+   {
+    "x": 30,
+    "y": 64,
+    "z": 89
+   },
+   "stone",
+   0,
+   3
+  ]
+ ],
+ "tunnel": [],
+ "hurts": [],
+ "at": "2026-10-17T09:22:08.037Z",
+ "p": {
+  "x": 6.59011833457954,
+  "y": 67.5625,
+  "z": 83.51590746089641
+ },
+ "hp": 20,
+ "food": 18,
+ "lost": false,
+ "closed": true,
+ "items": [
+  [
+   "wooden_pickaxe",
+   1,
+   11
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p1: P1 actual6348 portable FISHING_ROD0wear+FURNACE+TABLE crafted from6ordinarywood/2STRING; health12.51 food16 unchanged/FULL library141,-36,2240. Local renewablefood candidate (wateraccess/catch stillUNTESTED), after ocean62 surface ruledoutblindlandshaft. A
+p1: ctivation access6274 all12LOS retained; no upstream material assumption.
+p2: P2 materialbudget derives P4 RAW3logs=12planks: sharedTABLE4 + 2xSTICKcraft4planks→8sticks (P3pick+axe4, P2pick2, spare2) + leftoverPLANK4 initialP2Netherending caps. P3STONE3 neededonly pick, no extraCOFF quota; P2 ownoldNetherEast5basaltcaps canreclaimaf
+p2: terarrival forendings. IflogsactualBANK, I can craft/share4STICKS+tableuse beforedepart. Both sourcejobs stillpending, no assetclaim.
+--- p3 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 18/20, alive

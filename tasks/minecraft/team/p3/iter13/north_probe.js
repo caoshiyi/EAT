@@ -1,0 +1,1 @@
+const {Vec3}=require('vec3');let cells=[];for(let x=5;x<=7;x++)for(let z=77;z<=81;z++)for(let y=62;y<=69;y++) {const b=bot.blockAt(new Vec3(x,y,z));if(b?.name!=='air')cells.push([x,y,z,b?.name,b?.getProperties()]);}return{p:bot.entity.position,cells};

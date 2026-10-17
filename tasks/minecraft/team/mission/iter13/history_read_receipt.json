@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-17T09:53:26.094248+00:00",
+  "inherited_history_character_boundary": 592978,
+  "prefix_sha256": "3a36bcd8f38a3172c9af55879b4a59ecd6699016fd853f1b77197eeec8052db8",
+  "method": "Initial full-file tool read was truncated; explicit contiguous slices through inherited boundary, with central overlap rereads for earlier 60000-character outputs. Smaller 35000/24000-character returns were inspected.",
+  "overlap_ranges": [
+    [
+      0,
+      16000
+    ],
+    [
+      34000,
+      58000
+    ],
+    [
+      94000,
+      118000
+    ],
+    [
+      154000,
+      178000
+    ],
+    [
+      214000,
+      238000
+    ]
+  ],
+  "limitation": "Completion occurred after coordination began; do not claim clean full-memory-before-work sequencing. Full program.md was read before work."
+}

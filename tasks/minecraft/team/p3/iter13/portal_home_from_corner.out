@@ -1,0 +1,38 @@
+program #6699 on p3: 3.7 s
+--- output ---
+ISSUE TRANSIT_CAPS6
+--- returned ---
+{
+ "issue": "TRANSIT_CAPS6",
+ "arrived": false,
+ "closed": true,
+ "phase": "OW_RECOVERY",
+ "dim": "overworld",
+ "p": {
+  "x": 6.5023806234634,
+  "y": 68,
+  "z": 89.43831746969893
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   9
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 68, 89.4) in overworld, health 20/20, food 20/20, alive

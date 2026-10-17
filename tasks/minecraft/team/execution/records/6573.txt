@@ -1,0 +1,4 @@
+== #6573 2026-10-17T10:05:46 p1 role=experiment_owner iter=13 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();return{p:bot.entity.position,hp:bot.health,cells:[[2,64,4],[2,65,4],[2,66,4],[3,64,4],[3,65,4],[3,66,4],[3,64,3],[3,65,3],[3,66,3]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name]),near:Object.values(bot.entities).filter(e=>['piglin','hoglin','magma_cube','blaze'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<10).map(e=>[e.id,e.name,e.position])};
+-- returned --
+{"p": {"x": 1.49730888512802, "y": 65, "z": 4.525406603294141}, "hp": 20, "cells": [[[2, 64, 4], "basalt"], [[2, 65, 4], "basalt"], [[2, 66, 4], "basalt"], [[3, 64, 4], "air"], [[3, 65, 4], "air"], [[3, 66, 4], "air"], [[3, 64, 3], "obsidian"], [[3, 65, 3], "nether_portal"], [[3, 66, 3], "nether_portal"]], "near": []}

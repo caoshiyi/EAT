@@ -1,0 +1,98 @@
+program #6864 on p2: 17.1 s
+--- output ---
+ACCESS_ISSUE DROP_SIDE Vec3 { x: -205.48089808228673, y: 60, z: -429.4999716424894 }
+END_FAIL END_NEED_9_HAVE_8
+--- returned ---
+{
+ "issue": "DROP_SIDE",
+ "closed": false,
+ "p": {
+  "x": -205.48406479001207,
+  "y": 60,
+  "z": -429.49997163622567
+ },
+ "hp": 20,
+ "food": 20,
+ "stock": 8,
+ "inv": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "shield",
+   1,
+   0
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   125
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   71
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "nether_bricks",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 bank6858 independentreceipt Snow11+SAND14+PEARL8+BERRY4/cursorNULL/ownonlyshovel35, CAMPaside6.3866,67,82.4237 FULL20. Sand14GRAVITY forpillars/fallingmobcase, NOTunsupportedroof. If P3actualendpointneedsfullroofcaps afterreceipt: Snow11 canordinary2x2c
+p4: raft2SnowBlocks from8 (leaves3ammo), notnewmaterialtrip/quota. No P4worldwriter/dependency.
+--- p2 now: (-205.5, 60, -429.5) in the_nether, health 20/20, food 20/20, alive

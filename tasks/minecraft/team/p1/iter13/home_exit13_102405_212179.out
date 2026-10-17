@@ -1,0 +1,186 @@
+program #6642 on p1: 8 s
+--- output ---
+ACTUAL 1,65,5 5468
+ACTUAL 1,66,6 6674
+SHARED_EXACT_BLACK_TABLE_BASALT
+--- returned ---
+{
+ "caller": "iter13_p1_home_exit",
+ "entityId": 165,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 1.4988041861392831,
+  "y": 66,
+  "z": 6.464707191578269
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   1,
+   65,
+   5
+  ],
+  [
+   1,
+   66,
+   6
+  ]
+ ],
+ "elapsed": 8025,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   44,
+   null
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   96
+  ],
+  [
+   "basalt",
+   31,
+   null
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   14
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "blackstone",
+   16,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 formalE2ACK needed NOW toreleasecriticalP2/P3traffic: P3 DIRECTOUT<=45s, cutactual8,68,83DIRT+8,69,83BASALT; FOOT8,67COFFuntouched; actualcrouch1.5 tested6621/6577; clearOWNinternal9,68/69,83caps (P1lease5049), enterFULLhall83, exactfreshrecap ORBASALT2
+p3: FULLfallbackauthorized. HELD6/STONE0 retained. P1body85clear; P2FRONT; yourSNOW independent. No separateR/T duplicatecase, thresholdsnapduringOUT. PleaseACK thissamefootprint soP3executes immediately.
+p2: P3 yourE2ACK5089 READ, goactualOUT now; P2FRONTclear. P4 P2willFOLLOW SAMEacknowledgedDIRT68/BASALT69 E2+FULLBASALTfallback afterP3>=3cellsSOUTH/reclosed83 (<=30s, FOOTuntouched), thenFULLhallpod; no overlap/no waitoutside. ConditionalP2writerlease request
+p2: edNOW so no latercoordinationstall. P2caps14/STONE1/IRON24/HP20; coldmovement6621alreadyPASS. P2directRODprimarydepartingimmediatelyaftertraffic.
+p2: P3 FORMALP4ACKALREADYEXISTS #5089 at10:22:57: "P3 ACK E2DIRT8,68,83+BASALT8,69,83 <=30s, FOOTCOFF67retained ... FULLBASALTfallbackauthorized"; #5090 TORCHpreserve/no writes. YourlatestrequestcrossedACK. P1internalBODYlease5049 alreadycovers9,68/69,83. Youh
+p2: aveauthorization; execute<=30s OUT/sourcepostconditions NOW, no additionalR/T/permissionneeded. P2stillFRONT.
+--- p1 now: (1.5, 66, 6.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,4 @@
+== #6763 2026-10-17T10:55:36 p4 role=integration_operator iter=13 0 s
+return{at:new Date().toISOString(),own:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<8).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count]),p:bot.entity.position,hp:bot.health};
+-- returned --
+{"at": "2026-10-17T10:55:36.638Z", "own": [["wooden_shovel", 1], ["sand", 4]], "items": [[19322, {"x": 4.477276012029069, "y": 65, "z": 76.66250117428743}, "snowball", 4]], "p": {"x": 4.582301363684132, "y": 63, "z": 79.50005770184377}, "hp": 20}

@@ -1,0 +1,402 @@
+program #6666 on p1: 21 s
+--- output ---
+ACTUAL -34,57,47 3192
+ACTUAL -35,57,47 3743
+ACTUAL -36,57,47 4194
+ACTUAL -37,58,47 4798
+ACTUAL -37,58,48 5300
+ACTUAL -37,59,49 5901
+ACTUAL -37,59,50 6402
+ACTUAL -38,59,50 6903
+ACTUAL -39,58,50 7604
+ACTUAL -39,58,51 8105
+ACTUAL -40,58,51 8656
+ACTUAL -41,58,51 9156
+ACTUAL -41,58,52 9657
+ACTUAL -42,57,52 10357
+ACTUAL -42,56,53 11007
+ACTUAL -43,56,53 11507
+ACTUAL -43,56,54 12056
+ACTUAL -44,56,54 12557
+ACTUAL -45,56,54 13109
+ACTUAL -45,57,55 13709
+ACTUAL -45,58,56 14310
+ACTUAL -45,59,57 15110
+ACTUAL -46,59,57 15610
+ACTUAL -47,59,57 16161
+ACTUAL -47,59,58 16662
+ACTUAL -47,59,59 17212
+ACTUAL -47,59,60 17713
+ACTUAL -47,59,61 18267
+ISSUE THREAT_ghast actual Vec3 { x: -46.50035081040669, y: 59, z: 61.48980485599029 }
+HELD_RECOVERY_SUB Vec3 { x: -46, y: 59, z: 61 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -46, y: 60, z: 61 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -48, y: 59, z: 61 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -48, y: 60, z: 61 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 59, z: 62 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 60, z: 62 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 59, z: 60 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 60, z: 60 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -46, y: 61, z: 61 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 61, z: 61 } dirt basalt
+--- returned ---
+{
+ "caller": "iter13_p1_upper",
+ "entityId": 165,
+ "threatTrace": [
+  {
+   "at": 1792233220947,
+   "id": 14849,
+   "name": "ghast",
+   "p": {
+    "x": -21.5,
+    "y": 68,
+    "z": 48.5
+   },
+   "hp": 10,
+   "width": 4,
+   "own": {
+    "x": -46.50035081040669,
+    "y": 59,
+    "z": 61.48980485599029
+   },
+   "next": {
+    "x": -47,
+    "y": 59,
+    "z": 62
+   },
+   "onGround": true
+  },
+  {
+   "at": 1792233220948,
+   "id": 14849,
+   "name": "ghast",
+   "p": {
+    "x": -21.5,
+    "y": 68,
+    "z": 48.5
+   },
+   "hp": 10,
+   "width": 4,
+   "own": {
+    "x": -46.50035081040669,
+    "y": 59,
+    "z": 61.48980485599029
+   },
+   "next": {
+    "x": -47,
+    "y": 59,
+    "z": 62
+   },
+   "onGround": true
+  }
+ ],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -46.50035081040669,
+  "y": 59,
+  "z": 61.51019255154202
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "THREAT_ghast",
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -34,
+   57,
+   47
+  ],
+  [
+   -35,
+   57,
+   47
+  ],
+  [
+   -36,
+   57,
+   47
+  ],
+  [
+   -37,
+   58,
+   47
+  ],
+  [
+   -37,
+   58,
+   48
+  ],
+  [
+   -37,
+   59,
+   49
+  ],
+  [
+   -37,
+   59,
+   50
+  ],
+  [
+   -38,
+   59,
+   50
+  ],
+  [
+   -39,
+   58,
+   50
+  ],
+  [
+   -39,
+   58,
+   51
+  ],
+  [
+   -40,
+   58,
+   51
+  ],
+  [
+   -41,
+   58,
+   51
+  ],
+  [
+   -41,
+   58,
+   52
+  ],
+  [
+   -42,
+   57,
+   52
+  ],
+  [
+   -42,
+   56,
+   53
+  ],
+  [
+   -43,
+   56,
+   53
+  ],
+  [
+   -43,
+   56,
+   54
+  ],
+  [
+   -44,
+   56,
+   54
+  ],
+  [
+   -45,
+   56,
+   54
+  ],
+  [
+   -45,
+   57,
+   55
+  ],
+  [
+   -45,
+   58,
+   56
+  ],
+  [
+   -45,
+   59,
+   57
+  ],
+  [
+   -46,
+   59,
+   57
+  ],
+  [
+   -47,
+   59,
+   57
+  ],
+  [
+   -47,
+   59,
+   58
+  ],
+  [
+   -47,
+   59,
+   59
+  ],
+  [
+   -47,
+   59,
+   60
+  ],
+  [
+   -47,
+   59,
+   61
+  ]
+ ],
+ "elapsed": 21023,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   44,
+   null
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   97
+  ],
+  [
+   "basalt",
+   14,
+   null
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   15
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   5
+  ],
+  [
+   "blackstone",
+   13,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P2 5099conditionalE2AUTHORIZATION remainsvalid; P3actual6659 now89/root83FULL meets>=3cellsSouth/release. ExecuteNOW, no furtherP4permission needed. GeneralinsidehallCOOCCUPANCY allowed ifcapbboxnonoverlap; sourcepickupguardlocalpolicy neednotblockwhenHELD
+p4: 14 guaranteesFULLBASALTfallback. No otherwriter/no ownershipbypass. P4privateborefullysafe/independent.
+p3: P2 current6659 P3FULLportalhall89 CAP2 afterclosingend4+restoring84two. NeedfiniteCAP2hand-off beforeOWLtransit: yourroute mines84two+88two/recloses88two, shouldretain16IFactualreceipt; donate2 ONLYifactual>=16 soyoukeep14. P3receiverREADY9.5,68,89.5 FULL2
+p3: 0, source2→recipient4, thenconnector/portalcapreclaim leavesNative>=6. Meet/toss2 towardme from88<=15s, no outsidequeue/no newproduction; ifnotavailable I cancoldreclaimalternateowncaps. Need actualowner16 beforetransfer.
+--- p1 now: (-46.5, 59, 61.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,112 @@
+program #6595 on p3: 1.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "trace": [
+  {
+   "kind": "raw",
+   "name": "blackstone",
+   "count": 3,
+   "own": 0
+  },
+  {
+   "kind": "raw",
+   "name": "stick",
+   "count": 2,
+   "own": 0
+  },
+  {
+   "kind": "raw",
+   "name": "basalt",
+   "count": 6,
+   "own": 0
+  },
+  {
+   "kind": "exact",
+   "old": {
+    "name": "iron_sword",
+    "count": 1,
+    "wear": 46,
+    "slot": 17
+   },
+   "dest": {
+    "name": "iron_sword",
+    "count": 1,
+    "wear": 46,
+    "slot": 30
+   },
+   "cursor": null
+  },
+  {
+   "kind": "adopted",
+   "own": [
+    {
+     "name": "stone_pickaxe",
+     "count": 1,
+     "wear": 0,
+     "slot": 9
+    },
+    {
+     "name": "basalt",
+     "count": 6,
+     "wear": null,
+     "slot": 11
+    },
+    {
+     "name": "iron_sword",
+     "count": 1,
+     "wear": 46,
+     "slot": 12
+    }
+   ]
+  }
+ ],
+ "hp": 20,
+ "p": {
+  "x": 6.31116483570995,
+  "y": 67.5625,
+  "z": 83.51324023086383
+ },
+ "own": [
+  {
+   "name": "stone_pickaxe",
+   "count": 1,
+   "wear": 0,
+   "slot": 9
+  },
+  {
+   "name": "basalt",
+   "count": 6,
+   "wear": null,
+   "slot": 11
+  },
+  {
+   "name": "iron_sword",
+   "count": 1,
+   "wear": 46,
+   "slot": 12
+  }
+ ],
+ "grid": [
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P1/P4 halltransitpreflight: FULL-percell/backfill mayleaveBASALT internalBODY9,Y68/69,z83..88, so P2/P3mustMINEthoseownedinternalcaps, notinheritall-AIRwalk. Need post-buildlease preservingOUTERfloors/walls/roof whileclearinternalforusablecorridor. PortalP
+p2: LANES6/7,Y68..70,z91 ACTIVE6503: NEVERcap/replaceportal asgenericFULLending; closeOWNinternal6,Y68/69,z90 frominside6,68,89 ifneeded. ColdtestafterrealpacketusesINDOORbase6,67,82 AIR underTOPslab69.5, no furtherEsourceborrow.
+--- p3 now: (6.3, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

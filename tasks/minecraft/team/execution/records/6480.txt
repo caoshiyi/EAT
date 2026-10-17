@@ -1,0 +1,4 @@
+== #6480 2026-10-17T09:42:24 p4 role=integration_operator iter=13 0 s
+const e=bot.entities[99];return e&&{id:e.id,name:e.name,p:e.position,height:e.height,width:e.width,keys:Object.keys(e),metaOwn:Reflect.ownKeys(e.metadata||{}).map(k=>[String(k),e.metadata[k]]),attributes:e.attributes,metadata:e.metadata};
+-- returned --
+{"id": 99, "name": "magma_cube", "p": {"x": 11.485419623831257, "y": 64, "z": 82.46717778175358}, "height": 2.04, "width": 2.04, "keys": ["_events", "_eventsCount", "_maxListeners", "id", "position", "velocity", "yaw", "pitch", "onGround", "height", "width", "effects", "equipment", "isValid", "metadata", "passengers", "vehicle", "type", "displayName", "entityType", "name", "kind", "uuid", "attributes", "headYaw"], "metaOwn": [["length", 0]], "attributes": {"undefined": {"value": 0.30000001192092896, "modifiers": []}}, "metadata": []}

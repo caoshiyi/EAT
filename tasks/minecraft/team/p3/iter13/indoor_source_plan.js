@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let cells=[];for(let x=6;x<=9;x++)for(let z=81;z<=85;z++){let c=[];for(let y=60;y<=68;y++)c.push(bot.blockAt(new Vec3(x,y,z))?.name);cells.push([x,z,c]);}return{p:bot.entity.position,hp:bot.health,cells};

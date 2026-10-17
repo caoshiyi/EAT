@@ -1,0 +1,4 @@
+== #6255 2026-10-17T09:12:47 p4 role=integration_operator iter=13 1.1 s
+bot.clearControlStates();await bot.look(0,0,true);bot.setControlState('back',true);try{await bot.waitForTicks(2)}finally{bot.clearControlStates()}await bot.waitForTicks(20);return{p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count]),drops:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>[e.id,e.position,e.getDroppedItem()?.name])};
+-- returned --
+{"p": {"x": 6.300000052198043, "y": 67.5625, "z": 83.7}, "hp": 20, "own": [], "drops": []}

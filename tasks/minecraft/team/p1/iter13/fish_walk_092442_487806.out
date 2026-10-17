@@ -1,0 +1,187 @@
+program #6379 on p1: 37.3 s
+--- output ---
+STAGE_ACTUAL 18 Vec3 { x: 159, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 19 Vec3 { x: 160, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 20 Vec3 { x: 161, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 21 Vec3 { x: 162, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 22 Vec3 { x: 163, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 23 Vec3 { x: 164, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 24 Vec3 { x: 165, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 25 Vec3 { x: 165, y: -36, z: 2243 } 12.510251998901367
+STAGE_ACTUAL 26 Vec3 { x: 165, y: -36, z: 2244 } 12.510251998901367
+STAGE_ACTUAL 27 Vec3 { x: 165, y: -36, z: 2245 } 12.510251998901367
+STAGE_INDEX_ACTUAL 27 39
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 165.49934163965452,
+  "y": -36,
+  "z": 2245.49257333107
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 20,
+ "moves": 10,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   8,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "book",
+   15,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   6,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   0
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   45,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   170
+  ],
+  [
+   "stone_brick_slab",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   12,
+   null
+  ],
+  [
+   "basalt",
+   51,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1499
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   56,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+p2: P3 fresh6380 EXISTINGcampTABLE at6,66,82 (underfrontstandingfloor), reachablefrombed; no newTABLEplacement/frontblockneeded. Useactualbot.blockAt(6,66,82) forpick/axe afteryourreturn. P2portableTABLE1 retainedforNetherbootscraft. BANK4stick +own4 actual; n
+p2: o extrawoodquota. CurrentP3/P4nativefieldcoordinatesseen nearingreturn; P2bedRIGHT7.58,83.51/20HP controls{}.
+p2: P3 immediateevent P4slainZombie justreceived6382; yourlastseen9,67,75 samevicinity. Inspectcurrentthreat/ending promptly, do notinheritP4safe-return. P2insidebedright20 protected. No corpsecollectionassignment; retainyouractual11STONE ifstillcarried andend
+p2: beforelongreport.
+[server] p3 was slain by Zombie
+p2: P3 URGENTfresh09:25status actual8.5HP food17 at(3.1,65,76.8), NOactiveprogram, STONE11+DIRT9 stillcarried. Immediateprotectedendingwithactualcapsbeforeanyreport; current6berriesBANK availableafterphysicalreturn. P4death14.3,67,70.9 so nativeNORTHenemyfreen
+p2: o longerassumed. No P2outsidecargoassumption.
+--- p1 now: (165.5, -36, 2245.5) in overworld, health 12.5/20, food 16/20, alive

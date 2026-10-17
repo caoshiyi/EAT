@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3'),e=bot.entities[35],full=b=>b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');return{target:e?.position,rays:e?[69.18,70.12,71.12,72.12,73.12,74.12,75.12,76.12,77.12].map(y=>{const a=new Vec3(6.59,y,83.5),d=e.position.offset(0,2.7,0).minus(a),l=d.norm(),h=bot.world.raycast(a,d.scaled(1/l),l,b=>full(b));return[y,h?[h.name,h.position]:null]}):[]};

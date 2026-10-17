@@ -1,0 +1,53 @@
+program #6747 on p4: 0 s
+--- output ---
+SNOW16_CASE SURFACE_MELEE3 Vec3 { x: 4.582301363684132, y: 63, z: 79.50005770184377 }
+--- returned ---
+{
+ "issue": "SURFACE_MELEE3",
+ "endIssue": null,
+ "emerged": false,
+ "harvest": [],
+ "buried": false,
+ "fullPocket": true,
+ "protectedEnd": true,
+ "at": "2026-10-17T10:52:20.300Z",
+ "p": {
+  "x": 4.582301363684132,
+  "y": 63,
+  "z": 79.50005770184377
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [
+  [
+   "wooden_shovel",
+   1,
+   6
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.6, 63, 79.5) in overworld, health 20/20, food 20/20, alive

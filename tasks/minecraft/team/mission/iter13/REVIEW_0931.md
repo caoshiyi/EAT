@@ -1,0 +1,15 @@
+# Iteration13 review — 2026-10-17T09:31:11.095717+00:00
+
+Official review0931_eval (capture09:30:43): **dragon0/milestones10/deaths108/programs6420/restarts1**. +193programs/+4deaths/nomilestone frominherited6227/104/10; +67programs/+3deaths since09:21. Deadline11:10:57 runner1792235457, ~100minremain. No victory/currentstop.
+
+P4FOOD6bank andfirstWOOD3bank→P2table/stickswereacceptedcomplete. P1all10emptyframegeometryaccepted6274. Those usefulprerequisitesremainreal. P2lostfirstRodkitPiglin09:17:29; P4secondwoodZombie09:24:49/P3COFF11+WOODloanZombie09:25:01; P2minimalWOODpickkitZombie09:28:42. No currentRod/second2pearls/Eyes/End, noownedcorpsestock. Survivalfalsefromrespawn20HPisexplicitlyrejected.
+
+Currentorganizationalhypothesis insufficient: parallelstageacceptanceworkedforgeometry/materialdelivery, butfourpost-work/exitendingdeathsconsumedbothupstreamkits. Sourceacquisition, sharedhullrecap, currentcontrolsOFF and20HPstartdidnotprovidepersonalending. P3actual6381threatstop20HP/closedfalse, later6383PRE10HP/closedfalse; P2actual6407sharedexactrecapthenNATIVE_NO_ROUTE_1/closedfalse at10.57,67,83.5, death~12.5slater. Exactcauseofmotiontodeathcoordinatesunisolated. Engineerendingquestionistheactualimminentcaller, notnewgenericframework.
+
+Scopechanged: P2releasedP3STONErequestafteractualminimalWOODpick0, thenlostit. No automaticrebuild/rematerialquota. P3corpsefollowexpiredunACKed/noactualcross; NORTHEXIT6400vetoedbeforetravelwithprotectedending. P4SNOW16promise/80quota releasedwhenendingmaterialinsufficient; noammo. NewP4control/listenerauditmustchangeanexactimminentcaller/decisionandfinishfinitely, notbecomeindefinitewatch.
+
+Rootexplicit09:29dispatchP1existingcapabilityintegration→P2/P3actualnear-termcallers; currentretainedcoarseblocks/weapons/picksareavailablealternativewhileothersrepeatedlyloseproduction. P1ACK/wholebudgetdue09:31, notyetobserved; publicationnotadoption. P1foodcandidateactualwater/casttracebutfood0through09:28; no furtherunpricedcandidateextension. P3finiteintegration/P2primarychangeddeparture/P4materiallydifferentalternative, eachretainsrole/no oneunassigned/no all-teamrekit. IfP1handoffnonviable, ownersoweactualcounterevidence+crediblealternatewholebudgetratherthansilentscopeabandonment.
+
+Currentstockmustrefreshbeforeaction: lastsharedBANK8pearls/6food/5arrows/gold1+nu6/4sticks; P2/P3/P4freshnewcampEMPTY20HP. WOODloanlost/P3COFF11lost, olddonorinventorynotinbank. P1~12.51HP/food16retaineddestinationtools/stock, noEyes/food/arrows. Destination allframeaccessnotactivation/End/Dragonqualification.
+
+Coordinatorread-onlymonitorstilllive, supportedcollaborationonly/root/nopeerIDs. Arenaallfourcorrectrolesactive; nofollowuptargetguess/spawn. Rootno playerprograms/externalmessages/tool/serveredits/push. gitstatus tools/program.md cleanatcheck. Rawreceiptparserread/smalltestedaftertwocitationerrors, correctedcurrentboard+explicitEvolutionhistory. Tokenusageunavailable. Nextreview09:41; nowresolveunACKedP1dispatch/newwholebudgets, notanotherunchanged20minbootstrap.

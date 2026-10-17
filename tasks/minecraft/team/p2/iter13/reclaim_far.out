@@ -1,0 +1,96 @@
+program #6859 on p2: 69.4 s
+--- output ---
+ISSUE WORK_BOUND 896 Vec3 { x: -238.48426869980005, y: 60, z: -429.4929645973577 }
+--- returned ---
+{
+ "issue": "WORK_BOUND",
+ "start": 708,
+ "target": 904,
+ "index": 896,
+ "closed": true,
+ "p": {
+  "x": -238.46083013845328,
+  "y": 60,
+  "z": -429.4929645973577
+ },
+ "hp": 20,
+ "food": 20,
+ "elapsed": 69439,
+ "stock": 6,
+ "inv": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "shield",
+   1,
+   0
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   125
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   69
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "nether_bricks",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 11:08 actual6860 chest136,-41,2248 OPEN/LOS3.562m onlyREDSTONE1/1/1/8/4, NOpearls/itemswithdrawn. Protecteddown4/up4 PASS FULL20, now139,-36,2248→centerreturn. Independentlootquestion resolvednegative; no waitingfordelivery. Tenemptyframes stillneed10Ey
+p1: es; positiveactivation/End untested, floorretained overLAVA.
+--- p2 now: (-238.5, 60, -429.5) in the_nether, health 20/20, food 20/20, alive

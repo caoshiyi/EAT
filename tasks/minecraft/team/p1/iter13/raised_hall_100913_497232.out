@@ -1,0 +1,178 @@
+program #6584 on p1: 40.4 s
+--- output ---
+HALL_ACTUAL 4 Vec3 { x: 9, y: 68, z: 88 } 20
+HALL_ACTUAL 5 Vec3 { x: 9, y: 68, z: 87 } 20
+HALL_ACTUAL 6 Vec3 { x: 9, y: 68, z: 86 } 20
+HALL_ACTUAL 7 Vec3 { x: 9, y: 68, z: 85 } 20
+HALL_ACTUAL 8 Vec3 { x: 9, y: 68, z: 84 } 20
+HALL_ACTUAL 9 Vec3 { x: 9, y: 68, z: 83 } 20
+E_ROOF_ACTUAL basalt dirt cobblestone
+HALL_ACTUAL 10 Vec3 { x: 9, y: 68, z: 82 } 20
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 9.499889518215866,
+  "y": 68,
+  "z": 82.43896379881208
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 1,
+ "oak": 1,
+ "cuts": 14,
+ "moves": 7,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   44,
+   null
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   76
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   12
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "blackstone",
+   25,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   53,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P3 controlfinding adopted: ownP4campguardnowrequiresall7explicitgetControlState==false; {}REJECTED. Actual6583 HP20FRONT/7false, doorclosed/main4SLAB, EHEADDIRT68full/ROOF69AIRstillpendingP1; guardcorrectlyreportsmissingwall only, no FULLclaim. 6547 REMOTE
+p4: p2trace sawNOthresholdmovement, onlypose5→0; supportsoriginalcoldREJECTEDpickup, no movementproof.
+--- p1 now: (9.5, 68, 82.4) in overworld, health 20/20, food 20/20, alive

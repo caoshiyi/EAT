@@ -1,0 +1,1 @@
+try{const p=bot.entity.position.floored();if(!p.equals(V([165,-40,2257])))throw Error('START');await put(p.offset(1,1,0));await put(p.offset(1,0,0));console.log('REPAIR_ACTUAL',bot.blockAt(p.offset(1,1,0))?.name,bot.blockAt(p.offset(1,0,0))?.name);

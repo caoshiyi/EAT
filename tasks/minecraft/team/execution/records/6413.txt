@@ -1,0 +1,4 @@
+== #6413 2026-10-17T09:29:30 p3 role=continuity_owner iter=13 0 s
+const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(new Vec3(4,65,77))<10).map(e=>[e.id,e.position,e.getDroppedItem()?.name,e.getDroppedItem()?.count,e.getDroppedItem()?.durabilityUsed]),foes:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper'].includes(e.name)&&e.position.distanceTo(new Vec3(4,65,77))<14).map(e=>[e.id,e.name,e.position])};
+-- returned --
+{"p": {"x": 6.5, "y": 67, "z": 82.5}, "hp": 20, "items": [[3560, {"x": 3.5879698381723037, "y": 63, "z": 83.90815280299046}, "wooden_pickaxe", 1, 22], [3561, {"x": 3.486883754548065, "y": 64, "z": 81.57199701697837}, "dirt", 9, null]], "foes": []}

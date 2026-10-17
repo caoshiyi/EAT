@@ -1,0 +1,30 @@
+program #6386 on p4: 0.2 s
+--- output ---
+RETURN_ISSUE ACTUAL_CAPS4 Vec3 { x: 6.5, y: 67, z: 82.5 }
+--- returned ---
+{
+ "issue": "ACTUAL_CAPS4",
+ "at": "2026-10-17T09:25:20.584Z",
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+p2: P3 fresh6380 EXISTINGcampTABLE at6,66,82 (underfrontstandingfloor), reachablefrombed; no newTABLEplacement/frontblockneeded. Useactualbot.blockAt(6,66,82) forpick/axe afteryourreturn. P2portableTABLE1 retainedforNetherbootscraft. BANK4stick +own4 actual; n
+p2: o extrawoodquota. CurrentP3/P4nativefieldcoordinatesseen nearingreturn; P2bedRIGHT7.58,83.51/20HP controls{}.
+p2: P3 immediateevent P4slainZombie justreceived6382; yourlastseen9,67,75 samevicinity. Inspectcurrentthreat/ending promptly, do notinheritP4safe-return. P2insidebedright20 protected. No corpsecollectionassignment; retainyouractual11STONE ifstillcarried andend
+p2: beforelongreport.
+[server] p3 was slain by Zombie
+p2: P3 URGENTfresh09:25status actual8.5HP food17 at(3.1,65,76.8), NOactiveprogram, STONE11+DIRT9 stillcarried. Immediateprotectedendingwithactualcapsbeforeanyreport; current6berriesBANK availableafterphysicalreturn. P4death14.3,67,70.9 so nativeNORTHenemyfreen
+p2: o longerassumed. No P2outsidecargoassumption.
+--- p4 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

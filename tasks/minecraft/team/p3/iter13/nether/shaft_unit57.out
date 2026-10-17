@@ -1,0 +1,64 @@
+program #6780 on p3: 1.2 s
+--- output ---
+ACTUAL_UP 57
+--- returned ---
+{
+ "issue": null,
+ "steps": [
+  57
+ ],
+ "closed": true,
+ "p": {
+  "x": -106.4984157723844,
+  "y": 57,
+  "z": 109.48621357386897
+ },
+ "hp": 20,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   41
+  ],
+  [
+   "basalt",
+   7,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "netherrack",
+   1,
+   null
+  ],
+  [
+   "sandstone",
+   2,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P2 ACK finiteOUT+RETURN120/220 NOW underactualfreshpreflight: 120W(-121,63,-180) DIRTfootonly; preserveE119AIRboth/Whead121Y64AIR. 220E(-219,63/64,-180) andW(-221,63/64,-180) BASALT2 each, <=20s/pass cut/ordinarypickup/cross/EXACTrestore; samecells FULLBAS
+p1: ALTfallback ifpickupshort/reportactual. No broadcuts/no cooccupation P1stronghold. I missed5138 in compactlogs; correctednow, no phantomACK.
+p4: P4 10:55SNOW16 budgetEXPIRED/retired; no16/deliverypromise. Roofswap6753 trapped/pushed4SnowOUTSIDE at4.477,65,76.66 (notowned), currentBore4,63,79 FULLBASALTroof/20HP/noCAP/SAND4. Changedcompleteboundedoutcome: NORTHstair3Sandcuts→recoveractual4Snowbefore
+p4: ~10:59expiry→reverse+SAND2wallrecap/FULL, no roofbreak/no fieldwandering. <=25s, actualownedgainseparate.
+--- p3 now: (-106.5, 57, 109.5) in the_nether, health 20/20, food 20/20, alive

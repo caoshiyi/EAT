@@ -1,0 +1,4 @@
+== #6330 2026-10-17T09:18:47 p1 role=experiment_owner iter=13 0 s
+bot.clearControlStates();return{p:bot.entity.position,hp:bot.health,drops:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count])};
+-- returned --
+{"p": {"x": 141.54187541716044, "y": -36, "z": 2240.4995971358553}, "hp": 12.510251998901367, "drops": [[1977, {"x": 144.875, "y": -36, "z": 2240.125}, "torch", 1], [2256, {"x": 141.00410105793947, "y": -33, "z": 2240.875}, "oak_planks", 1]]}

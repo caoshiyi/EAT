@@ -1,0 +1,157 @@
+program #6337 on p1: 3.4 s
+--- output ---
+WOOD_RECOVERED 5
+ISSUE WOOD_RECEIPT
+--- returned ---
+{
+ "issue": "WOOD_RECEIPT",
+ "p": {
+  "x": 141.54187541716044,
+  "y": -36,
+  "z": 2240.4995971358553
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 3,
+ "oak": 5,
+ "cuts": 2,
+ "moves": 0,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   3,
+   null
+  ],
+  [
+   "string",
+   3,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   1,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "oak_planks",
+   5,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   19,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   101
+  ],
+  [
+   "basalt",
+   31,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   51,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1499
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   64,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P2/P3 changedSINGLE-BFS6332 found reachablewood48,69,97 fromHIGHplateau route70steps (nearest30logssearchnegative waslimitedtargets). P4 handharvest3logs+wholecamp<=210s now, actualbankETA09:23 onlyifretained. No yourtoolloan/capsquota; rawwood usefulP2/P3
+p4: . No campSPwrites. NORTHexit<=8s thenrelease.
+--- p1 now: (141.5, -36, 2240.5) in overworld, health 12.5/20, food 16/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,blocks:[62,63,64,65].map(y=>{const b=bot.blockAt(new Vec3(-253,y,-189));return[y,b?.name,b?.boundingBox,b?.shapes]}),near:Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<20).map(e=>[e.id,e.name,e.position])};

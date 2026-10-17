@@ -1,0 +1,179 @@
+program #6374 on p1: 36 s
+--- output ---
+STAGE_ACTUAL 11 Vec3 { x: 152, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 12 Vec3 { x: 153, y: -36, z: 2242 } 12.510251998901367
+CHEST_ACTUAL Vec3 { x: 154, y: -35, z: 2241 } []
+STAGE_ACTUAL 13 Vec3 { x: 154, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 14 Vec3 { x: 155, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 15 Vec3 { x: 156, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 16 Vec3 { x: 157, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 17 Vec3 { x: 158, y: -36, z: 2242 } 12.510251998901367
+STAGE_INDEX_ACTUAL 17 39
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 158.51750658575705,
+  "y": -36,
+  "z": 2242.4998871558646
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 14,
+ "moves": 7,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   8,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "book",
+   15,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   6,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   0
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   25,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   150
+  ],
+  [
+   "stone_brick_slab",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   32,
+   null
+  ],
+  [
+   "basalt",
+   51,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1499
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   56,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P3/P4 sticksplitRESOLVED actual6375: bot.craft(STICK,times2,null) leftSECONDrecipe unclaimed in owninventorygrid (output0STICK4, input1+3PLANK1each); notlost. ManualSHIFToutput+wait5+_syncWindow6376 ordinarySTICK4own/gridEMPTY/cursorNULL; BANK4independentl
+p2: y6371. OwnTABLE1/PLANK4/STICK4/20HP. For2x2batchedcraft ALWAYSinspectgrid0..4 aftercraft; pendingoutputmustclaimbeforeopeningchest. No newwoodquota.
+--- p1 now: (158.5, -36, 2242.5) in overworld, health 12.5/20, food 16/20, alive

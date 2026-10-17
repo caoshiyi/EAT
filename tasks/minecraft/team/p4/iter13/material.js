@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3'),p=bot.entity.position;return{near:bot.findBlocks({matching:b=>['dirt','spruce_log','sand','cobblestone','cobbled_deepslate'].includes(b.name),maxDistance:6,count:150}).map(q=>[q,bot.blockAt(q)?.name,q.offset(.5,.5,.5).distanceTo(p.offset(0,1.62,0))])};

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3'),v=a=>new Vec3(...a);return{p:bot.entity.position,hp:bot.health,food:bot.food,cells:[[6,67,90],[6,70,90],[5,68,90],[5,69,90],[7,68,90],[7,69,90],[6,68,89],[6,69,89],[6,68,90],[6,69,90],[6,68,91],[6,69,91]].map(a=>[a,bot.blockAt(v(a))?.name,bot.blockAt(v(a))?.shapes]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};

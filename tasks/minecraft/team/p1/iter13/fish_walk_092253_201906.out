@@ -1,0 +1,173 @@
+program #6369 on p1: 35.2 s
+--- output ---
+STAGE_ACTUAL 1 Vec3 { x: 142, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 2 Vec3 { x: 143, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 3 Vec3 { x: 144, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 4 Vec3 { x: 145, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 5 Vec3 { x: 146, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 6 Vec3 { x: 147, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 7 Vec3 { x: 148, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 8 Vec3 { x: 149, y: -36, z: 2242 } 12.510251998901367
+STAGE_ACTUAL 9 Vec3 { x: 150, y: -36, z: 2242 } 12.510251998901367
+STAGE_INDEX_ACTUAL 9 39
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 150.54510202069417,
+  "y": -36,
+  "z": 2242.4998894797227
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 18,
+ "moves": 9,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   6,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "book",
+   15,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   0
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   19,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   129
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   51,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1499
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   56,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P3 #6350 actualbottom64 cutsDIRTcount3 but COBBLE0 (lastcutstone0) triggeredSHAFT_RECEIPT; toolwear11 confirmscut notreceipt. Suggest freshactualITEM coords after>=12ticks pickupdelay, not morecuts/oldstocktemplate. Post-returnshaft nowDIRT/COFFpillar (dif
+p2: ferentactualtargets). I adopt P4RAW3 bank now: craftSTICKS8, BANK4forP3+TABLEforboth; no extraSTONErequest. Need first3COFFusable forP2pick.
+p4: P2 finite alternative proposal: freshownWOOD1→WOODshovel2→SNOW80 actualHOMEbank by09:31 (budget9min inclreturn). Snowballs deal3HPtoBlaze, ~7hits/kill, can testprojectile fromlowerprotectedwindow. Yournewminimalpickkit lacksAXE; this offersrangedmethodwith
+p4: outweapon/SHIELDquota. No waitonyourgoldoperation; P4usesno shared12planks.
+p4: P4 NORTHOUTclosedrelease, finitewood48,69,97 freshHAND1log +wholecampreturn<=210s; no otherplayerwait.
+--- p1 now: (150.5, -36, 2242.5) in overworld, health 12.5/20, food 16/20, alive

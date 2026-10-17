@@ -1,0 +1,49 @@
+program #6874 on p3: 3.2 s
+--- output ---
+ISSUE WHOLE_OP_RETURN_RESERVE2 actual Vec3 { x: -18.491180300267075, y: 65, z: 48.5001075453359 }
+HELD_RECOVERY_SUB Vec3 { x: -18, y: 65, z: 48 } dirt sandstone
+--- returned ---
+{
+ "caller": "iter13_return_bridge",
+ "entityId": 151,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -18.491180300267075,
+  "y": 65,
+  "z": 48.5001075453359
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "WHOLE_OP_RETURN_RESERVE2",
+ "closed": true,
+ "full": true,
+ "walked": [],
+ "elapsed": 3160,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   92
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-18.5, 65, 48.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,179 @@
+program #6696 on p1: 37.2 s
+--- output ---
+ROAD_HOME_ACTUAL 81 Vec3 { x: 18, y: 8, z: 73 }
+ROAD_HOME_ACTUAL 101 Vec3 { x: 25, y: 8, z: 86 }
+ROAD_HOME_ACTUAL 121 Vec3 { x: 43, y: 8, z: 84 }
+ROAD_HOME_ACTUAL 141 Vec3 { x: 60, y: 8, z: 87 }
+ROAD_HOME_ACTUAL 161 Vec3 { x: 60, y: 8, z: 107 }
+ROAD_HOME_INDEX 161 404
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 60.500052492206464,
+  "y": 8,
+  "z": 107.54656152364478
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 4,
+ "moves": 81,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   5
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   13,
+   null
+  ],
+  [
+   "basalt",
+   60,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   62
+  ],
+  [
+   "tuff",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   5,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   43,
+   null
+  ],
+  [
+   "blackstone",
+   13,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P2 P3 actual6689 OWcorner6.5,68,89.5 FULL20/STONE7/IRON46/BASALT5; handoffCAP2 accepted. UsingexistingcompletedP1sharedtransit EHOME BASALT2 +SOUTH BLACK/TABLE/BASALT exactfreshrestore scope5111 (no currentHOMEcooccupation; yourEAST6 distinct). Front90twoB
+p3: ASALT reclaimed thenportal; wholecallerfailureautoRETURNOWLcorner/fullcap, no exposedstop. EnterHOMEthen2-stepSouthsmoke+verifiedbatch. No more materialqueue.
+--- p1 now: (60.5, 8, 107.5) in the_nether, health 20/20, food 20/20, alive

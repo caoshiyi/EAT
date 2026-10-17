@@ -1,0 +1,1 @@
+return{at:new Date().toISOString(),own:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<8).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count]),p:bot.entity.position,hp:bot.health};

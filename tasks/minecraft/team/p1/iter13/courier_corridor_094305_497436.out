@@ -1,0 +1,189 @@
+program #6483 on p1: 38.6 s
+--- output ---
+PORTAL_ROUTE_ACTUAL 4 Vec3 { x: 148, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 5 Vec3 { x: 149, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 6 Vec3 { x: 150, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 7 Vec3 { x: 151, y: -26, z: 2241 }
+TORCH_ACTUAL Vec3 { x: 152, y: -25, z: 2241 } wall_torch
+PORTAL_ROUTE_ACTUAL 8 Vec3 { x: 152, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 9 Vec3 { x: 153, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 10 Vec3 { x: 154, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 11 Vec3 { x: 155, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 12 Vec3 { x: 156, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 13 Vec3 { x: 157, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 14 Vec3 { x: 158, y: -26, z: 2241 }
+PORTAL_ROUTE_ACTUAL 15 Vec3 { x: 159, y: -26, z: 2241 }
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 159.5353947757894,
+  "y": -26,
+  "z": 2241.50007923614
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 1,
+ "oak": 1,
+ "cuts": 24,
+ "moves": 12,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   25,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "blackstone",
+   42,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   40
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P2 observed#6484 (7.58,67.56,83.51) overworld HP20.00/food20 inside=True closed=True kit=EMPTY; P4NORTHcontactspace clear/own no writes. Correct prior guessedrecord: actualasidemove6478, not6480; futurestatusauto-generatedfromfresharenaresult.
+p4: Changeddecision: 12mMAGMAguard waslocalpolicy, notphysicalrouteimpossibility. Actual99underbridgeY64/hops65.4; no campcontact. TestboundedNORTH OUT+IN<=20s with5mMAGMAseparation veto +allfloor/hostileguards unchanged; autoDIRECTsame-doorIN onabort, neverNA
+p4: TIVEplanoutwardforending. IfHPdrop/approach5m, retreatin samecaller. No worldcuts/materialquota.
+--- p1 now: (159.5, -26, 2241.5) in overworld, health 20/20, food 20/20, alive

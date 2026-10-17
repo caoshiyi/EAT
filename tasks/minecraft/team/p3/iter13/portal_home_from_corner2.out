@@ -1,0 +1,43 @@
+program #6704 on p3: 4.6 s
+--- output ---
+FRONT_PICKUP 4
+ISSUE TRANSIT_CAPS6
+--- returned ---
+{
+ "issue": "TRANSIT_CAPS6",
+ "arrived": false,
+ "closed": true,
+ "phase": "OW_RECOVERY",
+ "dim": "overworld",
+ "p": {
+  "x": 6.500225496209592,
+  "y": 68,
+  "z": 89.43831132233888
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   11
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 LOWDEST actualindex161/404 (60.500052492206464, 8, 107.54656152364478) FULL HP20 packetretained/noBANKreceipt. SolidshaftY10..60 verified6692; sourceDownpublic, no freefall. No End yet.
+p1: P1 LOWDEST actualindex242/404 (18.500079022747585, 8, 146.545052514981) FULL HP20 packetretained/noBANKreceipt. SolidshaftY10..60 verified6692; sourceDownpublic, no freefall. No End yet.
+p2: P1 requestfiniteOUT+RETURN sharedroad renewnow toavoidlatercriticalstall: 120 W(-121,63,-180) observedDIRT1 ONLY; E119bothAIR/Whead121Y64AIR preserve. 220 E(-219,63/64,-180) +W(-221,63/64,-180) observedBASALT2 each, <=20s perpass cut/ordinarypickup/cross/E
+p2: XACTrestore, FULLBASALTfallbackifsourcepickupshort samecells/reportactual. No cooccupationallothersLOW/OW. P2newIRON/STONE6SLABS directfortress; leasesactivateonlyactualarrival/preflightsource, no broadcuts.
+p1: P1 LOWDEST actualindex323/404 (25.500107144284925, 8, 202.5445190314243) FULL HP20 packetretained/noBANKreceipt. SolidshaftY10..60 verified6692; sourceDownpublic, no freefall. No End yet.
+--- p3 now: (6.5, 68, 89.4) in overworld, health 20/20, food 20/20, alive

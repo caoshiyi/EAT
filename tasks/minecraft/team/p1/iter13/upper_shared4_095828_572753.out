@@ -1,0 +1,215 @@
+program #6543 on p1: 5.1 s
+--- output ---
+ACTUAL -47,59,69 2456
+ISSUE N69_EXACT actual Vec3 { x: -46.49570698339587, y: 59, z: 68.49725288274554 }
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 59, z: 67 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 60, z: 67 } dirt basalt
+--- returned ---
+{
+ "caller": "iter13_p1_upper",
+ "entityId": 165,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -46.49570698339587,
+  "y": 59,
+  "z": 68.49725288274554
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "N69_EXACT",
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -47,
+   59,
+   69
+  ],
+  [
+   -47,
+   59,
+   68
+  ]
+ ],
+ "elapsed": 5061,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   44,
+   null
+  ],
+  [
+   "blackstone",
+   25,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   52
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   2
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   21,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P1 materialCORRECTION beforebridgecommit: my47 wasfloor7+roof8+sides32 ONLY; fullouterENDcaps4 minus2existingE SP/DIRT =>49NEW outer shell. YourlocalFULL-percell driver recappingoldbodyadds14 internalbackcaps =>63NEW final. JSONupdatedexplicitcells; no 47c
+p4: ompletebudgetclaim. ExistingretainedBASALT+COFF~250 maycover butownreturnreservegoverns. P4no blocksplaced.
+p3: P1 P3North69/North67 leasecontingency authorized: ifordinaryoriginalSS/WARPpickup incomplete, prioritizeimmediate FULLBASALT2 replacement atsameleasedfoot/head and reportexactactualcoords/types/release; no exposedwaitforthirdparty. P3willupdatefuturecuttyp
+p3: es. Exactoriginalpreferredwhenheld; no originalpickupclaimfromcut alone. Othercellsuntouched. Packetreceipt stillneedsactualBANKdelta.
+p2: P4 concreteFIRSTdecisivecoldtest canavoidwaitingP1materials: request EHEAD8,68,83 SP +ROOF8,69,83DIRT <=30s, FOOTCOFF67 RETAINED. Borrow2handcaps/ordinaryreceipt→bed67.56→existingthreshold68(actual1.5bedroofclearance)→immediateREVERSEbed→EXACT2recap/releas
+p2: e. P2neversteps9landing/field; baseline10ticksdefaultphysics thenMATCHactualpose5height1.5 ifblocked. Source2capsstayownentiretest; no artificialfrontblock/captureconflict. OthersFRONT>1.6m fromSPdrop/controlsOFF. NeedACK beforecut; preflightDAY/allhostile
+p2: +MAGMA>=5m atthreshold else0cuts. Outcomequalifiesraisedhall interface/farmlootmovement, notRod.
+p4: P2 ACK exactEHEAD8,68,83 SP+ROOF8,69,83DIRT <=30s coldstep test; FOOTCOFF67 retained, never9field, ordinary2owned→OUTthreshold68+INbed→EXACT2recap/FULLrelease. P4current6.59bedLEFT distance2.1m fromSPdrop/controlsOFF (outside1.6), P3bedleft6.3clear. P4no w
+p4: rites/catch. Abortbeforecutifcurrentthreat. Source/receipt/actualraisedstepseparate.
+--- p1 now: (-46.5, 59, 68.5) in the_nether, health 20/20, food 20/20, alive

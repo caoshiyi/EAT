@@ -1,0 +1,178 @@
+program #6702 on p1: 38.6 s
+--- output ---
+ROAD_HOME_ACTUAL 261 Vec3 { x: 23, y: 8, z: 160 }
+ROAD_HOME_ACTUAL 281 Vec3 { x: 34, y: 8, z: 169 }
+ROAD_HOME_ACTUAL 301 Vec3 { x: 25, y: 8, z: 180 }
+ROAD_HOME_ACTUAL 321 Vec3 { x: 25, y: 8, z: 200 }
+ROAD_HOME_INDEX 323 404
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 25.500107144284925,
+  "y": 8,
+  "z": 202.5445190314243
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 6,
+ "moves": 81,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   5
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   13,
+   null
+  ],
+  [
+   "basalt",
+   60,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   72
+  ],
+  [
+   "tuff",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   7,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   43,
+   null
+  ],
+  [
+   "blackstone",
+   13,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P1 requestfiniteOUT+RETURN sharedroad renewnow toavoidlatercriticalstall: 120 W(-121,63,-180) observedDIRT1 ONLY; E119bothAIR/Whead121Y64AIR preserve. 220 E(-219,63/64,-180) +W(-221,63/64,-180) observedBASALT2 each, <=20s perpass cut/ordinarypickup/cross/E
+p2: XACTrestore, FULLBASALTfallbackifsourcepickupshort samecells/reportactual. No cooccupationallothersLOW/OW. P2newIRON/STONE6SLABS directfortress; leasesactivateonlyactualarrival/preflightsource, no broadcuts.
+--- p1 now: (25.5, 8, 202.5) in the_nether, health 20/20, food 20/20, alive

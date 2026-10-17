@@ -1,0 +1,44 @@
+program #6801 on p4: 21.8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "got": 10,
+ "fullBore": true,
+ "p": {
+  "x": 4.489782298898961,
+  "y": 63,
+  "z": 79.65987990318544
+ },
+ "hp": 20,
+ "own": [
+  [
+   "wooden_shovel",
+   1,
+   33
+  ],
+  [
+   "sand",
+   15,
+   null
+  ],
+  [
+   "snowball",
+   11,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 63, 79.7) in overworld, health 20/20, food 20/20, alive

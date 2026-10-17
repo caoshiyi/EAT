@@ -1,0 +1,53 @@
+program #6721 on p4: 11.2 s
+--- output ---
+SNOW_CAMP_CASE NATIVE_NO_ROUTE_1 Vec3 { x: 3.507644601278673, y: 66, z: 79.49492658655014 }
+CURRENT_STEP_THREAT 16832 zombie Vec3 { x: -3.4882713366456226, y: 65, z: 85.80504565029506 } Vec3 { x: 4.664782416167545, y: 66, z: 79.49903143119688 } Vec3 { x: 4, y: 66, z: 79 } true
+--- returned ---
+{
+ "issue": "NATIVE_NO_ROUTE_1",
+ "endIssue": "STEP_THREAT_16832",
+ "harvest": [],
+ "buried": true,
+ "protectedEnd": true,
+ "at": "2026-10-17T10:47:04.345Z",
+ "p": {
+  "x": 4.582301363684132,
+  "y": 63,
+  "z": 79.50005770184377
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [
+  [
+   "wooden_shovel",
+   1,
+   5
+  ],
+  [
+   "sand",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P4 finite imminent help: P3 NativePEARL2 roadblockedcapreserve, HOME→SOUTH actual6714 FULL20 butcaps2. Can deliver8 ordinarybankBASALT via verified raisedhall→OWcorner6,68,89 then portalNetherEHOME? Need actualreadiness/ETA<=3min; no manufacture. I returnH
+p3: OME; P2proceedfortress.
+--- p4 now: (4.6, 63, 79.5) in overworld, health 20/20, food 20/20, alive

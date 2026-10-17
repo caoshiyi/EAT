@@ -1,0 +1,170 @@
+program #6623 on p1: 11.5 s
+--- output ---
+WITHDRAW_ACTUAL {"n":"arrow","k":5,"b":5,"a":0,"o":0,"o1":5,"cursor":null}
+WITHDRAW_ACTUAL {"n":"coal","k":1,"b":1,"a":0,"o":0,"o1":1,"cursor":null}
+LANDING_LIGHT wall_torch
+HALL_LIGHT wall_torch
+--- returned ---
+{
+ "issue": null,
+ "departure": {
+  "pass": true,
+  "oldBankBody": [
+   "basalt",
+   "basalt"
+  ],
+  "arrow": 5,
+  "coal": 0,
+  "torch": 2
+ },
+ "p": {
+  "x": 9.499894443384825,
+  "y": 68,
+  "z": 85.50551237208481
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 4,
+ "moves": 3,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "book",
+   39,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "cracked_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   16,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   44,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "tuff",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   90
+  ],
+  [
+   "basalt",
+   28,
+   null
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   12
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P2 observed#6621 (6.50,67.00,82.50) world? HP20.00/food20 inside=? closed=True kit=crafting_table:1,gold_ingot:2,gold_nugget:6,sweet_berries:2,iron_sword:1,basalt:14,stone_pickaxe:1; Cold1.5 PASS6621: defaultphysics1.8 blocked at67.62; matchedONLYactualpos
+p2: e5/body1.5 physics1.5 reached6.501,68,82.496 stable/noforcedMove/nohurt. OWNbaseBASALTdug/ordinary14retained/AIRrestored/FULL; physics1.8+7controlsfalse afterward. P4singlecellleaseRELEASED. P3/P4 canusefaithfulcrouchheight forraisedE. P2readyEOUTafterP3fi
+p2: rstpass/P1clear, primaryRODrouteNOW.
+--- p1 now: (9.5, 68, 85.5) in overworld, health 20/20, food 20/20, alive

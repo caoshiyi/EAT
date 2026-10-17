@@ -1,0 +1,67 @@
+program #6824 on p4: 3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "events": [
+  [
+   "hurt",
+   99,
+   20,
+   {
+    "x": 4.2600999772548676,
+    "y": 61,
+    "z": 82.73990002274513
+   }
+  ],
+  [
+   "gone",
+   99,
+   {
+    "x": 4.2600999772548676,
+    "y": 61,
+    "z": 82.73990002274513
+   }
+  ]
+ ],
+ "before": 15,
+ "after": 14,
+ "hp": 20,
+ "moved": 0,
+ "magma": null,
+ "column": [
+  [
+   61,
+   "sand"
+  ],
+  [
+   62,
+   "air"
+  ],
+  [
+   63,
+   "air"
+  ],
+  [
+   64,
+   "air"
+  ],
+  [
+   65,
+   "air"
+  ],
+  [
+   66,
+   "air"
+  ],
+  [
+   67,
+   "air"
+  ]
+ ],
+ "near": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.6, 67.6, 83.4) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,4 @@
+== #6373 2026-10-17T09:23:47 p1 role=experiment_owner iter=13 0 s
+const{Vec3}=require('vec3');let b=[];for(let y=-37;y<=-34;y++)for(let z=2241;z<=2243;z++)for(let x=151;x<=154;x++){let q=new Vec3(x,y,z),v=bot.blockAt(q);if(v?.name==='stone_brick_slab')b.push([q,v.getProperties(),v.shapes])}return{p:bot.entity.position,hp:bot.health,slabs:b};
+-- returned --
+{"p": {"x": 151.53197980149966, "y": -36, "z": 2242.4998891915893}, "hp": 12.510251998901367, "slabs": [[{"x": 153, "y": -36, "z": 2241}, {"waterlogged": false, "type": "bottom"}, [[0, 0, 0, 1, 0.5, 1]]], [{"x": 153, "y": -36, "z": 2242}, {"waterlogged": false, "type": "bottom"}, "[repeated reference]"], [{"x": 154, "y": -36, "z": 2243}, {"waterlogged": false, "type": "bottom"}, "[repeated reference]"], [{"x": 154, "y": -35, "z": 2242}, {"waterlogged": false, "type": "bottom"}, "[repeated reference]"]]}

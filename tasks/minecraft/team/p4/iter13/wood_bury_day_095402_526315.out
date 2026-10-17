@@ -1,0 +1,27 @@
+program #6528 on p4: 11.7 s
+--- output ---
+FIELD_ISSUE NATIVE_NO_ROUTE_1 Vec3 { x: 5.50557451022576, y: 66, z: 79.52855248753458 }
+--- returned ---
+{
+ "issue": "NATIVE_NO_ROUTE_1",
+ "endIssue": null,
+ "closedBore": null,
+ "cuts": [],
+ "protectedEnd": true,
+ "at": "2026-10-17T09:54:14.294Z",
+ "p": {
+  "x": 6.590152108166957,
+  "y": 67.5625,
+  "z": 83.53394046129814
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

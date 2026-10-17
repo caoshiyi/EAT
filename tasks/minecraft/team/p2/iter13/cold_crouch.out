@@ -1,0 +1,100 @@
+program #6621 on p2: 6.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "placed": true,
+ "restored": true,
+ "baseline": {
+  "arrived": false,
+  "p": {
+   "x": 6.502686080948727,
+   "y": 67.62159999847412,
+   "z": 83.3
+  },
+  "ground": false,
+  "pose": 5,
+  "height": 1.5,
+  "physics": 1.8,
+  "eye": 1.27,
+  "hp": 20,
+  "forceMoves": 0
+ },
+ "matched": {
+  "arrived": true,
+  "p": {
+   "x": 6.500977305735157,
+   "y": 68,
+   "z": 82.49615829832325
+  },
+  "ground": true,
+  "pose": 5,
+  "height": 1.5,
+  "physics": 1.5,
+  "eye": 1.27,
+  "hp": 20,
+  "forceMoves": 0
+ },
+ "at": "2026-10-17T10:19:04.383Z",
+ "p": {
+  "x": 6.500977305735157,
+  "y": 67,
+  "z": 82.49615829832325
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "basalt",
+   14,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "physics": 1.8
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

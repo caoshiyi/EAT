@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,inv:bot.inventory.items().map(i=>[i.name,i.count]),entities:Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<5).map(e=>[e.id,e.name,e.position])};

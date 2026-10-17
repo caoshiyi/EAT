@@ -1,0 +1,71 @@
+program #6689 on p3: 7.6 s
+--- output ---
+ACTUAL 8,68,89 2966
+ACTUAL 7,68,89 5323
+ACTUAL 6,68,89 6430
+--- returned ---
+{
+ "caller": "iter13_portal_connector",
+ "entityId": 151,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 6.533635886375164,
+  "y": 68,
+  "z": 89.50059202698638
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   8,
+   68,
+   89
+  ],
+  [
+   7,
+   68,
+   89
+  ],
+  [
+   6,
+   68,
+   89
+  ]
+ ],
+ "elapsed": 7582,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   7
+  ],
+  [
+   "basalt",
+   5,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 68, 89.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,34 @@
+== #6259 2026-10-17T09:13:06 p3 role=continuity_owner iter=13 0.1 s
+global.P3ExactBank={mode:"withdraw",name:"wooden_pickaxe",wear:10};
+// Default is a read-only probe. Configure global.P3ExactBank={mode:"withdraw"|"deposit"|"roundtrip",name,wear?}.
+// Exact whole-stack transfer; never selects a different tool of the same type.
+const {Vec3}=require("vec3");const req=global.P3ExactBank||{mode:"inspect"};delete global.P3ExactBank;
+const body=bot.entity,world=bot.game.dimension,hp=bot.health;bot.clearControlStates();bot.pathfinder.setGoal(null);
+const snap=i=>i?{name:i.name,count:i.count,wear:i.durabilityUsed??null,slot:i.slot}:null;
+let c=null,issue=null,trace=[];
+try{
+ if(world!=="overworld"||bot.entity.position.distanceTo(new Vec3(6.5,67,82.5))>1.8)throw Error("PROTECTED_BANK_POSE_REQUIRED");
+ const b=bot.blockAt(new Vec3(7,68,82));if(b?.name!=="chest")throw Error("UPPER_BANK_MISSING");
+ c=await bot.openChest(b);
+ if(c.selectedItem)throw Error("CURSOR_NOT_EMPTY");
+ const inside=i=>i>=c.inventoryStart&&i<c.inventoryEnd;
+ const match=i=>i?.name===req.name&&(req.wear===undefined||i.durabilityUsed===req.wear);
+ async function move(from,to){
+  if(c.selectedItem||!c.slots[from]||c.slots[to]||bot.entity!==body||bot.game.dimension!==world||bot.health<hp)throw Error("LIVE_TRANSFER_PRECONDITION");
+  const before=snap(c.slots[from]);await bot.clickWindow(from,0,0);await bot.clickWindow(to,0,0);await bot.waitForTicks(2);
+  const after=snap(c.slots[to]);trace.push({from,to,before,after,cursor:snap(c.selectedItem)});
+  if(c.selectedItem||c.slots[from]||after?.name!==before.name||after.count!==before.count||after.wear!==before.wear)throw Error("EXACT_RECEIPT_FAILED");
+ }
+ if(req.mode!=="inspect"){
+  if(!["withdraw","deposit","roundtrip"].includes(req.mode)||!req.name||req.name==="ender_pearl")throw Error("REQUEST_OR_CRITICAL_PEARL_VETO");
+  const deposit=req.mode==="deposit";const from=c.slots.findIndex((i,k)=>match(i)&&(deposit?inside(k):k<c.inventoryStart));
+  const to=c.slots.findIndex((i,k)=>!i&&(deposit?k<c.inventoryStart:inside(k)));
+  if(from<0||to<0)throw Error("EXACT_SOURCE_OR_EMPTY_DEST_MISSING");await move(from,to);
+  if(req.mode==="roundtrip")await move(to,from);
+ }
+ const bank=c.containerItems().map(snap);await c.close();c=null;
+ return{issue,trace,bank,own:bot.inventory.items().map(snap),p:bot.entity.position,hp:bot.health,world:bot.game.dimension};
+}catch(e){issue=e.message;return{issue,trace,own:bot.inventory.items().map(snap),cursor:snap(c?.selectedItem),hp:bot.health,p:bot.entity.position};}
+finally{if(c){if(c.selectedItem){const target=c.slots.findIndex((i,k)=>!i&&k>=c.inventoryStart&&k<c.inventoryEnd);if(target>=0)await bot.clickWindow(target,0,0);}await c.close();}bot.clearControlStates();bot.pathfinder.setGoal(null);}
+-- returned --
+{"issue": null, "trace": [{"from": 12, "to": 27, "before": {"name": "wooden_pickaxe", "count": 1, "wear": 10, "slot": 12}, "after": {"name": "wooden_pickaxe", "count": 1, "wear": 10, "slot": 27}, "cursor": null}], "bank": [{"name": "leather", "count": 1, "wear": null, "slot": 0}, {"name": "arrow", "count": 5, "wear": null, "slot": 1}, {"name": "ender_pearl", "count": 8, "wear": null, "slot": 2}, {"name": "feather", "count": 6, "wear": null, "slot": 3}, {"name": "emerald", "count": 4, "wear": null, "slot": 4}, {"name": "filled_map", "count": 1, "wear": null, "slot": 5}, {"name": "gold_ingot", "count": 1, "wear": null, "slot": 6}, {"name": "gold_nugget", "count": 6, "wear": null, "slot": 7}, {"name": "coal", "count": 1, "wear": null, "slot": 8}, {"name": "string", "count": 1, "wear": null, "slot": 9}, {"name": "spruce_sapling", "count": 1, "wear": null, "slot": 10}, {"name": "spider_eye", "count": 1, "wear": null, "slot": 11}], "own": [{"name": "wooden_pickaxe", "count": 1, "wear": 10, "slot": 9}], "p": {"x": 6.320148882249376, "y": 67, "z": 82.30645108303314}, "hp": 20, "world": "overworld"}

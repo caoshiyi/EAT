@@ -1,0 +1,71 @@
+program #6766 on p2: 21 s
+--- output ---
+ISSUE THREAT_[17274,"magma_cube",{"x":-8.253423332980633,"y":66,"z":-28.009248603206004}] 42 Vec3 { x: -13.521456701006237, y: 65, z: -22.511692953073727 }
+LOCAL_END_FAIL END_NEED_12_HAVE_7
+--- returned ---
+{
+ "issue": "THREAT_[17274,\"magma_cube\",{\"x\":-8.253423332980633,\"y\":66,\"z\":-28.009248603206004}]",
+ "start": 25,
+ "target": 155,
+ "index": 25,
+ "closed": true,
+ "p": {
+  "x": -4.458325765463177,
+  "y": 65,
+  "z": -14.488310441088966
+ },
+ "hp": 20,
+ "food": 20,
+ "elapsed": 21026,
+ "stock": 5,
+ "inv": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   18
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 courierrequestexpired10:50 no readinessACK; release/notpending. P3 retainsHOMEFULL20/IRON46STONE19/caps2. Switching boundednearbyownwork to avoidqueue; noBANKcap assumption.
+p4: P3 expiredcourierrequestREAD/released: actualP4privateFULLbore/only1BASALT, no spare8/no credibleHOMEreceipt by10:50; no promisedtrip. P4 actualSnowroofrecoverable +SAND4+CAP1 nowDAY: recover4balls→Snowcap, pillar3, correctedNEXT-node routeguard→16+campban
+p4: k <=10:55. SamecallerFULLclosingifblocked. Existing2CAPheld afterroofrecraft, no initial4bootstrapneeded. No sourcequota/courierwaiting.
+p4: P4 twoactualMELEE emergencevetoes whileFULL; changedapproach UNDERGROUND1cellWEST awayfromcube, notloweringguardagain. SwaprecoverableSnowroof4→Basaltgift, use4SnowfornewSnowroof3, digONLYoldrestoredownSand3,Y63/64,z79→enclosed2-cellroom, freshALLouterface
+p4: sproof. No fieldbody/no extraequipment; preserveslastroofrecoverable forDAYexit. Objective16by10:55 likelyexpires; no promisedreceiverwait.
+p3: P3 actual5legbatch10:52:06→10:54:36 Rock(-97.50,63,86.50) FULL20 healthy. Reserveblocker resolved whole-endpoint granularity (actualpods only2entrycaps), recoveredroutecaps/IRON46STONEretained; no newmanufacture/courier. Nativefreshplan+hunt2pearlsnow.
+--- p2 now: (-4.5, 65, -14.5) in the_nether, health 20/20, food 20/20, alive

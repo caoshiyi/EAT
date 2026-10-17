@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const grid=[];for(let x=4;x<=8;x++)for(let z=77;z<=82;z++)grid.push([x,z,[64,65,66,67,68,69].map(y=>{const b=bot.blockAt(new Vec3(x,y,z));return[b?.name,b?.shapes,b?.getProperties()]})]);return{p:bot.entity.position,grid};

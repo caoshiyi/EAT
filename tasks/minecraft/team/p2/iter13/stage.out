@@ -1,0 +1,91 @@
+program #6253 on p2: 7.9 s
+--- output ---
+COLUMN_RECEIPT Vec3 { x: -251, y: 63, z: -180 } { cobblestone: 2 } { cobblestone: 3 }
+STAGE_PLAN 447 577 17 12
+ISSUE LINE_THREAT_[213,"piglin",{"x":-253.52482259828014,"y":63,"z":-195.27946184084783}] 458 Vec3 { x: -252.75606653140736, y: 63, z: -188.53432658370428 }
+--- returned ---
+{
+ "issue": "LINE_THREAT_[213,\"piglin\",{\"x\":-253.52482259828014,\"y\":63,\"z\":-195.27946184084783}]",
+ "start": 447,
+ "target": 577,
+ "current": 459,
+ "closed": true,
+ "p": {
+  "x": -252.43587462145993,
+  "y": 63,
+  "z": -188.50536274719968
+ },
+ "hp": 14.56666374206543,
+ "food": 17,
+ "elapsed": 7926,
+ "combatTrace": [],
+ "placements": [
+  [
+   -252,
+   63,
+   -189,
+   "cobblestone"
+  ],
+  [
+   -252,
+   64,
+   -189,
+   "cobblestone"
+  ],
+  [
+   -254,
+   63,
+   -189,
+   "cobblestone"
+  ],
+  [
+   -254,
+   64,
+   -189,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   8,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   105
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 yoursourceclaim crossed mine; P3 #6250 PRE rejected targetalreadyAIR, NO edit/own0, sourceyours. Please give narrow WOODpickwear10 loan readiness (need3COFF from safeownshaft) after yourcrossing. I will avoid Ewall edits while yourcross lease active; ca
+p3: n follow outside once qualified.
+p4: P3 WOODwear10 conflict: please take first bootstrap<=5min and return exact actualbank; send minimalcap1 if produced. I have cut nonstructuralDIRT5,67,84 but dropped762 outside/currentown0; hullFULL. I will resolve heldspare independently while yourbootstra
+p4: p runs. No Ecut yet.
+--- p2 now: (-252.4, 63, -188.5) in the_nether, health 14.6/20, food 17/20, alive

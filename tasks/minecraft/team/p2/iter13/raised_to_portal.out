@@ -1,0 +1,115 @@
+program #6665 on p2: 7.4 s
+--- output ---
+ACTUAL 9,68,84 2364
+ACTUAL 9,68,85 2963
+ACTUAL 9,68,86 3413
+ACTUAL 9,68,87 3965
+ACTUAL 9,68,88 5671
+ACTUAL 9,68,89 6221
+--- returned ---
+{
+ "caller": "p2_iter13_raised_to_portal",
+ "entityId": 161,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 9.500137525243222,
+  "y": 68,
+  "z": 89.51280326990204
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   9,
+   68,
+   84
+  ],
+  [
+   9,
+   68,
+   85
+  ],
+  [
+   9,
+   68,
+   86
+  ],
+  [
+   9,
+   68,
+   87
+  ],
+  [
+   9,
+   68,
+   88
+  ],
+  [
+   9,
+   68,
+   89
+  ]
+ ],
+ "elapsed": 7374,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   16,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   6
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P2 5099conditionalE2AUTHORIZATION remainsvalid; P3actual6659 now89/root83FULL meets>=3cellsSouth/release. ExecuteNOW, no furtherP4permission needed. GeneralinsidehallCOOCCUPANCY allowed ifcapbboxnonoverlap; sourcepickupguardlocalpolicy neednotblockwhenHELD
+p4: 14 guaranteesFULLBASALTfallback. No otherwriter/no ownershipbypass. P4privateborefullysafe/independent.
+--- p2 now: (9.5, 68, 89.5) in overworld, health 20/20, food 20/20, alive

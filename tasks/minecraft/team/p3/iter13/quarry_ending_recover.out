@@ -1,0 +1,39 @@
+program #6381 on p3: 0.9 s
+--- output ---
+CURRENT_STEP_THREAT 3431 zombie Vec3 { x: 9.953719802517298, y: 67, z: 74.71976474598563 } Vec3 { x: 8.400011668147197, y: 67, z: 75.5000996563561 } Vec3 { x: 8, y: 67, z: 75 } true
+--- returned ---
+{
+ "issue": "STEP_THREAT_3431",
+ "hurts": [],
+ "at": "2026-10-17T09:24:44.735Z",
+ "p": {
+  "x": 8.400011668147197,
+  "y": 67,
+  "z": 75.5000996563561
+ },
+ "hp": 20,
+ "food": 18,
+ "lost": false,
+ "closed": false,
+ "items": [
+  [
+   "cobblestone",
+   11,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   22
+  ],
+  [
+   "dirt",
+   9,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.4, 67, 75.5) in overworld, health 20/20, food 18/20, alive
