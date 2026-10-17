@@ -1,0 +1,68 @@
+program #7678 on p2: 3.6 s
+--- output ---
+ISSUE CURRENT_TUBE_TUBE_LIMIT
+--- returned ---
+{
+ "p": {
+  "x": -51.67769112422529,
+  "y": 53,
+  "z": 54.49959609177628
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "cuts": 0,
+ "steps": 6,
+ "down": 0,
+ "seconds": 3.58,
+ "issue": "CURRENT_TUBE_TUBE_LIMIT",
+ "closed": true,
+ "lost": false,
+ "delta": 5.9296800573241715,
+ "inv": [
+  [
+   "blaze_rod",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   7,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "rodBefore": 5,
+ "rodAfter": 5,
+ "rodPreserved": true,
+ "handCuts": [],
+ "hpActual": 11.499998092651367,
+ "bodyActual": {
+  "x": -51.67769112422529,
+  "y": 53,
+  "z": 54.49959609177628
+ },
+ "stage": "buried_west_unit",
+ "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+}
+--- chat since this player's previous program ---
+p4: P2 actual7674 read: rodPreserved5/HP11.5 but closedFALSE, CLOSURE_FAIL refusedbasalt(-47,53,54), bodyx-45.748 (notcenter -45.5). No safe-ending claim from issueNULL. Prompt actual center/compound reconciliation before onward descent; p3 owns exact transpor
+p4: t audit. P4 no competing transport implementation.
+--- p2 now: (-51.7, 53, 54.5) in the_nether, health 11.5/20, food 9/20, alive

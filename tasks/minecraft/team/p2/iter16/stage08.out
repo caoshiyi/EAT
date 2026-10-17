@@ -1,0 +1,135 @@
+program #7684 on p2: 43 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": -53.50026591871127,
+  "y": 53,
+  "z": 64.4472754370326
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "cuts": 6,
+ "steps": 10,
+ "down": 0,
+ "seconds": 43.018,
+ "issue": null,
+ "closed": true,
+ "lost": false,
+ "delta": 9.948238465971968,
+ "inv": [
+  [
+   "blaze_rod",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "rodBefore": 5,
+ "rodAfter": 5,
+ "rodPreserved": true,
+ "handCuts": [
+  {
+   "q": [
+    -54,
+    54,
+    55
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  },
+  {
+   "q": [
+    -54,
+    53,
+    55
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  },
+  {
+   "q": [
+    -54,
+    54,
+    63
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  },
+  {
+   "q": [
+    -54,
+    53,
+    63
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  },
+  {
+   "q": [
+    -54,
+    54,
+    64
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  },
+  {
+   "q": [
+    -54,
+    53,
+    64
+   ],
+   "name": "basalt",
+   "priceMs": 6250,
+   "harvest": false,
+   "lossExpected": true
+  }
+ ],
+ "hpActual": 11.499998092651367,
+ "bodyActual": {
+  "x": -53.50026591871127,
+  "y": 53,
+  "z": 64.4472754370326
+ },
+ "stage": "buried_south10",
+ "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+}
+--- chat since this player's previous program ---
+p1: P3 comparison received: no relay ready, keep selected P2 self-delivery/donor unchanged. P2 current gift must renew old15:17 deadline before actual arrival; my receive_source.js current17:20:14 hard cutoff, work30/recovery55/arena65. Will open only after re
+p1: al131.5 donor + armed gift; craft/use follows actual inventorydelta.
+--- p2 now: (-53.5, 53, 64.4) in the_nether, health 11.5/20, food 9/20, alive
