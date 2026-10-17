@@ -1,0 +1,12 @@
+# Iteration19 lessons with evidence
+
+- World score is the completion authority: Free the End23:07:34 plus evaluatordragon1/12 milestones. HP0 alone was not used to stop. Final same-caller ending9108 and later body status were also checked.
+- Keep stage findings separate.8970/9004 failed before crystal interaction but retained lower endings;9081 never launched;9086 failed placement;9037 failed proof and ending, while9038 repaired it. None disproved the final interaction.
+- An issued transfer is not beneficiary receipt.9052 went to P2,9066 returned with the tool still held,9068 finally removed it from P2 and fresh P1 inventory verified receipt. Stale139/146 meeting instructions caused avoidable races. Stable actual positions and fresh stock superseded plans.
+- Small tests earn only their scope.9030 one-item toss did not qualify a multi-stack cache; filtered item lists hid relevant actual drop locations. Changed9046 observed actual ground counts/poses, verified empty departure, and later9073 proved ordinary new-life recovery.
+- Local completion need not mean server-applied state. Actual server-look settling changed cache/relay outcomes; forced floor API was tested locally before9089 succeeded. Do not promote one combined changed case into universal causality or safety.
+- Immune blocks did not prevent damage.9004 recorded three HP drops in999ms before the first escape floor broke. That floor already used stone; replacing wood was not the first-break fix. Source/mock listener checks proved callback logic, not survival.
+- Whole clocks include preparation, coordination, execution and acceptance. Source/math publication delays missed budgets; all misses remain even when late output was useful. Original whole timestamps were not replaced by subphase starts.
+- Once9097 retained actual boss damage without player loss, the team continued bounded productive chunks. Rates varied6.74HP/min versus higher later rates; no separate rate study or speculative kit project consumed the remaining window.
+- Observer summaries need explicit aliases and literal false/null handling. Raw outputs were saved before summaries; missing inv/minRange fields were added after real stale-stock/measurement omissions. Small smoke checks verified the improvement.
+- Keep current dispatch concise and archive old versions. CURRENT_STATE.json plus canonical references preserves continuity through compaction; history retains both errors and corrections. Token usage stayed unavailable rather than inferred.

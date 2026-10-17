@@ -1,0 +1,202 @@
+program #8919 on p4: 18.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T21:37:02.155Z",
+ "world": "overworld",
+ "lifeId": 171,
+ "currentId": 171,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 138.51366691361704,
+  "y": -36,
+  "z": 2240.4089078349325
+ },
+ "hp": 20,
+ "food": 16,
+ "ground": true,
+ "closed": false,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   4,
+   null
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   1,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "book",
+   24,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    138,
+    -34,
+    2241
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "ACTUAL_ONE_WOOD",
+   1
+  ]
+ ],
+ "items": [],
+ "foes": [
+  [
+   188,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2246.949877327279
+   },
+   20
+  ],
+  [
+   189,
+   "zombie",
+   {
+    "x": 132.77694602106243,
+    "y": -42,
+    "z": 2246.734168495282
+   },
+   20
+  ],
+  [
+   190,
+   "zombie",
+   {
+    "x": 142.62362540263703,
+    "y": -39.24674805998802,
+    "z": 2246.508276315294
+   },
+   20
+  ],
+  [
+   191,
+   "zombie",
+   {
+    "x": 138.00397839542399,
+    "y": -42,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   192,
+   "zombie",
+   {
+    "x": 143.12775871611782,
+    "y": -39.07840000152588,
+    "z": 2246.49493939481
+   },
+   20
+  ],
+  [
+   193,
+   "zombie",
+   {
+    "x": 136.53796695730702,
+    "y": -41,
+    "z": 2247.7623297956075
+   },
+   20
+  ],
+  [
+   194,
+   "creeper",
+   {
+    "x": 135.8138322425715,
+    "y": -41.5,
+    "z": 2247.695580440622
+   },
+   20
+  ],
+  [
+   196,
+   "zombie",
+   {
+    "x": 143.74399907643726,
+    "y": -38.02824220061302,
+    "z": 2247.4270933553867
+   },
+   20
+  ],
+  [
+   211,
+   "spider",
+   {
+    "x": 136.47187501192093,
+    "y": -39.89999997615814,
+    "z": 2246.6998995603453
+   },
+   15
+  ],
+  [
+   212,
+   "creeper",
+   {
+    "x": 150.4709376881688,
+    "y": -35.5,
+    "z": 2248.6538563414592
+   },
+   20
+  ],
+  [
+   216,
+   "zombie",
+   {
+    "x": 144.4580071042353,
+    "y": -38,
+    "z": 2247.6999233629435
+   },
+   20
+  ],
+  [
+   217,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -42,
+    "z": 2247.699981702475
+   },
+   20
+  ]
+ ],
+ "planks": 1
+}
+--- chat since this player's previous program ---
+p1: P1 physicallyRETURNED131,-36,2275 HP20 NORTH1312274 openforfuturefinitegift. P4 sourceaway139 releasedpass; requestordinary2pick+Sword+4cap receiptHERE onlywhenactualoutputsheld, no blindtoss/waitwindow. P4holdnewendingAWAY132 untilentrydone.
+--- p4 now: (138.5, -36, 2240.4) in overworld, health 20/20, food 16/20, alive

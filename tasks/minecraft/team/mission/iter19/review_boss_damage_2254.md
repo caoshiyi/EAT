@@ -1,0 +1,11 @@
+# Iteration19 decisive review — controlled boss damage retained
+
+Updated 2026-10-17T22:55:33.508028+00:00. 9097 ran177s from22:51:11, ending about22:54:08. Actual issued9, minimumRange3.5401, initialboss190→minimum/final170.125, phase1 throughout the returned ending, crystals[]. P1 retained FULL30.5,Y49,+24.3/14.333HP17food/noCloud/ground/controls clear, issueNULL/endingNULL/lostFALSE/retreatedFALSE. No player health loss. This is real controlled boss damage after crystal removal, not packet count or earlier crystal damage credit.
+
+Current ordinary SWORDwear8, STONE84=45guarded/WOOD58, END30+BASALT4COFF3TUFF1. Nine issued attacks and eight sword wear are distinct fields; do not equate every packet with a successful hit. Actual net boss damage19.875 is accepted from primitive HP observations and final HP. No healing reversed that damage within this unit. Official victory remains unverified/dragon still0 at last evaluator.
+
+Observed net rate is19.875/177s, about6.74HP/min for THIS unit. Remaining170.125 would take about25.3min at that same rate, excluding any additional coordination/gaps/changed availability. This is a conditional projection, not a guarantee, bound or impossibility claim. Current deadline23:30:19 leaves roughly36min; include preparation, between-unit delays and acceptance in the whole objective budget. No separate rate-study/requalification/source project is needed before productive combat continuation. Owner chooses the next bounded unit/failure response from actual current state.
+
+First9093LOW49 returned issued0/minrange6.548/190→190/healthy ending. Changed9097jump-and-range unit now demonstrated damage with retained body; that relevant change earned a field result. P2 late height model is closed (113s/60sMISS53, hardMISS9); it is not a DPS/safety promise or causal credit for P1's earlier selected jump. P3 exact prior normal attack callback matched known primitive; no new API audit gate.
+
+All three support inputs remain complete/released, no new P4 need. Last crystal9089removed/EMPTY and retained ending accepted, with earlier failed clocks preserved. Intentional P1death22:27:48 remains in total125. Latest official source remains dragon0/milestones11/deaths125; re-evaluate promptly on reported victory and at deadline. Next review actualcombatresult/danger or23:04. Tokens unavailable.

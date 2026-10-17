@@ -1,0 +1,879 @@
+[
+  {
+    "header": "== #8950 2026-10-17T21:45:36 p1 role=encounter_owner iter=19 0 s",
+    "returned_missing": true
+  },
+  {
+    "header": "== #8951 2026-10-17T21:45:48 p1 role=encounter_owner iter=19 7.4 s",
+    "returned": {
+      "issue": null,
+      "endingIssue": null,
+      "lost": false,
+      "dimension": "the_end",
+      "lifeId": 167,
+      "p": {
+        "x": 58.332539347850634,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "food": 20,
+      "ground": true,
+      "closed": true,
+      "currentCloud": false,
+      "caps": 3,
+      "trace": [
+        [
+          "WORLD_CUT",
+          [
+            58,
+            51,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            58,
+            52,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            58,
+            53,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            58,
+            54,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            58,
+            55,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CAP",
+          [
+            58,
+            51,
+            0
+          ],
+          "end_stone"
+        ]
+      ],
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          17
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ],
+        [
+          "end_stone",
+          3,
+          null
+        ]
+      ],
+      "clouds": [],
+      "controls": {},
+      "cursor": null,
+      "mined": 5
+    },
+    "output": "ATTEMPT_CUT [ 58, 51, 0 ] end_stone\nATTEMPT_CUT [ 58, 52, 0 ] end_stone\nATTEMPT_CUT [ 58, 53, 0 ] end_stone\nATTEMPT_CUT [ 58, 54, 0 ] end_stone\nATTEMPT_CUT [ 58, 55, 0 ] end_stone\n"
+  },
+  {
+    "header": "== #8952 2026-10-17T21:46:23 p1 role=encounter_owner iter=19 3.4 s",
+    "returned": {
+      "issue": null,
+      "endingIssue": null,
+      "lost": false,
+      "dimension": "the_end",
+      "lifeId": 167,
+      "p": {
+        "x": 58.332539347850634,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "food": 20,
+      "ground": true,
+      "closed": true,
+      "currentCloud": false,
+      "caps": 4,
+      "trace": [
+        [
+          "WORLD_CUT",
+          [
+            58,
+            51,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CAP",
+          [
+            58,
+            51,
+            0
+          ],
+          "end_stone"
+        ]
+      ],
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          18
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ],
+        [
+          "end_stone",
+          4,
+          null
+        ]
+      ],
+      "clouds": [],
+      "controls": {},
+      "cursor": null,
+      "beforeItems": [
+        [
+          2675,
+          {
+            "x": 58.875,
+            "y": 52,
+            "z": 0.125
+          },
+          "end_stone",
+          {
+            "present": true,
+            "itemId": 376,
+            "itemCount": 1
+          }
+        ]
+      ],
+      "afterItems": []
+    },
+    "output": "ATTEMPT_CUT [ 58, 51, 0 ] end_stone\n"
+  },
+  {
+    "header": "== #8953 2026-10-17T21:46:35 p4 role=completion_partner iter=19 0 s",
+    "returned": {
+      "at": "2026-10-17T21:46:35.536Z",
+      "world": "overworld",
+      "life": 171,
+      "p": {
+        "x": 129.5030768539201,
+        "y": -36,
+        "z": 2274.621786214978
+      },
+      "hp": 20,
+      "food": 16,
+      "ground": true,
+      "closed": true,
+      "faces": [
+        [
+          [
+            129,
+            -37,
+            2274
+          ],
+          "mossy_stone_bricks",
+          true
+        ],
+        [
+          [
+            129,
+            -34,
+            2274
+          ],
+          "mossy_stone_bricks",
+          true
+        ],
+        [
+          [
+            130,
+            -36,
+            2274
+          ],
+          "basalt",
+          true
+        ],
+        [
+          [
+            130,
+            -35,
+            2274
+          ],
+          "stone_bricks",
+          true
+        ],
+        [
+          [
+            128,
+            -36,
+            2274
+          ],
+          "cobbled_deepslate",
+          true
+        ],
+        [
+          [
+            128,
+            -35,
+            2274
+          ],
+          "cobbled_deepslate",
+          true
+        ],
+        [
+          [
+            129,
+            -36,
+            2275
+          ],
+          "stone_bricks",
+          true
+        ],
+        [
+          [
+            129,
+            -35,
+            2275
+          ],
+          "stone_bricks",
+          true
+        ],
+        [
+          [
+            129,
+            -36,
+            2273
+          ],
+          "basalt",
+          true
+        ],
+        [
+          [
+            129,
+            -35,
+            2273
+          ],
+          "basalt",
+          true
+        ]
+      ],
+      "controls": {},
+      "cursor": null,
+      "window": null,
+      "inv": [
+        [
+          "cobblestone_stairs",
+          2,
+          null
+        ],
+        [
+          "stick",
+          2,
+          null
+        ],
+        [
+          "bone",
+          4,
+          null
+        ],
+        [
+          "wooden_pickaxe",
+          1,
+          17
+        ],
+        [
+          "basalt",
+          1,
+          null
+        ],
+        [
+          "book",
+          42,
+          null
+        ]
+      ],
+      "armor": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "output": "OWN_KNOWN_TIMEOUT_LISTENERS_REMOVED []\n"
+  },
+  {
+    "header": "== #8955 2026-10-17T21:46:37 p3 role=validation_owner iter=19 0 s",
+    "returned": {
+      "at": "2026-10-17T21:46:37.736Z",
+      "dimension": "overworld",
+      "p": {
+        "x": 6.496148992219562,
+        "y": 67,
+        "z": 82.3
+      },
+      "hp": 6.499999046325684,
+      "food": 17,
+      "ground": true,
+      "inventory": [],
+      "cursor": null,
+      "window": null,
+      "controls": {},
+      "goal": null,
+      "listeners": [
+        [
+          "health",
+          []
+        ],
+        [
+          "death",
+          [
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          "respawn",
+          [
+            ""
+          ]
+        ],
+        [
+          "physicsTick",
+          [
+            "",
+            "monitorMovement"
+          ]
+        ],
+        [
+          "entitySpawn",
+          [
+            "entitySpawn"
+          ]
+        ],
+        [
+          "entityGone",
+          [
+            "entityGone"
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "header": "== #8954 2026-10-17T21:46:36 p1 role=encounter_owner iter=19 8.1 s",
+    "returned": {
+      "issue": "SEAL_RESERVE_3_0_0_4",
+      "endingIssue": null,
+      "lost": false,
+      "dimension": "the_end",
+      "lifeId": 167,
+      "p": {
+        "x": 57.408703577449145,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "food": 20,
+      "ground": true,
+      "closed": true,
+      "currentCloud": false,
+      "caps": 0,
+      "trace": [
+        [
+          "WORLD_CAP",
+          [
+            57,
+            49,
+            -1
+          ],
+          "end_stone"
+        ],
+        [
+          "WORLD_CAP",
+          [
+            57,
+            50,
+            -1
+          ],
+          "end_stone"
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            50,
+            0
+          ],
+          "tuff",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            49,
+            0
+          ],
+          "basalt",
+          20
+        ],
+        [
+          "OBSERVED_MOVE",
+          [
+            57,
+            49,
+            0
+          ],
+          {
+            "x": 57.45338613939593,
+            "y": 49,
+            "z": 0.4999999999999327
+          },
+          {
+            "x": -0.022264609051670575,
+            "y": -0.0784000015258789,
+            "z": 0
+          },
+          20,
+          "work",
+          false
+        ],
+        [
+          "WORLD_CAP",
+          [
+            58,
+            49,
+            0
+          ],
+          "end_stone"
+        ],
+        [
+          "WORLD_CAP",
+          [
+            58,
+            50,
+            0
+          ],
+          "end_stone"
+        ],
+        [
+          "WORLD_CAP",
+          [
+            56,
+            49,
+            0
+          ],
+          "basalt"
+        ],
+        [
+          "WORLD_CAP",
+          [
+            56,
+            50,
+            0
+          ],
+          "tuff"
+        ]
+      ],
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          20
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ]
+      ],
+      "clouds": [],
+      "controls": {},
+      "cursor": null,
+      "moves": 1,
+      "reached": false,
+      "callable": 238,
+      "crystals": [
+        [
+          2320,
+          {
+            "x": 33.5,
+            "y": 83,
+            "z": 24.5
+          }
+        ]
+      ],
+      "dragon": [
+        [
+          2305,
+          {
+            "x": 36.64369798500326,
+            "y": 82.9567177015375,
+            "z": -7.062138512157247
+          },
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            200,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1
+          ]
+        ]
+      ],
+      "geometry": []
+    },
+    "output": "ATTEMPT_CUT [ 57, 50, 0 ] tuff\nATTEMPT_CUT [ 57, 49, 0 ] basalt\n"
+  },
+  {
+    "header": "== #8956 2026-10-17T21:46:48 p3 role=validation_owner iter=19 0 s",
+    "returned": {
+      "at": "2026-10-17T21:46:48.812Z",
+      "listeners": [
+        [
+          "entitySpawn",
+          [
+            {
+              "name": "entitySpawn",
+              "source": "function (e) {\n        if (e === bot.entity) return\n        worldView.emitter.emit('entity', { id: e.id, name: e.name, pos: e.position, width: e.width, height: e.height, username: e.username })\n      }"
+            }
+          ]
+        ],
+        [
+          "entityGone",
+          [
+            {
+              "name": "entityGone",
+              "source": "function (e) {\n        worldView.emitter.emit('entity', { id: e.id, delete: true })\n      }"
+            }
+          ]
+        ]
+      ],
+      "hp": 6.499999046325684,
+      "p": {
+        "x": 6.496148992219562,
+        "y": 67,
+        "z": 82.3
+      }
+    }
+  },
+  {
+    "header": "== #8957 2026-10-17T21:47:07 p1 role=encounter_owner iter=19 0 s",
+    "returned": {
+      "p": {
+        "x": 57.408703577449145,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          20
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ]
+      ],
+      "items": [],
+      "roof": [
+        [
+          2,
+          "end_stone"
+        ],
+        [
+          3,
+          "end_stone"
+        ],
+        [
+          4,
+          "end_stone"
+        ],
+        [
+          5,
+          "end_stone"
+        ],
+        [
+          6,
+          "end_stone"
+        ],
+        [
+          7,
+          "end_stone"
+        ],
+        [
+          8,
+          "end_stone"
+        ]
+      ]
+    }
+  },
+  {
+    "header": "== #8958 2026-10-17T21:47:40 p1 role=encounter_owner iter=19 0 s",
+    "returned_missing": true
+  },
+  {
+    "header": "== #8959 2026-10-17T21:47:40 p1 role=encounter_owner iter=19 8.8 s",
+    "returned": {
+      "issue": null,
+      "endingIssue": null,
+      "lost": false,
+      "dimension": "the_end",
+      "lifeId": 167,
+      "p": {
+        "x": 57.408703577449145,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "food": 20,
+      "ground": true,
+      "closed": true,
+      "currentCloud": false,
+      "caps": 3,
+      "trace": [
+        [
+          "WORLD_CUT",
+          [
+            57,
+            51,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            52,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            53,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            54,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CUT",
+          [
+            57,
+            55,
+            0
+          ],
+          "end_stone",
+          20
+        ],
+        [
+          "WORLD_CAP",
+          [
+            57,
+            51,
+            0
+          ],
+          "end_stone"
+        ]
+      ],
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          25
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ],
+        [
+          "end_stone",
+          3,
+          null
+        ]
+      ],
+      "clouds": [],
+      "controls": {},
+      "cursor": null,
+      "mined": 5
+    },
+    "output": "ATTEMPT_CUT [ 57, 51, 0 ] end_stone\nATTEMPT_CUT [ 57, 52, 0 ] end_stone\nATTEMPT_CUT [ 57, 53, 0 ] end_stone\nATTEMPT_CUT [ 57, 54, 0 ] end_stone\nATTEMPT_CUT [ 57, 55, 0 ] end_stone\n"
+  },
+  {
+    "header": "== #8960 2026-10-17T21:47:57 p1 role=encounter_owner iter=19 0 s",
+    "returned": {
+      "p": {
+        "x": 57.408703577449145,
+        "y": 49,
+        "z": 0.4999999999999327
+      },
+      "hp": 20,
+      "inventory": [
+        [
+          "stone_pickaxe",
+          1,
+          25
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          0
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ],
+        [
+          "end_stone",
+          3,
+          null
+        ]
+      ],
+      "items": [
+        [
+          3013,
+          {
+            "x": 58.875,
+            "y": 52,
+            "z": 0.6106289703425111
+          },
+          "end_stone",
+          {
+            "present": true,
+            "itemId": 376,
+            "itemCount": 1
+          }
+        ]
+      ],
+      "roof": [
+        [
+          2,
+          "end_stone"
+        ],
+        [
+          3,
+          "air"
+        ],
+        [
+          4,
+          "air"
+        ],
+        [
+          5,
+          "air"
+        ],
+        [
+          6,
+          "air"
+        ],
+        [
+          7,
+          "end_stone"
+        ],
+        [
+          8,
+          "end_stone"
+        ]
+      ]
+    }
+  },
+  {
+    "header": "== #8961 2026-10-17T21:48:17 p2 role=continuity_owner iter=19 0 s",
+    "returned_missing": true
+  }
+]

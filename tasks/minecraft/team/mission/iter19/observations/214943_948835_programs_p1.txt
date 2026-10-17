@@ -1,0 +1,6 @@
+== #8960 2026-10-17T21:47:57 p1 role=encounter_owner iter=19 0 s
+const p=bot.entity.position;bot.clearControlStates();bot.pathfinder.setGoal(null);return{p,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(p)<10).map(e=>[e.id,e.position.clone(),bot.registry.items[e.metadata?.[8]?.itemId]?.name,e.metadata?.[8]]),roof:Array.from({length:7},(_,n)=>[n+2,bot.blockAt(p.floored().offset(0,n+2,0))?.name])};
+-- returned --
+{"p": {"x": 57.408703577449145, "y": 49, "z": 0.4999999999999327}, "hp": 20, "inventory": [["stone_pickaxe", 1, 25], ["stone_pickaxe", 1, 0], ["stone_sword", 1, 0], ["end_stone", 3, null]], "items": [[3013, {"x": 58.875, "y": 52, "z": 0.6106289703425111}, "end_stone", {"present": true, "itemId": 376, "itemCount": 1}]], "roof": [[2, "end_stone"], [3, "air"], [4, "air"], [5, "air"], [6, "air"], [7, "end_stone"], [8, "end_stone"]]}
+
+STDERR:

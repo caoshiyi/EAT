@@ -1,0 +1,11 @@
+# Iteration19 dangerous-result review — 2026-10-17T22:13:19.061234+00:00
+
+9004changedlower/contactallowanceattempt COMPLETED128.5s, start22:10:10→~22:12:18.5. issueDiggingaborted/climbed24/trialCompleteFALSE/**attackedFALSE/removedFALSE/crystalAfterNULL**. FinalinteractionSTILLUNEXECUTED. SamecallerDOWN24→FULL30.500,Y49,+24.442/HP4.833335876food16/ground/noCloud/controls{}/cursorNULL/endingNULL/lostFALSE. Fresh22:12:22andlaterstatusconfirmsameEndbody/HP/stock, no death. EndingretainedBUTcriticallyinjured, nothealthy/safefuturecapacity.
+
+ThreeHEALTH_EVENTs:22:11:21.905HP11.833 atY73 dragon36.426,74.814,19.119;22:11:22.408HP8.333 sameY73 dragon28.383,75.066,24.089;22:11:22.904HP4.833 sameY73 dragon24.703,75.485,29.739. Loss6+3.5+3.5in~1s, dragonnearactualtrace/no cloudentitiesfinal. ContactsourcefitsbutactualdamagesourceUNISOLATED; do notdiagnosewithoutdamageevent. Firstallowedhitexecuted/secondabortfired, thirdhealthlossoccurredbeforeretreatloweredbody. Onecontactallowancewasnotone-hitworldguarantee. P3source/mockverifiedcallbacksemanticsONLY, notcontact/survivalproof; no causalblame/creditbeyondactual.
+
+CurrenttoolSTONE129=0guarded/WOOD50=8guarded, END32+COFF2+BASALT1TUF1/SWORD0. Initial56capacityspent48for24UP/DOWN, notwhole54success. Repair/loanactualsremainhistoricalinputsnowconsumed. No currentfoodheldbyanyowner; actualfoodstat16notcarriedfood. P4FULL12920HP/NOtools/fullcaps/BONE4BOOK42STICK2STAIRS2; P2SOUTH11.5HP9foodBOOK9SLAB2; P3camp6.5HP17empty. No automaticnewsource/rekit/foodproject. Ownerschoosecurrentobjective-linkedunit/failure response andwholeprice.
+
+With8970thisissecondactualhealth-damagingascentinterruptionbeforefinalinteraction; twoequivalentfailuresrequirechangedhypothesis. Alreadyretired8975/8981distanceguardsnotrevivedbynewlowerfailure. Do notacceptglobalimpossibilityfromoneenclosureimplementation. Nextfirstunresolvedstagecurrentbody/capacity/changedhazardhypothesis, no dependenthighactionfromoldstockorhealth. Ownerinspectcanonicalbeforeanalysis/newoperation, especiallylowending.
+
+SupportloanCLOSEDbothendingsbefore22:11 (physical~4m1.9s/firststageMET); original35min22:06:50MISSremains, latecontinuation22:16stillunmet. Lastofficial22:04dragon0/11/deaths124/8985, no victory. Mission23:30:19notexperimentstop. Reviewimmediatecurrentbody/ownerACK, then22:16cutoff; tokenusageunavailable.

@@ -1,0 +1,11 @@
+# Iteration 19 decisive review — verified cache and survival respawn
+
+Updated 2026-10-17T22:29:08.640540+00:00. Official evaluator22:28:22.805: **dragon0, milestones11/12, deaths125, programs9048**. P1 deaths35, P2 deaths35, P3 deaths26, P4 deaths29. Event22:27:48 confirms P1 fell out of the world at97.8,Y-98,z6.7 in the End. This is the owner-selected intentional survival death; it is counted, not hidden as free recovery. No dragon victory.
+
+Changed cache call9046 ran12.1s from22:27:37. Literal primaryProof=true/reserveProof=true/voidCommitted=true/deathObserved=true/respawnObserved=true. Before empty departure, main cache was physically observed atX81.125,Y49: END28/COFF2/SWORD0/WOOD58/TUFF1; reserve atX91.11,Y49: END6+BASALT1. Expected main counts matched actual item metadata. These are fresh ground assets, not carried gear or future availability guarantees. V3 changed server-look settling, post-cut expected counts and actual item footprint; success does not isolate one cause of earlier failures. No third identical proof attempt.
+
+9046 respawned OW146.5,-36,2241.5 with20HP/20food/empty inventory. Its ending was explicitly UNVERIFIED: ground=false, respawnValid=false, endingIssue=ENDING_POSTSTATE_UNVERIFIED, despite full floor/roof and no cloud. Fresh follow-up9048 at22:28:10/0.9s established actualground=true at146.5,-36,2242.523 with full floor/roof,20HP/20food/empty/controls clear. Respawn acceptance is separate from initial unverified frame. Cache recovery remains UNEXECUTED.
+
+P4 gift9041 has been held since22:26:02.471: ONEstone wear0/129guarded, workingWOOD9 and actual caps. Sourceprefix22:24MET. Ordinary OW gift + donor ending22:30 is pending; no further production. P4 asked for actual recipient interface7426? actual7446–47; now P1's fresh OW body is observable, but owners choose handoff and acceptance. P1 still owns four portal-access cells until its passage; P4 acknowledged no duplicate mutation.
+
+Health20+ordinary cache recovery+ending remains due22:29 and unmet. Original final-crystal whole22:06:50 and late22:16 MISSES remain. Primary has full health but no carried gear; do not equate respawn with completed objective or asset recovery. Next checks22:29/22:30, sooner any result/danger. Mission deadline23:30:19 unchanged. Token usage unavailable.

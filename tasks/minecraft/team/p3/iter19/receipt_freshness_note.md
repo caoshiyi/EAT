@@ -1,0 +1,4 @@
+# Receipt freshness — current iteration19 relay
+P1receiver9067 started22:31:56, returnedafter30s withouttool. P2actual9068toss/pickup ended22:32:31.138, afterwardP1ordinarySTONE1/P2STONE0. P2publishedfreshreceipt22:32:51. P1stillpublisheddatedNOtool/P2held22:33:07. P3DIRECTarenaSTATUS22:33:08 confirmedP1holdingSTONE/P2none; notice9071 at22:33:20.903 released because activebeneficiary decision was stale, not another monitoringlayer. Sourcewasalreadycompleted; no repeatproduction/window needed. P1wear/currentending still ownverification.
+
+P2 reports9066 self-repickup then9068 await3serverlookticks→actualreceipt. P1cachev3 likewiseaddedserverlook2ticks andchangedgeometry/footprint. These are actual successfulchanged integrations; do not claim isolatedcausality or universaldelayguarantee. Earlierone-END containedtrial didnotcertifylateropenWESTfullcache. Keep exactcallersequences/currentbodypositions.

@@ -1,0 +1,8 @@
+# Lower final-crystal normal reach — next-decision candidate only
+Selected #8982 at22:01:29,60sec/hard22:02:20. Existing matched source only/no downloads, no field action or caller edit.
+
+Reused p2/iter17/parent_dispatch/FINDING.md and exact p3/iter15/public_1204/aoc bytecode handleInteract: actual entity AABB.distanceToSqr(player.getEyePosition()) strictly<36, then normal attack dispatch; no block-LOS test there. Existing p3/iter16/public_cloud/EntityType end_crystal registration sets width2,height2 (offset967–969). Current observed crystal root(33.5,83,24.5) therefore source AABB[32.5,83,23.5]..[34.5,85,25.5]. NOT the crystalroot's Euclidean distance.
+
+At player's observedshaftX30.693,Z24.4, nearest horizontal boxdistance1.807. For standingeye+1.62, feet76 gives distance5.675<6; feet75 gives6.631>6. At crouchingeye+1.27, feet76 gives6.008>6 (fails), feet77 gives5.063<6. Feet77 therefore qualifies both these poses in this exact model; feet76 requires confirmed standing eye/actual pose/position, not hardcoded1.62 while sneaking. Current rootbox/pose/position must be real; strictboundary preserved. Calculation.json retains exact cases.
+
+This is normal serverreach eligibility ONLY, not actual melee emission/effect or blast/dragon/cloud/exposure/retreat safety. LowerY increases root distance to this higher crystal, while actual cover/exposure geometry also changes; no inherited explosionhealth/velocity promise. Ordinaryactualbot.attack(crystal), observed removal/HP/velocity and same-callerretainedending are acceptance, not this math. No directpackets/syntheticIDs/P2Endentry. Do not interrupt current caller or make a new audit/input gate. Candidate for owner only if a new decision is needed.

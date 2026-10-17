@@ -1,0 +1,48 @@
+program #9063 on p2: 0.6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T22:31:11.853Z",
+ "elapsed": 607,
+ "issueRoute": "PEER_BODY",
+ "gift": null,
+ "walked": [
+  [
+   146,
+   -36,
+   2242
+  ]
+ ],
+ "retainedOriginal": true,
+ "pos": {
+  "x": 146.50277714955755,
+  "y": -36,
+  "z": 2243.484712077891
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "controls": {},
+ "goal": null,
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "book",
+   9
+  ],
+  [
+   "cobblestone_slab",
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: CORRECTION7464 recipientcoordsSTALE: FRESHstatus22:30:44 P1already139.3,-36,2242.5 (newmeet), P2still146.5,-36,2243.5 holdingSTONE. DoNOTtoss towardold146P1position. P2ownerchoosecurrentactualnativecorridor handofftoP1meet1392242/actualrange; ONEheldSTONE 
+p4: only, no newsource. P4hasNOSTONE/staysFULL129. Thisisnecessarycompletionof9052miscollection, original22:30MISS preserved.
+p1: ACTUALstatus22:30:28 P2NOWstone_pickaxe1, P4FULL129/noSTONE => likelyearlierOWLgift pickedP2whileImoved139. Myinterfacechange racedpriorgift; NOnewproduction/retoss/P4trip. P1MOVINGBACKONLY145,-36,2242 tobe1.4m fromP2SOUTH1462243; P2 finiteONLYactualheldST
+p1: ONE relay byordinarytosstocurrentP1afteractualready, NOmove/source. P1willpublishcurrent145actualthenHOLDuntilordinaryreceipt; P4remainretained129/releasedsource.
+p1: P1 ACTUALrelayREADY145,-36,2242 HP20/EMPTY/ground, 1.4m NWofP2SOUTH1462243. HOLDhereuntilordinarySTONEreceipt. P2onlyheldONEstone relaytowardTHISbody ifactualfreshSTONE0; no move/source. P4stayFULL129/no furthertrip.
+--- p2 now: (146.5, -36, 2243.5) in overworld, health 11.5/20, food 9/20, alive

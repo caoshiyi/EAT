@@ -1,0 +1,313 @@
+program #9027 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T22:20:51.223Z",
+ "p": {
+  "x": 129.5031014346122,
+  "y": -36,
+  "z": 2274.623864574264
+ },
+ "hp": 20,
+ "stock": [
+  [
+   "cobblestone_stairs",
+   2
+  ],
+  [
+   "stick",
+   2
+  ],
+  [
+   "bone",
+   4
+  ],
+  [
+   "book",
+   42
+  ]
+ ],
+ "wood": [
+  [
+   [
+    138,
+    -32,
+    2238
+   ],
+   "oak_planks"
+  ],
+  [
+   [
+    139,
+    -32,
+    2238
+   ],
+   "oak_planks"
+  ],
+  [
+   [
+    140,
+    -32,
+    2238
+   ],
+   "oak_planks"
+  ],
+  [
+   [
+    137,
+    -32,
+    2238
+   ],
+   "oak_planks"
+  ],
+  [
+   [
+    137,
+    -32,
+    2237
+   ],
+   "oak_planks"
+  ]
+ ],
+ "way": [
+  [
+   [
+    139,
+    -36,
+    2241
+   ],
+   [
+    "stone_bricks",
+    "air",
+    "air",
+    "cobbled_deepslate"
+   ]
+  ],
+  [
+   [
+    139,
+    -36,
+    2240
+   ],
+   [
+    "infested_stone_bricks",
+    "air",
+    "air",
+    "basalt"
+   ]
+  ],
+  [
+   [
+    140,
+    -36,
+    2240
+   ],
+   [
+    "mossy_stone_bricks",
+    "air",
+    "air",
+    "cobbled_deepslate"
+   ]
+  ],
+  [
+   [
+    141,
+    -36,
+    2240
+   ],
+   [
+    "mossy_stone_bricks",
+    "air",
+    "air",
+    "blackstone"
+   ]
+  ],
+  [
+   [
+    141,
+    -36,
+    2239
+   ],
+   [
+    "stone_bricks",
+    "air",
+    "air",
+    "basalt"
+   ]
+  ],
+  [
+   [
+    140,
+    -36,
+    2239
+   ],
+   [
+    "cracked_stone_bricks",
+    "basalt",
+    "basalt",
+    "cave_air"
+   ]
+  ],
+  [
+   [
+    139,
+    -36,
+    2239
+   ],
+   [
+    "mossy_stone_bricks",
+    "bookshelf",
+    "bookshelf",
+    "air"
+   ]
+  ],
+  [
+   [
+    138,
+    -36,
+    2239
+   ],
+   [
+    "stone_bricks",
+    "basalt",
+    "basalt",
+    "cave_air"
+   ]
+  ],
+  [
+   [
+    138,
+    -36,
+    2238
+   ],
+   [
+    "cracked_stone_bricks",
+    "cave_air",
+    "cave_air",
+    "cave_air"
+   ]
+  ]
+ ],
+ "table": "crafting_table",
+ "nearSourceFoes": [
+  [
+   188,
+   "zombie",
+   {
+    "x": 142.19089350378445,
+    "y": -40,
+    "z": 2247.496538398848
+   }
+  ],
+  [
+   189,
+   "zombie",
+   {
+    "x": 139.90083009004593,
+    "y": -42,
+    "z": 2246.966579063255
+   }
+  ],
+  [
+   190,
+   "zombie",
+   {
+    "x": 136.86605310963915,
+    "y": -41,
+    "z": 2247.6491874732023
+   }
+  ],
+  [
+   191,
+   "zombie",
+   {
+    "x": 144.07312562827192,
+    "y": -38.5,
+    "z": 2247.094117909025
+   }
+  ],
+  [
+   192,
+   "zombie",
+   {
+    "x": 137.71319931259893,
+    "y": -41.18351563811302,
+    "z": 2246.514453113079
+   }
+  ],
+  [
+   193,
+   "zombie",
+   {
+    "x": 137.40229493379593,
+    "y": -43,
+    "z": 2246.304638683796
+   }
+  ],
+  [
+   194,
+   "creeper",
+   {
+    "x": 133.4285391812329,
+    "y": -42,
+    "z": 2247.139115836007
+   }
+  ],
+  [
+   196,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -41.950000047683716,
+    "z": 2247.687427516738
+   }
+  ],
+  [
+   197,
+   "zombie",
+   {
+    "x": 144.7000528270158,
+    "y": -38,
+    "z": 2246.300000011921
+   }
+  ],
+  [
+   216,
+   "zombie",
+   {
+    "x": 140.20649415254593,
+    "y": -42,
+    "z": 2247.613818347454
+   }
+  ],
+  [
+   217,
+   "zombie",
+   {
+    "x": 144.06549228942194,
+    "y": -38.5,
+    "z": 2247.6998752816107
+   }
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p1: 9004 FAILED lower76/noattack: actual3HPdecreases999ms at73→4.833HP; slowWOODfloorescape notinstant. 9011 CURRENTstableFULL/immune49/noCloud/4.833food16. RETIREsameascent; selected NORMALSURVIVALhealthreset: actualcachegearFULL81→verifygrounddrops→VOIDempty
+p1: →OWLrespawn20→knownportalroute→ordinarycachedgearreceipt. P4 finiteONLYONESTONEpick>=110guarded +existingportalaccess forbareP1; sourcebound5planks+3stone/ownworkingwoodstick2, NOfood/bow/Sword/arrows/generalrekit. Firstsource22:24/ordinaryOWtoolreceipt+ow
+p1: nFULLending22:30; P1health20+retainedcache+tool end22:35hard. Original21:31:50→22:06:50 WHOLEMISS and22:16completionMISS remain. Actualfreshcache81 isNEWknowninput, notoldcorpseclaim. Do notproduceuntilfeasibility/actualwood facts; sourcefailurefinitechang
+p1: e/decline.
+p3: P3 ONEfish unit CANCELLED beforecampopening/move/attack afterCURRENT7410 selectshealthreset/nofooddependency. Candidatebank9012 at22:16:22; exact9013 ice-over-water profile22:17:06 (6sec pastfirst22:17boundary). No harvestedfood/delivery; NOTevidenceagains
+p3: tfishinteraction. Nextoffer <=90sec exactpublishedCACHEcaller drop-groundproof vs self-repickup/emptyvoid/ending contract; no P2aging-source duplicate/gate. Pleasepublishselectedfilewhenready; actualcache notinferredfromplan.
+p1: Healthresetinput refinement: ONEfreshSTONEpick forOWP1receipt enablesknownEndreturn+fastfloorrescue (WOODslow produced3hits in999ms). P4 selectedquantityONLY5planks+3tool-material+existingSTICK2; oneOWNwoodworkingpick kept, oneSTONEgift. Existingcapsopened
+p1: withworkingpick cancloseown129; old132emptywalls mayremainopen untilP1pass ifneeded (narrowrelease). No food/bow/arrow project. P1willcacheactualgear81beforeVOIDempty andverifydrops; cacheavailabilityAFTERreturn notassumed, emptyEndfreezeconditionalonly. P
+p1: leasefeasibility/actualsourcefirst; criticalP1currentlystableFULL49.
+p2: P2 distinct30sec NEWfoodgap qualification: loadedSTRONGHOLD foodblocks/mushrooms48m only, no movement/chest reopening/harvest/delivery promise. P3campfish differentlocation/source. Closeifnone; currentheldfood0/HP11.5food9.
+p2: P2 food9022 returnedblocksEMPTY/noaction, but thiswasREDUNDANT: fresh9021returnedchat alreadyshowedP4closed9015 SAMEstrongholdscan22:17:10 andP1selectedHEALTHRESET/nofood. I failedtostopqueuedreadonlyquery afterthatinput; no newfinding/source/production/ca
+p2: usalcredit. CLOSED/no foodproject. P2sameSOUTH11.5food9/BOOK9SLAB2.
+p2: P2 distinct30sec CONTINUITYcheck forP1selectedcache/voidhealthreset: actualnearbed1462240 +prior spawn1462241 floor/body/head/roof +ownbodyclearance, readONLY/no activation/no move/no sharedinterfacechange. NotP3cachecaller/P4portal/toolsource. Freshfactsr
+p2: eleaseimmediately; actualrespawn stillmustbeobserved.
+p2: P1 healthresetbedcontinuity9025 CURRENT22:20:40.909: WHITEbedhead146,-36,2240/foot2239 intact/unoccupied/facingSOUTH. Prioractualspawn146,-36,2241 hasFULLmossyfloor-37, AIRbody/head(-36/-35), FULLCOFFroof-34; corridor2242twoAIR. P2body2243.545 is2.046m awa
+p2: y, notblockingpriorcandidate. No bedactivation/move/change; actualrespawnpoint/20HP muststillbeobserved. CheckCLOSED.
+--- p4 now: (129.5, -36, 2274.6) in overworld, health 20/20, food 16/20, alive

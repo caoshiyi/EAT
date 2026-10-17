@@ -1,0 +1,13 @@
+# Iteration19 review — second whole cutoff failed — 2026-10-17T22:16:50.868970+00:00
+
+UTC22:16:10verifiedafterlate22:16hard. Latechangedlowerunit **MISSED** actualfinaleffect+ending; finalinteractionneverissued. Original35min21:31:50→22:06:50MISSalso remains; totaloriginalelapsed44m10sat22:16withoutcrystalremoval. Latestofficial22:15:25.508 dragon0/milestones11/deaths124/programs9009. No currentdeath/no retainedbossdamage. ONEcrystal2320/dragon2305last200, bothlastactualnotnewcurrententityproof. Allfouralive/currentP1FULLbase49/HP4.833food16/WOOD50=8guarded/STONE1290/END32+4soft/SWORD0.
+
+9004actual128.5s/ascent24/Diggingaborted/NOattack, samecallerDOWNretainsclosed/noCloudending. Threehealthdrops6+3.5+3.5within999msatY73/dragonnear; exactsourceunisolated/contactcompatible. Firstallowed>10/secondabort/thirdbeforefirstescapecutACK. No singlehitcap/safetycertificatefromcallbackaudit. With8970twoactualdamagingascentinterruptionsrequirechangedhypothesis, twoearlierdistanceguardabortsalreadyretired. No unchangedthirdascent/newunpricedkitfromlowbody.
+
+Primarynextobservation: P1explicitcurrentbodyacceptance andonechangedwholeobjective-linkedunit withactualprice/endings/failure response, orprecisecurrentblocker. No P1ACKof9004observedasof22:16:10; absenceofworldoperationdoesNOTestablishagentcompletion/analysisstatus. Supporteddiscoveryagainonly/root22:14, no discoveredpeerIDsreactivate; no guessing/replacements/bodytakeover. Sharedcurrentdispatch/REVIEW/IMMEDIATE_RESULTpreservecriticalfacts. Missioncontinues23:30:19deadline, experimentfailureNOTstop.
+
+SupportpacketsCLOSED: initial2STONE/Sword/4capsbothendingsbefore21:44,prefix21:40MISS; heldWOOD23ordinary8997/P1FULL81~22:08:55.9/P4FULL12922:08:48.751bothbefore22:11,firststage22:08MET, whole~4m1.9from22:04:54. No revivedsource/production; consumedtoolsnotcurrentinput. P4nowNOtools/caps/BONE4BOOK42STICK2STAIRS2/FULL12920HP. P2SOUTHBOOK9SLAB2/11.5HPfood9, nofood/tools.
+
+IndependentP3foodqualification9009actualquery.4s/nohay/mushroom/melon/pumpkin64m; loadedsalmon45–49mONLYcandidate/nofoodheld. Publication22:16:06vs22:14:43→83s, **45secwholeMISS** (publicationdelay, notfailedharvest). OwnerselectsONErawsalmon+retainedcampending22:22hard/firstbankqualification22:17; abortbeforeexposureifunsafe/noqualifiedbank, atmostONEinteraction/nochase. No P1deliverypromise (~2200m/unpricedlogistics); do notassumefuturefoodistargetbodyinput. Preserveindependentusefulworkwithoutnewcentraldependency.
+
+Nextreview22:22P3unit/rolling22:26/soonerprimaryresultdanger. Tokenusageunavailable. Rootnonplaying/onlyownedfiles; no tools/server/prohibitedpaths/spawns/identitychanges/externalmessages.

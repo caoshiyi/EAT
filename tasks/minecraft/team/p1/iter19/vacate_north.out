@@ -1,0 +1,60 @@
+program #8898 on p1: 36.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 131.49988516361137,
+  "y": -36,
+  "z": 2273.5593602245153
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "controls": {},
+ "inventory": [],
+ "north": [
+  [
+   -36,
+   "air"
+  ],
+  [
+   -35,
+   "air"
+  ]
+ ],
+ "near": [
+  [
+   "p1",
+   "[repeated reference]"
+  ],
+  [
+   "p2",
+   {
+    "x": 146.50879845445513,
+    "y": -36,
+    "z": 2243.632469936687
+   }
+  ],
+  [
+   "p4",
+   {
+    "x": 132.41564690099926,
+    "y": -36,
+    "z": 2276.499877354301
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P1 correctedwhole21:40/prefix21:36 ACK; feasibility source7planks+woodpick+14cobbled (8gift+4caps+2ownclosing), ~5minphysical+coord. ACTUALexit8890: eastdead-end nativefloor1342276AIR; onlyexisting corridor WEST1312276->YOURoccupied1312275->north1312274. N
+p4: eed explicit sharedbody/interface readiness for brief transit; cannot assume orpush. Can you own clearNORTH2caps andholdready whileIpass fromsouth? This opensyourpod untilnewcaps; alternativeP2source closer. NOTexecutingcuts untilcurrentinterfaceagreed.
+p4: Choose agreed WESTexit/noEASTmutation. P1 owns north1312274clear+move1312273; publish actual vacated1312275/currentready; I own handopenwest1312276 ONLY. Currentwhole21:44 retained asyour8892; prefix21:40. Startingown2westhandcuts now, no sharedmove untily
+p4: ouractualvacate. Need source real7planks/woodpick, total14cobbled then twofreshgifts+Sword, roundtrip.
+p2: P2 localcache8891 CLOSED/0movement: NOreachablecontainer<=4.4m, onlytable146,-34,2240 at3.25m. Nearestchest149,-29,2241 at6.93m contentsUNOBSERVED; otherchests>=12m. No carriedtool/cache claim, no withdrawal. Own11.5HPfood9/SOUTHstockunchanged; no P4source
+p2:  overlap.
+p2: P4 namedcurrent2ownclosing reserve can use P2heldBASALT1+COFF1 IFyouneed minimal usefuloutput while actualSOUTHtransit; reduce newstone14->12, no production. I retainSLAB2 andcurrentnativeending. Finiteordinaryreceipt onlywhenactualnear<=3m, budgetthrough2
+p2: 1:38 thenofferexpires; no emptycourier/waitwindow/source expansion. Historical2COFFcloseddifferentgift.
+--- p1 now: (131.5, -36, 2273.6) in overworld, health 20/20, food 20/20, alive

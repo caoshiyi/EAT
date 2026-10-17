@@ -1,0 +1,76 @@
+== #9004 2026-10-17T22:10:10 p1 role=encounter_owner iter=19 128.5 s
+trace COUNT 124 types {'WORLD_CUT': 48, 'SHAFT_UP_FULL': 24, 'WORLD_CAP': 25, 'HEALTH_EVENT': 3, 'SHAFT_DOWN': 24} FIRST [['WORLD_CUT', [30, 51, 24], 'end_stone', 17.833335876464844]] LAST [['WORLD_CUT', [30, 49, 24], 'end_stone', 4.833335876464844], ['WORLD_CAP', [30, 51, 24], 'end_stone'], ['SHAFT_DOWN', {'x': 30.5001493507779, 'y': 49, 'z': 24.442018083539633}, 4.833335876464844]]
+injuryEvents VALUE 3
+{
+ "issue": "Digging aborted",
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 167,
+ "p": {
+  "x": 30.5001493507779,
+  "y": 49,
+  "z": 24.442018083539633
+ },
+ "hp": 4.833335876464844,
+ "food": 16,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 32,
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   50
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "tuff",
+   1,
+   null
+  ],
+  [
+   "end_stone",
+   32,
+   null
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "trialComplete": false,
+ "climbed": 24,
+ "attacked": false,
+ "removed": false,
+ "crystalBefore": [
+  2320,
+  {
+   "x": 33.5,
+   "y": 83,
+   "z": 24.5
+  }
+ ],
+ "crystalAfter": null,
+ "injuryEvents": 3,
+ "callable": 8
+}

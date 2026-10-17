@@ -1,0 +1,146 @@
+program #9087 on p1: 3.9 s
+--- output ---
+ATTEMPT_CUT [ 30, 51, 24 ] end_stone
+ATTEMPT_CUT [ 30, 49, 24 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 167,
+ "p": {
+  "x": 30.50013604193786,
+  "y": 49,
+  "z": 24.66448106933122
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 33,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    30,
+    51,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "FLOOR_REQUEST",
+   1792277038222,
+   [
+    30,
+    49,
+    24
+   ],
+   {
+    "x": 30.50013604193786,
+    "y": 50.166109260938214,
+    "z": 24.66448106933122
+   },
+   {
+    "x": 0,
+    "y": 0.08307781780646721,
+    "z": 0
+   }
+  ],
+  [
+   "FLOOR_ACK_FORCE",
+   1792277038223,
+   {
+    "x": 30.50013604193786,
+    "y": 50.166109260938214,
+    "z": 24.66448106933122
+   }
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.50013604193786,
+    "y": 50,
+    "z": 24.66448106933122
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    51,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "GAP_DOWN_FULL",
+   {
+    "x": 30.50013604193786,
+    "y": 49,
+    "z": 24.66448106933122
+   },
+   20,
+   49
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   25
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   3,
+   null
+  ],
+  [
+   "end_stone",
+   33,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   58
+  ],
+  [
+   "tuff",
+   1,
+   null
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "trialComplete": true,
+ "climbed": 1
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (30.5, 49, 24.7) in the_end, health 20/20, food 20/20, alive

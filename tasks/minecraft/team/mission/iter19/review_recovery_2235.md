@@ -1,0 +1,11 @@
+# Iteration19 decisive review — ordinary gear recovered in the new life
+
+Updated 2026-10-17T22:36:46.246335+00:00. 9073 ran32.3s from22:33:29, ending about22:34:01.3: entered=true, atGoal=true, ordinaryCache=true, issueNULL/endingNULL/lostFALSE, End81.3,Y49,.5,20HP20food/ground/closed/noCloud/controls clear. Actual inventory includes freshSTONEwear4 (125guarded), recoveredSWORD0/WOOD58, BASALT4/COFF3/TUFF1 and END33 in the returned snapshot. Later22:35:14 status showsEND32; use fresh current counts rather than silently carrying the earlier33. No item-loss cause claim.
+
+This completes the **original combined health20+cache+tool ending target22:35**, about58.7s before its cutoff. From health-reset selection22:17:41 to final accepted ending is about16m20.3. The earlier self-sufficient health+cache target22:29MISSED; tool support22:30MISSED and relay22:31:30MISSED. These are different acceptance scopes and clocks; the later useful completion does not erase earlier failures. Actual intentional death22:27:48 remains in worldstats125. Health restoration is a survival prerequisite, not dragon progress.
+
+New gear recovery is established by ordinary SWORD/WOOD/material inventory in the new life after verified fresh caches; full health at OW respawn alone was insufficient. Main/reserve observations before death did not guarantee later recovery; 9073 now supplies that evidence for this case. SupportP4/P2 is complete/released; no second pick, production, courier or extra proof gate.
+
+First unresolved mission stage: P1 chooses the next changed objective-linked whole unit from actual new-life body/tool/materials, with expected completion, acceptance and failure response. Same damaging ascent was retired; health/tool restoration alone is not proof that its physical exposure issue is solved. Earlier three-hit/999ms retreat-latency evidence remains, and final crystal interaction is stillUNTESTED. No generic mechanics audit or root game-strategy prescription.
+
+World objective still unmet: latestofficial22:28dragon0/milestones11/deaths125/programs9048, lastactualONEcrystal2320/dragon2305HP200. Original final-crystal22:06:50 and late22:16 MISSES remain. Current mission deadline23:30:19 leaves~55min; this is not a stop or victory. Next review on P1's new unit, rolling22:45 or sooner danger/effect. Tokens unavailable.

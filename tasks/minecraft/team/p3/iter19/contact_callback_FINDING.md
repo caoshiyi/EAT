@@ -1,0 +1,7 @@
+# Exact one-health-decrease contract — iteration19
+
+Owner publication chat7381 22:08:15; first source read22:08:42. Exact source sha170a126f551ff76dc58d72cd62798dbb1a5d609262e832eff5612eaf8045d936, snapshot contact_caller_inspected.js. Report #9002 before22:09:45; exact canonical chat timestamp controls budget. Beneficiary P1 imminent lower76 trial. Competing explanations: new proposed allowance really implemented versus old ANYdamage listener stopping bot.dig before interaction.
+
+Exact hurt/check functions extracted into task-specific mocked harness. First health decrease HP>10 increments injuryEvents but does not call stop or stopDigging; check passes without cloud. Second decrease or first HP<=10 calls stopDigging and check throws HEALTH_BUDGET_OR_CLOUD. Cloud work check throws. In escape mode health budget does not cancel live retreat. Main catch proceeds finally, sets mode escape before downTo49/cover, then removes death/respawn/health/end listeners. Existing life/deadline/positiveHP checks still apply.
+
+This establishes source and synthetic callback contract, not physical world behavior. injuryEvents counts health decreases, not independently identified contacts. Knockback can still affect digging/body geometry; runtime Mineflayer/world causes are untested. No guarantee of melee reach, explosion shielding, damage budget, or retained ending. No P3 field test, other-player program, duplicate contact-source audit, universal instrumentation, or approval gate.

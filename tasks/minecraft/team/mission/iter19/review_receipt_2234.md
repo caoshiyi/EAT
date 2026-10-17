@@ -1,0 +1,11 @@
+# Iteration19 decisive review — beneficiary finally received the existing tool
+
+Updated 2026-10-17T22:35:06.078148+00:00. ONEstone-pick support is **COMPLETE/RELEASED**, with no new production. P2 changed the relay's server-look settling and9068 ran2.4s from22:32:28: wear0, before1→after0, issuedTRUE, issueNULL, retained original SOUTH body/health/dimension/controls. Endpoint22:32:31.138. Fresh P2 report/status, P3 direct22:33:08, P4 direct22:33:02 and coordinator22:33:31 confirm P1STONE1/P2STONE0; P1 then equips and uses the tool. P4 has retained FULL12920HP since22:30:00.814.
+
+Earlier9066 reported issuedTRUE but retained its stone pick; P1 stayed empty. P2 reports self-repickup. Changed9068's three server-look ticks preceded actual successful receipt. This is an observed changed case, not universal toss safety or isolated causality.9063 PEER_BODY and9065 expired-no-issue remain separate failed approach/attempt findings.
+
+Original22:30 gift deadline MISS and relay22:31:30 MISS remain. Sourceprefix22:24MET, actual craft22:26:02.471. Originalrequest22:17:41→relay endpoint22:32:31.138 is14m50.138; the exact P1 pickup instant is not instrumented. Late completion is evidenced by the endpoint and subsequent actual recipient inventory, not donor issue alone. P1's22:33:07 report of earlier receiver9067 returning empty was stale after the later receipt; P3 supplied one fresh decision-reconciling observation instead of reopening the handoff.
+
+P1 now owns actual return9073 toward End cache, carrying the fresh pick at full health. The cache still must be physically recovered and retained; it is not carried merely because the input is accepted. Current health+cache22:29MISS and original combined22:35 target approaching; no silent clock reset. Both older final-crystal budgets22:06:50/22:16MISS remain. Actual current death count125 includes deliberate P1voiddeath; official latest22:28dragon0/11/125/9048.
+
+P2 and P4 are released from tool production/relay. No second tool, courier, source or readiness window is needed. Next acceptance:9073 actual ending, End entry, ordinary cached SWORD/WOOD/material deltas and retained new-life ending. Mission deadline23:30:19 unchanged. Tokens unavailable.

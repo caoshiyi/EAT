@@ -1,0 +1,62 @@
+{
+  "updated_utc": "2026-10-17T23:09:26.035718+00:00",
+  "role": "root nonplaying coordinator",
+  "deadline_utc": "2026-10-17T23:30:19Z",
+  "deadline_provenance": "current CR_DEADLINE1792279819; mission/iter19/provenance.json",
+  "authority": "Only PLAN.md REVIEW.md EVOLUTION_HISTORY.md TOKEN_USAGE.md mission/. No player run/say, spawn, identity alteration, server/.work access, infrastructure/peer edits, external messages. Every shell cd \"$EAT_ROOT\".",
+  "latest_official": {
+    "utc": "23:08:07.089575",
+    "dragon": 1,
+    "milestones": 12,
+    "deaths": 125,
+    "programs": 9108,
+    "per_player_deaths": [
+      35,
+      35,
+      26,
+      29
+    ],
+    "receipt": "observations/230807_089575_eval.txt"
+  },
+  "last_chat_id": 7544,
+  "p1": {
+    "last_canonical": 9108,
+    "position": "End30.500,Y49,+24.3",
+    "hp": 14.333333969116211,
+    "food": 13,
+    "closed": true,
+    "currentCloud": false,
+    "ground": true,
+    "controls": {},
+    "inventory": "SWORD76/STONE96=33guarded/WOOD58/END29+BASALT4COFF3TUFF1",
+    "current_unit": "COMPLETE, boss44.5\u21920/phase9/issueNULL/endingNULL. Laterbody23:07:55retained/noactiveprogram. Officialdragon1."
+  },
+  "p2": "SOUTH146.5,-36,2243.6/11.5HPfood9/BOOK9SLAB2; relay complete/no stone",
+  "p3": "Camp6.5,67,82.3/6.5HPfood17/empty; exactboundedcallerquestions only, no fish project",
+  "p4": "FULL129.5,-36,2274.6/20HPfood16/WOOD11=47guarded/BASALT4/BONE4/BOOK51/STICK2/STAIRS2; all3inputunitscomplete/no production/Endentry",
+  "closed_units": [
+    "initial2STONE+SWORD+4caps receiver8943FULL~21:43:56.6 before21:44MET/prefix21:40MISS",
+    "heldWOODloan8997+8999 bothendingsbefore22:11MET",
+    "ONEfreshSTONE crafted9041;wrongP2pickup9052 then9068relay before1->0/P1ordinarySTONE1 independentlyverified; gift22:30MISS, relay22:31:30MISS; endpoint22:32:31.138 not exactpickup instant",
+    "healthreset9046freshmain81.125Y49 andreserve91.11Y49 proofsTRUE, EMPTYvoiddeath22:27:48; initialrespawngroundFALSE then9048settledOW20HP20food",
+    "9073ordinarycache/re-entry32.3s start22:33:29 ending~22:34:01.3/full20HP/ST4/SWORD0/materials, originalcombined22:35MET; refinedhealth22:29MISS"
+  ],
+  "failures": [
+    "originalfinalcrystalWHOLE21:31:50->22:06:50MISS",
+    "latecompletion22:16MISS",
+    "8970ascent25/Diggingaborted/NOattack/DOWNretained17.833HP",
+    "8975ROOT18guard8UP/8981ROOT14guard18UPbothNOattack/noadditionalHP loss/retained, retired",
+    "9004lower76ONEcontactallowance24UPthen3HEALTHloss6+3.5+3.5in999msat73/NOattack/DOWNretained4.833HP; causeunisolated, pre-descentlatency",
+    "9037cacheGROUNDprooffailed/no death/badabortendingthen9038repair",
+    "9043changedcacheprooffailed/no death/retainedending;changed9046v3passed"
+  ],
+  "next": [
+    "STOP: evaluator-verified victory; no work remains",
+    "Preserve PLAN/REVIEW/FINAL_REVIEW/LESSONS and all raw receipts/history",
+    "No new player operations, source, relay, audit, agents or identity changes",
+    "Token usage unavailable from permitted evidence"
+  ],
+  "tools": "mission/iter19/observe.py readonly status/chat/programs/events/eval; rawcaptures observations/. Parseraliasimproved22:39/smoked9079. execution_steward EXECUTION_STATUS.md current publications used. collaboration.list_agents only/root; no validpeerID; EAT_AGENT_CLI --help failed No prompt/0turns/noagentstarted, launcher NOTliveness; do not repeat/invoke stdin. Tokenusageunavailable.",
+  "status": "COMPLETE \u2014 VERIFIED VICTORY; NO NEW GAMEPLAY",
+  "victory_utc": "2026-10-17T23:07:34Z"
+}

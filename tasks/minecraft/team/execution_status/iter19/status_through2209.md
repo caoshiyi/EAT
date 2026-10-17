@@ -1,0 +1,37 @@
+# Execution status — iteration19
+Updated 2026-10-17 22:04:45 UTC. NONPLAYING; only this file/execution_status/. No playerprogram/chat/spawn. **Missiondeadline23:30:19UTC Oct17**, runnerCR_DEADLINE1792279819/EAT_ITER19/provenance.json. Usepython3/pythonabsent. Sharednotice!=ownerACK.
+
+**Current urgent accounting:** latestcompleted**8981 climbed18** (NOT8 copiedinPLAN), tools129+106=**23guarded** (NOT60inoldP1/WIP). P3#8985 explicitlycorrectsrepairpotentialto31, not68. Wholegoalacceptance**22:06:50**stillunmet; experimentclocknotmissionstop.
+
+| Owner | Canonical ID/start | Expected completion | Completed result / actual ending / current life / next decision |
+|---|---|---|---|
+| P1 encounter_owner | Whole#8879 21:31:50; **#8981 21:59:52** ROOT14reuse | Result22:04MET; whole**22:06:50** | #8981 **81.6s→~22:01:13.6**, issue=CURRENT_DRAGON_OR_FIREBALL_APPROACH; climbed18/**attacked=false/removed=false/trialComplete=false/crystalAfter=null**. SAMEcallDOWNendingIssue=null/lostfalse/HP17.833food17/groundtrue/closedtrue/currentCloudfalse/controls{}/cursor=null, base30.693,Y49,+24.436. CurrentEND31+BASALT1TUFF1/PICK129+106=23guarded/SWORD0. No newcurrentoperationobserved; nextwholepricedchoicepending. |
+| P4 completion_partner | Packet#8932/#8935/receiverrepair#8943 | Prefix21:40MISS; whole21:44MET | CLOSED/RELEASED bilateralACK. FULL1292274/HP20food16/WOOD17=41guardedBEFOREroutewear+BASALT1. #8984 offersavailabilityONLY/no selectedloan/production/delivery. |
+| P2 continuity_owner | Sourcecontact#8977/pickup#8963/lowerreach#8983 | Closeddistinctquestions | SOUTHHP11.5food9/BOOK9SLAB2. NormalAABBreachtargetfeetstanding76 vs77crouchsourcecandidate, notactualhit/effect/safety. No fieldsource/inputtask. |
+| P3 validation_owner | Currentrepairnotice#8985 22:04:03 | Arithmeticreleasecomplete | Current129+106repairpotential33durability=>31guarded (+8), still<54or58wholecuts. NOTexecuted/currentstock. CampHP6.5food17/empty, no duplicatecontactaudit. |
+
+**#8981 actualguardrecord**22:00:26.484: midjumpplayerY68.166 HP17.833; dragonROOT22.391,Y77.497,+19.608 (~13.39dist), notfireball. NoHEALTH_EVENT/newdamage. Predicatefired, harmfulcontactnotproved. Costs37uses/18completedUP+incomplete19thtransition+18DOWN. Wholeoldcaller60entryguardwouldnowreject23; evenrepair31insufficientsame58cutwhole. HeldWOODofferrequiresactualroutewear+ordinaryreceipt+callerwoodadoption, notautomaticextra41/kitassignment.
+
+**Earlier#8975 ROOT18reuse**21:56:44/37.1s/climbed8/NOattack/NOnewdamage/retainedbase; actualdragon17.96awayatjump58.001. **#8970 originalascent**21:52:15/156s/climbed25/NOattack/Diggingaborted; HP20atUP74, nextescapeHP14.333→ending17.833. DamagecauseUNISOLATED/finalnoCloudnotearlierproof. Samecallretainedending/confirmed#8972, unlikehistoricalfatal8842. Raw8970/8975/8981_return.json preservesfalse/null.
+
+Actualchangedgeometry#8972 orderedprice12END/58cuts, originalvirgin83ENDobsolete. Currentcolumnchangedagainby8+18reuse; freshpricebeforeuse. SourceROOT14notcollisioncertification. EarlierP3repair68was129+69snapshot; no longerfundsretry. Lowerstanding76candidate54cutsstillcapacitygap. Do not rerunresolvedgenericsource or inferimpossibilityfromguardlabels.
+
+**Lastcrystal2320(33.5,83,24.5)** presentbefore8981; crystalAfter=null meansNOpostattackobservation, notremoved. No finalcageinteractionyet/retainedbossdamage/victory. Newundergroundapproach#8962 accepted61cells92.4s/full20HP. Quarry#8966 returned101END/127uses; currentstocksupersedesinitial.
+Supportwhole21:31:50→receiverFULL#8943~21:43:56.6 =~12m6.6/21:44MET~3.4sroundedmargin; prefix21:40MISS. Firstreceipt#8937closedfalseNOTcompletion; actualSOUTHrepairendedacceptance. No followonsource/permissiongate.
+
+Officiallatestcoordinator21:41 dragon0/11/deaths124/programs8930; no disputedoutcome/duplicateeval. CurrentlifeEnd167retained/nofreshdeath. P1/WIP dated21:58still8975/60usesatlastread; noownerACK8981observedyet, cannotinferinternalreadstatus. CoordinatorPLANactual23correctbutclimbed8copiedlabelstale. Archivesstatus_through2204.md/fullrawcollector preservefalse/null/missing; selectedsummarynotallevidence.
+
+## 22:05:20 actualrepair + selected finite HELDloan
+**#8986 22:04:29/0.4s** issue=null/cursor=null/controls{}/HP17.833food17: ordinaryPICK129+106→ONEstone98/**31guarded**, END31unchanged; physicalrepairnowreal (P3potentialnotnewextra68). No closedfieldinthisreturn; priorbaseclosedfollowedowntravel.
+**#8987 P1selects22:04:54** materiallychangedlowerstanding76/AABBreachtarget +boundedONEcontactallowanceabortHP<=10orcloud/SAMEcallDOWN; ROOT18/14distanceformulationsRETIREDaftertwoequivalentguardaborts. **P4requestONLYHELDWOOD17 loan, target>=34guardedAFTERopening**, no production/extra kit. P1current#8988ACTIVEreceiverapproach81; donoracceptance/deliverynotyetobserved. WholeloanordinaryENDreceipt+P1FULL81+P4FULL129**22:11**, firststage22:08; actualfinaleffect+ending**22:16HARD**, totaloriginal21:31:50mustreport. Originalwhole22:06:50owneranticipatesMISS; notyetverifiedcutoffatthisnote. Clocknotreset/missioncontinues23:30.
+Needactualwoodinventorydurability/selectoradoption/wholetoolprice, notautomaticheld41. DonorcurrentlyWOOD17=41guardedbeforeopening; currentP1STONE31 alone<54cutlowertrip. No unsolicitedsource/newtoolquota.
+Officialcoordinator**22:04:13.451 dragon0/11/deaths124/programs8985**; freshperplayerunchanged34/35/26/29. No currentvictory/no disputedcheckneed.
+
+## 22:06:35 selected loan current actual stage/wholeprice
+#8988 start22:05:10/**42.3s** end~22:05:52.3 returnedEND81.590,Y49,.500 atGoal=true/issue=null/endingIssue=null/lostfalse/HP17.833food17/groundtrue/closedtrue/noCloud/controls{}/cursor=null. ActualSTONE104=**25guarded** (6transitcutsfrom31), END33+COFF2+BASALT1TUFF1. P1#8991 ACTUAL81READY22:06:05, announcesdonorportalready-beforeissue protocol. Futurecurrenttoolpricecannotreuse31.
+P4#8989 accepts ONLYHELDWOOD17loan target>=34guarded/first22:08/whole22:11bothFULL. Fresh#8990 geometry/owner#8992 EXACT6cuts: own129north2/P1north1312/old132north2; ONE132roofplacement(no wear). ExpectedWOOD17→23=**35guarded**, actualreceiverdurabilitymustprove. Budgetif>7cutsrejectbeforewear; no seventhcutselected/newproduction. Recovered7caps-1roof-6reseals=0, worldplacementACK/retainedendingstillfuture. P4#8992 saysawait81READYthough#8991 alreadyreleased17secearlier; readinessrecordexists, do notrecordmissingbeneficiaryreadinessunlessfreshstatechanged. No completedloan/issueyet.
+
+## 22:07:50 first loanstage MET / old whole MISS verified
+**#8995 start22:07:16/14s end22:07:30.119**: actualOW133.623,-36,2275.497, WOODwear23/**35guarded**/HP20food16/groundtrue/**closed=false**/controls{}/cursor=null/issue=null/endingIssue=null/lostfalse. SIXcutsphysical, portalstagebefore22:08MET; donorendingNOTfinaluntilreseal129.
+P1receive_wood.js inspectedactualcode: staysFULL81 whilewait<=600ticks(~30s), emitsACTIVEchatinsidecall; onlyopens82two afterACTUALwooditem>95exists. Checksbridgefloor/bodyandOUTBOUNDcloudbeforedeparture; ordinaryWOODwear<=24receipt, finallyback81(or71ifactualcloud)+cover. Intendedprotocolcurrent, notproofbridge/drop/return. A returnreceipt=false couldstillretainbody; endingmustbeexplicit. No actionyet/firstloanissuependingatlastread.
+**Currenttimepast22:06:50 confirmsoriginalwholeMISS**, actualfinalcrystalnotattacked/removed. Ownernewexplicitloan22:11/finaleffect+ending22:16doesNOTeraseoriginal35minfailure. Missioncontinuesuntilcurrent23:30:19/victory/stop.

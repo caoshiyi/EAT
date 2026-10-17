@@ -1,0 +1,186 @@
+program #8954 on p1: 8.1 s
+--- output ---
+ATTEMPT_CUT [ 57, 50, 0 ] tuff
+ATTEMPT_CUT [ 57, 49, 0 ] basalt
+--- returned ---
+{
+ "issue": "SEAL_RESERVE_3_0_0_4",
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 167,
+ "p": {
+  "x": 57.408703577449145,
+  "y": 49,
+  "z": 0.4999999999999327
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 0,
+ "trace": [
+  [
+   "WORLD_CAP",
+   [
+    57,
+    49,
+    -1
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    57,
+    50,
+    -1
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    50,
+    0
+   ],
+   "tuff",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    49,
+    0
+   ],
+   "basalt",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    57,
+    49,
+    0
+   ],
+   {
+    "x": 57.45338613939593,
+    "y": 49,
+    "z": 0.4999999999999327
+   },
+   {
+    "x": -0.022264609051670575,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    58,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    58,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    56,
+    49,
+    0
+   ],
+   "basalt"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    56,
+    50,
+    0
+   ],
+   "tuff"
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   20
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "moves": 1,
+ "reached": false,
+ "callable": 238,
+ "crystals": [
+  [
+   2320,
+   {
+    "x": 33.5,
+    "y": 83,
+    "z": 24.5
+   }
+  ]
+ ],
+ "dragon": [
+  [
+   2305,
+   {
+    "x": 36.64369798500326,
+    "y": 82.9567177015375,
+    "z": -7.062138512157247
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  ]
+ ],
+ "geometry": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (57.4, 49, 0.5) in the_end, health 20/20, food 20/20, alive

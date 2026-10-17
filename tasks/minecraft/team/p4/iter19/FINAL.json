@@ -1,0 +1,31 @@
+{
+  "iteration": 19,
+  "outcome": "VICTORY evaluator-confirmed; gameplay stopped",
+  "verified_at_utc": "2026-10-17T23:08:47.389714+00:00",
+  "verification": "python3 tools/eval_minecraft.py",
+  "raw_score": "tasks/minecraft/team/p4/iter19/eval_victory.txt",
+  "dragon": 1,
+  "milestones": 12,
+  "deaths": 125,
+  "dragon_advancement": "p1 2026-10-17T23:07:34+00:00",
+  "deadline_utc": "2026-10-17T23:30:19Z",
+  "deadline_source": "current runner CR_DEADLINE1792279819",
+  "p4_final_status": "OW129.5006,-36,2274.6293 HP20food16; sameposition+stock as9105FULL10faces/controls{}; activeNONE",
+  "p4_inventory": {
+    "wooden_pickaxe_wear": 11,
+    "basalt": 4,
+    "bone": 4,
+    "book": 51,
+    "stick": 2,
+    "cobblestone_stairs": 2
+  },
+  "p4_iteration_deaths": 0,
+  "failures_preserved": [
+    "21:40 packetprefixMISS",
+    "22:30 freshSTONEwholeMISS2m31.138 inclwrongP2pickup, ownFULL+.814s",
+    "P2relay22:31:30MISS",
+    "sourcefirsthandcut35stimeout/sourcepickupgeometryfailure",
+    "earlierP1whole22:06:50/22:16 failures; healthreset22:29MISS"
+  ],
+  "no_pending_assignments": true
+}

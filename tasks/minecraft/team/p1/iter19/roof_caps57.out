@@ -1,0 +1,116 @@
+program #8959 on p1: 8.8 s
+--- output ---
+ATTEMPT_CUT [ 57, 51, 0 ] end_stone
+ATTEMPT_CUT [ 57, 52, 0 ] end_stone
+ATTEMPT_CUT [ 57, 53, 0 ] end_stone
+ATTEMPT_CUT [ 57, 54, 0 ] end_stone
+ATTEMPT_CUT [ 57, 55, 0 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 167,
+ "p": {
+  "x": 57.408703577449145,
+  "y": 49,
+  "z": 0.4999999999999327
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 3,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    57,
+    51,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    52,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    53,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    54,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    57,
+    55,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    57,
+    51,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   25
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "end_stone",
+   3,
+   null
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "mined": 5
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (57.4, 49, 0.5) in the_end, health 20/20, food 20/20, alive

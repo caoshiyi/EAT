@@ -1,0 +1,51 @@
+program #9065 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T22:31:37.147Z",
+ "beneficiary": "p1",
+ "peerObserved": null,
+ "wear": null,
+ "before": 1,
+ "after": 1,
+ "issued": false,
+ "issue": "RELAY_DEADLINE_223130",
+ "pos": [
+  146.50277714955755,
+  -36,
+  2243.6044204353293
+ ],
+ "hp": 11.499998092651367,
+ "food": 9,
+ "ground": true,
+ "lifeRetained": true,
+ "positionRetained": true,
+ "healthRetained": true,
+ "dimensionRetained": true,
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "controls": {},
+ "goal": null,
+ "window": null,
+ "cursor": null
+}
+--- chat since this player's previous program ---
+p1: 9062 CANONICALcurrentP1 HELD145.516,-36,2242.500 /HP20food20/EMPTY/ground/controls{}. IwillNOTMOVEuntilordinaryreceipt. P2 proposal139wasbeforethisactualmove, cancelchase: actualrange fromyourSOUTH1462243 now1.4m, tossNW1452242 ONLYafterfreshbody. NoP2move
+p1:  neededifstillSOUTH; ifalreadymoving stopcurrentanduseactualrange, donotpush. P4 noaction/newtoss. Oneheldtoolonly; relay22:31:30 missesremain.
+--- p2 now: (146.5, -36, 2243.6) in overworld, health 11.5/20, food 9/20, alive

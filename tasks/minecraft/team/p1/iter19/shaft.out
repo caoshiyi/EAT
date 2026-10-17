@@ -1,0 +1,1947 @@
+program #8970 on p1: 156 s
+--- output ---
+ATTEMPT_CUT [ 30, 51, 24 ] end_stone
+ATTEMPT_CUT [ 30, 52, 24 ] end_stone
+ATTEMPT_CUT [ 30, 53, 24 ] end_stone
+ATTEMPT_CUT [ 30, 54, 24 ] end_stone
+ATTEMPT_CUT [ 30, 55, 24 ] end_stone
+ATTEMPT_CUT [ 30, 56, 24 ] end_stone
+ATTEMPT_CUT [ 30, 57, 24 ] end_stone
+ATTEMPT_CUT [ 30, 58, 24 ] end_stone
+ATTEMPT_CUT [ 30, 59, 24 ] end_stone
+ATTEMPT_CUT [ 30, 60, 24 ] end_stone
+ATTEMPT_CUT [ 30, 61, 24 ] end_stone
+ATTEMPT_CUT [ 30, 62, 24 ] end_stone
+ATTEMPT_CUT [ 30, 63, 24 ] end_stone
+ATTEMPT_CUT [ 30, 64, 24 ] end_stone
+ATTEMPT_CUT [ 30, 65, 24 ] end_stone
+ATTEMPT_CUT [ 30, 66, 24 ] end_stone
+ATTEMPT_CUT [ 30, 67, 24 ] end_stone
+ATTEMPT_CUT [ 30, 68, 24 ] end_stone
+ATTEMPT_CUT [ 30, 69, 24 ] end_stone
+ATTEMPT_CUT [ 30, 70, 24 ] end_stone
+ATTEMPT_CUT [ 30, 71, 24 ] end_stone
+ATTEMPT_CUT [ 30, 72, 24 ] end_stone
+ATTEMPT_CUT [ 30, 73, 24 ] end_stone
+ATTEMPT_CUT [ 30, 74, 24 ] end_stone
+ATTEMPT_CUT [ 30, 75, 24 ] end_stone
+ATTEMPT_CUT [ 30, 76, 24 ] end_stone
+ATTEMPT_CUT [ 30, 73, 24 ] end_stone
+ATTEMPT_CUT [ 30, 72, 24 ] end_stone
+ATTEMPT_CUT [ 30, 71, 24 ] end_stone
+ATTEMPT_CUT [ 30, 70, 24 ] end_stone
+ATTEMPT_CUT [ 30, 69, 24 ] end_stone
+ATTEMPT_CUT [ 30, 68, 24 ] end_stone
+ATTEMPT_CUT [ 30, 67, 24 ] end_stone
+ATTEMPT_CUT [ 30, 66, 24 ] end_stone
+ATTEMPT_CUT [ 30, 65, 24 ] end_stone
+ATTEMPT_CUT [ 30, 64, 24 ] end_stone
+ATTEMPT_CUT [ 30, 63, 24 ] end_stone
+ATTEMPT_CUT [ 30, 62, 24 ] end_stone
+ATTEMPT_CUT [ 30, 61, 24 ] end_stone
+ATTEMPT_CUT [ 30, 60, 24 ] end_stone
+ATTEMPT_CUT [ 30, 59, 24 ] end_stone
+ATTEMPT_CUT [ 30, 58, 24 ] end_stone
+ATTEMPT_CUT [ 30, 57, 24 ] end_stone
+ATTEMPT_CUT [ 30, 56, 24 ] end_stone
+ATTEMPT_CUT [ 30, 55, 24 ] end_stone
+ATTEMPT_CUT [ 30, 54, 24 ] end_stone
+ATTEMPT_CUT [ 30, 53, 24 ] end_stone
+ATTEMPT_CUT [ 30, 52, 24 ] end_stone
+ATTEMPT_CUT [ 30, 51, 24 ] end_stone
+ATTEMPT_CUT [ 30, 50, 24 ] end_stone
+ATTEMPT_CUT [ 30, 49, 24 ] end_stone
+--- returned ---
+{
+ "issue": "Digging aborted",
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 167,
+ "p": {
+  "x": 30.693458193312228,
+  "y": 49,
+  "z": 24.436473932093953
+ },
+ "hp": 17.833335876464844,
+ "food": 17,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 30,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    30,
+    51,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 50,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    52,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 51,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    53,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 52,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    54,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 53,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    55,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 54,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    56,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 55,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    58,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    57,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 56,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    59,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    58,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 57,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    59,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    59,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 58,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    61,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    60,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    60,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    60,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    60,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 59,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    62,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    61,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    61,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    61,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    61,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 60,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    63,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    62,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    62,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    62,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    62,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 61,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    64,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    63,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    63,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    63,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    63,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 62,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    65,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    64,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    64,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    64,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    64,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 63,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    66,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    65,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    65,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    65,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    65,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 64,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    67,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    66,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    66,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    66,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    66,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 65,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    68,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    67,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    67,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    67,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    67,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 66,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    69,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    68,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    68,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    68,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    68,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 67,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    70,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    69,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    69,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    69,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    69,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 68,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    71,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    70,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    70,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    70,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    70,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 69,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    72,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    71,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    71,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    71,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    71,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 70,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    73,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    72,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    72,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    72,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    72,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 71,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    74,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    73,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    73,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    73,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    73,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 72,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    75,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    74,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    74,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    74,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    74,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 73,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    76,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    75,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    75,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    75,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    75,
+    24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "SHAFT_UP_FULL",
+   {
+    "x": 30.693458193312228,
+    "y": 74,
+    "z": 24.49994174409495
+   },
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    77,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    29,
+    76,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    76,
+    25
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    76,
+    23
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    73,
+    24
+   ],
+   "end_stone",
+   14.333333969116211
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    75,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 73,
+    "z": 24.436473932093953
+   },
+   15.333333969116211
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    72,
+    24
+   ],
+   "end_stone",
+   15.833334922790527
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    74,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 72,
+    "z": 24.436473932093953
+   },
+   15.833334922790527
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    71,
+    24
+   ],
+   "end_stone",
+   15.833334922790527
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    73,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 71,
+    "z": 24.436473932093953
+   },
+   15.833334922790527
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    70,
+    24
+   ],
+   "end_stone",
+   16.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    72,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 70,
+    "z": 24.436473932093953
+   },
+   16.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    69,
+    24
+   ],
+   "end_stone",
+   16.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    71,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 69,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    68,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    70,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 68,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    67,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    69,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 67,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    66,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    68,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 66,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    65,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    67,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 65,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    64,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    66,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 64,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    63,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    65,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 63,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    62,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    64,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 62,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    61,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    63,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 61,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    60,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    62,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 60,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    59,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    61,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 59,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    58,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    60,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 58,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    57,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    59,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 57,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    56,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    58,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 56,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    55,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    57,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 55,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    54,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    56,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 54,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    53,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    55,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 53,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    52,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    54,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 52,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    51,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    53,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 51,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    52,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 50,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    24
+   ],
+   "end_stone",
+   17.833335876464844
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    51,
+    24
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.693458193312228,
+    "y": 49,
+    "z": 24.436473932093953
+   },
+   17.833335876464844
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   52
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "tuff",
+   1,
+   null
+  ],
+  [
+   "end_stone",
+   30,
+   null
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "trialComplete": false,
+ "climbed": 25,
+ "attacked": false,
+ "removed": false,
+ "crystalBefore": [
+  2320,
+  {
+   "x": 33.5,
+   "y": 83,
+   "z": 24.5
+  }
+ ],
+ "crystalAfter": null,
+ "path": [
+  [
+   30,
+   49,
+   24
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 bounded price crosscheck CLOSED21:53: independent ordered actual8962 geometry matches your83END/58cuts/141puts (no softpromotions). YourALREADYcompleted8966 stock101END/127uses => nominal18END+69use slack afterwhole29UP/DOWN, assuming ordinaryroofpicku
+p3: p/currentgeometry. Quarryalreadyfinished beforemycrosscheck; NO causalcredit/no newquota/delay. This supports currentascentcapacity, NOT safety/crystal/retainedending proof. Artifacts p3/iter19/shaft_price_crosscheck.json; no livewatcher.
+--- p1 now: (30.7, 49, 24.4) in the_end, health 17.8/20, food 17/20, alive

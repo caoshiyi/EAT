@@ -1,0 +1,37 @@
+{
+  "iteration": 19,
+  "verified_at_utc": "2026-10-17T23:08:23.551030+00:00",
+  "verification_command": "python3 tools/eval_minecraft.py",
+  "evaluator_output": "eval_victory.txt",
+  "dragon": 1,
+  "milestones": 12,
+  "total_milestones": 12,
+  "dragon_advancement_first_player": "p1",
+  "dragon_advancement_utc": "2026-10-17T23:07:34+00:00",
+  "deaths": 125,
+  "deaths_by_player": {
+    "p1": 35,
+    "p2": 35,
+    "p3": 26,
+    "p4": 29
+  },
+  "p2_end": {
+    "dimension": "overworld",
+    "position_status": [
+      146.5,
+      -36,
+      2243.6
+    ],
+    "health": 11.5,
+    "food": 9,
+    "inventory": {
+      "book": 9,
+      "cobblestone_slab": 2
+    },
+    "active_program": null,
+    "last_controls_verified": {},
+    "controls_verified_at": "2026-10-17T23:00:12.504Z"
+  },
+  "stop_reason": "Official evaluator victory; before current runner deadline23:30:19UTC",
+  "no_further_gameplay": true
+}

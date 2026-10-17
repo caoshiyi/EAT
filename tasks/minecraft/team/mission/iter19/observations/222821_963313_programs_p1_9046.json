@@ -1,0 +1,429 @@
+{
+  "issue": null,
+  "endingIssue": "ENDING_POSTSTATE_UNVERIFIED",
+  "phase": "respawned",
+  "primaryProof": true,
+  "reserveProof": true,
+  "voidCommitted": true,
+  "deathObserved": true,
+  "respawnObserved": true,
+  "respawnValid": false,
+  "closed": false,
+  "floorFull": true,
+  "roofFull": true,
+  "currentCloud": false,
+  "before": [
+    [
+      "stone_pickaxe",
+      1,
+      129
+    ],
+    [
+      "cobbled_deepslate",
+      2,
+      null
+    ],
+    [
+      "stone_sword",
+      1,
+      0
+    ],
+    [
+      "wooden_pickaxe",
+      1,
+      58
+    ],
+    [
+      "tuff",
+      1,
+      null
+    ],
+    [
+      "end_stone",
+      33,
+      null
+    ]
+  ],
+  "expected": {
+    "cobbled_deepslate": 2,
+    "stone_sword": 1,
+    "wooden_pickaxe": 1,
+    "tuff": 1,
+    "end_stone": 28
+  },
+  "primaryObservation": {
+    "ok": true,
+    "actual": {
+      "end_stone": 28,
+      "cobbled_deepslate": 2,
+      "stone_sword": 1,
+      "wooden_pickaxe": 1,
+      "tuff": 1
+    },
+    "items": [
+      {
+        "id": 11118,
+        "p": {
+          "x": 81.125,
+          "y": 49,
+          "z": 0.5721159008738197
+        },
+        "name": "end_stone",
+        "count": 28,
+        "meta": {
+          "present": true,
+          "itemId": 376,
+          "itemCount": 28
+        }
+      },
+      {
+        "id": 11145,
+        "p": {
+          "x": 81.125,
+          "y": 49,
+          "z": 0.43834743094009243
+        },
+        "name": "cobbled_deepslate",
+        "count": 2,
+        "meta": {
+          "present": true,
+          "itemId": 9,
+          "itemCount": 2
+        }
+      },
+      {
+        "id": 11146,
+        "p": {
+          "x": 81.125,
+          "y": 49,
+          "z": 0.5232178525654049
+        },
+        "name": "stone_sword",
+        "count": 1,
+        "meta": {
+          "present": true,
+          "itemId": 819,
+          "itemCount": 1,
+          "nbtData": {
+            "type": "compound",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 11147,
+        "p": {
+          "x": 81.125,
+          "y": 49,
+          "z": 0.45248156665118416
+        },
+        "name": "wooden_pickaxe",
+        "count": 1,
+        "meta": {
+          "present": true,
+          "itemId": 816,
+          "itemCount": 1,
+          "nbtData": {
+            "type": "compound",
+            "value": {
+              "Damage": {
+                "type": "int",
+                "value": 58
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": 11148,
+        "p": {
+          "x": 81.125,
+          "y": 49,
+          "z": 0.460951223517474
+        },
+        "name": "tuff",
+        "count": 1,
+        "meta": {
+          "present": true,
+          "itemId": 12,
+          "itemCount": 1
+        }
+      }
+    ]
+  },
+  "reserveObservation": {
+    "ok": true,
+    "actual": {
+      "end_stone": 6,
+      "basalt": 1
+    },
+    "items": [
+      {
+        "id": 11157,
+        "p": {
+          "x": 91.10912405235173,
+          "y": 49,
+          "z": 0.5163262277394969
+        },
+        "name": "end_stone",
+        "count": 6,
+        "meta": {
+          "present": true,
+          "itemId": 376,
+          "itemCount": 6
+        }
+      },
+      {
+        "id": 11158,
+        "p": {
+          "x": 91.13267486984611,
+          "y": 49,
+          "z": 0.6175438271356166
+        },
+        "name": "basalt",
+        "count": 1,
+        "meta": {
+          "present": true,
+          "itemId": 327,
+          "itemCount": 1
+        }
+      }
+    ]
+  },
+  "p": {
+    "x": 146.5,
+    "y": -36,
+    "z": 2241.5
+  },
+  "hp": 20,
+  "food": 20,
+  "dimension": "overworld",
+  "ground": false,
+  "inventory": [],
+  "controls": {},
+  "trace": [
+    [
+      "PRE_DROP_ACTUAL",
+      1792276060236,
+      [
+        [
+          "cobbled_deepslate",
+          2,
+          null
+        ],
+        [
+          "stone_sword",
+          1,
+          0
+        ],
+        [
+          "wooden_pickaxe",
+          1,
+          58
+        ],
+        [
+          "tuff",
+          1,
+          null
+        ],
+        [
+          "end_stone",
+          34,
+          null
+        ]
+      ],
+      [
+        {
+          "id": 11111,
+          "p": {
+            "x": 83.26607084649449,
+            "y": 49,
+            "z": 0.9088326429161248
+          },
+          "name": "basalt",
+          "count": 1,
+          "meta": {
+            "present": true,
+            "itemId": 327,
+            "itemCount": 1
+          }
+        }
+      ]
+    ],
+    [
+      "ACTUAL_DROPS_BEFORE_VACATE",
+      1792276060636,
+      [
+        {
+          "id": 11111,
+          "p": {
+            "x": 83.26607084649449,
+            "y": 49,
+            "z": 0.9088326429161248
+          },
+          "name": "basalt",
+          "count": 1,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11118,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.5540494946238197
+          },
+          "name": "end_stone",
+          "count": 28,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11145,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.44933375906509243
+          },
+          "name": "cobbled_deepslate",
+          "count": 2,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11146,
+          "p": {
+            "x": 81.3,
+            "y": 50.31999999284744,
+            "z": 0.5001164512379452
+          },
+          "name": "stone_sword",
+          "count": 1,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11147,
+          "p": {
+            "x": 81.3,
+            "y": 50.31999999284744,
+            "z": 0.5001164512379452
+          },
+          "name": "wooden_pickaxe",
+          "count": 1,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11148,
+          "p": {
+            "x": 81.124951171875,
+            "y": 49.89348632097244,
+            "z": 0.48693285748794524
+          },
+          "name": "tuff",
+          "count": 1,
+          "meta": "[repeated reference]"
+        }
+      ],
+      [
+        [
+          "end_stone",
+          6,
+          null
+        ]
+      ]
+    ],
+    [
+      "PRIMARY_CACHE",
+      1792276061688,
+      "[repeated reference]",
+      [
+        [
+          "end_stone",
+          6,
+          null
+        ],
+        [
+          "basalt",
+          1,
+          null
+        ]
+      ],
+      [
+        {
+          "id": 11118,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.5721159008738197
+          },
+          "name": "end_stone",
+          "count": 28,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11145,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.43834743094009243
+          },
+          "name": "cobbled_deepslate",
+          "count": 2,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11146,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.5232178525654049
+          },
+          "name": "stone_sword",
+          "count": 1,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11147,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.45248156665118416
+          },
+          "name": "wooden_pickaxe",
+          "count": 1,
+          "meta": "[repeated reference]"
+        },
+        {
+          "id": 11148,
+          "p": {
+            "x": 81.125,
+            "y": 49,
+            "z": 0.460951223517474
+          },
+          "name": "tuff",
+          "count": 1,
+          "meta": "[repeated reference]"
+        }
+      ]
+    ],
+    [
+      "RESERVE_CACHE",
+      1792276063789,
+      "[repeated reference]",
+      []
+    ],
+    [
+      "EMPTY_VOID_COMMIT",
+      1792276063789,
+      {
+        "x": 97.67212942779511,
+        "y": 49,
+        "z": 0.500116451236478
+      },
+      4.833335876464844,
+      []
+    ]
+  ]
+}

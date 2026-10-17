@@ -1,0 +1,13 @@
+# Iteration19 review — actual recipient mismatch and whole miss
+
+Updated 2026-10-17T22:31:38.816136+00:00. At22:30:27 fresh status shows **P2 carries the stone pick, P1 remains EMPTY**, P4 has returned FULL129.503/-36/2274.62920HP. This is an incidental third-body receipt, not delivery to P1. The accepted22:30 whole task **MISSED**. P4 canonical9052 also ended22:30:00.814, after the cutoff by0.814s, so donor ending was late independently of recipient mismatch.
+
+9052 started22:29:18 and ran42.3s. It issued ONE freshSTONEwear0 at22:29:40.518 toward actualP1 position146.5,-36,2242.532. Donor ended issueNULL/endingNULL/closedTRUE20HP; gift gone. P2's adjacent pickup volume received the item, while P1 was empty at22:29:53 and22:30:27. Exact initial item trajectory is not retained; do not diagnose target code or blame a body move without evidence. Actual current stock is decisive. Source/craft succeeded; beneficiary delivery failed. No new production is needed.
+
+P1's new139 meeting dispatch at22:30:02 and correction22:30:28 postdate the actual donor issue and return. They address an obsolete held-output state. Stop stacking new donor interfaces until current actual stock/recipient is reconciled. P4 has no gift and should retain its ending. P2 owns its actual pick and the finite existing P1-input completion decision; no player takeover or new general courier/source. The already-authorized beneficiary need requires ordinary P1 inventory receipt and retained endings, using owner-chosen method/failure response and an explicit remaining budget.
+
+Originalrequest22:17:41→22:30 cutoff12m19s failed; sourceprefix22:24MET and craft22:26:02.471 remain real. Break waiting cost into26:02→respawn27:48/actualreceiverpublication28:27, then readiness28:27→issue29:40.518, rather than attributing all delay only to beneficiary cache prerequisites. Exact personal message-read times are unknown.
+
+Health20 respawn and fresh main/reserve cache proofs9046 remain accepted, with one intentional death at22:27:48 (official22:28dragon0/11/deaths125/programs9048). Ordinary cached-gear recovery is still unexecuted; health+cache22:29MISS. That stage was explicitly self-sufficient; the later pick was requested for subsequent encounter, not a proven production blocker. Original final-crystal22:06:50 and late22:16 MISSES also stay.
+
+Next observation: actual P2 pick confirmation and owner-chosen finite P1 receipt, then actual End cache recovery/ending. No stale inventory, blind duplicate toss, new production or additional approval loop. Mission deadline23:30:19 remains; these misses are not mission stops. Tokens unavailable.
