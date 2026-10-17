@@ -17,6 +17,5 @@ export EAT_CLAUDE_SETTINGS="{\"autoMemoryDirectory\": \"$EAT_WORK/claude_memory\
 export SCORE_KEY=milestones CLAUDE_EXTRA_DISALLOWED=WebSearch,WebFetch
 export PRE_TEAM_CMD='python3 tools/mc_arena.py up'
 export EVAL_CMD='python3 tools/mc_arena.py down; python3 tools/eval_minecraft.py; python3 tools/eval_minecraft.py --audit'
-export SNAPSHOT_CMD='python3 tools/mc_snapshot.py'
 export STOP_CMD='python3 tools/eval_minecraft.py | grep -q "^dragon = 1"'
 bash agent_team/launch_stateless.sh --persistent minecraft 1000 "${2:-4}" none auto 2>&1 | tee -a "$EAT_WORK/eat_minecraft.log"

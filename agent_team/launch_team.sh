@@ -113,7 +113,9 @@ EVAL_CMD="${EVAL_CMD:-python tools/eval_${TASK}.py}"
 echo "[launch_team] Official eval: $EVAL_CMD" >&2
 bash -c "$EVAL_CMD" > "$ITER_DIR/official_eval.txt" 2>&1 || true
 
-# SNAPSHOT_CMD: a task's factual summary of its world for the supervisor (state and totals, no advice), run after the eval
+# A task's factual summary of its world for the supervisor (state and totals, no advice), run after the eval:
+# tasks/<task>/snapshot.sh, or SNAPSHOT_CMD
+[ -z "${SNAPSHOT_CMD:-}" ] && [ -f "tasks/$TASK/snapshot.sh" ] && SNAPSHOT_CMD="bash tasks/$TASK/snapshot.sh"
 if [ -n "${SNAPSHOT_CMD:-}" ]; then
     bash -c "$SNAPSHOT_CMD" > "$ITER_DIR/world_snapshot.txt" 2>&1 || true
 fi
