@@ -1,0 +1,72 @@
+== #7425 2026-10-17T13:20:57 p4 role=completion_partner iter=15 3.1 s
+// One protected End ascent unit. Actual End use remains unqualified until world receipt.
+bot.clearControlStates();bot.pathfinder.setGoal(null);
+if(bot.game.dimension!=='overworld')return{issue:'END_REQUIRED_NO_ACTION',world:bot.game.dimension};
+if(bot.entity.position.distanceTo(new (require('vec3').Vec3)(129.5,-36,2274.5))>.1)return{issue:'EXACT_OWN_STANCE_REQUIRED'};
+const{Vec3}=require('vec3'),self=bot.entity,origin=self.position.floored(),start=Date.now(),hp=bot.health;
+const target=origin.offset(0,1,0),roof=origin.offset(0,2,0),dirs=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]],keys=['forward','back','left','right','jump','sprint','sneak'];
+const native=q=>{const b=bot.blockAt(q);return ['mossy_stone_bricks','stone_bricks','basalt','deepslate'].includes(b?.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')},air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);
+const faces=q=>[q.offset(0,-1,0),q.offset(0,2,0),...dirs.flatMap(([x,y,z])=>[q.offset(x,0,z),q.offset(x,1,z)])],shell=q=>faces(q).every(native);
+const count=()=>bot.inventory.items().filter(i=>i.name==='mossy_stone_bricks').reduce((n,i)=>n+i.count,0),stop=()=>{bot.clearControlStates();bot.pathfinder.setGoal(null)};
+let issue=null,endingIssue=null,lost=false,mutated=false,completed=false,recovery=false,trace=[];
+function discontinuity(){lost=true;stop();bot.stopDigging()}
+for(const name of['death','respawn','end'])bot.on(name,discontinuity);
+function check(){if(lost||self!==bot.entity||bot.game.dimension!=='overworld'|
+... (5838 chars; --full)
+-- returned --
+{"issue": "CAP_ACK", "endingIssue": null, "completed": false, "mutated": true, "lost": false, "p": {"x": 129.50307398502636, "y": -36, "z": 2274.5074467789664}, "hp": 20, "food": 19, "closed": true, "trace": [["CUT_RECEIPT", [129, -34, 2274], 9, 10], ["CAP", [129, -36, 2274], 10, 9], ["ACTUAL_UPPER", {"x": 129.50307398502636, "y": -35, "z": 2274.5074467789664}, 20], ["RECOVERED_ORIGIN"]], "own": [["snowball", 4, null], ["stone_sword", 1, 0], ["wooden_sword", 1, 0], ["sand", 4, null], ["spruce_sapling", 4, null], ["cracked_stone_bricks", 2, null], ["cobbled_deepslate", 24, null], ["stone_pickaxe", 1, 85], ["wooden_shovel", 1, 50], ["mossy_stone_bricks", 9, null], ["basalt", 4, null], ["blackstone", 1, null], ["stone_bricks", 3, null], ["tuff", 2, null], ["book", 6, null]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "faces": [[[129, -37, 2274], "mossy_stone_bricks", true], [[129, -34, 2274], "mossy_stone_bricks", true], [[130, -36, 2274], "basalt", true], [[130, -35, 2274], "stone_bricks", true], [[128, -36, 2274], "deepslate", true], [[128, -35, 2274], "deepslate", true], [[129, -36, 2275], "stone_bricks", true], [[129, -35, 2275], "stone_bricks", true], [[129, -36, 2273], "basalt", true], [[129, -35, 2273], "basalt", true]]}
+== #7426 2026-10-17T13:21:05 p2 role=source_owner iter=15 0 s
+bot.chat("P2 actualHOME7413 FULL20/20 GATE1/WOOD25/STONE7/caps3. Departingroute312 now toavoidwaitingmaterial. P3 stickunit finishBANK ifsafe\u226413:23:35 but NOcourier/newchain; P2 adoptsstonepick fallback actualHPtest if noexistingreceipt. Please review reach/body issue: gateWLOW61+LOWfloor61full preventsforwardreach, actualsource snapshot will choose HIGHcrouch+fixedhood and fullblockWretreat/inner2caps vs gate. No freshsourcegeometryclaimed.")
+== #7428 2026-10-17T13:21:10 p3 role=method_validator iter=15 0 s
+bot.chat("P2 WOOD assignment RELEASED FAILED preflight13:20:55 (1m20 commitment->result, before4min). North and East/upper native starts disconnected; no safe roundtrip/no log/stick, 0cuts0withdrawals/CAMP20/20. Third routevariant would require new bridge/materialchain, declined per finitebudget. Do not returnOW/wait forstick; execute your existingpick targetHP/fullblockretreat alternative. Gate ordinary adoption now independently visible your inventory; prototype transfer accepted/released. I review actual fullblock caller once published; no new woodqueue.")
+== #7429 2026-10-17T13:21:27 p4 role=completion_partner iter=15 0 s
+bot.chat("P1 actual7425 ONE enclosed UP achieved129,-35,2274 HP20 fullshell; immediateDOWN returned originalfull129,-36 HP20/allfalse. Whole caller flaggedCAP_ACK during roofrestore despite physicalroof restored/mossy9 retained (likely pending down-drop crossed countcheck, not isolated). Up primitive actualqualified OW, Endstilluntested. Changed return: ordinary down-drop receipt BEFORE roofplace; one bounded retest now.")
+== #7430 2026-10-17T13:21:27 p4 role=completion_partner iter=15 3.4 s
+// One protected End ascent unit. Actual End use remains unqualified until world receipt.
+bot.clearControlStates();bot.pathfinder.setGoal(null);
+if(bot.game.dimension!=='overworld')return{issue:'END_REQUIRED_NO_ACTION',world:bot.game.dimension};
+if(bot.entity.position.distanceTo(new (require('vec3').Vec3)(129.5,-36,2274.5))>.1)return{issue:'EXACT_OWN_STANCE_REQUIRED'};
+const{Vec3}=require('vec3'),self=bot.entity,origin=self.position.floored(),start=Date.now(),hp=bot.health;
+const target=origin.offset(0,1,0),roof=origin.offset(0,2,0),dirs=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]],keys=['forward','back','left','right','jump','sprint','sneak'];
+const native=q=>{const b=bot.blockAt(q);return ['mossy_stone_bricks','stone_bricks','basalt','deepslate'].includes(b?.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')},air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);
+const faces=q=>[q.offset(0,-1,0),q.offset(0,2,0),...dirs.flatMap(([x,y,z])=>[q.offset(x,0,z),q.offset(x,1,z)])],shell=q=>faces(q).every(native);
+const count=()=>bot.inventory.items().filter(i=>i.name==='mossy_stone_bricks').reduce((n,i)=>n+i.count,0),stop=()=>{bot.clearControlStates();bot.pathfinder.setGoal(null)};
+let issue=null,endingIssue=null,lost=false,mutated=false,completed=false,recovery=false,trace=[];
+function discontinuity(){lost=true;stop();bot.stopDigging()}
+for(const name of['death','respawn','end'])bot.on(name,discontinuity);
+function check(){if(lost||self!==bot.entity||bot.game.dimension!=='overworld'|
+... (6036 chars; --full)
+-- returned --
+{"issue": null, "endingIssue": null, "completed": true, "mutated": true, "lost": false, "p": {"x": 129.50307398502636, "y": -36, "z": 2274.5074467789664}, "hp": 20, "food": 19, "closed": true, "trace": [["CUT_RECEIPT", [129, -34, 2274], 9, 10], ["CAP", [129, -36, 2274], 10, 9], ["ACTUAL_UPPER", {"x": 129.50307398502636, "y": -35, "z": 2274.5074467789664}, 20], ["DOWN_DROP_RECEIPT", 9, 10], ["CAP", [129, -34, 2274], 10, 9]], "own": [["snowball", 4, null], ["stone_sword", 1, 0], ["wooden_sword", 1, 0], ["sand", 4, null], ["spruce_sapling", 4, null], ["cracked_stone_bricks", 2, null], ["cobbled_deepslate", 24, null], ["stone_pickaxe", 1, 87], ["wooden_shovel", 1, 50], ["mossy_stone_bricks", 9, null], ["basalt", 4, null], ["blackstone", 1, null], ["stone_bricks", 3, null], ["tuff", 2, null], ["book", 6, null]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "faces": [[[129, -37, 2274], "mossy_stone_bricks", true], [[129, -34, 2274], "mossy_stone_bricks", true], [[130, -36, 2274], "basalt", true], [[130, -35, 2274], "stone_bricks", true], [[128, -36, 2274], "deepslate", true], [[128, -35, 2274], "deepslate", true], [[129, -36, 2275], "stone_bricks", true], [[129, -35, 2275], "stone_bricks", true], [[129, -36, 2273], "basalt", true], [[129, -35, 2273], "basalt", true]]}
+== #7431 2026-10-17T13:21:32 p3 role=method_validator iter=15 0 s
+bot.chat("P2 reach/body review actionable: inherited7295 LOWroof(-132,63,-430)=BOTTOMslab63..63.5 and WESTroof(-133,63)=DOUBLE63..64. Thus HIGH feet62 at eithercell has only1.0m clearance, cannotfit1.5crouch. Old HIGH roof64 template invalid untilactualsource snapshot+roof change. WLOW61 eye62.62 canreach someBlazefeet63 ifnear, but gate+LOWfloor blocksadvance. Prefer compute actualtarget AABB nearestreach/ALLshaperay from existingcoveredstance beforecut; no target means acquisitionfailure, not new frontstep. Fullblock retreat cap YOURvacated innercell not mobslit; caphead-beforefloor drop and reserve2ordinarycaps before opening.")
+== #7432 2026-10-17T13:21:53 p3 role=method_validator iter=15 0 s
+bot.chat("P2 reachfinitefixture PASS p3/iter15/reach_fixture.py: historical7295 target20078 feet(-129.857,63.107,-429.242) nearestAABB from WLOW(-132.7,61,-429.5) eye62.62 =2.589m; segment clears knownW63DOUBLE/LOW63BOTTOM/FRONT62BOTTOM/LOW61full. So WLOW canhit LOWBlaze withoutforwardstep when gateOPEN, despite LOWfloor61full; higherhistorical23051/24197 blockedbyroof. Purehistoricalmath NOTcurrentLOS/combatproof. Prefer freshlowtargetray/reach before lifting roof/HIGHroute; no target->acquisitionfail/changedmethod. Gateclosed all-shape rays stillrequired.")
+== #None 2026-10-17T13:22:03 p2 role=source_owner iter=15 REFUSED: p2 is already running program #7427 (started 58s ago); one program per body at a time
+== #7433 2026-10-17T13:22:49 p3 role=method_validator iter=15 0 s
+bot.chat("P2 SOURCE_DESIGN review blocker: gate occupiesLOW62(-132,62) evenclosed/open. FullcapLOW62 cannot be placed into existinggate; full(q)false isNOTair. Your ending LOW61thenLOW62 will collide unless explicit gatereclaim/remove step, which adds exposedhandmine time. Prefer prepare definite furtherWESTretreatcell(-134,61/62) + fullshell, then retreatthere/capvacatedW(-133,61/62), leavinggate untouched. Or choose singlefullblockcap atsourcecell WITHOUTgate. Do not assume replacegate fullblock as guaranteed fallback. Need actualfiniteending acceptance beforefirstopen.")
+== #7427 2026-10-17T13:21:05 p2 role=source_owner iter=15 114.2 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (28346 chars; --full)
+-- output --
+NORTH_CURRENT [ 'basalt', 'basalt' ]
+SOURCE_ACTUAL_STOCK 5
+NORTH_EXACT_CURRENT_RESTORED [ 'basalt', 'basalt' ]
+ACTUAL_INDEX 25 18254 3
+ACTUAL_INDEX 50 31965 3
+ACTUAL_INDEX 75 48199 3
+ACTUAL_INDEX 100 55111 3
+ACTUAL_INDEX 125 61881 3
+FRESH312_END 2 3
+ACTUAL_INDEX 275 100513 3
+-- returned --
+{"issue": null, "index": 312, "closed": true, "p": {"x": -114.4603983130386, "y": 63, "z": -179.50004064483153}, "hp": 20, "food": 20, "stock": 1, "inv": [["spruce_fence_gate", 1, null], ["dirt", 1, null], ["wooden_pickaxe", 1, 29], ["stone_pickaxe", 1, 7]], "elapsed": 114152}
+== #7434 2026-10-17T13:23:04 p4 role=completion_partner iter=15 0 s
+bot.chat("P1 actual7430 enclosedUP+DOWN wholePASS3.4s original129,-36,2274/full20HP19food/45caps/Snow4/Stone87/allfalse. First7425 UP succeeded but returnCAP_ACK flagged despite restoredroof; changedordinarydown-drop BEFOREroofplace fixed wholecaller. iter15/ASCENT.md exactlimits. Renewed ascent_unit.js30s one-nativeUP: stopsbeforeunknownsurface; sourcefixturePASS, actualEndunqualified. No sharedcells touched.")
+== #7435 2026-10-17T13:23:26 p2 role=source_owner iter=15 0 s
+bot.chat("P1 actual7427 P2 FULL31220/20; nextcross narrowDIRT(-121,63,-180) exactrestore headsAIR thenE219BASALT2 exactrestore; W221nextstage exactscope. P3 accepted woodfailure/no wait and gatecapcollision: changedfallback furtherWEST(-134,61) preparednativepod, sealvacatedW(-133,61/62), gateuntouched. NewSOURCE_DESIGN updated; trycurrentWLOWreach FIRST, no floorchangeunlessneeded. Actualsourcearrival freshpending.")

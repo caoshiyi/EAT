@@ -1,0 +1,89 @@
+== #7440 2026-10-17T13:24:36 p2 role=source_owner iter=15 36.4 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (27958 chars; --full)
+-- output --
+W221_EXACT_RESTORED
+ACTUAL 460 2 15280
+ACTUAL 500 2 25550
+ACTUAL 520 6 35770
+-- returned --
+{"issue": null, "index": 520, "closed": true, "borrow": false, "p": {"x": -271.5506612644516, "y": 63, "z": -230.50007115038395}, "hp": 20, "food": 20, "stock": 4, "inv": [["spruce_fence_gate", 1, null], ["wooden_pickaxe", 1, 40], ["basalt", 3, null], ["stone_pickaxe", 1, 7], ["dirt", 1, null]], "elapsed": 36370}
+== #7441 2026-10-17T13:25:41 p2 role=source_owner iter=15 11.2 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (27783 chars; --full)
+-- output --
+UP_ACTUAL 64 4 20
+UP_ACTUAL 65 4 20
+UP_ACTUAL 66 4 20
+UP_ACTUAL 67 4 20
+UP_ACTUAL 68 3 20
+UP_ACTUAL 69 4 20
+UP_ACTUAL 70 2 20
+UP_ACTUAL 71 0 20
+-- returned --
+{"issue": null, "units": 8, "closed": true, "p": {"x": -271.5506612644516, "y": 71, "z": -230.50007115038395}, "hp": 20, "food": 20, "jumps": [[0, 71.2, -0.0784000015258789, false], [1, 71.12159999847412, -0.1552320045166016, false], [2, 71, -0.0784000015258789, true], [3, 71, -0.0784000015258789, true], [4, 71, -0.0784000015258789, true], [5, 71, -0.0784000015258789, true], [6, 71, -0.0784000015258789, true], [7, 71, -0.0784000015258789, true], [8, 71, -0.0784000015258789, true], [9, 71, -0.0784000015258789, true]], "stock": 0, "inv": [["spruce_fence_gate", 1, null], ["wooden_pickaxe", 1, 46], ["stone_pickaxe", 1, 7]], "elapsed": 11228}
+== #7442 2026-10-17T13:26:14 p3 role=method_validator iter=15 0 s
+bot.chat("P2 exact1.20.4 publicSHA1verified collision finding (p3/iter15/public_1204): SmallFireball inherits COLLIDER, closedgate full1.5high thinplane blocks segment; OPENempty. BUT ProjectileUtil entitytest inflates playerAABB by0.3 BEFORE clipendpoint. Your proposed flushcenterX-131.93 gives inflatedeastfaceX-131.33 ahead ofgateeastX-131.375 => fireball canhitplayer BEFOREgate despiteclosedphysicalshape! Keepbodyback: centerX<=-132.23 puts inflatedeastface behindgateWEST-131.625 (0.3 extra clearance vsphysicalflush). ExistingWLOW-132.7 meets. This is code-backed hypothesis, notphysicalproof; incomingraysmustuse expandedplayerhitbox, noteyeonly. No newhardware needed.")
+== #7443 2026-10-17T13:26:47 p2 role=source_owner iter=15 0 s
+bot.chat("P2 actual7441 FULL52820/20 WOOD46/STONE7/GATE1/caps0 aftereightenclosedUP. Next source-w57 caller willrecoveractualsealedEwall2 beforeadvance, no sparecapclaim. P3 accepted inflatedAABB finding: noflush stance, keepWLOW-132.7; freshsource first. Fallbackwestpod planned/testbeforegate, no HIGH/floorchange. Sourceapp finite10min afterarrival.")
+== #7445 2026-10-17T13:26:51 p3 role=method_validator iter=15 0 s
+bot.chat("P2 released matchedcollision findings+smallprojectionfixturePASS public_1204/FINDINGS.md, no moreprep required. Also exactSmallFireball.onHitBlock canigniteairadjacent impactface (mobGriefingcondition); no indefinitewoodgate/no-fire assumption. DefiniteWESTfullblockending staysprimary. ExistingWLOW-132.7 avoids inflatedhitboxoverlap; onlymoveforward ifactualexpandedbody/projectilegeometry remainsbehindgate. CurrentSTONE fallback actualtargetHPstillrequired; no pickdamageprediction.")
+== #7446 2026-10-17T13:27:06 p1 role=destination_owner iter=15 0 s
+bot.chat("P2/P4 concrete delivery interface: P1 currentFRAME134.5,-36,2276.5, not priorINTAKE163,-26,2234. CompletedP4 companion stance131.5,-36,2276.5 is preferred donor; P1 will open132/133 west channel ONLY on actual donor+rod arrival then receive/recap/craft. P4 publish retained source->intake->companion route paths for P2 selfdelivery, no courier or new geometrytest. Frame craft+activation90s estimate excludes travel/handoff; previous37m09 courier must stay explicit.")
+== #7447 2026-10-17T13:27:18 p4 role=completion_partner iter=15 0 s
+bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position.clone(),hp:bot.health,food:bot.food,metadata:bot.entity.metadata,metadataKeys:Object.keys(bot.entity.metadata||{}),height:bot.entity.height,physicsHeight:bot.physics.playerHeight,velocity:bot.entity.velocity.clone(),grounded:bot.entity.onGround,sneak:bot.getControlState('sneak'),legacySnowPoseGuard:bot.entity.metadata?.[6]===0,cursor:bot.inventory.selectedItem??null};
+-- returned --
+{"p": {"x": 129.50307398502636, "y": -36, "z": 2274.5074467789664}, "hp": 20, "food": 19, "metadata": [0, null, null, null, null, null, 0, null, null, 20, null, null, null, null, null, null, null, 127], "metadataKeys": ["0", "6", "9", "17"], "height": 1.8, "physicsHeight": 1.8, "velocity": {"x": 0, "y": -0.0784000015258789, "z": 0}, "grounded": true, "sneak": false, "legacySnowPoseGuard": true, "cursor": null}
+== #7448 2026-10-17T13:28:09 p1 role=destination_owner iter=15 0 s
+bot.chat("Prepared narrow frame receive_source.js source-only: actualP2 donor131.5,-36,2276.5 + outerFULLcombined131..134 corridor required; P1 opens onlyinternal132/133, moves133.5, ordinaryreceipt15s, returns134.5/seals133. Budget30swork/55stotal/arena65. At actualarrival arm P2 giftcaller to wait actualP1at133.5 beforetoss; avoid manualtoss-after-window. Retainedinput/health/endings checked separately; no geometryrerun now.")
+== #7449 2026-10-17T13:28:10 p3 role=method_validator iter=15 0 s
+bot.chat("P2 actual source_core.inc.js review complete: put()explicitnonAIRreject and westEnd()->WEST thenWHEAD62 beforeWFOOT61/12tick fullpod proof resolve intended gatecollision ending at CODElevel. Good independentending design; must physicallyprepare/proveWEST/reserve beforefirstopen. Source_read.js readonly not sourcequalification. I will assess actualattack/pickup caller afterfreshsource, no addedmaterialqueue. Matchedcollision finding adopted5636/released.")
+== #7450 2026-10-17T13:28:36 p4 role=completion_partner iter=15 0 s
+bot.chat("P1/P2 currentdeliverypath publication in progress (no courieracceptance): p4/iter15/delivery_paths.json extracts actual iter14 source-owned HOME\u2192SOUTH/bridge/EAST + low404 + intake29 + FRAME56. Buried Magmabypass is separate (actual-45,56,54 down3\u2192west9\u2192south10\u2192shaft-54,Y53\u21928). Do not replay fullEAST into oldMagma8449; live threats/materials required. Full guide follows within5min.")
+== #7451 2026-10-17T13:28:50 p4 role=completion_partner iter=15 0 s
+bot.chat("P1 actual7447 idleonGround pose0/height1.8/physics1.8 has velocityY=-0.0784 (normalgravity). Oldsnow norm<=.03 guard wouldalwaysrefuseidle! Fixed iter15/snow_single_crystal to horizontal<=.03 + |vy|<=.09 +grounded/standing/noCROUCH; no snowspent/Endshotstilluntested. Surface_probe+surface_peek prepared bounded50sOUT/RETURN, syntheticPASS only, actualsurfacegeometryneeded.")
+== #7444 2026-10-17T13:26:47 p2 role=source_owner iter=15 157.7 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (29011 chars; --full)
+-- output --
+ROAD_ACTUAL 575 18744 2
+ROAD_ACTUAL 625 39090 2
+ROAD_ACTUAL 700 64588 2
+ROAD_ACTUAL 875 117786 4
+DROP2_ACTUAL Vec3 { x: -205.43387233585872, y: 57, z: -429.49995108341705 } 3
+LOWROAD_ACTUAL -198 135179 3
+LOWROAD_ACTUAL -192 136733 3
+LOWROAD_ACTUAL -191 139388 5
+LOWROAD_ACTUAL -183 141442 5
+LOWROAD_ACTUAL -175 143495 5
+LOWROAD_ACTUAL -167 145545 5
+LOWROAD_ACTUAL -159 147602 5
+LOWROAD_ACTUAL -151 149655 5
+LOWROAD_ACTUAL -143 151711 5
+LOWROAD_ACTUAL -136 153572 5
+LOWROAD_ACTUAL -135 155025 7
+LOWROAD_ACTUAL -134 155980 8
+LOWROAD_ACTUAL -133 157132 10
+FRESH_SOURCE [
+  [ -134, [ [Array], [Array], [Array], [Array], [Array] ] ],
+  [ -133, [ [Array], [Array], [Array], [Array], [Array] ] ],
+  [ -132, [ [Array], [Array], [Array], [Array], [Array] ] ],
+  [ -131, [ [Array], [Array], [Array], [Array], [Array] ] ]
+]
+-- returned --
+{"issue": null, "index": 929, "stage": "W57", "closed": true, "p": {"x": -132.47389468295262, "y": 57, "z": -429.4999269316261}, "hp": 20, "food": 20, "stock": 8, "lootBefore": [["spruce_fence_gate", 1, null], ["wooden_pickaxe", 1, 46], ["stone_pickaxe", 1, 7]], "inv": [["spruce_fence_gate", 1, null], ["wooden_pickaxe", 1, 56], ["blackstone", 1, null], ["stone_pickaxe", 1, 9], ["cobblestone", 1, null], ["netherrack", 6, null]], "elapsed": 157735}

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const rows=[];for(let z=78;z<=96;z++){let r=[];for(let x=0;x<=20;x++){let ys=[];for(let y=61;y<=70;y++){let b=bot.blockAt(new Vec3(x,y,z));if(b?.boundingBox==='block'&&b.shapes.some(s=>s[4]===1)&&bot.blockAt(new Vec3(x,y+1,z))?.boundingBox==='empty')ys.push(y+1)}if(ys.length)r.push([x,ys])}rows.push([z,r])}return rows;

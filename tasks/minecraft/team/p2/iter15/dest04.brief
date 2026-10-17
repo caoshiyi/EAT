@@ -1,0 +1,8 @@
+program #7637 on p2: 2.3 s
+--- output ---
+ISSUE HAND_FLOOR_ROOF_OPEN actual Vec3 { x: -18.50313584835222, y: 65, z: 48.50271910687607 }
+RETURN {"caller":"iter13_out_east","entityId":169,"threatTrace":[],"combatTrace":[],"combatSwings":0,"hurt":false,"p":{"x":-18.50313584835222,"y":65,"z":48.50271910687607},"hp":11.499998092651367,"food":9,"issue":"HAND_FLOOR_ROOF_OPEN","closed":true,"full":true,"walked":[],"elapsed":2255,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["nether_bricks",15,null],["blaze_rod",5,null],["stone_pickaxe",1,126],["cobblestone_slab",2,null],["netherrack",2,null],["dirt",1,null],["basalt",11,null]],"rodBefore":5,"rodAfter":5,"rodPreserved":true,"handCuts":[],"hpActual":11.499998092651367,"bodyActual":{"x":-18.50313584835222,"y":65,"z":48.50271910687607},"stage":"out_east_whole","qualification":"Current caller source adapted from prior physical path; actual current-stage receipt required."}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-18.5, 65, 48.5) in the_nether, health 11.5/20, food 9/20, alive
+

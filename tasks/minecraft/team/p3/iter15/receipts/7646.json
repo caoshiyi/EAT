@@ -1,0 +1,257 @@
+{
+  "summary": {
+    "program": 7646,
+    "source": "dest_04_out_east_whole.js",
+    "receipt_utc": "2026-10-17T15:14:56.303743+00:00",
+    "observed_utc": "2026-10-17T15:15:12.294175+00:00",
+    "scope": "last published receipt, not live body",
+    "issue": "MOVE_BOUND_(-45, 56, 54)",
+    "ending_issue": null,
+    "hp": 11.499998092651367,
+    "position": {
+      "x": -43.57534320501508,
+      "y": 56,
+      "z": 54.49969432927936
+    },
+    "back_full": null,
+    "high_full": null,
+    "gate_closed": null,
+    "ordinary_rods": 5,
+    "source_rods_field": null,
+    "ending_checks": {
+      "closed": true
+    },
+    "hits_events": 0,
+    "dead_attacked_ids": [],
+    "damage_receipts": [],
+    "normal_hitlog_damage": [],
+    "kill_events": [],
+    "damage_parser_scope": "ACTUAL_HIT trace plus separately normal_hitlog_damage; other schemas remain in raw record; null postHP is not assumed kill",
+    "own_hurt_events": [],
+    "projectile_samples": 0,
+    "drops": [],
+    "inventory": [
+      [
+        "nether_bricks",
+        5,
+        null
+      ],
+      [
+        "blaze_rod",
+        5,
+        null
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        126
+      ],
+      [
+        "cobblestone_slab",
+        2,
+        null
+      ],
+      [
+        "netherrack",
+        2,
+        null
+      ],
+      [
+        "basalt",
+        7,
+        null
+      ]
+    ]
+  },
+  "published_record": {
+    "source": "dest_04_out_east_whole.js",
+    "program": 7646,
+    "observed_utc": "2026-10-17T15:14:56.303743+00:00",
+    "result": {
+      "caller": "iter13_out_east",
+      "entityId": 169,
+      "threatTrace": [],
+      "combatTrace": [],
+      "combatSwings": 0,
+      "hurt": false,
+      "p": {
+        "x": -43.57534320501508,
+        "y": 56,
+        "z": 54.49969432927936
+      },
+      "hp": 11.499998092651367,
+      "food": 9,
+      "issue": "MOVE_BOUND_(-45, 56, 54)",
+      "closed": true,
+      "full": true,
+      "walked": [
+        [
+          -39,
+          58,
+          51
+        ],
+        [
+          -40,
+          58,
+          51
+        ],
+        [
+          -41,
+          58,
+          51
+        ],
+        [
+          -41,
+          58,
+          52
+        ],
+        [
+          -42,
+          57,
+          52
+        ],
+        [
+          -42,
+          56,
+          53
+        ],
+        [
+          -43,
+          56,
+          53
+        ],
+        [
+          -43,
+          56,
+          54
+        ],
+        [
+          -44,
+          56,
+          54
+        ]
+      ],
+      "elapsed": 50238,
+      "controls": {
+        "forward": false,
+        "back": false,
+        "left": false,
+        "right": false,
+        "jump": false,
+        "sprint": false,
+        "sneak": false
+      },
+      "inv": [
+        [
+          "nether_bricks",
+          5,
+          null
+        ],
+        [
+          "blaze_rod",
+          5,
+          null
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          126
+        ],
+        [
+          "cobblestone_slab",
+          2,
+          null
+        ],
+        [
+          "netherrack",
+          2,
+          null
+        ],
+        [
+          "basalt",
+          7,
+          null
+        ]
+      ],
+      "rodBefore": 5,
+      "rodAfter": 5,
+      "rodPreserved": true,
+      "handCuts": [
+        {
+          "q": [
+            -39,
+            59,
+            51
+          ],
+          "name": "basalt",
+          "priceMs": 6250,
+          "harvest": false,
+          "lossExpected": true
+        },
+        {
+          "q": [
+            -39,
+            58,
+            51
+          ],
+          "name": "basalt",
+          "priceMs": 6250,
+          "harvest": false,
+          "lossExpected": true
+        },
+        {
+          "q": [
+            -44,
+            57,
+            54
+          ],
+          "name": "basalt",
+          "priceMs": 6250,
+          "harvest": false,
+          "lossExpected": true
+        },
+        {
+          "q": [
+            -44,
+            56,
+            54
+          ],
+          "name": "sandstone",
+          "priceMs": 4000,
+          "harvest": false,
+          "lossExpected": true
+        },
+        {
+          "q": [
+            -45,
+            57,
+            54
+          ],
+          "name": "basalt",
+          "priceMs": 6250,
+          "harvest": false,
+          "lossExpected": true
+        },
+        {
+          "q": [
+            -45,
+            56,
+            54
+          ],
+          "name": "basalt",
+          "priceMs": 6250,
+          "harvest": false,
+          "lossExpected": true
+        }
+      ],
+      "hpActual": 11.499998092651367,
+      "bodyActual": {
+        "x": -43.57534320501508,
+        "y": 56,
+        "z": 54.49969432927936
+      },
+      "stage": "out_east_whole",
+      "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+    }
+  }
+}

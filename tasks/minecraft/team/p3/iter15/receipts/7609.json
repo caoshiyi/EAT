@@ -1,0 +1,391 @@
+{
+  "summary": {
+    "program": 7609,
+    "source": "base_cycle_all_4.js",
+    "receipt_utc": "2026-10-17T14:59:55.606833+00:00",
+    "observed_utc": "2026-10-17T15:00:17.217624+00:00",
+    "scope": "last published receipt, not live body",
+    "issue": null,
+    "ending_issue": null,
+    "hp": 11.499998092651367,
+    "position": {
+      "x": -133.59869038861208,
+      "y": 60,
+      "z": -430.50002054513413
+    },
+    "back_full": false,
+    "high_full": null,
+    "gate_closed": false,
+    "ordinary_rods": 3,
+    "source_rods_field": 3,
+    "ending_checks": {
+      "backFull": false,
+      "enclosed": true,
+      "lowered": true
+    },
+    "hits_events": 0,
+    "dead_attacked_ids": [],
+    "damage_receipts": [],
+    "normal_hitlog_damage": [],
+    "kill_events": [],
+    "damage_parser_scope": "ACTUAL_HIT trace plus separately normal_hitlog_damage; other schemas remain in raw record; null postHP is not assumed kill",
+    "own_hurt_events": [],
+    "projectile_samples": 0,
+    "drops": [],
+    "inventory": [
+      [
+        "nether_bricks",
+        12,
+        null
+      ],
+      [
+        "blaze_rod",
+        3,
+        null
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        82
+      ],
+      [
+        "cobblestone_slab",
+        2,
+        null
+      ]
+    ]
+  },
+  "published_record": {
+    "source": "base_cycle_all_4.js",
+    "program": 7609,
+    "observed_utc": "2026-10-17T14:59:55.606833+00:00",
+    "result": {
+      "kills": [],
+      "hitLog": [],
+      "closedNow": true,
+      "issue": null,
+      "endingIssue": null,
+      "got": true,
+      "rodGain": 1,
+      "enclosed": true,
+      "lowered": true,
+      "path": [
+        [
+          -134,
+          60,
+          -431
+        ],
+        [
+          -133,
+          60,
+          -431
+        ],
+        [
+          -132,
+          60,
+          -431
+        ],
+        [
+          -131,
+          60,
+          -431
+        ],
+        [
+          -130,
+          60,
+          -431
+        ]
+      ],
+      "trace": [
+        [
+          "CURRENT_ROD_ROUTE",
+          22498,
+          {
+            "x": -128.125,
+            "y": 63,
+            "z": -430.9555243470504
+          },
+          [
+            [
+              -134,
+              60,
+              -431
+            ],
+            [
+              -133,
+              60,
+              -431
+            ],
+            [
+              -132,
+              60,
+              -431
+            ],
+            [
+              -131,
+              60,
+              -431
+            ],
+            [
+              -130,
+              60,
+              -431
+            ]
+          ]
+        ],
+        [
+          "CUT",
+          [
+            -133,
+            61,
+            -431
+          ],
+          "nether_bricks"
+        ],
+        [
+          "CUT",
+          [
+            -133,
+            60,
+            -431
+          ],
+          "nether_bricks"
+        ],
+        [
+          "CUT",
+          [
+            -129,
+            62,
+            -432
+          ],
+          "nether_bricks"
+        ],
+        [
+          "ACTUAL_ROD_SUPPORT_REMOVED",
+          22498,
+          [
+            -129,
+            62,
+            -432
+          ]
+        ],
+        [
+          "ACTUAL_ROD_ORDINARY",
+          3,
+          true,
+          {
+            "x": -129.4365752072063,
+            "y": 60,
+            "z": -430.4999607283716
+          }
+        ],
+        [
+          "CAP",
+          [
+            -133,
+            61,
+            -431
+          ],
+          "nether_bricks",
+          "nether_bricks"
+        ],
+        [
+          "CAP",
+          [
+            -133,
+            60,
+            -431
+          ],
+          "nether_bricks",
+          "nether_bricks"
+        ],
+        [
+          "RETAINED_3HIGH_END",
+          3,
+          11.499998092651367
+        ]
+      ],
+      "at": "2026-10-17T14:59:55.593Z",
+      "p": {
+        "x": -133.59869038861208,
+        "y": 60,
+        "z": -430.50002054513413
+      },
+      "hp": 11.499998092651367,
+      "food": 12,
+      "flags": 2,
+      "onFire": false,
+      "pose": 5,
+      "height": 1.5,
+      "physics": 1.8,
+      "onGround": true,
+      "lost": false,
+      "forced": 0,
+      "hurts": [],
+      "attributes": {
+        "undefined": {
+          "value": 4,
+          "modifiers": []
+        }
+      },
+      "backFull": false,
+      "wFull": false,
+      "gateClosed": false,
+      "cursor": null,
+      "stock": 12,
+      "rods": 3,
+      "inv": [
+        [
+          "nether_bricks",
+          12,
+          null
+        ],
+        [
+          "blaze_rod",
+          3,
+          null
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          82
+        ],
+        [
+          "cobblestone_slab",
+          2,
+          null
+        ]
+      ],
+      "blazes": [
+        {
+          "id": 3551,
+          "p": {
+            "x": -143.69999998807907,
+            "y": 61.199914928894046,
+            "z": -430.30000001192093
+          },
+          "hp": 19.45600128173828,
+          "charge": 0
+        },
+        {
+          "id": 4664,
+          "p": {
+            "x": -127.92500001192093,
+            "y": 64,
+            "z": -432.69999998807907
+          },
+          "hp": 20
+        },
+        {
+          "id": 5699,
+          "p": {
+            "x": -146.16807843708023,
+            "y": 60,
+            "z": -420.65252085470803
+          },
+          "hp": 16
+        },
+        {
+          "id": 15583,
+          "p": {
+            "x": -144.56008614220525,
+            "y": 60,
+            "z": -452.8186710666151
+          },
+          "hp": 15
+        },
+        {
+          "id": 16045,
+          "p": {
+            "x": -146.69999998807907,
+            "y": 60,
+            "z": -422.98862840911795
+          },
+          "hp": 19
+        },
+        {
+          "id": 17555,
+          "p": {
+            "x": -133.81751528510605,
+            "y": 60,
+            "z": -427.30011245424663
+          },
+          "hp": 10
+        },
+        {
+          "id": 19060,
+          "p": {
+            "x": -135.3075931152301,
+            "y": 60,
+            "z": -429.30000001192093
+          },
+          "hp": 16
+        },
+        {
+          "id": 21000,
+          "p": {
+            "x": -144.658063076586,
+            "y": 60,
+            "z": -424.84120914107814
+          },
+          "hp": 20
+        },
+        {
+          "id": 22136,
+          "p": {
+            "x": -133.03429471504805,
+            "y": 60,
+            "z": -427.69999998807907
+          },
+          "hp": 18
+        },
+        {
+          "id": 22195,
+          "p": {
+            "x": -145.1434867764466,
+            "y": 60,
+            "z": -439.506917672014
+          },
+          "hp": 20
+        },
+        {
+          "id": 22493,
+          "p": {
+            "x": -128.29995013898932,
+            "y": 63,
+            "z": -429.0984958247848
+          },
+          "hp": 20
+        },
+        {
+          "id": 22562,
+          "p": {
+            "x": -134.5593524319653,
+            "y": 60,
+            "z": -432.13143862803753
+          },
+          "hp": 20
+        },
+        {
+          "id": 22633,
+          "p": {
+            "x": -129.08116028558328,
+            "y": 63,
+            "z": -428.30001245192506
+          },
+          "hp": 20
+        }
+      ],
+      "drops": [],
+      "controls": {
+        "forward": false,
+        "back": false,
+        "left": false,
+        "right": false,
+        "jump": false,
+        "sneak": false,
+        "sprint": false
+      }
+    }
+  }
+}

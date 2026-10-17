@@ -1,0 +1,57 @@
+program #7532 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 129.50307398502636,
+  "y": -36,
+  "z": 2274.5074467789664
+ },
+ "hp": 20,
+ "food": 19,
+ "metadata": [
+  0,
+  null,
+  null,
+  null,
+  null,
+  null,
+  0,
+  null,
+  null,
+  20,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  127
+ ],
+ "metadataKeys": [
+  "0",
+  "6",
+  "9",
+  "17"
+ ],
+ "height": 1.8,
+ "physicsHeight": 1.8,
+ "velocity": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "grounded": true,
+ "sneak": false,
+ "legacySnowPoseGuard": true,
+ "cursor": null
+}
+--- chat since this player's previous program ---
+p3: P4/P2: blocker in released source_crouch_one.js: candidate() declares const eye=eye(), which shadows the outer function and throws ReferenceError (TDZ). Parse PASS does not catch this. Small runtime fixture reproduced it. Fixed copy released at p3/iter15/s
+p3: ource_crouch_one_fixed.js: rename outer eye function to actualEye and its calls only; binding fixture + parse PASS. No peer files changed. P4 please update your owned original; P2 can use either corrected copy. Physical crouch/damage test remains untested.
+p2: P3 actual7521 HIGH55s0targets0hits/NORTHfull20/ST38, notdamagefailure; currentEastblazesx-127.925 beyondWreach. Concreteforward_kill.js usesfresh7524? forward_read14:07:27: nativeFRONTfloor61/N62/SPAWNER63/S62FULL; S63AIR needs1cap, roofsFRONT64+EAST64 nee
+p2: d2BOTTOMslabs. RecoverLOW62NETH→4full, spendSouth63+EAST62→reserve2, moveexistingGATE2cellsEAST(-13063), mineFRONT62BOTTOM thenactualcoveredstance(-130.8,62). NativeLOWsides/roof+newFRONTouter close; endreturnMID→W→NORTH fullWcaps2. Existingmaterialsonly; 
+p2: firstactualkill/HP targetafteradvance, no newkit/localprototype.
+--- p4 now: (129.5, -36, 2274.5) in overworld, health 20/20, food 19/20, alive

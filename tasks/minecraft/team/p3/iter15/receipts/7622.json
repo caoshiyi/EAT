@@ -1,0 +1,99 @@
+{
+  "summary": {
+    "program": 7622,
+    "source": "home_return.js",
+    "receipt_utc": "2026-10-17T15:03:17.772582+00:00",
+    "observed_utc": "2026-10-17T15:04:11.693728+00:00",
+    "scope": "last published receipt, not live body",
+    "issue": "LINE_OVERSHOOT",
+    "ending_issue": null,
+    "hp": 11.499998092651367,
+    "position": {
+      "x": -273.5032888362873,
+      "y": 61,
+      "z": -394.5313365043552
+    },
+    "back_full": null,
+    "high_full": null,
+    "gate_closed": null,
+    "ordinary_rods": 5,
+    "source_rods_field": null,
+    "ending_checks": {
+      "closed": true
+    },
+    "hits_events": 0,
+    "dead_attacked_ids": [],
+    "damage_receipts": [],
+    "normal_hitlog_damage": [],
+    "kill_events": [],
+    "damage_parser_scope": "ACTUAL_HIT trace plus separately normal_hitlog_damage; other schemas remain in raw record; null postHP is not assumed kill",
+    "own_hurt_events": [],
+    "projectile_samples": 0,
+    "drops": [],
+    "inventory": [
+      [
+        "nether_bricks",
+        15,
+        null
+      ],
+      [
+        "blaze_rod",
+        5,
+        null
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        98
+      ],
+      [
+        "cobblestone_slab",
+        2,
+        null
+      ]
+    ]
+  },
+  "published_record": {
+    "source": "home_return.js",
+    "program": 7622,
+    "observed_utc": "2026-10-17T15:03:17.772582+00:00",
+    "result": {
+      "issue": "LINE_OVERSHOOT",
+      "index": 826,
+      "closed": true,
+      "borrowed": null,
+      "home": false,
+      "rodsBefore": 5,
+      "rodsAfter": 5,
+      "p": {
+        "x": -273.5032888362873,
+        "y": 61,
+        "z": -394.5313365043552
+      },
+      "hp": 11.499998092651367,
+      "inv": [
+        [
+          "nether_bricks",
+          15,
+          null
+        ],
+        [
+          "blaze_rod",
+          5,
+          null
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          98
+        ],
+        [
+          "cobblestone_slab",
+          2,
+          null
+        ]
+      ],
+      "elapsed": 55575
+    }
+  }
+}

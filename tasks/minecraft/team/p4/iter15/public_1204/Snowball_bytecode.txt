@@ -1,0 +1,128 @@
+Compiled from "SourceFile"
+public class cge extends cgg {
+  public cge(blz<? extends cge>, ctp);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #10                 // Method cgg."<init>":(Lblz;Lctp;)V
+       6: return
+
+  public cge(ctp, bml);
+    Code:
+       0: aload_0
+       1: getstatic     #23                 // Field blz.aQ:Lblz;
+       4: aload_2
+       5: aload_1
+       6: invokespecial #26                 // Method cgg."<init>":(Lblz;Lbml;Lctp;)V
+       9: return
+
+  public cge(ctp, double, double, double);
+    Code:
+       0: aload_0
+       1: getstatic     #23                 // Field blz.aQ:Lblz;
+       4: dload_2
+       5: dload         4
+       7: dload         6
+       9: aload_1
+      10: invokespecial #31                 // Method cgg."<init>":(Lblz;DDDLctp;)V
+      13: return
+
+  protected cmt s();
+    Code:
+       0: getstatic     #42                 // Field cnb.qz:Lcmt;
+       3: areturn
+
+  private jv y();
+    Code:
+       0: aload_0
+       1: invokevirtual #48                 // Method u:()Lcmy;
+       4: astore_1
+       5: aload_1
+       6: invokevirtual #54                 // Method cmy.b:()Z
+       9: ifeq          18
+      12: getstatic     #60                 // Field jx.T:Lka;
+      15: goto          29
+      18: new           #62                 // class jt
+      21: dup
+      22: getstatic     #66                 // Field jx.Q:Ljw;
+      25: aload_1
+      26: invokespecial #69                 // Method jt."<init>":(Ljw;Lcmy;)V
+      29: areturn
+
+  public void b(byte);
+    Code:
+       0: iload_1
+       1: iconst_3
+       2: if_icmpne     47
+       5: aload_0
+       6: invokevirtual #75                 // Method y:()Ljv;
+       9: astore_2
+      10: iconst_0
+      11: istore_3
+      12: iload_3
+      13: bipush        8
+      15: if_icmpge     47
+      18: aload_0
+      19: invokevirtual #79                 // Method dM:()Lctp;
+      22: aload_2
+      23: aload_0
+      24: invokevirtual #83                 // Method dr:()D
+      27: aload_0
+      28: invokevirtual #86                 // Method dt:()D
+      31: aload_0
+      32: invokevirtual #89                 // Method dx:()D
+      35: dconst_0
+      36: dconst_0
+      37: dconst_0
+      38: invokevirtual #95                 // Method ctp.a:(Ljv;DDDDDD)V
+      41: iinc          3, 1
+      44: goto          12
+      47: return
+
+  protected void a(elq);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #101                // Method cgg.a:(Lelq;)V
+       5: aload_1
+       6: invokevirtual #106                // Method elq.a:()Lblv;
+       9: astore_2
+      10: aload_2
+      11: instanceof    #108                // class cbz
+      14: ifeq          21
+      17: iconst_3
+      18: goto          22
+      21: iconst_0
+      22: istore_3
+      23: aload_2
+      24: aload_0
+      25: invokevirtual #114                // Method dN:()Lbku;
+      28: aload_0
+      29: aload_0
+      30: invokevirtual #117                // Method w:()Lblv;
+      33: invokevirtual #122                // Method bku.b:(Lblv;Lblv;)Lbkt;
+      36: iload_3
+      37: i2f
+      38: invokevirtual #125                // Method blv.a:(Lbkt;F)Z
+      41: pop
+      42: return
+
+  protected void a(elr);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #130                // Method cgg.a:(Lelr;)V
+       5: aload_0
+       6: invokevirtual #79                 // Method dM:()Lctp;
+       9: getfield      #133                // Field ctp.B:Z
+      12: ifne          28
+      15: aload_0
+      16: invokevirtual #79                 // Method dM:()Lctp;
+      19: aload_0
+      20: iconst_3
+      21: invokevirtual #136                // Method ctp.a:(Lblv;B)V
+      24: aload_0
+      25: invokevirtual #140                // Method am:()V
+      28: return
+}

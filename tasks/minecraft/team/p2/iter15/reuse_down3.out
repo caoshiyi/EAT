@@ -1,0 +1,84 @@
+program #7651 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "REUSE_DROP_GEOMETRY",
+ "endingIssue": null,
+ "arrived": false,
+ "at": "2026-10-17T15:16:06.461Z",
+ "p": {
+  "x": -44.45651241910329,
+  "y": 56,
+  "z": 54.499886606894094
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "flags": 0,
+ "onFire": false,
+ "pose": 0,
+ "height": 1.8,
+ "physics": 1.8,
+ "onGround": true,
+ "lost": false,
+ "forced": 0,
+ "hurts": [],
+ "attributes": {
+  "undefined": {
+   "value": 4,
+   "modifiers": []
+  }
+ },
+ "backFull": false,
+ "wFull": false,
+ "gateClosed": false,
+ "cursor": null,
+ "stock": 14,
+ "rods": 5,
+ "inv": [
+  [
+   "nether_bricks",
+   3,
+   null
+  ],
+  [
+   "blaze_rod",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   9,
+   null
+  ]
+ ],
+ "blazes": [],
+ "drops": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-44.5, 56, 54.5) in the_nether, health 11.5/20, food 9/20, alive

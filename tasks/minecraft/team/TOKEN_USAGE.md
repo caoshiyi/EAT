@@ -9,3 +9,6 @@ Token usage unavailable: no permitted authoritative per-agent counters discovere
 Current token usage unavailable from permitted evidence. No prohibited locations inspected. Inherited tracked history preserved in mission/iter14/inherited_TOKEN_USAGE.md.
 
 Iteration14 evidence update12:35: permitted agent_team/BUDGET.md read12:33, contains dollar cost rows only, no token accounting. Current token counts unavailable; zero-dollar rows do not imply zero tokens.
+
+## Iteration15 opening
+Token usage unavailable: no permitted runner accounting evidence observed; do not infer from program counts or access prohibited locations.

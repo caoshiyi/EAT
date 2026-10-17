@@ -1,0 +1,88 @@
+program #7650 on p2: 3.6 s
+--- output ---
+ACTUAL -45,56,54 2459
+HELD_RECOVERY_SUB Vec3 { x: -44, y: 56, z: 54 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -44, y: 57, z: 54 } dirt nether_bricks
+--- returned ---
+{
+ "caller": "iter13_out_east",
+ "entityId": 169,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -44.45651241910329,
+  "y": 56,
+  "z": 54.499886606894094
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -45,
+   56,
+   54
+  ]
+ ],
+ "elapsed": 3611,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "nether_bricks",
+   3,
+   null
+  ],
+  [
+   "blaze_rod",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "basalt",
+   9,
+   null
+  ]
+ ],
+ "rodBefore": 5,
+ "rodAfter": 5,
+ "rodPreserved": true,
+ "handCuts": [],
+ "hpActual": 11.499998092651367,
+ "bodyActual": {
+  "x": -44.45651241910329,
+  "y": 56,
+  "z": 54.499886606894094
+ },
+ "stage": "out_east_whole",
+ "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-44.5, 56, 54.5) in the_nether, health 11.5/20, food 9/20, alive

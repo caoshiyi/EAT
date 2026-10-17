@@ -1,0 +1,8 @@
+const oldG=LOW;let openedW=false,migrated=false,gateRemoved=false;
+try{live();if(!pod(BACK)||stock()<2||name(oldG)!=='spruce_fence_gate'||B(oldG).getProperties().open||!full(G)||!full(LOW.offset(0,-1,0)))throw Error('HIGH_MIGRATE_START');
+ openedW=true;await cut(W.offset(0,1,0));await cut(W);await t(8);if(stock()<2)throw Error('ENDING_RESERVE');await move(W,-132.7);if(!full(G)||!full(W.offset(0,2,0)))throw Error('HIGH_HOOD');
+ await bot.unequip('hand');await bot.dig(B(oldG),true);gateRemoved=true;await t(1);if(!air(oldG))throw Error('OLD_GATE_CUT_ACK');await move(W,-132.35);await t(8);if(count('spruce_fence_gate')!==1)throw Error('GATE_ORDINARY_RECEIPT');trace.push(['GATE_ORDINARY_RECLAIMED',bot.health]);
+ await put(LOW);if(!full(LOW)||stock()<2)throw Error('LOW_FULL_AND_END_RESERVE');trace.push(['LOW62_FULL_BEFORE_HIGH_CAP_CUT',bot.health]);
+ await cut(G);const it=bot.inventory.items().find(i=>i.name==='spruce_fence_gate');if(!it)throw Error('GATE_LOST');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot._placeBlockWithOptions(B(LOW),V([0,1,0]),{forceLook:true});await t(4);}finally{stop();}if(!gateClosed())throw Error('HIGH_GATE_CLOSED_EW_ACK');migrated=true;trace.push(['HIGH_GATE_INSTALLED',B(G).getProperties(),B(G).shapes,bot.health]);
+}catch(e){issue=e.message;trace.push(['ISSUE',issue,self.position.clone(),bot.health]);}finally{recovery=true;stop();if(!lost&&openedW)try{await backEnd();}catch(e){endingIssue=e.message;trace.push(['END_FAILED',endingIssue,self.position.clone(),bot.health]);}cleanup();}
+return{issue,endingIssue,gateRemoved,migrated,trace,...snap()};

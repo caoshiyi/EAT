@@ -1,0 +1,4 @@
+const fs=require('fs'),vm=require('vm');class V{constructor(x,y,z){Object.assign(this,{x,y,z})}offset(x,y,z){return new V(this.x+x,this.y+y,this.z+z)}}const c={};vm.createContext(c);vm.runInContext(fs.readFileSync('tasks/minecraft/team/p3/iter15/closed_tube_guard.js','utf8')+';this.f=p3ClosedTube',c);
+function run(length,extra={},max=12){const bot={entities:{},blockAt(q){const name=extra[[q.x,q.y,q.z]]||(q.x>=0&&q.x<length&&q.z===0&&[60,61].includes(q.y)?'air':'netherrack');return{name,shapes:name==='netherrack'?[[0,0,0,1,1,1]]:[]}}};return c.f(bot,new V(2,60,0),new V(3,60,0),max)}
+const tests=[['closed6',run(6),true],['limit13',run(13),false],['partialside',run(6,{'2,60,1':'air'}),false],['roofhole',run(6,{'2,62,0':'air'}),false],['fluid',run(6,{'2,60,1':'lava'}),false],['unknown',run(6,{'2,60,1':'unloaded'}),false]];
+for(const[n,r,want]of tests){if(r.ok!==want)throw Error(n+JSON.stringify(r));console.log(n,r.ok?'PASS':'REFUSED',r.issue)}

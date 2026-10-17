@@ -1,0 +1,14 @@
+net.minecraft.world.entity.projectile.ProjectileUtil -> cgb:
+# {"fileName":"ProjectileUtil.java","id":"sourceFile"}
+    float DEFAULT_ENTITY_HIT_RESULT_MARGIN -> a
+    22:22:void <init>() -> <init>
+    29:33:net.minecraft.world.phys.HitResult getHitResultOnMoveVector(net.minecraft.world.entity.Entity,java.util.function.Predicate) -> a
+    40:44:net.minecraft.world.phys.HitResult getHitResultOnMoveVector(net.minecraft.world.entity.Entity,java.util.function.Predicate,net.minecraft.world.level.ClipContext$Block) -> a
+    48:52:net.minecraft.world.phys.HitResult getHitResultOnViewVector(net.minecraft.world.entity.Entity,java.util.function.Predicate,double) -> a
+    56:68:net.minecraft.world.phys.HitResult getHitResult(net.minecraft.world.phys.Vec3,net.minecraft.world.entity.Entity,java.util.function.Predicate,net.minecraft.world.phys.Vec3,net.minecraft.world.level.Level,float,net.minecraft.world.level.ClipContext$Block) -> a
+    73:110:net.minecraft.world.phys.EntityHitResult getEntityHitResult(net.minecraft.world.entity.Entity,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.AABB,java.util.function.Predicate,double) -> a
+    115:115:net.minecraft.world.phys.EntityHitResult getEntityHitResult(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.AABB,java.util.function.Predicate) -> a
+    120:138:net.minecraft.world.phys.EntityHitResult getEntityHitResult(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.Vec3,net.minecraft.world.phys.AABB,java.util.function.Predicate,float) -> a
+    145:171:void rotateTowardsMovement(net.minecraft.world.entity.Entity,float) -> a
+    174:174:net.minecraft.world.InteractionHand getWeaponHoldingHand(net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.Item) -> a
+    178:188:net.minecraft.world.entity.projectile.AbstractArrow getMobArrow(net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.ItemStack,float) -> a

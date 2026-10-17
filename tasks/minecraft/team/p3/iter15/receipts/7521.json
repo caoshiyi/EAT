@@ -1,0 +1,482 @@
+{
+  "summary": {
+    "program": 7521,
+    "source": "high_weapon_kill.js",
+    "receipt_utc": "2026-10-17T14:06:47.565052+00:00",
+    "observed_utc": "2026-10-17T14:06:50.864027+00:00",
+    "scope": "last published receipt, not live body",
+    "issue": null,
+    "ending_issue": null,
+    "hp": 20,
+    "position": {
+      "x": -132.50513438604443,
+      "y": 62,
+      "z": -430.55744864222
+    },
+    "back_full": true,
+    "high_full": null,
+    "gate_closed": true,
+    "ordinary_rods": 0,
+    "hits_events": 0,
+    "dead_attacked_ids": [],
+    "damage_receipts": [],
+    "own_hurt_events": [],
+    "projectile_samples": 0,
+    "drops": [],
+    "inventory": [
+      [
+        "wooden_pickaxe",
+        1,
+        56
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        38
+      ],
+      [
+        "cobblestone_slab",
+        5,
+        null
+      ],
+      [
+        "cobblestone",
+        1,
+        null
+      ]
+    ]
+  },
+  "published_record": {
+    "source": "high_weapon_kill.js",
+    "program": 7521,
+    "observed_utc": "2026-10-17T14:06:47.565052+00:00",
+    "result": {
+      "issue": null,
+      "endingIssue": null,
+      "openedW": true,
+      "openedGate": true,
+      "swung": false,
+      "targetBefore": null,
+      "targetAfter": null,
+      "hits": [],
+      "dead": [],
+      "projectiles": [],
+      "pGone": [],
+      "observerTicks": 1154,
+      "projectileOverflow": 0,
+      "swingRestored": true,
+      "trace": [
+        [
+          "CUT",
+          [
+            -133,
+            63,
+            -430
+          ],
+          "nether_bricks"
+        ],
+        [
+          "CUT",
+          [
+            -133,
+            62,
+            -430
+          ],
+          "nether_bricks"
+        ],
+        [
+          "ORDINARY_END_RESERVE",
+          3
+        ],
+        [
+          "INITIAL_ATTRIBUTES",
+          {
+            "undefined": {
+              "value": 4,
+              "modifiers": []
+            }
+          }
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          99,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          20,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          40,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          60,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          80,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          99,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          120,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          140,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          100,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          160,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          99,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          101,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          180,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          99,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          200,
+          20
+        ],
+        [
+          "TOGGLE",
+          true,
+          99,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          100,
+          20
+        ],
+        [
+          "ACQUIRE_PEEK",
+          220,
+          20
+        ],
+        [
+          "TOGGLE",
+          false,
+          0,
+          20
+        ],
+        [
+          "CAP",
+          [
+            -133,
+            63,
+            -430
+          ],
+          "nether_bricks",
+          "nether_bricks"
+        ],
+        [
+          "CAP",
+          [
+            -133,
+            62,
+            -430
+          ],
+          "nether_bricks",
+          "nether_bricks"
+        ],
+        [
+          "BACK_END_PROVED",
+          20,
+          0,
+          1
+        ]
+      ],
+      "at": "2026-10-17T14:06:47.550Z",
+      "p": {
+        "x": -132.50513438604443,
+        "y": 62,
+        "z": -430.55744864222
+      },
+      "hp": 20,
+      "food": 20,
+      "flags": 0,
+      "onFire": false,
+      "pose": 0,
+      "height": 1.8,
+      "physics": 1.8,
+      "onGround": true,
+      "lost": false,
+      "forced": 0,
+      "hurts": [],
+      "attributes": "[repeated reference]",
+      "backFull": true,
+      "wFull": false,
+      "gateClosed": true,
+      "cursor": null,
+      "stock": 1,
+      "rods": 0,
+      "inv": [
+        [
+          "wooden_pickaxe",
+          1,
+          56
+        ],
+        [
+          "stone_pickaxe",
+          1,
+          38
+        ],
+        [
+          "cobblestone_slab",
+          5,
+          null
+        ],
+        [
+          "cobblestone",
+          1,
+          null
+        ]
+      ],
+      "blazes": [
+        {
+          "id": 3551,
+          "p": {
+            "x": -143.69999998807907,
+            "y": 61.199914928894046,
+            "z": -430.30000001192093
+          },
+          "hp": 19.45600128173828,
+          "charge": 0
+        },
+        {
+          "id": 3696,
+          "p": {
+            "x": -139.30000001192093,
+            "y": 60.199914928894046,
+            "z": -429.30000001192093
+          },
+          "hp": 19.45600128173828,
+          "charge": 0
+        },
+        {
+          "id": 3780,
+          "p": {
+            "x": -127.92500001192093,
+            "y": 64,
+            "z": -428.5422379618092
+          },
+          "hp": 20
+        },
+        {
+          "id": 3932,
+          "p": {
+            "x": -135.23994141817093,
+            "y": 61.20710936188698,
+            "z": -431.49897328014964
+          },
+          "hp": 14.72800064086914,
+          "charge": 0
+        },
+        {
+          "id": 4089,
+          "p": {
+            "x": -132.07499998807907,
+            "y": 64,
+            "z": -427.92500001192093
+          },
+          "hp": 20
+        },
+        {
+          "id": 4175,
+          "p": {
+            "x": -135.2641174242528,
+            "y": 64.19991492889405,
+            "z": -432.1724022452496
+          },
+          "hp": 20
+        },
+        {
+          "id": 4664,
+          "p": {
+            "x": -127.92500001192093,
+            "y": 64.19991492889405,
+            "z": -432.166555079558
+          },
+          "hp": 20
+        },
+        {
+          "id": 5144,
+          "p": {
+            "x": -128.30000001192093,
+            "y": 64.19991492889405,
+            "z": -427.92500001192093
+          },
+          "hp": 20
+        },
+        {
+          "id": 5297,
+          "p": {
+            "x": -127.92500001192093,
+            "y": 64,
+            "z": -430.15033602204545
+          },
+          "hp": 20
+        },
+        {
+          "id": 5699,
+          "p": {
+            "x": -134.30000001192093,
+            "y": 63.819055553894046,
+            "z": -430.30000001192093
+          },
+          "hp": 20
+        },
+        {
+          "id": 9856,
+          "p": {
+            "x": -133.79104763805034,
+            "y": 62,
+            "z": -431.5315993308452
+          },
+          "hp": 20
+        }
+      ],
+      "drops": [],
+      "controls": {
+        "forward": false,
+        "back": false,
+        "left": false,
+        "right": false,
+        "jump": false,
+        "sneak": false,
+        "sprint": false
+      }
+    }
+  }
+}

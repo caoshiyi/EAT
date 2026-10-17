@@ -1,0 +1,12 @@
+# Exact public1.20.4 snowball/crystal findings — 13:32 UTC
+Boundedquestion: do prepared snowballcrystalcaller constants/spawn/collision assumptions match1.20.4 ratherthan prioradjacent1.20.3-pre1? Publicofficial Mojang1.20.4 client24,445,539bytes +officialmappings8,897,012bytes downloadedinmemory; SHA1 exactlymatched knownmanifest. Fullarchive notretained; five selectedpublicclasses/mappingsections+`javap -c -p` outputs savedhere. No arena server/files/console/.work read. `extract.py` reproducible publicinputs/provenance.
+
+- SnowballItem.use (`cob`,bytecode87/89): speed1.5/inaccuracy1.0; consumesoneordinarysnowball insurvival.
+- ThrowableProjectile constructor (`cgh`): spawnshooterX/Z, eyeY-0.10000000149. Tickadvancespositionbycurrentvelocity THEN scalesvelocity0.99f then subtractsgravity0.03f. Inwaterdrag0.8, irrelevantEnddrysurface. Currentdiscretearcformula order matches normaldrymodel.
+- Projectile.shoot (`cga`): normalizesdirection, addsrandomper-axis`triangle(0,0.0172275*inaccuracy)` THENmultipliesspeed. Thus arc isaimcenter, **notguaranteedtrajectory**. Snowballrandomspread exists; do notautorepeatamisswithoutnewcurrentobservation. Sourceprevious0.0075Gaussian intuition wouldbeincorrectforthisversion.
+- Projectile.shootFromRotation adds shootershorizontalvelocity; addsshooterYvelocity ONLYifNOTonGround. Currentstandinggroundedconstraint meanstheobservedidlegravityY=-0.0784 doesNOTaffectlaunchY. Correctedguardallowsgroundedidle whileboundinghorizontaldrift.
+- Snowball.onHitEntity (`cge`) invokes victim.hurt withfloat0 exceptBlazeclasscbz gets3. EndCrystal.hurt (`can`) doesNOTrequirepositivedamageamount: afterinvulnerability/dragoncauses/removed/clientguards, removescrystal; ordinarynonexplosiondamage producesradius6 explosion. Therefore normal0-damageSnowballcantriggerCrystal, subjecttoactualcollision/liveguards. This is exact-code evidence, notactualshotqualification.
+
+Currentactual7447 P4 idlebodygrounded/height1.8/physics1.8/metadata6=0/Yvelocity-0.0784. Rejectedlegacytotalvelocity<=.03; helpernowhorizontal<=.03,|vy|<=.09,grounded/standing/notexplicitCROUCH. FixtureusesactualidleY, unknownpose, motionrefusals, blockedarc/intercept/wrongdim0ammo +eventcleanup PASS.
+
+**ActualEndentry/surface/shotstillUNTESTED.** Publicclient distributionprovides matchedsharedlogic, notphysicalworldreceipt. OtherpriorpublicDragon/firefindingcaveats onlyreplaced wherep1/p3 separatelyverifiedtheirclasses; no blanketversionclaim.

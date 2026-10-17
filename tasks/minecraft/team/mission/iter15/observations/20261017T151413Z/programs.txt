@@ -1,0 +1,199 @@
+== #7634 2026-10-17T15:10:22 p2 role=source_owner iter=15 1.4 s
+// Pure world read: bounded two-high horizontal AIR tube with prospective next cut.
+// Inline into owner caller. Does not mine, place, move, equip, or control a player.
+function p3ClosedTube(bot,here,next,maxCells=12,native=null){
+ const key=q=>[q.x,q.y,q.z].join(','),air=q=>['air','cave_air','void_air','torch','wall_torch'].includes(bot.blockAt(q)?.name);
+ const full=native||(q=>{const b=bot.blockAt(q);return b&&!/lava|water|fire|magma|gravel|^sand$/.test(b.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')});
+ if(next.y!==here.y)return{ok:false,issue:'VERTICAL_KEEP_ORIGINAL_GUARD',cells:[]};
+ if(Math.abs(next.x-here.x)+Math.abs(next.z-here.z)>1)return{ok:false,issue:'NEXT_NOT_ADJACENT',cells:[]};
+ const virtual=new Set([key(next),key(next.offset(0,1,0))]);
+ for(const q of[here,here.offset(0,1,0)])if(!air(q))return{ok:false,issue:'BODY_NOT_AIR',cells:[]};
+ for(const q of[next,next.offset(0,1,0)])if(!air(q)&&!full(q))return{ok:false,issue:'NEXT_UNSAFE_KIND',cells:[]};
+ const clear=q=>virtual.has(key(q))||air(q),queue=[here],seen=new Set([key(here)]),fail=issue=>({ok:false,issue,cells:queue});
+ for(let i=0;i<queue.length;i++){
+  const q=queue[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))return fail('FLOOR_ROOF_OPEN');
+  for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){
+   const n=q.offset(x,0,z);if(seen.has(key(n)))continue;
+   const a=n,b=n.offset(0,1,0);
+   if(full(a)&&full(b)&&!virtual.has(key(a)))continue;
+   if(!clear(a)||!clear(b))return fail('PARTIAL_OR_UNSAFE_S
+... (19822 chars; --full)
+-- output --
+ISSUE HAND_FLOOR_ROOF_OPEN actual Vec3 { x: 0.4998990137853649, y: 67, z: 58.48275868581522 }
+-- returned --
+{"caller": "iter13_out_bridge", "entityId": 169, "threatTrace": [], "combatTrace": [], "combatSwings": 0, "hurt": false, "p": {"x": 0.4998990137853649, "y": 67, "z": 58.48275868581522}, "hp": 11.499998092651367, "food": 9, "issue": "HAND_FLOOR_ROOF_OPEN", "closed": true, "full": true, "walked": [], "elapsed": 1407, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "inv": [["nether_bricks", 14, null], ["blaze_rod", 5, null], ["stone_pickaxe", 1, 122], ["cobblestone_slab", 2, null], ["netherrack", 2, null], ["basalt", 11, null]], "rodBefore": 5, "rodAfter": 5, "rodPreserved": true, "handCuts": [], "hpActual": 11.499998092651367, "bodyActual": {"x": 0.4998990137853649, "y": 67, "z": 58.48275868581522}, "stage": "out_bridge_whole", "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."}
+== #7635 2026-10-17T15:10:41 p2 role=source_owner iter=15 0 s
+bot.chat("P3/P4 current7634 bridge HAND_FLOOR_ROOF_OPEN zeroactions/full Rod5 ST122. AftertwoequivalentroadHANDrefusals changedpolicy: pickforvariableheight/openroad03/04 <126, HANDreservedforqualifiedburiedtube/shaft; no repeatedsamehypothesis. P3 structuralp4Full correction received/applied. HOME\u2192SOUTH53 actual7632 PASS retained5/hp11.5. Remaining7min deadline, continueactualtransport.")
+== #7636 2026-10-17T15:10:41 p2 role=source_owner iter=15 20.1 s
+// Pure world read: bounded two-high horizontal AIR tube with prospective next cut.
+// Inline into owner caller. Does not mine, place, move, equip, or control a player.
+function p3ClosedTube(bot,here,next,maxCells=12,native=null){
+ const key=q=>[q.x,q.y,q.z].join(','),air=q=>['air','cave_air','void_air','torch','wall_torch'].includes(bot.blockAt(q)?.name);
+ const full=native||(q=>{const b=bot.blockAt(q);return b&&!/lava|water|fire|magma|gravel|^sand$/.test(b.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')});
+ if(next.y!==here.y)return{ok:false,issue:'VERTICAL_KEEP_ORIGINAL_GUARD',cells:[]};
+ if(Math.abs(next.x-here.x)+Math.abs(next.z-here.z)>1)return{ok:false,issue:'NEXT_NOT_ADJACENT',cells:[]};
+ const virtual=new Set([key(next),key(next.offset(0,1,0))]);
+ for(const q of[here,here.offset(0,1,0)])if(!air(q))return{ok:false,issue:'BODY_NOT_AIR',cells:[]};
+ for(const q of[next,next.offset(0,1,0)])if(!air(q)&&!full(q))return{ok:false,issue:'NEXT_UNSAFE_KIND',cells:[]};
+ const clear=q=>virtual.has(key(q))||air(q),queue=[here],seen=new Set([key(here)]),fail=issue=>({ok:false,issue,cells:queue});
+ for(let i=0;i<queue.length;i++){
+  const q=queue[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))return fail('FLOOR_ROOF_OPEN');
+  for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){
+   const n=q.offset(x,0,z);if(seen.has(key(n)))continue;
+   const a=n,b=n.offset(0,1,0);
+   if(full(a)&&full(b)&&!virtual.has(key(a)))continue;
+   if(!clear(a)||!clear(b))return fail('PARTIAL_OR_UNSAFE_S
+... (19822 chars; --full)
+-- output --
+ACTUAL 0,67,57 2859
+ACTUAL -1,66,57 3511
+ACTUAL -1,65,56 4160
+ACTUAL -2,65,56 4713
+ACTUAL -3,65,56 5213
+ACTUAL -4,65,56 5714
+ACTUAL -5,65,56 6266
+ACTUAL -6,65,56 6768
+ACTUAL -7,65,56 7320
+ACTUAL -8,65,56 7821
+ACTUAL -9,65,56 8371
+ACTUAL -10,65,56 8872
+ACTUAL -11,65,56 9423
+ACTUAL -12,65,56 9924
+ACTUAL -13,65,56 10425
+ACTUAL -14,65,56 10975
+ACTUAL -15,65,56 11476
+ACTUAL -15,65,55 11976
+ACTUAL -15,65,54 12526
+ACTUAL -15,65,53 13027
+ACTUAL -16,65,53 13527
+ACTUAL -17,65,53 14078
+ACTUAL -17,65,52 14578
+ACTUAL -17,65,51 15130
+ACTUAL -17,65,50 15631
+ACTUAL -17,65,49 16183
+ACTUAL -17,65,48 16683
+ACTUAL -18,65,48 18387
+ACTUAL -19,65,48 18937
+-- returned --
+{"caller": "iter13_out_bridge", "entityId": 169, "threatTrace": [], "combatTrace": [], "combatSwings": 0, "hurt": false, "p": {"x": -18.50313584835222, "y": 65, "z": 48.50271910687607}, "hp": 11.499998092651367, "food": 9, "issue": null, "closed": true, "full": true, "walked": [[0, 67, 57], [-1, 66, 57], [-1, 65, 56], [-2, 65, 56], [-3, 65, 56], [-4, 65, 56], [-5, 65, 56], [-6, 65, 56], [-7, 65, 56], [-8, 65, 56], [-9, 65, 56], [-10, 65, 56], [-11, 65, 56], [-12, 65, 56], [-13, 65, 56], [-14, 65, 56], [-15, 65, 56], [-15, 65, 55], [-15, 65, 54], [-15, 65, 53], [-16, 65, 53], [-17, 65, 53], [-17, 65, 52], [-17, 65, 51], [-17, 65, 50], [-17, 65, 49], [-17, 65, 48], [-18, 65, 48], [-19, 65, 48]], "elapsed": 20089, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "inv": [["nether_bricks", 15, null], ["blaze_rod", 5, null], ["stone_pickaxe", 1, 125], ["cobblestone_slab", 2, null], ["netherrack", 2, null], ["dirt", 1, null], ["basalt", 11, null]], "rodBefore": 5, "rodAfter": 5, "rodPreserved": true, "handCuts": [], "hpActual": 11.499998092651367, "bodyActual": {"x": -18.50313584835222, "y": 65, "z": 48.50271910687607}, "stage": "out_bridge_whole", "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."}
+== #7637 2026-10-17T15:11:23 p2 role=source_owner iter=15 2.3 s
+// Pure world read: bounded two-high horizontal AIR tube with prospective next cut.
+// Inline into owner caller. Does not mine, place, move, equip, or control a player.
+function p3ClosedTube(bot,here,next,maxCells=12,native=null){
+ const key=q=>[q.x,q.y,q.z].join(','),air=q=>['air','cave_air','void_air','torch','wall_torch'].includes(bot.blockAt(q)?.name);
+ const full=native||(q=>{const b=bot.blockAt(q);return b&&!/lava|water|fire|magma|gravel|^sand$/.test(b.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')});
+ if(next.y!==here.y)return{ok:false,issue:'VERTICAL_KEEP_ORIGINAL_GUARD',cells:[]};
+ if(Math.abs(next.x-here.x)+Math.abs(next.z-here.z)>1)return{ok:false,issue:'NEXT_NOT_ADJACENT',cells:[]};
+ const virtual=new Set([key(next),key(next.offset(0,1,0))]);
+ for(const q of[here,here.offset(0,1,0)])if(!air(q))return{ok:false,issue:'BODY_NOT_AIR',cells:[]};
+ for(const q of[next,next.offset(0,1,0)])if(!air(q)&&!full(q))return{ok:false,issue:'NEXT_UNSAFE_KIND',cells:[]};
+ const clear=q=>virtual.has(key(q))||air(q),queue=[here],seen=new Set([key(here)]),fail=issue=>({ok:false,issue,cells:queue});
+ for(let i=0;i<queue.length;i++){
+  const q=queue[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))return fail('FLOOR_ROOF_OPEN');
+  for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){
+   const n=q.offset(x,0,z);if(seen.has(key(n)))continue;
+   const a=n,b=n.offset(0,1,0);
+   if(full(a)&&full(b)&&!virtual.has(key(a)))continue;
+   if(!clear(a)||!clear(b))return fail('PARTIAL_OR_UNSAFE_S
+... (20706 chars; --full)
+-- output --
+ISSUE HAND_FLOOR_ROOF_OPEN actual Vec3 { x: -18.50313584835222, y: 65, z: 48.50271910687607 }
+-- returned --
+{"caller": "iter13_out_east", "entityId": 169, "threatTrace": [], "combatTrace": [], "combatSwings": 0, "hurt": false, "p": {"x": -18.50313584835222, "y": 65, "z": 48.50271910687607}, "hp": 11.499998092651367, "food": 9, "issue": "HAND_FLOOR_ROOF_OPEN", "closed": true, "full": true, "walked": [], "elapsed": 2255, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "inv": [["nether_bricks", 15, null], ["blaze_rod", 5, null], ["stone_pickaxe", 1, 126], ["cobblestone_slab", 2, null], ["netherrack", 2, null], ["dirt", 1, null], ["basalt", 11, null]], "rodBefore": 5, "rodAfter": 5, "rodPreserved": true, "handCuts": [], "hpActual": 11.499998092651367, "bodyActual": {"x": -18.50313584835222, "y": 65, "z": 48.50271910687607}, "stage": "out_east_whole", "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."}
+== #7638 2026-10-17T15:11:33 p3 role=method_validator iter=15 0 s
+bot.chat("P2 7636 bridgePASS Rod5/ST125/full/HP11.5 accepted. Toolphysical stone131 total\u21926usesleft; currentopenroad<126 permits justONE morecut beforeHANDagain. If04actualneeds>1 hardcut, boundedownerreserve<129 or<130 keeps2/1 realuses forending (cap29 held), then qualifiedburiedHAND only. This is explicitreservepolicychoice, notnewkit. p4Fullstructuralcorrection ACK, actualroadrefusals remainrecorded notHANDproof.")
+== #7639 2026-10-17T15:12:43 p2 role=source_owner iter=15 0 s
+bot.chat("P3/P4 actual7637 EAST04 handfulltube refused afteronecut+closedrollback Rod5/ST126. Variableheightroad breaks2Dfulltube assumption. Changed owned04 to qualifiedcurrentstance likeP3HOME: fullfloor+roof2or3 and2fullsidewalls+nativecut+hotneighbor+noDamage/actualending, logs HAND_PROTECTED_STANCE; finiteone55s liveattemptnow. Resume pathfromactualcell added. Needactualshaftmaterialpreflight; old45capsmanyCOBBdeep HAND~17.5s each notviable, alternativeadjacentnativeNETHshaft2s percut iffreshfull45column proof. No gearwait.")
+== #7641 2026-10-17T15:12:57 p4 role=completion_partner iter=15 0 s
+bot.chat("P2/P3 actual ending requirement distinction: your held generic fullcaps~29 can close a known AIR/native capsule by placement without a pick. A pick-use reserve is caller policy, not inherently needed for those endings; retain tool uses only for actual partial-block removal/typed harvest still required. You may spend remaining physical uses on the open-road BASALT body caps before switching to qualified buried HAND, preserving ordinary cap reserve + measured ending. No new kit or courier.")
+== #7642 2026-10-17T15:13:12 p1 role=destination_owner iter=15 0 s
+bot.chat("P4: actual Rod5 is travelling, and P2 has nearly exhausted its pick. Select a bounded OVERWORLD last-mile relay using the qualified route: own p4 moves to intake163.5,-26,2234.5 with a closed ending by15:15:30; if actual P2 arrives1632232, accept ONE stack5, verify ordinary receipt, return1312276 for P1. P1 stays FRAME for Eyes/activation. P2 keeps all rods until actual receiver co-presence; otherwise continue selfdelivery. This is OW tail only, no source journey/new stock. Do not wait beyond current deadline or claim a courier result before actual receipt.")
+== #7640 2026-10-17T15:12:43 p2 role=source_owner iter=15 32.6 s
+// Pure world read: bounded two-high horizontal AIR tube with prospective next cut.
+// Inline into owner caller. Does not mine, place, move, equip, or control a player.
+function p3ClosedTube(bot,here,next,maxCells=12,native=null){
+ const key=q=>[q.x,q.y,q.z].join(','),air=q=>['air','cave_air','void_air','torch','wall_torch'].includes(bot.blockAt(q)?.name);
+ const full=native||(q=>{const b=bot.blockAt(q);return b&&!/lava|water|fire|magma|gravel|^sand$/.test(b.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')});
+ if(next.y!==here.y)return{ok:false,issue:'VERTICAL_KEEP_ORIGINAL_GUARD',cells:[]};
+ if(Math.abs(next.x-here.x)+Math.abs(next.z-here.z)>1)return{ok:false,issue:'NEXT_NOT_ADJACENT',cells:[]};
+ const virtual=new Set([key(next),key(next.offset(0,1,0))]);
+ for(const q of[here,here.offset(0,1,0)])if(!air(q))return{ok:false,issue:'BODY_NOT_AIR',cells:[]};
+ for(const q of[next,next.offset(0,1,0)])if(!air(q)&&!full(q))return{ok:false,issue:'NEXT_UNSAFE_KIND',cells:[]};
+ const clear=q=>virtual.has(key(q))||air(q),queue=[here],seen=new Set([key(here)]),fail=issue=>({ok:false,issue,cells:queue});
+ for(let i=0;i<queue.length;i++){
+  const q=queue[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))return fail('FLOOR_ROOF_OPEN');
+  for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){
+   const n=q.offset(x,0,z);if(seen.has(key(n)))continue;
+   const a=n,b=n.offset(0,1,0);
+   if(full(a)&&full(b)&&!virtual.has(key(a)))continue;
+   if(!clear(a)||!clear(b))return fail('PARTIAL_OR_UNSAFE_S
+... (21231 chars; --full)
+-- output --
+HAND_PROTECTED_STANCE Vec3 { x: -19, y: 65, z: 48 } 4 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -20, y: 66, z: 48 } basalt
+HAND_PROTECTED_STANCE Vec3 { x: -19, y: 65, z: 48 } 3 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -20, y: 65, z: 48 } basalt
+ACTUAL -20,65,48 14226
+WEST20_RESTORED
+ACTUAL -21,65,48 15178
+ACTUAL -22,65,48 15678
+ACTUAL -23,65,48 16229
+ACTUAL -24,65,48 16730
+ACTUAL -25,65,48 17233
+ACTUAL -26,65,48 17784
+ACTUAL -27,65,48 18284
+ACTUAL -28,65,48 18834
+ACTUAL -29,65,48 19335
+ACTUAL -29,64,47 19986
+ACTUAL -30,63,47 20635
+ACTUAL -31,62,47 21386
+ACTUAL -31,61,46 22088
+ACTUAL -32,62,46 22690
+ACTUAL -33,61,46 23441
+ACTUAL -33,60,47 24142
+ACTUAL -33,59,48 24845
+ACTUAL -34,58,48 25497
+ACTUAL -34,57,47 26148
+ACTUAL -35,57,47 26699
+ACTUAL -36,57,47 27200
+ACTUAL -37,58,47 27802
+ACTUAL -37,58,48 28304
+ACTUAL -37,59,49 28905
+ACTUAL -37,59,50 29407
+ACTUAL -38,59,50 29907
+ACTUAL -39,58,50 30559
+ISSUE HAND_CURRENT_STANCE_FLOOR_ROOF_OPEN actual Vec3 { x: -38.39941869975149, y: 58, z: 50.49999463466313 }
+HELD_RECOVERY_SUB Vec3 { x: -39, y: 57, z: 49 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -39, y: 58, z: 49 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -39, y: 59, z: 49 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -38, y: 60, z: 50 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -39, y: 60, z: 50 } dirt nether_bricks
+-- returned --
+{"caller": "iter13_out_east", "entityId": 169, "threatTrace": [], "combatTrace": [], "combatSwings": 0, "hurt": false, "p": {"x": -38.41527995010493, "y": 58, "z": 50.49998054436599}, "hp": 11.499998092651367, "food": 9, "issue": "HAND_CURRENT_STANCE_FLOOR_ROOF_OPEN", "closed": true, "full": true, "walked": [[-20, 65, 48], [-21, 65, 48], [-22, 65, 48], [-23, 65, 48], [-24, 65, 48], [-25, 65, 48], [-26, 65, 48], [-27, 65, 48], [-28, 65, 48], [-29, 65, 48], [-29, 64, 47], [-30, 63, 47], [-31, 62, 47], [-31, 61, 46], [-32, 62, 46], [-33, 61, 46], [-33, 60, 47], [-33, 59, 48], [-34, 58, 48], [-34, 57, 47], [-35, 57, 47], [-36, 57, 47], [-37, 58, 47], [-37, 58, 48], [-37, 59, 49], [-37, 59, 50], [-38, 59, 50], [-39, 58, 50]], "elapsed": 32563, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "inv": [["nether_bricks", 10, null], ["blaze_rod", 5, null], ["stone_pickaxe", 1, 126], ["cobblestone_slab", 2, null], ["netherrack", 2, null], ["basalt", 9, null]], "rodBefore": 5, "rodAfter": 5, "rodPreserved": true, "handCuts": [{"q": [-20, 66, 48], "name": "basalt", "priceMs": 6250, "harvest": false, "lossExpected": true}, {"q": [-20, 65, 48], "name": "basalt", "priceMs": 6250, "harvest": false, "lossExpected": true}], "hpActual": 11.499998092651367, "bodyActual": {"x": -38.41527995010493, "y": 58, "z": 50.49998054436599}, "stage": "out_east_whole", "qualification": "Current caller source adapted from prior physic
+... (1549 chars; --full)
+== #7643 2026-10-17T15:13:20 p3 role=method_validator iter=15 0 s
+bot.chat("P2 exactshaft09 ownedsource audit: dest_09_shaft_down.js line57 STILL await put(bot.entity.position.floored().offset(0,2,0)) EVERYdescent despite releasedcap-conservationclaim. Withcap29 and45levels this alonecannotcomplete. Forfreshsealednativeadjacentcolumn, keepuppercolumnsealed atTOP andfinalactualendingroof ONLY; doNOTconsume1cap/level. P4originalnewgenerator maynotbeinyourearlycopy. Current09alsoWRONG_COLUMN -54/64; anyalternatecolumn needsownedexplicitcoords+bottomconnector. Reviewreleased, no physicalcolumnproof.")
+== #7644 2026-10-17T15:13:33 p2 role=source_owner iter=15 0 s
+// Pure world read: bounded two-high horizontal AIR tube with prospective next cut.
+// Inline into owner caller. Does not mine, place, move, equip, or control a player.
+function p3ClosedTube(bot,here,next,maxCells=12,native=null){
+ const key=q=>[q.x,q.y,q.z].join(','),air=q=>['air','cave_air','void_air','torch','wall_torch'].includes(bot.blockAt(q)?.name);
+ const full=native||(q=>{const b=bot.blockAt(q);return b&&!/lava|water|fire|magma|gravel|^sand$/.test(b.name)&&b.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')});
+ if(next.y!==here.y)return{ok:false,issue:'VERTICAL_KEEP_ORIGINAL_GUARD',cells:[]};
+ if(Math.abs(next.x-here.x)+Math.abs(next.z-here.z)>1)return{ok:false,issue:'NEXT_NOT_ADJACENT',cells:[]};
+ const virtual=new Set([key(next),key(next.offset(0,1,0))]);
+ for(const q of[here,here.offset(0,1,0)])if(!air(q))return{ok:false,issue:'BODY_NOT_AIR',cells:[]};
+ for(const q of[next,next.offset(0,1,0)])if(!air(q)&&!full(q))return{ok:false,issue:'NEXT_UNSAFE_KIND',cells:[]};
+ const clear=q=>virtual.has(key(q))||air(q),queue=[here],seen=new Set([key(here)]),fail=issue=>({ok:false,issue,cells:queue});
+ for(let i=0;i<queue.length;i++){
+  const q=queue[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))return fail('FLOOR_ROOF_OPEN');
+  for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){
+   const n=q.offset(x,0,z);if(seen.has(key(n)))continue;
+   const a=n,b=n.offset(0,1,0);
+   if(full(a)&&full(b)&&!virtual.has(key(a)))continue;
+   if(!clear(a)||!clear(b))return fail('PARTIAL_OR_UNSAFE_S
+... (21231 chars; --full)
+-- returned --
+{"issue": "START_NO_ACTION", "p": {"x": -38.41527995010493, "y": 58, "z": 50.49998054436599}, "hp": 11.499998092651367, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sneak": false, "sprint": false}, "rodBefore": 5, "rodAfter": 5, "rodPreserved": true, "handCuts": [], "hpActual": 11.499998092651367, "bodyActual": {"x": -38.41527995010493, "y": 58, "z": 50.49998054436599}, "stage": "out_east_whole", "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."}
+== #7645 2026-10-17T15:13:46 p3 role=method_validator iter=15 0 s
+bot.chat("P2 actual7640 currentstance(-39,58,50) floor57 shouldbefull (grounded), roof60/61 guardopen. Finite<=20s failure-specificoption withheld21caps: freshlyreadhere+2 andadjacentrefs; ifAIR safelyplaceONE ordinaryroofcap atcurrenthere+2 (orone sideheader+roof=2caps ifnoadjacentref). Provefullroof/2sidewalls thenretryoneHANDcut, stop/ending. No newstock/roomchain; guardcouldsimplyreflect4-highroad. DoNOTcutactualownroof forfuturehead. Yourremaining5realpickuses alsoavailable, reservepolicyexplicit.")

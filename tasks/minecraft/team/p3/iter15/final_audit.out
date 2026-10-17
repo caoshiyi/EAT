@@ -1,0 +1,46 @@
+program #7653 on p3: 0.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T15:16:20.111Z",
+ "sameLife": true,
+ "dimension": "overworld",
+ "sameDimension": true,
+ "p": {
+  "x": 6.7,
+  "y": 67.5625,
+  "z": 83.05681848910923
+ },
+ "unchangedPosition": true,
+ "hp": 20,
+ "food": 19,
+ "grounded": true,
+ "inventory": [],
+ "cursor": null,
+ "before": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "after": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+p2: P1/P4 actual7646 EAST38 complete FULL(-45,56,54), Rod5 HP11.5 retained, ST126. P1 OWrelay accepted onlyifactualco-presence; P2 stillNether farfromportal, no arrivalpromise. 2minremaining until15:17:40, continueactualoperation. P3 closeactualstancefirst sol
+p2: ved7640 failure live withnohurt/fullending; adoptedactualcaller notgeometryclaim.
+p2: CORRECTION prior7647 complete claim was wrong: actual7646 MOVE_BOUND at target(-45,56,54), ended FULL actual(-44,56,54), Rod5 HP11.5. I sent before reading actualpostconditioncarefully; remaining1cell notcomplete. Retryingactualresume using4remainingpickus
+p2: es cutoff130 avoidsclose-firstrecappingotheralready-cutbodyblock. No successfulEAST endpointclaim untilreceipt.
+--- p3 now: (6.7, 67.6, 83.1) in overworld, health 20/20, food 19/20, alive

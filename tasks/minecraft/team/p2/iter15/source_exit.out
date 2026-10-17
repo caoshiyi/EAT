@@ -1,0 +1,342 @@
+program #7620 on p2: 8.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "rose": true,
+ "descending": true,
+ "arrived": true,
+ "trace": [
+  [
+   "TLOW_RESTORED",
+   13,
+   5,
+   11.499998092651367
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    62,
+    -431
+   ],
+   "nether_bricks"
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    61,
+    -431
+   ],
+   "nether_bricks"
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    61,
+    -430
+   ],
+   "netherrack"
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    60,
+    -430
+   ],
+   "netherrack"
+  ],
+  [
+   "DROP",
+   60,
+   16,
+   11.499998092651367
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    59,
+    -430
+   ],
+   "netherrack"
+  ],
+  [
+   "DROP",
+   59,
+   17,
+   11.499998092651367
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    58,
+    -430
+   ],
+   "netherrack"
+  ],
+  [
+   "DROP",
+   58,
+   18,
+   11.499998092651367
+  ],
+  [
+   "CUT",
+   [
+    -133,
+    57,
+    -430
+   ],
+   "netherrack"
+  ],
+  [
+   "DROP",
+   57,
+   19,
+   11.499998092651367
+  ],
+  [
+   "CAP",
+   [
+    -133,
+    59,
+    -430
+   ],
+   "netherrack",
+   "netherrack"
+  ],
+  [
+   "W57_RETAINED",
+   5,
+   18,
+   11.499998092651367
+  ]
+ ],
+ "at": "2026-10-17T15:02:15.988Z",
+ "p": {
+  "x": -132.5072845845892,
+  "y": 57,
+  "z": -429.3911293668584
+ },
+ "hp": 11.499998092651367,
+ "food": 10,
+ "flags": 2,
+ "onFire": false,
+ "pose": 5,
+ "height": 1.5,
+ "physics": 1.8,
+ "onGround": true,
+ "lost": false,
+ "forced": 0,
+ "hurts": [],
+ "attributes": {
+  "undefined": {
+   "value": 4,
+   "modifiers": []
+  }
+ },
+ "backFull": false,
+ "wFull": false,
+ "gateClosed": true,
+ "cursor": null,
+ "stock": 18,
+ "rods": 5,
+ "inv": [
+  [
+   "nether_bricks",
+   15,
+   null
+  ],
+  [
+   "blaze_rod",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   95
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   3,
+   null
+  ]
+ ],
+ "blazes": [
+  {
+   "id": 3551,
+   "p": {
+    "x": -143.69999998807907,
+    "y": 60,
+    "z": -430.30000001192093
+   },
+   "hp": 19.45600128173828,
+   "charge": 0
+  },
+  {
+   "id": 4664,
+   "p": {
+    "x": -127.92500001192093,
+    "y": 64,
+    "z": -432.69999998807907
+   },
+   "hp": 20
+  },
+  {
+   "id": 5699,
+   "p": {
+    "x": -146.16807843708023,
+    "y": 60,
+    "z": -420.65252085470803
+   },
+   "hp": 16
+  },
+  {
+   "id": 15583,
+   "p": {
+    "x": -144.56008614220525,
+    "y": 61.199914928894046,
+    "z": -452.8186710666151
+   },
+   "hp": 15
+  },
+  {
+   "id": 16045,
+   "p": {
+    "x": -146.69999998807907,
+    "y": 60.387414928894046,
+    "z": -422.98862840911795
+   },
+   "hp": 19
+  },
+  {
+   "id": 21000,
+   "p": {
+    "x": -144.41599227301887,
+    "y": 60,
+    "z": -424.75367201531697
+   },
+   "hp": 20
+  },
+  {
+   "id": 22136,
+   "p": {
+    "x": -135.18382392663062,
+    "y": 60,
+    "z": -427.4987802304137
+   },
+   "hp": 11
+  },
+  {
+   "id": 22195,
+   "p": {
+    "x": -145.1434867764466,
+    "y": 60,
+    "z": -439.506917672014
+   },
+   "hp": 20
+  },
+  {
+   "id": 22493,
+   "p": {
+    "x": -128.30000001192093,
+    "y": 62,
+    "z": -430.2335547830961
+   },
+   "hp": 12
+  },
+  {
+   "id": 22562,
+   "p": {
+    "x": -145.3165992759369,
+    "y": 60.671106335144046,
+    "z": -425.1500514550577
+   },
+   "hp": 20
+  },
+  {
+   "id": 22633,
+   "p": {
+    "x": -141.48541882843588,
+    "y": 60,
+    "z": -429.9613034223586
+   },
+   "hp": 17,
+   "charge": 0
+  },
+  {
+   "id": 22868,
+   "p": {
+    "x": -128.69995832567386,
+    "y": 62,
+    "z": -429.63913863569604
+   },
+   "hp": 20
+  },
+  {
+   "id": 22876,
+   "p": {
+    "x": -242.33762312026028,
+    "y": 61,
+    "z": -447.5
+   },
+   "hp": 20
+  },
+  {
+   "id": 23069,
+   "p": {
+    "x": -128.6946105132543,
+    "y": 62,
+    "z": -430.8094344047594
+   },
+   "hp": 20
+  },
+  {
+   "id": 23165,
+   "p": {
+    "x": -129.69811018890763,
+    "y": 63,
+    "z": -432.13188432330827
+   },
+   "hp": 20
+  }
+ ],
+ "drops": [
+  {
+   "id": 23176,
+   "p": {
+    "x": -132.25618163837225,
+    "y": 57.1969799379163,
+    "z": -429.7236051366644
+   },
+   "item": "netherrack",
+   "count": 1
+  }
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P2 thanks for catching health<18/mandatoryWOODsword in old road START predicates; owned generator now also fixes those and removes inactive combat code, full11 recompile/runtime hand+guard fixtures PASS. Your already-patched copies take priority; no repeat
+p4: adoption. transport/RELEASE.md records original3min MISS6m22, exact stages, shaft cap-conservation, hand limits and physical replay still unqualified. No source/receiver credit claimed.
+--- p2 now: (-132.5, 57, -429.4) in the_nether, health 11.5/20, food 10/20, alive

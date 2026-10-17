@@ -1,0 +1,35 @@
+program #7646 on p2: 50.2 s
+--- output ---
+HAND_PROTECTED_STANCE Vec3 { x: -39, y: 58, z: 50 } 4 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -39, y: 59, z: 51 } basalt
+HAND_PROTECTED_STANCE Vec3 { x: -39, y: 58, z: 50 } 3 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -39, y: 58, z: 51 } basalt
+ACTUAL -39,58,51 14281
+ACTUAL -40,58,51 14781
+ACTUAL -41,58,51 15332
+ACTUAL -41,58,52 15833
+ACTUAL -42,57,52 16534
+ACTUAL -42,56,53 17185
+ACTUAL -43,56,53 17686
+ACTUAL -43,56,54 18237
+HAND_PROTECTED_STANCE Vec3 { x: -43, y: 56, z: 54 } 3 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -44, y: 57, z: 54 } basalt
+HAND_PROTECTED_STANCE Vec3 { x: -43, y: 56, z: 54 } 2 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -44, y: 56, z: 54 } sandstone
+ACTUAL -44,56,54 29609
+HAND_PROTECTED_STANCE Vec3 { x: -44, y: 56, z: 54 } 2 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -45, y: 57, z: 54 } basalt
+HELD_RECOVERY_SUB Vec3 { x: -43, y: 56, z: 54 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -43, y: 57, z: 54 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -44, y: 55, z: 53 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -44, y: 56, z: 53 } dirt nether_bricks
+HELD_RECOVERY_SUB Vec3 { x: -44, y: 57, z: 53 } dirt nether_bricks
+HAND_PROTECTED_STANCE Vec3 { x: -44, y: 56, z: 54 } 1 FLOOR_ROOF_OPEN
+UNARMED_NO_HARVEST Vec3 { x: -45, y: 56, z: 54 } basalt
+ISSUE MOVE_BOUND_(-45, 56, 54) actual Vec3 { x: -43.7, y: 56, z: 54.499512210874634 }
+RETURN {"caller":"iter13_out_east","entityId":169,"threatTrace":[],"combatTrace":[],"combatSwings":0,"hurt":false,"p":{"x":-43.57534320501508,"y":56,"z":54.49969432927936},"hp":11.499998092651367,"food":9,"issue":"MOVE_BOUND_(-45, 56, 54)","closed":true,"full":true,"walked":[[-39,58,51],[-40,58,51],[-41,58,51],[-41,58,52],[-42,57,52],[-42,56,53],[-43,56,53],[-43,56,54],[-44,56,54]],"elapsed":50238,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["nether_bricks",5,null],["blaze_rod",5,null],["stone_pickaxe",1,126],["cobblestone_slab",2,null],["netherrack",2,null],["basalt",7,null]],"rodBefore":5,"rodAfter":5,"rodPreserved":true,"handCuts":[{"q":[-39,59,51],"name":"basalt","priceMs":6250,"harvest":false,"lossExpected":true},{"q":[-39,58,51],"name":"basalt","priceMs":6250,"harvest":false,"lossExpected":true},{"q":[-44,57,54],"name":"basalt","priceMs":6250,"harvest":false,"lossExpected":true},{"q":[-44,56,54],"name":"sandstone","priceMs":4000,"harvest":false,"lossExpected":true},{"q":[-45,57,54],"name":"basalt","priceMs":6250,"harvest":false,"lossExpected":true},{"q":[-45,56,54],"name":"basalt","priceMs":6250,"harvest":false,"lossExpected":true}],"hpActual":11.499998092651367,"bodyActual":{"x":-43.57534320501508,"y":56,"z":54.49969432927936},"stage":"out_east_whole","qualification":"Current caller source adapted from prior physical path; actual current-stage receipt required."}
+--- chat since this player's previous program ---
+p3: P2 actual7640 currentstance(-39,58,50) floor57 shouldbefull (grounded), roof60/61 guardopen. Finite<=20s failure-specificoption withheld21caps: freshlyreadhere+2 andadjacentrefs; ifAIR safelyplaceONE ordinaryroofcap atcurrenthere+2 (orone sideheader+roof=2
+p3: caps ifnoadjacentref). Provefullroof/2sidewalls thenretryoneHANDcut, stop/ending. No newstock/roomchain; guardcouldsimplyreflect4-highroad. DoNOTcutactualownroof forfuturehead. Yourremaining5realpickuses alsoavailable, reservepolicyexplicit.
+--- p2 now: (-43.6, 56, 54.5) in the_nether, health 11.5/20, food 9/20, alive
+

@@ -1,0 +1,23 @@
+# P4 selected End execution — current iteration15 only
+Deadline15:17:40 UTC Oct17,1792250260000. Every shell command `cd "$EAT_ROOT"`. Only run as p4. Own files P4.md+p4/. No permissions/lease gate; actual world receipts govern. No newcourier/packet. SourcecurrentlyRod0, so NO Endworldnegative tests now.
+
+Use `python3 tasks/minecraft/team/p4/iter15/run.py FILE --timeout N --require-success`, promptly read exact output path + current actual body when issue/timeout. A caught actionissue yields exit4 evenarenaexit0. Do not blindlychain mutations. Arena utilities/read-onlyrecords always available; only ownactor programs.
+
+## First actual delivery / first entrant
+P2 owns retainedRod/selfdelivery. P1 owns receiver/craft/portal/firstentry. Helpers and oldselfdeliveryroute published/released (DELIVERY_ROUTE.md). P1 accepted: actual End landing -> freshbridgeplan+bridgeexecute as OWNp1 -> actualnativeending -> TWO-cell perpendicular `native_side_pod.js` -> actualsidepodbody/fullnative receipt. This clears mainline andregenerating5x5 forP4. Do NOT enter merely becauseP1the_end; needactualsidepod/5x5-clear evidence.
+
+## P4 own selected operations
+1. Confirm actual9end_portal at133..135,Y-38,2275..2277 fromP1receipt; P1actualsidepod offmainline; arena status/records current. P2 donor maystilloccupy131companion: chooseactualyield then, no speculativefuturelease. Do not cutP1centerfloor134,-37,2276 or bed/spawn.
+2. `portal_approach.js` N75. Requires actualportal9 BEFOREmovement; actualpeerroute veto beforecuts. Success **completed=true/index9/closed=true**, ownbody132,-36,2276, HP>=18, controlsfalse. Corrected oldwrongcursor reporting. Onpartialboundedending readactualbody/cursor beforeanothercall.
+3. `portal_enter.js` N35. Success **entered=true/worldthe_end/HP>0/lost=false**, controlsfalse. Actualgame/entity transition maychangeobjects; readbody/onGround. Ifunknown/dangerousending handlecurrentworld/body first, doNOTrunoldOWrecap afterEnd/death.
+4. `end_entry_probe.js` N12 -> actualfloor/grid/creatures. `end_bridge_plan.js` N10 -> fresh planok. `end_bridge_execute.js` N240, fresh<=30s/per-botplan. Firstsmallobsidian OUT/RETURN physicalreceipt required beforewhole. Wholework+reverse<=220s/deadline; floormaterials+12/stonecuts+20 dynamiccurrentbudget. Success completed/closed native10faces; actualEndpositive notyetqualified. It endsUNDERGROUND.
+5. `ascent_unit.js` N30 ONCE: requirecompleted/closed/newY+1/sameXZ/HP. It recordsactual-first-End-unit proof. Then `ascent_more.js` N70 atmost6nativeunits/whole<=60s, proofsamebody/column/Y, checkeachreceipt. Repeatonlywhileactualunitsprogress/currentbudget andclosed. `SURFACE_OR_UNKNOWN_STOP` is normalfiniteboundary; no additionalcut. No fakephysicsheight.
+6. `surface_probe.js` N10: freshactualloadednativecolumn/top/adjacentnativeexit/material/tool/threatplan. `surface_peek.js` N60 FIRST: <=5pillarup +oneadjacentnativegroundstep +immediate reverse/nativeoriginalroof. Require reachedSurface/closed/noissue/sameoriginalbody. Sourcefixturesonlyuntilactualreceipt. Ongeometryrefusal choosefromactualterrain; do notinventground/slope ornewstockquota.
+7. Fresh `surface_probe.js` N10 then `surface_one_snow.js` N60: SAME OUT +standing/settled +maxONEclear low/high/offcenter snow +nativeRETURN. Requireclosed; inspectnestedSHOT_RECEIPT ammo-1/spawn/targetGone/explosion. Successfuloperation returnsnativepod; no exposedmanualintermission. LocalDragon/cloud/fireball guardcheckswholeshot. Randomspread.0172275 remains; noauto-retryspent/unconfirmedshot. Noactualcleararc spends0 andreturnsclosed, choosechangedactualtarget/method. Snow verticalreach limited(ASCENT.md). P1ownsbow/dragoncombat; no allcrystal prerequisite.
+8. Continue actual support/qualified crystal shots/combat asneeded, evaluator victory confirmation. `python3 tools/eval_minecraft.py`. Stoponlyactualdragon1/currentexplicitstop/verifieddeadline/termination, notreadinessor10milestones.
+
+## Current own state at last actual7516
+129.503,-36,2274.507 OW/FULL20HP19food/grounded/all7false/Snow4/Stone87=44uses/Sword0/fullcaps45/cursorNULL. Jump timing test noinventoryexpense. P1FRAME packet10Pearl/current63caps/Stone65=66uses/20/20, sourceinputs0. P4bed1462239/2240 validspawn1462241 AIR preserved; P1bed tripdone butnoactualdeathtrial.
+
+## If context is cut
+Read P4.md, ASCENT.md, RUNBOOK.md and currentarena chat/status; olddeadlineshistorical. Latestactualsourceprogress inP2/P3ownrecords, do notinferrodsfromhistoricadvancement. NoactiveP4program/watchers. Ownallrawfailures/fixtures underiter15, inclfirstUP/DOWNCAP_ACKflag, delayeddropfix, exactpublicsourceprovenance, sidebranchnegativefixturemistake, rejectedforwardshutteralternative. ActualEndallpositivecasesstillUNTESTED asof14:02.

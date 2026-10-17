@@ -1,0 +1,13 @@
+net.minecraft.world.entity.projectile.Fireball -> cfu:
+# {"fileName":"Fireball.java","id":"sourceFile"}
+    net.minecraft.network.syncher.EntityDataAccessor DATA_ITEM_STACK -> e
+    17:18:void <init>(net.minecraft.world.entity.EntityType,net.minecraft.world.level.Level) -> <init>
+    21:22:void <init>(net.minecraft.world.entity.EntityType,double,double,double,double,double,double,net.minecraft.world.level.Level) -> <init>
+    25:26:void <init>(net.minecraft.world.entity.EntityType,net.minecraft.world.entity.LivingEntity,double,double,double,net.minecraft.world.level.Level) -> <init>
+    29:32:void setItem(net.minecraft.world.item.ItemStack) -> a
+    35:35:net.minecraft.world.item.ItemStack getItemRaw() -> z
+    40:41:net.minecraft.world.item.ItemStack getItem() -> q
+    46:47:void defineSynchedData() -> c_
+    51:56:void addAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> b
+    60:63:void readAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> a
+    14:14:void <clinit>() -> <clinit>

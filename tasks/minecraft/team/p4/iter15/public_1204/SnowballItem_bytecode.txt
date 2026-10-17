@@ -1,0 +1,80 @@
+Compiled from "SourceFile"
+public class cob extends cmt {
+  public cob(cmt$a);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #12                 // Method cmt."<init>":(Lcmt$a;)V
+       5: return
+
+  public bkc<cmy> a(ctp, cfi, bka);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: invokevirtual #24                 // Method cfi.b:(Lbka;)Lcmy;
+       5: astore        4
+       7: aload_1
+       8: aconst_null
+       9: aload_2
+      10: invokevirtual #28                 // Method cfi.dr:()D
+      13: aload_2
+      14: invokevirtual #31                 // Method cfi.dt:()D
+      17: aload_2
+      18: invokevirtual #34                 // Method cfi.dx:()D
+      21: getstatic     #40                 // Field ars.xD:Larr;
+      24: getstatic     #46                 // Field art.g:Lart;
+      27: ldc           #47                 // float 0.5f
+      29: ldc           #48                 // float 0.4f
+      31: aload_1
+      32: invokevirtual #54                 // Method ctp.F_:()Lauv;
+      35: invokeinterface #60,  1           // InterfaceMethod auv.i:()F
+      40: ldc           #48                 // float 0.4f
+      42: fmul
+      43: ldc           #61                 // float 0.8f
+      45: fadd
+      46: fdiv
+      47: invokevirtual #64                 // Method ctp.a:(Lcfi;DDDLarr;Lart;FF)V
+      50: aload_1
+      51: getfield      #68                 // Field ctp.B:Z
+      54: ifne          100
+      57: new           #70                 // class cge
+      60: dup
+      61: aload_1
+      62: aload_2
+      63: invokespecial #73                 // Method cge."<init>":(Lctp;Lbml;)V
+      66: astore        5
+      68: aload         5
+      70: aload         4
+      72: invokevirtual #76                 // Method cge.a:(Lcmy;)V
+      75: aload         5
+      77: aload_2
+      78: aload_2
+      79: invokevirtual #79                 // Method cfi.dE:()F
+      82: aload_2
+      83: invokevirtual #82                 // Method cfi.dC:()F
+      86: fconst_0
+      87: ldc           #83                 // float 1.5f
+      89: fconst_1
+      90: invokevirtual #86                 // Method cge.a:(Lblv;FFFFF)V
+      93: aload_1
+      94: aload         5
+      96: invokevirtual #89                 // Method ctp.b:(Lblv;)Z
+      99: pop
+     100: aload_2
+     101: getstatic     #97                 // Field asc.c:Lasb;
+     104: aload_0
+     105: invokevirtual #102                // Method asb.b:(Ljava/lang/Object;)Larz;
+     108: invokevirtual #105                // Method cfi.b:(Larz;)V
+     111: aload_2
+     112: invokevirtual #109                // Method cfi.fT:()Lcff;
+     115: getfield      #114                // Field cff.d:Z
+     118: ifne          127
+     121: aload         4
+     123: iconst_1
+     124: invokevirtual #118                // Method cmy.h:(I)V
+     127: aload         4
+     129: aload_1
+     130: invokevirtual #122                // Method ctp.y_:()Z
+     133: invokestatic  #127                // Method bkc.a:(Ljava/lang/Object;Z)Lbkc;
+     136: areturn
+}

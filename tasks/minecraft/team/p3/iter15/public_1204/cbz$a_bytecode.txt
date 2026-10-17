@@ -1,0 +1,318 @@
+Compiled from "SourceFile"
+class cbz$a extends bth {
+  private final cbz a;
+
+  private int b;
+
+  private int c;
+
+  private int d;
+
+  public cbz$a(cbz);
+    Code:
+       0: aload_0
+       1: invokespecial #20                 // Method bth."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #22                 // Field a:Lcbz;
+       9: aload_0
+      10: getstatic     #25                 // Field bth$a.a:Lbth$a;
+      13: getstatic     #27                 // Field bth$a.b:Lbth$a;
+      16: invokestatic  #33                 // Method java/util/EnumSet.of:(Ljava/lang/Enum;Ljava/lang/Enum;)Ljava/util/EnumSet;
+      19: invokevirtual #36                 // Method a:(Ljava/util/EnumSet;)V
+      22: return
+
+  public boolean a();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field a:Lcbz;
+       4: invokevirtual #44                 // Method cbz.q:()Lbml;
+       7: astore_1
+       8: aload_1
+       9: ifnull        34
+      12: aload_1
+      13: invokevirtual #49                 // Method bml.bx:()Z
+      16: ifeq          34
+      19: aload_0
+      20: getfield      #22                 // Field a:Lcbz;
+      23: aload_1
+      24: invokevirtual #52                 // Method cbz.c:(Lbml;)Z
+      27: ifeq          34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: ireturn
+
+  public void c();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #55                 // Field b:I
+       5: return
+
+  public void d();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field a:Lcbz;
+       4: iconst_0
+       5: invokevirtual #59                 // Method cbz.w:(Z)V
+       8: aload_0
+       9: iconst_0
+      10: putfield      #61                 // Field d:I
+      13: return
+
+  public boolean T_();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public void e();
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #65                 // Field c:I
+       5: iconst_1
+       6: isub
+       7: putfield      #65                 // Field c:I
+      10: aload_0
+      11: getfield      #22                 // Field a:Lcbz;
+      14: invokevirtual #44                 // Method cbz.q:()Lbml;
+      17: astore_1
+      18: aload_1
+      19: ifnonnull     23
+      22: return
+      23: aload_0
+      24: getfield      #22                 // Field a:Lcbz;
+      27: invokevirtual #69                 // Method cbz.O:()Lbwr;
+      30: aload_1
+      31: invokevirtual #74                 // Method bwr.a:(Lblv;)Z
+      34: istore_2
+      35: iload_2
+      36: ifeq          47
+      39: aload_0
+      40: iconst_0
+      41: putfield      #61                 // Field d:I
+      44: goto          57
+      47: aload_0
+      48: dup
+      49: getfield      #61                 // Field d:I
+      52: iconst_1
+      53: iadd
+      54: putfield      #61                 // Field d:I
+      57: aload_0
+      58: getfield      #22                 // Field a:Lcbz;
+      61: aload_1
+      62: invokevirtual #78                 // Method cbz.f:(Lblv;)D
+      65: dstore_3
+      66: dload_3
+      67: ldc2_w        #79                 // double 4.0d
+      70: dcmpg
+      71: ifge          127
+      74: iload_2
+      75: ifne          79
+      78: return
+      79: aload_0
+      80: getfield      #65                 // Field c:I
+      83: ifgt          101
+      86: aload_0
+      87: bipush        20
+      89: putfield      #65                 // Field c:I
+      92: aload_0
+      93: getfield      #22                 // Field a:Lcbz;
+      96: aload_1
+      97: invokevirtual #83                 // Method cbz.C:(Lblv;)Z
+     100: pop
+     101: aload_0
+     102: getfield      #22                 // Field a:Lcbz;
+     105: invokevirtual #87                 // Method cbz.K:()Lbsk;
+     108: aload_1
+     109: invokevirtual #91                 // Method bml.dr:()D
+     112: aload_1
+     113: invokevirtual #94                 // Method bml.dt:()D
+     116: aload_1
+     117: invokevirtual #97                 // Method bml.dx:()D
+     120: dconst_1
+     121: invokevirtual #102                // Method bsk.a:(DDDD)V
+     124: goto          492
+     127: dload_3
+     128: aload_0
+     129: invokevirtual #105                // Method h:()D
+     132: aload_0
+     133: invokevirtual #105                // Method h:()D
+     136: dmul
+     137: dcmpg
+     138: ifge          461
+     141: iload_2
+     142: ifeq          461
+     145: aload_1
+     146: invokevirtual #91                 // Method bml.dr:()D
+     149: aload_0
+     150: getfield      #22                 // Field a:Lcbz;
+     153: invokevirtual #106                // Method cbz.dr:()D
+     156: dsub
+     157: dstore        5
+     159: aload_1
+     160: ldc2_w        #107                // double 0.5d
+     163: invokevirtual #111                // Method bml.e:(D)D
+     166: aload_0
+     167: getfield      #22                 // Field a:Lcbz;
+     170: ldc2_w        #107                // double 0.5d
+     173: invokevirtual #112                // Method cbz.e:(D)D
+     176: dsub
+     177: dstore        7
+     179: aload_1
+     180: invokevirtual #97                 // Method bml.dx:()D
+     183: aload_0
+     184: getfield      #22                 // Field a:Lcbz;
+     187: invokevirtual #113                // Method cbz.dx:()D
+     190: dsub
+     191: dstore        9
+     193: aload_0
+     194: getfield      #65                 // Field c:I
+     197: ifgt          443
+     200: aload_0
+     201: dup
+     202: getfield      #55                 // Field b:I
+     205: iconst_1
+     206: iadd
+     207: putfield      #55                 // Field b:I
+     210: aload_0
+     211: getfield      #55                 // Field b:I
+     214: iconst_1
+     215: if_icmpne     235
+     218: aload_0
+     219: bipush        60
+     221: putfield      #65                 // Field c:I
+     224: aload_0
+     225: getfield      #22                 // Field a:Lcbz;
+     228: iconst_1
+     229: invokevirtual #59                 // Method cbz.w:(Z)V
+     232: goto          271
+     235: aload_0
+     236: getfield      #55                 // Field b:I
+     239: iconst_4
+     240: if_icmpgt     252
+     243: aload_0
+     244: bipush        6
+     246: putfield      #65                 // Field c:I
+     249: goto          271
+     252: aload_0
+     253: bipush        100
+     255: putfield      #65                 // Field c:I
+     258: aload_0
+     259: iconst_0
+     260: putfield      #55                 // Field b:I
+     263: aload_0
+     264: getfield      #22                 // Field a:Lcbz;
+     267: iconst_0
+     268: invokevirtual #59                 // Method cbz.w:(Z)V
+     271: aload_0
+     272: getfield      #55                 // Field b:I
+     275: iconst_1
+     276: if_icmple     443
+     279: dload_3
+     280: invokestatic  #118                // Method java/lang/Math.sqrt:(D)D
+     283: invokestatic  #118                // Method java/lang/Math.sqrt:(D)D
+     286: ldc2_w        #107                // double 0.5d
+     289: dmul
+     290: dstore        11
+     292: aload_0
+     293: getfield      #22                 // Field a:Lcbz;
+     296: invokevirtual #121                // Method cbz.aU:()Z
+     299: ifne          324
+     302: aload_0
+     303: getfield      #22                 // Field a:Lcbz;
+     306: invokevirtual #125                // Method cbz.dM:()Lctp;
+     309: aconst_null
+     310: sipush        1018
+     313: aload_0
+     314: getfield      #22                 // Field a:Lcbz;
+     317: invokevirtual #129                // Method cbz.dm:()Lhx;
+     320: iconst_0
+     321: invokevirtual #134                // Method ctp.a:(Lcfi;ILhx;I)V
+     324: iconst_0
+     325: istore        13
+     327: iload         13
+     329: iconst_1
+     330: if_icmpge     443
+     333: new           #136                // class cgd
+     336: dup
+     337: aload_0
+     338: getfield      #22                 // Field a:Lcbz;
+     341: invokevirtual #125                // Method cbz.dM:()Lctp;
+     344: aload_0
+     345: getfield      #22                 // Field a:Lcbz;
+     348: aload_0
+     349: getfield      #22                 // Field a:Lcbz;
+     352: invokevirtual #140                // Method cbz.eg:()Lauv;
+     355: dload         5
+     357: ldc2_w        #141                // double 2.297d
+     360: dload         11
+     362: dmul
+     363: invokeinterface #147,  5          // InterfaceMethod auv.a:(DD)D
+     368: dload         7
+     370: aload_0
+     371: getfield      #22                 // Field a:Lcbz;
+     374: invokevirtual #140                // Method cbz.eg:()Lauv;
+     377: dload         9
+     379: ldc2_w        #141                // double 2.297d
+     382: dload         11
+     384: dmul
+     385: invokeinterface #147,  5          // InterfaceMethod auv.a:(DD)D
+     390: invokespecial #150                // Method cgd."<init>":(Lctp;Lbml;DDD)V
+     393: astore        14
+     395: aload         14
+     397: aload         14
+     399: invokevirtual #151                // Method cgd.dr:()D
+     402: aload_0
+     403: getfield      #22                 // Field a:Lcbz;
+     406: ldc2_w        #107                // double 0.5d
+     409: invokevirtual #112                // Method cbz.e:(D)D
+     412: ldc2_w        #107                // double 0.5d
+     415: dadd
+     416: aload         14
+     418: invokevirtual #152                // Method cgd.dx:()D
+     421: invokevirtual #156                // Method cgd.a_:(DDD)V
+     424: aload_0
+     425: getfield      #22                 // Field a:Lcbz;
+     428: invokevirtual #125                // Method cbz.dM:()Lctp;
+     431: aload         14
+     433: invokevirtual #158                // Method ctp.b:(Lblv;)Z
+     436: pop
+     437: iinc          13, 1
+     440: goto          327
+     443: aload_0
+     444: getfield      #22                 // Field a:Lcbz;
+     447: invokevirtual #161                // Method cbz.I:()Lbsj;
+     450: aload_1
+     451: ldc           #162                // float 10.0f
+     453: ldc           #162                // float 10.0f
+     455: invokevirtual #167                // Method bsj.a:(Lblv;FF)V
+     458: goto          492
+     461: aload_0
+     462: getfield      #61                 // Field d:I
+     465: iconst_5
+     466: if_icmpge     492
+     469: aload_0
+     470: getfield      #22                 // Field a:Lcbz;
+     473: invokevirtual #87                 // Method cbz.K:()Lbsk;
+     476: aload_1
+     477: invokevirtual #91                 // Method bml.dr:()D
+     480: aload_1
+     481: invokevirtual #94                 // Method bml.dt:()D
+     484: aload_1
+     485: invokevirtual #97                 // Method bml.dx:()D
+     488: dconst_1
+     489: invokevirtual #102                // Method bsk.a:(DDDD)V
+     492: aload_0
+     493: invokespecial #169                // Method bth.e:()V
+     496: return
+
+  private double h();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field a:Lcbz;
+       4: getstatic     #186                // Field bnr.g:Lbnm;
+       7: invokevirtual #189                // Method cbz.b:(Lbnm;)D
+      10: dreturn
+}
