@@ -1,0 +1,378 @@
+program #8673 on p4: 23.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T20:06:19.400Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 140.56824125556005,
+  "y": -36,
+  "z": 2241.5003770366848
+ },
+ "hp": 20,
+ "food": 18,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   4,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   32,
+   null
+  ],
+  [
+   "oak_planks",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   12,
+   null
+  ],
+  [
+   "stone_bricks",
+   2,
+   null
+  ],
+  [
+   "book",
+   24,
+   null
+  ],
+  [
+   "tuff",
+   12,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CAP",
+   [
+    139,
+    -34,
+    2241
+   ]
+  ],
+  [
+   "HAND_CUT",
+   [
+    139,
+    -35,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "HAND_CUT",
+   [
+    139,
+    -36,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "STEP",
+   [
+    139,
+    -36,
+    2241
+   ],
+   20
+  ],
+  [
+   "KNOWN_PROTECTED_CORRIDOR_SIDE",
+   [
+    138,
+    -36,
+    2242
+   ]
+  ],
+  [
+   "CAP",
+   [
+    138,
+    -34,
+    2241
+   ]
+  ],
+  [
+   "HAND_CUT",
+   [
+    138,
+    -35,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "HAND_CUT",
+   [
+    138,
+    -36,
+    2241
+   ],
+   "bookshelf"
+  ],
+  [
+   "STEP",
+   [
+    138,
+    -36,
+    2241
+   ],
+   20
+  ],
+  [
+   "HAND_CUT",
+   [
+    137,
+    -31,
+    2241
+   ],
+   "oak_planks"
+  ],
+  [
+   "CUT",
+   [
+    137,
+    -34,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   "ORDINARY_WOOD2",
+   1,
+   2
+  ],
+  [
+   "CAP",
+   [
+    137,
+    -34,
+    2241
+   ]
+  ],
+  [
+   "STEP",
+   [
+    139,
+    -36,
+    2241
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    140,
+    -36,
+    2241
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    139,
+    -36,
+    2241
+   ]
+  ],
+  [
+   "CAP",
+   [
+    139,
+    -35,
+    2241
+   ]
+  ]
+ ],
+ "items": [],
+ "foes": [
+  [
+   200,
+   "zombie",
+   {
+    "x": 138.44856337635852,
+    "y": -42,
+    "z": 2246.300160880688
+   },
+   20
+  ],
+  [
+   201,
+   "zombie",
+   {
+    "x": 143.7998852053716,
+    "y": -38.5,
+    "z": 2246.9337552170464
+   },
+   20
+  ],
+  [
+   202,
+   "creeper",
+   {
+    "x": 139.0391083728425,
+    "y": -42,
+    "z": 2246.7697254578657
+   },
+   20
+  ],
+  [
+   203,
+   "zombie",
+   {
+    "x": 137.2432360329896,
+    "y": -42,
+    "z": 2246.699999988079
+   },
+   20
+  ],
+  [
+   205,
+   "zombie",
+   {
+    "x": 136.02963542544774,
+    "y": -42,
+    "z": 2246.3000904286328
+   },
+   20
+  ],
+  [
+   206,
+   "zombie",
+   {
+    "x": 137.864268216878,
+    "y": -42,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   207,
+   "zombie",
+   {
+    "x": 143.0352040627633,
+    "y": -39.07840000152588,
+    "z": 2248.5142820701085
+   },
+   20
+  ],
+  [
+   208,
+   "zombie",
+   {
+    "x": 144.0225262305353,
+    "y": -37.94987305998802,
+    "z": 2246.3025165292615
+   },
+   20
+  ],
+  [
+   209,
+   "zombie",
+   {
+    "x": 144.6999297197694,
+    "y": -38,
+    "z": 2247.699981903566
+   },
+   20
+  ],
+  [
+   210,
+   "zombie",
+   {
+    "x": 132.2894411971028,
+    "y": -42,
+    "z": 2252.1927988392927
+   },
+   20
+  ],
+  [
+   216,
+   "spider",
+   {
+    "x": 144.30000001192093,
+    "y": -36.89999997615814,
+    "z": 2246.699999988079
+   },
+   15
+  ],
+  [
+   218,
+   "zombie",
+   {
+    "x": 152.47712251690766,
+    "y": -36,
+    "z": 2249.467926249685
+   },
+   20
+  ],
+  [
+   219,
+   "creeper",
+   {
+    "x": 144.69985523810183,
+    "y": -38,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   220,
+   "zombie",
+   {
+    "x": 136.61866024009586,
+    "y": -42,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   7882,
+   "skeleton",
+   {
+    "x": 151.73121489238954,
+    "y": -35,
+    "z": 2246.497120055578
+   },
+   20
+  ]
+ ],
+ "endingIssue": null,
+ "wood0": 1,
+ "wood": 2,
+ "supportRestored": "cobbled_deepslate"
+}
+--- chat since this player's previous program ---
+p2: P1 exactexplosionanswer: YES full3D. MatchedExplosion.explode bytecodes648–665 callsEntity.distanceToSqr(Vec3center), sqrt/divides2*power; skipsentityifnormalized>1. EndCrystalpower6=>12blockradialrange, nothorizontal. Thus actualROOT3D>=16 liesoutside dir
+p2: ectcrystalexplosionentityrange evenhorizontal11.5; notdragon/route/knockbacksafetyproof. Exactfragment+limits savingnow.
+p2: P1 3Dexplosionfinding saved p2/iter18/explosion_radius/FINDING.md + exactfragments/hash. Correctionofprecision: gate skipsstrictdistance>12 (not>=12); proposedactualROOTdistance>=16 exceedsit. Crystalactualcenter usesrootXYZ, notaimpoint/eye. Firstanswer86
+p2: 72by20:05:32=83sec/90; detailedartifactpublicationlater recorded, no physicalsafetyclaim.
+--- p4 now: (140.6, -36, 2241.5) in overworld, health 20/20, food 18/20, alive

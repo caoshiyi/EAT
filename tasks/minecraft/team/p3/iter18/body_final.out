@@ -1,0 +1,236 @@
+program #8857 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T21:26:44.777Z",
+ "id": 167,
+ "dimension": "overworld",
+ "p": {
+  "x": 6.496148992219562,
+  "y": 67,
+  "z": 82.3
+ },
+ "hp": 6.499999046325684,
+ "food": 17,
+ "ground": true,
+ "inventory": [],
+ "controls": {},
+ "goal": null,
+ "cursor": null,
+ "blocks": [
+  [
+   [
+    6,
+    66,
+    82
+   ],
+   "crafting_table",
+   [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  ],
+  [
+   [
+    6,
+    69,
+    82
+   ],
+   "spruce_slab",
+   [
+    [
+     0,
+     0.5,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  ],
+  [
+   [
+    7,
+    67,
+    82
+   ],
+   "cobblestone",
+   "[repeated reference]"
+  ],
+  [
+   [
+    7,
+    68,
+    82
+   ],
+   "chest",
+   [
+    [
+     0.0625,
+     0,
+     0.0625,
+     0.9375,
+     0.875,
+     0.9375
+    ]
+   ]
+  ],
+  [
+   [
+    5,
+    67,
+    82
+   ],
+   "dirt",
+   "[repeated reference]"
+  ],
+  [
+   [
+    5,
+    68,
+    82
+   ],
+   "dirt",
+   "[repeated reference]"
+  ],
+  [
+   [
+    6,
+    67,
+    83
+   ],
+   "white_bed",
+   [
+    [
+     0,
+     0,
+     0,
+     0.1875,
+     0.5625,
+     0.1875
+    ],
+    [
+     0,
+     0,
+     0.8125,
+     0.1875,
+     0.5625,
+     1
+    ],
+    [
+     0,
+     0.1875,
+     0.1875,
+     1,
+     0.5625,
+     0.8125
+    ],
+    [
+     0.1875,
+     0.1875,
+     0,
+     1,
+     0.5625,
+     0.1875
+    ],
+    [
+     0.1875,
+     0.1875,
+     0.8125,
+     1,
+     0.5625,
+     1
+    ]
+   ]
+  ],
+  [
+   [
+    6,
+    68,
+    83
+   ],
+   "dirt",
+   "[repeated reference]"
+  ],
+  [
+   [
+    6,
+    67,
+    81
+   ],
+   "sand",
+   "[repeated reference]"
+  ],
+  [
+   [
+    6,
+    68,
+    81
+   ],
+   "dirt",
+   "[repeated reference]"
+  ]
+ ],
+ "near": [],
+ "listeners": [
+  [
+   "health",
+   []
+  ],
+  [
+   "death",
+   [
+    "",
+    "",
+    ""
+   ]
+  ],
+  [
+   "respawn",
+   [
+    ""
+   ]
+  ],
+  [
+   "physicsTick",
+   [
+    "",
+    "monitorMovement"
+   ]
+  ],
+  [
+   "chat",
+   [
+    ""
+   ]
+  ],
+  [
+   "entitySpawn",
+   []
+  ],
+  [
+   "entityGone",
+   []
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: URGENT8842 surfacearrived30.6Y58/HP20 butcurrentcloud endingFAILED; actualdiedmagic beforeemergency8843, nowOW146.5,-36,2241.5 HP20 EMPTY sameentity166. Thirdcrystal8825 STILLremoved(one8823remains). No finalshaftattempt. Mydelayedinspection ofdangerousend
+p1: ing missedescape; actualseconddeaththisiteration/deaths124expected. Current21:24:41 deadline21:27:20, continueboundedrecovery notvictory.
+p1: FiniteP2nearby needONLY2heldCOFF fromactual3 tocurrentP1spawn146.5,-36,2241.5, ordinarypickup/readynow. No tools/generalkit/newproduction. EnablesexistingOWportalrouteCAP_RESERVE2 and safeending; time21:25 deadline21:27:20. P4no sparetool/ammo sourceclosed
+p1: . P1oldglobalsresetafterseconddeath.
+p2: P1 TWOheldCOFF finitegiftissuedNOW fromactual3→1; tossedtowardyourCURRENTadjacent2242.8 ratherthanoldspawncoord. P2sameSOUTH11.5HP/no move/controls{}. Pleaseactualordinary0→2+retainedending; donorlossaloneNOTreceipt. Wholebudget30sec from21:25:35 throughac
+p2: ceptance, no source/kit/fieldmove.
+p1: P1 actualpickupREADYNOW146.5,-36,2242.754 HP20/controls{}, .9m fromP2actual2243.632. NeedONLY2COFF finiteheld3 ordinarytoss ifavailable; no packetseen8848, no emptyreceivingwindow. Deadline21:27:20, portalstageonlyif2actualcapsreceived; no newsource.
+p2: P1 actualTWOCOFF ALREADYordinaryheld perFRESHstatus21:26:03 (yourinventoryCOFF2) aftermy8850 toss21:25:58.276. Your8848 nopacketreadpredatedissue; pleasefreshowninventory, no repeatgift/P2onlyCOFF1left. P2retainedsameSOUTH11.5/food9/fullfloorroof/controls{
+p2: }8854 at21:26:25.948. Finite2giftactualreceipt28sec/30; ownACKpending.
+p4: CURRENTsharedinterface: P4occupiesFULL132,-36,2276; west131body/headFULLclosed, east133FULL, center134AIR. OwnCOFF1/no tool cannotvacate+promiseFULLending. P1portalstage mayholdpriorcorridor131,-36,2275 withYOUR2caps closingnorth1312274 ifactualfloor/roof/
+p4: otherwallsqualify; do notassumeempty132/oldopenwest. No uncoordinatedentry.
+--- p3 now: (6.5, 67, 82.3) in overworld, health 6.5/20, food 17/20, alive

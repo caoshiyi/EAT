@@ -1,0 +1,469 @@
+program #8820 on p1: 31.6 s
+--- output ---
+ATTEMPT_CUT [ 29, 50, -20 ] end_stone
+ATTEMPT_CUT [ 29, 49, -20 ] end_stone
+ATTEMPT_CUT [ 30, 50, -20 ] end_stone
+ATTEMPT_CUT [ 30, 49, -20 ] end_stone
+ATTEMPT_CUT [ 30, 50, -21 ] end_stone
+ATTEMPT_CUT [ 30, 49, -21 ] end_stone
+ATTEMPT_CUT [ 30, 50, -22 ] end_stone
+ATTEMPT_CUT [ 30, 49, -22 ] end_stone
+ATTEMPT_CUT [ 30, 50, -23 ] end_stone
+ATTEMPT_CUT [ 30, 49, -23 ] end_stone
+ATTEMPT_CUT [ 30, 50, -24 ] end_stone
+ATTEMPT_CUT [ 30, 49, -24 ] end_stone
+ATTEMPT_CUT [ 30, 50, -25 ] end_stone
+ATTEMPT_CUT [ 30, 49, -25 ] end_stone
+ATTEMPT_CUT [ 30, 51, -25 ] end_stone
+ATTEMPT_CUT [ 30, 48, -25 ] end_stone
+--- returned ---
+{
+ "issue": "Server refused to place end_stone at (30, 49, -25): the block is still air",
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 166,
+ "p": {
+  "x": 30.49975365831403,
+  "y": 48,
+  "z": -24.661876691916728
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 88,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    29,
+    50,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    29,
+    49,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    29,
+    49,
+    -20
+   ],
+   {
+    "x": 29.589518231924014,
+    "y": 49,
+    "z": -19.492362920567786
+   },
+   {
+    "x": 0.022954853926027134,
+    "y": -0.0784000015258789,
+    "z": 0.001963027204385008
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -20
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -20
+   ],
+   {
+    "x": 30.59114363258045,
+    "y": 49,
+    "z": -19.497493913934107
+   },
+   {
+    "x": 0.016938274992485274,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -21
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -21
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -21
+   ],
+   {
+    "x": 30.489953494841462,
+    "y": 49,
+    "z": -20.582750733766268
+   },
+   {
+    "x": -0.0027868960723540417,
+    "y": -0.0784000015258789,
+    "z": -0.022869457735886365
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -22
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -22
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -22
+   ],
+   {
+    "x": 30.49667491599775,
+    "y": 49,
+    "z": -21.58415476264559
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": -0.016936255694425275
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -23
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -23
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -23
+   ],
+   {
+    "x": 30.49883003076589,
+    "y": 49,
+    "z": -22.571008408455267
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": -0.016941356842723767
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -24
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -24
+   ],
+   {
+    "x": 30.499753658314084,
+    "y": 49,
+    "z": -23.557882543881796
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": -0.016941900295694517
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    50,
+    -25
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    49,
+    -25
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "OBSERVED_MOVE",
+   [
+    30,
+    49,
+    -25
+   ],
+   {
+    "x": 30.49975365831403,
+    "y": 49,
+    "z": -24.594784989083184
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": -0.03343072709167057
+   },
+   20,
+   "work",
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    49,
+    -24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    50,
+    -24
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    51,
+    -25
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    30,
+    48,
+    -25
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CAP",
+   [
+    30,
+    50,
+    -25
+   ],
+   "end_stone"
+  ],
+  [
+   "SHAFT_DOWN",
+   {
+    "x": 30.49975365831403,
+    "y": 48,
+    "z": -24.661876691916728
+   },
+   20
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ],
+  [
+   "end_stone",
+   63,
+   null
+  ],
+  [
+   "bow",
+   1,
+   11
+  ],
+  [
+   "end_stone",
+   18,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   63
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "trialComplete": false,
+ "climbed": 0,
+ "path": [
+  [
+   28,
+   49,
+   -20
+  ],
+  [
+   29,
+   49,
+   -20
+  ],
+  [
+   30,
+   49,
+   -20
+  ],
+  [
+   30,
+   49,
+   -21
+  ],
+  [
+   30,
+   49,
+   -22
+  ],
+  [
+   30,
+   49,
+   -23
+  ],
+  [
+   30,
+   49,
+   -24
+  ],
+  [
+   30,
+   49,
+   -25
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (30.5, 48, -24.7) in the_end, health 20/20, food 20/20, alive

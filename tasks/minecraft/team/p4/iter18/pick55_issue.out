@@ -1,0 +1,143 @@
+program #8816 on p4: 5.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T21:12:16.061Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 132.41564690099926,
+  "y": -36,
+  "z": 2276.499877354301
+ },
+ "hp": 20,
+ "food": 16,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "cobbled_deepslate",
+   37,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "stone_bricks",
+   7,
+   null
+  ],
+  [
+   "book",
+   24,
+   null
+  ],
+  [
+   "tuff",
+   28,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CANONICAL_READY",
+   {
+    "chat": 7171,
+    "at": 1792271501000,
+    "token": "READY_P4_18_PICK55",
+    "p1Actual": "81,49,0.5 full20HP",
+    "scope": "ONE-held-pick loan selected"
+   }
+  ],
+  [
+   "CUT",
+   [
+    133,
+    -35,
+    2276
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "CUT",
+   [
+    133,
+    -36,
+    2276
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "STEP",
+   [
+    133,
+    -36,
+    2276
+   ],
+   20
+  ],
+  [
+   "PICK_ISSUED",
+   1792271534409,
+   1,
+   0,
+   57
+  ],
+  [
+   "CAP",
+   [
+    133,
+    -36,
+    2276
+   ]
+  ],
+  [
+   "CAP",
+   [
+    133,
+    -35,
+    2276
+   ]
+  ]
+ ],
+ "items": [],
+ "foes": [],
+ "issued": true,
+ "giftWear": 57,
+ "before": 1,
+ "after": 0,
+ "endingIssue": null,
+ "readyEvidence": "[repeated reference]"
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (132.4, -36, 2276.5) in overworld, health 20/20, food 16/20, alive

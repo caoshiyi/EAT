@@ -1,0 +1,123 @@
+{
+  "iteration": 18,
+  "beneficiary": "p1",
+  "request_chat": 6998,
+  "request_utc": "2026-10-17T19:59:06Z",
+  "requested": {
+    "pick_min_callable": 60,
+    "full_caps": 6,
+    "destination": "actual OW bed146.5,-36,2241.5"
+  },
+  "whole_cutoff": "2026-10-17T20:10:00Z",
+  "packet_target": "2026-10-17T20:07:00Z",
+  "actual_packet_ready": "2026-10-17T20:08:34.656Z",
+  "packet_target_missed_seconds": 94.656,
+  "preconditions": {
+    "program": 8666,
+    "held": "oldSTONE130/COFF58/noSTICK/noWOOD",
+    "actual_wood": "141+137Y-31 oak_planks",
+    "actual_table": "146,-34,2240 crafting_table"
+  },
+  "access": {
+    "program": 8668,
+    "duration_seconds": 76.8,
+    "at": "2026-10-17T20:03:27.194Z",
+    "tool": "old130 finalnormaluse broke; remainingcaps handdig",
+    "hp": 20,
+    "closed": true
+  },
+  "wood1": {
+    "program": 8671,
+    "duration_seconds": 54,
+    "retained_at": "2026-10-17T20:05:07.124Z",
+    "ordinary_planks": 1,
+    "hp": 20,
+    "closed": true,
+    "supports": "141,-33/-34,2241 borrowedBASALT restoredexactBASALT; OWN140roof+141sideHEADkept"
+  },
+  "wood2": {
+    "program": 8673,
+    "duration_seconds": 23.1,
+    "retained_at": "2026-10-17T20:06:19.400Z",
+    "ordinary_planks": 2,
+    "hp": 20,
+    "closed": true,
+    "supports": "137,-34,2241 oldBASALT\u2192FULLCOFF; own138roof+137sideHEADretained",
+    "new_roofs": "138/139,-34,2241 FULLCOFF beforehandbookshelfhead/bodycuts",
+    "known_open_side": "138/1392242 knownprotectedcorridor floor/roof, not unboundedAIR waiver"
+  },
+  "craft_and_cleanup": {
+    "program": 8676,
+    "duration_seconds": 84,
+    "at": "2026-10-17T20:08:34.656Z",
+    "one_pick_wear": 2,
+    "callable": 127,
+    "held_caps": 43,
+    "inputs": "2planks\u21924sticks\u2192ONEstonepick; stick2 retained",
+    "main_139_140_2242": "ourbody/headcaps clearedAIR",
+    "hp": 20,
+    "closed": false,
+    "ending_meaning": "protectedcorridor/ground/controls{}; not fullcapsule"
+  },
+  "donor": {
+    "program": 8678,
+    "issued_utc": "2026-10-17T20:08:59.498Z",
+    "tool_wear": 2,
+    "full_coff_issued": 6,
+    "actual_issue": true,
+    "ending_utc": "2026-10-17T20:09:02.561Z",
+    "hp": 20,
+    "closed": false,
+    "ending_failure": "150,-36,2242 placementrefused atbodyx149.714(overlapcompatible)"
+  },
+  "own_ending_resolution": {
+    "program": 8679,
+    "at": "2026-10-17T20:09:31.730Z",
+    "duration_seconds": 0.7,
+    "action": "recenter149.525 thenordinarycover",
+    "hp": 20,
+    "closed": true,
+    "issues": [
+      null,
+      null
+    ]
+  },
+  "receiver": {
+    "program": 8680,
+    "at": "2026-10-17T20:09:53Z",
+    "duration_seconds": 0,
+    "receipt": true,
+    "inventory": [
+      [
+        "stone_pickaxe",
+        1,
+        2
+      ],
+      [
+        "cobbled_deepslate",
+        6,
+        null
+      ]
+    ],
+    "hp": 20,
+    "food": 20,
+    "ground": true,
+    "floor": "mossy_stone_bricks",
+    "roof": "cobbled_deepslate",
+    "controls": {},
+    "items": [],
+    "closed": "not returned; do not infer full10faces",
+    "operator_ack_chat": 7022,
+    "operator_ack_utc": "2026-10-17T20:09:58Z"
+  },
+  "independent_peer_held_equipment": {
+    "program": 8683,
+    "at": "2026-10-17T20:09:58.498Z",
+    "observed": "p1heldSTONE withDamageNBT2, p1HP20; ownHP20"
+  },
+  "whole_through_operator_ack_seconds": 652,
+  "whole_met": true,
+  "whole_margin_seconds": 2,
+  "release": "P1 no more source7022 honored; p1selected180s actualEndscene/recovery eligibility, not P4 Endentry",
+  "goal": "not complete; official lastdragon0/11, p1death19:57 means123worlddeaths perP3"
+}

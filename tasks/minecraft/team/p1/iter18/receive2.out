@@ -1,0 +1,468 @@
+program #8597 on p1: 16.2 s
+--- output ---
+ATTEMPT_CUT [ 80, 50, 0 ] end_stone
+ATTEMPT_CUT [ 80, 49, 0 ] end_stone
+ATTEMPT_CUT [ 82, 50, 0 ] end_stone
+ATTEMPT_CUT [ 82, 49, 0 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 166,
+ "p": {
+  "x": 81.51786385304389,
+  "y": 49,
+  "z": 0.5000216920830172
+ },
+ "hp": 20,
+ "food": 19,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 25,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 81.54320061946491,
+    "y": 49,
+    "z": 0.5000986610470352
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 84.01268183661317,
+    "y": 49,
+    "z": 0.5000986610467864
+   },
+   {
+    "x": 0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.81805756001057,
+    "y": 49,
+    "z": 0.5000986610465377
+   },
+   {
+    "x": 0.15321595083943673,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 89.62422419752585,
+    "y": 49,
+    "z": 0.500098661046289
+   },
+   {
+    "x": 0.15321679833108137,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 92.43039269736732,
+    "y": 49,
+    "z": 0.5000986610460403
+   },
+   {
+    "x": 0.15321680032662788,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 95.23656120159391,
+    "y": 49,
+    "z": 0.5000986610457916
+   },
+   {
+    "x": 0.15321680033132665,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 98.04272970583087,
+    "y": 49,
+    "z": 0.5000986610455429
+   },
+   {
+    "x": 0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "ORDINARY_INPUT_CHECK",
+   true,
+   2,
+   [
+    129,
+    112
+   ]
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 100.05903073326938,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 97.58954951612112,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 94.50355779179192,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.15321633650875982,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 91.69739030678501,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.1532167992391978,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 88.89122180494799,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.15321680032876617,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.0850533007167,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.1532168003313317,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 83.27888479647973,
+    "y": 49,
+    "z": 0.5000986610453937
+   },
+   {
+    "x": -0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "inventory": [
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   2,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   21
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   22,
+   null
+  ],
+  [
+   "bow",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   112
+  ]
+ ],
+ "clouds": [
+  [
+   2776,
+   {
+    "x": 78.87576835139937,
+    "y": 71.11847773630788,
+    "z": -17.69833792413588
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    4.0666656494140625,
+    11101546,
+    false,
+    {
+     "type": "dripping_lava"
+    }
+   ]
+  ]
+ ],
+ "controls": {},
+ "cursor": null,
+ "out": true,
+ "receipt": true,
+ "before": {
+  "arrow": 0,
+  "picks": [
+   129,
+   108
+  ]
+ },
+ "after": {
+  "arrow": 2,
+  "picks": [
+   129,
+   112
+  ]
+ },
+ "itemsBefore": [
+  [
+   2691,
+   {
+    "x": 100.71963077342227,
+    "y": 49,
+    "z": 0.49933000021190654
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 798,
+     "itemCount": 2
+    }
+   ]
+  ]
+ ],
+ "remainingItems": []
+}
+--- chat since this player's previous program ---
+p4: P4 iteration18 TWO arrows ISSUED 2026-10-17T19:37:55.613Z donor2→0 aftercurrentREADY; ordinaryP1receipt stillrequired.
+p4: P4 actual8596 issue19:37:55.613→retainedFULL13219:37:57/HP20/controls{}/ARROW0/ST125, bothissuesNULL. Currenttoken6934 honored; P1ordinaryreceipt stillpending, originalbirth notrenewed. P1explicitNOmore sourcebatch6929 honored. I release finitepartial2 upo
+p4: nreceipt; no Endentry/thirdfarm/retoolproject.
+--- p1 now: (81.5, 49, 0.5) in the_end, health 20/20, food 19/20, alive

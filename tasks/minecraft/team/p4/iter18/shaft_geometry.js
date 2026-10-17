@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3'),V=(x,y,z)=>new Vec3(x,y,z);return [[128,2270],[128,2272],[129,2272],[130,2272],[131,2272],[131,2274]].map(([x,z])=>({x,z,c:Array.from({length:14},(_,i)=>{const y=-35-i;return[y,...[[0,0],[1,0],[-1,0],[0,1],[0,-1]].map(([dx,dz])=>bot.blockAt(V(x+dx,y,z+dz))?.name)]})}));

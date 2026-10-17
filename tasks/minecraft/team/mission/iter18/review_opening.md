@@ -1,0 +1,7 @@
+# Iteration 18 opening review — 2026-10-17 19:28:41 UTC
+
+Opening reflection recorded immediately in EVOLUTION_HISTORY.md: six useful crystal effects including five repeated P1 retained ranged endings, transient damage/recovery, no verified phase change from waiting/condition tests, five deaths outside successful P1 repetition, and useful but over-budget deliveries. Preserve successful contracts, test remaining unknowns finitely.
+
+Evaluator19:27:52 verifies dragon0, milestones11/12, deaths122; programs8535 versus inherited8534 requires canonical record reconciliation. Current runner deadline21:27:20UTC from CR_DEADLINE1792272440, not inherited19:24:04. Current bodies/inventories independently reconciled in PLAN; all alive. P1 retains actual one arrow and immediate encounter ownership. P4 has no arrows and has asked for actual need before sourcing. P3 selected finite3min caller-expiry/global audit; P2 current access retained, no inherited source assignment reopened. Analyst remains nonplaying and owns competing explanations rather than another general audit.
+
+Opening compact capability/unknown/operation/input board published in PLAN within10min. Review written within5min of opening. No victory, no claim of fresh phase or retained boss damage yet. Ownership discovery only/root: cannot reactivate invisible peers through guessed identifiers. No spawning, player action or external message by coordinator. Next review19:40 or material effect/danger sooner.

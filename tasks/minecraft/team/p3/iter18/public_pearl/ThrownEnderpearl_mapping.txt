@@ -1,0 +1,9 @@
+net.minecraft.world.entity.projectile.ThrownEnderpearl -> cgj:
+# {"fileName":"ThrownEnderpearl.java","id":"sourceFile"}
+    23:24:void <init>(net.minecraft.world.entity.EntityType,net.minecraft.world.level.Level) -> <init>
+    27:28:void <init>(net.minecraft.world.level.Level,net.minecraft.world.entity.LivingEntity) -> <init>
+    32:32:net.minecraft.world.item.Item getDefaultItem() -> s
+    37:39:void onHitEntity(net.minecraft.world.phys.EntityHitResult) -> a
+    43:76:void onHit(net.minecraft.world.phys.HitResult) -> a
+    80:86:void tick() -> l
+    91:95:net.minecraft.world.entity.Entity changeDimension(net.minecraft.server.level.ServerLevel) -> b

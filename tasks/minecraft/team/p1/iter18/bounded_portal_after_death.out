@@ -1,0 +1,138 @@
+program #8853 on p1: 42.2 s
+--- output ---
+ACTUAL_ORDINARY_CAPS 2
+ISSUE CUT_BUDGET
+ENDING_ISSUE Invalid item object in equip (item is null or typeof item is not object)
+--- returned ---
+{
+ "issue": "CUT_BUDGET",
+ "endingIssue": "Invalid item object in equip (item is null or typeof item is not object)",
+ "currentCloud": false,
+ "ground": true,
+ "respawn": false,
+ "notes": [
+  "<p2> P1 actualTWOCOFF ALREADYordinaryheld perFRESHstatus21:26:03 (yourinventoryCOFF2) aftermy8850 toss21:25:58.276. Your8848 nopacketreadpredatedissue; pleasefreshowninventory, no repeatgift/P2onlyCOFF1left. P2retainedsameSOUTH11.5/food9/fullfloorroof/controls{",
+  "<p2> }8854 at21:26:25.948. Finite2giftactualreceipt28sec/30; ownACKpending.",
+  "<p4> CURRENTsharedinterface: P4occupiesFULL132,-36,2276; west131body/headFULLclosed, east133FULL, center134AIR. OwnCOFF1/no tool cannotvacate+promiseFULLending. P1portalstage mayholdpriorcorridor131,-36,2275 withYOUR2caps closingnorth1312274 ifactualfloor/roof/",
+  "<p4> otherwallsqualify; do notassumeempty132/oldopenwest. No uncoordinatedentry."
+ ],
+ "lost": false,
+ "p": {
+  "x": 131.4990385050254,
+  "y": -36,
+  "z": 2275.4889672337717
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": false,
+ "faces": [
+  [
+   [
+    131,
+    -37,
+    2275
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    131,
+    -34,
+    2275
+   ],
+   "cracked_stone_bricks",
+   true
+  ],
+  [
+   [
+    132,
+    -36,
+    2275
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    132,
+    -35,
+    2275
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    130,
+    -36,
+    2275
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    130,
+    -35,
+    2275
+   ],
+   "stone_bricks",
+   true
+  ],
+  [
+   [
+    131,
+    -36,
+    2276
+   ],
+   "cobbled_deepslate",
+   true
+  ],
+  [
+   [
+    131,
+    -35,
+    2276
+   ],
+   "cobbled_deepslate",
+   true
+  ],
+  [
+   [
+    131,
+    -36,
+    2274
+   ],
+   "cobbled_deepslate",
+   true
+  ],
+  [
+   [
+    131,
+    -35,
+    2274
+   ],
+   "air",
+   false
+  ]
+ ],
+ "cuts": 1,
+ "moves": 54,
+ "inventory": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P1 actualTWOCOFF ALREADYordinaryheld perFRESHstatus21:26:03 (yourinventoryCOFF2) aftermy8850 toss21:25:58.276. Your8848 nopacketreadpredatedissue; pleasefreshowninventory, no repeatgift/P2onlyCOFF1left. P2retainedsameSOUTH11.5/food9/fullfloorroof/controls{
+p2: }8854 at21:26:25.948. Finite2giftactualreceipt28sec/30; ownACKpending.
+p4: CURRENTsharedinterface: P4occupiesFULL132,-36,2276; west131body/headFULLclosed, east133FULL, center134AIR. OwnCOFF1/no tool cannotvacate+promiseFULLending. P1portalstage mayholdpriorcorridor131,-36,2275 withYOUR2caps closingnorth1312274 ifactualfloor/roof/
+p4: otherwallsqualify; do notassumeempty132/oldopenwest. No uncoordinatedentry.
+--- p1 now: (131.5, -36, 2275.5) in overworld, health 20/20, food 20/20, alive

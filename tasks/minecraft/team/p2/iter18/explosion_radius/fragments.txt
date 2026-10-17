@@ -1,0 +1,126 @@
+Explosion power*2:
+     446: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+     449: aload_1
+     450: invokevirtual #91                 // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.addAll:(Ljava/util/Collection;)Z
+     453: pop
+     454: aload_0
+     455: getfield      #148                // Field k:F
+     458: fconst_2
+     459: fmul
+     460: fstore_3
+Explosiondistancegate:
+     630: checkcast     #163                // class blv
+     633: astore        13
+     635: aload         13
+     637: aload_0
+     638: invokevirtual #366                // Method blv.a:(Lcth;)Z
+     641: ifeq          647
+     644: goto          613
+     647: aload         13
+     649: aload         11
+     651: invokevirtual #369                // Method blv.f:(Lelt;)D
+     654: invokestatic  #282                // Method java/lang/Math.sqrt:(D)D
+     657: fload_3
+     658: f2d
+     659: ddiv
+     660: dstore        14
+     662: dload         14
+     664: dconst_1
+     665: dcmpg
+     666: ifgt          960
+     669: aload         13
+     671: invokevirtual #373                // Method blv.dr:()D
+     674: aload_0
+     675: getfield      #150                // Field g:D
+     678: dsub
+     679: dstore        16
+     681: aload         13
+Entitydistance:
+  public double f(elt);
+    Code:
+       0: aload_0
+       1: invokevirtual #607                // Method dr:()D
+       4: aload_1
+       5: getfield      #648                // Field elt.c:D
+       8: dsub
+       9: dstore_2
+      10: aload_0
+      11: invokevirtual #610                // Method dt:()D
+      14: aload_1
+      15: getfield      #650                // Field elt.d:D
+      18: dsub
+      19: dstore        4
+      21: aload_0
+      22: invokevirtual #613                // Method dx:()D
+      25: aload_1
+      26: getfield      #652                // Field elt.e:D
+      29: dsub
+      30: dstore        6
+      32: dload_2
+      33: dload_2
+      34: dmul
+      35: dload         4
+      37: dload         4
+      39: dmul
+      40: dadd
+      41: dload         6
+      43: dload         6
+      45: dmul
+      46: dadd
+      47: dreturn
+
+  public void b_(cfi);
+    Code:
+       0: return
+
+  public void g(blv);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1654               // Method y:(Lblv;)Z
+       5: ifeq          9
+       8: return
+       9: aload_1
+      10: getfield      #857                // Field af:Z
+      13: ifne          23
+      16: aload_0
+      17: getfield      #857                // Field af:Z
+      20: ifeq          24
+      23: return
+      24: aload_1
+      25: invokevirtual #607                // Method dr:()D
+      28: aload_0
+      29: invokevirtual #607                // Method dr:()D
+      32: dsub
+      33: dstore_2
+      34: aload_1
+      35: invokevirtual #613                // Method dx:()D
+      38: aload_0
+   
+Crystalpower:
+      67: aload_0
+      68: aload_1
+      69: invokevirtual #180                // Method bkt.d:()Lblv;
+      72: invokevirtual #212                // Method bku.d:(Lblv;Lblv;)Lbkt;
+      75: goto          79
+      78: aconst_null
+      79: astore_3
+      80: aload_0
+      81: invokevirtual #99                 // Method dM:()Lctp;
+      84: aload_0
+      85: aload_3
+      86: aconst_null
+      87: aload_0
+      88: invokevirtual #216                // Method dr:()D
+      91: aload_0
+      92: invokevirtual #219                // Method dt:()D
+      95: aload_0
+      96: invokevirtual #222                // Method dx:()D
+      99: ldc           #223                // float 6.0f
+     101: iconst_0
+     102: getstatic     #226                // Field ctp$a.b:Lctp$a;
+     105: invokevirtual #229                // Method ctp.a:(Lblv;Lbkt;Lcti;DDDFZLctp$a;)Lcth;
+     108: pop
+     109: aload_0
+     110: aload_1
+     111: invokevirtual #232                // Method a:(Lbkt;)V

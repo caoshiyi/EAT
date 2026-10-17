@@ -1,0 +1,73 @@
+{
+  "computed_utc": "2026-10-17T20:05:40.982974+00:00",
+  "source": "ranged_one_pair.js lines16-17,59; extended_ranged_pair.js lines17,59 literal guard; no player code executed",
+  "claim": "same aim rejected at55/56 before collision/model scoring, admitted past this guard at57/58",
+  "limits": [
+    "Not proof every55 low arc is excluded solely by this guard.",
+    "Not current collision clearance or explosion safety proof.",
+    "P2 owns source explosion-distance question; no duplicate extraction.",
+    "Aim distance differs from actual entity-to-explosion distance."
+  ],
+  "rows": [
+    {
+      "prospective_origin": [
+        22.5,
+        56.52,
+        -19.5
+      ],
+      "aim": [
+        33.1,
+        81.5,
+        -23.7
+      ],
+      "horizontal": 11.401754250991381,
+      "aim_3d": 27.4590677190614,
+      "literal_horizontal_lt12_rejects": true
+    },
+    {
+      "prospective_origin": [
+        22.5,
+        57.52,
+        -18.5
+      ],
+      "aim": [
+        33.1,
+        81.5,
+        -23.7
+      ],
+      "horizontal": 11.806777714516354,
+      "aim_3d": 26.729017939310825,
+      "literal_horizontal_lt12_rejects": true
+    },
+    {
+      "prospective_origin": [
+        22.5,
+        58.52,
+        -17.5
+      ],
+      "aim": [
+        33.1,
+        81.5,
+        -23.7
+      ],
+      "horizontal": 12.280065146407003,
+      "aim_3d": 26.055333427150764,
+      "literal_horizontal_lt12_rejects": false
+    },
+    {
+      "prospective_origin": [
+        22.5,
+        59.52,
+        -16.5
+      ],
+      "aim": [
+        33.1,
+        81.5,
+        -23.7
+      ],
+      "horizontal": 12.814054783713079,
+      "aim_3d": 25.442492016310034,
+      "literal_horizontal_lt12_rejects": false
+    }
+  ]
+}

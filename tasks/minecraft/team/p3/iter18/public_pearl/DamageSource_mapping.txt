@@ -1,0 +1,26 @@
+net.minecraft.world.damagesource.DamageSource -> bkt:
+# {"fileName":"DamageSource.java","id":"sourceFile"}
+    net.minecraft.core.Holder type -> a
+    net.minecraft.world.entity.Entity causingEntity -> b
+    net.minecraft.world.entity.Entity directEntity -> c
+    net.minecraft.world.phys.Vec3 damageSourcePosition -> d
+    26:26:java.lang.String toString() -> toString
+    30:30:float getFoodExhaustion() -> a
+    34:34:boolean isIndirect() -> b
+    37:42:void <init>(net.minecraft.core.Holder,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,net.minecraft.world.phys.Vec3) -> <init>
+    45:46:void <init>(net.minecraft.core.Holder,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity) -> <init>
+    49:50:void <init>(net.minecraft.core.Holder,net.minecraft.world.phys.Vec3) -> <init>
+    53:54:void <init>(net.minecraft.core.Holder,net.minecraft.world.entity.Entity) -> <init>
+    57:58:void <init>(net.minecraft.core.Holder) -> <init>
+    66:66:net.minecraft.world.entity.Entity getDirectEntity() -> c
+    75:75:net.minecraft.world.entity.Entity getEntity() -> d
+    79:96:net.minecraft.network.chat.Component getLocalizedDeathMessage(net.minecraft.world.entity.LivingEntity) -> a
+    101:101:java.lang.String getMsgId() -> e
+    105:108:boolean scalesWithDifficulty() -> f
+    113:113:boolean isCreativePlayer() -> g
+    118:123:net.minecraft.world.phys.Vec3 getSourcePosition() -> h
+    128:128:net.minecraft.world.phys.Vec3 sourcePositionRaw() -> i
+    132:132:boolean is(net.minecraft.tags.TagKey) -> a
+    136:136:boolean is(net.minecraft.resources.ResourceKey) -> a
+    140:140:net.minecraft.world.damagesource.DamageType type() -> j
+    144:144:net.minecraft.core.Holder typeHolder() -> k

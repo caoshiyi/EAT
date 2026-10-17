@@ -1,0 +1,23 @@
+net.minecraft.world.entity.boss.enderdragon.EndCrystal -> can:
+# {"fileName":"EndCrystal.java","id":"sourceFile"}
+    net.minecraft.network.syncher.EntityDataAccessor DATA_BEAM_TARGET -> c
+    net.minecraft.network.syncher.EntityDataAccessor DATA_SHOW_BOTTOM -> d
+    int time -> b
+    31:35:void <init>(net.minecraft.world.entity.EntityType,net.minecraft.world.level.Level) -> <init>
+    38:40:void <init>(net.minecraft.world.level.Level,double,double,double) -> <init>
+    44:44:net.minecraft.world.entity.Entity$MovementEmission getMovementEmission() -> aW
+    49:51:void defineSynchedData() -> c_
+    55:63:void tick() -> l
+    67:71:void addAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> b
+    75:81:void readAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> a
+    85:85:boolean isPickable() -> bt
+    90:106:boolean hurt(net.minecraft.world.damagesource.DamageSource,float) -> a
+    111:113:void kill() -> al
+    116:122:void onDestroyedBy(net.minecraft.world.damagesource.DamageSource) -> a
+    125:126:void setBeamTarget(net.minecraft.core.BlockPos) -> a
+    130:130:net.minecraft.core.BlockPos getBeamTarget() -> q
+    134:135:void setShowBottom(boolean) -> a
+    138:138:boolean showsBottom() -> s
+    143:143:boolean shouldRenderAtSqrDistance(double) -> a
+    148:148:net.minecraft.world.item.ItemStack getPickResult() -> dz
+    25:26:void <clinit>() -> <clinit>

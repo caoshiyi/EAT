@@ -1,0 +1,45 @@
+{
+  "program": 8825,
+  "header": "program #8825 on p1: 160.2 s",
+  "scope": "saved reported fields only; no independent effect/current-state inference",
+  "fields": {
+    "issue": null,
+    "endingIssue": null,
+    "lost": false,
+    "hp": 20,
+    "ground": true,
+    "closed": true,
+    "currentCloud": false,
+    "controls": {},
+    "crystalBefore": [
+      8830,
+      {
+        "x": 33.5,
+        "y": 80,
+        "z": -24.5
+      }
+    ],
+    "crystalAfter": "[repeated reference]",
+    "removed": true,
+    "attacked": true,
+    "trialComplete": true,
+    "p": {
+      "x": 30.49975365831403,
+      "y": 48,
+      "z": -24.661876691916728
+    }
+  },
+  "array_lengths": {
+    "trace": 206
+  },
+  "missing_fields": [],
+  "unavailable_reference_paths": [
+    "returned.crystalAfter"
+  ],
+  "omitted_fields": [
+    "caps",
+    "climbed",
+    "clouds",
+    "path"
+  ]
+}

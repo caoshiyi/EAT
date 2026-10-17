@@ -1,0 +1,77 @@
+program #8707 on p1: 0.1 s
+--- output ---
+LOW49_MODEL 60 0 []
+--- returned ---
+{
+ "issue": "NO_LOW_PLANNED_ARC",
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 166,
+ "p": {
+  "x": 28.48694710575869,
+  "y": 49,
+  "z": -19.50001505293185
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 73,
+ "trace": [
+  [
+   "LOW49_ARC_SURVEY",
+   60,
+   0,
+   []
+  ],
+  [
+   "ACTUAL_RETAINED_LOW",
+   {
+    "x": 28.48694710575869,
+    "y": 49,
+    "z": -19.50001505293185
+   },
+   20,
+   true
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   89
+  ],
+  [
+   "cobbled_deepslate",
+   6,
+   null
+  ],
+  [
+   "end_stone",
+   58,
+   null
+  ],
+  [
+   "bow",
+   1,
+   10
+  ],
+  [
+   "end_stone",
+   9,
+   null
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "lowModelMs": 60,
+ "prepared": false,
+ "choice": null,
+ "scores": "[repeated reference]"
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (28.5, 49, -19.5) in the_end, health 20/20, food 20/20, alive

@@ -5,3 +5,5 @@ Unavailable from permitted evidence, rechecked live closing17:15UTC. No prohibit
 Iteration17 opening 2026-10-17T17:25:41.631202+00:00: token usage unavailable from permitted evidence; no prohibited locations inspected.
 
 Iteration17 closing checkpoint19:21:50 UTC: model/team token usage unavailable from permitted evidence. No prohibited locations inspected; tool output token counts are not usage.
+
+Iteration18 opening19:33UTC: model/team token usage unavailable from permitted evidence. Runner deadline provenance recorded in mission/iter18/provenance.json; no prohibited locations inspected. Shell/tool output token counts do not measure model/team usage.

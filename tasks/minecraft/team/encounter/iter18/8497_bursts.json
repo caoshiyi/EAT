@@ -1,0 +1,63 @@
+{
+  "source": "mission/iter17/8497_return.json actual executed record",
+  "analysis_utc": "2026-10-17T19:31:14.840215+00:00",
+  "caveats": [
+    "Issued events do not prove hit acceptance.",
+    "Minimum is observed sample minimum, not hidden true minimum.",
+    "First observed200 bounds recovery timing, not exact heal event.",
+    "No healing source identity inferred."
+  ],
+  "issued_total": 10,
+  "sampled_phases": [
+    1
+  ],
+  "bursts_gap_threshold_ms": 3000,
+  "bursts": [
+    {
+      "issued": 3,
+      "start_ms": 1792264478627,
+      "last_issue_ms": 1792264479930,
+      "minimum_observed_hp": 196.25,
+      "minimum_at_ms": 1792264480029,
+      "first_observed_200_after_min_ms": 1792264481833,
+      "recovery_after_last_issue_ms": 1903
+    },
+    {
+      "issued": 2,
+      "start_ms": 1792264494509,
+      "last_issue_ms": 1792264495160,
+      "minimum_observed_hp": 196.5,
+      "minimum_at_ms": 1792264495210,
+      "first_observed_200_after_min_ms": 1792264496816,
+      "recovery_after_last_issue_ms": 1656
+    },
+    {
+      "issued": 2,
+      "start_ms": 1792264518508,
+      "last_issue_ms": 1792264519158,
+      "minimum_observed_hp": 197.75,
+      "minimum_at_ms": 1792264518559,
+      "first_observed_200_after_min_ms": 1792264519811,
+      "recovery_after_last_issue_ms": 653
+    },
+    {
+      "issued": 3,
+      "start_ms": 1792264552533,
+      "last_issue_ms": 1792264553835,
+      "minimum_observed_hp": 196.25,
+      "minimum_at_ms": 1792264553884,
+      "first_observed_200_after_min_ms": 1792264555789,
+      "recovery_after_last_issue_ms": 1954
+    }
+  ],
+  "ending_dragon": [
+    13050,
+    {
+      "x": 30.40425893500685,
+      "y": 74.52954899587172,
+      "z": -51.966549689725596
+    },
+    200,
+    1
+  ]
+}

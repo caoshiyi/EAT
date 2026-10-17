@@ -1,0 +1,362 @@
+program #8620 on p1: 0.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "hp": 20,
+ "p": {
+  "x": 28.428945475216107,
+  "y": 49,
+  "z": -19.500032405431977
+ },
+ "result": [
+  {
+   "origin": [
+    22.5,
+    57.52,
+    -18.5
+   ],
+   "footY": 56,
+   "virtualShield": [
+    "22,58,-19",
+    "23,57,-19",
+    "21,57,-19",
+    "22,57,-18"
+   ],
+   "actualCells": [
+    [
+     [
+      22,
+      55,
+      -19
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      56,
+      -19
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      57,
+      -19
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      58,
+      -19
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      59,
+      -19
+     ],
+     "air"
+    ]
+   ],
+   "ms": 82,
+   "feasible": 0,
+   "scores": []
+  },
+  {
+   "origin": [
+    22.5,
+    58.52,
+    -17.5
+   ],
+   "footY": 57,
+   "virtualShield": [
+    "22,59,-18",
+    "23,58,-18",
+    "21,58,-18",
+    "22,58,-17"
+   ],
+   "actualCells": [
+    [
+     [
+      22,
+      56,
+      -18
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      57,
+      -18
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      58,
+      -18
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      59,
+      -18
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      60,
+      -18
+     ],
+     "air"
+    ]
+   ],
+   "ms": 135,
+   "feasible": 3,
+   "scores": [
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.1,
+      81.9,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.864503185939515,
+     "holes": 1,
+     "model": {
+      "hits": 52,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.1,
+      81.5,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.711504439544749,
+     "holes": 1,
+     "model": {
+      "hits": 35,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.5,
+      81.9,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.929172904278762,
+     "holes": 1,
+     "model": {
+      "hits": 33,
+      "N": 96
+     }
+    }
+   ]
+  },
+  {
+   "origin": [
+    22.5,
+    59.52,
+    -16.5
+   ],
+   "footY": 58,
+   "virtualShield": [
+    "22,60,-17",
+    "23,59,-17",
+    "21,59,-17",
+    "22,59,-16"
+   ],
+   "actualCells": [
+    [
+     [
+      22,
+      57,
+      -17
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      58,
+      -17
+     ],
+     "end_stone"
+    ],
+    [
+     [
+      22,
+      59,
+      -17
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      60,
+      -17
+     ],
+     "air"
+    ],
+    [
+     [
+      22,
+      61,
+      -17
+     ],
+     "air"
+    ]
+   ],
+   "ms": 162,
+   "feasible": 5,
+   "scores": [
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.1,
+      81.5,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.437133305988302,
+     "holes": 1,
+     "model": {
+      "hits": 63,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.5,
+      81.9,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.653209875692754,
+     "holes": 1,
+     "model": {
+      "hits": 51,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.1,
+      81.9,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.586958852563386,
+     "holes": 1,
+     "model": {
+      "hits": 43,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      32.7,
+      81.1,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.221899953977935,
+     "holes": 1,
+     "model": {
+      "hits": 34,
+      "N": 96
+     }
+    },
+    {
+     "id": 291,
+     "target": [
+      33.5,
+      80,
+      -24.5
+     ],
+     "aim": [
+      33.1,
+      81.1,
+      -23.7
+     ],
+     "branch": "low",
+     "ticks": 9.288059214735489,
+     "holes": 1,
+     "model": {
+      "hits": 34,
+      "N": 96
+     }
+    }
+   ]
+  }
+ ],
+ "prospective": true,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P4 actual8611 56.5s: heldSTICK2+COFF3→ONEfreshSTONEwear0, returnedFULL13220HP/STold129/new0/NOwoodcollection. Retoolby19:46 MET. Wholeprice already6950: fromyour19:41:12request→20:00hard inclreceipt/ending, stageETA19:52, onecurrentkill0..2actualarrows+gif
+p4: tusedpick>=15cuts. P2 renewed1282272shaftuse NOW; pleasekeepoldSOUTH/no passage, restoredonreturn.
+p3: Small8604 refinement forchangedgeometry: integrating ACTUALmeasuredlaunch whileignoringblocks enters even UNINFLATEDcrystalAABB at t85.533,(32.7773,85.0,23.6356). Thus grossaim miss isunneededtoexplaincase; precedingroofY86plane at84.919 fits obstruction b
+p3: eforeotherwiseintersectingflight. FreeflightmathONLY; actualshape/stationaritystillunconfirmed. No newprobe/gate.
+--- p1 now: (28.4, 49, -19.5) in the_end, health 20/20, food 19/20, alive

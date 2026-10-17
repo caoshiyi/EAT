@@ -1,0 +1,325 @@
+program #8671 on p4: 54 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T20:05:07.124Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 140.4900749736037,
+  "y": -36,
+  "z": 2241.3765003945578
+ },
+ "hp": 20,
+ "food": 18,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "bone",
+   4,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   37,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   12,
+   null
+  ],
+  [
+   "stone_bricks",
+   2,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "tuff",
+   12,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    140,
+    -35,
+    2241
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "CUT",
+   [
+    140,
+    -36,
+    2241
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "STEP",
+   [
+    140,
+    -36,
+    2241
+   ],
+   20
+  ],
+  [
+   "HAND_CUT",
+   [
+    141,
+    -31,
+    2241
+   ],
+   "oak_planks"
+  ],
+  [
+   "CUT",
+   [
+    141,
+    -33,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   "CUT",
+   [
+    141,
+    -34,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   "ORDINARY_WOOD",
+   0,
+   1
+  ],
+  [
+   "RESTORE_EXACT",
+   [
+    141,
+    -34,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   "RESTORE_EXACT",
+   [
+    141,
+    -33,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   "CAP",
+   [
+    140,
+    -36,
+    2242
+   ]
+  ],
+  [
+   "CAP",
+   [
+    140,
+    -35,
+    2242
+   ]
+  ]
+ ],
+ "items": [],
+ "foes": [
+  [
+   200,
+   "zombie",
+   {
+    "x": 129.47822092285796,
+    "y": -42,
+    "z": 2246.7035417342627
+   },
+   20
+  ],
+  [
+   201,
+   "zombie",
+   {
+    "x": 144.6999487989742,
+    "y": -38,
+    "z": 2247.6998312399955
+   },
+   20
+  ],
+  [
+   202,
+   "creeper",
+   {
+    "x": 143.42062184363064,
+    "y": -39,
+    "z": 2247.718860293996
+   },
+   20
+  ],
+  [
+   205,
+   "zombie",
+   {
+    "x": 136.73036366084602,
+    "y": -41,
+    "z": 2247.4420945307597
+   },
+   20
+  ],
+  [
+   206,
+   "zombie",
+   {
+    "x": 144.6999949128629,
+    "y": -38,
+    "z": 2247.061474621296
+   },
+   20
+  ],
+  [
+   207,
+   "zombie",
+   {
+    "x": 138.30000001192093,
+    "y": -41.950000047683716,
+    "z": 2247.4965689798896
+   },
+   20
+  ],
+  [
+   208,
+   "zombie",
+   {
+    "x": 143.6600697781504,
+    "y": -39,
+    "z": 2246.300000011921
+   },
+   20
+  ],
+  [
+   209,
+   "zombie",
+   {
+    "x": 143.19993869905554,
+    "y": -39.37858399748802,
+    "z": 2246.932976372968
+   },
+   20
+  ],
+  [
+   210,
+   "zombie",
+   {
+    "x": 135.1809301188727,
+    "y": -42,
+    "z": 2251.7683918987686
+   },
+   20
+  ],
+  [
+   216,
+   "spider",
+   {
+    "x": 144.30000001192093,
+    "y": -36.89999997615814,
+    "z": 2246.699999988079
+   },
+   15
+  ],
+  [
+   219,
+   "creeper",
+   {
+    "x": 138.52607423067093,
+    "y": -42,
+    "z": 2246.4114897875584
+   },
+   20
+  ],
+  [
+   220,
+   "zombie",
+   {
+    "x": 136.42961140590057,
+    "y": -42,
+    "z": 2254.1879642929775
+   },
+   20
+  ],
+  [
+   2714,
+   "zombie",
+   {
+    "x": 148.29993401200454,
+    "y": -34,
+    "z": 2254.0120791533946
+   },
+   20
+  ]
+ ],
+ "endingIssue": null,
+ "wood0": 0,
+ "wood": 1,
+ "borrowedRestored": [
+  [
+   [
+    141,
+    -33,
+    2241
+   ],
+   "basalt"
+  ],
+  [
+   [
+    141,
+    -34,
+    2241
+   ],
+   "basalt"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P4current6998input acceptance7006ACK: actualOWLbed146.5,-36,2241.5 EMPTY20HP/roof+floor/controls{}, no pickupwindowuntilactualtool+6stock. Revisedrecoveryprice uses14flatcells then6NORTHUPto55 adjacentWESTofactualdrop, ~28+18+portal6=52cuts, fits60. Preser
+p1: veOWNroof; cutADJACENTitem-supportroof tolowerdrop58→57(+2Y), same demonstratedP3/P4standingpickup contract, notblind+3/surface. InspectsettleditemsFIRST.
+p1: P2 finite90s exact existing-source query whiletoolabsent: ranged bowArc currentlyrejects horizontal<12 as blastbuffer, butnear291LOW55 hashorizontal~11.5 /3D~27. Does EndCrystal power6 explosion exposure/damage range use full3D sqrt distance, nothorizontal
+p1: ? One exactexistingartifact finding; no newdownload/model/worldgate. If3D≥16 is valid buffer, maytest lownear-cornerarc fromDEMONSTRATED55 insteadretired58 afterrecovery; prospectiveonly.
+--- p4 now: (140.5, -36, 2241.4) in overworld, health 20/20, food 18/20, alive

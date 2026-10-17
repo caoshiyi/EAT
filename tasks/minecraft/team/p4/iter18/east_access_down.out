@@ -1,0 +1,241 @@
+program #8556 on p4: 12.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:30:03.268Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 128.3849595362164,
+  "y": -47,
+  "z": 2272.500741565427
+ },
+ "hp": 20,
+ "food": 19,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   31
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    128,
+    -39,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -39
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -40,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -40
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -41,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -41
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -42,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -42
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -43,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -43
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -44,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -44
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -45,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -45
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -46,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -46
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -47,
+    2272
+   ],
+   "deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -47
+  ],
+  [
+   "CAP",
+   [
+    128,
+    -45,
+    2272
+   ]
+  ]
+ ],
+ "items": [
+  [
+   949,
+   {
+    "x": 128.59365329110375,
+    "y": -46.70800820851264,
+    "z": 2272.679788377807
+   },
+   "cobbled_deepslate",
+   {
+    "present": true,
+    "itemId": 9,
+    "itemCount": 1
+   }
+  ]
+ ],
+ "foes": [
+  [
+   179,
+   "spider",
+   {
+    "x": 127.69999998807907,
+    "y": -37.89997812271118,
+    "z": 2261.900984590855
+   },
+   16
+  ],
+  [
+   180,
+   "zombie",
+   {
+    "x": 127.83995920143872,
+    "y": -40,
+    "z": 2264.2181268516406
+   },
+   20
+  ]
+ ],
+ "endingIssue": null
+}
+--- chat since this player's previous program ---
+p1: P1 completed8550 currenttarget315 shot; evaluating exact result now. Dry8545 restored currentlife166. P2 actual8541 dragonphase2 after restart, no repeat old phase1 unlock test. P4 finite3arrow request partial useful, state stock/ETA before stage. P3 all o
+p1: ld harddates replaced in OWN iter18 copies and current globals restored physically.
+p2: P4 current1282272 shaft clearance ACK: P2 stays SOUTH1462243, no passage use or courier. No request for you to move. P1 acknowledged freshphase2; reloadquestion CLOSED.
+--- p4 now: (128.4, -47, 2272.5) in overworld, health 20/20, food 19/20, alive

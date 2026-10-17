@@ -1,0 +1,152 @@
+program #8609 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:42:18.423Z",
+ "world": "overworld",
+ "p": {
+  "x": 132.41571656363,
+  "y": -36,
+  "z": 2276.4997464917883
+ },
+ "hp": 20,
+ "food": 18,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   125
+  ],
+  [
+   "cobbled_deepslate",
+   46,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "tuff",
+   12,
+   null
+  ]
+ ],
+ "table": "crafting_table",
+ "sk": [
+  [
+   221,
+   {
+    "x": 150.2300273100861,
+    "y": -5,
+    "z": 2245.5175431592666
+   },
+   20
+  ],
+  [
+   235,
+   {
+    "x": 165.5,
+    "y": -44,
+    "z": 2265.5
+   },
+   20
+  ],
+  [
+   3367,
+   {
+    "x": 124.20875994503844,
+    "y": -33,
+    "z": 2308.2512672340285
+   },
+   20
+  ],
+  [
+   3393,
+   {
+    "x": 108.5,
+    "y": -1,
+    "z": 2253.5
+   },
+   20
+  ],
+  [
+   3444,
+   {
+    "x": 236.5,
+    "y": -35,
+    "z": 2339.5
+   },
+   20
+  ],
+  [
+   3463,
+   {
+    "x": 226.5,
+    "y": -18,
+    "z": 2319.5
+   },
+   20
+  ],
+  [
+   3489,
+   {
+    "x": 67.5,
+    "y": -19,
+    "z": 2305.5
+   },
+   20
+  ],
+  [
+   3536,
+   {
+    "x": 139.4905027730452,
+    "y": -6,
+    "z": 2297.2833916268264
+   },
+   20
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p1: Actual8602 SECONDiter18shot destroyed3→2 /ARROW2→1, same166LOW49HP20food19closed/noCloud/issuesNULL. Pickwear118 callable11 remains; nextONEshot usesfreshwholeprice. Current2arrowsupplyusedone, no newpacketneededfornextshot.
+p1: 8604 firstCAGEshot released/ARROW1→0 but targetNOTdestroyed/2→2; full20HPclosedLOW49/noCloud retained. Currentpick122 callable7. P4 NEWfiniteactualneed TWO arrows forremaining2cages plusONEpick with>=15callablecuts: current7 < pickup4+return2+two-shot8=14 
+p1: minimum. Existingpacketclosed; derivewholepricefromactualstock, no generalkit/Endentry. Partialarrowuseful; confirm feasibility/ETA before stage. No unchangedsecondcageshotbeforeactualmissanalysis.
+p3: P1 taking bounded90s miss subquestion only: compare actual8604 projectile spawnvelocity/terminalentity record against nominal arc. Alternatives localaperturecollision vs longflight/cagecollision/spread; minimum storedactualtrajectory evidence, no newworldp
+p3: robe/sourcecageaudit. Will report whatsavedrecordcanandcannotdiscriminate; youownchangedaim/action.
+p3: 8604 narrowfinding: terminalarrow3263=(32.72886,86.04905,23.43405), just .049above expectedcageroofY86; measuredlaunch(.18025,2.909875,.748) freeflight crossesY86 at(32.73016,86,23.43990), difference~.05 stepbackconsistentcollision. This rules against loca
+p3: laperturestall; stronglysuggests ROOFhit, notuniversalbarimmunity. Minimumdecisive read: currentblock(32,86,23)shapes + secondarrowpositionafterfewticks FROMLOW (no movement). No livehitclaim frommath.
+--- p4 now: (132.4, -36, 2276.5) in overworld, health 20/20, food 18/20, alive

@@ -1,0 +1,1 @@
+const r=Object.values(bot.entities).find(e=>e.username==='p1');return{at:new Date().toISOString(),own:{p:bot.entity.position.clone(),hp:bot.health,controls:bot.controlState},peer:r?{id:r.id,p:r.position.clone(),hp:r.metadata?.[9],equipment:r.equipment?.map(i=>i?{name:i.name,count:i.count,durabilityUsed:i.durabilityUsed,nbt:i.nbt}:null)}:null};

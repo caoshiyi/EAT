@@ -1,0 +1,54 @@
+[
+  {
+    "source": "tasks/minecraft/team/p1/iter17/ranged_one_pair.js",
+    "absolute_guards": [
+      {
+        "epoch_ms": "1792264990000",
+        "utc": "2026-10-17T19:23:10+00:00"
+      },
+      {
+        "epoch_ms": "1792265030000",
+        "utc": "2026-10-17T19:23:50+00:00"
+      }
+    ],
+    "requires_stairs_global": true,
+    "requires_shot_global": true,
+    "initializes_stairs": false
+  },
+  {
+    "source": "tasks/minecraft/team/p1/iter17/shoot_one_retreat.js",
+    "absolute_guards": [
+      {
+        "epoch_ms": "1792265030000",
+        "utc": "2026-10-17T19:23:50+00:00"
+      }
+    ],
+    "requires_stairs_global": false,
+    "requires_shot_global": true,
+    "initializes_stairs": false
+  },
+  {
+    "source": "tasks/minecraft/team/p1/iter17/prepare_any_lowplan.js",
+    "absolute_guards": [
+      {
+        "epoch_ms": "1792265030000",
+        "utc": "2026-10-17T19:23:50+00:00"
+      }
+    ],
+    "requires_stairs_global": true,
+    "requires_shot_global": true,
+    "initializes_stairs": false
+  },
+  {
+    "source": "tasks/minecraft/team/p1/iter17/ranged_stair_trial.js",
+    "absolute_guards": [
+      {
+        "epoch_ms": "1792265030000",
+        "utc": "2026-10-17T19:23:50+00:00"
+      }
+    ],
+    "requires_stairs_global": true,
+    "requires_shot_global": false,
+    "initializes_stairs": true
+  }
+]

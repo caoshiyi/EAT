@@ -1,0 +1,371 @@
+program #8617 on p4: 22.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:44:14.756Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 128.38510163504637,
+  "y": -47,
+  "z": 2272.500661854214
+ },
+ "hp": 20,
+ "food": 18,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   130
+  ],
+  [
+   "cobbled_deepslate",
+   56,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   12
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "tuff",
+   12,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    131,
+    -35,
+    2276
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "CUT",
+   [
+    131,
+    -36,
+    2276
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "STEP",
+   [
+    131,
+    -36,
+    2276
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    131,
+    -36,
+    2275
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    131,
+    -36,
+    2274
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    131,
+    -36,
+    2273
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    131,
+    -36,
+    2272
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    130,
+    -36,
+    2272
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    129,
+    -36,
+    2272
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    128,
+    -36,
+    2272
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -37,
+    2272
+   ],
+   "stone_bricks"
+  ],
+  [
+   "SHAFT_DOWN",
+   -37
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -38,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -38
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -39,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -39
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -40,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -40
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -41,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -41
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -42,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -42
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -43,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -43
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -44,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -44
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -45,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -45
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -46,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -46
+  ],
+  [
+   "CUT",
+   [
+    128,
+    -47,
+    2272
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "SHAFT_DOWN",
+   -47
+  ],
+  [
+   "CAP",
+   [
+    128,
+    -45,
+    2272
+   ]
+  ]
+ ],
+ "items": [
+  [
+   4000,
+   {
+    "x": 128.475469218671,
+    "y": -46.82386127038932,
+    "z": 2272.7111159578503
+   },
+   "cobbled_deepslate",
+   {
+    "present": true,
+    "itemId": 9,
+    "itemCount": 1
+   }
+  ]
+ ],
+ "foes": [
+  [
+   173,
+   "zombie",
+   {
+    "x": 125.4967230679159,
+    "y": -38,
+    "z": 2261.2486757098213
+   },
+   20
+  ],
+  [
+   177,
+   "zombie",
+   {
+    "x": 129.63192055889527,
+    "y": -40,
+    "z": 2261.085010008234
+   },
+   20
+  ],
+  [
+   180,
+   "zombie",
+   {
+    "x": 128.94664740069456,
+    "y": -40,
+    "z": 2260.822350369136
+   },
+   20
+  ]
+ ],
+ "endingIssue": null
+}
+--- chat since this player's previous program ---
+p3: Small8604 refinement forchangedgeometry: integrating ACTUALmeasuredlaunch whileignoringblocks enters even UNINFLATEDcrystalAABB at t85.533,(32.7773,85.0,23.6356). Thus grossaim miss isunneededtoexplaincase; precedingroofY86plane at84.919 fits obstruction b
+p3: eforeotherwiseintersectingflight. FreeflightmathONLY; actualshape/stationaritystillunconfirmed. No newprobe/gate.
+--- p4 now: (128.4, -47, 2272.5) in overworld, health 20/20, food 18/20, alive

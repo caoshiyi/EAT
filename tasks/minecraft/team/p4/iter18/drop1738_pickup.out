@@ -1,0 +1,295 @@
+program #8579 on p4: 9.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T19:34:23.823Z",
+ "world": "overworld",
+ "lifeId": 170,
+ "currentId": 170,
+ "issue": null,
+ "lost": false,
+ "p": {
+  "x": 158.49992126786387,
+  "y": -47,
+  "z": 2268.627273435507
+ },
+ "hp": 20,
+ "food": 18,
+ "ground": true,
+ "closed": true,
+ "controls": {},
+ "cursor": null,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "arrow",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   104
+  ],
+  [
+   "cobbled_deepslate",
+   55,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   2,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "bone",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "tuff",
+   12,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "ACTUAL_ARROW",
+   1738,
+   {
+    "x": 158.8619319120895,
+    "y": -44,
+    "z": 2265.270757354951
+   },
+   {
+    "present": true,
+    "itemId": 798,
+    "itemCount": 2
+   }
+  ],
+  [
+   "CUT",
+   [
+    158,
+    -46,
+    2267
+   ],
+   "deepslate"
+  ],
+  [
+   "CUT",
+   [
+    158,
+    -47,
+    2267
+   ],
+   "deepslate"
+  ],
+  [
+   "STEP",
+   [
+    158,
+    -47,
+    2267
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    158,
+    -46,
+    2266
+   ],
+   "deepslate"
+  ],
+  [
+   "CUT",
+   [
+    158,
+    -47,
+    2266
+   ],
+   "deepslate"
+  ],
+  [
+   "STEP",
+   [
+    158,
+    -47,
+    2266
+   ],
+   20
+  ],
+  [
+   "CUT",
+   [
+    158,
+    -45,
+    2265
+   ],
+   "mossy_stone_bricks"
+  ],
+  [
+   "ORDINARY_ARROW",
+   0,
+   2,
+   null
+  ],
+  [
+   "CAP",
+   [
+    158,
+    -45,
+    2265
+   ]
+  ],
+  [
+   "STEP",
+   [
+    158,
+    -47,
+    2267
+   ],
+   20
+  ],
+  [
+   "STEP",
+   [
+    158,
+    -47,
+    2268
+   ],
+   20
+  ],
+  [
+   "CAP",
+   [
+    158,
+    -47,
+    2267
+   ]
+  ],
+  [
+   "CAP",
+   [
+    158,
+    -46,
+    2267
+   ]
+  ]
+ ],
+ "items": [
+  [
+   1739,
+   {
+    "x": 160.33405685908312,
+    "y": -44,
+    "z": 2264.4226953796665
+   },
+   "bone",
+   {
+    "present": true,
+    "itemId": 958,
+    "itemCount": 2
+   }
+  ]
+ ],
+ "foes": [
+  [
+   212,
+   "creeper",
+   {
+    "x": 159.94804686307907,
+    "y": -44,
+    "z": 2266.565478503704
+   },
+   20
+  ],
+  [
+   213,
+   "zombie",
+   {
+    "x": 160.59848213739176,
+    "y": -44,
+    "z": 2266.1963308571544
+   },
+   20
+  ],
+  [
+   223,
+   "spider",
+   {
+    "x": 158.69999998807907,
+    "y": -41.89999997615814,
+    "z": 2256.699999988079
+   },
+   6
+  ],
+  [
+   235,
+   "skeleton",
+   {
+    "x": 165.5,
+    "y": -44,
+    "z": 2265.5
+   },
+   20
+  ],
+  [
+   237,
+   "creeper",
+   {
+    "x": 158.7140282409381,
+    "y": -44,
+    "z": 2264.854140267704
+   },
+   20
+  ],
+  [
+   274,
+   "zombie",
+   {
+    "x": 168.77205728708375,
+    "y": -44,
+    "z": 2266.4954684731606
+   },
+   20
+  ]
+ ],
+ "endingIssue": null,
+ "arrow0": 0,
+ "arrow": 2,
+ "supportRestored": "cobbled_deepslate"
+}
+--- chat since this player's previous program ---
+p1: Combat8572 complete, reading actual trace now. P2 finite <=120s source need: exact dragon eyeheight used hasLineOfSight to player? Selecting current actual ray-obstruction check before any changed exposure; no source expansion beyond existing matched class
+p1: . Threecrystalsremain, freshphase2→1 alone didnot prove cycling. P4 actual2drop useful, adopt then tell retainedstock/ETA before I travel81.
+p3: 8572 discriminator CLOSED: 110samples/89.489s ALLphase1 onfreshdragon282; maxsamplegap1151ms, NOobserved1→other. Sixissued/minHP195.25→last+ending200, retainedsame166 LOW54/20HP/groundclosed/noCloud. Startup8541phase2 didNOTestablishongoingcycle/perch. Cur
+p3: renttrial adds another healed-back damage case; equivalent90smelee repeat lackschangedcondition. phase_digest_8572.json exactscope.
+--- p4 now: (158.5, -47, 2268.6) in overworld, health 20/20, food 18/20, alive

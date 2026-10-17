@@ -1,0 +1,432 @@
+program #8814 on p1: 50.3 s
+--- output ---
+ATTEMPT_CUT [ 80, 50, 0 ] end_stone
+ATTEMPT_CUT [ 80, 49, 0 ] end_stone
+ATTEMPT_CUT [ 82, 50, 0 ] end_stone
+ATTEMPT_CUT [ 82, 49, 0 ] end_stone
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "lost": false,
+ "dimension": "the_end",
+ "lifeId": 166,
+ "p": {
+  "x": 81.52851717421017,
+  "y": 49,
+  "z": 0.49999835569525053
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "closed": true,
+ "currentCloud": false,
+ "caps": 75,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "WORLD_CUT",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone",
+   20
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 81.48909841172022,
+    "y": 49,
+    "z": 0.5000753246592742
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 83.95857962886849,
+    "y": 49,
+    "z": 0.5000753246590255
+   },
+   {
+    "x": 0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.7639553522659,
+    "y": 49,
+    "z": 0.5000753246587768
+   },
+   {
+    "x": 0.15321595083943673,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 89.57012198978117,
+    "y": 49,
+    "z": 0.5000753246585281
+   },
+   {
+    "x": 0.15321679833108137,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 92.37629048962265,
+    "y": 49,
+    "z": 0.5000753246582794
+   },
+   {
+    "x": 0.15321680032662788,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 95.18245899384924,
+    "y": 49,
+    "z": 0.5000753246580307
+   },
+   {
+    "x": 0.15321680033132665,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 97.98862749808619,
+    "y": 49,
+    "z": 0.500075324657782
+   },
+   {
+    "x": 0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": -1.3604833539514247e-14
+   },
+   20,
+   false,
+   false
+  ],
+  [
+   "ORDINARY_INPUT_CHECK",
+   true,
+   2,
+   [
+    117,
+    57
+   ]
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 100.0049285255247,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": 0,
+    "y": -0.0784000015258789,
+    "z": 0
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 97.53544730837645,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15285602833826983,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 94.73007158497904,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15321595083943673,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 91.92390494746377,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15321679833108137,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 89.11773644762229,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15321680032662788,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 86.3115679433957,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15321680033132665,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "BRIDGE_BODY",
+   {
+    "x": 83.50539943915875,
+    "y": 49,
+    "z": 0.5000753246576328
+   },
+   {
+    "x": -0.15321680033133772,
+    "y": -0.0784000015258789,
+    "z": 4.259347735101142e-18
+   },
+   20,
+   true,
+   false
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CAP",
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "inventory": [
+  [
+   "stone_pickaxe",
+   1,
+   117
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ],
+  [
+   "end_stone",
+   59,
+   null
+  ],
+  [
+   "bow",
+   1,
+   11
+  ],
+  [
+   "end_stone",
+   9,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   4
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   57
+  ]
+ ],
+ "clouds": [],
+ "controls": {},
+ "cursor": null,
+ "out": true,
+ "receipt": true,
+ "before": {
+  "sword": 1,
+  "picks": [
+   113
+  ]
+ },
+ "after": {
+  "sword": 2,
+  "picks": [
+   117,
+   57
+  ]
+ },
+ "itemsBefore": [
+  [
+   21427,
+   {
+    "x": 100.64718045147966,
+    "y": 49,
+    "z": 0.5008320940097841
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 821,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 57
+       }
+      }
+     }
+    }
+   ]
+  ]
+ ],
+ "remainingItems": []
+}
+--- chat since this player's previous program ---
+p4: SWORDjob CLOSED/released: independently8808 ordinarySword0→1 wear4, retained81HP20/full/controls{}/issuesNULL, P4full13220HP. Verified21:11:32; original20:18:03→53m29 throughverification, original20:35/own21:07MISSES retained. CurrentOWNPICK55=74callable a
+p4: vailable ONEheldloan ifnextcurrentneedselected; no source/newcraft.
+p4: P4 ONEheldtoolloan accepted7171; wholeordinaryP1receipt+bothendings21:14hard, no production; expectedpost-openwear57 actualwillbeverified.
+p4: P4 HELDPICK wear57 ISSUED 2026-10-17T21:12:14.409Z donor1→0 aftercurrentREADY; ordinaryP1toolreceipt required.
+--- p1 now: (81.5, 49, 0.5) in the_end, health 20/20, food 20/20, alive

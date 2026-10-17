@@ -1,0 +1,30 @@
+net.minecraft.world.entity.projectile.Projectile -> cga:
+# {"fileName":"Projectile.java","id":"sourceFile"}
+    java.util.UUID ownerUUID -> b
+    net.minecraft.world.entity.Entity cachedOwner -> c
+    boolean leftOwner -> d
+    boolean hasBeenShot -> e
+    42:43:void <init>(net.minecraft.world.entity.EntityType,net.minecraft.world.level.Level) -> <init>
+    46:50:void setOwner(net.minecraft.world.entity.Entity) -> b
+    55:62:net.minecraft.world.entity.Entity getOwner() -> w
+    66:66:net.minecraft.world.entity.Entity getEffectSource() -> J
+    71:78:void addAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> b
+    81:81:boolean ownedBy(net.minecraft.world.entity.Entity) -> d
+    86:92:void readAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> a
+    96:100:void restoreFrom(net.minecraft.world.entity.Entity) -> w
+    104:113:void tick() -> l
+    116:124:boolean checkLeftOwner() -> s
+    128:142:void shoot(double,double,double,float,float) -> c
+    145:157:void shootFromRotation(net.minecraft.world.entity.Entity,float,float,float,float,float) -> a
+    160:170:void onHit(net.minecraft.world.phys.HitResult) -> a
+    173:173:void onHitEntity(net.minecraft.world.phys.EntityHitResult) -> a
+    176:178:void onHitBlock(net.minecraft.world.phys.BlockHitResult) -> a
+    182:191:void lerpMotion(double,double,double) -> l
+    194:198:boolean canHitEntity(net.minecraft.world.entity.Entity) -> a
+    202:207:void updateRotation() -> K
+    210:216:float lerpRotation(float,float) -> d
+    221:222:net.minecraft.network.protocol.Packet getAddEntityPacket() -> dj
+    227:233:void recreateFromPacket(net.minecraft.network.protocol.game.ClientboundAddEntityPacket) -> a
+    237:241:boolean mayInteract(net.minecraft.world.level.Level,net.minecraft.core.BlockPos) -> a
+    245:245:boolean mayBreak(net.minecraft.world.level.Level) -> b
+    118:118:boolean lambda$checkLeftOwner$0(net.minecraft.world.entity.Entity) -> c

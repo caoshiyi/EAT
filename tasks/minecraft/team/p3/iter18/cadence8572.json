@@ -1,0 +1,41 @@
+{
+  "scope": "historical8572 dispatch timing, not accepted-hit count or post-crystal DPS",
+  "dispatch_ms": [
+    1792265561813,
+    1792265562465,
+    1792265563115,
+    1792265617321,
+    1792265617972,
+    1792265618622
+  ],
+  "cluster_ms": [
+    [
+      1792265561813,
+      1792265562465,
+      1792265563115
+    ],
+    [
+      1792265617321,
+      1792265617972,
+      1792265618622
+    ]
+  ],
+  "within_cluster_gap_ms": [
+    652,
+    650,
+    651,
+    650
+  ],
+  "cluster_start_gap_ms": 55508,
+  "conditional_90_dispatches_at_3_per_same_gap_minutes": 27.754,
+  "post_zero_crystal_phase_and_availability": "UNOBSERVED",
+  "budget": {
+    "announced_program": 8750,
+    "announced_utc": "20:37:38",
+    "published_program": 8751,
+    "published_utc": "20:38:36",
+    "elapsed_seconds": 58,
+    "cap_seconds": 90,
+    "status": "MET"
+  }
+}

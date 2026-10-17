@@ -1,0 +1,19 @@
+{
+  "question": "Local aperture collision versus distant cage collision for actual8604",
+  "beneficiary": "P1 changed cage attempt",
+  "budget_seconds": 90,
+  "announced_program": 8606,
+  "announced_utc": "2026-10-17T19:41:41",
+  "published_program": 8608,
+  "published_utc": "2026-10-17T19:42:12",
+  "publication_elapsed_seconds": 31,
+  "actual_projectile_id": 3263,
+  "actual_spawn": [22.38267189037093,56.520000003278255,-19.500032405431284],
+  "actual_spawn_velocity_quantized": [0.18025,2.909875,0.748],
+  "actual_ending_projectile_position": [32.72886329662093,86.04905273765326,23.434049625818716],
+  "free_flight_y86_descending_intersection_from_measured_velocity": [32.7301625127252,86,23.439900940038825],
+  "free_flight_tick": 84.91937533158854,
+  "conclusion": "Actual projectile traveled to cage; local aperture stall excluded for this projectile. Ending within about0.05 of roof plane is consistent with roof block impact stepback.",
+  "limitation": "No live block shapes or second stationary sample yet. Math is not block-impact proof or hit-probability estimate. Reported terminal velocity may be stale after impact.",
+  "minimum_followup": "P1 ordinary read-only current block(32,86,23) shapes and second arrow position from LOW; no player movement needed. P3 cannot run P1 program."
+}

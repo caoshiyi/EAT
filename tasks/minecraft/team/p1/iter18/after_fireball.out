@@ -1,0 +1,363 @@
+program #8651 on p1: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": 1792266933926,
+ "dimension": "the_end",
+ "id": 166,
+ "p": {
+  "x": 28.48694710575869,
+  "y": 49,
+  "z": -19.50000784910013
+ },
+ "hp": 20,
+ "food": 17,
+ "ground": true,
+ "controls": {},
+ "cursor": null,
+ "inventory": [
+  [
+   "mossy_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   1,
+   null
+  ],
+  [
+   "book",
+   27,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   68
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   21
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   17,
+   null
+  ],
+  [
+   "bow",
+   1,
+   10
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ]
+ ],
+ "globals": {
+  "stairs": {
+   "lifeId": 166,
+   "dimension": "the_end",
+   "base": [
+    28,
+    49,
+    -20
+   ],
+   "nodes": [
+    [
+     28,
+     49,
+     -20
+    ],
+    [
+     27,
+     50,
+     -20
+    ],
+    [
+     26,
+     51,
+     -20
+    ],
+    [
+     25,
+     52,
+     -20
+    ],
+    [
+     24,
+     53,
+     -20
+    ],
+    [
+     23,
+     54,
+     -20
+    ],
+    [
+     22,
+     55,
+     -20
+    ],
+    [
+     22,
+     56,
+     -19
+    ],
+    [
+     22,
+     57,
+     -18
+    ],
+    [
+     22,
+     58,
+     -17
+    ]
+   ],
+   "at": 1792266821425,
+   "dryReturn": true
+  },
+  "shot": {
+   "lifeId": 166,
+   "dimension": "the_end",
+   "at": 1792266026512,
+   "base": [
+    28,
+    49,
+    -20
+   ],
+   "nodes": [
+    [
+     28,
+     49,
+     -20
+    ],
+    [
+     27,
+     50,
+     -20
+    ],
+    [
+     26,
+     51,
+     -20
+    ],
+    [
+     25,
+     52,
+     -20
+    ],
+    [
+     24,
+     53,
+     -20
+    ],
+    [
+     23,
+     54,
+     -20
+    ],
+    [
+     22,
+     55,
+     -20
+    ]
+   ],
+   "targetId": 301,
+   "target": [
+    33.5,
+    83,
+    24.5
+   ],
+   "aim": [
+    32.85,
+    84.8,
+    25.15
+   ],
+   "branch": "high",
+   "origin": [
+    22.38267189037093,
+    56.52,
+    -19.50003240543059
+   ],
+   "barrier": [
+    22,
+    57,
+    -20
+   ],
+   "holes": [
+    [
+     22,
+     57,
+     -20
+    ]
+   ],
+   "model": {
+    "hits": 12,
+    "N": 48
+   },
+   "prepared": true
+  }
+ },
+ "faces": [
+  [
+   [
+    28,
+    48,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    28,
+    51,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    29,
+    49,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    29,
+    50,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    27,
+    49,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    27,
+    50,
+    -20
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    28,
+    49,
+    -19
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    28,
+    50,
+    -19
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    28,
+    49,
+    -21
+   ],
+   "end_stone"
+  ],
+  [
+   [
+    28,
+    50,
+    -21
+   ],
+   "end_stone"
+  ]
+ ],
+ "entities": [
+  [
+   282,
+   "ender_dragon",
+   {
+    "x": 43.92680830899294,
+    "y": 74.89712998723584,
+    "z": -23.583548912449817
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  ],
+  [
+   291,
+   "end_crystal",
+   {
+    "x": 33.5,
+    "y": 80,
+    "z": -24.5
+   },
+   []
+  ],
+  [
+   301,
+   "end_crystal",
+   {
+    "x": 33.5,
+    "y": 83,
+    "z": 24.5
+   },
+   []
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: 8648 changes encounterevidence scope: actualINCOMING_FIREBALL_EXTENDED requiresdragon_fireball<24 whilebody>=56; receipt endsnewcloud6172/r3.7 butNOdragon tuple. Earlier110phase1samples remainhistorical, notcurrentlockproof. InnextalreadyplannedLOWreturn i
+p3: ncludeactualdragon[id,HP,phase]+fireball/cloudcoords (currentcloudpositionaliased here). Thatcanchangeimminentnextcombatdecision; no highprobe/watcherrequested.
+--- p1 now: (28.5, 49, -19.5) in the_end, health 20/20, food 17/20, alive

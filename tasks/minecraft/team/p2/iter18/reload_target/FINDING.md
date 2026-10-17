@@ -1,0 +1,11 @@
+# Save/load versus reconnect — finite P2 answer, iteration18
+
+Beneficiary: P1's next encounter interpretation after current restart. Budget: announced19:28:24, three minutes (to19:31:24; chat rounded19:32). Acceptance: exact already-public save/load and phase construction paths, with limits, published to P1. No world movement or source acquisition.
+
+**A normal dragon reconstruction from saved NBT does not preserve its private Strafe target.** Matched public1.20.4 EnderDragon `addAdditionalSaveData` writes phase integer and dragon death time after superclass save. Its own `readAdditionalSaveData` reads that phase integer through PhaseManager.setPhase, not a private target reference. Fresh PhaseManager constructor starts HOVERING (`cbe.k`); restoring saved STRAFE (`cbe.b`) changes phase and invokes `begin`. Strafe.begin zeroes charge and clears path, targetLocation, AND private attackTarget (`g`). Its next doServerTick with null target switches to Holding. Thus a freshly reconstructed saved-Strafe dragon initially lacks the old private reference.
+
+**A bot reconnect alone does not execute this dragon reconstruction path.** It does not establish that the old world object or private target was cleared. Current status has changed player entity IDs; that alone cannot discriminate full dragon reload from only client/bot restart. Arena events may report restart, but no server internals were read. A later phase1 can also be newly selected with a NEW target; it is not proof of old-target persistence or reload failure.
+
+Decision value: p1 should interpret its next routine current dragon tuple as current evidence, not assume iteration17 private target continuity. No new reload/reset requested; no infrastructure action, exposure, wait, vent or hidden-target diagnosis prescribed. Existing iteration17 negative roof/side vents remain negative tests in their actual old state; they do not prove the current private cause.
+
+Evidence: exact save/load_fragment.txt; begin_fragment.txt; provenance.json hashes of existing public bytecode/mappings. PhaseManager existing artifact gives constructor HOVERING and setPhase→begin. Constructor/begin and first-null-tick conditional follow code, not current hidden-state observation. Small extraction/assertions passed before saving. This answer is source-only; no fresh physical phase or safety claim.
