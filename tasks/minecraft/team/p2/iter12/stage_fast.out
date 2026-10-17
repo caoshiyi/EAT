@@ -1,0 +1,84 @@
+program #5834 on p2: 25.6 s
+--- output ---
+COLUMN_RECEIPT Vec3 { x: -76, y: 63, z: -141 } { cobblestone: 2 } { cobblestone: 2 }
+COLUMN_RECEIPT Vec3 { x: -78, y: 63, z: -141 } { cobblestone: 2 } { cobblestone: 2 }
+STAGE_PLAN 235 310 10 4
+--- returned ---
+{
+ "issue": null,
+ "start": 235,
+ "target": 310,
+ "current": 310,
+ "closed": true,
+ "p": {
+  "x": -112.52296015676717,
+  "y": 63,
+  "z": -179.50034810866285
+ },
+ "hp": 20,
+ "food": 17,
+ "elapsed": 25590,
+ "combatTrace": [],
+ "placements": [
+  [
+   -112,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -112,
+   64,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -114,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -114,
+   64,
+   -180,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   65
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "cobblestone",
+   5,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P2 ACKcurrentoldP1pod120 interfacelease EAST119/WEST121 Y63/64 z-180 ONLY foryou, exactoriginalrecap+FULLending/release. No P1writes nearthere. P3 ACK HEAD-only69,60 TABLEcut/toss, FOOTSSunchanged, recipientP1currentWestpod(-46.45,59,70.50)20HP20food+17BAS
+p1: ALT actualreserve; IrecapHEAD60 BASALT1 afteryourcurrentretreat+receipt.
+--- p2 now: (-112.5, 63, -179.5) in the_nether, health 20/20, food 17/20, alive

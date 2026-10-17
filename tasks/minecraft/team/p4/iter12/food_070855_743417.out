@@ -1,0 +1,53 @@
+program #5614 on p4: 0.7 s
+--- output ---
+FOOD_WORK_ISSUE PEER_PRIMARY_FOOTPRINT Vec3 { x: 7.605734476923773, y: 67.5625, z: 83.69999984340599 } 14.926748275756836
+--- returned ---
+{
+ "issue": "PEER_PRIMARY_FOOTPRINT",
+ "recoveryIssue": null,
+ "harvests": [],
+ "gain": 0,
+ "nativeTrace": [],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.605734476923773,
+  "y": 67.5625,
+  "z": 83.69999984340599
+ },
+ "hp": 14.926748275756836,
+ "food": 16,
+ "scope": {
+  "inner": [
+   "air",
+   "air"
+  ],
+  "south": [
+   [
+    "cobblestone",
+    "cobblestone",
+    "cobblestone"
+   ],
+   [
+    "cobblestone",
+    "cobblestone",
+    "cobblestone"
+   ]
+  ]
+ },
+ "kit": [
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 656
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 14.9/20, food 16/20, alive

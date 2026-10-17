@@ -1,0 +1,8 @@
+== #6081 2026-10-17T08:46:38 p3 role=continuity_owner iter=12 0 s
+const{Vec3}=require('vec3'),names=()=>bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]);bot.clearControlStates();bot.pathfinder.setGoal(null);const before=names(),cells=[67,68].map(y=>[y,bot.blockAt(new Vec3(7,y,82))?.name]);let c,bank,ids;try{if(cells[0][1]!=='chest')throw Error('LOWER_NOT_CHEST');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));bank=c.containerItems().map(i=>[i.name,i.count]);ids={inventory:[bot.inventory.id,bot.inventory.type,bot.inventory.inventoryStart,bot.inventory.inventoryEnd],container:[c.id,c.type,c.inventoryStart,c.inventoryEnd]};}finally{if(c)c.close()}await bot.waitForTicks(5);return{p:bot.entity.position,hp:bot.health,before,bank,after:names(),cells,ids};
+-- error --
+Error: LOWER_NOT_CHEST
+    at p3-program-6081.js:1:290
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:386:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

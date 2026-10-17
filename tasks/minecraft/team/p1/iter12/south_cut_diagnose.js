@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');for(let a of[[1,66,5],[1,65,5],[1,67,5]]){let p=new Vec3(...a);console.log('CUT',a,bot.blockAt(p)?.name,'ENV',[[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(d=>{let q=p.offset(...d);return[q,bot.blockAt(q)?.name]}))}console.log('BODY',bot.entity.position,bot.health,bot.food);

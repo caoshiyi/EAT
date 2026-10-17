@@ -1,0 +1,4 @@
+== #5623 2026-10-17T07:09:22 p2 role=independent_operator iter=12 0.5 s
+bot.clearControlStates();bot.pathfinder.setGoal(null);const start=bot.entity.position.clone();try{if(bot.game.dimension!=='the_nether'||start.distanceTo(new (require('vec3').Vec3)(1.5,65,4.5))>1)throw Error('START');await bot.look(Math.PI/2,0,true);bot.setControlState('sneak',true);bot.setControlState('forward',true);for(let i=0;i<15&&bot.entity.position.x>1.32;i++)await bot.waitForTicks(1);}finally{bot.clearControlStates();}await bot.waitForTicks(3);bot.chat('P3 P2 actualWESTx'+bot.entity.position.x.toFixed(3)+' z'+bot.entity.position.z.toFixed(3)+' HP'+bot.health+'; E/S no cuts. Your Sbench/head write ACK, handoff2caps then P2exit after yourOW.');return{p:bot.entity.position,hp:bot.health};
+-- returned --
+{"p": {"x": 1.3, "y": 65, "z": 4.517557783981456}, "hp": 20}

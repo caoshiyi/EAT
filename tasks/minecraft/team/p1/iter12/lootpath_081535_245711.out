@@ -1,0 +1,296 @@
+program #6014 on p1: 37.1 s
+--- output ---
+BORE_ACTUAL [ 155, -41, 2227 ] 12.510251998901367
+BORE_ACTUAL [ 155, -41, 2226 ] 12.510251998901367
+BORE_ACTUAL [ 155, -41, 2225 ] 12.510251998901367
+BORE_ACTUAL [ 154, -41, 2225 ] 12.510251998901367
+BORE_ACTUAL [ 154, -41, 2224 ] 12.510251998901367
+BORE_ACTUAL [ 154, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 153, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 152, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 151, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 150, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 149, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 148, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 147, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 146, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 145, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 144, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 143, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 142, -41, 2223 ] 12.510251998901367
+BORE_ACTUAL [ 141, -41, 2223 ] 12.510251998901367
+WORK_BOUND_PARTIAL
+CLOSED true
+--- returned ---
+{
+ "planOrigin": [
+  156,
+  -41,
+  2227
+ ],
+ "planSize": 51,
+ "index": 19,
+ "issue": null,
+ "p": {
+  "x": 141.4620153055049,
+  "y": -41,
+  "z": 2223.500111784234
+ },
+ "hp": 12.510251998901367,
+ "food": 17,
+ "lost": false,
+ "cuts": 38,
+ "moved": [
+  [
+   155,
+   -41,
+   2227
+  ],
+  [
+   155,
+   -41,
+   2226
+  ],
+  [
+   155,
+   -41,
+   2225
+  ],
+  [
+   154,
+   -41,
+   2225
+  ],
+  [
+   154,
+   -41,
+   2224
+  ],
+  [
+   154,
+   -41,
+   2223
+  ],
+  [
+   153,
+   -41,
+   2223
+  ],
+  [
+   152,
+   -41,
+   2223
+  ],
+  [
+   151,
+   -41,
+   2223
+  ],
+  [
+   150,
+   -41,
+   2223
+  ],
+  [
+   149,
+   -41,
+   2223
+  ],
+  [
+   148,
+   -41,
+   2223
+  ],
+  [
+   147,
+   -41,
+   2223
+  ],
+  [
+   146,
+   -41,
+   2223
+  ],
+  [
+   145,
+   -41,
+   2223
+  ],
+  [
+   144,
+   -41,
+   2223
+  ],
+  [
+   143,
+   -41,
+   2223
+  ],
+  [
+   142,
+   -41,
+   2223
+  ],
+  [
+   141,
+   -41,
+   2223
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "blackstone",
+   62,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "tuff",
+   25,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "cobbled_deepslate",
+   5,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   0
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   22,
+   null
+  ],
+  [
+   "netherrack",
+   60,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "blackstone",
+   11,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   44,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1112
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P2/P3 changedFORGE approach actual3bodiesinside: soleP4WEST HEAD5,68,83 DIRTrue→FURNACE→fullrestore <=30s; FOOT5,67,83 remainsDIRTfull, allroof/E/Sunchanged. No frontbodymove needed. Eachone-headopening<2s, heldWOODcap. RAW1/COAL ready; ShieldBANK actualre
+p4: ceipt follows.
+p4: P2/P3 FURNACEpickupnotP4; ifactualinyourinventory bankitplease. WESTHEAD fullrestored; ShieldcraftcontinueswithownINGOT1, no falsefurnacebankclaim.
+p4: P2 actualSHIELD1 BANK NOW, ownP4Shield0, offhandtest45passed thenbank. Pleaseordinarywithdraw→ownShield1→OFFHAND45→use+currentprotectedending. FURNACE/PICK126/AXE64 loans BANKactualiflisted; WEST5,68,83 fullspruce_planks FOOTDIRTunchanged. P4WESTwriterRELE
+p4: ASED; no outwardbodyhandoff.
+--- p1 now: (141.5, -41, 2223.5) in overworld, health 12.5/20, food 17/20, alive

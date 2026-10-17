@@ -1,0 +1,90 @@
+program #6201 on p2: 7.2 s
+--- output ---
+ACTUALPIGLINS [
+  [
+    25881,
+    Vec3 { x: -212.99870181718194, y: 57, z: -178.8419308650448 },
+    'golden_sword',
+    undefined
+  ],
+  [
+    26600,
+    Vec3 { x: -212.1178033442167, y: 57, z: -179.69102428779564 },
+    'golden_sword',
+    undefined
+  ],
+  [
+    26601,
+    Vec3 { x: -212.86631264736624, y: 56, z: -181.02498297047777 },
+    undefined,
+    true
+  ],
+  [
+    26609,
+    Vec3 { x: -209.30098966267292, y: 57, z: -178.35670593883214 },
+    'golden_sword',
+    undefined
+  ],
+  [
+    26610,
+    Vec3 { x: -201.00978749606077, y: 58, z: -174.01515150398882 },
+    undefined,
+    true
+  ]
+]
+ISSUE Server refused to place basalt at (-219, 63, -180): the block is still air Vec3 { x: -219.5271558242786, y: 63, z: -179.50000059051834 }
+EXACT_END_FAIL Server refused to place basalt at (-219, 63, -180): the block is still air
+END_FAIL Server refused to place cobblestone at (-219, 63, -180): the block is still air
+--- returned ---
+{
+ "issue": "Server refused to place basalt at (-219, 63, -180): the block is still air",
+ "closed": false,
+ "pending": true,
+ "p": {
+  "x": -219.51941335543802,
+  "y": 63,
+  "z": -179.50000059051834
+ },
+ "hp": 14.56666374206543,
+ "shieldWear": 0,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   14,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   96
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-219.5, 63, -179.5) in the_nether, health 14.6/20, food 17/20, alive

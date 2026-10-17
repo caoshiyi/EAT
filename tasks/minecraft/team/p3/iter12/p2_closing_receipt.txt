@@ -1,0 +1,6 @@
+== #6223 2026-10-17T09:06:32 p2 role=independent_operator iter=12 13.8 s
+-- output --
+STAGE_PLAN 419 500 17 4
+ISSUE LINE_THREAT_[26609,"piglin",{"x":-251.4921664452469,"y":63,"z":-182.81937532660146}] 442 Vec3 { x: -249.0626287253742, y: 63, z: -179.5000005905147 }
+-- returned --
+{"issue": "LINE_THREAT_[26609,\"piglin\",{\"x\":-251.4921664452469,\"y\":63,\"z\":-182.81937532660146}]", "start": 419, "target": 500, "current": 447, "closed": true, "p": {"x": -249.51037446148797, "y": 63, "z": -179.5000005905147}, "hp": 14.56666374206543, "food": 17, "elapsed": 13810, "combatTrace": [], "placements": [[-221, 63, -180, "basalt"], [-221, 64, -180, "basalt"], [-249, 63, -180, "cobblestone"], [-249, 64, -180, "cobblestone"], [-251, 63, -180, "cobblestone"], [-251, 64, -180, "cobblestone"]], "inv": [["spruce_button", 1, null], ["crafting_table", 1, null], ["cobblestone", 10, null], ["stone_axe", 1, 68], ["dirt", 3, null], ["netherrack", 2, null], ["stone_pickaxe", 1, 100]]}

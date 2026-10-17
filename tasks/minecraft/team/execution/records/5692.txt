@@ -1,0 +1,8 @@
+== #5692 2026-10-17T07:13:53 p1 role=experiment_owner iter=12 0 s
+const{Vec3}=require('vec3');for(let z=82;z<=86;z++){let row=[];for(let x=10;x<=17;x++){let a=[];for(let y=63;y<=72;y++){let b=bot.blockAt(new Vec3(x,y,z));if(b?.boundingBox!=='empty')a.push(y+':'+b?.name)}row.push(x+'='+a.join(','))}console.log(z,row.join(' | '))}
+-- output --
+82 10=63:sand,64:sand | 11=63:sand,64:sand,65:sand | 12=63:sand,64:sand,65:sand,66:sand | 13=63:sandstone,64:sand,65:sand,66:sand,67:sand | 14=63:sandstone,64:sand,65:sand,66:sand,67:sand | 15=63:sandstone,64:sand,65:sand,66:sand,67:sand | 16=63:sand,64:sand,65:dirt,66:cobblestone,67:cobblestone | 17=63:sandstone,64:sand,65:sand,66:sand,67:sand
+83 10=63:sand,64:sand,65:sand | 11=63:sand,64:sand,65:sand,66:sand | 12=63:sandstone,64:sand,65:sand,66:sand,67:sand | 13=63:sandstone,64:sand,65:sand,66:sand,67:sand | 14=63:sandstone,64:sand,65:sand,66:sand,67:sand | 15=63:sandstone,64:sand,65:sand,66:sand,67:sand | 16=63:sandstone,64:sand,65:sand,66:sand,67:sand | 17=63:sandstone,64:sand,65:sand,66:sand
+84 10=63:sand,64:basalt,65:basalt,66:basalt | 11=63:sand,64:sand,65:sand,66:sand | 12=63:sandstone,64:sand,65:sand,66:sand,67:sand | 13=63:sandstone,64:sand,65:sand,66:sand,67:sand | 14=63:sandstone,64:sand,65:sand,66:stone | 15=63:sandstone,64:sand,65:sand,66:stone | 16=63:sandstone,64:sand,65:sand,66:stone | 17=63:sandstone,64:sand,65:sand,66:stone
+85 10= | 11= | 12= | 13=63:sandstone,64:sand | 14=63:sandstone,64:sand,65:stone | 15=63:sandstone,64:sand,65:stone | 16=63:sandstone,64:sand,65:stone | 17=63:sandstone,64:sand,65:stone
+86 10= | 11= | 12= | 13=63:sandstone,65:stone | 14=63:sandstone,64:sand,65:stone | 15=63:sandstone,64:sand,65:stone | 16=63:sandstone,64:sand,65:stone | 17=63:sandstone,64:sand,65:stone

@@ -1,0 +1,62 @@
+program #5770 on p1: 0.7 s
+--- output ---
+ISSUE SHARED_WEST_HELD2 actual Vec3 { x: -18.503464644804687, y: 65, z: 48.50021993643169 }
+--- returned ---
+{
+ "sharedWestReceipt": false,
+ "caller": "p1_iter12_out_west",
+ "entityId": 175,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -18.503464644804687,
+  "y": 65,
+  "z": 48.50021993643169
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "SHARED_WEST_HELD2",
+ "closed": true,
+ "full": true,
+ "walked": [],
+ "elapsed": 724,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "diamond_pickaxe",
+   1,
+   16
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 actual5763 woodtripENDING CLOSEDinside7.349,67.5625,83.459 HP20food18/EHEADSS+ROOFSPRUCE/gateclosed. EASTwriterreleased; 16PLANKbank no newquota. P2owncapsshortagealreadyresolvedbeforebank, doNOTclaimmywoodenabledyourquarry. YourSWORD/SNOWactualrecipien
+p3: t5750 accepted. Next P3boundedONEadditionalpearl→bank toclose current8vs12framepotentialgap; no morethan1 beforefirstreceipt, planningcomplete07:55/earlycheck07:40.
+p3: P1/P2 P3 nextonePEARLwholecycle: campwithdraw8PLANK+foodexisting→OWNnativeportalroute5min→NetherHOME/SOUTHexactrestore2min→oldfarmcoveredtransit5min→onepearlencounter<=15min→return10min→BANK+closedending3min by07:55; early07:40firstencounter/returncheckpoi
+p3: nt. Current8bankvs12framepossiblegap4; ifactualfilledframesremovegap, Istopproductionandreturn. Need HOME/SOUTH currentwriterlease onlyonarrival, notfutureareareservation.
+--- p1 now: (-18.5, 65, 48.5) in the_nether, health 20/20, food 20/20, alive

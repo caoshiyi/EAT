@@ -1,0 +1,40 @@
+== #6053 2026-10-17T08:35:13 p1 role=experiment_owner iter=12 0.4 s
+global.P1DetourTarget12=[137,2243];
+const{Vec3}=require('vec3');if(bot.game.dimension!=='overworld'||Math.abs(bot.entity.position.y+36)>.1)throw Error('START');const target=global.P1DetourTarget12||[18,160],targetX=target[0],targetZ=target[1];const start=bot.entity.position.floored(),key=q=>q.x+','+q.z,full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','sand','gravel'].includes(bot.blockAt(q)?.name),dirs=[[1,0],[-1,0],[0,1],[0,-1]],cache=new Map();function valid(q){let k=key(q);if(cache.has(k))return cache.get(k);let env=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),...dirs.flatMap(([x,z])=>{let p=q.offset(x,0,z);return p.equals(start)?[]:[p,p.offset(0,1,0)]})],ok=env.every(full)&&![q,q.offset(0,1,0)].some(p=>bot.blockAt(p)?.name.startsWith('infested_'));cache.set(k,ok);return ok}let queue=[start],seen=new Set([key(start)]),prev=new Map(),best=start,score=q=>Math.abs(q.x-targetX)+Math.abs(q.z-targetZ),found=null;for(let i=0;i<queue.length&&i<22000;i++){let p=queue[i];if(score(p)<score(best))best=p;if(p.x===targetX&&p.z===targetZ){found=p;break}for(let[x,z]of dirs){let q=p.offset(x,0,z),k=key(q);if(Math.abs(q.x-start.x)>70||q.z<Math.min(start.z,targetZ)-30||q.z>Math.max(start.z,targetZ)+30||seen.has(k)||!valid(q))continue;seen.add(k);prev.set(k,p);queue.push(q)}}let goal=found||best,route=[];for(let q=goal;!q.equals(start);q=prev.get(key(q)))route.unshift([q.x,q.y,q.z]);global.P1DetourIndex12=0;global.P1Detour12={start:[start.x,start.y,start.z],goal:[goal.x,goal.y,goal.z],path:route,at:Date.now()};console.log('GEOMETRY_ONLY_PLAN',{start,goal,n:route.length,visited:queue.length,first:route.slice(0,36),last:route.slice(-8)});
+-- output --
+GEOMETRY_ONLY_PLAN {
+  start: Vec3 { x: 129, y: -36, z: 2272 },
+  goal: Vec3 { x: 137, y: -36, z: 2243 },
+  n: 43,
+  visited: 2573,
+  first: [
+    [ 128, -36, 2272 ], [ 128, -36, 2271 ],
+    [ 128, -36, 2270 ], [ 128, -36, 2269 ],
+    [ 128, -36, 2268 ], [ 128, -36, 2267 ],
+    [ 128, -36, 2266 ], [ 129, -36, 2266 ],
+    [ 129, -36, 2265 ], [ 130, -36, 2265 ],
+    [ 130, -36, 2264 ], [ 130, -36, 2263 ],
+    [ 130, -36, 2262 ], [ 130, -36, 2261 ],
+    [ 130, -36, 2260 ], [ 130, -36, 2259 ],
+    [ 130, -36, 2258 ], [ 130, -36, 2257 ],
+    [ 130, -36, 2256 ], [ 131, -36, 2256 ],
+    [ 131, -36, 2255 ], [ 132, -36, 2255 ],
+    [ 133, -36, 2255 ], [ 134, -36, 2255 ],
+    [ 135, -36, 2255 ], [ 136, -36, 2255 ],
+    [ 137, -36, 2255 ], [ 138, -36, 2255 ],
+    [ 139, -36, 2255 ], [ 139, -36, 2254 ],
+    [ 139, -36, 2253 ], [ 139, -36, 2252 ],
+    [ 139, -36, 2251 ], [ 139, -36, 2250 ],
+    [ 139, -36, 2249 ], [ 139, -36, 2248 ]
+  ],
+  last: [
+    [ 139, -36, 2248 ],
+    [ 139, -36, 2247 ],
+    [ 139, -36, 2246 ],
+    [ 139, -36, 2245 ],
+    [ 139, -36, 2244 ],
+    [ 139, -36, 2243 ],
+    [ 138, -36, 2243 ],
+    [ 137, -36, 2243 ]
+  ]
+}

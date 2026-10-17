@@ -1,0 +1,4 @@
+== #5649 2026-10-17T07:10:40 p1 role=experiment_owner iter=12 0.9 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const self=bot.entity;try{for(let n=0;n<50;n++){let p=bot.entity.position;if(bot.entity!==self||bot.health<20||bot.game.dimension!=='overworld')throw Error('LIFE');if(p.z<82.45)break;if(Math.abs(p.x-6.5)>.15)throw Error('LATERAL');await bot.lookAt(new Vec3(6.5,p.y+1.4,80),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1)} }finally{bot.clearControlStates()}await bot.waitForTicks(3);console.log('ACTUAL',bot.entity.position,bot.health);if(bot.entity.position.z<82.5&&bot.entity.position.z>82.1)bot.chat('P4 actualP1 FRONTLEFT6.5,z82.4 now/20HP controlsfalse. Your requestedbackLEFT6.3,83.7 move clear behindme; please actualreceipt then I crossEAST.');
+-- output --
+ACTUAL Vec3 { x: 6.499999969855693, y: 67, z: 82.3679512058505 } 20

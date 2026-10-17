@@ -1,0 +1,4 @@
+== #6061 2026-10-17T08:36:38 p3 role=continuity_owner iter=12 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));return{p:bot.entity.position,hp:bot.health,food:bot.food,time:bot.time.timeOfDay,bank:c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]),own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),tables:bot.findBlocks({matching:b=>b.name==='crafting_table',maxDistance:6,count:5}).map(p=>[p.x,p.y,p.z])}}finally{if(c)c.close()}
+-- returned --
+{"p": {"x": 6.320148882249376, "y": 67, "z": 82.30645108303314}, "hp": 20, "food": 20, "time": 9754, "bank": [["sweet_berries", 2, null], ["spruce_sapling", 1, null], ["sandstone", 1, null], ["gold_ingot", 1, null], ["gold_nugget", 6, null], ["ender_pearl", 8, null], ["coal", 1, null], ["arrow", 1, null], ["spider_eye", 1, null], ["string", 1, null]], "own": [], "tables": [[6, 66, 82]]}

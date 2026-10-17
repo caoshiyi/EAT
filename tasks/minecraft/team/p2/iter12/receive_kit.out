@@ -1,0 +1,181 @@
+program #5750 on p2: 16.7 s
+--- output ---
+BANK_REMAIN [
+  [ 'furnace', 1, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'obsidian', 10, null ],
+  [ 'stick', 1, null ],
+  [ 'gold_ingot', 1, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'ender_pearl', 8, null ],
+  [ 'arrow', 1, null ],
+  [ 'gravel', 6, null ],
+  [ 'flint_and_steel', 1, 0 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "bank": [
+  [
+   "stone_sword",
+   1,
+   0,
+   0,
+   false
+  ],
+  [
+   "snowball",
+   10,
+   0,
+   0,
+   false
+  ]
+ ],
+ "p": {
+  "x": 9.484428489350474,
+  "y": 67,
+  "z": 83.47142656087176
+ },
+ "hp": 20,
+ "food": 17,
+ "route": [
+  [
+   21,
+   68,
+   90
+  ],
+  [
+   21,
+   68,
+   89
+  ],
+  [
+   21,
+   68,
+   88
+  ],
+  [
+   20,
+   68,
+   88
+  ],
+  [
+   20,
+   67,
+   87
+  ],
+  [
+   20,
+   67,
+   86
+  ],
+  [
+   20,
+   67,
+   85
+  ],
+  [
+   19,
+   67,
+   85
+  ],
+  [
+   18,
+   67,
+   85
+  ],
+  [
+   18,
+   67,
+   84
+  ],
+  [
+   17,
+   67,
+   84
+  ],
+  [
+   16,
+   67,
+   84
+  ],
+  [
+   15,
+   67,
+   84
+  ],
+  [
+   14,
+   67,
+   84
+  ],
+  [
+   13,
+   68,
+   84
+  ],
+  [
+   12,
+   68,
+   84
+  ],
+  [
+   11,
+   67,
+   84
+  ],
+  [
+   10,
+   67,
+   84
+  ],
+  [
+   9,
+   67,
+   84
+  ],
+  [
+   9,
+   67,
+   83
+  ]
+ ],
+ "inv": [
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   37
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   11,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P3 current5739 override your5736 report: FURNACE reclaimed→actualBANK1, EHEADnowSS/ROOFSPRUCE/gateclosed, ownP4insideRIGHT7.634. Pickupwasoutside notreceived duringtrip so need4heldcaps beforefullroundtrip, not2. IcraftBANKSAND8→SS2 now. Can yourcurrenthel
+p4: dWARP2 beBANKloan forP4returnreserve, orP2 firstactual2quarrycaps? No teamwaiting/productionassumed; currentFOOD3/SNOW0, target07:20 likelymissed.
+p1: P2/P3/P4 P1 actual5744 SOUTHattempt movedto1,65,5 then CUT_warped_planks refused knownP3cap at1,66,6. Same20HP FULLfallback nowBODY Sbench1,65,5 (notHOME). RecoveryfilledHOME interior1,65,4 TABLE +1,66,4 BLACK, addedSS2,67,5. NeedreclaimthesebeforeHOMEuse;
+p1:  P1ownsSbench+temporaryHOMEcleanup now<=60s. NootherNetherbodypresent; no enterHOME untilfreshrelease. ChangedallowWARPcap, moveSouthpod thenrestoreBLACK/TABLE/BASALT exact+HOMEAIR.
+--- p2 now: (9.5, 67, 83.5) in overworld, health 20/20, food 17/20, alive

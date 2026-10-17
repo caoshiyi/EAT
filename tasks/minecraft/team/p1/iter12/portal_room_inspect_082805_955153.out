@@ -1,0 +1,97 @@
+program #6040 on p1: 0 s
+--- output ---
+BODY Vec3 { x: 128.63740992100998, y: -38, z: 2272.4971960380235 } 12.510251998901367 17
+AXIS 128 [
+  [ -41, 'deepslate' ],
+  [ -40, 'deepslate' ],
+  [ -39, 'deepslate' ],
+  [ -38, 'air' ],
+  [ -37, 'air' ],
+  [ -36, 'deepslate' ],
+  [ -35, 'deepslate' ]
+]
+AXIS 129 [
+  [ -41, 'cracked_stone_bricks' ],
+  [ -40, 'cracked_stone_bricks' ],
+  [ -39, 'cracked_stone_bricks' ],
+  [ -38, 'stone_bricks' ],
+  [ -37, 'mossy_stone_bricks' ],
+  [ -36, 'mossy_stone_bricks' ],
+  [ -35, 'stone_bricks' ]
+]
+AXIS 130 [
+  [ -41, 'mossy_stone_bricks' ],
+  [ -40, 'cave_air' ],
+  [ -39, 'cave_air' ],
+  [ -38, 'cave_air' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'mossy_stone_bricks' ]
+]
+AXIS 131 [
+  [ -41, 'infested_stone_bricks' ],
+  [ -40, 'cave_air' ],
+  [ -39, 'cave_air' ],
+  [ -38, 'cave_air' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'cave_air' ]
+]
+AXIS 132 [
+  [ -41, 'stone_bricks' ],
+  [ -40, 'cave_air' ],
+  [ -39, 'cave_air' ],
+  [ -38, 'cave_air' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'cave_air' ]
+]
+AXIS 133 [
+  [ -41, 'mossy_stone_bricks' ],
+  [ -40, 'stone_bricks' ],
+  [ -39, 'mossy_stone_bricks' ],
+  [ -38, 'stone_brick_stairs' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'cave_air' ]
+]
+AXIS 134 [
+  [ -41, 'mossy_stone_bricks' ],
+  [ -40, 'stone_bricks' ],
+  [ -39, 'mossy_stone_bricks' ],
+  [ -38, 'spawner' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'cave_air' ]
+]
+AXIS 135 [
+  [ -41, 'cracked_stone_bricks' ],
+  [ -40, 'infested_mossy_stone_bricks' ],
+  [ -39, 'mossy_stone_bricks' ],
+  [ -38, 'stone_brick_stairs' ],
+  [ -37, 'cave_air' ],
+  [ -36, 'cave_air' ],
+  [ -35, 'cave_air' ]
+]
+HULL [ 130, -38, 2271 ] cave_air
+HULL [ 130, -37, 2271 ] cave_air
+HULL [ 130, -39, 2271 ] cave_air
+HULL [ 130, -38, 2273 ] cave_air
+HULL [ 130, -37, 2273 ] cave_air
+HULL [ 130, -39, 2273 ] cave_air
+HULL [ 131, -38, 2272 ] cave_air
+HULL [ 131, -37, 2272 ] cave_air
+HULL [ 131, -39, 2272 ] cave_air
+ROOM_MOBS [
+  [
+    18769,
+    'silverfish',
+    Vec3 { x: 134.49730018452908, y: -40, z: 2265.8271638792526 },
+    8
+  ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (128.6, -38, 2272.5) in overworld, health 12.5/20, food 17/20, alive

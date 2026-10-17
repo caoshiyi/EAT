@@ -1,0 +1,476 @@
+program #5910 on p3: 41.9 s
+--- output ---
+ACTUAL -47,59,69 2203
+ACTUAL -47,59,68 2752
+ACTUAL -47,59,67 9472
+ACTUAL -47,59,66 10028
+ACTUAL -47,59,65 10528
+ACTUAL -47,59,64 11080
+ACTUAL -47,59,63 11580
+ACTUAL -47,59,62 12131
+ACTUAL -47,59,61 12633
+ACTUAL -47,59,60 13133
+ACTUAL -47,59,59 13684
+ACTUAL -47,59,58 14184
+ACTUAL -47,59,57 14735
+ACTUAL -46,59,57 15236
+ACTUAL -45,59,57 15786
+ACTUAL -45,58,56 16439
+ACTUAL -45,57,55 17089
+ACTUAL -45,56,54 17790
+ACTUAL -44,56,54 18291
+ACTUAL -43,56,54 18843
+ACTUAL -43,56,53 19343
+ACTUAL -42,56,53 19846
+ACTUAL -42,57,52 20446
+ACTUAL -41,58,52 21046
+ACTUAL -41,58,51 21547
+ACTUAL -40,58,51 22048
+ACTUAL -39,58,51 22549
+ACTUAL -39,58,50 23049
+ACTUAL -38,59,50 23651
+ACTUAL -37,59,50 24151
+ACTUAL -37,59,49 24652
+ACTUAL -37,58,48 25352
+ACTUAL -37,58,47 25904
+ACTUAL -36,57,47 26555
+ACTUAL -35,57,47 27057
+ACTUAL -34,57,47 27607
+ACTUAL -34,58,48 28208
+ACTUAL -33,59,48 28810
+ACTUAL -33,60,47 29461
+ACTUAL -33,61,46 30262
+ACTUAL -32,62,46 30869
+ACTUAL -31,61,46 31471
+ACTUAL -31,62,47 32073
+ACTUAL -30,63,47 32680
+ACTUAL -29,64,47 33281
+ACTUAL -29,65,48 33882
+ACTUAL -28,65,48 34384
+ACTUAL -27,65,48 34885
+ACTUAL -26,65,48 35436
+ACTUAL -25,65,48 35937
+ACTUAL -24,65,48 36487
+ACTUAL -23,65,48 36989
+ACTUAL -22,65,48 37540
+ACTUAL -21,65,48 38041
+ACTUAL -20,65,48 39795
+WEST_EXACT_BASALT2_RELEASED
+ACTUAL -19,65,48 41097
+--- returned ---
+{
+ "caller": "iter12_return_east",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -18.51663391302181,
+  "y": 65,
+  "z": 48.50017230285695
+ },
+ "hp": 20,
+ "food": 17,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -47,
+   59,
+   69
+  ],
+  [
+   -47,
+   59,
+   68
+  ],
+  [
+   -47,
+   59,
+   67
+  ],
+  [
+   -47,
+   59,
+   66
+  ],
+  [
+   -47,
+   59,
+   65
+  ],
+  [
+   -47,
+   59,
+   64
+  ],
+  [
+   -47,
+   59,
+   63
+  ],
+  [
+   -47,
+   59,
+   62
+  ],
+  [
+   -47,
+   59,
+   61
+  ],
+  [
+   -47,
+   59,
+   60
+  ],
+  [
+   -47,
+   59,
+   59
+  ],
+  [
+   -47,
+   59,
+   58
+  ],
+  [
+   -47,
+   59,
+   57
+  ],
+  [
+   -46,
+   59,
+   57
+  ],
+  [
+   -45,
+   59,
+   57
+  ],
+  [
+   -45,
+   58,
+   56
+  ],
+  [
+   -45,
+   57,
+   55
+  ],
+  [
+   -45,
+   56,
+   54
+  ],
+  [
+   -44,
+   56,
+   54
+  ],
+  [
+   -43,
+   56,
+   54
+  ],
+  [
+   -43,
+   56,
+   53
+  ],
+  [
+   -42,
+   56,
+   53
+  ],
+  [
+   -42,
+   57,
+   52
+  ],
+  [
+   -41,
+   58,
+   52
+  ],
+  [
+   -41,
+   58,
+   51
+  ],
+  [
+   -40,
+   58,
+   51
+  ],
+  [
+   -39,
+   58,
+   51
+  ],
+  [
+   -39,
+   58,
+   50
+  ],
+  [
+   -38,
+   59,
+   50
+  ],
+  [
+   -37,
+   59,
+   50
+  ],
+  [
+   -37,
+   59,
+   49
+  ],
+  [
+   -37,
+   58,
+   48
+  ],
+  [
+   -37,
+   58,
+   47
+  ],
+  [
+   -36,
+   57,
+   47
+  ],
+  [
+   -35,
+   57,
+   47
+  ],
+  [
+   -34,
+   57,
+   47
+  ],
+  [
+   -34,
+   58,
+   48
+  ],
+  [
+   -33,
+   59,
+   48
+  ],
+  [
+   -33,
+   60,
+   47
+  ],
+  [
+   -33,
+   61,
+   46
+  ],
+  [
+   -32,
+   62,
+   46
+  ],
+  [
+   -31,
+   61,
+   46
+  ],
+  [
+   -31,
+   62,
+   47
+  ],
+  [
+   -30,
+   63,
+   47
+  ],
+  [
+   -29,
+   64,
+   47
+  ],
+  [
+   -29,
+   65,
+   48
+  ],
+  [
+   -28,
+   65,
+   48
+  ],
+  [
+   -27,
+   65,
+   48
+  ],
+  [
+   -26,
+   65,
+   48
+  ],
+  [
+   -25,
+   65,
+   48
+  ],
+  [
+   -24,
+   65,
+   48
+  ],
+  [
+   -23,
+   65,
+   48
+  ],
+  [
+   -22,
+   65,
+   48
+  ],
+  [
+   -21,
+   65,
+   48
+  ],
+  [
+   -20,
+   65,
+   48
+  ],
+  [
+   -19,
+   65,
+   48
+  ]
+ ],
+ "elapsed": 41849,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "warped_planks",
+   2,
+   null
+  ],
+  [
+   "stone_hoe",
+   1,
+   19
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   65
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   62
+  ],
+  [
+   "warped_wart_block",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   54
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P2 CURRENTCANCEL: actualP4DEATH07:44:59 Zombie10.3,66,83.7 after5903 STEP_THREAT/failedreturnEXPOSED (notrendezvous). NEWP4camp20HP20food/WOOD1, SHIELD+FOOD notowned/nodelivery. NO extensionACK/no promisedwait: usechangedroute/currentprotectedending; I bou
+p4: ndedrecoverybeforecorpse~07:49:59 ifsafe. P3actualHP1warningwaspredeath; nowrespawn, nothealing.
+--- p3 now: (-18.5, 65, 48.5) in the_nether, health 20/20, food 17/20, alive

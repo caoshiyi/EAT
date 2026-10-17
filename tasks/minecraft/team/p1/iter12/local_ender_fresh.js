@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,hp:bot.health,food:bot.food,ender:Object.values(bot.entities).filter(e=>e.name==="enderman").map(e=>({id:e.id,p:e.position,hp:e.health,d:e.position.distanceTo(bot.entity.position)})),bed:global.P1Bed12,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};

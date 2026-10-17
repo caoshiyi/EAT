@@ -1,0 +1,38 @@
+program #5884 on p1: 0.6 s
+--- output ---
+GEOMETRY_ONLY_PLAN {
+  start: Vec3 { x: 18, y: 8, z: 86 },
+  goal: Vec3 { x: 18, y: 8, z: 160 },
+  n: 162,
+  visited: 8128,
+  first: [
+    [ 19, 8, 86 ], [ 20, 8, 86 ], [ 21, 8, 86 ],
+    [ 22, 8, 86 ], [ 23, 8, 86 ], [ 24, 8, 86 ],
+    [ 25, 8, 86 ], [ 26, 8, 86 ], [ 27, 8, 86 ],
+    [ 28, 8, 86 ], [ 29, 8, 86 ], [ 30, 8, 86 ],
+    [ 31, 8, 86 ], [ 32, 8, 86 ], [ 33, 8, 86 ],
+    [ 34, 8, 86 ], [ 35, 8, 86 ], [ 36, 8, 86 ],
+    [ 36, 8, 85 ], [ 37, 8, 85 ], [ 37, 8, 84 ],
+    [ 38, 8, 84 ], [ 39, 8, 84 ], [ 40, 8, 84 ],
+    [ 41, 8, 84 ], [ 42, 8, 84 ], [ 43, 8, 84 ],
+    [ 44, 8, 84 ], [ 45, 8, 84 ], [ 46, 8, 84 ],
+    [ 47, 8, 84 ], [ 48, 8, 84 ], [ 49, 8, 84 ],
+    [ 50, 8, 84 ], [ 51, 8, 84 ], [ 52, 8, 84 ]
+  ],
+  last: [
+    [ 18, 8, 153 ],
+    [ 18, 8, 154 ],
+    [ 18, 8, 155 ],
+    [ 18, 8, 156 ],
+    [ 18, 8, 157 ],
+    [ 18, 8, 158 ],
+    [ 18, 8, 159 ],
+    [ 18, 8, 160 ]
+  ]
+}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 currentEASTreturn9,67,83 afterWOOD/FOOD, solewriter<=20s; no insidepeer, actualfullrecap/release follows.
+p4: P4 actualWOOD/FOOD CLOSEDcamp/HEAD+ROOFfull/gateclosed/controlsreleased. OwnPLANK8/BERRY7/HP19.460081100463867; bankreceipt next. EASTwriterRELEASED.
+--- p1 now: (18.5, 8, 86.7) in the_nether, health 20/20, food 20/20, alive

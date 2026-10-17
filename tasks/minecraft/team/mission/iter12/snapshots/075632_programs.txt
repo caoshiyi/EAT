@@ -1,0 +1,323 @@
+== #5943 2026-10-17T07:52:55 p1 role=experiment_owner iter=12 24.4 s
+global.P1DetourBatch12=24;
+const detour=global.P1Detour12,detourI=global.P1DetourIndex12||0;if(!detour)throw Error('NO_PLAN');const expected=detourI?detour.path[detourI-1]:detour.start;if(!bot.entity.position.floored().equals(new (require('vec3').Vec3)(...expected)))throw Error('PLAN_POSITION');global.P1Bore12={path:detour.path.slice(detourI,detourI+(global.P1DetourBatch12||4)),interface:null};
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),start=Date.now(),self=bot.entity,origin=bot.entity.position.floored(),cfg=global.P1Bore12||{path:[[-48,59,70],[-49,59,70],[-50,59,70]],interface:[-48,59,70],kind:'basalt'};let lost=false,issue=null,moved=[],cuts=0;const dirs=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(V),full=q=>{let b=bot.blockAt(q);return b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['lava','water','magma_block','sand','gravel'].includes(b.name)},air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name),stop=()=>{bot.clearControlStates();bot.pathfinder.setGoal(null)},death=()=>{lost=true;stop()};bot.on('death',death);bot.on('respawn',death);stop();function check(){if(lost||bot.entity!==self||bot.game.dimension!=='the_nether'||bot.health<20||Date.now()-start>50000)throw Error('LIFE_TIME')};async function tick(n=1){check();await bot.waitForTicks(n);check()};const stock=()=>bot.inventory.items().find(i=>['basalt','blackstone','netherrack','warped_planks','sandstone','crafting_table'].includes(i.name));async function cut(q){let b=bot.blockAt(q);if(!full(q))throw Error('CUT_NATIVE_'+q+'_'+b?.name);const pick=bot.inventory.items().find(i=>i.name==='diamond_pickaxe'&&i.durabilityUsed<1500);if(!pick)throw Error('PICK');if(bot.heldItem?.name!=='diamond_pickaxe'){await bot.equip(pick,'hand');await tick(2)}const wear=bot.inventory.items().find(i=>i.name==='diamond_pickaxe').durabilityUsed;await bot.dig(b,true);for(let k=0;k<16&&(bot.inventory.items().find(i=>i.name==='diamond_pickaxe')?.durabilityUsed??wear)<=wear;k++)await tick(1);if((bot.inventory.items().find(i=>i.name==='diamond_pickaxe')?.durabilityUsed??wear)<=wear)throw Error('HARVEST_WEAR_ACK_'+q);await tick(2);if(!air(q))throw Error('CUT_ACK');cuts++};async function put(q,kind){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED');let it=kind?bot.inventory.items().find(i=>i.name===kind):stock();if(!it)throw Error('CAP_STOCK_'+kind);let d=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)].find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3)}finally{stop()}if(!full(q))throw Error('CAP_ACK')};async function move(q){for(let n=0;n<40;n++){check();if(!air(q)||!air(q.offset(0,1,0)))throw Error('MOVE_CELL_BLOCKED_'+q);let p=bot.entity.position;if(Math.hypot(p.x-q.x-.5,p.z-q.z-.5)<.09&&bot.entity.onGround&&Math.abs(p.y-q.y)<.1){stop();await tick(2);return}await bot.lookAt(new Vec3(q.x+.5,p.y+1.4,q.z+.5),true);bot.setControlState('forward',true);bot.setControlState('sneak',Math.hypot(p.x-q.x-.5,p.z-q.z-.5)<.35);await tick()}throw Error('MOVE_BOUND')};function shell(p){return[p.offset(0,-1,0),p.offset(0,2,0),...dirs.flatMap(d=>[p.plus(d),p.plus(d).offset(0,1,0)])].every(full)}
+try{if(!shell(origin))throw Error('START_SHELL');if(cfg.interface)bot.chat('P1 physicalLOW test changedDIRECTbore fromWestpod(-47,59,70), originalWEST-48,59/60,70 solewrite/reclaim/EXACTBASALTrecap within50s. No exposedjunctionexpedition. Fullnativeenvelope percell andsamecaller ending; nopeerhere.');for(let a of cfg.path){if(Date.now()-start>35000){console.log('WORK_BOUND_PARTIAL');break}let q=V(a),p=bot.entity.position.floored(),d=q.minus(p);if(Math.abs(d.x)+Math.abs(d.z)!==1||d.y!==0)throw Error('PATH');let sides=dirs.filter(s=>s.dot(d)===0),env=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...sides.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!env.every(full))throw Error('ENVELOPE_'+q+'_'+env.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));await cut(q.offset(0,1,0));await cut(q);await move(q);moved.push(a);console.log('BORE_ACTUAL',a,bot.health)}if(cfg.interface){let q=V(cfg.interface);await put(q,cfg.kind);await put(q.offset(0,1,0),cfg.kind);console.log('SHARED_EXACT',q,bot.blockAt(q)?.name,bot.blockAt(q.offset(0,1,0))?.name)}}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();if(!lost){try{let p=bot.entity.position.floored();if(cfg.interface&&p.equals(V(cfg.interface))){await move(origin);p=origin}for(let d of dirs)for(let y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));console.log('CLOSED',shell(p))}catch(e){console.log('CLOSE_FAIL',e.message)}}bot.removeListener('death',death);bot.removeListener('respawn',death);stop()}
+if(moved.length&&shell(bot.entity.position.floored())&&!lost&&bot.entity.position.floored().equals(V(moved.at(-1))))global.P1DetourIndex12=detourI+moved.length;return{planOrigin:detour.start,planSize:detour.path.length,index:global.P1DetourIndex12,issue,p:bot.entity.position,hp:bot.health,food:bot.food,lost,cuts,moved,full:shell(bot.entity.position.floored()),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState};
+-- output --
+BORE_ACTUAL [ 18, 8, 249 ] 20
+BORE_ACTUAL [ 18, 8, 250 ] 20
+BORE_ACTUAL [ 18, 8, 251 ] 20
+BORE_ACTUAL [ 18, 8, 252 ] 20
+BORE_ACTUAL [ 18, 8, 253 ] 20
+BORE_ACTUAL [ 18, 8, 254 ] 20
+BORE_ACTUAL [ 18, 8, 255 ] 20
+BORE_ACTUAL [ 18, 8, 256 ] 20
+BORE_ACTUAL [ 18, 8, 257 ] 20
+BORE_ACTUAL [ 18, 8, 258 ] 20
+BORE_ACTUAL [ 18, 8, 259 ] 20
+BORE_ACTUAL [ 18, 8, 260 ] 20
+BORE_ACTUAL [ 18, 8, 261 ] 20
+BORE_ACTUAL [ 18, 8, 262 ] 20
+BORE_ACTUAL [ 18, 8, 263 ] 20
+BORE_ACTUAL [ 18, 8, 264 ] 20
+BORE_ACTUAL [ 18, 8, 265 ] 20
+BORE_ACTUAL [ 18, 8, 266 ] 20
+BORE_ACTUAL [ 18, 8, 267 ] 20
+BORE_ACTUAL [ 18, 8, 268 ] 20
+BORE_ACTUAL [ 18, 8, 269 ] 20
+BORE_ACTUAL [ 18, 8, 270 ] 20
+BORE_ACTUAL [ 18, 8, 271 ] 20
+BORE_ACTUAL [ 18, 8, 272 ] 20
+CLOSED true
+-- returned --
+{"planOrigin": [18, 8, 160], "planSize": 148, "index": 144, "issue": null, "p": {"x": 18.50009783366664, "y": 8, "z": 272.5945728793943}, "hp": 20, "food": 20, "lost": false, "cuts": 48, "moved": [[18, 8, 249], [18, 8, 250], [18, 8, 251], [18, 8, 252], [18, 8, 253], [18, 8, 254], [18, 8, 255], [18, 8, 256], [18, 8, 257], [18, 8, 258], [18, 8, 259], [18, 8, 260], [18, 8, 261], [18, 8, 262], [18, 8, 263], [18, 8, 264], [18, 8, 265], [18, 8, 266], [18, 8, 267], [18, 8, 268], [18, 8, 269], [18, 8, 270], [18, 8, 271], [18, 8, 272]], "full": true, "inv": [["obsidian", 10, null], ["flint_and_steel", 1, 0], ["basalt", 60, null], ["blackstone", 64, null], ["blackstone", 12, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 30, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 31, null], ["diamond_pickaxe", 1, 963], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null]], "controls": {}}
+== #5944 2026-10-17T07:53:19 p1 role=experiment_owner iter=12 5.2 s
+global.P1DetourBatch12=24;
+const detour=global.P1Detour12,detourI=global.P1DetourIndex12||0;if(!detour)throw Error('NO_PLAN');const expected=detourI?detour.path[detourI-1]:detour.start;if(!bot.entity.position.floored().equals(new (require('vec3').Vec3)(...expected)))throw Error('PLAN_POSITION');global.P1Bore12={path:detour.path.slice(detourI,detourI+(global.P1DetourBatch12||4)),interface:null};
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),start=Date.now(),self=bot.entity,origin=bot.entity.position.floored(),cfg=global.P1Bore12||{path:[[-48,59,70],[-49,59,70],[-50,59,70]],interface:[-48,59,70],kind:'basalt'};let lost=false,issue=null,moved=[],cuts=0;const dirs=[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(V),full=q=>{let b=bot.blockAt(q);return b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['lava','water','magma_block','sand','gravel'].includes(b.name)},air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name),stop=()=>{bot.clearControlStates();bot.pathfinder.setGoal(null)},death=()=>{lost=true;stop()};bot.on('death',death);bot.on('respawn',death);stop();function check(){if(lost||bot.entity!==self||bot.game.dimension!=='the_nether'||bot.health<20||Date.now()-start>50000)throw Error('LIFE_TIME')};async function tick(n=1){check();await bot.waitForTicks(n);check()};const stock=()=>bot.inventory.items().find(i=>['basalt','blackstone','netherrack','warped_planks','sandstone','crafting_table'].includes(i.name));async function cut(q){let b=bot.blockAt(q);if(!full(q))throw Error('CUT_NATIVE_'+q+'_'+b?.name);const pick=bot.inventory.items().find(i=>i.name==='diamond_pickaxe'&&i.durabilityUsed<1500);if(!pick)throw Error('PICK');if(bot.heldItem?.name!=='diamond_pickaxe'){await bot.equip(pick,'hand');await tick(2)}const wear=bot.inventory.items().find(i=>i.name==='diamond_pickaxe').durabilityUsed;await bot.dig(b,true);for(let k=0;k<16&&(bot.inventory.items().find(i=>i.name==='diamond_pickaxe')?.durabilityUsed??wear)<=wear;k++)await tick(1);if((bot.inventory.items().find(i=>i.name==='diamond_pickaxe')?.durabilityUsed??wear)<=wear)throw Error('HARVEST_WEAR_ACK_'+q);await tick(2);if(!air(q))throw Error('CUT_ACK');cuts++};async function put(q,kind){if(full(q))return;if(!air(q))throw Error('CAP_OCCUPIED');let it=kind?bot.inventory.items().find(i=>i.name===kind):stock();if(!it)throw Error('CAP_STOCK_'+kind);let d=[new Vec3(0,-1,0),...dirs,new Vec3(0,1,0)].find(d=>full(q.plus(d)));if(!d)throw Error('CAP_REF');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3)}finally{stop()}if(!full(q))throw Error('CAP_ACK')};async function move(q){for(let n=0;n<40;n++){check();if(!air(q)||!air(q.offset(0,1,0)))throw Error('MOVE_CELL_BLOCKED_'+q);let p=bot.entity.position;if(Math.hypot(p.x-q.x-.5,p.z-q.z-.5)<.09&&bot.entity.onGround&&Math.abs(p.y-q.y)<.1){stop();await tick(2);return}await bot.lookAt(new Vec3(q.x+.5,p.y+1.4,q.z+.5),true);bot.setControlState('forward',true);bot.setControlState('sneak',Math.hypot(p.x-q.x-.5,p.z-q.z-.5)<.35);await tick()}throw Error('MOVE_BOUND')};function shell(p){return[p.offset(0,-1,0),p.offset(0,2,0),...dirs.flatMap(d=>[p.plus(d),p.plus(d).offset(0,1,0)])].every(full)}
+try{if(!shell(origin))throw Error('START_SHELL');if(cfg.interface)bot.chat('P1 physicalLOW test changedDIRECTbore fromWestpod(-47,59,70), originalWEST-48,59/60,70 solewrite/reclaim/EXACTBASALTrecap within50s. No exposedjunctionexpedition. Fullnativeenvelope percell andsamecaller ending; nopeerhere.');for(let a of cfg.path){if(Date.now()-start>35000){console.log('WORK_BOUND_PARTIAL');break}let q=V(a),p=bot.entity.position.floored(),d=q.minus(p);if(Math.abs(d.x)+Math.abs(d.z)!==1||d.y!==0)throw Error('PATH');let sides=dirs.filter(s=>s.dot(d)===0),env=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),q.plus(d),q.plus(d).offset(0,1,0),...sides.flatMap(s=>[q.plus(s),q.plus(s).offset(0,1,0)])];if(!env.every(full))throw Error('ENVELOPE_'+q+'_'+env.filter(v=>!full(v)).map(v=>v+':'+bot.blockAt(v)?.name).join(';'));await cut(q.offset(0,1,0));await cut(q);await move(q);moved.push(a);console.log('BORE_ACTUAL',a,bot.health)}if(cfg.interface){let q=V(cfg.interface);await put(q,cfg.kind);await put(q.offset(0,1,0),cfg.kind);console.log('SHARED_EXACT',q,bot.blockAt(q)?.name,bot.blockAt(q.offset(0,1,0))?.name)}}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{stop();if(!lost){try{let p=bot.entity.position.floored();if(cfg.interface&&p.equals(V(cfg.interface))){await move(origin);p=origin}for(let d of dirs)for(let y of[0,1])await put(p.plus(d).offset(0,y,0));await put(p.offset(0,2,0));console.log('CLOSED',shell(p))}catch(e){console.log('CLOSE_FAIL',e.message)}}bot.removeListener('death',death);bot.removeListener('respawn',death);stop()}
+if(moved.length&&shell(bot.entity.position.floored())&&!lost&&bot.entity.position.floored().equals(V(moved.at(-1))))global.P1DetourIndex12=detourI+moved.length;return{planOrigin:detour.start,planSize:detour.path.length,index:global.P1DetourIndex12,issue,p:bot.entity.position,hp:bot.health,food:bot.food,lost,cuts,moved,full:shell(bot.entity.position.floored()),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState};
+-- output --
+BORE_ACTUAL [ 18, 8, 273 ] 20
+BORE_ACTUAL [ 18, 8, 274 ] 20
+BORE_ACTUAL [ 18, 8, 275 ] 20
+BORE_ACTUAL [ 18, 8, 276 ] 20
+CLOSED true
+-- returned --
+{"planOrigin": [18, 8, 160], "planSize": 148, "index": 148, "issue": null, "p": {"x": 18.500098809768666, "y": 8, "z": 276.60788367778514}, "hp": 20, "food": 20, "lost": false, "cuts": 8, "moved": [[18, 8, 273], [18, 8, 274], [18, 8, 275], [18, 8, 276]], "full": true, "inv": [["obsidian", 10, null], ["flint_and_steel", 1, 0], ["basalt", 26, null], ["blackstone", 64, null], ["blackstone", 12, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 38, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["diamond_pickaxe", 1, 971], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null]], "controls": {}}
+== #5945 2026-10-17T07:53:55 p1 role=experiment_owner iter=12 10.2 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),self=bot.entity,start=Date.now(),base=bot.entity.position.floored(),x=base.x,z=base.z+2;let issue=null,cuts=0,placed=0;bot.clearControlStates();bot.pathfinder.setGoal(null);const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['lava','water','magma_block','sand','gravel','bedrock'].includes(bot.blockAt(q)?.name),air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);function check(){if(bot.entity!==self||bot.game.dimension!=='the_nether'||bot.health<20||Date.now()-start>55000)throw Error('LIFE_TIME')};async function tick(n){check();await bot.waitForTicks(n);check()};async function dig(q){if(air(q))return;let b=bot.blockAt(q);if(!full(q)||!['basalt','blackstone','netherrack','nether_gold_ore','nether_quartz_ore'].includes(b.name))throw Error('CUT_KIND_'+q+'_'+b?.name);await bot.equip(bot.inventory.items().find(i=>i.name==='diamond_pickaxe'),'hand');await bot.dig(b,true);await tick(2);if(!air(q))throw Error('CUT_ACK');cuts++}
+let frame=[V([x,7,z]),V([x+1,7,z]),...[-1,2].flatMap(dx=>[8,9,10].map(y=>V([x+dx,y,z]))),V([x,11,z]),V([x+1,11,z])];
+try{check();if(base.y!==8||bot.inventory.items().filter(i=>i.name==='obsidian').reduce((s,i)=>s+i.count,0)!==10||!bot.inventory.items().some(i=>i.name==='flint_and_steel'))throw Error('START_KIT');
+ // Qualify the complete chamber and its native outer shell before any cut.
+ for(let xx=x-2;xx<=x+3;xx++)for(let yy=6;yy<=12;yy++)for(let zz=z-1;zz<=z+1;zz++)if(!full(V([xx,yy,zz])))throw Error('ROOM_NATIVE_'+[xx,yy,zz]);
+ for(let y of[10,9,8])await dig(V([x,y,z-1]));for(let n=0;n<30;n++){let p=bot.entity.position;if(Math.hypot(p.x-x-.5,p.z-z+1-.5)<.09){bot.clearControlStates();break}await bot.lookAt(V([x+.5,p.y+1.4,z-.5]),true);bot.setControlState('forward',true);bot.setControlState('sneak',true);await tick(1)}bot.clearControlStates();await tick(3);if(!bot.entity.position.floored().equals(V([x,8,z-1])))throw Error('ANTE_BODY');
+ for(let dx of[1,2,-1])for(let y of[10,9,8])await dig(V([x+dx,y,z-1]));
+ for(let xx of[x,x+1])for(let y of[10,9,8])await dig(V([xx,y,z]));for(let q of frame)await dig(q);
+ for(let q of frame){if(!air(q))throw Error('PLACE_OCCUPIED');let ref=q.offset(0,0,1);if(!full(ref))throw Error('ANCHOR');let it=bot.inventory.items().find(i=>i.name==='obsidian');if(!it)throw Error('OBS_STOCK');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(ref),V([0,0,-1]));await tick(3)}finally{bot.clearControlStates()}if(bot.blockAt(q)?.name!=='obsidian')throw Error('OBS_ACK_'+q);placed++;console.log('OBS_ACTUAL',q)}
+ if(!frame.every(q=>bot.blockAt(q)?.name==='obsidian'))throw Error('FRAME_NOT10');await bot.equip(bot.inventory.items().find(i=>i.name==='flint_and_steel'),'hand');await tick(2);await bot.activateBlock(bot.blockAt(V([x,7,z])),V([0,1,0]),V([.5,1,.5]));await tick(8);let portal=[x,x+1].flatMap(xx=>[8,9,10].map(y=>V([xx,y,z]))).filter(q=>bot.blockAt(q)?.name==='nether_portal');console.log('PORTAL_WORLD',portal);if(portal.length!==6)throw Error('IGNITION_NOT6');global.P1DestinationPortal12={x,z,y:8,at:Date.now()};bot.chat('P1 actualNEWdestinationportal world6cells FRAME10 atNether('+x+',8,'+z+') HP'+bot.health+'; noOWtransition/strongholdentryclaimyet.');
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}return{issue,p:bot.entity.position,hp:bot.health,food:bot.food,cuts,placed,frame:frame.map(q=>[q,bot.blockAt(q)?.name]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState};
+-- output --
+OBS_ACTUAL Vec3 { x: 18, y: 7, z: 278 }
+OBS_ACTUAL Vec3 { x: 19, y: 7, z: 278 }
+OBS_ACTUAL Vec3 { x: 17, y: 8, z: 278 }
+OBS_ACTUAL Vec3 { x: 17, y: 9, z: 278 }
+OBS_ACTUAL Vec3 { x: 17, y: 10, z: 278 }
+OBS_ACTUAL Vec3 { x: 20, y: 8, z: 278 }
+OBS_ACTUAL Vec3 { x: 20, y: 9, z: 278 }
+OBS_ACTUAL Vec3 { x: 20, y: 10, z: 278 }
+OBS_ACTUAL Vec3 { x: 18, y: 11, z: 278 }
+OBS_ACTUAL Vec3 { x: 19, y: 11, z: 278 }
+PORTAL_WORLD [
+  Vec3 { x: 18, y: 8, z: 278 },
+  Vec3 { x: 18, y: 9, z: 278 },
+  Vec3 { x: 18, y: 10, z: 278 },
+  Vec3 { x: 19, y: 8, z: 278 },
+  Vec3 { x: 19, y: 9, z: 278 },
+  Vec3 { x: 19, y: 10, z: 278 }
+]
+-- returned --
+{"issue": null, "p": {"x": 18.500099029000154, "y": 8, "z": 277.51071362617535}, "hp": 20, "food": 20, "cuts": 28, "placed": 10, "frame": [[{"x": 18, "y": 7, "z": 278}, "obsidian"], [{"x": 19, "y": 7, "z": 278}, "obsidian"], [{"x": 17, "y": 8, "z": 278}, "obsidian"], [{"x": 17, "y": 9, "z": 278}, "obsidian"], [{"x": 17, "y": 10, "z": 278}, "obsidian"], [{"x": 20, "y": 8, "z": 278}, "obsidian"], [{"x": 20, "y": 9, "z": 278}, "obsidian"], [{"x": 20, "y": 10, "z": 278}, "obsidian"], [{"x": 18, "y": 11, "z": 278}, "obsidian"], [{"x": 19, "y": 11, "z": 278}, "obsidian"]], "inv": [["diamond_pickaxe", 1, 999], ["basalt", 26, null], ["blackstone", 64, null], ["blackstone", 12, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["flint_and_steel", 1, 1], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null]], "controls": {}}
+== #5946 2026-10-17T07:54:42 p3 role=continuity_owner iter=12 2.7 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let c,receipt=null;try{if(bot.game.dimension!=='overworld'||bot.entity.position.x>=8||bot.entity.position.z<82.15)throw Error('INSIDE');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const existing=c.containerItems().filter(i=>i.name==='stone_pickaxe'&&131-i.durabilityUsed>40);if(existing.length)receipt=['ALREADY_BANK',existing.map(i=>[i.name,i.count,i.durabilityUsed])];else{const it=bot.inventory.items().filter(i=>i.name==='stone_pickaxe'&&131-i.durabilityUsed>40).sort((a,b)=>a.durabilityUsed-b.durabilityUsed)[0];if(!it)throw Error('USABLE_PICK');const wear=it.durabilityUsed;await c.deposit(it.type,null,1);await bot.waitForTicks(6);receipt=['DEPOSIT',wear,c.containerItems().filter(i=>i.name==='stone_pickaxe').map(i=>[i.count,i.durabilityUsed])];}}finally{if(c)c.close()}if(bot.food<18){const b=bot.inventory.items().find(i=>i.name==='sweet_berries');if(b){await bot.equip(b,'hand');await bot.consume();await bot.waitForTicks(8);bot.deactivateItem()}}return{receipt,p:bot.entity.position,hp:bot.health,food:bot.food,time:bot.time.timeOfDay,spiders:Object.values(bot.entities).filter(e=>e.name==='spider'&&e.position.distanceTo(bot.entity.position)<64).map(e=>[e.id,e.position,e.metadata?.[9]]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- returned --
+{"receipt": ["DEPOSIT", 71, [[1, 100]]], "p": {"x": 7.34655124030638, "y": 67.5625, "z": 83.46232882529907}, "hp": 19.64335060119629, "food": 19, "time": 7494, "spiders": [], "inv": [["warped_roots", 3, null], ["wooden_shovel", 1, 53], ["spruce_boat", 1, null], ["rotten_flesh", 4, null], ["warped_wart_block", 1, null], ["stick", 1, null], ["warped_fungus", 2, null], ["quartz", 2, null], ["cobblestone_slab", 1, null], ["wooden_pickaxe", 1, 54], ["warped_planks", 1, null], ["stone_hoe", 1, 19], ["basalt", 1, null], ["netherrack", 1, null], ["sandstone", 1, null], ["stone_axe", 1, 64], ["stone_axe", 1, 81], ["stone_pickaxe", 1, 71]]}
+== #5948 2026-10-17T07:54:45 p3 role=continuity_owner iter=12 0 s
+bot.chat("P4 actualP3INSIDE ending5939 HP19.64/HEADSPRUCE/ROOFnowWARP/GATEclosed, priorROOFsprucepickupmissing soWARPfallbackactual. ExistingSPRUCElumber7 depositedBANK0\u21927 in5938; usableSTONEpick71wear (~60uses) nowBANKloan forYOUR replacementSHIELD op<=08:05, no freshsword/tool/logprep fromP3. Pleaseactualwithdraw/use+returnpick receipt. P3remainingpick100 (~31uses), no oreproductionduplicate. P2 forgeownerP4requested/existingresourcesnowready; coordinate oneowner, nottwoSHIELDproduction.")
+== #5947 2026-10-17T07:54:45 p1 role=experiment_owner iter=12 4.7 s
+const{Vec3}=require('vec3');const cfg=global.P1DestinationPortal12,start=Date.now();let issue=null,dead=false;const death=()=>{dead=true;bot.clearControlStates()};bot.on('death',death);bot.clearControlStates();bot.pathfinder.setGoal(null);try{if(!cfg||bot.game.dimension!=='the_nether'||bot.health<20)throw Error('START');if(bot.blockAt(new Vec3(cfg.x,8,cfg.z))?.name!=='nether_portal')throw Error('PORTAL_CELL');for(let n=0;n<180&&bot.game.dimension==='the_nether';n++){if(dead||bot.health<20||Date.now()-start>14000)throw Error('LIFE_TIME');let p=bot.entity.position;if(p.z>=cfg.z+.35){bot.clearControlStates();await bot.waitForTicks(2);continue}await bot.lookAt(new Vec3(cfg.x+.5,p.y+1.4,cfg.z+1),true);bot.setControlState('forward',true);await bot.waitForTicks(1)}bot.clearControlStates();await bot.waitForTicks(4);if(bot.game.dimension!=='overworld')throw Error('NO_OW_TRANSITION');bot.chat('P1 actualdestinationOWarrival '+bot.entity.position+' HP'+bot.health+' kitretained; freshstrongholdgeometry next, no entryclaimyet.');}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('death',death)}return{issue,dead,dimension:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState};
+-- returned --
+{"issue": null, "dead": false, "dimension": "overworld", "p": {"x": 163.50009934218798, "y": -26, "z": 2230.5}, "hp": 20, "food": 20, "inv": [["diamond_pickaxe", 1, 999], ["basalt", 26, null], ["blackstone", 64, null], ["blackstone", 12, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["basalt", 63, null], ["flint_and_steel", 1, 1], ["netherrack", 64, null], ["basalt", 63, null], ["basalt", 63, null]], "controls": {}}
+== #5949 2026-10-17T07:54:55 p1 role=experiment_owner iter=12 1.2 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('BODY',{id:bot.entity.id,dimension:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,oxygen:bot.oxygenLevel,inWater:bot.entity.isInWater,onGround:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])});if(bot.game.dimension!=='overworld')throw Error('WORLD');for(let name of['end_portal_frame','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','infested_stone_bricks','chest','spawner','cobweb','bookshelf']){let id=bot.registry.blocksByName[name]?.id;if(id===undefined)continue;let ps=bot.findBlocks({matching:id,maxDistance:160,count:name==='end_portal_frame'?64:12});console.log('LOADED_LEAD',name,ps.map(p=>[p,bot.blockAt(p)?.getProperties()]));if(name==='end_portal_frame')global.P1EndFrames12=ps.map(p=>[p.x,p.y,p.z])}console.log('THREATS',Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider','silverfish','enderman'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<24).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]));const p=bot.entity.position.floored();console.log('LOCAL_SHELL',[[0,-1,0],[0,0,0],[0,1,0],[0,2,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(d=>{let q=p.offset(...d);return[q,bot.blockAt(q)?.name]}));
+-- output --
+BODY {
+  id: 175,
+  dimension: 'overworld',
+  p: Vec3 { x: 163.50009934218798, y: -26, z: 2230.5 },
+  hp: 20,
+  food: 20,
+  oxygen: 311,
+  inWater: false,
+  onGround: true,
+  inv: [
+    [ 'diamond_pickaxe', 1, 999 ],
+    [ 'basalt', 26, null ],
+    [ 'blackstone', 64, null ],
+    [ 'blackstone', 12, null ],
+    [ 'netherrack', 64, null ],
+    [ 'netherrack', 64, null ],
+    [ 'netherrack', 64, null ],
+    [ 'netherrack', 64, null ],
+    [ 'basalt', 63, null ],
+    [ 'basalt', 63, null ],
+    [ 'basalt', 63, null ],
+    [ 'basalt', 63, null ],
+    [ 'basalt', 63, null ],
+    [ 'flint_and_steel', 1, 1 ],
+    [ 'netherrack', 64, null ],
+    [ 'basalt', 63, null ],
+    [ 'basalt', 63, null ]
+  ]
+}
+LOADED_LEAD end_portal_frame [
+  [ Vec3 { x: 135, y: -38, z: 2274 }, { facing: 'south', eye: false } ],
+  [ Vec3 { x: 136, y: -38, z: 2275 }, { facing: 'west', eye: false } ],
+  [ Vec3 { x: 134, y: -38, z: 2274 }, { facing: 'south', eye: false } ],
+  [ Vec3 { x: 133, y: -38, z: 2274 }, { facing: 'south', eye: true } ],
+  [ Vec3 { x: 136, y: -38, z: 2276 }, { facing: 'west', eye: false } ],
+  [ Vec3 { x: 136, y: -38, z: 2277 }, { facing: 'west', eye: false } ],
+  [ Vec3 { x: 132, y: -38, z: 2275 }, { facing: 'east', eye: true } ],
+  [ Vec3 { x: 132, y: -38, z: 2276 }, { facing: 'east', eye: false } ],
+  [ Vec3 { x: 135, y: -38, z: 2278 }, { facing: 'north', eye: false } ],
+  [ Vec3 { x: 134, y: -38, z: 2278 }, { facing: 'north', eye: false } ],
+  [ Vec3 { x: 132, y: -38, z: 2277 }, { facing: 'east', eye: false } ],
+  [ Vec3 { x: 133, y: -38, z: 2278 }, { facing: 'north', eye: false } ]
+]
+LOADED_LEAD stone_bricks [
+  [ Vec3 { x: 165, y: -29, z: 2229 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2233 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2229 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2233 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2228 }, {} ],
+  [ Vec3 { x: 167, y: -29, z: 2230 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2227 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2226 }, {} ],
+  [ Vec3 { x: 167, y: -29, z: 2229 }, {} ],
+  [ Vec3 { x: 167, y: -29, z: 2231 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2226 }, {} ],
+  [ Vec3 { x: 167, y: -29, z: 2228 }, {} ]
+]
+LOADED_LEAD cracked_stone_bricks [
+  [ Vec3 { x: 164, y: -29, z: 2230 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2230 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2228 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2232 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2229 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2230 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2231 }, {} ],
+  [ Vec3 { x: 164, y: -31, z: 2230 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2227 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2233 }, {} ],
+  [ Vec3 { x: 164, y: -31, z: 2228 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2234 }, {} ]
+]
+LOADED_LEAD mossy_stone_bricks [
+  [ Vec3 { x: 164, y: -29, z: 2229 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2231 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2231 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2230 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2228 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2232 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2231 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2227 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2228 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2232 }, {} ],
+  [ Vec3 { x: 165, y: -29, z: 2227 }, {} ],
+  [ Vec3 { x: 166, y: -29, z: 2232 }, {} ]
+]
+LOADED_LEAD infested_stone_bricks [
+  [ Vec3 { x: 164, y: -31, z: 2229 }, {} ],
+  [ Vec3 { x: 168, y: -29, z: 2229 }, {} ],
+  [ Vec3 { x: 164, y: -29, z: 2224 }, {} ],
+  [ Vec3 { x: 169, y: -29, z: 2234 }, {} ],
+  [ Vec3 { x: 170, y: -29, z: 2234 }, {} ],
+  [ Vec3 { x: 164, y: -30, z: 2222 }, {} ],
+  [ Vec3 { x: 164, y: -34, z: 2226 }, {} ],
+  [ Vec3 { x: 171, y: -29, z: 2233 }, {} ],
+  [ Vec3 { x: 171, y: -29, z: 2226 }, {} ],
+  [ Vec3 { x: 164, y: -37, z: 2235 }, {} ],
+  [ Vec3 { x: 161, y: -37, z: 2225 }, {} ],
+  [ Vec3 { x: 160, y: -31, z: 2218 }, {} ]
+]
+LOADED_LEAD chest [
+  [
+    Vec3 { x: 167, y: -36, z: 2226 },
+    { waterlogged: false, type: 'single', facing: 'west' }
+  ],
+  [
+    Vec3 { x: 154, y: -35, z: 2227 },
+    { waterlogged: false, type: 'single', facing: 'west' }
+  ],
+  [
+    Vec3 { x: 176, y: -31, z: 2222 },
+    { waterlogged: false, type: 'single', facing: 'east' }
+  ],
+  [
+    Vec3 { x: 154, y: -35, z: 2241 },
+    { waterlogged: false, type: 'single', facing: 'west' }
+  ],
+  [
+    Vec3 { x: 168, y: -43, z: 2230 },
+    { waterlogged: false, type: 'single', facing: 'west' }
+  ],
+  [
+    Vec3 { x: 149, y: -29, z: 2241 },
+    { waterlogged: false, type: 'single', facing: 'north' }
+  ],
+  [
+    Vec3 { x: 145, y: -34, z: 2232 },
+    { waterlogged: false, type: 'single', facing: 'north' }
+  ],
+  [
+    Vec3 { x: 136, y: -41, z: 2248 },
+    { waterlogged: false, type: 'single', facing: 'north' }
+  ],
+  [
+    Vec3 { x: 175, y: -47, z: 2200 },
+    { waterlogged: false, type: 'single', facing: 'north' }
+  ],
+  [
+    Vec3 { x: 126, y: -30, z: 2208 },
+    { waterlogged: false, type: 'single', facing: 'west' }
+  ],
+  [
+    Vec3 { x: 124, y: -30, z: 2211 },
+    { waterlogged: false, type: 'single', facing: 'north' }
+  ],
+  [
+    Vec3 { x: 116, y: 38, z: 2234 },
+    { waterlogged: true, type: 'single', facing: 'north' }
+  ]
+]
+LOADED_LEAD spawner [
+  [ Vec3 { x: 123, y: -30, z: 2209 }, {} ],
+  [ Vec3 { x: 134, y: -38, z: 2272 }, {} ],
+  [ Vec3 { x: 209, y: -50, z: 2133 }, {} ],
+  [ Vec3 { x: 224, y: -15, z: 2139 }, {} ],
+  [ Vec3 { x: 201, y: -13, z: 2124 }, {} ],
+  [ Vec3 { x: 170, y: -13, z: 2099 }, {} ],
+  [ Vec3 { x: 166, y: -13, z: 2089 }, {} ]
+]
+LOADED_LEAD cobweb [
+  [ Vec3 { x: 166, y: -35, z: 2233 }, {} ],
+  [ Vec3 { x: 167, y: -36, z: 2229 }, {} ],
+  [ Vec3 { x: 168, y: -36, z: 2231 }, {} ],
+  [ Vec3 { x: 169, y: -35, z: 2234 }, {} ],
+  [ Vec3 { x: 169, y: -36, z: 2231 }, {} ],
+  [ Vec3 { x: 168, y: -37, z: 2229 }, {} ],
+  [ Vec3 { x: 170, y: -36, z: 2229 }, {} ],
+  [ Vec3 { x: 167, y: -38, z: 2231 }, {} ],
+  [ Vec3 { x: 172, y: -35, z: 2230 }, {} ],
+  [ Vec3 { x: 172, y: -35, z: 2232 }, {} ],
+  [ Vec3 { x: 168, y: -38, z: 2231 }, {} ],
+  [ Vec3 { x: 171, y: -35, z: 2225 }, {} ]
+]
+LOADED_LEAD bookshelf [
+  [ Vec3 { x: 165, y: -30, z: 2229 }, {} ],
+  [ Vec3 { x: 165, y: -30, z: 2231 }, {} ],
+  [ Vec3 { x: 165, y: -30, z: 2228 }, {} ],
+  [ Vec3 { x: 165, y: -30, z: 2232 }, {} ],
+  [ Vec3 { x: 165, y: -30, z: 2227 }, {} ],
+  [ Vec3 { x: 165, y: -30, z: 2233 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2229 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2231 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2228 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2232 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2227 }, {} ],
+  [ Vec3 { x: 165, y: -31, z: 2233 }, {} ]
+]
+THREATS [
+  [
+    11755,
+    'creeper',
+    Vec3 { x: 184.4872047666529, y: -27, z: 2219.7741393856363 },
+    20
+  ],
+  [
+    11756,
+    'creeper',
+    Vec3 { x: 176.18307327323555, y: -28, z: 2216.7494338953384 },
+    20
+  ]
+]
+LOCAL_SHELL [
+  [ Vec3 { x: 163, y: -27, z: 2230 }, 'obsidian' ],
+  [ Vec3 { x: 163, y: -26, z: 2230 }, 'nether_portal' ],
+  [ Vec3 { x: 163, y: -25, z: 2230 }, 'nether_portal' ],
+  [ Vec3 { x: 163, y: -24, z: 2230 }, 'nether_portal' ],
+  [ Vec3 { x: 164, y: -26, z: 2230 }, 'nether_portal' ],
+  [ Vec3 { x: 162, y: -26, z: 2230 }, 'obsidian' ],
+  [ Vec3 { x: 163, y: -26, z: 2231 }, 'air' ],
+  [ Vec3 { x: 163, y: -26, z: 2229 }, 'air' ]
+]
+== #5951 2026-10-17T07:56:12 p4 role=integration_operator iter=12 0.8 s
+const{Vec3}=require('vec3');let c,issue=null,steps=[];try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const before=c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]);for(const[name,k]of[['stone_pickaxe',1],['spruce_planks',7],['furnace',1],['coal',1]]){const i=c.containerItems().find(i=>i.name===name);if(!i||i.count<k)throw Error('MISSING_'+name);if(name==='stone_pickaxe'&&131-i.durabilityUsed<30)throw Error('PICK_BUDGET31');await c.withdraw(i.type,null,k);steps.push([name,k,i.durabilityUsed])}c.close();c=null;await bot.waitForTicks(4);return{before,steps,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),p:bot.entity.position,hp:bot.health,food:bot.food}}catch(e){issue=e.message;return{issue,steps,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),p:bot.entity.position,hp:bot.health}}finally{if(c)c.close();bot.clearControlStates()}
+-- returned --
+{"before": [["furnace", 1, null], ["spruce_sapling", 1, null], ["iron_pickaxe", 1, 247], ["stick", 1, null], ["gold_ingot", 1, null], ["gold_nugget", 6, null], ["ender_pearl", 8, null], ["sweet_berries", 6, null], ["coal", 1, null], ["spruce_planks", 7, null], ["arrow", 1, null], ["gravel", 6, null], ["wooden_shovel", 1, 0], ["spider_eye", 1, null], ["string", 1, null], ["stone_pickaxe", 1, 100]], "steps": [["stone_pickaxe", 1, 100], ["spruce_planks", 7, null], ["furnace", 1, null], ["coal", 1, null]], "own": [["stone_pickaxe", 1, 100], ["furnace", 1, null], ["coal", 1, null], ["spruce_planks", 8, null]], "p": {"x": 6.3, "y": 67, "z": 82.3}, "hp": 20, "food": 20}
+== #5952 2026-10-17T07:56:13 p4 role=integration_operator iter=12 0 s
+bot.chat("P3 actualBANKpick100 (~31uses), NOTselected71; receipt5946 bank100/own71 reconciled. Iaccept actual31-usebudget: column30,83 27cuts minus3HANDsand=24PICK +1FURNACE, PLANKroofsHAND nottool, preserve6uses. ActualP4borrow nowconfirmed100/PLANK7/FURNACE1/COAL1. No newtoolrequest. Needcurrentbodyswap: IamfrontLEFT6.3,82.3 now, movetoBACKLEFT6.3,83.7 thenpleaseyou FRONTLEFT6.5,82.3 tofreemyEastcross. No worldwritesuntilposesactual.")
+== #5950 2026-10-17T07:56:12 p1 role=experiment_owner iter=12 6.4 s
+const{Vec3}=require('vec3');const self=bot.entity,start=Date.now(),origin=bot.entity.position.floored();let issue=null;bot.clearControlStates();bot.pathfinder.setGoal(null);const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','sand','gravel'].includes(bot.blockAt(q)?.name),empty=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);function check(){if(bot.entity!==self||bot.game.dimension!=='overworld'||bot.health<8||Date.now()-start>30000)throw Error('LIFE_TIME')};async function tick(n){check();await bot.waitForTicks(n);check()};async function put(q){if(full(q))return;if(!empty(q))throw Error('PUT_KIND_'+q+'_'+bot.blockAt(q)?.name);let d=[[0,-1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,1,0]].map(a=>new Vec3(...a)).find(d=>full(q.plus(d)));if(!d)throw Error('REF_'+q);let it=bot.inventory.items().find(i=>['basalt','blackstone','netherrack'].includes(i.name));if(!it)throw Error('CAP_STOCK');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(2)}finally{bot.clearControlStates()}if(!full(q))throw Error('PUT_ACK_'+q)}async function move(q){for(let n=0;n<45;n++){check();let p=bot.entity.position;if(Math.hypot(p.x-q.x-.5,p.z-q.z-.5)<.09&&bot.entity.onGround){bot.clearControlStates();await tick(2);return}if(!full(q.offset(0,-1,0)))throw Error('FLOOR');await bot.lookAt(new Vec3(q.x+.5,p.y+1.4,q.z+.5),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick(1)}throw Error('MOVE_BOUND')}
+try{console.log('START',bot.entity.position,bot.health);for(let n of[1,2]){let q=origin.offset(0,0,n);if(!empty(q)||!empty(q.offset(0,1,0)))throw Error('BODY_GEOM');await put(q.offset(0,-1,0));await move(q)}let p=bot.entity.position.floored();for(let[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){let q=p.offset(x,0,z);await put(q.offset(0,-1,0));await put(q);await put(q.offset(0,1,0))}if(!full(p.offset(0,2,0))){await put(p.offset(1,2,0));await put(p.offset(0,2,0))}}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}const p=bot.entity.position.floored(),closed=[p.offset(0,-1,0),p.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[p.offset(x,0,z),p.offset(x,1,z)])].every(full);return{issue,p:bot.entity.position,hp:bot.health,food:bot.food,closed,dimension:bot.game.dimension,controls:bot.controlState};
+-- output --
+START Vec3 { x: 163.3, y: -26, z: 2231.8013762712258 } 12.510251998901367
+-- returned --
+{"issue": null, "p": {"x": 163.50232356900378, "y": -26, "z": 2233.5159681907153}, "hp": 12.510251998901367, "food": 17, "closed": true, "dimension": "overworld", "controls": {}}
+== #5953 2026-10-17T07:56:21 p3 role=continuity_owner iter=12 0 s
+bot.chat("P4 URGENTCORRECTION5946 actualBANKpick=STONE100wear(31uses), NOT71: c.deposit(type,null,1) chosefirstmatchingtool despiteourselector. Own71retained. Prior5948claim71wrong; doNOTuseuntilcorrectedreceipt. I correctEXACTslot now currentBANKstonewriterP3<=10s, wood7actualcorrect. P3safeinsideHEADSP/ROOFWARP/GATEclosed.")
+== #5954 2026-10-17T07:56:21 p3 role=continuity_owner iter=12 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let c,issue=null,trace=[];const n=(w)=>bot.inventory.items().filter(i=>i.name==='stone_pickaxe'&&i.durabilityUsed===w).reduce((s,i)=>s+i.count,0);try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const containerSlot=w=>c.window.slots.findIndex((i,k)=>k<c.window.inventoryStart&&i?.name==='stone_pickaxe'&&i.durabilityUsed===w);const ownSlot=w=>c.window.slots.findIndex((i,k)=>k>=c.window.inventoryStart&&k<c.window.inventoryEnd&&i?.name==='stone_pickaxe'&&i.durabilityUsed===w);const weak=containerSlot(100);if(weak>=0){await bot.clickWindow(weak,0,1);await bot.waitForTicks(6);trace.push(['EXACT_WEAK_WITHDRAW',weak,n(100),containerSlot(100)]);if(n(100)!==1||containerSlot(100)>=0)throw Error('WEAK_RECEIPT')}const strong=ownSlot(71);if(strong<0)throw Error('OWN_STRONG_SLOT');await bot.clickWindow(strong,0,1);await bot.waitForTicks(6);trace.push(['EXACT_STRONG_DEPOSIT',strong,containerSlot(71)]);if(containerSlot(71)<0||n(71)!==0)throw Error('STRONG_RECEIPT');}catch(e){issue=e.message}finally{if(c)c.close();bot.clearControlStates();bot.pathfinder.setGoal(null)}return{issue,trace,ownPicks:bot.inventory.items().filter(i=>i.name==='stone_pickaxe').map(i=>[i.count,i.durabilityUsed]),p:bot.entity.position,hp:bot.health,food:bot.food};
+-- returned --
+{"issue": "Cannot read properties of undefined (reading 'slots')", "trace": [], "ownPicks": [[1, 71]], "p": {"x": 7.34655124030638, "y": 67.5625, "z": 83.46232882529907}, "hp": 20, "food": 18}

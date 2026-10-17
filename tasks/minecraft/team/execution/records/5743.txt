@@ -1,0 +1,4 @@
+== #5743 2026-10-17T07:17:51 p4 role=integration_operator iter=12 0 s
+return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<35).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.metadata?.[8]]),players:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position])};
+-- returned --
+{"at": "2026-10-17T07:17:51.998Z", "p": {"x": 7.633809523476572, "y": 67.5625, "z": 83.4775562370152}, "hp": 14.926748275756836, "items": [[1641, {"x": 23.163963648642778, "y": 68, "z": 90.19585934544219}, "sweet_berries", {"present": true, "itemId": 1204, "itemCount": 2}]], "players": [["p3", {"x": 10.46820386937216, "y": 66, "z": 83.5001666590099}], ["p4", "[repeated reference]"], ["p2", {"x": 26.500039887352557, "y": 63, "z": 90.50005214354289}]]}

@@ -1,0 +1,110 @@
+program #5918 on p1: 6.2 s
+--- output ---
+BORE_ACTUAL [ 23, 8, 120 ] 20
+BORE_ACTUAL [ 22, 8, 120 ] 20
+BORE_ACTUAL [ 21, 8, 120 ] 20
+BORE_ACTUAL [ 20, 8, 120 ] 20
+CLOSED true
+--- returned ---
+{
+ "index": 120,
+ "issue": null,
+ "p": {
+  "x": 20.415530887182012,
+  "y": 8,
+  "z": 120.4999442461954
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "cuts": 8,
+ "moved": [
+  [
+   23,
+   8,
+   120
+  ],
+  [
+   22,
+   8,
+   120
+  ],
+  [
+   21,
+   8,
+   120
+  ],
+  [
+   20,
+   8,
+   120
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "obsidian",
+   10,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   0
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   591
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   7,
+   null
+  ],
+  [
+   "blackstone",
+   50,
+   null
+  ],
+  [
+   "netherrack",
+   35,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (20.4, 8, 120.5) in the_nether, health 20/20, food 20/20, alive

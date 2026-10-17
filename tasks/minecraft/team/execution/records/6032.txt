@@ -1,0 +1,4 @@
+== #6032 2026-10-17T08:26:15 p2 role=independent_operator iter=12 0 s
+return{p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item').map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count]),upper:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.y>64&&e.position.distanceTo(bot.entity.position)<12).map(e=>[e.id,e.name,e.position])};
+-- returned --
+{"p": {"x": 6.961970688413777, "y": 67.5625, "z": 83.48609160081672}, "hp": 20, "items": [[17888, {"x": 1.125, "y": 64, "z": 82.875}, "cobblestone", 1]], "upper": []}

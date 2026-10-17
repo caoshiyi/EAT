@@ -1,0 +1,15 @@
+== #5691 2026-10-17T07:13:41 p1 role=experiment_owner iter=12 0 s
+const{Vec3}=require('vec3');const eye=bot.entity.position.offset(0,1.62,0);let a=[];for(let x=8;x<=16;x++)for(let z=80;z<=88;z++)for(let y=63;y<=70;y++){let q=new Vec3(x,y,z),b=bot.blockAt(q);if(['sandstone','stone','cobblestone','granite','andesite','diorite'].includes(b?.name)&&q.offset(.5,.5,.5).distanceTo(eye)<4.4)a.push([q,b.name])}console.log('REACHABLE_HARD',a);console.log('PEERS',Object.values(bot.players).map(p=>[p.username,p.entity?.position]));
+-- output --
+REACHABLE_HARD [
+  [ Vec3 { x: 8, y: 66, z: 83 }, 'sandstone' ],
+  [ Vec3 { x: 8, y: 68, z: 83 }, 'sandstone' ],
+  [ Vec3 { x: 9, y: 66, z: 83 }, 'sandstone' ],
+  [ Vec3 { x: 14, y: 66, z: 84 }, 'stone' ]
+]
+PEERS [
+  [ 'p3', Vec3 { x: 9.491052860264231, y: 67, z: 83.47364511825974 } ],
+  [ 'p4', Vec3 { x: 6.3, y: 67.5625, z: 83.7 } ],
+  [ 'p1', Vec3 { x: 11.398573261079603, y: 67, z: 83.50071900104332 } ],
+  [ 'p2', Vec3 { x: 7.4906357367038305, y: 68, z: 91.5 } ]
+]

@@ -1,0 +1,9 @@
+# P4 failedreturn5903 / imminent boundedcorpseoperation — 07:48 UTC
+
+Actualcaller5903 workSTEP_THREAT at12.522,68,83.5; finallysetsretreat=true, walksbackbutmanual() **unconditionallythrowsSTEP_THREAT oncurrentORnextbody everytick**, regardlessretreat. Actualreturnstoppedmidstep10.5006,66.4200,83.5000/20HP/nohurtat07:44:51.574, closed/protectedEndfalse. ArenaZombieDEATH07:44:59at10.3,66,83.7. No uniqueclaimwhichspecificmobtriggeredoldguardorwhichpacketcauseddeath; only8sbetweenfailedendingreceiptanddeath.
+
+Currentnewlife5911/5914 camp6.5,67,82.5/20HP20food/PLANK1, noSHIELD/FOODkit. 5914 actual07:47:05 seesBERRY6entity8925 at11.875,67,83.184, COBBLE1entity8924 at8.881,65,90.274. SHIELDnotinvisibleentities/equipmentreceipt; absenceinthisloadedscanisnotproveddestroyed/recovered. Old07:46:30handoffcancelled4542/noextensionACK. Estimatedcorpseexpiry07:49:59 fromdeath+5min isestimate; actualitemexpiryserverloadedtimeunknown.
+
+Smallestsourcecorrectionfornextchosenoperation: givecurrentfallbackitsOWNfiniteendingstepcontract insteadofcallingunchangedworkguardthatvetoesallmovementwhenalreadythreatened. Do notjustdisableallthreatchecks: choosefreshsupportedshortending, retainHP/time/bodybounds andfailurereceipts. PriorP3pillar10,66,84 +bridge9,66,84 arefresh5914full; actualfeet/collision/hostilefirsthitmustbefreshforownerchosenpath. No unchangedlongdetourretry or inactiveoffhandasprotectionproof. Actualshieldoffhandslot45alone neverprovedblocking; oldcallerreturncleanupdidnotclaimprojectileblock.
+
+Forboundedcorpserecovery: actualchosenitempickupandclosedreturnwithincurrentremainingbudget, no first-lifecontinuityorSHIELDadoptioninferredfromnewHP20. Currentownerinspects/acts; specialistdoesnotrepair/approve/choosecombat. Adoptionpending; sourceanswerretiredonceownerhaschangedcurrentending, notnewframeworkproject.

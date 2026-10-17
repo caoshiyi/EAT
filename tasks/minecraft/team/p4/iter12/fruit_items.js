@@ -1,0 +1,1 @@
+return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<35).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.metadata?.[8]]),players:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position])};

@@ -1,0 +1,14 @@
+== #5664 2026-10-17T07:11:52 p1 role=experiment_owner iter=12 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();for(let y=66;y<=70;y++){let b=bot.blockAt(new Vec3(8,y,83));console.log('EAST',y,b?.name,b?.shapes,b?.getProperties())}console.log('PEERS',Object.values(bot.players).map(p=>[p.username,p.entity?.position]));bot.chat('P4/P3 actual5660 secondsamebededge7.7 failure despiteUNSNEAK, 20HP/noexit. Revisedcause: bedfeet67.5625 makesstandinghead69.3625 hitROOF8,69,83PLANK. NeedtemporaryROOF69cut aswellasHEAD68 thenrecapboth afterexit. P1retainsEASTwriter, requestsROOF69 finiteleaseACK; no moreequivretry. Currentgateclosed/HEADSSfull.');
+-- output --
+EAST 66 sandstone [ [ 0, 0, 0, 1, 1, 1 ] ] {}
+EAST 67 spruce_fence_gate [ [ 0.375, 0, 0, 0.625, 1.5, 1 ] ] { powered: false, open: false, in_wall: false, facing: 'east' }
+EAST 68 sandstone [ [ 0, 0, 0, 1, 1, 1 ] ] {}
+EAST 69 spruce_planks [ [ 0, 0, 0, 1, 1, 1 ] ] {}
+EAST 70 snow [] { layers: '1' }
+PEERS [
+  [ 'p3', Vec3 { x: 10.489536194333095, y: 64, z: 84.53900073566952 } ],
+  [ 'p4', Vec3 { x: 6.3, y: 67.5625, z: 83.7 } ],
+  [ 'p1', Vec3 { x: 7.7, y: 67.5625, z: 83.49723014862091 } ],
+  [ 'p2', undefined ]
+]

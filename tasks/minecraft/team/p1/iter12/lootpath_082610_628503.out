@@ -1,0 +1,302 @@
+program #6031 on p1: 37.1 s
+--- output ---
+BORE_ACTUAL [ 137, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 136, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 135, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 134, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 133, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 132, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 131, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 130, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 129, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 128, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 127, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 126, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 125, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 124, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 123, -38, 2244 ] 12.510251998901367
+BORE_ACTUAL [ 123, -38, 2245 ] 12.510251998901367
+BORE_ACTUAL [ 123, -38, 2246 ] 12.510251998901367
+BORE_ACTUAL [ 123, -38, 2247 ] 12.510251998901367
+WORK_BOUND_PARTIAL
+CLOSED true
+--- returned ---
+{
+ "planOrigin": [
+  138,
+  -38,
+  2244
+ ],
+ "planSize": 48,
+ "index": 18,
+ "issue": null,
+ "p": {
+  "x": 123.50093575394779,
+  "y": -38,
+  "z": 2247.608987971355
+ },
+ "hp": 12.510251998901367,
+ "food": 17,
+ "lost": false,
+ "cuts": 36,
+ "moved": [
+  [
+   137,
+   -38,
+   2244
+  ],
+  [
+   136,
+   -38,
+   2244
+  ],
+  [
+   135,
+   -38,
+   2244
+  ],
+  [
+   134,
+   -38,
+   2244
+  ],
+  [
+   133,
+   -38,
+   2244
+  ],
+  [
+   132,
+   -38,
+   2244
+  ],
+  [
+   131,
+   -38,
+   2244
+  ],
+  [
+   130,
+   -38,
+   2244
+  ],
+  [
+   129,
+   -38,
+   2244
+  ],
+  [
+   128,
+   -38,
+   2244
+  ],
+  [
+   127,
+   -38,
+   2244
+  ],
+  [
+   126,
+   -38,
+   2244
+  ],
+  [
+   125,
+   -38,
+   2244
+  ],
+  [
+   124,
+   -38,
+   2244
+  ],
+  [
+   123,
+   -38,
+   2244
+  ],
+  [
+   123,
+   -38,
+   2245
+  ],
+  [
+   123,
+   -38,
+   2246
+  ],
+  [
+   123,
+   -38,
+   2247
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   60,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   3,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "blackstone",
+   62,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "tuff",
+   25,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   0
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "cobbled_deepslate",
+   43,
+   null
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1217
+  ],
+  [
+   "basalt",
+   21,
+   null
+  ],
+  [
+   "netherrack",
+   59,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "blackstone",
+   10,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   41,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P3/P4 inside3CAP swaps FULL done; P2COFF1 only, pleaseBANKanyactualCOFFpickup. No openwall/no FIELD.
+p3: P2 ACK soleEASTexit writer NOW; P3holdsactualFRONTLEFT6.32,67,82.31 controlsfalse, no P3wallcuts. Your SS2actualpickup-beforegateopen thenexactrecap priority. BANKcaps SP1+GRAVEL2 areavailable (P3giftactual); takewhatneeded, no competingP3bootstrap. Please
+p3: BANKremaining2STICK andlater3COFF/Pick0forP3 whenactual, no newquota. IwillnotstallROD operator orfabricaterekit receipt.
+p4: P2/P3 actual6021 P2OFFHAND SHIELDvisible/20HP20food, donorown0; usableadoptionverified, no fieldhandoff. ACKP2 newinsidebootstrap WEST5,68,83 (myforgeleaseRELEASED) +yourselectedSouth/Westroof cells; currentFOOTfull/exactGRAVsupports+singlecellrecap receip
+p4: ts. FURNACE actualitem16204 fellWEST2.576,63,83.125, expiry~08:20:42; no safequickrecovery, NOTbankreturned/no chase. ToolSTONE126(5uses)+AXE64 BANKactual, P3GRAV2+yourDIRT1 existingcaps. WestPLANK1 remainsuntilyourcurrentwrite.
+p4: P1 usefulexistinglibrarycapability: IRONSword cutsCOBWEB→STRING1 each. If3currentwebs+your3STICKs+localtable/4OAKplanks, BOWcanbecraftedLOCALLY (avoidP3spiderhunt). BANK arrows5/feather6, P3GRAV2 canlater→FLINT2→8arrows oncecurrenttoolbootstrapends. Iwillc
+p4: hoosefiniteFOOD+arrowcourieraftertool/adoption, actualneedfood17/HP12.5 current. No queuedloot/stringcredit beforeyourreceipt.
+--- p1 now: (123.5, -38, 2247.6) in overworld, health 12.5/20, food 17/20, alive

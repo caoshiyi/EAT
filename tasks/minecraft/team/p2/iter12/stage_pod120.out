@@ -1,0 +1,129 @@
+program #5844 on p2: 30.7 s
+--- output ---
+COLUMN_RECEIPT Vec3 { x: -112, y: 63, z: -180 } { cobblestone: 2 } { cobblestone: 2 }
+COLUMN_RECEIPT Vec3 { x: -114, y: 63, z: -180 } { cobblestone: 2 } { cobblestone: 2 }
+STAGE_PLAN 310 401 10 4
+SHARED_EXACT_RECEIPT Vec3 { x: -121, y: 63, z: -180 } dirt
+ISSUE LINE_THREAT_[5210,"piglin",{"x":-198.143830243123,"y":58,"z":-175.46472744833528}] 393 Vec3 { x: -195.54799995980215, y: 63, z: -179.5000442510071 }
+--- returned ---
+{
+ "issue": "LINE_THREAT_[5210,\"piglin\",{\"x\":-198.143830243123,\"y\":58,\"z\":-175.46472744833528}]",
+ "start": 310,
+ "target": 401,
+ "current": 393,
+ "closed": true,
+ "sharedPending": false,
+ "shared": [
+  [
+   [
+    -119,
+    63,
+    -180
+   ],
+   "air"
+  ],
+  [
+   [
+    -119,
+    64,
+    -180
+   ],
+   "air"
+  ],
+  [
+   [
+    -121,
+    63,
+    -180
+   ],
+   "dirt"
+  ],
+  [
+   [
+    -121,
+    64,
+    -180
+   ],
+   "air"
+  ]
+ ],
+ "p": {
+  "x": -195.47012044868748,
+  "y": 63,
+  "z": -179.50004424474335
+ },
+ "hp": 20,
+ "food": 17,
+ "elapsed": 30700,
+ "combatTrace": [],
+ "placements": [
+  [
+   -121,
+   63,
+   -180,
+   "dirt"
+  ],
+  [
+   -195,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -195,
+   64,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   64,
+   -180,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   70
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "cobblestone",
+   5,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 temporaryFORGE FRONTLEFT6,67,82 only<=25s, P4bodybackRIGHT; FURNACE placedinside/onTABLE, no wall/roof/Egatecuts. Bankcourierfromoutside unaffected; no insidebodyonfrontuntilactualreclaim/release. RAWIRON1→SHIELD1 thenloanFURNACE/IRONbankrelease.
+p3: P1/P2 actual5842 courierSouthpod1.487,66,6.509 FULL20/OBS10+STEEL1 retained. SharedSbenchBLACK65/TABLE66/BASALT67 EXACT restored, HOMEflooruntouched, SOUTHwriter RELEASED. OldSouthroof68 wasAIR fromlastascent, actualnewroofWARP+WestheadWARP enclose; no inh
+p3: eritedFULLclaim. Northboundbridge58→East→North68 handoff now~2min.
+p4: P4 actualFORGEfront6,67,82 AIR/FURNACEown1/INGOT1, temporaryfrontwriterRELEASED; no wall changes. CraftSHIELD next, no deliverypromise untilBANKactual.
+--- p2 now: (-195.5, 63, -179.5) in the_nether, health 20/20, food 17/20, alive

@@ -1,0 +1,70 @@
+program #5860 on p1: 0.9 s
+--- output ---
+RECIPIENT_ACTUAL 10 1 PEER Vec3 { x: -46.50014996547368, y: 59, z: 68.50402804776998 } HEAD air BODY Vec3 { x: -46.45340598730829, y: 59, z: 70.50002558088033 } 20
+--- returned ---
+{
+ "obs": 10,
+ "steel": 1,
+ "recapped": true,
+ "issue": null,
+ "p": {
+  "x": -46.45340598730829,
+  "y": 59,
+  "z": 70.50002558088033
+ },
+ "hp": 20,
+ "food": 20,
+ "head": "basalt",
+ "peer": {
+  "x": -46.50014996547368,
+  "y": 59,
+  "z": 68.50402804776998
+ },
+ "inv": [
+  [
+   "basalt",
+   16,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   139
+  ],
+  [
+   "blackstone",
+   18,
+   null
+  ],
+  [
+   "netherrack",
+   19,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "obsidian",
+   10,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   0
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p3: P1 actual5855 courierNORTH68(-46.500,59,68.504) FULL20/OBS10+STEEL1 retained, privateyourWEST untouched/shared-20BASALT2 exactrestored. HEAD-onlyTABLE(-47,60,69) cut/tossSOUTH NOW<=8s; FOOT59SS staysfull, mybody68neverenters69. Afteryouractualinventory10+1
+p3: , restoreHEAD60 BASALT1 soleP1writer; thenbothpodsFULLending.
+--- p1 now: (-46.5, 59, 70.5) in the_nether, health 20/20, food 20/20, alive

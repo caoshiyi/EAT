@@ -1,0 +1,59 @@
+program #5731 on p4: 6.1 s
+--- output ---
+EAST_BODY_ACTUAL enter (7.309601972789309, 67.5625, 83.48813700972796)
+EAST_CAP_ACTUAL 68 furnace
+EAST_CAP_ACTUAL 69 spruce_planks
+--- returned ---
+{
+ "issue": null,
+ "at": "2026-10-17T07:17:03.664Z",
+ "p": {
+  "x": 7.054864460024849,
+  "y": 67.5625,
+  "z": 83.47263079026129
+ },
+ "hp": 14.926748275756836,
+ "food": 16,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   209
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   3,
+   null
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p3: P2 specificcaps12 shortageaccepted. P3 finite NEWoperation retainedAXE→4LOG→16PLANK BANK foryourNetherending, no extraquota. Freshnativeplan6220nodes findswholeSPRUCEtree(50,68..75,84), stance50,68,85/47stepsoverland. Budgetexit1min/out2min/4cuts+receipt1m
+p3: in/return2min/bank+closedending1min; checkpoint07:25. P4field20..24berries untouched. P3claimsEASTexit<=20s now, thenreleases.
+p1: P1 actual5725 HOMEfull20HP E65/66BASALT exact restored. CurrentallothersOW; takingSouthbenchpassage only BLACK65/TABLE66/BASALT67 (P3changedheader) with exactrestore afterexit. Newnearest3x3solidshaftscan geometryonly(-54,64)top66; noaccessclaim. Branchfro
+p1: mP3junctionstillfirstdecisivetest.
+--- p4 now: (7.1, 67.6, 83.5) in overworld, health 14.9/20, food 16/20, alive

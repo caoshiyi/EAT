@@ -1,11 +1,19 @@
-# Review — 2026-10-17T06:55:43.867780+00:00
+# Iteration12 review — 2026-10-17 08:58 UTC
 
-Official review0655_eval.txt: **dragon=0, milestones=9/12, deaths=100, programs=5511, restarts=1**. This iteration+562programs/+4deaths/no milestone. Current deadline07:04:50UTC, about ten minutes remain. Continue useful authorized work; final world check at deadline.
+Officialreview0858_eval dragon0/milestones10/deaths104/programs6171/restarts1. +571programs/+3deaths/+1milestone from5600/101/9; +76programs/no death/milestone since08:48. Deadline09:07:51UTC runner1792228071, nine minutesremain. Continueuntilverifiedstop, no victory/earlyfinal.
 
-P2's firstOBS operation injured it; seven-block changed operation retained but failedreturn, then actual5458 manual return bankedtotal8. Food delivery was actuallyreceived/consumed, health9.83→20. RemainingtwoOBS are nowcarried in active return5504; no bank10receipt yet. P4 actuallycrafted andbanked P1's newdiamondpick; donorown0 and P1receiptpending. P1newSTEEL actual5489, currentnativeFULL63/20HP, returningcamp foractualmaterial/tool; no newportal orNetherprobe proved.
+P2finallydepartedactualfreshSTONE/AXE/SHIELD kitafter6092 firstworkingtool/bodyending. GiftCOFF4+WOODloanactualUPPERreceipt6119, ownnewbridge/currentpersonalFULL; FOOD2ordinarywithdraw/use healed12.167→14.567. CurrentNetherroute6169 reaches-114.5,63,-178.5/FULL, COLUMN_WALK_RECEIPT negative/STONE74/caps3+DIRT3, no actualRodcontact. OldDIA/SNOWtemplatecorrectedbyP3andP2; no fictionalcapacity. Actualremainingroute/method/retention/endingmustfit09:07:51; no promisefiveRods/deliveryfromoutboundalone.
 
-P3actual5491 lowerNative pickup PEARL4→5/FULL20HP; bank3separate. Actual5509 nowmovingfromfarm onreturnleg, no handoff yet. HighcanopyNO_VISIBLEloops andnewtools didnotbecomeextraquantity; changedlowercase did. Complete currentretention/beneficialending within deadline, notplannedbankcount.
+P1BOW1+spawnBEDactualserver“Respawn point set”6124; currentlyarmored/12.510HP16food. LocalEnderchasechangedIDs/vanishedtarget/wrongheight80cellrouteREJECTED; no killed/pearl. Returnedprotectedand6171 currentstandingcellclosureactualafter6170 bookshelves/bedkindfailure. Portal10empty/Bank8short2 stillunresolved/Endinactive.
 
-P4food5451 retainedfive, actualrecipientP2healingproved. Oldportalhelper expectedgate butcurrent6,68,90AIR; actual5506 GATE_KIND_air andfailedreturn/protectedfalse/14.37HP at11.57,67,85.06. Dirtpillar10,66,91 isnewworldstate. No Nethertransition yet. Currentbodyendingandremainingstockmustbeverifiedbeforeanynewprobe; cannotinheritportalroomclosure/materials. Nameddiagnosis isnotpermissiontoignorephysicalarrival.
+P4fieldfoodP1courierRELEASEDbasedP1measured10minretrieval/returncouldn'tfit09:03ETA; goodwholeendingbudgetdecision, nophantompacket. ChangedfoodP2actualexisting2berriesadopted, no laterfieldfoodpromised. Currentcamprepairfull6134 thenOUT+INsmoke6154 causedroof69missing/SOLID_CAP_STOCK. P3exactDIRT1donation6167 suppliesfinalcap, actualP4placementstillpendinginlatestreceipt. Insidehealth20notfullhullproof; no morezeroreserveattempt.
 
-Latest evidence: actualmaterialchainnowmostlyretained, but no access milestone/rod/eye. Repeated return/classification/admission failures and preparations delayed objective; fixes mustreachwholechosenoperation. Allfourremainassigned withactualendingsfirst. Nextcheck07:00/preclose, finalofficial07:04:50; no early stop orprematurevictory. Rootnonplaying, no validpeerIDs/tokensavailable. Rawreceipts/failedendings preserved.
+Criticalupperbankretention6084 verifiedPEARL0→8/food2/gold/string/arrow5, own0; lowerbankgonecauseunassigned. CurrentP3/P4safeinside, P3conditionalHOME8PearlcourierreleasedbyP2ROD0, no blindclosingtravel. ActualP2donorloan/bodyendingsverified; oldgatecrossingretired/newDEEPSLATElanding+bridgeactual, freshcellsgovern.
+
+Experimentoutcome-so-far: earlycompleteintegrationreachednewStrongholdmilestone; afterdeaths/coupledphysicalinterfaces/toolpickupfailures criticalRodoperationonlydepartedwith~13minleft. Repairs/materialproductionagainconsumedcriticalpathdespitemanycorrectedreports/boardreassignments. Source/scan/recipe/craft/adoption/ending/officialprogressseparate. Rootframe-reviewmissandtruncatedchatmonitoringdelayedreconciliation; cursor+frameaggregatefixesactualtested, notworldprogress. No rootprograms/spawns/identitybypass; tokenusageunavailable.
+
+Nextverificationpreclose~09:04 andfinal09:07:51. Keepactualcarried/storage/worldassetsandunfinishedstagesfreshinmemory; no earlystop.
+
+
+## Verified deadline closing — 2026-10-17T09:07:52.159436+00:00
+Current runner deadline09:07:51UTC reached; stop condition verified. Final world evaluator: **dragon=0, milestones=10/12, deaths=104, programs=6227**. Closing read-only player/event receipts: mission/iter12/final_status.txt and final_events.txt; exact command statuses/provenance final_meta.json. Objective remains unachieved unless dragon=1; no report-based victory. No player programs run by coordinator. Token usage unavailable from permitted authoritative evidence.

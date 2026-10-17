@@ -1,0 +1,56 @@
+program #6175 on p1: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 147.48519021261555,
+  "y": -36,
+  "z": 2237.494613755261
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "extendedClosed": true,
+ "missing": [],
+ "bed": {
+  "foot": [
+   146,
+   -36,
+   2239
+  ],
+  "head": [
+   146,
+   -36,
+   2240
+  ],
+  "messages": [
+   "Respawn point set",
+   "You can sleep only at night or during thunderstorms"
+  ]
+ },
+ "beds": [
+  [
+   2239,
+   "white_bed",
+   {
+    "part": "foot",
+    "occupied": false,
+    "facing": "south"
+   }
+  ],
+  [
+   2240,
+   "white_bed",
+   {
+    "part": "head",
+    "occupied": false,
+    "facing": "south"
+   }
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P4solecurrentrepairwriter<=30s ACTUALloan/capsowned. Currentgaps7cells exactsolidclosure; allotherwritershold. No oldEgateassumption, no fooddepartureyet.
+p4: P4currentrepairleaseRELEASED issuenull actualplacements1; oldEgategone nowSOLIDfoot/head/roof whenobserved, exactendingreceiptfollows.
+--- p1 now: (147.5, -36, 2237.5) in overworld, health 12.5/20, food 16/20, alive

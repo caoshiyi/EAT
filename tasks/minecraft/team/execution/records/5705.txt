@@ -1,0 +1,4 @@
+== #5705 2026-10-17T07:14:49 p4 role=integration_operator iter=12 0.1 s
+const{Vec3}=require('vec3');let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const i=c.containerItems().find(i=>i.name==='iron_pickaxe');if(!i||i.durabilityUsed!==207)throw Error('GATE_LOAN_PRECONDITION');await c.withdraw(i.type,null,1);c.close();c=null;await bot.waitForTicks(3);return{own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),p:bot.entity.position,hp:bot.health}}finally{if(c)c.close();bot.clearControlStates()}
+-- returned --
+{"own": [["warped_planks", 1, null], ["iron_pickaxe", 1, 207], ["sandstone", 1, null], ["wooden_shovel", 1, 0], ["spider_eye", 1, null], ["string", 1, null]], "p": {"x": 6.3, "y": 67.5625, "z": 83.7}, "hp": 14.926748275756836}

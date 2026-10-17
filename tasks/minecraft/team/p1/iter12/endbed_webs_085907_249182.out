@@ -1,0 +1,162 @@
+program #6179 on p1: 38.6 s
+--- output ---
+STRING_ACTUAL 2 Vec3 { x: 148, y: -34, z: 2237 }
+STRING_ACTUAL 2 Vec3 { x: 149, y: -34, z: 2238 }
+STRING_ACTUAL 4 Vec3 { x: 148, y: -33, z: 2236 }
+STRING_ACTUAL 4 Vec3 { x: 148, y: -33, z: 2234 }
+STRING_ACTUAL 5 Vec3 { x: 149, y: -34, z: 2233 }
+STRING_ACTUAL 7 Vec3 { x: 149, y: -34, z: 2232 }
+STRING_ACTUAL 8 Vec3 { x: 144, y: -34, z: 2234 }
+STRING_ACTUAL 8 Vec3 { x: 144, y: -34, z: 2235 }
+STRING_ACTUAL 9 Vec3 { x: 139, y: -33, z: 2234 }
+STRING_ACTUAL 10 Vec3 { x: 138, y: -33, z: 2233 }
+STRING_ACTUAL 10 Vec3 { x: 138, y: -33, z: 2236 }
+STRING_ACTUAL 10 Vec3 { x: 137, y: -33, z: 2236 }
+STRING_ACTUAL 11 Vec3 { x: 137, y: -34, z: 2232 }
+STRING_ACTUAL 12 Vec3 { x: 140, y: -34, z: 2238 }
+STRING_ACTUAL 13 Vec3 { x: 142, y: -33, z: 2238 }
+STRING_ACTUAL 15 Vec3 { x: 144, y: -34, z: 2239 }
+NO_ACCESSIBLE_LOW_WEB
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 144.49710116520546,
+  "y": -36,
+  "z": 2238.5065119677442
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 15,
+ "oak": 0,
+ "cuts": 18,
+ "moves": 36,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "string",
+   15,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   1,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   56
+  ],
+  [
+   "cobbled_deepslate",
+   19,
+   null
+  ],
+  [
+   "basalt",
+   54,
+   null
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   55,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1412
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   62,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P1 current6169 FULLoffroute(-115,63,-179) HP14.567; capsulepickupshortfall movedending, 120untouched/leaseNOTused. Need finite220 EAST219,63/64,-180 BASALT2 entry→ordinarypickup→center220→exactE2recap/FULL→release, WEST221untouched. ACKplease; no broadrese
+p2: rve. Nowreclaimownshell and120cross ACK, 220targetwithin~60s. ROD0, deadline9:07:51.
+--- p1 now: (144.5, -36, 2238.5) in overworld, health 12.5/20, food 16/20, alive

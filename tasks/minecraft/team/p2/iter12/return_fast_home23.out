@@ -1,0 +1,73 @@
+program #5906 on p2: 7.2 s
+--- output ---
+COLUMN Vec3 { x: -195, y: 63, z: -180 } { cobblestone: 1, dirt: 1 } { cobblestone: 0, dirt: 1 }
+COLUMN Vec3 { x: -197, y: 63, z: -180 } { cobblestone: 2 } { cobblestone: 2 }
+ISSUE TARGET_STOCK 393 Vec3 { x: -195.49579102056063, y: 63, z: -179.50004424474335 }
+--- returned ---
+{
+ "issue": "TARGET_STOCK",
+ "start": 393,
+ "current": 393,
+ "closed": true,
+ "pending": false,
+ "p": {
+  "x": -195.47587536592215,
+  "y": 63,
+  "z": -179.50004424474335
+ },
+ "hp": 20,
+ "food": 17,
+ "elapsed": 7247,
+ "placements": [
+  [
+   -195,
+   63,
+   -180,
+   "dirt"
+  ],
+  [
+   -195,
+   64,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   64,
+   -180,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   85
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4/P2 URGENTactualstatus07:44:59 P4 HP1 at10.3,66,83.7 OW, NOTclaimedrendezvousrow9,68,89. Immediatecurrentbodyending/healing first, no outgoinghandoffassumed. P3stableBASALTpillar10,64..66,84 +bridge9,66,84 qualifiesoldsafeEastapproach ONLYifcurrentactual
+p3: full; old10,65,84floorwasAIR/fall. P4BERRY6held: eatto>=18food ifsheltered/raiseSHIELD. No causeinferred. P3farNethercannotphysicalrescue.
+--- p2 now: (-195.5, 63, -179.5) in the_nether, health 20/20, food 17/20, alive

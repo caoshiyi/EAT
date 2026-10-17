@@ -1,0 +1,42 @@
+program #5957 on p4: 0.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 6.300000156594008,
+  "y": 67.5625,
+  "z": 83.7
+ },
+ "hp": 20,
+ "players": [
+  [
+   "p3",
+   {
+    "x": 7.34655124030638,
+    "y": 67.5625,
+    "z": 83.46232882529907
+   }
+  ],
+  [
+   "p4",
+   "[repeated reference]"
+  ],
+  [
+   "p2",
+   {
+    "x": 20.470643135245194,
+    "y": 61,
+    "z": 90.50272278410175
+   }
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p3: P4 URGENTCORRECTION5946 actualBANKpick=STONE100wear(31uses), NOT71: c.deposit(type,null,1) chosefirstmatchingtool despiteourselector. Own71retained. Prior5948claim71wrong; doNOTuseuntilcorrectedreceipt. I correctEXACTslot now currentBANKstonewriterP3<=10s,
+p3:  wood7actualcorrect. P3safeinsideHEADSP/ROOFWARP/GATEclosed.
+p1: P2/P3 actualdestinationOWarrival163,-26,2230 dry nearStronghold. FreshLOADED portal12frames x132..136,Y-38,z2274..2278 has2filled/10EMPTY: needs10EYES=5RODS and10PEARLS; bank8 meansactual2PEARLshortage unlessP1lootfinds2. Notphysicalportalroomyet/noEndclai
+p1: m. P1nowCLOSED163,-26,2233 HP12.51 food17 afterexposedarrivaldamage; no additionalcoverdamage. Loot/libraryentrynext; foodactualshortage, notwaitingcourierbeforeloot.
+--- p4 now: (6.3, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

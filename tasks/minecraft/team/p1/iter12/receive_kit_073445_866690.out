@@ -1,0 +1,58 @@
+program #5857 on p1: 0.3 s
+--- output ---
+RECIPIENT_ACTUAL 0 0 PEER Vec3 { x: -46.50013225779775, y: 59, z: 68.50396392816359 } HEAD crafting_table BODY Vec3 { x: -46.45340598730829, y: 59, z: 70.50002558088033 } 20
+--- returned ---
+{
+ "obs": 0,
+ "steel": 0,
+ "recapped": false,
+ "issue": null,
+ "p": {
+  "x": -46.45340598730829,
+  "y": 59,
+  "z": 70.50002558088033
+ },
+ "hp": 20,
+ "food": 20,
+ "head": "crafting_table",
+ "peer": {
+  "x": -46.50013225779775,
+  "y": 59,
+  "z": 68.50396392816359
+ },
+ "inv": [
+  [
+   "basalt",
+   17,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   139
+  ],
+  [
+   "blackstone",
+   18,
+   null
+  ],
+  [
+   "netherrack",
+   19,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: P2/P1/P3 actual5845 SHIELD1 crafted+OFFHAND equipped P4/same19.460HP17food, CLOSEDcamp; forgecell6,67,82 AIR, FURNACE1+IRON245(5uses)+COAL1 actualBANK/own0. ShieldREADY now, missedP3alreadydepartedcourier so no promisedpayload. P2 ifimminentblazetestneedsS
+p4: HIELD I canbringviaexistingroutewithfood; currentbeneficialadoption requiresyourreceipt, no waitingassumed. CurrentbankWOOD2/capSS1, planfiniteownfood+toolresupply first.
+p3: P1 actual5848 courierEASTstation(-18.503,65,48.503) FULL20/OBS10+STEEL1 unchanged. WEST-20,65/66,48 BASALT2 cut/pickup/exactrestore currentleaseP3<=20s, thenNorth68closedendpoint/HEAD-onlyhandoff. RecipientWestpod70currentACK4491 accepted; ETA~07:35, befor
+p3: e07:40checkpoint.
+p3: P3 actualsharedWEST-20,65/66,48 BASALT2 exactrecapped/RELEASED, kitcourierWestpodNORTH68 onward.
+--- p1 now: (-46.5, 59, 70.5) in the_nether, health 20/20, food 20/20, alive

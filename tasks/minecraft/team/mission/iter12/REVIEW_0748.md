@@ -1,0 +1,17 @@
+# Iteration12 review — 2026-10-17 07:48 UTC
+
+Officialreview0748_eval dragon0/milestones9/deaths102/programs5917/restarts1. Iteration+317programs/+1death/no milestone; since07:38+40programs/+1death. Deadline09:07:51 currentrunner1792228071, ~80minremain. No victory/earlystop.
+
+P4ZombieDEATH07:44:59 at10.3,66,83.7 verifiedevents+evaluator. Actual5903 shieldhandoffSTEP_THREAT outbound, sameguardblockedretreat, endedexposed10.5006,66.42,83.5/20HP07:44:51, death8slater. SHIELDoffhand+FOOD6/caps remainedcarried/no toss/adoption. Latercamp20HP/20food/PLANK1 isrespawn. Chat4537 falselycalledrendezvousbeforewalk; owner4542 correctlycanceled/currentlife, no recoveryproof. P3HP1alertwaspredeath. Rootdoesnotassertdespawn/recovery/causebeyondZombiedeathtargetevent. Proposedboundedrecoveryownerchosen; noautomaticrekit. P2extensionrequesthasnoactualsupplysupport.
+
+Twoearlycompleteintegrationsremainreal: P3pearlsbank8/ending07:14; P3criticalkit→P1recipient5860/recap+P3FULL5861 ending07:35. CriticalP1OBS10/STEELcarriedseparatefromP4loss. Earlyproductionandreceiptimproved, butlaterjourneyfailureconvertedshieldoperationtodeath/noadoption.
+
+P1actualLOWrouteprogressnow20.4,8,120.5/20HP/DIA591/kitretained. Newlavaenvelope5880 causeddetour; changedbore5891/5897 thenMOVE_BOUND5909/full20, changed5918 fourcells6.2s/full20. Firstdestination/portal07:48MISSED; focuseddecision07:50 mustpriceallremainingstagesorchangeoperation, notjustcontinueunpricedbatches. Noportal/strongholdproof.
+
+P2actual5874 widehullclosed20resolvedentitycapincident; firstrodmethod07:35MISSED/no contact. Shieldshortagecurrentcrossbowexposurewasnamed4524, existingP4shieldintegrationACK4531; senderdeathcanceledbeforehandoff. Return5898 reserve-veto/full20; actualnew5916 progressedto(-89,63,-140) by07:48, notmerechatintent. Needchangedrodoperation/wholebudget07:52 withactualintegrationmargin; original08:45bankleavesonly22m51stotal. Newfood/shieldproductionwouldrepeatsamepreparationcycleunlessactualmethodtestjustifies.
+
+P3optionalONEpearlpossibleframegapremainedunjustifiedbyimminentshortage; 5890 NO_VISIBLE_TARGET/0swings/0pearl thenchoseRETURN07:42, actual5917 HOMEfull20/food17. No9bankclaim orunchangedspawnwait. Directrod-alternativeassignmentunACKed; newforge/Endgearstockinspectionisn'tactualrodprogress. P4directEnd-accessassignmentalsoledtostocktripratherthanfirsttest. RootboardpublicationnotACK; currentboardrewriteexplicitcurrentassignments/budgets, noavailablepeerfollowupIDs. Allfourrecentlylive/no spawning/replacements/rootprograms.
+
+Importantfreshnesscorrectionpreserved: P4ACK07:42:33 precededroot07:43“latestchatnoACK”basedsnapshot07:42:27; rootcorrectednonnonresponse/no causalcredit. Timecriticalclaimsnowdirectchatchecked. Correctedreportsdon'tsupplyexecutionprogress.
+
+Nextreview07:58; currentdecisionsP1remainingportalbudget07:50/P2-P3-P4changedoperations07:52/firstindependentcases08:00. Officialobjectiveunmet.

@@ -1,0 +1,135 @@
+program #5873 on p3: 4.6 s
+--- output ---
+ACTUAL -47,59,69 2910
+ACTUAL -47,59,70 3461
+--- returned ---
+{
+ "caller": "iter12_out_bridge",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -46.50014977129687,
+  "y": 59,
+  "z": 70.50755411253283
+ },
+ "hp": 20,
+ "food": 18,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -47,
+   59,
+   69
+  ],
+  [
+   -47,
+   59,
+   70
+  ]
+ ],
+ "elapsed": 4612,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "stone_hoe",
+   1,
+   18
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   61
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   60
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   48
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-46.5, 59, 70.5) in the_nether, health 20/20, food 18/20, alive

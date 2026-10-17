@@ -1,0 +1,61 @@
+program #6098 on p2: 1.8 s
+--- output ---
+ISSUE TABLE_RECEIPT Vec3 { x: 33, y: 65, z: 88 } Vec3 { x: 33.50129159118076, y: 65, z: 88.4653898682635 }
+--- returned ---
+{
+ "issue": "TABLE_RECEIPT",
+ "closed": true,
+ "p": {
+  "x": 33.50129159118076,
+  "y": 65,
+  "z": 88.4653898682635
+ },
+ "hp": 12.166664123535156,
+ "food": 17,
+ "stock": 1,
+ "cells": 0,
+ "placements": [
+  [
+   33,
+   67,
+   88,
+   "dirt"
+  ]
+ ],
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 actual6093 BOW1 crafted, TABLE roof146,-34,2240 secondlibrary. FULL12.510HP17food unchanged, food0/no arrows. Testing12STRING spawnBED now, 76loadedweb potential. Critical10Eyes=5RODS+10PEARLS (BANK8, gap2). P4 FOOD courier useful onlyif fullroundtrip09
+p1: :07:51; shafttop59 empty toY10, Westpod handoff requires P1 return, NOT direct shaft descent.
+--- p2 now: (33.5, 65, 88.5) in overworld, health 12.2/20, food 17/20, alive

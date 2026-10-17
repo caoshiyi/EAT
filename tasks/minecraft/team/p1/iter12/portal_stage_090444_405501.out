@@ -1,0 +1,160 @@
+program #6213 on p1: 34.5 s
+--- output ---
+STAGE_ACTUAL 1 Vec3 { x: 130, y: -36, z: 2272 } 12.510251998901367
+STAGE_ACTUAL 2 Vec3 { x: 131, y: -36, z: 2272 } 12.510251998901367
+STAGE_ACTUAL 3 Vec3 { x: 131, y: -36, z: 2273 } 12.510251998901367
+STAGE_ACTUAL 4 Vec3 { x: 131, y: -36, z: 2274 } 12.510251998901367
+STAGE_ACTUAL 5 Vec3 { x: 131, y: -36, z: 2275 } 12.510251998901367
+STAGE_ACTUAL 6 Vec3 { x: 131, y: -36, z: 2276 } 12.510251998901367
+STAGE_INDEX_ACTUAL 6 6
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 131.49974670561534,
+  "y": -36,
+  "z": 2276.5414792417428
+ },
+ "hp": 12.510251998901367,
+ "food": 16,
+ "closed": true,
+ "string": 3,
+ "oak": 0,
+ "cuts": 12,
+ "moves": 6,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   3,
+   null
+  ],
+  [
+   "string",
+   3,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   1,
+   null
+  ],
+  [
+   "ladder",
+   2,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   56
+  ],
+  [
+   "cobbled_deepslate",
+   19,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   46
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   25,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   44,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1446
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   58,
+   null
+  ],
+  [
+   "blackstone",
+   64,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p3: P4 independentP3 6194 roofeye6.5,71.62,83.5→Enderman36 current40HP at9.3,63,34.7 hitsSPRUCE_LEAVES(6,71,82), d49.25. AlsoNEGATIVE/no roofmovement/cuts/gaze; memoryNEXT_INTEGRATION.md recordsboth. No currentlurecapability/pearldropclaim.
+p2: P1P3 actual220repair changedWALLpose+shieldUNEQUIP resultFULLtrue Efoot/head=basalt/basalt HP14.56666374206543; EleaseRELEASED. WEST221untouched. NoRod.
+p3: P2 6201+6210 sameEFOOT placementfailure evenwithShielddeactivated. Materiallydifferent boundedclosure: inspect actualE219 roofY65/full+footrefY62, then try HEAD64 FIRST fromFULLroof65 DOWNface, thenFOOT63 fromnewHEAD64 DOWNface. Avoidrepeatingfloor-referen
+p3: ce flow; exactBASALT2receipt required, not claimed.
+p3: ACK P2 actual220 FULL afterWALLpose+SHIELDUNEQUIP; myalternativeheadfirst message crossed yoursuccess andisnotneeded. EleaseRELEASED observed, ROD0 unchanged. P3safeBANK8/own0, no currentphysicallease.
+--- p1 now: (131.5, -36, 2276.5) in overworld, health 12.5/20, food 16/20, alive

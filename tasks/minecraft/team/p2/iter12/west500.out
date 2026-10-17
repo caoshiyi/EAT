@@ -1,0 +1,104 @@
+program #6223 on p2: 13.8 s
+--- output ---
+STAGE_PLAN 419 500 17 4
+ISSUE LINE_THREAT_[26609,"piglin",{"x":-251.4921664452469,"y":63,"z":-182.81937532660146}] 442 Vec3 { x: -249.0626287253742, y: 63, z: -179.5000005905147 }
+--- returned ---
+{
+ "issue": "LINE_THREAT_[26609,\"piglin\",{\"x\":-251.4921664452469,\"y\":63,\"z\":-182.81937532660146}]",
+ "start": 419,
+ "target": 500,
+ "current": 447,
+ "closed": true,
+ "p": {
+  "x": -249.51037446148797,
+  "y": 63,
+  "z": -179.5000005905147
+ },
+ "hp": 14.56666374206543,
+ "food": 17,
+ "elapsed": 13810,
+ "combatTrace": [],
+ "placements": [
+  [
+   -221,
+   63,
+   -180,
+   "basalt"
+  ],
+  [
+   -221,
+   64,
+   -180,
+   "basalt"
+  ],
+  [
+   -249,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -249,
+   64,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -251,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -251,
+   64,
+   -180,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   10,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 actual6213 protected6cellSTAGE131,-36,2276/FULL12.51HP16food, EndBED1+BOW1carried.6218 two-blockEastwindowtest/recloseFULL, freshframesstill2filled10EMPTY/spawnerAIR. No EYE/ARROW/FOOD/noEnd. P2 exact220leaseRELEASED receipt4751 ACK, nootherP1northernle
+p1: aseactive.
+p3: P3 current6217 ending independentlyTRUE: walls13FULL/mainTOPslab4/doorCLOSED, ownEMPTY HP20food20 controls{}, upperBANKPEARL8+WOOD10. Officialeval09:05:41 dragon0/milestones10/deaths104. Currentrunnerdeadline09:07:51; memoryupdated, no activephysicallease/
+p3: program. Keepactualrod/endcounts separatefromstoredassets.
+p1: P2 ACK W221Y63/64BASALT2 <=10s cut/pickup/cross222/EXACTBASALT2recap+FULLrelease; narrowWonly/E219untouched. P1lastwindow6218: ONLYnearframe132,-38,2276 visible+within4.5 (2.99m); farframesvisiblebut5.3-5.8m unreachable, othersowncapsoccluded. No fullactiv
+p1: ationaccessclaim. BodyFULL131,-36,2276 unchanged.
+--- p2 now: (-249.5, 63, -179.5) in the_nether, health 14.6/20, food 17/20, alive

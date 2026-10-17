@@ -1,0 +1,402 @@
+program #5875 on p3: 36.4 s
+--- output ---
+ALL_FIVE_END_OR_REVERSE_CAPS 11
+ACTUAL -47,59,71 8099
+ACTUAL -47,59,72 8651
+ACTUAL -47,59,73 9151
+ACTUAL -47,58,74 9853
+ACTUAL -48,58,74 10354
+ACTUAL -48,57,75 11005
+ACTUAL -49,58,75 11658
+ACTUAL -50,59,75 12460
+ACTUAL -50,59,76 12964
+ACTUAL -51,58,76 13666
+ACTUAL -52,58,76 14215
+ACTUAL -53,58,76 14717
+ACTUAL -53,57,77 15418
+ACTUAL -53,56,78 16120
+ACTUAL -54,57,78 16711
+ACTUAL -55,57,78 17211
+ACTUAL -56,56,78 17961
+ACTUAL -57,55,78 18711
+ACTUAL -58,54,78 19412
+ACTUAL -59,54,78 19965
+ACTUAL -60,54,78 20467
+ACTUAL -61,54,78 21017
+ACTUAL -62,55,78 21618
+ACTUAL -62,54,79 22320
+ACTUAL -63,54,79 22821
+ACTUAL -64,54,79 23372
+ACTUAL -64,53,80 24072
+ACTUAL -65,53,80 24524
+ACTUAL -66,53,80 25124
+ACTUAL -67,53,80 25624
+ACTUAL -68,54,80 26225
+ACTUAL -69,53,80 26976
+ACTUAL -70,53,80 27527
+ACTUAL -71,53,80 28026
+ACTUAL -72,53,80 28577
+ACTUAL -73,53,80 29079
+ACTUAL -74,52,80 29781
+ACTUAL -75,52,80 30382
+ACTUAL -75,53,79 30986
+ACTUAL -75,53,78 31486
+ACTUAL -76,52,78 32239
+ACTUAL -77,52,78 32839
+ACTUAL -78,52,78 33338
+ACTUAL -79,53,78 33941
+ACTUAL -80,54,78 34742
+ACTUAL -81,54,78 35243
+HELD_RECOVERY_SUB Vec3 { x: -80, y: 54, z: 78 } dirt warped_planks
+HELD_RECOVERY_SUB Vec3 { x: -80, y: 55, z: 78 } dirt warped_planks
+--- returned ---
+{
+ "caller": "iter12_out_west",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -80.45323518449143,
+  "y": 54,
+  "z": 78.49986630628783
+ },
+ "hp": 20,
+ "food": 18,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -47,
+   59,
+   71
+  ],
+  [
+   -47,
+   59,
+   72
+  ],
+  [
+   -47,
+   59,
+   73
+  ],
+  [
+   -47,
+   58,
+   74
+  ],
+  [
+   -48,
+   58,
+   74
+  ],
+  [
+   -48,
+   57,
+   75
+  ],
+  [
+   -49,
+   58,
+   75
+  ],
+  [
+   -50,
+   59,
+   75
+  ],
+  [
+   -50,
+   59,
+   76
+  ],
+  [
+   -51,
+   58,
+   76
+  ],
+  [
+   -52,
+   58,
+   76
+  ],
+  [
+   -53,
+   58,
+   76
+  ],
+  [
+   -53,
+   57,
+   77
+  ],
+  [
+   -53,
+   56,
+   78
+  ],
+  [
+   -54,
+   57,
+   78
+  ],
+  [
+   -55,
+   57,
+   78
+  ],
+  [
+   -56,
+   56,
+   78
+  ],
+  [
+   -57,
+   55,
+   78
+  ],
+  [
+   -58,
+   54,
+   78
+  ],
+  [
+   -59,
+   54,
+   78
+  ],
+  [
+   -60,
+   54,
+   78
+  ],
+  [
+   -61,
+   54,
+   78
+  ],
+  [
+   -62,
+   55,
+   78
+  ],
+  [
+   -62,
+   54,
+   79
+  ],
+  [
+   -63,
+   54,
+   79
+  ],
+  [
+   -64,
+   54,
+   79
+  ],
+  [
+   -64,
+   53,
+   80
+  ],
+  [
+   -65,
+   53,
+   80
+  ],
+  [
+   -66,
+   53,
+   80
+  ],
+  [
+   -67,
+   53,
+   80
+  ],
+  [
+   -68,
+   54,
+   80
+  ],
+  [
+   -69,
+   53,
+   80
+  ],
+  [
+   -70,
+   53,
+   80
+  ],
+  [
+   -71,
+   53,
+   80
+  ],
+  [
+   -72,
+   53,
+   80
+  ],
+  [
+   -73,
+   53,
+   80
+  ],
+  [
+   -74,
+   52,
+   80
+  ],
+  [
+   -75,
+   52,
+   80
+  ],
+  [
+   -75,
+   53,
+   79
+  ],
+  [
+   -75,
+   53,
+   78
+  ],
+  [
+   -76,
+   52,
+   78
+  ],
+  [
+   -77,
+   52,
+   78
+  ],
+  [
+   -78,
+   52,
+   78
+  ],
+  [
+   -79,
+   53,
+   78
+  ],
+  [
+   -80,
+   54,
+   78
+  ],
+  [
+   -81,
+   54,
+   78
+  ]
+ ],
+ "elapsed": 36394,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "stone_hoe",
+   1,
+   18
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   61
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   60
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   48
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 actualWOOD/FOOD EXIT currentEAST HEAD+ROOF nowSPRUCE/gateCLOSED, writerRELEASED. InitialSS1+FURNACE1 stillheldreturnreserve, no pickupassumption. Nativewalktree50,68,85, only2LOG72/73 thenberries/closedreturn.
+--- p3 now: (-80.5, 54, 78.5) in the_nether, health 20/20, food 18/20, alive

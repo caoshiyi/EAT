@@ -1,0 +1,23 @@
+# Execution specialist — iteration 12
+
+Current runner stop **2026-10-17 09:07:51 UTC**: shell environment `CR_DEADLINE=1792228071`, read at opening 07:08 UTC and converted with Python UTC timestamp. Clock tool opening 07:08:10 UTC; arena restarted 07:07:51, joins 07:08:02. Inherited 07:04:50 is historical. Nonplaying; no player programs, chat impersonation, server/.work access, agents, or edits outside EXECUTION.md and execution/. Only /root visible in agent directory; publication is not delivery/ACK. Prior execution summary archived in execution/iter12/INHERITED_EXECUTION.md.
+
+## Current request and finding
+
+Named operation: P2 independent_operator requests P3 continuity_owner close HOME east head before P2 chooses onward operation (actual #5603, 07:08:26). Opening priority comparison: P2 #5600 closing 07:04:51 at Nether (1.7,65,4.518), 20 HP/17 food, diamond pick wear15, stock0, east head AIR/full=false. Host joins alone do not prove death or a new survival life; inherited entity ID173 alone does not establish uninterrupted program continuity across restart. Current P2 #5601 07:08:20 independently reobserves same pose/health/kit and exact east FOOT(2,65,4)=MOSS, HEAD(2,66,4)=AIR; HOME floor basalt and south blackstone/table/dirt intact. Earliest unresolved stage is missing head closure, not portal traversal or bank deposit. No source diagnosis needed to establish this physical deficit.
+
+P3 #5587 iter11_return_south started07:03:22, completed30.791s later at (1.4153,66,6.4994), 20HP/20food, closed/full=true, no hurt, controls all false, PEARL5/BASALT9 carried. This accepted endpoint is SOUTH POD, not HOME or Overworld camp. Opening status reconfirms pose/kit/health, but old shell receipt is historical until owner checks after restart. No handoff or pearl deposit credited.
+
+## Proposed smallest change / acceptance / adoption
+
+P2 explicitly assigned HEAD write to P3 in #5603 and promises no cuts. P3 can inspect actual cells, then choose current approach and one full cap at (2,66,4), or actual stock transfer; Moss UP face is only a candidate until first hit/range/body confirmed. This is not a route instruction or approval gate. Acceptance: fresh owner observation identifies dimension, body, HP, exact full head cell; whole HOME full claim also requires its actual remaining shell. Downstream: release shared transition and enable P2 onward operation plus P3 actual HOME return, then separately portal/camp pearl retention. Current adoption PENDING; file publication is not ACK.
+
+## Operation budget / limitations / next useful test
+
+Observed #5569 bridge approach18.723s, then #5587 bridge→Southpod30.791s (52 accepted path entries). These completed historical legs do not price unexecuted Southpod→HOME→portal→camp/deposit. Owners should reserve distinct approach/work, shared transition, failed-step recovery, and final verification time. Existing caller work85s/recovery115s are elapsed internal ceilings, not extra time or arena time available; total must fit actual outer timeout with return margin. No credible total for remaining operation yet; measure chosen short transition rather than copy old60s arrival claim.
+
+Next useful physical test: owner's actual Southpod→HOME reconciliation/head repair or transfer. Retire opening investigation once accepted. Mission_scientist already recorded mission/iter12/opening_eval.json: dragon0/milestones9/deaths101/programs5601; no duplicate evaluator requested. Final evaluator belongs to mission_scientist at current stop. No victory claim.
+
+07:09 current adoption: #5609 P3 fresh Southpod pose/PEARL5/BASALT9 and original SOUTH cells confirmed, current entity173; #5610 P3 explicitly ACKed head ownership, #5611 P2 granted exact Southbench lease. These independent owner decisions are not attributed to specialist publication. P2 chooses blaze acquisition; P1 LOW access follows courier.
+
+**Imminent geometry mismatch:** P3 #5610 requests P2 x<=1.0 while P2 #5611 offers x1.3,z4.4 inside HOME. The single HOME interior is x1..2, z4..5; standard player width0.6 leaves center ranges x1.3..1.7/z4.3..4.7. Thus two fully-contained players cannot clear one another in that same cell (separation at most0.4 on each axis, less than0.6 AABB width). x<=1.0 intersects west wall, while x1.3 still overlaps an arriving center1.5. This is a geometry prediction, not observed push/failure. Owners should choose a real sequential exit/transfer or inspect an actual adjacent free supported stance; do not treat a west-half chat as physical arrival clearance. No request for extra universal instrumentation. Next test is actual passage with both bodies recorded and exact SOUTH restoration.

@@ -1,0 +1,75 @@
+program #5730 on p2: 18.1 s
+--- output ---
+BURY_ACTUAL Vec3 { x: 20, y: 65, z: 90 } 18
+BURY_ACTUAL Vec3 { x: 20, y: 63, z: 90 } 18
+QUARRY_ACTUAL Vec3 { x: 21, y: 63, z: 90 } 5 18
+QUARRY_ACTUAL Vec3 { x: 22, y: 63, z: 90 } 7 18
+QUARRY_ACTUAL Vec3 { x: 23, y: 63, z: 90 } 9 18
+QUARRY_ACTUAL Vec3 { x: 24, y: 63, z: 90 } 11 18
+QUARRY_ACTUAL Vec3 { x: 25, y: 63, z: 90 } 13 18
+QUARRY_ACTUAL Vec3 { x: 26, y: 63, z: 90 } 15 18
+ISSUE NATIVE_END_(27, 63, 90) Vec3 { x: 26, y: 63, z: 90 } Vec3 { x: 26.55904239823012, y: 63, z: 90.50005214980663 }
+--- returned ---
+{
+ "issue": "NATIVE_END_(27, 63, 90)",
+ "closed": true,
+ "p": {
+  "x": 26.500039887352557,
+  "y": 63,
+  "z": 90.50005214354289
+ },
+ "hp": 18,
+ "food": 17,
+ "stock": 13,
+ "placements": [
+  [
+   20,
+   67,
+   90,
+   "dirt"
+  ],
+  [
+   20,
+   65,
+   90,
+   "dirt"
+  ],
+  [
+   25,
+   63,
+   90,
+   "dirt"
+  ],
+  [
+   25,
+   64,
+   90,
+   "dirt"
+  ]
+ ],
+ "inv": [
+  [
+   "diamond_pickaxe",
+   1,
+   33
+  ],
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "cobblestone",
+   11,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P3 CURRENTending P4actual5718 outside9.63,67,83.68 same14.927HP nohurt; EXITcapsrestored WARP68/SS69 but pickupsleftonlySPRUCE1. Need2heldcaps toreturn; borrowingBANKFURNACE asfinitebackupcap NOW, reclaimafterinside+sparecap. No openinguntilactualown2. EAS
+p4: TreturnwriterP4current<=20s.
+p3: P2 specificcaps12 shortageaccepted. P3 finite NEWoperation retainedAXE→4LOG→16PLANK BANK foryourNetherending, no extraquota. Freshnativeplan6220nodes findswholeSPRUCEtree(50,68..75,84), stance50,68,85/47stepsoverland. Budgetexit1min/out2min/4cuts+receipt1m
+p3: in/return2min/bank+closedending1min; checkpoint07:25. P4field20..24berries untouched. P3claimsEASTexit<=20s now, thenreleases.
+p1: P1 actual5725 HOMEfull20HP E65/66BASALT exact restored. CurrentallothersOW; takingSouthbenchpassage only BLACK65/TABLE66/BASALT67 (P3changedheader) with exactrestore afterexit. Newnearest3x3solidshaftscan geometryonly(-54,64)top66; noaccessclaim. Branchfro
+p1: mP3junctionstillfirstdecisivetest.
+--- p2 now: (26.5, 63, 90.5) in overworld, health 18/20, food 17/20, alive

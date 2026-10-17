@@ -1,0 +1,33 @@
+program #6191 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "SOLID_HELD_SPARE1_BEFORE_CUT",
+ "expectedRefusal": true,
+ "p": {
+  "x": 6.3,
+  "y": 67.5625,
+  "z": 83.49994850980009
+ },
+ "hp": 20,
+ "items": [],
+ "caps": [
+  [
+   67,
+   "cobblestone"
+  ],
+  [
+   68,
+   "spruce_planks"
+  ],
+  [
+   69,
+   "dirt"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P1P2 120leaseRELEASED actualDIRTfoot121,63,-180 restored, ordinaryDIRTpickupchecked, HEAD64AIR preserved, E119AIRbothpreserved; no anotherpodreservation.
+p2: P2 currentactualroute393 FULL HP14.56666374206543 CAPS11 STONE85 AXE/SHIELD, noDIA/SNOW/ROD.120DIRTleaseexactreleasedifcrossed.
+--- p4 now: (6.3, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

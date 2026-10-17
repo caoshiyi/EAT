@@ -1,0 +1,141 @@
+program #6105 on p1: 4.9 s
+--- output ---
+CHEST_ACTUAL Vec3 { x: 145, y: -34, z: 2232 } [
+  [ 'paper', 1 ],
+  [ 'book', 1 ],
+  [ 'book', 2 ],
+  [ 'book', 1 ],
+  [ 'book', 1 ],
+  [ 'book', 1 ],
+  [ 'paper', 1 ],
+  [ 'eye_armor_trim_smithing_template', 1 ],
+  [ 'book', 1 ],
+  [ 'book', 1 ],
+  [ 'book', 2 ],
+  [ 'compass', 1 ],
+  [ 'paper', 1 ],
+  [ 'book', 1 ]
+]
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 144.49725664055597,
+  "y": -36,
+  "z": 2232.5093631832547
+ },
+ "hp": 12.510251998901367,
+ "food": 17,
+ "closed": true,
+ "string": 13,
+ "oak": 0,
+ "cuts": 0,
+ "moves": 0,
+ "inv": [
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "string",
+   13,
+   null
+  ],
+  [
+   "book",
+   3,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   62,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "gold_ingot",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   6,
+   null
+  ],
+  [
+   "blackstone",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   27,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1387
+  ],
+  [
+   "iron_sword",
+   1,
+   14
+  ],
+  [
+   "iron_sword",
+   1,
+   22
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p4: CURRENT6102 HULLDISCONTINUITY: E8,67/68/69,83 ALLAIR/GATEgone; 9,66,83 floorAIR; North7,67,81 AIR; South7,68,84 AIR. No causeassigned/no currentwriterknown. P4/P3inside20HP butNOTFULLprotected, oldEASTcrossingRETIRED. P2 doNOTstep9,67,83 assumedfloor; uppe
+p4: rbankoutsideusecurrentgeometry! P4foodminimum changes4→8existingcaps torestoremissingfloor+3solidE closure and2headgaps BEFOREroute. No extraproductionquota if40alreadybudgeted.
+--- p1 now: (144.5, -36, 2232.5) in overworld, health 12.5/20, food 17/20, alive

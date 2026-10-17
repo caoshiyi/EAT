@@ -1,0 +1,33 @@
+== #5884 2026-10-17T07:40:04 p1 role=experiment_owner iter=12 0.6 s
+const{Vec3}=require('vec3');if(bot.game.dimension!=='the_nether'||Math.abs(bot.entity.position.y-8)>.1)throw Error('START');const start=bot.entity.position.floored(),key=q=>q.x+','+q.z,full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','sand','gravel'].includes(bot.blockAt(q)?.name),dirs=[[1,0],[-1,0],[0,1],[0,-1]],cache=new Map();function valid(q){let k=key(q);if(cache.has(k))return cache.get(k);let env=[q,q.offset(0,1,0),q.offset(0,-1,0),q.offset(0,2,0),...dirs.flatMap(([x,z])=>{let p=q.offset(x,0,z);return p.equals(start)?[]:[p,p.offset(0,1,0)]})],ok=env.every(full);cache.set(k,ok);return ok}let queue=[start],seen=new Set([key(start)]),prev=new Map(),best=start,score=q=>Math.abs(q.x-18)+Math.abs(q.z-160),found=null;for(let i=0;i<queue.length&&i<22000;i++){let p=queue[i];if(score(p)<score(best))best=p;if(p.x===18&&p.z===160){found=p;break}for(let[x,z]of dirs){let q=p.offset(x,0,z),k=key(q);if(Math.abs(q.x-start.x)>70||q.z<start.z-30||q.z>160||seen.has(k)||!valid(q))continue;seen.add(k);prev.set(k,p);queue.push(q)}}let goal=found||best,route=[];for(let q=goal;!q.equals(start);q=prev.get(key(q)))route.unshift([q.x,q.y,q.z]);global.P1Detour12={start:[start.x,start.y,start.z],goal:[goal.x,goal.y,goal.z],path:route,at:Date.now()};console.log('GEOMETRY_ONLY_PLAN',{start,goal,n:route.length,visited:queue.length,first:route.slice(0,36),last:route.slice(-8)});
+-- output --
+GEOMETRY_ONLY_PLAN {
+  start: Vec3 { x: 18, y: 8, z: 86 },
+  goal: Vec3 { x: 18, y: 8, z: 160 },
+  n: 162,
+  visited: 8128,
+  first: [
+    [ 19, 8, 86 ], [ 20, 8, 86 ], [ 21, 8, 86 ],
+    [ 22, 8, 86 ], [ 23, 8, 86 ], [ 24, 8, 86 ],
+    [ 25, 8, 86 ], [ 26, 8, 86 ], [ 27, 8, 86 ],
+    [ 28, 8, 86 ], [ 29, 8, 86 ], [ 30, 8, 86 ],
+    [ 31, 8, 86 ], [ 32, 8, 86 ], [ 33, 8, 86 ],
+    [ 34, 8, 86 ], [ 35, 8, 86 ], [ 36, 8, 86 ],
+    [ 36, 8, 85 ], [ 37, 8, 85 ], [ 37, 8, 84 ],
+    [ 38, 8, 84 ], [ 39, 8, 84 ], [ 40, 8, 84 ],
+    [ 41, 8, 84 ], [ 42, 8, 84 ], [ 43, 8, 84 ],
+    [ 44, 8, 84 ], [ 45, 8, 84 ], [ 46, 8, 84 ],
+    [ 47, 8, 84 ], [ 48, 8, 84 ], [ 49, 8, 84 ],
+    [ 50, 8, 84 ], [ 51, 8, 84 ], [ 52, 8, 84 ]
+  ],
+  last: [
+    [ 18, 8, 153 ],
+    [ 18, 8, 154 ],
+    [ 18, 8, 155 ],
+    [ 18, 8, 156 ],
+    [ 18, 8, 157 ],
+    [ 18, 8, 158 ],
+    [ 18, 8, 159 ],
+    [ 18, 8, 160 ]
+  ]
+}

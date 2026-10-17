@@ -1,0 +1,146 @@
+program #5944 on p1: 5.2 s
+--- output ---
+BORE_ACTUAL [ 18, 8, 273 ] 20
+BORE_ACTUAL [ 18, 8, 274 ] 20
+BORE_ACTUAL [ 18, 8, 275 ] 20
+BORE_ACTUAL [ 18, 8, 276 ] 20
+CLOSED true
+--- returned ---
+{
+ "planOrigin": [
+  18,
+  8,
+  160
+ ],
+ "planSize": 148,
+ "index": 148,
+ "issue": null,
+ "p": {
+  "x": 18.500098809768666,
+  "y": 8,
+  "z": 276.60788367778514
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "cuts": 8,
+ "moved": [
+  [
+   18,
+   8,
+   273
+  ],
+  [
+   18,
+   8,
+   274
+  ],
+  [
+   18,
+   8,
+   275
+  ],
+  [
+   18,
+   8,
+   276
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "obsidian",
+   10,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   26,
+   null
+  ],
+  [
+   "blackstone",
+   64,
+   null
+  ],
+  [
+   "blackstone",
+   12,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   38,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   971
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (18.5, 8, 276.6) in the_nether, health 20/20, food 20/20, alive

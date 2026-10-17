@@ -1,0 +1,313 @@
+program #5912 on p3: 18.2 s
+--- output ---
+ACTUAL -18,65,48 2303
+ACTUAL -17,65,48 2852
+ACTUAL -17,65,49 3353
+ACTUAL -17,65,50 3905
+ACTUAL -17,65,51 4406
+ACTUAL -17,65,52 4959
+ACTUAL -17,65,53 5461
+ACTUAL -16,65,53 5963
+ACTUAL -15,65,53 6513
+ACTUAL -15,65,54 7013
+ACTUAL -15,65,55 7564
+ACTUAL -15,65,56 8067
+ACTUAL -14,65,56 8566
+ACTUAL -13,65,56 9117
+ACTUAL -12,65,56 9617
+ACTUAL -11,65,56 10168
+ACTUAL -10,65,56 10668
+ACTUAL -9,65,56 11170
+ACTUAL -8,65,56 11719
+ACTUAL -7,65,56 12220
+ACTUAL -6,65,56 12770
+ACTUAL -5,65,56 13270
+ACTUAL -4,65,56 13821
+ACTUAL -3,65,56 14323
+ACTUAL -2,65,56 14873
+ACTUAL -1,65,56 15373
+ACTUAL -1,66,57 15973
+ACTUAL 0,67,57 16574
+ACTUAL 0,67,58 17075
+HELD_RECOVERY_SUB Vec3 { x: 0, y: 68, z: 57 } dirt sandstone
+--- returned ---
+{
+ "caller": "iter12_return_bridge",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 0.5090026948363565,
+  "y": 67,
+  "z": 58.48962376856868
+ },
+ "hp": 20,
+ "food": 17,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -18,
+   65,
+   48
+  ],
+  [
+   -17,
+   65,
+   48
+  ],
+  [
+   -17,
+   65,
+   49
+  ],
+  [
+   -17,
+   65,
+   50
+  ],
+  [
+   -17,
+   65,
+   51
+  ],
+  [
+   -17,
+   65,
+   52
+  ],
+  [
+   -17,
+   65,
+   53
+  ],
+  [
+   -16,
+   65,
+   53
+  ],
+  [
+   -15,
+   65,
+   53
+  ],
+  [
+   -15,
+   65,
+   54
+  ],
+  [
+   -15,
+   65,
+   55
+  ],
+  [
+   -15,
+   65,
+   56
+  ],
+  [
+   -14,
+   65,
+   56
+  ],
+  [
+   -13,
+   65,
+   56
+  ],
+  [
+   -12,
+   65,
+   56
+  ],
+  [
+   -11,
+   65,
+   56
+  ],
+  [
+   -10,
+   65,
+   56
+  ],
+  [
+   -9,
+   65,
+   56
+  ],
+  [
+   -8,
+   65,
+   56
+  ],
+  [
+   -7,
+   65,
+   56
+  ],
+  [
+   -6,
+   65,
+   56
+  ],
+  [
+   -5,
+   65,
+   56
+  ],
+  [
+   -4,
+   65,
+   56
+  ],
+  [
+   -3,
+   65,
+   56
+  ],
+  [
+   -2,
+   65,
+   56
+  ],
+  [
+   -1,
+   65,
+   56
+  ],
+  [
+   -1,
+   66,
+   57
+  ],
+  [
+   0,
+   67,
+   57
+  ],
+  [
+   0,
+   67,
+   58
+  ]
+ ],
+ "elapsed": 18229,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   66
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   2,
+   null
+  ],
+  [
+   "stone_hoe",
+   1,
+   19
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "netherrack",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   62
+  ],
+  [
+   "warped_wart_block",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   54
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (0.5, 67, 58.5) in the_nether, health 20/20, food 17/20, alive

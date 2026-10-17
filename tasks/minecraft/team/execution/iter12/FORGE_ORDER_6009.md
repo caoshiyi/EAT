@@ -1,0 +1,9 @@
+**RESOLVED independently bychangedWORKSITE #6013 at08:15:46/16s:** P4WESThead5,68,83 temporaryDIRT→FURNACE→SPRUCEfull, FOOTDIRTunchanged; INGOT1→SHIELD1OFFHANDtest→actualBANKSHIELD1/own0/20HP. AlternateforgecellremovedbodywaitcyclewithoutrequiringP3move. Furnacepickedbyanotherplayer/notP4/notclaimedbanked. Old08:05/08:09missed, actual08:15:46. RecipientP2pending. No newbodygate; retireinvestigation.
+
+# CurrentP4Shieldforge6009 / P2-P3bodyorder — 08:15 UTC
+
+ActualP2#6005 08:13:06 movedBEDmiddle(6.962,67.5625,83.486)/20HP, vacatingfrontforge asP4requested. P2chat4604 intendsholdmiddleUNTILactualSHIELDrecipient. ActualP3#6007 08:13:30 thenmovedFRONTLEFT(6.325,67,82.306)/20HP; chat4606 sayswillbackswapAFTERP2actualexit. P4#6009 08:13:52 FORGE_CURRENT_PEER beforeplacement/placedfalse/forgecellAIR/RAW1+furnace+coal2+SP8+WARP1stillheld/20HP.
+
+Earliestfailure: sameforgefootprint6,67,82 occupiedbyP3afterP2vacated. Notmissingrecipe/wood/pick/API. Waitcycle: P2waitsShield→P4waitsforgefrontfree→P3waitsP2exit. SmallestcorrectionownerschooseONEcurrentorder; ifShieldfirstasP2/P4agreed, P3needsactualprotectedinsideposeoutsideforgecell ratherthanwaitingforP2outside. Confinedfriendlysoftpushalreadyexplicitlychosenbyowners; no neednewunarmedoutsidequeue or extraresources. Actualbodymovementmustbechecked, notreportedafterfailedguard. No specialistmovement/approvalgate.
+
+Acceptanceactualfrontcellphysicallyclear/otherbodiesinactualchosenposes, thenP4placedfurnace/IRONoutput/SHIELDcraft/actualBANKrecipient. P2actualslot45offhand+newliferekitseparate. ExistingstockenoughperP4currentcontract; no duplicatetoolproduction. 08:05/08:09forecastsMISSED; componentforge16.5snormalcaseplusbodyhandlingalreadyminutes, thenrecipientandloans/endings. ReportretainedRAW1ratherthanShielduntilcraftreceipt. PublicationnotACK/repair; maybesupersededbyowneractualmove.

@@ -1,0 +1,40 @@
+program #6050 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T08:33:50.517Z",
+ "issue": "LOAN_PICK",
+ "cut": false,
+ "events": [],
+ "hullUnchanged": true,
+ "p": {
+  "x": 6.466482744200658,
+  "y": 67.5625,
+  "z": 83.47891346202586
+ },
+ "hp": 20,
+ "own": [
+  [
+   "sandstone",
+   1
+  ]
+ ],
+ "items": [
+  [
+   19823,
+   {
+    "x": 10.013454143817281,
+    "y": 67,
+    "z": 84.56597290329105
+   },
+   "sandstone",
+   1
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p1: P1 physicalportalroom prep: SPAWNER134,-38,2272 BROKEN/air, recipientbody (129.7, -38, 2272.498119399364) FULLenclosed HP12.510251998901367 food17. OriginalIRONBARS madefirstclosurefalse; replacedactualpartials now. Portalframes2filled/10empty, EndNOTactiv
+p1: e.
+--- p4 now: (6.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

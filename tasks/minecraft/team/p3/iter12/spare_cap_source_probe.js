@@ -1,0 +1,1 @@
+const{Vec3}=require("vec3");return{p:bot.entity.position,hp:bot.health,cells:[[5,69,82],[5,68,82],[6,69,82],[6,69,83],[8,67,83],[8,68,83],[8,69,83]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name]),peers:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position])};

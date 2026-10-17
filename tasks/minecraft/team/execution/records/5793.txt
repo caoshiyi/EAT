@@ -1,0 +1,5 @@
+== #5793 2026-10-17T07:24:14 p1 role=experiment_owner iter=12 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('ACTUAL',bot.entity.position,bot.health,bot.food);let shared=[59,60].map(y=>[y,bot.blockAt(new Vec3(-48,y,70))?.name]);console.log('WEST_INTERFACE',shared);if(bot.entity.position.floored().equals(new Vec3(-54,56,64))&&bot.health===20&&shared.every(a=>a[1]==='basalt'))bot.chat('P1 decisivePHYSICALtest complete: nativeprivatebore13m fromWestpod(-47,59,70)→(-54,59,64), thenactual3-cellshaftdescent to(-54,56,64) FULL20HP20food/retainedDIA. SharedWEST-48,59/60,70 BASALT2 exact restored. LOWnotY8yet, noportal/strongholdmilestone; this supportscontinueLOW over2kmOW. Nextdescend8 thenfirstLOWtunnelbatch; OBS10/STEEL/PEARL8 bankedneededafteraccessreceipt.');
+-- output --
+ACTUAL Vec3 { x: -53.500111623151476, y: 56, z: 64.50193673585308 } 20 20
+WEST_INTERFACE [ [ 59, 'basalt' ], [ 60, 'basalt' ] ]

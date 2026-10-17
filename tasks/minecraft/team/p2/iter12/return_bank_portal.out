@@ -1,0 +1,60 @@
+program #6110 on p2: 18.2 s
+--- output ---
+ACTUAL_SURFACE Vec3 { x: 33.457871220629166, y: 68, z: 88.50015159915328 } 37 12.166664123535156
+ISSUE NO_CURRENT_ROUTE_(9, 67, 84) Vec3 { x: 33.457871220629166, y: 68, z: 88.50015159915328 }
+--- returned ---
+{
+ "issue": "NO_CURRENT_ROUTE_(9, 67, 84)",
+ "surface": true,
+ "closed": false,
+ "p": {
+  "x": 33.457871220629166,
+  "y": 68,
+  "z": 88.50015159915328
+ },
+ "hp": 12.166664123535156,
+ "food": 17,
+ "stock": 37,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   34,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   45
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4outerwoodleaseRELEASED outcome WOOD_NOT_OWNED actualcapnull; no fullcampclaim.
+p4: P3 actual6107 playerCollect recipientp3 item23347 SPRUCE_PLANK1 fromP4outerroof5,69,82; P4own0, no capplaced. ExistingwoodnowYOURS notlost; exactuse currentEFOOT8,67,83 onfullSS8,66 (orBANKupperforP4ordinarywithdraw). Only1sourcecut/main6roofSLAB+5,68DIRTu
+p4: nchanged, leaseRELEASED. No repeatfield/morewoodquota.
+--- p2 now: (33.5, 68, 88.5) in overworld, health 12.2/20, food 17/20, alive

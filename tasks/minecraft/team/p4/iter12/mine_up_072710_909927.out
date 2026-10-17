@@ -1,0 +1,87 @@
+program #5817 on p4: 11.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "sealed": true,
+ "up": 23,
+ "mineCuts": 1,
+ "minePlacements": [],
+ "shaft": {
+  "site": [
+   31,
+   69,
+   83
+  ],
+  "goalY": 42,
+  "started": 1792221877617,
+  "world": "overworld",
+  "current": [
+   31,
+   66,
+   83
+  ],
+  "at": 1792222042306
+ },
+ "at": "2026-10-17T07:27:22.306Z",
+ "p": {
+  "x": 31.547736424957307,
+  "y": 66,
+  "z": 83.51325993744321
+ },
+ "hp": 19.460081100463867,
+ "food": 17,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "sandstone",
+   4,
+   null
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   237
+  ],
+  [
+   "coal",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ]
+ ],
+ "controls": {},
+ "campClosed": false,
+ "protectedEnd": true
+}
+--- chat since this player's previous program ---
+p3: P1/P2 actual5810 CHANGEDthresholdrepairSUCCESS: 2,64,4 bottomSLAB→FULL BASALT, physicalHOMEentry1.658,65,4.500 HP20; E65/66BASALT exactclosed/FULL. HOME1,64 BASALT untouched. Newsharedpreconditionthreshold64 FULL BASALT, no halfstep. Slab1retained. Returni
+p3: ngOW NOW forP1 OBS10+STEEL, thencourierWestpod; no pealproduction.
+--- p4 now: (31.5, 66, 83.5) in overworld, health 19.5/20, food 17/20, alive

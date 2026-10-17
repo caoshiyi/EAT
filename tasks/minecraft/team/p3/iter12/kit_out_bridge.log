@@ -1,0 +1,308 @@
+program #5848 on p3: 24.7 s
+--- output ---
+ACTUAL 0,67,57 7377
+ACTUAL -1,66,57 8030
+ACTUAL -1,65,56 8651
+ACTUAL -2,65,56 9202
+ACTUAL -3,65,56 9704
+ACTUAL -4,65,56 10204
+ACTUAL -5,65,56 10756
+ACTUAL -6,65,56 11256
+ACTUAL -7,65,56 11806
+ACTUAL -8,65,56 12305
+ACTUAL -9,65,56 12856
+ACTUAL -10,65,56 13357
+ACTUAL -11,65,56 13909
+ACTUAL -12,65,56 14411
+ACTUAL -13,65,56 14912
+ACTUAL -14,65,56 15462
+ACTUAL -15,65,56 15962
+ACTUAL -15,65,55 16462
+ACTUAL -15,65,54 17012
+ACTUAL -15,65,53 17513
+ACTUAL -16,65,53 18014
+ACTUAL -17,65,53 18565
+ACTUAL -17,65,52 19066
+ACTUAL -17,65,51 19616
+ACTUAL -17,65,50 20116
+ACTUAL -17,65,49 20665
+ACTUAL -17,65,48 21168
+ACTUAL -18,65,48 22969
+ACTUAL -19,65,48 23519
+--- returned ---
+{
+ "caller": "iter12_out_bridge",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -18.503357139807544,
+  "y": 65,
+  "z": 48.50275694036929
+ },
+ "hp": 20,
+ "food": 18,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   0,
+   67,
+   57
+  ],
+  [
+   -1,
+   66,
+   57
+  ],
+  [
+   -1,
+   65,
+   56
+  ],
+  [
+   -2,
+   65,
+   56
+  ],
+  [
+   -3,
+   65,
+   56
+  ],
+  [
+   -4,
+   65,
+   56
+  ],
+  [
+   -5,
+   65,
+   56
+  ],
+  [
+   -6,
+   65,
+   56
+  ],
+  [
+   -7,
+   65,
+   56
+  ],
+  [
+   -8,
+   65,
+   56
+  ],
+  [
+   -9,
+   65,
+   56
+  ],
+  [
+   -10,
+   65,
+   56
+  ],
+  [
+   -11,
+   65,
+   56
+  ],
+  [
+   -12,
+   65,
+   56
+  ],
+  [
+   -13,
+   65,
+   56
+  ],
+  [
+   -14,
+   65,
+   56
+  ],
+  [
+   -15,
+   65,
+   56
+  ],
+  [
+   -15,
+   65,
+   55
+  ],
+  [
+   -15,
+   65,
+   54
+  ],
+  [
+   -15,
+   65,
+   53
+  ],
+  [
+   -16,
+   65,
+   53
+  ],
+  [
+   -17,
+   65,
+   53
+  ],
+  [
+   -17,
+   65,
+   52
+  ],
+  [
+   -17,
+   65,
+   51
+  ],
+  [
+   -17,
+   65,
+   50
+  ],
+  [
+   -17,
+   65,
+   49
+  ],
+  [
+   -17,
+   65,
+   48
+  ],
+  [
+   -18,
+   65,
+   48
+  ],
+  [
+   -19,
+   65,
+   48
+  ]
+ ],
+ "elapsed": 24670,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "stone_hoe",
+   1,
+   18
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "obsidian",
+   10,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   0
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   61
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   59
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   44
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P1 actual5844 pod120 pass COMPLETE: ONLY121,63 DIRTcut/retained/exactDIRTrecapped; other3AIRunchangedasfound, floor/roof/sidesuntouched. P2 independentFULL index393(-196,63,-180)20HP/DIA70; leaseRELEASED. NewPiglin5210 at-198,58,-175 lineguard vetoedfuture
+p2: point; inspectingweapon/verticalgeometrybeforechangedpass. Requestnextfinitepod220 EAST219/WEST221 Y63/64 BASALT2each cut+pickup+EXACTBASALTrecap andownFULLending, nootherwritersnearhere?
+--- p3 now: (-18.5, 65, 48.5) in the_nether, health 20/20, food 18/20, alive

@@ -1,0 +1,262 @@
+program #6016 on p1: 26.6 s
+--- output ---
+BORE_ACTUAL [ 137, -41, 2233 ] 12.510251998901367
+BORE_ACTUAL [ 137, -41, 2234 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2234 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2235 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2236 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2237 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2238 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2239 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2240 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2241 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2242 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2243 ] 12.510251998901367
+BORE_ACTUAL [ 138, -41, 2244 ] 12.510251998901367
+CLOSED true
+--- returned ---
+{
+ "planOrigin": [
+  156,
+  -41,
+  2227
+ ],
+ "planSize": 51,
+ "index": 51,
+ "issue": null,
+ "p": {
+  "x": 138.49994066888308,
+  "y": -41,
+  "z": 2244.569988512422
+ },
+ "hp": 12.510251998901367,
+ "food": 17,
+ "lost": false,
+ "cuts": 26,
+ "moved": [
+  [
+   137,
+   -41,
+   2233
+  ],
+  [
+   137,
+   -41,
+   2234
+  ],
+  [
+   138,
+   -41,
+   2234
+  ],
+  [
+   138,
+   -41,
+   2235
+  ],
+  [
+   138,
+   -41,
+   2236
+  ],
+  [
+   138,
+   -41,
+   2237
+  ],
+  [
+   138,
+   -41,
+   2238
+  ],
+  [
+   138,
+   -41,
+   2239
+  ],
+  [
+   138,
+   -41,
+   2240
+  ],
+  [
+   138,
+   -41,
+   2241
+  ],
+  [
+   138,
+   -41,
+   2242
+  ],
+  [
+   138,
+   -41,
+   2243
+  ],
+  [
+   138,
+   -41,
+   2244
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "oak_planks",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   1
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1176
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "netherrack",
+   64,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "book",
+   9,
+   null
+  ],
+  [
+   "blackstone",
+   62,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "tuff",
+   25,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   0
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "cobbled_deepslate",
+   5,
+   null
+  ],
+  [
+   "basalt",
+   22,
+   null
+  ],
+  [
+   "netherrack",
+   60,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   64,
+   null
+  ],
+  [
+   "blackstone",
+   11,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   63,
+   null
+  ],
+  [
+   "basalt",
+   41,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p2: P3/P4 I canbootstrap INSIDE closedcamp withoutfieldtrip: actualWEST5,68,83 PLANK1 (yourforgesubstitute)→ownDIRT1 restoresoldDIRT, yieldsWOOD1 +P3heldWOOD1=2PLANK→4STICK. BorrowBANKIR247(3uses) orSTONE126(5uses), +P3GRAVEL2/BANKSAND4: exchangeSouthHEAD6/7,6
+p2: 8,84 COFF2 +WestROOF5,69,82 COFF1 withFULLsupportedGRAVEL/SAND thencraftP2STONEpick0. Newpickmines3moreCOFFfromsupportedSouthBASE6/7,66,84+FOOT6,67,84 (gravitychecked/restored)→P3STONEpick0 usingremaining2STICK. ZERO newquota/newlogs; allsinglecellimmediat
+p2: eFULLrecap, noEAST/otherwrites. NeedP3ACK exactwriterP2 +BANKWOOD1/GRAVEL2; P4forgealreadyreleased, Shield/PICK loanwillverifyBANK. This gets2workingpicks fromexistingworn3uses+worldmaterial.
+--- p1 now: (138.5, -41, 2244.6) in overworld, health 12.5/20, food 17/20, alive

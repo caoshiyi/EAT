@@ -1,0 +1,149 @@
+== #5706 2026-10-17T07:14:50 p1 role=experiment_owner iter=12 0 s
+bot.chat('P2 decisivegeometry5694: nativecampEAST→east detour→10,68,89 reachable39steps. OnlymissingPORTALconnection 8/9,67,89 floors (7,67,89DIRT and10,67,89COBBLE exist). YourheldBASALT1+MOSS1 suffice2placements eastfrom7,67,89 thennew8floor Eface; candidateonly physicaltestneeded. Pleasepreferthistwo-gaptest overquarry. P1 stonequarryvetoHOT twice/0cuts, allsouthstoneadjacentLAVA; retired. Icantravel10,68,89 ifyourreceipt.');
+== #5707 2026-10-17T07:14:57 p2 role=independent_operator iter=12 0 s
+bot.chat("P1 measured5701 actualgap: portal\u21926,68,90\u21926/7,68,89 floorfull; missing8/9,67,89 then10,67,89+90full. My2heldcaps canfill8/9foot then reclaimnonessentialDIRTheaders9,68/69,z91..93 (oldOBScover) for NORTHbridge10,67,z88..85\u2192P3pillar10,66,84. P2 solewrite THESEbridgecells+coverheaders imminent<=90s; no camp/EAST/Sbench/portalframecuts. Acceptance fullcontinuousfloor andactualwalktocampE9,67,83; releaseafterreceipt.")
+== #5709 2026-10-17T07:15:06 p3 role=continuity_owner iter=12 0 s
+bot.chat("P1/P4/P2 actual5699 DELIVERY ENDING COMPLETE: P3 INSIDE7.346,67.5625,83.446 HP20food18; EHEAD68=SANDSTONE/ROOF69=SPRUCE_PLANKS full/gateCLOSED. Pearl8bank independentlyP4verified5675. EASTwrite RELEASEDtoP4forfoodkit. BodycurrentlybedRIGHT: P4please moveFRONTLEFT6.3,82.4 first (clearofme), thenIshiftbackLEFT6.3,83.7 tofreeyourcross. No claimfrontclearuntilactual.")
+== #5710 2026-10-17T07:15:18 p3 role=continuity_owner iter=12 0 s
+bot.chat("P4 cannotP3movewesttofrontLEFT withoutpassingwithin0.43m ofyourbackLEFT6.3,83.7 body; northisblockedCHEST7,82 untilP3x<=6.7. BetterYOURfirstnorth x6.3,z83.7\u219282.4 (separated1.05m frommy7.35), thenP3westtobackLEFT6.3,83.7; actualreceiptsonebyone. EASTalreadyclosedandwriterrelease5699, pleaseFIRSTmovefrontleft.")
+== #5712 2026-10-17T07:15:24 p4 role=integration_operator iter=12 1.1 s
+const{Vec3}=require('vec3');const e=bot.entity,hp=bot.health;let issue=null;bot.clearControlStates();bot.pathfinder.setGoal(null);try{if(bot.entity.position.x>6.5)throw Error('LEFT_REQUIRED');for(let n=0;n<45&&bot.entity.position.z>82.4;n++){if(bot.entity!==e||bot.health<hp||bot.entity.position.x<6.29||bot.entity.position.x>6.5)throw Error('BODY');await bot.lookAt(new Vec3(6.3,bot.entity.position.y+1.4,81),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1)}if(bot.entity.position.z>82.5)throw Error('NOT_ARRIVED')}catch(e){issue=e.message}finally{bot.clearControlStates()}return{issue,p:bot.entity.position,hp:bot.health,players:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position]),controls:bot.controlState};
+-- returned --
+{"issue": null, "p": {"x": 6.3, "y": 67, "z": 82.34352313454451}, "hp": 14.926748275756836, "players": [["p3", {"x": 7.3463078169668465, "y": 67.5625, "z": 83.44612745175814}], ["p4", "[repeated reference]"], ["p1", {"x": 10.500037988736555, "y": 66.23145588458252, "z": 92.356884765625}], ["p2", {"x": 10.499968968538749, "y": 67, "z": 91.45229485643215}]], "controls": {}}
+== #5713 2026-10-17T07:15:25 p4 role=integration_operator iter=12 0 s
+bot.chat("P3 actualP4 FRONTLEFT6.3,82.35 now/same14.927HP/controlsfalse, freefor yourbackLEFT6.3,83.7 swap per4394. Own2caps+SHOVEL0/IRON207 gate-onlyloan5705, scope FOOD+22SNOW only/P2selfcaps. Afteryouractualbackpose I movebackRIGHT/crossEast thenrelease; production+endingbudget135s.")
+== #5708 2026-10-17T07:14:59 p1 role=experiment_owner iter=12 27.5 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),self=bot.entity,dimension=bot.game.dimension,begin=Date.now(),hp0=bot.health;let lost=false,recovery=false,history=[],issue=null;const stop=()=>{bot.clearControlStates();bot.pathfinder.setGoal(null)},death=()=>{lost=true;stop()};bot.on('death',death);bot.on('respawn',death);stop();
+const air=q=>['air','cave_air','nether_portal','snow','short_grass','fern'].includes(bot.blockAt(q)?.name),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['lava','magma_block','water','powder_snow'].includes(bot.blockAt(q)?.name);
+function check(){if(lost||bot.entity!==self||bot.game.dimension!==dimension||bot.health<10||Date.now()-begin>100000)throw Error('LIFE_TIME');if(!recovery&&bot.health<hp0-.1)throw Error('DAMAGE');}
+async function ticks(n){check();await bot.waitForTicks(n);check()}
+function danger(q){for(let e of Object.values(bot.entities)){if(!['zombie','skeleton','spider','creeper','witch','stray','pillager','piglin','hoglin','blaze','ghast','magma_cube'].includes(e.name))continue;const range=['skeleton','stray','pillager','witch','blaze','ghast'].includes(e.name)?20:5;if(Math.min(e.position.distanceTo(bot.entity.position),e.position.distanceTo(q))>range)continue;for(let p of[bot.entity.position,q])for(let h of[.7,1.6]){const eye=p.offset(0,h,0),d=e.position.offset(0,(e.height||1.8)*.5,0).minus(eye);if(!bot.world.raycast(eye,d.unit(),d.norm()))return[e.id,e.name,e.position]}}return null}
+async function step(q){check();let a=bot.entity.position.floored(),dy=q.y-a.y;if(!full(q.offset(0,-1,0))||!air(q)||!air(q.offset(0,1,0))||(dy>0&&!air(a.offset(0,2,0)))||(dy<0&&!air(q.offset(0,2,0))))throw Error('GEOM_'+q);for(let n=0,stable=0;n<60;n++){check();if(!recovery){let t=danger(q.offset(.5,0,.5));if(t)throw Error('THREAT_'+JSON.stringify(t))}let p=bot.entity.position,d=Math.hypot(p.x-q.x-.5,p.z-q.z-.5),ground=bot.entity.onGround&&Math.abs(p.y-q.y)<.1;stop();if(ground&&d<.10){if(++stable>=2){history.push([q.x,q.y,q.z]);return}}else stable=0;if(p.y<q.y-1.05)throw Error('FALL');if(d>.06){await bot.lookAt(q.offset(.5,p.y-q.y+1.4,.5),true);bot.setControlState('sneak',ground&&dy>=0);bot.setControlState('forward',true)}bot.setControlState('jump',q.y>p.y+.1);await ticks(1)}throw Error('STEP_BOUND_'+q)}
+function plan(start,goal,bounds){let key=q=>q.toString(),queue=[start],seen=new Set([key(start)]),prev=new Map(),found;for(let i=0;i<queue.length&&i<6000;i++){let a=queue[i];if(a.equals(goal)){found=a;break}for(let[x,z]of[[1,0],[-1,0],[0,1],[0,-1]])for(let y of[0,1,-1]){let q=a.offset(x,y,z);if(q.x<bounds[0]||q.x>bounds[1]||q.z<bounds[2]||q.z>bounds[3]||q.y<bounds[4]||q.y>bounds[5]||seen.has(key(q))||!full(q.offset(0,-1,0))||!air(q)||!air(q.offset(0,1,0)))continue;if(y>0&&!air(a.offset(0,2,0)))continue;if(y<0&&!air(q.offset(0,2,0)))continue;seen.add(key(q));prev.set(key(q),a);queue.push(q)}}if(!found)throw Error('NO_ROUTE');let out=[];for(let q=found;!q.equals(start);q=prev.get(key(q)))out.unshift(q);return out}
+function cleanup(){stop();bot.removeListener('death',death);bot.removeListener('respawn',death)}
+
+const origin=bot.entity.position.floored();try{const route=plan(origin,V([10,68,89]),[4,32,77,99,60,74]);console.log('PLANNED',route);for(let q of route)await step(q);console.log('ACTUAL_END',bot.entity.position,bot.health);bot.chat('P2 actualP1 at10,68,89 '+bot.entity.position+' HP'+bot.health+' guardednativeeastdetour demonstrated. Needyour2gapfloorreceipt8/9,67,89 beforecross; no newquarry.');}catch(e){issue=e.message;console.log('ISSUE',issue);recovery=true;try{for(let a of history.slice(0,-1).reverse())await step(V(a));await step(origin);console.log('ROLLBACK_ACTUAL',bot.entity.position)}catch(e){console.log('ROLLBACK_FAILED',e.message)}}finally{cleanup();console.log('END',bot.entity.position,bot.health,bot.food,bot.controlState)}
+-- output --
+PLANNED [
+  Vec3 { x: 15, y: 67, z: 84 },
+  Vec3 { x: 16, y: 67, z: 84 },
+  Vec3 { x: 17, y: 67, z: 84 },
+  Vec3 { x: 18, y: 67, z: 84 },
+  Vec3 { x: 19, y: 67, z: 84 },
+  Vec3 { x: 20, y: 67, z: 84 },
+  Vec3 { x: 21, y: 67, z: 84 },
+  Vec3 { x: 21, y: 67, z: 85 },
+  Vec3 { x: 21, y: 67, z: 86 },
+  Vec3 { x: 21, y: 67, z: 87 },
+  Vec3 { x: 21, y: 68, z: 88 },
+  Vec3 { x: 21, y: 68, z: 89 },
+  Vec3 { x: 21, y: 68, z: 90 },
+  Vec3 { x: 20, y: 68, z: 90 },
+  Vec3 { x: 19, y: 68, z: 90 },
+  Vec3 { x: 19, y: 68, z: 91 },
+  Vec3 { x: 19, y: 68, z: 92 },
+  Vec3 { x: 19, y: 68, z: 93 },
+  Vec3 { x: 19, y: 68, z: 94 },
+  Vec3 { x: 18, y: 68, z: 94 },
+  Vec3 { x: 18, y: 68, z: 95 },
+  Vec3 { x: 17, y: 68, z: 95 },
+  Vec3 { x: 16, y: 67, z: 95 },
+  Vec3 { x: 15, y: 67, z: 95 },
+  Vec3 { x: 14, y: 67, z: 95 },
+  Vec3 { x: 13, y: 67, z: 95 },
+  Vec3 { x: 12, y: 66, z: 95 },
+  Vec3 { x: 11, y: 66, z: 95 },
+  Vec3 { x: 10, y: 66, z: 95 },
+  Vec3 { x: 10, y: 67, z: 94 },
+  Vec3 { x: 10, y: 67, z: 93 },
+  Vec3 { x: 10, y: 66, z: 92 },
+  Vec3 { x: 10, y: 67, z: 91 },
+  Vec3 { x: 10, y: 68, z: 90 },
+  Vec3 { x: 10, y: 68, z: 89 }
+]
+ACTUAL_END Vec3 { x: 10.500037722526514, y: 68, z: 89.5055768611864 } 20
+END Vec3 { x: 10.500037722526514, y: 68, z: 89.5055768611864 } 20 20 {}
+== #5714 2026-10-17T07:15:31 p3 role=continuity_owner iter=12 0.2 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,hp:bot.health,food:bot.food,players:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position]),logs:bot.findBlocks({matching:b=>/^(spruce|oak|birch)_log$/.test(b.name),maxDistance:28,count:60}).map(p=>[p,bot.blockAt(p)?.name]),berries:bot.findBlocks({matching:b=>b.name==='sweet_berry_bush',maxDistance:28,count:30}).map(p=>[p,bot.blockAt(p)?.getProperties()]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- returned --
+{"p": {"x": 7.3463078169668465, "y": 67.5625, "z": 83.44612745175814}, "hp": 20, "food": 18, "players": [["p3", "[repeated reference]"], ["p4", {"x": 6.3, "y": 67, "z": 82.30008885872982}], ["p1", {"x": 10.500037863461234, "y": 68, "z": 89.46683312472908}], ["p2", {"x": 16.700072637553948, "y": 67.75325194001198, "z": 95.50106372091628}]], "logs": [[{"x": 5, "y": 75, "z": 83}, "spruce_log"], [{"x": 18, "y": 71, "z": 106}, "spruce_log"], [{"x": 10, "y": 73, "z": 108}, "spruce_log"], [{"x": 10, "y": 74, "z": 108}, "spruce_log"], [{"x": 10, "y": 75, "z": 108}, "spruce_log"], [{"x": 33, "y": 73, "z": 80}, "spruce_log"], [{"x": 22, "y": 71, "z": 106}, "spruce_log"], [{"x": 22, "y": 72, "z": 106}, "spruce_log"]], "berries": [[{"x": 20, "y": 68, "z": 89}, {"age": "3"}], [{"x": 22, "y": 68, "z": 89}, {"age": "3"}], [{"x": 24, "y": 68, "z": 90}, {"age": "3"}]], "inv": [["warped_roots", 3, null], ["stone_hoe", 1, 18], ["stone_pickaxe", 1, 100], ["wooden_shovel", 1, 53], ["spruce_boat", 1, null], ["warped_planks", 2, null], ["stick", 1, null], ["warped_fungus", 2, null], ["quartz", 2, null], ["sweet_berries", 2, null], ["basalt", 1, null], ["stone_pickaxe", 1, 51], ["stone_axe", 1, 58], ["stone_axe", 1, 53], ["wooden_pickaxe", 1, 41]]}
+== #5711 2026-10-17T07:15:18 p2 role=independent_operator iter=12 18.5 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?100000:50000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitForTicks(k);check()}
+function threat(q){for(const e of Object.values(bot.entities)){if(!['ghast','blaze','skeleton','wither_skeleton','hoglin','piglin','magma_cube','zombie','spider','creeper','stray'].includes(e.name)||(e.metadata?.[9]??1)<=0)continue;const r=['ghast','blaze'].includes(e.name)?48:['skeleton','stray'].includes(e.name)?20:7;if(Math.min(e.position.distanceTo(bot.entity.position),e.position.distanceTo(q.offset(.5,0,.5)))>r)continue;for(const p of[bot.entity.position,q.offset(.5,0,.5)])for(const y of[.6,1.5]){const a=p.offset(0,y,0),b=e.position.offset(0,(e.height||1.8)*.55,0),d=b.minus(a);if(empty(a.floored())&&!bot.world.raycast(a,d.unit(),d.norm()))return[e.id,e.name,e.position.clone()]}}return null}
+async function move(q,guard=true){const t=Date.now(),start=bot.entity.position.floored();for(const c of[q,q.offset(0,1,0)])if(name(c)==='snow'){await bot.unequip('hand');await bot.dig(bot.blockAt(c),true);await tick(2)}if(!full(q.offset(0,-1,0))||!empty(q)||!empty(q.offset(0,1,0)))throw Error('MOVE_GEOMETRY_'+q);if(q.y>start.y&&!empty(start.offset(0,2,0)))throw Error('UP_HEAD');if(q.y<start.y&&!empty(q.offset(0,2,0)))throw Error('DOWN_HEAD');let stable=0;try{for(let k=0;k<85;k++){check();if(guard&&!recovery){const e=threat(q);if(e)throw Error('THREAT_'+JSON.stringify(e))}const p=bot.entity.position,d=Math.hypot(p.x-q.x-.5,p.z-q.z-.5),ground=bot.entity.onGround&&Math.abs(p.y-q.y)<.08;bot.clearControlStates();if(ground&&d<.10&&Math.hypot(bot.entity.velocity.x,bot.entity.velocity.z)<.05){if(++stable>=3){history.push([q.x,q.y,q.z]);return}}else stable=0;if(d>.055){await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('sneak',ground&&d<.65&&q.y>=start.y);bot.setControlState('forward',true)}bot.setControlState('jump',q.y>p.y+.1);await tick(1)}throw Error('MOVE_BOUND_'+q)}finally{bot.clearControlStates()}}
+async function cut(q){check();if(empty(q))return;const b=bot.blockAt(q);if(!capNames.includes(b?.name)&&!['stone','andesite','granite','diorite','tuff','crafting_table','snow_block','warped_nylium','crimson_nylium'].includes(b?.name))throw Error('CUT_KIND_'+b?.name);for(const d of[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]])if(!bot.blockAt(q.offset(...d))||/lava|water|fire|gravel|sand$/.test(name(q.offset(...d))))throw Error('CUT_FLUID_FALL');const pick=bot.inventory.items().find(i=>i.name==='diamond_pickaxe'&&i.durabilityUsed<1450)||bot.inventory.items().find(i=>i.name==='stone_pickaxe'&&i.durabilityUsed<125);if(!pick)throw Error('PICK_RESERVE');const wear=pick.durabilityUsed;await bot.equip(pick,'hand');await bot.dig(b,true);await tick(4);for(let k=0;k<10&&!empty(q);k++)await tick(1);if(!empty(q)||!['dirt','moss_block','snow_block','crafting_table'].includes(b.name)&&(bot.inventory.slots[pick.slot]?.durabilityUsed??0)<=wear)throw Error('CUT_ACK');}
+async function put(q,exact=null){if(full(q))return;const it=bot.inventory.items().find(i=>exact?i.name===exact:capNames.includes(i.name));if(!it)throw Error('CAP_STOCK');const refs=[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(d=>q.offset(...d)).filter(full);if(!refs.length)throw Error('CAP_NO_REF_'+q);let error=null;for(const ref of refs){try{const n0=count(it.name);await bot.equip(it,'hand');bot.setControlState('sneak',true);await bot._placeBlockWithOptions(bot.blockAt(ref),q.minus(ref),{forceLook:true});await tick(3);if(full(q)&&name(q)===it.name&&count(it.name)<n0){placements.push([q.x,q.y,q.z,it.name]);return}throw Error('CAP_TARGET_RECEIPT')}catch(e){error=e;if(full(q)){placements.push([q.x,q.y,q.z,name(q)]);return}if(!bot.inventory.items().some(i=>i.name===it.name))break}finally{bot.clearControlStates()}}throw error||Error('CAP_FAIL')}
+const faces=q=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(a=>q.offset(...a));
+function podNeed(q){if(!full(q.offset(0,-1,0)))return 999;let n=0;for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){if([0,1].some(y=>!full(q.offset(x,y,z)))&&!full(q.offset(x,-1,z)))n++;for(let y=0;y<2;y++){const p=q.offset(x,y,z);if(!full(p)){if(!empty(p))return 999;n++}}}if(!full(q.offset(0,2,0))){if(!empty(q.offset(0,2,0)))return 999;n++;if(![[1,0],[-1,0],[0,1],[0,-1]].some(([x,z])=>full(q.offset(x,2,z))))n++}return n}
+async function seal(q){bot.clearControlStates();await tick(4);await move(q,false);if(podNeed(q)>stock())throw Error('END_NEED_'+podNeed(q)+'_HAVE_'+stock());for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]]){if(!full(q.offset(x,0,z))&&!full(q.offset(x,-1,z)))await put(q.offset(x,-1,z));await put(q.offset(x,0,z));await put(q.offset(x,1,z))}if(!full(q.offset(0,2,0))){if(![[1,0],[-1,0],[0,1],[0,-1]].some(([x,z])=>full(q.offset(x,2,z))))await put(q.offset(1,2,0));await put(q.offset(0,2,0))}if(!faces(q).every(full))throw Error('END_NOT_FULL');return true}
+function cleanup(){bot.clearControlStates();bot.pathfinder.setGoal(null);bot.deactivateItem();bot.removeListener('death',death);bot.removeListener('respawn',death);bot.removeListener('entityHurt',damage)}
+
+let completed=false,bridged=false;const route=[];try{if(world!=='overworld'||bot.entity.position.distanceTo(V([7.5,68,91.5]))>.4||stock()<2)throw Error('PRE');
+for(const a of[[6,68,91],[6,68,90],[6,68,89],[7,68,89]])await move(V(a));
+await put(V([8,67,89]),'moss_block');await move(V([8,68,89]));await put(V([9,67,89]),'basalt');await move(V([9,68,89]));await move(V([10,68,89]));bridged=true;
+bot.chat('P1 actualP2 TWO-gapbridge8,67,89 MOSS/9,67,89 BASALT FULL andactualcross10,68,89 HP'+bot.health+'; bridgewriter RELEASED. No furtherDIRT/Nbridge cuts. Needyourqualifiednative39step route tocampE; I will freshBFS ownpath.');
+const origin=bot.entity.position.floored(),Q=[origin],seen=new Set([origin.toString()]),paths=new Map([[origin.toString(),[]]]);let result=null;for(let k=0;k<Q.length&&k<14000;k++){const p=Q[k];if(p.equals(V([9,67,83]))){result=paths.get(p.toString());break}for(const[x,z]of[[1,0],[-1,0],[0,1],[0,-1]])for(const y of[0,1,-1]){const q=p.offset(x,y,z);if(q.x<8||q.x>32||q.z<78||q.z>96||q.y<61||q.y>73||seen.has(q.toString())||!full(q.offset(0,-1,0))||!empty(q)||!empty(q.offset(0,1,0))||y>0&&!empty(p.offset(0,2,0))||y<0&&!empty(q.offset(0,2,0)))continue;seen.add(q.toString());paths.set(q.toString(),[...paths.get(p.toString()),q]);Q.push(q)}}
+if(!result)throw Error('NO_CURRENT_NATIVE_ROUTE');console.log('NATIVE_PLAN',result);global.P2OW12route=result.map(q=>[q.x,q.y,q.z]);for(const q of result){await move(q);route.push([q.x,q.y,q.z])}completed=true;
+}catch(e){issue=e.message;console.log('ISSUE',issue,bot.entity.position)}finally{cleanup()}return{issue,bridged,completed,p:bot.entity.position,hp:bot.health,placements,route,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+NATIVE_PLAN [
+  Vec3 { x: 10, y: 68, z: 90 },
+  Vec3 { x: 10, y: 67, z: 91 },
+  Vec3 { x: 10, y: 66, z: 92 },
+  Vec3 { x: 11, y: 66, z: 92 },
+  Vec3 { x: 12, y: 66, z: 92 },
+  Vec3 { x: 13, y: 67, z: 92 },
+  Vec3 { x: 13, y: 66, z: 93 },
+  Vec3 { x: 13, y: 67, z: 94 },
+  Vec3 { x: 13, y: 67, z: 95 },
+  Vec3 { x: 14, y: 67, z: 95 },
+  Vec3 { x: 15, y: 67, z: 95 },
+  Vec3 { x: 16, y: 67, z: 95 },
+  Vec3 { x: 17, y: 68, z: 95 },
+  Vec3 { x: 18, y: 68, z: 95 },
+  Vec3 { x: 19, y: 68, z: 95 },
+  Vec3 { x: 20, y: 68, z: 95 },
+  Vec3 { x: 20, y: 68, z: 94 },
+  Vec3 { x: 20, y: 68, z: 93 },
+  Vec3 { x: 20, y: 68, z: 92 },
+  Vec3 { x: 20, y: 68, z: 91 },
+  Vec3 { x: 20, y: 68, z: 90 },
+  Vec3 { x: 20, y: 68, z: 89 },
+  Vec3 { x: 20, y: 68, z: 88 },
+  Vec3 { x: 20, y: 67, z: 87 },
+  Vec3 { x: 20, y: 67, z: 86 },
+  Vec3 { x: 20, y: 67, z: 85 },
+  Vec3 { x: 19, y: 67, z: 85 },
+  Vec3 { x: 18, y: 67, z: 85 },
+  Vec3 { x: 18, y: 67, z: 84 },
+  Vec3 { x: 17, y: 67, z: 84 },
+  Vec3 { x: 16, y: 67, z: 84 },
+  Vec3 { x: 15, y: 67, z: 84 },
+  Vec3 { x: 14, y: 67, z: 84 },
+  Vec3 { x: 13, y: 68, z: 84 },
+  Vec3 { x: 12, y: 68, z: 84 },
+  Vec3 { x: 11, y: 67, z: 84 },
+  Vec3 { x: 10, y: 67, z: 84 },
+  Vec3 { x: 9, y: 67, z: 84 },
+  Vec3 { x: 9, y: 67, z: 83 }
+]
+ISSUE DAMAGE_END Vec3 { x: 20.500105352238307, y: 68, z: 90.2087592428281 }
+-- returned --
+{"issue": "DAMAGE_END", "bridged": true, "completed": false, "p": {"x": 20.500105352238307, "y": 68, "z": 90.2087592428281}, "hp": 19, "placements": [[8, 67, 89, "moss_block"], [9, 67, 89, "basalt"]], "route": [[10, 68, 90], [10, 67, 91], [10, 66, 92], [11, 66, 92], [12, 66, 92], [13, 67, 92], [13, 66, 93], [13, 67, 94], [13, 67, 95], [14, 67, 95], [15, 67, 95], [16, 67, 95], [17, 68, 95], [18, 68, 95], [19, 68, 95], [20, 68, 95], [20, 68, 94], [20, 68, 93], [20, 68, 92], [20, 68, 91], [20, 68, 90]], "inv": [["diamond_pickaxe", 1, 16]]}
+== #5716 2026-10-17T07:15:46 p3 role=continuity_owner iter=12 1.3 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const self=bot.entity,hp=bot.health,start=Date.now();let issue=null;try{const peer=Object.values(bot.entities).find(e=>e.username==='p4');if(!peer||peer.position.z>82.6||peer.position.x>6.6)throw Error('PEER_FRONT_NOT_ACTUAL');for(const [axis,target]of[['x',6.35],['z',83.7]]){for(let k=0;k<50&&Math.abs(bot.entity.position[axis]-target)>.07;k++){if(bot.entity!==self||bot.health<hp||Date.now()-start>8000)throw Error('LIFE_TIME');const p=bot.entity.position;await bot.lookAt(p.offset(axis==='x'?Math.sign(target-p.x)*2:0,1.4,axis==='z'?Math.sign(target-p.z)*2:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1);bot.clearControlStates();}await bot.waitForTicks(3)}}catch(e){issue=e.message}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}return{issue,p:bot.entity.position,hp:bot.health};
+-- returned --
+{"issue": null, "p": {"x": 6.313962954228095, "y": 67.5625, "z": 83.69360830477929}, "hp": 20}
+== #5717 2026-10-17T07:15:47 p3 role=continuity_owner iter=12 0 s
+bot.chat("P4 actualBACKLEFT P3now6.35,83.7 HP20 controlsfalse, yourEASTcross clear currentbody. EASTwriter remainsyou throughactualclosedexit. Completion07:20couriercheckpoint actualdone07:14. P2/P1 stablebridge receiptsaccepted, no P3bridgework. Considering finite4LOG\u219216PLANKbank forP2expeditioncaps/currentwoodshortage afterP4exit; freshroutepreflight first, not newpearlproduction.")
+== #5715 2026-10-17T07:15:42 p1 role=experiment_owner iter=12 9.4 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const start=Date.now(),self=bot.entity;let issue=null;try{if(bot.game.dimension!=='overworld'||bot.health<20)throw Error('START');for(let x of[9,8,7,6]){let q=new Vec3(x,68,89);if(!bot.blockAt(q.offset(0,-1,0))?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'))throw Error('FLOOR');if(bot.blockAt(q)?.name==='snow')await bot.dig(bot.blockAt(q),true);for(let n=0;n<40;n++){let p=bot.entity.position;if(bot.health<20||bot.entity!==self||Date.now()-start>20000)throw Error('LIFE');if(Math.hypot(p.x-x-.5,p.z-89.5)<.10)break;await bot.lookAt(q.offset(.5,1.4,.5),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1)}bot.clearControlStates();await bot.waitForTicks(2);if(bot.entity.position.x>x+.7||bot.entity.position.x<x+.3)throw Error('CENTER')}
+for(let n=0;n<100&&bot.game.dimension==='overworld';n++){const p=bot.entity.position;if(p.z>91.3){bot.clearControlStates();await bot.waitForTicks(2);continue}await bot.lookAt(new Vec3(6.5,p.y+1.4,92),true);bot.setControlState('forward',true);await bot.waitForTicks(1)}bot.clearControlStates();await bot.waitForTicks(4);console.log('ARRIVAL',bot.game.dimension,bot.entity.position,bot.health);if(bot.game.dimension==='the_nether')bot.chat('P1 actualNetherarrival '+bot.entity.position+' HP'+bot.health+'. P2/P3 requestHOME Eentrywriter current; no cutsyet. LOWtestaccess next, OBS/STEELbanked.');else throw Error('NO_TRANSITION');}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}console.log('END',issue,bot.game.dimension,bot.entity.position,bot.health,bot.controlState);
+-- output --
+ARRIVAL the_nether Vec3 { x: 3.496237361671443, y: 65, z: 3.5 } 20
+END null the_nether Vec3 { x: 3.496237361671443, y: 65, z: 3.5 } 20 {}

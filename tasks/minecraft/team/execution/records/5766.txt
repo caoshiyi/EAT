@@ -1,0 +1,4 @@
+== #5766 2026-10-17T07:20:41 p4 role=integration_operator iter=12 5.6 s
+let consumed=false;try{const i=bot.inventory.items().find(i=>i.name==='sweet_berries');if(i&&bot.food<20){await bot.equip(i,'hand');await bot.consume();consumed=true}await bot.waitForTicks(80);return{consumed,at:new Date().toISOString(),hp:bot.health,food:bot.food,p:bot.entity.position,own:bot.inventory.items().map(i=>[i.name,i.count])}}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}
+-- returned --
+{"consumed": true, "at": "2026-10-17T07:20:46.981Z", "hp": 18.460081100463867, "food": 19, "p": {"x": 6.3, "y": 67, "z": 82.30246444560352}, "own": [["sandstone", 1], ["spider_eye", 1], ["string", 1]]}

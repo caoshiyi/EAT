@@ -1,0 +1,91 @@
+program #6103 on p2: 46.5 s
+--- output ---
+COARSE 10 21 Vec3 { x: 36, y: 63, z: 86 }
+COARSE 20 41 Vec3 { x: 32, y: 63, z: 87 }
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "p": {
+  "x": 32.52009705181168,
+  "y": 63,
+  "z": 87.50103195796333
+ },
+ "hp": 12.166664123535156,
+ "food": 17,
+ "stock": 37,
+ "cells": 20,
+ "placements": [
+  [
+   31,
+   63,
+   87,
+   "cobblestone"
+  ],
+  [
+   31,
+   64,
+   87,
+   "cobblestone"
+  ],
+  [
+   32,
+   63,
+   86,
+   "cobblestone"
+  ],
+  [
+   32,
+   64,
+   86,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   35,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   40
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 packetRELEASED nowP2actualSTONEpick0, no transfer. Actual6093BOW1,6096 STRING8/FULL146,-36,2231/12.51HP17food. Need4morestring+3wood forspawnBED; no Endcredit. UPPERbank68correctionreceived. P4 courier cannotdescendemptyshaft; P1Westpodretrievalcostmust
+p1: fit.
+p4: P2 actual609?STONEpick0/FULL ACK; existingWOODpick1use spare isenoughP4food, no extraPickproduction. P1 actualBOW ACK recipientARROW5+fooduseful. P4fresh6097 EHEAD68 AIR/ROOF69 AIR/GATE8,67,83 properties{} ratherthanexpectedclosed! P3 anycurrentwriter? P4o
+p4: wnemptyHP20, no mutatingprogramactive. NeedfreshnamedcurrentEblocks before anybodywait/oldCLOSEDclaim; lowerchestabsencealsoobserved6085.
+p4: CURRENT6102 HULLDISCONTINUITY: E8,67/68/69,83 ALLAIR/GATEgone; 9,66,83 floorAIR; North7,67,81 AIR; South7,68,84 AIR. No causeassigned/no currentwriterknown. P4/P3inside20HP butNOTFULLprotected, oldEASTcrossingRETIRED. P2 doNOTstep9,67,83 assumedfloor; uppe
+p4: rbankoutsideusecurrentgeometry! P4foodminimum changes4→8existingcaps torestoremissingfloor+3solidE closure and2headgaps BEFOREroute. No extraproductionquota if40alreadybudgeted.
+p4: P4outerwoodleaseRELEASED outcome SUPPORT_GEOMETRY actualcapnull; no fullcampclaim.
+p4: P4solewriter<=15s OUTERroof5,69,82 SPRUCE aboveFULL5,68DIRT, main6roofunchanged; oneHANDwood pickup→currentEfoot8,67,83 cap. P3staycurrent/no parallelwallcuts; ifyoucollectactualwoodpleaseordinaryBANKupper68. RELEASEfollows.
+--- p2 now: (32.5, 63, 87.5) in overworld, health 12.2/20, food 17/20, alive

@@ -1,0 +1,59 @@
+program #5744 on p1: 7.4 s
+--- output ---
+ACTUAL 1,65,5 5408
+ISSUE CUT_warped_planks actual Vec3 { x: 1.4914232687966829, y: 65, z: 5.464598791184189 }
+HELD_RECOVERY_SUB Vec3 { x: 1, y: 65, z: 4 } dirt crafting_table
+HELD_RECOVERY_SUB Vec3 { x: 1, y: 66, z: 4 } dirt blackstone
+HELD_RECOVERY_SUB Vec3 { x: 2, y: 67, z: 5 } dirt sandstone
+--- returned ---
+{
+ "caller": "p1_iter12_out_south",
+ "entityId": 175,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": 1.4914232687966829,
+  "y": 65,
+  "z": 5.464598791184189
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "CUT_warped_planks",
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   1,
+   65,
+   5
+  ]
+ ],
+ "elapsed": 7369,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "diamond_pickaxe",
+   1,
+   9
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 actual5736 P3EXIT9.798,67,83.494 HP20; HEAD currentFURNACE/ROOFSPRUCE full/GATEclosed, exactrestoredfreshnamedtypes after5735 KIND_furnace preflight. Youinside7.1 noted, EASTwriterRELEASED. I nowwalktree50,84; returnbankfromoutsidefirst avoidsbodyconfli
+p3: ct. Yourfurnace nowwallasset, notlost.
+--- p1 now: (1.5, 65, 5.5) in the_nether, health 20/20, food 20/20, alive

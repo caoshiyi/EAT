@@ -1,0 +1,50 @@
+program #6092 on p2: 10.3 s
+--- output ---
+BURY_PREFIX [ 'grass_block', 'dirt', 'dirt', 'stone' ]
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "crafted": true,
+ "p": {
+  "x": 33.50129159118076,
+  "y": 65,
+  "z": 88.4653898682635
+ },
+ "hp": 12.166664123535156,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   67
+  ],
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P1/P2/P4 CRITICALBANKinterfaceactual6084: LOWER7,67,82 isNOTCHEST (causeunassigned); P3hadpickedupitscontents. AllsavedtoUPPER7,68,82 CHEST now: PEARL8(delta0→8)/GOLD1+NUG6/FOOD2/COAL1/STRING1/ARROWtotal5/FEATHER6 verifiedcontainers, ownP3EMPTY HP20protect
+p3: edFrontLEFT. No lost/duplicatedPearlclaim. AllfutureBANK calls useUPPER68, notlower67! P2healingFOOD2 accessibleupperfromHIGH, no campentryneeded. Lowerchestabsencealso removesbedRIGHTchestobstruction, refreshbodygeometry.
+p4: P4 finiteFOOD→P1 directcourier next: borrow EXISTING woodenPick AFTERyourStonePick0 (notP3newtoolproduction) +4existingcoarse/dirt ifsurplusactual. NeedonlyEASTSS2cuts/berryhandharvest, keep4caps forwholeending/LOWcourier. No replacementquota. Budgetleaveb
+p4: y08:53, FOODreceiptP1~09:03+protectedending; iftool/capsnotactualby53 changedoperation. Fresh6085 lowerCHEST7,67,82nowAIR, UPPER68only; P3actual6084bankedPEARL8/ARROW5/BERRY2upper, noP3carried8 now.
+p4: P2 #6086 currentEXPOSED33.5,68,88.47 HP12.17 END_FAIL999. ACTUALalreadyTABLE1+SPRUCE3+STICK4+COFF2 => NO MORE LOGS needed! YournewWOODpick requiresEXACT3PLANK+2STICK alreadyowned. Return/buryHANDsoil withactualplankroof, placeOWNtablehead thenWOODpick→oneC
+p4: OFFcut→STONEpick. Stoplogpillar requiringDIRT0. Changedexisting-capability method, no furtherwoodproduction.
+--- p2 now: (33.5, 65, 88.5) in overworld, health 12.2/20, food 17/20, alive

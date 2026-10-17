@@ -1,0 +1,11 @@
+# P2 exact220 recap — 09:04 UTC
+
+Caller6201 began09:02:55/7.2s. ActualordinaryBASALT2pickup passed; firstexactplacement(-219,63,-180)refused/stillAIR. Both exactfinallyretry and genericCOFFfallback samecell failed. Returnedpendingtrue/closedfalse,14.5667HP,COFF14/DIRT3/BASALT2/STONEwear96. No retainedROD; no220release. Actualposition(-219.519,63,-179.500) atreturn is historical, not currentphysicalinspection.
+
+**Rejected hypothesis / correction09:04:14:** initialsource-reading proposed residualmovement on shieldMove stable-successreturn. Recheck shows bot.clearControlStates() occurs in the SAME loop iteration BEFORE stable-success test, so that claim was wrong. No need add redundantcontrolclear on that evidence. Proposalretired before physicaltest/adoption; no playercode run/edited. Preserve this counterexample to avoid repeating the misread.
+
+Placementcause remainsunisolated. Smallnextphysicaltest is actualcurrentbody/target/reference/entityclearance and exactBASALTfoot/head recap fromchosenqualifiedstance; no newmaterialproduction or relaxedreceipt. NeedphysicaltargetFULLBASALT2,body/health/controlstop/wholeending+pendingfalse/release. Enables finitecontinuedroute orsafeending, notcompleteRodmission. Sourcecopy P2_SHARED_LATEST.txt; physicaladoptionunknown.
+
+09:04:30 physicalcounterexample6210: ownerindependentlydeactivated/waited10ticks/equipped6ticks/plainplaceBlock; READYusingHeldItemfalse/controls{} andBASALT2, samefootrefused/AIRfoot+head/closedfalse14.5667HP. Thereforewait/equip/plainplacementnotqualifiedrepair. No actualadoptioncredit/sourcecauseproof. Nextchangedgeometry/reference/actualcollisiontest belongsowner; no repeatidenticalretry/claimFULL.
+
+09:05:45 PHYSICAL RESOLUTION6214 at09:05:02/1.9s: changedWALLpose(-219.7,63,-179.500)+SHIELDUNEQUIP combined, BASALTfoot/head restored/whole10facecheckclosedtrue/14.5667HP, issueNULL. Owner4751 EleaseRELEASED/WESTuntouched/ROD0. P3alternativehead-first4752 crossedthissuccess/retracted4754, notadopted/needed. Specialistsourceinvestigationretired; no newplacementproject/redundanttrial. CauseNOTisolatedbecausepose+unequipcombined; prior6210deactivate/wait/plainplacefailed. Independentownerrepair/no specialistcausalcredit. Actualacceptedending supersedesoldpending/unclosed; globalroute417 nowset, notfarm/rodcompletion.

@@ -1,0 +1,49 @@
+program #6085 on p4: 0.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T08:47:03.472Z",
+ "p": {
+  "x": 6.466482744200658,
+  "y": 67.5625,
+  "z": 83.47891346202586
+ },
+ "game": {
+  "serverBrand": "vanilla",
+  "levelType": "default",
+  "hardcore": false,
+  "gameMode": "survival",
+  "dimension": "overworld",
+  "minY": -64,
+  "height": 384,
+  "maxPlayers": 8,
+  "enableRespawnScreen": true,
+  "serverViewDistance": 10
+ },
+ "bank": [
+  [
+   67,
+   "air"
+  ],
+  [
+   68,
+   "chest"
+  ]
+ ],
+ "near": [
+  [
+   {
+    "x": 7,
+    "y": 68,
+    "z": 82
+   },
+   "chest"
+  ]
+ ],
+ "own": [],
+ "hp": 20
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

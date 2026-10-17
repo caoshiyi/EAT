@@ -1,0 +1,276 @@
+program #5882 on p3: 17.7 s
+--- output ---
+ACTUAL -82,54,78 2179
+ACTUAL -83,54,78 2679
+ACTUAL -84,54,78 3231
+ACTUAL -85,54,78 3733
+ACTUAL -86,54,78 4283
+ACTUAL -87,54,78 4784
+ACTUAL -88,54,78 5336
+ACTUAL -89,55,78 5937
+ACTUAL -90,56,78 6740
+ACTUAL -91,57,78 7340
+ACTUAL -92,58,78 7901
+ACTUAL -93,59,78 8503
+ACTUAL -94,60,78 9055
+ACTUAL -95,60,78 9557
+ACTUAL -95,61,79 10157
+ACTUAL -95,60,80 10908
+ACTUAL -95,60,81 11457
+ACTUAL -95,61,82 12058
+ACTUAL -95,62,83 12858
+ACTUAL -95,63,84 13459
+ACTUAL -96,62,84 14160
+ACTUAL -96,63,85 14760
+ACTUAL -97,62,85 15460
+ACTUAL -97,63,86 16061
+ACTUAL -98,63,86 16563
+HELD_RECOVERY_SUB Vec3 { x: -97, y: 63, z: 86 } dirt netherrack
+HELD_RECOVERY_SUB Vec3 { x: -97, y: 64, z: 86 } dirt warped_planks
+--- returned ---
+{
+ "caller": "iter12_out_rock",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -97.49814338900477,
+  "y": 63,
+  "z": 86.50218246794515
+ },
+ "hp": 20,
+ "food": 17,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -82,
+   54,
+   78
+  ],
+  [
+   -83,
+   54,
+   78
+  ],
+  [
+   -84,
+   54,
+   78
+  ],
+  [
+   -85,
+   54,
+   78
+  ],
+  [
+   -86,
+   54,
+   78
+  ],
+  [
+   -87,
+   54,
+   78
+  ],
+  [
+   -88,
+   54,
+   78
+  ],
+  [
+   -89,
+   55,
+   78
+  ],
+  [
+   -90,
+   56,
+   78
+  ],
+  [
+   -91,
+   57,
+   78
+  ],
+  [
+   -92,
+   58,
+   78
+  ],
+  [
+   -93,
+   59,
+   78
+  ],
+  [
+   -94,
+   60,
+   78
+  ],
+  [
+   -95,
+   60,
+   78
+  ],
+  [
+   -95,
+   61,
+   79
+  ],
+  [
+   -95,
+   60,
+   80
+  ],
+  [
+   -95,
+   60,
+   81
+  ],
+  [
+   -95,
+   61,
+   82
+  ],
+  [
+   -95,
+   62,
+   83
+  ],
+  [
+   -95,
+   63,
+   84
+  ],
+  [
+   -96,
+   62,
+   84
+  ],
+  [
+   -96,
+   63,
+   85
+  ],
+  [
+   -97,
+   62,
+   85
+  ],
+  [
+   -97,
+   63,
+   86
+  ],
+  [
+   -98,
+   63,
+   86
+  ]
+ ],
+ "elapsed": 17715,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   61
+  ],
+  [
+   "stone_hoe",
+   1,
+   19
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   60
+  ],
+  [
+   "warped_wart_block",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   49
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 actualtreeSTANCE50,68,85 samebody; twoLOG then8PLANK actualreceipt beforefood.
+p4: P4 actual2LOG→8PLANK inventoryretained, returnreservecovered; nextfinite3matureberrybushes.
+--- p3 now: (-97.5, 63, 86.5) in the_nether, health 20/20, food 17/20, alive

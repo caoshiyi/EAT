@@ -1,0 +1,4 @@
+== #5627 2026-10-17T07:09:32 p3 role=continuity_owner iter=12 0.4 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);if(bot.game.dimension!=='the_nether'||bot.health<18||bot.entity.position.distanceTo(new Vec3(1.5,65,5.7))>.5)throw Error('PRE');const n=()=>bot.inventory.items().filter(i=>i.name==='basalt').reduce((s,i)=>s+i.count,0),before=n();await bot.lookAt(new Vec3(1.6,66.5,4.4),true);await bot.toss(bot.registry.itemsByName.basalt.id,null,3);await bot.waitForTicks(8);return{before,after:n(),p:bot.entity.position,hp:bot.health,players:Object.values(bot.entities).filter(e=>e.username).map(e=>[e.username,e.position])};
+-- returned --
+{"before": 9, "after": 6, "p": {"x": 1.4991774728521146, "y": 65, "z": 5.7}, "hp": 20, "players": [["p3", "[repeated reference]"], ["p2", {"x": 1.2999945196902252, "y": 65, "z": 4.5175577839814185}]]}

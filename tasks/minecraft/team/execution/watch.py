@@ -18,6 +18,8 @@ def summarize_return(raw):
         value = json.loads(raw)
     except (ValueError, TypeError):
         return raw[:1200]
+    if isinstance(value, list):
+        return {'returned_list_count': len(value), 'detail': 'Full array preserved in execution/records; no physical classification inferred.'}
     if not isinstance(value, dict):
         return value
     keys = ['p','actual','dimension','dim','hp','health','food','issue','error','phase',
@@ -101,6 +103,30 @@ def ending_alert(record):
                 break
     return alert
 
+def new_world_event_lines(raw, seen):
+    # Public arena records; event timestamps remain distinct from detection time.
+    return [line for line in raw.splitlines()
+            if re.match(r'^\d{4}-\d{2}-\d{2}T\S+\s+(?:death|advancement)\s+', line)
+            and hashlib.sha256(line.encode()).hexdigest() not in seen]
+
+def scan_world_events():
+    path = OUT / 'world_events_seen.json'
+    seen = set(json.loads(path.read_text())) if path.exists() else set()
+    r = subprocess.run(['python3', 'tools/mc_arena.py', 'events', '--last', '32'],
+                       cwd=ROOT, capture_output=True, text=True, timeout=15)
+    if r.returncode:
+        raise RuntimeError(r.stderr or r.stdout)
+    lines = new_world_event_lines(r.stdout, seen)
+    for line in lines:
+        seen.add(hashlib.sha256(line.encode()).hexdigest())
+        with (OUT / 'world_event_receipts.jsonl').open('a') as stream:
+            stream.write(json.dumps({'observed_at':datetime.now(timezone.utc).isoformat(),
+                                     'arena_event':line,
+                                     'limit':'Event time is in line; first detection may be historical. No current body state inferred.'})+'\n')
+    path.write_text(json.dumps(sorted(seen)))
+    return [{'id':'world_event', 'header':line,
+             'observations':[{'kind':'world_event', 'data':'Public event; reconcile subsequent player receipts/life.'}]} for line in lines]
+
 def scan(last):
     # Fixed command vocabulary intentionally excludes run/say/status/evaluator.
     r = subprocess.run(['python3', 'tools/mc_arena.py', 'programs', '--last', str(last), '--full'],
@@ -134,6 +160,7 @@ def scan(last):
             observations.append({'kind':parts[i], 'data':summarize_return(parts[i+1].strip()) if parts[i]=='returned' else summarize_output(parts[i+1].strip(),parts[i])})
         changed.append({'id': int(key), 'header': m[2], 'observations': observations})
     STATE.write_text(json.dumps(after, sort_keys=True))
+    changed.extend(scan_world_events())
     return changed
 
 if __name__ == '__main__':

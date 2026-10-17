@@ -1,0 +1,97 @@
+program #5826 on p4: 7.7 s
+--- output ---
+ACTUAL_SURFACE Vec3 { x: 31.547736424957307, y: 69, z: 83.51325993744321 } 1
+EMERGE_RETURN_ISSUE Took to long to decide path to goal! Vec3 { x: 25.54327985778697, y: 68, z: 79.21059968462018 }
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "endingIssue": null,
+ "sealed": true,
+ "up": 3,
+ "mineCuts": 4,
+ "minePlacements": [
+  [
+   {
+    "x": 31,
+    "y": 68,
+    "z": 83
+   },
+   "sandstone"
+  ]
+ ],
+ "shaft": {
+  "site": [
+   31,
+   69,
+   83
+  ],
+  "goalY": 42,
+  "started": 1792221877617,
+  "world": "overworld",
+  "current": [
+   31,
+   66,
+   83
+  ],
+  "at": 1792222129558
+ },
+ "at": "2026-10-17T07:28:49.558Z",
+ "p": {
+  "x": 31.5,
+  "y": 66,
+  "z": 83.5
+ },
+ "hp": 19.460081100463867,
+ "food": 17,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "sandstone",
+   3,
+   null
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   241
+  ],
+  [
+   "coal",
+   1,
+   null
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ]
+ ],
+ "controls": {},
+ "campClosed": false,
+ "protectedEnd": true
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (31.5, 66, 83.5) in overworld, health 19.5/20, food 17/20, alive

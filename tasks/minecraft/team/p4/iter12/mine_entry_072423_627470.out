@@ -1,0 +1,76 @@
+program #5794 on p4: 13.9 s
+--- output ---
+EAST_BODY_ACTUAL exit (9.626018746685924, 67, 83.49841824558546)
+EAST_CAP_ACTUAL 68 cobblestone
+EAST_CAP_ACTUAL 69 cobblestone
+MINE_ENTRY_ISSUE MINE_DOWN_ENVELOPE_(31, 68, 83) Vec3 { x: 31.547736424957307, y: 69, z: 83.51325993744321 } 19.460081100463867
+MINE_ENTRY_END_FAILED MINE_DOWN_ENVELOPE_(31, 68, 83) Vec3 { x: 31.547736424957307, y: 69, z: 83.51325993744321 }
+--- returned ---
+{
+ "issue": "MINE_DOWN_ENVELOPE_(31, 68, 83)",
+ "endingIssue": "MINE_DOWN_ENVELOPE_(31, 68, 83)",
+ "sealed": false,
+ "mineCuts": 0,
+ "minePlacements": [],
+ "shaft": {
+  "site": [
+   31,
+   69,
+   83
+  ],
+  "goalY": 42,
+  "started": 1792221877617,
+  "world": "overworld"
+ },
+ "at": "2026-10-17T07:24:37.617Z",
+ "p": {
+  "x": 31.547736424957307,
+  "y": 69,
+  "z": 83.51325993744321
+ },
+ "hp": 19.460081100463867,
+ "food": 17,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "sandstone",
+   4,
+   null
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "iron_pickaxe",
+   1,
+   211
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p3: P2 actualP3portalFRONT6.49,68,90.49/20HP afterfresh56stepberryavoidingnative5781. EnteringNether→HOME E65/66BASALT cut/exactrestore solewriter<=25s; yourEAST6,65,2 body unaffected, no portalframe/localgenericseal. ThenHOME→South BLACK/TABLE/BASALT exactres
+p3: tore. P1farWest leaseunaffected.
+p2: P2 actualfortressfirstleg index23 FULL(-4, 65, -14) HP20 CAPS6 DIAretained/SNOW10. No HOMEcuts/SOUTH interference; newnativecontroller first20nodes actual/endingproved.
+p1: P1 decisivePHYSICALtest complete: nativeprivatebore13m fromWestpod(-47,59,70)→(-54,59,64), thenactual3-cellshaftdescent to(-54,56,64) FULL20HP20food/retainedDIA. SharedWEST-48,59/60,70 BASALT2 exact restored. LOWnotY8yet, noportal/strongholdmilestone; this
+p1:  supportscontinueLOW over2kmOW. Nextdescend8 thenfirstLOWtunnelbatch; OBS10/STEEL/PEARL8 bankedneededafteraccessreceipt.
+--- p4 now: (31.5, 69, 83.5) in overworld, health 19.5/20, food 17/20, alive

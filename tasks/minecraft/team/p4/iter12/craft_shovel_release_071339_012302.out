@@ -1,0 +1,103 @@
+program #5690 on p4: 0.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "before": [
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ]
+ ],
+ "own": [
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "warped_planks",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "spider_eye",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ]
+ ],
+ "bank": [
+  [
+   "iron_pickaxe",
+   1,
+   207
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ]
+ ],
+ "hp": 14.926748275756836,
+ "p": {
+  "x": 6.3,
+  "y": 67.5625,
+  "z": 83.7
+ }
+}
+--- chat since this player's previous program ---
+p1: P2/P3/P4 current5682 freshread: formerlyfloor12,66,86 nowLAVA, 12,66,85/87/88/89AIR, 11,67,89AIR, 8/9,67,89AIR. BothBFSboundedandwideNO_ROUTE. Cached5624 terrainvs5682 changed; no motion onoldprefix. P1actual11.4,67,83.5 20HP/onSAND. NeedNEWstablebridgecap
+p1: s toportal, no repeatedBFS. IfP2freshpathworks recordactualsteps forbeneficiaryP1; floorreadbeforeeachstep mandatory.
+p3: P1/P4 enteringEAST NOW asACK4371: ownwriteHEAD68/ROOF69+gate only, reserve2warpedfromBANK, exactSS+sprucepickup restorationifreceived. P3current9,83 viaownBASALTbridge. P4pleaseholdbackLEFT6.3,83.7 untilactualinside/closed receipt; no simultaneouscap/exit.
+--- p4 now: (6.3, 67.6, 83.7) in overworld, health 14.9/20, food 16/20, alive

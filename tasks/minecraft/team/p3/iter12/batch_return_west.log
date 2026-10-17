@@ -1,0 +1,402 @@
+program #5908 on p3: 35.6 s
+--- output ---
+ACTUAL -80,54,78 7426
+ACTUAL -79,53,78 8177
+ACTUAL -78,52,78 8931
+ACTUAL -77,52,78 9482
+ACTUAL -76,52,78 10033
+ACTUAL -75,53,78 10633
+ACTUAL -75,53,79 11135
+ACTUAL -75,52,80 11836
+ACTUAL -74,52,80 12339
+ACTUAL -73,53,80 12940
+ACTUAL -72,53,80 13440
+ACTUAL -71,53,80 13939
+ACTUAL -70,53,80 14493
+ACTUAL -69,53,80 14994
+ACTUAL -68,54,80 15594
+ACTUAL -67,53,80 16296
+ACTUAL -66,53,80 16849
+ACTUAL -65,53,80 17401
+ACTUAL -64,53,80 17901
+ACTUAL -64,54,79 18502
+ACTUAL -63,54,79 19001
+ACTUAL -62,54,79 19503
+ACTUAL -62,55,78 20053
+ACTUAL -61,54,78 20804
+ACTUAL -60,54,78 21406
+ACTUAL -59,54,78 21957
+ACTUAL -58,54,78 22459
+ACTUAL -57,55,78 23060
+ACTUAL -56,56,78 23861
+ACTUAL -55,57,78 24463
+ACTUAL -54,57,78 24974
+ACTUAL -53,56,78 25676
+ACTUAL -53,57,77 26277
+ACTUAL -53,58,76 26827
+ACTUAL -52,58,76 27377
+ACTUAL -51,58,76 27877
+ACTUAL -50,59,76 28477
+ACTUAL -50,59,75 28978
+ACTUAL -49,58,75 29729
+ACTUAL -48,57,75 30480
+ACTUAL -48,58,74 31082
+ACTUAL -47,58,74 31632
+ACTUAL -47,59,73 32232
+ACTUAL -47,59,72 32732
+ALL_FIVE_END_OR_REVERSE_CAPS 11
+ACTUAL -47,59,71 33934
+ACTUAL -47,59,70 34486
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 59, z: 71 } dirt warped_planks
+HELD_RECOVERY_SUB Vec3 { x: -47, y: 60, z: 71 } dirt warped_planks
+--- returned ---
+{
+ "caller": "iter12_return_west",
+ "entityId": 173,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -46.49892347446108,
+  "y": 59,
+  "z": 70.50993589375858
+ },
+ "hp": 20,
+ "food": 17,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -80,
+   54,
+   78
+  ],
+  [
+   -79,
+   53,
+   78
+  ],
+  [
+   -78,
+   52,
+   78
+  ],
+  [
+   -77,
+   52,
+   78
+  ],
+  [
+   -76,
+   52,
+   78
+  ],
+  [
+   -75,
+   53,
+   78
+  ],
+  [
+   -75,
+   53,
+   79
+  ],
+  [
+   -75,
+   52,
+   80
+  ],
+  [
+   -74,
+   52,
+   80
+  ],
+  [
+   -73,
+   53,
+   80
+  ],
+  [
+   -72,
+   53,
+   80
+  ],
+  [
+   -71,
+   53,
+   80
+  ],
+  [
+   -70,
+   53,
+   80
+  ],
+  [
+   -69,
+   53,
+   80
+  ],
+  [
+   -68,
+   54,
+   80
+  ],
+  [
+   -67,
+   53,
+   80
+  ],
+  [
+   -66,
+   53,
+   80
+  ],
+  [
+   -65,
+   53,
+   80
+  ],
+  [
+   -64,
+   53,
+   80
+  ],
+  [
+   -64,
+   54,
+   79
+  ],
+  [
+   -63,
+   54,
+   79
+  ],
+  [
+   -62,
+   54,
+   79
+  ],
+  [
+   -62,
+   55,
+   78
+  ],
+  [
+   -61,
+   54,
+   78
+  ],
+  [
+   -60,
+   54,
+   78
+  ],
+  [
+   -59,
+   54,
+   78
+  ],
+  [
+   -58,
+   54,
+   78
+  ],
+  [
+   -57,
+   55,
+   78
+  ],
+  [
+   -56,
+   56,
+   78
+  ],
+  [
+   -55,
+   57,
+   78
+  ],
+  [
+   -54,
+   57,
+   78
+  ],
+  [
+   -53,
+   56,
+   78
+  ],
+  [
+   -53,
+   57,
+   77
+  ],
+  [
+   -53,
+   58,
+   76
+  ],
+  [
+   -52,
+   58,
+   76
+  ],
+  [
+   -51,
+   58,
+   76
+  ],
+  [
+   -50,
+   59,
+   76
+  ],
+  [
+   -50,
+   59,
+   75
+  ],
+  [
+   -49,
+   58,
+   75
+  ],
+  [
+   -48,
+   57,
+   75
+  ],
+  [
+   -48,
+   58,
+   74
+  ],
+  [
+   -47,
+   58,
+   74
+  ],
+  [
+   -47,
+   59,
+   73
+  ],
+  [
+   -47,
+   59,
+   72
+  ],
+  [
+   -47,
+   59,
+   71
+  ],
+  [
+   -47,
+   59,
+   70
+  ]
+ ],
+ "elapsed": 35639,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "warped_roots",
+   3,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   100
+  ],
+  [
+   "wooden_shovel",
+   1,
+   53
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "rotten_flesh",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "warped_fungus",
+   2,
+   null
+  ],
+  [
+   "quartz",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   61
+  ],
+  [
+   "stone_hoe",
+   1,
+   19
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   79
+  ],
+  [
+   "stone_axe",
+   1,
+   62
+  ],
+  [
+   "warped_wart_block",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   54
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-46.5, 59, 70.5) in the_nether, health 20/20, food 17/20, alive

@@ -1,0 +1,100 @@
+program #5787 on p1: 17.4 s
+--- output ---
+BORE_ACTUAL [ -51, 59, 70 ] 20
+BORE_ACTUAL [ -52, 59, 70 ] 20
+BORE_ACTUAL [ -53, 59, 70 ] 20
+BORE_ACTUAL [ -54, 59, 70 ] 20
+BORE_ACTUAL [ -54, 59, 69 ] 20
+BORE_ACTUAL [ -54, 59, 68 ] 20
+BORE_ACTUAL [ -54, 59, 67 ] 20
+BORE_ACTUAL [ -54, 59, 66 ] 20
+BORE_ACTUAL [ -54, 59, 65 ] 20
+BORE_ACTUAL [ -54, 59, 64 ] 20
+CLOSED true
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": -53.500111623151476,
+  "y": 59,
+  "z": 64.50193673585308
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "cuts": 20,
+ "moved": [
+  [
+   -51,
+   59,
+   70
+  ],
+  [
+   -52,
+   59,
+   70
+  ],
+  [
+   -53,
+   59,
+   70
+  ],
+  [
+   -54,
+   59,
+   70
+  ],
+  [
+   -54,
+   59,
+   69
+  ],
+  [
+   -54,
+   59,
+   68
+  ],
+  [
+   -54,
+   59,
+   67
+  ],
+  [
+   -54,
+   59,
+   66
+  ],
+  [
+   -54,
+   59,
+   65
+  ],
+  [
+   -54,
+   59,
+   64
+  ]
+ ],
+ "full": true,
+ "inv": [
+  [
+   "basalt",
+   20,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   44
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-53.5, 59, 64.5) in the_nether, health 20/20, food 20/20, alive

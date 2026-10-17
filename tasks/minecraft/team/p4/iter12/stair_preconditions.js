@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{at:new Date().toISOString(),start:[20,68,90],column:[67,66,65,64].map(y=>[y,bot.blockAt(new Vec3(20,y,90))?.name]),eastSoilStair:[[21,66,90],[22,67,90],[23,68,90]].map(a=>[a,[-1,0,1,2].map(y=>bot.blockAt(new Vec3(...a).offset(0,y,0))?.name)]),own:bot.inventory.items().map(i=>[i.name,i.count]),p:bot.entity.position,hp:bot.health};

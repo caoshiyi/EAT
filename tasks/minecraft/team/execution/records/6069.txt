@@ -1,0 +1,81 @@
+== #6069 2026-10-17T08:42:03 p2 role=independent_operator iter=12 3.4 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let issue=null,closed=false;const full=q=>bot.blockAt(q)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');try{const o=bot.entity.position.floored();console.log('MOBS',Object.values(bot.entities).filter(e=>['skeleton','zombie','spider','creeper'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<25).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]));await bot.equip(bot.inventory.items().find(i=>i.name==='stone_axe'),'hand');for(let k=0;k<15;k++){const p=bot.entity.position,d=Math.hypot(p.x-o.x-.5,p.z-o.z-.5);if(d<.08)break;await bot.lookAt(o.offset(.5,1.5,.5),true);bot.setControlState('forward',true);await bot.waitForTicks(1)}bot.clearControlStates();await bot.waitForTicks(10);for(let n=0;n<4;n++){const q=bot.entity.position.floored();if(q.y<=65)break;const b=bot.blockAt(q.offset(0,-1,0));if(!['sand','dirt','grass_block','gravel'].includes(b.name))throw Error('SOIL_'+b.name);await bot.unequip('hand');await bot.dig(b,true);await bot.waitForTicks(12)}
+const q=bot.entity.position.floored(),t=q.offset(0,2,0),it=bot.inventory.items().find(i=>['dirt','cobblestone'].includes(i.name));const ref=[[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>t.offset(x,0,z)).find(full);await bot.equip(it,'hand');await bot._placeBlockWithOptions(bot.blockAt(ref),t.minus(ref),{forceLook:true});await bot.waitForTicks(4);closed=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].every(a=>full(q.offset(...a)));
+}catch(e){issue=e.message}finally{bot.clearControlStates();bot.deactivateItem()}return{issue,closed,p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+MOBS [
+  [
+    104,
+    'zombie',
+    Vec3 { x: 6.912402331829071, y: 60, z: 82.69990235567093 },
+    20
+  ],
+  [
+    105,
+    'zombie',
+    Vec3 { x: 8.357537165942336, y: 60, z: 82.30000001192093 },
+    4.807599067687988
+  ],
+  [
+    106,
+    'zombie',
+    Vec3 { x: 12.699999988079071, y: 60, z: 97.69999998807907 },
+    19.059999465942383
+  ],
+  [
+    107,
+    'zombie',
+    Vec3 { x: 12.677593030963758, y: 60, z: 88.86424641897925 },
+    19.059999465942383
+  ],
+  [
+    108,
+    'zombie',
+    Vec3 { x: 6.2999473758772755, y: 60, z: 82.70001617711284 },
+    19.059999465942383
+  ],
+  [
+    110,
+    'creeper',
+    Vec3 { x: 12.495172907384768, y: 60, z: 83.78101951528431 },
+    20
+  ],
+  [
+    127,
+    'zombie',
+    Vec3 { x: 12.185239944216736, y: 60, z: 82.49296873807907 },
+    20
+  ],
+  [
+    8808,
+    'zombie',
+    Vec3 { x: 11.237500011920929, y: 60, z: 97.56083983182907 },
+    20
+  ],
+  [
+    13372,
+    'zombie',
+    Vec3 { x: 7.520222848565619, y: 60, z: 82.30000001192093 },
+    18
+  ],
+  [
+    21202,
+    'skeleton',
+    Vec3 { x: 6.699999988079071, y: 63, z: 89.39763707017227 },
+    20
+  ],
+  [
+    21217,
+    'creeper',
+    Vec3 { x: -5.807860856204923, y: 64, z: 85.15759984357574 },
+    20
+  ],
+  [
+    21381,
+    'spider',
+    Vec3 { x: 37.784861570274686, y: 68, z: 69.12134047264254 },
+    16
+  ]
+]
+-- returned --
+{"issue": null, "closed": true, "p": {"x": 17.652452918316886, "y": 65, "z": 81.3}, "hp": 12.166664123535156, "inv": [["sand", 3, null], ["cobblestone", 2, null], ["stone_axe", 1, 64], ["stick", 4, null]]}

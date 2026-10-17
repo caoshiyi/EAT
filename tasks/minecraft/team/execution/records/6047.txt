@@ -1,0 +1,78 @@
+== #6047 2026-10-17T08:33:16 p1 role=experiment_owner iter=12 0.2 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);for(let a of[[136,2242],[137,2242],[137,2241],[137,2240],[138,2240],[138,2239],[139,2240],[140,2239]]){let col=[];for(let y=-39;y<=-28;y++){let b=bot.blockAt(new Vec3(a[0],y,a[1]));if(b?.boundingBox!=='empty')col.push([y,b?.name])}console.log('LIBCOL',a,col)}console.log('LIBMOBS',Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.x>133&&e.position.x<152&&e.position.z>2223&&e.position.z<2244).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]));console.log('CURRENT',bot.entity.position,bot.health,bot.food);
+-- output --
+LIBCOL [ 136, 2242 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'cracked_stone_bricks' ],
+  [ -36, 'mossy_stone_bricks' ],
+  [ -35, 'cracked_stone_bricks' ],
+  [ -34, 'cracked_stone_bricks' ],
+  [ -33, 'cracked_stone_bricks' ],
+  [ -32, 'stone_bricks' ],
+  [ -31, 'cracked_stone_bricks' ],
+  [ -30, 'cracked_stone_bricks' ],
+  [ -29, 'stone_bricks' ],
+  [ -28, 'stone_bricks' ]
+]
+LIBCOL [ 137, 2242 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'stone_bricks' ],
+  [ -36, 'mossy_stone_bricks' ],
+  [ -35, 'mossy_stone_bricks' ],
+  [ -34, 'cracked_stone_bricks' ],
+  [ -33, 'stone_bricks' ],
+  [ -32, 'stone_bricks' ],
+  [ -31, 'cracked_stone_bricks' ],
+  [ -30, 'mossy_stone_bricks' ],
+  [ -29, 'cracked_stone_bricks' ],
+  [ -28, 'stone_bricks' ]
+]
+LIBCOL [ 137, 2241 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'stone_bricks' ],
+  [ -36, 'oak_planks' ],
+  [ -35, 'oak_planks' ],
+  [ -34, 'oak_planks' ],
+  [ -33, 'oak_planks' ],
+  [ -32, 'oak_planks' ],
+  [ -31, 'oak_planks' ],
+  [ -30, 'oak_planks' ],
+  [ -29, 'oak_planks' ],
+  [ -28, 'oak_planks' ]
+]
+LIBCOL [ 137, 2240 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'cracked_stone_bricks' ],
+  [ -32, 'oak_planks' ]
+]
+LIBCOL [ 138, 2240 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'stone_bricks' ],
+  [ -32, 'oak_planks' ]
+]
+LIBCOL [ 138, 2239 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'stone_bricks' ],
+  [ -32, 'oak_planks' ]
+]
+LIBCOL [ 139, 2240 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'infested_stone_bricks' ],
+  [ -32, 'oak_planks' ]
+]
+LIBCOL [ 140, 2239 ] [
+  [ -39, 'deepslate' ],
+  [ -38, 'deepslate' ],
+  [ -37, 'cracked_stone_bricks' ],
+  [ -32, 'oak_planks' ],
+  [ -31, 'oak_fence' ]
+]
+LIBMOBS []
+CURRENT Vec3 { x: 129.7, y: -38, z: 2272.498119399364 } 12.510251998901367 17

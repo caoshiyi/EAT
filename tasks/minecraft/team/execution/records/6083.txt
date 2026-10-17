@@ -1,0 +1,9 @@
+== #6083 2026-10-17T08:46:57 p4 role=integration_operator iter=12 0 s
+const{Vec3}=require('vec3');let c;const banks=[];try{for(const y of[67,68]){c=await bot.openChest(bot.blockAt(new Vec3(7,y,82)));banks.push([y,c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed])]);c.close();c=null;await bot.waitForTicks(2)}return{at:new Date().toISOString(),banks,shaft31:[68,67,66,65,64,63,62,61].map(y=>[y,bot.blockAt(new Vec3(31,y,83))?.name]),shaft30:[68,67,66].map(y=>[y,bot.blockAt(new Vec3(30,y,83))?.name]),p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count])}}finally{if(c)c.close();bot.clearControlStates()}
+-- error --
+Error: containerToOpen is neither a block nor an entity
+    at Proxy.openContainer (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/chest.js:23:13)
+    at p4-program-6083.js:1:89
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:386:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

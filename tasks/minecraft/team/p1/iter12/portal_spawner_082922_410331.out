@@ -1,0 +1,33 @@
+program #6042 on p1: 5.9 s
+--- output ---
+MINE_RAY 4.44346751272684 Vec3 { x: 134, y: -38, z: 2272 }
+CLOSE_FAIL PUT_KIND
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 129.7,
+  "y": -38,
+  "z": 2272.498119399364
+ },
+ "hp": 12.510251998901367,
+ "food": 17,
+ "closed": false,
+ "broken": true,
+ "spawner": "air",
+ "mobs": [
+  [
+   18995,
+   {
+    "x": 132.33184287214476,
+    "y": -40,
+    "z": 2271.305950263681
+   },
+   8
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (129.7, -38, 2272.5) in overworld, health 12.5/20, food 17/20, alive

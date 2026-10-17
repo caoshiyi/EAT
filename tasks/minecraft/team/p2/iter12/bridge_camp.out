@@ -1,0 +1,193 @@
+program #5711 on p2: 18.5 s
+--- output ---
+NATIVE_PLAN [
+  Vec3 { x: 10, y: 68, z: 90 },
+  Vec3 { x: 10, y: 67, z: 91 },
+  Vec3 { x: 10, y: 66, z: 92 },
+  Vec3 { x: 11, y: 66, z: 92 },
+  Vec3 { x: 12, y: 66, z: 92 },
+  Vec3 { x: 13, y: 67, z: 92 },
+  Vec3 { x: 13, y: 66, z: 93 },
+  Vec3 { x: 13, y: 67, z: 94 },
+  Vec3 { x: 13, y: 67, z: 95 },
+  Vec3 { x: 14, y: 67, z: 95 },
+  Vec3 { x: 15, y: 67, z: 95 },
+  Vec3 { x: 16, y: 67, z: 95 },
+  Vec3 { x: 17, y: 68, z: 95 },
+  Vec3 { x: 18, y: 68, z: 95 },
+  Vec3 { x: 19, y: 68, z: 95 },
+  Vec3 { x: 20, y: 68, z: 95 },
+  Vec3 { x: 20, y: 68, z: 94 },
+  Vec3 { x: 20, y: 68, z: 93 },
+  Vec3 { x: 20, y: 68, z: 92 },
+  Vec3 { x: 20, y: 68, z: 91 },
+  Vec3 { x: 20, y: 68, z: 90 },
+  Vec3 { x: 20, y: 68, z: 89 },
+  Vec3 { x: 20, y: 68, z: 88 },
+  Vec3 { x: 20, y: 67, z: 87 },
+  Vec3 { x: 20, y: 67, z: 86 },
+  Vec3 { x: 20, y: 67, z: 85 },
+  Vec3 { x: 19, y: 67, z: 85 },
+  Vec3 { x: 18, y: 67, z: 85 },
+  Vec3 { x: 18, y: 67, z: 84 },
+  Vec3 { x: 17, y: 67, z: 84 },
+  Vec3 { x: 16, y: 67, z: 84 },
+  Vec3 { x: 15, y: 67, z: 84 },
+  Vec3 { x: 14, y: 67, z: 84 },
+  Vec3 { x: 13, y: 68, z: 84 },
+  Vec3 { x: 12, y: 68, z: 84 },
+  Vec3 { x: 11, y: 67, z: 84 },
+  Vec3 { x: 10, y: 67, z: 84 },
+  Vec3 { x: 9, y: 67, z: 84 },
+  Vec3 { x: 9, y: 67, z: 83 }
+]
+ISSUE DAMAGE_END Vec3 { x: 20.500105352238307, y: 68, z: 90.2087592428281 }
+--- returned ---
+{
+ "issue": "DAMAGE_END",
+ "bridged": true,
+ "completed": false,
+ "p": {
+  "x": 20.500105352238307,
+  "y": 68,
+  "z": 90.2087592428281
+ },
+ "hp": 19,
+ "placements": [
+  [
+   8,
+   67,
+   89,
+   "moss_block"
+  ],
+  [
+   9,
+   67,
+   89,
+   "basalt"
+  ]
+ ],
+ "route": [
+  [
+   10,
+   68,
+   90
+  ],
+  [
+   10,
+   67,
+   91
+  ],
+  [
+   10,
+   66,
+   92
+  ],
+  [
+   11,
+   66,
+   92
+  ],
+  [
+   12,
+   66,
+   92
+  ],
+  [
+   13,
+   67,
+   92
+  ],
+  [
+   13,
+   66,
+   93
+  ],
+  [
+   13,
+   67,
+   94
+  ],
+  [
+   13,
+   67,
+   95
+  ],
+  [
+   14,
+   67,
+   95
+  ],
+  [
+   15,
+   67,
+   95
+  ],
+  [
+   16,
+   67,
+   95
+  ],
+  [
+   17,
+   68,
+   95
+  ],
+  [
+   18,
+   68,
+   95
+  ],
+  [
+   19,
+   68,
+   95
+  ],
+  [
+   20,
+   68,
+   95
+  ],
+  [
+   20,
+   68,
+   94
+  ],
+  [
+   20,
+   68,
+   93
+  ],
+  [
+   20,
+   68,
+   92
+  ],
+  [
+   20,
+   68,
+   91
+  ],
+  [
+   20,
+   68,
+   90
+  ]
+ ],
+ "inv": [
+  [
+   "diamond_pickaxe",
+   1,
+   16
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P1/P4/P2 actual5699 DELIVERY ENDING COMPLETE: P3 INSIDE7.346,67.5625,83.446 HP20food18; EHEAD68=SANDSTONE/ROOF69=SPRUCE_PLANKS full/gateCLOSED. Pearl8bank independentlyP4verified5675. EASTwrite RELEASEDtoP4forfoodkit. BodycurrentlybedRIGHT: P4please moveFR
+p3: ONTLEFT6.3,82.4 first (clearofme), thenIshiftbackLEFT6.3,83.7 tofreeyourcross. No claimfrontclearuntilactual.
+p3: P4 cannotP3movewesttofrontLEFT withoutpassingwithin0.43m ofyourbackLEFT6.3,83.7 body; northisblockedCHEST7,82 untilP3x<=6.7. BetterYOURfirstnorth x6.3,z83.7→82.4 (separated1.05m frommy7.35), thenP3westtobackLEFT6.3,83.7; actualreceiptsonebyone. EASTalready
+p3: closedandwriterrelease5699, pleaseFIRSTmovefrontleft.
+p4: P3 actualP4 FRONTLEFT6.3,82.35 now/same14.927HP/controlsfalse, freefor yourbackLEFT6.3,83.7 swap per4394. Own2caps+SHOVEL0/IRON207 gate-onlyloan5705, scope FOOD+22SNOW only/P2selfcaps. Afteryouractualbackpose I movebackRIGHT/crossEast thenrelease; producti
+p4: on+endingbudget135s.
+p1: P2 actualP1 at10,68,89 (10.500037722526514, 68, 89.5055768611864) HP20 guardednativeeastdetour demonstrated. Needyour2gapfloorreceipt8/9,67,89 beforecross; no newquarry.
+--- p2 now: (20.5, 68, 90.2) in overworld, health 19/20, food 17/20, alive

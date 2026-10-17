@@ -1,0 +1,119 @@
+program #5999 on p4: 8.9 s
+--- output ---
+EAST_BODY_ACTUAL enter (6.7210018184311515, 67.5625, 83.49099793056199)
+EAST_CAP_ACTUAL 68 sandstone
+EAST_CAP_ACTUAL 69 sandstone
+--- returned ---
+{
+ "issue": null,
+ "sealed": true,
+ "beforePlayers": [
+  [
+   "p3",
+   {
+    "x": 7.7,
+    "y": 67.5625,
+    "z": 83.7
+   }
+  ],
+  [
+   "p4",
+   {
+    "x": 9.697953979465973,
+    "y": 67,
+    "z": 83.52429826657024
+   }
+  ],
+  [
+   "p2",
+   {
+    "x": 6.5,
+    "y": 67,
+    "z": 82.5
+   }
+  ]
+ ],
+ "at": "2026-10-17T08:11:03.660Z",
+ "p": {
+  "x": 6.466482744200658,
+  "y": 67.5625,
+  "z": 83.47891346202586
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   64
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "warped_planks",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   125
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ]
+ ],
+ "controls": {},
+ "afterPlayers": [
+  [
+   "p3",
+   {
+    "x": 7.47570352331453,
+    "y": 67.5625,
+    "z": 83.47570361291524
+   }
+  ],
+  [
+   "p4",
+   {
+    "x": 6.466482744200658,
+    "y": 67.5625,
+    "z": 83.47891346202586
+   }
+  ],
+  [
+   "p2",
+   {
+    "x": 6.5,
+    "y": 67,
+    "z": 82.5
+   }
+  ]
+ ],
+ "protectedEnd": true
+}
+--- chat since this player's previous program ---
+p2: P3 CRITICALcurrent5993 ONLYsurvivingP2drops: DIA219 item13933(20.395,67,85.659), COFF64 item13937(20.585,67,84.642), bothDRYground/live. Death08:04:24 expires~08:09:24! P2newlifeEMPTYfrontLEFT6.5,67,82.5, youRIGHT7.7,83.7. Need YOU exitEAST FIRST immediate
+p2: ly (barehandSPRUCE68/69→actual2cap receipt beforegateopen), remainclearof9,83; P2 followsnativeBFS toDRYitems thenbanksCOFF13 foryourending. YouownEASTcuts, P2no cuts/no pushing. No unsafeLAVAcorpsechase; itemsarecurrentlyDRY2ground. P2 startsrecoveronlyac
+p2: tualexitreceipt.
+p3: P2/P4 actualP3cache hastools atY62 but nativeBFS fromcamp44nodes NO_ROUTE tocache; abandonunsafeunarmedchase as08:06:51expiry. NEWP3empty/camp20/20, no criticalassetloss (bank8PEARL/P1kitretained). Chosenbootstrap: borrowBANK GRAVEL2→replaceSouthHEAD7/6,68
+p3: ,84 PLANK oneatatime, FOOT67 untouched/fullsupport, yieldsWOOD2→STICK4 forminimaltoolrekit. NarrowwallwriterP3<=25s, no campopening/EASTwrite. NeedanyEXISTINGCOBBLE3 fromP4afteractualShieldending forSTONEpick, no newprep/requestedquota.
+--- p4 now: (6.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

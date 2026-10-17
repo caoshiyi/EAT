@@ -1,0 +1,118 @@
+program #6121 on p4: 1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T08:52:40.350Z",
+ "issue": "PARTIAL_CAP_STOCK",
+ "loans": [
+  [
+   "wooden_pickaxe",
+   0
+  ],
+  [
+   "cobblestone",
+   0
+  ]
+ ],
+ "placed": [
+  [
+   [
+    7,
+    67,
+    81
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    7,
+    67,
+    82
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    7,
+    68,
+    84
+   ],
+   "cobblestone"
+  ],
+  [
+   [
+    8,
+    67,
+    83
+   ],
+   "cobblestone"
+  ]
+ ],
+ "targets": [
+  [
+   "[repeated reference]",
+   "cobblestone",
+   true
+  ],
+  [
+   "[repeated reference]",
+   "cobblestone",
+   true
+  ],
+  [
+   "[repeated reference]",
+   "cobblestone",
+   true
+  ],
+  [
+   "[repeated reference]",
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    8,
+    68,
+    83
+   ],
+   "air",
+   false
+  ],
+  [
+   [
+    8,
+    69,
+    83
+   ],
+   "air",
+   false
+  ],
+  [
+   [
+    9,
+    66,
+    83
+   ],
+   "air",
+   false
+  ]
+ ],
+ "allFull": false,
+ "hp": 20,
+ "p": {
+  "x": 6.466482744200658,
+  "y": 67.5625,
+  "z": 83.47891346202586
+ },
+ "own": [
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P4actualUPPERBANK68 WOODpick1use+COFF4 deposited/verifiedcontainer; loanRELEASED. P2outside9,67,84, noEASTwriter/noassumedgatefloor. FOOD2withdrawactual ifheld, onwardOWNportal.
+--- p4 now: (6.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

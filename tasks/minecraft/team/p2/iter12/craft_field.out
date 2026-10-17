@@ -1,0 +1,36 @@
+program #6065 on p2: 14.1 s
+--- output ---
+ISSUE THREAT_[21202,"skeleton",{"x":-5.300000011920929,"y":64.41999998688698,"z":86.63504389405105}] Vec3 { x: 12.878752313241407, y: 68, z: 84.49987420473444 }
+END_FAIL END_NEED_12_HAVE_3
+--- returned ---
+{
+ "issue": "THREAT_[21202,\"skeleton\",{\"x\":-5.300000011920929,\"y\":64.41999998688698,\"z\":86.63504389405105}]",
+ "closed": false,
+ "crafted": false,
+ "p": {
+  "x": 12.50247498500882,
+  "y": 68,
+  "z": 84.4999511971859
+ },
+ "hp": 20,
+ "inv": [
+  [
+   "stone_axe",
+   1,
+   64
+  ],
+  [
+   "cobblestone",
+   3,
+   null
+  ],
+  [
+   "stick",
+   4,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (12.5, 68, 84.5) in overworld, health 20/20, food 20/20, alive

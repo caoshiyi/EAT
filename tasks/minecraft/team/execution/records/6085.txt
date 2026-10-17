@@ -1,0 +1,4 @@
+== #6085 2026-10-17T08:47:03 p4 role=integration_operator iter=12 0.3 s
+const{Vec3}=require('vec3');bot.clearControlStates();await bot.waitForTicks(5);return{at:new Date().toISOString(),p:bot.entity.position,game:bot.game,bank:[67,68].map(y=>[y,bot.blockAt(new Vec3(7,y,82))?.name]),near:bot.findBlocks({matching:b=>/chest/.test(b.name),maxDistance:6,count:10}).map(p=>[p,bot.blockAt(p).name]),own:bot.inventory.items().map(i=>[i.name,i.count]),hp:bot.health};
+-- returned --
+{"at": "2026-10-17T08:47:03.472Z", "p": {"x": 6.466482744200658, "y": 67.5625, "z": 83.47891346202586}, "game": {"serverBrand": "vanilla", "levelType": "default", "hardcore": false, "gameMode": "survival", "dimension": "overworld", "minY": -64, "height": 384, "maxPlayers": 8, "enableRespawnScreen": true, "serverViewDistance": 10}, "bank": [[67, "air"], [68, "chest"]], "near": [[{"x": 7, "y": 68, "z": 82}, "chest"]], "own": [], "hp": 20}

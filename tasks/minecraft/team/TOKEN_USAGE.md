@@ -1,3 +1,2 @@
-# Iteration 11 token usage
-
-2026-10-17T05:06:06.531279+00:00: unavailable. No permitted runner token measurement exposed. No prohibited locations accessed.
+# Token usage — iteration12
+Unavailable: no permitted authoritative per-agent token counters exposed. agent_team/BUDGET.md records dollar values of 0.0, not token counts; no token totals inferred. No prohibited locations inspected.

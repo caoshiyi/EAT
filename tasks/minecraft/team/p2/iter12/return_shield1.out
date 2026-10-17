@@ -1,0 +1,140 @@
+program #5898 on p2: 12.2 s
+--- output ---
+COLUMN Vec3 { x: -203, y: 63, z: -180 } { cobblestone: 2 } { cobblestone: 2 }
+ISSUE NO_RETURN_END_5 399 Vec3 { x: -201.47010580299354, y: 63, z: -179.5000445328757 } 5
+--- returned ---
+{
+ "issue": "NO_RETURN_END_5",
+ "current": 393,
+ "target": -1,
+ "closed": true,
+ "p": {
+  "x": -195.47192202447917,
+  "y": 63,
+  "z": -179.50004424474335
+ },
+ "hp": 20,
+ "food": 17,
+ "stock": 1,
+ "receipts": [
+  [
+   {
+    "x": -204,
+    "y": 64,
+    "z": -181
+   },
+   "netherrack",
+   1
+  ],
+  [
+   {
+    "x": -204,
+    "y": 64,
+    "z": -179
+   },
+   "netherrack",
+   1
+  ],
+  [
+   {
+    "x": -205,
+    "y": 64,
+    "z": -181
+   },
+   "cobblestone",
+   0
+  ],
+  [
+   {
+    "x": -205,
+    "y": 64,
+    "z": -179
+   },
+   "cobblestone",
+   1
+  ],
+  [
+   {
+    "x": -205,
+    "y": 65,
+    "z": -180
+   },
+   "cobblestone",
+   1
+  ]
+ ],
+ "placements": [
+  [
+   -203,
+   63,
+   -181,
+   "netherrack"
+  ],
+  [
+   -202,
+   63,
+   -181,
+   "netherrack"
+  ],
+  [
+   -195,
+   63,
+   -180,
+   "dirt"
+  ],
+  [
+   -195,
+   64,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   63,
+   -180,
+   "cobblestone"
+  ],
+  [
+   -197,
+   64,
+   -180,
+   "cobblestone"
+  ]
+ ],
+ "inv": [
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   81
+  ],
+  [
+   "stone_sword",
+   1,
+   72
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P2 ACKfresh120lease ONLYDIRT121,63 z-180 cut/actualpickup/EXACTDIRTrecap, other3AIRasfound; ownFULLending+release. No220queue/lease, P1farLOW.
+p4: P2 ACK actual5877 ShieldOFFHAND+FOOD7+PLANK8/SS2/COBBLE1 campCLOSED/sameHP. IstageSHIELD+FOOD6+CAPS9 at OWportal NORTHrow6,68,89 by07:44; youNether→OWarrival7.5,68,91.5 thenrecipientstand7,68,89 (adjacent6) forordinarytoss. ThisavoidsP4newNetherbody/HOMEcu
+p4: ts; onlyyou2secportaltransition+~2mwalk, no campdetour. Iretain2capsforOWNcampending. Acceptance actualyourSHIELDoffhand45+foodconsume/owncaps, thenyourportalreturn/fullpod ending +myclosedcamp. No HOME/EASTpodwrites P4.
+p3: P1/P2/P4 early07:42 checkpoint: actual5888 Native56 FULL20HP17food, firstboundedencounter5890 NO_VISIBLE_TARGET/0swings/0PEARL across4poses. Compareclimb27mcanopy vsreturn: chooseRETURN now, no repeatedspawnwait or extra tools. One-pearlquantity NOTachieve
+p3: d/no bank9 claim. Existing8remainOWbank. CurrentcriticalP1kitdelivery alreadycomplete; I returnOWforEye-forge/delivery staging and inspectexistingEndgearstock, no P4/P2shieldduplicate.
+p4: P2 refineCURRENTbodies: IstageOW row9,68,89 (BASALT) tokeepyourarrivalroute6,68,90→6/7,68,89 CLEAR. RecipientYOU row8,68,89 (MOSS), adjacentwestofP4. Afteryouractualstablepose IordinarytossShield+FOOD6+actualsparecaps (retain2ownreturncaps; offered9subject
+p4: toexitpickups). Youwaitforactualinventory→equipOFFHAND45→consume2berries→report/NetherreturnFULL. Handoffabsolute07:46:30 thenmyclosedcampending≤07:48.
+--- p2 now: (-195.5, 63, -179.5) in the_nether, health 20/20, food 17/20, alive
