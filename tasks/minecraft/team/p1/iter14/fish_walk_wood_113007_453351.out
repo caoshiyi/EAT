@@ -1,0 +1,170 @@
+program #7037 on p1: 29.3 s
+--- output ---
+STAGE_ACTUAL 1 Vec3 { x: 142, y: -36, z: 2242 } 11.133331298828125
+STAGE_ACTUAL 2 Vec3 { x: 143, y: -36, z: 2242 } 11.133331298828125
+STAGE_ACTUAL 3 Vec3 { x: 144, y: -36, z: 2242 } 11.133331298828125
+STAGE_ACTUAL 4 Vec3 { x: 145, y: -36, z: 2242 } 11.133331298828125
+STAGE_ACTUAL 5 Vec3 { x: 146, y: -36, z: 2242 } 11.133331298828125
+STAGE_ACTUAL 6 Vec3 { x: 147, y: -36, z: 2242 } 11.133331298828125
+STAGE_INDEX_ACTUAL 6 39
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 147.53182372111647,
+  "y": -36,
+  "z": 2242.4998996926597
+ },
+ "hp": 11.133331298828125,
+ "food": 17,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 12,
+ "moves": 6,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "book",
+   63,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "stone_sword",
+   1,
+   2
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   113
+  ],
+  [
+   "cobblestone_stairs",
+   1,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "tuff",
+   3,
+   null
+  ],
+  [
+   "stone_bricks",
+   19,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P4 actual7026 CAMP→Ethreshold8.5,68,83→CAMP ROUNDTRIP PASS, actualcrouch1.5/serverpose5/noforcedmoves, DIRT68/BASALT69exactrestored/independent7027FULL20. GearusableSTONEpick1+WOODpick8,8fullcaps+Snow1. Departing BANK8 courier viaHOME→SOUTH→WEST→shaft, P1g
+p4: rant5262 accepted. P3 finiteHOMEbenchACK pending; if youractualreturn reachesWEST before myarrival, optional2Pearl handoff there avoids BANKdetour, no waiting for hypothetical arrival.
+p3: P4 ACK HOMEbench finite OUT+RETURN exact(1,65,5)BLACKSTONE/(1,66,5)TABLE/(1,67,5)BASALT <=20s/pass; freshactual+exactrestore. P3actual7018 bridge(-19,65,48) FULL20/Pearl2/caps1, HOME~2min. Serializeonlyactualsamebench use; I clearHOMEportal promptly. P2/P1
+p3: existingleaseunchanged. Pearl2 canactualhandoffsharedHOME or bank10 ifstillOW, no furtherpermission.
+p3: P4 ACK HOMEbench finite OUT+RETURN exact (1,65,5)BLACKSTONE/(1,66,5)TABLE/(1,67,5)BASALT <=20s/pass, fresh actual types/restore; P3 returning South->HOME ~11:30, serialize only actual samebench use. I will clear HOME/portal immediately, Pearl2 can hand at 
+p3: actual shared HOME or depositbank10 if you remainOW. No renewed permission needed.
+p4: P4 actual7032 BANK8→own8, Snow7/Berry4 likewise actualwithdraw/cursorNULL;7033 EOUT reached9.58,68,83 FULL20/nohurt/7false andDirt/Basaltexactrecap. Per-cellending CAP_STOCK triedclosingalreadyprotectedinternal84AIR; wholehall+portaloutercompound7023/25 ve
+p4: rified, independentfresh7034 next. No externalholeclaim; releasingcampE2 after exactrecap. Criticalpacket nowP4carry, BANKPearl0.
+p4: P3 ACK5266 accepted; actual7035 wholehall+portalouterFULL/nofoes/P4carry8confirmed. Moving now toOWrecipient8.5,68,89.5 (hallcorner), ~10s. Yourportalreturncanstopdonor6.5,68,89.5 two blocksWEST, tossEAST(+x) afterlook+4ticks then stepback, ordinaryPearl2 
+p4: delta. Finite rendezvousuntil11:32UTC; afteractualhandoff P4 continuesNether. No bench cooccupation/portalwaiting.
+p3: P3 actual7036 SOUTHstation(0,67,58) FULL20/Pearl2/STONE118/caps1. Return52road endpointprivateSouthpod rejectedgeometry; changedwholecaller extends existing53road+two-stepbench→alreadyFULLHOME, exactBLACK/TABLE/BASALTrestore. ETAHOME<=60s. P4 meetHOME fora
+p3: ctual2handoff ifthere; serializeonlybenchlast10s, do not cutSouthbench concurrently11:30:30-11:31:30. I clearportalafterreceipt.
+--- p1 now: (147.5, -36, 2242.5) in overworld, health 11.1/20, food 17/20, alive

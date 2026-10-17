@@ -1,0 +1,86 @@
+program #7212 on p4: 0.8 s
+--- output ---
+ISSUE CLEAR_KIND_crafting_table
+--- returned ---
+{
+ "issue": "CLEAR_KIND_crafting_table",
+ "p": {
+  "x": 163.50007889487102,
+  "y": -26,
+  "z": 2235.5186158013607
+ },
+ "hp": 20,
+ "food": 19,
+ "closed": false,
+ "protectedCompound": true,
+ "outerMissing": [],
+ "outerCount": 176,
+ "hostilesInside": [],
+ "cuts": 0,
+ "moves": 2,
+ "caps": 28,
+ "inv": [
+  [
+   "cobbled_deepslate",
+   25,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   41
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (163.5, -26, 2235.5) in overworld, health 20/20, food 19/20, alive

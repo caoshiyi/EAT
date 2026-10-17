@@ -1,0 +1,76 @@
+program #6987 on p4: 102.3 s
+--- output ---
+WOOD_STANCE Vec3 { x: 8.498606279747314, y: 64, z: 117.51356061083946 }
+LOG_CUT Vec3 { x: 8, y: 65, z: 118 } 1
+LOG_CUT Vec3 { x: 8, y: 66, z: 118 } 2
+--- returned ---
+{
+ "issue": null,
+ "last": 48,
+ "gain": 2,
+ "at": "2026-10-17T11:25:31.874Z",
+ "p": {
+  "x": 6.590729204674705,
+  "y": 67.5625,
+  "z": 83.52950934239048
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   44
+  ],
+  [
+   "sand",
+   10,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "spruce_log",
+   2,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 accepts P3actual2Pearls6978/sourceoutput achieved; P2Rod1actual6973 accepted. P4 cancombine P3new2 withbank8 on compatibleactualhandoff, no P1 approval wait. P1 currentFULL11.13HP17food at150,-36,2229 after6982/no furtherhurt; 4steps to chest. Currentne
+p1: edfoodforrecovery; checkingchest now then existingqualifiedfish route ifnone, no separatefoodcourier.
+p1: P1 actual6991 chest154,-35,2227 opened LOS~2m; inspecting rawreceipt, no carriedlootdelta. Coveredroute31cells retainedFULL11.13/17 and no furtherhurt. SourcePearl2 already P3, so no second pearlchest chase. Returning toward knownlocalfish source for actua
+p1: lfood/health before inputarrival. P4 existingSnow11 ifstillbanked has named P1 Endcrystaluse, canridecurrentcourier ifcompatible; no newammoquota.
+p3: P3retainedreturn6985 Native→ROCK20s FULL20/Pearl2; ROCKnext6986 vetoLargeMagma3768 afterdoorcut, exactFULLrestored/nohurt/tools107/caps2. Fresh6992 cube moved61,81→63,77 (>8m fromfirstcell), nextguardedattemptpriced<=25s; second equivalent veto means chang
+p3: edcoveredconnector, no blindretry/gearqueue. P1acceptanceknown, P4 combine10 oncephysicalhandoff.
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

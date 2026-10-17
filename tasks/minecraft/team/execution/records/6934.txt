@@ -1,0 +1,4 @@
+== #6934 2026-10-17T11:18:20 p2 role=independent_operator iter=14 3.5 s
+bot.clearControlStates();bot.deactivateItem();for(let k=0;k<2;k++){const i=bot.inventory.items().find(i=>i.name==='sweet_berries');if(!i||bot.food>=20)break;await bot.equip(i,'hand');await bot.consume();await bot.waitForTicks(3)}return{hp:bot.health,food:bot.food,p:bot.entity.position,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- returned --
+{"hp": 14.633333206176758, "food": 20, "p": {"x": -131.4012847511106, "y": 61, "z": -429.49997924356785}, "inv": [["stone_pickaxe", 1, 128], ["gold_ingot", 2, null], ["gold_nugget", 6, null], ["stone_pickaxe", 1, 98], ["iron_sword", 1, 27], ["cobblestone", 2, null], ["crafting_table", 2, null], ["blackstone_slab", 5, null], ["dirt", 1, null], ["spruce_button", 1, null], ["stone_axe", 1, 68], ["netherrack", 6, null]]}

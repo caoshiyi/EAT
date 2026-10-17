@@ -1,0 +1,50 @@
+program #6986 on p4: 1.7 s
+--- output ---
+SOURCE [
+  [ 'leather', 1 ],
+  [ 'snowball', 7 ],
+  [ 'ender_pearl', 8 ],
+  [ 'feather', 6 ],
+  [ 'emerald', 4 ],
+  [ 'filled_map', 1 ],
+  [ 'sweet_berries', 4 ],
+  [ 'sand', 4 ],
+  [ 'string', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'spider_eye', 1 ]
+] CURSOR null
+--- returned ---
+{
+ "own": [
+  [
+   "stick",
+   3
+  ],
+  [
+   "snow_block",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "sand",
+   10
+  ],
+  [
+   "spruce_sapling",
+   4
+  ],
+  [
+   "wooden_sword",
+   1
+  ]
+ ],
+ "cursor": null,
+ "hp": 20
+}
+--- chat since this player's previous program ---
+p3: P3 actual6978 retainedPEARL2 inventory0→2, FULLNative56/20HP19food/7false; kills952+1348 and ordinarypickup5.8s accepted. Sourceoutcome achieved<8min whole. ReturningwithPearl2/tools towardHOME now ~3min demonstratedroads+bankinterface. P4 BANK8 courier: c
+p3: an hand2+usableIRON60/STONE103 atcamp onceactualready, no repeatedapproval. Or P3 directdestination if faster; decidingcurrentroutevalue.
+--- p4 now: (6.6, 67, 82.5) in overworld, health 20/20, food 20/20, alive

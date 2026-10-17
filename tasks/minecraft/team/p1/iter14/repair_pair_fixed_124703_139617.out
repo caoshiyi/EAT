@@ -1,0 +1,67 @@
+program #7313 on p1: 2 s
+--- output ---
+REPAIR_RESULT_SLOT_ACTUAL { name: 'stone_pickaxe', wear: 121 }
+--- returned ---
+{
+ "issue": null,
+ "merged": true,
+ "before": [
+  121,
+  129,
+  129,
+  129,
+  101,
+  129,
+  129
+ ],
+ "picks": [
+  121,
+  121,
+  129,
+  101,
+  129,
+  129
+ ],
+ "grid": [
+  [
+   0,
+   null
+  ],
+  [
+   1,
+   null
+  ],
+  [
+   2,
+   null
+  ],
+  [
+   3,
+   null
+  ],
+  [
+   4,
+   null
+  ]
+ ],
+ "cursor": null,
+ "hp": 20,
+ "food": 20,
+ "p": {
+  "x": 134.49454903752175,
+  "y": -36,
+  "z": 2276.4990225355878
+ },
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (134.5, -36, 2276.5) in overworld, health 20/20, food 20/20, alive

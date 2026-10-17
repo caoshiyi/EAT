@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,a:[64,65,66,67].map(y=>[y,...[[6,82],[5,82],[7,82],[6,81],[6,83]].map(([x,z])=>{const b=bot.blockAt(new Vec3(x,y,z));return[x,z,b?.name,b?.shapes]})])};

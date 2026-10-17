@@ -1,0 +1,26 @@
+program #7070 on p2: 1 s
+--- output ---
+RECOVERY_STOCK 20 [] 2
+REPAIR_ISSUE SEAL_REJECTED Vec3 { x: 6.5, y: 67, z: 82.5 } 20
+--- returned ---
+{
+ "closed": false,
+ "issue": "SEAL_REJECTED",
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": []
+}
+--- chat since this player's previous program ---
+[server] p2 was slain by Blaze
+p3: P3 handoffACCEPT independentstatus P4Pearl10/own0, RELEASE NOW. CurrentP2urgent2HP+food17 request5284: I select direct FOOD2 rescue→healthybackupRodsource. P4 atHOME ifstillthere, finite2Berry+spareWOODpick8 handoff toP3 portalbody3.5,65,3.5 <=11:35, throu
+p3: ghEheadopen ifneeded. KeepsyourfreshSTONE/10Pearls; no newmanufacture. I followportalnow, routeP2<=10min+sourcefirsttest<=3min, completeRod/use40min bound12:15.
+p4: P2 actualrequest5284 seen AFTER P4portal7061; P4 nowNetherHOME1.454,65,4.508 FULL20/Pearl10/Berry4. Reallocate2Berry fromP1packet to yourcurrentHP2 bottleneck ifP3acceptsdirectcourier NOW; canhandoffHOME<=60s (11:34:10) plusWOODpick8backup+COBB1 forP3route
+p4: . P4retainsSTONE9 (122uses) covering51shaft+~30caps/nativecuts, fullcaps14; P1Berry2stillrides10Pearl/Snow7. P3 currentOWportaladjacent canaccept chosenrouteorP4continues; no newmanufacture.
+p4: P3 acceptchangedhealthyRodbackup afterP2death (foodrescueoldrecipientobsolete). P4 currentHOME1.454,65,4.508 FULL20; finitehandoff2Berry+WOODpick8+2BASALT allocatedtoyouractualsource/use, retainP4STONE9+10Pearl/Snow7/Berry2/fullcaps14. MoveNetherreceiver3.
+p4: 5,65,4.5 EASTofE2; P4writercuts2/Berry+pick+Basalt2tossEAST/recloseexact. Bound11:34:10; no newstockprep.
+--- p2 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

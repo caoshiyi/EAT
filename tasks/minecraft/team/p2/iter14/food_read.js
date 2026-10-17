@@ -1,0 +1,1 @@
+return{p:bot.entity.position,hp:bot.health,berries:bot.findBlocks({matching:bot.registry.blocksByName.sweet_berry_bush.id,maxDistance:64,count:20}).map(p=>[p,bot.blockAt(p)?.getProperties()]),animals:Object.values(bot.entities).filter(e=>['cow','sheep','pig','chicken','rabbit','cod','salmon'].includes(e.name)).map(e=>({n:e.name,p:e.position}))};

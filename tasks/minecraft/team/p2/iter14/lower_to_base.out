@@ -1,0 +1,158 @@
+program #6887 on p2: 9.6 s
+--- output ---
+LOWER_ADVANCE_ACTUAL -142 20 20 2 [
+  [ 'blackstone_slab', 6, null ],
+  [ 'iron_sword', 1, 24 ],
+  [ 'shield', 1, 0 ],
+  [ 'gold_ingot', 2, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'sweet_berries', 2, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'stone_pickaxe', 1, 86 ],
+  [ 'cobblestone', 2, null ],
+  [ 'crafting_table', 2, null ],
+  [ 'dirt', 1, null ],
+  [ 'spruce_button', 1, null ],
+  [ 'stone_axe', 1, 68 ],
+  [ 'netherrack', 6, null ]
+]
+LOWER_ADVANCE_ACTUAL -135 20 20 2 [
+  [ 'blackstone_slab', 6, null ],
+  [ 'iron_sword', 1, 24 ],
+  [ 'shield', 1, 0 ],
+  [ 'gold_ingot', 2, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'sweet_berries', 2, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'stone_pickaxe', 1, 86 ],
+  [ 'cobblestone', 2, null ],
+  [ 'crafting_table', 2, null ],
+  [ 'dirt', 1, null ],
+  [ 'spruce_button', 1, null ],
+  [ 'stone_axe', 1, 68 ],
+  [ 'netherrack', 6, null ]
+]
+LOWER_ADVANCE_ACTUAL -134 20 20 4 [
+  [ 'blackstone_slab', 6, null ],
+  [ 'iron_sword', 1, 24 ],
+  [ 'shield', 1, 0 ],
+  [ 'gold_ingot', 2, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'sweet_berries', 2, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'stone_pickaxe', 1, 88 ],
+  [ 'cobblestone', 2, null ],
+  [ 'crafting_table', 2, null ],
+  [ 'dirt', 1, null ],
+  [ 'spruce_button', 1, null ],
+  [ 'stone_axe', 1, 68 ],
+  [ 'netherrack', 8, null ]
+]
+LOWER_ADVANCE_ACTUAL -133 20 20 6 [
+  [ 'blackstone_slab', 6, null ],
+  [ 'iron_sword', 1, 24 ],
+  [ 'shield', 1, 0 ],
+  [ 'gold_ingot', 2, null ],
+  [ 'gold_nugget', 6, null ],
+  [ 'sweet_berries', 2, null ],
+  [ 'stone_pickaxe', 1, 127 ],
+  [ 'stone_pickaxe', 1, 90 ],
+  [ 'cobblestone', 2, null ],
+  [ 'crafting_table', 2, null ],
+  [ 'dirt', 1, null ],
+  [ 'spruce_button', 1, null ],
+  [ 'stone_axe', 1, 68 ],
+  [ 'netherrack', 10, null ]
+]
+LOWER_END_GEOMETRY {"closed":true,"strictFull":true,"backings":[[1,0,false],[-1,0,false],[0,1,true],[0,-1,true]]}
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "lost": false,
+ "p": {
+  "x": -132.47070033189516,
+  "y": 57,
+  "z": -429.49997911307264
+ },
+ "hp": 20,
+ "food": 20,
+ "cuts": 6,
+ "elapsed": 9606,
+ "kit": [
+  [
+   "blackstone_slab",
+   6,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   24
+  ],
+  [
+   "shield",
+   1,
+   0
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   90
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "netherrack",
+   8,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 iter14 current deadline13:14:08 runner1792242848. Actual6884 bridge(-19,65,48) FULL20; onlyIRON46/STONE92, no caps/no bankdelivery. Selecting missing2PEARLS: changed approach actual-target covered approach/LOS through netherrack, not old fixed slit/wait
+p3: . First acquire/contact <=20min whole, retained return/use <=35min; abandon after2 equivalent failures. P1 beneficiary. P4 independent alternative barter welcome if ownerchooses, no stock request.
+--- p2 now: (-132.5, 57, -429.5) in the_nether, health 20/20, food 20/20, alive

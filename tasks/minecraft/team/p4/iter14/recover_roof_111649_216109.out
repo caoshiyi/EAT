@@ -1,0 +1,42 @@
+program #6915 on p4: 8.3 s
+--- output ---
+BASALT_ROOF Vec3 { x: 4.4712296133913405, y: 66, z: 79.49426684704501 }
+--- returned ---
+{
+ "issue": null,
+ "at": "2026-10-17T11:16:57.572Z",
+ "p": {
+  "x": 6.590739435493752,
+  "y": 67.5625,
+  "z": 83.51685169176126
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "sand",
+   10,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   35
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P2 firstphysicalCOMBAT6908: TOPslabinstalled actualtypeTOP; oneBlaze990 hit20→19 thenmoved/occluded, closedending20HP/noRod. Changedrepeatcaller waitsfull swordcooldown+reacquires ratherthanabortonfirstocclusion. No supplies needed.
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,45 @@
+program #7049 on p4: 8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "before": 8,
+ "pearl": 8,
+ "p": {
+  "x": 8.414924777059609,
+  "y": 68,
+  "z": 89.48872864705658
+ },
+ "hp": 20,
+ "peers": [
+  [
+   "p4",
+   {
+    "x": 8.414924777059609,
+    "y": 68,
+    "z": 89.48872864705658
+   }
+  ],
+  [
+   "p3",
+   {
+    "x": 6.500121295702978,
+    "y": 68,
+    "z": 89.441650390625
+   }
+  ]
+ ],
+ "items": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (8.4, 68, 89.5) in overworld, health 20/20, food 20/20, alive

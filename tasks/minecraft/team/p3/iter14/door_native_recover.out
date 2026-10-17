@@ -1,0 +1,49 @@
+program #7357 on p3: 0.4 s
+--- output ---
+CASE ROUTE_GEOMETRY_(4, 66, 79)
+--- returned ---
+{
+ "issue": "ROUTE_GEOMETRY_(4, 66, 79)",
+ "last": -1,
+ "stored": false,
+ "north": [
+  [
+   67,
+   "sand"
+  ],
+  [
+   68,
+   "sand"
+  ]
+ ],
+ "at": "2026-10-17T13:00:14.369Z",
+ "p": {
+  "x": 6.590027329657024,
+  "y": 67.5625,
+  "z": 83.49884639243211
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

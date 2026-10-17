@@ -2199,3 +2199,257 @@ Acceptedassets andgeometrydonotequalobjectivecompletion. P2/P3requiredsourceoutp
 11:07 final acceptance updates: P4actual6841 ACCESS65,78→campclosed20/nohurt/7false/99absent14s, doorwriterreleased; accept scoped procurementaccess afterfalltest, releasefurtherverification/manufacture. Strongerevidenceusablepaththanentitygonealone; nounique kill/loot/worldclearanceclaim. P1 actual6829framecenterfull20/7false/12frames2filled/eyes0/portal0/BEDspawnintact;6837 zero-eye activationguard0cuts/moves PASS, **liveinsertion/EndstillUNTESTED**. Currentboundedchestalternative contentsUNKNOWN, noPearlclaim; completeownendingwithin~4min budget. P3actual6844 returnRock-80.5,54,78.5full20/IRON46/STONE86; returnstillinprogress, notbankretainedyet. P2activeapproach-307.5,63,-254.5/20HP andadditionalobservedtools/shield, noRod/contactreceipt; do not infer materialfrominventorygear. Deadline11:10:57 notsliding; currentremainingwork budget includes endings/delivery, noearlyfinal.
 
 11:09 currentclosingpreconditions: P1 actual6860 altar-likechest136,-41,2248 containedREDSTONEonly/noPearls/no withdraw, protecteddown/up4FULL20; independentlootquestionnegative/released. P4 actual6858 reopenedBANK SNOW11/SAND14/PEARL8/BERRY4/cursorNULL, ownSHOVEL35only, campaside6.3866,67,82.4237FULL20; finitebankintegrationaccepted, gravitySANDnotfullunsupportedroof. Recipealternative SnowBlocks is playerproposal/notcraftedcurrentstock. P2actual6859 WORK_BOUND896/target904 after69.4s/full20, sourceendpointnearnotactualcontact/output; next6864active noRodreceipt. P3returnactual-21.4,65,48.5/20HP/IRON+STONE+SS1, notBANKadopted. Remaining11:10:57deadline~100s, no firstRod/extraPearl/Endverified. No finalfromreports; officialcaptureatverifieddeadline.
+
+
+## Iteration 14 opening — 2026-10-17T11:15:37.555284+00:00
+
+# Iteration 14 opening
+
+Recorded 2026-10-17T11:14:41.376732+00:00.
+
+Iteration 13 added 651 programs and five deaths without a milestone. Destination interaction geometry became fully qualified, and useful local capabilities were demonstrated. The upstream operation still produced no retained output. Much time was spent on preparation, permission exchanges, and transport; a quoted fifteen-second handoff took minutes, while expedition estimates omitted substantial handling time. Repeating destination qualification or improving optional stock will not by itself resolve this bottleneck.
+
+Deadline provenance: current runner CR_DEADLINE=1792242848, converted with Python UTC timestamp: 2026-10-17T13:14:08+00:00. Historical 11:10:57 does not apply. Root remains nonplaying.
+
+# Iteration 14 opening review — 2026-10-17T11:15:37.555284+00:00
+
+Official11:14:41: dragon0, milestones10/12, deaths109, programs6879, restarts1. Inherited6878+current P4 opening chat6879 reconciles program difference. All four alive20/20 at fresh status; no new output/victory. Current deadline13:14:08 from runner CR_DEADLINE1792242848, historical11:10:57 retired.
+
+Iteration13 added651programs/five deaths/no milestone. Frame access and useful local capabilities accepted, earliest upstream output remains absent. Fifteen-second transfer cost minutes; donor whole courier~73minutes versus20–25 estimate. Price commitment-to-accepted-result including handling and repair. Preparation/access geometry alone does not resolve missing output.
+
+P2 initially owns first retained rod from actual advanced lower-fortress position, not camp rebuild. P3 owns extra two pearls or independently formulated missing-outcome alternative, not automatic kit return. P1 retires geometry and defines next untested destination operation. P4 finite acknowledged bottleneck contribution or useful independent work. Engineer exact imminent blocker only. PLAN provides cheapest-test/acceptance/consumer board within opening ten minutes. First unknown is source-output mechanism, not input-kit quantity.
+
+Fresh P4#6880 bank PEARL8/SNOW11/SAND14/BERRY4/cursorNULL, ownshovel only. P1#6881 full20/20/no eyes/rods/pearls. P2 inherited#6878 full20/20/-149.382,57,-429.500 with sword/shield/tools/slabs/table2/neth4, no rod. P3 current status iron sword+stonepick only/-18.5,65,48.5, no pearl. Historical advancements do not imply present inventory. No dropped asset credited.
+
+Only/root discoverable via supported list; external owners' arena/journal activity is liveness evidence. No guessed IDs/spawn or player programs by root. Own-file history preserved in mission/iter14. Tokens unavailable. Next check11:24 or sooner on decisive evidence; continue until verified victory/current explicit stop/13:14:08 deadline/runner termination.
+
+
+11:16 early acknowledgment evidence: all four owners selected outputs/finite initial tests (PLAN appended receipts); P2 at current fortress station has two different geometry precondition failures, endings FULL20, exact engineer question identified. P3 changed actual-target approach and P4 independent pearl alternative avoid mandatory tool-return/ammo preparation. No output or milestone yet. Observer first small pass matched status/raw receipt and caught actual P4 door-repair; raw snapshots retained, then output reduced without discarding raw.
+
+11:17 P2 first actual source contact6908 early (~2min after commitment) replaced inherited access-only plateau; one observed health decrement20→19, target occlusion, retained ending20/noRod. Owner changed caller before repeat. No objective output yet; causal credit limited to owner action, not coordinator dispatch. P4 motion failure6909 recovered6915 full20; preparation/repair counts inside11:23 bound.
+
+11:18 actual source effect but no retained output: P2#6917 Blaze833 two damaging hits20→14→8, own damage ending15.5HP/closed; changed defense caller6935 refusedSHIELD_MISSING while current equipment namespace unresolved. No inferred shield loss. P1 measured excessive per-cell cost then changed hypothesis; P4 repeated preparation still inside finite bound, no output.
+
+11:20 output-mechanism evidence: P2#6937 observed first Blaze death/noRod/closed17; P3#6939 gaze1/swing4 and actualtarget1348 damaged40→20.73/full20/pearl0. Both contact mechanisms now physically demonstrated early; retained required items absent. P3 rawhits14 include unrelated hurt entities, prevent inflated attribution. P1 independent exploration failure exposed and damaged, recovered6943 FULL11.13; preserve failure cost, not just return success. P4 initialwood1+recoveredsand10 accepted6928, no pearl yet.
+
+11:22 P3 changed corner/source geometry6964 first actual Enderman kill+pearl item2953, retainedcount0. Bottleneck shifts to ordinary pickup/retention; no credit for inventory yet. P2 two equivalentNO_KILL_PROOF6953/6965 trigger explicit alternative request on board; one previouskill6937 means not a universal combat impossibility. P4 chooses acknowledged finite courier<=12:10 includinggear from11:21, no criticalwithdrawal beforecompatibledeparture; coordination quoteincludes49min whole, no sourcehunt extension.
+
+
+# Iteration 14 review — 2026-10-17T11:24:14.957131+00:00
+
+Official11:23:25 dragon0/milestones10/12/deaths109/programs6979/restarts1. +101programs/no death/no newmilestone versus inherited6878; allfouralive, P1health11.13/P2health17/P3,P4health20 atfreshstatus. Currentdeadline13:14:08 fromrunnerCR_DEADLINE1792242848. No victory.
+
+**Bottleneck-driven allocation has produced retainedsourceoutput early:** P2#6973 actualBlaze2846death+ordinaryRod1/FULL17HP, independentlystatusverified. P3#6978 ordinaryPearl2/FULL20HP, independentlystatusverified. Commitment-to-acceptance ~7m35/~7m50, respectively. These are firstunits/quantity, notobjectivecompletion. Requiredremainingfourrods, BANK8pearls separatefromP3carry2, allingredientdeliveryandactualdestinationoperationremain.
+
+P2failed6917damageending, shieldnamespace6935rejectedthenresolvedowner, firstkill6937noRod; twoNO_KILL_PROOFcases6953/6965 promptedalternative. Owneridentifiedcut-after-equip switchingSTONEpick, changedactualhandverification6972 then6973retainedRod. Specialistcausalcreditnotproved. P3firstcontact6939fourtargetswings, reported14hurtincludedunrelatedentities; changedcornergeometry6964kill+visiblepearl,6971secondkill,6978actualpickup2. Generated/dropped/carried distinctionnowresolved, releaseearlierstagesimmediately.
+
+P1independentchestapproach6936failedclosure/exposedanddamaged;6943retreatFULL11.13/noDeath. Currentstrongholdnear146,-36,2232/17food, chestunknown. Original11:27boundnotrenewed. Activationpositivebranch/Enduntested; recipientinterfaceFRAME/BED6960alreadyauthorized. P4wood1+recoveredsand10accepted6928/full20, sourcehuntalternativeabandonedforacknowledgedBANK8courier6966<=12:10includinggear+route+deliveryfrom11:21. No pickyet/no criticalwithdrawal; repeatedprep/threatveto6967requiresalternativecomparisonifitcontinues, notsliding49minbudget.
+
+Organizationalresult: earlyactualoutputtestandchangedhypothesesareusefulthisiteration, butscoreunchangedandtwoownersexperienceddamage. Do notclaimoverallstrategyvalidatedoruniquecoordinatorcause. Integrateoutputsnow; firstunitinformssubsequentrequiredquantity/retention/destinationwork. Currentallfourlivenessfromarenaandengineerjournal, only/rootdiscoverablevialocaltool. No unsupportedfollowupID,spawn,playerprogram,peerwriteorprohibitedaccess. Tokensunavailable. Preserveallhistoryunder mission/iter14. Nextreview11:34 ordecisiveevidencesooner.
+
+
+11:25 integrationstageearlyrisk: P2#6981 damageending9.53HP/Rod1retained, quantityrateextrapolationnotvalidated. P3return6988threatabort/FULL20/Pearl2; quote3minnowincludeshandling. P1receiptACK6989combinationauthorized. P4gearbranchstillactivebeyond79s, P3offeredusablekitonlywhenactualarrives, notpromisedstock. Wholeintegrationbottlenecknotresolvedbyfirstunits.
+
+11:26 P3twoequivalentROCKthreatreturns6988/6995triggerchangedapproach, actualretainedPearl2/FULL20. Original3minquoteconsumedbyhandling; no re-zero. P2ownerretiresexposedhighgap7001after9.5HPending; shieldwear0aloneisnotproofnoblocking. P4finitewood2/campreturn6987actual102saccepted; integrationstillrequireskit/departure/handoff. P1retiresindependentchestchaseonceupstreampearlsretained; foodrecoveryselected, notnewsourcequota.
+
+11:29 repeatedlowwindowP2zero-contact7007/7017triggerschangedhypothesisrequestaftertwoequivalentfailures; Rod1retained/9.53HP. P3changedreturnnowadvances7011/7018/FULL20/Pearl2, completesusefullegsbutwhole3minquotemissed. P4quarrynegativeguard7006hadpartialordinaryCOBB4+SANDSTONE4 output, preservebothfailureandgain; BANKSnow7aftercapcraft, not11. P1chest6991empty/returnlate/full11.13, closeindependentchase.
+
+11:30 criticalbankwithdrawalaccepted7032+independentstatus: BANK8→P4carry8, SNOW7+BERRY4samepacket/cursorNULL. P3carry2 means10totalcurrentpearlsbutnotoneholderorP1. FiniteHOMEbench7030+WestNorth7021ACKsresolvedbeforearrival, releasequestions. P3return7034WHOLE_OP_END_GEOMETRY/full20no movement; exactimminentcallerquestion, notworldconstraint.
+
+11:31 URGENTP2 actualstatusHP2 after7038returnedissueNULL/closed6.03/ROD1; successfulreturndidnotstopongoingdamage. Exactcurrentbody/retentionprioritypublishedatboardtop, engineerimminentcalleronly. No deathorrodlossevidenceyet. P3changedwholeHOMEcaller7042acceptedFULL20/Pearl2, retirepriorgeometryfailure; P4actualrendezvous7040carry8until11:32, handoffstillunproven.
+
+11:34 VERIFIEDDEATH P2Blaze11:33:21 actual7064NO_BOTTOM_STOCK/closedfalse2HP thenrespawncamp20; firstretainedRod1nowdropped/unverified, no currentstockcredit. P3foodrescueproposal7065crosseddeathandmustbereconciled, notdispatchtoabsentbody. Previous7056smallendingPASSdoesnotqualifynextcallerstockfailure. P4Pearl10handoff7058+independentstatusACCEPTED/released, donor0, courier7061HOMEclosed20. Wholehandoff2m06from11:30:21→11:32:27, missed11:32bound27s; releasefurtherconfirmationnow.
+
+
+# Iteration 14 review — 2026-10-17T11:34:25.055008+00:00
+
+Official11:34:09 (mission/iter14/eval_1133.txt): **dragon0, milestones10/12, deaths110, programs7067, restarts1**. Versusinherited6878: +189programs/+1death/no newmilestone. Currentdeadline13:14:08 fromrunnerCR_DEADLINE1792242848; ~100minleft. Objectiveunmet.
+
+First-outputmechanismsweretestedearlyandworked: P2#6973retainedRod1 andP3#6978retainedPearl2. P3twoPearlsnowintegratedintoP4#7058carry10, independentstatusagrees; completedhandoffreleasedimmediately. BANKPearl0. P4#7061reachedNetherHOMEclosed20/packet10+Snow7+Berry4; noP1deliveryyet. Wholehandoff11:30:21→11:32:27=2m06, 27slate; source→recipientadoption11:15:16→11:32:27=17m11, notjust5.8spickup. OriginalP3three-minutereturnquotemissedbecauseguardfailures/repair/interfacehandlingcount.
+
+**P2died11:33:21Blaze**, confirmedofficialdeathcount110/P2=34 andfreshrespawninventoryEMPTY. Firstretainedrodandkitnowdropped/unverified, notcurrentteamstock. Actual7038returnedclosed6.03whilelaterstatusfell2.03; returndidnotcertifydamagestopped. Owneridentifiedendingorderhypothesis7055, small7056endingtestretained2HP; next7064NO_BOTTOM_STOCK/closedfalse/failedsealprecededdeath. Aqualifyinglocalfixdoesnotqualifyfollowingcallerwithdifferentcapacity. No uniqueincomingdamagecausebeyondactualeventclaimed. Requiredrodsnow5unlessordinaryrecoveryproved.
+
+P3plannedFOOD2rescue7065crosseddeath; destinationbodyobsolete. BoardimmediatelymarkeditstaleandrequestsP2/P3newcurrentbeneficiary/changednextoutputexperiment. P3healthycurrentOWcorner20HP/18food/IRON60+STONE122, ownpearls0; maypursueitsindependentlyselectedbackupRodoutcomeafteractualcurrentallocation, notautomatictool-return/rebuild. P4packetmustnotwaitforanobsoletefoodrescue; optionalfinitehandoffonlyifcurrentbeneficiary/compatibleendingfits. ExistingHOMEbenchandWestNorthleasesalreadyACKed7030/7021, no renewedpermission.
+
+P1chest154,-35,2227EMPTY6991/noingredients, independent12minbranchretired~1minlateincludingreturnanddamage. Current159.5,-36,2242.6/11.13HP17food; ownfullblocksdepletedtoCOFF2atstatus, toolsretained. Foodroute7057equip(null)failedclosed; engineeronlythatimminentactualcallerifownerneeds, noseparatewoodmanufacture/courierbydefault. Nextliveactivationstillrequires10Eyes; ingredients0/P1Enduntested. RecipientFRAME/BEDalreadyauthorized.
+
+Organizationalfinding: earlybottleneckoutputtestingadvancedsourcecapabilitywithrealpearlsintegrated, butfirstrodretentiondidnotsurvivequantityextensionandwholeobjectiveunchanged. Continuedexposureat2HP/nextcallerstockfailurecostfirstrodandoneplayerlife; preservethatfailurealongsideoutputs. Testphysicalwholeending/capacityatactualnextcaller, notonlyfixedfixtureoroldclosedstate. Ownerjournalstops/absencecannotbeinferredfromlocalagentlist; allfouractualactivecurrentiteration, only/rootdiscoverable. No spawns/playerprograms/peerwrites/infrastructureaccessbyroot. Tokensunavailable. Nextreview11:44 orsooneractualreallocation/output/delivery/death; continueuntilverifiedvictory/currentexplicitstop/deadline/termination.
+
+
+11:36 healthybackupsourceP3accepted7071; finiteP4food/tool/capgiftacknowledged7069but7078RECIPIENT_BOUND/expiredcallerbeforecuts, twoquotedhandoffboundsmissed11:34:10/11:35/nooutput. Rootrequestscloseactualdependencyoralternativewithoutre-zeroing11:33:22commitment. P4WHOLE_OP_END_GEOMETRY7083no-movementfull20ishelperfailure, notworldconstraint. P2respawn7070SEAL_REJECTEDdoesnotrepairformerNetherbody.
+
+11:38 acceptedgift7087/7092+status: P3WOODpick10/STONE126/IRON60/CAP1, P4stillall4berries. DoNOTreportFOOD2delivered. Wholegift~2m55from11:33:22→11:36:17, not2.7sexecution, twoearlierboundsmissed. CooccupiedHOME7093STARTrefusalrealsharedwriterconflict, no universalnewpermissiongate. P1rawsalmon1actualstatus, notrecoveredhealthyet.
+
+11:40 sourcebackuppreparationbottleneckP3#7106requiresoldendpoint25whileactualHOME0, no movement; rootnamesexactcallerandretiresgame-constraintinterpretation. ~7minfrombackupcommitmentwithoutdeparture, original12:15boundunchanged. P4retainedPearl10traveladvancesbefore7108threatclosed20; packetnotlost. P1foodoperationraisedhealth11.13→19.5, actualusegainaccepted. P2newflintunit14recycleszerooutputthenreceiptfailure, noarrowquotaacceptance; comparecurrentcriticalbeneficiarybeforeextension.
+
+11:43 narrowactualcallercomparison7113/7116: P3NORTH_SOURCE_CURRENTexpectedBASALT/BASALT/FULLnative vsactualSANDSTONE/SNOW_BLOCK/AIR; laterextra-nativecapreclaimand>=4assumptionalsounsupported. Rootpublishesimminentfactcomparison, methodsremainownerchosen; no permissionoruniversalguardwaiver. Ninetysecondcase11:37:13missed, severalminutesreasoningcounts. Engineerjournalstale11:21:31/no currentACK, notassumedavailableoruniquecausalcredit. P2retiredarrowchainandselectsactualBerry185sunitto11:45; output/returnstillunverified.
+
+
+# Iteration 14 review — 2026-10-17T11:45:46.953828+00:00
+
+Official11:44:22: dragon0/milestones10/12/deaths110/programs7127/restarts1. +249programs/+1death/no newmilestone versus inherited6878. Deadline13:14:08 currentrunnerCR_DEADLINE1792242848, ~90minleft. No victory.
+
+P4all10pearlsretained, movedHOME→SOUTH→BRIDGE→partialWEST; second7125Magma refusalleftFULL20at(-44.50,56,54.50). Originalwholecourier11:21→12:10unchanged, ~24minconsumed. FirstsourceP3pearlsactuallyintegrated7058; no requiredrodnowretainedafterP2death. P3healthybackupacceptedbutstillHOME20/18/usableWOOD10+nearspentSTONE126/IRON60/CAP1. Giftaccepted/released/no foodgain. First90smovementboundmissed, actual7113/7116provesstaleNorthmaterial/native-reclaimassumption. P3firstcontactmechanismnowsecondarytoactualsourcearrival/capacity, no more preparationchainwithoutchangedtest.
+
+P1foodcooked/eatenraised11.13→20HP/fullfood, current7126personalclosedfalsebutqualifiedprotectedCompoundtrue/242outerchecks/noholes/hostilesInside0. Acceptcompoundending; do NOTinventexposurefrompersonalclosedfalse. Positiveactivation/Endstilluntested; recipientalreadyreleased, input0. IndependentemptychestbranchfailedanddamagedP1beforefoodrecovery, costsretained. P2retiredarrowchainaftergeneratednotretainedflint; current185sberryunitreachedsourcebutNO_RECEIPT/18.33HP17food, protectedending/retainedreturnunproved. Don'texpandquotaorreportfoodsuccess.
+
+Organizationallearning: firstunitswerereal, butquantity/retention/deliverynowdominates. More than12minafterP2deathbackupsourcehasnotleftHOME; toolhandoff/legacyendpointguards/materialtemplatescostrealwalltime. P4giftaccepted~2m55not2.7s, missedbothbounds; source/recipientrecordsconfirmno2berriestransferred. Engineerjournal/watchstoppedupdating11:21, no currentACK; only/rootdiscoverableandrunnerconfigrolelabelsprovide no supportedpeerIDs. Cannotreactivatebyguessing/spawning; rootcontinuesactualevidencecoordination. CurrentP3fileslast11:42/P4file11:44demonstrateongoingwork, notagentcompletionproof.
+
+Rootkeepsownership/nonplayingrules; no infrastructurechanges. Tokenusageunavailablepermittedevidence. PLANrewrittenaroundcurrentRod0/Pearl10andactualbodies, earlierboardsarchived. Next11:54oractualdecisivechange; wholeobjectiveincludesintegration/End/dragon, notfirstunitorscoreloophole.
+
+
+11:46 changedapproachesproduceactualmovement: P3healthyRodbackup7137departsHOMEafterstartmaterialfix; P4buriedbypass7135retained8cellsY53/full20/Pearl10, shaftentryP1ACK7138alreadyresolved. Acceptcurrentphysicalprefixes, notrecordpastpreflighttimeasexecutiontime. P2berryunit11:45boundmissed, current19foodnotproofheld/returnedpacket.
+
+11:48 coordinatorcorrection: 11:46activeP3movementwasnotacceptedretainedsourceprogress. Completed7137CUT_ACK55+localendingcapacityfailure rolledbackHOMEfull20; earlierusefulprefixacceptanceoverstated, currentprogress0. Preserveactualmovementandfailurewithoutoutcomecredit. P4bypass7140completedfull20/Pearl10, shaft7144activeonly. P2ordinaryberry10(two5stacks)freshstatusacceptedsourceoutput, whole185sreturnboundmissedandcampreturnunproved.
+
+11:48 CORRECTION: fresh114750status P2 heldBERRY5 and inventoryBERRY5 are the SAMEstack, actualretained5 not10. Newcritical-parserdoublecountedheld+inventory; fixedtoscaninventoryregiononly. Previous11:48two5stacks/10claimWRONG, superseded. Rawstatuspreserved; P2campreturnstillunproved.
+
+11:50 P3freshNorthprecondition7152failsafteractual7137rollback, backup~17minwithoutretainedsourceprogress; requestexplicitalternativeandwholepricebeyondguardpatching. Callerstatechangesduringfailedtrials, so freshpostrollbackworldnotpretrialtemplate. P4shaftY20retainedFULL20/Pearl10, destinationreceiptP1offered7146andnewpickconditionalarrival, no renewalpermission. P2berryactualself-usehealthgainaccepted, sourcepacketnow8/currentfieldnotcamp; maintainrawcountsnotduplicatedheldstack.
+
+11:51 SECONDDEATH P2Zombie11:49:43 after7149returnedissueNULL/closedfalse/20HP/phaseRETURN+FIELD_END_FAILED threat. Officialcaptureeval_1151now111deaths/P2=35, no newmilestone. Fieldfoodpacketformerly8nowdropped/unverified, notretainedfooddelivery. Requirechangedbranchratherthanrepeatunpricedkit/foodreturn. P4shaftY8actual7155full20/Pearl10accepted, nextLOW; P3active7153movementonlypendingphysicalending, no prematureprefixacceptance.
+
+11:52 physicalsourceapproachnowretainedP3#7153 route0→312/116.94s/full20/18, accept/releasepreviousNorthcontractquestions. P4LOWleg7162accepted/full20/10Pearls. P1selfreclaim69blocks7163releasesproposedCOFF20gift, reducingoptionalstockdependency. P2admitsdelayedendingresponseandfieldLOG3+Berry8notretainedafterdeath; preservefailureandpartialpriorgainsseparately.
+
+
+# Iteration 14 review — 2026-10-17T11:54:36.943051+00:00
+
+Latestofficialcapture11:51 (mission/iter14/eval_1151.txt): **dragon0/milestones10/12/deaths111/programs7157/restarts1**. Versusinherited6878: +279programs/+2deaths/no newmilestone. Currentdeadline13:14:08, about80minremaining. Laterpublicprograms7172 arenotthatcapture'scount.
+
+P3nowretainsactualsourceapproachprogress:7153HOME→312116.94s/full20,7169→41735.83s/full20/18. North7152stalecontractquestionretiredafteractualchangeddeparture; earlier7137CUT_ACK55/localendingstockfailurephysicallyreversedHOME andwasnotretainedprogress. Rootcorrecteditsownprematureactive-prefixacceptance. P1finite120/220roadACK7167resolvedbeforecurrentinterface, no furtherapproval. Rod0currentlyretained; corpseRod1andkitunverified. P3originalwhole12:15boundincludes~15minpreparation/handoff/rollbackbeforecurrentdepartures; no renewedbudgetfromfasttravelalone.
+
+P4completedfilledshaft53→8/full20/Pearl10, LOWindex1607162then7170near25.5,8,201.6/full20;7171activefurtherLOW. Wholecourier11:21→12:10unchanged. RecipientP1lift7168up10→Y-26/full20/20, destinationPORTALreceiptandpickexchangealreadyaccepted. P1ownbulk69blocksreleasestheCOFF20gift; packet10Pearls/Snow7/Berry4actualP4carried, noP1adoptionyet. Positiveactivation/End/dragonuntested.
+
+P2seconddeathZombie11:49:43confirmedofficial111/P2=35. Actual7149fieldLOG3+Berry8gainsendedexposed/returnfailed; packetnowdroppedunverified, respawn20HPisnotretainedreturn. P2acknowledgeddelayedfailureendingresponse7161. Current7172fieldactive2.3,63.4,89.7/20HP, no newretainedoutputverified. Optionalarrowchainalreadyretired, no primarywait.
+
+Correction preserved: newcriticalinventoryparserinitiallycountedheldBerry5andtheidenticalinventoryBerry5twice; actual5not10. Fixedinventory-regionparsingandrawstatusretained. LaterP2fresh8wasnewactualfieldcount, notretroactivevalidationofoldmistake. P1personalclosedfalse7126hadqualified242-faceprotectedcompound/noholes/foes; acceptthatendingratherthaninventdangerorrepairquota.
+
+EarlysourceoutputwasrealbutP2Rodretentionfailedonquantityextension; 10pearlsnowcarriedtowardactualuse. Sourceaccessanddeliveryareadvancingafterchangedhypotheses, objectiveunchanged. No unjustifiedcausalcredittoadvice/publication. Currentlivenessfromarena/files; engineerlast11:21record/no currentACK, no supportedexistingtargetbeyond/root, no guesses/spawns. Tokensunavailable. Rootnonplaying/ownedfilesonly. Nextreview12:04oractualoutput/adoption/deathsooner; continueuntilverifiedvictory/currentexplicitstop/deadline/termination.
+
+
+11:56 P4LOW404completed7173/full20/19/10Pearls, actualportaladoptionnext; P1physicallyatOWreceipt7174, no wholepermissiongate. P3sourceapproach520completed7175/full20/18; actualsustainableRod5stillunresolved. P2latestfieldattempt7172NAV_BOUNDsafeCAMP/nooutput, notcorpseadoption.
+
+12:00 majoringredientintegrationaccepted: actual7189donorPearl10/Snow7/Berry4→0, independentstatus11:59:37P1carries10/7/4+STICK2. WholeP4courier11:21:31→11:58:40=37m09includesallprep/repair/handoff, completedunder12:10butnotexecution-legquote. Releasecourier/recipientinterfaceimmediately; nextP4usefuldestinationoutcomeplayerchosen, notautomaticreturnorstock. CurrentfirstunknownRod5retention/deliveryP3; P1positiveactivation/End/combatuntested. All10pearlsnowdestination, no Roduntilactualrecovery/sourceproof.
+
+
+# Iteration 14 review — 2026-10-17T12:04:47.857888+00:00
+
+Official12:04 capture (mission/iter14/eval_1204.txt): **dragon0, milestones10/12, deaths111, programs7208, restarts1**. Deltafrom6878: +330programs/+2deaths/no milestone. Deadline13:14:08; about70minremain. Objectiveunmet.
+
+**AlltenpearlsaredeliveredtoP1.** Bulk7189donor0+independentstatusandP1fresh7198receiptagreePearl10/Snow7/Berry4/Stick2. P4courier11:21:31→11:58:40=37m09whole, completedunder12:10withfailures/gear/gifts/bypass/shaft/LOW/transit/handlingincluded. Releasecourierandrecipientinterfaces; nogiftorbankrequalification. P4usableSTONE41receipt7202/old129returned7203released. OwnnewfiniteEndcompanionweapon/setup7208<=12:12, actualP1table7206alreadyplaced/acknowledged; no automaticreturn/stockquota. P1current20/20/inputPearl10/Rod0/Eye0; positiveactivation/End/combatremainuntested.
+
+**FirstremainingunknownissustainableRod5retention+delivery.** P3sourceapproach7153→312/full20;7169→417/full20;7175→520/full20;7187up71/full20;7204nowroute849(-266.51,61,-415.56), LINE_THREATBlaze15730(-237.5,61,-451.5), completedclosed20/18after108.44s. Thisisusefulretainedapproach, notsourcecontact/ordinaryloot. P2corpseRod1isstilldroppedunverified. Backupcommit~11:33, toolgiftaccepted11:36, firstretaineddeparture~11:51; walltime~31minvsactualtravelcalls~5min. OriginalwholeRod/use12:15has~11minleftforarrival/contact/quantity/return/destination; ownermustpublishcurrentwholepriceoralternativewithoutrelabeling12:15upstream-only. RunnerdeadlineincludesrealEndworkafterintegration.
+
+P2currentCAMP20/20/emptyaftertwoiterationdeaths. Latest7194STEP_THREAT137safeCAMP/nooutput, fullcorpseNAV_BOUNDretired7193; corpsewindowexpiredUNVERIFIEDdoesnotproveallworlditemsdespawned. SourceLOG3/Berry8historicalfieldgainslostafter11:49:43Zombie, no currentstock. P2finitecurrentcontribution/endingneedsactualbeneficiaryandprice; no source/courierwaitonoptionalpreparation.
+
+Learning: bottleneckallocationproducedrealearlyoutputandPearl10integration, butfirstrodwaslostandquantity/retentionstillmissing. Actual5mintravelconsumedmuchmorewalltimeinstart-contractrepairs/handling. Earlieractive7137prefixacceptanceandBerryheld-stackdoublecountwerecorrectedwithrawreceipts; reportsarenotscore. Currentallplayersalive, no laterdeathsobserved. Rootnonplaying/ownedfilesonly, no supportedpeerreactivationtarget(no guesses/spawns). Engineerlastrecord11:21/no currentACK. Tokensunavailable; inheritedtrackedTOKENhistoryrestored/preserved. Next12:14oractualsourceoutput/destinationoperation/deathsooner.
+
+
+12:10 P3actual7230retainedlowerapproach929/Y57/full20/18, nextnative-sideguardrefusalnotworldconstraint. Sourcepickup/sustainableRod5stillunknown. P4destinationDOWN10accepted7234/full20/19/sharedwriterreleased, finitecompanion12:12remains. IndividualFortress/Strongholdawardsdonotchangeteam10/12. P2freshunder-tableAIR/pitevidenceavoidsblindborrow; smalloneplankalternative7236acceptedcampending, no broaderoutputcredit.
+
+12:14 source7244actualLOW61full20/currentTABLE1+IRON60+NETH2+SAND1+COBB3/no picks/Rod/shield. PriorpickwearvaluesarelootBefore, notcurrentinventory; preventphantomrecoveredkit. P4bedrespawn7242serverACKaccepted12:11:39/no suicideverification, framepart12:12boundmissed; releasecompletedbedandbeaminterfacepromptly. P1bowFRIEND_BEAM_BLOCKEDwasvalidsafe refusal, notfailedweaponorpermissionrequirement.
+
+
+# Iteration 14 review — 2026-10-17T12:16:47.688561+00:00
+
+Official12:15:42 (mission/iter14/eval_1215.txt): **dragon0/milestones10/12/deaths111/programs7252/restarts1**. Delta6878: +374programs/+2deaths/no milestone. Currentrunnerdeadline13:14:08, about58minleft.
+
+P1retainsPearl10/Snow7/Berry4, current20/20. P4courierfullyadopted7189/7198andreleased37m09whole; weapon7209/pick41/bedrespawn7242/tablehandoffalsoaccepted/released. P4newbedcompound7251has122uniqueouterallFULL/nohostiles; oldmap'snewinternalAIRisnotexternalbreach. P4current146.5,-36,2241.4outsideP1beam; finiteleaseuntil12:16:30. P1firstbowshot7250producedobservedtrajectorynearintendedwallheight, ammo5→4. Thisisonephysicalshortshot, notEndcombatqualification. Positiveactivation/EndstilluntestedbecauseRod0/Eye0.
+
+P3currentLOW(-131.45,61,-429.50)/FULL20/18after7244, inventoryTABLE1/IRON60/NETH2/SANDSTONE1/COBB3/no picks/Rod/shield. Bothnearlyspentpickswereconsumedinaccess, notretainedfromlootBefore. OldP2corpsegear/Rodremainsunverified. **OriginalP3wholeRod/use<=12:15MISSED** with0RodandnoP1adoption. Backupcommit11:33→12:15~42min; gifttook~3min, start-contractrepair/rollbacktookmanyminutes, actualroutecallsfarshorterthanwalltime. Do notrenew40minortreat12:15asfirstkilldeadline. Currentfirstunknownisactualsustainableoutput+retentionfrompresentLOWbody/capacity; ownerowesboundeddecisivetestandwholeRod5→P1→Endprice. No automaticresourcequeueorhelperquota.
+
+P2changedminimumtravelsourceactualPLANK4/WOODpick0, protectedCAMP20/20; 7248EOUTactual9.59,68,83.5. Under-tableborrowwasrejectedbyfreshAIR/pitproof, originalTABLEpreserved. No source/courierwaitingonP2newhealthyEnd-support. HistoricalfieldLOG3/Berry8lostafterseconddeath, no currentstockcredit.
+
+Completedinterfacesreleaseimmediately; onlyactualconflictingbow/bedmodificationserialized. P4originalEndsetup12:12wholeboundmissedframearrivalportion; bedstageacceptedonitsown. WholeobjectiveincludesremainingRod5delivery+liveactivation+actualEnd/fightwith58minleft; outputunitdoesnotendrun. Twoequivalentfailuresrequirechangedhypothesis, successlabelsoldbody/helperthresholdsarenotworldproof. Allfouractualcurrentbodiesalive; engineerrecord11:21/no currentACK/no supportedpeerID, no guessedreactivation/spawn. Tokensunavailable. Rootnonplaying/ownedfilesonly. Next12:25oractualoutput/adoption/deathsooner; continueuntilverifiedvictory/currentexplicitstop/deadline/termination.
+
+
+12:19 freshsource7256drops[]distinguishesoldcorpsehypothesisfromcurrentpickupcandidate; currentno picks/Rod/shield, toolabsencealoneisnotprovenoutputconstraint. Requirecurrentcapacity/outputalternativecomparisonbeforeanothermanufacturebranch, methodsownerchosen. P1onebowshotrecoveredarrow5/beamreleased, no extraquota. Supportedagentliststillonly/root, no reactivationtargetavailablewithoutguessing.
+
+12:23 actualP3source7265twodamagingstrikes1792920→8/HIGHprotected20/noRod, currentcapacity(no picks)worksforcontact. Retiretoolabsenceasblanketcombatconstraint; nextkill/pickupquantitynotnewaccessqualification. Wholebackup~49minbeforefirstcontactvs28.5sunit, original12:15wholeboundmissed. P2HOMEtransit7264accepted/P4native2step7267accepted, no destination/sourceoutputoverclaim.
+
+
+# Iteration 14 review — 2026-10-17T12:25:47.172350+00:00
+
+Officialcurrentcapture: **milestones = 10 / deaths = 111 / programs = 7271 / dragon = 0**, restarts1 (eval_1225.txt). Deadline13:14:08; about48minremain. No victory/Endentry.
+
+P3firstactualsourcecontact7265acceptedHIGH62/protectedEndtrue/20HP18food, twofullswordhits target17929health20→8, no kill/drop/Rod. CurrentIRON64/SANDSTONE1/COBB3, TABLEplacedasendingcap, no picks/shield. Firstunknownkill→ordinarypickup→retainedquantity5→P1adoption. Backup11:33→firstcontact~12:22~49minwholevs28.5sunit. Originalwhole12:15MISSEDandnotrenewed; currentcompletepricehasnotbeenacknowledged. P2proposal7269relevantcurrentmaterials/designonly, notactualP3adoptionoroutput, no wait/newreviewgate. Playerchoosesmethod. Existingcontactcapabilityreleased; no unnecessarytool/routequalification.
+
+P1carriesPearl10/Snow7/Berry4andarrow5afterrecoveredtestshot; current20/20 near139.5,-36,2251.5. Positiveactivation/Enduntested. P4SWORD/STONE/bedspawnaccepted, currentoffpath129.5,-36,2274.7/20/19 FULL7270; originalEndsetup12:12framepartmissed, newoffpathpositionclearsP1main131route. No extraFRAMEgeometry/repeatedgiftapprovalneeded. P4courier37m09accepted/released, notnextbudget. P2HOME20/20afterNethertransit7264, ownEnd-supporttravelstillincomplete; sourceproposalcurrentimminentbeneficiaryP3.
+
+CurrentpriorityisrealRod5retention/deliverywithenoughremainingtimeforactivation/End/fight. No newquota/automaticstock/courierreturn. Twoequivalentfailures→changedhypothesis; movement/prep/guardsalone→explicitcompletealternative. Allbodiesalive; engineerlastrecord11:21/no currentACK, supportedlistonly/root/no guessedreactivation. Tokensunavailable, rootnonplaying/ownedfilesonly. Next12:35oractualoutput/death/Endearlier; stoponlyverifiedvictory/currentexplicitstop/13:14:08/runnertermination.
+
+
+12:29 P3onehurtwindow7277protectedendingrestored/current17HP16food/Rod0, no safe-outputextrapolationfromfirsttwohits. P2HOME_NORTH_PREexactoldtypesSandstone/Basalt vsfreshBasalt/Basalt7278 repeatsas-builtstateknowledgefailure; compactcurrentINTERFACESledgerpublishedwithoutnewpermission/preflightgates. CurrentlistedHOMEfacesfull, programclosedfalsealonewasnotworldbreachproof. P4wrongdimensionEndprobeonlynegativeguardacceptance, releaseafteronetest.
+
+12:32 P4narrowactualcounterevidence7285: CHARGED_COLDlabel7277includedtwochargedentitiesbeforecut, so wait/labeldidnotprovesafety; actualprojectilecauseunproved. Acceptauditwithoutuniqueoutcomecredit. P2twoaccess-onlyhelperfailuresnoBlackoutput, requestchangedcheaptest/currentbeneficiarynotprefixexpansion. CompleteRod5→Endpriceunacknowledgedwhile~42minrunnerremain, original12:15missunchanged.
+
+
+# Iteration 14 review — 2026-10-17T12:35:54.392525+00:00
+
+Officialcurrentcapture **milestones = 10 / deaths = 111 / programs = 7288 / dragon = 0**, restarts1 (eval_1235.txt). Verifieddeadline13:14:08; about39minremain. No victory/Endentry.
+
+P3currentHIGH62/17HP16food after7277DAMAGE_END/protectedtablecaprestored. Earlier7265twohits1792920→8provedcontact, notsustainableloot. Current7288CHARGED_PREVENTS_OPEN0.5s/0swings/0hits/0kills, nohurt/noRod. Chargedentitiesafterclosedwaitareactualcounterevidence(P4audit7285); guardrefusalisnotgameimpossibility. FirstunknownremainsusableordinaryRod5+retention+P1adoption. Originalwhole12:15missed20minago; no new40minbudgetorcompletepriceACK. Ownerchangeddecisiveoutputhypothesis/wholecompletionpricecurrent39minmustincludeallremainingtransportandactualEndwork.
+
+P1packetPearl10/Snow7/Berry4/Arrow5retained,20/20, current129.64,-36,2272.50after7286. P4current129.50,-36,2274.70/20/19/offmainpath, SWORD/STONE/bedspawnaccepted. ActualEndentry/controllerstilluntested; WRONG_DIM_NO_ACTION7279wasonlyanegativeguardtest/released. Framegeometrypreviouslyqualified, no newrepeatquota. Allcourier/gift/table/beaminterfacesreleased. Currentlimiteddestinationmovementisnotnewmilestone.
+
+P2HOME20/20, quarryNO_NATIVE_PLAN7282thenPREFIX_FLOOR7284/noBlackoutput, narrowplannerfailureonly. 7275staletypesSandstone/Basaltcontradictedfresh7278Basalt/Basalt; INTERFACES.mdcurrentphysicalledgerpublished, ownerindependentlyrecognized7281beforepublication(no rootcausalcredit). Proposedtool/stickcouriercurrentbeneficiaryP3butphysicalsource/transport/adoptionunproved, no automaticP3wait. Comparecurrentcheapalternativeafteraccess-onlyfailuresratherthanextendlegacygraphs.
+
+Liveness: P3fresh7288provescurrentagentactivityafter~8minprogramgap; don'tinfercompletedfromsilence. P4recentcodefiles12:32, P2records12:30. Engineerjournal/watchlast11:21/no newACK, supportedlistonly/root/no discoveredtargetforreactivation. No guesses/spawns. Permittedagent_team/BUDGET.mdcontainscostrows/no tokens; zero-costentriesarenotzerotokenusage. Tokensremainunavailable. Rootnonplaying/ownedfilesonly. Next12:45oractualoutput/death/Endearlier; continueuntilverifiedvictory/currentexplicitstop/13:14:08/termination.
+
+
+12:40 P1framearrival7293actualclosed20/20accepted, no needrepeatqualifiedgeometry; inputRod0stillliveactivationblocker. P2changedheightnativequarry7292CUT_FLUID_FALL/fullHOME20/nooutput, scope-specificnotimpossibility. P4currentheld-inputalternative7294comparesrealstockvs6Blackprep; designnotphysicalhandoff, no primarywaitornewquota.
+
+12:41 URGENT7295changedLOWendedprotectedEndFALSE/front62AIR/currentSLAB2+SWORD71/17HP16food; fullSandstonecapconsumedafterhandcut/receiptfailed. EarlierHIGHprotectivecapcannotqualifynewLOWbody. Rootpublishesexactactualendingfirst/no remote supply wait/no game-method prescription; full-blockhelperfilterisnotworldmaterialimpossibility. Needphysicalrepairacceptancebeforefurtheroutputwork.
+
+12:43 THIRDDEATHverifiedP3Blaze12:41:31following7295unprotectedLOW/CAP_STOCKfailure; freshrespawnCAMP20/20EMPTY7302oldSOURCE_LOWrefused. Originalhealthybackup11:33:22→12:41:31=68m09/noRod, sourcekitnowdropped/unverified. P2toolcourieroldrecipientobsolete; reallocateearliestupstreamoutcomeP2actualHOMEretainedkit, P3currentemptyusefulalternative/no autologisticrebuild. P1Pearl10atcenterandP4companion7301accepted/fullhealth, no Rod/Eye/End. Official112deaths/no milestonechange, runner~30minleftincludesallactualintegration/fight. No methodprescribed/IDguess/spawn/ownershipbypass.
+
+12:44 inventorycorrection: P2fresh12:42:52statusBLACK3, earlier7297claimBLACK2superseded. Rootinitial1243boardcopiedold2despitereadingfreshstatussametoolbatch; correctedtocurrent3beforefurtherallocation. Acceptfirst3-inputstage/releaseextra6quota, no actualSTONEcraftclaimyet.
+
+
+# Iteration 14 review — 2026-10-17T12:45:25.968495+00:00
+
+Official12:43capture(eval_1243.txt): **dragon0/milestones10/12/deaths112/programs7305/restarts1**. From6878: +427programs/+3deaths/no milestone. Currentdeadline13:14:08, about29minleft.
+
+P3diedBlaze12:41:31after7295LOWendedprotectedEndfalse/front62AIR/CAP_STOCKfailed. CurrentrespawnCAMP20/20EMPTY;7302SOURCE_LOWrefusedoldbodyoperation. SourceSWORD71+SLAB2droppedunverified/Rod0, notretainedkit. Originalhealthybackup11:33:22→death68m09/noRod, firstcontact~49min; source/unit/endingfailureallpreserved. PriorHIGHsuccessdidnotqualifychangedLOWmaterialreceipt. P2proposedtoolcourieroldrecipientisobsolete, notanewdeliverytask.
+
+ReallocatefirstmissingRod5→P1outcometoP2actualNetherHOME20/20withcurrentBLACK3/BASALT3/PLANK4/STICK2/WOODpick20. Fresh12:42:52statusBLACK3supersedesearlierBLACK2; rootcorrectedinitialoldcountcopy. First3inputaccepted/released/noextra6quota, actualtoolcraftandfurtheruseunverified. P2choosescurrentboundedoutputtestorcompletealternativeandwholeprice; no methodprescribed. P3currentemptybodyownssecondfiniteusefuloutcome/failedcallerhandofforindependentalternative, no automatic68minrebuild.
+
+P1actualframecenter134.5,-36,2276.5/FULL20/20, Pearl10/Snow7/Berry4/Arrow5retained. P4actualcompanion7301at131.5,-36,2276.5/FULL20/19accepted/released, bedspawn/SWORD/pickaccepted. Originalcompanion12:12wholeboundmissed~30min; physicalarrivaliscurrentacceptance, notrenamedontime. NoRod/Eye/End/combatclaim. Actualactivation/entry/fightstillmustfitrunnerdeadlineafterupstreamdelivery.
+
+Allacceptedcourier/material/geometry/interfacesreleased, unchangedleasespersist. CurrentHOME-NorthsignatureledgerINTERFACES.mdavoidsrepeatedoldmaterialassumptions. Full-blockhelperfilterisnotworldmaterialimpossibility; sourcecap/receiptfailure7295handoffisnextoperator'simminentquestiononly. Currentcompletepriceunacknowledged/no demonstratedwholecompletionfit, butcontinueboundedauthorizedworkuntilverifiedvictory/currentexplicitstop/13:14:08/runnertermination. Supportedlistonly/root/no target/no guesses/spawns. Engineerlastrecord11:21/no ACK. Tokenaccountingunavailable(costrowsonly). Rootnonplaying/ownedfilesonly. Next12:50oractualoutput/death/Endearlier.
+
+
+12:49 P3newtrapdoorprototypefirst3minbound12:48:14missed, fresh124819CAMPinventoryempty/no input/prototype. Retainpreparation/handlingcost; no resetfrom120msWOOD_LOSrefusal. P2heldBLACK3/BASALT3/PLANK4/STICK2intactnotdonated. P4finiteindependentchest3minscope<=12:51needsactualoutput+ending, primarynowait. SourceRod0/End0 unchanged.
+
+
+# Iteration 14 review — 2026-10-17T12:54:25.056624+00:00
+
+Official12:53:33 **dragon0/milestones10/12/deaths112/programs7336/restarts1** (eval_1253.txt). From6878: +458programs/+3deaths/no milestone. Fixeddeadline13:14:08, about20minleft; goalunmet.
+
+P1framecenterFULL20/20retainsPearl10/Snow7/Berry4/Arrow5; repairedSTONE45/emptygrid/cursorNULL7317accepted. P4currentoffpathFULL20/19/SNOW4actual7330, changedemergencyroofallocationreplacedwithMOSSYfullcap/actualfaces; no newfarm. Courier/gifts/bed/weapon/companion/beaminterfacesreleased. ActualEndentry/combatstilluntested/Rod0/Eye0.
+
+P2heldSTONEpick0+WOODpick20/PLANK4/BASALT3afteractualBLACK3craft, currentOWcorner6.5,68,89.4. OldP3sourcecourierrecipientexplicitlyobsolete7322. P2choseIRON1+WOOD2shield-inputscope<=4minfrom12:49:01, otherwisedirectequippedsourcefallback. **Bound12:53:01MISSED** withnoheldIron/woodoutput/shield. P3fresh7335ore10,40,79/11,40,77/3,47,105/-18,49,87andfurnacepositionsareobservationsnotstock/fuel/ingot. P3newlog7332creeperveto/fullCAMP20/20, no output; prototype12:48:14first3minboundalreadyMISSED. No newbudgetorshortexecutionreinterpretation; P2alreadydeclaredfallbackneedsnonewpermission. CompareactualcurrentwholeRod5→P1→Endprice, notmoreunpricedprep.
+
+P3currentCAMP20/20emptyafter12:41:31death; oldsourceSWORD71+SLAB2dropped/unverified. 68m09healthybackupendednoRodafterCAP_STOCK/unprotectedLOW. No activebody/sourcekitatthefortressclaimed. P3freshore/livenesshandoffusefulfacts, notretainedoutput. P4finitechestbranchretirednocontact/lootwithsafeendingby12:51; ownSnow4conversionaccepted, nextsingle-crystalplanner<=12:55source-only/designnotEndqualification.
+
+P2remainingRodoutcomedispatchwaspublished12:43; do notclaimactualsourceadoptionfromallocationalone. Currentphaseispricecritical: ~20minmustincludeactualRod5retention,transport,P1adoption,activationandfight. No demonstratedwholefit/no prematureimpossibilityclaim. Allcurrentplayersalive/ownershipfixed. Engineerrecord11:21/no supportedreactivationtargetbeyond/root/no guesses/spawns. Tokensunavailable(costrowsonly). Rootnonplaying/ownedfilesonly. Next13:00andclosing13:14:08oractualvictory/deathsooner.
+
+
+12:58 currentCampinterfacechangedbyfailedprototypeharvest: NORTHspruceDoorremoved/SAND2fullreplacement, actualdooritemfell5below/outside/notretained, Bank2Sandconsumed. OldNdoor/Efencegatetemplatesnotcurrentworld; recordas-builtwithoutstockcredit. P2bodyCAMPnotNetherHOME/fortress, declaredsourcefallbacknotactualexecution, deadline~16min/no wholefitclaim.
+
+
+# Iteration 14 review — 2026-10-17T13:02:12.694775+00:00
+
+Official13:00:07 dragon0/milestones10/12/deaths112/programs7354/restarts1 (eval_1300.txt). Delta+476programs/+3deaths/no milestonefrom6878/109. Deadline13:14:08 reconfirmedCR_DEADLINE1792242848at13:00:08, 839.79sremaining. Not afinalstop/capture.
+
+P1Pearl10/Snow7/Berry4/Arrow5/frame20/20retained. P4ownSnow4/SWORD/STONE/bedspawn/offpath20/19retained. Courier37m09anddestinationinterfacesfullyadopted/released; actualRod/Eye/Portal/End0. Source-readyEndhelpers/negativewrongdimensiontestsdonotqualifypositiveEndentry/combat.
+
+P2actualCAMP/OWthreshold20/20/STONE2/WOOD25/BASALT3/PLANK4, notoldNetherHOME/source. Shield-input4minbound12:53:01missed/noIRON/WOOD2/SHIELD; declareddirect-sourcefallbacknotexecutedby13:00. Rodoutcomeallocationpublishednotactualadoption. P3CAMP20/20/DIRT1/no currentlog/door/prototypeafter12:41:31death. Firstprototype3minbound12:48:14missed; door7345felloutsideandwasnotretained7348, NorthreplacedSAND2full/BankSand2spent. Updatedas-builtledgeravoidsoldNorthDoor/EastGateandHOME-Northmaterialtemplates.
+
+Threeactualdeathsreconciled112: P2Blaze(firstRod1lost),P2Zombie(fieldLOG3/Berry8lost),P3Blaze(unprotectedLOWcapstockfailure/newsourcekitlost). P3backup68m09producedcontactbutsustainableRod0; priorlocalending/hitproofdidnotqualifynextcaller. OutputmechanismtestedearlythisiterationandPearl2integrationworked, butwholegoalremainsunmetwith14minforremainingRod5delivery+End/fight. Nodemonstratedwholefit/no prematureimpossibilityclaim; continueboundedauthorizedworkuntilverifiedstop.
+
+Rootnonplaying/ownedfilesonly/no infrastructurechangesoractoridentitybypass. Supportedagentlistonly/root/no peerreactivationtarget, engineerrecord11:21/no currentACK. Tokenusageunavailable(costrowsonly). Next13:05andnearverifieddeadline/actualvictoryearlier. Closingstatewillbechecked, notinferredfromreports.
+
+
+13:07 actual7370recoveredSTICK4fromCURSOR→BANK/cursorNULL; BankPLANK2consumed, WoodPickstorednotP2held. FreshP2ownBASALT2/PLANK2/STONE3, P3DIRT1. Prototypeinputunitacceptedbutno gate/rod/Endphysicalclaim. CurrentCAMPNorthSAND2sealedconfirmed7345, oldroute7358cellsAIRcausedpreflightveto7360beforecuts; no doorrecovery. Scopedgitstatus13:05:48tools+taskprogramshowednochanges; rootstillnonplaying/ownedfiles.
+
+13:11 PRESTOP(notfinal): official13:10:24 dragon0/milestones10/deaths112/programs7384, +506programs/+3deaths/no milestonevs6878/109. Deadline13:14:08fixed, currentworkcontinuesuntilverifiedstop. Actual7381gateprototypePASSplaced/rays9closed9open9reclosed/reclaimedBANK/cursorNULL/northSAND2safe/benchintact/gatecellAIR. ExacttimingCORRECTED7384: open99ms/reclose100ms (51mswasdifferentDOORcase). Prototypefamily12:45:14→13:09:15=24m01, latestatomic7.2s/newfinite30sboundmet; original3min12:48:14missnoterased. OnlyCAMPshape/toggle/receiptqualified, no fireball/Blaze/Endqualification. BankGate1retained, BankSTICK4+PLANK2consumed, P2ownPLANK0/STONE3/BASALT2andWoodPickbanked, P3DIRT1. P1packet+Arrow5/ST45/frame20/20; P4Snow4/ST83/SWORD/bed/offpath20/19. SourceRod0/Eye0/Portal0/End0. AllownersupdateactualclosingWIPbeforehardstop, notearlycompletion; rootnoplay/nocontrolscalls.

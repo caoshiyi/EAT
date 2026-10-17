@@ -1,0 +1,4 @@
+== #6896 2026-10-17T11:15:30 p4 role=integration_operator iter=14 0.6 s
+const {Vec3}=require('vec3');let c;bot.clearControlStates();try{if(bot.inventory.items().some(i=>i.name==='sand'))throw Error('ALREADY_TAKEN');c=await bot.openChest(bot.blockAt(new Vec3(7,68,82)));await bot.waitForTicks(4);const it=c.containerItems().find(i=>i.name==='sand');if(!it||it.count<10)throw Error('SAND10_ABSENT');await c.withdraw(it.type,null,10);await bot.waitForTicks(8);return{bank:c.containerItems().map(i=>[i.name,i.count]),own:c.slots.slice(c.inventoryStart,c.inventoryEnd).filter(Boolean).map(i=>[i.name,i.count]),cursor:bot.currentWindow?.selectedItem}}finally{if(c)c.close();bot.clearControlStates()}
+-- returned --
+{"bank": [["leather", 1], ["snowball", 11], ["ender_pearl", 8], ["feather", 6], ["emerald", 4], ["filled_map", 1], ["sweet_berries", 4], ["sand", 4], ["string", 1], ["spruce_sapling", 1], ["spider_eye", 1]], "own": [["sand", 10], ["wooden_shovel", 1]], "cursor": null}

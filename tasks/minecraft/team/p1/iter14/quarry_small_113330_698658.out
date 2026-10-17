@@ -1,0 +1,153 @@
+program #7066 on p1: 9.4 s
+--- output ---
+QUARRY_PREFLIGHT_ACTUAL [{"x":159,"y":-36,"z":2241},{"x":159,"y":-36,"z":2240}]
+QUARRY_PICKUP_ACTUAL 0 4
+QUARRY_RETURN_ACTUAL Vec3 { x: 159.50025781906808, y: -36, z: 2242.539132087026 }
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 159.50025781906808,
+  "y": -36,
+  "z": 2242.570627866428
+ },
+ "hp": 11.133331298828125,
+ "food": 17,
+ "closed": true,
+ "string": 1,
+ "oak": 0,
+ "cuts": 4,
+ "moves": 4,
+ "inv": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "bow",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "book",
+   63,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "fishing_rod",
+   1,
+   6
+  ],
+  [
+   "stone_sword",
+   1,
+   2
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "chest",
+   1,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   12
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobblestone_stairs",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P3 ACCEPT actual7058 independentownPEARL10 (8→10), donor7054 2→0, allpickupdone; ownBASALT4 includesyour2cuts. Handofflate11:32:27 vs11:32 bound preserved, releaseNOW. Wholehall+portalouterprotected evenheadgateAIR; no sealquota. P4 takesx7internalfootwrit
+p4: er now→clearfoot/cross6→portal; P3 canmovebehindto8.5/89.5 oncefootcleared, no renewedhandoffcheck.
+p2: P2 changedENDING7056 physicallyPASS3.5s: HIGHfront63BOTTOM→DOUBLEsealedBEFOREpillarcut/LOWdescent, retained2.033HPunchanged/ROD1/FULL. 7038 firstfailingstageENDexposure nowcorrected, shield76damageblockedreal. Nextsmall actualcombat openswindowONLYfromFULL
+p2: HIGHcell, closesfrontBEFOREanylowering; no unsafeendingrepeat. Need4Rod still/BANK12:00estimateatrisk.
+[server] p2 was slain by Blaze
+p3: P3 handoffACCEPT independentstatus P4Pearl10/own0, RELEASE NOW. CurrentP2urgent2HP+food17 request5284: I select direct FOOD2 rescue→healthybackupRodsource. P4 atHOME ifstillthere, finite2Berry+spareWOODpick8 handoff toP3 portalbody3.5,65,3.5 <=11:35, throu
+p3: ghEheadopen ifneeded. KeepsyourfreshSTONE/10Pearls; no newmanufacture. I followportalnow, routeP2<=10min+sourcefirsttest<=3min, completeRod/use40min bound12:15.
+p4: P2 actualrequest5284 seen AFTER P4portal7061; P4 nowNetherHOME1.454,65,4.508 FULL20/Pearl10/Berry4. Reallocate2Berry fromP1packet to yourcurrentHP2 bottleneck ifP3acceptsdirectcourier NOW; canhandoffHOME<=60s (11:34:10) plusWOODpick8backup+COBB1 forP3route
+p4: . P4retainsSTONE9 (122uses) covering51shaft+~30caps/nativecuts, fullcaps14; P1Berry2stillrides10Pearl/Snow7. P3 currentOWportaladjacent canaccept chosenrouteorP4continues; no newmanufacture.
+--- p1 now: (159.5, -36, 2242.6) in overworld, health 11.1/20, food 17/20, alive

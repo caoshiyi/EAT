@@ -1,0 +1,13 @@
+# Iteration 14 review — 2026-10-17T11:54:36.943051+00:00
+
+Latestofficialcapture11:51 (mission/iter14/eval_1151.txt): **dragon0/milestones10/12/deaths111/programs7157/restarts1**. Versusinherited6878: +279programs/+2deaths/no newmilestone. Currentdeadline13:14:08, about80minremaining. Laterpublicprograms7172 arenotthatcapture'scount.
+
+P3nowretainsactualsourceapproachprogress:7153HOME→312116.94s/full20,7169→41735.83s/full20/18. North7152stalecontractquestionretiredafteractualchangeddeparture; earlier7137CUT_ACK55/localendingstockfailurephysicallyreversedHOME andwasnotretainedprogress. Rootcorrecteditsownprematureactive-prefixacceptance. P1finite120/220roadACK7167resolvedbeforecurrentinterface, no furtherapproval. Rod0currentlyretained; corpseRod1andkitunverified. P3originalwhole12:15boundincludes~15minpreparation/handoff/rollbackbeforecurrentdepartures; no renewedbudgetfromfasttravelalone.
+
+P4completedfilledshaft53→8/full20/Pearl10, LOWindex1607162then7170near25.5,8,201.6/full20;7171activefurtherLOW. Wholecourier11:21→12:10unchanged. RecipientP1lift7168up10→Y-26/full20/20, destinationPORTALreceiptandpickexchangealreadyaccepted. P1ownbulk69blocksreleasestheCOFF20gift; packet10Pearls/Snow7/Berry4actualP4carried, noP1adoptionyet. Positiveactivation/End/dragonuntested.
+
+P2seconddeathZombie11:49:43confirmedofficial111/P2=35. Actual7149fieldLOG3+Berry8gainsendedexposed/returnfailed; packetnowdroppedunverified, respawn20HPisnotretainedreturn. P2acknowledgeddelayedfailureendingresponse7161. Current7172fieldactive2.3,63.4,89.7/20HP, no newretainedoutputverified. Optionalarrowchainalreadyretired, no primarywait.
+
+Correction preserved: newcriticalinventoryparserinitiallycountedheldBerry5andtheidenticalinventoryBerry5twice; actual5not10. Fixedinventory-regionparsingandrawstatusretained. LaterP2fresh8wasnewactualfieldcount, notretroactivevalidationofoldmistake. P1personalclosedfalse7126hadqualified242-faceprotectedcompound/noholes/foes; acceptthatendingratherthaninventdangerorrepairquota.
+
+EarlysourceoutputwasrealbutP2Rodretentionfailedonquantityextension; 10pearlsnowcarriedtowardactualuse. Sourceaccessanddeliveryareadvancingafterchangedhypotheses, objectiveunchanged. No unjustifiedcausalcredittoadvice/publication. Currentlivenessfromarena/files; engineerlast11:21record/no currentACK, no supportedexistingtargetbeyond/root, no guesses/spawns. Tokensunavailable. Rootnonplaying/ownedfilesonly. Nextreview12:04oractualoutput/adoption/deathsooner; continueuntilverifiedvictory/currentexplicitstop/deadline/termination.

@@ -1,0 +1,94 @@
+program #7006 on p4: 39.6 s
+--- output ---
+QUARRY_BOTTOM Vec3 { x: 4.498353833578347, y: 55, z: 78.6055142343157 } 4
+CASE GALLERY_FLOOR_ROOF
+--- returned ---
+{
+ "issue": "GALLERY_FLOOR_ROOF",
+ "down": true,
+ "up": true,
+ "gain": 0,
+ "at": "2026-10-17T11:27:26.831Z",
+ "p": {
+  "x": 6.589975060112218,
+  "y": 67.5625,
+  "z": 83.53306070828374
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": true,
+ "items": [
+  [
+   "stick",
+   4,
+   null
+  ],
+  [
+   "spruce_planks",
+   3,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   8
+  ],
+  [
+   "sandstone",
+   4,
+   null
+  ],
+  [
+   "cobblestone",
+   4,
+   null
+  ],
+  [
+   "snowball",
+   4,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P2 reusablehighgap6981 DAMAGE_END closed9.5HP/food17/ROD1retained, SHIELDwear0 so no demonstratedblocking. Retirehighgap exposure; newLOWfeet61 headwindowBOTTOMslab62+TOP63, torso61behindFULLwall/roof63retained, actualshieldmetadata test. 28swork/closeDOUB
+p2: LEslab; nofoodsupplieswait.
+p3: P3 secondreturn6995 largeMagma3768veto after1step; FULLROCKrollback20/Pearl2/caps2/STONE109. Twoequivalentvetoes→changedapproach NOW: <=40s protectedSOUTHheadwindow lure/IRONcombat test against actualblockingcube, ownfoot+roofsolid, stoponhurt/close. Ifnoa
+p3: cquisition changecoveredroute; no kit/couriercycle. WholePearldelivery11:50 boundincludeshandling.
+--- p4 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,1 @@
+const {Vec3}=require('vec3');return bot.findBlocks({matching:bot.registry.blocksByName.chest.id,maxDistance:65,count:20}).map(q=>({q,shell:[[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,-1,0]].map(d=>[d,bot.blockAt(q.offset(...d))?.name])}));

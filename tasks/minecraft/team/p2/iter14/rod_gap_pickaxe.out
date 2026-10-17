@@ -1,0 +1,131 @@
+program #6965 on p2: 36.3 s
+--- output ---
+FOOT_GAP_ACTUAL air { waterlogged: false, type: 'top' } 1.5
+CONTACT_ACTUAL 2846 Vec3 {
+  x: -129.5326459245454,
+  y: 64.16610806758928,
+  z: -428.3534226160184
+} 17 [] 17.03333282470703
+CONTACT_ACTUAL 2846 Vec3 {
+  x: -129.99811605325075,
+  y: 63.87243272263422,
+  z: -428.30577146511087
+} 14 [] 17.03333282470703
+CONTACT_ACTUAL 2846 Vec3 {
+  x: -128.70703138621536,
+  y: 63.827108598947525,
+  z: -428.45771485567093
+} 11 [] 17.03333282470703
+CONTACT_ACTUAL 2846 Vec3 {
+  x: -128.43992175337314,
+  y: 63.360800005197525,
+  z: -429.96389254878017
+} 8 [] 17.03333282470703
+FARM_ISSUE NO_KILL_PROOF Vec3 { x: -131.7, y: 62, z: -429.4999791965902 } 17.03333282470703
+--- returned ---
+{
+ "issue": "NO_KILL_PROOF",
+ "closed": true,
+ "p": {
+  "x": -131.7,
+  "y": 61,
+  "z": -429.4999791965902
+ },
+ "hp": 17.03333282470703,
+ "food": 17,
+ "rods": 0,
+ "hitIds": [
+  [
+   2846,
+   20
+  ],
+  [
+   2846,
+   17
+  ],
+  [
+   2846,
+   14
+  ],
+  [
+   2846,
+   11
+  ]
+ ],
+ "deadIds": [],
+ "inv": [
+  [
+   "nether_bricks",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "gold_ingot",
+   2,
+   null
+  ],
+  [
+   "gold_nugget",
+   6,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   30
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   116
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   2,
+   null
+  ],
+  [
+   "blackstone_slab",
+   5,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   68
+  ],
+  [
+   "netherrack",
+   5,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P4 P1 can accept ordinary materials at retained destination FRAME134,-36,2276 or BED146,-36,2239 once you actually arrive; no extra approval needed. Current P1 chesttest near145,-36,2248, protected11HP/food17. Whole courier evidence: my last BANK→destinati
+p1: on35min including gaps/repair, commitment→complete75min; LOW324steps171s alone. Do not infer whole time from straight leg. Withdraw8 only on your demonstrated compatible route/ending; existing camp8 critical.
+p3: P3 second6951 contact1hit target95240→34/noKill/20HPclosed. TargetstallsSOUTH at(-105.5,56,111.3), outside EASTwindowray; wounded1348teleportedcalm. Changinggeometry: addSOUTHheadslit with solidfoot+ownroof retained, coverboth actualapproachdirections. Not
+p3:  extending same fixedslit.
+p4: P4 accepts P1 BANK8 integration; selected finite courier scope <=12:10UTC whole from11:21 (gear+compatible departure+retained delivery). No sourcehunt extension; source23 collision ambiguity unresolved. Critical8 remain bank until tested tools/ending/route
+p4:  caller. Current ownSword0/Sand10/shovel44; acquiring2logs for woodpick→stonekit, capped source operation first.
+--- p2 now: (-131.7, 61, -429.5) in the_nether, health 17/20, food 17/20, alive

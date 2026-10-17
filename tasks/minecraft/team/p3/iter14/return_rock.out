@@ -1,0 +1,212 @@
+program #7011 on p3: 18.8 s
+--- output ---
+FIRST_RECLAIM 3
+ACTUAL -97,63,86 3080
+ACTUAL -97,62,85 3783
+ACTUAL -96,63,85 4383
+ACTUAL -96,62,84 5084
+ACTUAL -95,63,84 5684
+ACTUAL -95,62,83 6386
+ACTUAL -95,61,82 7087
+ACTUAL -95,60,81 7787
+ACTUAL -95,60,80 8338
+ACTUAL -95,61,79 8939
+ACTUAL -95,60,78 9590
+ACTUAL -94,60,78 10092
+ACTUAL -93,59,78 10745
+ACTUAL -92,58,78 11395
+ACTUAL -91,57,78 12045
+ACTUAL -90,56,78 12696
+ACTUAL -89,55,78 13346
+ACTUAL -88,54,78 13997
+ACTUAL -87,54,78 14550
+ACTUAL -86,54,78 15053
+ACTUAL -85,54,78 15556
+ACTUAL -84,54,78 16055
+ACTUAL -83,54,78 16557
+ACTUAL -82,54,78 17108
+ACTUAL -81,54,78 17627
+HELD_RECOVERY_SUB Vec3 { x: -82, y: 54, z: 78 } dirt basalt
+HELD_RECOVERY_SUB Vec3 { x: -82, y: 55, z: 78 } dirt basalt
+--- returned ---
+{
+ "caller": "iter13_return_rock",
+ "entityId": 168,
+ "threatTrace": [],
+ "combatTrace": [],
+ "combatSwings": 0,
+ "hurt": false,
+ "p": {
+  "x": -80.52855420220625,
+  "y": 54,
+  "z": 78.50001781761216
+ },
+ "hp": 20,
+ "food": 19,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -97,
+   63,
+   86
+  ],
+  [
+   -97,
+   62,
+   85
+  ],
+  [
+   -96,
+   63,
+   85
+  ],
+  [
+   -96,
+   62,
+   84
+  ],
+  [
+   -95,
+   63,
+   84
+  ],
+  [
+   -95,
+   62,
+   83
+  ],
+  [
+   -95,
+   61,
+   82
+  ],
+  [
+   -95,
+   60,
+   81
+  ],
+  [
+   -95,
+   60,
+   80
+  ],
+  [
+   -95,
+   61,
+   79
+  ],
+  [
+   -95,
+   60,
+   78
+  ],
+  [
+   -94,
+   60,
+   78
+  ],
+  [
+   -93,
+   59,
+   78
+  ],
+  [
+   -92,
+   58,
+   78
+  ],
+  [
+   -91,
+   57,
+   78
+  ],
+  [
+   -90,
+   56,
+   78
+  ],
+  [
+   -89,
+   55,
+   78
+  ],
+  [
+   -88,
+   54,
+   78
+  ],
+  [
+   -87,
+   54,
+   78
+  ],
+  [
+   -86,
+   54,
+   78
+  ],
+  [
+   -85,
+   54,
+   78
+  ],
+  [
+   -84,
+   54,
+   78
+  ],
+  [
+   -83,
+   54,
+   78
+  ],
+  [
+   -82,
+   54,
+   78
+  ],
+  [
+   -81,
+   54,
+   78
+  ]
+ ],
+ "elapsed": 18779,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   112
+  ],
+  [
+   "ender_pearl",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 quarry7006 galleryfloor/roof vetoed after partial4COBB+4SANDSTONE, samecaller up10→CAMP FULL20/7false/nohurt. CraftingSTONEpick1 now; no extraquarryquota (WOODpick8 backup, PLANK3+SANDSTONE4+COBB1+Snowcap1). P1 requestSnow11 corrected: currentBANK7 afte
+p4: r emergencyroofcraft4; canridecourier withBerry4. SharedHOME Southbench/WestNorth67+69 finitecut→exactrestore needed enroute, no localpeer; P3/P1 ACK narrow lease please.
+--- p3 now: (-80.5, 54, 78.5) in the_nether, health 20/20, food 19/20, alive

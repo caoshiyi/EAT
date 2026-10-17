@@ -1,0 +1,38 @@
+== #7243 2026-10-17T12:12:11 p3 role=continuity_owner iter=14 0.3 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (29567 chars; --full)
+-- output --
+ISSUE LOWROAD LOW_CURRENT_SOURCE 929 Vec3 { x: -133.44639379749256, y: 57, z: -429.4999474413865 }
+-- returned --
+{"issue": "LOW_CURRENT_SOURCE", "index": 929, "stage": "LOWROAD", "closed": true, "p": {"x": -133.44639379749256, "y": 57, "z": -429.4999474413865}, "hp": 20, "food": 18, "stock": 10, "lootBefore": [["stone_pickaxe", 1, 130], ["wooden_pickaxe", 1, 56], ["iron_sword", 1, 60], ["netherrack", 6, null], ["sandstone", 1, null], ["cobblestone", 3, null]], "inv": [["stone_pickaxe", 1, 130], ["wooden_pickaxe", 1, 56], ["iron_sword", 1, 60], ["netherrack", 6, null], ["sandstone", 1, null], ["cobblestone", 3, null]], "elapsed": 276}
+== #7244 2026-10-17T12:12:39 p3 role=continuity_owner iter=14 14.7 s
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),begin=Date.now(),body=bot.entity,world=bot.game.dimension,hp0=bot.health;
+let dead=false,hurt=false,recovery=false,issue=null;const history=[],placements=[];const capNames=['basalt','blackstone','netherrack','cobblestone','cobbled_deepslate','nether_bricks','dirt','moss_block','sandstone','spruce_planks','warped_planks','oak_planks','crafting_table'];
+const full=q=>{const b=bot.blockAt(q);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|water|magma|fire/.test(b.name)},empty=q=>bot.blockAt(q)?.boundingBox==='empty'&&!/lava|water|fire|sweet_berry_bush|cactus|powder_snow|wither_rose/.test(bot.blockAt(q)?.name),name=q=>bot.blockAt(q)?.name,count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),stock=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+const death=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)},damage=e=>{if(e===bot.entity){hurt=true;bot.clearControlStates();bot.pathfinder.setGoal(null)}};bot.on('death',death);bot.on('respawn',death);bot.on('entityHurt',damage);bot.clearControlStates();bot.pathfinder.setGoal(null);
+function check(){if(dead||bot.entity!==body||bot.game.dimension!==world||bot.health<=0)throw Error('DISCONTINUITY');if(!recovery&&(hurt||bot.health<hp0))throw Error('DAMAGE_END');if(Date.now()-begin>(recovery?320000:165000))throw Error('BOUND_'+recovery)}
+async function tick(k){check();await bot.waitFo
+... (29567 chars; --full)
+-- output --
+LOWROAD_ACTUAL -133 1402 12
+UP4_ACTUAL 58 10
+UP4_ACTUAL 59 11
+HAND_NO_HARVEST (-133, 61, -430) netherrack
+UP4_ACTUAL 60 10
+HAND_NO_HARVEST (-133, 62, -430) netherrack
+LOW_ROOF63_BEFORE_ENTRY netherrack
+UP4_ACTUAL 61 8
+CORPSE_ORDINARY_RECEIPT [
+  [ 'crafting_table', 1, null ],
+  [ 'iron_sword', 1, 60 ],
+  [ 'netherrack', 4, null ],
+  [ 'sandstone', 1, null ],
+  [ 'cobblestone', 3, null ]
+]
+-- returned --
+{"issue": null, "index": 929, "stage": "CORPSE", "closed": true, "p": {"x": -131.44696997253956, "y": 61, "z": -429.4999474535225}, "hp": 20, "food": 18, "stock": 7, "lootBefore": [["stone_pickaxe", 1, 130], ["wooden_pickaxe", 1, 56], ["iron_sword", 1, 60], ["netherrack", 6, null], ["sandstone", 1, null], ["cobblestone", 3, null]], "inv": [["crafting_table", 1, null], ["iron_sword", 1, 60], ["netherrack", 2, null], ["sandstone", 1, null], ["cobblestone", 3, null]], "elapsed": 14727}

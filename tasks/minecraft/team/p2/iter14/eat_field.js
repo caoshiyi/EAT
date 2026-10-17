@@ -1,0 +1,1 @@
+bot.clearControlStates();for(let k=0;k<2;k++){const i=bot.inventory.items().find(i=>i.name==='sweet_berries');if(!i||bot.food>=20)break;await bot.equip(i,'hand');await bot.consume();await bot.waitForTicks(3)}return{p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])};

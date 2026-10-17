@@ -1,0 +1,41 @@
+program #7075 on p3: 5.5 s
+--- output ---
+OW_FRONT_EXACT [ 'air', 'air' ]
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 3.5000856627427925,
+  "y": 65,
+  "z": 4.425621019032825
+ },
+ "hp": 20,
+ "phase": "NETHER",
+ "dim": "the_nether",
+ "covered": false,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P3 exactdeathhandoff: P2diedafter7064 atHIGH(-132,62,-430). Front62DOUBLEfull torso, front63AIR afterminedDOUBLE; SLABitem2 at(-130.545,63.612,-429.737) pickupnotsettled; putFULLNETH63refused (moboccupancy), noLOWrollbackthenBlaze death. Gear/ROD1 nowdrops
+p2: near(-131.3,62,-429.5), unretained. LOWroof63AIR/pillarTABLE61 underbody, nativeHIGHroof64FULL/N/S62,63FULL/WFULL. Callers7056seal-before-descentpassed but7064stockfailureendingFAILED. Freshactualsupersedesallkit templates; no furtherP2sourceclaim.
+--- p3 now: (3.5, 65, 4.4) in the_nether, health 20/20, food 18/20, alive

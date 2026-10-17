@@ -1,0 +1,102 @@
+program #7204 on p3: 108.4 s
+--- output ---
+ROAD_ACTUAL 575 18562 9
+ROAD_ACTUAL 625 38905 9
+ROAD_ACTUAL 700 64329 9
+ISSUE ROAD LINE_THREAT_[15730,"blaze",{"x":-237.5,"y":61,"z":-451.5}] 849 Vec3 { x: -266.46360324061106, y: 61, z: -415.1400770184077 }
+--- returned ---
+{
+ "issue": "LINE_THREAT_[15730,\"blaze\",{\"x\":-237.5,\"y\":61,\"z\":-451.5}]",
+ "index": 849,
+ "stage": "ROAD",
+ "closed": true,
+ "p": {
+  "x": -266.51012484112863,
+  "y": 61,
+  "z": -415.5578974783439
+ },
+ "hp": 20,
+ "food": 18,
+ "stock": 5,
+ "lootBefore": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   44
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   4,
+   null
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   46
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 108439
+}
+--- chat since this player's previous program ---
+p4: P1 BULK7189 donorPearl10/Snow7/Berry4→0, cursorNULL; independentSTATUS recipient10Pearl/7Snow/4Berry+2STICK ACCEPTED. Wholecourier11:21:31→11:58:40 ~37m09 inclallfailures/gaps, within12:10. P4retained20HP19food/7false at2232.518, no P4OWwriter. FreshSTONEg
+p4: iftNORTH nowyour2234.618→P42232.518 2.1m staysawayportal2230. Onceactualnewpick, P4canreturnold129 sameSOUTHprotocol. P4checkingcombinedending.
+p2: P2 recover_surface7172 SMALLpathfinderPASS2cells but fullcorpseNAV_BOUND28s; exactCAMPreturn20/20/EMPTY11:54:24. No recovery claim; corpsewindow~11:54:43 expiredunverified. Changedwoodcaller now removesSNEAK/dwell fromtestednativewalker (oldoutbound .6m/s)
+p2: , source3–4logs→FIELDcraftTABLE+WOODAXE+WOODPICK BEFOREreturn, soZombieblockedroute getsactualdefense/replan; failedreturnfallback3deepnativebury/fullroof insteadofexposedstop. HealthyEndfighterprep finite4min.
+p1: P4 actual7184 sawyourOW2232 body and North2231 FOOT+HEAD bothRECAPPED FULL byP1, portalplane untouched, outer176FULL/nofoes. P1 receiverSTATIONARY163.500,-26,2234.618, inventoryPearl/Snow/Berry/Stick all0. ReadyforactualSOUTHpacket now, no furtherprep/perm
+p1: ission. STONE41reservedforreturngift, Northbackstoppreventsitemsreenteringportal.
+p4: P1 pleasefresh-owninventory now: your7184 receipt was BEFORE actual7189 transfer11:58:37. SeparateworldSTATUS11:58:40 alreadyshows P1Pearl10/Snow7/Berry4/Stick2, P4all0exceptStick1; no secondpacket. Current7196 P4 independentlyverified29-node/176OUTER-FULL
+p4:  compound,noholes,20HP19food/cursorNULL/7false; courieracceptedphysicalending11:59:58. Freshownreceipt→giftSTONE41; no morepacketreadinessloop.
+p1: P4 ACCEPT actual7198 P1ordinaryPearl10/Snow7/Berry4/Stick2,20HP20food/7false. CourierRELEASED/no morepacketchecks. STONE41 sourcegiftactual7198 ownbest41→gone afterNORTHlook4ticks, P1stepped2235.605; yourordinarypickupstillrequired. Old129returnNOTneeded: 
+p1: P1craftsnewSTONEfromactualSTICK2+COFF3 atinternalcorridorTABLE thenreturnsframe. WholeENDING176FULL7196accepted.
+p4: P1 actual7199 P4newSTONE41 received (old129alsoretained), cursorNULL/20HP19food; sender7198 actualadoption10Pearl+7Snow+4Berry+Stick2 read, no pendingpacket. ReturningexactoldSTONE129 nowSOUTHtowardyouractual2235.605, keepnew41. MaincourierinterfaceRELEASE
+p4: D. P4nextfiniteEndcompanionready: ownCOFF2+STICK1→StoneSword1 whenyourneededrecraftTABLEphysicallyplaced, thenexistingcoveredroute/bedspawn, no stocktrip/quota. P1benefitsfirstEndentry/bridge/melee.
+p1: P4 actual7201 P1 recraftedSTONE1/recoveredTABLE; messagecrossed. ActualnewTABLE NOWplaced163,-26,2236 inINTERNALcorridor foryourCOFF2+STICK1→SWORD. P1holds2235.6, no sharedtablecut untilactualyourswordreceipt; thenI recoverbench+bothcancontinue. UseCURRENT
+p1: physicalTABLE coordinate, no newmaterials/travel. YourSTONE41ordinaryreceiptaccepted/no moregifttests.
+--- p3 now: (-266.5, 61, -415.6) in the_nether, health 20/20, food 18/20, alive

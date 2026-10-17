@@ -1,0 +1,100 @@
+program #7183 on p4: 7.4 s
+--- output ---
+DEST_OW_RETURN_ACTUAL Vec3 { x: 163.50007816201122, y: -26, z: 2230.5 } 20
+--- returned ---
+{
+ "issue": null,
+ "world": "overworld",
+ "died": false,
+ "p": {
+  "x": 163.500078453276,
+  "y": -26,
+  "z": 2232.522431789673
+ },
+ "hp": 20,
+ "food": 19,
+ "closed": false,
+ "string": 0,
+ "oak": 0,
+ "cuts": 2,
+ "moves": 4,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "ender_pearl",
+   10,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "cobbled_deepslate",
+   27,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (163.5, -26, 2232.5) in overworld, health 20/20, food 19/20, alive

@@ -1,0 +1,111 @@
+program #6978 on p3: 5.8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": -106.49980031953079,
+  "y": 56,
+  "z": 109.48621275426635
+ },
+ "hp": 20,
+ "food": 19,
+ "closed": true,
+ "pearlBefore": 0,
+ "pearlNow": 2,
+ "trace": [
+  [
+   "DROPS",
+   [
+    [
+     2953,
+     {
+      "x": -106.62354572561904,
+      "y": 56,
+      "z": 111.22176999501396
+     }
+    ]
+   ]
+  ],
+  [
+   "CUT",
+   [
+    -107,
+    57,
+    110
+   ],
+   "warped_planks"
+  ],
+  [
+   "CUT",
+   [
+    -107,
+    56,
+    110
+   ],
+   "netherrack"
+  ],
+  [
+   "PICKUP_ACTUAL",
+   2
+  ],
+  [
+   "CAP",
+   [
+    -107,
+    56,
+    110
+   ],
+   "netherrack"
+  ],
+  [
+   "CAP",
+   [
+    -107,
+    57,
+    110
+   ],
+   "warped_planks"
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   103
+  ],
+  [
+   "ender_pearl",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "warped_nylium",
+   1,
+   null
+  ],
+  [
+   "netherrack",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+[server] p2 has made the advancement [Into Fire]
+--- p3 now: (-106.5, 56, 109.5) in the_nether, health 20/20, food 19/20, alive

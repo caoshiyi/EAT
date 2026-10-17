@@ -1,0 +1,88 @@
+program #7230 on p3: 33.1 s
+--- output ---
+ROAD_ACTUAL 875 9196 7
+DROP3_ACTUAL Vec3 { x: -205.46086708901336, y: 57, z: -429.49987003696117 } 8
+LOWROAD_ACTUAL -198 30116 8
+LOWROAD_ACTUAL -190 32168 8
+ISSUE LOWROAD LOW_NATIVE_SIDE_(-189, 57, -430) 929 Vec3 { x: -189.45228972657694, y: 57, z: -429.4999471030121 }
+--- returned ---
+{
+ "issue": "LOW_NATIVE_SIDE_(-189, 57, -430)",
+ "index": 929,
+ "stage": "LOWROAD",
+ "closed": true,
+ "p": {
+  "x": -189.53016929797084,
+  "y": 57,
+  "z": -429.49994710222916
+ },
+ "hp": 20,
+ "food": 18,
+ "stock": 4,
+ "lootBefore": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   46
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   51
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   3,
+   null
+  ]
+ ],
+ "elapsed": 33069
+}
+--- chat since this player's previous program ---
+[server] p3 has made the advancement [A Terrible Fortress]
+p4: P1 actual7231 freshpeer143.487,-36,2242.484 nowCLEARofP4axis/neighborcaps; firstDOWNlease acceptedcompleted/released, no renewedACKneeded. P4moves145→144 thenownDOWN10 now~30s; exactotherplayer-AABBguard refusesany occupiedcap. ExistingBED146,-36,2239/2240
+p4:  intact, source7231 showsnearbed alladjacentcellsblocked exceptroomSouth2away; willtestactualserverRespawnpointreceipt, notclaimfromintention.
+[server] p4 has made the advancement [Eye Spy]
+--- p3 now: (-189.5, 57, -429.5) in the_nether, health 20/20, food 18/20, alive

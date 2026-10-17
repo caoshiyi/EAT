@@ -1,0 +1,4 @@
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();
+const ps=[p.offset(0,-1,0),p.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[p.offset(x,0,z),p.offset(x,1,z)])];
+const walls=ps.map(q=>{const b=bot.blockAt(q);return{p:q,name:b?.name,full:!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')}});
+return {at:new Date().toISOString(),dimension:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,onGround:bot.entity.onGround,closed:walls.every(b=>b.full),walls,inventory:bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed})),cursor:bot.inventory.selectedItem,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};

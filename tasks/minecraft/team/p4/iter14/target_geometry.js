@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let rows=[];for(let y=62;y<=69;y++){let r={y};for(let z=32;z<=36;z++)r[z]=[7,8,9,10,11].map(x=>bot.blockAt(new Vec3(x,y,z))?.name);rows.push(r)}return{rows,target:bot.entities[23]?{p:bot.entities[23].position.clone(),meta:bot.entities[23].metadata}:null};

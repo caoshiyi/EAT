@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return {p:bot.entity.position.clone(),time:bot.time.timeOfDay,foes:Object.values(bot.entities).filter(e=>['zombie','creeper','skeleton','spider','stray'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<35).map(e=>[e.id,e.name,e.position.clone(),e.metadata?.[9]]),log:bot.blockAt(new Vec3(5,75,83))?.name};

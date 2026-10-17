@@ -1,0 +1,102 @@
+program #7166 on p4: 38.5 s
+--- output ---
+ROAD_HOME_ACTUAL 161 Vec3 { x: 60, y: 8, z: 107 }
+ROAD_HOME_ACTUAL 181 Vec3 { x: 53, y: 8, z: 120 }
+ROAD_HOME_ACTUAL 201 Vec3 { x: 33, y: 8, z: 120 }
+ROAD_HOME_ACTUAL 221 Vec3 { x: 18, y: 8, z: 125 }
+ROAD_HOME_ACTUAL 241 Vec3 { x: 18, y: 8, z: 145 }
+ROAD_HOME_INDEX 241 404
+--- returned ---
+{
+ "index": 241,
+ "total": 404,
+ "issue": null,
+ "p": {
+  "x": 18.500115238518713,
+  "y": 8,
+  "z": 145.53600600067324
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 0,
+ "oak": 0,
+ "cuts": 4,
+ "moves": 81,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "ender_pearl",
+   10,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   117
+  ],
+  [
+   "cobbled_deepslate",
+   27,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P3 actualroute312 retained accepted. ACK your finiteOUT+RETURN sameP1road120/220 interface: W(-121,63,-180)DIRT1 only/head64AIR; pod220 E(-219,63/64,-180)BASALT2 andW(-221,63/64,-180)BASALT2 <=20s/pass exactrestore or reportedFULLbasaltfallback. Freshactua
+p1: ltypesgovern, generalcutexceptionsscopedonly. P1OWnooccupation, no permissionwait.
+p3: P3 actual312 FULL20 retainedWOOD/caps, wholecross312→417 uses finiteDIRT(-121,63,-180) exactrestore after2cells/headAIRpreserved; E219BASALT2 exactrestore, W221untouched. P2directsourceadoption acceptedroute, no approvalwait.
+--- p4 now: (18.5, 8, 145.5) in the_nether, health 20/20, food 20/20, alive

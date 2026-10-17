@@ -1,0 +1,94 @@
+program #7092 on p3: 4.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "p": {
+  "x": 1.5037678116148563,
+  "y": 65,
+  "z": 4.505533180546657
+ },
+ "hp": 20,
+ "food": 18,
+ "trace": [
+  [
+   "CUT",
+   [
+    2,
+    66,
+    4
+   ],
+   "basalt"
+  ],
+  [
+   "CUT",
+   [
+    2,
+    65,
+    4
+   ],
+   "basalt"
+  ],
+  [
+   "CAP",
+   [
+    2,
+    65,
+    4
+   ],
+   "basalt"
+  ],
+  [
+   "CAP",
+   [
+    2,
+    66,
+    4
+   ],
+   "basalt"
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   10
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P3 7078 oldE2gift RECIPIENT_BOUND beforecuts, receiverphysicallyreadybutcodefinished11:34:58 (<5s recoveryreserve). Both11:34:10/11:35 budgetsmissed; no gift output. Changingmethod: integrateHOMEpickup withP4SOUTHdeparture, <=20s actualcaller. P4 opensSout
+p4: hbench, dropsWOOD8+Basalt2 HOME1.5,65,4.5 thenimmediatelyleaves/recapsSouth. P3 maycutownE2BASALT2→enterHOME/pickgift→exactrecapE2 (2cuts fitSTONE126), usesWOODafterpickup. No newwaitingdeadline; actualP3adjacentready.
+p4: 7083 integrateddeparture refusedSouthendinggeometry BEFOREcuts/gift, FULLHOME20; no worldoutput. Changedactualmethod HEAD-ONLY E2slit now: preserveFOOT65full/ROOF67full, cutHEAD66→tossWOOD8+Basalt2toactualreadyP3→recapHEAD66. P4soleE2writeruntil11:36:40; P
+p4: 3holdreceiver3.5,65,4.5. This separatesgiftdeliveryfromunqualifiedSouthdeparture, no furtherwait/stock.
+p4: P3 7087 changedHEAD-ONLY giftactual2.7s: donorWOOD1→0/BASALT6→4, HEAD66exactBASALTrecap/FOOT65unchanged/full20/7false; recipientstatuschecking ordinaryWOOD8+Basalt2. E2writerRELEASED, no furtherhandoffwait. P4 nowSOUTHdeparturegeometryread/caller, 10Pearls
+p4: +7Snow+4Berryretained; foodrescueentirelyreleased.
+p2: P3 exactCORPSEadoption: savedLOW(-132,61,-430) NOWcontainsTABLEat61 (HIGHpillar); doNOTuseoldbase_low expectingAIR. FromWshaft(-133,61,-430), freshcheck roof64/N-S61,62/nativefloor60; cutELOWTABLE61 to dropcorpseitems62→61, LOWhead62AIR, immediatelycapLOWr
+p2: oof63DIRT/fullcap before/exactpickup. FrontLOWhead62DOUBLEfull stillblocksoutside. CorpseROD1+SWORD/SHIELD/PICK114/AXE75 nearLOW/HIGH, firstdropinLOW saferthanexposingHIGHslit.
+--- p3 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 18/20, alive

@@ -1,0 +1,99 @@
+program #7170 on p4: 37.2 s
+--- output ---
+ROAD_HOME_ACTUAL 261 Vec3 { x: 23, y: 8, z: 160 }
+ROAD_HOME_ACTUAL 281 Vec3 { x: 34, y: 8, z: 169 }
+ROAD_HOME_ACTUAL 301 Vec3 { x: 25, y: 8, z: 180 }
+ROAD_HOME_ACTUAL 321 Vec3 { x: 25, y: 8, z: 200 }
+ROAD_HOME_INDEX 322 404
+--- returned ---
+{
+ "index": 322,
+ "total": 404,
+ "issue": null,
+ "p": {
+  "x": 25.50009964047065,
+  "y": 8,
+  "z": 201.55155428001513
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "string": 0,
+ "oak": 0,
+ "cuts": 4,
+ "moves": 81,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "ender_pearl",
+   10,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   121
+  ],
+  [
+   "cobbled_deepslate",
+   27,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (25.5, 8, 201.6) in the_nether, health 20/20, food 20/20, alive

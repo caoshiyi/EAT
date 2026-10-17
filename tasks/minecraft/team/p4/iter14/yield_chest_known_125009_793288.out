@@ -1,0 +1,117 @@
+program #7328 on p4: 5.4 s
+--- output ---
+ACTUAL_WHOLE_TOOL_PRICE 2 80
+RETURN_ACTUAL 1 Vec3 { x: 131, y: -36, z: 2275 }
+RETURN_ACTUAL 2 Vec3 { x: 131, y: -36, z: 2274 }
+RETURN_ACTUAL 3 Vec3 { x: 131, y: -36, z: 2273 }
+RETURN_ACTUAL 4 Vec3 { x: 131, y: -36, z: 2272 }
+RETURN_ACTUAL 5 Vec3 { x: 130, y: -36, z: 2272 }
+RETURN_ACTUAL 6 Vec3 { x: 129, y: -36, z: 2272 }
+RETURN_ACTUAL 7 Vec3 { x: 129, y: -36, z: 2273 }
+RETURN_ACTUAL 8 Vec3 { x: 129, y: -36, z: 2274 }
+--- returned ---
+{
+ "total": 8,
+ "issue": null,
+ "p": {
+  "x": 129.50307398502636,
+  "y": -36,
+  "z": 2274.5074467789664
+ },
+ "hp": 20,
+ "food": 19,
+ "closed": true,
+ "string": 0,
+ "oak": 0,
+ "cuts": 2,
+ "moves": 8,
+ "inv": [
+  [
+   "wooden_shovel",
+   1,
+   49
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "mossy_stone_bricks",
+   10,
+   null
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "snow_block",
+   1,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   24,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   82
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "tuff",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (129.5, -36, 2274.5) in overworld, health 20/20, food 19/20, alive

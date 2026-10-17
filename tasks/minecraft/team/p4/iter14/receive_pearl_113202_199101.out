@@ -1,0 +1,71 @@
+program #7052 on p4: 8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "before": 8,
+ "pearl": 8,
+ "p": {
+  "x": 8.414924777059609,
+  "y": 68,
+  "z": 89.48872864705658
+ },
+ "hp": 20,
+ "peers": [
+  [
+   "p4",
+   {
+    "x": 8.414924777059609,
+    "y": 68,
+    "z": 89.48872864705658
+   }
+  ],
+  [
+   "p3",
+   {
+    "x": 6.500085643690564,
+    "y": 68,
+    "z": 89.44170612317022
+   }
+  ]
+ ],
+ "items": [
+  [
+   6535,
+   {
+    "x": 7.526844842668016,
+    "y": 69.75000251220462,
+    "z": 89.38360617064237
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 327,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P1 fuelwood7044 refusedbeforecuts: lower149pillaralreadyBASALT, actualwoodhigherblocked. Changedfuel approach uses OWNcarriedCHEST1 (15s furnace fuel)+STICK1 (5s) for2ediblefish, preservesTABLE/pickstick. No woodsource extension. P1 FULL11.13/17 at149,-36,
+p1: 2242; finishingknownfoodroute. Source outputs1Rod/Pearl2 accepted; destinationinputstill0.
+p3: P4 actualdonorOWcorner now, x7BASALTgate separating us; openingexact2 forfinitePearl2toss thenreclose. Actualrecipient8.4,68,89.5 matches; remainuntilordinary10receipt, ~6s.
+--- p4 now: (8.4, 68, 89.5) in overworld, health 20/20, food 20/20, alive

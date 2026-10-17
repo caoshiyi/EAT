@@ -1,0 +1,11 @@
+# Iteration 14 review — 2026-10-17T12:45:25.968495+00:00
+
+Official12:43capture(eval_1243.txt): **dragon0/milestones10/12/deaths112/programs7305/restarts1**. From6878: +427programs/+3deaths/no milestone. Currentdeadline13:14:08, about29minleft.
+
+P3diedBlaze12:41:31after7295LOWendedprotectedEndfalse/front62AIR/CAP_STOCKfailed. CurrentrespawnCAMP20/20EMPTY;7302SOURCE_LOWrefusedoldbodyoperation. SourceSWORD71+SLAB2droppedunverified/Rod0, notretainedkit. Originalhealthybackup11:33:22→death68m09/noRod, firstcontact~49min; source/unit/endingfailureallpreserved. PriorHIGHsuccessdidnotqualifychangedLOWmaterialreceipt. P2proposedtoolcourieroldrecipientisobsolete, notanewdeliverytask.
+
+ReallocatefirstmissingRod5→P1outcometoP2actualNetherHOME20/20withcurrentBLACK3/BASALT3/PLANK4/STICK2/WOODpick20. Fresh12:42:52statusBLACK3supersedesearlierBLACK2; rootcorrectedinitialoldcountcopy. First3inputaccepted/released/noextra6quota, actualtoolcraftandfurtheruseunverified. P2choosescurrentboundedoutputtestorcompletealternativeandwholeprice; no methodprescribed. P3currentemptybodyownssecondfiniteusefuloutcome/failedcallerhandofforindependentalternative, no automatic68minrebuild.
+
+P1actualframecenter134.5,-36,2276.5/FULL20/20, Pearl10/Snow7/Berry4/Arrow5retained. P4actualcompanion7301at131.5,-36,2276.5/FULL20/19accepted/released, bedspawn/SWORD/pickaccepted. Originalcompanion12:12wholeboundmissed~30min; physicalarrivaliscurrentacceptance, notrenamedontime. NoRod/Eye/End/combatclaim. Actualactivation/entry/fightstillmustfitrunnerdeadlineafterupstreamdelivery.
+
+Allacceptedcourier/material/geometry/interfacesreleased, unchangedleasespersist. CurrentHOME-NorthsignatureledgerINTERFACES.mdavoidsrepeatedoldmaterialassumptions. Full-blockhelperfilterisnotworldmaterialimpossibility; sourcecap/receiptfailure7295handoffisnextoperator'simminentquestiononly. Currentcompletepriceunacknowledged/no demonstratedwholecompletionfit, butcontinueboundedauthorizedworkuntilverifiedvictory/currentexplicitstop/13:14:08/runnertermination. Supportedlistonly/root/no target/no guesses/spawns. Engineerlastrecord11:21/no ACK. Tokenaccountingunavailable(costrowsonly). Rootnonplaying/ownedfilesonly. Next12:50oractualoutput/death/Endearlier.

@@ -1,0 +1,89 @@
+program #7054 on p3: 3.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "tossed": true,
+ "p": {
+  "x": 6.500085643690564,
+  "y": 68,
+  "z": 89.44170612317022
+ },
+ "hp": 20,
+ "pearl": 0,
+ "recipient": {
+  "x": 8.414924777059609,
+  "y": 68,
+  "z": 89.48872864705658
+ },
+ "gate": [
+  "basalt",
+  "air"
+ ],
+ "closed": false,
+ "trace": [
+  [
+   "CUT",
+   [
+    7,
+    69,
+    89
+   ],
+   "basalt"
+  ],
+  [
+   "CUT",
+   [
+    7,
+    68,
+    89
+   ],
+   "basalt"
+  ],
+  [
+   "DONOR_AFTER",
+   0
+  ],
+  [
+   "CAP",
+   [
+    7,
+    68,
+    89
+   ],
+   "basalt"
+  ],
+  [
+   "ENDING_FAIL",
+   "CAP_STOCK"
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sneak": false,
+  "sprint": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P3 actualrecipientP4 READY8.39,68,89.50 ownPearl8; youractual6.50,68,89.43 nowinrange. Toss2 EAST afterlook(+x)+4ticks; stepWESTonlyifactualcellclear, otherwiseholdsourceandletrecipientpickup from2m; do notenterportal. AfterdeltaP4 passesNether, youmayclea
+p4: rhallSouth. Bound11:32 unchanged.
+p1: P1 fuelwood7044 refusedbeforecuts: lower149pillaralreadyBASALT, actualwoodhigherblocked. Changedfuel approach uses OWNcarriedCHEST1 (15s furnace fuel)+STICK1 (5s) for2ediblefish, preservesTABLE/pickstick. No woodsource extension. P1 FULL11.13/17 at149,-36,
+p1: 2242; finishingknownfoodroute. Source outputs1Rod/Pearl2 accepted; destinationinputstill0.
+--- p3 now: (6.5, 68, 89.4) in overworld, health 20/20, food 18/20, alive

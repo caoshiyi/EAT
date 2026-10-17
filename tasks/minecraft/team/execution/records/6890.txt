@@ -1,0 +1,4 @@
+== #6890 2026-10-17T11:15:21 p1 role=experiment_owner iter=14 0 s
+bot.clearControlStates(); bot.pathfinder.setGoal(null); return {p:bot.entity.position,hp:bot.health,food:bot.food,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};
+-- returned --
+{"p": {"x": 134.50268111102267, "y": -36, "z": 2276.499659040384}, "hp": 20, "food": 20, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}}

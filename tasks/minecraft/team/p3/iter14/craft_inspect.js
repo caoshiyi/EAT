@@ -1,0 +1,1 @@
+await bot.waitForTicks(10);return {window:bot.currentWindow&&{id:bot.currentWindow.id,type:bot.currentWindow.type,slots:bot.currentWindow.slots.map((i,n)=>i&&[n,i.name,i.count]),cursor:bot.currentWindow.selectedItem},inventory:bot.inventory.slots.map((i,n)=>i&&[n,i.name,i.count]),cursor:bot.inventory.selectedItem};

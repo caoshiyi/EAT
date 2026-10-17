@@ -1,0 +1,44 @@
+program #7120 on p2: 66.4 s
+--- output ---
+CURRENT_STEP_THREAT 6512 skeleton Vec3 { x: 8.444681813005522, y: 63, z: 86.23320557567635 } Vec3 {
+  x: 22.500056455876972,
+  y: 68.00133597911214,
+  z: 87.60926492231476
+} Vec3 { x: 22, y: 68, z: 88 } false
+BERRY_CASE STEP_THREAT_6512
+CURRENT_STEP_THREAT 6512 skeleton Vec3 { x: 8.444681813005522, y: 63, z: 86.23320557567635 } Vec3 {
+  x: 22.500056455876972,
+  y: 68.00133597911214,
+  z: 87.60926492231476
+} Vec3 { x: 22, y: 67, z: 86 } true
+BERRY_END_FAILED STEP_THREAT_6512
+--- returned ---
+{
+ "issue": "STEP_THREAT_6512",
+ "last": 44,
+ "gain": 0,
+ "at": "2026-10-17T11:43:02.388Z",
+ "p": {
+  "x": 22.500056455876972,
+  "y": 68.00133597911214,
+  "z": 87.60926492231476
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (22.5, 68, 87.6) in overworld, health 20/20, food 20/20, alive

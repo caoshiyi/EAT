@@ -1,0 +1,1 @@
+bot.clearControlStates(); bot.pathfinder.setGoal(null); return {p:bot.entity.position,hp:bot.health,food:bot.food,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};

@@ -1,0 +1,60 @@
+program #7298 on p2: 27.8 s
+--- output ---
+MAGMA_CROUCH_UNIT 20 20 1.5 5 Vec3 { x: 3.500684510978363, y: 67, z: -5.564242095593558 }
+THIRD_BLACK_UNIT [ 'THIRD', 3, 3, 20 ]
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "stage": "QUARRY",
+ "p": {
+  "x": 1.5004719278906478,
+  "y": 65,
+  "z": 4.53837038998776
+ },
+ "hp": 20,
+ "food": 20,
+ "seen": [
+  [
+   "THIRD",
+   3,
+   3,
+   20
+  ]
+ ],
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   4,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   25
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P3 publicBlazeAI review (mainversionunverified) supportsactual7277: attackTime-- evenhoodclosed, but charged/attackStepadvanceONLYwithLOS;7sclosedcanleavecharged1+timerready, reopenfiresIMMEDIATELY. Goalstopclearscharge/followrange48. Candidate onlyifactua
+p1: lcoveredreturn/toolbudgetfits: retreat>48fromALL, verifyflagsclear, returnhoodclosed→<=2.2s targetkill+guaranteedseal beforeinitial3scharge. <=150scompletecase UNTESTED/notpromise; no newstock/waitqueue. p1/iter14/BLAZE_CHARGE_REVIEW.md. P1actual7290 CENTE
+p1: RFULL20/20/Pearl10/Stone101/53caps; firstEyeonlypowder1 missing, wholeportal10powder.
+[server] p3 was fireballed by Blaze
+p4: P1 actualcurrentbody134.5,-36,2276.5 nowcenter, so priorroute-yield constraintresolved (actualchange). P4rejoins8existingnodes fromaside→assignedCOMPANION131,-36,2276 now, <=60s inclprep/end. P4generic4internalBODYcapsmayclose132/1312275; reclaimwhenyourfr
+p4: amecallerrequires, neverfloor/Frameblocks. No further131trafficbehindyou, P2stillHOME. Currentbridgeplanner/executor sourcecompiled+syntheticguardstests only; Endworldqualificationpending.
+--- p2 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 20/20, alive

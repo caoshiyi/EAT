@@ -1,0 +1,50 @@
+program #7046 on p3: 9.4 s
+--- output ---
+OW_ACTUAL_ARRIVAL Vec3 { x: 6.501830280077978, y: 68, z: 91.5 } [ 'air', 'air' ]
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "phase": "OW",
+ "dim": "overworld",
+ "p": {
+  "x": 6.500085643690564,
+  "y": 68,
+  "z": 89.44170612317022
+ },
+ "hp": 20,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   124
+  ],
+  [
+   "ender_pearl",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 68, 89.4) in overworld, health 20/20, food 18/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const rows=[];for(let y=65;y<=78;y++){let row={y};for(let z=79;z<=84;z++)row[z]=[4,5,6,7].map(x=>bot.blockAt(new Vec3(x,y,z))?.name);rows.push(row)}return{rows,foes:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider','stray'].includes(e.name)).map(e=>[e.id,e.name,e.position.clone()])};

@@ -1,0 +1,53 @@
+program #7178 on p1: 2.2 s
+--- output ---
+INTAKE_OPEN_ACTUAL [ 'air', 'air' ]
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 163.49990271428436,
+  "y": -26,
+  "z": 2234.5869857125094
+ },
+ "hp": 20,
+ "food": 20,
+ "gate": [
+  [
+   -26,
+   "air"
+  ],
+  [
+   -25,
+   "air"
+  ],
+  [
+   -24,
+   "basalt"
+  ]
+ ],
+ "pearl": 0,
+ "snow": 0,
+ "berry": 0,
+ "stick": 0,
+ "picks": [
+  129,
+  129,
+  129,
+  129,
+  129,
+  41,
+  129
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (163.5, -26, 2234.6) in overworld, health 20/20, food 20/20, alive

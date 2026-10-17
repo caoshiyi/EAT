@@ -1,0 +1,4 @@
+== #6910 2026-10-17T11:16:29 p1 role=experiment_owner iter=14 0.4 s
+const {Vec3}=require('vec3');await bot.waitForTicks(8);return{p:bot.entity.position,table:bot.blockAt(new Vec3(139,-35,2249))?.name,picks:bot.inventory.items().filter(i=>i.name==='stone_pickaxe').map(i=>[i.slot,i.durabilityUsed]),cursor:bot.currentWindow?.selectedItem,window:bot.currentWindow?.type,sticks:bot.inventory.items().filter(i=>i.name==='stick').map(i=>i.count)};
+-- returned --
+{"p": {"x": 139.49990437518275, "y": -36, "z": 2248.4617348839524}, "table": "crafting_table", "picks": [[14, 129], [21, 129], [26, 0], [29, 129], [44, 86]], "sticks": [4]}

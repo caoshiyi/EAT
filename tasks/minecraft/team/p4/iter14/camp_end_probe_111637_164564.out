@@ -1,0 +1,187 @@
+program #6912 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T11:16:37.266Z",
+ "own": [
+  [
+   "sand",
+   10
+  ],
+  [
+   "wooden_shovel",
+   1
+  ]
+ ],
+ "p": {
+  "x": 5.499861020643606,
+  "y": 65,
+  "z": 79.7
+ },
+ "hp": 20,
+ "food": 20,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "walls": [
+  [
+   [
+    5,
+    67,
+    83
+   ],
+   "dirt",
+   true
+  ],
+  [
+   [
+    5,
+    68,
+    83
+   ],
+   "spruce_planks",
+   true
+  ],
+  [
+   [
+    7,
+    67,
+    81
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    7,
+    68,
+    81
+   ],
+   "sandstone",
+   true
+  ],
+  [
+   [
+    7,
+    67,
+    82
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    6,
+    67,
+    84
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    6,
+    68,
+    84
+   ],
+   "gravel",
+   true
+  ],
+  [
+   [
+    7,
+    67,
+    84
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    7,
+    68,
+    84
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    8,
+    67,
+    83
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    8,
+    68,
+    83
+   ],
+   "dirt",
+   true
+  ],
+  [
+   [
+    8,
+    69,
+    83
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    6,
+    66,
+    83
+   ],
+   "cobblestone",
+   true
+  ],
+  [
+   [
+    7,
+    66,
+    83
+   ],
+   "cobblestone",
+   true
+  ]
+ ],
+ "door": [
+  "spruce_door",
+  {
+   "powered": false,
+   "open": false,
+   "hinge": "left",
+   "half": "lower",
+   "facing": "north"
+  }
+ ],
+ "mainRoof": [
+  [
+   6,
+   "spruce_slab",
+   "spruce_slab"
+  ],
+  [
+   7,
+   "spruce_slab",
+   "spruce_slab"
+  ]
+ ],
+ "landing9": "cobbled_deepslate"
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (5.5, 65, 79.7) in overworld, health 20/20, food 20/20, alive

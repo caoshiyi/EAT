@@ -1,0 +1,320 @@
+program #7394 on p2: 0.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T13:13:54.286Z",
+ "p": {
+  "x": 7.497127188018914,
+  "y": 67.5625,
+  "z": 83.50192884285809
+ },
+ "hp": 20,
+ "food": 20,
+ "onGround": true,
+ "pose": 0,
+ "height": 1.8,
+ "physicsHeight": 1.8,
+ "headBelowRoof": true,
+ "geometry": [
+  {
+   "a": [
+    6,
+    66,
+    82
+   ],
+   "name": "crafting_table",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    69,
+    82
+   ],
+   "name": "spruce_slab",
+   "props": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    66,
+    83
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    69,
+    83
+   ],
+   "name": "spruce_slab",
+   "props": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    66,
+    82
+   ],
+   "name": "air",
+   "props": {},
+   "ok": false
+  },
+  {
+   "a": [
+    7,
+    69,
+    82
+   ],
+   "name": "spruce_slab",
+   "props": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    66,
+    83
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    69,
+    83
+   ],
+   "name": "spruce_slab",
+   "props": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    67,
+    81
+   ],
+   "name": "sand",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    67,
+    84
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    67,
+    81
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    67,
+    84
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    5,
+    67,
+    82
+   ],
+   "name": "dirt",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    8,
+    67,
+    82
+   ],
+   "name": "basalt",
+   "props": {
+    "axis": "x"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    5,
+    67,
+    83
+   ],
+   "name": "dirt",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    8,
+    67,
+    83
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    68,
+    81
+   ],
+   "name": "sand",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    6,
+    68,
+    84
+   ],
+   "name": "sand",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    68,
+    81
+   ],
+   "name": "sandstone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    7,
+    68,
+    84
+   ],
+   "name": "cobblestone",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    5,
+    68,
+    82
+   ],
+   "name": "dirt",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    8,
+    68,
+    82
+   ],
+   "name": "basalt",
+   "props": {
+    "axis": "y"
+   },
+   "ok": true
+  },
+  {
+   "a": [
+    5,
+    68,
+    83
+   ],
+   "name": "sand",
+   "props": {},
+   "ok": true
+  },
+  {
+   "a": [
+    8,
+    68,
+    83
+   ],
+   "name": "basalt",
+   "props": {
+    "axis": "y"
+   },
+   "ok": true
+  }
+ ],
+ "envelopeOK": false,
+ "cursor": null,
+ "inv": [
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   3
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p1: P3/P2 gate caller source review: prototype custom rays uses ALLshapes correctly. Legacy rayClear helper begins if(!full(bl)) return false, so it IGNORES closed fence-gate/nonfull slabs; do not reuse that helper as closed-gate projectile acceptance or assum
+p1: e apparent LOS means shield absent. Actual source test needs fresh all-shapes rays/state+damage receipts. Prototype check()135s vs stated30s: measure whole actual ending.
+p4: P2/P3 narrowpendingGATE API detail frominstalledinventory.js195 TODO: activateBlock doesNOTclearSneak. Sneak+nonemptyHAND caninvokeitemsecondaryuse instead oftoggle, so stop/clearSneak beforeactualactivateBlock+propertyACK (prototype/source); reenableonlya
+p4: fterACKifneeded. Existingforcedlookfactsame. Notclaimcurrentcallerfailedthatway/no newprototypequota. P4allEndhelpersretainSnow4/closedbody, no sourcecontrolschanged.
+p3: P2 ACTUAL7381 prototype COMPLETE7.2s 13:09:15<30s: craftedONEgate, placedNORTHonCAMPtable, 9/9closedraysGATE,9/9openraysNORTHsand,9/9reclosedGATE; actualACKopen99ms/close51ms. HandreclaimedordinaryONEgate andBANKdepositverified! TABLEintact/gatecellAIR/Nor
+p3: thSAND2/HP20food20/cursorNULL/7false. InterfaceRELEASED now adoptBANKspruce_fence_gate1; no furthergiftwait. Sourceprojectile/Blaze effect remainsUNTESTED; E/WplacementrequiredsourceXplane, all-shapesrays notlegacyfullfilter.
+p3: 7381 latencyCORRECTION exactparsedtrace open99ms / reclose100ms (earlier51ms belongsDOOR7342; copiedwrong). No effecton9/9geometry/ordinaryBANKreceipt. Gateclosedactualproperty+ALLshapes ack100ms, notguaranteedonetick; SOURCEcharged timingneedsfirstbounded
+p3: physicaltest. Preserve0hurtlocalonly.
+p1: P1 actual7386 13:11:13 center134.495,-36,2276.499 FULL20/20/grounded/cursorNULL/7false; all10privateboundaryFULL includingcenterbasaltfloor. Pearl10/snow7/arrow5/stone45/caps53 retained; Rod0/powder0/Eye0. No newjourney/frameLOSrepeat/Endclaim. Remain thro
+p1: ugh13:14:08; closingofficialeval pending.
+p3: P2 actualP3yield_pickup: donatedDIRT1→BANKverified (forcapinsurance), movedWESTbed6.32,67.5625,83.5/allfalse20/20 toavoidvacuumEHEADdrops whileyouexit. BANKactualGATE1/WOODpick25/DIRT1; no newtoolquarry. YourBASALT2+DIRT1 total3; legacycaps>=4preflight may
+p3: refuseunnecessarily, inspectactual2sourcecuts+ordinarypickupbeforefinalreserveinstead. Gate-source-one-hit.js p3/iter14 designonly; CAMP SOURCE_BODYguard7385 zeroeditsPASS, positiveBlazeUNTESTED. Recoveryclose ignoreshurt butrequireslifecontinuity.
+p4: P4closingphysicalprobe actualnow verifiesoffpath1292274/full10faces/20HP19food/grounded/cursorNULL/all7false/Stone83/Snow4, Endnotentered. I willsaveofficialevalnear13:13:40 BEFORErunnercutoff andremainuntilverified13:14:08; fullcontribution/failures/tools
+p4: limitsownedP4.md+iter14 records. SourcegateordinaryBANK1ackP3, FIELDstilluntested/noRod0deliverypromise.
+p3: P2 finalactual7391? final_body_probe.out exactID: p3BED6.3,67.5625,83.509/HP20food20/grounded/pose0,height1.8,physics1.8,cursorNULL/7false. NorthSAND2 safe. Broad2x2CAMP envelope NOTFULL: floor7,66,82 AIR belowBANKchest; ownleftBEDfloor6,66,83FULL androofT
+p3: OPslab69.5/head69.3625clear. DoNOTinferwholefloorFULLfromclosed() orhealth. No holeedit: DIRT1 remainsBANKforP2 alongsideGATE1.
+--- p2 now: (7.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

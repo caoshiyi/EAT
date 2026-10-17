@@ -1,0 +1,86 @@
+program #7228 on p3: 0.3 s
+--- output ---
+ISSUE ROAD SOURCE850 850 Vec3 { x: -266.51012484112863, y: 61, z: -415.5578974783439 }
+--- returned ---
+{
+ "issue": "SOURCE850",
+ "index": 850,
+ "stage": "ROAD",
+ "closed": true,
+ "p": {
+  "x": -266.5050701232073,
+  "y": 61,
+  "z": -415.5131218777065
+ },
+ "hp": 20,
+ "food": 18,
+ "stock": 5,
+ "lootBefore": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   46
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   46
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 264
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-266.5, 61, -415.5) in the_nether, health 20/20, food 18/20, alive

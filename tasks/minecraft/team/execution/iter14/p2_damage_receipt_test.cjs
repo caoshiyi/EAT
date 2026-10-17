@@ -1,0 +1,15 @@
+const assert=require('assert'),{EventEmitter}=require('events');
+const {attachDamageReceipt}=require('./p2_damage_receipt.cjs');
+const body={id:9,position:{x:1,y:62,z:3},height:1.5};
+const bot={entity:body,entities:{0:{name:'blaze',position:{x:4,y:63,z:3}},12:{name:'small_fireball',position:{x:2,y:63,z:3}}},health:16.5,_client:new EventEmitter()};
+const original=bot._client.listenerCount('damage_event');
+const r=attachDamageReceipt(bot,2);
+bot._client.emit('damage_event',{entityId:9,sourceTypeId:22,sourceCauseId:1,sourceDirectId:13});
+assert.equal(r.receipts[0].cause.id,0);assert.equal(r.receipts[0].direct.name,'small_fireball');
+body.position.x=7;assert.equal(r.receipts[0].body.x,1,'snapshot must not share mutable body position');
+bot._client.emit('damage_event',{entityId:10,sourceCauseId:1});assert.equal(r.receipts.length,1);
+bot._client.emit('damage_event',{entityId:9,sourceCauseId:0,sourceDirectId:99});
+assert.equal(r.receipts[1].cause,null);assert.deepEqual(r.receipts[1].direct,{id:98,loaded:false,name:null,p:null});
+bot.entity={...body};bot._client.emit('damage_event',{entityId:9,sourceCauseId:1});assert.equal(r.receipts.length,2,'old life must not record');
+r.cleanup();r.cleanup();assert.equal(bot._client.listenerCount('damage_event'),original);
+console.log('PASS +1 source IDs, source0 absent, unloaded source unknown, value snapshots, current life filter, exact idempotent listener cleanup.');

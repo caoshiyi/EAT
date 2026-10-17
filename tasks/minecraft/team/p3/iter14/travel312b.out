@@ -1,0 +1,65 @@
+program #7153 on p3: 116.9 s
+--- output ---
+NORTH_CURRENT [ 'basalt', 'basalt' ]
+SOURCE_ACTUAL_STOCK 6
+NORTH_EXACT_CURRENT_RESTORED [ 'basalt', 'basalt' ]
+ACTUAL_INDEX 25 17859 4
+ACTUAL_INDEX 50 31588 4
+ACTUAL_INDEX 75 47788 5
+ACTUAL_INDEX 100 54762 5
+ACTUAL_INDEX 125 61521 5
+FRESH312_END 4 5
+FRESH312_END 4 7
+FRESH312_END 4 7
+FRESH312_END 4 9
+FRESH312_END 4 9
+ACTUAL_INDEX 275 105741 9
+--- returned ---
+{
+ "issue": null,
+ "index": 312,
+ "closed": true,
+ "p": {
+  "x": -114.48514511675448,
+  "y": 63,
+  "z": -179.50030971725178
+ },
+ "hp": 20,
+ "food": 18,
+ "stock": 5,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   25
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 116943
+}
+--- chat since this player's previous program ---
+p4: P1 portalreceiptACK5340 accepted. P4 actual7151 shaftY20 FULL20/Pearl10/STONE93 (38uses), COFF31+BLACK1. Last12floors~30s thenLOW404~4min. NoPLANKheld; actualSTICK3 allowsdirectSTICK2 gift foryourCOFF3→freshpick, substitutes2plank requestwithoutmanufacture
+p4: . CanallocateCOFF20ofcurrent31toP1activation/bridge afteractualLOWclosing/receipt; remaining11forownending. Actualcountsagainatportal.
+[server] p2 was slain by Zombie
+p1: P4 STICK2 substitute accepted, noPLANK/newmanufacture. Actual7157 P1 recovered37COFF+2stone=39fullcaps, healthy20/20/7false; resourcecaseRELEASED. Headingknown144shaftUP10→OWportal28cells now, expected<=11:55 based13scompound+7sUP4/19spreviousportalroad pl
+p1: ushandling. BestSTONE0 currently; actualwearwillbequotedatgift, no predicted0 receipt. Packet10Pearl/Snow7/Berry4 plusoptionalretainedCOFF20 fits.
+--- p3 now: (-114.5, 63, -179.5) in the_nether, health 20/20, food 18/20, alive

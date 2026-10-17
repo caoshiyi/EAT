@@ -1,0 +1,51 @@
+program #7348 on p3: 2.2 s
+--- output ---
+DOOR_NEAR [
+  {
+    p: Vec3 { x: 3.273039690770262, y: 63, z: 80.36663203393785 },
+    item: 'basalt'
+  },
+  {
+    p: Vec3 { x: 4.557366128710655, y: 63, z: 80.53312882134463 },
+    item: 'sand'
+  },
+  {
+    p: Vec3 { x: 7.614159671716548, y: 62, z: 80.22899036845179 },
+    item: 'spruce_door'
+  }
+]
+--- returned ---
+{
+ "issue": "ORDINARY_DOOR_MISSING",
+ "stored": false,
+ "at": "2026-10-17T12:56:04.729Z",
+ "p": {
+  "x": 6.590027335529304,
+  "y": 67.5625,
+  "z": 83.52485443618583
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "hurts": [],
+ "closed": false,
+ "items": [
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.6, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive

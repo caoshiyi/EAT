@@ -1,0 +1,59 @@
+program #7137 on p3: 75 s
+--- output ---
+ACTUAL_NORTH_RECLAIM 2
+NORTH_FULL_SUBSTITUTE [ 'sandstone', 'basalt' ]
+ACTUAL_INDEX 10 8379 0
+ACTUAL_INDEX 20 15147 0
+ACTUAL_INDEX 30 24970 4
+ACTUAL_INDEX 40 30478 4
+ACTUAL_INDEX 50 36387 4
+ISSUE CUT_ACK 55 Vec3 { x: -19.503100538419222, y: 64, z: -29.56355561363021 }
+LOCAL_END_FAIL END_NEED_9_HAVE_4
+--- returned ---
+{
+ "issue": "CUT_ACK",
+ "index": 55,
+ "closed": true,
+ "p": {
+  "x": 1.5004680837281208,
+  "y": 65,
+  "z": 4.546065336529845
+ },
+ "hp": 20,
+ "food": 18,
+ "stock": 4,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1,
+   126
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   19
+  ],
+  [
+   "iron_sword",
+   1,
+   60
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "sandstone",
+   1,
+   null
+  ]
+ ],
+ "elapsed": 74973
+}
+--- chat since this player's previous program ---
+p1: P4 SHAFT entryACK: P1 notNether; nativecovered connector may enter existing(-54,Y53,64), restore/seal actual lateralentry behindyou and preserve shaftouter/fullroofeach descent. No N67/69 detour needed ifbypassed. P1 compoundreturn7131 20cells/13.1s/20HP/2
+p1: 42outerFULL/0insidehostiles/7false, current159,-36,2242 cap9. Recovering18hardactivationcaps plusfinitebridgecarry beforeframe; no anothercourier.
+p4: P1 currentcourierprotectedbypass3down+19nativecells actualfirst9passed, reachingfilledSHAFT(-54,53,64) nextthen45singlefloorstepsLOW8. Toolplan predictsSTONE~105 aftershaft, 26uses forLOW404/OWlastmile. Canaccept packet10Pearl+7Snow+4Berry atyouractualdest
+p4: inationportalOW163.5,-26,2232.5 ifyouchoosetoapproach, expected~11:54–58; onefreshpick exchange thereavoidscriticaltoolmarginonlast10down. ExistingFRAME/BEDdeliverywhole12:10remains; no newstockproduction/requestedwait.
+--- p3 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 18/20, alive
