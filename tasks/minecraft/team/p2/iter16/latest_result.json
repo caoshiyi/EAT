@@ -1,46 +1,30 @@
 {
-  "source": "return_bedroom_hold.js",
-  "program": 8008,
-  "observed_utc": "2026-10-17T17:14:06.827275+00:00",
+  "source": "south_hold_roof.js",
+  "program": 8029,
+  "observed_utc": "2026-10-17T17:19:23.476118+00:00",
   "result": {
     "issue": null,
-    "trace": [
-      [
-        144,
-        -36,
-        2242
-      ],
-      [
-        145,
-        -36,
-        2242
-      ],
-      [
-        146,
-        -36,
-        2242
-      ]
-    ],
     "p": {
-      "x": 146.40374994158728,
+      "x": 146.50913941766788,
       "y": -36,
-      "z": 2242.5011226913475
+      "z": 2243.5530647424007
     },
     "hp": 11.499998092651367,
     "food": 9,
+    "before": 2,
+    "after": 1,
+    "floor": true,
+    "roof": true,
     "inv": [
       [
         "basalt",
-        2
+        1
       ],
       [
         "cobblestone_slab",
         2
       ]
     ],
-    "floor": "mossy_stone_bricks",
-    "roof": "infested_stone_bricks",
-    "visibleRays": [],
     "controls": {}
   }
 }
