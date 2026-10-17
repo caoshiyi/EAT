@@ -1,0 +1,42 @@
+program #4119 on p4: 8.3 s
+--- output ---
+BUFFER_CLOSED Vec3 { x: 4.046697705626783, y: 65, z: 4.300520248035131 } 20
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "transition": true,
+ "dimension": "overworld",
+ "p": {
+  "x": 7.046986732338271,
+  "y": 68,
+  "z": 91.5
+ },
+ "hp": 20,
+ "elapsed": 8304,
+ "inventory": [
+  [
+   "stone_axe",
+   1
+  ],
+  [
+   "dirt",
+   1
+  ],
+  [
+   "blackstone",
+   3
+  ],
+  [
+   "brown_mushroom",
+   1
+  ],
+  [
+   "warped_roots",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7, 68, 91.5) in overworld, health 20/20, food 20/20, alive

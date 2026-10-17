@@ -50,3 +50,10 @@ Measured token usage unavailable: no permitted current measurement observed. Not
 Iteration8 checkpoint 2026-10-16T23:56:23.879840+00:00: current root/player/team token measurements remain unavailable from permitted evidence; no prohibited location read, not zero.
 
 Iteration8 00:54 UTC: current coordinator/player/team token measurements unavailable from permitted exposed evidence; not zero. No prohibited locations consulted, no cost or commit attribution inferred.
+
+## Iteration9 opening 2026-10-17 00:59 UTC
+Current coordinator/player/team token usage unavailable from permitted exposed evidence; not zero. No prohibited location consulted or extrapolated counts.
+
+Iteration9 01:43UTC permittedagent_team/iter_9 listingfoundstarted/timeoutsettings/promptsidecars butNOcompleted*_output.json measurements. Currentteam/coordinator/playerusageunavailable, notzero; no prohibitedpathsconsulted.
+
+Iteration9 2026-10-17T02:54:31.912054+00:00: permitted agent_team/iter_9/*_output.json glob found ZERO completed result wrappers. Current coordinator/player/team measured usage unavailable, not zero. No counts/costs inferred and no prohibited locations consulted.

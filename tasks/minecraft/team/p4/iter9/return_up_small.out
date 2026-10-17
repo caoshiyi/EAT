@@ -1,0 +1,66 @@
+program #3898 on p4: 4.4 s
+--- output ---
+UP_ACTUAL Vec3 { x: -51.456822717757674, y: 35, z: 82.49998498094467 } 3736
+--- returned ---
+{
+ "p": {
+  "x": -51.456822717757674,
+  "y": 35,
+  "z": 82.49998498094467
+ },
+ "hp": 15.000000953674316,
+ "food": 17,
+ "closed": true,
+ "issue": null,
+ "inv": [
+  [
+   "basalt",
+   20,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   59
+  ],
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   1,
+   null
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 forge3891 FAILED IRON_RECEIPT readordinaryinventory whilefurnacewindowopen; afterclose actualIRON2retained/FULL20HP29.3s, notswordyet. This matches KNOWLEDGE inventorynamespacecounterexample; NOresmelt. Smallfinish closeswindow beforecount/craftsword/re
+p3: claimsTABLE+COBBLEwall next. P2wallgrantpending/no needwait; no othercaps touched.
+--- p4 now: (-51.5, 35, 82.5) in the_nether, health 15/20, food 17/20, alive

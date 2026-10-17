@@ -1,0 +1,17 @@
+== #4264 2026-10-17T02:43:30 p1 role=lead_converter iter=9 36.4 s
+const{Vec3}=require('vec3');let dead=false,issue=null;const died=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates()};bot.on('death',died);const m=new Movements(bot);m.canDig=true;for(const b of Object.values(bot.registry.blocksByName))if(!b.name.endsWith('_leaves'))m.blocksCantBreak.add(b.id);m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.maxDropDown=1;m.scafoldingBlocks=[];for(const n of ['water','lava','powder_snow','magma_block','sweet_berry_bush'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);bot.pathfinder.setMovements(m);bot.pathfinder.LOSWhenPlacingBlocks=false;const end=Date.now()+43000;
+async function go(q,r=1){bot.pathfinder.setGoal(new goals.GoalNear(q.x,q.y,q.z,r));let last=bot.entity.position.clone(),lastT=Date.now();while(Date.now()<end&&!dead&&bot.entity.position.distanceTo(q.offset(.5,0,.5))>r+1){if(bot.entity.isInWater)throw Error('WET');if(bot.health<=2)throw Error('LOWHP');await bot.waitForTicks(1);if(bot.entity.position.distanceTo(last)>.5){last=bot.entity.position.clone();lastT=Date.now();}if(Date.now()-lastT>4000)throw Error('STALL');}bot.pathfinder.setGoal(null);bot.clearControlStates();bot.setControlState('sneak',true);}
+try{bot.clearControlStates();const seeds=bot.findBlocks({matching:b=>b.name==='sweet_berry_bush',useExtraInfo:b=>(b.getProperties().age??0)>=2,maxDistance:220,count:24});console.log('RIPE',seeds);if(!seeds.length)throw Error('NO_RIPE');seeds.sort((a,b)=>a.distanceTo(bot.entity.position)-b.distanceTo(bot.entity.position));await go(seeds[0],2);let harvested=0;while(Date.now()<end&&!dead){const berries=bot.inventory.items().find(i=>i.name==='sweet_berries');if(berries&&bot.food<20){await bot.equip(berries,'hand');bot.setControlState('sneak',true);await bot.consume();console.log('ATE',bot.health,bot.food);continue;}if((berries?.count??0)>=12)break;const targets=bot.findBlocks({matching:b=>b.name==='sweet_berry_bush',useExtraInfo:b=>(b.getProperties().age??0)>=2,maxDistance:12,count:10});if(!targets.length)break;targets.sort((a,b)=>a.distanceTo(bot.entity.position)-b.distanceTo(bot.entity.position));const q=targets[0];await go(q,1);if(bot.entity.position.distanceTo(q.offset(.5,0,.5))>3.5)break;await bot.activateBlock(bot.blockAt(q));await bot.waitForTicks(12);console.log('HARVEST',q,bot.inventory.items().map(i=>[i.name,i.count]),bot.health,bot.food);if(++harvested>=12)break;}}
+catch(e){issue=e.message;}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();if(!dead&&bot.entity.isInWater)bot.setControlState('jump',true);else bot.setControlState('sneak',true);console.log('FOOD_END',JSON.stringify({dead,issue,p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,wet:bot.entity.isInWater,inv:bot.inventory.items().map(i=>[i.name,i.count])}));bot.removeListener('death',died);}
+-- output --
+RIPE [
+  Vec3 { x: 150, y: 63, z: 230 },
+  Vec3 { x: 149, y: 63, z: 229 },
+  Vec3 { x: 148, y: 63, z: 230 },
+  Vec3 { x: 148, y: 63, z: 227 },
+  Vec3 { x: 147, y: 63, z: 225 },
+  Vec3 { x: 147, y: 63, z: 223 },
+  Vec3 { x: 147, y: 63, z: 221 },
+  Vec3 { x: 147, y: 63, z: 220 }
+]
+FOOD_END {"dead":false,"issue":"STALL","p":{"x":209.6973653697423,"y":65,"z":230.4951151545469},"hp":5,"food":12,"ground":true,"wet":false,"inv":[["potion",1],["torch",1]]}

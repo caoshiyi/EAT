@@ -1,0 +1,14 @@
+== #4169 2026-10-17T02:29:59 p1 role=lead_converter iter=9 0.7 s
+const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,68,82)));const m=c.containerItems().find(i=>i.name==='filled_map');console.log('MAP_ITEM',m?.nbt);c.close();console.log('TRADERS',Object.values(bot.entities).filter(e=>['villager','wandering_trader'].includes(e.name)).map(e=>[e.name,e.position]));const fs=bot.findBlocks({matching:b=>b.name==='furnace',maxDistance:4,count:2});for(const q of fs){try{const f=await bot.openFurnace(bot.blockAt(q));console.log('FURNACE_CONTENTS',q,f.inputItem()?.name,f.inputItem()?.count,f.outputItem()?.name,f.outputItem()?.count,f.fuelItem()?.name);f.close();}catch(e){console.log('FURNACE_READ',e.message)}}console.log('CURRENT',bot.health,bot.food,bot.entity.position);
+-- output --
+MAP_ITEM {
+  type: 'compound',
+  value: {
+    Decorations: { type: 'list', value: [Object] },
+    map: { type: 'int', value: 0 },
+    display: { type: 'compound', value: [Object] }
+  }
+}
+TRADERS []
+FURNACE_CONTENTS Vec3 { x: 5, y: 66, z: 80 } undefined undefined undefined undefined undefined
+CURRENT 6.2641448974609375 17 Vec3 { x: 6.559002804491831, y: 67, z: 82.68296479973209 }

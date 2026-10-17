@@ -1,0 +1,6 @@
+== #4175 2026-10-17T02:30:50 p1 role=lead_converter iter=9 1.6 s
+const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,68,82)));console.log('MAP_NBT',JSON.stringify(c.containerItems().find(i=>i.name==='filled_map')?.nbt));c.close();console.log('BERRIES_NOW',JSON.stringify(bot.findBlocks({matching:bot.registry.blocksByName.sweet_berry_bush.id,maxDistance:100,count:12})));console.log('CAMP',bot.health,bot.food);
+-- output --
+MAP_NBT {"type":"compound","value":{"Decorations":{"type":"list","value":{"type":"compound","value":[{"x":{"type":"double","value":313},"z":{"type":"double","value":249},"id":{"type":"string","value":"+"},"type":{"type":"byte","value":26},"rot":{"type":"double","value":180}}]}},"map":{"type":"int","value":0},"display":{"type":"compound","value":{"Name":{"type":"string","value":"{\"translate\":\"filled_map.buried_treasure\"}"}}}}}
+BERRIES_NOW []
+CAMP 6.2641448974609375 17

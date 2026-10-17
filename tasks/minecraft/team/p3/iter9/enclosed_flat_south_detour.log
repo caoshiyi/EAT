@@ -1,0 +1,215 @@
+program #3907 on p3: 16.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "accepted": 6,
+ "elapsed": 16237,
+ "p": {
+  "x": 69.50946420747155,
+  "y": 26,
+  "z": 116.50946388801816
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "damaged": false,
+ "protectedEnd": true,
+ "missing": [],
+ "trace": [
+  {
+   "step": 1,
+   "p": [
+    69,
+    26,
+    111
+   ],
+   "ms": 2606
+  },
+  {
+   "step": 2,
+   "p": [
+    69,
+    26,
+    112
+   ],
+   "ms": 5263
+  },
+  {
+   "step": 3,
+   "p": [
+    69,
+    26,
+    113
+   ],
+   "ms": 7918
+  },
+  {
+   "step": 4,
+   "p": [
+    69,
+    26,
+    114
+   ],
+   "ms": 10531
+  },
+  {
+   "step": 5,
+   "p": [
+    69,
+    26,
+    115
+   ],
+   "ms": 13233
+  },
+  {
+   "step": 6,
+   "p": [
+    69,
+    26,
+    116
+   ],
+   "ms": 15936
+  },
+  {
+   "isolatedBody": [
+    69,
+    26,
+    116
+   ]
+  }
+ ],
+ "inventory": [
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "granite",
+   2,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   5,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "leather",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   25
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   6
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   12
+  ],
+  [
+   "andesite",
+   13,
+   null
+  ],
+  [
+   "cobblestone",
+   62,
+   null
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   10,
+   null
+  ]
+ ],
+ "endermen": [
+  [
+   142,
+   {
+    "x": 145.69999998807907,
+    "y": 6,
+    "z": 145.5027280624347
+   }
+  ],
+  [
+   6449,
+   {
+    "x": 105.53220830753973,
+    "y": 14,
+    "z": 62.99224065005306
+   }
+  ],
+  [
+   8450,
+   {
+    "x": 74.70006177660068,
+    "y": 20.0625,
+    "z": 236.91922689673086
+   }
+  ],
+  [
+   9034,
+   {
+    "x": 142.3382372220491,
+    "y": -19,
+    "z": 172.5002155114699
+   }
+  ],
+  [
+   9300,
+   {
+    "x": 108.43823332282851,
+    "y": 35,
+    "z": 115.42249820401032
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (69.5, 26, 116.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,162 @@
+program #3878 on p3: 8.3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "accepted": 3,
+ "elapsed": 8268,
+ "p": {
+  "x": 67.50946404774486,
+  "y": 26,
+  "z": 105.50946388801816
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "damaged": false,
+ "protectedEnd": true,
+ "missing": [],
+ "trace": [
+  {
+   "step": 1,
+   "p": [
+    67,
+    26,
+    103
+   ],
+   "ms": 2608
+  },
+  {
+   "step": 2,
+   "p": [
+    67,
+    26,
+    104
+   ],
+   "ms": 5260
+  },
+  {
+   "step": 3,
+   "p": [
+    67,
+    26,
+    105
+   ],
+   "ms": 7965
+  },
+  {
+   "isolatedBody": [
+    67,
+    26,
+    105
+   ]
+  }
+ ],
+ "inventory": [
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "granite",
+   2,
+   null
+  ],
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   124
+  ],
+  [
+   "coal",
+   6,
+   null
+  ],
+  [
+   "leather",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   6
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   12
+  ],
+  [
+   "andesite",
+   13,
+   null
+  ],
+  [
+   "raw_iron",
+   2,
+   null
+  ],
+  [
+   "cobblestone",
+   60,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ],
+ "endermen": [
+  [
+   142,
+   {
+    "x": 145.69999998807907,
+    "y": 6,
+    "z": 145.5027280624347
+   }
+  ],
+  [
+   1909,
+   {
+    "x": -35.50391196925805,
+    "y": 14,
+    "z": 178.5420589648535
+   }
+  ],
+  [
+   6449,
+   {
+    "x": 80.2777051939005,
+    "y": 7,
+    "z": 35.440051083207585
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (67.5, 26, 105.5) in overworld, health 20/20, food 20/20, alive

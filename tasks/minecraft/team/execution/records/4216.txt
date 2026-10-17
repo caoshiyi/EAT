@@ -1,0 +1,15 @@
+== #4216 2026-10-17T02:36:13 p2 role=acquisition_owner iter=9 2.4 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const begin=Date.now(),hp0=bot.health;let issue=null;const m=new Movements(bot);m.canDig=false;m.canOpenDoors=false;m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=2;for(const n of['water','lava','fire','magma_block','powder_snow'])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);const orig=m.getNeighbors.bind(m),haz=b=>!b||/water|lava|fire|powder_snow/.test(b.name),safe=q=>{const f=bot.blockAt(new Vec3(q.x,q.y-1,q.z));return f?.boundingBox==='block'&&!haz(f)&&![0,1].some(y=>haz(bot.blockAt(new Vec3(q.x,q.y+y,q.z))))};m.getNeighbors=q=>orig(q).filter(n=>safe(n)&&!Object.values(bot.entities).some(e=>['creeper','skeleton','zombie'].includes(e.name)&&e.position.distanceTo(new Vec3(n.x+.5,n.y,n.z+.5))<Math.min(e.name==='creeper'?6:10,e.position.distanceTo(bot.entity.position)-.05)));bot.pathfinder.setMovements(m);const hurt=e=>{if(e===bot.entity){bot.pathfinder.setGoal(null);bot.clearControlStates();issue='HURT'}};bot.on('entityHurt',hurt);
+try{bot.chat('P2 actualnewlife14HP exposedcampback, creeperWest/skeletonSW. Bounded30s moveAWAYeast tovisibleDIAMOND3(9.875,65,87.78), thenprotectedcampreturn. No retainedclaim.');let timer;try{await Promise.race([bot.pathfinder.goto(new goals.GoalNear(10,65,88,1)),new Promise((_,r)=>timer=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('BOUND'))},9000))])}finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates()}await bot.waitForTicks(4);console.log('ACTUAL',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));}catch(e){issue=issue||e.message}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('entityHurt',hurt)}return{issue,p:bot.entity.position,hp:bot.health,kit:bot.inventory.items().map(i=>[i.name,i.count]),elapsed:Date.now()-begin};
+-- output --
+ACTUAL Vec3 { x: 9.5, y: 65, z: 88.51612910438078 } 11.833333015441895 [
+  [ 'snowball', 16 ],
+  [ 'wooden_sword', 1 ],
+  [ 'snowball', 9 ],
+  [ 'crafting_table', 2 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'bone_meal', 4 ],
+  [ 'diamond', 3 ]
+]
+-- returned --
+{"issue": null, "p": {"x": 9.5, "y": 65, "z": 88.51612910438078}, "hp": 11.833333015441895, "kit": [["snowball", 16], ["wooden_sword", 1], ["snowball", 9], ["crafting_table", 2], ["stone_pickaxe", 1], ["bone_meal", 4], ["diamond", 3]], "elapsed": 2423}

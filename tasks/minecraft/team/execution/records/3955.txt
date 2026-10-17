@@ -1,0 +1,10 @@
+== #3955 2026-10-17T01:28:09 p1 role=lead_converter iter=9 0.1 s
+const {Vec3}=require('vec3');const p=bot.entity.position,full=b=>b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');const fs=bot.findBlocks({matching:b=>['stone','sand','gravel','dirt','granite','cobblestone'].includes(b.name),useExtraInfo:b=>b.position.y>=59&&b.position.y<=60&&full(b)&&[1,2].every(y=>bot.blockAt(b.position.offset(0,y,0))?.name==='water'),maxDistance:22,count:50});fs.sort((a,b)=>Math.hypot(a.x+.5-p.x,a.z+.5-p.z)+2*(60-a.y)-(Math.hypot(b.x+.5-p.x,b.z+.5-p.z)+2*(60-b.y)));global.P1ShallowSite=fs[0]||null;console.log('SHALLOW_SITES',JSON.stringify(fs.slice(0,10)));console.log('PICKED',global.P1ShallowSite,'P',p,'HP',bot.health,'TIME',bot.time.timeOfDay);console.log('CONTROLS',bot.controlState,'REFUGE',global.P1Overland,'BOX',global.P1SurfaceBox);
+-- output --
+SHALLOW_SITES [{"x":133,"y":59,"z":1495},{"x":131,"y":59,"z":1496},{"x":134,"y":60,"z":1500},{"x":135,"y":60,"z":1500},{"x":132,"y":60,"z":1501},{"x":137,"y":59,"z":1494},{"x":133,"y":60,"z":1501},{"x":131,"y":60,"z":1501},{"x":137,"y":60,"z":1499},{"x":136,"y":60,"z":1500}]
+PICKED Vec3 { x: 133, y: 59, z: 1495 } P Vec3 { x: 132.50746715801327, y: 61, z: 1494.5247084706807 } HP 19.861976623535156 TIME 10142
+CONTROLS {} REFUGE {
+  feet: Vec3 { x: 132, y: 61, z: 1494 },
+  roof: Vec3 { x: 132, y: 63, z: 1494 },
+  at: 1792200473965
+} BOX null

@@ -1,0 +1,7 @@
+# P2 reclaim/recovery caller — 2026-10-17T02:34:19.598108+00:00
+
+Raw4189 COLD_END_STOCK thenNO_COLD_RECOVERY_ROOM; ending-19.525,64,-29.438/20HP19food/closedfalse, heldTABLE2/nootherbuild. Read-only status02:33:50 ALREADYshowsowner4198running9.5s at-13.6,65,-23.5/20HP; this note is not a claim oldbodyremainsstationary. Owner handlescurrentrecovery beforelonganalysis; no engineerplayeraction.
+
+Exactcaller opens ALLseven trackedowncaps, tries pickup, then evaluates countBuild>=4/chosenendpointcost. That leaves the formerrefugeopen if actualmaterialreceipt falls short. Recovery only searches path[startIndex..actualIndex], which is just reclaimedstart when admissionfailedbeforeanyrouteprogress; no qualifyingroomthenexists by its owncost predicate. This is a specific transaction-order risk, not evidence materialsareuniversallyunavailable or thatfourblocksisalwaysrequired. countBuildAFTERwas2 includingtables; doNOTclaim tablesignored.
+
+Small correction beforeanotherreclaim: preserve a presently usable protectedending while reclaiming/reconciling onecap atatime, and admit nextcut only against actualheldreceipt + remainingactualclosure dependencies. If cutting lastprotectivecap is necessary, its work+fallback must alreadyfit currentheldblocks/knownlocalendpoint; don't credit futuredrops. The existing count/cost guard is useful but occurs too late to protect reclaimedstart. No inventedstockquota, no re-runlongroute needed for diagnosis. Await4198actualending beforecontinuingincidentclaims.

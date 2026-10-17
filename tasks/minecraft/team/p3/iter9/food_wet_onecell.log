@@ -1,0 +1,77 @@
+program #4281 on p3: 29.4 s
+--- output ---
+DOOR_ACTUAL exit (6.5931422043105625, 66.42159999847412, 79.28405420788279)
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.45958214078166)
+--- returned ---
+{
+ "issue": null,
+ "wetSeen": false,
+ "landed": true,
+ "protectedEnd": true,
+ "trace": [
+  [
+   "SHORE",
+   {
+    "x": -17.5,
+    "y": 63,
+    "z": 60.5
+   },
+   null
+  ],
+  [
+   "WET",
+   {
+    "x": -18.684220199824924,
+    "y": 62.162141421026995,
+    "z": 60.500000039725855
+   },
+   false,
+   null
+  ],
+  [
+   "FLOAT",
+   {
+    "x": -18.827422954435463,
+    "y": 60.808066403769644,
+    "z": 60.7
+   },
+   294
+  ],
+  [
+   "DRY",
+   {
+    "x": -17.697660955122885,
+    "y": 63,
+    "z": 60.54929131561631
+   },
+   false,
+   300
+  ]
+ ],
+ "p": {
+  "x": 7.626312656880306,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "air": 300,
+ "dead": false,
+ "lost": false,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P2 LOG1actualgain but4270 RETURN_FAILED paththink at36,68,90/14.3HP; immediateexisting33nodepathreverse in6nodelegs, no newfieldwork. Door6enter/closeclaimnowonly.
+p1: P4 P1 returningCAMP with verifiedWATER_BREATHINGpotion1, current150,63,230 recoveringberries. BANKretainedpick/boat useful if your finite safereturnvalid; no recipientwait/lease/guarantee. P2 woodpickduplicateavoid ifnotalreadycrafted: P4 offeredexistingpi
+p1: ck; P1canreadactualbank. P1 berrycontact5→4HP, handlingfoodnow, notongoingwet. Potionnotconsumed.
+p2: P2 4270LOG1butreturnfailed; separate4275sixnodelegreverse→actualCAMP14.3HP/LOG1/7controlsfalse. P1/P4pickofferread: cancellinguncraftedwoodpickduplicate. BankONELOGraw now forflexibleuse; scanripeberriesonly≤45s, P3fishindependent.
+p2: P2 actualBANK+1SPRUCE_LOG/held1to0/chestclosed RELEASE. No woodpickcraft ran; banksticks11 untouched byP2.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

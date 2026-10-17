@@ -1,0 +1,25 @@
+== #4248 2026-10-17T02:40:54 p1 role=lead_converter iter=9 42.2 s
+const{Vec3}=require('vec3');let dead=false,issue=null;const died=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates()};bot.on('death',died);const start=bot.entity.position.clone(),hp0=bot.health;
+const controls=()=>Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]));
+const m=new Movements(bot);m.canDig=true;for(const b of Object.values(bot.registry.blocksByName))if(!b.name.endsWith('_leaves'))m.blocksCantBreak.add(b.id);m.allowParkour=false;m.allowSprinting=true;m.allow1by1towers=false;m.maxDropDown=1;m.scafoldingBlocks=[];for(const n of ['water','lava','powder_snow','magma_block','campfire'])if(bot.registry.blocksByName[n])m.blocksToAvoid.add(bot.registry.blocksByName[n].id);m.liquidCost=100;bot.pathfinder.setMovements(m);bot.pathfinder.LOSWhenPlacingBlocks=false;
+try{
+ bot.clearControlStates();bot.pathfinder.setGoal(null);
+ if(bot.entity.position.distanceTo(new Vec3(6.5,67,82.5))<4){const d=bot.blockAt(new Vec3(6,67,81));if(!d.getProperties().open)await bot.activateBlock(d);await bot.lookAt(new Vec3(6.5,68,78),true);bot.setControlState('forward',true);for(let k=0;k<45&&bot.entity.position.z>79.2;k++)await bot.waitForTicks(1);bot.clearControlStates();if(bot.blockAt(d.position).getProperties().open)await bot.activateBlock(bot.blockAt(d.position));}
+ bot.pathfinder.setGoal(new goals.GoalXZ(313,249));const end=Date.now()+40000;let last=Date.now(),lp=bot.entity.position.clone();while(Date.now()<end&&!dead){await new Promise(r=>setTimeout(r,100));if(bot.entity.isInWater){issue='WET_RECOVERY';break;}if(bot.health<hp0-1){issue='HURT';break;}if(Date.now()-last>5000){console.log('STEP',JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,head:bot.blockAt(bot.entity.position.offset(0,1.62,0))?.name}));if(bot.entity.position.distanceTo(lp)<.3){issue='STALLED';break;}lp=bot.entity.position.clone();last=Date.now();}if(Math.abs(bot.entity.position.x-313)<8&&Math.abs(bot.entity.position.z-249)<8)break;}
+}catch(e){issue=e.message;}finally{
+ bot.pathfinder.setGoal(null);bot.clearControlStates();
+ if(issue==='HURT'&&!dead&&bot.entity.position.distanceTo(new Vec3(6.5,67,82.5))<55){bot.pathfinder.setGoal(new goals.GoalBlock(6,66,79));const re=Date.now()+8000;while(Date.now()<re&&!dead&&bot.entity.position.distanceTo(new Vec3(6.5,66,79.5))>1)await bot.waitForTicks(1);bot.pathfinder.setGoal(null);bot.clearControlStates();if(!dead&&bot.entity.position.distanceTo(new Vec3(6.5,66,79.5))<2){const door=bot.blockAt(new Vec3(6,67,81));if(!door.getProperties().open)await bot.activateBlock(door);await bot.lookAt(new Vec3(6.5,68.2,83),true);bot.setControlState('forward',true);bot.setControlState('jump',true);for(let k=0;k<45&&!dead&&bot.entity.position.z<82.4;k++)await bot.waitForTicks(1);bot.clearControlStates();if(bot.blockAt(door.position).getProperties().open)await bot.activateBlock(bot.blockAt(door.position));}}
+ if(!dead&&bot.entity.isInWater){bot.setControlState('jump',true);const end=Date.now()+12000;while(Date.now()<end&&!dead){const head=bot.blockAt(bot.entity.position.offset(0,1.62,0));if(head?.name==='air'&&bot.entity.position.y>=62.5)break;await bot.waitForTicks(1);}if(bot.entity.isInWater)bot.setControlState('jump',true);}
+ else if(!dead){bot.setControlState('sneak',true);await bot.waitForTicks(3);}
+ const ch=[];for(let y=-10;y<81;y++){const b=bot.blockAt(new Vec3(313,y,249));if(b?.name==='chest')ch.push(b.position);}
+ console.log('END',JSON.stringify({dead,issue,p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,wet:bot.entity.isInWater,head:bot.blockAt(bot.entity.position.offset(0,1.62,0))?.name,controls:controls(),targetChest:ch,delta:bot.entity.position.distanceTo(start)}));bot.removeListener('death',died);
+}
+-- output --
+STEP {"p":{"x":24.70822441528558,"y":68,"z":86.76254734434443},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":47.93028752211249,"y":69,"z":95.87869956371124},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":74.42260430544631,"y":69,"z":97.57442099855551},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":97.51264424201376,"y":67,"z":103.61981113641225},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":115.62682209227974,"y":65,"z":118.47054485672517},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":135.4772341408423,"y":65,"z":135.4803215576309},"hp":5,"ground":true,"head":"air"}
+STEP {"p":{"x":157.68309549281827,"y":65,"z":142.49926884668116},"hp":5,"ground":true,"head":"air"}
+END {"dead":false,"issue":null,"p":{"x":168.5,"y":64,"z":151.5},"hp":5,"food":12,"ground":true,"wet":false,"head":"air","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":true},"targetChest":[{"x":313,"y":62,"z":249}],"delta":176.02465150501348}

@@ -1,0 +1,54 @@
+program #4114 on p4: 4.6 s
+--- output ---
+POD_CAPS_ACTUAL dirt dirt
+--- returned ---
+{
+ "issue": null,
+ "opened": [
+  67,
+  66,
+  65
+ ],
+ "elapsed": 4632,
+ "p": {
+  "x": 1.4371532827080329,
+  "y": 65,
+  "z": 4.3
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "homeFull": true,
+ "targetFull": true,
+ "bodyFull": true,
+ "caps": [
+  "cobblestone",
+  "cobblestone",
+  "dirt"
+ ],
+ "inventory": [
+  [
+   "stone_axe",
+   1
+  ],
+  [
+   "dirt",
+   1
+  ],
+  [
+   "blackstone",
+   3
+  ],
+  [
+   "brown_mushroom",
+   1
+  ],
+  [
+   "warped_roots",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (1.4, 65, 4.3) in the_nether, health 20/20, food 20/20, alive

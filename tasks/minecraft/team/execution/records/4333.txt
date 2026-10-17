@@ -1,0 +1,4 @@
+== #4333 2026-10-17T02:52:51 p4 role=capability_operator iter=9 0 s
+const{Vec3}=require('vec3');let c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));let items=c.containerItems().filter(i=>['spruce_planks','spruce_door','dirt','gold_ingot'].includes(i.name)).map(i=>[i.name,i.count]);c.close();return{items,p:bot.entity.position,hp:bot.health};
+-- returned --
+{"items": [["dirt", 2], ["gold_ingot", 1], ["spruce_door", 3], ["spruce_planks", 1]], "p": {"x": 7.681095908408345, "y": 67.5625, "z": 83.69999999999992}, "hp": 15.166667938232422}

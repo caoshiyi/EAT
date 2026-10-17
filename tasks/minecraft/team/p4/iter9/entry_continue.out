@@ -1,0 +1,76 @@
+program #3965 on p4: 0 s
+--- output ---
+FRESH_ENTRY_ISSUE PRE ACTUAL_PRE
+--- returned ---
+{
+ "phase": "PRE",
+ "issue": "ACTUAL_PRE",
+ "gateClosedOW": false,
+ "netherProtected": false,
+ "campProtected": false,
+ "dead": false,
+ "lost": false,
+ "p": {
+  "x": 3.4170839672204227,
+  "y": 65,
+  "z": 3.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "the_nether",
+ "inv": [
+  [
+   "granite",
+   1,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "basalt",
+   11,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   88
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (3.4, 65, 3.5) in the_nether, health 20/20, food 20/20, alive

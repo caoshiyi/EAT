@@ -1,0 +1,5 @@
+== #4141 2026-10-17T02:22:30 p1 role=lead_converter iter=9 0 s
+console.log('LIVE_DROP',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<10).map(e=>[e.id,e.position,e.getDroppedItem()?.name])));console.log('NOW',bot.health,bot.time.timeOfDay);
+-- output --
+LIVE_DROP []
+NOW 6.2641448974609375 3362

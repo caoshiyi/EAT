@@ -1,0 +1,200 @@
+program #4092 on p4: 22.4 s
+--- output ---
+ROOF_SWAP_BLACK 0 { waterlogged: false, type: 'bottom' }
+ACTUAL 3,73,59 3441
+ACTUAL 3,73,58 5848
+ACTUAL 4,73,58 6399
+ACTUAL 4,74,57 8202
+ACTUAL 5,74,57 8703
+ACTUAL 5,75,56 9303
+ACTUAL 5,74,55 10054
+ACTUAL 5,73,54 10756
+ACTUAL 6,73,54 11257
+ACTUAL 6,72,53 11959
+ACTUAL 6,71,52 12661
+ACTUAL 5,70,52 13363
+ACTUAL 4,69,52 14064
+ACTUAL 3,68,52 14766
+ACTUAL 3,68,53 15269
+ACTUAL 3,68,54 15819
+ACTUAL 2,68,54 16320
+ACTUAL 1,68,54 18073
+ACTUAL 0,67,54 19374
+ACTUAL 0,67,55 19875
+ACTUAL 0,67,56 20427
+ACTUAL 0,67,57 20928
+ACTUAL 0,67,58 21478
+--- returned ---
+{
+ "p": {
+  "x": 0.5008324643960458,
+  "y": 67,
+  "z": 58.50054789585004
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   3,
+   73,
+   59
+  ],
+  [
+   3,
+   73,
+   58
+  ],
+  [
+   4,
+   73,
+   58
+  ],
+  [
+   4,
+   74,
+   57
+  ],
+  [
+   5,
+   74,
+   57
+  ],
+  [
+   5,
+   75,
+   56
+  ],
+  [
+   5,
+   74,
+   55
+  ],
+  [
+   5,
+   73,
+   54
+  ],
+  [
+   6,
+   73,
+   54
+  ],
+  [
+   6,
+   72,
+   53
+  ],
+  [
+   6,
+   71,
+   52
+  ],
+  [
+   5,
+   70,
+   52
+  ],
+  [
+   4,
+   69,
+   52
+  ],
+  [
+   3,
+   68,
+   52
+  ],
+  [
+   3,
+   68,
+   53
+  ],
+  [
+   3,
+   68,
+   54
+  ],
+  [
+   2,
+   68,
+   54
+  ],
+  [
+   1,
+   68,
+   54
+  ],
+  [
+   0,
+   67,
+   54
+  ],
+  [
+   0,
+   67,
+   55
+  ],
+  [
+   0,
+   67,
+   56
+  ],
+  [
+   0,
+   67,
+   57
+  ],
+  [
+   0,
+   67,
+   58
+  ]
+ ],
+ "elapsed": 22432,
+ "controls": {},
+ "backupSlabRoof": "cobblestone_slab",
+ "inv": [
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 supportedgoal4080 FOUND71nodes to(-98,63,86) within2.9mfreshEnder19694. 4082 floorsALLFULL/36rockobstructions, tools146usableSTONEcuts vs36+reopens, coldCOBBLE54held>max14enclosure actualcost. ExecutingONEroute work80/recovery25/outer125, cleanupown69/7
+p3: 1COBBLE→AIR, originalcutsrecapwhenbodyclear. Endpointprivate2highframe beforeaggro; no global3x3requirement/no45lava route. Actualtargetresponse/pearlnotyetclaimed.
+--- p4 now: (0.5, 67, 58.5) in the_nether, health 20/20, food 20/20, alive

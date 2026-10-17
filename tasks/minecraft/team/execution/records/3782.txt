@@ -1,0 +1,13 @@
+== #3782 2026-10-17T01:03:31 p1 role=lead_converter iter=9 0.2 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const q=new Vec3(35,66,94);console.log('PRE',bot.entity.position,bot.health,bot.blockAt(q)?.name,bot.blockAt(q.offset(1,0,0))?.name);if(bot.blockAt(q)?.name==='air'&&bot.blockAt(q.offset(1,0,0))?.boundingBox==='block'){await bot.equip(bot.inventory.items().find(i=>i.name==='spruce_planks'),'hand');await bot._placeBlockWithOptions(bot.blockAt(q.offset(1,0,0)),new Vec3(-1,0,0),{forceLook:true});await bot.waitForTicks(5)}const p=bot.entity.position.floored(),ds=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)];console.log('FULL',bot.blockAt(p.offset(0,-1,0))?.boundingBox==='block'&&bot.blockAt(p.offset(0,2,0))?.boundingBox==='block'&&ds.every(d=>[0,1].every(y=>bot.blockAt(p.plus(d).offset(0,y,0))?.boundingBox==='block')),bot.entity.position,bot.health,'CAP',bot.blockAt(q)?.name,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+PRE Vec3 { x: 34.486170151121335, y: 65, z: 94.51383020208439 } 20 air dirt
+FULL true Vec3 { x: 34.486170151121335, y: 65, z: 94.51383020208439 } 20 CAP spruce_planks [
+  [ 'stick', 4 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'spruce_door', 3 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'crafting_table', 1 ],
+  [ 'coal', 2 ],
+  [ 'spruce_planks', 6 ]
+]

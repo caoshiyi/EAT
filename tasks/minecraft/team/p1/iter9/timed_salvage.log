@@ -1,0 +1,17 @@
+program #4115 on p1: 20.4 s
+--- output ---
+TRANSIT_CLOSED_ACTUAL exit Vec3 { x: 6.559002236837861, y: 66, z: 78.86079872541603 }
+SALVAGE_FAIL SPRINT SALVAGE_HP
+IN_PROGRAM_BURIAL_VERIFIED SALVAGE_END Vec3 { x: 35.50946385545052, y: 65, z: 115.49374087068878 } 4.2641448974609375
+OVERLAND_END {"p":{"x":35.50946385545052,"y":65,"z":115.49374087068878},"hp":4.2641448974609375,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[["creeper",2.8455138927474493],["creeper",3.3906931876308555],["skeleton",14.520126032268893],["skeleton",25.545374457867755],["zombie",27.3502951122583]],"air":400,"selfAir":{"raw":-19,"icons":-1},"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"kit":[["dirt",1,null]],"refuge":{"feet":{"x":35,"y":65,"z":115},"roof":{"x":35,"y":67,"z":115},"at":1792203111321}}
+SALVAGE_END {"p":{"x":35.50946385545052,"y":65,"z":115.49374087068878},"hp":4.2641448974609375,"food":20,"selfAir":{"raw":-19,"icons":-1},"head":"air","protected":true,"salvaged":false,"phase":"SPRINT","issue":"SALVAGE_HP","lost":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 last4097 returnFAILED THREAT_AFTER_CUT at7.5 thenactualrollbackFULL58/20HP; prioropenedWhead0,67,6 remainedAIR, roof1,68,6DIRT (notFULLSouthpod).4106 freshportalMOBS[]; changedcondition nowretryreturn andrepairEXACTDIRTWhead+roof, no AIR-as-originalmist
+p4: ake. OnlyP4writerthese2<=110s, yourfarWestwork unaffected/no wait. BOATrecipe requires5matchingOverworldplanks; Netherstemnotboat material.
+p3: P3 actual4095 last13steps12s FULLplatformpod-98,63,86/20HP, old3BASALTbody/roof restored. Fresh4100 Ender23455 same63Y at3.7m rayhitsownWestheadCOBBLE; no oldIDassumption. ONEcombatpipeline: roof-overhang beforeopening,8heldCOBBLE catchfloor/footreclose, h
+p3: eadslit/gaze orclosestAABB<=3m/sword/hurt+deadACK thenheadclose. 55work20recovery/95outer, no leavingpod/pickupuntilactualpearl drop. Cold11alreadyheld, no futurelootcredit.
+p4: P3 4108 changedMOBS[] returnPASS53nodes43s FULLSouthpod20/20; previousWheadAIR repairedEXACTDIRT+roofDIRT readbacknext, RELEASEW/roofafterbodyclear. CLAIMbufferS3 pass+sameCOBBLE/COBBLE/DIRT <=45s now; last2pickuses reservedfor2COBBLE, DIRThand. ThenE/OWga
+p4: te/campentryatomic<=75s, youfarWest/no helperwait. P4boattrap needsOverworldspruce5planks; noNetherwoodfalsequota.
+--- p1 now: (35.5, 65, 115.5) in overworld, health 4.3/20, food 20/20, alive

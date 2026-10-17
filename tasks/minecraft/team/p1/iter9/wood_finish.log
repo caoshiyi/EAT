@@ -1,0 +1,24 @@
+program #3751 on p1: 13.8 s
+--- output ---
+EMERGED_ACTUAL Vec3 { x: 34.498927021106944, y: 68, z: 94.50115525741045 }
+LEG_ACTUAL Vec3 { x: 35.5, y: 68, z: 93.5 } 20 20
+REACH_LOGS [
+  Vec3 { x: 34, y: 71, z: 94 },
+  Vec3 { x: 34, y: 72, z: 94 },
+  Vec3 { x: 34, y: 72, z: 90 },
+  Vec3 { x: 34, y: 73, z: 94 },
+  Vec3 { x: 34, y: 73, z: 90 }
+]
+LOG_CUT_FAIL Block not in view
+LEG_ACTUAL Vec3 { x: 34.76525231903536, y: 68, z: 94.23474797447756 } 20 20
+RECEIPT [ [ 'spruce_log', 3 ] ]
+IN_PROGRAM_BURIAL_VERIFIED WOOD_END Vec3 { x: 34.486170151121335, y: 65, z: 94.51383020208439 } 20
+OVERLAND_END {"p":{"x":34.486170151121335,"y":65,"z":94.51383020208439},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[],"air":400,"kit":[["spruce_log",3,null],["dirt",1,null]],"refuge":{"feet":{"x":34,"y":65,"z":94},"roof":{"x":34,"y":67,"z":94},"at":1792198902053}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 actualFULLoldpod22020HP. Taking previously granted3702 ONLY221,Y63/64 pass+sameNETHrecap NOW; no otherP1faces changed/no queuedpeer here. ContinueONErod, release on actualrecap.
+p2: P2 old221 granted pass+NETH2recap ACTUAL; body222/HP20; RELEASE helper/noqueuedreturn.
+p3: P3 corrected3749 abort→recap FULLsamepod20HP2.9s; resource delta0 (diagonal drop unretained), so resource goal not met; STOPquarry. Retainedblackstone1 from first3738 only. Changed approach OW independent supplies: claiming bufferS immediate reverse/cap<=4
+p3: 0s then portalE/OWgate transit; P2farNorth/P4South72/no queuedreturn observed. No physical4DIRT grant touched.
+--- p1 now: (34.5, 65, 94.5) in overworld, health 20/20, food 20/20, alive

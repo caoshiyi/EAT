@@ -1,0 +1,97 @@
+program #3889 on p4: 7.9 s
+--- output ---
+NEW_ENDPOINT_PREFLIGHT [
+  [ Vec3 { x: -50, y: 32, z: 82 }, 'basalt' ],
+  [ Vec3 { x: -50, y: 35, z: 82 }, 'basalt' ],
+  [ Vec3 { x: -49, y: 33, z: 82 }, 'basalt' ],
+  [ Vec3 { x: -49, y: 34, z: 82 }, 'basalt' ],
+  [ Vec3 { x: -51, y: 33, z: 82 }, 'basalt' ],
+  [ Vec3 { x: -51, y: 34, z: 82 }, 'air' ],
+  [ Vec3 { x: -50, y: 33, z: 83 }, 'basalt' ],
+  [ Vec3 { x: -50, y: 34, z: 83 }, 'basalt' ],
+  [ Vec3 { x: -50, y: 33, z: 81 }, 'netherrack' ],
+  [ Vec3 { x: -50, y: 34, z: 81 }, 'basalt' ]
+]
+ISSUE MOVE_BOUND_(-50, 33, 82)
+--- returned ---
+{
+ "p": {
+  "x": -50.4246573929031,
+  "y": 34,
+  "z": 82.49998498094463
+ },
+ "hp": 15.000000953674316,
+ "food": 17,
+ "closed": true,
+ "issue": "MOVE_BOUND_(-50, 33, 82)",
+ "before": 0,
+ "collected": [
+  [
+   8317,
+   "basalt"
+  ],
+  [
+   7851,
+   "ender_pearl"
+  ],
+  [
+   8325,
+   "basalt"
+  ],
+  [
+   7852,
+   "warped_roots"
+  ]
+ ],
+ "inv": [
+  [
+   "basalt",
+   22,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   56
+  ],
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   1,
+   null
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ],
+ "pearls": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-50.4, 34, 82.5) in the_nether, health 15/20, food 17/20, alive

@@ -1,0 +1,47 @@
+program #4201 on p3: 28 s
+--- output ---
+DOOR_ACTUAL exit (6.587898484917345, 66.42159999847412, 79.28405420788279)
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.47831489995798)
+--- returned ---
+{
+ "issue": null,
+ "seed": {
+  "x": 20,
+  "y": 67,
+  "z": 89
+ },
+ "source": {
+  "x": 20,
+  "y": 67,
+  "z": 91
+ },
+ "placed": true,
+ "subs": [
+  [
+   {
+    "x": 20,
+    "y": 67,
+    "z": 91
+   },
+   "grass_block",
+   "dirt"
+  ]
+ ],
+ "seedNow": "air",
+ "exactRestored": false,
+ "sourceNow": "dirt",
+ "dirt": 1,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.7,
+  "y": 67.5625,
+  "z": 83.69999990212864
+ },
+ "hp": 20,
+ "food": 20,
+ "dead": false,
+ "lost": false
+}
+--- chat since this player's previous program ---
+p1: P1 deliberateSURVIVALdeathwarp: dirtbanked/no assets carried, health6→camprespawn20 intended; normalwater, no commands/identitychange. MAPupperbank treasure313,249 NEWunlooted-statusunknown; do notwithdrawmap.
+--- p3 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

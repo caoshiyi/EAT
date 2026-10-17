@@ -1,0 +1,77 @@
+program #4177 on p4: 7.9 s
+--- output ---
+HAND_CUT_NO_ROCK_HARVEST (1, 68, 6) dirt
+HAND_CUT_NO_ROCK_HARVEST (0, 67, 6) dirt
+ACTUAL 0,67,6 3485
+HAND_CUT_NO_ROCK_HARVEST (-1, 68, 6) dirt
+HAND_CUT_NO_ROCK_HARVEST (-1, 67, 6) dirt
+ACTUAL -1,67,6 5739
+ACTUAL 0,67,6 6239
+ACTUAL 1,66,6 6938
+--- returned ---
+{
+ "p": {
+  "x": 1.4124899070783805,
+  "y": 66,
+  "z": 6.500184018733063
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   0,
+   67,
+   6
+  ],
+  [
+   -1,
+   67,
+   6
+  ],
+  [
+   0,
+   67,
+   6
+  ],
+  [
+   1,
+   66,
+   6
+  ]
+ ],
+ "elapsed": 7889,
+ "controls": {},
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   5
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (1.4, 66, 6.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,106 @@
+program #3989 on p4: 9.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 2.4677754130092002,
+  "y": 68,
+  "z": 54.49238634070326
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "issue": null,
+ "released": true,
+ "second": {
+  "x": 2,
+  "y": 68,
+  "z": 54
+ },
+ "walked": [
+  [
+   1,
+   68,
+   54
+  ],
+  [
+   2,
+   68,
+   54
+  ]
+ ],
+ "originals": [
+  [
+   "(0, 69, 54)",
+   "basalt"
+  ],
+  [
+   "(1, 68, 54)",
+   "basalt"
+  ]
+ ],
+ "public": [
+  [
+   53,
+   "air",
+   "air"
+  ],
+  [
+   55,
+   "air",
+   "air"
+  ]
+ ],
+ "inv": [
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "basalt",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   102
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 CLAIMportal6,68,90 ONEentry+OWcloseACK beforetransition; completedoldbuffer1,65,4 onlyE2DIRTcapsexacttemporaryopen/reclose. Camp6EXITcloseimmediaterelease/no returnreservation.
+p3: P3 CAMP6_EXIT_ACTUAL_CLOSED RELEASE6_AVAILABLE NO_RETURN; portalgateclaimseparate.
+--- p4 now: (2.5, 68, 54.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,567 @@
+program #3740 on p3: 0.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 1.406332064888705,
+  "y": 66,
+  "z": 6.7
+ },
+ "dimension": "the_nether",
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "shell": [
+  [
+   {
+    "x": 1,
+    "y": 65,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 1,
+    "y": 68,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 2,
+    "y": 66,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 2,
+    "y": 67,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 0,
+    "y": 66,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 0,
+    "y": 67,
+    "z": 6
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 1,
+    "y": 66,
+    "z": 7
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 1,
+    "y": 67,
+    "z": 7
+   },
+   "dirt",
+   true
+  ],
+  [
+   {
+    "x": 1,
+    "y": 66,
+    "z": 5
+   },
+   "cobblestone",
+   true
+  ],
+  [
+   {
+    "x": 1,
+    "y": 67,
+    "z": 5
+   },
+   "dirt",
+   true
+  ]
+ ],
+ "inventory": [
+  {
+   "name": "dirt",
+   "count": 4,
+   "durabilityUsed": null
+  },
+  {
+   "name": "spruce_planks",
+   "count": 1,
+   "durabilityUsed": null
+  },
+  {
+   "name": "leather",
+   "count": 2,
+   "durabilityUsed": null
+  },
+  {
+   "name": "wooden_sword",
+   "count": 1,
+   "durabilityUsed": 6
+  },
+  {
+   "name": "wooden_pickaxe",
+   "count": 1,
+   "durabilityUsed": 4
+  },
+  {
+   "name": "blackstone",
+   "count": 1,
+   "durabilityUsed": null
+  }
+ ],
+ "resources": [
+  [
+   {
+    "x": 0,
+    "y": 66,
+    "z": 5
+   },
+   "blackstone"
+  ],
+  [
+   {
+    "x": 0,
+    "y": 65,
+    "z": 3
+   },
+   "blackstone"
+  ],
+  [
+   {
+    "x": 5,
+    "y": 66,
+    "z": -5
+   },
+   "blackstone"
+  ]
+ ],
+ "mobs": [
+  [
+   155,
+   "player",
+   "[repeated reference]"
+  ]
+ ],
+ "rows": [
+  {
+   "y": 64,
+   "z": 4,
+   "r": [
+    "basalt",
+    "basalt",
+    "cobblestone_slab",
+    "spruce_planks",
+    "spruce_planks",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 64,
+   "z": 5,
+   "r": [
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 64,
+   "z": 6,
+   "r": [
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 64,
+   "z": 7,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 64,
+   "z": 8,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 65,
+   "z": 4,
+   "r": [
+    "cobblestone",
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 65,
+   "z": 5,
+   "r": [
+    "air",
+    "cobblestone",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 65,
+   "z": 6,
+   "r": [
+    "dirt",
+    "dirt",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 65,
+   "z": 7,
+   "r": [
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 65,
+   "z": 8,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 66,
+   "z": 4,
+   "r": [
+    "cobblestone",
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 66,
+   "z": 5,
+   "r": [
+    "blackstone",
+    "cobblestone",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 66,
+   "z": 6,
+   "r": [
+    "dirt",
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 66,
+   "z": 7,
+   "r": [
+    "basalt",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 66,
+   "z": 8,
+   "r": [
+    "basalt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 67,
+   "z": 4,
+   "r": [
+    "air",
+    "cobblestone",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 67,
+   "z": 5,
+   "r": [
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 67,
+   "z": 6,
+   "r": [
+    "dirt",
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 67,
+   "z": 7,
+   "r": [
+    "air",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 67,
+   "z": 8,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 68,
+   "z": 4,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 68,
+   "z": 5,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 68,
+   "z": 6,
+   "r": [
+    "air",
+    "dirt",
+    "dirt",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 68,
+   "z": 7,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 68,
+   "z": 8,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 69,
+   "z": 4,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 69,
+   "z": 5,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 69,
+   "z": 6,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 69,
+   "z": 7,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  },
+  {
+   "y": 69,
+   "z": 8,
+   "r": [
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air",
+    "air"
+   ]
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (1.4, 66, 6.7) in the_nether, health 20/20, food 20/20, alive

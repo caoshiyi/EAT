@@ -1,0 +1,95 @@
+== #4242 2026-10-17T02:40:09 p1 role=lead_converter iter=9 0 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TIME_HP',bot.time.timeOfDay,bot.health,bot.food);console.log('FOES',Object.values(bot.entities).filter(e=>['skeleton','stray','creeper','zombie','spider'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<35).map(e=>[e.id,e.name,e.position,e.metadata?.[9]]));for(const xz of [[313,249],[313,248],[312,249],[314,249],[313,250]]){const col=[];for(let y=58;y<=77;y++)col.push([y,bot.blockAt(new Vec3(xz[0],y,xz[1]))?.name]);console.log('COLUMN',xz,col);}bot.chat('P1 exit4237 HURT12.5 then10; immediate4240return CAMPclosed actual5HP17food. No routecontinuation. Nativeclient chest CONFIRMED313,62,249; contentsUNKNOWN. Need day/threatchange; P1notrequestingpeerrescue. Treasuremayfoodiron but notretained.');
+-- output --
+TIME_HP 542 5 17
+FOES [
+  [
+    32152,
+    'skeleton',
+    Vec3 { x: 5.499029272799475, y: 64, z: 81.73476556081066 },
+    4
+  ],
+  [
+    32384,
+    'spider',
+    Vec3 {
+      x: 21.30000001192093,
+      y: 64.10000002384186,
+      z: 110.69999998807907
+    },
+    16
+  ],
+  [
+    32513,
+    'skeleton',
+    Vec3 { x: 7.689345600365014, y: 62, z: 108.86640609013924 },
+    20
+  ],
+  [
+    32514,
+    'skeleton',
+    Vec3 { x: 7.299951851669581, y: 62, z: 108.21366649137256 },
+    20
+  ],
+  [ 33409, 'skeleton', Vec3 { x: 8.5, y: 65, z: 113.5 }, 20 ]
+]
+COLUMN [ 313, 249 ] [
+  [ 58, 'sandstone' ], [ 59, 'sand' ],
+  [ 60, 'sand' ],      [ 61, 'dirt' ],
+  [ 62, 'chest' ],     [ 63, 'air' ],
+  [ 64, 'air' ],       [ 65, 'air' ],
+  [ 66, 'air' ],       [ 67, 'air' ],
+  [ 68, 'air' ],       [ 69, 'air' ],
+  [ 70, 'air' ],       [ 71, 'air' ],
+  [ 72, 'air' ],       [ 73, 'air' ],
+  [ 74, 'air' ],       [ 75, 'air' ],
+  [ 76, 'air' ],       [ 77, 'air' ]
+]
+COLUMN [ 313, 248 ] [
+  [ 58, 'sand' ], [ 59, 'sand' ],
+  [ 60, 'sand' ], [ 61, 'cobblestone' ],
+  [ 62, 'ice' ],  [ 63, 'air' ],
+  [ 64, 'air' ],  [ 65, 'air' ],
+  [ 66, 'air' ],  [ 67, 'air' ],
+  [ 68, 'air' ],  [ 69, 'air' ],
+  [ 70, 'air' ],  [ 71, 'air' ],
+  [ 72, 'air' ],  [ 73, 'air' ],
+  [ 74, 'air' ],  [ 75, 'air' ],
+  [ 76, 'air' ],  [ 77, 'air' ]
+]
+COLUMN [ 312, 249 ] [
+  [ 58, 'sandstone' ], [ 59, 'sandstone' ],
+  [ 60, 'sand' ],      [ 61, 'sand' ],
+  [ 62, 'sand' ],      [ 63, 'snow' ],
+  [ 64, 'air' ],       [ 65, 'air' ],
+  [ 66, 'air' ],       [ 67, 'air' ],
+  [ 68, 'air' ],       [ 69, 'air' ],
+  [ 70, 'air' ],       [ 71, 'air' ],
+  [ 72, 'air' ],       [ 73, 'air' ],
+  [ 74, 'air' ],       [ 75, 'air' ],
+  [ 76, 'air' ],       [ 77, 'air' ]
+]
+COLUMN [ 314, 249 ] [
+  [ 58, 'sandstone' ], [ 59, 'sand' ],
+  [ 60, 'sand' ],      [ 61, 'sand' ],
+  [ 62, 'ice' ],       [ 63, 'air' ],
+  [ 64, 'air' ],       [ 65, 'air' ],
+  [ 66, 'air' ],       [ 67, 'air' ],
+  [ 68, 'air' ],       [ 69, 'air' ],
+  [ 70, 'air' ],       [ 71, 'air' ],
+  [ 72, 'air' ],       [ 73, 'air' ],
+  [ 74, 'air' ],       [ 75, 'air' ],
+  [ 76, 'air' ],       [ 77, 'air' ]
+]
+COLUMN [ 313, 250 ] [
+  [ 58, 'sandstone' ], [ 59, 'sandstone' ],
+  [ 60, 'sand' ],      [ 61, 'sand' ],
+  [ 62, 'sand' ],      [ 63, 'air' ],
+  [ 64, 'air' ],       [ 65, 'air' ],
+  [ 66, 'air' ],       [ 67, 'air' ],
+  [ 68, 'air' ],       [ 69, 'air' ],
+  [ 70, 'air' ],       [ 71, 'air' ],
+  [ 72, 'air' ],       [ 73, 'air' ],
+  [ 74, 'air' ],       [ 75, 'air' ],
+  [ 76, 'air' ],       [ 77, 'air' ]
+]

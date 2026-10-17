@@ -1,0 +1,82 @@
+program #3734 on p3: 1.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "CONTROLLED_ABORT_AFTER_RESOURCE",
+ "opened": true,
+ "log": [
+  [
+   0,
+   "WORK_BEGIN",
+   {
+    "x": 1.406332064888705,
+    "y": 66,
+    "z": 6.7
+   },
+   20
+  ],
+  [
+   1508,
+   "WORK_DONE_FORCE_ABORT",
+   {
+    "x": 1.406332064888705,
+    "y": 66,
+    "z": 6.7
+   },
+   20
+  ],
+  [
+   1509,
+   "RECOVERY_BEGIN",
+   {
+    "x": 1.406332064888705,
+    "y": 66,
+    "z": 6.7
+   },
+   20
+  ],
+  [
+   "RECOVERY_FAILED",
+   "Server refused to place dirt at (0, 66, 6): the block is still air"
+  ]
+ ],
+ "elapsed": 1510,
+ "delta": 0,
+ "inventory": [
+  [
+   "dirt",
+   6
+  ],
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "leather",
+   2
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ],
+ "full": false,
+ "ground": true,
+ "p": {
+  "x": 1.406332064888705,
+  "y": 66,
+  "z": 6.7
+ },
+ "hp": 20,
+ "food": 20,
+ "discontinuity": false,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (1.4, 66, 6.7) in the_nether, health 20/20, food 20/20, alive

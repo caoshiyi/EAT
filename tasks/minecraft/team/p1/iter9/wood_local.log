@@ -1,0 +1,15 @@
+program #3744 on p1: 17.2 s
+--- output ---
+EMERGED_ACTUAL Vec3 { x: 34.4837900449901, y: 68, z: 90.49382082791162 }
+CUT_LOG Vec3 { x: 34, y: 68, z: 94 }
+CUT_LOG Vec3 { x: 34, y: 69, z: 94 }
+CUT_LOG Vec3 { x: 34, y: 70, z: 94 }
+CUT_LOG Vec3 { x: 34, y: 71, z: 94 }
+FAIL Block not in view
+IN_PROGRAM_BURIAL_VERIFIED WOOD_FAIL Vec3 { x: 34.4837900449901, y: 65, z: 90.49382082791162 } 20
+OVERLAND_END {"p":{"x":34.4837900449901,"y":65,"z":90.49382082791162},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[],"air":18,"kit":[["dirt",2,null]],"refuge":{"feet":{"x":34,"y":65,"z":90},"roof":{"x":34,"y":67,"z":90},"at":1792198843868}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (34.5, 65, 90.5) in overworld, health 20/20, food 20/20, alive

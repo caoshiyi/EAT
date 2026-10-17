@@ -1,0 +1,66 @@
+program #4042 on p4: 10.3 s
+--- output ---
+ACTUAL_RECLAIM_HELD 13
+ISSUE COLD_RESERVE14 actual Vec3 { x: 13.512506104298117, y: 74, z: 59.45074198460493 }
+--- returned ---
+{
+ "p": {
+  "x": 13.512506104298117,
+  "y": 74,
+  "z": 59.45074198460493
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "COLD_RESERVE14",
+ "closed": true,
+ "full": true,
+ "walked": [],
+ "elapsed": 10271,
+ "controls": {},
+ "inv": [
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "basalt",
+   3,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   113
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 actual4033 29nodes18.3s FULL-19,65,48/20HP; N57ownCOBBLE2 removed→publicAIR, released58. 4036 next22nodesALLfloorsFULL/onlyP4West-20,Y65/66,48 BASALT2 obstruct. Pass+sameBASALTrestoreafterbody-21; removeownnewEast-18COBBLE2 backtoAIR. EndexistingWarpedp
+p3: od-36,57,47 isolateonlynewcapifneeded; work40/recover25/85outer. EngineerP3_BRIDGE_REPLY+PORTAL_PATH_REPLY READ; no moreidenticaltest/universalproof.
+--- p4 now: (13.5, 74, 59.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,26 @@
+// Host-only reproduction of #3747; no player program or world connection.
+'use strict';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const base = process.cwd() + '/tools/mc_arena/node_modules/';
+const registry = require(base + 'prismarine-registry')('1.20.4');
+const Block = require(base + 'prismarine-block')(registry);
+const {Vec3} = require(base + 'vec3');
+const block = Block.fromStateId(registry.blocksByName.spruce_log.defaultState, 0);
+assert.equal(block.position, null);
+const text = fs.readFileSync(base + 'mineflayer/lib/plugins/digging.js', 'utf8');
+const start = text.indexOf('  function canDigBlock (block)');
+const end = text.indexOf('\n  function digTime', start);
+assert(start > 0 && end > start);
+const bot = {entity: {position: new Vec3(0, 0, 0)}};
+const scope = vm.createContext({bot});
+vm.runInContext(text.slice(start, end), scope);
+bot.canDigBlock = scope.canDigBlock;
+assert.throws(() => block.name === 'spruce_log' && bot.canDigBlock(block), /offset/);
+const matching = b => b.name === 'spruce_log';
+const useExtraInfo = b => bot.canDigBlock(b);
+assert(matching(block));
+block.position = new Vec3(1, 0, 0);
+assert(useExtraInfo(block));
+console.log('PASS exact installed canDigBlock: palette block null-position reproduces #3747; name matcher + positioned extraInfo succeeds');

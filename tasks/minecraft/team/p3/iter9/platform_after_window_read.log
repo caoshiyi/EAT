@@ -1,0 +1,228 @@
+program #4117 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "q": {
+  "x": -98,
+  "y": 63,
+  "z": 86
+ },
+ "p": {
+  "x": -97.51081170239462,
+  "y": 63,
+  "z": 86.51862234742491
+ },
+ "hp": 20,
+ "food": 20,
+ "candidates": [
+  {
+   "id": 23455,
+   "p": {
+    "x": -92.58313054277284,
+    "y": 57,
+    "z": 69.49324718355882
+   },
+   "dist": 18.379754167554292,
+   "carried": 18591,
+   "firstRay": [
+    {
+     "x": -98,
+     "y": 64,
+     "z": 85
+    },
+    "cobblestone"
+   ]
+  },
+  {
+   "id": 13844,
+   "p": {
+    "x": -89.93868733939956,
+    "y": 84,
+    "z": 93.31303324663126
+   },
+   "dist": 23.653017081934625,
+   "carried": 18594,
+   "firstRay": [
+    {
+     "x": -98,
+     "y": 65,
+     "z": 86
+    },
+    "cobblestone"
+   ]
+  },
+  {
+   "id": 13843,
+   "p": {
+    "x": -89.30000001192093,
+    "y": 84,
+    "z": 93.69999998807907
+   },
+   "dist": 23.999583321570263,
+   "carried": 18591,
+   "firstRay": [
+    {
+     "x": -98,
+     "y": 65,
+     "z": 86
+    },
+    "cobblestone"
+   ]
+  },
+  {
+   "id": 24556,
+   "p": {
+    "x": -112.30000362596954,
+    "y": 80,
+    "z": 97.52918753888484
+   },
+   "dist": 25.028229442162292,
+   "carried": 18594,
+   "firstRay": [
+    {
+     "x": -98,
+     "y": 65,
+     "z": 86
+    },
+    "cobblestone"
+   ]
+  },
+  {
+   "id": 20838,
+   "p": {
+    "x": -113.09129518621423,
+    "y": 80,
+    "z": 97.48935769141782
+   },
+   "dist": 25.470620929981163,
+   "carried": 18594,
+   "firstRay": [
+    {
+     "x": -98,
+     "y": 65,
+     "z": 86
+    },
+    "cobblestone"
+   ]
+  }
+ ],
+ "faces": [
+  [
+   1,
+   0,
+   [
+    "cobblestone",
+    "cobblestone",
+    "cobblestone"
+   ],
+   [
+    "basalt",
+    "air"
+   ]
+  ],
+  [
+   -1,
+   0,
+   [
+    "cobblestone",
+    "cobblestone",
+    "cobblestone"
+   ],
+   [
+    "air",
+    "air"
+   ]
+  ],
+  [
+   0,
+   1,
+   [
+    "basalt",
+    "cobblestone",
+    "basalt"
+   ],
+   [
+    "blackstone",
+    "basalt"
+   ]
+  ],
+  [
+   0,
+   -1,
+   [
+    "cobblestone",
+    "cobblestone",
+    "air"
+   ],
+   [
+    "air",
+    "air"
+   ]
+  ]
+ ],
+ "floors": [
+  [
+   1,
+   0,
+   [
+    "basalt",
+    "basalt",
+    "basalt"
+   ]
+  ],
+  [
+   -1,
+   0,
+   [
+    "cobblestone",
+    "cobblestone",
+    "cobblestone"
+   ]
+  ],
+  [
+   0,
+   1,
+   [
+    "basalt",
+    "blackstone",
+    "blackstone"
+   ]
+  ],
+  [
+   0,
+   -1,
+   [
+    "cobblestone",
+    "air",
+    "air"
+   ]
+  ]
+ ],
+ "foes": [
+  [
+   23419,
+   "magma_cube",
+   {
+    "x": -109.80970148206441,
+    "y": 55,
+    "z": 73.4372421117355
+   }
+  ],
+  [
+   23447,
+   "magma_cube",
+   {
+    "x": -98.04039990901947,
+    "y": 65,
+    "z": 84.95960009098053
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P3 4108 changedMOBS[] returnPASS53nodes43s FULLSouthpod20/20; previousWheadAIR repairedEXACTDIRT+roofDIRT readbacknext, RELEASEW/roofafterbodyclear. CLAIMbufferS3 pass+sameCOBBLE/COBBLE/DIRT <=45s now; last2pickuses reservedfor2COBBLE, DIRThand. ThenE/OWga
+p4: te/campentryatomic<=75s, youfarWest/no helperwait. P4boattrap needsOverworldspruce5planks; noNetherwoodfalsequota.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002236837861, 66, 78.86079872541603) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 actual6EXITclosed RELEASE; ONEtimedcorpse201,360 before02:13:13, no newkitbuilder.
+--- p3 now: (-97.5, 63, 86.5) in the_nether, health 20/20, food 20/20, alive

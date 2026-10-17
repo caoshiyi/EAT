@@ -1,0 +1,15 @@
+program #3876 on p1: 9.5 s
+--- output ---
+LEG_ACTUAL Vec3 { x: 133.49973581419144, y: 62, z: 588.3322911817507 } 19.861976623535156 17
+TUNNEL_STEP 1 Vec3 { x: 133.49973581419144, y: 62, z: 588.3322911817507 }
+LEG_ACTUAL Vec3 { x: 133.49973591206287, y: 62, z: 589.5 } 19.861976623535156 17
+TUNNEL_STEP 2 Vec3 { x: 133.49973591206287, y: 62, z: 589.5 }
+LEG_ACTUAL Vec3 { x: 133.4997360099343, y: 62, z: 590.3322911817507 } 19.861976623535156 17
+TUNNEL_STEP 3 Vec3 { x: 133.4997360099343, y: 62, z: 590.3322911817507 }
+TUNNEL_END9 {"p":{"x":133.4997360099343,"y":62,"z":590.3322911817507},"hp":19.861976623535156,"food":17,"steps":3,"issue":null,"safe":true,"lost":false,"delta":2.832291181750763,"inv":[["stick",4,null],["stone_pickaxe",1,0],["spruce_door",3,null],["wooden_pickaxe",1,27],["crafting_table",1,null],["coal",2,null],["cobblestone",13,null],["dirt",26,null],["granite",5,null]]}
+OVERLAND_END {"p":{"x":133.4997360099343,"y":62,"z":590.3322911817507},"hp":19.861976623535156,"food":17,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[["skeleton",15.688005017354438],["creeper",15.987350552152957],["creeper",20.500317362003774],["zombie",22.831249365463915],["skeleton",23.037512212702325],["skeleton",23.306533393318475],["skeleton",26.509443012005452]],"air":399,"kit":[["stick",4,null],["stone_pickaxe",1,0],["spruce_door",3,null],["wooden_pickaxe",1,27],["crafting_table",1,null],["coal",2,null],["cobblestone",13,null],["dirt",26,null],["granite",5,null]],"refuge":{"feet":{"x":133,"y":62,"z":590},"roof":{"x":133,"y":64,"z":590},"at":1792199745853}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (133.5, 62, 590.3) in overworld, health 19.9/20, food 17/20, alive

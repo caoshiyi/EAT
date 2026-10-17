@@ -1,0 +1,68 @@
+== #3841 2026-10-17T01:10:14 p4 role=capability_operator iter=9 43.9 s
+const {Vec3}=require('vec3');const V=a=>new Vec3(...a),began=Date.now(),home=bot.entity.position.floored(),dim=bot.game.dimension,health=bot.health;let phase='work',dead=false,issue=null,walked=[],closed=false;const f=b=>b&&b.boundingBox==='block'&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|magma|fire|water/.test(b.name);const faces=p=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>p.offset(...d));const shell=p=>faces(p).every(q=>f(bot.blockAt(q)));const capNames=['dirt','granite','basalt','blackstone','cobblestone','netherrack','spruce_planks'];const held=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((n,i)=>n+i.count,0);
+const stop=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)};bot.on('death',stop);bot.on('respawn',stop);bot.clearControlStates();bot.pathfinder.setGoal(null);
+const check=()=>{if(dead||bot.game.dimension!==dim||bot.health<=0)throw Error('DISCONTINUITY');if(Date.now()-began>(phase==='work'?40000:75000))throw Error('TIME_'+phase);if(phase==='work'&&bot.health<health)throw Error('HURT');};
+const tick=async n=>{check();await bot.waitForTicks(n);check();};
+const threat=(next=bot.entity.position.floored())=>Object.values(bot.entities).find(e=>{if(!['magma_cube','piglin','hoglin','blaze','ghast'].includes(e.name))return false;let cur=bot.entity.position,range=e.name==='ghast'?32:5;if(Math.min(e.position.distanceTo(cur),e.position.distanceTo(next))>=range)return false;for(let a of[cur,next.offset(.5,0,.5)])for(let y of[.5,1.6]){const from=a.offset(0,y,0);if(bot.blockAt(from.floored())?.boundingBox!=='empty')continue;const to=e.position.offset(0,(e.height||2)*.5,0),delta=to.minus(from);if(!bot.world.raycast(from,delta.unit(),delta.norm()))return true;}return false;});
+async function cut(q){let b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!['basalt','blackstone','granite','dirt','cobblestone','netherrack','warped_nylium','spruce_planks'].includes(b?.name))throw Error('CUT_'+b?.name);for(let d of[[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]])if(/lava|fire|magma|water|gravel|sand/.test(bot.blockAt(q.offset(...d))?.name||'null'))throw Error('CUT_HOT');let pick=bot.inventory.items().find(i=>i.name==='stone_pickaxe'&&i.durabilityUsed<122);if(!pick)throw Error('PICK_RESERVE');await bot.equip(pick,'hand');await bot.dig(b);await tick(2);if(bot.blockAt(q).boundingBox!=='empty')throw Error('CUT_ACK');}
+async function put(q){if(f(bot.blockAt(q)))return;const it=bot.inventory.items().find(i=>capNames.includes(i.name));if(!it)throw Error('CAP_STOCK');for(let d of[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]]){let r=bot.blockAt(q.offset(...d));if(f(r)){await bot.equip(it,'hand');await bot._placeBlockWithOptions(r,V(d.map(v=>-v)),{forceLook:true});await tick(2);if(!f(bot.blockAt(q)))throw Error('CAP_ACK');return;}}throw Error('CAP_REF');}
+async function close(p){await move(p);await tick(3);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-p.x-.5)>.18||Math.abs(bot.entity.position.z-p.z-.5)>.18)throw Error('CLOSE_BODY_PRE');let need=faces(p).filter(q=>!f(bot.blockAt(q)));const stockBefore=held();if(stockBefore<need.length)throw Error('CLOSE_NEED_'+need.length+'_HELD_'+stockBefore);for(let d of[[1,0],[-1,0],[0,1],[0,-1]]){let lo=p.offset(d[0],0,d[1]);if(!f(bot.blockAt(lo))){let below=lo.offset(0,-1,0);if(!f(bot.blockAt(below)))await put(below);await put(lo);}await put(lo.offset(0,1,0));}if(!f(bot.blockAt(p.offset(0,2,0)))){await put(p.offset(1,2,0));await put(p.offset(0,2,0));}return shell(p);}
+async function move(q){check();let p=bot.entity.position.floored(),dy=q.y-p.y;let t=Date.now();try{while(true){let a=bot.entity.position,dx=q.x+.5-a.x,dz=q.z+.5-a.z;if(Math.hypot(dx,dz)<.13&&Math.abs(a.y-q.y)<.08&&bot.entity.onGround)break;if(Date.now()-t>4500)throw Error('MOVE_BOUND_'+q);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');if(phase==='work'&&threat(q))throw Error('THREAT_'+threat(q).name);await bot.lookAt(new Vec3(q.x+.5,a.y+1.5,q.z+.5),true);bot.setControlState('jump',dy>0&&a.y<q.y+.05);bot.setControlState('sneak',dy>=0&&Math.hypot(dx,dz)<.7);bot.setControlState('forward',Math.hypot(dx,dz)>.1);await tick(1);}}finally{bot.clearControlStates()}await tick(2);if(!bot.entity.position.floored().equals(q)||!bot.entity.onGround)throw Error('MOVE_ACTUAL');}
+try{const plan=global.P4Route9;if(!plan||!home.equals(V(plan.origin))||!shell(home)||health<20)throw Error('START');for(let a of plan.path){check();const q=V(a),p=bot.entity.position.floored();if(threat(q))throw Error('THREAT_'+threat(q).name);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');let cs=[q.offset(0,1,0),q];if(q.y>p.y)cs.unshift(p.offset(0,2,0));if(q.y<p.y)cs.unshift(q.offset(0,2,0));for(let c of cs){await cut(c);check();}if(threat(q))throw Error('THREAT_AFTER_CUT');await move(q);walked.push(a);console.log('ACTUAL',a.join(','),Date.now()-began);}
+phase='recovery';closed=await close(bot.entity.position.floored());}
+catch(e){issue=e.message;console.log('ISSUE',issue,'actual',bot.entity.position);bot.clearControlStates();phase='recovery';try{closed=await close(bot.entity.position.floored())}catch(e){console.log('LOCAL_CLOSE_FAIL',e.message);try{for(let a of walked.slice(0,-1).reverse())await move(V(a));await move(home);closed=await close(home);console.log('ROLLBACK_ACTUAL',closed)}catch(e){console.log('ROLLBACK_FAILED',e.message)}}}
+finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.deactivateItem();bot.removeListener('death',stop);bot.removeListener('respawn',stop);}
+return{p:bot.entity.position,hp:bot.health,food:bot.food,issue,closed,full:shell(bot.entity.position.floored()),walked,elapsed:Date.now()-began,controls:bot.controlState,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+ACTUAL -47,58,55 1670
+ACTUAL -47,59,56 3422
+ACTUAL -47,59,57 4027
+ACTUAL -47,59,58 4537
+ACTUAL -47,59,59 5089
+ACTUAL -47,59,60 5589
+ACTUAL -47,59,61 6140
+ACTUAL -47,59,62 6640
+ACTUAL -47,59,63 7193
+ACTUAL -47,59,64 7698
+ACTUAL -47,59,65 8199
+ACTUAL -47,59,66 8702
+ACTUAL -47,59,67 9202
+ACTUAL -47,59,68 9754
+ACTUAL -47,59,69 10256
+ACTUAL -47,59,70 10807
+ACTUAL -47,59,71 11309
+ACTUAL -47,59,72 11858
+ACTUAL -47,59,73 12360
+ACTUAL -47,58,74 13060
+ACTUAL -48,58,74 13559
+ACTUAL -48,57,75 14210
+ACTUAL -49,58,75 15971
+ACTUAL -50,59,75 17723
+ACTUAL -51,58,75 18423
+ACTUAL -51,58,76 18923
+ACTUAL -51,57,77 19628
+ACTUAL -52,57,77 20128
+ACTUAL -53,57,77 20679
+ACTUAL -53,56,78 21378
+ACTUAL -54,57,78 23129
+ACTUAL -55,57,78 23730
+ACTUAL -56,56,78 24429
+ACTUAL -57,55,78 25131
+ACTUAL -58,54,78 25832
+ACTUAL -58,53,79 26532
+ACTUAL -58,52,80 27238
+ACTUAL -57,51,80 27941
+ACTUAL -57,50,81 28641
+ACTUAL -56,49,81 29394
+ACTUAL -56,48,80 32723
+ACTUAL -55,47,80 33361
+ACTUAL -54,48,80 35116
+ACTUAL -54,47,81 36918
+ACTUAL -53,46,81 37619
+ACTUAL -53,46,82 38127
+ACTUAL -54,45,82 38780
+ISSUE Server refused to place basalt at (-54, 46, 83): the block is still brown_mushroom actual Vec3 { x: -53.35627724828151, y: 45, z: 82.4999849809479 }
+LOCAL_CLOSE_FAIL Server refused to place basalt at (-54, 46, 83): the block is still brown_mushroom
+ROLLBACK_FAILED MOVE_BOUND_(-53, 46, 82)
+-- returned --
+{"p": {"x": -53.3, "y": 46.25220334025373, "z": 82.49998498094767}, "hp": 20, "food": 20, "issue": "Server refused to place basalt at (-54, 46, 83): the block is still brown_mushroom", "closed": false, "full": false, "walked": [[-47, 58, 55], [-47, 59, 56], [-47, 59, 57], [-47, 59, 58], [-47, 59, 59], [-47, 59, 60], [-47, 59, 61], [-47, 59, 62], [-47, 59, 63], [-47, 59, 64], [-47, 59, 65], [-47, 59, 66], [-47, 59, 67], [-47, 59, 68], [-47, 59, 69], [-47, 59, 70], [-47, 59, 71], [-47, 59, 72], [-47, 59, 73], [-47, 58, 74], [-48, 58, 74], [-48, 57, 75], [-49, 58, 75], [-50, 59, 75], [-51, 58, 75], [-51, 58, 76], [-51, 57, 77], [-52, 57, 77], [-53, 57, 77], [-53, 56, 78], [-54, 57, 78], [-55, 57, 78], [-56, 56, 78], [-57, 55, 78], [-58, 54, 78], [-58, 53, 79], [-58, 52, 80], [-57, 51, 80], [-57, 50, 81], [-56, 49, 81], [-56, 48, 80], [-55, 47, 80], [-54, 48, 80], [-54, 47, 81], [-53, 46, 81], [-53, 46, 82], [-54, 45, 82]], "elapsed": 43946, "controls": {}, "inv": [["basalt", 36, null], ["stone_pickaxe", 1, 34], ["stone_axe", 1, 4], ["stone_pickaxe", 1, 127], ["blackstone", 3, null], ["cobblestone_slab", 1, null]]}

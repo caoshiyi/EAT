@@ -1,0 +1,187 @@
+program #4159 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 20,
+ "food": 20,
+ "onGround": true,
+ "dim": "overworld",
+ "blocks": [
+  [
+   {
+    "x": 6,
+    "y": 67,
+    "z": 81
+   },
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   {
+    "x": 6,
+    "y": 68,
+    "z": 81
+   },
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "left",
+    "half": "upper",
+    "facing": "north"
+   }
+  ],
+  [
+   {
+    "x": 6,
+    "y": 66,
+    "z": 82
+   },
+   "crafting_table",
+   {}
+  ],
+  [
+   {
+    "x": 6,
+    "y": 67,
+    "z": 82
+   },
+   "air",
+   {}
+  ],
+  [
+   {
+    "x": 6,
+    "y": 68,
+    "z": 82
+   },
+   "wall_torch",
+   {
+    "facing": "east"
+   }
+  ],
+  [
+   {
+    "x": 6,
+    "y": 69,
+    "z": 82
+   },
+   "spruce_slab",
+   {
+    "waterlogged": false,
+    "type": "top"
+   }
+  ],
+  [
+   {
+    "x": 6,
+    "y": 67,
+    "z": 83
+   },
+   "white_bed",
+   {
+    "part": "foot",
+    "occupied": false,
+    "facing": "east"
+   }
+  ],
+  [
+   {
+    "x": 7,
+    "y": 67,
+    "z": 81
+   },
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "right",
+    "half": "lower",
+    "facing": "north"
+   }
+  ],
+  [
+   {
+    "x": 7,
+    "y": 68,
+    "z": 81
+   },
+   "spruce_door",
+   {
+    "powered": false,
+    "open": false,
+    "hinge": "right",
+    "half": "upper",
+    "facing": "north"
+   }
+  ],
+  [
+   {
+    "x": 7,
+    "y": 67,
+    "z": 82
+   },
+   "chest",
+   {
+    "waterlogged": false,
+    "type": "single",
+    "facing": "east"
+   }
+  ],
+  [
+   {
+    "x": 7,
+    "y": 68,
+    "z": 82
+   },
+   "chest",
+   {
+    "waterlogged": false,
+    "type": "single",
+    "facing": "west"
+   }
+  ],
+  [
+   {
+    "x": 7,
+    "y": 67,
+    "z": 83
+   },
+   "white_bed",
+   {
+    "part": "head",
+    "occupied": false,
+    "facing": "east"
+   }
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p4: P4 CLAIMportal6,68,90 ONEentry+OWcloseACK beforetransition; completedoldbuffer1,65,4 onlyE2DIRTcapsexacttemporaryopen/reclose. Camp6EXITcloseimmediaterelease/no returnreservation.
+p4: P4 CAMP6_EXIT_ACTUAL_CLOSED RELEASE6_AVAILABLE NO_RETURN; portalgateclaimseparate.
+p1: P1 ACTUALfrontdoor6 entryclaimNOW; onecross+close/no futurelease.
+p4: P4 PORTAL_GATE_OW_CLOSED_ACTUAL beforetransition RELEASEportal_P1/available; body(6.417045753750638, 68, 91.0073127400226)
+p1: P1_return_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002804491831, 67, 82.68296479973209) HP6.2641448974609375 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 CAMP_RETURN actualtrue HP6.2641448974609375 door6closed RELEASE. P4 observedBOAT1/STICK4: P2 needsONEstickdiamondtool. Ifsurplus pleaseBANK1stick withreceipt/no toss; no needwaitP1, no assumptionreceived.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

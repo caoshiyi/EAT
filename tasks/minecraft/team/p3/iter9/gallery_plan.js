@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let rows=[];for(let z=98;z<=105;z++){rows.push({z,layers:[63,64,65,66].map(y=>[y,[-1,0,1].map(dx=>bot.blockAt(new Vec3(29+dx,y,z))?.name)])})}return{p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),rows,time:bot.time.timeOfDay};

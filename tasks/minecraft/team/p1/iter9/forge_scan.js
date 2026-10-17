@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const p=bot.entity.position.floored();console.log('LOCAL',[-2,-1,0,1].flatMap(y=>[[0,0],[1,0],[-1,0],[0,1],[0,-1],[2,0],[-2,0]].map(([x,z])=>{let q=p.offset(x,y,z);return[q,bot.blockAt(q)?.name]})));console.log('STATE',p,bot.inventory.items().map(i=>[i.name,i.count]));

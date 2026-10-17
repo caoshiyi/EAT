@@ -1,0 +1,19 @@
+== #4039 2026-10-17T01:47:18 p1 role=lead_converter iter=9 0.1 s
+console.log('CURSOR',bot.inventory.selectedItem?.name,bot.inventory.selectedItem?.count,'WINDOW',bot.currentWindow?.type);console.log('ALL_SLOTS',bot.inventory.slots.map((i,k)=>i&&[k,i.name,i.count]).filter(Boolean));if(bot.currentWindow)bot.closeWindow(bot.currentWindow);if(bot.inventory.selectedItem){const slot=Array.from({length:36},(_,i)=>i+9).find(i=>!bot.inventory.slots[i]);if(slot===undefined)throw Error('NO_CURSOR_DEST');await bot.clickWindow(slot,0,0);await bot.waitForTicks(3);}console.log('AFTER',bot.inventory.items().map(i=>[i.name,i.count]),'CURSOR',bot.inventory.selectedItem?.name);
+-- output --
+CURSOR spruce_planks 12 WINDOW undefined
+ALL_SLOTS [
+  [ 9, 'stick', 4 ],
+  [ 10, 'crafting_table', 1 ],
+  [ 11, 'stick', 4 ],
+  [ 36, 'cooked_beef', 1 ],
+  [ 38, 'coal', 1 ]
+]
+AFTER [
+  [ 'stick', 4 ],
+  [ 'crafting_table', 1 ],
+  [ 'stick', 4 ],
+  [ 'spruce_planks', 12 ],
+  [ 'cooked_beef', 1 ],
+  [ 'coal', 1 ]
+] CURSOR undefined

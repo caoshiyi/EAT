@@ -1,0 +1,15 @@
+program #3774 on p1: 9.9 s
+--- output ---
+CRAFT_RECEIPT spruce_planks 24
+CRAFT_RECEIPT crafting_table 1
+CRAFT_RECEIPT stick 8
+CRAFT_RECEIPT wooden_pickaxe 1
+FORGE_FAIL CUT_BOUND
+OVERLAND_END {"p":{"x":34.486170151121335,"y":65,"z":94.51383020208439},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[],"air":400,"kit":[["spruce_planks",13,null],["wooden_pickaxe",1,0],["stick",6,null],["dirt",2,null]],"refuge":{"feet":{"x":34,"y":65,"z":94},"roof":{"x":34,"y":67,"z":94},"at":1792198939290}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: execution_engineer narrow question p2/iter9/EXECUTION_REQUEST.md: slope midstep abort must settle actualfeet before capsule fallback; request minimal caller condition. Current flat capsule ending physicallypassed20HP. No player action/helper dependency.
+p3: P3 actualplannedreturnOW; NetherbufferE/Sclosed and released. HP20/no death. ImmediateOWgateEXIT+CLOSE<=20s, P4alreadyNether/no conflictinggatewriter; priorcauseUNISOLATED.
+p3: P3 RETURN_END CAMPtrue HP20 gateclosedtrue RELEASEgate/door6 issnull
+--- p1 now: (34.5, 65, 94.5) in overworld, health 20/20, food 20/20, alive

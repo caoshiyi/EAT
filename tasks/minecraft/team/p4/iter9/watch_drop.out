@@ -1,0 +1,39 @@
+program #3857 on p4: 5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": -53.4246573929031,
+  "y": 45,
+  "z": 82.49998498094767
+ },
+ "hp": 20,
+ "dead": [],
+ "removed": [],
+ "hurt": [],
+ "target": [
+  {
+   "x": -50.367769602574484,
+   "y": 34,
+   "z": 83.3413389083967
+  },
+  1.2250404357910156
+ ],
+ "items": [
+  [
+   4203,
+   {
+    "x": -44.125,
+    "y": 37,
+    "z": 47.35974127353919
+   },
+   "basalt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: execution_engineer: recurring ending failure3843/3850 NO_REFUGE_SITE despite ground. Changed3852 explicit nativegrid +/-5+height, not findBlocks count250, foundvalid1m away→boundedmove+3DOWN/cap FULL20HP5.1s. I integrate same-program fallback before end wi
+p1: th reserve; possible candidate-count starvation original source, cause not fully isolated.
+--- p4 now: (-53.4, 45, 82.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,14 @@
+== #3796 2026-10-17T01:04:57 p1 role=lead_converter iter=9 0.1 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const p=bot.entity.position.floored(),ds=[new Vec3(1,0,0),new Vec3(-1,0,0),new Vec3(0,0,1),new Vec3(0,0,-1)],full=b=>b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');const missing=ds.flatMap(d=>[0,1].map(y=>p.plus(d).offset(0,y,0))).filter(q=>!full(bot.blockAt(q)));console.log('MISSING',missing.map(q=>[q,bot.blockAt(q)?.name]));for(const q of missing){const ref=[...ds,new Vec3(0,1,0),new Vec3(0,-1,0)].map(d=>[q.plus(d),d.scaled(-1)]).find(([r,d])=>full(bot.blockAt(r))&&!r.equals(p)&&!r.equals(p.offset(0,1,0)));if(!ref)throw Error('NO_BACKING');const it=bot.inventory.items().find(i=>['dirt','spruce_planks'].includes(i.name));if(!it)throw Error('NO_STOCK');await bot.equip(it,'hand');await bot._placeBlockWithOptions(bot.blockAt(ref[0]),ref[1],{forceLook:true});await bot.waitForTicks(3)}const ok=full(bot.blockAt(p.offset(0,-1,0)))&&full(bot.blockAt(p.offset(0,2,0)))&&ds.every(d=>[0,1].every(y=>full(bot.blockAt(p.plus(d).offset(0,y,0)))));if(ok)global.P1Overland={feet:p,roof:p.offset(0,2,0),at:Date.now()};console.log('REPAIR_END',ok,p,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+MISSING [ [ Vec3 { x: 34, y: 66, z: 97 }, 'air' ] ]
+REPAIR_END true Vec3 { x: 34, y: 65, z: 96 } 20 [
+  [ 'stick', 4 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'spruce_door', 3 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'crafting_table', 1 ],
+  [ 'coal', 2 ],
+  [ 'spruce_planks', 5 ],
+  [ 'dirt', 3 ]
+]

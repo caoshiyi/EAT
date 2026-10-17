@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,columns:[87,88,89,90,91,92].flatMap(z=>[6,7].map(x=>({x,z,layers:[62,63,64,65,66,67,68].map(y=>[y,bot.blockAt(new Vec3(x,y,z))?.name])})))};

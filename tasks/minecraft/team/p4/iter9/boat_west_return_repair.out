@@ -1,0 +1,209 @@
+program #4207 on p4: 17 s
+--- output ---
+ACTUAL -45,58,56 1258
+ACTUAL -45,57,55 1961
+ACTUAL -45,56,54 2661
+ACTUAL -44,56,54 3170
+ACTUAL -43,56,54 3720
+ACTUAL -43,56,53 4221
+ACTUAL -42,56,53 4723
+ACTUAL -42,57,52 5323
+ACTUAL -41,58,52 5923
+ACTUAL -41,58,51 6424
+ACTUAL -40,58,51 6928
+ACTUAL -39,58,51 7431
+ACTUAL -39,58,50 7931
+ACTUAL -38,59,50 8533
+ACTUAL -37,59,50 9033
+ACTUAL -37,59,49 9555
+ACTUAL -37,58,48 10205
+ACTUAL -37,58,47 12860
+ACTUAL -36,57,47 15363
+--- returned ---
+{
+ "p": {
+  "x": -35.58459151627062,
+  "y": 57,
+  "z": 47.49896710659336
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -45,
+   58,
+   56
+  ],
+  [
+   -45,
+   57,
+   55
+  ],
+  [
+   -45,
+   56,
+   54
+  ],
+  [
+   -44,
+   56,
+   54
+  ],
+  [
+   -43,
+   56,
+   54
+  ],
+  [
+   -43,
+   56,
+   53
+  ],
+  [
+   -42,
+   56,
+   53
+  ],
+  [
+   -42,
+   57,
+   52
+  ],
+  [
+   -41,
+   58,
+   52
+  ],
+  [
+   -41,
+   58,
+   51
+  ],
+  [
+   -40,
+   58,
+   51
+  ],
+  [
+   -39,
+   58,
+   51
+  ],
+  [
+   -39,
+   58,
+   50
+  ],
+  [
+   -38,
+   59,
+   50
+  ],
+  [
+   -37,
+   59,
+   50
+  ],
+  [
+   -37,
+   59,
+   49
+  ],
+  [
+   -37,
+   58,
+   48
+  ],
+  [
+   -37,
+   58,
+   47
+  ],
+  [
+   -36,
+   57,
+   47
+  ]
+ ],
+ "elapsed": 16965,
+ "newCaps": [
+  [
+   -35,
+   57,
+   47
+  ],
+  [
+   -35,
+   58,
+   47
+  ]
+ ],
+ "originalCapsRestored": [
+  [
+   "(-45, 58, 56)",
+   "basalt",
+   "basalt"
+  ],
+  [
+   "(-37, 58, 47)",
+   "basalt",
+   "basalt"
+  ],
+  [
+   "(-36, 59, 47)",
+   "basalt",
+   "basalt"
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   19
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p1 was shot by Skeleton
+p2: P2 bufferFULL20HP/3D; restoreNorthTABLE2tooriginalDIRT2 then EDIRT2pass+samecap restore NOW/portalreturn. P4South untouched.
+p3: P3 4201 correction ACTUALWORLD PASS28s: source20,67,91 originallyGRASS→cut2DIRTreceipt→phaseRECOVERY selectsheldDIRT→actualFULLDIRT, subs[GRASS,DIRT], exactRestoredfalse, retainedDIRT1/CAMPclosed20HP/nohurt. Thisvalidatesdispatch+anchorcaseonly, NOTangryEn
+p3: dertravel/hurtclosure. Seedquarry20,67,89 remainsAIR1deep; fixingownholewithremainingDIRTnext, thenrelease. Engineer replyactualcaller native_routed_recovery.js; preserve4155death/kitloss.
+p2: P2 actualplannedreturnOW; NetherbufferE/Sclosed and released. HP20/same life. ImmediateOWgateEXIT+CLOSE<=20s, P2alreadyNether/no conflictinggatewriter; priorcauseUNISOLATED.
+p2: P2 RETURN_END CAMPfalse HP20 gateclosedtrue RELEASEgate/door6 issNAV_NOT_ACTUAL
+p3: P34206 freshsharedgeometrysource20,67,91 DIRTFULL /seed20,67,89 AIR1deep; fouradjacentrepairpaths nowNO_PATH. Notopeningforblindrepair. CurrentCAMP20/20DIRT1/controlsstopped, no activewriter. Changedfreshthreat+pathdiscriminatornext; sourcewasactualGRASS n
+p3: otPODZOL, test4201substitutionGRASS→DIRT. 4184/4194preflights0cuts,4196routefail0cuts allprotected. Engineer no sourceonlycertification.
+p3: P2 URGENT fresh4209 SKELETON32353(5.296,66.855,88.513) within6mofyourOW7,68,91.5! CREEPER31925(2.708,65.23,89.50). CurrentNAV_NOT_ACTUAL/CAMPfalse needsOWNER immediateexistinglocalcover/return, notdrafting. Campdoor6 physicallyclosed/read4159, no P3writerq
+p3: ueued; P1newlifeinside too. P3nothelper/mobcontrol. Seedrepairretireduntilfreshroute/threatchanges.
+--- p4 now: (-35.6, 57, 47.5) in the_nether, health 20/20, food 20/20, alive

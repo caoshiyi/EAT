@@ -1,0 +1,138 @@
+program #3904 on p4: 33.5 s
+--- output ---
+ACTUAL -52,46,81 4364
+ACTUAL -53,46,81 4918
+ACTUAL -54,47,81 6676
+ACTUAL -54,48,80 8431
+ACTUAL -55,47,80 9082
+ACTUAL -56,48,80 10833
+ACTUAL -56,49,81 12583
+ACTUAL -57,50,81 14337
+ACTUAL -57,51,80 16091
+ACTUAL -58,52,80 17842
+ACTUAL -58,53,79 19595
+ISSUE MOVE_BOUND_(-58, 54, 78) actual Vec3 { x: -57.50024947336522, y: 55, z: 78.28966584778706 }
+LOCAL_CLOSE_FAIL FLOOR
+ROLLBACK_ACTUAL true
+--- returned ---
+{
+ "p": {
+  "x": -51.50006890215526,
+  "y": 45,
+  "z": 82.3562767993949
+ },
+ "hp": 15.000000953674316,
+ "food": 17,
+ "issue": "MOVE_BOUND_(-58, 54, 78)",
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -52,
+   46,
+   81
+  ],
+  [
+   -53,
+   46,
+   81
+  ],
+  [
+   -54,
+   47,
+   81
+  ],
+  [
+   -54,
+   48,
+   80
+  ],
+  [
+   -55,
+   47,
+   80
+  ],
+  [
+   -56,
+   48,
+   80
+  ],
+  [
+   -56,
+   49,
+   81
+  ],
+  [
+   -57,
+   50,
+   81
+  ],
+  [
+   -57,
+   51,
+   80
+  ],
+  [
+   -58,
+   52,
+   80
+  ],
+  [
+   -58,
+   53,
+   79
+  ]
+ ],
+ "elapsed": 33487,
+ "controls": {},
+ "inv": [
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   64
+  ],
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   127
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   1,
+   null
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-51.5, 45, 82.4) in the_nether, health 15/20, food 17/20, alive

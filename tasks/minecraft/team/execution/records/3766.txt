@@ -1,0 +1,34 @@
+== #3766 2026-10-17T01:02:26 p1 role=lead_converter iter=9 0 s
+const{Vec3}=require('vec3');const p=bot.entity.position.floored();console.log('LOCAL',[-2,-1,0,1].flatMap(y=>[[0,0],[1,0],[-1,0],[0,1],[0,-1],[2,0],[-2,0]].map(([x,z])=>{let q=p.offset(x,y,z);return[q,bot.blockAt(q)?.name]})));console.log('STATE',p,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+LOCAL [
+  [ Vec3 { x: 34, y: 63, z: 94 }, 'coal_ore' ],
+  [ Vec3 { x: 35, y: 63, z: 94 }, 'coal_ore' ],
+  [ Vec3 { x: 33, y: 63, z: 94 }, 'stone' ],
+  [ Vec3 { x: 34, y: 63, z: 95 }, 'coal_ore' ],
+  [ Vec3 { x: 34, y: 63, z: 93 }, 'stone' ],
+  [ Vec3 { x: 36, y: 63, z: 94 }, 'stone' ],
+  [ Vec3 { x: 32, y: 63, z: 94 }, 'stone' ],
+  [ Vec3 { x: 34, y: 64, z: 94 }, 'coal_ore' ],
+  [ Vec3 { x: 35, y: 64, z: 94 }, 'coal_ore' ],
+  [ Vec3 { x: 33, y: 64, z: 94 }, 'stone' ],
+  [ Vec3 { x: 34, y: 64, z: 95 }, 'coal_ore' ],
+  [ Vec3 { x: 34, y: 64, z: 93 }, 'stone' ],
+  [ Vec3 { x: 36, y: 64, z: 94 }, 'stone' ],
+  [ Vec3 { x: 32, y: 64, z: 94 }, 'stone' ],
+  [ Vec3 { x: 34, y: 65, z: 94 }, 'air' ],
+  [ Vec3 { x: 35, y: 65, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 33, y: 65, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 65, z: 95 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 65, z: 93 }, 'dirt' ],
+  [ Vec3 { x: 36, y: 65, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 32, y: 65, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 66, z: 94 }, 'air' ],
+  [ Vec3 { x: 35, y: 66, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 33, y: 66, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 66, z: 95 }, 'dirt' ],
+  [ Vec3 { x: 34, y: 66, z: 93 }, 'dirt' ],
+  [ Vec3 { x: 36, y: 66, z: 94 }, 'dirt' ],
+  [ Vec3 { x: 32, y: 66, z: 94 }, 'dirt' ]
+]
+STATE Vec3 { x: 34, y: 65, z: 94 } [ [ 'spruce_log', 6 ], [ 'dirt', 2 ] ]

@@ -1,0 +1,4 @@
+== #3951 2026-10-17T01:27:49 p3 role=reliability_builder iter=9 0 s
+const{Vec3}=require('vec3'),a=new Vec3(72,29,112),b=new Vec3(74,29,112),cold=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/water|lava|fire|magma/.test(bot.blockAt(p).name),faces=q=>[q.offset(0,-1,0),q.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[0,1].map(y=>q.offset(x,y,z)))];if(!bot.entity.position.floored().equals(b)||!faces(a).every(cold)||!faces(b).every(cold))throw Error('OWN_TWO_CAPSULES_CHANGED');global.P3TunnelAir=[[a.x,a.y,a.z],[a.x,a.y+1,a.z],[b.x,b.y,b.z],[b.x,b.y+1,b.z]];return{full:true,p:bot.entity.position,hp:bot.health,oldOwnRoom:a};
+-- returned --
+{"full": true, "p": {"x": 74.50946388801816, "y": 29, "z": 112.49053600549738}, "hp": 20, "oldOwnRoom": {"x": 72, "y": 29, "z": 112}}

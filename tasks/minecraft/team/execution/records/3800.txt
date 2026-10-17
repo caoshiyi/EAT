@@ -1,0 +1,18 @@
+== #3800 2026-10-17T01:05:04 p2 role=acquisition_owner iter=9 0 s
+const{Vec3}=require('vec3');console.log('STATE',bot.entity.position,bot.health,bot.food,global.P2NetherStage);for(let z=-262;z>=-268;z--)console.log('ROW',z,JSON.stringify([61,62,63,64,65,66].map(y=>[y,[-318,-317,-316].map(x=>[x,bot.blockAt(new Vec3(x,y,z))?.name])])));console.log('KIT',JSON.stringify(bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])));console.log('FOES',JSON.stringify(Object.values(bot.entities).filter(e=>['piglin','magma_cube','blaze','ghast','hoglin'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<15).map(e=>[e.id,e.name,e.position,e.equipment?.[0]?.name])));
+-- output --
+STATE Vec3 { x: -316.5444643986212, y: 64, z: -261.5361699552361 } 20 20 {
+  kind: 'SURFACE_POD',
+  feet: [ -317, 64, -262 ],
+  surface: [ -317, 64, -262 ],
+  index: 620
+}
+ROW -262 [[61,[[-318,"netherrack"],[-317,"cave_air"],[-316,"cave_air"]]],[62,[[-318,"netherrack"],[-317,"netherrack"],[-316,"nether_quartz_ore"]]],[63,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[64,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[65,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[66,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]]]
+ROW -263 [[61,[[-318,"netherrack"],[-317,"netherrack"],[-316,"nether_quartz_ore"]]],[62,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[63,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[64,[[-318,"air"],[-317,"netherrack"],[-316,"air"]]],[65,[[-318,"air"],[-317,"netherrack"],[-316,"air"]]],[66,[[-318,"netherrack"],[-317,"air"],[-316,"air"]]]]
+ROW -264 [[61,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[62,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[63,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[64,[[-318,"air"],[-317,"air"],[-316,"air"]]],[65,[[-318,"air"],[-317,"air"],[-316,"air"]]],[66,[[-318,"air"],[-317,"air"],[-316,"air"]]]]
+ROW -265 [[61,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[62,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[63,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[64,[[-318,"netherrack"],[-317,"air"],[-316,"air"]]],[65,[[-318,"netherrack"],[-317,"air"],[-316,"air"]]],[66,[[-318,"netherrack"],[-317,"air"],[-316,"air"]]]]
+ROW -266 [[61,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[62,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[63,[[-318,"netherrack"],[-317,"air"],[-316,"netherrack"]]],[64,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]],[65,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]],[66,[[-318,"netherrack"],[-317,"air"],[-316,"air"]]]]
+ROW -267 [[61,[[-318,"cave_air"],[-317,"cave_air"],[-316,"cave_air"]]],[62,[[-318,"cave_air"],[-317,"cave_air"],[-316,"cave_air"]]],[63,[[-318,"cave_air"],[-317,"cave_air"],[-316,"netherrack"]]],[64,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[65,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]],[66,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]]]
+ROW -268 [[61,[[-318,"cave_air"],[-317,"cave_air"],[-316,"cave_air"]]],[62,[[-318,"cave_air"],[-317,"cave_air"],[-316,"cave_air"]]],[63,[[-318,"cave_air"],[-317,"cave_air"],[-316,"netherrack"]]],[64,[[-318,"netherrack"],[-317,"netherrack"],[-316,"netherrack"]]],[65,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]],[66,[[-318,"netherrack"],[-317,"netherrack"],[-316,"air"]]]]
+KIT [["wooden_sword",1,0],["basalt",1,null],["crafting_table",1,null],["spruce_planks",1,null],["stone_pickaxe",1,24],["wooden_pickaxe",1,28],["netherrack",19,null]]
+FOES []

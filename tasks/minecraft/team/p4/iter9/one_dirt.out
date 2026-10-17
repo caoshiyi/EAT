@@ -1,0 +1,40 @@
+program #4148 on p4: 10.1 s
+--- output ---
+DOOR_ACTUAL exit (6.587898465343062, 66.42159999847412, 79.28405420788279)
+ISSUE NO_EXACT_DIRT
+DOOR_ACTUAL enter (6.596333059990093, 67, 82.47831489995798)
+--- returned ---
+{
+ "issue": "NO_EXACT_DIRT",
+ "p": {
+  "x": 7.663642912378568,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 20,
+ "protectedEnd": true,
+ "dirt": 0,
+ "inventory": [
+  [
+   "stick",
+   1
+  ],
+  [
+   "spruce_boat",
+   1
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 4143 freshdrops NOpearl/NYLIUMonly/IRONswordwear7 FULL20HP. TwoothernearEndersalreadyangry35/39HP; no sourceattribution. NextONEloottrial fresheligibleNPC, knownDEAD28234excluded; cloneallpositions+beforeSWINGfeet/AABB distances. AddNorth/Southroof-over
+p3: hangsBEFOREheadopening (13coldheld), preserveWestfloor9; no bodyexit/newUP/lava column. Actualhurt/dead/drop/fullreadback only; no universalslitproof.
+--- p4 now: (7.7, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

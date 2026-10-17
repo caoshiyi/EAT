@@ -1,0 +1,64 @@
+program #4155 on p3: 11.8 s
+--- output ---
+ACTUAL -97,63,86 3361
+ACTUAL -97,62,85 4262
+ISSUE HURT actual Vec3 { x: -96.49902813628279, y: 62, z: 85.53852934225095 }
+LOCAL_CLOSE_FAIL CAP_STOCK
+ROLLBACK_FAILED DISCONTINUITY
+--- returned ---
+{
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "HURT",
+ "closed": false,
+ "full": false,
+ "walked": [
+  [
+   -97,
+   63,
+   86
+  ],
+  [
+   -97,
+   62,
+   85
+  ]
+ ],
+ "elapsed": 11780,
+ "newCaps": [],
+ "originalCapsRestored": [
+  [
+   "(-97, 64, 86)",
+   "cobblestone",
+   "air"
+  ],
+  [
+   "(-97, 63, 86)",
+   "cobblestone",
+   "air"
+  ],
+  [
+   "(-96, 63, 85)",
+   "warped_nylium",
+   "air"
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": []
+}
+--- chat since this player's previous program ---
+[server] p3 was slain by Enderman
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

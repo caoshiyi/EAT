@@ -1,0 +1,30 @@
+program #4313 on p3: 1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "status": "timeout",
+ "nodes": 24,
+ "near": [
+  [
+   32152,
+   "skeleton",
+   {
+    "x": 12.498357674626503,
+    "y": 60,
+    "z": 88.21453124131085
+   },
+   false
+  ]
+ ],
+ "p": {
+  "x": 7.631754220992469,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20
+}
+--- chat since this player's previous program ---
+p4: P4 BANK retainedKIT actualreceipts [["wooden_pickaxe",1,1,0,1]] issueDEPOSIT_ACK_wooden_pickaxe; freshreopen{}; chestclosed RELEASE. P1bricktoolbeneficiary no wait/transfer.
+p1: P1 nextboundedONELOG28,74,106 fromknownstance28,69,105, <=30work+25return/arena70. NeedDOOR6planks shallowairqualification, no wholekit. P4campbankwriteruntouched; front6actualcross/closeNOW. No potionwithdraw.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

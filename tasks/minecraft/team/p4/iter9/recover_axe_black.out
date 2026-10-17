@@ -1,0 +1,28 @@
+program #4130 on p4: 1.3 s
+--- output ---
+COLD_AXE_PATH partial 3
+RECOVERY_ISSUE NO_QUALIFIED_AXE_PATH
+--- returned ---
+{
+ "p": {
+  "x": 7.567309911111328,
+  "y": 67.5625,
+  "z": 83.69999990212864
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "NO_QUALIFIED_AXE_PATH",
+ "gotAxe": false,
+ "gotBlack": 0,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "inventory": [],
+ "doors": [
+  false,
+  false
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

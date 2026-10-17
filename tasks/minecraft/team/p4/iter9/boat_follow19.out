@@ -1,0 +1,231 @@
+program #4186 on p4: 18.9 s
+--- output ---
+ACTUAL -1,67,58 3064
+ACTUAL -1,66,57 3714
+ACTUAL -1,65,56 4367
+ACTUAL -2,65,56 4869
+ACTUAL -3,65,56 5467
+ACTUAL -4,65,56 5969
+ACTUAL -5,65,56 6522
+ACTUAL -6,65,56 7022
+ACTUAL -7,65,56 7524
+ACTUAL -8,65,56 8074
+ACTUAL -9,65,56 8575
+ACTUAL -10,65,56 9127
+ACTUAL -11,65,56 9629
+ACTUAL -12,65,56 10182
+ACTUAL -13,65,56 10683
+ACTUAL -14,65,56 11234
+ACTUAL -15,65,56 11645
+ACTUAL -15,65,55 12163
+ACTUAL -15,65,54 12714
+ACTUAL -15,65,53 13214
+ACTUAL -16,65,53 13716
+ACTUAL -17,65,53 14269
+ACTUAL -17,65,52 14771
+ACTUAL -17,65,51 15322
+ACTUAL -17,65,50 15823
+ACTUAL -17,65,49 16374
+ACTUAL -17,65,48 16878
+ACTUAL -18,65,48 17378
+ACTUAL -19,65,48 17929
+--- returned ---
+{
+ "p": {
+  "x": -18.50338876309386,
+  "y": 65,
+  "z": 48.50040162177087
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -1,
+   67,
+   58
+  ],
+  [
+   -1,
+   66,
+   57
+  ],
+  [
+   -1,
+   65,
+   56
+  ],
+  [
+   -2,
+   65,
+   56
+  ],
+  [
+   -3,
+   65,
+   56
+  ],
+  [
+   -4,
+   65,
+   56
+  ],
+  [
+   -5,
+   65,
+   56
+  ],
+  [
+   -6,
+   65,
+   56
+  ],
+  [
+   -7,
+   65,
+   56
+  ],
+  [
+   -8,
+   65,
+   56
+  ],
+  [
+   -9,
+   65,
+   56
+  ],
+  [
+   -10,
+   65,
+   56
+  ],
+  [
+   -11,
+   65,
+   56
+  ],
+  [
+   -12,
+   65,
+   56
+  ],
+  [
+   -13,
+   65,
+   56
+  ],
+  [
+   -14,
+   65,
+   56
+  ],
+  [
+   -15,
+   65,
+   56
+  ],
+  [
+   -15,
+   65,
+   55
+  ],
+  [
+   -15,
+   65,
+   54
+  ],
+  [
+   -15,
+   65,
+   53
+  ],
+  [
+   -16,
+   65,
+   53
+  ],
+  [
+   -17,
+   65,
+   53
+  ],
+  [
+   -17,
+   65,
+   52
+  ],
+  [
+   -17,
+   65,
+   51
+  ],
+  [
+   -17,
+   65,
+   50
+  ],
+  [
+   -17,
+   65,
+   49
+  ],
+  [
+   -17,
+   65,
+   48
+  ],
+  [
+   -18,
+   65,
+   48
+  ],
+  [
+   -19,
+   65,
+   48
+  ]
+ ],
+ "elapsed": 18881,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   9
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 SAME20HP/3DIAMONDS actualreturn940; reclaimOWNcaps toportalNorth1,65,2. Claim ONLYbufferNorth1,65/66,3+temporaryE2,65/66,4 pass/restore thenOWgate6,68,90; no P4Southcuts/helper. P3STICK8bankACKread; willwithdraw3.
+--- p4 now: (-18.5, 65, 48.5) in the_nether, health 20/20, food 20/20, alive

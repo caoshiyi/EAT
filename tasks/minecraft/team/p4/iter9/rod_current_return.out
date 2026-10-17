@@ -1,0 +1,76 @@
+program #4269 on p4: 3.2 s
+--- output ---
+ACTUAL -34,58,48 99
+ACTUAL -34,57,47 749
+ACTUAL -35,57,47 1251
+ACTUAL -36,57,47 1801
+--- returned ---
+{
+ "p": {
+  "x": -35.49348220971134,
+  "y": 57,
+  "z": 47.50594190924085
+ },
+ "hp": 17.166667938232422,
+ "food": 17,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   -34,
+   58,
+   48
+  ],
+  [
+   -34,
+   57,
+   47
+  ],
+  [
+   -35,
+   57,
+   47
+  ],
+  [
+   -36,
+   57,
+   47
+  ]
+ ],
+ "elapsed": 2752,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   24
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-35.5, 57, 47.5) in the_nether, health 17.2/20, food 17/20, alive

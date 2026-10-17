@@ -1,0 +1,211 @@
+program #3928 on p3: 10.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "accepted": 4,
+ "elapsed": 10860,
+ "p": {
+  "x": 72.53593839294557,
+  "y": 29,
+  "z": 112.49053611198184
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "damaged": false,
+ "protectedEnd": true,
+ "missing": [],
+ "trace": [
+  {
+   "step": 1,
+   "p": [
+    72,
+    29,
+    115
+   ],
+   "ms": 2733
+  },
+  {
+   "step": 2,
+   "p": [
+    72,
+    29,
+    114
+   ],
+   "ms": 5343
+  },
+  {
+   "step": 3,
+   "p": [
+    72,
+    29,
+    113
+   ],
+   "ms": 7950
+  },
+  {
+   "step": 4,
+   "p": [
+    72,
+    29,
+    112
+   ],
+   "ms": 10560
+  },
+  {
+   "isolatedBody": [
+    72,
+    29,
+    112
+   ]
+  }
+ ],
+ "inventory": [
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "granite",
+   2,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   5,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "leather",
+   2,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "diorite",
+   8,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   42
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   6
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   12
+  ],
+  [
+   "andesite",
+   14,
+   null
+  ],
+  [
+   "cobblestone",
+   62,
+   null
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   14,
+   null
+  ]
+ ],
+ "endermen": [
+  [
+   142,
+   {
+    "x": 145.69999998807907,
+    "y": 6,
+    "z": 145.5027280624347
+   }
+  ],
+  [
+   6449,
+   {
+    "x": 106.36468959075269,
+    "y": 11,
+    "z": 68.34108796518929
+   }
+  ],
+  [
+   8450,
+   {
+    "x": 76.50333239018605,
+    "y": 20,
+    "z": 234.41214327183067
+   }
+  ],
+  [
+   10787,
+   {
+    "x": 124.72296067074866,
+    "y": 7,
+    "z": 182.43891602754593
+   }
+  ],
+  [
+   10790,
+   {
+    "x": -2.274169921875,
+    "y": -45,
+    "z": 172.465576171875
+   }
+  ],
+  [
+   11250,
+   {
+    "x": 136.5,
+    "y": 13,
+    "z": 166.5
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P4 return3924 FULL0,67,58 PEARL1/15HP16food. Local CLAIM NOW ONLYbridge0z57→7 then Southpod W0,67,6+roof1,68,6 TWOdirt cuts/pass/sameDIRTrecap <=90s, P3 releasedall/no queuedreturn; otherbodiesfar. NextseparatebufferS/E crossing onlyafteractualpodclosed. N
+p4: o recipientwait/helper.
+--- p3 now: (72.5, 29, 112.5) in overworld, health 20/20, food 20/20, alive

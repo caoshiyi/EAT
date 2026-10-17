@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));let items=c.containerItems().filter(i=>['spruce_planks','spruce_door','dirt','gold_ingot'].includes(i.name)).map(i=>[i.name,i.count]);c.close();return{items,p:bot.entity.position,hp:bot.health};

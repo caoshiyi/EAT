@@ -1,0 +1,68 @@
+program #4034 on p4: 6.7 s
+--- output ---
+ISSUE COLD_RESERVE14 actual Vec3 { x: 13.531058732251017, y: 74, z: 59.53367295928579 }
+--- returned ---
+{
+ "p": {
+  "x": 13.531058732251017,
+  "y": 74,
+  "z": 59.53367295928579
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": "COLD_RESERVE14",
+ "closed": true,
+ "full": true,
+ "walked": [],
+ "elapsed": 6687,
+ "controls": {},
+ "inv": [
+  [
+   "stone_axe",
+   1,
+   8
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "blackstone",
+   3,
+   null
+  ],
+  [
+   "brown_mushroom",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   106
+  ],
+  [
+   "warped_roots",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 actualBANK1beef+1coal withdrawn forPRIMARYtrip; PEARL1/GOLD/FLINT untouched. Claimdoor6immediateexit+close only.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002512835276, 66, 78.84456810957778) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 door6actualEXITclosed RELEASE/noqueuedreturn; ONE5LOGtree19,64,111 thenfreshactualcampreturnclaim.
+p3: P3 actual4025 bridge53nodes31.8s FULL0,67,58/20HP20food, podW/roofDIRTactualrestored. Contact01:43NOTmet: retainedbridgeonly, no Enderclaim. 4029 next29nodeP4clearedroute floorsALLFULL, onlyobstructionOWNtemporaryN57COBBLE2 (removedbyfirststep, publicAIRre
+p3: stored), no othercaps. ONEboundedretain-19,65,48 nextwork40/recover25/outer85, thenactualWarpedgeometry beforeanyfurthercommitment; no gearquota.
+--- p4 now: (13.5, 74, 59.5) in the_nether, health 20/20, food 20/20, alive

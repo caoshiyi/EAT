@@ -1,0 +1,6 @@
+== #4128 2026-10-17T02:16:58 p1 role=lead_converter iter=9 0.1 s
+const{Vec3}=require('vec3');console.log('ROOT_COLUMN',JSON.stringify(Array.from({length:10},(_,i)=>{let q=new Vec3(35,65+i,111);return[q,bot.blockAt(q)?.name]})));console.log('TRUNKS',JSON.stringify(bot.findBlocks({matching:b=>b.name==='spruce_log',useExtraInfo:b=>['grass_block','dirt'].includes(bot.blockAt(b.position.offset(0,-1,0))?.name),maxDistance:15,count:10})));console.log('ANCHOR',bot.blockAt(new Vec3(36,67,111))?.name,'FEET',bot.entity.position.floored());
+-- output --
+ROOT_COLUMN [[{"x":35,"y":65,"z":111},"air"],[{"x":35,"y":66,"z":111},"air"],[{"x":35,"y":67,"z":111},"dirt"],[{"x":35,"y":68,"z":111},"air"],[{"x":35,"y":69,"z":111},"air"],[{"x":35,"y":70,"z":111},"air"],[{"x":35,"y":71,"z":111},"spruce_log"],[{"x":35,"y":72,"z":111},"spruce_log"],[{"x":35,"y":73,"z":111},"spruce_log"],[{"x":35,"y":74,"z":111},"spruce_log"]]
+TRUNKS [{"x":39,"y":68,"z":114},{"x":37,"y":67,"z":117},{"x":32,"y":66,"z":117},{"x":43,"y":67,"z":111},{"x":46,"y":70,"z":105},{"x":39,"y":64,"z":124},{"x":48,"y":69,"z":109}]
+ANCHOR dirt FEET Vec3 { x: 35, y: 65, z: 111 }

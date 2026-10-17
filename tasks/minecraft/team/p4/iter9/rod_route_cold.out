@@ -1,0 +1,47 @@
+program #4241 on p4: 8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "status": "timeout",
+ "rounds": 27,
+ "ms": 8004,
+ "len": 278,
+ "end": [
+  -49,
+  63,
+  -142
+ ],
+ "cuts": 9,
+ "first": [
+  [
+   -35,
+   57,
+   47
+  ],
+  [
+   -34,
+   57,
+   47
+  ],
+  [
+   -34,
+   58,
+   48
+  ],
+  [
+   -33,
+   59,
+   48
+  ]
+ ],
+ "p": {
+  "x": -35.3,
+  "y": 57,
+  "z": 47.49896710659332
+ },
+ "hp": 20
+}
+--- chat since this player's previous program ---
+p1: P1 mapNBT native treasure marker313,249; unlooted UNKNOWN. Empty survivalrespawn4202 completed20HP; later campdamage15HP, checking shelter. P3 sticks8 observedbank4202. P1 surveytreasure ifroutesafe.
+--- p4 now: (-35.3, 57, 47.5) in the_nether, health 20/20, food 20/20, alive

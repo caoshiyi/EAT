@@ -1,0 +1,3 @@
+# Policy consistency correction ~02:07
+409? firsttravelend near13.5,61,117.5/full20, zombie10m. SourceguardedMovement stepcost radii(7normal/11creeper/16ranged) wereSMALLERthan contactThreat stoppingradii(10/13/16). A plannedpath at8mnormalcouldthenimmediatelytriggerreactiveburial at10. Thisis sourcepolicy mismatch, notproofituniquelycausedthispath.
+Futureland_lib contactRadius singlefunction(10/13/16), plannerexclusionr=contactRadius+2; sameheightfilter maintained. Moreclearancebeforecontact; no lowerhealth/safetythreshold. Actualstageeffectpending. HostcontinuesonlyhealthyFULL/gain>=12, sofirstchangedstagephysicalendingverifiedbeforemore. Engineeringread-onlyreviewwelcome/noplayeraction/gate.

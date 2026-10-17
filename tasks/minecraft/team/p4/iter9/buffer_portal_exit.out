@@ -1,0 +1,66 @@
+program #3942 on p4: 8.3 s
+--- output ---
+BUFFER_CLOSED Vec3 { x: 4.04669793990057, y: 65, z: 4.3 } 15.000000953674316
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "transition": true,
+ "dimension": "overworld",
+ "p": {
+  "x": 7.046697939900472,
+  "y": 68,
+  "z": 91.5
+ },
+ "hp": 15.000000953674316,
+ "elapsed": 8283,
+ "inventory": [
+  [
+   "granite",
+   1
+  ],
+  [
+   "stone_axe",
+   1
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "basalt",
+   11
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   1
+  ],
+  [
+   "blackstone",
+   3
+  ],
+  [
+   "brown_mushroom",
+   1
+  ],
+  [
+   "cobblestone_slab",
+   1
+  ],
+  [
+   "ender_pearl",
+   1
+  ],
+  [
+   "warped_roots",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7, 68, 91.5) in overworld, health 15/20, food 16/20, alive

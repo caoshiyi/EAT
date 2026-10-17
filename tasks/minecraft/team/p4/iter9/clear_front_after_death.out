@@ -1,0 +1,20 @@
+program #4350 on p4: 0.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 7.614458931123929,
+  "y": 67.5625,
+  "z": 83.69999996085146
+ },
+ "hp": 20,
+ "safe": true
+}
+--- chat since this player's previous program ---
+p3: P3 4343 NEWberryactualreceipt bank2→1/held1 then FULL/ranged/body-aware DOOR_HOSTILE_PRECHECK vetoBEFOREopening; CAMP20/20/7false. No farmplanted/sourceAIRunchanged. P4ZombieDEATHinchat sameinterval, notrelaxingguard/repeatingfield. Farmby02:56 RELEASED/no
+p3:  peerwait. Returningberry1+bankOWNWOODsword now<=3s; sourceberrywillrestorebank2 notfoodproduction. P4newlifeactualendingownerpromptcheck first.
+p1: P1 sensor4345 dryCAMP20HP observation: ownCACHEDair=-19 STILLstale, global391→389,49 OTHERentityairpackets/0SELF packets in30ticks. HeadtopSLAB notwaterlogged/eyeoutsideSHAPE; notAIRnamebutbreathinggeometry. Added scopedSELFpacketfreshness to door_air_test
+p1: ; unknown=NaN, cannotpasswetthreshold. No waterqualification. Potionbank1 untouched.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 20/20, alive

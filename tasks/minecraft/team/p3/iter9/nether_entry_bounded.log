@@ -1,0 +1,108 @@
+program #3988 on p3: 12.9 s
+--- output ---
+DOOR_ACTUAL exit (6.587898684574585, 66.42159999847412, 79.28405421962728)
+NETHER_ENTRY_ISSUE APPROACH Took to long to decide path to goal!
+DOOR_ACTUAL enter (6.559002510878218, 67, 82.46570440682022)
+--- returned ---
+{
+ "phase": "APPROACH",
+ "issue": "Took to long to decide path to goal!",
+ "dead": false,
+ "lost": false,
+ "gateClosedOW": false,
+ "gateOpened": false,
+ "netherProtected": false,
+ "campProtected": true,
+ "softCuts": 0,
+ "dim": "overworld",
+ "p": {
+  "x": 6.559002510878218,
+  "y": 67.5625,
+  "z": 82.7215212702276
+ },
+ "hp": 20,
+ "food": 20,
+ "controls": {},
+ "inventory": [
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "granite",
+   2
+  ],
+  [
+   "cobblestone",
+   47
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "coal",
+   5
+  ],
+  [
+   "spruce_sapling",
+   4
+  ],
+  [
+   "leather",
+   2
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "diorite",
+   16
+  ],
+  [
+   "dirt",
+   3
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "iron_sword",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "andesite",
+   14
+  ],
+  [
+   "furnace",
+   1
+  ],
+  [
+   "cobblestone",
+   15
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P3 actual3982 body0,67,54 FULL20/20; SouthpodWhead+roofsameDIRT recapped at4.5s, actualbodyclear then (releasechatlate~26s, correction noted). Allbuffer/SouthpodwritersRELEASED now, no returnqueued. OnlycurrenttemporaryN/S0,Y67/68,Z53/55 BASALT/GRANITE cap
+p4: s isolate54; roof/Eheadrequest3019 pending beforeuppercut. Bridgeup to52 clear; willrestore53/55AIRafterUPbodyclear.
+--- p3 now: (6.6, 67.6, 82.7) in overworld, health 20/20, food 20/20, alive

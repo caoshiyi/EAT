@@ -1,0 +1,35 @@
+== #3770 2026-10-17T01:02:29 p4 role=capability_operator iter=9 12.2 s
+const {Vec3}=require('vec3');const V=a=>new Vec3(...a),began=Date.now(),home=bot.entity.position.floored(),dim=bot.game.dimension,health=bot.health;let phase='work',dead=false,issue=null,walked=[],closed=false;const f=b=>b&&b.boundingBox==='block'&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')&&!/lava|magma|fire|water/.test(b.name);const faces=p=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>p.offset(...d));const shell=p=>faces(p).every(q=>f(bot.blockAt(q)));const capNames=['dirt','granite','basalt','blackstone','cobblestone','netherrack','spruce_planks'];const held=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((n,i)=>n+i.count,0);
+const stop=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null)};bot.on('death',stop);bot.on('respawn',stop);bot.clearControlStates();bot.pathfinder.setGoal(null);
+const check=()=>{if(dead||bot.game.dimension!==dim||bot.health<=0)throw Error('DISCONTINUITY');if(Date.now()-began>(phase==='work'?30000:65000))throw Error('TIME_'+phase);if(phase==='work'&&bot.health<health)throw Error('HURT');};
+const tick=async n=>{check();await bot.waitForTicks(n);check();};
+const threat=(next=bot.entity.position.floored())=>Object.values(bot.entities).find(e=>{if(!['magma_cube','piglin','hoglin','blaze','ghast'].includes(e.name))return false;let cur=bot.entity.position,range=e.name==='ghast'?32:5;if(Math.min(e.position.distanceTo(cur),e.position.distanceTo(next))>=range)return false;for(let a of[cur,next.offset(.5,0,.5)])for(let y of[.5,1.6]){const from=a.offset(0,y,0),to=e.position.offset(0,(e.height||2)*.5,0),delta=to.minus(from);if(!bot.world.raycast(from,delta.unit(),delta.norm()))return true;}return false;});
+async function cut(q){let b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!['basalt','blackstone','granite','dirt','cobblestone','netherrack','warped_nylium','spruce_planks'].includes(b?.name))throw Error('CUT_'+b?.name);for(let d of[[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]])if(/lava|fire|magma|water|gravel|sand/.test(bot.blockAt(q.offset(...d))?.name||'null'))throw Error('CUT_HOT');let pick=bot.inventory.items().find(i=>i.name==='stone_pickaxe'&&i.durabilityUsed<122);if(!pick)throw Error('PICK_RESERVE');await bot.equip(pick,'hand');await bot.dig(b);await tick(2);if(bot.blockAt(q).boundingBox!=='empty')throw Error('CUT_ACK');}
+async function put(q){if(f(bot.blockAt(q)))return;const it=bot.inventory.items().find(i=>capNames.includes(i.name));if(!it)throw Error('CAP_STOCK');for(let d of[[0,-1,0],[0,1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]]){let r=bot.blockAt(q.offset(...d));if(f(r)){await bot.equip(it,'hand');await bot._placeBlockWithOptions(r,V(d.map(v=>-v)),{forceLook:true});await tick(2);if(!f(bot.blockAt(q)))throw Error('CAP_ACK');return;}}throw Error('CAP_REF');}
+async function close(p){let need=faces(p).filter(q=>!f(bot.blockAt(q)));if(held()<need.length)throw Error('CLOSE_NEED_'+need.length+'_HELD_'+held());for(let q of need)await put(q);return shell(p);}
+async function move(q){check();let p=bot.entity.position.floored(),dy=q.y-p.y;let t=Date.now();try{while(true){let a=bot.entity.position,dx=q.x+.5-a.x,dz=q.z+.5-a.z;if(Math.hypot(dx,dz)<.13&&Math.abs(a.y-q.y)<.08&&bot.entity.onGround)break;if(Date.now()-t>4500)throw Error('MOVE_BOUND_'+q);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');if(phase==='work'&&threat(q))throw Error('THREAT_'+threat(q).name);await bot.lookAt(new Vec3(q.x+.5,a.y+1.5,q.z+.5),true);bot.setControlState('jump',dy>0&&a.y<q.y+.05);bot.setControlState('sneak',dy>=0&&Math.hypot(dx,dz)<.7);bot.setControlState('forward',Math.hypot(dx,dz)>.1);await tick(1);}}finally{bot.clearControlStates()}await tick(2);if(!bot.entity.position.floored().equals(q)||!bot.entity.onGround)throw Error('MOVE_ACTUAL');}
+try{const plan=global.P4Route9;if(!plan||!home.equals(V(plan.origin))||!shell(home)||health<20)throw Error('START');for(let a of plan.path.slice(0,17)){check();const q=V(a),p=bot.entity.position.floored();if(threat(q))throw Error('THREAT_'+threat(q).name);if(!f(bot.blockAt(q.offset(0,-1,0))))throw Error('FLOOR');let cs=[q.offset(0,1,0),q];if(q.y>p.y)cs.unshift(p.offset(0,2,0));if(q.y<p.y)cs.unshift(q.offset(0,2,0));for(let c of cs){await cut(c);check();}if(threat(q))throw Error('THREAT_AFTER_CUT');await move(q);walked.push(a);console.log('ACTUAL',a.join(','),Date.now()-began);}
+phase='recovery';closed=await close(bot.entity.position.floored());}
+catch(e){issue=e.message;console.log('ISSUE',issue,'actual',bot.entity.position);bot.clearControlStates();phase='recovery';try{closed=await close(bot.entity.position.floored())}catch(e){console.log('LOCAL_CLOSE_FAIL',e.message);try{for(let a of walked.slice(0,-1).reverse())await move(V(a));await move(home);closed=await close(home);console.log('ROLLBACK_ACTUAL',closed)}catch(e){console.log('ROLLBACK_FAILED',e.message)}}}
+finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.deactivateItem();bot.removeListener('death',stop);bot.removeListener('respawn',stop);}
+return{p:bot.entity.position,hp:bot.health,food:bot.food,issue,closed,full:shell(bot.entity.position.floored()),walked,elapsed:Date.now()-began,controls:bot.controlState,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
+-- output --
+ACTUAL -1,66,57 2590
+ACTUAL -1,65,56 4446
+ACTUAL -2,65,56 4998
+ACTUAL -3,65,56 5500
+ACTUAL -4,65,56 6066
+ACTUAL -5,65,56 6566
+ACTUAL -6,65,56 7067
+ACTUAL -7,65,56 7667
+ACTUAL -8,65,56 8169
+ACTUAL -9,65,56 8721
+ACTUAL -10,65,56 9221
+ACTUAL -11,65,56 9773
+ACTUAL -12,65,56 10280
+ACTUAL -13,65,56 10833
+ACTUAL -14,65,56 11335
+ACTUAL -15,65,56 11835
+ISSUE THREAT_ghast actual Vec3 { x: -14.43446520111121, y: 65, z: 56.50011892614263 }
+-- returned --
+{"p": {"x": -14.455642454763533, "y": 65, "z": 56.50011892614263}, "hp": 20, "food": 20, "issue": "THREAT_ghast", "closed": true, "full": true, "walked": [[-1, 66, 57], [-1, 65, 56], [-2, 65, 56], [-3, 65, 56], [-4, 65, 56], [-5, 65, 56], [-6, 65, 56], [-7, 65, 56], [-8, 65, 56], [-9, 65, 56], [-10, 65, 56], [-11, 65, 56], [-12, 65, 56], [-13, 65, 56], [-14, 65, 56], [-15, 65, 56]], "elapsed": 12237, "controls": {}, "inv": [["stick", 2, null], ["stone_axe", 1, 3], ["stone_pickaxe", 1, 85], ["crafting_table", 1, null], ["cobblestone_slab", 1, null], ["basalt", 3, null], ["blackstone", 1, null]]}

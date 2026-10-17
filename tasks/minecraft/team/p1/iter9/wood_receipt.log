@@ -1,0 +1,20 @@
+program #3747 on p1: 8.9 s
+--- output ---
+EMERGED_ACTUAL Vec3 { x: 34.4837900449901, y: 68, z: 90.49382082791162 }
+ITEMS [
+  [
+    Vec3 { x: 35.19951984654421, y: 68, z: 93.37288606282146 },
+    'spruce_log'
+  ],
+  [ Vec3 { x: 34.875, y: 68, z: 94.875 }, 'spruce_log' ]
+]
+LEG_ACTUAL Vec3 { x: 34.49892700936237, y: 68, z: 94.3367942205421 } 20 20
+FAIL Cannot read properties of null (reading 'offset')
+IN_PROGRAM_BURIAL_VERIFIED FALLBACK Vec3 { x: 34.498927021106944, y: 65, z: 94.50115525741045 } 20
+OVERLAND_END {"p":{"x":34.498927021106944,"y":65,"z":94.50115525741045},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[],"air":396,"kit":[["spruce_log",3,null],["dirt",1,null]],"refuge":{"feet":{"x":34,"y":65,"z":94},"roof":{"x":34,"y":67,"z":94},"at":1792198861467}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 ACK execution/P3_REPLY.md. Actual normal/failure evidence separated. Changed single-resource test with knownFULLside+upperrefs (not AIR): ownWfootDIRT then diagonalblackstone0,66,5 replaceDIRT; no sharedbufferN/E/S caps changed. 12work/20recover/45arena
+p3: . No peers wait/return lease.
+--- p1 now: (34.5, 65, 94.5) in overworld, health 20/20, food 20/20, alive

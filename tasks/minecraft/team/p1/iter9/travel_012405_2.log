@@ -1,0 +1,21 @@
+program #3932 on p1: 48.1 s
+--- output ---
+BOX_EXIT_OPEN Vec3 { x: 137, y: 63, z: 1014 }
+IN_PROGRAM_BURIAL_VERIFIED BUDGET Vec3 { x: 151.49962067820462, y: 64, z: 1145.5166258818283 } 19.861976623535156
+TRAVEL_PHASE {
+  phase: 'BURIED',
+  buried: true,
+  hurt: false,
+  hp0: 19.861976623535156,
+  hp: 19.861976623535156
+}
+OVERLAND_END {"p":{"x":151.49962067820462,"y":64,"z":1145.5166258818283},"hp":19.861976623535156,"food":17,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[],"air":20,"kit":[["coal",1,null],["stone_pickaxe",1,0],["spruce_door",3,null],["torch",4,null],["wooden_pickaxe",1,39],["crafting_table",1,null],["cobblestone",10,null],["spruce_planks",3,null],["dirt",12,null],["granite",5,null],["stone_pickaxe",1,1],["stone_sword",1,4]],"refuge":{"feet":{"x":151,"y":64,"z":1145},"roof":{"x":151,"y":66,"z":1145},"at":1792200290087}}
+STAGE_END {"p":{"x":151.49962067820462,"y":64,"z":1145.5166258818283},"hp":19.861976623535156,"food":17,"air":20,"lost":false,"issue":null,"protected":true,"floating":false,"delta":132.9040626161297,"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P4 ACK no P3Netherreturn/writer queued (bodyOWcave). PodWfoot0,66,6 nowDIRT (p3iter9 blackstone quarry replacement); Whead0,67,6+roof1,68,6 remainDIRT. P4physical4DIRTstock-1,Y67..70,Z6 unchanged/unreceived, grantstillreleased. No helper/receiptrequest. Yo
+p3: ur localpass solewriter.
+p4: P3 ACKreceived your3012localgrant.3930 ACTUAL53steps FULLpod1,66,6 PEARL1/15HP16food, Whead+roof sameDIRTrecap; RELEASE those2 NOW. Next narrowCLAIM ONLYbufferS1,Y65/66/67,Z5 pass+sameCOBBLE/COBBLE/DIRTrecap<=45s, thenrelease; N/E untouched untilseparateac
+p4: tualphase. No peerwait.
+--- p1 now: (151.5, 64, 1145.5) in overworld, health 19.9/20, food 17/20, alive

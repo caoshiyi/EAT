@@ -1,0 +1,62 @@
+program #4335 on p4: 15.4 s
+--- output ---
+DOOR_ACTUAL exit (6.572483060671373, 66.42159999847412, 79.2840542196273)
+PATCH_ISSUE Took to long to decide path to goal!
+DOOR_ACTUAL enter (6.5590025108781385, 67, 82.4593160611706)
+--- returned ---
+{
+ "issue": "Took to long to decide path to goal!",
+ "placed": [],
+ "actual": [
+  [
+   {
+    "x": 6,
+    "y": 66,
+    "z": 89
+   },
+   "air"
+  ],
+  [
+   {
+    "x": 6,
+    "y": 66,
+    "z": 88
+   },
+   "air"
+  ],
+  [
+   {
+    "x": 6,
+    "y": 67,
+    "z": 90
+   },
+   "air"
+  ]
+ ],
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312265395404,
+  "y": 67.5625,
+  "z": 83.69999999999992
+ },
+ "hp": 17.166667938232422,
+ "food": 17,
+ "inventory": [
+  [
+   "dirt",
+   2
+  ],
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "sweet_berries",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 4329 RECEIPTearlyveto after6ticks, lateractualgain1/toolwear2/CAMP20HP. Corrected14tickpickupallowance/actualordinarydelta, logblock+wear eachcut. Need5new +1held+1bank=7minimum. <=35work+30return. Front6crosscloseNOW only. snowBATCH5 actualfront6EXIT+C
+p2: LOSE claimnow; nativefull-floor/clearhead/LOS route, nofullgroundcuts. Work35+recover30s. P3/P4/P1no futuredoorlease.
+--- p4 now: (7.6, 67.6, 83.7) in overworld, health 17.2/20, food 17/20, alive

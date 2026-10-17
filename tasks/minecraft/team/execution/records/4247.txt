@@ -1,0 +1,293 @@
+== #4247 2026-10-17T02:40:38 p1 role=lead_converter iter=9 0 s
+console.log('FRESH',bot.health,bot.food,bot.time.timeOfDay,bot.entity.position);console.log('ENT',Object.values(bot.entities).filter(e=>e.id!==bot.entity.id&&e.position.distanceTo(bot.entity.position)<75&&(['item','cow','pig','chicken','sheep','rabbit','cod','salmon','skeleton'].includes(e.name))).map(e=>[e.id,e.name,e.position,e.metadata]));console.log('DOORS',[6,7].map(x=>[x,bot.blockAt(bot.entity.position.floored().set(x,67,81))?.getProperties()]));const beds=bot.findBlocks({matching:b=>b.name.endsWith('_bed'),maxDistance:5,count:4});console.log('BEDS',beds);
+-- output --
+FRESH 5 17 1122 Vec3 { x: 6.499522319545675, y: 67.5625, z: 82.740769619519 }
+ENT [
+  [
+    32152,
+    'skeleton',
+    Vec3 { x: 8.978079617569636, y: 60, z: 82.48893175772953 },
+    [ 0, <7 empty items>, 0, 4, <5 empty items>, 0 ]
+  ],
+  [
+    32513,
+    'skeleton',
+    Vec3 { x: 12.498156015029396, y: 62, z: 106.74819691880442 },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    32514,
+    'skeleton',
+    Vec3 { x: 12.499414742294581, y: 62, z: 107.32230906949756 },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    32866,
+    'item',
+    Vec3 { x: 1.1560130120507845, y: 64, z: 81.90894625788336 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    32867,
+    'item',
+    Vec3 { x: 0.42365853776801893, y: 64, z: 83.125 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    32868,
+    'item',
+    Vec3 { x: 6.125, y: 60, z: 82.86332293674486 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    32869,
+    'item',
+    Vec3 { x: 4.4121379276723465, y: 61, z: 82.61762273485247 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    32870,
+    'item',
+    Vec3 { x: 1.2357202095238382, y: 64, z: 81.49380873291733 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33012,
+    'item',
+    Vec3 { x: 9.125, y: 66, z: 89.875 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33013,
+    'item',
+    Vec3 { x: 10.682427652497402, y: 66, z: 88.125 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33014,
+    'item',
+    Vec3 { x: 9.125, y: 65, z: 87.55621341452803 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33015,
+    'item',
+    Vec3 { x: 9.125, y: 65, z: 87.73327689943606 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33016,
+    'item',
+    Vec3 { x: 9.107834349324833, y: 66, z: 89.875 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33017,
+    'item',
+    Vec3 { x: 11.269887221705083, y: 65, z: 89.875 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33095,
+    'salmon',
+    Vec3 {
+      x: -45.488392058574284,
+      y: 48.90976883601914,
+      z: 99.50635688270462
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33409,
+    'skeleton',
+    Vec3 { x: 8.5, y: 65, z: 113.5 },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    33424,
+    'skeleton',
+    Vec3 { x: -16.5, y: -1, z: 83.5 },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    33425,
+    'skeleton',
+    Vec3 { x: -14.694713373560191, y: -1, z: 82.5 },
+    [ <9 empty items>, 20 ]
+  ],
+  [
+    33439,
+    'salmon',
+    Vec3 {
+      x: -50.54030875017784,
+      y: 59.675670064561274,
+      z: 64.51094082300966
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33489,
+    'salmon',
+    Vec3 {
+      x: -50.54252175118742,
+      y: 57.925703982763245,
+      z: 64.54543805088387
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33511,
+    'item',
+    Vec3 { x: 10.125, y: 66, z: 88.125 },
+    [ <8 empty items>, [Object] ]
+  ],
+  [
+    33536,
+    'salmon',
+    Vec3 { x: -45.48876953125, y: 48, z: 99.4287109375 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33546,
+    'salmon',
+    Vec3 { x: -54.86572265625, y: 53.10888671875, z: 84.0908203125 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33617,
+    'salmon',
+    Vec3 { x: -32.833740234375, y: 57.60986328125, z: 50.833984375 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33618,
+    'salmon',
+    Vec3 {
+      x: -32.51862671182123,
+      y: 57.106201171875,
+      z: 49.51842036627524
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33641,
+    'salmon',
+    Vec3 { x: -46.264404296875, y: 48, z: 99.510498046875 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33655,
+    'salmon',
+    Vec3 { x: -49.35009765625, y: 62.2744140625, z: 76.16162109375 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33656,
+    'salmon',
+    Vec3 { x: -50.670654296875, y: 62.25341796875, z: 76.092041015625 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33657,
+    'salmon',
+    Vec3 { x: -49.20947265625, y: 61.5390625, z: 76.6171875 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33658,
+    'salmon',
+    Vec3 {
+      x: -49.361572265625,
+      y: 61.955810546875,
+      z: 77.327392578125
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33693,
+    'salmon',
+    Vec3 { x: -22.5, y: 61.143798828125, z: 52.21728515625 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33694,
+    'salmon',
+    Vec3 { x: -22.47998046875, y: 59.652099609375, z: 52.4853515625 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33695,
+    'salmon',
+    Vec3 { x: -29.03857421875, y: 56.04150390625, z: 60.84423828125 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33696,
+    'salmon',
+    Vec3 { x: -29.6630859375, y: 55.320556640625, z: 59.62841796875 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33714,
+    'salmon',
+    Vec3 { x: -32.48821953573396, y: 55, z: 34.321435540914536 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33721,
+    'salmon',
+    Vec3 { x: -31.01708984375, y: 60.98876953125, z: 38.5 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33729,
+    'salmon',
+    Vec3 {
+      x: -51.436767578125,
+      y: 56.039794921875,
+      z: 91.898681640625
+    },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33730,
+    'salmon',
+    Vec3 { x: -52.4931640625, y: 54.962646484375, z: 90.9658203125 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33731,
+    'salmon',
+    Vec3 { x: -50.684814453125, y: 54.793701171875, z: 90.34033203125 },
+    [ <9 empty items>, 3 ]
+  ],
+  [
+    33732,
+    'salmon',
+    Vec3 { x: -53.397705078125, y: 58.10498046875, z: 90.397705078125 },
+    [ <9 empty items>, 3 ]
+  ]
+]
+DOORS [
+  [
+    6,
+    {
+      powered: false,
+      open: false,
+      hinge: 'left',
+      half: 'lower',
+      facing: 'north'
+    }
+  ],
+  [
+    7,
+    {
+      powered: false,
+      open: false,
+      hinge: 'right',
+      half: 'lower',
+      facing: 'north'
+    }
+  ]
+]
+BEDS [ Vec3 { x: 6, y: 67, z: 83 }, Vec3 { x: 7, y: 67, z: 83 } ]

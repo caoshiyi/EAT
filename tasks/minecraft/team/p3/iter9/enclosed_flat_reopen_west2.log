@@ -1,0 +1,185 @@
+program #3952 on p3: 4.6 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "accepted": 2,
+ "elapsed": 4567,
+ "p": {
+  "x": 72.49053611198184,
+  "y": 29,
+  "z": 112.49053610884961
+ },
+ "hp": 20,
+ "food": 20,
+ "lost": false,
+ "damaged": false,
+ "protectedEnd": true,
+ "missing": [],
+ "trace": [
+  {
+   "step": 1,
+   "p": [
+    73,
+    29,
+    112
+   ],
+   "ms": 3163
+  },
+  {
+   "step": 2,
+   "p": [
+    72,
+    29,
+    112
+   ],
+   "ms": 4267
+  },
+  {
+   "isolatedBody": [
+    72,
+    29,
+    112
+   ]
+  }
+ ],
+ "inventory": [
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "granite",
+   2,
+   null
+  ],
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   5,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "leather",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   6
+  ],
+  [
+   "diorite",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   129
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   49
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "iron_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   12
+  ],
+  [
+   "andesite",
+   14,
+   null
+  ],
+  [
+   "cobblestone",
+   61,
+   null
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   15,
+   null
+  ]
+ ],
+ "endermen": [
+  [
+   142,
+   {
+    "x": 145.69999998807907,
+    "y": 6,
+    "z": 145.5027280624347
+   }
+  ],
+  [
+   6449,
+   {
+    "x": 93.56050260751452,
+    "y": 11,
+    "z": 50.6968162110615
+   }
+  ],
+  [
+   8450,
+   {
+    "x": 76.50410157442093,
+    "y": 20,
+    "z": 237.70003704194076
+   }
+  ],
+  [
+   10787,
+   {
+    "x": 127.27128322096783,
+    "y": 7,
+    "z": 185.50142478607634
+   }
+  ],
+  [
+   12801,
+   {
+    "x": 5.707001775908438,
+    "y": -11,
+    "z": 161.4902284414061
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: P3 GRANT NOW myLOWER owncaps/clearedroute publicSouthbridge→0,67,58→-19,65,48→-36,57,47→-46,58,55→LOWpods(-52,45/36/34,82) /(-51,34,82), pass+same-materialrecap/no P4queuedLOWreturn. 304 DEAD; lowcliffNOTfarm/Enderavailability unproved, lava31nearfoot. My 
+p4: nextUPPERdifferentground route only. Sharedportalclaimfreshlocal; no wait/helper.
+--- p3 now: (72.5, 29, 112.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,15 @@
+program #4099 on p1: 24.7 s
+--- output ---
+EMERGED_ACTUAL Vec3 { x: 23.49973792639878, y: 68, z: 96.49183747219223 }
+IN_PROGRAM_BURIAL_VERIFIED PROXIMITY_zombie Vec3 { x: 13.507209950003555, y: 61, z: 117.47851328688388 } 20
+TRAVEL_PHASE { phase: 'BURIED', buried: true, hurt: false, hp0: 20, hp: 20 }
+OVERLAND_END {"p":{"x":13.507209950003555,"y":61,"z":117.47851328688388},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"grounded":true,"foes":[["zombie",10.158056644101114],["skeleton",26.03104326422963]],"air":399,"selfAir":{"raw":300,"icons":20},"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"kit":[["spruce_sapling",1,null],["torch",4,null],["spruce_door",3,null],["cooked_beef",1,null],["crafting_table",1,null],["cobblestone",2,null],["spruce_planks",1,null],["wooden_pickaxe",1,12],["stone_pickaxe",1,18],["stone_sword",1,6],["dirt",28,null],["stone_pickaxe",1,1]],"refuge":{"feet":{"x":13,"y":61,"z":117},"roof":{"x":13,"y":63,"z":117},"at":1792202747985}}
+STAGE_END {"p":{"x":13.507209950003555,"y":61,"z":117.47851328688388},"hp":20,"food":20,"air":399,"lost":false,"issue":null,"protected":true,"floating":false,"delta":23.585825766972942,"foes":[["zombie",10.158056644101114],["skeleton",26.03104326422963]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 4088 work80deadline fired after58actualnodes, sameprogramclosedactual-93,59,78 FULL20HP/20food81.7s vsouter125; recoverybranchactualPASS, goalNOTreached.2nativeBASALTbodycellsstillAIR whileoccupied, WestheadnewCOBBLE1. Last13qualifiedsteps separatework4
+p3: 5/recover25/90outer; restoreoldbody2BASALTafterclear/removeownheadCOBBLE→AIR. Freshcontact afterplatform, no timeoutinflation/universalclaim.
+p4: P3 UPPERretired:4062 failedlonggoto+ending,4071 actualFULLrepair20HP;4092 manual23steps retainedFULL0,67,58 20/20. Returningportal viaownN57handcuts (savepick129last2uses forSCOBBLE2), sameDIRTpodW/roof recap. No queuedLOWroute afterOW. Alternativeunmounte
+p4: dBOATtrap, notriding; willverifyrecipe/placement/passengermechanics beforeclaim. BankPEARL1 unchanged.
+--- p1 now: (13.5, 61, 117.5) in overworld, health 20/20, food 20/20, alive

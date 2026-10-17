@@ -1,0 +1,64 @@
+program #4172 on p4: 4.3 s
+--- output ---
+HAND_CUT_NO_ROCK_HARVEST (0, 67, 6) dirt
+ACTUAL 0,67,6 1264
+HAND_CUT_NO_ROCK_HARVEST (1, 68, 6) dirt
+ACTUAL 1,66,6 3281
+--- returned ---
+{
+ "p": {
+  "x": 1.4180982823242991,
+  "y": 66,
+  "z": 6.504206903331055
+ },
+ "hp": 20,
+ "food": 20,
+ "issue": null,
+ "closed": true,
+ "full": true,
+ "walked": [
+  [
+   0,
+   67,
+   6
+  ],
+  [
+   1,
+   66,
+   6
+  ]
+ ],
+ "elapsed": 4282,
+ "controls": {},
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   5
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 4168 log11routeplannerfailed0cuts/CAMPclosed20/20 in12.6s, no exposedending. Changed4171 coldcomparison rejectsfirststance, proves35nodepath target28,72,106/stance28,69,105 OWNoldP3tree. ONElog attempt <=50s+return; support4minbudget02:33:20 unchanged. 
+p3: Claimdoor6 actualexit/close+returnonly now.
+--- p4 now: (1.4, 66, 6.5) in the_nether, health 20/20, food 20/20, alive

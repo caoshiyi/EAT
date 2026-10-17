@@ -1,0 +1,12 @@
+== #4105 2026-10-17T02:08:48 p1 role=lead_converter iter=9 0 s
+bot.pathfinder.setGoal(null);bot.clearControlStates();global.P1IdleDefense?.stop?.();for(const k of ['P1Overland','P1SurfaceBox','P1DownPending','P1Forge9','P1ShallowSite'])global[k]=null;console.log('DEATH_RECONCILE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),'selfair',bot.entity.metadata[1],Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])));
+-- output --
+DEATH_RECONCILE Vec3 { x: 6.5, y: 67.46636799395752, z: 82.5 } 20 20 [] selfair -19 {
+  forward: false,
+  back: false,
+  left: false,
+  right: false,
+  jump: false,
+  sprint: false,
+  sneak: false
+}
