@@ -1,0 +1,103 @@
+program #7955 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "visibleRays": [],
+ "p": {
+  "x": 128.4051838727656,
+  "y": -36,
+  "z": 2272.499829837034
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "dim": "overworld",
+ "onGround": true,
+ "velocity": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "controls": {},
+ "goal": null,
+ "inv": [
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "local": [
+  [
+   [
+    128,
+    -37,
+    2272
+   ],
+   "basalt",
+   [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  ],
+  [
+   [
+    128,
+    -36,
+    2272
+   ],
+   "air",
+   []
+  ],
+  [
+   [
+    128,
+    -35,
+    2272
+   ],
+   "air",
+   "[repeated reference]"
+  ],
+  [
+   [
+    128,
+    -34,
+    2272
+   ],
+   "deepslate",
+   "[repeated reference]"
+  ]
+ ],
+ "near": [
+  [
+   "spider",
+   {
+    "x": 140.51054686307907,
+    "y": -37.89997812271118,
+    "z": 2262.6999387050114
+   }
+  ],
+  [
+   "zombie",
+   {
+    "x": 124.74519165186749,
+    "y": -38,
+    "z": 2256.5338361418108
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (128.4, -36, 2272.5) in overworld, health 11.5/20, food 9/20, alive

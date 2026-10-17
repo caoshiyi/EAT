@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');const a=[];for(const p of [[18,8,63],[18,9,63],[17,8,64],[17,9,64],[18,7,64],[18,10,64]]){let b=bot.blockAt(new Vec3(...p));a.push([p,b?.name,b?.shapes]);}return{p:bot.entity.position,hp:bot.health,food:bot.food,a};

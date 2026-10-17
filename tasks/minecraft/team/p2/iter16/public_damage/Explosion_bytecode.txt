@@ -1,0 +1,1225 @@
+Compiled from "SourceFile"
+public class cth {
+  private static final cti a;
+
+  private static final int b;
+
+  private final boolean c;
+
+  private final cth$a d;
+
+  private final auv e;
+
+  private final ctp f;
+
+  private final double g;
+
+  private final double h;
+
+  private final double i;
+
+  private final blv j;
+
+  private final float k;
+
+  private final bkt l;
+
+  private final cti m;
+
+  private final jv n;
+
+  private final jv o;
+
+  private final arr p;
+
+  private final it.unimi.dsi.fastutil.objects.ObjectArrayList<hx> q;
+
+  private final java.util.Map<cfi, elt> r;
+
+  public static bkt a(ctp, blv);
+    Code:
+       0: aload_0
+       1: invokevirtual #65                 // Method ctp.ai:()Lbku;
+       4: aload_1
+       5: aload_1
+       6: invokestatic  #68                 // Method b:(Lblv;)Lbml;
+       9: invokevirtual #73                 // Method bku.d:(Lblv;Lblv;)Lbkt;
+      12: areturn
+
+  public cth(ctp, blv, double, double, double, float, java.util.List<hx>, cth$a, jv, jv, arr);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_1
+       4: aload_2
+       5: invokestatic  #80                 // Method a:(Lctp;Lblv;)Lbkt;
+       8: aconst_null
+       9: dload_3
+      10: dload         5
+      12: dload         7
+      14: fload         9
+      16: iconst_0
+      17: aload         11
+      19: aload         12
+      21: aload         13
+      23: aload         14
+      25: invokespecial #83                 // Method "<init>":(Lctp;Lblv;Lbkt;Lcti;DDDFZLcth$a;Ljv;Ljv;Larr;)V
+      28: aload_0
+      29: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+      32: aload         10
+      34: invokevirtual #91                 // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.addAll:(Ljava/util/Collection;)Z
+      37: pop
+      38: return
+
+  public cth(ctp, blv, double, double, double, float, boolean, cth$a, java.util.List<hx>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: dload_3
+       4: dload         5
+       6: dload         7
+       8: fload         9
+      10: iload         10
+      12: aload         11
+      14: invokespecial #109                // Method "<init>":(Lctp;Lblv;DDDFZLcth$a;)V
+      17: aload_0
+      18: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+      21: aload         12
+      23: invokevirtual #91                 // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.addAll:(Ljava/util/Collection;)Z
+      26: pop
+      27: return
+
+  public cth(ctp, blv, double, double, double, float, boolean, cth$a);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_1
+       4: aload_2
+       5: invokestatic  #80                 // Method a:(Lctp;Lblv;)Lbkt;
+       8: aconst_null
+       9: dload_3
+      10: dload         5
+      12: dload         7
+      14: fload         9
+      16: iload         10
+      18: aload         11
+      20: getstatic     #115                // Field jx.x:Lka;
+      23: getstatic     #118                // Field jx.w:Lka;
+      26: getstatic     #123                // Field ars.jA:Larr;
+      29: invokespecial #83                 // Method "<init>":(Lctp;Lblv;Lbkt;Lcti;DDDFZLcth$a;Ljv;Ljv;Larr;)V
+      32: return
+
+  public cth(ctp, blv, bkt, cti, double, double, double, float, boolean, cth$a, jv, jv, arr);
+    Code:
+       0: aload_0
+       1: invokespecial #126                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #131                // InterfaceMethod auv.a:()Lauv;
+       8: putfield      #133                // Field e:Lauv;
+      11: aload_0
+      12: new           #87                 // class it/unimi/dsi/fastutil/objects/ObjectArrayList
+      15: dup
+      16: invokespecial #134                // Method it/unimi/dsi/fastutil/objects/ObjectArrayList."<init>":()V
+      19: putfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+      22: aload_0
+      23: invokestatic  #140                // Method com/google/common/collect/Maps.newHashMap:()Ljava/util/HashMap;
+      26: putfield      #142                // Field r:Ljava/util/Map;
+      29: aload_0
+      30: aload_1
+      31: putfield      #144                // Field f:Lctp;
+      34: aload_0
+      35: aload_2
+      36: putfield      #146                // Field j:Lblv;
+      39: aload_0
+      40: fload         11
+      42: putfield      #148                // Field k:F
+      45: aload_0
+      46: dload         5
+      48: putfield      #150                // Field g:D
+      51: aload_0
+      52: dload         7
+      54: putfield      #152                // Field h:D
+      57: aload_0
+      58: dload         9
+      60: putfield      #154                // Field i:D
+      63: aload_0
+      64: iload         12
+      66: putfield      #156                // Field c:Z
+      69: aload_0
+      70: aload         13
+      72: putfield      #158                // Field d:Lcth$a;
+      75: aload_0
+      76: aload_3
+      77: ifnonnull     91
+      80: aload_1
+      81: invokevirtual #65                 // Method ctp.ai:()Lbku;
+      84: aload_0
+      85: invokevirtual #161                // Method bku.a:(Lcth;)Lbkt;
+      88: goto          92
+      91: aload_3
+      92: putfield      #173                // Field l:Lbkt;
+      95: aload_0
+      96: aload         4
+      98: ifnonnull     109
+     101: aload_0
+     102: aload_2
+     103: invokevirtual #176                // Method a:(Lblv;)Lcti;
+     106: goto          111
+     109: aload         4
+     111: putfield      #178                // Field m:Lcti;
+     114: aload_0
+     115: aload         14
+     117: putfield      #180                // Field n:Ljv;
+     120: aload_0
+     121: aload         15
+     123: putfield      #182                // Field o:Ljv;
+     126: aload_0
+     127: aload         16
+     129: putfield      #184                // Field p:Larr;
+     132: return
+
+  private cti a(blv);
+    Code:
+       0: aload_1
+       1: ifnonnull     10
+       4: getstatic     #188                // Field a:Lcti;
+       7: goto          18
+      10: new           #190                // class ctf
+      13: dup
+      14: aload_1
+      15: invokespecial #193                // Method ctf."<init>":(Lblv;)V
+      18: areturn
+
+  public static float a(elt, blv);
+    Code:
+       0: aload_1
+       1: invokevirtual #198                // Method blv.cH:()Lelo;
+       4: astore_2
+       5: dconst_1
+       6: aload_2
+       7: getfield      #202                // Field elo.d:D
+      10: aload_2
+      11: getfield      #204                // Field elo.a:D
+      14: dsub
+      15: ldc2_w        #205                // double 2.0d
+      18: dmul
+      19: dconst_1
+      20: dadd
+      21: ddiv
+      22: dstore_3
+      23: dconst_1
+      24: aload_2
+      25: getfield      #208                // Field elo.e:D
+      28: aload_2
+      29: getfield      #210                // Field elo.b:D
+      32: dsub
+      33: ldc2_w        #205                // double 2.0d
+      36: dmul
+      37: dconst_1
+      38: dadd
+      39: ddiv
+      40: dstore        5
+      42: dconst_1
+      43: aload_2
+      44: getfield      #212                // Field elo.f:D
+      47: aload_2
+      48: getfield      #214                // Field elo.c:D
+      51: dsub
+      52: ldc2_w        #205                // double 2.0d
+      55: dmul
+      56: dconst_1
+      57: dadd
+      58: ddiv
+      59: dstore        7
+      61: dconst_1
+      62: dconst_1
+      63: dload_3
+      64: ddiv
+      65: invokestatic  #220                // Method java/lang/Math.floor:(D)D
+      68: dload_3
+      69: dmul
+      70: dsub
+      71: ldc2_w        #205                // double 2.0d
+      74: ddiv
+      75: dstore        9
+      77: dconst_1
+      78: dconst_1
+      79: dload         7
+      81: ddiv
+      82: invokestatic  #220                // Method java/lang/Math.floor:(D)D
+      85: dload         7
+      87: dmul
+      88: dsub
+      89: ldc2_w        #205                // double 2.0d
+      92: ddiv
+      93: dstore        11
+      95: dload_3
+      96: dconst_0
+      97: dcmpg
+      98: iflt          115
+     101: dload         5
+     103: dconst_0
+     104: dcmpg
+     105: iflt          115
+     108: dload         7
+     110: dconst_0
+     111: dcmpg
+     112: ifge          117
+     115: fconst_0
+     116: freturn
+     117: iconst_0
+     118: istore        13
+     120: iconst_0
+     121: istore        14
+     123: dconst_0
+     124: dstore        15
+     126: dload         15
+     128: dconst_1
+     129: dcmpg
+     130: ifgt          287
+     133: dconst_0
+     134: dstore        17
+     136: dload         17
+     138: dconst_1
+     139: dcmpg
+     140: ifgt          278
+     143: dconst_0
+     144: dstore        19
+     146: dload         19
+     148: dconst_1
+     149: dcmpg
+     150: ifgt          268
+     153: dload         15
+     155: aload_2
+     156: getfield      #204                // Field elo.a:D
+     159: aload_2
+     160: getfield      #202                // Field elo.d:D
+     163: invokestatic  #227                // Method auo.d:(DDD)D
+     166: dstore        21
+     168: dload         17
+     170: aload_2
+     171: getfield      #210                // Field elo.b:D
+     174: aload_2
+     175: getfield      #208                // Field elo.e:D
+     178: invokestatic  #227                // Method auo.d:(DDD)D
+     181: dstore        23
+     183: dload         19
+     185: aload_2
+     186: getfield      #214                // Field elo.c:D
+     189: aload_2
+     190: getfield      #212                // Field elo.f:D
+     193: invokestatic  #227                // Method auo.d:(DDD)D
+     196: dstore        25
+     198: new           #222                // class elt
+     201: dup
+     202: dload         21
+     204: dload         9
+     206: dadd
+     207: dload         23
+     209: dload         25
+     211: dload         11
+     213: dadd
+     214: invokespecial #230                // Method elt."<init>":(DDD)V
+     217: astore        27
+     219: aload_1
+     220: invokevirtual #234                // Method blv.dM:()Lctp;
+     223: new           #12                 // class csy
+     226: dup
+     227: aload         27
+     229: aload_0
+     230: getstatic     #237                // Field csy$a.a:Lcsy$a;
+     233: getstatic     #240                // Field csy$b.a:Lcsy$b;
+     236: aload_1
+     237: invokespecial #243                // Method csy."<init>":(Lelt;Lelt;Lcsy$a;Lcsy$b;Lblv;)V
+     240: invokevirtual #246                // Method ctp.a:(Lcsy;)Lelp;
+     243: invokevirtual #251                // Method elp.c:()Lelr$a;
+     246: getstatic     #254                // Field elr$a.a:Lelr$a;
+     249: if_acmpne     255
+     252: iinc          13, 1
+     255: iinc          14, 1
+     258: dload         19
+     260: dload         7
+     262: dadd
+     263: dstore        19
+     265: goto          146
+     268: dload         17
+     270: dload         5
+     272: dadd
+     273: dstore        17
+     275: goto          136
+     278: dload         15
+     280: dload_3
+     281: dadd
+     282: dstore        15
+     284: goto          126
+     287: iload         13
+     289: i2f
+     290: iload         14
+     292: i2f
+     293: fdiv
+     294: freturn
+
+  public float a();
+    Code:
+       0: aload_0
+       1: getfield      #148                // Field k:F
+       4: freturn
+
+  public elt b();
+    Code:
+       0: new           #222                // class elt
+       3: dup
+       4: aload_0
+       5: getfield      #150                // Field g:D
+       8: aload_0
+       9: getfield      #152                // Field h:D
+      12: aload_0
+      13: getfield      #154                // Field i:D
+      16: invokespecial #230                // Method elt."<init>":(DDD)V
+      19: areturn
+
+  public void c();
+    Code:
+       0: aload_0
+       1: getfield      #144                // Field f:Lctp;
+       4: aload_0
+       5: getfield      #146                // Field j:Lblv;
+       8: getstatic     #267                // Field dnr.w:Ldnr;
+      11: new           #222                // class elt
+      14: dup
+      15: aload_0
+      16: getfield      #150                // Field g:D
+      19: aload_0
+      20: getfield      #152                // Field h:D
+      23: aload_0
+      24: getfield      #154                // Field i:D
+      27: invokespecial #230                // Method elt."<init>":(DDD)V
+      30: invokevirtual #270                // Method ctp.a:(Lblv;Ldnr;Lelt;)V
+      33: invokestatic  #276                // Method com/google/common/collect/Sets.newHashSet:()Ljava/util/HashSet;
+      36: astore_1
+      37: bipush        16
+      39: istore_2
+      40: iconst_0
+      41: istore_3
+      42: iload_3
+      43: bipush        16
+      45: if_icmpge     445
+      48: iconst_0
+      49: istore        4
+      51: iload         4
+      53: bipush        16
+      55: if_icmpge     439
+      58: iconst_0
+      59: istore        5
+      61: iload         5
+      63: bipush        16
+      65: if_icmpge     433
+      68: iload_3
+      69: ifeq          105
+      72: iload_3
+      73: bipush        15
+      75: if_icmpeq     105
+      78: iload         4
+      80: ifeq          105
+      83: iload         4
+      85: bipush        15
+      87: if_icmpeq     105
+      90: iload         5
+      92: ifeq          105
+      95: iload         5
+      97: bipush        15
+      99: if_icmpeq     105
+     102: goto          427
+     105: iload_3
+     106: i2f
+     107: ldc_w         #279                // float 15.0f
+     110: fdiv
+     111: fconst_2
+     112: fmul
+     113: fconst_1
+     114: fsub
+     115: f2d
+     116: dstore        6
+     118: iload         4
+     120: i2f
+     121: ldc_w         #279                // float 15.0f
+     124: fdiv
+     125: fconst_2
+     126: fmul
+     127: fconst_1
+     128: fsub
+     129: f2d
+     130: dstore        8
+     132: iload         5
+     134: i2f
+     135: ldc_w         #279                // float 15.0f
+     138: fdiv
+     139: fconst_2
+     140: fmul
+     141: fconst_1
+     142: fsub
+     143: f2d
+     144: dstore        10
+     146: dload         6
+     148: dload         6
+     150: dmul
+     151: dload         8
+     153: dload         8
+     155: dmul
+     156: dadd
+     157: dload         10
+     159: dload         10
+     161: dmul
+     162: dadd
+     163: invokestatic  #282                // Method java/lang/Math.sqrt:(D)D
+     166: dstore        12
+     168: dload         6
+     170: dload         12
+     172: ddiv
+     173: dstore        6
+     175: dload         8
+     177: dload         12
+     179: ddiv
+     180: dstore        8
+     182: dload         10
+     184: dload         12
+     186: ddiv
+     187: dstore        10
+     189: aload_0
+     190: getfield      #148                // Field k:F
+     193: ldc_w         #283                // float 0.7f
+     196: aload_0
+     197: getfield      #144                // Field f:Lctp;
+     200: getfield      #286                // Field ctp.z:Lauv;
+     203: invokeinterface #288,  1          // InterfaceMethod auv.i:()F
+     208: ldc_w         #289                // float 0.6f
+     211: fmul
+     212: fadd
+     213: fmul
+     214: fstore        14
+     216: aload_0
+     217: getfield      #150                // Field g:D
+     220: dstore        15
+     222: aload_0
+     223: getfield      #152                // Field h:D
+     226: dstore        17
+     228: aload_0
+     229: getfield      #154                // Field i:D
+     232: dstore        19
+     234: ldc_w         #290                // float 0.3f
+     237: fstore        21
+     239: fload         14
+     241: fconst_0
+     242: fcmpl
+     243: ifle          427
+     246: dload         15
+     248: dload         17
+     250: dload         19
+     252: invokestatic  #295                // Method hx.a:(DDD)Lhx;
+     255: astore        22
+     257: aload_0
+     258: getfield      #144                // Field f:Lctp;
+     261: aload         22
+     263: invokevirtual #299                // Method ctp.a_:(Lhx;)Ldjh;
+     266: astore        23
+     268: aload_0
+     269: getfield      #144                // Field f:Lctp;
+     272: aload         22
+     274: invokevirtual #303                // Method ctp.b_:(Lhx;)Leer;
+     277: astore        24
+     279: aload_0
+     280: getfield      #144                // Field f:Lctp;
+     283: aload         22
+     285: invokevirtual #306                // Method ctp.k:(Lhx;)Z
+     288: ifne          294
+     291: goto          427
+     294: aload_0
+     295: getfield      #178                // Field m:Lcti;
+     298: aload_0
+     299: aload_0
+     300: getfield      #144                // Field f:Lctp;
+     303: aload         22
+     305: aload         23
+     307: aload         24
+     309: invokevirtual #313                // Method cti.a:(Lcth;Lcsv;Lhx;Ldjh;Leer;)Ljava/util/Optional;
+     312: astore        25
+     314: aload         25
+     316: invokevirtual #319                // Method java/util/Optional.isPresent:()Z
+     319: ifeq          346
+     322: fload         14
+     324: aload         25
+     326: invokevirtual #323                // Method java/util/Optional.get:()Ljava/lang/Object;
+     329: checkcast     #325                // class java/lang/Float
+     332: invokevirtual #328                // Method java/lang/Float.floatValue:()F
+     335: ldc_w         #290                // float 0.3f
+     338: fadd
+     339: ldc_w         #290                // float 0.3f
+     342: fmul
+     343: fsub
+     344: fstore        14
+     346: fload         14
+     348: fconst_0
+     349: fcmpl
+     350: ifle          383
+     353: aload_0
+     354: getfield      #178                // Field m:Lcti;
+     357: aload_0
+     358: aload_0
+     359: getfield      #144                // Field f:Lctp;
+     362: aload         22
+     364: aload         23
+     366: fload         14
+     368: invokevirtual #331                // Method cti.a:(Lcth;Lcsv;Lhx;Ldjh;F)Z
+     371: ifeq          383
+     374: aload_1
+     375: aload         22
+     377: invokeinterface #337,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     382: pop
+     383: dload         15
+     385: dload         6
+     387: ldc2_w        #338                // double 0.30000001192092896d
+     390: dmul
+     391: dadd
+     392: dstore        15
+     394: dload         17
+     396: dload         8
+     398: ldc2_w        #338                // double 0.30000001192092896d
+     401: dmul
+     402: dadd
+     403: dstore        17
+     405: dload         19
+     407: dload         10
+     409: ldc2_w        #338                // double 0.30000001192092896d
+     412: dmul
+     413: dadd
+     414: dstore        19
+     416: fload         14
+     418: ldc_w         #340                // float 0.22500001f
+     421: fsub
+     422: fstore        14
+     424: goto          239
+     427: iinc          5, 1
+     430: goto          61
+     433: iinc          4, 1
+     436: goto          51
+     439: iinc          3, 1
+     442: goto          42
+     445: aload_0
+     446: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+     449: aload_1
+     450: invokevirtual #91                 // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.addAll:(Ljava/util/Collection;)Z
+     453: pop
+     454: aload_0
+     455: getfield      #148                // Field k:F
+     458: fconst_2
+     459: fmul
+     460: fstore_3
+     461: aload_0
+     462: getfield      #150                // Field g:D
+     465: fload_3
+     466: f2d
+     467: dsub
+     468: dconst_1
+     469: dsub
+     470: invokestatic  #343                // Method auo.a:(D)I
+     473: istore        4
+     475: aload_0
+     476: getfield      #150                // Field g:D
+     479: fload_3
+     480: f2d
+     481: dadd
+     482: dconst_1
+     483: dadd
+     484: invokestatic  #343                // Method auo.a:(D)I
+     487: istore        5
+     489: aload_0
+     490: getfield      #152                // Field h:D
+     493: fload_3
+     494: f2d
+     495: dsub
+     496: dconst_1
+     497: dsub
+     498: invokestatic  #343                // Method auo.a:(D)I
+     501: istore        6
+     503: aload_0
+     504: getfield      #152                // Field h:D
+     507: fload_3
+     508: f2d
+     509: dadd
+     510: dconst_1
+     511: dadd
+     512: invokestatic  #343                // Method auo.a:(D)I
+     515: istore        7
+     517: aload_0
+     518: getfield      #154                // Field i:D
+     521: fload_3
+     522: f2d
+     523: dsub
+     524: dconst_1
+     525: dsub
+     526: invokestatic  #343                // Method auo.a:(D)I
+     529: istore        8
+     531: aload_0
+     532: getfield      #154                // Field i:D
+     535: fload_3
+     536: f2d
+     537: dadd
+     538: dconst_1
+     539: dadd
+     540: invokestatic  #343                // Method auo.a:(D)I
+     543: istore        9
+     545: aload_0
+     546: getfield      #144                // Field f:Lctp;
+     549: aload_0
+     550: getfield      #146                // Field j:Lblv;
+     553: new           #200                // class elo
+     556: dup
+     557: iload         4
+     559: i2d
+     560: iload         6
+     562: i2d
+     563: iload         8
+     565: i2d
+     566: iload         5
+     568: i2d
+     569: iload         7
+     571: i2d
+     572: iload         9
+     574: i2d
+     575: invokespecial #346                // Method elo."<init>":(DDDDDD)V
+     578: invokevirtual #349                // Method ctp.a_:(Lblv;Lelo;)Ljava/util/List;
+     581: astore        10
+     583: new           #222                // class elt
+     586: dup
+     587: aload_0
+     588: getfield      #150                // Field g:D
+     591: aload_0
+     592: getfield      #152                // Field h:D
+     595: aload_0
+     596: getfield      #154                // Field i:D
+     599: invokespecial #230                // Method elt."<init>":(DDD)V
+     602: astore        11
+     604: aload         10
+     606: invokeinterface #355,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     611: astore        12
+     613: aload         12
+     615: invokeinterface #360,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     620: ifeq          963
+     623: aload         12
+     625: invokeinterface #363,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     630: checkcast     #163                // class blv
+     633: astore        13
+     635: aload         13
+     637: aload_0
+     638: invokevirtual #366                // Method blv.a:(Lcth;)Z
+     641: ifeq          647
+     644: goto          613
+     647: aload         13
+     649: aload         11
+     651: invokevirtual #369                // Method blv.f:(Lelt;)D
+     654: invokestatic  #282                // Method java/lang/Math.sqrt:(D)D
+     657: fload_3
+     658: f2d
+     659: ddiv
+     660: dstore        14
+     662: dload         14
+     664: dconst_1
+     665: dcmpg
+     666: ifgt          960
+     669: aload         13
+     671: invokevirtual #373                // Method blv.dr:()D
+     674: aload_0
+     675: getfield      #150                // Field g:D
+     678: dsub
+     679: dstore        16
+     681: aload         13
+     683: instanceof    #375                // class cbv
+     686: ifeq          697
+     689: aload         13
+     691: invokevirtual #378                // Method blv.dt:()D
+     694: goto          702
+     697: aload         13
+     699: invokevirtual #381                // Method blv.dv:()D
+     702: aload_0
+     703: getfield      #152                // Field h:D
+     706: dsub
+     707: dstore        18
+     709: aload         13
+     711: invokevirtual #384                // Method blv.dx:()D
+     714: aload_0
+     715: getfield      #154                // Field i:D
+     718: dsub
+     719: dstore        20
+     721: dload         16
+     723: dload         16
+     725: dmul
+     726: dload         18
+     728: dload         18
+     730: dmul
+     731: dadd
+     732: dload         20
+     734: dload         20
+     736: dmul
+     737: dadd
+     738: invokestatic  #282                // Method java/lang/Math.sqrt:(D)D
+     741: dstore        22
+     743: dload         22
+     745: dconst_0
+     746: dcmpl
+     747: ifne          753
+     750: goto          613
+     753: dload         16
+     755: dload         22
+     757: ddiv
+     758: dstore        16
+     760: dload         18
+     762: dload         22
+     764: ddiv
+     765: dstore        18
+     767: dload         20
+     769: dload         22
+     771: ddiv
+     772: dstore        20
+     774: aload_0
+     775: getfield      #178                // Field m:Lcti;
+     778: aload_0
+     779: aload         13
+     781: invokevirtual #387                // Method cti.a:(Lcth;Lblv;)Z
+     784: ifeq          807
+     787: aload         13
+     789: aload_0
+     790: getfield      #173                // Field l:Lbkt;
+     793: aload_0
+     794: getfield      #178                // Field m:Lcti;
+     797: aload_0
+     798: aload         13
+     800: invokevirtual #390                // Method cti.b:(Lcth;Lblv;)F
+     803: invokevirtual #393                // Method blv.a:(Lbkt;F)Z
+     806: pop
+     807: dconst_1
+     808: dload         14
+     810: dsub
+     811: aload         11
+     813: aload         13
+     815: invokestatic  #395                // Method a:(Lelt;Lblv;)F
+     818: f2d
+     819: dmul
+     820: dstore        24
+     822: aload         13
+     824: instanceof    #397                // class bml
+     827: ifeq          849
+     830: aload         13
+     832: checkcast     #397                // class bml
+     835: astore        28
+     837: aload         28
+     839: dload         24
+     841: invokestatic  #402                // Method crw.a:(Lbml;D)D
+     844: dstore        26
+     846: goto          853
+     849: dload         24
+     851: dstore        26
+     853: dload         16
+     855: dload         26
+     857: dmul
+     858: dstore        16
+     860: dload         18
+     862: dload         26
+     864: dmul
+     865: dstore        18
+     867: dload         20
+     869: dload         26
+     871: dmul
+     872: dstore        20
+     874: new           #222                // class elt
+     877: dup
+     878: dload         16
+     880: dload         18
+     882: dload         20
+     884: invokespecial #230                // Method elt."<init>":(DDD)V
+     887: astore        28
+     889: aload         13
+     891: aload         13
+     893: invokevirtual #405                // Method blv.dp:()Lelt;
+     896: aload         28
+     898: invokevirtual #408                // Method elt.e:(Lelt;)Lelt;
+     901: invokevirtual #411                // Method blv.g:(Lelt;)V
+     904: aload         13
+     906: instanceof    #413                // class cfi
+     909: ifeq          960
+     912: aload         13
+     914: checkcast     #413                // class cfi
+     917: astore        29
+     919: aload         29
+     921: invokevirtual #416                // Method cfi.P_:()Z
+     924: ifne          960
+     927: aload         29
+     929: invokevirtual #418                // Method cfi.f:()Z
+     932: ifeq          946
+     935: aload         29
+     937: invokevirtual #422                // Method cfi.fT:()Lcff;
+     940: getfield      #426                // Field cff.b:Z
+     943: ifne          960
+     946: aload_0
+     947: getfield      #142                // Field r:Ljava/util/Map;
+     950: aload         29
+     952: aload         28
+     954: invokeinterface #432,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     959: pop
+     960: goto          613
+     963: return
+
+  public void a(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #144                // Field f:Lctp;
+       4: getfield      #468                // Field ctp.B:Z
+       7: ifeq          75
+      10: aload_0
+      11: getfield      #144                // Field f:Lctp;
+      14: aload_0
+      15: getfield      #150                // Field g:D
+      18: aload_0
+      19: getfield      #152                // Field h:D
+      22: aload_0
+      23: getfield      #154                // Field i:D
+      26: aload_0
+      27: getfield      #184                // Field p:Larr;
+      30: getstatic     #473                // Field art.e:Lart;
+      33: ldc_w         #474                // float 4.0f
+      36: fconst_1
+      37: aload_0
+      38: getfield      #144                // Field f:Lctp;
+      41: getfield      #286                // Field ctp.z:Lauv;
+      44: invokeinterface #288,  1          // InterfaceMethod auv.i:()F
+      49: aload_0
+      50: getfield      #144                // Field f:Lctp;
+      53: getfield      #286                // Field ctp.z:Lauv;
+      56: invokeinterface #288,  1          // InterfaceMethod auv.i:()F
+      61: fsub
+      62: ldc_w         #475                // float 0.2f
+      65: fmul
+      66: fadd
+      67: ldc_w         #283                // float 0.7f
+      70: fmul
+      71: iconst_0
+      72: invokevirtual #478                // Method ctp.a:(DDDLarr;Lart;FFZ)V
+      75: aload_0
+      76: invokevirtual #480                // Method d:()Z
+      79: istore_2
+      80: iload_1
+      81: ifeq          133
+      84: aload_0
+      85: getfield      #148                // Field k:F
+      88: fconst_2
+      89: fcmpg
+      90: iflt          97
+      93: iload_2
+      94: ifne          105
+      97: aload_0
+      98: getfield      #180                // Field n:Ljv;
+     101: astore_3
+     102: goto          110
+     105: aload_0
+     106: getfield      #182                // Field o:Ljv;
+     109: astore_3
+     110: aload_0
+     111: getfield      #144                // Field f:Lctp;
+     114: aload_3
+     115: aload_0
+     116: getfield      #150                // Field g:D
+     119: aload_0
+     120: getfield      #152                // Field h:D
+     123: aload_0
+     124: getfield      #154                // Field i:D
+     127: dconst_1
+     128: dconst_0
+     129: dconst_0
+     130: invokevirtual #483                // Method ctp.a:(Ljv;DDDDDD)V
+     133: iload_2
+     134: ifeq          301
+     137: aload_0
+     138: getfield      #144                // Field f:Lctp;
+     141: invokevirtual #487                // Method ctp.af:()Lbgs;
+     144: ldc_w         #489                // String explosion_blocks
+     147: invokeinterface #494,  2          // InterfaceMethod bgs.a:(Ljava/lang/String;)V
+     152: new           #496                // class java/util/ArrayList
+     155: dup
+     156: invokespecial #497                // Method java/util/ArrayList."<init>":()V
+     159: astore_3
+     160: aload_0
+     161: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+     164: aload_0
+     165: getfield      #144                // Field f:Lctp;
+     168: getfield      #286                // Field ctp.z:Lauv;
+     171: invokestatic  #502                // Method ac.c:(Ljava/util/List;Lauv;)V
+     174: aload_0
+     175: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+     178: invokevirtual #505                // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.iterator:()Lit/unimi/dsi/fastutil/objects/ObjectListIterator;
+     181: astore        4
+     183: aload         4
+     185: invokeinterface #360,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     190: ifeq          233
+     193: aload         4
+     195: invokeinterface #363,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     200: checkcast     #292                // class hx
+     203: astore        5
+     205: aload_0
+     206: getfield      #144                // Field f:Lctp;
+     209: aload         5
+     211: invokevirtual #299                // Method ctp.a_:(Lhx;)Ldjh;
+     214: aload_0
+     215: getfield      #144                // Field f:Lctp;
+     218: aload         5
+     220: aload_0
+     221: aload_3
+     222: invokedynamic #526,  0            // InvokeDynamic #0:accept:(Ljava/util/List;)Ljava/util/function/BiConsumer;
+     227: invokevirtual #529                // Method djh.a:(Lctp;Lhx;Lcth;Ljava/util/function/BiConsumer;)V
+     230: goto          183
+     233: aload_3
+     234: invokeinterface #355,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     239: astore        4
+     241: aload         4
+     243: invokeinterface #360,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     248: ifeq          289
+     251: aload         4
+     253: invokeinterface #363,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     258: checkcast     #531                // class com/mojang/datafixers/util/Pair
+     261: astore        5
+     263: aload_0
+     264: getfield      #144                // Field f:Lctp;
+     267: aload         5
+     269: invokevirtual #534                // Method com/mojang/datafixers/util/Pair.getSecond:()Ljava/lang/Object;
+     272: checkcast     #292                // class hx
+     275: aload         5
+     277: invokevirtual #537                // Method com/mojang/datafixers/util/Pair.getFirst:()Ljava/lang/Object;
+     280: checkcast     #539                // class cmy
+     283: invokestatic  #544                // Method cwq.a:(Lctp;Lhx;Lcmy;)V
+     286: goto          241
+     289: aload_0
+     290: getfield      #144                // Field f:Lctp;
+     293: invokevirtual #487                // Method ctp.af:()Lbgs;
+     296: invokeinterface #546,  1          // InterfaceMethod bgs.c:()V
+     301: aload_0
+     302: getfield      #156                // Field c:Z
+     305: ifeq          413
+     308: aload_0
+     309: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+     312: invokevirtual #505                // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.iterator:()Lit/unimi/dsi/fastutil/objects/ObjectListIterator;
+     315: astore_3
+     316: aload_3
+     317: invokeinterface #360,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     322: ifeq          413
+     325: aload_3
+     326: invokeinterface #363,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     331: checkcast     #292                // class hx
+     334: astore        4
+     336: aload_0
+     337: getfield      #133                // Field e:Lauv;
+     340: iconst_3
+     341: invokeinterface #549,  2          // InterfaceMethod auv.a:(I)I
+     346: ifne          410
+     349: aload_0
+     350: getfield      #144                // Field f:Lctp;
+     353: aload         4
+     355: invokevirtual #299                // Method ctp.a_:(Lhx;)Ldjh;
+     358: invokevirtual #551                // Method djh.i:()Z
+     361: ifeq          410
+     364: aload_0
+     365: getfield      #144                // Field f:Lctp;
+     368: aload         4
+     370: invokevirtual #554                // Method hx.d:()Lhx;
+     373: invokevirtual #299                // Method ctp.a_:(Lhx;)Ldjh;
+     376: aload_0
+     377: getfield      #144                // Field f:Lctp;
+     380: aload         4
+     382: invokevirtual #554                // Method hx.d:()Lhx;
+     385: invokevirtual #557                // Method djh.i:(Lcsv;Lhx;)Z
+     388: ifeq          410
+     391: aload_0
+     392: getfield      #144                // Field f:Lctp;
+     395: aload         4
+     397: aload_0
+     398: getfield      #144                // Field f:Lctp;
+     401: aload         4
+     403: invokestatic  #562                // Method cwd.a:(Lcsv;Lhx;)Ldjh;
+     406: invokevirtual #565                // Method ctp.b:(Lhx;Ldjh;)Z
+     409: pop
+     410: goto          316
+     413: return
+
+  private static void a(java.util.List<com.mojang.datafixers.util.Pair<cmy, hx>>, cmy, hx);
+    Code:
+       0: iconst_0
+       1: istore_3
+       2: iload_3
+       3: aload_0
+       4: invokeinterface #573,  1          // InterfaceMethod java/util/List.size:()I
+       9: if_icmpge     84
+      12: aload_0
+      13: iload_3
+      14: invokeinterface #576,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      19: checkcast     #531                // class com/mojang/datafixers/util/Pair
+      22: astore        4
+      24: aload         4
+      26: invokevirtual #537                // Method com/mojang/datafixers/util/Pair.getFirst:()Ljava/lang/Object;
+      29: checkcast     #539                // class cmy
+      32: astore        5
+      34: aload         5
+      36: aload_1
+      37: invokestatic  #581                // Method cbu.a:(Lcmy;Lcmy;)Z
+      40: ifeq          78
+      43: aload_0
+      44: iload_3
+      45: aload         5
+      47: aload_1
+      48: bipush        16
+      50: invokestatic  #584                // Method cbu.a:(Lcmy;Lcmy;I)Lcmy;
+      53: aload         4
+      55: invokevirtual #534                // Method com/mojang/datafixers/util/Pair.getSecond:()Ljava/lang/Object;
+      58: checkcast     #292                // class hx
+      61: invokestatic  #588                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+      64: invokeinterface #592,  3          // InterfaceMethod java/util/List.set:(ILjava/lang/Object;)Ljava/lang/Object;
+      69: pop
+      70: aload_1
+      71: invokevirtual #594                // Method cmy.b:()Z
+      74: ifeq          78
+      77: return
+      78: iinc          3, 1
+      81: goto          2
+      84: aload_0
+      85: aload_1
+      86: aload_2
+      87: invokestatic  #588                // Method com/mojang/datafixers/util/Pair.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+      90: invokeinterface #595,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      95: pop
+      96: return
+
+  public boolean d();
+    Code:
+       0: aload_0
+       1: getfield      #158                // Field d:Lcth$a;
+       4: getstatic     #598                // Field cth$a.a:Lcth$a;
+       7: if_acmpeq     14
+      10: iconst_1
+      11: goto          15
+      14: iconst_0
+      15: ireturn
+
+  public java.util.Map<cfi, elt> e();
+    Code:
+       0: aload_0
+       1: getfield      #142                // Field r:Ljava/util/Map;
+       4: areturn
+
+  private static bml b(blv);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: aload_0
+       7: instanceof    #375                // class cbv
+      10: ifeq          23
+      13: aload_0
+      14: checkcast     #375                // class cbv
+      17: astore_1
+      18: aload_1
+      19: invokevirtual #603                // Method cbv.q:()Lbml;
+      22: areturn
+      23: aload_0
+      24: instanceof    #397                // class bml
+      27: ifeq          37
+      30: aload_0
+      31: checkcast     #397                // class bml
+      34: astore_1
+      35: aload_1
+      36: areturn
+      37: aload_0
+      38: instanceof    #605                // class cga
+      41: ifeq          68
+      44: aload_0
+      45: checkcast     #605                // class cga
+      48: astore_1
+      49: aload_1
+      50: invokevirtual #608                // Method cga.w:()Lblv;
+      53: astore_2
+      54: aload_2
+      55: instanceof    #397                // class bml
+      58: ifeq          68
+      61: aload_2
+      62: checkcast     #397                // class bml
+      65: astore_3
+      66: aload_3
+      67: areturn
+      68: aconst_null
+      69: areturn
+
+  public bml f();
+    Code:
+       0: aload_0
+       1: getfield      #146                // Field j:Lblv;
+       4: invokestatic  #68                 // Method b:(Lblv;)Lbml;
+       7: areturn
+
+  public blv g();
+    Code:
+       0: aload_0
+       1: getfield      #146                // Field j:Lblv;
+       4: areturn
+
+  public void h();
+    Code:
+       0: aload_0
+       1: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+       4: invokevirtual #613                // Method it/unimi/dsi/fastutil/objects/ObjectArrayList.clear:()V
+       7: return
+
+  public java.util.List<hx> i();
+    Code:
+       0: aload_0
+       1: getfield      #85                 // Field q:Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+       4: areturn
+
+  public cth$a j();
+    Code:
+       0: aload_0
+       1: getfield      #158                // Field d:Lcth$a;
+       4: areturn
+
+  public jv k();
+    Code:
+       0: aload_0
+       1: getfield      #180                // Field n:Ljv;
+       4: areturn
+
+  public jv l();
+    Code:
+       0: aload_0
+       1: getfield      #182                // Field o:Ljv;
+       4: areturn
+
+  public arr m();
+    Code:
+       0: aload_0
+       1: getfield      #184                // Field p:Larr;
+       4: areturn
+
+  private static void b(java.util.List, cmy, hx);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #620                // Method a:(Ljava/util/List;Lcmy;Lhx;)V
+       6: return
+
+  static {};
+    Code:
+       0: new           #167                // class cti
+       3: dup
+       4: invokespecial #622                // Method cti."<init>":()V
+       7: putstatic     #188                // Field a:Lcti;
+      10: return
+}

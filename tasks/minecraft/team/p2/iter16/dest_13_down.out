@@ -1,0 +1,45 @@
+program #7875 on p2: 8.2 s
+--- output ---
+VERTICAL_VOLUME_ENDING [ 144, -33, 2241 ] 73
+U_END {"p":{"x":144.5026854731771,"y":-33,"z":2241.4998173006256},"hp":11.499998092651367,"food":9,"cuts":1,"steps":0,"down":1,"seconds":8.182,"issue":null,"closed":true,"lost":false,"delta":1,"inv":[["basalt",1,null],["cobblestone_slab",2,null]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false}}
+--- returned ---
+{
+ "issue": null,
+ "closed": true,
+ "volumeCells": 73,
+ "volumeIssue": null,
+ "fullLocal": false,
+ "p": {
+  "x": 144.5026854731771,
+  "y": -33,
+  "z": 2241.4998173006256
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "cuts": 1,
+ "down": 1,
+ "own": [
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "cobblestone_slab",
+   2,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (144.5, -33, 2241.5) in overworld, health 11.5/20, food 9/20, alive

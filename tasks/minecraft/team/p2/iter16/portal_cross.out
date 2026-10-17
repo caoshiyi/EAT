@@ -1,0 +1,35 @@
+program #7773 on p2: 18.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "LIFE_TIME",
+ "lost": true,
+ "expectedOW": false,
+ "needsOWInspection": true,
+ "closed": false,
+ "p": {
+  "x": 163.49972568425662,
+  "y": -26,
+  "z": 2230.5
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "dimension": "overworld",
+ "cuts": 2,
+ "seconds": 18.188,
+ "inv": [
+  [
+   "basalt",
+   2
+  ],
+  [
+   "cobblestone_slab",
+   2
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (163.5, -26, 2230.5) in overworld, health 11.5/20, food 9/20, alive
