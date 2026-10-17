@@ -1,0 +1,49 @@
+program #3682 on p3: 0.5 s
+--- output ---
+TOSS_YAW_ACTUAL 1.5707963267949943 -0.09948377402160435
+--- returned ---
+{
+ "issue": null,
+ "before": 22,
+ "after": 12,
+ "p": {
+  "x": 1.406332064888705,
+  "y": 66,
+  "z": 6.7
+ },
+ "hp": 20,
+ "p4": {
+  "x": 0.4993423466989106,
+  "y": 67,
+  "z": 7.482345312756406
+ },
+ "window": "air",
+ "items": [
+  [
+   28307,
+   {
+    "x": -0.04999546116778225,
+    "y": 67,
+    "z": 6.714963763148882
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 28,
+     "itemCount": 10
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (1.4, 66, 6.7) in the_nether, health 20/20, food 20/20, alive

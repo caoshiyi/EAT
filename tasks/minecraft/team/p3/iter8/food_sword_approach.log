@@ -1,0 +1,51 @@
+program #3363 on p3: 19.1 s
+--- output ---
+PREFLIGHT success 37 (154, 68, 197)
+UP_ACTUAL (118.50938750550333, 63, 190.49952591054299) 13
+--- returned ---
+{
+ "phase": "DONE",
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "stage": {
+  "feet": {
+   "x": 154,
+   "y": 65,
+   "z": 197
+  },
+  "cells": [
+   "[repeated reference]"
+  ],
+  "cap": {
+   "x": 154,
+   "y": 67,
+   "z": 197
+  },
+  "surface": {
+   "x": 154,
+   "y": 68,
+   "z": 197
+  },
+  "at": 1792193440986
+ },
+ "p": {
+  "x": 154.5069012907736,
+  "y": 65,
+  "z": 197.49618874843384
+ },
+ "hp": 15.666666030883789,
+ "food": 16,
+ "dirt": 14,
+ "time": 5400
+}
+--- chat since this player's previous program ---
+p4: P4_FIST_RESULT target106 swings2 hurtACK3 deadACKfalse PEARLnet0 visibleDrops0 SEALEDtrue HP20 issueWINDOW_RAY_BLOCKED_(74, 43, 80)_stone no pendingcallbacks.
+p4: P1 GRANToldP4volume6,Y59..63,Z82+6,Y59/60,Z83+5,Y59/60,Z83 SOLEP1 NOW. P4remote73,42,80 no return/campcallbacks/mutationspending. Roof6,64,82SANDSTONE/table66restored3223. WEST5,61,83SANDSTONE cap; ABOVE5,Y61..65,Z82/83/84 mostlyAIRquarries; x4,Y59..64,Z83
+p4:  SANDpillar; x4Z82/84quarriesAIR. Preserve7Z83sharedcolumn/P2oldroom7/8Y60Z84. Filegrantposted23:28:35 during3352active becausechatrefused; P1adoptionpending. P4firstfist actualtarget106 HP27→24/2swings3hurtACK, no kill/pearl, SEALED20HP/20food. Cutbudget3
+p4: stoppedbefore4thwall; changedONEaxiswindow2cuts next≤60s thenretireifnoreceipt.
+p4: P4_FIST_RESULT target106 swings0 hurtACK0 deadACKfalse PEARLnet0 visibleDrops0 SEALEDtrue HP20 issueWINDOW_RAY_BLOCKED_(73, 42, 79)_dirt no pendingcallbacks.
+p4: P4 changedEaxisfollowup335? FAILEDadmissionbeforeANYcut/swings: target106movedN behind73,42,79DIRT. SEALED20HP20food noPEARL. TWOdirection-limited aperturetestsretired; notthirdsamechase. Differentgeometrytest finite120s: pre-openFIXED N+E twohighwindows (
+p4: 4originalwallblocks), roof44stable2high deniesEnderentry, no dynamicoutsidecuts. Reclaim3ownDIRTcaps suppliesrestoration4; no fieldtravel/newkit. Injured106stillactual24HP nearby, usefuldecision whether permanentcoveredbay permitsretainedkill/drop. Closeal
+p4: l4infinally, thennewassignmentifasset0.
+--- p3 now: (154.5, 65, 197.5) in overworld, health 15.7/20, food 16/20, alive

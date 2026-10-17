@@ -43,3 +43,10 @@ Current permitted agent_team/iter_6 result files enumerated at launch contain pr
 Token usage unavailable: no permitted session-history measurement evidence exposed. No fabricated count or commit identifier.
 
 2026-10-16T22:13:24.717691+00:00 Iteration7: permitted agent_team file listing exposed no iteration7 *_output.json measurements. Current coordinator/player/team token usage remains unavailable; historical iteration wrappers are not current evidence. No counts or costs fabricated.
+
+## Iteration 8 opening — 2026-10-16T22:56:42.422528+00:00
+Measured token usage unavailable: no permitted current measurement observed. Not zero; no prohibited-location reads.
+
+Iteration8 checkpoint 2026-10-16T23:56:23.879840+00:00: current root/player/team token measurements remain unavailable from permitted evidence; no prohibited location read, not zero.
+
+Iteration8 00:54 UTC: current coordinator/player/team token measurements unavailable from permitted exposed evidence; not zero. No prohibited locations consulted, no cost or commit attribution inferred.

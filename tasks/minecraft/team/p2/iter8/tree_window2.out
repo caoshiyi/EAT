@@ -1,0 +1,15 @@
+program #3516 on p2: 7.1 s
+--- output ---
+LOG_RECEIPT 68 1 2 DROPS [
+  {
+    p: Vec3 { x: 5.875, y: 4.75, z: 133.875 },
+    item: [ <8 empty items>, [Object] ]
+  }
+]
+TREE_WINDOW_ACCEPTED 68 2 20 20
+TREE_END {"issue":null,"cut":true,"next":69,"p":{"x":11.523022847919218,"y":64,"z":112.51021188900313},"hp":20,"food":20,"roof":"dirt","kit":[["dirt",37],["spruce_log",2]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 CLAIMportal6,68,90 ONEentry+OWcloseACK beforetransition; completedoldbuffer1,65,4 onlyE2DIRTcapsexacttemporaryopen/reclose. Camp6EXITcloseimmediaterelease/no returnreservation.
+--- p2 now: (11.5, 64, 112.5) in overworld, health 20/20, food 20/20, alive

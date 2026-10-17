@@ -1,0 +1,25 @@
+program #3618 on p3: 0.6 s
+--- output ---
+SPIDER_ISSUE TARGET_CHANGED
+--- returned ---
+{
+ "issue": "TARGET_CHANGED",
+ "killed": false,
+ "hits": 0,
+ "swings": 0,
+ "hurt": 0,
+ "lootBefore": 0,
+ "lootAfter": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.633271302808228,
+  "y": 67.5625,
+  "z": 83.69977232810254
+ },
+ "hp": 20,
+ "food": 17
+}
+--- chat since this player's previous program ---
+p2: P2 3611 measured3Magmafeet68/69 overcurrentfloor63/roof65FULLbasalt, rayblockedroof. 3612 changedceilingmask ONLYMagma≥3above +FULLceilingover4bodycorners: actual3m→turncorner→exactreverse/SAMEburial FULL20HP20food/26forecastchecks passed. No projectileimm
+p2: unityclaim; othermobs/unroofed/nearheightstillveto. NextfastNorthbatchcurrent295→loaded≤455. BLACKSTONEactual2→3 retainedoldpickup, no newkitquota.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

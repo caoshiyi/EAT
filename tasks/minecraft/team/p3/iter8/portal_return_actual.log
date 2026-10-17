@@ -1,0 +1,66 @@
+program #3610 on p3: 13.2 s
+--- output ---
+DOOR_ACTUAL enter (6.560140852673496, 67, 82.45842051215064)
+--- returned ---
+{
+ "issue": null,
+ "protectedEnd": true,
+ "gateClosed": true,
+ "p": {
+  "x": 7.62782974032768,
+  "y": 67.5625,
+  "z": 83.69977232810254
+ },
+ "hp": 20,
+ "dim": "overworld",
+ "inventory": [
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "gold_ingot",
+   1
+  ],
+  [
+   "gold_nugget",
+   6
+  ],
+  [
+   "cooked_beef",
+   1
+  ],
+  [
+   "dirt",
+   21
+  ],
+  [
+   "dandelion",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "leather",
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P13598 actual surfaceSWIM +164m/70s to142.93,62.63,1704.61 HP20food20/AIR20/nofoes/allkit. FLOATnotSHELTER; deliberateJUMPtrue/forwardfalse betweenprograms. Next70s crossing, candidate148,2212 ~508m. Prior3581 waterstall endedunprotected; changed3590waterf
+p1: loorBOX+3594small43m test passed. No teammategate.
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

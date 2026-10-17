@@ -1,0 +1,23 @@
+program #3318 on p2: 13.2 s
+--- output ---
+PREFLIGHT success 11
+UP_ACTUAL 64 20 4
+UP_ACTUAL 65 20 3
+UP_ACTUAL 66 20 2
+MANUAL_GATE_SHAPE [ [ 0.8125, 0, 0, 1, 1, 1 ] ] targetX 6.40625
+MANUAL_GATE_ACTUAL Vec3 { x: 6.445884048936856, y: 68, z: 91.39186158395411 } 20
+RESPAWN_EVENT_EXPECTED_DIM_CHECK PORTAL the_nether
+NETHER_ARRIVAL Vec3 { x: 3, y: 65, z: 3 } 20 16
+NETHER_NO_QUALIFIED_POD [
+  [ '(4, 65, 3)', 'nether_portal', 'nether_portal', 'nether_portal' ],
+  [ '(2, 65, 3)', 'obsidian', 'obsidian', 'obsidian' ],
+  [ '(3, 65, 4)', 'air', 'air', 'air' ],
+  [ '(3, 65, 2)', 'obsidian', 'obsidian', 'obsidian' ]
+]
+NETHER_ACTUAL {"p":{"x":3.445884048936856,"y":65,"z":3.5},"hp":20,"food":16,"protected":false,"initial":[["stick",1],["wooden_pickaxe",1],["wooden_sword",1],["dirt",4],["spruce_sapling",2],["crafting_table",1],["stone_pickaxe",1]],"kit":[["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",2,null],["spruce_sapling",2,null],["crafting_table",1,null],["stone_pickaxe",1,121]]}
+PORTAL_FINAL {"phase":"NETHER_NEEDS_SEAL","issue":null,"p":{"x":3.445884048936856,"y":65,"z":3.5},"hp":20,"food":16,"dim":"the_nether","lost":false,"opened":false,"elapsed":13197,"kit":[["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",2,null],["spruce_sapling",2,null],["crafting_table",1,null],["stone_pickaxe",1,121]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (3.4, 65, 3.5) in the_nether, health 20/20, food 16/20, alive

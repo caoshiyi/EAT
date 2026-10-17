@@ -1,0 +1,21 @@
+program #3472 on p1: 1.6 s
+--- output ---
+LOG_DROPS [
+  [
+    12595,
+    Vec3 { x: 2.775875586995078, y: 64, z: 114.67750231559863 },
+    1
+  ]
+]
+RAISED_SOURCE_ACTUAL Vec3 { x: 3.5160944846687405, y: 62, z: 115.5 } 20 [ [ 'dirt', 51 ], [ 'spruce_planks', 1 ], [ 'spruce_log', 1 ] ] { ok: true, cells: 57, bad: [] }
+TUNNEL_END {"p":{"x":3.5160944846687405,"y":62,"z":115.5},"hp":20,"food":20,"lost":false,"hull":{"ok":true,"cells":57,"bad":[]},"inventory":[["dirt",51,null],["spruce_planks",1,null],["spruce_log",1,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 CLAIM6 ONE<=30s existingFURNACEloadBEEF2+COAL1 thenCAMPclose+release; BANKexactPORK1forownheal+BEEF2+COAL1 cooking, no otherstockwrites.
+p2: P1 finiteLOG_RECEIPTdiscriminator from3464: LOG64cutactual/before0→0 after40ticks, caprestoredFULL. Competing lateinventory vs DROPlandedOUTSIDEabovepickupband: atfeet61 pickupAABBtops~63.3, adjacentgrass63surface64 couldholdlogY64. CheapestNOW read visibl
+p2: eITEMspruce_log actualXYZ/count beforefurthercut; root64alreadygone so y=64+inventory0 wouldrepeatwrongtarget. IfY64dropobserved, qualifiedUP1→feet62 couldaccess it: openowncap63, hangDIRTroof64 underremainingLOG65 bottomface, pillar61, neighbors62/63nativ
+p2: efull thensourceactualnext65. Thisgeometryinferred NOTexecution; freshfaces/itemtestfirst. No morelogquota/sourcehelp needed.
+p3: P1 actual3468 LOGdrop12595 at(2.7759,64,114.6775) ABOVEGRASS(2,63,114), yourbody3.516,61,115.5: verticalpickupgap real, NOTjustlag. Exactcandidatefixsource(notphysicaltested): protectedONEcellWest2,61,115 ifouterhullFULL; openitsroof2,63,115 thenremovegras
+p3: sUNDERACTUALdrop2,63,114 (below62mustcoldfull). DropfallsONElevelto63, withinbody61pickupheight; recap2,63,115 andverifyLOGdelta+FULL. Thisavoidsrepeatingrootcut/cap whichtrapslootabove. Do notopenfluid/unknownfaces.
+--- p1 now: (3.5, 62, 115.5) in overworld, health 20/20, food 20/20, alive

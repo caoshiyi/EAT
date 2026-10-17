@@ -1,0 +1,58 @@
+program #3503 on p3: 22.6 s
+--- output ---
+EAST_LEDGE_PRE success 11
+DOOR_ACTUAL exit (6.587048624705566, 66.42159999847412, 79.2840095865506)
+DOOR_ACTUAL enter (6.560140930968271, 67, 82.4576593872025)
+--- returned ---
+{
+ "issue": null,
+ "placed": true,
+ "crossed": true,
+ "outbound": {
+  "x": 6.5295253180318396,
+  "y": 68,
+  "z": 89.5
+ },
+ "back": {
+  "x": 6.5010645052395635,
+  "y": 65,
+  "z": 86.32010989621915
+ },
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "hp": 20,
+ "food": 17,
+ "p": {
+  "x": 7.6278298446775015,
+  "y": 67.5625,
+  "z": 83.69977231244309
+ },
+ "dirt": [
+  25,
+  21
+ ],
+ "bridge": "dirt",
+ "gate": {
+  "powered": false,
+  "open": false,
+  "hinge": "left",
+  "half": "lower",
+  "facing": "south"
+ },
+ "checks": 219,
+ "stop": null,
+ "listeners": {
+  "before": {
+   "physics": 2,
+   "path": 0
+  },
+  "after": {
+   "physics": 2,
+   "path": 0
+  }
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

@@ -1,0 +1,18 @@
+program #3582 on p2: 10.5 s
+--- output ---
+STAGE_PLAN 62 64 Vec3 { x: -28, y: 62, z: -29 }
+EXACT_EMERGE Vec3 { x: -25.5010767103874, y: 62, z: -28.50946041606404 } 20
+EXACT_STEP Vec3 { x: -27, y: 63, z: -29 } Vec3 { x: -26.551613791731214, y: 63, z: -28.509389311987338 } 20
+EXACT_STEP Vec3 { x: -28, y: 62, z: -29 } Vec3 { x: -27.438279623030787, y: 62, z: -28.509313129039505 } 20
+DOWNSTEP_CORRECTION_PASSED Vec3 { x: -27.438279623030787, y: 62, z: -28.509313129039505 } 20
+EXACT_STEP Vec3 { x: -28, y: 62, z: -29 } Vec3 { x: -27.433313438212753, y: 62, z: -28.509313129039505 } 20
+EXACT_STEP Vec3 { x: -27, y: 63, z: -29 } Vec3 { x: -26.50138279910116, y: 63, z: -28.509409627432245 } 20
+EXACT_STEP Vec3 { x: -26, y: 62, z: -29 } Vec3 { x: -25.496547398300326, y: 62, z: -28.509511204696185 } 20
+EXACT_STEP Vec3 { x: -26, y: 62, z: -29 } Vec3 { x: -25.5010767103874, y: 62, z: -28.509511204696185 } 20
+EXACT_STAGE_FULL {"kind":"BURIED","feet":[-26,59,-29],"surface":[-26,62,-29],"index":62,"at":1792197186870} 20 20 CHECKS 25 KIT [["stick",2,null],["wooden_sword",1,0],["dirt",27,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",2,null],["wooden_pickaxe",1,6],["basalt",6,null]]
+STAGE_END {"issue":null,"closed":true,"startIndex":62,"endIndex":64,"currentIndex":64,"p":{"x":-25.5010767103874,"y":59,"z":-28.509511204696185},"hp":20,"food":20,"lost":false,"elapsed":10519}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 CLAIM6 ONE<=60s actualDROP20820at18,65,106 thenreturn+woodpick. OtherinterfacesFREE.
+--- p2 now: (-25.5, 59, -28.5) in the_nether, health 20/20, food 20/20, alive

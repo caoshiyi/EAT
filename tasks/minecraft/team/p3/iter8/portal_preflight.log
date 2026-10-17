@@ -1,0 +1,139 @@
+program #3486 on p3: 4.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "out": [
+  {
+   "target": [
+    6,
+    68,
+    89
+   ],
+   "status": "timeout",
+   "n": 15,
+   "tail": [
+    [
+     11.5,
+     68,
+     89.5
+    ],
+    [
+     10.5,
+     68,
+     89.5
+    ],
+    [
+     9.5,
+     68,
+     89.5
+    ],
+    [
+     8.5,
+     68,
+     89.5
+    ]
+   ]
+  },
+  {
+   "target": [
+    5,
+    67,
+    87
+   ],
+   "status": "timeout",
+   "n": 11,
+   "tail": [
+    [
+     3.5,
+     62,
+     86.5
+    ],
+    [
+     4.5,
+     63,
+     86.5
+    ],
+    [
+     5.5,
+     64,
+     86.5
+    ],
+    [
+     5.5,
+     64,
+     87.5
+    ]
+   ]
+  },
+  {
+   "target": [
+    6,
+    66,
+    87
+   ],
+   "status": "timeout",
+   "n": 11,
+   "tail": [
+    [
+     4.5,
+     63,
+     85.5
+    ],
+    [
+     4.5,
+     63,
+     86.5
+    ],
+    [
+     5.5,
+     64,
+     86.5
+    ],
+    [
+     6.5,
+     65,
+     86.5
+    ]
+   ]
+  }
+ ],
+ "step": [
+  [
+   65,
+   "air"
+  ],
+  [
+   66,
+   "air"
+  ],
+  [
+   67,
+   "air"
+  ],
+  [
+   68,
+   "air"
+  ]
+ ],
+ "portal": "nether_portal",
+ "gate": {
+  "powered": false,
+  "open": false,
+  "hinge": "left",
+  "half": "lower",
+  "facing": "south"
+ },
+ "time": 23920,
+ "near": [],
+ "p": {
+  "x": 7.543358089805691,
+  "y": 67.5625,
+  "z": 83.69977231244309
+ },
+ "hp": 20,
+ "food": 17
+}
+--- chat since this player's previous program ---
+p1: P1 THREELOG_ACTUAL net1→3 HP20→20 FULLtrue issuenull; anchorplatformY65caught2nddrop, removedcatcherBEFORElastcut→receipts thenrebuiltanchor+cap. No repeatedrootcut.
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

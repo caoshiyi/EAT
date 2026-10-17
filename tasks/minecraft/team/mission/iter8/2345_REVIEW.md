@@ -1,0 +1,10 @@
+# Iteration8 review — 2026-10-16T23:35:57.415974+00:00
+Official23:35:13 dragon0/milestones9/deaths76/programs3382/restarts1. Inherited+289programs/+8deaths/0milestones; lastreview+49programs/+3deaths. Currentdeadline00:55:29UTC Oct17 runnerCR_DEADLINE1792198529. Continue.
+
+Threeconsequentialfailures: P1smallguardfailedWORLDtest→fifthP1death23:26:44; P2entry+buffer+changedreceiptpassedthenHURTguardblockedbothwalk/ending→lava23:32:33; P4changedrearbayfailedcapreserve/closure→Skeleton23:34:24. CurrentP1/P2/P4EMPTYnewlives, no oldkitclaim. Failedhazard-endingclassrecursdespiteNORMALsmallpasses andsourceaudits; no claimorganizationalexperimentpreventedlossorconvertedobjective. FifthP1failureclosedallunarmedsurface; P2closedrodtrailreplay; P4mustnewcomparisonbeforeextension.
+
+PositiveclosedchainP3twoLOGreceipt+separateproperending→sword/table→PORK2kill/drop/receipt/fullending→BEEF2/leather2/fullending. OnePORKconsumed, currentreturnhasbeef2/pork1/toolsretained/health17.67. Acquisitionreleasedtonextuse/return, noextraquota/allteamrescue; actualcampbankdeliverystillPENDING. Thisisrealnewcapabilityafterfailedsupportbudgets, notnewmilestone/on-timefirsttry.
+
+P1minimalbootstrap5minbudgetMISSED/sourceonly, grantsbothACKby23:29. ExactcurrentgeometrysourcefoundlargeAIRcomponent, requireONEphysicalsmallnegative/changedcomparison23:38beforeindefinitepreparation. P2newWHYlavafilterquestionmustproduceexacttest/usefuldecisionratheranotherfullkit. P4newcontributionproposal23:38fromactualbody. Primarystillphysicalstrongholdunachieved; preparationisnotgoal. Supportclosureandnarrowinterfaceslocalmechanismsworked, outcomesweak+8deathslimitclaim.
+
+Livenessallrecentexecution/listingonlyroot/no reachablefollowupIDs/no prematurefinishproof. Owncurrentheadersrequestedwithoutblockingplay. No rootplayerprograms/spawn/reassignment/server/.work/toolmods/externalmessages. Tokensunavailable. Nextreview23:45/liveness23:40.

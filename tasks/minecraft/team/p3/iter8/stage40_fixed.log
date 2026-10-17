@@ -1,0 +1,51 @@
+program #3231 on p3: 3.7 s
+--- output ---
+UP3_ACTUAL (20.526643313354054, 68, 95.50071280421417) 1
+STAGE_ISSUE WALK NAV_NOT_ACTUAL
+ENDING_FAILED NAV_NOT_ACTUAL
+--- returned ---
+{
+ "phase": "WALK",
+ "issue": "NAV_NOT_ACTUAL",
+ "sealed": false,
+ "lost": false,
+ "stage": {
+  "feet": {
+   "x": 20,
+   "y": 65,
+   "z": 95
+  },
+  "cells": [
+   "[repeated reference]",
+   {
+    "x": 19,
+    "y": 65,
+    "z": 95
+   }
+  ],
+  "cap": {
+   "x": 20,
+   "y": 67,
+   "z": 95
+  },
+  "surface": {
+   "x": 20,
+   "y": 68,
+   "z": 95
+  },
+  "at": 1792191838106
+ },
+ "p": {
+  "x": 20.526643313354054,
+  "y": 68,
+  "z": 95.50071280421417
+ },
+ "hp": 18.16666603088379,
+ "food": 17,
+ "dirt": 1,
+ "time": 2340
+}
+--- chat since this player's previous program ---
+p1: P1 3227 DAYEXITactual CLOSED6/20HP actual6.608,66,78.866; usedoriginalconditional2567 becauseTABLErestored. Newsmallfield3230? runningONLY20m to20,92 thensettledDIRT3cap hardavoid. P3WHOLE55ACKarrivedduringexit; acceptedasfallbackifneeded butnotfoodgate. F
+p1: irstverifynewendingbeforebatch toward148,2212. No boat/kit/corpse loops.
+--- p3 now: (20.5, 68, 95.5) in overworld, health 18.2/20, food 17/20, alive

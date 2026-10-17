@@ -1,0 +1,23 @@
+program #3462 on p2: 34 s
+--- output ---
+BOTTOMUP_ADMISSION Vec3 { x: 8, y: 62, z: 89 } SAND_PROJECTED 3 HELD 1
+ROOF_ACTUAL Vec3 { x: 8, y: 64, z: 89 } sandstone
+SAND_STEP_ACCEPTED 8 Vec3 { x: 8.490765951834183, y: 62, z: 89.46700410741308 } 20 20 SAND 0 DIRT 0 AIR 18
+SAND_STEP_END {"issue":null,"p":{"x":8.490765951834183,"y":62,"z":89.46700410741308},"hp":20,"food":20,"lost":false,"bad":[],"roof":"sandstone","kit":[]}
+BOTTOMUP_ADMISSION Vec3 { x: 8, y: 62, z: 90 } SAND_PROJECTED 5 HELD 0
+ROOF_ACTUAL Vec3 { x: 8, y: 64, z: 90 } sandstone
+SAND_STEP_ACCEPTED 9 Vec3 { x: 8.495767494121008, y: 62, z: 90.5 } 20 20 SAND 1 DIRT 0 AIR 20
+SAND_STEP_END {"issue":null,"p":{"x":8.495767494121008,"y":62,"z":90.5},"hp":20,"food":20,"lost":false,"bad":[],"roof":"sandstone","kit":[["sand",1]]}
+BOTTOMUP_ADMISSION Vec3 { x: 7, y: 62, z: 90 } SAND_PROJECTED 4 HELD 1
+ROOF_ACTUAL Vec3 { x: 7, y: 64, z: 90 } sandstone
+SAND_STEP_ACCEPTED 10 Vec3 { x: 7.538040012764798, y: 62, z: 90.50014216432321 } 20 20 SAND 1 DIRT 0 AIR 22
+SAND_STEP_END {"issue":null,"p":{"x":7.538040012764798,"y":62,"z":90.50014216432321},"hp":20,"food":20,"lost":false,"bad":[],"roof":"sandstone","kit":[["sand",1]]}
+BOTTOMUP_ADMISSION Vec3 { x: 7, y: 62, z: 91 } SAND_PROJECTED 4 HELD 1
+ROOF_ACTUAL Vec3 { x: 7, y: 64, z: 91 } sandstone
+SAND_STEP_ACCEPTED 11 Vec3 { x: 7.5161332086457096, y: 62, z: 91.52155827359076 } 20 20 SAND 1 DIRT 0 AIR 24
+SAND_STEP_END {"issue":null,"p":{"x":7.5161332086457096,"y":62,"z":91.52155827359076},"hp":20,"food":20,"lost":false,"bad":[],"roof":"sandstone","kit":[["sand",1]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 62, 91.5) in overworld, health 20/20, food 20/20, alive

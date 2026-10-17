@@ -1,0 +1,60 @@
+program #3493 on p3: 19 s
+--- output ---
+EAST_LEDGE_PRE success 15
+DOOR_ACTUAL exit (6.561892964205141, 66.42159999847412, 79.28403235530628)
+BRIDGE_ISSUE The goal was changed before it could be completed!
+DOOR_ACTUAL enter (6.560140930968271, 67, 82.46536296454208)
+--- returned ---
+{
+ "issue": "The goal was changed before it could be completed!",
+ "placed": false,
+ "crossed": false,
+ "outbound": null,
+ "back": null,
+ "protectedEnd": true,
+ "dead": false,
+ "lost": false,
+ "hp": 20,
+ "food": 17,
+ "p": {
+  "x": 7.6278298446775015,
+  "y": 67.5625,
+  "z": 83.69977231244309
+ },
+ "dirt": [
+  25,
+  25
+ ],
+ "bridge": "air",
+ "gate": {
+  "powered": false,
+  "open": false,
+  "hinge": "left",
+  "half": "lower",
+  "facing": "south"
+ },
+ "checks": 180,
+ "stop": {
+  "blocked": true,
+  "tick": 12,
+  "kind": "lava",
+  "p": {
+   "x": 12.38349985803102,
+   "y": 66.23152379758702,
+   "z": 91.18047236567227
+  }
+ },
+ "listeners": {
+  "before": {
+   "physics": 2,
+   "path": 0
+  },
+  "after": {
+   "physics": 2,
+   "path": 0
+  }
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

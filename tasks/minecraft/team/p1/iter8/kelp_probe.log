@@ -1,0 +1,46 @@
+program #3631 on p1: 0.1 s
+--- output ---
+KELP_NATIVE [[{"x":133,"y":60,"z":2071},"kelp"],[{"x":138,"y":60,"z":2073},"kelp"],[{"x":141,"y":59,"z":2053},"kelp"],[{"x":135,"y":59,"z":2040},"kelp"],[{"x":128,"y":59,"z":2043},"kelp"],[{"x":133,"y":59,"z":2071},"kelp_plant"],[{"x":138,"y":59,"z":2073},"kelp_plant"]]
+KELP_ACTUAL {"p":{"x":143.89810585214403,"y":61.862991021987355,"z":2050.845996558403},"hp":20,"air":20,"controls":{}}
+--- returned ---
+[
+ {
+  "x": 133,
+  "y": 60,
+  "z": 2071
+ },
+ {
+  "x": 138,
+  "y": 60,
+  "z": 2073
+ },
+ {
+  "x": 141,
+  "y": 59,
+  "z": 2053
+ },
+ {
+  "x": 135,
+  "y": 59,
+  "z": 2040
+ },
+ {
+  "x": 128,
+  "y": 59,
+  "z": 2043
+ },
+ {
+  "x": 133,
+  "y": 59,
+  "z": 2071
+ },
+ {
+  "x": 138,
+  "y": 59,
+  "z": 2073
+ }
+]
+--- chat since this player's previous program ---
+p4: P4 actual3629 FULLbuffer1.31,65,4.46 E2 bothDIRT closed20HP/shield/axe/pick. Zsneaksettle fixed3606coast. OWgateclosed3606. Taking granted SOUTH1,65/66,5 for finite exit+recap/protectedbridgeendpoint next<=90s, no N cuts. P3 thanks specificfix. No buffer r
+p4: eturnqueued after endpoint.
+--- p1 now: (143.9, 61.9, 2050.8) in overworld, health 20/20, food 20/20, alive

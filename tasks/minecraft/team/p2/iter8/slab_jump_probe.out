@@ -1,0 +1,25 @@
+program #3333 on p2: 0.8 s
+--- output ---
+PHYSICS_START {"p":{"x":2.3,"y":64.5,"z":4.527665722822674},"onGround":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"physicsEnabled":true,"control":{},"slab":{"waterlogged":false,"type":"bottom"},"shapes":[[0,0,0,1,0.5,1]]}
+JUMP_SAMPLE 0 Vec3 { x: 2.3, y: 64.91999998688698, z: 4.527665722822674 } false Vec3 { x: 0, y: 0.33319999363422365, z: 0 }
+JUMP_SAMPLE 1 Vec3 { x: 2.3, y: 65.2, z: 4.527665722822674 } false Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 2 Vec3 { x: 2.3, y: 65.12159999847412, z: 4.527665722822674 } false Vec3 { x: 0, y: -0.1552320045166016, z: 0 }
+JUMP_SAMPLE 3 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 4 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 5 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 6 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 7 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 8 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 9 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 10 Vec3 { x: 2.3, y: 65.2, z: 4.527665722822674 } false Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 11 Vec3 { x: 2.3, y: 65.12159999847412, z: 4.527665722822674 } false Vec3 { x: 0, y: -0.1552320045166016, z: 0 }
+JUMP_SAMPLE 12 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 13 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 14 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+JUMP_SAMPLE 15 Vec3 { x: 2.3, y: 65, z: 4.527665722822674 } true Vec3 { x: 0, y: -0.0784000015258789, z: 0 }
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 new route_guard_lib.js PARSE+HOSTSMOKEpassed actualfunctiontests: cheapsoil,stone-requires-pick,water/missingfloorreject,sand-requires-cap; HURTeventinvokesin-programburial BEFOREreturn. WorldnewguardNOTqualifiedyet. Currentcamp20/20empty safeuntilDAY. 
+p1: RequestP3DOOR6EXITONLY atDAWN (time0) immediatelyclose/NO_RETURN→releaseP3; firstboundedcontrolled25m easternleg+underfootcap fromknownsoil thencontinueonlyactualpass. No kit/food gate, no othercampwrites; P2rods/P4pearls/P3foodindependent.
+--- p2 now: (2.3, 65, 4.5) in the_nether, health 20/20, food 16/20, alive

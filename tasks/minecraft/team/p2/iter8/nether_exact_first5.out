@@ -1,0 +1,20 @@
+program #3551 on p2: 10 s
+--- output ---
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4898208303694878, y: 65, z: 3.5024555292968236 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 2 } Vec3 { x: 1.4897040165160327, y: 65, z: 2.514898583284209 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.489579584367787, y: 65, z: 1.4619396257063761 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5020226383551731, y: 65, z: 1.4620564395597873 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5019058245017181, y: 65, z: 0.47449949354717336 } 20
+FIRST5_OUTBOUND_ACTUAL Vec3 { x: 0.5019058245017181, y: 65, z: 0.47449949354717336 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5019058245017181, y: 65, z: 0.47449949354717336 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5020302566500636, y: 65, z: 1.5362542896828935 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.4895872026626769, y: 65, z: 1.5361374758293944 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 2 } Vec3 { x: 1.4897040165162199, y: 65, z: 2.523694421842008 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4898208303697629, y: 65, z: 3.511251367854622 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 4 } Vec3 { x: 1.4899376442233059, y: 65, z: 4.498808313867236 } 20
+FIRST5_RETURN_FULL true Vec3 { x: 1.4899376442233059, y: 65, z: 4.498808313867236 } 20 20 CHECKS 63 INITIAL [["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",32,null],["crafting_table",1,null],["spruce_planks",1,null]] FINAL [["stick",2,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",32,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",2,null]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 20/20, alive

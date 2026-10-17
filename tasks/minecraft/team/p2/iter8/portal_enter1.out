@@ -1,0 +1,17 @@
+program #3310 on p2: 19 s
+--- output ---
+PREFLIGHT success 11
+UP_ACTUAL 63 20 4
+UP_ACTUAL 64 20 4
+UP_ACTUAL 65 20 3
+UP_ACTUAL 66 20 2
+PORTAL_ISSUE PORTAL Took to long to decide path to goal!
+ROLLBACK_FAILED ROLLBACK_OWN_KIND
+PORTAL_FINAL {"phase":"PORTAL","issue":"Took to long to decide path to goal!","p":{"x":12.5,"y":63,"z":98.5482051500113},"hp":20,"food":16,"dim":"overworld","lost":false,"opened":false,"elapsed":19017,"kit":[["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",4,null],["spruce_sapling",2,null],["crafting_table",1,null],["stone_pickaxe",1,121]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was slain by Zombie
+p4: P4 3308 ACTUALCAVEAPPROACH newown73,67,115 reachedfromownprivate4,65,83 viafresh80node drypreflight+worldtravel. HP20food20/SAMElife, 3DIRTdown+roof69DIRTactualclosed (inspectfinaloutput). OldP2column74untouched. Targetcaveoldstation75,26,115 stillHISTORYn
+p4: otcurrent. Nextboundedhandshaft3→8levels/call, lateralFULL checksBEFOREeachcut, end2highcoldcap topreventEnderteleport; no indefinitewait/sourceclaim.
+--- p2 now: (12.5, 63, 98.5) in overworld, health 20/20, food 16/20, alive

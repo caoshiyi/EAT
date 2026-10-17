@@ -1,0 +1,20 @@
+program #3509 on p2: 0 s
+--- output ---
+BUILD_ADMISSION [
+  [
+    'creeper',
+    Vec3 {
+      x: 16.278579984063573,
+      y: 65.25227537751198,
+      z: 104.6609544078612
+    }
+  ]
+] TIME 17000
+TRENCH_FIRST_ISSUE BUILD_THREAT
+OWN_SHAFT_ROLLBACK_ROOF grass_block
+TRENCH_START_END {"issue":"BUILD_THREAT","p":{"x":11.523022847919218,"y":62,"z":112.51021188900313},"hp":20,"food":20,"lost":false,"dirt":44}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (11.5, 62, 112.5) in overworld, health 20/20, food 20/20, alive

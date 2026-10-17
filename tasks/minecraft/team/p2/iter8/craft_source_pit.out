@@ -1,0 +1,27 @@
+program #3521 on p2: 7.1 s
+--- output ---
+CRAFT_DELTA spruce_planks 0 12 cursor undefined
+CRAFT_DELTA crafting_table 0 1 cursor undefined
+CRAFT_DELTA stick 0 4 cursor undefined
+CRAFT_DELTA wooden_pickaxe 0 1 cursor undefined
+CRAFT_DELTA wooden_sword 0 1 cursor undefined
+BOOTSTRAP_RECEIPT {"initial":[["dirt",36],["spruce_log",3]],"final":[["spruce_planks",1,null],["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",35,null],["crafting_table",1,null]],"hp":20,"food":20,"p":{"x":11.523022847919218,"y":64,"z":112.51021188900313}}
+CRAFT_END {
+  p: Vec3 { x: 11.523022847919218, y: 64, z: 112.51021188900313 },
+  hp: 20,
+  food: 20,
+  lost: false,
+  kit: [
+    [ 'spruce_planks', 1, null ],
+    [ 'stick', 1, null ],
+    [ 'wooden_pickaxe', 1, 0 ],
+    [ 'wooden_sword', 1, 0 ],
+    [ 'dirt', 35, null ],
+    [ 'crafting_table', 1, null ]
+  ]
+}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (11.5, 64, 112.5) in overworld, health 20/20, food 20/20, alive

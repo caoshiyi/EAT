@@ -1,0 +1,36 @@
+program #3306 on p3: 34.8 s
+--- output ---
+EDGE_ACTUAL (117, 59, 187) 15.666666030883789
+EDGE_ACTUAL (117, 59, 188) 15.666666030883789
+EDGE_ACTUAL (117, 59, 189) 15.666666030883789
+EDGE_ACTUAL (117, 59, 190) 15.666666030883789
+EDGE_ACTUAL (117, 59, 191) 15.666666030883789
+EDGE_ACTUAL (117, 59, 192) 15.666666030883789
+--- returned ---
+{
+ "issue": null,
+ "accepted": 6,
+ "hull": true,
+ "lost": false,
+ "p": {
+  "x": 117.7,
+  "y": 59,
+  "z": 192.7
+ },
+ "hp": 15.666666030883789,
+ "food": 17,
+ "cells": 8,
+ "inventory": [
+  [
+   "dirt",
+   13
+  ],
+  [
+   "dandelion",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (117.7, 59, 192.7) in overworld, health 15.7/20, food 17/20, alive

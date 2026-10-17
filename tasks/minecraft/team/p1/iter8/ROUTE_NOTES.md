@@ -1,0 +1,14 @@
+# Retained route lessons — iteration8 /00:30UTC
+Canonical executed field program: forward_route.js. Sources overland_lib.js + route_guard_lib.js + surface_box.js, then executable entry body. route_guard_field.js/forward_route_next.js are older drafts; don't regenerate from those.
+Positive world3552: start96,64,455 -> +215m ->162.482,60,659.477 full3DOWN+cap20HP20food/alltools. Strictcenter(q)+4settleticks+joint .33..67 bounds fixed ONEworldBURIAL_SETTLE case. Old centerDrop .29..71 tolerance can allow bodywidth.6 overhang; exact causal attribution incomplete.
+3532 leaf-only pathfinder canDig permits leaving spruce canopy. Restrict blocksCantBreak ALL registry IDs except *_leaves/snow/short_grass/fern. Positive +122m/BOX20HP, notgeneralcombatproof.
+SurfaceBOX physically succeeded3499 at3,65,115/nativeLOGroof and3532 at42,63,231/mixedfield. Fullfloor+8faces+roof required, rejectwater/unsupported. ReservescountcheckedBEFOREfirstplacement. Might refuse unsuitablegeometry: do not pause exposed.
+3541 +229m HP20 but burialfailedafterfirstfloorcut; endUNPROTECTED. Runnerstoppedcorrectly.3552 restoredpartialfloor beforecontinuing. Eachdig shouldverifyactualACK/settledbody; metadata nowprintsq/p/vel/ground/blocknames iffailure.
+3550 definitions-only NOOP from builder s+body withoutassignment; code0/0sec/nooutput is NOeffect. Correct s+=body, assert executable ending/AsyncFunctionparse, runnerSTOP_NO_END catchesmissingresult. Do not infer action fromexitcode.
+Night/day: routebounded with nightTrial=true, actualhealth/proximityburial/BOX retained. Cleanup clearscontrols/goal, leavesjump onlyifwater. Death/respawn/dimension/currentdeadline aborts; deadline1792198529. Runneraccepts onlyactualprotectedHP>=18/food>=9/noWater/noloss/progress>=12.
+First-eye candidate148,2212 source+packetinference, notverifiedstructure. Survey_candidate.js readonlyclientloadedblockinspection forarrival; no server/seed/files.
+
+## Shore/water —00:37 actual
+3581 stopped at138,63,1497 becauseopenwater32+south andwaterneighborfloor blockedBOX; endedUNPROTECTED20HP, notsuccessfulshelter. 3590 surface_box_waterfloor.js permitsWATERreplacementONLYy=-1 neighborfloor whileactorDRY+grounded/fullownfloor. Actual13DIRT builtFULLbox20HP. ThisdoesNOTsupportunderwaterbodyboxing.
+3594 surfacejump+forward+look gave43m/20s fullHP/food/AIR20.3598 scaled70s gave164m fullHP/food/air/nofoes to142.93,62.63,1704.61. FLOATisNOTshelter. DeliberatepersistentJUMPtrue/forwardfalse betweenprograms. isInWater togglesfalse atbobapex; FLOATcheck usesnotGround+waterbelow(0..-2) andrestoresjumpAFTERcleanup. bot.oxygenLevel docs0..20,20full.
+surface_swim.js canonical70s manual surface crossing; after400ms dryground switchesguardedWalk. run_swim.py stopsissue/air<18/HP<18/noactualend/stall/nofoesdistance>12forfloat. Onehostrunnerqualificationfirst; no blindlongloop. Inspectstagnation/landgeometry iffails, don'trepeatshorepath.

@@ -1,0 +1,11 @@
+program #3534 on p2: 0 s
+--- output ---
+PORTAL_ISSUE PRE PRE_START
+ROLLBACK_FAILED NAV_ACTUAL (12, 66, 98) (12.499943934452835, 62, 98.71790219512654)
+GUARD_CHECKS 1
+PORTAL_FINAL {"phase":"PRE","issue":"PRE_START","p":{"x":12.499943934452835,"y":62,"z":98.71790219512654},"hp":20,"food":20,"dim":"overworld","lost":false,"opened":false,"elapsed":10,"kit":[["spruce_planks",1,null],["stick",1,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",36,null],["crafting_table",1,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (12.5, 62, 98.7) in overworld, health 20/20, food 20/20, alive

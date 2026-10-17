@@ -1,0 +1,20 @@
+program #3475 on p2: 0 s
+--- output ---
+COVERED_TARGET Vec3 { x: 7, y: 62, z: 96 } ROOF dirt FLOOR stone
+OUTER [
+  [ '(7, 61, 96)', 'stone', true ],
+  [ '(7, 64, 96)', 'dirt', true ],
+  [ '(8, 62, 96)', 'dirt', true ],
+  [ '(8, 63, 96)', 'dirt', true ],
+  [ '(6, 62, 96)', 'dirt', true ],
+  [ '(6, 63, 96)', 'dirt', true ],
+  [ '(7, 62, 97)', 'dirt', true ],
+  [ '(7, 63, 97)', 'dirt', true ]
+]
+FOES []
+STATE Vec3 { x: 7.5005136760067925, y: 62, z: 95.5 } 20 20
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 62, 95.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,36 @@
+program #3442 on p2: 0 s
+--- output ---
+RESOURCE_BFS { found: false, expanded: 13, goal: '(11, 62, 112)', hp: 20, food: 20 }
+TREE18 [ 62, 'dirt' ] [ 63, 'dirt' ] [ 64, 'grass_block' ] [ 65, 'air' ] [ 66, 'air' ] [ 67, 'air' ] [ 68, 'air' ] [ 69, 'air' ] [ 70, 'spruce_log' ] [ 71, 'spruce_log' ] [ 72, 'spruce_leaves' ]
+TREE_SIDES [
+  [
+    1,
+    0,
+    'grass_block',
+    'air',
+    'air',
+    'air',
+    'spruce_leaves',
+    'spruce_leaves'
+  ],
+  [ -1, 0, 'grass_block', 'air', 'air', 'air', 'air', 'spruce_leaves' ],
+  [
+    0,
+    1,
+    'grass_block',
+    'air',
+    'air',
+    'spruce_leaves',
+    'spruce_leaves',
+    'spruce_leaves'
+  ],
+  [ 0, -1, 'air', 'air', 'air', 'air', 'air', 'spruce_leaves' ]
+]
+OLD_TREE11 [ 63, 'dirt' ] [ 64, 'grass_block' ] [ 65, 'air' ] [ 66, 'air' ] [ 67, 'spruce_log' ] [ 68, 'spruce_log' ] [ 69, 'spruce_log' ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_SOURCE_END LOGnet3 SEALEDtrue HP20 phaseBURY issueSOIL_HULL_PRE no pendingdoorcallbacks.
+p4: P1 ACKhelperSTONE_SWORD_RELEASE3424; NO weaponmanufacture/handoffforyou/no waiting. P4 3431 ACTUALindependent3LOGretained20HP20food/SAMEcurrentlife; TREE63,66..68success, original63soilveto→boundedfallbacknew62,60,136 sealedDIRTcap62 actual20/20/DIRT2. Out
+p4: putreal3LOG notintent. UseOWNminimumWOODPICK+STONEAXE from3logs/3cobble forchangedresourceavenue, finite3minproducer acceptance actualtools+protectedending, no stockpile/tablecampwrites. Oldcamp6volumegrant2671 acceptedP1/released; currentP2podpreserved.
+--- p2 now: (7.5, 62, 85.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,16 @@
+program #3365 on p4: 14 s
+--- output ---
+FIXED_OPEN Vec3 { x: 73, y: 42, z: 79 }
+FIXED_OPEN Vec3 { x: 73, y: 43, z: 79 }
+FIXED_OPEN Vec3 { x: 74, y: 42, z: 80 }
+FIXED_OPEN Vec3 { x: 74, y: 43, z: 80 }
+TARGET_INITIAL 106 Vec3 { x: 74.3419118251165, y: 39, z: 79.69998158355153 } 23
+SWING 1 106 23 2.3624922625261653
+TARGET_HURT_ACK 106 23 1
+CONTACT_ISSUE OWN_DAMAGE
+CONTACT_RESULT {"at":1792193450203,"id":106,"swings":1,"hurts":1,"killed":false,"gone":false,"damaged":true,"lost":false,"issue":"OWN_DAMAGE","sealed":true,"hp":19,"pearlNet":0,"drops":[],"p":{"x":73.53170174484526,"y":42,"z":80.6795837936422},"entries":[[73,42,79],[73,43,79],[74,42,80],[74,43,80]],"cuts":[[73,42,79],[73,43,79],[74,42,80],[74,43,80]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (73.5, 42, 80.7) in overworld, health 19/20, food 20/20, alive

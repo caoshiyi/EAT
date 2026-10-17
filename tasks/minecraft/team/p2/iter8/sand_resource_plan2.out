@@ -1,0 +1,41 @@
+program #3419 on p2: 0.1 s
+--- output ---
+RESOURCE_BFS {
+  found: true,
+  expanded: 2179,
+  goal: '(11, 62, 112)',
+  hp: 20,
+  food: 20
+}
+RESOURCE_PLAN {"path":[[6,62,85],[7,62,85],[8,62,85],[9,62,85],[9,62,86],[9,62,87],[9,62,88],[8,62,88],[8,62,89],[8,62,90],[7,62,90],[7,62,91],[7,62,92],[7,62,93],[7,62,94],[7,62,95],[7,62,96],[7,62,97],[7,62,98],[7,62,99],[7,62,100],[7,62,101],[7,62,102],[7,62,103],[7,62,104],[7,62,105],[7,62,106],[7,62,107],[7,62,108],[7,62,109],[8,62,109],[8,62,110],[9,62,110],[9,62,111],[10,62,111],[10,62,112],[11,62,112]],"cost":[{"sand":5,"dirt":0,"hard":0,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":1,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":1,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":1,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":1,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":1,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":0,"roof":"sand","cuts":4},{"sand":3,"dirt":0,"hard":1,"roof":"sand","cuts":4},{"sand":5,"dirt":0,"hard":0,"roof":"sand","cuts":5},{"sand":4,"dirt":0,"hard":0,"roof":"sand","cuts":4},{"sand":4,"dirt":0,"hard":0,"roof":"sand","cuts":4},{"sand":4,"dirt":0,"hard":0,"roof":"sand","cuts":4},{"sand":3,"dirt":0,"hard":0,"roof":"sand","cuts":3},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"dirt","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2},{"sand":0,"dirt":2,"hard":0,"roof":"grass_block","cuts":2}],"edges":36,"estimatedSeconds":157.1999999999999,"sandEnd":0,"dirtEnd":46}
+TREE18 [ 62, 'dirt' ] [ 63, 'dirt' ] [ 64, 'grass_block' ] [ 65, 'air' ] [ 66, 'air' ] [ 67, 'air' ] [ 68, 'air' ] [ 69, 'air' ] [ 70, 'spruce_log' ] [ 71, 'spruce_log' ] [ 72, 'spruce_leaves' ]
+TREE_SIDES [
+  [
+    1,
+    0,
+    'grass_block',
+    'air',
+    'air',
+    'air',
+    'spruce_leaves',
+    'spruce_leaves'
+  ],
+  [ -1, 0, 'grass_block', 'air', 'air', 'air', 'air', 'spruce_leaves' ],
+  [
+    0,
+    1,
+    'grass_block',
+    'air',
+    'air',
+    'spruce_leaves',
+    'spruce_leaves',
+    'spruce_leaves'
+  ],
+  [ 0, -1, 'air', 'air', 'air', 'air', 'air', 'spruce_leaves' ]
+]
+OLD_TREE11 [ 63, 'dirt' ] [ 64, 'grass_block' ] [ 65, 'air' ] [ 66, 'air' ] [ 67, 'spruce_log' ] [ 68, 'spruce_log' ] [ 69, 'spruce_log' ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.5, 62, 85.5) in overworld, health 20/20, food 20/20, alive

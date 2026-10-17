@@ -1,0 +1,67 @@
+program #3286 on p2: 34.8 s
+--- output ---
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 113 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 113 } dirt
+ACCEPTED 1 [ 8, 62, 112 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 112 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 112 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 112 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 112 } dirt
+ACCEPTED 2 [ 8, 62, 111 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 111 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 111 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 111 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 111 } dirt
+ACCEPTED 3 [ 8, 62, 110 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 110 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 110 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 110 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 110 } dirt
+ACCEPTED 4 [ 8, 62, 109 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 109 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 109 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 109 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 109 } dirt
+ACCEPTED 5 [ 8, 62, 108 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 108 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 108 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 108 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 108 } dirt
+ACCEPTED 6 [ 8, 62, 107 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 107 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 107 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 107 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 107 } dirt
+ACCEPTED 7 [ 8, 62, 106 ] HP 20 FOOD 16
+STEP_DROPS 5
+CAP_INTENT Vec3 { x: 8, y: 62, z: 106 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 62, z: 106 } dirt
+CAP_INTENT Vec3 { x: 8, y: 63, z: 106 } dirt
+CAP_ACTUAL Vec3 { x: 8, y: 63, z: 106 } dirt
+ACCEPTED 8 [ 8, 62, 105 ] HP 20 FOOD 16
+BATCH_PROGRESS 8 20 [ 8, 62, 105 ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 8.499698432878303, y: 62, z: 105.5 } 20 16 FULL true LOST false KIT [
+  [ 'spruce_planks', 1, null ],
+  [ 'stick', 1, null ],
+  [ 'wooden_pickaxe', 1, 0 ],
+  [ 'wooden_sword', 1, 0 ],
+  [ 'dirt', 3, null ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'crafting_table', 1, null ],
+  [ 'stone_pickaxe', 1, 121 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (8.5, 62, 105.5) in overworld, health 20/20, food 16/20, alive

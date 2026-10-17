@@ -1,0 +1,8 @@
+# Iteration8 review — 2026-10-16T23:56:23.879840+00:00
+Official23:54:58 dragon0/milestones9/deaths76/programs3456/restarts1. Inherited+363programs/+8deaths/0milestones; lastreview+37programs/0deaths. Currentdeadline00:55:29UTC Oct17 CR_DEADLINE1792198529; ~60minremain, continue.
+
+P3foodchainFULLYclosedtoBANK3449 lowerPORK1+BEEF2/own0/windowclosed/BOTHdoorsclosed/ASIDE/SAMElife. Latepositiveproducer→weapon→kill→retainedreceipt→return→bank real, earlierfailedbudgetsnoterased. RELEASEfoodparticipants/extraquota. NoP1foodreceiptclaimed, actualrawbankstock3. Normalguardedreturnpositive514checks/no triggerdoesNOTqualifyhazardstop.
+
+P1ratecomparisonconsumed/rejected2kmhandtunnel. OldroutephysicalDIRT TENsteps20.719s+NINE17.277s20HP/full confirmsdifferent~2s/m vs8.58hardstone. Budget23:52tooloutputMISSED/no wood/pickyet, thoughactualsourceaccessadvances; nextcompleteoutput/forwardchoice ratherautomaticprepcycle. P4acknowledgedoptionalP1weaponrelease, source3logs+ownaxeproducercomplete/released; nextindependentobjective/usemissingby23:55request. P2identifiedzeroreserveexacttwo-vs-fourcolumnerror, changedbottom-upworldpasses/no NETsupplyyet; nextsmallquarrytesthasNET+endingcontract. Resource/callerimprovementsNOTmilestones.
+
+Localhandoff/releaseexperimenthasrealBANKresultandlimitedownershipsuccess; after60minobjectiveunchanged8deaths meansnoobjectiveeffectivenessclaim. Noallteamrecovery/kitgate. Allownersrecentexecution/listingonlyroot/no peerIDs/prematurefinishproof. Tokenusageunavailable. Nextreview00:05/liveness00:00.

@@ -1,0 +1,16 @@
+program #3379 on p2: 0 s
+--- output ---
+ACTUAL Vec3 { x: 5.5, y: 67, z: 84.5 } 20 20 400 false
+CELL 5 84 sandstone air air air air air cobblestone snow air air
+CELL 4 84 sandstone snow air air air air air air air air
+CELL 5 85 sandstone sandstone sand sand sand snow air air air air
+CELL 6 84 sandstone sandstone sandstone sand sand sand sand dirt dirt dirt
+CELL 4 85 sandstone sand sand snow air air air air air air
+FOES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_FIST_RESULT targetnull swings0 hurtACK0 deadACKfalse PEARLnet0 visibleDrops0 SEALEDfalse HP20 issueRESTORE4_RESERVE no pendingcallbacks.
+p3: DOOR6 standingAVAILABLE localactor mayCLAIMoneatomictransit whenactuallyNEAR, afterfreshlatestclaim+floor66+bodyclearcheck; publishsoleclaim→actualEXIT/ENTRY+CLOSE→release. P3remote/no6handlers/NOqueuedfuturedoorreturnreservation. DontwaitP3sourceworkpermi
+p3: ssion; onlyactualconflictingclaimserializes. TABLE66P1fixtureseparate: no crossingmissingfloor. P3willfreshclaimonlywhennearduringfoodbankreturn, checklateststate first.
+--- p2 now: (5.5, 67, 84.5) in overworld, health 20/20, food 20/20, alive

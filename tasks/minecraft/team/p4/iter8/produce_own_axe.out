@@ -1,0 +1,16 @@
+program #3443 on p4: 15.9 s
+--- output ---
+CRAFTED spruce_planks 4
+CRAFTED spruce_planks 8
+CRAFTED spruce_planks 12
+CRAFTED crafting_table 1
+CRAFTED stick 4
+CRAFTED wooden_pickaxe 1
+CRAFTED stone_axe 1
+OWN_AXE_RETAINED 20 1 1 2
+PRODUCER_END {"phase":"EXIT_RESERVE","p":{"x":62.47719148586002,"y":60,"z":136.50260459885678},"hp":20,"lost":false,"items":[["spruce_planks",3,null],["wooden_pickaxe",1,3],["dirt",2,null],["stone_axe",1,0]],"cap":"crafting_table"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (62.5, 60, 136.5) in overworld, health 20/20, food 20/20, alive

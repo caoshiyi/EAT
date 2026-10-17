@@ -1,0 +1,34 @@
+program #3559 on p2: 20.6 s
+--- output ---
+STAGE_END_ADMISSION Vec3 { x: -23, y: 62, z: -29 } true
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4898573981918695, y: 65, z: 3.493094150362098 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 2 } Vec3 { x: 1.4897405843384144, y: 65, z: 2.5055372043494835 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.4896237704849593, y: 65, z: 1.5179802583368702 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5020668244723454, y: 65, z: 1.5180970721902813 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5019423923240998, y: 65, z: 0.4651381146124478 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.5018773828818104, y: 66, z: -0.5330339850131451 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -2 } Vec3 { x: 0.5017605690283553, y: 66, z: -1.5205909310257586 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -3 } Vec3 { x: 0.5016437551749002, y: 66, z: -2.5081478770383736 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -4 } Vec3 { x: 0.5015269413214452, y: 66, z: -3.495704823050988 } 20
+EXACT_STEP Vec3 { x: 0, y: 67, z: -5 } Vec3 { x: 0.5014583766763181, y: 67, z: -4.5350326079014796 } 20
+EXACT_STEP Vec3 { x: -1, y: 66, z: -5 } Vec3 { x: -0.5305805121445075, y: 66, z: -4.5349361094968845 } 20
+EXACT_STEP Vec3 { x: -1, y: 67, z: -6 } Vec3 { x: -0.5306455215867969, y: 67, z: -5.533108209122477 } 20
+STAGE_ISSUE CENTER_STOP_(-2, 66, -6) 12 Vec3 { x: -1.804158236735584, y: 66, z: -5.532981237542685 } 20
+EXACT_STEP Vec3 { x: -1, y: 67, z: -6 } Vec3 { x: -0.5245733856087893, y: 67, z: -5.533082814798607 } 20
+EXACT_STEP Vec3 { x: -1, y: 66, z: -5 } Vec3 { x: -0.5244768872040007, y: 66, z: -4.51408743025826 } 20
+EXACT_STEP Vec3 { x: 0, y: 67, z: -5 } Vec3 { x: 0.5148508976464918, y: 67, z: -4.514155994903411 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -4 } Vec3 { x: 0.5149778692264303, y: 66, z: -3.328817876220051 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -3 } Vec3 { x: 0.5150769070587824, y: 66, z: -2.481502211007645 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -2 } Vec3 { x: 0.5151911814807272, y: 66, z: -1.5146257170016078 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.5153181530606656, y: 66, z: -0.45388850901230965 } 20
+STAGE_RECOVERY_FAILED CENTER_STOP_(0, 65, 0) Vec3 { x: 0.5154451246406041, y: 65, z: 0.8382753273388868 } 20
+STAGE_END {"issue":"CENTER_STOP_(-2, 66, -6)","closed":false,"reached":12,"p":{"x":0.5154451246406041,"y":65,"z":0.8382753273388868},"hp":20,"food":20,"lost":false,"elapsed":20554}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 actual3552 +215m to162.48,60,659.48 underfoot3DOWN+cap FULL20HP20food/DIRT22/toolsretained/nofoes. Strictcenter(q)+settle fixed ONE actualBURIAL_SETTLE case; no universalproof. Next2bounded80s guardedstages strongholdNAV148,2212. Lastofficial9/12dragon0
+p1: . No sharedwriter/helperdependency.
+p4: P4 OWlowtrap avenueCLOSEDbeforeworlddeparture: firstpreflighttimeout, changedmobadmissionveto, latest14287DESPAWNED/noendernearnewbay. AlltoolsSHIELD/AXE/PICK retained20HP20food source62,60,136 FULL. GenuinelydifferentONEpearl source candidate WARPEDforest
+p4: : ownhistoricalbiome nylium−15,70,139/oldSouthbridge0,67,77 (~140mNether, notfortress). P2 activebuffer1,65,4 needONLY narrowhandoff/routefacts whenyourburstclosed: canP4 enterthenuseSOUTHwithoutoverlapN/E? No helperwatch/kit/manufacture; OWapproachindepen
+p4: dent first. P3 anyliveportalwriterclaim? WillfreshclaimonlywhenNEAR; no standingreservation.
+--- p2 now: (0.5, 65, 0.8) in the_nether, health 20/20, food 20/20, alive

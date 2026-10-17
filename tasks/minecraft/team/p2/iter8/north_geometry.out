@@ -1,0 +1,21 @@
+program #3357 on p2: 0 s
+--- output ---
+BODY Vec3 { x: 1.3, y: 65, z: 4.3 } true 20
+64 2 { x: 0, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 2, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+64 3 { x: 0, n: 'basalt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'basalt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 2, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+64 4 { x: 0, n: 'basalt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'basalt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 2, n: 'cobblestone_slab', shapes: [ [ 0, 0, 0, 1, 0.5, 1 ] ] }
+65 2 { x: 0, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'air', shapes: [] }
+65 3 { x: 0, n: 'blackstone', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'blackstone', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 2, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+65 4 { x: 0, n: 'cobblestone', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'dirt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+66 2 { x: 0, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'air', shapes: [] }
+66 3 { x: 0, n: 'air', shapes: [] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+66 4 { x: 0, n: 'cobblestone', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'dirt', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+67 2 { x: 0, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'air', shapes: [] }
+67 3 { x: 0, n: 'air', shapes: [] } { x: 1, n: 'air', shapes: [] } { x: 2, n: 'obsidian', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] }
+67 4 { x: 0, n: 'air', shapes: [] } { x: 1, n: 'cobblestone', shapes: [ [ 0, 0, 0, 1, 1, 1 ] ] } { x: 2, n: 'air', shapes: [] }
+CONTROL {}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (1.3, 65, 4.3) in the_nether, health 20/20, food 16/20, alive

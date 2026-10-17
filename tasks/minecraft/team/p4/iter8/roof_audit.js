@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');let cells=[];for(let x=5;x<=8;x++)for(let z=79;z<=84;z++){let a=[];for(let y=65;y<=70;y++){let b=bot.blockAt(new Vec3(x,y,z));a.push([y,b?.name]);}cells.push({x,z,a});}console.log(JSON.stringify(cells));console.log('ENDERMEN',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='enderman').map(e=>({id:e.id,p:e.position}))));

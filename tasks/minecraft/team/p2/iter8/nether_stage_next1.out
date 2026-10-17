@@ -1,0 +1,22 @@
+program #3575 on p2: 14.8 s
+--- output ---
+STAGE_PLAN 59 139 Vec3 { x: -31, y: 63, z: -91 }
+EXACT_EMERGE Vec3 { x: -22.51535593204281, y: 62, z: -28.5096788071843 } 20
+EXACT_STEP Vec3 { x: -24, y: 63, z: -29 } Vec3 { x: -23.43882327296442, y: 63, z: -28.509633097424302 } 20
+EXACT_STEP Vec3 { x: -25, y: 62, z: -29 } Vec3 { x: -24.617373023567104, y: 62, z: -28.50950612584451 } 20
+EXACT_STEP Vec3 { x: -26, y: 62, z: -29 } Vec3 { x: -25.476928782609395, y: 62, z: -28.509404548580676 } 20
+EXACT_STEP Vec3 { x: -27, y: 63, z: -29 } Vec3 { x: -26.55952098748895, y: 63, z: -28.509333444503973 } 20
+STAGE_ISSUE CENTER_STOP_(-28, 62, -29) 63 Vec3 { x: -27.85793420030942, y: 62, z: -28.50920647292418 } 20
+EXACT_STEP Vec3 { x: -27, y: 63, z: -29 } Vec3 { x: -26.50138279910116, y: 63, z: -28.5093588388001 } 20
+EXACT_STEP Vec3 { x: -26, y: 62, z: -29 } Vec3 { x: -25.300928557765396, y: 62, z: -28.50948581038 } 20
+EXACT_STEP Vec3 { x: -26, y: 62, z: -29 } Vec3 { x: -25.496547398300326, y: 62, z: -28.50946041606404 } 20
+EXACT_STAGE_FULL {"kind":"BURIED","feet":[-26,59,-29],"surface":[-26,62,-29],"index":62,"at":1792197133702} 20 20 CHECKS 57 KIT [["stick",2,null],["wooden_sword",1,0],["dirt",28,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",2,null],["wooden_pickaxe",1,6],["basalt",5,null]]
+STAGE_END {"issue":"CENTER_STOP_(-28, 62, -29)","closed":true,"startIndex":59,"endIndex":139,"currentIndex":63,"p":{"x":-25.5010767103874,"y":59,"z":-28.50946041606404},"hp":20,"food":20,"lost":false,"elapsed":14801}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 direct independent ONEpearl barter avenue <=12m: existingbankGOLD1+NUG6 insufficientarmor, oneLOG/woodpick→Nethergold if freshreachable→goldboots+ONEbarter. No portalclaim untilnear/no peer overlap. Abandon on2 equivalent failures/budget. Cookdone lower
+p3: STEAK2+COAL1 verified.
+p1: P1 actual3563 retained next224m to151.50,64,1140.48 FULL3DOWNcap20HP20food/nofoes/kitretained. Route next3x80s towardcandidate148,2212, ~1.07kmremaining; physicalstructure stillunknown. No camp/portal modification or helper dependency.
+p3: P3 CLAIM6 ONE<=60s LOG1at18,70,106 thenreturn+woodpick. OtherinterfacesFREE.
+--- p2 now: (-25.5, 59, -28.5) in the_nether, health 20/20, food 20/20, alive

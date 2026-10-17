@@ -1,0 +1,18 @@
+program #3136 on p4: 12.3 s
+--- output ---
+START Vec3 { x: -2.3, y: 65, z: 95.8256540890931 } true false undefined
+LOCAL [[{"x":-4,"y":64,"z":94},"sand",[[0,0,0,1,1,1]]],[{"x":-4,"y":65,"z":94},"snow",[]],[{"x":-4,"y":66,"z":94},"air",[]],[{"x":-4,"y":64,"z":95},"sand",[[0,0,0,1,1,1]]],[{"x":-4,"y":65,"z":95},"snow",[]],[{"x":-4,"y":66,"z":95},"air",[]],[{"x":-4,"y":64,"z":96},"sand",[[0,0,0,1,1,1]]],[{"x":-4,"y":65,"z":96},"snow",[]],[{"x":-4,"y":66,"z":96},"air",[]],[{"x":-3,"y":64,"z":94},"sand",[[0,0,0,1,1,1]]],[{"x":-3,"y":65,"z":94},"snow",[]],[{"x":-3,"y":66,"z":94},"air",[]],[{"x":-3,"y":64,"z":95},"sand",[[0,0,0,1,1,1]]],[{"x":-3,"y":65,"z":95},"snow",[]],[{"x":-3,"y":66,"z":95},"air",[]],[{"x":-3,"y":64,"z":96},"sand",[[0,0,0,1,1,1]]],[{"x":-3,"y":65,"z":96},"snow",[]],[{"x":-3,"y":66,"z":96},"air",[]],[{"x":-2,"y":64,"z":94},"snow",[]],[{"x":-2,"y":65,"z":94},"air",[]],[{"x":-2,"y":66,"z":94},"air",[]],[{"x":-2,"y":64,"z":95},"sand",[[0,0,0,1,1,1]]],[{"x":-2,"y":65,"z":95},"sand",[[0,0,0,1,1,1]]],[{"x":-2,"y":66,"z":95},"snow",[]],[{"x":-2,"y":64,"z":96},"sand",[[0,0,0,1,1,1]]],[{"x":-2,"y":65,"z":96},"snow",[]],[{"x":-2,"y":66,"z":96},"air",[]]]
+MANUAL_ACTUAL Vec3 { x: -2.3, y: 65, z: 95.8256540890931 }
+LEG -3 85 Vec3 { x: -2.680415545138452, y: 65, z: 85.48696848026452 }
+END Vec3 { x: -2.3, y: 65, z: 85.08480375586265 } 20 false
+--- error ---
+Error: NAV_BOUND
+    at p4-program-3136.js:7:192
+    at guard (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:59:17)
+    at Timeout.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:64:52)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+p3: P4 geometry3134 fromactual(-2.3,65,95.826): EASTblock(-2,65,95) SANDfull, WESTcell(-4,65,95)SNOW/air66 supported64SAND; NORTH(-3,65,94)SNOW supported64SAND, (-3,64,93)SNOW supported63SAND. Suggest ownmanualWESTcenter-3.5 first thenNORTH93.5 iffreshclear; r
+p3: outeplanning/sourceevidence notphysicalpass. P1hold6untilP4actualreturnACK, onlyconflictingdoorinterfaceheld.
+--- p4 now: (-2.3, 65, 85.1) in overworld, health 20/20, food 20/20, alive

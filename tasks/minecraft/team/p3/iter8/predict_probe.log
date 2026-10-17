@@ -1,0 +1,83 @@
+program #3414 on p3: 0.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "cold": {
+  "blocked": false,
+  "tick": 8,
+  "p": {
+   "x": null,
+   "y": 63.99999999999999,
+   "z": null
+  }
+ },
+ "scenario": {
+  "start": {
+   "x": 16.5,
+   "y": 67,
+   "z": 95.5
+  },
+  "target": {
+   "x": 16.5,
+   "y": 66,
+   "z": 94.5
+  }
+ },
+ "simulated": [
+  {
+   "horizon": 4,
+   "blocked": false,
+   "tick": 4,
+   "p": {
+    "x": 16.5,
+    "y": 67,
+    "z": 94.97653109184603
+   }
+  },
+  {
+   "horizon": 8,
+   "blocked": false,
+   "tick": 8,
+   "p": {
+    "x": 16.5,
+    "y": 66.76636799395752,
+    "z": 94.22220511362418
+   }
+  },
+  {
+   "horizon": 12,
+   "blocked": true,
+   "tick": 10,
+   "kind": "lava",
+   "p": {
+    "x": 16.5,
+    "y": 66.23152379758702,
+    "z": 93.93058077302669
+   }
+  }
+ ],
+ "actualBodyUnchanged": true,
+ "actual": {
+  "p": {
+   "x": 40.5,
+   "y": 64,
+   "z": 117.49835678140253
+  },
+  "hp": 17.66666603088379,
+  "controls": {}
+ },
+ "now": {
+  "p": {
+   "x": 40.5,
+   "y": 64,
+   "z": 117.49835678140253
+  },
+  "hp": 17.66666603088379,
+  "controls": {}
+ },
+ "scope": "ISOLATED_PREDICTION_ONLY_no_state_apply_or_controls"
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (40.5, 64, 117.5) in overworld, health 17.7/20, food 17/20, alive

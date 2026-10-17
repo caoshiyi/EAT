@@ -1,0 +1,51 @@
+program #3345 on p2: 0 s
+--- output ---
+ACTUAL Vec3 { x: 1.3, y: 65, z: 4.527792694402467 } 20 16
+SAFE_BURY_TARGETS [
+  [ 59, '(-23, 62, -29)' ], [ 61, '(-25, 62, -29)' ],
+  [ 62, '(-26, 62, -29)' ], [ 77, '(-29, 63, -31)' ],
+  [ 78, '(-29, 63, -32)' ], [ 79, '(-29, 63, -33)' ],
+  [ 80, '(-29, 63, -34)' ], [ 81, '(-29, 63, -35)' ],
+  [ 82, '(-29, 63, -36)' ], [ 83, '(-29, 63, -37)' ],
+  [ 84, '(-29, 63, -38)' ], [ 85, '(-29, 63, -39)' ],
+  [ 86, '(-29, 63, -40)' ], [ 87, '(-29, 63, -41)' ],
+  [ 88, '(-29, 63, -42)' ], [ 89, '(-29, 63, -43)' ],
+  [ 90, '(-29, 63, -44)' ], [ 91, '(-29, 63, -45)' ],
+  [ 92, '(-29, 63, -46)' ], [ 93, '(-29, 63, -47)' ],
+  [ 94, '(-29, 63, -48)' ], [ 95, '(-29, 63, -49)' ],
+  [ 96, '(-29, 63, -50)' ], [ 97, '(-29, 63, -51)' ],
+  [ 98, '(-29, 63, -52)' ], [ 99, '(-29, 63, -53)' ]
+]
+FIRST_FLOORS [
+  [ [ 1, 65, 4 ], 'basalt', 'air', 'air' ],
+  [ [ 1, 65, 3 ], 'basalt', 'blackstone', 'blackstone' ],
+  [ [ 1, 65, 2 ], 'obsidian', 'air', 'air' ],
+  [ [ 1, 65, 1 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 65, 1 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 65, 0 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 66, -1 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 66, -2 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 66, -3 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 66, -4 ], 'basalt', 'air', 'air' ],
+  [ [ 0, 67, -5 ], 'basalt', 'air', 'air' ],
+  [ [ -1, 66, -5 ], 'basalt', 'air', 'air' ],
+  [ [ -1, 67, -6 ], 'basalt', 'air', 'air' ],
+  [ [ -2, 66, -6 ], 'basalt', 'air', 'air' ],
+  [ [ -3, 66, -6 ], 'basalt', 'air', 'air' ],
+  [ [ -4, 65, -6 ], 'basalt', 'air', 'air' ],
+  [ [ -4, 65, -7 ], 'basalt', 'air', 'air' ],
+  [ [ -4, 65, -8 ], 'basalt', 'air', 'air' ],
+  [ [ -4, 65, -9 ], 'blackstone', 'air', 'air' ],
+  [ [ -4, 65, -10 ], 'basalt', 'air', 'air' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 dawnclaim: latestP3.md23:20 explicitlyDOOR6AVAILABLE/noqueuedcampreturn/no callbacks/worldwrites; P3remote117,59,192, P4remote73,67,115, P2Nether. No conflictingactor. P1 CLAIMavailable6 EXITONLY10s atactualDAY0, expectedNORTH+CLOSED→open/transit→CLOSED
+p1:  immediateRELEASEP3/NO_RETURN, perstandingavailableinterface notbroadpermissionqueue. Currentcampfull66TABLE, onlyP1surfacebody. Controlledguard_small worldtestthenindependentfield.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002236837861, 66, 78.86079872541603) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 GUARD_SMALL_EXIT actualclosed6 RELEASE6P3 NO_RETURN; newin-programproximity/HURTcap smallcontrolledtrial.
+p3: P1 freshDAWN DOOR6EXITONLY ACK NOW soleP1 EXIT+CLOSE+NO_RETURN thenrelease6P3; P3remoteprivatework/no6controllers/P4remote no campwrites. P3actual3337 dryUP4wood1retained/cut2, body118.5,63,191HP15.67food16 EXPOSED despite sealedTRUE label (helperresetopen
+p3: ed suppressedfinally; fixedsource+immediatephysicalclose next). No safeendingclaim untilbodyreturns59+cap.
+[server] p1 tried to swim in lava to escape Zombie
+--- p2 now: (1.3, 65, 4.5) in the_nether, health 20/20, food 16/20, alive

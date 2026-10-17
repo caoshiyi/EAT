@@ -1,0 +1,22 @@
+program #3555 on p2: 11.5 s
+--- output ---
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4898208303698508, y: 65, z: 3.511251367854621 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 2 } Vec3 { x: 1.4897040165163957, y: 65, z: 2.5236944218420065 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.48957958436815, y: 65, z: 1.4707354642641737 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5020226383555362, y: 65, z: 1.4708522781175848 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5019058245020811, y: 65, z: 0.48361538792019765 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.5018408150597917, y: 66, z: -0.5145567117053953 } 20
+FIRST6_OUTBOUND_ACTUAL Vec3 { x: 0.5018408150597917, y: 66, z: -0.5145567117053953 } 20
+EXACT_STEP Vec3 { x: 0, y: 66, z: -1 } Vec3 { x: 0.5018408150597917, y: 66, z: -0.5145567117053953 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 0 } Vec3 { x: 0.5019677866397302, y: 65, z: 0.6707814069779647 } 20
+EXACT_STEP Vec3 { x: 0, y: 65, z: 1 } Vec3 { x: 0.5020668244720823, y: 65, z: 1.5180970721903706 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 1 } Vec3 { x: 1.4896237704846955, y: 65, z: 1.5179802583368716 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 2 } Vec3 { x: 1.4897405843382385, y: 65, z: 2.505537204349485 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 3 } Vec3 { x: 1.4898573981917815, y: 65, z: 3.493094150362099 } 20
+EXACT_STEP Vec3 { x: 1, y: 65, z: 4 } Vec3 { x: 1.4899742120453245, y: 65, z: 4.480651096374713 } 20
+FIRST6_RETURN_FULL true Vec3 { x: 1.4899742120453245, y: 65, z: 4.480651096374713 } 20 20 CHECKS 73 INITIAL [["stick",2,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",32,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",2,null]] FINAL [["stick",2,null],["wooden_pickaxe",1,0],["wooden_sword",1,0],["dirt",32,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",2,null]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 CREEPER_END deadACKfalse HP20→20 CAMPtrue RELEASE6_AVAILABLE callbacksNONE; stairs["dirt","dirt","dirt","dirt"] PODroofsandstone issBLOCKER_ALREADY_GONE
+--- p2 now: (1.5, 65, 4.5) in the_nether, health 20/20, food 20/20, alive

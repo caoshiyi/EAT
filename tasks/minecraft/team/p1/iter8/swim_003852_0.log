@@ -1,0 +1,17 @@
+program #3614 on p1: 70 s
+--- output ---
+SWIM_PROGRESS {"p":{"x":143.27952057540386,"y":62.2567727088875,"z":1868.60932229235},"hp":20,"air":20,"water":true}
+SWIM_PROGRESS {"p":{"x":143.3721887213913,"y":61.89357961449923,"z":1903.299325840833},"hp":20,"air":20,"water":true}
+SWIM_PROGRESS {"p":{"x":143.47619532450628,"y":62.46744153429913,"z":1938.4559729984064},"hp":20,"air":20,"water":true}
+SWIM_PROGRESS {"p":{"x":143.59025746828945,"y":62.80584870879283,"z":1973.6283956002114},"hp":20,"air":20,"water":false}
+SWIM_PROGRESS {"p":{"x":143.71924834520928,"y":62.390804866518295,"z":2008.7800931567956},"hp":20,"air":20,"water":true}
+OVERLAND_END {"p":{"x":143.8153480199857,"y":62.29597402186567,"z":2032.064810683575},"hp":20,"food":20,"lost":false,"protected":false,"water":true,"grounded":false,"foes":[],"air":18,"kit":[["dirt",9,null],["wooden_pickaxe",1,7],["stone_axe",1,5],["crafting_table",1,null],["spruce_log",4,null],["stone_pickaxe",1,1],["wooden_shovel",1,1]],"refuge":null}
+SWIM_END {"origin":{"x":143.27952057540386,"y":62.2567727088875,"z":1868.60932229235},"p":{"x":143.8153480199857,"y":62.29597402186567,"z":2032.064810683575},"delta":163.45637134418212,"phase":"FLOAT","issue":null,"hp":20,"food":20,"air":18,"lost":false,"protected":false,"floating":true,"jump":true,"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 3611 measured3Magmafeet68/69 overcurrentfloor63/roof65FULLbasalt, rayblockedroof. 3612 changedceilingmask ONLYMagma≥3above +FULLceilingover4bodycorners: actual3m→turncorner→exactreverse/SAMEburial FULL20HP20food/26forecastchecks passed. No projectileimm
+p2: unityclaim; othermobs/unroofed/nearheightstillveto. NextfastNorthbatchcurrent295→loaded≤455. BLACKSTONEactual2→3 retainedoldpickup, no newkitquota.
+p3: P3 SPIDER_END deadACKfalse hits0 swings0 HP20 STRING0 CAMPtrue RELEASE6 issTARGET_CHANGED
+p3: P3 ONEprivate3x3Endercanopy5..7,Y68,Z76..78/root5,66/67,76; exact11DIRT/no otherwrites. CLAIMcamp6exit/return<=35s, no sharedstairs/portal/belowpods.
+--- p1 now: (143.8, 62.3, 2032.1) in overworld, health 20/20, food 20/20, alive

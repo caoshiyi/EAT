@@ -1,0 +1,59 @@
+program #3144 on p2: 0 s
+--- output ---
+STATE Vec3 { x: 8.7, y: 60, z: 84.60397960067509 } 20 17 [
+  [ 'stone_pickaxe', 1, 129 ],
+  [ 'spruce_sapling', 2, null ],
+  [ 'sandstone', 2, null ],
+  [ 'stone_pickaxe', 1, 98 ]
+]
+portal spruce_door
+oldtable crafting_table
+oldroom air
+ORE [
+  '(10, 40, 79)', '(11, 40, 79)',
+  '(10, 40, 78)', '(11, 40, 78)',
+  '(11, 40, 77)', '(10, 39, 79)',
+  '(11, 39, 79)', '(10, 39, 78)',
+  '(11, 39, 78)', '(11, 39, 77)',
+  '(-2, 40, 88)', '(-2, 40, 89)',
+  '(-3, 40, 88)', '(-3, 40, 89)',
+  '(3, 47, 105)', '(2, 47, 105)',
+  '(1, 47, 105)', '(3, 46, 105)',
+  '(2, 46, 105)', '(1, 46, 105)'
+]
+PORTAL_CELLS
+5 88 sandstone sandstone sandstone sand sand snow air air air air air air
+5 89 sandstone sandstone sandstone sand sand sand snow air air air air air
+5 90 sandstone stone sandstone sand sand sand sand sand sand snow air air
+5 91 stone stone sandstone sand sand sand sand sand cobblestone obsidian obsidian obsidian
+6 88 sandstone sandstone sandstone sand sand snow air air air air air air
+6 89 sandstone sandstone sandstone sand sand sand snow air cobblestone snow air air
+6 90 sandstone stone sandstone sand sand sand air air dirt spruce_door spruce_door sandstone
+6 91 stone stone sandstone sand sand sand sand sand obsidian nether_portal nether_portal nether_portal
+7 88 sandstone sandstone sandstone sand sand sand snow air air air air air
+7 89 sandstone sandstone sandstone sand sand sand snow air air air air air
+7 90 sandstone sandstone sandstone sand sand sand sand air dirt cobblestone cobblestone cobblestone
+7 91 stone stone sandstone sand sand sand sand dirt obsidian nether_portal nether_portal nether_portal
+8 88 sandstone sandstone sandstone sand sand sand sand snow air air air air
+8 89 stone sandstone sandstone sandstone sand sand sand air cobblestone snow air air
+8 90 sandstone sandstone sandstone sand sand sand sand sand snow air air air
+8 91 stone sandstone sandstone sandstone sand sand sand sand spruce_planks obsidian obsidian obsidian
+TIME {
+  doDaylightCycle: true,
+  bigTime: 1024600n,
+  time: 1024600,
+  timeOfDay: 16600,
+  day: 42,
+  isDay: false,
+  moonPhase: 2,
+  bigAge: 1014878n,
+  age: 1014878,
+  clocks: {}
+}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4_RECOVERY_END CAMPfalse HP20 actual(-0.3, 62.57969854367612, 78.41034508896277) DOOR6false KEEP6P4 unfinishedreturn
+p1: P2 historical104 TIMER3secZEROmotion accepted relevantactualevidence; retireboatsteeringproject (my3114 didnot testinput). SwitchPRIMARYdrywalk now. P4 faroutsidecurrentrecovery: propose finite10s DOOR6writertransfer P4→P1 EXITONLY+CLOSE+DEPART_NO_RETURN t
+p1: henimmediate6backP4, no waitingwholeP4return. Need P4ACK/currentno pendingdoorcallback; P3ACKinterface. P1no returnreservationsoP4recoverycontinuesindependently. Thisavoidsbroadpermissionqueue.
+--- p2 now: (8.7, 60, 84.6) in overworld, health 20/20, food 17/20, alive

@@ -1,0 +1,22 @@
+program #3352 on p4: 41.1 s
+--- output ---
+DOWN_ACCEPTED 43 20
+DOWN_ACCEPTED 42 20
+SHAFT_END {"p":{"x":73.53170174484526,"y":42,"z":80.49999990604351},"hp":20,"food":20,"lost":false,"hull":[],"open":27,"inv":[["sandstone",1],["sand",4],["dirt",5]]}
+TARGET_INITIAL 106 Vec3 { x: 74.49075782931095, y: 39, z: 79.32420894144956 } 27
+WINDOW_OPEN Vec3 { x: 73, y: 42, z: 79 }
+SWING 1 106 27 2.7075132220174405
+TARGET_HURT_ACK 106 27 1
+TARGET_HURT_ACK 106 26 2
+WINDOW_OPEN Vec3 { x: 73, y: 43, z: 79 }
+WINDOW_OPEN Vec3 { x: 74, y: 42, z: 80 }
+SWING 2 106 25 2.437720911339746
+TARGET_HURT_ACK 106 25 3
+CONTACT_ISSUE WINDOW_RAY_BLOCKED_(74, 43, 80)_stone
+CONTACT_RESULT {"at":1792193331649,"id":106,"swings":2,"hurts":3,"killed":false,"gone":false,"damaged":false,"lost":false,"issue":"WINDOW_RAY_BLOCKED_(74, 43, 80)_stone","sealed":true,"hp":20,"pearlNet":0,"drops":[],"p":{"x":73.53170174484526,"y":42,"z":80.49999990604351},"entries":[[73,42,79],[73,43,79],[74,42,80]],"cuts":[[73,42,79],[73,43,79],[74,42,80]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 ACKsoleTABLE6,66,82 lift/retain→descend/restore66 immediately<=20s thenreleasefixtureP3; no otherfixtureactors/P3remoteclosed, no doors/bed/7writes. BELOW6,59..64,82/83 isP4privatehandoff pendingP4ACK, notmygrant; caninspectnowwithoutwrites. ActualTABLE
+p3: receiptpollbeforeascut; caprestorationmustfinallyrunfromactualphase evenearlyfailure. P3wood2retained+closed9cellgallery15.67HP16food, swordcraftactive, FOOD0.
+--- p4 now: (73.5, 42, 80.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,15 @@
+program #3361 on p4: 1.1 s
+--- output ---
+TARGET_INITIAL 106 Vec3 {
+  x: 76.30483268464417,
+  y: 35.23141445159912,
+  z: 79.03304884121053
+} 23
+WINDOW_OPEN Vec3 { x: 74, y: 42, z: 80 }
+CONTACT_ISSUE WINDOW_RAY_BLOCKED_(73, 42, 79)_dirt
+CONTACT_RESULT {"at":1792193396170,"id":106,"swings":0,"hurts":0,"killed":false,"gone":false,"damaged":false,"lost":false,"issue":"WINDOW_RAY_BLOCKED_(73, 42, 79)_dirt","sealed":true,"hp":20,"pearlNet":0,"drops":[],"p":{"x":73.53170174484526,"y":42,"z":80.49999990604351},"entries":[[74,42,80]],"cuts":[[74,42,80]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (73.5, 42, 80.5) in overworld, health 20/20, food 20/20, alive

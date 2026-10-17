@@ -1,0 +1,11 @@
+program #3384 on p2: 6.4 s
+--- output ---
+CANDIDATES [ '(6, 66, 85)', '(7, 67, 85)' ]
+BURY_START Vec3 { x: 6, y: 66, z: 85 } Vec3 { x: 6.5, y: 66, z: 85.54929805391816 }
+NEWLIFE_SAND_POD_FULL true Vec3 { x: 6.5, y: 62, z: 85.54929805391816 } 20 20 []
+SAND_POD_END Vec3 { x: 6.5, y: 62, z: 85.54929805391816 } 20 20 lost false
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p4 was shot by Skeleton
+--- p2 now: (6.5, 62, 85.5) in overworld, health 20/20, food 20/20, alive

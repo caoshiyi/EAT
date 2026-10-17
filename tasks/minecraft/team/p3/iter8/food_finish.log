@@ -1,0 +1,56 @@
+program #3270 on p3: 0.2 s
+--- output ---
+HUNT_ISSUE PRE FINISH_PRE
+HUNT_ENDING_FAILED NAV_NOT_ACTUAL
+--- returned ---
+{
+ "issue": "FINISH_PRE",
+ "phase": "PRE",
+ "strikes": 0,
+ "hurtACK": 0,
+ "killed": false,
+ "received": 0,
+ "sealed": false,
+ "lost": false,
+ "p": {
+  "x": 116.5,
+  "y": 63,
+  "z": 186.4801878114554
+ },
+ "hp": 15.666666030883789,
+ "food": 17,
+ "stage": {
+  "feet": {
+   "x": 122,
+   "y": 64,
+   "z": 189
+  },
+  "cells": [
+   "[repeated reference]"
+  ],
+  "cap": {
+   "x": 122,
+   "y": 66,
+   "z": 189
+  },
+  "surface": {
+   "x": 122,
+   "y": 67,
+   "z": 189
+  },
+  "at": 1792192279191
+ },
+ "inventory": [
+  [
+   "dirt",
+   2
+  ],
+  [
+   "dandelion",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (116.5, 63, 186.5) in overworld, health 15.7/20, food 17/20, alive

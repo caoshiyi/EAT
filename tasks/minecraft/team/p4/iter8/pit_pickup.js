@@ -1,0 +1,4 @@
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(10);console.log('ITEMS',JSON.stringify(Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<7).map(e=>({id:e.id,name:e.name,pos:e.position,item:e.getDroppedItem?.()?.name}))));
+for(let y=60;y<=63;y++)console.log('COLUMN',y,bot.blockAt(new Vec3(0,y,78))?.name);
+for(let y=61;y<=62;y++){let b=bot.blockAt(new Vec3(0,y,78));if(b?.name==='sand'){await bot.dig(b);await bot.waitForTicks(8);}}
+await bot.lookAt(new Vec3(2,60.62,78.41),true);bot.setControlState('jump',true);bot.setControlState('forward',true);try{for(let i=0;i<14&&bot.entity.position.x<.5;i++){await bot.waitForTicks(1);if(bot.health<18||bot.entity.position.y<58)throw Error('BODY');}}finally{bot.clearControlStates();}await bot.waitForTicks(10);console.log('POST',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));

@@ -1,0 +1,19 @@
+program #3186 on p4: 6.7 s
+--- output ---
+STEP Vec3 { x: 0.5, y: 65, z: 77.5 } Vec3 { x: 0.5097801322873223, y: 65, z: 77.50721349907019 }
+STEP Vec3 { x: 1.5, y: 65, z: 77.5 } Vec3 { x: 1.476591231220154, y: 65, z: 77.50202399213434 }
+STEP Vec3 { x: 2.5, y: 65, z: 77.5 } Vec3 { x: 2.4434754086871506, y: 65, z: 77.50068274196502 }
+STEP Vec3 { x: 3.5, y: 65, z: 77.5 } Vec3 { x: 3.4751207453340127, y: 65, z: 77.50018596394344 }
+END Vec3 {
+  x: 3.5731207835958814,
+  y: 65.41999998688698,
+  z: 77.50017867971559
+} 18.16666603088379 false
+--- error ---
+Error: STEP_FALL
+    at step (p4-program-3186.js:2:698)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p4-program-3186.js:3:139
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (3.6, 65.4, 77.5) in overworld, health 18.2/20, food 17/20, alive

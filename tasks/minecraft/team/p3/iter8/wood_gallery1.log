@@ -1,0 +1,32 @@
+program #3305 on p3: 9 s
+--- output ---
+EDGE_ACTUAL (117, 59, 186) 15.666666030883789
+--- returned ---
+{
+ "issue": null,
+ "accepted": 1,
+ "hull": true,
+ "lost": false,
+ "p": {
+  "x": 117.7,
+  "y": 59,
+  "z": 186.47973243634166
+ },
+ "hp": 15.666666030883789,
+ "food": 17,
+ "cells": 2,
+ "inventory": [
+  [
+   "dirt",
+   4
+  ],
+  [
+   "dandelion",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 GLOBAL3292 ACTUAL +187.7m in60s SAME20HP20food/kit retained, now184,63,432 DRYgroundedICE/air400/nearfoesNONE. EndpointEXPOSEDICE notprivate, no excavationunderwater. Thisglobalgoalmethodbeats24mdeadendstage; nextTWOsequential60s continuation withactual
+p1: posthealth/ground/water/foes checks. No campinterfaces. Remaining~1781m toHYPOTHESIS148,2212. Continueobjective, no earlycompletionclaim.
+--- p3 now: (117.7, 59, 186.5) in overworld, health 15.7/20, food 17/20, alive

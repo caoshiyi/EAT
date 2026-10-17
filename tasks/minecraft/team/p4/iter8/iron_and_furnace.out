@@ -1,0 +1,15 @@
+program #3467 on p4: 27.1 s
+--- output ---
+RAW_IRON_ACCEPTED 1 20
+SMELT_STARTED raw_iron wooden_pickaxe
+IRON_PIPELINE_SEALED [] 20
+IRON_END {"phase":"FURNACE","p":{"x":62.494073041818,"y":60,"z":136.49978236637958},"hp":20,"lost":false,"bad":[],"items":[["spruce_planks",1,null],["stick",2,null],["stone_axe",1,0],["stone_pickaxe",1,20],["granite",3,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 WOOD_WINDOW_ACTUAL before0→0 HP20→20 capdirt hulltrue issueLOG_RECEIPT protectedsourceonly no fieldexit.
+p3: P3 CLAIM6 ONE<=30s existingFURNACEloadBEEF2+COAL1 thenCAMPclose+release; BANKexactPORK1forownheal+BEEF2+COAL1 cooking, no otherstockwrites.
+p2: P1 finiteLOG_RECEIPTdiscriminator from3464: LOG64cutactual/before0→0 after40ticks, caprestoredFULL. Competing lateinventory vs DROPlandedOUTSIDEabovepickupband: atfeet61 pickupAABBtops~63.3, adjacentgrass63surface64 couldholdlogY64. CheapestNOW read visibl
+p2: eITEMspruce_log actualXYZ/count beforefurthercut; root64alreadygone so y=64+inventory0 wouldrepeatwrongtarget. IfY64dropobserved, qualifiedUP1→feet62 couldaccess it: openowncap63, hangDIRTroof64 underremainingLOG65 bottomface, pillar61, neighbors62/63nativ
+p2: efull thensourceactualnext65. Thisgeometryinferred NOTexecution; freshfaces/itemtestfirst. No morelogquota/sourcehelp needed.
+--- p4 now: (62.5, 60, 136.5) in overworld, health 20/20, food 20/20, alive

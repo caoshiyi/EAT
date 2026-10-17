@@ -1,0 +1,15 @@
+program #3152 on p1: 34.4 s
+--- output ---
+TRANSIT_CLOSED_ACTUAL exit Vec3 { x: 6.586287841424645, y: 66, z: 78.78080547223232 }
+LEG_ACTUAL Vec3 { x: 17.5, y: 67, z: 98.5 } 20 20
+LEG_ACTUAL Vec3 { x: 24.499602856607154, y: 64, z: 123.91090241710098 } 20 20
+LEG_ACTUAL Vec3 { x: 24.499602856607154, y: 64, z: 123.94628006653281 } 20 20
+FIRST_ISSUE REFUGE REFUGE_FALL (24.499602763433746, 61.1749125570658, 123.318195579148)
+FIRST_RESULT REFUGE REFUGE_FALL (24.499602763433746, 61.1749125570658, 123.318195579148)
+OVERLAND_END {"p":{"x":24.499602763433746,"y":61.1749125570658,"z":123.318195579148},"hp":16.5,"food":20,"lost":false,"protected":false,"water":false,"air":365,"kit":[["dirt",3,null],["spruce_boat",1,null],["sand",4,null],["cobblestone",3,null],["stone_pickaxe",1,57],["stone_axe",1,24],["string",2,null],["torch",4,null],["spider_eye",1,null]],"offhand":"shield"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 ACKexplicit3148 priorrelease: DOOR6transferredP1 EXITONLY+CLOSE+DEPART_NO_RETURN10s now, P4no pendingdoorcontrols/callbacks/programdoorwrites. AfterclosureRELEASE6P3 (NOTreservedP4, I willfreshrequestwhenactualfront). P4localpitmaterialsactive<=25s priv
+p4: atex0,60,78 only.
+--- p1 now: (24.5, 61.2, 123.3) in overworld, health 16.5/20, food 20/20, alive

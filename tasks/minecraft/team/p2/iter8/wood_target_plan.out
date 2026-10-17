@@ -1,0 +1,27 @@
+program #3163 on p2: 0 s
+--- output ---
+WOOD_COLUMN 7 111 andesite andesite dirt dirt dirt grass_block air spruce_leaves air spruce_leaves
+WOOD_COLUMN 8 111 andesite andesite dirt dirt dirt grass_block air spruce_leaves air spruce_leaves
+WOOD_COLUMN 9 111 andesite andesite dirt dirt dirt grass_block air spruce_leaves air spruce_leaves
+WOOD_COLUMN 7 112 andesite dirt dirt dirt grass_block air air spruce_leaves air spruce_leaves
+WOOD_COLUMN 8 112 andesite andesite dirt dirt dirt grass_block spruce_leaves spruce_leaves spruce_leaves spruce_leaves
+WOOD_COLUMN 9 112 andesite andesite dirt dirt dirt grass_block air spruce_leaves air spruce_leaves
+WOOD_COLUMN 7 113 andesite dirt dirt dirt grass_block air spruce_leaves spruce_leaves spruce_leaves spruce_leaves
+WOOD_COLUMN 8 113 andesite dirt dirt dirt dirt spruce_log air spruce_log spruce_log spruce_log
+WOOD_COLUMN 9 113 andesite andesite dirt dirt dirt grass_block spruce_leaves spruce_leaves spruce_leaves spruce_leaves
+WOOD_COLUMN 7 114 andesite dirt dirt dirt grass_block air air spruce_leaves air spruce_leaves
+WOOD_COLUMN 8 114 andesite dirt dirt dirt grass_block fern spruce_leaves spruce_leaves spruce_leaves spruce_leaves
+WOOD_COLUMN 9 114 andesite dirt dirt dirt grass_block fern air spruce_leaves air spruce_leaves
+BFS { found: true, reached: 574 }
+PLAN {"purpose":"SELF_PICK_AXE_FOR_ONE_ROD","path":[[9,60,84],[9,60,85],[9,60,86],[9,60,87],[9,60,88],[9,60,89],[9,60,90],[9,60,91],[10,60,91],[10,60,92],[10,60,93],[10,60,94],[10,60,95],[10,60,96],[10,60,97],[11,60,97],[12,60,97],[12,60,98],[13,60,98],[13,60,99],[14,60,99],[14,60,100],[14,60,101],[14,60,102],[14,60,103],[14,60,104],[14,60,105],[14,60,106],[14,60,107],[14,60,108],[14,60,109],[14,60,110],[14,60,111],[14,60,112],[14,60,113],[13,60,113],[12,60,113],[11,60,113],[10,60,113],[9,60,113],[8,60,113]],"index":0,"accepted":[9,60,84],"at":1792191686976}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 ACKexplicit3148 priorrelease: DOOR6transferredP1 EXITONLY+CLOSE+DEPART_NO_RETURN10s now, P4no pendingdoorcontrols/callbacks/programdoorwrites. AfterclosureRELEASE6P3 (NOTreservedP4, I willfreshrequestwhenactualfront). P4localpitmaterialsactive<=25s priv
+p4: atex0,60,78 only.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.586287841424645, 66, 78.78080547223232) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 DEPART_NO_RETURN_ACTUAL CLOSED6 RELEASE6P4 actual(6.586287841424645, 66, 78.78080547223232) HP20 no pendingdoorcallbacks/goals; P4independentreturn NOW. BoatprojectRETIREDusingP2actual104zero3sec; P1groundrecon148,2212 HYPOTHESIS.
+p1: P1 correction2519 releaseRECIPIENT: P4latest2516 declinesreservation, so EXITactual+CLOSE+DEPART_NO_RETURN releases6P3 acceptedcurrentwriter, NOTP4reservation. P1no pendingdoorcontrols/callbacks/return. Active3152 drygroundrecon currentlysafe20HP; separate
+p1: privateendingunderway.
+[server] p1 was slain by Zombie
+--- p2 now: (8.7, 60, 84.6) in overworld, health 20/20, food 17/20, alive

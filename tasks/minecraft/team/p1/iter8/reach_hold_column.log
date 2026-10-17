@@ -1,0 +1,44 @@
+program #3707 on p1: 104.4 s
+--- output ---
+NEAR_HOLD_BUBBLE_ARRIVAL {"p":{"x":99.93084641315588,"y":62.3950537500648,"z":2219.6176572073764},"hp":8.833332061767578,"air":20,"d":0.9819151874902963}
+NATIVE_COLUMN [
+  [ 62, 'bubble_column' ], [ 61, 'bubble_column' ], [ 60, 'bubble_column' ],
+  [ 59, 'bubble_column' ], [ 58, 'bubble_column' ], [ 57, 'bubble_column' ],
+  [ 56, 'bubble_column' ], [ 55, 'bubble_column' ], [ 54, 'bubble_column' ],
+  [ 53, 'bubble_column' ], [ 52, 'bubble_column' ], [ 51, 'bubble_column' ],
+  [ 50, 'bubble_column' ], [ 49, 'bubble_column' ], [ 48, 'bubble_column' ],
+  [ 47, 'bubble_column' ], [ 46, 'bubble_column' ], [ 45, 'bubble_column' ],
+  [ 44, 'bubble_column' ], [ 43, 'bubble_column' ], [ 42, 'bubble_column' ],
+  [ 41, 'bubble_column' ], [ 40, 'bubble_column' ], [ 39, 'bubble_column' ],
+  [ 38, 'bubble_column' ], [ 37, 'bubble_column' ], [ 36, 'bubble_column' ],
+  [ 35, 'bubble_column' ], [ 34, 'bubble_column' ], [ 33, 'magma_block' ],
+  [ 32, 'stone' ],         [ 31, 'stone' ],         [ 30, 'stone' ],
+  [ 29, 'stone' ],         [ 28, 'stone' ],         [ 27, 'stone' ],
+  [ 26, 'stone' ],         [ 25, 'stone' ],         [ 24, 'stone' ],
+  [ 23, 'stone' ],         [ 22, 'stone' ],         [ 21, 'stone' ],
+  [ 20, 'stone' ],         [ 19, 'stone' ],         [ 18, 'stone' ],
+  [ 17, 'stone' ],         [ 16, 'stone' ],         [ 15, 'stone' ],
+  [ 14, 'stone' ],         [ 13, 'stone' ],         [ 12, 'stone' ],
+  [ 11, 'stone' ],         [ 10, 'stone' ],         [ 9, 'stone' ],
+  [ 8, 'stone' ],          [ 7, 'andesite' ],       [ 6, 'andesite' ],
+  [ 5, 'andesite' ],       [ 4, 'andesite' ],       [ 3, 'andesite' ],
+  [ 2, 'andesite' ],       [ 1, 'andesite' ],       [ 0, 'deepslate' ],
+  [ -1, 'deepslate' ],     [ -2, 'deepslate' ],     [ -3, 'deepslate' ],
+  [ -4, 'deepslate' ],     [ -5, 'deepslate' ],     [ -6, 'deepslate' ],
+  [ -7, 'deepslate' ]
+]
+OVERLAND_END {"p":{"x":99.49403155383482,"y":47.887978404953245,"z":2220.4850424990677},"hp":8.833332061767578,"food":16,"lost":false,"protected":false,"water":true,"grounded":false,"foes":[["drowned",12.08620671003414],["drowned",12.902593740100881],["drowned",13.470606904314524],["drowned",15.876199910045964],["drowned",25.9082558320283]],"air":20,"kit":[["spruce_planks",10,null],["dirt",9,null],["wooden_pickaxe",1,7],["stone_axe",1,5],["spruce_door",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,1]],"refuge":null}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 RETIREhandoff ACK no tenDIRTreceipt; no furtherdependency. P4leavingbridge7.5 SOUTH NOW finite<=65s to ownnativepod77 withsafeendpointretreat58/45 ifmobs. OnlyoldP4cap45/46/57/59/72/76 writes, N/E/Sbufferuntouched. YouownpodW/roofclosing aftermydepartur
+p4: e; noP4returnqueued. Bodyclearbridge7.5 inseconds.
+p3: P4 catcherONEtest3701 own11→11/you0 = SELFpickupagain, NOTsuccess. Toss-handoffRETIRED/no morethrows/receiverwait. Change toPHYSICALBLOCKstock: grantyou(-1,Y67..70,Z6)4DIRT pillar (existingfloor-1,66,6 preserved), youmayminefrombridge atownpace, P3cannotpi
+p3: ckup1.9maway. P3placesupper3+closesownpodW/roof peryourrelease, thenFREEyou. Actualblock≠receivedinventory untilyouverify.
+p3: P3 PHYSICAL_STOCK_END grant4DIRT-1,Y67..70,Z6 placedactual5 PODFULLtrue HP20 releaseW/roof/stocktoP4; no receiptclaim.
+p2: P1 221grantRECEIVED; yourLOGpublicationearlier wasmissedbymychat-onlycheck (discoverylag, notyourdelay). P2 haschangedtoindependentGROUNDsource52:3695 dryfall+floor59restored+3DOWN/roof54 FULL20HP20food, actualNOdamage. 3704existingBLACKSTONE3/STICK2→STONE
+p2: PICK0 actual, TABLEretained/slotDIRTclosed. Usingimmediatelyfor16edge32cut coveredSOUTHgallery (woodremaining31 insufficient). Releaseunused221grant/helper NOW/no221cuts/no queuedoldroutewrites. Old318recapCOMPLETE.
+p3: P3 CLOSING_STATE3712 actualFULL10faces1.406,66,6.70 NETHER20HP20food/sword/pick/DIRT6, controlsallfalse/listenersphysics2/path0. W0,67,6+roof1,68,6DIRTclosed, bufferSCOBBLE restored/all claimsRELEASED. P4grant4physicalDIRT-1,Y67..70,Z6 remains unreceived, 
+p3: floor66preserve. Official00:53:50 dragon0/9steps/deaths77. P3memorycurrent; continueuntilverified55:29deadline.
+p4: P4 finalcross3706 TIMEDOUT duringFOEmagma retreat at59.7 HP20; changed3710smallactualreturn58+4caps FULLtrue HP20. Nopearl/nohandoffreceipt; OWNstablepod58, no return/interfacewriterqueued.
+--- p1 now: (99.5, 47.9, 2220.5) in overworld, health 8.8/20, food 16/20, alive

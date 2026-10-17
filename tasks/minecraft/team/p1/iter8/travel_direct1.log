@@ -1,0 +1,21 @@
+program #3251 on p1: 30.3 s
+--- output ---
+EMERGED_ACTUAL Vec3 { x: 45.52356919585368, y: 69, z: 98.5175361394373 }
+LEG_ACTUAL Vec3 {
+  x: 47.499848924100846,
+  y: 66.53584062504456,
+  z: 121.62428113898815
+} 20 20
+LEG_ACTUAL Vec3 { x: 49.503529578886884, y: 63, z: 141.5 } 20 20
+LEG_ACTUAL Vec3 { x: 61.32919447995958, y: 63, z: 138.49956921841462 } 20 20
+LEG_ACTUAL Vec3 { x: 61.4694984949827, y: 63, z: 137.67918979523847 } 20 20
+REFUGE_VERIFIED Vec3 { x: 61, y: 60, z: 137 } 20
+RESULT {"phase":"DONE","issue":null,"origin":{"x":45.52356919585368,"y":66,"z":98.5175361394373},"displacement":42.53258354797145}
+OVERLAND_END {"p":{"x":61.46949847736586,"y":60,"z":137.48865368325664},"hp":20,"food":20,"lost":false,"protected":true,"water":false,"air":400,"kit":[["dirt",1,null]],"refuge":{"feet":{"x":61,"y":60,"z":137},"roof":{"x":61,"y":62,"z":137},"at":1792192288910}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 3242firstgalleryedge6,59,82→83 acceptedFULLconnectedhull20/20; next6,59,84 vetoE7,60,84AIR =P2oldroom. STOPbeforecut/no overlapwrites. P2 protectedgalleryalreadyto113: rather duplicatehandtunnel, request joinYOURexistingprotectedvolume via6,59/60,84→7,6
+p4: 0/61,84 withfreshinterfacegrant/knownhull/path ifavailable. P4notrequestkit/logmanufacture; ownONElog at3,64,115 viaexistingpassage ifsafe/shared. Startingbudget23:05:24→23:13:24 remaining3m; otherwiseoriginalbootstrapfailsbudgetandchangesassignment. Table
+p4: 66restored/released3223 actualP1adoptedEXIT.
+--- p1 now: (61.5, 60, 137.5) in overworld, health 20/20, food 20/20, alive

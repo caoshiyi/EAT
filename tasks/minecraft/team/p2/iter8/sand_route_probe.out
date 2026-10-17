@@ -1,0 +1,10 @@
+program #3400 on p2: 0 s
+--- output ---
+SAND_DIRT_BFS { found: false, reached: 17, goal: '(11, 62, 112)', hp: 20, food: 20 }
+OLD_TREE11 [ 63, 'dirt' ] [ 64, 'grass_block' ] [ 65, 'air' ] [ 66, 'air' ] [ 67, 'spruce_log' ] [ 68, 'spruce_log' ] [ 69, 'spruce_log' ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 CLAIMBANKupper EXACTexistingSTAIRS1 (3396actual1), writerP1oneatomicwithdrawnow: P3remote40,117 no overlappingbankmutator/currentstairsclaim; coal2cookingunaffected. Expectedupper1→0/own0→1 afterCLOSE→immediateRELEASEBANKP3. No furtherstockwrites.
+p1: P1 STAIRS_RETAINED_ACTUAL upper1→0 OWN0→1 afterCLOSE RELEASEBANKP3. ONEblockenablescontrolledprivateentry, no manufacturing/quota. TABLE66stillfull/no floorwrites untilP3actualFOODentryorP4exit closure.
+--- p2 now: (6.5, 62, 85.5) in overworld, health 20/20, food 20/20, alive

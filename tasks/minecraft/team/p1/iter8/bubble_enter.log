@@ -1,0 +1,44 @@
+program #3685 on p1: 36.5 s
+--- output ---
+BUBBLE_NATIVE [
+  [ 62, 'bubble_column' ], [ 61, 'bubble_column' ],
+  [ 60, 'bubble_column' ], [ 59, 'bubble_column' ],
+  [ 58, 'bubble_column' ], [ 57, 'bubble_column' ],
+  [ 56, 'bubble_column' ], [ 55, 'bubble_column' ],
+  [ 54, 'bubble_column' ], [ 53, 'bubble_column' ],
+  [ 52, 'bubble_column' ], [ 51, 'bubble_column' ],
+  [ 50, 'bubble_column' ], [ 49, 'bubble_column' ],
+  [ 48, 'bubble_column' ], [ 47, 'bubble_column' ],
+  [ 46, 'bubble_column' ], [ 45, 'bubble_column' ],
+  [ 44, 'bubble_column' ], [ 43, 'bubble_column' ],
+  [ 42, 'bubble_column' ], [ 41, 'bubble_column' ],
+  [ 40, 'bubble_column' ], [ 39, 'bubble_column' ],
+  [ 38, 'magma_block' ],   [ 37, 'netherrack' ],
+  [ 36, 'stone' ],         [ 35, 'stone' ],
+  [ 34, 'stone' ],         [ 33, 'stone' ],
+  [ 32, 'andesite' ],      [ 31, 'andesite' ],
+  [ 30, 'andesite' ],      [ 29, 'andesite' ],
+  [ 28, 'andesite' ],      [ 27, 'stone' ],
+  [ 26, 'stone' ],         [ 25, 'stone' ],
+  [ 24, 'stone' ],         [ 23, 'stone' ]
+]
+BUBBLE_ENTER Vec3 {
+  x: 177.98581565534212,
+  y: 62.75614486719688,
+  z: 2039.3721416933827
+} 8.833332061767578 20
+BUBBLE_DESCENT_ACTUAL Vec3 {
+  x: 178.5413589511504,
+  y: 60.891524874507496,
+  z: 2039.163704232052
+} 8.833332061767578 19
+OVERLAND_END {"p":{"x":178.5413589511504,"y":60.891524874507496,"z":2039.163704232052},"hp":8.833332061767578,"food":17,"lost":false,"protected":false,"water":true,"grounded":false,"foes":[],"air":19,"kit":[["spruce_planks",16,null],["dirt",9,null],["wooden_pickaxe",1,7],["stone_axe",1,5],["crafting_table",1,null],["stone_pickaxe",1,1],["wooden_shovel",1,1]],"refuge":null}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 CAPS_SENT ownDIRT22→12 targetP4(0.4993423466989106, 67, 7.482345312756406) NOreceiptclaim untilP4inventoryACK; P3noWwrite/control. Releasehandoffonactualreceipt.
+p4: P4 3681 actualDIRT0/itemsnone atbridge7.5; lateststatusP3DIRT12 maymean2ndtossactive. ReceiverY67 versuspoditemY66 maybebelowpickupbox. CHANGINGheight now: ownROOF1,68,6DIRTcut +WestheadalreadyAIR, descendintoownpod1,66,6 tocollect thenjumpWestbackbridge. 
+p4: P3hold/no roof/Wwrites<=15s; no newtoss untilactualitemscan.
+p3: P4 HANDOFFFAILED: second3682 actualWESTdrop28307x-.05,Y67,Z6.715 then3684no nearbydrop/yourDIRT0/own12; likelyoff1widebridge, NOTreceipt. Firstlookflushfixedorientationonly. TWOtoss failures/oldbudgetexpired: no blind3rd. Changedhypothesis2DIRT catcherfloo
+p3: r(-1,66,6)+wall(-1,67,6) sideof0,66,6BLACKSTONE; ONE1DIRTtest then7more onlyonactualreceipt, retain2closing. P3ownsfixture/test<=60s now, youstay7.5/no cuts.
+--- p1 now: (178.5, 60.9, 2039.2) in overworld, health 8.8/20, food 17/20, alive

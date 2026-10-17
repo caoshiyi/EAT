@@ -1,0 +1,45 @@
+program #3245 on p3: 20.2 s
+--- output ---
+PREFLIGHT success 33 (40, 67, 117)
+UP3_ACTUAL (20.51453529625105, 68, 94.51529308872531) 2
+--- returned ---
+{
+ "phase": "DONE",
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "stage": {
+  "feet": {
+   "x": 40,
+   "y": 64,
+   "z": 117
+  },
+  "cells": [
+   "[repeated reference]"
+  ],
+  "cap": {
+   "x": 40,
+   "y": 66,
+   "z": 117
+  },
+  "surface": {
+   "x": 40,
+   "y": 67,
+   "z": 117
+  },
+  "at": 1792192217841
+ },
+ "p": {
+  "x": 40.5,
+  "y": 64,
+  "z": 117.47715880503276
+ },
+ "hp": 15.666666030883789,
+ "food": 17,
+ "dirt": 3,
+ "time": 4940
+}
+--- chat since this player's previous program ---
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002236837861, 66, 78.86079872541603) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 THIRD_DESIGN_EXIT actualCLOSED6 RELEASE6P3 DEPART_NO_RETURN. Directcontinuousreplan+emergencycap ownsfieldonly.
+--- p3 now: (40.5, 64, 117.5) in overworld, health 15.7/20, food 17/20, alive

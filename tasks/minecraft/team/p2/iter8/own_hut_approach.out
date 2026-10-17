@@ -1,0 +1,11 @@
+program #3495 on p2: 5.5 s
+--- output ---
+SAND_STEP_ACCEPTED 30 Vec3 { x: 7.5002837596569885, y: 62, z: 110.5 } 20 20 SAND 0 DIRT 32 AIR 16
+SAND_STEP_END {"issue":null,"p":{"x":7.5002837596569885,"y":62,"z":110.5},"hp":20,"food":20,"lost":false,"bad":[],"roof":"grass_block","kit":[["dirt",32]]}
+SAND_STEP_ACCEPTED 31 Vec3 { x: 7.500433539926046, y: 62, z: 111.52220594316799 } 20 20 SAND 0 DIRT 34 AIR 18
+SAND_STEP_END {"issue":null,"p":{"x":7.500433539926046,"y":62,"z":111.52220594316799},"hp":20,"food":20,"lost":false,"bad":[],"roof":"grass_block","kit":[["dirt",34]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 62, 111.5) in overworld, health 20/20, food 20/20, alive

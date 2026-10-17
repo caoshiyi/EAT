@@ -1,0 +1,10 @@
+program #3480 on p1: 6 s
+--- output ---
+WOOD_WINDOW_ISSUE LOG LOG_RECEIPT
+WOOD_WINDOW_ACTUAL {"phase":"LOG","issue":"LOG_RECEIPT","y":65,"before":1,"after":1,"hp0":20,"hp":20,"cap":"dirt","opened":true}
+TUNNEL_END {"p":{"x":3.5160944846687405,"y":62,"z":115.5},"hp":20,"food":20,"lost":false,"hull":{"ok":true,"cells":57,"bad":[]},"inventory":[["dirt",50,null],["spruce_planks",1,null],["spruce_log",1,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (3.5, 62, 115.5) in overworld, health 20/20, food 20/20, alive

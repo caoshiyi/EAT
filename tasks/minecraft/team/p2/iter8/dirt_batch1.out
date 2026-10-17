@@ -1,0 +1,76 @@
+program #3226 on p2: 33.8 s
+--- output ---
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 98 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 98 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 98 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 98 } dirt
+ACCEPTED 1 [ 12, 62, 99 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 99 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 99 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 99 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 99 } dirt
+ACCEPTED 2 [ 12, 62, 100 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 100 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 100 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 100 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 100 } dirt
+ACCEPTED 3 [ 12, 62, 101 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 101 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 101 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 101 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 101 } dirt
+ACCEPTED 4 [ 12, 62, 102 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 102 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 102 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 102 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 102 } dirt
+ACCEPTED 5 [ 12, 62, 103 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 103 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 103 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 103 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 103 } dirt
+ACCEPTED 6 [ 12, 62, 104 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 104 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 104 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 104 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 104 } dirt
+ACCEPTED 7 [ 12, 62, 105 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 12, y: 62, z: 105 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 62, z: 105 } dirt
+CAP_INTENT Vec3 { x: 12, y: 63, z: 105 } dirt
+CAP_ACTUAL Vec3 { x: 12, y: 63, z: 105 } dirt
+ACCEPTED 8 [ 12, 62, 106 ] HP 20 FOOD 17
+BATCH_PROGRESS 8 20 [ 12, 62, 106 ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 12.500179510714636, y: 62, z: 106.39129339334232 } 20 17 FULL true LOST false KIT [ [ 'spruce_sapling', 2, null ], [ 'stone_pickaxe', 1, 121 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 freshDAY3215 time480/20HPempty, table66STILLAIR waitactualrepair. Oldcriticaldrops883/885/886/887/892 nowABSENTentities (despawnconsistent), corpseopCLOSED. Freshskeleton1006at21,64,110 and1499at5,64,113 meanold18,99route NOTsafe daylight. Changedfirstg
+p1: oal42,100 then46,134 routesaroundhard14m skeletalareas; no unarmedattackloop. NeedP3whole55sACK afteractualTABLE66restore; bodyasideunchanged.
+p4: P4 3209TABLEcut actualnow66AIR P4feet66/20HP but ownTABLE0 so STOPbeforefurtherdescent. Needactualholder: P1aside auto-picklikely (notassumed), freshSTATUSnow; TABLEnotlostclaim. Keepfloor6,82clear. IfP1holdsTABLE1 needexacttoss toward6.5,66,82.5 fromaside
+p4: , P4thenretains→immediaterestore; no furthercut untilreceipt. No doorwrites. Shared66NOTrestored yet, no DAYexitthroughfloor.
+p4: CORRECTION3219freshSTATUS P4TABLE1actualretained (delayedpickupafter5tickcheck), P1empty/no tossneeded. ResumeacceptedownSAND65/64 thenimmediateTABLE66restorefrombelow NOW, no newlease required. Prior TABLE_NOT_RETAINED wasprematurecheck, notlostitem.
+p4: P4_SHARED_FLOOR_NOT_RESTORED phaseDOWN3 current(6.5, 64, 82.5) TABLEheld1 SAND1 KEEP66WRITERP4 immediateownrepair; doNOTmoveonto6,82.
+p1: Sharedlearning current4cases: P4TABLE3209 own0after5ticks→own1later, P2DIRTroof3210 own0after3ticks→laterreceipt, priorpartialgiftP2repick. Immediateinventorypostcut isNOTretainedreceipt; useboundedwaitactualitem/count (e.g<=2s) beforeassert, notnewdig/quo
+p1: ta. Sourcepickupdelayunverified but actualcasesrecorded. P1 stillASIDE20/20 empty no TABLEtoss.
+p4: P4_TABLE66_ACTUAL_RESTORED FULLcrafting_table6,66,82 ownbody64below20HP RELEASEfixtureP3 immediately. No P4further66writes. Ownprivatebelowshaftworkonly, no doors/bed/7. DelayedSANDreceipt2nowheld, previousassertpremature again; fixpoll30ticks notfixed5.
+p1: P1 P4TABLE66ACTUALrestored3223/2585 so EXITconditionmet. P3 pleaseacceptWHOLE55s2568noworretainoriginalEXITONLY2567; no otherconflictingdoorprograms. I will notholdprivatefieldworkbehindfixture; sole6 pendingcontract is exitthenrelease, requestwholeonlyfor
+p1: necessaryCAMPfallback. ActualP1aside7.58,83.7 readyimmediate.
+p3: P1 ACKWHOLE55s DOOR6DAYRECON inclnecessaryCAMPfallback NOW. Table66restored2585actual; P3remoteprivate no callbacks/6writes; P4belowprivate no doorwrites. EndactualprivateCLOSED+DEPART_NO_RETURN releaseORactualCAMP+BOTHclosed release, no fabricatedclosure.
+p3:  No furtherwaitforP3food.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.6079532879194165, 66, 78.86614329720685) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 ACCEPToriginalEXITONLY2567 TABLEconditionactualMET, EXIT+CLOSEactual(6.6079532879194165, 66, 78.86614329720685) HP20 RELEASE6P3 NO_RETURNplanned; whole55requestwithdrawnBEFOREconflictingreturnwrite. Primaryownfieldnowindependent.
+p3: P3 source3224 UP rejectedOWN_CAP_KIND beforeanydig: ownDIRTcap naturallyGRASS (old2632knownlesson missednewsource). ActualroomremainsFULL/body18.17 notexposed; sealedFALSElabel camefromfallback unnecessarilytryingnavigateFROMclosedroom. Minimalfix acceptow
+p3: nedDIRT/GRASS + detectactualalreadyclosedhull beforefallback. Initial8minfoodbudgetexpiredNOFOOD; changehypothesis tovalidatedshortdaylightstage+specificguardrepair, new3minbudget/pigbeneficiaryP1. No broadhelperclaims.
+p1: P1 3227 DAYEXITactual CLOSED6/20HP actual6.608,66,78.866; usedoriginalconditional2567 becauseTABLErestored. Newsmallfield3230? runningONLY20m to20,92 thensettledDIRT3cap hardavoid. P3WHOLE55ACKarrivedduringexit; acceptedasfallbackifneeded butnotfoodgate. F
+p1: irstverifynewendingbeforebatch toward148,2212. No boat/kit/corpse loops.
+--- p2 now: (12.5, 62, 106.4) in overworld, health 20/20, food 17/20, alive

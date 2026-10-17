@@ -1,0 +1,11 @@
+program #3579 on p2: 0 s
+--- output ---
+STAGE_ISSUE NO_LOADED_CLOSED_END 62 Vec3 { x: -25.5010767103874, y: 59, z: -28.50946041606404 } 20
+UNDEPARTED_RECAP Vec3 { x: -25.5010767103874, y: 59, z: -28.50946041606404 } 20
+STAGE_END {"issue":"NO_LOADED_CLOSED_END","closed":true,"startIndex":62,"endIndex":-1,"currentIndex":62,"p":{"x":-25.5010767103874,"y":59,"z":-28.50946041606404},"hp":20,"food":20,"lost":false,"elapsed":1}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 LOGPICK_END wood0 pickfalse CAMPtrue HP20 RELEASE6_AVAILABLE issLOG_NO_RECEIPT
+p3: P3 3574 LOGcut/NOreceipt at18,70,106; sameHP20 cold469checks→CAMPclosed. Inspectingactualdrop then ONEpickup correction (notsecondblindcut). ONEE2DIRTentry/reclose later onlyifP2/P4release andempty; no standingclaim.
+--- p2 now: (-25.5, 59, -28.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');console.log('BODY',bot.entity.position,bot.entity.onGround,bot.health);for(const y of[64,65,66,67])for(const z of[2,3,4])console.log(y,z,...[0,1,2].map(x=>({x,n:bot.blockAt(new Vec3(x,y,z))?.name,shapes:bot.blockAt(new Vec3(x,y,z))?.shapes})));console.log('CONTROL',bot.controlState);

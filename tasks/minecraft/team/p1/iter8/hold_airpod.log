@@ -1,0 +1,11 @@
+program #3716 on p1: 0 s
+--- output ---
+HOLD_COLUMN_AIR Vec3 { x: 99.49403155383482, y: 34, z: 2220.5032641800462 } 5.833332061767578 20 33
+HOLD_ACCESS_ISSUE FLOORS Server refused to place dirt at (99, 34, 2220): the block is still bubble_column
+OVERLAND_END {"p":{"x":99.49403155383482,"y":34,"z":2220.5032641800462},"hp":5.833332061767578,"food":16,"lost":false,"protected":false,"water":true,"grounded":true,"foes":[["drowned",10.558997464743696],["drowned",11.819630025848634],["drowned",11.898445157711057],["drowned",14.237105346113944],["drowned",21.495733780617726],["drowned",22.805433520066128],["drowned",23.374029025964617]],"air":20,"kit":[["spruce_planks",10,null],["dirt",9,null],["wooden_pickaxe",1,7],["stone_axe",1,5],["spruce_door",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,1]],"refuge":null}
+HOLD_ACCESS_END FLOORS Vec3 { x: 99.49403155383482, y: 34, z: 2220.5032641800462 } 5.833332061767578 20 undefined null
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (99.5, 34, 2220.5) in overworld, health 5.8/20, food 16/20, alive

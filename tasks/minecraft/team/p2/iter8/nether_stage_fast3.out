@@ -1,0 +1,34 @@
+program #3617 on p2: 23.5 s
+--- output ---
+FAST_STAGE_PLAN 295 455 Vec3 { x: -252, y: 63, z: -186 }
+EXACT_EMERGE Vec3 { x: -100.49409320484622, y: 63, z: -176.50494372174924 } 20
+EXACT_STEP Vec3 { x: -101, y: 63, z: -180 } Vec3 { x: -100.49444872526979, y: 63, z: -179.52321663073042 } 20
+FAST_SEGMENT_ACTUAL 295 298 Vec3 { x: -100.49444872526979, y: 63, z: -179.52321663073042 } 20 TICKS 14
+EXACT_STEP Vec3 { x: -109, y: 63, z: -180 } Vec3 { x: -108.47748034303841, y: 63, z: -179.52227704103956 } 20
+FAST_SEGMENT_ACTUAL 298 306 Vec3 { x: -108.47748034303841, y: 63, z: -179.52227704103956 } 20 TICKS 37
+EXACT_STEP Vec3 { x: -117, y: 63, z: -180 } Vec3 { x: -116.47440810940172, y: 63, z: -179.5213374513487 } 20
+FAST_SEGMENT_ACTUAL 306 314 Vec3 { x: -116.47440810940172, y: 63, z: -179.5213374513487 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -120, y: 63, z: -180 } Vec3 { x: -119.48254029586714, y: 63, z: -179.52098193092513 } 20
+FAST_SEGMENT_ACTUAL 314 317 Vec3 { x: -119.48254029586714, y: 63, z: -179.52098193092513 } 20 TICKS 14
+FAST_STAGE_ISSUE FAST_NATIVE_318 317 325 Vec3 { x: -119.48254029586714, y: 63, z: -179.52098193092513 } 20
+EXACT_STEP Vec3 { x: -120, y: 63, z: -180 } Vec3 { x: -119.48254029586714, y: 63, z: -179.52098193092513 } 20
+EXACT_STEP Vec3 { x: -119, y: 63, z: -180 } Vec3 { x: -118.41813303028408, y: 63, z: -179.52110890250498 } 20
+EXACT_STEP Vec3 { x: -118, y: 63, z: -180 } Vec3 { x: -117.53173108273339, y: 63, z: -179.52121047976885 } 20
+EXACT_STEP Vec3 { x: -117, y: 63, z: -180 } Vec3 { x: -116.47539795835343, y: 63, z: -179.5213374513487 } 20
+EXACT_STEP Vec3 { x: -116, y: 63, z: -180 } Vec3 { x: -115.58732456308232, y: 63, z: -179.52143902861258 } 20
+EXACT_STEP Vec3 { x: -115, y: 63, z: -180 } Vec3 { x: -114.53266534038045, y: 63, z: -179.52156600019242 } 20
+EXACT_STEP Vec3 { x: -114, y: 63, z: -180 } Vec3 { x: -113.453379240415, y: 63, z: -179.52169297177227 } 20
+EXACT_STEP Vec3 { x: -113, y: 63, z: -180 } Vec3 { x: -112.56529704475717, y: 63, z: -179.52179454903614 } 20
+EXACT_STEP Vec3 { x: -112, y: 63, z: -180 } Vec3 { x: -111.51063782189168, y: 63, z: -179.521921520616 } 20
+EXACT_STEP Vec3 { x: -111, y: 63, z: -180 } Vec3 { x: -110.43135172192616, y: 63, z: -179.52204849219584 } 20
+EXACT_STEP Vec3 { x: -110, y: 63, z: -180 } Vec3 { x: -109.54326952626833, y: 63, z: -179.5221500694597 } 20
+EXACT_STEP Vec3 { x: -109, y: 63, z: -180 } Vec3 { x: -108.48861030340284, y: 63, z: -179.52227704103956 } 20
+EXACT_STEP Vec3 { x: -108, y: 63, z: -180 } Vec3 { x: -107.40932420343732, y: 63, z: -179.5224040126194 } 20
+EXACT_STEP Vec3 { x: -108, y: 63, z: -180 } Vec3 { x: -107.40883659041131, y: 63, z: -179.5224040126194 } 20
+EXACT_STAGE_FULL {"kind":"BURIED","feet":[-108,60,-180],"surface":[-108,63,-180],"index":305,"at":1792197574466} 20 20 CHECKS 170 KIT [["stick",2,null],["wooden_sword",1,0],["dirt",16,null],["crafting_table",1,null],["spruce_planks",1,null],["blackstone",3,null],["wooden_pickaxe",1,18],["basalt",15,null],["netherrack",1,null]]
+FAST_STAGE_END {"issue":"FAST_NATIVE_318","closed":true,"startIndex":295,"endIndex":455,"currentIndex":317,"p":{"x":-107.45875859563564,"y":60,"z":-179.52239639432463},"hp":20,"food":20,"lost":false,"elapsed":23505}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 SPIDER_END deadACKfalse hits0 swings0 HP20 STRING0 CAMPtrue RELEASE6 issTARGET_CHANGED
+--- p2 now: (-107.5, 60, -179.5) in the_nether, health 20/20, food 20/20, alive

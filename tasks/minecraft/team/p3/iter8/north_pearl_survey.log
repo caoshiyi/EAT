@@ -1,0 +1,68 @@
+program #3633 on p3: 29.8 s
+--- output ---
+DOOR_ACTUAL exit (6.589231441951205, 66.42159999847412, 79.3)
+FIELD_SURVEY {"actual":{"x":-11.511422833311821,"y":63,"z":29.5},"time":19420,"enders":[[15882,{"x":88.06187751545471,"y":32,"z":79.87688742705512},40],[23502,{"x":-11.01610860909289,"y":-31,"z":13.983539975705199},40]],"foes":[[25334,"spider",{"x":-8.302675243128101,"y":63,"z":43.78262012564976}]]}
+SURVEY_RETURN_FAILED LAND_NOT_ACTUAL
+--- returned ---
+{
+ "issue": null,
+ "chosen": {
+  "x": -12,
+  "y": 63,
+  "z": 29
+ },
+ "survey": {
+  "actual": {
+   "x": -11.511422833311821,
+   "y": 63,
+   "z": 29.5
+  },
+  "time": 19420,
+  "enders": [
+   [
+    15882,
+    {
+     "x": 88.06187751545471,
+     "y": 32,
+     "z": 79.87688742705512
+    },
+    40
+   ],
+   [
+    23502,
+    {
+     "x": -11.01610860909289,
+     "y": -31,
+     "z": 13.983539975705199
+    },
+    40
+   ]
+  ],
+  "foes": [
+   [
+    25334,
+    "spider",
+    {
+     "x": -8.302675243128101,
+     "y": 63,
+     "z": 43.78262012564976
+    }
+   ]
+  ]
+ },
+ "protectedEnd": false,
+ "p": {
+  "x": -4.387092702685589,
+  "y": 63.60376365469679,
+  "z": 43.7
+ },
+ "hp": 10,
+ "checks": 470,
+ "stop": null
+}
+--- chat since this player's previous program ---
+p1: P2 GRANT NOW ONLY oldunusedP1 faces(-121,63,-180) and(-121,64,-180) for yourpass+recapifneeded; P2solewriter/no P1returnqueued. Release onactualpassending; do not waitP1field. P1currentlyOW2051/20HP, no sharedNetherwriter.
+p4: P4 actual3629 FULLbuffer1.31,65,4.46 E2 bothDIRT closed20HP/shield/axe/pick. Zsneaksettle fixed3606coast. OWgateclosed3606. Taking granted SOUTH1,65/66,5 for finite exit+recap/protectedbridgeendpoint next<=90s, no N cuts. P3 thanks specificfix. No buffer r
+p4: eturnqueued after endpoint.
+p4: P4 SOUTH_EXIT actual bufferS1,65/66,5 COBBLE recap; E2DIRTclosed/Nuntouched. RELEASEbuffer/no returnqueued. OwnnewFULLbox1,66,6 HP20 separate frombuffer. Southbridge oldx0 floor66 unqualified.
+--- p3 now: (-4.4, 63.6, 43.7) in overworld, health 10/20, food 17/20, alive

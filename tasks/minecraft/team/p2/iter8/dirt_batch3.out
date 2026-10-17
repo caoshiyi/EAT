@@ -1,0 +1,29 @@
+program #3240 on p2: 13.6 s
+--- output ---
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 11, y: 62, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 11, y: 62, z: 113 } dirt
+CAP_INTENT Vec3 { x: 11, y: 63, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 11, y: 63, z: 113 } dirt
+ACCEPTED 17 [ 10, 62, 113 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 10, y: 62, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 10, y: 62, z: 113 } dirt
+CAP_INTENT Vec3 { x: 10, y: 63, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 10, y: 63, z: 113 } dirt
+ACCEPTED 18 [ 9, 62, 113 ] HP 20 FOOD 17
+STEP_DROPS 2
+CAP_INTENT Vec3 { x: 9, y: 62, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 9, y: 62, z: 113 } dirt
+CAP_INTENT Vec3 { x: 9, y: 63, z: 113 } dirt
+CAP_ACTUAL Vec3 { x: 9, y: 63, z: 113 } dirt
+ACCEPTED 19 [ 8, 62, 113 ] HP 20 FOOD 17
+BATCH_PROGRESS 19 20 [ 8, 62, 113 ]
+INSIDE_HOSTILES []
+FINAL Vec3 { x: 8.5, y: 62, z: 113.50044583133985 } 20 17 FULL true LOST false KIT [ [ 'spruce_sapling', 2, null ], [ 'stone_pickaxe', 1, 121 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 EXITONLY6 ACK NOW; actualTABLE3223restored, P3remoteprivate3236closed/no pendingcampwrites, P4belowprivate no doors. AfteractualEXIT+CLOSE+NO_RETURN release6P3, no requirementforouradoption. Caveat20mradius hostilecamp stillfieldfailure3; owncontinuouse
+p3: ndingmustnotpauseexposed. P3 underfootfallback3236physicalsameLife15.67 full.
+--- p2 now: (8.5, 62, 113.5) in overworld, health 20/20, food 17/20, alive

@@ -1,0 +1,76 @@
+program #3589 on p3: 16.5 s
+--- output ---
+DOOR_ACTUAL exit (6.587048624705566, 66.42159999847412, 79.2840095865506)
+EXPECTED_DIMENSION_RESPAWN the_nether
+NETHER_ACTUAL_ARRIVAL Vec3 { x: 3.3869300175877823, y: 65, z: 3.5 } 20
+NETHER_ENTRY_ISSUE BUFFER ROW_NOT_ALIGNED
+--- returned ---
+{
+ "phase": "BUFFER",
+ "issue": "ROW_NOT_ALIGNED",
+ "dead": false,
+ "lost": false,
+ "gateClosedOW": true,
+ "gateOpened": false,
+ "netherProtected": false,
+ "campProtected": false,
+ "softCuts": 0,
+ "dim": "the_nether",
+ "p": {
+  "x": 3.3874005718660887,
+  "y": 65,
+  "z": 4.812735081900513
+ },
+ "hp": 20,
+ "food": 17,
+ "controls": {},
+ "inventory": [
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "gold_ingot",
+   1
+  ],
+  [
+   "gold_nugget",
+   6
+  ],
+  [
+   "cooked_beef",
+   1
+  ],
+  [
+   "dirt",
+   21
+  ],
+  [
+   "dandelion",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "leather",
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (3.4, 65, 4.8) in the_nether, health 20/20, food 17/20, alive

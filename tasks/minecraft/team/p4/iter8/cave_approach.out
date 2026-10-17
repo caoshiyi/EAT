@@ -1,0 +1,14 @@
+program #3308 on p4: 43.6 s
+--- output ---
+SURFACE_MOBS []
+CAVE_COLUMN [[58,"andesite"],[59,"andesite"],[60,"andesite"],[61,"andesite"],[62,"andesite"],[63,"andesite"],[64,"dirt"],[65,"dirt"],[66,"dirt"],[67,"dirt"],[68,"dirt"],[69,"grass_block"],[70,"air"],[71,"air"],[72,"spruce_leaves"]]
+PREFLIGHT success 81
+EMERGED Vec3 { x: 4.503148549627077, y: 65, z: 83.4976570106027 } 20
+CAVE_APPROACH_ACCEPTED Vec3 { x: 73.5, y: 67, z: 115.50431952067807 } 20 2
+G_END {"p":{"x":73.5,"y":67,"z":115.50431952067807},"hp":20,"food":20,"lost":false,"bad":[["4,61,83","sand",1],["73,70,115","air",1]],"path":3,"items":[["sandstone",1],["sand",4],["dirt",2]]}
+APPROACH_END {"stage":"BURY","emerged":true,"sealed":true,"p":{"x":73.5,"y":67,"z":115.50431952067807},"hp":20}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (73.5, 67, 115.5) in overworld, health 20/20, food 20/20, alive

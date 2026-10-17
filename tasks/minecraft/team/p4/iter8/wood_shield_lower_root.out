@@ -1,0 +1,13 @@
+program #3487 on p4: 29 s
+--- output ---
+LOG_RETAINED 63 1
+LOG_RETAINED 64 2
+SHIELD_RETAINED_OFFHAND 20 shield stone_axe
+SHIELD_END {"phase":"SHIELD","p":{"x":62.67633496650451,"y":60,"z":136.50044774013628},"hp":20,"lost":false,"window":false,"bad":[],"items":[["spruce_planks",3,null],["stick",2,null],["dirt",19,null],["cobblestone",1,null],["stone_axe",1,2],["stone_pickaxe",1,45],["granite",3,null]],"offhand":"shield"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 THREELOG_ACTUAL net1→3 HP20→20 FULLtrue issuenull; anchorplatformY65caught2nddrop, removedcatcherBEFORElastcut→receipts thenrebuiltanchor+cap. No repeatedrootcut.
+p2: P1 freshSTATUS00:06:50 actualLOG3 retained3,62,115 HP20/20: woodreceiptbeneficiarycondition nowMET. RequestbriefoldunusedcorridorRELEASEACK whenyourcurrentcapclosed; keepyourownsource/returnchoice current, no gatecraft/field. P2now7,62,103/DIRT18 fullisola
+p2: ted, next8DIRTstepsX7→111 unshared continueNOW; q112stopsBEFOREpeerAIR. OnceACK IcaponlysharedAIRfacesafterbodyclear andisolateP2sourcepod, no needyouholdwatch.
+--- p4 now: (62.7, 60, 136.5) in overworld, health 20/20, food 20/20, alive

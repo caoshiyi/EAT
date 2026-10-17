@@ -1,0 +1,44 @@
+program #3382 on p3: 47.9 s
+--- output ---
+PREFLIGHT success 122 (40, 67, 117)
+UP3_ACTUAL (154.5, 68, 197.5) 13
+--- returned ---
+{
+ "phase": "DONE",
+ "issue": null,
+ "sealed": true,
+ "lost": false,
+ "stage": {
+  "feet": {
+   "x": 40,
+   "y": 64,
+   "z": 117
+  },
+  "cells": [
+   "[repeated reference]"
+  ],
+  "cap": {
+   "x": 40,
+   "y": 66,
+   "z": 117
+  },
+  "surface": {
+   "x": 40,
+   "y": 67,
+   "z": 117
+  },
+  "at": 1792193734856
+ },
+ "p": {
+  "x": 40.5,
+  "y": 64,
+  "z": 117.49835678140253
+ },
+ "hp": 17.66666603088379,
+ "food": 17,
+ "dirt": 15,
+ "time": 11280
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (40.5, 64, 117.5) in overworld, health 17.7/20, food 17/20, alive

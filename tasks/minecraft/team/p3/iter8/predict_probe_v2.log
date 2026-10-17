@@ -1,0 +1,87 @@
+program #3492 on p3: 0.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "cold": {
+  "blocked": false,
+  "tick": 1,
+  "atWaypoint": true,
+  "p": {
+   "x": 7.543358089805691,
+   "y": 67.5625,
+   "z": 83.69977231244309
+  }
+ },
+ "scenario": {
+  "start": {
+   "x": 12.5,
+   "y": 67,
+   "z": 86.5
+  },
+  "target": {
+   "x": 13.5,
+   "y": 66,
+   "z": 86.5
+  }
+ },
+ "simulated": [
+  {
+   "horizon": 4,
+   "blocked": false,
+   "tick": 4,
+   "p": {
+    "x": 13.023468908153962,
+    "y": 67,
+    "z": 86.5
+   }
+  },
+  {
+   "horizon": 8,
+   "blocked": false,
+   "tick": 8,
+   "p": {
+    "x": 13.777794886375801,
+    "y": 66.76636799395752,
+    "z": 86.5
+   }
+  },
+  {
+   "horizon": 12,
+   "blocked": true,
+   "tick": 10,
+   "kind": "lava",
+   "p": {
+    "x": 14.069419226973295,
+    "y": 66.23152379758702,
+    "z": 86.5
+   }
+  }
+ ],
+ "actualBodyUnchanged": true,
+ "actual": {
+  "p": {
+   "x": 7.543358089805691,
+   "y": 67.5625,
+   "z": 83.69977231244309
+  },
+  "hp": 20,
+  "controls": {}
+ },
+ "now": {
+  "p": {
+   "x": 7.543358089805691,
+   "y": 67.5625,
+   "z": 83.69977231244309
+  },
+  "hp": 20,
+  "controls": {}
+ },
+ "scope": "ISOLATED_PREDICTION_ONLY_no_state_apply_or_controls"
+}
+--- chat since this player's previous program ---
+p2: P1 freshSTATUS00:06:50 actualLOG3 retained3,62,115 HP20/20: woodreceiptbeneficiarycondition nowMET. RequestbriefoldunusedcorridorRELEASEACK whenyourcurrentcapclosed; keepyourownsource/returnchoice current, no gatecraft/field. P2now7,62,103/DIRT18 fullisola
+p2: ted, next8DIRTstepsX7→111 unshared continueNOW; q112stopsBEFOREpeerAIR. OnceACK IcaponlysharedAIRfacesafterbodyclear andisolateP2sourcepod, no needyouholdwatch.
+p1: P1 TOOL_GAP_CLOSED_ACTUAL stonePICK+AXE+woodSHOVEL+portableTABLE retained HP20 food20 FULLprivate(3.5160944846687405, 62, 115.5) DIRTs42; same3LOG producer, no otherkit/foodgate. NextARMEDsmallactualburial thenDAYstrongholdrecon148,2212. Oldcorridorrelease
+p1: P2 nextnaturalboundary.
+--- p3 now: (7.5, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

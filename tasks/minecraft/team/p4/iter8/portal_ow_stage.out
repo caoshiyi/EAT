@@ -1,0 +1,24 @@
+program #3576 on p4: 33.1 s
+--- output ---
+LOW_PREFLIGHT success 73 { shaft: [ 5, 64, 86 ], bay: [ 5, 60, 86 ], path: [] }
+LOW_EMERGED Vec3 { x: 62.494778924367935, y: 63, z: 136.50044775775288 } 20
+LOW_APPROACH_ISSUE SURFACE_CAP SOIL_CHANGED
+LOW_END {"phase":"SURFACE_CAP","p":{"x":5.518766155566729,"y":62,"z":86.5},"hp":20,"lost":false,"bad":[["4,63,86","snow"],["5,64,86","air"]],"items":[["spruce_planks",3,null],["stick",2,null],["dirt",16,null],["cobblestone",1,null],["stone_axe",1,3],["stone_pickaxe",1,47],["crafting_table",1,null],["granite",3,null],["sand",1,null]],"shield":"shield"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 RELEASE no portal/buffer writer claim; P4 may fresh-claim near gate. P2 owns current buffer/route, no duplicate helper. Creeper clear3554 was BLOCKER_ALREADY_GONE, no hits or edits/CAMP20HP. Choosing independent finite food cooking then pearl contributi
+p3: on; no peer dependency.
+p2: P4 ACK grantNetherbufferE2,65/66,4 DIRT entry+recap andS1,65/66,5 COBBLE exit+recap, ONLYafterP2nextburstclosedby00:32. P2 currentFULL1.59,65,4.51 HP20; N+E DIRTactual3561. P2 nextNexit exactroute≤110s, willCLOSENfromoutsideafterstep2 thenreleasebufferNOWo
+p2: nending. P4canOWapproachindependent meanwhile. No P2gatewriter/no campreturn. 3559 exactdownstepCENTERcriterionfailed; healthy3561normalrecoveryFULL; nothazardproof.
+p3: P3 CLAIM6 ONE cookBEEF2 existingfurnace<=65s thenCAMP+bankreceipt; no portal/buffer interface.
+p3: P3 COOK_END cooked2 bank[["coal",1],["cooked_beef",2]] HP20 CAMPtrue RELEASE6_AVAILABLE issnull
+p2: P4 BUFFER RELEASE NOW: P2 actual3566 stage59(-23,59,-29) BURIED FULL20HP20food,47.3s/309predictchecks, toolsretained. N1,65/66,3 DIRTrecappedFROMOUTSIDEafterstep2 actualACK; E2DIRTunchangedclosed. No queuedbuffer/gatewriter, P4 may entryE/reclose +SCOBBLEe
+p2: xit/reclose pergrant. Freshcapscheckrequired; useSouthroute independent. P2 continuesNorth ownrodstage, willcoordinateonlyifreturnbuffer.
+p3: P3 direct independent ONEpearl barter avenue <=12m: existingbankGOLD1+NUG6 insufficientarmor, oneLOG/woodpick→Nethergold if freshreachable→goldboots+ONEbarter. No portalclaim untilnear/no peer overlap. Abandon on2 equivalent failures/budget. Cookdone lower
+p3: STEAK2+COAL1 verified.
+p1: P1 actual3563 retained next224m to151.50,64,1140.48 FULL3DOWNcap20HP20food/nofoes/kitretained. Route next3x80s towardcandidate148,2212, ~1.07kmremaining; physicalstructure stillunknown. No camp/portal modification or helper dependency.
+p3: P3 CLAIM6 ONE<=60s LOG1at18,70,106 thenreturn+woodpick. OtherinterfacesFREE.
+p3: P3 LOGPICK_END wood0 pickfalse CAMPtrue HP20 RELEASE6_AVAILABLE issLOG_NO_RECEIPT
+p3: P3 3574 LOGcut/NOreceipt at18,70,106; sameHP20 cold469checks→CAMPclosed. Inspectingactualdrop then ONEpickup correction (notsecondblindcut). ONEE2DIRTentry/reclose later onlyifP2/P4release andempty; no standingclaim.
+--- p4 now: (5.5, 62, 86.5) in overworld, health 20/20, food 20/20, alive
