@@ -113,6 +113,11 @@ EVAL_CMD="${EVAL_CMD:-python tools/eval_${TASK}.py}"
 echo "[launch_team] Official eval: $EVAL_CMD" >&2
 bash -c "$EVAL_CMD" > "$ITER_DIR/official_eval.txt" 2>&1 || true
 
+# SNAPSHOT_CMD: a task's factual summary of its world for the supervisor (state and totals, no advice), run after the eval
+if [ -n "${SNAPSHOT_CMD:-}" ]; then
+    bash -c "$SNAPSHOT_CMD" > "$ITER_DIR/world_snapshot.txt" 2>&1 || true
+fi
+
 # A task's observer (tasks/<task>/observer.md): an independent witness the harness runs after every team, never the
 # supervisor's choice. It checks the team's claims against the records and reports; it cannot write.
 OBSERVER_OUTPUT="$ITER_DIR/harness_observer_output.json"
@@ -155,6 +160,11 @@ echo "[launch_team] Team cost for iteration $ITER: \$$TEAM_TOTAL_COST" >&2
     echo "## Current Score (official eval run by the harness after the team finished)"
     tail -25 "$ITER_DIR/official_eval.txt"
     echo ""
+
+    if [ -s "$ITER_DIR/world_snapshot.txt" ]; then
+        cat "$ITER_DIR/world_snapshot.txt"
+        echo ""
+    fi
 
     if [ -s "$OBSERVER_OUTPUT" ]; then
         echo "## Observer report (independent witness run by the harness; not part of the team)"
