@@ -7,6 +7,7 @@ SpikeFeature creates obsidian for integer horizontal offset squared <=radius²+1
 
 Potential ordinary melee pose, not a caller: feetY=height-1=rootY-2, horizontal offset from crystal centre according to actual tower radius:
 | radius | integer offset X,Z | outside native obsidian | eye-to-crystal AABB distance |
+|---|---|---|---|
 |2|2,2|8>5|sqrt(1+1+.38²)=1.464m|
 |3|3,2|13>10|sqrt(4+1+.38²)=2.268m|
 |4|3,3|18>17|sqrt(4+4+.38²)=2.854m|

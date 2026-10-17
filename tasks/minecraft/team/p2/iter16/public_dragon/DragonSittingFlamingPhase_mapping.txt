@@ -1,0 +1,15 @@
+net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingFlamingPhase -> cba:
+# {"fileName":"DragonSittingFlamingPhase.java","id":"sourceFile"}
+    int FLAME_DURATION -> b
+    int SITTING_FLAME_ATTACKS_COUNT -> c
+    int WARMUP_TIME -> d
+    int flameTicks -> e
+    int flameCount -> f
+    net.minecraft.world.entity.AreaEffectCloud flame -> g
+    26:27:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    31:49:void doClientTick() -> b
+    53:87:void doServerTick() -> c
+    91:93:void begin() -> d
+    97:101:void end() -> e
+    105:105:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getPhase() -> i
+    109:110:void resetFlameCount() -> j

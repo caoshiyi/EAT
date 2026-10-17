@@ -1,9 +1,8 @@
 {
-  "source": "hold_state.js",
-  "program": 7955,
-  "observed_utc": "2026-10-17T16:53:11.895822+00:00",
+  "source": "p4_gift_stage_read.js",
+  "program": 7969,
+  "observed_utc": "2026-10-17T17:02:52.560957+00:00",
   "result": {
-    "visibleRays": [],
     "p": {
       "x": 128.4051838727656,
       "y": -36,
@@ -12,30 +11,41 @@
     "hp": 11.499998092651367,
     "food": 9,
     "dim": "overworld",
-    "onGround": true,
-    "velocity": {
-      "x": 0,
-      "y": -0.0784000015258789,
-      "z": 0
+    "p4": {
+      "x": 129.49802048793345,
+      "y": -36,
+      "z": 2274.503518168217
     },
-    "controls": {},
-    "goal": null,
-    "inv": [
-      [
-        "basalt",
-        1,
-        null
-      ],
-      [
-        "cobblestone_slab",
-        2,
-        null
-      ]
+    "hit": [
+      {
+        "x": 128,
+        "y": -35,
+        "z": 2273
+      },
+      "deepslate"
     ],
-    "local": [
+    "cells": [
       [
         [
-          128,
+          129,
+          -36,
+          2272
+        ],
+        "air",
+        []
+      ],
+      [
+        [
+          129,
+          -35,
+          2272
+        ],
+        "air",
+        "[repeated reference]"
+      ],
+      [
+        [
+          129,
           -37,
           2272
         ],
@@ -53,48 +63,58 @@
       ],
       [
         [
-          128,
-          -36,
+          129,
+          -34,
           2272
         ],
-        "air",
-        []
+        "mossy_stone_bricks",
+        "[repeated reference]"
+      ],
+      [
+        [
+          129,
+          -36,
+          2273
+        ],
+        "basalt",
+        "[repeated reference]"
+      ],
+      [
+        [
+          129,
+          -35,
+          2273
+        ],
+        "basalt",
+        "[repeated reference]"
+      ],
+      [
+        [
+          128,
+          -36,
+          2273
+        ],
+        "deepslate",
+        "[repeated reference]"
       ],
       [
         [
           128,
           -35,
-          2272
-        ],
-        "air",
-        "[repeated reference]"
-      ],
-      [
-        [
-          128,
-          -34,
-          2272
+          2273
         ],
         "deepslate",
         "[repeated reference]"
       ]
     ],
-    "near": [
+    "inv": [
       [
-        "spider",
-        {
-          "x": 140.51054686307907,
-          "y": -37.89997812271118,
-          "z": 2262.6999387050114
-        }
+        "basalt",
+        1
       ],
       [
-        "zombie",
-        {
-          "x": 124.74519165186749,
-          "y": -38,
-          "z": 2256.5338361418108
-        }
+        "cobblestone_slab",
+        2
       ]
     ]
   }

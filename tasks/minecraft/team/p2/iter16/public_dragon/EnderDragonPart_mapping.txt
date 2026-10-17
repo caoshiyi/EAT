@@ -1,0 +1,16 @@
+net.minecraft.world.entity.boss.EnderDragonPart -> cam:
+# {"fileName":"EnderDragonPart.java","id":"sourceFile"}
+    net.minecraft.world.entity.boss.enderdragon.EnderDragon parentMob -> b
+    java.lang.String name -> c
+    net.minecraft.world.entity.EntityDimensions size -> d
+    22:27:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon,java.lang.String,float,float) -> <init>
+    31:31:void defineSynchedData() -> c_
+    35:35:void readAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> a
+    39:39:void addAdditionalSaveData(net.minecraft.nbt.CompoundTag) -> b
+    43:43:boolean isPickable() -> bt
+    49:49:net.minecraft.world.item.ItemStack getPickResult() -> dz
+    54:57:boolean hurt(net.minecraft.world.damagesource.DamageSource,float) -> a
+    62:62:boolean is(net.minecraft.world.entity.Entity) -> t
+    68:68:net.minecraft.network.protocol.Packet getAddEntityPacket() -> dj
+    73:73:net.minecraft.world.entity.EntityDimensions getDimensions(net.minecraft.world.entity.Pose) -> a
+    78:78:boolean shouldBeSaved() -> dK

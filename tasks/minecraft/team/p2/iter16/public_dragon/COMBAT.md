@@ -1,0 +1,10 @@
+# Finite ordinary-attack check — source only, iteration16 ~16:55 UTC
+Public Mojang client1.20.4 and official mappings SHA1+size matched; see provenance.json/extract.py. No physical dragon damage claim. Examined while P1 prepares next End entry; no resource request or independent entry.
+
+EnderDragon.hurt(DamageSource,float) on server directly routes ordinary attack to its BODY part (bytecode1946 onward). Thus normal bot.attack(actualDragonEntity) is a viable source-level fallback: no need to synthesize or guess multipart IDs. Mineflayer installed entities.js attack(target) uses target.id via its normal useEntity path. Dragon parent is not client-pickable, but standard attack packet server handling is distinct; actual attack and damage still require physical verification and normal close reach. Do not use this note to attack from afar.
+
+EnderDragon.hurt(EnderDragonPart,DamageSource,float): head retains incoming phase-adjusted damage; other parts use damage/4+min(damage,1). Player sources accepted; dying phase rejects. Ordinary body attacks therefore deal less damage. During sitting, accumulated actual damage strictly exceeding25% maxHP forces TAKEOFF. Do not promise one-perch kill from nominal swordDPS.
+
+EnderDragon.checkCrystals: with nonremoved nearestCrystal, heals1HP every10ticks; on1/10 random ticks reselects closest crystal from dragon AABB expanded32 each axis. This is NOT a simple32m sphere around root, and stale selected crystal persists until reselection. Therefore do not infer central fountain is outside healing solely from42m tower ring. Avoid treating intact crystals as irrelevant without real observed netdamage across flights.
+
+Practical relevance after access/recovery: normal attack on actual tracked dragon can test damage without new entity reconstruction; close head targeting is more efficient but needs real observed multipart geometry. First record actual health/bossbar delta, phase, body pose, support, cloud, weapon, and ending. No unchanged exposed surfacecaller retry justified.

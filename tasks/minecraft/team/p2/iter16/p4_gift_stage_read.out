@@ -1,0 +1,123 @@
+program #7969 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 128.4051838727656,
+  "y": -36,
+  "z": 2272.499829837034
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "dim": "overworld",
+ "p4": {
+  "x": 129.49802048793345,
+  "y": -36,
+  "z": 2274.503518168217
+ },
+ "hit": [
+  {
+   "x": 128,
+   "y": -35,
+   "z": 2273
+  },
+  "deepslate"
+ ],
+ "cells": [
+  [
+   [
+    129,
+    -36,
+    2272
+   ],
+   "air",
+   []
+  ],
+  [
+   [
+    129,
+    -35,
+    2272
+   ],
+   "air",
+   "[repeated reference]"
+  ],
+  [
+   [
+    129,
+    -37,
+    2272
+   ],
+   "basalt",
+   [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  ],
+  [
+   [
+    129,
+    -34,
+    2272
+   ],
+   "mossy_stone_bricks",
+   "[repeated reference]"
+  ],
+  [
+   [
+    129,
+    -36,
+    2273
+   ],
+   "basalt",
+   "[repeated reference]"
+  ],
+  [
+   [
+    129,
+    -35,
+    2273
+   ],
+   "basalt",
+   "[repeated reference]"
+  ],
+  [
+   [
+    128,
+    -36,
+    2273
+   ],
+   "deepslate",
+   "[repeated reference]"
+  ],
+  [
+   [
+    128,
+    -35,
+    2273
+   ],
+   "deepslate",
+   "[repeated reference]"
+  ]
+ ],
+ "inv": [
+  [
+   "basalt",
+   1
+  ],
+  [
+   "cobblestone_slab",
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (128.4, -36, 2272.5) in overworld, health 11.5/20, food 9/20, alive

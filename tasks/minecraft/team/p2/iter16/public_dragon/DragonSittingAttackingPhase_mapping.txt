@@ -1,0 +1,9 @@
+net.minecraft.world.entity.boss.enderdragon.phases.DragonSittingAttackingPhase -> caz:
+# {"fileName":"DragonSittingAttackingPhase.java","id":"sourceFile"}
+    int ROAR_DURATION -> b
+    int attackingTicks -> c
+    13:14:void <init>(net.minecraft.world.entity.boss.enderdragon.EnderDragon) -> <init>
+    18:19:void doClientTick() -> b
+    23:26:void doServerTick() -> c
+    30:31:void begin() -> d
+    35:35:net.minecraft.world.entity.boss.enderdragon.phases.EnderDragonPhase getPhase() -> i

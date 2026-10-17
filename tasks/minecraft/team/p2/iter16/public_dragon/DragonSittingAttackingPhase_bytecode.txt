@@ -1,0 +1,74 @@
+Compiled from "SourceFile"
+public class caz extends car {
+  private static final int b;
+
+  private int c;
+
+  public caz(cao);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #13                 // Method car."<init>":(Lcao;)V
+       5: return
+
+  public void b();
+    Code:
+       0: aload_0
+       1: getfield      #21                 // Field a:Lcao;
+       4: invokevirtual #27                 // Method cao.dM:()Lctp;
+       7: aload_0
+       8: getfield      #21                 // Field a:Lcao;
+      11: invokevirtual #31                 // Method cao.dr:()D
+      14: aload_0
+      15: getfield      #21                 // Field a:Lcao;
+      18: invokevirtual #34                 // Method cao.dt:()D
+      21: aload_0
+      22: getfield      #21                 // Field a:Lcao;
+      25: invokevirtual #37                 // Method cao.dx:()D
+      28: getstatic     #43                 // Field ars.hA:Larr;
+      31: aload_0
+      32: getfield      #21                 // Field a:Lcao;
+      35: invokevirtual #47                 // Method cao.db:()Lart;
+      38: ldc           #48                 // float 2.5f
+      40: ldc           #49                 // float 0.8f
+      42: aload_0
+      43: getfield      #21                 // Field a:Lcao;
+      46: invokevirtual #53                 // Method cao.eg:()Lauv;
+      49: invokeinterface #59,  1           // InterfaceMethod auv.i:()F
+      54: ldc           #60                 // float 0.3f
+      56: fmul
+      57: fadd
+      58: iconst_0
+      59: invokevirtual #65                 // Method ctp.a:(DDDLarr;Lart;FFZ)V
+      62: return
+
+  public void c();
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #67                 // Field c:I
+       5: dup_x1
+       6: iconst_1
+       7: iadd
+       8: putfield      #67                 // Field c:I
+      11: bipush        40
+      13: if_icmplt     29
+      16: aload_0
+      17: getfield      #21                 // Field a:Lcao;
+      20: invokevirtual #71                 // Method cao.gb:()Lcbf;
+      23: getstatic     #77                 // Field cbe.f:Lcbe;
+      26: invokevirtual #82                 // Method cbf.a:(Lcbe;)V
+      29: return
+
+  public void d();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #67                 // Field c:I
+       5: return
+
+  public cbe<caz> i();
+    Code:
+       0: getstatic     #88                 // Field cbe.h:Lcbe;
+       3: areturn
+}
