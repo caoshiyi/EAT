@@ -1,0 +1,34 @@
+program #7843 on p3: 1.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-17T16:03:02.117Z",
+ "issue": null,
+ "same": true,
+ "p": {
+  "x": 6.476069400572608,
+  "y": 67,
+  "z": 82.42251276522404
+ },
+ "hp": 18.5,
+ "food": 17,
+ "ground": true,
+ "roof": {
+  "waterlogged": false,
+  "type": "top"
+ },
+ "cursor": null,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 67, 82.4) in overworld, health 18.5/20, food 17/20, alive

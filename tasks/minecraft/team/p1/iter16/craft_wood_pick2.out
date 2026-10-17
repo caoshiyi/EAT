@@ -1,0 +1,82 @@
+program #7925 on p1: 1.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "before": {
+  "planks": 5,
+  "sticks": 0,
+  "wood": 0,
+  "stone": 0,
+  "cursor": null,
+  "grid": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "after": {
+  "planks": 0,
+  "sticks": 2,
+  "wood": 1,
+  "stone": 0,
+  "cursor": null,
+  "grid": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "trace": [
+  [
+   "stick",
+   {
+    "planks": 3,
+    "sticks": 4,
+    "wood": 0,
+    "stone": 0,
+    "cursor": null,
+    "grid": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  ],
+  [
+   "wooden_pickaxe",
+   {
+    "planks": 0,
+    "sticks": 2,
+    "wood": 1,
+    "stone": 0,
+    "cursor": null,
+    "grid": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ]
+   }
+  ]
+ ],
+ "p": {
+  "x": 146.49928538198094,
+  "y": -36,
+  "z": 2241.362218602218
+ },
+ "hp": 20,
+ "food": 20
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (146.5, -36, 2241.4) in overworld, health 20/20, food 20/20, alive

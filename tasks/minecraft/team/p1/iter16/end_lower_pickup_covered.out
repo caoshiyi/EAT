@@ -1,0 +1,555 @@
+program #7972 on p1: 1.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "DAMAGE_OR_HAZARD",
+ "endingIssue": null,
+ "lost": false,
+ "world": "the_end",
+ "p": {
+  "x": 81.56803192790743,
+  "y": 49,
+  "z": 0.49999320530645064
+ },
+ "hp": 13.166666984558105,
+ "food": 17,
+ "ground": true,
+ "closed": true,
+ "cuts": 0,
+ "caps": 20,
+ "trace": [
+  [
+   "ACTUAL_DROP_COUNT",
+   15
+  ],
+  [
+   "ISSUE",
+   "DAMAGE_OR_HAZARD",
+   {
+    "x": 81.56803192790743,
+    "y": 49,
+    "z": 0.49999320530645064
+   }
+  ],
+  [
+   "CAP",
+   [
+    81,
+    50,
+    -1
+   ],
+   "cobbled_deepslate"
+  ]
+ ],
+ "cursor": null,
+ "inventory": [
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   31
+  ],
+  [
+   "cobbled_deepslate",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   13
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ]
+ ],
+ "clouds": [],
+ "items": [
+  [
+   17423,
+   {
+    "x": 100.125,
+    "y": 49,
+    "z": -1.6402770923442498
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 922,
+     "itemCount": 12
+    }
+   ]
+  ],
+  [
+   17434,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.125
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 821,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 109
+       }
+      }
+     }
+    }
+   ]
+  ],
+  [
+   17435,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 9,
+     "itemCount": 11
+    }
+   ]
+  ],
+  [
+   17436,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.125
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 376,
+     "itemCount": 7
+    }
+   ]
+  ],
+  [
+   17437,
+   {
+    "x": 81.125,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 340,
+     "itemCount": 9
+    }
+   ]
+  ],
+  [
+   17438,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 327,
+     "itemCount": 5
+    }
+   ]
+  ],
+  [
+   17439,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 1216,
+     "itemCount": 1
+    }
+   ]
+  ],
+  [
+   17440,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 339,
+     "itemCount": 3
+    }
+   ]
+  ],
+  [
+   17441,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.125
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 12,
+     "itemCount": 2
+    }
+   ]
+  ],
+  [
+   17442,
+   {
+    "x": 81.125,
+    "y": 52,
+    "z": -1.125
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 922,
+     "itemCount": 6
+    }
+   ]
+  ],
+  [
+   17443,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 909,
+     "itemCount": 4
+    }
+   ]
+  ],
+  [
+   17444,
+   {
+    "x": 81.125,
+    "y": 52,
+    "z": -1.6284706450131814
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 819,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 0
+       }
+      }
+     }
+    }
+   ]
+  ],
+  [
+   17445,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.125
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 814,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 0
+       }
+      }
+     }
+    }
+   ]
+  ],
+  [
+   17446,
+   {
+    "x": 81.125,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 57,
+     "itemCount": 4
+    }
+   ]
+  ],
+  [
+   17447,
+   {
+    "x": 81.39103834164852,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 49,
+     "itemCount": 4
+    }
+   ]
+  ],
+  [
+   17448,
+   {
+    "x": 81.875,
+    "y": 52,
+    "z": -1.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 815,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 50
+       }
+      }
+     }
+    }
+   ]
+  ],
+  [
+   18220,
+   {
+    "x": 81.58422906525902,
+    "y": 50.39952512022634,
+    "z": -0.057163719698421156
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 376,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ],
+ "attempted": true,
+ "recovered": false,
+ "before": [
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   30
+  ],
+  [
+   "cobbled_deepslate",
+   11,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   13
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (81.6, 49, 0.5) in the_end, health 13.2/20, food 17/20, alive

@@ -1,0 +1,55 @@
+{
+  "program": 7755,
+  "header": "2026-10-17T15:43:02 p2 role=carrier_owner iter=16 11.8 s",
+  "result": {
+    "issue": null,
+    "armed": true,
+    "tossed": true,
+    "recipientReturned": true,
+    "closed": true,
+    "lost": false,
+    "before": 5,
+    "after": 0,
+    "recipientInventoryProof": false,
+    "p": {
+      "x": 25.49965301769197,
+      "y": 8,
+      "z": 240.56328753232228
+    },
+    "hp": 11.499998092651367,
+    "food": 9,
+    "cursor": null,
+    "trace": [
+      [
+        "BEFORE_TOSS",
+        5,
+        5,
+        {
+          "x": 25.4998784081225,
+          "y": 8,
+          "z": 241.45129514041014
+        }
+      ],
+      [
+        "DONOR_DELTA",
+        5,
+        0
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    },
+    "limit": "P1 actual ordinary rod receipt must be read separately; no autoretry, no movement/dig/place/closure mutation by donor"
+  },
+  "result_present": true,
+  "latest_completed_program": 7755,
+  "state_lags_latest": false,
+  "observed_utc": "2026-10-17T15:43:46.632714+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body"
+}

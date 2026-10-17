@@ -1,0 +1,99 @@
+{
+  "program": 7872,
+  "header": "2026-10-17T16:13:30 p1 role=destination_owner iter=16 18.3 s",
+  "result": {
+    "issue": null,
+    "cuts": 9,
+    "trace": [
+      [
+        "ACTUAL_CAPS",
+        4,
+        {
+          "x": 145.36280337182097,
+          "y": -36,
+          "z": 2243.4968406561584
+        }
+      ],
+      [
+        "ACTUAL_CAPS",
+        7,
+        {
+          "x": 147.55225517360185,
+          "y": -36,
+          "z": 2243.49968850337
+        }
+      ],
+      [
+        "ACTUAL_ROOF_CAP",
+        7,
+        {
+          "x": 145.42134396685393,
+          "y": -36,
+          "z": 2243.4998424412947
+        }
+      ],
+      [
+        "ACTUAL_ROOF_CAP",
+        9,
+        {
+          "x": 146.50519530100172,
+          "y": -36,
+          "z": 2243.499919410257
+        }
+      ],
+      [
+        "ACTUAL_ROOF_CAP",
+        9,
+        {
+          "x": 147.64473866287662,
+          "y": -36,
+          "z": 2243.499919410257
+        }
+      ]
+    ],
+    "p": {
+      "x": 146.5014681994134,
+      "y": -36,
+      "z": 2242.3732385660874
+    },
+    "hp": 20,
+    "food": 20,
+    "ground": true,
+    "caps": 10,
+    "cursor": null,
+    "inventory": [
+      [
+        "book",
+        12,
+        null
+      ],
+      [
+        "basalt",
+        3,
+        null
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        9
+      ],
+      [
+        "cobbled_deepslate",
+        7,
+        null
+      ]
+    ]
+  },
+  "result_present": true,
+  "player": "p1",
+  "latest_completed_program": 7872,
+  "state_lags_latest": false,
+  "observed_utc": "2026-10-17T16:14:56.869354+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body",
+  "live_observation": {
+    "scope": "separate fresh arena reads after completed receipt; not atomic",
+    "observed_utc": "2026-10-17T16:14:57.023476+00:00",
+    "player_line": "p1: (146.5, -36, 2242.4) in overworld, health 20/20, food 20/20, alive; controlled by destination_owner (iteration 16)",
+    "last_known_death": "2026-10-17T15:56:39 death          player=p1 cause=p1 fell out of the world position={'x': 104.2, 'y': -99.1, 'z': 2.9} dimension=the_end"
+  }
+}

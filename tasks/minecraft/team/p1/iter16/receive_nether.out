@@ -1,0 +1,36 @@
+program #7756 on p1: 6.1 s
+--- output ---
+ACTUAL_INTAKE_RECEIVER_READY Vec3 { x: 25.49987813147321, y: 8, z: 241.4514936251804 }
+ACTUAL_INPUT_RECEIPT {"actualReceipt":true,"before":{"rod":0,"powder":0,"eye":0},"after":{"rod":5,"powder":0,"eye":0}}
+--- returned ---
+{
+ "issue": null,
+ "actualReceipt": true,
+ "opened": true,
+ "closed": true,
+ "p": {
+  "x": 25.499878423781993,
+  "y": 8,
+  "z": 242.60784301018933
+ },
+ "hp": 20,
+ "food": 20,
+ "rod": 5,
+ "powder": 0,
+ "eye": 0,
+ "cursor": null,
+ "cuts": 2,
+ "moves": 2,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: Actual donor retainedROD5 at25.5,8,240.5 ARMED45s; P1 may run receive_nether now; close239 first. I wait actual241 body+open241, then ONEstack toss; no manual timing.
+--- p1 now: (25.5, 8, 242.6) in the_nether, health 20/20, food 20/20, alive

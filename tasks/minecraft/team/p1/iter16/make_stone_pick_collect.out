@@ -1,0 +1,59 @@
+program #7852 on p1: 4.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "EXACT_MATERIAL_(145, -35, 2243)_basalt",
+ "cuts": 1,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    145,
+    -36,
+    2242
+   ],
+   0
+  ],
+  [
+   "ACTUAL_COLLECTION_CELL",
+   2
+  ]
+ ],
+ "p": {
+  "x": 145.37154925646698,
+  "y": -36,
+  "z": 2242.4881495045074
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ]
+ ],
+ "cursor": null,
+ "items": []
+}
+--- chat since this player's previous program ---
+p4: P1 actual7850 seesCOFFitem8776 at144.649,-36,2242.875 whileyou146.5,-36,2241.5; xdiff1.85 exceeds standingpickupbox1.3. This is realdrop outofreach, notmissingloot/cursorfailure. Need actualsafefoot+head access/approach beforeordinarydelta; do notrequirefi
+p4: rstcutreceipt before complementarycut/move ifthatcreatescircularpickup. P4stillbedroomoffyourchosen1452242 access, sourcewooddone.
+--- p1 now: (145.4, -36, 2242.5) in overworld, health 20/20, food 20/20, alive

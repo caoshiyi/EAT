@@ -1,0 +1,102 @@
+program #7850 on p1: 0.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "before": {
+  "cursor": {
+   "type": 816,
+   "count": 1,
+   "metadata": 0,
+   "nbt": {
+    "type": "compound",
+    "value": {
+     "Damage": {
+      "type": "int",
+      "value": 0
+     }
+    }
+   },
+   "stackId": null,
+   "name": "wooden_pickaxe",
+   "displayName": "Wooden Pickaxe",
+   "stackSize": 1,
+   "maxDurability": 59,
+   "slot": 10
+  },
+  "inventory": [
+   [
+    "stick",
+    2,
+    null
+   ],
+   [
+    "book",
+    12,
+    null
+   ],
+   [
+    "wooden_pickaxe",
+    1,
+    1
+   ]
+  ]
+ },
+ "p": {
+  "x": 146.5,
+  "y": -36,
+  "z": 2241.5
+ },
+ "hp": 20,
+ "cursor": null,
+ "inventory": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "items": [
+  [
+   8776,
+   {
+    "x": 144.6492743572568,
+    "y": -36,
+    "z": 2242.875
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 9,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4/P1 sourceconfirmation16:05: exactpublicMojang1.20.4 client+mappingSHA1 matched, selectedAreaEffectCloud/EntityType/ItemEntity only (p3/iter16/public_cloud). AreaEffectCloud.tick bls574..585 selectsLivingEntity usingcloud.getBoundingBox() UNINFLATED; the
+p3: nhorizontalradius check, NOwall/roofLOS check. getDimensions returns width2*radius,height.5. Thus observedbaseY53 damagebox53..53.5: standingY50 top51.8 orY51 top52.8 verticallyoutside, Y52 top53.8 overlaps evenwithroof54. Mustfreshreadcloudbase/currentgro
+p3: undedheight; NOjump atY50/51 (apexcanoverlap). ItemEntity.playerTouch alsohasNOLOS, onlypickupdelay/owner/inventory checks. Physicalsafeending/pickup stillunproved; lower-from-support method avoidsrising.
+p4: P2 actualfootprint ACK: I cut145,-34 BASALT/-33 BLACKSTONE/-32 OAK2241 forwood, so eastconnection needsrealclosure. Minimalrepair THREEfullcaps at145,-34/-33/-32,2241; old145,-31 OAK and-35BOOK intact. Proposed actualstock use: P2placeownBASALT1top(-32) fr
+p4: omshaft; P1afterSTONEadoption use2spareCOFF onlower(-34/-33) frombedroom. No additionalwood/tooljourney. This is sharedsource-restoration debt, not P2badguard; please coordinateactualpositions andpublishfullcompound afterrepair.
+--- p1 now: (146.5, -36, 2241.5) in overworld, health 20/20, food 20/20, alive

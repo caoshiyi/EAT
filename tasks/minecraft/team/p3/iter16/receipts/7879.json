@@ -1,0 +1,155 @@
+{
+  "program": 7879,
+  "header": "2026-10-17T16:16:00 p1 role=destination_owner iter=16 24.4 s",
+  "result": {
+    "issue": null,
+    "respawn": false,
+    "notes": [],
+    "lost": false,
+    "p": {
+      "x": 132.51748116006135,
+      "y": -36,
+      "z": 2276.496875951317
+    },
+    "hp": 20,
+    "food": 20,
+    "closed": true,
+    "faces": [
+      [
+        [
+          132,
+          -37,
+          2276
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          132,
+          -34,
+          2276
+        ],
+        "cracked_stone_bricks",
+        true
+      ],
+      [
+        [
+          133,
+          -36,
+          2276
+        ],
+        "stone_bricks",
+        true
+      ],
+      [
+        [
+          133,
+          -35,
+          2276
+        ],
+        "stone_bricks",
+        true
+      ],
+      [
+        [
+          131,
+          -36,
+          2276
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          131,
+          -35,
+          2276
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          132,
+          -36,
+          2277
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          132,
+          -35,
+          2277
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          132,
+          -36,
+          2275
+        ],
+        "basalt",
+        true
+      ],
+      [
+        [
+          132,
+          -35,
+          2275
+        ],
+        "basalt",
+        true
+      ]
+    ],
+    "cuts": 2,
+    "moves": 56,
+    "inventory": [
+      [
+        "book",
+        12,
+        null
+      ],
+      [
+        "basalt",
+        3,
+        null
+      ],
+      [
+        "stone_pickaxe",
+        1,
+        11
+      ],
+      [
+        "cobbled_deepslate",
+        7,
+        null
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    }
+  },
+  "result_present": true,
+  "player": "p1",
+  "latest_completed_program": 7879,
+  "state_lags_latest": false,
+  "observed_utc": "2026-10-17T16:16:40.327092+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body",
+  "live_observation": {
+    "scope": "separate fresh arena reads after completed receipt; not atomic",
+    "observed_utc": "2026-10-17T16:16:40.476208+00:00",
+    "player_line": "p1: (132.5, -36, 2276.5) in overworld, health 20/20, food 20/20, alive; controlled by destination_owner (iteration 16)",
+    "last_known_death": "2026-10-17T15:56:39 death          player=p1 cause=p1 fell out of the world position={'x': 104.2, 'y': -99.1, 'z': 2.9} dimension=the_end"
+  }
+}

@@ -1,0 +1,222 @@
+program #7804 on p4: 2.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "completed": true,
+ "mutated": true,
+ "lost": false,
+ "p": {
+  "x": 81.49834736120417,
+  "y": 50,
+  "z": -1.5536107067095235
+ },
+ "hp": 20,
+ "food": 19,
+ "closed": true,
+ "trace": [
+  [
+   "CUT_RECEIPT",
+   [
+    81,
+    51,
+    -2
+   ],
+   6,
+   7
+  ],
+  [
+   "CAP",
+   [
+    81,
+    49,
+    -2
+   ],
+   7,
+   6
+  ]
+ ],
+ "own": [
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   50
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   103
+  ],
+  [
+   "cobbled_deepslate",
+   11,
+   null
+  ],
+  [
+   "end_stone",
+   6,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "basalt",
+   5,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "tuff",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "faces": [
+  [
+   [
+    81,
+    49,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    52,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    82,
+    50,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    82,
+    51,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    80,
+    50,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    80,
+    51,
+    -2
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    50,
+    -1
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    51,
+    -1
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    50,
+    -3
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    51,
+    -3
+   ],
+   "end_stone",
+   true
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (81.5, 50, -1.6) in the_end, health 20/20, food 19/20, alive

@@ -1,0 +1,255 @@
+program #7987 on p1: 13.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "CUT_KIND_(44, 50, 0)_obsidian",
+ "endingIssue": null,
+ "lost": false,
+ "world": "the_end",
+ "p": {
+  "x": 45.42992617641973,
+  "y": 49,
+  "z": 0.49999320530645064
+ },
+ "hp": 13.166666984558105,
+ "food": 17,
+ "ground": true,
+ "closed": true,
+ "cuts": 8,
+ "caps": 87,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    48,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    48,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "STEP",
+   {
+    "x": 48.48760212558679,
+    "y": 49,
+    "z": 0.49999320530645064
+   },
+   13.166666984558105
+  ],
+  [
+   "WORLD_CUT",
+   [
+    47,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    47,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "STEP",
+   {
+    "x": 47.429565357361334,
+    "y": 49,
+    "z": 0.49999320530645064
+   },
+   13.166666984558105
+  ],
+  [
+   "WORLD_CUT",
+   [
+    46,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    46,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "STEP",
+   {
+    "x": 46.44804688880715,
+    "y": 49,
+    "z": 0.49999320530645064
+   },
+   13.166666984558105
+  ],
+  [
+   "WORLD_CUT",
+   [
+    45,
+    50,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "WORLD_CUT",
+   [
+    45,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "STEP",
+   {
+    "x": 45.46116910800147,
+    "y": 49,
+    "z": 0.49999320530645064
+   },
+   13.166666984558105
+  ],
+  [
+   "CAP",
+   [
+    46,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "CAP",
+   [
+    46,
+    50,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "cursor": null,
+ "inventory": [
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   103
+  ],
+  [
+   "cobbled_deepslate",
+   10,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   13
+  ],
+  [
+   "stone_bricks",
+   8,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   2,
+   null
+  ],
+  [
+   "end_stone",
+   62,
+   null
+  ],
+  [
+   "end_stone",
+   5,
+   null
+  ]
+ ],
+ "clouds": [],
+ "items": [
+  [
+   19200,
+   {
+    "x": 39.094717491711904,
+    "y": 59,
+    "z": -9.775184104949492
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ],
+ "dragon": [
+  [
+   17457,
+   {
+    "x": 63.607454987551435,
+    "y": 65.12394445965676,
+    "z": 9.917987267633208
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (45.4, 49, 0.5) in the_end, health 13.2/20, food 17/20, alive

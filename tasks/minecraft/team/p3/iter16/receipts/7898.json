@@ -1,0 +1,55 @@
+{
+  "program": 7898,
+  "header": "2026-10-17T16:24:31 p4 role=completion_partner iter=16 21.1 s",
+  "result": {
+    "index": 52,
+    "total": 52,
+    "stageComplete": true,
+    "issue": null,
+    "p": {
+      "x": 129.49805947421362,
+      "y": -36,
+      "z": 2274.5035391200836
+    },
+    "hp": 20,
+    "food": 20,
+    "closed": true,
+    "string": 0,
+    "oak": 0,
+    "cuts": 0,
+    "moves": 51,
+    "inv": [
+      [
+        "wooden_pickaxe",
+        1,
+        11
+      ],
+      [
+        "cobbled_deepslate",
+        2,
+        null
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    }
+  },
+  "result_present": true,
+  "player": "p4",
+  "latest_completed_program": 7902,
+  "state_lags_latest": true,
+  "observed_utc": "2026-10-17T16:29:32.160441+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body",
+  "live_observation": {
+    "scope": "separate fresh arena reads after completed receipt; not atomic",
+    "observed_utc": "2026-10-17T16:29:32.308336+00:00",
+    "player_line": "p4: (129.5, -36, 2274.5) in overworld, health 20/20, food 20/20, alive; controlled by completion_partner (iteration 16)",
+    "last_known_death": "2026-10-17T15:54:54 death          player=p4 cause=p4 was killed by Ender Dragon using magic position={'x': 81.7, 'y': 52, 'z': -1.4} dimension=the_end"
+  }
+}

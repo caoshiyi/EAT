@@ -1,0 +1,106 @@
+program #7946 on p1: 11 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "WOOD2_ORDINARY",
+ "cuts": 3,
+ "up": true,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -35,
+    2241
+   ],
+   "basalt",
+   2
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -31,
+    2241
+   ],
+   "oak_planks",
+   3
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -30,
+    2241
+   ],
+   "oak_planks",
+   3
+  ]
+ ],
+ "p": {
+  "x": 149.4963460715558,
+  "y": -35,
+  "z": 2241.550489406849
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "caps": 3,
+ "cursor": null,
+ "inventory": [
+  [
+   "cobbled_deepslate",
+   2,
+   null
+  ],
+  [
+   "book",
+   12,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   3
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "oak_planks",
+   1,
+   null
+  ]
+ ],
+ "items": [
+  [
+   15434,
+   {
+    "x": 149.61750610620604,
+    "y": -29.6606538462081,
+    "z": 2241.624925630683
+   },
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 36,
+     "itemCount": 1
+    }
+   ]
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (149.5, -35, 2241.6) in overworld, health 20/20, food 20/20, alive

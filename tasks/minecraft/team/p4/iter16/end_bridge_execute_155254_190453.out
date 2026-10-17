@@ -1,0 +1,470 @@
+program #7796 on p4: 27.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "completed": true,
+ "closed": true,
+ "lost": false,
+ "budget": {
+  "workMs": 63200,
+  "totalMs": 111600
+ },
+ "p": {
+  "x": 81.40897383901687,
+  "y": 49,
+  "z": 0.49999999999990186
+ },
+ "hp": 20,
+ "food": 19,
+ "world": "the_end",
+ "trace": [
+  [
+   "WHOLE_TIME_PRICE",
+   "[repeated reference]"
+  ],
+  [
+   "ACTUAL_SMALL_UNIT_PASS",
+   {
+    "x": 100.51962758007177,
+    "y": 49,
+    "z": 0.49999999999990186
+   },
+   20
+  ],
+  [
+   "PLACE",
+   [
+    97,
+    48,
+    0
+   ],
+   "cracked_stone_bricks"
+  ],
+  [
+   "PLACE",
+   [
+    96,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    95,
+    48,
+    0
+   ],
+   "cracked_stone_bricks"
+  ],
+  [
+   "PLACE",
+   [
+    94,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    93,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    92,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    91,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    90,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    89,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    88,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    87,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    86,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    85,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    84,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    83,
+    48,
+    0
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "PLACE",
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone"
+  ],
+  [
+   "PLACE",
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone"
+  ]
+ ],
+ "walked": [
+  {
+   "x": 99,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 98,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 97,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 96,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 95,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 94,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 93,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 92,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 91,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 90,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 89,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 88,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 87,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 86,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 85,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 84,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 83,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 82,
+   "y": 49,
+   "z": 0
+  },
+  {
+   "x": 81,
+   "y": 49,
+   "z": 0
+  }
+ ],
+ "faces": [
+  [
+   [
+    81,
+    48,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    51,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    82,
+    49,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    82,
+    50,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    80,
+    49,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    80,
+    50,
+    0
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    49,
+    1
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    50,
+    1
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    49,
+    -1
+   ],
+   "end_stone",
+   true
+  ],
+  [
+   [
+    81,
+    50,
+    -1
+   ],
+   "end_stone",
+   true
+  ]
+ ],
+ "clouds": [],
+ "own": [
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   50
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   98
+  ],
+  [
+   "cobbled_deepslate",
+   11,
+   null
+  ],
+  [
+   "end_stone",
+   4,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "basalt",
+   5,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "tuff",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: Official eval15:52:~40 now dragon0/milestones11/deaths112/programs7791. Fresh7794+status P4 actualthe_end100.43,49,0.5 HP20food19/controlsfalse, firstentryworldeffect accepted. P1laterentry stillawaits actualP4bridge/SIDE/5x5clear; P1OWSIDE operation separ
+p3: ate. Source delivery fully adopted actualportal, no stockqueue. Dragon remainsobjective.
+--- p4 now: (81.4, 49, 0.5) in the_end, health 20/20, food 19/20, alive

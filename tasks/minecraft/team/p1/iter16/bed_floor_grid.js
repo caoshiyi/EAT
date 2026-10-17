@@ -1,0 +1,1 @@
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const cells=[];for(let x=146;x<=149;x++)for(let z=2239;z<=2243;z++)cells.push({x,z,blocks:[-38,-37,-36,-35].map(y=>{const b=bot.blockAt(new Vec3(x,y,z));return{y,n:b?.name,s:b?.shapes}})});return{p:bot.entity.position,hp:bot.health,cells};

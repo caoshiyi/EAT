@@ -1,0 +1,159 @@
+program #7703 on p1: 3 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "endingIssue": null,
+ "rises": 1,
+ "lost": false,
+ "p": {
+  "x": 144.4980411375257,
+  "y": -26,
+  "z": 2241.475437688746
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "trace": [
+  [
+   "PUT",
+   [
+    145,
+    -25,
+    2241
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "TEMP_CORRIDOR_HEAD_CAP",
+   [
+    145,
+    -25,
+    2241
+   ]
+  ],
+  [
+   "PUT",
+   [
+    144,
+    -27,
+    2241
+   ],
+   "cobbled_deepslate"
+  ],
+  [
+   "ACTUAL_UP",
+   {
+    "x": 144.4980411375257,
+    "y": -26,
+    "z": 2241.475437688746
+   },
+   20
+  ]
+ ],
+ "inventory": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   1,
+   null
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "book",
+   63,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   10,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   81
+  ],
+  [
+   "bow",
+   1,
+   1
+  ],
+  [
+   "stone_sword",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   38,
+   null
+  ],
+  [
+   "stone_bricks",
+   18,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (144.5, -26, 2241.5) in overworld, health 20/20, food 20/20, alive

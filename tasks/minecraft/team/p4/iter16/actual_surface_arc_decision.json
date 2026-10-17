@@ -1,0 +1,146 @@
+{
+  "at": "2026-10-17T16:10:21.315Z",
+  "basis": "Actual7807 surface stance and7794 crystal6360. Free-space central trajectory only, no current terrain/cleararc/shot qualification; exact .99drag/.03gravity/1.5speed retained.",
+  "origin": [
+    80.54340229877288,
+    56.52,
+    -1.514661713255159
+  ],
+  "crystal": [
+    42.5,
+    77,
+    0.5
+  ],
+  "results": [
+    {
+      "off": [
+        0,
+        1,
+        0
+      ],
+      "branch": "low",
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "off": [
+        0,
+        1,
+        0
+      ],
+      "branch": "high",
+      "ok": false,
+      "why": "NO_HIGH_ARC"
+    },
+    {
+      "off": [
+        0.55,
+        1,
+        0.55
+      ],
+      "branch": "low",
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "off": [
+        0.55,
+        1,
+        0.55
+      ],
+      "branch": "high",
+      "ok": false,
+      "why": "NO_HIGH_ARC"
+    },
+    {
+      "off": [
+        0.55,
+        1,
+        -0.55
+      ],
+      "branch": "low",
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "off": [
+        0.55,
+        1,
+        -0.55
+      ],
+      "branch": "high",
+      "ok": false,
+      "why": "NO_HIGH_ARC"
+    },
+    {
+      "off": [
+        -0.55,
+        1,
+        0.55
+      ],
+      "branch": "low",
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "off": [
+        -0.55,
+        1,
+        0.55
+      ],
+      "branch": "high",
+      "ok": false,
+      "why": "NO_HIGH_ARC"
+    },
+    {
+      "off": [
+        -0.55,
+        1,
+        -0.55
+      ],
+      "branch": "low",
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "off": [
+        -0.55,
+        1,
+        -0.55
+      ],
+      "branch": "high",
+      "ok": false,
+      "why": "NO_HIGH_ARC"
+    }
+  ],
+  "closer": [
+    {
+      "x": 76.5,
+      "y": 55,
+      "z": -1.5,
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "x": 72.5,
+      "y": 55,
+      "z": -1.5,
+      "ok": false,
+      "why": "NO_LOW_ARC"
+    },
+    {
+      "x": 68.5,
+      "y": 55,
+      "z": -1.5,
+      "ok": true,
+      "ticks": 39.617523343772994
+    },
+    {
+      "x": 64.5,
+      "y": 55,
+      "z": -1.5,
+      "ok": true,
+      "ticks": 32.29174530395194
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+== #7892 2026-10-17T16:21:39 p3 role=relay_operator iter=16 0 s
+bot.chat("P1: finite exact review of your current end_ops_prefix.js: check() suppresses ALL hazard() checks when recovery=true, and both finally blocks set recovery=true before cover(). This repeats the relevant risk from P4 death: an already overlapping cloud damages through a newly closed roof. snapshot.closed measures geometry only. Keep cloud overlap as an ending invariant during recovery; do not return/idle in a covered box that overlaps a cloud. If such a cloud is observed, use a bounded escape along actual verified floor/AIR to outside its radius before covering, or publish unresolved dangerous ending and handle it immediately. No new controller from P3; other recovery guards need not be weakened.")
+== #7893 2026-10-17T16:21:43 p1 role=destination_owner iter=16 0 s
+const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const self=bot.entity,start=Date.now();let issue=null;const trace=[];try{if(bot.game.dimension!=='the_end')throw Error('WORLD');for(const[x,z]of[[100.5,1.6],[98.5,1.6],[98.5,.5],[95.5,.5],[90.5,.5],[83.5,.5]]){for(let n=0;n<55;n++){if(bot.entity!==self||bot.health<=0||bot.game.dimension!=='the_end'||Date.now()-start>13000)throw Error('LIFE');const p=self.position;if(Math.hypot(p.x-x,p.z-z)<.14&&self.onGround)break;const below=bot.blockAt(new Vec3(Math.floor(p.x),48,Math.floor(p.z)));if(p.y<48.8||!below?.shapes?.length)throw Error('FLOOR_LOST');await bot.lookAt(new Vec3(x,50.1,z),true);bot.setControlState('forward',true);bot.setControlState('sprint',true);await bot.waitForTicks(1)}bot.clearControlStates();trace.push([self.position.clone(),bot.health])}}catch(e){issue=e.message}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}return{issue,p:bot.entity.position,world:bot.game.dimension,hp:bot.health,food:bot.food,trace};
+-- returned --
+{"issue": "WORLD", "p": {"x": 146.5, "y": -36, "z": 2241.5}, "world": "overworld", "hp": 20, "food": 20, "trace": []}
+== #7894 2026-10-17T16:22:06 p2 role=carrier_owner iter=16 0 s
+function p2LandingThreats(bot,foot,removed=[]){
+ const key=q=>q.toArray().join(','),virtual=new Set(removed.map(key)),foes=new Set(['skeleton','stray','zombie','creeper','spider','cave_spider','witch','pillager','vindicator','silverfish','enderman','zombie_villager']);
+ const rays=[];for(const e of Object.values(bot.entities)){if(!foes.has(e.name)||(e.metadata?.[9]??1)<=0||e.position.distanceTo(foot)>24)continue;for(const y of[.2,.9,1.5])for(const[x,z]of[[0,0],[.25,.25],[-.25,-.25],[.25,-.25],[-.25,.25]]){
+  const a=e.position.offset(0,(e.height||1.8)*.85,0),b=foot.offset(x,y,z),d=b.minus(a),n=Math.ceil(d.norm()/.1);let wall=null,unknown=null;
+  for(let k=1;k<n;k++){const p=a.plus(d.scaled(k/n)).floored();if(virtual.has(key(p)))continue;const block=bot.blockAt(p);if(!block){unknown=p.toArray();break;}if(block.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')){wall=p.toArray();break;}}
+  if(!wall)rays.push({foe:e.id,name:e.name,p:e.position.toArray(),target:b.toArray(),unknown});
+ }}return rays;
+}
+
+const{Vec3}=require('vec3'),foot=new Vec3(144.5,-36,2241.5),q=new Vec3(144,-34,2241),r=p2LandingThreats(bot,foot,[q]);const faces=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{const p=foot.floored().offset(...d);return[p.toArray(),bot.blockAt(p)?.name]});return{p:bot.entity.position,hp:bot.health,landing:foot,faces,unblockedOrUnknownRays:r};
+-- returned --
+{"p": {"x": 144.5026854731771, "y": -33, "z": 2241.4998173006256}, "hp": 11.499998092651367, "landing": {"x": 144.5, "y": -36, "z": 2241.5}, "faces": [[[144, -37, 2241], "stone_bricks"], [[144, -34, 2241], "cobbled_deepslate"], [[145, -36, 2241], "basalt"], [[145, -35, 2241], "basalt"], [[143, -36, 2241], "bookshelf"], [[143, -35, 2241], "bookshelf"], [[144, -36, 2242], "air"], [[144, -35, 2242], "air"], [[144, -36, 2240], "basalt"], [[144, -35, 2240], "basalt"]], "unblockedOrUnknownRays": []}
+== #7895 2026-10-17T16:23:43 p3 role=relay_operator iter=16 0 s
+bot.chat("Exact 7890 finding: arrival was already inside cloud11227 at100.5,Y49,.5, radius4.5067. DAMAGE_OR_HAZARD occurred BEFORE any bridge step; fallback cover kept the body in that cloud, HP20\u21928.67, then death16:21:26. This is a movement-blocking hazard guard, not a missing roof fix. A changed entry needs a short damage-budgeted escape along freshly verified west bridge cells to outside actual radius BEFORE ordinary hazard gating/cover. Keep life/void/floor checks; do not suppress all hazards indefinitely.")
+== #7896 2026-10-17T16:23:43 p3 role=relay_operator iter=16 0 s
+bot.chat("7890 also physically saw all15 old P4 item entities still at81,Y52,-2, including StonePickwear109, Snow4 and both swords. Thus old kit was NOT expired at16:21 despite wall age; no birth reset inferred. P1 new spawn-platform kit is also potentially recoverable after MAGIC death, unlike prior VOID gear. Current P4 has WOOD+4fullcaps in fresh status; next operator/method choice belongs to P1/P4, no third replacement kit assumed or P3 controller.")
+== #7897 2026-10-17T16:24:31 p4 role=completion_partner iter=16 0 s
+bot.chat("P4 actual7891 localcap correction COMPLETE: ownordinary4caps (BASALT1+COFF3), WOODwear11=48uses,20HP/20food, current146.518,-36,2242.503; not2capclaim. Source3cutsactual148,-35/-36/-34,2243, OUT/RETURN safe. Starting selected52node existingroute toOWNoffpath129,-36,2274 (not131/P1mainline), bounded45work/70whole. P2first3nodespass1442242 in~3s; yourremainingdescent\u226517s so no footprintoverlap. P1 actualMAGICdeath newcloudspawn49 acknowledged; holdEnd, needchangedentryescape.")
+== #7898 2026-10-17T16:24:31 p4 role=completion_partner iter=16 21.1 s
+if(global.P4ReturnFrame16===undefined&&bot.entity.position.floored().equals(new(require('vec3').Vec3)(146,-36,2242)))global.P4ReturnFrame16=1;
+global.P4ReturnLimit16=0;
+bot.clearControlStates();bot.pathfinder.setGoal(null);if(Date.now()+70000>1792257614000)return{issue:'CURRENT_WHOLE_DEADLINE_NO_ACTION'};const capNames16=['basalt','cobbled_deepslate','netherrack','stone_bricks','mossy_stone_bricks','cracked_stone_bricks','blackstone','tuff'];if(bot.inventory.items().filter(i=>capNames16.includes(i.name)).reduce((n,i)=>n+i.count,0)<2)return{issue:'ACTUAL_TWO_CAP_RESERVE_REQUIRED_NO_ACTION'};
+function P4pick(){const lim={wooden_pickaxe:59,stone_pickaxe:131,iron_pickaxe:250,diamond_pickaxe:1561};return bot.inventory.items().filter(i=>lim[i.name]&&i.durabilityUsed<lim[i.name]-2).sort((a,b)=>(a.name==='wooden_pickaxe'?0:1)-(b.name==='wooden_pickaxe'?0:1)||b.durabilityUsed-a.durabilityUsed)[0]}
+const{Vec3}=require('vec3');const V=a=>new Vec3(...a),key=q=>q.toString(),self=bot.entity,start=Date.now(),wanted=0;let issue=null,cuts=0,moves=0,recovering=false;const initialHP=bot.health;let lifeLost=false;const discontinue=()=>{lifeLost=true;bot.clearControlStates();bot.stopDigging()};for(const k of['death','respawn','end'])bot.on(k,discontinue);bot.clearControlStates();bot.pathfinder.setGoal(null);const air=q=>['air','cave_air','torch','wall_torch','cobweb'].includes(bot.blockAt(q)?.name),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1'),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),oldcaps=new Set(global.P4HarvestCaps12||[]),newcaps=[];function check(){if(lifeLost||bot.entity!==self||bot.game.dimension!=='overworld'||(recovering?bot.health<=0:(bot.health<18||bot.health<initialHP))||Date.now()-start>70000||Date.now()>1792257614000)throw Error('LIFE_TIME')};async function tick(n){check();await bot.waitForTicks(n);check()};function threat(){const eye=bot.entity.position.offset(0,1.62,0);return Object.values(bot.entities).find(e=>{if(!['zombie','skeleton','creeper','spider','silverfish','enderman','magma_cube','piglin','hoglin','blaze','ghast'].includes(e.name)||e.position.distanceTo(bot.entity.position)>=7)return false;const d=e.position.offset(0,1,0).minus(eye);return !bot.world.raycast(eye,d.unit(),Math.max(.01,d.norm()-.3))})}async function clear(q){let b=bot.blockAt(q);if(['air','cave_air','torch','wall_torch'].includes(b?.name))return;if(b?.name==='cobweb'){await bot.equip(bot.inventory.items().find(i=>i.name==='iron_sword')||bot.inventory.items().find(i=>i.name==='stone_sword'),'hand');}else if(oldcaps.has(key(q))||['cobbled_deepslate','netherrack','stone_brick_slab','bookshelf','stone','deepslate','tuff','oak_planks','stone_bricks','mossy_stone_bricks','cracked_stone_bricks','basalt','blackstone'].includes(b?.name)){await bot.equip(P4pick(),'hand')}else throw Error('CLEAR_KIND_'+b?.name);await tick(2);await bot.dig(b,true);await tick(3);if(!['air','cave_air'].includes(bot.blockAt(q)?.name))throw Error('CUT_ACK');cuts++}async function put(q){if(full(q))return;const peer=Object.values(bot.entities).find(e=>e.username&&e.id!==bot.entity.id&&e.position.x+.3>q.x&&e.position.x-.3<q.x+1&&e.position.z+.3>q.z&&e.position.z-.3<q.z+1&&e.position.y+(e.height||1.8)>q.y&&e.position.y<q.y+1);if(peer)throw Error('PEER_CAP_'+peer.username);let b=bot.blockAt(q);if(b?.name==='chest'){const c=await bot.openContainer(b);console.log('CHEST_ACTUAL',q,c.containerItems().map(i=>[i.name,i.count]));bot.closeWindow(c);await tick(2);await bot.equip(P4pick(),'hand');await bot.dig(bot.blockAt(q),true);await tick(4);b=bot.blockAt(q)}if(['stone_brick_slab','cobweb','torch','wall_torch','ladder'].includes(b?.name)){if(b.name==='cobweb')await clear(q);else{await bot.equip(P4pick(),'hand');await bot.dig(b,true);await tick(2)}}if(!['air','cave_air'].includes(bot.blockAt(q)?.name))throw Error('PUT_KIND_'+bot.blockAt(q)?.name+'_'+q);let d=[[0,-1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[0,1,0]].map(V).find(d=>full(q.plus(d)));if(!d)throw Error('REF');await bot.equip((bot.inventory.items().find(i=>i.name==='basalt')||bot.inventory.items().find(i=>i.name==='cobbled_deepslate')||bot.inventory.items().find(i=>i.name==='netherrack')||bot.inventory.items().find(i=>['stone_bricks','mossy_stone_bricks','cracked_stone_bricks','blackstone','tuff'].includes(i.name))),'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(bot.blockAt(q.plus(d)),d.scaled(-1));await tick(3)}finally{bot.clearControlStates()}if(!full(q))throw Error('CAP_ACK');newcaps.push(key(q))}async function move(q){await clear(q.offset(0,1,0));await clear(q);for(let n=0;n<50;n++){check();if(threat())throw Error('LOCAL_THREAT');let p=bot.entity.position,d=Math.hypot(p.x-q.x-.5,p.z-q.z-.5);if(d<.09&&bot.entity.onGround){bot.clearControlStates();await tick(2);moves++;return}if(!full(q.offset(0,-1,0)))throw Error('FLOOR');await bot.lookAt(V([q.x+.5,p.y+1.4,q.z+.5]),true);bot.setControlState('sneak',d<.35);bot.setControlState('forward',true);await tick(1)}throw Error('MOVE_BOUND')}
+try{const route=[[146, -36, 2242], [145, -36, 2242], [144, -36, 2242], [143, -36, 2242], [142, -36, 2242], [141, -36, 2242], [140, -36, 2242], [139, -36, 2242], [139, -36, 2243], [139, -36, 2244], [139, -36, 2245], [139, -36, 2246], [139, -36, 2247], [139, -36, 2248], [139, -36, 2249], [139, -36, 2250], [139, -36, 2251], [139, -36, 2252], [139, -36, 2253], [139, -36, 2254], [139, -36, 2255], [138, -36, 2255], [137, -36, 2255], [136, -36, 2255], [135, -36, 2255], [134, -36, 2255], [133, -36, 2255], [132, -36, 2255], [131, -36, 2255], [131, -36, 2256], [130, -36, 2256], [130, -36, 2257], [130, -36, 2258], [130, -36, 2259], [130, -36, 2260], [130, -36, 2261], [130, -36, 2262], [130, -36, 2263], [130, -36, 2264], [130, -36, 2265], [129, -36, 2265], [129, -36, 2266], [128, -36, 2266], [128, -36, 2267], [128, -36, 2268], [128, -36, 2269], [128, -36, 2270], [128, -36, 2271], [128, -36, 2272], [129, -36, 2272], [129, -36, 2273], [129, -36, 2274]].map(V);let i=global.P4ReturnFrame16||0;const expected=i?route[i-1]:V([146,-36,2241]);if(!bot.entity.position.floored().equals(expected))throw Error('CURSOR');const blocked=route.slice(i).flatMap(q=>[q,q.offset(0,1,0)]).filter(q=>!air(q));const tool=P4pick();if(!tool||({wooden_pickaxe:59,stone_pickaxe:131,iron_pickaxe:250,diamond_pickaxe:1561}[tool.name]-tool.durabilityUsed)<blocked.length+8)throw Error('WHOLE_TOOL_PRICE_'+blocked.length);console.log('ACTUAL_WHOLE_TOOL_PRICE',blocked.length,tool.durabilityUsed);for(;i<Math.min(route.length,global.P4ReturnLimit16||route.length)&&Date.now()-start<45000;i++){const q=route[i];if(!full(q.offset(0,-1,0))||!full(q.offset(0,2,0)))throw Error('ENVELOPE_'+q);await move(q);global.P4ReturnFrame16=i+1;console.log('RETURN_ACTUAL',i+1,q)}
+
+}catch(e){issue=e.message;console.log('ISSUE',issue)}finally{recovering=true;bot.clearControlStates();try{let p=bot.entity.position.floored();for(let a of['x','z'])for(let n=0;n<30&&Math.abs(bot.entity.position[a]-p[a]-.5)>.05;n++){await bot.lookAt(bot.entity.position.offset(a==='x'?Math.sign(p[a]+.5-bot.entity.position[a])*3:0,1.4,a==='z'?Math.sign(p[a]+.5-bot.entity.position[a])*3:0),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await tick(1);bot.clearControlStates();await tick(2)}for(let[x,z]of[[1,0],[-1,0],[0,1],[0,-1]])for(let y of[0,1])await put(p.offset(x,y,z));if(!full(p.offset(0,2,0))){await put(p.offset(1,2,0));await put(p.offset(0,2,0))}}catch(e){console.log('CLOSE_FAIL',e.message)}global.P4HarvestCaps12=[...oldcaps,...newcaps];bot.clearControlStates();for(const k of['death','respawn','end'])bot.removeListener(k,discontinue)}const p=bot.entity.position.floored(),closed=[p.offset(0,-1,0),p.offset(0,2,0),...[[1,0],[-1,0],[0,1],[0,-1]].flatMap(([x,z])=>[p.offset(x,0,z),p.offset(x,1,z)])].every(full);return{index:global.P4ReturnFrame16||0,total:52,stageComplete:(global.P4ReturnFrame16||0)>=Math.min(52,global.P4ReturnLimit16||52),issue:issue||(!closed?'ENDING_NOT_CLOSED':(global.P4ReturnFrame16||0)<Math.min(52,global.P4ReturnLimit16||52)?'BOUND_INCOMPLETE':null),p:bot.entity.position,hp:bot.health,food:bot.food,closed,string:count('string'),oak:count('oak_planks'),cuts,moves,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};
+-- output --
+ACTUAL_WHOLE_TOOL_PRICE 0 11
+RETURN_ACTUAL 2 Vec3 { x: 145, y: -36, z: 2242 }
+RETURN_ACTUAL 3 Vec3 { x: 144, y: -36, z: 2242 }
+RETURN_ACTUAL 4 Vec3 { x: 143, y: -36, z: 2242 }
+RETURN_ACTUAL 5 Vec3 { x: 142, y: -36, z: 2242 }
+RETURN_ACTUAL 6 Vec3 { x: 141, y: -36, z: 2242 }
+RETURN_ACTUAL 7 Vec3 { x: 140, y: -36, z: 2242 }
+RETURN_ACTUAL 8 Vec3 { x: 139, y: -36, z: 2242 }
+RETURN_ACTUAL 9 Vec3 { x: 139, y: -36, z: 2243 }
+RETURN_ACTUAL 10 Vec3 { x: 139, y: -36, z: 2244 }
+RETURN_ACTUAL 11 Vec3 { x: 139, y: -36, z: 2245 }
+RETURN_ACTUAL 12 Vec3 { x: 139, y: -36, z: 2246 }
+RETURN_ACTUAL 13 Vec3 { x: 139, y: -36, z: 2247 }
+RETURN_ACTUAL 14 Vec3 { x: 139, y: -36, z: 2248 }
+RETURN_ACTUAL 15 Vec3 { x: 139, y: -36, z: 2249 }
+RETURN_ACTUAL 16 Vec3 { x: 139, y: -36, z: 2250 }
+RETURN_ACTUAL 17 Vec3 { x: 139, y: -36, z: 2251 }
+RETURN_ACTUAL 18 Vec3 { x: 139, y: -36, z: 2252 }
+RETURN_ACTUAL 19 Vec3 { x: 139, y: -36, z: 2253 }
+RETURN_ACTUAL 20 Vec3 { x: 139, y: -36, z: 2254 }
+RETURN_ACTUAL 21 Vec3 { x: 139, y: -36, z: 2255 }
+RETURN_ACTUAL 22 Vec3 { x: 138, y: -36, z: 2255 }
+RETURN_ACTUAL 23 Vec3 { x: 137, y: -36, z: 2255 }
+RETURN_ACTUAL 24 Vec3 { x: 136, y: -36, z: 2255 }
+RETURN_ACTUAL 25 Vec3 { x: 135, y: -36, z: 2255 }
+RETURN_ACTUAL 26 Vec3 { x: 134, y: -36, z: 2255 }
+RETURN_ACTUAL 27 Vec3 { x: 133, y: -36, z: 2255 }
+RETURN_ACTUAL 28 Vec3 { x: 132, y: -36, z: 2255 }
+RETURN_ACTUAL 29 Vec3 { x: 131, y: -36, z: 2255 }
+RETURN_ACTUAL 30 Vec3 { x: 131, y: -36, z: 2256 }
+RETURN_ACTUAL 31 Vec3 { x: 130, y: -36, z: 2256 }
+RETURN_ACTUAL 32 Vec3 { x: 130, y: -36, z: 2257 }
+RETURN_ACTUAL 33 Vec3 { x: 130, y: -36, z: 2258 }
+RETURN_ACTUAL 34 Vec3 { x: 130, y: -36, z: 2259 }
+RETURN_ACTUAL 35 Vec3 { x: 130, y: -36, z: 2260 }
+RETURN_ACTUAL 36 Vec3 { x: 130, y: -36, z: 2261 }
+RETURN_ACTUAL 37 Vec3 { x: 130, y: -36, z: 2262 }
+RETURN_ACTUAL 38 Vec3 { x: 130, y: -36, z: 2263 }
+RETURN_ACTUAL 39 Vec3 { x: 130, y: -36, z: 2264 }
+RETURN_ACTUAL 40 Vec3 { x: 130, y: -36, z: 2265 }
+RETURN_ACTUAL 41 Vec3 { x: 129, y: -36, z: 2265 }
+RETURN_ACTUAL 42 Vec3 { x: 129, y: -36, z: 2266 }
+RETURN_ACTUAL 43 Vec3 { x: 128, y: -36, z: 2266 }
+RETURN_ACTUAL 44 Vec3 { x: 128, y: -36, z: 2267 }
+RETURN_ACTUAL 45 Vec3 { x: 128, y: -36, z: 2268 }
+RETURN_ACTUAL 46 Vec3 { x: 128, y: -36, z: 2269 }
+RETURN_ACTUAL 47 Vec3 { x: 128, y: -36, z: 2270 }
+RETURN_ACTUAL 48 Vec3 { x: 128, y: -36, z: 2271 }
+RETURN_ACTUAL 49 Vec3 { x: 128, y: -36, z: 2272 }
+RETURN_ACTUAL 50 Vec3 { x: 129, y: -36, z: 2272 }
+RETURN_ACTUAL 51 Vec3 { x: 129, y: -36, z: 2273 }
+RETURN_ACTUAL 52 Vec3 { x: 129, y: -36, z: 2274 }
+-- returned --
+{"index": 52, "total": 52, "stageComplete": true, "issue": null, "p": {"x": 129.49805947421362, "y": -36, "z": 2274.5035391200836}, "hp": 20, "food": 20, "closed": true, "string": 0, "oak": 0, "cuts": 0, "moves": 51, "inv": [["wooden_pickaxe", 1, 11], ["cobbled_deepslate", 2, null]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}}
+== #7899 2026-10-17T16:25:20 p2 role=carrier_owner iter=16 0 s
+bot.chat("URGENTactual7890 causaltrace: P1 entered100.5196,49,.5 FULL20 thenIMMEDIATE DAMAGE_OR_HAZARD beforeANYbridgewalk. Existingcloud11227 centered100.5,Y49,.5 radius4.5067 overlapslanding. Recoverycovered101/99cells, thenplacement100,49,1refused(bodydrift); returnHP8.67/closedFALSE then16:21:26MAGICdeath. Repeating STOP+COVER onlandingcloud repeatsfailure. Nextentry needs distinct bounded ESCAPE-west onverifiedobsidian/bridgefloor untiloutsideactualcloudradius BEFOREnormalhazard/health-stop gate, notofflineplatformidle orcoverinsidecloud. P4gearitems11255..11269 STILLobservedY52 at81,-2 on7890, soNOTexpiredwallclock; loadedageunknown/no renewedbirth. P2localfloor3drop proof hasZEROcurrentfoe-rays, finalglobal3DcheckoverbroadviaLibrarybed; changing toboundedlocalpassageguard next.")
+== #7900 2026-10-17T16:25:33 p1 role=destination_owner iter=16 0 s
+bot.chat("Actual7890 secondEndentry hit EXISTINGspawncloud11227 Y49/radius4.51, hazardabort\u2192coverwasWRONG becausecloudignoreswalls; HP20\u21928.7/endingopen thenMAGICdeath before7893 emergency caller. CurrentP1 OWbed146,-36,2241 empty20/20, no falseEndbody. Changedhypothesis mandatory immediateSPRINTwest100\u219290 beforehazardabort/cover, checkfloor/repair; nativeY49 goal then lower-support recovery. P4oldgearST109/Snow4 stillVISIBLE7890, P1newSTONE117use kit nowdroppedspawn. Request borrow actualP4WOOD NOW via priorvalidated UPtoss/departSOUTH; recipientP1bed co-present. I prepare newescape callerhere beforeentry; no exposedplatformidle.")
+== #7901 2026-10-17T16:25:40 p4 role=completion_partner iter=16 0 s
+bot.chat("ACTUAL7898 P4 RETURN complete52/52, FULL10 at129.498,-36,2274.504 OW/HP20food20/WOODwear11(48uses)/COFF2/allcontrolsfalse. Sourcefield reserve4 wasreal, endingconsumed2. CurrentONLYretainedtool P4 vs P1newMAGICrespawnempty. Propose nextcomplete stage P4operator: own132approach\u2192preparedEntry+damage-budgetedwestescape\u2192native81Y49\u2192below-supportpickup\u2192retainedkit, no platformcover/idle. You finite review/coordination, no duplicateentry. I accept completeoperation if selected fromthisstate; preparingcaller inOW now, willnotenter onold proof.")
+== #7902 2026-10-17T16:26:08 p4 role=completion_partner iter=16 0 s
+bot.chat("P1 borrow request assumes oldbody/co-presence: ACTUALP4 alreadyFRAMEoffpath129.5,-36,2274.5 FULL20/20 after7898; YOU OWbed146,-36,2241.5 empty. Toolreturndelivery would add52nodesback+handoff+56yourforward (~>2min plushandling), P4already9approachnodes/~6cuts fromportal withWOOD48+2caps. Select P4 nextoperator fromcurrentstate, P1review/coordination; no newWOODcourieraccepted. My completeacceptedoperation is preparedentry\u2192boundedwestcloudescape\u2192native81Y49\u2192below-supportgear\u2192retainedending, thenactualnextstage. Please ACKactorchoice; preparinginOW, no Enduntilchosen.")
+== #7903 2026-10-17T16:26:10 p2 role=carrier_owner iter=16 0 s
+bot.chat("P2 finaldescent changedguard: globalAIR flood overexpands entireLibrary andrefusesBED/cobweb/chest/fargravel; notlocalfloor failure. Actual7894 last3fall landingfloorSTONE/full3walls, SouthknownrouteAIR, ZEROunblocked/unknown foe\u2192landing-body rays aftervirtualfloorremoval. I use boundedlocal landing guard, 17.5s floorcut\u2192144,-36,2241; doNOTclaimfullcapsule ifopen. Thenpromptbedspawn/knownroute follow beforelonganalysis. P4passedfirstnodesalready; tooldeferaccepted, no newstock.")
+== #7904 2026-10-17T16:26:10 p2 role=carrier_owner iter=16 18.1 s
+function p2LandingThreats(bot,foot,removed=[]){
+ const key=q=>q.toArray().join(','),virtual=new Set(removed.map(key)),foes=new Set(['skeleton','stray','zombie','creeper','spider','cave_spider','witch','pillager','vindicator','silverfish','enderman','zombie_villager']);
+ const rays=[];for(const e of Object.values(bot.entities)){if(!foes.has(e.name)||(e.metadata?.[9]??1)<=0||e.position.distanceTo(foot)>24)continue;for(const y of[.2,.9,1.5])for(const[x,z]of[[0,0],[.25,.25],[-.25,-.25],[.25,-.25],[-.25,.25]]){
+  const a=e.position.offset(0,(e.height||1.8)*.85,0),b=foot.offset(x,y,z),d=b.minus(a),n=Math.ceil(d.norm()/.1);let wall=null,unknown=null;
+  for(let k=1;k<n;k++){const p=a.plus(d.scaled(k/n)).floored();if(virtual.has(key(p)))continue;const block=bot.blockAt(p);if(!block){unknown=p.toArray();break;}if(block.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')){wall=p.toArray();break;}}
+  if(!wall)rays.push({foe:e.id,name:e.name,p:e.position.toArray(),target:b.toArray(),unknown});
+ }}return rays;
+}
+
+// Strict connected air-volume boundary check; read-only, optional virtual native cuts.
+function p2EnclosedVolume(bot,origin,removed=[],limit=1024){
+ const key=q=>q.toArray().join(','),virtual=new Set(removed.map(key)),pass=new Set(['air','cave_air','void_air','nether_portal','torch','wall_torch']),dirs=[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]],queue=[origin.clone()],seen=new Set([key(origin)]);let walls=0;
+ const full=b=>b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')&&!['magma_block','sand','gravel','suspicious_sand','suspicious_gravel'].includes(b.name);
+ for(let i=0;i<queue.length;i++)for(const d of dirs){const q=queue[i].offset(...d),k=key(q);if(seen.has(k))continue;const b=bot.blockAt(q);if(!b)return{ok:false,issue:'UNLOADED_BOUNDARY',at:q.toArray(),cells:queue,walls};if(!virtual.has(k)&&full(b)){walls++;continue;}if(!virtual.has(k)&&!pass.has(b.name))return{ok:false,issue:'UNSAFE_PARTIAL_'+b.name,at:q.toArray(),cells:queue,walls};if(queue.length>=limit)return{ok:false,issue:'VOLUME_LIMIT',at:q.toArray(),cells:queue,walls};seen.add(k);queue.push(q);}
+ const hostile=new Set(['blaze','ghast','skeleton','wither_skeleton','piglin','hoglin','zoglin','magma_cube','zombie','creeper','spider','enderman','silverfish','cave_spider','stray','drowned','witch']);
+ for(const e of Object.values(bot.entities))if(hostile.has(e.name)&&(e.metadata?.[9]??1)>0&&queue.some(q=>e.position.x+.3>q.x&&e.position.x-.3<q.x+1&&e.position.z+.3>q.z&&e.position.z-.3<q.z+1&&e.position.y+(e.height||1.8)>q.y&&e.position.y<q.y+1))return{ok:false,issue:'HOSTILE_INSIDE_'+e.name,at:e.position.toArray(),cells:queue,walls};
+ return{ok:true,issue:null,cells:queue,walls};
+}
+
+const{Vec3}=require('vec3'),p=new Vec3(144,-33,2241),q=p.offset(0,-1,0),landing=p.offset(0,-3,0),hp=bot.health,self=bot.entity,start=Date.now();let issue=null,cut=false;
+bot.clearControlStates();bot.pathfinder.setGoal(null);const full=v=>bot.blockAt(v)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+try{
+ if(bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(p.offset(.5,0,.5))>.2||!bot.entity.onGround||bot.blockAt(q)?.name!=='cobbled_deepslate'||![-2,-3].every(y=>['air','cave_air'].includes(bot.blockAt(p.offset(0,y,0))?.name))||!full(p.offset(0,-4,0)))throw Error('ACTUAL_THREE_DROP_GEOMETRY');
+ const rays=p2LandingThreats(bot,landing.offset(.5,0,.5),[q]);if(rays.length)throw Error('LANDING_HOSTILE_OR_UNKNOWN_RAY_'+JSON.stringify(rays[0]));
+ await bot.unequip('hand');await bot.waitForTicks(4);const price=bot.digTime(bot.blockAt(q));if(bot.heldItem||Date.now()+price+6000>start+30000)throw Error('WHOLE_PRICE');
+ await bot.dig(bot.blockAt(q),true);cut=true;for(let n=0;n<50&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-landing.y)>.1);n++){if(bot.entity!==self||bot.game.dimension!=='overworld'||bot.health<hp||Date.now()-start>35000)throw Error('BODY_TIME');await bot.waitForTicks(1);}
+ if(!bot.entity.onGround||bot.entity.position.distanceTo(landing.offset(.5,0,.5))>.2)throw Error('ACTUAL_LANDING');
+}catch(e){issue=e.message}finally{bot.clearControlStates();bot.pathfinder.setGoal(null)}const r=p2EnclosedVolume(bot,bot.entity.position.floored());return{visibleRaysAfter:p2LandingThreats(bot,bot.entity.position),issue,cut,p:bot.entity.position,hp:bot.health,food:bot.food,closed:r.ok,volumeCells:r.cells.length,volumeIssue:r.issue,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:bot.controlState};
+-- returned --
+{"visibleRaysAfter": [], "issue": null, "cut": true, "p": {"x": 144.5026854731771, "y": -36, "z": 2241.4998173006256}, "hp": 11.499998092651367, "food": 9, "closed": false, "volumeCells": 33, "volumeIssue": "UNSAFE_PARTIAL_white_bed", "inv": [["basalt", 1], ["cobblestone_slab", 2]], "controls": {}}
+== #7905 2026-10-17T16:26:32 p3 role=relay_operator iter=16 0 s
+bot.chat("P1/P4 current whole-cost comparison: actual7898 has P4 at FRAME129,-36,2274 with WOOD48uses+2caps; P1 is empty at bedroom146,-36,2241. The requested bedside WOOD gift is no longer co-present. Returning the tool requires P4 reverse~52nodes + compatible gift + P1 retrace~52nodes BEFORE the same End escape/bridge/pickup/ending. P4 complete recovery from actual FRAME avoids both extra traversals. Select one actual operator and reuse the one current escape caller; no duplicate entry implementation or assumed gift window. No P3 relay.")

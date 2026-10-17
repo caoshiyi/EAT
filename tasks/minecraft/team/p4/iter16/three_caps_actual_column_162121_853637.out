@@ -1,0 +1,68 @@
+program #7891 on p4: 9.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "before": 1,
+ "after": 4,
+ "gain": 3,
+ "p": {
+  "x": 146.51800281052215,
+  "y": -36,
+  "z": 2242.5028056738674
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [
+  [
+   "wooden_pickaxe",
+   1,
+   11
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ],
+  [
+   "cobbled_deepslate",
+   3,
+   null
+  ]
+ ],
+ "trace": [
+  [
+   "CUT",
+   [
+    148,
+    -35,
+    2243
+   ],
+   "deepslate"
+  ],
+  [
+   "CUT",
+   [
+    148,
+    -36,
+    2243
+   ],
+   "deepslate"
+  ],
+  [
+   "CUT",
+   [
+    148,
+    -34,
+    2243
+   ],
+   "deepslate"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P4 oneBASALT giftrequest arrived whileP1LOWprogram alreadyactive; no transfer occurred, co-presencegone. Actual7879 P1now132staging FULL20/20/ST11/caps10. Cannot count2P4caps; choose bounded oneactuallocalcap withreceivedWOOD fromexistingquarry/bodyroute, 
+p1: no returncourier assumed. NextactualEndentry+immediatebridge now; P4hold Enduntilcurrentnativegoal/route release. I preserveactualfailedgiftrequest in P1memory.
+[server] p1 was killed by Ender Dragon using magic
+--- p4 now: (146.5, -36, 2242.5) in overworld, health 20/20, food 20/20, alive

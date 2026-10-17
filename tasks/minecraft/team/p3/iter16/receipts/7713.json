@@ -1,0 +1,87 @@
+{
+  "program": 7713,
+  "header": "2026-10-17T15:29:55 p2 role=carrier_owner iter=16 36.5 s",
+  "result": {
+    "p": {
+      "x": -53.5002800082499,
+      "y": 18,
+      "z": 64.50627794113471
+    },
+    "hp": 11.499998092651367,
+    "food": 9,
+    "cuts": 2,
+    "steps": 0,
+    "down": 2,
+    "seconds": 36.451,
+    "issue": null,
+    "closed": true,
+    "lost": false,
+    "delta": 2,
+    "inv": [
+      [
+        "blaze_rod",
+        5,
+        null
+      ],
+      [
+        "cobblestone_slab",
+        2,
+        null
+      ],
+      [
+        "basalt",
+        3,
+        null
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    },
+    "rodBefore": 5,
+    "rodAfter": 5,
+    "rodPreserved": true,
+    "handCuts": [
+      {
+        "q": [
+          -54,
+          19,
+          64
+        ],
+        "name": "cobbled_deepslate",
+        "priceMs": 17500,
+        "harvest": false,
+        "lossExpected": true
+      },
+      {
+        "q": [
+          -54,
+          18,
+          64
+        ],
+        "name": "cobbled_deepslate",
+        "priceMs": 17500,
+        "harvest": false,
+        "lossExpected": true
+      }
+    ],
+    "hpActual": 11.499998092651367,
+    "bodyActual": {
+      "x": -53.5002800082499,
+      "y": 18,
+      "z": 64.50627794113471
+    },
+    "stage": "shaft_down",
+    "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+  },
+  "result_present": true,
+  "latest_completed_program": 7713,
+  "state_lags_latest": false,
+  "observed_utc": "2026-10-17T15:31:02.502004+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body"
+}

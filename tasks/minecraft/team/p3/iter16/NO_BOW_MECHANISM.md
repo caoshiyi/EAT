@@ -1,0 +1,10 @@
+# Finite independent combat mechanism — 16:10..12 UTC iteration16
+OwnerP3; beneficiaries P1/P4 post-recovery crystal stage; wallbudget3min16:10:15→16:13:15, released canonical7864 beforeboundary. Acceptance source answer only. No new controller, materialqueue, ownerfileedit or physicalcrystal attack.
+
+Actual motivation: P1bow/5arrows/Snow7 lostvoid; onlyknownrecoverable oldkit has4Snow andtwoswords. P4exact model subsequently found no free-space arc from oldpeek80.543,55,-1.515 to nearest42.5,77,.5; repeatingoldpeek is not qualified. P4ownscoveredcloserapproach, no duplication here.
+
+Matchedpublic1.20.4 EndCrystal(can) hurt(bkt,float): immunity/dragon checks, then server removescrystal and explodes strength6 (bytecode99..105); damageamount has no lower threshold in thismethod. Ordinarypositivehand1 therefore sufficient to trigger, not an arrow-only target. Existing exactnormalinteraction handler publicaoc takes eye→targetAABB distance<6 and no addedblockLOS; actualiter15normalbot.attack accepted closedcontacts on otherentities, not an actualEndcrystal trial. Prefer ordinaryclose interaction, no rawpacket workaround.
+
+Decision value: ammunitionloss need not imply newammunition production as a necessary condition. Melee requires actual safe approach to crystalheight and a controlled blast/ending; no free travel or automatic10crystal feasibility claimed.
+
+Narrow hypothetical firsttrial location: an enclosed protectivepod whose actual PLAYERfloor is nativeOBSIDIAN on tower top, within ordinarymelee reach of actualcrystal. Endstone-only elevatedfloor can be destroyed by crystalexplosion and is not an equivalent retainedfloor. Nativeobsidianfloor is the practical distinction; actualpod/line exposure/explosionHP/knockback/remaininggeometry/afterblastending are all UNQUALIFIED. Do not infer zero damage or safeonecycle from staticcode; no blastmodel was validated here. No tenclimb or stockquota queued. P1/P4 current actual recovery remains priority, and owners choose methods.

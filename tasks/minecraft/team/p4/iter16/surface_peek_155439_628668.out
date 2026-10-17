@@ -1,0 +1,328 @@
+program #7807 on p4: 12 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "DOWN_ACK",
+ "endingIssue": "RETURN_ORIGIN",
+ "reachedSurface": true,
+ "closed": false,
+ "lost": false,
+ "p": {
+  "x": 81.7,
+  "y": 52,
+  "z": -1.5527321079175669
+ },
+ "hp": 12,
+ "food": 19,
+ "trace": [
+  [
+   "CUT",
+   [
+    81,
+    54,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CAP_INTENT",
+   [
+    81,
+    52,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CAP",
+   [
+    81,
+    52,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "UP",
+   {
+    "x": 81.49834736120417,
+    "y": 53,
+    "z": -1.5536107067095235
+   },
+   20
+  ],
+  [
+   "CAP_INTENT",
+   [
+    81,
+    53,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CAP",
+   [
+    81,
+    53,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "UP",
+   {
+    "x": 81.49834736120417,
+    "y": 54,
+    "z": -1.5536107067095235
+   },
+   20
+  ],
+  [
+   "CAP_INTENT",
+   [
+    81,
+    54,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CAP",
+   [
+    81,
+    54,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "UP",
+   {
+    "x": 81.49834736120417,
+    "y": 55,
+    "z": -1.5536107067095235
+   },
+   20
+  ],
+  [
+   "ACTUAL_SURFACE_PEEK",
+   {
+    "x": 80.54340229877288,
+    "y": 55,
+    "z": -1.514661713255159
+   },
+   20,
+   [
+    [
+     6360,
+     {
+      "x": 42.5,
+      "y": 77,
+      "z": 0.5
+     }
+    ],
+    [
+     6367,
+     {
+      "x": -12.5,
+      "y": 92,
+      "z": 39.5
+     }
+    ],
+    [
+     6368,
+     {
+      "x": 12.5,
+      "y": 101,
+      "z": 39.5
+     }
+    ],
+    [
+     6369,
+     {
+      "x": 33.5,
+      "y": 80,
+      "z": -24.5
+     }
+    ],
+    [
+     6372,
+     {
+      "x": 33.5,
+      "y": 83,
+      "z": 24.5
+     }
+    ],
+    [
+     6373,
+     {
+      "x": -33.5,
+      "y": 89,
+      "z": 24.5
+     }
+    ],
+    [
+     6374,
+     {
+      "x": -41.5,
+      "y": 98,
+      "z": -0.5
+     }
+    ],
+    [
+     6375,
+     {
+      "x": -33.5,
+      "y": 86,
+      "z": -24.5
+     }
+    ],
+    [
+     6376,
+     {
+      "x": 12.5,
+      "y": 95,
+      "z": -39.5
+     }
+    ],
+    [
+     6377,
+     {
+      "x": -12.5,
+      "y": 104,
+      "z": -39.5
+     }
+    ]
+   ]
+  ],
+  [
+   "CUT",
+   [
+    81,
+    54,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CUT",
+   [
+    81,
+    53,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "CUT",
+   [
+    81,
+    52,
+    -2
+   ],
+   "end_stone"
+  ],
+  [
+   "DANGEROUS_ENDING",
+   "RETURN_ORIGIN",
+   {
+    "x": 81.7,
+    "y": 52,
+    "z": -1.5527321079175669
+   },
+   12
+  ]
+ ],
+ "own": [
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "sand",
+   4,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   50
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   109
+  ],
+  [
+   "cobbled_deepslate",
+   11,
+   null
+  ],
+  [
+   "end_stone",
+   7,
+   null
+  ],
+  [
+   "mossy_stone_bricks",
+   9,
+   null
+  ],
+  [
+   "basalt",
+   5,
+   null
+  ],
+  [
+   "blackstone",
+   1,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "tuff",
+   2,
+   null
+  ],
+  [
+   "book",
+   6,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p2: P2 actual7798 upperOWshaft144,-26,2241 FULL3D66/HP11.5/caps2, nowonefloorCOFF HANDtrial to-27 usingobservedfullfloor-28 andstrict3Dvirtualcut enclosure. Existingshaftfilled-27..-34; notopenfall. No per-levelrecaps/newstock. Officialeval7796 End11/dragon0/d
+p2: eaths112; 7786portal9/P1useaccepted. P2wonotenterEnd beforeP4SIDEproof.
+--- p4 now: (81.7, 52, -1.6) in the_end, health 12/20, food 19/20, alive

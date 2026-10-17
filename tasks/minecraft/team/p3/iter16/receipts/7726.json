@@ -1,0 +1,89 @@
+{
+  "program": 7726,
+  "header": "2026-10-17T15:35:41 p2 role=carrier_owner iter=16 35.4 s",
+  "result": {
+    "wholeCompound": true,
+    "compoundCells": 321,
+    "index": 280,
+    "total": 404,
+    "issue": null,
+    "p": {
+      "x": 34.50502331841935,
+      "y": 8,
+      "z": 168.54638484365586
+    },
+    "hp": 11.499998092651367,
+    "food": 9,
+    "closed": true,
+    "string": 0,
+    "oak": 0,
+    "cuts": 2,
+    "moves": 1,
+    "inv": [
+      [
+        "blaze_rod",
+        5,
+        null
+      ],
+      [
+        "cobblestone_slab",
+        2,
+        null
+      ],
+      [
+        "basalt",
+        2,
+        null
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    },
+    "rodBefore": 5,
+    "rodAfter": 5,
+    "rodPreserved": true,
+    "handCuts": [
+      {
+        "q": [
+          18,
+          9,
+          144
+        ],
+        "name": "basalt",
+        "priceMs": 6250,
+        "harvest": false,
+        "lossExpected": true
+      },
+      {
+        "q": [
+          18,
+          8,
+          144
+        ],
+        "name": "basalt",
+        "priceMs": 6250,
+        "harvest": false,
+        "lossExpected": true
+      }
+    ],
+    "hpActual": 11.499998092651367,
+    "bodyActual": {
+      "x": 34.50502331841935,
+      "y": 8,
+      "z": 168.54638484365586
+    },
+    "stage": "low_dest",
+    "qualification": "Current caller source adapted from prior physical path; actual current-stage receipt required."
+  },
+  "result_present": true,
+  "latest_completed_program": 7726,
+  "state_lags_latest": false,
+  "observed_utc": "2026-10-17T15:36:53.076864+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body"
+}

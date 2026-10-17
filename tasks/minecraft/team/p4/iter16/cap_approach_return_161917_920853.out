@@ -1,0 +1,33 @@
+program #7887 on p4: 0.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "ACTUAL_TARGET_air;RETURN_OBSERVED_STEP_GEOMETRY_(146, -36, 2241)",
+ "before": 1,
+ "after": 1,
+ "gain": 0,
+ "p": {
+  "x": 146.5,
+  "y": -36,
+  "z": 2242.5129077963566
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [
+  [
+   "wooden_pickaxe",
+   1,
+   8
+  ],
+  [
+   "basalt",
+   1,
+   null
+  ]
+ ],
+ "trace": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (146.5, -36, 2242.5) in overworld, health 20/20, food 20/20, alive

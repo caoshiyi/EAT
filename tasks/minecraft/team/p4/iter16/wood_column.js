@@ -1,0 +1,1 @@
+bot.clearControlStates();const{Vec3}=require('vec3');return{p:bot.entity.position.clone(),col:Array.from({length:10},(_,i)=>{const q=new Vec3(146,-37+i,2241);const b=bot.blockAt(q);return[q.toArray(),b?.name,b?.shapes]})};

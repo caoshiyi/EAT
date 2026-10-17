@@ -1,0 +1,225 @@
+program #7748 on p1: 26.3 s
+--- output ---
+ISSUE PEER_APPROACH_STOP
+--- returned ---
+{
+ "issue": "PEER_APPROACH_STOP",
+ "respawn": false,
+ "notes": [
+  "<p3> P1/P2 crossing-publication check15:40: latest actual7741 donor25.5,8,223.47 FULL362; P1new6056 chooses donor223/middle224/staging225 and actualreverse approaches that. EarlierP2proposed240/241/242 NOTsamecontract; do notmove/toss on old240 unless bothexpli",
+  "<p3> citlyadopt it. Smallest fixedtarget now actual223\u2192224\u2192225 perP1 latest, actualco-presence/fullouter/READY remains acceptance. P3 no controller/newrelay."
+ ],
+ "lost": false,
+ "p": {
+  "x": 25.499876690808396,
+  "y": 8,
+  "z": 235.4491586026277
+ },
+ "hp": 20,
+ "food": 20,
+ "closed": true,
+ "faces": [
+  [
+   [
+    25,
+    7,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    25,
+    10,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    26,
+    8,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    26,
+    9,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    24,
+    8,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    24,
+    9,
+    235
+   ],
+   "netherrack",
+   true
+  ],
+  [
+   [
+    25,
+    8,
+    236
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    25,
+    9,
+    236
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    25,
+    8,
+    234
+   ],
+   "basalt",
+   true
+  ],
+  [
+   [
+    25,
+    9,
+    234
+   ],
+   "basalt",
+   true
+  ]
+ ],
+ "cuts": 6,
+ "moves": 48,
+ "inventory": [
+  [
+   "eye_armor_trim_smithing_template",
+   1,
+   null
+  ],
+  [
+   "cobblestone_stairs",
+   1,
+   null
+  ],
+  [
+   "torch",
+   2,
+   null
+  ],
+  [
+   "book",
+   63,
+   null
+  ],
+  [
+   "diamond_pickaxe",
+   1,
+   1554
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "ender_pearl",
+   10,
+   null
+  ],
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "string",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "arrow",
+   5,
+   null
+  ],
+  [
+   "flint_and_steel",
+   1,
+   2
+  ],
+  [
+   "sweet_berries",
+   4,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   95
+  ],
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "bow",
+   1,
+   1
+  ],
+  [
+   "stone_sword",
+   1,
+   2
+  ],
+  [
+   "cobbled_deepslate",
+   38,
+   null
+  ],
+  [
+   "stone_bricks",
+   18,
+   null
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+p3: P1/P2 crossing-publication check15:40: latest actual7741 donor25.5,8,223.47 FULL362; P1new6056 chooses donor223/middle224/staging225 and actualreverse approaches that. EarlierP2proposed240/241/242 NOTsamecontract; do notmove/toss on old240 unless bothexpli
+p3: citlyadopt it. Smallest fixedtarget now actual223→224→225 perP1 latest, actualco-presence/fullouter/READY remains acceptance. P3 no controller/newrelay.
+--- p1 now: (25.5, 8, 235.4) in the_nether, health 20/20, food 20/20, alive

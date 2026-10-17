@@ -1,0 +1,90 @@
+{
+  "program": 7833,
+  "header": "2026-10-17T16:00:42 p4 role=completion_partner iter=16 11.4 s",
+  "result": {
+    "issue": null,
+    "stopped": false,
+    "column": 4,
+    "trace": [
+      [
+        [
+          147,
+          -34,
+          2240
+        ],
+        "blackstone",
+        7500
+      ],
+      [
+        [
+          147,
+          -32,
+          2240
+        ],
+        "oak_planks",
+        3000
+      ]
+    ],
+    "p": {
+      "x": 146.5,
+      "y": -36,
+      "z": 2241.5
+    },
+    "hp": 20,
+    "inv": [],
+    "entities": [
+      [
+        7958,
+        {
+          "x": 146.64636880652986,
+          "y": -33,
+          "z": 2240.9043156761954
+        },
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "present": true,
+            "itemId": 36,
+            "itemCount": 1
+          }
+        ]
+      ],
+      [
+        8046,
+        {
+          "x": 147.2649509501123,
+          "y": -31.639621047830968,
+          "z": 2240.575928506902
+        },
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "present": true,
+            "itemId": 36,
+            "itemCount": 1
+          }
+        ]
+      ]
+    ]
+  },
+  "result_present": true,
+  "player": "p4",
+  "latest_completed_program": 7834,
+  "state_lags_latest": true,
+  "observed_utc": "2026-10-17T16:01:44.151213+00:00",
+  "scope": "latest completed canonical receipt; NOT current live body"
+}

@@ -1,0 +1,140 @@
+program #7919 on p1: 39.8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "cuts": 10,
+ "trace": [
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -35,
+    2241
+   ],
+   "bookshelf",
+   0
+  ],
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -36,
+    2241
+   ],
+   "bookshelf",
+   0
+  ],
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -32,
+    2240
+   ],
+   "oak_planks",
+   0
+  ],
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -34,
+    2241
+   ],
+   "bookshelf",
+   1
+  ],
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -33,
+    2241
+   ],
+   "bookshelf",
+   1
+  ],
+  [
+   "WORLD_CUT",
+   [
+    148,
+    -32,
+    2241
+   ],
+   "oak_planks",
+   1
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -32,
+    2240
+   ],
+   "oak_planks",
+   1
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -34,
+    2241
+   ],
+   "basalt",
+   3
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -33,
+    2241
+   ],
+   "oak_planks",
+   3
+  ],
+  [
+   "WORLD_CUT",
+   [
+    149,
+    -32,
+    2241
+   ],
+   "oak_planks",
+   4
+  ],
+  [
+   "ACTUAL_WOOD5",
+   5
+  ]
+ ],
+ "p": {
+  "x": 146.49928538198094,
+  "y": -36,
+  "z": 2241.3853529419775
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "wood": 5,
+ "inventory": [
+  [
+   "book",
+   12
+  ],
+  [
+   "oak_planks",
+   5
+  ]
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+p2: 7911 actualFRAMEwest131.4998,-36,2276.5705 reached56/56 fromactualbody path; HP11.5food9/nohurt/controlscleared/BASALT1+SLAB2. LiteralclosedFALSE, localfoe-raysNONE. StrongholdspawnCONFIRMED7906. P4nextEndoperatorACK/Ihold131body, not132approachcell; no sh
+p2: areddoorcaps whileyourapproachleaseactive. OriginalRod5→P1receipt→Eye10→portal9 complete; P2empty support nowphysicallynearEnd, no remote tool/handoff assumption. Watchingchangedescape/recovery beforeownEndentry.
+p4: P2 actual131.5,-36,2276.6 blocks my9nodeportalapproach;7915 refusedZEROcuts peer-on-route (goodguard). Lowestcost yield: reverse yourknownAIRroad7nodes to128.5,-36,2272.5 (1312275/74/73/72→1302272→1292272→1282272), ~5s/0cuts, thenholdfloor/roof/nofoe rays 
+p4: controlsfalse untilmyapproachpasses. This cell is OUTSIDE myroute; do notcap1292272 whileIpass. Newnorthernbypass wouldcost~12WOODcuts, so choose briefactualbodyyield, no newcourier/stock. P4stillFULL129waitingforphysicalclearance.
+--- p1 now: (146.5, -36, 2241.4) in overworld, health 20/20, food 20/20, alive
