@@ -1,0 +1,43 @@
+program #4303 on p2: 18.5 s
+--- output ---
+DOOR_ACTUAL exit (6.561722705548435, 66.42159999847412, 79.28405421375507)
+SNOW_SMOKE Vec3 { x: 9, y: 67, z: 83 } 0 1 1 air 14.333334922790527
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.46570512912746)
+--- returned ---
+{
+ "issue": null,
+ "target": {
+  "x": 9,
+  "y": 67,
+  "z": 83
+ },
+ "cut": true,
+ "gain": 1,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312656880306,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 14.333334922790527,
+ "kit": [
+  [
+   "wooden_shovel",
+   1,
+   1
+  ],
+  [
+   "snowball",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 ACTUALFRONT6 return+close claimNOW thenlowerchestpotiondeposit; onecross/no futurelease.
+p1: P1 POTION_BANK actual1 minecraft:water_breathing lower7,67,82; FOODberrysurplusbanked, held4reserve. Campreturntrue HP20 RELEASEdoor/chest; P4toolofferreceiptpending no assumedtool.
+p3: P3 currentCAMP rear7.63,67.56,83.7 20/20/WOODsword1, no frontdoor/chestwriter. P1actualfrontreturn/P4currentportalending takepriority; ownsmallwettraceNOTqueueddooruntilfreshconflictclear. Water4299 allSOURCElevel0 column62..56, so no fallingwaterproof; cu
+p3: rrentownAIR300 same-life. Foodretired/no fish; bankSTICKS11real. P4owner GATE_CHANGED/exposed requirespromptcurrent-bodyreturn beforewriting.
+p4: P4 actualportalGATE6,68,90 AIR/missing, notoldDOOR. Currentbody7,68,91.5/17HP. Manual6columnNescape thenimmediateCampreturn; no gateblockwrites.
+p1: P2 FOOD5BERRIES actualBANK4296 lower7,67,82 nowavailable; P1holds4reserve/20HP19food. Potion1WATER_BREATHING BANKverified preserveforstrongholdentry. Door/chestRELEASE. P4exposedendingstillownerpromptreturnneeded; no P1helperqueued.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 14.3/20, food 17/20, alive

@@ -1,0 +1,31 @@
+program #4035 on p2: 6.5 s
+--- output ---
+FAST_STAGE_PLAN 0 200 Vec3 { x: -300, y: 61, z: -394 }
+ROUTE_SERVER_DIG_ACK Vec3 { x: -141, y: 61, z: -430 } 112 113 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -141, y: 60, z: -430 } 113 114 20
+EXACT_STEP Vec3 { x: -141, y: 60, z: -430 } Vec3 { x: -140.57354945574173, y: 60, z: -429.493853847544 } 20
+OWN_EXIT_PASSED Vec3 { x: -140.57354945574173, y: 60, z: -429.493853847544 } 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -142, y: 61, z: -430 } 114 115 20
+ROUTE_SERVER_DIG_ACK Vec3 { x: -142, y: 60, z: -430 } 115 116 20
+THREAT_DETAILS [{"id":8223,"n":"blaze","p":{"x":-130.90739720872423,"y":63,"z":-432.1995908696784},"hp":20}]
+FAST_STAGE_ISSUE FAST_THREAT 1 9 Vec3 { x: -144.2098665962783, y: 60, z: -429.49339628007505 } 20
+EXACT_STEP Vec3 { x: -145, y: 60, z: -430 } Vec3 { x: -144.47881822599052, y: 60, z: -429.4933962800751 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-145,60,-430],"surface":[-145,60,-430],"index":5,"route":"RETURN_CHEST"} 20 20
+FAST_STAGE_END {"issue":"FAST_THREAT","closed":true,"startIndex":0,"endIndex":200,"currentIndex":5,"p":{"x":-144.47457106736437,"y":60,"z":-429.4933962800751},"hp":20,"food":20,"lost":false,"elapsed":6465}
+FINAL_KIT [["diamond",3,null],["wooden_sword",1,4],["crafting_table",3,null],["spruce_planks",1,null],["stone_pickaxe",1,116],["wooden_pickaxe",1,28],["nether_bricks",2,null],["basalt",9,null],["blackstone",10,null],["bone_meal",4,null]]
+RETURN_KIT [["diamond",3,null],["wooden_sword",1,4],["crafting_table",3,null],["spruce_planks",1,null],["stone_pickaxe",1,116],["wooden_pickaxe",1,28],["nether_bricks",2,null],["basalt",9,null],["blackstone",10,null],["bone_meal",4,null]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 localdoor6returnclaimNOW nofuturelease.
+p1: P1_return_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002804491831, 67, 82.66863352151101) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 actualCAMPclosed RELEASEdoor6 minimalLOG0 HP20 issueGO_BOUND
+p1: P1 actualBANK1beef+1coal withdrawn forPRIMARYtrip; PEARL1/GOLD/FLINT untouched. Claimdoor6immediateexit+close only.
+p1: P1_exit_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.559002512835276, 66, 78.84456810957778) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 door6actualEXITclosed RELEASE/noqueuedreturn; ONE5LOGtree19,64,111 thenfreshactualcampreturnclaim.
+p3: P3 actual4025 bridge53nodes31.8s FULL0,67,58/20HP20food, podW/roofDIRTactualrestored. Contact01:43NOTmet: retainedbridgeonly, no Enderclaim. 4029 next29nodeP4clearedroute floorsALLFULL, onlyobstructionOWNtemporaryN57COBBLE2 (removedbyfirststep, publicAIRre
+p3: stored), no othercaps. ONEboundedretain-19,65,48 nextwork40/recover25/outer85, thenactualWarpedgeometry beforeanyfurthercommitment; no gearquota.
+p1: P1 localdoor6returnclaimNOW nofuturelease.
+p1: P1_return_ACTUAL_CLOSED door6 KEEP_P1_WRITER_UNTIL_OPERATION_END (6.568879149850151, 67, 82.56035470404285) HP20 no pendingdoorcontrols; nextfieldphaseown.
+p1: P1 actualCAMPclosed RELEASEdoor6 minimalLOG5 HP20 issuenull
+--- p2 now: (-144.5, 60, -429.5) in the_nether, health 20/20, food 20/20, alive

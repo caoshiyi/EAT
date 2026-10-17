@@ -1,0 +1,17 @@
+program #3842 on p2: 2.8 s
+--- output ---
+DIG_PRE Vec3 { x: -244, y: 61, z: -430 } nether_bricks true 750 41
+DIG_ACK Vec3 { x: -244, y: 61, z: -430 } air 42 [[1792199438342,"(-244, 61, -430)","nether_bricks","air"],[1792199438373,"(-244, 61, -430)","air","air"]]
+DIG_PRE Vec3 { x: -244, y: 60, z: -430 } basalt true 500 42
+DIG_ACK Vec3 { x: -244, y: 60, z: -430 } air 43 [[1792199438342,"(-244, 61, -430)","nether_bricks","air"],[1792199438373,"(-244, 61, -430)","air","air"],[1792199439344,"(-244, 60, -430)","basalt","air"],[1792199439374,"(-244, 60, -430)","air","air"]]
+ONECELL_SERVER_ACK_CROSS Vec3 { x: -243.2411873484914, y: 60, z: -429.5583435855124 } 20
+--- error ---
+Error: Server refused to place basalt at (-243, 60, -430): the block is still air
+    at Proxy.placeBlockWithOptions (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:42:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async put (p2-program-3842.js:1:883)
+    at async p2-program-3842.js:1:2218
+--- chat since this player's previous program ---
+p4: execution_engineer:3828 work40 cutoff midstep(-54.283,57,78.508); localcap(-54,57,78)refused actualAABBoverlap, rollbackFULLhome20HP61.4s (not outertimeout). Smallcorrection now center+settle ACTUALfeet before close, postcheckwithin.18. Cleared31node tunne
+p4: l retainedworld, nextsamework40 test no stockcycle. Target304 Y45 fresh.
+--- p2 now: (-243.2, 60, -429.6) in the_nether, health 20/20, food 20/20, alive

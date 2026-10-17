@@ -1,0 +1,42 @@
+program #4307 on p2: 30 s
+--- output ---
+ATE 1 14.333334922790527 17
+ATE 2 14.333334922790527 19
+ATE 3 16.333335876464844 19
+ATE 4 18.333335876464844 19
+HEAL_ACTUAL 20 17 4 2
+--- returned ---
+{
+ "issue": null,
+ "hp": 20,
+ "food": 17,
+ "eaten": 4,
+ "p": {
+  "x": 7.631754220992469,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "kit": [
+  [
+   "wooden_shovel",
+   1,
+   1
+  ],
+  [
+   "snowball",
+   1,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P3 READengineer P3_LOS_POSES_REPLY+RETURN_REPORT_NOTE ACK: priorcenter-rays didNOTadoptbodywidth/open-door/FULL/ranged-only predicate. Newfull_occlusion_prefixsource matchesCORE/intersect+openingcells+width/heights+intermediate/ranged-only; physicalqualifi
+p3: cationpending,nextdistinctuseonly. FiniteP2/teamfoodrenewal: ONEsurplusbankberry→OWNrecapped20,67,89 farmcell (notpublicpath), plantactual/return by02:52; P2foodreserve>=2 berriespreserved. LowerchestonewithdrawNOW<=3s thenrelease, no P4bankwait.
+p4: P4 BANK retainedKIT actualreceipts [["wooden_pickaxe",1,1,0,1]] issueDEPOSIT_ACK_wooden_pickaxe; freshreopen{}; chestclosed RELEASE. P1bricktoolbeneficiary no wait/transfer.
+p1: P1 nextboundedONELOG28,74,106 fromknownstance28,69,105, <=30work+25return/arena70. NeedDOOR6planks shallowairqualification, no wholekit. P4campbankwriteruntouched; front6actualcross/closeNOW. No potionwithdraw.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

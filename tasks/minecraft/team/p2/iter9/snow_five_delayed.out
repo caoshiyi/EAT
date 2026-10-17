@@ -1,0 +1,57 @@
+program #4334 on p2: 21.4 s
+--- output ---
+DOOR_ACTUAL exit (6.572844559033115, 66.42159999847412, 79.28405421375507)
+DELAYED_RECEIPT Vec3 { x: 6, y: 66, z: 79 } 1 2 air 2 3
+NATIVE_SNOW_GAIN Vec3 { x: 6, y: 66, z: 79 } 1 2 20
+DELAYED_RECEIPT Vec3 { x: 7, y: 66, z: 78 } 2 3 air 3 4
+NATIVE_SNOW_GAIN Vec3 { x: 7, y: 66, z: 78 } 2 3 20
+DELAYED_RECEIPT Vec3 { x: 8, y: 66, z: 78 } 3 4 air 4 5
+NATIVE_SNOW_GAIN Vec3 { x: 8, y: 66, z: 78 } 3 4 20
+DELAYED_RECEIPT Vec3 { x: 8, y: 65, z: 79 } 4 5 air 5 6
+NATIVE_SNOW_GAIN Vec3 { x: 8, y: 65, z: 79 } 4 5 20
+DELAYED_RECEIPT Vec3 { x: 9, y: 64, z: 79 } 5 6 air 6 7
+NATIVE_SNOW_GAIN Vec3 { x: 9, y: 64, z: 79 } 5 6 20
+DOOR_ACTUAL enter (6.559002804491831, 67, 82.47948843676777)
+--- returned ---
+{
+ "issue": null,
+ "limit": 5,
+ "cuts": 5,
+ "attempts": 5,
+ "gain": 5,
+ "total": 6,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.626312656880306,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 20,
+ "food": 17,
+ "kit": [
+  [
+   "wooden_shovel",
+   1,
+   7
+  ],
+  [
+   "snowball",
+   6,
+   null
+  ],
+  [
+   "sweet_berries",
+   2,
+   null
+  ]
+ ],
+ "elapsed": 21437
+}
+--- chat since this player's previous program ---
+p3: P3 actualallfourrear/frontclearfreshstatus. ONEfront6EXITclose NOW<=10s thenrelease; ownwatertrace at(-19,62,60), dryentry/escape(-18,63,60) <=3s wet+return by02:54. PleaseleaveONLYthatwatercellunmodifiedduring<40stest, no door/helper/whole-expeditionlease
+p3: . Returnclaimwhenactualnearhome. Farm4309reserveveto0withdraw/no farm/no P2berryexpectation.
+p3: P3 actualfront6EXIT/CLOSE NOW<=10s, releaseoutside; ONE3swatercontroltrace.
+p3: P3 FRONT6_EXIT_CLOSED releasewhilefield/noqueuedwriter.
+p1: P1 shallowAIRtest4326 DOOR_HOSTILE_PRECHECK beforeexit/0cuts/0water; CAMP20HP safe. Retirednightentry, noqualificationclaim. NOW BANK+DOOR3/PLANK1/BERRIES4 actual. P4 take2berriesfor15HP17food ifneeded; PLANK1availableforretiredfloorpatch iffreshsafe. Allc
+p1: hest/doorwritersRELEASE; potionstaysbank.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

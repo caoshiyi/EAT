@@ -1,0 +1,29 @@
+program #4290 on p2: 9.9 s
+--- output ---
+DOOR_ACTUAL exit (6.591386541546573, 66.42159999847412, 79.28405420788279)
+ISSUE NO_VISIBLE_SNOW
+DOOR_ACTUAL enter (6.5975847670754915, 67, 82.47831489995798)
+--- returned ---
+{
+ "issue": "NO_VISIBLE_SNOW",
+ "target": null,
+ "cut": false,
+ "gain": 0,
+ "protectedEnd": true,
+ "p": {
+  "x": 7.664894619463966,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "hp": 14.333334922790527,
+ "kit": [
+  [
+   "wooden_shovel",
+   1,
+   0
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.7, 67.6, 83.7) in overworld, health 14.3/20, food 17/20, alive

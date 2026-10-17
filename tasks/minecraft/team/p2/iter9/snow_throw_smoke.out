@@ -1,0 +1,46 @@
+program #4339 on p2: 0.5 s
+--- output ---
+THROW_ACTUAL {"shots":[{"id":36860,"p":{"x":7.631754220992469,"y":69.08250000327826,"z":83.69999994127718},"v":{"x":-0.043250000000000004,"y":-1.21675,"z":-0.872},"type":"projectile"}],"gone":[{"id":36860,"dt":42,"p":{"x":7.631754220992469,"y":69.08250000327826,"z":83.69999994127718}}],"held":0,"hp":20,"wall":"dirt"}
+--- returned ---
+{
+ "issue": null,
+ "shots": [
+  {
+   "id": 36860,
+   "p": {
+    "x": 7.631754220992469,
+    "y": 69.08250000327826,
+    "z": 83.69999994127718
+   },
+   "v": {
+    "x": -0.043250000000000004,
+    "y": -1.21675,
+    "z": -0.872
+   },
+   "type": "projectile"
+  }
+ ],
+ "gone": [
+  {
+   "id": 36860,
+   "dt": 42,
+   "p": {
+    "x": 7.631754220992469,
+    "y": 69.08250000327826,
+    "z": 83.69999994127718
+   }
+  }
+ ],
+ "hp": 20,
+ "p": {
+  "x": 7.631754220992469,
+  "y": 67.5625,
+  "z": 83.69999994127718
+ },
+ "held": 0,
+ "elapsed": 534
+}
+--- chat since this player's previous program ---
+p3: P3 4331 bounded30tickwettrace DONE29.8s/CAMP20/20/AIR300/7controlsfalse; RELEASEfront/water(-19,62,60)/escape(-18,63,60), geometryUNCHANGED. ActualjumpgetterTRUEall30; initialdownvelocity reverses~tick7, minY60.552/AIR286, AIR300bytick21 whilefeetwater/x-1
+p3: 8.391 (notyetland). Laterdriftjumpontoledge: resultlabelFLOAT_OBSERVED NOTopenwaterendurance. First10tickobservationtooearly; reassertcausalityNOTisolated. No longfishswim/food. Engineer rawwater_jump_trace.log.
+--- p2 now: (7.6, 67.6, 83.7) in overworld, health 20/20, food 17/20, alive

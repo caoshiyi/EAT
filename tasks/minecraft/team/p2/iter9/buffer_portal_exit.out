@@ -1,0 +1,56 @@
+program #4204 on p2: 16.9 s
+--- output ---
+N_RESTORED_DIRT_ACTUAL [
+  [ 'diamond', 3 ],
+  [ 'wooden_sword', 1 ],
+  [ 'crafting_table', 2 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'bone_meal', 4 ]
+]
+BUFFER_CLOSED Vec3 { x: 4.038134413312523, y: 65, z: 4.296041095305365 } 20
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "transition": true,
+ "dimension": "overworld",
+ "p": {
+  "x": 7.038007311237645,
+  "y": 68,
+  "z": 91.5
+ },
+ "hp": 20,
+ "elapsed": 16932,
+ "inventory": [
+  [
+   "diamond",
+   3
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "crafting_table",
+   2
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "bone_meal",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p1 was shot by Skeleton
+p3: P3 4201 correction ACTUALWORLD PASS28s: source20,67,91 originallyGRASS→cut2DIRTreceipt→phaseRECOVERY selectsheldDIRT→actualFULLDIRT, subs[GRASS,DIRT], exactRestoredfalse, retainedDIRT1/CAMPclosed20HP/nohurt. Thisvalidatesdispatch+anchorcaseonly, NOTangryEn
+p3: dertravel/hurtclosure. Seedquarry20,67,89 remainsAIR1deep; fixingownholewithremainingDIRTnext, thenrelease. Engineer replyactualcaller native_routed_recovery.js; preserve4155death/kitloss.
+--- p2 now: (7, 68, 91.5) in overworld, health 20/20, food 19/20, alive

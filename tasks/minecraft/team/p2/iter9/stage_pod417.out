@@ -1,0 +1,29 @@
+program #3743 on p2: 20.1 s
+--- output ---
+FAST_STAGE_PLAN 360 417 Vec3 { x: -220, y: 63, z: -180 }
+EXACT_EMERGE Vec3 { x: -162.4996426831448, y: 63, z: -179.48800309217177 } 20
+EXACT_STEP Vec3 { x: -171, y: 63, z: -180 } Vec3 { x: -170.48267430091352, y: 63, z: -179.48706350248196 } 20
+FAST_SEGMENT_ACTUAL 360 368 Vec3 { x: -170.48267430091352, y: 63, z: -179.48706350248196 } 20 TICKS 37
+EXACT_STEP Vec3 { x: -179, y: 63, z: -180 } Vec3 { x: -178.47960206727691, y: 63, z: -179.48612391279218 } 20
+FAST_SEGMENT_ACTUAL 368 376 Vec3 { x: -178.47960206727691, y: 63, z: -179.48612391279218 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -187, y: 63, z: -180 } Vec3 { x: -186.46638908042607, y: 63, z: -179.4851843231024 } 20
+FAST_SEGMENT_ACTUAL 376 384 Vec3 { x: -186.46638908042607, y: 63, z: -179.4851843231024 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -195, y: 63, z: -180 } Vec3 { x: -194.45317609357522, y: 63, z: -179.48424473341262 } 20
+FAST_SEGMENT_ACTUAL 384 392 Vec3 { x: -194.45317609357522, y: 63, z: -179.48424473341262 } 20 TICKS 27
+EXACT_STEP Vec3 { x: -203, y: 63, z: -180 } Vec3 { x: -202.43996310672438, y: 63, z: -179.48330514372284 } 20
+FAST_SEGMENT_ACTUAL 392 400 Vec3 { x: -202.43996310672438, y: 63, z: -179.48330514372284 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -211, y: 63, z: -180 } Vec3 { x: -210.42675011987353, y: 63, z: -179.48236555403307 } 20
+FAST_SEGMENT_ACTUAL 400 408 Vec3 { x: -210.42675011987353, y: 63, z: -179.48236555403307 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -219, y: 63, z: -180 } Vec3 { x: -218.4135371330227, y: 63, z: -179.4814259643433 } 20
+FAST_SEGMENT_ACTUAL 408 416 Vec3 { x: -218.4135371330227, y: 63, z: -179.4814259643433 } 20 TICKS 37
+EXACT_STEP Vec3 { x: -220, y: 63, z: -180 } Vec3 { x: -219.46780753203385, y: 63, z: -179.48129899276358 } 20
+EXACT_STEP Vec3 { x: -220, y: 63, z: -180 } Vec3 { x: -219.47825464728928, y: 63, z: -179.48129899276358 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-220,63,-180],"surface":[-220,63,-180],"index":417} 20 20
+FAST_STAGE_END {"issue":null,"closed":true,"startIndex":360,"endIndex":417,"currentIndex":417,"p":{"x":-219.47825464728928,"y":63,"z":-179.48129899276358},"hp":20,"food":20,"lost":false,"elapsed":20140}
+CAP_AREA [[[-220,63,-180],"air"],[[-221,63,-180],"netherrack"],[[-221,64,-180],"netherrack"],[[-221,62,-180],"netherrack"],[[-221,61,-180],"air"],[[-221,63,-181],"air"],[[-221,64,-181],"air"],[[-221,62,-181],"air"]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Execution_engineer first actual3734 FAILED recovery: ownfootblackstone dig succeeded; cap caller referenced AIRbelow0,65,6→refused; no resource delta yet at immediate snapshot. Immediate3738 knownFULLupper0,67,6 downward placement ACK restoredDIRT, HP20, b
+p3: lackstone1 laterretained. No universal recovery claim. Fix actual reference precondition and revalidate. Request attention async refusal vs late inventory/caps; all limits preserved.
+--- p2 now: (-219.5, 63, -179.5) in the_nether, health 20/20, food 20/20, alive

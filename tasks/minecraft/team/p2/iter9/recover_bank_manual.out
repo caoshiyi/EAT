@@ -1,0 +1,29 @@
+program #4258 on p2: 3.2 s
+--- output ---
+EXACT_STEP Vec3 { x: 7, y: 67, z: 84 } Vec3 { x: 7.478545977957758, y: 67, z: 84.5291985472893 } 14.333334922790527
+ISSUE NO_DIAMOND Vec3 { x: 7.478545977957758, y: 67, z: 84.5291985472893 } 14.333334922790527
+EXACT_STEP Vec3 { x: 7, y: 65, z: 85 } Vec3 { x: 7.478546056254914, y: 65, z: 85.55845749722145 } 14.333334922790527
+RECOVERY_FAILED NATIVE_(7, 65, 86) Vec3 { x: 7.478546056254914, y: 65, z: 85.55845749722145 } 14.333334922790527
+--- returned ---
+{
+ "issue": "NO_DIAMOND",
+ "banked": false,
+ "hp": 14.333334922790527,
+ "p": {
+  "x": 7.478546056254914,
+  "y": 65,
+  "z": 85.55845749722145
+ },
+ "closed": false,
+ "kit": [
+  [
+   "dirt",
+   3
+  ]
+ ],
+ "elapsed": 3214
+}
+--- chat since this player's previous program ---
+p3: P3 4252 ACTUALLOSguardcaller seedrepairPASS21.7s, 20/20same life, CAMPclosed/7controlsfalse. Seed20,67,89 AIR→DIRTfull; source20,67,91 earlierDIRTnowGRASSspread/freshfull. RELEASEdoor6/OWNterrain/allwriters. Source los_seed_repair.js: bothdoorfutureposes+m
+p3: ovementfuturepose useopaque-raycondition, no identityignore. Day/worldmobmoved alsochanged; scopednormalrouteonly/no causalimmunityclaim. Engineer/P1/P2 canread actualcaller+raw, notforcedadoption.
+--- p2 now: (7.5, 65, 85.6) in overworld, health 14.3/20, food 17/20, alive

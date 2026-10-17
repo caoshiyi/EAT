@@ -1,0 +1,28 @@
+program #3791 on p2: 11.6 s
+--- output ---
+FAST_STAGE_PLAN 600 700 Vec3 { x: -317, y: 62, z: -316 }
+EXACT_STEP Vec3 { x: -305, y: 64, z: -255 } Vec3 { x: -304.5428932566544, y: 64, z: -254.579475786154 } 20
+OWN_EXIT_PASSED Vec3 { x: -304.5428932566544, y: 64, z: -254.579475786154 } 20
+EXACT_STEP Vec3 { x: -307, y: 64, z: -255 } Vec3 { x: -306.49677338068625, y: 64, z: -254.57924723731054 } 20
+FAST_SEGMENT_ACTUAL 601 603 Vec3 { x: -306.49677338068625, y: 64, z: -254.57924723731054 } 20 TICKS 8
+EXACT_STEP Vec3 { x: -308, y: 63, z: -255 } Vec3 { x: -307.486441108264, y: 63, z: -254.5791456600468 } 20
+EXACT_STEP Vec3 { x: -316, y: 63, z: -255 } Vec3 { x: -315.47338978723366, y: 63, z: -254.57820607035703 } 20
+FAST_SEGMENT_ACTUAL 604 612 Vec3 { x: -315.47338978723366, y: 63, z: -254.57820607035703 } 20 TICKS 38
+EXACT_STEP Vec3 { x: -316, y: 63, z: -258 } Vec3 { x: -315.469141405698, y: 63, z: -257.5964789793382 } 20
+FAST_SEGMENT_ACTUAL 612 615 Vec3 { x: -315.469141405698, y: 63, z: -257.5964789793382 } 20 TICKS 14
+EXACT_STEP Vec3 { x: -316, y: 64, z: -259 } Vec3 { x: -315.4692379040907, y: 64, z: -258.49861720089876 } 20
+EXACT_STEP Vec3 { x: -316, y: 64, z: -261 } Vec3 { x: -315.4694664529344, y: 64, z: -260.4660440567497 } 20
+FAST_SEGMENT_ACTUAL 616 618 Vec3 { x: -315.4694664529344, y: 64, z: -260.4660440567497 } 20 TICKS 10
+EXACT_STEP Vec3 { x: -317, y: 64, z: -261 } Vec3 { x: -316.5338737185174, y: 64, z: -260.4613128464257 } 20
+EXACT_STEP Vec3 { x: -317, y: 64, z: -262 } Vec3 { x: -316.5444643986212, y: 64, z: -261.5257201120087 } 20
+FAST_STAGE_ISSUE NATIVE_STOP_(-317, 64, -263) 620 621 Vec3 { x: -316.5444643986212, y: 64, z: -261.5257201120087 } 20
+EXACT_STEP Vec3 { x: -317, y: 64, z: -262 } Vec3 { x: -316.5444643986212, y: 64, z: -261.5361699552361 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-317,64,-262],"surface":[-317,64,-262],"index":620} 20 20
+FAST_STAGE_END {"issue":"NATIVE_STOP_(-317, 64, -263)","closed":true,"startIndex":600,"endIndex":700,"currentIndex":620,"p":{"x":-316.5444643986212,"y":64,"z":-261.5361699552361},"hp":20,"food":20,"lost":false,"elapsed":11591}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 next finite OWN2LOG for stone-tool/pearl avenue: daylight pathprequalified29,68,98; cuts29,Y72/73,Z99 only, nativeprivatebury29,65,98 final. P1 tree34,90/pod34,94 untouched. Immediate campdoor6exit+CLOSE <=10s thenrelease, noqueuedreturn; work35/recover
+p3: y20/outer70s. Actual2LOG+FULLsamebody end required, no broad kitquota.
+p3: P3 actualdoor6EXITclosed RELEASE; no queuedreturn. Ownlog29,72/73,99 + privatepod29,65,98 no peerfaces.
+--- p2 now: (-316.5, 64, -261.5) in the_nether, health 20/20, food 20/20, alive

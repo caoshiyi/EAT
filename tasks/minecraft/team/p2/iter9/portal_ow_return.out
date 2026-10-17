@@ -1,0 +1,45 @@
+program #4208 on p2: 3.5 s
+--- output ---
+OW_RETURN_ISSUE NAV_NOT_ACTUAL
+--- returned ---
+{
+ "issue": "NAV_NOT_ACTUAL",
+ "protectedEnd": false,
+ "gateClosed": true,
+ "p": {
+  "x": 6.394592024027754,
+  "y": 68,
+  "z": 89.12937663560825
+ },
+ "hp": 20,
+ "dim": "overworld",
+ "inventory": [
+  [
+   "diamond",
+   3
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "crafting_table",
+   2
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "bone_meal",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.4, 68, 89.1) in overworld, health 20/20, food 19/20, alive

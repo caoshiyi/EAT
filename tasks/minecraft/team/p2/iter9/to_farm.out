@@ -1,0 +1,24 @@
+program #3832 on p2: 13.6 s
+--- output ---
+FAST_STAGE_PLAN 886 994 Vec3 { x: -141, y: 60, z: -430 }
+ROUTE_OBSTRUCTION_CUT Vec3 { x: -247, y: 61, z: -431 } 20
+ROUTE_OBSTRUCTION_CUT Vec3 { x: -247, y: 60, z: -431 } 20
+EXACT_STEP Vec3 { x: -247, y: 60, z: -431 } Vec3 { x: -246.51181755453544, y: 60, z: -430.44158632863986 } 20
+OWN_EXIT_PASSED Vec3 { x: -246.51181755453544, y: 60, z: -430.44158632863986 } 20
+EXACT_STEP Vec3 { x: -247, y: 60, z: -430 } Vec3 { x: -246.51171597727156, y: 60, z: -429.55350983766715 } 20
+EXACT_STEP Vec3 { x: -245, y: 60, z: -430 } Vec3 { x: -244.55884246201248, y: 60, z: -429.5581656948054 } 20
+FAST_SEGMENT_ACTUAL 888 890 Vec3 { x: -244.55884246201248, y: 60, z: -429.5581656948054 } 20 TICKS 10
+ROUTE_OBSTRUCTION_CUT Vec3 { x: -244, y: 61, z: -430 } 20
+ROUTE_OBSTRUCTION_CUT Vec3 { x: -244, y: 60, z: -430 } 20
+FAST_STAGE_ISSUE FAST_BOUND 890 892 Vec3 { x: -244.29433863169047, y: 60, z: -429.55822156751833 } 20
+EXACT_STEP Vec3 { x: -245, y: 60, z: -430 } Vec3 { x: -244.51932323245126, y: 60, z: -429.5581910630224 } 20
+SURFACE_POD_FULL {"kind":"SURFACE_POD","feet":[-245,60,-430],"surface":[-245,60,-430],"index":890} 20 20
+FAST_STAGE_END {"issue":"FAST_BOUND","closed":true,"startIndex":886,"endIndex":994,"currentIndex":890,"p":{"x":-244.52407865864214,"y":60,"z":-429.5581910630224},"hp":20,"food":20,"lost":false,"elapsed":13619}
+FINAL_KIT [["wooden_sword",1,0],["basalt",1,null],["crafting_table",1,null],["spruce_planks",1,null],["stone_pickaxe",1,39],["wooden_pickaxe",1,28],["nether_bricks",6,null],["netherrack",12,null]]
+FORTRESS_SOURCE_LOADED [[[-133,62,-430],"air"],[[-133,64,-430],"nether_bricks"],[[-141,60,-430],"air"],[[-141,62,-430],"nether_bricks"],[[-132,63,-430],"nether_bricks"]]
+SOURCE_ENTITIES []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-244.5, 60, -429.6) in the_nether, health 20/20, food 20/20, alive
