@@ -1,0 +1,153 @@
+program #8000 on p2: 0.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "trace": [
+  [
+   145,
+   -36,
+   2242
+  ],
+  [
+   144,
+   -36,
+   2242
+  ],
+  [
+   144,
+   -36,
+   2241
+  ]
+ ],
+ "p": {
+  "x": 144.4695411117049,
+  "y": -36,
+  "z": 2241.5501615270728
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "wood": [
+  [
+   [
+    142,
+    -32,
+    2239
+   ],
+   {
+    "x": 143,
+    "y": -34,
+    "z": 2241
+   },
+   "bookshelf",
+   "oak_fence"
+  ],
+  [
+   [
+    142,
+    -32,
+    2240
+   ],
+   {
+    "x": 143,
+    "y": -34,
+    "z": 2241
+   },
+   "bookshelf",
+   "cave_air"
+  ],
+  [
+   [
+    142,
+    -32,
+    2241
+   ],
+   {
+    "x": 143,
+    "y": -34,
+    "z": 2241
+   },
+   "bookshelf",
+   "bookshelf"
+  ],
+  [
+   [
+    143,
+    -32,
+    2239
+   ],
+   {
+    "x": 144,
+    "y": -34,
+    "z": 2240
+   },
+   "basalt",
+   "oak_fence"
+  ],
+  [
+   [
+    143,
+    -32,
+    2240
+   ],
+   {
+    "x": 143,
+    "y": -33,
+    "z": 2241
+   },
+   "bookshelf",
+   "cave_air"
+  ],
+  [
+   [
+    143,
+    -32,
+    2241
+   ],
+   {
+    "x": 143,
+    "y": -33,
+    "z": 2241
+   },
+   "bookshelf",
+   "bookshelf"
+  ],
+  [
+   [
+    144,
+    -32,
+    2240
+   ],
+   {
+    "x": 144,
+    "y": -33,
+    "z": 2240
+   },
+   "blackstone",
+   "basalt"
+  ],
+  [
+   [
+    145,
+    -31,
+    2241
+   ],
+   {
+    "x": 145,
+    "y": -33,
+    "z": 2241
+   },
+   "cobbled_deepslate",
+   "oak_planks"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P1 wing-only refinement from the same exact code: both wing parts sit at rootY+2 and have height2, so their contact band is rootY-2..rootY+4. Y61 standing body max62.8 is vertically outside the wing band if actual rootY>=64.8 (e.g.65 gives min63). That is 
+p3: geometry separation, not terrain shielding, and it does NOT certify head/neck during landing/turning or clouds. First contact still needs actual phase/root/health/velocity observation. Source answer only; no extra stance or stock queue.
+p1: 7992 actual21.44,49,.5 HP13.17/full/cuts32, moving13→stairY58 now. P2accepted complementary TABLE+STICK, P4 please take actualpacket then follow whenready, no primarywait. P1receiver atcentreEnd notOWL; P4 iscarrierreceiver ifcopresent. No assumedinventory
+p1: receipt. Fighterroute49tunnel/detour45z5→37z0 thenwest13.
+p4: P1space-releaseaccepted: liveP1<=49 Endhall, actual7979 P4FULL132 HP20/20/ST7/WOOD15/cap1. Ownfollow_support_escape.js adopts yourACTUAL7966 successfulAABB/nearsteer source; initialcapguard pricesactual133door2, retainsordinary>=2 BEFOREEnd. OldgearABSENT 
+p4: acknowledged; no Snow/swordrecoveryassumption. Executingentry→actualnative81 now, thenIreconcile beforecoveredfollow. No P2entry.
+--- p2 now: (144.5, -36, 2241.6) in overworld, health 11.5/20, food 9/20, alive

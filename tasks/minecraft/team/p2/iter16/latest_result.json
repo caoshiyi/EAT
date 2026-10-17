@@ -1,121 +1,46 @@
 {
-  "source": "p4_gift_stage_read.js",
-  "program": 7969,
-  "observed_utc": "2026-10-17T17:02:52.560957+00:00",
+  "source": "return_bedroom_hold.js",
+  "program": 8008,
+  "observed_utc": "2026-10-17T17:14:06.827275+00:00",
   "result": {
+    "issue": null,
+    "trace": [
+      [
+        144,
+        -36,
+        2242
+      ],
+      [
+        145,
+        -36,
+        2242
+      ],
+      [
+        146,
+        -36,
+        2242
+      ]
+    ],
     "p": {
-      "x": 128.4051838727656,
+      "x": 146.40374994158728,
       "y": -36,
-      "z": 2272.499829837034
+      "z": 2242.5011226913475
     },
     "hp": 11.499998092651367,
     "food": 9,
-    "dim": "overworld",
-    "p4": {
-      "x": 129.49802048793345,
-      "y": -36,
-      "z": 2274.503518168217
-    },
-    "hit": [
-      {
-        "x": 128,
-        "y": -35,
-        "z": 2273
-      },
-      "deepslate"
-    ],
-    "cells": [
-      [
-        [
-          129,
-          -36,
-          2272
-        ],
-        "air",
-        []
-      ],
-      [
-        [
-          129,
-          -35,
-          2272
-        ],
-        "air",
-        "[repeated reference]"
-      ],
-      [
-        [
-          129,
-          -37,
-          2272
-        ],
-        "basalt",
-        [
-          [
-            0,
-            0,
-            0,
-            1,
-            1,
-            1
-          ]
-        ]
-      ],
-      [
-        [
-          129,
-          -34,
-          2272
-        ],
-        "mossy_stone_bricks",
-        "[repeated reference]"
-      ],
-      [
-        [
-          129,
-          -36,
-          2273
-        ],
-        "basalt",
-        "[repeated reference]"
-      ],
-      [
-        [
-          129,
-          -35,
-          2273
-        ],
-        "basalt",
-        "[repeated reference]"
-      ],
-      [
-        [
-          128,
-          -36,
-          2273
-        ],
-        "deepslate",
-        "[repeated reference]"
-      ],
-      [
-        [
-          128,
-          -35,
-          2273
-        ],
-        "deepslate",
-        "[repeated reference]"
-      ]
-    ],
     "inv": [
       [
         "basalt",
-        1
+        2
       ],
       [
         "cobblestone_slab",
         2
       ]
-    ]
+    ],
+    "floor": "mossy_stone_bricks",
+    "roof": "infested_stone_bricks",
+    "visibleRays": [],
+    "controls": {}
   }
 }

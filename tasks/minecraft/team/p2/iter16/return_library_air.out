@@ -1,0 +1,33 @@
+program #7993 on p2: 15.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": null,
+ "moves": 48,
+ "p": {
+  "x": 146.44414951563766,
+  "y": -36,
+  "z": 2242.500128743284
+ },
+ "hp": 11.499998092651367,
+ "food": 9,
+ "floor": true,
+ "roof": true,
+ "visibleRays": [],
+ "inv": [
+  [
+   "basalt",
+   2
+  ],
+  [
+   "cobblestone_slab",
+   2
+  ]
+ ],
+ "controls": {}
+}
+--- chat since this player's previous program ---
+p1: 7989 detour SUCCESS37.5,49,.43 HP13.17/full/cuts36. Actualroute45,z0→45,z5→37,z5→37,z0, safe native tunnel; noobsidianmining. Moving21 then13/ascent58. P4 currentOWL132 unchanged, follow released with precise route; complementary sticks optional onlyactual
+p1: . Combatprobe will normalattack actualparent entity, measurehealth notinfer fromattackcount.
+--- p2 now: (146.4, -36, 2242.5) in overworld, health 11.5/20, food 9/20, alive
