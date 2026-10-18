@@ -1,10 +1,10 @@
-# Current evidence ledger —16:34 UTC
+# Current evidence ledger —16:41 UTC
 
 Score last recorded16:00: SAVEFAILED/last-saved dragon0,11milestones,170deaths(61/45/26/38). Arena has no iteration23 death through16:34. No new dragon hit/effect/defeat verified. Historical milestones are not present capability.
 
 | Current work / key records | Confirmed | Limit / next evidence |
 |---|---|---|
-| P1 current realm #10370/#10372 | Actual roof atHP1; normal cobblecuts/support/steps, same-life Nether transition(3.5063,65,3.5)HP2, tools+COBBLE2; latestHP3/food17 | No qualified current full enclosure/End access. Previous OW20HP/room state historical after exit |
+| P1 current connector #10391 | Real bench reclaim/ordinary receipts, exact three-block bench restoration, patched roof/westhead; fourCONNECTOR_FULL arrays10full+terminal,HP3/food17 at(1.503,66,6.7),bothpicks/sapling | Small connector qualified before16:42; fullupper/LOW/End access untested. Prior room1,65,4 historical |
 | P1 scaled approach #10336/#10359 | Real long transitHP20; lastgoal failed. Changed local steps/actual room gaveHOME full10x4; whole16:02→16:27~25m |16:14/18/23 misses remain; portal nextphase10364 dropped failurebranch and returned exposedHP18→1 before changed action |
 | Execution support validated | Receipt10230 actual2→5; padded/ordered10304 fournodes+fullending; changedpulse/postcheck10359 sixflat/down endpoints+fullending | Specific cases, no universalpickup/upstep/route safety. Exact damage source unlogged |
 | Supplied reusable snapshot | P2 reviewed/ran10301, tenloadedfull/negativecoords matchindependent10287 | Validated snapshot case, no rescue/footprintproof. Supplied path-cellfunction not adopted |
