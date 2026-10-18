@@ -3324,3 +3324,7 @@ P2 #10428 actual head/foot ordinary receipt30→32, one-cell move/settled veloci
 ### Iteration 23 failure branch lost again —17:09 UTC
 
 P2 diedZombie17:06:31 after10440 insufficient-input gate failed only after exposure/descent, leaving an openHP20 body;10442 laterHP8 withZombie precedes event. NewemptyHP20 is respawn, old33GRAVEL/FLINTlost. Small10420/10428 receipt/movement tests were real but did not qualify this omitted whole-phase failure branch. This repeats P1portal10364 regression: preserving success primitives/printingterminalstate does not preserve a physical ending. Methods exact static diagnosis and small current-body no-op admission acceptance proposed; no automatic quarry/kit/grave restoration. Independent17:08saved evaluator0/11/171 includesdeath, SAVEFAILED remains explicit. Firstinteraction17:08 unmet, noobjectiveeffect. Earlyindependentclosurecomplete andnowmateriallyupdated; do not hide loss behind historicalmilestones or earlierfullrooms.
+
+### Iteration23 exact failure-path refinement —17:11 UTC
+
+Actual P2source35containsfallback, butadmitsonlyfloorcell(-7,26,-31); failedbodyfloors(-8,24,-31), so noactualretentioncall. Correct methods shorthand “onlylog/rethrow” into reachable-callpath explanation. P1portalbranchwasremoved; P2branchwaspresentbutunreachableforthenewstate. Do notcollapsetheseintooneunsupportedsourceclaim. Static/read-onlyevaluationofadmissiononeachpost-mutationfailurestateisasmallchangedtestbeforelongextension; realendingstillrequiresownerphysicalqualification.
