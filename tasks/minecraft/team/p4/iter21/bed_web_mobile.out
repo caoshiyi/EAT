@@ -1,0 +1,85 @@
+program #9836 on p4: 24.6 s
+--- output ---
+WEB_PLAN {"node":{"x":166,"y":-38,"z":2230},"path":[{"x":166,"y":-37,"z":2231},{"x":166,"y":-38,"z":2230}],"w":{"x":167,"y":-36,"z":2229}}
+ACTUAL_WEB_PRE {"p":{"x":167,"y":-36,"z":2229},"body":{"x":166.49983492422288,"y":-38,"z":2230.418336707544},"rays":[{"origin":{"x":166.49983492422288,"y":-36.38,"z":2230.418336707544},"dir":{"x":0.6171958306938776,"y":0.544639035014997,"z":-0.5678359165393002},"max":1.618045885389765,"hit":null},{"origin":{"x":166.49983492422288,"y":-36.2,"z":2230.418336707544},"dir":{"x":0.6171958306938776,"y":0.544639035014997,"z":-0.5678359165393002},"max":1.5276362417888454,"hit":null}]}
+STRING_ORDINARY {"p":{"x":166.49983492422288,"y":-38,"z":2230.418336707544},"hp":14.166664123535156,"inv":[2]}
+WEB_PLAN {"node":{"x":166,"y":-38,"z":2229},"path":[{"x":166,"y":-38,"z":2229}],"w":{"x":168,"y":-37,"z":2229}}
+ACTUAL_WEB_PRE {"p":{"x":168,"y":-37,"z":2229},"body":{"x":166.4997028636012,"y":-38,"z":2229.603358189462},"rays":[{"origin":{"x":166.4997028636012,"y":-36.38,"z":2229.603358189462},"dir":{"x":0.9968061401907875,"y":-0.06017747946928971,"z":-0.0524994270698982},"max":2.006557138287915,"hit":null},{"origin":{"x":166.4997028636012,"y":-36.2,"z":2229.603358189462},"dir":{"x":0.9968061401907875,"y":-0.06017747946928971,"z":-0.0524994270698982},"max":2.025307766541714,"hit":null}]}
+STRING_ORDINARY {"p":{"x":166.4997028636012,"y":-38,"z":2229.603358189462},"hp":14.166664123535156,"inv":[2]}
+WEB_PLAN {"node":{"x":168,"y":-38,"z":2229},"path":[{"x":167,"y":-38,"z":2229},{"x":168,"y":-38,"z":2229}],"w":{"x":170,"y":-36,"z":2229}}
+ACTUAL_WEB_PRE {"p":{"x":170,"y":-36,"z":2229},"body":{"x":168.3921543322018,"y":-38,"z":2229.506911827352},"rays":[{"origin":{"x":168.3921543322018,"y":-36.38,"z":2229.506911827352},"dir":{"x":0.9228706849459352,"y":0.38510082912755533,"z":-0.0026552349594585736},"max":2.2841762481500707,"hit":null},{"origin":{"x":168.3921543322018,"y":-36.2,"z":2229.506911827352},"dir":{"x":0.9228706849459352,"y":0.38510082912755533,"z":-0.0026552349594585736},"max":2.221049556541441,"hit":null}]}
+STRING_ORDINARY {"p":{"x":168.3921543322018,"y":-38,"z":2229.506911827352},"hp":14.166664123535156,"inv":[3]}
+WEB_PLAN {"node":{"x":169,"y":-38,"z":2232},"path":[{"x":167,"y":-38,"z":2229},{"x":166,"y":-38,"z":2229},{"x":166,"y":-38,"z":2230},{"x":166,"y":-37,"z":2231},{"x":167,"y":-38,"z":2231},{"x":168,"y":-38,"z":2231},{"x":169,"y":-38,"z":2231},{"x":169,"y":-38,"z":2232}],"w":{"x":170,"y":-37,"z":2233}}
+MOBILE_FAIL Error: actualwebviewblocked
+CRAFT_FAIL Error: woolgap
+--- returned ---
+{
+ "issue": "Error: actualwebviewblocked",
+ "craft": false,
+ "p": {
+  "x": 149.54813949864493,
+  "y": -35,
+  "z": 2231.5922887988067
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "elapsed": 24547,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "tuff",
+   "c": 5,
+   "wear": null
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 14
+  },
+  {
+   "n": "oak_planks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "string",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  }
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+p1: 9829 FIXEDroom148,-34,2252 actuallyreached20HP butcurrentmobsgone6m ->ZEROattacks/ammo. ReversebreadcrumbYroundedbeforehalfstairsettled gavefalse149,-34 vsactual-34.5 stop; now149.472,-34.5,2251.677 HP20 nohits. Retirethismob-path method; no moreammochase.
+p1:  ActualloanPick25+TUFF4 received9829 despiteoldcancel/12:41miss; nofloorcuts/use. P1 now normalfixedstairs/portal→Endstaging forONEBEDactualuse; oldbow11:54sourcefailed/no firstflight12:40, BowP4retainedfutureasset. P2 requestreadonly97bridge/78door/clouds
+p1: +bedcandidate by12:49 enablesactualP1reentry/use. P4onebed12:53wholeunchanged, actualDragonprimarynext.
+--- p4 now: (149.5, -35, 2231.6) in overworld, health 14.2/20, food 13/20, alive

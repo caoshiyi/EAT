@@ -1,0 +1,82 @@
+program #9868 on p4: 21.1 s
+--- output ---
+PLACE_PRE {"refp":{"x":168,"y":-36,"z":2231},"f":5,"dest":{"x":169,"y":-36,"z":2231},"ray":{"p":{"x":168,"y":-36,"z":2231},"face":5,"intersect":{"x":169,"y":-35.2497153753143,"z":2231.635786261729},"aim":{"x":168.985,"y":-35.65,"z":2231.65}},"body":{"x":169.14380585993473,"y":-35,"z":2231.4999628493197}}
+PLACE_EFFECT {"kind":"place","p":{"x":169,"y":-36,"z":2231},"n":"stone_bricks","hp":14.166664123535156}
+BRIDGE_USE {"p":{"x":169.59338535500245,"y":-35,"z":2231.4999864861306},"hp":14.166664123535156,"full":true,"ground":true}
+PLACE_PRE {"refp":{"x":169,"y":-36,"z":2231},"f":5,"dest":{"x":170,"y":-36,"z":2231},"ray":{"p":{"x":169,"y":-36,"z":2231},"face":5,"intersect":{"x":170,"y":-35.24942189785433,"z":2231.6382203183734},"aim":{"x":169.985,"y":-35.65,"z":2231.65}},"body":{"x":170.17244194393902,"y":-35,"z":2231.4999948851773}}
+PLACE_EFFECT {"kind":"place","p":{"x":170,"y":-36,"z":2231},"n":"stone_bricks","hp":14.166664123535156}
+BRIDGE_USE {"p":{"x":170.5573093370088,"y":-35,"z":2231.4999491718845},"hp":14.166664123535156,"full":true,"ground":true}
+PLACE_PRE {"refp":{"x":170,"y":-36,"z":2231},"f":5,"dest":{"x":171,"y":-36,"z":2231},"ray":{"p":{"x":170,"y":-36,"z":2231},"face":5,"intersect":{"x":171,"y":-35.23818922480261,"z":2231.634972864219},"aim":{"x":170.985,"y":-35.65,"z":2231.65}},"body":{"x":171.13636592594537,"y":-35,"z":2231.499957570931}}
+PLACE_EFFECT {"kind":"place","p":{"x":171,"y":-36,"z":2231},"n":"cobbled_deepslate","hp":14.166664123535156}
+BRIDGE_USE {"p":{"x":171.5859454210131,"y":-35,"z":2231.499981207742},"hp":14.166664123535156,"full":true,"ground":true}
+CLOSE_CAPTURE_PRE {"p":{"x":172,"y":-35,"z":2230},"body":{"x":171.71348704444384,"y":-35,"z":2230.5050750739483},"rays":[{"origin":{"x":171.71348704444384,"y":-33.38,"z":2230.5050750739483},"dir":{"x":0.5749965704949932,"y":-0.8181497174249891,"z":-0.003159714608418253},"max":1.3685862726307263,"hit":null},{"origin":{"x":171.71348704444384,"y":-33.2,"z":2230.5050750739483},"dir":{"x":0.5749965704949932,"y":-0.8181497174249891,"z":-0.003159714608418253},"max":1.5194171203567712,"hit":null}]}
+ACTUAL_INCREMENT 1
+--- returned ---
+{
+ "issue": null,
+ "increment": 1,
+ "p": {
+  "x": 150.5,
+  "y": -36,
+  "z": 2231.5002418000777
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "white_wool",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 26
+  },
+  {
+   "n": "oak_planks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "string",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 5,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 3,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: Independent9860 actual3capsTUFF167,-38/-37 +STONE168,-36 placed/full, PHYSICAL168feet-35/HP14.166, thenWEB_PLANnull/no newcuts/STRING2/full149return. Raisedbodycapability VERIFIED, NOTsource6. New9850below-floor coordinatescorrect earlierUPPERdrop explanat
+p2: ion: carrier-cutproposalwasCONDITIONAL/currentdrop, notapplicabletoactualbelowfloor/expireditems. No falsecause/inaccessibilityclaim fromplannerNULL; actual169foot/head/normalvisibleheadcutone-step ischangedtest. Iwillreviewactualresult, no additionalquota
+p2: .
+--- p4 now: (150.5, -36, 2231.5) in overworld, health 14.2/20, food 6/20, alive

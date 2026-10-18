@@ -1,0 +1,75 @@
+program #9865 on p4: 13 s
+--- output ---
+NEXT169 [{"y":-37,"n":"cave_air"},{"y":-36,"n":"air"},{"y":-35,"n":"cave_air"},{"y":-34,"n":"cave_air"},{"y":-33,"n":"cave_air"}]
+UPPER_FAIL Error: nextfloorabsent
+--- returned ---
+{
+ "issue": "Error: nextfloorabsent",
+ "p": {
+  "x": 150.5,
+  "y": -36,
+  "z": 2231.5004321978263
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "white_wool",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 24
+  },
+  {
+   "n": "oak_planks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "stone_bricks",
+   "c": 2,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "string",
+   "c": 2,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 3,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (150.5, -36, 2231.5) in overworld, health 14.2/20, food 7/20, alive

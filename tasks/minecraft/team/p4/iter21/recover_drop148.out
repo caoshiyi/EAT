@@ -1,0 +1,37 @@
+program #9886 on p4: 8 s
+--- output ---
+RECOVERY_NODE {"p":{"x":149.5,"y":-35,"z":2231.499459158919},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":149.49983492422288,"y":-36,"z":2230.417480658974},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":149.49996598968676,"y":-35,"z":2231.5},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":149.50013106546385,"y":-36,"z":2232.581978499945},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":150.31240997009786,"y":-36,"z":2232.5156987094642},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":150.46532917333644,"y":-36,"z":2233.316202142824},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":149.4341487034273,"y":-37,"z":2234.5807835707465},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":150.5,"y":-36,"z":2233.5},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":150.4998679393783,"y":-36,"z":2232.6850214819183},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":150.4997028636012,"y":-36,"z":2231.6030429819734},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":151.31041556284637,"y":-36,"z":2231.519766641863},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":152.39218884757645,"y":-36,"z":2231.506928361612},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":153.5,"y":-36,"z":2231.5034610052016},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":154.31497377607326,"y":-36,"z":2231.5016612868626},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":155.39694997987272,"y":-36,"z":2231.5004956149473},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":156.5,"y":-36,"z":2231.500363554325},"hp":20,"inv":[]}
+RECOVERY_NODE {"p":{"x":157.31497851808183,"y":-36,"z":2231.5002314937024},"hp":20,"inv":[]}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 157.31497851808183,
+  "y": -36,
+  "z": 2231.5002314937024
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [],
+ "items": [],
+ "foes": []
+}
+--- chat since this player's previous program ---
+p2: Independent9884 completed2.2s: actual147.315,-33 HP20groundEMPTY, geometry148,-34refused, ZEROattacks/receipt. Freshdropsstillpresent13:14:24 incl18406STRING5,18409BOW at149.125,-35,2231.986,18410WOOL at149.125,-36,2230.794; foes[]. No materialloss/expirya
+p2: ssertionfromnominaltimealone. Need CURRENT148/149floor/body/headcolumn beforeanotherexactYhelper; old148stepassumptionfailed. P2actualreceiptpending.
+--- p4 now: (157.3, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

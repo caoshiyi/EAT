@@ -1,0 +1,78 @@
+program #9803 on p4: 13.4 s
+--- output ---
+WEB_PRE {"p":{"x":168,"y":-38,"z":2231},"rays":[{"origin":{"x":166.5799720289767,"y":-35.38,"z":2231.4997706586228},"dir":{"x":0.6710738371334443,"y":-0.7413905009317072,"z":-0.00017390580122896227},"max":2.860228568158376,"hit":null},{"origin":{"x":166.5799720289767,"y":-35.2,"z":2231.4997706586228},"dir":{"x":0.6710738371334443,"y":-0.7413905009317072,"z":-0.00017390580122896227},"max":2.996082018588495,"hit":null}]}
+WEB_AIR {"x":168,"y":-38,"z":2231}
+WEB_PRE {"p":{"x":168,"y":-36,"z":2231},"rays":[{"origin":{"x":166.5799720289767,"y":-35.38,"z":2231.4997706586228},"dir":{"x":0.9980266949163233,"y":-0.06279051952930947,"z":-0.0002586341806569387},"max":1.9237742752488725,"hit":null},{"origin":{"x":166.5799720289767,"y":-35.2,"z":2231.4997706586228},"dir":{"x":0.9980266949163233,"y":-0.06279051952930947,"z":-0.0002586341806569387},"max":1.9433238181294756,"hit":null}]}
+WEB_AIR {"x":168,"y":-36,"z":2231}
+STRING_RECEIPT [{"n":"stick","c":3,"wear":null},{"n":"wooden_sword","c":1,"wear":6},{"n":"wooden_pickaxe","c":1,"wear":25},{"n":"stone_bricks","c":3,"wear":null},{"n":"mossy_stone_bricks","c":3,"wear":null},{"n":"cracked_stone_bricks","c":1,"wear":null},{"n":"tuff","c":9,"wear":null},{"n":"cobbled_deepslate","c":6,"wear":null},{"n":"book","c":6,"wear":null},{"n":"string","c":3,"wear":null}]
+CRAFT_FAIL Error: tablenotvisible
+--- returned ---
+{
+ "issue": null,
+ "crafted": false,
+ "p": {
+  "x": 150.5,
+  "y": -36,
+  "z": 2231.500405464809
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "inv": [
+  {
+   "n": "stick",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 6
+  },
+  {
+   "n": "wooden_pickaxe",
+   "c": 1,
+   "wear": 25
+  },
+  {
+   "n": "stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 9,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "string",
+   "c": 3,
+   "wear": null
+  }
+ ],
+ "foes": []
+}
+--- chat since this player's previous program ---
+p1: MINUTE40 ACK12:30: actual9796 fresh20HP1934 killed NORMAL_WOOD_SWORD6hits(20->19->15->9->5->1->DEAD), Swordwear0->6; actualsamecaller FULLquarryending135.668,-38,2233.503 HP20food20, nofoeswithin8. Swordrecoveredbeforeactualuse; dropsnoammoobserved. Thispr
+p1: ovesnativeSwordkill+retainedending, NOTdragonmechanism. Keepretiredcentral/pearl; oldsource11:54 clockcontinues original12:14MISSED. P4now165 actualWEB3 immediatefieldtest beforemoreprep; P1 normalSwordammo hunt next5min thenfirstrealflight+Endshot tentati
+p1: ve12:40(overrun46min, NOTnewwholeclock). No ammo by12:38 -> change acquisition assumption. P2 actualeffectwatch only, no resupply.
+--- p4 now: (150.5, -36, 2231.5) in overworld, health 14.2/20, food 16/20, alive

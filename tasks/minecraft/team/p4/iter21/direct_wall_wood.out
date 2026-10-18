@@ -1,0 +1,30 @@
+program #9903 on p4: 3.9 s
+--- output ---
+WOOD_STOP Error: notactualvisible (165, -36, 2230)
+--- returned ---
+{
+ "issue": "Error: notactualvisible (165, -36, 2230)",
+ "p": {
+  "x": 157.6850218320776,
+  "y": -36,
+  "z": 2231.500207019982
+ },
+ "hp": 14.971503257751465,
+ "ground": true,
+ "inv": []
+}
+--- chat since this player's previous program ---
+p2: ReadP4changed23:26 proposal. Exact14PLANK isfinitekit+bed recipe(4TABLE+2Sword+3Pick+2→4Stick+3Bed); not14logs. Butwhole12:43overruncontinues, requireP1actualuse/fieldbudget beforeanotherprepchain. NewSEALEDworkcellmodifiesOWLsharedroute/assets: coordinate
+p2: cell/door withP1 BEFOREblockingpublictunnel/table/spawn/portalpath. Silverfishdeathisobserved, specificarrivalcauseunproved. P2willverifyordinarykit/cellactualuse+Bedreceipt/effect only, no successfromsourceplan.
+p2: CRITICAL9894 SOURCEBUG: woodplanner clear(o,a) checksALLsolidshapes untilwoodCENTER, so targetOAKitselfblocksray=>false evenwhenFIRSTvisibleblockisthatwood. Webversionworkedbecauseemptyshapes. Correctmodelpredicateaccept FIRSTshapehit ONLYif b.position.equ
+p2: als(a.floored()), rejectearlierotherblock; doNOTignoreoccluders. Thenactualvisible()/actualRayguard beforedigunchanged. 9894WOOD_PLANnull isthispredicatefailure, NOTinaccessiblewoodproof; actualcuts0/full157HP20EMPTY. P2runningtinyreadonlyfloorcase tovalid
+p2: ate distinction.
+p2: Smallreadonly9897/9898 confirms9894guarddistinction atactualP2floor: target33,49,3 FIRSTvisibleEND =>oldclearFALSE/newfirstTargetTRUE both1.62/1.8. Negative mathaim33,48,3 UNDERfloor =>FIRST33,49,3 sofirstTargetFALSE both. NOinteraction/movement/skipblock.
+p2:  Fixonlyplannercollisionreturn to b.position.equals(a.floored()) onFIRSTsolidcontact (thenreturnfalse ifnocontact). Keepactualnormalvisible()+actualRay BOTH/reachbeforeANYdig. Thisrepairsdeterministicself-targetrejection, notproveswoodroute/receipt.
+p2: 13:28:17 CURRENTstatus P4at159.1,-36,2231.6 HP15 food17 EMPTY, differslastcompleted9894HP20/157.603. LikelynewACTIVEcaller notyetrecorded; causeUNOBSERVED. Inspectpostcondition/actualcurrentthreat beforeanyretry, doNOTannouncewood/kitfromplan. P2WOODpredic
+p2: atefixisONLYforSOLIDwoodfirsttarget; keepempty-collisionWEBclear-line predicate separate (nocontact isexpectedforweb). Actualsourcefixadoption/resultpending.
+p1: Primaryremaining-use change: BED0/BOW0 afterloss; no newP1materials/portalwatch. Phase1haspersistedwhileplayersunderground; hypothesisDragonstrafe cannotfinishwithoutvisiblecurrenttarget. P2request ONEbounded<=5sexposure atexistingbridge85,Y50 thenIMMEDIAT
+p1: Ecovered75return (nohitsrequired), inspectactualfireball/phase0 transition, whole<=3min/nativeHPretention. Not57window/rootreach replay. P1 goesexistingfountainCOLUMN0,Y63 to ACTIVEvisiblemoving/perch-only Swordtest; no phase1stationary62/56wait, max3quali
+p1: fiedactualroot3hits ifopportunity, actualnative50return. This materiallychangesAIvisibility/timing assumption, not newstock. Ifperch/phasechangeabsent orunsafe STOP/retire, no globalimpossibilityclaim. P4finishonlyexistingboundedkit/Bed ifactualsourceworks
+p1: ; neverconsume sharedspawnBed.
+--- p4 now: (157.7, -36, 2231.5) in overworld, health 15/20, food 17/20, alive

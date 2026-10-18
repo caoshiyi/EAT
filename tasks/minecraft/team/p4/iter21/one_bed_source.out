@@ -1,0 +1,75 @@
+program #9833 on p4: 42.7 s
+--- output ---
+WEB_PRE {"p":{"x":169,"y":-36,"z":2231},"rays":[{"origin":{"x":167.58197716832044,"y":-36.38,"z":2231.4999600484443},"dir":{"x":0.9092360785165611,"y":0.4162807922603769,"z":-0.00023562448718926807},"max":2.1102633921954452,"hit":null},{"origin":{"x":167.58197716832044,"y":-36.2,"z":2231.4999600484443},"dir":{"x":0.9092360785165611,"y":0.4162807922603769,"z":-0.00023562448718926807},"max":2.041766780129461,"hit":null}]}
+WEB_AIR {"x":169,"y":-36,"z":2231}
+BED_CRAFT_FAIL Error: woolinputgap
+--- returned ---
+{
+ "issue": null,
+ "craft": false,
+ "p": {
+  "x": 149.54813949864493,
+  "y": -35,
+  "z": 2231.5922887988067
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "elapsed": 42714,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "tuff",
+   "c": 5,
+   "wear": null
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 8
+  },
+  {
+   "n": "oak_planks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "string",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  }
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+p2: CORRECTION crossed9827watch: NEW P1adoption9826 nowONEBED12:43-12:53, P4source/transport/use, P2 readonlyplacement/activation+escape/timing by12:49. PriorUNADOPTEDlabel stalebeforechatread, NOTcurrentdecision. ACK acceptedfinitecheck, no worldedits/exposur
+p2: e, candidatewillrequireactualview/reach+samecallerretreat. Existing3..6stairs/bedrock/currentblocks first; no sharedspawnbed use.
+--- p4 now: (149.5, -35, 2231.6) in overworld, health 14.2/20, food 14/20, alive

@@ -1,0 +1,117 @@
+program #9884 on p4: 2.2 s
+--- output ---
+START {"p":{"x":141.5,"y":-36,"z":2231.5},"hp":20,"foes":[]}
+RESCUE_FAIL Error: geometry 148,-34,2231
+--- returned ---
+{
+ "issue": "Error: geometry 148,-34,2231",
+ "hits": 0,
+ "p": {
+  "x": 147.3149781679224,
+  "y": -33,
+  "z": 2231.499677566871
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [],
+ "items": [
+  {
+   "id": 18402,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2230.125
+   },
+   "n": "wooden_sword",
+   "c": 1
+  },
+  {
+   "id": 18403,
+   "p": {
+    "x": 149.125,
+    "y": -37,
+    "z": 2234.875
+   },
+   "n": "oak_planks",
+   "c": 3
+  },
+  {
+   "id": 18404,
+   "p": {
+    "x": 149.875,
+    "y": -36,
+    "z": 2230.125
+   },
+   "n": "mossy_stone_bricks",
+   "c": 3
+  },
+  {
+   "id": 18405,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2230.77401324693
+   },
+   "n": "cracked_stone_bricks",
+   "c": 1
+  },
+  {
+   "id": 18406,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2232.3924698841292
+   },
+   "n": "string",
+   "c": 5
+  },
+  {
+   "id": 18407,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2230.8505562449704
+   },
+   "n": "book",
+   "c": 21
+  },
+  {
+   "id": 18408,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2230.125
+   },
+   "n": "tuff",
+   "c": 3
+  },
+  {
+   "id": 18409,
+   "p": {
+    "x": 149.125,
+    "y": -35,
+    "z": 2231.985799762232
+   },
+   "n": "bow",
+   "c": 1
+  },
+  {
+   "id": 18410,
+   "p": {
+    "x": 149.125,
+    "y": -36,
+    "z": 2230.7938469622563
+   },
+   "n": "white_wool",
+   "c": 1
+  }
+ ],
+ "foes": []
+}
+--- chat since this player's previous program ---
+p2: Fresh9881 confirms deathSTRING5 entity18406 at149.125,-36,2232.392, stillpresent13:12:12; death13:09:30=>nominal5min13:14:30, notguarantee. Table149upperidlewasNOTprotection: deathat149.3,-36,2230.3. Sourcebelowdrops18193 at172.875,-38,2224.885 and18213 at
+p2: 169.21,-40,2225.875 aredifferentitems. P4ownsrecoverydecision; preserveactualidentity/count andthreatcheckbeforemoving. P2remainEndobserver, nooverlap.
+p1: P4 URGENT corpseString5@149.125,-36,2232.392 actual9881, nominalexpiry13:14:30 (<1min). ExecuteboundedactualEastknownroute recoveryNOW ifcurrentthreatpermits; SwordfirstthenactualSilverfish2hits/remainingkit+quietnative150 samecaller. No newwebplanner unti
+p1: lactualrecover/postcondition. NeedWool1/String5/Bowretainedortruthfulloss; no morewood. P1 coveredEnd75HP20readyreceiver, nativeportalrelaytestcannotstartBed0. P2 centre-refinement4.35,59,2.35 normalAPIcenter actualBedRealrayqualification adopted; no offce
+p1: nterAPIassumption/no rawworkaround.
+--- p4 now: (147.3, -33, 2231.5) in overworld, health 20/20, food 20/20, alive

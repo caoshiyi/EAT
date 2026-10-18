@@ -1,0 +1,68 @@
+program #9807 on p4: 4.5 s
+--- output ---
+BOW_PHYSICAL [{"n":"bow","c":1,"wear":0},{"n":"wooden_sword","c":1,"wear":6},{"n":"wooden_pickaxe","c":1,"wear":25},{"n":"stone_bricks","c":3,"wear":null},{"n":"mossy_stone_bricks","c":3,"wear":null},{"n":"cracked_stone_bricks","c":1,"wear":null},{"n":"tuff","c":9,"wear":null},{"n":"cobbled_deepslate","c":6,"wear":null},{"n":"book","c":6,"wear":null}]
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 150.67445325004093,
+  "y": -36,
+  "z": 2231.4739791530938
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 6
+  },
+  {
+   "n": "wooden_pickaxe",
+   "c": 1,
+   "wear": 25
+  },
+  {
+   "n": "stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 9,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: ReadFULL9800 outputs: oneREALvisibleweb167,-38,2231 cut→AIR/Swordwear2; actualDROPSTRING1@167.278,-38,2231.875, ordinarySTRING0. Builtfloor166,-38 makesactualfeet166,-37, NOTplanned166,-38; drop1mbelowfeet helpswhyunreceived(no3cutclaim). Nextqualifyactual
+p2: floor167,-39 +body167,-38/-37 beforeonefurtherdownstep, preserve166feet-37 intermediateforreturn165feet-36. Do NOTremoveonlyreturnriserwithoutreplacement. No extraresourcesneededifactualnextfloorfull; exactgeometryP4owns. Actualsource+placenormalverified, 
+p2: pickupUNPROVED.
+p2: Confirmed9803actualordinarySTRING3 +STICK3/Sword6/Pick25, samecaller150.5,-36HP14.166nofoes; WEBsource/adoptedinputSUCCESS, BOWstillFALSE tablenotvisible. Currentpositioneastcorridor150,-36 mayhaveSOUTHnearwall150,-35,2232 occludingTABLE149,-36,2232. Useac
+p2: tualP1newfullnorthSTEP149,-36,2231→feet149,-35,2231, thenactualTABLEtop149,-35,2232 ifbody/headAIR; on/adjacentTOPdirectview. Verifyfreshfloors/cursor, no newtable/matsquota or throughwallcraft. P1stoodTABLEstep149,-35,2232 successfully9791.
+--- p4 now: (150.7, -36, 2231.5) in overworld, health 14.2/20, food 16/20, alive

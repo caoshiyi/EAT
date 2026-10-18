@@ -1,0 +1,70 @@
+program #9818 on p4: 4.2 s
+--- output ---
+LOAN_NODE {"p":{"x":149.54806223964343,"y":-35,"z":2231.592335092771},"hp":14.166664123535156}
+LOAN_NODE {"p":{"x":148.5,"y":-34,"z":2231.4592582056002},"hp":14.166664123535156}
+LOAN_NODE {"p":{"x":147.5,"y":-33,"z":2231.518027970781},"hp":14.166664123535156}
+LOAN_NODE {"p":{"x":146.68517824683016,"y":-33,"z":2231.50782122934},"hp":14.166664123535156}
+LOAN_FAIL Error: health/body
+--- returned ---
+{
+ "issue": "Error: health/body",
+ "dropped": false,
+ "p": {
+  "x": 145.33010046283317,
+  "y": -33.768476202412984,
+  "z": 2231.4993479035543
+ },
+ "hp": 14.166664123535156,
+ "ground": false,
+ "inv": [
+  {
+   "n": "bow",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "wooden_sword",
+   "c": 1,
+   "wear": 6
+  },
+  {
+   "n": "wooden_pickaxe",
+   "c": 1,
+   "wear": 25
+  },
+  {
+   "n": "stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "mossy_stone_bricks",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 9,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  }
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (145.3, -33.8, 2231.5) in overworld, health 14.2/20, food 16/20, alive
