@@ -23,3 +23,10 @@ time_utc	env	program	result	detail
 22:19:29-22:19:31	LIVE	11210	PASS_SEPARATE_RETENTION	actualP4jumpthirdwall/roofadoption, THREE10FULL20HP(-2.526,63,70.458), notretroactive11203ending
 22:21:58-22:22:36	LIVE	11220	PASS_LIVE_NETHER_ACCESS	actual8,65,83 arrival, UP3, x8 BASALTcorridor5cells, existingportal, own1,65,4 intakeEcut/recap/THREE10FULL20HP
 22:22:58	LIVE	11224	RELEASE	P2 releases G26-1 SB forcoordinatedG26-2, no active/dependency; allresults captured; freezelivecopy
+22:25:21-22:25:59	SB_G26-2	76	PASS	upperSdoor/restoredstation, bridge0,67,6->57, -19,65,48/THREE10FULL20HP, DIR T4caps
+22:26:36-22:27:18	LIVE	11241	PASS	singlefundedSTONEshovel, SNOW_BLOCKroofactualSNOWBALL4/roofDIRTrestore; upperrouteadopted-19,65,48/THREE10FULL20HP
+22:27:28-22:27:40	SB_G26-2	79	FAILED_ROUTE_ENDING	nativeWESTgoalstalledonecellledge-31,65,48; actual20HP, no shelteranchor; notLIVEadopted
+22:28:03	SB_G26-2	82	PASS_MODEL	localfloor/model+smallpathstructuredfields; no circularJSON; oldnorthstairs flooragrees
+22:29:43-22:29:47	SB_G26-2	87	GUARD_REFUSAL_RETAINED	wrong hand-centerednegativecell -29.5 wascell-30; nextstepdiagonal guardrefused; separateTHREE10FULL20HPin-30cell
+22:30:44-22:30:52	SB_G26-2	89	PARTIAL_FAILED_MOVE_ENDING	correctcenter-29+.5, firstDOWN1actual64; secondDOWN1blockedbyDIRT65overhangfromownpriorrefuge; no damage, endingnoanchor
+22:32	SB_G26-2	literal_west_swept	RUNNING	changed sweptheadroomclear(q+2) for DOWN1; ordinaryvisiblecut, currentactualsupporteddatedcardinalstairs

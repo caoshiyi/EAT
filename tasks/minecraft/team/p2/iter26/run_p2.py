@@ -2,7 +2,7 @@
 """Serialize all p2 programs across LIVE/SB and retain exact arena output.
 Only invokes the ordinary arena CLI, never server files or identity overrides.
 """
-import argparse, fcntl, json, os, pathlib, subprocess, sys
+import argparse, datetime, fcntl, json, os, pathlib, re, subprocess, sys
 p=argparse.ArgumentParser(); p.add_argument('--sandbox',action='store_true');p.add_argument('--timeout',type=int,default=60);p.add_argument('--out',required=True);p.add_argument('--say');p.add_argument('file',nargs='?');a=p.parse_args()
 root=pathlib.Path(os.environ['EAT_ROOT']).resolve()
 if pathlib.Path.cwd().resolve()!=root: raise SystemExit('must cd $EAT_ROOT')
@@ -19,6 +19,7 @@ with lockpath.open('w') as lock:
     lines=r.stdout.splitlines()
     for line in lines:
         if line.startswith(('program #','[sandbox] program #')) or 'FAILURE' in line or 'FAILED' in line or line.startswith(('CRAFT ','GALLERY_RECEIPT','TRAVEL_END','TRANSITION','PORTAL_NEAR')):print(line)
+    state=None
     try:
         returned=r.stdout.split('--- returned ---\n',1)[1].split('\n--- ',1)[0]
         state=json.loads(returned);print('RETURNED',json.dumps(state,separators=(',',':')))
@@ -26,5 +27,14 @@ with lockpath.open('w') as lock:
     print('ending_audits',sum(line.startswith('ENDING ') for line in lines))
     own_output=r.stdout.split('--- chat since',1)[0]
     failed=any('FAILURE' in line or 'FAILED' in line for line in own_output.splitlines())
+    header=next((x for x in lines if re.match(r'(?:\[sandbox\] )?program #\d+ on p2:',x)),None)
+    match=re.search(r'program #(\d+)',header or '')
+    endings=[]
+    for line in lines:
+        if line.startswith('ENDING '):
+            try: endings.append(json.loads(line.split(' ',1)[1]))
+            except ValueError: pass
+    receipt={'player':'p2','environment':'SANDBOX' if a.sandbox else 'LIVE','program_id':int(match.group(1)) if match else None,'header':header,'source_file':a.file,'raw_output':a.out,'cli_exit':r.returncode,'caller_failure_marker':failed,'returned':state,'ending_audits':len(endings),'last_ending':endings[-1] if endings else None,'native_pauses':sum(x.startswith('LOW_NATIVE_ATTEMPT_PAUSED ') for x in lines),'captured_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+    pathlib.Path(a.out+'.receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print('caller_failure_marker',failed,'(a retained recovery does not erase a failed forward operation)')
     sys.exit(r.returncode or (3 if failed else 0))
