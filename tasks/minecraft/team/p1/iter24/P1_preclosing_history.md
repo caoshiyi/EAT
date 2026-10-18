@@ -1,0 +1,57 @@
+
+## 20:01 material override — healthy retained carrier; bounded frame approach active
+10819 secondordinarySALMON1 at19:59:47.671/RODwear2, THREE10FULL19:59:50.077. 10820 actualCHEST1 fuel+SALMON1 input ->COOKED_SALMON1/take/consume; HEALTH_AFTER20:00:30.903 HP15.266668food20, THREE10FULL. 10825 laterHP17.266668/food17. 10826 actualnormalUP4 withfreshroofcuts/ordinaryjump-pillars returned165.500264,-36,2257.332291; THREE10FULL+terminal20:00:59.528, all7FALSE/goalNULL, HP17.266668/food17, picks16+81/sword6/rod2, nofish/OAK/CHESTremaining. Bothfuelcandidatesactuallyadopted, rodfoodhealth real, noEndeffect.
+P4 requestednamedlead supplied20:00:01 frompre17iter14 actual7290/7293: FRAMEcenter134,-36,2276, oldframesY-38; P2 independentlyqualifiedphysicallead132,-36,2276/framex133..135/z2275..2277. Leadsnotcurrentaccess. Currentactive resume_frame_approach.js nativefullfloor/nonfallingallowedbody/canopyDijkstra to134,-36,2276, actualordinarycuts/stepsonly, self90s thenending beforeexternal115s. NoautomaticEndentry; aftertimeout inspectactualstate. Original105active continuation~20:04.
+
+
+## 19:59 material result — preparation adopted as real health recovery
+Correction actual supported3down caller10809 (not10810). 10812 ordinaryfirstcast19:57:35.570 ->ordinaryCOD1 at19:58:30.305, RODwear0->1; THREE10FULL+terminal19:58:32.707. 10815 normalvisibleFURNACE165,-39,2258 open, actualfuelOAK1/inputCOD1, actualCOOKED_CODoutput +take/consume19:58:55.479. Immediate consume snapshot stillfood16/HP3 (event update lag), delayedHEALTH_AFTER19:59:05.310 provesfood20/HP6.666666. Later10818 SAY endingHP8.7food17. This is actual catch/cook/use and health recovery, NOTEnd/dragon effect. Active10819 secondcast sameboundedmethod; no overlap andinspectoutputbeforeclaims. Originalfood18:32/18:45/19:30 deadlines remainMISSED. Namedroutelead assistance requestedP2/P4 fordirectEnd frompool usingonlypermittedrecords; no indefinite quota.
+
+# RESUME OVERRIDE — 19:58 UTC iteration24
+
+Objective UNMET. Read full program.md/P1/P2/P4/ITER23_REVIEW/ITER24_PLAN on resumed turn. Original interruption at19:35 interrupted10795 (to_fishing_room.js), whose local output is EMPTY and which is absent from completed arena records. Actual10800 at19:56:13 found OW165.500264,-36,2257.332291 HP3food16, RODwear0, picks6/81, no fish. NORTH2AIR means8/10, superseding all oldfullendpoint headers. Separate10803 repaired2caps withnormalvisibleplacement, three10FULL+terminal19:56:23/all7FALSE/goalNULL.
+
+Initial wallclock-only closing interpretation was WRONG: P2 found explicit operator-interruption checkpoint19:35 and restart19:55. Remaining~9active min through~20:04, no reset of missed cumulative food/End budgets. 10807 testedONEsupporteddown thenfullending;10810 actualthreefurthercontrolleddowns =>165.500264,-40,2257.332291 HP3food16/three10FULL19:57:19. Current WATER166/167,-41,2257 and FURNACE165,-39,2258 observed. Active10812 resume_fish_first.js opensnormalvisibleE2BASALT/clearwateraim andONEordinarycast, bounded75s +ending. DO NOT overlap p1 programs or infer catch from active rod. Checkactualoutput/currentgeometry aftertimeout. Whole concreteoutcome remainsactualcatch/cook/consume/retainedhealth enablingEnd; no extra supplies requested.
+
+Opening resumed eval19:55 and intermediate19:56 both0/11/177 SAVEFAILED,last-saved-world. Provisionala1a4846a existed19:00 beforeminute90. Continue usefulworkthrough~20:04 active105 andappendactualclosure.
+
+--- Historical checkpoints below are superseded by newer observed state ---
+
+# Material override —provisional handoff19:00 UTC
+
+`p1/iter24/PROVISIONAL_HANDOFF.md` COMPLETE beforeminute90; continueusefulworkthrough19:44/min105. Latest10743 completed18:57:35 unchangedfull141.32,-38,2233.53; same-final-flatplanner RETIREDafter2failures. NEWactive `to_web_bridgehead.js` seeksactual166,-38,2228 plusfresh3Dgapscan andfullending; status_provisional.txt capturescurrentbody/program. DoNOTcontinueoldfinalplanner or infercurrentretentionfromactivebody. Evaluator eval_mid.txt savefailed/lastsaved. Appendactualmaterialchangesafternewcaller.
+
+# P1 iteration24 LIVE checkpoint —18:58 UTC
+
+Objective UNMET. Opening17:59 savedscore dragon0/11/deaths172 SAVEFAILED/last-saved-world. Team deaths later177 savedperP2, notownfreshreading. No End entry/crystal/dragon interaction this iteration. Food18:32 and18:45, End18:45 andinteraction18:50 MISSED; no clockreset. Provisionaldue19:29; continue19:44 (105min), appendchanges.
+
+## Latest checked world / active work
+Completed10741 18:56:31 THREE10FULL at OW(141.320803,-38,2233.529906),HP3food16, grounded/all7explicitcontrolflagsFALSE/goalnull. STONEpickwear2, STONEswordwear0, WOODpickwear58; STICK5/COBBLED2/BASALT7/GRAVEL2/MOSSY3/CRACKED4/NR1/BOOK18/TORCH2/SAPLING1. NoSTRING/ROD/food. CurrentfullroomfloorGRAVEL-39, roofBOOKSHELF-36, EfootGRAVEL/EheadSTONE, otherfacesnative/ordinarycaps. Sourcecoordinates areleads, reobservebeforemutation.
+
+SUPERSEDED failed `to_web_gravel_field.js` external175s/self130s attempts nativeY-38 path to166,-38,2223, thenONEactuallegalSTONE_SWORDweb166,-38,2224 thenfullending. Runtime status capture:
+```
+p1: (141.3, -38, 2233.5) in overworld, health 3/20, food 16/20, alive; controlled by frontier_operator (iteration 24)
+    held: mossy_stone_bricks x3; inventory: basalt x7, book x18, cobbled_deepslate x2, cracked_stone_bricks x4, gravel x2, mossy_stone_bricks x3, netherrack x1, spruce_sapling x1, stick x5, stone_pickaxe x1, stone_sword x1, torch x2, wooden_pickaxe x1
+p2: (1.3, 57, -29.5) in overworld, health 20/20, food 20/20, alive; controlled by mission_integrator (iteration 24)
+    held: dirt x1; inventory: dirt x1
+p3: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive; controlled by capability_producer (iteration 24)
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by experimental_partner (iteration 24)
+    held: nothing; inventory: empty
+```
+After ANYtimeout/failure inspect actualbody/inventory/controls/geometry BEFORE retry; no inheritedroute continuation. Never overlap p1 run/SAY. `say_idle.py` explicitlychecks live status beforeSAY; do notcombine summarize+send, readcompletedoutput first.
+
+## Concrete completion chain / current tools
+LOW404 physicallytraversed +actualdestinationportal/fullintake107? exact10622 at18:17:18. Library negativechest149,-29,2241 actual10650 papers/books/map/template/enchantedbook/nofood. Nativecolumn150,2242 descent10664 actualfullY-36. Smallwood/sourcecollection realOAK3; nativeinputsreservedaftermaterialbugfixed. ActualTABLE140,-36,2232 and166,-34,2234; old149tableABSENT.10716 actualSTONEpickcraft;10724 actualSTONEsword +STICK5;10731/41 pickactualusedwear2. P3 recipeAPI adoptedrealcraft; ROD/food stillpending.
+
+10728 MODEL ONLY webstance166,-38,2223 hasfloorfull-39/canopy4, modeledclearbothrays to166,-38,2224 and169,-38,2222. Actualarrival/visibility/normalcut/ordinarySTRINGreceipt mandatory; goaloneweb first beforeextending. IfSTRING2, actualTABLE166,-34,2234 rodrecipe3STICK+2STRING withactualvisibleTABLE; do notcraftthroughwalls. ActualFURNACE165,-39,2258 present/unlit andWATER166/167,-41,2257 present; fishingstance165,-40,2257 isdatedlead. Poolaccess/catch/fuel/cook/use/retention unfinished. WOODpick58 or2sparesticks potentialfuel UNTESTED, no fuel availability claim. Food enables health3 recovery and End attempt. No externalfood/ammo/courier expected; P2/P3 operationsretired afterdeaths.
+
+## Critical reusable methods / failures
+Use `core_v2.js` (callerWORK_MS/EXPECTED_DIM), explicitlyordinarybrick-first/cobbled-last priority, normaldig(false,raycast), realvisiblecursor<=4.5 bothactual/modeldistance, stableAIR+newdrop ORordinaryreceipt. Drop isNOTcarriedinput; checkAFTERending. Oldcore.js/core_dimension.js areHISTORICAL and containinventoryorderselector, do notcomposefromthem.
+TABLEplacement10716 twicefailed; craft10719 timeout20s withunchangedinputs. Fresh10722 foundwindow6OPEN, normalclosedwindow+SNEAK3ticks+actualTABLEtop cap ->THREE10FULL. Jointchange, nosinglecauseproof.10724 TABLE-contextcraft andclose/windowsettle eachrecipe succeeded. Interactable-anchor put() nowadoptsclosewindow+SNEAK3ticks.
+controls{} spread isnon-enumerable and NEVERprovedidle. P2actual10729 foundSneaktrue/eye1.27 with{}; futurestate usesgetControlState all7flags. No actualactivecontrols inferredfromoldemptyobjects; clearControlStates callsremainactual.
+GRAVELfloor10738 handnormaldig ordinaryGRAVEL1/stableAIR/down1, flatplannerfailed becauseexcludedgravel.10741 ONEEheadSTONE/footGRAVEL/fullnonfallingBOOKSHELFroof actualcut+step/fullending. ExtendGRAVELbodyonlywhenaboveheadroofFULLnonfalling, avoidinfestedblocks/unknowns. Currentlongfield logsrejectfrontier ifno route; aftertwocomparablefailures changegeometry/method.
+Wood10684 sourceAIR/noordinaryreceipt, fallback9/10 (nativebrickomission), separate10686 repaired. Freshdrop8035 BELOW at148.125,-36,2237.125 invalidatedabove-drop premise; lowercollection10693 OAK1->2/fullending.10705 newdirect148angle cut2wood/only1held ->OAK3/fullending.10702 mined2cobbled butpillarspent1;10710 correctedexplicitpriority preserved3AFTERending. No quota/partialclaim laundering.
+
+## Records / permissions
+Own journal `p1/iter24/JOURNAL.md`, allnamedJS/outputcaptures, LESSONS.md; completedreports areevidence, worldevalscoreauthoritative. Usefulcheckpoints fbf44739/17280a12/a1012e90; next ownedcommitaftercurrentcheckpoint. Readprogram.md FULL/P1/P2/P4/ITER23_REVIEW/ITER24_PLAN. Onlyp1controlled; no agentspawn/otherplayerprogram/server/.work/tools changes/internet/clientmappings/bytecode/rawpackets/syntheticparts/throughblocks/reachbypass/excluded17-19 reuse/push. Historicalcoords extractedonlypermittedpre17 sourcearrays; no oldcodeexecuted.
