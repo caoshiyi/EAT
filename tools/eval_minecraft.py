@@ -86,6 +86,8 @@ def milestones(record: bool = False) -> tuple[list[dict], dict]:
     for f in sorted((WORLD / "stats").glob("*.json")):
         uuid = f.stem
         player = who.get(uuid, uuid)
+        if player == "cam":     # the live cam (tools/mc_cam.py), a spectator: not a player of the task
+            continue
         stats = read_json(f).get("stats", {})
         adv = read_json(WORLD / "advancements" / f.name)
         deaths[player] = stats.get("minecraft:custom", {}).get("minecraft:deaths", 0)

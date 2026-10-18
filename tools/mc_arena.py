@@ -196,7 +196,7 @@ class Supervisor:
                 elif a := ADV.match(msg):
                     append("events.jsonl", {"time": now(), "type": "advancement", "player": a[1], "title": a[3],
                                             "kind": a[2]})
-                elif j := JOIN.match(msg):
+                elif (j := JOIN.match(msg)) and j[1] in PLAYERS:     # not the live cam (tools/mc_cam.py)
                     append("events.jsonl", {"time": now(), "type": j[2] == "joined" and "join" or "leave", "player": j[1]})
 
     def start_host(self) -> None:
@@ -362,6 +362,7 @@ def cmd_up(args) -> int:
     api("POST", "/locks/clear", {})
     append("events.jsonl", {"time": now(), "type": "up", "iteration": os.environ.get("EAT_ITER")})
     print("up: every body is in the game; body locks cleared")
+    print(_cam("start"))
     return cmd_status(args)
 
 
@@ -372,6 +373,7 @@ def cmd_down(_args) -> int:
         stray = {n: p for n, p in pids.items() if p}
         print("down: not running" + (f" (but found {stray}: stop them by hand)" if stray else ""))
         return 1 if stray else 0
+    print(_cam("stop"))      # the cam leaves the game before the world is saved and stopped
     try:
         print(rcon("save-all flush", timeout=120).strip() or "saved")
     except (OSError, RuntimeError) as e:
@@ -387,6 +389,15 @@ def cmd_down(_args) -> int:
     append("events.jsonl", {"time": now(), "type": "down"})
     print("down: bot host and server stopped, world saved")
     return 0
+
+
+def _cam(what: str) -> str:
+    """Start or stop the live cam (tools/mc_cam.py); never fails up or down."""
+    try:
+        import mc_cam
+        return mc_cam.start() if what == "start" else mc_cam.stop()
+    except Exception as e:  # noqa: BLE001
+        return f"live cam {what} failed: {e!r}"
 
 
 # ---- the players' commands ----

@@ -90,6 +90,8 @@ def main() -> int:
 
     totals = {}
     for f in (WORLD / "stats").glob("*.json"):
+        if f.stem not in {uuids.get(p) for p in A.PLAYERS}:     # e.g. the live cam (tools/mc_cam.py)
+            continue
         s = json.loads(f.read_text()).get("stats", {})
         for label, cat, names in STATS:
             for n in names:
