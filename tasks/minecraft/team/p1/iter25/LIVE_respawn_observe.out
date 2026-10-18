@@ -1,0 +1,171 @@
+program #10956 on p1: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T20:32:13.480Z",
+ "p": {
+  "x": 9.5,
+  "y": 72,
+  "z": -26.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "dim": "overworld",
+ "inv": [],
+ "column": [
+  {
+   "q": {
+    "x": 9,
+    "y": 72,
+    "z": -27
+   },
+   "n": "snow",
+   "sh": []
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 71,
+    "z": -27
+   },
+   "n": "spruce_leaves",
+   "sh": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 70,
+    "z": -27
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 69,
+    "z": -27
+   },
+   "n": "spruce_leaves",
+   "sh": "[repeated reference]"
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 68,
+    "z": -27
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 67,
+    "z": -27
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  }
+ ],
+ "adj": [
+  {
+   "q": {
+    "x": 10,
+    "y": 72,
+    "z": -27
+   },
+   "n": "snow"
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 72,
+    "z": -27
+   },
+   "n": "spruce_leaves"
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 72,
+    "z": -26
+   },
+   "n": "spruce_leaves"
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 72,
+    "z": -28
+   },
+   "n": "snow"
+  }
+ ],
+ "near": [
+  {
+   "n": "player",
+   "p": "[repeated reference]"
+  }
+ ],
+ "wood": [
+  {
+   "x": 8,
+   "y": 72,
+   "z": -26
+  },
+  {
+   "x": 8,
+   "y": 71,
+   "z": -26
+  },
+  {
+   "x": 8,
+   "y": 70,
+   "z": -26
+  },
+  {
+   "x": 8,
+   "y": 69,
+   "z": -26
+  },
+  {
+   "x": 8,
+   "y": 68,
+   "z": -26
+  },
+  {
+   "x": 7,
+   "y": 72,
+   "z": -31
+  },
+  {
+   "x": 7,
+   "y": 71,
+   "z": -31
+  },
+  {
+   "x": 7,
+   "y": 73,
+   "z": -31
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: LIVE death20:30:22 independently acknowledged; P1 current9.5,72,-26.5 HP20EMPTY respawn, oldEndkit unavailable. SB G25-3 retainsEnd38/Y50kit useful onlydiagnostic, notlivecapability. No resetunless P1 releases/captures active test. Retire exposedringmethod
+p2:  afterfailedreturn; freshP1surface differsP2watergate. A single actualHOMEbedreceipt->entry->ordinarybedactivation is now plausible changedmethod ifownerpriceswholechain; no automaticoldkit recovery/courierquota. P3leavebeduntilfreshrecipient locallyready.
+p3: P1 decisive RETURN_FAIL diagnosis from actual ring_recenter_return.js34: go throws SAME "manual adjacent budget" for Date.now()>until OR bot.health<10 OR dimension!=End. LIVE10947 RETURN startedHP9.2667 at20:30:12.027, so retreat necessarily immediately re
+p3: jects on HP<10 even if route/time valid. That label does NOT prove timeout/path failure. Separate ADVANCE low-health stop from emergency RETURN alive/dimension/route checks; do not reset wholebudget or remove action guards. Current exposure->sameHPfloor ma
+p3: de cleanup unusable. Counterfactual survival unproved; newbody/recovery scope still required.
+--- p1 now: (9.5, 72, -26.5) in overworld, health 20/20, food 20/20, alive

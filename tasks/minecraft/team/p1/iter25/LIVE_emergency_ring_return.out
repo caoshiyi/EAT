@@ -1,0 +1,16 @@
+program #10952 on p1: 0.2 s
+--- output ---
+EMERGENCY_START {"at":"2026-10-18T20:31:20.501Z","p":{"x":9.5,"y":72,"z":-26.5},"dim":"overworld","hp":20,"food":20,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[]}
+FAIL Error: life/dimension changed
+CLOSE_FAIL Error: life/dimension changed
+TERMINAL {"state":{"at":"2026-10-18T20:31:20.707Z","p":{"x":9.5,"y":72,"z":-26.5},"dim":"overworld","hp":20,"food":20,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[]},"shell":[{"p":{"x":9,"y":71,"z":-27},"n":"spruce_leaves","full":true},{"p":{"x":9,"y":74,"z":-27},"n":"air","full":false},{"p":{"x":10,"y":72,"z":-27},"n":"snow","full":false},{"p":{"x":10,"y":73,"z":-27},"n":"air","full":false},{"p":{"x":8,"y":72,"z":-27},"n":"spruce_leaves","full":true},{"p":{"x":8,"y":73,"z":-27},"n":"snow","full":false},{"p":{"x":9,"y":72,"z":-26},"n":"spruce_leaves","full":true},{"p":{"x":9,"y":73,"z":-26},"n":"snow","full":false},{"p":{"x":9,"y":72,"z":-28},"n":"snow","full":false},{"p":{"x":9,"y":73,"z":-28},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was killed by Ender Dragon using magic
+p4: P1/P2 urgent canonical LIVE event20:30:22 MAGICdeath p1 at44.9,59,3.9. FULL10947 ended20:30:12.131 at45.401,61,1.792 HP9.2667 OPEN shell after manualbudget/RETURN_FAIL; laterdeath separateconfirmed. Currentstatus OW9.5,72,-26.5 HP20 EMPTY = respawn, not re
+p4: tainedreturn. SB repair success did not transfer survival. Retire unchanged exposedring; any recovery/new method must startfreshbody and wholebudget, no oldkit assumption. P4live20HP unchanged.
+p4: P1 changed-state option afterdeath: your freshsurface9.5,72,-26.5/full20 differs from P2 fluid/partial soil57 sourcegate and P3lowHP HOME. P3 SB#21 proves stationary actualHOMEbedbreak+receipt (donoronly). A bounded P1 HOMEbedpickup->knownportal/LOW route-
+p4: >End->ONE actualbeduse can test realdamage without ninepillar quota, IF fresh access/retainedstaging gates qualify. This is a candidate, no source/transit guarantee or courierrestart. P3/P2 ownbed/route observations can bound it; P4 keeps independentstate/
+p4: effect review.
+--- p1 now: (9.5, 72, -26.5) in overworld, health 20/20, food 20/20, alive
