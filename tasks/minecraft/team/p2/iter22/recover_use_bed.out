@@ -1,0 +1,48 @@
+program #10020 on p2: 25.8 s
+--- output ---
+NODE {"p":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"hp":10.55274772644043,"target":[7,50,3]}
+NODE {"p":{"x":3.5,"y":50,"z":3.4996000002080296},"hp":10.55274772644043,"target":[3,50,3]}
+NODE {"p":{"x":3.500000208791902,"y":50,"z":4.331891181958768},"hp":10.55274772644043,"target":[3,50,4]}
+NODE {"p":{"x":2.6792437121193484,"y":50,"z":4.46997205278347},"hp":10.55274772644043,"target":[2,50,4]}
+NODE {"p":{"x":1.5,"y":50,"z":4.483824777421436},"hp":10.55274772644043,"target":[1,50,4]}
+NODE {"p":{"x":0.6678492021525988,"y":50,"z":4.493060681378857},"hp":10.55274772644043,"target":[0,50,4]}
+NODE {"p":{"x":0.5290486951914364,"y":50,"z":3.6724249336274624},"hp":10.55274772644043,"target":[0,50,3]}
+NODE {"p":{"x":1.5,"y":51,"z":3.5485170201958462},"hp":10.55274772644043,"target":[1,51,3]}
+NODE {"p":{"x":2.5,"y":52,"z":3.5361585426564597},"hp":10.55274772644043,"target":[2,52,3]}
+NODE {"p":{"x":3.5,"y":53,"z":3.526925484461577},"hp":10.55274772644043,"target":[3,53,3]}
+NODE {"p":{"x":4.5,"y":54,"z":3.520204732355581},"hp":10.55274772644043,"target":[4,54,3]}
+NODE {"p":{"x":5.5,"y":55,"z":3.5150226325537353},"hp":10.55274772644043,"target":[5,55,3]}
+NODE {"p":{"x":6.5,"y":56,"z":3.5111230259927613},"hp":10.55274772644043,"target":[6,56,3]}
+NODE {"p":{"x":6.499999908131558,"y":57,"z":2.5},"hp":10.55274772644043,"target":[6,57,2]}
+NODE {"p":{"x":5.5,"y":58,"z":2.5000000918684213},"hp":10.55274772644043,"target":[5,58,2]}
+NODE {"p":{"x":4.5,"y":59,"z":2.5000001837368426},"hp":10.55274772644043,"target":[4,59,2]}
+NODE {"p":{"x":3.5,"y":60,"z":2.500000275605264},"hp":10.55274772644043,"target":[3,60,2]}
+NODE {"p":{"x":3.4999997912080407,"y":60,"z":1.667709093854526},"hp":10.55274772644043,"target":[3,60,1]}
+RECOVERY_RECEIPT {"p":{"x":3.4999997912080407,"y":60,"z":1.667709093854526},"hp":10.55274772644043,"bed":[{"n":"white_bed","c":1}]}
+FAIL Error: HP/time/cloud before 3,60,2
+NODE {"p":{"x":3.4999999582416845,"y":60,"z":2.5},"hp":6.55274772644043,"target":[3,60,2]}
+NODE {"p":{"x":4.5199416371883085,"y":59,"z":2.3},"hp":2.5527477264404297,"target":[4,59,2]}
+RETREAT_FAIL Error: unsettled 5,58,2
+--- returned ---
+{
+ "issue": "Error: HP/time/cloud before 3,60,2",
+ "placed": false,
+ "cover": false,
+ "activation": null,
+ "p": {
+  "x": -7.5,
+  "y": 32,
+  "z": -39.5
+ },
+ "hp": 20,
+ "ground": true,
+ "roof": "air",
+ "elapsed": 25753,
+ "inv": []
+}
+--- chat since this player's previous program ---
+p4: Independent next-completion proposal, no sourcing: P1#10003 actualROOT min2.35 tobed3.5,60.5,.5 plus newphase0 #10009 may create a STRICT normal melee opportunity from EXISTING59stance. Earlier central59 retirement was phase1/root>=23, materially changed n
+p4: ow. If bed trulygone: P1 full20HP borrow retainedP2 STONE_SWORD and execute ONE bounded<=15s actualstance4,59,2 normal realentity cursor3/body+trueeye-root<=3/BOTHactualcamera rays; fullsamecallerreturn, HP/cloudstop. Actualhit+bossHP effect decides. No sy
+p4: ntheticparts/giant-AABBreach. Prefer this test over another12STRINGbedchain.
+[server] p2 was killed by Ender Dragon using magic
+--- p2 now: (-7.5, 32, -39.5) in overworld, health 20/20, food 20/20, alive

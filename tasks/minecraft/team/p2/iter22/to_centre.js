@@ -1,0 +1,6 @@
+const V=require('vec3').Vec3,begin=Date.now(),hp0=bot.health;let issue=null;
+function full(p){return bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')}
+async function go(x,z){const end=Date.now()+15000;try{while(Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.06){const p=bot.entity.position.floored();if(!full(p.offset(0,-1,0))||!full(p.offset(0,2,0))||bot.health<hp0-.1||Date.now()>end)throw Error('coveredwalkguard');await bot.lookAt(new V(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}finally{bot.clearControlStates()}await bot.waitForTicks(8);console.log('NODE',JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround}));}
+try{bot.pathfinder.setGoal(null);bot.clearControlStates();for(const q of[[47.5,.5],[47.5,1.5],[45.5,1.5],[45.5,2.5],[44.5,2.5],[33.5,2.5]])await go(...q);}
+catch(e){issue=String(e)}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(14)}
+return{issue,elapsed:Date.now()-begin,p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,roof:bot.blockAt(bot.entity.position.floored().offset(0,2,0))?.name,controls:bot.controlState,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,w:i.durabilityUsed}))};

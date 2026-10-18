@@ -1,0 +1,29 @@
+program #10071 on p2: 6.8 s
+--- output ---
+CUT_PRE {"p":{"x":7,"y":67,"z":-13},"r":{"face":2,"hit":{"x":7.915216143146613,"y":67.74078110232924,"z":-13}}}
+CUT_PRE {"p":{"x":7,"y":66,"z":-13},"r":{"face":1,"hit":{"x":7.7353939558897045,"y":67,"z":-12.782338236858203}}}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 8.32568993403923,
+  "y": 66,
+  "z": -13.496848861712149
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  {
+   "n": "sweet_berries",
+   "c": 24
+  },
+  {
+   "n": "spruce_log",
+   "c": 4
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (8.3, 66, -13.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,78 @@
+program #9949 on p2: 25.7 s
+--- output ---
+NODE {"p":{"x":47.3,"y":50,"z":0.5001585039479052},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":47.54938672103744,"y":50,"z":1.7},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":45.3,"y":50,"z":1.4733564184078123},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":45.54338211687635,"y":50,"z":2.7},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":44.3,"y":50,"z":2.460434184025022},"hp":10.55274772644043,"ground":true}
+--- returned ---
+{
+ "issue": "Error: coveredwalkguard",
+ "elapsed": 25693,
+ "p": {
+  "x": 44.3,
+  "y": 50,
+  "z": 2.4861030740683256
+ },
+ "hp": 10.55274772644043,
+ "food": 14,
+ "ground": true,
+ "roof": "end_stone",
+ "controls": {},
+ "inv": [
+  {
+   "n": "book",
+   "c": 3,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 16,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 10,
+   "w": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "blackstone",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "w": 106
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "w": 0
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 ACK shared spawn bed repurpose: breaking it invalidates our saved respawn; future death may return original spawn. Chest9943 bounded readonly full-floor BFS found no route within constraints (not inaccessible globally), ZEROmovement. Replacement deliver
+p1: able proposed to P4: reviewed native OW-to-End entry route/controls/actual landing checks, P4 actual personal bed transport adoption by14:12. P2 can receive directly; no portal-item experiment needed. Will publish own p1/iter22 for P4 review/use.
+p4: P2/P1 ACK: adopted ONE existing bed test, original adoption13:54 -> deadline14:12 all source/entry/activation/return. #9944 physically hand-opened own MOSS157,-35/-36,2230 door, now157.503,-36,2231.302 HP14.9715 EMPTY. Chest154,-35,2227 not visible from cu
+p4: rrent pose; no open/no loot, retire chest side probe to focus H2. Returning existing149/148 upper stairs to bed; will announce exact coordinates before hand dig. P1 route notes welcome. P2 please centre current cover geometry/timing only, no duplicate bed 
+p4: or edits.
+p1: P4 route support published p1/iter22/P4_ROUTE.md; reviewed normal iter20/21 full sources/actual outputs, not void code. West from bed: TABLE140feet-35,2232 ->140,-36,2239 ->139,2239 ->139,2255 ->131,2255 ->130,2256 ->130,2265 ->128,2266 ->128,2272 ->131,22
+p1: 72 ->131,2275 then forward132.5/133.5,2275.5 portal. Actual #9835 End97step FULL then79 then75; door78AIR; STOP if changed/no pick. helper9948 small-tested xyz/ground checks. Please report actual adoption/EndBED receipt; no stock.
+--- p2 now: (44.3, 50, 2.5) in the_end, health 10.6/20, food 14/20, alive

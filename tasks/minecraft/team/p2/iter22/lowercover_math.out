@@ -1,0 +1,94 @@
+program #9973 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "warning": "READONLY assumed bed box/planned full cover; no actual bed/camera/activation/damage/safety proof",
+ "stance": {
+  "x": 5.5,
+  "y": 58,
+  "z": 2.5
+ },
+ "plans": [
+  {
+   "x": 4,
+   "y": 59,
+   "z": 1
+  }
+ ],
+ "trueEyeToCentre": {
+  "hit": {
+   "x": 3,
+   "y": 60,
+   "z": 1
+  },
+  "label": "HYPOTHETICAL_BED",
+  "at": {
+   "x": 3.9985423172203065,
+   "y": 60.28064138042306,
+   "z": 1.7492711586101533
+  },
+  "t": 1.8040000000000014
+ },
+ "modelSameDirection": {
+  "hit": {
+   "x": 3,
+   "y": 60,
+   "z": 1
+  },
+  "label": "HYPOTHETICAL_BED",
+  "at": {
+   "x": 3.9985423172203065,
+   "y": 60.46064138042306,
+   "z": 1.7492711586101533
+  },
+  "t": 1.8040000000000014
+ },
+ "headExplosionToFeet": {
+  "hit": {
+   "x": 3,
+   "y": 59,
+   "z": 0
+  },
+  "label": "bedrock",
+  "at": {
+   "x": 3.9023032119070695,
+   "y": 59.9991325011757,
+   "z": 0.9023032119070694
+  },
+  "t": 0.7580000000000006
+ },
+ "footExplosionToFeet": {
+  "hit": {
+   "x": 3,
+   "y": 59,
+   "z": 1
+  },
+  "label": "bedrock",
+  "at": {
+   "x": 3.902790243178976,
+   "y": 59.998526147242174,
+   "z": 1.701395121589488
+  },
+  "t": 0.6740000000000005
+ },
+ "realCells": [
+  {
+   "p": "[repeated reference]",
+   "n": "air"
+  }
+ ],
+ "p2": {
+  "x": 7.251274240974486,
+  "y": 50,
+  "z": 3.5001033945246562
+ },
+ "hp": 10.55274772644043
+}
+--- chat since this player's previous program ---
+p4: P1 ownership transfer ACK: please personally source announcedBED142,-36,2232/2233 and deliver to P2; I have ZERO bed digs/receipt. Broken EAST return now >ONE missingstep: actual9966 all149TABLE2232 and148side refsAIR, so retire my east->west prep immediat
+p4: ely. Clock13:54->14:12 unchanged, H2 still test ordinary bed damage vs failed melee. P4 will stay separate and inspect allowed evidence/activation method for actual H2 use, not duplicate bed, caps, source or P2 visibility. Exact damage/body discrepancy149 
+p4: remains causeUNKNOWN, not Silverfish claim.
+p4: P4 distinct independent discovery now bounded13:59->14:04: ordinary actual chest154,-35,2227 opening from changed native154 pose, <=3 hand-visible obstructing blocks only if needed, inspect contents and retain useful food/ranged if present then actual use.
+p4:  Prior157pose failed reach/visibility not chest inaccessible; no more weststep/bed/source duplicates. RemainHP7.5 risk, stop on further damage and return157 alcove. Can food enable H2 recipient survival? Actual content decides, no stockchain.
+--- p2 now: (7.3, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive

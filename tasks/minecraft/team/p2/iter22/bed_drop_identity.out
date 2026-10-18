@@ -1,0 +1,173 @@
+program #10018 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": 1792332629695,
+ "item961": {
+  "id": 961,
+  "name": "white_bed",
+  "displayName": "White Bed",
+  "stackSize": 1
+ },
+ "item990": {
+  "id": 990,
+  "name": "ender_pearl",
+  "displayName": "Ender Pearl",
+  "stackSize": 16
+ },
+ "p": {
+  "x": 7.327812770824112,
+  "y": 50,
+  "z": 3.4975467446542727
+ },
+ "hp": 10.55274772644043,
+ "blocks": [
+  {
+   "p": [
+    3,
+    60,
+    0
+   ],
+   "n": "air",
+   "properties": {},
+   "sh": []
+  },
+  {
+   "p": [
+    3,
+    60,
+    1
+   ],
+   "n": "air",
+   "properties": {},
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    59,
+    1
+   ],
+   "n": "end_stone",
+   "properties": {},
+   "sh": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": [
+    3,
+    59,
+    0
+   ],
+   "n": "bedrock",
+   "properties": {},
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    3,
+    59,
+    1
+   ],
+   "n": "bedrock",
+   "properties": {},
+   "sh": "[repeated reference]"
+  }
+ ],
+ "items": [
+  {
+   "id": 3721,
+   "p": {
+    "x": 3.125,
+    "y": 60,
+    "z": 1.0196431554872523
+   },
+   "meta": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 961,
+     "itemCount": 1
+    }
+   ]
+  }
+ ],
+ "dragon": [
+  {
+   "id": 290,
+   "p": {
+    "x": -11.339470533453657,
+    "y": 78.63839930172831,
+    "z": -16.389150833523615
+   },
+   "hp": 200,
+   "phase": 1
+  }
+ ],
+ "inventory": [
+  {
+   "n": "book",
+   "c": 3,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 15,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 10,
+   "w": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "blackstone",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "w": 106
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "w": 0
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.3, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive

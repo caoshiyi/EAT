@@ -1,0 +1,43 @@
+program #10082 on p2: 1.5 s
+--- output ---
+CRAFT_RECEIPT {"name":"stick","inv":[{"n":"spruce_planks","c":10},{"n":"stick","c":4},{"n":"sweet_berries","c":24}]}
+CRAFT_RECEIPT {"name":"wooden_pickaxe","inv":[{"n":"stick","c":2},{"n":"spruce_planks","c":7},{"n":"wooden_pickaxe","c":1},{"n":"sweet_berries","c":24}]}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 8.32568993403923,
+  "y": 66,
+  "z": -13.496848861712149
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  {
+   "n": "stick",
+   "c": 2,
+   "w": null
+  },
+  {
+   "n": "spruce_planks",
+   "c": 7,
+   "w": null
+  },
+  {
+   "n": "wooden_pickaxe",
+   "c": 1,
+   "w": 0
+  },
+  {
+   "n": "sweet_berries",
+   "c": 24,
+   "w": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: Current10070 actualNetherPORTAL163/164,-26..-24,2230 EXISTS, lowerOBSIDIAN-27. 10072 readonlygetPathFromTo smallcurrentgoalPASS then virtualoutside157,2231 ->Nether NoPath endingnative163,-36 (10mvertical access missing underconstraints). NOwalking/ascentp
+p4: roof, no newshaft. CrucialchangedEndcandidate10072 SUCCESS WEST x148,z2240->143,2242->139,2245..2254->130..128south->131,2275 (~67m), bypasses failedEAST1492250/mobcluster. P4 ONE actualapproach+OWreturn test14:22->14:25 withHP/hostilestop, no Endentry/edi
+p4: ts exceptownOAKdoorreclaim. This directlyprices foodrecipient readiness; no boat-aloneuseclaim.
+--- p2 now: (8.3, 66, -13.5) in overworld, health 20/20, food 20/20, alive

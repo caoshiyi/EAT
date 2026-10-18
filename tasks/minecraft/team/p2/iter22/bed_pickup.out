@@ -1,0 +1,25 @@
+program #9993 on p2: 3 s
+--- output ---
+INVENTORY {"p":{"x":4.093687648569649,"y":50,"z":3.4998181847751315},"hp":10.55274772644043,"items":[{"n":"book","c":3},{"n":"end_stone","c":16},{"n":"white_bed","c":1},{"n":"end_stone","c":64},{"n":"cobbled_deepslate","c":10},{"n":"cracked_stone_bricks","c":1},{"n":"blackstone","c":1},{"n":"end_stone","c":64},{"n":"stone_pickaxe","c":1},{"n":"stone_sword","c":1}]}
+INVENTORY {"p":{"x":7.336660082254571,"y":50,"z":3.500074121607057},"hp":10.55274772644043,"items":[{"n":"book","c":3},{"n":"end_stone","c":16},{"n":"white_bed","c":1},{"n":"end_stone","c":64},{"n":"cobbled_deepslate","c":10},{"n":"cracked_stone_bricks","c":1},{"n":"blackstone","c":1},{"n":"end_stone","c":64},{"n":"stone_pickaxe","c":1},{"n":"stone_sword","c":1}]}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 7.336660082254571,
+  "y": 50,
+  "z": 3.500074121607057
+ },
+ "hp": 10.55274772644043,
+ "ground": true,
+ "bed": [
+  {
+   "n": "white_bed",
+   "c": 1
+  }
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.3, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
