@@ -1,0 +1,219 @@
+program #11453 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T23:46:46.945Z",
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 2.1666641235351562,
+ "food": 17,
+ "ground": true,
+ "inventory": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": false,
+ "window": false,
+ "blocks": [
+  {
+   "p": {
+    "x": 6,
+    "y": 67,
+    "z": 83
+   },
+   "name": "white_bed",
+   "properties": {
+    "part": "foot",
+    "occupied": false,
+    "facing": "east"
+   },
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     0.1875,
+     0.5625,
+     0.1875
+    ],
+    [
+     0,
+     0,
+     0.8125,
+     0.1875,
+     0.5625,
+     1
+    ],
+    [
+     0,
+     0.1875,
+     0.1875,
+     1,
+     0.5625,
+     0.8125
+    ],
+    [
+     0.1875,
+     0.1875,
+     0,
+     1,
+     0.5625,
+     0.1875
+    ],
+    [
+     0.1875,
+     0.1875,
+     0.8125,
+     1,
+     0.5625,
+     1
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 67,
+    "z": 83
+   },
+   "name": "white_bed",
+   "properties": {
+    "part": "head",
+    "occupied": false,
+    "facing": "east"
+   },
+   "shapes": [
+    [
+     0.8125,
+     0,
+     0,
+     1,
+     0.5625,
+     0.1875
+    ],
+    [
+     0.8125,
+     0,
+     0.8125,
+     1,
+     0.5625,
+     1
+    ],
+    [
+     0,
+     0.1875,
+     0,
+     0.8125,
+     0.5625,
+     1
+    ],
+    [
+     0.8125,
+     0.1875,
+     0.1875,
+     1,
+     0.5625,
+     0.8125
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 68,
+    "z": 82
+   },
+   "name": "chest",
+   "properties": {
+    "waterlogged": false,
+    "type": "single",
+    "facing": "west"
+   },
+   "shapes": [
+    [
+     0.0625,
+     0,
+     0.0625,
+     0.9375,
+     0.875,
+     0.9375
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 66,
+    "z": 82
+   },
+   "name": "crafting_table",
+   "properties": {},
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 69,
+    "z": 82
+   },
+   "name": "spruce_slab",
+   "properties": {
+    "waterlogged": false,
+    "type": "top"
+   },
+   "shapes": [
+    [
+     0,
+     0.5,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  }
+ ],
+ "near": [
+  {
+   "name": "creeper",
+   "p": {
+    "x": 7.178109702063029,
+    "y": 60,
+    "z": 82.46518536566678
+   },
+   "d": 7.032854671240958
+  },
+  {
+   "name": "creeper",
+   "p": {
+    "x": 11.786463262556124,
+    "y": 60,
+    "z": 79.46636396900628
+   },
+   "d": 9.281683112178463
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 closinghandoffsaved p1/iter26/FINAL_HANDOFF.md/P1.md. Own11447 full8.333HP17foodDIRT1/noactiveprogram. Closingeval SAVEFAILED last-saved dragon0/11/deaths180,9crystals/200. Reviewed11445 NOattack, roofrefusedwhileairborne,20->8 thenretained63 THREE10FUL
+p1: L9/regen10. A/courierretired; G3P1released. Continuingchecks through23:47, no gameplayqueued.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive
