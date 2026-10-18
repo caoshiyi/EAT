@@ -1,0 +1,22 @@
+program #9937 on p1: 2 s
+--- output ---
+STATE {"p":{"x":135.66773510641806,"y":-38,"z":2233.502508889393},"hp":20,"food":20,"dim":"overworld","inventory":[],"ground":true,"controls":{},"goal":null}
+NEAR [{"p":{"x":140,"y":-36,"z":2232},"n":"crafting_table"},{"p":{"x":137,"y":-32,"z":2235},"n":"oak_planks"},{"p":{"x":137,"y":-32,"z":2236},"n":"oak_planks"},{"p":{"x":138,"y":-32,"z":2235},"n":"oak_planks"},{"p":{"x":138,"y":-32,"z":2236},"n":"oak_planks"},{"p":{"x":138,"y":-32,"z":2237},"n":"oak_planks"},{"p":{"x":139,"y":-32,"z":2237},"n":"oak_planks"},{"p":{"x":137,"y":-29,"z":2230},"n":"oak_planks"},{"p":{"x":137,"y":-28,"z":2230},"n":"oak_planks"},{"p":{"x":141,"y":-29,"z":2230},"n":"oak_planks"},{"p":{"x":144,"y":-32,"z":2230},"n":"oak_planks"},{"p":{"x":137,"y":-30,"z":2241},"n":"oak_planks"},{"p":{"x":141,"y":-28,"z":2230},"n":"oak_planks"},{"p":{"x":137,"y":-29,"z":2241},"n":"oak_planks"},{"p":{"x":141,"y":-30,"z":2241},"n":"oak_planks"},{"p":{"x":137,"y":-28,"z":2241},"n":"oak_planks"},{"p":{"x":141,"y":-29,"z":2241},"n":"oak_planks"},{"p":{"x":147,"y":-32,"z":2230},"n":"oak_planks"},{"p":{"x":145,"y":-29,"z":2230},"n":"oak_planks"},{"p":{"x":141,"y":-28,"z":2241},"n":"oak_planks"},{"p":{"x":149,"y":-36,"z":2231},"n":"oak_planks"},{"p":{"x":145,"y":-28,"z":2230},"n":"oak_planks"},{"p":{"x":148,"y":-32,"z":2235},"n":"oak_planks"},{"p":{"x":148,"y":-32,"z":2230},"n":"oak_planks"},{"p":{"x":148,"y":-32,"z":2236},"n":"oak_planks"},{"p":{"x":148,"y":-32,"z":2237},"n":"oak_planks"},{"p":{"x":136,"y":-41,"z":2248},"n":"chest"},{"p":{"x":149,"y":-32,"z":2235},"n":"oak_planks"},{"p":{"x":149,"y":-32,"z":2236},"n":"oak_planks"},{"p":{"x":149,"y":-32,"z":2237},"n":"oak_planks"}]
+FOES []
+GRID [{"p":{"x":135,"y":-39,"z":2233},"n":"deepslate"},{"p":{"x":135,"y":-36,"z":2233},"n":"deepslate"},{"p":{"x":136,"y":-38,"z":2233},"n":"air"},{"p":{"x":134,"y":-38,"z":2233},"n":"air"},{"p":{"x":135,"y":-38,"z":2234},"n":"air"},{"p":{"x":135,"y":-38,"z":2232},"n":"deepslate"}]
+--- returned ---
+{
+ "p": {
+  "x": 135.66773510641806,
+  "y": -38,
+  "z": 2233.502508889393
+ },
+ "hp": 20,
+ "stable": true,
+ "ground": true,
+ "controls": {},
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (135.7, -38, 2233.5) in overworld, health 20/20, food 20/20, alive
