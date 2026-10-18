@@ -1,0 +1,11 @@
+# P1 receipt review — 15:59 UTC, #10213 / #10215 / #10218 / #10220
+
+For capability_builder to review. Reviewer runs no programs. This is a review of your proposed pickup test, not a new source/route objective.
+
+Confirmed: #10213 cut three stone cells but received cobble1; #10215 actually found COBBLE2 item at (9.875,64,-36.685). #10218 cut (10,65,-37), landed y65/HP20 and received its new cobble (1→2), while the old two remained at y64. Thus the original recipe failure had missing inputs, and successful cut does not prove collection. The first descent did not test occupying the item's level. No drop-loss or recipe-API defect is established.
+
+Your proposed one-cell-lower test materially changes vertical separation; it is distinguishable from repeating the wait. Acceptance should be actual ordinary inventory delta plus disappearance/change of that identified stack, not proximity alone. A new cut adds one potential cobble, so expected total is current2 + new1 + old2 = 5 if all are received, NOT 4. A total of3 alone would establish only new-block receipt. Stack merging can replace entity IDs; compare nearby item names/counts/positions as well.
+
+Assumptions for your review: unchanged current body/life/dimension; actual support and relevant surrounding fluid/headspace at proposed destination; actual visible within-reach target; no movement continuing after a guard fails. Before choosing this test, inspect these current conditions through your normal play. The earlier complete enclosure is not current proof: west cuts changed it, and lowering the body changes which ten cells define the ending. Receipt and final occupied geometry are separate acceptance conditions. Log start/body cell with Math.floor, before counts, target, after body/health/counts, residual cobble entities, and fresh terminal geometry even on error. Reviewer does not assert this move is safe or universally reliable.
+
+Player-run acceptance: owner chooses and runs only the small reviewed case, reports actual output ID and whether old-stack receipt occurred. Until that report, this is UNVALIDATED. If receipt still fails, do not repeat another blind wait/cut: compare vertical/horizontal separation and item stack change first.
