@@ -1,0 +1,63 @@
+program #9467 on p4: 3.6 s
+--- output ---
+TRY {"aim":{"x":78.35,"y":50.985,"z":0.65},"hit":{"p":{"x":78,"y":50,"z":0},"face":1,"intersect":{"x":78.86929077314772,"y":51,"z":0.6918656112036119}}}
+--- returned ---
+{
+ "issue": null,
+ "ray": {
+  "p": {
+   "x": 78,
+   "y": 50,
+   "z": 0
+  },
+  "face": 1,
+  "intersect": {
+   "x": 78.86929077314772,
+   "y": 51,
+   "z": 0.6918656112036119
+  }
+ },
+ "p": {
+  "x": 75.5,
+  "y": 50,
+  "z": 0.4999999999997621
+ },
+ "hpBefore": 20,
+ "hp": 20,
+ "ground": true,
+ "lower": "end_stone",
+ "upper": "end_stone",
+ "floor": "end_stone",
+ "roof": "end_stone",
+ "clouds": [],
+ "inv": [
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "wear": 20
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "end_stone",
+   "c": 16,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 7,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (75.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive

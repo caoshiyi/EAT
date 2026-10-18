@@ -1,0 +1,156 @@
+program #9538 on p4: 28.4 s
+--- output ---
+STANDING_VIEW {"aim":{"x":42.5,"y":77.7,"z":0.5},"p":{"x":39.668214866743725,"y":74.5,"z":0.5301150404676555},"height":1.8,"eyeHeight":1.62,"yaw":-1.5603243512827358,"pitch":0.5083702212739221,"targets":[{"r":3},{"r":3.5},{"r":4,"id":10556,"n":"end_crystal"},{"r":4.5,"id":10556,"n":"end_crystal"},{"r":6,"id":10556,"n":"end_crystal"}],"block":null,"rootDistances":[2.9655208575549796,2.9171756814757717],"crystal":{"id":10556,"n":"end_crystal","p":{"x":42.5,"y":77,"z":0.5},"type":"other","w":2,"h":2}}
+STANDING_VIEW {"aim":{"x":41.51,"y":77.05,"z":0.5},"p":{"x":39.668214866743725,"y":74.5,"z":0.5301150404676555},"height":1.8,"eyeHeight":1.62,"yaw":-1.5550883635267532,"pitch":0.46648231922606076,"targets":[{"r":3},{"r":3.5},{"r":4,"id":10556,"n":"end_crystal"},{"r":4.5,"id":10556,"n":"end_crystal"},{"r":6,"id":10556,"n":"end_crystal"}],"block":null,"rootDistances":[2.9655208575549796,2.9171756814757717],"crystal":{"id":10556,"n":"end_crystal","p":{"x":42.5,"y":77,"z":0.5},"type":"other","w":2,"h":2}}
+--- returned ---
+{
+ "issue": null,
+ "attack": null,
+ "observations": [
+  {
+   "aim": {
+    "x": 42.5,
+    "y": 77.7,
+    "z": 0.5
+   },
+   "p": {
+    "x": 39.668214866743725,
+    "y": 74.5,
+    "z": 0.5301150404676555
+   },
+   "height": 1.8,
+   "eyeHeight": 1.62,
+   "yaw": -1.5603243512827358,
+   "pitch": 0.5083702212739221,
+   "targets": [
+    {
+     "r": 3
+    },
+    {
+     "r": 3.5
+    },
+    {
+     "r": 4,
+     "id": 10556,
+     "n": "end_crystal"
+    },
+    {
+     "r": 4.5,
+     "id": 10556,
+     "n": "end_crystal"
+    },
+    {
+     "r": 6,
+     "id": 10556,
+     "n": "end_crystal"
+    }
+   ],
+   "block": null,
+   "rootDistances": [
+    2.9655208575549796,
+    2.9171756814757717
+   ],
+   "crystal": {
+    "id": 10556,
+    "n": "end_crystal",
+    "p": {
+     "x": 42.5,
+     "y": 77,
+     "z": 0.5
+    },
+    "type": "other",
+    "w": 2,
+    "h": 2
+   }
+  },
+  {
+   "aim": {
+    "x": 41.51,
+    "y": 77.05,
+    "z": 0.5
+   },
+   "p": {
+    "x": 39.668214866743725,
+    "y": 74.5,
+    "z": 0.5301150404676555
+   },
+   "height": 1.8,
+   "eyeHeight": 1.62,
+   "yaw": -1.5550883635267532,
+   "pitch": 0.46648231922606076,
+   "targets": [
+    {
+     "r": 3
+    },
+    {
+     "r": 3.5
+    },
+    {
+     "r": 4,
+     "id": 10556,
+     "n": "end_crystal"
+    },
+    {
+     "r": 4.5,
+     "id": 10556,
+     "n": "end_crystal"
+    },
+    {
+     "r": 6,
+     "id": 10556,
+     "n": "end_crystal"
+    }
+   ],
+   "block": null,
+   "rootDistances": [
+    2.9655208575549796,
+    2.9171756814757717
+   ],
+   "crystal": {
+    "id": 10556,
+    "n": "end_crystal",
+    "p": {
+     "x": 42.5,
+     "y": 77,
+     "z": 0.5
+    },
+    "type": "other",
+    "w": 2,
+    "h": 2
+   }
+  }
+ ],
+ "elapsed": 28403,
+ "p": {
+  "x": 39.49999999999979,
+  "y": 50,
+  "z": 0.3
+ },
+ "hp": 17.5,
+ "ground": true,
+ "inv": [
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "wear": 106
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate_slab",
+   "c": 4,
+   "wear": null
+  },
+  {
+   "n": "end_stone",
+   "c": 47,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (39.5, 50, 0.3) in the_end, health 17.5/20, food 17/20, alive

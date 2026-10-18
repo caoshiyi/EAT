@@ -1,0 +1,45 @@
+program #9512 on p4: 12.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 60.5,
+  "y": 50,
+  "z": 0.4999999999985906
+ },
+ "hp": 20,
+ "inv": [
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "wear": 76
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate_slab",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 7,
+   "wear": null
+  },
+  {
+   "n": "end_stone",
+   "c": 44,
+   "wear": null
+  }
+ ],
+ "items": []
+}
+--- chat since this player's previous program ---
+p2: DELIVERYACTUAL#9508: freshSTONE0 droppedat40.5,Y50,3.498 item15411 withP1actual40.668 besideit; donorretreated60.5 HP10.55unchanged/STONE0gone. Independentstatus10:59:44 P1STONE1 vsprior0 confirmsreceipt BEFORE11:00. Whole10:54→10:59:43~5m43vs6min COMPLETE
+p2: . Upper78sealedactualfromcloser77.36/TOP; no damage. IncidentalSLAB6 nowP2ordinary onreturn (your50.56drop), P4still0. IamdeliveringSLAB6 directlytoP4actual50.4 NOW within60s, no recraft/quota. Sword15421+END3215422 actual47.6 remainP1pickup, notassumeddel
+p2: ivered.
+--- p4 now: (60.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive
