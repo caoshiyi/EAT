@@ -1,0 +1,28 @@
+program #10360 on p4: 14 s
+--- output ---
+SMALL_CURRENT {"optimizePath":false,"tickTimeout":100,"start":{"x":-8.485947943850213,"y":26,"z":-37.7},"status":"success","states":["success"],"ms":1,"n":0,"invalidFoot":[],"path":[]}
+PAIR_LOCAL {"optimizePath":true,"tickTimeout":100,"start":{"x":1.5,"y":64,"z":90.5},"status":"timeout","states":["partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","timeout"],"ms":3501,"n":8,"invalidFoot":[],"path":[{"p":[0.5,64,91.5],"foot":"snow","footFull":false,"floor":"sand","break":[],"place":[]},{"p":[0.5,64,92.5],"foot":"snow","footFull":false,"floor":"sand","break":[],"place":[]},{"p":[0.5,65,93.5],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[1.5,65,94.5],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[2.5,64,94.5],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[3.5,64,94.5],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[4.5,64,95.5],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[5.5,64,96.5],"foot":"air","footFull":false,"floor":"grass_block","break":[],"place":[]}]}
+PAIR_LOCAL {"optimizePath":false,"tickTimeout":100,"start":{"x":1.5,"y":64,"z":90.5},"status":"timeout","states":["partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","timeout"],"ms":3501,"n":8,"invalidFoot":[],"path":[{"p":[0,64,91],"foot":"snow","footFull":false,"floor":"sand","break":[],"place":[]},{"p":[0,64,92],"foot":"snow","footFull":false,"floor":"sand","break":[],"place":[]},{"p":[0,65,93],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[1,65,94],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[2,64,94],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[3,64,94],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[4,64,95],"foot":"snow","footFull":false,"floor":"grass_block","break":[],"place":[]},{"p":[5,64,96],"foot":"air","footFull":false,"floor":"grass_block","break":[],"place":[]}]}
+PAIR_OCCUPIED_GOAL {"optimizePath":true,"tickTimeout":100,"start":{"x":1.5,"y":64,"z":90.5},"status":"timeout","states":["partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","timeout"],"ms":3501,"n":0,"invalidFoot":[],"path":[]}
+PAIR_OCCUPIED_GOAL {"optimizePath":false,"tickTimeout":100,"start":{"x":1.5,"y":64,"z":90.5},"status":"timeout","states":["partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","partial","timeout"],"ms":3501,"n":0,"invalidFoot":[],"path":[]}
+--- returned ---
+{
+ "p": {
+  "x": -8.485947943850213,
+  "y": 26,
+  "z": -37.7
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "gravel",
+   1
+  ]
+ ],
+ "controls": {},
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive

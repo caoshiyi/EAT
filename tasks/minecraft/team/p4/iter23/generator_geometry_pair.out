@@ -1,0 +1,18 @@
+program #10356 on p4: 0.1 s
+--- output ---
+SMALL_CURRENT {"optimizePath":false,"tickTimeout":100,"start":{"x":-8.485947943850213,"y":26,"z":-37.7},"status":"success","states":["success"],"ms":1,"n":0,"invalidFoot":[],"path":[]}
+--- error ---
+ReferenceError: return100 is not defined
+    at p4-program-10356.js:2:604
+    at Movements.exclusionStep (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/movements.js:126:17)
+    at Movements.getMoveForward (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/movements.js:367:18)
+    at Movements.getNeighbors (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/movements.js:642:12)
+    at AStar.compute (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/astar.js:85:40)
+    at bot.pathfinder.getPathFromTo (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/index.js:94:31)
+    at bot.pathfinder.getPathFromTo.next (<anonymous>)
+    at plan (p4-program-10356.js:3:160)
+    at p4-program-10356.js:6:64
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:427:17)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive
