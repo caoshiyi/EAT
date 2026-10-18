@@ -11,3 +11,5 @@ P1 candidate source now reviewed (P1_RECEIPT_REVIEW.md appendix); no further rev
 Validated owner case: #10230 old cobble receipt; #10233 stonepick craft/use; #10236 retained full enclosure. See P1_RECEIPT_REVIEW.md. P2 request for permitted target API reviewed in DRAGON_API_REVIEW.md; distinguishes zero-attacks from an actual attack with no observed effect, preserves unresolved dragon semantics.
 
 Reusable small proposal: fresh_terminal_observation.js + TERMINAL_OBSERVATION_REVIEW.md. Current-cell snapshot only; owner-run validation required. No physical correction or broad automation. Complete early independent assessment: ../../ITER23_REVIEW.md.
+
+16:02 important lead-facing API result: DRAGON_API_REVIEW.md appendix independently checks allowed iter16 retained public-client mapping/bytecode: parent hurt routes to BODY, contradicting unconditional parent-immunity theory. This is source-only, not lawful pickability/current arena resolution/damage proof; no synthetic-part workaround justified. Actual qualified interaction remains untested.
