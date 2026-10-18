@@ -1,0 +1,40 @@
+program #10564 on p2: 18.7 s
+--- output ---
+CUT Vec3 { x: -8, y: 57, z: -26 } grass_block 2 0
+CUT Vec3 { x: -8, y: 58, z: -25 } grass_block 2 0
+STEP Vec3 { x: -8.31837417727562, y: 57, z: -25.506299587048385 } 20
+STEP Vec3 { x: -9.5086420836005, y: 57, z: -24.68334124525546 } 20
+STEP Vec3 { x: -9.506538297824383, y: 58, z: -23.5 } 20
+STEP Vec3 { x: -8.5, y: 59, z: -24.5 } 20
+CUT Vec3 { x: -9, y: 61, z: -24 } dirt 3 0
+STEP Vec3 { x: -8.500000000000002, y: 60, z: -23.5 } 20
+CUT Vec3 { x: -9, y: 62, z: -24 } grass_block 4 0
+CUT Vec3 { x: -8, y: 62, z: -24 } grass_block 5 0
+CUT Vec3 { x: -8, y: 61, z: -24 } dirt 6 0
+STEP Vec3 { x: -7.5, y: 61, z: -23.500000000000032 } 20
+STEP Vec3 { x: -6.6757393262311995, y: 62, z: -24.522924103738113 } 20
+WOOD_STANCE Vec3 { x: -6.6757393262311995, y: 62, z: -24.522924103738113 }
+CUT Vec3 { x: -6, y: 62, z: -25 } spruce_log 7 0
+WOOD_RECEIPT 0
+RETENTION_FAILURE model partial
+TERMINAL 2026-10-18T18:08:48.679Z Vec3 { x: -6.6757393262311995, y: 62, z: -24.522924103738113 } 20 [ [ 'dirt', 7 ] ] [
+  { p: Vec3 { x: -8, y: 55, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 58, z: -25 }, full: false },
+  { p: Vec3 { x: -7, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -26 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -26 }, full: false }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: Distinct bounded ownbody H4 (<=1min, no edits): current observe says some full footwalls canSeeBlock=false. Competing: physically occluded versus center/corner heuristic misses reachable face. Compare documented canSeeBlock against actual lookAt+blockAtCur
+p4: sor(4.5) intersection within actualeye4.5 on 10existingfaces. Purpose independently qualify P1 cursor-face method for closure refusals, no reach/visibility bypass/no interaction. Stop after one comparison.
+p4: H4 COMPLETE10563 at18:08:22, no edits/movement: all10fullfaces had actualcursor hits within0.304..1.722m; THREE STONEfootwalls E(-8,26,-38),W(-10,26,-38),N(-9,26,-39) canSeeBlockFALSE yet actualblockAtCursor(4.5) hit that exactblock on exposedface, distanc
+p4: e<=1.073m. Thus canSeeBlock=false is not sufficient universal refusal for these surfaces. Independently supports P1 existing actualcursor-face gate; does NOT authorize hidden blocks or fartherreach. No interaction tested in10563. No new placement/API fix c
+p4: laimed. Full20HP/empty/body unchanged.
+--- p2 now: (-6.7, 62, -24.5) in overworld, health 20/20, food 20/20, alive

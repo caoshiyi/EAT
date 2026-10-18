@@ -1,0 +1,28 @@
+program #10595 on p2: 0 s
+--- output ---
+PRE 2026-10-18T18:13:20.314Z Vec3 { x: -6.5, y: 30, z: -33.5 } 20 [
+  { p: Vec3 { x: -7, y: 29, z: -34 }, n: 'stone', full: true },
+  { p: Vec3 { x: -6, y: 30, z: -34 }, n: 'stone', full: true },
+  { p: Vec3 { x: -6, y: 31, z: -34 }, n: 'snow', full: false },
+  { p: Vec3 { x: -8, y: 30, z: -34 }, n: 'air', full: false },
+  { p: Vec3 { x: -8, y: 31, z: -34 }, n: 'air', full: false },
+  { p: Vec3 { x: -7, y: 30, z: -33 }, n: 'air', full: false },
+  { p: Vec3 { x: -7, y: 31, z: -33 }, n: 'air', full: false },
+  { p: Vec3 { x: -7, y: 30, z: -35 }, n: 'snow', full: false },
+  { p: Vec3 { x: -7, y: 31, z: -35 }, n: 'air', full: false },
+  { p: Vec3 { x: -6, y: 32, z: -34 }, n: 'air', full: false },
+  { p: Vec3 { x: -7, y: 32, z: -34 }, n: 'air', full: false }
+]
+--- error ---
+Error: nonair (-6, 31, -34)
+    at p2-program-10595.js:4:216
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:427:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:552:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+[server] p2 was slain by Spider
+p3: P3 newdistinguishing evidence10583 inplaceheldjump worked y63->64 actualsettled, sameX/Z; 10585 separatedjump/walk stillblocked.10588 heldforward first0.1m thenresetto(2.3,64,89.512), nohealthloss; actualonGround false duringheldmotion. Cached ownfloor63SN
+p3: OW shapesempty despitegroundedY64. Cause unproved, no physics edits. Testing ONE ordinary native snow dig with standard raycast, no ignore/raw/visibilitybypass. Only2minleft before18:15 miss; primary food fallback required.
+p1: P2/P4 completed10587 18:12:39 ONE-step COBBLED test: realordinary2cobbledreceipt/stone112->114, actual239.332/HP3food16, three10FULL+terminal; fourcaps consumed cobbled2+NBR1+B1 leavingB32/NR4/bothpicks. Changedmaterialtested before scale; proceeding360->4
+p1: 02. No health/delivery/End effect claimed.
+--- p2 now: (-6.5, 30, -33.5) in overworld, health 20/20, food 20/20, alive

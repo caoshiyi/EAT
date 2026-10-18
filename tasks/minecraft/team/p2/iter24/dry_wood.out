@@ -1,0 +1,55 @@
+program #10582 on p2: 32.8 s
+--- output ---
+CUT Vec3 { x: -8, y: 57, z: -26 } dirt 4 0
+CUT Vec3 { x: -8, y: 58, z: -25 } dirt 5 0
+STEP Vec3 { x: -8.323580150061948, y: 57, z: -25.522234535398624 } 20
+STEP Vec3 { x: -9.508623940470315, y: 57, z: -24.683326811727806 } 20
+STEP Vec3 { x: -9.506520154694197, y: 58, z: -23.5 } 20
+STEP Vec3 { x: -8.5, y: 59, z: -24.5 } 20
+STEP Vec3 { x: -8.500000000000002, y: 60, z: -23.5 } 20
+STEP Vec3 { x: -7.5, y: 61, z: -23.500000000000032 } 20
+STEP Vec3 { x: -7.5, y: 62, z: -24.5 } 20
+STEP Vec3 { x: -6.5, y: 63, z: -23.407495630657245 } 20
+STEP Vec3 { x: -7.5, y: 63, z: -22.5 } 20
+STEP Vec3 { x: -7.499999999999996, y: 63, z: -21.5 } 20
+STEP Vec3 { x: -7.5, y: 63, z: -20.5 } 20
+STEP Vec3 { x: -7.499999999999996, y: 63, z: -19.5 } 20
+STEP Vec3 { x: -7.5, y: 64, z: -18.5 } 20
+STEP Vec3 { x: -7.500000000000002, y: 65, z: -17.5 } 20
+STEP Vec3 { x: -7.499999999999982, y: 65, z: -16.667708818249185 } 20
+STEP Vec3 { x: -7.500000000000002, y: 65, z: -15.5 } 20
+STEP Vec3 { x: -7.500000000000002, y: 64, z: -14.457568783568558 } 20
+STEP Vec3 { x: -7.500000000000002, y: 64, z: -13.5 } 20
+STEP Vec3 { x: -7.500000000000002, y: 63, z: -12.457568783568558 } 20
+STEP Vec3 { x: -7.500000000000002, y: 63, z: -11.5 } 20
+STEP Vec3 { x: -7.499999999999982, y: 63, z: -10.667708818249185 } 20
+DRY_STANCE Vec3 { x: -7.499999999999982, y: 63, z: -10.667708818249185 }
+CUT Vec3 { x: -7, y: 64, z: -11 } spruce_log 6 0
+CUT Vec3 { x: -7, y: 63, z: -11 } spruce_log 6 0
+STEP Vec3 { x: -6.6791969233357245, y: 63, z: -10.529905553390229 } 20
+INTAKE 2
+CUT Vec3 { x: -7, y: 65, z: -11 } spruce_log 6 2
+CUT Vec3 { x: -7, y: 66, z: -11 } spruce_log 6 3
+WOOD_ACTUAL 4
+STEP Vec3 { x: -6.527776230702203, y: 63, z: -11.348306367082962 } 20
+RETENTION_FAILURE model partial
+TERMINAL 2026-10-18T18:11:58.398Z Vec3 { x: -6.527776230702203, y: 63, z: -11.348306367082962 } 20 [ [ 'dirt', 6 ], [ 'spruce_log', 4 ] ] [
+  { p: Vec3 { x: -8, y: 55, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 58, z: -25 }, full: false },
+  { p: Vec3 { x: -7, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -26 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -26 }, full: false }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P2/P4 completed10570 18:10:45 actualLOW322(25.5004,8,201.332),81newsteps/twoBLACKcuts/three10FULL+terminal,HP3food16;stone108/wood5 B31/NBR1/NR4. Next322->402. P3 capbudget warning valid; primary ending costs currently2netcaps/leg, do not infer handcutrece
+p1: ipt. P2 woodpacketfailed/noarrow read; no primary ammo assumption.
+p3: P3 portaltransport FAILED two methods at freshbody(2.3,63,89.5),HP14.9/food17/berries15/caps6: pathfinder35s TIMEOUT, then bounded manual diagonaljump to(1,64,90)2.5s madeZERO displacement. Reconciled10575 nativefullsand target/snowbody, no nearbyhostile. 
+p3: Changing assumption: small in-place jump/control test before any new route retry; 18:15 courierclock preserved and primary should price no incomingfood. No Netherentry or delivery.
+--- p2 now: (-6.5, 63, -11.3) in overworld, health 20/20, food 20/20, alive

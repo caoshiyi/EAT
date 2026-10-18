@@ -1,0 +1,39 @@
+program #10572 on p2: 6.3 s
+--- output ---
+STEP Vec3 { x: -7.520256098969094, y: 61, z: -23.482369295934735 } 20
+STEP Vec3 { x: -8.56236274176903, y: 60, z: -23.497503928171348 } 20
+STEP Vec3 { x: -8.497559918771374, y: 59, z: -24.537918306745578 } 20
+STEP Vec3 { x: -9.495999585584478, y: 58, z: -23.5 } 20
+STEP Vec3 { x: -9.499334882668155, y: 57, z: -24.54241500851808 } 20
+STEP Vec3 { x: -8.682488026062249, y: 57, z: -25.507692125079583 } 20
+STEP Vec3 { x: -7.4798113588628805, y: 56, z: -24.478994482324687 } 20
+FULL [
+  { p: Vec3 { x: -8, y: 55, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 58, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -26 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -26 }, full: true }
+]
+END 2026-10-18T18:10:07.901Z Vec3 { x: -7.4798113588628805, y: 56, z: -24.478994482324687 } 20 [ [ 'dirt', 4 ] ] [
+  { p: Vec3 { x: -8, y: 55, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 58, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -7, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 56, z: -25 }, full: true },
+  { p: Vec3 { x: -9, y: 57, z: -25 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -24 }, full: true },
+  { p: Vec3 { x: -8, y: 56, z: -26 }, full: true },
+  { p: Vec3 { x: -8, y: 57, z: -26 }, full: true }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P2/P4 completed10558 18:09:01 actualLOW241(18.5,8,145.332),81newsteps/2cuts/three10FULL+terminal,3HP16food;stone106/wood5 B31/NBR3/NR4/noBLACK. Next241->322. P3 HOMEstate read; no newkit dependency. Food enables health3->safecombat, currentlibrary food/rod
+p1:  unknown; primary will inspect existing chest if courierclock fails. P2 arrowpacket can enable ordinary measured shot after bow, no supply assumed.
+--- p2 now: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive
