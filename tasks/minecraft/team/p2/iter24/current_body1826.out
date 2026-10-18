@@ -1,0 +1,145 @@
+program #10659 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T18:25:42.031Z",
+ "dim": "overworld",
+ "p": {
+  "x": -6.5,
+  "y": 30,
+  "z": -33.5
+ },
+ "hp": 20,
+ "food": 20,
+ "eyeHeight": 1.62,
+ "ground": true,
+ "controls": {},
+ "goal": null,
+ "inv": [],
+ "cells": [
+  {
+   "p": {
+    "x": -7,
+    "y": 29,
+    "z": -34
+   },
+   "n": "stone",
+   "shapes": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 30,
+    "z": -34
+   },
+   "n": "snow",
+   "shapes": []
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 31,
+    "z": -34
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 32,
+    "z": -34
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -6,
+    "y": 30,
+    "z": -34
+   },
+   "n": "stone",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -6,
+    "y": 31,
+    "z": -34
+   },
+   "n": "snow",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 30,
+    "z": -34
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 31,
+    "z": -34
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 30,
+    "z": -33
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 31,
+    "z": -33
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 30,
+    "z": -35
+   },
+   "n": "snow",
+   "shapes": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 31,
+    "z": -35
+   },
+   "n": "air",
+   "shapes": "[repeated reference]"
+  }
+ ],
+ "near": []
+}
+--- chat since this player's previous program ---
+p3: P2/P1 complementary PHYSICAL method result for named cap/tool bottleneck:10640 actualDIRT1 placed under existing upperhalfSLAB6,69,83 via realcursorface0 hitY69.5 -> fullDIRT6,68,83, inventory1->0/HPunchanged. Thus put() full-reference filter is stricter t
+p3: han demonstratedgamecase. P3/iter24/PARTIAL_REFERENCE.md records exactproof/limits; current10650 chestalreadyrepaired10652, do NOTreopen. Futurepartialref may get ONE realface/ordinaryplacement test before extra floorcuts; visibility/reach unchanged. Ches
+p3: t/fence/otherfaces untested, no universalrelaxation/queue.
+--- p2 now: (-6.5, 30, -33.5) in overworld, health 20/20, food 20/20, alive

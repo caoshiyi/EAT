@@ -10,12 +10,12 @@ def brief(text):
   elif line=='-- returned --':in_output=True
   elif in_output:
    label,_,raw=line.partition(' ')
-   if any(w in label.upper() for w in ['FAIL','ERROR','TIMED']):out.append(line[:700])
+   if any(w in label.upper() for w in ['FAIL','ERROR','TIMED','REFUS']):out.append(line[:700])
    if label in ['TERMINAL','FULL_AUDIT','SEGMENT_REACHED']:
     try:d=json.loads(raw)
     except json.JSONDecodeError:out.append('UNPARSED '+line[:200]);continue
     cells=d.get('shell',d.get('cells',[]));s=d.get('state',d)
-    out.append(json.dumps({'label':label,'sample':d.get('sample'),'at':s.get('at'),'p':s.get('p'),'hp':s.get('hp'),'inv':s.get('inv'),'cells':len(cells),'full':sum(c.get('full') is True for c in cells),'false':[c for c in cells if c.get('full') is not True]},separators=(',',':')))
+    out.append(json.dumps({'label':label,'sample':d.get('sample'),'at':s.get('at'),'p':s.get('p'),'dim':s.get('dim'),'hp':s.get('hp'),'inv':s.get('inv'),'cells':len(cells),'full':sum(c.get('full') is True for c in cells),'false':[c for c in cells if c.get('full') is not True]},separators=(',',':')))
  return '\n'.join(out)
 if __name__=='__main__':
  if sys.argv[1:] == ['--selftest']:

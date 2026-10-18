@@ -1,0 +1,72 @@
+== #10630 2026-10-18T18:18:14 p3 role=capability_producer iter=24 3.7 s
+const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const state=()=>({p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])});console.log('START',state());if(bot.entity.position.distanceTo(new Vec3(6.5,67,82.5))>.4)throw Error('HOME body changed');
+async function face(p,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){await bot.lookAt(p.offset(...a),true);let c=bot.blockAtCursor(4.5);if(c?.position.equals(p)&&(f===null||c.face===f))return c;}throw Error('hidden face '+p);}
+for(const job of [{src:new Vec3(6,68,83),name:'dirt',ref:new Vec3(5,67,83),dest:new Vec3(5,67,82),dir:new Vec3(0,0,-1),f:2},{src:new Vec3(5,68,83),name:'sand',ref:new Vec3(5,67,82),dest:new Vec3(5,68,82),dir:new Vec3(0,1,0),f:1}]){let b=bot.blockAt(job.src);console.log('CUT_PRE',job.src,b?.name);if(b?.name!==job.name)throw Error('material changed');await face(job.src);await bot.unequip('hand');await bot.dig(b,false,'raycast');await bot.waitForTicks(15);console.log('RECEIPT',state(),bot.blockAt(job.src)?.name);const item=bot.inventory.items().find(i=>i.name===job.name);if(!item)throw Error('ordinary receipt absent');await face(job.ref,job.f);await bot.equip(item,'hand');await bot.placeBlock(bot.blockAt(job.ref),job.dir);await bot.waitForTicks(5);console.log('SEALED',job.dest,bot.blockAt(job.dest)?.name,state());if(bot.blockAt(job.dest)?.name!==job.name)throw Error('seal failed');}
+console.log('ENDING',state());
+-- output --
+START {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: []
+}
+CUT_PRE Vec3 { x: 6, y: 68, z: 83 } dirt
+RECEIPT {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: [ [ 'dirt', 1 ] ]
+} air
+SEALED Vec3 { x: 5, y: 67, z: 82 } dirt {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: []
+}
+CUT_PRE Vec3 { x: 5, y: 68, z: 83 } sand
+RECEIPT {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: [ [ 'sand', 1 ] ]
+} air
+SEALED Vec3 { x: 5, y: 68, z: 82 } sand {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: []
+}
+ENDING {
+  p: Vec3 { x: 6.5, y: 67, z: 82.5 },
+  hp: 2.1666641235351562,
+  food: 17,
+  inv: []
+}
+== #10636 2026-10-18T18:19:15 p3 role=capability_producer iter=24 1.5 s
+const{Vec3}=require('vec3');for(let i=0;i<3;i++){console.log('SAMPLE',i,bot.entity.position,bot.health,bot.food,bot.entity.onGround,bot.inventory.items().map(i=>[i.name,i.count]));await bot.waitForTicks(10);}const b=bot.entity.position.floored();for(const d of[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]]){let p=b.offset(...d),q=bot.blockAt(p);console.log('FACE',p,q?.name,q?.shapes);}console.log('NEAR',Object.values(bot.entities).filter(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<12).map(e=>[e.name,e.position]));
+-- output --
+SAMPLE 0 Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 true []
+SAMPLE 1 Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 true []
+SAMPLE 2 Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 true []
+FACE Vec3 { x: 6, y: 66, z: 82 } crafting_table [ [ 0, 0, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 6, y: 69, z: 82 } spruce_slab [ [ 0, 0.5, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 7, y: 67, z: 82 } cobblestone [ [ 0, 0, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 7, y: 68, z: 82 } chest [ [ 0.0625, 0, 0.0625, 0.9375, 0.875, 0.9375 ] ]
+FACE Vec3 { x: 5, y: 67, z: 82 } dirt [ [ 0, 0, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 5, y: 68, z: 82 } sand [ [ 0, 0, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 6, y: 67, z: 83 } white_bed [
+  [ 0, 0, 0, 0.1875, 0.5625, 0.1875 ],
+  [ 0, 0, 0.8125, 0.1875, 0.5625, 1 ],
+  [ 0, 0.1875, 0.1875, 1, 0.5625, 0.8125 ],
+  [ 0.1875, 0.1875, 0, 1, 0.5625, 0.1875 ],
+  [ 0.1875, 0.1875, 0.8125, 1, 0.5625, 1 ]
+]
+FACE Vec3 { x: 6, y: 68, z: 83 } air []
+FACE Vec3 { x: 6, y: 67, z: 81 } sand [ [ 0, 0, 0, 1, 1, 1 ] ]
+FACE Vec3 { x: 6, y: 68, z: 81 } dirt [ [ 0, 0, 0, 1, 1, 1 ] ]
+NEAR [
+  [
+    'skeleton',
+    Vec3 { x: 11.714054306152427, y: 63, z: 82.3153581678717 }
+  ]
+]
