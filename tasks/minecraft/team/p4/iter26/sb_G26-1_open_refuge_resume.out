@@ -1,0 +1,13 @@
+[sandbox] program #59 on p4: 1 s
+--- output ---
+RESUME {"at":"2026-10-18T22:13:02.280Z","p":{"x":4.500000000000038,"y":67,"z":-21.5},"hp":20,"food":17,"inv":[["spruce_planks",12]],"ground":true,"goal":null}
+PUT Vec3 { x: 5, y: 67, z: -22 }
+REFUGE_FAILURE Error: no anchor (3, 67, -22) {"at":"2026-10-18T22:13:02.532Z","p":{"x":4.500000000000038,"y":67,"z":-21.5},"hp":20,"food":17,"inv":[["spruce_planks",11]],"ground":true,"goal":null}
+ENDING {"s":{"at":"2026-10-18T22:13:02.533Z","p":{"x":4.500000000000038,"y":67,"z":-21.5},"hp":20,"food":17,"inv":[["spruce_planks",11]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":66,"z":-22},"n":"grass_block","full":true},{"p":{"x":4,"y":69,"z":-22},"n":"spruce_leaves","full":true},{"p":{"x":5,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":5,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":67,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"n":"air","full":false}]}
+ENDING {"s":{"at":"2026-10-18T22:13:02.785Z","p":{"x":4.500000000000038,"y":67,"z":-21.5},"hp":20,"food":17,"inv":[["spruce_planks",11]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":66,"z":-22},"n":"grass_block","full":true},{"p":{"x":4,"y":69,"z":-22},"n":"spruce_leaves","full":true},{"p":{"x":5,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":5,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":67,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"n":"air","full":false}]}
+ENDING {"s":{"at":"2026-10-18T22:13:03.037Z","p":{"x":4.500000000000038,"y":67,"z":-21.5},"hp":20,"food":17,"inv":[["spruce_planks",11]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":66,"z":-22},"n":"grass_block","full":true},{"p":{"x":4,"y":69,"z":-22},"n":"spruce_leaves","full":true},{"p":{"x":5,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":5,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":67,"z":-22},"n":"air","full":false},{"p":{"x":3,"y":68,"z":-22},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-21},"n":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"n":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 67, -21.5) in overworld, health 20/20, food 17/20, alive

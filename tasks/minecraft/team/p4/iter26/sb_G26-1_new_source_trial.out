@@ -1,0 +1,26 @@
+[sandbox] program #53 on p4: 22 s
+--- output ---
+BEGIN {"at":"2026-10-18T22:09:48.406Z","p":{"x":1.496375,"y":60,"z":-25.51286140132475},"hp":20,"food":19,"inv":[],"ground":true,"goal":null}
+PLAN {"p":{"x":3,"y":66,"z":-24},"status":"success","path":[[1.5,60,-26.5],[2.5,61,-27.5],[2.5,62,-26.5],[2.5,63,-25.5],[2.5,64,-24.5],[2.5,65,-23.5],[3.5,66,-23.5]]}
+ARRIVE {"at":"2026-10-18T22:09:51.829Z","p":{"x":3.5,"y":66,"z":-23.35092706579467},"hp":20,"food":19,"inv":[],"ground":true,"goal":null}
+CUT {"p":{"x":4,"y":67,"z":-23},"s":{"at":"2026-10-18T22:09:55.333Z","p":{"x":3.5,"y":66,"z":-23.35092706579467},"hp":20,"food":19,"inv":[],"ground":true,"goal":null}}
+CUT {"p":{"x":4,"y":68,"z":-23},"s":{"at":"2026-10-18T22:09:58.842Z","p":{"x":3.5,"y":66,"z":-23.35092706579467},"hp":20,"food":19,"inv":[["spruce_log",1]],"ground":true,"goal":null}}
+CUT {"p":{"x":4,"y":69,"z":-23},"s":{"at":"2026-10-18T22:10:02.257Z","p":{"x":3.5,"y":66,"z":-23.35092706579467},"hp":20,"food":19,"inv":[["spruce_log",2]],"ground":true,"goal":null}}
+PLAN {"p":{"x":4,"y":67,"z":-23},"status":"success","path":[[4.5,67,-22.5]]}
+ARRIVE {"at":"2026-10-18T22:10:03.130Z","p":{"x":4.5,"y":67,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",3]],"ground":true,"goal":null}
+WOOD_ACTUAL {"at":"2026-10-18T22:10:03.868Z","p":{"x":4.5,"y":67,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",3]],"ground":true,"goal":null}
+PLANK_ACTUAL {"pre":0,"s":{"at":"2026-10-18T22:10:04.348Z","p":{"x":4.5,"y":67,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["spruce_planks",4]],"ground":true,"goal":null}}
+PLAN {"p":{"x":4,"y":67,"z":-23},"status":"success","path":[]}
+ARRIVE {"at":"2026-10-18T22:10:04.801Z","p":{"x":4.5,"y":67,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["spruce_planks",4]],"ground":true,"goal":null}
+CUT {"p":{"x":4,"y":66,"z":-23},"s":{"at":"2026-10-18T22:10:05.906Z","p":{"x":4.5,"y":66,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["spruce_planks",4]],"ground":true,"goal":null}}
+CUT {"p":{"x":4,"y":65,"z":-23},"s":{"at":"2026-10-18T22:10:07.457Z","p":{"x":4.5,"y":65,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["spruce_planks",4],["dirt",1]],"ground":true,"goal":null}}
+CUT {"p":{"x":4,"y":64,"z":-23},"s":{"at":"2026-10-18T22:10:08.962Z","p":{"x":4.5,"y":64,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["spruce_planks",4],["dirt",2]],"ground":true,"goal":null}}
+PUT Vec3 { x: 4, y: 66, z: -23 }
+ENDING {"s":{"at":"2026-10-18T22:10:09.664Z","p":{"x":4.5,"y":64,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["dirt",3],["spruce_planks",3]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"n":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":5,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"n":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"n":"dirt","full":true}]}
+ENDING {"s":{"at":"2026-10-18T22:10:09.916Z","p":{"x":4.5,"y":64,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["dirt",3],["spruce_planks",3]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"n":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":5,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"n":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"n":"dirt","full":true}]}
+ENDING {"s":{"at":"2026-10-18T22:10:10.167Z","p":{"x":4.5,"y":64,"z":-22.5},"hp":20,"food":19,"inv":[["spruce_log",2],["dirt",3],["spruce_planks",3]],"ground":true,"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"n":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":5,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"n":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"n":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"n":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"n":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"n":"dirt","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 64, -22.5) in overworld, health 20/20, food 19/20, alive

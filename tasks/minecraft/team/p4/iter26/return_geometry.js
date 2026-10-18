@@ -1,0 +1,1 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);const V=bot.entity.position.constructor;console.log('BODY',bot.entity.position,bot.health);for(let z=-24;z<=-19;z++)for(let y=64;y<=70;y++){const b=bot.blockAt(new V(4,y,z));console.log(JSON.stringify({p:b?.position,n:b?.name,sh:b?.shapes}));}
