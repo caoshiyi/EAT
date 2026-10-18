@@ -1,0 +1,138 @@
+program #10469 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "observedAt": "2026-10-18T17:23:05.762Z",
+ "phase": "fresh_terminal_observation",
+ "position": {
+  "x": -7.499999999999924,
+  "y": 56,
+  "z": -24.450492584477125
+ },
+ "containingCell": {
+  "x": -8,
+  "y": 56,
+  "z": -25
+ },
+ "dimension": "overworld",
+ "health": 20,
+ "food": 20,
+ "onGround": true,
+ "eyeHeight": 1.62,
+ "controls": {},
+ "goalPresent": false,
+ "cells": [
+  {
+   "p": {
+    "x": -8,
+    "y": 55,
+    "z": -25
+   },
+   "name": "grass_block",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 58,
+    "z": -25
+   },
+   "name": "grass_block",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 56,
+    "z": -25
+   },
+   "name": "dirt",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 57,
+    "z": -25
+   },
+   "name": "dirt",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 56,
+    "z": -25
+   },
+   "name": "dirt",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 57,
+    "z": -25
+   },
+   "name": "dirt",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 56,
+    "z": -24
+   },
+   "name": "stone",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 57,
+    "z": -24
+   },
+   "name": "stone",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 56,
+    "z": -26
+   },
+   "name": "dirt",
+   "loaded": true,
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 57,
+    "z": -26
+   },
+   "name": "grass_block",
+   "loaded": true,
+   "full": true
+  }
+ ],
+ "allTenFull": true,
+ "inventory": [
+  {
+   "name": "dirt",
+   "count": 2,
+   "durabilityUsed": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive

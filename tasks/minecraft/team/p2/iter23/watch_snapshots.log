@@ -1308,3 +1308,114 @@ p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled 
 #8988 2026-10-18T16:58:05 p1: e good, forcedMoveevents0. East2caps->FOUR10FULL/3HP17food; BASALT2spare retained. Materialchanges jointlyworked, no singled-outcauseclaim. Fields10407/10417 bothfailed; currentacceptedresult10427. Nextactualupperleads/floor+endpoint scan, no sourcefoodwai
 #8989 2026-10-18T16:58:05 p1: t.16:58library deadlineUNMET.
 
+2026-10-18T17:21:40.459308+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+#9013 2026-10-18T17:16:26 p2: late-only; Endbranch stilluntested. Ifblocked earlier, preserve actualfullending, no victoryclaim.
+#9014 2026-10-18T17:17:32 p4: Recorder integration limit for P1 review: startCombatRecorder defaults to60s and auto-stops; choose a budget covering the actual caller, mark immediately BEFORE/AFTER the legal action, and stop in finally. Check elapsed/reason/polls/missingDragon so an exp
+#9015 2026-10-18T17:17:32 p4: ired observer is not called action-window evidence. Actual End HP/event branch remains UNTESTED; OW10319 only proved missing-entity/auto-stop/listener cleanup. No extra prep chain needed.
+#9016 2026-10-18T17:20:45 p2: P1#10464 exact blocker reviewed: prospectiveDOWN56 missing only WESTfoot(-38,56,48)=AIR, WEST57BASALT full, currentBASALT1. Concrete small physicalrepair to review (~<=2min whole): normalvisibleWEST57cut yields2caps; fromnewwindow inspectfloor(-38,55,48) f
+#9017 2026-10-18T17:20:45 p2: ull/visible+nofluid, placegap56, restoreWEST57 (2caps). Then normalownfloor56cut yields1, descend56 and use1 asroof58 againstvisibleexistingref (WEST58NetherBrick), recompute10faces. This changes actuallowerface, not anotherdriver/guardretry; no sourcequot
+#9018 2026-10-18T17:20:45 p2: a or oldclosedflag. Abortphysicalpatch ifactualfloor/faceprecondition fails, preservecurrentfull57. P2now10460 fullysealed56/20HP/DIRT2, all foodchainsclosed.
+
+2026-10-18T17:22:00.754304+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:22:21.014821+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:22:41.191892+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:23:01.377563+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:23:21.630646+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:23:41.807103+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:24:01.984246+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+#9019 2026-10-18T17:23:51 p2: P2 provisionalP2.md+ITER23_PLAN+fulljournal committedab2c438a at17:17:52UTC beforemin90. Fresh10469 17:23:05 confirms current OW(-7.5,56,-24.45049) HP20food20/DIRT2/allTenFull/no controls/goal. Floor55/NORTHhead57 nowGRASS (naturalmaterialchange), currenth
+#9020 2026-10-18T17:23:51 p2: eadercorrected. Own2deaths/allfoodgiftfailures explicit, score17:15SAVED0/11/172 SAVEFAILED. Continuefeasibleintegrationto17:34, no physicalP2/sourcequeue. P1 currentattemptstillprimary; no victory/Endclaim.
+
+2026-10-18T17:24:22.300768+00:00
+p1: (-36.5, 57, 48.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23)
+    held: basalt x1; inventory: basalt x1, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+
+2026-10-18T17:24:42.472284+00:00
+p1: (-36.5, 59, 49.3) in the_nether, health 3/20, food 16/20, alive; controlled by capability_builder (iteration 23), running program #10472 for 7.6 s
+    held: stone_pickaxe x1; inventory: basalt x2, spruce_sapling x1, stone_pickaxe x1, wooden_pickaxe x1
+p2: (-7.5, 56, -24.5) in overworld, health 20/20, food 20/20, alive; controlled by integration_lead (iteration 23)
+    held: dirt x2; inventory: dirt x2
+p3: (6.5, 67, 82.7) in overworld, health 4.5/20, food 17/20, alive; free
+    held: nothing; inventory: empty
+p4: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive; controlled by independent_explorer (iteration 23)
+    held: gravel x1; inventory: gravel x1
+#9021 2026-10-18T17:24:34 p1: PROVISIONAL completecommitted7d6118c1 at17:23:25 beforeminute90.10468 literalFULL3HP16food(-37,57,48), STONEwear31/WOODwear5/BASALT1. Freshsavedeval0/11/deaths172 SAVEFAILED; ownnewdeath0/P2+2. Furtherdown10464/67 REFUSEDbeforeedit atWest56AIR/support55AIR
+#9022 2026-10-18T17:24:34 p1: . No broad recoverychain. Remainingprimarytransport: attemptexistingupperagain with actualnearby-threat/contactmargin4.5m +normalheight/headclear contract (old12m gate stopped at7m withoutdamage); recordrisk/outcome, samecallerLOWERpocket fallback fromsour
+#9023 2026-10-18T17:24:34 p1: ce pillar iffails. No hiddenactions/physicschanges; originalbudgetsfailed. No foodpromise.
+
