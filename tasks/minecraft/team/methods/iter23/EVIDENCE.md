@@ -1,15 +1,14 @@
-# Current evidence ledger —17:23 UTC
+# Final current evidence ledger — 2026-10-18T17:46:05.222341+00:00
 
-Latest independent evaluator17:13:42: SAVEFAILED/last-saved **dragon0, milestones11, deaths172** (61/47/26/38). Arena: P2 Zombie17:06:31 and Skeleton17:12:14, two iteration deaths. No verified new dragon effect/End use.
+Latest independent evaluator17:42:45UTC: **dragon0, milestones11, deaths172** (61/47/26/38), programs10485. SAVEFAILED: last-saved world. Arena confirms two P2 deaths17:06:31/Zombie and17:12:14/Skeleton. No new End/dragon effect.
 
-| Actor/work | Current evidence | Limits |
+| Actor / result | Verified evidence | Limit |
 |---|---|---|
-| P1 |17:18 status Nether(-36.5,57,48.3),HP3/food16,BASALT1,both picks/sapling |10462 lower-body repair now four10full/HP3;10464 and10467 lower-face admission refusals preserved that full state before edits. No further descent/LOW/End route |
-| P2 |Second new life at(-7.5,56,-24.5),HP20/food20,DIRT2 |Old33GRAVEL/FLINT lost. 10460 four10full/HP20 independently verified. No old stock/food promise |
-| P4 |Retained(-8.486,26,-37.7),HP20/food20,GRAVEL1; last explicit full refresh10421 |No physical gift/escape/source work; old outside-floor model invalidated by AIR |
-| P3 |Unplayed(6.5,67,82.7),HP4.5/food17,empty |No extra player/control |
-| Actual receipt/tool cases |10230 cobble2→5;10233 tool craft/use;10420 gravel cut/delayed receipt/reclose;10424 basalt cut/drop/stability but no pickup |Explicit owner reports/raw corroboration; case limits, not universal wait/API proof |
-| Physical use cases |10304 padded four nodes/fullending;10359 HOME endpoint;10373 Nether room;10391 connector;10399 South52m;10427 changed westpassage/fullending;10428 two-cap receipt/move/reclose |Historical capabilities, some now superseded after exit. Whole route/objective unqualified |
-| Methods defects/corrections |10453/56 ambiguous discarded roof refusals;10440 fallback admission mismatched actual post-mutation cell |Proposed changed small diagnostics; no claimed new physical fix yet |
+| P1 |(-53.50005,8,63.52457)Nether,HP3/food16,woodwear5/stonewear92; BASALT31/BLACKSTONE13/NBRICK4/NETHERRACK4/sapling.10482 threecaprepair/four10full;10484 fresh10full/no controls/goal |10477 TIMEDOUT165s beforeending; laterrepairlate. No LOWroad/End/currentfood |
+| P2 |(-7.5,56,-24.45049)OW,HP20/20,DIRT2;10480 fresh10loadedfull |Two priorbodies/materials lost; no food/gift promise |
+| P4 |(-8.48595,26,-37.7)OW,HP20/20,GRAVEL1;10479 threefullsamples/returnedfull |No transfer/source action. OutsidefloorAIR invalidatesoldexit |
+| P3 |Unplayed(6.5,67,82.7),HP4.5/food17,empty |No extra control |
+| Reusable fixes |Receipt math10230; snapshot10301/10484; P2modelhelper10337→P1#10427; timedprobe10420→P1#10424; changeddoorpass10427/twocapmove10428 |Specific owner-reported cases, no universalwait/route/APIcause |
+| Proposed / unvalidated |Sharedtracefunction, path-cellfunction, reference/admissionlogging and self-deadline contracts |Do not count documented proposal as actual fix; physical ending needs ownertest |
 
-Supplied terminal snapshot validated in10301; supplied path-cell/sharedtrace code not validated as supplied. P2 model helper actual peer use10427 verified. Cost100 soft-penalty assertion retracted; mapping/bytecode investigation excluded. Earlier detailed ledger archived EVIDENCE_TO_1718.md. Independent closure complete/committed; continue material changes and scheduled final window.
+Independent closure committed16:57 and final-window captures17:36:12/17:42:44 verified. P1 finalheader now matches actualrepair; P2 ownbody/lateoverride matches; P4 ownbody matches, its olderP1 section superseded independently. Detailed past ledger EVIDENCE_TO_1718.md. No pending finalcommand; append only material changes.

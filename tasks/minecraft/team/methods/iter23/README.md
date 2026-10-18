@@ -1,20 +1,19 @@
-# Current methods support —17:18 UTC
+# Methods handoff — 2026-10-18T17:46:05.222341+00:00
 
-Nonplaying reviewer. No player programs/chat, agents or Minecraft strategy. Owners alone review/run proposed changes. Current actor observations: [EVIDENCE.md](EVIDENCE.md). Complete independent closure was committed16:57; [review and later changes](../../ITER23_REVIEW.md).
+Independent review is complete/committed; latest [ITER23_REVIEW.md](../../ITER23_REVIEW.md) and [EVIDENCE.md](EVIDENCE.md) supersede old actor snapshots. Saved score17:42:45: dragon0/11milestones/172deaths, SAVEFAILED; two P2 deaths. P1 is retained atNether(-53.50005,8,63.52457),HP3/food16 with bothpicks/materials, not LOW traversal/End access. P2/P4 retained in their separate OW rooms; P3 unplayed.
 
-Current priorities:
+Working capabilities, with limits:
 
-- P1: [P1_ROOF_REFUSAL_REVIEW.md](P1_ROOF_REFUSAL_REVIEW.md). #10456 ended9/10 and discarded all face-refusal reasons; log all six reference names/loaded/full and actual cursor/refusal before concluding “no reference.” Latest status17:18 has body one cell lower at(-36.5,57,48.3),HP3; old roof coordinates are now historical. Recompute actual occupied geometry. No new legal-reference/placement claim without owner result.
-- P2: [P2_RESOURCE_GATE_FAILURE.md](P2_RESOURCE_GATE_FAILURE.md). Two deaths; current empty/new life supersedes all old gravel/food commitments. Exact10440 fallback existed but admitted only(-7,26,-31), while failed body floored(-8,24,-31). Check admission on expected post-mutation failure states before long extension. No automatic recovery/source chain.
-- Shared: [SETTLE_TRACE_ACCEPTANCE.md](SETTLE_TRACE_ACCEPTANCE.md), [paired receipt cases](PAIRED_RECEIPT_REVIEW.md), [actual P2 result](P2_HEAD_RECEIPT_RESULT.md). Documented API-only observations; no server cause inferred. Supplied trace function is still unvalidated as supplied. Operators' own probes are separately credited.
+- `fresh_terminal_observation.js`: supplied read-only current-cell snapshot, actually used by P2#10301/#10480 and P1#10484. Negative coordinates/ten loaded cells/controls/inventory cases corroborated. No rescue, footprint or permanent safety proof.
+- P2 `model_with_receipt.js`: owner#10337 success0 versusnoPath0, then actual P1 use#10427 SUCCESS2 before passage. Model status is not traversal.
+- P2 ordinary receipt probes#10420/#10428, adopted by P1#10424 then changed#10427. Cut/drop/collection/settled endpoint are distinct. No universal wait or API-cause claim. See PAIRED_RECEIPT_REVIEW.md and P2_HEAD_RECEIPT_RESULT.md.
+- `capture_readonly.py`: only arena status/events/chat/programs and optional evaluator, exact timestamps/statuses/raw retained; small-smoked before wider use. `brief_capture.py`: explicitly clipped excerpts plus literal cell counts; positive/negative real-record smokes retained.
+- Peer P1 `p1/iter23/audit_output.py`: adopted by methods after success and failed-primary/good-fallback tests. It omits unknown audit labels and some endpoint failures from summary lists; inspect errors, stage and exact ten-cell arrays.
 
-Validated reusable cases:
+Proposals still UNVALIDATED AS SUPPLIED: `settle_receipt_trace.js`, `annotate_path_cells.js`, and later before-admission logging / self-deadline contracts. Each linked review specifies evidence, assumptions and owner-run acceptance. Only player owners may review/run proposed JS; reviewer runs none. No old fixed-coordinate caller should be replayed as current capability.
 
-- Supplied fresh_terminal_observation.js: P2#10301 matched independent ten-cell room/negative coordinates. Snapshot case only; not rescue or footprint proof.
-- P2 model_with_receipt.js: success0 vsnoPath0 in10337, actual P1 peer use SUCCESS2 before10427 doorway passage. No universal route validity.
-- P1 offline audit_output.py adopted by methods after actual success/failure cases. It omits unknown labels and endpoint-only errors from some summary fields; inspect raw errors/stage/count.
-- Owned brief_capture.py emits literal counts; real positive, failed-primary and open-ending smokes passed. capture_readonly.py runs only arena status/events/chat/programs/evaluator. Raw capture timestamps/statuses preserved.
+Important retained lessons: TIMEOUT_ENDING_REVIEW.md separates165s timed-out depth from later#10482 repair. P2_RESOURCE_GATE_FAILURE.md records exact fallback admission mismatch(-7,26,-31) versusactual(-8,24,-31). P1_ROOF_REFUSAL_REVIEW.md is historical after the lower-body repair; no current nine-face warning. Current endings must be observed after final mutation.
 
-Corrections: cost100 is hard rejection per installed docs; original soft-penalty concern retracted. Inherited public-client mapping/bytecode source investigation is EXCLUDED; no parent-to-BODY premise admissible. Installed allowed docs/world records leave dragon-specific runtime semantics unresolved.
+Reviewer corrections: cost100 is hard rejection per installed docs; soft-penalty assertion retracted. Inherited public-client mapping/bytecode investigation EXCLUDED; no parent-to-BODY premise admissible. Dragon runtime semantics unresolved under allowed sources.
 
-Earlier offers preserved in README_TO_1718.md, with original hypotheses/results and withdrawals. No token estimate: unavailable. Final decisive/handoff checks17:35:59–17:45:59; cutoff17:55:47. No remote push.
+Earlier hypotheses, failures and refinements remain in dated notes/archives and EVOLUTION_HISTORY. No strategies prescribed, no agents/player programs/chat, no tools/server/player-file edits or remote push. Token usage unavailable. Two final-window passes completed17:36/17:42; remaining monitoring through17:55:47 is material-only, no pending closure dependency.
