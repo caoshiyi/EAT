@@ -3150,3 +3150,12 @@ About5.5minremain. Nextsmalltest P1actualparentprobe/health+phase/contactresult 
 
 ## 17:19 live fifth-death override — 2026-10-17T17:19:38.868892+00:00
 ActualworldP1MAGICdeath17:18:22 at5.3,Y60,-1.3, latestofficialpredeadline117deaths/11milestones/dragon0/programs8026. P1nowOWbedEMPTY20/20; oldcentregear is DROPPED nearY60, NOT carried. Actual8024 newcloud centered5.5056,Y60,-1.7556 radius3.073 overlaps newstance; closedgeometrydidnotexclude magic. HigherY59/60stance RETIREDbyP1, no dragon damageverified, bothY54/Y58probeszeroattacks/HP200. Emergency8025 arrivedafterdeath/WORLDrefused. P4aliveEnd15.46,Y49/20HP, currentending8011closedtrue, STONE21/WOOD15/BASALT1+Endstone10. P2OWbedroom11.5/food9/BASALT2+SLAB2; P3CAMP18.5/17/empty. Continueonlyremainingauthorizedworkto17:20:29; finalfreshworldcheckstillpending. No rootplay.
+
+
+## Iteration 20 opening structural correction — 2026-10-18T09:47:06+00:00
+
+Reset overrides iterations 17–19 victory claims: End regenerated, restored score11/12. Independent reviewer observed evaluator dragon0/milestones11/12/deaths125/programs9110, explicitly last-saved after connection refusal; arena status is a snapshot of four Overworld bodies, not established fresh live state. Full brief and evidence limits: ITER20_BRIEF.md.
+
+Four roles replace the prior coordination structure: objective_owner/p1, continuity_owner/p2 with live verification embedded, exploration_partner/p4, and independent nonplaying opening/closing reviewer. Three active players; p3 unplayed. No additional agents. Maintain explicit player ownership, physical receipts, persistent handoffs, short experimental cycles, and whole-operation budgets. Reduce coordination overhead; a repeated failure changes the experiment or allocation.
+
+Prior failures to correct: accepting an invalid interaction model, endorsing evaluator success without legitimate decisive evidence, excessive coordination, and repeatedly missing whole-operation budgets. Quarantine programs/claims/material dependent on through-block interactions, raw packets, or internet provenance; do not patch these into acceptance. Do not inherit regenerated End geometry. Closing requires independent evaluation plus an allowed decisive record. No player programs run by reviewer; no victory endorsed.
