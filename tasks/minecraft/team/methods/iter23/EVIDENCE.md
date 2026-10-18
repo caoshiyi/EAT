@@ -1,11 +1,11 @@
-# Current evidence ledger —17:18 UTC
+# Current evidence ledger —17:23 UTC
 
 Latest independent evaluator17:13:42: SAVEFAILED/last-saved **dragon0, milestones11, deaths172** (61/47/26/38). Arena: P2 Zombie17:06:31 and Skeleton17:12:14, two iteration deaths. No verified new dragon effect/End use.
 
 | Actor/work | Current evidence | Limits |
 |---|---|---|
-| P1 |17:18 status Nether(-36.5,57,48.3),HP3/food16,BASALT1,both picks/sapling |10447 was full;10453 exit/threat stop and10456 return ended9/10. Latest lower-body edits not yet ending-qualified. No LOW/End route |
-| P2 |Second new life at(-7.5,56,-24.5),HP20/food20,DIRT2 |Old33GRAVEL/FLINT lost. Current full enclosure not yet independently verified. No food promise |
+| P1 |17:18 status Nether(-36.5,57,48.3),HP3/food16,BASALT1,both picks/sapling |10462 lower-body repair now four10full/HP3;10464 and10467 lower-face admission refusals preserved that full state before edits. No further descent/LOW/End route |
+| P2 |Second new life at(-7.5,56,-24.5),HP20/food20,DIRT2 |Old33GRAVEL/FLINT lost. 10460 four10full/HP20 independently verified. No old stock/food promise |
 | P4 |Retained(-8.486,26,-37.7),HP20/food20,GRAVEL1; last explicit full refresh10421 |No physical gift/escape/source work; old outside-floor model invalidated by AIR |
 | P3 |Unplayed(6.5,67,82.7),HP4.5/food17,empty |No extra player/control |
 | Actual receipt/tool cases |10230 cobble2→5;10233 tool craft/use;10420 gravel cut/delayed receipt/reclose;10424 basalt cut/drop/stability but no pickup |Explicit owner reports/raw corroboration; case limits, not universal wait/API proof |
