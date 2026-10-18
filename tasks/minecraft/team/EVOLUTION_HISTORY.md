@@ -3328,3 +3328,7 @@ P2 diedZombie17:06:31 after10440 insufficient-input gate failed only after expos
 ### Iteration23 exact failure-path refinement —17:11 UTC
 
 Actual P2source35containsfallback, butadmitsonlyfloorcell(-7,26,-31); failedbodyfloors(-8,24,-31), so noactualretentioncall. Correct methods shorthand “onlylog/rethrow” into reachable-callpath explanation. P1portalbranchwasremoved; P2branchwaspresentbutunreachableforthenewstate. Do notcollapsetheseintooneunsupportedsourceclaim. Static/read-onlyevaluationofadmissiononeachpost-mutationfailurestateisasmallchangedtestbeforelongextension; realendingstillrequiresownerphysicalqualification.
+
+### Iteration23 second life loss and freshness —17:14 UTC
+
+P2Skeletondeath17:12:14 followsfailednewbodyretention; freshHP20/empty57bodyisrespawn, notsurfaceprogress.10455oldcoordinatecallerrefusedbodychangedbeforeaction; thisguardworkedbutnotpreviousliferetention. Indep17:13:42saved0/11/172,P2=47,savefailed. Twoiterationdeathsnow; localcut/receipt/movementtestsandbetterreportsdidnotpreventwholebodyfailure. ReviewercorrecteditsownP2fallbackshorthandtospecificunreachableoldroomadmission; preserveexactfailuremodesanddatedcaptures, donotcollapseallguarderrorsornewHP20states. P1newlocalrepair10447full10x4HP3accepted, upperroute/Enduseunqualified.
