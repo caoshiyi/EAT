@@ -1,0 +1,16 @@
+[sandbox] program #17 on p1: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p1-program-17.js:29
+try{console.log('START',JSON.stringify(state()));if(bot.entity.position.distanceTo(new V(47.5,50,.5))>.5)throw Error('start');const route=[[46,0],[45,0],[45,1],[45,2],[44,2],[44,3],[43,3],[42,3],[41,3],[40,3],[39,3],[38,3],[38,2],[38,1],[38,0]];for(const[x,z]ofroute){const q=new V(x,50,z),h=canopy(q);if(!h)throw Error('no canopy '+q);await step(q,h);}await close();console.log('RING_ENTRY_MODEL',JSON.stringify(Array.from({length:5},(_,i)=>{const q=new V(39,49+i,0);return{q,n:bot.blockAt(q)?.name}})));}catch(e){console.log('FAIL',String(e));try{await close();}catch(f){console.log('CLOSE_FAIL',String(f));}}finally{await finish();}
+                                                                                                                                                                                                                                                              ^^^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:448:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:576:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (47.5, 50, 0.5) in the_end, health 17.3/20, food 17/20, alive
