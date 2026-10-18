@@ -9,7 +9,10 @@ Translates the claude arguments the harness uses and nothing else:
   --dangerously-skip-permissions   --dangerously-bypass-approvals-and-sandbox, unless writing is denied (below)
   --output-format json             always: one claude-style result object on stdout
   --disallowedTools LIST           Write/Edit in LIST -> read-only sandbox (the supervisor); WebSearch/WebFetch in LIST
-                                   -> web search and browser tools off; other names have no Codex counterpart
+                                   -> no web: web search, browser and ChatGPT-apps tools off, and codex runs without
+                                   internet (agent_team/no_net.py: only the model API's hosts, NO_NET_ALLOW, are
+                                   reachable, so neither the agent nor anything its shell starts can fetch the web);
+                                   other names have no Codex counterpart
   --settings JSON                  ignored (Claude Code settings)
   --session-id ID / --resume ID    one persistent conversation per ID: resumed if this ID has a Codex thread
 Codex reads CLAUDE.md as its project instructions, as claude does. CODEX_EFFORT sets the reasoning effort. The prompt comes on stdin, as for claude. Cost is estimated from token counts and the CODEX_PRICE_* environment
@@ -23,6 +26,7 @@ import subprocess
 import sys
 
 CODEX = os.environ.get("CODEX_BIN", "codex")
+API_HOSTS = os.environ.get("NO_NET_ALLOW", "chatgpt.com,.chatgpt.com,openai.com,.openai.com").split(",")
 SESSIONS = pathlib.Path(os.environ.get("CODEX_SESSION_MAP", pathlib.Path.home() / ".codex" / "eat_sessions"))
 
 
@@ -64,11 +68,18 @@ def main():
         flags += ["-c", 'sandbox_mode="read-only"']   # resume has no --sandbox flag
     elif a["bypass"]:
         flags += ["--dangerously-bypass-approvals-and-sandbox"]
-    if {"WebSearch", "WebFetch"} & a["deny"]:
+    no_web = bool({"WebSearch", "WebFetch"} & a["deny"])
+    if no_web:
         flags += ["-c", 'web_search="disabled"', "--disable", "browser_use", "--disable", "in_app_browser",
-                  "--disable", "computer_use"]
+                  "--disable", "computer_use", "--disable", "apps"]
     thread = thread_of(a["session"])
     cmd = [CODEX, "exec", "resume", *flags, thread, "-"] if thread else [CODEX, "exec", *flags, "-"]
+    proxy = None
+    if no_web:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import no_net
+        proxy = no_net.Proxy(API_HOSTS)
+        cmd = proxy.command(cmd)
     p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
     stopped = []
     # a stop (the team's time limit) still leaves a result: the agent's last message so far
@@ -96,6 +107,8 @@ def main():
         elif t in ("turn.failed", "error"):
             errors.append(str((e.get("error") or {}).get("message") or e.get("message") or e))
     p.wait()
+    if proxy:
+        proxy.close()
     if stopped:
         errors.insert(0, "Stopped before finishing. Last message so far:\n" + (last or "(none)"))
 

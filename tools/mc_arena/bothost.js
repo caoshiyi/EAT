@@ -1,8 +1,8 @@
 // Bot host of the minecraft task: four mineflayer bodies (p1..p4), the program runner and a local HTTP API used only
 // by tools/mc_arena.py, plus a third-person prismarine view per body. Started and supervised by `mc_arena.py up`.
 //
-// Environment: MC_DIR (.work/mc), MC_HOST/MC_PORT (the server), MC_API_PORT (25580), MC_VIEW_PORT (3001: p1, 3002: p2, ...).
-// What a body may attack, use, dig or place on: sight.js.
+// Environment: MC_DIR (.work/mc), MC_HOST/MC_PORT (the server), MC_API_SOCK (MC_DIR/run/api.sock: the API's unix
+// socket), MC_VIEW_PORT (3001: p1, 3002: p2, ...). What a body may attack, use, dig or place on: sight.js.
 'use strict'
 const fs = require('fs')
 const http = require('http')
@@ -20,7 +20,7 @@ const RECORDS = path.join(MC_DIR, 'records')
 const LOCKS = path.join(MC_DIR, 'locks.json')
 const HOST = process.env.MC_HOST || '127.0.0.1'
 const PORT = parseInt(process.env.MC_PORT || '25565')
-const API_PORT = parseInt(process.env.MC_API_PORT || '25580')
+const API_SOCK = process.env.MC_API_SOCK || path.join(MC_DIR, 'run', 'api.sock')
 const VIEW_PORT = parseInt(process.env.MC_VIEW_PORT || '3001')
 const VERSION = '1.20.4'
 const PLAYERS = ['p1', 'p2', 'p3', 'p4']
@@ -330,27 +330,17 @@ function writeLocks (locks) {
   fs.renameSync(LOCKS + '.tmp', LOCKS)
 }
 // Who is asking: the agent process (codex exec / claude --print) nearest above the process that opened the connection.
-// Found from the socket itself, so it cannot be claimed: not by EAT_ROLE, not by a direct HTTP request, not by an agent
-// an agent starts (that one is its own agent). null when no agent is above (a person or the harness).
+// Found from the socket itself (SO_PEERCRED: the pid that connected), so it cannot be claimed: not by EAT_ROLE, not by
+// a direct HTTP request, not by an agent an agent starts (that one is its own agent). null when no agent is above (a
+// person or the harness).
 function peerAgent (sock) {
   try {
-    const hex = n => n.toString(16).toUpperCase().padStart(4, '0')
-    let inode = null
-    for (const f of ['/proc/net/tcp', '/proc/net/tcp6']) {
-      for (const line of fs.readFileSync(f, 'utf8').split('\n').slice(1)) {
-        const c = line.trim().split(/\s+/)
-        if (c[1] && c[1].endsWith(':' + hex(sock.remotePort)) && c[2] && c[2].endsWith(':' + hex(sock.localPort))) { inode = c[9]; break }
-      }
-      if (inode) break
-    }
-    if (!inode) return null
-    let pid = null
-    for (const d of fs.readdirSync('/proc')) {
-      if (!/^\d+$/.test(d)) continue
-      try {
-        if (fs.readdirSync(`/proc/${d}/fd`).some(fd => { try { return fs.readlinkSync(`/proc/${d}/fd/${fd}`) === `socket:[${inode}]` } catch (e) { return false } })) { pid = d; break }
-      } catch (e) {}
-    }
+    // Node has no SO_PEERCRED; a python3 child reads it from the connection's fd, passed as its fd 3
+    const r = require('child_process').spawnSync('python3', ['-c', 'import socket,struct;s=socket.socket(fileno=3);' +
+      'print(struct.unpack("3i",s.getsockopt(socket.SOL_SOCKET,socket.SO_PEERCRED,12))[0]);s.detach()'],
+    { stdio: ['ignore', 'pipe', 'ignore', sock._handle.fd], encoding: 'utf8', timeout: 10000 })
+    let pid = r.stdout.trim()
+    if (!/^\d+$/.test(pid) || pid === '0') return null
     for (let n = 0; pid && pid !== '1' && n < 64; n++) {
       const argv = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8').split('\0')
       const exe = path.basename(argv[0] || '')
@@ -511,7 +501,7 @@ function startView (body, port) {
   views[body.name] = { reset: () => { for (const s of sockets) s.disconnect(true) } }
 }
 
-// ---- HTTP API (127.0.0.1 only; used by tools/mc_arena.py) ----
+// ---- HTTP API (on a unix socket, MC_API_SOCK; used by tools/mc_arena.py) ----
 
 function status () {
   const locks = readLocks()
@@ -582,7 +572,10 @@ function shutdown () {
 process.on('SIGTERM', shutdown)
 process.on('SIGINT', shutdown)
 
-api.listen(API_PORT, '127.0.0.1', () => log(`api on 127.0.0.1:${API_PORT}`))
+// A unix socket reaches agents whose network namespace has no route to the host's 127.0.0.1 (agent_team/no_net.py).
+fs.mkdirSync(path.dirname(API_SOCK), { recursive: true })
+try { fs.unlinkSync(API_SOCK) } catch (e) { if (e.code !== 'ENOENT') throw e }
+api.listen(API_SOCK, () => { fs.chmodSync(API_SOCK, 0o600); log(`api on ${API_SOCK}`) })
 PLAYERS.forEach((name, i) => {
   startView(bodies[name], VIEW_PORT + i)
   connect(bodies[name])

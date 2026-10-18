@@ -23,9 +23,10 @@ Harness only (agents never run these):
     mc_arena.py down     save the world, stop the bot host and the server, confirm both exited
 
 Records (.work/mc/records/): programs.jsonl, chat.jsonl, events.jsonl; server output in .work/mc/logs/.
-Environment: MC_DIR (.work/mc), MC_API_PORT (25580), MC_JAVA_MEM (6G), EAT_ROLE, EAT_ITER.
+Environment: MC_DIR (.work/mc), MC_API_SOCK (.work/mc/run/api.sock), MC_JAVA_MEM (6G), EAT_ROLE, EAT_ITER.
 """
 import argparse
+import http.client
 import json
 import os
 import re
@@ -36,8 +37,6 @@ import subprocess
 import sys
 import threading
 import time
-import urllib.error
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -48,7 +47,7 @@ RECORDS = MC / "records"
 LOGS = MC / "logs"
 RUN = MC / "run"
 HOST_DIR = ROOT / "tools" / "mc_arena"
-API = f"http://127.0.0.1:{os.environ.get('MC_API_PORT', '25580')}"
+API_SOCK = Path(os.environ.get("MC_API_SOCK", RUN / "api.sock"))   # the bot host's API (a unix socket: see bothost.js)
 PLAYERS = ("p1", "p2", "p3", "p4")
 UP_TIMEOUT = 300           # seconds `up` waits for every body to be in the game
 UNRESPONSIVE = 60          # seconds without an API answer before the supervisor restarts the bot host
@@ -75,11 +74,27 @@ def read_jsonl(name: str) -> list[dict]:
     return out
 
 
+class _UnixHTTP(http.client.HTTPConnection):
+    def connect(self):
+        self.sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+        self.sock.settimeout(self.timeout)
+        self.sock.connect(str(API_SOCK))
+
+
 def api(method: str, path: str, data: dict | None = None, timeout: float = 10):
-    req = urllib.request.Request(API + path, method=method, data=None if data is None else json.dumps(data).encode(),
-                                 headers={"content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+    conn = _UnixHTTP("localhost", timeout=timeout)
+    try:
+        conn.request(method, path, body=None if data is None else json.dumps(data).encode(),
+                     headers={"content-type": "application/json"})
+        r = conn.getresponse()
+        body = r.read()
+    except http.client.HTTPException as e:
+        raise OSError(f"bot host API: {e!r}") from e
+    finally:
+        conn.close()
+    if r.status != 200:
+        raise OSError(f"bot host API answered {r.status}: {body[:500]!r}")
+    return json.loads(body)
 
 
 # ---- RCON (harness only: save-all, stop, list) ----
