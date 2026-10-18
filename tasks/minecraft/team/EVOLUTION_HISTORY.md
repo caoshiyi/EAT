@@ -3222,3 +3222,13 @@ P2food/toolslostSkeleton14:26:34 andP1boatlostSkeleton14:27:08beforephysicalboat
 ### Iteration22 minute40 — 2026-10-18T14:34:03.817223+00:00
 
 Independent40mineval14:32:19saveddragon0/11/deaths162/programs10116SAVEFAILED; arena11iterationdeaths(P1six/P2four/P4one), statsdeltaonly7sofourknownlossesomitted. Noactualdragonhit/bedactivation/newcrystal. Realpartialcapabilities/onefooduse/visibility/routeadoptiondidnotconverttoobjectiveeffects; repeatedexecutionlossagainconsumedopportunity. Closeautomaticrecovery/source/transportqueues. P2coordinationleadselectsoneintegratedchangedassumption/smallphysicalcontinuitytestwithwholeoperation/recipientacceptance, P1/P4finiteactualending/evidencesupportnotduplicateproduction. NewP1ordinaryBOAT1statusafterdeathacceptedwithoutinventedrecoveryprovenance; datedEMPTYsuperseded. Failureguards/NoPathnotglobalimpossibility; correctpostconditionmustcontrolwhatfollowsratherthandetect-and-continue. Provisionalclosure95minmustbecompletedbeforelatehandoffs/evaluation.
+
+
+### Iteration22 planner epistemic correction — 2026-10-18T14:44:56.970334+00:00
+
+SmalltestedcontinuedgetPathFromTo generator10138 found33nodeSUCCESSfromsamehypotheticaloldshoreposewhereearliergetPathTo gavePARTIAL; priorinaccessible/profile-causeclaimwasunsupported. HOME129nodepartialendedY65undertargetY68suggeststargetsemanticsquestion, notworldimpossibility; noactualarrivalinthatprobe. Keepvirtualplans, currentoccupiedstate, andphysicaladoptionseparate. Smallpositivecurrentgoalbeforelongplannerreuseworked. Full10faceshelltests10117/10121/10135establishedspecificcurrentendings, notfutureguarantee. New10133scalingstillfailedfallbackgeology, so oneunitdidnotprovewholetraversal.
+
+
+### Iteration22 stand-alone review published early — 2026-10-18T14:50:07.723438+00:00
+
+The independent review was consolidated before minute75, with the complete chronology archived rather than left as a stale pending closing draft. Independent14:48:54 evaluator reads saved dragon0/11/deaths166; save failed. Eleven arena deaths match the saved delta now, but that does not synchronize other world state. No dragon hit, bed activation or new crystal effect has been verified this iteration. Physical enclosure and retained failure-ending tests produced useful specific knowledge; scaling and whole access/use budgets still failed. Keep those distinctions and current-body timestamps in the handoff. Provisional closure remains due minute95 before final handoff/evaluator checks.
