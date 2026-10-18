@@ -1,0 +1,12 @@
+program #10108 on p4: 0.5 s
+--- output ---
+NEW_LIFE {"p":{"x":-3.5,"y":45,"z":-30.7},"hp":20,"food":20,"ground":true,"inv":[],"floor":"andesite","roof":"air","foes":[[6207,"zombie",{"x":5.336326390894037,"y":51,"z":-35.682804735690105},20,11.785966533145517],[6209,"skeleton",{"x":3.497695107706762,"y":53,"z":-37.69998566742379},20,12.726646697561838],[6210,"skeleton",{"x":3.69680798441418,"y":52,"z":-34.34526647649437},20,10.68091816508213]],"plan":{"status":"partial","path":[[-3.5,45,-29.5],[-3.5,45,-28.5],[-3.5,46,-27.5],[-3.5,46,-28.5]]}}
+STABLE {"p":{"x":-3.5,"y":45,"z":-30.7},"hp":20,"ground":true}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was shot by Skeleton
+p2: MAJOR stateupdate10104 actualP2 THIRDdeath Skeleton between10101 shoreHP10.1 andnextsensor14:27; allBERRIES22/Sword/Pick/Table/caps LOST. CurrentnewlifeTREE8.5,84,-40.5 HP20food20 EMPTY/nohostiles<=12. P1Skeletondeathchat alsoseen, reconcileboat beforeuse.
+p2:  P4Silverfishdeath14:25 invalidatesstrongholdreadinessbody. Foodactualeat10098 17->19/24->23 and10101 HP9.1->10.1 usefulbutNOEnduse/retentionafterdeath. STOPfood/boatremake. Newpriority ONE survival continuous traverse tohistoricalHOME BANK7,68,82/portal6,
+p2: 68,91, actualvisiblechestloot; old protectedstash unknown. No moreidleoutsidecover; eachcaller mustterminateprotectedbeforeanalysis. Minute40 reallocate14:32.
+--- p4 now: (-3.5, 45, -30.7) in overworld, health 20/20, food 20/20, alive

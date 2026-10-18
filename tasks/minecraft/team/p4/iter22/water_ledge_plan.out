@@ -1,0 +1,258 @@
+program #10140 on p4: 0.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": -2.3,
+  "y": 45,
+  "z": -30.537909072279245
+ },
+ "hp": 20,
+ "ledges": [
+  {
+   "p": {
+    "x": -6,
+    "y": 53,
+    "z": -27
+   },
+   "f": "grass_block",
+   "roof": "air",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -4.5,
+      53,
+      -26.5
+     ],
+     [
+      -3.5,
+      53,
+      -27.5
+     ],
+     [
+      -2.5,
+      53,
+      -28.5
+     ],
+     [
+      -2.5,
+      53,
+      -29.5
+     ],
+     [
+      -2.5,
+      53,
+      -30.5
+     ],
+     [
+      -2.5,
+      53,
+      -31.5
+     ],
+     [
+      -2.5,
+      54,
+      -32.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -5,
+    "y": 51,
+    "z": -27
+   },
+   "f": "granite",
+   "roof": "water",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -3.5,
+      52,
+      -25.5
+     ],
+     [
+      -3.5,
+      52,
+      -26.5
+     ],
+     [
+      -3.5,
+      52,
+      -27.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -4,
+    "y": 52,
+    "z": -26
+   },
+   "f": "dirt",
+   "roof": "water",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -3.5,
+      52,
+      -26.5
+     ],
+     [
+      -3.5,
+      52,
+      -27.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -3,
+    "y": 53,
+    "z": -31
+   },
+   "f": "grass_block",
+   "roof": "air",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -2.5,
+      53,
+      -31.5
+     ],
+     [
+      -2.5,
+      54,
+      -32.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -3,
+    "y": 53,
+    "z": -30
+   },
+   "f": "grass_block",
+   "roof": "air",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -2.5,
+      53,
+      -30.5
+     ],
+     [
+      -2.5,
+      53,
+      -31.5
+     ],
+     [
+      -2.5,
+      54,
+      -32.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -3,
+    "y": 53,
+    "z": -29
+   },
+   "f": "grass_block",
+   "roof": "air",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -2.5,
+      53,
+      -29.5
+     ],
+     [
+      -2.5,
+      53,
+      -30.5
+     ],
+     [
+      -2.5,
+      53,
+      -31.5
+     ],
+     [
+      -2.5,
+      54,
+      -32.5
+     ]
+    ]
+   }
+  },
+  {
+   "p": {
+    "x": -3,
+    "y": 53,
+    "z": -28
+   },
+   "f": "dirt",
+   "roof": "water",
+   "plan": {
+    "status": "partial",
+    "path": [
+     [
+      -2.5,
+      53,
+      -28.5
+     ],
+     [
+      -2.5,
+      53,
+      -29.5
+     ],
+     [
+      -2.5,
+      53,
+      -30.5
+     ],
+     [
+      -2.5,
+      53,
+      -31.5
+     ],
+     [
+      -2.5,
+      54,
+      -32.5
+     ]
+    ]
+   }
+  }
+ ],
+ "foes": [
+  [
+   6210,
+   "skeleton",
+   {
+    "x": 7.348853995383179,
+    "y": 51,
+    "z": -31.48277906757107
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: P1 RECOVERY actual10135 completed6.6s fullTENfacesFULL,5x20tick20HPstable: OW0.5,Y66,-40.5 HP20food20 BOAT1 controls{}goalNULL, DIRTroof0,68,-41 +DIRTheadwalls-1,67,-41/0,67,-40. ACTUALclosed shelter, no partialsealclaim. OwnSIXdeaths54->60 included14:31:5
+p1: 9Zombie; boatwasLOSTthenordinaryfoundafternewspawn10118, notremade. Original14:28boatuseFAILED; 14:40alsoNOmount/use. ALLwaterapproach/stockRETIRED. SourceDirt/snowtinytool10134 (snowlayers1shapes[] geometricvisible1.2m normaldig) fixedfalsecursorselection
+p1: , fulloutputread. Nowcoveredplanningonly; no furtheridleexposure. WilltestP4generatorpartialcontinuation hypothesis beforefuturetraverse.
+--- p4 now: (-2.3, 45, -30.5) in overworld, health 20/20, food 20/20, alive

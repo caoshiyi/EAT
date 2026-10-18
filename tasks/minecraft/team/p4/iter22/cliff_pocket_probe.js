@@ -1,0 +1,1 @@
+const V=require('vec3').Vec3;return[[-2,54,-30],[-2,54,-31],[-2,54,-29],[-2,54,-28],[-3,54,-33]].map(a=>{const p=new V(...a);return{p,body:[bot.blockAt(p)?.name,bot.blockAt(p.offset(0,1,0))?.name],around:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(o=>[o,bot.blockAt(p.offset(...o))?.name])};});

@@ -1,0 +1,19 @@
+program #10164 on p4: 14 s
+--- output ---
+DIG_PRE {"p":{"x":-4,"y":45,"z":-31},"n":"dirt","rs":[{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","t":0.9600000000000007},{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","t":1.1729999999999945}]}
+DIG_POST {"p":{"x":-4,"y":45,"z":-31},"n":"air","inv":[]}
+BODY {"p":{"x":-3.807309053346402,"y":45,"z":-30.500186233753553},"hp":20}
+DIG_PRE {"p":{"x":-4,"y":44,"z":-32},"n":"dirt","rs":[{"p":{"x":-4,"y":44,"z":-32},"n":"dirt","t":1.8089999999999715},{"p":{"x":-4,"y":44,"z":-32},"n":"dirt","t":2.006999999999965}]}
+DIG_POST {"p":{"x":-4,"y":44,"z":-32},"n":"air","inv":[["dirt",1]]}
+DRY_NODE {"p":{"x":-3.308807473858214,"y":44,"z":-31.7},"hp":20,"ground":true,"target":[-3.5,44,-31.5]}
+CHANGED_ACTUAL_PICKUP {"p":{"x":-3.308807473858214,"y":44,"z":-31.7},"inv":[["dirt",2]],"items":[]}
+DRY_NODE {"p":{"x":-3.539600876298424,"y":45,"z":-30.231288771768366},"hp":20,"ground":true,"target":[-3.5,45,-30.5]}
+LIFT {"p":{"x":-3.7111053574353603,"y":52.73383249405486,"z":-27.496689976856615},"hp":20,"elapsed":2356,"head":"air"}
+FIELD_ISSUE Error: drymovebudget/hp
+ENDING_FAIL Error: wetmovebudget/hp
+END {"issue":"Error: drymovebudget/hp","higher":false,"p":{"x":-3.3,"y":45.495200877005914,"z":-29.514123590462763},"hp":14.333333969116211,"food":20,"ground":false,"inv":[["dirt",2]],"head":"air"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-3.3, 45.5, -29.5) in overworld, health 14.3/20, food 20/20, alive

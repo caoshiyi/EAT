@@ -1,0 +1,28 @@
+program #10117 on p4: 24.3 s
+--- output ---
+DIG_PRE {"p":{"x":-4,"y":46,"z":-32},"n":"dirt","rs":[{"p":{"x":-4,"y":46,"z":-32},"n":"dirt","t":0.3060000000000002},{"p":{"x":-4,"y":46,"z":-32},"n":"dirt","t":0.3060000000000002}]}
+DIG_POST {"p":{"x":-4,"y":46,"z":-32},"n":"air","inv":[]}
+DIG_PRE {"p":{"x":-4,"y":45,"z":-32},"n":"dirt","rs":[{"p":{"x":-4,"y":45,"z":-32},"n":"dirt","t":0.7650000000000006},{"p":{"x":-4,"y":45,"z":-32},"n":"dirt","t":0.9840000000000008}]}
+DIG_POST {"p":{"x":-4,"y":45,"z":-32},"n":"air","inv":[["dirt",1]]}
+BODY {"p":{"x":-3.5000000000000955,"y":45,"z":-31.7},"hp":20}
+DIRT_RECEIPT [["dirt",2]]
+BODY {"p":{"x":-3.499999999999981,"y":45,"z":-30.19268725997736},"hp":20}
+DIG_PRE {"p":{"x":-3,"y":46,"z":-31},"n":"stone","rs":[{"p":{"x":-3,"y":46,"z":-31},"n":"stone","t":0.5280000000000004},{"p":{"x":-3,"y":46,"z":-31},"n":"stone","t":0.5280000000000004}]}
+DIG_POST {"p":{"x":-3,"y":46,"z":-31},"n":"air","inv":[["dirt",2]]}
+DIG_PRE {"p":{"x":-3,"y":45,"z":-31},"n":"stone","rs":[{"p":{"x":-3,"y":45,"z":-31},"n":"stone","t":0.8490000000000006},{"p":{"x":-3,"y":45,"z":-31},"n":"stone","t":1.0949999999999973}]}
+DIG_POST {"p":{"x":-3,"y":45,"z":-31},"n":"air","inv":[["dirt",2]]}
+BODY {"p":{"x":-2.3,"y":45,"z":-30.537909072279245},"hp":20}
+CAP_PRE {"ref":{"x":-4,"y":44,"z":-31},"rs":[{"p":{"x":-4,"y":44,"z":-31},"n":"andesite","t":2.0189999999999655},{"p":{"x":-4,"y":44,"z":-31},"n":"andesite","t":2.243999999999974}],"body":{"x":-2.3,"y":45,"z":-30.537909072279245}}
+CAP_POST {"p":{"x":-4,"y":45,"z":-31},"n":"dirt"}
+CAP_PRE {"ref":{"x":-4,"y":45,"z":-31},"rs":[{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","t":1.352999999999988},{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","t":1.7459999999999738}],"body":{"x":-2.3,"y":45,"z":-30.537909072279245}}
+CAP_POST {"p":{"x":-4,"y":46,"z":-31},"n":"dirt"}
+STABLE_CAPSULE {"p":{"x":-2.3,"y":45,"z":-30.537909072279245},"hp":20,"ground":true,"full":[{"p":{"x":-3,"y":44,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":47,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":45,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":46,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-32},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-32},"n":"stone","full":true},{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","full":true},{"p":{"x":-4,"y":46,"z":-31},"n":"dirt","full":true}]}
+STABLE_CAPSULE {"p":{"x":-2.3,"y":45,"z":-30.537909072279245},"hp":20,"ground":true,"full":[{"p":{"x":-3,"y":44,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":47,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":45,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":46,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-32},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-32},"n":"stone","full":true},{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","full":true},{"p":{"x":-4,"y":46,"z":-31},"n":"dirt","full":true}]}
+STABLE_CAPSULE {"p":{"x":-2.3,"y":45,"z":-30.537909072279245},"hp":20,"ground":true,"full":[{"p":{"x":-3,"y":44,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":47,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":45,"z":-31},"n":"stone","full":true},{"p":{"x":-2,"y":46,"z":-31},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-30},"n":"stone","full":true},{"p":{"x":-3,"y":45,"z":-32},"n":"stone","full":true},{"p":{"x":-3,"y":46,"z":-32},"n":"stone","full":true},{"p":{"x":-4,"y":45,"z":-31},"n":"dirt","full":true},{"p":{"x":-4,"y":46,"z":-31},"n":"dirt","full":true}]}
+END {"issue":null,"p":{"x":-2.3,"y":45,"z":-30.537909072279245},"hp":20,"food":20,"ground":true,"inv":[],"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p2 was slain by Zombie
+[server] p1 was slain by Zombie
+--- p4 now: (-2.3, 45, -30.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,204 @@
+program #10070 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 157.49970286336253,
+  "y": -36,
+  "z": 2229.6073529747423
+ },
+ "hp": 7.5032219886779785,
+ "positions": [
+  {
+   "x": 163,
+   "y": -26,
+   "z": 2230
+  },
+  {
+   "x": 164,
+   "y": -26,
+   "z": 2230
+  },
+  {
+   "x": 163,
+   "y": -25,
+   "z": 2230
+  },
+  {
+   "x": 164,
+   "y": -25,
+   "z": 2230
+  },
+  {
+   "x": 163,
+   "y": -24,
+   "z": 2230
+  },
+  {
+   "x": 164,
+   "y": -24,
+   "z": 2230
+  }
+ ],
+ "frames": [
+  {
+   "x": 135,
+   "y": -38,
+   "z": 2274
+  },
+  {
+   "x": 134,
+   "y": -38,
+   "z": 2274
+  },
+  {
+   "x": 136,
+   "y": -38,
+   "z": 2275
+  },
+  {
+   "x": 133,
+   "y": -38,
+   "z": 2274
+  },
+  {
+   "x": 136,
+   "y": -38,
+   "z": 2276
+  },
+  {
+   "x": 132,
+   "y": -38,
+   "z": 2275
+  },
+  {
+   "x": 136,
+   "y": -38,
+   "z": 2277
+  },
+  {
+   "x": 132,
+   "y": -38,
+   "z": 2276
+  },
+  {
+   "x": 135,
+   "y": -38,
+   "z": 2278
+  },
+  {
+   "x": 132,
+   "y": -38,
+   "z": 2277
+  },
+  {
+   "x": 134,
+   "y": -38,
+   "z": 2278
+  },
+  {
+   "x": 133,
+   "y": -38,
+   "z": 2278
+  }
+ ],
+ "plan": {
+  "status": "noPath",
+  "path": [],
+  "note": "current ownfootdoor closed; this path status alone cannot price opened-door route"
+ },
+ "knownNether": [
+  [
+   [
+    163,
+    -27,
+    2230
+   ],
+   "obsidian"
+  ],
+  [
+   [
+    164,
+    -27,
+    2230
+   ],
+   "obsidian"
+  ],
+  [
+   [
+    163,
+    -26,
+    2230
+   ],
+   "nether_portal"
+  ],
+  [
+   [
+    164,
+    -26,
+    2230
+   ],
+   "nether_portal"
+  ],
+  [
+   [
+    163,
+    -25,
+    2230
+   ],
+   "nether_portal"
+  ],
+  [
+   [
+    164,
+    -25,
+    2230
+   ],
+   "nether_portal"
+  ],
+  [
+   [
+    163,
+    -24,
+    2230
+   ],
+   "nether_portal"
+  ],
+  [
+   [
+    164,
+    -24,
+    2230
+   ],
+   "nether_portal"
+  ]
+ ],
+ "foes": [
+  [
+   215,
+   "zombie",
+   {
+    "x": 166.5038627138184,
+    "y": -36,
+    "z": 2235.6440129936113
+   }
+  ],
+  [
+   6017,
+   "skeleton",
+   {
+    "x": 168.61371958154854,
+    "y": -43.5,
+    "z": 2228.2539171329377
+   }
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p1: Boat/table adoptionP2ACKread. OwnP1trunk9,Y74..76,z-41 ONLY (notP2trunks9,-15/7,-13). Currentcandidate10,73,-40 hasGRASSfloor72+SNOW73+AIR74; exactboundedadjacentpath/visiblefacefirst. Source3logs yields12planks/table4+boat5; no extra stock/toolquota. By14
+p1: :23craft thenactualwateruse<=14:28 ifcurrentroute/waterqualifies.
+p2: P2 actual10065 woodordinary2logs retained at8.3257,66,-13.4968 HP20/berries24, despite targetpickupgoalTIMEOUT (noarrivalclaim). Two normalvisiblecuts10061 upper67/lower66 provedwood, remainingtreeocclusion means no quota. P1 ifONEsparelog/plank available 
+p2: can merge existingtable/boat craft directly, no duplicatetable! Need one extraPLANK forWOODpick givenmy8planks->4table/2sticks/3pick9gap; ifyouractualtable reused, my8planks sufficient. Please actualtablecoord/recipe/materialreceipt, notsourceassumption. P
+p2: 4 Netherrouteinspection14:25 adopted readonly/sourcecurrent only no newshaft.
+--- p4 now: (157.5, -36, 2229.6) in overworld, health 7.5/20, food 17/20, alive

@@ -1,0 +1,17 @@
+program #10167 on p4: 28.4 s
+--- output ---
+SURVIVAL_SUBMERSION {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water","initial":{"p":{"x":-3.3,"y":45,"z":-29.514123590462763},"hp":16.33333396911621,"inv":[["dirt",2]]}}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":16.33333396911621,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":14.333333969116211,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":8.333333969116211,"head":"water"}
+DROWNING_SAMPLE {"p":{"x":-3.5082288282757927,"y":46,"z":-27.3},"hp":2.333333969116211,"head":"water"}
+ACTUAL_END {"issue":null,"initial":{"p":{"x":-3.3,"y":45,"z":-29.514123590462763},"hp":16.33333396911621,"inv":[["dirt",2]]},"p":{"x":7.5,"y":76,"z":-23.5},"hp":20,"food":20,"ground":true,"dim":"overworld","inv":[],"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p4 drowned
+--- p4 now: (7.5, 76, -23.5) in overworld, health 20/20, food 20/20, alive
