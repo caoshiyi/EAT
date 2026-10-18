@@ -1,0 +1,19 @@
+# Provisional P3 handoff — iteration25,20:15 UTC
+
+Published early before minute90; **not closure**, useful support continues through~21:53 UTC (start20:08). Objective not met. Opening eval0/11/177 SAVE-ALL failed,last-saved-world. Own fresh10847 (20:09:05–06)7full/3partial HOME6.5,67,82.5 HP2.166664food17EMPTY/all7false/no goal/window;10862/10884 read-onlysmokes and laterSAY states unchanged. No physical queue/courier/sandboxP3program or reset. No own death thisiteration yet.
+
+## Adopted useful contribution
+
+P1 requested5min historicalguard audit20:09:24, deadline20:14:24 incl recipient use. P3 FULL10834 (permitted iter24) decisive AIRfoot/head at failed147,-36,2242, followed by ordinary closure placement bothcells. Rejected inside-solid false-positive theory before guard weakening; P1 accepted9517 and selected unchangedguard+BELOW. P1 actual LIVE10864 down2/recap3x10FULL20:10:33.347. Actual LIVE10871 lower3steps147/146/145,Y-39,postcut12/12 blockedchecks, terminal20:12:16.606145.5,-39,2242.491/HP17.2667food17/3x10FULL/all7false. Whole request->retaineduse2m52.606, independentverification20:12:59 (chatroundup20:13). Donor diagnosed; P1 implemented and owned physicaltest/route. No End/dragoncredit. GUARD_AUDIT.md andLIVE_p1_10871_adoption.raw.txt exactevidence.
+
+LIVEP3 originray smoke10862 corroborated P4: solidorigin hititself; cannot skip prospectiveguard. P4 separatephysical sandboxcut/recap confirmed optimisticprecutshieldingrisk. P3 secondaryoverheadrecommendation10868 conservative fullroof/above-rooftop exemption remains recommendationonly; P1 core_roof authoredindependently beforehandoff. No false attribution or universal+2 safetyclaim.
+
+## Pending support
+
+P1 <=3min docs-onlycombatAPI request20:13:36->20:16:36. P3 delivery10885 20:14:13 (~37s) attack(actualruntimeentity), entityAtCursor explicit3.0, independentocclusion/reach, swing!=damage, BossBar healthfraction0..1/isDragonBar, existingP2listenerattachbeforeentry/finallycleanup. LIVE10884 negativecursorwall/null/noattack only. COMBAT_API.md exactdocs/limits. ActualrecipientEnduse pending; no three-minutephysicalclaim. P4secondaryblastmodel APIgetExplosionDamages rawtrue forunarmored offered10887; radiusindependent/modelnotactualblast/unguaranteedshield.
+
+## Sandbox and failures
+
+P2G25-1 copied20:09:40/ready20:09:53/announced20:10:04; explicitallreleases. P3none. SandboxP1endpoint144,-39 differsLIVE145; no gains transferred. First readonlyCLI used wrongposition`programs --sandbox`,exit2/noaction; correctedglobal`--sandbox programs`. LESSONS.md records failure. capture_records.py tested1recordand2records; preservesraw, summaryomitsrepeatedsource/hostilebars so rawmandatoryforgeometry. No playerprogramsruntocapture.
+
+Previousiteration24 courierFAILED/3P3deaths remainsretired; no retryornewdeliveries. OnlyP3controlled, no agents/server/.work/tools edits/internet/excluded17–19/clientmaterial/packets/throughblock/reachbypass/push. Read all requiredcurrentinstructions/peerfiles. Ownedcheckpoints60db0fae,d7dd12e8,506dfd99; freshclosingbody/eval/status/events due21:53 andmaterialchangesmustappend.
