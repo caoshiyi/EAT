@@ -1,39 +1,23 @@
-# Active methods support — iteration23
+# Current active methods support —16:27 UTC
 
-Nonplaying reviewer; all gameplay remains with each player owner. Operator-facing proposed fixes will be placed here with source evidence, assumptions and a small acceptance test. No proposed JS may be run by this reviewer. Current ledger: EVIDENCE.md. No Minecraft strategy is prescribed.
+Nonplaying reviewer: no player programs/chat, no agents, no Minecraft strategies. Player owners alone review/run fixes. Current ledger: [EVIDENCE.md](EVIDENCE.md); complete independent review: [ITER23_REVIEW.md](../../ITER23_REVIEW.md). Earlier offer chronology: README_LOG_TO_1627.md. Current actor state requires newer arena observations, never old labels.
 
-Opening correction for P1: #10213 did craft WOODEN_PICKAXE and receive COBBLESTONE1, but no stone pickaxe. FIRST_PROTECTED_AUDIT predates west-side cuts; FINAL_AUDIT was skipped by recipe failure. Please reconcile current geometry/receipt before adopting inherited protected-workshop claim. A recipe API defect is not established by missing inputs.
+| Recipient / current question | Small review/correction | Actual acceptance / limit |
+|---|---|---|
+| P1 settled endpoint | [P1_DIRECT_POST_REVIEW.md](P1_DIRECT_POST_REVIEW.md): #10353 checks y/ground after settling but omits x/z; target2.5,66,92.5 ended~.875m away in next zcell | Confirmed old defect. Owner says pulse+postcheck changed; new result pending. Real rise accepted, exact old arrival rejected |
+| P1 generic modelabsent | [P2_MODEL_RECEIPT_REVIEW.md](P2_MODEL_RECEIPT_REVIEW.md), owner p2/iter23/model_with_receipt.js preserves start/goal/status/elapsed/edits, no execution | P2#10337 success0 vs noPath0 small-smoke confirmed. P1 adoption unreported; no route rewrite requested |
+| P1 repeatedHP stops | [P1_SECOND_HP_REVIEW.md](P1_SECOND_HP_REVIEW.md): center nodes vs actual width.6 footprint/shortcut; first failure-frame receipt | Changed padded/ordered#10304 four physical nodes+full endingHP20 accepted. Long10336 real nearHOME transit, lastgoal/fallback failed; no universal traversal guarantee |
+| P2 return geometry | [P2_MOVE_DIAGNOSTIC.md](P2_MOVE_DIAGNOSTIC.md): immutable target+phase receipts, fresh return cells | First quarry returned partial/full; second return failed, separate10287 newroom retained30gravel. Exact first collision cause unknown;48stockgatefailed/retired |
+| Any owner terminal evidence | [fresh_terminal_observation.js](fresh_terminal_observation.js), [acceptance](TERMINAL_OBSERVATION_REVIEW.md) | P2 explicitly reviewed/ran#10301; ten loaded full cells/negative coordinates match independent10287. This case validated; no rescue/body-footprint proof |
+| Initial P1 receipt | [P1_RECEIPT_REVIEW.md](P1_RECEIPT_REVIEW.md): cut vs ordinary receipt; expected5 corrected | Owner adoption#10230 cobble2→5/HP20, then toolcraft/use and ending verified. Specific case, no universal pickup radius |
 
-P1 requested receipt-test review (#10220): see P1_RECEIPT_REVIEW.md. Correct expected complete collection is COBBLE5 (current2 + new1 + old2), not4. Distinguish newly cut cobble from the existing two; require actual inventory and item-stack change. No recipe API defect established.
+Unvalidated supplied proposal: annotate_path_cells.js/PATH_CELL_ACCEPTANCE.md; P1 independently implemented similar annotation, not adoption of our function. Owner's support-cut adaptation10268 was real but began before written support review; no methods causal credit invented.
 
-P1 candidate source now reviewed (P1_RECEIPT_REVIEW.md appendix); no further reviewer round needed for owner-selected single diagnostic. P4 requested planner review is in P4_PLANNER_REVIEW.md: callback cost100 is a penalty, not alone proof of hard fluid exclusion; no actual fluid-node defect established. Both fixes remain owner-test dependent.
+**Corrections that supersede older notes:**
 
-Validated owner case: #10230 old cobble receipt; #10233 stonepick craft/use; #10236 retained full enclosure. See P1_RECEIPT_REVIEW.md. P2 request for permitted target API reviewed in DRAGON_API_REVIEW.md; distinguishes zero-attacks from an actual attack with no observed effect, preserves unresolved dragon semantics.
+- Cost100 concern in original P4 planner review was WRONG. Installed pathfinder readme277–279 says100 makes move impossible. Retracted16:13; no P4 fluid-exclusion defect established.
+- Retained iter16 public-client mappings/bytecode investigation is EXCLUDED from operational support after lead8844–45 provenance restriction. Do not adopt parent→BODY claim. Installed allowed API docs/permitted world records leave dragon-specific runtime semantics unresolved. [API review](DRAGON_API_REVIEW.md) prominently marks withdrawal; no further source investigation.
 
-Reusable small proposal: fresh_terminal_observation.js + TERMINAL_OBSERVATION_REVIEW.md. Current-cell snapshot only; owner-run validation required. No physical correction or broad automation. Complete early independent assessment: ../../ITER23_REVIEW.md.
+Evidence tooling: capture_readonly.py (only authorized read-only arena commands/eval, small-smoked); brief_capture.py prints explicitly clipped excerpts; raw captured outputs remain exact. Peer P1 audit_output.py adopted by methods after success#10304 AND failedprimary/successfulfallback#10289 tests. Always inspect errors and ten cells: walk_failures[] alone misses a failed goalpostcondition (#10336). Model minimumHP may include pre-heal stage.
 
-16:02 important lead-facing API result: DRAGON_API_REVIEW.md appendix independently checks allowed iter16 retained public-client mapping/bytecode: parent hurt routes to BODY, contradicting unconditional parent-immunity theory. This is source-only, not lawful pickability/current arena resolution/damage proof; no synthetic-part workaround justified. Actual qualified interaction remains untested.
-
-16:04 new P1 #10253 route-guard failure reviewed in P1_ROUTE_GUARD_REVIEW.md: model reference from hypothetical start is not necessarily setGoal executor route. Guard stopped work, but ending is now open. Proposed short actual-start/path_update diagnostic; do not infer planner defect or simply remove guard. Not yet validated.
-
-16:05 P2_SMALL_EXIT_REVIEW.md confirms #10261 specific success and flags start-tolerance mismatch (returned .17974m vs admission .15m), post-dig predicate and HP-gated fallback limits. P1_ROUTE_GUARD_REVIEW.md updated with actual #10262 differing paths, HP guard, and #10263 berry-containing cell; models accepting that cell is confirmed, exact HP cause unlogged. Read-only node annotation proposed before physical repetition.
-
-16:06 urgent requested P1 support-cut review: P1_RETENTION_TARGET_REVIEW.md. Own-bush refusal did no edits. Different visible ordinary support target is a distinct test; don't reuse old fixed-y67 centering after landing66. Exact target/cursor/bush effect/landing and final geometry required; no hidden-target override.
-
-Small reusable requested-diagnostic implementation: annotate_path_cells.js + PATH_CELL_ACCEPTANCE.md. Defines one read-only function for owner probe, actual floor/body/head names and hazard/NULL flags. Small known-node acceptance required; does not execute or certify routes. UNVALIDATED.
-
-16:08 P2 requested target logging diagnosis delivered: P2_MOVE_DIAGNOSTIC.md. #10269 error shows pre-recovery failed position, not current body; exact target unlogged, no collision/tolerance cause inferred. Add target+phase receipt to existing helper, small owner-run acceptance only.
-
-16:11 second P1 HP stop reviewed in P1_SECOND_HP_REVIEW.md. Center hazard-free nodes do not cover boundary-overlapping body/swept path; no new damage cause assumed. Same-caller fallback now physically succeeded. P2_MOVE_DIAGNOSTIC.md distinguishes second return-geometry failure from first unlogged move, and later separate retention from failed quarry return.
-
-**16:13 methods correction:** retract original P4_PLANNER_REVIEW cost100-is-only-penalty claim. Installed pathfinder readme277–279 explicitly says100 makes move impossible. I should have checked docs first; original concern was not a confirmed P4 defect. No fluid node was shown. See corrected prominent note. Padded predicate/actual footprint and model-vs-execution remain separate questions.
-
-16:15 **new actual owner validation:** P2#10301 reviewed/ran supplied fresh_terminal_observation.js; allTenFull/ten loaded cells/current negative coordinate matched independent10287, reported chat8815–18. Validated only this diagnostic case. P1#10304 four-node padded/ordered physical test and samecaller full ending independently corroborated; longerHOME still unproved. See acceptance notes.
-
-**16:18 PROVENANCE WITHDRAWAL — supersedes16:02 source claim:** Lead8844–45 reports explicit restriction against inherited internet-derived materials. Do not adopt retained public-client mapping/bytecode parent→BODY claim; that source investigation is EXCLUDED from operational support. The DRAGON_API_REVIEW prominent withdrawal preserves audit trail, not usable premise. API docs+permitted world records establish ordinary real-entity APIs and zero-vs-executed attack distinction; dragon-specific runtime target/damage semantics remain UNRESOLVED. No more mapping/source investigation.
-
-16:18 peer-tool adoption: methods reviewed/small-tested P1's offline audit_output.py on known10304; four walk calls/no failures, four actual ten-cell full arrays matched manual audit. p1_tool_smoke.json records test. Its min_sampled_hp19 includes pre-heal start, so stage-specific inference still needed. No player execution.
-
-16:21 P2_MODEL_RECEIPT_REVIEW.md: source + actual#10337 reviewed. Small wrapper correctly distinguishes success0nodes vs noPath0nodes, no movement. Suitable diagnostic-only candidate for P1's generic-modelabsent failures after current caller. Caller still gates on explicit status; cross-operator use unvalidated until reported. No movement rewrite or extra physical prerequisite.
-
-16:27 actual P1 direct-post defect: P1_DIRECT_POST_REVIEW.md confirms #10353 target2.5,66,92.5 settled2.4325,66,93.3728 (~.875m away) passed because only y/ground checked. Rise was real; exact node-arrival not qualified. Owner already says pulse+postcheck changed; awaiting actual changed-case result, no duplicate rewrite requested.
+Reviewer owns this directory plus ITER23_REVIEW/EVOLUTION_HISTORY/TOKEN_USAGE. Token usage unavailable. No remote push. Closure committed by17:30:59UTC, final verification17:35:59–17:45:59, actual cutoff17:55:47. No closure dependency on one last command.
