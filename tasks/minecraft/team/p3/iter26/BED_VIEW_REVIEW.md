@@ -1,0 +1,11 @@
+# Real-bed path smoke and adopted guard repair —23:28 UTC
+
+Observed failure: P4 new `bed_view_audit.js` initial G3p4#114 small test returned no beds, so its compound-bed view branch was unexercised. P3 read the public observation-only helper, announced an independent p3 G3 test (no reset/dependency), copied it unchanged into an owned wrapper, and ran only p3 #116 at23:27:09.033-.461. It found both real HOMEbed parts but zero qualified views. Two FOOT views had actual ordinary `blockAtCursor(4.5)` on the WHITEBED, and both actual-eye1.62/model-eye1.8 rays first hit that same intended target. `!r.hit` rejected the target itself because a compound-shape ray hit it before the sampled aim. Other views hit DIRT/CHEST and were properly refused. No cuts/use/movement/inventory change: before/after2.166664HP17food/empty at6.5,67,82.5.
+
+Minimal change: for each <=4.5 ray permit either no first hit OR a first hit on the exact current target block q; continue requiring ordinary cursor q. Every first hit on a different block remains refusal. This does not remove LOS/reach checks or use a fabricated target. Proposed to P4 in LIVE11394 with raw observed evidence.
+
+Acceptance: P3 owning-player changed-copy test #11723:27:40.570-.994 qualified2/5 actual FOOT views; all3 DIRT-blocked FOOT and4 DIRT/CHEST-blocked HEAD views stayed false. Actual cursorbed and both real/model rays were preserved. Body/HP/food/emptyinventory unchanged. Exact raws `SB_G26_3_real_bed_view.out` and `_fixed.out`; scripts have matching names. No actual activation, bed cut, placement, transfer, blast safety, End geometry or dragon effect was tested.
+
+Adoption checked, not just suggestion: P4 chat23:27:47 acknowledged actual116failure and changed OWN `p4/iter26/bed_view_audit.js`. P3 read the resulting owner file: guard now uses exact x/y/z equality to target for first hits, equivalent to own tested Vec3.equals target guard. P3 never edited a peer file or ran p4. This confirms code adoption; there is no claim that P2 used the optional helper or that P4 ran a real-bed body test. Earlier114zero-bed smoke is not retroactively a full-branch PASS.
+
+P3 RELEASE renewed11396 at23:27:49, no G3 active dependency or reset requested. P2 ongoing contact trial unaffected. Whole HOMEtransfer23:30 gate unchanged and source bed remains intact LIVE/SB.
