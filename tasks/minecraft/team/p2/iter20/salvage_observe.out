@@ -1,0 +1,480 @@
+program #9547 on p2: 3.8 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 7.5,
+  "y": 50,
+  "z": 3.5004469736038923
+ },
+ "hp": 10.55274772644043,
+ "ground": true,
+ "route": [
+  [
+   14,
+   50,
+   3
+  ],
+  [
+   13,
+   50,
+   3
+  ],
+  [
+   12,
+   50,
+   3
+  ],
+  [
+   11,
+   50,
+   3
+  ],
+  [
+   10,
+   50,
+   3
+  ],
+  [
+   9,
+   50,
+   3
+  ],
+  [
+   8,
+   50,
+   3
+  ],
+  [
+   7,
+   50,
+   3
+  ]
+ ],
+ "entities": [
+  {
+   "id": 10562,
+   "n": "ender_dragon",
+   "p": {
+    "x": -29.3785801774401,
+    "y": 100.77462202898688,
+    "z": 2.367979697695695
+   },
+   "h": 8,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    200,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "id": 18883,
+   "n": "item",
+   "p": {
+    "x": 7.05746984447598,
+    "y": 61,
+    "z": -6.440979579419459
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  },
+  {
+   "id": 18893,
+   "n": "item",
+   "p": {
+    "x": 26.949160299656192,
+    "y": 59,
+    "z": 9.180406220887054
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 990,
+     "itemCount": 1
+    }
+   ]
+  },
+  {
+   "id": 19190,
+   "n": "item",
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 922,
+     "itemCount": 3
+    }
+   ]
+  },
+  {
+   "id": 19191,
+   "n": "item",
+   "p": {
+    "x": 4.407133613277528,
+    "y": 54,
+    "z": 3.125
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 816,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 40
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 19192,
+   "n": "item",
+   "p": {
+    "x": 4.911284674063835,
+    "y": 55,
+    "z": 3.410017044983645
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 1216,
+     "itemCount": 1
+    }
+   ]
+  },
+  {
+   "id": 19193,
+   "n": "item",
+   "p": {
+    "x": 5.561695043349937,
+    "y": 55,
+    "z": 3.6150455457186523
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 821,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 104
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 19194,
+   "n": "item",
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 9,
+     "itemCount": 3
+    }
+   ]
+  },
+  {
+   "id": 19195,
+   "n": "item",
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 376,
+     "itemCount": 61
+    }
+   ]
+  },
+  {
+   "id": 19196,
+   "n": "item",
+   "p": {
+    "x": 5.350809075523069,
+    "y": 55,
+    "z": 3.125
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 819,
+     "itemCount": 1,
+     "nbtData": {
+      "type": "compound",
+      "value": {
+       "Damage": {
+        "type": "int",
+        "value": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 19197,
+   "n": "item",
+   "p": {
+    "x": 5.229798596374822,
+    "y": 55,
+    "z": 3.125
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 376,
+     "itemCount": 64
+    }
+   ]
+  },
+  {
+   "id": 19198,
+   "n": "item",
+   "p": {
+    "x": 4.125,
+    "y": 54,
+    "z": 3.875
+   },
+   "h": 0.25,
+   "m": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "present": true,
+     "itemId": 376,
+     "itemCount": 31
+    }
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "x": 0,
+   "feet": 50,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 1,
+   "feet": 51,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 2,
+   "feet": 52,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 3,
+   "feet": 53,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 4,
+   "feet": 54,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 5,
+   "feet": 55,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  },
+  {
+   "x": 6,
+   "feet": 56,
+   "floor": "end_stone",
+   "body": [
+    "air",
+    "air"
+   ],
+   "roof": "air"
+  }
+ ],
+ "inventory": [
+  [
+   "wooden_pickaxe",
+   1,
+   18
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive

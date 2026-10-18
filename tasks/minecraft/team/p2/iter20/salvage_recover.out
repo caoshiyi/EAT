@@ -1,0 +1,248 @@
+program #9548 on p2: 4.7 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "issue": "Error: route geometry",
+ "phase": "retreat",
+ "elapsed": 4727,
+ "p": {
+  "x": 7.5,
+  "y": 50,
+  "z": 3.5004469736035104
+ },
+ "hp0": 10.55274772644043,
+ "hp": 10.55274772644043,
+ "ground": true,
+ "roof": "end_stone",
+ "walk": [
+  {
+   "x": 6,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 5,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 4,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 3,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 4,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 5,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 6,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  },
+  {
+   "x": 7,
+   "y": 50,
+   "z": 3,
+   "hp": 10.55274772644043
+  }
+ ],
+ "clouds": [],
+ "inventory": [
+  [
+   "wooden_pickaxe",
+   1,
+   18
+  ],
+  [
+   "cobbled_deepslate",
+   7,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   1,
+   null
+  ]
+ ],
+ "items": [
+  {
+   "id": 18883,
+   "p": {
+    "x": 7.05746984447598,
+    "y": 61,
+    "z": -6.440979579419459
+   },
+   "m": {
+    "present": true,
+    "itemId": 990,
+    "itemCount": 1
+   }
+  },
+  {
+   "id": 19190,
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "m": {
+    "present": true,
+    "itemId": 922,
+    "itemCount": 3
+   }
+  },
+  {
+   "id": 19191,
+   "p": {
+    "x": 4.407310628264586,
+    "y": 54,
+    "z": 3.125
+   },
+   "m": {
+    "present": true,
+    "itemId": 816,
+    "itemCount": 1,
+    "nbtData": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 40
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 19192,
+   "p": {
+    "x": 4.911429317073111,
+    "y": 55,
+    "z": 3.4099061523668412
+   },
+   "m": {
+    "present": true,
+    "itemId": 1216,
+    "itemCount": 1
+   }
+  },
+  {
+   "id": 19193,
+   "p": {
+    "x": 5.561815738969657,
+    "y": 55,
+    "z": 3.6148933857009107
+   },
+   "m": {
+    "present": true,
+    "itemId": 821,
+    "itemCount": 1,
+    "nbtData": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 104
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 19194,
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "m": {
+    "present": true,
+    "itemId": 9,
+    "itemCount": 3
+   }
+  },
+  {
+   "id": 19195,
+   "p": {
+    "x": 6.875,
+    "y": 56,
+    "z": 3.875
+   },
+   "m": {
+    "present": true,
+    "itemId": 376,
+    "itemCount": 61
+   }
+  },
+  {
+   "id": 19196,
+   "p": {
+    "x": 5.350857026677496,
+    "y": 55,
+    "z": 3.125
+   },
+   "m": {
+    "present": true,
+    "itemId": 819,
+    "itemCount": 1,
+    "nbtData": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 19197,
+   "p": {
+    "x": 5.229658655309382,
+    "y": 55,
+    "z": 3.125
+   },
+   "m": {
+    "present": true,
+    "itemId": 376,
+    "itemCount": 64
+   }
+  },
+  {
+   "id": 19198,
+   "p": {
+    "x": 4.125,
+    "y": 54,
+    "z": 3.875
+   },
+   "m": {
+    "present": true,
+    "itemId": 376,
+    "itemCount": 31
+   }
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
