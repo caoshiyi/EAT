@@ -1,3 +1,7 @@
+# Latest override —17:09 UTC
+
+P2 arena death17:06:31/Zombie, old stock lost. New empty body(10.5,72,-38.5),HP20/food20 is respawn. Independent17:08:15 evaluator SAVEFAILED/last-saved dragon0/11/deaths171, P2=46; one iteration23 death. P1 current Nether(-36.5,58,48.6),HP3/food16/tools/dirt1/netherbricks1/sapling; upper attempt not fullroute. P4 remains retainedHP20/gravel1; P3 unplayedHP4.5. No foodpromise/Enduse/dragon effect. Earlier rows are dated historical evidence.
+
 # Current evidence ledger —16:55 UTC
 
 Score last recorded16:00: SAVEFAILED/last-saved dragon0,11milestones,170deaths(61/45/26/38). Arena has no iteration23 death through16:34. No new dragon hit/effect/defeat verified. Historical milestones are not present capability.
