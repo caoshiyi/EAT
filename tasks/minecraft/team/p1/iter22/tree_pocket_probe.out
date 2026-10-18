@@ -1,0 +1,227 @@
+program #10186 on p1: 0.4 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 10.5,
+  "y": 76,
+  "z": -38.408987901293045
+ },
+ "hp": 20,
+ "food": 20,
+ "clock": 5691,
+ "isDay": true,
+ "ground": true,
+ "inv": [],
+ "cells": [
+  {
+   "role": "floorroof",
+   "p": {
+    "x": 10,
+    "y": 75,
+    "z": -38
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "floorroof",
+   "p": {
+    "x": 10,
+    "y": 78,
+    "z": -38
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 9,
+    "y": 76,
+    "z": -38
+   },
+   "n": "snow",
+   "full": false
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 9,
+    "y": 77,
+    "z": -38
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 11,
+    "y": 76,
+    "z": -38
+   },
+   "n": "snow",
+   "full": false
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 11,
+    "y": 77,
+    "z": -38
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "role": "floorroof",
+   "p": {
+    "x": 10,
+    "y": 75,
+    "z": -37
+   },
+   "n": "spruce_log",
+   "full": true
+  },
+  {
+   "role": "floorroof",
+   "p": {
+    "x": 10,
+    "y": 78,
+    "z": -37
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 9,
+    "y": 76,
+    "z": -37
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 9,
+    "y": 77,
+    "z": -37
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 11,
+    "y": 76,
+    "z": -37
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "side",
+   "p": {
+    "x": 11,
+    "y": 77,
+    "z": -37
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "role": "rear",
+   "p": {
+    "x": 10,
+    "y": 76,
+    "z": -36
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "role": "rear",
+   "p": {
+    "x": 10,
+    "y": 77,
+    "z": -36
+   },
+   "n": "air",
+   "full": false
+  }
+ ],
+ "interior": [
+  {
+   "p": {
+    "x": 10,
+    "y": 76,
+    "z": -38
+   },
+   "n": "spruce_leaves"
+  },
+  {
+   "p": {
+    "x": 10,
+    "y": 77,
+    "z": -38
+   },
+   "n": "air"
+  },
+  {
+   "p": {
+    "x": 10,
+    "y": 76,
+    "z": -37
+   },
+   "n": "spruce_log"
+  },
+  {
+   "p": {
+    "x": 10,
+    "y": 77,
+    "z": -37
+   },
+   "n": "spruce_log"
+  }
+ ],
+ "front": [
+  {
+   "p": {
+    "x": 10,
+    "y": 76,
+    "z": -39
+   },
+   "n": "snow"
+  },
+  {
+   "p": {
+    "x": 10,
+    "y": 77,
+    "z": -39
+   },
+   "n": "air"
+  }
+ ],
+ "foes": [
+  {
+   "n": "creeper",
+   "p": {
+    "x": 21.538102069901296,
+    "y": 71,
+    "z": -45.811337417463726
+   }
+  }
+ ]
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+p4: P4 major10182 ACTUAL127marrival15.5,67,79.35 HP20+Sand4/Sandstone1, butROOFfirst-target checkFAILED; protectedendingFALSE. Next10184 beganALREADYnewlife-9.5,26,-34.5 HP20EMPTY afterZombiedeath; no BANKwindow/loot/retainedSS. CurrentautomaticGRAVEL1 pickupn
+p4: earP2cave, no intentionalsourceedits. Roofrepairtoo late, avoidable unroofedretention failure; oldcurrentHOMEbodyINVALID. H9 deliberateoneDROWN helpedheight but wholeprotectedHOMEuseFAILED, no repeatplannedrespawn. Freshposeeye1.27 seenonlyafterdeath; test
+p4: ingnormalSneaktrue/false ratherthanassumingstanding1.62 rays. No raw/physicschanges.
+--- p1 now: (10.5, 76, -38.4) in overworld, health 20/20, food 20/20, alive

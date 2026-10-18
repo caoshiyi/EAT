@@ -1,0 +1,23 @@
+program #10191 on p1: 15 s
+--- output ---
+RECONCILE {"p":{"x":10.5,"y":76,"z":-38.408987901293045},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[],"controls":{},"goal":null}
+CUT_PRE {"p":{"x":10,"y":76,"z":-38},"n":"spruce_leaves","face":2,"hit":{"x":10.50000000000016,"y":76.70901548820073,"z":-38}}
+CUT_PRE {"p":{"x":10,"y":77,"z":-37},"n":"spruce_log","face":2,"hit":{"x":10.50000000000055,"y":77.68168398020401,"z":-37}}
+CUT_PRE {"p":{"x":10,"y":76,"z":-37},"n":"spruce_log","face":2,"hit":{"x":10.50000000000055,"y":76.6892435015212,"z":-37}}
+INSIDE_RECEIPT {"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_log",2]],"controls":{},"goal":null}
+PLACE_PRE {"ref":{"x":9,"y":76,"z":-37},"dest":{"x":9,"y":77,"z":-37},"hit":{"x":9.786342287939618,"y":77,"z":-36.8414201838654}}
+PLACE_PRE {"ref":{"x":11,"y":76,"z":-37},"dest":{"x":11,"y":77,"z":-37},"hit":{"x":11.213657712060941,"y":77,"z":-36.84142018386568}}
+PLACE_PRE {"ref":{"x":10,"y":76,"z":-36},"dest":{"x":10,"y":77,"z":-36},"hit":{"x":10.500000000000352,"y":77,"z":-35.4281243881659}}
+PLACE_PRE {"ref":{"x":10,"y":75,"z":-38},"dest":{"x":10,"y":76,"z":-38},"hit":{"x":10.5000000000001,"y":76,"z":-37.76413589844909}}
+PLACE_PRE {"ref":{"x":10,"y":76,"z":-38},"dest":{"x":10,"y":77,"z":-38},"hit":{"x":10.50000000000014,"y":77,"z":-37.55381812643867}}
+ACTUAL_SHELL [{"p":{"x":10,"y":75,"z":-37},"n":"spruce_log","full":true},{"p":{"x":10,"y":78,"z":-37},"n":"spruce_leaves","full":true},{"p":{"x":11,"y":76,"z":-37},"n":"spruce_leaves","full":true},{"p":{"x":11,"y":77,"z":-37},"n":"spruce_planks","full":true},{"p":{"x":9,"y":76,"z":-37},"n":"spruce_leaves","full":true},{"p":{"x":9,"y":77,"z":-37},"n":"spruce_planks","full":true},{"p":{"x":10,"y":76,"z":-36},"n":"spruce_leaves","full":true},{"p":{"x":10,"y":77,"z":-36},"n":"spruce_planks","full":true},{"p":{"x":10,"y":76,"z":-38},"n":"spruce_planks","full":true},{"p":{"x":10,"y":77,"z":-38},"n":"spruce_planks","full":true}]
+STABLE {"n":0,"hp0":20,"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_planks",3]],"controls":{},"goal":null}
+STABLE {"n":1,"hp0":20,"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_planks",3]],"controls":{},"goal":null}
+STABLE {"n":2,"hp0":20,"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_planks",3]],"controls":{},"goal":null}
+STABLE {"n":3,"hp0":20,"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_planks",3]],"controls":{},"goal":null}
+TERMINAL {"p":{"x":10.500000000000352,"y":76,"z":-36.47070468643895},"hp":20,"food":20,"dim":"overworld","ground":true,"eye":1.62,"height":1.8,"inv":[["spruce_planks",3]],"controls":{},"goal":null,"lost":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (10.5, 76, -36.5) in overworld, health 20/20, food 20/20, alive
