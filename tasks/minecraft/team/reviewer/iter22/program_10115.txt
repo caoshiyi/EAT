@@ -1,0 +1,30 @@
+== #10115 2026-10-18T14:31:53 p1 role=capability_owner iter=22 0.1 s
+const V=bot.entity.position.constructor;bot.pathfinder.setGoal(null);bot.clearControlStates();bot.stopDigging();let lost=false;const die=()=>lost=true;bot.on('death',die);const dim=bot.game.dimension;
+const full=p=>bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');const N=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState};}
+function life(){if(lost||bot.health<=0||bot.game.dimension!==dim)throw Error('life changed');}
+async function ray(p,face=null){for(const q of [[.5,.99,.5],[.5,.01,.5],[.5,.5,.01],[.5,.5,.99],[.01,.5,.5],[.99,.5,.5],[.5,.5,.5]]){await bot.lookAt(p.offset(...q),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(p)&&(face===null||c.face===face)&&c.intersect&&[1.62,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not first visible '+p);}
+async function cut(p){life();const b=bot.blockAt(p),c=await ray(p);console.log('CUT_PRE',JSON.stringify({p,n:b.name,face:c.face,hp:bot.health}));await bot.unequip('hand');await bot.dig(b,'ignore',N[c.face]);await bot.waitForTicks(10);life();console.log('CUT_EFFECT',JSON.stringify({p,n:bot.blockAt(p).name,state:state()}));}
+try{
+ await bot.waitForTicks(2);console.log('RECONCILE',JSON.stringify(state()));const base=bot.entity.position.floored();if(dim!=='overworld'||!bot.entity.onGround)throw Error('not live groundedOW');
+ const feet=base.offset(0,-2,0);let selected=null;
+ for(const[dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]]){const p=feet.offset(dx,0,dz),roof=p.offset(0,2,0),sideDirs=[[1,0],[-1,0],[0,1],[0,-1]].filter(([a,b])=>a!==-dx||b!==-dz);if(!full(roof)||['gravel','sand'].includes(bot.blockAt(roof).name))continue;
+ if(![p,p.offset(0,1,0),p.offset(0,-1,0),base.offset(0,-1,0),base.offset(0,-2,0),base.offset(0,-3,0)].every(full))continue;
+ if(!['gravel','dirt','grass_block'].includes(bot.blockAt(base.offset(0,-1,0)).name)||!['gravel','dirt','grass_block'].includes(bot.blockAt(p.offset(0,1,0)).name))continue;
+ if(sideDirs.some(([a,b])=>![0,1].every(y=>full(p.offset(a,y,b)))))continue;selected={dx,dz,p};break;}
+ console.log('SMALL_PLAN',JSON.stringify({base,selected}));if(!selected)throw Error('no qualified two-resource native alcove');
+ await cut(base.offset(0,-1,0));if(!bot.entity.onGround||Math.abs(bot.entity.position.y-base.y+1)>.15)throw Error('first fall');
+ await cut(base.offset(0,-2,0));if(!bot.entity.onGround||Math.abs(bot.entity.position.y-base.y+2)>.15)throw Error('second fall');
+ await cut(selected.p.offset(0,1,0));await cut(selected.p);await bot.waitForTicks(12);
+ const blocks=bot.inventory.items().filter(i=>['gravel','dirt'].includes(i.name));if(blocks.reduce((n,i)=>n+i.count,0)<2)throw Error('roof-door ordinary materials not received');
+ const target=selected.p.offset(.5,0,.5);await bot.lookAt(new V(target.x,bot.entity.position.y+1.62,target.z),true);for(let t=0;t<25&&Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.12;t++){life();bot.setControlState('forward',true);await bot.waitForTicks(1);}bot.clearControlStates();await bot.waitForTicks(10);life();if(bot.entity.position.distanceTo(target)>.35||!bot.entity.onGround)throw Error('alcove actual entryfailed');console.log('INSIDE',JSON.stringify(state()));
+ for(let y=0;y<=1;y++){life();const dest=feet.offset(0,y,0),ref=dest.offset(0,-1,0),c=await ray(ref,1),item=bot.inventory.items().find(i=>['gravel','dirt'].includes(i.name));if(!item)throw Error('no actual door material');await bot.equip(item,'hand');console.log('DOOR_PRE',JSON.stringify({dest,ref,hit:c.intersect,item:item.name}));await bot.placeBlock(bot.blockAt(ref),N[1]);await bot.waitForTicks(6);if(!full(dest))throw Error('door absent');}
+ const p=bot.entity.position.floored(),shell=[p.offset(0,-1,0),p.offset(0,2,0)];for(const[dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]])for(const y of[0,1])shell.push(p.offset(dx,y,dz));const audit=shell.map(p=>({p,n:bot.blockAt(p).name,full:full(p)}));console.log('FULL_SHELL',JSON.stringify(audit));if(audit.some(q=>!q.full))throw Error('not sealed');const hp=bot.health;await bot.waitForTicks(100);console.log('STABLE',JSON.stringify({beforeHP:hp,...state()}));
+}finally{bot.removeListener('death',die);bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify({...state(),lost}));}
+-- output --
+RECONCILE {"p":{"x":-9.40857244882198,"y":26,"z":-35.7},"hp":12.833333969116211,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+SMALL_PLAN {"base":{"x":-10,"y":26,"z":-36},"selected":null}
+TERMINAL {"p":{"x":-9.40857244882198,"y":26,"z":-35.7},"hp":12.833333969116211,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{},"lost":false}
+-- error --
+Error: no qualified two-resource native alcove
+    at p1-program-10115.js:14:79
