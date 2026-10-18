@@ -1,0 +1,18 @@
+{
+  "source": "P2 G3#125 PUBLIC projectile positions+velocities only, four distinct updates",
+  "assumption": "10 server steps per observed unique velocity interval; uniform drag/gravity fitted, not private implementation or external physics",
+  "fitted_drag_per_step": 0.9899989776078747,
+  "fitted_downward_velocity_increment_per_step": 0.02999845974546402,
+  "per_interval_g": [
+    0.030006478172852576,
+    0.029998506006143143,
+    0.029990395057396348
+  ],
+  "observed_launch_speed": 1.521574241328697,
+  "target_horizontal_distance": 48.01049105661187,
+  "target_dy": 25.12999999672175,
+  "max_predicted_height_at_R": 5.657936361704037,
+  "best_angle_degrees": 42.8,
+  "step_count": 56,
+  "limits": "UNVALIDATED predictive fit, quantized velocities/uncertain update count; no collision/dispersion. Needs changed small practice shot. Does NOT establish absolute range or actual objective effects."
+}

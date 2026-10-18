@@ -1,0 +1,33 @@
+{
+  "input": "tasks/minecraft/team/p2/iter26/sb_G26_3_snow_one_fullray.out",
+  "beforeAt": "2026-10-18T23:37:44.050Z",
+  "afterAt": "2026-10-18T23:37:48.261Z",
+  "inventoryDelta": -1,
+  "failure": null,
+  "targetPresent": true,
+  "warning": "Observed positions are not proof of full flight, impact, maximum range, or crystal damage.",
+  "tracks": [
+    {
+      "id": 10214,
+      "sampleCount": 21,
+      "uniquePositions": 4,
+      "tickSpan": [
+        0,
+        32
+      ],
+      "observedHorizontalDisplacementFromFirstSample": 35.04039752838179,
+      "observedYBounds": [
+        61.520000003278255,
+        69.06555178209794
+      ],
+      "positionTimes": [
+        "2026-10-18T23:37:44.198Z",
+        "2026-10-18T23:37:44.800Z",
+        "2026-10-18T23:37:45.302Z",
+        "2026-10-18T23:37:45.804Z"
+      ],
+      "closestObservedTargetDistance": 22.124937389250437,
+      "decision": "Multiple real positions available; inspect collision/visibility/target events before any fitted or extrapolated trajectory."
+    }
+  ]
+}
