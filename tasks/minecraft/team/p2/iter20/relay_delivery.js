@@ -1,0 +1,68 @@
+// P2 delivery relay. Fresh iteration20 P1/P4/P2 helpers reviewed and physically qualified; only P2 is controlled.
+// Uses P4 qualified grounded far/near placement + normal adjacent climb; no underfoot placement.
+const V=require('vec3').Vec3,begin=Date.now(),capNames=['cobbled_deepslate','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','oak_planks','end_stone','tuff','basalt'];
+let dead=false,phase='OW',issue=null,pillars=[],floors=[],cuts=[],seals=[],safe=null,entryHP=null,raisedHP=null; const actualSteps=[],recoveries=[];
+const death=()=>{dead=true};bot.on('death',death);const cap=()=>bot.inventory.items().find(i=>capNames.includes(i.name));const capCount=()=>bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+function alive(){if(dead||bot.health<=0||Date.now()-begin>140000)throw Error('life/budget');}
+function full(p){return bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+function cloudState(){return Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud').map(e=>({id:e.id,p:e.position.clone(),r:e.metadata?.[8],height:e.height,width:e.width}));}
+async function face(p,f){const ns=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)],n=ns[f];const tries=[];
+ for(const [a,b] of [[.35,.65],[.65,.35],[.25,.25],[.75,.75],[.35,.35],[.65,.65]]){alive();const q=n.y?new V(a,n.y>0?1:0,b):n.z?new V(a,b,n.z>0?1:0):new V(n.x>0?1:0,a,b);const aim=p.plus(q).minus(n.scaled(.015));await bot.lookAt(aim,true);await bot.waitForTicks(1);const h=bot.blockAtCursor(4.5);tries.push(h&&{p:h.position,face:h.face});if(h&&h.position.equals(p)&&h.face===f&&h.intersect&&[1.62,1.8].every(v=>bot.entity.position.offset(0,v,0).distanceTo(h.intersect)<=4.5))return {p,face:f,aim,intersect:h.intersect};}
+ console.log('FACE_REFUSED',JSON.stringify({p,f,body:bot.entity.position,tries}));throw Error('no visible requested face '+p+' '+f);
+}
+async function horizontal(x,z,y,sneak=true,budget=5000,enter=false){const until=Date.now()+budget;bot.setControlState('sneak',sneak);bot.setControlState('sprint',false);
+ try{while(Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.035){alive();if(enter&&bot.game.dimension==='the_end')break;if(Date.now()>until)throw Error('horizontal budget '+x+','+z);if(!enter&&Math.abs(bot.entity.position.y-y)>.3)throw Error('unexpected height');await bot.lookAt(new V(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}
+ finally{bot.setControlState('forward',false);}await bot.waitForTicks(1);
+}
+async function westFloor(x){const p=new V(x,49,0);if(full(p))return;if(bot.blockAt(p)?.boundingBox!=='empty'||!full(p.offset(1,0,0)))throw Error('bridge geometry '+x);
+ safe={x:x+1.5,z:.5,y:50};await horizontal(x+.90,.5,50,true,2500);const ref=bot.blockAt(p.offset(1,0,0)),ray=await face(ref.position,4);const it=cap();if(!it)throw Error('no floor cap');await bot.equip(it,'hand');console.log('FLOOR_PRE',JSON.stringify({dest:p,ray,body:bot.entity.position,hp:bot.health}));await bot.placeBlock(ref,new V(-1,0,0));await bot.waitForTicks(1);if(!full(p))throw Error('floor no physical effect');floors.push({p,n:bot.blockAt(p).name,hp:bot.health});safe={x:x+.5,z:.5,y:50};console.log('FLOOR_EFFECT',JSON.stringify(floors.at(-1)));
+}
+async function cut(p){alive();let b=bot.blockAt(p);if(b?.boundingBox==='empty')return;if(!capNames.includes(b?.name))throw Error('unexpected relay cut '+b?.name);const ray=await face(p,5);const picks=bot.inventory.items().filter(i=>i.name==='wooden_pickaxe');if(!picks.length)throw Error('no pick');await bot.equip(picks[0],'hand');console.log('CUT_PRE',JSON.stringify({p,ray,hp:bot.health}));await bot.dig(b,false,'raycast');await bot.waitForTicks(1);if(bot.blockAt(p).boundingBox!=='empty')throw Error('cut no physical effect');cuts.push(p);}
+async function seal(p,refp,f){if(full(p))return;const ns=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];const ray=await face(refp,f),it=cap();if(!it)throw Error('no seal cap');await bot.equip(it,'hand');await bot.placeBlock(bot.blockAt(refp),ns[f]);await bot.waitForTicks(1);if(!full(p))throw Error('seal no effect');seals.push(p);console.log('SEAL_EFFECT',JSON.stringify({p,ray}));}
+async function finishRoute(){
+ // If x102 was selected, x101 was skipped only due earlier overlap; create it from actual safe raised edge normally.
+ await westFloor(101);
+ phase='BRIDGE';for(let x=100;x>=84;x--){await westFloor(x);await horizontal(x+.5,.5,50,true,2500);safe={x:x+.5,z:.5,y:50};}await horizontal(84.5,.5,50,true,2500);console.log('BRIDGE_RETAINED',JSON.stringify({p:bot.entity.position,hp:bot.health,clouds:cloudState()}));
+ phase='NATIVE';for(let x=83;x>=76;x--){await cut(new V(x,51,0));await cut(new V(x,50,0));await westFloor(x);await horizontal(x+.5,.5,50,true,2500);safe={x:x+.5,z:.5,y:50};}
+ phase='SEAL';await seal(new V(78,50,0),new V(78,49,0),1);await seal(new V(78,51,0),new V(78,50,0),1);
+ phase='NATIVE_CHECK';const hpBefore=bot.health;bot.clearControlStates();await bot.waitForTicks(60);console.log('RETAINED_NATIVE',JSON.stringify({p:bot.entity.position,hpBefore,hp:bot.health,ground:bot.entity.onGround,floor:bot.blockAt(new V(76,49,0)).name,roof:bot.blockAt(new V(76,52,0)).name,front:bot.blockAt(new V(75,50,0)).name,clouds:cloudState()}));
+ phase='DELIVERY';
+ let r=bot.players.p1?.entity;if(!r||Math.abs(r.position.y-50)>.15)throw Error('P1 recipient not in native Y50');
+ for(let tries=0;tries<3&&r.position.distanceTo(bot.entity.position)>1.1;tries++){
+  const q=r.position.floored();await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(q.x,q.y,q.z)),new Promise((_,reject)=>setTimeout(()=>reject(Error('recipient travel budget')),14000))]);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(2);r=bot.players.p1?.entity;if(!r||Math.abs(r.position.y-50)>.15)throw Error('recipient moved outside native');
+ }
+ if(r.position.distanceTo(bot.entity.position)>1.1)throw Error('recipient still distant');
+ const tool=bot.inventory.items().find(i=>i.name==='stone_pickaxe');if(!tool)throw Error('delivery tool absent');const before=bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]);const oldIds=new Set(Object.keys(bot.entities));
+ await bot.lookAt(bot.entity.position.offset(.005,-1,.005),true);await bot.waitForTicks(3);if(r.position.distanceTo(bot.entity.position)>1.4)throw Error('recipient moved before drop');
+ console.log('DELIVERY_PRE',JSON.stringify({p:bot.entity.position,recipient:r.position,tool:{name:tool.name,wear:tool.durabilityUsed},before,pitch:bot.entity.pitch}));
+ await bot.tossStack(tool);await bot.waitForTicks(3);console.log('DELIVERY_BIRTH',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&!oldIds.has(String(e.id))).map(e=>({id:e.id,p:e.position,metadata:e.metadata}))));
+ await bot.pathfinder.goto(new goals.GoalBlock(60,50,0));bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(30);safe={x:60.5,z:.5,y:50};phase='DELIVERED_DONOR_ONLY';
+ console.log('DELIVERY_DONOR_RESULT',JSON.stringify({p:bot.entity.position,hp:bot.health,recipient:r.position,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),note:'Recipient ordinary receipt still needs independent verification.'}));
+
+}
+
+try{
+ if(bot.game.dimension!=='overworld'||capCount()<8||!bot.inventory.items().some(i=>i.name==='stone_pickaxe'))throw Error('actual kit precondition');
+ const route=[[140,-35,2232],[140,-36,2239],[139,-36,2239],[139,-36,2255],[131,-36,2255],[130,-36,2256],[130,-36,2265],[128,-36,2266],[128,-36,2272],[131,-36,2272],[131,-36,2275]];if(!route?.length)throw Error('no fresh route plan');const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);const owHP=bot.health;
+ for(const [x,y,z] of route){alive();const p=new V(x,y,z);if(!full(p.offset(0,-1,0))||[0,1].some(d=>bot.blockAt(p.offset(0,d,0))?.boundingBox!=='empty'))throw Error('OW route changed');if(bot.health<owHP)throw Error('OW damage');await bot.pathfinder.goto(new goals.GoalBlock(x,y,z));}
+ bot.pathfinder.setGoal(null);bot.clearControlStates();phase='ENTER';await horizontal(132.5,2275.5,-36,false,4000,true);await horizontal(133.5,2275.5,-36,false,4000,true);let until=Date.now()+6500;while(bot.game.dimension==='overworld'&&Date.now()<until)await bot.waitForTicks(1);if(bot.game.dimension!=='the_end')throw Error('no End transition');bot.clearControlStates();for(let t=0;t<8&&!bot.entity.onGround;t++)await bot.waitForTicks(1);
+ entryHP=bot.health;console.log('ARRIVAL',JSON.stringify({p:bot.entity.position,hp:entryHP,clouds:cloudState(),caps:capCount()}));
+ phase='ADJACENT_STEP';const m2=new Movements(bot);m2.canDig=false;m2.allow1by1towers=false;m2.allowParkour=false;m2.allowSprinting=false;m2.scafoldingBlocks=[];bot.pathfinder.setMovements(m2);
+ const made=actualSteps,stepFailures=[];
+ for(const x of [102,101]){try{const p=new V(x,49,0),refp=new V(x,48,0);if(full(p)){made.push(x);continue;}const body=bot.entity.position;if(body.y<50&&body.x+.3>x&&body.x-.3<x+1){console.log('STEP_SKIP_BODY',JSON.stringify({p,body}));continue;}if(!full(refp)||bot.blockAt(p)?.boundingBox!=='empty')throw Error('adjacent step geometry');const ray=await face(refp,1);const now=bot.entity.position;if(now.y<50&&now.x+.3>x&&now.x-.3<x+1){console.log('STEP_SKIP_POSTLOOK',JSON.stringify({p,body:now}));continue;}await bot.equip(cap(),'hand');console.log('STEP_PRE',JSON.stringify({p,ray,body:now,velocity:bot.entity.velocity,hp:bot.health,controls:bot.controlState}));await bot.placeBlock(bot.blockAt(refp),new V(0,1,0));await bot.waitForTicks(1);if(full(p)){made.push(x);console.log('STEP_PHYSICAL',JSON.stringify({p,n:bot.blockAt(p).name,hp:bot.health}));}}catch(e){stepFailures.push({x,issue:String(e)});console.log('STEP_ONE_REFUSED',JSON.stringify(stepFailures.at(-1)));if(made.length)break;}}
+ if(!made.length)throw Error('no actual raised landing');
+ const landing=Math.max(...made);await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(landing,50,0)),new Promise((_,r)=>setTimeout(()=>r(Error('step climb budget')),3500))]);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);
+ if(Math.abs(bot.entity.position.y-50)>.08||!bot.entity.onGround||!full(new V(landing,49,0)))throw Error('actual adjacent rise absent');safe={x:landing+.5,z:.5,y:50};raisedHP=bot.health;console.log('STEP_LANDING',JSON.stringify({p:bot.entity.position,hp:raisedHP,velocity:bot.entity.velocity,clouds:cloudState(),made}));
+ await finishRoute();
+}catch(e){issue=String(e);console.log('FAIL',JSON.stringify({phase,issue,p:bot.entity.position,hp:bot.health,safe}));
+ if(!dead&&bot.game.dimension==='the_end'&&phase==='ADJACENT_STEP'&&actualSteps.length){
+  bot.pathfinder.setGoal(null);bot.clearControlStates();const candidates=actualSteps.filter(x=>full(new V(x,49,0))).sort((a,b)=>Math.abs(a+.5-bot.entity.position.x)-Math.abs(b+.5-bot.entity.position.x));
+  for(const x of candidates){try{const before={p:bot.entity.position.clone(),hp:bot.health};await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,50,0)),new Promise((_,r)=>setTimeout(()=>r(Error('recovery climb budget')),2200))]);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(3);const r={x,before,p:bot.entity.position.clone(),hp:bot.health,ground:bot.entity.onGround};recoveries.push(r);console.log('ACTUAL_STEP_RECOVERY',JSON.stringify(r));if(Math.abs(bot.entity.position.y-50)<.08&&bot.entity.onGround){safe={x:x+.5,z:.5,y:50};raisedHP=bot.health;await finishRoute();issue=null;break;}}catch(re){bot.pathfinder.setGoal(null);console.log('STEP_RECOVERY_REFUSED',String(re));}}
+ }
+ if(!dead&&bot.game.dimension==='the_end'&&safe&&Math.abs(bot.entity.position.y-safe.y)<.3){try{await horizontal(safe.x,safe.z,safe.y,true,3000);await bot.waitForTicks(5);console.log('ERROR_RETREAT',JSON.stringify({p:bot.entity.position,hp:bot.health,full:full(bot.entity.position.floored().offset(0,-1,0)),clouds:cloudState()}));}catch(r){console.log('ERROR_RETREAT_FAILED',String(r));}}
+}finally{
+ bot.removeListener('death',death);bot.pathfinder.setGoal(null);
+ // Sneak is retained on any unverified edge. Clear only after actual centered full support.
+ const p=bot.entity.position,root=p.floored(),centered=Math.abs(p.x-(root.x+.5))<.26&&Math.abs(p.z-(root.z+.5))<.26;if(bot.game.dimension==='overworld'||(centered&&full(root.offset(0,-1,0))))bot.clearControlStates();else{bot.setControlState('forward',false);bot.setControlState('jump',false);bot.setControlState('sprint',false);bot.setControlState('sneak',true);}
+ global.P2RelayState20={phase,issue,safe,pillars,floors,cuts,seals};console.log('FINAL',JSON.stringify({phase,issue,dead,elapsed:Date.now()-begin,p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,velocity:bot.entity.velocity,entryHP,raisedHP,actualSteps,recoveries,pillars,floors,cuts,seals,clouds:cloudState(),controls:bot.controlState,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed}))}));
+}
