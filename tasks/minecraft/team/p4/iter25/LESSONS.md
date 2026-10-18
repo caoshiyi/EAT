@@ -11,3 +11,5 @@
 - **A short emergency has to happen before analysis.** LIVE10947 ended20:30:12 open at9.2667HP, failed immediate fallback, then death20:30:22. Reserve a physically usable ending rather than a cleanup path sharing the already-failed predicate. No counterfactual rescue success is claimed.
 
 All examples use allowed public observations/ordinary physical interactions/installed Mineflayer docs or exact permitted records. No excluded17–19/client source, fabricated parts, packets, through-block/reach bypass, server/.work/tools edits or other-player control. Current P4 remains enclosed/fullhealth; exact active state and final window in P4.md.
+
+- Scope a negative necessity claim to the observed stage. InitialSB35 LOG2pickup preceded leaf removal, but qualified LOG4/trunkjump/ending included actual leaf6,68,-31 cut. Keep that precondition for transfer; no physical no-leaf full-method control was run. P4 overbroad notice11014 corrected after exact P3 source chronology.
