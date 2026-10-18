@@ -1,0 +1,5 @@
+bot.clearControlStates();bot.pathfinder.setGoal(null);
+const w=bot.entity.position.floored(),e=w.offset(1,0,0);
+const ps=[w.offset(0,-1,0),e.offset(0,-1,0),w.offset(0,2,0),e.offset(0,2,0),w.offset(-1,0,0),w.offset(-1,1,0),e.offset(1,0,0),e.offset(1,1,0),...[-1,1].flatMap(z=>[w.offset(0,0,z),w.offset(0,1,z),e.offset(0,0,z),e.offset(0,1,z)])];
+const cell=p=>{const b=bot.blockAt(p);return{p,name:b?.name,full:!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')};};
+console.log(JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,width:bot.entity.width,height:bot.entity.height,eye:bot.entity.eyeHeight,ground:bot.entity.onGround,oldBelow:cell(w.offset(0,-2,0)),westBody:[cell(w),cell(w.offset(0,1,0))],eastBody:[cell(e),cell(e.offset(0,1,0))],outer:ps.map(cell),entities:Object.values(bot.entities).filter(a=>a!==bot.entity&&a.position.distanceTo(bot.entity.position)<12).map(a=>[a.name,a.position]),inv:bot.inventory.items().map(i=>[i.name,i.count])}));
