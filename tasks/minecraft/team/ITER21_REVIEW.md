@@ -1,3 +1,29 @@
+# Iteration 21 independent closing review — in progress
+
+Written 2026-10-18T13:40:50+00:00, within the final ten minutes. Execution continues until **13:48:55 UTC**; this is no victory or early-stop endorsement. Final handoff/event/program/evaluator refresh remains pending.
+
+Independent evaluator **2026-10-18T13:39:12Z**: **dragon=0, milestones=11/12, deaths=154, programs=9918**. Save-all failed with connection refused: **saved-world evidence**, not a synchronized live result. Opening deaths136→154: **18 deaths (P1+14, P4+4, P2/P3+0)**.
+
+| Hypothesis / work | Actual independent evidence | Effect / retained capability | Elapsed | Closing decision |
+|---|---|---|---|---|
+| Allowed crystal attack can produce objective effect | Full completed P4#9665 and independent P2#9673: real visible crystal179 within3m, normal attack,10→9, full native return | **One crystal removed**; dragonHP200 afterward | Whole~10m02 within15min | Accepted narrow effect; no dragon damage/defeat inferred |
+| Equipment/alternative damage chain can finish | Bow#9807 was real; later Silverfish death and failed recovery#9886 left kit unavailable. No bed was crafted or activated in inspected records | No current bow/bed/ammo; no actual ranged shot or bed-damage test | Bow source deadline12:14 failed; ONEBED12:43→12:53 failed and overran~45min | Do not credit preparation or lost inputs as completion capability |
+| AI visibility/perch experiment can establish actual damage | Full#9906 zero hits/minroot23.253/HP200/phase1, full P1returnHP20. Full#9909 retained P2returnHP10.55, but ray blocked84roof | Real retained field trials; visibility precondition failed, attack mechanism unexecuted | P1caller157.4s; P2whole~3m48 vs3min | No global impossibility claim; newer#9919 still pending |
+
+At13:39:12 status P1 was **active#9919** on surface1.3,Y63/HP20; no ending accepted yet. P2 native75.5,Y50/HP10.5527 with Stone106/Sword0/END144; P4 OW157.5,-36,2229.6/HP14.97 EMPTY, known west-head wall gap so no full-enclosure claim; P3 spawn/unplayed. These are dated snapshots, not permanent safety guarantees.
+
+Latest handoffs read independently: P1 authoritative section13:14, P2 header13:33 plus13:36 checks, P4 header12:46/override13:06. They contain stale inventory/active labels; newer completed programs, events and status override them. Final current handoffs will be reread after operators close.
+
+The continuous review stayed active, documented minute20/40 decisions, inspected completed decisive outputs before endorsing effects, and preserved failures/whole budgets. Legal ownership and narrow handoffs/checks worked in audited records. Preparation and repeated prerequisite recovery/remake still consumed most of the iteration without demonstrating effective completion. Merely logging an overrun as “not reset” did not control that cost.
+
+Important reusable findings: full-wood/half-slab assertion mismatch#9768; solid-target self-occlusion predicate#9894; coordinates below route contradicted upper-drop diagnosis#9850; planned-ray clear claim corrected by actual output#9845; API activation changed the prechecked view#9863; `FULL_NATIVE_RETURN`/`ENCLOSED` labels did not establish world postconditions. Changes and lessons are also in EVOLUTION_HISTORY.md. Small positive/occluded-negative tool tests must precede long reuse; a successful return is a dated state, not enduring retention.
+
+Reviewer controlled no player, ran no arena player programs/chat, spawned no agents, repaired no tools/server and made no remote push. No prohibited interaction observed in the audited decisive crystal source; this is a targeted audit, not an exhaustive compliance proof of every program. Token usage **unavailable** from an authorized available source.
+
+Final acceptance remains world dragon defeat plus evaluator and legitimate decisive records. Pending: latest#9919/possible changed visibility trial, latest owner handoffs, events, evaluator near13:48, final checkpoint. No objective success claimed.
+
+<!-- CONTINUOUS_REVIEW_LOG -->
+
 # Iteration 21 continuous mission review
 
 > **Current checkpoint,13:12 UTC:** objective unmet; one legal crystal removal independently verified, no dragon damage or bed activation verified. P4 died13:09:30 and is empty in the new life; bow and partial bed inputs need actual recovery receipts before being counted. Eighteen iteration deaths known. No automatic source remake or renamed budget. Next decision: current availability, retained recovery/result, then actual damage experiment chosen by owners. Independent closing begins13:38:55 and runs to13:48:55; operators keep current own handoffs with actual body/inventory/active caller/result IDs. Reviewer controls no player.
