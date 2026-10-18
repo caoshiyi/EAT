@@ -1,0 +1,16 @@
+== #9164 2026-10-18T09:51:04 p1 role=objective_owner iter=20 0 s
+const V=bot.entity.position.constructor, hp=bot.health, begin=Date.now();let done=[];
+function guard(){if(bot.game.dimension!=='the_end'||bot.health<hp||Date.now()-begin>45000)throw Error('life/health/budget');let cs=Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud'&&e.position.distanceTo(bot.entity.position)<7);if(cs.length)throw Error('near cloud');}
+async function walk(x,z){let end=Date.now()+4500;bot.setControlState('sneak',true);try{while(Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.08){guard();if(Date.now()>end)throw Error('walk budget');await bot.lookAt(new V(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}finally{bot.clearControlStates();}await bot.waitForTicks(1);}
+try{for(let x=96;x>=84;x--){guard();let dest=new V(x,48,0),b=bot.blockAt(new V(x+1,48,0));if(bot.blockAt(dest)?.name!=='air'||b?.boundingBox!=='block')throw Error('unexpected geometry');await walk(x+.74,.5);await bot.lookAt(new V(x+1,48.63,.63),true);await bot.waitForTicks(1);let c=bot.blockAtCursor(4.5);if(!c||!c.position.equals(b.position)||!bot.canSeeBlock(b))throw Error('face hidden');let it=bot.inventory.items().find(i=>['end_stone','basalt','cobbled_deepslate','tuff'].includes(i.name));if(!it)throw Error('no blocks');await bot.equip(it,'hand');bot.setControlState('sneak',true);try{await bot.placeBlock(b,new V(-1,0,0));}finally{bot.clearControlStates();}await bot.waitForTicks(1);if(bot.blockAt(dest)?.boundingBox!=='block')throw Error('no physical floor');done.push(x);console.log('PLACED',x,bot.entity.position.x,bot.health);}
+await walk(84.5,.5);
+}finally{bot.clearControlStates();console.log('END',JSON.stringify({done,p:bot.entity.position,hp:bot.health,food:bot.food,inventory:bot.inventory.items().map(i=>[i.name,i.count]),entities:Object.values(bot.entities).filter(e=>['area_effect_cloud','dragon_fireball','ender_dragon'].includes(e.name)).map(e=>({name:e.name,p:e.position,metadata:e.metadata}))}));}
+-- output --
+END {"done":[],"p":{"x":146.5,"y":-36,"z":2241.5},"hp":20,"food":20,"inventory":[],"entities":[]}
+-- error --
+Error: life/health/budget
+    at guard (p1-program-9164.js:2:97)
+    at p1-program-9164.js:4:29
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:421:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:546:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

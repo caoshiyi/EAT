@@ -1,0 +1,57 @@
+== #9267 2026-10-18T10:01:53 p4 role=exploration_partner iter=20 0 s
+// Fresh continuous field experiment, normal APIs only. Outcome includes failures/death.
+const V=require('vec3').Vec3,begin=Date.now();let lifeLost=false,phase='OW',placements=[],shots=[],samples=[],oldIds=[],issue=null;
+const death=()=>{lifeLost=true};bot.on('death',death);
+function alive(){if(lifeLost||bot.health<=0||Date.now()-begin>125000)throw Error('life/whole program budget');}
+function clouds(){return Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud').map(e=>({id:e.id,p:e.position.clone(),r:Number(e.metadata?.[8]||3)}));}
+const caps=()=>bot.inventory.items().find(i=>['oak_planks','tuff'].includes(i.name));
+async function move(x,z,sneak=false,sprint=false,budget=4000,enter=false){
+ const until=Date.now()+budget;
+ try{for(;;){alive();if(enter&&bot.game.dimension==='the_end')break;if(Date.now()>until)throw Error('movement budget '+x+','+z);
+ const p=bot.entity.position;if(Math.hypot(p.x-x,p.z-z)<.14)break;
+ bot.setControlState('sneak',sneak);bot.setControlState('sprint',sprint);await bot.lookAt(new V(x,p.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);
+ }}finally{bot.clearControlStates();}
+ await bot.waitForTicks(1);
+}
+function full(p){const b=bot.blockAt(p);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+async function eastFloor(x,z){
+ const refp=new V(x-1,48,z),dest=new V(x,48,z);
+ if(full(dest))return;if(bot.blockAt(dest)?.boundingBox!=='empty'||!full(refp))throw Error('floor geometry');
+ // Independently qualified shallow edge, x boundary +.10, rather than unreachable deep convergence.
+ await move(x+.08,z+.5,true,false,2400);bot.setControlState('sneak',true);
+ const ref=bot.blockAt(refp);await bot.lookAt(new V(x-.001,48.55,z+.63),true);await bot.waitForTicks(2);const hit=bot.blockAtCursor(4.5);
+ console.log('PLACE_PRE',JSON.stringify({p:bot.entity.position,ref:refp,hit:hit&&{p:hit.position,face:hit.face,intersect:hit.intersect},hp:bot.health}));
+ if(!hit||!hit.position.equals(refp)||hit.face!==5)throw Error('east side not directly visible');
+ const item=caps();if(!item)throw Error('no cap');await bot.equip(item,'hand');await bot.placeBlock(ref,new V(1,0,0));await bot.waitForTicks(2);if(!full(dest))throw Error('floor no physical effect');placements.push({p:dest,n:bot.blockAt(dest).name,hp:bot.health});console.log('PLACED',JSON.stringify(placements.at(-1)));
+ bot.clearControlStates();
+}
+let defenseAttempts=0;const attempted=new Set();
+async function defense(){
+ const eye=bot.entity.position.offset(0,1.62,0),e=Object.values(bot.entities).find(e=>e.name==='dragon_fireball'&&!attempted.has(e.id)&&e.position.distanceTo(eye)<2.7);
+ if(!e||defenseAttempts>=2)return;await bot.lookAt(e.position.offset(.08,.35,.09),true);await bot.waitForTicks(1);
+ if(bot.entityAtCursor(3)?.id!==e.id||bot.blockAtCursor(3))return;
+ const before={p:e.position.clone(),v:e.velocity?.clone()};attempted.add(e.id);defenseAttempts++;bot.attack(e);await bot.waitForTicks(2);const a=bot.entities[e.id];shots.push({id:e.id,before,after:a&&{p:a.position.clone(),v:a.velocity?.clone()},clouds:clouds(),note:'attempt only; trajectory change not automatically proven'});console.log('DEFENSE_OBSERVATION',JSON.stringify(shots.at(-1)));
+}
+try{
+ if(bot.game.dimension!=='the_end')throw Error('expected live End');oldIds=clouds().map(e=>e.id);const row=-2;
+ for(let x=103;x<=105;x++)await eastFloor(x,row);
+ await move(105.5,row+.5,true,false,3000);phase='HOLD';const hold=Date.now(),points=[[105.5,row+.5],[102.22,-1.45],[102.22,1.45]];let lastLog=0;
+ while(Date.now()-hold<65000){alive();await defense();const p=bot.entity.position,cs=clouds(),fbs=Object.values(bot.entities).filter(e=>e.name==='dragon_fireball');
+  const clearance=q=>Math.min(99,...cs.filter(c=>p.y+1.8>=c.p.y&&p.y<=c.p.y+1).map(c=>Math.hypot(q[0]-c.p.x,q[1]-c.p.z)-c.r));
+  const best=points.slice().sort((a,b)=>clearance(b)-clearance(a))[0];const here=clearance([p.x,p.z]);
+  if(here<.8||fbs.some(e=>e.position.distanceTo(p)<11)){
+   // Stay on physically built L path between platform and east extension.
+   const target=best;
+   if(Math.hypot(p.x-target[0],p.z-target[1])>.4){if(p.x>102.7&&target[0]<103)await move(102.25,row+.5,false,true,2000);else if(p.x<103&&target[0]>103&&Math.abs(p.z-(row+.5))>.3)await move(102.25,row+.5,false,true,2000);await move(target[0],target[1],false,true,2500);}
+  }
+  if(Date.now()-lastLog>2500){const s={elapsed:Date.now()-hold,p:bot.entity.position.clone(),hp:bot.health,clouds:clouds(),oldRemaining:oldIds.filter(id=>bot.entities[id]),fireballs:fbs.map(e=>({id:e.id,p:e.position.clone(),v:e.velocity?.clone()}))};samples.push(s);console.log('HOLD',JSON.stringify(s));lastLog=Date.now();}
+  await bot.waitForTicks(1);
+ }
+ phase='HOLD_FINISHED';
+}catch(e){issue=String(e);console.log('FAIL',issue);}finally{
+ bot.removeListener('death',death);bot.clearControlStates();bot.pathfinder.setGoal(null);
+ console.log('FINAL',JSON.stringify({phase,lifeLost,issue,elapsed:Date.now()-begin,p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,placements,shots,clouds:clouds(),oldIds,oldRemaining:oldIds.filter(id=>bot.entities[id]),inv:bot.inventory.items().map(i=>({n:i.name,c:i.count})),samples}));
+}
+-- output --
+FAIL Error: expected live End
+FINAL {"phase":"OW","lifeLost":false,"issue":"Error: expected live End","elapsed":0,"p":{"x":146.5,"y":-36,"z":2241.5},"hp":20,"food":20,"dim":"overworld","ground":true,"placements":[],"shots":[],"clouds":[],"oldIds":[],"oldRemaining":[],"inv":[],"samples":[]}
