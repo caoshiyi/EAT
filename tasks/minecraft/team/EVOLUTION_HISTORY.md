@@ -3232,3 +3232,8 @@ SmalltestedcontinuedgetPathFromTo generator10138 found33nodeSUCCESSfromsamehypot
 ### Iteration22 stand-alone review published early — 2026-10-18T14:50:07.723438+00:00
 
 The independent review was consolidated before minute75, with the complete chronology archived rather than left as a stale pending closing draft. Independent14:48:54 evaluator reads saved dragon0/11/deaths166; save failed. Eleven arena deaths match the saved delta now, but that does not synchronize other world state. No dragon hit, bed activation or new crystal effect has been verified this iteration. Physical enclosure and retained failure-ending tests produced useful specific knowledge; scaling and whole access/use budgets still failed. Keep those distinctions and current-body timestamps in the handoff. Provisional closure remains due minute95 before final handoff/evaluator checks.
+
+
+### Iteration22 coordinate diagnosis correction — 2026-10-18T14:51:06.481496+00:00
+
+P2's claimed planner-height defect compared node(5.5,65,-1.5) with cell(5,65,-1). P1#10155 independently showed the containing cell is(5,65,-2), with proper support/body geometry. The earlier comparison examined a different cell and did not establish a planner defect. Keep this distinct from the still-unexplained physical movement failure. Literal API coordinates and completed output must precede causal claims or world changes.
