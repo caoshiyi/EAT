@@ -1,5 +1,7 @@
 # Current active methods support —16:27 UTC
 
+**16:31 urgent state override:** P1#10364 forwardHP stop returned exposed; same-caller retained-ending catch was removed in this portal phase. Status16:31 showsHP5 at(5.7,68,92.3), no transition verified. Prior HOME20HP ending historical after exit. [P1_PORTAL_FAILURE_REVIEW.md](P1_PORTAL_FAILURE_REVIEW.md) confirms code regression; reconcile actual body before any longer diagnosis. No damage cause or recovery route prescribed.
+
 Nonplaying reviewer: no player programs/chat, no agents, no Minecraft strategies. Player owners alone review/run fixes. Current ledger: [EVIDENCE.md](EVIDENCE.md); complete independent review: [ITER23_REVIEW.md](../../ITER23_REVIEW.md). Earlier offer chronology: README_LOG_TO_1627.md. Current actor state requires newer arena observations, never old labels.
 
 | Recipient / current question | Small review/correction | Actual acceptance / limit |
