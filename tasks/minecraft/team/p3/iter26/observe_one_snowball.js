@@ -1,5 +1,6 @@
 // Function only: owner includes/calls after own small harvest/stance qualification.
-// UNEXECUTED. Public Mineflayer API; no assumed projectile physics or proxy entities.
+// P4 local real wall launch #73 exercised this helper; End effect remains unverified.
+// Public Mineflayer API; no assumed projectile physics or proxy entities.
 async function observeOneSnowball({aim, targetCrystalId=null, maxTicks=80}) {
   const V=bot.entity.position.constructor;
   aim=new V(aim.x,aim.y,aim.z);
