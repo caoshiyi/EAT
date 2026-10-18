@@ -1,0 +1,8 @@
+const other=bot.players.p2?.entity,V=bot.entity.position.constructor;
+console.log('PRE',JSON.stringify({p:bot.entity.position,hp:bot.health,dim:bot.game.dimension,inv:bot.inventory.items().map(i=>[i.name,i.count]),recipient:other?.position}));
+if(bot.game.dimension!=='the_end'||!other||other.position.distanceTo(bot.entity.position)>1.5||bot.health!==20)throw Error('recipient/body guard');
+const item=bot.inventory.items().find(i=>i.name==='white_bed');if(!item)throw Error('missing bed');
+const old=new Set(Object.keys(bot.entities));await bot.lookAt(bot.entity.position.offset(.005,-1,.005),true);await bot.toss(item.type,null,1);await bot.waitForTicks(3);console.log('BIRTH',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&!old.has(String(e.id))).map(e=>({id:e.id,p:e.position,m:e.metadata?.[8]}))));
+const m=new Movements(bot);m.canDig=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+try{await bot.pathfinder.goto(new goals.GoalBlock(11,50,3));await bot.waitForTicks(14);if(!bot.entity.onGround||Math.abs(bot.entity.position.x-11.5)>.8||Math.abs(bot.entity.position.y-50)>.1)throw Error('retreat arrival');}
+finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),recipient:bot.players.p2?.entity?.position,items:Object.values(bot.entities).filter(e=>e.name==='item'&&!old.has(String(e.id))).map(e=>({id:e.id,p:e.position,m:e.metadata?.[8]})),controls:bot.controlState,goal:bot.pathfinder.goal}));}

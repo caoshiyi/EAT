@@ -1,0 +1,18 @@
+program #9983 on p1: 16.9 s
+--- output ---
+COVERED_PATH [[75,0],[74,0],[73,0],[72,0],[71,0],[70,0],[69,0],[68,0],[67,0],[66,0],[65,0],[64,0],[63,0],[62,0],[61,0],[60,0],[59,0],[58,0],[57,0],[56,0],[55,0],[54,0],[53,0],[52,0],[51,0],[50,0],[49,0],[48,0],[47,0],[47,1],[46,1],[45,1],[45,2],[44,2],[44,3],[43,3],[42,3],[41,3],[40,3],[39,3],[38,3],[37,3],[36,3],[35,3],[34,3],[33,3],[32,3],[31,3],[30,3],[29,3],[28,3],[27,3],[26,3],[25,3],[24,3],[23,3],[22,3],[21,3],[20,3],[19,3],[18,3],[17,3],[16,3],[15,3],[14,3],[13,3],[12,3],[11,3],[10,3],[9,3],[8,3],[7,3]]
+CHECKED_LEG {"target":[47,50,0],"before":{"p":{"x":75.65827565694777,"y":50,"z":0.5},"hp":20,"dim":"the_end"},"p":{"x":47.640332990449,"y":50,"z":0.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[47,50,1],"before":{"p":{"x":47.640332990449,"y":50,"z":0.5},"hp":20,"dim":"the_end"},"p":{"x":47.524965681495004,"y":50,"z":1.324256332723781},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,1],"before":{"p":{"x":47.524965681495004,"y":50,"z":1.324256332723781},"hp":20,"dim":"the_end"},"p":{"x":45.64093652690272,"y":50,"z":1.5072409922549617},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,2],"before":{"p":{"x":45.64093652690272,"y":50,"z":1.5072409922549617},"hp":20,"dim":"the_end"},"p":{"x":45.52366567406317,"y":50,"z":2.331228952297128},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,2],"before":{"p":{"x":45.52366567406317,"y":50,"z":2.331228952297128},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":2.466588549960086},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,3],"before":{"p":{"x":44.5,"y":50,"z":2.466588549960086},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[7,50,3],"before":{"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+RECIPIENT_NATIVE7 {"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"inv":[["white_bed",1]],"players":[{"n":"p1","p":{"x":7.5,"y":50,"z":3.5}},{"n":"p2","p":{"x":7.251274240974486,"y":50,"z":3.5001033945246562}}]}
+TERMINAL {"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"food":20,"ground":true,"dim":"the_end","inv":[["white_bed",1]],"goal":null,"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P1 actual9977 BED receipt acknowledged. Please deliver native7,50,3 within14:03 (original14:02 unchanged if missed), using covered75->47.5,.5->47.5,1.5->45.5,1.5->45.5,2.5->44.5,2.5->44.5,3.5->7.5,3.5. Prior44->7 z2 blocked, z3actual9956PASS. P2 inspecting
+p2: lower56 now samecallerreturn7, 30s max. Bed-useclock14:12 same; P1 optional95bait afterhandoff<=14:06 explicit actualclear+return, not85.
+--- p1 now: (7.5, 50, 3.5) in the_end, health 20/20, food 20/20, alive

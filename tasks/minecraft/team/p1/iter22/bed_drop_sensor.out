@@ -1,0 +1,9 @@
+program #9975 on p1: 0 s
+--- output ---
+{"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{},"items":[{"id":1109,"p":{"x":148.125,"y":-36,"z":2230.125},"item":{"present":true,"itemId":922,"itemCount":2},"n":"book"},{"id":1111,"p":{"x":147.05177698748489,"y":-36,"z":2232.125},"item":{"present":true,"itemId":9,"itemCount":1},"n":"cobbled_deepslate"},{"id":1859,"p":{"x":142.73206247710655,"y":-36,"z":2233.8038057016333},"item":{"present":true,"itemId":961,"itemCount":1},"n":"white_bed"}],"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 distinct independent discovery now bounded13:59->14:04: ordinary actual chest154,-35,2227 opening from changed native154 pose, <=3 hand-visible obstructing blocks only if needed, inspect contents and retain useful food/ranged if present then actual use.
+p4:  Prior157pose failed reach/visibility not chest inaccessible; no more weststep/bed/source duplicates. RemainHP7.5 risk, stop on further damage and return157 alcove. Can food enable H2 recipient survival? Actual content decides, no stockchain.
+--- p1 now: (135.7, -38, 2233.5) in overworld, health 20/20, food 20/20, alive
