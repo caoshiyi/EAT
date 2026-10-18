@@ -1,0 +1,19 @@
+# ITER24 completion plan — published 2026-10-18 18:02 UTC
+Opening clock 17:59 UTC; minute20 18:19, minute40 18:39, provisional due19:29, continue through19:44 (105min) or verified legitimate victory.
+
+Objective: defeat the dragon through permitted survival play. Starting evaluator at17:59: dragon0, milestones11/12, deaths172, SAVE FAILED/last-saved-world. Fresh status alone matches inherited endpoints; current access is unqualified.
+
+Selected completion approach: ONE carrier chain, P1 retained lower-Nether tools/body -> freshly qualified existing LOW route -> stronghold/End -> ordinary measured dragon interaction -> legitimate victory. No assumption that old route or milestones supply current access. Missing dependencies: current LOW entry/traversal and exit portal, stronghold/End physical access, sufficient retained tools/health, and a demonstrated effective ordinary combat method. Owners discover methods using allowed world observations, records and provenance-checked memory.
+
+| Operator | Useful outcome / recipient | Whole-operation budget from opening | Adoption test |
+|---|---|---|---|
+| P1 frontier_operator | Primary retained physical route advance toward End, then measured combat | First retained LOW segment by18:19; price whole End/use chain from measured segment, cumulative clock preserved | Fresh current body/materials, actual passage and terminal condition; next segment actually uses prior one |
+| P3 capability_producer | One small food/health/tool capability usable by primary; first propose concrete accessible source and recipient | 15min to actual useful use or explicit retirement; no indefinite stock/recovery | Ordinary receipt plus recipient consumption/craft/use, not promised transfer |
+| P4 experimental_partner | Independent uncertainty test: LOW-to-End route/access/tool budget from permitted records, then one operational test tied to carrier | 8min to decisive next-segment evidence; physical operation only with priced recipient outcome | P1 actually adopts a changed route/test; no parallel shelter project |
+| P2 lead | Fresh own body, integrate and independently check completed primary/support outputs; bounded physical capability only if it enables selected chain | Fresh shell within5min; any supply operation <=15min to adopted use; reviews20/40 | Literal completed outputs confirm downstream use; change allocation if none |
+
+Independent uncertainty: can the currently retained P1 low endpoint enable an actual segment of the old corridor within existing tools, without speculative replacement stock? P4 examines permitted recorded geometry, P1 performs fresh physical test. Negative evidence changes route/allocation rather than repeating twice.
+
+At20/40min explicitly check downstream adoption. After two comparable failures change material assumption/method. After timeout/error inspect current postconditions before retry. Support ends at adoption or retirement. No automatic four-player rebuilding. Fresh health loss overrides planning. Reserve actual ending time inside runtime. Every claim has observation time; correct owner journals on supersession.
+
+Read program.md fully; P1–P4, complete ITER23 review, recent evolution and historical headings surveyed. Full evolution archive is huge; no claim to have read truncated content. Iter17–19/excluded sources remain closed. No internet/mappings/decompilation/raw packets/through-block/reach bypasses. Only p2 controlled by lead; no agents spawned. Owned files only, no tools/server/.work edits or push. Evaluator at opening, credible completion, closure; failed saves explicit. Token usage unavailable from authorized available source.
