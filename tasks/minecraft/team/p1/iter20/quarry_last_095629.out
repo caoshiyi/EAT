@@ -1,0 +1,18 @@
+program #9214 on p1: 5.3 s
+--- output ---
+CUT_PRE Vec3 { x: 128, y: -33, z: 2271 } tuff Vec3 { x: 128, y: -33, z: 2271 }
+CUT_PRE Vec3 { x: 128, y: -32, z: 2271 } tuff Vec3 { x: 128, y: -32, z: 2271 }
+CUT_PRE Vec3 { x: 128, y: -31, z: 2271 } tuff Vec3 { x: 128, y: -31, z: 2271 }
+END {"cuts":[[{"x":128,"y":-33,"z":2271},"tuff"],[{"x":128,"y":-32,"z":2271},"tuff"],[{"x":128,"y":-31,"z":2271},"tuff"]],"p":{"x":128.49981661881978,"y":-36,"z":2271.3969554034106},"hp":20,"inv":[["basalt",8,null],["wooden_pickaxe",1,27],["stick",2,null],["cobbled_deepslate",3,null],["tuff",6,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 yield complete fresh: reversed checked open full-floor route to129.5,-36,2272.5, HP20 grounded, no dig/controls cleared. 1312274/75 released. Original09:47:56→09:55:56 reconnaissance budget will miss because no End entry after P1 death/hold; useful comp
+p4: leted partial = verified tool+6basalt+2sticks delivery1m31s, not reset as recon success.
+p2: Own wood trial9210: 1plank ordinary; 2 additional plank drops stuck145.51,-32,2241.875 on upper shaft wall145,-33,2241, not received. Correction9194 one-wall scope expanded9203 to second exposed basalt145,-32,2241, both legal direct rays/no drops. Will han
+p2: d-remove visible upper side deepslate145,-33 then-34 to let2drops fall into pickup; no floor cuts, original09:57:09 budget unchanged, no new wood quota.
+p4: Reviewed fresh continuous_entry.js (no execution): concrete transition risk: walk(133.5,2275.5) loop has no dimension boundary check; if portal transitions before horizontal target threshold, loop can continue aiming OW coords from End and walk off platfor
+p4: m. Make ENTER walk stop immediately on actual dimension change; separate OW/End expected dimension in every movement. Fireball attack counter remains attempt only, physical deflection must be observed.
+p2: P2 resource result#9212 ordinary PLANK3 now retained after hand-removing two visible upper SIDE deepslate145,-33/-34,2241; no floor cut, HP11.5. Source modifications total4nonwood upper-side cuts+3plank cuts, preserved records. Bringing3wood along no-dig r
+p2: oute toward P1 current1282270 before09:57:09 wholedeadline; P1 need not hold if moving, P4 may receive as local spare only if P1 departed.
+--- p1 now: (128.5, -36, 2271.4) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,12 @@
+# Iteration20 active plan — objective_owner p1
+Opening 09:47 UTC; execution deadline 11:45:24 UTC (CR_DEADLINE=1792323924). Final five minutes reserved handoff. Full current program.md read. Only p1 owned; no additional agents. Python absent; use /usr/bin/python3. Sources restricted to world/arena/team; historical helpers quarantined until reviewed, new programs independently written.
+
+Objective: legitimate Ender Dragon defeat, verified world dragon=1/12 milestones plus allowed decisive interaction evidence. Opening evaluator 09:47 returned dragon0/11, deaths125/programs9110 with save-all connection-refused warning (saved state only). Arena9115 fresh p1 OW146.5,-36,2242.5 HP14.333 food13, sword/picks/37blocks; no active caller. Current End regenerated and unobserved; old victory invalid.
+
+Agreed via chat7554 onward: P1 primary portal approach/combat experiment; P2 accepted bounded support and independent evidence review, no tools/food currently; P4 accepted fresh portal/End/crystal observation, initially boxed OW129,-36,2274. P3 unused. No standing permission queue. Shared portal corridor changes announced before work. P4 optional cargo request superseded by accepted useful reconnaissance; partial resources welcomed but no quota.
+
+First experiment (09:49; <=2min): question can p1 safely traverse known present air passage with no dig/place? Observe current blocks, derive supported two-air-cell route (9121 found56 nodes), test first 7 nodes then review actual position/health. Success is actual movement with unchanged HP and no forbidden interactions, not path index. Failure: stop controls, observe obstruction and choose different route; no unchanged retry. Next <=3min reach staging and observe portal locally, avoid entry until conscious experiment.
+
+Next experiment selected after staging: fresh End entry and bounded <=60s geometry/body observation; only ordinary movement/place/dig with visible within-reach checks, no raw packets or inherited parent-entity combat. Survival/retained observations outrank optimistic counters. Crystal/combat approach chosen from actual new terrain. Independent review P2 about every10min and immediately significant failure/result. Optional support budget<=6min includes prepare/transport/receipt; missed optional dependency does not stop p1.
+
+Record every attempted operation, physical effect and verified progress in p1/iter20; update P1.md before context cut. End evaluator after credible victory and before stopping. No remote push.

@@ -1,0 +1,17 @@
+program #9202 on p1: 10.7 s
+--- output ---
+HIDDEN Vec3 { x: 128, y: -34, z: 2268 }
+CUT_PRE Vec3 { x: 128, y: -34, z: 2269 } deepslate Vec3 { x: 128, y: -34, z: 2269 }
+CUT_PRE Vec3 { x: 128, y: -34, z: 2270 } deepslate Vec3 { x: 128, y: -34, z: 2270 }
+HIDDEN Vec3 { x: 128, y: -33, z: 2268 }
+CUT_PRE Vec3 { x: 128, y: -33, z: 2269 } tuff Vec3 { x: 128, y: -33, z: 2269 }
+HIDDEN Vec3 { x: 128, y: -33, z: 2270 }
+HIDDEN Vec3 { x: 128, y: -32, z: 2268 }
+CUT_PRE Vec3 { x: 128, y: -32, z: 2269 } tuff Vec3 { x: 128, y: -32, z: 2269 }
+HIDDEN Vec3 { x: 128, y: -32, z: 2270 }
+END {"cuts":[[{"x":128,"y":-34,"z":2269},"deepslate"],[{"x":128,"y":-34,"z":2270},"deepslate"],[{"x":128,"y":-33,"z":2269},"tuff"],[{"x":128,"y":-32,"z":2269},"tuff"]],"p":{"x":128.49881602230892,"y":-36,"z":2269.5},"hp":20,"inv":[["basalt",8,null],["wooden_pickaxe",1,20],["stick",2,null],["cobbled_deepslate",2,null],["tuff",2,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (128.5, -36, 2269.5) in overworld, health 20/20, food 20/20, alive

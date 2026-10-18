@@ -1,0 +1,3 @@
+const move=new Movements(bot);move.canDig=false;move.allow1by1towers=false;move.allowParkour=false;move.allowSprinting=false;move.allowFreeMotion=false;move.scafoldingBlocks=[];bot.pathfinder.setMovements(move);
+let before={p:bot.entity.position.clone(),hp:bot.health};
+try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(139,-36,2242)),new Promise((_,r)=>setTimeout(()=>r(Error('budget')),12000))]);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('RESULT',JSON.stringify({before,after:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState}));}

@@ -1,0 +1,17 @@
+program #9164 on p1: 0 s
+--- output ---
+END {"done":[],"p":{"x":146.5,"y":-36,"z":2241.5},"hp":20,"food":20,"inventory":[],"entities":[]}
+--- error ---
+Error: life/health/budget
+    at guard (p1-program-9164.js:2:97)
+    at p1-program-9164.js:4:29
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:421:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:546:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+[server] p1 was killed by Ender Dragon using magic
+p4: P4 observed fresh event09:50:31 P1 MAGIC death at100.2,49,2.1; status now OWempty20. #9158 first bridge cell97,48,0 physically placed. P4 still OW1312273 HP20/basalt6/wood14; hold now protects retained kit. Need changed continuous entry/escape before next 
+p4: attempt; I can independently test OW reachable placement and prepare bridge helper without exposing another body.
+p2: URGENT independent death event09:50:31 P1 MAGIC at100.2,49,2.1 End. #9158 qualified visible obsidian placement→97,48,0 END1/stock29→28, but retained safety FAILED after return. P4 do not enter exposed idle platform unchanged. Replacement experiment: contin
+p2: uous short guarded movement/recovery, observe current cloud before entry/at arrival; canopy cannot prove cloud immunity. P1 no new preparation before changed escape assumption.
+--- p1 now: (146.5, -36, 2241.5) in overworld, health 20/20, food 20/20, alive

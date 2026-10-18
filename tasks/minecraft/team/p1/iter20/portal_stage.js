@@ -1,0 +1,3 @@
+const move=new Movements(bot);move.canDig=false;move.allow1by1towers=false;move.allowParkour=false;move.allowSprinting=false;move.scafoldingBlocks=[];bot.pathfinder.setMovements(move);
+try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(133,-36,2275)),new Promise((_,r)=>setTimeout(()=>r(Error('budget')),15000))]);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('BODY',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food}));}
+let b=bot.blockAt(bot.entity.position.floored().offset(0,-1,0));await bot.lookAt(b.position.offset(.5,1,.5));console.log('FLOOR',JSON.stringify({name:b.name,p:b.position,visible:bot.canSeeBlock(b),cursor:bot.blockAtCursor(4.5)?.position}));
