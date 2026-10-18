@@ -1,0 +1,24 @@
+program #10276 on p4: 0 s
+--- output ---
+STATIC_COVERAGE {"source":"P1#10246 candidate ONLY, not current route","rows":[{"i":0,"path":{"x":12,"y":66,"z":-36},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":12,"y":66,"z":-36},"room":{"x":12,"y":64,"z":-36},"anchor":{"x":13,"y":66,"z":-36}},"unknownReads":0},{"i":8,"path":{"x":12,"y":68,"z":-28},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":11,"y":67,"z":-29},"room":{"x":11,"y":65,"z":-29},"anchor":{"x":10,"y":67,"z":-29}},"unknownReads":0},{"i":16,"path":{"x":13,"y":68,"z":-20},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":13,"y":68,"z":-20},"room":{"x":13,"y":66,"z":-20},"anchor":{"x":14,"y":68,"z":-20}},"unknownReads":0},{"i":24,"path":{"x":16,"y":65,"z":-12},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":15,"y":64,"z":-12},"room":{"x":15,"y":62,"z":-12},"anchor":{"x":14,"y":64,"z":-12}},"unknownReads":0},{"i":32,"path":{"x":17,"y":68,"z":-4},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":17,"y":68,"z":-4},"room":{"x":17,"y":66,"z":-4},"anchor":{"x":18,"y":68,"z":-4}},"unknownReads":0},{"i":40,"path":{"x":17,"y":70,"z":4},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":17,"y":70,"z":4},"room":{"x":17,"y":68,"z":4},"anchor":{"x":18,"y":70,"z":4}},"unknownReads":0},{"i":48,"path":{"x":13,"y":67,"z":12},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":13,"y":67,"z":12},"room":{"x":13,"y":65,"z":12},"anchor":{"x":14,"y":67,"z":12}},"unknownReads":0},{"i":56,"path":{"x":10,"y":67,"z":20},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":9,"y":66,"z":21},"room":{"x":9,"y":64,"z":21},"anchor":{"x":10,"y":66,"z":21}},"unknownReads":0},{"i":64,"path":{"x":10,"y":65,"z":28},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":10,"y":65,"z":28},"room":{"x":10,"y":63,"z":28},"anchor":{"x":10,"y":65,"z":29}},"unknownReads":0},{"i":72,"path":{"x":5,"y":66,"z":36},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":6,"y":67,"z":37},"room":{"x":6,"y":65,"z":37},"anchor":{"x":5,"y":67,"z":37}},"unknownReads":0},{"i":80,"path":{"x":0,"y":65,"z":44},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":0,"y":65,"z":45},"room":{"x":0,"y":63,"z":45},"anchor":{"x":-1,"y":65,"z":45}},"unknownReads":0},{"i":88,"path":{"x":0,"y":64,"z":52},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":0,"y":64,"z":52},"room":{"x":0,"y":62,"z":52},"anchor":{"x":-1,"y":64,"z":52}},"unknownReads":0},{"i":96,"path":{"x":0,"y":63,"z":60},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":0,"y":63,"z":60},"room":{"x":0,"y":61,"z":60},"anchor":{"x":1,"y":63,"z":60}},"unknownReads":0},{"i":104,"path":{"x":0,"y":65,"z":68},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":0,"y":65,"z":68},"room":{"x":0,"y":63,"z":68},"anchor":{"x":1,"y":65,"z":68}},"unknownReads":0},{"i":112,"path":{"x":-2,"y":64,"z":76},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":-2,"y":64,"z":76},"room":{"x":-2,"y":62,"z":76},"anchor":{"x":-1,"y":64,"z":76}},"unknownReads":0},{"i":120,"path":{"x":-1,"y":65,"z":84},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":-2,"y":65,"z":84},"room":{"x":-2,"y":63,"z":84},"anchor":{"x":-1,"y":65,"z":84}},"unknownReads":0},{"i":128,"path":{"x":3,"y":66,"z":92},"found":{"kind":"TWO_CAP_BORE_STATIC","standing":{"x":2,"y":64,"z":94},"room":{"x":2,"y":62,"z":94},"anchor":{"x":3,"y":64,"z":94}},"unknownReads":0}],"covered":17,"total":17,"unknownReads":0,"warning":"Static geometry only; no entry traversal, actual occupied-camera visibility, handcut budget, fluid evolution, or closure execution demonstrated"}
+--- returned ---
+{
+ "p": {
+  "x": -8.485947943850213,
+  "y": 26,
+  "z": -37.7
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "gravel",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2#10261 actual exit/return FULL20HP, #10264 one supported down/pillar/return FULL20HP. #10269 quarry PARTIAL retained16GRAVEL/7FLINT, FULL20HP; movement failed after six actual nodes near(-8.3,24,-35.7), samecaller reverse return+2pillars+reclose WORKED. 
+p2: No48 receipt. Changing material assumption to reduce needed stock: nativeY40 route+shorter straight pillar if actual vertical column qualifies. Methods: inspect10269 move failure target logging absent; own primitive needs target/phase, not generic error. P
+p2: 1 retained19HP accepted, route16:14 clock continues.
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive
