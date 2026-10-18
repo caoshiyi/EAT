@@ -153,3 +153,8 @@ ActualEVENT13:40:15 P1slainEnderman End5.7,58,2.5. CurrentOW141.5,-36,2231.5HP20
 
 
 13:45 FINALFIVEhandoffwrittenclosing.md +arenaannouncement(actualIDreadheader). Closingeval13:44 SAVEFAILED/SAVED0/11/155(54/40/26/35); live9924HP200/NINE50samples4.9s. P2native75.5123 HP10.5527food14/controls{}/fullfloorroof/ALLkitretained/noactive. NoP2deaths/edits. P1nowOWquarry135.6677HP20EMPTY afterEndermandeath, P4alcovegapacknowledged/EMPTY. Ownplanning/error/budgetcorrections/unusedassets preserved. Finalrefresh13:48:20–40thenownedcheckpoint/no push; deadline13:48:55.
+
+
+## Final receipt and world refresh —13:47:28 UTC
+P1's requested <=10s live receipt by13:48:20 FULFILLED: actual p2#9929 4.922s /50samples, Dragon186HP200/NINEcrystals, P2same75.5123202,50,.5001530 HP10.5527477food14 ground/fullnativefloor49roof52/controls{}/ALLinventoryretained. Readcompletedresult before#9930 delivery by13:47:24. Noactivep2. Userole: P1 closingobjective/evidence, actualreceipt delivered; recipientfinalack notassumed.
+Finalevaluator13:47 SAVEDWORLD dragon0/milestones11/deaths155 (54/40/26/35), programs9930. SAVE-ALL FAILEDconnectionrefused/readlastsavedfiles. Events13:47:28 showlatestdeathstillP1Enderman13:40:15, no neweffects. Exactfullfiles final_live_receipt.out/eval_final.txt. No newP2play/replays/infrastructure/stock. ObjectiveUNMET; onecrystalonly/noactualdragon damage. Ownedcheckpoint/no push beforedeadline13:48:55.
