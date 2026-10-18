@@ -1,0 +1,4 @@
+const V=require('vec3').Vec3,ring=[[39,0],[39,1],[39,2],[39,3],[40,3],[41,3],[42,3],[43,3],[44,3],[45,3],[45,2],[45,1],[45,0],[45,-1],[45,-2],[45,-3],[44,-3],[43,-3],[42,-3],[41,-3],[40,-3],[39,-3],[39,-2],[39,-1]];
+const rows=[];for(let i=0;i<=24;i++){const [x,z]=ring[i%24],y=50+i;rows.push({feet:[x,y,z],cells:[-1,0,1].map(v=>{const b=bot.blockAt(new V(x,y+v,z));return{p:[x,y+v,z],n:b?.name,sh:b?.shapes};})});}
+console.log('STAIR_GRID',JSON.stringify(rows));
+const d=Object.values(bot.entities).find(e=>e.name==='ender_dragon');console.log('CURRENT',JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,dragon:d&&{id:d.id,hp:d.metadata?.[9],phase:d.metadata?.[16],p:d.position},crystals:Object.values(bot.entities).filter(e=>e.name==='end_crystal').map(e=>({id:e.id,p:e.position})),entities:Object.values(bot.entities).reduce((a,e)=>(a[e.name]=(a[e.name]||0)+1,a),{}),p1:bot.players.p1?.entity?.position,p4:bot.players.p4?.entity?.position}));
