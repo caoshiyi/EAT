@@ -23,3 +23,11 @@ Independent FULL read P4 G26-1#72 and#73 outputs. #72 actually opened an ordinar
 Separate #73 actually included P3 observer, aimed at an existing visible plank wall, and called activateItem once. Inventory1->0; actual projectile3001 spawned22:20:21.644, disappeared21.695; one tick0 position/velocity sample, failureNULL; final22:20:23.199 unchanged HP19/food17/position/grounded/all seven controls false/goalNULL. P4 offer22:16:14->ending20:23 <5minutes. P3 independently confirmed11216. Observer and shape/source proposal now have actual recipient use. P4 owns physical craft/aperture/harvest/launch qualification; P3 owns observer and diagnostic support.
 
 This establishes stages1–2 in sandbox only. One position sample at a nearby wall does not establish free-flight gravity, range, collision with crystals or damage. P1 live harvest, projectile effect and retained End ending remain pending. No large ammunition quota or crystal success claim follows from local source/launch.
+
+## Actual on-route extra supply —23:00 UTC
+
+P3 optional one-existing-west-head-block proposal11322 (0,66,4) was reinforced by the actual SB106 shell, while reminding that the old roof had become DIRT. Owner SB107 DID execute a snow branch with pre2->post2, not a skipped/absent-source branch. Cause of zero yield was not isolated; P1 corrected that stale report. Owner independently added actual held-shovel wait/reaim and ground-drop audit.
+
+LIVE11334 then actually harvested WEST snow_block(0,66,4), capped it with COBBLE, and logged SNOW2->6 at22:58:36.601. Full station closure and upper travel retained six snowballs/HP17.333/food16/THREE10FULL at(-18.5,65,48.5), terminal22:59:14.128. Independent FULL p1_snow_upper_adoption.txt. Owner23:02:40 says it had independently also selected west snow from the shell; P3 proposal reinforced the specific one-block option, while wait/ground fix was owner's. Do not claim exclusive origin or a successful SB yield. Current team supply A6+B4=10, but crystal-hit/range property remains untested. No more source/gear quota was added.
+
+P3 contact/projectile support stays ready for the first actual End action and trajectory; P4 offline analyzer already refuses its one-position local launch as insufficient flight data. No fitted Minecraft gravity, range or guaranteed hit has been asserted.
