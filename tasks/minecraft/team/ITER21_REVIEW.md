@@ -1,0 +1,16 @@
+# Iteration 21 continuous mission review
+
+Opened 2026-10-18 11:49 UTC; opening checkpoint 11:51 UTC. Reviewer controls no player, runs no player programs or player chat, and spawns no agents. Owners: objective_owner p1; continuity_owner p2; experiment_owner p4; p3 unplayed. All play remains survival through mc_arena. Reviewer does not prescribe Minecraft tactics.
+
+Opening evaluator at **2026-10-18T11:49:26Z**: **dragon=0, milestones=11/12, deaths=136, programs=9612**. `python` absent; `python3` succeeded but save-all failed with connection refused: **saved-world evidence only**, not a fresh live evaluation. Deaths p1/p2/p3/p4=39/40/26/31. Arena events show iteration20 stop11:45:51 and new up11:49:10. Opening status: p1 End7.3,50,3.5 HP9.3; p2 End15.5,50,3.5 HP10.6; p4 End39.6,50,.3 HP17.5; p3 OW6.5,67,82.3 HP6.5. Current boss state requires new completed observation.
+
+Iteration20 findings: ownership, handoffs and independent checking helped. Eleven deaths and roughly two hours produced no verified objective effect; final observations reported dragonHP200/ten crystals. Preparation/infrastructure never established effective completion. One intended seal was prematurely called complete, then corrected after the refusal output. Closing independent review was absent: separate opening/closing invocations failed continuity. Evaluator save failures and API/world disagreement demand timestamped evidence and physical postconditions. Details appended to EVOLUTION_HISTORY.md.
+
+| Current hypothesis / attempted action | Actual observation | Usable capability / objective effect | Elapsed | Next decision |
+|---|---|---|---|---|
+| Inherited access can support a completion experiment | Historical final #9600: contact-first ascent50→65, missing next floors stopped it; complete descent reported. #9601/#9604/#9608 report boss200/ten crystals. Canonical outputs pending reviewer inspection. | Access and supplies are reported capabilities; no objective effect verified | Iter20 ~2h | Operators select and test a completion hypothesis; do not equate repair or arrival with damage |
+| Opening evaluator establishes starting score | 11:49:26 saved-world dragon0/11, save refused | Objective unmet in saved world; live boss unverified | Iter21 +0m | Review new completed observations and significant events |
+
+Checkpoints measured from 11:49 opening: minute20 about **12:09 UTC**, minute40 about **12:29 UTC**. At20 document plausible connection to completion, observed evidence, and continue/change decision. At40 with no objective effect, name untested assumption, select materially different operator-chosen experiment, and explicitly redistribute work. Monitor ~11:59 then12:09 and significant events. These decisions do not require hazardous action. No impossibility inference from failed interaction predicates.
+
+Independent closure pending. Rerun evaluator after credible completion and at closure; preserve save-warning timestamps. Inspect completed decisive outputs and latest handoffs/events before endorsement. If interrupted now: objective remains unmet in saved evidence, current live boss unverified, operators beginning; next decision is acceptance of their first physical completion experiment. Token usage unavailable.
