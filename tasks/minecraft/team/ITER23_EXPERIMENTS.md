@@ -69,4 +69,27 @@ Distinct independent challenge: current terrain changes/stale cachedroute vs opt
 
 10358 actual same EAST20.5,68,55.5->HOMEentry5,64,97: both optimized and unoptimized SUCCESS46nodes after17partialyields, zero returnedfeetinsidefullblocks. Local10360 from1.5,64,90.5 ->HOME bothTIMEOUT3.5s/eightnodepartial/zeroinvalidfoot. Occupied1,64,91 goal bothTIMEOUT, notnoPath. No reproduction of hypothesized optimizer corruption; do not globally disable it or claim modelinaccessibility. This does not explain old P1 mismatch. Fresh actual support/body/height validation remains necessary. Published16:28 beforebudget; no third modelretry, no worldchanges/p4loss. Exact scripts/outputs and staged inspected h7_report.txt retained.
 
+Lead16:29:41 actualH7negativeadoption: nooptimizationdisable/rewrite. NewH8 supportrequested.
+
+## H8: navigation waypoint leads,16:29:41->16:37
+Requested recipientP1 afteractualtransition. Reversed permitted13 return-route JSONs intoexplicit outbound feetcellarrays; preserved all LOW405feet cells from12ROAD12, matched14 actualdatedclosingBODY cells via literalreturns/Math.floor. Tables distinguish failedupperMAGMA legs and changed14buriedconnectorY53, shaftX-54/Z64, LOW, actualdestinationportal/OWL. No new cost recount/sourcequota/oldcodeexecution. WAYPOINT_LEADS.md/JSON delivered16:35:42 before16:37; exactscriptneverprescribed.
+
+Duringaudit freshnesscrisis: live16:31:04 P1HP7,16:32:05 HP1 atOWLportalfront; urgentlysharedbothcapturedstates. P3unplayed alsoHP4.5 observed; no p3control. P1 actual10372 emergencyordinarycut/unsupportedfrontfloorrepair/portalentry succeededHP1->NetherHP2. Native-retention10373 lateractualFULL/HP3. No p4interactions or rescue claim.
+
+H8 sourcepreflight caught bench Z-coordinate error BEFOREpublication: actualBLACKSTONE65/TABLE66/BASALT67 column(1,y,5), not7; correcteddocusing literal7097/source. Sourcearraysremainexact. Actual P1chat8917–19 at16:36:23 read/adopted waypointLEADS ascoordinates only, proposedactualbenchconnectoruse; physicaluse ofartifactstillpending. This is source-reviewadoption, not movementcredit.
+
+## Minute40 recommendation / corrections
+Published16:35:42, ~1m42late vsnominal16:34. Initialnote adopted10372transition but assumed nextretainedconnectorstillpending frompartialterminal; new10373fullresult arrived inchatduring H8publication. Stale partialending advice immediately superseded after FULL10373outputread16:35:56: FOURall10FULL/HP3food17/groundtrue/BASALT2/bothpicks at1.35638,65,4.501. Actual protectedNether wholeoperation succeeded before16:36, not merely transition. CurrentlowHP explicit; revise nextprotectedleg/fooddecision, no automatickitquota. No optimizerblame fromH7; keep nodegeometry checks and before-action/minimumHP recording. Do not batch dependent statefulreports without readingnewchat between them; H8+review batching contributed to staleadvice.
+
+Own10380 threefreshfull10face samples20HP/20food/GRAVEL1/nofoes, eye1.62/poseomitted. Evaluator16:36:22 saveddragon0/milestones11/deaths170/programs10380, SAVEFAILEDconnectionrefused. Not synchronizedlive or victoryproof. No p4physicalchanges/deaths throughminute40. CurrentobjectiveeffectNONE/noEndactor. Continuefeasiblework, provisionalcommitted17:24/whole10017:34.
+
+H8 actualrecipientuse VERIFIED: P1#10391 bench_connector_corrected.out read FULL16:42–43: literal 3benchcuts/ordinaryreceipts, actualone-up1,66,6.7, EXACTBLACKSTONE65/TABLE66/BASALT67 at(1,y,5) restored, twoBASALTpatches andFOUR10FULL+terminalfull/HP3. P1explicitlyadopted H8coordinates withfreshqualification. This verifies useful waypoints, not the rest of the oldroute or causalcredit for P1's implementation.
+
+## H9 proposal superseded / optional ONE-gravel support, through16:44
+16:38:59 proposed materially different existing-stock fullhealthP4 route usingfarY56+9pillars, not H1/H2zero/oneplacement; no physicalwork beforeteamdecision. Lead'salreadyqueued16:38 allocationinsteadrequested optionalONEcurrentGRAVEL handofftoP2, samewholebudgetprep->P2actualpillaruse16:44, requireordinaryGRAVEL3 beforedonating1/retaining2caps. Accepted16:40:41; fullhealthforkNOTstarted. No independent new quarry/source allowed.
+
+donate_one_gravel.js source reviewed/asyncPARSE_OK16:42:02: actualP2nearY26/within4m gatebeforeopening; headcut ordinaryGRAVEL2 gate protectsagainstFLINT/dropfailure, thenfootcut/pickup3gate; actualvisibleentity/ray/normaltoss1; samecallerreclosure2 +freshall10audit. This is PREPARED, NEVEREXECUTED. It is not a testedhelper.
+
+P2actualstatuses16:42:02,16:42:48,16:43:30 and16:44:23 remainedY24 near(-4.5,-28.5), no readyrecipientposition atP4approach. No head/footcuts, no toss, no ordinary3 test or recipientreceipt/use. Wholedeadline16:44 missed; negativeclosurepublishedafterfresh16:44:23 status, actualpublicationtimeinarenachat. Source hypothesis remainsUNTESTED, not falsified. No automaticretry or newsourcechain. P4fullrefuge/20HP/20food/GRAVEL1 unchanged. Leadfood16:50 notassumedavailablebyP1.
+
 16:29: actual P1#10359 home_native_room_finish.out fullyread: sixDIRECT_POST HP20 andfourHOME_FULL all10true+terminalfull, realnearHOMEbody6.5748,64,97.497. This usedP1originalSIDEroom6,64,97, notmyofferedunderfootbore5,62,97, so noownH4physicaladoptioncredit. Lead previouslycalledurgentgeometryuseful; literalrecipientuseofownhelperstillunverified.
