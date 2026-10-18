@@ -101,4 +101,18 @@ Mixednegativepublished10413 at16:48:57, recommendingRETIREcurrenttransfer/foodop
 
 16:50checkpoint ac845170: all owneddata/currenthandoff preserved; H10notanactualsurface/foodcapability. Continuefeasibleboundedworkthrough17:34, provisionalcommittedby17:24. Methodsrequestedexact10407executionisolation(nextrecordschat) instead ofthirdroute/modelrewrite.
 
+## Material changes after provisional checkpoint d63c6096,16:54:10
+Provisionalcommittedearly, not final. Actual10421threefull10faces20HP/20food/GRAVEL1 preserved. Workcontinues to17:34. CompactLESSONS.md added withdemonstratedlimits/errors; no newphysicalqueue.
+
+P2DEATH livecanonicalevent17:06:31 Zombie(-7.5,24,-30.7), independentlyread17:07:55 afternewemptybody STATUS. Alert10443published17:08:15: oldGRAVEL/FLINT/fooddependencyinvalid. Fresh evaluator17:08:15 SAVEDdragon0/11/deaths171 (61/46/26/38), SAVEFAILED; unlikeearlier170thisnow includesactualnewdeath. P3unplayedHP4.5; P4no deaths. Do not mislabelnewemptytree20HPbodyasa successfulmaterialretainingascent. P2later acknowledged failedreturnbranch anddangerousanalysisdelaywhileexposed.
+
+## H11: new-body nearby ripe food, <=90s from17:10:22
+Distinctpostdeathassumption: sourcefood nearnewP2canopy10.5,72,-38.5 vsnoneimmediate. Earlierzerofoodread wasHOMEz50..120, adifferentregion. Ownread-only10449 finished17:10:23: sampledspawnx[-5,30],z[-50,5],y63..77, ZEROunknownblocks, ELEVENsweet_berry_bushALLage3/grasssupport. Closest(13,68,-25)14.866m,(8,67,-25)15m,(7,67,-25)15.166m fromnewbody. Fullsortedactualdata preserved. No movement/source/interaction, no physicalrouteorharvestqualified.
+
+Positivechangesknowledge: newspawnhasripefoodleads; priorHOMEzero remainsvalidforitsregion. Publishedafterliteraloutput/stagedreportinspection, before90s gate. Explicit immediateenclosurefirst; no revived17:15foodpromise, currentwholepath/hostiles/ordinaryreceipt/courier/P1USEnotqualified. DatedP1#10268 ordinaryBERRY3 supportcut isconditionalmechanismreference only. Actualrecipientadoption/use pending.
+
+H11 body scope superseded: P2secondDEATH17:12:14 Skeleton(9.5,72,-39.7), independentlyread17:13:43. Newempty20HP body(-7.5,57,-26.5); firstcanopybodywaslost. Earlier11ripefoodcoordinatesremaindatedworldevidence, but15mproximityreferstoLOSTbody anddoesnotqualifycurrentundergroundegress/courier. Correctedsharedreportafterfreshrecord. No actualfoodharvest/recipientuse wasobserved. P2firstdeathmaterial30+GRAVELandsecondemptybodylossbothcount; no camouflageassurfacecapability.
+
+17:11:54 liveP2HP8.7/food17/empty capturedbeforeseconddeath; urgent10454at17:12:21 reiteratedimmediateclosure. Causewasnotinferredfromthatstatus; subsequentcanonicalSkeletoneventgoverns. P4cannotcontrolanotherbody. Ownfullrefuge/20HP/GRAVEL1retained.
+
 16:29: actual P1#10359 home_native_room_finish.out fullyread: sixDIRECT_POST HP20 andfourHOME_FULL all10true+terminalfull, realnearHOMEbody6.5748,64,97.497. This usedP1originalSIDEroom6,64,97, notmyofferedunderfootbore5,62,97, so noownH4physicaladoptioncredit. Lead previouslycalledurgentgeometryuseful; literalrecipientuseofownhelperstillunverified.
