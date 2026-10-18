@@ -1,0 +1,14 @@
+[sandbox] program #35 on p2: 10.5 s
+--- output ---
+DRY_PLAN {"q":{"x":6,"y":66,"z":-31},"status":"success","path":[[5.5,66,-30.5],[6.5,66,-30.5]]}
+SETTLED_CHECK {"q":{"x":6,"y":66,"z":-31},"a":{"x":6.5,"y":66,"z":-30.500000000000277},"b":{"x":6.5,"y":66,"z":-30.500000000000277},"state":{"at":"2026-10-18T20:57:42.861Z","p":{"x":6.5,"y":66,"z":-30.500000000000277},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3],["spruce_log",1]]},"fluid":false,"floor":"grass_block"}
+PICKUP_ACTUAL {"at":"2026-10-18T20:57:43.414Z","p":{"x":6.7,"y":66,"z":-30.500000000000316},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3],["spruce_log",2]]}
+LOG_CUT_STATE {"l":{"x":7,"y":69,"z":-31},"state":{"at":"2026-10-18T20:57:47.770Z","p":{"x":6.7,"y":66,"z":-30.500000000000316},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3],["spruce_log",2]]}}
+LOG_CUT_STATE {"l":{"x":7,"y":70,"z":-31},"state":{"at":"2026-10-18T20:57:51.527Z","p":{"x":6.7,"y":66,"z":-30.500000000000316},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3],["spruce_log",3]]}}
+INPUTS_ACTUAL {"at":"2026-10-18T20:57:52.029Z","p":{"x":6.7,"y":66,"z":-30.500000000000316},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3],["spruce_log",3]]}
+--- error ---
+Error: four ordinary logs not received
+    at p2-program-35.js:13:118
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.7, 66, -30.5) in overworld, health 20/20, food 20/20, alive
