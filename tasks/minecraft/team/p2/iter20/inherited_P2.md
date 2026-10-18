@@ -1,0 +1,29 @@
+# P2 — iteration16 current checkpoint
+Deadline **2026-10-17 17:20:29 UTC**, current runner EAT_ITER16 / CR_DEADLINE1792257629, provenance p2/iter16/runner_provenance.json. Opening15:20:48; latestclock17:19:26. Historical15:17:40 retired. Continue until victory/currentexplicitstop/deadline/termination.
+
+**Actual accepted8029:** OW **(146.50914,-36,2243.55306)**, HP11.499998/food9, same life, **BASALT1+SLAB2**, no tools/food/rods. 8027 yieldedONEsouthcell toclear newlyrespawnedP1door; actualfloorFULL/roofAIR/rays[]. 8029 placedBASALT at146,-34,2243 fromnorthfullref, ordinary2→1, actualfloor+roofFULL/issueNULL/controls{}. GoalNULL. Localproof NOTfullcapsule. ActiveNONE. Strongholdspawn confirmed7906 viaordinarybeduse146,-36,2240: actual“Respawn point set”, daytime refusal/nonsleeping. No p2death this iteration.
+
+## Delivery and useful integration COMPLETE
+- Actual7755 P2 ordinaryROD5→0, tossed/recipientReturned/closedTRUE/lostFALSE/cursorNULL/controlsfalse at Nether240; independent7756 P1ordinaryROD0→5/actualReceiptTRUE/full242/HP20. Actual donor/receiver, not routeindex or OWarrival assumption.
+- Actual7775 P1ROD5→0/Pearl10→0/Eye0→10, grid/cursorNULL/frame20. Actual7786 ten individual eyeinsertions/Eye10→0, all12frames eyeTRUE/all9portaltiles x133..135,z2275..2277,Y-38. Deliveredcargo physicallyadopted. Rodsource/transport/receipt/use CLOSED; no more production.
+- Latest own officialeval17:16:07 after8012 (p2/iter16/eval_1716.txt): **dragon0/milestones11/deaths116** (31/35/23/27), no victory claim. Four iteration16 worlddeaths: P4MAGIC15:54:54; P1VOID15:56:39; P1MAGIC16:21:26; P4VOID16:37:20.
+
+## Current completion stage
+P1 owns primarycombat: actual7966 changednearsteer/AABBescape succeeded to End81.56,49,.5 HP13.17/full/ground/lostFALSE; catchCount0 means catch UNTESTED. Width actual83..89 only. P4 oldkit persisted through7966 but **7976items[]/noSword/Snow ordinary receipt**, now absent. P1 tunneled beneath native terrain, detoured actualobsidian44 via45,z5→37,z5→37,z0. Current17:16:06 P1(1.6,54,.5), HP13.17; actual8010 30s parentprobe atY54 zeroattacks/dragonHP200/phase1/root64.84..85.64: OUTOFREACH, no damage. Changedstage four eastUP to5,Y58 besidebedrockrim, not replayY54. Actualfountain bedrockY58/column60/rim59 invalidates oldfloor63/stance58 guesses. P4actualEnd23.4,Y49 HP20, active8011/nativefollow; releasedtoadjacentcentre1,Y54, avoidP1occupied0. P3finite combat support. **P2 keepclear/no duplicateentry**, no concrete combatkit/role, weak11.5/food9.
+
+## Optional stick/table operation FAILED; closed, no queue
+P1 requested optional2sticks6309–10. P2 announced boundedwhole2min **17:10:36→17:12:36**, missed; do not renew clock or claim production. Actual7993 reverse48knownAIRnodes/15.2s fromyield to1462242, no cuts/hurt. 7994 localwoodread found upperplanks behindgeometry. 8000 threeAIRsteps toshaft1442241; 8002 first proposedcut143,-33,2241 REFUSED because nearer143,-34 bookshelf occluded ray. **ZEROcuts, wood0/table0/sticks0**, no sharedtable/sourcehole mutation. P4alreadyEnd removes OWreceiver and P3ordinaryhandBODYtrial needsno swords; optionalstage retired8007. **8008 returned3AIRnodes to acceptedroofed1462242**, no source/cargo debt. No P2Endentry. CurrentBASALT1→2 was observed by7984 without ownmine/craft; shared incidentalpickup origin unconfirmed, not donor/receipt claim.
+
+## Other retained world support and lessons
+- 7939 rearOWhead131,-35,2276 repairedCOFFfull/ownCOFF1→0, returnclear128.4; P2 yieldedactual7921 insteadofblockingP4. No false fullpodclaim. 7984hold stillgrounded/nofoerays/controlsfalse.
+- Optionaldirectgift7969 NOTexecuted: P2→P4ray hits128,-35,2273, 1292273body BASALTfull. Nearbypositions not compatiblehandoff; retired7970 because detourfor1stillleaves1gap vsP4finite2nativecuts. No indefinitequeue.
+- 7972 pickupgenericDAMAGE_OR_HAZARD withHPunchanged/clouds[]/cuts0 stillhadrealcut (pick30→31 andheadCOFFrepair). Counter increments AFTER postcut tick/check; state andtoolwear outrank counter. P1changedactualdragonproximityguard ratherthaninfermagicdamage.
+- Portal7773 expected-dimension respawn event falsely setlost; actualOW/HP/inventory/events provedno death. Fixed source separates death/end vsrespawnSeen. Global libraryvolume not suitable localmovement gate; knownfloor/roof/currentfoerays used without falseglobalenclosure.
+- Own SLAB2same-cellmerge source exists but physicallySKIPPED7868 because P1alreadyrepaired; NOT tested.
+- Source-only public_damage/MELEE_GEOMETRY.md: nativebedrockblastshadow diagonalmeleepose UNQUALIFIED; zeroexposurestill1rawdamage/cloudignoreswalls. public_dragon/COMBAT.md: ordinaryparent hurt routesreducedBODY; sitting>25%maxdamageforcesTAKEOFF; crystalheal1/10ticks fromAABB+32 selection. No physicaldragonhit/crystal effect proven.
+
+Evidence: p2/iter16/run.py saves ownedcompile/receipts.jsonl/latest_result.json; all ownraw.out files. Commitsd08c989e/6e413423/fb5b1ee9; newercheckpoint pendingcommit. Fullhistory checkpoint_1714.md/checkpoint_1633.md/checkpoint_delivery_1543.md/checkpoint_1527.md/inherited_P2.md. Next: stay alive/clear, inspect actual combat result, finaleval by deadline; no new preparation unless demonstrated selected need.
+
+## 17:19 closing correction; continue until currentdeadline
+Public event **P1MAGICdeath17:18:22 at5.3,Y60,-1.3**, currentOWbedempty20. HigherY60stance RETIRED;8024 cloud21535 insidepod, recoveryignoredhazard/health andreturnedissueNULL whileHPfell13.17→9.17, then5.17/death; fullblocks NOTcloudprotection. No dragon damage verified; prioractualHP200. P4actual15,Y49/full20 owns any boundedcurrentbelow-floor dropapproach, no thirdP2entry.
+Public_iframes/FINDING.md verified exactMojangLivingEntityhurt: invulnerableTime>10 rejects equal/lowerdamage, acceptedfullhit resets20. Isolated6tickequalhand train canacceptonly12tick cadence, nominal6tickDPSoptimistic. Shared8018/8019, P1accepted10tickprobe. Sourceonly, no own physicaldragonattack.
