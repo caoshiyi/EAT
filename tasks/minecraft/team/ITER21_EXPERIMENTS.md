@@ -58,3 +58,6 @@ Precloseofficial13:37 python3eval: dragon0/11/deaths154(P153/P240/P326/P435), pr
 EvidenceLIMITcorrected: 9868ordinarySTRING+1verifiedafteronecut/bridge, but no actualbirth/trajectorytimingsampled; wordingBEFOREfallwasintendedcapturemechanism, NOTprovedmid-airpickupcausality. 9873fourcuts→only+2afterfivecaps rejectsuniversalclosecapture. Floor/support/actualdropY matters; do notrepeatfreshcutquotaexpectingguaranteedpickup.
 
 Closing handoff written 2026-10-18 13:44:53 UTC, canonicalP4.md and p4/iter21/closing_handoff.md. Closing own#9923 stableemptybody/knownWestgap; evaluator13:42:52 saved0/11/deaths155 includesP1Enderman death13:40:15, no newP4death. P1latestexposure/visibility results do not establish damage. Final late eval refresh remains before13:48:55.
+
+
+Final refresh 2026-10-18 13:48:34 UTC: own#9932 currentP4position {'x': 157.5131177784095, 'y': -36, 'z': 2229.6175680213764}, HP14.971503257751465/food17/groundTrue/inventory[]/controls{}/goalNone; knownWestgap remainsAIR, doorMOSS/mainAIR unchanged, observedfoes[]. Evaluator13:48:20 again dragon0/milestones11/deaths155; SAVE-ALLfailed so last-savedfiles. LatestP2completed9924 actualHP200/ninecrystals, no completion. No remainingactiveP4work. Closingcommits0af5b9ef/c3de486e; finalrefreshcommit pending.
