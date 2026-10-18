@@ -1,0 +1,15 @@
+# Existing HOME bed pickup — SANDBOX G25-3 only
+
+P1 proposed bedcourier20:23:05, whole <=20min including P1 actualuse (20:43:05 deadline). P2 selected contingentone-source gate<=3min through20:27:30; LIVE donorhold explicitlyrequired until actualrecipientready. P3 owns bed-source only, not failedcourier/transit retry. Donor <=2min query proposed20:24:25->20:26:25 includinghandoff; announcedafterP2gateack. No resetduringowntrial, P2G25-3 READY20:23:10 snapshotmatchesliveP3.
+
+LIVE read-only10925 at20:23:51.878 found FOOT6,67,83/facingEAST; HEAD7,67,83 subsequentlyconfirmed inSB. BOTH have fullCOBBLE floorY66. Southern6,67,84 is COBBLE, nothead. S-head6,68,83 DIRT. Actualbedtopcursor fromstationaryHOME hit6.5,67.5625,83.06266 usingaimFOOT+.5,.3,.1, reach1.20/1.36m from1.62/1.8. Center/head-highaim insteadhitsSheadDIRT. Do not reusecentralaim blindly.
+
+**SANDBOX G25-3 P3#21**,20:25:12.939–13.748: freshlyrequired exactHOMEbody2.166664HP17foodEMPTY/all7false/actualbedpair/floors/nohostiles12m, then ordinaryactualcursorbedfoot+barehand `dig(...false,'raycast')`. BothpartsbecameAIR, **WHITE_BED1 actuallyreceived inP3inventory**, no dropremaining, no movement/healthloss/all7false. Whole0.809s physicaltrial. ExactSANDBOX_G25-3_bed_pickup.js/.out. Reportbefore20:26:25 querydeadline.
+
+This establishes stationarypickup atmatchedP3 geometry, **not P2 receipt/live production/transfer/Enduse**. LIVEbed remainsunchanged andP3empty. SBbed1 isnottransferable. Restoration/fullcap NOTtested; sandboxSfoot nowAIR, ownSBstate recorded/releasedaftertest. G25-3P3nowholdsBED1, bodyunchanged, cover7full/2partial/1AIR versuslive7full3partial. This inferentialcovercountwillneedfreshobserver iflaterSBactionselected. No assumption restorebedfacing: standardplaceBlockaim canchangebedorientation; needactuallegalface/orientation orrecipientfullcapblock. Do not pretend originalcoverretainedafterbedremoval.
+
+For actual branch: P2 gate success and actualHOMEarrival/pickup geometry first; supplysolidcapblock toP3 beforelivebreak (owninventoryempty), then donoractualbedreceipt, P2actualbedreceipt, recappedP3body andP1actualbeduse beforewholedeadline. P2ownsallwood/tool/portal/LOWroute/Enduncertainties; originalcourierfailed andnotrestarted. Ifgatefails, LIVEsourceundisturbed/noautomaticremake. P3gathering/transit notselected.
+
+## RETIRED branch —20:26 UTC
+
+P2's changed wood/source gate actually failed20:25:01 (SB#19), before P3#21 started20:25:12.939; P3 learned retirement from returned chat at20:26:00. P2 noordinarywoodreceipt/healthloss/returnguardfailed; laterSB#20(-7.071,29,-29.006)HP13.262food19 DIRT3/all7false. No liveP2loss. **Original wholebedcourier20:23:05->20:43:05 FAILED/retired**, no livebedbreak/P2receipt/P1use, no remake or clockrestart. P3smallsourcequery passed/report20:26:00 within2min20:24:25->26:25 but was NOTadopted as physicalhandoff. No further SBrestoretest selected; SBbed1 untransferred/southfootAIR/bodyunchanged lastobserved. LIVEbedintact/P3EMPTY. Stop/release acknowledged; P1freshEnditemBEDlead supersedes courier if actuallyrecovered/used. Existing future instructions are conditional methodlimits, not activequeue.
