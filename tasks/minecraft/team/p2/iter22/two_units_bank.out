@@ -1,0 +1,35 @@
+program #10133 on p2: 13.9 s
+--- output ---
+PILLAR_ACTUAL {"p":{"x":1.4881145619849587,"y":62,"z":-3.5083710458078103},"hp":20}
+PILLAR_ACTUAL {"p":{"x":1.4881145619849587,"y":63,"z":-3.5083710458078103},"hp":20}
+PILLAR_ACTUAL {"p":{"x":1.4881145619849587,"y":64,"z":-3.5083710458078103},"hp":20}
+QUALIFIED_LEG {"status":"partial","nodes":6,"target":{"x":6,"y":66,"z":0}}
+ISSUE Error: legbudget
+FALLBACK_FAIL Error: terminalgeology
+--- returned ---
+{
+ "issue": "Error: legbudget",
+ "lost": false,
+ "closed": false,
+ "moved": false,
+ "unitsDone": 0,
+ "p": {
+  "x": 4.542740241136785,
+  "y": 65,
+  "z": -2.4686180801698274
+ },
+ "hp": 20,
+ "food": 20,
+ "elapsed": 13884,
+ "ground": true,
+ "inventory": [
+  {
+   "n": "rotten_flesh",
+   "c": 2
+  }
+ ],
+ "actualShell": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (4.5, 65, -2.5) in overworld, health 20/20, food 20/20, alive

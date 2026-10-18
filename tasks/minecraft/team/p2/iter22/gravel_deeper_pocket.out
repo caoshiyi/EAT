@@ -1,0 +1,33 @@
+program #10201 on p2: 0.5 s
+--- output ---
+POSE {"eye":1.62,"height":1.8,"pose":0}
+POCKET_PLAN {"old":{"x":-8,"y":26,"z":-31},"q":null}
+--- returned ---
+{
+ "issue": "Error: noqualifiedpocket",
+ "lost": false,
+ "closed": false,
+ "p": {
+  "x": -7.500971777055454,
+  "y": 26,
+  "z": -30.3
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "actualShell": false,
+ "inventory": [
+  {
+   "n": "flint",
+   "c": 3
+  },
+  {
+   "n": "gravel",
+   "c": 12
+  }
+ ],
+ "elapsed": 508
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-7.5, 26, -30.3) in overworld, health 20/20, food 20/20, alive

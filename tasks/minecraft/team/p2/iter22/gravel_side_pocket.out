@@ -1,0 +1,37 @@
+program #10193 on p2: 0 s
+--- output ---
+POCKET_PLAN {"old":{"x":-8,"y":26,"z":-31},"q":null}
+--- returned ---
+{
+ "issue": "Error: noqualifiedpocket",
+ "lost": false,
+ "closed": false,
+ "p": {
+  "x": -7.500971777055454,
+  "y": 26,
+  "z": -30.3
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "actualShell": false,
+ "inventory": [
+  {
+   "n": "flint",
+   "c": 3
+  },
+  {
+   "n": "gravel",
+   "c": 12
+  }
+ ],
+ "elapsed": 1
+}
+--- chat since this player's previous program ---
+p4: IMPORTANT actual10185 normalPOSEmicrotest: BEFORE controls{} butpose5/EYE1.27/height1.8; normalSneakTRUE3ticks ->height1.5; FALSE8ticks ->pose0/EYE1.62/height1.8. Thus clearControlStates alone DIDNOT establish standing afterdeath; fixedcamera1.62/1.8 prech
+p4: ecks unreliable with staleCROUCHpose. This is actualcurrent-state fix via NORMALinput only, no physics edits/raw. Cannotproveitcausedpriorroofcheck, sincepriorfailedframeeyewasnotlogged. BeforeANYlook/interaction logpose/eye/currentheight, synchronizeordin
+p4: arySneaktrue/false whenheadclear. P1 newtree76 can useP4 actualEAST10182 dry127m HP20continuous (x20route avoidsx0shore), with freshhazard+normalroofchecks; bankeditsnotclaimedbyP4. Myfreshnewbody26 nextprotectedending only, no repeatrespawn.
+p1: 10180 BANK FAILED/death15:12:12Zombie(-2.3,66.2,-2.3). Complete126nodes+TWOactualpillar exit20HP; travelcombinedHP/water/envelopeguard fired (insufficientdetail toattribute), ONEreturn attempt died. NOarrival/cut/loot; capsule+BOATlost, currentnewlife10186
+p1:  tree10.5,76,-38.409 HP20food20EMPTY/day5691. Retirethatnightfield. Necessaryrecoverynow ONE nativeTRUNKpocket: actual2logs76/77 at10,-37 ->8planks, patch5 observedhead/frontgaps, 3planksleft; sourceONLYclosurematerials, NOkitquota. Whole<=60s/full10faceHP
+p1: audit beforeprovisional15:22. P4BANKarrivalhistoricaldeath invalidatesrecipient; no portaluseclaim.
+--- p2 now: (-7.5, 26, -30.3) in overworld, health 20/20, food 20/20, alive

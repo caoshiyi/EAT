@@ -1,0 +1,35 @@
+program #10175 on p2: 8 s
+--- output ---
+GRAVEL_RECEIPT {"p":{"x":-8.5,"y":27,"z":-33.5},"hp":20,"inv":[{"n":"flint","c":1}]}
+GRAVEL_RECEIPT {"p":{"x":-8.5,"y":27,"z":-33.5},"hp":20,"inv":[{"n":"flint","c":2}]}
+GRAVEL_RECEIPT {"p":{"x":-8.5,"y":27,"z":-33.5},"hp":20,"inv":[{"n":"flint","c":2},{"n":"gravel","c":1}]}
+GRAVEL_RECEIPT {"p":{"x":-8.5,"y":27,"z":-33.5},"hp":20,"inv":[{"n":"flint","c":2},{"n":"gravel","c":1}]}
+GRAVEL_RECEIPT {"p":{"x":-8.5,"y":27,"z":-33.5},"hp":20,"inv":[{"n":"flint","c":2},{"n":"gravel","c":1}]}
+--- returned ---
+{
+ "issue": "Error: novisiblegravel",
+ "lost": false,
+ "p": {
+  "x": -8.5,
+  "y": 27,
+  "z": -33.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "count": 5,
+ "inventory": [
+  {
+   "n": "flint",
+   "c": 2
+  },
+  {
+   "n": "gravel",
+   "c": 1
+  }
+ ],
+ "elapsed": 7987
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-8.5, 27, -33.5) in overworld, health 20/20, food 20/20, alive

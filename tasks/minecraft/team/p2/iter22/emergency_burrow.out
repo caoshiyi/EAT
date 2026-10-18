@@ -1,0 +1,44 @@
+program #10119 on p2: 1.6 s
+--- output ---
+DIG_PRE {"p":{"x":0,"y":62,"z":-10},"n":"grass_block","r":{"f":1,"hit":{"x":0.460473335981462,"y":63,"z":-9.556373881740573}},"hp":20}
+--- returned ---
+{
+ "issue": "Error: diglanding",
+ "closed": false,
+ "p": {
+  "x": 0.24211729141947874,
+  "y": 63,
+  "z": -9.870547056261358
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "elapsed": 1556,
+ "inv": [
+  {
+   "n": "rotten_flesh",
+   "c": 2
+  }
+ ],
+ "shell": [
+  {
+   "y": -1,
+   "n": "air"
+  },
+  {
+   "y": 0,
+   "n": "air"
+  },
+  {
+   "y": 1,
+   "n": "air"
+  },
+  {
+   "y": 2,
+   "n": "air"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (0.2, 63, -9.9) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,131 @@
+program #10165 on p2: 86.8 s
+--- output ---
+SOURCE_ROUTE [{"x":6,"y":60,"z":-5},{"x":6,"y":60,"z":-6},{"x":6,"y":60,"z":-7},{"x":7,"y":60,"z":-7},{"x":7,"y":60,"z":-8},{"x":7,"y":60,"z":-9},{"x":7,"y":60,"z":-10},{"x":8,"y":60,"z":-10},{"x":8,"y":60,"z":-11},{"x":9,"y":60,"z":-11},{"x":9,"y":60,"z":-12},{"x":9,"y":60,"z":-13},{"x":8,"y":60,"z":-13},{"x":7,"y":60,"z":-13}]
+TUNNEL_ACTUAL {"p":{"x":6.500400668060484,"y":60,"z":-4.442642617427678},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":2}]}
+TUNNEL_ACTUAL {"p":{"x":6.500144228822633,"y":60,"z":-5.515660579062192},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":4}]}
+TUNNEL_ACTUAL {"p":{"x":6.500144352792712,"y":60,"z":-6.588679260695655},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":6}]}
+TUNNEL_ACTUAL {"p":{"x":7.566412507998484,"y":60,"z":-6.497398138730463},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":8}]}
+TUNNEL_ACTUAL {"p":{"x":7.497797441134541,"y":60,"z":-7.566233519594537},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":10}]}
+TUNNEL_ACTUAL {"p":{"x":7.499080354590777,"y":60,"z":-8.423388343748611},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":12}]}
+TUNNEL_ACTUAL {"p":{"x":7.499850168184135,"y":60,"z":-9.496404827241589},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":14}]}
+TUNNEL_ACTUAL {"p":{"x":8.572592894288595,"y":60,"z":-9.499226875700467},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":16}]}
+TUNNEL_ACTUAL {"p":{"x":8.497752599404002,"y":60,"z":-10.567278153957618},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":18}]}
+TUNNEL_ACTUAL {"p":{"x":9.566506643017398,"y":60,"z":-10.497871462391927},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":20}]}
+TUNNEL_ACTUAL {"p":{"x":9.497891141694314,"y":60,"z":-11.56671410373514},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":22}]}
+TUNNEL_ACTUAL {"p":{"x":9.49917405515055,"y":60,"z":-12.423868927889215},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":24}]}
+TUNNEL_ACTUAL {"p":{"x":8.431717926433032,"y":60,"z":-12.502954621340974},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":26}]}
+TUNNEL_ACTUAL {"p":{"x":7.574565314703257,"y":60,"z":-12.50141534478607},"hp":20,"regionClosed":true,"inventory":[{"n":"rotten_flesh","c":2},{"n":"dirt","c":28}]}
+CAP_ACTUAL {"dest":{"x":8,"y":60,"z":-13},"r":{"f":1,"hit":{"x":8.359093383942136,"y":60,"z":-12.499361251924364}}}
+CAP_ACTUAL {"dest":{"x":8,"y":61,"z":-13},"r":{"f":1,"hit":{"x":8.236380603031217,"y":61,"z":-12.499682545014048}}}
+ISSUE Error: Digging aborted
+--- returned ---
+{
+ "issue": "Error: Digging aborted",
+ "lost": true,
+ "closed": true,
+ "sourceReceipt": 0,
+ "p": {
+  "x": 7.574565314703257,
+  "y": 60,
+  "z": -12.50141534478607
+ },
+ "hp": 0,
+ "food": 18,
+ "ground": true,
+ "elapsed": 86796,
+ "inventory": [
+  {
+   "n": "rotten_flesh",
+   "c": 2
+  },
+  {
+   "n": "dirt",
+   "c": 27
+  }
+ ],
+ "actualShell": false,
+ "cells": [
+  {
+   "x": 6,
+   "y": 60,
+   "z": -4
+  },
+  {
+   "x": 6,
+   "y": 60,
+   "z": -5
+  },
+  {
+   "x": 6,
+   "y": 60,
+   "z": -6
+  },
+  {
+   "x": 6,
+   "y": 60,
+   "z": -7
+  },
+  {
+   "x": 7,
+   "y": 60,
+   "z": -7
+  },
+  {
+   "x": 7,
+   "y": 60,
+   "z": -8
+  },
+  {
+   "x": 7,
+   "y": 60,
+   "z": -9
+  },
+  {
+   "x": 7,
+   "y": 60,
+   "z": -10
+  },
+  {
+   "x": 8,
+   "y": 60,
+   "z": -10
+  },
+  {
+   "x": 8,
+   "y": 60,
+   "z": -11
+  },
+  {
+   "x": 9,
+   "y": 60,
+   "z": -11
+  },
+  {
+   "x": 9,
+   "y": 60,
+   "z": -12
+  },
+  {
+   "x": 9,
+   "y": 60,
+   "z": -13
+  },
+  {
+   "x": 8,
+   "y": 60,
+   "z": -13
+  },
+  {
+   "x": 7,
+   "y": 60,
+   "z": -13
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: H8 changed10164 actualDIRT2receipt atlower44 succeeded; normalwaterreached52.734/headAIR HP20, but landingledge53 FAILED3.5s then fallbackfellto45.5/HP14.333 andreturnguardstopped. NOTsurface/protectedending; watermethodRETIRE aftertwofieldfailures, no fur
+p4: thercliff/stairprep. P4onlyDIRT2/no sharedkit. NewboundedH9 ONE deliberateordinarySURVIVALrespawn (notcommand/arenarespawn/packet) becauseemptyvalleybody45 cliffbound vs priorrandomspawnheights27..84. Testactualnewposition+firstsafeHOMEleg by15:04; no repe
+p4: ateddeathfarm ifbadspawn. Thischanges method insteadof20mshaft; recordswilllabelintentionaldeath/lossDIRT2. Newbody MUSTfreshreconcile.
+[server] p4 drowned
+[server] p2 drowned
+--- p2 now: (7.6, 60, -12.5) in overworld, health 0/20, food 18/20, DEAD (respawning)

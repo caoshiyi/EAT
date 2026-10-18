@@ -1,0 +1,38 @@
+program #10128 on p2: 12.5 s
+--- output ---
+PILLAR_ACTUAL {"p":{"x":0.7,"y":61,"z":-9.3},"hp":20}
+PILLAR_ACTUAL {"p":{"x":0.7,"y":62,"z":-9.3},"hp":20}
+PILLAR_ACTUAL {"p":{"x":0.7,"y":63,"z":-9.3},"hp":20}
+QUALIFIED_LEG {"status":"partial","nodes":8,"target":{"x":1,"y":64,"z":-4}}
+ROOF_ACTUAL {"dest":{"x":1,"y":63,"z":-4},"r":{"f":2,"hit":{"x":1.4947695035199489,"y":63.24351832636025,"z":-3}}}
+TERMINAL {"p":{"x":1.4881145619849587,"y":61,"z":-3.5083710458078103},"hp":20,"closed":true}
+--- returned ---
+{
+ "issue": null,
+ "lost": false,
+ "closed": true,
+ "moved": true,
+ "p": {
+  "x": 1.4881145619849587,
+  "y": 61,
+  "z": -3.5083710458078103
+ },
+ "hp": 20,
+ "food": 20,
+ "elapsed": 12505,
+ "ground": true,
+ "inventory": [
+  {
+   "n": "rotten_flesh",
+   "c": 2
+  },
+  {
+   "n": "dirt",
+   "c": 2
+  }
+ ],
+ "actualShell": true
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (1.5, 61, -3.5) in overworld, health 20/20, food 20/20, alive
