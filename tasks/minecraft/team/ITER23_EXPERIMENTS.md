@@ -122,3 +122,10 @@ H11 body scope superseded: P2secondDEATH17:12:14 Skeleton(9.5,72,-39.7), indepen
 16:29: actual P1#10359 home_native_room_finish.out fullyread: sixDIRECT_POST HP20 andfourHOME_FULL all10true+terminalfull, realnearHOMEbody6.5748,64,97.497. This usedP1originalSIDEroom6,64,97, notmyofferedunderfootbore5,62,97, so noownH4physicaladoptioncredit. Lead previouslycalledurgentgeometryuseful; literalrecipientuseofownhelperstillunverified.
 
 17:20:01 before-minute90 refresh: actualP4#10465 threefull10face samples20HP/20food/GRAVEL1/nofoes, no ownworldchanges/deaths. P1statusnowNether(-36.5,57,48.3)/3HP16food/BASALT1+bothpicks; do not infercallercompletionfromstatus. P2secondnewbodyOW(-7.5,56,-24.5),DIRT2/20HP, no oldstock. FrozenPROVISIONAL_CLOSING receivedmaterialoverride; final17:34checks stillpending.
+
+## Closing actual evidence,17:34–35 UTC
+Own#10479 threefull10face samples17:33:09–11:20HP20food/GRAVEL1/samebody/controls{}/goalNULL/nofoes. Finalstatus17:34:22 agrees. Evaluator17:34:23 SAVEDdragon0/11/deaths172 (61/47/26/38), SAVEFAILED, programs10479. Canonicalevents confirm twoP2deaths only; no p4death orworldedit/transfer thisiteration.
+
+Important partial-failure audit: completedP1 adjacent_controlled_shaft.out #10477 TIMED OUT165s, lastvisibletruncateddiglogY15 butsnapshotY8. No terminal/full-shell audit completed. Y8status alone is NOT retainedLOW/oldshaftentry/404traversal/End proof. Sharedalert10481at17:35:12 requestedownerfreshpostconditions/repair; no outcome claimed for that repair. Exactcompletedoutput archivedp1_10477_closing_read.txt.
+
+All P4observerCLI processes completed and their sessions were closed; no gameplay/transfer/taskqueue remains. Feasiblecontinuationthrough17:34/min100 completed, finalclosingmetadata/checkpointfollowed. FINAL_CLOSING.md/P4.md are current, PROVISIONAL_CLOSING.md retains dated snapshot plusmaterialoverride. No push.
