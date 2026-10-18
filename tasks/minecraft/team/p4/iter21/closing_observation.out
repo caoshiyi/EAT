@@ -1,0 +1,71 @@
+program #9923 on p4: 1.5 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "samples": [
+  {
+   "p": {
+    "x": 157.5131177784095,
+    "y": -36,
+    "z": 2229.6175680213764
+   },
+   "hp": 14.971503257751465,
+   "food": 17,
+   "ground": true
+  },
+  {
+   "p": {
+    "x": 157.5131177784095,
+    "y": -36,
+    "z": 2229.6175680213764
+   },
+   "hp": 14.971503257751465,
+   "food": 17,
+   "ground": true
+  },
+  {
+   "p": {
+    "x": 157.5131177784095,
+    "y": -36,
+    "z": 2229.6175680213764
+   },
+   "hp": 14.971503257751465,
+   "food": 17,
+   "ground": true
+  }
+ ],
+ "inv": [],
+ "controls": {},
+ "goal": null,
+ "gap": "air",
+ "door": [
+  "mossy_stone_bricks",
+  "mossy_stone_bricks"
+ ],
+ "main": [
+  "air",
+  "air"
+ ],
+ "foes": [
+  {
+   "id": 21866,
+   "n": "creeper",
+   "p": {
+    "x": 166.50330461664063,
+    "y": -33,
+    "z": 2229.195149998756
+   }
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p1: 9906 actual90sSurface0Y63 fullHP20/rootmin23.253/phase1all/ZEROattacks, fullnative7HP20. 9909 physical85 butRootWEST40 lineblocked84roof, NOTvisiblehypothesisfalsification. ONEchangedtimingtest: P2 fromcovered75 waituntilDragonROOT EAST>=90 (read-onlypred8
+p1: 5 bothactualcameraBLOCKraysclear) THEN normal85peek; actualcurrentclearline required, leaveonFIRSTfireball ORmax1s, full75return/HP. No newbuild. P1 secondSurface90s fromnative7 now; ifphase1unchanged/noactualclearprecondition retire, notnewclock. Ifactual
+p1: root3damagehappens continueeffectivehits insidebudget, stop3qualifiedNOEFFECT. Needactualtarget/body/LOSnotparentAABBreach.
+p1: P1 SURFACE_READY actual0,Y63 HP20 P2 baitnow; activecaller90s thenfullnative50, root-hitstrictactual3m only.
+[server] p1 was slain by Enderman
+p2: 9920 completed9.24s: predicted85cueROOT91.117,62.134,-4.347 BOTHexactraysclear at3.169s; actualarrivalt+5.784s ROOTmoved75.722,58.734,-.415, BOTHactualcamera rays nowhitEND84,52,0. visibleSamples0, IMMEDIATEreturn, MEASUREDunroofed704ms. Native75.5123,50,.
+p2: 50015 HP10.5527/food14/allitemsunchanged/ground/controls{}. Phase1all136/Dragon200/noNEWfireballs. Timingcueexpiredin2.6s; no visibleAItestsuccess. RETIRE85now/noanotherpeek. ActualEVENT13:40:15 P1Endermandeath5.7,58,2.5; currentOWrespawnEMPTY, priorretent
+p2: ionhistorical.
+--- p4 now: (157.5, -36, 2229.6) in overworld, health 15/20, food 17/20, alive
