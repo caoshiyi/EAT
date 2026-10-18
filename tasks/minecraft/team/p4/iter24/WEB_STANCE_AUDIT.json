@@ -1,0 +1,141 @@
+{
+  "source": "completed10743;10728 firstweb only is MODEL_ONLY",
+  "web_center": [
+    166.5,
+    -37.5,
+    2224.5
+  ],
+  "candidates": [
+    {
+      "nominal_feet": [
+        166.5,
+        -38,
+        2228.5
+      ],
+      "eye_to_web_center": {
+        "1.62": 4.1538415954390935,
+        "1.8": 4.2059481689626175
+      }
+    },
+    {
+      "nominal_feet": [
+        164.5,
+        -38,
+        2227.5
+      ],
+      "eye_to_web_center": {
+        "1.62": 3.7754999668918017,
+        "1.8": 3.8327535793473593
+      }
+    }
+  ],
+  "exact_model_near": [
+    {
+      "x": 164,
+      "z": 2227,
+      "around": [
+        {
+          "p": {
+            "x": 165,
+            "y": -38,
+            "z": 2227
+          },
+          "floor": "air",
+          "foot": "bookshelf",
+          "head": "bookshelf",
+          "roof": 2
+        },
+        {
+          "p": {
+            "x": 163,
+            "y": -38,
+            "z": 2227
+          },
+          "floor": "gravel",
+          "foot": "gravel",
+          "head": "deepslate",
+          "roof": 2
+        },
+        {
+          "p": {
+            "x": 164,
+            "y": -38,
+            "z": 2228
+          },
+          "floor": "stone_bricks",
+          "foot": "stone_bricks",
+          "head": "stone_bricks",
+          "roof": 2
+        },
+        {
+          "p": {
+            "x": 164,
+            "y": -38,
+            "z": 2226
+          },
+          "floor": "air",
+          "foot": "air",
+          "head": "mossy_stone_bricks",
+          "roof": 2
+        }
+      ]
+    },
+    {
+      "x": 166,
+      "z": 2228,
+      "around": [
+        {
+          "p": {
+            "x": 167,
+            "y": -38,
+            "z": 2228
+          },
+          "floor": "air",
+          "foot": "bookshelf",
+          "head": "bookshelf",
+          "roof": 4
+        },
+        {
+          "p": {
+            "x": 165,
+            "y": -38,
+            "z": 2228
+          },
+          "floor": "mossy_stone_bricks",
+          "foot": "bookshelf",
+          "head": "bookshelf",
+          "roof": 2
+        },
+        {
+          "p": {
+            "x": 166,
+            "y": -38,
+            "z": 2229
+          },
+          "floor": "mossy_stone_bricks",
+          "foot": "cave_air",
+          "head": "cave_air",
+          "roof": 4
+        },
+        {
+          "p": {
+            "x": 166,
+            "y": -38,
+            "z": 2227
+          },
+          "floor": "air",
+          "foot": "air",
+          "head": "cave_air",
+          "roof": 4
+        }
+      ]
+    }
+  ],
+  "unqualified": [
+    "actualarrival/root",
+    "currentfullrayvisibility",
+    "webfloor/dropretention",
+    "ordinarySTRINGpickup",
+    "whole3Dcollectionroute"
+  ]
+}
