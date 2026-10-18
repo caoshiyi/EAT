@@ -1,0 +1,97 @@
+program #10433 on p1: 44 s
+--- output ---
+UPPER_PREFLIGHT {"state":{"p":{"x":-18.5,"y":65,"z":48.5107512840142},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]},"nodes":38}
+QUALIFIED_DIG_PRE {"p":{"x":-20,"y":66,"z":48},"n":"basalt","face":5,"hit":{"x":-19,"y":66.73949004743037,"z":48.505515184756646},"state":{"p":{"x":-18.5,"y":65,"z":48.5107512840142},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]}}
+QUALIFIED_DIG_SETTLE {"sample":0,"target":{"x":-20,"y":66,"z":48},"n":"air","count":2,"newDrops":[{"id":9137,"p":{"x":-19.48114418048488,"y":66.36989319536684,"z":48.52096076942502},"item":{"type":327,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"basalt","displayName":"Basalt","stackSize":64}}],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":1,"target":{"x":-20,"y":66,"z":48},"n":"air","count":2,"newDrops":[{"id":9137,"p":{"x":-19.48114418048488,"y":66.36989319536684,"z":48.52096076942502},"item":{"type":327,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"basalt","displayName":"Basalt","stackSize":64}}],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":2,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":3,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":4,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":5,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":6,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":7,"target":{"x":-20,"y":66,"z":48},"n":"air","count":3,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_PRE {"p":{"x":-20,"y":65,"z":48},"n":"basalt","face":1,"hit":{"x":-19.21273495753529,"y":66,"z":48.50328738205024},"state":{"p":{"x":-18.5,"y":65,"z":48.5107512840142},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",3]]}}
+QUALIFIED_DIG_SETTLE {"sample":0,"target":{"x":-20,"y":65,"z":48},"n":"air","count":3,"newDrops":[{"id":9142,"p":{"x":-19.704071473808003,"y":65.5589707414905,"z":48.33404889067448},"item":{"type":327,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"basalt","displayName":"Basalt","stackSize":64}}],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":1,"target":{"x":-20,"y":65,"z":48},"n":"air","count":3,"newDrops":[{"id":9142,"p":{"x":-19.704071473808003,"y":65.5589707414905,"z":48.33404889067448},"item":{"type":327,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"basalt","displayName":"Basalt","stackSize":64}}],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":2,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":3,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":4,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":5,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":6,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+QUALIFIED_DIG_SETTLE {"sample":7,"target":{"x":-20,"y":65,"z":48},"n":"air","count":4,"newDrops":[],"p":{"x":-18.5,"y":65,"z":48.5107512840142}}
+MODEL_RECEIPT {"phase":"model_only","at":"2026-10-18T17:00:19.855Z","start":{"x":-18.5,"y":65,"z":48.5107512840142},"goal":{"x":-20,"y":65,"z":48},"ms":2,"status":"success","done":false,"statuses":["success"],"n":1,"edits":0,"end":[[-19.5,65,48.5]]}
+LOCAL_POST {"p":{"x":-19.332229793160067,"y":65,"z":48.50459403171064},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-19.332229793160067,"y":65,"z":48.50459403171064},"target":{"x":-20.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-20.62291226129479,"y":65,"z":48.501002267131994},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-20.62291226129479,"y":65,"z":48.501002267131994},"target":{"x":-21.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-21.49238185439841,"y":65,"z":48.49997607693796},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-21.49238185439841,"y":65,"z":48.49997607693796},"target":{"x":-22.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-22.56723899929511,"y":65,"z":48.49997615523494},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-22.56723899929511,"y":65,"z":48.49997615523494},"target":{"x":-23.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-23.64209614419181,"y":65,"z":48.49997623353192},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-23.64209614419181,"y":65,"z":48.49997623353192},"target":{"x":-24.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-24.511568680758756,"y":65,"z":48.49997629616948},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-24.511568680758756,"y":65,"z":48.49997629616948},"target":{"x":-25.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-25.586425825655457,"y":65,"z":48.499976374466456},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-25.586425825655457,"y":65,"z":48.499976374466456},"target":{"x":-26.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-26.661282970552158,"y":65,"z":48.499976452763434},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-26.661282970552158,"y":65,"z":48.499976452763434},"target":{"x":-27.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-27.52030566354083,"y":65,"z":48.499976515401016},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-27.52030566354083,"y":65,"z":48.499976515401016},"target":{"x":-28.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-28.595162808437532,"y":65,"z":48.499976593697994},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-28.595162808437532,"y":65,"z":48.499976593697994},"target":{"x":-28.5,"y":64,"z":47.5},"up":false}
+DIRECT_POST {"p":{"x":-28.485164323750237,"y":64,"z":47.31771534987179},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-28.485164323750237,"y":64,"z":47.31771534987179},"target":{"x":-29.5,"y":63,"z":47.5},"up":false}
+DIRECT_POST {"p":{"x":-29.65633081569292,"y":63,"z":47.52336415043425},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-29.65633081569292,"y":63,"z":47.52336415043425},"target":{"x":-30.5,"y":62,"z":47.5},"up":false}
+DIRECT_POST {"p":{"x":-30.629123422252,"y":62,"z":47.509256814725525},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-30.629123422252,"y":62,"z":47.509256814725525},"target":{"x":-30.5,"y":61,"z":46.5},"up":false}
+DIRECT_POST {"p":{"x":-30.481737360727806,"y":61,"z":46.328908142858836},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-30.481737360727806,"y":61,"z":46.328908142858836},"target":{"x":-31.5,"y":62,"z":46.5},"up":true}
+DIRECT_POST {"p":{"x":-31.954019888799873,"y":62,"z":46.573235140861186},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+PRIMARY_FAILURE Error: direct landing/position {"state":{"p":{"x":-31.954019888799873,"y":62,"z":46.573235140861186},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]},"threat":[]}
+DIRECT_PRE {"from":{"x":-31.954019888799873,"y":62,"z":46.573235140861186},"target":{"x":-30.5,"y":61,"z":46.5},"up":false}
+DIRECT_POST {"p":{"x":-30.353808836454984,"y":61,"z":46.511489930070994},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-30.353808836454984,"y":61,"z":46.511489930070994},"target":{"x":-30.5,"y":62,"z":47.5},"up":true}
+DIRECT_POST {"p":{"x":-30.565690827844584,"y":62,"z":47.7},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-30.565690827844584,"y":62,"z":47.7},"target":{"x":-29.5,"y":63,"z":47.5},"up":true}
+DIRECT_POST {"p":{"x":-29.641850579295284,"y":63,"z":47.52390960851772},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-29.641850579295284,"y":63,"z":47.52390960851772},"target":{"x":-28.5,"y":64,"z":47.5},"up":true}
+DIRECT_POST {"p":{"x":-28.3,"y":64,"z":47.48332821186502},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-28.3,"y":64,"z":47.48332821186502},"target":{"x":-28.5,"y":65,"z":48.5},"up":true}
+DIRECT_POST {"p":{"x":-28.499941036593142,"y":65,"z":48.52549579753083},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-28.499941036593142,"y":65,"z":48.52549579753083},"target":{"x":-27.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-27.42588942238922,"y":65,"z":48.50432193467099},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-27.42588942238922,"y":65,"z":48.50432193467099},"target":{"x":-26.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-26.35106600484657,"y":65,"z":48.50073001894459},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-26.35106600484657,"y":65,"z":48.50073001894459},"target":{"x":-25.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-25.492044777619817,"y":65,"z":48.50021682989135},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-25.492044777619817,"y":65,"z":48.50021682989135},"target":{"x":-24.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-24.417187632723117,"y":65,"z":48.500216751594266},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-24.417187632723117,"y":65,"z":48.500216751594266},"target":{"x":-23.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-23.34233121695148,"y":65,"z":48.4999601100894},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-23.34233121695148,"y":65,"z":48.4999601100894},"target":{"x":-22.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-22.483308523962805,"y":65,"z":48.49996004745173},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-22.483308523962805,"y":65,"z":48.49996004745173},"target":{"x":-21.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-21.408451379066104,"y":65,"z":48.499959969154645},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-21.408451379066104,"y":65,"z":48.499959969154645},"target":{"x":-20.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-20.333594234169404,"y":65,"z":48.49995989085756},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-20.333594234169404,"y":65,"z":48.49995989085756},"target":{"x":-19.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-19.47457154118073,"y":65,"z":48.49995982821989},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+DIRECT_PRE {"from":{"x":-19.47457154118073,"y":65,"z":48.49995982821989},"target":{"x":-18.5,"y":65,"z":48.5},"up":false}
+DIRECT_POST {"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",4]]}
+CAP {"ref":{"x":-20,"y":64,"z":48},"dest":{"x":-20,"y":65,"z":48},"f":1,"hit":{"x":-19.33473958767833,"y":65,"z":48.49995989933018}}
+CAP {"ref":{"x":-20,"y":65,"z":48},"dest":{"x":-20,"y":66,"z":48},"f":1,"hit":{"x":-19.187245740168485,"y":66,"z":48.49995987576219}}
+UPPER_RETURN_FULL {"sample":0,"state":{"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]},"cells":[{"p":{"x":-19,"y":64,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":67,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":47},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":47},"n":"basalt","full":true}]}
+UPPER_RETURN_FULL {"sample":1,"state":{"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]},"cells":[{"p":{"x":-19,"y":64,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":67,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":47},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":47},"n":"basalt","full":true}]}
+UPPER_RETURN_FULL {"sample":2,"state":{"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]},"cells":[{"p":{"x":-19,"y":64,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":67,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":47},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":47},"n":"basalt","full":true}]}
+UPPER_RETURN_FULL {"sample":3,"state":{"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]]},"cells":[{"p":{"x":-19,"y":64,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":67,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":47},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":47},"n":"basalt","full":true}]}
+TERMINAL {"p":{"x":-18.39971439628403,"y":65,"z":48.49995974992281},"hp":3,"food":16,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["basalt",2]],"dim":"the_nether","authority":[],"shell":[{"p":{"x":-19,"y":64,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":67,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-18,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":65,"z":48},"n":"basalt","full":true},{"p":{"x":-20,"y":66,"z":48},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":49},"n":"basalt","full":true},{"p":{"x":-19,"y":65,"z":47},"n":"basalt","full":true},{"p":{"x":-19,"y":66,"z":47},"n":"basalt","full":true}]}
+--- error ---
+Error: direct landing/position
+    at direct (p1-program-10433.js:17:1275)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p1-program-10433.js:45:783
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-18.4, 65, 48.5) in the_nether, health 3/20, food 16/20, alive

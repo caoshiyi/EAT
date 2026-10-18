@@ -4,7 +4,7 @@ from pathlib import Path
 s=Path(sys.argv[1]).read_text()
 records=[]
 for line in s.splitlines():
-    match=re.match(r'^([A-Z_]+) (\{.*\})$',line)
+    match=re.match(r'^([A-Z0-9_]+) (\{.*\})$',line)
     if match:
         try: records.append((match[1],json.loads(match[2])))
         except json.JSONDecodeError: pass
