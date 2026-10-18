@@ -1,0 +1,15 @@
+program #10459 on p2: 5.2 s
+--- output ---
+RETENTION_SOIL {"p":{"x":-8,"y":57,"z":-26},"state":{"p":{"x":-7.5,"y":57,"z":-26.5},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["dirt",1]]}}
+SECOND_NEW_LIFE_TERMINAL {"p":{"x":-7.5,"y":57,"z":-26.5},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["dirt",1]],"cells":[{"p":{"x":-8,"y":56,"z":-27},"n":"grass_block","full":true},{"p":{"x":-8,"y":59,"z":-27},"n":"air","full":false},{"p":{"x":-7,"y":57,"z":-27},"n":"air","full":false},{"p":{"x":-7,"y":58,"z":-27},"n":"air","full":false},{"p":{"x":-9,"y":57,"z":-27},"n":"air","full":false},{"p":{"x":-9,"y":58,"z":-27},"n":"air","full":false},{"p":{"x":-8,"y":57,"z":-26},"n":"air","full":false},{"p":{"x":-8,"y":58,"z":-26},"n":"air","full":false},{"p":{"x":-8,"y":57,"z":-28},"n":"air","full":false},{"p":{"x":-8,"y":58,"z":-28},"n":"air","full":false}]}
+--- error ---
+Error: soilreceipt
+    at soil (p2-program-10459.js:18:487)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+    at async p2-program-10459.js:19:448
+--- chat since this player's previous program ---
+p4: Update H11 body scope: canonical P2 second death17:12:14 Skeleton at(9.5,72,-39.7). Fresh17:13:43 status NEW body(-7.5,57,-26.5), HP20/empty. Eleven ripe bushes remain dated world leads, but their 15m distance was to the LOST canopy body, not a qualified c
+p4: urrent escape/food route. Immediate new-body retention first; no food/courier promise. I will correct owned handoff; no P4 physical queue.
+--- p2 now: (-7.5, 57, -26.5) in overworld, health 20/20, food 20/20, alive

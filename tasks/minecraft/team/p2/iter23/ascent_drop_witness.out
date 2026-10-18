@@ -1,0 +1,22 @@
+program #10440 on p2: 17.2 s
+--- output ---
+NORMAL_CUT_WITNESS {"p":{"x":-8,"y":27,"z":-31},"before":37,"after":37,"newItem":9882,"itemPos":{"x":-7.542337332580458,"y":27.458673038407966,"z":-30.37451923479089},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+NORMAL_CUT_WITNESS {"p":{"x":-8,"y":26,"z":-31},"before":37,"after":37,"newItem":9891,"itemPos":{"x":-7.432517882239077,"y":26.5952364942968,"z":-30.52289446540742},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+NORMAL_CUT_WITNESS {"p":{"x":-7,"y":27,"z":-32},"before":38,"after":38,"newItem":9893,"itemPos":{"x":-6.666907996421442,"y":27.343927189836208,"z":-31.487767679691895},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+NORMAL_CUT_WITNESS {"p":{"x":-7,"y":26,"z":-32},"before":39,"after":39,"newItem":9894,"itemPos":{"x":-6.7222125699421005,"y":26.591010157874287,"z":-31.59029931119628},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+NORMAL_CUT_WITNESS {"p":{"x":-6,"y":26,"z":-31},"before":39,"after":39,"newItem":9895,"itemPos":{"x":-5.686932997486691,"y":26.153578960019434,"z":-30.538765575482056},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+NORMAL_CUT_WITNESS {"p":{"x":-7,"y":26,"z":-30},"before":40,"after":40,"newItem":9901,"itemPos":{"x":-6.3441694258981505,"y":26.473956549979167,"z":-29.518621801972504},"n":"air","actual":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516}}
+DIRECT_PRE {"from":{"x":-6.444427319362597,"y":26,"z":-30.50709237900516},"target":{"x":-7.5,"y":26,"z":-30.5},"up":false}
+DIRECT_POST {"p":{"x":-7.519213985653787,"y":26,"z":-30.502474315118725},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["flint",10],["gravel",30]]}
+NORMAL_CUT_WITNESS {"p":{"x":-8,"y":25,"z":-31},"before":40,"after":40,"newItem":9909,"itemPos":{"x":-7.434781939656279,"y":25.511081777338855,"z":-30.54402294776107},"n":"air","actual":{"x":-7.519213985653787,"y":25.76636799395752,"z":-30.502474315118725}}
+NORMAL_CUT_WITNESS {"p":{"x":-8,"y":24,"z":-31},"before":41,"after":41,"newItem":9917,"itemPos":{"x":-7.564922520312383,"y":24.23519685895911,"z":-30.739574334838235},"n":"air","actual":{"x":-7.519213985653787,"y":24.76636799395752,"z":-30.502474315118725}}
+EXISTING_MATERIAL_RECEIPT {"p":{"x":-7.519213985653787,"y":24,"z":-30.502474315118725},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["flint",10],["gravel",33]]}
+ASCENT_PRIMARY_FAILURE Error: existingmaterials insufficient (no newquarry) {"p":{"x":-7.519213985653787,"y":24,"z":-30.502474315118725},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["flint",10],["gravel",33]]}
+ASCENT_TERMINAL {"p":{"x":-7.519213985653787,"y":24,"z":-30.502474315118725},"hp":20,"food":20,"lost":false,"ground":true,"inv":[["flint",10],["gravel",33]],"done":false,"cells":[{"p":{"x":-8,"y":23,"z":-31},"n":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-31},"n":"air","full":false},{"p":{"x":-7,"y":24,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":25,"z":-31},"n":"gravel","full":true},{"p":{"x":-9,"y":24,"z":-31},"n":"air","full":false},{"p":{"x":-9,"y":25,"z":-31},"n":"air","full":false},{"p":{"x":-8,"y":24,"z":-30},"n":"air","full":false},{"p":{"x":-8,"y":25,"z":-30},"n":"air","full":false},{"p":{"x":-8,"y":24,"z":-32},"n":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-32},"n":"gravel","full":true}]}
+--- error ---
+Error: existingmaterials insufficient (no newquarry)
+    at p2-program-10440.js:29:140
+--- chat since this player's previous program ---
+p4: Waypoint reminder, no new audit: H8 documents an actual iteration14 branch at feet(-45,56,54): down to(-45,53,54), west to(-54,53,54), south to(-54,53,64), then shaft down. The alternative upper endpoint(-47,59,70) is iteration13. Before adding its rise/co
+p4: nnector, the 14 branch is a dated option if current column/closed ending qualify. No free-cut/current-path claim, no required rewrite or new stock.
+--- p2 now: (-7.5, 24, -30.5) in overworld, health 20/20, food 20/20, alive

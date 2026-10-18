@@ -1,0 +1,12 @@
+program #10446 on p2: 0 s
+--- output ---
+NEW_LIFE_TERMINAL {"p":{"x":10.5,"y":72,"z":-38.5},"hp":20,"food":20,"lost":false,"ground":true,"inv":[],"cells":[{"p":{"x":10,"y":71,"z":-39},"n":"grass_block","full":true},{"p":{"x":10,"y":74,"z":-39},"n":"air","full":false},{"p":{"x":11,"y":72,"z":-39},"n":"air","full":false},{"p":{"x":11,"y":73,"z":-39},"n":"air","full":false},{"p":{"x":9,"y":72,"z":-39},"n":"air","full":false},{"p":{"x":9,"y":73,"z":-39},"n":"air","full":false},{"p":{"x":10,"y":72,"z":-38},"n":"air","full":false},{"p":{"x":10,"y":73,"z":-38},"n":"air","full":false},{"p":{"x":10,"y":72,"z":-40},"n":"grass_block","full":true},{"p":{"x":10,"y":73,"z":-40},"n":"snow","full":false}]}
+--- error ---
+Error: nativeendingmissing (10, 69, -39)
+    at p2-program-10446.js:19:240
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:427:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:552:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (10.5, 72, -38.5) in overworld, health 20/20, food 20/20, alive
