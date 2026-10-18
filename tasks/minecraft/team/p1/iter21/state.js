@@ -1,0 +1,2 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();
+const pos=bot.entity.position;console.log(JSON.stringify({pos,hp:bot.health,food:bot.food,ground:bot.entity.onGround,inventory:bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed})),local:[49,50,51,52].map(y=>({y,b:bot.blockAt(pos.floored().offset(0,y-Math.floor(pos.y),0))?.name})),entities:Object.values(bot.entities).filter(e=>['ender_dragon','end_crystal','area_effect_cloud'].includes(e.name)).map(e=>({id:e.id,name:e.name,pos:e.position,metadata:e.metadata}))}));

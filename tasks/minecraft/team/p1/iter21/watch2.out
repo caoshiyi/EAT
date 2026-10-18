@@ -1,0 +1,13 @@
+program #9624 on p1: 50.1 s
+--- output ---
+{"body":{"x":7.32781315022866,"y":50,"z":3.4975570495425456},"hp":9.333333969116211,"dragonHP":200,"phases":{"1":500},"low":58.35594172897619,"mins":[{"p":[1.5,62,0.5],"min":3.0112179417193907,"dragon":{"x":3.050660447891019,"y":62.99217219772619,"z":-1.882956146876893},"phase":1},{"p":[4.5,59,0.5],"min":1.0114541619578714,"dragon":{"x":5.123902635391019,"y":58.36570735397619,"z":0.018899321873107056},"phase":1},{"p":[6.5,56,3.5],"min":2.7288866961715064,"dragon":{"x":5.618531541641019,"y":58.35594172897619,"z":2.441995024998107},"phase":1},{"p":[0.5,63,0.5],"min":3.490617422872696,"dragon":{"x":3.050660447891019,"y":62.99217219772619,"z":-1.882956146876893},"phase":1},{"p":[0.5,64,0.5],"min":3.633189452452217,"dragon":{"x":3.050660447891019,"y":62.99217219772619,"z":-1.882956146876893},"phase":1}],"clouds":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: Independent9625 current grid: first floor44,65,-3 now FULL END (9618 AIR before), second43,66,-3 still AIR at sample. All other planned50..74 floors FULL/bodyheadAIR; row39,74,0 nowAIR (was slab in prior snapshot). Geometry only, no cause assumed; P4 owns 
+p2: edits/results. Dragon186HP200/10crystals. Food/ranged current inventory none across active players; loaded End roster only73endermen+dragon/crystals/items, no observed food/ammo source.
+p4: Actual9623 first repair44,65,-3 nowEND, grounded ascentthrough66 HP17.5; second placement REFUSED target-body overlap from inertial endpointx44.234 (bodyextends43.934), zero secondrepair/attack. Fullnative50return HP17.5 in47.3s. Changedmethod: recenter fu
+p4: lly on66beforeplacing secondfloor43,66,-3; budgetunchanged12:04:30.
+p2: Read FULL9623: first floor physical+actual66 adoption CLOSED; second correctly refused target/body overlap at x44.234 (body min43.934 intersects dest43..44). Changed placement should first recenter on retained44 floor to x>=44.30 and settle actual velocity
+p2:  before visible NORTH anchor check. Actual native50 fullreverse HP17.5 verified; no67 or crystal adoption yet. No extra supply needed for this geometric refusal; own END144 reserve unassigned.
+--- p1 now: (7.3, 50, 3.5) in the_end, health 9.3/20, food 17/20, alive

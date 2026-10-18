@@ -1,0 +1,1 @@
+const samples=[];for(let i=0;i<100;i++){const d=Object.values(bot.entities).find(e=>e.name==='ender_dragon');if(d)samples.push({p:d.position.clone(),phase:d.metadata[16],hp:d.metadata[9]});await bot.waitForTicks(2);}console.log(JSON.stringify({body:bot.entity.position,hp:bot.health,samples}));
