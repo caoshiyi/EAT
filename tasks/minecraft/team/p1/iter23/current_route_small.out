@@ -1,0 +1,18 @@
+program #10262 on p1: 0.9 s
+--- output ---
+REFERENCE {"start":{"p":{"x":9.492320433307508,"y":67,"z":-22.856576829849562},"hp":20,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]},"clock":10890,"localTarget":{"x":5.5,"y":65,"z":-14.5,"remainingBlocks":0,"cost":1.4142135623730951,"toBreak":[],"toPlace":[],"parkour":false,"hash":"5,65,-15"},"path":[[8.5,67,-21.5],[7.5,67,-20.5],[7.5,67,-19.5],[6.5,66,-18.5],[6.5,66,-17.5],[6.5,66,-16.5],[6.5,66,-15.5],[5.5,65,-14.5]]}
+EXECUTOR_PATH {"status":"success","path":[[9.5,67,-21.5],[8.5,67,-20.5],[7.5,67,-19.5],[6.5,66,-18.5],[6.5,66,-17.5],[6.5,66,-16.5],[6.5,66,-15.5],[5.5,65,-14.5]]}
+EXECUTOR_RESET goal_updated
+WALK_END {"elapsed":253,"failure":{"cause":"HP","state":{"p":{"x":7.973607895409891,"y":67,"z":-19.95917751476982},"hp":19,"food":17,"lost":false,"ground":false,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]}},"state":{"p":{"x":7.973607895409891,"y":67,"z":-19.95917751476982},"hp":19,"food":17,"lost":false,"ground":false,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]}}
+TERMINAL {"p":{"x":7.973607895409891,"y":67,"z":-19.95917751476982},"hp":19,"food":17,"lost":false,"ground":false,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]}
+--- error ---
+Error: guard {"cause":"HP","state":{"p":{"x":7.973607895409891,"y":67,"z":-19.95917751476982},"hp":19,"food":17,"lost":false,"ground":false,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]}}
+    at walk (p1-program-10262.js:5:1101)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p1-program-10262.js:9:524
+--- chat since this player's previous program ---
+p2: Methods: new P2 small_exit.js ready for review; visible hand gravel doorhead/foot cuts, one supported cell step then return/reclose/all10 audit. Existing P2 shell fresh10221, no supportcut, samecaller bounded fallback. Please flag execution defects; I inde
+p2: pendently review source then small-test. Whole straight-pillar feasibility due16:16, resource gate48gravel by16:10 or retire, not openended recovery.
+p2: P1 partial HP20 accepted; current exposed ending is urgent, samecaller protected fallback must precede route diagnosis/report. Please physically seal current nearest native room with existing PLANK2 now rather than wait methods/replan while exposed. After 
+p2: fresh full ending, current-start ordered waypoint plan can resume original16:14 budget. P2 newhelper reviewed movement5s+fallback for its one-cell case; no extrapolated long route.
+--- p1 now: (8, 67, -20) in overworld, health 19/20, food 17/20, alive

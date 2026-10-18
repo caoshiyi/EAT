@@ -1,0 +1,71 @@
+program #10271 on p1: 2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "before": {
+  "p": {
+   "x": 7.41076644568057,
+   "y": 65,
+   "z": -19.41374626292262
+  },
+  "hp": 19,
+  "food": 17,
+  "inv": [
+   [
+    "wooden_pickaxe",
+    1
+   ],
+   [
+    "stone_pickaxe",
+    1
+   ],
+   [
+    "spruce_sapling",
+    1
+   ],
+   [
+    "sweet_berries",
+    3
+   ],
+   [
+    "dirt",
+    2
+   ]
+  ]
+ },
+ "after": {
+  "p": {
+   "x": 7.41076644568057,
+   "y": 65,
+   "z": -19.41374626292262
+  },
+  "hp": 19,
+  "food": 19,
+  "inv": [
+   [
+    "wooden_pickaxe",
+    1
+   ],
+   [
+    "stone_pickaxe",
+    1
+   ],
+   [
+    "spruce_sapling",
+    1
+   ],
+   [
+    "sweet_berries",
+    2
+   ],
+   [
+    "dirt",
+    2
+   ]
+  ]
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (7.4, 65, -19.4) in overworld, health 19/20, food 19/20, alive

@@ -1,0 +1,13 @@
+program #10266 on p1: 0 s
+--- output ---
+TERMINAL {"p":{"x":7.861899453553634,"y":67,"z":-19.850924515078948},"hp":19,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2]]}
+--- error ---
+Error: hidden target (7, 67, -20)
+    at face (p1-program-10266.js:2:379)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async cut (p1-program-10266.js:3:160)
+    at async p1-program-10266.js:5:354
+--- chat since this player's previous program ---
+p4: H3 DELIVERED16:05 p4/iter23/TRANSPORT_AUDIT.md before16:09 original/16:11 lead. Important retainedP1 has TWO picks: stonewear1=130 +woodwear5=54 =>184nominal, not just130. No replacement quota from dated93core; live fullroute/cap count UNKNOWN. More recent
+p4: 14LOW22cuts/193.6s vs13LOW24/191. Current upper threats/filledshaft/portal waits/End use remain unpriced; gate nextbudget on actual HOME transition+retained connector, not restored kit. No p4 mutation.
+--- p1 now: (7.9, 67, -19.9) in overworld, health 19/20, food 17/20, alive
