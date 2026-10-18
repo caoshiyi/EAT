@@ -57,7 +57,7 @@ NEAR = 20.0
 ISLAND = 150.0                   # fixed shots only while a body is this close to (0, 0): their chunks are loaded anyway
 END = "execute in minecraft:the_end run "
 END_ADVANCEMENTS = ("minecraft:story/enter_the_end", "minecraft:end/root")   # what a spectator entering the End earns
-OPTIONS = {"fov": "0.0", "maxFps": "60", "renderDistance": "12", "simulationDistance": "10", "chatVisibility": "2",
+OPTIONS = {"gamma": "1.0", "fov": "0.0", "maxFps": "60", "renderDistance": "12", "simulationDistance": "10", "chatVisibility": "2",
            "particles": "0", "graphicsMode": "1", "pauseOnLostFocus": "false", "onboardAccessibility": "false",
            "skipMultiplayerWarning": "true", "tutorialStep": "none", "joinedFirstServer": "true", "bobView": "false",
            "entityDistanceScaling": "5.0", "renderClouds": '"false"', "narrator": "0", "soundCategory_master": "0.0",
@@ -66,6 +66,16 @@ OPTIONS = {"fov": "0.0", "maxFps": "60", "renderDistance": "12", "simulationDist
 
 def log(msg: str) -> None:
     print(f"{A.now()} {msg}", flush=True)
+
+
+def whitelist_offline() -> None:
+    """Whitelist cam under its offline uuid. `whitelist add cam` resolves the name online and stores a real account's
+    uuid, which the offline-mode login then fails to match."""
+    uid = str(uuidlib.UUID(bytes=_md5(f"OfflinePlayer:{NAME}"), version=3))
+    f = A.SRV / "whitelist.json"
+    entries = [e for e in json.loads(f.read_text()) if e.get("name") != NAME] + [{"uuid": uid, "name": NAME}]
+    f.write_text(json.dumps(entries, indent=2))
+    A.rcon("whitelist reload")
 
 
 # ---- RCON: one connection, one command in flight (vanilla reads one packet per recv) ----
@@ -258,7 +268,7 @@ class Daemon:
     def join(self) -> bool:
         """Start the client and make it a spectator the moment it is in (force-gamemode puts a joining player in
         survival); park it in the overworld until it is wanted in the End."""
-        self.rcon(f"whitelist add {NAME}")
+        whitelist_offline()
         self.start_xvfb()
         self.start_client()
         deadline = time.time() + 180
