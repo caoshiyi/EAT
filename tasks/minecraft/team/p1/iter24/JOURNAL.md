@@ -106,3 +106,15 @@ Fresh10751 19:02:46 actualcreeper155.609,-36,2242.824 ALL6actual/modelrays block
 10781 CENTERrepairpartial19:24:24.960 to167.564755,-36,2230.562818 fixedWEST2caps, North2NoVisibleFace remains8FULL; HP3food16/STRING2/STICK5/OAK1/CHEST1 retained. ChangedmethodADOPT P4actualH12 sideface ordinarySNEAK edge-overlap: supportedfullSTONE167,-37,2230, rootZ2229.9/.6widthstilloverlap.2, actualNfacevisible thenONEfloor167,-37,2229, returncenter/2caps. This isexplicitrecipientphysicaladoptiontest, no syntheticfloor/physics/reachchange. AfterqualifiedendingattemptfreshTABLEactualboth-eyeCENTERray blockers within4.5 ONLYordinaryvisiblecut, no behindblockactivate; ROD+fundedsparepick thenrecloseSouthwindow. OriginaltablefarpositionAPIavailabilitynotphysicalclaim. Food19:30 forecastat-risk.
 
 10787 COMPLETE19:29:18.833 physicalP4H12edgeadoption ONENfloor167,-37,2229 (actualSneaktrue/rootZ2229.9267/grounded/.6width), returncenter+3FULL10 samples then4sequentialvisibleactual/modelTABLEcenterlineoccludercuts, actualRODcraft19:29:16.527 STRING2consumed/STICK5->2, spareSTONEpickcraft. Final3FULL10/current167.504568,-36,2230.504437 HP3food16/all7false. STONEpick0+81/SWORD6/WOOD58/ROD0, COBBLED30/OAK1/CHEST1/CRACKED7/B7. No fish/use. Provisionala1a4846a19:00 before90; latermaterialappendhere. Food19:30MISSED; newactual10789 model29cells/ONEfloorAIR to165,-36,2257, fullCOBBLEDcolumn37..41 permitsnative4oneblockdowns; modelonly. Executefreshchecks/ordinaryonefloorbridge ifneeded thenroom/fullending+currentwater/furnaceprobe beforefirstcast.
+
+
+# RESUME OVERRIDE — 19:58 UTC iteration24
+
+Objective UNMET. Read full program.md/P1/P2/P4/ITER23_REVIEW/ITER24_PLAN on resumed turn. Original interruption at19:35 interrupted10795 (to_fishing_room.js), whose local output is EMPTY and which is absent from completed arena records. Actual10800 at19:56:13 found OW165.500264,-36,2257.332291 HP3food16, RODwear0, picks6/81, no fish. NORTH2AIR means8/10, superseding all oldfullendpoint headers. Separate10803 repaired2caps withnormalvisibleplacement, three10FULL+terminal19:56:23/all7FALSE/goalNULL.
+
+Initial wallclock-only closing interpretation was WRONG: P2 found explicit operator-interruption checkpoint19:35 and restart19:55. Remaining~9active min through~20:04, no reset of missed cumulative food/End budgets. 10807 testedONEsupporteddown thenfullending;10810 actualthreefurthercontrolleddowns =>165.500264,-40,2257.332291 HP3food16/three10FULL19:57:19. Current WATER166/167,-41,2257 and FURNACE165,-39,2258 observed. Active10812 resume_fish_first.js opensnormalvisibleE2BASALT/clearwateraim andONEordinarycast, bounded75s +ending. DO NOT overlap p1 programs or infer catch from active rod. Checkactualoutput/currentgeometry aftertimeout. Whole concreteoutcome remainsactualcatch/cook/consume/retainedhealth enablingEnd; no extra supplies requested.
+
+Opening resumed eval19:55 and intermediate19:56 both0/11/177 SAVEFAILED,last-saved-world. Provisionala1a4846a existed19:00 beforeminute90. Continue usefulworkthrough~20:04 active105 andappendactualclosure.
+
+--- Historical checkpoints below are superseded by newer observed state ---
+
