@@ -1,0 +1,6 @@
+== #10078 2026-10-18T14:21:56 p2 role=encounter_lead iter=22 0.6 s
+const r=bot.recipesFor(bot.registry.itemsByName.spruce_planks.id,null,1,null)[0];console.log('BEFORE',JSON.stringify(bot.inventory.items().map(i=>({n:i.name,c:i.count}))));await bot.craft(r,1,null);await bot.waitForTicks(12);return{p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count})),recipe:{delta:r.delta,result:r.result}};
+-- output --
+BEFORE [{"n":"spruce_log","c":1},{"n":"sweet_berries","c":24}]
+-- returned --
+{"p": {"x": 8.32568993403923, "y": 66, "z": -13.496848861712149}, "hp": 20, "inv": [{"n": "spruce_planks", "c": 12}, {"n": "sweet_berries", "c": 24}], "recipe": {"delta": [{"id": 132, "metadata": null, "count": -1}, {"id": 37, "metadata": null, "count": 4}], "result": {"id": 37, "metadata": null, "count": 4}}}

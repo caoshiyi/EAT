@@ -3202,3 +3202,8 @@ Token usage unavailable from an authorized available source. Never infer usage f
 ### Iteration22 minute20 — 2026-10-18T14:13:33.339679+00:00
 
 P2leadershipchangedallocationfrombrokenP4eastaccess toP1currentwestcapability: actualBEDreceipt9977, transport9981, recipient9993, actualplacement9999 accepted; damageNOTtested. Canonical9999misrelayedas10000 corrected.10007 compositefixturefailure requiredfreshsensor10015/10018: bothcellsAIR, realwhitebeddrop; removalcauseunobserved.10020 recoveredbedthenMAGICdeath14:11:33, noactivation; newrespawn20HPthenZombie death14:12:04demonstratespostcallretentionfailureagain. Original13:54→14:12wholeoperationFAILED, no automaticrecovery/source remake. P1soleEnd20HPempty; P2OWempty; fieldallocationmustfollowcurrentcapability. ActualBOTHvisibility10009onecase/phasechangedearlier isnotAIcausality; twoactualchestnegativeinputsclosed. Usefulknowledgeincreased, yetobjectiveeffectsremainabsent.
+
+
+### Iteration22 third-death execution lesson — 2026-10-18T14:15:12.492144+00:00
+
+10029 changedlower56pickuprealBED+toolsreceiptbutno retention: firstreturnpostconditionfalse/actualbodyunchanged, thenlooptriedseveralremainingwaypoints/timeoutsbeforeP1MAGICdeath14:14:02. Postconditionchecks detectfailurebutdo notbythemselvesmakefailurehandlingeffective. Require changedhandling/smallactualreturnqualificationbeforelongreuse; donotclaimmaxDropDowncausewithouttest. P1+1/P2+2 deaths, allplayersOW; oldEndkit/swordloans/recipientassumptionsinvalid. No normaldragonhit/bedactivationyet.

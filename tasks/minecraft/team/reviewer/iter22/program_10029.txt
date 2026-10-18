@@ -1,0 +1,68 @@
+== #10029 2026-10-18T14:13:28 p1 role=capability_owner iter=22 34.8 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=1;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=15000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&Math.abs(p.y-y)<=.12&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+const full=p=>bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+function safe(x,z){return full(new V(x,49,z))&&full(new V(x,52,z))&&[50,51].every(y=>bot.blockAt(new V(x,y,z))?.boundingBox==='empty');}
+const start=bot.entity.position.floored(),queue=[[start.x,start.z]],prev=new Map([[`${start.x},${start.z}`,null]]);let end,path=[];
+for(let n=0;n<queue.length;n++){const [x,z]=queue[n];if(x===7&&z===3){end=[x,z];break;}for(const [dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]]){const a=x+dx,b=z+dz,k=`${a},${b}`;if(a<0||a>76||b< -5||b>6||prev.has(k)||!safe(a,b))continue;prev.set(k,[x,z]);queue.push([a,b]);}}
+if(end){for(let a=end;a;a=prev.get(a.join(',')))path.push(a);path.reverse();}console.log('COVERED_PATH',JSON.stringify(path));
+try{if(bot.game.dimension!=='the_end'||bot.health!==20||!path.length)throw Error('courier guard');
+for(let i=1;i<path.length;i++){if(i<path.length-1&&path[i][0]-path[i-1][0]===path[i+1][0]-path[i][0]&&path[i][1]-path[i-1][1]===path[i+1][1]-path[i][1])continue;await goChecked(path[i][0],50,path[i][1]);}
+console.log('NATIVE7_START',JSON.stringify({p:bot.entity.position,hp:bot.health}));
+const route=[[3,50,3],[3,50,4],[2,50,4],[1,50,4],[0,50,4],[0,50,3],[1,51,3],[2,52,3],[3,53,3],[4,54,3],[5,55,3],[6,56,3]];let done=[];
+const danger=()=>Object.values(bot.entities).some(e=>e.name==='area_effect_cloud'&&e.position.y+(e.height||.5)>bot.entity.position.y&&e.position.y<bot.entity.position.y+1.9&&Math.hypot(e.position.x-bot.entity.position.x,e.position.z-bot.entity.position.z)<Number(e.metadata?.[8]||3)+.6);
+try{
+ for(const a of route){if(bot.health!==20||danger())throw Error('fresh health/cloud guard');await goChecked(...a,4000);done.push(a);}
+ const target=new V(6.7,56,3.31);for(let n=0;n<15&&Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.05;n++){if(bot.health!==20||danger())throw Error('pickup health/cloud');await bot.lookAt(new V(target.x,57.62,target.z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}bot.clearControlStates();await bot.waitForTicks(12);
+ console.log('LOWER56_RECEIPT',JSON.stringify({p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>({id:e.id,p:e.position,n:bot.registry.items[e.metadata?.[8]?.itemId]?.name}))}));
+}finally{
+ bot.pathfinder.setGoal(null);bot.clearControlStates();
+ for(const a of done.slice(0,-1).reverse()){try{await goChecked(...a,4000);}catch(e){console.log('RETURN_NODE_ERROR',String(e));if(bot.game.dimension!=='the_end'||bot.health<=0)break;}}
+ if(bot.game.dimension==='the_end'&&bot.health>0&&bot.entity.position.y<50.2){try{await goChecked(7,50,3,5000);}catch(e){console.log('RETURN_NATIVE_ERROR',String(e));}}
+}
+}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,dim:bot.game.dimension,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),goal:bot.pathfinder.goal,controls:bot.controlState}));}
+-- output --
+COVERED_PATH [[75,0],[74,0],[73,0],[72,0],[71,0],[70,0],[69,0],[68,0],[67,0],[66,0],[65,0],[64,0],[63,0],[62,0],[61,0],[60,0],[59,0],[58,0],[57,0],[56,0],[55,0],[54,0],[53,0],[52,0],[51,0],[50,0],[49,0],[48,0],[47,0],[47,1],[46,1],[45,1],[45,2],[44,2],[44,3],[43,3],[42,3],[41,3],[40,3],[39,3],[38,3],[37,3],[36,3],[35,3],[34,3],[33,3],[32,3],[31,3],[30,3],[29,3],[28,3],[27,3],[26,3],[25,3],[24,3],[23,3],[22,3],[21,3],[20,3],[19,3],[18,3],[17,3],[16,3],[15,3],[14,3],[13,3],[12,3],[11,3],[10,3],[9,3],[8,3],[7,3]]
+CHECKED_LEG {"target":[47,50,0],"before":{"p":{"x":75.5,"y":50,"z":0.4997911735157712},"hp":20,"dim":"the_end"},"p":{"x":47.69791644921176,"y":50,"z":0.4997911735157712},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[47,50,1],"before":{"p":{"x":47.69791644921176,"y":50,"z":0.4997911735157712},"hp":20,"dim":"the_end"},"p":{"x":47.53626035552666,"y":50,"z":1.3162315333047685},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,1],"before":{"p":{"x":47.53626035552666,"y":50,"z":1.3162315333047685},"hp":20,"dim":"the_end"},"p":{"x":45.65319812606209,"y":50,"z":1.5068238731725343},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,2],"before":{"p":{"x":45.65319812606209,"y":50,"z":1.5068238731725343},"hp":20,"dim":"the_end"},"p":{"x":45.526404207823234,"y":50,"z":2.3293995585890306},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,2],"before":{"p":{"x":45.526404207823234,"y":50,"z":2.3293995585890306},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":2.4660508231477603},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,3],"before":{"p":{"x":44.5,"y":50,"z":2.4660508231477603},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[7,50,3],"before":{"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+NATIVE7_START {"p":{"x":7.5,"y":50,"z":3.5},"hp":20}
+CHECKED_LEG {"target":[3,50,3],"before":{"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":3.658275656947759,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[3,50,4],"before":{"p":{"x":3.658275656947759,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":3.5280766311727967,"y":50,"z":4.322044296195416},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[2,50,4],"before":{"p":{"x":3.5280766311727967,"y":50,"z":4.322044296195416},"hp":20,"dim":"the_end"},"p":{"x":2.5,"y":50,"z":4.464143367303525},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[1,50,4],"before":{"p":{"x":2.5,"y":50,"z":4.464143367303525},"hp":20,"dim":"the_end"},"p":{"x":1.6684162706423857,"y":50,"z":4.484918260013739},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[0,50,4],"before":{"p":{"x":1.6684162706423857,"y":50,"z":4.484918260013739},"hp":20,"dim":"the_end"},"p":{"x":0.5,"y":50,"z":4.4921017643095675},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[0,50,3],"before":{"p":{"x":0.5,"y":50,"z":4.4921017643095675},"hp":20,"dim":"the_end"},"p":{"x":0.49999999999995226,"y":50,"z":3.659810582558753},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[1,51,3],"before":{"p":{"x":0.49999999999995226,"y":50,"z":3.659810582558753},"hp":20,"dim":"the_end"},"p":{"x":1.5,"y":51,"z":3.5477673804959906},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[2,52,3],"before":{"p":{"x":1.5,"y":51,"z":3.5477673804959906},"hp":20,"dim":"the_end"},"p":{"x":2.5,"y":52,"z":3.535767606558194},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[3,53,3],"before":{"p":{"x":2.5,"y":52,"z":3.535767606558194},"hp":20,"dim":"the_end"},"p":{"x":3.5,"y":53,"z":3.5266371142054407},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[4,54,3],"before":{"p":{"x":3.5,"y":53,"z":3.5266371142054407},"hp":20,"dim":"the_end"},"p":{"x":4.5,"y":54,"z":3.5199677243448324},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[5,55,3],"before":{"p":{"x":4.5,"y":54,"z":3.5199677243448324},"hp":20,"dim":"the_end"},"p":{"x":5.5,"y":55,"z":3.514837005795189},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[6,56,3],"before":{"p":{"x":5.5,"y":55,"z":3.514837005795189},"hp":20,"dim":"the_end"},"p":{"x":6.5,"y":56,"z":3.510937491086838},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+LOWER56_RECEIPT {"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"inv":[["end_stone",64,null],["cobbled_deepslate",10,null],["white_bed",1,null],["end_stone",15,null],["stone_sword",1,0],["blackstone",1,null],["stone_pickaxe",1,106]],"items":[{"id":4608,"p":{"x":4.125,"y":59,"z":2.125},"n":"end_stone"},{"id":4610,"p":{"x":4.125,"y":59,"z":2.875},"n":"cracked_stone_bricks"},{"id":4616,"p":{"x":4.125,"y":59,"z":2.875},"n":"book"}]}
+CHECKED_LEG {"target":[5,55,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[4,54,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[3,53,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[2,52,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+RETURN_NODE_ERROR Error: movement timeout
+RETURN_NODE_ERROR Error: movement timeout
+RETURN_NODE_ERROR Error: movement timeout
+TERMINAL {"p":{"x":-8.5,"y":27,"z":-26.5},"hp":20,"food":20,"ground":false,"dim":"overworld","inv":[],"goal":null,"controls":{}}

@@ -25,7 +25,7 @@ statefile.write_text(json.dumps(state,indent=2))
 print('OBSERVED',now,'changed',','.join(new) or 'none')
 for k in ['status','events','chat']:
  if k in new:
-  s=new[k]['stdout']; print(k.upper(),s if k=='status' else '\n'.join(s.splitlines()[-6:]))
+  s=new[k]['stdout']; print(k.upper(),s if k=='status' else '\n'.join(line[:300] for line in s.splitlines()[-6:]))
 if 'programs' in new:
  for section in re.split(r'(?=^== #\d+ )',new['programs']['stdout'],flags=re.M):
   m=re.match(r'== #(\d+) ',section)
@@ -34,8 +34,8 @@ if 'programs' in new:
   if f.exists() and f.read_text()==section:continue
   f.write_text(section)
   print('PROGRAM',section.splitlines()[0])
-  if '-- returned --' in section:print('RETURN',section.split('-- returned --',1)[1][:700])
-  elif 'bot.chat(' in section:print('RELAY',section.splitlines()[1][:650])
-  else:print('ENDING',section[-500:])
+  if '-- returned --' in section:print('RETURN',section.split('-- returned --',1)[1][:250])
+  elif 'bot.chat(' in section:print('RELAY',section.splitlines()[1][:300])
+  else:print('ENDING',section[-250:])
 for k,r in results.items():
  if r['rc']!=0 or r['stderr']: print('COLLECTOR_ERROR',k,r['rc'],r['stderr'][:300])

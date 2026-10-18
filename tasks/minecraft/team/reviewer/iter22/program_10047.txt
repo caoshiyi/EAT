@@ -1,0 +1,37 @@
+== #10047 2026-10-18T14:16:48 p1 role=capability_owner iter=22 24.4 s
+const V=bot.entity.position.constructor;bot.pathfinder.setGoal(null);bot.clearControlStates();bot.stopDigging();const hp=bot.health,dim=bot.game.dimension;
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];m.maxDropDown=1;bot.pathfinder.setMovements(m);
+const result=bot.pathfinder.getPathTo(m,new goals.GoalNear(7,68,-34,1),2000);console.log('RECONCILE_PATH',JSON.stringify({p:bot.entity.position,hp,dim,inv:bot.inventory.items().map(i=>[i.name,i.count]),status:result.status,path:result.path.map(q=>[q.x,q.y,q.z,q.toBreak.length,q.toPlace.length])}));
+try{
+ if(dim!=='overworld'||hp!==20||result.status!=='success'||result.path.length>45||result.path.some(q=>q.toBreak.length||q.toPlace.length))throw Error('no qualified surface path');
+ for(const n of result.path){const before=bot.entity.position.clone(),target=new V(n.x,n.y,n.z);if(before.distanceTo(target)>2.1)throw Error('path leg too large');let done=false,error=null;
+ const task=bot.pathfinder.goto(new goals.GoalBlock(Math.floor(n.x),n.y,Math.floor(n.z))).then(()=>{done=true},e=>{done=true;error=e});const start=Date.now();
+ try{while(!done){const p=bot.entity.position;if(bot.game.dimension!==dim||bot.health<hp||Date.now()-start>3500||p.y<Math.min(before.y,n.y)-.6||p.y>Math.max(before.y,n.y)+1.5||p.distanceTo(before)>3.2)throw Error('leg life/time/envelope');await bot.waitForTicks(1);}if(error)throw error;}
+ finally{bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ await bot.waitForTicks(14);const p=bot.entity.position;if(bot.game.dimension!==dim||bot.health<hp||!bot.entity.onGround||Math.abs(p.y-n.y)>.2||Math.hypot(p.x-n.x,p.z-n.z)>.8)throw Error('leg physical failed');console.log('LEG',JSON.stringify({p,hp:bot.health,target}));
+ }
+}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState,foes:Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<20).map(e=>({n:e.name,p:e.position}))}));}
+-- output --
+RECONCILE_PATH {"p":{"x":-2.5,"y":57,"z":-36.5},"hp":20,"dim":"overworld","inv":[],"status":"success","path":[[-2.5,57,-35.5,0,0],[-2.5,57,-34.5,0,0],[-1.5,57,-33.5,0,0],[-1.5,57,-32.5,0,0],[-1.5,57,-31.5,0,0],[-1.5,57,-30.5,0,0],[-0.5,57,-29.5,0,0],[0.5,58,-28.5,0,0],[1.5,59,-27.5,0,0],[1.5,60,-26.5,0,0],[2.5,61,-27.5,0,0],[2.5,62,-28.5,0,0],[2.5,63,-29.5,0,0],[2.5,63,-30.5,0,0],[2.5,63,-31.5,0,0],[2.5,64,-32.5,0,0],[3.5,65,-33.5,0,0],[4.5,66,-33.5,0,0],[5.5,66,-33.5,0,0],[6.5,67,-33.5,0,0],[7.5,67,-33.5,0,0]]}
+LEG {"p":{"x":-2.499999999999962,"y":57,"z":-35.66770881824919},"hp":20,"target":{"x":-2.5,"y":57,"z":-35.5}}
+LEG {"p":{"x":-2.499999999999962,"y":57,"z":-34.5},"hp":20,"target":{"x":-2.5,"y":57,"z":-34.5}}
+LEG {"p":{"x":-1.5,"y":57,"z":-33.5},"hp":20,"target":{"x":-1.5,"y":57,"z":-33.5}}
+LEG {"p":{"x":-1.4999999999999616,"y":57,"z":-32.66770881824919},"hp":20,"target":{"x":-1.5,"y":57,"z":-32.5}}
+LEG {"p":{"x":-1.4999999999999616,"y":57,"z":-31.5},"hp":20,"target":{"x":-1.5,"y":57,"z":-31.5}}
+LEG {"p":{"x":-1.4999999999999616,"y":57,"z":-30.667708818249185},"hp":20,"target":{"x":-1.5,"y":57,"z":-30.5}}
+LEG {"p":{"x":-0.6836602884283967,"y":57,"z":-29.5},"hp":20,"target":{"x":-0.5,"y":57,"z":-29.5}}
+LEG {"p":{"x":0.5,"y":58,"z":-28.5},"hp":20,"target":{"x":0.5,"y":58,"z":-28.5}}
+LEG {"p":{"x":1.5,"y":59,"z":-27.40749563065761},"hp":20,"target":{"x":1.5,"y":59,"z":-27.5}}
+LEG {"p":{"x":1.5000000000000384,"y":60,"z":-26.5},"hp":20,"target":{"x":1.5,"y":60,"z":-26.5}}
+LEG {"p":{"x":2.5,"y":61,"z":-27.592504369343487},"hp":20,"target":{"x":2.5,"y":61,"z":-27.5}}
+LEG {"p":{"x":2.499999999999949,"y":62,"z":-28.5},"hp":20,"target":{"x":2.5,"y":62,"z":-28.5}}
+LEG {"p":{"x":2.499999999999906,"y":63,"z":-29.5},"hp":20,"target":{"x":2.5,"y":63,"z":-29.5}}
+LEG {"p":{"x":2.4999999999998104,"y":63,"z":-30.332291181750815},"hp":20,"target":{"x":2.5,"y":63,"z":-30.5}}
+LEG {"p":{"x":2.499999999999715,"y":63,"z":-31.5},"hp":20,"target":{"x":2.5,"y":63,"z":-31.5}}
+LEG {"p":{"x":2.499999999999672,"y":64,"z":-32.5},"hp":20,"target":{"x":2.5,"y":64,"z":-32.5}}
+LEG {"p":{"x":3.5,"y":65,"z":-33.5},"hp":20,"target":{"x":3.5,"y":65,"z":-33.5}}
+LEG {"p":{"x":4.5,"y":66,"z":-33.50000000000007},"hp":20,"target":{"x":4.5,"y":66,"z":-33.5}}
+LEG {"p":{"x":5.332291181750814,"y":66,"z":-33.50000000000021},"hp":20,"target":{"x":5.5,"y":66,"z":-33.5}}
+LEG {"p":{"x":6.5,"y":67,"z":-33.50000000000029},"hp":20,"target":{"x":6.5,"y":67,"z":-33.5}}
+LEG {"p":{"x":7.332291181750814,"y":67,"z":-33.50000000000043},"hp":20,"target":{"x":7.5,"y":67,"z":-33.5}}
+TERMINAL {"p":{"x":7.332291181750814,"y":67,"z":-33.50000000000043},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{},"foes":[]}
