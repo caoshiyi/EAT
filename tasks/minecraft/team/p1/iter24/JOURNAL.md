@@ -118,3 +118,6 @@ Opening resumed eval19:55 and intermediate19:56 both0/11/177 SAVEFAILED,last-sav
 
 --- Historical checkpoints below are superseded by newer observed state ---
 
+
+## 19:59 material result — preparation adopted as real health recovery
+Correction actual supported3down caller10809 (not10810). 10812 ordinaryfirstcast19:57:35.570 ->ordinaryCOD1 at19:58:30.305, RODwear0->1; THREE10FULL+terminal19:58:32.707. 10815 normalvisibleFURNACE165,-39,2258 open, actualfuelOAK1/inputCOD1, actualCOOKED_CODoutput +take/consume19:58:55.479. Immediate consume snapshot stillfood16/HP3 (event update lag), delayedHEALTH_AFTER19:59:05.310 provesfood20/HP6.666666. Later10818 SAY endingHP8.7food17. This is actual catch/cook/use and health recovery, NOTEnd/dragon effect. Active10819 secondcast sameboundedmethod; no overlap andinspectoutputbeforeclaims. Originalfood18:32/18:45/19:30 deadlines remainMISSED. Namedroutelead assistance requestedP2/P4 fordirectEnd frompool usingonlypermittedrecords; no indefinite quota.
