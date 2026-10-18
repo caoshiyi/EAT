@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Run only p2 programs; preserve complete output and print concise postconditions."""
-import argparse, datetime, json, os, pathlib, re, subprocess, sys
-from receipt_fields import extract
+import argparse, datetime, os, pathlib, re, subprocess, sys
 root=pathlib.Path(os.environ['EAT_ROOT'])
 here=root/'tasks/minecraft/team/p2'
 p=argparse.ArgumentParser();p.add_argument('program',nargs='?');p.add_argument('--timeout',type=int,default=90);p.add_argument('--observe',action='store_true');a=p.parse_args()
@@ -28,11 +27,6 @@ else:
         print(r.stdout.rstrip())
     else:
         print('\n'.join(selected))
-        try:
-            for receipt in extract(r.stdout):
-                print('CANONICAL_REPORTED_RETURN',json.dumps(receipt,separators=(',',':')))
-        except ValueError as error:
-            print('RECEIPT_PARSE_UNPROVED',str(error))
-            print('FULL_POSTCONDITION_TAIL\n'+r.stdout[-3500:])
+        print('FULL_POSTCONDITION_TAIL\n'+r.stdout[-3500:])
 if r.stderr:print(r.stderr,file=sys.stderr)
 sys.exit(r.returncode)
