@@ -1,6 +1,6 @@
 # Current active methods support —16:27 UTC
 
-**16:31 urgent state override:** P1#10364 forwardHP stop returned exposed; same-caller retained-ending catch was removed in this portal phase. Status16:31 showsHP5 at(5.7,68,92.3), no transition verified. Prior HOME20HP ending historical after exit. [P1_PORTAL_FAILURE_REVIEW.md](P1_PORTAL_FAILURE_REVIEW.md) confirms code regression; reconcile actual body before any longer diagnosis. No damage cause or recovery route prescribed.
+**16:34 current override:** owner#10370 placed an actual visible roof atHP1, #10372 ordinary cuts/support/steps caused actual Nether transition at(3.5063,65,3.5),HP2/lostfalse/both tools+COBBLE2. Fresh statusHP3/food17, no death. Previous OverworldHP5 warning historical. Nether retained full ending not yet established; forward-HP/failure-branch regression remains a real lesson. [P1_PORTAL_FAILURE_REVIEW.md](P1_PORTAL_FAILURE_REVIEW.md).
 
 Nonplaying reviewer: no player programs/chat, no agents, no Minecraft strategies. Player owners alone review/run fixes. Current ledger: [EVIDENCE.md](EVIDENCE.md); complete independent review: [ITER23_REVIEW.md](../../ITER23_REVIEW.md). Earlier offer chronology: README_LOG_TO_1627.md. Current actor state requires newer arena observations, never old labels.
 

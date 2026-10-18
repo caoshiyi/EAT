@@ -1,25 +1,16 @@
-# Current evidence ledger — 16:11 UTC
+# Current evidence ledger —16:34 UTC
 
-Score last captured16:00: saved dragon0/11 milestones/170 deaths (61/45/26/38), SAVEFAILED. Current arena death events show no iteration23 death through16:10:40; historical milestone count is not current capability. No current End actor/objective effect.
+Score last recorded16:00: SAVEFAILED/last-saved dragon0,11milestones,170deaths(61/45/26/38). Arena has no iteration23 death through16:34. No new dragon hit/effect/defeat verified. Historical milestones are not present capability.
 
-| Workstream / decisive records | Confirmed current evidence | Limit / next discriminator |
+| Current work / key records | Confirmed | Limit / next evidence |
 |---|---|---|
-| P1 receipt #10230, tool #10233 | Actual cobble2→5; real stonepick craft/visible use; owner adoption of methods receipt review | Specific case validated, not general pickup radius |
-| P1 traversal #10253/#10262 | First old-route guard; short instrumented model/executor paths differed, thenHP loss | Instrumentation useful; no successful whole move |
-| P1 support retention #10268/#10271 | Visible supportcut/bushAIR/berry3, full ten faces x4; actual berry consumption | Action began before support note; no causal methods credit invented |
-| P1 secondHP stop #10289 | HP20→19 on first ordered segment; samecaller fallback full x4 at(9.35065,65,-19.65696), both picks/berry2/dirt2/sapling | No HOME. TwoHP stops need changed footprint/failure-frame diagnostic; center nodes do not certify swept body. Cause unlogged |
-| P2 quarry #10269/#10283/#10287 | First partial returned full16gravel; second reached31 but return geometry refused; separate cap created full x4 ending at(-4.3,24,-28.4643),30gravel9flintHP20 |48 target failed16:10; no escape. Fresh return geometry differs from dated traversed cell; exact first move cause unknown |
-| P4 models/audit #10219/#10223/#10279/#10284 | Negative bounded models, retained refuge. Corrected premature strict17/17 to11/17; missing cases snow/sand | Model-only, old route; no current-route protection/stock quota. Error corrected, not excused |
-| API review | WITHDRAWN16:18: lead excludes inherited internet-derived mapping/bytecode; no operational source-semantic claim | Source-only, no current lawful target/damage proof; zero attacks cannot falsify API |
+| P1 current realm #10370/#10372 | Actual roof atHP1; normal cobblecuts/support/steps, same-life Nether transition(3.5063,65,3.5)HP2, tools+COBBLE2; latestHP3/food17 | No qualified current full enclosure/End access. Previous OW20HP/room state historical after exit |
+| P1 scaled approach #10336/#10359 | Real long transitHP20; lastgoal failed. Changed local steps/actual room gaveHOME full10x4; whole16:02→16:27~25m |16:14/18/23 misses remain; portal nextphase10364 dropped failurebranch and returned exposedHP18→1 before changed action |
+| Execution support validated | Receipt10230 actual2→5; padded/ordered10304 fournodes+fullending; changedpulse/postcheck10359 sixflat/down endpoints+fullending | Specific cases, no universalpickup/upstep/route safety. Exact damage source unlogged |
+| Supplied reusable snapshot | P2 reviewed/ran10301, tenloadedfull/negativecoords matchindependent10287 | Validated snapshot case, no rescue/footprintproof. Supplied path-cellfunction not adopted |
+| P2 retained #10287 |(-4.3,24,-28.4643),HP20/food20,GRAVEL30/FLINT9, full10x4 |48stockgatefailed16:10/quarryescape retired. Secondreturngeometryfailure differs from firstunloggedmove |
+| P2 modelreceipt #10337 |success0 vsnoPath0 actualsmoke; methodsreviewed | No P1adoption yet; no physicalrouteproof |
+| P4 retained / modeltest |10303 fullsamplesHP20/gravel1.10358/60 pairedmodels no invalidfeet observed; no optimizationcorruptionreproduction | Negative bounded tests only, not universalplannerproof. Currentterrain/physicalcheck remains required |
+| Peer outputaudit | P1audit_output.py success10304+failure10289 smokes; preservesprimaryerroralongsidegoodfallback | walk_failures[] excludes failedendpoint10336; always inspecterror,stage,n10 |
 
-Proposals: fresh-terminal snapshot/path-cell function unvalidated as supplied code. P1 adopted receipt and route diagnostic reviews; actual case results corroborated. P2 target logging observed in revised manual helper; explicit methods adoption not yet established. Next review follows changed evidence/stall, not repetitive reports. Owned notes list assumptions and owner-run acceptance; reviewer runs no programs.
-
-**16:13 REVIEWER CORRECTION:** original P4 cost100 concern retracted; installed pathfinder docs277–279 explicitly define100 as impossible, not merely a soft penalty. No P4 fluid-exclusion defect established. Reviewer had not checked this documentation before asserting a confirmed concern. P4 note/independent review now prominently corrected; retain this failure in team memory.
-
-16:15 superseding updates: P1#10304 actual four padded/ordered nodes atHP20, then samecaller bore/full10x4 at(11.54243,65,-22.5), both picks/dirt2/berry1/sapling1. HOME16:14 FAILED; longer changed operation not yet qualified. P2#10301 explicitly reviewed/ran supplied terminal snapshot, owner report8815–18 and full output match independent10287 ten cells/current negative coords/HP20. This supplied diagnostic is VALIDATED for this one case. P4 actual three-sample refuge record is#10303 (owner corrected old10302 reference); body/material unchanged. No new deaths observed. No current objective effect.
-
-16:18 tool reuse: reviewed owner P1 audit_output.py (offline parsing only) and small-tested on already independently checked #10304 `padded_small_use.out`. Exact program10304/four walk calls/no walk failures/four audits each n10+all_fulltrue/no error matched manual audit; output retained p1_tool_smoke.json. Tool's min_sampled_hp19 includes pre-regeneration starting state; four physical walk receipts wereHP20. Will reuse for literal large-output checks, always inspect stage and n10, not label alone. This is real peer-tool adoption, no player program.
-
-16:20 negative peer-tool test: P1 audit_output.py on known failed #10289 `home_ordered.out` retained one walk failure AND original error while correctly listing four successful ten-face fallback audits. Asserted these known facts offline; p1_tool_failure_smoke.json saved. This qualifies distinguishing failed primary operation from successful fallback for that captured case, not future record schema changes. No player execution.
-
-16:29 current-state override: #10359 full source/output independently checked after owner10362 report. Changed pulse+settled x/z<=.35 predicate rejects old.875miss; six flat/down local casesHP20 accepted (no new up-case proof). Visible room dirtcuts/entry/PLANK2caps gave four HOME_FULL arrays each10full+terminal10full. New P1(6.5748,64,97.497),20HP/19food,woodpick5/stonepick1,dirt2,berry1,sapling; protected HOME area reached~16:27, cumulative25m and misses16:14/18/23 retained. No portal/Nether transition yet. P2/P4 unchanged retained; no iteration23 death observed. Older P1 open-ending rows are historical.
+Reviewer corrections: cost100 is hard rejection perinstalleddocs277–279; originalsoftpenaltyclaimretracted. Inheritedinternet-derived mapping/bytecode EXCLUDED afterlead8844–45; no admissibleparent-hurtsemanticclaim. Onlyinstalledalloweddocs/permittedworldrecords supportAPIreview; dragon-specificruntimebehavior unresolved. Tokensunavailable. All proposedfixes need owneractualresult; no reviewerprograms/agents.
