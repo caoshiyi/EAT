@@ -1,0 +1,1 @@
+const V=require('vec3').Vec3;return {blocks:[...Array(5)].flatMap((_,i)=>[-37,-36,-35,-34].map(y=>{const b=bot.blockAt(new V(129,y,2270+i));return {p:b.position,n:b.name,shape:b.shapes}})),hp:bot.health};

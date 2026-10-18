@@ -1,0 +1,10 @@
+const V=require('vec3').Vec3;
+const p=new V(130,-35,2274), b=bot.blockAt(p);
+const before={hp:bot.health,inv:bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed}))};
+await bot.equip(bot.inventory.items().find(i=>i.name==='wooden_pickaxe'),'hand');
+await bot.lookAt(p.offset(.5,.5,.5),true);await bot.waitForTicks(2);
+const hit=bot.blockAtCursor(4.5);
+if(!hit||!hit.position.equals(p)||!bot.canSeeBlock(b))return {refused:'not directly visible',hit:hit&&hit.position};
+console.log('PRE',JSON.stringify({target:b.name,pos:p,hit:hit.position,distance:bot.entity.position.offset(0,bot.entity.height,0).distanceTo(p.offset(.5,.5,.5)),before}));
+await bot.dig(b,false,'raycast');await bot.waitForTicks(8);
+return {afterBlock:bot.blockAt(p).name,hp:bot.health,pos:bot.entity.position,inv:bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed})),nearItems:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<4).map(e=>({pos:e.position,metadata:e.metadata}))};
