@@ -1,0 +1,43 @@
+program #10884 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T20:14:12.984Z",
+ "kind": "NEGATIVE_CURSOR_SMOKE_NO_ATTACK",
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 2.1666641235351562,
+ "food": 17,
+ "block": {
+  "name": "dirt",
+  "p": {
+   "x": 6,
+   "y": 68,
+   "z": 81
+  },
+  "face": 3,
+  "intersect": {
+   "x": 6.499999999999902,
+   "y": 68.79999999999995,
+   "z": 82
+  }
+ },
+ "entity": null,
+ "attackMethod": "function",
+ "flags": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive
