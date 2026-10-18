@@ -1,0 +1,33 @@
+program #9770 on p1: 26.3 s
+--- output ---
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-32,"z":2230},"face":0,"hit":{"x":149.49976209792305,"y":-32,"z":2230.5814697833734}}}
+DIG_EFFECT {"p":{"x":149,"y":-32,"z":2230},"inv":[["stick",3,null],["wooden_sword",1,0],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-31,"z":2230},"face":0,"hit":{"x":149.4997567199737,"y":-31,"z":2230.5607171627535}}}
+DIG_EFFECT {"p":{"x":149,"y":-31,"z":2230},"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",1,null],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-30,"z":2230},"face":0,"hit":{"x":149.49975371766942,"y":-30,"z":2230.549131765101}}}
+DIG_EFFECT {"p":{"x":149,"y":-30,"z":2230},"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",2,null],["torch",1,null]]}
+FIRST3 {"p":{"x":149.5,"y":-36,"z":2231.499494705861},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",2,null],["torch",1,null]]}
+MOVE {"p":{"x":149.50005587178947,"y":-35,"z":2232.5},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",2,null],["torch",1,null]]}
+PLACE_EFFECT {"dest":{"x":149,"y":-36,"z":2231},"n":"oak_planks","ray":{"p":{"x":149,"y":-37,"z":2231},"face":1,"hit":{"x":149.4997816875534,"y":-36,"z":2231.441968202554}}}
+PLACE_EFFECT {"dest":{"x":149,"y":-35,"z":2231},"n":"oak_planks","ray":{"p":{"x":149,"y":-36,"z":2231},"face":1,"hit":{"x":149.4998768138112,"y":-35,"z":2231.809044760137}}}
+MOVE {"p":{"x":149.50000000000003,"y":-34,"z":2231.5},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-29,"z":2230},"face":0,"hit":{"x":149.49975671997373,"y":-29,"z":2230.5612224568927}}}
+DIG_EFFECT {"p":{"x":149,"y":-29,"z":2230},"inv":[["stick",3,null],["wooden_sword",1,0],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-28,"z":2230},"face":0,"hit":{"x":149.49975371766945,"y":-28,"z":2230.54963705924}}}
+DIG_EFFECT {"p":{"x":149,"y":-28,"z":2230},"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",1,null],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-35,"z":2231},"face":1,"hit":{"x":149.49999999999986,"y":-34,"z":2231.5}}}
+DIG_EFFECT {"p":{"x":149,"y":-35,"z":2231},"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",2,null],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-36,"z":2231},"face":1,"hit":{"x":149.49999999999986,"y":-35,"z":2231.5}}}
+DIG_EFFECT {"p":{"x":149,"y":-36,"z":2231},"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",4,null],["torch",1,null]]}
+MOVE {"p":{"x":149.49987301863302,"y":-36,"z":2230.6677088461956},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",5,null],["torch",1,null]]}
+MOVE {"p":{"x":149.49997460372674,"y":-36,"z":2231.5},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",5,null],["torch",1,null]]}
+SOURCE_RECEIPT {"p":{"x":149.49997460372674,"y":-36,"z":2231.5},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["oak_planks",5,null],["torch",1,null]]}
+END {"p":{"x":149.49997460372674,"y":-36,"z":2231.5},"hp":6.5,"food":17,"ground":true,"inv":[["oak_planks",1,null],["wooden_sword",1,0],["stick",6,null],["wooden_sword",1,0],["torch",1,null]],"drops":[],"foes":[{"n":"skeleton","p":{"x":137.69999998807907,"y":-36,"z":2231.0059176670097},"hp":20}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: Independent FULL9729/9743 source+results read: WEST1935 actualnormalfists1.792→.792→ENTITY_DEAD(2hits) endedHP17.333, EAST1936 actualHP1→ENTITY_DEAD(1hit) andsamecallerbedreturnHP6.5. Actualdamage/2kills VERIFIED, not merelycursor. Bothwerefinishingalready
+p2: injuredtargets, notfull20HPskeletonfarmproof. Retainedammo0; onlyoldSTICK/BONE1observed. No throughblockseen(actualentityboxentry3+bothactualcameraBLOCKraysclear beforeordinaryattack). NewwoodSword/currentfreshmobtest remainsdifferentpendingcapability.
+p2: URGENT P4EVENT12:22:39 Skeletondeath137.3,-36,2232.2. FreshSTATUS12:22:50 P4NEWLIFEEMPTY HP14.833 at143.7,-36,2231.3; priorWOOD2/STICK1 no longerheld. P1newgiftformulaWOOD2+1 invaliduntilactualpickup; currentgapWOOD3+STICK2 forpick, plusbowSTICK3, Swordifn
+p2: eeded. Do notdropassumingoldinventory. 9768actualTOP_EFFECT oak138,-35,2230 FULL thenphysicaltopfailed ASSERTION; placementDIDhappen beforecleanup, notrefusedworld. Exactsourcepostconditionreviewnext.
+--- p1 now: (149.5, -36, 2231.5) in overworld, health 6.5/20, food 17/20, alive

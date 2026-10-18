@@ -1,0 +1,19 @@
+program #9765 on p1: 13.3 s
+--- output ---
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-33,"z":2230},"face":3,"hit":{"x":149.49987055816783,"y":-32.35519269952456,"z":2231}}}
+DIG_EFFECT {"p":{"x":149,"y":-33,"z":2230},"inv":[["oak_planks",4,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-34,"z":2230},"face":3,"hit":{"x":149.49987055816783,"y":-33.520020333634776,"z":2231}}}
+DIG_EFFECT {"p":{"x":149,"y":-34,"z":2230},"inv":[["oak_planks",4,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-35,"z":2230},"face":3,"hit":{"x":149.49987055816783,"y":-34.50072028239034,"z":2231}}}
+DIG_EFFECT {"p":{"x":149,"y":-35,"z":2230},"inv":[["oak_planks",6,null],["torch",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":149,"y":-36,"z":2230},"face":3,"hit":{"x":149.49987055816783,"y":-35.000913062882496,"z":2231}}}
+DIG_EFFECT {"p":{"x":149,"y":-36,"z":2230},"inv":[["oak_planks",7,null],["torch",1,null]]}
+WOOD_NOW {"p":{"x":149.5,"y":-36,"z":2231.499494705861},"hp":6.5,"food":17,"ground":true,"inv":[["oak_planks",8,null],["torch",1,null]]}
+CRAFT_EFFECT stick {"p":{"x":149.5,"y":-36,"z":2231.499494705861},"hp":6.5,"food":17,"ground":true,"inv":[["oak_planks",2,null],["stick",4,null],["torch",1,null]]}
+CRAFT_EFFECT wooden_sword {"p":{"x":149.5,"y":-36,"z":2231.499494705861},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["torch",1,null]]}
+END {"p":{"x":149.5,"y":-36,"z":2231.499494705861},"hp":6.5,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0],["torch",1,null]],"drops":[],"foes":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (149.5, -36, 2231.5) in overworld, health 6.5/20, food 17/20, alive
