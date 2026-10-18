@@ -11,3 +11,9 @@ Read FULL permitted P4 iter21 occupied_row_test.out (#9665), plus iter25 CRYSTAL
 Minimal proposed method: actual fullcover tofeet/torso, clear overcover visible eye/reach<=3m, prequalified shortretreat tolocalprotection, ONEhit and actualtargetabsence/HP/position/retainedending. Previouslyremovedcrystal179 isnotcandidate. Remaining old crystal33.5,80,-24.5 differs; freshentity/geometryrequired. Do not copy oldhelper/ID or infer radius/bedshield.
 
 Acceptance: owningP1 sandbox physicallyreaches candidate, actualonecrystalhit/removal, HPretained +shortretreat; thenfreshLIVEpreconditions/use. IfHPstop occurs, forwardadmission mustnotreblock aliveemergencyretreat asiter25 did. Blast/retreat acceptance pending; p3 OW2.17HP startingconditions cannot substitute for an End trial.
+
+## Actual adoption verified22:04:26
+OwnerLIVE11111 started22:03:45.470, correctedbothloggingcalls. ActualbagCOBBLE3 at22:03:49.565, craftSTONE_PICK1 at51.843, THREE10FULL52.745/53.245/53.747 thenterminal54.205 HP20food20/all7FALSE. OwningP1 explicitlyacknowledged P3fixadopted11114. IndependentFULLcapture p1_first_tools_records.txt. ThereforepreparedhelpercorrectionisadoptedandruntimeacceptancePASS. Ownerhadalsospottedbug, soindependentdiagnosisratherthanexclusivecredit. Suggestedadditionalbagguardpostdatedcallerstart; actualbagpreconditionheldbutexplicitguardnotyetadopted. Blastmethodremainsuntestedthisiteration.
+
+## Delayed bag receipt actually fails sandbox, separatefromlive
+G26-1 P1#41 stone_tools failedno-fundedpick. RECEIPTS22:04:50.989 COBBLE2; TABLEroof installed; recipesFor nofundedSTONEpick. LaterFULL_AUDIT22:04:53.400 bagCOBBLE3, HP20/10full. This substantiates previouslypredictedreceipt-vs-groundwitnessrace; notrecipeunavailability. Minimalboundedwait foractualbag>=3 BEFOREroofcut, fail/retainotherwise. P3notice11124 around22:06; owneradoptionpending. Do notclaimdelayedreceiptmechanismdetails beyondobservedupdates.
