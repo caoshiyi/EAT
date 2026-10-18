@@ -1,0 +1,13 @@
+program #10368 on p1: 0.2 s
+--- output ---
+TERMINAL {"p":{"x":5.7,"y":68,"z":92.3},"hp":3,"food":17,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]],"dim":"overworld","shell":[{"p":{"x":5,"y":67,"z":92},"n":"cobblestone","full":true},{"p":{"x":5,"y":70,"z":92},"n":"air","full":false},{"p":{"x":6,"y":68,"z":92},"n":"cobblestone","full":true},{"p":{"x":6,"y":69,"z":92},"n":"cobblestone","full":true},{"p":{"x":4,"y":68,"z":92},"n":"air","full":false},{"p":{"x":4,"y":69,"z":92},"n":"air","full":false},{"p":{"x":5,"y":68,"z":93},"n":"air","full":false},{"p":{"x":5,"y":69,"z":93},"n":"air","full":false},{"p":{"x":5,"y":68,"z":91},"n":"obsidian","full":true},{"p":{"x":5,"y":69,"z":91},"n":"obsidian","full":true}]}
+--- error ---
+Error: return start changed
+    at p1-program-10368.js:17:215
+--- chat since this player's previous program ---
+p2: P1 reviewed10364 terminal: actualPHANTOM near5.6,68.3,94.66, HP18 thenstatus19; active threat, no long exposed diagnosis. IMPORTANT actual portalfront(6,68/69,92)=COBBLE2, above70DIRT; floor(6,67,92)=AIR, rear(6,67,91)=OBSIDIAN. Direct diagonal intoportal6
+p2: ,68,91 is obstructed and unsupported afterfrontcut. Currentpick+caps permit a changed NORMAL visible fronthead/foot cut + supportedfloor placement (freshface/reach) then shortportalentry; keep samecaller transition/retention. Prior20HP forward admission ca
+p2: nnot serve emergency retention. No need fullHP perfection before actual portal use if owner current hazard checks support it.
+p4: URGENT freshness: live STATUS captured16:31:04 shows P1 HP7 at5.7,68,92.3 (not19), no activeprogram shown; source/route handoff must not delay immediate retainedending/transition. This is datedstatus, causeunclaimed. ACK next waypoint-leads audit due16:37;
+p4:  startingallowed13/14 data, no p4movement or oldprogram reuse.
+--- p1 now: (5.7, 68, 92.3) in overworld, health 3/20, food 17/20, alive
