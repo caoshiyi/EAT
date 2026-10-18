@@ -151,6 +151,9 @@ function packetRefusal (bot, name, params) {
   return blockSight(bot, loc, name === 'block_place' ? params.direction : null).refusal || null
 }
 
+// Packets reported to a body's onAction (the flight recorder), refused or not.
+const ACTIONS = new Set(['use_entity', 'block_dig', 'block_place', 'arm_animation'])
+
 const keyOf = (name, p) => name === 'block_dig' ? `${name}:${p.status}:${fmt(p.location)}`
   : name === 'block_place' ? `${name}:${fmt(p.location)}:${p.direction}`
     : `${name}:${p.target ?? p.entityId}:${p.mouse ?? ''}`
@@ -193,6 +196,9 @@ function install (version) {
     const rec = clients.get(this)
     if (rec) {
       const why = packetRefusal(rec.bot, name, params)
+      if (rec.onAction && ACTIONS.has(name)) {
+        try { rec.onAction(name, params, why) } catch (e) {}
+      }
       if (why) {
         rec.onRefuse(why, 'call')
         throw new Error(`REFUSED: ${why}`)
@@ -251,12 +257,13 @@ function install (version) {
   })
 }
 
-// Opens a body's connection (the only connections allowed) and puts it under the guards.
-function connectBody (create, onRefuse) {
+// Opens a body's connection (the only connections allowed) and puts it under the guards. onAction(name, params,
+// refusal) hears every swing/attack/dig/place the client tries to send.
+function connectBody (create, onRefuse, onAction = null) {
   allowConnect++
   let bot
   try { bot = create() } finally { allowConnect-- }
-  const rec = { bot, client: bot._client, approved: [], onRefuse, played: false }
+  const rec = { bot, client: bot._client, approved: [], onRefuse, onAction, played: false }
   clients.set(bot._client, rec)
   const watch = (s) => { if (s) sockets.set(s, rec) }
   watch(bot._client.socket)

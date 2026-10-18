@@ -11,6 +11,7 @@ const util = require('util')
 const vm = require('vm')
 const { builtinModules } = require('module')
 const sight = require('./sight')
+const flight = require('./flight')
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const { Vec3 } = require('vec3')
@@ -32,6 +33,8 @@ const MAX_BUFFER = 300          // chat lines / background lines kept per body b
 sight.install(VERSION)
 
 fs.mkdirSync(RECORDS, { recursive: true })
+
+let recorder = null   // the flight recorder (flight.js), started once the bodies exist
 
 function now () { return new Date().toISOString() }
 function append (file, rec) { fs.appendFileSync(path.join(RECORDS, file), JSON.stringify(rec) + '\n') }
@@ -193,6 +196,7 @@ function inventory (b) {
 // A refused attack/use/dig/place (sight.js): in the program's output and its record, or the body's background log.
 function noteRefusal (body, why, via) {
   log(`${body.name} refused (${via}): ${why}`)
+  recorder?.refused(body, why, via)
   const prog = body.running
   if (!prog) { push(body.background, `REFUSED: ${why}`); return }
   prog.refusals.push({ time: now(), via, why })
@@ -201,8 +205,10 @@ function noteRefusal (body, why, via) {
 
 function connect (body) {
   const bot = sight.connectBody(() => mineflayer.createBot({ host: HOST, port: PORT, username: body.name, auth: 'offline',
-    version: VERSION, hideErrors: true, checkTimeoutInterval: 60000 }), (why, via) => noteRefusal(body, why, via))
+    version: VERSION, hideErrors: true, checkTimeoutInterval: 60000 }), (why, via) => noteRefusal(body, why, via),
+  (name, params, why) => recorder?.action(body, bot, name, params, why, id => sight.entityTarget(bot, id)))
   body.bot = bot
+  recorder?.watch(body, bot)
   body.spawned = false
   bot.loadPlugin(pathfinder)
 
@@ -561,6 +567,7 @@ function shutdown () {
   if (shuttingDown) return
   shuttingDown = true
   log('shutting down')
+  recorder?.stop()
   api.close()
   const ends = Object.values(bodies).filter(b => b.bot).map(b => new Promise(resolve => {
     b.bot.once('end', resolve)
@@ -576,6 +583,7 @@ process.on('SIGINT', shutdown)
 fs.mkdirSync(path.dirname(API_SOCK), { recursive: true })
 try { fs.unlinkSync(API_SOCK) } catch (e) { if (e.code !== 'ENOENT') throw e }
 api.listen(API_SOCK, () => { fs.chmodSync(API_SOCK, 0o600); log(`api on ${API_SOCK}`) })
+recorder = flight.create({ dir: path.join(RECORDS, 'flight'), bodies, registry: require('minecraft-data')(VERSION), log })
 PLAYERS.forEach((name, i) => {
   startView(bodies[name], VIEW_PORT + i)
   connect(bodies[name])
