@@ -1,0 +1,13 @@
+# Iteration24 independent review — provisional18:03 UTC
+
+Objective unresolved. Opening evaluator17:59: dragon0, milestones11/12, deaths172; SAVEFAILED/last-saved-world. This provisional is before minute90, not final closure. Live actions do not automatically synchronize saved readings.
+
+Independently read completed10508: actual twoBLACKSTONE cuts, supported SOUTHstep into LOWstart(-54,8,64), HP3/food16 unchanged, three10-full audits plus terminal, stonewear94/wood5. Exact10515: actual20 eaststeps to(-33.5,8,64.5),two morecuts, three10-full audits+terminal, wear96/5. No first79 checkpoint/remainingLOW/stronghold/End claimed. P1 10513 explicitly adopted P4 corrected historical37-cut subtotal; this is actual adoption of accounting, not a route guarantee.
+
+P4 operational10512 independently demonstrates normal emptyhandSTONE removal (7.8s) without item/inventory gain, then supportedGRAVEL reclosure and three10-full ending samplesHP20. P4 unchangedpositionOW(-8.486,26,-37.7),nowEMPTY. This limited fallback opens an obstruction but makes no cap/tool resource; no actual traversal or objective effect. One case, no duplicate experiment/escape/supply chain. P3/P2 food outcomes not yet independently accepted; no transfer/use inferred from chat.
+
+Historical exact route outputs7158..7173 total404moves/22cuts/193.6s. Exit7183 and corridor7221 explicitly UNCLOSED; down7234 FULLTRUE. Conditional37cut/239.6s subtotal includes these unprotected intermediates and excludes current geometry/library-to-End/ending. Old93core includes already-completed shaft and is unsuitable current remaining-cost evidence. Historical End7791 airborne entry is not retained arrival.
+
+Failures/corrections: opening python missing ->python3. P4 audit chat typed18:06 but actual10501 timestamp18:00:50; explicitly corrected10505. No failed physical action so far. Independent capture helper keeps full source/raw output, displays completed output; first live smoke10515 inspected. It does not score success automatically. Own artifacts checkpointa1fa90b5. No other-player control, agents, prohibited sources/actions, server/tools edits or remote push.
+
+18:10 update: exact10523 terminal qualifies first79 (59newsteps/HP3/stone98/three10FULL), and10544/10548 independently qualify changedfourstepbend behindtwofullorthogonalbarriers (HP3/stone102/three10FULL). Longerfield reports awaitselectedindependentchecks. P3 exact10527 ordinaryberryreceipt andconsume3->1/food17->20 accepted;10529 later2HPloss/healthstop retained asfailure, causeunlogged. ActualP1foodreceipt remainsunverified. P4 H4 camera10563 foundthreecanSeeBlockfalse yet exactvisiblecursorfaces within1.073m; no interaction. P3 explicitlyadopted H2 handpassageconcept, limitwarned10573; no infinitecapbudget.
