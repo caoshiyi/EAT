@@ -1,0 +1,23 @@
+# P3 continuation state —20:53 UTC
+
+Keep working until **21:53 UTC** (~105min from own20:08 start), notfinalyet. Earlyprovisional20:15/git7c21e212 fulfilledbefore90; refreshcurrentfactsby21:38/closurefreshbody+status+events+eval21:53. No operatorstop/subtraction thisiteration: P1launcherrestart/ownershipblock isNOTa globalclockpause. Do notcreategoal/spawnagents/askuser/impersonateorunlockP1. Every shellcommand `cd "$EAT_ROOT"`; onlyownP3programs, no overlappingP3live/SB.
+
+LiveP3 owns HOME6.5,67,82.5/HP2.166664food17EMPTY, latestdirect10997 20:47:39–41all7false/no goal/window/7full3partial. Bedfoot6,67,83+head7,67,83 facingEAST bothactual45:26, floorCOBBLE66, abovehead7,68,83AIR. LIVEbedUNTOUCHED. No physicalqueue/courierretry. Prioriter24foodcourierFAILED3deaths stillretired.
+
+ActualP3keptcontributions: (1) historicalAIRguardfailurediagnosis→KEEPguard+BELOW adoptedLIVE10871 lower3retaineduse2m52.606 inside5min, lateractualEnd10910/retainedbridge10912, thenSEPARATEringdeathlostkit; (2) dirtyhandgridputAway4+ONEcraft adoptedLIVE10968 LOG2->1/PLANK6->10/gridempty/delayedPOST20:37:07.182, use2m14.182 within3min, exactP1ack. Moreactualreuse10986/caps10989. ADOPTION_LEDGER/GUARD_AUDIT/CRAFT_STATE_AUDIT rawsexact.
+
+Failures/limits: P1LIVE MAGICdeath20:30:22 after10947 damagedY61/openending4full/returnreusedHP<10guard; sourcecodeconflatesHP/time/dimension. P1independentlydiagnosedoverlapandreturnbeforeP3corroborations, noP3causalcredit. No crystal/dragoncontact/damage verified. Boss fraction1/isDragonBarNUMERIC2 actualP2observerLIVE10910; noexclusiveP3listenercredit. ParenttrialSB_G3#26failedapproach/diedbeforeATTACK_ATTEMPT; methoduntested, notimpossible.
+
+OpeningownEVAL0/11/177SAVEFAILED,lastsaved. LatestP1eval20:46 saved0/11/178SAVEFAILED/lastsaved (notownfreshread). OnecanonicalnewLIVEP1death. RunownclosingEVALandlabelsavefailure/staleness; aftercrediblelivedragoncompletionrunimmediatelytoo.
+
+P1operatorresumed~20:45 lostarenaidentitylock despiteEAT_ROLE completion_owner; normalp1LIVE/SB/say REFUSEDbeforeexecution20:44:45/45:02. Toolreadrecords/statusworks. **Do notplayp1/changeidentity/bypasslocks/server/tools.** P3observer/sayWORKS. P1currentunchangedOW11.33218,62,-25.50623/20HP20food/three10full10991, WOODpickwear1/COBBLE1/DIRT8/TABLE1/LOG1/STICK2/button1/saplings2. AdjacentSTONE12,62/63,-26 validlead, preparedstone_tools.js UNEXECUTED/refused. OldEndkitlost. P1maywriteownedhandoffbutcannotchat; readP1.mdresumeheader. P3relayedblocker10999; P2/P4aware.
+
+Bedclock OLD P2courier20:23:05->43:05 failed/retiredsourcegate25:01. P3SB_G3#21 donorbedpickup20:25:13 passed butneverLIVEtransfer/adoption; gainsdiscardedbyG4reset. NEWP1directrecipientbedclock explicitly20:30:22respawn->**20:50:22** actualuseinclprep agreed38:08. **MISSED**, nobedreceipt/use/homearrival, LIVEbedintact; no rollingstart. No currentbeddeliverytaskselected. Recipientselfvisiblepickup/capacceptableifnewactualarrival/wholebudgetselected, donor-tossnotmandatory.
+
+Current **SANDBOX G25-4**, P2resetREADY20:38:21(start37:53). CopyP1oldtreeY69LOG1PLANK10 beforeliveTABLE/STICK/Y67/Y62; notmatchingcurrentbody. P3SBcopyEMPTY/bedintact; noG4P3program. G3P3bed1discarded. Historysurvivesresets, labelGENPERRECORD.
+
+P2ownsnormalp2play andselected<=3min G4drywoodapproach48:51->51:51 (changedfluid/settledfooting). SB#30 actualpartialplan to(-4,62,-25)REFUSEDbeforemovement/woodcut, returned/cappedoriginalfull20HP at50:14, SBempty/liveDIRT1. P3deliveredchangedendpointlead11005 at51:17: partialpathlast(-2.5,61,-22.5)→goalBLOCK(-3,61,-23), woodcenter(-5.5,63.5,-24.5) within4.5 (3.71/3.67 dualeyes) IFfreshcompleteDRYplan+actualsupport/cursor. Notphysicallytested/adoptedyet; original3mingatemissedat51:51, noautoextend. Goalreachnecessary, exacttrunkadjacentstanceunnecessary. P2ownmethod/selectionpredatesP3suggestion, nofalseattribution.
+
+P4ownsnormalp4play. G4SB#31 twoGRAVELwallcuts/stepintoformerwallcell succeededHP20, butdropsGRAVEL1+FLINT1 not2GRAVEL, returneastroomthenmaterialsealfailed(remainingheadAIR9/10). LIVEp4unchanged20HP/empty/twocell16outerfull. P4five-minledgequery49:51->54:51ongoing; no resetuntilP2/P4release. It isshallowledge, not40mdeep: modelroof28STONE/snow29/AIRabove. P3/P4/P2eachonlyownassignedbody; no replacementP1operator.
+
+OnlyeditP3.md andp3/iter25. CurrentmainP3summary+appends needkeepfresh; exactsources/rawsallowned. Lastkeptcommit5f082647 plusuncommittedrecentownership/clock/sourcefindings—checkpointthem. No remote push. Forbiddenexcluded17–19/clientmappings/internet/rawpackets/throughblock/reachbypass/.work/tools/serverfiles; neverreadothersunsafelegacybroadsearch. Program.mdFULLandrequiredpeer/openingnotesalreadyread. No needre-readoldlongjournals unlessexactnewdependency.
