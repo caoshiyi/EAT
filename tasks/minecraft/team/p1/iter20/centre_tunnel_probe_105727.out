@@ -1,0 +1,9 @@
+program #9505 on p1: 5 s
+--- output ---
+STEP 47 1 11.29306697845459
+END {"phase":"PARTIAL","index":2,"total":54,"moved":[[47,1]],"cuts":[{"p":{"x":47,"y":51,"z":1},"ray":{"p":{"x":47,"y":51,"z":1},"face":2,"intersect":{"x":47.35226413419679,"y":51.829078596712016,"z":1}},"tool":"wooden_pickaxe"},{"p":{"x":47,"y":50,"z":1},"ray":{"p":{"x":47,"y":50,"z":1},"face":2,"intersect":{"x":47.35226413419679,"y":50.85945749909308,"z":1}},"tool":"wooden_pickaxe"}],"p":{"x":47.485818878031246,"y":50,"z":1.3295305714495367},"hp":11.29306697845459,"food":16,"floor":"end_stone","roof":"end_stone","inventory":[["book",3,null],["wooden_pickaxe",1,14],["blackstone",1,null],["cobbled_deepslate",3,null],["end_stone",1,null]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (47.5, 50, 1.3) in the_end, health 11.3/20, food 16/20, alive

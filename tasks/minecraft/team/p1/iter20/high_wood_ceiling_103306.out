@@ -1,0 +1,19 @@
+program #9440 on p1: 19.7 s
+--- output ---
+CUT_PRE Vec3 { x: 144, y: -32, z: 2231 } Vec3 { x: 144, y: -32, z: 2231 } 0
+CUT_PRE Vec3 { x: 144, y: -32, z: 2232 } Vec3 { x: 144, y: -32, z: 2232 } 0
+CUT_PRE Vec3 { x: 145, y: -32, z: 2231 } Vec3 { x: 145, y: -32, z: 2231 } 0
+CUT_PRE Vec3 { x: 145, y: -32, z: 2232 } Vec3 { x: 145, y: -32, z: 2232 } 0
+CUT_PRE Vec3 { x: 146, y: -32, z: 2231 } Vec3 { x: 146, y: -32, z: 2231 } 0
+CUT_PRE Vec3 { x: 146, y: -32, z: 2232 } Vec3 { x: 146, y: -32, z: 2232 } 0
+END {"p":{"x":144.5,"y":-35,"z":2231.4992621036645},"hp":11.29306697845459,"cuts":[{"x":144,"y":-32,"z":2231},{"x":144,"y":-32,"z":2232},{"x":145,"y":-32,"z":2231},{"x":145,"y":-32,"z":2232},{"x":146,"y":-32,"z":2231},{"x":146,"y":-32,"z":2232}],"inv":[["cobbled_deepslate",11,null],["stone_sword",1,0],["book",3,null],["tuff",16,null],["blackstone",1,null],["stone_pickaxe",1,48],["oak_planks",3,null]],"items":[{"id":9500,"p":{"x":146.08375459401034,"y":-33,"z":2233.6853015930424},"metadata":[null,null,null,null,null,null,null,null,{"present":true,"itemId":36,"itemCount":1}]},{"id":9510,"p":{"x":146.875,"y":-33,"z":2231.248284502975},"metadata":[null,null,null,null,null,null,null,null,{"present":true,"itemId":36,"itemCount":1}]}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: Actual9432 localstandchange1372231 foundLOWER137,-36 andUPPER137,-31,2230 directTOP/BOTTOM, handcut2→ordinaryPLANK2→STICK4 HP10.55. HeldDOWN+birth+retreat9435 nowitem9212 STICK4 at137.719,-36,2231.499, donorP2empty140.5. P1alonewalk138.5/137.7 toordinarypi
+p2: ckup; P4stay>=140 untilreceipt. Whole10:29→10:31 MISSEDdelivery (drop10:31:24), no renewedclock/no sourcequeue. Exactitemcoordinate, notold143.
+p2: Independent#9434 audit qualifiesnormaladjacentCLIMB+2cellwalk: exactvisibleupperbookshelf1412232cuts only, feet-36→-35 TABLE→-35 BOOKSHELF→-36 return, everyground/HP20/XYvel0. LoanDEEP2stillordinary, so no newadjacentSTEPplacement executedinthiscall; Endmu
+p2: stobserveactual2targets/bodyclear/floorreceipt. No additionalapprovalgate fromthislimit; actualcloneofsuccessfulstepclimb supportschangedhypothesis, cloud-hitdriftstilluntested.
+p2: EVIDENCE10:33 objectivelegaldragondefeat: officialsavewarningdragon0/11 deaths135 (p138/p240/p326/p431); newestfield9413 failedunderfootrise+P4VOID, no bridge/native/damage. Changedassumption acceptedadjacent2celllanding/normalclimb thenfeet50route; OWclim
+p2: b9434physicalHP20/ground, Endcloudresponseuntested. P2newSTICK4 actualflooritem9212 at137.7192231.499 pendingP1receipt, budgetmiss preserved. No newsourcequota; nextfieldwholedeadline10:34 likelymiss ifnotlaunched, reportpartialhonestly.
+--- p1 now: (144.5, -35, 2231.5) in overworld, health 11.3/20, food 17/20, alive
