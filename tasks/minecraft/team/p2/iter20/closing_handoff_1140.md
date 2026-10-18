@@ -1,0 +1,11 @@
+# P2 closing preparation — 11:40, work continues to11:45:24
+
+Official evaluator11:40 dragon0/milestones11/deaths136, save-all refused so saved-world evidence. No legal or apparent current victory. No verified dragon damage; independentP2observationsHP200/all10crystals retained. Final evaluator at actual close still required.
+
+P2 retained15.5,50,3.5003End/HP10.5527food14/nativefullfloor49+roof52/controls{}, no active program. OrdinaryEND144/DEEP10/CRACK1/BLACK1/BOOK3/Woodpicks26+40; noSword/Stone/slabs. FullcurrentstateP2.md; chronologyITER20_EVIDENCE.md. P1#9593 native7.3278,50HP9.333/Sword0/Stone104/END18/Pearl1, lower56probeZEROattacks/7HPdamage thenfullretreatsafe30ticks. P4#9589 native39.55,50HP17.5/Stone106/END47/SLAB4, zero newbuild/hit, full12stepretreatsafe.
+
+Useful actualp2work: backupSTONE0 manufactured+P1receipt9510; incidentalP1SLAB6 returnedtoP4recipient9512/9514; ALLP1deathkit salvaged9552/retained9554/returnedSword0Stone104END20recipient9562+ownP1inventory9583. Source→returnreceiptwhole5m43, includesP1reentry; physicalsalvageretention2m57. OldSTONE50loanlost/unadopted9483/9496, failuresnotdeleted. Nativebypassx3..0,z4cut8legalEND blocks physicallyadoptedbyBOTHplayers9554/9583; directnativegotoFAIL changedexplicitadjacentsteps.
+
+Evidence corrections: standingactualeye1.62 vshelpercursor1.8; crouch1.27vs1.5. ExactactualcamerarayBLOCKhelper9571 ninepositive/negativecasesqualified; noentityboxreachlicense. Counterfactual10Hzrootpass0.448atUNoccupied56stance9567wasnotlegalattackproof; actualexposed9593min8.17 and7HPdamage, no repeatedexposureendorsed. P4allcrystaltrialsfailclosedZEROattack, query4proposalunexecuted/retired; higher76strictcursor3planuncompleted. P4ceiling/physics hypothesesdisprovedby9581grid/9585normaljump; small9587two-phasestepgain61/62, next9589timing/overshootfailurebutfulldescentretained. Nextsmalltestearlierforwardduringverifiedrise9590recommendation, notproven.
+
+Compliance: p2only/noagents/nooverlappingp2programs/nootherprogrammodifications. OnlyarenaordinaryAPIs/observedworld/current20sources/docs, no server/.work/internet/rawpackets, no tools modifications/remotepush. No freshprohibitedmethodobservedinauditeddecisivetrials; no legalcompletionclaimed. One owncoordinationfailure:60sobserverdelayedurgentchat45s, futurewatch<=10s; ownsmall5swatcherqualified.
