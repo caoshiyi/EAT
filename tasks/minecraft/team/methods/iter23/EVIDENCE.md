@@ -1,6 +1,6 @@
 # Final current evidence ledger — 2026-10-18T17:46:05.222341+00:00
 
-Latest independent evaluator17:42:45UTC: **dragon0, milestones11, deaths172** (61/47/26/38), programs10485. SAVEFAILED: last-saved world. Arena confirms two P2 deaths17:06:31/Zombie and17:12:14/Skeleton. No new End/dragon effect.
+Latest independent evaluator17:54:01UTC: **dragon0, milestones11, deaths172** (61/47/26/38), programs10485. SAVEFAILED: last-saved world. Arena confirms two P2 deaths17:06:31/Zombie and17:12:14/Skeleton. No new End/dragon effect.
 
 | Actor / result | Verified evidence | Limit |
 |---|---|---|

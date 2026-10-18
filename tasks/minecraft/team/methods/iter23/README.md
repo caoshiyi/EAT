@@ -1,6 +1,6 @@
 # Methods handoff — 2026-10-18T17:46:05.222341+00:00
 
-Independent review is complete/committed; latest [ITER23_REVIEW.md](../../ITER23_REVIEW.md) and [EVIDENCE.md](EVIDENCE.md) supersede old actor snapshots. Saved score17:42:45: dragon0/11milestones/172deaths, SAVEFAILED; two P2 deaths. P1 is retained atNether(-53.50005,8,63.52457),HP3/food16 with bothpicks/materials, not LOW traversal/End access. P2/P4 retained in their separate OW rooms; P3 unplayed.
+Independent review is complete/committed; latest [ITER23_REVIEW.md](../../ITER23_REVIEW.md) and [EVIDENCE.md](EVIDENCE.md) supersede old actor snapshots. Saved score17:54:01: dragon0/11milestones/172deaths, SAVEFAILED; two P2 deaths. P1 is retained atNether(-53.50005,8,63.52457),HP3/food16 with bothpicks/materials, not LOW traversal/End access. P2/P4 retained in their separate OW rooms; P3 unplayed.
 
 Working capabilities, with limits:
 
