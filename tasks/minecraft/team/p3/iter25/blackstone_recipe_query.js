@@ -1,0 +1,6 @@
+// P3 LIVE runtime API only, no craft/interaction/movement. recipesAll doesn't require bag materials.
+const V=bot.entity.position.constructor,table=bot.blockAt(new V(6,66,82));
+if(bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(new V(6.5,67,82.5))>.05||table?.name!=='crafting_table')throw Error('source/table changed');
+const id=bot.registry.itemsByName.stone_pickaxe.id,name=t=>bot.registry.items[t]?.name??t;
+const rs=bot.recipesAll(id,null,table).map(r=>({result:r.result,inShape:r.inShape?.map(row=>row.map(i=>i&&({id:i.id,name:name(i.id),count:i.count,metadata:i.metadata}))),ingredients:r.ingredients,delta:r.delta?.map(i=>({id:i.id,name:name(i.id),count:i.count})),requiresTable:r.requiresTable}));
+return{at:new Date().toISOString(),hp:bot.health,food:bot.food,p:bot.entity.position.clone(),inv:bot.inventory.items().map(i=>[i.name,i.count]),recipeCount:rs.length,recipes:rs,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<16).map(e=>({p:e.position.clone(),item:e.getDroppedItem?.()?.name,count:e.getDroppedItem?.()?.count})),warning:'Recipe API/model only; no production, ingredient receipt, expiry mechanism or recipient adoption claimed.'};

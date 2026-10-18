@@ -1,0 +1,288 @@
+program #11079 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T21:44:27.051Z",
+ "hp": 2.1666641235351562,
+ "food": 17,
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "inv": [],
+ "recipeCount": 3,
+ "recipes": [
+  {
+   "result": {
+    "id": 821,
+    "metadata": null,
+    "count": 1
+   },
+   "inShape": [
+    [
+     {
+      "id": 35,
+      "name": "cobblestone",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 35,
+      "name": "cobblestone",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 35,
+      "name": "cobblestone",
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ]
+   ],
+   "ingredients": null,
+   "delta": [
+    {
+     "id": 35,
+     "name": "cobblestone",
+     "count": -3
+    },
+    {
+     "id": 844,
+     "name": "stick",
+     "count": -2
+    },
+    {
+     "id": 821,
+     "name": "stone_pickaxe",
+     "count": 1
+    }
+   ],
+   "requiresTable": true
+  },
+  {
+   "result": {
+    "id": 821,
+    "metadata": null,
+    "count": 1
+   },
+   "inShape": [
+    [
+     {
+      "id": 1216,
+      "name": "blackstone",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 1216,
+      "name": "blackstone",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 1216,
+      "name": "blackstone",
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ]
+   ],
+   "ingredients": null,
+   "delta": [
+    {
+     "id": 1216,
+     "name": "blackstone",
+     "count": -3
+    },
+    {
+     "id": 844,
+     "name": "stick",
+     "count": -2
+    },
+    {
+     "id": 821,
+     "name": "stone_pickaxe",
+     "count": 1
+    }
+   ],
+   "requiresTable": true
+  },
+  {
+   "result": {
+    "id": 821,
+    "metadata": null,
+    "count": 1
+   },
+   "inShape": [
+    [
+     {
+      "id": 9,
+      "name": "cobbled_deepslate",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 9,
+      "name": "cobbled_deepslate",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 9,
+      "name": "cobbled_deepslate",
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ],
+    [
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": 844,
+      "name": "stick",
+      "count": 1,
+      "metadata": null
+     },
+     {
+      "id": -1,
+      "name": -1,
+      "count": 1,
+      "metadata": null
+     }
+    ]
+   ],
+   "ingredients": null,
+   "delta": [
+    {
+     "id": 9,
+     "name": "cobbled_deepslate",
+     "count": -3
+    },
+    {
+     "id": 844,
+     "name": "stick",
+     "count": -2
+    },
+    {
+     "id": 821,
+     "name": "stone_pickaxe",
+     "count": 1
+    }
+   ],
+   "requiresTable": true
+  }
+ ],
+ "items": [],
+ "warning": "Recipe API/model only; no production, ingredient receipt, expiry mechanism or recipient adoption claimed."
+}
+--- chat since this player's previous program ---
+p2: Actualkitpickup was NOT executed beforeusual39:20expiry; no recoverycredit. Newbody20HPstill57. Changedreuse retainedsourceTABLE6,68,-31 andremaininghigherlogs now, smallactualtoolset rather thanwholeSTONEquarry. P3<=1min please runtimeBLACKSTONE3+STICK2 S
+p2: TONEpick recipe query (no production), plusfreshHOMEitemscan toconfirmexpired/not. Sourcecapwillbe PLANK if noDIRT, mustbeactualinP3custodybeforebedbreak peryournewrequirement. OnlyP2programs, no P1workaround.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive
