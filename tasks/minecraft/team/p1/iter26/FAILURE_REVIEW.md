@@ -15,3 +15,7 @@ Whole bed transfer23:30 missed and retired. Original22:22/22:32/22:47 gates all 
 
 ## Operational lessons
 Read actual endpoint immediately; a program returning and printing TERMINAL does not imply closure. Own serial runner rejects FAIL and endpoint health loss, but cannot substitute for safe in-program exception semantics. Keep public arena records and raw outputs as evidence; preserve failed caller independently of successful cleanup. Do not repeat kit preparation after access/life dominates and the whole-operation gate is gone. P2's independent protected live End access23:32:42.402 is useful and not P1 progress; P2 owns all subsequent actions.
+
+## 23:43 follow-up evidence and uncertainty
+Actual11387 terminal roof(0,56,-30) WAS dirt.11402 sixminuteslater rejected name!='dirt', but DID NOT LOG actual failed material. Therefore why exact-name admission failed is UNKNOWN: do not assert grass growth, broken roof or geometry shift without a fresh relevant observation. Cleanup unnecessarily dug3 despite source admission failure; safer future recovery must first audit current full ending and retain it when already protected.
+G3#126 higher64stance failed candidatewait90s but retained61/THREE10FULL18.778HP. It emitted NO public position sampling, so no new trajectory reason can be inferred. B live11437 uses changed fresh rings plus actual trace; current20HP at64, not yet an attack result.
