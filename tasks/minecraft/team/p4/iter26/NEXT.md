@@ -1,3 +1,5 @@
+UPDATE23:25 own latest LIVE11383 read-onlyspawn96bedcensus0parts/bodyunchanged; deliveredactualdecision11384. Receipttool nowexplicitfailuremarkers+boundarylogs, actualsmokes113/73passed. OPERATIONAL_LESSONS.md added. Newwatch session13569 readonly50s started~23:25; poll viawrite_stdin, no physicalprogramactive.
+
 CURRENT23:22: P4.md and ITER26_REVIEW.md have freshly rewritten complete provisional. READ THEIR CURRENT HEADS FIRST; historical notes below are superseded. G26-3 active; P1 LIVE Piglin death23:16:50, currentlyrespawnempty/lateststatus8.3HP. P2 LIVE healthyOWL20HP frozen; G3#113 partialfountaintunnel failure/cleanupfull at5.5,50,3.5/18.778HP. Bedpackage delivered20:28, realbeduntested. OwnP4 bothworldsoriginal20empty/idle, allmutationswrapper. Final23:46–51, evalclosure required, doNOTendearly. Latestowned427b4c49, newbed/reviewfilesneedcommit.
 
 # Resume iteration26 / P4 —22:44 UTC

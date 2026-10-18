@@ -21,16 +21,27 @@ for chunk in chunks:
   if t.startswith(('{','[')):
    try:parsed=json.JSONDecoder().raw_decode(t)[0]
    except json.JSONDecodeError as e:returnError=str(e)
- last=None;lastName=None
+ last=None;lastName=None;signals=[];boundaryLogs=[]
  for line in chunk.splitlines():
+  token=line.split(" ",1)[0]
+  if re.fullmatch(r"[A-Z][A-Z0-9_]*",token) and re.search(r"FAIL|ERROR|REFUS|PAUSED",token):
+   signals.append({"marker":token,"line":line[:600],"lineTruncated":len(line)>600})
   m=re.match(r'^([A-Z][A-Z0-9_]*) (\{.*\})$',line)
   if not m:continue
   try:v=json.loads(m[2])
   except json.JSONDecodeError:continue
+  faces=v.get("faces",v.get("cells",v.get("shell"))) if isinstance(v,dict) else None
+  if isinstance(faces,list) and faces and all(isinstance(w,dict) and ("full" in w or "unitFull" in w) for w in faces):
+   boundaryLogs.append({"marker":m[1],"at":(slim(v) or {}).get("at"),"count":len(faces),"trueFull":sum(w.get("full",w.get("unitFull")) is True for w in faces)})
   z=slim(v)
   if z and ('hp'in z or 'health'in z or 'p'in z):last=v;lastName=m[1]
  result={'input':str(f),'env':a.env,'generation':a.generation,'player':a.player,'recordId':int(h[1]),'exactHeader':h[0],'returnSectionPresent':bool(ret),'parsedReturnState':slim(parsed),'returnParseError':returnError,'lastStructuredLogMarker':lastName,'lastStructuredLogState':slim(last)}
  if isinstance(last,dict):
   faces=last.get('faces',last.get('cells',last.get('shell')))
   if isinstance(faces,list):result['lastLoggedBoundaries']={'count':len(faces),'trueFull':sum(v.get('full',v.get('unitFull')) is True for v in faces if isinstance(v,dict))}
+ result["explicitOperationSignals"]=signals[:20]
+ result["explicitOperationSignalCount"]=len(signals)
+ result["boundaryLogRows"]=boundaryLogs[-10:]
+ result["boundaryLogCount"]=len(boundaryLogs)
+ result["interpretation"]="Exact printed signals and boundary logs only; a retained ending does not erase an earlier failed operation. No inferred gameplay ending."
  print(json.dumps(result,indent=2))
