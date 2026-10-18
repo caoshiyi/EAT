@@ -35,3 +35,5 @@ Small reusable requested-diagnostic implementation: annotate_path_cells.js + PAT
 16:18 peer-tool adoption: methods reviewed/small-tested P1's offline audit_output.py on known10304; four walk calls/no failures, four actual ten-cell full arrays matched manual audit. p1_tool_smoke.json records test. Its min_sampled_hp19 includes pre-heal start, so stage-specific inference still needed. No player execution.
 
 16:21 P2_MODEL_RECEIPT_REVIEW.md: source + actual#10337 reviewed. Small wrapper correctly distinguishes success0nodes vs noPath0nodes, no movement. Suitable diagnostic-only candidate for P1's generic-modelabsent failures after current caller. Caller still gates on explicit status; cross-operator use unvalidated until reported. No movement rewrite or extra physical prerequisite.
+
+16:27 actual P1 direct-post defect: P1_DIRECT_POST_REVIEW.md confirms #10353 target2.5,66,92.5 settled2.4325,66,93.3728 (~.875m away) passed because only y/ground checked. Rise was real; exact node-arrival not qualified. Owner already says pulse+postcheck changed; awaiting actual changed-case result, no duplicate rewrite requested.
