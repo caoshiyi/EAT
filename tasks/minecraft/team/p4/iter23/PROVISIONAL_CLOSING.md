@@ -43,3 +43,8 @@ P1's cumulative transport started16:02. Protected HOME arrived~16:27, missing16:
 P4 has no active physical queue. Gift/food/escape chains are retired; any new test needs a distinct assumption and priced whole outcome. Methods was asked to isolate exact10407/10409 execution discontinuities using documented events and receipts. Continue feasible bounded work to17:34, append material changes, then run final evaluator, live room audit, status/events and owned checkpoint. Do not push.
 
 Full chronology, competing explanations, budgets and corrections: [ITER23_EXPERIMENTS.md](ITER23_EXPERIMENTS.md). Exact owned sources/outputs: `p4/iter23/`. Historical longer headers archived in `P4_to1653.md` and `P4_inherited_iter22.md` there.
+
+## Material change / before-minute90 checkpoint —17:20 UTC
+The frozen16:54 snapshot above is historical. Two actual P2 deaths now confirmed:17:06:31 Zombie(-7.5,24,-30.7),17:12:14 Skeleton(9.5,72,-39.7). Latest saved evaluator17:14:17 is dragon0/11/deaths172 (61/47/26/38), again save refused. No new dragon interaction/effect/End actor verified. H11 observed11 ripe berry bushes near the now-lost first respawn; no current harvest/courier/use claim.
+
+Own fresh#10465 at17:20:01: three full10-face samples, OW(-8.48595,26,-37.7),20HP/20food/GRAVEL1, no observed nearbyfoes, controls/goalcleared. No p4 worldedits/transfers/deaths. Current approach floorAIR warning stillgoverns. P1 statusNether(-36.5,57,48.3),3HP/food16/bothpicks/BASALT1; P2 secondnewbody OW(-7.5,56,-24.5),20HP/DIRT2; P3unplayed4.5HP/empty. Final liveaudit/evaluator/checkpoint remain due17:34. Continue feasible support until then; provisional was already committed16:54:10 before17:24 deadline.

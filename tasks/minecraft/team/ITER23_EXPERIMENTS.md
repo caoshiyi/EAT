@@ -115,4 +115,10 @@ H11 body scope superseded: P2secondDEATH17:12:14 Skeleton(9.5,72,-39.7), indepen
 
 17:11:54 liveP2HP8.7/food17/empty capturedbeforeseconddeath; urgent10454at17:12:21 reiteratedimmediateclosure. Causewasnotinferredfromthatstatus; subsequentcanonicalSkeletoneventgoverns. P4cannotcontrolanotherbody. Ownfullrefuge/20HP/GRAVEL1retained.
 
+17:14:17 evaluator SAVED0/11/deaths172 (61/47/26/38), SAVEFAILED, programs10458. This supersedes earlier171score; currentobjectiveunmet. P4currenthandoff45fbc914 includesbothdeaths/H11lostbodylimits; originalprovisionald63c6096 remainsdatedearlycheckpoint, notfinal.
+
+17:16:26 lead requested prospective P1 use of combat_recorder_fragment beforeEndaction. Actualintegration/use pending; no Endbranchqualification. Follow-up reminder: default60sautostop mustcoveractualcaller, markbefore/afteraction andcheck elapsed/reason/polls/missingDragon beforeclaimingactionwindow; stopfinally. No instrumentationsourcechain or Endsuccessclaimed.
+
 16:29: actual P1#10359 home_native_room_finish.out fullyread: sixDIRECT_POST HP20 andfourHOME_FULL all10true+terminalfull, realnearHOMEbody6.5748,64,97.497. This usedP1originalSIDEroom6,64,97, notmyofferedunderfootbore5,62,97, so noownH4physicaladoptioncredit. Lead previouslycalledurgentgeometryuseful; literalrecipientuseofownhelperstillunverified.
+
+17:20:01 before-minute90 refresh: actualP4#10465 threefull10face samples20HP/20food/GRAVEL1/nofoes, no ownworldchanges/deaths. P1statusnowNether(-36.5,57,48.3)/3HP16food/BASALT1+bothpicks; do not infercallercompletionfromstatus. P2secondnewbodyOW(-7.5,56,-24.5),DIRT2/20HP, no oldstock. FrozenPROVISIONAL_CLOSING receivedmaterialoverride; final17:34checks stillpending.
