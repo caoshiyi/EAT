@@ -1,0 +1,578 @@
+program #9837 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "stance": {
+  "x": 4.3,
+  "y": 59,
+  "z": 2.7
+ },
+ "aims": [
+  {
+   "aim": {
+    "x": 3.99,
+    "y": 60.36,
+    "z": 1.81
+   },
+   "real": {
+    "clear": true,
+    "max": 0.9776502442080189
+   },
+   "model": {
+    "clear": true,
+    "max": 0.9776502442080189
+   },
+   "length": 0.9776502442080189
+  },
+  {
+   "aim": {
+    "x": 3.99,
+    "y": 60.4,
+    "z": 1.81
+   },
+   "real": {
+    "clear": true,
+    "max": 0.9677809669548164
+   },
+   "model": {
+    "clear": true,
+    "max": 0.9677809669548164
+   },
+   "length": 0.9677809669548164
+  },
+  {
+   "aim": {
+    "x": 3.99,
+    "y": 60.46,
+    "z": 1.81
+   },
+   "real": {
+    "clear": true,
+    "max": 0.9559288676465414
+   },
+   "model": {
+    "clear": true,
+    "max": 0.9559288676465414
+   },
+   "length": 0.9559288676465414
+  }
+ ],
+ "cells": [
+  {
+   "p": [
+    3,
+    59,
+    0
+   ],
+   "n": "bedrock",
+   "sh": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": [
+    3,
+    59,
+    1
+   ],
+   "n": "bedrock",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    3,
+    59,
+    2
+   ],
+   "n": "end_stone",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    3,
+    60,
+    0
+   ],
+   "n": "air",
+   "sh": []
+  },
+  {
+   "p": [
+    3,
+    60,
+    1
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    3,
+    60,
+    2
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    58,
+    2
+   ],
+   "n": "end_stone",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    59,
+    2
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    60,
+    2
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    59,
+    1
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    4,
+    60,
+    1
+   ],
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": [
+    2,
+    60,
+    0
+   ],
+   "n": "end_stone",
+   "sh": "[repeated reference]"
+  }
+ ],
+ "route": [
+  {
+   "feet": [
+    7,
+    50,
+    3
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    3,
+    50,
+    3
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    3,
+    50,
+    4
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    2,
+    50,
+    4
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    1,
+    50,
+    4
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    0,
+    50,
+    4
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    0,
+    50,
+    3
+   ],
+   "cells": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    1,
+    51,
+    3
+   ],
+   "cells": [
+    {
+     "y": 50,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    2,
+    52,
+    3
+   ],
+   "cells": [
+    {
+     "y": 51,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 53,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    3,
+    53,
+    3
+   ],
+   "cells": [
+    {
+     "y": 52,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 53,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 54,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    4,
+    54,
+    3
+   ],
+   "cells": [
+    {
+     "y": 53,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 54,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 55,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    5,
+    55,
+    3
+   ],
+   "cells": [
+    {
+     "y": 54,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 55,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 56,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    6,
+    56,
+    3
+   ],
+   "cells": [
+    {
+     "y": 55,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 56,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    6,
+    57,
+    2
+   ],
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    5,
+    58,
+    2
+   ],
+   "cells": [
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "feet": [
+    4,
+    59,
+    2
+   ],
+   "cells": [
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 60,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  }
+ ],
+ "p2": {
+  "x": 33.5,
+  "y": 50,
+  "z": 3.4995579375119834
+ },
+ "hp": 10.55274772644043,
+ "warning": "COUNTERFACTUAL: no bed placed. Slab shape hypothetically planned only; no actual-camera, placement, bed hit, explosion-cover, or survival proof. All actual interactions require owner fresh block/camera/reach checks."
+}
+--- chat since this player's previous program ---
+p1: 9829 FIXEDroom148,-34,2252 actuallyreached20HP butcurrentmobsgone6m ->ZEROattacks/ammo. ReversebreadcrumbYroundedbeforehalfstairsettled gavefalse149,-34 vsactual-34.5 stop; now149.472,-34.5,2251.677 HP20 nohits. Retirethismob-path method; no moreammochase.
+p1:  ActualloanPick25+TUFF4 received9829 despiteoldcancel/12:41miss; nofloorcuts/use. P1 now normalfixedstairs/portal→Endstaging forONEBEDactualuse; oldbow11:54sourcefailed/no firstflight12:40, BowP4retainedfutureasset. P2 requestreadonly97bridge/78door/clouds
+p1: +bedcandidate by12:49 enablesactualP1reentry/use. P4onebed12:53wholeunchanged, actualDragonprimarynext.
+--- p2 now: (33.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive

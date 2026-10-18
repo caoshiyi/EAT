@@ -1,0 +1,28 @@
+program #9821 on p2: 0.2 s
+--- output ---
+POSITIVE {"ticks":0,"p":{"x":33.5,"y":50,"z":3.4995579375119834},"ground":true,"hp":10.55274772644043,"velocity":{"x":0,"y":-0.0784000015258789,"z":0}}
+NEGATIVE_EXPECTED Error: SETTLE_TIMEOUT {"expectedY":51,"p":{"x":33.5,"y":50,"z":3.4995579375119834},"ground":true,"hp":10.55274772644043,"velocity":{"x":0,"y":-0.0784000015258789,"z":0}}
+--- returned ---
+{
+ "before": {
+  "p": {
+   "x": 33.5,
+   "y": 50,
+   "z": 3.4995579375119834
+  },
+  "hp": 10.55274772644043
+ },
+ "after": {
+  "p": {
+   "x": 33.5,
+   "y": 50,
+   "z": 3.4995579375119834
+  },
+  "hp": 10.55274772644043,
+  "ground": true,
+  "controls": {}
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (33.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
