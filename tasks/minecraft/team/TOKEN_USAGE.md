@@ -72,3 +72,5 @@ Token usage: unavailable from an authorized available source. No estimate inferr
 
 ## Iteration26 P3 minute60 —2026-10-18 23:02 UTC
 Token usage: unavailable from an authorized available source. No estimate.
+
+Iteration26 P3 pre-minute90 (2026-10-18 23:29 UTC): unavailable. No authorized token-usage source is exposed; no inferred token count recorded.
