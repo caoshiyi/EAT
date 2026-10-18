@@ -1,7 +1,7 @@
 """Compact read-only summaries of preserved team arena records; never runs players.
 Empty failureLabels is not a pass. Inspect actual terminal state and raw record.
 """
-import argparse, json
+import argparse, json, re
 from pathlib import Path
 p=argparse.ArgumentParser()
 p.add_argument("files", nargs="+")
@@ -16,7 +16,7 @@ for name in a.files:
     for line in raw.splitlines():
         if line.startswith(("== #","program #","[sandbox] program #")):
             headers.append(line)
-        if line.startswith(("FAIL ", "CLOSE_FAIL ", "SNOW_TRIAL_FAILURE ", "CAP_FAILURE ", "BED_FAILURE ")):
+        if re.match(r"^(?:[A-Z][A-Z0-9_]*(?:FAILURE|FAIL)\b|FAIL\b|(?:Error|TypeError|ReferenceError|SyntaxError):)", line):
             failures.append(line)
         if line.startswith(("TERMINAL ", "FULL_AUDIT ", "ENDING ")):
             tag,payload=line.split(" ",1)
