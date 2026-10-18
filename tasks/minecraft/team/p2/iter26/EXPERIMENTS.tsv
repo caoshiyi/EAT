@@ -5,3 +5,21 @@ time_utc	env	program	result	detail
 22:05	SB_G26-1	source_return	RUNNING	changed axis return waypoints; separate recovery, not retroactive #40 completion
 22:05:14-22:05:22	SB_G26-1	42	PASS_SEPARATE_RECOVERY	axis return, pillar4, STONEpick1, tenFULL HP20; not retroactive40success
 22:05:48-22:06:11	LIVE	11123	PASS	corrected complete source script actual COBBLE3->STONEpick1, HP20 three tenFULL ending
+22:06:24-22:07:29	SB_G26-1	46	PASS	gallery COBBLE24 then SWORD1/spareSTONEpick1/COB19; THREE10FULL20HPsource66
+22:07:34-22:07:56	SB_G26-1	48	FAILED_ENDING	ordinary no-dig native moved~30mHP20; stalled near-.5,66,-2.5; refuge roof-first noanchor failure
+22:08:23-22:08:24	SB_G26-1	50	FAILED_ENDING	changed sides-before-roof placedtwofootcaps, northfoot noanchor; partial20HP; change refuge admission to neighboring floor support
+22:08:43-22:09:48	LIVE	11147	PASS	gallery adopted actualCOB24/SWORD1/twoSTONEpick/COB19/PLANK2/STICK1/THREE10FULL20HP
+22:09:48	LIVE	11155	PASS_WRAPPER_SMOKE	ordinary observer serialized wrapper; exact raw saved
+22:10:24-22:10:59	SB_G26-1	54	ACCESS_ONLY_FAILED_ENDING	nativecanDig reached OWportal20HP; capportal refused; later transition aftercaller, own55 verifiedNether20HP
+22:12:08-22:12:16	SB_G26-1	56	FAILED_ENDING	Nether intake goal0,67,8 stalled on roof; refuge failed sideanchor; HP20
+22:13	SB_G26-1	58	ERROR_MODEL_SERIALIZATION	localblocks printed; JSON full pathplan circularEntity error; no physical action; changed to small fields only going forward
+22:13:40-22:13:42	SB_G26-1	61	FAILED_SETTLE	cut floor2,66,4 actualCOB1, body stillsupported bysouthneighboroverlap; no downwardmove
+22:14:16-22:14:21	SB_G26-1	63	PASS_SEPARATE_RECOVERY	ordinary recenter dropped66, secondfloorcut65, actualintake1,65,4 recappedE2walls/THREE10FULL20HP
+22:14:46-22:15:21	LIVE	11180	FAILED_ROUTE_RETAINED_REFUGE	same surfacebottleneck at-.48,66,-2.17; NEWexcavationrefugeactualdown2 at-.494,64,-2.504/THREE10FULL20HP/kitretained
+22:16	LIVE	11189	PASS_READONLY_MODEL	freshsoilcolumns identify two-rise slope; changed to explicit4step stair method after2comparable route stalls
+22:17	LIVE	live_stair_to_nether	RUNNING	ordinary4step stair soil correction then nativeportal; inspectpostconditions before any newprogram/SAY
+22:16:50-22:17:01	LIVE	11196	PARTIAL_FAILED_FORWARD_RETAINED	soilSTAIR2 actual, thirdHEADoccluded byownroof; refugeTHREE10FULL20HP65,-1
+22:17:47-22:18:37	LIVE	11203	PARTIAL_FAILED_ENDING	changedclear-ownroofSTAIR4 success to69,3 thennative~70m; stalled70, refugewallsbutroofanchorabsent
+22:19:29-22:19:31	LIVE	11210	PASS_SEPARATE_RETENTION	actualP4jumpthirdwall/roofadoption, THREE10FULL20HP(-2.526,63,70.458), notretroactive11203ending
+22:21:58-22:22:36	LIVE	11220	PASS_LIVE_NETHER_ACCESS	actual8,65,83 arrival, UP3, x8 BASALTcorridor5cells, existingportal, own1,65,4 intakeEcut/recap/THREE10FULL20HP
+22:22:58	LIVE	11224	RELEASE	P2 releases G26-1 SB forcoordinatedG26-2, no active/dependency; allresults captured; freezelivecopy
