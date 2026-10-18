@@ -1,4 +1,4 @@
-# ITER24 completion plan — published 2026-10-18 18:02 UTC
+# ITER24 completion plan — published 2026-10-18 18:00:35 UTC
 Opening clock 17:59 UTC; minute20 18:19, minute40 18:39, provisional due19:29, continue through19:44 (105min) or verified legitimate victory.
 
 Objective: defeat the dragon through permitted survival play. Starting evaluator at17:59: dragon0, milestones11/12, deaths172, SAVE FAILED/last-saved-world. Fresh status alone matches inherited endpoints; current access is unqualified.
@@ -17,3 +17,5 @@ Independent uncertainty: can the currently retained P1 low endpoint enable an ac
 At20/40min explicitly check downstream adoption. After two comparable failures change material assumption/method. After timeout/error inspect current postconditions before retry. Support ends at adoption or retirement. No automatic four-player rebuilding. Fresh health loss overrides planning. Reserve actual ending time inside runtime. Every claim has observation time; correct owner journals on supersession.
 
 Read program.md fully; P1–P4, complete ITER23 review, recent evolution and historical headings surveyed. Full evolution archive is huge; no claim to have read truncated content. Iter17–19/excluded sources remain closed. No internet/mappings/decompilation/raw packets/through-block/reach bypasses. Only p2 controlled by lead; no agents spawned. Owned files only, no tools/server/.work edits or push. Evaluator at opening, credible completion, closure; failed saves explicit. Token usage unavailable from authorized available source.
+
+18:03 allocation correction: P3 already physically reached berries in-flight10516 when lead proposed near-P2 access. P2 duplicate supply/escape RETIRED after only small retained exit/return10519. P3 sole food harvest/use/courier owner; P2 independent adoption/caller checks, available physical role only for a distinct useful dependency. P4 one actual handSTONE negative-harvest test10512/fullending ends support until adopted or next actual route blocker. No invented simultaneous food producers. P1 actualentry10508 enabled20m10515 with terminal10full/HP3, independently checked.
