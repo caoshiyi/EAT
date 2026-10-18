@@ -1,0 +1,6 @@
+const V=require('vec3').Vec3;
+const targets=Object.values(bot.entities).filter(e=>e.name==='end_crystal').map(e=>({id:e.id,p:e.position.clone()}));
+function line(a,b){const d=b.minus(a),len=d.norm(),n=Math.ceil(len/.03),dir=d.scaled(1/len);for(let i=0;i<=n;i++){const q=a.plus(d.scaled(i/n)),p=q.floored(),bb=bot.blockAt(p);if(!bb)return{unknown:p};const v=q.minus(p);if(bb.shapes.some(s=>v.x>=s[0]&&v.x<=s[3]&&v.y>=s[1]&&v.y<=s[4]&&v.z>=s[2]&&v.z<=s[5]))return{hit:p,n:bb.name,distance:i/n*len};}return{clear:true,len};}
+const stances=[84.5,86.5,89.5,92.5,95.5].map(x=>{const p=new V(x,50,.5);return{p,floor:bot.blockAt(new V(Math.floor(x),49,0))?.name,body:bot.blockAt(p.floored())?.name,head:bot.blockAt(p.floored().offset(0,1,0))?.name,roof:bot.blockAt(p.floored().offset(0,2,0))?.name,staticAimRays:targets.map(t=>({id:t.id,target:t.p,horizontal:Math.hypot(t.p.x-x,t.p.z-.5),real:line(p.offset(0,1.62,0),t.p.offset(0,1.6,0)),model:line(p.offset(0,1.8,0),t.p.offset(0,1.6,0))}))}});
+const escape=[];for(let x=95;x>=75;x--){escape.push({x,cells:[49,50,51,52].map(y=>({y,n:bot.blockAt(new V(x,y,0))?.name}))})}
+return{observer:bot.entity.position,hp:bot.health,stances,escape,warning:'COUNTERFACTUAL static aim-lines from unoccupied stances only, not actual-camera or bow-trajectory or hazard proof; no interaction/movement.'};
