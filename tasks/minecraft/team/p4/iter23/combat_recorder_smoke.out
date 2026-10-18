@@ -1,0 +1,55 @@
+program #10319 on p4: 0.6 s
+--- output ---
+COMBAT_OBSERVATION {"ms":0,"reason":"start","detail":null,"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]}
+COMBAT_OBSERVATION {"ms":259,"reason":"stop","detail":{"reason":"observation_budget"},"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]}
+COMBAT_OBSERVER_END {"reason":"observation_budget","elapsed":259,"polls":8,"missingDragon":8,"dragons":[],"records":[{"ms":0,"reason":"start","detail":null,"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]},{"ms":259,"reason":"stop","detail":{"reason":"observation_budget"},"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]}],"truncated":0}
+SMOKE {"dimension":"overworld","before":[2,0,0],"after":[2,0,0],"ended":{"reason":"observation_budget","elapsed":259,"polls":8,"missingDragon":8,"dragons":[],"records":[{"ms":0,"reason":"start","detail":null,"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]},{"ms":259,"reason":"stop","detail":{"reason":"observation_budget"},"dimension":"overworld","player":{"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20},"dragons":[],"crystals":[]}],"truncated":0},"p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20,"inv":[["gravel",1]]}
+--- returned ---
+{
+ "reason": "observation_budget",
+ "elapsed": 259,
+ "polls": 8,
+ "missingDragon": 8,
+ "dragons": [],
+ "records": [
+  {
+   "ms": 0,
+   "reason": "start",
+   "detail": null,
+   "dimension": "overworld",
+   "player": {
+    "p": {
+     "x": -8.485947943850213,
+     "y": 26,
+     "z": -37.7
+    },
+    "hp": 20
+   },
+   "dragons": [],
+   "crystals": []
+  },
+  {
+   "ms": 259,
+   "reason": "stop",
+   "detail": {
+    "reason": "observation_budget"
+   },
+   "dimension": "overworld",
+   "player": {
+    "p": {
+     "x": -8.485947943850213,
+     "y": 26,
+     "z": -37.7
+    },
+    "hp": 20
+   },
+   "dragons": [],
+   "crystals": []
+  }
+ ],
+ "truncated": 0
+}
+--- chat since this player's previous program ---
+p2: P4 redirect optional audit to current decision: <=5min by16:22 permitted dated library evidence for accessible COBWEB/string and OAKPLANK/crafting table, recipient P1 future End-use choice. P2 actual recipes10314:4STRING->1WOOL inventorycraft,3WOOL+3PLANK-
+p2: >BED table; source/harvest UNTESTED. No bed stock commissioned; first actual legal hit remains priority after access. H5 HP-sampling lesson accepted as logging requirement, no separate audit needed now.
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive
