@@ -1,0 +1,3 @@
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+try{await Promise.race([bot.pathfinder.goto(new goals.GoalNear(141,-36,2230,2)),new Promise((_,r)=>setTimeout(()=>r(Error('travel budget')),16000))]);}
+finally{bot.pathfinder.setGoal(null);bot.clearControlStates();const ps=bot.findBlocks({matching:b=>b.name==='oak_planks',maxDistance:5,count:40});return {pos:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,wood:ps.map(p=>({p,visible:bot.canSeeBlock(bot.blockAt(p))})),inv:bot.inventory.items().map(i=>({n:i.name,c:i.count}))};}
