@@ -45,3 +45,5 @@ Timelines, budgets, donor/recipient distinction: `ADOPTION.md`. Readable learned
 ## Provenance / exclusions
 
 Only permitted currentworld/API, arena records, team memory and installed Mineflayer documentation. RequiredoldP3header had untrusted historicalclient-source notes; no excludedsourcefile was reopened or its derivedcombat/parts conclusions reused. Iter17–19 remainvoid. No rawpackets, fakeparts, throughblock/reach/visibility bypass, physicschanges, server/.work/tools changes, agentspawns or remote pushes. Ownscripts current, other-player records read-only. Closingevaluator/status/body/events stillrequiredat19:44, labelsavefailure/stale results.
+
+Finalresumed20:04: CLOSURE_RESUMED.md correctsoperatorstopclock; final_body_2004.out=10837 directunchangedP3/7full3partial; eval_final_2004.txt=0/11/177 SAVEFAILED; p1_fishing_adoption_resumed.txt=FULL10812/10815 actualCOD/cook/consume/health; p1_final_records_2004.txt=FULL10834 actualretainedrouteaftersecondskeletonguardstop. p1_fishing_watch_resumed.txt caughtonlychat10818 andisNOTcatchproof. Older closing_*_resumed filesare19:56checkpoint,supersededbyfinal_*2004.
