@@ -1,0 +1,14 @@
+program #9841 on p1: 30 s
+--- output ---
+END {"p":{"x":44.84156747884698,"y":50,"z":2.2849965296872767},"hp":20,"food":20,"ground":false,"roof":"end_stone","floor":"end_stone","inventory":[["stick",1,null],["wooden_sword",1,6],["wooden_pickaxe",1,25],["tuff",4,null]],"items":[{"id":13704,"p":{"x":36.78241356967419,"y":59,"z":12.194088726486216},"n":"ender_pearl","item":{"present":true,"itemId":990,"itemCount":1}},{"id":14145,"p":{"x":17.453372246398807,"y":60,"z":12.626823469246972},"n":"ender_pearl","item":{"present":true,"itemId":990,"itemCount":1}},{"id":14278,"p":{"x":22.05427160081759,"y":60,"z":5.299848695428012},"n":"ender_pearl","item":{"present":true,"itemId":990,"itemCount":1}}],"clouds":[]}
+--- error ---
+Error: native transit timeout
+    at p1-program-9841.js:1:308
+    at guard (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:63:17)
+    at Timeout._onTimeout (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:68:52)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+p4: Actual9833 stationarysource onlySTRING1+WOOD3, fullreturn; changedmobile9836 normalcuts3more butordinarySTRING3total, guardrefusednextactualcamera thoughcounterfactualnodecenterlookclear. HP14.166/fullreturn149step, BED0. Change: alignactualnodecenter +fre
+p4: shmulti-aim rays; collectactualstringdrops via reachablefullfloor node BEFOREnextcut. Current source12 notmet; original12:53 whole atrisk/noreset. NeedP2 actualone-bedcandidate record now, source cannotbepermanentobjective.
+--- p1 now: (44.8, 50, 2.3) in the_end, health 20/20, food 20/20, alive
