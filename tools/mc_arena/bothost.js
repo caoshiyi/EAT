@@ -2,7 +2,9 @@
 // by tools/mc_arena.py, plus a third-person prismarine view per body. Started and supervised by `mc_arena.py up`.
 //
 // Environment: MC_DIR (.work/mc), MC_HOST/MC_PORT (the server), MC_API_SOCK (MC_DIR/run/api.sock: the API's unix
-// socket), MC_VIEW_PORT (3001: p1, 3002: p2, ...). What a body may attack, use, dig or place on: sight.js.
+// socket), MC_VIEW_PORT (3001: p1, 3002: p2, ...; 0: no views), MC_SANDBOX=1 (the practice sandbox's host: records go
+// to records/sandbox_*.jsonl marked sandbox, no flight recorder). Body locks (MC_DIR/locks.json) are shared by both
+// hosts. What a body may attack, use, dig or place on: sight.js.
 'use strict'
 const fs = require('fs')
 const http = require('http')
@@ -22,7 +24,9 @@ const LOCKS = path.join(MC_DIR, 'locks.json')
 const HOST = process.env.MC_HOST || '127.0.0.1'
 const PORT = parseInt(process.env.MC_PORT || '25565')
 const API_SOCK = process.env.MC_API_SOCK || path.join(MC_DIR, 'run', 'api.sock')
-const VIEW_PORT = parseInt(process.env.MC_VIEW_PORT || '3001')
+const VIEW_PORT = parseInt(process.env.MC_VIEW_PORT ?? '3001')
+const SANDBOX = process.env.MC_SANDBOX === '1'
+const PREFIX = SANDBOX ? 'sandbox_' : ''
 const VERSION = '1.20.4'
 const PLAYERS = ['p1', 'p2', 'p3', 'p4']
 const DEFAULT_TIMEOUT = 60
@@ -37,7 +41,9 @@ fs.mkdirSync(RECORDS, { recursive: true })
 let recorder = null   // the flight recorder (flight.js), started once the bodies exist
 
 function now () { return new Date().toISOString() }
-function append (file, rec) { fs.appendFileSync(path.join(RECORDS, file), JSON.stringify(rec) + '\n') }
+function append (file, rec) {
+  fs.appendFileSync(path.join(RECORDS, PREFIX + file), JSON.stringify(SANDBOX ? { ...rec, sandbox: true } : rec) + '\n')
+}
 function log (...a) { console.log(now(), ...a) }
 function r1 (x) { return Math.round(x * 10) / 10 }
 function push (arr, item) { arr.push(item); if (arr.length > MAX_BUFFER) arr.splice(0, arr.length - MAX_BUFFER) }
@@ -163,7 +169,7 @@ for (const name of PLAYERS) {
 }
 let programSeq = 0
 try {
-  for (const line of fs.readFileSync(path.join(RECORDS, 'programs.jsonl'), 'utf8').split('\n')) {
+  for (const line of fs.readFileSync(path.join(RECORDS, PREFIX + 'programs.jsonl'), 'utf8').split('\n')) {
     if (line.trim()) programSeq = Math.max(programSeq, JSON.parse(line).n || 0)
   }
 } catch (e) { if (e.code !== 'ENOENT') throw e }
@@ -332,8 +338,23 @@ function readLocks () {
   try { return JSON.parse(fs.readFileSync(LOCKS, 'utf8')) } catch (e) { return {} }
 }
 function writeLocks (locks) {
-  fs.writeFileSync(LOCKS + '.tmp', JSON.stringify(locks, null, 1))
-  fs.renameSync(LOCKS + '.tmp', LOCKS)
+  const tmp = `${LOCKS}.${process.pid}.tmp`
+  fs.writeFileSync(tmp, JSON.stringify(locks, null, 1))
+  fs.renameSync(tmp, LOCKS)
+}
+// The main world's host and the sandbox's share the locks file: a read-modify-write holds a mutex (a directory).
+function withLocks (fn) {
+  const mutex = LOCKS + '.mutex'
+  const deadline = Date.now() + 5000
+  for (;;) {
+    try { fs.mkdirSync(mutex); break } catch (e) {
+      if (e.code !== 'EEXIST') throw e
+      try { if (Date.now() - fs.statSync(mutex).mtimeMs > 10000) { fs.rmdirSync(mutex); continue } } catch (e2) {}   // left by a killed host
+      if (Date.now() > deadline) throw new Error('the body locks are busy; try again')
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 10)
+    }
+  }
+  try { return fn(readLocks()) } finally { try { fs.rmdirSync(mutex) } catch (e) {} }
 }
 // Who is asking: the agent process (codex exec / claude --print) nearest above the process that opened the connection.
 // Found from the socket itself (SO_PEERCRED: the pid that connected), so it cannot be claimed: not by EAT_ROLE, not by
@@ -376,28 +397,31 @@ async function runProgram (req) {
   // the lock holds the agent process, not the role name it gives: a name can be set by anyone
   const me = { role: String(req.role), iter: req.iter ? String(req.iter) : '', agent: req.agent || null }
   const same = o => o.role === me.role && o.iter === me.iter && (o.agent || null) === me.agent
-  const locks = readLocks()
-  const held = locks[body.name]
-  if (held && !held.agent && me.agent && held.role === me.role && held.iter === me.iter) {   // a lock from before agents were recorded
-    held.agent = me.agent
-    writeLocks(locks)
-  }
-  if (held && !same(held)) {
-    return refuse(req, `${body.name} is controlled by ${ownerName(held)} in this iteration; no other agent may run programs on it`)
-  }
-  if (!held) {
-    const other = Object.entries(locks).find(([p, o]) => same(o) || (me.agent && o.agent === me.agent))
-    if (other) return refuse(req, `this agent already controls ${other[0]}; an agent controls only one body`)
-  }
-  if (body.running) {
-    const r = body.running
-    return refuse(req, `${body.name} is already running program #${r.n} (started ${Math.round((Date.now() - r.start) / 1000)}s ago); one program per body at a time`)
-  }
-  if (!body.spawned) return refuse(req, `${body.name} is not in the game right now (reconnecting); try again shortly`)
-  if (!held) {
-    locks[body.name] = { ...me, since: now() }
-    writeLocks(locks)
-  }
+  const why = withLocks(locks => {
+    const held = locks[body.name]
+    if (held && !held.agent && me.agent && held.role === me.role && held.iter === me.iter) {   // a lock from before agents were recorded
+      held.agent = me.agent
+      writeLocks(locks)
+    }
+    if (held && !same(held)) {
+      return `${body.name} is controlled by ${ownerName(held)} in this iteration; no other agent may run programs on it`
+    }
+    if (!held) {
+      const other = Object.entries(locks).find(([p, o]) => same(o) || (me.agent && o.agent === me.agent))
+      if (other) return `this agent already controls ${other[0]}; an agent controls only one body`
+    }
+    if (body.running) {
+      const r = body.running
+      return `${body.name} is already running program #${r.n} (started ${Math.round((Date.now() - r.start) / 1000)}s ago); one program per body at a time`
+    }
+    if (!body.spawned) return `${body.name} is not in the game right now (reconnecting); try again shortly`
+    if (!held) {
+      locks[body.name] = { ...me, since: now() }
+      writeLocks(locks)
+    }
+    return null
+  })
+  if (why) return refuse(req, why)
 
   let timeout = Number(req.timeout ?? DEFAULT_TIMEOUT)
   if (!(timeout > 0)) timeout = DEFAULT_TIMEOUT
@@ -524,7 +548,7 @@ function status () {
     s.controller = locks[body.name] || null
     s.running = body.running ? { n: body.running.n, for_s: r1((Date.now() - body.running.start) / 1000) } : null
     s.connects = body.connects
-    s.view_port = VIEW_PORT + PLAYERS.indexOf(body.name)
+    s.view_port = VIEW_PORT ? VIEW_PORT + PLAYERS.indexOf(body.name) : null
     out[body.name] = s
   }
   return out
@@ -552,7 +576,7 @@ const api = http.createServer(async (req, res) => {
       return send(200, await runProgram({ ...(await readBody(req)), agent }))
     }
     if (req.method === 'POST' && req.url === '/locks/clear') {
-      writeLocks({})
+      withLocks(() => writeLocks({}))
       append('events.jsonl', { time: now(), type: 'locks_cleared' })
       return send(200, { cleared: true })
     }
@@ -583,9 +607,9 @@ process.on('SIGINT', shutdown)
 fs.mkdirSync(path.dirname(API_SOCK), { recursive: true })
 try { fs.unlinkSync(API_SOCK) } catch (e) { if (e.code !== 'ENOENT') throw e }
 api.listen(API_SOCK, () => { fs.chmodSync(API_SOCK, 0o600); log(`api on ${API_SOCK}`) })
-recorder = flight.create({ dir: path.join(RECORDS, 'flight'), bodies, registry: require('minecraft-data')(VERSION), log })
+if (!SANDBOX) recorder = flight.create({ dir: path.join(RECORDS, 'flight'), bodies, registry: require('minecraft-data')(VERSION), log })
 PLAYERS.forEach((name, i) => {
-  startView(bodies[name], VIEW_PORT + i)
+  if (VIEW_PORT) startView(bodies[name], VIEW_PORT + i)
   connect(bodies[name])
 })
 
