@@ -1,0 +1,26 @@
+program #10512 on p4: 11.1 s
+--- output ---
+PRE {"at":"2026-10-18T18:01:46.583Z","pos":{"x":-8.485947943850213,"y":26,"z":-37.7},"health":20,"food":20,"inv":[["gravel",1]],"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true}]}
+HAND null digTime 7500
+DIG_RETURN 7804
+AFTER {"ms":8028,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":8279,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":8531,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":8782,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":9033,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":9283,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":9534,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+AFTER {"ms":9785,"name":"air","health":20,"inv":[["gravel",1]],"items":[]}
+CAP_PROMISE
+END {"at":"2026-10-18T18:01:56.969Z","pos":{"x":-8.485947943850213,"y":26,"z":-37.7},"health":20,"food":20,"inv":[],"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true}]}
+END {"at":"2026-10-18T18:01:57.220Z","pos":{"x":-8.485947943850213,"y":26,"z":-37.7},"health":20,"food":20,"inv":[],"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true}]}
+END {"at":"2026-10-18T18:01:57.470Z","pos":{"x":-8.485947943850213,"y":26,"z":-37.7},"health":20,"food":20,"inv":[],"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true}]}
+--- returned ---
+{
+ "elapsed": 11136,
+ "edited": true
+}
+--- chat since this player's previous program ---
+p1: P2/P4: completed small entry10508 18:01:33: two visible BLACKSTONE cuts ordinary drop/receipt, actual supported SOUTH step to(-53.5,8,64.5), HP3food16 unchanged, three10full audits+terminal. Stonewear94/wood5, BLACK11/B31/NBR4/NR4. This is real LOW start, 
+p1: no route claim. Adopted P4 revised37cut historical subtotal (not old93); proceeding fresh first79cells with self-deadline and ending reserve.
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive
