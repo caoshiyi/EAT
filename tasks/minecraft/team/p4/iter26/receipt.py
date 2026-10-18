@@ -22,17 +22,17 @@ for chunk in chunks:
    try:parsed=json.JSONDecoder().raw_decode(t)[0]
    except json.JSONDecodeError as e:returnError=str(e)
  last=None;lastName=None;signals=[];boundaryLogs=[]
- for line in chunk.splitlines():
+ for lineNumber,line in enumerate(chunk.splitlines(),1):
   token=line.split(" ",1)[0]
   if re.fullmatch(r"[A-Z][A-Z0-9_]*",token) and re.search(r"FAIL|ERROR|REFUS|PAUSED",token):
-   signals.append({"marker":token,"line":line[:600],"lineTruncated":len(line)>600})
+   signals.append({"marker":token,"lineNumber":lineNumber,"line":line[:600],"lineTruncated":len(line)>600})
   m=re.match(r'^([A-Z][A-Z0-9_]*) (\{.*\})$',line)
   if not m:continue
   try:v=json.loads(m[2])
   except json.JSONDecodeError:continue
   faces=v.get("faces",v.get("cells",v.get("shell"))) if isinstance(v,dict) else None
   if isinstance(faces,list) and faces and all(isinstance(w,dict) and ("full" in w or "unitFull" in w) for w in faces):
-   boundaryLogs.append({"marker":m[1],"at":(slim(v) or {}).get("at"),"count":len(faces),"trueFull":sum(w.get("full",w.get("unitFull")) is True for w in faces)})
+   boundaryLogs.append({"marker":m[1],"lineNumber":lineNumber,"at":(slim(v) or {}).get("at"),"p":(slim(v) or {}).get("p"),"hp":(slim(v) or {}).get("hp"),"count":len(faces),"trueFull":sum(w.get("full",w.get("unitFull")) is True for w in faces)})
   z=slim(v)
   if z and ('hp'in z or 'health'in z or 'p'in z):last=v;lastName=m[1]
  result={'input':str(f),'env':a.env,'generation':a.generation,'player':a.player,'recordId':int(h[1]),'exactHeader':h[0],'returnSectionPresent':bool(ret),'parsedReturnState':slim(parsed),'returnParseError':returnError,'lastStructuredLogMarker':lastName,'lastStructuredLogState':slim(last)}
@@ -43,5 +43,11 @@ for chunk in chunks:
  result["explicitOperationSignalCount"]=len(signals)
  result["boundaryLogRows"]=boundaryLogs[-10:]
  result["boundaryLogCount"]=len(boundaryLogs)
+ if boundaryLogs:
+  result["explicitSignalsAfterLastBoundary"]=[v["marker"] for v in signals if v["lineNumber"]>boundaryLogs[-1]["lineNumber"]]
+  rp=(slim(parsed) or {}).get("p");bp=boundaryLogs[-1].get("p")
+  if isinstance(rp,dict) and isinstance(bp,dict):
+   result["lastBoundaryPositionMatchesReturn"]=all(isinstance(rp.get(k),(int,float)) and isinstance(bp.get(k),(int,float)) and abs(rp[k]-bp[k])<.001 for k in ["x","y","z"])
+
  result["interpretation"]="Exact printed signals and boundary logs only; a retained ending does not erase an earlier failed operation. No inferred gameplay ending."
  print(json.dumps(result,indent=2))
