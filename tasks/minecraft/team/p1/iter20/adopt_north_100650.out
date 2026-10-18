@@ -1,0 +1,11 @@
+program #9319 on p1: 0.4 s
+--- output ---
+TABLE Vec3 { x: 140, y: -36, z: 2232 }
+END {"p":{"x":142.500373177783,"y":-36,"z":2231.5},"hp":8.893067359924316,"food":17,"msgs":["You can sleep only at night or during thunderstorms"],"inv":[["book",3,null],["cobbled_deepslate",3,null],["stick",4,null],["rotten_flesh",1,null]]}
+--- error ---
+Error: table hidden
+    at p1-program-9319.js:2:544
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (142.5, -36, 2231.5) in overworld, health 8.9/20, food 17/20, alive

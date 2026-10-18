@@ -1,0 +1,2 @@
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await bot.pathfinder.goto(new goals.GoalBlock(144,-36,2241));}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();}
+console.log(JSON.stringify({p:bot.entity.position,hp:bot.health,woods:bot.findBlocks({matching:b=>b.name==='oak_planks',maxDistance:6,count:40}).map(p=>{let b=bot.blockAt(p);return{p,visible:bot.canSeeBlock(b)}})}));

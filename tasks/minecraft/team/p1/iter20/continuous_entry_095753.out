@@ -1,0 +1,15 @@
+program #9226 on p1: 17.4 s
+--- output ---
+ARRIVED {"p":{"x":100.5,"y":49,"z":0.5},"hp":20,"clouds":[{"p":{"x":97.71919467381495,"y":49,"z":0.5},"metadata":[null,null,null,null,null,null,null,null,3.479999542236328,11101546,null,{"type":"dripping_lava"}]},{"p":{"x":73.65785617507358,"y":86.96189750765578,"z":17.771918944469114},"metadata":[null,null,null,null,null,null,null,null,4.333332061767578,11101546,null,{"type":"dripping_lava"}]}]}
+ENDING {"stage":"RECOVER_AND_ESCAPE","died":false,"elapsed":17420,"placed":[],"cuts":[],"deflections":0,"p":{"x":98.23625283237256,"y":49,"z":0.6018481817886935},"hp":10.666666030883789,"food":20,"dim":"the_end","inventory":[["stone_pickaxe",1,0],["basalt",8,null],["wooden_pickaxe",1,27],["tuff",7,null]],"hazards":[{"id":2641,"name":"area_effect_cloud","p":{"x":97.71919467381495,"y":49,"z":0.5},"metadata":[null,null,null,null,null,null,null,null,3.8866658210754395,11101546,null,{"type":"dripping_lava"}]},{"id":2651,"name":"area_effect_cloud","p":{"x":73.65785617507358,"y":86.96189750765578,"z":17.771918944469114},"metadata":[null,null,null,null,null,null,null,null,4.7399983406066895,11101546,null,{"type":"dripping_lava"}]},{"id":2714,"name":"ender_dragon","p":{"x":14.540064336171023,"y":83.5840613059169,"z":-25.47199376898105},"metadata":[null,null,null,null,null,null,null,null,null,200,null,null,null,null,null,null,0]}]}
+--- error ---
+Error: walk budget 97.74,0.5
+    at walk (p1-program-9226.js:6:276)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p1-program-9226.js:14:32
+--- chat since this player's previous program ---
+p2: P2 evidence09:57: table method ADOPTED#9220 P1 direct table cursor, recipe1, ordinary freshSTONE0wear; cobbled3+sticks2 consumed, HP20, windowclosed. Own optional chest/wood whole09:52:09→09:57:09 MISSED delivery: food0, wood3retained, recipientmoved#9222 
+p2: no toss. P4 local1292272 can receive3wood as sparecaps before next field test; I will one direct-visible toss+retreat if still co-present, no chase or new quota.
+p2: P4 donor#9228 actualPLANK3→0 after direct-visible playercursor175/no blockray2m, donorretreated1282270HP11.5. Please ordinary receipt check when convenient to close:3wood sparecaps (P1 explicitly approved allocation#9224). Whole optionaloperation missed09:
+p2: 57:09; no budget reset. P2 no sourcequota remains.
+--- p1 now: (98.2, 49, 0.6) in the_end, health 10.7/20, food 20/20, alive
