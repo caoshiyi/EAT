@@ -1,0 +1,402 @@
+program #9645 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 15.5,
+  "y": 50,
+  "z": 3.5003151450366654
+ },
+ "hp": 10.55274772644043,
+ "ground": true,
+ "items": [
+  {
+   "id": 655,
+   "p": {
+    "x": 2.8724767984968027,
+    "y": 60,
+    "z": -10.908351961105177
+   },
+   "item": {
+    "type": 990,
+    "count": 1,
+    "metadata": 0,
+    "nbt": null,
+    "stackId": null,
+    "name": "ender_pearl",
+    "displayName": "Ender Pearl",
+    "stackSize": 16
+   }
+  },
+  {
+   "id": 656,
+   "p": {
+    "x": -10.609933255917111,
+    "y": 60,
+    "z": -12.990588768437206
+   },
+   "item": {
+    "type": 990,
+    "count": 1,
+    "metadata": 0,
+    "nbt": null,
+    "stackId": null,
+    "name": "ender_pearl",
+    "displayName": "Ender Pearl",
+    "stackSize": 16
+   }
+  },
+  {
+   "id": 1016,
+   "p": {
+    "x": 6.0481633146064775,
+    "y": 58,
+    "z": 2.125
+   },
+   "item": {
+    "type": 819,
+    "count": 1,
+    "metadata": 0,
+    "nbt": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 0
+      }
+     }
+    },
+    "stackId": null,
+    "name": "stone_sword",
+    "displayName": "Stone Sword",
+    "stackSize": 1,
+    "maxDurability": 131
+   }
+  },
+  {
+   "id": 1017,
+   "p": {
+    "x": 6.875,
+    "y": 57,
+    "z": 2.125
+   },
+   "item": {
+    "type": 821,
+    "count": 1,
+    "metadata": 0,
+    "nbt": {
+     "type": "compound",
+     "value": {
+      "Damage": {
+       "type": "int",
+       "value": 106
+      }
+     }
+    },
+    "stackId": null,
+    "name": "stone_pickaxe",
+    "displayName": "Stone Pickaxe",
+    "stackSize": 1,
+    "maxDurability": 131
+   }
+  },
+  {
+   "id": 1018,
+   "p": {
+    "x": 4.53698169133482,
+    "y": 59,
+    "z": 2.875
+   },
+   "item": {
+    "type": 376,
+    "count": 20,
+    "metadata": 0,
+    "nbt": null,
+    "stackId": null,
+    "name": "end_stone",
+    "displayName": "End Stone",
+    "stackSize": 64
+   }
+  },
+  {
+   "id": 1019,
+   "p": {
+    "x": 5.61258745967094,
+    "y": 58,
+    "z": 2.6261982280496095
+   },
+   "item": {
+    "type": 990,
+    "count": 1,
+    "metadata": 0,
+    "nbt": null,
+    "stackId": null,
+    "name": "ender_pearl",
+    "displayName": "Ender Pearl",
+    "stackSize": 16
+   }
+  }
+ ],
+ "clouds": [
+  {
+   "id": 1002,
+   "p": {
+    "x": 4.500000208791624,
+    "y": 59,
+    "z": 0.5
+   },
+   "height": 0.5,
+   "metadata": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    6.03333044052124,
+    11101546,
+    false,
+    {
+     "type": "dripping_lava"
+    }
+   ]
+  }
+ ],
+ "stairs": [
+  {
+   "feet": [
+    6,
+    56,
+    3
+   ],
+   "cells": [
+    {
+     "p": [
+      6,
+      55,
+      3
+     ],
+     "n": "end_stone"
+    },
+    {
+     "p": [
+      6,
+      56,
+      3
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      6,
+      57,
+      3
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      6,
+      58,
+      3
+     ],
+     "n": "air"
+    }
+   ]
+  },
+  {
+   "feet": [
+    6,
+    57,
+    2
+   ],
+   "cells": [
+    {
+     "p": [
+      6,
+      56,
+      2
+     ],
+     "n": "end_stone"
+    },
+    {
+     "p": [
+      6,
+      57,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      6,
+      58,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      6,
+      59,
+      2
+     ],
+     "n": "air"
+    }
+   ]
+  },
+  {
+   "feet": [
+    5,
+    58,
+    2
+   ],
+   "cells": [
+    {
+     "p": [
+      5,
+      57,
+      2
+     ],
+     "n": "end_stone"
+    },
+    {
+     "p": [
+      5,
+      58,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      5,
+      59,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      5,
+      60,
+      2
+     ],
+     "n": "air"
+    }
+   ]
+  },
+  {
+   "feet": [
+    4,
+    59,
+    2
+   ],
+   "cells": [
+    {
+     "p": [
+      4,
+      58,
+      2
+     ],
+     "n": "end_stone"
+    },
+    {
+     "p": [
+      4,
+      59,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      4,
+      60,
+      2
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      4,
+      61,
+      2
+     ],
+     "n": "air"
+    }
+   ]
+  },
+  {
+   "feet": [
+    4,
+    59,
+    0
+   ],
+   "cells": [
+    {
+     "p": [
+      4,
+      58,
+      0
+     ],
+     "n": "end_stone"
+    },
+    {
+     "p": [
+      4,
+      59,
+      0
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      4,
+      60,
+      0
+     ],
+     "n": "air"
+    },
+    {
+     "p": [
+      4,
+      61,
+      0
+     ],
+     "n": "air"
+    }
+   ]
+  }
+ ],
+ "dragon": [
+  {
+   "id": 186,
+   "hp": 200,
+   "phase": 2,
+   "p": {
+    "x": -26.44973565987732,
+    "y": 103.92628663270182,
+    "z": 11.297714800487142
+   }
+  }
+ ],
+ "crystals": [
+  178,
+  179,
+  180,
+  183,
+  195,
+  197,
+  198,
+  199,
+  202,
+  204
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (15.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
