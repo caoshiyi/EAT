@@ -3257,3 +3257,8 @@ Closure was completed before minute95, rather than left pending for a final eval
 ### Iteration22 late error/partial-effect lesson — 2026-10-18T15:31:33.652291+00:00
 
 10203 crafted a real table before an undefined variable stopped placement;10205 subsequently placed it and opened the ordinary crafting window. Its protected label was contradicted by the fresh roof-AIR audit. Error return does not erase earlier effects, and successful window access does not establish protection. The roof was full leaves in10191; its disappearance cause is not sampled. Current inventory and geometry must be reconciled after every partial failure.
+
+
+### Iteration22 final verification completed — 2026-10-18T15:42:36.287593+00:00
+
+Independent handoff/decisive checks at15:33:16 and15:41:16 met the100–110-minute window. The second evaluator remains saved0/11/deaths170, with save failure. Fifteen new deaths and no decisive defeat record remain verified. P2/P4 final handoffs match retained enclosure receipts. P1’s primary handoff remains stale after table work and a roof-AIR audit; a later column probe did not sample the roof, so no repair was inferred. The independent override records actual body, empty inventory and this protection limit. Closure is complete without a last-second evaluator dependency; later material changes remain appendable.
