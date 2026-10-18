@@ -33,3 +33,7 @@ Inside-solid ray origin is optimistic PRE-CUT shielding: its hit can vanish when
 Sources and completed outputs in p4/iter25: ray_origin_smoke/live_ray_origin_smoke; physical_preflight/sb_G25-1_preflight; physical_ray_cycle/sb_G25-1_ray_cycle; recover_gravel/sb_G25-1_recover_gravel; pickup_pulse/sb_G25-1_pickup_pulse; physical_ray_resume/sb_G25-1_ray_resume. No active P4 sandbox program afterSB13. G25-1 state now differs from live: WESTfloor25AIR withfloor24STONE; EASTheadwallGRAVEL; P4 standsE(-7.3,26,-37.5031). Live remains inherited two-cell16-full room and(-8.5,26,-37.5325), unchanged.
 
 No excluded17–19/clientsource/internet/packets/bypass/server/.work/tools edits/otherplayercontrols/agents/push. Only public bot/world queries and real cursor/reach-valid interactions.
+
+##20:15 donor crystal-shield audit
+
+P1 requested20:13:36; read FULL permitted iter21#9665 output and relevant source. Delivered20:15:27 (1m51), within donor5min20:18:36; earlier deadline19:36 corrected. CRYSTAL_SHIELD_AUDIT.md exact observed cover/partialslab/real<=3mattack/1HPcost/retainedreturn and limits. No new P4 blast or crystal effect. Recipient acknowledgement/use pending. No raw clientmaterial or excluded17–19.
