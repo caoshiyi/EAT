@@ -1,0 +1,100 @@
+program #10155 on p1: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 0.5,
+  "y": 66,
+  "z": -40.5
+ },
+ "hp": 20,
+ "clock": 22331,
+ "isDay": false,
+ "inv": [
+  [
+   "spruce_boat",
+   1
+  ]
+ ],
+ "node": {
+  "world": [
+   5.5,
+   65,
+   -1.5
+  ],
+  "containingBlock": [
+   5,
+   65,
+   -2
+  ]
+ },
+ "cells": [
+  {
+   "p": {
+    "x": 5,
+    "y": 64,
+    "z": -2
+   },
+   "n": "grass_block",
+   "sh": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 5,
+    "y": 65,
+    "z": -2
+   },
+   "n": "snow",
+   "sh": []
+  },
+  {
+   "p": {
+    "x": 5,
+    "y": 66,
+    "z": -2
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 5,
+    "y": 64,
+    "z": -1
+   },
+   "n": "dirt",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 5,
+    "y": 65,
+    "z": -1
+   },
+   "n": "grass_block",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 5,
+    "y": 66,
+    "z": -1
+   },
+   "n": "snow",
+   "sh": "[repeated reference]"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (0.5, 66, -40.5) in overworld, health 20/20, food 20/20, alive

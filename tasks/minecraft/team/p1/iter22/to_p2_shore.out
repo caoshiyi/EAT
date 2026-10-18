@@ -1,0 +1,13 @@
+program #10097 on p1: 0 s
+--- output ---
+RECONCILE_PATH {"p":{"x":10.5,"y":73,"z":-39.50502642090259},"hp":20,"dim":"overworld","inv":[["spruce_planks",3],["spruce_boat",1]],"status":"partial","path":[[10.5,73,-40.5,0,0],[9.5,72,-39.5,0,0],[8.5,71,-38.5,0,0],[7.5,70,-37.5,0,0],[8.5,69,-36.5,0,0],[7.5,68,-35.5,0,0],[6.5,67,-34.5,0,0],[5.5,66,-33.5,0,0],[5.5,66,-32.5,0,0],[5.5,66,-31.5,0,0],[5.5,66,-30.5,0,0],[4.5,66,-29.5,0,0],[4.5,66,-28.5,0,0],[4.5,66,-27.5,0,0],[4.5,66,-26.5,0,0],[4.5,66,-25.5,0,0],[3.5,66,-24.5,0,0],[3.5,66,-23.5,0,0],[3.5,66,-22.5,0,0],[3.5,66,-21.5,0,0],[4.5,66,-20.5,0,0],[4.5,66,-19.5,0,0],[4.5,66,-18.5,0,0],[4.5,66,-17.5,0,0],[4.5,66,-16.5,0,0],[4.5,66,-15.5,0,0],[5.5,65,-14.5,0,0],[6.5,65,-13.5,0,0],[7.5,65,-13.5,0,0],[8.5,66,-12.5,0,0],[8.5,66,-11.5,0,0],[8.5,66,-10.5,0,0],[9.5,65,-9.5,0,0],[8.5,65,-8.5,0,0]]}
+TERMINAL {"p":{"x":10.5,"y":73,"z":-39.50502642090259},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3],["spruce_boat",1]],"goal":null,"controls":{},"foes":[]}
+--- error ---
+Error: no qualified surface path
+    at p1-program-10097.js:5:145
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:427:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:552:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (10.5, 73, -39.5) in overworld, health 20/20, food 20/20, alive

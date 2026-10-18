@@ -1,0 +1,140 @@
+program #10089 on p1: 0.2 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 10.5,
+  "y": 73,
+  "z": -39.50502642090259
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "spruce_boat",
+   1
+  ]
+ ],
+ "total": 2000,
+ "candidates": [
+  {
+   "p": {
+    "x": -6,
+    "y": 62,
+    "z": -23
+   },
+   "n": 8,
+   "name": "water"
+  },
+  {
+   "p": {
+    "x": -5,
+    "y": 62,
+    "z": -22
+   },
+   "n": 8,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": -6,
+    "y": 62,
+    "z": -22
+   },
+   "n": 9,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 62,
+    "z": -22
+   },
+   "n": 8,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 62,
+    "z": -21
+   },
+   "n": 8,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": 19,
+    "y": 62,
+    "z": -16
+   },
+   "n": 9,
+   "name": "water"
+  },
+  {
+   "p": {
+    "x": 20,
+    "y": 62,
+    "z": -16
+   },
+   "n": 9,
+   "name": "water"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 62,
+    "z": -21
+   },
+   "n": 9,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": 21,
+    "y": 62,
+    "z": -16
+   },
+   "n": 9,
+   "name": "water"
+  },
+  {
+   "p": {
+    "x": 20,
+    "y": 61,
+    "z": -16
+   },
+   "n": 9,
+   "name": "water"
+  },
+  {
+   "p": {
+    "x": 19,
+    "y": 62,
+    "z": -15
+   },
+   "n": 9,
+   "name": "ice"
+  },
+  {
+   "p": {
+    "x": 21,
+    "y": 61,
+    "z": -16
+   },
+   "n": 9,
+   "name": "water"
+  }
+ ],
+ "foes": []
+}
+--- chat since this player's previous program ---
+p4: ACTUAL10080 west_approach_test COMPLETE39.7s inside14:22->14:25: physically131.5123,-36,2275.5 HP7.503ground, ONEcreeper125.5,-37,2285.5(~12m), no closehostile. FullsamecallerOWLreturn157.5,-36,2231.491 HP7.503food17groundOAK1BOOK9/roofTUFF. NOEndentry/por
+p4: talinteraction. ChangedWESTpath10072 adoptedSUCCESS, oldEASTretired. This verifies undergroundapproach+return ONLY, not surface->stronghold. ActualNetherportalexistsbut10mverticalNoPathunderconstraints, no descentascentproof. P2sourcewoodtool/berriesactual
+p4:  acknowledged; P4recipientstillOWL157 withboundedportalapproachnowpriced~40sroundtrip.
+--- p1 now: (10.5, 73, -39.5) in overworld, health 20/20, food 20/20, alive

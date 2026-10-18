@@ -1,0 +1,14 @@
+program #10127 on p1: 0 s
+--- output ---
+RECONCILE {"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",1]],"controls":{},"goal":null}
+TERMINAL {"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",1]],"controls":{},"goal":null,"lost":false}
+--- error ---
+Error: unexpected material grass_block
+    at cut (p1-program-10127.js:4:147)
+    at p1-program-10127.js:7:7
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:427:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:552:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (0.5, 66, -40.5) in overworld, health 20/20, food 20/20, alive

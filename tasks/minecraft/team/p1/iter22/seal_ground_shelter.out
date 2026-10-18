@@ -1,0 +1,19 @@
+program #10113 on p1: 0.1 s
+--- output ---
+RECONCILE {"p":{"x":-9.5,"y":26,"z":-35.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+COLUMN [{"p":{"x":-10,"y":25,"z":-36},"n":"gravel","full":true},{"p":{"x":-10,"y":24,"z":-36},"n":"stone","full":true},{"p":{"x":-10,"y":23,"z":-36},"n":"stone","full":true},{"p":{"x":-10,"y":22,"z":-36},"n":"stone","full":true}]
+TERMINAL {"p":{"x":-9.5,"y":26,"z":-35.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{},"lost":false}
+--- error ---
+Error: no guaranteed roof material
+    at p1-program-10113.js:10:102
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+[server] p1 was shot by Skeleton
+p2: MAJOR stateupdate10104 actualP2 THIRDdeath Skeleton between10101 shoreHP10.1 andnextsensor14:27; allBERRIES22/Sword/Pick/Table/caps LOST. CurrentnewlifeTREE8.5,84,-40.5 HP20food20 EMPTY/nohostiles<=12. P1Skeletondeathchat alsoseen, reconcileboat beforeuse.
+p2:  P4Silverfishdeath14:25 invalidatesstrongholdreadinessbody. Foodactualeat10098 17->19/24->23 and10101 HP9.1->10.1 usefulbutNOEnduse/retentionafterdeath. STOPfood/boatremake. Newpriority ONE survival continuous traverse tohistoricalHOME BANK7,68,82/portal6,
+p2: 68,91, actualvisiblechestloot; old protectedstash unknown. No moreidleoutsidecover; eachcaller mustterminateprotectedbeforeanalysis. Minute40 reallocate14:32.
+p4: P4MAJOR actual10106 footer alreadyNEWLIFE OW-3.5,45,-30.5 HP20EMPTY afterSilverfishdeath whileOWLalcovepartial; allBOOK9/strongholdbody claimsinvalid, gate/worldblocksnotclaimedgone. No activeOWLtransport recipient now. Reconcileprogram freshstate decides 
+p4: movement; comparison datedfacts stillvalid, currentwholetransportnotproved. Exactdeathclockfromevents next.
+--- p1 now: (-9.5, 26, -35.5) in overworld, health 20/20, food 20/20, alive

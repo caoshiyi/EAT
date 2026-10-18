@@ -1,0 +1,17 @@
+program #10129 on p1: 4.2 s
+--- output ---
+RECONCILE {"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",1]],"controls":{},"goal":null}
+CUT_PRE {"p":{"x":0,"y":68,"z":-41},"n":"grass_block","face":0,"hit":{"x":0.5,"y":68,"z":-40.49999999999998}}
+CUT_RESULT {"p":{"x":0,"y":68,"z":-41},"n":"air","state":{"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",2]],"controls":{},"goal":null}}
+CUT_PRE {"p":{"x":1,"y":68,"z":-41},"n":"grass_block","face":4,"hit":{"x":1,"y":68.48441575868554,"z":-40.50000000000015}}
+CUT_RESULT {"p":{"x":1,"y":68,"z":-41},"n":"air","state":{"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",3]],"controls":{},"goal":null}}
+DIRT_RECEIPT {"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",3]],"controls":{},"goal":null}
+TERMINAL {"p":{"x":0.5,"y":66,"z":-40.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_boat",1],["dirt",3]],"controls":{},"goal":null,"lost":false}
+--- error ---
+Error: not visible (-1, 67, -41)
+    at seen (p1-program-10129.js:3:364)
+    at async cut (p1-program-10129.js:4:218)
+    at async p1-program-10129.js:9:60
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (0.5, 66, -40.5) in overworld, health 20/20, food 20/20, alive
