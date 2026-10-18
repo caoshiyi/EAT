@@ -368,15 +368,17 @@ function peerAgent (sock) {
     { stdio: ['ignore', 'pipe', 'ignore', sock._handle.fd], encoding: 'utf8', timeout: 10000 })
     let pid = r.stdout.trim()
     if (!/^\d+$/.test(pid) || pid === '0') return null
+    const id = p => `${p}:${fs.readFileSync(`/proc/${p}/stat`, 'utf8').split(') ')[1].split(' ')[19]}`
+    const agents = []
     for (let n = 0; pid && pid !== '1' && n < 64; n++) {
       const argv = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8').split('\0')
       const exe = path.basename(argv[0] || '')
-      if ((exe === 'codex' && argv.includes('exec')) || (exe === 'claude' && argv.includes('--print'))) {
-        const start = fs.readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ')[1].split(' ')[19]
-        return `${pid}:${start}`
-      }
+      if ((exe === 'codex' && argv.includes('exec')) || (exe === 'claude' && argv.includes('--print'))) agents.push(pid)
+      // the harness's retry wrapper relaunches a failed call as a new process: that is still the same agent
+      if (exe === 'bash' && path.basename(argv[1] || '') === 'claude_retry.sh' && agents.length === 1) return id(pid)
       pid = fs.readFileSync(`/proc/${pid}/stat`, 'utf8').split(') ')[1].split(' ')[1]
     }
+    if (agents.length) return id(agents[0])
   } catch (e) {}
   return null
 }
