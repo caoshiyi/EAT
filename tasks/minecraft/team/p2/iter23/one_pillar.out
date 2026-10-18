@@ -1,0 +1,11 @@
+program #10264 on p2: 7.4 s
+--- output ---
+LOWER {"p":{"x":-7.306648802938292,"y":25,"z":-30.499729054657596},"hp":20,"inv":[["flint",3],["gravel",8]]}
+PILLAR_ACTUAL {"p":{"x":-7.306648802938292,"y":26,"z":-30.499729054657596},"hp":20,"inv":[["flint",3],["gravel",7]]}
+RESTORED true
+TERMINAL {"p":{"x":-6.67974222951723,"y":26,"z":-30.499729044218075},"hp":20,"food":20,"lost":false,"inv":[["flint",3],["gravel",5]],"audit":[{"p":{"x":-7,"y":25,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":28,"z":-31},"n":"stone","full":true},{"p":{"x":-6,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-6,"y":27,"z":-31},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-8,"y":27,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":26,"z":-30},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-30},"n":"stone","full":true},{"p":{"x":-7,"y":26,"z":-32},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-32},"n":"gravel","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-6.7, 26, -30.5) in overworld, health 20/20, food 20/20, alive

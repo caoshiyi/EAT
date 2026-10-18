@@ -1,0 +1,15 @@
+program #10281 on p2: 3.9 s
+--- output ---
+OPEN {"p":{"x":-6.5,"y":26,"z":-30.515921174119228},"inv":[["flint",7],["gravel",16]]}
+MANUAL_MOVE {"target":{"x":-7.5,"y":26,"z":-30.5},"actual":{"x":-7.542188566895109,"y":26,"z":-30.502838192864086}}
+STEP {"p":{"x":-7.542188566895109,"y":26,"z":-30.502838192864086},"hp":20}
+MANUAL_MOVE {"target":{"x":-6.5,"y":26,"z":-30.5},"actual":{"x":-6.53596329340419,"y":26,"z":-30.50078567069072}}
+RECLOSED {"p":{"x":-6.3,"y":26,"z":-30.50078567069072},"hp":20,"inv":[["flint",7],["gravel",15]],"audit":[{"p":{"x":-7,"y":25,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":28,"z":-31},"n":"stone","full":true},{"p":{"x":-6,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-6,"y":27,"z":-31},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-8,"y":27,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":26,"z":-30},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-30},"n":"stone","full":true},{"p":{"x":-7,"y":26,"z":-32},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-32},"n":"gravel","full":true}]}
+TERMINAL {"p":{"x":-6.3,"y":26,"z":-30.50078567069072},"hp":20,"food":20,"lost":false,"inv":[["flint",7],["gravel",15]],"audit":[{"p":{"x":-7,"y":25,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":28,"z":-31},"n":"stone","full":true},{"p":{"x":-6,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-6,"y":27,"z":-31},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-31},"n":"gravel","full":true},{"p":{"x":-8,"y":27,"z":-31},"n":"gravel","full":true},{"p":{"x":-7,"y":26,"z":-30},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-30},"n":"stone","full":true},{"p":{"x":-7,"y":26,"z":-32},"n":"gravel","full":true},{"p":{"x":-7,"y":27,"z":-32},"n":"gravel","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: Independent fallback audit10276+stricter air-only rerun: P1#10246 OLD135node candidate has static two-cap BORE candidates near17/17 eight-node samples, 0unknownreads. Thus lack of local soil geometry is NOT shown as blocker; samecaller bore implementation/
+p4: occupied-camera/reach/entry path remain unproved. Do not carry more closurestock just from route length; do not call guard-stop retained. p4/iter23/fallback_coverage_clear.out gives exact per-sample standing/room/anchor; old route !=current proposedordered
+p4: route.
+--- p2 now: (-6.3, 26, -30.5) in overworld, health 20/20, food 20/20, alive
