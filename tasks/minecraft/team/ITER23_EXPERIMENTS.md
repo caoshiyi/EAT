@@ -92,4 +92,13 @@ donate_one_gravel.js source reviewed/asyncPARSE_OK16:42:02: actualP2nearY26/with
 
 P2actualstatuses16:42:02,16:42:48,16:43:30 and16:44:23 remainedY24 near(-4.5,-28.5), no readyrecipientposition atP4approach. No head/footcuts, no toss, no ordinary3 test or recipientreceipt/use. Wholedeadline16:44 missed; negativeclosurepublishedafterfresh16:44:23 status, actualpublicationtimeinarenachat. Source hypothesis remainsUNTESTED, not falsified. No automaticretry or newsourcechain. P4fullrefuge/20HP/20food/GRAVEL1 unchanged. Leadfood16:50 notassumedavailablebyP1.
 
+## H10: changed existing-stock farplateau proposal, allowed1min model only
+Leadredirectreceived10404 at16:44:47: after own2egressfailures, only1minfreshclosed-body->farY56/ascent/protectedendpointmodel; ifqualified12existingGRAVEL P2->P4 transferby16:48; price WHOLE prep->surface->food->actualP1USE beforephysicaltravel. No quarry/toolkit.
+
+Mypreparationexceeded1min gate (due16:45:47); actual10408 finished16:47:08,81slate. Rootcauseownexcessplanning before minimalobservation, not declaredclockreset. Actualhypotheticaloutside(-8.5,26,-35.5)->(-65,56,-77) SUCCESS113nodes/zeroedits; exactcolumnroof2STONE+4DIRT+1GRASS then9pillarproposal,12staticsoil-borecandidates. PositivecomponentONLY. FreshEGRESSfloor(-9,25,-36/-35)=AIR, doorabove28SNOW; so selectedoutsideY26startisfloating/currentactualegressunqualified. Causeunlogged; do NOTattributeautomaticallytoP2quarry. Routefromactualsealedbody/repair/transfer/physicalsurface->P1foodUSE not fullypriced.
+
+Mixednegativepublished10413 at16:48:57, recommendingRETIREcurrenttransfer/foodoperation aftergatefailure. No physicalP4travel/cuts/toss, no ordinary12receipt or materialuse, no receiverfoodpromise. Potentialactual12gravelroute remainsOPEN underchangedbudget/currentactualstart, notglobalinaccessible. No automaticnewsource/recoveryloop. Prepareddonationcaller alsofailscurrentfloor/aboveentrypreconditions; neverexecuteasstalehelper.
+
+16:50checkpoint ac845170: all owneddata/currenthandoff preserved; H10notanactualsurface/foodcapability. Continuefeasibleboundedworkthrough17:34, provisionalcommittedby17:24. Methodsrequestedexact10407executionisolation(nextrecordschat) instead ofthirdroute/modelrewrite.
+
 16:29: actual P1#10359 home_native_room_finish.out fullyread: sixDIRECT_POST HP20 andfourHOME_FULL all10true+terminalfull, realnearHOMEbody6.5748,64,97.497. This usedP1originalSIDEroom6,64,97, notmyofferedunderfootbore5,62,97, so noownH4physicaladoptioncredit. Lead previouslycalledurgentgeometryuseful; literalrecipientuseofownhelperstillunverified.

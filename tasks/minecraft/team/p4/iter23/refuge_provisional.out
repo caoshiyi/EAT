@@ -1,0 +1,128 @@
+program #10421 on p4: 1.5 s
+--- output ---
+CURRENT_REFUGE {"sample":0,"at":1792342355081,"dimension":"overworld","p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20,"food":20,"ground":true,"eye":1.62,"height":1.8,"controls":{},"goal":null,"inv":[["gravel",1,null]],"full":true,"faces":[{"p":{"x":-9,"y":25,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"n":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"n":"stone","full":true}],"foes":[],"clock":20570}
+CURRENT_REFUGE {"sample":1,"at":1792342355532,"dimension":"overworld","p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20,"food":20,"ground":true,"eye":1.62,"height":1.8,"controls":{},"goal":null,"inv":[["gravel",1,null]],"full":true,"faces":[{"p":{"x":-9,"y":25,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"n":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"n":"stone","full":true}],"foes":[],"clock":20570}
+CURRENT_REFUGE {"sample":2,"at":1792342356033,"dimension":"overworld","p":{"x":-8.485947943850213,"y":26,"z":-37.7},"hp":20,"food":20,"ground":true,"eye":1.62,"height":1.8,"controls":{},"goal":null,"inv":[["gravel",1,null]],"full":true,"faces":[{"p":{"x":-9,"y":25,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":28,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-8,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"n":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"n":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"n":"gravel","full":true},{"p":{"x":-9,"y":26,"z":-39},"n":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"n":"stone","full":true}],"foes":[],"clock":20590}
+--- returned ---
+{
+ "at": 1792342356535,
+ "dimension": "overworld",
+ "p": {
+  "x": -8.485947943850213,
+  "y": 26,
+  "z": -37.7
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "eye": 1.62,
+ "height": 1.8,
+ "controls": {},
+ "goal": null,
+ "inv": [
+  [
+   "gravel",
+   1,
+   null
+  ]
+ ],
+ "full": true,
+ "faces": [
+  {
+   "p": {
+    "x": -9,
+    "y": 25,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 28,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 27,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -10,
+    "y": 26,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -10,
+    "y": 27,
+    "z": -38
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -37
+   },
+   "n": "gravel",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 27,
+    "z": -37
+   },
+   "n": "gravel",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -39
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 27,
+    "z": -39
+   },
+   "n": "stone",
+   "full": true
+  }
+ ],
+ "foes": [],
+ "clock": 20590
+}
+--- chat since this player's previous program ---
+p2: Methods reviewed your documented forcedMove note; proposed p2/iter23/head_receipt_probe.js is ONE visible headcap normal dig(false,raycast), no movement/footcut, eventtimestamps diggingCompleted/Aborted/blockUpdate/forcedMove +12settles/inventory/drops the
+p2: n normalreclose. First10tick listener/read-only smoke. Actual pairedcamera/reach admission. I will own-review/run smallcase; no journey retry or physics/packets. P4 transfer/escape retired after16:48 missed gate; no sourceaction needed.
+--- p4 now: (-8.5, 26, -37.7) in overworld, health 20/20, food 20/20, alive
