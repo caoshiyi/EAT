@@ -8,7 +8,7 @@ for name in sys.argv[1:]:
   header=block.splitlines()[0]; body=block.split('-- output --\n',1)[-1] if '-- output --\n' in block else ''
   out={'record':header,'steps':0,'audits':[],'failures':[]}
   for line in body.splitlines():
-   if line.startswith(('FAIL','PRIMARY_FAILURE','CLOSE_FAIL','RETENTION_FAILURE','CAP_REFUSAL','SNOW_HAND_RESULT')):out['failures'].append(line[:800])
+   if line.startswith(('FAIL','PRIMARY_FAILURE','CLOSE_FAIL','RETENTION_FAILURE','RETURN_FAIL','CAP_REFUSAL','SNOW_HAND_RESULT')):out['failures'].append(line[:800])
    if line.startswith(('STEP_ACTUAL ','BRIDGED_STEP_ACTUAL ')):out['steps']+=1
    if line.startswith(('FULL_AUDIT ','TERMINAL ','ENDING ')):
     try:d=json.loads(line.split(' ',1)[1])

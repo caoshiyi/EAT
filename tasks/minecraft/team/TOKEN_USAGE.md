@@ -59,3 +59,5 @@ Iteration24 resumed 2026-10-18T19:57:00.224820+00:00: token usage **unavailable*
 Iteration24 final 2026-10-18T20:05:04.607106+00:00: token usage **unavailable** from an authorized available source.
 
 Iteration25 P2 opening 2026-10-18T20:09:30.814990+00:00: token usage **unavailable** from an authorized available source.
+
+Iteration25 P2 material checkpoint 2026-10-18T20:33:14.154521+00:00: token usage **unavailable** from an authorized available source.
