@@ -1,3 +1,5 @@
+# CORRECTION19:35: any P4-cap-selection-diagnosis causalcredit below is withdrawn. Owner10705 fix18:40:57 precededP4notice18:41:47; independentownerfix. H12adoption10787 remainsseparatelyverified. Originalhistoricaltext preserved.
+
 # P2 ITER24 provisional handoff — complete18:26 UTC (beforeminute90)
 Work CONTINUES through19:44 orverifiedlegitimatevictory; thisisnotclosure/earlystop. Snapshotclaimsbelowkeeptheiractualobservationtimes. Latestscore18:18:34 saveddragon0/11/deaths176 SAVEFAILED. NoP1fooduse/End/dragonhit verified. Externalcourier+arrowtasksretired; onlyP1localchainactive. Nextformal40review18:39, materialupdatesmustappendownP2/PLAN/EVOLUTION.
 

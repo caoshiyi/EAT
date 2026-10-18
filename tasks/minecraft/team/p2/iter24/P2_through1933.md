@@ -1,3 +1,5 @@
+# CORRECTION19:35: any P4-cap-selection-diagnosis causalcredit below is withdrawn. Owner10705 fix18:40:57 precededP4notice18:41:47; independentownerfix. H12adoption10787 remainsseparatelyverified. Originalhistoricaltext preserved.
+
 # P2 iteration24 live handoff — 2026-10-18 18:22 UTC
 **Objective UNMET.** Only p2 controlled; no agents spawned. Provisional due19:29, continue through19:44 (105min) or verified legitimate victory. Formal20 review done18:19:09;40 review due18:39. Current plan [ITER24_PLAN.md](ITER24_PLAN.md). Chronology/corrections [P2_through1822.md](p2/iter24/P2_through1822.md); exact own scripts/results in p2/iter24.
 

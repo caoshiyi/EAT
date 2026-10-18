@@ -1,0 +1,456 @@
+program #10751 on p1: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T19:02:46.348Z",
+ "p": {
+  "x": 154.5,
+  "y": -38,
+  "z": 2234.4979217444447
+ },
+ "hp": 3,
+ "eye": 1.62,
+ "hostiles": [
+  {
+   "n": "zombie",
+   "p": {
+    "x": 163.76904822241133,
+    "y": -38,
+    "z": 2219.4888774904675
+   },
+   "w": 0.6,
+   "h": 1.95,
+   "rays": [
+    {
+     "eyeH": 1.62,
+     "h": 0.1,
+     "dist": 17.70584830973181,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    },
+    {
+     "eyeH": 1.62,
+     "h": 0.975,
+     "dist": 17.652271507294262,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    },
+    {
+     "eyeH": 1.62,
+     "h": 1.755,
+     "dist": 17.64100023715302,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 0.1,
+     "dist": 17.72220822491466,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 0.975,
+     "dist": 17.659764703054027,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 1.755,
+     "dist": 17.640541073539463,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2233
+     },
+     "n": "stone_bricks"
+    }
+   ]
+  },
+  {
+   "n": "creeper",
+   "p": {
+    "x": 155.60901061443394,
+    "y": -36,
+    "z": 2242.824322247802
+   },
+   "w": 0.6,
+   "h": 1.7,
+   "rays": [
+    {
+     "eyeH": 1.62,
+     "h": 0.1,
+     "dist": 8.413634760627028,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    },
+    {
+     "eyeH": 1.62,
+     "h": 0.85,
+     "dist": 8.489508223992216,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    },
+    {
+     "eyeH": 1.62,
+     "h": 1.53,
+     "dist": 8.614345586591673,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 0.1,
+     "dist": 8.405287019800777,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 0.85,
+     "dist": 8.465302704878985,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    },
+    {
+     "eyeH": 1.8,
+     "h": 1.53,
+     "dist": 8.576231683276255,
+     "hit": {
+      "x": 154,
+      "y": -37,
+      "z": 2235
+     },
+     "n": "mossy_stone_bricks"
+    }
+   ]
+  }
+ ],
+ "cells": [
+  {
+   "x": 154,
+   "z": 2233,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "stone_bricks",
+     true
+    ],
+    [
+     -36,
+     "cave_air",
+     false
+    ],
+    [
+     -35,
+     "cave_air",
+     false
+    ]
+   ]
+  },
+  {
+   "x": 154,
+   "z": 2234,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "air",
+     false
+    ],
+    [
+     -37,
+     "air",
+     false
+    ],
+    [
+     -36,
+     "stone_bricks",
+     true
+    ],
+    [
+     -35,
+     "cave_air",
+     false
+    ]
+   ]
+  },
+  {
+   "x": 154,
+   "z": 2235,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -36,
+     "cave_air",
+     false
+    ],
+    [
+     -35,
+     "cave_air",
+     false
+    ]
+   ]
+  },
+  {
+   "x": 155,
+   "z": 2233,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -36,
+     "air",
+     false
+    ],
+    [
+     -35,
+     "stone_bricks",
+     true
+    ]
+   ]
+  },
+  {
+   "x": 155,
+   "z": 2234,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -36,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -35,
+     "mossy_stone_bricks",
+     true
+    ]
+   ]
+  },
+  {
+   "x": 155,
+   "z": 2235,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -36,
+     "mossy_stone_bricks",
+     true
+    ],
+    [
+     -35,
+     "cracked_stone_bricks",
+     true
+    ]
+   ]
+  },
+  {
+   "x": 156,
+   "z": 2233,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "tuff",
+     true
+    ],
+    [
+     -37,
+     "tuff",
+     true
+    ],
+    [
+     -36,
+     "tuff",
+     true
+    ],
+    [
+     -35,
+     "air",
+     false
+    ]
+   ]
+  },
+  {
+   "x": 156,
+   "z": 2234,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "tuff",
+     true
+    ],
+    [
+     -37,
+     "tuff",
+     true
+    ],
+    [
+     -36,
+     "tuff",
+     true
+    ],
+    [
+     -35,
+     "air",
+     false
+    ]
+   ]
+  },
+  {
+   "x": 156,
+   "z": 2235,
+   "col": [
+    [
+     -39,
+     "deepslate",
+     true
+    ],
+    [
+     -38,
+     "deepslate",
+     true
+    ],
+    [
+     -37,
+     "tuff",
+     true
+    ],
+    [
+     -36,
+     "tuff",
+     true
+    ],
+    [
+     -35,
+     "air",
+     false
+    ]
+   ]
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (154.5, -38, 2234.5) in overworld, health 3/20, food 16/20, alive
