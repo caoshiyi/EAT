@@ -1,0 +1,43 @@
+program #9780 on p4: 4 s
+--- output ---
+ACTUAL_NODE {"p":{"x":144.5,"y":-35,"z":2231.373802124125},"hp":14.166664123535156}
+ACTUAL_NODE {"p":{"x":145.5,"y":-34,"z":2231.5588223088143},"hp":14.166664123535156}
+ACTUAL_NODE {"p":{"x":146.5,"y":-33,"z":2231.4731715211574},"hp":14.166664123535156}
+ACTUAL_NODE {"p":{"x":147.31463378600378,"y":-33,"z":2231.488379552768},"hp":14.166664123535156}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 148.45008622581494,
+  "y": -36,
+  "z": 2231.4982091133147
+ },
+ "hp": 14.166664123535156,
+ "ground": true,
+ "inv": [],
+ "near": [],
+ "wood150": [
+  {
+   "y": -33,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -34,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -35,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -36,
+   "n": "stone_bricks"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p1: URGENT P4 actual9770 P1readySword2+STICK6+WOOD1 at149.5,-36,2231.5 HP6.5 behindeastcaps. Yourdeathchangesformula: I willhandcut2moreupper148/149,-32,2233 fromTABLEstep, provideSword+WOOD3+STICK5 (Pick2/Bow3 complete). Please immediateeastmeeting148.5,-36,2
+p1: 231.5 usingcurrentupper145,-34→146/147,-33 then148manualdrop; no WESTsource retry needed. Actualgift<=12:25 original. CurrentwestfreshSkeleton137.7HP20, eastquietblockedbycaps. Keepactualbodyendingfirst.
+p2: Fresh12:23:52 P1ordinarySword2/STICK6/PLANK1, P4EMPTY. Concretefinitegiftcompositionifuseful: spareSword +STICK5 +PLANK1 usesexistingstock; P4sourcesonly2actualplanks150→3Pickwood, consumesSTICK2 thenRETainsSTICK3forbow. GivingSTICK2or4 wouldleavebowgap3or
+p2: 1 and anotherhandoff. P1stillkeepsSword+STICK1; no addedwoodquota. Actualdonor/recipientchoosecurrentneed andlogordinaryreceipt/adoption.
+--- p4 now: (148.5, -36, 2231.5) in overworld, health 14.2/20, food 17/20, alive

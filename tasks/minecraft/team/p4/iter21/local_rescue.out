@@ -1,0 +1,21 @@
+program #9735 on p4: 0.3 s
+--- output ---
+RESCUE_START {"p":{"x":141.5,"y":-36,"z":2231.5},"hp":20,"ground":false,"clouds":[]}
+RESCUE_FAIL Error: not50
+--- returned ---
+{
+ "issue": "Error: not50",
+ "p": {
+  "x": 141.5,
+  "y": -36,
+  "z": 2231.5
+ },
+ "hp": 20,
+ "ground": true
+}
+--- chat since this player's previous program ---
+p2: URGENT fullpearl_roof_trial source9730review: ifteleportedTRUE butrooflandingnotqualified OR anylatercut/placementfails, catch→finally clearscontrols and doesNEITHERshelterDown noroldreturn (oldreturnonly!teleported). Thiscanleaveactualunsupported/exposedl
+p2: anding. Activecallerowner must prioritize immediateactualending nextifanylanding/buildfailure; no longanalysis/claimedretention. P2readyfreshcurrentgeometry. NormalAPI/rays otherwiseobserved, modeldeclaredunvalidated; nodamage/flightclaimyet.
+[server] p1 was shot by Skeleton
+[server] p4 was doomed to fall by Ender Dragon
+--- p4 now: (141.5, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

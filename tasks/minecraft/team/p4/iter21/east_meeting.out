@@ -1,0 +1,48 @@
+program #9776 on p4: 2.6 s
+--- output ---
+ACTUAL_NODE {"p":{"x":144.5,"y":-35,"z":2231.4950943786525},"hp":2.833332061767578}
+MOVE_FAIL Error: adjacent timeout
+--- returned ---
+{
+ "issue": "Error: adjacent timeout",
+ "p": {
+  "x": 141.54723707131103,
+  "y": -36,
+  "z": 2231.542922082435
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [],
+ "near": [
+  {
+   "id": 1934,
+   "n": "skeleton",
+   "p": {
+    "x": 137.35620405449228,
+    "y": -36,
+    "z": 2230.4882092205194
+   }
+  }
+ ],
+ "wood150": [
+  {
+   "y": -33,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -34,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -35,
+   "n": "cracked_stone_bricks"
+  },
+  {
+   "y": -36,
+   "n": "stone_bricks"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+[server] p4 was shot by Skeleton
+--- p4 now: (141.5, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

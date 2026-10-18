@@ -1,0 +1,117 @@
+program #9766 on p4: 11.7 s
+--- output ---
+HAND_PRE {"p":{"x":139,"y":-34,"z":2230},"n":"bookshelf","ray":{"p":{"x":139,"y":-34,"z":2230},"face":4,"intersect":{"x":139,"y":-33.25992537317659,"z":2230.399946657548},"aim":{"x":139.5,"y":-33.5,"z":2230.5}}}
+HAND_PRE {"p":{"x":139,"y":-33,"z":2230},"n":"bookshelf","ray":{"p":{"x":139,"y":-33,"z":2230},"face":4,"intersect":{"x":139,"y":-32.760649233815975,"z":2230.399946657548},"aim":{"x":139.5,"y":-32.5,"z":2230.5}}}
+TWO_PHASE_STEP {"start":{"x":138.4999060019036,"y":-35,"z":2230.3},"target":[139,-34,2230],"p":{"x":139.7,"y":-34,"z":2230.5005132278184},"hp":17.333332061767578,"ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0}}
+HAND_PRE {"p":{"x":137,"y":-32,"z":2234},"n":"oak_planks","ray":{"p":{"x":137,"y":-32,"z":2234},"face":2,"intersect":{"x":137.77732166034622,"y":-31.427478021884333,"z":2234},"aim":{"x":137.5,"y":-31.5,"z":2234.5}}}
+--- returned ---
+{
+ "issue": null,
+ "p": {
+  "x": 139.7,
+  "y": -34,
+  "z": 2230.5005132278184
+ },
+ "hp": 18.333332061767578,
+ "ground": true,
+ "inv": [
+  {
+   "n": "stick",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "book",
+   "c": 15,
+   "wear": null
+  },
+  {
+   "n": "oak_planks",
+   "c": 2,
+   "wear": null
+  }
+ ],
+ "items": [
+  {
+   "id": 7014,
+   "p": {
+    "x": 138.875,
+    "y": -37,
+    "z": 2232.125
+   },
+   "n": "oak_planks",
+   "c": 1
+  },
+  {
+   "id": 7622,
+   "p": {
+    "x": 138.3171778492333,
+    "y": -38,
+    "z": 2234.1440431039905
+   },
+   "n": "oak_planks",
+   "c": 1
+  }
+ ],
+ "planks": [
+  {
+   "x": 137,
+   "y": -29,
+   "z": 2230
+  },
+  {
+   "x": 141,
+   "y": -29,
+   "z": 2230
+  },
+  {
+   "x": 138,
+   "y": -32,
+   "z": 2235
+  },
+  {
+   "x": 137,
+   "y": -32,
+   "z": 2235
+  },
+  {
+   "x": 137,
+   "y": -28,
+   "z": 2230
+  },
+  {
+   "x": 141,
+   "y": -28,
+   "z": 2230
+  },
+  {
+   "x": 138,
+   "y": -32,
+   "z": 2236
+  },
+  {
+   "x": 137,
+   "y": -32,
+   "z": 2236
+  },
+  {
+   "x": 139,
+   "y": -32,
+   "z": 2237
+  },
+  {
+   "x": 138,
+   "y": -32,
+   "z": 2237
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 tenminreview12:19 actual9762 50samples5s dragon186HP200/all9 retained, ownnative33.5,50HP10.5527/food14/ground/controls{}. P4pearltrialclosedfailedZEROthrow/unusedloanlost; no P2salvage/replacementquota. NewOWLwood/string sourcepartial notbowreceipt. Fi
+p2: nitebridgegeometrydeliveredbefore12:20; actualP1adoption/flightunqualified. Keepfirstdragon-damage test asunresolvedcompletionassumption, minute4012:29 decisionmandatory despitefirstcrystal.
+p1: Actual9758 EAST4planks ordinaryreceipt at149.5,-36,2231.5 HP6.5 unchanged, nofoeswithin12. Manual148drop after4headcuts actuallylanded safely; routecandidate nowqualifiedonlythose4cuts/drop. P1 extenddistinctEASTwood to149 pillarY-33..-36,z2230 thenlocalta
+p1: ble149,-36,2232/Sword toavoid unsafeSOUTHreturn. P4 WEST/string unaffected; freshlocaltable availableifactualplaced, willconfirm. Stillwhole11:54sourceelapsed, originalshotdeadlineFAILED.
+p2: 9761 freshnorthgrid independentlyshows oldlow137,-36..-30 ALLAIR,136brick/134-135DEEP; only137,-29/-28 remaining2wood inthatCOLUMN. So no claimoldlowwoodsourceabundant. Climbingformissingactualupperdrops is materiallydifferent; afterpickup verifytotalgap b
+p2: eforemorechain. Toolrecipecheck: initialSTICK1 +2WOOD→4STICK, Swordneeds1/Pick2 leavesSTICK2; BOWneeds3, so actualbowgap1stick unlessadditionalordinaryinput. P1east4woodcraftSword leaves3sticks ifretained; finite1stickhandoffmayavoidextra2WOODsource, onlyw
+p2: henactualavailable. No quota.
+--- p4 now: (139.7, -34, 2230.5) in overworld, health 18.3/20, food 19/20, alive
