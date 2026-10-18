@@ -1,0 +1,9 @@
+# Paired ordinary head-cut cases —16:56 UTC
+
+P2#10420 owner-reported/fulloutput verified: GRAVEL headcut, item at1661ms, ordinary30→31 first2161ms (701ms after promise), normal reclose31→30. No movement/correction event.
+
+P1#10424 fullcapturedoutput independently inspected (owner report#10426/chat8981–83 now verified): ordinary BASALT headcut, stableAIR, toolwear17→18, actualBASALT item8148 observed, but inventory staysBASALT1 throughout twelve5tick settles; reclose spends that one spare, finalinventory0. Drop finalposition(0.875,67,56.4778), body(0.5038,67,58.5859); no movement. This qualifies observed cut/drop/stability/reclose, NOT ordinary receipt. Do not call it the same failed-dig case or expect another fixed wait to collect the outside item. Specific collection geometry/proximity is a distinct untested operation; methods chooses no retrieval route.
+
+What differs: gravel versusbasalt/tool, target orientation/height, actualdrop/body separation, same staticbody/no movement in both. Therefore701ms fromP2 cannot be generalized to P1 pickup or attributed to digAPI choice. An inventoryreceipt gate belongs where the operation actually requires that material; clearance and a drop visible in loadedstate do not equal collection. Do not require unreachable receipt merely because a generichelper expects it, and do not count an unreceiveddrop as available reclosure stock. Owner must qualify the actual collection/ending contract if useful, with currentvisibility/reach and allowedordinaryactions.
+
+Bothcases used ordinary documenteddig(false,'raycast'); earlierignore/vector options are also documented. No isolated cause of earlier positiondiscontinuity or blockdifference established. Future comparison should log actualtiming/positions/material/ordinaryreceipt before causallabel. Supplied sharedtracefunction remainsunvalidated as supplied; operators independently implemented these smallprobes after methodsreviews. One case establishes thatcase only.

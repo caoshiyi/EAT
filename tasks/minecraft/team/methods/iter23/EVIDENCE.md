@@ -1,14 +1,14 @@
-# Current evidence ledger —16:41 UTC
+# Current evidence ledger —16:55 UTC
 
 Score last recorded16:00: SAVEFAILED/last-saved dragon0,11milestones,170deaths(61/45/26/38). Arena has no iteration23 death through16:34. No new dragon hit/effect/defeat verified. Historical milestones are not present capability.
 
 | Current work / key records | Confirmed | Limit / next evidence |
 |---|---|---|
-| P1 current connector #10391 | Real bench reclaim/ordinary receipts, exact three-block bench restoration, patched roof/westhead; fourCONNECTOR_FULL arrays10full+terminal,HP3/food17 at(1.503,66,6.7),bothpicks/sapling | Small connector qualified before16:42; fullupper/LOW/End access untested. Prior room1,65,4 historical |
+| P1 current South58 #10399/#10407/#10412 |52m field/fullending; westpartial failedsettledposition, whole reverse/reclosurefour10fullHP3 at(0.5058,67,58.587),BASALT1,bothpicks/sapling |16:47 westdeadlinefailed; latercachedfarAIR/dropquerydoesnotexplainearliercut/motion. No LOW/Endaccess |
 | P1 scaled approach #10336/#10359 | Real long transitHP20; lastgoal failed. Changed local steps/actual room gaveHOME full10x4; whole16:02→16:27~25m |16:14/18/23 misses remain; portal nextphase10364 dropped failurebranch and returned exposedHP18→1 before changed action |
 | Execution support validated | Receipt10230 actual2→5; padded/ordered10304 fournodes+fullending; changedpulse/postcheck10359 sixflat/down endpoints+fullending | Specific cases, no universalpickup/upstep/route safety. Exact damage source unlogged |
 | Supplied reusable snapshot | P2 reviewed/ran10301, tenloadedfull/negativecoords matchindependent10287 | Validated snapshot case, no rescue/footprintproof. Supplied path-cellfunction not adopted |
-| P2 retained #10287 |(-4.3,24,-28.4643),HP20/food20,GRAVEL30/FLINT9, full10x4 |48stockgatefailed16:10/quarryescape retired. Secondreturngeometryfailure differs from firstunloggedmove |
+| P2 current #10409/#10410/#10420 |10409 positiondiscontinuity/no receipt;10410 APIfullending.10420 actualsingleheadcut delayedGRAVEL30→31 then reclose31→30, stablebodyHP20 at(-4.6614,24,-28.5001) |Specificreceiptcasevalidated; no discontinuitycause.16:44surface/16:48gift/16:50fooddependencyretired |
 | P2 modelreceipt #10337 |success0 vsnoPath0 actualsmoke; methodsreviewed | No P1adoption yet; no physicalrouteproof |
 | P4 retained / modeltest |10303 fullsamplesHP20/gravel1.10358/60 pairedmodels no invalidfeet observed; no optimizationcorruptionreproduction | Negative bounded tests only, not universalplannerproof. Currentterrain/physicalcheck remains required |
 | Peer outputaudit | P1audit_output.py success10304+failure10289 smokes; preservesprimaryerroralongsidegoodfallback | walk_failures[] excludes failedendpoint10336; always inspecterror,stage,n10 |
