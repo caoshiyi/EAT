@@ -230,7 +230,7 @@ About29minremain, independentclosingbegins13:38:55(~19min), finaldeadline13:48:5
 
 13:26 targeted independent#9894audit: **clear() andactualmain source plus fulloutput/return inspected**. clear(o,a) testsanysolidshape allthewaytoaiminsideintendedwood andreturnsFALSEuponenteringthatwood; a transparentWEB-derivedcontractwasreusedforSOLIDtargetselection. OutputWOOD_PLANnull/zerowoodcuts, returned157.603,-36HP20/groundEMPTY withmanyactualplankslisted. Acceptsourcepredicatebugfinding, NOTinaccessiblewood/failedphysicalwoodcutclaim. Ownerhelperrepairisallowedwork, reviewerdoesnoteditit; requireasmallactualread-onlyvisible-target+occluded-negativecheckbeforelongquota. Thisisthe secondmaterial-generalizationbugafter#9768fullwoodassertedhalfslab; preservingexactcontract/testlessonsisnecessary, notonlymorehelperabstraction. No arena/tools/serverrepair.
 
-## One-hundred-minute review —13:29 UTC
+## Approximately one-hundred-minute review —13:28:26 UTC
 
 | Current hypothesis | Actual observation | Effect / retained capability | Elapsed | Next decision |
 |---|---|---|---|---|
@@ -239,3 +239,13 @@ About29minremain, independentclosingbegins13:38:55(~19min), finaldeadline13:48:5
 | Independentclosurewillretaintruth | Saved13:19:50 score0/11/deaths154 plusdecisiveauditindexinthisreview | Continuousreview/checkpointscomplete, finalclosurestillpending | +100m | Begin13:38:55, inspectlatestownedhandoffs/programs/events/eval, refreshagain~13:48:20–40 before13:48:55deadline |
 
 No newdeathinspectedafter13:09:30. LostBow/WOOL/STRINGnotcarriedforward; recoveryfailedinactualsearchedarea. P2proposalwithdrawnbeforeedits; no newdamageeffect. Tokenusageunavailablefromauthorizedsource. Keep finalcheckpointwrittenbeforeexecutioncutoff evenifinterrupted; do notendthisreviewatanopening-onlyphase.
+
+Currentstatus13:28:26 P4OW159.1,-36,2231.6 HP15food17 EMPTY, supersedingearlierHP20; currentdamagecause/unexaminedcallerendingunverified. Otherbodiesunchanged. The13:29checkpointwasprepared34searly; exactobservationtimestampis13:28:26, notfutureliveevidence.
+
+13:31 newprimaryallocation documentedP1chat13:28:35: AIvisibility/timinghypothesis, P2one≤5sexistingbridgeexposure+immediatenative75return whole≤3min observefireball/phase; P1activefountaincolumn moving/perch-onlynormalSwordtest max3qualifiedactualroot/cursor/rayhits andfullnative50return. Thisisoperator-selectedchangedvisibility/timingassumption, not57reachwindow/sourcequota. No phase/hit/damage/retentionproofbeforecompletedresults. P4onlyexistingboundedkitfieldifactualsourceworks, no newspawnbeduse. Revieweracceptsexplicitchangedexperiment/allocation, notsuccess orguaranteedsafety. With~18minleft, closingstarts13:38:55andfinalworldchecknear13:48:30; no earlyfinal.
+
+13:36 **full completed P1#9906 and P2#9909 source/output/returns independently inspected**. P1actualfountainfeet63, activefield90s, 157.4scallerinclascent+fullreturn; allreportedsamplesdragonHP200/phase1, hits[], minBODY-root23.2528m, Swordwear6unchanged. FULL_NATIVE_RECEIPT7.3278,50,3.4974groundroofEND/HP20food20/controls cleared, lostFALSE/issueNULL. Accept retainedactualfield, ZEROattacks/damage; normaldragon-hitmechanismstillunexecuted, notdisproved. Samplepositionsalonemustnotbeusedtocallitstationary: sourceactuallyalternatesnormaladjacent63/62goalsunderphase1withlandingassertions.
+
+P2actual#9909 stage75→85.4466,Y50,3.4shold→75.5087/groundroof/HP10.5527food14/inventoryunchanged/retainedTRUE, caller9.957s. 173phase1samples/HP200/fireballIDs[], actualrootrayhitsEND84,52,0@.86m. UnroofedendpointwasNOTroot-visible, so visiblebaitpreconditionfailed; do notclaimAIvisibilityhypothesisfalsified. Canonical13:32:13+9.957→~13:32:23; wholeassignment13:28:35→~13:32:23=~3m48 vs3min MISS (peer13:32:41announcement-basedendoverstates~18s). READY13:31:40alreadyafterwholedeadline13:31:35; coordinationdependencyconsumedbudgetbeforefield. No newsuccessfrom10scalleralone.
+
+P4latestboundedwoodfieldreportedzerowood, chainretired; no replacementBow/BED/WOOL/STRING. CurrentP1body7.3native supersedesearlier75staging. Closingreviewbegins13:38:55; allactualremainingprograms/effectscontinueuntil13:48:55, no earlygoalcompletionclaim.
