@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """A short factual snapshot of the minecraft world for the supervisor, read from the saved world (the server is down
 when the harness runs it): where each body is and what it carries, the key items the team holds, run totals from the
-world's statistics with this iteration's change, and this iteration's deaths by cause. Facts only, no advice.
+world's statistics with this iteration's change, this iteration's deaths by cause, and the End's state (crystals
+left on the pillars, the dragon's health) with the team's fighting kit. Facts only, no advice. The practice sandbox
+(.work/mc/sandbox) is never read.
 
     python3 tools/mc_snapshot.py            (prints markdown; remembers the totals to report the next change)
 """
@@ -26,6 +28,9 @@ STATS = [("picked up", "minecraft:picked_up", ["ender_pearl", "blaze_rod", "iron
          ("used", "minecraft:used", ["ender_eye"]),
          ("killed", "minecraft:killed", ["enderman", "blaze", "piglin"])]
 RADIUS = 4   # chunks around spawn and each body whose containers are counted
+# fighting kit for the End, counted like KEY (bodies, ender chests, nearby containers)
+KIT = ["bow", "arrow", "bed", "ender_pearl", "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots",
+       "diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots"]
 
 
 def items(lst) -> Counter:
@@ -36,12 +41,98 @@ def items(lst) -> Counter:
 
 
 def key_of(name: str) -> str:
-    return "bed" if name.endswith("_bed") else name
+    return "bed" if name.endswith("_bed") else "arrow" if name in ("spectral_arrow", "tipped_arrow") else name
 
 
-def containers(dim: str, centres: list) -> Counter:
+def chunks(reg: Path):
+    """Every (chunk x, chunk z, root compound) stored in the region files of a region/ or entities/ directory."""
+    for f in sorted(reg.glob("r.*.*.mca")):
+        b = f.read_bytes()
+        for i in range(1024):
+            loc = struct.unpack_from(">I", b, 4 * i)[0] if len(b) >= 4096 else 0
+            if not loc >> 8:
+                continue
+            try:
+                off = (loc >> 8) * 4096
+                n, kind = struct.unpack_from(">IB", b, off)
+                raw = b[off + 5:off + 4 + n]
+                yield anvil.parse(zlib.decompress(raw) if kind == 2 else gzip.decompress(raw))
+            except (ValueError, struct.error, zlib.error, OSError, IndexError):
+                continue
+
+
+def end_state(world: Path) -> dict:
+    """The End as saved: end crystals still on the pillars (the fight's own, ShowBottom set, on the ring of pillars),
+    the dragon (the one the fight in level.dat names) and its health, and the fight's flags."""
+    try:
+        fight = anvil.parse(gzip.decompress((world / "level.dat").read_bytes())).get("Data", {}).get("DragonFight", {})
+    except (OSError, ValueError):
+        fight = {}
+    crystals, dragons = [], []
+    if (world / "DIM1" / "entities").is_dir():
+        for c in chunks(world / "DIM1" / "entities"):
+            for e in c.get("Entities", []):
+                x, y, z = e.get("Pos", (0, 0, 0))
+                if e.get("id") == "minecraft:end_crystal" and e.get("ShowBottom", 1) and 30 < (x * x + z * z) ** 0.5 < 50:
+                    crystals.append((round(x), round(y), round(z)))
+                elif e.get("id") == "minecraft:ender_dragon":
+                    dragons.append({"health": e.get("Health"), "pos": (round(x), round(y), round(z)),
+                                    "named": e.get("UUID") == fight.get("Dragon")})
+    named = [d for d in dragons if d["named"]] or dragons
+    return {"visited": (world / "DIM1" / "region").is_dir(), "crystals": sorted(crystals),
+            "dragon": named[0] if named else None, "killed": bool(fight.get("DragonKilled")),
+            "previously_killed": bool(fight.get("PreviouslyKilled"))}
+
+
+def team_held(world: Path = None) -> tuple[dict, Counter]:
+    """The bodies as saved and every item the team holds (key_of names): carried or worn, in ender chests, and in
+    containers within RADIUS chunks of spawn and each body."""
+    world = world or WORLD
+    uuids = {e["name"]: e["uuid"] for e in json.loads((world.parent / "usercache.json").read_text())}
+    bodies, carried, ender = {}, Counter(), Counter()
+    for p in A.PLAYERS:
+        try:
+            d = anvil.parse(gzip.decompress((world / "playerdata" / f"{uuids[p]}.dat").read_bytes()))
+        except (OSError, KeyError, ValueError):
+            continue
+        inv = items(d.get("Inventory"))
+        carried += inv
+        ender += items(d.get("EnderItems"))
+        x, y, z = d["Pos"]
+        bodies[p] = {"dim": d.get("Dimension", "minecraft:overworld").replace("minecraft:", ""), "pos": (x, y, z),
+                     "health": d.get("Health"), "food": d.get("foodLevel"), "inv": inv}
+    spawn = anvil.parse(gzip.decompress((world / "level.dat").read_bytes())).get("Data", {})
+    stored = Counter()
+    for dim in {b["dim"] for b in bodies.values()} | {"overworld"}:
+        centres = [(b["pos"][0], b["pos"][2]) for b in bodies.values() if b["dim"] == dim]
+        if dim == "overworld":
+            centres.append((spawn.get("SpawnX", 0), spawn.get("SpawnZ", 0)))
+        stored += containers("minecraft:" + dim, centres, world)
+    held = Counter()
+    for src in (carried, ender, stored):
+        for k, v in src.items():
+            held[key_of(k)] += v
+    return bodies, held
+
+
+def progress_lines(world: Path, held: Counter) -> list[str]:
+    """The End and the fighting kit, one fact per line (information, not score)."""
+    end = end_state(world)
+    if not end["visited"]:
+        out = ["the End: not generated yet (nobody has entered it)"]
+    else:
+        d = end["dragon"]
+        out = [f"end crystals on the pillars: {len(end['crystals'])} of 10" +
+               (f" at {', '.join(f'({x}, {y}, {z})' for x, y, z in end['crystals'])}" if end["crystals"] else ""),
+               "ender dragon: " + (f"present, health {d['health']:.0f}/200 at {d['pos']}" if d else
+                                   "dead (killed)" if end["killed"] else "no dragon entity in the saved End")]
+    out.append("fighting kit the team holds: " + ", ".join(f"{k} {held.get(k, 0)}" for k in KIT))
+    return out
+
+
+def containers(dim: str, centres: list, world: Path = None) -> Counter:
     """Items in chests, barrels, shulker boxes, furnaces... in the chunks around the given block positions."""
-    reg = WORLD / anvil.DIM_DIRS.get(dim, "") / "region"
+    reg = (world or WORLD) / anvil.DIM_DIRS.get(dim, "") / "region"
     seen, total = set(), Counter()
     for x, z in centres:
         for cx in range((int(x) >> 4) - RADIUS, (int(x) >> 4) + RADIUS + 1):
@@ -68,25 +159,7 @@ def containers(dim: str, centres: list) -> Counter:
 
 def main() -> int:
     uuids = {e["name"]: e["uuid"] for e in json.loads((A.SRV / "usercache.json").read_text())}
-    bodies, carried, ender = {}, Counter(), Counter()
-    for p in A.PLAYERS:
-        try:
-            d = anvil.parse(gzip.decompress((WORLD / "playerdata" / f"{uuids[p]}.dat").read_bytes()))
-        except (OSError, KeyError, ValueError):
-            continue
-        inv = items(d.get("Inventory"))
-        carried += inv
-        ender += items(d.get("EnderItems"))
-        x, y, z = d["Pos"]
-        bodies[p] = {"dim": d.get("Dimension", "minecraft:overworld").replace("minecraft:", ""), "pos": (x, y, z),
-                     "health": d.get("Health"), "food": d.get("foodLevel"), "inv": inv}
-    spawn = anvil.parse(gzip.decompress((WORLD / "level.dat").read_bytes())).get("Data", {})
-    stored = Counter()
-    for dim in {b["dim"] for b in bodies.values()} | {"overworld"}:
-        centres = [(b["pos"][0], b["pos"][2]) for b in bodies.values() if b["dim"] == dim]
-        if dim == "overworld":
-            centres.append((spawn.get("SpawnX", 0), spawn.get("SpawnZ", 0)))
-        stored += containers("minecraft:" + dim, centres)
+    bodies, held = team_held(WORLD)
 
     totals = {}
     for f in (WORLD / "stats").glob("*.json"):
@@ -118,15 +191,13 @@ def main() -> int:
         x, y, z = b["pos"]
         inv = ", ".join(f"{k} {v}" for k, v in b["inv"].most_common()) or "empty"
         print(f"- {p}: {b['dim']} ({x:.0f}, {y:.0f}, {z:.0f}), health {b['health']:.0f}, food {b['food']} — carries: {inv}")
-    held = Counter()
-    for src in (carried, ender, stored):
-        for k, v in src.items():
-            held[key_of(k)] += v
     print("- key items the team holds (bodies, ender chests, containers within %d chunks of spawn and each body): "
           % RADIUS + ", ".join(f"{k} {held.get(k, 0)}" for k in KEY))
     print("- run totals from the world's statistics (change this iteration): " +
           ", ".join(f"{k} {v} ({v - prev.get(k, 0):+d})" if prev else f"{k} {v}" for k, v in totals.items()))
     print("- deaths this iteration by cause: " + (", ".join(f"{k} {v}" for k, v in causes.most_common()) or "none"))
+    for line in progress_lines(WORLD, held):
+        print(f"- {line}")
     return 0
 
 

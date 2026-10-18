@@ -10,6 +10,10 @@ agents report. Prints `milestones = N`, `deaths = N`, `programs = N`, `dragon = 
 Advancements carry the time of each criterion. Stats do not: a stat milestone's time is when the harness first saw it
 in the saved stats (the supervisor checks every minute; the server saves stats every 5 minutes), kept in
 .work/mc/records/milestones.jsonl. The paper's "end crystals" milestone has no advancement or stat and is not scored.
+
+Only the main world counts: the practice sandbox (.work/mc/sandbox, records/sandbox_*.jsonl) is never read for the
+score; the audit scans its programs and chat too. After the score, a separate "progress (not scored)" block: end
+crystals left on the pillars, the dragon's health, and the team's fighting kit, read from the saved world.
 """
 import json
 import os
@@ -140,7 +144,8 @@ DENIED = r"child_process|cluster|worker_threads|net|tls|https?|http2|dgram|dns|f
 AUDIT = [
     ("command", re.compile(r"""(chat|whisper)\s*\(\s*[`'"]\s*/|['"`]/(give|tp|teleport|gamemode|op|summon|kill|setblock|fill|effect|enchant|xp|experience|time|weather|locate|difficulty|gamerule|clear|item|data|execute|spawnpoint|setworldspawn|seed|stop|save-all|whitelist|deop|ban|kick|tell|msg|w|me)\b|chat_command|tabComplete\s*\(\s*['"`]/""")),
     ("server files / rcon", re.compile(r"\brcon\b|server\.properties|rcon\.secret|level\.dat|usercache|ops\.json|whitelist\.json|\.work/|"
-                                     r"world/(region|playerdata|advancements|stats|data|DIM)|25575|25580|api\.sock")),
+                                     r"world/(region|playerdata|advancements|stats|data|DIM)|25575|25576|25580|"
+                                     r"api\.sock|sandbox\.sock|control\.sock")),
     ("forbidden require", re.compile(r"""require\s*\(\s*['"`](node:)?(""" + DENIED + r""")(/[a-z]+)?['"`]\s*\)""")),
     ("dynamic require / import", re.compile(r"""require\s*\(\s*[^'"`\s)]|\bimport\s*\(""")),
     ("sandbox escape", re.compile(r"constructor\s*\.\s*constructor|\bprocess\s*\.|globalThis\s*\.\s*process|\bFunction\s*\(|\beval\s*\(|__proto__|getPrototypeOf\s*\(\s*bot")),
@@ -153,28 +158,30 @@ def audit(everything: bool = False) -> int:
     findings = []
     ups = [e for e in read_jsonl("events.jsonl") if e.get("type") == "up"]
     since = "" if everything or not ups else ups[-1].get("time", "")
-    for p in read_jsonl("programs.jsonl"):
+    progs = [(p, "") for p in read_jsonl("programs.jsonl")] + [(p, "sandbox ") for p in read_jsonl("sandbox_programs.jsonl")]
+    for p, where in progs:
         if (p.get("time") or "") < since:
             continue
         code = p.get("code") or ""
         for kind, rx in AUDIT:
             for m in rx.finditer(code):
                 line = code[:m.start()].count("\n") + 1
-                findings.append((kind, f"program #{p.get('n')} {p.get('player')} role={p.get('role')} iter={p.get('iteration')} "
+                findings.append((kind, f"{where}program #{p.get('n')} {p.get('player')} role={p.get('role')} iter={p.get('iteration')} "
                                        f"line {line}: {code.splitlines()[line - 1].strip()[:140]}" +
                                        (f"  [refused: {p['refused']}]" if p.get("refused") else "")))
                 break
         refused = p.get("refused") or ""
         if "controlled by" in refused or "already controls" in refused:
-            findings.append(("body lock refusal", f"{p.get('player')} role={p.get('role')} iter={p.get('iteration')}: {refused}"))
+            findings.append(("body lock refusal", f"{where}{p.get('player')} role={p.get('role')} iter={p.get('iteration')}: {refused}"))
         if p.get("error") and "commands are not allowed" in p["error"]:
-            findings.append(("command refused", f"program #{p.get('n')} {p.get('player')} role={p.get('role')}"))
+            findings.append(("command refused", f"{where}program #{p.get('n')} {p.get('player')} role={p.get('role')}"))
         if p.get("error") and "is not allowed in programs" in p["error"]:
-            findings.append(("require refused", f"program #{p.get('n')} {p.get('player')} role={p.get('role')}: "
+            findings.append(("require refused", f"{where}program #{p.get('n')} {p.get('player')} role={p.get('role')}: "
                                                 f"{p['error'].splitlines()[0]}"))
-    for i, c in enumerate(read_jsonl("chat.jsonl"), start=1):
-        if (c.get("time") or "") >= since and c.get("text", "").lstrip().startswith("/"):
-            findings.append(("command in chat", f"chat #{i} {c.get('player')}: {c['text'][:140]}"))
+    for where in ("", "sandbox_"):
+        for i, c in enumerate(read_jsonl(f"{where}chat.jsonl"), start=1):
+            if (c.get("time") or "") >= since and c.get("text", "").lstrip().startswith("/"):
+                findings.append(("command in chat", f"{where.replace('_', ' ')}chat #{i} {c.get('player')}: {c['text'][:140]}"))
     print(f"audit: {len(findings)} finding(s)" + ("" if not since else f" since the world came up at {since}"))
     for kind, text in findings:
         print(f"  [{kind}] {text}")
@@ -205,6 +212,14 @@ def main() -> int:
     print(f"deaths = {sum(deaths.values())}")
     print(f"programs = {len(progs)}")
     print(f"dragon = {int(bool(ms[-1]['reached']))}")
+    print("progress (not scored; read from the saved world, information only):")
+    try:
+        import mc_snapshot
+        _, held = mc_snapshot.team_held(WORLD)
+        for line in mc_snapshot.progress_lines(WORLD, held):
+            print(f"  {line}")
+    except Exception as e:  # noqa: BLE001
+        print(f"  unavailable: {e!r}")
     if "--audit" in sys.argv[1:]:
         audit(everything="--all" in sys.argv[1:])
     return 0
