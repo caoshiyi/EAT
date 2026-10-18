@@ -1,0 +1,13 @@
+program #9661 on p1: 2.8 s
+--- output ---
+MOVE {"p":{"x":144.5,"y":-35,"z":2231.500182242191},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_sword",1,0],["wooden_pickaxe",1,0],["book",9,null]]}
+DIG_PRE {"name":"blackstone","ray":{"p":{"x":145,"y":-34,"z":2232},"face":2,"hit":{"x":145.00007687605785,"y":-33.49938950215429,"z":2232}}}
+DIG_EFFECT {"p":{"x":145,"y":-34,"z":2232},"inv":[["stick",1,null],["wooden_sword",1,0],["wooden_pickaxe",1,1],["book",9,null]]}
+WEB_REJECT Error: hidden (147, -33, 2232)
+OCCLUDER { p: Vec3 { x: 148, y: -32, z: 2232 }, n: 'oak_planks', face: 0 }
+END {"p":{"x":144.5,"y":-35,"z":2231.500182242191},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,0],["blackstone",1,null]],"grid":[{"p":{"x":145,"y":-36,"z":2231},"n":"blackstone","see":false},{"p":{"x":147,"y":-33,"z":2232},"n":"cobweb","see":null}],"drops":[{"p":{"x":139.5459407787784,"y":-32,"z":2230.906899629623},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":36,"itemCount":1}]},{"p":{"x":143.875,"y":-32,"z":2230.4665555625315},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":36,"itemCount":1}]}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (144.5, -35, 2231.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,14 @@
+program #9670 on p1: 5.5 s
+--- output ---
+MOVE {"p":{"x":145.5,"y":-34,"z":2231.5001263704007},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",1,null]]}
+DIG_PRE {"name":"oak_planks","ray":{"p":{"x":147,"y":-32,"z":2231},"face":4,"hit":{"x":147,"y":-31.901631438911853,"z":2231.49973765207}}}
+DIG_EFFECT {"p":{"x":147,"y":-32,"z":2231},"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",1,null]]}
+MOVE {"p":{"x":146.5,"y":-33,"z":2231.5000704986105},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",2,null]]}
+MOVE {"p":{"x":147.33229115380396,"y":-33,"z":2231.499943517243},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",2,null]]}
+END {"p":{"x":147.33229115380396,"y":-33,"z":2231.499943517243},"hp":20,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",2,null]],"drops":[{"p":{"x":148.01364756109228,"y":-33,"z":2233.149709690398},"item":{"present":true,"itemId":847,"itemCount":1},"name":"string"}],"foes":[],"grid":[{"p":[146,-34,2232],"n":"cobbled_deepslate"},{"p":[146,-33,2232],"n":"cave_air"},{"p":[146,-32,2232],"n":"air"},{"p":[147,-34,2232],"n":"bookshelf"},{"p":[147,-33,2232],"n":"air"},{"p":[147,-32,2232],"n":"oak_planks"},{"p":[148,-34,2232],"n":"cave_air"},{"p":[148,-33,2232],"n":"cave_air"},{"p":[148,-32,2232],"n":"oak_planks"}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: Independent9666/9668: actualweb shapes[] explains cursorBEYOND; actualcamera real+model segments CLEAR toobservedweb3.28m, normaldig producedAIR/Swordwear0→2. This is visible web success, not through-block, no fictitious shape modification. ActualstringDRO
+p2: P at147.757,-32.25,2232.533 ordinarySTRING0 still, so pickup/handoff remains unproved. Same delayed/upperdrop lesson: inspect current position/item/support before raising body; sourcecut alone notbowinput.
+--- p1 now: (147.3, -33, 2231.5) in overworld, health 20/20, food 20/20, alive
