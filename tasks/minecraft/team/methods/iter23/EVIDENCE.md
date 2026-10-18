@@ -1,20 +1,17 @@
-# Iteration23 current evidence ledger
+# Current evidence ledger — 16:11 UTC
 
-Opening 15:56 UTC. Score: saved dragon0/11 milestones/170 deaths (61/45/26/38), save failed. Live actors all Overworld. No player controlled by reviewer.
+Score last captured16:00: saved dragon0/11 milestones/170 deaths (61/45/26/38), SAVEFAILED. Current arena death events show no iteration23 death through16:10:40; historical milestone count is not current capability. No current End actor/objective effect.
 
-| Evidence | Confirmed | Unknown / limit | Engineering follow-up |
-|---|---|---|---|
-| #10213 full source/output | Wooden pickaxe crafted; three stone cuts; only cobble1 received; recipe absent; initial shell proof precedes west-wall cut; final audit skipped | Why remaining drops not received; no API defect established | Separate cut success from inventory receipt; evaluate final state even on error |
-| #10029, ITER22 independent audit | First failed return followed by later goals and eventual death | Precise damage trajectory | Failure must halt operation; finally must stop controls and observe, not continue route |
-| #10165, ITER22 independent audit | Stored closed=true predates changes; fresh shell false and drowning | Unsampled water ingress | Recompute evidence after last mutation; retain both snapshots with phase labels |
-| #10155, complete prior independent review | Negative z=-1.5 belongs cell -2; alleged defect compared cell -1 | Original traversal failure cause | Small floor-coordinate diagnostic, no planner rewrite |
+| Workstream / decisive records | Confirmed current evidence | Limit / next discriminator |
+|---|---|---|
+| P1 receipt #10230, tool #10233 | Actual cobble2→5; real stonepick craft/visible use; owner adoption of methods receipt review | Specific case validated, not general pickup radius |
+| P1 traversal #10253/#10262 | First old-route guard; short instrumented model/executor paths differed, thenHP loss | Instrumentation useful; no successful whole move |
+| P1 support retention #10268/#10271 | Visible supportcut/bushAIR/berry3, full ten faces x4; actual berry consumption | Action began before support note; no causal methods credit invented |
+| P1 secondHP stop #10289 | HP20→19 on first ordered segment; samecaller fallback full x4 at(9.35065,65,-19.65696), both picks/berry2/dirt2/sapling | No HOME. TwoHP stops need changed footprint/failure-frame diagnostic; center nodes do not certify swept body. Cause unlogged |
+| P2 quarry #10269/#10283/#10287 | First partial returned full16gravel; second reached31 but return geometry refused; separate cap created full x4 ending at(-4.3,24,-28.4643),30gravel9flintHP20 |48 target failed16:10; no escape. Fresh return geometry differs from dated traversed cell; exact first move cause unknown |
+| P4 models/audit #10219/#10223/#10279/#10284 | Negative bounded models, retained refuge. Corrected premature strict17/17 to11/17; missing cases snow/sand | Model-only, old route; no current-route protection/stock quota. Error corrected, not excused |
+| API review | Allowed iter16 retained public-client mapping/bytecode parent hurt→BODY independently corroborated | Source-only, no current lawful target/damage proof; zero attacks cannot falsify API |
 
-Proposed fixes are unvalidated until owner actual result. Highest-cost recurring class provisionally: mutation/receipt/retention contracts fail across multi-stage operations; exact comparative costs still under audit.
+Proposals: fresh-terminal snapshot/path-cell function unvalidated as supplied code. P1 adopted receipt and route diagnostic reviews; actual case results corroborated. P2 target logging observed in revised manual helper; explicit methods adoption not yet established. Next review follows changed evidence/stall, not repetitive reports. Owned notes list assumptions and owner-run acceptance; reviewer runs no programs.
 
-Update16:00: #10232 owner reported adoption of methods review and #10230 actual COBBLE2→5/lostfalse/HP20/drops[]. Full canonical source/output corroborates the specific receipt case. #10233 ordinary stonepick craft/use and #10236 fresh full-ten-face ending independently checked. This is a retained working tool, not restored End access or dragon effect. Opening P1 unqualified enclosure is superseded by #10236's new physical ending. P4 #10219/#10223 completed negative Y60 searches; best-effort prefixes are models only. P4 penalty-vs-exclusion concern proposed, not validated. Dragon API review requested by lead; docs establish ordinary API only, no dragon-damage guarantee.
-
-16:02 API source update: actual permitted iter16 retained public-client mapping/bytecode checked, ch=BODY and parent hurt forwards to body on nonclient branch. Unconditional parent-immunity explanation unsupported; current runtime targeting/physical damage still untested. Not permission to target nonvisible giant box or invent parts. P2/P4 can use this to avoid treating speculative API failure as a new kit prerequisite.
-
-16:03: inspected full #10250 source/output. P1 actually reclaimed two plank caps, moved2m to(12.5,66,-36.512)/HP20, returned and placed both caps; final ten current faces all full. Specific small exit/return qualifies. Larger model's endpoint/use remains untested. CR_DEADLINE authorized environment value1792346147 =17:55:47UTC; independent95min closure remains17:30:59, final100–110 window17:35:59–17:45:59, with later appendices possible before real cutoff.
-
-16:06 changes: P1#10253 stopped first route guard/open ending; #10262 instrumentation confirms reference/executor difference, then HP20→19 prevents completion. #10263 current cell is berry, also accepted by both candidate paths; damage source unsampled. #10266 own-cell-plant cursor refused before mutation; owner requests changed visible support target, reviewed with fixed-y-centering warning. No current P1 enclosure. P2#10261/#10264 actual small exit/return and one supported pillar retained full ending20HP; old.15 start mismatch already revised. No new deaths known. Owner validation reports needed before claiming general methods adoption.
+**16:13 REVIEWER CORRECTION:** original P4 cost100 concern retracted; installed pathfinder docs277–279 explicitly define100 as impossible, not merely a soft penalty. No P4 fluid-exclusion defect established. Reviewer had not checked this documentation before asserting a confirmed concern. P4 note/independent review now prominently corrected; retain this failure in team memory.

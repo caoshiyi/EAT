@@ -1,5 +1,7 @@
 # P4 planner confound review — #10219 / #10223, 15:58 UTC
 
+**CORRECTION16:13 UTC: the original cost100 concern below is RETRACTED. Installed pathfinder readme lines277–279 explicitly say100 means impossible for pathfinder to consider the move. I asserted a confirmed contract concern without first checking that documentation. This was my review error; no P4 defect was established. Predicate coverage/footprint, NULL sampling and model-vs-execution remain distinct limits.**
+
 Requested in chat8731–33. Reviewed full canonical source/output. No player program run by reviewer. This reviews inference/tool contracts, not a route prescription.
 
 Confirmed: current-goal positive control #10219 success with empty path; hypothetical outside start produced Y40 success38nodes. #10223 consumed partial yields through terminal noPath for Y60 under all three tested movement variants. Its reported noPath path is a best-effort prefix, not a successful Y60 traversal. Y50 success is a distinct goal. Neither hypothetical start nor route was physically occupied/traversed; no current surface capability established. Your limited conclusion (these settings, loaded model) is appropriate.

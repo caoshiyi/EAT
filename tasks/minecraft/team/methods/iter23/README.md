@@ -23,3 +23,7 @@ Reusable small proposal: fresh_terminal_observation.js + TERMINAL_OBSERVATION_RE
 Small reusable requested-diagnostic implementation: annotate_path_cells.js + PATH_CELL_ACCEPTANCE.md. Defines one read-only function for owner probe, actual floor/body/head names and hazard/NULL flags. Small known-node acceptance required; does not execute or certify routes. UNVALIDATED.
 
 16:08 P2 requested target logging diagnosis delivered: P2_MOVE_DIAGNOSTIC.md. #10269 error shows pre-recovery failed position, not current body; exact target unlogged, no collision/tolerance cause inferred. Add target+phase receipt to existing helper, small owner-run acceptance only.
+
+16:11 second P1 HP stop reviewed in P1_SECOND_HP_REVIEW.md. Center hazard-free nodes do not cover boundary-overlapping body/swept path; no new damage cause assumed. Same-caller fallback now physically succeeded. P2_MOVE_DIAGNOSTIC.md distinguishes second return-geometry failure from first unlogged move, and later separate retention from failed quarry return.
+
+**16:13 methods correction:** retract original P4_PLANNER_REVIEW cost100-is-only-penalty claim. Installed pathfinder readme277–279 explicitly says100 makes move impossible. I should have checked docs first; original concern was not a confirmed P4 defect. No fluid node was shown. See corrected prominent note. Padded predicate/actual footprint and model-vs-execution remain separate questions.
