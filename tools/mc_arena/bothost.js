@@ -2,6 +2,7 @@
 // by tools/mc_arena.py, plus a third-person prismarine view per body. Started and supervised by `mc_arena.py up`.
 //
 // Environment: MC_DIR (.work/mc), MC_HOST/MC_PORT (the server), MC_API_PORT (25580), MC_VIEW_PORT (3001: p1, 3002: p2, ...).
+// What a body may attack, use, dig or place on: sight.js.
 'use strict'
 const fs = require('fs')
 const http = require('http')
@@ -9,8 +10,10 @@ const path = require('path')
 const util = require('util')
 const vm = require('vm')
 const { builtinModules } = require('module')
+const sight = require('./sight')
 const mineflayer = require('mineflayer')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
+const { Vec3 } = require('vec3')
 
 const MC_DIR = process.env.MC_DIR || path.resolve(__dirname, '../../.work/mc')
 const RECORDS = path.join(MC_DIR, 'records')
@@ -26,6 +29,7 @@ const MAX_TIMEOUT = 600
 const MAX_LOG = 100000          // characters of program output kept per program
 const MAX_RETURN = 100000       // characters of JSON return value
 const MAX_BUFFER = 300          // chat lines / background lines kept per body between programs
+sight.install(VERSION)
 
 fs.mkdirSync(RECORDS, { recursive: true })
 
@@ -45,7 +49,7 @@ const PACKAGES = /^(mineflayer|mineflayer-pathfinder|vec3|minecraft-data|prismar
 function programRequire (name) {
   const bare = String(name).replace(/^node:/, '')
   const root = bare.split('/')[0]
-  if (DENIED.has(root) || root.startsWith('_')) throw new Error(`require('${name}') is not allowed in programs`)
+  if (DENIED.has(root) || root.startsWith('_') || bare.split('/').includes('..')) throw new Error(`require('${name}') is not allowed in programs`)
   if (builtinModules.includes(bare)) return require(bare)
   if (PACKAGES.test(bare)) return require(require.resolve(bare, { paths: [__dirname] }))
   throw new Error(`require('${name}'): programs may load Node built-ins and the installed mineflayer packages ` +
@@ -186,19 +190,28 @@ function inventory (b) {
   return { items: counts, equipped: armor }
 }
 
+// A refused attack/use/dig/place (sight.js): in the program's output and its record, or the body's background log.
+function noteRefusal (body, why, via) {
+  log(`${body.name} refused (${via}): ${why}`)
+  const prog = body.running
+  if (!prog) { push(body.background, `REFUSED: ${why}`); return }
+  prog.refusals.push({ time: now(), via, why })
+  prog.note(`REFUSED: ${why}`)
+}
+
 function connect (body) {
-  const bot = mineflayer.createBot({ host: HOST, port: PORT, username: body.name, auth: 'offline', version: VERSION,
-    hideErrors: true, checkTimeoutInterval: 60000 })
+  const bot = sight.connectBody(() => mineflayer.createBot({ host: HOST, port: PORT, username: body.name, auth: 'offline',
+    version: VERSION, hideErrors: true, checkTimeoutInterval: 60000 }), (why, via) => noteRefusal(body, why, via))
   body.bot = bot
   body.spawned = false
   bot.loadPlugin(pathfinder)
 
   // No commands: a chat line starting with '/' is refused, and so is any command packet whatever sends it.
   const write = bot._client.write.bind(bot._client)
-  bot._client.write = (name, params) => {
+  Object.defineProperty(bot._client, 'write', { writable: false, configurable: false, value: (name, params) => {
     if (name === 'chat_command' || name === 'chat_command_signed') throw new Error('commands are not allowed (no /commands in this game)')
     return write(name, params)
-  }
+  } })
   bot.once('inject_allowed', () => {     // after the plugins' own injection
     const chat = bot.chat
     bot.chat = (message) => {
@@ -217,6 +230,7 @@ function connect (body) {
     bot.whisper = () => { throw new Error('bot.whisper sends a /tell command, and commands are not allowed; use bot.chat') }
     const setMovements = bot.pathfinder.setMovements
     bot.pathfinder.setMovements = (m) => { body.movements = m; return setMovements(m) }
+    guardMethods(body, bot)
   })
 
   bot.once('spawn', () => {
@@ -275,6 +289,35 @@ function connect (body) {
     log(`${body.name} disconnected (${reason}); reconnecting in ${delay / 1000}s`)
     setTimeout(() => connect(body), delay)
   })
+}
+
+// Methods that would otherwise wait on a refused packet (or leave the bot mid-action) check sight first; every packet
+// is checked again in sight.js. activateBlock clicks a face the client can see when the one asked for is hidden.
+function guardMethods (body, bot) {
+  const refuse = (why) => { noteRefusal(body, why, 'call'); throw new Error(`REFUSED: ${why}`) }
+  const seeBlock = (block, face = null) => {
+    if (!block || !block.position) return null
+    const s = sight.blockSight(bot, block.position, face)
+    return s.refusal ? refuse(s.refusal) : s
+  }
+  const faceOf = (v) => v && (v.y < 0 ? 0 : v.y > 0 ? 1 : v.z < 0 ? 2 : v.z > 0 ? 3 : v.x < 0 ? 4 : v.x > 0 ? 5 : null)
+  const NORMALS = [[0, -1, 0], [0, 1, 0], [0, 0, -1], [0, 0, 1], [-1, 0, 0], [1, 0, 0]]
+  const { dig, activateBlock, openBlock, openEntity, sleep, craft } = bot
+  bot.dig = async (block, ...a) => { seeBlock(block); return dig(block, ...a) }
+  bot.activateBlock = async (block, direction, cursorPos) => {
+    const want = faceOf(direction)
+    if (want != null && !sight.blockSight(bot, block.position, want).refusal) return activateBlock(block, direction, cursorPos)
+    const s = seeBlock(block)
+    return activateBlock(block, new Vec3(...NORMALS[s.face]), s.cursor)
+  }
+  bot.openBlock = async (block, ...a) => { seeBlock(block); return openBlock(block, ...a) }
+  bot.openEntity = async (entity, ...a) => {
+    const why = entity && sight.entityRefusal(bot, sight.entityTarget(bot, entity.id) || entity)
+    if (why) refuse(why)
+    return openEntity(entity, ...a)
+  }
+  bot.sleep = async (bedBlock, ...a) => { seeBlock(bedBlock); return sleep(bedBlock, ...a) }
+  bot.craft = async (recipe, count, table, ...a) => { seeBlock(table); return craft(recipe, count, table, ...a) }
 }
 
 // ---- programs ----
@@ -363,7 +406,8 @@ async function runProgram (req) {
   let timeout = Number(req.timeout ?? DEFAULT_TIMEOUT)
   if (!(timeout > 0)) timeout = DEFAULT_TIMEOUT
   timeout = Math.min(timeout, MAX_TIMEOUT)
-  const prog = { n: ++programSeq, start: Date.now(), cancelled: false, listeners: [], out: [], outLen: 0, done: false }
+  const prog = { n: ++programSeq, start: Date.now(), cancelled: false, listeners: [], out: [], outLen: 0, done: false,
+    refusals: [] }
   body.running = prog
   const background = body.background.splice(0)
   const emit = (stream) => (...args) => {
@@ -373,6 +417,7 @@ async function runProgram (req) {
     prog.outLen += line.length + 1
     prog.out.push(prog.outLen > MAX_LOG ? '[output truncated]' : (stream === 'stderr' ? '[err] ' : '') + line)
   }
+  prog.note = emit('stderr')
   const progConsole = { log: emit('stdout'), info: emit('stdout'), debug: emit('stdout'), warn: emit('stderr'),
     error: emit('stderr'), dir: (o) => emit('stdout')(util.inspect(o, { depth: 4 })) }
 
@@ -411,7 +456,8 @@ async function runProgram (req) {
   }
   append('programs.jsonl', { n: prog.n, time: new Date(prog.start).toISOString(), iteration: req.iter || null, role: me.role, agent: me.agent,
     player: body.name, code: req.code, timeout, duration_s: res.duration_s, timed_out: timedOut, output: res.output,
-    return: res.return, error: res.error, background: res.background, state: res.state })
+    return: res.return, error: res.error, background: res.background, state: res.state,
+    ...(prog.refusals.length ? { refused_actions: prog.refusals } : {}) })
   return res
 }
 const TIMED_OUT = Symbol('timed out')

@@ -142,7 +142,7 @@ AUDIT = [
     ("forbidden require", re.compile(r"""require\s*\(\s*['"`](node:)?(""" + DENIED + r""")(/[a-z]+)?['"`]\s*\)""")),
     ("dynamic require / import", re.compile(r"""require\s*\(\s*[^'"`\s)]|\bimport\s*\(""")),
     ("sandbox escape", re.compile(r"constructor\s*\.\s*constructor|\bprocess\s*\.|globalThis\s*\.\s*process|\bFunction\s*\(|\beval\s*\(|__proto__|getPrototypeOf\s*\(\s*bot")),
-    ("raw packets / second client", re.compile(r"_client\s*\.\s*(write|chat|writeRaw|socket)|createBot|createClient|\bfetch\s*\(|WebSocket")),
+    ("raw packets / second client", re.compile(r"_client\s*\.\s*(write|chat|writeRaw|socket|serializer|framer|compressor)|_handle\b|_writeGeneric|createBot|createClient|\bfetch\s*\(|WebSocket")),
 ]
 
 
