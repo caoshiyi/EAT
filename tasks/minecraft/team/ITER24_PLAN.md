@@ -44,3 +44,6 @@ Five newcanonicaldeaths since172(P2two/P3three) =>eventderived177, NOTnew saveds
 Original plan/reviews/provisional already done. Operator stopped19:35; arena resumed19:55:37. Corrected initial wallclock closure inference; remaining~9min active continuation to~20:04, no renewed105min/budget reset. P1 sole useful physical work: newlyretainedpool-column endpoint10803 -> actualpoolaccess/catch/cook/use+ending iffeasible. Helpers no newproduction. Closingverification and truthfulhandoff proceed concurrently. Currentmissingdependency remainshealth/food, no End/combat effect.
 
 20:00 adoptionreview:10812 actualCOD1 and10815 actualcook/consume+health6.667/food20/THREE10FULL prove rod->food->health nowenabled. Food forecastsremainMISSED. NextP1 ownfreshdirectframeapproach fromdatedpermittedphysicalcoordinates; no extrafood/gearqueue. ~4active minutes remain, endingincluded. No End/damage/victoryyet.
+
+## Final outcome — 2026-10-18T20:05:04.607106+00:00
+Activecontinuationcompleted~20:04. Actualfood/health chain succeededlate andenabledUP4/onwardtravel, but10834 skeletonguard stoppedretained148.53,-36,2242.31/HP17.27; noFRAME/End/combat/victory. Two comparableskeletonstopsretiredblindflatroute;10835 lowerlayerread-onlyonly. Closing20:04 saved0/11/177 SAVEFAILED; fiveiterationdeaths. P2.md finalhandoffcurrent, rawclosingcapturesretained; no newsupportqueues.
