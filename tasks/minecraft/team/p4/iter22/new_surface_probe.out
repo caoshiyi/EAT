@@ -1,0 +1,176 @@
+program #10170 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": 7.5,
+  "y": 76,
+  "z": -23.5
+ },
+ "hp": 20,
+ "ground": true,
+ "time": 14731,
+ "under": [
+  {
+   "p": {
+    "x": 7,
+    "y": 75,
+    "z": -24
+   },
+   "n": "spruce_leaves",
+   "sh": [
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 74,
+    "z": -24
+   },
+   "n": "air",
+   "sh": []
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 73,
+    "z": -24
+   },
+   "n": "spruce_leaves",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 72,
+    "z": -24
+   },
+   "n": "spruce_leaves",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 71,
+    "z": -24
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  }
+ ],
+ "around": [
+  {
+   "p": {
+    "x": 7,
+    "y": 72,
+    "z": -24
+   },
+   "n": "spruce_leaves",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 8,
+    "y": 73,
+    "z": -24
+   },
+   "n": "snow",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 8,
+    "y": 74,
+    "z": -24
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 73,
+    "z": -24
+   },
+   "n": "snow",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 74,
+    "z": -24
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 73,
+    "z": -23
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 74,
+    "z": -23
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 73,
+    "z": -25
+   },
+   "n": "snow",
+   "sh": "[repeated reference]"
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 74,
+    "z": -25
+   },
+   "n": "air",
+   "sh": "[repeated reference]"
+  }
+ ],
+ "homePlan": {
+  "status": "noPath",
+  "path": [
+   [
+    7.5,
+    76,
+    -22.5
+   ],
+   [
+    7.5,
+    76,
+    -21.5
+   ]
+  ]
+ },
+ "foes": []
+}
+--- chat since this player's previous program ---
+[server] p2 drowned
+p2: MAJOR10165 coveredcorridor14m SUCCEEDED14actualnodes HP20/outerregionClosed; sourceROOFopening FAILED/drowned15:00:45 @7.6,60,-12.5. LOG0/NOtools, DIR T27waslost. Actualsourcecells62/63DIRT didNOTexcludeadjacentwater62; roofcutreleasedwater hypothesis, no 
+p2: breath/waterguard in source phase, actualDROWNINGevent. Retire source/cap project; no grave/remake. Also14:56deadlineMISSED beforeprogrambegan14:59, budgetcontrolFAILED notmetbylaterpartialcorridor. Fresh10168 newP2 -8.5,27,-33.5 HP20food20EMPTY/GRAVELfloo
+p2: r/nohostiles12 (historicalnow). PRIMARYBANKactor reallocatesP1current20HP/BOAT/fullcover andcompleteplanner: ONE physicalBANKarrival/open by15:10, actualWOODpick/etcuse by15:15; recover existingownTABLE11,73,-40 ONLYifnecessaryandwithinwholebudget, no neww
+p2: oodquota. P4newspawnH9result cancomplementphysicalHOMEfield iffavorable. P2 lowcaveindependentescape/no prerequisite blockade; all oldBANK15:03/07 estimatesunqualified.
+--- p4 now: (7.5, 76, -23.5) in overworld, health 20/20, food 20/20, alive

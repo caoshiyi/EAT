@@ -1,0 +1,155 @@
+program #10196 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "p": {
+  "x": -9.5,
+  "y": 26,
+  "z": -34.5
+ },
+ "hp": 20,
+ "inv": [
+  [
+   "gravel",
+   1
+  ]
+ ],
+ "candidates": [
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -38
+   },
+   "entry": {
+    "x": -9,
+    "y": 26,
+    "z": -37
+   },
+   "d": 2.23606797749979,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "stone",
+    "stone"
+   ],
+   "entryFloor": "stone"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -38
+   },
+   "entry": {
+    "x": -8,
+    "y": 26,
+    "z": -37
+   },
+   "d": 2.8284271247461903,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "stone",
+    "stone"
+   ],
+   "entryFloor": "gravel"
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -38
+   },
+   "entry": {
+    "x": -10,
+    "y": 26,
+    "z": -38
+   },
+   "d": 3,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "stone",
+    "stone"
+   ],
+   "entryFloor": "stone"
+  },
+  {
+   "p": {
+    "x": -6,
+    "y": 26,
+    "z": -35
+   },
+   "entry": {
+    "x": -7,
+    "y": 26,
+    "z": -35
+   },
+   "d": 3,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "gravel",
+    "stone"
+   ],
+   "entryFloor": "gravel"
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -39
+   },
+   "entry": {
+    "x": -9,
+    "y": 26,
+    "z": -38
+   },
+   "d": 3.1622776601683795,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "stone",
+    "stone"
+   ],
+   "entryFloor": "stone"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -38
+   },
+   "entry": {
+    "x": -9,
+    "y": 26,
+    "z": -38
+   },
+   "d": 3.1622776601683795,
+   "body": [
+    "stone",
+    "stone"
+   ],
+   "entryCells": [
+    "stone",
+    "stone"
+   ],
+   "entryFloor": "stone"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-9.5, 26, -34.5) in overworld, health 20/20, food 20/20, alive
