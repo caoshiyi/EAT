@@ -2,15 +2,15 @@
 
 Written 2026-10-18T13:40:50+00:00, within the final ten minutes. Execution continues until **13:48:55 UTC**; this is no victory or early-stop endorsement. Final handoff/event/program/evaluator refresh remains pending.
 
-Independent evaluator **2026-10-18T13:39:12Z**: **dragon=0, milestones=11/12, deaths=154, programs=9918**. Save-all failed with connection refused: **saved-world evidence**, not a synchronized live result. Opening deaths136→154: **18 deaths (P1+14, P4+4, P2/P3+0)**.
+Independent closing evaluator **2026-10-18T13:42:14Z**: **dragon=0, milestones=11/12, deaths=154, programs=9921**. Save-all failed with connection refused: **saved-world evidence**, not synchronized live. It predates/omits the13:40:15P1death: arena events establish **19 iteration deaths (P1+15,P4+4,P2/P3+0)** versus18 reflected in saved154. No fabricated freshscore155 is reported.
 
 | Hypothesis / work | Actual independent evidence | Effect / retained capability | Elapsed | Closing decision |
 |---|---|---|---|---|
 | Allowed crystal attack can produce objective effect | Full completed P4#9665 and independent P2#9673: real visible crystal179 within3m, normal attack,10→9, full native return | **One crystal removed**; dragonHP200 afterward | Whole~10m02 within15min | Accepted narrow effect; no dragon damage/defeat inferred |
 | Equipment/alternative damage chain can finish | Bow#9807 was real; later Silverfish death and failed recovery#9886 left kit unavailable. No bed was crafted or activated in inspected records | No current bow/bed/ammo; no actual ranged shot or bed-damage test | Bow source deadline12:14 failed; ONEBED12:43→12:53 failed and overran~45min | Do not credit preparation or lost inputs as completion capability |
-| AI visibility/perch experiment can establish actual damage | Full#9906 zero hits/minroot23.253/HP200/phase1, full P1returnHP20. Full#9909 retained P2returnHP10.55, but ray blocked84roof | Real retained field trials; visibility precondition failed, attack mechanism unexecuted | P1caller157.4s; P2whole~3m48 vs3min | No global impossibility claim; newer#9919 still pending |
+| AI visibility/perch experiment can establish actual damage | Full#9906 zero hits/retainedreturn; later full#9919 zero hits/minroot26.570/HP200, returnfailed→Endermandeath. Full#9909/#9920 P2returnsHP10.55, actualraysblocked | One retained P1trial thenfatalrepeat; P2returnsretained, actualvisibilityfailed; no dragonattack executed | P1repeat120.2s; P2timedpeek9.240s/704msunroofed | No global impossibilityclaim; no actualdamage/perch/phasechange |
 
-At13:39:12 status P1 was **active#9919** on surface1.3,Y63/HP20; no ending accepted yet. P2 native75.5,Y50/HP10.5527 with Stone106/Sword0/END144; P4 OW157.5,-36,2229.6/HP14.97 EMPTY, known west-head wall gap so no full-enclosure claim; P3 spawn/unplayed. These are dated snapshots, not permanent safety guarantees.
+Currentstatus13:40:59: P1 **OWrespawn141.5,-36,2231.5 HP20EMPTY**, superseding surface/retainedEndclaims. P2 native75.5,Y50/HP10.5527 withStone106/Sword0/END144; P4 OW157.5,-36,2229.6/HP14.97EMPTY, knownwest-headwallgap so nofullenclosure; P3spawn/unplayed. New finalhandoffs/observations stillpending; snapshotsarenotpermanentsafety.
 
 Latest handoffs read independently: P1 authoritative section13:14, P2 header13:33 plus13:36 checks, P4 header12:46/override13:06. They contain stale inventory/active labels; newer completed programs, events and status override them. Final current handoffs will be reread after operators close.
 
@@ -20,7 +20,7 @@ Important reusable findings: full-wood/half-slab assertion mismatch#9768; solid-
 
 Reviewer controlled no player, ran no arena player programs/chat, spawned no agents, repaired no tools/server and made no remote push. No prohibited interaction observed in the audited decisive crystal source; this is a targeted audit, not an exhaustive compliance proof of every program. Token usage **unavailable** from an authorized available source.
 
-Final acceptance remains world dragon defeat plus evaluator and legitimate decisive records. Pending: latest#9919/possible changed visibility trial, latest owner handoffs, events, evaluator near13:48, final checkpoint. No objective success claimed.
+Final acceptance remains world dragon defeat plus evaluator and legitimate decisive records. Full#9919/#9920 inspected aftercompletion: predictedclearcue expiredover2.615s transit, actualvisibleSamples0, HP200/phase1, nofireball; P1lostTRUE/EMPTYrespawn/FULL_RETURN_FAIL. Pending: refreshed final owner handoffs, newest events/observations, evaluator near13:48 and finalcheckpoint. No objective success claimed.
 
 <!-- CONTINUOUS_REVIEW_LOG -->
 
@@ -275,3 +275,8 @@ Currentstatus13:28:26 P4OW159.1,-36,2231.6 HP15food17 EMPTY, supersedingearlierH
 P2actual#9909 stage75→85.4466,Y50,3.4shold→75.5087/groundroof/HP10.5527food14/inventoryunchanged/retainedTRUE, caller9.957s. 173phase1samples/HP200/fireballIDs[], actualrootrayhitsEND84,52,0@.86m. UnroofedendpointwasNOTroot-visible, so visiblebaitpreconditionfailed; do notclaimAIvisibilityhypothesisfalsified. Canonical13:32:13+9.957→~13:32:23; wholeassignment13:28:35→~13:32:23=~3m48 vs3min MISS (peer13:32:41announcement-basedendoverstates~18s). READY13:31:40alreadyafterwholedeadline13:31:35; coordinationdependencyconsumedbudgetbeforefield. No newsuccessfrom10scalleralone.
 
 P4latestboundedwoodfieldreportedzerowood, chainretired; no replacementBow/BED/WOOL/STRING. CurrentP1body7.3native supersedesearlier75staging. Closingreviewbegins13:38:55; allactualremainingprograms/effectscontinueuntil13:48:55, no earlygoalcompletionclaim.
+
+
+13:43 final-fieldindependentaudit: **fullP1#9919/P2#9920 source+alloutput/returns inspected**. #9919 actualsurface90s/HP200phase1/hits[]/minbody-root26.57049, FULL_RETURN_FAILnotlanded5,58,2; ENDlostTRUE/OW141.5,-36HP20EMPTY/issueNULL. Event13:40:15Enderman at5.7,58,2.5 corroboratesfatalreturn. Do notinterpretissueNULLorrespawn20asretention. #9920 smalltracepositiveproof, triggerbothvirtualraysclearat3.169s/root91.117, thenactualarrival5.784s/root75.722 actualBOTHraysblocked84roof; visibleSamples0, measuredunroofed704ms, phase1/HP200/noNEWfireballs, native75.5123groundroof/HP10.5527food14/inventoryunchanged. AcceptretainedP2field, failedvisibilityprecondition, noAIfalsification/damage. No forbiddeninteractionseen intheseinspectednormalAPIcallers.
+
+Closingeval13:42:14 stillsaved0/11/deaths154/programs9921 SAVEFAILED, omitslatestP1death. Arena18prior+1=19iterationdeaths; keepdatasource/timestampdistinct. Finalrefresh~13:48:30needed, latesthandoffsreadagainafteroperatorsclose. Continuousclosingalreadywrittenandcheckpointedbeforecutoff.
