@@ -1,0 +1,16 @@
+READ_COPY at=2026-10-18T23:49:31.284944+00:00 SOURCE=tasks/minecraft/team/P3.md
+# P3 / methods_a — iteration26 closed23:47 UTC
+
+Dragon remains undefeated. Closure evaluator23:46:47: dragon0, milestones11/12, deaths180, explicitly last-saved after SAVE-ALLconnectionrefused. Savedninecrystals/200HP informationonly. One new canonical live death P1/Piglin23:16:50; no actual live dragonattack/damage/crystalremoval demonstrated.
+
+P3 actualLIVE11453 at23:46:46.945 HOME6.5,67,82.5/2.166664HP17foodEMPTY, grounded/all7false/goalwindowfalse. BothWHITEbedparts intact6,67,83 EAST/7,67,83; chest7,68,82; floorTABLE6,66,82; top-half slab6,69,82. Creepers belowY60; no new fulltenfacesaudit claimed. NoP3live movement/cut/pickup/transfer/death. P3G3readonlyrealbed116/117completed/released, noresetdependency. Controlonlyp3; nootherplayerprograms/agents/workaround/prohibitedaccess/push.
+
+P2 finalactualLIVE11448/49 End5.5,58,3.50013/10HP17food/THREE10FULL/SNOW4/twopicks/SWORD/SHOVEL/TABLE/BASALT13/BLACKSTONE30/ENDSTONE4. Lastfull23:45:54.737, return54.988, fresh46:01.708. Earlier healthy20HP/level57or61 statements STALE: late66roofbuild11445 refused68roof whileairborne/HP16, HP20->8, emergencyDROP63/9HP then separate58/full10HP. Noattackoccurred, causeunisolated. SBsafe66construction didnottransfer LIVE. Noautomaticretry/courier. ProposedANYHPlossverticalabort/settledgroundroofguard remainsuntested/unadopted.
+
+P1 finalOW0.6,51,-29.5/8.333HP17food/DIRT1 afterPiglinkitloss, HOME23:30wholebedfallbackMISSED/retired. P4originalOW-8.5,26,-37.5/20HP20foodEMPTY. ActualP2Endaccess/near-fountaincapsules are retainedprogress, notgoal. G3oneSnow125spent4->3, sampledapex69.066 vsactualtarget86; targetpresent/ninecrystals. Actualdirectmiss, notimmunity/rangeproof. LIVE4Snowunspent. Two60waits,64waits and66consequences nevercalledattack; read FINAL_HANDOFF for exactpostconditions/failures.
+
+AdoptedP3work: first5min actualSTONEcraftfix withP1independentdiscovery; publicexplicitface sixsteps/12cuts; currenthazards/dynamicAIRroofanchor withoriginalLIVEWESTrise; currentportalquery jointlyP4interpreted/P2actualNether; nonfalling8,z89shaftquery/actualwholeLIVEshaft; priorBLACKSTONErecipelead nowactualP2sparepick. Allaretool/accesscapabilities; laterP1kitlossnotundone. Latestconcreteadoption: P3realbed116false-negative ->117testedexacttargetfirsthitguard, twoFOOTviewspass/sevenobstructedviewsstillfalse/bodyunchanged; P4ownerfile+independentack confirmadoption. Noactivation/blastsafetyclaim.
+
+Requiredreflection appendedEVOLUTION_HISTORY. AvoidableP3missingincludeclaim andwrongdeathID were promptlyretracted/corrected; dependentmessagingrequiresinspectedreads. Provisional22:06/freshMIN90at23:29; closurefreshbody/eval/status/events andexactlatefailure raws saved. Tokenusageunavailable. Full current coordinates, constraints, testedcontributions andnextassumption are in [FINAL_HANDOFF.md](p3/iter26/FINAL_HANDOFF.md). Usefulownedworkcommitted, neverpush.
+
+Closing materialaddendum: independent11448 URGENT_START45:48.603 confirmsactualarea_effect_cloud20883 at5.5,66,3.50013 afterHPloss. Cloudspawn/damageattributionnotisolated; freshquerybeforeanyfuture66return, notassumedpersistentcloud orordinarycapimmunity. Actual58/10HPfullending unchanged. FINAL_HANDOFF includes observation/limits.
