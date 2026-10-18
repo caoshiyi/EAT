@@ -1,0 +1,138 @@
+== #9383 2026-10-18T10:16:33 p4 role=exploration_partner iter=20 7 s
+const V=require('vec3').Vec3,m=new Movements(bot),hp=bot.health;const cuts=[];let issue=null;
+m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+const allowed=['deepslate','cobbled_deepslate','stone_bricks','cracked_stone_bricks','mossy_stone_bricks'];
+try{
+ await bot.pathfinder.goto(new goals.GoalBlock(138,-38,2233));
+ for(const y of [-37,-38]){const p=new V(139,y,2233),b=bot.blockAt(p);if(bot.health<hp)throw Error('hurt');if(!allowed.includes(b.name))throw Error('unexpected '+b.name);if(Object.values(bot.entities).some(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<5))throw Error('near hostile');
+ await bot.lookAt(p.offset(.015,.6,.6),true);await bot.waitForTicks(2);const h=bot.blockAtCursor(4.5);if(!h||!h.position.equals(p))throw Error('occluded');console.log('PRE',JSON.stringify({p,hit:h.position,n:b.name}));await bot.equip(bot.inventory.items().find(i=>i.name==='stone_pickaxe'),'hand');await bot.dig(b,false,'raycast');await bot.waitForTicks(5);cuts.push({p,n:bot.blockAt(p).name});}
+ await bot.waitForTicks(10);
+}catch(e){issue=String(e);}finally{try{await bot.pathfinder.goto(new goals.GoalBlock(142,-36,2231));}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();}}
+return {cuts,issue,p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed}))};
+-- output --
+PRE {"p":{"x":139,"y":-37,"z":2233},"hit":{"x":139,"y":-37,"z":2233},"n":"stone_bricks"}
+PRE {"p":{"x":139,"y":-38,"z":2233},"hit":{"x":139,"y":-38,"z":2233},"n":"deepslate"}
+-- returned --
+{"cuts": [{"p": {"x": 139, "y": -37, "z": 2233}, "n": "air"}, {"p": {"x": 139, "y": -38, "z": 2233}, "n": "air"}], "issue": null, "p": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20, "inv": [{"n": "book", "c": 3, "wear": null}, {"n": "stone_pickaxe", "c": 1, "wear": 23}, {"n": "stone_bricks", "c": 1, "wear": null}, {"n": "cobbled_deepslate", "c": 1, "wear": null}]}
+== #9386 2026-10-18T10:16:52 p4 role=exploration_partner iter=20 8.4 s
+// Fresh normal jump/place experiment; reclaim and grounded ending in same caller.
+const V=require('vec3').Vec3,begin=Date.now(),hp=bot.health,steps=[],reclaims=[];let issue=null;
+const capNames=['oak_planks','cobbled_deepslate','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','tuff','basalt'];
+const base=new V(142,-37,2231),column=[new V(142,-36,2231),new V(142,-35,2231)];
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+function guard(){if(bot.health<hp||Date.now()-begin>40000)throw Error('health/budget');}
+try{
+ if(!bot.inventory.items().some(i=>i.name==='stone_pickaxe')||bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0)<2)throw Error('loan not ordinary');
+ if(Object.values(bot.entities).some(e=>e.type==='player'&&e.id!==bot.entity.id&&e.position.distanceTo(new V(142.5,-36,2231.5))<.85))throw Error('pillar occupied');
+ for(let y=-36;y<=-32;y++){const b=bot.blockAt(new V(142,y,2231));if(b.boundingBox!=='empty')throw Error('vertical headroom '+y+':'+b.name);}
+ await bot.pathfinder.goto(new goals.GoalBlock(142,-36,2231));bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(3);
+ for(let n=0;n<2;n++){
+  guard();const ref=bot.blockAt(n===0?base:column[n-1]),dest=column[n],y0=bot.entity.position.y;
+  await bot.equip(bot.inventory.items().find(i=>capNames.includes(i.name)),'hand');await bot.lookAt(ref.position.offset(.35,.985,.65),true);await bot.waitForTicks(2);
+  let hit=bot.blockAtCursor(4.5);if(!hit||!hit.position.equals(ref.position)||hit.face!==1)throw Error('floor TOP not direct');
+  const before=bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);bot.setControlState('jump',true);
+  let apex=false;for(let i=0;i<12;i++){await bot.waitForTicks(1);guard();if(bot.entity.position.y>y0+1.015){apex=true;break;}}
+  if(!apex)throw Error('jump height unavailable');
+  await bot.lookAt(ref.position.offset(.35,.985,.65),true);hit=bot.blockAtCursor(4.5);if(!hit||!hit.position.equals(ref.position)||hit.face!==1)throw Error('jump TOP not direct');
+  console.log('UP_PRE',JSON.stringify({n,ref:ref.position,dest,p:bot.entity.position,vel:bot.entity.velocity,hit:{p:hit.position,face:hit.face,intersect:hit.intersect},before}));
+  try{await bot.placeBlock(ref,new V(0,1,0));}finally{bot.setControlState('jump',false);}
+  await bot.waitForTicks(12);const after=bot.inventory.items().filter(i=>capNames.includes(i.name)).reduce((s,i)=>s+i.count,0);
+  const result={n,actual:bot.blockAt(dest).name,p:bot.entity.position.clone(),ground:bot.entity.onGround,hp:bot.health,before,after};steps.push(result);console.log('UP_EFFECT',JSON.stringify(result));
+  if(!capNames.includes(result.actual)||Math.abs(result.p.y-(y0+1))>.05||!result.ground)throw Error('physical rise not established');
+ }
+}catch(e){issue=String(e);console.log('TEST_FAIL',issue);}finally{
+ bot.clearControlStates();bot.pathfinder.setGoal(null);
+ // Reclaim only own actually placed blocks, top down; current support ref below remains intact.
+ for(const p of column.slice().reverse()){
+  const b=bot.blockAt(p);if(!capNames.includes(b.name))continue;
+  await bot.equip(bot.inventory.items().find(i=>i.name==='stone_pickaxe'),'hand');await bot.lookAt(p.offset(.35,.985,.65),true);await bot.waitForTicks(2);const h=bot.blockAtCursor(4.5);
+  if(!h||!h.position.equals(p)){reclaims.push({p,refused:'no direct ray'});continue;}
+  await bot.dig(b,false,'raycast');await bot.waitForTicks(10);reclaims.push({p,actual:bot.blockAt(p).name,body:bot.entity.position.clone(),ground:bot.entity.onGround,hp:bot.health});
+ }
+ bot.clearControlStates();await bot.waitForTicks(5);
+}
+return {steps,reclaims,issue,elapsed:Date.now()-begin,p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,velocity:bot.entity.velocity,base:bot.blockAt(base).name,column:column.map(p=>({p,n:bot.blockAt(p).name})),inventory:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed}))};
+-- output --
+UP_PRE {"n":0,"ref":{"x":142,"y":-37,"z":2231},"dest":{"x":142,"y":-36,"z":2231},"p":{"x":142.5,"y":-34.833890739061786,"z":2231.500194244236},"vel":{"x":0,"y":0.08307781780646721,"z":0},"hit":{"p":{"x":142,"y":-37,"z":2231},"face":1,"intersect":{"x":142.34045825496233,"y":-36,"z":2231.6597359892735}},"before":2}
+UP_EFFECT {"n":0,"actual":"stone_bricks","p":{"x":142.5,"y":-35,"z":2231.500194244236},"ground":true,"hp":20,"before":2,"after":1}
+UP_PRE {"n":1,"ref":{"x":142,"y":-36,"z":2231},"dest":{"x":142,"y":-35,"z":2231},"p":{"x":142.5,"y":-33.833890739061786,"z":2231.500194244236},"vel":{"x":0,"y":0.08307781780646721,"z":0},"hit":{"p":{"x":142,"y":-36,"z":2231},"face":1,"intersect":{"x":142.34045825496233,"y":-35,"z":2231.6597359892735}},"before":1}
+UP_EFFECT {"n":1,"actual":"cobbled_deepslate","p":{"x":142.5,"y":-34,"z":2231.500194244236},"ground":true,"hp":20,"before":1,"after":0}
+-- returned --
+{"steps": [{"n": 0, "actual": "stone_bricks", "p": {"x": 142.5, "y": -35, "z": 2231.500194244236}, "ground": true, "hp": 20, "before": 2, "after": 1}, {"n": 1, "actual": "cobbled_deepslate", "p": {"x": 142.5, "y": -34, "z": 2231.500194244236}, "ground": true, "hp": 20, "before": 1, "after": 0}], "reclaims": [{"p": {"x": 142, "y": -35, "z": 2231}, "actual": "air", "body": {"x": 142.5, "y": -35, "z": 2231.500194244236}, "ground": true, "hp": 20}, {"p": {"x": 142, "y": -36, "z": 2231}, "actual": "air", "body": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "ground": true, "hp": 20}], "issue": null, "elapsed": 8434, "p": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20, "ground": true, "velocity": {"x": 0, "y": -0.0784000015258789, "z": 0}, "base": "cracked_stone_bricks", "column": [{"p": "[repeated reference]", "n": "air"}, {"p": "[repeated reference]", "n": "air"}], "inventory": [{"n": "book", "c": 3, "wear": null}, {"n": "stone_pickaxe", "c": 1, "wear": 25}, {"n": "cobbled_deepslate", "c": 1, "wear": null}, {"n": "stone_bricks", "c": 1, "wear": null}]}
+== #9387 2026-10-18T10:17:15 p4 role=exploration_partner iter=20 0 s
+bot.chat("PILLAR PHYSICAL SUCCESS9386: ordinaryjump+visibleTOP+normalUPplace1 then2 reachedactualfeet-36\u2192-35\u2192-34, eachgrounded/HP20, caps2\u21921\u21920, actualSTONE_BRICK thenDEEP. Samecallerreclaimedtopdownboth\u2192AIR, returnedoriginalfeet-36HP20grounded, caps2recovered/toolwear23\u219225. Adopt jumpuntilfoot+1.015 (actual+1.166), thenTOPcursor/place; no Endcloudsafetyclaim. Originalloan/prep2minbudgetMISSED; physical8.4s. Accept primaryraisedentry afteractualkit and safenorth\u2192portalroute.")
+== #9388 2026-10-18T10:17:41 p4 role=exploration_partner iter=20 0 s
+const V=require('vec3').Vec3;const start=bot.entity.position.floored(),goal=new V(131,-36,2275),hostiles=Object.values(bot.entities).filter(e=>e.type==='hostile').map(e=>e.position.clone());
+function key(p){return [p.x,p.y,p.z].join(',');}function full(p){const b=bot.blockAt(p);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+function safe(p){if(p.x<126||p.x>146||p.z<2229||p.z>2276||p.y<-38||p.y>-34)return false;if(p.x>=145&&p.z>=2238&&p.z<=2250)return false;if(hostiles.some(q=>q.distanceTo(p.offset(.5,0,.5))<5))return false;return full(p.offset(0,-1,0))&&[0,1].every(d=>bot.blockAt(p.offset(0,d,0))?.boundingBox==='empty');}
+const q=[start],prev=new Map([[key(start),null]]);let found=null;
+for(let i=0;i<q.length&&i<6000;i++){const p=q[i];if(p.equals(goal)){found=p;break;}for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(const dy of [0,1,-1]){
+ const n=p.offset(dx,dy,dz);if(prev.has(key(n))||!safe(n))continue;
+ // Rising needs swept headroom above origin; descending needs target's extra upper entry cell.
+ if(dy===1&&bot.blockAt(p.offset(0,2,0))?.boundingBox!=='empty')continue;
+ if(dy===-1&&bot.blockAt(n.offset(0,2,0))?.boundingBox!=='empty')continue;
+ prev.set(key(n),p);q.push(n);
+}}
+const route=[];if(found){for(let p=found;p;p=prev.get(key(p)))route.push([p.x,p.y,p.z]);route.reverse();}
+global.P4Route20=route;
+return {found:!!found,visited:q.length,route,hostilesNearRoute:hostiles.filter(p=>route.some(a=>p.distanceTo(new V(...a))<8)),pos:bot.entity.position,hp:bot.health};
+-- returned --
+{"found": false, "visited": 70, "route": [], "hostilesNearRoute": [], "pos": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20}
+== #9389 2026-10-18T10:17:59 p4 role=exploration_partner iter=20 0 s
+const V=require('vec3').Vec3;const start=bot.entity.position.floored(),goal=new V(131,-36,2275),hostiles=Object.values(bot.entities).filter(e=>e.type==='hostile').map(e=>e.position.clone());
+function key(p){return [p.x,p.y,p.z].join(',');}function full(p){const b=bot.blockAt(p);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+function safe(p){if(p.x<126||p.x>146||p.z<2229||p.z>2276||p.y<-38||p.y>-34)return false;if(p.x>=145&&p.z>=2238&&p.z<=2250)return false;if(hostiles.some(q=>q.distanceTo(p.offset(.5,0,.5))<3))return false;return full(p.offset(0,-1,0))&&[0,1].every(d=>bot.blockAt(p.offset(0,d,0))?.boundingBox==='empty');}
+const q=[start],prev=new Map([[key(start),null]]);let found=null;
+for(let i=0;i<q.length&&i<6000;i++){const p=q[i];if(p.equals(goal)){found=p;break;}for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(const dy of [0,1,-1]){
+ const n=p.offset(dx,dy,dz);if(prev.has(key(n))||!safe(n))continue;
+ // Rising needs swept headroom above origin; descending needs target's extra upper entry cell.
+ if(dy===1&&bot.blockAt(p.offset(0,2,0))?.boundingBox!=='empty')continue;
+ if(dy===-1&&bot.blockAt(n.offset(0,2,0))?.boundingBox!=='empty')continue;
+ prev.set(key(n),p);q.push(n);
+}}
+const route=[];if(found){for(let p=found;p;p=prev.get(key(p)))route.push([p.x,p.y,p.z]);route.reverse();}
+global.P4Route20=route;
+return {found:!!found,visited:q.length,route,hostilesNearRoute:hostiles.filter(p=>route.some(a=>p.distanceTo(new V(...a))<8)),pos:bot.entity.position,hp:bot.health};
+-- returned --
+{"found": false, "visited": 116, "route": [], "hostilesNearRoute": [], "pos": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20}
+== #9390 2026-10-18T10:18:17 p4 role=exploration_partner iter=20 0 s
+const V=require('vec3').Vec3;const start=bot.entity.position.floored(),goal=new V(131,-36,2275),hostiles=Object.values(bot.entities).filter(e=>e.type==='hostile').map(e=>e.position.clone());
+function key(p){return [p.x,p.y,p.z].join(',');}function full(p){const b=bot.blockAt(p);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+function safe(p){if(p.x<126||p.x>153||p.z<2229||p.z>2276||p.y<-42||p.y>-28)return false;if(p.x>=145&&p.z>=2238&&p.z<=2250)return false;if(hostiles.some(q=>q.distanceTo(p.offset(.5,0,.5))<3))return false;return full(p.offset(0,-1,0))&&[0,1].every(d=>bot.blockAt(p.offset(0,d,0))?.boundingBox==='empty');}
+const q=[start],prev=new Map([[key(start),null]]);let found=null;
+for(let i=0;i<q.length&&i<6000;i++){const p=q[i];if(p.equals(goal)){found=p;break;}for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(const dy of [0,1,-1]){
+ const n=p.offset(dx,dy,dz);if(prev.has(key(n))||!safe(n))continue;
+ // Rising needs swept headroom above origin; descending needs target's extra upper entry cell.
+ if(dy===1&&bot.blockAt(p.offset(0,2,0))?.boundingBox!=='empty')continue;
+ if(dy===-1&&bot.blockAt(n.offset(0,2,0))?.boundingBox!=='empty')continue;
+ prev.set(key(n),p);q.push(n);
+}}
+const route=[];if(found){for(let p=found;p;p=prev.get(key(p)))route.push([p.x,p.y,p.z]);route.reverse();}
+global.P4Route20=route;
+return {found:!!found,visited:q.length,route,hostilesNearRoute:hostiles.filter(p=>route.some(a=>p.distanceTo(new V(...a))<8)),pos:bot.entity.position,hp:bot.health};
+-- returned --
+{"found": false, "visited": 116, "route": [], "hostilesNearRoute": [], "pos": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20}
+== #9393 2026-10-18T10:18:37 p4 role=exploration_partner iter=20 0 s
+const V=require('vec3').Vec3;const start=bot.entity.position.floored(),goal=new V(131,-36,2275),hostiles=Object.values(bot.entities).filter(e=>e.type==='hostile').map(e=>e.position.clone());
+function key(p){return [p.x,p.y,p.z].join(',');}function full(p){const b=bot.blockAt(p);return b&&b.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');}
+function safe(p){if(p.x<126||p.x>153||p.z<2229||p.z>2276||p.y<-42||p.y>-28)return false;return full(p.offset(0,-1,0))&&[0,1].every(d=>bot.blockAt(p.offset(0,d,0))?.boundingBox==='empty');}
+const q=[start],prev=new Map([[key(start),null]]);let found=null;
+for(let i=0;i<q.length&&i<6000;i++){const p=q[i];if(p.equals(goal)){found=p;break;}for(const [dx,dz] of [[1,0],[-1,0],[0,1],[0,-1]])for(const dy of [0,1,-1]){
+ const n=p.offset(dx,dy,dz);if(prev.has(key(n))||!safe(n))continue;
+ // Rising needs swept headroom above origin; descending needs target's extra upper entry cell.
+ if(dy===1&&bot.blockAt(p.offset(0,2,0))?.boundingBox!=='empty')continue;
+ if(dy===-1&&bot.blockAt(n.offset(0,2,0))?.boundingBox!=='empty')continue;
+ prev.set(key(n),p);q.push(n);
+}}
+const route=[];if(found){for(let p=found;p;p=prev.get(key(p)))route.push([p.x,p.y,p.z]);route.reverse();}
+global.P4Route20=route;
+return {found:!!found,visited:q.length,route,hostilesNearRoute:hostiles.filter(p=>route.some(a=>p.distanceTo(new V(...a))<8)),pos:bot.entity.position,hp:bot.health};
+-- returned --
+{"found": true, "visited": 247, "route": [[142, -36, 2231], [141, -36, 2231], [140, -36, 2231], [140, -35, 2232], [140, -36, 2233], [140, -36, 2234], [140, -36, 2235], [140, -36, 2236], [140, -36, 2237], [140, -36, 2238], [140, -36, 2239], [139, -36, 2239], [139, -36, 2240], [139, -36, 2241], [139, -36, 2242], [139, -36, 2243], [139, -36, 2244], [139, -36, 2245], [139, -36, 2246], [139, -36, 2247], [139, -36, 2248], [139, -36, 2249], [139, -36, 2250], [139, -36, 2251], [139, -36, 2252], [139, -36, 2253], [139, -36, 2254], [139, -36, 2255], [138, -36, 2255], [137, -36, 2255], [136, -36, 2255], [135, -36, 2255], [134, -36, 2255], [133, -36, 2255], [132, -36, 2255], [131, -36, 2255], [131, -36, 2256], [130, -36, 2256], [130, -36, 2257], [130, -36, 2258], [130, -36, 2259], [130, -36, 2260], [130, -36, 2261], [130, -36, 2262], [130, -36, 2263], [130, -36, 2264], [130, -36, 2265], [129, -36, 2265], [129, -36, 2266], [128, -36, 2266], [128, -36, 2267], [128, -36, 2268], [128, -36, 2269], [128, -36, 2270], [128, -36, 2271], [128, -36, 2272], [129, -36, 2272], [130, -36, 2272], [131, -36, 2272], [131, -36, 2273], [131, -36, 2274], [131, -36, 2275]], "hostilesNearRoute": [{"x": 130.51249998807907, "y": -40, "z": 2258.699999988079}, {"x": 143.73245416061567, "y": -38.5, "z": 2246.300000011921}, {"x": 129.7369529082597, "y": -42, "z": 2253.229505312908}, {"x": 144.30000001192093, "y": -36.89999997615814, "z": 2246.699999988079}, {"x": 143.32783850884198, "y": -37.99870118498802, "z": 2247.6241753514555}, {"x": 144.69999998807907, "y": -38, "z": 2247.699999988079}, {"x": 138.30000001192093, "y": -42, "z": 2247.4914773975975}, {"x": 141.69999998807907, "y": -40.58000001311302, "z": 2247.401514223623}, {"x": 140.69990235567093, "y": -42, "z": 2246.300097644329}, {"x": 137.74125975370407, "y": -41.74772462248802, "z": 2246.4663194776745}, {"x": 144.0369114675053, "y": -38.5, "z": 2247.699999988079}, {"x": 140.62411785500493, "y": -42, "z": 2247.005664050579}, {"x": 142.8084575323055, "y": -39.5, "z": 2248.6205671126136}, {"x": 143.11257934097267, "y": -38.49870118498802, "z": 2246.517125262824}, {"x": 140.69999998807907, "y": -41.950000047683716, "z": 2247.986520940513}, {"x": 129.30000001192093, "y": -37.89999997615814, "z": 2257.699999988079}, {"x": 146.4675528131827, "y": -34, "z": 2252.8456210938684}, {"x": 142.17659316052902, "y": -34, "z": 2257.767064658625}], "pos": {"x": 142.5, "y": -36, "z": 2231.500194244236}, "hp": 20}
+== #9394 2026-10-18T10:18:58 p4 role=exploration_partner iter=20 0 s
+bot.chat("Fresh routeplan9391 geometry-only found62nodes northlibrary\u2192portal viaTABLEstep140,-35,2232 then1402233..2239\u21921392240..2255\u21921302256..2265\u21921282272\u21921312275, avoidsoldbed146. Enemy-radius3/5 BFS failed because foes mostlyunderfullfloors (e.g spider130,-37.9,2257.7 beneathroute-36), notgeometryfailure. Need actualHP/currentbodyguards on no-dig movement; no safetyclaimfromroute. Receivingkitnow140.5 peractualbirth.")
+== #9395 2026-10-18T10:18:59 p4 role=exploration_partner iter=20 1.1 s
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+try{await bot.pathfinder.goto(new goals.GoalBlock(140,-36,2231));await bot.waitForTicks(15);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();return {p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed})),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<3).map(e=>({id:e.id,p:e.position,meta:e.metadata}))};}
+-- returned --
+{"p": {"x": 140.5898815559352, "y": -36, "z": 2231.500194244236}, "hp": 20, "inv": [{"n": "book", "c": 3, "wear": null}, {"n": "stone_pickaxe", "c": 1, "wear": 25}, {"n": "cobbled_deepslate", "c": 12, "wear": null}, {"n": "stone_bricks", "c": 1, "wear": null}, {"n": "stone_pickaxe", "c": 1, "wear": 1}, {"n": "stone_sword", "c": 1, "wear": 0}], "items": []}
