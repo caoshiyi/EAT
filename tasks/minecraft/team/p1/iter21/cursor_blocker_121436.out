@@ -1,0 +1,24 @@
+program #9739 on p1: 6.3 s
+--- output ---
+UPPER_BODY {"p":{"x":145.5,"y":-34,"z":2231.4995945437513},"hp":20,"food":19,"ground":true,"inv":[]}
+NORMAL_FIST {"id":1936,"p":{"x":145.5,"y":-34,"z":2231.4995945437513},"enemy":{"x":145.30000001192093,"y":-36,"z":2230.300000011921},"ownHP":20,"enemyHP":9,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.535875,"y":-33.724875,"z":2231.7149695437515},"enemy":{"x":145.30000001192093,"y":-36,"z":2230.300000011921},"ownHP":17.5,"enemyHP":8,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.65971442167026,"y":-34,"z":2232.4683289208842},"enemy":{"x":145.30000001192093,"y":-35.41723864060307,"z":2230.300000011921},"ownHP":17.5,"enemyHP":7,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.65971442167026,"y":-34,"z":2232.4737295984582},"enemy":{"x":145.30000001192093,"y":-35.41723864060307,"z":2230.300000011921},"ownHP":17.5,"enemyHP":6,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.65971442167026,"y":-34,"z":2232.4737295984582},"enemy":{"x":145.30000001192093,"y":-35.695196587889804,"z":2230.300000011921},"ownHP":17.5,"enemyHP":5,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.65971442167026,"y":-34,"z":2232.4737295984582},"enemy":{"x":145.30000001192093,"y":-36,"z":2230.300000011921},"ownHP":17.5,"enemyHP":4,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.65971442167026,"y":-34,"z":2232.4737295984582},"enemy":{"x":145.30000001192093,"y":-35.41723864060307,"z":2230.300000011921},"ownHP":17.5,"enemyHP":3,"cursor":1936}
+NORMAL_FIST {"id":1936,"p":{"x":145.7,"y":-34,"z":2232.7},"enemy":{"x":145.54342054908923,"y":-35.69531481247807,"z":2230.300000011921},"ownHP":14.5,"enemyHP":2,"cursor":1936}
+HIT_BLOCKED {"d":3.124099861204611,"p":{"x":145.7,"y":-34,"z":2232.7},"enemy":{"x":145.69999998807907,"y":-36,"z":2230.300000011921},"cursor":null,"real":{"origin":{"x":145.7,"y":-32.38,"z":2232.7},"dir":{"x":-0.00016933103859827773,"y":-0.7569950556517215,"z":-0.6534205820494534},"max":3,"hit":{"p":{"x":145,"y":-35,"z":2231},"n":"netherrack","face":1,"distance":2.1400403977609694,"hit":{"x":145.6996376247368,"y":-34,"z":2231.3016535576853}}},"model":{"origin":{"x":145.7,"y":-32.2,"z":2232.7},"dir":{"x":-0.00016933103859827773,"y":-0.7569950556517215,"z":-0.6534205820494534},"max":3,"hit":{"p":{"x":145,"y":-35,"z":2231},"n":"netherrack","face":1,"distance":2.377822664178855,"hit":{"x":145.69959736081867,"y":-34,"z":2231.1462817307615}}}}
+END {"p":{"x":145.7,"y":-34,"z":2232.7},"hp":15.5,"food":17,"ground":true,"inv":[],"attacks":8,"dead":null,"drops":[],"near":[{"n":"skeleton","p":{"x":145.69999998807907,"y":-36,"z":2230.300000011921}}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p4 was doomed to fall by Ender Dragon
+p4: FAIL9730 beforethrow: oldstairchanged15 (floor45,64,-3missing/newgeometry) atfeet64, ZEROPEARLUSE/attack. Return failedbelow61 with actualknockback body46.421,60.738,2.461 HP13 groundFALSE; laterstatus47.2,58. Rescue9735 START alreadyNEWLIFEOWbed20, event 
+p4: doomedfallEnderDragon. LOSTentirePEARL/2WOOD/STONE118/END45/SLAB3 kit, no178damage. P2 doNOTrescueexposedstairs merelyforloan; investigateactualdrops/clouds first ifuseful. Changedassumption required: staircase exposedtoboss destruction/knockback, cannotun
+p4: conditionallyreuse. NeedcurrentOWLendingnow, pearltrialRETIREDnotrepeated.
+p2: URGENT9730 completed FAILED BEFORETHROW: oldstairchanged15 floor45,64,-3 nowAIR independently9736; reversefailed60.74/airborne/HP13, PEARL1 unused. EVENT12:13:32 P4doomedfallDRAGON44.6,58,-15.5, nowOWLbed20EMPTY. LoanPEARL/WOOD receivedbutNEVERUSED forfiel
+p2: dthrow, lostunlessfreshsalvage. No9→8effect. Recommend changedallocation: P4nowOWL can complementP1actualequipment/remainingSkeleton, P2retainedEndSword/Stone+boundedobserver; do NOTrestartunqualifiedEndascent/pearlstockchain. Iinspectdropfeasibilityonly, 
+p2: no riskyrescuepromise.
+--- p1 now: (145.7, -34, 2232.7) in overworld, health 15.5/20, food 17/20, alive

@@ -1,0 +1,13 @@
+program #9680 on p1: 6 s
+--- output ---
+END {"p":{"x":147.78391330709002,"y":-33,"z":2238.492720881452},"hp":17.16666603088379,"food":20,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",3,null],["string",1,null]],"foes":[{"n":"creeper","p":{"x":144.6999349986097,"y":-38,"z":2246.5000731395717}},{"n":"skeleton","p":{"x":148.52036271095812,"y":-36,"z":2240.438037097454}},{"n":"skeleton","p":{"x":144.50424891794742,"y":-35,"z":2241.569445368358}}],"roof":"air"}
+--- error ---
+Error: move timeout 148,-36,2231
+    at p1-program-9680.js:9:150
+    at guard (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:63:17)
+    at Timeout._onTimeout (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:68:52)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (147.8, -33, 2238.5) in overworld, health 17.2/20, food 20/20, alive

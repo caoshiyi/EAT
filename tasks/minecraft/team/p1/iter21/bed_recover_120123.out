@@ -1,0 +1,11 @@
+program #9685 on p1: 2.8 s
+--- output ---
+MOVE {"p":{"x":147.48266652441265,"y":-33,"z":2231.5},"hp":2.166666030883789,"food":17,"ground":true,"inv":[["stick",1,null],["wooden_pickaxe",1,1],["book",9,null],["wooden_sword",1,2],["blackstone",1,null],["oak_planks",3,null],["string",1,null]]}
+END {"p":{"x":141.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"roof":"air"}
+--- error ---
+Error: not grounded 146,-33,2231
+    at go (p1-program-9685.js:9:347)
+    at async p1-program-9685.js:11:112
+--- chat since this player's previous program ---
+[server] p1 was shot by Skeleton
+--- p1 now: (141.5, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

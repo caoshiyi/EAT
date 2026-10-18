@@ -1,0 +1,1 @@
+console.log(JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,mobs:Object.values(bot.entities).filter(e=>e.name==='skeleton').map(e=>({id:e.id,p:e.position,w:e.width,h:e.height,d:e.position.distanceTo(bot.entity.position),metadata:e.metadata}))}));
