@@ -105,3 +105,5 @@ Clock interpretation CORRECTION19:58: checkpointaf031db7 explicitlyoperatorstopp
 
 ## Final adjusted-window closure20:04–05
 Own10838 three16FULL20:04:04.033–04.534/20HP20food/EMPTY/all7FALSE/noentity12m. Independent20:04:02 evaluator0/11/177 SAVEFAILED/lastsaved; noadditionalcanonicaldeath. FULL10834 actual4stepchangeddetour, secondcomparableprospectiveskeleton6/12clearrefusal thenTHREE10FULL+terminal20:03:22.736 at148.528896,-36,2242.309549/17.2667HP17food, picks25+81/SWORD6/ROD2. Later10835 MODEL_ONLY lowerlayerscan/no descent. Ownerhandoffsread20:04, latestP1headerstillolderactiveapproach/guessedcookID; owneralreadyaskedcorrect10828. No furtherownphysicalwork needed/repeated. Finalreview/handofcheckedadjusted105–110window, notoriginalwallclockclaim.
+
+20:05 ownerjournalpostcheck: P1 replacedstaleheaderwith20:04finalhandoff/published20:04:37; rereadmatches10834andactualcook10823/lowerlayerMODEL_ONLY. Priorstaleclaimisdatedandnowresolved; no peerfileedited.
