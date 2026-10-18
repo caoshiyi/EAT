@@ -41,6 +41,9 @@ player's state, and the chat since that player's last program. Mineflayer's docu
 - Survival rules only: no server commands (a chat message starting with `/` is refused), no access to the server,
   its files, its console or `.work/`.
 - Never modify `tools/` or the server.
+- Play only what a player with the vanilla client could do: you can hit, use, open, dig or place only what you can
+  see, within the client's reach; the arena refuses anything behind a block, including raw packets.
+- No internet: the world, the arena's records and `tasks/minecraft/team/` are the only sources.
 - Whatever the team wants to keep besides the world itself (coordinates, lessons, tools, plans) goes in
   `tasks/minecraft/team/`, in any form the team chooses. It is committed after every iteration and is, with the
   world and the arena's records, all the next team inherits.
