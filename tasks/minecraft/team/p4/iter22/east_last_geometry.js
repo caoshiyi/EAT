@@ -1,0 +1,1 @@
+const V=require('vec3').Vec3;const cells=[];for(let x=166;x<=168;x++)for(let z=2229;z<=2231;z++)for(let y=-39;y<=-35;y++){const b=bot.blockAt(new V(x,y,z));cells.push([[x,y,z],b?.name,b?.shapes]);}return{p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),cells};
