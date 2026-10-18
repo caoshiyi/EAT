@@ -1,0 +1,131 @@
+== #9324 2026-10-18T10:07:24 p2 role=continuity_owner iter=20 0 s
+bot.chat("P2 actual#9323 newbed directvisibleTOP ray thenordinaryuse -> messageRespawn point set; daylight refusal/notsleeping. Note bot.spawnPoint property remained0,58,-32 and is NOT evidenceagainst actualbedrespawn message. CurrentP2actual143.7,-36,2231.55HP10.55food17/empty, clear ofP1/P4tablehandoff. Correction prior9314 yieldclaim false: actual#9313 didnotmove, #9317NoPath, then#9320 ordinarymanualyield succeeded. Exactworldstate over program labels.")
+== #9330 2026-10-18T10:08:12 p2 role=continuity_owner iter=20 0 s
+bot.chat("10MIN EVIDENCE10:08: evaldragon0/11 deaths134 (p138/p240/p326/p430), savedstatewarning persists. P2actualnewbedRespawnpointset9323; P1#9326 usedP4northTABLE1402232 +lateP2sticks/DEEP3\u2192STONE0wear, supportadoptedafterbudget. No legaldamage/Endbody retained. After3Endfailures changed nexttest=OWpillar thenraisedentry. Newresourceassumptionuncertain: P4giftWOOD8donorloss9322 butP1#9327 ordinarywood0, so notyetdelivery; inspectactualdrop beforedependentquota.")
+== #9334 2026-10-18T10:08:31 p2 role=continuity_owner iter=20 0 s
+return{p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),p1:bot.players.p1?.entity?.position,p4:bot.players.p4?.entity?.position};
+-- returned --
+{"p": {"x": 143.7, "y": -36, "z": 2231.549386189248}, "hp": 10.55274772644043, "inventory": [["oak_planks", 8]], "p1": {"x": 138.4996707684642, "y": -38, "z": 2235.5817550315087}, "p4": {"x": 139.2920912210601, "y": -36, "z": 2231.5}}
+== #9336 2026-10-18T10:08:48 p2 role=continuity_owner iter=20 0 s
+bot.chat("P2 #9334 independentlyordinaryWOOD8 confirms misdirectedP4gift retained. I will transfer toP1 by changed LOCAL downwarddrop at143.7,-36,2231.55, thenretreatwest140.5 beforepickupdelay; no aimedlongthrow. RecipientP1 can walktoobservedflooritemafterdonorclears. Whole supportbudget10:08:30\u219210:10:30; no newsource needed. P4staywestof140 toavoidrecapture.")
+== #9337 2026-10-18T10:08:48 p2 role=continuity_owner iter=20 3.2 s
+const p=bot.entity.position.clone(),it=bot.inventory.items().find(i=>i.name==='oak_planks');if(!it||it.count!==8)return{refused:'cargo'};await bot.lookAt(p.offset(.03,-1,.04),true);await bot.waitForTicks(3);console.log('DROP_PRE',JSON.stringify({p,yaw:bot.entity.yaw,pitch:bot.entity.pitch,wood:it.count}));await bot.tossStack(it);const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await bot.pathfinder.goto(new goals.GoalBlock(140,-36,2231))}finally{bot.pathfinder.setGoal(null);bot.clearControlStates()};await bot.waitForTicks(45);return{p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>({id:e.id,p:e.position,meta:e.metadata})),p1:bot.players.p1?.entity?.position};
+-- output --
+DROP_PRE {"p":{"x":143.7,"y":-36,"z":2231.549386189248},"yaw":-2.49756615960373,"pitch":-1.5524703696488595,"wood":8}
+-- returned --
+{"p": {"x": 140.5, "y": -36, "z": 2231.50417578602}, "hp": 10.55274772644043, "inventory": [], "items": [{"id": 3667, "p": {"x": 141.125, "y": -33, "z": 2232.2446415625654}, "meta": [null, null, null, null, null, null, null, null, {"present": true, "itemId": 36, "itemCount": 2}]}, {"id": 4388, "p": {"x": 139.277052848734, "y": -33, "z": 2233.875}, "meta": [null, null, null, null, null, null, null, null, {"present": true, "itemId": 36, "itemCount": 1}]}], "p1": {"x": 140.500048828125, "y": -36, "z": 2231.4839780712764}}
+== #9340 2026-10-18T10:09:15 p2 role=continuity_owner iter=20 0 s
+bot.chat("Physical#9337 localdownwarddrop lostP2wood8, but currentstatus nowP4at142.3/WOOD8, P1wood0: P4recaptured while movingnear143.7drop, notdelivery. No loss/no newquota. Need SINGLEreceiverplan: P4dropwood8 locally thenretreatwest138; P1walkactualitemlocation toreceive. Iwillvacatewest136 outpickup; do not aimedthrowagain. OriginalP2supportbudgetends10:10:30 unchanged.")
+== #9341 2026-10-18T10:09:15 p2 role=continuity_owner iter=20 0.1 s
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(136,-36,2231)),new Promise((_,r)=>setTimeout(()=>r(Error('yieldbudget')),5000))])}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('ACTUAL',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])}));}
+-- output --
+ACTUAL {"p":{"x":140.25049532209133,"y":-36,"z":2231.5031495367057},"hp":10.55274772644043,"food":17,"inv":[]}
+-- error --
+NoPath: No path to the goal!
+    at error (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/goto.js:2:15)
+    at EventEmitter.noPathListener (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/lib/goto.js:26:17)
+    at EventEmitter.emit (node:events:519:28)
+    at EventEmitter.monitorMovement (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer-pathfinder/index.js:446:11)
+    at EventEmitter.emit (node:events:531:35)
+    at tickPhysics (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/physics.js:85:11)
+    at Timeout.doPhysics [as _onTimeout] (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/physics.js:72:7)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+== #9342 2026-10-18T10:09:22 p2 role=continuity_owner iter=20 0.3 s
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await bot.pathfinder.goto(new goals.GoalBlock(138,-36,2231))}finally{bot.pathfinder.setGoal(null);bot.clearControlStates()};return{p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,inventory:bot.inventory.items().map(i=>[i.name,i.count])};
+-- returned --
+{"p": {"x": 138.5, "y": -36, "z": 2231.5008404713512}, "hp": 10.55274772644043, "ground": true, "inventory": []}
+== #9343 2026-10-18T10:09:27 p2 role=continuity_owner iter=20 0 s
+bot.chat("P2 actual#9342 now138.5,-36,2231.5HP10.55empty, outofwooditempickupnear142.3. Attempt136#9341 NoPathcorrected toknown138, no terrainchanges. P4 own8woodretained; directfloor-localdrop withactualP1pickup closes pendingdelivery without newsource.")
+== #9349 2026-10-18T10:10:16 p2 role=continuity_owner iter=20 0.8 s
+// Fresh iteration20 read-only camera tool. No hit/use/dig/place/network/packets.
+// Find an actual first-hit face with ordinary camera aim before any interaction.
+const {Vec3}=require('vec3');
+async function visibleFace(p, face, budgetMs=1800) {
+  const normals=[new Vec3(0,-1,0),new Vec3(0,1,0),new Vec3(0,0,-1),new Vec3(0,0,1),new Vec3(-1,0,0),new Vec3(1,0,0)], n=normals[face], start=Date.now(),trials=[];
+  if(!n)throw Error('invalid face');
+  for(const [a,b] of [[.35,.65],[.65,.35],[.25,.25],[.75,.75],[.35,.35],[.65,.65]]) {
+    if(Date.now()-start>budgetMs)break;
+    const local=n.y?new Vec3(a,n.y>0?1:0,b):n.z?new Vec3(a,b,n.z>0?1:0):new Vec3(n.x>0?1:0,a,b);
+    const aim=p.plus(local).minus(n.scaled(.015)); // inside surface, never behind a nearer block
+    await bot.lookAt(aim,true); await bot.waitForTicks(2);
+    const hit=bot.blockAtCursor(4.5), entry=hit&&{p:hit.position,face:hit.face,intersect:hit.intersect};trials.push({aim,hit:entry});
+    if(hit&&hit.position.equals(p)&&hit.face===face&&hit.intersect&&[1.62,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(hit.intersect)<=4.5))
+      return{qualified:true,p,face,aim,intersect:hit.intersect,dist162:bot.entity.position.offset(0,1.62,0).distanceTo(hit.intersect),dist180:bot.entity.position.offset(0,1.8,0).distanceTo(hit.intersect),trials};
+  }
+  return{qualified:false,p,face,trials};
+}
+const tests=[];
+for(const [p,face] of [[new Vec3(138,-37,2231),1],[new Vec3(139,-35,2232),2],[new Vec3(138,-31,2231),0]])tests.push(await visibleFace(p,face));
+return{tests,p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),note:'Camera qualification only; no interaction performed or assumed.'};
+-- returned --
+{"tests": [{"qualified": true, "p": {"x": 138, "y": -37, "z": 2231}, "face": 1, "aim": {"x": 138.35, "y": -36.015, "z": 2231.65}, "intersect": {"x": 138.3353932307976, "y": -36, "z": 2231.664587610069}, "dist162": 1.6365538530416381, "dist180": 1.8149128116538904, "trials": [{"aim": "[repeated reference]", "hit": {"p": {"x": 138, "y": -37, "z": 2231}, "face": 1, "intersect": "[repeated reference]"}}]}, {"qualified": true, "p": {"x": 139, "y": -35, "z": 2232}, "face": 2, "aim": {"x": 139.35, "y": -34.35, "z": 2232.015}, "intersect": {"x": 139.3242103465638, "y": -34.16971833541194, "z": 2232}, "dist162": 0.9862562085409661, "dist180": 0.9640538935318399, "trials": [{"aim": "[repeated reference]", "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 2, "intersect": "[repeated reference]"}}]}, {"qualified": false, "p": {"x": 138, "y": -31, "z": 2231}, "face": 0, "trials": [{"aim": {"x": 138.35, "y": -30.985, "z": 2231.65}, "hit": null}, {"aim": {"x": 138.65, "y": -30.985, "z": 2231.35}, "hit": null}, {"aim": {"x": 138.25, "y": -30.985, "z": 2231.25}, "hit": null}, {"aim": {"x": 138.75, "y": -30.985, "z": 2231.75}, "hit": null}, {"aim": {"x": 138.35, "y": -30.985, "z": 2231.35}, "hit": null}, {"aim": {"x": 138.65, "y": -30.985, "z": 2231.65}, "hit": null}]}], "p": {"x": 138.5, "y": -36, "z": 2231.5008404713512}, "hp": 10.55274772644043, "inventory": [], "note": "Camera qualification only; no interaction performed or assumed."}
+== #9351 2026-10-18T10:10:26 p2 role=continuity_owner iter=20 0 s
+bot.chat("Useful fresh tool#9349: p2/iter20/visible_face_probe.js ordinary camera-only face sampler, testedfloorTOP+bookshelfNORTH positives and unreachabletargetnegative; HP/position/inventoryunchanged, ZEROinteraction. Samplesoff-center1.5cmINSIDEsurface thenrequires exactfirstblock+expectedface+4.5m fromboth1.62/1.8eyes. Mayreplace null-cardinal/manualaimguess forP1/P4; still must retainbody/recovery beforefailedprobe, noattack/placequalificationclaimed. Sourcesfreshdocs/world only.")
+== #9353 2026-10-18T10:10:46 p2 role=continuity_owner iter=20 0.7 s
+// Fresh iteration20 read-only camera tool. No hit/use/dig/place/network/packets.
+// Find an actual first-hit face with ordinary camera aim before any interaction.
+const {Vec3}=require('vec3');
+async function visibleFace(p, face, budgetMs=1800) {
+  const normals=[new Vec3(0,-1,0),new Vec3(0,1,0),new Vec3(0,0,-1),new Vec3(0,0,1),new Vec3(-1,0,0),new Vec3(1,0,0)], n=normals[face], start=Date.now(),trials=[];
+  if(!n)throw Error('invalid face');
+  for(const [a,b] of [[.35,.65],[.65,.35],[.25,.25],[.75,.75],[.35,.35],[.65,.65]]) {
+    if(Date.now()-start>budgetMs)break;
+    const local=n.y?new Vec3(a,n.y>0?1:0,b):n.z?new Vec3(a,b,n.z>0?1:0):new Vec3(n.x>0?1:0,a,b);
+    const aim=p.plus(local).minus(n.scaled(.015)); // inside surface, never behind a nearer block
+    await bot.lookAt(aim,true); await bot.waitForTicks(2);
+    const hit=bot.blockAtCursor(4.5), entry=hit&&{p:hit.position,face:hit.face,intersect:hit.intersect};trials.push({aim,hit:entry});
+    if(hit&&hit.position.equals(p)&&hit.face===face&&hit.intersect&&[1.62,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(hit.intersect)<=4.5))
+      return{qualified:true,p,face,aim,intersect:hit.intersect,dist162:bot.entity.position.offset(0,1.62,0).distanceTo(hit.intersect),dist180:bot.entity.position.offset(0,1.8,0).distanceTo(hit.intersect),trials};
+  }
+  return{qualified:false,p,face,trials};
+}
+const tests=[];
+for(const [p,face] of [[new Vec3(138,-37,2231),1],[new Vec3(139,-35,2232),2],[new Vec3(139,-36,2233),2]])tests.push(await visibleFace(p,face));
+return{tests:tests.map(t=>({...t,targetName:bot.blockAt(t.p)?.name})),p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),note:'Camera qualification only; no interaction performed or assumed.'};
+-- returned --
+{"tests": [{"qualified": true, "p": {"x": 138, "y": -37, "z": 2231}, "face": 1, "aim": {"x": 138.35, "y": -36.015, "z": 2231.65}, "intersect": {"x": 138.3353932307976, "y": -36, "z": 2231.664587610069}, "dist162": 1.6365538530416381, "dist180": 1.8149128116538904, "trials": [{"aim": "[repeated reference]", "hit": {"p": {"x": 138, "y": -37, "z": 2231}, "face": 1, "intersect": "[repeated reference]"}}], "targetName": "stone_bricks"}, {"qualified": true, "p": {"x": 139, "y": -35, "z": 2232}, "face": 2, "aim": {"x": 139.35, "y": -34.35, "z": 2232.015}, "intersect": {"x": 139.3242103465638, "y": -34.16971833541194, "z": 2232}, "dist162": 0.9862562085409661, "dist180": 0.9640538935318399, "trials": [{"aim": "[repeated reference]", "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 2, "intersect": "[repeated reference]"}}], "targetName": "bookshelf"}, {"qualified": false, "p": {"x": 139, "y": -36, "z": 2233}, "face": 2, "trials": [{"aim": {"x": 139.35, "y": -35.35, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -34.773068525181344, "z": 2232.3936547137278}}}, {"aim": {"x": 139.65, "y": -35.65, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -34.75257990087466, "z": 2232.159566144647}}}, {"aim": {"x": 139.25, "y": -35.75, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -36, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -35.11061624350001, "z": 2232.5080839398966}}}, {"aim": {"x": 139.75, "y": -35.25, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -34.54678281832198, "z": 2232.105236646556}}}, {"aim": {"x": 139.35, "y": -35.65, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -34.94756277108879, "z": 2232.3936547137278}}}, {"aim": {"x": 139.65, "y": -35.35, "z": 2233.015}, "hit": {"p": {"x": 139, "y": -35, "z": 2232}, "face": 4, "intersect": {"x": 139, "y": -34.621374624084815, "z": 2232.159566144647}}}], "targetName": "bookshelf"}], "p": {"x": 138.5, "y": -36, "z": 2231.5008404713512}, "hp": 10.55274772644043, "inventory": [], "note": "Camera qualification only; no interaction performed or assumed."}
+== #9355 2026-10-18T10:11:08 p2 role=continuity_owner iter=20 0 s
+bot.chat("Tooltest correction#9353: earlier9349 negative was missingtarget, NOT demonstratedoutofreach. Revised smalltest exactoccludedSOLIDbookshelf139,-36,2233: all6rays hit nearer139,2232 andcorrectlyrefused; floorTOP/sideNORTH positivesstillpass, noaction/HPchange. P4 pillar1382231 currentlyP2standing; clearingtoexistingquarrystep138,-37,2232 iffreshfloor/bodypass, outof140.5tool/142.4woodpickup. Do notplacepillarwhileP2stillontile.")
+== #9356 2026-10-18T10:11:08 p2 role=continuity_owner iter=20 0.3 s
+const {Vec3}=require('vec3'),p=new Vec3(138,-37,2232);const f=bot.blockAt(p.offset(0,-1,0));if(!f.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')||[0,1].some(y=>bot.blockAt(p.offset(0,y,0)).boundingBox!=='empty'))return{refused:'fresh geometry',p:bot.entity.position};const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await bot.pathfinder.goto(new goals.GoalBlock(138,-37,2232))}finally{bot.pathfinder.setGoal(null);bot.clearControlStates()};return{p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,foes:Object.values(bot.entities).filter(e=>['zombie','creeper','silverfish'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<8).map(e=>({name:e.name,p:e.position}))};
+-- returned --
+{"p": {"x": 138.5, "y": -36.07840000152588, "z": 2232.5432716877826}, "hp": 10.55274772644043, "ground": false, "foes": []}
+== #9357 2026-10-18T10:11:13 p2 role=continuity_owner iter=20 0.4 s
+await bot.waitForTicks(10);return{p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:bot.controlState,inventory:bot.inventory.items().map(i=>[i.name,i.count])};
+-- returned --
+{"p": {"x": 138.5, "y": -37, "z": 2232.5432716877826}, "hp": 10.55274772644043, "food": 17, "ground": true, "controls": {}, "inventory": []}
+== #9360 2026-10-18T10:11:46 p2 role=continuity_owner iter=20 0 s
+bot.chat("P2 raisedroute review fromfresh9153 section: bridgefloorY50/feet51 fitsoldcloudbase49 only IF actualcloudheight+newshotschecked. Shore84Y50AIR/51AIR/52STONE, so cuthead52 thenplacefloor50;83foot51/head52STONE butroof53AIR, shelteronlylater82+roof53native. Keepcontinuous to79+seal, notstop83. Use shallowwestedge refBoundary-.10 (e.g99.9 toplace99from100) +exactWESTface4; oldx+.74 convergence failed. Cursorplane aim1.5cminsideblock viafreshhelper avoidsboundaryguess; recoveryretreatFULLsupportbeforeclears.")
+== #9366 2026-10-18T10:12:53 p2 role=continuity_owner iter=20 0 s
+bot.chat("Independent transferfailure: P4#9364 actual140.334/HP20 inventoryEMPTY/items[]; currentP1statusSTONE3+WOOD6 vs donor9359 expectedSTONE2/WOOD4, so P1apparentlyrecollected onreturnafterquarry. Pillar notyetqualified/no P4cargo. Replacement: localdropagain thenP1stay1432231 untilP4ordinaryreceipt, notreturn140itemtile. No newsourcequota. OwnP2actual138,-37,2232 stepclearof140pickup; willvacatequarryto143 aftergift closes.")
+== #9370 2026-10-18T10:13:57 p2 role=continuity_owner iter=20 0 s
+bot.chat("Exact repeatedfailure#9368/#9369: GIFT actualitems5729pick+5731WOOD2 at143.588/143.480,2231.68, essentially donorENDING143.5\u2014not at140.5. P4#9369 looked140.334 empty/items[]. ChangeONEassumption now: require look-down wait4ticks/logpitch beforetoss, then retreat AWAY FROM ACTUAL observeditem, and recipientwalkactualcoords. Do not rerun140.5 pickup or resetbudget. This is transfergeometry/timing, not source shortage.")
+== #9372 2026-10-18T10:14:46 p2 role=continuity_owner iter=20 3.2 s
+// Fresh small survival test: one exposed bookshelf, then disposable BOOK1 drop.
+// No shared floor/roof removal and no other player's program controlled.
+const {Vec3}=require('vec3'),target=new Vec3(139,-35,2232),b=bot.blockAt(target),beforeIds=new Set(Object.keys(bot.entities)),collects=[];
+const record=(collector,item)=>collects.push({collector:collector.id,item:item.id,meta:item.metadata});bot.on('playerCollect',record);
+try{
+if(bot.entity.position.distanceTo(new Vec3(138.5,-37,2232.5))>.3)throw Error('wrong test stance');
+await bot.lookAt(target.offset(.1,.25,.5),true);await bot.waitForTicks(4);let c=bot.blockAtCursor(4.5);console.log('CUT_PRE',JSON.stringify({p:bot.entity.position,target:b.name,hit:c&&{p:c.position,face:c.face,intersect:c.intersect}}));
+if(b.name!=='bookshelf'||!c||!c.position.equals(target))throw Error('no direct visible bookshelf');
+await bot.dig(b,false,'raycast');await bot.waitForTicks(15);let it=bot.inventory.items().find(i=>i.name==='book');if(!it)throw Error('no book receipt');
+const source=bot.entity.position.clone(),count=it.count;await bot.lookAt(source.offset(.03,-1,.04),true);await bot.waitForTicks(4);console.log('DROP_PRE',JSON.stringify({source,count,pitch:bot.entity.pitch,yaw:bot.entity.yaw}));await bot.toss(it.type,null,1);
+const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
+try{await bot.pathfinder.goto(new goals.GoalBlock(140,-36,2231))}finally{bot.pathfinder.setGoal(null);bot.clearControlStates()};await bot.waitForTicks(25);
+return{source,count,after:bot.inventory.items().map(i=>[i.name,i.count]),p:bot.entity.position,hp:bot.health,collects,newItems:Object.values(bot.entities).filter(e=>e.name==='item'&&!beforeIds.has(String(e.id))&&e.position.distanceTo(source)<7).map(e=>({id:e.id,p:e.position,meta:e.metadata})),note:'Only actual observed coordinates establish where the book landed.'};
+}finally{bot.removeListener('playerCollect',record);bot.pathfinder.setGoal(null);bot.clearControlStates()}
+-- output --
+CUT_PRE {"p":{"x":138.5,"y":-37,"z":2232.5432716877826},"target":"bookshelf","hit":{"p":{"x":139,"y":-35,"z":2232},"face":4,"intersect":{"x":139,"y":-34.674453552213556,"z":2232.506553982986}}}
+-- error --
+Error: no book receipt
+    at p2-program-9372.js:9:128
+== #9375 2026-10-18T10:15:00 p2 role=continuity_owner iter=20 0 s
+return{p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>({id:e.id,p:e.position,meta:e.metadata})),p1:bot.players.p1?.entity?.position,p4:bot.players.p4?.entity?.position};
+-- returned --
+{"p": {"x": 138.5, "y": -37, "z": 2232.5432716877826}, "hp": 10.55274772644043, "inventory": [], "items": [], "p1": {"x": 140.41809517536322, "y": -36, "z": 2231.499425709678}, "p4": {"x": 140.3338688730461, "y": -36, "z": 2231.5}}
+== #9377 2026-10-18T10:15:21 p2 role=continuity_owner iter=20 0 s
+bot.chat("Own smallcalibration#9372 FAILED beforedrop: legalexactvisiblebookshelf139,-35,2232 cut\u2192AIR, butzeroP2bookreceipt, so ZEROtoss/travel. #9375 ownempty/noitems; currentstatusP4newBOOK3, P1BOOK3unchanged, so P4collectedtestbooksincidentally (notnewcargoquota). RetiredcalibrationfilemarkedFAILED; willnotrepeat. P1changedlooksettle nowappearsP4ordinarySTONE1, usefulreceipt pendingownerrecord. Mainpillar shouldcontinue; no gatefromtest.")
+== #9381 2026-10-18T10:16:28 p2 role=continuity_owner iter=20 0 s
+bot.chat("Independent#9374\u21929376 closes pickloan: actualbirthat143.5 downwardv.y-.155, donorretreat140.4, P4STONE21 ordinary. Waitafterlook hypothesisHELPED. P4#9379 woodsourceprobe zero cuts/allnearerrayhits, no caps. SinceP1alreadyordinarycaps21, recommend same provenheldDOWN+birth+retreat for2caps now ratherthan repeatoccludedwoodquota; P4pillar remainsuntested. Wholeoriginalpillarbudgetmiss preserved; no impossibilityclaim.")
