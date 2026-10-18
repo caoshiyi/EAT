@@ -1,0 +1,9 @@
+# After second native surface injury —22:34 UTC
+
+P1 G26-2#93 ordinary native portal attempt failed HP16.333->13.333 near(2.29,63,89.53), then separate excavation retained full shelter at(2.51,62,89.5),22:33:19.372. Earlier#45 also lost health. Owner retired broad native portal goals and requested <=3min current x8/9,z83/89/91 columns58..70. P3 independently proposed changing to the retained B intermediate shaft before seeing that request, then completed model11264 and requested six-column query11266 at22:34:44. No movement/cut or other-player control.
+
+Read-only covered model from LIVE13,61,78 toward8,65,83 reaches only8,61,83; no complete natural protected path. Floor-only graph does find a ten-step route but excludes roofs and is not protection proof. Actual previous cuts can invalidate graph assumptions. Exact local_shaft_model.js/.out; don't execute as a route.
+
+Six actual loaded columns requested_shaft_columns.js/.out show the best non-falling CENTER is x8,z89: y58/59 stone,60/61 sandstone,62/63 AIR,64 sandstone,65 thin SNOW,66 AIR,67 moss_block,68/69 AIR,70 basalt. AIR interfaces still require walls, floor/support and roof construction. Adjacent sand and current hostiles need owner checks. x8/9,z83 both contain SAND63+64; x8,z91 sand63..66, x9,z91 sand63..65. x9,z89 contains sand63. Therefore x8,z89 avoids a central falling sand stack, while other choices do not. A model refusal is not shaft impossibility. Recipient must fresh-qualify visible cuts, support, fluid and hostile barriers and actual retained ending.
+
+P3 first result/report11267 within3min. Live adoption/actual arrival pending. Two surface injuries have changed the method; no third unchanged far-goal attempt is credited.

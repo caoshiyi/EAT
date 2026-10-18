@@ -1,0 +1,17 @@
+program #11264 on p3: 0 s
+--- output ---
+SHAFT_MODEL {"at":"2026-10-18T22:34:35.885Z","start":{"x":13,"y":61,"z":78},"target":{"x":8,"y":65,"z":83},"covered":{"requireRoof":true,"visited":128,"best":{"x":8,"y":61,"z":83},"complete":false,"route":[{"x":13,"y":60,"z":79},{"x":13,"y":60,"z":80},{"x":13,"y":60,"z":81},{"x":13,"y":60,"z":82},{"x":13,"y":60,"z":83},{"x":12,"y":60,"z":83},{"x":11,"y":60,"z":83},{"x":10,"y":60,"z":83},{"x":9,"y":60,"z":83},{"x":8,"y":61,"z":83}]},"floorOnly":{"requireRoof":false,"visited":185,"best":{"x":8,"y":65,"z":83},"complete":true,"route":[{"x":13,"y":61,"z":79},{"x":13,"y":61,"z":80},{"x":13,"y":61,"z":81},{"x":13,"y":61,"z":82},{"x":13,"y":62,"z":83},{"x":12,"y":63,"z":83},{"x":11,"y":64,"z":83},{"x":10,"y":64,"z":83},{"x":9,"y":65,"z":83},{"x":8,"y":65,"z":83}]},"NOTE":"read-only geometry, not physical route/visibility/current enemy qualification"}
+--- returned ---
+{
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 2.1666641235351562,
+ "inventory": [],
+ "readOnly": true
+}
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive
