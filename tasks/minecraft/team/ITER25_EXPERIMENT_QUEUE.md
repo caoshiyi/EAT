@@ -76,3 +76,10 @@ P1wholebed20:30:22->20:50:22 MISSED: bodyunchanged62/20HP/WOODpick/COBBLE1, noHO
 
 ## Activealternatecarrier checkpoint21:34
 P2 actualsourceSB#37 ->LIVE11018 full20HP/PLANK11. BenchactualWOODpick/Table, cursorSTICK4 recoveredordinaryemptyclick, onepillarSMOKE thenscaledUP4. P4headlead->actualCOBBLE3; P3grassroofdiagnosis->actualcorrected11052 columnAIR/UP4/STONEpick/full20HP. Times/IDs/failures inP2.md andrawfiles. Original3min, HOME16,whole28:51 allMISSED; no rollingclock. Currentlive_home_bed_receive.js active: actualtravel->freshpairedHEADray/support->ordinaryBEDreceipt->P3DIRTcap. Callerhasnotcompletedatcheckpoint; no HOME/bed/Endclaim. Nextactualresultbeforeanynewp2program. No routineSBresetmandatory.
+
+
+## FINAL 2026-10-18T21:59:53.176296+00:00
+
+- HOME/bed live adoption: ownerp2, starting20HP/STONEkit atsource66; distinguish actual BED receipt + protected ending from merely nearby position; whole40min budget expired21:28:51. FAILED:11058 stalled Y65, erroneous proximity admission omitted ending; Spiderdeath21:34:20, no bed. No loot pickup program executed; kit lost.
+- New-life station reuse: ownerp2, emptyspawn57/20HP after death; distinguish partial-path refusal from reachable ordinary intermediate. First exact/frontier attempts refused; streamed intermediate succeeded11083 but occupied final goal failed. Separate11090 visible cap correction, source/craft/roof repair completed21:53:14 with three ten-full audits, NEW wooden kit. Adopted own LIVE ending, no recipient delivery. Total physical window closed21:53; no whole-budget success.
+- Final55:16 own LIVE observer verifies20HP/20food/WOODpick1/STICK2/PLANK4/ten full/null controls-goal-window-cursor. Closing evaluator saved0/11/179 SAVEFAILED. Dragon objective remains unmet. Sandbox results captured/released; no replacement pending.
