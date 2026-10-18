@@ -3252,3 +3252,8 @@ The reviewer’s15:13:39 field allocation used status captured15:12:16. The next
 ### Iteration22 provisional independent closure finalized — 2026-10-18T15:24:44.164113+00:00
 
 Closure was completed before minute95, rather than left pending for a final evaluator or handoff. Independent15:22:53 evaluator reads saved dragon0/11/deaths170; save failed. Fifteen arena deaths match the delta(P1seven/P2five/P4three), including one declared ordinary intentional drowning. No actual dragon hit, bed activation, new crystal effect or verified defeat. Real local capabilities and a127m approach did not survive the whole adoption chain. Current bodies are remote Overworld; P1 has a verified new enclosure/PLANK3, P2FLINT3/GRAVEL12 and P4GRAVEL1 lack qualified endings. The stand-alone closure contains current capture times, failures, uncertainties and source IDs. Final100–110-minute handoff checks and material changes continue; closure is no longer dependent on those late calls.
+
+
+### Iteration22 late error/partial-effect lesson — 2026-10-18T15:31:33.652291+00:00
+
+10203 crafted a real table before an undefined variable stopped placement;10205 subsequently placed it and opened the ordinary crafting window. Its protected label was contradicted by the fresh roof-AIR audit. Error return does not erase earlier effects, and successful window access does not establish protection. The roof was full leaves in10191; its disappearance cause is not sampled. Current inventory and geometry must be reconciled after every partial failure.
