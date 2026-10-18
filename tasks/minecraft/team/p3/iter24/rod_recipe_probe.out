@@ -1,0 +1,12 @@
+program #10660 on p3: 0 s
+--- output ---
+START Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 []
+VISIBLE_TABLE Vec3 { x: 6, y: 66, z: 82 } 1 Vec3 { x: 6.5, y: 67, z: 82.50000000000017 }
+ROD_HAND_ALL 0
+ROD_TABLE_ALL [{"result":{"id":928,"metadata":null,"count":1},"inShape":[[{"id":-1,"metadata":null,"count":1},{"id":-1,"metadata":null,"count":1},{"id":844,"metadata":null,"count":1}],[{"id":-1,"metadata":null,"count":1},{"id":844,"metadata":null,"count":1},{"id":847,"metadata":null,"count":1}],[{"id":844,"metadata":null,"count":1},{"id":-1,"metadata":null,"count":1},{"id":847,"metadata":null,"count":1}]],"outShape":null,"ingredients":null,"delta":[{"id":844,"metadata":null,"count":-3},{"id":847,"metadata":null,"count":-2},{"id":928,"metadata":null,"count":1}],"requiresTable":true}]
+ROD_TABLE_CURRENT_AVAILABLE 0
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive

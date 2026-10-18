@@ -1,0 +1,25 @@
+== #10650 2026-10-18T18:22:18 p1 role=frontier_operator iter=24 8.9 s
+const WORK_MS=90000;const EXPECTED_DIM='overworld';
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:{...bot.controlState},goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let p=b.offset(...d);return{p,n:bot.blockAt(p)?.name,full:full(p)};});}
+function hazards(b){for(let x=-1;x<=1;x++)for(let z=-1;z<=1;z++)for(let y=0;y<=1;y++){const p=b.offset(x,y,z),n=bot.blockAt(p)?.name;if(!n)throw Error('unloaded '+p);if(['lava','water','fire','soul_fire','magma_block'].includes(n)){const shielded=x!
+... (10182 chars; --full)
+-- output --
+CUT_PRE {"p":{"x":148,"y":-25,"z":2241},"n":"basalt","face":5,"hit":{"x":149,"y":-24.26050662811636,"z":2241.4996000595283},"pick":"stone_pickaxe","wear":127}
+CUT_POST {"p":{"x":148,"y":-25,"z":2241},"n":"air","before":21,"after":21,"witness":true}
+CUT_PRE {"p":{"x":148,"y":-26,"z":2241},"n":"basalt","face":1,"hit":{"x":148.78722594269558,"y":-25,"z":2241.499600059506},"pick":"stone_pickaxe","wear":128}
+CUT_POST {"p":{"x":148,"y":-26,"z":2241},"n":"air","before":21,"after":22,"witness":true}
+STEP_ACTUAL {"at":"2026-10-18T18:22:21.769Z","p":{"x":148.66770881824922,"y":-26,"z":2241.49960005953},"dim":"overworld","hp":3,"food":16,"ground":true,"controls":{},"goal":false,"inv":[["wooden_pickaxe",1,5],["stone_pickaxe",1,129],["spruce_sapling",1,null],["torch",2,null],["basalt",23,null],["netherrack",4,null]]}
+DESCENT_PRE {"b":{"x":148,"y":-26,"z":2241},"floor":{"x":148,"y":-27,"z":2241},"support":{"x":148,"y":-28,"z":2241},"state":{"at":"2026-10-18T18:22:21.769Z","p":{"x":148.66770881824922,"y":-26,"z":2241.49960005953},"dim":"overworld","hp":3,"food":16,"ground":true,"controls":{},"goal":false,"inv":[["wooden_pickaxe",1,5],["stone_pickaxe",1,129],["spruce_sapling",1,null],["torch",2,null],["basalt",23,null],["netherrack",4,null]]}}
+CUT_PRE {"p":{"x":148,"y":-27,"z":2241},"n":"mossy_stone_bricks","face":1,"hit":{"x":148.5260461590857,"y":-26,"z":2241.499970932337},"pick":"stone_pickaxe","wear":129}
+CUT_POST {"p":{"x":148,"y":-27,"z":2241},"n":"air","before":0,"after":0,"witness":t
+... (7694 chars; --full)

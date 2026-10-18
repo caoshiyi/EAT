@@ -1,0 +1,19 @@
+program #10662 on p3: 0 s
+--- output ---
+START Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 []
+TABLE_OPEN 1 minecraft:crafting {
+  type: 'compound',
+  value: { translate: { type: 'string', value: 'container.crafting' } }
+} 2.1666641235351562
+TABLE_CLOSED true 2.1666641235351562
+RECIPE_BUNDLE fishing_rod {"variants":1,"chosen":[{"requiresTable":true,"result":{"id":928,"metadata":null,"count":1},"ingredients":[{"name":"stick","id":844,"count":3},{"name":"string","id":847,"count":2}]}],"currentlyAvailable":0}
+RECIPE_BUNDLE wooden_sword {"variants":11,"chosen":[{"requiresTable":true,"result":{"id":814,"metadata":null,"count":1},"ingredients":[{"name":"oak_planks","id":36,"count":2},{"name":"stick","id":844,"count":1}]}],"currentlyAvailable":0}
+RECIPE_BUNDLE stick {"variants":12,"chosen":[{"requiresTable":false,"result":{"id":844,"metadata":null,"count":4},"ingredients":[{"name":"oak_planks","id":36,"count":2}]}],"currentlyAvailable":0}
+RECIPE_BUNDLE furnace {"variants":3,"chosen":[{"requiresTable":true,"result":{"id":301,"metadata":null,"count":1},"ingredients":[{"name":"cobblestone","id":35,"count":8}]},{"requiresTable":true,"result":{"id":301,"metadata":null,"count":1},"ingredients":[{"name":"blackstone","id":1216,"count":8}]},{"requiresTable":true,"result":{"id":301,"metadata":null,"count":1},"ingredients":[{"name":"cobbled_deepslate","id":9,"count":8}]}],"currentlyAvailable":0}
+RECIPE_BUNDLE bow {"variants":1,"chosen":[{"requiresTable":true,"result":{"id":797,"metadata":null,"count":1},"ingredients":[{"name":"stick","id":844,"count":3},{"name":"string","id":847,"count":3}]}],"currentlyAvailable":0}
+ENDING Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 null []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive

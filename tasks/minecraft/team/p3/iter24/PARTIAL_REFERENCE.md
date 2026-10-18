@@ -1,0 +1,9 @@
+# Proven ordinary placement against a partial reference — P3 #10640
+
+Observed primary bottleneck: repeated P1 cap/retention refusals when `put()` accepts only a full-cube reference (10650 Efoot above a chest was one such lead; already repaired physically by10652 lower geometry). This note does NOT reopen that repaired operation.
+
+Actual new physical case, not a model: P3 #10640 selected existing upper-half SPRUCE_SLAB at(6,69,83), actual cursor face0 intersection(6.50000016,69.5,83.29399414), within normal reach from(6.5,67,82.5). Slab shape[0,.5,0,1,1,1] is not full cube. Normal `bot.placeBlock(slab,new Vec3(0,-1,0))` with carriedDIRT1 placed actual fullDIRT at(6,68,83), ordinaryinventory1->0, body/health unchanged. No through-block/raw/visibility workaround. Exact source/output `south_head_cap.js/.out`; subsequent fresh state at10648 remainedHP2.1667.
+
+Small useful rule for current carrier: if full-reference filtering is the only remaining reason for rejecting a cap, inspect the **actual reachable exposed face of the partial reference** before treating placement as impossible. Preserve actual cursor identity/face/intersection/reach, target occupancy, stock and post-placement full-block/inventory checks. Do not relax visibility or reach. Non-full is not the same as hidden; non-full alone was not a game prohibition in this case.
+
+Limits: demonstrated upper-slab underside only. Chest top, fence, torch, bed, interactive/sneaking behavior and other partial references UNTESTED here. A new material/shape/face requires one bounded ordinary placement and actual postconditions. No forced placement/API success claim; no new universal helper. Named use: reduce extra floorcuts/position detours caused solely by full-cube reference filtering when a real face is reachable, preserving finite tools. Owner adoption/physical reuse pending.
