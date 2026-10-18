@@ -1,0 +1,134 @@
+{
+  "program": "10336",
+  "walk_calls": 126,
+  "walk_failures": [],
+  "audits": [],
+  "min_sampled_hp": 20,
+  "terminal": {
+    "p": {
+      "x": 2.3,
+      "y": 64,
+      "z": 89.75117358613294
+    },
+    "hp": 20,
+    "food": 19,
+    "lost": false,
+    "ground": true,
+    "inv": [
+      [
+        "wooden_pickaxe",
+        1
+      ],
+      [
+        "stone_pickaxe",
+        1
+      ],
+      [
+        "spruce_sapling",
+        1
+      ],
+      [
+        "spruce_planks",
+        2
+      ],
+      [
+        "sweet_berries",
+        1
+      ]
+    ],
+    "clock": 6930,
+    "shell": [
+      {
+        "p": {
+          "x": 2,
+          "y": 63,
+          "z": 89
+        },
+        "n": "snow",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 2,
+          "y": 66,
+          "z": 89
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 3,
+          "y": 64,
+          "z": 89
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 3,
+          "y": 65,
+          "z": 89
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 1,
+          "y": 64,
+          "z": 89
+        },
+        "n": "sand",
+        "full": true
+      },
+      {
+        "p": {
+          "x": 1,
+          "y": 65,
+          "z": 89
+        },
+        "n": "snow",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 2,
+          "y": 64,
+          "z": 90
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 2,
+          "y": 65,
+          "z": 90
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 2,
+          "y": 64,
+          "z": 88
+        },
+        "n": "air",
+        "full": false
+      },
+      {
+        "p": {
+          "x": 2,
+          "y": 65,
+          "z": 88
+        },
+        "n": "air",
+        "full": false
+      }
+    ]
+  },
+  "errors": "Error: goal not reached\n    at walk (p1-program-10336.js:5:1644)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async p1-program-10336.js:17:334"
+}
