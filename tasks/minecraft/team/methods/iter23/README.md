@@ -19,3 +19,7 @@ Reusable small proposal: fresh_terminal_observation.js + TERMINAL_OBSERVATION_RE
 16:05 P2_SMALL_EXIT_REVIEW.md confirms #10261 specific success and flags start-tolerance mismatch (returned .17974m vs admission .15m), post-dig predicate and HP-gated fallback limits. P1_ROUTE_GUARD_REVIEW.md updated with actual #10262 differing paths, HP guard, and #10263 berry-containing cell; models accepting that cell is confirmed, exact HP cause unlogged. Read-only node annotation proposed before physical repetition.
 
 16:06 urgent requested P1 support-cut review: P1_RETENTION_TARGET_REVIEW.md. Own-bush refusal did no edits. Different visible ordinary support target is a distinct test; don't reuse old fixed-y67 centering after landing66. Exact target/cursor/bush effect/landing and final geometry required; no hidden-target override.
+
+Small reusable requested-diagnostic implementation: annotate_path_cells.js + PATH_CELL_ACCEPTANCE.md. Defines one read-only function for owner probe, actual floor/body/head names and hazard/NULL flags. Small known-node acceptance required; does not execute or certify routes. UNVALIDATED.
+
+16:08 P2 requested target logging diagnosis delivered: P2_MOVE_DIAGNOSTIC.md. #10269 error shows pre-recovery failed position, not current body; exact target unlogged, no collision/tolerance cause inferred. Add target+phase receipt to existing helper, small owner-run acceptance only.

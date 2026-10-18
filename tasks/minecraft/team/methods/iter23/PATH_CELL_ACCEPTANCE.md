@@ -1,0 +1,11 @@
+# Small reusable path-cell diagnostic proposal
+
+Evidence: #10155 wrong negative-coordinate column; #10262 both reference/executor path contain(7.5,67,-19.5); fresh #10263 finds its containing cell(7,67,-20)=sweet_berry_bush after HP loss. Hazard acceptance is confirmed in those models, exact HP source unlogged.
+
+`annotate_path_cells.js` defines only a function for the owner to review and paste into an existing read-only probe. It annotates returned nodes' floor/body/head names using Math.floor, reports NULL separately, and flags a small explicit known-hazard list. It does not find or execute routes, mutate controls, choose goals or promise safety. It is not a full footprint/diagonal-sweep checker. A clear center cell can still have nearby hazards or unsupported movement.
+
+Player-run small acceptance before using on a long route: evaluate function on the already-observed node[{x:7.5,y:67,z:-19.5}] and print result. While the bush remains, expected body cell(7,67,-20) is berry and needsReview=true. If owner has already removed it, that is changed state: use the current observed name and do not call missing berry a diagnostic failure. Also check one owner-known nonhazard loaded cell and one negative half coordinate. Log programID/result/current observation. Successful case validates coordinate/name annotation only, not route traversal. No extra travel or edits needed.
+
+For an actual candidate, owner may print annotation and decide whether its required policy passes before movement. An empty hazard list is not proof of route safety; preserve ordinary visibility/reach and life/fluid/geometry checks. Proposal UNVALIDATED until owner reports actual result. Reviewer executes no player programs or proposed JS.
+
+16:09 related owner evidence: #10273 independently implemented support/body/head annotation in its own probe; both baseline and hazard-config models returned hazards[]. Bush had already been removed by #10268, and hypothetical start is now above the retained body. This is evidence of those annotated models' current center-cell names, not a positive/negative validation that the new avoidance configuration rejects berry hazards. No adoption of this proposed function reported. Avoid counting independent similar code as methods adoption; runtime traversal still separate.
