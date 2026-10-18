@@ -1,0 +1,433 @@
+program #9914 on p2: 4.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "warning": "READONLY unoccupied-candidate geometry, sampled block rays only; no actual player/camera/AI-visibility or safety qualification. Physical test requires fresh checks/owner coordination.",
+ "candidates": [
+  {
+   "p": {
+    "x": 85.5,
+    "y": 50,
+    "z": 0.5
+   },
+   "clear": 0,
+   "blocked": 50,
+   "first": null
+  },
+  {
+   "p": {
+    "x": 87.5,
+    "y": 50,
+    "z": 0.5
+   },
+   "clear": 26,
+   "blocked": 24,
+   "first": {
+    "root": {
+     "x": 51.338765197760395,
+     "y": 86.90810088070859,
+     "z": 8.416712710358347
+    },
+    "phase": 1
+   }
+  },
+  {
+   "p": {
+    "x": 89.5,
+    "y": 50,
+    "z": 0.5
+   },
+   "clear": 29,
+   "blocked": 21,
+   "first": {
+    "root": {
+     "x": 51.338765197760395,
+     "y": 86.90810088070859,
+     "z": 8.416712710358347
+    },
+    "phase": 1
+   }
+  },
+  {
+   "p": {
+    "x": 92.5,
+    "y": 50,
+    "z": 0.5
+   },
+   "clear": 41,
+   "blocked": 9,
+   "first": {
+    "root": {
+     "x": 51.338765197760395,
+     "y": 86.90810088070859,
+     "z": 8.416712710358347
+    },
+    "phase": 1
+   }
+  },
+  {
+   "p": {
+    "x": 95.5,
+    "y": 50,
+    "z": 0.5
+   },
+   "clear": 44,
+   "blocked": 6,
+   "first": {
+    "root": {
+     "x": 51.338765197760395,
+     "y": 86.90810088070859,
+     "z": 8.416712710358347
+    },
+    "phase": 1
+   }
+  }
+ ],
+ "hp": 200,
+ "grid": [
+  {
+   "x": 75,
+   "c": [
+    {
+     "y": 49,
+     "n": "end_stone",
+     "sh": [
+      [
+       0,
+       0,
+       0,
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": []
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 84,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 85,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 86,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 87,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 88,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 89,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 90,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 91,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 92,
+   "c": [
+    {
+     "y": 49,
+     "n": "tuff",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 93,
+   "c": [
+    {
+     "y": 49,
+     "n": "cobbled_deepslate",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 94,
+   "c": [
+    {
+     "y": 49,
+     "n": "cobbled_deepslate",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 95,
+   "c": [
+    {
+     "y": 49,
+     "n": "cobbled_deepslate",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 50,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 51,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 52,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  }
+ ],
+ "body": {
+  "x": 75.50869697594386,
+  "y": 50,
+  "z": 0.5001530336008023
+ },
+ "ownHP": 10.55274772644043
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (75.5, 50, 0.5) in the_end, health 10.6/20, food 14/20, alive
