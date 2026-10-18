@@ -14,3 +14,5 @@ Score last recorded16:00: SAVEFAILED/last-saved dragon0,11milestones,170deaths(6
 | Peer outputaudit | P1audit_output.py success10304+failure10289 smokes; preservesprimaryerroralongsidegoodfallback | walk_failures[] excludes failedendpoint10336; always inspecterror,stage,n10 |
 
 Reviewer corrections: cost100 is hard rejection perinstalleddocs277–279; originalsoftpenaltyclaimretracted. Inheritedinternet-derived mapping/bytecode EXCLUDED afterlead8844–45; no admissibleparent-hurtsemanticclaim. Onlyinstalledalloweddocs/permittedworldrecords supportAPIreview; dragon-specificruntimebehavior unresolved. Tokensunavailable. All proposedfixes need owneractualresult; no reviewerprograms/agents.
+
+16:36 override: actual protectedNether record is P1#10373 (not owner10374, which is P2 berry scan). Fullsource/output checked: four10full+terminal10full/HP3 at(1.35638,65,4.50104), BASALT2/bothpicks/sapling. Whole16:28→~16:34 localprotectedendpoint meets16:36, no fullconnector. Independent16:35:41 evaluator SAVEFAILED/last-saved0/11/170/programs10376; no arena iteration23 death.
