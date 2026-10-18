@@ -1,0 +1,93 @@
+program #9705 on p2: 13.9 s
+--- output ---
+PRE {"info":{"name":"ender_pearl","wear":null,"count":1},"p":{"x":36.5,"y":50,"z":3.49955793751171},"receiver":{"x":38.5000739183595,"y":50,"z":2.314892578125},"pitch":-1.5707963267947989}
+BIRTH {"info":{"name":"ender_pearl","wear":null,"count":1},"drops":[{"id":4008,"p":{"x":36.5,"y":51.31999999284744,"z":3.49955793751171},"item":{"type":990,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"ender_pearl","displayName":"Ender Pearl","stackSize":16}}]}
+PRE {"info":{"name":"wooden_pickaxe","wear":26,"count":1},"p":{"x":36.5,"y":50,"z":3.49955793751171},"receiver":{"x":38.5000739183595,"y":50,"z":3.129833984375},"pitch":-1.5707963267947989}
+BIRTH {"info":{"name":"wooden_pickaxe","wear":26,"count":1},"drops":[{"id":4008,"p":{"x":36.427346989276614,"y":50,"z":3.4920555582260215},"item":{"type":990,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"ender_pearl","displayName":"Ender Pearl","stackSize":16}},{"id":4014,"p":{"x":36.5,"y":51.31999999284744,"z":3.49955793751171},"item":{"type":816,"count":1,"metadata":0,"nbt":{"type":"compound","value":{"Damage":{"type":"int","value":26}}},"stackId":null,"name":"wooden_pickaxe","displayName":"Wooden Pickaxe","stackSize":1,"maxDurability":59}}]}
+PRE {"info":{"name":"wooden_pickaxe","wear":40,"count":1},"p":{"x":36.5,"y":50,"z":3.49955793751171},"receiver":{"x":38.5000739183595,"y":50,"z":3.396923828125},"pitch":-1.5707963267947989}
+BIRTH {"info":{"name":"wooden_pickaxe","wear":40,"count":1},"drops":[{"id":4008,"p":{"x":36.414407536151614,"y":50,"z":3.4908348551010215},"item":{"type":990,"count":1,"metadata":0,"nbt":null,"stackId":null,"name":"ender_pearl","displayName":"Ender Pearl","stackSize":16}},{"id":4014,"p":{"x":36.53798249145606,"y":50,"z":3.4517003238583266},"item":{"type":816,"count":1,"metadata":0,"nbt":{"type":"compound","value":{"Damage":{"type":"int","value":26}}},"stackId":null,"name":"wooden_pickaxe","displayName":"Wooden Pickaxe","stackSize":1,"maxDurability":59}},{"id":4021,"p":{"x":36.5,"y":51.31999999284744,"z":3.49955793751171},"item":{"type":816,"count":1,"metadata":0,"nbt":{"type":"compound","value":{"Damage":{"type":"int","value":40}}},"stackId":null,"name":"wooden_pickaxe","displayName":"Wooden Pickaxe","stackSize":1,"maxDurability":59}}]}
+--- returned ---
+{
+ "issue": null,
+ "gifts": [
+  {
+   "name": "ender_pearl",
+   "wear": null,
+   "count": 1
+  },
+  {
+   "name": "wooden_pickaxe",
+   "wear": 26,
+   "count": 1
+  },
+  {
+   "name": "wooden_pickaxe",
+   "wear": 40,
+   "count": 1
+  }
+ ],
+ "p": {
+  "x": 33.5,
+  "y": 50,
+  "z": 3.4995579375119834
+ },
+ "hp0": 10.55274772644043,
+ "hp": 10.55274772644043,
+ "ground": true,
+ "inventory": [
+  {
+   "n": "book",
+   "c": 3,
+   "wear": null
+  },
+  {
+   "n": "end_stone",
+   "c": 16,
+   "wear": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "wear": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 10,
+   "wear": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "blackstone",
+   "c": 1,
+   "wear": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "wear": null
+  },
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "wear": 106
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "wear": 0
+  }
+ ],
+ "recipient": {
+  "x": 36.6074957933595,
+  "y": 50,
+  "z": 3.492626953125
+ }
+}
+--- chat since this player's previous program ---
+p4: 9702 meetingmove REFUSED preflight beforemotion: oldnative39,50,1 nowstairfloor50, so inheritedapproachblocked. Loanwhole12:02:30→12:04:30 MISSED actualreceipt; noreset. Changedroute minimalnativebypassWESTstairs via38,0→38,1→38,2→38,3: freshfloor49/roof52
+p4:  required, onlydirectvisiblefoot/headENDcuts, preservesstairs. Thenreceive at36,3; loanstillusefulwithinmain12:21.
+--- p2 now: (33.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
