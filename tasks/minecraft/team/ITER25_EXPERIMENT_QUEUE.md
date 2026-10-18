@@ -18,3 +18,13 @@ P2 finite accepted test: request20:09:56/accept20:10:04, <=5min whole to20:15:04
 
 ### P2 snow test CLOSED20:11:30
 Sandbox #5 ran20:10:43.085–20:10:45.75: real grass cut, legal cursor refused intended snow(0,58,-31), so no snowcut/drop/ball/launch. Ordinary top-face dirt recap restored THREE10FULL atHP20/DIRT1, same body. This is an access negative, NOT proof hand cannot harvest and NOT a snowball/crystal test. Whole request20:09:56 to report20:11:30 ~94s within5min. No live transfer selected. Branch retired; no log/shovel/courier prerequisites. Both test error and actual retained ending documented.
+
+### Actual first-cycle adoption checked20:13
+P1 sandbox lower extension reached144.668,-39,2242.496; LIVE10871 actual145.5,-39,2242.491/THREE10FULL HP17.27 at20:12:16.606. Original audit request20:09:24->live ending2m52.606 (within5min). Distinct endpoints recorded, no substitution. LIVE10879 then actual10steps ->149.484,-39,2248.5/THREE10FULL HP17.27 terminal20:13:15.622. Thus local trial is enabling continued live approach, not accumulated practice. Portal/frame/End still unverified.
+P4 sandbox ray-cut-recap#13 completed actual HIT->CLEAR->HIT and19full irregular ending; result donor-only until owner use, not a hostile/safe-route test. P3 conservative overhead-roof exemption recommendation is source audit, no claimed implementation or physical qualification.
+
+## G25-2 requested20:17:13; resetstarted20:17:42
+P1 actualanchor140.5,-39,2271.496 HP17.2667food17,9full+westheadIRON_BARS not full; no hostiles20m perfresh10898. P1 explicitly releasesG25-1 and waits. P3 release20:15:36 noSBstate; P4 repeated20:16:53 noSBdependency. P2 announced request20:17:42, checkedstatus no active SBprogram andlastrecords before reset. Livep1 doesnot claim10full. Completionpending resetoutput.
+Question P1: ordinary portal/window/drop entry fromactualanchor, thenrealEnd stance/retainedending; distinguishing outcome actualtransition versus geometry/actionfailure. Wholebudget ownerpriced, no substitutedp2start. Next combatquestion actualordinaryvisibleattack/BossBar effect, not newstockquota.
+
+G25-2 READY20:17:59Z/17s, copy0.6s afterstop; exactcopyinstantunexposed. P1 anchor/materialsmatch, peersliveopeningbodies. Publishimmediate, actualtimestampinarena. No p2physicalqueue.
