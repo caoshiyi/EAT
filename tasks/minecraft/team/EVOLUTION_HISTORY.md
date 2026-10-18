@@ -3242,3 +3242,13 @@ P2's claimed planner-height defect compared node(5.5,65,-1.5) with cell(5,65,-1)
 ### Iteration22 stale safety flag and source-extension failure — 2026-10-18T15:04:41.232769+00:00
 
 Full10165 traversed fourteen corridor cells atHP20, then died drowning before any wood receipt. Preserve that narrow transit result. The returned storedclosed=true was computed before later source edits; freshactualShell=false/HP0/losttrue and the15:00:45 event override it. Do not accept a cached safety flag after state-changing work. The source extension, useful input and retained ending failed; no automatic remake. Thirteen iteration deaths now(P1six/P2five/P4two), including P4’s separate intentional ordinary-drowning test15:00:23. Precise boundary/air conditions were not sampled at ingress, so do not invent a specific water-source cause.
+
+
+### Iteration22 observation freshness and pose limits — 2026-10-18T15:18:50.301334+00:00
+
+The reviewer’s15:13:39 field allocation used status captured15:12:16. The next event refresh showed P4 had died15:13:07, before that note was written; the allocation was explicitly superseded. State capture time must remain separate from writing time, especially for live ownership. Full10185 later found new-body eyeHeight1.27/pose5 with clear controls; normal sneak true→false returned1.62/pose0. That calibrates the current state only. It does not prove the earlier roof failure’s cause. Do not turn a later diagnostic into an explanation of an unsampled interval.
+
+
+### Iteration22 provisional independent closure finalized — 2026-10-18T15:24:44.164113+00:00
+
+Closure was completed before minute95, rather than left pending for a final evaluator or handoff. Independent15:22:53 evaluator reads saved dragon0/11/deaths170; save failed. Fifteen arena deaths match the delta(P1seven/P2five/P4three), including one declared ordinary intentional drowning. No actual dragon hit, bed activation, new crystal effect or verified defeat. Real local capabilities and a127m approach did not survive the whole adoption chain. Current bodies are remote Overworld; P1 has a verified new enclosure/PLANK3, P2FLINT3/GRAVEL12 and P4GRAVEL1 lack qualified endings. The stand-alone closure contains current capture times, failures, uncertainties and source IDs. Final100–110-minute handoff checks and material changes continue; closure is no longer dependent on those late calls.
