@@ -1,0 +1,64 @@
+program #11052 on p2: 7.5 s
+--- output ---
+FLAT_ACTUAL {"at":"2026-10-18T21:29:15.334Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]}
+HEADROOM_ACTUAL {"state":{"at":"2026-10-18T21:29:16.736Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]},"column":[{"v":{"x":6,"y":63,"z":-31},"n":"air"},{"v":{"x":6,"y":64,"z":-31},"n":"air"},{"v":{"x":6,"y":65,"z":-31},"n":"air"},{"v":{"x":6,"y":66,"z":-31},"n":"air"},{"v":{"x":6,"y":67,"z":-31},"n":"air"}]}
+PILLAR_ACTUAL {"at":"2026-10-18T21:29:17.742Z","p":{"x":6.502280653505967,"y":63,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]}
+PILLAR_ACTUAL {"at":"2026-10-18T21:29:18.744Z","p":{"x":6.502280653505967,"y":64,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",3],["cobblestone",3]]}
+PILLAR_ACTUAL {"at":"2026-10-18T21:29:19.747Z","p":{"x":6.502280653505967,"y":65,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",2],["cobblestone",3]]}
+PILLAR_ACTUAL {"at":"2026-10-18T21:29:20.748Z","p":{"x":6.502280653505967,"y":66,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",1],["cobblestone",3]]}
+CRAFT_RESULT {"name":"stone_pickaxe","before":0,"after":1,"expected":1,"state":{"at":"2026-10-18T21:29:21.498Z","p":{"x":6.502280653505967,"y":66,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stone_pickaxe",1],["stick",4],["wooden_pickaxe",1],["dirt",1]]}}
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:29:21.747Z","p":{"x":6.502280653505967,"y":66,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stone_pickaxe",1],["stick",4],["wooden_pickaxe",1],["dirt",1]]},"cells":[{"p":{"x":6,"y":65,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"n":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"n":"grass_block","full":true},{"p":{"x":5,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"n":"spruce_planks","full":true}]}
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:29:21.997Z","p":{"x":6.502280653505967,"y":66,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stone_pickaxe",1],["stick",4],["wooden_pickaxe",1],["dirt",1]]},"cells":[{"p":{"x":6,"y":65,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"n":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"n":"grass_block","full":true},{"p":{"x":5,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"n":"spruce_planks","full":true}]}
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:29:22.248Z","p":{"x":6.502280653505967,"y":66,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stone_pickaxe",1],["stick",4],["wooden_pickaxe",1],["dirt",1]]},"cells":[{"p":{"x":6,"y":65,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"n":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"n":"grass_block","full":true},{"p":{"x":5,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"n":"spruce_planks","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-18T21:29:22.497Z",
+ "p": {
+  "x": 6.502280653505967,
+  "y": 66,
+  "z": -30.48799081720013
+ },
+ "v": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "ground": true,
+ "hp": 20,
+ "food": 20,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "stick",
+   4
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P2 exactfresh11048 at21:27:59.919: HEAD(7,67,83)BED; floor(7,66,83)COBBLE FULL; BELOW(7,65,83)COBBLE FULL, below64SANDSTONE FULL. One-supported-down candidate geometricallysupported AFTERbedreceipt, still need YOURactualstance/ray/pick/roof/pillarrestore +
+p3: receipt. Queryanswerwithin1m05 ofrequest; no sourceharvest/adoption yet. Chest(7,68,82) can exchangecapthenbed ifyoureachit; p3willnotcutbed early.
+p3: P2 fresh11047actualCOBBLE3 verified27:59.502, P4headleadactuallyadopted. RETURNCAUSE precise: roofLow6,64,-31 is GRASS_BLOCK in27:28 audit, but live_north_head_stone_and_return.js clears ONLY name===dirt. Thus roofremainedFULL just2abovefeet62; ordinaryjum
+p3: p cannot rise1.025 with1.8body. Changeacceptedownedsoilroof to [dirt,grass_block] afteractualray; logremovedAIR beforeonejump smoke. Recenter alone alreadydidnotfix; no repeatedunchangedpillar.
+p3: ActualUTC21:29:11 nowpastwhole28:51: markP2wholebedEnduse MISSED; no HOMEarrival/bedreceipt/use. ActualprogressCOBBLE3/P4headcut, failedreturnroofGRASS mismatch. P3source/supportcontinues through21:53, canservicearrivallaterbutcountlate. Please boundedrema
+p3: iningallocation/ending, no freshwholeclock. P3roofquery11051 causaladoptionpending, ownerimplementationonly.
+--- p2 now: (6.5, 66, -30.5) in overworld, health 20/20, food 20/20, alive

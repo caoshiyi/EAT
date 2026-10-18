@@ -1,0 +1,62 @@
+program #11047 on p2: 8 s
+--- output ---
+FLAT_ACTUAL {"at":"2026-10-18T21:27:57.194Z","p":{"x":6.506129048870206,"y":62,"z":-31.563407904702547},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",2]]}
+STONE_CUT {"q":{"x":6,"y":63,"z":-33},"state":{"at":"2026-10-18T21:27:58.747Z","p":{"x":6.506129048870206,"y":62,"z":-31.563407904702547},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",2]]}}
+THIRD_ACTUAL_RECEIPT {"at":"2026-10-18T21:27:59.502Z","p":{"x":6.506129048870206,"y":62,"z":-31.563407904702547},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]}
+FLAT_ACTUAL {"at":"2026-10-18T21:28:00.431Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]}
+HEAD_RETURN_FAILURE Error: pillar jump threshold
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:28:01.290Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]},"cells":[{"p":{"x":6,"y":61,"z":-31},"n":"diorite","full":true},{"p":{"x":6,"y":64,"z":-31},"n":"grass_block","full":true},{"p":{"x":7,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":63,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-32},"n":"air","full":false},{"p":{"x":6,"y":63,"z":-32},"n":"air","full":false}]}
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:28:01.541Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]},"cells":[{"p":{"x":6,"y":61,"z":-31},"n":"diorite","full":true},{"p":{"x":6,"y":64,"z":-31},"n":"grass_block","full":true},{"p":{"x":7,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":63,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-32},"n":"air","full":false},{"p":{"x":6,"y":63,"z":-32},"n":"air","full":false}]}
+CURRENT_AUDIT {"state":{"at":"2026-10-18T21:28:01.791Z","p":{"x":6.502280653505967,"y":62,"z":-30.48799081720013},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["stick",4],["wooden_pickaxe",1],["dirt",4],["cobblestone",3]]},"cells":[{"p":{"x":6,"y":61,"z":-31},"n":"diorite","full":true},{"p":{"x":6,"y":64,"z":-31},"n":"grass_block","full":true},{"p":{"x":7,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":62,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":63,"z":-31},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":63,"z":-30},"n":"dirt","full":true},{"p":{"x":6,"y":62,"z":-32},"n":"air","full":false},{"p":{"x":6,"y":63,"z":-32},"n":"air","full":false}]}
+--- returned ---
+{
+ "at": "2026-10-18T21:28:02.042Z",
+ "p": {
+  "x": 6.502280653505967,
+  "y": 62,
+  "z": -30.48799081720013
+ },
+ "v": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "ground": true,
+ "hp": 20,
+ "food": 20,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stick",
+   2
+  ],
+  [
+   "stick",
+   4
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   4
+  ],
+  [
+   "cobblestone",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P2 supportquery<=2min26:55: fresh LIVE bedheadfloor(7,66,83)COBBLE FULL; below(7,65,83) query captured in p3/iter25/bed_support_query.out nowchecking exact. Datedpermitted connector in p4/iter25/TRANSIT_AUDIT.md+TRANSIT_LEADS_DATA.json: HOMEportal actually
+p3: Nether1,65,4 (notLOW8); bends1,66,6->0,67,58->-19,65,48->-45,56,54->buried-54,53,64->shaft8. Need allintermediates/freshsupport, no straightcopy.
+--- p2 now: (6.5, 62, -30.5) in overworld, health 20/20, food 20/20, alive

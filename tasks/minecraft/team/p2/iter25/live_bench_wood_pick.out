@@ -1,0 +1,52 @@
+program #11025 on p2: 5.5 s
+--- output ---
+CRAFT_RESULT {"name":"crafting_table","before":0,"after":1,"expected":1,"state":{"at":"2026-10-18T21:10:54.182Z","p":{"x":6.352215961508252,"y":66,"z":-30.500000000000405},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["spruce_planks",7],["crafting_table",1]]}}
+CRAFT_RESULT {"name":"stick","before":0,"after":4,"expected":4,"state":{"at":"2026-10-18T21:10:55.188Z","p":{"x":6.352215961508252,"y":66,"z":-30.500000000000405},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["spruce_planks",5],["crafting_table",1],["stick",4]]}}
+PLACED {"dest":{"x":6,"y":68,"z":-31},"ref":{"x":6,"y":69,"z":-31},"name":"crafting_table"}
+CRAFT_RESULT {"name":"wooden_pickaxe","before":0,"after":1,"expected":1,"state":{"at":"2026-10-18T21:10:57.799Z","p":{"x":6.352215961508252,"y":66,"z":-30.500000000000405},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",2],["dirt",1]]}}
+CRAFT_RESULT {"name":"stick","before":2,"after":2,"expected":4,"state":{"at":"2026-10-18T21:10:58.804Z","p":{"x":6.352215961508252,"y":66,"z":-30.500000000000405},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["wooden_pickaxe",1],["dirt",1]]}}
+BENCH_FAILURE Error: craft actual delta stick
+BENCH_FAILURE_ENDING {"state":{"at":"2026-10-18T21:10:59.055Z","p":{"x":6.352215961508252,"y":66,"z":-30.500000000000405},"v":{"x":0,"y":-0.0784000015258789,"z":0},"ground":true,"hp":20,"food":20,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["stick",2],["wooden_pickaxe",1],["dirt",1]]},"cells":[{"p":{"x":6,"y":65,"z":-31},"n":"grass_block","full":true},{"p":{"x":6,"y":68,"z":-31},"n":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"n":"grass_block","full":true},{"p":{"x":5,"y":66,"z":-31},"n":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"n":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"n":"spruce_planks","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-18T21:10:59.055Z",
+ "p": {
+  "x": 6.352215961508252,
+  "y": 66,
+  "z": -30.500000000000405
+ },
+ "v": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "ground": true,
+ "hp": 20,
+ "food": 20,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "inv": [
+  [
+   "stick",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.4, 66, -30.5) in overworld, health 20/20, food 20/20, alive
