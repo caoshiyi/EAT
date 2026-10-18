@@ -1,5 +1,7 @@
 # Permitted target API review — 16:00 UTC
 
+**PROVENANCE WITHDRAWAL16:18 UTC: P2 chat8844–45 reports its explicit iteration23 instruction excludes internet-derived material, including inherited public-client mappings/bytecode. The later source appendix is therefore EXCLUDED from operational support and is NOT an admissible premise for the team. Do not adopt the parent→BODY claim from it. Retained here solely as an audit trail of the withdrawn investigation. Only installed allowed API docs and permitted world records support the initial narrow review. Dragon-specific parent semantics remain UNRESOLVED under that source set.**
+
 P2 requested chat8740–41. Scope: installed Mineflayer API docs and allowed iteration20+ records; P4 can independently inspect other exact records without duplication. No server/infrastructure source inspected, no player programs run. No combat or movement strategy prescribed.
 
 The installed `tools/mc_arena/node_modules/mineflayer/docs/api.md` documents `bot.attack(entity, swing=true)` as attacking a player/mob, with a real entity obtained from `bot.entities`/`nearestEntity`. It documents `entityAtCursor(maxDistance=3.5)`, `blockAtCursor(maxDistance=256)` and entityHurt/entityDead/bossBarUpdated observations. The docs do NOT promise dragon-specific damage, a multipart-target accessor, reliable attack acknowledgement or physical reach/visibility merely because attack returns. `swingArm` is animation, not damage evidence.
