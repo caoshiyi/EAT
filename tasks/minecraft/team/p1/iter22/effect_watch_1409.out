@@ -1,0 +1,345 @@
+program #10013 on p1: 50 s
+--- output ---
+CHANGE {"t":1,"root":{"x":-5.542754825965304,"y":84.7867628185389,"z":0.12363863279815135},"phase":3,"bossHP":200,"crystals":9,"distToCANDIDATE":25.918331561371858,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":1,"root":{"x":-5.542754825965304,"y":84.7867628185389,"z":0.12363863279815135},"phase":3,"bossHP":200,"crystals":9,"distToCANDIDATE":25.918331561371858,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":4919,"root":{"x":2.3022158771596963,"y":68.3512159435389,"z":0.8650937109231513},"phase":3,"bossHP":200,"crystals":9,"distToCANDIDATE":7.950444768361292,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+CHANGE {"t":7626,"root":{"x":1.2946475177846963,"y":62.884663209163904,"z":0.27720308592315135},"phase":6,"bossHP":200,"crystals":9,"distToCANDIDATE":3.255739033902327,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":9931,"root":{"x":1.2946475177846963,"y":62.884663209163904,"z":0.27720308592315135},"phase":6,"bossHP":200,"crystals":9,"distToCANDIDATE":3.255739033902327,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+CHANGE {"t":12641,"root":{"x":0.43624908028469633,"y":62.871967896663904,"z":-0.004535195326848651},"phase":4,"bossHP":200,"crystals":9,"distToCANDIDATE":3.9073465631018776,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+CHANGE {"t":13743,"root":{"x":-8.740752872840304,"y":63.692768677913904,"z":5.820660117173151},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":13.723673954415167,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":14897,"root":{"x":-1.8996884197153037,"y":65.1463819591639,"z":13.424419882798151},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":14.757578718994505,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":19906,"root":{"x":-10.698516544715304,"y":71.1893507091639,"z":-32.26015042970185},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":37.270464805670876,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":24919,"root":{"x":-8.534698185340304,"y":77.7760206310389,"z":-22.023089882826852},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":30.83154921709599,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":29951,"root":{"x":5.8924630602963415,"y":80.95773523922831,"z":-45.08006880227361},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":50.017851639522085,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":34959,"root":{"x":-39.25011506470366,"y":82.60641687985331,"z":-32.510244583523615},"phase":0,"bossHP":200,"crystals":9,"distToCANDIDATE":58.36045110154064,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+CHANGE {"t":35259,"root":{"x":-43.56725373657866,"y":82.69626062985331,"z":-26.509268021023615},"phase":1,"bossHP":200,"crystals":9,"distToCANDIDATE":58.63020483746703,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":39946,"root":{"x":-30.796745924078657,"y":81.98752039547831,"z":-24.092031692898615},"phase":1,"bossHP":200,"crystals":9,"distToCANDIDATE":47.3576639680573,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+SAMPLE {"t":44957,"root":{"x":27.306037279046343,"y":82.57248133297831,"z":16.643564010226385},"phase":1,"bossHP":200,"crystals":9,"distToCANDIDATE":36.2565373702219,"p2":{"x":7.327812770824112,"y":50,"z":3.4975467446542727},"ownHP":20}
+--- returned ---
+{
+ "elapsed": 49971,
+ "p": {
+  "x": 75.5,
+  "y": 50,
+  "z": 0.4997911735157712
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "dim": "the_end",
+ "inv": [],
+ "goal": null,
+ "controls": {},
+ "phases": {
+  "0": 215,
+  "1": 147,
+  "3": 77,
+  "4": 11,
+  "6": 50
+ },
+ "minBoss": 200,
+ "minToCANDIDATE": 2.6362381116894937,
+ "minRec": {
+  "t": 7425,
+  "root": {
+   "x": 2.6811221271596963,
+   "y": 62.959126099788904,
+   "z": 0.9815487890481513
+  },
+  "phase": 3,
+  "bossHP": 200,
+  "crystals": 9,
+  "distToCANDIDATE": 2.6362381116894937,
+  "p2": {
+   "x": 7.327812770824112,
+   "y": 50,
+   "z": 3.4975467446542727
+  },
+  "ownHP": 20
+ },
+ "bedCells": [
+  {
+   "p": {
+    "x": 3,
+    "y": 60,
+    "z": 0
+   },
+   "n": "air",
+   "props": {}
+  },
+  {
+   "p": {
+    "x": 3,
+    "y": 60,
+    "z": 1
+   },
+   "n": "air",
+   "props": {}
+  }
+ ],
+ "sampled": [
+  {
+   "t": 1,
+   "root": {
+    "x": -5.542754825965304,
+    "y": 84.7867628185389,
+    "z": 0.12363863279815135
+   },
+   "phase": 3,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 25.918331561371858,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 4919,
+   "root": {
+    "x": 2.3022158771596963,
+    "y": 68.3512159435389,
+    "z": 0.8650937109231513
+   },
+   "phase": 3,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 7.950444768361292,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 9931,
+   "root": {
+    "x": 1.2946475177846963,
+    "y": 62.884663209163904,
+    "z": 0.27720308592315135
+   },
+   "phase": 6,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 3.255739033902327,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 14897,
+   "root": {
+    "x": -1.8996884197153037,
+    "y": 65.1463819591639,
+    "z": 13.424419882798151
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 14.757578718994505,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 19906,
+   "root": {
+    "x": -10.698516544715304,
+    "y": 71.1893507091639,
+    "z": -32.26015042970185
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 37.270464805670876,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 24919,
+   "root": {
+    "x": -8.534698185340304,
+    "y": 77.7760206310389,
+    "z": -22.023089882826852
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 30.83154921709599,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 29951,
+   "root": {
+    "x": 5.8924630602963415,
+    "y": 80.95773523922831,
+    "z": -45.08006880227361
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 50.017851639522085,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 34959,
+   "root": {
+    "x": -39.25011506470366,
+    "y": 82.60641687985331,
+    "z": -32.510244583523615
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 58.36045110154064,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 39946,
+   "root": {
+    "x": -30.796745924078657,
+    "y": 81.98752039547831,
+    "z": -24.092031692898615
+   },
+   "phase": 1,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 47.3576639680573,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 44957,
+   "root": {
+    "x": 27.306037279046343,
+    "y": 82.57248133297831,
+    "z": 16.643564010226385
+   },
+   "phase": 1,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 36.2565373702219,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  }
+ ],
+ "changes": [
+  "[repeated reference]",
+  {
+   "t": 7626,
+   "root": {
+    "x": 1.2946475177846963,
+    "y": 62.884663209163904,
+    "z": 0.27720308592315135
+   },
+   "phase": 6,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 3.255739033902327,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 12641,
+   "root": {
+    "x": 0.43624908028469633,
+    "y": 62.871967896663904,
+    "z": -0.004535195326848651
+   },
+   "phase": 4,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 3.9073465631018776,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 13743,
+   "root": {
+    "x": -8.740752872840304,
+    "y": 63.692768677913904,
+    "z": 5.820660117173151
+   },
+   "phase": 0,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 13.723673954415167,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  },
+  {
+   "t": 35259,
+   "root": {
+    "x": -43.56725373657866,
+    "y": 82.69626062985331,
+    "z": -26.509268021023615
+   },
+   "phase": 1,
+   "bossHP": 200,
+   "crystals": 9,
+   "distToCANDIDATE": 58.63020483746703,
+   "p2": {
+    "x": 7.327812770824112,
+    "y": 50,
+    "z": 3.4975467446542727
+   },
+   "ownHP": 20
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: ACTUAL10011 eastchest opened normally after THREE totalvisiblebookshelfcuts167,-36/-37,2230 plus167,-36,2228; lower166feet-38 detour+normaljump actualqualified. CONTENTS paper/books/4enchantedbooks/eye_trim ONLY; ZEROfood/arrows/bow/iron, no withdrawals. O
+p4: rdinaryBOOK9 fromcuts, OAK1. Fullsamecallerreturn157.5,-36,2231.500 HP7.503food17ground/nofoes16.4s. H3 nearbyloot benefit REJECTED after two actualopens (9985EMPTY/10011bookloot), retire chest chain; no actualfood/use. Original14:09deadline report current
+p4: time to ledger. Now inspect actualH2bed effect for20minreview.
+p4: CENTRAL actualP2 #10007 FULLoutput read now: operatingwindow FAILED BEFORE view/activation: actualbedchanged atlower58; minRootNULL/activationNULL, fullnative7HPsame. Do not report30s proximityfailure. Need actualFOOT/HEAD/covercells+items sensor to distin
+p4: guish disappearance vs guard/property defect BEFORE more sourcing. Possible dragon destruction (P1root2.35) is H4, not proved. If bed reallygone, H2 explosion mechanism stillUNTESTED; futurechangedmethod must PLACE+inspect+activate in SAMEcaller when usefu
+p4: lactualrootwindow, no preposition+idle. Original14:12 clock stillnotreset.
+--- p1 now: (75.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive

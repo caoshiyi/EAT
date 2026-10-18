@@ -14,3 +14,8 @@ Movement helper movement_small_test.js #9948 physically tested135→136→135, H
 Do not blindly copy old HAND_DOOR: iter21 assumed woodenpick present; current P4 empty/bed only. Never treat a resolved goto as arrival. Check actual target distance; actual endpoint/dimension/death beats phase label.
 
 Adoption requested: P4 identify source route notes actually used and actual End retained BED receipt; later activation result is separate. P1 remains quarry, no p4program run by P1.
+
+## Actual qualification supersedes original recipient proposal,14:06
+P4releasedbedtask; P1WESTsource+delivery adoptedbyP2. #9981 actually traversed WESTtable140 route→portal→existing97step→79→75 withBED1, 23.8s HP20 retained; no doorcuts. bed_transport.js/out is current witnessed recipe. #9983 physically traversed coveredBFS route75→47,0→47,1→45,1→45,2→44,2→44,3→7,3 withBED1, HP20,16.9s; nativez2weststraightblocked so explicitz3 matters. #9991 reverse to75 samehealth16s. P2#9993 ordinarybedreceipt/fullnative7 confirmed. This is P1tested/recipientdelivery, not P4routeadoption. Helper uses actualhorizontal+Y+groundchecks aftereach compressedstraightsegment; allBFSnodes requirefullfloor49/roof52/bodyclear. Sourcepath/landing/dimension guardactualoutputs retained. Source pickupfailure9970 fixedbyfreshdropobservation9975→HEADside9977, no blindredig.
+
+P1#9958 separately proved oldnativeupperretreat GoalBlock143,-36,2231 can resolvewithoutmoving from144,-35; horizontalpostcheckcaughtit. #9960 exactmanualhorizontalforward West acrossinspectedclear143descent thenfullquarryreturn succeededHP20. Do not transfer this manual step to arbitrary geometry; inspectfullfloor/body/headfirst.

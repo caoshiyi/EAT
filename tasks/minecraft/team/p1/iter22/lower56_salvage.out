@@ -1,0 +1,44 @@
+program #10029 on p1: 34.8 s
+--- output ---
+COVERED_PATH [[75,0],[74,0],[73,0],[72,0],[71,0],[70,0],[69,0],[68,0],[67,0],[66,0],[65,0],[64,0],[63,0],[62,0],[61,0],[60,0],[59,0],[58,0],[57,0],[56,0],[55,0],[54,0],[53,0],[52,0],[51,0],[50,0],[49,0],[48,0],[47,0],[47,1],[46,1],[45,1],[45,2],[44,2],[44,3],[43,3],[42,3],[41,3],[40,3],[39,3],[38,3],[37,3],[36,3],[35,3],[34,3],[33,3],[32,3],[31,3],[30,3],[29,3],[28,3],[27,3],[26,3],[25,3],[24,3],[23,3],[22,3],[21,3],[20,3],[19,3],[18,3],[17,3],[16,3],[15,3],[14,3],[13,3],[12,3],[11,3],[10,3],[9,3],[8,3],[7,3]]
+CHECKED_LEG {"target":[47,50,0],"before":{"p":{"x":75.5,"y":50,"z":0.4997911735157712},"hp":20,"dim":"the_end"},"p":{"x":47.69791644921176,"y":50,"z":0.4997911735157712},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[47,50,1],"before":{"p":{"x":47.69791644921176,"y":50,"z":0.4997911735157712},"hp":20,"dim":"the_end"},"p":{"x":47.53626035552666,"y":50,"z":1.3162315333047685},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,1],"before":{"p":{"x":47.53626035552666,"y":50,"z":1.3162315333047685},"hp":20,"dim":"the_end"},"p":{"x":45.65319812606209,"y":50,"z":1.5068238731725343},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[45,50,2],"before":{"p":{"x":45.65319812606209,"y":50,"z":1.5068238731725343},"hp":20,"dim":"the_end"},"p":{"x":45.526404207823234,"y":50,"z":2.3293995585890306},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,2],"before":{"p":{"x":45.526404207823234,"y":50,"z":2.3293995585890306},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":2.4660508231477603},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[44,50,3],"before":{"p":{"x":44.5,"y":50,"z":2.4660508231477603},"hp":20,"dim":"the_end"},"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[7,50,3],"before":{"p":{"x":44.5,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+NATIVE7_START {"p":{"x":7.5,"y":50,"z":3.5},"hp":20}
+CHECKED_LEG {"target":[3,50,3],"before":{"p":{"x":7.5,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":3.658275656947759,"y":50,"z":3.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[3,50,4],"before":{"p":{"x":3.658275656947759,"y":50,"z":3.5},"hp":20,"dim":"the_end"},"p":{"x":3.5280766311727967,"y":50,"z":4.322044296195416},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[2,50,4],"before":{"p":{"x":3.5280766311727967,"y":50,"z":4.322044296195416},"hp":20,"dim":"the_end"},"p":{"x":2.5,"y":50,"z":4.464143367303525},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[1,50,4],"before":{"p":{"x":2.5,"y":50,"z":4.464143367303525},"hp":20,"dim":"the_end"},"p":{"x":1.6684162706423857,"y":50,"z":4.484918260013739},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[0,50,4],"before":{"p":{"x":1.6684162706423857,"y":50,"z":4.484918260013739},"hp":20,"dim":"the_end"},"p":{"x":0.5,"y":50,"z":4.4921017643095675},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[0,50,3],"before":{"p":{"x":0.5,"y":50,"z":4.4921017643095675},"hp":20,"dim":"the_end"},"p":{"x":0.49999999999995226,"y":50,"z":3.659810582558753},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[1,51,3],"before":{"p":{"x":0.49999999999995226,"y":50,"z":3.659810582558753},"hp":20,"dim":"the_end"},"p":{"x":1.5,"y":51,"z":3.5477673804959906},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[2,52,3],"before":{"p":{"x":1.5,"y":51,"z":3.5477673804959906},"hp":20,"dim":"the_end"},"p":{"x":2.5,"y":52,"z":3.535767606558194},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[3,53,3],"before":{"p":{"x":2.5,"y":52,"z":3.535767606558194},"hp":20,"dim":"the_end"},"p":{"x":3.5,"y":53,"z":3.5266371142054407},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[4,54,3],"before":{"p":{"x":3.5,"y":53,"z":3.5266371142054407},"hp":20,"dim":"the_end"},"p":{"x":4.5,"y":54,"z":3.5199677243448324},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[5,55,3],"before":{"p":{"x":4.5,"y":54,"z":3.5199677243448324},"hp":20,"dim":"the_end"},"p":{"x":5.5,"y":55,"z":3.514837005795189},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[6,56,3],"before":{"p":{"x":5.5,"y":55,"z":3.514837005795189},"hp":20,"dim":"the_end"},"p":{"x":6.5,"y":56,"z":3.510937491086838},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+LOWER56_RECEIPT {"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"inv":[["end_stone",64,null],["cobbled_deepslate",10,null],["white_bed",1,null],["end_stone",15,null],["stone_sword",1,0],["blackstone",1,null],["stone_pickaxe",1,106]],"items":[{"id":4608,"p":{"x":4.125,"y":59,"z":2.125},"n":"end_stone"},{"id":4610,"p":{"x":4.125,"y":59,"z":2.875},"n":"cracked_stone_bricks"},{"id":4616,"p":{"x":4.125,"y":59,"z":2.875},"n":"book"}]}
+CHECKED_LEG {"target":[5,55,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[4,54,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[3,53,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+CHECKED_LEG {"target":[2,52,3],"before":{"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"dim":"the_end"},"p":{"x":6.7,"y":56,"z":3.3},"hp":20,"ground":true,"goal":null,"controls":{},"ok":false}
+RETURN_NODE_ERROR Error: physical postcondition failed
+RETURN_NODE_ERROR Error: movement timeout
+RETURN_NODE_ERROR Error: movement timeout
+RETURN_NODE_ERROR Error: movement timeout
+TERMINAL {"p":{"x":-8.5,"y":27,"z":-26.5},"hp":20,"food":20,"ground":false,"dim":"overworld","inv":[],"goal":null,"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: UPDATE actualevents TWO P2deaths:14:11:33 EndMAGIC, then14:12:04 Zombie atoldrespawn-7.3,Y32,-39.7 whileidle; current10027 actual14:13 OWsurface7.5,68,-34.5 HP20food20 EMPTY/day1791/nohostiles<=35. AllEndkitlost. Minute20 decision BEDretiredafterchangedrec
+p2: overydeath/noactivation; P1freshsafe<=56recovery only then PHASE6 fountain63 actualnormalrootattack(15s field). P4H3lootnegativeclosed; optionalsource discoveries no automaticquota. P2 surfacefood feasibility <=14:18 including actualordinaryfoodreceipt+eat
+p2: ; then price transport/recipientuse<=14:28, no ranged/string prerequisite project.
+[server] p1 was killed by Ender Dragon using magic
+--- p1 now: (-8.5, 27, -26.5) in overworld, health 20/20, food 20/20, alive
