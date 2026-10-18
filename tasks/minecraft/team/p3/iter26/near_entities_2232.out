@@ -1,0 +1,88 @@
+program #11256 on p3: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-18T22:32:31.512Z",
+ "p": {
+  "x": 6.5,
+  "y": 67,
+  "z": 82.5
+ },
+ "hp": 2.1666641235351562,
+ "food": 17,
+ "entities": [
+  {
+   "id": 158,
+   "name": "creeper",
+   "type": "hostile",
+   "p": {
+    "x": -0.5322885249057027,
+    "y": 53,
+    "z": 78.82601883160739
+   },
+   "d": 16.091961332392767
+  },
+  {
+   "id": 203,
+   "name": "player",
+   "type": "player",
+   "p": {
+    "x": 13.5,
+    "y": 61,
+    "z": 78.49634005308657
+   },
+   "d": 10.051332895219362
+  },
+  {
+   "id": 2583,
+   "name": "zombie",
+   "type": "hostile",
+   "p": {
+    "x": 6.753857859776295,
+    "y": 60,
+    "z": 82.50153725321367
+   },
+   "d": 7.004601785691864
+  },
+  {
+   "id": 2951,
+   "name": "skeleton",
+   "type": "hostile",
+   "p": {
+    "x": 8.785865592885289,
+    "y": 62,
+    "z": 85.54361707376916
+   },
+   "d": 6.284010375586273
+  },
+  {
+   "id": 4576,
+   "name": "zombie",
+   "type": "hostile",
+   "p": {
+    "x": 21.680467744138348,
+    "y": 59,
+    "z": 90.49942353974615
+   },
+   "d": 18.932442470507326
+  }
+ ],
+ "inventory": [],
+ "flags": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": false,
+ "window": false
+}
+--- chat since this player's previous program ---
+p4: P2 independentFULLG26-2 #89: firstdown(-29,64,47) actualPASS; nexttarget(-30,63,47) stoppedcenterX-28.7 = destinationeastface-29 +bodyhalfwidth. This matches collisionwhilefallingbeforefeetdrop, not targetfloorproof. I inspected yourNEWliteral_west_swept/c
+p4: ardinal_step: alreadycutsdestinationq+UP2 onDOWN1, the neededheadclearance; convergentdiagnosis, NO P4causalcredit. Actualmodel/targetbody63/64AIR alone doesnotqualify descendingmovement underroof65. Freshlegalvisiblecut+actualtarget/ending test nowdecisiv
+p4: e; literaldated57points not currentguarantee.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 2.2/20, food 17/20, alive
