@@ -1,7 +1,7 @@
 async function walkLow(points,startIndex,endIndex,budgetMs=85000){
 const began=Date.now();let cursor=startIndex,stalls=0,pauses=0;
 if(!bot.entity.position.floored().equals(v(...points[cursor]))||bot.game.dimension!=='the_nether')throw Error('LOW source admission');
-const allowed=['basalt','blackstone','netherrack','dirt','cobblestone','nether_bricks','cobbled_deepslate','tuff','stone','stone_bricks','cracked_stone_bricks','diorite','granite','andesite'];
+const allowed=['basalt','blackstone','netherrack','dirt','cobblestone','nether_bricks','cobbled_deepslate','tuff','stone','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','deepslate','diorite','granite','andesite'];
 while(cursor<endIndex){alive();if(Date.now()-began>budgetMs)throw Error('LOW whole caller budget');let goalIndex=Math.min(cursor+20,endIndex);let cleared=0;const firstDir=[points[cursor+1][0]-points[cursor][0],points[cursor+1][2]-points[cursor][2]];for(let j=cursor+2;j<=goalIndex;j++)if(points[j][0]-points[j-1][0]!==firstDir[0]||points[j][2]-points[j-1][2]!==firstDir[1]){goalIndex=j-1;break;}
 for(let j=cursor+1;j<=goalIndex;j++){const q=v(...points[j]),floor=bot.blockAt(q.offset(0,-1,0));if(!full(q.offset(0,-1,0))||['magma_block','lava','water'].includes(floor?.name))throw Error('LOW floor preflight '+q+' '+floor?.name);for(const d of [[0,0,0],[0,1,0]])if(['lava','water','fire','soul_fire','magma_block'].includes(bot.blockAt(q.offset(...d))?.name))throw Error('LOW body hazard '+q.offset(...d));}
 for(let j=cursor+1;j<=goalIndex;j++){const q=v(...points[j]);if(bot.entity.position.distanceTo(q.offset(.5,0,.5))>3.1)continue;for(const b of [q.offset(0,1,0),q])if(full(b)){await cut(b,allowed);cleared++;}}
