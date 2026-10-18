@@ -35,6 +35,15 @@ until it returns or its timeout (60 s unless you choose another), and prints wha
 player's state, and the chat since that player's last program. Mineflayer's documentation is in
 `tools/mc_arena/node_modules/mineflayer/docs/`.
 
+A practice sandbox lets you try risky things without losing anything. `python tools/mc_arena.py sandbox reset` makes
+it a fresh copy of the world as it is right now (every player's position, inventory and health, the End and the
+dragon fight) and puts the four players in it; add `--sandbox` to any command above (`run`, `status`, `chat`,
+`events`, `programs`) to act there. The same rules apply in the sandbox, and you control the same player as in the
+world. Nothing done in the sandbox counts or is kept: deaths, items and blocks there never reach the world, and the
+next reset (by anyone) replaces it. A reset takes about 15-50 s; the sandbox runs only while the world is up.
+`python tools/eval_minecraft.py` also prints a progress block (crystals left, the dragon's health, the team's
+fighting kit) that is information only, not score.
+
 ## Rules
 - One agent controls one player: the first program an agent runs on a player makes it that agent's player for the
   rest of the iteration, and the arena refuses anyone else. Agents that do not play may read everything.
