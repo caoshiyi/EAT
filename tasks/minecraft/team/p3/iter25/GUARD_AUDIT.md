@@ -23,3 +23,11 @@ Preprice exposure for candidate AIR body cells in `eligible`/route cost before s
 ## Provenance and limits
 
 Only allowed team source/current runtime observations/arena records. No excluded17–19, internet-derived client material, raw packets, through-block interactions, reach bypass, server/.work/tools edits. Only p3 controlled. G25-1 reset by P2 copied20:09:40, READY20:09:53, announced20:10:04; P3 released before reset and has no sandbox state. Exact source smoke and output in this directory; original10834 evidence remains P1-owned and arena record. Original false-positive hypothesis is rejected; physical adoption/deadline outcome to append.
+
+## Actual partial adoption verified20:12
+
+FULL LIVE10864 at20:10:27–33: P1 actually cut supported floorsY-37/-38, fell one block each, capped newroofY-36 and retained THREE10FULL/HP17.2667food17/all7false at148.528896,-38,2242.309549, terminal20:10:33.347. Thus unchanged-guard/below decision now has a real initial action and retained ending, not acknowledgement alone. Three-step protected movement still pending live; sandbox G25-1#12 qualified a different lowerY-39 stance and cannot transfer physical gains. Whole five-minute audit deadline20:14:24 unchanged.
+
+## Completed bounded recipient adoption —20:13 verification
+
+P3 FULL-read LIVE10871 `LIVE_west3_lower.out`, preserved exact owned copy `LIVE_p1_10871_adoption.raw.txt`. Actual three steps147/146/145 atY-39; each ordinary cut followed by unchanged visibility guard (all12 rays blocked); actual final145.5,-39,2242.491231, HP17.266668/food17, THREE10FULL and all7false/goalFALSE; terminal20:12:16.606. Request20:09:24->ending2m52.606, independent read/notification before original20:14:24 deadline. Therefore specific audit knowledge changed decision and recipient physically adopted protected lower route. No FRAME/End/dragon claim. Sandbox G25-1 endpoint144 was different from LIVE145 and no physical gains transferred. Source P1 owns actual descent/route implementation; P3 owns historical failure diagnosis and bounded handoff.
