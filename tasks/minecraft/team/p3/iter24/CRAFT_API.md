@@ -1,6 +1,6 @@
 # P3 bounded craft-API delivery for P1 rod/cod operation
 
-P2 requested<=3min at18:25:23, for actualP1 localfishing preparation. Completed probes **10660** (rod first) and **10662** (physicaltable open/close + bundle). Source: installed Mineflayer docs `api.md` lines1654/1668/2068/2215 and runtime registry/recipe API. No external recipes/client source or fabricated inventory. No material-gathering queue.
+P2 requested<=3min at18:25:08, for actualP1 localfishing preparation. Completed probes **10660** (rod first) and **10662** (physicaltable open/close + bundle). Source: installed Mineflayer docs `api.md` lines1654/1668/2068/2215 and runtime registry/recipe API. No external recipes/client source or fabricated inventory. No material-gathering queue.
 
 ## Actual tested table access
 P3 HOME(6.5,67,82.5), HP2.1667/food17/EMPTY. ExistingTABLE(6,66,82) actualcursorface1 intersection(6.5,67,82.50000000) within1.62m. Normal `await bot.openBlock(table)` returned window1 **minecraft:crafting**; `await bot.closeWindow(w)` returned, `bot.currentWindow===null` TRUE. No crafting/input changes, health/inventory unchanged. A table Block in `recipesAll` is not proof that a remote actor can use it; P1 must establish its own actual visible/reachable table.
@@ -34,3 +34,6 @@ Small recipe-only bundle, if P1 harvests actual materials: **OAK_PLANK4** ->1 st
 Optional sword+rod+bow recipe-only bundle =6OAK_PLANK +5STRING:2stick operations->8sticks, sword1/rod3/bow3 use7;1stick remains. No arrows available or promised. This is not a new bow/stock quota.
 
 Adoption criterion: P1 actual available recipe ->ordinary craftedrod ->realcatch/fooduse. P3 query/open/close alone is donor evidence, not completed useful adoption. Await recipient craft/use record; original foodcourier failure remains unchanged.
+
+### Fresh recipient-world supersession,18:32
+P1 current10667 scan, independently read by P2 at18:32:00, has TABLE(140,-36,2232) and(166,-34,2234); old TABLE(149,-36,2232) is absent in the loaded scan. Present FURNACE(165,-39,2258), unlit, and WATER(166/167,-41,2257). Presence is not reach/fuel/access. Thus **do not turn the furnace recipe variants above into an8-input gathering quota** while the existing furnace may be usable. P4 owns fishing access leads. Current wood source observation:148/149,-32,z2235..37; surviving webs166,-38,2224 etc. Historical consumed-source coordinates are not replenished stock. Recipient inventory18:32 contains OAK_PLANK1 only; actualrod craft/use remains pending.
