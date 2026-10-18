@@ -1,30 +1,20 @@
-# Current active methods support —16:27 UTC
+# Current methods support —17:18 UTC
 
-**16:55 current override:** P1 retainedSouth58 after failedwestfield#10407,HP3/food17/BASALT1/bothpicks; noLOW/Endaccess. P2's new small#10420 cutcase proves delayedordinaryGRAVELreceipt and actualreclose atstableHP20, not causeofearlierpositiondiscontinuity. [P2_HEAD_RECEIPT_RESULT.md](P2_HEAD_RECEIPT_RESULT.md) is the reusablecase review. Shared suppliedtrace remainsunvalidated as supplied. Older connector/portalbody entries are historical.
+Nonplaying reviewer. No player programs/chat, agents or Minecraft strategy. Owners alone review/run proposed changes. Current actor observations: [EVIDENCE.md](EVIDENCE.md). Complete independent closure was committed16:57; [review and later changes](../../ITER23_REVIEW.md).
 
-Nonplaying reviewer: no player programs/chat, no agents, no Minecraft strategies. Player owners alone review/run fixes. Current ledger: [EVIDENCE.md](EVIDENCE.md); complete independent review: [ITER23_REVIEW.md](../../ITER23_REVIEW.md). Earlier offer chronology: README_LOG_TO_1627.md. Current actor state requires newer arena observations, never old labels.
+Current priorities:
 
-| Recipient / current question | Small review/correction | Actual acceptance / limit |
-|---|---|---|
-| P1 settled endpoint | [P1_DIRECT_POST_REVIEW.md](P1_DIRECT_POST_REVIEW.md): #10353 checks y/ground after settling but omits x/z; target2.5,66,92.5 ended~.875m away in next zcell | Old defect corrected in10359 for sixcases; later10407 settledfailure remains. See sharedtrace/currentcase reviews; no universalmovementfix |
-| P1 generic modelabsent | [P2_MODEL_RECEIPT_REVIEW.md](P2_MODEL_RECEIPT_REVIEW.md), owner p2/iter23/model_with_receipt.js preserves start/goal/status/elapsed/edits, no execution | P2#10337 success0 vs noPath0 small-smoke confirmed. P1 adoption unreported; no route rewrite requested |
-| P1 repeatedHP stops | [P1_SECOND_HP_REVIEW.md](P1_SECOND_HP_REVIEW.md): center nodes vs actual width.6 footprint/shortcut; first failure-frame receipt | Changed padded/ordered#10304 four physical nodes+full endingHP20 accepted. Long10336 real nearHOME transit, lastgoal/fallback failed; no universal traversal guarantee |
-| P2 reclaim/newdoor | [P2_RECLAIM_CONTRACT_REVIEW.md](P2_RECLAIM_CONTRACT_REVIEW.md): copied pick requirement for gravel failed10397; revised10400 targetAIR refused. Exact above-column/tick/current-target discriminator before repetition | Original16:44 surfacegate retains deadline; no extra tool/source prerequisite from wrong helperguard. Current ending must be verified |
-| P2 return geometry | [P2_MOVE_DIAGNOSTIC.md](P2_MOVE_DIAGNOSTIC.md): immutable target+phase receipts, fresh return cells | First quarry returned partial/full; second return failed, separate10287 newroom retained30gravel. Exact first collision cause unknown;48stockgatefailed/retired |
-| Any owner terminal evidence | [fresh_terminal_observation.js](fresh_terminal_observation.js), [acceptance](TERMINAL_OBSERVATION_REVIEW.md) | P2 explicitly reviewed/ran#10301; ten loaded full cells/negative coordinates match independent10287. This case validated; no rescue/body-footprint proof |
-| Initial P1 receipt | [P1_RECEIPT_REVIEW.md](P1_RECEIPT_REVIEW.md): cut vs ordinary receipt; expected5 corrected | Owner adoption#10230 cobble2→5/HP20, then toolcraft/use and ending verified. Specific case, no universal pickup radius |
+- P1: [P1_ROOF_REFUSAL_REVIEW.md](P1_ROOF_REFUSAL_REVIEW.md). #10456 ended9/10 and discarded all face-refusal reasons; log all six reference names/loaded/full and actual cursor/refusal before concluding “no reference.” Latest status17:18 has body one cell lower at(-36.5,57,48.3),HP3; old roof coordinates are now historical. Recompute actual occupied geometry. No new legal-reference/placement claim without owner result.
+- P2: [P2_RESOURCE_GATE_FAILURE.md](P2_RESOURCE_GATE_FAILURE.md). Two deaths; current empty/new life supersedes all old gravel/food commitments. Exact10440 fallback existed but admitted only(-7,26,-31), while failed body floored(-8,24,-31). Check admission on expected post-mutation failure states before long extension. No automatic recovery/source chain.
+- Shared: [SETTLE_TRACE_ACCEPTANCE.md](SETTLE_TRACE_ACCEPTANCE.md), [paired receipt cases](PAIRED_RECEIPT_REVIEW.md), [actual P2 result](P2_HEAD_RECEIPT_RESULT.md). Documented API-only observations; no server cause inferred. Supplied trace function is still unvalidated as supplied. Operators' own probes are separately credited.
 
-Unvalidated supplied proposal: annotate_path_cells.js/PATH_CELL_ACCEPTANCE.md; P1 independently implemented similar annotation, not adoption of our function. Owner's support-cut adaptation10268 was real but began before written support review; no methods causal credit invented.
+Validated reusable cases:
 
-**Corrections that supersede older notes:**
+- Supplied fresh_terminal_observation.js: P2#10301 matched independent ten-cell room/negative coordinates. Snapshot case only; not rescue or footprint proof.
+- P2 model_with_receipt.js: success0 vsnoPath0 in10337, actual P1 peer use SUCCESS2 before10427 doorway passage. No universal route validity.
+- P1 offline audit_output.py adopted by methods after actual success/failure cases. It omits unknown labels and endpoint-only errors from some summary fields; inspect raw errors/stage/count.
+- Owned brief_capture.py emits literal counts; real positive, failed-primary and open-ending smokes passed. capture_readonly.py runs only arena status/events/chat/programs/evaluator. Raw capture timestamps/statuses preserved.
 
-- Cost100 concern in original P4 planner review was WRONG. Installed pathfinder readme277–279 says100 makes move impossible. Retracted16:13; no P4 fluid-exclusion defect established.
-- Retained iter16 public-client mappings/bytecode investigation is EXCLUDED from operational support after lead8844–45 provenance restriction. Do not adopt parent→BODY claim. Installed allowed API docs/permitted world records leave dragon-specific runtime semantics unresolved. [API review](DRAGON_API_REVIEW.md) prominently marks withdrawal; no further source investigation.
+Corrections: cost100 is hard rejection per installed docs; original soft-penalty concern retracted. Inherited public-client mapping/bytecode source investigation is EXCLUDED; no parent-to-BODY premise admissible. Installed allowed docs/world records leave dragon-specific runtime semantics unresolved.
 
-Evidence tooling: capture_readonly.py (only authorized read-only arena commands/eval, small-smoked); brief_capture.py prints explicitly clipped excerpts; raw captured outputs remain exact. Peer P1 audit_output.py adopted by methods after success#10304 AND failedprimary/successfulfallback#10289 tests. Always inspect errors and ten cells: walk_failures[] alone misses a failed goalpostcondition (#10336). Model minimumHP may include pre-heal stage.
-
-Reviewer owns this directory plus ITER23_REVIEW/EVOLUTION_HISTORY/TOKEN_USAGE. Token usage unavailable. No remote push. Closure committed by17:30:59UTC, final verification17:35:59–17:45:59, actual cutoff17:55:47. No closure dependency on one last command.
-
-16:47 evidence-tool improvement: brief_capture.py now reports literal array length/full_true/full_false/HP before clipping long cell JSON. Known success10304 reproduced4x10true/HP20; failedprimary10289 reproduced4x10true/HP19 while keeping error; known open10353 terminal reproduced1true+9false. These are offline parser smokes on actual records, not world simulations. Full raw/source still required for causal/legality claims. No labels alone treated as completion.
-
-**16:52 highest-priority shared diagnostic:** [SETTLE_TRACE_ACCEPTANCE.md](SETTLE_TRACE_ACCEPTANCE.md) + settle_receipt_trace.js for P1/P2. Evidence P1#10407 repeated settled miss and P2#10409 ~4m discontinuity/no lifechange/no ordinarycutreceipt. Observation-only currentposition/velocity/inventory/watchedcells/documentedforcedMove; owner first runs a small read-only baseline in a retained state. UNVALIDATED until actual owner report; no inferred server/API cause, packets, physics changes or automatic movement. P1-specific exact review P1_BRIDGE_STABILITY_REVIEW.md.
+Earlier offers preserved in README_TO_1718.md, with original hypotheses/results and withdrawals. No token estimate: unavailable. Final decisive/handoff checks17:35:59–17:45:59; cutoff17:55:47. No remote push.
