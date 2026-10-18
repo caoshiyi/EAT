@@ -2,7 +2,9 @@
 import csv,json,pathlib,re
 root=pathlib.Path('tasks/minecraft/team/p1/iter26');rows=[]
 for p in root.glob('*.out'):
-    raw=p.read_text();body=raw.split('--- output ---',1)[-1].split('--- returned ---',1)[0]
+    raw=p.read_text();
+    if not re.match(r'^(?:\[sandbox\] )?program #\d+ on p1:',raw):continue
+    body=raw.split('--- output ---',1)[-1].split('--- returned ---',1)[0]
     ts=[json.loads(l[9:]) for l in body.splitlines() if l.startswith('TERMINAL ')]
     t=ts[-1] if ts else {};s=t.get('state',{});errors=[l for l in body.splitlines() if re.match(r'^(?:FAIL|CLOSE_FAIL|PRIMARY_FAILURE|RETENTION_FAILURE)\b',l)]
     full=sum(bool(c.get('full')) for c in t.get('shell',[]));total=len(t.get('shell',[]))
