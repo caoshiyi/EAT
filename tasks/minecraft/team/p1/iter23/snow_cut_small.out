@@ -1,0 +1,10 @@
+program #10342 on p1: 0.7 s
+--- output ---
+PRE {"p":{"x":2.3,"y":64,"z":89.75117358613294},"hp":20,"target":{"p":{"x":1,"y":64,"z":90},"n":"snow","props":{"layers":"1"},"shapes":[]},"support":"sand","currentFloor":{"n":"snow","props":{"layers":"1"}}}
+ACTUAL_CLEAR_SNOW [{"h":1.62,"dist":1.8738038846434915},{"h":1.8,"dist":2.0225580333095556}]
+EFFECT {"n":"air","p":{"x":2.3,"y":64,"z":89.75117358613294},"hp":20}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (2.3, 64, 89.8) in overworld, health 20/20, food 19/20, alive

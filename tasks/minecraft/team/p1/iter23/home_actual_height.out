@@ -1,0 +1,24 @@
+program #10353 on p1: 6.1 s
+--- output ---
+DIRECT_PRE {"from":{"x":1.4723928507151918,"y":65,"z":91.7},"target":{"x":1.5,"y":65,"z":91.5},"up":false}
+DIRECT_POST {"p":{"x":1.5274686489412561,"y":65,"z":91.27713530570341},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+SNOW_PRE {"p":{"x":2,"y":65,"z":91},"props":{"layers":"1"},"rays":[{"h":1.62,"dist":1.8182095315876246},{"h":1.8,"dist":1.9711635905616933}]}
+DIRECT_PRE {"from":{"x":1.5274686489412561,"y":65,"z":91.27713530570341},"target":{"x":2.5,"y":65,"z":91.5},"up":false}
+DIRECT_POST {"p":{"x":2.783408390989069,"y":65,"z":91.56126448637437},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+SNOW_PRE {"p":{"x":2,"y":66,"z":92},"props":{"layers":"1"},"rays":[{"h":1.62,"dist":1.109930034112511},{"h":1.8,"dist":1.2048006808700735}]}
+DIRECT_PRE {"from":{"x":2.783408390989069,"y":65,"z":91.56126448637437},"target":{"x":2.5,"y":66,"z":92.5},"up":true}
+DIRECT_POST {"p":{"x":2.432511705364089,"y":66,"z":93.37275787808407},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+SNOW_PRE {"p":{"x":3,"y":66,"z":92},"props":{"layers":"1"},"rays":[{"h":1.62,"dist":2.0522274661797435},{"h":1.8,"dist":2.1888895753195294}]}
+DIRECT_PRE {"from":{"x":2.432511705364089,"y":66,"z":93.37275787808407},"target":{"x":3.5,"y":66,"z":92.5},"up":false}
+DIRECT_POST {"p":{"x":3.7382453601196977,"y":66,"z":92.29599570725463},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+PRIMARY_FAILURE Error: direct admission {"p":{"x":3.7382453601196977,"y":66,"z":92.29599570725463},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+FALLBACK_FAILED Error: fallback lower faces not native-full {"p":{"x":3.7382453601196977,"y":66,"z":92.29599570725463},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]]}
+TERMINAL {"p":{"x":3.7382453601196977,"y":66,"z":92.29599570725463},"hp":20,"food":19,"lost":false,"ground":true,"inv":[["wooden_pickaxe",1],["stone_pickaxe",1],["spruce_sapling",1],["spruce_planks",2],["sweet_berries",1]],"clock":12690,"shell":[{"p":{"x":3,"y":65,"z":92},"n":"sand","full":true},{"p":{"x":3,"y":68,"z":92},"n":"air","full":false},{"p":{"x":4,"y":66,"z":92},"n":"snow","full":false},{"p":{"x":4,"y":67,"z":92},"n":"air","full":false},{"p":{"x":2,"y":66,"z":92},"n":"air","full":false},{"p":{"x":2,"y":67,"z":92},"n":"air","full":false},{"p":{"x":3,"y":66,"z":93},"n":"air","full":false},{"p":{"x":3,"y":67,"z":93},"n":"air","full":false},{"p":{"x":3,"y":66,"z":91},"n":"air","full":false},{"p":{"x":3,"y":67,"z":91},"n":"air","full":false}]}
+--- error ---
+Error: direct admission
+    at direct (p1-program-10353.js:15:217)
+    at p1-program-10353.js:18:182
+--- chat since this player's previous program ---
+p4: For current short step only, allowed P4#9665 physicallyproved normal 1-block up movement repeatedly: approachactualstepface onground first (oldhelper<=8ticks), jump untilactualY>=target+.005, releasejump, then forward/settle/actualtargetcheck; return alsoa
+p4: ctual. occupied_row_test.js go() source in p4/iter21 available for REVIEW. This addresses insufficient air acceleration observed then, not proves current snow/sand/corner geometry or cause. No new kit/model chain; methods/P1 own current executionchoice.
+--- p1 now: (3.7, 66, 92.3) in overworld, health 20/20, food 19/20, alive
