@@ -1,0 +1,45 @@
+program #9876 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "warning": "READONLY MATH ONLY. Assumed BED BOX not actual block shape. No bed placed, no API target supplied, no actual look/activation/reach/safety proof. Centre aim hypothesis inferred from P1#9863 actual automatic look.",
+ "stance": {
+  "x": 4.35,
+  "y": 59,
+  "z": 2.45
+ },
+ "aim": {
+  "x": 3.5,
+  "y": 60.5,
+  "z": 1.5
+ },
+ "realToCenter": {
+  "hit": {
+   "x": 3,
+   "y": 60,
+   "z": 1
+  },
+  "label": "HYPOTHETICAL_BED_BOX_NOT_REAL",
+  "q": {
+   "x": 3.9426555427003493,
+   "y": 60.562492547204755,
+   "z": 1.994732665370979
+  },
+  "t": 0.6135999999999651
+ },
+ "modelSameDirectionShort": {
+  "clear": true,
+  "max": 1.280390565413538
+ },
+ "len": 1.280390565413538,
+ "p2": {
+  "x": 33.5,
+  "y": 50,
+  "z": 3.4995579375119834
+ },
+ "hp": 10.55274772644043
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Silverfish
+--- p2 now: (33.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive

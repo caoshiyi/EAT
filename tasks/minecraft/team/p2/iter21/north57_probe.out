@@ -1,0 +1,280 @@
+program #9888 on p2: 9.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "warning": "READONLY native57 root-range hypothesis; no movement/excavation/attack. Actual occupied dragon behavior and visibility/reach not established.",
+ "mins": [
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": -2.5
+   },
+   "body": 23.41459062674954,
+   "eye": 22.122714248543247,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  },
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": -1.5
+   },
+   "body": 23.43190982827863,
+   "eye": 22.141044006663545,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  },
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": -0.5
+   },
+   "body": 23.491822879097615,
+   "eye": 22.20444040473268,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  },
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": 0.5
+   },
+   "body": 23.59400530145756,
+   "eye": 22.31251930351296,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  },
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": 1.5
+   },
+   "body": 23.737911242304385,
+   "eye": 22.464635800563332,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  },
+  {
+   "stance": {
+    "x": 6.5,
+    "y": 57,
+    "z": 2.5
+   },
+   "body": 23.922787758324368,
+   "eye": 22.65990303673573,
+   "root": {
+    "x": -7.229106778682301,
+    "y": 75.96696558505221,
+    "z": -2.40567199115668
+   },
+   "hp": 200
+  }
+ ],
+ "phase": {
+  "undefined": 100
+ },
+ "grid": [
+  {
+   "x": 6,
+   "z": -3,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": [
+      [
+       0,
+       0,
+       0,
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 6,
+   "z": -2,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 6,
+   "z": -1,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 6,
+   "z": 0,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 6,
+   "z": 1,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 58,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 6,
+   "z": 2,
+   "cells": [
+    {
+     "y": 56,
+     "n": "end_stone",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 57,
+     "n": "air",
+     "sh": []
+    },
+    {
+     "y": 58,
+     "n": "air",
+     "sh": "[repeated reference]"
+    },
+    {
+     "y": 59,
+     "n": "air",
+     "sh": "[repeated reference]"
+    }
+   ]
+  }
+ ],
+ "body": {
+  "x": 33.5,
+  "y": 50,
+  "z": 3.4995579375119834
+ },
+ "hp": 10.55274772644043,
+ "ground": true,
+ "controls": {}
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (33.5, 50, 3.5) in the_end, health 10.6/20, food 14/20, alive
