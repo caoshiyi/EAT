@@ -1,0 +1,1 @@
+return {at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,stone:bot.findBlocks({matching:b=>b.name==='stone',maxDistance:16,count:16}),side:Array.from({length:9},(_,i)=>{let q=bot.entity.position.floored().offset(i-4,-4,0);return{q,ns:[-1,0,1,2].map(h=>bot.blockAt(q.offset(0,h,0))?.name)}})};

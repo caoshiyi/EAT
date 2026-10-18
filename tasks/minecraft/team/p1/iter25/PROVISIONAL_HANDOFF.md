@@ -10,3 +10,6 @@ Exactsources/outputs+JOURNAL/P1 current. Core_end ownreviewedpermitted24/25 ordi
 
 ## Material supersession20:35 — current state governs
 LIVE10947 ringclimbfailedmagicdamage/retreatsameHPguardcontradiction, canonicalLIVEdeath20:30:22 bydragonmagic44.9,59,3.9, oldEndkitLOST. CurrentLIVE10960 actualnewtreepocketOW8.5299,69,-25.6792/20HP20food/THREE10FULL/all7FALSE20:34:08.653. Newlogsource4receipts butcraftquantityclaim16carriedWRONG; fresh10962 LOG2/PLANK3/BUTTON1/SAPLING2 +handgridPLANK3. P3craftstateauditpending. CurrentP1.mdfullupdateddiagnosis. G25-3healthyEndstate preserved, parent_contact_trial ONLYSB currentlyrunning220sbound; no liveobjectivedamageyet. Do not resumeoldEndprogramagainstrespawnbody. Separateemergencyreturnaliveguard fromadvanceHPminimum; failedcallerresponsemustbeprompt. Earlierwholecourierfailed/retired, no promisedbed. Continueusefulworkthrough21:52, originaldeadlineunchanged.
+
+## Resume supersession
+See FINAL_HANDOFF.md: current LIVE is OW11.3322,62,-25.5062 HP20/toolkit; current role refused P1 programs and say in LIVE and G25-4. Prior current-body/active-program statements above are historical.
