@@ -1,0 +1,9 @@
+# P1 #10477 hard timeout / #10482 separate ending —17:38 UTC
+
+Independent full record headers/output checked. #10477 started17:31:23, ran165s and TIMED OUT. It reachedY8 but contains no final ten-face enclosure audit. An outer arena timeout stops pathfinder/controls/digging; code in finally is not a guaranteed physical ending when execution is interrupted. Reachingdepth is a real partial result, not completed descent/retention.
+
+#10482 started17:35:26 and separately placed three BLACKSTONE caps, then fourSHAFT_CURRENT_FULL arrays10true/HP3 and terminal10true. #10484 fresh snapshot at17:35:59 corroborates body(-53.50005,8,63.52457),HP3/food16, allTenFull/no controls/no goal. This is a later actual retained ending, not evidence the timed-out caller completed. The165s timeout and missed17:33:30 budget remain failures; the gap before repair is not claimed safe in general.
+
+Small reusable control-flow correction for a future owner-reviewed caller: reserve an explicit owner-priced ending allowance INSIDE the outer runtime, stop forward mutations at a self-deadline, and enter the already-qualified current-state ending while code still runs. Do not use external timeout as the ordinary loop budget or assume finally runs to completion. #10482's5.1s is a measured ending for that geometry, not a universal reserve. Admission must include actual remaining materials/currentbody/support and the ending's observed cost; static reserves alone do not qualify new geometry.
+
+Owner-run acceptance: on the next already-needed small case, report self-deadline and outer timeout, actual branch/elapsed, materials and physical terminal audit completed before the outer timeout. No deliberate external timeout, extra dig or dangerous replay requested. Until actual report, the proposed deadline contract is unvalidated. Current finalY8 enclosure is independently corroborated, no LOW traversal or End use.
