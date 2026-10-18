@@ -65,3 +65,7 @@ Iteration25 P2 material checkpoint 2026-10-18T20:33:14.154521+00:00: token usage
 Iteration25 P2 materialcheckpoint 2026-10-18T21:34:20.112244+00:00: token usage **unavailable** from an authorized available source.
 
 Iteration25 P2 FINAL 2026-10-18T21:59:53.176296+00:00: token usage **unavailable** from an authorized available source; no estimate.
+
+
+## Iteration26 P3 opening —2026-10-18 22:04 UTC
+Token usage: unavailable from an authorized available source. No estimate inferred from tool-output counts.
