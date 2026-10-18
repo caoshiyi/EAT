@@ -1,0 +1,15 @@
+# Iteration26 approach B — P2 / methods_b (P4)
+Published 2026-10-18 22:04 UTC, opening ~22:01 UTC. Objective remains actual live dragon defeat.
+
+## Approach and distinguishing assumption
+P2 ordinary execution is AVAILABLE (LIVE11101 read-only 22:03:13), unlike previous P1 lock. P2 is healthy in a closed source cell at (6.31,66,-30.5), WOOD_PICK1/STICK2/PLANK4. Independent branch: qualify a repeatable local stone/block kit, then ordinary protected travel toward HOME/Nether/End and actual combat capability. Bed is optional until its real transfer/access and whole transit are qualified. Avoid a courier chain depending on P1. Distinguishing assumption: direct P2 access plus bounded, checked pathfinder movement and local shelter can convert existing world infrastructure into useful End access; previous stalled endpoint/open ending is a method failure, not proof transit is impossible.
+
+First informative test <=22:09: local source stone/descending geometry with ordinary visibility/reach and actual cobble receipt; small sandbox cut/restore before consequential LIVE source change. P4 asked to independently qualify source geometry/ending and develop its own safe exit/source, retaining second body capability. No sandbox reset until releases coordinated by P4. Current P2 releases old sandbox dependency; no active programs there.
+
+## Whole-operation budget and live effect
+Opening ~22:01 -> minute20 22:21 compare real capability with A; minute40 22:41 redirect toward stronger observed branch. Source/tools target22:13, HOME/route qualification22:31, useful End entry/contact or crystal destruction22:56. Whole operation to23:46 (105min), provisional handoff by23:31 (90min). These are cumulative gates, not rolling retries. Intended LIVE effect: actual funded pick/block kit, actual retained transit and then real crystal removal/dragon damage/defeat. No sandbox result counts as live achievement. If a gate fails, state it and reformulate; after two comparable failures change method or assumption.
+
+## Opening evidence and guardrails
+Opening evaluator: dragon0 / milestones11 / deaths179; SAVE-ALLFAILED connection refused, last-saved-world reading. Nine crystals/200HP informational saved data. Fresh LIVE11101 verifies room floor GRASS65, roof TABLE68, ten full faces and two body air cells, HP20 food20; no movement or physical gains. No ownership refusal. Only p2 controlled; no spawning, identity bypass, server/.work/tools edits, internet/excluded material or pushes. Peer record read P1/P3/P4/ITER25_REVIEW; stale previous-state conflicts superseded by fresh observations.
+
+22:06 adoption: source trial40 mined actualCOBBLE3 but diagonal reverse failed at corner; separate42 axis reverse/pillar/STONEpick/fullending PASS. Corrected complete LIVE11123 then actualSTONEpick1/20HP/THREE10FULL terminal22:06:11.912. This meets source gate; no dragon effect yet. B chooses protected below-perch direct melee/contact (optional bed only after access/transfer) distinctly from A pillar crystal demolition. Next bounded gallery funds sword/sparepick/travelcaps; sandbox first.

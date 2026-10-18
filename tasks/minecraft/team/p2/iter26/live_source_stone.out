@@ -1,0 +1,51 @@
+program #11123 on p2: 23.3 s
+--- output ---
+CUT Vec3 { x: 6, y: 65, z: -31 } grass_block {"at":"2026-10-18T22:05:49.683Z","p":{"x":6.31002666936189,"y":65,"z":-30.50000000000019},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",4]],"controls":{},"goal":null}
+CUT Vec3 { x: 6, y: 64, z: -31 } dirt {"at":"2026-10-18T22:05:51.636Z","p":{"x":6.31002666936189,"y":64,"z":-30.50000000000019},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",4],["dirt",1]],"controls":{},"goal":null}
+CUT Vec3 { x: 6, y: 63, z: -31 } dirt {"at":"2026-10-18T22:05:53.594Z","p":{"x":6.31002666936189,"y":63,"z":-30.50000000000019},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",4],["dirt",2]],"controls":{},"goal":null}
+CUT Vec3 { x: 6, y: 62, z: -31 } dirt {"at":"2026-10-18T22:05:55.548Z","p":{"x":6.31002666936189,"y":62,"z":-30.50000000000019},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",4],["dirt",3]],"controls":{},"goal":null}
+CUT Vec3 { x: 6, y: 62, z: -33 } stone {"at":"2026-10-18T22:05:58.359Z","p":{"x":6.506110783013958,"y":62,"z":-31.556026783788482},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",4],["wooden_pickaxe",1]],"controls":{},"goal":null}
+STONE_SCAN [{"q":{"x":7,"y":63,"z":-33},"n":"stone"},{"q":{"x":7,"y":62,"z":-33},"n":"stone"},{"q":{"x":7,"y":62,"z":-32},"n":"stone"}]
+CUT Vec3 { x: 7, y: 63, z: -33 } stone {"at":"2026-10-18T22:06:01.321Z","p":{"x":6.5020059483974855,"y":62,"z":-32.41499814517021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",4],["wooden_pickaxe",1],["cobblestone",1]],"controls":{},"goal":null}
+CUT Vec3 { x: 7, y: 62, z: -33 } stone {"at":"2026-10-18T22:06:02.723Z","p":{"x":6.5020059483974855,"y":62,"z":-32.41499814517021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",4],["wooden_pickaxe",1],["cobblestone",2]],"controls":{},"goal":null}
+UP {"at":"2026-10-18T22:06:08.149Z","p":{"x":6.499911526207563,"y":63,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",3],["wooden_pickaxe",1],["cobblestone",3]],"controls":{},"goal":null}
+UP {"at":"2026-10-18T22:06:08.999Z","p":{"x":6.499911526207563,"y":64,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",2],["wooden_pickaxe",1],["cobblestone",3]],"controls":{},"goal":null}
+UP {"at":"2026-10-18T22:06:09.852Z","p":{"x":6.499911526207563,"y":65,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["dirt",1],["wooden_pickaxe",1],["cobblestone",3]],"controls":{},"goal":null}
+UP {"at":"2026-10-18T22:06:10.705Z","p":{"x":6.499911526207563,"y":66,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",4],["wooden_pickaxe",1],["cobblestone",3]],"controls":{},"goal":null}
+CRAFT stone_pickaxe 0 1 {"at":"2026-10-18T22:06:11.207Z","p":{"x":6.499911526207563,"y":66,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stone_pickaxe",1],["spruce_planks",4],["wooden_pickaxe",1]],"controls":{},"goal":null}
+ENDING {"state":{"at":"2026-10-18T22:06:11.207Z","p":{"x":6.499911526207563,"y":66,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stone_pickaxe",1],["spruce_planks",4],["wooden_pickaxe",1]],"controls":{},"goal":null},"faces":[{"p":{"x":6,"y":65,"z":-31},"name":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"name":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"name":"spruce_planks","full":true}]}
+ENDING {"state":{"at":"2026-10-18T22:06:11.459Z","p":{"x":6.499911526207563,"y":66,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stone_pickaxe",1],["spruce_planks",4],["wooden_pickaxe",1]],"controls":{},"goal":null},"faces":[{"p":{"x":6,"y":65,"z":-31},"name":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"name":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"name":"spruce_planks","full":true}]}
+ENDING {"state":{"at":"2026-10-18T22:06:11.709Z","p":{"x":6.499911526207563,"y":66,"z":-30.346653398952885},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stone_pickaxe",1],["spruce_planks",4],["wooden_pickaxe",1]],"controls":{},"goal":null},"faces":[{"p":{"x":6,"y":65,"z":-31},"name":"dirt","full":true},{"p":{"x":6,"y":68,"z":-31},"name":"crafting_table","full":true},{"p":{"x":7,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":7,"y":67,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":66,"z":-31},"name":"dirt","full":true},{"p":{"x":5,"y":67,"z":-31},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-30},"name":"spruce_planks","full":true},{"p":{"x":6,"y":66,"z":-32},"name":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-32},"name":"spruce_planks","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-18T22:06:11.912Z",
+ "p": {
+  "x": 6.499911526207563,
+  "y": 66,
+  "z": -30.346653398952885
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "spruce_planks",
+   4
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ],
+ "controls": {},
+ "goal": null
+}
+--- chat since this player's previous program ---
+p3: P1 new actualSB_G26-1 #41 validates bag-race diagnosis: RECEIPTS22:04:50.989 COBBLE2; roofcut/TABLE done; no funded stone_pickaxe; delayedFULL_AUDIT53.400 COBBLE3. Not a recipe failure. Minimal await actual count>=3 (bounded ~2s) BEFORE roofcut, fail/retai
+p3: n otherwise; latercraft can use present3 without recutting. Acceptance fundedrecipe+actualpick+ending; separatefailed#41 remainsfailed. LIVE11111 unaffected.
+--- p2 now: (6.5, 66, -30.3) in overworld, health 20/20, food 20/20, alive

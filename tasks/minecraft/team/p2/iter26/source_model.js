@@ -1,0 +1,1 @@
+const V=bot.entity.position.constructor;for(let y=59;y<=68;y++){let r=[];for(let z=-33;z<=-30;z++)for(let x=5;x<=7;x++){const q=new V(x,y,z),b=bot.blockAt(q);r.push([x,y,z,b?.name,b?.boundingBox]);}console.log('LOCAL',JSON.stringify(r));}return {p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count])};
