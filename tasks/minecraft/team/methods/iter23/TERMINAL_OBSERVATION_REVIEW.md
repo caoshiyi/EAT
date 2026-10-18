@@ -1,0 +1,9 @@
+# Fresh terminal observation proposal
+
+Evidence: #10165's cached closed=true contradicted fresh actualShell=false/death; #10213's initial full proof preceded wall cuts; #10230 correctly logged a newly occupied y64 geometry and refused an enclosure claim; #10236's fresh four audits establish only that later ending.
+
+`fresh_terminal_observation.js` is a small read-only snapshot proposed for any player owner. No automatic execution, movement, craft, interaction, cross-player control or rescue. It floors current coordinates, reports NULL as unloaded, records ordinary inventory and ten surrounding full-block faces at the current containing cell. It does not silently reuse an earlier cell or success flag. Slabs/doors/complex shapes intentionally do not qualify as full cubes. Ten faces do not establish immunity to all hazards, oxygen safety, a 2x2 body-spanning boundary or ongoing protection.
+
+Assumptions: ordinary `blockAt`/Vec3/current player state, a one-cell-wide two-high occupied room definition, actual owner has selected a relevant ending. It does not establish body/head cells are empty; owner must inspect those if needed. No runtime validation by reviewer.
+
+Player-run acceptance: at an owner-already-checked current ending, compare every printed cell/name with the owner's current independent observation; confirm floor for negative coordinates and distinguish NULL/air/full. If a prior operation changed geometry, compare its old snapshot with this new one without intentionally opening a protected ending for testing. Owner reports program ID and literal result. A matching case validates this diagnostic case only; no universal shelter guarantee. Before placing this observation in finally, stop movement/controls and remove listeners FIRST; diagnostic failure must not prevent cleanup or mask the original failure. Any follow-on action must branch on actual required postconditions rather than merely printing them.
