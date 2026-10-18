@@ -1,0 +1,3 @@
+bot.clearControlStates(); bot.pathfinder.setGoal(null);
+const p=bot.entity.position.floored();
+console.log(JSON.stringify({time:new Date().toISOString(),pos:bot.entity.position,hp:bot.health,food:bot.food,pose:bot.entity.metadata?.[6],eye:bot.entity.eyeHeight,inv:bot.inventory.items().map(i=>({name:i.name,count:i.count})),shell:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{const b=bot.blockAt(p.offset(...d));return {p:b?.position,n:b?.name,bb:b?.boundingBox};}),near:Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<12).map(e=>({name:e.name,p:e.position}))}));

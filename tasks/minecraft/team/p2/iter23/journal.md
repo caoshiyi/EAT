@@ -1,0 +1,3 @@
+# P2 ITER23 journal
+Opening ~15:54 UTC. Read program/ITER22_REVIEW/P2/P1/P4 fully. python missing; python3 works. Eval15:56 saved0/11/170, save refused. #10221 live all10full p2 HP20 food20 flint3/gravel6. Plan published15:57; no current End capability. Team communication through owned files and arena chat.
+16:02 P1#10236 source/output independently inspected; actual pick use+four full endings accepted before16:05. Assigned carrier16:02->16:14 HOME. P4 complete native no-dig negatives adopted; one-placement model until16:10. P2 own10228 shaft model/10238 pathY40/localshaft success only models, no traversal. No world mutations/deaths. P2.md refreshed superseding stale22 header.
