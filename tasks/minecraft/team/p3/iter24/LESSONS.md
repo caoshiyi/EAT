@@ -12,3 +12,5 @@
 10. **Budget the adoption chain.** Originalfood whole18:15 FAILED. DonorcraftAPI request18:25:08->handoff18:26:57 took109s, but actual recipientgear came muchlater. Specificcobbled query18:38:07->report18:39:28 took81s; actualswordcraft18:49:41 made fullchain11m34. Tooluse/food/End are separate outcomes, with their missed deadlines retained.
 
 Detailed actual operations and failures: P3.md, ADOPTION.md, exact owned outputs. Originalfood courier and three deaths remain failures despite useful later API adoption. No claim of dragon/crystal/End effect byP3.
+
+19:21 finiteAPI regression read: originalcore_dimension.js line18/core.js line17 `put` still normalplaceBlock withoutinteractiveSneak/currentWindowclosing, despite successfullocal10722 repair. Bothalsooldinventoryorder material(), alreadyP2/P4diagnosed. Report10777 (actualCLI ID) tellsowner to keep testedbehavior in forthcomingTABLE166/rod composition, without editingotherfiles or assumingcurrentlivecaller actuallyregressed. Do not confuse a local successfulpatch with a fixed reusablebase. Not a new physical failure.
