@@ -1,0 +1,47 @@
+== #9981 2026-10-18T14:00:45 p1 role=capability_owner iter=22 23.8 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=3;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=12000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&(Math.abs(p.y-y)<=.12 || (x===140&&z===2239&&Math.abs(p.y-y-.5)<.1))&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:bot.controlState,goal:bot.pathfinder.goal};}
+async function enter(x,z){const end=Date.now()+4000;try{while(bot.game.dimension==='overworld'&&Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.07){if(Date.now()>end)throw Error('entry budget');await bot.lookAt(new V(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}finally{bot.clearControlStates();}}
+try{
+ console.log('START',JSON.stringify(state()));if(bot.game.dimension!=='overworld'||bot.health!==20||!bot.inventory.items().some(i=>i.name==='white_bed'))throw Error('not actual courier state');
+ for(const a of [[138,-38,2233],[138,-37,2232],[138,-36,2231],[140,-35,2232],[140,-36,2239],[139,-36,2239],[139,-36,2255],[131,-36,2255],[130,-36,2256],[130,-36,2265],[128,-36,2266],[128,-36,2272],[131,-36,2272],[131,-36,2275]])await goChecked(...a);
+ await enter(132.5,2275.5);await enter(133.5,2275.5);for(let n=0;n<130&&bot.game.dimension==='overworld';n++)await bot.waitForTicks(1);
+ if(bot.game.dimension!=='the_end')throw Error('no End transition');console.log('ACTUAL_END_ARRIVAL',JSON.stringify(state()));
+ if(bot.blockAt(new V(97,49,0))?.boundingBox!=='block')throw Error('no97step');
+ await goChecked(97,50,0,7000);await goChecked(79,50,0,10000);
+ if([50,51].some(y=>bot.blockAt(new V(78,y,0)).boundingBox!=='empty'))throw Error('door changed stop');
+ await goChecked(75,50,0,5000);console.log('RETAINED_BED_END75',JSON.stringify(state()));
+}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify(state()));}
+-- output --
+START {"p":{"x":135.66773863800418,"y":-38,"z":2233.503129328597},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["white_bed",1]],"controls":{},"goal":null}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":135.66773863800418,"y":-38,"z":2233.503129328597},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-38,"z":2233.500490104415},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-38,"z":2233.500490104415},"hp":20,"dim":"overworld"},"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-35,2232],"before":{"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":140.61328636790924,"y":-35,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2239],"before":{"p":{"x":140.61328636790924,"y":-35,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":140.49876433883068,"y":-36,"z":2239.3404991936927},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2239],"before":{"p":{"x":140.49876433883068,"y":-36,"z":2239.3404991936927},"hp":20,"dim":"overworld"},"p":{"x":139.67689122212272,"y":-36,"z":2239.47177010661},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2255],"before":{"p":{"x":139.67689122212272,"y":-36,"z":2239.47177010661},"hp":20,"dim":"overworld"},"p":{"x":139.50039000275578,"y":-36,"z":2255.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[131,-36,2255],"before":{"p":{"x":139.50039000275578,"y":-36,"z":2255.5},"hp":20,"dim":"overworld"},"p":{"x":131.5,"y":-36,"z":2255.5004265596913},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[130,-36,2256],"before":{"p":{"x":131.5,"y":-36,"z":2255.5004265596913},"hp":20,"dim":"overworld"},"p":{"x":130.6771060595557,"y":-36,"z":2256.5141390466274},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[130,-36,2265],"before":{"p":{"x":130.6771060595557,"y":-36,"z":2256.5141390466274},"hp":20,"dim":"overworld"},"p":{"x":130.49986965284282,"y":-36,"z":2265.3033384149944},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[128,-36,2266],"before":{"p":{"x":130.49986965284282,"y":-36,"z":2265.3033384149944},"hp":20,"dim":"overworld"},"p":{"x":128.5,"y":-36,"z":2266.5619321764225},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[128,-36,2272],"before":{"p":{"x":128.5,"y":-36,"z":2266.5619321764225},"hp":20,"dim":"overworld"},"p":{"x":128.5001979873513,"y":-36,"z":2272.346384894944},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[131,-36,2272],"before":{"p":{"x":128.5001979873513,"y":-36,"z":2272.346384894944},"hp":20,"dim":"overworld"},"p":{"x":131.5,"y":-36,"z":2272.5054236458277},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[131,-36,2275],"before":{"p":{"x":131.5,"y":-36,"z":2272.5054236458277},"hp":20,"dim":"overworld"},"p":{"x":131.50035555696192,"y":-36,"z":2275.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+ACTUAL_END_ARRIVAL {"p":{"x":100.4804,"y":49,"z":0.5},"hp":20,"food":20,"dim":"the_end","ground":false,"inv":[["white_bed",1]],"controls":{},"goal":null}
+CHECKED_LEG {"target":[97,50,0],"before":{"p":{"x":100.4804,"y":49,"z":0.5},"hp":20,"dim":"the_end"},"p":{"x":97.5,"y":50,"z":0.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[79,50,0],"before":{"p":{"x":97.5,"y":50,"z":0.5},"hp":20,"dim":"the_end"},"p":{"x":79.5,"y":50,"z":0.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[75,50,0],"before":{"p":{"x":79.5,"y":50,"z":0.5},"hp":20,"dim":"the_end"},"p":{"x":75.65827565694777,"y":50,"z":0.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+RETAINED_BED_END75 {"p":{"x":75.65827565694777,"y":50,"z":0.5},"hp":20,"food":20,"dim":"the_end","ground":true,"inv":[["white_bed",1]],"controls":{},"goal":null}
+TERMINAL {"p":{"x":75.65827565694777,"y":50,"z":0.5},"hp":20,"food":20,"dim":"the_end","ground":true,"inv":[["white_bed",1]],"controls":{},"goal":null}

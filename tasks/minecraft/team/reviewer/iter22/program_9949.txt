@@ -1,0 +1,15 @@
+== #9949 2026-10-18T13:55:28 p2 role=encounter_lead iter=22 25.7 s
+const V=require('vec3').Vec3,begin=Date.now(),hp0=bot.health;let issue=null;
+function full(p){return bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')}
+async function go(x,z){const end=Date.now()+15000;try{while(Math.hypot(bot.entity.position.x-x,bot.entity.position.z-z)>.06){const p=bot.entity.position.floored();if(!full(p.offset(0,-1,0))||!full(p.offset(0,2,0))||bot.health<hp0-.1||Date.now()>end)throw Error('coveredwalkguard');await bot.lookAt(new V(x,bot.entity.position.y+1.62,z),true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}finally{bot.clearControlStates()}await bot.waitForTicks(8);console.log('NODE',JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround}));}
+try{bot.pathfinder.setGoal(null);bot.clearControlStates();for(const q of[[47.5,.5],[47.5,1.5],[45.5,1.5],[45.5,2.5],[44.5,2.5],[33.5,2.5]])await go(...q);}
+catch(e){issue=String(e)}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(14)}
+return{issue,elapsed:Date.now()-begin,p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,roof:bot.blockAt(bot.entity.position.floored().offset(0,2,0))?.name,controls:bot.controlState,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,w:i.durabilityUsed}))};
+-- output --
+NODE {"p":{"x":47.3,"y":50,"z":0.5001585039479052},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":47.54938672103744,"y":50,"z":1.7},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":45.3,"y":50,"z":1.4733564184078123},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":45.54338211687635,"y":50,"z":2.7},"hp":10.55274772644043,"ground":true}
+NODE {"p":{"x":44.3,"y":50,"z":2.460434184025022},"hp":10.55274772644043,"ground":true}
+-- returned --
+{"issue": "Error: coveredwalkguard", "elapsed": 25693, "p": {"x": 44.3, "y": 50, "z": 2.4861030740683256}, "hp": 10.55274772644043, "food": 14, "ground": true, "roof": "end_stone", "controls": {}, "inv": [{"n": "book", "c": 3, "w": null}, {"n": "end_stone", "c": 16, "w": null}, {"n": "end_stone", "c": 64, "w": null}, {"n": "cobbled_deepslate", "c": 10, "w": null}, {"n": "cracked_stone_bricks", "c": 1, "w": null}, {"n": "blackstone", "c": 1, "w": null}, {"n": "end_stone", "c": 64, "w": null}, {"n": "stone_pickaxe", "c": 1, "w": 106}, {"n": "stone_sword", "c": 1, "w": 0}]}

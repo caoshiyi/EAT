@@ -1,0 +1,14 @@
+== #9956 2026-10-18T13:56:40 p2 role=encounter_lead iter=22 20.8 s
+const V=require('vec3').Vec3;const hp0=bot.health,begin=Date.now();let issue=null,path=[];
+function full(p){return bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')}
+function safe(x,z){return full(new V(x,49,z))&&full(new V(x,52,z))&&[50,51].every(y=>bot.blockAt(new V(x,y,z))?.boundingBox==='empty')}
+const start=bot.entity.position.floored(),queue=[[start.x,start.z]],prev=new Map([[`${start.x},${start.z}`,null]]);let end=null;
+for(let n=0;n<queue.length;n++){const [x,z]=queue[n];if(x===7&&z===3){end=[x,z];break}for(const [dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]]){const a=x+dx,b=z+dz,k=`${a},${b}`;if(a<0||a>76||b< -5||b>6||prev.has(k)||!safe(a,b))continue;prev.set(k,[x,z]);queue.push([a,b]);}}
+if(end){for(let a=end;a;a=prev.get(a.join(',')))path.push(a);path.reverse()}console.log('PLAN',JSON.stringify(path));
+try{if(!path.length)throw Error('no covered path');bot.pathfinder.setGoal(null);bot.clearControlStates();for(const[x,z]of path.slice(1)){const until=Date.now()+1800;try{while(Math.hypot(bot.entity.position.x-x-.5,bot.entity.position.z-z-.5)>.12){if(Date.now()>until||bot.health<hp0-.01||Math.abs(bot.entity.position.y-50)>.1||!safe(x,z))throw Error('movement guard');await bot.lookAt(new V(x+.5,51.62,z+.5),true);bot.setControlState('forward',true);await bot.waitForTicks(1)}}finally{bot.clearControlStates()}await bot.waitForTicks(6);if(!bot.entity.onGround||Math.abs(bot.entity.position.y-50)>.1)throw Error('post landing');} }
+catch(e){issue=String(e)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(10)}
+return{issue,p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,elapsed:Date.now()-begin,roof:bot.blockAt(bot.entity.position.floored().offset(0,2,0))?.name,inventory:bot.inventory.items().map(i=>({n:i.name,c:i.count,w:i.durabilityUsed}))};
+-- output --
+PLAN [[44,2],[44,3],[43,3],[42,3],[41,3],[40,3],[39,3],[38,3],[37,3],[36,3],[35,3],[34,3],[33,3],[32,3],[31,3],[30,3],[29,3],[28,3],[27,3],[26,3],[25,3],[24,3],[23,3],[22,3],[21,3],[20,3],[19,3],[18,3],[17,3],[16,3],[15,3],[14,3],[13,3],[12,3],[11,3],[10,3],[9,3],[8,3],[7,3]]
+-- returned --
+{"issue": null, "p": {"x": 7.251274240974486, "y": 50, "z": 3.5001033945246562}, "hp": 10.55274772644043, "ground": true, "elapsed": 20836, "roof": "end_stone", "inventory": [{"n": "book", "c": 3, "w": null}, {"n": "end_stone", "c": 16, "w": null}, {"n": "end_stone", "c": 64, "w": null}, {"n": "cobbled_deepslate", "c": 10, "w": null}, {"n": "cracked_stone_bricks", "c": 1, "w": null}, {"n": "blackstone", "c": 1, "w": null}, {"n": "end_stone", "c": 64, "w": null}, {"n": "stone_pickaxe", "c": 1, "w": 106}, {"n": "stone_sword", "c": 1, "w": 0}]}

@@ -1,0 +1,59 @@
+== #9970 2026-10-18T13:59:08 p1 role=capability_owner iter=22 8.2 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=3;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=4000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&Math.abs(p.y-y)<=.12&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+const out=[[136,-38,2233],[137,-38,2233],[138,-38,2233],[138,-37,2232],[138,-36,2231],[139,-36,2231],[140,-36,2231],[141,-36,2231]];
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState};}
+try{
+ if(bot.game.dimension!=='overworld'||bot.health!==20||bot.inventory.items().length)throw Error('changed opening');
+ for(const a of out)await goChecked(...a);
+ const foes=Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<10);console.log('FOES',JSON.stringify(foes.map(e=>({n:e.name,p:e.position}))));if(foes.length)throw Error('mob near bed');
+ const p=new V(142,-36,2232),b=bot.blockAt(p);if(b.name!=='white_bed'||b.getProperties().part!=='foot')throw Error('bed changed');
+ if(bot.blockAt(p.offset(0,-1,0)).boundingBox!=='block')throw Error('no pickup floor');
+ await bot.unequip('hand');await bot.lookAt(p.offset(.5,.3,.5),true);const c=bot.blockAtCursor(4.5);
+ if(!c?.position.equals(p)||c.face!==1||![1.62,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))throw Error('bed not visible');
+ console.log('BED_DIG_PRE',JSON.stringify({p,hit:c.intersect,face:c.face,props:b.getProperties()}));await bot.dig(b,'ignore',new V(0,1,0));await bot.waitForTicks(12);
+ console.log('BED_REMOVAL',JSON.stringify({foot:bot.blockAt(p).name,head:bot.blockAt(p.offset(0,0,1)).name,inv:state().inv}));
+ await goChecked(142,-36,2231);await goChecked(142,-36,2232);await bot.waitForTicks(12);
+ console.log('BED_RECEIPT',JSON.stringify(state()));if(!bot.inventory.items().some(i=>i.name==='white_bed'&&i.count===1))throw Error('no ordinary bed receipt');
+ await goChecked(142,-36,2231);await goChecked(141,-36,2231);
+}finally{
+ for(const a of out.slice(0,-1).reverse()){try{await goChecked(...a);}catch(e){console.log('RETREAT_FAIL',String(e));break;}}
+ try{await goChecked(135,-38,2233);}catch(e){console.log(String(e));}bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify(state()));
+}
+-- output --
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":135.66773863800418,"y":-38,"z":2233.5032495770124},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.501608614501},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.501608614501},"hp":20,"dim":"overworld"},"p":{"x":137.33228854434276,"y":-38,"z":2233.5004553774224},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":137.33228854434276,"y":-38,"z":2233.5004553774224},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-38,"z":2233.500328392792},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-38,"z":2233.500328392792},"hp":20,"dim":"overworld"},"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[141,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"dim":"overworld"},"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+FOES []
+BED_DIG_PRE {"p":{"x":142,"y":-36,"z":2232},"hit":{"x":142.42602945359621,"y":-35.4375,"z":2232.4382307323785},"face":1,"props":{"part":"foot","occupied":false,"facing":"south"}}
+BED_REMOVAL {"foot":"air","head":"air","inv":[]}
+CHECKED_LEG {"target":[142,-36,2231],"before":{"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"dim":"overworld"},"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[142,-36,2232],"before":{"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"dim":"overworld"},"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+BED_RECEIPT {"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.482671915779},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.482671915779},"hp":20,"dim":"overworld"},"p":{"x":139.6678688747539,"y":-36,"z":2231.4925475797118},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":139.6678688747539,"y":-36,"z":2231.4925475797118},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-36,"z":2231.4960098582656},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-36,"z":2231.4960098582656},"hp":20,"dim":"overworld"},"p":{"x":138.50015238155513,"y":-37,"z":2232.5384410396923},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":138.50015238155513,"y":-37,"z":2232.5384410396923},"hp":20,"dim":"overworld"},"p":{"x":138.50004819982396,"y":-38,"z":2233.580871951767},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":138.50004819982396,"y":-38,"z":2233.580871951767},"hp":20,"dim":"overworld"},"p":{"x":137.6704790365115,"y":-38,"z":2233.513614130651},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":137.6704790365115,"y":-38,"z":2233.513614130651},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.507327208883},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[135,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.507327208883},"hp":20,"dim":"overworld"},"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+TERMINAL {"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+-- error --
+Error: no ordinary bed receipt
+    at p1-program-9970.js:26:128

@@ -1,0 +1,229 @@
+== #9960 2026-10-18T13:57:23 p1 role=capability_owner iter=22 11.2 s
+const V=bot.entity.position.constructor;
+bot.pathfinder.setGoal(null);bot.clearControlStates();
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState};}
+console.log('RECONCILE',JSON.stringify(state()));
+const hp=bot.health;
+try{
+ if(bot.game.dimension!=='overworld'||bot.health!==20||bot.inventory.items().length||Math.abs(bot.entity.position.x-144.5)>.3||Math.abs(bot.entity.position.y+35)>.1)throw Error('changed life/position');
+ const cells=[[143,-37,2231],[143,-36,2231],[143,-35,2231],[143,-34,2231]];
+ console.log('CHANGED_DESCENT_PRE',JSON.stringify(cells.map(a=>{const p=new V(...a),b=bot.blockAt(p);return {p,n:b.name,shapes:b.shapes}})));
+ if(bot.blockAt(new V(143,-37,2231)).boundingBox!=='block'||[-36,-35,-34].some(y=>bot.blockAt(new V(143,y,2231)).boundingBox!=='empty'))throw Error('blocked direct descent');
+ await bot.lookAt(new V(143.5,bot.entity.position.y+1.62,2231.5),true);
+ for(let t=0;t<20&&bot.entity.position.x>143.65;t++){bot.setControlState('forward',true);await bot.waitForTicks(1);}bot.clearControlStates();await bot.waitForTicks(20);
+ console.log('DIRECT_DESCENT',JSON.stringify(state()));
+ if(!bot.entity.onGround||Math.abs(bot.entity.position.y+36)>.1||Math.abs(bot.entity.position.x-143.5)>.8||bot.health!==hp)throw Error('bad descent');
+ const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];m.maxDropDown=3;bot.pathfinder.setMovements(m);
+ for(const a of [[142,-36,2231],[141,-36,2231],[140,-36,2231],[139,-36,2231],[138,-36,2231],[138,-37,2232],[138,-38,2233],[137,-38,2233],[136,-38,2233],[135,-38,2233]]){
+ let timer;try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(...a)),new Promise((_,r)=>timer=setTimeout(()=>r(Error('timeout')),4000))]);}finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ await bot.waitForTicks(14);const p=bot.entity.position;if(!bot.entity.onGround||Math.abs(p.y-a[1])>.1||Math.hypot(p.x-a[0]-.5,p.z-a[2]-.5)>.8||bot.health!==hp)throw Error('retreat postcondition '+a);console.log('RETURN_NODE',JSON.stringify(state()));
+ }
+}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify(state()));}
+-- output --
+RECONCILE {"p":{"x":144.47681441198176,"y":-35,"z":2231.4815436087106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+CHANGED_DESCENT_PRE [{"p":{"x":143,"y":-37,"z":2231},"n":"stone_bricks","shapes":[[0,0,0,1,1,1]]},{"p":{"x":143,"y":-36,"z":2231},"n":"cave_air","shapes":[]},{"p":{"x":143,"y":-35,"z":2231},"n":"cave_air","shapes":[]},{"p":{"x":143,"y":-34,"z":2231},"n":"cave_air","shapes":[]}]
+DIRECT_DESCENT {"p":{"x":143.23081340590855,"y":-36,"z":2231.4906497916304},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":142.5,"y":-36,"z":2231.4945743183625},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":141.66772313006342,"y":-36,"z":2231.497523481939},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":140.5,"y":-36,"z":2231.4989332821297},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":139.66770987052854,"y":-36,"z":2231.499573392984},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":138.5,"y":-36,"z":2231.4997003776143},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":138.50015238155513,"y":-37,"z":2232.542131559041},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":138.50004819982396,"y":-38,"z":2233.584562471116},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":137.67071330234043,"y":-38,"z":2233.5144822141356},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":136.5,"y":-38,"z":2233.507425680785},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+RETURN_NODE {"p":{"x":135.66773863800418,"y":-38,"z":2233.503191142164},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+TERMINAL {"p":{"x":135.66773863800418,"y":-38,"z":2233.503191142164},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+== #9961 2026-10-18T13:57:35 p2 role=encounter_lead iter=22 0 s
+bot.chat("P1 please cancel duplicate cap now P4 reports ordinaryOAK1; coordinate directly before any shared edit148. P4HP7.50 supersedes15; I can receive/use bed with10.55HP only after actual cover checks. P2#9949 retained44.3 native50 but weststraight z2 blocked; changed covered BFS now actual native7 pending final output inspection. Centre current bedrock3,59,0/1 supports candidate bed60; NO bed/activation proof. P4 focus personal transport, no arbitrary near-dragon explosion until target actually within useful radius.")
+== #9962 2026-10-18T13:57:56 p1 role=capability_owner iter=22 0 s
+bot.chat("P4 CANCELcap acknowledged; NO P1 world edits or items dropped/dug/placed thisiteration, including149support. #9958 readonly west approach145,-34 verified148stepAIR/native147basalt, foes[], zero cuts; return pathfinder resolved FALSE at144,-35. Reconciled9960 actual life20HP EMPTY/controlsclear; changed direct inspected manual143 descent + fullquarry return VERIFIED20HP. Source sequence retired no cap duplication. P4 source/route notes ready; actualrecipientadoption pending. Lead: mydeliverable now route/arrival-check support only, no source goal.")
+== #9963 2026-10-18T13:57:58 p4 role=discovery_owner iter=22 0 s
+bot.chat("P1 correction actual9959 fresh cells: BOTH149,-36,2231 and148,-35,2231 nowAIR. 149 wasPLANK in9950 before unexplained loss/HPdamage; no P1mod in last programs reviewed. I have reclaimed OAK1 and will restore149,-36 ONLY via floor149,-37 TOP from150. Please keep your ONE148,-35 repair (ref147,-34 basalt BOTTOM can attach into147,-35, not148; inspect actual refs); avoid149. Need actual148 cap coordinates; ceiling148,-34AIR so may require side149,-35 block instead? Wait for geometry before source. Current150.5,-36 HP7.503 foes[]; onecap available, no bed collected.")
+== #9964 2026-10-18T13:58:11 p2 role=encounter_lead iter=22 0 s
+const V=require('vec3').Vec3;const stance=new V(4.35,60,2.35),aim=new V(3.5,60.5,1.5),plans=[[4,59,2],[4,60,1],[3,60,2]].map(p=>new V(...p));
+function cast(a,b,bed=false){const delta=b.minus(a),len=delta.norm();for(let t=0;t<=len;t+=.002){const q=a.plus(delta.scaled(t/len)),p=q.floored(),block=bot.blockAt(p);if(!block)return{unknown:p};let shapes=block.shapes,label=block.name;if(plans.some(v=>v.equals(p))){shapes=[[0,0,0,1,1,1]];label='PLANNED_FULL'}if(bed&&p.equals(new V(3,60,1))){shapes=[[0,.1875,0,1,.5625,1]];label='HYPOTHETICAL_BED'}const l=q.minus(p);if(shapes.some(s=>l.x>s[0]&&l.x<s[3]&&l.y>s[1]&&l.y<s[4]&&l.z>s[2]&&l.z<s[5]))return{hit:p,label,at:q,t};}return{clear:true,len};}
+const eye=stance.offset(0,1.62,0),delta=aim.minus(eye);return{warning:'READONLY assumed bed box/planned full cover; no actual bed/camera/activation/damage/safety proof',stance,plans,trueEyeToCentre:cast(eye,aim,true),modelSameDirection:cast(stance.offset(0,1.8,0),stance.offset(0,1.8,0).plus(delta),true),headExplosionToFeet:cast(new V(3.5,60.5,.5),stance.offset(0,.01,0)),footExplosionToFeet:cast(new V(3.5,60.5,1.5),stance.offset(0,.01,0)),realCells:plans.map(p=>({p,n:bot.blockAt(p)?.name})),p2:bot.entity.position,hp:bot.health};
+-- returned --
+{"warning": "READONLY assumed bed box/planned full cover; no actual bed/camera/activation/damage/safety proof", "stance": {"x": 4.35, "y": 60, "z": 2.35}, "plans": [{"x": 4, "y": 59, "z": 2}, {"x": 4, "y": 60, "z": 1}, {"x": 3, "y": 60, "z": 2}], "trueEyeToCentre": {"hit": {"x": 3, "y": 60, "z": 1}, "label": "HYPOTHETICAL_BED", "at": {"x": 3.5470712275563643, "y": 60.562023264544855, "z": 1.5470712275563643}, "t": 1.5520000000000012}, "modelSameDirection": {"clear": true, "len": 1.642985088185524}, "headExplosionToFeet": {"hit": {"x": 4, "y": 60, "z": 1}, "label": "PLANNED_FULL", "at": {"x": 4.000080456914065, "y": 60.211718324837776, "z": 1.5884104062247304}, "t": 1.2320000000000009}, "footExplosionToFeet": {"clear": true, "len": 1.298114016564031}, "realCells": [{"p": "[repeated reference]", "n": "air"}, {"p": "[repeated reference]", "n": "air"}, {"p": "[repeated reference]", "n": "air"}], "p2": {"x": 7.251274240974486, "y": 50, "z": 3.5001033945246562}, "hp": 10.55274772644043}
+== #9965 2026-10-18T13:58:12 p1 role=capability_owner iter=22 0 s
+bot.chat("Replacement useful capability proposal: P1 quarryHP20 is already WEST nativebed, no148step needed. I can source announced BED142,-36,2232/2233 from141native then personally deliver intact to P2End by14:02, preservingP4HP7.5. P4 please STOP beddig if not begun and acknowledge ownership transfer; P2 recipient/use14:12 unchanged. This removes broken EASTreturn dependency. Until ACK no sharededit. Route-onlysupport notyetactualuse; prefer realbed receipt.")
+== #9966 2026-10-18T13:58:20 p4 role=discovery_owner iter=22 0 s
+const V=require('vec3').Vec3;const target=new V(148,-35,2231);console.log('CURRENT',JSON.stringify({p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),cells:[[149,-36,2232],[149,-35,2232],[149,-34,2232],[148,-35,2232],[148,-35,2230],[148,-34,2231],[148,-36,2231]].map(a=>{const b=bot.blockAt(new V(...a));return[a,b?.name,b?.shapes]})}));
+-- output --
+CURRENT {"p":{"x":150.5,"y":-36,"z":2231.5207553007713},"hp":7.5032219886779785,"inv":[["oak_planks",1]],"cells":[[[149,-36,2232],"air",[]],[[149,-35,2232],"air",[]],[[149,-34,2232],"air",[]],[[148,-35,2232],"air",[]],[[148,-35,2230],"air",[]],[[148,-34,2231],"air",[]],[[148,-36,2231],"air",[]]]}
+== #9968 2026-10-18T13:58:26 p2 role=encounter_lead iter=22 0 s
+bot.chat("P1 WESTbed personal delivery ADOPTED <=14:02 receipt/P2use14:12 unchanged. P4 STOP eaststep project after safe ending; release bed ownership to P1, do not duplicate shared edits. YourHP7.5 plus brokenreturn makes P1WEST20HP better delivery. P2 actual9956 native7.251,50,3.5 HP10.55 allkit retained; #9964 readonly full-cover+raisedstance60 headexplosionfeet ray blocked, normalcentre look possible but footexplosionray CLEAR, not safety proof. Need actualbed HEAD placement guaranteed before use. I own End centre edits only.")
+== #9967 2026-10-18T13:58:26 p1 role=capability_owner iter=22 5.5 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=3;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=4000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&Math.abs(p.y-y)<=.12&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+const out=[[136,-38,2233],[137,-38,2233],[138,-38,2233],[138,-37,2232],[138,-36,2231],[139,-36,2231],[140,-36,2231],[141,-36,2231]];
+try{for(const a of out)await goChecked(...a);for(const a of [[142,-36,2232],[142,-36,2233]]){const p=new V(...a),b=bot.blockAt(p);await bot.lookAt(p.offset(.5,.3,.5),true);console.log('BED_CURRENT',JSON.stringify({p,n:b.name,props:b.getProperties(),cursor:bot.blockAtCursor(4.5)?.position,face:bot.blockAtCursor(4.5)?.face,hit:bot.blockAtCursor(4.5)?.intersect}));}}
+finally{for(const a of out.slice(0,-1).reverse()){try{await goChecked(...a);}catch(e){console.log('RETURN_FAIL',String(e));break;}}try{await goChecked(135,-38,2233);}catch(e){console.log(String(e));}bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('END',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:bot.controlState,goal:bot.pathfinder.goal}));}
+-- output --
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":135.66773863800418,"y":-38,"z":2233.503191142164},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.5015501796524},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.5015501796524},"hp":20,"dim":"overworld"},"p":{"x":137.33228858009903,"y":-38,"z":2233.500396942574},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":137.33228858009903,"y":-38,"z":2233.500396942574},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-38,"z":2233.5002699579436},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-38,"z":2233.5002699579436},"hp":20,"dim":"overworld"},"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[141,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"dim":"overworld"},"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+BED_CURRENT {"p":{"x":142,"y":-36,"z":2232},"n":"white_bed","props":{"part":"foot","occupied":false,"facing":"south"},"cursor":{"x":142,"y":-36,"z":2232},"face":1,"hit":{"x":142.42602945359621,"y":-35.4375,"z":2232.4382307323785}}
+BED_CURRENT {"p":{"x":142,"y":-36,"z":2233},"n":"white_bed","props":{"part":"head","occupied":false,"facing":"south"},"cursor":{"x":142,"y":-36,"z":2233},"face":1,"hit":{"x":142.4273837785114,"y":-35.4375,"z":2233.3725310664367}}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.4997206338135},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.4997206338135},"hp":20,"dim":"overworld"},"p":{"x":139.66770884619748,"y":-36,"z":2231.4998476184437},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":139.66770884619748,"y":-36,"z":2231.4998476184437},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-36,"z":2231.499974603074},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-36,"z":2231.499974603074},"hp":20,"dim":"overworld"},"p":{"x":138.50015238155513,"y":-37,"z":2232.5424057845007},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":138.50015238155513,"y":-37,"z":2232.5424057845007},"hp":20,"dim":"overworld"},"p":{"x":138.50004819982396,"y":-38,"z":2233.5848366965756},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":138.50004819982396,"y":-38,"z":2233.5848366965756},"hp":20,"dim":"overworld"},"p":{"x":137.6707316509486,"y":-38,"z":2233.514540648984},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":137.6707316509486,"y":-38,"z":2233.514540648984},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.507484115634},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[135,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.507484115634},"hp":20,"dim":"overworld"},"p":{"x":135.66773863800418,"y":-38,"z":2233.5032495770124},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+END {"p":{"x":135.66773863800418,"y":-38,"z":2233.5032495770124},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"controls":{},"goal":null}
+== #9969 2026-10-18T13:58:47 p4 role=discovery_owner iter=22 0 s
+bot.chat("P1 ownership transfer ACK: please personally source announcedBED142,-36,2232/2233 and deliver to P2; I have ZERO bed digs/receipt. Broken EAST return now >ONE missingstep: actual9966 all149TABLE2232 and148side refsAIR, so retire my east->west prep immediately. Clock13:54->14:12 unchanged, H2 still test ordinary bed damage vs failed melee. P4 will stay separate and inspect allowed evidence/activation method for actual H2 use, not duplicate bed, caps, source or P2 visibility. Exact damage/body discrepancy149 remains causeUNKNOWN, not Silverfish claim.")
+== #9970 2026-10-18T13:59:08 p1 role=capability_owner iter=22 8.2 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=3;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=4000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&Math.abs(p.y-y)<=.12&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+const out=[[136,-38,2233],[137,-38,2233],[138,-38,2233],[138,-37,2232],[138,-36,2231],[139,-36,2231],[140,-36,2231],[141,-36,2231]];
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState};}
+try{
+ if(bot.game.dimension!=='overworld'||bot.health!==20||bot.inventory.items().length)throw Error('changed opening');
+ for(const a of out)await goChecked(...a);
+ const foes=Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<10);console.log('FOES',JSON.stringify(foes.map(e=>({n:e.name,p:e.position}))));if(foes.length)throw Error('mob near bed');
+ const p=new V(142,-36,2232),b=bot.blockAt(p);if(b.name!=='white_bed'||b.getProperties().part!=='foot')throw Error('bed changed');
+ if(bot.blockAt(p.offset(0,-1,0)).boundingBox!=='block')throw Error('no pickup floor');
+ await bot.unequip('hand');await bot.lookAt(p.offset(.5,.3,.5),true);const c=bot.blockAtCursor(4.5);
+ if(!c?.position.equals(p)||c.face!==1||![1.62,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))throw Error('bed not visible');
+ console.log('BED_DIG_PRE',JSON.stringify({p,hit:c.intersect,face:c.face,props:b.getProperties()}));await bot.dig(b,'ignore',new V(0,1,0));await bot.waitForTicks(12);
+ console.log('BED_REMOVAL',JSON.stringify({foot:bot.blockAt(p).name,head:bot.blockAt(p.offset(0,0,1)).name,inv:state().inv}));
+ await goChecked(142,-36,2231);await goChecked(142,-36,2232);await bot.waitForTicks(12);
+ console.log('BED_RECEIPT',JSON.stringify(state()));if(!bot.inventory.items().some(i=>i.name==='white_bed'&&i.count===1))throw Error('no ordinary bed receipt');
+ await goChecked(142,-36,2231);await goChecked(141,-36,2231);
+}finally{
+ for(const a of out.slice(0,-1).reverse()){try{await goChecked(...a);}catch(e){console.log('RETREAT_FAIL',String(e));break;}}
+ try{await goChecked(135,-38,2233);}catch(e){console.log(String(e));}bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify(state()));
+}
+-- output --
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":135.66773863800418,"y":-38,"z":2233.5032495770124},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.501608614501},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.501608614501},"hp":20,"dim":"overworld"},"p":{"x":137.33228854434276,"y":-38,"z":2233.5004553774224},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":137.33228854434276,"y":-38,"z":2233.5004553774224},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-38,"z":2233.500328392792},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-38,"z":2233.500328392792},"hp":20,"dim":"overworld"},"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[141,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"dim":"overworld"},"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+FOES []
+BED_DIG_PRE {"p":{"x":142,"y":-36,"z":2232},"hit":{"x":142.42602945359621,"y":-35.4375,"z":2232.4382307323785},"face":1,"props":{"part":"foot","occupied":false,"facing":"south"}}
+BED_REMOVAL {"foot":"air","head":"air","inv":[]}
+CHECKED_LEG {"target":[142,-36,2231],"before":{"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"dim":"overworld"},"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[142,-36,2232],"before":{"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"dim":"overworld"},"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+BED_RECEIPT {"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.482671915779},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.482671915779},"hp":20,"dim":"overworld"},"p":{"x":139.6678688747539,"y":-36,"z":2231.4925475797118},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":139.6678688747539,"y":-36,"z":2231.4925475797118},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-36,"z":2231.4960098582656},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-36,"z":2231.4960098582656},"hp":20,"dim":"overworld"},"p":{"x":138.50015238155513,"y":-37,"z":2232.5384410396923},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":138.50015238155513,"y":-37,"z":2232.5384410396923},"hp":20,"dim":"overworld"},"p":{"x":138.50004819982396,"y":-38,"z":2233.580871951767},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":138.50004819982396,"y":-38,"z":2233.580871951767},"hp":20,"dim":"overworld"},"p":{"x":137.6704790365115,"y":-38,"z":2233.513614130651},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":137.6704790365115,"y":-38,"z":2233.513614130651},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.507327208883},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[135,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.507327208883},"hp":20,"dim":"overworld"},"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+TERMINAL {"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{}}
+-- error --
+Error: no ordinary bed receipt
+    at p1-program-9970.js:26:128
+== #9971 2026-10-18T13:59:41 p4 role=discovery_owner iter=22 0 s
+bot.chat("P4 distinct independent discovery now bounded13:59->14:04: ordinary actual chest154,-35,2227 opening from changed native154 pose, <=3 hand-visible obstructing blocks only if needed, inspect contents and retain useful food/ranged if present then actual use. Prior157pose failed reach/visibility not chest inaccessible; no more weststep/bed/source duplicates. RemainHP7.5 risk, stop on further damage and return157 alcove. Can food enable H2 recipient survival? Actual content decides, no stockchain.")
+== #9972 2026-10-18T13:59:42 p4 role=discovery_owner iter=22 0.2 s
+const V=require('vec3').Vec3;const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);const target=new V(154,-35,2227);let issue=null;try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(154,-36,2231)),new Promise((_,r)=>setTimeout(()=>r(Error('move budget')),3500))]);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(14);console.log('POSE',JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround}));for(const a of [[.5,.5,.5],[.5,.7,.5],[.3,.3,.3],[.7,.3,.7]]){await bot.lookAt(target.offset(...a),true);await bot.waitForTicks(1);const h=bot.blockAtCursor(4.5);console.log('RAY',JSON.stringify({aim:target.offset(...a),h:h&&{p:h.position,n:h.name,face:h.face,hit:h.intersect}}));}const cells=[];for(let z=2226;z<=2231;z++)for(let y=-37;y<=-33;y++){const p=new V(154,y,z),b=bot.blockAt(p);cells.push([p,b?.name,b?.shapes]);}console.log('CELLS',JSON.stringify(cells));}catch(e){issue=String(e);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('END',JSON.stringify({issue,p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),foes:Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<10).map(e=>[e.name,e.position])}));}
+-- output --
+END {"issue":"NoPath: No path to the goal!","p":{"x":151.12675343701986,"y":-36,"z":2231.5119313254913},"hp":7.5032219886779785,"inv":[["oak_planks",1]],"foes":[]}
+== #9973 2026-10-18T13:59:51 p2 role=encounter_lead iter=22 0 s
+const V=require('vec3').Vec3;const stance=new V(5.5,58,2.5),aim=new V(3.5,60.5,1.5),plans=[[4,59,1]].map(p=>new V(...p));
+function cast(a,b,bed=false){const delta=b.minus(a),len=delta.norm();for(let t=0;t<=len;t+=.002){const q=a.plus(delta.scaled(t/len)),p=q.floored(),block=bot.blockAt(p);if(!block)return{unknown:p};let shapes=block.shapes,label=block.name;if(plans.some(v=>v.equals(p))){shapes=[[0,0,0,1,1,1]];label='PLANNED_FULL'}if(bed&&p.equals(new V(3,60,1))){shapes=[[0,.1875,0,1,.5625,1]];label='HYPOTHETICAL_BED'}const l=q.minus(p);if(shapes.some(s=>l.x>s[0]&&l.x<s[3]&&l.y>s[1]&&l.y<s[4]&&l.z>s[2]&&l.z<s[5]))return{hit:p,label,at:q,t};}return{clear:true,len};}
+const eye=stance.offset(0,1.62,0),delta=aim.minus(eye);return{warning:'READONLY assumed bed box/planned full cover; no actual bed/camera/activation/damage/safety proof',stance,plans,trueEyeToCentre:cast(eye,aim,true),modelSameDirection:cast(stance.offset(0,1.8,0),stance.offset(0,1.8,0).plus(delta),true),headExplosionToFeet:cast(new V(3.5,60.5,.5),stance.offset(0,.01,0)),footExplosionToFeet:cast(new V(3.5,60.5,1.5),stance.offset(0,.01,0)),realCells:plans.map(p=>({p,n:bot.blockAt(p)?.name})),p2:bot.entity.position,hp:bot.health};
+-- returned --
+{"warning": "READONLY assumed bed box/planned full cover; no actual bed/camera/activation/damage/safety proof", "stance": {"x": 5.5, "y": 58, "z": 2.5}, "plans": [{"x": 4, "y": 59, "z": 1}], "trueEyeToCentre": {"hit": {"x": 3, "y": 60, "z": 1}, "label": "HYPOTHETICAL_BED", "at": {"x": 3.9985423172203065, "y": 60.28064138042306, "z": 1.7492711586101533}, "t": 1.8040000000000014}, "modelSameDirection": {"hit": {"x": 3, "y": 60, "z": 1}, "label": "HYPOTHETICAL_BED", "at": {"x": 3.9985423172203065, "y": 60.46064138042306, "z": 1.7492711586101533}, "t": 1.8040000000000014}, "headExplosionToFeet": {"hit": {"x": 3, "y": 59, "z": 0}, "label": "bedrock", "at": {"x": 3.9023032119070695, "y": 59.9991325011757, "z": 0.9023032119070694}, "t": 0.7580000000000006}, "footExplosionToFeet": {"hit": {"x": 3, "y": 59, "z": 1}, "label": "bedrock", "at": {"x": 3.902790243178976, "y": 59.998526147242174, "z": 1.701395121589488}, "t": 0.6740000000000005}, "realCells": [{"p": "[repeated reference]", "n": "air"}], "p2": {"x": 7.251274240974486, "y": 50, "z": 3.5001033945246562}, "hp": 10.55274772644043}
+== #9974 2026-10-18T13:59:54 p4 role=discovery_owner iter=22 0 s
+const V=require('vec3').Vec3;bot.pathfinder.setGoal(null);bot.clearControlStates();const cells=[];for(let x=150;x<=158;x++)for(let y=-38;y<=-33;y++){const b=bot.blockAt(new V(x,y,2231));cells.push([[x,y,2231],b?.name,b?.shapes]);}console.log('LIVE',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),cells,entities:Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<10).map(e=>[e.id,e.type,e.name,e.position])}));
+-- output --
+LIVE {"p":{"x":151.3569505161642,"y":-36,"z":2231.5119313254913},"hp":7.5032219886779785,"food":17,"ground":true,"inv":[["oak_planks",1]],"cells":[[[150,-38,2231],"deepslate",[[0,0,0,1,1,1]]],[[150,-37,2231],"mossy_stone_bricks",[[0,0,0,1,1,1]]],[[150,-36,2231],"air",[]],[[150,-35,2231],"air",[]],[[150,-34,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[150,-33,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[151,-38,2231],"deepslate",[[0,0,0,1,1,1]]],[[151,-37,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[151,-36,2231],"air",[]],[[151,-35,2231],"air",[]],[[151,-34,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[151,-33,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[152,-38,2231],"deepslate",[[0,0,0,1,1,1]]],[[152,-37,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[152,-36,2231],"air",[]],[[152,-35,2231],"air",[]],[[152,-34,2231],"cave_air",[]],[[152,-33,2231],"mossy_stone_bricks",[[0,0,0,1,1,1]]],[[153,-38,2231],"infested_deepslate",[[0,0,0,1,1,1]]],[[153,-37,2231],"air",[]],[[153,-36,2231],"cave_air",[]],[[153,-35,2231],"cave_air",[]],[[153,-34,2231],"cave_air",[]],[[153,-33,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[154,-38,2231],"air",[]],[[154,-37,2231],"air",[]],[[154,-36,2231],"cave_air",[]],[[154,-35,2231],"cave_air",[]],[[154,-34,2231],"cave_air",[]],[[154,-33,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[155,-38,2231],"tuff",[[0,0,0,1,1,1]]],[[155,-37,2231],"air",[]],[[155,-36,2231],"air",[]],[[155,-35,2231],"air",[]],[[155,-34,2231],"air",[]],[[155,-33,2231],"stone_bricks",[[0,0,0,1,1,1]]],[[156,-38,2231],"tuff",[[0,0,0,1,1,1]]],[[156,-37,2231],"tuff",[[0,0,0,1,1,1]]],[[156,-36,2231],"air",[]],[[156,-35,2231],"air",[]],[[156,-34,2231],"air",[]],[[156,-33,2231],"deepslate",[[0,0,0,1,1,1]]],[[157,-38,2231],"tuff",[[0,0,0,1,1,1]]],[[157,-37,2231],"tuff",[[0,0,0,1,1,1]]],[[157,-36,2231],"air",[]],[[157,-35,2231],"air",[]],[[157,-34,2231],"tuff",[[0,0,0,1,1,1]]],[[157,-33,2231],"tuff",[[0,0,0,1,1,1]]],[[158,-38,2231],"tuff",[[0,0,0,1,1,1]]],[[158,-37,2231],"tuff",[[0,0,0,1,1,1]]],[[158,-36,2231],"air",[]],[[158,-35,2231],"air",[]],[[158,-34,2231],"tuff",[[0,0,0,1,1,1]]],[[158,-33,2231],"tuff",[[0,0,0,1,1,1]]]],"entities":[[176,"player","player",{"x":151.3569505161642,"y":-36,"z":2231.5119313254913}],[1109,"other","item",{"x":148.125,"y":-36,"z":2230.125}],[1111,"other","item",{"x":147.05177698748489,"y":-36,"z":2232.125}],[1859,"other","item",{"x":142.73206247710655,"y":-36,"z":2233.8038057016333}]]}
+== #9975 2026-10-18T13:59:54 p1 role=capability_owner iter=22 0 s
+bot.pathfinder.setGoal(null);bot.clearControlStates();console.log(JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState,items:Object.values(bot.entities).filter(e=>e.name==='item').map(e=>({id:e.id,p:e.position,item:e.metadata?.[8],n:bot.registry.items[e.metadata?.[8]?.itemId]?.name})),foes:Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<18).map(e=>({id:e.id,n:e.name,p:e.position}))}));
+-- output --
+{"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"goal":null,"controls":{},"items":[{"id":1109,"p":{"x":148.125,"y":-36,"z":2230.125},"item":{"present":true,"itemId":922,"itemCount":2},"n":"book"},{"id":1111,"p":{"x":147.05177698748489,"y":-36,"z":2232.125},"item":{"present":true,"itemId":9,"itemCount":1},"n":"cobbled_deepslate"},{"id":1859,"p":{"x":142.73206247710655,"y":-36,"z":2233.8038057016333},"item":{"present":true,"itemId":961,"itemCount":1},"n":"white_bed"}],"foes":[]}
+== #9976 2026-10-18T13:59:54 p1 role=capability_owner iter=22 0 s
+bot.chat("Bed9970 actual visible TOP handcut removed FOOT+HEAD; pickup atFOOT142,-36,2232 yieldedEMPTY, fullquarry20HPfood20 retained. No bedreceipt yet; no delivery claim. Reconciled sensor now distinguishes realdrop position before ONE changed head-side pickup. Current saved respawn BED has been removed as agreed. Original14:02delivery/14:12use clocks unchanged.")
+== #9977 2026-10-18T14:00:08 p1 role=capability_owner iter=22 7.9 s
+const V=bot.entity.position.constructor;
+const movement=new Movements(bot);movement.canDig=false;movement.allow1by1towers=false;movement.allowParkour=false;movement.allowSprinting=false;movement.scafoldingBlocks=[];movement.maxDropDown=3;bot.pathfinder.setMovements(movement);
+async function goChecked(x,y,z,ms=4000){
+ const before={p:bot.entity.position.clone(),hp:bot.health,dim:bot.game.dimension}; let timer;
+ try{await Promise.race([bot.pathfinder.goto(new goals.GoalBlock(x,y,z)),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('movement timeout')),ms)})]);}
+ finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}
+ for(let n=0;n<20&&!bot.entity.onGround;n++)await bot.waitForTicks(1);
+ const p=bot.entity.position;
+ const ok=bot.game.dimension===before.dim&&bot.health>0&&bot.health>=before.hp&&bot.entity.onGround&&Math.abs(p.y-y)<=.12&&Math.hypot(p.x-x-.5,p.z-z-.5)<=.8;
+ console.log('CHECKED_LEG',JSON.stringify({target:[x,y,z],before,p,hp:bot.health,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,ok}));if(!ok)throw Error('physical postcondition failed');
+}
+
+const out=[[136,-38,2233],[137,-38,2233],[138,-38,2233],[138,-37,2232],[138,-36,2231],[139,-36,2231],[140,-36,2231],[141,-36,2231]];
+function state(){return {p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),goal:bot.pathfinder.goal,controls:bot.controlState};}
+try{
+ if(bot.game.dimension!=='overworld'||bot.health!==20||bot.inventory.items().length)throw Error('changed opening');
+ for(const a of out)await goChecked(...a);
+ const drop=Object.values(bot.entities).find(e=>e.name==='item'&&bot.registry.items[e.metadata?.[8]?.itemId]?.name==='white_bed');
+ if(!drop)throw Error('fresh bed drop absent');console.log('CHANGED_HEAD_PICKUP',JSON.stringify({id:drop.id,p:drop.position}));
+ if(drop.position.distanceTo(new V(142.73,-36,2233.8))>1)throw Error('bed moved elsewhere');
+ if(bot.blockAt(new V(142,-37,2233)).boundingBox!=='block')throw Error('no headpickup floor');
+ await goChecked(142,-36,2231);await goChecked(142,-36,2232);await goChecked(142,-36,2233);await bot.waitForTicks(12);
+ console.log('BED_RECEIPT',JSON.stringify(state()));if(!bot.inventory.items().some(i=>i.name==='white_bed'&&i.count===1))throw Error('no ordinary bed receipt');
+ await goChecked(142,-36,2231);await goChecked(141,-36,2231);
+}finally{
+ for(const a of out.slice(0,-1).reverse()){try{await goChecked(...a);}catch(e){console.log('RETREAT_FAIL',String(e));break;}}
+ try{await goChecked(135,-38,2233);}catch(e){console.log(String(e));}bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('TERMINAL',JSON.stringify(state()));
+}
+-- output --
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":135.66773863800418,"y":-38,"z":2233.5030926702616},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.50145170775},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.50145170775},"hp":20,"dim":"overworld"},"p":{"x":137.3322893220414,"y":-38,"z":2233.5005550337837},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":137.3322893220414,"y":-38,"z":2233.5005550337837},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-38,"z":2233.5004280491535},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-38,"z":2233.5004280491535},"hp":20,"dim":"overworld"},"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":138.499944126775,"y":-37,"z":2232.5},"hp":20,"dim":"overworld"},"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":138.49988825355,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":139.33217940735253,"y":-36,"z":2231.4998730153698},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[141,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.4997460307395},"hp":20,"dim":"overworld"},"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHANGED_HEAD_PICKUP {"id":1859,"p":{"x":142.73206247710655,"y":-36,"z":2233.8038057016333}}
+CHECKED_LEG {"target":[142,-36,2231],"before":{"p":{"x":141.33229115380252,"y":-36,"z":2231.4996190461093},"hp":20,"dim":"overworld"},"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[142,-36,2232],"before":{"p":{"x":142.5,"y":-36,"z":2231.499492061479},"hp":20,"dim":"overworld"},"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[142,-36,2233],"before":{"p":{"x":142.50012698462928,"y":-36,"z":2232.3317832152816},"hp":20,"dim":"overworld"},"p":{"x":142.50025396925852,"y":-36,"z":2233.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+BED_RECEIPT {"p":{"x":142.50025396925852,"y":-36,"z":2233.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["white_bed",1]],"goal":null,"controls":{}}
+CHECKED_LEG {"target":[142,-36,2231],"before":{"p":{"x":142.50025396925852,"y":-36,"z":2233.5},"hp":20,"dim":"overworld"},"p":{"x":142.50002539692562,"y":-36,"z":2231.5},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[141,-36,2231],"before":{"p":{"x":142.50002539692562,"y":-36,"z":2231.5},"hp":20,"dim":"overworld"},"p":{"x":141.6677342431231,"y":-36,"z":2231.5001269846302},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[140,-36,2231],"before":{"p":{"x":141.6677342431231,"y":-36,"z":2231.5001269846302},"hp":20,"dim":"overworld"},"p":{"x":140.5,"y":-36,"z":2231.5002539692605},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[139,-36,2231],"before":{"p":{"x":140.5,"y":-36,"z":2231.5002539692605},"hp":20,"dim":"overworld"},"p":{"x":139.66770884619748,"y":-36,"z":2231.5003809538907},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-36,2231],"before":{"p":{"x":139.66770884619748,"y":-36,"z":2231.5003809538907},"hp":20,"dim":"overworld"},"p":{"x":138.5,"y":-36,"z":2231.500507938521},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-37,2232],"before":{"p":{"x":138.5,"y":-36,"z":2231.500507938521},"hp":20,"dim":"overworld"},"p":{"x":138.50015238155513,"y":-37,"z":2232.5429391199477},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[138,-38,2233],"before":{"p":{"x":138.50015238155513,"y":-37,"z":2232.5429391199477},"hp":20,"dim":"overworld"},"p":{"x":138.50004819982396,"y":-38,"z":2233.5853700320226},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[137,-38,2233],"before":{"p":{"x":138.50004819982396,"y":-38,"z":2233.5853700320226},"hp":20,"dim":"overworld"},"p":{"x":137.67078722498007,"y":-38,"z":2233.5144204005687},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[136,-38,2233],"before":{"p":{"x":137.67078722498007,"y":-38,"z":2233.5144204005687},"hp":20,"dim":"overworld"},"p":{"x":136.5,"y":-38,"z":2233.5073638672184},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+CHECKED_LEG {"target":[135,-38,2233],"before":{"p":{"x":136.5,"y":-38,"z":2233.5073638672184},"hp":20,"dim":"overworld"},"p":{"x":135.66773863800418,"y":-38,"z":2233.503129328597},"hp":20,"ground":true,"goal":null,"controls":{},"ok":true}
+TERMINAL {"p":{"x":135.66773863800418,"y":-38,"z":2233.503129328597},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["white_bed",1]],"goal":null,"controls":{}}

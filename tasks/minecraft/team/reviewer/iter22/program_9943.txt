@@ -1,0 +1,12 @@
+== #9943 2026-10-18T13:54:30 p1 role=capability_owner iter=22 0 s
+const V=bot.entity.position.constructor,base=bot.entity.position.floored();
+const full=p=>bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const empty=p=>{const b=bot.blockAt(p);return b&&b.shapes.length===0&&!['cobweb','water','lava'].includes(b.name)};
+const key=p=>[p.x,p.y,p.z].join(',');
+const q=[{p:base,path:[]}],seen=new Set([key(base)]),targets=[];
+while(q.length){const {p,path}=q.shift();if(path.length>40)continue;
+if(p.distanceTo(new V(136,-41,2248))<4.5) targets.push({p,path,roof:full(p.offset(0,2,0)),chest:bot.blockAt(new V(136,-41,2248))?.name});
+for(const [dx,dz] of [[-1,0],[0,-1],[0,1],[1,0]])for(const dy of [0,-1,1]){const n=p.offset(dx,dy,dz);if(n.y<base.y-7||n.y>base.y+2||Math.abs(n.x-base.x)>15||Math.abs(n.z-base.z)>20||seen.has(key(n))||!full(n.offset(0,-1,0))||!empty(n)||!empty(n.offset(0,1,0))||(dy===1&&!empty(p.offset(0,2,0)))||((dy===-1)&&!empty(n.offset(0,2,0))))continue;seen.add(key(n));q.push({p:n,path:[...path,[n.x,n.y,n.z]]});}}
+console.log(JSON.stringify({p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,targets:targets.slice(0,10),explored:seen.size}));
+-- output --
+{"p":{"x":135.66773510641806,"y":-38,"z":2233.502508889393},"hp":20,"ground":true,"targets":[],"explored":66}
