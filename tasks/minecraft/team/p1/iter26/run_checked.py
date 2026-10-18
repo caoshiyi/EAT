@@ -2,6 +2,8 @@
 import argparse, json, pathlib, subprocess, sys
 p=argparse.ArgumentParser();p.add_argument('script');p.add_argument('--label',required=True);p.add_argument('--count',type=int,default=1);p.add_argument('--min-hp',type=float,default=20);a=p.parse_args()
 root=pathlib.Path('tasks/minecraft/team/p1/iter26')
+pre=subprocess.run(['node','-e','const fs=require("fs"),A=Object.getPrototypeOf(async function(){}).constructor;new A("bot","Movements","goals",fs.readFileSync(0,"utf8"));'],input=pathlib.Path(a.script).read_text(),capture_output=True,text=True)
+if pre.returncode: print('LOCAL_SYNTAX_REJECT',pre.stderr,flush=True);sys.exit(1)
 for i in range(a.count):
     r=subprocess.run([sys.executable,'tools/mc_arena.py','run','--player','p1','--timeout','60',a.script],capture_output=True,text=True)
     out=r.stdout+r.stderr;body=out.split('--- output ---',1)[-1].split('--- returned ---',1)[0];(root/f'{a.label}_{i+1}.out').write_text(out)

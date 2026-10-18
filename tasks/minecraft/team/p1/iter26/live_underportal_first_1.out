@@ -1,0 +1,16 @@
+program #11272 on p1: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p1-program-11272.js:38
+try{console.log('START',JSON.stringify(state()));for(let i=0;i<3;i++){const cells=shell();console.log('FULL_AUDIT',JSON.stringify({sample:i,state:state(),cells}));if(cells.some(c=>!c.full))throw Error('retention incomplete');await bot.waitForTicks(10);}}
+                                                                                                                                                                                                                                                             ^
+
+SyntaxError: Missing catch or finally after try
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:450:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:578:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (13.5, 61, 78.5) in overworld, health 17.3/20, food 17/20, alive
