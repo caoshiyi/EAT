@@ -28,3 +28,19 @@ P1 actualanchor140.5,-39,2271.496 HP17.2667food17,9full+westheadIRON_BARS not fu
 Question P1: ordinary portal/window/drop entry fromactualanchor, thenrealEnd stance/retainedending; distinguishing outcome actualtransition versus geometry/actionfailure. Wholebudget ownerpriced, no substitutedp2start. Next combatquestion actualordinaryvisibleattack/BossBar effect, not newstockquota.
 
 G25-2 READY20:17:59Z/17s, copy0.6s afterstop; exactcopyinstantunexposed. P1 anchor/materialsmatch, peersliveopeningbodies. Publishimmediate, actualtimestampinarena. No p2physicalqueue.
+
+### Portal/End adoption completed20:20:40.910
+P1 SB_G25-2#14 portalstairs ->LIVE10905 sameactualapproach ->SB#15 Endentry ->LIVE10910 actualEnd100.432633,49,.5 HP17.2667food17/all7false. Realworldaccess, notpracticeonly. No10fullclaim: openplatform1/10full. BossobserveractualSB+LIVEfieldbranch nowexercised; no attack/damageyet. P1 next actualsupportedislandapproach and one visible/reachablecombatinteraction. No resetduringactiveEndtest.
+
+### G25-2 negative after successful entry; actual live continuation
+CanonicalSBdeath20:20:22 messageEnderDragon, VOID(104.2,-69.5,2.9), subsequentemptyOWbody. Entry#15 immediatepostconditiondidnotqualifyidleplatformretention. Ownerreportedknockback; underlyingcausetrace not independentlyread. LIVE10910 entry20:20:40.910 andLIVE10912 actualbridgeescape75.5,50,.5/THREE10FULL HP17.2667food17 terminal20:21:28.287 independentlyFULLread. Thisurgentliveescape was NOT successfullytriedSB (SBalreadydead); no generaltrialrequirementforroutineverifiedbridgeescape.
+G25-3 requestedP120:21:54, P1release; P3explicitrelease20:22:14; P4confirmationpending. P2 noSBactive. Needactualcopypositions sinceP1live10915continuesindependently.
+
+G25-3READY20:23:10/18.2s, actualP1End47.5,50,.5 HP17.2667food17/MOSSY1/COBBLED97 afterLIVE10915 actual28steps/THREE10FULL. ThiscopyreplacesfailedSBbodywithcurrentliveanchorafterallreleases; itdoesnotcountasliveprogress. Nextquestiononeordinaryactualattack/BossBareffect, P1ownsactualstartingconditions.
+
+## Conditional BED contribution — request~20:23:05, whole deadline20:43:05
+P1namedrecipientordinarybed, P3actualHOMEbedcandidate, P2fullhealth butDIRT1/no tools/soil57/114mfromHOME. Whole20min includescurrent-source,tool,HOMEreceipt,transit,recipientactualuse/ending; no clockresetatqualification. P2selectedONLYone <=3min SBlocalwood access/receipt/return gate, announced20:24:xx through20:27:30. Newwestnative route/nearlog(-6,63,-25) differspreviousiterationdistantwatersource. Ifnofundedretainedinputs/return, retirebeforelargecourierchain. P3mustholdbeduntilactualrecipientready; no earlydrop/remake/exposure. P1continuesownEndtest.
+G25-3 P2 wood_access_probe active, no sandboxreplacementuntilactualresultcaptured/released. Live P2stilluntouched.
+
+### BED gate FAILED/branchRETIRED20:25:01
+SB#19 actualwestcut/nativeapproach reachedY62.355 atHP20 butno settled/groundassertion; duringordinarylogcutunsampleddisplacement/falltoY30.54/HP9.10,DIRT3/noWOODreceipt; returnHPguardfailed. SeparateSB#20 actualgroundedY29 HP13.262food19/all7false/goalNULL. No APIcauseclaim. P2releasedaftercapture; LIVEstillunchangedHP20/DIRT1. No live source/courier/bedadoption/remake. P3leaveLIVEbed. Whole20:23:05->20:43:05 branchclosedfailureearly, notresetbygate.
