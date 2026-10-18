@@ -1,4 +1,4 @@
-async function program(bot, Movements, goals) {
+async function candidate(bot) {
 // LIVE P3 only. UNEXECUTED until actual cap withdrawal and P2 local coordination.
 // Uses tested stationary bed-foot pickup, normal cap placement and documented chest UI.
 const V=bot.entity.position.constructor,base=new V(6.5,67,82.5),foot=new V(6,67,83),head=new V(7,67,83),floor=foot.offset(0,-1,0),chestPos=new V(7,68,82);
@@ -7,7 +7,7 @@ const full=p=>!!bot.blockAt(p)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
 const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
 const state=()=>({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,flags:flags(),goal:bot.pathfinder.goal,window:bot.currentWindow?.type??null,inv:bot.inventory.items().map(i=>[i.name,i.count])});
 const shell=()=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{const p=base.floored().offset(...d);return{p,n:bot.blockAt(p)?.name,full:full(p)};});
-async function face(p,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.5,.01,.01],[.01,.5,.5],[.99,.5,.5]]){await bot.lookAt(p.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(p)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not actualvisible/reachable '+p);}
+async function face(p,f=null){for(const a of[[.5,.3,.1],[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.5,.01,.01],[.01,.5,.5],[.99,.5,.5]]){await bot.lookAt(p.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(p)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not actualvisible/reachable '+p);}
 function aliveAtSource(){if(bot.health<=0||bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(base)>.05)throw Error('donor lifecycle/body changed');}
 async function cap(){aliveAtSource();if(full(foot))return;if(!['air','cave_air'].includes(bot.blockAt(foot)?.name))throw Error('cap destination not AIR');if(!full(floor))throw Error('cap floor changed');const item=bot.inventory.items().find(i=>['dirt','spruce_planks','oak_planks','cobblestone','basalt','netherrack'].includes(i.name));if(!item)throw Error('cap block unavailable');await bot.equip(item,'hand');const c=await face(floor,1);await bot.placeBlock(bot.blockAt(floor),new V(0,1,0));await bot.waitForTicks(6);console.log('CAP_ACTUAL',JSON.stringify({foot,n:bot.blockAt(foot)?.name,hit:c.intersect,state:state()}));if(!full(foot))throw Error('cap not full');}
 console.log('START',JSON.stringify(state()));aliveAtSource();
