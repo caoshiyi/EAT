@@ -1,0 +1,5 @@
+const V=require('vec3').Vec3;const p=bot.entity.position.clone(),wood=bot.inventory.items().find(i=>i.name==='oak_planks');if(!wood||wood.count!==8)return {refused:'expected actual8'};
+// Straight-down ordinary drop avoids carrying the item past the receiver.
+await bot.lookAt(p.offset(.001,-1,.001),true);await bot.waitForTicks(1);await bot.tossStack(wood);
+try{for(let i=0;i<50&&bot.entity.position.x>138.65;i++){await bot.lookAt(new V(138.5,-34.38,2231.5),true);bot.setControlState('sprint',true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}finally{bot.clearControlStates();}
+await bot.waitForTicks(45);return {donorWood:bot.inventory.items().filter(i=>i.name==='oak_planks').reduce((s,i)=>s+i.count,0),p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(p)<3).map(e=>({id:e.id,p:e.position,meta:e.metadata})),players:Object.values(bot.entities).filter(e=>e.type==='player').map(e=>({n:e.username,p:e.position}))};

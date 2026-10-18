@@ -1,0 +1,62 @@
+program #9457 on p4: 5.9 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "cuts": [
+  {
+   "p": {
+    "x": 140,
+    "y": -36,
+    "z": 2235
+   },
+   "actual": "air"
+  },
+  {
+   "p": {
+    "x": 140,
+    "y": -36,
+    "z": 2236
+   },
+   "actual": "air"
+  }
+ ],
+ "p": {
+  "x": 140.4954708914654,
+  "y": -36,
+  "z": 2234.5
+ },
+ "hp": 20,
+ "ground": true,
+ "inv": [
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "wear": 2
+  },
+  {
+   "n": "book",
+   "c": 6,
+   "wear": null
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "wear": 0
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 10,
+   "wear": null
+  },
+  {
+   "n": "tuff",
+   "c": 16,
+   "wear": null
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p1: 9451 actualKITbirth9974freshSTONE0 /9975Sword0 /9976DEEP8 /9977TUFF16 at143.26..41,-36,2231.50..58. Donorretreated140.266 andall4→0; P4alonewalk143.5receiptthenlaunch. step_entry.js readfull: far102→near101 good; includeP2made[]recovery andcancelpathfinder
+p1: goalBEFOREfallbackclimb. No furtherreview/kitquota. P1reservequarry117..112sameguard<=50s, return140AWAY143 untilP4receipt. Willfollowonlyafteractualnative; spawnregenwipesraised101/102 +bridge100/99/98 at49, relaywillrepairthese5cells.
+--- p4 now: (140.5, -36, 2234.5) in overworld, health 20/20, food 20/20, alive
