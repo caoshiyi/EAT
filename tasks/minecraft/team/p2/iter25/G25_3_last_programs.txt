@@ -1,0 +1,48 @@
+== #24 2026-10-18T20:28:07 p1 role=completion_owner iter=25 77.8 s
+const WORK_MS=30000;const EXPECTED_DIM='the_end';
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let p=b.offset(...d);return{p,n:bot.blockAt(p)?.name,full:full(
+... (12702 chars; --full)
+-- output --
+START {"at":"2026-10-18T20:28:07.690Z","p":{"x":38.3,"y":50,"z":0.5379507733215326},"dim":"the_end","hp":17.26666831970215,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["spruce_sapling",1,null],["torch",4,null],["cracked_stone_bricks",3,null],["paper",19,null],["flint",1,null],["cobbled_deepslate",33,null],["tuff",10,null],["enchanted_book",1,null],["enchanted_book",1,null],["enchanted_book",1,null],["enchanted_book",1,null],["eye_armor_trim_smithing_template",1,null],["netherrack",1,null],["book",30,null],["basalt",4,null],["wooden_pickaxe",1,58],["stone_pickaxe",1,119],["iron_bars",1,null],["gravel",4,null],["mossy_stone_bricks",1,null],["stone_sword",1,6],["fishing_rod",1,2],["cobbled_deepslate",64,null],["stone_pickaxe",1,81]]}
+CUT_PRE {"p":{"x":39,"y":51,"z":0},"n":"end_stone","face":4,"hit":{"x":39,"y":51.73009622760893,"z":0.5159524244119236},"pick":"stone_pickaxe","wear":119}
+CUT_POST {"p":{"x":39,"y":51,"z":0},"n":"air","before":0,"after":0,"witness":true}
+CUT_PRE {"p":{"x":39,"y":50,"z":0},"n":"end_stone","face":1,"hit":{"x":39.15597285034375,"y":51,"z":0.5110507884372264},"pick":"stone_pickaxe","wear":120}
+CUT_POST {"p":{"x":39,"y":50,"z":0},"n":"air","before":0,"after":0,"witness":true}
+TWO_PHASE_STEP {"start":{"x":38.3,"y":50,"z":0.5379507733215326},"target":[39,50,0],"p":{"x":39.7,"y":50,"z":0.5008651074606092},"hp":17.26666831970215,"ground":true,"veloc
+... (21370 chars; --full)
+== #26 2026-10-18T20:35:26 p1 role=completion_owner iter=25 44.8 s
+const WORK_MS=30000;const EXPECTED_DIM='the_end';
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let p=b.offset(...d);return{p,n:bot.blockAt(p)?.name,full:full(
+... (15858 chars; --full)
+-- output --
+START {"at":"2026-10-18T20:35:26.735Z","p":{"x":38.3,"y":50,"z":0.5379508399137322},"dim":"the_end","hp":17.26666831970215,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["spruce_sapling",1,null],["torch",4,null],["cracked_stone_bricks",3,null],["paper",19,null],["flint",1,null],["cobbled_deepslate",33,null],["tuff",10,null],["enchanted_book",1,null],["enchanted_book",1,null],["enchanted_book",1,null],["enchanted_book",1,null],["eye_armor_trim_smithing_template",1,null],["netherrack",1,null],["book",30,null],["basalt",4,null],["wooden_pickaxe",1,58],["stone_pickaxe",1,121],["iron_bars",1,null],["gravel",4,null],["stone_sword",1,6],["fishing_rod",1,2],["cobbled_deepslate",64,null],["stone_pickaxe",1,81]]}
+CUT_PRE {"p":{"x":39,"y":51,"z":0},"n":"mossy_stone_bricks","face":4,"hit":{"x":39,"y":51.73009622749193,"z":0.5159524536831713},"pick":"stone_pickaxe","wear":121}
+CUT_POST {"p":{"x":39,"y":51,"z":0},"n":"air","before":0,"after":0,"witness":true}
+CUT_PRE {"p":{"x":39,"y":50,"z":0},"n":"end_stone","face":1,"hit":{"x":39.15597284891098,"y":51,"z":0.5110508094377078},"pick":"stone_pickaxe","wear":122}
+CUT_POST {"p":{"x":39,"y":50,"z":0},"n":"air","before":0,"after":0,"witness":true}
+TWO_PHASE_STEP {"start":{"x":38.3,"y":50,"z":0.5379508399137322},"target":[39,50,0],"p":{"x":39.7,"y":50,"z":0.5007059061199217},"hp":17.26666831970215,"ground":true,"velocity":{"x":0,"y":-0.07
+... (7045 chars; --full)
