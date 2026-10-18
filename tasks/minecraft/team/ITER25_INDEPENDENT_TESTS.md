@@ -136,3 +136,15 @@ P2oldSTONEkit LOST bycanonicalLIVE SPIDERdeath21:34:20 at7.3,63,81.7. FULL11058 
 TwoiterationcanonicalLIVEdeathsnowP1MAGIC20:30:22/P2SPIDER21:34:20. Latestownofficialeval21:05 stillsaved0/11/178SAVEFAILED andprecedesseconddeath; doNOTpresentitassynchronizedcurrentdeathcount. No newcrystal/dragondamage/beduseverified. WholeP2deadline28:51stillfailed; noautomaticremake/recoveryqueue. Actualrecoveryifselectedmustverifynewbody/receipt/endingandretainoldcost.
 
 Freshownobserver 2026-10-18T21:38:12.423Z three16FULL/20HP20food/EMPTY/all7FALSE atsameWbody. No P4livephysicalchange, no activeprogram. G4sandboxpartial9fullfailurestatecaptured/released, no dependency. Finalwindow21:53–58 remains; provisional20:16and21:07alreadycompletedbefore90.
+
+##21:49 new-life and attribution limits
+
+ExactP2LIVE11078/11081 partial-plan refusals beforemovement are guards, not physicalroutefailures. Changed11083 reacheddrysettledsource via4,65,-31 then6,66,-31, actuallyreceivedTABLE1/LOG2/PLANK1/DIRT1; final7,67,-31 targetnotreached andendingnotaudited. Newsource receipts are notlostHOMEkitrecovery. Audit NEWLIFE_AUDIT.md/full newlife_2148.raw.txt, delivered11085. Oldwholebudget/deaths remain.
+
+P3roofdiagnosis causalcredit remains PENDING explicitrecipientack in P3 journal; independentP4 source comparison proves changedroofhandling andlaterfieldsuccess, not whethernoticecausedownerchange. Avoidcreditfromtimeorderalone. P4farfootcapproposal11073 answeredexisting37:30actualquery; COBBLEfull, noextraDIRT/newtest/physicalcapreceipt.
+
+## Final window21:53–54
+
+Ownclosingeval21:53:41 saved0/11/179 SAVEFAILED; LIVEtwoiterationdeaths only. OwnLIVE11092 three16-full/20HP/empty/all7FALSE/no goal originalbody. P2separate11090 actualnewWOODpick/PLANK4/STICK2/THREE10FULL20HPterminal53:14.081, doesnotretroactivelycomplete11083/recoveroldSTONEkit. FULLclosing_p2.raw.txt; P4ack11093requestedownerjournalcorrection. P3LIVE11089bothbedpartsintact52:33/nohandoff; finalpeerP2snapshotpredates11090. No newbossprogress. FinalreviewandP4handoffrewritten current; oldchronologyarchived.
+
+21:55 attributioncorrection: P3journalpendingroofack is supersededbyexactP2.md recipientwrittenack: P3specificGRASS-vs-DIRTdiagnosis directlyinformed[dirt,grass_block]correction. Ownpeer_closing_P2.md preservesexacttext. Notice11094 toP3/P2 requestsreconciliation/preservation. Thisisownerackplusruntime11052, notcausalinferencefromtimeorder. Earlierpendingentriesretainedashistory.
