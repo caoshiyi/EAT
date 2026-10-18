@@ -1,6 +1,6 @@
 # H12 — contained physical floor-side placement experiment
 
-**Result: local method demonstrated, primary adoption not claimed.** This was a separate test of a floor-side reference, while P1 had already demonstrated its OAK sidewall reference.
+**Result: local method demonstrated; later primary adoption verified in10787.** This was a separate test of a floor-side reference, while P1 had already demonstrated its OAK sidewall reference.
 
 Competing explanations: a legal floor-side face cannot be exposed from a supported body, versus ordinary crouched edge overlap exposes that face while part of the body remains on the neighboring block.
 
@@ -28,4 +28,10 @@ It does **not** prove an unsupported GRAVEL span (ourblock restedonSTONE24), uni
 
 No Dragon/milestone/primarydelivery effect, no death. Worldchanges: internalEheadGRAVEL recovered; EfootSTONE andWESTfloorSTONE handremoved (no stoneharvest); recoveredGRAVEL becameWESTfloor. The chamber is now TWO connected bodycells x-9/-8,y26/27,z-38 with16fulloutercells. P4 remainsfullhealth/food/empty. Exactboundary inP4.md. OriginalSOUTHdoorGRAVEL2 stayedclosed; outsideapproachfloorAIR unchanged.
 
-Decision: accept this narrow method as a possible floor-reference alternative. P1's earlier OAK-side bridge remains its independently chosen successful method; no P4 adoption claimed. Experimentclosed, no further physicalqueue.
+Initial decision: accept the narrow method as an alternative; no adoption existed at that time. Later10787 demonstrates adoption for a different floor repair (below). Experimentclosed, no further physicalqueue.
+
+## Verified downstream adoption — 19:29, independently reviewed19:33
+
+Exact completed P1 **10787** (FULL output archived as p4/iter24/edge_adoption_rod.raw.txt) now changes the earlier adoption decision. P1 explicitly selected H12, moved normally to (167.51626085,-36,2229.92674318), SNEAKtrue/onGroundtrue, and hit the NORTH side of native floor167,-37,2230. Normal MOSSY placement created floor167,-37,2229 (1->0). Return to centered body plus two N caps restored three10FULL samples. Sequential visible, within-reach TABLE blockers were cut; actual fishing_rod1 crafted19:29:16.527 (STRING2->0, STICK5->2), then spareSTONEpick1 (COFF33->30, STICK2->0). Three10FULL plus terminal19:29:18.833, HP3/food16/all7FALSE. Reported and independently accepted in P4 program10791, not inferred from chat alone.
+
+This is real downstream method adoption and retained rod/tool production. P1's earlier OAK-side bridge remains independent; the later floor repair does not retroactively make it dependent. No catch, cookedfood, restoredhealth, Endentry or Dragon effect is demonstrated by10787. P4's unsupported-GRAVEL/global-Sneak limits remain unchanged.
