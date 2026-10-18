@@ -1,0 +1,11 @@
+[sandbox] program #90 on p4: 0 s
+--- output ---
+BODY 2026-10-18T22:31:31.495Z Vec3 { x: -2.5, y: 61, z: -23.5 } 20 20 []
+CANDIDATE {"depth":2,"soil":[{"p":{"x":-3,"y":60,"z":-24},"n":"grass_block"},{"p":{"x":-3,"y":59,"z":-24},"n":"dirt"}],"sides":[{"p":{"x":-3,"y":58,"z":-24},"n":"dirt","full":true},{"p":{"x":-2,"y":59,"z":-24},"n":"air","full":false},{"p":{"x":-2,"y":60,"z":-24},"n":"air","full":false},{"p":{"x":-4,"y":59,"z":-24},"n":"dirt","full":true},{"p":{"x":-4,"y":60,"z":-24},"n":"dirt","full":true},{"p":{"x":-3,"y":59,"z":-23},"n":"dirt","full":true},{"p":{"x":-3,"y":60,"z":-23},"n":"water","full":false},{"p":{"x":-3,"y":59,"z":-25},"n":"air","full":false},{"p":{"x":-3,"y":60,"z":-25},"n":"air","full":false}],"roofRefs":[{"p":{"x":-2,"y":61,"z":-24},"n":"air","full":false},{"p":{"x":-4,"y":61,"z":-24},"n":"dirt","full":true},{"p":{"x":-3,"y":61,"z":-23},"n":"water","full":false},{"p":{"x":-3,"y":61,"z":-25},"n":"air","full":false}]}
+CANDIDATE {"depth":3,"soil":[{"p":{"x":-3,"y":60,"z":-24},"n":"grass_block"},{"p":{"x":-3,"y":59,"z":-24},"n":"dirt"},{"p":{"x":-3,"y":58,"z":-24},"n":"dirt"}],"sides":[{"p":{"x":-3,"y":57,"z":-24},"n":"air","full":false},{"p":{"x":-2,"y":58,"z":-24},"n":"snow","full":false},{"p":{"x":-2,"y":59,"z":-24},"n":"air","full":false},{"p":{"x":-4,"y":58,"z":-24},"n":"stone","full":true},{"p":{"x":-4,"y":59,"z":-24},"n":"dirt","full":true},{"p":{"x":-3,"y":58,"z":-23},"n":"stone","full":true},{"p":{"x":-3,"y":59,"z":-23},"n":"dirt","full":true},{"p":{"x":-3,"y":58,"z":-25},"n":"air","full":false},{"p":{"x":-3,"y":59,"z":-25},"n":"air","full":false}],"roofRefs":[{"p":{"x":-2,"y":60,"z":-24},"n":"air","full":false},{"p":{"x":-4,"y":60,"z":-24},"n":"dirt","full":true},{"p":{"x":-3,"y":60,"z":-23},"n":"water","full":false},{"p":{"x":-3,"y":60,"z":-25},"n":"air","full":false}]}
+MOBS []
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+--- p4 now: (-2.5, 61, -23.5) in overworld, health 20/20, food 20/20, alive

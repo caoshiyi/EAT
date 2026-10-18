@@ -1,0 +1,13 @@
+[sandbox] program #80 on p4: 2.7 s
+--- output ---
+BEGIN {"at":"2026-10-18T22:27:30.111Z","p":{"x":-8.5,"y":29,"z":-38.499999945714194},"hp":20,"food":20,"ground":true,"inv":[],"controls":{},"goal":null}
+PLAN {"p":{"x":-6,"y":32,"z":-35},"status":"success","path":[[-7.5,30,-37.5],[-6.5,31,-36.5],[-5.5,32,-35.5],[-5.5,32,-34.5]]}
+GO_END {"p":{"x":-6,"y":32,"z":-35},"s":{"at":"2026-10-18T22:27:32.762Z","p":{"x":-5.461387336012228,"y":32,"z":-34.5},"hp":20,"food":20,"ground":true,"inv":[],"controls":{},"goal":null}}
+NATIVE_UP3_ACTUAL {"at":"2026-10-18T22:27:32.762Z","p":{"x":-5.461387336012228,"y":32,"z":-34.5},"hp":20,"food":20,"ground":true,"inv":[],"controls":{},"goal":null}
+NO_RETAINED_SHELTER_CLAIM {"at":"2026-10-18T22:27:32.762Z","p":{"x":-5.461387336012228,"y":32,"z":-34.5},"hp":20,"food":20,"ground":true,"inv":[],"controls":{},"goal":null}
+ACTUAL_ENDING {"s":{"at":"2026-10-18T22:27:32.762Z","p":{"x":-5.461387336012228,"y":32,"z":-34.5},"hp":20,"food":20,"ground":true,"inv":[],"controls":{},"goal":null},"faces":[{"p":{"x":-6,"y":31,"z":-35},"n":"stone","full":true},{"p":{"x":-6,"y":34,"z":-35},"n":"air","full":false},{"p":{"x":-5,"y":32,"z":-35},"n":"stone","full":true},{"p":{"x":-5,"y":33,"z":-35},"n":"stone","full":true},{"p":{"x":-7,"y":32,"z":-35},"n":"air","full":false},{"p":{"x":-7,"y":33,"z":-35},"n":"air","full":false},{"p":{"x":-6,"y":32,"z":-34},"n":"air","full":false},{"p":{"x":-6,"y":33,"z":-34},"n":"air","full":false},{"p":{"x":-6,"y":32,"z":-36},"n":"snow","full":false},{"p":{"x":-6,"y":33,"z":-36},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-5.5, 32, -34.5) in overworld, health 20/20, food 20/20, alive

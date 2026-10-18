@@ -1,0 +1,7 @@
+# G26-2 one-cap upper exit + hand stairs — RETIRED FAILED
+
+Materiallychanged fromtwo-gravel/ledgequota: #77 actualonlySheadGRAVEL harvest1 (keptSfootfull), ownroofSTONE28/westSTONE27handcuts, ONEordinaryGRAVELpillar26->27, native27->28, handSTONE29cut/actual29 at22:26:02.042/20HP. #79 separateactualnativeUP3 to32/20HP. SourceglobalnativecanDigfalse/true modelsPARTIAL; neverforcedpartialexecution. No retainedshelter/cap inventory.
+
+CustomhandstairA*83 currentmodel cost560.7seconds, somefuturefloorsinvalidatedbyplannedcuts; explicitcurrentstepreplanrequired. Small85 flat+actualtwoANDESITEhandcuts/noexpectedcobbledrops thenordinaryjumpstep to(-5.496,33,-36.7),20HP22:29:25.655. No fullending. Nextfourstep88 START22:30:06.726 already5.833HP, modelran buthealthguardrefusedBEFOREphysicalstep, ending07.993 still5.833. CanonicalSBZOMBIEdeath22:30:09. Thus wholewood/retainedbodybranch FAILED before22:35sourcegate, notlaterrespawnsuccess. NoLIVEadoption, no assertionimpossibility. Original20minexit22:03–23 alreadyFAILED separately. Do notresetclocks/replayexposedbarehandclimb.
+
+Freshnewlife90 22:31:31 ownOW(-2.5,61,-23.5),20HP20foodEMPTY. Read-onlyburrowpreflight bothdepth2/3 FAILfullwall/floor; WATERsouth60/61. No unsafeholedig; no protectedendingclaimed. Newlife94 observeradmissiontest zeroactions/bodyunchanged. P4LIVEoriginalroom unchanged20HP/empty throughout; onlyp4controlled. Allmutationsuse p4cmd.py since22:19, oneearlierchat-overlaprecorded.
