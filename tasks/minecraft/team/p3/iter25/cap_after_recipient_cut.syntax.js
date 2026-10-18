@@ -1,0 +1,17 @@
+async function candidate(bot) {
+// P3 LIVE only, UNEXECUTED. Run only after actualcapwithdrawal + coordinated local P2 headcut.
+// No bed dig/toss/transfer. Cap cleanup ignores work quota/forward HP floor.
+const V=bot.entity.position.constructor,base=new V(6.5,67,82.5),foot=new V(6,67,83),floor=foot.offset(0,-1,0);
+const names=['dirt','spruce_planks','oak_planks','cobblestone','basalt','netherrack'],full=p=>!!bot.blockAt(p)?.shapes?.some(a=>a.join(',')==='0,0,0,1,1,1'),air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name),flags=()=>Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]));
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,flags:flags(),goal:bot.pathfinder.goal,window:bot.currentWindow?.type??null,inv:bot.inventory.items().map(i=>[i.name,i.count]),foot:bot.blockAt(foot)?.name});
+const alive=()=>{if(bot.health<=0||bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(base)>.05)throw Error('donor lifecycle/body changed');};
+async function cap(){alive();if(full(foot))return;if(!air(foot)||!full(floor))throw Error('actual cap AIR/support missing');const item=bot.inventory.items().find(i=>names.includes(i.name));if(!item)throw Error('actual cap absent');await bot.equip(item,'hand');let hit=null;for(const a of[[.5,.99,.5],[.5,.99,.01],[.5,.99,.1]]){await bot.lookAt(floor.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(floor)&&c.face===1&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5)){hit=c;break;}}if(!hit)throw Error('actual floor TOP not visible/reachable');await bot.placeBlock(bot.blockAt(floor),new V(0,1,0));await bot.waitForTicks(6);console.log('CAP_ACTUAL',JSON.stringify({hit:hit.intersect,state:state()}));if(!full(foot))throw Error('actual cap not full');}
+console.log('START',JSON.stringify(state()));alive();
+if(!bot.entity.onGround||bot.currentWindow||bot.pathfinder.goal||Object.values(flags()).some(Boolean)||!bot.inventory.items().some(i=>names.includes(i.name)))throw Error('idle/source/actualcap admission');
+if(!bot.players.p2?.entity||bot.players.p2.entity.position.distanceTo(base)>8)throw Error('recipient not locally present');
+if(!['white_bed','air','cave_air'].includes(bot.blockAt(foot)?.name))throw Error('source changed');
+try{const deadline=Date.now()+12000;while(bot.blockAt(foot)?.name==='white_bed'&&Date.now()<deadline){await bot.waitForTicks(1);alive();}if(!air(foot)&&!full(foot))throw Error('bed nevercut within12s; retained source, no transferclaim');}finally{if(bot.health>0&&bot.game.dimension==='overworld'&&bot.entity.position.distanceTo(base)<.05&&air(foot)){try{await cap();}catch(e){console.log('CLEANUP_FAILURE',String(e));throw e;}}}
+for(let i=0;i<3;i++){console.log('ENDING',JSON.stringify(state()));if(!full(foot))throw Error('source cap not retained');await bot.waitForTicks(5);}
+return{state:state(),note:'Donor cap only. Actual P2 BED receipt/use must be independently verified.'};
+
+}
