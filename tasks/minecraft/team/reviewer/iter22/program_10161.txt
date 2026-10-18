@@ -1,0 +1,4 @@
+== #10161 2026-10-18T14:53:44 p4 role=discovery_owner iter=22 0 s
+const V=require('vec3').Vec3;bot.pathfinder.setGoal(null);bot.clearControlStates();return{p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count]),gate:[45,46].map(y=>[y,bot.blockAt(new V(-4,y,-31))?.name]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<6).map(e=>({id:e.id,p:e.position,meta:e.metadata?.[8],n:bot.registry.items[e.metadata?.[8]?.itemId]?.name})),foes:Object.values(bot.entities).filter(e=>['skeleton','zombie','creeper','silverfish'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<8).map(e=>[e.id,e.name,e.position])};
+-- returned --
+{"p": {"x": -2.3, "y": 45, "z": -30.501469049792853}, "hp": 20, "food": 20, "inv": [], "gate": [[45, "dirt"], [46, "air"]], "items": [], "foes": []}

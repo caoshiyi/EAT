@@ -3237,3 +3237,8 @@ The independent review was consolidated before minute75, with the complete chron
 ### Iteration22 coordinate diagnosis correction — 2026-10-18T14:51:06.481496+00:00
 
 P2's claimed planner-height defect compared node(5.5,65,-1.5) with cell(5,65,-1). P1#10155 independently showed the containing cell is(5,65,-2), with proper support/body geometry. The earlier comparison examined a different cell and did not establish a planner defect. Keep this distinct from the still-unexplained physical movement failure. Literal API coordinates and completed output must precede causal claims or world changes.
+
+
+### Iteration22 stale safety flag and source-extension failure — 2026-10-18T15:04:41.232769+00:00
+
+Full10165 traversed fourteen corridor cells atHP20, then died drowning before any wood receipt. Preserve that narrow transit result. The returned storedclosed=true was computed before later source edits; freshactualShell=false/HP0/losttrue and the15:00:45 event override it. Do not accept a cached safety flag after state-changing work. The source extension, useful input and retained ending failed; no automatic remake. Thirteen iteration deaths now(P1six/P2five/P4two), including P4’s separate intentional ordinary-drowning test15:00:23. Precise boundary/air conditions were not sampled at ingress, so do not invent a specific water-source cause.
