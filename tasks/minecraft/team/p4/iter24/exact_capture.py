@@ -8,7 +8,7 @@ if r.returncode: raise SystemExit(r.stderr)
 for record in r.stdout.split('== #')[1:]:
  lines=record.splitlines();print('== #'+lines[0])
  # Source is preserved in raw. Output labels are supplied by the arena.
- markers=[(record.find(s),s) for s in ['\n-- output --\n','\n-- returned --\n'] if s in record]
+ markers=[(record.find(s),s) for s in ['\n-- output --\n','\n-- returned --\n','\n-- error --\n'] if s in record]
  if markers: print(record[min(x[0] for x in markers):].rstrip())
  else: print('[no output/return section; source retained in '+str(f)+']')
 print('RAW',f)
