@@ -1,0 +1,187 @@
+program #9920 on p2: 9.2 s
+--- output ---
+TRACE_SMALL_PASS {"p":{"x":75,"y":49,"z":0},"n":"end_stone","face":1,"distance":1.6199999999999974,"hit":{"x":75.50869697594386,"y":50,"z":0.5001530336008023}}
+TRIGGER {"at":3169,"root":{"x":91.11742801061118,"y":62.13417240261316,"z":-4.346876964104794},"phase":1,"rays":[{"origin":{"x":85.5,"y":51.62,"z":0.5},"dir":{"x":0.43652910406990003,"y":0.8170540415078371,"z":-0.3766497505052144},"max":12.868392870574048,"hit":null},{"origin":{"x":85.5,"y":51.8,"z":0.5},"dir":{"x":0.43652910406990003,"y":0.8170540415078371,"z":-0.3766497505052144},"max":12.868392870574048,"hit":null}]}
+--- returned ---
+{
+ "issue": null,
+ "elapsed": 9240,
+ "trigger": {
+  "at": 3169,
+  "root": {
+   "x": 91.11742801061118,
+   "y": 62.13417240261316,
+   "z": -4.346876964104794
+  },
+  "phase": 1,
+  "rays": [
+   {
+    "origin": {
+     "x": 85.5,
+     "y": 51.62,
+     "z": 0.5
+    },
+    "dir": {
+     "x": 0.43652910406990003,
+     "y": 0.8170540415078371,
+     "z": -0.3766497505052144
+    },
+    "max": 12.868392870574048,
+    "hit": null
+   },
+   {
+    "origin": {
+     "x": 85.5,
+     "y": 51.8,
+     "z": 0.5
+    },
+    "dir": "[repeated reference]",
+    "max": 12.868392870574048,
+    "hit": null
+   }
+  ]
+ },
+ "view": {
+  "at": 5784,
+  "p": {
+   "x": 85.45527707027868,
+   "y": 50,
+   "z": 0.4998943093947874
+  },
+  "root": {
+   "x": 75.72216433873618,
+   "y": 58.73402591823816,
+   "z": -0.4149921984797942
+  },
+  "phase": 1,
+  "rays": [
+   {
+    "origin": {
+     "x": 85.45527707027868,
+     "y": 51.62,
+     "z": 0.4998943093947874
+    },
+    "dir": {
+     "x": -0.8050224177567215,
+     "y": 0.5883986451861899,
+     "z": -0.07566994946594831
+    },
+    "max": 12.090486571373795,
+    "hit": {
+     "p": {
+      "x": 84,
+      "y": 52,
+      "z": 0
+     },
+     "n": "end_stone",
+     "face": 0,
+     "distance": 0.6458206576593277,
+     "hit": {
+      "x": 84.93537696301253,
+      "y": 52,
+      "z": 0.4510250928656406
+     }
+    }
+   },
+   {
+    "origin": {
+     "x": 85.45527707027868,
+     "y": 51.8,
+     "z": 0.4998943093947874
+    },
+    "dir": "[repeated reference]",
+    "max": 12.090486571373795,
+    "hit": {
+     "p": {
+      "x": 84,
+      "y": 52,
+      "z": 0
+     },
+     "n": "end_stone",
+     "face": 5,
+     "distance": 0.5655458285837056,
+     "hit": {
+      "x": 85,
+      "y": 52.13276639932935,
+      "z": 0.45709948512518056
+     }
+    }
+   }
+  ],
+  "hp": 200
+ },
+ "visibleSamples": 0,
+ "exposedMs": 704,
+ "phases": {
+  "1": 136
+ },
+ "newFireballs": [],
+ "dragonHP": 200,
+ "p": {
+  "x": 75.51232020854708,
+  "y": 50,
+  "z": 0.5001530335998229
+ },
+ "hp": 10.55274772644043,
+ "food": 14,
+ "ground": true,
+ "roof": "end_stone",
+ "controls": {},
+ "inv": [
+  {
+   "n": "book",
+   "c": 3,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 16,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "cobbled_deepslate",
+   "c": 10,
+   "w": null
+  },
+  {
+   "n": "cracked_stone_bricks",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "blackstone",
+   "c": 1,
+   "w": null
+  },
+  {
+   "n": "end_stone",
+   "c": 64,
+   "w": null
+  },
+  {
+   "n": "stone_pickaxe",
+   "c": 1,
+   "w": 106
+  },
+  {
+   "n": "stone_sword",
+   "c": 1,
+   "w": 0
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: Independent9906 COMPLETE: actual0,Y63/90s phase1HP200, ZEROqualifiedattacks/minROOT23.253, fullnative7,Y50 HP20/kitretained. 9909 bait85 root-ray blocked84,Y52; actualvisible-target condition unestablished. Distinctpossible95/96bridge stance hasdifferentna
+p4: tive-roofangle; ONLYactualfreshclearroot/eye-line beforeONEshortpeek+immediatereturn couldtestvisibility, notanother85replay/newstock. P1chooseifremainingbudget. P4actual9912 privatealcove157.513,-36,2229.618 HP14.9715food17EMPTY; doorMOSS2/fullfloorroof B
+p4: UT westHEAD156,-35,2229AIR (known1cellgap), soNOTfullysealed despitelogENCLOSED. Main2231AIRunblocked. MonitoringactualHP, no universalprotectionclaim.
+p1: 9906 actual90sSurface0Y63 fullHP20/rootmin23.253/phase1all/ZEROattacks, fullnative7HP20. 9909 physical85 butRootWEST40 lineblocked84roof, NOTvisiblehypothesisfalsification. ONEchangedtimingtest: P2 fromcovered75 waituntilDragonROOT EAST>=90 (read-onlypred8
+p1: 5 bothactualcameraBLOCKraysclear) THEN normal85peek; actualcurrentclearline required, leaveonFIRSTfireball ORmax1s, full75return/HP. No newbuild. P1 secondSurface90s fromnative7 now; ifphase1unchanged/noactualclearprecondition retire, notnewclock. Ifactual
+p1: root3damagehappens continueeffectivehits insidebudget, stop3qualifiedNOEFFECT. Needactualtarget/body/LOSnotparentAABBreach.
+p1: P1 SURFACE_READY actual0,Y63 HP20 P2 baitnow; activecaller90s thenfullnative50, root-hitstrictactual3m only.
+[server] p1 was slain by Enderman
+--- p2 now: (75.5, 50, 0.5) in the_end, health 10.6/20, food 14/20, alive
