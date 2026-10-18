@@ -1,0 +1,16 @@
+program #10521 on p3: 3.3 s
+--- output ---
+START Vec3 { x: 11.5, y: 67, z: -17.5 } 4.499999046325684 17
+SOURCE Vec3 { x: 10, y: 67, z: -18 } { age: '3' } true
+HARVEST_AFTER Vec3 { x: 10, y: 67, z: -18 } { age: '1' } [ [ 'dirt', 2 ] ]
+SOURCE Vec3 { x: 9, y: 67, z: -19 } { age: '3' } true
+HARVEST_AFTER Vec3 { x: 9, y: 67, z: -19 } { age: '1' } [ [ 'dirt', 2 ] ]
+SOURCE Vec3 { x: 11, y: 68, z: -21 } { age: '3' } true
+HARVEST_AFTER Vec3 { x: 11, y: 68, z: -21 } { age: '1' } [ [ 'dirt', 2 ] ]
+SOURCE Vec3 { x: 12, y: 68, z: -21 } { age: '3' } true
+HARVEST_AFTER Vec3 { x: 12, y: 68, z: -21 } { age: '1' } [ [ 'dirt', 2 ] ]
+--- returned ---
+"NO_RECEIPT"
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (11.5, 67, -17.5) in overworld, health 4.5/20, food 17/20, alive

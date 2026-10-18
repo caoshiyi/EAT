@@ -1,0 +1,11 @@
+program #10611 on p3: 5.3 s
+--- output ---
+BEFORE Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20
+RECEIPT_GATE [ 5, 62, 87 ] Vec3 { x: 5.5, y: 62, z: 87.51967168466727 } 20 20 [ [ 'dirt', 2 ], [ 'spruce_planks', 4 ] ]
+RECEIPT_GATE [ 5, 63, 90 ] Vec3 { x: 5.500000187912792, y: 63, z: 90.30841082809395 } 20 20 [ [ 'dirt', 2 ], [ 'spruce_planks', 4 ], [ 'sweet_berries', 15 ] ]
+END Vec3 { x: 5.500000187912792, y: 63, z: 90.30841082809395 } 20 [ [ 'dirt', 2 ], [ 'spruce_planks', 4 ], [ 'sweet_berries', 15 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (5.5, 63, 90.3) in overworld, health 20/20, food 20/20, alive

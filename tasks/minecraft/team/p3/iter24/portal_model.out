@@ -1,0 +1,23 @@
+program #10566 on p3: 1.9 s
+--- output ---
+STATE Vec3 { x: 6.5, y: 67, z: 82.59719048933833 } 12.899998664855957 19 [ [ 'spruce_planks', 4 ], [ 'dirt', 2 ], [ 'sweet_berries', 15 ] ]
+PORTAL [
+  Vec3 { x: 6, y: 68, z: 91 },
+  Vec3 { x: 7, y: 68, z: 91 },
+  Vec3 { x: 6, y: 69, z: 91 },
+  Vec3 { x: 7, y: 69, z: 91 },
+  Vec3 { x: 6, y: 70, z: 91 },
+  Vec3 { x: 7, y: 70, z: 91 }
+]
+MODEL [ 6, 68, 90 ] success [[5.5,66,81.5],[4.5,65,81.5],[3.5,64,81.5],[3.5,63,82.5],[3.5,63,83.5],[3.5,62,84.5],[3.5,62,85.5],[3.5,62,86.5],[3.5,62,87.5],[2.5,62,88.5],[2.5,63,89.5],[1.5,64,90.5],[2.5,65,91.5],[3.5,66,92.5],[4.5,66,93.5],[5.5,67,94.5],[6.5,68,93.5],[6.5,68,92.5],[6.5,68,91.5],[6.5,68,90.5]]
+MODEL [ 6, 64, 97 ] success [[5.5,66,81.5],[4.5,65,81.5],[3.5,64,81.5],[3.5,63,82.5],[2.5,63,83.5],[2.5,63,84.5],[2.5,62,85.5],[2.5,62,86.5],[3.5,62,87.5],[3.5,62,88.5],[2.5,63,89.5],[1.5,64,90.5],[2.5,65,91.5],[3.5,66,92.5],[3.5,65,93.5],[4.5,64,94.5],[5.5,64,95.5],[5.5,64,96.5],[6.5,64,97.5]]
+MODEL [ 7, 68, 91 ] success [[5.5,66,81.5],[4.5,65,81.5],[3.5,64,81.5],[3.5,63,82.5],[3.5,63,83.5],[3.5,62,84.5],[3.5,62,85.5],[3.5,62,86.5],[3.5,62,87.5],[2.5,62,88.5],[2.5,63,89.5],[1.5,64,90.5],[2.5,65,91.5],[3.5,66,92.5],[4.5,66,93.5],[5.5,67,94.5],[6.5,68,93.5],[6.5,68,92.5],[7.5,68,91.5]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: Distinct bounded ownbody H4 (<=1min, no edits): current observe says some full footwalls canSeeBlock=false. Competing: physically occluded versus center/corner heuristic misses reachable face. Compare documented canSeeBlock against actual lookAt+blockAtCur
+p4: sor(4.5) intersection within actualeye4.5 on 10existingfaces. Purpose independently qualify P1 cursor-face method for closure refusals, no reach/visibility bypass/no interaction. Stop after one comparison.
+p4: H4 COMPLETE10563 at18:08:22, no edits/movement: all10fullfaces had actualcursor hits within0.304..1.722m; THREE STONEfootwalls E(-8,26,-38),W(-10,26,-38),N(-9,26,-39) canSeeBlockFALSE yet actualblockAtCursor(4.5) hit that exactblock on exposedface, distanc
+p4: e<=1.073m. Thus canSeeBlock=false is not sufficient universal refusal for these surfaces. Independently supports P1 existing actualcursor-face gate; does NOT authorize hidden blocks or fartherreach. No interaction tested in10563. No new placement/API fix c
+p4: laimed. Full20HP/empty/body unchanged.
+--- p3 now: (6.5, 67, 82.6) in overworld, health 12.9/20, food 19/20, alive

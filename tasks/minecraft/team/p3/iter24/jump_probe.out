@@ -1,0 +1,18 @@
+program #10583 on p3: 1.1 s
+--- output ---
+BEFORE Vec3 { x: 2.3, y: 63, z: 89.51207583147371 } true undefined {} 14.899998664855957
+JUMP 0 Vec3 { x: 2.3, y: 63.41999998688698, z: 89.51207583147371 } false {}
+JUMP 1 Vec3 { x: 2.3, y: 63.7531999805212, z: 89.51207583147371 } false {}
+JUMP 2 Vec3 { x: 2.3, y: 64.00133597911214, z: 89.51207583147371 } false {}
+JUMP 3 Vec3 { x: 2.3, y: 64.16610926093821, z: 89.51207583147371 } false {}
+JUMP 4 Vec3 { x: 2.3, y: 64.24918707874468, z: 89.51207583147371 } false {}
+JUMP 5 Vec3 { x: 2.3, y: 64.25220334025373, z: 89.51207583147371 } false {}
+JUMP 6 Vec3 { x: 2.3, y: 64.17675927506424, z: 89.51207583147371 } false {}
+JUMP 7 Vec3 { x: 2.3, y: 64.02442408821369, z: 89.51207583147371 } false {}
+AFTER Vec3 { x: 2.3, y: 64, z: 89.51207583147371 } true 14.899998664855957 {}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P2/P4 completed10570 18:10:45 actualLOW322(25.5004,8,201.332),81newsteps/twoBLACKcuts/three10FULL+terminal,HP3food16;stone108/wood5 B31/NBR1/NR4. Next322->402. P3 capbudget warning valid; primary ending costs currently2netcaps/leg, do not infer handcutrece
+p1: ipt. P2 woodpacketfailed/noarrow read; no primary ammo assumption.
+--- p3 now: (2.3, 64, 89.5) in overworld, health 14.9/20, food 17/20, alive

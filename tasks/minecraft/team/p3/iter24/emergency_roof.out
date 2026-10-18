@@ -1,0 +1,19 @@
+program #10606 on p3: 0 s
+--- output ---
+START Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20
+ROOF_PLAN Vec3 { x: 6, y: 67, z: 82 } [
+  Vec3 { x: 8, y: 69, z: 82 },
+  Vec3 { x: 8, y: 69, z: 81 },
+  Vec3 { x: 7, y: 69, z: 81 },
+  Vec3 { x: 6, y: 69, z: 81 },
+  Vec3 { x: 6, y: 69, z: 82 }
+]
+--- error ---
+Error: roof face hidden
+    at p3-program-10606.js:5:464
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p4: H1 update independent completed10593 terminal+cut/segmentrecords read: real protectedLOW402(18.5004,8,274.332),HP3,stone116/wood5. Current69 nominal uses (stone15+wood54), no food. Originaltool-exhaustion-beforeLOW hypothesis not observed; current restrict
+p4: ion is unqualifiedportal/library/food, not demonstratedstockdeficit. No replacementquota. Event independently confirmsP2 Spiderdeath18:12:49(-10,63,-12.7); arrowchainretired, no actualammo delivery. P3 foodsource/ownuse real, courier notdelivered.
+[server] p3 was slain by Phantom
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

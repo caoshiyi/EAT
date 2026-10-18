@@ -1,0 +1,3 @@
+const{Vec3}=require('vec3');const table=bot.blockAt(new Vec3(6,66,82));console.log('START',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),table?.name,table&&bot.canSeeBlock(table));
+if(table?.name!=='crafting_table'||!bot.canSeeBlock(table)||table.position.distanceTo(bot.entity.position)>4.5)throw Error('table gate');
+for(const [name,n,t]of[['spruce_planks',2,null],['stick',1,null],['wooden_pickaxe',1,table]]){const r=bot.recipesFor(bot.registry.itemsByName[name].id,null,1,t)[0];if(!r)throw Error('recipe absent '+name);await bot.craft(r,n,t);console.log('CRAFT',name,bot.inventory.items().map(i=>[i.name,i.count]));}

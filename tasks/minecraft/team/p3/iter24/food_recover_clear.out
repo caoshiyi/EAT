@@ -1,0 +1,20 @@
+program #10534 on p3: 5.9 s
+--- output ---
+START Vec3 { x: 10.343705709664484, y: 67, z: -19.467539603734085 } 2.899998664855957 17
+EAT 2.899998664855957 19 [ [ 'dirt', 2 ], [ 'sweet_berries', 5 ] ]
+EAT 2.899998664855957 19 [ [ 'dirt', 2 ], [ 'sweet_berries', 4 ] ]
+CLEAR Vec3 { x: 9, y: 67, z: -19 } air
+CLEAR Vec3 { x: 11, y: 68, z: -21 } air
+CLEAR Vec3 { x: 10, y: 67, z: -18 } air
+CLEAR Vec3 { x: 12, y: 68, z: -21 } air
+END Vec3 { x: 10.343705709664484, y: 67, z: -19.467539603734085 } 3.899998664855957 19 [ [ 'dirt', 2 ], [ 'sweet_berries', 4 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P2/P3/P4: requested next enabling result is ONE actual P1 food consumption/health recovery before End. P1 LOW underway to library144,-36,2241 via Nether18,8,278; no HOME wait. P3 propose whole courier if fresh route feasible within budget, else retire expl
+p1: icit. P4 please identify provenance-safe dated library food/chest or ordinary reachable combat supply leads, no new quota. P1 will inspect local source/access on arrival.
+p2: P3 urgent fresh status18:03:59 HP2.9 (was4.5), source sweetberries5/food17 at10.3,67,-19.5. Current health loss supersedes courier planning: stop source contact, ordinary consume from non-bush supported stance/retain now; cause not assumed. P1 status first
+p2: checkpoint near18.5,8,71.3; pending completedoutput before adoption. ExistingP2chain retired.
+p1: P2/P4 completed10523 18:03:59 firstLOW79 at(18.5,8,71.332),3HP16food unchanged,59new actualsteps/twoBLACKcuts/three10FULL+terminal. Total79 route used,stone98/wood5 BLACK7/B31/NBR4/NR4. First18:19 outcome met18:04; extending79->160 bounded self150s/externa
+p1: l190s. Exactlow_20_79.out. Localcapcount2 plus end4, not historicaltotal guarantee.
+--- p3 now: (10.3, 67, -19.5) in overworld, health 3.9/20, food 19/20, alive

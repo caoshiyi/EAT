@@ -1,0 +1,13 @@
+program #10556 on p3: 11.6 s
+--- output ---
+APPROACH Vec3 { x: 11.469557868991254, y: 68, z: -19.69177624559108 } 10.899998664855957 19
+LOG_PRE Vec3 { x: 12, y: 68, z: -22 } spruce_log true
+LOG_POST air [ [ 'dirt', 2 ], [ 'sweet_berries', 16 ] ]
+LOG_PRE Vec3 { x: 12, y: 69, z: -22 } spruce_log true
+LOG_POST air [ [ 'dirt', 2 ], [ 'sweet_berries', 16 ], [ 'spruce_log', 1 ] ]
+RECEIPT Vec3 { x: 12.533933522171314, y: 68, z: -21.31095272187573 } 12.899998664855957 17 [ [ 'dirt', 2 ], [ 'sweet_berries', 16 ], [ 'spruce_log', 1 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (12.5, 68, -21.3) in overworld, health 12.9/20, food 17/20, alive

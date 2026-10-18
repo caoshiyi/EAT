@@ -1,0 +1,25 @@
+== #10615 2026-10-18T18:16:08 p1 role=frontier_operator iter=24 7.3 s
+const WORK_MS=30000;
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:{...bot.controlState},goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!=='the_nether')throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let p=b.offset(...d);return{p,n:bot.blockAt(p)?.name,full:full(p)};});}
+function hazards(b){for(let x=-1;x<=1;x++)for(let z=-1;z<=1;z++)for(let y=0;y<=1;y++){const p=b.offset(x,y,z),n=bot.blockAt(p)?.name;if(!n)throw Error('unloaded '+p);if(['lava','water','fire','soul_fire','magma_block'].includes(n)){const shielded=x!==0&&z!==0&&full(b.offset(x,y,0))&&full(b.offset(0,y,z));if(!shielded)throw
+... (7196 chars; --full)
+-- output --
+CUT_PRE {"p":{"x":18,"y":9,"z":277},"n":"basalt","face":2,"hit":{"x":18.50044584775315,"y":9.731587888303768,"z":277},"pick":"stone_pickaxe","wear":119}
+CUT_POST {"p":{"x":18,"y":9,"z":277},"n":"air","before":27,"after":27,"witness":true}
+CUT_PRE {"p":{"x":18,"y":8,"z":277},"n":"cobbled_deepslate","face":1,"hit":{"x":18.50044584775315,"y":9,"z":277.1665235348958},"pick":"stone_pickaxe","wear":120}
+CUT_POST {"p":{"x":18,"y":8,"z":277},"n":"air","before":0,"after":0,"witness":true}
+STEP_ACTUAL {"at":"2026-10-18T18:16:12.073Z","p":{"x":18.50044584775315,"y":8,"z":277.5},"dim":"the_nether","hp":3,"food":16,"ground":true,"controls":{},"goal":false,"inv":[["wooden_pickaxe",1,5],["stone_pickaxe",1,121],["spruce_sapling",1,null],["cobbled_deepslate",1,null],["basalt",28,null],["netherrack",4,null]]}
+PLACED {"dest":{"x":18,"y":10,"z":277},"ref":{"x":18,"y":10,"z":276},"f":3,"n":"cobbled_deepslate","before":1,"hit":{"x":18.50044584775305,"y":10.240809331679825,"z":277}}
+STEP_ACTUAL {"at":"2026-10-18T18:16:13.275Z","p":{"x":18.50044584775306,"y":8,"z":276.66770881824914},"dim":"the_nether","hp":3,"food":16,"ground":true,"controls":{},"goal":false,"inv":[["wooden_pickaxe",1,5],["stone_pickaxe",1,121],["spruce_sapling",1,null],["basalt",28,null],["netherrack",4,null]]}
+PLACED {"dest":{"x":18,"y":8,"z":277},"ref":{"x":18,"y":7,"z":277},"f":1,"n":"basalt","before":28,"hit":{"x":18.50044584775306,"y":8,"z":277.37493385076897}}
+PLACED {"dest":{"x":18,"y":9,"z":277},"ref":{"x":18,"y":8,"z":277
+... (5166 chars; --full)

@@ -1,0 +1,14 @@
+program #10527 on p3: 6.4 s
+--- output ---
+RECEIPT Vec3 { x: 11.499999895604033, y: 67, z: -18.332291181750797 } 4.499999046325684 17 [ [ 'dirt', 2 ], [ 'sweet_berries', 3 ] ]
+PRE_EAT 4.499999046325684 17 3
+POST_EAT 4.499999046325684 19 [ [ 'dirt', 2 ], [ 'sweet_berries', 2 ] ]
+PRE_EAT 4.499999046325684 19 2
+POST_EAT 4.766665458679199 20 [ [ 'dirt', 2 ], [ 'sweet_berries', 1 ] ]
+END Vec3 { x: 11.499999895604033, y: 67, z: -18.332291181750797 } 4.766665458679199 20
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: Independent completed-output check: P1 10508 three literal10/10+terminal HP3 LOWstart; 10515 actual20m east to(-33.5,8,64.5), two cuts/stonewear96, three10/10+terminal HP3 at18:02:30. Previous capability ENABLED downstream travel; acceptance is local not w
+p2: holeEnd. P2 10519 cut ordinaryDIRT2->4, supported northstep, return and reclose4->2/20HP. New brief.py small-smoked on false/missing cells then matched literal10508/10515 arrays. P3 relay readiness still unproven; no primary wait.
+--- p3 now: (11.5, 67, -18.3) in overworld, health 4.8/20, food 20/20, alive
