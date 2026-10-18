@@ -57,8 +57,14 @@ NEAR = 20.0
 ISLAND = 150.0                   # fixed shots only while a body is this close to (0, 0): their chunks are loaded anyway
 END = "execute in minecraft:the_end run "
 END_ADVANCEMENTS = ("minecraft:story/enter_the_end", "minecraft:end/root")   # what a spectator entering the End earns
-OPTIONS = {"gamma": "1.0", "fov": "0.0", "maxFps": "60", "renderDistance": "12", "simulationDistance": "10", "chatVisibility": "2",
-           "particles": "0", "graphicsMode": "1", "pauseOnLostFocus": "false", "onboardAccessibility": "false",
+# During the fight the dragon's boss bar turns on world fog: the client fades everything to the End's near-black fog
+# colour between 5% of its render distance and 96 blocks (min(render distance, 192) / 2). So the wide shots stand
+# inside the pillar ring above the island (the dragon and pillars mostly within 50 blocks), render distance 32 pushes
+# the fog's start out to 25 blocks, and fast graphics drops the vignette.
+WIDE_R, WIDE_Y = 30.0, 94.5
+OPTIONS = {"gamma": "1.0", "fov": "0.0", "maxFps": "60", "renderDistance": "32", "simulationDistance": "10",
+           "chatVisibility": "2", "particles": "0", "graphicsMode": "0", "pauseOnLostFocus": "false",
+           "onboardAccessibility": "false",
            "skipMultiplayerWarning": "true", "tutorialStep": "none", "joinedFirstServer": "true", "bobView": "false",
            "entityDistanceScaling": "5.0", "renderClouds": '"false"', "narrator": "0", "soundCategory_master": "0.0",
            "fullscreen": "false", "guiScale": "2", "showSubtitles": "false", "realmsNotifications": "false"}
@@ -435,14 +441,14 @@ class Daemon:
                                               f"{math.floor(c[1])} {math.floor(c[2])} minecraft:air")
 
     def choose_wides(self):
-        """Up to three well-separated fixed positions round the island with the clearest view of it."""
+        """Up to four well-separated fixed positions round the island with the clearest view of it."""
         targets = [(0.0, 66.0, 0.0)]
         targets += [(25 * math.cos(a), 80.0, 25 * math.sin(a)) for a in [i * math.pi / 3 for i in range(6)]]
         targets += [(48 * math.cos(a), 88.0, 48 * math.sin(a)) for a in [i * math.pi / 3 + 0.5 for i in range(6)]]
         cands = []
         for i in range(12):
             a = i * math.pi / 6
-            c = (round(74 * math.cos(a), 1) + 0.5, 104.5, round(74 * math.sin(a), 1) + 0.5)
+            c = (round(WIDE_R * math.cos(a), 1) + 0.5, WIDE_Y, round(WIDE_R * math.sin(a), 1) + 0.5)
             if not self.air(c):
                 continue
             score = sum(self.los(c, t, skip=2.0) for t in targets) / len(targets)
@@ -452,7 +458,7 @@ class Daemon:
         for score, i, c in cands:
             if all(min((i - j) % 12, (j - i) % 12) >= 3 for _, j, _ in picked):
                 picked.append((score, i, c))
-            if len(picked) == 3:
+            if len(picked) == 4:
                 break
         self.wides = [(c, s) for s, _, c in picked] or [((0.5, 110.5, -70.5), 0.0)]
         log("wide shots: " + "; ".join(f"({c[0]:.0f},{c[1]:.0f},{c[2]:.0f}) clear {s:.2f}" for c, s in self.wides))
