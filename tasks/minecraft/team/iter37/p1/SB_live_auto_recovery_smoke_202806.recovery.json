@@ -1,0 +1,15 @@
+{
+  "trigger": "p1: (-3.5, 51, 4.5) in the_end, health 3.5/20, food 17/20, alive; controlled by execution_researcher (iteration 37)",
+  "args": [
+    "python3",
+    "tools/mc_arena.py",
+    "--sandbox",
+    "run",
+    "--player",
+    "p1",
+    "--timeout",
+    "90",
+    "/home/ubuntu/EAT-mc-run2/tasks/minecraft/team/iter37/p1/emergency_lower.js"
+  ],
+  "sha256": "fbb857ab9cd683a5964db6ce3c3ffa03e89ab362475eb3f45008692e88bf161f"
+}

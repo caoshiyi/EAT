@@ -1,0 +1,19 @@
+program #14252 on p1: 51.8 s
+--- output ---
+NEWPOD_SOURCE {"at":"2026-10-19T20:25:47.852Z","p":{"x":75.67555927102164,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":5262}
+DIRECT_NEW_POD_PLAN noPath 75
+MOVE Vec3 { x: 5.651544308795455, y: 50, z: 3.500326381426742 } 20 20
+MOVE Vec3 { x: 0.5, y: 50, z: 2.497498506612172 } 20 20
+CUT Vec3 { x: 0, y: 51, z: 3 } end_stone
+CUT Vec3 { x: 0, y: 50, z: 3 } end_stone
+MOVE Vec3 { x: 0.4999999999999907, y: 50, z: 4.5 } 20 20
+MOVE Vec3 { x: -0.3249361767371482, y: 50, z: 4.5 } 20 20
+MOVE Vec3 { x: -1.5, y: 50, z: 4.5 } 20 20
+MOVE Vec3 { x: -2.3249361767371393, y: 50, z: 4.5 } 20 20
+NEW_POD_READY {"state":{"at":"2026-10-19T20:26:39.652Z","p":{"x":-2.5513578597979687,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6302},"faces":[{"q":{"x":-3,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":-3,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":-2,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-2,"y":51,"z":4},"n":"air","full":false},{"q":{"x":-4,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-4,"y":51,"z":4},"n":"air","full":false},{"q":{"x":-3,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":-3,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":-3,"y":50,"z":3},"n":"end_stone","full":true},{"q":{"x":-3,"y":51,"z":3},"n":"end_stone","full":true}],"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052812779}}
+NEW_POD_END {"state":{"at":"2026-10-19T20:26:39.653Z","p":{"x":-2.5513578597979687,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6302},"faces":[{"q":{"x":-3,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":-3,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":-2,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-2,"y":51,"z":4},"n":"air","full":false},{"q":{"x":-4,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-4,"y":51,"z":4},"n":"air","full":false},{"q":{"x":-3,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":-3,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":-3,"y":50,"z":3},"n":"end_stone","full":true},{"q":{"x":-3,"y":51,"z":3},"n":"end_stone","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-2.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive
