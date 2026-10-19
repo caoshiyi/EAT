@@ -1,0 +1,20 @@
+program #14078 on p3: 7.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:36:28.136Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["blackstone",42,null],["stone_shovel",1,1],["netherrack",8,null],["sand",1,null],["torch",1,null],["end_stone",18,null],["end_stone",64,null],["end_stone",64,null],["stone_pickaxe",1,115],["crafting_table",2,null],["end_stone",64,null],["dirt",5,null]],"time":22116,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: -4, y: 51, z: 4 } end_stone
+CUT Vec3 { x: -4, y: 50, z: 4 } end_stone
+CUT Vec3 { x: -1, y: 51, z: 4 } end_stone
+CUT Vec3 { x: -1, y: 50, z: 4 } end_stone
+MOVE Vec3 { x: -0.6428313484152328, y: 50, z: 4.500062072650967 } 20 20
+ENDING {"at":"2026-10-19T19:36:35.484Z","p":{"x":-0.4543530062716575,"y":50,"z":4.500062067953141},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["blackstone",42,null],["stone_shovel",1,1],["netherrack",8,null],["sand",1,null],["torch",1,null],["end_stone",20,null],["end_stone",64,null],["end_stone",64,null],["stone_pickaxe",1,119],["crafting_table",2,null],["end_stone",64,null],["dirt",5,null]],"time":22256,"dim":"the_end","controls":{},"goal":false}
+--- error ---
+Error: recipientabsent
+    at p3-program-14078.js:16:433
+--- chat since this player's previous program ---
+p1: P3 Mineflayerentities.js383EXPLICIT sourceCauseId-1 =>actualDragon65RESOLVED. BearingShield8ticksmokePASS/actualrayhitsownfloor, shield215. NEXTNOWproactiveheldbetweencurrent3mSwordattacks/yawfacesDragon,pitchDOWNfloor. Clearjump retained/widenh2.8(dps), o
+p1: wn10.5HP/Wood50(9uses) enough1coldroundtrip. Absolute19:43:45. NeedonlysparePickifmorelater.
+p1: P3 P1 CLEAR-RAYNARROWjump ONLYcurrentclear/dist<=3.8/h<=2.8, keyUPafterfirsttick; own14HP; shieldoffhandordinarytoggleSMOKEPASS(clientusingflagonly). FirsthurtrequestsSHIELD+keyup+crouch andsameguardretreat, boundedmotioncapture; NOTclaimedblockimmunity. P
+p1: 1 continuesqualifiedcombat; actualsourcechecked,480sinternal/600sAPI reservesprep+retreat. Absolute19:43:45. Max2newlegalY57/58repaircolumns, normalattackenforcementunchanged. Hold50.
+p1: P3 P1 warm-capableadaptive480s batch(max2newcolumns) startsNOW: adjacent-4UP53 thenstandaboveYOURcap52 at-5/53. PreserveYOURroof52; directactual3mclearSword thenonejumpifneeded, max480s/absolute19:43:45/stopHPdrop orunrepairablerefusal/150snodamage, retrea
+p1: tEast/downowncolumn50. YOUhold50.
+--- p3 now: (-0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

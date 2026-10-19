@@ -1,0 +1,1 @@
+stop();for(const x of[-4,-1])for(const y of[51,50])await cut(v(x,y,4));await move(v(-1,50,4),6000);await preciseCenter();console.log('RECEIVE_READY',JSON.stringify(state()));bot.chat('P3 actual-1/50HP20 READYShieldreceiveNOW; P1ordinarytossShielddownthenhold0. IwaitnativeShieldbeforestage.');

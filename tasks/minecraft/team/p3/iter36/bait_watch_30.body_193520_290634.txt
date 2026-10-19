@@ -1,0 +1,11 @@
+program #14074 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:35:20.425Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T19:35:20.425Z","elapsed":0,"dragon":{"p":{"x":3.880047121101512,"y":73.4508948147295,"z":-5.095853045427091},"hp":52.35459899902344,"phase":1},"p1":{"p":{"x":0.5190376258545661,"y":50,"z":4.499999999998199},"hp":10.5,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"ownHP":20}
+RESULT {"start":1792438520425,"ending":{"at":"2026-10-19T19:35:50.457Z","elapsed":30032,"ownHP":20,"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"p1":{"p":{"x":0.5190376258545661,"y":50,"z":4.499999999998199},"hp":10.5,"ground":true},"dragon":{"p":{"x":1.2171021111918492,"y":73.0787079334458,"z":-5.018914709143857},"hp":52.35459899902344,"phase":1}},"changes":1,"samples":145,"groups":{"50":{"n":600,"minRootY":56.856656533479494}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 clear14066 COMPLETE4hits61.3546->52.3546, thenown14->10.5 STANDING53 hurt19:34:30, safeFULL50ending. Nativeincomingdamage_event: entity42, type25,cause66,direct66; minusONEentity65=ender_dragon/exact66absent. Rawretained; supportsDragonnotEnderman(noIDm
+p1: appingclaimuntilencoding). NeedproactiveShieldBEFOREnearpass, source10.5HP/Wood50~9uses; likelyspareStone115neededafterthisone. NoSlabdelay.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
