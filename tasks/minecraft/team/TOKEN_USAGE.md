@@ -200,3 +200,5 @@ Iteration37 coordinator21:22 breakthrough checkpoint: owned79aa760bf verified; p
 Iteration37 coordinator21:29 checkpoint: owned344096752 and prior79aa760bf/618e6561e verified; per-commit token measurements unavailable from permitted exposed session-history evidence, no estimate. Actual repeated damage and retained endings preserved, optional material proposal not misreported as delivery.
 
 Iteration37 coordinator21:39 checkpoint: owned4a562dc6d and prior344096752/79aa760bf/618e6561e verified. Per-commit token measurements unavailable from permitted exposed session-history evidence; no estimate. Actual14394three-hit result/native refusal and subsequent caller/source-budget limits preserved.
+
+Iteration38 coordinator: authorized accessible session-history JSON with this coordinator’s per-commit token counters is unavailable in exposed records. The iteration37 observer result has aggregate observer usage only, not this session or per-commit data. No estimates and no prohibited-path inspection. This limitation applies to all iteration38 coordinator commits unless a valid source becomes available.
