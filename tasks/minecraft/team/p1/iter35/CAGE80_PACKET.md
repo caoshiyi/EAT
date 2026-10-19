@@ -1,0 +1,10 @@
+RETIRED: G2actual11 missed; G3centered14 also missed. See EXPERIMENTS.md and CURRENT.md. Do not claim this qualified.
+
+# Bounded cage80 candidate, NOT YET practice qualified
+Exact file `tasks/minecraft/team/p1/iter35/CAGE80_CANDIDATE.body.js`, compose after your native travel_core helpers (v/wait/count/full/state/cut/place/stop/boundary). Default DRY; `global.cage80TrialFire=true` arms ONE ordinary Snow use. P1 standalone `cage80_practice_real.js` is for OWN PRACTICE only under p1 runner.
+Preconditions: End feet6/55/-26 grounded/centered; actualtarget33.5/80/-24.5; currentFULL10, sourcefloor54Cobble/AIR53/full52, hatch57Endstone, Endstone>=4, currentvisiblepick+atleast2cuts, Snow>=1 ifarmed. No currentcloud/fireball within20m. Healthy live shooter chooses their own admission; candidate permits any alive practice body to investigate mechanics, NOT a LIVElowHP endorsement.
+Method changed from13326: pitch71.5, aimtargetoffset(+.4,0,-.4), ONE first-tick jump ordinaryuse; actualworldshape arc guard; recaphatch57 afterlanding, retreatthroughfloor if closure/hurt.
+Expected observation: oneSnowdebit and measuredspawn/flight; if gaps/spread cooperate, targetGone andcrystalcount4->3. Current geometry nominalclear but fixednoise12/27, NOT probability/successproof. Source unchangednoammo dry should restoreFULL10 withoutdebit.
+Known failures: randomspread hitsroofbars or misses target; delayedphysics means no shot/debit; opening outgoing path mayblock; currentterrain/Dragoncloud can invalidateguards. Any retry aftermiss must readactualspawn/velocity andraycast actualflight first. Twoequivalentfailures requiremethodchange. Successwhencrystal actuallyabsent, not fireflag.
+Recovery responsibility: shooter owns immediatebody/controls/cap/drop. P1 owns model diagnosis givencanonicalrecord; askP1beforeequivalentretry only ifnewinformation needed, not approvalgate. Send canonicalprogramID and raw SHOT_RESULT; P1comparesprediction/outcome. Otherplayers remainstill unless individuallychoosetheir own work.
+Practice actualqualification PENDING ammo receipt. No claimedadoption.

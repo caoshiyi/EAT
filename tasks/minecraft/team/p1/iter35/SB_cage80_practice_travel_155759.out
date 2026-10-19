@@ -1,0 +1,37 @@
+[sandbox] program #13 on p1: 6.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:57:59.672Z","p":{"x":0.5174061963746174,"y":55,"z":-14.499888780961271},"hp":16.118900299072266,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["cobblestone",55,null],["stone_pickaxe",1,0],["stone_shovel",1,1],["sand",1,null],["end_stone",47,null],["snowball",1,null],["stone_pickaxe",1,129],["end_stone",62,null],["crafting_table",1,null],["sweet_berries",2,null],["gravel",1,null]],"time":3475}
+MOVE Vec3 { x: 8.247564647262726, y: 55, z: -14.494663314869001 } 16.118900299072266 17
+MOVE Vec3 { x: 8.500225116924419, y: 55, z: -25.221131999152668 } 16.118900299072266 17
+MOVE Vec3 { x: 6.5, y: 55, z: -25.515052669425213 } 16.118900299072266 17
+PLACE Vec3 { x: 7, y: 55, z: -26 } cobblestone
+PLACE Vec3 { x: 7, y: 56, z: -26 } cobblestone
+SECURED [
+  { q: Vec3 { x: 6, y: 54, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 6, y: 57, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 7, y: 55, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 7, y: 56, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 55, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 56, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 55, z: -25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 56, z: -25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 55, z: -27 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 56, z: -27 }, n: 'end_stone', full: true }
+]
+PRACTICE_CAGE_READY {"at":"2026-10-19T15:58:06.300Z","p":{"x":6.5,"y":55,"z":-25.515052669425213},"hp":16.118900299072266,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["stone_shovel",1,1],["stone_pickaxe",1,0],["cobblestone",53,null],["sand",1,null],["end_stone",47,null],["snowball",1,null],["stone_pickaxe",1,129],["end_stone",62,null],["crafting_table",1,null],["sweet_berries",2,null],["gravel",1,null]],"time":3615} [
+  { q: Vec3 { x: 6, y: 54, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 6, y: 57, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 7, y: 55, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 7, y: 56, z: -26 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 55, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 56, z: -26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 55, z: -25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 56, z: -25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 55, z: -27 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 56, z: -27 }, n: 'end_stone', full: true }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (6.5, 55, -25.5) in the_end, health 16.1/20, food 17/20, alive

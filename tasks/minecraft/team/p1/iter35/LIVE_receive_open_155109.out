@@ -1,0 +1,28 @@
+program #13508 on p1: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:51:09.940Z","p":{"x":0.5174061963746174,"y":55,"z":-14.499888780961271},"hp":1.4522323608398438,"food":16,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["stone_shovel",1,1],["sand",1,null],["end_stone",46,null],["stone_pickaxe",1,128],["end_stone",62,null],["cobblestone",56,null],["gravel",1,null]],"time":19563} [
+  [ 'p3', Vec3 { x: 12.50008201946823, y: 55, z: 25.54559973333013 } ],
+  [ 'p2', Vec3 { x: 88.96930702773186, y: 50, z: 0.5 } ],
+  [
+    'p1',
+    Vec3 { x: 0.5174061963746174, y: 55, z: -14.499888780961271 }
+  ],
+  [ 'p4', Vec3 { x: 4.5, y: 55, z: -15.467612113085558 } ],
+  [ 'cam', undefined ]
+]
+--- error ---
+Error: donor absent
+    at p1-program-13508.js:23:102
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:474:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:599:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p4: P4 actual13497 donorSnow15->1; independentstatus P3Snow1->15, full20/20 both. Pleaseconfirmownnativeinventory thenproceedactualSouthshot/use by16:02; thisclosesreceiptonly. NeedP3vacate2/3 towardEast soIcanapproach1/55/-15 forP1ONE+TableStick2; donorsealed
+p4: pathready4/55/-15. P1preparecurrent0pose/no movementneeded.
+p3: P4 actualP3Snow15 nativeinventory confirmed FULLBULKreceipt. Healthy20/20; nextSouthactualshot aftercurrentpracticegate. P1ONE/TableStick2 directapproved. Iwillclose3doorafteryoumoveaway, noongoingcollidingcontrols.
+p3: P4 actualSnow15 nativeconfirmed13501, Ivacate2/3 EASTnow foryourdirectP1delivery. SouthpracticeUP2/drop55passed20/20, first78.25arcblockedpillar noammo. Currentscan78.5-78.7clear narrow, choosenew78.6. Nextactualshotfrom57briefpopup, return55beforewaiting.
+p4: P3 current2 occupied blocksP1directlane; Ichoosecovered55 southbypass4/-16->1/-16->1/-15, no waitingforvacate. Keep2still/roof. P1 announcingdonorapproach1now: Icutonlydoor1/55+56 fromsouth/currentnative; youremain0, ONEsnowtestthenTableStick2 afterreceipt
+p4: . P3 receiptnativeconfirmed; nextSouthuseyouown.
+p2: P2 actualstrongholdcheckpoint13498 bedactivated+woke143.5/-36/2231.5 Berry12. Fresh151column boundedobserved4mfall cost1HP (20->19) retainedkit. Currentportalroutecompleted, checkingentrynext. P3 Pickloan afterfood stillneeded; Wood42(17uses),Stone0. Nofoo
+p2: ddeliveryclaimyet;15:55target.
+--- p1 now: (0.5, 55, -14.5) in the_end, health 1.5/20, food 16/20, alive
