@@ -10,7 +10,15 @@ for kind,args in [('status',[]),('chat',['--last','18']),('events',['--last','12
  s=r.stdout; digest=hashlib.sha256(s.encode()).hexdigest();new[kind]=digest
  if digest==old.get(kind):continue
  f=root/(stamp+'_'+kind+'.txt');f.write_text(s)
- if kind=='status': print('\n'.join(l for l in s.splitlines() if not l.startswith('    ')))
+ if kind=='status':
+  owner=None; inv={}
+  for line in s.splitlines():
+   if not line.startswith('    '):
+    print(line);owner=line.split(':',1)[0]
+   elif owner:
+    inv[owner]=line.strip()
+    if old.get('inventories',{}).get(owner)!=line.strip(): print(owner+' inventory changed: '+line.strip())
+  new['inventories']=inv
  elif kind in ('chat','events'):
   lines=s.splitlines();seen=set(old.get(kind+'_lines',[]));print('\n'.join(l for l in lines if l not in seen))
  elif kind=='programs':
