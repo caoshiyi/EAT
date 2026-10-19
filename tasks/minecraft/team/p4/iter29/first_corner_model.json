@@ -1,0 +1,197 @@
+{
+  "censusAt": "2026-10-19T04:15:34.057Z",
+  "templateHeight": 76,
+  "rows": [
+    {
+      "name": "firstFloor_refWest31_76_-26",
+      "body": [
+        30.5,
+        76,
+        -24.5
+      ],
+      "eye": [
+        30.5,
+        77.62,
+        -24.5
+      ],
+      "aim": [
+        31.001,
+        76.5,
+        -25.5
+      ],
+      "distance": 1.5828458547818267,
+      "modelFirstHit_t_cell_axisNormal": [
+        0.9980039920159657,
+        [
+          31,
+          76,
+          -26
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "cornerRef32_77_-27_FROM_CENTER_blocked",
+      "body": [
+        30.5,
+        77,
+        -25.5
+      ],
+      "eye": [
+        30.5,
+        78.62,
+        -25.5
+      ],
+      "aim": [
+        32.001,
+        77.5,
+        -26.5
+      ],
+      "distance": 2.1230640593255785,
+      "modelFirstHit_t_cell_axisNormal": [
+        0.33311125916056017,
+        [
+          31,
+          78,
+          -26
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "cornerRef32_77_-27_FROM_LEAN",
+      "body": [
+        30.5,
+        77,
+        -26.15
+      ],
+      "eye": [
+        30.5,
+        78.62,
+        -26.15
+      ],
+      "aim": [
+        32.001,
+        77.5,
+        -26.5
+      ],
+      "distance": 1.9052299073865087,
+      "modelFirstHit_t_cell_axisNormal": [
+        0.9993337774816804,
+        [
+          32,
+          77,
+          -27
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "step2Floor_refNewCorner_AFTER_RECENTER",
+      "body": [
+        30.5,
+        77,
+        -25.5
+      ],
+      "eye": [
+        30.5,
+        78.62,
+        -25.5
+      ],
+      "aim": [
+        31.001,
+        77.5,
+        -26.5
+      ],
+      "distance": 1.5828458547818267,
+      "modelFirstHit_t_cell_axisNormal": [
+        0.9980039920159657,
+        [
+          31,
+          77,
+          -27
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    }
+  ],
+  "playerBodyIntersectsCornerFillWhileLean": false,
+  "playerBodyIntersectsStep2FloorWhileLean": true,
+  "playerBodyIntersectsStep2FloorAfterRecenter": false,
+  "blockBudget": {
+    "step1floor": 1,
+    "cornerFill": 1,
+    "step2floor": 1,
+    "total": 3
+  },
+  "transferTo58": {
+    "firstGoal": [
+      30,
+      59,
+      -26
+    ],
+    "firstFloor": [
+      30,
+      58,
+      -26
+    ],
+    "firstRef": [
+      31,
+      58,
+      -26
+    ],
+    "afterFirstBody": [
+      30.5,
+      59,
+      -25.5
+    ],
+    "leanBody": [
+      30.5,
+      59,
+      -26.15
+    ],
+    "cornerFill": [
+      31,
+      59,
+      -27
+    ],
+    "cornerRef": [
+      32,
+      59,
+      -27
+    ],
+    "thenRecenter": [
+      30.5,
+      59,
+      -25.5
+    ],
+    "secondFloor": [
+      30,
+      59,
+      -27
+    ],
+    "secondGoal": [
+      30,
+      60,
+      -27
+    ]
+  },
+  "limits": [
+    "Actual census validates upper template refs; Y58/59 refs MUST be freshly checked, not extrapolated as world fact.",
+    "Assumed body.6x1.8/eye1.62, hypothetical floors; no native lean, block placement or movement qualified.",
+    "Lean only creates sight for corner-fill. RECENTER before placing next floor, which otherwise intersects player body.",
+    "P2alone tests native sneak<=.65m, current visible face<=4.5, actual block receipt, supported landing and protected return."
+  ]
+}

@@ -1,0 +1,122 @@
+program #11709 on p4: 0.7 s
+--- output ---
+P4_CURRENT_AUDIT {"at":"2026-10-19T04:36:29.754Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2]],"controls":{},"goal":null,"faces":[{"q":{"x":-1,"y":54,"z":-25},"name":"grass_block","full":true},{"q":{"x":-1,"y":57,"z":-25},"name":"grass_block","full":true},{"q":{"x":0,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":0,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-26},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-26},"name":"dirt","full":true}]}
+P4_CURRENT_AUDIT {"at":"2026-10-19T04:36:29.905Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2]],"controls":{},"goal":null,"faces":[{"q":{"x":-1,"y":54,"z":-25},"name":"grass_block","full":true},{"q":{"x":-1,"y":57,"z":-25},"name":"grass_block","full":true},{"q":{"x":0,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":0,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-26},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-26},"name":"dirt","full":true}]}
+P4_CURRENT_AUDIT {"at":"2026-10-19T04:36:30.155Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2]],"controls":{},"goal":null,"faces":[{"q":{"x":-1,"y":54,"z":-25},"name":"grass_block","full":true},{"q":{"x":-1,"y":57,"z":-25},"name":"grass_block","full":true},{"q":{"x":0,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":0,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":55,"z":-25},"name":"dirt","full":true},{"q":{"x":-2,"y":56,"z":-25},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-24},"name":"dirt","full":true},{"q":{"x":-1,"y":55,"z":-26},"name":"dirt","full":true},{"q":{"x":-1,"y":56,"z":-26},"name":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T04:36:30.404Z",
+ "p": {
+  "x": -0.5833627947121038,
+  "y": 55,
+  "z": -24.48062359791109
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   2
+  ]
+ ],
+ "controls": {},
+ "goal": null,
+ "faces": [
+  {
+   "q": {
+    "x": -1,
+    "y": 54,
+    "z": -25
+   },
+   "name": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -1,
+    "y": 57,
+    "z": -25
+   },
+   "name": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 0,
+    "y": 55,
+    "z": -25
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 0,
+    "y": 56,
+    "z": -25
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -2,
+    "y": 55,
+    "z": -25
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -2,
+    "y": 56,
+    "z": -25
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -1,
+    "y": 55,
+    "z": -24
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -1,
+    "y": 56,
+    "z": -24
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -1,
+    "y": 55,
+    "z": -26
+   },
+   "name": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": -1,
+    "y": 56,
+    "z": -26
+   },
+   "name": "dirt",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-0.6, 55, -24.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: audit.js
