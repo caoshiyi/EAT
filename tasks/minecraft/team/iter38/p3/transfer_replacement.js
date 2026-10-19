@@ -1,0 +1,7 @@
+const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
+try{
+ let e,start=Date.now();while(Date.now()-start<30000){e=bot.players.p2?.entity;if(e&&e.position.y===50&&e.position.distanceTo(bot.entity.position)<1.8)break;await wait(2);}
+ if(!e||e.position.y!==50||e.position.distanceTo(bot.entity.position)>=1.8)throw Error('RECIPIENT_NOT_NATIVE');
+ for(const [name,n] of [['stone_axe',1],['stone_pickaxe',1],['end_stone',16]]){const i=bot.inventory.items().find(i=>i.name===name&&i.count>=n);if(!i)throw Error('FUNDS '+name);let before=count(name);await bot.look(0,-1,true);await wait(4);await bot.toss(i.type,null,n);await wait(8);console.log('DONOR_RECEIPT',JSON.stringify({at:new Date().toISOString(),name,before,after:count(name),p2:e.position}));if(count(name)!==before-n)throw Error('DONOR_REPICK '+name);}
+ bot.chat('P3 replacement transfer nativeDONOR AXE0/PICK0/E107; P2 verify recipient and deliverP1 now. Completion pending P1receipt. Prior itemlocations source actual14483 (chat14480 typo); roof tools59/60, lowgravel2 ownpod perP1.');
+}catch(e){console.log('TRANSFER_FAIL',String(e));}finally{console.log('END',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}

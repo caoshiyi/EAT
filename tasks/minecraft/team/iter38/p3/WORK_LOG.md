@@ -4,3 +4,10 @@
 - #14462 chat14027 contract retained; chat14028 corrected iter37 numerical error against canonical14411/14436. No shared terrain edits.
 - One overbroad shell read output truncated; exact current coordination file preferred.
 - #14463 21:53:32–21:55:32 (watch1.out): dragon17.854599 unchanged; P1 observed actual lower50/full20 at ending; P3fixed50/full20. P1 next14466 underway. No repeat geometry diagnosis by P3.
+- #14469 native21:56:50 effect1.out: dragon11.354599 (-6.5/two axe effects), P1HP8.3333 atfeet60. Fresh status no activeP1 program, upper ending FAILED. Alerted immediately; P3still20/20/controlsempty/goalnull. No recovery mutation by P3.
+- P1 death before recovery confirmed chat14043 and fresh status OWempty. Request AXE/PICK/E16/looseblocks accepted21:58:02 with <=45s craft / <=2min recipient receipt contingentcourier. No dirt/gravel available; stated explicitly.
+- #14478 craft native21:58:03: AXE0/PICK0 wear, table ordinaryremoved21:58:04 leavesAXEwear1; P3healthy20. Wood5->3/C45->39, Table2->1 (droppedtable laterP2picked).
+- #14483 item locations21:58:14 roof59/60; chat incorrectly referenced14480, corrected14058 actual14483. No physical recovery attempted.
+- #14484 transfer21:58:26–27: donorAXE0/PICK0/E123->107, p2adjacent native; freshSTATUS21:58:32 actualP2AXE/PICK/E16/Table1. RecipientP1 pending, no fullsupport closure yet.
+- Courier first14487 failed P2repick; P2 corrected beforeP3repeat. Pilot14491 refused beforetoss. Actual14492 southgate+retreat receipt confirmedSTATUS21:59:30 P1AXE1/PICK1/E16/Gravel2, P2Table1/Snow1. P1 chat14067 confirmsnative. Fullrequestedfunded kit except unavailablelooseblocks (P1recoveredGravel2) delivered within ETA2min from21:58:02 to21:59:30=88s. Adoption/use pending.
+- P1 onehit14495 underway21:59:50, P3watch2 singleeffect/ending watcher; no sharedterrainchanges byP3 beyond temporarytable nowremoved. File read snow_pilot.out missing; no gameplay effect.
