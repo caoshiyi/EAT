@@ -74,3 +74,35 @@ Owner: p3 only; no agents. Started live 11:42 UTC. Read full program.md and requ
 
 -12536 actual remainingSword+Log receipt at22/65/109. SAME-call3DOWN/cap ended22.5/62/109.608, full10x3,20HP20food, WoodPickwear2/WoodShovelwear7/StoneSword0/Log1/Dirt2/Stick1/Slab1. Sapling intentionally unpursued notclaimedrecovered. Recovery whole-useful-kit acceptance PASSED; body/toolretention restored after earlierloss.
 -12540 publicmessage then food_hop.js launched fromsealedsource; currentruntime SOURCEguard, convertLog1→4Planks,3UP, selectactualstableburrow20–25m foodward viafresh getPathTo success, boundedgo +samecall bury. Prewritten emergency remainsavailable if callbackerror interruptsending.
+
+## Productive hop retention after interface correction
+-12541 actual no-route-receipt; ordinary getPathTo returned partial for10 candidates. SAME-call reburial retainedbody/kit, no new death.
+-12545 read-only generator smoke from hypotheticalsurface22.5/65/109.5 tosame43/64/122:19partials then SUCCESS26nodes/cost32.97. This refutes own assumed route rejection, not terrain impossibility. Adopted P2 permittedpublic generator pattern.
+-12549 actual hop22/65/109→43/64/122→buried43.556/61/122.5 FULL10x3/20HP20food withkit.
+-12551 nextSOURCE retainedkit; finalgenerator6timeouts then59/63/138success; actualended59.526/60/138.5 FULL10x3/20HP20food. Timeouts explicitly not noPath.
+-12557 nextSOURCE retainedkit; hopto83/63/143 success thenburied83.5/60/143.499 FULL10x3/20HP20food, Shovelwear23. Three actual foodward hops with retained endings/nextsources,~61m east +34mZ fromrecoverypod. No food receipt yet.
+-Owned summarize.py smalltest onknownsuccess/failure preserved failures andfullfaces; initial SOURCE parse missed trailing time tag (null). Corrected raw_decode forleadingJSON; no gameplay effects.
+-Running ONE native berryharvest test with samecallnearbybury before scaling.
+
+## Actual food supply and use
+-12558 no plant stance; SAME-call ending retainedhealthybody.12561 actual40mIDsearch found mature97/65/149 and100/64/152.12562 ID andpredicate24m searches BOTH[] despiteactual<24m positions. This is search-radius/interface discrepancy, not mature-plantabsence. Changed to48mIDcensus + explicit currentage/distancefilter, no internalcauseclaim.
+-12564 native97/65/149 activationage3→1, actualberries0→3; ended97.5/64/147.5 full10x3/20HP20food.
+-12574 scaled12plants/45s budget, actualberries3→27, SAME-call ending131.504/64/159.5 full10x3/HP18 food17, alltools retained. BODY_HURT observed duringdiagonalfieldmoves, nearhostiles[]14m in samples; damagecause notuniquelyisolated. Not injury-free.
+-12580 nextSOURCE retained27berries; actual nativeconsume2, food17→19→20/berries27→25, HP18→18.53 withfullending. Later freshstatus confirmed actualHP20/food17 ashealingconsumedfood. Thus food RECEIPT+USE+retention acceptance passed; no dragon effect.
+-Deliveryoffer actual12berriesP4+7P2, budgetthrough12:22 pendingexplicitrecipientavailability. No promise/toss/receipt yet. Proposedsharedchest alternative tootheroperators' repeatedphysicalrecollection; not adopted evidence.
+
+## Donation agreement and bounded approach
+-12589 actualselfuse2 moreberries25→23, HP20food17→20; sealedsource retained. All navigation since working foodwardhops has allowSprinting=false; no comparative proof againstsprint.
+-P4 explicitly ACCEPTED12berries, fixed61.5/65/109.7 body/windowavailable through12:22. P2 revisedagreement19berriesFIRSTtoP2 at61.5/65/108.5, relays12toP4 usingtestedpose; P3 accepted. No sending/receipt yet.
+-12592 firstwesthop actual131/67/159→109/67/148→buried109.5/64/148.5 FULL10x3/20HP20food. Actualberries23→26 due3latefielddrops onroute; notcraft/evalcredit.
+-Currentreceiverapproach planning target EASTcell62/65/108 with freshcolumninspection, donorbackx62.7,z108.3 westlowaimsamez couldavoidP4 pickupzone. This geometric proposal UNEXECUTED. ONEberrytest and P2 actualreceipt beforebulk19. Deadline12:22 honest; do notsilentlyextend ifmissed. Independentforgeupgrade targetremainsproductive evenifdeliverygatefails.
+
+## Failed delivery, fifth death, and current safe body
+-12600 secondrecipienthop SOURCE20HP20food/26berries at109/64/148, NIGHT17104. DuringUP Skeleton+Zombie becameclose; HP20→17.13→14.9 andknockback. Unqualifiedplacement afterknockback refusedbyray; no-local-ending error returned exposed. Did NOTprotectbodycontinuously.
+-ActualfourthP3 death12:22:05 Zombie107.3/67/146.3; food26/fullkit lost. Delivery12:22 FAILED,noONEberrytest/toss/recipientreceipt. Publicretirement12607; no renewedrendezvous. P2independentcurrentfoodrescue/harvest assigned; don'tduplicateblindcorpseapproach.
+-12604 emergency launched too late, SOURCE alreadyHOME20/20EMPTY; pathagain endedexposedroof9.5/70/93.56/Dirt2. ActualfifthP3 death12:23:32 Skeleton9.3/70/93.3, Dirt2lost.12611 guard caughtchangedHOMEspawn, nointendedroofdigexecuted.
+-Changedassignment to immediatebodyending + strongholdsurface→bed evidence (P2review40). Beforeackread, atomicnearHOMEportalprobe12613→12617→12620: reachedcurrentframe/door, noNetherentry.12623 currentALL6interiorAIR, completeobsidianframe; extinctioncauseunisolated, noactiveportalwithin48. No inferencefromold6portalblocks12613.
+-12626 actualprotectiveending: go8/68/89 (freshadmitted), HAND3cobbleDOWN noharvestyield, spendactualPlank1 cap67. END8.5/65/89.47920HP20foodEMPTY/full10x3; allcontrolsfalsegoalnull.12641 NEXT_SOURCE retainedsamebody/empty/roofplank; this is current, notfoodcarrier. HOMEbedstillintact butlastactualspawnwas7.5/67.5625/83.5 afterchangedroofgeometry.
+-STRONGHOLD_DESCENT.md delivered12:32: fullraw7773/7798/7875 + P4ENTRYreview +bounded16/20/28search. Noqualifiedcurrentsurfacechainfound; concretecolumn142/2231 nexttobedfoot142/-36/2232 isUNEXECUTEDproposal, countS+36cuts; alternativehistoricalNetherexit163/-26/2230alreadyunderground.
+-12641 independentP3publicentitysampleP1id221 exact4.4869007576/59.4725363507/-2.3, velY-.025/onGroundtrue/height1.8. ReportedtoP1; doesnotisolateforced-move cause.
+-P4resetrequestack P3SBidle/preserved; P4subsequentlyCANCELLEDbefore reset. No ownSBreset/test afterSB3.

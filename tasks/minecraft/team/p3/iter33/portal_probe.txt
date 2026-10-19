@@ -1,0 +1,21 @@
+program #12613 on p3: 14.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:24:50.006Z","p":{"x":7.5,"y":67.5625,"z":83.5},"hp":20,"food":20,"ground":true,"inv":[]} dim overworld
+PORTALS [
+  Vec3 { x: 7, y: 68, z: 91 },
+  Vec3 { x: 6, y: 68, z: 91 },
+  Vec3 { x: 7, y: 69, z: 91 },
+  Vec3 { x: 6, y: 69, z: 91 },
+  Vec3 { x: 7, y: 70, z: 91 },
+  Vec3 { x: 6, y: 70, z: 91 }
+]
+PLATFORM {"at":"2026-10-19T12:24:51.659Z","p":{"x":6.1798613758439895,"y":68,"z":82.2316814823437},"hp":20,"food":20,"ground":true,"inv":[]}
+ROOF {"at":"2026-10-19T12:24:52.963Z","p":{"x":7.402600358825279,"y":68.875,"z":82.30343321559057},"hp":20,"food":20,"ground":true,"inv":[]}
+ROOF {"at":"2026-10-19T12:24:54.265Z","p":{"x":8.513982420022261,"y":70,"z":82.36851372649993},"hp":20,"food":20,"ground":true,"inv":[]}
+PORTAL_APPROACH {"at":"2026-10-19T12:25:04.332Z","p":{"x":5.327864677514682,"y":70,"z":90.47605434705436},"hp":20,"food":20,"ground":true,"inv":[]} overworld
+END {"at":"2026-10-19T12:25:04.332Z","p":{"x":5.327864677514682,"y":70,"z":90.47605434705436},"hp":20,"food":20,"ground":true,"inv":[]} dim overworld
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (5.3, 70, 90.5) in overworld, health 20/20, food 20/20, alive

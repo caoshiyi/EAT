@@ -1,0 +1,20 @@
+program #12626 on p3: 37.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:28:05.381Z","p":{"x":6.511590160855986,"y":68,"z":91.54045314173209},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]}
+ADMISSION Vec3 { x: 8, y: 68, z: 89 } true
+GO_END arrived Vec3 { x: 8, y: 68, z: 89 } {"at":"2026-10-19T12:28:06.657Z","p":{"x":8.5,"y":68,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]}
+CUT Vec3 { x: 8, y: 67, z: 89 } cobblestone {"at":"2026-10-19T12:28:17.761Z","p":{"x":8.5,"y":67,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]}
+DOWN_INTERIOR {"state":{"at":"2026-10-19T12:28:18.111Z","p":{"x":8.5,"y":67,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]},"near":[]}
+CUT Vec3 { x: 8, y: 66, z: 89 } cobblestone {"at":"2026-10-19T12:28:29.246Z","p":{"x":8.5,"y":66,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]}
+DOWN_INTERIOR {"state":{"at":"2026-10-19T12:28:29.596Z","p":{"x":8.5,"y":66,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]},"near":[]}
+CUT Vec3 { x: 8, y: 65, z: 89 } cobblestone {"at":"2026-10-19T12:28:40.725Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]}
+DOWN_INTERIOR {"state":{"at":"2026-10-19T12:28:41.076Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["spruce_planks",1,null]]},"near":[]}
+PLACE Vec3 { x: 8, y: 67, z: 89 } spruce_planks {"at":"2026-10-19T12:28:41.778Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+ENDING {"at":"2026-10-19T12:28:41.778Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[],"faces":[{"q":{"x":8,"y":64,"z":89},"n":"cobblestone","full":true},{"q":{"x":8,"y":67,"z":89},"n":"spruce_planks","full":true},{"q":{"x":9,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":9,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":88},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":88},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T12:28:42.080Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[],"faces":[{"q":{"x":8,"y":64,"z":89},"n":"cobblestone","full":true},{"q":{"x":8,"y":67,"z":89},"n":"spruce_planks","full":true},{"q":{"x":9,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":9,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":88},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":88},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T12:28:42.381Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[],"faces":[{"q":{"x":8,"y":64,"z":89},"n":"cobblestone","full":true},{"q":{"x":8,"y":67,"z":89},"n":"spruce_planks","full":true},{"q":{"x":9,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":9,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":65,"z":89},"n":"diorite","full":true},{"q":{"x":7,"y":66,"z":89},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":65,"z":88},"n":"diorite","full":true},{"q":{"x":8,"y":66,"z":88},"n":"cobblestone","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 65, 89.5) in overworld, health 20/20, food 20/20, alive

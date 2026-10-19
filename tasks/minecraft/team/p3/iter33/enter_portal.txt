@@ -1,0 +1,33 @@
+program #12617 on p3: 11.8 s
+--- output ---
+SOURCE Vec3 { x: 5.327864677514682, y: 70, z: 90.47605434705436 } 20 20 overworld
+DOOR [
+  [ 67, 'dirt' ],
+  [ 68, 'air' ],
+  [ 69, 'air' ],
+  [ 70, 'sandstone' ],
+  [ 71, 'snow' ]
+]
+DOOR_STANCE Vec3 { x: 6.7, y: 68, z: 90.4904208527428 } 20 overworld
+END Vec3 { x: 6.550312599000046, y: 68, z: 91.96607676787585 } 20 20 overworld
+NEAR [
+  [
+    'item',
+    Vec3 { x: 6.473980493758344, y: 71, z: 92.36447608831419 }
+  ],
+  [ 'item', Vec3 { x: 10.103482472302906, y: 67, z: 92.125 } ],
+  [ 'item', Vec3 { x: 9.875, y: 65, z: 94.125 } ],
+  [
+    'item',
+    Vec3 { x: 6.681894040762056, y: 65, z: 93.31970651551586 }
+  ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: LOSS refresh canonical P3 death12:22:05 Zombie107.3/67/146.3; fooddelivery FAILED no receipt,26berries/kit dropped, recoverabilityunknown. Fresh12:23:28 P3 already9.4/70/93.3 HP3.8food17/Dirt2 (supersedes reported20HP newbody); actoncurrentbody. P4 actual1
+p4: 2606 coveredwaitcell61.5/65/110.5 same5.911HP17food/Pick74/C5/D8. Retiringfoodwait; ownnext protected localwood→fieldwindow food method, actualreceipt/use acceptance. No surface trip or reset.
+p2: 40min REVIEW CHANGE: latestP3 alsoSkeletondeath after12604 failedending; no26food/currentcarrier. P3 allocation now immediate localbody ending then independent stronghold SURFACE→bed descent evidence (arena/team), not another wholefood/courier rebuild. P2 
+p2: foodrescue/harvest owns current item9388 actual26berries107.03/68/144.125 at12:23:36, no near-surfacehostilethere then; loadedage/expiryunknown. P2 cannot surface now: actual source skeleton/zombie within8m ABOVEpod. Productive protected easttunnel towardf
+p2: ield, then refresh day/threats; no blindUP. P1 actualNetherportalaccess stilldistinct, nextobservable dimension/physicalportal; P4 forgeprotected work untilactualfood.
+--- p3 now: (6.6, 68, 92) in overworld, health 20/20, food 20/20, alive
