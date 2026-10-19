@@ -1,0 +1,92 @@
+[sandbox] program #22 on p4: 21.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:26:24.238Z","p":{"x":71.50033906599491,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13630,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: 45, y: 50, z: 0 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:30.617Z","p":{"x":45.601000576237894,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13750,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+PATH_STATUS Vec3 { x: 44, y: 50, z: 3 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:32.120Z","p":{"x":44.432326323665535,"y":50,"z":3.5},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+PATH_STATUS Vec3 { x: 7, y: 50, z: 3 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:41.138Z","p":{"x":7.5,"y":50,"z":3.5},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13970,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+PATH_STATUS Vec3 { x: 6, y: 50, z: 2 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:41.839Z","p":{"x":6.741450268070418,"y":50,"z":2.7414502680704924},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13990,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+PATH_STATUS Vec3 { x: 5, y: 50, z: 2 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:42.539Z","p":{"x":5.688443913560054,"y":50,"z":2.539537680261442},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":13990,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+PATH_STATUS Vec3 { x: 5, y: 50, z: 0 } success
+ROUTE_WORLD {"at":"2026-10-19T16:26:43.441Z","p":{"x":5.491203414762852,"y":50,"z":0.617962890343216},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":14010,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+FAILURE Error: Server refused to place basalt at (5, 50, 0): the block is still air
+ENDING {"at":"2026-10-19T16:26:44.897Z","p":{"x":5.495586577328727,"y":50.7967356006687,"z":0.4936522922377403},"hp":20,"food":20,"ground":false,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":14050,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":5,"y":49,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":52,"z":0},"n":"air","full":false},{"q":{"x":6,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":6,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":50,"z":1},"n":"air","full":false},{"q":{"x":5,"y":51,"z":1},"n":"air","full":false},{"q":{"x":5,"y":50,"z":-1},"n":"cobblestone","full":true},{"q":{"x":5,"y":51,"z":-1},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T16:26:45.045Z","p":{"x":5.495586577328727,"y":50,"z":0.4936522922377403},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":14050,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":5,"y":49,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":52,"z":0},"n":"air","full":false},{"q":{"x":6,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":6,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":50,"z":1},"n":"air","full":false},{"q":{"x":5,"y":51,"z":1},"n":"air","full":false},{"q":{"x":5,"y":50,"z":-1},"n":"cobblestone","full":true},{"q":{"x":5,"y":51,"z":-1},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T16:26:45.195Z","p":{"x":5.495586577328727,"y":50,"z":0.4936522922377403},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,5],["cobblestone",5,null],["netherrack",10,null],["snowball",4,null],["end_stone",10,null],["basalt",34,null],["dirt",6,null],["blackstone",10,null]],"time":14050,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":5,"y":49,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":52,"z":0},"n":"air","full":false},{"q":{"x":6,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":6,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":50,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":51,"z":0},"n":"end_stone","full":true},{"q":{"x":5,"y":50,"z":1},"n":"air","full":false},{"q":{"x":5,"y":51,"z":1},"n":"air","full":false},{"q":{"x":5,"y":50,"z":-1},"n":"cobblestone","full":true},{"q":{"x":5,"y":51,"z":-1},"n":"cobblestone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T16:26:45.344Z",
+ "p": {
+  "x": 5.495586577328727,
+  "y": 50,
+  "z": 0.4936522922377403
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   5
+  ],
+  [
+   "cobblestone",
+   5,
+   null
+  ],
+  [
+   "netherrack",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "end_stone",
+   10,
+   null
+  ],
+  [
+   "basalt",
+   34,
+   null
+  ],
+  [
+   "dirt",
+   6,
+   null
+  ],
+  [
+   "blackstone",
+   10,
+   null
+  ]
+ ],
+ "time": 14050,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (5.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive

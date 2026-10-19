@@ -1,0 +1,82 @@
+[sandbox] program #27 on p4: 20.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:31:12.351Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19390,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+BUILD_FAIL Error: no departure window {"at":"2026-10-19T16:31:32.647Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+DOWN55 {"at":"2026-10-19T16:31:32.647Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+TUBE_RESULT {"at":"2026-10-19T16:31:32.647Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}],"wallmap":[{"y":55,"sides":[[5,0,"cobblestone"],[3,0,"end_stone"],[4,1,"end_stone"],[4,-1,"end_stone"]]},{"y":56,"sides":[[5,0,"cobblestone"],[3,0,"end_stone"],[4,1,"end_stone"],[4,-1,"end_stone"]]},{"y":57,"sides":[[5,0,"end_stone"],[3,0,"end_stone"],[4,1,"end_stone"],[4,-1,"end_stone"]]},{"y":58,"sides":[[5,0,"basalt"],[3,0,"end_stone"],[4,1,"end_stone"],[4,-1,"end_stone"]]},{"y":59,"sides":[[5,0,"end_stone"],[3,0,"bedrock"],[4,1,"end_stone"],[4,-1,"end_stone"]]},{"y":60,"sides":[[5,0,"air"],[3,0,"air"],[4,1,"air"],[4,-1,"basalt"]]},{"y":61,"sides":[[5,0,"air"],[3,0,"air"],[4,1,"air"],[4,-1,"air"]]}],"roof":"air"}
+ENDING {"at":"2026-10-19T16:31:32.648Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T16:31:32.797Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T16:31:32.947Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":19810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T16:31:33.097Z",
+ "p": {
+  "x": 4.528042828161918,
+  "y": 55,
+  "z": 0.4976546102283198
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   17
+  ],
+  [
+   "cobblestone",
+   3,
+   null
+  ],
+  [
+   "netherrack",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "end_stone",
+   14,
+   null
+  ],
+  [
+   "basalt",
+   17,
+   null
+  ],
+  [
+   "dirt",
+   6,
+   null
+  ],
+  [
+   "blackstone",
+   10,
+   null
+  ]
+ ],
+ "time": 19810,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 55, 0.5) in the_end, health 20/20, food 20/20, alive

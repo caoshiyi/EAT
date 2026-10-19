@@ -1,0 +1,80 @@
+[sandbox] program #25 on p4: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:29:22.822Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":17210,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAILURE Error: source
+ENDING {"at":"2026-10-19T16:29:22.823Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":17210,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T16:29:22.939Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":17210,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T16:29:23.089Z","p":{"x":4.528042828161918,"y":55,"z":0.4976546102283198},"hp":20,"food":20,"ground":true,"inv":[["white_bed",1,null],["stone_pickaxe",1,17],["cobblestone",3,null],["netherrack",10,null],["snowball",4,null],["end_stone",14,null],["basalt",17,null],["dirt",6,null],["blackstone",10,null]],"time":17210,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":0},"n":"basalt","full":true},{"q":{"x":5,"y":55,"z":0},"n":"cobblestone","full":true},{"q":{"x":5,"y":56,"z":0},"n":"cobblestone","full":true},{"q":{"x":3,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":3,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-1},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T16:29:23.239Z",
+ "p": {
+  "x": 4.528042828161918,
+  "y": 55,
+  "z": 0.4976546102283198
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "white_bed",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   17
+  ],
+  [
+   "cobblestone",
+   3,
+   null
+  ],
+  [
+   "netherrack",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   4,
+   null
+  ],
+  [
+   "end_stone",
+   14,
+   null
+  ],
+  [
+   "basalt",
+   17,
+   null
+  ],
+  [
+   "dirt",
+   6,
+   null
+  ],
+  [
+   "blackstone",
+   10,
+   null
+  ]
+ ],
+ "time": 17210,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 55, 0.5) in the_end, health 20/20, food 20/20, alive
