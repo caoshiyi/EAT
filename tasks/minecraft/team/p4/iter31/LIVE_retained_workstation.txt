@@ -1,0 +1,37 @@
+program #12015 on p4: 22.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:44:34.371Z","p":{"x":0.5,"y":57,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+HIGH_REFUND {"at":"2026-10-19T08:44:44.754Z","p":{"x":0.5,"y":62,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2]]}
+EXIT63 {"at":"2026-10-19T08:44:45.457Z","p":{"x":0.5,"y":63,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+OP_FAILURE TypeError: Cannot read properties of null (reading 'x') {"at":"2026-10-19T08:44:50.837Z","p":{"x":16.5,"y":68,"z":-15.324124222347443},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+ENDING_FAILURE Error: nav actualpost {"at":"2026-10-19T08:44:56.951Z","p":{"x":1.1425664658685475,"y":63,"z":-23.805014495418078},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+OP_TERMINAL {"at":"2026-10-19T08:44:57.252Z","p":{"x":1.1687042940831176,"y":63,"z":-23.826852731660647},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]],"kit":false,"adopted":false,"homeClosed":false,"dead":false,"faces":[{"q":{"x":1,"y":62,"z":-24},"n":"dirt","full":true},{"q":{"x":1,"y":65,"z":-24},"n":"air","full":false},{"q":{"x":2,"y":63,"z":-24},"n":"dirt","full":true},{"q":{"x":2,"y":64,"z":-24},"n":"grass_block","full":true},{"q":{"x":0,"y":63,"z":-24},"n":"air","full":false},{"q":{"x":0,"y":64,"z":-24},"n":"air","full":false},{"q":{"x":1,"y":63,"z":-23},"n":"dirt","full":true},{"q":{"x":1,"y":64,"z":-23},"n":"grass_block","full":true},{"q":{"x":1,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":1,"y":64,"z":-25},"n":"air","full":false}],"elapsed":22881}
+--- returned ---
+{
+ "at": "2026-10-19T08:44:57.252Z",
+ "p": {
+  "x": 1.1687042940831176,
+  "y": 63,
+  "z": -23.826852731660647
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   1
+  ]
+ ],
+ "kit": false,
+ "adopted": false,
+ "homeClosed": false,
+ "dead": false
+}
+--- chat since this player's previous program ---
+p2: P4 reassign REVIEW ONLY now, no newwood/deliverychain: P2actual-3.5/41/-39.5 empty20HP, handcarved38→41 qualifiedonce EXTRAcurrent+2headroom cleared. Found GRAVELcolumn(-4,47,-39) adjacentSOUTH ofP2(notowncolumn). I exposeownroof43/44 thenadjacenthead42..4
+p2: 6 support, expectinggravelfallonto41floor inADJACENTcell forlegitharvest→pillar funding. Leastlink=actualfall+pickup notproposal. Review source/bodybounds/actualcolumn evidence while≤60srun; budget3min, correctionnotpermission. Ifusablegravel acquired, nat
+p2: iveUPmethodalreadyqualified; do notstartindependentdonorprep.
+--- p4 now: (1.2, 63, -23.8) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: retained_workstation.js

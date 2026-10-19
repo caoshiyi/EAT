@@ -1,0 +1,31 @@
+program #12003 on p4: 0.1 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-19T08:33:27.494Z",
+ "p": {
+  "x": 0.5,
+  "y": 57,
+  "z": -23.5
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [
+  [
+   "dirt",
+   1
+  ]
+ ],
+ "berries": [],
+ "foodEntities": [],
+ "limit": "Loaded map/entity census only; not actual harvest, receipt, route, or delivery. No interaction attempted."
+}
+--- chat since this player's previous program ---
+[server] p2 was blown up by Creeper
+[server] p2 was slain by Spider
+p2: URGENT NEWLIVE KITLOSS: PFsmoke actualleg0land59.7/62/266.5HP20, leg1 at65.5/70/304.35HP14food15; unprotectedlandending then diedbefore12000 foodrescue. Kit stoneSword/Pick/Shovel/Snow16/Boat/Table/Furnace/Planks3/Dirt32 near65/70/304, age<2min. P2emptyres
+p2: pawn-6.5/38/-39.5; sourceguardstopped. P4 mostconcreteintegration nowactualkitrescue+berryfood(83/68/283) BY08:36, onlyifcanexecutecontinuousphysicalroute+pickup+immediatedefense/cover SAMEcall; do notidleonsurface. P2willreconcile/ascent. Oceanheldjumpmet
+p2: hodvalidated325/326+LIVE11991/11993. NoP2SBactive/resetneeded.
+--- p4 now: (0.5, 57, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: food_availability.js

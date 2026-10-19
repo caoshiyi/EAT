@@ -1,0 +1,27 @@
+program #12016 on p4: 11.3 s
+--- output ---
+RETURN_SOURCE {"at":"2026-10-19T08:47:07.055Z","p":{"x":1.1687042940831176,"y":63,"z":-23.826852731660647},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+RETURN_END {"at":"2026-10-19T08:47:18.381Z","p":{"x":0.5327346695677078,"y":57,"z":-23.520657648409106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4]],"dead":false,"faces":[{"q":{"x":0,"y":56,"z":-24},"n":"dirt","full":true},{"q":{"x":0,"y":59,"z":-24},"n":"dirt","full":true},{"q":{"x":1,"y":57,"z":-24},"n":"stone","full":true},{"q":{"x":1,"y":58,"z":-24},"n":"stone","full":true},{"q":{"x":-1,"y":57,"z":-24},"n":"dirt","full":true},{"q":{"x":-1,"y":58,"z":-24},"n":"dirt","full":true},{"q":{"x":0,"y":57,"z":-23},"n":"stone","full":true},{"q":{"x":0,"y":58,"z":-23},"n":"stone","full":true},{"q":{"x":0,"y":57,"z":-25},"n":"dirt","full":true},{"q":{"x":0,"y":58,"z":-25},"n":"grass_block","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T08:47:18.382Z",
+ "p": {
+  "x": 0.5327346695677078,
+  "y": 57,
+  "z": -23.520657648409106
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (0.5, 57, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: return_pod_only.js

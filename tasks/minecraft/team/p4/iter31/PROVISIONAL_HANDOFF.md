@@ -1,3 +1,21 @@
+# Material provisional override — 2026-10-19 08:49 UTC
+
+**Work continues through09:07; closure evaluator/final reconciliation still pending.** Complete provisional was already checkpointed08:18 before90. Current assignment is **REVIEW ONLY** per P2 message08:42:53: no new wood/delivery/independent recovery chain, coordinate resets only when requested/idle/preserved. P4 has NO outstanding program or reset.
+
+LIVE P4 actual ending-only12016 at08:47:18.381: **OW(0.5327,57,-23.5207),20HP20food,Dirt4,TENFULL**. Subsequentchat12018 same body. Old equipped/workstation claims do not exist. Attempt12012 source44:34 leftpod, reachedfield68 healthy, then null-position block-search callback failed BEFOREwood; automaticreturnstoppedshort atbank63. I had not refreshedchat: owner42:53 review-only reassignment PRECEDEDlaunch, readonlyincompletedoutput. Onreadingit stoppedgathering; onlynecessaryreturn12016 followed, manuallyrecenteredowncolumn, dugownsoilback57andresealed. No wood/tools/adoptioneffect. This failure and timing are preserved; no successfulcomponentpromotedtowholeoperation.
+
+LIVE P2 lost recovered coast kit: canonicalCreeper08:30:34at65.7/70.1/307.1; Spider08:31:09near11.2/67.8/-22.3. Previoushealthyboat/stonekit/Snow16/coastbodySUPERSEDED. RequestedP4pickupby08:36was NOTlaunched; missedgate/noitemsrecovered. I spentthewindowreviewing/preparinginstead ofexecuting; no expiry/globalabsenceclaim. P4local40mread-onlyfoodcensusfoundnoberries/foodentities; receiver-areaberries83/68/283remainownerhistoricalobservation, noP4foodreceipt.
+
+P2currentlastactual12017 at08:47:42: **OW(-3.5,46,-38.5),20HP20food,Gravel11**. 12013 exposed ADJACENTfallcolumn(-4,47,-39) from own41/-39.5, actualfall/settledpost;12014 realinventory0→4Gravel;12017 steppedontoSETTLEDcolumn41→42 thenfourUP→46 consumed4, sidecolumnsreceived11. P4reviewed exactsource/output/bodybounds: initialwidth.6 leaves.2mhorizontalclearance fromadjacentfallcolumn; actualfall+pickup+nativeUSEqualified, notfullsurface/Endroute. Furtherroof/sourcechecksrequiredafterpauses. P2 alone controls P2.
+
+G4 deep-water325 actual physiologicaloutcome qualified despite internalqualified:false (wet71.5% vschosen80%policy): source3x3level0water/deep2below,20sHP20/eyeAIR200samples/rawoxygen396–400, returnsolidhome20HP. 326→LIVE11993 moved~35m232→267healthywithjumpheld; nofullenclosureclaim. Genericvoyagesmokemoved2.71mthenfrontblocked269.7; undericecleareronlyhandledownhead/submersion, frontkindnotobservedbyP4. Dryidlehopsfood19→16; nextPFlegsreached59.7/62/266.5then65.5/70/304.35butunprotectedendinglostkit. NoEndentry/crystal/Dragon effect thisiteration.
+
+Fresh canonical audit08:49: **LIVE9 (P2seven/P4two), SB4 (P4all)**, includingidleSB31:21. Savedopening0dragon/11milestones/188deathsisSTALE; do notclaim195/197officialwithoutclosingeval. P4helperbothworlddatefilterrecordsarein death_audit_0849.json/txt. G4 remains divergentcurrentpracticecopyofoldLIVEcoastkit, notrecoveryoflostmainkit; noG5resetrequested.
+
+Next: review actual P2gravel-fundedascent/successor ratherthannewdonorprep. Keep exact failures and actualuse/retention separate; no permissiongate. Fix null-position findBlocks matcher only as read-onlysmalltoolprobe (filter returnedVec3 positions outside matching callback), no renewedwoodoperation. Final09:07 evaluator, bothworldcanonicaldeaths, actuallivingbodies/controls/geometry, finalappendandowncommit/noPush. Sources/failedgates/detailedrecords below are dated and superseded whereconflicting.
+
+--- Earlier complete provisional follows ---
+
 # P4 iteration31 provisional handoff — 2026-10-19 08:18 UTC (work continues)
 
 Objective incomplete. Opening evaluator python unavailable→python3, save failed(connection refused): **LAST-SAVED dragon0/milestones11/deaths188**. No current31 Endentry/crystal removal/Dragon damage verified. Initialreads~07:20; canonicalarenaUP07:21:56. Complete provisional by08:50 (conservative); continue useful work through09:07 (covers105minafterUP), then closure evaluator/fresh events/bodies/append material changes within110minrolewindow. Never push.
