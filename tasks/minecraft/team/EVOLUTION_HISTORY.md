@@ -3568,3 +3568,6 @@ P4snowemptyshapeactualoneUP11567 qualifiednativecollisionratherthanrepeatednullc
 
 ### Iteration28 qualified return must survive reuse —02:36 UTC
 LIVE11575 actually reached36 through known ten-step path, but new wood and RETURN planners both noPath; ended exposed36/20HP. Changed recovery had replaced qualified manual descent with unqualified planner. Separate11576 manual rescue/full pod20HP at02:33:36.740 succeeds without retrospectively passing probe. Source02:05–35 failed supplies/End delivery, useful ten-height access retained. G3fresh copy0.7s/24.5s replaces G2damagedOWSnow8kit, does not transfer supplies. Preserve changed branch/recovery choice and actual endings, no absent-helper/whole-success claim.
+
+### Iteration28 measure branch execution before qualification —02:42 UTC
+G3SB217 forced57airabort settlednaturallyonrouteidx12; nooffroutephysicalrecenter, ownerindependentlyacknowledgedbeforeendorsement. Changed218earlierforcetimingactuallyleftoffroute57; BEGIN02:40:01.289→ordinaryphysicalmoveCOMPLETE02.092/idx12, fullreturn50/10HP/Snow2at13.183. Qualifyactualbranchandretentionnarrowly, nohazardchallengeorwholepilotproof. This avoids repeating27smallabort177mistake: testinga nearby normalending doesnotqualifythe intendedfallbackbranch. Canonicalsource/postread, no missing-helper/tolerance-bypassclaim.
