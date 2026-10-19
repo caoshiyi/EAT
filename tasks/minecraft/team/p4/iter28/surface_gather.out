@@ -1,0 +1,64 @@
+program #11591 on p4: 29 s
+--- output ---
+P4_SURFACE_SOURCE {"at":"2026-10-19T02:52:18.955Z","p":{"x":6.5,"y":66,"z":-27.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+TRAVEL {"at":"2026-10-19T02:52:18.977Z","p":{"x":6.430703508197071,"y":66,"z":-27.430703508197066},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":true,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":{"x":4,"y":67,"z":-24}}
+TRAVEL_END {"at":"2026-10-19T02:52:20.774Z","p":{"x":4.463866990719223,"y":67,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 68, z: -23 } spruce_log
+LIVE_WOOD_ACTUAL {"at":"2026-10-19T02:52:24.549Z","p":{"x":4.463866990719223,"y":67,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 67, z: -23 } spruce_log
+TRAVEL {"at":"2026-10-19T02:52:28.388Z","p":{"x":4.467458075584481,"y":67,"z":-23.40206577890299},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":true,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":{"x":4,"y":67,"z":-23}}
+TRAVEL_END {"at":"2026-10-19T02:52:28.989Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+SURFACE_PICKUP {"before":0,"after":2,"state":{"at":"2026-10-19T02:52:29.242Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}}
+LIVE_WOOD_ACTUAL {"at":"2026-10-19T02:52:29.243Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 69, z: -23 } spruce_log
+SURFACE_PICKUP {"before":3,"after":3,"state":{"at":"2026-10-19T02:52:33.235Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",3]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}}
+LIVE_WOOD_ACTUAL {"at":"2026-10-19T02:52:33.235Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",3]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 70, z: -23 } spruce_log
+TRAVEL {"at":"2026-10-19T02:52:37.112Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":{"x":4,"y":70,"z":-23}}
+FAILURE Error: travel stalled {"at":"2026-10-19T02:52:41.979Z","p":{"x":4.484641883429628,"y":67,"z":-22.668416270642403},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 66, z: -23 } grass_block
+CUT Vec3 { x: 4, y: 65, z: -23 } dirt
+CUT Vec3 { x: 4, y: 64, z: -23 } dirt
+PUT Vec3 { x: 4, y: 66, z: -23 } dirt
+ENDING {"state":{"at":"2026-10-19T02:52:47.176Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:52:47.428Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:52:47.680Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+P4_SURFACE_TERMINAL {"at":"2026-10-19T02:52:47.931Z","elapsedMs":28976,"failure":"Error: travel stalled","state":{"at":"2026-10-19T02:52:47.931Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}],"events":[],"gotFood":0}
+--- returned ---
+{
+ "at": "2026-10-19T02:52:47.931Z",
+ "p": {
+  "x": 4.4985051161210174,
+  "y": 64,
+  "z": -22.459157788626733
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_log",
+   4
+  ],
+  [
+   "dirt",
+   2
+  ]
+ ],
+ "wear": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 64, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: surface_gather.js

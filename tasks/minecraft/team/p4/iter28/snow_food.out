@@ -1,0 +1,69 @@
+program #11598 on p4: 0.7 s
+--- output ---
+LIVE_HARVEST_SOURCE {"at":"2026-10-19T03:00:20.842Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+FAILURE Error: cut material (4, 66, -23) grass_block {"at":"2026-10-19T03:00:20.842Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+ENDING {"state":{"at":"2026-10-19T03:00:20.843Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"grass_block","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:00:21.049Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"grass_block","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:00:21.300Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"grass_block","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+P4_AMMO_TERMINAL {"at":"2026-10-19T03:00:21.551Z","elapsedMs":710,"failure":"Error: cut material (4, 66, -23) grass_block","state":{"at":"2026-10-19T03:00:21.551Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"grass_block","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}],"foods":0,"topY":64,"events":[]}
+--- returned ---
+{
+ "at": "2026-10-19T03:00:21.551Z",
+ "p": {
+  "x": 4.4985051161210174,
+  "y": 64,
+  "z": -22.459157788626733
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_log",
+   1
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   3
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_shovel",
+   0,
+   59
+  ],
+  [
+   "wooden_pickaxe",
+   0,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 64, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: snow_food.js

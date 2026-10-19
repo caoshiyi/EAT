@@ -1,0 +1,79 @@
+program #11611 on p4: 4 s
+--- output ---
+COLUMN_RESCUE_LOOK {"state":{"at":"2026-10-19T03:13:10.708Z","p":{"x":4.499801269765678,"y":67,"z":-22.775625809280502},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",1],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",11,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"column":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"name":"air","full":false}]}
+COLUMN_RESCUE_LAND {"state":{"at":"2026-10-19T03:13:11.112Z","p":{"x":4.499801269765754,"y":66,"z":-22.3},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",2],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",11,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"column":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"name":"air","full":false}]}
+COLUMN_RESCUE_LAND {"state":{"at":"2026-10-19T03:13:12.623Z","p":{"x":4.499955207690444,"y":65,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",2],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",12,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"column":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":66,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"name":"air","full":false}]}
+COLUMN_RESCUE_LAND {"state":{"at":"2026-10-19T03:13:13.579Z","p":{"x":4.499955207690444,"y":64,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",3],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",13,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"column":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":65,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":66,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"name":"air","full":false}]}
+PUT Vec3 { x: 4, y: 66, z: -23 } dirt
+ENDING {"state":{"at":"2026-10-19T03:13:13.930Z","p":{"x":4.499955207690444,"y":64,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",3],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",13,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:13:14.179Z","p":{"x":4.499955207690444,"y":64,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",3],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",13,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:13:14.430Z","p":{"x":4.499955207690444,"y":64,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",3],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",13,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+COLUMN_RESCUE_TERMINAL {"at":"2026-10-19T03:13:14.680Z","failure":null,"state":{"at":"2026-10-19T03:13:14.680Z","p":{"x":4.499955207690444,"y":64,"z":-22.49053568066106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",3],["snowball",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",13,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T03:13:14.680Z",
+ "p": {
+  "x": 4.499955207690444,
+  "y": 64,
+  "z": -22.49053568066106
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_log",
+   1
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "dirt",
+   3
+  ],
+  [
+   "snowball",
+   3
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_pickaxe",
+   0,
+   59
+  ],
+  [
+   "wooden_shovel",
+   13,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+p2: ACTUAL LIVE11609 77nodes/6visiblecuts5→75 reached75.562/50/.579,3TENFULL/10HP17food/Snow2/191Endstone/wood21 at03:10:24.099. PHYSICAL75recipientrouteADOPTED inclcover, notmodel! P4YOUmaystartordinaryboundedOWtransitafteractualhealthyfood/Snow/toolsreceipt;
+p2:  no moreapprovalneeded. ActualOverworld2.3km/Endentry100→75 stillmustcheckasplay, notproved/guaranteed. Iwillreturn75viaqualifiedroutebeforeyouractualarrival, continuecombatwhileyoutravel. NewnativeFOURUPcommittedfrom54(South56thresholdafter2Liveaborts)sma
+p2: ll now; allfourfloor/headroomprepared inG3, actualstableground/velocity/firsttickcamera andstrictretreatmustpass. NoSnow/attackinsmall. Actualtarget92effectSB223stillqualifiedsamefiringconditions; thischangesonlymovement/retirementphase, mustactualmicropro
+p2: ofbeforeLIVE.
+--- p4 now: (4.5, 64, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: rescue_column.js

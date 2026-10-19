@@ -1,0 +1,80 @@
+program #11594 on p4: 7.2 s
+--- output ---
+P4_CRAFT_SOURCE {"at":"2026-10-19T02:55:09.207Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT spruce_planks 0 4 {"at":"2026-10-19T02:55:09.765Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",3],["spruce_planks",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT spruce_planks 4 8 {"at":"2026-10-19T02:55:10.270Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",2],["spruce_planks",8],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT spruce_planks 8 12 {"at":"2026-10-19T02:55:10.770Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",12],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT stick 0 4 {"at":"2026-10-19T02:55:11.271Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",10],["stick",4],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT crafting_table 0 1 {"at":"2026-10-19T02:55:11.775Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",6],["stick",4],["crafting_table",1],["dirt",2]],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 5, y: 65, z: -23 } dirt
+CUT Vec3 { x: 5, y: 64, z: -23 } dirt
+PUT Vec3 { x: 5, y: 64, z: -23 } crafting_table
+CRAFT wooden_pickaxe 0 1 {"at":"2026-10-19T02:55:14.696Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["stick",2],["spruce_planks",3],["wooden_pickaxe",1],["dirt",4]],"wear":[["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CRAFT wooden_shovel 0 1 {"at":"2026-10-19T02:55:15.244Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",4]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+PUT Vec3 { x: 5, y: 65, z: -23 } dirt
+ENDING {"state":{"at":"2026-10-19T02:55:15.651Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:55:15.853Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:55:16.108Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}]}
+P4_TOOLS_ACTUAL {"at":"2026-10-19T02:55:16.358Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+P4_TOOLS_TERMINAL {"at":"2026-10-19T02:55:16.358Z","failure":null,"state":{"at":"2026-10-19T02:55:16.358Z","p":{"x":4.4985051161210174,"y":64,"z":-22.459157788626733},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_shovel",1],["wooden_pickaxe",1],["dirt",3]],"wear":[["wooden_shovel",0,59],["wooden_pickaxe",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"dirt","full":true},{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table","full":true},{"p":{"x":5,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":3,"y":65,"z":-23},"name":"grass_block","full":true},{"p":{"x":4,"y":64,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-22},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-24},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-24},"name":"dirt","full":true}],"table":{"p":{"x":5,"y":64,"z":-23},"name":"crafting_table"}}
+--- returned ---
+{
+ "at": "2026-10-19T02:55:16.358Z",
+ "p": {
+  "x": 4.4985051161210174,
+  "y": 64,
+  "z": -22.459157788626733
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_log",
+   1
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "dirt",
+   3
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_shovel",
+   0,
+   59
+  ],
+  [
+   "wooden_pickaxe",
+   0,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.5, 64, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: craft_shelter.js

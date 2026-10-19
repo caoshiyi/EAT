@@ -1,0 +1,16 @@
+program #11574 on p4: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p4-program-11574.js:17
+catch(e){failure=String(e);console.log('FAILURE',failure,JSON.stringify(state()));}
+^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:450:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:578:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-7.3, 26, -37.5) in overworld, health 20/20, food 20/20, alive

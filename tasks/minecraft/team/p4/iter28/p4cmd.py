@@ -18,6 +18,11 @@ lines=[status(False),status(True)]
 if args[0]=='check':
  print('LIVE',lines[0]);print('SANDBOX',lines[1]);raise SystemExit(0)
 if any('running program #' in x for x in lines):raise SystemExit('p4 active in one environment; refusing overlapping program: '+' | '.join(lines))
+if args[0]=='run':
+ candidate=pathlib.Path(args[-1])
+ checked=subprocess.run([sys.executable,str(root/'syntax_check.py'),str(candidate)],text=True,capture_output=True)
+ if checked.returncode:raise SystemExit('Pre-arena syntax rejection: '+checked.stderr[-1500:])
+ print(checked.stdout,end='')
 cmd=[sys.executable,'tools/mc_arena.py']+(['--sandbox'] if sandbox else [])+[args[0],'--player','p4']+args[1:]
 r=subprocess.run(cmd)
 raise SystemExit(r.returncode)

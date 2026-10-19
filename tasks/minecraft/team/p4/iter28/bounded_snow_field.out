@@ -1,0 +1,89 @@
+program #11622 on p4: 72.3 s
+--- output ---
+LOW_FOOD_SOURCE {"at":"2026-10-19T03:23:32.029Z","p":{"x":4.499852942692409,"y":64,"z":-22.51053130921943},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",5],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 4, y: 66, z: -23 } dirt
+UP {"at":"2026-10-19T03:23:34.139Z","p":{"x":4.499852942692409,"y":65,"z":-22.51053130921943},"hp":20}
+UP {"at":"2026-10-19T03:23:34.997Z","p":{"x":4.499852942692409,"y":66,"z":-22.51053130921943},"hp":20}
+LOW_CORRIDOR_ACTUAL {"at":"2026-10-19T03:23:35.858Z","p":{"x":4.4998529426926,"y":66,"z":-21.435674164322716},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+LOW_CORRIDOR_ACTUAL {"at":"2026-10-19T03:23:36.769Z","p":{"x":4.499852942692791,"y":66,"z":-20.360817019426},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+LOW_CORRIDOR_ACTUAL {"at":"2026-10-19T03:23:37.573Z","p":{"x":4.499852942692944,"y":66,"z":-19.501794326437317},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+LOW_CORRIDOR_ACTUAL {"at":"2026-10-19T03:23:38.476Z","p":{"x":5.574706404114397,"y":66,"z":-19.500511510398233},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+LIVE_FOOD_RECEIVED {"at":"2026-10-19T03:23:40.136Z","p":{"x":5.50559625120478,"y":66,"z":-18.429831636177067},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",5],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+FIELD_SNOW_ACTUAL {"q":{"x":6,"y":66,"z":-18},"before":5,"after":6,"p":{"x":6.505554806701724,"y":66,"z":-17.424804614660683},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":4,"y":66,"z":-18},"before":6,"after":7,"p":{"x":4.4234118860254314,"y":66,"z":-17.49522998635511},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":5,"y":66,"z":-17},"before":7,"after":8,"p":{"x":5.500046594346198,"y":66,"z":-16.628090729885},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":4,"y":66,"z":-20},"before":8,"after":9,"p":{"x":4.435134199224217,"y":66,"z":-19.49405117500856},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":7,"y":66,"z":-18},"before":9,"after":10,"p":{"x":7.5755092453821975,"y":66,"z":-17.499946638244698},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":6,"y":66,"z":-17},"before":10,"after":11,"p":{"x":6.500184104447175,"y":66,"z":-16.352669009083364},"hp":20}
+FIELD_SNOW_ACTUAL {"q":{"x":3,"y":66,"z":-18},"before":11,"after":12,"p":{"x":3.3477033329788197,"y":66,"z":-17.49915485467689},"hp":20}
+RECOVERY_FAILURE Error: flat unsettled {"at":"2026-10-19T03:24:44.309Z","p":{"x":6.355457763884061,"y":66.275125,"z":-18.505727936609954},"hp":17.5,"food":20,"dim":"overworld","ground":false,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",12],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",28,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+LOW_FOOD_TERMINAL {"at":"2026-10-19T03:24:44.309Z","failure":null,"state":{"at":"2026-10-19T03:24:44.309Z","p":{"x":6.355457763884061,"y":66.275125,"z":-18.505727936609954},"hp":17.5,"food":20,"dim":"overworld","ground":false,"inv":[["spruce_log",1],["spruce_planks",2],["wooden_pickaxe",1],["wooden_shovel",1],["dirt",4],["snowball",12],["sweet_berries",3]],"wear":[["wooden_pickaxe",0,59],["wooden_shovel",28,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":6,"y":65,"z":-19},"name":"grass_block","full":true},{"p":{"x":6,"y":68,"z":-19},"name":"air","full":false},{"p":{"x":7,"y":66,"z":-19},"name":"grass_block","full":true},{"p":{"x":7,"y":67,"z":-19},"name":"snow","full":false},{"p":{"x":5,"y":66,"z":-19},"name":"air","full":false},{"p":{"x":5,"y":67,"z":-19},"name":"air","full":false},{"p":{"x":6,"y":66,"z":-18},"name":"air","full":false},{"p":{"x":6,"y":67,"z":-18},"name":"air","full":false},{"p":{"x":6,"y":66,"z":-20},"name":"grass_block","full":true},{"p":{"x":6,"y":67,"z":-20},"name":"air","full":false}],"events":[{"at":"2026-10-19T03:24:44.251Z","p":{"x":6.573832763884061,"y":66,"z":-18.505727936609954},"hp":17.5}]}
+--- returned ---
+{
+ "at": "2026-10-19T03:24:44.309Z",
+ "p": {
+  "x": 6.355457763884061,
+  "y": 66.275125,
+  "z": -18.505727936609954
+ },
+ "hp": 17.5,
+ "food": 20,
+ "dim": "overworld",
+ "ground": false,
+ "inv": [
+  [
+   "spruce_log",
+   1
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "dirt",
+   4
+  ],
+  [
+   "snowball",
+   12
+  ],
+  [
+   "sweet_berries",
+   3
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_pickaxe",
+   0,
+   59
+  ],
+  [
+   "wooden_shovel",
+   28,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.4, 66.3, -18.5) in overworld, health 17.5/20, food 20/20, alive
+syntax-only PASS: bounded_snow_field.js

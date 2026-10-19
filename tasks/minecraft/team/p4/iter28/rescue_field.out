@@ -1,0 +1,35 @@
+program #11623 on p4: 6.9 s
+--- output ---
+TRAVEL {"at":"2026-10-19T03:25:10.317Z","p":{"x":-6.430703508197085,"y":69,"z":-25.569296491802948},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":true,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":{"x":4,"y":66,"z":-23}}
+RECOVERY_FAILURE Error: travel fluid {"state":{"at":"2026-10-19T03:25:13.042Z","p":{"x":-2.613683226958155,"y":57,"z":-24.45026816545984},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"column":[{"p":{"x":4,"y":63,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":64,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":65,"z":-23},"name":"dirt","full":true},{"p":{"x":4,"y":66,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":67,"z":-23},"name":"air","full":false},{"p":{"x":4,"y":68,"z":-23},"name":"air","full":false}]}
+FALLBACK_FAILURE Error: flat unsettled {"at":"2026-10-19T03:25:17.187Z","p":{"x":-1.6200979823111046,"y":57,"z":-24.3},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+COLUMN_RESCUE_TERMINAL {"at":"2026-10-19T03:25:17.187Z","failure":"Error: travel fluid","state":{"at":"2026-10-19T03:25:17.187Z","p":{"x":-1.6200979823111046,"y":57,"z":-24.3},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":-2,"y":56,"z":-25},"name":"dirt","full":true},{"p":{"x":-2,"y":59,"z":-25},"name":"air","full":false},{"p":{"x":-1,"y":57,"z":-25},"name":"grass_block","full":true},{"p":{"x":-1,"y":58,"z":-25},"name":"snow","full":false},{"p":{"x":-3,"y":57,"z":-25},"name":"water","full":false},{"p":{"x":-3,"y":58,"z":-25},"name":"air","full":false},{"p":{"x":-2,"y":57,"z":-24},"name":"grass_block","full":true},{"p":{"x":-2,"y":58,"z":-24},"name":"snow","full":false},{"p":{"x":-2,"y":57,"z":-26},"name":"water","full":false},{"p":{"x":-2,"y":58,"z":-26},"name":"air","full":false}]}
+--- returned ---
+{
+ "at": "2026-10-19T03:25:17.187Z",
+ "p": {
+  "x": -1.6200979823111046,
+  "y": 57,
+  "z": -24.3
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "wear": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+--- p4 now: (-1.6, 57, -24.3) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: rescue_field.js

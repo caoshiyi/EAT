@@ -1,0 +1,39 @@
+program #11564 on p4: 5.1 s
+--- output ---
+P4_REOPEN_SOURCE {"at":"2026-10-19T02:22:48.874Z","p":{"x":-7.353653869358332,"y":26,"z":-37.50022269886646},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1],["flint",3]]}
+P4_HAND_CUT {"at":"2026-10-19T02:22:49.825Z","p":{"x":-9,"y":27,"z":-38},"ms":951,"hp":20}
+P4_HAND_CUT {"at":"2026-10-19T02:22:50.830Z","p":{"x":-9,"y":26,"z":-38},"ms":954,"hp":20}
+P4_HAND_STEP {"at":"2026-10-19T02:22:51.230Z","p":{"x":-8.57346765130422,"y":26,"z":-37.50022282414148},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",2],["flint",3]],"target":{"x":-9,"y":26,"z":-38},"up":false,"ms":400}
+P4_LIVE_HAND_START {"at":"2026-10-19T02:22:51.732Z","p":{"x":-8.645152665469867,"y":26,"z":-37.50022282414148},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3],["flint",3]]}
+FAILURE Error: not current visible (-9, 27, -37) {"at":"2026-10-19T02:22:52.083Z","p":{"x":-8.645152665469867,"y":26,"z":-37.50022282414148},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3],["flint",3]]}
+P4_HAND_STEP {"at":"2026-10-19T02:22:52.483Z","p":{"x":-7.425338883523981,"y":26,"z":-37.500222698866544},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3],["flint",3]],"target":{"x":-8,"y":26,"z":-38},"up":false,"ms":400}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:22:53.185Z","p":{"x":-7.353653869358335,"y":26,"z":-37.500222698866544},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1],["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:22:53.435Z","p":{"x":-7.353653869358335,"y":26,"z":-37.500222698866544},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1],["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:22:53.686Z","p":{"x":-7.353653869358335,"y":26,"z":-37.500222698866544},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1],["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_HAND_TERMINAL {"at":"2026-10-19T02:22:53.937Z","p":{"x":-7.353653869358335,"y":26,"z":-37.500222698866544},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1],["flint",3]],"elapsedMs":5063,"highest":26,"returned":true,"failure":"Error: not current visible (-9, 27, -37)","cuts":[{"at":"2026-10-19T02:22:49.825Z","p":{"x":-9,"y":27,"z":-38},"ms":951,"hp":20},{"at":"2026-10-19T02:22:50.830Z","p":{"x":-9,"y":26,"z":-38},"ms":954,"hp":20}],"stepCount":2,"fullShelterEnding":true,"podFaces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T02:22:53.938Z",
+ "p": {
+  "x": -7.353653869358335,
+  "y": 26,
+  "z": -37.500222698866544
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "gravel",
+   1
+  ],
+  [
+   "flint",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-7.4, 26, -37.5) in overworld, health 20/20, food 20/20, alive
