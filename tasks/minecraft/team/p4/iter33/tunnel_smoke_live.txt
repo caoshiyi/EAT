@@ -1,0 +1,34 @@
+program #12301 on p4: 3.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:43:32.370Z","p":{"x":49.50933546990016,"y":65,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19304,"faces":[{"q":{"x":49,"y":64,"z":113},"n":"dirt","full":true},{"q":{"x":49,"y":67,"z":113},"n":"dirt","full":true},{"q":{"x":50,"y":65,"z":113},"n":"dirt","full":true},{"q":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":113},"n":"dirt","full":true},{"q":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":112},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":112},"n":"dirt","full":true}]}
+CUT {"q":{"x":49,"y":66,"z":114},"n":"dirt","state":{"at":"2026-10-19T11:43:33.274Z","p":{"x":49.50933546990016,"y":65,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19324}}
+CUT {"q":{"x":49,"y":65,"z":114},"n":"dirt","state":{"at":"2026-10-19T11:43:34.269Z","p":{"x":49.50933546990016,"y":65,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["dirt",1,null],["spruce_sapling",1,null]],"time":19344}}
+MOVE {"at":"2026-10-19T11:43:34.671Z","p":{"x":49.50558088752354,"y":65,"z":114.32487433978872},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["dirt",2,null],["spruce_sapling",1,null]],"time":19364}
+PLACE {"q":{"x":49,"y":66,"z":113},"name":"dirt","state":{"at":"2026-10-19T11:43:35.020Z","p":{"x":49.50558088752354,"y":65,"z":114.35710616922483},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["dirt",1,null],["spruce_sapling",1,null]],"time":19364}}
+PLACE {"q":{"x":49,"y":65,"z":113},"name":"dirt","state":{"at":"2026-10-19T11:43:35.321Z","p":{"x":49.50558088752354,"y":65,"z":114.35710616922483},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19364}}
+ENDING {"at":"2026-10-19T11:43:35.321Z","p":{"x":49.50558088752354,"y":65,"z":114.35710616922483},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19364,"faces":[{"q":{"x":49,"y":64,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"q":{"x":50,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":50,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":113},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":113},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:43:35.471Z","p":{"x":49.50558088752354,"y":65,"z":114.35710616922483},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19364,"faces":[{"q":{"x":49,"y":64,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"q":{"x":50,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":50,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":113},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":113},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:43:35.622Z","p":{"x":49.50558088752354,"y":65,"z":114.35710616922483},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1,null]],"time":19384,"faces":[{"q":{"x":49,"y":64,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"q":{"x":50,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":50,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":114},"n":"dirt","full":true},{"q":{"x":48,"y":66,"z":114},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":113},"n":"dirt","full":true},{"q":{"x":49,"y":66,"z":113},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:43:35.772Z",
+ "p": {
+  "x": 49.50558088752354,
+  "y": 65,
+  "z": 114.35710616922483
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ],
+ "time": 19384
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (49.5, 65, 114.4) in overworld, health 5.9/20, food 17/20, alive

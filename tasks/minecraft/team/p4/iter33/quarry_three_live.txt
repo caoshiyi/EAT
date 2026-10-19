@@ -1,0 +1,65 @@
+program #12346 on p4: 6.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:47:00.083Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",2,null],["wooden_shovel",1,1],["spruce_sapling",1,null]],"time":23464,"faces":[{"q":{"x":49,"y":63,"z":116},"n":"stone","full":true},{"q":{"x":49,"y":66,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":65,"z":116},"n":"crafting_table","full":true},{"q":{"x":48,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":116},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":115},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true}]}
+CUT {"q":{"x":49,"y":64,"z":115},"n":"dirt","state":{"at":"2026-10-19T11:47:00.743Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",2,null],["wooden_shovel",1,2],["spruce_sapling",1,null]],"time":23484}}
+CUT {"q":{"x":49,"y":63,"z":115},"n":"stone","state":{"at":"2026-10-19T11:47:02.100Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",3,null],["wooden_shovel",1,2],["wooden_pickaxe",1,1],["spruce_sapling",1,null]],"time":23504}}
+FAILURE Error: move post {"at":"2026-10-19T11:47:05.759Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",3,null],["wooden_shovel",1,2],["wooden_pickaxe",1,1],["spruce_sapling",1,null]],"time":23584}
+RECOVERY_FAILURE Error: noanchor (49, 64, 115)
+ENDING {"at":"2026-10-19T11:47:05.965Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",3,null],["wooden_shovel",1,2],["wooden_pickaxe",1,1],["spruce_sapling",1,null]],"time":23584,"faces":[{"q":{"x":49,"y":63,"z":116},"n":"stone","full":true},{"q":{"x":49,"y":66,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":65,"z":116},"n":"crafting_table","full":true},{"q":{"x":48,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":116},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":115},"n":"air","full":false},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:47:06.127Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",3,null],["wooden_shovel",1,2],["wooden_pickaxe",1,1],["spruce_sapling",1,null]],"time":23584,"faces":[{"q":{"x":49,"y":63,"z":116},"n":"stone","full":true},{"q":{"x":49,"y":66,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":65,"z":116},"n":"crafting_table","full":true},{"q":{"x":48,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":116},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":115},"n":"air","full":false},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:47:06.278Z","p":{"x":49.50155867992132,"y":64,"z":116.35716389152712},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["wooden_sword",1,0],["dirt",3,null],["wooden_shovel",1,2],["wooden_pickaxe",1,1],["spruce_sapling",1,null]],"time":23584,"faces":[{"q":{"x":49,"y":63,"z":116},"n":"stone","full":true},{"q":{"x":49,"y":66,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":50,"y":65,"z":116},"n":"crafting_table","full":true},{"q":{"x":48,"y":64,"z":116},"n":"dirt","full":true},{"q":{"x":48,"y":65,"z":116},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":65,"z":117},"n":"dirt","full":true},{"q":{"x":49,"y":64,"z":115},"n":"air","full":false},{"q":{"x":49,"y":65,"z":115},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:47:06.431Z",
+ "p": {
+  "x": 49.50155867992132,
+  "y": 64,
+  "z": 116.35716389152712
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ]
+ ],
+ "time": 23584
+}
+--- chat since this player's previous program ---
+p3: P3 SB2 changed approach actual Creeper death11:46:17.669 after bounded descent to7/60/82, native respawn END HOME6.5/67/82.5 HP20 food20. SB3 next-source now auditing fixtures/chest. This is useful survival body reset hypothesis qualified in sandbox only; 
+p3: live unchanged2.2HP. No food courier needed if live branch matches; resource bank first.
+[server] p3 was blown up by Creeper
+--- p4 now: (49.5, 64, 116.4) in overworld, health 5.9/20, food 17/20, alive
