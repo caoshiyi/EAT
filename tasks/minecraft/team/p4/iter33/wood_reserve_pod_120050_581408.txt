@@ -1,0 +1,87 @@
+program #12478 on p4: 8.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:00:50.705Z","p":{"x":61.49999666963689,"y":61,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,25],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["dirt",2,null],["cobblestone",4,null]],"time":16084,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":61,"y":60,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":125},"n":"dirt","full":true},{"q":{"x":62,"y":61,"z":125},"n":"furnace","full":true},{"q":{"x":62,"y":62,"z":125},"n":"crafting_table","full":true},{"q":{"x":60,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true}]}
+CUT {"q":{"x":61,"y":63,"z":125},"n":"dirt","state":{"at":"2026-10-19T12:00:51.262Z","p":{"x":61.49999666963689,"y":61,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,26],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["dirt",2,null],["cobblestone",4,null]],"time":16084,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+UP_ACTUAL {"at":"2026-10-19T12:00:53.069Z","p":{"x":61.49999666963689,"y":62,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,26],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["dirt",2,null],["cobblestone",4,null]],"time":16124,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+UP_ACTUAL {"at":"2026-10-19T12:00:54.870Z","p":{"x":61.49999666963689,"y":63,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,26],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["dirt",1,null],["cobblestone",4,null]],"time":16164,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+UP_ACTUAL {"at":"2026-10-19T12:00:56.680Z","p":{"x":61.49999666963689,"y":64,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,26],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16204,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":61,"y":67,"z":125},"n":"dirt","state":{"at":"2026-10-19T12:00:57.282Z","p":{"x":61.49999666963689,"y":64,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,27],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16204,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+UP_ACTUAL {"at":"2026-10-19T12:00:59.074Z","p":{"x":61.49999666963689,"y":65,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,27],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16244,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAILURE Error: fund dirt
+RECOVERY_FAILURE Error: fund dirt
+ENDING {"at":"2026-10-19T12:00:59.075Z","p":{"x":61.49999666963689,"y":65,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,27],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16244,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":61,"y":64,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":125},"n":"air","full":false},{"q":{"x":62,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":62,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":66,"z":126},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":124},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":124},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:00:59.226Z","p":{"x":61.49999666963689,"y":65,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,27],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16244,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":61,"y":64,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":125},"n":"air","full":false},{"q":{"x":62,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":62,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":66,"z":126},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":124},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":124},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:00:59.378Z","p":{"x":61.49999666963689,"y":65,"z":125.49999690261404},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["wooden_sword",1,0],["coal",2,null],["wooden_shovel",1,27],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,69],["cobblestone",4,null]],"time":16244,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":61,"y":64,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":125},"n":"air","full":false},{"q":{"x":62,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":62,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":125},"n":"dirt","full":true},{"q":{"x":60,"y":66,"z":125},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":66,"z":126},"n":"dirt","full":true},{"q":{"x":61,"y":65,"z":124},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":124},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:00:59.529Z",
+ "p": {
+  "x": 61.49999666963689,
+  "y": 65,
+  "z": 125.49999690261404
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   27
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   69
+  ],
+  [
+   "cobblestone",
+   4,
+   null
+  ]
+ ],
+ "time": 16264,
+ "offhand": "shield",
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p2: Causal12454: motion ended20HP; firsthurt17.5 at177/76/489 then selection8m entities[]; afterfirstfall skeleton enters8m ->BURROW_ABORT, helper UP restores exposedsurface. Subsequent fallback pursued newterrain, skeleton followed; body7.5 made navHealth>8 r
+p2: eject loops, error exposed; death11:59:11. Retire ASCENT after external-threat-only admission change. Proposed specific successor: if interiorclear afterpartialfall, immediately deepen+cap instead of emerge; must test actual branch/retained nextsource befo
+p2: re broad travel. P3/P4 food-heal onward chain leads while P2 fixes this boundary; no repeat wholekit rescue unchanged.
+p3: P3 ~20min review NEW USABLE: live body reset20HP20food (one intentional Creeperdeath) plus fresh FOURlog→actual WoodPick;12472 sealed forestworkcell19.336/61/111.464, three10FULL/20HP20food, Tablefixture18/64/111, spareLog1/Planks3/Stick4/Dirt2/Slab1. LOST
+p3:  Dirt2/Sand1 in second lava death after failed ground-route ending. Changed roof exit succeeded; now productive independent kit/food branch, not travel-ready or dragon progress. Next stone quarry then food reserve.
+--- p4 now: (61.5, 65, 125.5) in overworld, health 5.9/20, food 17/20, alive
