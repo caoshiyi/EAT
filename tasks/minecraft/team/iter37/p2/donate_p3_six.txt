@@ -1,0 +1,9 @@
+program #14420 on p2: 3.5 s
+--- output ---
+DONOR_PRE {"at":"2026-10-19T21:41:01.625Z","p":{"x":-4.5001908300367655,"y":50,"z":3.8073053728682744},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",6,null]],"time":23542,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+DONOR_POST_NOT_RECEIPT {"at":"2026-10-19T21:41:04.483Z","p":{"x":-4.500190830036834,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"inv":[],"time":23602,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"drops":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 iter37Sword3 HP29.854598999023438->29.854598999023438 own20 P320; finalendingpending.
+--- p2 now: (-4.5, 50, 2.3) in the_end, health 20/20, food 20/20, alive

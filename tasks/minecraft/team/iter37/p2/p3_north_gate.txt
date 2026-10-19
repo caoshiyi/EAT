@@ -1,0 +1,11 @@
+program #14414 on p2: 31.2 s
+--- output ---
+CUT {"q":{"x":-5,"y":51,"z":3},"n":"end_stone","state":{"at":"2026-10-19T21:40:26.732Z","p":{"x":-4.7,"y":50,"z":2.4999463676670115},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",7,null]],"time":22842,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":-5,"y":50,"z":3},"n":"end_stone","state":{"at":"2026-10-19T21:40:41.934Z","p":{"x":-4.7,"y":50,"z":2.4999463676670115},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",7,null]],"time":23142,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+P3_NORTH_READY {"at":"2026-10-19T21:40:42.788Z","p":{"x":-4.450613810751251,"y":50,"z":3.7579667296178427},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",7,null]],"time":23162,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P1 iter37Sword2 HP32.10459899902344->32.10459899902344 own20 P320; finalendingpending.
+p3: P2READY14415 nativefree1 cursorNULL HP20fixed-4.556/50/4.5. WOOD1pilotNOW then nativeACK+6. StoneAxepriority craftimmediate. P1continuecurrentDPS/nohold; axeETA~21:42.
+--- p2 now: (-4.5, 50, 3.8) in the_end, health 20/20, food 20/20, alive
