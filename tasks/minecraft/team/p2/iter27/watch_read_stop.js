@@ -1,0 +1,1 @@
+const w=global.p2I27Watch;if(!w)throw Error('watchmissing');bot.removeListener('physicsTick',w.listener);w.closed=true;console.log('WATCH_FINAL',JSON.stringify({environment:w.environment,started:w.started,ticks:w.ticks,rows:w.rows,closed:w.closed,p:bot.entity.position,hp:bot.health}));delete global.p2I27Watch;return {p:bot.entity.position,hp:bot.health};
