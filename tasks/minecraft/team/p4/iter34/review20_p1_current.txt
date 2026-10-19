@@ -1,0 +1,89 @@
+== #13017 2026-10-19T13:56:08 p1 role=mission_owner iter=34 7.8 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z);const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),time:bot.time.timeOfDay});
+const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99],[.01,.01,.5],[.99,.01,.5],[.5,.01,.01],[.5,.01,.99]]){let aim=q.offset(...a),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=aim.minus(eye),dist=d.norm();if(dist>4.4||dist<.001)continue;const h=bot.world.raycast(eye,d.scaled(1/dist),dist+.02);if(!h?.position.equals(q)||(f!==null&&h.face!==f))continue;await bot.lookAt(aim,true);await wait(1);let c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('face '+q+' f'+f);}
+async function cut(q){const b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!b||!['dirt','grass_block','spruce_log','stone','granite','diorite','andesite','cobblestone','gravel','copper_ore','iron_ore','coal_ore','netherrack','blackstone','sandstone','basalt','sand','snow','deepslate','cobbled_deepslate','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','tuff','bookshelf','oak_planks','spruce_planks','end_stone'].includes(b.name))throw Error('cut type '+b?.name);const suffix=b.name.endsWith('log')?'_axe':['dirt','grass_block','gravel'].includes(b.name)?'_shovel':'_pickaxe';const tool=bot.inventory.items().filter(i=>i.name.endsWith(suffix)).sort((a,b)=>(b.name.startsWith('stone_')?2:1)-(a.name.startsWith('stone_')?2:1))[0];if(tool)await bot.equip(tool,'hand');else await bot.unequip('hand');await face(q);await bot.dig(b,true,'raycast');await wait(4);if(bot.blockAt(q)?.boundingBox!=='empty')throw Error('cut post');console.log('CUT',q,b.name);}
+async function place(q,name='dirt'){if(full(q))return;if(bot.blockAt(q)?.boundingBox!=='empty')throw Error('occupied '+q);const item=bot.inventory.items().find(i=>i.name===name);if(!item)throw Error('fund '+name);for(let f=0;f<6;f++){const ref=q.minus(dirs[f]);if(!full(ref))continue;try{await face(ref,f);}catch{continue;}await bot.equip(item,'hand');await bot.placeBlock(bot.blockAt(ref),dirs[f]);await wait(4);if(!full(q))throw Error('place post');console.log('PLACE',q,name);return;}throw Error('noanchor '+q);}
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}
+async function move(q,ms=3500){const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.maxDropDown=2;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);const g=new goals.GoalBlock(q.x,q.y,q.z);bot.pathfinder.setGoal(g);let t=Date.now();try{while(Date.now()-t<ms&&!g.isEnd(bot.entity.position.floored()))await wait(1);}finally{stop();}await wait(q.y<bot.entity.position.y?12:3);if(!g.isEnd(bot.entity.position.floored())||!bot.entity.onGround)throw Error('move post '+JSON.stringify(state()));console.log('MOVE',bot.entity.position,bot.health,bot.food);}
+function boundary(){let q=bot.entity.position.floored();return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>({q:q.offset(...d),n:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));}
+async function end(){stop();for(let k=0;k<3;k++){console.log('ENDING',JSON.stringify({...state(),faces:boundary()}));await wait(3);}return state();}
+
+
+async function fight(){for(let k=0;k<8;k++){let es=Object.values(bot.entities).filter(e=>['piglin','piglin_brute','magma_cube','hoglin','skeleton','wither_skeleton','blaze'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<5);let enemy=null;for(const e of es){await bot.lookAt(e.position.offset(0,(e.height||1.8)*.5,0),true);if(bot.entityAtCursor(5)?.id===e.id){enemy=e;break;}}if(!enemy)return;console.log('VISIBLE_THREAT',enemy.name,enemy.position,bot.health);if(enemy.position.distanceTo(bot.entity.position)>3){await wait(5);continue;}await bot.equip(bot.inventory.items().find(i=>i.name==='stone_sword'),'hand');await bot.lookAt(enemy.position.offset(0,(enemy.height||1.8)*.5,0),true);if(bot.entityAtCursor(3.1)?.id===enemy.id){bot.attack(enemy);await wait(14);}}throw Error('unresolved threat');}
+async function secure(){stop();let p=bot.entity.position.floored();for(const d of[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[1,1,0],[-1,1,0],[0,1,1],[0,1,-1],[0,2,0]])if(!full(p.offset(...d)))await place(p.offset(...d),'cobblestone');console.log('SECURED',boundary());}
+
+console.log('SOURCE',JSON.stringify(state()));try{await move(v(77,50,0),10000);for(let x=76;x>=75;x--){let q=v(x,50,0);if(!full(q.offset(0,-1,0)))throw Error('floor');await cut(q.offset(0,1,0));await cut(q);await move(q);}await secure();}catch(e){console.log('FAIL',String(e));}finally{stop();}console.log('FINAL',JSON.stringify(state()));console.log('CRYSTALS',Object.values(bot.entities).filter(e=>e.name==='end_crystal').map(e=>[e.id,e.position]));
+-- output --
+SOURCE {"at":"2026-10-19T13:56:08.763Z","p":{"x":100.43263259579184,"y":49,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",22,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",63,null],["cobblestone",45,null],["stone_pickaxe",1,36],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":5891}
+MOVE Vec3 { x: 77.74296636232057, y: 50, z: 0.5 } 20 20
+CUT Vec3 { x: 76, y: 51, z: 0 } netherrack
+CUT Vec3 { x: 76, y: 50, z: 0 } cobblestone
+MOVE Vec3 { x: 76.64712255633616, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 75.80040770787149, y: 50, z: 0.5 } 20 20
+FAIL Error: Server refused to place cobblestone at (76, 50, 0): the block is still air
+FINAL {"at":"2026-10-19T13:56:16.550Z","p":{"x":75.77326327553595,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",64,null],["cobblestone",45,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":6031}
+CRYSTALS [
+  [ 5273, Vec3 { x: 33.5, y: 83, z: 24.5 } ],
+  [ 5277, Vec3 { x: 12.5, y: 101, z: 39.5 } ],
+  [ 5280, Vec3 { x: 33.5, y: 80, z: -24.5 } ],
+  [ 5318, Vec3 { x: -12.5, y: 104, z: -39.5 } ],
+  [ 5319, Vec3 { x: 12.5, y: 95, z: -39.5 } ],
+  [ 5364, Vec3 { x: -41.5, y: 98, z: -0.5 } ]
+]
+== #13024 2026-10-19T13:56:54 p1 role=mission_owner iter=34 20.4 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z);const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),time:bot.time.timeOfDay});
+const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99],[.01,.01,.5],[.99,.01,.5],[.5,.01,.01],[.5,.01,.99]]){let aim=q.offset(...a),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=aim.minus(eye),dist=d.norm();if(dist>4.4||dist<.001)continue;const h=bot.world.raycast(eye,d.scaled(1/dist),dist+.02);if(!h?.position.equals(q)||(f!==null&&h.face!==f))continue;await bot.lookAt(aim,true);await wait(1);let c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('face '+q+' f'+f);}
+async function cut(q){const b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!b||!['dirt','grass_block','spruce_log','stone','granite','diorite','andesite','cobblestone','gravel','copper_ore','iron_ore','coal_ore','netherrack','blackstone','sandstone','basalt','sand','snow','deepslate','cobbled_deepslate','stone_bricks','cracked_stone_bricks','mossy_stone_bricks','tuff','bookshelf','oak_planks','spruce_planks','end_stone'].includes(b.name))throw Error('cut type '+b?.name);const suffix=b.name.endsWith('log')?'_axe':['dirt','grass_block','gravel'].includes(b.name)?'_shovel':'_pickaxe';const tool=bot.inventory.items().filter(i=>i.name.endsWith(suffix)).sort((a,b)=>(b.name.startsWith('stone_')?2:1)-(a.name.startsWith('stone_')?2:1))[0];if(tool)await bot.equip(tool,'hand');else await bot.unequip('hand');await face(q);await bot.dig(b,true,'raycast');await wait(4);if(bot.blockAt(q)?.boundingBox!=='empty')throw Error('cut post');console.log('CUT',q,b.name);}
+async function place(q,name='dirt'){if(full(q))return;if(bot.blockAt(q)?.boundingBox!=='empty')throw Error('occupied '+q);const item=bot.inventory.items().find(i=>i.name===name);if(!item)throw Error('fund '+name);for(let f=0;f<6;f++){const ref=q.minus(dirs[f]);if(!full(ref))continue;try{await face(ref,f);}catch{continue;}await bot.equip(item,'hand');await bot.placeBlock(bot.blockAt(ref),dirs[f]);await wait(4);if(!full(q))throw Error('place post');console.log('PLACE',q,name);return;}throw Error('noanchor '+q);}
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}
+async function move(q,ms=3500){const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.maxDropDown=2;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);const g=new goals.GoalBlock(q.x,q.y,q.z);bot.pathfinder.setGoal(g);let t=Date.now();try{while(Date.now()-t<ms&&!g.isEnd(bot.entity.position.floored()))await wait(1);}finally{stop();}await wait(q.y<bot.entity.position.y?12:3);if(!g.isEnd(bot.entity.position.floored())||!bot.entity.onGround)throw Error('move post '+JSON.stringify(state()));console.log('MOVE',bot.entity.position,bot.health,bot.food);}
+function boundary(){let q=bot.entity.position.floored();return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>({q:q.offset(...d),n:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));}
+async function end(){stop();for(let k=0;k<3;k++){console.log('ENDING',JSON.stringify({...state(),faces:boundary()}));await wait(3);}return state();}
+
+
+async function fight(){for(let k=0;k<8;k++){let es=Object.values(bot.entities).filter(e=>['piglin','piglin_brute','magma_cube','hoglin','skeleton','wither_skeleton','blaze'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<5);let enemy=null;for(const e of es){await bot.lookAt(e.position.offset(0,(e.height||1.8)*.5,0),true);if(bot.entityAtCursor(5)?.id===e.id){enemy=e;break;}}if(!enemy)return;console.log('VISIBLE_THREAT',enemy.name,enemy.position,bot.health);if(enemy.position.distanceTo(bot.entity.position)>3){await wait(5);continue;}await bot.equip(bot.inventory.items().find(i=>i.name==='stone_sword'),'hand');await bot.lookAt(enemy.position.offset(0,(enemy.height||1.8)*.5,0),true);if(bot.entityAtCursor(3.1)?.id===enemy.id){bot.attack(enemy);await wait(14);}}throw Error('unresolved threat');}
+async function center(){stop();let c=bot.entity.position.floored().offset(.5,0,.5),t=Date.now();bot.setControlState('sneak',true);try{while(Math.hypot(c.x-bot.entity.position.x,c.z-bot.entity.position.z)>.065&&Date.now()-t<3000){await bot.lookAt(v(c.x,bot.entity.position.y+1.62,c.z),true);bot.setControlState('forward',true);await wait(1);}}finally{stop();}await wait(6);}
+async function secure(){stop();await center();let p=bot.entity.position.floored();for(const d of[[1,0,0],[-1,0,0],[0,0,1],[0,0,-1],[1,1,0],[-1,1,0],[0,1,1],[0,1,-1],[0,2,0]])if(!full(p.offset(...d)))await place(p.offset(...d),'cobblestone');console.log('SECURED',boundary());}
+
+console.log('SOURCE',JSON.stringify(state()));try{await cut(v(74,51,0));await cut(v(74,50,0));await move(v(74,50,0));for(const a of[[45,50,0],[44,50,3],[7,50,3],[5,50,2],[5,50,0]])await move(v(...a),12000);await secure();}catch(e){console.log('FAIL',String(e));}finally{stop();}console.log('FINAL',JSON.stringify(state()));for(let y=50;y<=61;y++)console.log('COLUMN',y,[0,3].map(z=>bot.blockAt(v(5,y,z))?.name));
+-- output --
+SOURCE {"at":"2026-10-19T13:56:54.923Z","p":{"x":75.76802900025126,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",64,null],["cobblestone",45,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":6811}
+MOVE Vec3 { x: 74.7289386573639, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 45.5, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 44.43250410392455, y: 50, z: 3.5 } 20 20
+MOVE Vec3 { x: 7.77871011474582, y: 50, z: 3.5 } 20 20
+MOVE Vec3 { x: 5.5, y: 50, z: 2.4809313653513936 } 20 20
+MOVE Vec3 { x: 5.499999999999912, y: 50, z: 0.5 } 20 20
+PLACE Vec3 { x: 5, y: 50, z: 1 } cobblestone
+PLACE Vec3 { x: 5, y: 50, z: -1 } cobblestone
+PLACE Vec3 { x: 5, y: 51, z: 1 } cobblestone
+PLACE Vec3 { x: 5, y: 51, z: -1 } cobblestone
+SECURED [
+  { q: Vec3 { x: 5, y: 49, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 52, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 50, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 51, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 4, y: 50, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 4, y: 51, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 50, z: 1 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 51, z: 1 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 50, z: -1 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 51, z: -1 }, n: 'cobblestone', full: true }
+]
+FINAL {"at":"2026-10-19T13:57:15.315Z","p":{"x":5.499999999999912,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",60,null],["cobblestone",45,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":7211}
+COLUMN 50 [ 'air', 'air' ]
+COLUMN 51 [ 'air', 'air' ]
+COLUMN 52 [ 'end_stone', 'air' ]
+COLUMN 53 [ 'end_stone', 'air' ]
+COLUMN 54 [ 'end_stone', 'air' ]
+COLUMN 55 [ 'end_stone', 'air' ]
+COLUMN 56 [ 'end_stone', 'air' ]
+COLUMN 57 [ 'end_stone', 'air' ]
+COLUMN 58 [ 'end_stone', 'air' ]
+COLUMN 59 [ 'end_stone', 'air' ]
+COLUMN 60 [ 'air', 'air' ]
+COLUMN 61 [ 'air', 'air' ]

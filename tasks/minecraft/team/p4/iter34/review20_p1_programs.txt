@@ -1,0 +1,95 @@
+== #12995 2026-10-19T13:54:06 p1 role=mission_owner iter=34 0 s
+const {Vec3}=require('vec3');console.log('BEDS',bot.findBlocks({matching:b=>b.name.endsWith('_bed'),maxDistance:48,count:20}));console.log('TABLES',bot.findBlocks({matching:bot.registry.blocksByName.crafting_table.id,maxDistance:20,count:10}));console.log('WEBS',bot.findBlocks({matching:bot.registry.blocksByName.cobweb.id,maxDistance:20,count:12}));for(let z=2230;z<=2234;z++)console.log('ROOM',z,[140,141,142,143,144].map(x=>[-37,-36,-35,-34].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)));
+-- output --
+BEDS []
+TABLES [ Vec3 { x: 140, y: -36, z: 2232 } ]
+WEBS []
+ROOM 2230 [
+  [ 'air', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'cracked_stone_bricks', 'air', 'air', 'air' ],
+  [ 'stone_bricks', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'stone_bricks', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'stone_bricks', 'air', 'blackstone', 'air' ]
+]
+ROOM 2231 [
+  [ 'mossy_stone_bricks', 'air', 'cave_air', 'cave_air' ],
+  [ 'stone_bricks', 'torch', 'cave_air', 'air' ],
+  [ 'cracked_stone_bricks', 'air', 'air', 'air' ],
+  [ 'stone_bricks', 'cave_air', 'cave_air', 'cave_air' ],
+  [ 'stone_bricks', 'air', 'air', 'cave_air' ]
+]
+ROOM 2232 [
+  [ 'air', 'crafting_table', 'mossy_stone_bricks', 'cave_air' ],
+  [ 'air', 'bookshelf', 'air', 'air' ],
+  [ 'cracked_stone_bricks', 'air', 'cave_air', 'cave_air' ],
+  [ 'mossy_stone_bricks', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'mossy_stone_bricks', 'air', 'cave_air', 'basalt' ]
+]
+ROOM 2233 [
+  [
+    'mossy_stone_bricks',
+    'mossy_stone_bricks',
+    'stone_bricks',
+    'stone_bricks'
+  ],
+  [ 'air', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'stone_bricks', 'air', 'cave_air', 'cave_air' ],
+  [ 'stone_bricks', 'bookshelf', 'bookshelf', 'bookshelf' ],
+  [ 'stone_bricks', 'air', 'air', 'air' ]
+]
+ROOM 2234 [
+  [
+    'cracked_stone_bricks',
+    'stone_bricks',
+    'mossy_stone_bricks',
+    'cave_air'
+  ],
+  [ 'cracked_stone_bricks', 'cave_air', 'cave_air', 'cave_air' ],
+  [ 'mossy_stone_bricks', 'cave_air', 'cave_air', 'cave_air' ],
+  [ 'cracked_stone_bricks', 'cave_air', 'cave_air', 'cave_air' ],
+  [ 'cracked_stone_bricks', 'cave_air', 'cave_air', 'air' ]
+]
+== #12996 2026-10-19T13:54:06 p1 role=mission_owner iter=34 0 s
+bot.chat("CRITICAL fresh12989 current142.68/-36/2231.5 full20/20: historicalbed142/-36/2232 nowAIR, nocheckpointactivation. Searchcurrentbeds next. P3 portablebeds distinct operation accepted; change priority firstbed currentcheckpoint then2spare asmaterial permits. Existingtable carriedP1,2freshpicks still. End entry target13:55 may slip forcheckpoint; no oldbed claim.")
+== #12998 2026-10-19T13:54:22 p1 role=mission_owner iter=34 0.1 s
+console.log('WEB48',bot.findBlocks({matching:b=>b.name==='cobweb',maxDistance:64,count:30}));console.log('WOOL',bot.findBlocks({matching:b=>b.name.endsWith('_wool'),maxDistance:48,count:10}));console.log('CHESTS',bot.findBlocks({matching:b=>b.name==='chest',maxDistance:16,count:10}));console.log('NEAR',Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<10).map(e=>[e.name,e.position]));
+-- output --
+WEB48 [
+  Vec3 { x: 168, y: -35, z: 2222 },
+  Vec3 { x: 171, y: -36, z: 2222 },
+  Vec3 { x: 172, y: -38, z: 2224 },
+  Vec3 { x: 172, y: -35, z: 2223 },
+  Vec3 { x: 174, y: -37, z: 2225 },
+  Vec3 { x: 174, y: -35, z: 2223 },
+  Vec3 { x: 175, y: -37, z: 2229 },
+  Vec3 { x: 175, y: -37, z: 2227 },
+  Vec3 { x: 175, y: -35, z: 2227 }
+]
+WOOL []
+CHESTS [ Vec3 { x: 154, y: -35, z: 2227 } ]
+NEAR [
+  [
+    'player',
+    Vec3 { x: 142.6428308297969, y: -36, z: 2231.5002456646544 }
+  ],
+  [
+    'item',
+    Vec3 { x: 151.3950263355445, y: -36, z: 2236.2093631996445 }
+  ],
+  [
+    'item',
+    Vec3 { x: 148.5144276141059, y: -37, z: 2234.8483272788503 }
+  ],
+  [
+    'item',
+    Vec3 { x: 148.8577200274121, y: -36, z: 2236.0234113620227 }
+  ],
+  [
+    'item',
+    Vec3 { x: 146.9745273177528, y: -36, z: 2231.1250791958423 }
+  ],
+  [
+    'item',
+    Vec3 { x: 146.17753467320074, y: -36, z: 2231.1249762320276 }
+  ]
+]
