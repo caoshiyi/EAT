@@ -1,0 +1,33 @@
+[sandbox] program #276 on p4: 5.8 s
+--- output ---
+DRY_SOURCE {"at":"2026-10-19T05:40:02.384Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":false,"inventory":[["dirt",2]]}
+DRY_CUT {"q":{"x":0,"y":56,"z":-25},"state":{"at":"2026-10-19T05:40:03.492Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":false,"inventory":[["dirt",2]]}}
+DRY_CUT {"q":{"x":0,"y":55,"z":-25},"state":{"at":"2026-10-19T05:40:04.643Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":false,"inventory":[["dirt",2]]}}
+DRY_CUT {"q":{"x":-1,"y":57,"z":-25},"state":{"at":"2026-10-19T05:40:05.947Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":false,"inventory":[["dirt",2]]}}
+DRY_PUT {"q":{"x":-2,"y":57,"z":-25},"state":{"at":"2026-10-19T05:40:06.650Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":true,"inventory":[["dirt",2]]}}
+DRY_PLUGGED {"at":"2026-10-19T05:40:08.153Z","p":{"x":-0.5334713974489094,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":true,"inventory":[["dirt",4]]}
+DRY_FAILURE Error: water not excluded
+DRY_END {"at":"2026-10-19T05:40:08.154Z","p":{"x":-0.5334713974489094,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"water":true,"inventory":[["dirt",4]]}
+--- returned ---
+{
+ "at": "2026-10-19T05:40:08.154Z",
+ "p": {
+  "x": -0.5334713974489094,
+  "y": 55,
+  "z": -24.48062359791109
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "water": true,
+ "inventory": [
+  [
+   "dirt",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p2 was doomed to fall by Ender Dragon
+--- p4 now: (-0.5, 55, -24.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: dry_exit.js
