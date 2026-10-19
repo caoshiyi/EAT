@@ -1,3 +1,7 @@
+// RETIRED: LIVE12012 failed before wood; full operation is unqualified.
+// Exact attempted source: retained_workstation_12012_failed_exact.js and arena records.
+// matching callbacks may lack positions; only the read-only corrected search pattern
+// in log_matcher_read_probe.js has been tested. Do not resume the retired recovery chain.
 const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z),began=Date.now();let dead=false,timer,ending=false,aborted=false;const die=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',die);const snap=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count])});
 const cnt=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
 const alive=()=>{if(dead||bot.health<(ending?1:15)||bot.game.dimension!=='overworld'||Date.now()-began>(ending?285000:205000))throw Error('life/budget');if(aborted&&!ending)throw Error('peer stop');};

@@ -1,4 +1,4 @@
-# Material provisional override — 2026-10-19 08:49 UTC
+# Material provisional override — 2026-10-19 08:50 UTC
 
 **Work continues through09:07; closure evaluator/final reconciliation still pending.** Complete provisional was already checkpointed08:18 before90. Current assignment is **REVIEW ONLY** per P2 message08:42:53: no new wood/delivery/independent recovery chain, coordinate resets only when requested/idle/preserved. P4 has NO outstanding program or reset.
 
@@ -10,7 +10,7 @@ P2currentlastactual12017 at08:47:42: **OW(-3.5,46,-38.5),20HP20food,Gravel11**. 
 
 G4 deep-water325 actual physiologicaloutcome qualified despite internalqualified:false (wet71.5% vschosen80%policy): source3x3level0water/deep2below,20sHP20/eyeAIR200samples/rawoxygen396–400, returnsolidhome20HP. 326→LIVE11993 moved~35m232→267healthywithjumpheld; nofullenclosureclaim. Genericvoyagesmokemoved2.71mthenfrontblocked269.7; undericecleareronlyhandledownhead/submersion, frontkindnotobservedbyP4. Dryidlehopsfood19→16; nextPFlegsreached59.7/62/266.5then65.5/70/304.35butunprotectedendinglostkit. NoEndentry/crystal/Dragon effect thisiteration.
 
-Fresh canonical audit08:49: **LIVE9 (P2seven/P4two), SB4 (P4all)**, includingidleSB31:21. Savedopening0dragon/11milestones/188deathsisSTALE; do notclaim195/197officialwithoutclosingeval. P4helperbothworlddatefilterrecordsarein death_audit_0849.json/txt. G4 remains divergentcurrentpracticecopyofoldLIVEcoastkit, notrecoveryoflostmainkit; noG5resetrequested.
+Fresh canonical audit 2026-10-19T08:50:11.312077+00:00: **LIVE9 (P2seven/P4two), SB4 (P4all)**, includingidleSB31:21. Savedopening0dragon/11milestones/188deathsisSTALE; do notclaim195/197officialwithoutclosingeval. P4helperbothworlddatefilterrecordsarein death_audit_0849.json/txt. G4 remains divergentcurrentpracticecopyofoldLIVEcoastkit, notrecoveryoflostmainkit; noG5resetrequested.
 
 Next: review actual P2gravel-fundedascent/successor ratherthannewdonorprep. Keep exact failures and actualuse/retention separate; no permissiongate. Fix null-position findBlocks matcher only as read-onlysmalltoolprobe (filter returnedVec3 positions outside matching callback), no renewedwoodoperation. Final09:07 evaluator, bothworldcanonicaldeaths, actuallivingbodies/controls/geometry, finalappendandowncommit/noPush. Sources/failedgates/detailedrecords below are dated and superseded whereconflicting.
 

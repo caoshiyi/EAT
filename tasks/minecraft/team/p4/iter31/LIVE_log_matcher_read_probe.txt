@@ -1,0 +1,111 @@
+program #12021 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-19T08:52:32.678Z",
+ "p": {
+  "x": 0.5327346695677078,
+  "y": 57,
+  "z": -23.520657648409106
+ },
+ "hp": 20,
+ "inventory": [
+  [
+   "dirt",
+   4
+  ]
+ ],
+ "stats": {
+  "calls": 29011,
+  "nullPosition": 339
+ },
+ "allCount": 80,
+ "eligible": [
+  {
+   "x": 18,
+   "y": 69,
+   "z": -27
+  },
+  {
+   "x": 18,
+   "y": 71,
+   "z": -27
+  },
+  {
+   "x": 15,
+   "y": 73,
+   "z": -32
+  },
+  {
+   "x": 18,
+   "y": 72,
+   "z": -27
+  },
+  {
+   "x": 15,
+   "y": 74,
+   "z": -32
+  },
+  {
+   "x": 18,
+   "y": 73,
+   "z": -27
+  },
+  {
+   "x": 18,
+   "y": 74,
+   "z": -27
+  },
+  {
+   "x": 18,
+   "y": 75,
+   "z": -27
+  },
+  {
+   "x": 18,
+   "y": 76,
+   "z": -27
+  },
+  {
+   "x": 19,
+   "y": 75,
+   "z": -31
+  },
+  {
+   "x": 24,
+   "y": 70,
+   "z": -25
+  },
+  {
+   "x": 24,
+   "y": 71,
+   "z": -25
+  },
+  {
+   "x": 24,
+   "y": 72,
+   "z": -25
+  },
+  {
+   "x": 24,
+   "y": 73,
+   "z": -25
+  },
+  {
+   "x": 15,
+   "y": 75,
+   "z": -41
+  },
+  {
+   "x": 24,
+   "y": 74,
+   "z": -25
+  }
+ ],
+ "limit": "Read-only matcher fix: match by type/name, then filter returned Vec3 positions. No physical interaction, route, harvest or workstation qualification."
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (0.5, 57, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: log_matcher_read_probe.js
