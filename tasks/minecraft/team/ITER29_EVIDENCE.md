@@ -15,3 +15,11 @@ Updated 04:06:40 UTC 2026-10-19. Reviewer controls no player, runs no arena prog
 Openingreflection within5min, checkpoint ee6b0826. Minute20 capture16s late and written comparison later; minute40due04:19:41, completeprovisionalby05:09:41, final105–110=05:24:41–05:29:41. Historical excluded exposure/claimednonuse and reporting corrections retained, no ancestrycertificate. Reviewer didnot open excluded17–19/clientmaterial/server/.work/internet, edittools/playerfiles, orpush. Tokenusage unavailable.
 
 CurrentSB override: G29-2 SB241 reviewed04:08, hazardabort beforecontact→rapidreturn endpointfailure54/2HP→fallback53/2HP/post04:07:16.386/wood57/Snow1/Sand2. No freshENDING print; fullhome/6HP superseded. No livechange or sandboxdeath inferred.
+
+04:10 currentgeneration override: G29-3 READY04:09:35/chat10898–99,0.7copy/29.7total/exactinstantunknown; freshstatusLIVEcopy50/10HP/Snow1/194stone/wood28. G2final2HP/53fallback/wood57 discarded, notphysicalhealing. No newLIVEeffect.
+
+04:13 currentSB override: G29-3 SB242 full50/5.5HP afternativeclimbHPabort/noattack, post04:12:21.511/wood56/Snow1. Rapidreturn actual55/loweridx6 qualifiedcase; former54landing branchstilluntested. Noinjurycauseinference. LIVEunchanged.
+
+Minute40 comparison04:19:41+: no newLIVEeffect/adoption/delivery/death. Real bounded SBpreparation/return gains, butcontactretiredwithoutattack; damage/repeatability unresolved. G4READY04:16:40(.6copy/16.0total) copiesLIVE10HP/wood28; G3injury discardednothealed. Newcrystalpilot is prospective, entireeffect/retention/reusechainuntested. FreshLIVE11686 at04:15:34.057 stillsix/50/10HP/Snow1/194stone/wood28.
+
+Completeprovisional published04:20 before90; final105–110 checks stilldue. Minute40written04:19:59=18slate. P4courierretirement10921–23 says2.3km is inheritednarrative, notfreshmeasurement; no wholetransport/receipt.
