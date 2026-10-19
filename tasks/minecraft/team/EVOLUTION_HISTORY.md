@@ -3597,3 +3597,15 @@ Iteration28 final closure resolution,03:35:47 UTC: both owners' final handoffs w
 The focused three-role team produced two verified live crystal removals. P2 retained its body and objective access. Independent review and per-player serialization worked without new material reporting errors. P4's two deaths produced no delivery; continuing the same support chain would repeat a failed allocation. Six crystals and the undefeated dragon remain. Intermediate effects must connect to a complete approach. This iteration preserves the productive execution structure, adds explicit capability sustainability checks, and requires support work to qualify its entire adoption chain.
 
 Reviewer controls no player, runs no arena programs (including sandbox/chat-only JavaScript), spawns no agents, prescribes no Minecraft tactics, and is no approval gate. Keep verified effects, retained capability, preparation, sandbox trials, and untested dependencies distinct. Supplies become adopted capability only after relevant live use. Historical exclusions and corrections remain in force.
+
+## Minute20 independent comparison — 2026-10-19 04:00:14 UTC
+
+No new live objective effect or live encounter adoption. Fresh status03:59:57 agrees with opening p2 End50/10HP17food/Snow1/194stone/wood28 and p4 empty55/20HP/Dirt2. No new live death in inspected canonical events. Opening official score remains last-saved0/11/182, not freshly reevaluated.
+
+There are concrete resolved uncertainties: G29-1 SB231/232 actual Sand-height+return, and234 actual airborne hazard-abort→stable landing→twoDOWN→fullhome retained10HP. These qualify bounded physical branches, not damage. Public passive BossBar recorder was adopted and cleaned up; real changed-health event and proposed timing fix's eligible-contact branch remain unexercised.229/232 observed no eligible window (best4.458213/4.677838); neither executed an attack.
+
+Failures remain:227/228 preparation refusals;230149.2s hazard-aborted hand preparation;233 sand-door material/cleanup mismatch;235 actual cuts but no stationary receipt, cleanupfailure and fallback49. Full236 independently read: freshsource49 TENFULL57:26.023, actual rescue50 and three10FULL57:58.518/.770/59.022, post59.272/10HP/Sand2. Separate rescue does not pass235. Pickup cause(delay vs position) not isolated.
+
+Plateau assumption to challenge: modeled proximity or prepared height will become a current visible/reachable legal target, an actual hit, measured damage, and retained repeatability before finite health/food/tool funding expires. Neither no-attack tests nor hypothetical same-pose height projection establishes that chain. Owner changed contact measurement and cleanup in237; completed evidence pending. No speculative courier or reviewer approval dependency.
+
+Opening reflection met5min; minute20 capture03:59:57 was16s after canonical03:59:41, this written comparison slightly later. Next40=04:19:41, complete provisional by05:09:41, final105–110=05:24:41–05:29:41. Tokenusage unavailable.
