@@ -1,0 +1,35 @@
+[sandbox] program #27 on p2: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:00:10.323Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6144,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"overworld"}
+RESCUE_STOP Error: alreadychangedLife
+ENDING {"at":"2026-10-19T17:00:10.323Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6144,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":143,"y":-37,"z":2231},"n":"stone_bricks","full":true},{"q":{"x":143,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":144,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":144,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":143,"y":-36,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+ENDING {"at":"2026-10-19T17:00:10.425Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6164,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":143,"y":-37,"z":2231},"n":"stone_bricks","full":true},{"q":{"x":143,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":144,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":144,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":143,"y":-36,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+ENDING {"at":"2026-10-19T17:00:10.576Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":6164,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":143,"y":-37,"z":2231},"n":"stone_bricks","full":true},{"q":{"x":143,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":144,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":144,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":143,"y":-36,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:00:10.726Z",
+ "p": {
+  "x": 143.5,
+  "y": -36,
+  "z": 2231.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [],
+ "time": 6164,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+[server] p2 was killed by Ender Dragon using magic
+[server] p2 was shot by Skeleton
+--- p2 now: (143.5, -36, 2231.5) in overworld, health 20/20, food 20/20, alive
