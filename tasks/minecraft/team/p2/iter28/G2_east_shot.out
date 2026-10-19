@@ -1,0 +1,165 @@
+[sandbox] program #203 on p2: 44 s
+--- output ---
+ENVIRONMENT G28-2 east80 APEX Snow, continuous8DOWN+21flat escape qualifiedsmall; whole02:07–02:17
+LIVE_ACTUAL_SOURCE_COMPARE {"at":"2026-10-19T02:10:19.967Z","p":{"x":-10.693465172026942,"y":50,"z":-10.50015432744789},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",5,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+ACTUAL_ROUTE_START_MAP [{"q":{"x":-11,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-10,"y":50,"z":-11},"feet":"end_stone","head":"end_stone","roof":"end_stone","floor":"end_stone"},{"q":{"x":-9,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-8,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-7,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-6,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-5,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-4,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-3,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-2,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":-1,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":0,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":1,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":2,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":3,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":4,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":5,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":6,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":7,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":8,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":9,"y":50,"z":-11},"feet":"air","head":"air","roof":"end_stone","floor":"end_stone"},{"q":{"x":10,"y":50,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":11,"y":51,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":12,"y":52,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":13,"y":53,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":14,"y":54,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":15,"y":55,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":16,"y":56,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":17,"y":57,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"},{"q":{"x":18,"y":58,"z":-11},"feet":"air","head":"air","roof":"air","floor":"end_stone"}]
+SURFACE_ACTUAL_START {"at":"2026-10-19T02:10:19.967Z","p":{"x":-10.693465172026942,"y":50,"z":-10.50015432744789},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",5,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: -10, y: 51, z: -11 } end_stone
+CUT Vec3 { x: -10, y: 50, z: -11 } end_stone
+ACTUAL_STAIR {"at":"2026-10-19T02:10:25.890Z","target":{"x":-10,"y":50,"z":-11},"p":{"x":-9.402756264093842,"y":50,"z":-10.500154327448007},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:26.545Z","target":{"x":-9,"y":50,"z":-11},"p":{"x":-8.543733571105154,"y":50,"z":-10.500154327448085},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:27.298Z","target":{"x":-8,"y":50,"z":-11},"p":{"x":-7.46887642620844,"y":50,"z":-10.500154327448183},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:28.048Z","target":{"x":-7,"y":50,"z":-11},"p":{"x":-6.394019281311726,"y":50,"z":-10.50015432744828},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:28.701Z","target":{"x":-6,"y":50,"z":-11},"p":{"x":-5.5349965883230405,"y":50,"z":-10.500154327448358},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:29.452Z","target":{"x":-5,"y":50,"z":-11},"p":{"x":-4.460139443426327,"y":50,"z":-10.500154327448456},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:30.204Z","target":{"x":-4,"y":50,"z":-11},"p":{"x":-3.3852822985296127,"y":50,"z":-10.500154327448554},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:30.855Z","target":{"x":-3,"y":50,"z":-11},"p":{"x":-2.526259605540928,"y":50,"z":-10.500154327448632},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:31.605Z","target":{"x":-2,"y":50,"z":-11},"p":{"x":-1.451402460644215,"y":50,"z":-10.50015432744873},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:32.357Z","target":{"x":-1,"y":50,"z":-11},"p":{"x":-0.37654531574750166,"y":50,"z":-10.500154327448827},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:33.008Z","target":{"x":0,"y":50,"z":-11},"p":{"x":0.4824773772411839,"y":50,"z":-10.500154327448906},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:33.760Z","target":{"x":1,"y":50,"z":-11},"p":{"x":1.5573345221378971,"y":50,"z":-10.500154327449003},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:34.513Z","target":{"x":2,"y":50,"z":-11},"p":{"x":2.6321916670346104,"y":50,"z":-10.500154327449101},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:35.166Z","target":{"x":3,"y":50,"z":-11},"p":{"x":3.491214360023295,"y":50,"z":-10.500154327449179},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:35.916Z","target":{"x":4,"y":50,"z":-11},"p":{"x":4.566071504920009,"y":50,"z":-10.500154327449277},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:36.667Z","target":{"x":5,"y":50,"z":-11},"p":{"x":5.640928649816723,"y":50,"z":-10.500154327449374},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:37.317Z","target":{"x":6,"y":50,"z":-11},"p":{"x":6.499951342805408,"y":50,"z":-10.500154327449453},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:38.068Z","target":{"x":7,"y":50,"z":-11},"p":{"x":7.574808487702122,"y":50,"z":-10.50015432744955},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:38.719Z","target":{"x":8,"y":50,"z":-11},"p":{"x":8.433831180690811,"y":50,"z":-10.500154327449629},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:39.472Z","target":{"x":9,"y":50,"z":-11},"p":{"x":9.508688325587524,"y":50,"z":-10.500154327449726},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:40.224Z","target":{"x":10,"y":50,"z":-11},"p":{"x":10.583545470484237,"y":50,"z":-10.500154327449824},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:41.176Z","target":{"x":11,"y":51,"z":-11},"p":{"x":11.59708114759879,"y":51,"z":-10.500154327449913},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:42.127Z","target":{"x":12,"y":52,"z":-11},"p":{"x":12.59708114759879,"y":52,"z":-10.500154327450002},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:43.079Z","target":{"x":13,"y":53,"z":-11},"p":{"x":13.59708114759879,"y":53,"z":-10.50015432745009},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:44.033Z","target":{"x":14,"y":54,"z":-11},"p":{"x":14.59708114759879,"y":54,"z":-10.50015432745018},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:44.986Z","target":{"x":15,"y":55,"z":-11},"p":{"x":15.59708114759879,"y":55,"z":-10.500154327450268},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:45.936Z","target":{"x":16,"y":56,"z":-11},"p":{"x":16.597081147598782,"y":56,"z":-10.500154327450357},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:46.892Z","target":{"x":17,"y":57,"z":-11},"p":{"x":17.59708114759879,"y":57,"z":-10.500154327450446},"hp":10}
+ACTUAL_STAIR {"at":"2026-10-19T02:10:47.846Z","target":{"x":18,"y":58,"z":-11},"p":{"x":18.508832015884302,"y":58,"z":-10.500154327450518},"hp":10}
+FAILURE Error: ACTUALjump rayrefused [{"n":"visibleFrontTop","h":1.62,"hit":{"p":{"x":31,"y":80,"z":-23},"name":"iron_bars"}},{"n":"actualOutgoingDirection","h":1.62,"hit":null},{"n":"visibleFrontTop","h":1.8,"hit":{"p":{"x":31,"y":80,"z":-23},"name":"iron_bars"}},{"n":"actualOutgoingDirection","h":1.8,"hit":null}] {"at":"2026-10-19T02:10:48.198Z","state":{"at":"2026-10-19T02:10:48.198Z","p":{"x":18.508832015884302,"y":59.25220334025373,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":false,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",64],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"fired":false,"hazardRetired":false}
+CONTINUOUS_ESCAPE_START {"at":"2026-10-19T02:10:48.497Z","state":{"at":"2026-10-19T02:10:48.497Z","p":{"x":18.508832015884302,"y":58,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",64],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"idx":29}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T02:10:57.069Z","start":{"x":18,"y":58,"z":-11},"end":{"x":-11,"y":50,"z":-11},"p":{"x":-10.619829209269957,"y":50,"z":-10.500154327450518},"hp":10,"elapsedMs":8571,"samples":[{"at":"2026-10-19T02:10:48.547Z","p":{"x":18.41083197735172,"y":58,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:48.598Z","p":{"x":18.259323917780346,"y":58,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:48.647Z","p":{"x":18.078600478721793,"y":58,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:48.697Z","p":{"x":17.88192544246324,"y":58,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:48.747Z","p":{"x":17.676540834133487,"y":58,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:48.797Z","p":{"x":17.46640079945286,"y":57.92159999847412,"z":-10.500154327450518},"ground":false,"hp":10},{"at":"2026-10-19T02:10:48.848Z","p":{"x":17.33206434051724,"y":57.76636799395752,"z":-10.500154327450518},"ground":false,"hp":10},{"at":"2026-10-19T02:10:48.897Z","p":{"x":17.3,"y":57.53584062504456,"z":-10.500154327450518},"ground":false,"hp":10},{"at":"2026-10-19T02:10:48.947Z","p":{"x":17.3,"y":57.231523797587016,"z":-10.500154327450518},"ground":false,"hp":10},{"at":"2026-10-19T02:10:48.997Z","p":{"x":17.2804,"y":57,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:49.047Z","p":{"x":17.16456396146742,"y":57,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:49.097Z","p":{"x":17.003317445896045,"y":57,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:49.148Z","p":{"x":16.817276809861493,"y":57,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:49.198Z","p":{"x":16.617698584054043,"y":57,"z":-10.500154327450518},"ground":true,"hp":10},{"at":"2026-10-19T02:10:49.248Z","p":{"x":16.410728834230593,"y":56.92159999847412,"z":-10.500154327450518},"ground":false,"hp":10},{"at":"2026-10-19T02:10:49.298Z","p":{"x":16.3,"y":56.76636799395752,"z":-10.500154327450518},"ground":false,"hp":10}]}
+PUT Vec3 { x: -10, y: 50, z: -11 } end_stone
+PUT Vec3 { x: -10, y: 51, z: -11 } end_stone
+ENDING {"state":{"at":"2026-10-19T02:10:58.122Z","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":-11,"y":49,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":52,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-12},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-12},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:10:58.373Z","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":-11,"y":49,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":52,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-12},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-12},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-19T02:10:58.623Z","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":-11,"y":49,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":52,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-10,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":50,"z":-11},"name":"end_stone","full":true},{"p":{"x":-12,"y":51,"z":-11},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-10},"name":"end_stone","full":true},{"p":{"x":-11,"y":50,"z":-12},"name":"end_stone","full":true},{"p":{"x":-11,"y":51,"z":-12},"name":"end_stone","full":true}]}
+SURFACE_ACTUAL_POST {"at":"2026-10-19T02:11:03.913Z","elapsedMs":43947,"state":{"at":"2026-10-19T02:11:03.913Z","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",62],["sand",2],["end_stone",60],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",7,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"fired":false,"hazardRetired":false,"flight":[],"events":[],"targetPresent":true,"crystals":[{"id":226,"name":"end_crystal","p":{"x":12.5,"y":101,"z":39.5},"velocity":{"x":0,"y":0,"z":0}},{"id":228,"name":"end_crystal","p":{"x":-12.5,"y":92,"z":39.5},"velocity":{"x":0,"y":0,"z":0}},{"id":241,"name":"end_crystal","p":{"x":33.5,"y":83,"z":24.5},"velocity":{"x":0,"y":0,"z":0}},{"id":245,"name":"end_crystal","p":{"x":33.5,"y":80,"z":-24.5},"velocity":{"x":0,"y":0,"z":0}},{"id":247,"name":"end_crystal","p":{"x":-12.5,"y":104,"z":-39.5},"velocity":{"x":0,"y":0,"z":0}},{"id":252,"name":"end_crystal","p":{"x":12.5,"y":95,"z":-39.5},"velocity":{"x":0,"y":0,"z":0}},{"id":267,"name":"end_crystal","p":{"x":-41.5,"y":98,"z":-0.5},"velocity":{"x":0,"y":0,"z":0}}]}
+OPERATION_GUARD {"startHp":10,"hp":10,"damaged":false,"dead":false,"mode":"escape","failures":[]}
+HAZARD_TRACE {"rows":[{"at":"2026-10-19T02:10:19.966Z","ms":0,"event":"start","p":{"x":-10.693465172026942,"y":50,"z":-10.50015432744789},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:52.656Z","ms":32690,"event":"sample","p":{"x":8.34160522572265,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:52.906Z","ms":32940,"event":"sample","p":{"x":7.262803239367645,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:53.157Z","ms":33191,"event":"sample","p":{"x":6.183531612247831,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:53.406Z","ms":33440,"event":"sample","p":{"x":5.104237195932199,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:53.657Z","ms":33691,"event":"sample","p":{"x":4.024941673776773,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:53.906Z","ms":33940,"event":"sample","p":{"x":2.94564609796076,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:54.157Z","ms":34191,"event":"sample","p":{"x":1.8663505195408805,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:54.409Z","ms":34443,"event":"sample","p":{"x":0.787054940994649,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:54.610Z","ms":34644,"event":"sample","p":{"x":-0.2922406375577135,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:54.861Z","ms":34895,"event":"sample","p":{"x":-1.3715362161103732,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:55.112Z","ms":35146,"event":"sample","p":{"x":-2.450831794663048,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:55.363Z","ms":35397,"event":"sample","p":{"x":-3.5301273732157226,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:55.615Z","ms":35649,"event":"sample","p":{"x":-4.6094229517684,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:55.864Z","ms":35898,"event":"sample","p":{"x":-5.6887185303210765,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:56.115Z","ms":36149,"event":"sample","p":{"x":-6.7680141088737535,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:56.366Z","ms":36400,"event":"sample","p":{"x":-7.8473096874264305,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:56.618Z","ms":36652,"event":"sample","p":{"x":-8.926605265979102,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:56.868Z","ms":36902,"event":"sample","p":{"x":-10.005900844531775,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:57.119Z","ms":37153,"event":"sample","p":{"x":-10.65496488592194,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:57.368Z","ms":37402,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:57.619Z","ms":37653,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:57.870Z","ms":37904,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:58.122Z","ms":38156,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:58.373Z","ms":38407,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:58.622Z","ms":38656,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:58.873Z","ms":38907,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:59.124Z","ms":39158,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:59.377Z","ms":39411,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:59.628Z","ms":39662,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:10:59.881Z","ms":39915,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:00.132Z","ms":40166,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:00.382Z","ms":40416,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:00.633Z","ms":40667,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:00.886Z","ms":40920,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:01.136Z","ms":41170,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:01.388Z","ms":41422,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:01.641Z","ms":41675,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:01.892Z","ms":41926,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:02.142Z","ms":42176,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:02.392Z","ms":42426,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:02.648Z","ms":42682,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:02.899Z","ms":42933,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:03.151Z","ms":43185,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:03.407Z","ms":43441,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:03.662Z","ms":43696,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:03.865Z","ms":43899,"event":"sample","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T02:11:03.914Z","ms":43948,"event":"stop","p":{"x":-10.693465172026942,"y":50,"z":-10.500154327450518},"hp":10,"food":17,"ground":true,"loadedHazardCount":0,"entities":[]}],"dropped":130,"requestedLimit":48,"effectiveLimit":48,"elapsedMs":43948,"listenersRemoved":true}
+--- returned ---
+{
+ "at": "2026-10-19T02:11:03.914Z",
+ "p": {
+  "x": -10.693465172026942,
+  "y": 50,
+  "z": -10.500154327450518
+ },
+ "hp": 10,
+ "food": 17,
+ "dim": "the_end",
+ "ground": true,
+ "inv": [
+  [
+   "sandstone",
+   1
+  ],
+  [
+   "cobbled_deepslate",
+   14
+  ],
+  [
+   "blackstone",
+   30
+  ],
+  [
+   "nether_bricks",
+   6
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   7
+  ],
+  [
+   "cracked_stone_bricks",
+   1
+  ],
+  [
+   "stone_bricks",
+   9
+  ],
+  [
+   "snowball",
+   2
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "stone_shovel",
+   1
+  ],
+  [
+   "basalt",
+   21
+  ],
+  [
+   "end_stone",
+   62
+  ],
+  [
+   "sand",
+   2
+  ],
+  [
+   "end_stone",
+   60
+  ],
+  [
+   "end_stone",
+   64
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ],
+ "wear": [
+  [
+   "stone_sword",
+   2,
+   131
+  ],
+  [
+   "stone_shovel",
+   5,
+   131
+  ],
+  [
+   "wooden_pickaxe",
+   7,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-10.7, 50, -10.5) in the_end, health 10/20, food 17/20, alive

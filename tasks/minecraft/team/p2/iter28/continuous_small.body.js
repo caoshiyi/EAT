@@ -1,0 +1,8 @@
+console.log('ENVIRONMENT G28-2 SMALL THREE straight DOWN continuous ordinary walking; no Snow/attack');
+const route=[[-11,50,-11],[-12,50,-11],[-13,50,-11],[-14,50,-11],[-15,50,-11],[-15,51,-12],[-15,52,-13],[-15,53,-14]].map(q=>v(...q));
+const guard=makeOperationGuard(bot),trace=makeHazardRecorder(bot);let admitted=false,escaping=false;
+function forward(l){guard.forward(l);if(Object.values(bot.entities).some(e=>(e.name==='area_effect_cloud'&&e.position.distanceTo(bot.entity.position)<7)||(e.name==='dragon_fireball'&&e.position.distanceTo(bot.entity.position)<48)))throw Error('actualhazard '+l);}
+const walkCheck=l=>guard.escape(l);
+try{if(bot.game.dimension!=='the_end'||bot.health!==10||count('snowball')!==2||!bot.entity.position.floored().equals(route[0])||!audit().every(a=>a.full))throw Error('current actual source');admitted=true;console.log('SMALL_SOURCE',JSON.stringify(state()));for(const q of route.slice(1))await stepStair(q);guard.beginEscape('smallcontinuous3');escaping=true;await continuousWalkSegment(route.slice(4).reverse(),guard);for(const q of route.slice(0,4).reverse())await fastWalkStep(q);await seal(true);if(bot.health!==10)throw Error('SMALL HP lost');console.log('SMALL_COMPLETE',JSON.stringify(state()));}
+catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));if(admitted)try{await escapePreparedRoute(route,guard);}catch(f){console.log('RECOVERY_FAILURE',String(f),JSON.stringify(state()));try{await refuge();}catch(g){console.log('RECOVERY_FAILURE',String(g));}}}
+finally{console.log('SMALL_ACTUAL_POST',JSON.stringify({state:state(),faces:audit()}));console.log('OPERATION_GUARD',JSON.stringify(guard.report()));guard.close();console.log('HAZARD_TRACE',JSON.stringify(trace.stop()));stop();}return state();
