@@ -1,0 +1,32 @@
+program #11556 on p4: 9.8 s
+--- output ---
+P4_LIVE_HAND_START {"at":"2026-10-19T02:15:47.102Z","p":{"x":-8.55388659389691,"y":26,"z":-37.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",2],["flint",3]]}
+P4_HAND_CUT {"at":"2026-10-19T02:15:54.675Z","p":{"x":-9,"y":28,"z":-38},"ms":7569,"hp":20}
+FAILURE Error: not current visible (-9, 28, -37) {"at":"2026-10-19T02:15:55.027Z","p":{"x":-8.55388659389691,"y":26,"z":-37.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",2],["flint",3]]}
+P4_HAND_STEP {"at":"2026-10-19T02:15:55.427Z","p":{"x":-7.334072811951025,"y":26,"z":-37.49999987472506},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",2],["flint",3]],"target":{"x":-8,"y":26,"z":-38},"up":false,"ms":400}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:15:56.128Z","p":{"x":-7.3,"y":26,"z":-37.49999987472506},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:15:56.378Z","p":{"x":-7.3,"y":26,"z":-37.49999987472506},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_LIVE_POD_ENDING {"state":{"at":"2026-10-19T02:15:56.628Z","p":{"x":-7.3,"y":26,"z":-37.49999987472506},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["flint",3]]},"faces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+P4_HAND_TERMINAL {"at":"2026-10-19T02:15:56.878Z","p":{"x":-7.3,"y":26,"z":-37.49999987472506},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["flint",3]],"elapsedMs":9776,"highest":26,"returned":true,"failure":"Error: not current visible (-9, 28, -37)","cuts":[{"at":"2026-10-19T02:15:54.675Z","p":{"x":-9,"y":28,"z":-38},"ms":7569,"hp":20}],"stepCount":1,"fullShelterEnding":true,"podFaces":[{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-38},"name":"gravel","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T02:15:56.878Z",
+ "p": {
+  "x": -7.3,
+  "y": 26,
+  "z": -37.49999987472506
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "flint",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-7.3, 26, -37.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,56 @@
+program #11551 on p4: 34.8 s
+--- output ---
+LIVE_CAP_START {"at":"2026-10-19T02:13:22.619Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[]}
+QUARRY_MOVE {"at":"2026-10-19T02:13:33.469Z","p":{"x":-8.500000104395692,"y":25,"z":-36.484177834008406},"hp":20,"food":20,"ground":true,"inv":[["gravel",1]]}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:35.072Z","p":{"x":-8.500000104395692,"y":25,"z":-36.484177834008406},"hp":20,"food":20,"ground":true,"inv":[["gravel",2]],"mined":1,"source":{"x":-10,"y":25,"z":-36},"noProgress":0}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:36.678Z","p":{"x":-8.500000104395692,"y":25,"z":-36.484177834008406},"hp":20,"food":20,"ground":true,"inv":[["gravel",2]],"mined":2,"source":{"x":-10,"y":25,"z":-35},"noProgress":1}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:38.282Z","p":{"x":-8.500000104395692,"y":25,"z":-36.484177834008406},"hp":20,"food":20,"ground":true,"inv":[["gravel",2]],"mined":3,"source":{"x":-8,"y":25,"z":-35},"noProgress":2}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:38.293Z","q":{"x":-9,"y":24,"z":-36},"status":"success","pathLength":3,"last":[{"x":-8.5,"y":24,"z":-35.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,24,-36"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:40.289Z","p":{"x":-8.54413913741568,"y":24,"z":-35.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3],["flint",2]]}
+LIVE_PICKUP_RECEIPT {"at":"2026-10-19T02:13:40.289Z","p":{"x":-8.54413913741568,"y":24,"z":-35.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3],["flint",2]],"itemId":4702,"before":2,"after":3}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:40.294Z","q":{"x":-9,"y":25,"z":-37},"status":"success","pathLength":1,"last":[{"x":-8.5,"y":25,"z":-36.5,"remainingBlocks":0,"cost":2,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,25,-37"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:41.193Z","p":{"x":-8.532958749274993,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3],["flint",2]]}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:42.797Z","p":{"x":-8.532958749274993,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3],["flint",2]],"mined":4,"source":{"x":-10,"y":25,"z":-34},"noProgress":1}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:44.403Z","p":{"x":-8.532958749274993,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3],["flint",2]],"mined":5,"source":{"x":-8,"y":25,"z":-34},"noProgress":2}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:44.408Z","q":{"x":-8,"y":25,"z":-34},"status":"success","pathLength":3,"last":[{"x":-7.5,"y":25,"z":-33.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-8,25,-34"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:46.008Z","p":{"x":-7.474202350038731,"y":25,"z":-33.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",4],["flint",2]]}
+LIVE_PICKUP_RECEIPT {"at":"2026-10-19T02:13:46.008Z","p":{"x":-7.474202350038731,"y":25,"z":-33.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",4],["flint",2]],"itemId":4771,"before":3,"after":4}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:46.011Z","q":{"x":-9,"y":24,"z":-33},"status":"success","pathLength":1,"last":[{"x":-8.5,"y":24,"z":-32.5,"remainingBlocks":0,"cost":1.4142135623730951,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,24,-33"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:47.110Z","p":{"x":-8.495483967955645,"y":24,"z":-32.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]]}
+LIVE_PICKUP_RECEIPT {"at":"2026-10-19T02:13:47.110Z","p":{"x":-8.495483967955645,"y":24,"z":-32.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]],"itemId":4770,"before":4,"after":5}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:47.117Z","q":{"x":-9,"y":25,"z":-37},"status":"success","pathLength":4,"last":[{"x":-8.5,"y":25,"z":-36.5,"remainingBlocks":0,"cost":2,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,25,-37"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:48.712Z","p":{"x":-8.499588631149066,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]]}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:50.623Z","p":{"x":-8.499588631149066,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]],"mined":6,"source":{"x":-7,"y":25,"z":-34},"noProgress":1}
+LIVE_QUARRY_RECEIPT {"at":"2026-10-19T02:13:52.223Z","p":{"x":-8.499588631149066,"y":25,"z":-36.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]],"mined":7,"source":{"x":-8,"y":25,"z":-33},"noProgress":2}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:52.230Z","q":{"x":-7,"y":25,"z":-34},"status":"success","pathLength":3,"last":[{"x":-6.5,"y":25,"z":-33.5,"remainingBlocks":0,"cost":1.4142135623730951,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-7,25,-34"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:54.229Z","p":{"x":-6.678035958684367,"y":25,"z":-33.48449021812872},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",3]]}
+LIVE_PICKUP_RECEIPT {"at":"2026-10-19T02:13:54.229Z","p":{"x":-6.678035958684367,"y":25,"z":-33.48449021812872},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",3]],"itemId":4785,"before":5,"after":5}
+FAILURE Error: pickup no inventory progress {"at":"2026-10-19T02:13:54.229Z","p":{"x":-6.678035958684367,"y":25,"z":-33.48449021812872},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",3]]}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:13:54.233Z","q":{"x":-9,"y":26,"z":-38},"status":"success","pathLength":4,"last":[{"x":-8.5,"y":26,"z":-37.5,"remainingBlocks":0,"cost":2,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,26,-38"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:13:56.334Z","p":{"x":-8.55388659389691,"y":26,"z":-37.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",3]]}
+QUARRY_TERMINAL {"at":"2026-10-19T02:13:57.389Z","p":{"x":-8.55388659389691,"y":26,"z":-37.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",2],["flint",3]],"elapsedMs":34770,"mined":7,"returned":true,"sealed":true,"failure":"Error: pickup no inventory progress","gravel":2,"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T02:13:57.389Z",
+ "p": {
+  "x": -8.55388659389691,
+  "y": 26,
+  "z": -37.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "gravel",
+   2
+  ],
+  [
+   "flint",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.6, 26, -37.5) in overworld, health 20/20, food 20/20, alive

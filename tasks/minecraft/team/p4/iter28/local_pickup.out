@@ -1,0 +1,41 @@
+[sandbox] program #206 on p4: 11 s
+--- output ---
+PICKUP_START {"at":"2026-10-19T02:11:59.238Z","p":{"x":-8.500000037582375,"y":26,"z":-37.7},"hp":20,"food":20,"ground":true,"inv":[["flint",1]]}
+QUARRY_MOVE {"at":"2026-10-19T02:12:02.432Z","p":{"x":-8.50000012527473,"y":25,"z":-36.60355859074452},"hp":20,"food":20,"ground":true,"inv":[["gravel",1],["flint",1]]}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:12:02.472Z","q":{"x":-9,"y":24,"z":-36},"status":"success","pathLength":3,"last":[{"x":-8.5,"y":24,"z":-35.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,24,-36"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:12:04.448Z","p":{"x":-8.54413913741568,"y":24,"z":-35.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]]}
+PICKUP_INVENTORY_RECEIPT {"at":"2026-10-19T02:12:04.448Z","p":{"x":-8.54413913741568,"y":24,"z":-35.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5],["flint",2]],"itemId":1492,"before":1,"after":5}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:12:04.459Z","q":{"x":-9,"y":24,"z":-33},"status":"success","pathLength":3,"last":[{"x":-8.5,"y":24,"z":-32.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,24,-33"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:12:05.751Z","p":{"x":-8.504080904829591,"y":24,"z":-32.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",6],["flint",2]]}
+PICKUP_INVENTORY_RECEIPT {"at":"2026-10-19T02:12:05.751Z","p":{"x":-8.504080904829591,"y":24,"z":-32.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",6],["flint",2]],"itemId":1191,"before":5,"after":6}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:12:05.759Z","q":{"x":-7,"y":25,"z":-33},"status":"success","pathLength":2,"last":[{"x":-6.5,"y":25,"z":-32.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-7,25,-33"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:12:06.959Z","p":{"x":-6.5,"y":25,"z":-32.499999883076725},"hp":20,"food":20,"ground":true,"inv":[["gravel",7],["flint",3]]}
+PICKUP_INVENTORY_RECEIPT {"at":"2026-10-19T02:12:06.959Z","p":{"x":-6.5,"y":25,"z":-32.499999883076725},"hp":20,"food":20,"ground":true,"inv":[["gravel",7],["flint",3]],"itemId":1201,"before":6,"after":7}
+PICKUP_PATH_MODEL {"at":"2026-10-19T02:12:06.965Z","q":{"x":-9,"y":26,"z":-38},"status":"success","pathLength":5,"last":[{"x":-8.5,"y":26,"z":-37.5,"remainingBlocks":0,"cost":2,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-9,26,-38"}]}
+PICKUP_ACTUAL_ARRIVAL {"at":"2026-10-19T02:12:09.166Z","p":{"x":-8.550285018684788,"y":26,"z":-37.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",7],["flint",3]]}
+QUARRY_TERMINAL {"at":"2026-10-19T02:12:10.219Z","p":{"x":-8.550285018684788,"y":26,"z":-37.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",4],["flint",3]],"elapsedMs":10981,"mined":0,"returned":true,"sealed":true,"failure":null,"gravel":4,"faces":[{"p":{"x":-9,"y":25,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T02:12:10.219Z",
+ "p": {
+  "x": -8.550285018684788,
+  "y": 26,
+  "z": -37.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "gravel",
+   4
+  ],
+  [
+   "flint",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.6, 26, -37.5) in overworld, health 20/20, food 20/20, alive

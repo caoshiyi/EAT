@@ -29,7 +29,7 @@ for c in chunks:
    except json.JSONDecodeError as e:returnError=str(e)
  logs=[];errors=[]
  for line in body.splitlines():
-  if re.match(r'^(?:FAILURE|RECOVERY_FAILURE|ERROR|REFUSAL)\b',line):errors.append(line[:380])
+  if re.match(r'^(?:FAILURE|RECOVERY_FAILURE|ERROR|REFUSAL)(?:_[A-Z0-9]+)*(?: |$)',line):errors.append(line[:380])
   m=re.match(r'^([A-Z][A-Z0-9_]*) (\{.*\})$',line)
   if m:
    try:logs.append((m[1],json.loads(m[2])))
