@@ -1,0 +1,14 @@
+program #14006 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:14:37.668Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T19:14:37.668Z","elapsed":0,"dragon":{"p":{"x":25.418841496193792,"y":68.3421671576726,"z":-14.65167844060629},"hp":79.97959899902344,"phase":1},"p1":{"p":{"x":-3.5,"y":53.16609373688698,"z":4.499999999996797},"hp":11.5,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"ownHP":20}
+CHANGE {"at":"2026-10-19T19:15:03.128Z","elapsed":25460,"dragon":{"p":{"x":-5.345280512569332,"y":57.16574537125537,"z":6.981764635004076},"hp":77.72959899902344,"phase":1},"p1":{"p":{"x":-4.551357859797969,"y":54.16609373688698,"z":4.499999999996844},"hp":11.5,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"ownHP":20}
+RESULT {"start":1792437277668,"ending":{"at":"2026-10-19T19:15:07.687Z","elapsed":30019,"ownHP":20,"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"p1":{"p":{"x":-4.551357859797969,"y":53,"z":4.499999999996844},"hp":11.5,"ground":true},"dragon":{"p":{"x":6.136653081180668,"y":62.00485669938037,"z":15.249342760004076},"hp":77.72959899902344,"phase":1}},"changes":2,"samples":146,"groups":{"53":{"n":589,"minRootY":57.24313794938037},"54":{"n":6,"minRootY":57.16403638688037},"53.5":{"n":3,"minRootY":57.18649732438037},"54.5":{"n":2,"minRootY":57.16403638688037}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 P1 continuesqualifiedcombat; actualsourcechecked,480sinternal/600sAPI reservesprep+retreat. Absolute19:43:45. Max2newlegalY57/58repaircolumns, normalattackenforcementunchanged. Hold50.
+p1: P3 P1 warm-capableadaptive480s batch(max2newcolumns) startsNOW: adjacent-4UP53 thenstandaboveYOURcap52 at-5/53. PreserveYOURroof52; directactual3mclearSword thenonejumpifneeded, max480s/absolute19:43:45/stopHPdrop orunrepairablerefusal/150snodamage, retrea
+p1: tEast/downowncolumn50. YOUhold50.
+p1: P1 batchSword1 HP79.97959899902344->77.72959899902344 own11.5 P320; finalendingpending.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

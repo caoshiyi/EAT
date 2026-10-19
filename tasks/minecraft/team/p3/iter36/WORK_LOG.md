@@ -50,3 +50,11 @@
 - Observer90schunkscausedstalechatlagduringcriticaltimeout; changedreadonlywatch30s withbreakonP1HPdrop/disappearance andP3hurt, preservingHPautochat/fullglobalcache/compactoutput. First30srunactive19:06. No P3movement/changeofbait; nativeplayerstate remainsguarded. Stopaddinghypotheticalphysicalchangeswhileactualdamageworking.
 
 19:13 checkpoint: independent live #14000 repair verification EAST y57/58 AIR and bait roof52 end_stone. Dragon88.9796 at19:11:23 then86.7296 at19:11:53, three hits after repair; P1HP11.5/P3HP20 unchanged. Thus adaptive scoped repair produced resumed progress, not merely successful digging. Current chat reports82.2296. Warm540 run continues; ending must still be checked.
+
+19:14:01 P1 #13993 warm540 ended normally after548s,16 actual hits117.8546->79.9796. Raw LIVE_live_warm_540_190453.out RESULT native50/HP11.5, all10 own facesfull, P3roof52 E/eastgatebothE. P3#14004 independentlyobservedactual0.500011/50 at19:14:11/P1HP11.5/P3HP20. This qualifies newtimingmargin, not retroactive13985ending. P1 immediatelynext#14005 cold480 internal/absolute19:43:45 reservesprep+retreat. No pause/resource request.
+
+19:16 observerchat cleanup: retained compact SOURCE/RESULT native receipts and changedHP alerts, removed repeated30s startupchat (stale resource details corrected previous). No behavior/geometry change; nextordinary30s run verifies. Watch output is observation, not action or officialscore.
+
+19:16 observer edit failed HOST syntax preflight before arena submission: semicolon-based removal split inside chat literal. No live program/action. Corrected exact remaining text; runner native Node preflight catches before submitting. Subsequent live30s confirms.
+
+19:18 attempted next read-only watcher before prior #14012 completed; arena refused one-program-per-body, no new accepted action. Poll hostreceipt tocompletion before sequentialnextcall; sourcecurrentstate is not a completionreceipt.
