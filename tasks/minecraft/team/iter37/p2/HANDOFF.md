@@ -1,6 +1,6 @@
-# P2 iteration37 — CURRENT 21:34 UTC
+# P2 iteration37 — CURRENT 21:36 UTC
 
-Goal incomplete. P3 canonical14375 verifies LIVE Dragon41.104599 (two new hits/4.5 damage), P1 actual lower50/full enclosure/HP20 food20, P3 HP20. Latest standing52.5 slab+jump method qualified and repeating. P3 calls primary batch NOW; item transfer DEFERRED during upper fight. ~18min until approximate21:48 deadline. Official prior captures dragon0/milestones11 with SAVE_REFUSED/LASTSAVED; do not infer victory from stale score.
+Goal incomplete. Canonical14394 ended21:34:23 THREEhits/6.75damage Dragon34.354599, fullP1pod20/20/P320. Stopped native visibility REFUSED Endstone-4/56/5 at21:34:21, cleanup798ms. P2 immediately alertedP3 via14401/chat13969. No injury/death. P1 idlelower asof21:35:49, may resume without P2 support. Latest standing52.5 slab+jump method qualified and repeating. P3 calls primary batch NOW; item transfer DEFERRED during upper fight. ~12min until actual21:48:21 deadline. Official21:33:36 capture READFULL dragon0/milestones11/deaths224 with SAVE_REFUSED/LASTSAVED; infoHP37stale relative34.354599. Do not infer victory from stale score.
 
 P2 actual LIVE14397 at0.491/50/4.618 End, HP20 food20, ONLY oak_planks7. No active program. Own original pod9/5 gate9/4 open from departure, roof52 intact; current body in protected low corridor, no immunity claim. P2 owns only p2; p4 remains idle, NEVER query/control it. No shared edits authorized. Do NOT stand in P1 escape -3 or dig -4/E51 which supports current field; P3 fixed -5/50, P1 -3/50. P2 native wood return receipt verified. Say14386 acknowledges stage; P3 accepts fallback ONLY after P1 batch ending and if quick.
 
