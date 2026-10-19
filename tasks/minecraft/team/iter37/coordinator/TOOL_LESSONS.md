@@ -9,3 +9,5 @@ Python alias absent; python3 works. Capture smoke on tiny status passed before f
 21:09 coordination alert freshness failure: root published21:08 crossed-contract alert from21:07:52 snapshot; owners resolved21:07:57 beforepublication. Next poll21:09:21 revealed active14343. Clearedalertimmediately andrecordedstaleness. Re-read latestchat/status justbeforeaction-likealerts; alwaysstateobserved_at/conditionalstatus. Currentmissionmustnotreopenalreadyresolvedapproval. Contractreference14339/14342 makesresolutionauditable.
 
 21:13 ownership audit: git diff-tree on allten retained coordinator commits1fd39aa41/26b472a1a/09bcdd453/21c773120/57ecac3b4/63a360afd/43ef13b31/50bcc7f01/30b51ce12/618e6561e foundZEROunownedpaths. Future commits use gitcommit--only withthefourownedpaths afteraddingowneduntrackedfiles, toavoid includinganotheragent's concurrent staged index. Neverresetothers'index/work.
+
+21:20 partial note update: mission file wrote successfully, then undefined Pythonbasevariable `b` stoppedNOTICEwrite. Checkedactualmissionstate andcompletedNOTICEwithexplicitbase; no playerfiles/world affected. Everyexec cell/shell script isfresh, definepathvariableslocally.

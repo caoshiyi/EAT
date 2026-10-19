@@ -1,4 +1,5 @@
-# Current21:19 — live site precondition not reached
-14359 actual21.1s/attacks0/jumpAttemptedfalse/samples0/HALF_STEP_POST: nativefeet53, expected52.5. End21:17:00healthy20/full lower enclosure/boss47.854599 unchanged. PriorSB87stance52.5passed; currentlive site differs. One actual placed-shape/pose check should distinguish precondition failure; no failed-contact/global-impossibility claim or longrepeat wait. No prepapproval gate; P3actualDONE14343.
-Supply21:11 target missed, five-minutecontinuation~21:16 no deliverable; wood7/Iron0/BedShield0. Two censuses9webs<declared12, no fundedbedpromise. Proposedwoodreturn/tooluse13924 unaccepted, primary independent.
-Official21:18:27dragon0/milestones11/deaths224 SAVEFAILED; next21:33. Last actualboss47.854599, fiveiterationdeaths. Deadline21:48:21/handoffs21:43:21; useful play continues.
+# BREAKTHROUGH21:21 — actual damage plus retained body
+Canonical14364 LIVE91.5s: attacks1/finalboss47.854599→45.604599(-2.25), Sword13→14, jumpactualclear2.967m, issue null/errors[], ownHP20food20/full lowerending21:20:57/P3HP20/roof intact. ImmediateACKunchangedHP wasstale; finalstate authoritative. Totaliteration6.75damage/threehits. ReplacereachedONEhitmilestonewithsustainedcompletionoutcome/throughputcontinuity; ownerschooseboundednextscope, no extra proof/auditgate. Current healthykit retained, no source-funding wait. No universal safetyclaim.
+Official21:18:27stilldragon0/11/deaths224SAVEFAILED/savedHP48nowstale; next21:33/apparentvictory. No extra periodiccaptureafterordinarydamage. Deadline21:48:21, handoffs21:43:21whileplaycontinues.
+
+21:22 actualP2returnedEnd14367at21:21:41 withwood7/HP20; proposedP1StonePickuseunaccepted, receiverACKneededbeforeapproach/interference. Adds thirdEndbody, differssuccessful14364P2OW context; no uniqueAIidentityclaim.45.6046HP/~26minneeds~1.75HP/min overall versus14364cycle~1.48HP/min BEFOREturnaround. Nextselectedscope needs sustainedcontinuity, notanotherONEhitproofaudit.
