@@ -144,3 +144,5 @@ Iteration34 P4 capability checkpoint —2026-10-19 13:42UTC: token usage unavail
 Iteration34 P4 courier-method checkpoint —2026-10-19 13:47UTC: token usage unavailable from authorized accessible session-history JSON. No estimate. Actual food receipt/eat/heal/travel, craft follow-through, merged-room and gravity fixes retained with failed branches.
 
 Iteration34 P4 actualrecipient-use/review checkpoint —2026-10-19 14:05UTC: token usage unavailable from authorized accessible session-history JSON. No estimate. Logs retain missed14:00 gate, three failed item probes, actual upward toss/packet/recipient ascent+bed, nativeP1 idle exposure death and saved-evaluator lag.
+
+Iteration34 P4 late minute40 checkpoint —2026-10-19 14:40UTC: token usage unavailable from an authorized accessible session-history JSON source. No estimate. Owned WIP_CURRENT.md records actual corrected IDs, failed retrievals, native tool/farm/chest effects, present-then-empty uncollected End drops, and active ammo branch. Memory write attempts failed syntax/atomic patch before any content changed; replacement heredoc small test verified written state.
