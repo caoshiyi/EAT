@@ -1,0 +1,43 @@
+== #11818 2026-10-19T06:12:56 p2 role=encounter_owner iter=30 0 s
+const V=bot.entity.position.constructor;console.log('SOURCE',new Date().toISOString(),bot.entity.position,bot.health);for(let y=66;y>=61;y--){const rows=[];for(let z=-28;z<=-23;z++){rows.push({z,cells:Array.from({length:7},(_,i)=>{const x=-11+i,b=bot.blockAt(new V(x,y,z));return{x,n:b?.name};})});}console.log('LAYER',y,JSON.stringify(rows));}const q=new V(-6,65,-25),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=q.offset(.5,.5,.5).minus(eye);console.log('WOODRAY',d.norm(),bot.world.raycast(eye,d.scaled(1/d.norm()),d.norm()+.1));await bot.lookAt(q.offset(.5,.5,.5),true);await bot.waitForTicks(1);console.log('CURSOR',bot.blockAtCursor(4.5)?.position);
+-- output --
+SOURCE 2026-10-19T06:12:56.856Z Vec3 { x: -8.5, y: 64, z: -25.5 } 20
+LAYER 66 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"spruce_log"},{"x":-5,"n":"air"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-23,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]}]
+LAYER 65 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"spruce_log"},{"x":-5,"n":"air"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-23,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]}]
+LAYER 64 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-23,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]}]
+LAYER 63 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"dirt"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-23,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]}]
+LAYER 62 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"dirt"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"water"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]},{"z":-23,"cells":[{"x":-11,"n":"dirt"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"water"},{"x":-7,"n":"water"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]}]
+LAYER 61 [{"z":-28,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-27,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"air"},{"x":-5,"n":"air"}]},{"z":-26,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"dirt"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]},{"z":-25,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"air"},{"x":-6,"n":"water"},{"x":-5,"n":"grass_block"}]},{"z":-24,"cells":[{"x":-11,"n":"air"},{"x":-10,"n":"air"},{"x":-9,"n":"air"},{"x":-8,"n":"air"},{"x":-7,"n":"water"},{"x":-6,"n":"dirt"},{"x":-5,"n":"dirt"}]},{"z":-23,"cells":[{"x":-11,"n":"dirt"},{"x":-10,"n":"dirt"},{"x":-9,"n":"air"},{"x":-8,"n":"water"},{"x":-7,"n":"water"},{"x":-6,"n":"water"},{"x":-5,"n":"water"}]}]
+WOODRAY 3.1645536810109576 Block {
+  type: 47,
+  metadata: 1,
+  light: 0,
+  skyLight: 15,
+  biome: {
+    color: 0,
+    height: null,
+    name: '',
+    rainfall: 0,
+    temperature: 0,
+    id: 47
+  },
+  position: Vec3 { x: -6, y: 65, z: -25 },
+  stateId: 134,
+  computedStates: {},
+  name: 'spruce_log',
+  hardness: 2,
+  displayName: 'Spruce Log',
+  shapes: [ [ 0, 0, 0, 1, 1, 1 ] ],
+  boundingBox: 'block',
+  transparent: false,
+  diggable: true,
+  material: 'mineable/axe',
+  harvestTools: undefined,
+  drops: [ 132 ],
+  _properties: { axis: 'y' },
+  isWaterlogged: undefined,
+  entity: undefined,
+  face: 4,
+  intersect: Vec3 { x: -6, y: 65.52, z: -24.666666666666668 }
+}
+CURSOR Vec3 { x: -6, y: 65, z: -25 }

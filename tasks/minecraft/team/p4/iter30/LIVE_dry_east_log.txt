@@ -1,0 +1,35 @@
+program #11813 on p4: 6.1 s
+--- output ---
+ACQUIRE_SOURCE {"at":"2026-10-19T06:09:53.148Z","p":{"x":10.208560812006159,"y":70,"z":-36.50000000000008},"hp":20,"food":17,"ground":true,"inventory":[["spruce_planks",1,null]],"time":18069}
+ACTUAL_LOG_RECEIPT {"logs":1,"state":{"at":"2026-10-19T06:09:59.227Z","p":{"x":14.341762192403117,"y":74,"z":-40.5},"hp":20,"food":17,"ground":true,"inventory":[["spruce_planks",1,null],["spruce_log",1,null]],"time":18209}}
+ACQUIRE_LOG_END {"at":"2026-10-19T06:09:59.228Z","p":{"x":14.341762192403117,"y":74,"z":-40.5},"hp":20,"food":17,"ground":true,"inventory":[["spruce_planks",1,null],["spruce_log",1,null]],"time":18209}
+ACQUIRE_END {"at":"2026-10-19T06:09:59.228Z","p":{"x":14.341762192403117,"y":74,"z":-40.5},"hp":20,"food":17,"ground":true,"inventory":[["spruce_planks",1,null],["spruce_log",1,null]],"time":18209}
+--- returned ---
+{
+ "at": "2026-10-19T06:09:59.228Z",
+ "p": {
+  "x": 14.341762192403117,
+  "y": 74,
+  "z": -40.5
+ },
+ "hp": 20,
+ "food": 17,
+ "ground": true,
+ "inventory": [
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ]
+ ],
+ "time": 18209
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (14.3, 74, -40.5) in overworld, health 20/20, food 17/20, alive
+syntax-only PASS: dry_east_log.js

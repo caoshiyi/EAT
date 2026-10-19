@@ -1,0 +1,31 @@
+program #11811 on p4: 5.8 s
+--- output ---
+DROP_SOURCE {"at":"2026-10-19T06:08:16.189Z","p":{"x":9.5,"y":78,"z":-36.5},"hp":20,"food":20,"ground":true,"inventory":[]}
+DROP_LEAN {"at":"2026-10-19T06:08:16.941Z","p":{"x":10.199674675027932,"y":78,"z":-36.50000000000008},"hp":20,"food":20,"ground":true,"inventory":[]}
+DROP_TICK {"at":"2026-10-19T06:08:19.998Z","p":{"x":10.208560812006159,"y":77.92159999847412,"z":-36.50000000000008},"hp":20,"food":20,"ground":false,"inventory":[]}
+DROP_TICK {"at":"2026-10-19T06:08:20.248Z","p":{"x":10.208560812006159,"y":76.40739540236494,"z":-36.50000000000008},"hp":20,"food":20,"ground":false,"inventory":[]}
+DROP_TICK {"at":"2026-10-19T06:08:20.498Z","p":{"x":10.208560812006159,"y":73.15552175294312,"z":-36.50000000000008},"hp":20,"food":20,"ground":false,"inventory":[]}
+DROP_LANDING {"at":"2026-10-19T06:08:21.950Z","p":{"x":10.208560812006159,"y":70,"z":-36.50000000000008},"hp":16.5,"food":20,"ground":true,"inventory":[["spruce_planks",1]]}
+DROP_END {"at":"2026-10-19T06:08:21.950Z","p":{"x":10.208560812006159,"y":70,"z":-36.50000000000008},"hp":16.5,"food":20,"ground":true,"inventory":[["spruce_planks",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:08:21.950Z",
+ "p": {
+  "x": 10.208560812006159,
+  "y": 70,
+  "z": -36.50000000000008
+ },
+ "hp": 16.5,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "spruce_planks",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (10.2, 70, -36.5) in overworld, health 16.5/20, food 20/20, alive
+syntax-only PASS: drop_plank.js

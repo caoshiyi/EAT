@@ -1,0 +1,23 @@
+program #11819 on p4: 0 s
+--- output ---
+EMERGENCY_SOURCE {"at":"2026-10-19T06:13:04.018Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+BURY_FLOORS [{"d":1,"n":"spruce_leaves"},{"d":2,"n":"spruce_leaves"},{"d":3,"n":"spruce_leaves"}]
+EMERGENCY_FAILURE Error: cannot safe soilDOWN {"at":"2026-10-19T06:13:04.019Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+EMERGENCY_END {"at":"2026-10-19T06:13:04.019Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+--- returned ---
+{
+ "at": "2026-10-19T06:13:04.019Z",
+ "p": {
+  "x": 9.5,
+  "y": 73,
+  "z": -23.5
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [],
+ "near": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (9.5, 73, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: respawn_bury.js

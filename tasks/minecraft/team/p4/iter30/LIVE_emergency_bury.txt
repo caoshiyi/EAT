@@ -1,0 +1,22 @@
+program #11817 on p4: 0 s
+--- output ---
+EMERGENCY_SOURCE {"at":"2026-10-19T06:12:29.067Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+EMERGENCY_FAILURE Error: oldbodychanged {"at":"2026-10-19T06:12:29.067Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+EMERGENCY_END {"at":"2026-10-19T06:12:29.067Z","p":{"x":9.5,"y":73,"z":-23.5},"hp":20,"food":20,"inv":[],"near":[]}
+--- returned ---
+{
+ "at": "2026-10-19T06:12:29.067Z",
+ "p": {
+  "x": 9.5,
+  "y": 73,
+  "z": -23.5
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [],
+ "near": []
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+--- p4 now: (9.5, 73, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: emergency_bury.js
