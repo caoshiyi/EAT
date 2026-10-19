@@ -27,3 +27,5 @@
 | Persistent P3 LIVE13929 |54prep/15swindow/min7.007/root62.53/noattack/healthyreturn| Leadretiresstandingheightchase, selectschangedtransienttest |
 | Isolated P1 G3 SB65 |Valid53/65s/min3.134/root56.921/healthy11.5return;closestpointblocked| Universalroot>=feet+5counterexample INTHIS COPY; closestblockedpointnotwholebodyocclusionproof |
 | Persistent P1 LIVE13948 18:23–24 |Actualjumpfeet54.001/candidate2.74863m/ownrayclear; ordinaryattackREFUSEDvisibilityendstone(-6,57,4); attacks0/Dragonunchanged/Sword1; healthy11.5full10return/P3healthy20low| Newfailurepermittedvisibilityqualification, notrangecensor/attackeffect. Candidatepointclear != actualactionpermitted; noprohibitedbypass |
+| Persistent P1 LIVE13952 18:27 |Accepted ordinarySword/hurt/Sword1→2; HP184.979599→182.104599; candidate1.94375m; healthy11.5full10return/P3healthy20low| First realdamage+ending thisiteration. Differentroot/range+lookWait means wholepackageproof, not isolatedcausalfix |
+| Official EVAL_FIRST_DAMAGE 18:28 |dragon0/milestones11/deaths217; savefailed; savedHP182/crystals0 informational| Objective incomplete despite actualdamage |
