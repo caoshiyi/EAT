@@ -1,3 +1,5 @@
 # Observer tools
 Python alias absent; python3 works. Capture smoke on tiny status passed before full capture. summarize.py tested on saved14100 and14130 receipts, correctly separates noattacks/damage/ending. poll.py read-only commands only, saves changed bounded records and emits new headers/chat/events; initial poll verified against native status. No run/say/reset/playercontrol in helpers.
 20:00: current-sheet updater searched exact `Active program IDs:` after previous update changed heading; ValueError before writes. Shell still committed earlier valid changes26b472a1a; did NOT capture intended19:59 review. Corrected by full short current-sheet rewrite, checked actual file before commit. Future edits use stable headings or replace current sheet; chain verification before commit. No player files modified.
+
+20:07 canonical14171 finalHP decrease2.25 despite immediatehits[]unchanged. Summarizer now emits finalHealthDecrease from settled before/after, and never treats immediatehitpairalone as outcome. Tested old14100=0,14130=0,14171=2.25 against nativefinalreceipts. Emptydamagepackets do not proveabsenceofdamage; same lesson for incomplete telemetry.

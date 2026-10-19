@@ -17,6 +17,7 @@ for arg in sys.argv[1:]:
      print(key,json.dumps({k:d[k] for k in ('at','environment','player','dragon') if k in d}));continue
     wanted=('at','environment','player','attacks','hits','issue','initialBossHP','finalBossHP','ownHP','body','full','jumped','peak','dragonAfter','min','minRoot','phases','baitRoof52','baitEastGate')
     z={k:d[k] for k in wanted if k in d}
+    if d.get('dragonBefore',{}).get('hp') is not None and d.get('dragonAfter',{}).get('hp') is not None: z['finalHealthDecrease']=d['dragonBefore']['hp']-d['dragonAfter']['hp']
     if 'state' in d: z['state']={k:d['state'][k] for k in ('at','p','hp','food') if k in d['state']}
     if 'faces' in d: z['full']=all(q.get('full') for q in d['faces'])
     print(key,json.dumps(z))

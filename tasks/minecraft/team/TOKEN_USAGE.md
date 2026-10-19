@@ -178,3 +178,5 @@ Iteration36 coordinator19:05 checkpoint: token usage unavailable from authorized
 Iteration37 coordinator opening checkpoint19:49 UTC: per-commit token usage unavailable from permitted exposed session-history evidence. No estimates or prohibited-location access. Owned files only will be committed; other roles retain their unfinished work.
 
 Iteration37 coordinator20:00 checkpoint: owned commits1fd39aa41 and26b472a1a verified by git. Per-commit token measurements unavailable in permitted exposed session-history evidence; no estimates.
+
+Iteration37 coordinator20:10 checkpoint: owned commits1fd39aa41,26b472a1a,09bcdd453 verified. Per-commit token measurements unavailable from permitted exposed session-history counters; no estimate. Injury/no-effect early wording corrected from settled canonical state; failed/truncated outputs retained.
