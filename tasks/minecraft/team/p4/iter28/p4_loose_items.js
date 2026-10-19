@@ -1,0 +1,1 @@
+console.log('P4_LOOSE_ITEMS',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item').map(e=>({id:e.id,p:e.position,velocity:e.velocity,d:bot.entity.position.distanceTo(e.position)}))}));

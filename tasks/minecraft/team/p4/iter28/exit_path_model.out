@@ -1,0 +1,30 @@
+[sandbox] program #189 on p4: 3 s
+--- output ---
+GRAVEL_SMALL_START {"at":"2026-10-19T01:56:50.046Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[],"target":"gravel"}
+WOOD_PATH_MODEL {"at":"2026-10-19T01:56:53.081Z","status":"partial","visitedNodes":43,"pathLength":8,"last":[{"x":-13.5,"y":22,"z":-33.5,"remainingBlocks":0,"cost":1.4142135623730951,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-14,22,-34"},{"x":-14.5,"y":22,"z":-33.5,"remainingBlocks":0,"cost":1,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-15,22,-34"},{"x":-15.5,"y":21,"z":-32.5,"remainingBlocks":0,"cost":1.4142135623730951,"toBreak":[],"toPlace":[],"parkour":false,"hash":"-16,21,-33"}],"elapsed":41.918556999997236,"physicalExecution":false}
+GRAVEL_SMALL_COLLECT {"at":"2026-10-19T01:56:53.081Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[["flint",1]],"target":"air"}
+RECOVERY_FAILURE Error: no gravel to restore (-9, 26, -37)
+RECOVERY_FAILURE Error: no gravel to restore (-9, 27, -37)
+GRAVEL_SMALL_END {"at":"2026-10-19T01:56:53.082Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[["flint",1]],"target":"air","dug":true,"reclosed":false,"error":null,"moved":0,"gravelDelta":0}
+--- returned ---
+{
+ "at": "2026-10-19T01:56:53.082Z",
+ "p": {
+  "x": -8.5,
+  "y": 26,
+  "z": -37.53254047072508
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "flint",
+   1
+  ]
+ ],
+ "target": "air"
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.5, 26, -37.5) in overworld, health 20/20, food 20/20, alive

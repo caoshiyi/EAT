@@ -1,0 +1,22 @@
+[sandbox] program #187 on p4: 1.8 s
+--- output ---
+GRAVEL_SMALL_START {"at":"2026-10-19T01:56:18.062Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[],"target":"gravel"}
+GRAVEL_SMALL_COLLECT {"at":"2026-10-19T01:56:19.523Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[["gravel",1]],"target":"air"}
+GRAVEL_SMALL_END {"at":"2026-10-19T01:56:19.876Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"inv":[],"target":"gravel","dug":true,"reclosed":true,"error":null,"moved":0,"gravelDelta":0}
+--- returned ---
+{
+ "at": "2026-10-19T01:56:19.876Z",
+ "p": {
+  "x": -8.5,
+  "y": 26,
+  "z": -37.53254047072508
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [],
+ "target": "gravel"
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-8.5, 26, -37.5) in overworld, health 20/20, food 20/20, alive
