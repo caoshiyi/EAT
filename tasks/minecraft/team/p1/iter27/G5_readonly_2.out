@@ -1,0 +1,18 @@
+[sandbox] program #153 on p1: 0 s
+--- output ---
+WATCHER_INSTALLED {"stopped":false,"rows":[{"at":"2026-10-19T00:38:00.303Z","event":"installed","hp":8.333332061767578,"food":17,"dimension":"overworld","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"ground":true,"loadedHazards":0,"nearestHazards":[],"boundary":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]},{"at":"2026-10-19T00:38:00.304Z","event":"mark:before_actual_program_return","hp":8.333332061767578,"food":17,"dimension":"overworld","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"ground":true,"loadedHazards":0,"nearestHazards":[],"boundary":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}],"dropped":0,"firstLoss":null,"firstDeath":null,"scope":"Passive observations across owner program returns; absence of a logged hazard is not absence of a hazard. Death cause requires arena events."}
+--- returned ---
+{
+ "p": {
+  "x": 0.5620620120488068,
+  "y": 51,
+  "z": -29.50050049685977
+ },
+ "hp": 8.333332061767578,
+ "food": 17,
+ "dimension": "overworld",
+ "readOnly": true
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (0.6, 51, -29.5) in overworld, health 8.3/20, food 17/20, alive

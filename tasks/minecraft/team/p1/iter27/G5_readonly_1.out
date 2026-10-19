@@ -1,0 +1,381 @@
+[sandbox] program #152 on p1: 0.3 s
+--- output ---
+FOOD_CENSUS {"at":"2026-10-19T00:37:59.803Z","scope":"READONLY: loaded-client metadata, no action or whole-region census","state":{"p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"day":11842,"inv":[["dirt",1]]},"queryReturned":30,"queryCap":160,"returnedCounts":{"sweet_berry_bush":3,"chest":1,"brown_mushroom":5,"cave_vines_plant":15,"cave_vines":6},"candidates":[{"p":{"x":4,"y":67,"z":-22},"name":"sweet_berry_bush","firstRayHit":{"name":"grass_block","p":{"x":0,"y":53,"z":-30}}},{"p":{"x":10,"y":66,"z":-35},"name":"chest","firstRayHit":{"name":"grass_block","p":{"x":0,"y":53,"z":-30}}},{"p":{"x":7,"y":67,"z":-22},"name":"sweet_berry_bush","firstRayHit":{"name":"grass_block","p":{"x":0,"y":53,"z":-30}}},{"p":{"x":29,"y":65,"z":12},"name":"brown_mushroom","firstRayHit":{"name":"stone","p":{"x":0,"y":52,"z":-29}}},{"p":{"x":6,"y":4,"z":-6},"name":"cave_vines_plant","firstRayHit":{"name":"stone","p":{"x":0,"y":51,"z":-29}}},{"p":{"x":30,"y":64,"z":12},"name":"brown_mushroom","firstRayHit":{"name":"stone","p":{"x":0,"y":52,"z":-29}}},{"p":{"x":14,"y":10,"z":2},"name":"cave_vines_plant","firstRayHit":{"name":"stone","p":{"x":0,"y":51,"z":-29}}},{"p":{"x":14,"y":9,"z":2},"name":"cave_vines","firstRayHit":{"name":"stone","p":{"x":0,"y":51,"z":-29}}},{"p":{"x":6,"y":0,"z":-6},"name":"cave_vines","firstRayHit":{"name":"stone","p":{"x":0,"y":51,"z":-29}}}],"loadedFoodAnimals":[{"id":329,"name":"salmon","p":{"x":-34.54138549004366,"y":61.599999994039536,"z":22.540807257460475}}],"columnOrder":["y","center","west","east","north","south"],"column":[[53,"grass_block","dirt","stone","stone","stone"],[54,"air","dirt","stone","dirt","dirt"],[55,"air","dirt","stone","dirt","dirt"],[56,"grass_block","grass_block","grass_block","dirt","dirt"],[57,"snow","snow","air","grass_block","grass_block"],[58,"air","air","air","snow","snow"],[59,"air","air","grass_block","air","air"],[60,"air","air","snow","air","air"],[61,"air","air","air","air","air"],[62,"air","air","air","air","air"],[63,"air","air","air","air","air"],[64,"air","air","air","air","air"],[65,"air","air","air","air","air"],[66,"air","air","air","air","air"],[67,"air","air","air","air","air"],[68,"air","air","air","air","air"],[69,"air","air","air","air","air"],[70,"air","air","air","air","air"],[71,"air","air","air","air","air"],[72,"air","air","air","air","air"],[73,"air","air","air","air","air"],[74,"air","air","air","air","air"]]}
+--- returned ---
+{
+ "at": "2026-10-19T00:37:59.803Z",
+ "scope": "READONLY: loaded-client metadata, no action or whole-region census",
+ "state": {
+  "p": {
+   "x": 0.5620620120488068,
+   "y": 51,
+   "z": -29.50050049685977
+  },
+  "hp": 8.333332061767578,
+  "food": 17,
+  "dimension": "overworld",
+  "ground": true,
+  "day": 11842,
+  "inv": [
+   [
+    "dirt",
+    1
+   ]
+  ]
+ },
+ "queryReturned": 30,
+ "queryCap": 160,
+ "returnedCounts": {
+  "sweet_berry_bush": 3,
+  "chest": 1,
+  "brown_mushroom": 5,
+  "cave_vines_plant": 15,
+  "cave_vines": 6
+ },
+ "candidates": [
+  {
+   "p": {
+    "x": 4,
+    "y": 67,
+    "z": -22
+   },
+   "name": "sweet_berry_bush",
+   "firstRayHit": {
+    "name": "grass_block",
+    "p": {
+     "x": 0,
+     "y": 53,
+     "z": -30
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 10,
+    "y": 66,
+    "z": -35
+   },
+   "name": "chest",
+   "firstRayHit": {
+    "name": "grass_block",
+    "p": {
+     "x": 0,
+     "y": 53,
+     "z": -30
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 7,
+    "y": 67,
+    "z": -22
+   },
+   "name": "sweet_berry_bush",
+   "firstRayHit": {
+    "name": "grass_block",
+    "p": {
+     "x": 0,
+     "y": 53,
+     "z": -30
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 29,
+    "y": 65,
+    "z": 12
+   },
+   "name": "brown_mushroom",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 52,
+     "z": -29
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 4,
+    "z": -6
+   },
+   "name": "cave_vines_plant",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 51,
+     "z": -29
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 30,
+    "y": 64,
+    "z": 12
+   },
+   "name": "brown_mushroom",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 52,
+     "z": -29
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 14,
+    "y": 10,
+    "z": 2
+   },
+   "name": "cave_vines_plant",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 51,
+     "z": -29
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 14,
+    "y": 9,
+    "z": 2
+   },
+   "name": "cave_vines",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 51,
+     "z": -29
+    }
+   }
+  },
+  {
+   "p": {
+    "x": 6,
+    "y": 0,
+    "z": -6
+   },
+   "name": "cave_vines",
+   "firstRayHit": {
+    "name": "stone",
+    "p": {
+     "x": 0,
+     "y": 51,
+     "z": -29
+    }
+   }
+  }
+ ],
+ "loadedFoodAnimals": [
+  {
+   "id": 329,
+   "name": "salmon",
+   "p": {
+    "x": -34.54138549004366,
+    "y": 61.599999994039536,
+    "z": 22.540807257460475
+   }
+  }
+ ],
+ "columnOrder": [
+  "y",
+  "center",
+  "west",
+  "east",
+  "north",
+  "south"
+ ],
+ "column": [
+  [
+   53,
+   "grass_block",
+   "dirt",
+   "stone",
+   "stone",
+   "stone"
+  ],
+  [
+   54,
+   "air",
+   "dirt",
+   "stone",
+   "dirt",
+   "dirt"
+  ],
+  [
+   55,
+   "air",
+   "dirt",
+   "stone",
+   "dirt",
+   "dirt"
+  ],
+  [
+   56,
+   "grass_block",
+   "grass_block",
+   "grass_block",
+   "dirt",
+   "dirt"
+  ],
+  [
+   57,
+   "snow",
+   "snow",
+   "air",
+   "grass_block",
+   "grass_block"
+  ],
+  [
+   58,
+   "air",
+   "air",
+   "air",
+   "snow",
+   "snow"
+  ],
+  [
+   59,
+   "air",
+   "air",
+   "grass_block",
+   "air",
+   "air"
+  ],
+  [
+   60,
+   "air",
+   "air",
+   "snow",
+   "air",
+   "air"
+  ],
+  [
+   61,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   62,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   63,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   64,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   65,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   66,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   67,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   68,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   69,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   70,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   71,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   72,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   73,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ],
+  [
+   74,
+   "air",
+   "air",
+   "air",
+   "air",
+   "air"
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (0.6, 51, -29.5) in overworld, health 8.3/20, food 17/20, alive
