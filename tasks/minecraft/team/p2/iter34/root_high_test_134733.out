@@ -1,0 +1,22 @@
+program #12941 on p2: 2.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:47:30.962Z","p":{"x":123.54243121643145,"y":62,"z":148.5},"hp":8.666666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["spruce_log",1,null],["cobblestone",19,null],["spruce_planks",2,null],["stick",3,null],["cobblestone",64,null],["coal",3,null],["sweet_berries",1,null],["dirt",62,null],["cobblestone",64,null],["wooden_pickaxe",1,38],["torch",3,null],["stone_shovel",1,85],["stone_pickaxe",1,15],["stone_sword",1,0],["stone_pickaxe",1,1]],"plant":{"age":"3"}}
+WINDOW {"es":[],"p":{"x":123.54243121643145,"y":62,"z":148.5}}
+WINDOW {"es":[],"p":{"x":123.7,"y":62,"z":148.5}}
+DIG_POST {"q":{"x":124,"y":63,"z":148},"original":"dirt","post":"air"}
+CUT {"q":{"x":124,"y":63,"z":148},"n":"dirt","p":{"x":123.7,"y":62,"z":148.5}}
+WINDOW {"es":[],"p":{"x":123.7,"y":62,"z":148.5}}
+DIG_POST {"q":{"x":124,"y":64,"z":148},"original":"dirt","post":"air"}
+CUT {"q":{"x":124,"y":64,"z":148},"n":"dirt","p":{"x":123.7,"y":62,"z":148.5}}
+WINDOW {"es":[],"p":{"x":123.7,"y":62,"z":148.5}}
+ENDING {"at":"2026-10-19T13:47:33.016Z","p":{"x":123.7,"y":62,"z":148.5},"hp":8.666666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["spruce_log",1,null],["cobblestone",19,null],["spruce_planks",2,null],["stick",3,null],["cobblestone",64,null],["coal",3,null],["sweet_berries",1,null],["dirt",63,null],["cobblestone",64,null],["wooden_pickaxe",1,38],["torch",3,null],["stone_shovel",1,87],["stone_pickaxe",1,15],["stone_sword",1,0],["stone_pickaxe",1,1]],"faces":[{"q":{"x":123,"y":61,"z":148},"n":"stone","full":true},{"q":{"x":123,"y":64,"z":148},"n":"dirt","full":true},{"q":{"x":124,"y":62,"z":148},"n":"dirt","full":true},{"q":{"x":124,"y":63,"z":148},"n":"dirt","full":true},{"q":{"x":122,"y":62,"z":148},"n":"dirt","full":true},{"q":{"x":122,"y":63,"z":148},"n":"dirt","full":true},{"q":{"x":123,"y":62,"z":149},"n":"dirt","full":true},{"q":{"x":123,"y":63,"z":149},"n":"dirt","full":true},{"q":{"x":123,"y":62,"z":147},"n":"dirt","full":true},{"q":{"x":123,"y":63,"z":147},"n":"dirt","full":true}]}
+--- error ---
+Error: no visible reachable face (124, 65, 148) obstruction {"p":{"x":123,"y":64,"z":148},"n":"dirt"}
+    at face (p2-program-12941.js:9:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async cut (p2-program-12941.js:11:1288)
+    at async p2-program-12941.js:22:1445
+--- chat since this player's previous program ---
+p4: P4 actual12933 now49/62/111 HP9.911/food17 kitinclSword+3picks+Shield+Table/Furnace. General tunnel3cell test passed then gravelshift51 stopped; repaired gravitysettle/reclear small3celltest passed. Route toP3: x10/62/111 ->x10/62/88 ->pillar68 ->9/68/88, 
+p4: avoidsP3westfloor and lava9/62/87. Donation soon.
+--- p2 now: (123.7, 62, 148.5) in overworld, health 8.7/20, food 17/20, alive

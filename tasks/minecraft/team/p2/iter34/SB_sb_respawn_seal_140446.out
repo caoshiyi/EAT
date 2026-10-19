@@ -1,0 +1,13 @@
+[sandbox] program #6 on p2: 9.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:04:37.391Z","p":{"x":1.5,"y":63,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+DIG_POST {"q":{"x":1,"y":62,"z":-24},"original":"grass_block","post":"air"}
+CUT {"q":{"x":1,"y":62,"z":-24},"n":"grass_block","p":{"x":1.5,"y":62.76636799395752,"z":-23.5}}
+DIG_POST {"q":{"x":1,"y":59,"z":-24},"original":"stone","post":"air"}
+CUT {"q":{"x":1,"y":59,"z":-24},"n":"stone","p":{"x":1.5,"y":59.76636799395752,"z":-23.5}}
+ENDING {"at":"2026-10-19T14:04:46.959Z","p":{"x":1.5,"y":59,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"faces":[{"q":{"x":1,"y":58,"z":-24},"n":"stone","full":true},{"q":{"x":1,"y":61,"z":-24},"n":"dirt","full":true},{"q":{"x":2,"y":59,"z":-24},"n":"stone","full":true},{"q":{"x":2,"y":60,"z":-24},"n":"stone","full":true},{"q":{"x":0,"y":59,"z":-24},"n":"dirt","full":true},{"q":{"x":0,"y":60,"z":-24},"n":"dirt","full":true},{"q":{"x":1,"y":59,"z":-23},"n":"stone","full":true},{"q":{"x":1,"y":60,"z":-23},"n":"stone","full":true},{"q":{"x":1,"y":59,"z":-25},"n":"dirt","full":true},{"q":{"x":1,"y":60,"z":-25},"n":"dirt","full":true}],"goal":null,"controls":{}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (1.5, 59, -23.5) in overworld, health 20/20, food 20/20, alive
