@@ -1,0 +1,23 @@
+program #12006 on p2: 4.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:37:34.939Z","p":{"x":-5.5,"y":39,"z":-39.50000000000007},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+FAILURE Error: walkpost {"at":"2026-10-19T08:37:39.111Z","p":{"x":-5.5,"y":39,"z":-39.50000000000007},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]} {"at":"2026-10-19T08:37:39.111Z","p":{"x":-5.5,"y":39,"z":-39.50000000000007},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T08:37:39.111Z",
+ "p": {
+  "x": -5.5,
+  "y": 39,
+  "z": -39.50000000000007
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "dead": false,
+ "points": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-5.5, 39, -39.5) in overworld, health 20/20, food 20/20, alive

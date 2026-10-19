@@ -1,0 +1,71 @@
+program #12004 on p2: 22.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:33:51.076Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:33:51.135Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:33:54.144Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:33:57.151Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:34:00.162Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:34:03.223Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:34:06.236Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:34:09.243Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+ACTUAL {"at":"2026-10-19T08:34:12.252Z","p":{"x":-6.5,"y":38,"z":-39.5},"hp":20,"food":20,"ground":true,"water":false,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T08:34:13.156Z",
+ "p": {
+  "x": -6.5,
+  "y": 38,
+  "z": -39.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "water": false,
+ "inv": [],
+ "dead": false,
+ "mobs": [
+  {
+   "n": "creeper",
+   "p": {
+    "x": -2.300000011920929,
+    "y": 46,
+    "z": -35.29992833365062
+   }
+  },
+  {
+   "n": "skeleton",
+   "p": {
+    "x": -2.9426220257113838,
+    "y": 46,
+    "z": -35.69926756620407
+   }
+  },
+  {
+   "n": "pillager",
+   "p": {
+    "x": -16.69999998807907,
+    "y": 43,
+    "z": -35.94667571095504
+   }
+  },
+  {
+   "n": "pillager",
+   "p": {
+    "x": -16.090131515079676,
+    "y": 43,
+    "z": -35.30000001192093
+   }
+  },
+  {
+   "n": "zombie",
+   "p": {
+    "x": -2.8167821906751014,
+    "y": 46,
+    "z": -35.14996107668985
+   }
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-6.5, 38, -39.5) in overworld, health 20/20, food 20/20, alive

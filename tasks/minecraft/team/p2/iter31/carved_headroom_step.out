@@ -1,0 +1,168 @@
+program #12009 on p2: 8.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:39:05.777Z","p":{"x":-5.5,"y":39,"z":-39.50000000000007},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+FIRST_DIVERGENCE {"currentRoof":{"q":{"x":-6,"y":41,"z":-40},"n":"stone"},"targetHead":[{"q":{"x":-5,"y":40,"z":-40},"n":"air"},{"q":{"x":-5,"y":41,"z":-40},"n":"air"}]}
+CUT {"q":{"x":-6,"y":41,"z":-40},"n":"stone","p":{"x":-5.5,"y":39,"z":-39.50000000000007}}
+WALK {"at":"2026-10-19T08:39:13.891Z","p":{"x":-4.5,"y":40,"z":-39.50000000000014},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T08:39:13.891Z",
+ "p": {
+  "x": -4.5,
+  "y": 40,
+  "z": -39.50000000000014
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "resources": {
+  "dirt": [
+   {
+    "x": -5,
+    "y": 48,
+    "z": -48
+   },
+   {
+    "x": -5,
+    "y": 49,
+    "z": -48
+   },
+   {
+    "x": -5,
+    "y": 50,
+    "z": -48
+   },
+   {
+    "x": -12,
+    "y": 44,
+    "z": -50
+   },
+   {
+    "x": -11,
+    "y": 44,
+    "z": -51
+   },
+   {
+    "x": -5,
+    "y": 53,
+    "z": -38
+   },
+   {
+    "x": -12,
+    "y": 45,
+    "z": -50
+   },
+   {
+    "x": -3,
+    "y": 51,
+    "z": -33
+   },
+   {
+    "x": -12,
+    "y": 43,
+    "z": -51
+   },
+   {
+    "x": -13,
+    "y": 44,
+    "z": -50
+   }
+  ],
+  "gravel": [
+   {
+    "x": -5,
+    "y": 47,
+    "z": -39
+   },
+   {
+    "x": -4,
+    "y": 47,
+    "z": -39
+   },
+   {
+    "x": -5,
+    "y": 47,
+    "z": -38
+   },
+   {
+    "x": -4,
+    "y": 47,
+    "z": -38
+   },
+   {
+    "x": -5,
+    "y": 47,
+    "z": -37
+   },
+   {
+    "x": -5,
+    "y": 48,
+    "z": -40
+   },
+   {
+    "x": -5,
+    "y": 48,
+    "z": -39
+   },
+   {
+    "x": -4,
+    "y": 48,
+    "z": -40
+   },
+   {
+    "x": -6,
+    "y": 48,
+    "z": -39
+   },
+   {
+    "x": -4,
+    "y": 48,
+    "z": -39
+   }
+  ],
+  "spruce_log": [
+   {
+    "x": -21,
+    "y": 57,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 58,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 59,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 60,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 61,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 62,
+    "z": -30
+   },
+   {
+    "x": -21,
+    "y": 63,
+    "z": -30
+   }
+  ]
+ }
+}
+--- chat since this player's previous program ---
+p4: Rescue report: I did not launch pickup before08:36 gate; no items recovered. Canonical kit death was08:30:34 at65.7/70.1/307.1, Spider08:31:09 nearspawn. Availability now unobserved; elapsed5min alone is not loaded-item expiry proof. P4 remains healthy sea
+p4: led57/Dirt1. Reassigning review to current capability, not late salvage: P4 has demonstrated pod57→63 exit, east tree3log acquisition, table craft, and same-site retained3DOWN ending. If P2 cave39 exit is the bottleneck, a joint forward P4 local retained w
+p4: orkstation is cheaper than another P2 ascent/death chain; please allocate explicitly before any new donor/delivery prep. I am checking current local source only.
+--- p2 now: (-4.5, 40, -39.5) in overworld, health 20/20, food 20/20, alive

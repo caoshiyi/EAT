@@ -1,0 +1,35 @@
+program #12014 on p2: 6.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:44:18.683Z","p":{"x":-3.5,"y":41,"z":-39.50000000000021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+CUT {"q":{"x":-4,"y":42,"z":-39},"n":"gravel","p":{"x":-3.5,"y":41,"z":-39.50000000000021}}
+ACTUAL_GRAVEL_RECEIPT {"before":0,"after":1,"state":{"at":"2026-10-19T08:44:20.143Z","p":{"x":-3.5,"y":41,"z":-39.50000000000021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",1,null]]}}
+CUT {"q":{"x":-4,"y":42,"z":-39},"n":"gravel","p":{"x":-3.5,"y":41,"z":-39.50000000000021}}
+ACTUAL_GRAVEL_RECEIPT {"before":1,"after":2,"state":{"at":"2026-10-19T08:44:21.645Z","p":{"x":-3.5,"y":41,"z":-39.50000000000021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",2,null]]}}
+CUT {"q":{"x":-4,"y":42,"z":-39},"n":"gravel","p":{"x":-3.5,"y":41,"z":-39.50000000000021}}
+ACTUAL_GRAVEL_RECEIPT {"before":2,"after":3,"state":{"at":"2026-10-19T08:44:23.147Z","p":{"x":-3.5,"y":41,"z":-39.50000000000021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3,null]]}}
+CUT {"q":{"x":-4,"y":42,"z":-39},"n":"gravel","p":{"x":-3.5,"y":41,"z":-39.50000000000021}}
+ACTUAL_GRAVEL_RECEIPT {"before":3,"after":4,"state":{"at":"2026-10-19T08:44:24.652Z","p":{"x":-3.5,"y":41,"z":-39.50000000000021},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",4,null]]}}
+COLUMN_END [{"y":42,"n":"air"},{"y":43,"n":"air"},{"y":44,"n":"air"},{"y":45,"n":"air"},{"y":46,"n":"air"},{"y":47,"n":"air"},{"y":48,"n":"air"},{"y":49,"n":"air"},{"y":50,"n":"air"},{"y":51,"n":"granite"},{"y":52,"n":"granite"}]
+--- returned ---
+{
+ "at": "2026-10-19T08:44:25.254Z",
+ "p": {
+  "x": -3.5,
+  "y": 41,
+  "z": -39.50000000000021
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "gravel",
+   4,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-3.5, 41, -39.5) in overworld, health 20/20, food 20/20, alive

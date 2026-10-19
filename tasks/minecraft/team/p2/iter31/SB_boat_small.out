@@ -1,0 +1,98 @@
+[sandbox] program #318 on p2: 9.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:03:31.801Z","p":{"x":16.309787898443798,"y":63,"z":153.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["spruce_boat",1,null],["dirt",32,null],["snowball",16,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,25],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]}
+DOCK_OPTIONS [{"q":{"x":17,"y":62,"z":155},"actor":{"x":17,"y":63,"z":154},"area":25,"d":0.8522867739995907},{"q":{"x":15,"y":62,"z":155},"actor":{"x":15,"y":63,"z":154},"area":25,"d":1.4019787227022456},{"q":{"x":16,"y":62,"z":156},"actor":{"x":16,"y":63,"z":155},"area":25,"d":1.5316554906447548},{"q":{"x":17,"y":62,"z":156},"actor":{"x":17,"y":63,"z":155},"area":25,"d":1.6511791983714637}]
+CUT {"q":{"x":16,"y":64,"z":154},"n":"dirt","p":{"x":16.309787898443798,"y":63,"z":153.5}}
+CUT {"q":{"x":16,"y":63,"z":154},"n":"dirt","p":{"x":16.309787898443798,"y":63,"z":153.5}}
+WALK {"at":"2026-10-19T08:03:33.617Z","p":{"x":17.33438549879153,"y":63,"z":154.77970654480382},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["spruce_boat",1,null],["dirt",34,null],["snowball",16,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,27],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]}
+ORDINARY_PLACE_ENTITY {"at":"2026-10-19T08:03:33.669Z","state":{"at":"2026-10-19T08:03:33.669Z","p":{"x":17.398558824483153,"y":63,"z":154.8013017340242},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["dirt",34,null],["spruce_boat",1,null],["snowball",16,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,27],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]},"ref":{"x":17,"y":62,"z":155},"face":1}
+FAILURE Error: Failed to place entity {"at":"2026-10-19T08:03:38.718Z","p":{"x":17.900547646042448,"y":63,"z":154.95388593593455},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["dirt",34,null],["spruce_boat",1,null],["snowball",16,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,27],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]}
+WALK {"at":"2026-10-19T08:03:39.933Z","p":{"x":16.3,"y":63,"z":153.67015546328037},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["dirt",34,null],["spruce_boat",1,null],["snowball",16,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,27],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]}
+HOME_END {"at":"2026-10-19T08:03:41.249Z","p":{"x":16.451325375142208,"y":63,"z":153.69337762198032},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",3,null],["wooden_sword",1,0],["furnace",1,null],["snowball",16,null],["spruce_boat",1,null],["dirt",32,null],["wooden_pickaxe",1,17],["stone_sword",1,0],["stone_shovel",1,27],["dirt",7,null],["stone_pickaxe",1,1],["spruce_sapling",1,null],["crafting_table",1,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T08:03:41.249Z",
+ "p": {
+  "x": 16.451325375142208,
+  "y": 63,
+  "z": 153.69337762198032
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_planks",
+   3,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "spruce_boat",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   32,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   17
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "stone_shovel",
+   1,
+   27
+  ],
+  [
+   "dirt",
+   7,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ],
+ "dead": false,
+ "spawned": false,
+ "mounted": false,
+ "samples": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (16.5, 63, 153.7) in overworld, health 20/20, food 20/20, alive
