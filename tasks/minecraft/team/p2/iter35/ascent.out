@@ -1,0 +1,19 @@
+program #13432 on p2: 2.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:41:59.687Z","p":{"x":8.499999999999984,"y":61,"z":90.5},"hp":20,"food":17,"dim":"overworld","ground":true,"inv":[["torch",1,null],["bone",1,null],["bone_meal",2,null],["cobblestone",59,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",8,null],["dirt",56,null],["sweet_berries",12,null],["cobblestone",64,null],["sandstone",2,null],["stone_pickaxe",1,96],["cobblestone",12,null],["stone_pickaxe",1,97]]}
+DIG_POST {"q":{"x":8,"y":62,"z":89},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":8,"y":62,"z":89},"n":"cobblestone","p":{"x":8.499999999999984,"y":61,"z":90.5}}
+DIG_POST {"q":{"x":8,"y":61,"z":89},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":8,"y":61,"z":89},"n":"cobblestone","p":{"x":8.499999999999984,"y":61,"z":90.5}}
+WALK {"at":"2026-10-19T15:42:01.956Z","p":{"x":8.499999999999952,"y":61,"z":89.48698537919061},"hp":20,"food":17,"dim":"overworld","ground":true,"inv":[["torch",1,null],["bone",1,null],["bone_meal",2,null],["cobblestone",59,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",8,null],["dirt",56,null],["sweet_berries",12,null],["cobblestone",64,null],["sandstone",2,null],["stone_pickaxe",1,98],["cobblestone",14,null],["stone_pickaxe",1,97]]}
+ENDING {"at":"2026-10-19T15:42:02.006Z","p":{"x":8.499999999999952,"y":61,"z":89.47103378199061},"hp":20,"food":17,"dim":"overworld","ground":true,"inv":[["torch",1,null],["bone",1,null],["bone_meal",2,null],["cobblestone",59,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",8,null],["dirt",56,null],["sweet_berries",12,null],["cobblestone",64,null],["sandstone",2,null],["stone_pickaxe",1,98],["cobblestone",14,null],["stone_pickaxe",1,97]],"faces":[{"q":{"x":8,"y":60,"z":89},"n":"cobblestone","full":true},{"q":{"x":8,"y":63,"z":89},"n":"cobblestone","full":true},{"q":{"x":9,"y":61,"z":89},"n":"air","full":false},{"q":{"x":9,"y":62,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":62,"z":89},"n":"sand","full":true},{"q":{"x":8,"y":61,"z":90},"n":"air","full":false},{"q":{"x":8,"y":62,"z":90},"n":"air","full":false},{"q":{"x":8,"y":61,"z":88},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":88},"n":"diorite","full":true}],"controls":{},"goal":null}
+--- error ---
+Error: placeface (9, 61, 89)
+    at placeAt (p2-program-13432.js:16:832)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p2-program-13432.js:22:264
+--- chat since this player's previous program ---
+p3: ITER35 P3 mission execution healthy20/20 Snow1. Personally moving West55 for corrected78.25 attempt. P1 experiment_owner please investigate remaining high104/cages AND eventual Dragon damage method; report evidence+limits, no duplicate West physical work. 
+p3: P4 integration please continue Snow16 End delivery; propose recipient P3 sameY1/55/-15, acceptance actual inventory then shot. P2 continuity please food->P1 healing and retained route. Confirm own commitments; independent local decisions yours. Board MISSI
+p3: ON35.md.
+--- p2 now: (8.5, 61, 89.5) in overworld, health 20/20, food 17/20, alive
