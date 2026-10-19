@@ -1,0 +1,10 @@
+# Iteration31 integration — opening
+Opening reads began ~07:20 UTC; fresh P4 program11883 at07:22:26.132 confirms Overworld(6.5,66,-36.5),20HP/20food,Dirt1 and ten full boundaries. Opening evaluator python missing, python3 succeeded but save failed (connection refused): LAST-SAVED dragon0, milestones11/12,deaths188,programs11881. Six crystals/Dragon200 are saved informational readings.
+
+Recipient is execution_owner/P2. Proposed within five minutes in chat11270–72: qualify actual Nether entry-exit/20m retained route before another supply chain. Acceptance is real grounded 20m progress with visible normal cuts/support, current hazards and actual endpoint; whole pilot15min incl reset/access; two comparable failures retire. Adoption is owner using the steps in LIVE or rejecting this path from observed geometry. Owner agreement pending; no shared reset until coordinated. No independent equipment gathering planned.
+
+Least-established link: beyond active Nether portal, not snow acquisition or Snow flight. Prior live11863 genuinely entered Nether, but11868 planned far route made no progress. Native11874 reached66 but overshot z1.5 to0.78/0.69 and later canonical lava death. Intermediate height/health did not qualify landed ending. Sandbox286 actual slab removal+return and287 actual Snow removal were End mechanisms, unrelated to this missing access link.
+
+One own outstanding program across worlds enforced by local p4cmd.py wrapper; small check tested (arena read only). No sandbox running at opening. Own files only; no agents, excluded sources, server access, tools edits or remote push.
+
+07:23 agreement: owner chat11273–74 requests **direct OW** route preferred, accepted11275–77; revised pilotdeadline07:37:56 (15min after owner07:22:56). Dated stronghold(144,-36,2241) is target memory, not fresh physical observation. Acceptance/decision is actual route progress with endpoint and next segment, target arrival if attainable. Adoption owner travels qualified waypoints with actual gear, not mere code reuse. No speculative Nether path repair or supply collection. G31-1 state/timing in ITER31_SANDBOX.md.

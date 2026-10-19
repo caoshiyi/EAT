@@ -1,0 +1,4 @@
+# Iteration31 sandbox coordination
+Opening ~07:23 UTC `--sandbox status`: not running. Prior G30-8 no longer active and must not be treated as available End gear. No iteration31 reset yet. Reset only after peer release and preservation, publish generation/start/end and actual copied bodies. P4 owns no active call after11883.
+
+G31-1 coordinated in chat11273–80. Owner explicitly no active SB and releases reset; prior results preserved iter30. Reset began ~07:23:25, copy0.4s ~07:23:26, ready07:23:38 (12.5s total). Copy actualP4 OW66/20HP/Dirt1, P2OW64/20HP/Dirt7. SB289 first read-only attempt failed BigInt serialization of bot.time before physical action; fixed to explicit timeOfDay/isDay. SB290 actual two native roof-cut/jump-place increments66→68/20HP; attempted unnecessary third increment stopped noDirt (no third placed). Surface exit qualified at68, not general threeUP funding. Live caller changed loop to2. Small test exposed error before live.
