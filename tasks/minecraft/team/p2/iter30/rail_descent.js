@@ -16,6 +16,6 @@ async function railDrop(q){
  try{await bot.lookAt(v(target.x,bot.entity.position.y-2,target.z),true);bot.setControlState('forward',true);while(remaining()>.14&&Date.now()-t<1600){live();await sleep(1);}}
  finally{bot.clearControlStates();}
  for(let k=0;k<25&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.03);k++)await sleep(1);
- live();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.03||!bot.entity.position.floored().equals(q))throw Error('rail landing cell');await sleep(5);if(Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.15){console.log('RAIL_RECENTER',JSON.stringify({p:bot.entity.position,target}));await center(target.x,target.z);}if(Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.22)throw Error('rail recenter');
+ live();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-q.y)>.03||Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.95)throw Error('rail landing cell');await sleep(5);if(Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.15){console.log('RAIL_RECENTER',JSON.stringify({p:bot.entity.position,target}));await center(target.x,target.z);}if(Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.22)throw Error('rail recenter');
  console.log('RAIL_DROP',JSON.stringify({at:new Date().toISOString(),start,target,state:{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,hazards:snap().hazards}}));
 }
