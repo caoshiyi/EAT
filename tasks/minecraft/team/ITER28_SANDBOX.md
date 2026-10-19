@@ -1,0 +1,9 @@
+# Iteration28 sandbox ledger — P4
+Opening01:47: sandbox not running. Previous G27-10 results preserved in arena and iter27 own/peer raws. No reset yet. P4 own runs/observers reset dependency released inLIVE11515. Before replacement confirm p2 completion/preservation and both-world idle. Publish generation, exact CLI copy duration and uncertain copy instant, live source state and later live changes. Independent p2/p4 runs may overlap; p4 itself only one outstanding across worlds including chat.
+
+## G28-1, ready ~01:49UTC
+P2 release chat10557-58 requested reset; later10559 clarified audit11516 and correction01:47–02:00. Both-world status preserved G1_prereset_live/sb.txt; p2 no running program, sandbox unavailable. Reset completed CLIcopy1.9s/total54.5s, exact copy instant unknown. Fresh p2 End50/10HP17food/Snow3/endstone151/onepick92 and partial southern approach; p4 old room20HPempty. Prior G27-10 records preserved. Ready announced via p4 after all own runs idle. No live effect since copy known. Plan budget01:47–02:00 vs owner's chat01:49–02:02 noted, no silent clock replacement. P4 all dependencies released; do not reset while p2 trial active.
+
+G28-1 actualSB181 completed01:49:53.076 retained50/10HP/Snow2, targetwestern89gone/sameEnd/seven. This sandbox differs from live source now: one fewer crystal/Snow, completed final stairs and tool wear/endstone changed. No reset requested; p2 can adopt live without replacing current results. P4 all runs finished.
+
+LIVE11521 actualsecondtarget effect01:50:39.413/retained51:10.025 changes live fromG28-1source: western89gone/seven/Snow2/endstone152/finalstairs built/pickwear changed. Sandbox181 independently also7/Snow2 but its source/phase clocks are distinct; future reset must preserve records/release active tests. No reset requested yet.
