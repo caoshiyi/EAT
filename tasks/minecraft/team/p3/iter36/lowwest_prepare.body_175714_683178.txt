@@ -1,0 +1,30 @@
+program #13905 on p3: 22 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:57:14.815Z","p":{"x":-4.545621722857235,"y":50,"z":4.5007035741006405},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["end_stone",39,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,31],["end_stone",64,null],["stone_sword",1,11],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",12,null],["end_stone",64,null],["dirt",5,null]],"time":23036,"dim":"the_end","controls":{},"goal":false}
+GATE Vec3 {
+  x: 14.358648633312974,
+  y: 65.77393700748512,
+  z: 28.580276167354057
+}
+CUT Vec3 { x: -5, y: 52, z: 4 } end_stone
+PLACE Vec3 { x: -5, y: 50, z: 4 } netherrack
+CUT Vec3 { x: -5, y: 53, z: 4 } end_stone
+PLACE Vec3 { x: -5, y: 51, z: 4 } netherrack
+CUT Vec3 { x: -5, y: 54, z: 4 } end_stone
+CUT Vec3 { x: -5, y: 55, z: 4 } end_stone
+CUT Vec3 { x: -5, y: 56, z: 4 } end_stone
+PLACE Vec3 { x: -5, y: 54, z: 4 } netherrack
+PREPARED52 {"at":"2026-10-19T17:57:35.317Z","p":{"x":-4.545621722857235,"y":52,"z":4.5007035741006405},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["end_stone",43,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,36],["end_stone",64,null],["stone_sword",1,11],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",9,null],["end_stone",64,null],["dirt",5,null]],"time":23456,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":-5,"y":51,"z":4},"n":"netherrack","full":true},{"q":{"x":-5,"y":54,"z":4},"n":"netherrack","full":true},{"q":{"x":-4,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":-4,"y":53,"z":4},"n":"end_stone","full":true},{"q":{"x":-6,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":-6,"y":53,"z":4},"n":"end_stone","full":true},{"q":{"x":-5,"y":52,"z":5},"n":"end_stone","full":true},{"q":{"x":-5,"y":53,"z":5},"n":"end_stone","full":true},{"q":{"x":-5,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":-5,"y":53,"z":3},"n":"end_stone","full":true}],"shaft":[[54,"netherrack"],[55,"air"],[56,"air"],[57,"end_stone"]]}
+CUT Vec3 { x: -5, y: 51, z: 4 } netherrack
+CUT Vec3 { x: -5, y: 50, z: 4 } netherrack
+PLACE Vec3 { x: -5, y: 52, z: 4 } end_stone
+LOW50 {"at":"2026-10-19T17:57:36.770Z","p":{"x":-4.545621722857235,"y":50,"z":4.5007035741006405},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,38],["end_stone",64,null],["end_stone",42,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":23476,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":-5,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":-5,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":-4,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-4,"y":51,"z":4},"n":"air","full":false},{"q":{"x":-6,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":-6,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":-5,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":-5,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":-5,"y":50,"z":3},"n":"end_stone","full":true},{"q":{"x":-5,"y":51,"z":3},"n":"end_stone","full":true}]}
+END {"at":"2026-10-19T17:57:36.770Z","p":{"x":-4.545621722857235,"y":50,"z":4.5007035741006405},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,38],["end_stone",64,null],["end_stone",42,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":23476,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: CHANGED experiment E3: ownG2SB56 90s gatecensored/noascent, BUT minactualroot1.554/56.402/6.265 at17:54:02 gives SAMEfountain0/feet52 eye53.62 CORE2.832m directlyvertical. P2livewindowindependentlysameY. Testing only2UP52 + Nroof54hatch on actualrange, one
+p1: Swordthen2Nreturn50. Avoids60/perchdependence entirely; resultpending.
+p1: P3 E3 nowRUNNING ownG2 SB57 fountain0/52/4 existingtube55/56AIR, cap57E; N54hatchtest <=650ms then2Nreturn50, no60wait. Importantdifference your-5field55/56NATURALsolid mustpreclear, so packetwillnotqualifyyourrayuntilactualshaft55/56cleared. 0/52/4 also m
+p1: odel2.83 inP2live+ownG2 butneedsfreshcurrentcontact.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

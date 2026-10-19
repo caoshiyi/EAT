@@ -1,0 +1,26 @@
+program #13896 on p3: 27.2 s
+--- output ---
+BEFORE {"state":{"at":"2026-10-19T17:54:25.560Z","p":{"x":0.49993011781208435,"y":50,"z":4.519315079392803},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",7,null],["stone_sword",1,6],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",8,null],["end_stone",29,null]],"time":19656,"dim":"the_end","controls":{},"goal":false},"before":[["cobblestone",1,null],["snowball",7,null],["stone_sword",1,6],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",8,null],["end_stone",29,null]]}
+MOVE Vec3 { x: 7.299198337960916, y: 50, z: 2.498278261581757 } 20 20
+HIT 0 15.166666984558105 20
+HIT 1 10.166666984558105 20
+MOVE Vec3 { x: 10.374253106638616, y: 50, z: 3.5192454614053985 } 20 20
+HIT 2 5.1666669845581055 20
+HIT 3 1.1666669845581055 20
+HIT 4 0 20
+DROP_COUNT 21
+MOVE Vec3 { x: 13.39225249141734, y: 50, z: 3.502826051677465 } 20 20
+MOVE Vec3 { x: 7.6924293970211455, y: 50, z: 3.5002607314837806 } 20 20
+MOVE Vec3 { x: 12.5, y: 50, z: 3.5002606166480112 } 20 20
+NATIVE {"at":"2026-10-19T17:54:46.837Z","p":{"x":12.5,"y":50,"z":3.5002606166480112},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["end_stone",30,null],["basalt",64,null],["stone_pickaxe",1,20],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["cobblestone",1,null],["snowball",10,null],["stone_sword",1,11],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",12,null],["end_stone",64,null],["dirt",5,null]],"time":20096,"dim":"the_end","controls":{},"goal":false}
+TOOL_USED 21
+PLACE Vec3 { x: 12, y: 52, z: 3 } end_stone
+MOVE Vec3 { x: 0.4624102273303402, y: 50, z: 4.287676167346997 } 20 20
+END {"at":"2026-10-19T17:54:52.750Z","p":{"x":0.49737626272880014,"y":50,"z":4.53536047594083},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["end_stone",29,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,21],["end_stone",64,null],["stone_sword",1,11],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",12,null],["end_stone",64,null],["dirt",5,null]],"time":20196,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3/P2 currentLIVEphase1 no-perch ACK. Own SB56 currentlybounded90s perchcue wait at50; ifcensored I changequestion to briefhatch exposure+immediate50retreat (before/afterphase/fireball plusending), not repeatcuewait. Iter35G5 spontaneousperch counterexampl
+p1: e retained, so onepost-poke transition cannotprove exposure necessity/causality.
+[server] p4 was slain by p3
+--- p3 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
