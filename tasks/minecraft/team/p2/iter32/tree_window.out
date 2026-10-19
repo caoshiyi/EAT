@@ -1,0 +1,98 @@
+program #12072 on p2: 29 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:31:01.284Z","p":{"x":21.47238607987173,"y":64,"z":8.502816255464248},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",4,null],["wooden_pickaxe",1,14],["wooden_shovel",1,43],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+CUT {"q":{"x":21,"y":66,"z":8},"n":"dirt","p":{"x":21.47238607987173,"y":64,"z":8.502816255464248}}
+UP {"at":"2026-10-19T09:31:02.396Z","p":{"x":21.47238607987173,"y":65,"z":8.502816255464248},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",4,null],["wooden_pickaxe",1,14],["wooden_shovel",1,44],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+UP {"at":"2026-10-19T09:31:03.016Z","p":{"x":21.47238607987173,"y":66,"z":8.502816255464248},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",3,null],["wooden_pickaxe",1,14],["wooden_shovel",1,44],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+UP {"at":"2026-10-19T09:31:03.667Z","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",2,null],["wooden_pickaxe",1,14],["wooden_shovel",1,44],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":68,"z":10},"b":{"q":{"x":21,"y":68,"z":9},"n":"grass_block"}}
+CUT {"q":{"x":21,"y":68,"z":9},"n":"grass_block","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":68,"z":10},"b":{"q":{"x":22,"y":68,"z":9},"n":"spruce_leaves"}}
+CUT {"q":{"x":22,"y":68,"z":9},"n":"spruce_leaves","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":68,"z":10},"b":{"q":{"x":22,"y":68,"z":10},"n":"spruce_log"}}
+CUT {"q":{"x":22,"y":68,"z":10},"n":"spruce_log","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":67,"z":10},"b":{"q":{"x":22,"y":67,"z":10},"n":"spruce_log"}}
+CUT {"q":{"x":22,"y":67,"z":10},"n":"spruce_log","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":69,"z":10},"b":{"q":{"x":21,"y":69,"z":9},"n":"spruce_leaves"}}
+CUT {"q":{"x":21,"y":69,"z":9},"n":"spruce_leaves","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":69,"z":10},"b":{"q":{"x":22,"y":69,"z":9},"n":"spruce_leaves"}}
+CUT {"q":{"x":22,"y":69,"z":9},"n":"spruce_leaves","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":69,"z":10},"b":{"q":{"x":22,"y":69,"z":10},"n":"spruce_log"}}
+CUT {"q":{"x":22,"y":69,"z":10},"n":"spruce_log","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":70,"z":10},"b":{"q":{"x":22,"y":70,"z":9},"n":"spruce_leaves"}}
+CUT {"q":{"x":22,"y":70,"z":9},"n":"spruce_leaves","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":70,"z":10},"b":{"q":{"x":22,"y":70,"z":10},"n":"spruce_log"}}
+CUT {"q":{"x":22,"y":70,"z":10},"n":"spruce_log","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":71,"z":10},"b":{"q":{"x":21,"y":70,"z":9},"n":"spruce_leaves"}}
+CUT {"q":{"x":21,"y":70,"z":9},"n":"spruce_leaves","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+ACTUAL_FOREGROUND {"q":{"x":22,"y":71,"z":10},"b":{"q":{"x":22,"y":71,"z":10},"n":"spruce_log"}}
+CUT {"q":{"x":22,"y":71,"z":10},"n":"spruce_log","p":{"x":21.47238607987173,"y":67,"z":8.502816255464248}}
+LOCAL_STANCE [{"q":{"x":22,"y":67,"z":9},"n":"air"},{"q":{"x":22,"y":68,"z":9},"n":"air"},{"q":{"x":22,"y":66,"z":9},"n":"grass_block"},{"q":{"x":22,"y":67,"z":10},"n":"air"},{"q":{"x":22,"y":68,"z":10},"n":"air"},{"q":{"x":22,"y":66,"z":10},"n":"spruce_log"}]
+WALK {"at":"2026-10-19T09:31:23.381Z","p":{"x":22.52598163871727,"y":67,"z":10.5},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",3,null],["wooden_pickaxe",1,14],["wooden_shovel",1,45],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]]}
+RECEIPT {"at":"2026-10-19T09:31:24.131Z","p":{"x":22.52598163871727,"y":67,"z":10.5},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",3,null],["wooden_pickaxe",1,14],["wooden_shovel",1,45],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]]}
+BURY_ADMISSION {"q":{"x":23,"y":66,"z":11},"at":{"at":"2026-10-19T09:31:24.350Z","p":{"x":22.52598163871727,"y":67,"z":10.5},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",3,null],["wooden_pickaxe",1,14],["wooden_shovel",1,45],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]]}}
+WALK {"at":"2026-10-19T09:31:26.435Z","p":{"x":23.497481684626752,"y":66,"z":11.50221807877063},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",3,null],["wooden_pickaxe",1,14],["wooden_shovel",1,45],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]]}
+CUT {"q":{"x":23,"y":65,"z":11},"n":"grass_block","p":{"x":23.468174801831204,"y":65.76636799395752,"z":11.50221807877063}}
+CUT {"q":{"x":23,"y":64,"z":11},"n":"dirt","p":{"x":23.468174801831204,"y":64.76636799395752,"z":11.50221807877063}}
+CUT {"q":{"x":23,"y":63,"z":11},"n":"dirt","p":{"x":23.468174801831204,"y":63.76636799395752,"z":11.50221807877063}}
+ENDING {"at":"2026-10-19T09:31:29.646Z","p":{"x":23.468174801831204,"y":63,"z":11.50221807877063},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",5,null],["wooden_pickaxe",1,14],["wooden_shovel",1,48],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]],"faces":[{"q":{"x":23,"y":62,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":65,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":10},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":10},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T09:31:29.845Z","p":{"x":23.468174801831204,"y":63,"z":11.50221807877063},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",5,null],["wooden_pickaxe",1,14],["wooden_shovel",1,48],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]],"faces":[{"q":{"x":23,"y":62,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":65,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":10},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":10},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T09:31:30.046Z","p":{"x":23.468174801831204,"y":63,"z":11.50221807877063},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",5,null],["wooden_pickaxe",1,14],["wooden_shovel",1,48],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null],["spruce_log",4,null]],"faces":[{"q":{"x":23,"y":62,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":65,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":24,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":63,"z":11},"n":"dirt","full":true},{"q":{"x":22,"y":64,"z":11},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":12},"n":"dirt","full":true},{"q":{"x":23,"y":63,"z":10},"n":"dirt","full":true},{"q":{"x":23,"y":64,"z":10},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T09:31:30.246Z",
+ "p": {
+  "x": 23.468174801831204,
+  "y": 63,
+  "z": 11.50221807877063
+ },
+ "hp": 20,
+ "food": 18,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "dirt",
+   5,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   14
+  ],
+  [
+   "wooden_shovel",
+   1,
+   48
+  ],
+  [
+   "spruce_sapling",
+   3,
+   null
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   14,
+   null
+  ],
+  [
+   "spruce_log",
+   4,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: Canonical ID correction: box is LIVE12067 and next-call retention12069, not12066/12068 in previouschat. Food4 retained. Now tree+delivery near21/67/8; sender willonlytoss toactualvisible P2 within3m.
+--- p2 now: (23.5, 63, 11.5) in overworld, health 20/20, food 18/20, alive

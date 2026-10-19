@@ -1,0 +1,14 @@
+function material(){const n=['dirt','cobblestone','spruce_planks'].find(n=>bot.inventory.items().some(i=>i.name===n));if(!n)throw Error('box material exhausted');return n;}
+async function makeBox(hint=null,open=false){
+ const src=bot.entity.position.floored(),ds=[v(1,0,0),v(-1,0,0),v(0,0,1),v(0,0,-1)],spots=[];
+ for(let x=-5;x<=5;x++)for(let z=-5;z<=5;z++)for(let y=-1;y<=1;y++){const p=src.offset(x,y,z);if(open&&full(p.offset(0,2,0)))continue;if(![p,...ds.map(d=>p.plus(d))].every(q=>full(q.offset(0,-1,0))&&['air','snow'].includes(bot.blockAt(q)?.name)&&bot.blockAt(q.offset(0,1,0))?.name==='air'))continue;spots.push(p);}
+ spots.sort((a,b)=>(hint?a.distanceTo(hint)-b.distanceTo(hint):a.distanceTo(bot.entity.position)-b.distanceTo(bot.entity.position)));if(hint&&!spots.some(q=>q.equals(hint)))throw Error('tested box footprint changed');if(!spots.length)throw Error('no flat box footprint');const p=spots[0];await walk(p.x,p.y,p.z,6000);
+ const target=p.offset(.5,0,.5);for(let k=0;k<20&&Math.hypot(bot.entity.position.x-target.x,bot.entity.position.z-target.z)>.06;k++){await bot.lookAt(v(target.x,bot.entity.position.y-2,target.z),true);bot.setControlState('forward',true);await wait(1);bot.setControlState('forward',false);await wait(2);}stop();
+ async function snow(q){if(bot.blockAt(q)?.name!=='snow')return;const eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),aim=q.offset(.5,.1,.5),d=aim.minus(eye),h=bot.world.raycast(eye,d.scaled(1/d.norm()),d.norm()+.01);if(d.norm()>4.4||(h&&!h.position.equals(q)))throw Error('snow occluded');await bot.unequip('hand');await bot.lookAt(aim,true);await wait(1);await bot.dig(bot.blockAt(q),true,'raycast');await wait(2);}
+ for(const d of ds){const q=p.plus(d);await snow(q);for(const y of[0,1]){if(bot.health<=0||!bot.entity.position.floored().equals(p))throw Error('box body changed');if(!full(q.offset(0,y,0)))await placeAt(q.offset(0,y,0),material());}}
+ if(!full(p.offset(0,2,0))){
+ let direct=false;try{await placeAt(p.offset(0,2,0),material());direct=true;}catch(e){console.log('NO_DIRECT_ROOF',String(e));}
+ if(!direct){const ref=p.offset(1,1,0);await bot.equip(bot.inventory.items().find(i=>i.name===material()),'hand');bot.setControlState('jump',true);try{await wait(5);const c=await face(ref);if(c.face!==1)throw Error('actual roofanchor topface');await bot.placeBlock(bot.blockAt(ref),v(0,1,0));}finally{bot.setControlState('jump',false);}await wait(12);if(!bot.entity.onGround||bot.entity.position.y!==p.y)throw Error('roofanchor landing');await placeAt(p.offset(0,2,0),material());}
+ }
+ const qs=[p.offset(0,-1,0),p.offset(0,2,0),...ds.flatMap(d=>[p.plus(d),p.plus(d).offset(0,1,0)])];for(let k=0;k<3;k++){console.log('BOX_AUDIT',JSON.stringify({at:new Date().toISOString(),hp:bot.health,p:bot.entity.position,faces:qs.map(q=>({q,n:bot.blockAt(q)?.name,full:full(q)}))}));if(!qs.every(full))throw Error('box post');await wait(4);}return p;
+}

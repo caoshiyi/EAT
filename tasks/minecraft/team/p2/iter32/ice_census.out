@@ -1,0 +1,94 @@
+program #12116 on p2: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:54:50.726Z","p":{"x":160.7,"y":63,"z":311.5},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_planks",4,null],["stick",1,null],["wooden_pickaxe",1,14],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,4],["snowball",10,null],["spruce_sapling",4,null],["flint",1,null],["stone_sword",1,0],["crafting_table",1,null],["stone_shovel",1,63],["sweet_berries",14,null]],"faces":[{"q":{"x":160,"y":62,"z":311},"n":"ice","full":true},{"q":{"x":160,"y":65,"z":311},"n":"cobblestone","full":true},{"q":{"x":161,"y":63,"z":311},"n":"dirt","full":true},{"q":{"x":161,"y":64,"z":311},"n":"dirt","full":true},{"q":{"x":159,"y":63,"z":311},"n":"dirt","full":true},{"q":{"x":159,"y":64,"z":311},"n":"dirt","full":true},{"q":{"x":160,"y":63,"z":312},"n":"dirt","full":true},{"q":{"x":160,"y":64,"z":312},"n":"cobblestone","full":true},{"q":{"x":160,"y":63,"z":310},"n":"cobblestone","full":true},{"q":{"x":160,"y":64,"z":310},"n":"cobblestone","full":true}],"kind":"box","time":15990}
+FAILED_GOAL [{"q":{"x":155,"y":61,"z":315},"n":"water"},{"q":{"x":155,"y":62,"z":315},"n":"water"},{"q":{"x":155,"y":63,"z":315},"n":"air"},{"q":{"x":155,"y":64,"z":315},"n":"air"},{"q":{"x":155,"y":65,"z":315},"n":"air"},{"q":{"x":155,"y":66,"z":315},"n":"air"},{"q":{"x":155,"y":67,"z":315},"n":"air"}]
+NORTH_GRID [{"q":{"x":144,"y":63,"z":311},"b":"stone","f":"stone","h":"stone"},{"q":{"x":144,"y":63,"z":315},"b":"stone","f":"dirt","h":"dirt"},{"q":{"x":144,"y":63,"z":319},"b":"stone","f":"stone","h":"stone"},{"q":{"x":144,"y":63,"z":323},"b":"water","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":327},"b":"water","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":331},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":335},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":339},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":343},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":347},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":351},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":355},"b":"air","f":"air","h":"air"},{"q":{"x":144,"y":63,"z":359},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":311},"b":"dirt","f":"dirt","h":"grass_block"},{"q":{"x":148,"y":63,"z":315},"b":"stone","f":"stone","h":"dirt"},{"q":{"x":148,"y":63,"z":319},"b":"stone","f":"stone","h":"stone"},{"q":{"x":148,"y":63,"z":323},"b":"water","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":327},"b":"water","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":331},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":335},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":339},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":343},"b":"water","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":347},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":351},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":355},"b":"air","f":"air","h":"air"},{"q":{"x":148,"y":63,"z":359},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":311},"b":"water","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":315},"b":"stone","f":"stone","h":"stone"},{"q":{"x":152,"y":63,"z":319},"b":"stone","f":"stone","h":"stone"},{"q":{"x":152,"y":63,"z":323},"b":"stone","f":"stone","h":"stone"},{"q":{"x":152,"y":63,"z":327},"b":"water","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":331},"b":"water","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":335},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":339},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":343},"b":"water","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":347},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":351},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":355},"b":"air","f":"air","h":"air"},{"q":{"x":152,"y":63,"z":359},"b":"air","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":311},"b":"water","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":315},"b":"water","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":319},"b":"stone","f":"stone","h":"stone"},{"q":{"x":156,"y":63,"z":323},"b":"stone","f":"stone","h":"stone"},{"q":{"x":156,"y":63,"z":327},"b":"stone","f":"stone","h":"stone"},{"q":{"x":156,"y":63,"z":331},"b":"stone","f":"copper_ore","h":"copper_ore"},{"q":{"x":156,"y":63,"z":335},"b":"stone","f":"stone","h":"stone"},{"q":{"x":156,"y":63,"z":339},"b":"stone","f":"stone","h":"air"},{"q":{"x":156,"y":63,"z":343},"b":"water","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":347},"b":"stone","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":351},"b":"air","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":355},"b":"air","f":"air","h":"air"},{"q":{"x":156,"y":63,"z":359},"b":"air","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":311},"b":"ice","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":315},"b":"water","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":319},"b":"dirt","f":"grass_block","h":"air"},{"q":{"x":160,"y":63,"z":323},"b":"stone","f":"stone","h":"stone"},{"q":{"x":160,"y":63,"z":327},"b":"stone","f":"stone","h":"stone"},{"q":{"x":160,"y":63,"z":331},"b":"stone","f":"stone","h":"stone"},{"q":{"x":160,"y":63,"z":335},"b":"stone","f":"stone","h":"copper_ore"},{"q":{"x":160,"y":63,"z":339},"b":"stone","f":"stone","h":"stone"},{"q":{"x":160,"y":63,"z":343},"b":"stone","f":"stone","h":"air"},{"q":{"x":160,"y":63,"z":347},"b":"water","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":351},"b":"water","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":355},"b":"water","f":"air","h":"air"},{"q":{"x":160,"y":63,"z":359},"b":"water","f":"stone","h":"air"},{"q":{"x":164,"y":63,"z":311},"b":"water","f":"air","h":"air"},{"q":{"x":164,"y":63,"z":315},"b":"water","f":"air","h":"air"},{"q":{"x":164,"y":63,"z":319},"b":"water","f":"air","h":"air"},{"q":{"x":164,"y":63,"z":323},"b":"stone","f":"gravel","h":"gravel"},{"q":{"x":164,"y":63,"z":327},"b":"stone","f":"stone","h":"stone"},{"q":{"x":164,"y":63,"z":331},"b":"coal_ore","f":"coal_ore","h":"stone"},{"q":{"x":164,"y":63,"z":335},"b":"stone","f":"stone","h":"stone"},{"q":{"x":164,"y":63,"z":339},"b":"stone","f":"stone","h":"stone"},{"q":{"x":164,"y":63,"z":343},"b":"stone","f":"stone","h":"stone"},{"q":{"x":164,"y":63,"z":347},"b":"stone","f":"stone","h":"stone"},{"q":{"x":164,"y":63,"z":351},"b":"dirt","f":"grass_block","h":"air"},{"q":{"x":164,"y":63,"z":355},"b":"water","f":"air","h":"air"},{"q":{"x":164,"y":63,"z":359},"b":"water","f":"air","h":"air"},{"q":{"x":168,"y":63,"z":311},"b":"water","f":"air","h":"air"},{"q":{"x":168,"y":63,"z":315},"b":"water","f":"air","h":"air"},{"q":{"x":168,"y":63,"z":319},"b":"water","f":"air","h":"air"},{"q":{"x":168,"y":63,"z":323},"b":"granite","f":"stone","h":"dirt"},{"q":{"x":168,"y":63,"z":327},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":331},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":335},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":339},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":343},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":347},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":351},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":355},"b":"stone","f":"stone","h":"stone"},{"q":{"x":168,"y":63,"z":359},"b":"grass_block","f":"air","h":"air"},{"q":{"x":172,"y":63,"z":311},"b":"water","f":"air","h":"air"},{"q":{"x":172,"y":63,"z":315},"b":"ice","f":"air","h":"air"},{"q":{"x":172,"y":63,"z":319},"b":"ice","f":"air","h":"air"},{"q":{"x":172,"y":63,"z":323},"b":"water","f":"air","h":"air"},{"q":{"x":172,"y":63,"z":327},"b":"dirt","f":"dirt","h":"grass_block"},{"q":{"x":172,"y":63,"z":331},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":335},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":339},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":343},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":347},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":351},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":355},"b":"stone","f":"stone","h":"stone"},{"q":{"x":172,"y":63,"z":359},"b":"stone","f":"stone","h":"stone"},{"q":{"x":176,"y":63,"z":311},"b":"ice","f":"air","h":"air"},{"q":{"x":176,"y":63,"z":315},"b":"ice","f":"air","h":"air"},{"q":{"x":176,"y":63,"z":319},"b":"ice","f":"air","h":"air"},{"q":{"x":176,"y":63,"z":323},"b":"ice","f":"air","h":"air"},{"q":{"x":176,"y":63,"z":327},"b":"water","f":"air","h":"air"},{"q":{"x":176,"y":63,"z":331},"b":"stone","f":"dirt","h":"dirt"},{"q":{"x":176,"y":63,"z":335},"b":"stone","f":"stone","h":"stone"},{"q":{"x":176,"y":63,"z":339},"b":"stone","f":"stone","h":"stone"},{"q":{"x":176,"y":63,"z":343},"b":"stone","f":"stone","h":"dirt"},{"q":{"x":176,"y":63,"z":347},"b":"dirt","f":"grass_block","h":"air"},{"q":{"x":176,"y":63,"z":351},"b":"stone","f":"stone","h":"stone"},{"q":{"x":176,"y":63,"z":355},"b":"stone","f":"stone","h":"stone"},{"q":{"x":176,"y":63,"z":359},"b":"stone","f":"stone","h":"stone"}]
+MOBS [{"n":"zombie","p":{"x":149.6415257060145,"y":62,"z":340.1049723598427}},{"n":"spider","p":{"x":147.7269855687304,"y":62.73947109222412,"z":327.06361228554346}},{"n":"zombie","p":{"x":154.49163241955046,"y":85,"z":340.26512400109374}},{"n":"zombie","p":{"x":185.37095749255008,"y":71,"z":281.60687110678305}},{"n":"skeleton","p":{"x":190.218893991012,"y":72,"z":289.74882913998226}},{"n":"zombie","p":{"x":146.5,"y":57,"z":348.5}},{"n":"zombie","p":{"x":132.5,"y":80,"z":326.5}},{"n":"spider","p":{"x":131.5,"y":80,"z":322.5}}]
+--- returned ---
+{
+ "at": "2026-10-19T09:54:50.730Z",
+ "p": {
+  "x": 160.7,
+  "y": 63,
+  "z": 311.5
+ },
+ "hp": 20,
+ "food": 19,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "spruce_planks",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   14
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   4
+  ],
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   63
+  ],
+  [
+   "sweet_berries",
+   14,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (160.7, 63, 311.5) in overworld, health 20/20, food 19/20, alive
