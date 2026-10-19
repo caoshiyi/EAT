@@ -1,0 +1,328 @@
+{
+  "raw": "tasks/minecraft/team/p4/iter33/G1_p2_350_canonical.txt",
+  "raw_sha256": "c5acc9e955cb64509da478933a5dbe5810d38a0efbd652bef043c84d6dd7d377",
+  "header": "== #350 2026-10-19T11:08:01 p2 role=objective_owner iter=33 32.4 s",
+  "record_labels": [
+    "SOURCE",
+    "WALK",
+    "DIG_POST",
+    "CUT",
+    "UP",
+    "UP",
+    "UP",
+    "CHOSEN_FISH",
+    "NET_PROGRESS",
+    "NET_PROGRESS",
+    "POSITION_CONFIRMED",
+    "FISH_ADMISSION",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "WATER_ENTRY",
+    "FOOD_RECEIPT_OBSERVATION",
+    "NET_PROGRESS",
+    "NET_PROGRESS",
+    "RECOVERY_FAILURE Error: navigation postcondition 145,972"
+  ],
+  "source": [
+    {
+      "label": "SOURCE",
+      "value": {
+        "at": "2026-10-19T11:08:01.500Z",
+        "p": {
+          "x": 145.49936003493653,
+          "y": 71,
+          "z": 972.4575791244897
+        },
+        "hp": 14,
+        "food": 5,
+        "dim": "overworld",
+        "ground": true,
+        "inv": [
+          [
+            "dirt",
+            7,
+            null
+          ],
+          [
+            "wooden_sword",
+            1,
+            8
+          ],
+          [
+            "wooden_shovel",
+            1,
+            24
+          ],
+          [
+            "spruce_planks",
+            3,
+            null
+          ],
+          [
+            "stick",
+            3,
+            null
+          ],
+          [
+            "string",
+            4,
+            null
+          ],
+          [
+            "spider_eye",
+            1,
+            null
+          ]
+        ],
+        "faces": [
+          {
+            "q": {
+              "x": 145,
+              "y": 70,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 145,
+              "y": 73,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 146,
+              "y": 71,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 146,
+              "y": 72,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 144,
+              "y": 71,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 144,
+              "y": 72,
+              "z": 972
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 145,
+              "y": 71,
+              "z": 973
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 145,
+              "y": 72,
+              "z": 973
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 145,
+              "y": 71,
+              "z": 971
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 145,
+              "y": 72,
+              "z": 971
+            },
+            "n": "dirt",
+            "full": true
+          }
+        ]
+      }
+    }
+  ],
+  "observed_endings": [],
+  "failures": [
+    "RECOVERY_FAILURE Error: navigation postcondition 145,972 {\"at\":\"2026-10-19T11:08:33.876Z\",\"p\":{\"x\":127.68567313186276,\"y\":60,\"z\":1006.3},\"hp\":14,\"food\":5,\"dim\":\"overworld\",\"ground\":true,\"inv\":[[\"dirt\",5,null],[\"wooden_sword\",1,8],[\"wooden_shovel\",1,25],[\"spruce_planks\",3,null],[\"stick\",3,null],[\"string\",4,null],[\"spider_eye\",1,null]]}"
+  ],
+  "returned": {
+    "at": "2026-10-19T11:08:33.876Z",
+    "p": {
+      "x": 127.68567313186276,
+      "y": 60,
+      "z": 1006.3
+    },
+    "hp": 14,
+    "food": 5,
+    "dim": "overworld",
+    "ground": true,
+    "inv": [
+      [
+        "dirt",
+        5,
+        null
+      ],
+      [
+        "wooden_sword",
+        1,
+        8
+      ],
+      [
+        "wooden_shovel",
+        1,
+        25
+      ],
+      [
+        "spruce_planks",
+        3,
+        null
+      ],
+      [
+        "stick",
+        3,
+        null
+      ],
+      [
+        "string",
+        4,
+        null
+      ],
+      [
+        "spider_eye",
+        1,
+        null
+      ]
+    ],
+    "dead": false,
+    "faces": [
+      {
+        "q": {
+          "x": 127,
+          "y": 59,
+          "z": 1006
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 127,
+          "y": 62,
+          "z": 1006
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 128,
+          "y": 60,
+          "z": 1006
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 128,
+          "y": 61,
+          "z": 1006
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 126,
+          "y": 60,
+          "z": 1006
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 126,
+          "y": 61,
+          "z": 1006
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 127,
+          "y": 60,
+          "z": 1007
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 127,
+          "y": 61,
+          "z": 1007
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 127,
+          "y": 60,
+          "z": 1005
+        },
+        "n": "water",
+        "full": false
+      },
+      {
+        "q": {
+          "x": 127,
+          "y": 61,
+          "z": 1005
+        },
+        "n": "water",
+        "full": false
+      }
+    ],
+    "elapsed": 32376
+  },
+  "limit": "Actual recorded observations only. Printed labels, CLI success and full faces alone do not prove intended target, health preservation, receipt or use."
+}

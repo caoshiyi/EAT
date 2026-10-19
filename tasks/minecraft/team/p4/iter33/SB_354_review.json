@@ -1,0 +1,784 @@
+{
+  "raw": "tasks/minecraft/team/p4/iter33/SB_354_20261019T111500Z.txt",
+  "raw_sha256": "6f22443a0c33b905e35098081c7b71474144690e5f2e1071291995f788bd48e9",
+  "header": "== #354 2026-10-19T11:13:05 p2 role=objective_owner iter=33 33.3 s",
+  "record_labels": [
+    "SOURCE",
+    "WALK",
+    "DIG_POST",
+    "CUT",
+    "UP",
+    "UP",
+    "UP",
+    "WOOD_ADMISSION",
+    "NET_PROGRESS",
+    "WALK",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "WALK",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "WOOD_RECEIPT",
+    "WALK",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "DIG_POST",
+    "CUT",
+    "ENDING",
+    "ENDING",
+    "ENDING",
+    "WOOD_RETAINED"
+  ],
+  "source": [
+    {
+      "label": "SOURCE",
+      "value": {
+        "at": "2026-10-19T11:13:05.248Z",
+        "p": {
+          "x": 125.5,
+          "y": 60,
+          "z": 1012.4997293098074
+        },
+        "hp": 14,
+        "food": 6,
+        "dim": "overworld",
+        "ground": true,
+        "inv": [
+          [
+            "dirt",
+            7,
+            null
+          ],
+          [
+            "wooden_sword",
+            1,
+            8
+          ],
+          [
+            "wooden_shovel",
+            1,
+            20
+          ],
+          [
+            "spruce_planks",
+            3,
+            null
+          ],
+          [
+            "stick",
+            3,
+            null
+          ],
+          [
+            "string",
+            4,
+            null
+          ],
+          [
+            "spider_eye",
+            1,
+            null
+          ]
+        ],
+        "faces": [
+          {
+            "q": {
+              "x": 125,
+              "y": 59,
+              "z": 1012
+            },
+            "n": "grass_block",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 125,
+              "y": 62,
+              "z": 1012
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 126,
+              "y": 60,
+              "z": 1012
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 126,
+              "y": 61,
+              "z": 1012
+            },
+            "n": "grass_block",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 124,
+              "y": 60,
+              "z": 1012
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 124,
+              "y": 61,
+              "z": 1012
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 125,
+              "y": 60,
+              "z": 1013
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 125,
+              "y": 61,
+              "z": 1013
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 125,
+              "y": 60,
+              "z": 1011
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 125,
+              "y": 61,
+              "z": 1011
+            },
+            "n": "dirt",
+            "full": true
+          }
+        ]
+      }
+    }
+  ],
+  "observed_endings": [
+    {
+      "label": "ENDING",
+      "value": {
+        "at": "2026-10-19T11:13:38.077Z",
+        "p": {
+          "x": 98.50000000391489,
+          "y": 64,
+          "z": 1033.5458757074587
+        },
+        "hp": 14,
+        "food": 6,
+        "dim": "overworld",
+        "ground": true,
+        "inv": [
+          [
+            "dirt",
+            7,
+            null
+          ],
+          [
+            "wooden_sword",
+            1,
+            8
+          ],
+          [
+            "wooden_shovel",
+            1,
+            24
+          ],
+          [
+            "spruce_planks",
+            3,
+            null
+          ],
+          [
+            "stick",
+            3,
+            null
+          ],
+          [
+            "string",
+            4,
+            null
+          ],
+          [
+            "spider_eye",
+            1,
+            null
+          ],
+          [
+            "spruce_log",
+            6,
+            null
+          ]
+        ],
+        "faces": [
+          {
+            "q": {
+              "x": 98,
+              "y": 63,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 66,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "ENDING",
+      "value": {
+        "at": "2026-10-19T11:13:38.227Z",
+        "p": {
+          "x": 98.50000000391489,
+          "y": 64,
+          "z": 1033.5458757074587
+        },
+        "hp": 14,
+        "food": 6,
+        "dim": "overworld",
+        "ground": true,
+        "inv": [
+          [
+            "dirt",
+            7,
+            null
+          ],
+          [
+            "wooden_sword",
+            1,
+            8
+          ],
+          [
+            "wooden_shovel",
+            1,
+            24
+          ],
+          [
+            "spruce_planks",
+            3,
+            null
+          ],
+          [
+            "stick",
+            3,
+            null
+          ],
+          [
+            "string",
+            4,
+            null
+          ],
+          [
+            "spider_eye",
+            1,
+            null
+          ],
+          [
+            "spruce_log",
+            6,
+            null
+          ]
+        ],
+        "faces": [
+          {
+            "q": {
+              "x": 98,
+              "y": 63,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 66,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "ENDING",
+      "value": {
+        "at": "2026-10-19T11:13:38.378Z",
+        "p": {
+          "x": 98.50000000391489,
+          "y": 64,
+          "z": 1033.5458757074587
+        },
+        "hp": 14,
+        "food": 6,
+        "dim": "overworld",
+        "ground": true,
+        "inv": [
+          [
+            "dirt",
+            7,
+            null
+          ],
+          [
+            "wooden_sword",
+            1,
+            8
+          ],
+          [
+            "wooden_shovel",
+            1,
+            24
+          ],
+          [
+            "spruce_planks",
+            3,
+            null
+          ],
+          [
+            "stick",
+            3,
+            null
+          ],
+          [
+            "string",
+            4,
+            null
+          ],
+          [
+            "spider_eye",
+            1,
+            null
+          ],
+          [
+            "spruce_log",
+            6,
+            null
+          ]
+        ],
+        "faces": [
+          {
+            "q": {
+              "x": 98,
+              "y": 63,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 66,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 99,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 64,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 97,
+              "y": 65,
+              "z": 1033
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1034
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 64,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          },
+          {
+            "q": {
+              "x": 98,
+              "y": 65,
+              "z": 1032
+            },
+            "n": "dirt",
+            "full": true
+          }
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "returned": {
+    "at": "2026-10-19T11:13:38.530Z",
+    "p": {
+      "x": 98.50000000391489,
+      "y": 64,
+      "z": 1033.5458757074587
+    },
+    "hp": 14,
+    "food": 6,
+    "dim": "overworld",
+    "ground": true,
+    "inv": [
+      [
+        "dirt",
+        7,
+        null
+      ],
+      [
+        "wooden_sword",
+        1,
+        8
+      ],
+      [
+        "wooden_shovel",
+        1,
+        24
+      ],
+      [
+        "spruce_planks",
+        3,
+        null
+      ],
+      [
+        "stick",
+        3,
+        null
+      ],
+      [
+        "string",
+        4,
+        null
+      ],
+      [
+        "spider_eye",
+        1,
+        null
+      ],
+      [
+        "spruce_log",
+        6,
+        null
+      ]
+    ],
+    "gained": 6,
+    "faces": [
+      {
+        "q": {
+          "x": 98,
+          "y": 63,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 98,
+          "y": 66,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 99,
+          "y": 64,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 99,
+          "y": 65,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 97,
+          "y": 64,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 97,
+          "y": 65,
+          "z": 1033
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 98,
+          "y": 64,
+          "z": 1034
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 98,
+          "y": 65,
+          "z": 1034
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 98,
+          "y": 64,
+          "z": 1032
+        },
+        "n": "dirt",
+        "full": true
+      },
+      {
+        "q": {
+          "x": 98,
+          "y": 65,
+          "z": 1032
+        },
+        "n": "dirt",
+        "full": true
+      }
+    ]
+  },
+  "limit": "Actual recorded observations only. Printed labels, CLI success and full faces alone do not prove intended target, health preservation, receipt or use."
+}

@@ -21,7 +21,7 @@ counts={}
 for env in ['live','sandbox']:
  f=dest/(env+'_events.txt')
  if not f.exists():continue
- lines=[x for x in f.read_text().splitlines() if x[:19]>='2026-10-19T11:02:00' and re.search(r'\sdeath\s',x)]
+ lines=[x for x in f.read_text().splitlines() if x[:19]>='2026-10-19T11:01:00' and re.search(r'\sdeath\s',x)]
  counts[env]={'total':len(lines),'events':lines,'by_player':{p:sum('player='+p in x for x in lines) for p in ['p1','p2','p3','p4']}}
 (dest/'deaths.json').write_text(json.dumps(counts,indent=2))
 print(dest)
