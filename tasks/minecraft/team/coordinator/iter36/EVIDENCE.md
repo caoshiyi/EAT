@@ -33,3 +33,5 @@
 | Official EVAL_SECOND_DAMAGE 18:34 |dragon0/milestones11/deaths217; save failed; saved HP182| Saved information stale after actual second hit; no victory |
 | Persistent P1 LIVE13969 |Two accepted hits179.854599→174.729599; third ordinaryactionREFUSEDsameWestcell atcandidate2.640m; healthy11.5return/Pick106| Batch effect+ending qualified; diagnostic-only cursor did not guarantee permitted action |
 | Persistent P1 LIVE13972 |Changed observedcells;3acceptedhits174.729599→167.979599, no refusal/hurt;174.7s; healthy11.5/food16/Pick116 lowerreturn | Qualified repeated package, no universal safety. Full-run throughput2.3HP/min before gaps |
+| Persistent P1 LIVE13976 |4hits167.979599→158.354599, newSouthvisibilityrefusal(-5,57,5), healthy11.5lowerreturn18:49:10/Pick124 | Distinct obstruction after Westfix; not no-effectstop. 9.625 damage+ending qualified |
+| Persistent active South-cleared run, through18:54:22 |3hits158.354599→151.604599; P1/P3health unchanged | Actualpartialprogress, finalendingPENDING; no universal safety |

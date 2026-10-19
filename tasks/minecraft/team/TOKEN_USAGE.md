@@ -170,3 +170,5 @@ Iteration36 coordinator opening —2026-10-19 17:47UTC: token usage unavailable 
 Iteration36 coordinator ~20min review —2026-10-19 18:05UTC: authorized accessible token counters unavailable; no estimates. Git verifies retained coordinator commits4d7992d03 and33bb573fc. New review/negative actual trials retained; official0dragon/11milestones remains last-saved, no objective progress claimed.
 
 Iteration36 coordinator first-damage checkpoint —2026-10-19 18:28UTC: token usage unavailable from authorized accessible counters; no estimate. Verified canonical13952 first real damage and healthy return; official dragon0/milestones11/savefailed. Coordinator commits verified in git include5c73529ba and0dfe0c596; current retained evidence committed separately.
+
+Iteration36 coordinator18:55 checkpoint: token usage unavailable from authorized accessible counters; no estimates. Git verifies retained a081a39ab/e7c424071/d42d6da9b. Tested read-only receipt summarizer; actual live14hits/33.375damage through18:54:22, currentrunendingpending. No objectivecompletionclaim.
