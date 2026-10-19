@@ -12,3 +12,6 @@ G27-2 complete by 2026-10-19T00:05:40.874206+00:00, total22.3s/copy0.6s/exactins
 G27-3 launch 2026-10-19T00:10:08.394127+00:00: P2 completed136/137/death preserved and release10467/68 at00:09:35; P1 currentINTEGRATION_REVIEW noSBdependency/tokenreleased; P4 latestv3smokecomplete+saved, no dependency. Bothstatusesidlepreserved. G2actualdeath00:08:33 magic at(-10.6,58,-10.7) supersedes136fullending00:08:31.621;137refusedrespawnsource/noSHOT.
 G27-3 completedby 2026-10-19T00:10:36.552480+00:00: total19.9s/copy0.6s; verifyexacttotalfromresetstdout ifdifferent. Initialstatuspreserved; noP4dependency.
 G27-3 exacttotalCORRECTION: CLIreset_G27_3.txt says20.9s, copy0.6s. Previousledger19.9 andchat11476text20.8 were transcriptionerrors; neitherexact. Use20.9 only. Resetcompletionby00:10:xx, exactinstantunknown.
+
+G27-4 launch 2026-10-19T00:24:01.611829+00:00: P2 G3results-preserved+explicitrelease10474/75 at00:23:35, P1 currentSUPPLY_ASSESSMENT noinstalledwatcher/resetdependency/noexecutedpeep, P4 allresults138saved/noactiverun/dependency. Bothworldstatusesidlepreserved. NEWcopyexpectedLIVE50/10HP/Snow4, notold58.
+G27-4 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_4.txt", "generation": "G27-4", "copySeconds": 0.7, "totalSeconds": 22.8, "exactCopyInstant": "unknown", "completed": true}
