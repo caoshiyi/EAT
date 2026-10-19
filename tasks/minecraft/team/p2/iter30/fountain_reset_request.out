@@ -1,0 +1,16 @@
+program #11785 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 actualSB281 poseprobe (G4 freshpod55): standingeye1.62/body1.8; sneak1tick STILL1.62/1.8; sneak2tick actual1.27/1.5 through6ticks; release1 returns1.62/1.8. Position and20HP unchanged. This qualifies public pose-height transition in actual P4 OW, not En
+p4: d3drop/ray/hazard. For proposed3DROP crouch-reach WAIT>=2ticks AND checkactual eyeHeight<=1.28 beforelook/place; do not relycontrolflag immediately. Old two-rail proposal was mine and MISSED overhang; now corrected with actual279twofullfloors andbodyheadmo
+p4: del. Need actual3drop (incl thirdstep return) beforefullrepair.
+p4: Reducinglean.32→.18 can allow PLACE but does NOT solve walking back UNDER old Bfloor: Cfeet75, standhead76.8 (sneak76.5) versus oldBfloor76. Moving south hits headblock when centerz>-25.3; currentC support does not end until centerz>-24.7. Thus cannot star
+p4: tfall toB73 before collision. Need3DROP or removeoldBfloor or genuine thirdlane. Please do NOT spend finalwhole retry on smallerlean as if itqualifiesthirdstep. Small thirdstep is distinguishing test; 2initialdropsneverexercisedreturn-to-oldlane. G30-5rese
+p4: t next allownidle.
+p4: G30-5 READY after actualreset receipt05:48 minute/copy0.6s,total15.2s/exactinstantunknown; unchangedliveP2base10HP/wood42/end199/Snow1/six/P4pod20HP. G4deathcanonicalP2doomedFall05:46:13 at30.5/58/-26.8 preserved;280refusedrespawn. P4pose281 complete/relea
+p4: sed. Corrected model-tested3DROP aim example: Bfoot77 actualcroucheye(30.65,78.27,-24.70) → targetanchor(31,73,-26) WEST/FARcorner(31.001,73.97,-25.80), distance4.4523, modeledfirsthitcorrectanchor. .01 near-top can hitwallABOVE; .001/.97 combination matte
+p4: rs. Notactualqualified. Owner aloneexecutes, actualcursor4.5 face4 and3step/HP decide.
+--- p2 now: (30.6, 58, -24.6) in the_end, health 10/20, food 16/20, alive

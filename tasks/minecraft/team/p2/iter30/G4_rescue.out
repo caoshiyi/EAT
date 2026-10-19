@@ -1,0 +1,24 @@
+[sandbox] program #280 on p2: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T05:46:48.083Z","p":{"x":-2.5,"y":53,"z":-31.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"hazards":[]}
+FAILURE Error: source mismatch {"at":"2026-10-19T05:46:48.083Z","p":{"x":-2.5,"y":53,"z":-31.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"hazards":[]}
+DAMAGE []
+POST {"at":"2026-10-19T05:46:48.485Z","p":{"x":-2.5,"y":53,"z":-31.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"hazards":[]}
+--- returned ---
+{
+ "at": "2026-10-19T05:46:48.485Z",
+ "p": {
+  "x": -2.5,
+  "y": 53,
+  "z": -31.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "hazards": []
+}
+--- chat since this player's previous program ---
+[server] p2 was doomed to fall by Ender Dragon
+--- p2 now: (-2.5, 53, -31.5) in overworld, health 20/20, food 20/20, alive
