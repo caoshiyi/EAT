@@ -1,0 +1,44 @@
+[sandbox] program #311 on p2: 20.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:52:19.038Z","p":{"x":6.497590082736121,"y":62,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",27,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":64,"z":-27},"n":"dirt","p":{"x":6.497590082736121,"y":62,"z":-26.667724502312893}}
+UP {"at":"2026-10-19T07:52:20.442Z","p":{"x":6.497590082736121,"y":63,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",27,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":65,"z":-27},"n":"grass_block","p":{"x":6.497590082736121,"y":63,"z":-26.667724502312893}}
+UP {"at":"2026-10-19T07:52:22.046Z","p":{"x":6.497590082736121,"y":64,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",27,null],["snowball",16,null],["spruce_planks",1,null]]}
+UP {"at":"2026-10-19T07:52:22.651Z","p":{"x":6.497590082736121,"y":65,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",26,null],["snowball",16,null],["spruce_planks",1,null]]}
+WALK {"at":"2026-10-19T07:52:36.405Z","p":{"x":22.693431097124662,"y":67,"z":8.529669251888924},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",26,null],["snowball",16,null],["spruce_planks",1,null]]}
+WALK {"at":"2026-10-19T07:52:37.359Z","p":{"x":20.5,"y":67,"z":9.559144279585748},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",26,null],["snowball",16,null],["spruce_planks",1,null]]}
+FAILURE Error: actual roofanchor topface {"at":"2026-10-19T07:52:39.312Z","p":{"x":20.5,"y":67,"z":9.559144279585748},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",18,null],["snowball",16,null],["spruce_planks",1,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:52:39.312Z",
+ "p": {
+  "x": 20.5,
+  "y": 67,
+  "z": 9.559144279585748
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   18,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p4 was shot by Skeleton
+--- p2 now: (20.5, 67, 9.6) in overworld, health 20/20, food 20/20, alive
