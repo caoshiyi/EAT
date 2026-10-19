@@ -1,3 +1,9 @@
+# Material live loss override — 2026-10-19 08:32:47 UTC
+
+**Current31 canonical deaths: NINE LIVE(P2seven/P4two), FOUR SANDBOX(P4four including idle31:21).** Creeper death08:30:34 at65.7/70.1/307.1 lost P2's rebuilt boat/stonekit/Snow; Spider death08:31:09 at11.2/67.8/-22.3 then lost its new body. Fresh08:32status: P2emptyOW(-6.5,38,-39.5),20HP/20food; P4remains57pod/Dirt1. Retained live coast/water/travel findings below are HISTORICAL, no longer currentkit. No verifiedEnd/crystal/Dragon effect. Latestofficial08:06:59SAVEFAILEDlast-saved195isdated; inferred197isnotafreshevaluatorreading. Finalreview09:07:04–09:12:04pending.
+
+---
+
 # Iteration31 independent provisional review — refreshed 2026-10-19 08:18:02 UTC
 
 The objective remains unmet. The resumed evaluator began08:06:59 and reported **dragon=0, milestones=11/12, deaths=195, programs=11983** after save-all failed(connection refused). These are last-saved readings. Six saved crystals and Dragon200 are informational, not synchronized live health. No current31 live End reentry, crystal removal, Dragon damage or credible victory is verified. Final independent inspection/evaluation remains due09:07:04–09:12:04.
@@ -198,3 +204,35 @@ Reviewerlocalread-onlyoutputextractfirstfailedon327becauseitassumedanoutputsecti
 ## Owner handoff refresh requested — 2026-10-19 08:26:03 UTC
 
 Execution owner: pleasecorrectOWN P2.md08:01 CURRENT header beforefinalhandoff. Its153location, G3pendingreset andplaceEntityUNTESTED statementsarehistoricalandsupersededby11985coastarrival/321creation/G4/11991deepreturn/11993forwardwaterleg. Do notpromote11993airborneendpointtofullsettledshorewithoutactualsupportobservation. Integration partner: P4.md08:18provisionalisdatedandaccurateforitstimebutshouldincorporatelaterLIVE11991/11993capabilityadoptionbeforeclosure. Ownersretaincontroloftheirjournals; reviewerneithereditsplayerfilesnorasksforapproval. Officialresume08:06:59failedsave195isnowavailablebutnotcurrenthealthguarantee.
+
+## Successor source observed; new controller blocked — 2026-10-19 08:27:24 UTC
+
+Full11994 source/completedoutputread: SOURCE08:26:17.744at25.079/63/266.996grounded/icefloor/20HP/food19/kit/Snow16/Boat/Dirt32, jumptrue. This establishes retainedliveendpoint~144safter11993, withoutrewritingitsairborneterminal. Newdirect144/2241legactuallyadvanced2.710m then reason:blocked08:26:25.319 at25.261/63.797/269.7,20HPfood19,jumptrue,eyesair. FourSTEPsamplesXZstalledz269.7withvaryinghopheight. Noactualicecutorlongjourneyoccurred. Controllerstagnationisnotproofphysicalterrainimpossibility; exactblockinggeometrynotyetinspected.
+
+Allocationat~65min: realkit/drytravel/deepbob/forwardwatercapabilitiesnowexist, so preparation-onlyplateauended. Yet~1970horizontalmetresplusdated~100mdescentandactualEndaccessremainunverified. Nextworkshouldresolveobserved269.7successorconditionandproducespecificcontinuedtravel, notbroadencombatsearchorloopstationaryfloatagain. Newcallerlabelsdo notresetwholefailedbudgets. No tacticsorpermissiongateprescribed.
+
+## Packed-ice successor geometry observed — 2026-10-19 08:29:51 UTC
+
+Full11996 caller/completegridread. Actual08:28:38.182body25.261/63/269.7grounded/20HP/food16/jumptrue/waterfalse; own25/269columniceY62/airY63–67, immediatelyforward25/270packediceY61–66. Neighbor26/269alsopackediceY61–66. This isobservedscopechangefromopenwater/lowice, consistentwithforwardstagnation; nouniquefulltrajectorycauseclaim.11994onlyinvokesclearActualIceaftereyeswater>2.5s andonlyhandlesice/frosted_iceinowneyeverticalcolumn. Recordedeyesair+frontpackedicecouldnotexercisethatbranch. Demonstratedbobbing/forwardwatermechanismdoesnotautomaticallycovernewobstacledomain.
+
+Food19at11994source/end→16at11996whilejumpremainedtrueandHP20. Thisisactualsuccessorcapabilitydepletionandcorrelationwithongoingcontrols; exactexhaustionhistorynotmeasured. Nofooditemsinlatestkit. Retainedbodycannotbepresentedasunchangedfoodfunding. Distinguishingevidenceisactualchangedsourcegeometry/foodandcompletednextstep/ending,notrepeatofsamestalledlongcaller. Reviewdoesnotprescribeacut/path/tactic. Freshbothworld10000-event/datefilteraudit08:29:25reconcilesallindividuals7LIVE/4SBincludingidle31:21; nodeathsinthisinterval.
+
+## Changed travel controller produced progress and harm — 2026-10-19 08:31:14 UTC
+
+Full11997/11998 source/completedphaseoutputsindependentlyread.11997changedfromdirectheadingtoactualpathfinder(noDig/parkourfalse/maxDrop1/liquidCost1), traversed34.585m from269.7 aroundicetoeast59.7/62.12/266.52,20HP/food15, eyesair/watertrue, budgetending08:30:09.603. Thisdisprovesglobalimpassabilityoflocal269obstacleandqualifiesactualprogress, withoutanyicecut.11998continuation SOURCE matchedthiswaterbody20HP; actualshorestoneground64/67/66 thenlandprogress to65.501/70.121/304.347,38.270m,14HP/food15/kitat08:30:25.268. HP20at20.026→17at22.097→14at24.102; exacthits/causesnotlogged. Rawoxygen1whileeyesairdoesnotproveownbreathor drowning.
+
+MeaningfulnewretainedkittravelYES, fullrouteNO; latesthealthy20HPclaimsupersededby14HPterminal, endingairborne/jumptrue. Practicalmissinglinksnowcontinuedtravel/actualdamagesourceandfoodfunding, notwhetherwatermotioncanwork. Do notinventhostile/fall/suffocationcausefromtheseintervals. No actualcurrent31Dragon/crystaleffect. Bothworlddeathcountsrequirelaterrefresh; lastaudit7LIVE/4SB.
+
+## Material live loss and successor test refusal — 2026-10-19 08:32:47 UTC
+
+Bothworld10000-event/datefilterauditindependentlyestablishesLIVEP2Creeper08:30:34at65.7/70.1/307.1andP2Spider08:31:09at11.2/67.8/-22.3. Current31NINELIVE(P2seven/P4two),FOURSB(P4fourincludingidle31:21). FreshstatusP2emptyOW-6.5/38/-39.5/20HP; current20HPisnewlife, nothealing/kitretention. CanonicalCreeperkillerdoesnotretroactivelyidentify11998'sinitial20→14injuries. ExactpostterminaltrajectoryandnewrespawnSpiderexposurearenotfullysampled.
+
+Full12000source/outputread: intendedberryrecoveryactuallybegan08:31:50.769AFTERBOTHdeaths, emptyinventory/20HP/newcavebody/nearbythreats. Sourceguardcorrectlyrefused(noSword); recoverymakeBoxalsorefusednoflatfootprint. Nofoodreceipt/healing/oldkitrescueoccurred. Returneddead:falsemeansnodeathduringthiszero-durationcall; itdoesnotnegatetheinterveningdeaths. Nofoodmethodfailure/globalberryinaccessibilityconclusion.
+
+Allocationchallengeat~70min: meaningfulwaterandroutecomponentstransferredbutlostbeforeobjectiveuse. Missinglinkagain **retainingencounter-enablingkitacrosslandexposureandcallboundaries**, withfooddepletionnowobserved. Anotherlongrestorationchainrequiresaconcretechangedlink/actualrecipient/finiteoutcome; newrespawn20HPisnotrecoveryprogressorEndaccess. Ownerchoosesallocation; reviewernoapprovalgate/tactic. OwnerspleasecorrectOWNstalehealthycoast/currentkitheaders. Earliercomponentknowledgeisusefulandmustnotbeerased; currentphysicalcapabilityismateriallyreduced.
+
+## Owner rescue request: exact evidence bounds — 2026-10-19 08:34:03 UTC
+
+Chat11373–75requestsP4actualkitrescueby08:36. Thisisowner-directedrecipientwork, notcompletedpickup. OwnerpleasecorrectOWNlocation/agecitation: last11998terminalwas65.5/70.12/304.35at08:30:25; canonicalCreeperdeathwas65.7/70.1/307.1at08:30:34. Request08:32:40already~126safterdeath, notage<2min. InterveningSpiderdeath08:31:09mustalsoremaininowndeathaccounting. Noassumptiondroppeditemsstillpresentorallrecoverable. Actualrecipient/donorinventoryandendingmustdecidewhetherrescueoccurred; priorpickupthen6sdeathistheknowntransferfailure. No reviewerapproval/tacticimposed.
+
+P4read-only12003census08:33:27shows57pod20HP/Dirt1, berries[]/foodEntities[]withinitsloadedquery; itexplicitlyclaimsnoharvest/receipt/route/delivery. Thisisusefulboundedinformation, notproofglobalfoodabsenceorrecovery. LatestP2newbody38/20HP/emptyisnotrestoredkit.
