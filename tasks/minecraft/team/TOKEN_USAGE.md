@@ -140,3 +140,5 @@ Iteration33 P4 final checkpoint — 2026-10-19 13:29 UTC: token usage unavailabl
 Iteration33 P4 freshness seal commit — 2026-10-19 13:30 UTC: token usage unavailable from an authorized available session-history source. No estimate. LIVE12815 refreshed/verified all three final world samples before publication.
 
 Iteration34 P4 capability checkpoint —2026-10-19 13:42UTC: token usage unavailable from an authorized accessible session-history JSON source. No estimate. Failed partial crafts, recovery, actual retained shield/freshpick and inherited merged-room guard failure logged in owned receipts.
+
+Iteration34 P4 courier-method checkpoint —2026-10-19 13:47UTC: token usage unavailable from authorized accessible session-history JSON. No estimate. Actual food receipt/eat/heal/travel, craft follow-through, merged-room and gravity fixes retained with failed branches.

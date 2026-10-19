@@ -1,0 +1,116 @@
+program #12923 on p4: 18.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:45:16.692Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",2,null],["coal",1,null],["stone_pickaxe",1,11],["crafting_table",1,null],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["spruce_log",1,null],["cobblestone",18,null]],"time":16830,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":65,"y":62,"z":110},"n":"stone","state":{"at":"2026-10-19T13:45:17.447Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",2,null],["coal",1,null],["stone_pickaxe",1,12],["crafting_table",1,null],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["spruce_log",1,null],["cobblestone",18,null]],"time":16850,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":65,"y":62,"z":110},"name":"crafting_table","state":{"at":"2026-10-19T13:45:17.749Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",2,null],["coal",1,null],["stone_pickaxe",1,12],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["spruce_log",1,null],["cobblestone",18,null]],"time":16870,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CRAFT {"n":"spruce_planks","before":0,"after":4,"s":{"at":"2026-10-19T13:45:18.501Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",2,null],["spruce_planks",4,null],["coal",1,null],["stone_pickaxe",1,12],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["cobblestone",18,null]],"time":16870,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CRAFT {"n":"stick","before":2,"after":6,"s":{"at":"2026-10-19T13:45:19.253Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",6,null],["spruce_planks",2,null],["coal",1,null],["stone_pickaxe",1,12],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["cobblestone",18,null]],"time":16890,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CRAFT {"n":"stone_sword","before":0,"after":1,"s":{"at":"2026-10-19T13:45:20.006Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",16,null],["spruce_planks",2,null],["coal",1,null],["stick",5,null],["stone_sword",1,0],["stone_pickaxe",1,12],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null]],"time":16910,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CRAFT {"n":"stone_pickaxe","before":2,"after":3,"s":{"at":"2026-10-19T13:45:20.757Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["cobblestone",13,null],["stone_sword",1,0],["stone_pickaxe",1,0],["stone_pickaxe",1,12],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null]],"time":16930,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":65,"y":62,"z":110},"n":"crafting_table","state":{"at":"2026-10-19T13:45:24.716Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["cobblestone",13,null],["stone_sword",1,0],["stone_pickaxe",1,12],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null]],"time":17010,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":65,"y":62,"z":110},"name":"cobblestone","state":{"at":"2026-10-19T13:45:25.417Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,12],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",12,null]],"time":17010,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":64,"y":63,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:26.369Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,13],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",12,null]],"time":17030,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":64,"y":62,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:27.320Z","p":{"x":65.50104733094105,"y":62,"z":111.49995880405041},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,14],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",13,null]],"time":17050,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+NATIVE_MOVE {"at":"2026-10-19T13:45:28.359Z","p":{"x":64.5334608028269,"y":62,"z":111.499948898646},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,14],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",14,null]],"time":17070,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":63,"y":63,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:29.313Z","p":{"x":64.5334608028269,"y":62,"z":111.499948898646},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,15],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",14,null]],"time":17090,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":63,"y":62,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:30.268Z","p":{"x":64.5334608028269,"y":62,"z":111.499948898646},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,16],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",15,null]],"time":17110,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+NATIVE_MOVE {"at":"2026-10-19T13:45:31.321Z","p":{"x":63.50111681306165,"y":62,"z":111.49998451429694},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,16],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17130,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":62,"y":63,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:32.274Z","p":{"x":63.50111681306165,"y":62,"z":111.49998451429694},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,17],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17150,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":62,"y":62,"z":111},"n":"cobblestone","state":{"at":"2026-10-19T13:45:33.225Z","p":{"x":63.50111681306165,"y":62,"z":111.49998451429694},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",17,null]],"time":17170,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+NATIVE_MOVE {"at":"2026-10-19T13:45:34.227Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",18,null]],"time":17190,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+THREE_TEST_PASS {"at":"2026-10-19T13:45:34.227Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",18,null]],"time":17190,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PLACE {"q":{"x":63,"y":62,"z":111},"name":"cobblestone","state":{"at":"2026-10-19T13:45:34.528Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",17,null]],"time":17190,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":63,"y":63,"z":111},"name":"cobblestone","state":{"at":"2026-10-19T13:45:34.828Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17210,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+ENDING {"at":"2026-10-19T13:45:34.828Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17210,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":62,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":62,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":63,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":63,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":110},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T13:45:34.979Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17210,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":62,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":62,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":63,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":63,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":110},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T13:45:35.128Z","p":{"x":62.5335302843524,"y":62,"z":111.49997460889253},"hp":9.911142349243164,"food":17,"ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["coal",1,null],["stone_sword",1,0],["stone_pickaxe",1,18],["stone_pickaxe",1,1],["dirt",11,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["furnace",1,null],["crafting_table",1,null],["cobblestone",16,null]],"time":17210,"offhand":"shield","controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":62,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":62,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":63,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":63,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":62,"y":63,"z":110},"n":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T13:45:35.278Z",
+ "p": {
+  "x": 62.5335302843524,
+  "y": 62,
+  "z": 111.49997460889253
+ },
+ "hp": 9.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "coal",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   18
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   105
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   16,
+   null
+  ]
+ ],
+ "time": 17210,
+ "offhand": "shield",
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p2: P2 delivery verified; P4 healed and couriertravel actual12915, accepted. Own checkpoint6f3f91ff includes rawfailures. Current96/62/133 HP8.667food17,1berry+tools, covered. Continuing2known maturebushes124/148 and152 for next retainedfood. No farmgrowth cla
+p2: im. P1 End progress noted; supplies parallel.
+--- p4 now: (62.5, 62, 111.5) in overworld, health 9.9/20, food 17/20, alive
