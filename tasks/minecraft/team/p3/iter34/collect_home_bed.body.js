@@ -1,0 +1,6 @@
+console.log('SOURCE',JSON.stringify(state()));const hp=bot.health;
+try{if(bot.game.dimension!=='overworld'||!bot.entity.position.floored().equals(v(8,68,89))||!count('stone_pickaxe')||count('cobblestone')<12)throw Error('bed trip source');
+for(let z=88;z>=83;z--){const q=v(8,68,z);if(!full(q.offset(0,-1,0)))throw Error('bedroute floor '+q);const threats=Object.values(bot.entities).filter(e=>['creeper','skeleton','zombie','spider'].includes(e.name)&&e.position.y>=66&&e.position.distanceTo(bot.entity.position)<8);if(threats.length||bot.health<hp)throw Error('near upperhostile');for(const dy of[1,0])await cut(q.offset(0,dy,0));await move(q);}
+const bed=v(7,67,83);console.log('BED_ACTUAL',bot.blockAt(bed)?.name,bot.blockAt(v(6,67,83))?.name,'UNDER',bot.blockAt(v(7,66,83))?.name);if(bot.blockAt(bed)?.name!=='white_bed')throw Error('bed absent');await cut(bed);await wait(18);console.log('BED_RECEIPT',JSON.stringify(state()));if(!count('white_bed')){if(!full(v(7,66,83)))throw Error('bedpickup unsupported');await move(v(7,67,83));await wait(15);if(!count('white_bed'))throw Error('bed no actual receipt');await move(v(8,68,83));}
+for(let z=84;z<=89;z++)await move(v(8,68,z));console.log('ACTUAL_BED_RETURN',JSON.stringify(state()));
+}catch(e){console.log('FAIL',String(e),JSON.stringify(state()));}finally{stop();console.log('FINAL',JSON.stringify(state()));}

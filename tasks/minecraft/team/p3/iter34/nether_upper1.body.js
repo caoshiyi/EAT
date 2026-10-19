@@ -1,0 +1,1 @@
+console.log('SOURCE',JSON.stringify(state()));try{if(bot.game.dimension!=='the_nether'||bot.health<18)throw Error('source');for(const q of[v(0,67,20),v(0,67,57)])await move(q,22000);console.log('UPPER_ACTUAL',JSON.stringify(state()));}catch(e){console.log('FAIL',String(e),JSON.stringify(state()));}finally{stop();}

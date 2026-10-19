@@ -1,0 +1,27 @@
+program #12980 on p3: 11 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:52:14.741Z","p":{"x":8.49999999999923,"y":68,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null]],"time":1210,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 67, z: 89 } dirt
+DOWN {"at":"2026-10-19T13:52:16.064Z","p":{"x":8.49999999999923,"y":67,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null]],"time":1230,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 66, z: 89 } dirt
+DOWN {"at":"2026-10-19T13:52:17.421Z","p":{"x":8.49999999999923,"y":66,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null]],"time":1250,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 65, z: 89 } gravel
+DOWN {"at":"2026-10-19T13:52:18.929Z","p":{"x":8.49999999999923,"y":65,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null],["gravel",1,null]],"time":1290,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 64, z: 89 } gravel
+DOWN {"at":"2026-10-19T13:52:20.478Z","p":{"x":8.49999999999923,"y":64,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null],["gravel",2,null]],"time":1310,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 63, z: 89 } gravel
+DOWN {"at":"2026-10-19T13:52:21.983Z","p":{"x":8.49999999999923,"y":63,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null],["gravel",3,null]],"time":1350,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 62, z: 89 } gravel
+DOWN {"at":"2026-10-19T13:52:23.485Z","p":{"x":8.49999999999923,"y":62,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null],["gravel",4,null]],"time":1370,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 61, z: 89 } gravel
+DOWN {"at":"2026-10-19T13:52:24.986Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",2,null],["gravel",5,null]],"time":1410,"dim":"overworld","controls":{},"goal":false}
+PLACE Vec3 { x: 8, y: 63, z: 89 } dirt
+ENDING {"at":"2026-10-19T13:52:25.288Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null],["gravel",5,null]],"time":1410,"dim":"overworld","controls":{},"goal":false,"faces":[{"q":{"x":8,"y":60,"z":89},"n":"gravel","full":true},{"q":{"x":8,"y":63,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":9,"y":62,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":62,"z":89},"n":"sand","full":true},{"q":{"x":8,"y":61,"z":90},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":61,"z":88},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":88},"n":"diorite","full":true}]}
+ENDING {"at":"2026-10-19T13:52:25.437Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null],["gravel",5,null]],"time":1410,"dim":"overworld","controls":{},"goal":false,"faces":[{"q":{"x":8,"y":60,"z":89},"n":"gravel","full":true},{"q":{"x":8,"y":63,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":9,"y":62,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":62,"z":89},"n":"sand","full":true},{"q":{"x":8,"y":61,"z":90},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":61,"z":88},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":88},"n":"diorite","full":true}]}
+ENDING {"at":"2026-10-19T13:52:25.587Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null],["gravel",5,null]],"time":1410,"dim":"overworld","controls":{},"goal":false,"faces":[{"q":{"x":8,"y":60,"z":89},"n":"gravel","full":true},{"q":{"x":8,"y":63,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":9,"y":62,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":61,"z":89},"n":"sandstone","full":true},{"q":{"x":7,"y":62,"z":89},"n":"sand","full":true},{"q":{"x":8,"y":61,"z":90},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":90},"n":"diorite","full":true},{"q":{"x":8,"y":61,"z":88},"n":"sandstone","full":true},{"q":{"x":8,"y":62,"z":88},"n":"diorite","full":true}]}
+FINAL {"at":"2026-10-19T13:52:25.738Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null],["gravel",5,null]],"time":1430,"dim":"overworld","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 61, 89.7) in overworld, health 20/20, food 20/20, alive

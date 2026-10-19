@@ -1,0 +1,13 @@
+program #13028 on p3: 8.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:57:03.122Z","p":{"x":8.49999999999923,"y":61,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["dirt",1,null],["gravel",5,null]],"time":6970,"dim":"overworld","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 62, z: 90 } diorite
+PLACE Vec3 { x: 7, y: 62, z: 90 } dirt
+MOVE Vec3 { x: 8.499999999999401, y: 61, z: 90.34181887686906 } 20 20
+ADVANCED {"at":"2026-10-19T13:57:11.890Z","p":{"x":8.499999999999401,"y":61,"z":90.34181887686906},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["gravel",5,null]],"time":7150,"dim":"overworld","controls":{},"goal":false} ROOM [{"q":{"x":8,"y":60,"z":90},"n":"sandstone","full":true},{"q":{"x":8,"y":63,"z":90},"n":"diorite","full":true},{"q":{"x":9,"y":61,"z":90},"n":"sandstone","full":true},{"q":{"x":9,"y":62,"z":90},"n":"sandstone","full":true},{"q":{"x":7,"y":61,"z":90},"n":"sandstone","full":true},{"q":{"x":7,"y":62,"z":90},"n":"dirt","full":true},{"q":{"x":8,"y":61,"z":91},"n":"air","full":false},{"q":{"x":8,"y":62,"z":91},"n":"sandstone","full":true},{"q":{"x":8,"y":61,"z":89},"n":"air","full":false},{"q":{"x":8,"y":62,"z":89},"n":"air","full":false}]
+FINAL {"at":"2026-10-19T13:57:11.890Z","p":{"x":8.499999999999401,"y":61,"z":90.34181887686906},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["gravel",5,null]],"time":7150,"dim":"overworld","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 61, 90.3) in overworld, health 20/20, food 20/20, alive
