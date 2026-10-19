@@ -1,3 +1,11 @@
+# Final transfer status — 2026-10-19 09:10:51 UTC
+
+Closure verified: **dragon0, milestones11/12, saved deaths197; save failed, last-saved**. Canonical iteration31 **9 live deaths / 4 sandbox deaths**, including idle events. Final P2 is healthy at11.5/66/-15.525 with a wooden shovel, small materials and a placed table; P4 is healthy in pod57/Dirt4. Both final live records have triple ten-full audits, cleared controls and no goal. SandboxP2 is10HP/food0/grounded/jumpfalse, separate from LIVE.
+
+Several methods became genuine live local effects; none established renewed End access or a crystal/Dragon effect. Lost full kits remain lost. Both final handoffs and decisive records were reviewed within105–110minutes; exact final findings and limits are in ITER31_REVIEW.md. Earlier current-state statements below are dated and superseded by this closure. No reviewer tactics or adoption permission required. Token usage unavailable.
+
+---
+
 # Iteration31 transfer findings — 2026-10-19 08:38:01 UTC
 
 **Objective unmet. Current canonical deaths: nine live(P2seven/P4two), four sandbox(P4four including idle31:21).** Last evaluator08:06:59: dragon0/milestones11/deaths195, save failed, last-saved; not a current count after two more live deaths. Latest P2 completed12005: new empty cave body(-5.5,39,-39.5),20HP/20food at08:36:10.514. P4 retains dated pod57/Dirt1. All live boat/stonekit/Snow findings below precede kit loss08:30:34. Final independent checks09:07:04–09:12:04 remain pending.
@@ -323,3 +331,21 @@ P2.mdnowhas08:49completeprovisionalheader,butits08:47:31Gravel5/DURING12017snaps
 ## One log became a real local workstation, tools still absent — 2026-10-19 09:02:35 UTC
 
 Full12030operationalbody/outputread. ActualSOURCELog1/Dirt2/20HP→normaldirtroofplacement(STABLE_ROOF09:01:49.703)→craft4planks50.052→craftTable1 at50.705, thenactualplaceAt11/67/-15completedbeforefurthercuts. PlannedtoolsrequiredtwoadditionalactualLogs; none received. Fouractualleafcutswerefollowedbycallerfacevalidationfailurebecauseleaf10/68/-15occludedtarget8/68/-14. Nothrough-blockdigattemptclaimed/authorized. FinallyactualwestresealconsumedoneDirt; terminal09:01:59.643at11.3/66/-15.323,20HP20food/Dirt1, noheldtools/Logs. Tableisplacedlocalcapability, notinventoryloss/deathnorcraft-toolqualification. Newroofrepairaddressesobservedairroof; finaltenfaces/currentcontrolsrequireclosureaudit. NoEnd/combat effect.
+
+## Iteration31 closure evidence — 2026-10-19 09:08:54 UTC
+
+Closing official evaluator09:07:23returneddragon0/milestones11/deaths197/programs12035afterSAVEFAILED(connectionrefused):last-saved. Six/Dragon200informational. Bothworldcanonicalfullaudits09:07:24reconcile9LIVE(P2seven/P4two),4SB(P4fourincludingidle31:21); no encountereffect/victory. RetainedlivekitlostCreeper08:30:34thenSpiderrespawn31:09. Localmethodsactuallytransferredbutwholeonwardretentionfailed. Lategravel/ascent/surface/actualpickup→woodenshovel/placedtablearenewlocalcapabilities, notEndaccess. P2final12038tripletenfull66/20HP20food/shovel+smallmaterials/controlsfalse/goalnull;P4final12036tripletenfull57/20HP20food/Dirt4/controlsfalse/goalnull. PracticeP2now10HPfood0, earlierhealthycopyisdated. Detailedexactsource/output/conditions/correctionsinITER31_REVIEWandTRANSFER. Finalownerpublicationreconciliationpendingwithinclosurewindow; reviewernoplayer/program/chat/reset/agents/excludedsource/server/toolmods/playeredits/push. Tokenusageunavailable.
+
+## Final-window handoff comparison — 2026-10-19 09:09:17 UTC
+
+P4final09:07overrideandITER31_INTEGRATIONclosurewereindependentlyreadwithinwindow; theyagreewithownfailed-save197/9LIVE/4SB,currentP4tripletenfullandnewP2pickup/shovel. P4stillcitesworkstation12012; actual44:34recordis12015. Correctionrequestedfromowner, reviewerdoesnotedititsjournal. Claimnullprobeuniquelyexplainsoldstackisbroaderthanindependentlyestablishednull-positionavailability; records/narrowlimitarepreservedhere. P2latestpublishedP2.md/PROVISIONAL_HANDOFFremain08:49staleatthisread; finalarena12038isstateauthority. Finalpublicationrecheckwillfollowbefore09:12.
+
+Complete12034/12035operationalsources/outputsread: ordinaryphysicalpickup09:06:10.688Log1thenreturn; actual09:07:08.357woodenShovelcraft. Complete12036source/threeauditsand12038closurebody/threeauditsread: both20HP20food/tenfull/sevencontrolsfalse/goalnull. Ownclosingeval09:07:23failedsave,last-saveddragon0/11/deaths197/programs12035. Sandboxstatus10HPfood0andnoadditionaldeatheventsremainsseparatefromLIVE. No victoryornewlivecombateffect.
+
+## Final reconciliation completed — 2026-10-19 09:10:51 UTC
+
+Bothfinalownerhandoffs(P2.md/P4.md)andP2PROVISIONAL_HANDOFFfinalmaterialappendwereindependentlyread09:10:06–17inside105–110window. Own09:07:23closingevalSAVEFAILEDlast-saved0dragon/11milestones/197deaths; finalbothworldfull-eventrecheck09:10:16still9LIVE/4SB. Bothfinalpublicationsagreewithofficialobjectivefailure/currentbodies/minimalP2shovel/localtable/P4pod/lostfullkits. Nooutstandingownerprogram/reset/observer/courierisreported;latestLIVE12038completedandSB328completed.
+
+Citationlimitsremainhonest: P4finalworkstationID12012shouldbe12015; ownercorrectionrequestedbutnotyetreflectedatfinalread. P2final12038auditstart/endlabels47.716–48.116differfromcanonicalprinted47.806/.959/48.165; terminal48.316agrees. Usecanonicalrecordsfortiming. P2attributespractice10HP/food0toidlehops/starvation; independentreviewobservedstatechangeandheldjump, notcontinuousdamagecause. FinalSB328fullsource/outputdoesverifyordinarycleanup/grounded/jumpfalse09:08:17.081. No sourceprovenanceinvestigationorexcludedmaterialopened. Noancestry/safetycertificate.
+
+Closurefinishedwithinwindow. Selectedmethodtransferdifferences, missed/idledeathcorrections, genuineLIVEcomponents,failedwholegatesandlatecapabilityrecoveryremainindatedtrail. Nextattemptshouldbeginfromactualfinalcapabilitiesandtestaspecificunresolvedsuccessorlink; noMinecrafttacticorreviewerapprovalgate. Reviewercontrollednone/ran noarenaprogram-chat-reset/spawnednone/editedonlyfourassignedfiles/modifiednotools-server-playerfiles/pushednothing. Tokenusageunavailable.
