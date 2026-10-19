@@ -1,0 +1,9 @@
+[sandbox] program #45 on p2: 21.8 s
+--- output ---
+MOVE Vec3 { x: 0.5073242409017327, y: 50, z: 4.291470258035883 } 20 20
+FAIL Error: Server refused to place end_stone at (0, 50, 3): the block is still air {"at":"2026-10-19T20:01:08.704Z","p":{"x":0.5037846671710488,"y":50,"z":4.517734901767524},"hp":20,"food":20,"ground":true,"inv":[["netherrack",5,null],["mossy_stone_bricks",4,null],["sandstone",4,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["blackstone",42,null],["torch",1,null],["cobblestone",52,null],["end_stone",64,null],["end_stone",64,null],["end_stone",64,null],["stone_shovel",1,4],["crafting_table",2,null],["stone_sword",1,11],["end_stone",26,null],["dirt",3,null]],"time":23465}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p3 was slain by p2
+--- p2 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
