@@ -1,3 +1,37 @@
+# Iteration 29 independent closure — 2026-10-19 05:26:24 UTC
+
+The Dragon remains undefeated. My closure evaluator started **05:24:48 UTC**, inside the105–110minute window, and reported **dragon=0, milestones=11/12, deaths=182, programs=11752**. Save-all failed with connection refused, so these are last-saved readings. Informational six crystals and dragon200 are not synchronized live health. No victory is endorsed.
+
+The final live evidence independently agrees that the objective is unmet. Full read-only LIVE11750 source/output, inspected during closure, records05:22:14.204: six actual crystals, one living dragon, public BossBar.health1, no loaded fireballs/clouds, and P2 at(30.568221,58,-24.550919),10HP16food, grounded, all seven explicit controlsfalse/goalnull, ten full boundaries. Kit: Snow1, Sand2, Table1,199endstone, wooden-pick wear42/59, sword2/131 and shovel5/131. Statuses at05:24:48 agree; their agreement is not a new geometry or perpetual safety guarantee.
+
+One legitimate new live enabler was gained: retained access to that pillar base. LIVE11701 completed04:29:48.327 with three full ending audits47.575/.825/48.077. Cold LIVE11699 had aborted before the surface and retained home10HP; the warm attempt changed only exact current-state admission and reached the base. The complete11701 source was reread, including ordinary native controls, current visible within-reach block interactions, support and ending checks. Its source SHA256 after trimming trailing whitespace matches owner handoff: `2d1e086e6cfa817098d5980a5626de5f3345a193f64278450c43e888e5d3db16`. No forbidden packet, fabricated target or through-block action appears in that access caller. This does not certify inherited helper ancestry.
+
+No new crystal removal, dragon damage, accepted combat use, or supply delivery is verified this iteration. Contact trials never attacked. SB252 reached78 and opened a bar but its actual cursor was null; it made no attack or explosion. Later projectile candidates never fired. SB255's targetGone occurred at playerHP0 during death/unloading and is not removal. Six crystals and the undefeated dragon remain; access and intermediate engineering must still connect to a complete approach.
+
+Five current sandbox deaths are canonical:244Enderman04:21:58;252dragonmagic04:41:54;255dragonmagic04:54:02;260dragonmagic05:12:42;263dragonmagic05:21:03. No current live death is observed. Returned alive snapshots in252 and263 were superseded by later deaths.255's three ten-full audits were already2HP before death, so geometry alone did not establish retention.263's changed damaged-entry branch mutated before enabling the flag that invokes escape; it failed while that flag was false and skipped the existing recovery helpers. This is an inspected cleanup-contract regression, not a claim the global helpers were absent. Initial damage causes are not all isolated; canonical killers do not explain every earlier hit.
+
+Real, bounded support adoption should be preserved: sand-height/stable-landing tests231/232/234; physical corner lean→anchor→recenter→floor→return247; complete cap opening→physical receipt→reinstallation250/251; passive damage capture; projection-stop and physical recentering in257. Large-cross-track and injured-hop branches remained unexercised. Challenged returns257/258 and undamaged grounded exit261 were real;262 showed a cloud ahead on the exit route could produce two hits, a stalled return and a2HP fallback. Those narrower successes did not qualify the full combat candidate or renewable health/tool/ammo funding.
+
+P4's final LIVE11753 source/output was inspected: three ten-full audits05:23:22.363/.565/.818, terminal23.069 atOW(-0.583363,55,-24.480624),20HP20food/Dirt2/grounded/goalnull. It made no physical change, acquisition or delivery. Serialized controls{} in that record do not prove every controlfalse. P1/P3 remain unplayed/free. Both environments were idle in closure statuses; G10P2 is an empty Overworld respawn, separate from the retained live body. Final owner handoffs and closing notices agree on five sandbox losses, no new objective effect and released calls/reset dependencies.
+
+The focused three-role structure, per-player serialization, completed-record checking, actual small branch tests and prompt qualified access adoption remain useful. Courier work was explicitly retired04:19:15: acquisition→transport→entry→recipient receipt→use never qualified; inherited “2.3km” was not freshly measured. Supplies, models and sandbox success were not promoted into live combat capability. Original failed whole-operation gates remain failed.
+
+Opening reflection was appended within five minutes. Complete provisional first published04:20:24 and refreshed05:08:04, before90. Minute20 capture was16seconds late and writing later; minute40 writing was18seconds late. Final handoff/audit/evaluator checks began05:24:48 inside105–110. Own clipped reads, CLI/retrieval mistakes, repeated quote-syntax failure and corrected stale/detail/label claims remain in the audit trail. Historical excluded exposure/claimed nonuse and reporting corrections are preserved without reopening excluded material or certifying ancestry.
+
+Reviewer controlled no player, ran no arena program/chat or sandbox reset, spawned no agent, prescribed no Minecraft tactics, edited only the four assigned files, opened no excluded17–19/client/server/.work/internet material, modified no tools/server/player files and pushed no remote. Token usage is **unavailable** from an authorized available source. Earlier dated provisional reviews and detailed failures follow unchanged.
+
+---
+
+# Fifth sandbox death and a changed-entry cleanup gap — 2026-10-19 05:22:45 UTC
+
+G10SB263completed7.896s: newdamaged2HPsource at(7,57,-23) actuallycut/pillared/movedtofieldrow58, thenhazardrefusal05:21:01.883. Returned02.385 at7.5074/58/-24.5678/2HP/Snow1/wood53, nofreshENDING/Snowfire/attack/effect. Canonicaldragonmagicdeath05:21:03 at(7.5,58,-24.6) supersedesalivepost. ThisisFIFTHcurrentSBdeath, noLIVEdeath.
+
+Sourceandcompletedrecordindependentlyread: newdamaged-entrybranchmutatedthebodybefore`admitted=true`; forwardrefusedwhilethatflagremainedfalse, andfinallycalledescapeonlyif`admitted`. Recoveryhelpers exist, but thisactualchangedentryskippedthem. Preparedroutewasstillonlyoldbase(30,58,-25), unrelatedtocurrent7row. This is a concrete execution-contract regression, notjustpostconditionmeasurementfailure. Newcloud5m hypothesis/fullcombat wasnotqualifiedbythispre-entryfailure. Do notacceptthealive2HPterminalasretentionorclaimfivemchangedhazardmethodworked.
+
+FullcanonicalLIVE11701source204lines reread in two boundedparts05:21–22, includingvisiblewithinreachblockcursorchecks/ordinarydig-place/nativecontrols/currentworldsupport/sourcematching/retention. No forbiddenpacket/fabricatedentity/through-blockactioninthataccesscaller; outcomeislegitimatefieldaccessonly. Historicexposure/ancestrylimitsunchanged. Final105–110read/evalchecksremain05:24:41–05:29:41.
+
+---
+
 # Fourth sandbox death before any projectile — 2026-10-19 05:13:06 UTC
 
 G29-9 READY11046–47 at05:11:19(.6copy/15.4total/exactinstantunknown), copiedLIVEbase10HP/wood42/199stone/Snow1. SB260completed15.779s; buildhazardrefusal05:12:38.671 at59/10HP beforeSnow. Returnflatunsettled40.327 at58.575/6HP, refugeDigaborted42.170atHP0; canonicaldragonmagicdeath05:12:42 at(30.5,58,-24.5). FiredSnowfalse/targetpresentsix. Newprojectionclimbfullroute andpointblanklowbaseescape were notqualified; noeffect orblastsurvival.
