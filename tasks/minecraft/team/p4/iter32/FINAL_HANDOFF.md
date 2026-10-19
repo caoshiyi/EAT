@@ -32,3 +32,13 @@ Owned p4cmd.py enforces one P4 run across both environments including chat, synt
 Current continuation must begin from current body/inventory/funding and a fresh visible target. P2 lacks food and is below the existing rescue source guard; P4 cannot fund another trip. Old loot status is unknown. Do not replay the failed whole kit/Snow rebuild, claim sandbox kit as live, stand exposed after failed ending, or rely on unexecuted stale Table-roof proposal12126 (retired with runtime throw). The objective still requires live travel, current stronghold/End admission, crystal removal and actual Dragon damage/defeat.
 
 Owned paths only; only P4 played by this agent; P1/P3 unplayed; no agents, excluded sources, server/.work access, internet, raw packets, reach/visibility bypass, tools/eval/server modification or remote push. Last prior owned checkpoint1659801c; closure checkpoint follows. No completion depends on a pending P4 command.
+
+
+## Final independent inspection — 2026-10-19T10:59:33.073239+00:00
+Final fresh P4 **LIVE12180** three audits10:58:43.209/.312/.513: same49.509335/66/113.499976,5.911142HP17food,Sapling1 only, grounded, all10FULL, all7controlsFALSE/goalnull. Read completed peer **LIVE12177** in full: three FINAL_WORLD audits10:56:16.167/.570/17.073 independently verify P2 same145.7/71/972.3,14HP6food, donor kit/materials, all10FULL/all7controlsFALSE/goalnull. FOOD_POI[] is only that program's local search result, not global food absence. FINAL_AUDIT_VERIFICATION.json mechanically checks all six exact samples.
+
+Final capture final1058_20261019T105843Z completed10:58:46.096: both environments idle, no reset, no new deaths beyond the one10:37:02 P2 Creeper. Player states unchanged; no credible completion or new score event after closing evaluator, so no redundant evaluator rerun. Closing0dragon/11milestones/198deaths remains explicitly LAST-SAVED/forced-saveFAILED.
+
+Peer handoffs inspected10:55:53,10:57:41 and10:58:46. **P2.md and P2 provisional still modified10:43:12 and stale about current body/outstanding12152; P2 FINAL_HANDOFF.md absent at final inspection.** PEER_FINAL_INSPECTION.txt preserves that observation. It does not override completed12169/12177 or current status. Own closure is self-contained and does not depend on a final peer command.
+
+Final state, canonical deaths, evaluator, peer records/handoffs and both environments inspected during100–105. No P4 program, sandbox test, delivery or reset pending. P4 no death this iteration; donated kit recipient use and sealed ending verified, old kit recovery and Dragon goal still failed. Closure checkpoint follows; never pushed.

@@ -1,0 +1,120 @@
+syntax-only PASS: current_audit.js
+program #12180 on p4: 0.5 s
+--- output ---
+CURRENT_AUDIT {"at":"2026-10-19T10:58:43.209Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CURRENT_AUDIT {"at":"2026-10-19T10:58:43.312Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CURRENT_AUDIT {"at":"2026-10-19T10:58:43.513Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+--- returned ---
+{
+ "at": "2026-10-19T10:58:43.713Z",
+ "p": {
+  "x": 49.50933546990016,
+  "y": 66,
+  "z": 113.499976277067
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_sapling",
+   1
+  ]
+ ],
+ "faces": [
+  {
+   "p": {
+    "x": 49,
+    "y": 65,
+    "z": 113
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 49,
+    "y": 68,
+    "z": 113
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 50,
+    "y": 66,
+    "z": 113
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 50,
+    "y": 67,
+    "z": 113
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 48,
+    "y": 66,
+    "z": 113
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 48,
+    "y": 67,
+    "z": 113
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 49,
+    "y": 66,
+    "z": 114
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 49,
+    "y": 67,
+    "z": 114
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 49,
+    "y": 66,
+    "z": 112
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "p": {
+    "x": 49,
+    "y": 67,
+    "z": 112
+   },
+   "n": "grass_block",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (49.5, 66, 113.5) in overworld, health 5.9/20, food 17/20, alive
+CANONICAL_RECEIPT {"started": "2026-10-19T10:58:43.086099+00:00", "ended": "2026-10-19T10:58:43.732137+00:00", "environment": "LIVE", "player": "p4", "canonical_program": 12180, "rc": 0, "command": "run", "claim": "CLI receipt only; no gameplay success inferred", "source": "tasks/minecraft/team/p4/iter32/current_audit.js", "sha256": "d1eb74d41588233b1cb6c6fd357a35e892ab8160373e1e49adb4a623446aa93b"}
