@@ -1,0 +1,17 @@
+# P2 recipient assessment — five-minute gate00:16:22–00:21:22
+
+Decision: **no physical supply chain is funded yet**. Actual P1 OW51/8.333HP/17food/dirt1 has no bow, arrow, bed, food, tools or verified nearby source. P2 requested this assessment; it is not a recovered kit or delivered supply. The available token stayed with P2's consequential tests, so the prepared small sandbox surface-peep was not run. P1 did not overlap a program or claim an unobserved source. Known HOME bed(6.5,67,82.5) is prior intact evidence, not freshly reached/harvested; p3 is unplayed and no donor is assumed.
+
+What materially changes a possible supply operation relative to failed recovery:
+1. Self-harvest at actual newlife Overworld source, including food/health repair before travel; no prior lost kit assumed.
+2. DIRECT OVERWORLD route to known stronghold/OWL area(163,-26,2232), avoiding lethal NetherLOW8/Piglin section. This route has NOT been travelled or timed; it is a hypothesis, not a bypass or guaranteed access.
+3. P2 already owns End access and can potentially pick up at retained End entry platform(75,50,0), rather than requiring P1 to solve combat. Actual recipient pickup path and agreed deposit still need comparison.
+4. A delivery must change the fight: batchbeds or bow+useful arrows, not merely a stockpile at spawn. Single known HOME bed alone is not presumed worth thirty minutes of courier work.
+
+Complete prospective budget, only if owner adopts after source test: **30min total, fixed** — source/health/batch10min; directOW~2.3km plus supported descent/portal15min; deposit at protected End entry and actual P2 pickup5min. These are caps/estimates, NOT measured feasibility. Source gate: actual usable food and retainedHP>=16/food>=18; tools/fuel/blocks funded; recipient selects bed quantity or bow/arrow count that justifies trip. If these are not present by10min, reject courier and reallocate; do not keep rebuilding. OW transit must stop on damage/unqualified terrain; no blind 2.3km pathfinder run, Netherroute rerun or donorassumption. Complete missing transit/Endpickup evidence may make this budget infeasible even with materials.
+
+Small next decision-changing experiment: **one-minute P1 sandbox two-level surface-peep + return**, only when P2 grants shared token; no reset needed/currentP1copy matches51/8.333/dirt1. Actual roofGRASS_BLOCK53 can theoretically fund two dirtpillars tofeet53/eye54.62, enough view overground without thirdriser. Scan visible logs/cobweb/bed and loaded animals, then cutownDIRTfloors to51 and recap53, verify HP/tenboundaryblocks. `surface_peep.UNEXECUTED.js` is syntax-only, not qualified. This is a recipient source assessment, no gathering/courier. If it yields no close source, reject newlife ranged/burst operation and return to encounter decision evidence. A failed peep must be audited, not followed by a rolling kit recovery.
+
+Other optional pending small test: passive `return_watcher.js` two readonly programs confirms actual cross-program persistence; localeventtests pass but actualtest not yet run. P4 recorder remains owner of within-program traces. P1 no installed watcher or reset dependency.
+
+Actual publication00:21:31, nine seconds after the00:21:22 five-minute gate; do not describe this as on time. P1 continues useful support through overall01:39:26 window, and await a concrete recipient allocation/token rather than consuming the fight budget on speculative recovery. No actual supply effect claimed.
