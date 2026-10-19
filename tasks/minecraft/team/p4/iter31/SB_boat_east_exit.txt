@@ -1,0 +1,34 @@
+[sandbox] program #300 on p4: 0.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:43:17.995Z","p":{"x":0.5,"y":60,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"inv":[["dirt",1]]}
+TARGET {"tx":18,"tz":-16}
+FAIL NoPath: No path to the goal!
+END {"at":"2026-10-19T07:43:18.549Z","p":{"x":0.5,"y":60.495200877005914,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":false,"velocity":{"x":0,"y":-0.3739040364667221,"z":0},"inv":[["dirt",1]],"moved":0.49520087700591375,"elapsed":657,"dead":false,"floor":"dirt","feet":"snow","head":"air","hazards":[{"n":"spider","p":{"x":14.95540012187415,"y":58,"z":-28.0100482499855},"d":15.346828835863374},{"n":"zombie","p":{"x":7.428851445598811,"y":50,"z":-32.512851013158276},"d":15.472223731231093},{"n":"zombie","p":{"x":10.1908934974733,"y":51,"z":-31.5005398350311},"d":15.750583929682849},{"n":"skeleton","p":{"x":7.4954388839505075,"y":60,"z":-12.699999988079071},"d":12.87716542353814}]}
+--- returned ---
+{
+ "at": "2026-10-19T07:43:18.549Z",
+ "p": {
+  "x": 0.5,
+  "y": 60.495200877005914,
+  "z": -23.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": false,
+ "velocity": {
+  "x": 0,
+  "y": -0.3739040364667221,
+  "z": 0
+ },
+ "inv": [
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (0.5, 60.5, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: boat_east_exit.js

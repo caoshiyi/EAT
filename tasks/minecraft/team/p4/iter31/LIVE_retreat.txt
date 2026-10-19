@@ -1,0 +1,21 @@
+program #11940 on p4: 0.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:38:03.197Z","p":{"x":-19.7,"y":20,"z":-32.703869346242286},"hp":1.3333320617675781,"food":17,"ground":true}
+FAIL NoPath: No path to the goal!
+END {"at":"2026-10-19T07:38:03.676Z","p":{"x":-19.7,"y":21.375400644196166,"z":-32.72891179860977},"hp":1.3333320617675781,"food":17,"ground":false,"dead":false,"mobs":[]}
+--- returned ---
+{
+ "at": "2026-10-19T07:38:03.676Z",
+ "p": {
+  "x": -19.7,
+  "y": 21.375400644196166,
+  "z": -32.72891179860977
+ },
+ "hp": 1.3333320617675781,
+ "food": 17,
+ "ground": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-19.7, 21.4, -32.7) in overworld, health 1.3/20, food 17/20, alive
+syntax-only PASS: retreat.js

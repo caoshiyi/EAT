@@ -1,0 +1,28 @@
+[sandbox] program #312 on p4: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:52:47.653Z","p":{"x":24.53374395133462,"y":52.255826266370526,"z":234.27958033024262},"hp":18,"food":17,"ground":false,"water":true,"oxygen":-1,"velocity":{"x":0,"y":-0.02500000000000002,"z":0}}
+FAIL Error: solid actual shore absent
+END {"at":"2026-10-19T07:52:47.653Z","p":{"x":24.53374395133462,"y":52.255826266370526,"z":234.27958033024262},"hp":18,"food":17,"ground":false,"water":true,"oxygen":-1,"velocity":{"x":0,"y":-0.02500000000000002,"z":0},"dead":false,"elapsed":0}
+--- returned ---
+{
+ "at": "2026-10-19T07:52:47.653Z",
+ "p": {
+  "x": 24.53374395133462,
+  "y": 52.255826266370526,
+  "z": 234.27958033024262
+ },
+ "hp": 18,
+ "food": 17,
+ "ground": false,
+ "water": true,
+ "oxygen": -1,
+ "velocity": {
+  "x": 0,
+  "y": -0.02500000000000002,
+  "z": 0
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (24.5, 52.3, 234.3) in overworld, health 18/20, food 17/20, alive
+syntax-only PASS: float_return.js
