@@ -1,0 +1,25 @@
+program #14267 on p3: 8.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T20:31:05.042Z","p":{"x":-4.521573273416563,"y":50,"z":4.500062052812262},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["snowball",9,null],["granite",17,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["end_stone",62,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["ender_pearl",2,null],["gravel",3,null],["end_stone",64,null],["stone_shovel",1,13],["crafting_table",2,null],["stone_sword",1,13],["end_stone",64,null]],"time":11602}
+MOVE Vec3 { x: -3.6966370966794235, y: 50, z: 4.500062052812184 } 20 20
+EXACT_POSTPREP ["stone_sword",1,13]
+MOVE Vec3 { x: -4.295151590355733, y: 50, z: 4.500062052812168 } 20 20
+DELIVERY_DONOR_NATIVE {"name":"stone_sword","count":0,"p":{"x":-4.521573273416563,"y":50,"z":4.500062052812168},"hp":20}
+MOVE Vec3 { x: -3.6966370966794235, y: 50, z: 4.50006205281209 } 20 20
+EXACT_POSTPREP ["stone_shovel",1,13]
+MOVE Vec3 { x: -4.295151590355733, y: 50, z: 4.500062052812074 } 20 20
+DELIVERY_DONOR_NATIVE {"name":"stone_shovel","count":0,"p":{"x":-4.521573273416563,"y":50,"z":4.500062052812074},"hp":20}
+MOVE Vec3 { x: -3.6966370966794235, y: 50, z: 4.5000620528119954 } 20 20
+EXACT_POSTPREP ["end_stone",64,null]
+MOVE Vec3 { x: -4.295151590355733, y: 50, z: 4.5000620528119795 } 20 20
+DELIVERY_DONOR_NATIVE {"name":"end_stone","count":126,"p":{"x":-4.521573273416563,"y":50,"z":4.5000620528119795},"hp":20}
+MOVE Vec3 { x: -3.6966370966794235, y: 50, z: 4.500062052811901 } 20 20
+EXACT_POSTPREP ["ender_pearl",1,null]
+MOVE Vec3 { x: -4.295151590355733, y: 50, z: 4.500062052811885 } 20 20
+DELIVERY_DONOR_NATIVE {"name":"ender_pearl","count":1,"p":{"x":-4.521573273416563,"y":50,"z":4.500062052811885},"hp":20}
+END {"at":"2026-10-19T20:31:13.360Z","p":{"x":-4.521573273416563,"y":50,"z":4.500062052811885},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["snowball",9,null],["granite",17,null],["end_stone",62,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["ender_pearl",1,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["gravel",3,null],["crafting_table",2,null],["end_stone",64,null]],"time":11782}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

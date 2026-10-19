@@ -1,0 +1,13 @@
+program #14398 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T21:32:47.690Z","p":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T21:32:47.691Z","elapsed":1,"dragon":{"p":{"x":25.451767824998193,"y":76.66736062568322,"z":1.305258280072433},"hp":38.85459899902344,"phase":1},"p1":{"p":{"x":-3.5035318418059878,"y":52.5,"z":4.499917825707636},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+CHANGE {"at":"2026-10-19T21:33:16.559Z","elapsed":28869,"dragon":{"p":{"x":-2.7755270968768073,"y":56.500612578808216,"z":3.367758280072433},"hp":36.60459899902344,"phase":1},"p1":{"p":{"x":-3.5035318418059878,"y":52.5,"z":4.499917825707636},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+RESULT {"start":1792445567690,"ending":{"at":"2026-10-19T21:33:17.716Z","elapsed":30026,"ownHP":20,"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"p1":{"p":{"x":-3.5035318418059878,"y":52.5,"z":4.499917825707636},"hp":20,"ground":true},"dragon":{"p":{"x":-3.6490622531268073,"y":57.237917266308216,"z":-10.038247579302567},"hp":36.60459899902344,"phase":1}},"changes":2,"samples":144,"groups":{"52.5":{"n":600,"minRootY":56.497438750683216}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2LIVE14397 staged0.491/50/4.618 wood7HP20. Safe concurrent proposal P3ACKrequired: excavate NEWprotectedrowz2 x-1..-5 (10Ehandcuts~150s), thenP3Northgate(-5,z3)2cuts~30s; donatewoodfrom-5/z3toP3-5/z4, P1>2m away/no supportcut/no baitmove. ETA~3min+craft. 
+p2: OnlyafterexplicitP3geometryACK; otherwise hold0.
+p1: P1 iter37Sword2 HP38.85459899902344->38.85459899902344 own20 P320; finalendingpending.
+--- p3 now: (-4.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive

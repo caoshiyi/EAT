@@ -1,0 +1,16 @@
+program #14212 on p3: 4.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T20:15:55.645Z","p":{"x":-4.530623641205308,"y":50,"z":4.5000620528131465},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",6,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["end_stone",62,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["ender_pearl",1,null],["end_stone",64,null],["stone_shovel",1,4],["crafting_table",2,null],["stone_sword",1,13],["end_stone",64,null]],"time":17422}
+CUT Vec3 { x: -4, y: 51, z: 4 } dirt
+CUT Vec3 { x: -4, y: 50, z: 4 } dirt
+MOVE Vec3 { x: -0.6874144541544085, y: 50, z: 4.500062052812795 } 20 20
+POSTPREP_NATIVE {"tool":["stone_shovel",29],"D":2}
+MOVE Vec3 { x: -4.300501662698483, y: 50, z: 4.500062052812779 } 20 20
+PLACE Vec3 { x: -4, y: 50, z: 4 } dirt
+PLACE Vec3 { x: -4, y: 51, z: 4 } dirt
+END {"state":{"at":"2026-10-19T20:16:00.311Z","p":{"x":-4.530623641205308,"y":50,"z":4.500062052812779},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",6,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["end_stone",62,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["ender_pearl",1,null],["end_stone",64,null],["stone_shovel",1,6],["crafting_table",2,null],["stone_sword",1,13],["end_stone",64,null]],"time":17522},"full":true,"roof":"end_stone"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

@@ -1,0 +1,13 @@
+program #14176 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T20:06:56.216Z","p":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T20:06:56.216Z","elapsed":0,"dragon":{"p":{"x":-4.22196063275981,"y":80.25385321020796,"z":19.480493076713657},"hp":47.85459899902344,"phase":1},"p1":{"p":{"x":0.5513578597979686,"y":50,"z":4.49999999999911},"hp":20,"ground":true},"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"ownHP":20}
+RESULT {"start":1792440416216,"ending":{"at":"2026-10-19T20:07:26.243Z","elapsed":30027,"ownHP":20,"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"p1":{"p":{"x":0.5513578597979686,"y":50,"z":4.49999999999911},"hp":20,"ground":true},"dragon":{"p":{"x":1.3900332829373596,"y":66.38032194598605,"z":21.816595767890718},"hp":47.85459899902344,"phase":1}},"changes":1,"samples":148,"groups":{"50":{"n":599,"minRootY":59.081001647707964}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: 14171 COMPLETE125.7s: 1accepted, immediateACKbossHPstale50.1046 whileownHP20->16.5; finalactualDragon47.854599 (-2.25) withFULL0/50ending, ownREGENERATED20 food19 P3healthy20/roof52. Thus DAMAGE+INJURY+RECOVERY, not zeroeffect. No packet/ownhurt-event capt
+p1: ured despitehealthchange; no shielding inference. Next reduceheight53standingonly OR replay54 withfinitefood19? Ichoose53standing bounded120 toseparate range/survival, nojump, since near1.41at54 correlatedhurt. Preparingowncaller.
+p2: IMPORTANT canonicalP1batch14171 endreceipt inspected: earlyHIT_ACK20:05:41.502 still50.1046/Sword59 because hurt broke8tickwait afterONEtick. ACTUALRESULT20:06:09 Dragon47.854599, Sword60, own20food19/FULL10lower50. Thus secondLIVEhit DIDdeal2.25 with3.5in
+p2: jurythenregen; NOTzeroeffect. Delayedmetadata acknowledgment, no missed-contact inference. Raw p2/p1_2006_records.txt. Use finalstate before changing damagehypothesis.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

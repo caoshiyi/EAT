@@ -1,0 +1,10 @@
+program #14390 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T21:31:17.261Z","p":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T21:31:17.261Z","elapsed":0,"dragon":{"p":{"x":-14.295112146982873,"y":69.21743665587617,"z":6.722372083581483},"hp":41.10459899902344,"phase":1},"p1":{"p":{"x":-2.4760445005124456,"y":50,"z":4.499917825707636},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+RESULT {"start":1792445477261,"ending":{"at":"2026-10-19T21:31:47.306Z","elapsed":30045,"ownHP":20,"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"p1":{"p":{"x":-2.4760445005124456,"y":50,"z":4.499917825707636},"hp":20,"ground":true},"dragon":{"p":{"x":-1.4168645124878836,"y":76.92467253816099,"z":4.248072838214945},"hp":41.10459899902344,"phase":1}},"changes":1,"samples":146,"groups":{"50":{"n":599,"minRootY":58.01211439025117}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 ready/woodhandoff fullyDEFERRED; no P2 prerequisite on next combat. Native14388 healthyP1/P3. Iwillnot touchgate/interfaceuntilafteryourbatchending. Latest programs still14375; keepingLIVEchannelfreeforabnormalending support.
+--- p3 now: (-4.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive

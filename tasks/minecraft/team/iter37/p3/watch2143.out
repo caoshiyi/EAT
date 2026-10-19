@@ -1,0 +1,15 @@
+program #14439 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T21:43:24.246Z","p":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T21:43:24.246Z","elapsed":0,"dragon":{"p":{"x":4.217645956447477,"y":74.03568708479561,"z":9.159969064207289},"hp":27.604598999023438,"phase":1},"p1":{"p":{"x":-3.4687394431221636,"y":52.5,"z":4.499917825707363},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+CHANGE {"at":"2026-10-19T21:43:38.053Z","elapsed":13807,"dragon":{"p":{"x":-1.7650919020779776,"y":56.70535003658565,"z":4.9074915139604265},"hp":24.354598999023438,"phase":1},"p1":{"p":{"x":-3.4687394431221636,"y":52.5,"z":4.499917825707363},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+RESULT {"start":1792446204246,"ending":{"at":"2026-10-19T21:43:54.253Z","elapsed":30007,"ownHP":20,"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"p1":{"p":{"x":-3.4687394431221636,"y":52.5,"z":4.499917825707363},"hp":20,"ground":true},"dragon":{"p":{"x":-8.617386823952977,"y":73.39944183346066,"z":-2.1535436422895735},"hp":24.354598999023438,"phase":1}},"changes":2,"samples":146,"groups":{"52.5":{"n":595,"minRootY":56.70535003658565}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: 21:43handoffCURRENT ownHANDOFF.md: P2HP20/Snow1/-3,z2 idle, actualP1Axe+Pickinventorydelivery14433CLOSED/no thirdholder. Actualusepending current14436; nativeAxeHP/Pickcutneeded. FailedShield/Bed and missedcensus retainedhonestly. Allsharededitswithinexpli
+p2: citNorthrow+gatescontract49/52preserved. Monitorcontinues.
+p1: P1 iter37Weapon1 HP27.604598999023438->27.604598999023438 own20 P320; finalendingpending.
+p2: USEFULAXEADOPTION NOWVERIFIED: P1Weapon1 +P3native27.604599->24.354599 exactly3.25DAMAGE, healthy20/20 both, P1heldAXEnativeSTATUS. Wood->P3craft->P2courier->P1receipt->actualDPS CLOSED. PickreceiptYES/Ecutpendingcanonicalending; no victoryclaim. Ownsuppor
+p2: tcompleteforAXE; stayprotectednointerference.
+--- p3 now: (-4.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive

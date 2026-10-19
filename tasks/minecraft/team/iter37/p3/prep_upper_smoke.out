@@ -1,0 +1,20 @@
+program #14255 on p3: 6.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T20:27:18.955Z","p":{"x":-4.530623641205308,"y":50,"z":4.500062052812779},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",6,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["end_stone",62,null],["dirt",3,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["ender_pearl",1,null],["end_stone",64,null],["stone_shovel",1,6],["crafting_table",2,null],["stone_sword",1,13],["end_stone",64,null]],"time":7082}
+MOVE Vec3 { x: -3.705687464468168, y: 50, z: 4.500062052812701 } 20 20
+PLACE Vec3 { x: -4, y: 50, z: 4 } dirt
+PLACE Vec3 { x: -4, y: 51, z: 4 } dirt
+PLACE Vec3 { x: -4, y: 52, z: 4 } dirt
+MOVE Vec3 { x: -4.3042019581444775, y: 53, z: 4.500062052812685 } 20 20
+CUT Vec3 { x: -4, y: 52, z: 4 } dirt
+CUT Vec3 { x: -4, y: 51, z: 4 } dirt
+CUT Vec3 { x: -4, y: 50, z: 4 } dirt
+PLACE Vec3 { x: -4, y: 52, z: 4 } dirt
+MOVE Vec3 { x: -4.233750441835252, y: 50, z: 4.500062052812567 } 20 20
+PREP_END {"at":"2026-10-19T20:27:25.141Z","stage":"drop","issue":null,"cleared":[],"drops":[[50,-4.530623641205308,53,4.500062052812685,20],[101,-4.432623602672725,53,4.500062052812665,20],[151,-4.281115543101351,53,4.500062052812646,20],[201,-4.100392104042799,53,4.500062052812626,20],[251,-3.903717067784246,53,4.5000620528126065,20],[301,-3.6983324594544933,53,4.500062052812587,20],[351,-3.4881924247738656,52.92159999847412,4.500062052812567,20],[402,-3.3734559658382426,52.76636799395752,4.500062052812567,20],[451,-3.3,52.53584062504456,4.500062052812567,20],[501,-3.3196,52.231523797587016,4.500062052812567,20],[551,-3.357036,51.85489329934836,4.500062052812567,20],[602,-3.41070276,51.40739540236494,4.500062052812567,20],[652,-3.4595395116,50.890447453259966,4.500062052812567,20],[703,-3.503980955556,50.305438451751215,4.500062052812567,20]],"state":{"at":"2026-10-19T20:27:25.141Z","p":{"x":-4.521573273416563,"y":50,"z":4.500062052812567},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["gravel",6,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",51,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",4,null],["stone_bricks",11,null],["basalt",43,null],["end_stone",62,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["sand",1,null],["torch",1,null],["ender_pearl",2,null],["dirt",1,null],["end_stone",64,null],["stone_shovel",1,9],["crafting_table",2,null],["stone_sword",1,13],["end_stone",64,null]],"time":7202},"full":false,"roof":"end_stone","column":[[50,"air"],[51,"air"],[52,"dirt"],[53,"air"],[54,"air"],[55,"air"],[56,"end_stone"],[57,"air"],[58,"air"]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: ACKHOLD actualP1(-2.56,50,4.5)HP20food20EMPTY/newpod-3; NOascent/NOsharededit untilYOURnativeDONE. YOURownedprep55smallfirst accepted, thenownnextscopeactual. P1independentownedAUTORECOVERYtool whilewaiting: immediatepost-returnUpper->normalP1emergency bel
+p1: ow/correctY57ledge viaWestvent first, smallSBactualbranchtest beforelongreliance; no livebodymovement.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

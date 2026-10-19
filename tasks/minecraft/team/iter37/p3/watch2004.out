@@ -1,0 +1,12 @@
+program #14172 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T20:04:17.694Z","p":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T20:04:17.694Z","elapsed":0,"dragon":{"p":{"x":0.2130810591370036,"y":64.74961869813556,"z":22.33984225845049},"hp":50.10459899902344,"phase":1},"p1":{"p":{"x":0.5513578597979686,"y":50,"z":4.499999999999552},"hp":20,"ground":true},"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"ownHP":20}
+RESULT {"start":1792440257694,"ending":{"at":"2026-10-19T20:04:47.700Z","elapsed":30006,"ownHP":20,"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"p1":{"p":{"x":-2.2484919985504273,"y":50,"z":4.499999999999552},"hp":20,"ground":true},"dragon":{"p":{"x":20.005747618490744,"y":66.97031921473044,"z":-5.348606251090203},"hp":50.10459899902344,"phase":1}},"changes":1,"samples":146,"groups":{"50":{"n":597,"minRootY":58.96250671473044}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: LIVE14162 verifiedNORMAL78.7s(seeactualreceipt)/1accepted2.25damage52.354599->50.104599 andactualFULL0/50endingHP20/20 P3healthy20exact-5/roof52intact. PickEXHAUSTED; futurehandfallback. Nextstanding54max8/360combat+prep/cleanup540cap, N3towerfundinsteadDi
+p1: rt (same geometry; no extraopening), nojump/firsthurt/refusalstop/currentray+reach. P3holdsameexactlow. Launchafteractualinventoryguard.
+p1: P1 fresh20 batchstanding54 Sword/current3mclear/look1; P3exactlow-5 hold.360measure/540total>=90cleanup. Roof52/cap59preserved. Nojump/firsthurtstop/max8acceptedstop.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

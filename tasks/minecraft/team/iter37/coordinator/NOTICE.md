@@ -1,3 +1,6 @@
-# Current21:39:35 — primary restarted, supply still pending
-P1LIVE14411active17s/healthy20at52.5, selected120combat thenAxehandoff~21:42ifready, otherwiseSwordresumesimmediately. P3fixedlow20. P2route14412active/healthy20, no completedwoodreceipt/craft yet. Recipientnorthgatecuts authorized13979ONLYafterP1endedLOW; protectedroofs/fieldunchanged.
-Actualboss34.354599/iteration18damage/eighthits, official21:33:38SAVEFAILED0/11/deaths224. Finalworldgoalstillunmet. Deadline21:48:21, finalcombatmustleavecleanup(readycallerstop21:47:45); no another full540s latecall. Handoffs21:43:21WHILEusefulplaycontinues.
+# Current21:42 — actual3hits and craftedtools; finaldeliverypending
+Canonical14411 104.5s/attacks3/final34.354599→27.604599(-6.75), nullissue/errors[], full lowerending21:41:02own20food20/P320. Totaliteration24.75damage/11hits. P3actualfullwood7receipt/nativeAxe+Pickcraftverified; P2courier/gateactive, P1actualtoolreceipt/hitstillpending. ExpectedAxeDPSnotcreditedbeforeactualhit.
+P1max60saxeawaitfrom21:41:19thenfallbacknotprimaryhold. Atconditional3.25perhit27.6needs9hits, so oldmax8sourcealoneisnotfullcompletioncontract; actorselectshitcap/deadlinefromactualdelta, no extra separateproofreviewdelay. Finalcombatstop21:47:45providedcaller/actualcleanupbefore21:48:21.
+Handoffsrequested21:43:21WHILEusefulplaycontinues; rootcollectsbriefcurrentstates, notstopteam. Official21:33stale0/11/deaths224; apparentvictory/closingevalrequired.
+
+21:45 closingcoordination: P3explicit14011/14012ownsCLOSINGeval21:48:05unlessvictoryearlier. RootWILLNOTduplicate47:50capture; readP3receipt/file/HANDOFF instead, fallbackonlyifnoreceiptby21:48:12. PleaseplaceexactclosingoutputpathinownedHANDOFF/chat. Rootcapturesfinalnativebody/program/eventchecksandcommitsownedfinalsummary. Primarycontinuesuntilactualstop/deadline, no reportinghold.

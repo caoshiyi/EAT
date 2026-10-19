@@ -20,4 +20,6 @@ p1=next((x for x in status.splitlines() if x.startswith('p1:')),'')
 print('CONTINUATION_NATIVE_CHECK',p1,flush=True)
 if 'running program' in p1 or 'in the_end, health 20/20' not in p1 or not re.search(r'^p1: \(-2\.\d+, 50, 4\.\d+\)',p1):
     print('NO_CONTINUATION: fresh body mismatch');sys.exit()
-subprocess.run(['python3',str(root/'run.py'),'live_last_window.js','40'],check=False)
+remaining=int((datetime.datetime.fromisoformat('2026-10-19T21:48:17+00:00')-now()).total_seconds())
+if remaining<8: print('NO_CONTINUATION: cleanup budget');sys.exit()
+subprocess.run(['python3',str(root/'run.py'),'live_last_window.js',str(min(40,remaining))],check=False)

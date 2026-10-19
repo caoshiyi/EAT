@@ -1,0 +1,16 @@
+program #14140 on p3: 0 s
+--- output ---
+(nothing logged)
+--- error ---
+p3-program-14140.js:28
+const start=Date.now(),rows=[],events=[],groups={};let hp=null,p1hp=null,phase=null,lastSample=0;const snap=()=>{const d=Object.values(bot.entities).find(e=>e.name==='ender_dragon'),p=Object.values(bot.entities).find(e=>e.username==='p1');return {at:new Date().toISOString(),elapsed:Date.now()-start,ownHP:bot.health,p3:bot.entity.position.clone(),p1:p?{p:p.position.clone(),hp:p.metadata?.[9],ground:p.onGround}:null,dragon:d?{p:d.position.clone(),hp:d.metadata?.[9],phase:d.metadata?.[16]}:null};};
+                                                                         ^
+
+SyntaxError: Identifier 'phase' has already been declared
+    at new Script (node:vm:117:7)
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:471:16)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:599:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (0.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive
