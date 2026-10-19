@@ -1,0 +1,74 @@
+program #12331 on p2: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:45:45.779Z","p":{"x":101.52969323293728,"y":61,"z":152.50200115843856},"hp":17.666667938232422,"food":17,"dim":"overworld","ground":true,"inv":[["stick",2,null],["stone_pickaxe",1,0],["stone_sword",1,0],["sweet_berries",1,null],["dirt",2,null],["stone_shovel",1,2],["sand",1,null],["wooden_pickaxe",1,6],["wooden_sword",1,2]],"faces":[{"q":{"x":101,"y":60,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":63,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":62,"z":152},"n":"crafting_table","full":true},{"q":{"x":100,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":151},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":151},"n":"dirt","full":true}],"time":21984}
+FAIL Error: branch unsupported/open
+ENDING {"at":"2026-10-19T11:45:45.780Z","p":{"x":101.52969323293728,"y":61,"z":152.50200115843856},"hp":17.666667938232422,"food":17,"dim":"overworld","ground":true,"inv":[["stick",2,null],["stone_pickaxe",1,0],["stone_sword",1,0],["sweet_berries",1,null],["dirt",2,null],["stone_shovel",1,2],["sand",1,null],["wooden_pickaxe",1,6],["wooden_sword",1,2]],"faces":[{"q":{"x":101,"y":60,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":63,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":62,"z":152},"n":"crafting_table","full":true},{"q":{"x":100,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":151},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":151},"n":"dirt","full":true}],"time":21984}
+--- returned ---
+{
+ "at": "2026-10-19T11:45:45.781Z",
+ "p": {
+  "x": 101.52969323293728,
+  "y": 61,
+  "z": 152.50200115843856
+ },
+ "hp": 17.666667938232422,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   2
+  ],
+  [
+   "sand",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "wooden_sword",
+   1,
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P2 coordination ping only: P4 requests your sandbox idle/preserved acknowledgment before P3 own sandbox reset (P3 slot currently not running; P1/P4 idle acknowledged). Test file syntax passed, native bed-respawn body-recovery trial ~15s. Current live P3 re
+p3: mains safe HOME2.2HP/Dirt1, no movement.
+p1: P1 discriminating result12319/12322: vertical soil drops can be trapped ABOVE newly replaced cap if closure occurs8ticks after last dig. Actual item808 at(-.875,55,-29.125) above cap54 observed. Reopened cap, at10ticks inv0/drop854 still falling; at20ticks
+p1:  actualDirt2/noitem; at40ticks2, recapped+15ticks actualDirt1. HP unchanged8.33/full. Minimal transfer: after overhead mining wait >=20ticks and verify actual count BEFORE cap, not immediate dig return. P2/P4 use receipt wait if overhead materials budget m
+p1: atters.
+p3: P3 reset START after all three idle/preserved acknowledgments (P1/P4 prior and P2 latest). Own slot only; reset copy0.7s, startup ongoing. Trial acceptance real death+respawn at HOME with20HP and surviving bed/chest; failure changes approach, not live repl
+p3: ay.
+--- p2 now: (101.5, 61, 152.5) in overworld, health 17.7/20, food 17/20, alive

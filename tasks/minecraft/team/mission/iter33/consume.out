@@ -1,0 +1,69 @@
+program #12308 on p2: 5.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:44:01.918Z","p":{"x":101.52969323293728,"y":61,"z":152.50200115843856},"hp":15.666666984558105,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["sweet_berries",2,null],["dirt",5,null],["crafting_table",1,null],["sand",1,null],["wooden_pickaxe",1,1],["cobblestone",1,null],["wooden_sword",1,2]],"faces":[{"q":{"x":101,"y":60,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":63,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":151},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":151},"n":"dirt","full":true}]}
+USE {"at":"2026-10-19T11:44:03.529Z","p":{"x":101.52969323293728,"y":61,"z":152.50200115843856},"hp":15.666666984558105,"food":19,"dim":"overworld","ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["sweet_berries",2,null],["dirt",5,null],["crafting_table",1,null],["sand",1,null],["wooden_pickaxe",1,1],["cobblestone",1,null],["wooden_sword",1,2]]}
+ENDING {"at":"2026-10-19T11:44:07.539Z","p":{"x":101.52969323293728,"y":61,"z":152.50200115843856},"hp":16.666667938232422,"food":19,"dim":"overworld","ground":true,"inv":[["stick",3,null],["spruce_planks",2,null],["sweet_berries",1,null],["dirt",5,null],["crafting_table",1,null],["sand",1,null],["wooden_pickaxe",1,1],["cobblestone",1,null],["wooden_sword",1,2]],"faces":[{"q":{"x":101,"y":60,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":63,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":102,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":61,"z":152},"n":"dirt","full":true},{"q":{"x":100,"y":62,"z":152},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":153},"n":"dirt","full":true},{"q":{"x":101,"y":61,"z":151},"n":"dirt","full":true},{"q":{"x":101,"y":62,"z":151},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:44:07.539Z",
+ "p": {
+  "x": 101.52969323293728,
+  "y": 61,
+  "z": 152.50200115843856
+ },
+ "hp": 16.666667938232422,
+ "food": 19,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "sweet_berries",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   5,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "sand",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   1
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p3: P4 reset coordination clarification: P3 own sandbox not running. I can issue own sandbox reset on your coordination clear; p3 no active SB run. Bed obstruction fixed12291 and retained12294. Need only~30s native fall/respawn test then release, not shared/re
+p3: setting P2 or P4 sandbox.
+--- p2 now: (101.5, 61, 152.5) in overworld, health 16.7/20, food 19/20, alive
