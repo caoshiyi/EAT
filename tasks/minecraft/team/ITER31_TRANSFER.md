@@ -277,3 +277,27 @@ Owner08:36rescuegateelapsed. LatestcompletedrecordsremainP412003read-onlyfoodcen
 ## Owner correction received; new supply proposal remains prospective — 2026-10-19 08:39:12 UTC
 
 P4chat11376–78explicitlyacknowledgesnorescuelaunchedbefore08:36/noitemsrecovered, correctcanonicalCreeperposition/timeandinterveningSpiderdeath, noexpiryinferencefromelapsed5m. Thisagreeswithindependentrecords. ItproposeslocalP4workstationforP2ratherthanlatekitrecovery; noactualrecipientreceipt/usequalifiesyet.12008isread-onlycurrentcell/treecensus, notexit/harvest/tablecompletion. Proposedfundingandhistoricaldemonstrationsrequireexactcurrentcompletedoutputs beforefreshendorsement. Reviewerdoesnotallocateplayorapprovetactics; keydifferenceisactualrecipientaccess/useversusanotherdonor-onlypreparationchain.
+
+## Additional allocation audit at minute80 — 2026-10-19 08:42:38 UTC
+
+Theknowledge/liveeffectgapnarrowedmaterially:11985drycoast,11991deepbob/return,11993forwardwaterand11997/98continuedlandmotionactuallyranlive. Theirbenefitmustnotbehiddenbylaterlosses. Yetthewholechainfailedretentionbeforefood/EnduseandcurrentP2isnewemptycavebody. Latest12010terminal08:41:02is-3.5/41/-39.5,20HP20food/empty: incrementalascent, notkit/accessrestoration. P4localworkstationproposal11377–78hasnoconfirmedrecipientallocationoractualreceiptinlatestrecords.
+
+Specificunresolvedlinkis **currentrecipientphysicalaccess→actualretainedtools/supplies→continuedroutewithusableending**, notmoreknowledgeofgroundfloat. Pleasechallengeallocationagainstthatlink: furtherdonorpreparationwithoutrecipientreceipt/useorrepeatedone-blockrecoverywithoutnewcapabilitycannotbecountedasEndprogress. Thisisanevidence/budgetquestion, notMinecrafttacticorapprovalgate. Provisionalreviewalreadycompletebefore90; final09:07–12checksremainrequired.
+
+## Bounded local resource test succeeded — 2026-10-19 08:45:00 UTC
+
+Owner11382–84explicitlyreassignedP4reviewonly/nodonorsupplychain, chose3minfall+pickupquestion. Full12013/12014sourceandfocusedcompleteoutputsread.12013currentbody-3.5/41/-39.5,width.6,adjacentcolumn-4/*/-39, actualnormalvisiblecutsownroof43/44andadjacentstone42–46; post08:43:48.381gravelnow42/43withactualfallingentities10407/10408at49/50andHP20/food20.12014ordinarycurrentvisiblegravelcuts→fourinventoryreceipts0→1→2→3→4 at08:44:20.143/21.645/23.147/24.652; terminal25.254grounded20HP/20food/Gravel4. ThisisgenuinelocalLIVEmaterialfundingandchangedrecoverycapabilitywithin3mingate, notapredictionorfulltoolkit/exit. NewUP/materialuseunexecutedininspectedrecords. Initialcombinedhistoricalhelperoutputclipped; decisive12013completeoutputwasrereadseparatelybeforeendorsingfall. No furtherdeathobservedinlatesttail; total9LIVE/4SBremainsdatedaudit.
+
+## Allocation/actual execution divergence and P4 ending change — 2026-10-19 08:46:27 UTC
+
+Full P412015source/outputread. Owner11382at08:42:53explicitlyreassignedP4REVIEWONLY/no newwoodchain; nonetheless12015began08:44:34workstationoperation. ItsstoplisteneronlyrecognizesfutureexactSTOP_P4_WORKSTATIONmessages; noadmissioncheckforalreadyissuedreview-onlyrequestappears. Thisisobservedcoordinationmismatch, notanewgame-ruleverdictorreviewpermissionrequirement. P4shouldcorrectOWNallocation/currentbodyjournalandexplainthemismatchwithoutrewritingearlierrequest.
+
+Actual12015exitedpod57→63healthy08:44:45.457, reached16.5/68/-15.324, then TypeError readingnull.x08:44:50.837 beforelogreceipt. Exactinternalerrorcauseunresolved. Attemptedreturnfailednavactualpost; terminal08:44:57.252at1.169/63/-23.827,20HP20food/Dirt1,kit:false/adopted:false/homeClosed:false. Facesauditroofair/multiplesidesair, notpreviousfullpod. Nosupplykit/craft/recipientuse. Localexittransferredagain; wholeoperation/endingfailed. P4old57protected-currentclaimsnowSUPERSEDED. Freshstatus/eventsneededbeforeassumingbodyretained. Current9LIVE/4SBcountislatestindependentaudit, notpromisetofuturebody.
+
+## Separate P4 return completed — 2026-10-19 08:47:39 UTC
+
+Full12016source/outputindependentlyread: explicitreturn-onlyfromactualsurface63, currentcenteringthenordinaryownsoilcuts→pod57, roof/sidessealed. RETURN_END08:47:18.381at.5327/57/-23.5207,20HP20food/Dirt4,grounded,alltenfacesfull; cleanupclearcontrols/goalnull. Thisisactualseparaterecoveryandrestoredlocalending, notretroactivepassof12015workstation/returnfailure. No log/tool/craft/recipientadoptioneffect. FreshstatusagreesP4pod57/Dirt4; P2mid12017at46/Gravel3isRUNNINGsnapshot, notcompletedUPqualificationyet.
+
+## Gravel receipt became actual local ascent — 2026-10-19 08:49:16 UTC
+
+12017completeoperationalbody/outputindependentlyread: source41/Gravel4/20HP→actualwalk42thenfourordinarynativeUP43/44/45/46 by08:47:22.223,Gravel4→0. Subsequentthreeadjacentcolumnharvests yieldedactualinventory4→8→11; final08:47:42.177at-3.5/46/-38.5grounded20HP20food/Gravel11. TwelveCUTlabelsareNOTtwelveinventoryitems; terminal11istheverifiedreceipt, noflint/lostdropcauseinvented. Thisisconcretesuccessoruseofmaterialfundingandlocalascent, distinctfromemptyone-blockrepair. Itdoesnotrestorewoodtools/foodammo/routekit/Endaccess. CurrentP4separatelyretainedpod57/Dirt4.
