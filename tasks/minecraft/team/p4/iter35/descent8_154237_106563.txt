@@ -1,0 +1,89 @@
+program #13439 on p4: 8.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:42:37.226Z","p":{"x":-53.5,"y":53,"z":62.500000678574885},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,27],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,8],["cobblestone",1,null],["crafting_table",1,null],["basalt",4,null]],"time":9323,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: -52, y: 53, z: 62 } success
+ROUTE_WORLD {"at":"2026-10-19T15:42:38.089Z","p":{"x":-51.5,"y":53,"z":62.50000058461817},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,27],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,8],["cobblestone",1,null],["crafting_table",1,null],["basalt",4,null]],"time":9323,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_nether"}
+PATH_STATUS Vec3 { x: -52, y: 53, z: 64 } noPath
+FAILURE Error: dryendpoint
+ENDING {"at":"2026-10-19T15:42:45.595Z","p":{"x":-52.505731457375205,"y":53,"z":63.31546303848139},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,27],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,8],["cobblestone",1,null],["crafting_table",1,null],["basalt",4,null]],"time":9483,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-53,"y":52,"z":63},"n":"basalt","full":true},{"q":{"x":-53,"y":55,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":53,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":54,"z":63},"n":"basalt","full":true},{"q":{"x":-54,"y":53,"z":63},"n":"dirt","full":true},{"q":{"x":-54,"y":54,"z":63},"n":"cobblestone","full":true},{"q":{"x":-53,"y":53,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":53,"z":62},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":62},"n":"air","full":false}]}
+ENDING {"at":"2026-10-19T15:42:45.745Z","p":{"x":-52.505731457375205,"y":53,"z":63.31546303848139},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,27],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,8],["cobblestone",1,null],["crafting_table",1,null],["basalt",4,null]],"time":9483,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-53,"y":52,"z":63},"n":"basalt","full":true},{"q":{"x":-53,"y":55,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":53,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":54,"z":63},"n":"basalt","full":true},{"q":{"x":-54,"y":53,"z":63},"n":"dirt","full":true},{"q":{"x":-54,"y":54,"z":63},"n":"cobblestone","full":true},{"q":{"x":-53,"y":53,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":53,"z":62},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":62},"n":"air","full":false}]}
+ENDING {"at":"2026-10-19T15:42:45.895Z","p":{"x":-52.505731457375205,"y":53,"z":63.31546303848139},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,27],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,8],["cobblestone",1,null],["crafting_table",1,null],["basalt",4,null]],"time":9483,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-53,"y":52,"z":63},"n":"basalt","full":true},{"q":{"x":-53,"y":55,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":53,"z":63},"n":"basalt","full":true},{"q":{"x":-52,"y":54,"z":63},"n":"basalt","full":true},{"q":{"x":-54,"y":53,"z":63},"n":"dirt","full":true},{"q":{"x":-54,"y":54,"z":63},"n":"cobblestone","full":true},{"q":{"x":-53,"y":53,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":64},"n":"air","full":false},{"q":{"x":-53,"y":53,"z":62},"n":"air","full":false},{"q":{"x":-53,"y":54,"z":62},"n":"air","full":false}]}
+--- returned ---
+{
+ "at": "2026-10-19T15:42:46.045Z",
+ "p": {
+  "x": -52.505731457375205,
+  "y": 53,
+  "z": 63.31546303848139
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   27
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "dirt",
+   7,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   8
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   4,
+   null
+  ]
+ ],
+ "time": 9483,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p1: P3 accepted no duplicate West physical. I will independently verify recorded flight model, then test high104 fixture/damage explanation in own sandbox. Fresh live audit13436 sees Dragon(-9.15,62.79,-30.64) phase1, making dragon collision at raised60 plausi
+p1: ble versus cloud; no live raised safety endorsement. Alternative safer61 shot timing/escape pending test.
+--- p4 now: (-52.5, 53, 63.3) in the_nether, health 20/20, food 20/20, alive
