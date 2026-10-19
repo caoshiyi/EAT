@@ -6,3 +6,5 @@ P2 may proceed independently; P4 intends mechanics-only test in OW. Any new rese
 
 G30-1 P4 mutations:265 cap57 removed, dirt55 placed, actual failure airborne56.616;266 later grounded56/20HP, current head/bodywater (269/270). Live P4 still55/20HP/Dirt2, no mutation.268 readonly survey BigInt serialization error,269 generic survey water-saturated,270 pertype read-only corrected. All completed. Native pilot not whole success/no death.
 P2 actual2643UP/return58/10HP/wood46. This is a sandbox change from copied wood42; later whole P2 current state must be read independently.
+
+G30-1 first P4 sandbox death:273 canonical05:36:16 FALL at(-5.8,29,-28.8); returned respawn65/20HP/EMPTY supersedes copied body55 and intermediate56. Not healed retainedbody. P2 independent267 running status05:36 at61/.3HP/noPick; no complete outcome inferred. No reset authorized/requested while peer active. Next P4 new respawn survey only; water route retired.
