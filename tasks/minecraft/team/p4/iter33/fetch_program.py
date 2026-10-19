@@ -8,4 +8,4 @@ root=pathlib.Path('tasks/minecraft/team/p4/iter33');stamp=datetime.datetime.now(
 if r.returncode:raise SystemExit(r.stdout+r.stderr)
 chunks=re.split(r'(?m)(?=^== #)',r.stdout);selected=[c for c in chunks if re.match(r'^== #'+str(pid)+r'\s',c)]
 if len(selected)!=1:raise SystemExit('Exact ID not among last8; no file falsely labeled. Explicit larger canonical capture needed.')
-raw=selected[0];env='SB' if sb else 'LIVE';dest=root/(env+'_'+str(pid)+'_'+stamp+'.txt');dest.write_text(raw);print(dest);print(raw.splitlines()[0]);print('complete_sections',bool(re.search(r'(?m)^-- output --$',raw)) and bool(re.search(r'(?m)^-- returned --$',raw)))
+raw=selected[0];env='SB' if sb else 'LIVE';dest=root/(env+'_'+str(pid)+'_'+stamp+'.txt');dest.write_text(raw);print(dest);print(raw.splitlines()[0]);print('complete_output',bool(re.search(r'(?m)^-- output --$',raw)));print('terminal_sections',re.findall(r'(?m)^-- (returned|error) --$',raw))
