@@ -1,0 +1,171 @@
+program #13221 on p2: 3.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:30:27.947Z","p":{"x":59.54243121643143,"y":62,"z":111.49999004414238},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",19,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]],"target":{"x":61,"y":62,"z":111},"distance":1.5409402334532818,"faces":[{"q":{"x":59,"y":61,"z":111},"n":"dirt","full":true},{"q":{"x":59,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":58,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":58,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":59,"y":62,"z":112},"n":"dirt","full":true},{"q":{"x":59,"y":63,"z":112},"n":"dirt","full":true},{"q":{"x":59,"y":62,"z":110},"n":"dirt","full":true},{"q":{"x":59,"y":63,"z":110},"n":"dirt","full":true}]}
+DIG_POST {"q":{"x":60,"y":63,"z":111},"original":"dirt","post":"air"}
+CUT {"q":{"x":60,"y":63,"z":111},"n":"dirt","p":{"x":59.54243121643143,"y":62,"z":111.49999004414238}}
+DIG_POST {"q":{"x":60,"y":62,"z":111},"original":"dirt","post":"air"}
+CUT {"q":{"x":60,"y":62,"z":111},"n":"dirt","p":{"x":59.54243121643143,"y":62,"z":111.49999004414238}}
+WALK {"at":"2026-10-19T14:30:30.058Z","p":{"x":60.5,"y":62,"z":111.49999004414232},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",21,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:30:30.058Z","p":{"x":60.5,"y":62,"z":111.49999004414232},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",21,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]],"steps":1,"target":{"x":61,"y":62,"z":111},"distance":0.7070997413671153,"gain":0.8338404920861665}
+WALK {"at":"2026-10-19T14:30:30.658Z","p":{"x":61.51301462080936,"y":62,"z":111.49999004414224},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",21,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:30:30.658Z","p":{"x":61.51301462080936,"y":62,"z":111.49999004414224},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",21,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]],"steps":2,"target":{"x":61,"y":62,"z":111},"distance":0.7163616722058245,"gain":0.8245785612474573}
+ENDING {"at":"2026-10-19T14:30:31.510Z","p":{"x":61.54243121643143,"y":62,"z":111.49999004414224},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",36,null],["dirt",17,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,41],["stone_pickaxe",1,1]],"faces":[{"q":{"x":61,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":62,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":61,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":110},"n":"dirt","full":true},{"q":{"x":61,"y":63,"z":110},"n":"stone","full":true}],"steps":2,"reason":"under food reached"}
+--- returned ---
+{
+ "at": "2026-10-19T14:30:31.510Z",
+ "p": {
+  "x": 61.54243121643143,
+  "y": 62,
+  "z": 111.49999004414224
+ },
+ "hp": 12.666666030883789,
+ "food": 16,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "torch",
+   1,
+   null
+  ],
+  [
+   "coal",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   38
+  ],
+  [
+   "cobblestone",
+   36,
+   null
+  ],
+  [
+   "dirt",
+   17,
+   null
+  ],
+  [
+   "dirt",
+   54,
+   null
+  ],
+  [
+   "cobblestone",
+   64,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   41
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 61,
+    "y": 61,
+    "z": 111
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 64,
+    "z": 111
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 62,
+    "z": 111
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 63,
+    "z": 111
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 62,
+    "z": 111
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 63,
+    "z": 111
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 62,
+    "z": 112
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 63,
+    "z": 112
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 62,
+    "z": 110
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 63,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  }
+ ],
+ "steps": 2,
+ "reason": "under food reached",
+ "net": 0.8032264211922949
+}
+--- chat since this player's previous program ---
+p3: 13202 rebuiltmissingceilingswithactualminedEndstone, nativepreserve-nextroof ascentreachedFULL10/57 full20/20. FreshworldR59provesP1 x6/z-20..-29 route57 hasroof59AIR/open-skytrench, notcoveredtunnel; no replay asprotected. Changedmaterialmethod: UNDERGROU
+p3: ND55 firingchamber withnatural57ceiling, firsttickarc maystillreach95 (modelpending), crouchafterrelease keepsbodybelowsurface58. Buildingtruecovered55 approach nowwhileSnowcourierfunded.
+--- p2 now: (61.5, 62, 111.5) in overworld, health 12.7/20, food 16/20, alive

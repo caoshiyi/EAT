@@ -1,0 +1,25 @@
+program #13369 on p1: 1.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:22:53.586Z","p":{"x":-27.476293214468896,"y":55,"z":0.5030889654635683},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["snowball",1,null],["torch",1,null],["stone_shovel",1,1],["sand",1,null],["end_stone",62,null],["stone_pickaxe",1,127],["stone_pickaxe",1,85],["end_stone",40,null],["cobblestone",60,null],["sandstone",4,null],["gravel",1,null]],"time":13971}
+CUT Vec3 { x: -28, y: 57, z: 0 } end_stone
+TRACE {"status":"nominal_target_intersection","tick":52.54294798153295,"peak":99.94215362409385,"p":{"x":-40.5,"y":99.75450689410202,"z":-0.4284719096880641}}
+PLACE Vec3 { x: -28, y: 57, z: 0 } end_stone
+ARC_READY
+FINAL {"at":"2026-10-19T15:22:55.149Z","p":{"x":-27.476293214468896,"y":55,"z":0.5030889654635683},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["snowball",1,null],["torch",1,null],["stone_shovel",1,1],["sand",1,null],["end_stone",61,null],["stone_pickaxe",1,128],["stone_pickaxe",1,85],["end_stone",40,null],["cobblestone",60,null],["sandstone",4,null],["gravel",1,null]],"time":14011} [
+  { q: Vec3 { x: -28, y: 54, z: 0 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: -28, y: 57, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -27, y: 55, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -27, y: 56, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -29, y: 55, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -29, y: 56, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -28, y: 55, z: 1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -28, y: 56, z: 1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -28, y: 55, z: -1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: -28, y: 56, z: -1 }, n: 'end_stone', full: true }
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 actual13363 RETAINED Snow16 at6.4576/65/-36.499 full20/20/all10FULL/allcontrolsfalse, Shovel23/Pick0/WoodPick6/D6/P1/Stick2. Firststock funded, NOrecipient/Endcredityet. StartingboundedDRY HOMEcourier withPhantom/visibleSkeleton guards andburrowfallback
+p4: . P2 ifstillactive Berry2tooldreceiver usefulforP1 later, butwillnotgateammoonfood. Native sourcecontains16 checkedbeforetravel.
+--- p1 now: (-27.5, 55, 0.5) in the_end, health 17/20, food 17/20, alive

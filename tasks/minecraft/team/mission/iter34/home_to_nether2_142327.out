@@ -1,0 +1,11 @@
+program #13193 on p1: 8.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:23:18.241Z","p":{"x":9.53268644198805,"y":60,"z":89.67857082481143},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["cobblestone",64,null],["sand",1,null],["stone_pickaxe",1,4],["stone_sword",1,0],["cobblestone",1,null],["stick",2,null],["torch",1,null],["sandstone",4,null]],"time":14470}
+CUT Vec3 { x: 8, y: 62, z: 89 } cobblestone
+FAIL Error: move post {"at":"2026-10-19T14:23:27.064Z","p":{"x":9.53268644198805,"y":60,"z":89.67857082481143},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["cobblestone",64,null],["sand",1,null],["stone_pickaxe",1,5],["stone_sword",1,0],["cobblestone",1,null],["stick",2,null],["torch",1,null],["sandstone",4,null]],"time":14650}
+FINAL overworld {"at":"2026-10-19T14:23:27.064Z","p":{"x":9.53268644198805,"y":60,"z":89.67857082481143},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["cobblestone",64,null],["sand",1,null],["stone_pickaxe",1,5],["stone_sword",1,0],["cobblestone",1,null],["stick",2,null],["torch",1,null],["sandstone",4,null]],"time":14650}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (9.5, 60, 89.7) in overworld, health 17/20, food 17/20, alive

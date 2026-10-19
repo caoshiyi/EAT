@@ -1,0 +1,16 @@
+program #13208 on p1: 4.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:27:12.758Z","p":{"x":3.500000000000229,"y":65,"z":4.357169719836446},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",2,null],["cobblestone",62,null],["sand",1,null],["stone_pickaxe",1,14],["stone_sword",1,0],["cobblestone",1,null],["stick",2,null],["torch",1,null],["sandstone",4,null],["gravel",1,null]],"time":19171}
+CUT Vec3 { x: 2, y: 65, z: 4 } cobblestone
+CUT Vec3 { x: 2, y: 66, z: 4 } cobblestone
+MOVE Vec3 { x: 2.683293668924225, y: 65, z: 4.473404243408661 } 16.952232360839844 17
+SHOVEL [ [ 1, 0 ] ]
+MOVE Vec3 { x: 1.5, y: 65, z: 4.485974414536075 } 16.952232360839844 17
+SNOW_SOURCE [ 4 ]
+PLACE Vec3 { x: 0, y: 65, z: 4 } cobblestone
+FINAL {"at":"2026-10-19T14:27:17.025Z","p":{"x":1.5,"y":65,"z":4.485974414536075},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",2,null],["snowball",4,null],["stone_shovel",1,1],["sand",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["cobblestone",63,null],["torch",1,null],["sandstone",4,null],["gravel",1,null]],"time":19251}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (1.5, 65, 4.5) in the_nether, health 17/20, food 17/20, alive

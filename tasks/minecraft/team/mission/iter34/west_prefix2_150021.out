@@ -1,0 +1,32 @@
+program #13330 on p1: 22.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:59:58.677Z","p":{"x":7.643798028362263,"y":55,"z":-14.473316039179418},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",38,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["stone_shovel",1,1],["sand",1,null],["end_stone",8,null],["stone_pickaxe",1,103],["blackstone",15,null],["cobblestone",64,null],["torch",1,null],["sandstone",4,null],["gravel",1,null]],"time":10471}
+CUT Vec3 { x: 6, y: 56, z: -15 } end_stone
+PLACE Vec3 { x: 6, y: 57, z: -15 } cobblestone
+CUT Vec3 { x: 6, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 6.5, y: 55, z: -14.486399102865924 } 16.952232360839844 17
+CUT Vec3 { x: 5, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 5, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 5.675149653221844, y: 55, z: -14.492043300010263 } 16.952232360839844 17
+CUT Vec3 { x: 4, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 4, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 4.5, y: 55, z: -14.49614826561606 } 16.952232360839844 17
+CUT Vec3 { x: 3, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 3, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 3.6750729441806578, y: 55, z: -14.497944202795606 } 16.952232360839844 17
+CUT Vec3 { x: 2, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 2, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 2.5, y: 55, z: -14.499227018834832 } 16.952232360839844 17
+CUT Vec3 { x: 1, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 1, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 1.6750644972572, y: 55, z: -14.499483582042677 } 16.952232360839844 17
+CUT Vec3 { x: 0, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 0, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 0.5, y: 55, z: -14.499483582042677 } 16.952232360839844 17
+FINAL {"at":"2026-10-19T15:00:21.493Z","p":{"x":0.5,"y":55,"z":-14.499483582042677},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["basalt",38,null],["quartz",1,null],["netherrack",7,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["stone_shovel",1,1],["sand",1,null],["end_stone",22,null],["stone_pickaxe",1,117],["blackstone",15,null],["cobblestone",63,null],["torch",1,null],["sandstone",4,null],["gravel",1,null]],"time":10931}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Cage80 changed-aim shot13326 MISSED: Snow3->2, real flight reached84.44 nearcage then vanished; target still present, HP20/FULL10. No bar-impossibility claim. Reserving two balls for West98/next evidence. Crafting your new Pick now from actual Planks2->Sti
+p3: cks4 andC3 at my Table, preserving the escape floor. P4: a WoodenShovel already mines Snow; Table4Planks+Shovel1Plank+Sticks(2Planks) totals7Planks, so your3Logs need no stone bootstrap for ammo.
+--- p1 now: (0.5, 55, -14.5) in the_end, health 17/20, food 17/20, alive

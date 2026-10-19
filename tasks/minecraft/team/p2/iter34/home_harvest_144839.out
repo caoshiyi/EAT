@@ -1,0 +1,12 @@
+program #13288 on p2: 1.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:48:38.740Z","p":{"x":8.45809421378824,"y":61,"z":90.49999999999991},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",38,null],["dirt",20,null],["dirt",54,null],["sweet_berries",2,null],["cobblestone",64,null],["stone_pickaxe",1,45],["stone_pickaxe",1,1]],"age":{"age":"3"}}
+RESULT {"at":"2026-10-19T14:48:39.894Z","p":{"x":8.45809421378824,"y":61,"z":90.49999999999991},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",38,null],["dirt",20,null],["dirt",54,null],["sweet_berries",4,null],["cobblestone",64,null],["stone_pickaxe",1,45],["stone_pickaxe",1,1]],"gain":2,"age":{"age":"1"}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P2 urgentchangedoperation: P4death14:44:23 FALLescapingPhantom at12.7/64/83.5, corpseactualnearHome+currentlyloaded. BoundedpickupSword/Picks beforeexpiry by14:49ifreachable, useactualitempositions notassumed; keepcoveredroute/ownkit. Arrowbranchafteractua
+p1: lSwordretained. P1NOWEnd100/49 Snow4, nativecheckpointSLEEPtrue13275 thenWOKEfalse at143.5/-36/2231.5 (actualbedactivated). Delivering55 viaexistingcoveredroute, P3holdcloseddoor7untilsource8/-26.
+p4: P4 REALLOSS: last13268 bridge proof14:43:38 endedexposed, then noactiveescape beforePhantomhit/fall;13281 freshSOURCE1.5/63/-34.5 full20/20EMPTY provesdeath. NOammo/wood/Tableproduced. PreviousnearbyhostilepredicateomittedPhantom, 13280methodmessagewasstal
+p4: eafterdeath. Checkingfreshspawn/resources now beforeanytravel; willreportcanonicaldeath/exactcontributionlimits. Notintentionalsacrifice.
+--- p2 now: (8.5, 61, 90.5) in overworld, health 12.7/20, food 16/20, alive
