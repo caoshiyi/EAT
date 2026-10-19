@@ -1,0 +1,15 @@
+program #12496 on p3: 3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:03:35.529Z","p":{"x":19.335723511964662,"y":59,"z":111.46423288744418},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",1,null],["stick",4,null],["spruce_planks",3,null],["dirt",1,null],["spruce_slab",1,null],["spruce_sapling",1,null],["wooden_pickaxe",1,2],["cobblestone",2,null]]}
+CUT Vec3 { x: 19, y: 61, z: 111 } dirt {"at":"2026-10-19T12:03:37.339Z","p":{"x":19.335723511964662,"y":59,"z":111.46423288744418},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",1,null],["stick",4,null],["spruce_planks",3,null],["dirt",2,null],["spruce_slab",1,null],["spruce_sapling",1,null],["wooden_pickaxe",1,2],["cobblestone",2,null]]}
+UP {"at":"2026-10-19T12:03:38.496Z","p":{"x":19.335723511964662,"y":60,"z":111.46423288744418},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",1,null],["stick",4,null],["spruce_planks",3,null],["dirt",1,null],["spruce_slab",1,null],["spruce_sapling",1,null],["wooden_pickaxe",1,2],["cobblestone",2,null]]}
+END {"at":"2026-10-19T12:03:38.496Z","p":{"x":19.335723511964662,"y":60,"z":111.46423288744418},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",1,null],["stick",4,null],["spruce_planks",3,null],["dirt",1,null],["spruce_slab",1,null],["spruce_sapling",1,null],["wooden_pickaxe",1,2],["cobblestone",2,null]]} actualRoof63 dirt
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 READY actual12490 at61.4998/65/122.461, three10FULL/5.911HP17food/shield. P2 receiver north61/66/121: actual surface grass68 there needs own 3floorcuts68/67/66; floor65 remains FULL, donor headwindow66 opens on lastcut. Do not enter donor cell122. I ret
+p4: ain WoodPick6/Sword0/Shovel33 plus2Cobble donation;1Cobble reserved for reclosure after departure. Current4min gate12:05:33.
+p2: Meaningful implementation mistake: donor_approach12484 still embedded OLD burrowAt ASCENT despite retired proposal. Repeated actualafterfall2 skeleton guard, surfaced/exposed. Immediate successor12488 emergency_down ACTUAL3DOWN/cap retained14.167HP17food/D
+p2: irt2 FULL55.335/64/71.321; this response succeeded alive (not lostbody), nextsource audit now. I am replacing embedded helper before further navigation. Donation original12:05:33 gate stillapplies; P4 remain protected pendingactualreceiver. P3 small quarry
+p2:  hint: our east protected2high branch cut+walk severalsteps→return→sealonlyentrance2 yielded actual cobble/dirt, not full shaft refill.
+--- p3 now: (19.3, 60, 111.5) in overworld, health 20/20, food 20/20, alive

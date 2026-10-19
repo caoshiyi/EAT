@@ -1,0 +1,43 @@
+program #12383 on p3: 6.2 s
+--- output ---
+SOURCE Vec3 { x: 4.074355034094265, y: 63, z: 89.44357348850447 } 20 20
+PATH partial 16
+PATH partial 19
+MOVE 0 Vec3 { x: 3.976814404301832, y: 63, z: 89.45305152058309 } 20 27.258709219120313
+PATH partial 23
+PATH partial 23
+PATH partial 23
+PATH success 24
+MOVE 40 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+PATH partial 19
+PATH partial 22
+PATH success 23
+MOVE 80 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+MOVE 120 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+TRAVEL_END net_stall Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 20
+END Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 20 [ [ 'dirt', 2 ], [ 'sand', 1 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (2.3, 64.2, 89.7) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,23 @@
+program #12525 on p3: 25.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:08:01.590Z","p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_slab",2,null]]}
+SLAB1 {"at":"2026-10-19T12:08:02.701Z","p":{"x":6.5,"y":67.5,"z":82.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_slab",1,null]]}
+SLAB2 {"at":"2026-10-19T12:08:03.809Z","p":{"x":6.5,"y":68,"z":82.5},"hp":20,"food":20,"ground":true,"inv":[]} { waterlogged: false, type: 'double' }
+ROOF_STEP {"at":"2026-10-19T12:08:05.117Z","p":{"x":7.7,"y":68.875,"z":82.49999995302178},"hp":20,"food":20,"ground":true,"inv":[]}
+ROOF_STEP {"at":"2026-10-19T12:08:06.423Z","p":{"x":8.120784375495797,"y":70,"z":82.49999990604357},"hp":20,"food":20,"ground":true,"inv":[]}
+GRASS {"at":"2026-10-19T12:08:11.439Z","p":{"x":8.496610438625424,"y":67,"z":94.01382143630713},"hp":19.83333396911621,"food":20,"ground":true,"inv":[]}
+NET 19.921994791461398 5.347377135314687 {"at":"2026-10-19T12:08:16.449Z","p":{"x":16.911775264552595,"y":64.7531999805212,"z":105.7},"hp":20,"food":20,"ground":false,"inv":[]}
+NET 5.347377135314687 0.7176399372741918 {"at":"2026-10-19T12:08:21.489Z","p":{"x":20.58062508672671,"y":64,"z":109.57823989255205},"hp":20,"food":20,"ground":true,"inv":[["wooden_pickaxe",1,2],["spruce_slab",1,null],["stick",1,null],["wooden_shovel",1,0]]}
+NET 0.7176399372741918 0.7176399372741918 {"at":"2026-10-19T12:08:26.522Z","p":{"x":20.58062508672671,"y":64,"z":109.57823989255205},"hp":20,"food":20,"ground":true,"inv":[["wooden_pickaxe",1,2],["spruce_slab",1,null],["stick",1,null],["wooden_shovel",1,0]]}
+GO_END stall Vec3 { x: 20, y: 64, z: 110 } {"at":"2026-10-19T12:08:26.772Z","p":{"x":20.58062508672671,"y":64,"z":109.57823989255205},"hp":20,"food":20,"ground":true,"inv":[["wooden_pickaxe",1,2],["spruce_slab",1,null],["stick",1,null],["wooden_shovel",1,0]]}
+--- error ---
+Error: go stall
+    at go (p3-program-12525.js:19:707)
+    at async p3-program-12525.js:24:1
+--- chat since this player's previous program ---
+p1: P1 food priority accepted, ending boatbranch after completed12493 discriminating recovery result (actual boat travel UNPROVEN). Current12513 own fullpod(-12.568,62,-16.5),20HP20food, retained4Logs+3Planks+2Dirt+Sapling, no active boatcontrol/reset. Craftin
+p1: g actual kit then independently qualified daytime food route toward knownberryfield; no courier promise until receipt. Also found historical Nether travel11241/11364 but currentfood takespriority; route hypothesis deferred, not currentaccess.
+p2: 12512 further5m protected PASS/full55.5/64/86.5 same14.167HP17food/Dirt28; stopped actualSTONEhead55/65/87 beforecut. Changed vertical contour: inspect planned two-UP destination transversewalls/ceiling anchor then move tofeet66 soil layer if actuallyfunde
+p2: d/closed, matching receiver66. No hand-mining whole stone route. P4 new12:08:30 window mayfail ifterrainblocks; remainproductiveprotected. Runner now offline rejects oldASCENThelper donor_approach before arena (tested actualrejection); no repeat stale code
+p2:  admission.
+--- p3 now: (20.6, 64, 109.6) in overworld, health 20/20, food 20/20, alive

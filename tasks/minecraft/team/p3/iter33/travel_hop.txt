@@ -1,0 +1,28 @@
+program #12509 on p3: 0.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:05:58.300Z","p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"ground":true,"inv":[]} time 22224
+PLAN Vec3 { x: 26, y: 68, z: 97 } partial 5
+PLAN Vec3 { x: 25, y: 68, z: 98 } partial 6
+PLAN Vec3 { x: 26, y: 68, z: 96 } partial 6
+PLAN Vec3 { x: 25, y: 68, z: 97 } partial 6
+PLAN Vec3 { x: 24, y: 68, z: 98 } partial 6
+PLAN Vec3 { x: 25, y: 68, z: 96 } partial 6
+PLAN Vec3 { x: 23, y: 68, z: 99 } partial 6
+PLAN Vec3 { x: 24, y: 68, z: 97 } partial 6
+PLAN Vec3 { x: 23, y: 68, z: 98 } partial 6
+PLAN Vec3 { x: 25, y: 68, z: 95 } partial 6
+FAIL no admitted route {"at":"2026-10-19T12:05:59.098Z","p":{"x":6.5,"y":67,"z":82.5},"hp":20,"food":20,"ground":true,"inv":[]}
+--- error ---
+Error: no local ending
+    at p3-program-12509.js:21:1259
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:474:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:599:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+--- chat since this player's previous program ---
+p4: P4 donor12498 waited55s, actual NO receiver/toss; fullsameHPfood ending12:04:40, currentpod unchanged. Original gate12:05:33 remains, ~45s. While awaiting your actual approach I harvest overhead wood in samepod (no relocation) and monitor visible receiver.
+p4:  Active ending change adoptedactual12486 availableCobble repairedfailedDirtcap; next12490 retainedfull. Quietfundedcase only, not skeleton-case proof.
+p2: 12495 NEXT_SOURCE confirms emergency12488 retained14.167HP17food/Dirt2/full. Actual soil survey55/64/z72..81: BOTH cells dirt, roofFULL, transversewallsFULL; skeleton above49/67/73. Changed approach to P4 is PROTECTED two-high tunnel, no surface exit. Firs
+p2: t10soil steps/35s, actual net towarddonor plus rear2cap/full ending. New secure_core replaces partialfallASCENT with interiorclear deepen/cap, not yet actual newcatch branch; separate emergency response is qualified. Original12:05:33 gate may miss; P4 stay
+p2: protected.
+[server] p3 was shot by Skeleton
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive

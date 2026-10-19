@@ -1,0 +1,49 @@
+program #12491 on p3: 4 s
+--- output ---
+SOURCE Vec3 { x: 19.335723511964662, y: 59, z: 111.46423288744418 } 20 20 [
+  [ 'spruce_log', 1, null ],
+  [ 'stick', 4, null ],
+  [ 'spruce_planks', 3, null ],
+  [ 'dirt', 3, null ],
+  [ 'spruce_slab', 1, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'wooden_pickaxe', 1, 1 ],
+  [ 'cobblestone', 1, null ]
+]
+GAIN [
+  [ 'spruce_log', 1 ],
+  [ 'stick', 4 ],
+  [ 'spruce_planks', 3 ],
+  [ 'dirt', 3 ],
+  [ 'spruce_slab', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'cobblestone', 2 ]
+]
+END Vec3 { x: 19.335723511964662, y: 59, z: 111.46423288744418 } 20 20 [
+  [ 'spruce_log', 1, null ],
+  [ 'stick', 4, null ],
+  [ 'spruce_planks', 3, null ],
+  [ 'dirt', 1, null ],
+  [ 'spruce_slab', 1, null ],
+  [ 'spruce_sapling', 1, null ],
+  [ 'wooden_pickaxe', 1, 2 ],
+  [ 'cobblestone', 2, null ]
+]
+FACES [
+  [ Vec3 { x: 19, y: 58, z: 111 }, 'diorite', true ],
+  [ Vec3 { x: 19, y: 61, z: 111 }, 'dirt', true ],
+  [ Vec3 { x: 20, y: 59, z: 111 }, 'dirt', true ],
+  [ Vec3 { x: 20, y: 60, z: 111 }, 'dirt', true ],
+  [ Vec3 { x: 18, y: 59, z: 111 }, 'diorite', true ],
+  [ Vec3 { x: 18, y: 60, z: 111 }, 'dirt', true ],
+  [ Vec3 { x: 19, y: 59, z: 112 }, 'dirt', true ],
+  [ Vec3 { x: 19, y: 60, z: 112 }, 'dirt', true ],
+  [ Vec3 { x: 19, y: 59, z: 110 }, 'dirt', true ],
+  [ Vec3 { x: 19, y: 60, z: 110 }, 'dirt', true ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (19.3, 59, 111.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,31 @@
+program #12448 on p3: 8.6 s
+--- output ---
+SOURCE Vec3 { x: 16.823661068075452, y: 67, z: 111.65239353439674 } 20 20
+TRUNK_FLOOR [
+  [ 60, 'dirt' ],
+  [ 61, 'dirt' ],
+  [ 62, 'dirt' ],
+  [ 63, 'grass_block' ],
+  [ 64, 'air' ],
+  [ 65, 'air' ],
+  [ 66, 'air' ]
+]
+WINDOW_OPEN Vec3 { x: 16.823661068075452, y: 67, z: 111.65239353439674 } 20
+LOG_CUT 68 [ [ 'spruce_slab', 1 ] ]
+LOG_CUT 67 [ [ 'spruce_slab', 1 ] ]
+END Vec3 { x: 16.823661068075452, y: 67, z: 111.65239353439674 } 20 20 [ [ 'spruce_slab', 1 ] ]
+ITEMS [
+  [
+    4021,
+    Vec3 {
+      x: 19.52087148802522,
+      y: 67.6513528528554,
+      z: 111.67934322715972
+    }
+  ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (16.8, 67, 111.7) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,13 @@
+program #12417 on p3: 3 s
+--- output ---
+SOURCE Vec3 { x: 6.500000050893125, y: 70, z: 83.77120335667327 } 20 20
+STANCE Vec3 { x: 6.500000011744594, y: 70, z: 83.34431269305486 } true
+CLEARED Vec3 { x: 6, y: 68, z: 82 } Vec3 { x: 6.500000011744594, y: 70, z: 83.34431269305486 } 20
+CLEARED Vec3 { x: 6, y: 67, z: 82 } Vec3 { x: 6.500000011744594, y: 70, z: 83.34431269305486 } 20
+END Vec3 { x: 6.500000011744594, y: 70, z: 83.34431269305486 } 20 20 [ [ 'spruce_slab', 1 ] ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: LIVE12400 actual one hop42m retained, second target162/83/338 not reached within25s; fallback retained191.53/61/306.50 HP20food19/full/food18. Initial injury19.07 recovered on food, BODY_HURT retained inraw. Changed selection now: inspect current getPathTo
+p2:  status/cost/first nodes across multiple lower-elevation admitted endpoints; do not blindly repeat nearest-to-goal mountaintop. Kit retained; no End effect.
+--- p3 now: (6.5, 70, 83.3) in overworld, health 20/20, food 20/20, alive

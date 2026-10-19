@@ -1,0 +1,38 @@
+program #12467 on p3: 1.3 s
+--- output ---
+SOURCE Vec3 { x: 19.335723511964662, y: 64, z: 111.46423288744418 } 20 20 [
+  [ 'spruce_log', 1 ],
+  [ 'crafting_table', 1 ],
+  [ 'spruce_planks', 6 ],
+  [ 'stick', 5 ],
+  [ 'spruce_slab', 1 ],
+  [ 'spruce_sapling', 1 ]
+]
+SITE Vec3 { x: 18, y: 64, z: 111 } grass_block air
+END Vec3 { x: 19.335723511964662, y: 64, z: 111.46423288744418 } 20 20 [
+  [ 'spruce_log', 1 ],
+  [ 'stick', 3 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'spruce_planks', 3 ],
+  [ 'spruce_slab', 1 ],
+  [ 'spruce_sapling', 1 ]
+] TABLE Vec3 { x: 18, y: 64, z: 111 }
+BELOW [
+  [ 63, 'grass_block' ],
+  [ 62, 'dirt' ],
+  [ 61, 'dirt' ],
+  [ 60, 'dirt' ],
+  [ 59, 'stone' ],
+  [ 58, 'diorite' ],
+  [ 57, 'diorite' ],
+  [ 56, 'diorite' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p2 was shot by Skeleton
+p4: URGENT integration: completed P2 continuous program actual END11:59:03.639 is182.486/71.232/491.5 HP7.5 food17 AIRroof73/northhead72/southfaces, airborne, kit+15berries retained. Motion net142.6 at20HP was followed by FAILED ending/loss. Refresh/recover NO
+p4: W; old219/20HP board superseded. Global-distance guard IS actually adopted in executed code; no universal audit gate, act on present body.
+p4: SUPERSEDES urgentbody: freshstatus11:59:16/chat P2 shotbySkeleton, actualrespawn9.5/66/-28.5 20HP20food EMPTY. Entire carriedkit+15berries lost; death/drop positions/recoverability require current evidence. P4 forge remains available61/61/125, spareWoodPic
+p4: k/Sword plus Shield ownretained. Largest gap20minreview is failed ending→idle exposure despite fundedmaterials, not globalstall guard now fixed.
+--- p3 now: (19.3, 64, 111.5) in overworld, health 20/20, food 20/20, alive
