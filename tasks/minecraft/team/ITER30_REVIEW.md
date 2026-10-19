@@ -1,3 +1,9 @@
+# Latest before90 evidence override — 2026-10-19 06:56:56 UTC
+
+Objectiveunmet: no currentiterationLIVEcrystal/Dragon effect or crediblevictory. OfficialopeningLAST-SAVED0dragon/11milestones/182deathsisdated, SAVEFAILED; finalevalpending. **Currentcanonicaltotals: FIVE LIVE deaths; TEN SANDBOX deaths.** LatestSBP4Zombie06:52:18supersedesninecount; P2G8still9HP. NewactualSB287ordinarygroundjumpSnowremovesUNCAGED95target06:54:37.772, same-lifeG8five→four/retained9HP/Snow0/wood56; fullsource/outputread. CageshotandDragonmethodremainunqualified. P4actualLIVE11863Netherentry06:52:08.40020HP/Snow15/kit, freshstatus~06:55agrees; onwardroutepending. P2LIVElatestemptyOW60/20HPafterfive-totalLIVEdeathsequence, oldretainedkitlost. Completeprovisionalbefore90alreadyrecorded; thisupdatepreservessubstantivediscoveryandfreshcounts. Final07:15:20–07:20:00inspection/evalstillpending. Detailedsupportedclaimsandlimitationsfollow.
+
+---
+
 # Complete provisional review refreshed — 2026-10-19 06:44:18 UTC
 
 **No verified live crystal removal, Dragon damage, or victory this iteration.** Opening own officialevaluation within05:30:20–54 returneddragon0/milestones11/deaths182/programs11753afterSAVEFAILED; last-savedscoreandinformational6/200are notcurrenthealth/deaths. Closingofficialevaluationstillrequired07:15:20–07:20:00. No crediblelivecompletionhasappeared.
@@ -143,3 +149,8 @@ Explicitalternativegenerationandpolicyclassificationworked: shortascentdemonstra
 Remainingrisk: repairsofthecurrentaccess/fundingchaincanagainabsorbthewholeoperationbudgetwithoutanotherobjectiveaction. Finiteproposals,retirementsandactualsmalltestshelped; merelyrenamingfailedbudgetsorcountingcode/models/protectedendingswouldnot. Noownerneedsreviewpermission. Preserveactualpositivecapabilitieswhenabandoningtheunqualifiedwholebranch. Currentlivebody/gearclaimsrequireinterveningevents, asfiveLIVE/nineSBdeathsandownmissedSBdeathdemonstrate. Flightfitreplayisnotnewflight/collisionvalidation; loadedmissinggearisanobservation,notuniversalexpiryproof.
 
 06:55:08 UTC independentportaloutcome: fullLIVE11863output actualchangedEastwaypoints→actualactiveframe06:52:04.041→dimensionNether(4.5,65,3.5)/20HP20food/Snow15/woodtools/Table at06:52:08.400. Freshstatusafterretrievalagreesbody/kit; latestLIVEdeathstill06:42:38, nointerveningdeathobserved. ThisqualifiesactualOWroute+Netherentry, notdated300mNetherroute/stronghold/Endreceipt. ItweakensanyglobalportalrouteimpossibilityinferencefromP2stalls. No newmilestoneorDragoncompletionclaimed.
+
+## New distinct sandbox effect — independently checked2026-10-19 06:56:56 UTC
+FullSB287sourceanddecisiveoutputread: G8retainedfield6.503/58/-25.500/9HP/Snow1; ordinaryvisiblecurrentroofcut, nativefirstjump58.42, currentoutgoingclearair/ordinaryactivateItem06:54:34.326, actualSnow8413spawn+flight, actualtarget234at12.5/95/-39.5gone06:54:37.772while9HP/sameEnd, Snowgone37.788, finalfourcrystals. Rooftop60actuallyreinstalled; retainedsamebody58/9HP06:54:40.098/no damage/Snow0/wood56/end162. Bossrecord1throughout. This is genuine new projectileeffect/Endcase, notmodel-onlyorunload. Target95isUNCAGED; itdoesnotqualifyproposedcageroofgapshot. NoLIVEeffect/Dragonhit/completeobjective. P4OWflightfitwasaboundedinputalongsidehistorical11630; noexclusiveattributionoruniversaltrajectoryclaim.
+
+Threeearlierremovals267/284/286weresameeast80inresetcopies;287removesANOTHERtargetinSAMEG8as286, cumulativeG8six→five→four. NevermergesandboxwithLIVEworld. NewcanonicalSBP4Zombie06:52:18(-6.2,28,-27.9)followed33:25; currentSBdeathcountTEN(P2seven/P4three), notpreviousnineatitsaudittime. NoP4SBprogramsince285; unattendedrespawndeath, notnewplayexperiment. CurrentLIVEdeathsFIVE. Thisnewdeatheventpostdatesearliercanonicalaudit; recheckatclosure.
