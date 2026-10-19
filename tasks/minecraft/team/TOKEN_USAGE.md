@@ -132,3 +132,5 @@ Iteration33 P4 local capability checkpoint — 2026-10-19 11:50 UTC: token usage
 Iteration33 P4 shield checkpoint — 2026-10-19 11:58 UTC: token usage unavailable from an authorized available session-history source. No estimate. Actual raw→ingot→shield/equip chain retained; failures remain in owned raw receipts.
 
 Iteration33 P4 minute20 review checkpoint — 2026-10-19 12:04 UTC: token usage unavailable from an authorized available session-history source. No estimate.
+
+Iteration33 P4 actual donation checkpoint — 2026-10-19 12:19 UTC: token usage unavailable from an authorized available session-history source. No estimate. Failed toss/recollection and120s merged-room timeout retained; later single-item receipt and scaled tool/shield receipt verified in world status.
