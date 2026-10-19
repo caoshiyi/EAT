@@ -1,0 +1,10 @@
+program #13940 on p3: 6.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T18:18:05.868Z","p":{"x":-4.545621722857235,"y":50,"z":4.5007035741006405},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,64],["end_stone",62,null],["end_stone",43,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":76,"dim":"the_end","controls":{},"goal":false}
+--- error ---
+Error: move post {"at":"2026-10-19T18:18:12.501Z","p":{"x":-1.5,"y":50,"z":4.500446937815506},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",10,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,64],["end_stone",62,null],["end_stone",43,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":196,"dim":"the_end","controls":{},"goal":false}
+    at move (p3-program-13940.js:8:786)
+    at async p3-program-13940.js:16:54
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-1.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

@@ -1,0 +1,13 @@
+program #13944 on p3: 4.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T18:19:44.851Z","p":{"x":-4.524540105540622,"y":50,"z":4.500062166608241},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["wooden_pickaxe",1,17],["gravel",5,null],["granite",17,null],["snowball",9,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["stone_pickaxe",1,64],["end_stone",63,null],["end_stone",43,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":2056,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: -0.6428313484152319, y: 50, z: 4.500062072651702 } 20 20
+EXACT_TOOL_DURABILITIES 64 17
+MOVE Vec3 { x: -4.336061763397047, y: 50, z: 4.500062161910063 } 20 20
+DONOR_NATIVE {"at":"2026-10-19T18:19:49.015Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["end_stone",63,null],["end_stone",43,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":2136,"dim":"the_end","controls":{},"goal":false}
+END {"at":"2026-10-19T18:19:49.016Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607873},"hp":20,"food":20,"ground":true,"inv":[["mossy_stone_bricks",3,null],["andesite",8,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["basalt",64,null],["cobblestone",1,null],["flint",3,null],["cobbled_deepslate",4,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_sword",1,11],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["end_stone",63,null],["end_stone",43,null],["blackstone",27,null],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",11,null],["end_stone",64,null],["dirt",5,null]],"time":2136,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
