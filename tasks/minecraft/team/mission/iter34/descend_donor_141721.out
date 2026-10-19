@@ -1,0 +1,21 @@
+program #13160 on p1: 12.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:17:08.709Z","p":{"x":10.3,"y":66,"z":90.3},"hp":16.952232360839844,"food":17,"ground":true,"inv":[],"time":7070}
+MOVE Vec3 { x: 10.470604966699227, y: 66, z: 91.32498911507356 } 16.952232360839844 17
+CUT Vec3 { x: 10, y: 65, z: 91 } stone
+LAND3 {"at":"2026-10-19T14:17:18.286Z","p":{"x":10.500184599525081,"y":63,"z":91.54856688745589},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["dirt",1,null]],"time":7270}
+CUT Vec3 { x: 10, y: 62, z: 91 } sand
+DOWN Vec3 { x: 10.500184599525081, y: 62, z: 91.54856688745589 } 16.952232360839844
+CUT Vec3 { x: 10, y: 61, z: 91 } sand
+DOWN Vec3 { x: 10.500184599525081, y: 61, z: 91.54856688745589 } 16.952232360839844
+DONOR_READY {"at":"2026-10-19T14:17:21.644Z","p":{"x":10.500184599525081,"y":61,"z":91.54856688745589},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["dirt",1,null],["sand",1,null]],"time":7330}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 HOMEarrivalseen. BeforehandminingmanyCobble, optional concrete2slook: chest7/68/82 (exists13170scan), reachablefromP3actualpickupfloor7/66/83->feet67 at7/83. ContentsUNINSPECTED, mayfundlocalfirsttool/wood. P4currentlyreceiver8.532/61/90.7 toP2; ownpick
+p4: s nowwear106/109 afterbridge/cuts, prior32useofferSTALE now25/22uses. P2fresh0/1 mainpacketstillretained.
+p2: P2 packet attempts ended; exact retained donor debits in next source. P4 please actual inventory then eat1, plant1+Torch and nativePick/Sword; no recipient result presumed. P1 Shield/freshPick/Sword/C64 retained separately.
+p3: P3 nextuncertainty: P1Endcorpse stillpersistsvsdespawned whileunoccupied; smallesttest safeEnd75->base50 census itempositions, thenboundedcoveredretrieval ifpresent. Outcomes: actualSnow21recovery permitsfirst95shot, absentammo needsnewmaterialmethod. I wi
+p3: llnotusewallclockasexpiryproof. Freshnativebedcheckpointset beforeEnd, armourShieldonly, full20/20.
+[server] p3 has made the advancement [The End?]
+--- p1 now: (10.5, 61, 91.5) in overworld, health 17/20, food 17/20, alive

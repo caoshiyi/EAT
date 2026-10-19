@@ -1,0 +1,68 @@
+program #12989 on p1: 20.7 s
+--- output ---
+PLAN [
+  Vec3 { x: 151, y: -36, z: 2239 },
+  Vec3 { x: 151, y: -36, z: 2238 },
+  Vec3 { x: 151, y: -36, z: 2237 },
+  Vec3 { x: 151, y: -36, z: 2236 },
+  Vec3 { x: 151, y: -36, z: 2235 },
+  Vec3 { x: 150, y: -36, z: 2235 },
+  Vec3 { x: 149, y: -36, z: 2235 },
+  Vec3 { x: 148, y: -36, z: 2235 },
+  Vec3 { x: 147, y: -36, z: 2235 },
+  Vec3 { x: 147, y: -36, z: 2234 },
+  Vec3 { x: 147, y: -36, z: 2233 },
+  Vec3 { x: 147, y: -36, z: 2232 },
+  Vec3 { x: 147, y: -36, z: 2231 },
+  Vec3 { x: 146, y: -36, z: 2231 },
+  Vec3 { x: 145, y: -36, z: 2231 },
+  Vec3 { x: 144, y: -36, z: 2231 },
+  Vec3 { x: 143, y: -36, z: 2231 },
+  Vec3 { x: 142, y: -36, z: 2231 }
+]
+CUT Vec3 { x: 151, y: -35, z: 2239 } stone_bricks
+CUT Vec3 { x: 151, y: -36, z: 2239 } cracked_stone_bricks
+MOVE Vec3 { x: 151.49971635833896, y: -36, z: 2239.5 } 20 20
+CUT Vec3 { x: 151, y: -35, z: 2238 } stone_bricks
+CUT Vec3 { x: 151, y: -36, z: 2238 } stone_bricks
+MOVE Vec3 { x: 151.49974166386377, y: -36, z: 2238.675064337052 } 20 20
+CUT Vec3 { x: 151, y: -35, z: 2237 } stone_bricks
+CUT Vec3 { x: 151, y: -36, z: 2237 } stone_bricks
+MOVE Vec3 { x: 151.49970915492946, y: -36, z: 2237.5 } 20 20
+CUT Vec3 { x: 151, y: -35, z: 2236 } cracked_stone_bricks
+CUT Vec3 { x: 151, y: -36, z: 2236 } stone_bricks
+MOVE Vec3 { x: 151.49973446045428, y: -36, z: 2236.675064337052 } 20 20
+MOVE Vec3 { x: 151.49970195151997, y: -36, z: 2235.5 } 20 20
+MOVE Vec3 { x: 150.67476591833537, y: -36, z: 2235.5002312578363 } 20 20
+CUT Vec3 { x: 149, y: -35, z: 2235 } stone_bricks
+CUT Vec3 { x: 149, y: -36, z: 2235 } stone_bricks
+MOVE Vec3 { x: 149.5, y: -36, z: 2235.5002637667703 } 20 20
+MOVE Vec3 { x: 148.6750643370517, y: -36, z: 2235.5002384612453 } 20 20
+MOVE Vec3 { x: 147.5, y: -36, z: 2235.5002709701794 } 20 20
+MOVE Vec3 { x: 147.4997687421635, y: -36, z: 2234.6753349369947 } 20 20
+MOVE Vec3 { x: 147.49973623322919, y: -36, z: 2233.5 } 20 20
+MOVE Vec3 { x: 147.499761538754, y: -36, z: 2232.675064337052 } 20 20
+MOVE Vec3 { x: 147.4997290298197, y: -36, z: 2231.5 } 20 20
+CUT Vec3 { x: 146, y: -35, z: 2231 } cobbled_deepslate
+CUT Vec3 { x: 146, y: -36, z: 2231 } cobbled_deepslate
+MOVE Vec3 { x: 146.6747929966351, y: -36, z: 2231.5002312578363 } 20 20
+CUT Vec3 { x: 145, y: -35, z: 2231 } netherrack
+CUT Vec3 { x: 145, y: -36, z: 2231 } blackstone
+MOVE Vec3 { x: 145.5, y: -36, z: 2231.5002637667703 } 20 20
+CUT Vec3 { x: 144, y: -36, z: 2231 } basalt
+MOVE Vec3 { x: 144.6750643370517, y: -36, z: 2231.5002384612453 } 20 20
+MOVE Vec3 { x: 143.5, y: -36, z: 2231.5002709701794 } 20 20
+MOVE Vec3 { x: 142.6750643370517, y: -36, z: 2231.5002456646544 } 20 20
+BED air {}
+FAIL Error: bed absent
+FINAL {"at":"2026-10-19T13:53:52.447Z","p":{"x":142.6750643370517,"y":-36,"z":2231.5002456646544},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",22,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",63,null],["cobblestone",45,null],["stone_pickaxe",1,35],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":3150}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 second patch higher roots: bush destroyed3loot bouncedonto adjacentsoil; two covered pickup variants failed, retained0new. Body still10.667HP17food closed124/63/149. Changing method based current dawn/hostiles, no repeat uncertain rootpickup. Initial P4
+p2: food+use COMPLETE. P3 if yourentry supplies delayed, I can courier stone/wood/food after newharvest, not promisedreceived.
+p3: P4 packetfund refinement: C32 suffices P3 ascent7+repairs/caps; keep >=20 your own shelter fund (do NOT exhaust for64 request). FreshPick+Shield+Sword desired; table useful if spare, I can craft ownSword with2Cobble+Stick1 iftableavailable. Existingairshaf
+p3: tabove61 qualified to68, no newascentmining exceptDirt63/70. P3receiver unchanged20/20 ready89.7.
+p3: P1 choose portable2beds afterstrongholdarrival as distinct Dragon contribution. Need24String +6Planks (3wool/bed,4string/wool) fromactuallibrarycobweb/nativeSword; no need cutspawnbed. P3 likelyreceives2Planks +canrecover1 ownuppercapPlank7/68/89; your3Pla
+p3: nks couldfundsecond ifconcretehandoff/table. I will inspectcurrentlibraryweb+wood atarrival, retainbedcheckpoint. No wool/bedclaim yet. Firstki tactualreceipt stillpending, P4 3mfromnewinterface.
+--- p1 now: (142.7, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

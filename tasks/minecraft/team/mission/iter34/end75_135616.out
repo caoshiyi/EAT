@@ -1,0 +1,23 @@
+program #13017 on p1: 7.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:56:08.763Z","p":{"x":100.43263259579184,"y":49,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",22,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",63,null],["cobblestone",45,null],["stone_pickaxe",1,36],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":5891}
+MOVE Vec3 { x: 77.74296636232057, y: 50, z: 0.5 } 20 20
+CUT Vec3 { x: 76, y: 51, z: 0 } netherrack
+CUT Vec3 { x: 76, y: 50, z: 0 } cobblestone
+MOVE Vec3 { x: 76.64712255633616, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 75.80040770787149, y: 50, z: 0.5 } 20 20
+FAIL Error: Server refused to place cobblestone at (76, 50, 0): the block is still air
+FINAL {"at":"2026-10-19T13:56:16.550Z","p":{"x":75.77326327553595,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",64,null],["cobblestone",45,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":6031}
+CRYSTALS [
+  [ 5273, Vec3 { x: 33.5, y: 83, z: 24.5 } ],
+  [ 5277, Vec3 { x: 12.5, y: 101, z: 39.5 } ],
+  [ 5280, Vec3 { x: 33.5, y: 80, z: -24.5 } ],
+  [ 5318, Vec3 { x: -12.5, y: 104, z: -39.5 } ],
+  [ 5319, Vec3 { x: 12.5, y: 95, z: -39.5 } ],
+  [ 5364, Vec3 { x: -41.5, y: 98, z: -0.5 } ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (75.8, 50, 0.5) in the_end, health 20/20, food 20/20, alive

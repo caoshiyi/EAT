@@ -1,0 +1,31 @@
+program #12955 on p1: 6 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:49:15.570Z","p":{"x":18.500202689762254,"y":8,"z":266.5},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",58,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["stone_pickaxe",1,0],["stone_pickaxe",1,0],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",34,null],["netherrack",21,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["basalt",64,null],["cobblestone",64,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["cobblestone",46,null],["basalt",14,null],["flint_and_steel",1,1],["wooden_shovel",1,36],["crafting_table",1,null],["cobblestone",64,null],["wooden_shovel",1,26],["stone_pickaxe",1,121],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":21611}
+MOVE Vec3 { x: 18.500433947588526, y: 8, z: 267.3249360331847 } 20 20
+INDEX 395
+MOVE Vec3 { x: 18.500209893148714, y: 8, z: 268.5 } 20 20
+INDEX 396
+MOVE Vec3 { x: 18.500441150974986, y: 8, z: 269.3249360331847 } 20 20
+INDEX 397
+MOVE Vec3 { x: 18.500217096535174, y: 8, z: 270.5 } 20 20
+INDEX 398
+MOVE Vec3 { x: 18.500448354361446, y: 8, z: 271.3249360331847 } 20 20
+INDEX 399
+MOVE Vec3 { x: 18.500224299921634, y: 8, z: 272.5 } 20 20
+INDEX 400
+MOVE Vec3 { x: 18.500455557747905, y: 8, z: 273.3249360331847 } 20 20
+INDEX 401
+MOVE Vec3 { x: 18.500231503308093, y: 8, z: 274.5 } 20 20
+INDEX 402
+CUT Vec3 { x: 18, y: 9, z: 275 } cobblestone
+CUT Vec3 { x: 18, y: 8, z: 275 } cobblestone
+MOVE Vec3 { x: 18.500462761134365, y: 8, z: 275.3249360331847 } 20 20
+INDEX 403
+MOVE Vec3 { x: 18.500238706694553, y: 8, z: 276.5 } 20 20
+INDEX 404
+FINAL {"at":"2026-10-19T13:49:21.616Z","p":{"x":18.500238706694553,"y":8,"z":276.5},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",60,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",64,null],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",34,null],["netherrack",21,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["cobblestone",64,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["cobblestone",46,null],["basalt",14,null],["flint_and_steel",1,1],["wooden_shovel",1,36],["stone_pickaxe",1,1],["stone_pickaxe",1,1],["wooden_shovel",1,26],["stone_pickaxe",1,121],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":21731}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (18.5, 8, 276.5) in the_nether, health 20/20, food 20/20, alive

@@ -1,0 +1,39 @@
+program #12977 on p1: 25 s
+--- output ---
+CUT Vec3 { x: 150, y: -25, z: 2241 } cobblestone
+CUT Vec3 { x: 150, y: -26, z: 2241 } cobblestone
+MOVE Vec3 { x: 150.3249360331846, y: -26, z: 2241.499947770909 } 20 20
+MOVE Vec3 { x: 151.5, y: -26, z: 2241.4996586986135 } 20 20
+CUT Vec3 { x: 151, y: -25, z: 2240 } deepslate
+CUT Vec3 { x: 151, y: -26, z: 2240 } deepslate
+MOVE Vec3 { x: 151.4997687421635, y: -26, z: 2240.674722665429 } 20 20
+CUT Vec3 { x: 151, y: -27, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -27, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -28, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -28, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -29, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -29, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -30, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -30, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -31, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -31, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -32, z: 2240 } deepslate
+DOWN Vec3 { x: 151.49994761617546, y: -32, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -33, z: 2240 } stone_bricks
+DOWN Vec3 { x: 151.49994761617546, y: -33, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -34, z: 2240 } mossy_stone_bricks
+DOWN Vec3 { x: 151.49994761617546, y: -34, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -35, z: 2240 } stone_bricks
+DOWN Vec3 { x: 151.49994761617546, y: -35, z: 2240.4483013765753 } 20
+CUT Vec3 { x: 151, y: -36, z: 2240 } stone_bricks
+DOWN Vec3 { x: 151.49994761617546, y: -36, z: 2240.4483013765753 } 20
+PLACE Vec3 { x: 151, y: -34, z: 2240 } cobblestone
+FAIL Error: noanchor (152, -35, 2240)
+SECURE_FAIL Error: noanchor (152, -35, 2240)
+FINAL {"at":"2026-10-19T13:52:25.034Z","p":{"x":151.49994761617546,"y":-36,"z":2240.4483013765753},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",34,null],["netherrack",21,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",15,null],["cobblestone",63,null],["cobblestone",45,null],["stone_pickaxe",1,20],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":1410}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Accepted lowermeeting: descending own8/z89 from68->61 now, funded7floorcuts originalDirt67/66 thenGravel65..61. Willcaproof63withDIRT (not fallinggravel), endactual8/61/89.7. Please holduntilpost before opening shared8/61+62/90. Your changedmeeting uses my
+p3:  qualifiedfilledshaft rather than newcolumn.
+--- p1 now: (151.5, -36, 2240.4) in overworld, health 20/20, food 20/20, alive

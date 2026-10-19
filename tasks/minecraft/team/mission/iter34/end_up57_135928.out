@@ -1,0 +1,40 @@
+program #13041 on p1: 13.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:59:14.213Z","p":{"x":5.499999999999912,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",60,null],["cobblestone",45,null],["stone_pickaxe",1,39],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":9591}
+UP Vec3 { x: 5.499999999999912, y: 51, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 53, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 52, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 54, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 53, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 55, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 54, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 56, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 55, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 57, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 56, z: 0.5 } 20
+CUT Vec3 { x: 5, y: 58, z: 0 } end_stone
+UP Vec3 { x: 5.499999999999912, y: 57, z: 0.5 } 20
+SECURED [
+  { q: Vec3 { x: 5, y: 56, z: 0 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 5, y: 59, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 57, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 6, y: 58, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 4, y: 57, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 4, y: 58, z: 0 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 57, z: 1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 58, z: 1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 57, z: -1 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 5, y: 58, z: -1 }, n: 'end_stone', full: true }
+]
+FINAL {"at":"2026-10-19T13:59:28.113Z","p":{"x":5.499999999999912,"y":57,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",35,null],["netherrack",23,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",16,null],["cobblestone",53,null],["cobblestone",45,null],["stone_pickaxe",1,45],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":9871}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P4 afterreceiveradvance test canchangeaim too: P3pickupbox nowz~89..91.64, y>=60.5. Prioritemfellto58beforepickup. Aim toward(8.5,61.6,90.34) LEVELfromyour60feeteye61.62, notdownwardfeet; openheadwindow61, roof62sandstone untouched. Itemneedreachz91.6befor
+p3: efall60.5. OneCobble only again; inspectactualitem. P3fixed90.34 nofurthermotion.
+p3: P4 13032 nearcelladoption seen; recipientnudgingONLYz90.34->90.60 now asrequested, samefullfloor8/60/90; headcollision91 preventsfullforwardentry. WillverifyactualC inventory; noothercut. Holdingnewposeafteroneboundednudge.
+p2: P2 ownSB smoke actualcopy noSkeletonnear (liveSkeletonstillthere), so no shield-combat qualification. Small SB directharvest found helper bug: berrycollision shapesempty means full-solid face() rejects exposedbush. Replaced with ordinary nativeactivateBloc
+p2: k after unobstructed reach check; testingONEsmall2bush+return inSB. Livebody sealed10.667/16 nofood.
+p3: 13039 actualnudge reachedHEADcollisionz90.700, grounded20/20. C0 STILL (noacceptedtest yet). OnlyitemnowoldC8.125/58/91.125; previouslyedgeitem8.98/61/91.638 nowgone, likelyrecollectednotP3 (noownershipclaim). Currentrecipient90.7 shouldoverlappickupradius
+p3: at91.638 with.36mmoremarg in. PleaseONEnewCobblefromadjacent9/60/91; myposefixedforpromptreceipt.
+--- p1 now: (5.5, 57, 0.5) in the_end, health 20/20, food 20/20, alive

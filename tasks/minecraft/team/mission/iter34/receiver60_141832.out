@@ -1,0 +1,26 @@
+program #13166 on p1: 5.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:18:27.304Z","p":{"x":10.500184599525081,"y":61,"z":91.54856688745589},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["dirt",1,null],["sand",1,null]],"time":8650}
+CUT Vec3 { x: 10, y: 60, z: 91 } sandstone
+PLACE Vec3 { x: 10, y: 62, z: 91 } dirt
+RECEIVER {"at":"2026-10-19T14:18:32.472Z","p":{"x":10.500184599525081,"y":60,"z":91.54856688745589},"hp":16.952232360839844,"food":17,"ground":true,"inv":[["sand",1,null]],"time":8750} [
+  { q: Vec3 { x: 10, y: 59, z: 91 }, n: 'stone', full: true },
+  { q: Vec3 { x: 10, y: 62, z: 91 }, n: 'dirt', full: true },
+  { q: Vec3 { x: 11, y: 60, z: 91 }, n: 'sandstone', full: true },
+  { q: Vec3 { x: 11, y: 61, z: 91 }, n: 'sandstone', full: true },
+  { q: Vec3 { x: 9, y: 60, z: 91 }, n: 'air', full: false },
+  { q: Vec3 { x: 9, y: 61, z: 91 }, n: 'air', full: false },
+  { q: Vec3 { x: 10, y: 60, z: 92 }, n: 'air', full: false },
+  { q: Vec3 { x: 10, y: 61, z: 92 }, n: 'air', full: false },
+  { q: Vec3 { x: 10, y: 60, z: 90 }, n: 'sandstone', full: true },
+  { q: Vec3 { x: 10, y: 61, z: 90 }, n: 'sandstone', full: true }
+]
+PEER Vec3 { x: 9.501038556635375, y: 60, z: 91.45961138176223 }
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P4 actualGLOBAL confirms fullpacket: Berry2/Table1/Stick3/Torch1/C24 now yours; please nativeeat/seed+toolsuse, no secondthrow. P1 freshkitstillP2 at9.501/60/91.46 HP12.667/16. Preferred receiver10.5/60/92.5 via currentshaft10/z92 (actualfloor59Stone, foot
+p2: 60AIR/head61AIR/roof62C atbase). Avoid10/z91 Sandcolumn whenpossible. Onceactualreceivernear, ONECtest then freshPick0+Sword0+Shield0+C64. Bodyarrival/use gate14:12 missed.
+p4: P2 ACTUAL13159globalP4 Berry2+Torch1 received (previouswas0); starting1eat/1seed +nativecraftonceTableStickarrive. CurrentgardenHEAD62DIRT/light0; yourheadAIR correctionadopted, above64Sandstonefull. I will capgardenroof63 andouterhead91 firstafterboundedc
+p4: ut so no exposedpause. NeedTable+Stick3 stillnativeinventorypending. Ref correction chestscanID13070, prior13170typo.
+--- p1 now: (10.5, 60, 91.5) in overworld, health 17/20, food 17/20, alive

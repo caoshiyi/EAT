@@ -1,0 +1,73 @@
+program #12965 on p1: 14.7 s
+--- output ---
+CUT Vec3 { x: 163, y: -25, z: 2233 } cobblestone
+CUT Vec3 { x: 163, y: -26, z: 2233 } cobblestone
+MOVE Vec3 { x: 163.50022780796562, y: -26, z: 2233.324935662948 } 20 20
+MOVE Vec3 { x: 163.5002603168999, y: -26, z: 2234.5 } 20 20
+MOVE Vec3 { x: 163.50023501137505, y: -26, z: 2235.324935662948 } 20 20
+MOVE Vec3 { x: 163.50026752030934, y: -26, z: 2236.5 } 20 20
+MOVE Vec3 { x: 163.5002422147845, y: -26, z: 2237.324935662948 } 20 20
+MOVE Vec3 { x: 163.50027472371877, y: -26, z: 2238.5 } 20 20
+MOVE Vec3 { x: 163.50024941819393, y: -26, z: 2239.324935662948 } 20 20
+MOVE Vec3 { x: 163.5002819271282, y: -26, z: 2240.5 } 20 20
+MOVE Vec3 { x: 163.50025662160337, y: -26, z: 2241.324935662948 } 20 20
+MOVE Vec3 { x: 162.68383345909933, y: -26, z: 2241.4811182497892 } 20 20
+MOVE Vec3 { x: 161.5, y: -26, z: 2241.4901299283647 } 20 20
+MOVE Vec3 { x: 160.6751089293999, y: -26, z: 2241.494209562569 } 20 20
+MOVE Vec3 { x: 159.5, y: -26, z: 2241.497064253741 } 20 20
+MOVE Vec3 { x: 158.67506806791084, y: -26, z: 2241.498321763438 } 20 20
+MOVE Vec3 { x: 157.5, y: -26, z: 2241.499123961664 } 20 20
+MOVE Vec3 { x: 156.6750639668154, y: -26, z: 2241.4993552195 } 20 20
+MOVE Vec3 { x: 155.5, y: -26, z: 2241.4996442917954 } 20 20
+MOVE Vec3 { x: 154.6750639668154, y: -26, z: 2241.4998755496317 } 20 20
+MOVE Vec3 { x: 153.5, y: -26, z: 2241.500164621927 } 20 20
+MOVE Vec3 { x: 152.6750639668154, y: -26, z: 2241.5003958797633 } 20 20
+MOVE Vec3 { x: 151.5, y: -26, z: 2241.500171825336 } 20 20
+CUT Vec3 { x: 150, y: -25, z: 2241 } basalt
+CUT Vec3 { x: 150, y: -26, z: 2241 } cobbled_deepslate
+MOVE Vec3 { x: 150.6750639668154, y: -26, z: 2241.5004030831724 } 20 20
+MOVE Vec3 { x: 149.5, y: -26, z: 2241.500179028745 } 20 20
+FAIL Error: floor missing (148, -26, 2241)
+PLACE Vec3 { x: 150, y: -25, z: 2241 } cobblestone
+PLACE Vec3 { x: 150, y: -26, z: 2241 } cobblestone
+PLACE Vec3 { x: 148, y: -25, z: 2241 } cobblestone
+SECURED [
+  {
+    q: Vec3 { x: 149, y: -27, z: 2241 },
+    n: 'stone_bricks',
+    full: true
+  },
+  { q: Vec3 { x: 149, y: -24, z: 2241 }, n: 'deepslate', full: true },
+  { q: Vec3 { x: 150, y: -26, z: 2241 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 150, y: -25, z: 2241 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 148, y: -26, z: 2241 }, n: 'basalt', full: true },
+  { q: Vec3 { x: 148, y: -25, z: 2241 }, n: 'cobblestone', full: true },
+  { q: Vec3 { x: 149, y: -26, z: 2242 }, n: 'deepslate', full: true },
+  { q: Vec3 { x: 149, y: -25, z: 2242 }, n: 'deepslate', full: true },
+  { q: Vec3 { x: 149, y: -26, z: 2240 }, n: 'deepslate', full: true },
+  { q: Vec3 { x: 149, y: -25, z: 2240 }, n: 'deepslate', full: true }
+]
+FINAL {"at":"2026-10-19T13:50:28.755Z","p":{"x":149.5,"y":-26,"z":2241.500179028745},"hp":20,"food":20,"ground":true,"inv":[["wooden_shovel",1,26],["coal",5,null],["stick",1,null],["stone_sword",1,0],["crafting_table",1,null],["flint_and_steel",1,1],["dirt",13,null],["sandstone",35,null],["basalt",64,null],["spruce_button",2,null],["wooden_pickaxe",1,2],["spruce_planks",3,null],["snowball",16,null],["blackstone",34,null],["netherrack",21,null],["moss_block",1,null],["stone_sword",1,0],["cobblestone_slab",6,null],["snowball",5,null],["raw_copper",8,null],["basalt",64,null],["spruce_sapling",3,null],["diorite",19,null],["stone_shovel",1,5],["wooden_pickaxe",1,31],["wooden_shovel",1,36],["basalt",15,null],["cobblestone",62,null],["cobblestone",45,null],["stone_pickaxe",1,6],["stone_pickaxe",1,1],["cobblestone",61,null],["cobblestone",63,null],["cobblestone",63,null],["cobblestone",63,null],["stone_pickaxe",1,122]],"time":23090}
+SHAFT -26 [ 'deepslate', 'air', 'air', 'air' ]
+SHAFT -27 [ 'stone_bricks', 'air', 'mossy_stone_bricks', 'cracked_stone_bricks' ]
+SHAFT -28 [ 'bookshelf', 'air', 'air', 'bookshelf' ]
+SHAFT -29 [ 'bookshelf', 'air', 'air', 'bookshelf' ]
+SHAFT -30 [ 'bookshelf', 'air', 'air', 'bookshelf' ]
+SHAFT -31 [ 'bookshelf', 'air', 'air', 'bookshelf' ]
+SHAFT -32 [ 'air', 'air', 'air', 'air' ]
+SHAFT -33 [ 'air', 'air', 'air', 'air' ]
+SHAFT -34 [ 'air', 'air', 'air', 'cobbled_deepslate' ]
+SHAFT -35 [ 'air', 'air', 'air', 'air' ]
+SHAFT -36 [ 'air', 'cobblestone_slab', 'air', 'air' ]
+SHAFT -37 [
+  'cracked_stone_bricks',
+  'stone_bricks',
+  'stone_bricks',
+  'mossy_stone_bricks'
+]
+SHAFT -38 [ 'deepslate', 'deepslate', 'deepslate', 'deepslate' ]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (149.5, -26, 2241.5) in overworld, health 20/20, food 20/20, alive

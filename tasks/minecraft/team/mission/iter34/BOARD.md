@@ -1,6 +1,8 @@
-# Mission34 live board —13:40 UTC
-Objective: defeat Dragon. Next world result: P1 current Nether bridge -> low-route shaft -> stronghold checkpoint -> End.
-P1 actual12854 Nether,12863 at0.50/67/20.05 full20/20; steel1 retained, recovered snowballs15/planks3/sticks4/woodpick en route. Relight12850 verified portal blocks. No encounter effect.
-P3 owns focused route discovery: current target shaft-56/53/64->y8, actual historical bypass incoming. Deadline13:47.
-P2 accepted actual berries/eat12855 (HP6.67->7.67), next P4 receipt/eat by14:00; berries1 retained at report. P4 complementary iron/shield for P1 by14:00, rawiron1 actual, ingots/equipment/transfer pending.
-Blockers: Nether continuous route and stronghold checkpoint unverified; no bow/arrows/armor. Opening eval LAST-SAVED0/11/206 save refused; saved six crystals/200hp.
+# Mission34 live board —14:15 UTC
+Objective: defeat Dragon. Next world result: P3 current End arrival -> inspect actual P1 corpse -> one crystal effect with immediate physical retreat. P1 secondary Home kit receipt -> stronghold checkpoint -> support.
+P3 PRIMARY readybody: actual13142 placed whiteBed142/-36/2232 SOUTH/head2233 and CURRENT Respawn point set14:14:21. Full20/20, actualfreshpick craftnext; P4donation->use and HOMEbed->checkpoint completed. Do not use stale bot.spawnPoint.
+P1 THREE deaths:14:01:05 Dragonmagic after failed open58ending,14:07:18Skeleton after uncenteredburrowfailed,14:12:46drowning afterwatercontrollerstoppedwhileprogressing. No P1shot ever. Current13148 active daylight drywalktowardHOME full20/20 EMPTY afterdryspawn57route reached9/66/-15; no P1giftreceipt. Lostcorpseat5.2/58/-28.8 End; expiryUNVERIFIED whileEndunoccupied.
+P2 courier stageddonor9.5/60/91.5, retained Shield/freshPicks/Table/Berry2; P4receiver8.5/61/90.7, initialP3packet complete but NEWBerry transfer notproved. P1gift14:08/14:12 missed. Stagedpacketuse remainsneeded.
+End notes: currentlow75->5 actualroute13024 fullhealth, newfilledpillar5/z0 up50->57, new6/z0..-26 feet57 tunnel. Last step6/58/-26 was OPEN58..64/noanchor southfeet becausefloor57southwasdug; P1died10.5s later, doNOTstationaryretry there. Corpseinspection fromlower57tunnel preferred, fresh actualescape before raising. Candidate ground95 snowball remainsUNEXECUTEDlive; any exposingtestmustinclude actual immediate retreat, not onlylog+retryclosure.
+Last eval remains dragon0/11; currentreadingEVAL_CHECKPOINT savefreshnessinfile. CurrentEnd6crystals/Boss1 lastlive13:56 census, no subsequenteffect.
+Next40min review14:17 selects operation; no approval gates on ordinary actions.
