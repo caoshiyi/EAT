@@ -1,0 +1,11 @@
+[sandbox] program #47 on p1: 0.3 s
+--- output ---
+BEGIN {"at":"2026-10-19T17:48:03.439Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":11811}
+STOP Error: source
+SEALFAIL Error: fund end_stone
+END {"state":{"at":"2026-10-19T17:48:03.692Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":11811},"faces":[{"q":{"x":143,"y":-37,"z":2231},"n":"stone_bricks","full":true},{"q":{"x":143,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":144,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":144,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-36,"z":2231},"n":"air","full":false},{"q":{"x":142,"y":-35,"z":2231},"n":"air","full":false},{"q":{"x":143,"y":-36,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2232},"n":"bookshelf","full":true},{"q":{"x":143,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":143,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p1 was slain by Ender Dragon
+--- p1 now: (143.5, -36, 2231.5) in overworld, health 20/20, food 20/20, alive
