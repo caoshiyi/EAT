@@ -1,0 +1,148 @@
+program #12552 on p2: 5.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:12:08.861Z","p":{"x":61.5,"y":66,"z":106.49999999999915},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",62,null],["dirt",11,null]],"faces":[{"q":{"x":61,"y":65,"z":106},"n":"stone","full":true},{"q":{"x":61,"y":68,"z":106},"n":"grass_block","full":true},{"q":{"x":62,"y":66,"z":106},"n":"dirt","full":true},{"q":{"x":62,"y":67,"z":106},"n":"dirt","full":true},{"q":{"x":60,"y":66,"z":106},"n":"dirt","full":true},{"q":{"x":60,"y":67,"z":106},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":107},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":107},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":105},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":105},"n":"dirt","full":true}],"peer":{"x":61.50002208891936,"y":65,"z":109.50055263566955}}
+DIG_POST {"q":{"x":61,"y":67,"z":107},"original":"dirt","post":"air"}
+CUT {"q":{"x":61,"y":67,"z":107},"n":"dirt","p":{"x":61.5,"y":66,"z":106.49999999999915}}
+DIG_POST {"q":{"x":61,"y":66,"z":107},"original":"dirt","post":"air"}
+CUT {"q":{"x":61,"y":66,"z":107},"n":"dirt","p":{"x":61.5,"y":66,"z":106.49999999999915}}
+WALK {"at":"2026-10-19T12:12:11.170Z","p":{"x":61.500000000000036,"y":66,"z":107.51301462080853},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",64,null],["dirt",11,null]]}
+JOIN_STEP {"at":"2026-10-19T12:12:11.170Z","p":{"x":61.500000000000036,"y":66,"z":107.51301462080853},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",64,null],["dirt",11,null]],"faces":[{"q":{"x":61,"y":65,"z":107},"n":"stone","full":true},{"q":{"x":61,"y":68,"z":107},"n":"grass_block","full":true},{"q":{"x":62,"y":66,"z":107},"n":"dirt","full":true},{"q":{"x":62,"y":67,"z":107},"n":"dirt","full":true},{"q":{"x":60,"y":66,"z":107},"n":"dirt","full":true},{"q":{"x":60,"y":67,"z":107},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":108},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":108},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":106},"n":"air","full":false},{"q":{"x":61,"y":67,"z":106},"n":"air","full":false}]}
+DIG_POST {"q":{"x":61,"y":67,"z":108},"original":"dirt","post":"air"}
+CUT {"q":{"x":61,"y":67,"z":108},"n":"dirt","p":{"x":61.500000000000036,"y":66,"z":107.5424312164306}}
+DIG_POST {"q":{"x":61,"y":66,"z":108},"original":"dirt","post":"air"}
+CUT {"q":{"x":61,"y":66,"z":108},"n":"dirt","p":{"x":61.500000000000036,"y":66,"z":107.5424312164306}}
+WALK {"at":"2026-10-19T12:12:13.325Z","p":{"x":61.500000000000036,"y":66,"z":108.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",64,null],["dirt",11,null]]}
+JOIN_STEP {"at":"2026-10-19T12:12:13.951Z","p":{"x":61.500000000000036,"y":66,"z":108.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",63,null],["dirt",11,null]],"faces":[{"q":{"x":61,"y":65,"z":108},"n":"stone","full":true},{"q":{"x":61,"y":68,"z":108},"n":"grass_block","full":true},{"q":{"x":62,"y":66,"z":108},"n":"dirt","full":true},{"q":{"x":62,"y":67,"z":108},"n":"grass_block","full":true},{"q":{"x":60,"y":66,"z":108},"n":"dirt","full":true},{"q":{"x":60,"y":67,"z":108},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":109},"n":"air","full":false},{"q":{"x":61,"y":67,"z":109},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":107},"n":"air","full":false},{"q":{"x":61,"y":67,"z":107},"n":"air","full":false}]}
+RECEIVER {"at":"2026-10-19T12:12:14.351Z","p":{"x":61.500000000000036,"y":66,"z":108.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",61,null],["dirt",11,null]],"faces":[{"q":{"x":61,"y":65,"z":108},"n":"stone","full":true},{"q":{"x":61,"y":68,"z":108},"n":"grass_block","full":true},{"q":{"x":62,"y":66,"z":108},"n":"dirt","full":true},{"q":{"x":62,"y":67,"z":108},"n":"grass_block","full":true},{"q":{"x":60,"y":66,"z":108},"n":"dirt","full":true},{"q":{"x":60,"y":67,"z":108},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":109},"n":"air","full":false},{"q":{"x":61,"y":67,"z":109},"n":"dirt","full":true},{"q":{"x":61,"y":66,"z":107},"n":"dirt","full":true},{"q":{"x":61,"y":67,"z":107},"n":"dirt","full":true}],"peer":{"x":61.50002208891936,"y":65,"z":109.50055263566955}}
+--- returned ---
+{
+ "at": "2026-10-19T12:12:14.351Z",
+ "p": {
+  "x": 61.500000000000036,
+  "y": 66,
+  "z": 108.5
+ },
+ "hp": 14.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   61,
+   null
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 61,
+    "y": 65,
+    "z": 108
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 68,
+    "z": 108
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 66,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 67,
+    "z": 108
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 66,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 67,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 66,
+    "z": 109
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 67,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 66,
+    "z": 107
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 67,
+    "z": 107
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ],
+ "peer": {
+  "x": 61.50002208891936,
+  "y": 65,
+  "z": 109.50055263566955
+ }
+}
+--- chat since this player's previous program ---
+p4: CORRECTION completed12539 domain guard stopped at61.5/65/109.46 FULL, not intended107; sameHP5.911food17/kit retained. Actual donor now109. Receiver adjacent north61/66/108 instead of106; please inspect actual108 geometry (one of planned65-domain roof/tran
+p4: sverse faces was notfull) before opening. No extra P4 movement now; next program measures local108 geometry and currentP2.
+p3: P3 path interface fix12545: samecandidate43/64/122 previously getPathTo partial; explicit generator19partials then finalSUCCESS26nodes. Body stayed sealed20/20. Adopting P2 public generator pattern now, not claiming noPath from partial. Next actual one-hop
+p3: +burial; kit remains retained12545.
+p4: Actual12547 grid:108 floor64STONE/feet65STONE/head66DIRT/roof67DIRT/68GRASS; ONLY shown domain gap is EAST neighbor62/66/108 AIR over62/65/108 GRASS. Your66-level receiver108 also needs actual easthead67 inspection/wall fill, fundedDirt73. I remain109close
+p4: d. Two final SOUTH soilcells107/108 atfeet66 can join donorhead66; I can toss as soon actualvisibleP2. No P4 advance through that flankAIR.
+--- p2 now: (61.5, 66, 108.5) in overworld, health 14.2/20, food 17/20, alive
+
+STDERR

@@ -1,0 +1,187 @@
+program #12683 on p2: 16.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:39:53.070Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",55,null],["dirt",11,null],["cobblestone",18,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]],"faces":[{"q":{"x":65,"y":60,"z":109},"n":"coal_ore","full":true},{"q":{"x":65,"y":63,"z":109},"n":"stone","full":true},{"q":{"x":66,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":66,"y":62,"z":109},"n":"stone","full":true},{"q":{"x":64,"y":61,"z":109},"n":"dirt","full":true},{"q":{"x":64,"y":62,"z":109},"n":"dirt","full":true},{"q":{"x":65,"y":61,"z":110},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":65,"y":61,"z":108},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":108},"n":"cobblestone","full":true}]}
+DIG_POST {"q":{"x":66,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":66,"y":62,"z":109},"n":"stone","p":{"x":65.5,"y":61,"z":109.49999999999943}}
+DIG_POST {"q":{"x":66,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":66,"y":61,"z":109},"n":"stone","p":{"x":65.5,"y":61,"z":109.49999999999943}}
+WALK {"at":"2026-10-19T12:39:56.137Z","p":{"x":66.51301462080939,"y":61,"z":109.49999999999926},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",55,null],["dirt",11,null],["cobblestone",20,null],["wooden_pickaxe",1,26],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_RETAINED {"at":"2026-10-19T12:39:56.337Z","p":{"x":66.54243121643145,"y":61,"z":109.49999999999926},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",54,null],["dirt",11,null],["cobblestone",20,null],["wooden_pickaxe",1,26],["spruce_log",1,null],["stone_sword",1,0]],"steps":1}
+DIG_POST {"q":{"x":67,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":67,"y":62,"z":109},"n":"stone","p":{"x":66.54243121643145,"y":61,"z":109.49999999999926}}
+DIG_POST {"q":{"x":67,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":67,"y":61,"z":109},"n":"stone","p":{"x":66.54243121643145,"y":61,"z":109.49999999999926}}
+WALK {"at":"2026-10-19T12:39:59.302Z","p":{"x":67.5,"y":61,"z":109.49999999999915},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",54,null],["dirt",11,null],["cobblestone",22,null],["wooden_pickaxe",1,28],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_RETAINED {"at":"2026-10-19T12:39:59.552Z","p":{"x":67.5,"y":61,"z":109.49999999999915},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",22,null],["wooden_pickaxe",1,28],["spruce_log",1,null],["stone_sword",1,0]],"steps":2}
+DIG_POST {"q":{"x":68,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":68,"y":62,"z":109},"n":"stone","p":{"x":67.5,"y":61,"z":109.49999999999915}}
+DIG_POST {"q":{"x":68,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":68,"y":61,"z":109},"n":"stone","p":{"x":67.5,"y":61,"z":109.49999999999915}}
+WALK {"at":"2026-10-19T12:40:02.681Z","p":{"x":68.51301462080939,"y":61,"z":109.49999999999898},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",24,null],["wooden_pickaxe",1,30],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_RETAINED {"at":"2026-10-19T12:40:02.681Z","p":{"x":68.51301462080939,"y":61,"z":109.49999999999898},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",24,null],["wooden_pickaxe",1,30],["spruce_log",1,null],["stone_sword",1,0]],"steps":3}
+DIG_POST {"q":{"x":69,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":69,"y":62,"z":109},"n":"stone","p":{"x":68.54243121643145,"y":61,"z":109.49999999999898}}
+DIG_POST {"q":{"x":69,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":69,"y":61,"z":109},"n":"stone","p":{"x":68.54243121643145,"y":61,"z":109.49999999999898}}
+WALK {"at":"2026-10-19T12:40:05.688Z","p":{"x":69.5,"y":61,"z":109.49999999999886},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",26,null],["wooden_pickaxe",1,32],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_RETAINED {"at":"2026-10-19T12:40:05.688Z","p":{"x":69.5,"y":61,"z":109.49999999999886},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",26,null],["wooden_pickaxe",1,32],["spruce_log",1,null],["stone_sword",1,0]],"steps":4}
+DIG_POST {"q":{"x":69,"y":62,"z":110},"original":"stone","post":"air"}
+CUT {"q":{"x":69,"y":62,"z":110},"n":"stone","p":{"x":69.5,"y":61,"z":109.49999999999886}}
+DIG_POST {"q":{"x":69,"y":61,"z":110},"original":"stone","post":"air"}
+CUT {"q":{"x":69,"y":61,"z":110},"n":"stone","p":{"x":69.5,"y":61,"z":109.49999999999886}}
+WALK {"at":"2026-10-19T12:40:08.794Z","p":{"x":69.50000000000004,"y":61,"z":110.51301462080825},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",28,null],["wooden_pickaxe",1,34],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_RETAINED {"at":"2026-10-19T12:40:08.794Z","p":{"x":69.50000000000004,"y":61,"z":110.51301462080825},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",53,null],["dirt",11,null],["cobblestone",28,null],["wooden_pickaxe",1,34],["spruce_log",1,null],["stone_sword",1,0]],"steps":5}
+TREE_COLUMN {"p":{"x":69.50000000000004,"y":61,"z":110.54243121643032},"rows":[[61,"air"],[62,"air"],[63,"stone"],[64,"stone"],[65,"stone"],[66,"stone"],[67,"dirt"],[68,"dirt"],[69,"dirt"],[70,"spruce_log"],[71,"spruce_log"],[72,"spruce_log"],[73,"spruce_log"],[74,"spruce_log"]],"near":[{"id":9561,"n":"zombie","p":{"x":62.11982894000559,"y":64,"z":109.30878907442093}},{"id":10540,"n":"skeleton","p":{"x":61.42338898577933,"y":65,"z":108.72304074199421}},{"id":10541,"n":"skeleton","p":{"x":65.37860694038923,"y":69,"z":112.32448818503453}},{"id":11850,"n":"spider","p":{"x":66.50814260115665,"y":70,"z":112.85574748373243}}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:40:09.248Z",
+ "p": {
+  "x": 69.50000000000004,
+  "y": 61,
+  "z": 110.54243121643032
+ },
+ "hp": 12.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   51,
+   null
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ],
+  [
+   "cobblestone",
+   28,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   34
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 69,
+    "y": 60,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 69,
+    "y": 63,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 70,
+    "y": 61,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 70,
+    "y": 62,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 68,
+    "y": 61,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 68,
+    "y": 62,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 69,
+    "y": 61,
+    "z": 111
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 69,
+    "y": 62,
+    "z": 111
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 69,
+    "y": 61,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 69,
+    "y": 62,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ],
+ "steps": 5
+}
+--- chat since this player's previous program ---
+p3: P3 distinct bounded flint-by-hand branch chosen: currentpod all4horizontalroutes openAIR flanks (12665), rejected unfunded tunneling. Lowercolumn12666/67 solid enclosed stone→DIRT58/57/56. FourHAND DOWN first (~45s), closedshaft retained to existingPlankro
+p3: of67; then actualDIRTfund permits protected low tunnel towardGRAVEL8/61/99. Acceptance FLINT1 actualretained+nextuse, not wholekitrebuild. Smallfirstdescent current20/20/empty.
+p4: P4 OWN SB2 PASS12:34:41: actualLog1 received, Log70leftFULL, cap67/fullending same5.911HP17food; nearZombie61.52/65/111.23 was behindsealedcorridor, NOTsurface-entry challenge. Qualifiedboundedharvestwithseparatedenemy, notgeneraladultproof. Transfer LIVE 
+p4: onlywithfresh ray-hit on UNCHANGEDfullwall (notremoved67/68/69) for everynearhostile. CurrentIron0: previousingotconsumedShieldnowP2; relightneedsNEWiron receipt, P1oldFlintlostat11:51 (no freshflintclaim). Protectedironbranch is next oncewoodfunds.
+p1: P3 actualflatbankproposal12660 ADOPTED12663: nativecut5/59/-3→WATER/Cobble1, thenforwardONLY stillnoexit20/20. ChangedtouchingSOUTHblocks12668 cut4/59,-2+4/60,-2actualAIR/Cobble2, stillsamepose/corrections. Thus neither testedbankgeometry norindependentgho
+p1: stcheck resolved. No moreunchangedmovementrepeats. Next smallestimplementationchange is ordinary CLIENT reconnect via nativequit then arena-run rejoin ifsupported, after preservingstate; NOserverreset/commands/newplayer. Current20HP20food/kit/Cobble5/Dirt4
+p1:  andnohostiles. Ifarena refuses, willreportexactly.
+p4: LIVE12672 rightlyREFUSED transfer: currentSURFACE Skeleton56.25/69/111.19, unlikeSB2 Zombie65behindwall; firstcurrentrayhit plannedremovedcap67. Need discriminating actualsurface case, notquietpass. SB1/2 complete/preserved/IDLE. Request P4ownRESET2 freshl
+p4: ivecopy thenoneLog test, P1/P2/P3 pleaseackstillidle/preserved; noresetuntilacks. This is one changed-domain test, notmoreblindliveattempts. P4live unchangedfullroot; nofood/woodreceipt.
+p3: P4 RESET2 ACK P3SBstillidle/preserved/noresetpending. P3 lowresourcebranchactual12670 fourHANDDOWN closedshaft20/20,12675 actualDIRT3 thencap leaves2/full20/20 at56;12679 TWOUP+cap restoredfullpod58/89, thenSandstone whitelist rejected BEFOREtunnelcut. Cor
+p3: rected knownstonekind; firstONEprotectedSOUTHstep now. No flint yet; bodyretained.
+--- p2 now: (69.5, 61, 110.5) in overworld, health 12.2/20, food 17/20, alive
+
+STDERR

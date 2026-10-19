@@ -1,0 +1,165 @@
+program #12658 on p2: 9.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:33:37.754Z","p":{"x":61.500000000000036,"y":61,"z":109.5},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",60,null],["dirt",11,null],["cobblestone",10,null],["wooden_pickaxe",1,16],["spruce_log",1,null],["stone_sword",1,0]],"faces":[{"q":{"x":61,"y":60,"z":109},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":109},"n":"dirt","full":true},{"q":{"x":62,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":109},"n":"stone","full":true},{"q":{"x":60,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":109},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":110},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":110},"n":"dirt","full":true},{"q":{"x":61,"y":61,"z":108},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":108},"n":"stone","full":true}],"p1Public":{"x":4.486900757644415,"y":59.47253635072178,"z":-2.3}}
+DIG_POST {"q":{"x":62,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":62,"y":62,"z":109},"n":"stone","p":{"x":61.500000000000036,"y":61,"z":109.5}}
+DIG_POST {"q":{"x":62,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":62,"y":61,"z":109},"n":"stone","p":{"x":61.500000000000036,"y":61,"z":109.5}}
+WALK {"at":"2026-10-19T12:33:40.859Z","p":{"x":62.51301462080939,"y":61,"z":109.49999999999983},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",60,null],["dirt",11,null],["cobblestone",12,null],["wooden_pickaxe",1,18],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_PROGRESS {"at":"2026-10-19T12:33:41.060Z","p":{"x":62.54243121643147,"y":61,"z":109.49999999999983},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",59,null],["dirt",11,null],["cobblestone",12,null],["wooden_pickaxe",1,18],["spruce_log",1,null],["stone_sword",1,0]],"steps":1,"targetDistance":11.602977809916995}
+DIG_POST {"q":{"x":63,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":63,"y":62,"z":109},"n":"stone","p":{"x":62.54243121643147,"y":61,"z":109.49999999999983}}
+DIG_POST {"q":{"x":63,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":63,"y":61,"z":109},"n":"stone","p":{"x":62.54243121643147,"y":61,"z":109.49999999999983}}
+WALK {"at":"2026-10-19T12:33:43.916Z","p":{"x":63.5,"y":61,"z":109.49999999999972},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",59,null],["dirt",11,null],["cobblestone",13,null],["wooden_pickaxe",1,20],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_PROGRESS {"at":"2026-10-19T12:33:43.916Z","p":{"x":63.5,"y":61,"z":109.49999999999972},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",59,null],["dirt",11,null],["cobblestone",13,null],["wooden_pickaxe",1,20],["spruce_log",1,null],["stone_sword",1,0]],"steps":2,"targetDistance":11.768602295940097}
+DIG_POST {"q":{"x":64,"y":62,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":64,"y":62,"z":109},"n":"stone","p":{"x":63.5,"y":61,"z":109.49999999999972}}
+DIG_POST {"q":{"x":64,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":64,"y":61,"z":109},"n":"stone","p":{"x":63.5,"y":61,"z":109.49999999999972}}
+WALK {"at":"2026-10-19T12:33:47.120Z","p":{"x":64.51301462080939,"y":61,"z":109.49999999999955},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",59,null],["dirt",11,null],["cobblestone",16,null],["wooden_pickaxe",1,22],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_PROGRESS {"at":"2026-10-19T12:33:47.120Z","p":{"x":64.51301462080939,"y":61,"z":109.49999999999955},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",59,null],["dirt",11,null],["cobblestone",16,null],["wooden_pickaxe",1,22],["spruce_log",1,null],["stone_sword",1,0]],"steps":3,"targetDistance":12.024611084190248}
+ENDING {"at":"2026-10-19T12:33:47.571Z","p":{"x":64.54243121643145,"y":61,"z":109.49999999999955},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",57,null],["dirt",11,null],["cobblestone",16,null],["wooden_pickaxe",1,22],["spruce_log",1,null],["stone_sword",1,0]],"faces":[{"q":{"x":64,"y":60,"z":109},"n":"coal_ore","full":true},{"q":{"x":64,"y":63,"z":109},"n":"stone","full":true},{"q":{"x":65,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":109},"n":"cobblestone","full":true},{"q":{"x":63,"y":61,"z":109},"n":"dirt","full":true},{"q":{"x":63,"y":62,"z":109},"n":"dirt","full":true},{"q":{"x":64,"y":61,"z":110},"n":"stone","full":true},{"q":{"x":64,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":64,"y":61,"z":108},"n":"stone","full":true},{"q":{"x":64,"y":62,"z":108},"n":"stone","full":true}],"steps":3,"net":3.0424312164314173}
+--- returned ---
+{
+ "at": "2026-10-19T12:33:47.571Z",
+ "p": {
+  "x": 64.54243121643145,
+  "y": 61,
+  "z": 109.49999999999955
+ },
+ "hp": 12.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   57,
+   null
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ],
+  [
+   "cobblestone",
+   16,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   22
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 64,
+    "y": 60,
+    "z": 109
+   },
+   "n": "coal_ore",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 63,
+    "z": 109
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 61,
+    "z": 109
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 62,
+    "z": 109
+   },
+   "n": "cobblestone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 63,
+    "y": 61,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 63,
+    "y": 62,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 61,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 62,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 61,
+    "z": 108
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 62,
+    "z": 108
+   },
+   "n": "stone",
+   "full": true
+  }
+ ],
+ "steps": 3
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (64.5, 61, 109.5) in overworld, health 12.2/20, food 17/20, alive
+
+STDERR

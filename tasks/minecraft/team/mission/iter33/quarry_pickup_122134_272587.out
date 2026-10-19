@@ -1,0 +1,156 @@
+program #12598 on p2: 4.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:21:29.770Z","p":{"x":61.5,"y":65,"z":108.49999999999989},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",58,null],["dirt",11,null],["cobblestone",2,null],["wooden_pickaxe",1,8],["wooden_shovel",1,58],["spruce_log",1,null],["stone_sword",1,0]]}
+DIG_POST {"q":{"x":60,"y":66,"z":108},"original":"dirt","post":"air"}
+CUT {"q":{"x":60,"y":66,"z":108},"n":"dirt","p":{"x":61.5,"y":65,"z":108.49999999999989}}
+DIG_POST {"q":{"x":60,"y":65,"z":108},"original":"dirt","post":"air"}
+CUT {"q":{"x":60,"y":65,"z":108},"n":"dirt","p":{"x":61.5,"y":65,"z":108.49999999999989}}
+WALK {"at":"2026-10-19T12:21:31.731Z","p":{"x":60.48698537919064,"y":65,"z":108.49999999999997},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",58,null],["dirt",11,null],["cobblestone",2,null],["wooden_pickaxe",1,8],["spruce_log",1,null],["stone_sword",1,0]]}
+WALK {"at":"2026-10-19T12:21:32.187Z","p":{"x":59.5,"y":65,"z":108.50000000000003},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",58,null],["dirt",11,null],["cobblestone",2,null],["wooden_pickaxe",1,8],["spruce_log",1,null],["stone_sword",1,0]]}
+ACTUAL_PICKUP {"at":"2026-10-19T12:21:33.196Z","p":{"x":59.5,"y":65,"z":108.50000000000003},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",58,null],["dirt",11,null],["cobblestone",2,null],["wooden_pickaxe",1,8],["spruce_log",1,null],["stone_sword",1,0]]}
+WALK {"at":"2026-10-19T12:21:33.849Z","p":{"x":61.5,"y":65,"z":108.49999999999977},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",58,null],["dirt",11,null],["cobblestone",2,null],["wooden_pickaxe",1,8],["spruce_log",1,null],["stone_sword",1,0]]}
+--- returned ---
+{
+ "at": "2026-10-19T12:21:34.251Z",
+ "p": {
+  "x": 61.5,
+  "y": 65,
+  "z": 108.49999999999977
+ },
+ "hp": 14.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   56,
+   null
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   8
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 61,
+    "y": 64,
+    "z": 108
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 67,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 65,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 62,
+    "y": 66,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 65,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 60,
+    "y": 66,
+    "z": 108
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 65,
+    "z": 109
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 66,
+    "z": 109
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 65,
+    "z": 107
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 61,
+    "y": 66,
+    "z": 107
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ],
+ "offhand": "shield"
+}
+--- chat since this player's previous program ---
+p1: P112579 prefixgoalplanner SUCCESS but actualtravel STALLED short at4.5/65/-2.5; strictburrow rejected shoreline northheadAIR. Followup12582 measured exactlyone missingface;12586 actual3soilDOWN + Dirtcap + northheadfill yielded full10/20HP20food samekit at
+p1: 4.484/62/-2.507. Initialsamecall ending FAILED, repaired followup; not calling wholehop pass. Surfacehop branch paused forchanged implementation. Current own kit enables protected rock travel; probing lower dry layer then covered route towardcurrentNetherp
+p1: ortal avoids repeated exposed approach. P3 foodactual now coversindependentfood branch.
+--- p2 now: (61.5, 65, 108.5) in overworld, health 14.2/20, food 17/20, alive
+
+STDERR

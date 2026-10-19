@@ -1,0 +1,158 @@
+program #12664 on p2: 3.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:35:22.008Z","p":{"x":64.54243121643145,"y":61,"z":109.49999999999955},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",57,null],["dirt",11,null],["cobblestone",16,null],["wooden_pickaxe",1,22],["spruce_log",1,null],["stone_sword",1,0]],"faces":[{"q":{"x":64,"y":60,"z":109},"n":"coal_ore","full":true},{"q":{"x":64,"y":63,"z":109},"n":"stone","full":true},{"q":{"x":65,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":109},"n":"cobblestone","full":true},{"q":{"x":63,"y":61,"z":109},"n":"dirt","full":true},{"q":{"x":63,"y":62,"z":109},"n":"dirt","full":true},{"q":{"x":64,"y":61,"z":110},"n":"stone","full":true},{"q":{"x":64,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":64,"y":61,"z":108},"n":"stone","full":true},{"q":{"x":64,"y":62,"z":108},"n":"stone","full":true}],"p1Public":{"x":4.486900757644415,"y":59.47253635072178,"z":-2.3}}
+DIG_POST {"q":{"x":65,"y":62,"z":109},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":65,"y":62,"z":109},"n":"cobblestone","p":{"x":64.54243121643145,"y":61,"z":109.49999999999955}}
+DIG_POST {"q":{"x":65,"y":61,"z":109},"original":"stone","post":"air"}
+CUT {"q":{"x":65,"y":61,"z":109},"n":"stone","p":{"x":64.54243121643145,"y":61,"z":109.49999999999955}}
+WALK {"at":"2026-10-19T12:35:25.277Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",57,null],["dirt",11,null],["cobblestone",17,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]]}
+TUNNEL_PROGRESS {"at":"2026-10-19T12:35:25.277Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",57,null],["dirt",11,null],["cobblestone",17,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]],"steps":1,"targetDistance":12.349089035229}
+FAIL Error: tunnel shell not admitted {"q":{"x":66,"y":61,"z":109}} {"at":"2026-10-19T12:35:25.277Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",57,null],["dirt",11,null],["cobblestone",17,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]]}
+ENDING {"at":"2026-10-19T12:35:25.686Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",55,null],["dirt",11,null],["cobblestone",18,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]],"faces":[{"q":{"x":65,"y":60,"z":109},"n":"coal_ore","full":true},{"q":{"x":65,"y":63,"z":109},"n":"stone","full":true},{"q":{"x":66,"y":61,"z":109},"n":"stone","full":true},{"q":{"x":66,"y":62,"z":109},"n":"stone","full":true},{"q":{"x":64,"y":61,"z":109},"n":"dirt","full":true},{"q":{"x":64,"y":62,"z":109},"n":"dirt","full":true},{"q":{"x":65,"y":61,"z":110},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":65,"y":61,"z":108},"n":"stone","full":true},{"q":{"x":65,"y":62,"z":108},"n":"cobblestone","full":true}],"steps":1,"net":0.9575687835685471}
+EXIT_SURVEY {"state":{"at":"2026-10-19T12:35:25.686Z","p":{"x":65.5,"y":61,"z":109.49999999999943},"hp":12.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",55,null],["dirt",11,null],["cobblestone",18,null],["wooden_pickaxe",1,24],["spruce_log",1,null],["stone_sword",1,0]]},"logs":[{"x":62,"y":72,"z":109},{"x":62,"y":73,"z":109},{"x":62,"y":74,"z":109},{"x":62,"y":75,"z":109},{"x":69,"y":70,"z":110},{"x":69,"y":71,"z":110},{"x":69,"y":72,"z":110},{"x":69,"y":73,"z":110},{"x":69,"y":74,"z":110},{"x":69,"y":75,"z":110},{"x":69,"y":70,"z":106},{"x":69,"y":71,"z":106},{"x":69,"y":72,"z":106},{"x":69,"y":73,"z":106},{"x":69,"y":74,"z":106},{"x":69,"y":75,"z":106},{"x":66,"y":69,"z":115},{"x":66,"y":70,"z":115},{"x":66,"y":71,"z":115},{"x":66,"y":72,"z":115}],"columns":[{"x":64,"z":109,"rows":[[65,"stone"],[66,"dirt"],[67,"dirt"],[68,"grass_block"],[69,"air"],[70,"air"],[71,"spruce_leaves"],[72,"spruce_leaves"],[73,"air"]]},{"x":65,"z":109,"rows":[[65,"stone"],[66,"stone"],[67,"dirt"],[68,"dirt"],[69,"grass_block"],[70,"air"],[71,"spruce_leaves"],[72,"air"],[73,"air"]]},{"x":66,"z":109,"rows":[[65,"stone"],[66,"stone"],[67,"dirt"],[68,"dirt"],[69,"grass_block"],[70,"air"],[71,"spruce_leaves"],[72,"air"],[73,"air"]]},{"x":65,"z":110,"rows":[[65,"stone"],[66,"stone"],[67,"dirt"],[68,"dirt"],[69,"grass_block"],[70,"air"],[71,"spruce_leaves"],[72,"air"],[73,"air"]]},{"x":65,"z":108,"rows":[[65,"stone"],[66,"stone"],[67,"dirt"],[68,"dirt"],[69,"grass_block"],[70,"air"],[71,"spruce_leaves"],[72,"air"],[73,"air"]]}],"near":[{"id":9089,"n":"skeleton","p":{"x":58.9214138557554,"y":69,"z":105.82504784951679}},{"id":9561,"n":"zombie","p":{"x":61.5049875014886,"y":65,"z":110.1957011592671}},{"id":9723,"n":"spider","p":{"x":48.30000001192093,"y":69.10000002384186,"z":115.30000001192093}},{"id":10078,"n":"spider","p":{"x":56.07815462143373,"y":69,"z":91.91761545105014}},{"id":10540,"n":"skeleton","p":{"x":73.2253036868562,"y":70,"z":112.83000021119642}},{"id":10541,"n":"skeleton","p":{"x":73.28208020087357,"y":70,"z":116.52819113702799}},{"id":10812,"n":"spider","p":{"x":53.30000001192093,"y":68.10000002384186,"z":119.69999998807907}},{"id":10997,"n":"creeper","p":{"x":49.1776475906507,"y":70,"z":102.76647324856292}}],"p1Blocks":[{"q":[4,58,-3],"n":"stone"},{"q":[4,59,-3],"n":"water"},{"q":[4,60,-3],"n":"water"},{"q":[4,61,-3],"n":"air"},{"q":[4,62,-3],"n":"grass_block"},{"q":[5,60,-3],"n":"air"},{"q":[5,61,-3],"n":"air"},{"q":[4,60,-2],"n":"stone"}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:35:25.769Z",
+ "p": {
+  "x": 65.5,
+  "y": 61,
+  "z": 109.49999999999943
+ },
+ "hp": 12.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   55,
+   null
+  ],
+  [
+   "dirt",
+   11,
+   null
+  ],
+  [
+   "cobblestone",
+   18,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   24
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 65,
+    "y": 60,
+    "z": 109
+   },
+   "n": "coal_ore",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 63,
+    "z": 109
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 66,
+    "y": 61,
+    "z": 109
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 66,
+    "y": 62,
+    "z": 109
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 61,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 64,
+    "y": 62,
+    "z": 109
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 61,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 62,
+    "z": 110
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 61,
+    "z": 108
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 65,
+    "y": 62,
+    "z": 108
+   },
+   "n": "cobblestone",
+   "full": true
+  }
+ ],
+ "steps": 1
+}
+--- chat since this player's previous program ---
+p3: P1 PUBLIC_BLOCKS12656 confirms stone4/58/-3, water4/59/-3 level8, water4/60/-3 level1, AIR4/61/-3, GRASS4/62/-3, AIR5/60/-3 &5/61/-3, STONE4/60/-2. Independentcache matches exceptyourDirt→Grass62 (growthpossible, notghostproof). Footbank5/59/-3 wasnotinreq
+p3: uestedgrid; ifstillSTONE, actualhorizontalexitneeds.527rise from59.472 to60. Distinct smalltestcandidate: inspect/cut ONLYfootbank5/59/-3 overfull58 to remove elevation requirement, not anotherjump repeat. Proposalunexecuted.
+p3: P1 followup12660 PUBLIC actual5/59/-3=STONE and5/58/-3=STONE;6/59/-3STONE;4/59/-2STONE. Thus inspectedfootbank remainsfull afteryourheadbankcut; sameY floor59 exit would require nativefootcut5/59/-3 (full58supports), thenboundedforward with no jump. No cau
+p3: salclaim untilyourexecutedresult.
+--- p2 now: (65.5, 61, 109.5) in overworld, health 12.2/20, food 17/20, alive
+
+STDERR
