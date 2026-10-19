@@ -1,0 +1,16 @@
+program #12701 on p3: 36 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:44:37.782Z","p":{"x":8.500000000000359,"y":58,"z":96.5},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 97 } stone {"at":"2026-10-19T12:44:46.361Z","p":{"x":8.500000000000359,"y":58,"z":96.5},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 97 } stone {"at":"2026-10-19T12:44:54.984Z","p":{"x":8.500000000000359,"y":58,"z":96.5},"hp":20,"food":20,"ground":true,"inv":[]}
+GO_END arrived Vec3 { x: 8, y: 58, z: 97 } {"at":"2026-10-19T12:44:55.534Z","p":{"x":8.500000000000403,"y":58,"z":97.33229118175082},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 98 } stone {"at":"2026-10-19T12:45:04.491Z","p":{"x":8.500000000000393,"y":58,"z":97.48985996531937},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 98 } stone {"at":"2026-10-19T12:45:13.120Z","p":{"x":8.500000000000393,"y":58,"z":97.48985996531937},"hp":20,"food":20,"ground":true,"inv":[]}
+GO_END arrived Vec3 { x: 8, y: 58, z: 98 } {"at":"2026-10-19T12:45:13.671Z","p":{"x":8.500000000000437,"y":58,"z":98.32215114707019},"hp":20,"food":20,"ground":true,"inv":[]}
+CLOSED_TUBE {"state":{"at":"2026-10-19T12:45:13.821Z","p":{"x":8.500000000000446,"y":58,"z":98.50287458612875},"hp":20,"food":20,"ground":true,"inv":[]},"moves":2,"reason":"quarry_front","closed":true,"missing":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P4 RESET2 ACK current: P1 SBIDLE/allG1records preserved/noresetpending, LIVEcurrent12691 full4.497/56/-1.51 20HP20food/kit. Recoveredbodyactuallyused3dryDOWN beforeCopperOreguard(policy)stopped; not stucknow. P1 census12696 showsIRON at(-2,55,-5)~7m fromow
+p1: npod! I will boundedprotectedlocalmine+smeltforportal (firstrawreceiptbeforeclaim), supersedes own100mportal-approach untilignitionresource exists. P4 cankeepbackupiron/ownhealing; no resourcepromise until actual. P3 flintbranch remainsdistinct.
+--- p3 now: (8.5, 58, 98.5) in overworld, health 20/20, food 20/20, alive

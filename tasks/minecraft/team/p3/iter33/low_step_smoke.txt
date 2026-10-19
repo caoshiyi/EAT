@@ -1,0 +1,27 @@
+program #12679 on p3: 4.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:39:00.826Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]]}
+CUT Vec3 { x: 8, y: 58, z: 89 } dirt {"at":"2026-10-19T12:39:02.641Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null]]}
+UP {"at":"2026-10-19T12:39:03.792Z","p":{"x":8.5,"y":57,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]]}
+UP {"at":"2026-10-19T12:39:04.900Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",1,null]]}
+PLACE Vec3 { x: 8, y: 60, z: 89 } dirt {"at":"2026-10-19T12:39:05.601Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+ADMISSION [
+  [ Vec3 { x: 8, y: 58, z: 90 }, 'stone', true ],
+  [ Vec3 { x: 8, y: 59, z: 90 }, 'sandstone', true ],
+  [ Vec3 { x: 8, y: 57, z: 90 }, 'stone', true ],
+  [ Vec3 { x: 8, y: 60, z: 90 }, 'sandstone', true ],
+  [ Vec3 { x: 8, y: 58, z: 91 }, 'stone', true ],
+  [ Vec3 { x: 8, y: 59, z: 91 }, 'stone', true ],
+  [ Vec3 { x: 9, y: 58, z: 90 }, 'stone', true ],
+  [ Vec3 { x: 9, y: 59, z: 90 }, 'stone', true ],
+  [ Vec3 { x: 7, y: 58, z: 90 }, 'stone', true ],
+  [ Vec3 { x: 7, y: 59, z: 90 }, 'sandstone', true ]
+]
+--- error ---
+Error: unqualified cut sandstone
+    at cut (p3-program-12679.js:7:256)
+    at p3-program-12679.js:21:506
+--- chat since this player's previous program ---
+p4: LIVE12672 rightlyREFUSED transfer: currentSURFACE Skeleton56.25/69/111.19, unlikeSB2 Zombie65behindwall; firstcurrentrayhit plannedremovedcap67. Need discriminating actualsurface case, notquietpass. SB1/2 complete/preserved/IDLE. Request P4ownRESET2 freshl
+p4: ivecopy thenoneLog test, P1/P2/P3 pleaseackstillidle/preserved; noresetuntilacks. This is one changed-domain test, notmoreblindliveattempts. P4live unchangedfullroot; nofood/woodreceipt.
+--- p3 now: (8.5, 58, 89.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,14 @@
+program #12670 on p3: 38.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:36:44.620Z","p":{"x":8.5,"y":65,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 64, z: 89 } cobblestone {"at":"2026-10-19T12:36:55.674Z","p":{"x":8.5,"y":64,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 63, z: 89 } diorite {"at":"2026-10-19T12:37:04.663Z","p":{"x":8.5,"y":63,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 62, z: 89 } diorite {"at":"2026-10-19T12:37:13.588Z","p":{"x":8.5,"y":62,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 61, z: 89 } diorite {"at":"2026-10-19T12:37:22.560Z","p":{"x":8.5,"y":61,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CLOSED_SHAFT {"ok":true,"bottom":61,"top":67,"state":{"at":"2026-10-19T12:37:22.910Z","p":{"x":8.5,"y":61,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 OWN SB2 PASS12:34:41: actualLog1 received, Log70leftFULL, cap67/fullending same5.911HP17food; nearZombie61.52/65/111.23 was behindsealedcorridor, NOTsurface-entry challenge. Qualifiedboundedharvestwithseparatedenemy, notgeneraladultproof. Transfer LIVE 
+p4: onlywithfresh ray-hit on UNCHANGEDfullwall (notremoved67/68/69) for everynearhostile. CurrentIron0: previousingotconsumedShieldnowP2; relightneedsNEWiron receipt, P1oldFlintlostat11:51 (no freshflintclaim). Protectedironbranch is next oncewoodfunds.
+--- p3 now: (8.5, 61, 89.5) in overworld, health 20/20, food 20/20, alive

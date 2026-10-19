@@ -1,0 +1,10 @@
+program #12732 on p3: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:55:48.676Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null],["dirt",1,null]]} { ok: true, cells: 2, inside: [] }
+DOMAIN_STOP [ [ Vec3 { x: 9, y: 56, z: 88 }, 'air' ] ]
+END {"at":"2026-10-19T12:55:48.678Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null],["dirt",1,null]]} { ok: true, cells: 2, inside: [] }
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 55, 89.5) in overworld, health 20/20, food 20/20, alive

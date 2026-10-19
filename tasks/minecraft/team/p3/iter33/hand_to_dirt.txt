@@ -1,0 +1,28 @@
+program #12675 on p3: 26.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:37:41.925Z","p":{"x":8.5,"y":61,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 60, z: 89 } diorite {"at":"2026-10-19T12:37:50.517Z","p":{"x":8.5,"y":60,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 89 } diorite {"at":"2026-10-19T12:37:59.510Z","p":{"x":8.5,"y":59,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 89 } dirt {"at":"2026-10-19T12:38:01.721Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",1,null]]}
+CUT Vec3 { x: 8, y: 57, z: 89 } dirt {"at":"2026-10-19T12:38:03.982Z","p":{"x":8.5,"y":57,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]]}
+CUT Vec3 { x: 8, y: 56, z: 89 } dirt {"at":"2026-10-19T12:38:06.167Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null]]}
+PLACE Vec3 { x: 8, y: 58, z: 89 } dirt {"at":"2026-10-19T12:38:07.225Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]]}
+ENDING {"at":"2026-10-19T12:38:07.226Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":8,"y":55,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":58,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":56,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":57,"z":89},"n":"dirt","full":true},{"q":{"x":7,"y":56,"z":89},"n":"stone","full":true},{"q":{"x":7,"y":57,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":88},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T12:38:07.526Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":8,"y":55,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":58,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":56,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":57,"z":89},"n":"dirt","full":true},{"q":{"x":7,"y":56,"z":89},"n":"stone","full":true},{"q":{"x":7,"y":57,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":88},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T12:38:07.828Z","p":{"x":8.5,"y":56,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":8,"y":55,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":58,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":56,"z":89},"n":"dirt","full":true},{"q":{"x":9,"y":57,"z":89},"n":"dirt","full":true},{"q":{"x":7,"y":56,"z":89},"n":"stone","full":true},{"q":{"x":7,"y":57,"z":89},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":90},"n":"stone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"stone","full":true},{"q":{"x":8,"y":57,"z":88},"n":"stone","full":true}]}
+GRAVEL_TARGET [
+  [ 56, 'stone' ],
+  [ 57, 'stone' ],
+  [ 58, 'gravel' ],
+  [ 59, 'gravel' ],
+  [ 60, 'gravel' ],
+  [ 61, 'gravel' ],
+  [ 62, 'dirt' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 actualflatbankproposal12660 ADOPTED12663: nativecut5/59/-3→WATER/Cobble1, thenforwardONLY stillnoexit20/20. ChangedtouchingSOUTHblocks12668 cut4/59,-2+4/60,-2actualAIR/Cobble2, stillsamepose/corrections. Thus neither testedbankgeometry norindependentgho
+p1: stcheck resolved. No moreunchangedmovementrepeats. Next smallestimplementationchange is ordinary CLIENT reconnect via nativequit then arena-run rejoin ifsupported, after preservingstate; NOserverreset/commands/newplayer. Current20HP20food/kit/Cobble5/Dirt4
+p1:  andnohostiles. Ifarena refuses, willreportexactly.
+--- p3 now: (8.5, 56, 89.5) in overworld, health 20/20, food 20/20, alive

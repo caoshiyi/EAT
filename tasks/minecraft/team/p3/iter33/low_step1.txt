@@ -1,0 +1,12 @@
+program #12682 on p3: 14.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:39:48.932Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 90 } sandstone {"at":"2026-10-19T12:39:54.025Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 90 } stone {"at":"2026-10-19T12:40:02.667Z","p":{"x":8.5,"y":58,"z":89.47908010501581},"hp":20,"food":20,"ground":true,"inv":[]}
+GO_END arrived Vec3 { x: 8, y: 58, z: 90 } {"at":"2026-10-19T12:40:03.221Z","p":{"x":8.500000000000083,"y":58,"z":90.31137128676663},"hp":20,"food":20,"ground":true,"inv":[]}
+CLOSED_TUBE {"state":{"at":"2026-10-19T12:40:03.374Z","p":{"x":8.500000000000092,"y":58,"z":90.4920947258252},"hp":20,"food":20,"ground":true,"inv":[]},"moves":1,"reason":"limit","closed":true,"missing":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 58, 90.5) in overworld, health 20/20, food 20/20, alive

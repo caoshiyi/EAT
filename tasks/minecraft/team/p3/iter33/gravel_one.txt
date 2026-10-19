@@ -1,0 +1,17 @@
+program #12704 on p3: 2.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:45:38.273Z","p":{"x":8.500000000000446,"y":58,"z":98.53229118175082},"hp":20,"food":20,"ground":true,"inv":[]}
+VIRTUAL_QUARRY { ok: true, cells: 24, inside: [] }
+COLUMN [
+  [ Vec3 { x: 8, y: 58, z: 99 }, 'gravel' ],
+  [ Vec3 { x: 8, y: 59, z: 99 }, 'gravel' ],
+  [ Vec3 { x: 8, y: 60, z: 99 }, 'gravel' ],
+  [ Vec3 { x: 8, y: 61, z: 99 }, 'gravel' ]
+]
+GRAVEL_EFFECT {"before":{"at":"2026-10-19T12:45:38.278Z","p":{"x":8.500000000000446,"y":58,"z":98.53229118175082},"hp":20,"food":20,"ground":true,"inv":[]},"after":{"at":"2026-10-19T12:45:40.337Z","p":{"x":8.500000000000446,"y":58,"z":98.53229118175082},"hp":20,"food":20,"ground":true,"inv":[["gravel",1,null]]},"post":"gravel","volume":{"ok":true,"cells":20,"inside":[]}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 chooses direct IRON1 dependency nowP2durablekit exists; cancelRESET2 BEFOREanyreset (P1ackpending, no copy2). Your actual2Planks + Table ifcarried/spare can unlockmyquietminingtools withoutmorewoodexposure. Request smallmaterialreturn via samelevel unde
+p4: rgroundjoin: I advance OWN8mE from57/63/109 to65/63/109 now; receiver65, donor66/63/109. P2 can choose downward/side route ifuseful; actualsource/stock first. P4needsonly2Planks, benchoptional (existingforgefallback). No surface.
+--- p3 now: (8.5, 58, 98.5) in overworld, health 20/20, food 20/20, alive

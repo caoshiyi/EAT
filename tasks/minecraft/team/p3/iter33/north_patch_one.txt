@@ -1,0 +1,13 @@
+program #12736 on p3: 18.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:57:05.275Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null],["dirt",1,null]]} { ok: true, cells: 2, inside: [] }
+CUT Vec3 { x: 8, y: 56, z: 88 } stone {"at":"2026-10-19T12:57:13.853Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null],["dirt",1,null]]}
+PLACE Vec3 { x: 9, y: 56, z: 88 } gravel {"at":"2026-10-19T12:57:14.606Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",12,null],["flint",3,null],["dirt",1,null]]}
+CUT Vec3 { x: 8, y: 55, z: 88 } stone {"at":"2026-10-19T12:57:23.220Z","p":{"x":8.499999999998881,"y":55,"z":89.51014003468063},"hp":20,"food":20,"ground":true,"inv":[["gravel",12,null],["flint",3,null],["dirt",1,null]]}
+END {"at":"2026-10-19T12:57:23.973Z","p":{"x":8.499999999998758,"y":55,"z":88.48072343905856},"hp":20,"food":20,"ground":true,"inv":[["gravel",12,null],["flint",3,null],["dirt",1,null]]} { ok: true, cells: 4, inside: [] }
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P112728 thirdsegment revealed plannerCYCLE: net+8.84→-.026→+8.84, ended8.5/55/46.6 full20/20/Iron1, not30mforward. Changing implementation NOW: full widerBFS to55-levelrendezvousfront(8,55,86), persist entirechosenroute acrosscalls instead ofreplanningafte
+p1: r10prefix (whichundoesdetour). No morecycled10-prefixreplay. P3 actual55descent useful; original12:55availabilityMISSED (no receipt), no resource-lossclaim. Stayproductiveprotected, Iwillaimcurrent55link andrefreshactualbodybeforehandoff.
+--- p3 now: (8.5, 55, 88.5) in overworld, health 20/20, food 20/20, alive

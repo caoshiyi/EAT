@@ -1,0 +1,32 @@
+program #12713 on p3: 29.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:48:15.391Z","p":{"x":8.500000000000446,"y":58,"z":98.53229118175082},"hp":20,"food":20,"ground":true,"inv":[["gravel",2,null],["flint",1,null]]} { ok: true, cells: 23, inside: [] }
+QUARRY_ADMISSION 99 { ok: true, cells: 24, inside: [] }
+GO_END arrived Vec3 { x: 8, y: 58, z: 99 } {"at":"2026-10-19T12:48:17.800Z","p":{"x":8.500000000000481,"y":58,"z":99.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3,null],["flint",1,null]]}
+COLUMN_END 99 {"at":"2026-10-19T12:48:18.553Z","p":{"x":8.500000000000481,"y":58,"z":99.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",3,null],["flint",1,null]]} { ok: true, cells: 24, inside: [] }
+QUARRY_ADMISSION 100 { ok: true, cells: 28, inside: [] }
+STOCK Vec3 { x: 8, y: 59, z: 100 } {"at":"2026-10-19T12:48:20.357Z","p":{"x":8.500000000000481,"y":58,"z":99.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",4,null],["flint",1,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 100 } {"at":"2026-10-19T12:48:22.163Z","p":{"x":8.500000000000481,"y":58,"z":99.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5,null],["flint",1,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 100 } {"at":"2026-10-19T12:48:23.969Z","p":{"x":8.500000000000481,"y":58,"z":99.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",5,null],["flint",2,null]]} post air
+GO_END arrived Vec3 { x: 8, y: 58, z: 100 } {"at":"2026-10-19T12:48:26.423Z","p":{"x":8.500000000000526,"y":58,"z":100.33229118175082},"hp":20,"food":20,"ground":true,"inv":[["gravel",6,null],["flint",2,null]]}
+COLUMN_END 100 {"at":"2026-10-19T12:48:27.326Z","p":{"x":8.500000000000535,"y":58,"z":100.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",6,null],["flint",2,null]]} { ok: true, cells: 28, inside: [] }
+QUARRY_ADMISSION 101 { ok: true, cells: 32, inside: [] }
+STOCK Vec3 { x: 8, y: 59, z: 101 } {"at":"2026-10-19T12:48:29.128Z","p":{"x":8.500000000000535,"y":58,"z":100.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",7,null],["flint",2,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 101 } {"at":"2026-10-19T12:48:30.980Z","p":{"x":8.500000000000535,"y":58,"z":100.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",8,null],["flint",2,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 101 } {"at":"2026-10-19T12:48:32.737Z","p":{"x":8.500000000000535,"y":58,"z":100.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",9,null],["flint",2,null]]} post air
+GO_END arrived Vec3 { x: 8, y: 58, z: 101 } {"at":"2026-10-19T12:48:35.191Z","p":{"x":8.50000000000057,"y":58,"z":101.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",10,null],["flint",2,null]]}
+COLUMN_END 101 {"at":"2026-10-19T12:48:35.943Z","p":{"x":8.50000000000057,"y":58,"z":101.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",10,null],["flint",2,null]]} { ok: true, cells: 32, inside: [] }
+QUARRY_ADMISSION 102 { ok: true, cells: 36, inside: [] }
+STOCK Vec3 { x: 8, y: 59, z: 102 } {"at":"2026-10-19T12:48:37.746Z","p":{"x":8.50000000000057,"y":58,"z":101.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",11,null],["flint",2,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 102 } {"at":"2026-10-19T12:48:39.553Z","p":{"x":8.50000000000057,"y":58,"z":101.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",12,null],["flint",2,null]]} post gravel
+STOCK Vec3 { x: 8, y: 59, z: 102 } {"at":"2026-10-19T12:48:41.357Z","p":{"x":8.50000000000057,"y":58,"z":101.5},"hp":20,"food":20,"ground":true,"inv":[["gravel",12,null],["flint",3,null]]} post air
+GO_END arrived Vec3 { x: 8, y: 58, z: 102 } {"at":"2026-10-19T12:48:43.863Z","p":{"x":8.500000000000615,"y":58,"z":102.33229118175082},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]}
+COLUMN_END 102 {"at":"2026-10-19T12:48:44.766Z","p":{"x":8.500000000000624,"y":58,"z":102.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]} { ok: true, cells: 36, inside: [] }
+QUARRY_ADMISSION 103 { ok: true, cells: 40, inside: [] }
+COLUMN_END 103 {"at":"2026-10-19T12:48:44.770Z","p":{"x":8.500000000000624,"y":58,"z":102.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]} { ok: true, cells: 36, inside: [] }
+END {"state":{"at":"2026-10-19T12:48:44.772Z","p":{"x":8.500000000000624,"y":58,"z":102.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]},"harvested":13,"volume":{"ok":true,"cells":36,"inside":[]}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 58, 102.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,15 @@
+program #12697 on p3: 35.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:43:18.595Z","p":{"x":8.50000000000027,"y":58,"z":94.5},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 95 } stone {"at":"2026-10-19T12:43:27.135Z","p":{"x":8.50000000000027,"y":58,"z":94.5},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 95 } stone {"at":"2026-10-19T12:43:35.754Z","p":{"x":8.50000000000027,"y":58,"z":94.5},"hp":20,"food":20,"ground":true,"inv":[]}
+GO_END arrived Vec3 { x: 8, y: 58, z: 95 } {"at":"2026-10-19T12:43:36.306Z","p":{"x":8.500000000000314,"y":58,"z":95.33229118175082},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 59, z: 96 } stone {"at":"2026-10-19T12:43:45.078Z","p":{"x":8.500000000000323,"y":58,"z":95.54243121643145},"hp":20,"food":20,"ground":true,"inv":[]}
+CUT Vec3 { x: 8, y: 58, z: 96 } stone {"at":"2026-10-19T12:43:53.700Z","p":{"x":8.500000000000323,"y":58,"z":95.54243121643145},"hp":20,"food":20,"ground":true,"inv":[]}
+GO_END arrived Vec3 { x: 8, y: 58, z: 96 } {"at":"2026-10-19T12:43:54.251Z","p":{"x":8.500000000000359,"y":58,"z":96.5},"hp":20,"food":20,"ground":true,"inv":[]}
+CLOSED_TUBE {"state":{"at":"2026-10-19T12:43:54.251Z","p":{"x":8.500000000000359,"y":58,"z":96.5},"hp":20,"food":20,"ground":true,"inv":[]},"moves":2,"reason":"budget","closed":true,"missing":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 58, 96.5) in overworld, health 20/20, food 20/20, alive

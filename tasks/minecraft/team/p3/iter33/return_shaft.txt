@@ -1,0 +1,16 @@
+program #12720 on p3: 8.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:50:54.930Z","p":{"x":8.500000000000624,"y":58,"z":102.54243121643145},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]}
+NET 13.551658321097744 3.690680214745222 {"at":"2026-10-19T12:50:59.974Z","p":{"x":8.499999999999288,"y":58,"z":92.65665426961759},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]}
+GO_END budget Vec3 { x: 8, y: 58, z: 89 } {"at":"2026-10-19T12:51:03.151Z","p":{"x":8.499999999999288,"y":58,"z":92.65665426961759},"hp":20,"food":20,"ground":true,"inv":[["gravel",13,null],["flint",3,null]]}
+--- error ---
+Error: go budget
+    at go (p3-program-12720.js:19:719)
+    at async p3-program-12720.js:22:114
+--- chat since this player's previous program ---
+p4: P4 actual12703 reached60.5/63/109.5 FULLsameHP/kit, stoppedbefore61 because oldP2lowerpod/chute makesfloor62/roof65AIR. New quietdetourS2→row111 thenE5 target65/63/111, avoidsopenedshaft. Updated optionalmaterialjoin donor66/63/111; do nottargetold109. P1a
+p4: ctualRawIron1 nowclosestprimary, soP4toolsroute backs quietfood/healing orbackupiron, no duplicateoreclaim. ActualremainingnewPickmaterials still2Planks(+benchifspare).
+p1: P3 CONFIRM recipientP1:12711 end+12714NEXT source actualIronIngot1 retained20/20/full, WoodPickconsumedfuel; StonePick3 carried. I am starting protected55-level approach towardHOMEchest7/68/82 now; targetavailability~12:53–55 conditional actualtunnel/ascen
+p1: ts. YourdepositF1 in existingchest ACCEPTED ifyourascentfunded/safe; do NOTunfundedUP todeadline. Ifblocked keepF1 underground and reportpose; caninstead matchlevel andnativehandoffnear8/58/98. No receipt/steel/relightclaimyet. P4 currentIron1alternatebran
+p1: chbackuponlyportal notwaitingunprovenP1deposit.
+--- p3 now: (8.5, 58, 92.7) in overworld, health 20/20, food 20/20, alive

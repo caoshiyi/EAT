@@ -106,3 +106,39 @@ Owner: p3 only; no agents. Started live 11:42 UTC. Read full program.md and requ
 -STRONGHOLD_DESCENT.md delivered12:32: fullraw7773/7798/7875 + P4ENTRYreview +bounded16/20/28search. Noqualifiedcurrentsurfacechainfound; concretecolumn142/2231 nexttobedfoot142/-36/2232 isUNEXECUTEDproposal, countS+36cuts; alternativehistoricalNetherexit163/-26/2230alreadyunderground.
 -12641 independentP3publicentitysampleP1id221 exact4.4869007576/59.4725363507/-2.3, velY-.025/onGroundtrue/height1.8. ReportedtoP1; doesnotisolateforced-move cause.
 -P4resetrequestack P3SBidle/preserved; P4subsequentlyCANCELLEDbefore reset. No ownSBreset/test afterSB3.
+
+## New resource branch / independent peer observations
+-12654 currentnearestgravel8/61/99 ~10.34m away, buriedstone/dirt route; noflintreceived, noquarryyet. NearestDIRT7/67/89 aboveadjacentdiiorite. Proposedmanualflintbranch complementsP4iron/P1blockedbody, notwholefoodrebuild.
+-12656 P1requested PUBLICblockgrid queried fromP3client: stone4/58/-3, WATER4/59/-3(level8), WATER4/60/-3(level1), AIR4/61/-3, GRASS4/62/-3, AIR5/60/-3, AIR5/61/-3, STONE4/60/-2. MatchesP1own grid exceptgrass/dirt, notghostblockproof.
+-12660 distinctdiscriminatorPUBLICfootbank5/59/-3 STILLSTONE over5/58/-3STONE, 6/59/-3STONE. P1footY59.4725 meansbankfloor60requires.527rise. ProposednativeFOOTcut toremoveelevation (notrepeatjump); ownerresultpending. NoP1controls/actionsdonehere.
+
+## Protected hand-resource branch admission
+-12665 allfour horizontalprotected-step preflights FAIL because transverse/forwardAIR; no handtunnel opened, capfund0. Not a global route impossibility.
+-12666/67 lowercolumn8/89 has Cobble64, Diorite63..59, Dirt58/57/56, Stone55; adjacentlowerwallsfull. Changed implementation to protectedverticalhanddescent with existingroof67 retained, obtainingactualDIRTbeforelowquarry.
+-12669 announcement; first4HANDDOWN running (65→61), noharvestexpectedforrock, allprospectivefloors+lowerlanding/fullside checked. Endingcondition is closed1x1shaft witholdroof67, notasserting2highfull10beforeactualnewcap.
+
+-P1 actualadoption12663 of ownfootbankproposal12660: stone5/59/-3 cut→WATER/Cobble1 butnativeforward stillnoexit. FurtherP1southtouchcuts12668 actualAIR/Cobble2 didnotresolve. Smallhypothesis FAILED mainacceptance; do notreplaybankcuts/jumps, no ghostblockclaim. P1 switchednativeCLIENTreconnect12674 afterpreservingbody/kit (noP3control).
+
+## Review60 / retained low route
+-P2 officialeval12:41 reports dragon0/milestones11/deaths206, forcedsaveFAILED/LAST-SAVED, matches7liveopeningdeaths (P3five/P1one/P2one). This is latestteamresult, notfreshforcedsave. No newEndeffect.
+-12670 actual4HANDfloorcuts65→61, same20HP20food/noitems, oldroof67+allsidewalls+floor give CLOSED_SHAFT=true.
+-12675 nextSOURCE retainedhealthyshaft; twoHANDdioritecuts +3dirtcuts reach56, actualDIRT3, cap58DIRT→retainedDIRT2, full10x3/20HP20food.
+-12679 actualTWOUP to58 andnewDIRTcap60, leaves0inventory/fullsource; firsttunnelhandcut rejectedSandstone whitelist beforemutation. FixedknownSandstone/Gravel support, no blocked-kindblindreplay.
+-12682 ONEprotectedstep SOUTH: actualSandstone59+Stone58 cuts, move89→90, CLOSED_TUBE=true20HP20food/noitems. Endpoint isphysicallyclosed2cellgroup, notclaimall10localfaces (sharedbackAIR).
+-12689 scaled2moresteps90→92 thenbudgetstop, CLOSED_TUBE=true20HP20food/noitems. RemainingtoGRAVELfront99=7m. Lowrouteavoidsalloutdoor/food/body-rebuild dependency; flintnotreceivedyet.
+-P1actual12680 removedremainingSOUTHupperblock4/61/-2 reachedbyfloatingbodytop61.27; nativewalkthenworked,12684 fullending20/20. Footbankproposal alone FAILED; ownerthird-head collision repair succeeded; noexclusiveP3fixclaim. Nativeclientquit/reconnect preservedkitbutdidNOTresolve.
+
+-Lowbranch retainedsequence:12694 two moreprotectedHANDcells92→94,12697 nexttwo94→96; bothunchanged20HP20food/CLOSED_TUBEtrue/noitems. Currentlast2cellsto98 launched, beforedistinctgravitygravelinterface ONEtest.
+-volume.js builtreadonlyBFSofactual/virtualAIR, rejectsnonfullpartials/fluids/unloaded/limit andactualinteriorhostiles; smallactualclosedroom+virtualquarry will besmokedbeforeharvestinggravityblock. It is not a server query or movementbypass.
+
+## Real flint, safe carriage, and failed timing gates
+-12704 ONE gravitygravelhandcut actualGravel1, postcellGRAVEL (replacementfell), volume20closed. Refilledsamekind is not failedbreak.
+-12708 bounded20-trialprogramstoppedafter7trials atactualFLINT1/Gravel2,20HP20food,closed23cells. This isnew live resourcegain.
+-12713 quarrycolumns99..102 actualFlint3/Gravel13,20HP20food,closed36cells. Position8.5/58/102.54. ExtraactualFlint2 notinferredfromchance.
+-P1actualRawIron12699 andIronIngot12711/12714recipientconfirmed; chest7/68/82 handoffaccepted conditionalfundedascent, target52/budget55. P3 banktarget12:52MISSED:12720 genericcanDiggo stalledinsideprotectedcorridor,12724 stricteroof60/91 checkfoundAIR, no blindlyapprovedcardinal. NewAIRaftergo notuniquelycausalisolated.
+-12726 actualvolume37closed (roofholewaslocally3high), nativecardinalreturn8/58/89.3 passed20/20/F3/G13. Changedtoalreadyofferedlowlevel55handoff.
+-12730 THREE actualDOWN to55, DIRT2received/cap57cost1, full10x3/20HP20food/F3/G13/Dirt1. Originalavailability12:55MISSED,nopeer/receipt/deposit/steel/relight. Noretroactivepass. P1continuedproductiveprotectedapproach; P3productiveprotectednorthlink.
+-12732 nextNORTHstepguardfailedoneAIRheadat9/56/88 withoutmutation.12736 changedfundedrepair: firstheadcut, actualGRAVELpatch9/56/88 overSTONE55, thenfootcut/nativecellmove. END8.5/55/88.51,F3/G12/Dirt1,20/20,closed4cells.
+-12738 freshHIGHroof pathfrom8/70/89 to8/70/82 SUCCESS7nodes via9/71/87..83; no newascent executed.12743 actualroofthreats10m[]; currenttime14644, notdayclaim. P1actualpublicpose5.499/55/70.567; matchedlevelnowcloserthanuncertainchestplan.
+-P3give_flint.js prepared; strict actualsamelevelpeer<3m/currentrayclear beforeONE native toss, thenreceiverownreceipt required. StillUNEXECUTED.
+-SharedclosingwindowconfirmedP2:13:21–13:31 UTC; stop/finishlongops by13:21, audits/eval/handoffs/commit then.
