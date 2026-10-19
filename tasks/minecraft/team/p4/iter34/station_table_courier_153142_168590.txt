@@ -1,0 +1,87 @@
+program #13402 on p4: 52.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:31:42.275Z","p":{"x":-16.500661934321784,"y":65,"z":48.5},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,2],["cobblestone",2,null]],"time":551,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: 1, y: 65, z: 4 } success
+ROUTE_WORLD {"at":"2026-10-19T15:32:06.030Z","p":{"x":1.5,"y":65,"z":4.516285602237713},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,2],["cobblestone",2,null]],"time":1031,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_nether"}
+STATION_TABLE_WORLD crafting_table
+CUT {"q":{"x":1,"y":66,"z":5},"n":"crafting_table","state":{"at":"2026-10-19T15:32:09.982Z","p":{"x":1.5,"y":65,"z":4.516285602237713},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,3],["cobblestone",2,null]],"time":1111,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PORTABLE_TABLE_ACTUAL {"at":"2026-10-19T15:32:10.733Z","p":{"x":1.5,"y":65,"z":4.516285602237713},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,3],["cobblestone",2,null],["crafting_table",1,null]],"time":1131,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: 0, y: 67, z: 57 } success
+ROUTE_WORLD {"at":"2026-10-19T15:32:27.878Z","p":{"x":0.5003687864653195,"y":67,"z":57.5},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,3],["cobblestone",2,null],["crafting_table",1,null]],"time":1471,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_nether"}
+PATH_STATUS Vec3 { x: -17, y: 65, z: 48 } success
+ROUTE_WORLD {"at":"2026-10-19T15:32:35.005Z","p":{"x":-16.500661934321784,"y":65,"z":48.5},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,3],["cobblestone",2,null],["crafting_table",1,null]],"time":1611,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_nether"}
+ACTUAL_END {"at":"2026-10-19T15:32:35.006Z","p":{"x":-16.500661934321784,"y":65,"z":48.5},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["stone_shovel",1,26],["wooden_pickaxe",1,6],["dirt",7,null],["snowball",16,null],["stone_pickaxe",1,3],["cobblestone",2,null],["crafting_table",1,null]],"time":1611,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-17,"y":64,"z":48},"n":"basalt","full":true},{"q":{"x":-17,"y":67,"z":48},"n":"basalt","full":true},{"q":{"x":-16,"y":65,"z":48},"n":"blackstone","full":true},{"q":{"x":-16,"y":66,"z":48},"n":"blackstone","full":true},{"q":{"x":-18,"y":65,"z":48},"n":"air","full":false},{"q":{"x":-18,"y":66,"z":48},"n":"air","full":false},{"q":{"x":-17,"y":65,"z":49},"n":"air","full":false},{"q":{"x":-17,"y":66,"z":49},"n":"air","full":false},{"q":{"x":-17,"y":65,"z":47},"n":"basalt","full":true},{"q":{"x":-17,"y":66,"z":47},"n":"basalt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T15:32:35.006Z",
+ "p": {
+  "x": -16.500661934321784,
+  "y": 65,
+  "z": 48.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   26
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "dirt",
+   7,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   3
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ],
+ "time": 1611,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p2: LIVE13400 completedusablefooddependency: retainedBone2 fromprotectedkill; crafted1Bone->3Meal, native1Meal onHome7/60/92 age1->2, harvestedactual+2berries. RetainedBerry10/Bone1/Meal2, HP15.2 unchanged. Arrow1 liesoutsidebaby-threatwindow; NOTdonated/notus
+p2: able, Bow0. Returningroletofood/bodypreservation; halfslabchildproofsource remainsunqualified nextdecision.
+--- p4 now: (-16.5, 65, 48.5) in the_nether, health 20/20, food 20/20, alive

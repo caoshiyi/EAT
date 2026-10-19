@@ -1,0 +1,121 @@
+program #13268 on p4: 1.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:43:37.134Z","p":{"x":10.499930477304536,"y":68,"z":83.50001320422658},"hp":11.911142349243164,"food":16,"ground":true,"inv":[["basalt",2,null],["stone_pickaxe",1,0],["coal",1,null],["gravel",6,null],["sandstone",14,null],["dirt",6,null],["spruce_sapling",1,null],["stone_sword",1,0],["stone_pickaxe",1,128],["sand",5,null],["diorite",1,null],["stone_pickaxe",1,106],["cobblestone",13,null],["furnace",1,null],["dirt",64,null],["andesite",1,null],["torch",1,null]],"time":14850,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PROJECTED_THREATS [{"n":"zombie","p":{"x":9.699999988079071,"y":56,"z":84.69984275550681},"dist":12.15776388464008,"rayBlock":{"x":9,"y":58,"z":84},"risk":false},{"n":"creeper","p":{"x":9.699999988079071,"y":56,"z":81.97335801369744},"dist":12.194352618776378,"rayBlock":{"x":9,"y":58,"z":82},"risk":false},{"n":"skeleton","p":{"x":7.300137956092995,"y":62,"z":101.69988593077126},"dist":19.564211224020884,"rayBlock":{"x":7,"y":64,"z":100},"risk":false},{"n":"creeper","p":{"x":9.300000011920929,"y":56,"z":82.58786388511805},"dist":12.189979173313576,"rayBlock":{"x":9,"y":58,"z":82},"risk":false},{"n":"creeper","p":{"x":12.182469734073523,"y":63,"z":87.74165950781581},"dist":6.624192371896281,"risk":false},{"n":"creeper","p":{"x":9.692431628704071,"y":56,"z":83.51543942587217},"dist":12.099388672148143,"rayBlock":{"x":9,"y":58,"z":83},"risk":false},{"n":"creeper","p":{"x":17.50493162870407,"y":58,"z":70.7000671764429},"dist":17.40941264373704,"rayBlock":{"x":17,"y":59,"z":71},"risk":false},{"n":"skeleton","p":{"x":9.300000011920929,"y":56,"z":81.30000001192093},"dist":12.353282960464181,"rayBlock":{"x":10,"y":62,"z":82},"risk":false},{"n":"skeleton","p":{"x":9.300000011920929,"y":56,"z":84.11360209390313},"dist":12.17128208051186,"rayBlock":{"x":9,"y":58,"z":84},"risk":false},{"n":"creeper","p":{"x":7.644091784954071,"y":62,"z":101.06313518238416},"dist":18.904874327160577,"rayBlock":{"x":8,"y":63,"z":99},"risk":false}]
+EDGE_POSE {"at":"2026-10-19T14:43:37.840Z","p":{"x":11.299274144628852,"y":68,"z":83.50042202784603},"hp":11.911142349243164,"food":16,"ground":true,"inv":[["basalt",2,null],["stone_pickaxe",1,0],["coal",1,null],["gravel",6,null],["sandstone",14,null],["dirt",6,null],["spruce_sapling",1,null],["stone_sword",1,0],["stone_pickaxe",1,128],["sand",5,null],["diorite",1,null],["stone_pickaxe",1,106],["cobblestone",13,null],["furnace",1,null],["dirt",64,null],["andesite",1,null],["torch",1,null]],"time":14870,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":true},"goalPresent":false}
+NATIVE_MOVE {"at":"2026-10-19T14:43:38.901Z","p":{"x":11.487752260848954,"y":68,"z":83.50028546467992},"hp":11.911142349243164,"food":16,"ground":true,"inv":[["basalt",2,null],["stone_pickaxe",1,0],["coal",1,null],["gravel",6,null],["sandstone",14,null],["dirt",6,null],["spruce_sapling",1,null],["stone_sword",1,0],["stone_pickaxe",1,128],["sand",5,null],["diorite",1,null],["stone_pickaxe",1,106],["cobblestone",12,null],["furnace",1,null],["dirt",64,null],["andesite",1,null],["torch",1,null]],"time":14890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CROUCH_BRIDGE_ONE_PASS {"ref":{"x":10,"y":67,"z":83},"target":{"x":11,"y":67,"z":83},"s":{"at":"2026-10-19T14:43:38.901Z","p":{"x":11.487752260848954,"y":68,"z":83.50028546467992},"hp":11.911142349243164,"food":16,"ground":true,"inv":[["basalt",2,null],["stone_pickaxe",1,0],["coal",1,null],["gravel",6,null],["sandstone",14,null],["dirt",6,null],["spruce_sapling",1,null],["stone_sword",1,0],["stone_pickaxe",1,128],["sand",5,null],["diorite",1,null],["stone_pickaxe",1,106],["cobblestone",12,null],["furnace",1,null],["dirt",64,null],["andesite",1,null],["torch",1,null]],"time":14890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+ACTUAL_OPEN_END {"at":"2026-10-19T14:43:38.901Z","p":{"x":11.487752260848954,"y":68,"z":83.50028546467992},"hp":11.911142349243164,"food":16,"ground":true,"inv":[["basalt",2,null],["stone_pickaxe",1,0],["coal",1,null],["gravel",6,null],["sandstone",14,null],["dirt",6,null],["spruce_sapling",1,null],["stone_sword",1,0],["stone_pickaxe",1,128],["sand",5,null],["diorite",1,null],["stone_pickaxe",1,106],["cobblestone",12,null],["furnace",1,null],["dirt",64,null],["andesite",1,null],["torch",1,null]],"time":14890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":67,"z":83},"n":"cobblestone","full":true},{"q":{"x":11,"y":70,"z":83},"n":"air","full":false},{"q":{"x":12,"y":68,"z":83},"n":"air","full":false},{"q":{"x":12,"y":69,"z":83},"n":"air","full":false},{"q":{"x":10,"y":68,"z":83},"n":"air","full":false},{"q":{"x":10,"y":69,"z":83},"n":"air","full":false},{"q":{"x":11,"y":68,"z":84},"n":"air","full":false},{"q":{"x":11,"y":69,"z":84},"n":"air","full":false},{"q":{"x":11,"y":68,"z":82},"n":"air","full":false},{"q":{"x":11,"y":69,"z":82},"n":"cobblestone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T14:43:38.901Z",
+ "p": {
+  "x": 11.487752260848954,
+  "y": 68,
+  "z": 83.50028546467992
+ },
+ "hp": 11.911142349243164,
+ "food": 16,
+ "ground": true,
+ "inv": [
+  [
+   "basalt",
+   2,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "coal",
+   1,
+   null
+  ],
+  [
+   "gravel",
+   6,
+   null
+  ],
+  [
+   "sandstone",
+   14,
+   null
+  ],
+  [
+   "dirt",
+   6,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   128
+  ],
+  [
+   "sand",
+   5,
+   null
+  ],
+  [
+   "diorite",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   106
+  ],
+  [
+   "cobblestone",
+   12,
+   null
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   64,
+   null
+  ],
+  [
+   "andesite",
+   1,
+   null
+  ],
+  [
+   "torch",
+   1,
+   null
+  ]
+ ],
+ "time": 14890,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (11.5, 68, 83.5) in overworld, health 11.9/20, food 16/20, alive

@@ -12,4 +12,4 @@ arena.append(str(a.file))
 r=subprocess.run(arena,text=True,capture_output=True)
 raw.write_text(r.stdout+r.stderr);ids=re.findall(r'program #(\d+) on p4',r.stdout)
 meta={'environment':'sandbox' if a.sandbox else 'live','started':start,'finished':datetime.datetime.now(datetime.timezone.utc).isoformat(),'file':str(a.file),'raw':str(raw),'cli_rc':r.returncode,'program_ids':ids,'world_success':'inspect raw and world; not inferred'}
-raw.with_suffix('.json').write_text(json.dumps(meta,indent=2)+'\n');print(json.dumps(meta));print('\n'.join(l[:700] for l in r.stdout.splitlines() if l.startswith(('FAILURE','RECOVERY_FAILURE','--- p4 now:'))));raise SystemExit(r.returncode)
+raw.with_suffix('.json').write_text(json.dumps(meta,indent=2)+'\n');print(json.dumps(meta));print('\n'.join(l[:700] for l in r.stdout.splitlines() if l.startswith(('FAILURE','RECOVERY_FAILURE','SEAL_FAILURE','DOWN_FAILURE','RETURN_FAILURE','--- p4 now:'))));raise SystemExit(r.returncode)

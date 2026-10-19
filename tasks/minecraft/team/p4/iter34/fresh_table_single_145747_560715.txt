@@ -1,0 +1,52 @@
+program #13324 on p4: 1.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:57:47.669Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",4,null],["spruce_log",3,null]],"time":7850,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+SINGLE_INVENTORY_CRAFT {"n":"spruce_planks","before":0,"after":4,"s":{"at":"2026-10-19T14:57:48.373Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",2,null],["spruce_planks",4,null],["dirt",4,null]],"time":7870,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false},"grid":[null,null,null,null,null]}
+SINGLE_INVENTORY_CRAFT {"n":"crafting_table","before":0,"after":1,"s":{"at":"2026-10-19T14:57:49.074Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",2,null],["crafting_table",1,null],["dirt",4,null]],"time":7890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false},"grid":[null,null,null,null,null]}
+ENDING {"at":"2026-10-19T14:57:49.074Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",2,null],["crafting_table",1,null],["dirt",4,null]],"time":7890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"stone","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T14:57:49.225Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",2,null],["crafting_table",1,null],["dirt",4,null]],"time":7890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"stone","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T14:57:49.405Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_log",2,null],["crafting_table",1,null],["dirt",4,null]],"time":7890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"stone","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T14:57:49.556Z",
+ "p": {
+  "x": 11.49999999999996,
+  "y": 72,
+  "z": -43.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_log",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   4,
+   null
+  ]
+ ],
+ "time": 7890,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p3: Read-only gap search13322 found clear nominal east80 arcs by shifting horizontal aim inside the real crystal box, e.g. Z+0.4 at71.63deg; center was hitting a bar. Four of seven small velocity perturbations still hit in the model (not actual reliability). I
+p3:  will spend ONE ball on that changed aim now, preserving two for West98/next test. Then I will craft/deliver your fresh Pick.
+--- p4 now: (11.5, 72, -43.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,69 @@
+program #13338 on p4: 7.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:02:59.546Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14090,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":12,"y":73,"z":-44},"n":"dirt","state":{"at":"2026-10-19T15:03:00.455Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14110,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":12,"y":72,"z":-44},"n":"dirt","state":{"at":"2026-10-19T15:03:01.370Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",5,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14130,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+FAILURE Error: quarry move
+PLACE {"q":{"x":12,"y":72,"z":-44},"name":"dirt","state":{"at":"2026-10-19T15:03:06.179Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",5,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14230,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":12,"y":73,"z":-44},"name":"dirt","state":{"at":"2026-10-19T15:03:06.579Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14230,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+ENDING {"at":"2026-10-19T15:03:06.579Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14230,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"crafting_table","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T15:03:06.729Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14250,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"crafting_table","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T15:03:06.878Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["stick",6,null],["spruce_planks",1,null],["dirt",4,null],["wooden_pickaxe",1,2],["cobblestone",1,null]],"time":14250,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"grass_block","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"crafting_table","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T15:03:07.029Z",
+ "p": {
+  "x": 11.49999999999996,
+  "y": 72,
+  "z": -43.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   6,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   4,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ]
+ ],
+ "time": 14250,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p3: Cage80 changed-aim shot13326 MISSED: Snow3->2, real flight reached84.44 nearcage then vanished; target still present, HP20/FULL10. No bar-impossibility claim. Reserving two balls for West98/next evidence. Crafting your new Pick now from actual Planks2->Sti
+p3: cks4 andC3 at my Table, preserving the escape floor. P4: a WoodenShovel already mines Snow; Table4Planks+Shovel1Plank+Sticks(2Planks) totals7Planks, so your3Logs need no stone bootstrap for ammo.
+p1: P1 actual13330 prefix0.5/55/-14.499, HP16.952food17 retained, Pick117=14uses. Old6/57/-15hole actualCcapplacedbeforecrossing; prefixfullyroofed57. P3freshPick0craftedseen3picks; please bringto8/55/-15 andIreturn7/55/-15 SAME-Yreceipt, avoidingyourhatcharea
+p1: . NewWestgoalvoxel-28/55/0 givesR14.04 vs-27gives15.03; checkingnominalreachbeforeminingwholebranch. Cage80MISSacceptedtwoSnowleft, no impossibilityclaim.
+p3: New Pick actually crafted13332: wear0 retained, old103+86 retained too. Craft missed15:00 by25s; delivery still pending. I will carry exact wear0 tool to donor(1,55,-15), receiver your current(0,55,-15). Please hold that cell briefly; same-Y low toss with3
+p3: tick look settle. Then I retreat east to avoid recollection. I keep two Snow reserved; no extra cage shot while delivering.
+--- p4 now: (11.5, 72, -43.5) in overworld, health 20/20, food 20/20, alive

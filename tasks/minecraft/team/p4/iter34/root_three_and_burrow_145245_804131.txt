@@ -1,0 +1,62 @@
+program #13314 on p4: 24.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:52:45.920Z","p":{"x":11.5,"y":74,"z":-42.518268793101285},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"time":1830,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":11,"y":76,"z":-43},"n":"spruce_leaves","state":{"at":"2026-10-19T14:52:46.374Z","p":{"x":11.5,"y":74,"z":-42.518268793101285},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"time":1830,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":76,"z":-44},"n":"spruce_leaves","state":{"at":"2026-10-19T14:52:46.924Z","p":{"x":11.5,"y":74,"z":-42.518268793101285},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"time":1850,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":75,"z":-44},"n":"grass_block","state":{"at":"2026-10-19T14:52:48.027Z","p":{"x":11.5,"y":74,"z":-42.518268793101285},"hp":20,"food":20,"ground":true,"inv":[["dirt",2,null]],"time":1870,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+ROOT_ADJACENT {"at":"2026-10-19T14:52:48.829Z","p":{"x":11.49999999999996,"y":75,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null]],"time":1890,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":11,"y":75,"z":-45},"n":"spruce_log","state":{"at":"2026-10-19T14:52:52.084Z","p":{"x":11.49999999999996,"y":75,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null]],"time":1950,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":76,"z":-45},"n":"spruce_log","state":{"at":"2026-10-19T14:52:55.290Z","p":{"x":11.49999999999996,"y":75,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null],["spruce_log",1,null]],"time":2010,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":77,"z":-45},"n":"spruce_log","state":{"at":"2026-10-19T14:52:58.497Z","p":{"x":11.49999999999996,"y":75,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null],["spruce_log",2,null]],"time":2070,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+THREE_LOG_RECEIPT {"at":"2026-10-19T14:52:59.252Z","p":{"x":11.49999999999996,"y":75,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",3,null],["spruce_log",3,null]],"time":2090,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":11,"y":74,"z":-44},"n":"dirt","state":{"at":"2026-10-19T14:53:00.207Z","p":{"x":11.49999999999996,"y":74.23152379758702,"z":-43.5},"hp":20,"food":20,"ground":false,"inv":[["dirt",3,null],["spruce_log",3,null]],"time":2110,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":73,"z":-44},"n":"dirt","state":{"at":"2026-10-19T14:53:01.565Z","p":{"x":11.49999999999996,"y":73.23152379758702,"z":-43.5},"hp":20,"food":20,"ground":false,"inv":[["dirt",4,null],["spruce_log",3,null]],"time":2130,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":11,"y":72,"z":-44},"n":"stone","state":{"at":"2026-10-19T14:53:09.705Z","p":{"x":11.49999999999996,"y":72.23152379758702,"z":-43.5},"hp":20,"food":20,"ground":false,"inv":[["dirt",5,null],["spruce_log",3,null]],"time":2310,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":11,"y":74,"z":-44},"name":"dirt","state":{"at":"2026-10-19T14:53:10.407Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",4,null],["spruce_log",3,null]],"time":2310,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+FRESH_PROTECTED_LOGS {"at":"2026-10-19T14:53:10.408Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",4,null],["spruce_log",3,null]],"time":2310,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+ENDING_FRESH {"at":"2026-10-19T14:53:10.408Z","p":{"x":11.49999999999996,"y":72,"z":-43.5},"hp":20,"food":20,"ground":true,"inv":[["dirt",4,null],["spruce_log",3,null]],"time":2310,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"burrowed":true,"faces":[{"q":{"x":11,"y":71,"z":-44},"n":"stone","full":true},{"q":{"x":11,"y":74,"z":-44},"n":"dirt","full":true},{"q":{"x":12,"y":72,"z":-44},"n":"stone","full":true},{"q":{"x":12,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":72,"z":-44},"n":"dirt","full":true},{"q":{"x":10,"y":73,"z":-44},"n":"dirt","full":true},{"q":{"x":11,"y":72,"z":-43},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-43},"n":"grass_block","full":true},{"q":{"x":11,"y":72,"z":-45},"n":"dirt","full":true},{"q":{"x":11,"y":73,"z":-45},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T14:53:10.408Z",
+ "p": {
+  "x": 11.49999999999996,
+  "y": 72,
+  "z": -43.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   4,
+   null
+  ],
+  [
+   "spruce_log",
+   3,
+   null
+  ]
+ ],
+ "time": 2310,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p1: Correction previouspacketID: bulk+retreat canonical13299, NOT13297 (thatwasP3receipt). Fresh14:51status P3Snow4, P1Snow0;13299 actualdistance11.2255m andP1HP16.952food17 unchanged. Actual4receiptPASS now; yourfirstordinaryshotmayproceed. P1safe55northcorri
+p1: dorstandby, I can builddistincteast80 nextfixture afteryourresult.
+p3: LIVE SUCCESS13307: ordinary Snow4->3 spawned14:51:31.111, north95 target11276 GONE14:51:34.250, Snowgone8mslater, SAMEEnd FIVEothercrystals retained. P3HP20food20/FULL10 hatch57Endstone restored. First55/jump-crouch method REAL objective effect; P1Snow cou
+p3: rier adopted through actual destruction. NoDragonkill. East80 can likely be shot from SAME fixture: R27.02/up71.63 nominal80.8, no new tunnel needed. Checking current arc before one next ball.
+p3: Independent13310 live audit confirms FIVE crystals, full20/20 and all controls false. EVAL_AFTER_95 fresh invocation still dragon0/11/deaths210, SAVE FAILED: saved informational crystal count remains6, so do not call it synchronized. Next one ball targets 
+p3: east80 from same tested55 chamber, elevation71.63; shape/ray checks will abort without spending if obstructed. P1 remain >10m away.
+p3: East80 attempt13312 spent NO ball: current shape trace caught old Cobble(7,58,-26) at tick1, above our roof beside the hatch. Snow remains3, HP20/FULL10. This is a specific physical blocker, not an unreachable arc. I will remove only that visible Cobble th
+p3: rough the hatch, recap, then trace again. P1 no separate east tunnel needed yet.
+--- p4 now: (11.5, 72, -43.5) in overworld, health 20/20, food 20/20, alive
