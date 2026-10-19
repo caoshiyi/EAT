@@ -21,3 +21,8 @@
 | Persistent P3 LIVE13908 |52stage50s healthy20, no<=3.2trigger/noattack; outputtruncated| No eligiblewindow inthat50s; aggregate loss is measurementfailure; no APInegative |
 | Isolated P1 G2 SB61 17:59–18:00 |65s52stage/nohatch/noattack; min3.597/root57.164; healthy11.5returned50| Range unavailable thiswindow; heightcoupling vs pathvariance unresolved |
 | Persistent P3 LIVE13911 18:02 |1.251sascent; predicted(-6.13,55.71,7.74) vsactual(-8.76,56.61,1.29); min3.995/noattack/healthy20ending| Lateralpredictionmiss despite lowroot; causalheightclaim weakened. Nexttestmeasuredlatencyforecast |
+| Isolated P1 SB62 |Intended53 bodybecame51 afterasyncdig; noattack| INVALIDheighttest; cannotinfercoupling/causeoffloordisappearance |
+| Persistent P3 LIVE13916 |Stable53/min5.489 atroot60.059/noattack/healthy20return; retained1srowsmin60.304| Controllerclosestcheck vsstoredrowsdifferentcadences; neitheraloneprovesheightcausality |
+| Persistent P3 LIVE13921 + independentP1 LIVE13923 |3NUP53 latency1.704s, min3.8417/root58.4117 thenreturn50/rootmin56.3253| Same-worldcorrelation andactualverticalgap; causalheighttrackingunknown |
+| Persistent P3 LIVE13929 |54prep/15swindow/min7.007/root62.53/noattack/healthyreturn| Leadretiresstandingheightchase, selectschangedtransienttest |
+| Isolated P1 G3 SB65 |Valid53/65s/min3.134/root56.921/healthy11.5return;closestpointblocked| Universalroot>=feet+5counterexample INTHIS COPY; closestblockedpointnotwholebodyocclusionproof |

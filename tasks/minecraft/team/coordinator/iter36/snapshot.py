@@ -9,16 +9,20 @@ if '--review' in sys.argv: commands['programs']=['programs','--last','12','--ful
 for label,args in commands.items():
     result=subprocess.run([sys.executable,'tools/mc_arena.py',*args],text=True,capture_output=True)
     output=result.stdout+result.stderr
-    (base/f'{stamp}_{label}.txt').write_text(output)
     if result.returncode: print(label,'FAILED',result.returncode,output[:1000]); continue
     if label=='chat':
         lines=[line for line in output.splitlines() if not (m:=re.match(r'#(\d+) ',line)) or int(m.group(1))>old['chat']]
+        if lines: (base/f'{stamp}_{label}.txt').write_text(output)
         print('\n'.join(lines) if lines else 'No new chat')
         ids=[int(x) for x in re.findall(r'^#(\d+) ',output,re.M)]
         if ids: old['chat']=max(old['chat'],*ids)
     elif label=='events':
-        if output!=old.get('events'): print('EVENTS',output[-2500:])
+        if output!=old.get('events'):
+            (base/f'{stamp}_{label}.txt').write_text(output)
+            print('EVENTS',output[-2500:])
         old['events']=output
-    else: print('Program evidence saved:',base/f'{stamp}_{label}.txt')
+    else:
+        (base/f'{stamp}_{label}.txt').write_text(output)
+        print('Program evidence saved:',base/f'{stamp}_{label}.txt')
 cursor.write_text(json.dumps(old))
 print('Captured',stamp,'UTC; chat cursor',old['chat'])
