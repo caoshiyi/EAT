@@ -31,3 +31,11 @@ IMPORTANT currentoverride04:56: G7SB255 THIRDcurrentSBdeath canonical04:54:02 dr
 Pre90eval captured before05:07:23 SAVEFAILED: last-saved0dragon/11milestones/182deaths/programs11730, infosix/200notfreshHP.257projectionstop+physicalrecenterlogsactuallyobserved; tenstoprowscross<=.02608, so largecross>=.30stopstillunexercised. Earlierlabelsearchmisscorrected.
 
 Pre90 refresh05:08: SB258 independently inspected21.104s, approachhazardabort21.610/58 at05:05:30.192 BEFOREpillar/Snow, actualreturn6pod6HP/three10FULL36.053/.303/.553/post37.304/172stone/wood54/Snow1. Low-fieldretentioncase, notpointblank255case. Completereviewcurrentbefore90; ownpre90evaltimeboundedbefore05:07:23 (approx05:06), notexact05:07.
+
+05:10 CURRENT SB259/G8: newnativeclimbfell→unpreparedlandingrefusal→new56refuge(30.4733,-30.5736)/5HP/Snow1/171stone/basalt20/NOwoodpick/post05:09:12.401. No freshfullENDING/noattack/targetpresent/six/newdeath. LIVEbase10HP/wood42unchanged. Latefailureafter05:08provisionalpreserved.
+
+IMPORTANT05:13: G9READY05:11:19(.6/15.4s);SB260 FOURTHcurrentSBdeath canonical05:12:42dragonmagic atbase58. Buildhazard59→returnflatunsettled58.575/6HP→fallbackdigabortHP0, noSnow/attack/sixremain. Pointblanklowbasecasefailedagain;257highroute/258lowfieldreturnsnotuniversalqualification. CurrentG9OWemptyrespawn; LIVEbase10HP/wood42/Snow1unchanged.
+
+05:18 currentSB G10READY05:15:42(.6/15.5s);261actualincoming-ball59abort→DIRECTgroundedWestexit/new6pod10HP/Snow1/192stone/wood46/fullthree05:16:37.804/38.054/.306/post39.059. Undamagedearlyincoming/groundedexitqualifiedonecase; no hurt-hop/pointblankalreadyinjuredbranch orcrystalshot. Noeffect; LIVEbaseunchanged.
+
+05:20 CURRENT SB262/G10: cloudaheadonWESTlane at05:18:02.043(dist7.063), actual10→6→2duringexit/continuousstall/fallbacknew57(7.56788,-22.41663)/2HP/post16.323/191stone/basalt20/wood51/Snow1/nofreshENDING. No shot/attack/effect/newdeath.261undamagedcloudbehindcase remainsnarrow; fullcandidatefailed05:19gate. LIVEbase10HP/wood42unchanged.

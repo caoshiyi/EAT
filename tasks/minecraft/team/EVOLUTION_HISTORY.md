@@ -3663,3 +3663,9 @@ Completed255outputs,actualboundaryarrays,damageeventJSONandcanonicaldeathevent i
 ## Iteration29 complete provisional refreshed before90 — 2026-10-19 05:08:04 UTC
 
 LAST-SAVED0dragon/11milestones/182deaths afterfailedsave; LIVE11701retainedbase10HP is actualnewaccess, noobjectiveeffect. ThreeSBdeaths244/252/255;255threeTENFULLat2HPdidnotretainlife, deathunloadnotcrystalremoval. G8SB257actualinjuredhigh-routeexit/full6pod and258actuallow-fieldreturn/full6HP are meaningfulcase-limitedrepairs. Projectionstop/physicalrecenteractuallyexercised, large-crossconditionalunexercised. NoSnowfired orcrystal/dragonattack; renewablesupportchainunqualified. Completeprovisionalalready04:20 andrefreshedbefore05:09:41; final105–110checksremain. Tokenusageunavailable.
+
+# Fourth sandbox death before any projectile — 2026-10-19 05:13:06 UTC
+
+G29-9 READY11046–47 at05:11:19(.6copy/15.4total/exactinstantunknown), copiedLIVEbase10HP/wood42/199stone/Snow1. SB260completed15.779s; buildhazardrefusal05:12:38.671 at59/10HP beforeSnow. Returnflatunsettled40.327 at58.575/6HP, refugeDigaborted42.170atHP0; canonicaldragonmagicdeath05:12:42 at(30.5,58,-24.5). FiredSnowfalse/targetpresentsix. Newprojectionclimbfullroute andpointblanklowbaseescape were notqualified; noeffect orblastsurvival.
+
+This is FOURTHcurrentSBdeath(244Enderman,252/255/260dragonmagic). No LIVEdeath; base11701stillretained10HP/wood42/Snow1. Thehigh-routechallengedreturn257andlow-field258remainlegitimateboundedimprovements, but didnotqualifythepointblankbase59→58case thatfailedagain. Newcontroller/toolproposals cannotreplaceactualcompletedretention. Canonicaleventsandfull260outputindependentlyread. Noexpiredworkbudgetresetorapprovaldependency.
