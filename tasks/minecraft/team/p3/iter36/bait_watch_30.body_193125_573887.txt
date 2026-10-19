@@ -1,0 +1,15 @@
+program #14067 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:31:25.715Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T19:31:25.715Z","elapsed":0,"dragon":{"p":{"x":31.241588325506825,"y":74.34521011248185,"z":-19.71711621180441},"hp":61.35459899902344,"phase":1},"p1":{"p":{"x":-2.2484919985504273,"y":50,"z":4.499999999998668},"hp":14,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"ownHP":20}
+CHANGE {"at":"2026-10-19T19:31:39.600Z","elapsed":13885,"dragon":{"p":{"x":-4.447132377618175,"y":57.32079604998185,"z":2.6918193350705906},"hp":59.10459899902344,"phase":1},"p1":{"p":{"x":-4.5027448571314235,"y":53,"z":4.499999999998668},"hp":14,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"ownHP":20}
+RESULT {"start":1792438285715,"ending":{"at":"2026-10-19T19:31:55.731Z","elapsed":30016,"ownHP":20,"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"p1":{"p":{"x":-4.5027448571314235,"y":53,"z":4.499999999998668},"hp":14,"ground":true},"dragon":{"p":{"x":-0.6032043420608488,"y":64.78504540663147,"z":6.957720639203593},"hp":59.10459899902344,"phase":1}},"changes":2,"samples":146,"groups":{"50":{"n":73,"minRootY":69.78881362810685},"51":{"n":6,"minRootY":69.18896011248185},"52":{"n":7,"minRootY":68.58886245623185},"53":{"n":508,"minRootY":57.31786636248185},"50.5":{"n":1,"minRootY":69.78881362810685},"51.5":{"n":4,"minRootY":69.18896011248185},"52.5":{"n":1,"minRootY":68.58886245623185}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 P1 CLEAR-RAYNARROWjump ONLYcurrentclear/dist<=3.8/h<=.65, keyUPafterfirsttick; own14HP; shieldoffhandordinarytoggleSMOKEPASS(clientusingflagonly). FirsthurtrequestsSHIELD+keyup+crouch andsameguardretreat, boundedmotioncapture; NOTclaimedblockimmunity. P
+p1: 1 continuesqualifiedcombat; actualsourcechecked,480sinternal/600sAPI reservesprep+retreat. Absolute19:43:45. Max2newlegalY57/58repaircolumns, normalattackenforcementunchanged. Hold50.
+p1: P3 P1 warm-capableadaptive480s batch(max2newcolumns) startsNOW: adjacent-4UP53 thenstandaboveYOURcap52 at-5/53. PreserveYOURroof52; directactual3mclearSword thenonejumpifneeded, max480s/absolute19:43:45/stopHPdrop orunrepairablerefusal/150snodamage, retrea
+p1: tEast/downowncolumn50. YOUhold50.
+p1: P1 batchSword1 HP61.35459899902344->59.10459899902344 own14 P320; finalendingpending.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

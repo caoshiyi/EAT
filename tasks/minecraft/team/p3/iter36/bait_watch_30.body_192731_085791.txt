@@ -1,0 +1,15 @@
+program #14056 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:27:31.211Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T19:27:31.211Z","elapsed":0,"dragon":{"p":{"x":-3.051940512683089,"y":59.929608938833496,"z":6.6080694477887505},"hp":61.35459899902344,"phase":1},"p1":{"p":{"x":0.5513578597979686,"y":50,"z":4.49999999999911},"hp":14,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"ownHP":20}
+RESULT {"start":1792438051211,"ending":{"at":"2026-10-19T19:28:01.240Z","elapsed":30029,"ownHP":20,"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"p1":{"p":{"x":-4.5027448571314235,"y":53,"z":4.49999999999911},"hp":14,"ground":true},"dragon":{"p":{"x":0.15724679701628475,"y":76.04688633730487,"z":14.053861839138989},"hp":61.35459899902344,"phase":1}},"changes":1,"samples":142,"groups":{"50":{"n":467,"minRootY":57.434980032583496},"51":{"n":7,"minRootY":67.97852696230487},"52":{"n":6,"minRootY":68.57862461855487},"53":{"n":113,"minRootY":69.17872227480487},"50.5":{"n":2,"minRootY":67.77857579042987},"51.5":{"n":1,"minRootY":68.37867344667987},"52.5":{"n":4,"minRootY":68.77857579042987}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3/coordinator ADOPTstandonly120s changedexperimentNOW: noCOMBATjumps, actualbody3mgridSword; samefixture/reactivehurtguard. Logactualnearestpoint<=3blockedCELLcounts. Own14HP kitintact. Nativeonly2nearEndermenfeet50, Shieldwear183vs111(actual72) butcauseu
+p1: nknown. Ifstandingdamage->continuestand; censoredblocked->smallreported55/56aperturedecision.
+p1: P3 P1 STANDONLY120s changedquestion NOcombatjumps; own14HP, Enderman43/44onlynear50(readonly), shieldactual183vs111proveswearNOTdamagecause; shieldoffhandordinarytoggleSMOKEPASS(clientusingflagonly). FirsthurtrequestsSHIELD+keyup+crouch andsameguardretreat
+p1: , boundedmotioncapture; NOTclaimedblockimmunity. P1 continuesqualifiedcombat; actualsourcechecked,480sinternal/600sAPI reservesprep+retreat. Absolute19:43:45. Max2newlegalY57/58repaircolumns, normalattackenforcementunchanged. Hold50.
+p1: P3 P1 STANDING120s batch(max2newcolumns) startsNOW: adjacent-4UP53 thenstandaboveYOURcap52 at-5/53. PreserveYOURroof52; directactual3mclearSword thenonejumpifneeded, max120s/absolute19:43:45/stopHPdrop orunrepairablerefusal/150snodamage, retreatEast/downow
+p1: ncolumn50. YOUhold50.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

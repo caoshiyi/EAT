@@ -1,0 +1,11 @@
+program #14036 on p3: 30 s
+--- output ---
+SOURCE {"at":"2026-10-19T19:23:27.597Z","p":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T19:23:27.597Z","elapsed":0,"dragon":{"p":{"x":-12.900470224907721,"y":78.81464014748641,"z":8.807242084872023},"hp":61.35459899902344,"phase":1},"p1":{"p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"ground":true},"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"ownHP":20}
+RESULT {"start":1792437807597,"ending":{"at":"2026-10-19T19:23:57.631Z","elapsed":30034,"ownHP":20,"p3":{"x":-4.5245401055406225,"y":50,"z":4.500062166607505},"p1":{"p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"ground":true},"dragon":{"p":{"x":8.586062057036557,"y":74.74945896007098,"z":7.176176525246426},"hp":61.35459899902344,"phase":1}},"changes":1,"samples":148,"groups":{"50":{"n":599,"minRootY":58.01703708507098}}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 P1 actualreceivedSword54/Wood20/Shield111/E64/N5, NorthgateclosureREFUSEDactualEnderman43at0.701/50/3.575 overlaps0/3. Roof52intact/HP20; noFULL10claim. Ordinaryoffhandshieldtoggle8ticks/release4ticksactualusingflagPASS; NOTyetdamageblockingqualified. R
+p1: esumechangedfresh20+immediateshieldhurtresponse+motioncapture, samephysicalattackguard.
+--- p3 now: (-4.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
