@@ -1,0 +1,13 @@
+[sandbox] program #138 on p4: 0.5 s
+--- output ---
+RECORDER_SMOKE {"before":{"at":"2026-10-19T00:09:56.051Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"dimension":"overworld","ground":true,"inv":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false},"after":{"at":"2026-10-19T00:09:56.556Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"dimension":"overworld","ground":true,"inv":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false},"listenerBefore":[["health",0],["death",3],["entitySpawn",0],["entityGone",0],["entityHurt",0],["physicsTick",2]],"listenerAfter":[["health",0],["death",3],["entitySpawn",0],["entityGone",0],["entityHurt",0],["physicsTick",2]],"trace":{"rows":[{"at":"2026-10-19T00:09:56.051Z","ms":0,"event":"start","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:09:56.051Z","ms":0,"event":"mark","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"label":"readOnlySmoke","entities":[]},{"at":"2026-10-19T00:09:56.203Z","ms":152,"event":"sample","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:09:56.455Z","ms":404,"event":"sample","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:09:56.556Z","ms":505,"event":"stop","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]}],"dropped":0,"requestedLimit":48,"effectiveLimit":48,"elapsedMs":505,"listenersRemoved":true}}
+--- returned ---
+{
+ "samePosition": true,
+ "sameHp": true,
+ "rows": 5,
+ "listenersRestored": true
+}
+--- chat since this player's previous program ---
+[server] p2 was killed by Ender Dragon using magic
+--- p4 now: (-8.5, 26, -37.5) in overworld, health 20/20, food 20/20, alive

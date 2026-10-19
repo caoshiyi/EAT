@@ -1,0 +1,42 @@
+{
+  "input": "tasks/minecraft/team/p4/iter27/recorder_smoke_v2.out",
+  "env": "sandbox",
+  "generation": "G27-2",
+  "player": "p4",
+  "recordId": 134,
+  "exactHeader": "[sandbox] program #134 on p4: 0.5 s",
+  "returnSectionPresent": true,
+  "parsedReturnState": {},
+  "returnParseError": null,
+  "lastStructuredLogMarker": "RECORDER_SMOKE",
+  "lastStructuredLogState": {
+    "at": "2026-10-19T00:05:40.820Z",
+    "p": {
+      "x": -8.5,
+      "y": 26,
+      "z": -37.53254047072508
+    },
+    "hp": 20,
+    "food": 20,
+    "dimension": "overworld",
+    "ground": true,
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    },
+    "goal": false,
+    "inv": []
+  },
+  "explicitOperationSignals": [],
+  "explicitOperationSignalCount": 0,
+  "boundaryLogRows": [],
+  "boundaryLogCount": 0,
+  "outputTruncated": false,
+  "missingFailureMarkersAreEvidenceOfSuccess": false,
+  "interpretation": "Exact printed signals and boundary logs only; a retained ending does not erase an earlier failed operation. No inferred gameplay ending."
+}

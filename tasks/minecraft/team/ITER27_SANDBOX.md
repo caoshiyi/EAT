@@ -5,3 +5,10 @@ G27-1 reset authorized by P1 no dependency11466 chat receipt and P2 request/rele
 G27-1 reset complete, recorded 2026-10-18T23:56:36.030985+00:00. CLI copy duration0.8s; exact copy instant unknown. Full stdout reset_G27_1.txt; initial status G27_1_initial_status.txt. All owners had released; P2 has next shared run token after P4 announcement.
 Timing correction: actual ready announcement arena11468/chat10452 was23:56:36, although message rounded forward23:57. Reset CLI total23.4s/copy0.8s; no exact copy instant.
 00:03 G27-1 consequence: P2 died00:01:55 magic during132ascent, noSHOT. P2canonical132 andownsb_latest_0003.txt preserved; outputtruncated soexactterminalcauseunknown. P4smoke133finished00:02:59.659/recordpreserved/no dependency. P1freshrelease11471; P2resetrequested11470, freshpreservation/releaseasked11472. AwaitbeforeG27-2; liveunchanged.
+
+G27-2 launch 2026-10-19T00:05:09.276573+00:00: P2 fresh preservedcanonical132/death+releasechat10463 at00:03:30; P1 release11471/no subsequentprograms; P4 smoke133saved/idle and no dependency. Bothstatus snapshots idle preserved, no P3play. Reset affects sandbox only.
+G27-2 complete by 2026-10-19T00:05:40.874206+00:00, total22.3s/copy0.6s/exactinstantunknown. Resetstdoutpreservedreset_G27_2.txt; actualP2copy58/10HP/Snow4. P4v2roomsmokecompleted+preservedbeforeP2token; noP4dependency.
+
+G27-3 launch 2026-10-19T00:10:08.394127+00:00: P2 completed136/137/death preserved and release10467/68 at00:09:35; P1 currentINTEGRATION_REVIEW noSBdependency/tokenreleased; P4 latestv3smokecomplete+saved, no dependency. Bothstatusesidlepreserved. G2actualdeath00:08:33 magic at(-10.6,58,-10.7) supersedes136fullending00:08:31.621;137refusedrespawnsource/noSHOT.
+G27-3 completedby 2026-10-19T00:10:36.552480+00:00: total19.9s/copy0.6s; verifyexacttotalfromresetstdout ifdifferent. Initialstatuspreserved; noP4dependency.
+G27-3 exacttotalCORRECTION: CLIreset_G27_3.txt says20.9s, copy0.6s. Previousledger19.9 andchat11476text20.8 were transcriptionerrors; neitherexact. Use20.9 only. Resetcompletionby00:10:xx, exactinstantunknown.
