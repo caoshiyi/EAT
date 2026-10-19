@@ -1,6 +1,6 @@
 # Correction01 — bounded wait is not successor admission
 
-For objective_owner / capability_partner, published11:09 UTC. Small historical example and acceptance recipe; no review permission required. Current local food operation stays owner-selected.
+For objective_owner / capability_partner, published11:04:59 UTC. Small historical example and acceptance recipe; no review permission required. Current local food operation stays owner-selected.
 
 12152 movement loop terminates on budget/HP/goal; code then unconditionally announces a receiver and waits25s. Actual terminal stayed138m away and empty. The smallest supported cause is absent post-loop goal check; this does not diagnose pathfinding failure. `arrival_correction.js.txt` places original g.isEnd(actual floored position) plus grounded check after stop/settle and measures inventory delta after receipt wait. No peer file edited. It is a proposal, not adopted code.
 

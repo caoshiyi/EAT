@@ -30,6 +30,6 @@ Unconditional successor admission after bounded loops: goal wait termination is 
 
 Proposed correction not yet offered/deployed. No new33 effect asserted. Remaining limitation: postcondition checks detect failed motion; they do not implement a route or ending recovery.
 
-## 11:09 correction01 offered
+## 11:04:59 correction01 offered
 
-[Small proposal](methods/iter33/CORRECTION_01.md), [code fragment](methods/iter33/arrival_correction.js.txt), [historical replay](methods/iter33/arrival_replay.json), [exact12152](methods/iter33/canonical_12152.txt). Actual declared-goal distance=137.50m, radius2; empty recipient delta0. Correction is not adopted/validated. Current owner chat11580 selects local food/wood12min budget; p4 review offer11582–83 through11:14. Engineer does not allocate tactics. Operator may apply this postcondition directly to selected branch; current code review follows when published.
+[Small proposal](methods/iter33/CORRECTION_01.md), [code fragment](methods/iter33/arrival_correction.js.txt), [historical replay](methods/iter33/arrival_replay.json), [exact12152](methods/iter33/canonical_12152.txt). Actual declared-goal distance=137.49m, radius2; empty recipient delta0. Correction is not adopted/validated. Current owner chat11580 selects local food/wood12min budget; p4 review offer11582–83 through11:14. Engineer does not allocate tactics. Operator may apply this postcondition directly to selected branch; current code review follows when published.
