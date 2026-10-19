@@ -1,0 +1,1023 @@
+== #11294 2026-10-18T22:46:07 p1 role=completion_a iter=26 0 s
+const V=bot.entity.position.constructor,eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0);return {at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,near:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<12).map(e=>({id:e.id,n:e.name,p:e.position,w:e.width,h:e.height,d:e.position.distanceTo(bot.entity.position),rayHeights:[.1,.8,1.5].map(h=>{const d=e.position.offset(0,h,0).minus(eye);return{h,hit:bot.world.raycast(eye,d.scaled(1/d.norm()),d.norm()-.01)?.position};})})),cells:[new V(9,59,82),new V(9,60,82),new V(9,61,82),new V(9,60,81),new V(9,61,81)].map(q=>({q,n:bot.blockAt(q)?.name}))};
+-- returned --
+{"at": "2026-10-18T22:46:07.110Z", "p": {"x": 9.5, "y": 58, "z": 81.46389814430522}, "hp": 17.333335876464844, "food": 17, "near": [{"id": 2583, "n": "zombie", "p": {"x": 12.486768742381448, "y": 60, "z": 85.29611410889763}, "w": 0.6, "h": 1.95, "d": 5.2542046705228165, "rayHeights": [{"h": 0.1, "hit": {"x": 9, "y": 59, "z": 82}}, {"h": 0.8, "hit": {"x": 9, "y": 59, "z": 82}}, {"h": 1.5, "hit": {"x": 9, "y": 59, "z": 82}}]}, {"id": 6320, "n": "creeper", "p": {"x": 7.186788028726608, "y": 60, "z": 82.46578391826404}, "w": 0.6, "h": 1.7, "d": 3.2178758099254847, "rayHeights": [{"h": 0.1, "hit": {"x": 8, "y": 59, "z": 81}}, {"h": 0.8, "hit": {"x": 8, "y": 59, "z": 81}}, {"h": 1.5, "hit": {"x": 9, "y": 60, "z": 81}}]}, {"id": 6321, "n": "creeper", "p": {"x": 11.78986359778339, "y": 60, "z": 79.46614567733249}, "w": 0.6, "h": 1.7, "d": 3.6379238881193086, "rayHeights": [{"h": 0.1, "hit": {"x": 10, "y": 59, "z": 81}}, {"h": 0.8, "hit": {"x": 10, "y": 59, "z": 81}}, {"h": 1.5, "hit": {"x": 9, "y": 60, "z": 81}}]}], "cells": [{"q": {"x": 9, "y": 59, "z": 82}, "n": "diorite"}, {"q": {"x": 9, "y": 60, "z": 82}, "n": "air"}, {"q": {"x": 9, "y": 61, "z": 82}, "n": "air"}, {"q": {"x": 9, "y": 60, "z": 81}, "n": "sandstone"}, {"q": {"x": 9, "y": 61, "z": 81}, "n": "sandstone"}]}
+== #11298 2026-10-18T22:46:56 p1 role=completion_a iter=26 0 s
+bot.chat("A actual11294 nowreveals movingCREEPERS at7.19,60,82.47 and11.79,60,79.47 plusZombie12.49,60,85.30; shallowcave roof60/61AIR is realbottleneck, not juststaticZombie. NoHPdamage sincewater; current9.5,58,81.46/full17.333. Materialchange DEEPER56 (fullroof58 undercavefloor), straightcovered9steps to8,56,89 then12fixedshaftraises usingqualified59..65 prefix. No shallowUP/far-native repeats. B lead acknowledged; firsteffect22:47 WILLMISS.")
+== #11299 2026-10-18T22:46:56 p1 role=completion_a iter=26 35.7 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,
+... (11448 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:46:56.929Z","p":{"x":9.5,"y":58,"z":81.46389814430522},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["cobblestone",64,null],["spruce_button",1,null],["stick",1,null],["sandstone",30,null],["stone_sword",1,0],["snowball",1,null],["cobblestone_slab",6,null],["cobblestone",25,null],["spruce_sapling",2,null],["stone_shovel",1,1],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,104],["diorite",19,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":9,"y":57,"z":81},"n":"stone","face":1,"hit":{"x":9.499999998242833,"y":58,"z":81.49688856042557},"pick":"stone_pickaxe","wear":104}
+CUT_POST {"p":{"x":9,"y":57,"z":81},"n":"air","before":153,"after":153,"witness":true}
+CUT_PRE {"p":{"x":9,"y":56,"z":81},"n":"stone","face":1,"hit":{"x":9.499999998242833,"y":57,"z":81.49688856042557},"pick":"stone_pickaxe","wear":105}
+CUT_POST {"p":{"x":9,"y":56,"z":81},"n":"air","before":154,"after":155,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":9,"y":56,"z":82},"n":"creeper","p":{"x":-0.5067824901863697,"y":51,"z":80.62052090417974},"rayCount":12,"blocked":12,"hits":["(8, 57, 81)","(9, 57, 82)"]}
+HOSTILE_BARRIERS {"target":{"x":9,"y":56,"z":82},"n":"zombie","p":{"x":9.798489442651002,"y":60,"z":82.5070134227761},"rayCount":12,"blocked":12,"hits":["(9, 58, 82)","(9, 
+... (33028 chars; --full)
+== #11303 2026-10-18T22:48:16 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE11299 DEEP56 approach PASS9flatsteps, actual8.679,56,89.470/17.333HP17food/THREE10FULL22:47:32.617. Cavecreepers bypassedbelowfullroof, nowatfixedshaftbase; no moreapproachsearch. Firsteffect22:47 MISSED (nocrystal/dragonaction). Remainingfocus actualqualifiedshaft->Bsharedtransit->EndSnowtrial, no newkitquota. Original90/105deadlines23:32/23:47 unchanged. P1 provisionalalreadycomplete/refreshedownedpaths.")
+== #11304 2026-10-18T22:48:16 p1 role=completion_a iter=26 13.3 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,
+... (15316 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:48:16.804Z","p":{"x":8.67919670720513,"y":56,"z":89.47009440289125},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["cobblestone",64,null],["spruce_button",1,null],["stick",1,null],["sandstone",30,null],["stone_sword",1,0],["snowball",1,null],["cobblestone_slab",6,null],["cobblestone",40,null],["spruce_sapling",2,null],["dirt",3,null],["stone_shovel",1,1],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,119],["diorite",19,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":8,"y":58,"z":89},"n":"stone","face":0,"hit":{"x":8.638340771104158,"y":58,"z":89.47689469298523},"pick":"stone_pickaxe","wear":119}
+CUT_POST {"p":{"x":8,"y":58,"z":89},"n":"air","before":168,"after":168,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":8,"y":56,"z":89},"n":"zombie","p":{"x":12.499890597720192,"y":60,"z":94.54383274426183},"rayCount":12,"blocked":12,"hits":["(9, 57, 89)","(9, 58, 89)","(8, 57, 90)","(8, 58, 90)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":56,"z":89},"n":"creeper","p":{"x":7.186355007550286,"y":60,"z":82.46567295743452},"rayCount":12,"blocked":12,"hits":["(8, 57, 88)","(8, 58, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":56,"z":89},"n":"creeper","p":{"x":11.789566282013391,"y":60,"z":79.46619112624235},"rayCount":12,"blocked":12,"hits":["(8, 57, 88)"
+... (19418 chars; --full)
+== #11307 2026-10-18T22:50:27 p1 role=completion_a iter=26 0 s
+bot.chat("A fixedshaft SB TOP3 PASS65->68, fullalllevels/HP13.333food16 unchanged terminal22:49:43.445. Complete59->68 nowpracticed; no nativegoal/roof-gap assumptions. LIVE11304 alreadyat59/17.333, adopting9qualifiedlevels now (serial3levelcallers/fullendingeach). ThenONEportal/intake SBtrialfrom68 beforeLIVEcrossing. Combatstill0; no claimgatespassed.")
+== #11308 2026-10-18T22:50:28 p1 role=completion_a iter=26 17.6 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,
+... (15316 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:50:28.215Z","p":{"x":8.67919670720513,"y":59,"z":89.47009440289125},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["cobblestone",64,null],["spruce_button",1,null],["stick",1,null],["sandstone",31,null],["stone_sword",1,0],["snowball",1,null],["cobblestone_slab",6,null],["cobblestone",42,null],["spruce_sapling",2,null],["stone_shovel",1,1],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,122],["diorite",19,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":8,"y":61,"z":89},"n":"sandstone","face":0,"hit":{"x":8.638340771104158,"y":61,"z":89.47689469298523},"pick":"stone_pickaxe","wear":122}
+CUT_POST {"p":{"x":8,"y":61,"z":89},"n":"air","before":31,"after":31,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":8,"y":59,"z":89},"n":"zombie","p":{"x":12.49947501415434,"y":60,"z":88.7513241060819},"rayCount":12,"blocked":12,"hits":["(9, 60, 89)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":59,"z":89},"n":"creeper","p":{"x":6.842891430879487,"y":60,"z":82.53573147559271},"rayCount":12,"blocked":12,"hits":["(8, 60, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":59,"z":89},"n":"creeper","p":{"x":11.789611885982191,"y":60,"z":79.46623034660367},"rayCount":12,"blocked":12,"hits":["(8, 60, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":60,"z":89},"n":"zombie","p":{"x
+... (22551 chars; --full)
+== #11311 2026-10-18T22:50:45 p1 role=completion_a iter=26 25 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,
+... (15316 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:50:45.954Z","p":{"x":8.67919670720513,"y":62,"z":89.47009440289125},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["cobblestone",64,null],["spruce_button",1,null],["stick",1,null],["sandstone",32,null],["stone_sword",1,0],["snowball",1,null],["cobblestone_slab",6,null],["cobblestone",42,null],["spruce_sapling",2,null],["stone_shovel",1,1],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,125],["diorite",12,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":8,"y":64,"z":89},"n":"sandstone","face":0,"hit":{"x":8.638340771104158,"y":64,"z":89.47689469298523},"pick":"stone_pickaxe","wear":125}
+CUT_POST {"p":{"x":8,"y":64,"z":89},"n":"air","before":32,"after":32,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":8,"y":62,"z":89},"n":"zombie","p":{"x":10.716966536876186,"y":60,"z":97.48443560508775},"rayCount":12,"blocked":12,"hits":["(8, 63, 90)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":62,"z":89},"n":"creeper","p":{"x":7.186153149629487,"y":60,"z":82.46566311621771},"rayCount":12,"blocked":12,"hits":["(8, 63, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":62,"z":89},"n":"creeper","p":{"x":11.78941820482205,"y":60,"z":79.46622126912209},"rayCount":12,"blocked":12,"hits":["(8, 63, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":63,"z":89},"n":"zombie","p":{"
+... (28999 chars; --full)
+== #11313 2026-10-18T22:51:11 p1 role=completion_a iter=26 19.6 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,
+... (15316 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:51:11.035Z","p":{"x":8.67919670720513,"y":65,"z":89.47009440289125},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",2,null],["cobblestone_slab",6,null],["spruce_sapling",2,null],["cobblestone",63,null],["stone_shovel",1,2],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,128],["cobblestone",41,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":8,"y":67,"z":89},"n":"moss_block","face":0,"hit":{"x":8.638340771104158,"y":67,"z":89.47689469298523},"pick":"stone_pickaxe","wear":128}
+CUT_POST {"p":{"x":8,"y":67,"z":89},"n":"air","before":0,"after":0,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":8,"y":65,"z":89},"n":"zombie","p":{"x":12.498460677501186,"y":60,"z":88.28301958946275},"rayCount":12,"blocked":12,"hits":["(9, 66, 89)","(9, 65, 89)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":65,"z":89},"n":"creeper","p":{"x":7.186144594848842,"y":60,"z":82.46553066841444},"rayCount":12,"blocked":12,"hits":["(8, 66, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":65,"z":89},"n":"creeper","p":{"x":11.78941820482205,"y":60,"z":79.46622126912209},"rayCount":12,"blocked":12,"hits":["(8, 66, 88)"]}
+HOSTILE_BARRIERS {"target":{"x":8,"y":66,"z":89},"n":"zombie","p":{"x":12.4
+... (23391 chars; --full)
+== #11316 2026-10-18T22:52:06 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE whole59->68 PASS11308/11311/11313, terminal22:51:30.586 at8.679,68,89.470/17.333HP17food/THREE10FULLeveryrise; actualSNOW2/SWORD/SHOVEL/SLAB6/COB159/TABLE/pickswear130+1. ShaftnowjoinsBopenedcorridor. P1ONEportalSBtrialactiveNOW G26-2; holdresetuntilcapture, thenrelease forfutureOWL/EndG3. No combatyet; allmissedA45mingatespreserved.")
+== #11320 2026-10-18T22:53:33 p1 role=completion_a iter=26 0 s
+bot.chat("A SB portal_from_shaft PASS actualNether13.333HP16food/THREE10FULLintake1.5,65,4.511 terminal22:52:22.924. LIVEcrossingnowfromqualified68shaft; no overlappingP1programs. Intakeroof SB stillSNOW_BLOCK vsLIVEP2alreadyDIRT distinctionack; codeonlyrequiresfull. Oneboundedupper-shared SBtrial aftercapture, thenP1releaseG2forOWLreset (canpreemptafterclosedcapture). P1remainingcombatdeadline23:47, alloldgatesfailed.")
+== #11321 2026-10-18T22:53:33 p1 role=completion_a iter=26 16.7 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;let EXPECTED_DIM="overworld";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,
+... (12886 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:53:33.596Z","p":{"x":8.67919670720513,"y":68,"z":89.47009440289125},"dim":"overworld","hp":17.333335876464844,"food":17,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",2,null],["cobblestone_slab",6,null],["spruce_sapling",2,null],["cobblestone",55,null],["stone_shovel",1,2],["granite",17,null],["wooden_pickaxe",1,3],["stone_pickaxe",1,130],["cobblestone",40,null],["stone_pickaxe",1,1],["cobblestone",64,null],["crafting_table",1,null]]}
+HOSTILE_BARRIERS {"target":{"x":7,"y":68,"z":89},"n":"zombie","p":{"x":12.50010096334797,"y":60,"z":94.2107802563566},"rayCount":12,"blocked":12,"hits":["(9, 68, 89)","(9, 69, 89)","(7, 69, 89)"]}
+HOSTILE_BARRIERS {"target":{"x":7,"y":68,"z":89},"n":"creeper","p":{"x":7.186043919490059,"y":60,"z":82.46552387232491},"rayCount":12,"blocked":12,"hits":["(8, 68, 88)","(8, 69, 88)","(7, 69, 89)"]}
+CUT_PRE {"p":{"x":7,"y":69,"z":89},"n":"cobblestone","face":5,"hit":{"x":8,"y":69.73038698018647,"z":89.48787975839517},"pick":"stone_pickaxe","wear":130}
+CUT_POST {"p":{"x":7,"y":69,"z":89},"n":"air","before":159,"after":159,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":7,"y":68,"z":89},"n":"zombie","p":{"x":12.50010096334797,"y":60,"z":94.2107802563566},"rayCount":12,"blocked":12,"hits":["(9, 68, 89)","(9, 69, 89)"
+... (12832 chars; --full)
+== #11328 2026-10-18T22:57:00 p1 role=completion_a iter=26 0 s
+bot.chat("P1 G26-2 RELEASE NOW: upper_shared SB complete54:57.814 Nether(-18.5,65,48.5)/13.333HP16food/THREE10FULL, outputs preserved. No activeP1program/SBdependency. LIVE frozenintake(1.5,65,4.511)/17.333HP17food/full from11321. P4 resetG3nowwithotherreleases; do notwaitextraAqualification. A adoptsown+BalreadyqualifiedupperLIVEafterREADY. Snowbranchskippedactualabsentsource (SBstill2ammo), no6ammo claim.")
+== #11331 2026-10-18T22:57:50 p1 role=completion_a iter=26 0 s
+bot.chat("CORRECTION Snowbranch report: exactupperSB output DOES showSNOW_RECEIPT_ACTUAL pre2 after2, terminal2; branch was executed, not skippedabsentsource. No extraammo production verified, causeunisolated (held-item timing/drop pickup unknown). P1G2release/frozenLIVEintake remainsvalid; G3priority. Ownadoptionwillnotclaim+4 unlessbagdelta, cancontinue2ammo ratherthanquota. Currentcombatproperty stilluntested.")
+== #11333 2026-10-18T22:58:34 p1 role=completion_a iter=26 0 s
+bot.chat("G3READY confirmed. A LIVE11321 actualintake17.333HP17food/full unchanged; adoptingSB107+Balreadyqualifiedupper route NOW. Snowactualshovelwait/reaim/grounddrop audit added afterSBpre2->post2 (notclaimedsourcegain); no bagdelta meanscontinue2ammo. Willrestorestation andretainwestlanding. NewG3P2OWLpractice independent, P1noSBdependency/currentreleasevalid.")
+== #11334 2026-10-18T22:58:34 p1 role=completion_a iter=26 39.1 s
+// Adapted permitted P2 iteration26 physically qualified upper-route public API.
+const initialHP=bot.health;
+const V=bot.entity.position.constructor;
+const v=(x,y,z)=>new V(x,y,z), sleep=n=>bot.waitForTicks(n);
+const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);
+const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(n=>[n,bot.getControlState(n)])),goal:bot.pathfinder.goal,window:bot.currentWindow?.type,cursor:bot.inventory.selectedItem?.name});
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+const audit=(q=bot.entity.position.floored())=>offsets.map(d=>({p:q.offset(...d),name:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));
+let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);
+const alive=()=>{if(dead||bot.health<=0)throw Error('life changed');};
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.99,.5,.5],[.01,.5,.5],[.5,.5,.99],[.5,.5,.01]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}
+... (10922 chars; --full)
+-- output --
+START {"at":"2026-10-18T22:58:34.996Z","p":{"x":1.5,"y":65,"z":4.511446558724036},"hp":17.333335876464844,"food":17,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",2],["cobblestone_slab",6],["spruce_sapling",2],["cobblestone",57],["stone_shovel",1],["granite",17],["wooden_pickaxe",1],["cobblestone",40],["stone_pickaxe",1],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+SNOW_GROUND_OBS []
+PUT Vec3 { x: 0, y: 66, z: 4 } cobblestone
+SNOW_RECEIPT_ACTUAL {"pre":2,"after":6,"state":{"at":"2026-10-18T22:58:36.601Z","p":{"x":1.5,"y":65,"z":4.511446558724036},"hp":17.333335876464844,"food":17,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["spruce_sapling",2],["cobblestone",56],["stone_shovel",1],["granite",17],["wooden_pickaxe",1],["cobblestone",40],["stone_pickaxe",1],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}}
+ENDING {"state":{"at":"2026-10-18T22:58:36.602Z","p":{"x":1.5,"y":65,"z":4.511446558724036},"hp":17.333335876464844,"food":17,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sw
+... (20138 chars; --full)
+== #11337 2026-10-18T22:59:42 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE11334 upper route PASS22:59:14.128 (-18.5,65,48.5)/17.333HP16food/THREE10FULL; stationrestored, actualSNOW2->6 fromWESThead aftershovelwait/groundaudit (SB2->2 failure retained). NowadoptingBactualliteralstairs ONLYto-43,56,54 beforeold-44excavatedlanding; thenown3down/corridor. No oldemptyshaftreplay. P3/P4actualpropertysupportreceived; needfreshnewdescentcolumnscan later.")
+== #11338 2026-10-18T22:59:42 p1 role=completion_a iter=26 24.7 s
+const initialHP=bot.health;
+const V=bot.entity.position.constructor;
+const v=(x,y,z)=>new V(x,y,z), sleep=n=>bot.waitForTicks(n);
+const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);
+const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(n=>[n,bot.getControlState(n)])),goal:bot.pathfinder.goal,window:bot.currentWindow?.type,cursor:bot.inventory.selectedItem?.name});
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+const audit=(q=bot.entity.position.floored())=>offsets.map(d=>({p:q.offset(...d),name:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));
+let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);
+const alive=()=>{if(dead||bot.health<=0)throw Error('life changed');};
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.99,.5,.5],[.01,.5,.5],[.5,.5,.99],[.5,.5,.01]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('not visible '+q);}
+async function cut(q,allowed=null){alive();const 
+... (11908 chars; --full)
+-- output --
+CUT Vec3 { x: -20, y: 66, z: 48 } cobblestone {"at":"2026-10-18T22:59:43.531Z","p":{"x":-18.5,"y":65,"z":48.4999999530219},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["spruce_sapling",2],["cobblestone",54],["stone_shovel",1],["granite",17],["wooden_pickaxe",1],["cobblestone",40],["stone_pickaxe",1],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: -20, y: 65, z: 48 } dirt {"at":"2026-10-18T22:59:44.536Z","p":{"x":-18.5,"y":65,"z":48.4999999530219},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["spruce_sapling",2],["cobblestone",55],["stone_shovel",1],["granite",17],["wooden_pickaxe",1],["cobblestone",40],["stone_pickaxe",1],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CARDINAL_ACTUAL {"q":{"x":-20,"y":65,"z":48},"state":{"at":"2026-10-18T22:59:45.339Z","p":{"x":-19.574857144896715,"y":65,"z":48.49999992692295},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["s
+... (18663 chars; --full)
+-- returned --
+{"at": "2026-10-18T23:00:07.284Z", "p": {"x": -31.50706948199646, "y": 59, "z": 46.49998858247677}, "hp": 17.333335876464844, "food": 16, "dim": "the_nether", "ground": true, "inv": [["moss_block", 1], ["spruce_button", 1], ["stick", 1], ["sandstone", 33], ["stone_sword", 1], ["snowball", 6], ["cobblestone_slab", 6], ["basalt", 3], ["spruce_sapling", 2], ["cobblestone", 53], ["stone_shovel", 1], ["granite", 17], ["wooden_pickaxe", 1], ["cobblestone", 40], ["stone_pickaxe", 1], ["cobblestone", 64], ["crafting_table", 1]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "goal": null}
+== #11341 2026-10-18T23:02:40 p1 role=completion_a iter=26 0 s
+bot.chat("A literal11338 PARTIALFAIL: manualUP at-32,62,46 repeatedlyjumped/unsettled, cleanup retainedLOWER(-31.507,59,46.5)/17.333HP16food/THREE10FULL23:00:07.284. No injury/death, notwholeliteralPASS. Changedmovementmaterially to nativeONEcellGoalBlock aftersamelegalhead/sweptclear (no broadgoal/jump-held loop). Firstrestore3fullyenclosedshaftlevels59->62 withprovenbuilder, thenresumeactualremainingdatedprefix to-43. P3 WestSnowproposal was independentlyalsochosenfromSBintakeshell; your11322reinforcedspecificoneblockoption, actualwait/groundfixown.")
+== #11342 2026-10-18T23:02:40 p1 role=completion_a iter=26 4 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (15317 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:02:40.650Z","p":{"x":-31.50706948199646,"y":59,"z":46.49998858247677},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["basalt",3,null],["spruce_sapling",2,null],["cobblestone",53,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["cobblestone",40,null],["stone_pickaxe",1,9],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":-32,"y":61,"z":46},"n":"cobblestone","face":0,"hit":{"x":-31.505498658753996,"y":61,"z":46.49999269497546},"pick":"stone_pickaxe","wear":9}
+CUT_POST {"p":{"x":-32,"y":61,"z":46},"n":"air","before":157,"after":157,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":-32,"y":59,"z":46},"n":"magma_cube","p":{"x":-37.58814497679959,"y":65.15911132097244,"z":51.568040536583},"rayCount":12,"blocked":1,"hits":["(-33, 60, 46)","CLEAR"]}
+FAIL Error: hostile visible from current/prospective eye magma_cube
+PLACED {"dest":{"x":-32,"y":61,"z":46},"ref":{"x":-32,"y":61,"z":45},"f":3,"n":"basalt","before":3,"hit":{"x":-31.50314247347428,"y":61.240812826170924,"z":46}}
+FULL_AUDIT {"sample":0,"state":{"at":"2026-10-18T23:02:43.107Z","p":{"x":-31.50706948199646,"y":59,"z":46.49998858247677},"dim":"the_nether","hp":
+... (6416 chars; --full)
+== #11343 2026-10-18T23:04:36 p1 role=completion_a iter=26 0 s
+bot.chat("A restore11342 refused actualvisibleMAGMA_CUBE afterroofcut; independentcleanupresealed59/full17.333HP16food23:02:44.609. Notrestored/risePASS. Materialchange stayBELOWsurface: supported6down to53, thencoveredrocktunnel towardBconnector-54,53,62. Freshfullnextfloor/roof/fluid checks eachstep, avoidsCube/complexstairs entirely; no repeatedUP/rayguardremoval. Sourcecurrent-32,59,46 closed. Willbudgetbounded10-cellsegments, no newgearquota.")
+== #11344 2026-10-18T23:04:37 p1 role=completion_a iter=26 12 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (11514 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:04:37.150Z","p":{"x":-31.50706948199646,"y":59,"z":46.49998858247677},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["spruce_sapling",2,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",2,null],["cobblestone",40,null],["stone_pickaxe",1,10],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":-32,"y":58,"z":46},"n":"basalt","face":1,"hit":{"x":-31.50235709839966,"y":59,"z":46.50000091974736},"pick":"stone_pickaxe","wear":10}
+CUT_POST {"p":{"x":-32,"y":58,"z":46},"n":"air","before":2,"after":2,"witness":true}
+DOWN_ACTUAL {"at":"2026-10-18T23:04:38.706Z","p":{"x":-31.50706948199646,"y":58,"z":46.49998858247677},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["spruce_sapling",2,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",3,n
+... (11597 chars; --full)
+== #11348 2026-10-18T23:06:13 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE11344 supported6down PASS23:04:49.178 at(-31.507,53,46.5)/17.333HP16food/THREE10FULL, no Cube exposure. Nowfreshsupported2Drocktunnel segments toward-54,53,62; fourmax10cellcallers, stopsanyFAIL/loss. Stonepickactualwear16/131+WOOD3; Snow6 retained. This bypasses surfaceUP/SBcontactdependency, keepsAindependentcrystalapproach. Newfilledshaftscan afterarrival, notold-55.")
+== #11349 2026-10-18T23:06:13 p1 role=completion_a iter=26 33.1 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (12748 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:06:13.919Z","p":{"x":-31.50706948199646,"y":53,"z":46.49998858247677},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",1,null],["spruce_sapling",2,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",6,null],["cobblestone",40,null],["stone_pickaxe",1,16],["cobblestone",64,null],["crafting_table",1,null]]}
+CONNECTOR_ROUTE {"visited":275,"target":{"x":-54,"y":53,"z":62},"best":{"x":-50,"y":53,"z":62},"improvement":34,"route":[{"x":-32,"y":53,"z":47},{"x":-33,"y":53,"z":47},{"x":-34,"y":53,"z":47},{"x":-35,"y":53,"z":47},{"x":-36,"y":53,"z":47},{"x":-36,"y":53,"z":48},{"x":-37,"y":53,"z":48},{"x":-37,"y":53,"z":49},{"x":-37,"y":53,"z":50},{"x":-37,"y":53,"z":51},{"x":-37,"y":53,"z":52},{"x":-38,"y":53,"z":52},{"x":-39,"y":53,"z":52},{"x":-40,"y":53,"z":52},{"x":-40,"y":53,"z":53},{"x":-40,"y":53,"z":54},{"x":-40,"y":53,"z":55},{"x":-40,"y":53,"z":56},{"x":-40,"y":53,"z":57},{"x":-40,"y":53,"z":58},{"x":-40,"y":53,"z":59},{"x":-40,"y":53,"z":60},{"x":-40,"y":53,"z":61},{"x":-40,"y":53,"z":62},{"x":-41,"y":53,"z":62},{"x":-42,"y":53,"z":62},{"x":-43,"y":53,"z":62},{"x":-44,"y":53,"z":62},{"x":
+... (29478 chars; --full)
+== #11350 2026-10-18T23:06:47 p1 role=completion_a iter=26 32.4 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (12748 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:06:47.081Z","p":{"x":-36.4915793746882,"y":53,"z":51.5},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",18,null],["cobblestone",40,null],["stone_pickaxe",1,36],["cobblestone",64,null],["crafting_table",1,null]]}
+CONNECTOR_ROUTE {"visited":357,"target":{"x":-54,"y":53,"z":62},"best":{"x":-54,"y":53,"z":62},"improvement":28,"route":[{"x":-37,"y":53,"z":52},{"x":-38,"y":53,"z":52},{"x":-39,"y":53,"z":52},{"x":-40,"y":53,"z":52},{"x":-40,"y":53,"z":53},{"x":-40,"y":53,"z":54},{"x":-40,"y":53,"z":55},{"x":-40,"y":53,"z":56},{"x":-40,"y":53,"z":57},{"x":-40,"y":53,"z":58},{"x":-40,"y":53,"z":59},{"x":-40,"y":53,"z":60},{"x":-40,"y":53,"z":61},{"x":-40,"y":53,"z":62},{"x":-41,"y":53,"z":62},{"x":-42,"y":53,"z":62},{"x":-43,"y":53,"z":62},{"x":-44,"y":53,"z":62},{"x":-45,"y":53,"z":62},{"x":-46,"y":53,"z":62},{"x":-47,"y":53,"z":62},{"x":-48,"y":53,"z":62},{"x":-49,"y":53,"z":62},{"x":-50,"y":53,"z":62},{"x":-51,"y":53,"z":62},{"x":-52,"y":53,"z":62},{"x":-53,"y":53,"z":62},{"x":-54,"y":53,"z":62}]}
+HOSTILE_BARRIERS
+... (27804 chars; --full)
+== #11351 2026-10-18T23:07:19 p1 role=completion_a iter=26 32.8 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (12748 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:07:19.560Z","p":{"x":-39.50000015659282,"y":53,"z":58.5},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["netherrack",1,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",35,null],["cobblestone",40,null],["stone_pickaxe",1,56],["cobblestone",64,null],["crafting_table",1,null]]}
+CONNECTOR_ROUTE {"visited":277,"target":{"x":-54,"y":53,"z":62},"best":{"x":-54,"y":53,"z":62},"improvement":18,"route":[{"x":-40,"y":53,"z":59},{"x":-40,"y":53,"z":60},{"x":-40,"y":53,"z":61},{"x":-40,"y":53,"z":62},{"x":-41,"y":53,"z":62},{"x":-42,"y":53,"z":62},{"x":-43,"y":53,"z":62},{"x":-44,"y":53,"z":62},{"x":-45,"y":53,"z":62},{"x":-46,"y":53,"z":62},{"x":-47,"y":53,"z":62},{"x":-48,"y":53,"z":62},{"x":-49,"y":53,"z":62},{"x":-50,"y":53,"z":62},{"x":-51,"y":53,"z":62},{"x":-52,"y":53,"z":62},{"x":-53,"y":53,"z":62},{"x":-54,"y":53,"z":62}]}
+HOSTILE_BARRIERS {"target":{"x":-40,"y":53,"z":59},"n":"magma_cube","p":{"x":-44.5936047964665,"y":62,"z":60.09548769203748},"rayCount":12,"blocked":12,"hits":["(-40, 55, 58)","(-40, 54, 59)"]}
+HOSTILE_BARRIERS {"target":{"x":-40,"y"
+... (30768 chars; --full)
+== #11352 2026-10-18T23:07:52 p1 role=completion_a iter=26 27.7 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (12748 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:07:52.525Z","p":{"x":-45.5,"y":53,"z":62.49999984340633},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["netherrack",1,null],["cobblestone",54,null],["stone_shovel",1,5],["granite",17,null],["wooden_pickaxe",1,3],["basalt",53,null],["cobblestone",40,null],["stone_pickaxe",1,76],["cobblestone",64,null],["crafting_table",1,null]]}
+CONNECTOR_ROUTE {"visited":116,"target":{"x":-54,"y":53,"z":62},"best":{"x":-54,"y":53,"z":62},"improvement":8,"route":[{"x":-47,"y":53,"z":62},{"x":-48,"y":53,"z":62},{"x":-49,"y":53,"z":62},{"x":-50,"y":53,"z":62},{"x":-51,"y":53,"z":62},{"x":-52,"y":53,"z":62},{"x":-53,"y":53,"z":62},{"x":-54,"y":53,"z":62}]}
+HOSTILE_BARRIERS {"target":{"x":-47,"y":53,"z":62},"n":"magma_cube","p":{"x":-47.95960009098053,"y":63,"z":59.963280766164615},"rayCount":12,"blocked":12,"hits":["(-46, 55, 62)","(-47, 54, 62)"]}
+HOSTILE_BARRIERS {"target":{"x":-47,"y":53,"z":62},"n":"magma_cube","p":{"x":-47.34452207111474,"y":60,"z":56.520199954509735},"rayCount":12,"blocked":12,"hits":["(-46, 55, 62)","(-47, 54, 62)"]}
+CUT_PRE {"p":{"x":-47,"y":54,"z":62},"n":"basalt","face":5,"hit":{"x":-46,"y":54.7
+... (26004 chars; --full)
+== #11356 2026-10-18T23:09:20 p1 role=completion_a iter=26 0 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (11504 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:09:20.474Z","p":{"x":-53.5,"y":53,"z":62.49999963461477},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["netherrack",1,null],["stone_shovel",1,5],["cobblestone",56,null],["granite",17,null],["wooden_pickaxe",1,3],["basalt",63,null],["cobblestone",40,null],["stone_pickaxe",1,92],["cobblestone",64,null],["crafting_table",1,null]]}
+COLUMN_SCAN [{"x":-56,"z":61,"names":{"basalt":31,"netherrack":3,"blackstone":14,"magma_block":1},"bad":[[31,"magma_block"]],"sideBad":[[-56,15,60,"lava"],[-57,16,61,"lava"],[-56,16,60,"lava"]]},{"x":-56,"z":62,"names":{"basalt":25,"netherrack":4,"blackstone":20},"bad":[],"sideBad":[[-55,8,62,"air"],[-55,9,62,"air"],[-55,11,62,"air"],[-55,12,62,"air"],[-55,13,62,"air"],[-55,14,62,"air"],[-55,15,62,"air"],[-55,16,62,"air"],[-55,17,62,"air"],[-55,18,62,"air"],[-55,19,62,"air"],[-55,20,62,"air"],[-55,21,62,"air"],[-55,22,62,"air"],[-55,23,62,"air"],[-55,24,62,"air"],[-55,25,62,"air"],[-55,26,62,"air"],[-55,27,62,"air"],[-55,28,62,"air"],[-55,29,62,"air"],[-55,30,62,"air"],[-55,31,62,"air"],[-55,32,62,"air"],[-55,33,62,"air"],[-55,34,62,"air"],[-55,35,62,"air"],[-55,36,62,"air"],[-
+... (7530 chars; --full)
+== #11357 2026-10-18T23:09:50 p1 role=completion_a iter=26 0 s
+bot.chat("A tunnel53 fourcallers PASS38actualsteps LIVE11349-52, gate(-53.5,53,62.5)/17.333HP16food/full23:08:20.251. Freshscanner11356 centre7..55+4sides8..52: candidate-56,z61 hasMAGMA31 andnearLAVA15/16; REJECT. -56,z63 opensEbody8/9 oldconnector; choose-56,z64 ONLY completecentre+side0bad (NETHERRACK10/BLACKSTONE14/BASALT25). EntryN,W,W,S,S,S aroundexcavated-55,62, actualscannedroof55. Ownnew45down next, no oldsolid assumption.")
+== #11358 2026-10-18T23:09:50 p1 role=completion_a iter=26 21.2 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=45000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0
+... (11756 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:09:50.638Z","p":{"x":-53.5,"y":53,"z":62.49999963461477},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["netherrack",1,null],["stone_shovel",1,5],["cobblestone",56,null],["granite",17,null],["wooden_pickaxe",1,3],["basalt",63,null],["cobblestone",40,null],["stone_pickaxe",1,92],["cobblestone",64,null],["crafting_table",1,null]]}
+HOSTILE_BARRIERS {"target":{"x":-54,"y":53,"z":61},"n":"magma_cube","p":{"x":-48.00466821973314,"y":59,"z":58.520199954509735},"rayCount":12,"blocked":12,"hits":["(-54, 55, 62)","(-54, 54, 61)"]}
+CUT_PRE {"p":{"x":-54,"y":54,"z":61},"n":"cobblestone","face":3,"hit":{"x":-53.4999999733685,"y":54.7394933958339,"z":62},"pick":"stone_pickaxe","wear":92}
+CUT_POST {"p":{"x":-54,"y":54,"z":61},"n":"air","before":160,"after":160,"witness":true}
+HOSTILE_BARRIERS {"target":{"x":-54,"y":53,"z":61},"n":"magma_cube","p":{"x":-48.00466821973314,"y":59,"z":58.520199954509735},"rayCount":12,"blocked":12,"hits":["(-54, 55, 62)","(-54, 55, 61)"]}
+CUT_PRE {"p":{"x":-54,"y":53,"z":61},"n":"dirt","face":1,"hit":{"x":-53.499999962035496,"y":54,"z":61.78722563463725},"pick":"stone_pickaxe","wear":93}
+... (17595 chars; --full)
+== #11360 2026-10-18T23:11:07 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE11358 freshshaftENTRY PASS23:10:11.784 at(-55.5,53,64.332)/17.333HP16food/full. Chosen-56,z64 actualcentre7..55 andALL4sides8..52 full/nonfluid, unlikebad61. Starting45SUPPORTEDone-down whole with120s selfgate/150s arena, percutnextfloor+below/noMAGMA/actualsettled+HP, then2Eaststeps toLOWstart. Newcolumn, no voidjump; Stonepick103 plusWOOD3 spare maybreakswap normally. P1noSB/resetdependency.")
+== #11361 2026-10-18T23:11:08 p1 role=completion_a iter=26 78.6 s
+// ITER26: fresh geometry11106 verified; fix independently diagnosed by P3.
+const WORK_MS=135000;const EXPECTED_DIM="the_nether";
+// Shared tested core: caller defines WORK_MS and EXPECTED_DIM.
+// Reserve recipe COBBLED by explicit ordinary-brick-first priority; historic base cores are superseded.
+// Caller defines EXPECTED_DIM and WORK_MS.
+// Fresh survival helpers, derived only from permitted iteration23 physical cases.
+const V=bot.entity.position.constructor;
+const dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)];
+const full=p=>!!bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1');
+const air=p=>['air','cave_air'].includes(bot.blockAt(p)?.name);
+let dead=false;const death=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',death);
+const initialHP=bot.health, started=Date.now();
+function state(){return {at:new Date().toISOString(),p:bot.entity.position.clone(),dim:bot.game.dimension,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(["forward","back","left","right","jump","sprint","sneak"].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};}
+function live(){if(dead||bot.health<=0||bot.game.dimension!==EXPECTED_DIM)throw Error('life/dimension changed');}
+function shell(b=bot.entity.position.floored()){return [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[
+... (12472 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:11:08.160Z","p":{"x":-55.50000007829641,"y":53,"z":64.33229118175082},"dim":"the_nether","hp":17.333335876464844,"food":16,"ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["moss_block",1,null],["spruce_button",1,null],["stick",1,null],["sandstone",33,null],["stone_sword",1,0],["snowball",6,null],["cobblestone_slab",6,null],["blackstone",6,null],["spruce_sapling",2,null],["netherrack",1,null],["stone_shovel",1,5],["cobblestone",57,null],["basalt",8,null],["granite",17,null],["wooden_pickaxe",1,3],["basalt",64,null],["cobblestone",40,null],["stone_pickaxe",1,103],["cobblestone",64,null],["crafting_table",1,null]]}
+CUT_PRE {"p":{"x":-56,"y":52,"z":64},"n":"basalt","face":1,"hit":{"x":-55.50000008584178,"y":53,"z":64.47395425403522},"pick":"stone_pickaxe","wear":103}
+CUT_POST {"p":{"x":-56,"y":52,"z":64},"n":"air","before":72,"after":72,"witness":true}
+CUT_PRE {"p":{"x":-56,"y":51,"z":64},"n":"basalt","face":1,"hit":{"x":-55.50000008584178,"y":52,"z":64.47395425403522},"pick":"stone_pickaxe","wear":104}
+CUT_POST {"p":{"x":-56,"y":51,"z":64},"n":"air","before":73,"after":73,"witness":true}
+CUT_PRE {"p":{"x":-56,"y":50,"z":64},"n":"basalt","face":1,"hit":{"x":-55.50000008584178,"y":51,"z":64.47395425403522},"pick":"stone_pickaxe","wear":105}
+CUT_POST {"p":{"x":-56,"y":50,"z":64},"n":"air","before":74,"after":74,"witness":true}
+CUT_PRE {"p":{"x":-56,"y":49,"z":
+... (31198 chars; --full)
+== #11363 2026-10-18T23:14:33 p1 role=completion_a iter=26 0 s
+bot.chat("A LIVE11361 wholeNEWshaft45down+2EastLOWjoin PASS78.6s, terminal23:12:26.714 at(-53.5,8,64.484)/17.333HP16food/THREE10FULL. CurrentSnow6/SWORD/SHOVEL/TABLE/COB163, Stonepickworeoutnormally; WOODpickwear22 remaining37. No injuries/death. ReusingBactualaxis-boundedLOWwalker now, nativeendsFIRSTbend, freshfloor/capchecks; 200+200+4 cells serial. Needactual2PLANK->STICK/PICK whenfirstqualifiedOWLwoodsource, notnewfarmquota.")
+== #11364 2026-10-18T23:14:33 p1 role=completion_a iter=26 75.3 s
+const initialHP=bot.health;
+const V=bot.entity.position.constructor;
+const v=(x,y,z)=>new V(x,y,z), sleep=n=>bot.waitForTicks(n);
+const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);
+const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(n=>[n,bot.getControlState(n)])),goal:bot.pathfinder.goal,window:bot.currentWindow?.type,cursor:bot.inventory.selectedItem?.name});
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+const audit=(q=bot.entity.position.floored())=>offsets.map(d=>({p:q.offset(...d),name:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));
+let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);
+const alive=()=>{if(dead||bot.health<=0)throw Error('life changed');};
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.99,.5,.5],[.01,.5,.5],[.5,.5,.99],[.5,.5,.01]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('not visible '+q);}
+async function cut(q,allowed=null){alive();const 
+... (18132 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:14:33.502Z","p":{"x":-53.5,"y":8,"z":64.48394703234699},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["blackstone",20],["spruce_sapling",2],["netherrack",10],["stone_shovel",1],["cobblestone",59],["basalt",25],["granite",17],["wooden_pickaxe",1],["basalt",64],["cobblestone",40],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: -53, y: 9, z: 64 } basalt {"at":"2026-10-18T23:14:34.661Z","p":{"x":-53.5,"y":8,"z":64.48394703234699},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["blackstone",20],["spruce_sapling",2],["netherrack",10],["stone_shovel",1],["cobblestone",59],["basalt",25],["granite",17],["wooden_pickaxe",1],["basalt",64],["cobblestone",40],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: -53, y: 8, z: 64 } basalt {"at":"2026-10-18T23:14:35.865Z","p":{"x":-53.5,"y":8,"z":64.48394703234699},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_butto
+... (52726 chars; --full)
+-- returned --
+{"at": "2026-10-18T23:15:48.805Z", "p": {"x": 34.44813634243458, "y": 8, "z": 120.50000066845155}, "hp": 17.333335876464844, "food": 16, "dim": "the_nether", "ground": true, "inv": [["moss_block", 1], ["spruce_button", 1], ["stick", 1], ["sandstone", 33], ["stone_sword", 1], ["snowball", 6], ["cobblestone_slab", 6], ["blackstone", 20], ["spruce_sapling", 2], ["netherrack", 10], ["stone_shovel", 1], ["cobblestone", 57], ["basalt", 27], ["granite", 17], ["wooden_pickaxe", 1], ["basalt", 64], ["cobblestone", 40], ["cobblestone", 64], ["crafting_table", 1]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "goal": null}
+== #11365 2026-10-18T23:15:48 p1 role=completion_a iter=26 58.7 s
+const initialHP=bot.health;
+const V=bot.entity.position.constructor;
+const v=(x,y,z)=>new V(x,y,z), sleep=n=>bot.waitForTicks(n);
+const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0);
+const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(n=>[n,bot.getControlState(n)])),goal:bot.pathfinder.goal,window:bot.currentWindow?.type,cursor:bot.inventory.selectedItem?.name});
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+const audit=(q=bot.entity.position.floored())=>offsets.map(d=>({p:q.offset(...d),name:bot.blockAt(q.offset(...d))?.name,full:full(q.offset(...d))}));
+let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);
+const alive=()=>{if(dead||bot.health<=0)throw Error('life changed');};
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.99,.5,.5],[.01,.5,.5],[.5,.5,.99],[.5,.5,.01]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('not visible '+q);}
+async function cut(q,allowed=null){alive();const 
+... (18132 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:15:48.928Z","p":{"x":34.44813634243458,"y":8,"z":120.50000066845155},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["blackstone",20],["spruce_sapling",2],["netherrack",10],["stone_shovel",1],["cobblestone",57],["basalt",27],["granite",17],["wooden_pickaxe",1],["basalt",64],["cobblestone",40],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 33, y: 9, z: 120 } cobblestone {"at":"2026-10-18T23:15:50.633Z","p":{"x":34.44813634243458,"y":8,"z":120.50000066845155},"hp":17.333335876464844,"food":16,"dim":"the_nether","ground":true,"inv":[["moss_block",1],["spruce_button",1],["stick",1],["sandstone",33],["stone_sword",1],["snowball",6],["cobblestone_slab",6],["blackstone",20],["spruce_sapling",2],["netherrack",10],["stone_shovel",1],["cobblestone",57],["basalt",27],["granite",17],["wooden_pickaxe",1],["basalt",64],["cobblestone",40],["cobblestone",64],["crafting_table",1]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 33, y: 8, z: 120 } cobblestone {"at":"2026-10-18T23:15:52.388Z","p":{"x":34.44813634243458,"y":8,"z":120.50000066845155},"hp":17.333335876464844,"food":16,"dim":"the_nether","gr
+... (33948 chars; --full)
+-- returned --
+{"at": "2026-10-18T23:16:47.672Z", "p": {"x": 25.49999018387308, "y": 8, "z": 241.0122642000129}, "hp": 12.333335876464844, "food": 16, "dim": "the_nether", "ground": true, "inv": [["moss_block", 1], ["spruce_button", 1], ["stick", 1], ["sandstone", 33], ["stone_sword", 1], ["snowball", 6], ["cobblestone_slab", 6], ["blackstone", 20], ["spruce_sapling", 2], ["netherrack", 10], ["stone_shovel", 1], ["cobblestone", 62], ["basalt", 27], ["granite", 17], ["wooden_pickaxe", 1], ["basalt", 64], ["cobblestone", 40], ["cobblestone", 64], ["crafting_table", 1]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "goal": null}
+== #11368 2026-10-18T23:18:43 p1 role=completion_a iter=26 0 s
+bot.pathfinder.setGoal(null);bot.clearControlStates();const b=bot.entity.position.floored();console.log('EMERGENCY_OBSERVE',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,near:Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<12).map(e=>({id:e.id,n:e.name,p:e.position,w:e.width,h:e.height,d:e.position.distanceTo(bot.entity.position)})),cells:Array.from({length:7},(_,i)=>{const q=b.offset(0,0,i-3);return{q,ns:[-1,0,1,2,3].map(y=>bot.blockAt(q.offset(0,y,0))?.name)}})}));
+-- output --
+EMERGENCY_OBSERVE {"at":"2026-10-18T23:18:43.286Z","p":{"x":2.5,"y":64,"z":-32.5},"hp":20,"food":20,"ground":true,"near":[{"id":203,"n":"player","p":{"x":2.5,"y":64,"z":-32.5},"w":0.6,"h":1.8,"d":0}],"cells":[{"q":{"x":2,"y":64,"z":-36},"ns":["dirt","grass_block","snow","air","air"]},{"q":{"x":2,"y":64,"z":-35},"ns":["dirt","grass_block","snow","air","air"]},{"q":{"x":2,"y":64,"z":-34},"ns":["grass_block","snow","air","air","air"]},{"q":{"x":2,"y":64,"z":-33},"ns":["grass_block","snow","air","air","air"]},{"q":{"x":2,"y":64,"z":-32},"ns":["snow","air","air","air","air"]},{"q":{"x":2,"y":64,"z":-31},"ns":["snow","air","air","air","air"]},{"q":{"x":2,"y":64,"z":-30},"ns":["snow","air","air","air","air"]}]}
+== #11373 2026-10-18T23:19:53 p1 role=completion_a iter=26 0 s
+bot.chat("URGENT A LIVEP1 PiglinDEATH confirmed; currentrespawn2.5,64,-32.5 HP20/food20/EMPTY. Lowcaller11365 failedHP17.333->12.333 near25,8,241 at23:16:47, sealbody-overlaprefused, thenPiglin killedbefore23:18:43 observer11368. KitSNOW6/SWORD/TABLE/COB/PICKlost there. P2loot is ~42LOWmeters behindyour Netherportal278; optional immediateordinaryreturn/recoverycouldfundsharedammo (youdecide independently). P3pleaseexactdeath time/records support. RootcontrolsONLYp1; no otherplayerJS oridentityworkaround.")
+== #11380 2026-10-18T23:23:13 p1 role=completion_a iter=26 0 s
+bot.chat("A canonicaldeath23:16:50 Piglin at25.5,8,240.1. Newlifeempty; originalSNOWapproachretired afterkitloss, no fakecurrentreadiness. P3 request<=2min READONLY nearbydistinctBEDfoot census within96 ofHOME (normalfindBlocks/properties), no movement/cut; couldnewP1Dirtcap->actual68CHESTbed transfer supportrealexplosionfallback vs oldfailed65courier. Wholecourier8min cap->P1BEDbag+protectedending max23:30 ifsource/travel qualifies; notdeposit-onlysuccess, P2keepsindependentdecision. I firstestablishfreshrespawncap/pocket thenmoveactualsource.")
+== #11381 2026-10-18T23:23:13 p1 role=completion_a iter=26 0 s
+bot.pathfinder.setGoal(null);bot.clearControlStates();const b=bot.entity.position.floored();return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),column:[-1,-2,-3,-4,-5].map(y=>{const q=b.offset(0,y,0);return{q,n:bot.blockAt(q)?.name,sh:bot.blockAt(q)?.shapes}}),wood:bot.findBlocks({matching:q=>q.name.endsWith('_log')||q.name.endsWith('_planks'),maxDistance:16,count:8}),mobs:Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<10).map(e=>({id:e.id,n:e.name,p:e.position}))};
+-- returned --
+{"at": "2026-10-18T23:23:13.757Z", "p": {"x": 0.9905978344433444, "y": 57, "z": -29.56440722709123}, "hp": 8.333332061767578, "food": 17, "ground": true, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "column": [{"q": {"x": 0, "y": 56, "z": -30}, "n": "grass_block", "sh": [[0, 0, 0, 1, 1, 1]]}, {"q": {"x": 0, "y": 55, "z": -30}, "n": "dirt", "sh": "[repeated reference]"}, {"q": {"x": 0, "y": 54, "z": -30}, "n": "dirt", "sh": "[repeated reference]"}, {"q": {"x": 0, "y": 53, "z": -30}, "n": "stone", "sh": "[repeated reference]"}, {"q": {"x": 0, "y": 52, "z": -30}, "n": "stone", "sh": "[repeated reference]"}], "wood": [{"x": -6, "y": 63, "z": -25}, {"x": 6, "y": 66, "z": -32}, {"x": 5, "y": 67, "z": -31}, {"x": 6, "y": 67, "z": -32}, {"x": 6, "y": 68, "z": -31}, {"x": 6, "y": 68, "z": -32}, {"x": 4, "y": 67, "z": -23}, {"x": 7, "y": 67, "z": -26}], "mobs": [{"id": 203, "n": "player", "p": "[repeated reference]"}]}
+== #11387 2026-10-18T23:24:24 p1 role=completion_a iter=26 6.4 s
+const V=bot.entity.position.constructor,dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)],full=q=>bot.blockAt(q)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,goal:!!bot.pathfinder.goal,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),inv:bot.inventory.items().map(i=>[i.name,i.count])});const live=()=>{if(dead||bot.health<=0||bot.game.dimension!=='overworld')throw Error('life/dimension');};async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.99,.5],[.5,.01,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not visible '+q);}
+const shell=()=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let q=bot.entity.position.floored().offset(...d);return{p:q,n:bot.blockAt(q)?.name,full:full(q)};});
+bot.pathfinder.setGoal(null);bot.clearControlStates();try{console.log('STAR
+... (3712 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:24:24.318Z","p":{"x":0.9905978344433444,"y":57,"z":-29.56440722709123},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[]}
+DOWN {"at":"2026-10-18T23:24:26.529Z","p":{"x":0.3528545862804073,"y":56,"z":-29.486242328919307},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]}
+DOWN {"at":"2026-10-18T23:24:27.832Z","p":{"x":0.3528545862804073,"y":55,"z":-29.486242328919307},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",2]]}
+DOWN {"at":"2026-10-18T23:24:29.136Z","p":{"x":0.3528545862804073,"y":54,"z":-29.486242328919307},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",3]]}
+ENDING {"state":{"at":"2026-10-18T23:24:29.487Z","p":{"x":0.3528545862804073,"y":54,"z":-29.486242328919307},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",2]]},"cells":[{"p":{"x":0,"y":53,"z":-30},"n":"stone","full
+... (4491 chars; --full)
+== #11402 2026-10-18T23:30:27 p1 role=completion_a iter=26 25.6 s
+const V=bot.entity.position.constructor,dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)],full=q=>bot.blockAt(q)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,goal:!!bot.pathfinder.goal,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),inv:bot.inventory.items().map(i=>[i.name,i.count])});const live=()=>{if(dead||bot.health<=0||bot.game.dimension!=='overworld')throw Error('life/dimension');};async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.99,.5],[.5,.01,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not visible '+q);}
+const shell=()=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let q=bot.entity.position.floored().offset(...d);return{p:q,n:bot.blockAt(q)?.name,full:full(q)};});
+
+async function go(q,ms){const m=new Movements(bot);m.canDig=true;m.allow1b
+... (5761 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:30:27.734Z","p":{"x":0.3528545862804073,"y":54,"z":-29.486242328919307},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",2]]}
+FAIL Error: source roof
+TERMINAL {"state":{"at":"2026-10-18T23:30:53.305Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]},"shell":[{"p":{"x":0,"y":50,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"n":"dirt","full":true},{"p":{"x":1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"n":"stone","full":true}]}
+== #11407 2026-10-18T23:32:16 p1 role=completion_a iter=26 0 s
+bot.chat("P1 A RETIRED:11365 killedPiglin23:16:50, kitlost; newlife11402 courier source-roofFAIL, independentcleanup51/full8.333HP17foodDIRT1. HOME23:30gateMISSED/noBEDbag. Updatedprovisional written23:32:11 (11secafterfresh90minrefreshgate); earlierprovisional existedbutstale. NoP1active/SBdependency. Remainingto23:47 reviewactualBEndeffect, no renewedcourier.")
+== #11408 2026-10-18T23:32:48 p1 role=completion_a iter=26 0 s
+bot.chat("P2 reviewed live_end_contact.body: LOW catch still retries ALL travel errors (same mechanism as lethalP1). Materialfix beforelive: oncatch immediately rethrow if dead/health<START/dimensionchanged/bodyfluid; no best-guide travel afterHPdamage. Also LIVEcolumn57 has NOT SBexcavatedroom provenance: actualneighborHEAD58 mustbefull beforethirdwallprep, or safelyretreat/changedboundedwallbuild, notassumeSBroomexists.")
+== #11410 2026-10-18T23:33:11 p1 role=completion_a iter=26 0 s
+bot.chat("P2 fallbackproposal ifsecondboundedcontactwaitfails: changefirst-effectassumption toONE ordinarySnowthrowatcurrentREALvisiblecrystal fromqualifiedroofaperture, ownSnow4. P3observe_one_snowball + P4physicalwallsmoke qualifyAPIonly; recordlaunch/trajectory/targetpresence/HP thenrecap, no presumedcrystalproperty. No extraammoquota/bedcourier. A neverreachedthistrial; actualEndbodyyours.")
+== #11412 2026-10-18T23:34:15 p1 role=completion_a iter=26 0 s
+bot.chat("P2 reviewednotes in p1/iter26/P2_REVIEW_NOTES.md, optionalnotapprovalqueue. OwnLOCALmock reproducedLOWcatch: original2travelcallsafterfirstHPloss; guardedcandidate1thenpropagates. NoMinecraftsurvivalqualification. CandidateNetherconstantNOTEnddrop-in. Immediateactualcursor/noassumedcontact remainsrequired.")
+== #11413 2026-10-18T23:34:30 p1 role=completion_a iter=26 3 s
+const V=bot.entity.position.constructor,dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)],full=q=>bot.blockAt(q)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,goal:!!bot.pathfinder.goal,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),inv:bot.inventory.items().map(i=>[i.name,i.count])});const live=()=>{if(dead||bot.health<=0||bot.game.dimension!=='overworld')throw Error('life/dimension');};async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.99,.5],[.5,.01,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not visible '+q);}
+const shell=()=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let q=bot.entity.position.floored().offset(...d);return{p:q,n:bot.blockAt(q)?.name,full:full(q)};});
+bot.pathfinder.setGoal(null);bot.clearControlStates();const events=[];const
+... (2045 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:34:30.082Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]}
+ENDING {"state":{"at":"2026-10-18T23:34:30.083Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]},"cells":[{"p":{"x":0,"y":50,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"n":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"n":"stone","full":true}]}
+ENDING {"state":{"at":"2026-10-18T23:34:31.040Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]},"cells":[{"p":{"x":0,"y":50,"z":-30},"n":"stone","full":true},{"
+... (3701 chars; --full)
+== #11415 2026-10-18T23:35:35 p1 role=completion_a iter=26 0 s
+bot.chat("P2 independentlyreadG3#120:24PUBLICsamples/120s, minobservedDragonY67.927159>predicate65 (ALLsampledrejected), minrad1.38926. Noattack/noimmunity; sparse5ssamplesnotproofneverperch. Thus thirdsame60/Y<=65waitunjustified. Changedstance+freshactualcursor orONErealcrystaltrial substantive. Exactpairedsamples in p1/iter26/P2_G3_120_review.json.")
+== #11417 2026-10-18T23:35:47 p1 role=completion_a iter=26 0 s
+bot.chat("P2 Snowreviewimportant: P3observer waitsmaxTicks withapertureOPEN unlessowneraddsafterLaunch recap hook. Suggested optionalfunctionparam afterLaunch; immediatelyafteractivate/wait1/deactivate callONCE owneractualputroof(), thencontinuepublicflighttracking undercover. Not extra throw. ActualtargetLOS requiredatlaunch; recapafterlaunchlegal. Alsohardcodedaim=crystal+.65 disallowslatercalibratedelevation; firstdirectshotcaninformbutnomaxrange/propertyclaimfrommiss.")
+== #11419 2026-10-18T23:36:08 p1 role=completion_a iter=26 0 s
+bot.chat("P2 optionalreadyreviewhelper p1/iter26/observe_one_snowball_under_cover.UNEXECUTED.js (P3derived) addsREQUIREDafterLaunch ownercallback exactlyonce afterdeactivate beforetracking; abortsonanyHPloss; max1..80ticks. Syntaxonly/unexecuted, no survivalclaim. Youractualroofput+receiptin callback, callerfinallyemergencyclosurestillneeded. NoP1SBdependency/noreset.")
+== #11421 2026-10-18T23:36:33 p1 role=completion_a iter=26 0 s
+bot.chat("P2 projectileaperturegeometry: fromfeet60 actualeye~61.62, 1x1roofhole62 mayOCCLUDElow-angleclosestcrystal viaownHEADwalls61. Needactualdualrays; choosevisibleREALtarget notnearestcachedcoordinates. A higher-angle currentcrystal mayclearroofwithoutlateralcut; ifallblocked, changedlegalHEADaperture+fastactualcap required, notthroughcoverthrow. Postdeath23:36eval SAVEFAILED/stale dragon0/11/deaths180,9crystals/200; noobjectiveclaim.")
+== #11422 2026-10-18T23:36:57 p1 role=completion_a iter=26 0 s
+bot.chat("P2 exact123 thirdSnowcandidate isCAGED: currenttarget3589(33.5,83,24.5), bothordinaryaimraysfirsthitIRON_BARS31,82,22. No Snowlaunched/propertytrial. Materialchange chooseanotheractualloadedcrystal withclearqualifiedrays afterownedaperture, notrepeatnearest sort or minecageremotely. Preserveactualending first. Canfiltercandidatewithrealrays andboundedownedcapsulecuts; no throughblock throw.")
+== #11426 2026-10-18T23:37:20 p1 role=completion_a iter=26 0 s
+bot.chat("P4 acceptedcorrection toOWNafterLaunchproposal: one tick NOTqualifiedprojectileclearance. Addedexplicitlimitheader+reviewnotes; callbackmustboundedobserveactualSnowclearfuturecapvolume beforerecap, elseclassifyself-obstruction/noflightpropertyclaim. HelperstillUNEXECUTED/syntaxonly. P2 notapprovalqueue.")
+== #11431 2026-10-18T23:39:00 p1 role=completion_a iter=26 0 s
+bot.chat("P2 actual125analysis: target3673(-33.5,86,-24.5) stayedpresent, ninecrystals; projectile4uniqueupdates apexOBSERVED69.066, gone(-30.679,64.312,-22.515), targetY86. DirectshotfellSHORTVERTICALLY, notimmunity. Publicvelocity10-stepfit q~.989999/g~.029998/speed1.5216 predicts atR48 maxdy~5.66 vsrequired25.13; UNVALIDATEDmodel. Angle-onlyrepeatslikelyinsufficient; materiallycloser/higherprotectedstance beforelivefunding. Actualfit+limits p1/iter26/P2_G3_125_fit.json.")
+== #11433 2026-10-18T23:39:30 p1 role=completion_a iter=26 0 s
+bot.chat("P2 fitrefinedusingONLY125publicdata: searched1..20steps/update, 10-stepconstantdrag/gravity predictsALLthreeobservedintervaldisplacements within0.001532blocks. q.989999/g.029998. ConditionalmaxriseatR48 is5.66 vsrequired25.13; noanglefromsame60stance modelhits3673. Needcloser/higher, notsimpleloftrepeat. fit_projectile.py actual125 PASSfit, old1pointwallsmoke correctlyREFUSE_FIT. Predictiveonly/notfuturequalification.")
+== #11435 2026-10-18T23:41:45 p1 role=completion_a iter=26 0 s
+bot.chat("P2 independentlyreviewedG3#126 completed114.4s:64waitagainNOqualifyingcandidate/NOattack at23:41:16.550; cleanupactualDROP3->61 THREE10FULL18.778HP23:41:20.871..21.372. Captured p1/iter26/P2_latest_contact_review.raw. This trial retainedbodybutnoobjectiveeffect; do notclaimmainentityimmunity. CurrentLIVE5,57,3 healthy20 remains bestasset.")
+== #11442 2026-10-18T23:44:41 p1 role=completion_a iter=26 0 s
+bot.chat("P2 exactLIVE11437 minactualPUBLIC_CLOSEST_MODEL4.22471466857 at23:43:23.212 realroot(7.6007113,69.8447147,2.0686866), notwithin2.95; NOattack. Final61 THREE10FULL20HP43:46.945..47.447. Same-posefeet66 wouldMODELgap2.2247, nothitproof/futurepose; current64morewaitnotmaterialchange. Exactpairedmin p1/iter26/P2_live_11437_summary.json. Wholeclosure46/47 unchanged.")
+== #11446 2026-10-18T23:45:32 p1 role=completion_a iter=26 0 s
+bot.chat("URGENT P2 actualLIVEstatus23:45:27:11445active13.7s at5.5,65,3.5 HP12/20 (was20), heldSHOVEL, SAND1/SNOW4. ActualHPloss: prioritizeyourinprogramretreat/actualfullending, no continuedwatch/retry. Nooneelsecontrolsp2. P1stable8.333full; closure47still.")
+== #11447 2026-10-18T23:45:40 p1 role=completion_a iter=26 3 s
+const V=bot.entity.position.constructor,dirs=[new V(0,-1,0),new V(0,1,0),new V(0,0,-1),new V(0,0,1),new V(-1,0,0),new V(1,0,0)],full=q=>bot.blockAt(q)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),air=q=>['air','cave_air'].includes(bot.blockAt(q)?.name);let dead=false;const died=()=>{dead=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',died);const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,goal:!!bot.pathfinder.goal,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),inv:bot.inventory.items().map(i=>[i.name,i.count])});const live=()=>{if(dead||bot.health<=0||bot.game.dimension!=='overworld')throw Error('life/dimension');};async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.99,.5],[.5,.01,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){await bot.lookAt(q.offset(...a),true);const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f)&&c.intersect&&[bot.entity.eyeHeight,1.8].every(h=>bot.entity.position.offset(0,h,0).distanceTo(c.intersect)<=4.5))return c;}throw Error('not visible '+q);}
+const shell=()=>[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let q=bot.entity.position.floored().offset(...d);return{p:q,n:bot.blockAt(q)?.name,full:full(q)};});
+bot.pathfinder.setGoal(null);bot.clearControlStates();const events=[];const
+... (2045 chars; --full)
+-- output --
+START {"at":"2026-10-18T23:45:40.399Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]}
+ENDING {"state":{"at":"2026-10-18T23:45:40.399Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]},"cells":[{"p":{"x":0,"y":50,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"n":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"n":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"n":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"n":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"n":"stone","full":true}]}
+ENDING {"state":{"at":"2026-10-18T23:45:41.362Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"ground":true,"goal":false,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"inv":[["dirt",1]]},"cells":[{"p":{"x":0,"y":50,"z":-30},"n":"stone","full":true},{"
+... (3701 chars; --full)
+== #11452 2026-10-18T23:46:46 p1 role=completion_a iter=26 0 s
+bot.chat("P1 closinghandoffsaved p1/iter26/FINAL_HANDOFF.md/P1.md. Own11447 full8.333HP17foodDIRT1/noactiveprogram. Closingeval SAVEFAILED last-saved dragon0/11/deaths180,9crystals/200. Reviewed11445 NOattack, roofrefusedwhileairborne,20->8 thenretained63 THREE10FULL9/regen10. A/courierretired; G3P1released. Continuingchecks through23:47, no gameplayqueued.")
+== #11461 2026-10-18T23:54:49 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 iter27 opening: own body OW51/8.333HP17food dirt1; eval LASTSAVED0/11/180 savefailed. I propose complementary operational work for P2, no long kit courier: remove one encounter decision uncertainty or establish immediate fallback. P2 name useful dependency + acceptance/budget/adoption test. P4 coordinate all sandbox resets and single global run token; P1 requests only initial readonly live audit when token free. Evidence owner please provenance-safe encounter sources/ITER27_PLAN path. No recovery launched.")
+== #11463 2026-10-18T23:55:12 p1 role=continuity_owner iter=27 0 s
+bot.chat("P4 correction user iter27 requires ONE outstanding mc_arena.py run across LIVE+SANDBOX including chat-only, all roles; not merely same player. P1 no sandbox dependency, reset released. No P1 program queued until shared token acknowledged. P1 offer P2 10min bounded empirical snow trajectory planner: compare actual close/high stance and solve elevation from prior public-flight fit; acceptance small local replay plus actual P2 sandbox shot/retained ending; no live shot justified by model alone. Is that useful recipient decision?")
+== #11467 2026-10-18T23:56:02 p1 role=continuity_owner iter=27 0.4 s
+const q=bot.entity.position.floored();
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+for(let j=0;j<3;j++){
+ console.log('P1_AUDIT',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),goal:!!bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count]),boundary:offsets.map(d=>{const p=q.offset(...d),b=bot.blockAt(p);return{p,name:b?.name,full:b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')}})}));
+ await bot.waitForTicks(3);
+}
+bot.chat('P1 initial audit completed, all P1 run tokens RELEASED to P4/P2; no SB dependency, reset allowed. Accepted P2 ten-minute planner. Public-flight withheld intervals predict within0.002 blocks. Important: feet50 near(-22.5,-20.5) still target rise35.13 > model max28.37; proximity alone insufficient. Need higher stance, pending table in p1/iter27. No model proves visibility/safety/hit. P1 no more run/say while P2 token held.');
+-- output --
+P1_AUDIT {"at":"2026-10-18T23:56:02.799Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dim":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["dirt",1]],"boundary":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}
+P1_AUDIT {"at":"2026-10-18T23:56:02.853Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dim":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"inv":[["dirt",1]],"boundary":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{
+... (2672 chars; --full)
+== #11471 2026-10-19T00:03:09 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 uses released short-audit token for this completed chat only, then RELEASES all runs/resetdeps. Model delivery +P2requested68replan ready P1.md/p1/iter27/TRAJECTORY_DELIVERY.md; no adoptedshot. Important132 source mismatch: actualpillar/supportBLACKSTONE by63, catchretreat permits onlyENDSTONE/BASALT. Definiteguardinconsistency, terminaloutputtruncated so NOTproven deathcause. Sandboxevent actual00:01:55 deathbyDragonusingmagic supersedesHP2return. New132_FAILURE_DECISION.md. Propose10min actualabort/compactrecorder support replacing moreangles; P2 decideallocation. No P1 physicalrecovery.")
+== #11483 2026-10-19T00:28:18 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 G4#147 ACTUALpeep5.9s completed27:33: 51->53->51 HP8.333unchanged/DIRT1/THREE10FULL, roofnowDIRT inSBonly. LIVEunchangedgrassroof51/dirt1. NO visiblelog/bed/cobweb, no foodanimalsloadedwithin48; manylogsloadedbutALLraysblocked. Source/view acceptance NOTmet, no courierfunded. SharedRUN TOKEN+allSBresetdeps RELEASED NOW toP2/P4. I read24:53grantlate and ran27:27, so one-minuteallocation MISSED despite5.9sexecution; exactjournalwillpreservedelay. Groundshot/earlyabort review+conditionalmodels ready p1/iter27/GROUND_SHOT_REVIEW.md; centertop0.12mmodelheadroom; corneredge/spread limits. No moreP1runsqueued.")
+== #11485 2026-10-19T00:35:51 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 seesP2G4release35:19, bothstatusesidle. Request20-second READONLY P1slot afterreset/beforeP2nextgrant: FOODplantcensus (147 checkedanimals/logs NOTberries/crops) + passivewatcher two-programsmoke, zeroactions. NewP1run_sequence firstsmalltest auto-releases immediately afteractualCLIclosure+bothworldsidle; outcomespendingreview. No currentP1run/resetdependency. If window granted I willpollpromptly; sourcecourierstillunfunded. ActualownerCENTER87model correctedmargin0.92004 inP1.md/ground60_ACTUAL_OWNER_TARGET_model.json; earlier0.12 wasuppercenter87.8 alternative, notyouraim.")
+== #11487 2026-10-19T00:38:01 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 sequence G5_readonly arena calls ended; both world statuses confirm no running program. Shared RUN TOKEN RELEASED to P2/P4. Raw outputs saved p1/iter27; outcome pending actual review. No new P1 run queued.")
+== #11489 2026-10-19T00:47:40 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 sequence G5_berry_source arena calls ended; both world statuses confirm no running program. Shared RUN TOKEN RELEASED to P2/P4. Raw outputs saved p1/iter27; outcome pending actual review. No new P1 run queued.")
+== #11499 2026-10-19T01:17:23 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 source decision: no small COMPLETE Snow/food chain qualifies before105min(01:39:26). 157 actualgateFAILED/nofood/tools; changedmanualcaller UNEXECUTED afterstartcutoff, no secondgameplayreceipt. Loadedberries/cache remainoccludedleads. Unprovedwhole source10+directOW15+pickup5=30min exceeds~23remaining; no courierfunded. Recommend sourcebranchretiredthisiteration; P1 continues actualdamage/healing interpretation+closurechecks. MELEE_OUTCOME_READING.md uses documentedBossBar.health0..1, no metadatafieldmapping. P1 no run/resetdependency; please nextshortidlewindow permit 1s readonly LIVEclosingaudit, prepared closing_audit.js, serialrunnerauto-release.")
+== #11504 2026-10-19T01:20:45 p1 role=continuity_owner iter=27 0.4 s
+// Readonly P1 audit. No control, movement, inventory or block changes.
+const offsets=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
+const rows=[];for(let i=0;i<3;i++){const q=bot.entity.position.floored(),row={at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dimension:bot.game.dimension,ground:bot.entity.onGround,controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(n=>[n,bot.getControlState(n)])),goal:!!bot.pathfinder.goal,window:!!bot.currentWindow,inventory:bot.inventory.items().map(i=>[i.name,i.count]),shell:offsets.map(d=>{const p=q.offset(...d),b=bot.blockAt(p);return{p,name:b?.name,full:!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')}})};rows.push(row);console.log('P1_CLOSING_AUDIT',JSON.stringify(row));await bot.waitForTicks(3)}return{rows,note:'Actual current readonly samples, not future safety or objective completion'};
+-- output --
+P1_CLOSING_AUDIT {"at":"2026-10-19T01:20:45.692Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"window":false,"inventory":[["dirt",1]],"shell":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}
+P1_CLOSING_AUDIT {"at":"2026-10-19T01:20:45.798Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"window":false,"inventory":[["dirt",1]],"shell":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":
+... (2768 chars; --full)
+-- returned --
+{"rows": [{"at": "2026-10-19T01:20:45.692Z", "p": {"x": 0.5620620120488068, "y": 51, "z": -29.50050049685977}, "hp": 8.333332061767578, "food": 17, "dimension": "overworld", "ground": true, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "goal": false, "window": false, "inventory": [["dirt", 1]], "shell": [{"p": {"x": 0, "y": 50, "z": -30}, "name": "stone", "full": true}, {"p": {"x": 0, "y": 53, "z": -30}, "name": "grass_block", "full": true}, {"p": {"x": 1, "y": 51, "z": -30}, "name": "stone", "full": true}, {"p": {"x": 1, "y": 52, "z": -30}, "name": "stone", "full": true}, {"p": {"x": -1, "y": 51, "z": -30}, "name": "stone", "full": true}, {"p": {"x": -1, "y": 52, "z": -30}, "name": "stone", "full": true}, {"p": {"x": 0, "y": 51, "z": -29}, "name": "stone", "full": true}, {"p": {"x": 0, "y": 52, "z": -29}, "name": "stone", "full": true}, {"p": {"x": 0, "y": 51, "z": -31}, "name": "stone", "full": true}, {"p": {"x": 0, "y": 52, "z": -31}, "name": "stone", "full": true}]}, {"at": "2026-10-19T01:20:45.798Z", "p": {"x": 0.5620620120488068, "y": 51, "z": -29.50050049685977}, "hp": 8.333332061767578, "food": 17, "dimension": "overworld", "ground": true, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}, "goal": false, "window": false, "inventory": [["dirt", 1]], "shell": [{"p": {"x": 0, "y": 50, "z": -30}, "name": "stone", "full"
+... (3264 chars; --full)
+== #11505 2026-10-19T01:20:46 p1 role=continuity_owner iter=27 0 s
+bot.chat("P1 sequence LIVE_closing_audit arena calls ended; both world statuses confirm no running program. Shared RUN TOKEN RELEASED to P2/P4. Raw outputs saved p1/iter27; outcome pending actual review. No new P1 run queued.")
+== #12277 2026-10-19T11:42:08 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 iter33 method operator now opening, only p1. P2/P3 please state current research to avoid duplicate work. I will test a small alternative from current low-HP buried body; no sandbox reset. Initial uncertainty: can local safe shaft mining supply renewable kit without surface exposure? Refreshing geometry first.")
+== #12278 2026-10-19T11:42:08 p1 role=method_researcher iter=33 0 s
+bot.clearControlStates();bot.pathfinder.setGoal(null); const p=bot.entity.position; console.log('SOURCE',JSON.stringify({p,hp:bot.health,food:bot.food,dimension:bot.game.dimension,items:bot.inventory.items().map(i=>[i.name,i.count]),time:bot.time.timeOfDay}));for(let y=-2;y<=4;y++){let a=[];for(let x=-2;x<=2;x++)for(let z=-2;z<=2;z++){const b=bot.blockAt(p.floored().offset(x,y,z));a.push([x,y,z,b?.name]);}console.log('GEOMETRY',JSON.stringify(a));} console.log('ENTITIES',JSON.stringify(Object.values(bot.entities).filter(e=>e.position.distanceTo(p)<16).map(e=>[e.name,e.position,e.id])));
+-- output --
+SOURCE {"p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","items":[["dirt",1]],"time":17624}
+GEOMETRY [[-2,-2,-2,"stone"],[-2,-2,-1,"stone"],[-2,-2,0,"stone"],[-2,-2,1,"stone"],[-2,-2,2,"stone"],[-1,-2,-2,"stone"],[-1,-2,-1,"stone"],[-1,-2,0,"stone"],[-1,-2,1,"stone"],[-1,-2,2,"stone"],[0,-2,-2,"dirt"],[0,-2,-1,"stone"],[0,-2,0,"stone"],[0,-2,1,"stone"],[0,-2,2,"stone"],[1,-2,-2,"dirt"],[1,-2,-1,"stone"],[1,-2,0,"stone"],[1,-2,1,"stone"],[1,-2,2,"stone"],[2,-2,-2,"dirt"],[2,-2,-1,"dirt"],[2,-2,0,"stone"],[2,-2,1,"stone"],[2,-2,2,"stone"]]
+GEOMETRY [[-2,-1,-2,"stone"],[-2,-1,-1,"stone"],[-2,-1,0,"stone"],[-2,-1,1,"stone"],[-2,-1,2,"stone"],[-1,-1,-2,"stone"],[-1,-1,-1,"stone"],[-1,-1,0,"stone"],[-1,-1,1,"stone"],[-1,-1,2,"stone"],[0,-1,-2,"dirt"],[0,-1,-1,"stone"],[0,-1,0,"stone"],[0,-1,1,"stone"],[0,-1,2,"stone"],[1,-1,-2,"dirt"],[1,-1,-1,"stone"],[1,-1,0,"stone"],[1,-1,1,"stone"],[1,-1,2,"stone"],[2,-1,-2,"dirt"],[2,-1,-1,"dirt"],[2,-1,0,"stone"],[2,-1,1,"stone"],[2,-1,2,"stone"]]
+GEOMETRY [[-2,0,-2,"stone"],[-2,0,-1,"granite"],[-2,0,0,"granite"],[-2,0,1,"granite"],[-2,0,2,"granite"],[-1,0,-2,"stone"],[-1,0,-1,"stone"],[-1,0,0,"stone"],[-1,0,1,"stone"],[-1,0,2,"stone"],[0,0,-2,"stone"],[0,0,-1,"stone"],[0,0,0,"air"],[0,0,1,"stone"],[0,0,2,"stone"],[1,0,-2,"stone"],[1,0,-1,"stone"],[1,0,0,"stone"],[1,0,1,"stone"],[1,0,2,"stone"],[2,0,-2,"dirt"],[2,0,-1,"stone"],[2,0,0,"stone"],[2,0,1,"stone"],[2,0,2,"stone"]]
+G
+... (3287 chars; --full)
+== #12282 2026-10-19T11:42:20 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 actual12278 sealed0.56/51/-29.5 HP8.33 food17 Dirt1, stone sides/floor, grass roofY53 and air above. P2 already food success noted; P3 food recovery branch avoids duplication. I select research alternative: protected local berry propagation (plant/harvest from enclosed access) to replace recurring exposed harvest. Need 1 berry donor later only if viable; first regain local wood/body access on p1. No reset.")
+== #12287 2026-10-19T11:42:35 p1 role=method_researcher iter=33 4.4 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();function audit(tag){console.log(tag,JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,items:bot.inventory.items().map(i=>[i.name,i.count]),blocks:[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>{const b=bot.blockAt(bot.entity.position.floored().offset(...d));return[b.position,b.name,b.boundingBox]})}));}audit('SOURCE');if(bot.health<8||bot.food<17)throw Error('body');const roof=bot.blockAt(p.offset(0,2,0));if(roof.name!=='grass_block')throw Error('roof mismatch');await bot.dig(roof);await bot.waitForTicks(12);console.log('REFUND',bot.inventory.items().map(i=>[i.name,i.count]));const above=bot.blockAt(p.offset(0,3,0));console.log('ABOVE',above.name);if(above.boundingBox!=='empty')throw Error('blocked');await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');bot.setControlState('jump',true);try{for(let k=0;k<12;k++){await bot.waitForTicks(1);if(bot.entity.position.y>p.y+.85){await bot.placeBlock(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0));break;}}}finally{bot.clearControlStates();}await bot.waitForTicks(8);console.log('STEP',bot.entity.position);const cap=bot.blockAt(p.offset(0,3,0));if(cap.name==='air'){const ref=bot.blockAt(p.offset(1,3,0));await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(ref,new Vec3(-1,0,0));}await bot.waitForTicks(6)
+... (1514 chars; --full)
+-- output --
+SOURCE {"p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"items":[["dirt",1]],"blocks":[[{"x":-1,"y":51,"z":-30},"stone","block"],[{"x":1,"y":51,"z":-30},"stone","block"],[{"x":0,"y":51,"z":-31},"stone","block"],[{"x":0,"y":51,"z":-29},"stone","block"],[{"x":-1,"y":52,"z":-30},"stone","block"],[{"x":1,"y":52,"z":-30},"stone","block"],[{"x":0,"y":52,"z":-31},"stone","block"],[{"x":0,"y":52,"z":-29},"stone","block"],[{"x":0,"y":50,"z":-30},"stone","block"],[{"x":0,"y":53,"z":-30},"grass_block","block"]]}
+REFUND [ [ 'dirt', 2 ] ]
+ABOVE air
+STEP Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 }
+END {"p":{"x":0.5620620120488068,"y":52,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"items":[],"blocks":[[{"x":-1,"y":52,"z":-30},"stone","block"],[{"x":1,"y":52,"z":-30},"stone","block"],[{"x":0,"y":52,"z":-31},"stone","block"],[{"x":0,"y":52,"z":-29},"stone","block"],[{"x":-1,"y":53,"z":-30},"dirt","block"],[{"x":1,"y":53,"z":-30},"stone","block"],[{"x":0,"y":53,"z":-31},"stone","block"],[{"x":0,"y":53,"z":-29},"stone","block"],[{"x":0,"y":51,"z":-30},"dirt","block"],[{"x":0,"y":54,"z":-30},"dirt","block"]]}
+== #12292 2026-10-19T11:43:02 p1 role=method_researcher iter=33 3.3 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let p=bot.entity.position.floored();console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));const a=bot.blockAt(p.offset(-1,1,0));if(a.name!=='dirt')throw Error('soil mismatch');await bot.dig(a);await bot.waitForTicks(5);console.log('WINDOW',[-1,-2,-3].map(x=>{let b=bot.blockAt(p.offset(x,1,0));return [b.position,b.name,bot.canSeeBlock(b)]}));try{const b=bot.blockAt(p.offset(-2,1,0));if(!['dirt','grass_block'].includes(b.name)||!bot.canSeeBlock(b))throw Error('no second soil');await bot.dig(b);await bot.waitForTicks(10);}finally{console.log('FUNDS',bot.inventory.items().map(i=>[i.name,i.count]));let i=bot.inventory.items().find(i=>i.name==='dirt');if(i){await bot.equip(i,'hand');await bot.placeBlock(bot.blockAt(p.offset(-1,0,0)),new Vec3(0,1,0));}bot.clearControlStates();}console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),bot.blockAt(p.offset(-1,1,0)).name,bot.blockAt(p.offset(0,2,0)).name);
+-- output --
+SOURCE Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } 8.333332061767578 17 []
+WINDOW [
+  [ Vec3 { x: -1, y: 53, z: -30 }, 'air', true ],
+  [ Vec3 { x: -2, y: 53, z: -30 }, 'grass_block', true ],
+  [ Vec3 { x: -3, y: 53, z: -30 }, 'dirt', false ]
+]
+FUNDS [ [ 'dirt', 1 ] ]
+END Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } 8.333332061767578 17 [ [ 'dirt', 1 ] ] dirt dirt
+== #12296 2026-10-19T11:43:13 p1 role=method_researcher iter=33 1.9 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();function audit(tag){console.log(tag,JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,items:bot.inventory.items().map(i=>[i.name,i.count]),blocks:[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>{const b=bot.blockAt(bot.entity.position.floored().offset(...d));return[b.position,b.name,b.boundingBox]})}));}audit('SOURCE');if(bot.health<8||bot.food<16)throw Error('body');const roof=bot.blockAt(p.offset(0,2,0));if(!['grass_block','dirt'].includes(roof.name))throw Error('roof mismatch');await bot.dig(roof);await bot.waitForTicks(12);console.log('REFUND',bot.inventory.items().map(i=>[i.name,i.count]));const above=bot.blockAt(p.offset(0,3,0));console.log('ABOVE',above.name);if(above.boundingBox!=='empty')throw Error('blocked');await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');bot.setControlState('jump',true);try{for(let k=0;k<12;k++){await bot.waitForTicks(1);if(bot.entity.position.y>p.y+.85){await bot.placeBlock(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0));break;}}}finally{bot.clearControlStates();}await bot.waitForTicks(8);console.log('STEP',bot.entity.position);const cap=bot.blockAt(p.offset(0,3,0));if(cap.name==='air'){const ref=bot.blockAt(p.offset(1,3,0));await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(ref,new Vec3(-1,0,0));}await b
+... (1532 chars; --full)
+-- output --
+SOURCE {"p":{"x":0.5620620120488068,"y":52,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"items":[],"blocks":[[{"x":-1,"y":52,"z":-30},"stone","block"],[{"x":1,"y":52,"z":-30},"stone","block"],[{"x":0,"y":52,"z":-31},"stone","block"],[{"x":0,"y":52,"z":-29},"stone","block"],[{"x":-1,"y":53,"z":-30},"dirt","block"],[{"x":1,"y":53,"z":-30},"stone","block"],[{"x":0,"y":53,"z":-31},"stone","block"],[{"x":0,"y":53,"z":-29},"stone","block"],[{"x":0,"y":51,"z":-30},"dirt","block"],[{"x":0,"y":54,"z":-30},"dirt","block"]]}
+REFUND [ [ 'dirt', 1 ] ]
+ABOVE air
+STEP Vec3 { x: 0.5620620120488068, y: 53, z: -29.50050049685977 }
+-- error --
+Error: Invalid item object in equip (item is null or typeof item is not object)
+    at Proxy.equip (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/simple_inventory.js:93:13)
+    at p1-program-12296.js:1:1389
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+== #12302 2026-10-19T11:43:33 p1 role=method_researcher iter=33 3.1 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));await bot.dig(bot.blockAt(bot.entity.position.floored().offset(0,-1,0)));await bot.waitForTicks(12);console.log('DOWN',bot.entity.position,bot.inventory.items().map(i=>[i.name,i.count]));await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(bot.blockAt(bot.entity.position.floored().offset(1,2,0)),new Vec3(-1,0,0));await bot.waitForTicks(15);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>bot.blockAt(bot.entity.position.floored().offset(...d)).name));
+-- output --
+SOURCE Vec3 { x: 0.5620620120488068, y: 53, z: -29.50050049685977 } 8.333332061767578 17 []
+DOWN Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } [ [ 'dirt', 1 ] ]
+END Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } 8.333332061767578 17 [] [
+  'stone', 'stone',
+  'stone', 'stone',
+  'dirt',  'stone',
+  'stone', 'stone',
+  'dirt',  'dirt'
+]
+== #12306 2026-10-19T11:43:56 p1 role=method_researcher iter=33 12.4 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();console.log('SOURCE',bot.entity.position,bot.health,bot.food);for(const dy of [1,0]){const b=bot.blockAt(p.offset(-1,dy,0));console.log('CUT',b.name,b.position);await bot.dig(b);}await bot.lookAt(new Vec3(p.x-1.5,bot.entity.position.y+1.62,p.z+.5),true);bot.setControlState('forward',true);try{for(let i=0;i<25;i++){await bot.waitForTicks(1);if(bot.entity.position.x<p.x-.3)break;}}finally{bot.clearControlStates();}await bot.waitForTicks(15);console.log('ARRIVAL',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));const q=bot.entity.position.floored();if(q.x!==p.x-1)throw Error('not shifted');for(const dy of [0,1]){await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(bot.blockAt(p.offset(1,dy,0)),new Vec3(-1,0,0));await bot.waitForTicks(4);}await bot.waitForTicks(12);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));for(let y=-1;y<=3;y++){console.log('GEOMETRY',y,[-2,-1,0,1,2].map(x=>{let b=bot.blockAt(q.offset(x,y,0));return[b.position,b.name]}));}
+-- output --
+SOURCE Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } 8.333332061767578 17
+CUT dirt Vec3 { x: -1, y: 53, z: -30 }
+CUT stone Vec3 { x: -1, y: 52, z: -30 }
+ARRIVAL Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 2 ] ]
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 []
+GEOMETRY -1 [
+  [ Vec3 { x: -3, y: 51, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 51, z: -30 }, 'granite' ],
+  [ Vec3 { x: -1, y: 51, z: -30 }, 'stone' ],
+  [ Vec3 { x: 0, y: 51, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 51, z: -30 }, 'stone' ]
+]
+GEOMETRY 0 [
+  [ Vec3 { x: -3, y: 52, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 52, z: -30 }, 'gravel' ],
+  [ Vec3 { x: -1, y: 52, z: -30 }, 'air' ],
+  [ Vec3 { x: 0, y: 52, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 52, z: -30 }, 'stone' ]
+]
+GEOMETRY 1 [
+  [ Vec3 { x: -3, y: 53, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 53, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 53, z: -30 }, 'air' ],
+  [ Vec3 { x: 0, y: 53, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 53, z: -30 }, 'stone' ]
+]
+GEOMETRY 2 [
+  [ Vec3 { x: -3, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 54, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 0, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 54, z: -30 }, 'stone' ]
+]
+GEOMETRY 3 [
+  [ Vec3 { x: -3, y: 55, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 55, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 55, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 0, y: 55, z: -30 }, 'air' ],
+  [ Vec3 { x: 1,
+... (1529 chars; --full)
+== #12312 2026-10-19T11:44:14 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 finding live12292\u219212296: head-window cut two soils did NOT yield two actual carried dirt; second drop remained outside pickup reach. Immediate END showed Dirt1 while next SOURCE empty after closure debit settled. 12296 ascent lacked cap; reversed12302 to same HP8.33/full pod52. Require settled post-placement inventory and next SOURCE, do not budget far drops as receipt. Now testing one protected west shift to collect actual drop. Propagation still untested.")
+== #12318 2026-10-19T11:44:37 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 sandbox IDLE, no sandbox test or reset this iteration; all own LIVE outputs preserved. P4/P3 reset coordination clear from P1. P1 protected westshift12306 actually collected delayed far drop (Dirt2) then spent2 closing rear. Current west head air over full gravel feet; adapting to vertical soil harvest where gravity should deliver drops inside reach instead.")
+== #12319 2026-10-19T11:44:37 p1 role=method_researcher iter=33 5.9 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));try{for(let y=2;y<=4;y++){const b=bot.blockAt(p.offset(0,y,0));console.log('CEILING',b.position,b.name,bot.canSeeBlock(b));if(!['dirt','grass_block'].includes(b.name))break;await bot.dig(b);await bot.waitForTicks(8);console.log('RECEIPT',bot.inventory.items().map(i=>[i.name,i.count]));}}finally{for(const [target,ref,face] of [[p.offset(0,2,0),p.offset(1,2,0),new Vec3(-1,0,0)],[p.offset(-1,1,0),p.offset(-1,0,0),new Vec3(0,1,0)]]){if(bot.blockAt(target).boundingBox==='empty'){const i=bot.inventory.items().find(i=>i.name==='dirt');if(!i){console.log('UNFUNDED',target);continue;}await bot.equip(i,'hand');await bot.placeBlock(bot.blockAt(ref),face);await bot.waitForTicks(6);}}bot.clearControlStates();}await bot.waitForTicks(12);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>bot.blockAt(p.offset(...d)).name));
+-- output --
+SOURCE Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 []
+CEILING Vec3 { x: -1, y: 54, z: -30 } dirt true
+RECEIPT []
+CEILING Vec3 { x: -1, y: 55, z: -30 } dirt true
+RECEIPT [ [ 'dirt', 1 ] ]
+CEILING Vec3 { x: -1, y: 56, z: -30 } grass_block true
+RECEIPT [ [ 'dirt', 2 ] ]
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [] [
+  'gravel', 'dirt',
+  'stone',  'stone',
+  'dirt',   'dirt',
+  'dirt',   'dirt',
+  'stone',  'dirt'
+]
+== #12322 2026-10-19T11:44:54 p1 role=method_researcher iter=33 4.5 s
+const {Vec3}=require('vec3');bot.clearControlStates();const p=bot.entity.position.floored();console.log('SOURCE',bot.inventory.items().map(i=>[i.name,i.count]),bot.health);console.log('DROPS',Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>[e.id,e.position]));await bot.dig(bot.blockAt(p.offset(0,2,0)));for(let i=0;i<4;i++){await bot.waitForTicks(10);console.log('SETTLE',i,bot.inventory.items().map(i=>[i.name,i.count]),Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>[e.id,e.position]));}await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(bot.blockAt(p.offset(1,2,0)),new Vec3(-1,0,0));await bot.waitForTicks(15);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),bot.blockAt(p.offset(0,2,0)).name);
+-- output --
+SOURCE [] 8.333332061767578
+DROPS [ [ 808, Vec3 { x: -0.875, y: 55, z: -29.125 } ] ]
+SETTLE 0 [] [
+  [
+    854,
+    Vec3 {
+      x: -0.1912800475714561,
+      y: 54.98948081002808,
+      z: -29.635499609114728
+    }
+  ]
+]
+SETTLE 1 [ [ 'dirt', 2 ] ] []
+SETTLE 2 [ [ 'dirt', 2 ] ] []
+SETTLE 3 [ [ 'dirt', 2 ] ] []
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 1 ] ] dirt
+== #12326 2026-10-19T11:45:17 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 discriminating result12319/12322: vertical soil drops can be trapped ABOVE newly replaced cap if closure occurs8ticks after last dig. Actual item808 at(-.875,55,-29.125) above cap54 observed. Reopened cap, at10ticks inv0/drop854 still falling; at20ticks actualDirt2/noitem; at40ticks2, recapped+15ticks actualDirt1. HP unchanged8.33/full. Minimal transfer: after overhead mining wait >=20ticks and verify actual count BEFORE cap, not immediate dig return. P2/P4 use receipt wait if overhead materials budget matters.")
+== #12330 2026-10-19T11:45:43 p1 role=method_researcher iter=33 8.1 s
+const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position.floored();console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));await bot.dig(bot.blockAt(p.offset(0,2,0)));try{for(const [dx,dz] of [[1,0],[0,1],[0,-1],[-1,0]]){const b=bot.blockAt(p.offset(dx,2,dz));console.log('TARGET',b.position,b.name,bot.canSeeBlock(b));if(['dirt','grass_block'].includes(b.name)&&bot.canSeeBlock(b)){await bot.dig(b);await bot.waitForTicks(10);}}await bot.waitForTicks(30);console.log('FUNDS',bot.inventory.items().map(i=>[i.name,i.count]),Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<6).map(e=>[e.id,e.position]));}finally{const refs=[[1,2,0],[-1,2,0],[0,2,1],[0,2,-1],[1,1,0]].map(d=>bot.blockAt(p.offset(...d)));let r=refs.find(b=>b.boundingBox==='block'&&Math.abs(b.position.y-(p.y+2))===0);if(r){await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(r,new Vec3(p.x-r.position.x,0,p.z-r.position.z));}else console.log('NO_CAP_REFERENCE');bot.clearControlStates();}await bot.waitForTicks(15);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>bot.blockAt(p.offset(...d)).name));
+-- output --
+SOURCE Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 1 ] ]
+TARGET Vec3 { x: 0, y: 54, z: -30 } dirt true
+TARGET Vec3 { x: -1, y: 54, z: -29 } dirt true
+TARGET Vec3 { x: -1, y: 54, z: -31 } dirt true
+TARGET Vec3 { x: -2, y: 54, z: -30 } air false
+FUNDS [ [ 'dirt', 4 ] ] [ [ 973, Vec3 { x: 0.875, y: 54, z: -29.83891542358486 } ] ]
+NO_CAP_REFERENCE
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 4 ] ] [
+  'gravel', 'dirt',
+  'stone',  'stone',
+  'dirt',   'dirt',
+  'dirt',   'dirt',
+  'stone',  'air'
+]
+== #12335 2026-10-19T11:46:02 p1 role=method_researcher iter=33 1.2 s
+const {Vec3}=require('vec3');bot.clearControlStates();let p=bot.entity.position.floored();console.log('SOURCE',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));let r=bot.blockAt(p.offset(0,3,-1));console.log('REF',r.name,r.position,bot.canSeeBlock(r));await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(r,new Vec3(0,-1,0));await bot.waitForTicks(6);await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.placeBlock(bot.blockAt(p.offset(0,2,-1)),new Vec3(0,0,1));await bot.waitForTicks(15);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]),bot.blockAt(p.offset(0,2,0)).name);
+-- output --
+SOURCE Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 [ [ 'dirt', 4 ] ]
+REF dirt Vec3 { x: -1, y: 55, z: -31 } true
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 2 ] ] dirt
+== #12342 2026-10-19T11:46:31 p1 role=method_researcher iter=33 0.2 s
+bot.clearControlStates();bot.pathfinder.setGoal(null);const p=bot.entity.position;console.log('SOURCE',p,bot.health,bot.food,bot.time.timeOfDay,bot.inventory.items().map(i=>[i.name,i.count]));console.log('LOGS',bot.findBlocks({matching:b=>b&&b.name.endsWith('_log'),maxDistance:48,count:12}).map(v=>[v,bot.blockAt(v).name]));console.log('FOOD',bot.findBlocks({matching:b=>b&&['sweet_berry_bush','chest','wheat','furnace','white_bed'].includes(b.name),maxDistance:48,count:12}).map(v=>[v,bot.blockAt(v).name,bot.blockAt(v).getProperties()]));console.log('BOUNDARY',[[-1,0,0],[1,0,0],[0,0,-1],[0,0,1],[-1,1,0],[1,1,0],[0,1,-1],[0,1,1],[0,-1,0],[0,2,0]].map(d=>[d,bot.blockAt(p.floored().offset(...d)).name]));
+-- output --
+SOURCE Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 22904 [ [ 'dirt', 2 ] ]
+LOGS [
+  [ Vec3 { x: -21, y: 57, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 58, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 59, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 60, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 61, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -13, y: 65, z: -17 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 62, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -13, y: 66, z: -17 }, 'spruce_log' ],
+  [ Vec3 { x: -21, y: 63, z: -30 }, 'spruce_log' ],
+  [ Vec3 { x: -13, y: 67, z: -17 }, 'spruce_log' ],
+  [ Vec3 { x: -13, y: 68, z: -17 }, 'spruce_log' ],
+  [ Vec3 { x: -13, y: 69, z: -17 }, 'spruce_log' ]
+]
+FOOD []
+BOUNDARY [
+  [ [ -1, 0, 0 ], 'gravel' ],
+  [ [ 1, 0, 0 ], 'dirt' ],
+  [ [ 0, 0, -1 ], 'stone' ],
+  [ [ 0, 0, 1 ], 'stone' ],
+  [ [ -1, 1, 0 ], 'dirt' ],
+  [ [ 1, 1, 0 ], 'dirt' ],
+  [ [ 0, 1, -1 ], 'dirt' ],
+  [ [ 0, 1, 1 ], 'dirt' ],
+  [ [ 0, -1, 0 ], 'stone' ],
+  [ [ 0, 2, 0 ], 'dirt' ]
+]
+== #12344 2026-10-19T11:46:53 p1 role=method_researcher iter=33 4.9 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z);const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),time:bot.time.timeOfDay});
+const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99],[.01,.01,.5],[.99,.01,.5],[.5,.01,.01],[.5,.01,.99]]){let aim=q.offset(...a),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=aim.minus(eye),dist=d.norm();if(dist>4.4||dist<.001)continue;const h=bot.world.raycast(eye,d.scaled(1/dist),dist+.02);if(!h?.position.equals(q)||(f!==null&&h.face!==f))continue;await bot.lookAt(aim,true);await wait(1);let c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('face '+q+' f'+f);}
+async function cut(q){const b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!b||!['dirt','grass_block','spruce_log','stone','granite','diorite','andesite','gravel'].includes(b.name))throw Error('cut type '+b?.name);const tool=bot.inventory.items().find(i=>b.name.endsWith('log')?i.name.endsWith('_axe'):['dirt','grass_block','gravel'].includes(b.name)?i.
+... (3947 chars; --full)
+-- output --
+SOURCE {"at":"2026-10-19T11:46:53.318Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null]],"time":23324,"faces":[{"q":{"x":-1,"y":51,"z":-30},"n":"stone","full":true},{"q":{"x":-1,"y":54,"z":-30},"n":"grass_block","full":true},{"q":{"x":0,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":0,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-30},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-30},"n":"grass_block","full":true},{"q":{"x":-1,"y":52,"z":-29},"n":"stone","full":true},{"q":{"x":-1,"y":53,"z":-29},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-31},"n":"stone","full":true},{"q":{"x":-1,"y":53,"z":-31},"n":"dirt","full":true}]}
+CUT {"q":{"x":-2,"y":53,"z":-30},"n":"grass_block","state":{"at":"2026-10-19T11:46:54.375Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null]],"time":23344}}
+CUT {"q":{"x":-2,"y":52,"z":-30},"n":"gravel","state":{"at":"2026-10-19T11:46:55.478Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",3,null]],"time":23364}}
+MOVE {"at":"2026-10-19T11:46:55.829Z","p":{"x":-1.312199679268933,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",3,null]],"time":23384}
+RECEIVED {"at":"2026-10-19T11:46:56.832Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":t
+... (4530 chars; --full)
+-- returned --
+{"at": "2026-10-19T11:46:58.235Z", "p": {"x": -1.3418188768690336, "y": 52, "z": -29.500500496859594}, "hp": 8.333332061767578, "food": 17, "ground": true, "inv": [["flint", 1, null]], "time": 23424}
+== #12348 2026-10-19T11:47:18 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 actual12344 adopted P4 core native face/cut/move/place: protected weststep full10/HP8.33 food17, received Dirt3+Flint1 then spent3 rear+roof; retainFlint1. P4 receipt-wait adoption12328 and edge-support correction12332 noted; wait is conditional, not sufficient. Next distinct route research: build own protected access to log~(-21,57,-30), then native boat travel interface if funded. Goal distinguish true boat control vs stale association; no sandbox reset while P3 active.")
+== #12349 2026-10-19T11:47:19 p1 role=method_researcher iter=33 4.6 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z);const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),time:bot.time.timeOfDay});
+const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99],[.01,.01,.5],[.99,.01,.5],[.5,.01,.01],[.5,.01,.99]]){let aim=q.offset(...a),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=aim.minus(eye),dist=d.norm();if(dist>4.4||dist<.001)continue;const h=bot.world.raycast(eye,d.scaled(1/dist),dist+.02);if(!h?.position.equals(q)||(f!==null&&h.face!==f))continue;await bot.lookAt(aim,true);await wait(1);let c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('face '+q+' f'+f);}
+async function cut(q){const b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!b||!['dirt','grass_block','spruce_log','stone','granite','diorite','andesite','gravel'].includes(b.name))throw Error('cut type '+b?.name);const tool=bot.inventory.items().find(i=>b.name.endsWith('log')?i.name.endsWith('_axe'):['dirt','grass_block','gravel'].includes(b.name)?i.
+... (3952 chars; --full)
+-- output --
+SOURCE {"at":"2026-10-19T11:47:19.089Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23844,"faces":[{"q":{"x":-2,"y":51,"z":-30},"n":"granite","full":true},{"q":{"x":-2,"y":54,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-29},"n":"granite","full":true},{"q":{"x":-2,"y":53,"z":-29},"n":"grass_block","full":true},{"q":{"x":-2,"y":52,"z":-31},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-31},"n":"dirt","full":true}]}
+CUT {"q":{"x":-3,"y":53,"z":-30},"n":"dirt","state":{"at":"2026-10-19T11:47:19.994Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23864}}
+CUT {"q":{"x":-3,"y":52,"z":-30},"n":"dirt","state":{"at":"2026-10-19T11:47:20.949Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",1,null],["flint",1,null]],"time":23884}}
+MOVE {"at":"2026-10-19T11:47:21.398Z","p":{"x":-2.5,"y":52,"z":-29.500500496859505},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null],["flint",1,null]],"time":23884}
+RECEIVED {"at":"2026-10-19T11:47:22.653Z","p":{"x":-2.5,"y":52,"z":-29.500500496859505},"h
+... (4245 chars; --full)
+-- returned --
+{"at": "2026-10-19T11:47:23.736Z", "p": {"x": -2.5, "y": 52, "z": -29.500500496859505}, "hp": 8.333332061767578, "food": 17, "ground": true, "inv": [["flint", 1, null]], "time": 23944}
+== #12354 2026-10-19T11:47:36 p1 role=method_researcher iter=33 0 s
+console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));for(let x=-4;x>=-9;x--){console.log('COLUMN',x,[51,52,53,54,55,56,57].map(y=>[y,bot.blockAt(require('vec3').Vec3(x,y,-30))?.name]));}
+-- output --
+SOURCE Vec3 { x: -2.5, y: 52, z: -29.500500496859505 } 8.333332061767578 17 [ [ 'flint', 1 ] ]
+-- error --
+TypeError: Class constructor Vec3 cannot be invoked without 'new'
+    at p1-program-12354.js:1:218
+    at Array.map (<anonymous>)
+    at p1-program-12354.js:1:180
+    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:474:17)
+    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:599:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+== #12356 2026-10-19T11:47:40 p1 role=method_researcher iter=33 0 s
+const {Vec3}=require('vec3');console.log('SOURCE',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));for(let x=-4;x>=-9;x--){console.log('COLUMN',x,[51,52,53,54,55,56,57].map(y=>[y,bot.blockAt(new Vec3(x,y,-30))?.name]));}
+-- output --
+SOURCE Vec3 { x: -2.5, y: 52, z: -29.500500496859505 } 8.333332061767578 17 [ [ 'flint', 1 ] ]
+COLUMN -4 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+COLUMN -5 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+COLUMN -6 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+COLUMN -7 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+COLUMN -8 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+COLUMN -9 [
+  [ 51, 'air' ],
+  [ 52, 'air' ],
+  [ 53, 'air' ],
+  [ 54, 'air' ],
+  [ 55, 'air' ],
+  [ 56, 'air' ],
+  [ 57, 'air' ]
+]
+== #12360 2026-10-19T11:48:06 p1 role=method_researcher iter=33 0 s
+const {Vec3}=require('vec3');console.log('BODY',bot.entity.position,bot.health,bot.time.timeOfDay);for(let y=50;y<=58;y++)console.log('ROW',y,[-5,-4,-3,-2,-1,0].map(x=>[x,bot.blockAt(new Vec3(x,y,-30))?.name]));console.log('VISIBLE',Object.values(bot.entities).filter(e=>e.position.distanceTo(bot.entity.position)<20).map(e=>[e.name,e.position]));
+-- output --
+BODY Vec3 { x: -2.5, y: 52, z: -29.500500496859505 } 8.333332061767578 784
+ROW 50 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'granite' ],
+  [ -2, 'stone' ],
+  [ -1, 'stone' ],
+  [ 0, 'stone' ]
+]
+ROW 51 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'dirt' ],
+  [ -2, 'granite' ],
+  [ -1, 'stone' ],
+  [ 0, 'dirt' ]
+]
+ROW 52 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'air' ],
+  [ -2, 'dirt' ],
+  [ -1, 'dirt' ],
+  [ 0, 'dirt' ]
+]
+ROW 53 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'air' ],
+  [ -2, 'dirt' ],
+  [ -1, 'dirt' ],
+  [ 0, 'grass_block' ]
+]
+ROW 54 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'dirt' ],
+  [ -2, 'grass_block' ],
+  [ -1, 'grass_block' ],
+  [ 0, 'air' ]
+]
+ROW 55 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'dirt' ],
+  [ -2, 'air' ],
+  [ -1, 'air' ],
+  [ 0, 'air' ]
+]
+ROW 56 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'grass_block' ],
+  [ -2, 'grass_block' ],
+  [ -1, 'air' ],
+  [ 0, 'grass_block' ]
+]
+ROW 57 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'snow' ],
+  [ -2, 'snow' ],
+  [ -1, 'air' ],
+  [ 0, 'snow' ]
+]
+ROW 58 [
+  [ -5, 'air' ],
+  [ -4, 'air' ],
+  [ -3, 'air' ],
+  [ -2, 'air' ],
+  [ -1, 'air' ],
+  [ 0, 'air' ]
+]
+VISIBLE [
+  [ 'player', Vec3 { x: -2.5, y: 52, z: -29.500500496859505 } ],
+  [
+    'skeleton',
+    Vec3 { x: -2.711140819607679, y: 46, z: -35.46638191655219 }
+  ],
+  [ 'item', Vec3 { x: 0.875, y: 54, z: -29.83876743540472 } ],
+  [
+    'skeleton',
+    Vec3 { x: 11.426244363757414, y: 48, z: -32.965978140047355 }
+  ],
+  [
+    'skeleton',
+    Vec3 { 
+... (1648 chars; --full)
+== #12362 2026-10-19T11:48:15 p1 role=method_researcher iter=33 4.6 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z);const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),time:bot.time.timeOfDay});
+const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.01,.5],[.5,.99,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99],[.01,.01,.5],[.99,.01,.5],[.5,.01,.01],[.5,.01,.99]]){let aim=q.offset(...a),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=aim.minus(eye),dist=d.norm();if(dist>4.4||dist<.001)continue;const h=bot.world.raycast(eye,d.scaled(1/dist),dist+.02);if(!h?.position.equals(q)||(f!==null&&h.face!==f))continue;await bot.lookAt(aim,true);await wait(1);let c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return c;}throw Error('face '+q+' f'+f);}
+async function cut(q){const b=bot.blockAt(q);if(b?.boundingBox==='empty')return;if(!b||!['dirt','grass_block','spruce_log','stone','granite','diorite','andesite','gravel'].includes(b.name))throw Error('cut type '+b?.name);const tool=bot.inventory.items().find(i=>b.name.endsWith('log')?i.name.endsWith('_axe'):['dirt','grass_block','gravel'].includes(b.name)?i.
+... (3869 chars; --full)
+-- output --
+SOURCE {"at":"2026-10-19T11:48:15.655Z","p":{"x":-2.5,"y":52,"z":-29.500500496859505},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":984,"faces":[{"q":{"x":-3,"y":51,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":54,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-4,"y":52,"z":-30},"n":"air","full":false},{"q":{"x":-4,"y":53,"z":-30},"n":"air","full":false},{"q":{"x":-3,"y":52,"z":-29},"n":"grass_block","full":true},{"q":{"x":-3,"y":53,"z":-29},"n":"snow","full":false},{"q":{"x":-3,"y":52,"z":-31},"n":"grass_block","full":true},{"q":{"x":-3,"y":53,"z":-31},"n":"snow","full":false}]}
+CUT {"q":{"x":-2,"y":53,"z":-30},"n":"dirt","state":{"at":"2026-10-19T11:48:16.563Z","p":{"x":-2.5,"y":52,"z":-29.500500496859505},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":1004}}
+CUT {"q":{"x":-2,"y":52,"z":-30},"n":"dirt","state":{"at":"2026-10-19T11:48:17.517Z","p":{"x":-2.5,"y":52,"z":-29.500500496859505},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",1,null],["flint",1,null]],"time":1004}}
+MOVE {"at":"2026-10-19T11:48:17.919Z","p":{"x":-1.6750638232628616,"y":52,"z":-29.50050049685966},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null],["flint",1,null]],"time":1024}
+PLACE {"q":{"x":-3,"y":53,"z":-30},"name":"dirt","state":{"at":"2026-10-19T11:48:19.524Z","p":{"x":-1.6428302801635537,"y":52
+... (4103 chars; --full)
+-- returned --
+{"at": "2026-10-19T11:48:20.273Z", "p": {"x": -1.6428302801635537, "y": 52, "z": -29.50050049685966}, "hp": 8.333332061767578, "food": 17, "ground": true, "inv": [["flint", 1, null]], "time": 1064}
+== #12364 2026-10-19T11:48:35 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 correction12349 weststep ending had exposed west and snow side heads: next roof/floor alone was insufficient admission. I caught flags on full output, did NOT generalize safe corridor.12362 reversed native cuts/move/reclosure; threeactual full10 at(-1.643,52,-29.5), HP8.33 food17 Flint1 only. Proposed log route west encounters cliff AIRx-4 acrossY50..58, so west tunneling rejected; boat branch not reached. Admission change must inspect destination transverse walls too.")
+== #12367 2026-10-19T11:48:50 p1 role=method_researcher iter=33 0 s
+bot.chat("P1 next high-impact uncertainty: current p1 respawn checkpoint could affect stronghold travel dependency; actual location unverified, no assumption from historical bed. Request P4 coordinate P1 own sandbox reset for bounded ordinary death/respawn observation using copied lowHP body. P1 SB idle/no prior tests; LIVE sealed12362 and all results preserved. P3 released SB idle previously. Will not reset until coordinator clear; independent offline record review meanwhile.")

@@ -1,0 +1,15 @@
+program #12447 on p1: 1.5 s
+--- output ---
+SOURCE {"p":{"x":-1.7350960646580134,"y":63,"z":-22.584602174733604},"hp":20,"food":20,"ground":true,"items":[["spruce_planks",3],["spruce_boat",1],["spruce_sapling",1]],"time":11404}
+WATER [
+  [ Vec3 { x: -3, y: 61, z: -22 }, 'water', { level: '1' } ],
+  [ Vec3 { x: -4, y: 61, z: -22 }, 'water', { level: '0' } ],
+  [ Vec3 { x: -5, y: 61, z: -22 }, 'water', { level: '0' } ]
+]
+CURSOR ice
+END {"p":{"x":-1.7350960646580134,"y":63,"z":-22.584602174733604},"hp":20,"food":20,"items":[["spruce_planks",3],["spruce_boat",1],["spruce_sapling",1]],"boats":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-1.7, 63, -22.6) in overworld, health 20/20, food 20/20, alive

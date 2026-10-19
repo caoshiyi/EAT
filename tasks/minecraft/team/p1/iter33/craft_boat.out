@@ -1,0 +1,20 @@
+program #12420 on p1: 3.1 s
+--- output ---
+SOURCE Vec3 { x: 5.513293280344676, y: 73, z: -22.20857201758687 } 20 20 [ [ 'spruce_log', 3 ], [ 'spruce_sapling', 1 ] ]
+CRAFT spruce_planks [ [ 'spruce_planks', 8 ], [ 'spruce_sapling', 1 ] ]
+CRAFT crafting_table [
+  [ 'crafting_table', 1 ],
+  [ 'spruce_planks', 8 ],
+  [ 'spruce_sapling', 1 ]
+]
+TABLE crafting_table
+END Vec3 { x: 5.513293280344676, y: 73, z: -22.20857201758687 } 20 20 [
+  [ 'spruce_planks', 3 ],
+  [ 'spruce_boat', 1 ],
+  [ 'spruce_sapling', 1 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (5.5, 73, -22.2) in overworld, health 20/20, food 20/20, alive

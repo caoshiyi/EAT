@@ -1,0 +1,70 @@
+program #12537 on p1: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:09:39.151Z","p":{"x":-12.567843670379796,"y":62,"z":-16.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["wooden_pickaxe",1,0],["stick",4,null],["wooden_shovel",1,0],["spruce_sapling",1,null],["dirt",3,null]],"time":2644,"faces":[{"q":{"x":-13,"y":61,"z":-17},"n":"stone","full":true},{"q":{"x":-13,"y":64,"z":-17},"n":"grass_block","full":true},{"q":{"x":-12,"y":62,"z":-17},"n":"crafting_table","full":true},{"q":{"x":-12,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":62,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-18},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-18},"n":"dirt","full":true}],"cursor":null}
+QUARRY_COLUMN -14 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+QUARRY_COLUMN -15 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+QUARRY_COLUMN -16 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+QUARRY_COLUMN -17 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+QUARRY_COLUMN -18 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+QUARRY_COLUMN -19 [ [ 60, 'stone' ], [ 61, 'stone' ], [ 62, 'dirt' ], [ 63, 'dirt' ] ]
+ENDING {"at":"2026-10-19T12:09:39.152Z","p":{"x":-12.567843670379796,"y":62,"z":-16.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["wooden_pickaxe",1,0],["stick",4,null],["wooden_shovel",1,0],["spruce_sapling",1,null],["dirt",3,null]],"time":2644,"faces":[{"q":{"x":-13,"y":61,"z":-17},"n":"stone","full":true},{"q":{"x":-13,"y":64,"z":-17},"n":"grass_block","full":true},{"q":{"x":-12,"y":62,"z":-17},"n":"crafting_table","full":true},{"q":{"x":-12,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":62,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-18},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-18},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:09:39.255Z","p":{"x":-12.567843670379796,"y":62,"z":-16.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["wooden_pickaxe",1,0],["stick",4,null],["wooden_shovel",1,0],["spruce_sapling",1,null],["dirt",3,null]],"time":2644,"faces":[{"q":{"x":-13,"y":61,"z":-17},"n":"stone","full":true},{"q":{"x":-13,"y":64,"z":-17},"n":"grass_block","full":true},{"q":{"x":-12,"y":62,"z":-17},"n":"crafting_table","full":true},{"q":{"x":-12,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":62,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-18},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-18},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:09:39.405Z","p":{"x":-12.567843670379796,"y":62,"z":-16.5},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["wooden_pickaxe",1,0],["stick",4,null],["wooden_shovel",1,0],["spruce_sapling",1,null],["dirt",3,null]],"time":2644,"faces":[{"q":{"x":-13,"y":61,"z":-17},"n":"stone","full":true},{"q":{"x":-13,"y":64,"z":-17},"n":"grass_block","full":true},{"q":{"x":-12,"y":62,"z":-17},"n":"crafting_table","full":true},{"q":{"x":-12,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":62,"z":-17},"n":"dirt","full":true},{"q":{"x":-14,"y":63,"z":-17},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-16},"n":"dirt","full":true},{"q":{"x":-13,"y":62,"z":-18},"n":"dirt","full":true},{"q":{"x":-13,"y":63,"z":-18},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:09:39.555Z",
+ "p": {
+  "x": -12.567843670379796,
+  "y": 62,
+  "z": -16.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   6,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "stick",
+   4,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ]
+ ],
+ "time": 2664
+}
+--- chat since this player's previous program ---
+p4: P4 changes operation to close actual integration gap: both receiver windows have no receipt; P2 barehand STONE limiter remains. Rather than another wait, I advance OWN protected kit courier10m NORTH from61/65/122 towardP2, qualifying actual local geometry 
+p4: perstep. New donor target pending completedstate (likely61/65/112); supersede old122 after nextreceipt. P2 choose approach accordingly; no surface trip.
+p3: P3 recovery partial PASS12525: actual WoodPickwear2/WoodShovel0/Stick1/Slab1 picked up near20/64/110; exact Y64 goal was wrong (landing actually63), caught stall before harm. Prewritten emergency12529 immediately moved inspected20/63/110 then3DOWN/cap, thr
+p3: ee10FULL20HP20food at20.503/60/110.407, retained2Dirt + recovered tools (Shovelwear3). Sword/log not yet received; inspecting item entities from sealed next-source. No retained fullkit claim.
+p2: 12526 actual contour+tunnel PASS:55.5/66/96.5 full same14.167HP17food/Dirt45. Stone limiter bypassed by actual2UP capped soil layer; need~15mZ+6mX to proposedreceiver61/66/111. Accept P4 ownmethod courier; current next10steps to55/66/106, then X61. No surf
+p2: ace. New12:08:30 window FAILEDno receipt; actual productive integration continues, not retroactivepass.
+--- p1 now: (-12.6, 62, -16.5) in overworld, health 20/20, food 20/20, alive

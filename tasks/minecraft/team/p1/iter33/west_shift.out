@@ -1,0 +1,52 @@
+program #12306 on p1: 12.4 s
+--- output ---
+SOURCE Vec3 { x: 0.5620620120488068, y: 52, z: -29.50050049685977 } 8.333332061767578 17
+CUT dirt Vec3 { x: -1, y: 53, z: -30 }
+CUT stone Vec3 { x: -1, y: 52, z: -30 }
+ARRIVAL Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [ [ 'dirt', 2 ] ]
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 []
+GEOMETRY -1 [
+  [ Vec3 { x: -3, y: 51, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 51, z: -30 }, 'granite' ],
+  [ Vec3 { x: -1, y: 51, z: -30 }, 'stone' ],
+  [ Vec3 { x: 0, y: 51, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 51, z: -30 }, 'stone' ]
+]
+GEOMETRY 0 [
+  [ Vec3 { x: -3, y: 52, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 52, z: -30 }, 'gravel' ],
+  [ Vec3 { x: -1, y: 52, z: -30 }, 'air' ],
+  [ Vec3 { x: 0, y: 52, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 52, z: -30 }, 'stone' ]
+]
+GEOMETRY 1 [
+  [ Vec3 { x: -3, y: 53, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 53, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 53, z: -30 }, 'air' ],
+  [ Vec3 { x: 0, y: 53, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 53, z: -30 }, 'stone' ]
+]
+GEOMETRY 2 [
+  [ Vec3 { x: -3, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 54, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 0, y: 54, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 1, y: 54, z: -30 }, 'stone' ]
+]
+GEOMETRY 3 [
+  [ Vec3 { x: -3, y: 55, z: -30 }, 'dirt' ],
+  [ Vec3 { x: -2, y: 55, z: -30 }, 'air' ],
+  [ Vec3 { x: -1, y: 55, z: -30 }, 'dirt' ],
+  [ Vec3 { x: 0, y: 55, z: -30 }, 'air' ],
+  [ Vec3 { x: 1, y: 55, z: -30 }, 'stone' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 distinct hypothesis: restored HOME bed permits ordinary death/respawn to restore empty low-HP body, avoiding food courier dependency. Current2.2HP17food Dirt1; can chest dirt first. This trades one real death for usable20HP body if respawn point works, 
+p3: not claimed yet. P4 request coordinated P3 sandbox reset to test native fall/respawn before live; no other sandbox operation active here.
+p2: LIVE12303 changed protected window method actual2berries/full ending HP15.67 unchanged at101/61/152. First oneUP12300? actual12299 LOS blocked by100/63 support; second2UP foot63 eye64.62 legal clear bush100/64/152 native activate->2berry then2DOWN/cap. No 
+p2: surface route. P1 useful propagation geometry evidence; successor consume now. P3/P4 no courier promised, reserve not yet built.
+p3: P4 reset coordination clarification: P3 own sandbox not running. I can issue own sandbox reset on your coordination clear; p3 no active SB run. Bed obstruction fixed12291 and retained12294. Need only~30s native fall/respawn test then release, not shared/re
+p3: setting P2 or P4 sandbox.
+--- p1 now: (-0.7, 52, -29.5) in overworld, health 8.3/20, food 17/20, alive

@@ -1,0 +1,21 @@
+program #12319 on p1: 5.9 s
+--- output ---
+SOURCE Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 []
+CEILING Vec3 { x: -1, y: 54, z: -30 } dirt true
+RECEIPT []
+CEILING Vec3 { x: -1, y: 55, z: -30 } dirt true
+RECEIPT [ [ 'dirt', 1 ] ]
+CEILING Vec3 { x: -1, y: 56, z: -30 } grass_block true
+RECEIPT [ [ 'dirt', 2 ] ]
+END Vec3 { x: -0.7, y: 52, z: -29.500500496859647 } 8.333332061767578 17 [] [
+  'gravel', 'dirt',
+  'stone',  'stone',
+  'dirt',   'dirt',
+  'dirt',   'dirt',
+  'stone',  'dirt'
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-0.7, 52, -29.5) in overworld, health 8.3/20, food 17/20, alive

@@ -1,0 +1,36 @@
+program #12344 on p1: 4.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:46:53.318Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null]],"time":23324,"faces":[{"q":{"x":-1,"y":51,"z":-30},"n":"stone","full":true},{"q":{"x":-1,"y":54,"z":-30},"n":"grass_block","full":true},{"q":{"x":0,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":0,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-30},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-30},"n":"grass_block","full":true},{"q":{"x":-1,"y":52,"z":-29},"n":"stone","full":true},{"q":{"x":-1,"y":53,"z":-29},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-31},"n":"stone","full":true},{"q":{"x":-1,"y":53,"z":-31},"n":"dirt","full":true}]}
+CUT {"q":{"x":-2,"y":53,"z":-30},"n":"grass_block","state":{"at":"2026-10-19T11:46:54.375Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null]],"time":23344}}
+CUT {"q":{"x":-2,"y":52,"z":-30},"n":"gravel","state":{"at":"2026-10-19T11:46:55.478Z","p":{"x":-0.7,"y":52,"z":-29.500500496859647},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",3,null]],"time":23364}}
+MOVE {"at":"2026-10-19T11:46:55.829Z","p":{"x":-1.312199679268933,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",3,null]],"time":23384}
+RECEIVED {"at":"2026-10-19T11:46:56.832Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",3,null],["flint",1,null]],"time":23404}
+PLACE {"q":{"x":-1,"y":53,"z":-30},"name":"dirt","state":{"at":"2026-10-19T11:46:57.183Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",2,null],["flint",1,null]],"time":23404}}
+PLACE {"q":{"x":-1,"y":52,"z":-30},"name":"dirt","state":{"at":"2026-10-19T11:46:57.483Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["dirt",1,null],["flint",1,null]],"time":23404}}
+PLACE {"q":{"x":-2,"y":54,"z":-30},"name":"dirt","state":{"at":"2026-10-19T11:46:57.784Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23424}}
+ENDING {"at":"2026-10-19T11:46:57.784Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23424,"faces":[{"q":{"x":-2,"y":51,"z":-30},"n":"granite","full":true},{"q":{"x":-2,"y":54,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-29},"n":"granite","full":true},{"q":{"x":-2,"y":53,"z":-29},"n":"grass_block","full":true},{"q":{"x":-2,"y":52,"z":-31},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-31},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:46:57.934Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23424,"faces":[{"q":{"x":-2,"y":51,"z":-30},"n":"granite","full":true},{"q":{"x":-2,"y":54,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-29},"n":"granite","full":true},{"q":{"x":-2,"y":53,"z":-29},"n":"grass_block","full":true},{"q":{"x":-2,"y":52,"z":-31},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-31},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:46:58.084Z","p":{"x":-1.3418188768690336,"y":52,"z":-29.500500496859594},"hp":8.333332061767578,"food":17,"ground":true,"inv":[["flint",1,null]],"time":23424,"faces":[{"q":{"x":-2,"y":51,"z":-30},"n":"granite","full":true},{"q":{"x":-2,"y":54,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-1,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":52,"z":-30},"n":"dirt","full":true},{"q":{"x":-3,"y":53,"z":-30},"n":"dirt","full":true},{"q":{"x":-2,"y":52,"z":-29},"n":"granite","full":true},{"q":{"x":-2,"y":53,"z":-29},"n":"grass_block","full":true},{"q":{"x":-2,"y":52,"z":-31},"n":"gravel","full":true},{"q":{"x":-2,"y":53,"z":-31},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:46:58.235Z",
+ "p": {
+  "x": -1.3418188768690336,
+  "y": 52,
+  "z": -29.500500496859594
+ },
+ "hp": 8.333332061767578,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "flint",
+   1,
+   null
+  ]
+ ],
+ "time": 23424
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-1.3, 52, -29.5) in overworld, health 8.3/20, food 17/20, alive

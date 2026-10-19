@@ -1,0 +1,19 @@
+program #12460 on p1: 0.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:58:32.987Z","body":{"x":-1.7350960646580134,"y":63,"z":-22.584602174733604},"vehicle":null,"boat":{"p":{"x":-3.6874644532443464,"y":62.52292209863663,"z":-20.88245547724166},"passengers":[]},"hp":20,"food":20,"mounted":0,"attached":[],"controls":{}}
+MOUNT_EVENT 2026-10-19T11:58:33.168Z 4430
+--- error ---
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Array'
+    |     index 0 -> object with constructor 'Entity'
+    |     property 'vehicle' -> object with constructor 'Entity'
+    --- property 'passengers' closes the circle
+    at JSON.stringify (<anonymous>)
+    at sample (p1-program-12460.js:1:517)
+    at p1-program-12460.js:1:897
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processTimers (node:internal/timers:518:9)
+--- chat since this player's previous program ---
+p3: P3 LIVE12451/12455 actual root19.336/64/111.464 grounded20HP20food, retained FOUR spruce logs; leaves initially blocked rays, changed two foreground cuts then actual ground pickup. Kit craft now small actual recipe test. Next food branch accepted: current 
+p3: field~100/149 then retained reserve/use; possible P4 healing delivery ONLY if agreed/reachable later, no promise now.
+--- p1 now: (-3.7, 62.1, -20.9) in overworld, health 20/20, food 20/20, alive
