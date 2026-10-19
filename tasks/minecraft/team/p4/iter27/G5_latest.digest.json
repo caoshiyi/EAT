@@ -1,0 +1,121 @@
+{
+  "source": "tasks/minecraft/team/p4/iter27/G5_latest.txt",
+  "header": "== #156 2026-10-19T00:39:47 p2 role=encounter_owner iter=27 61.7 s",
+  "outputTruncated": false,
+  "deathObservedInRetainedTrace": false,
+  "operationErrors": [
+    "FAILURE Error: earlyactualhazard forwardretired after step settle {\"at\":\"2026-10-19T00:40:36.302Z\",\"state\":{\"at\":\"2026-10-19T00:40:36.302Z\",\"p\":{\"x\":-16.452516742333614,\"y\":59.25220334025373,\"z\":-14.916606466285652},\"hp\":10,\"food\":17,\"dim\":\"the_end\",\"ground\":false,\"inv\":[[\"sandstone\",1],[\"cobbled_deepslate\",14],[\"blackstone\",30],[\"wooden_pickaxe\",1],[\"nether_bricks\",6],[\"snowball\",4],[\"stick\",1],[\"mossy_stone_bricks\",7],[\"cracked_stone_bricks\",1],[\"stone_bricks\",9],[\"stone_sword\",1],[\"crafting_t"
+  ],
+  "traceRows": 48,
+  "traceEvictions": 206,
+  "consequentialEvents": [
+    {
+      "at": "2026-10-19T00:40:36.300Z",
+      "ms": 48674,
+      "event": "entitySpawn",
+      "p": {
+        "x": -16.44689875141561,
+        "y": 59.24918707874468,
+        "z": -14.847535467259068
+      },
+      "hp": 10,
+      "food": 17,
+      "ground": false,
+      "loadedHazardCount": 1,
+      "entity": {
+        "id": 990,
+        "name": "dragon_fireball",
+        "p": {
+          "x": -4.051285231482466,
+          "y": 79.09242844216593,
+          "z": -13.166996155788162
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T00:40:37.701Z",
+      "ms": 50075,
+      "event": "entitySpawn",
+      "p": {
+        "x": -15.3,
+        "y": 57,
+        "z": -14.577678806937461
+      },
+      "hp": 10,
+      "food": 17,
+      "ground": true,
+      "loadedHazardCount": 2,
+      "entity": {
+        "id": 1001,
+        "name": "area_effect_cloud",
+        "p": {
+          "x": -15.3,
+          "y": 57,
+          "z": -14.577678806937461
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T00:40:37.701Z",
+      "ms": 50075,
+      "event": "entityGone",
+      "p": {
+        "x": -15.3,
+        "y": 57,
+        "z": -14.577678806937461
+      },
+      "hp": 10,
+      "food": 17,
+      "ground": true,
+      "loadedHazardCount": 2,
+      "entity": {
+        "id": 990,
+        "name": "dragon_fireball",
+        "p": {
+          "x": -11.489769036563741,
+          "y": 67.72477858374555,
+          "z": -14.175471003126432
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T00:40:38.702Z",
+      "ms": 51076,
+      "event": "health",
+      "p": {
+        "x": -14.425607616984465,
+        "y": 55.92159999847412,
+        "z": -13.513855062674477
+      },
+      "hp": 6,
+      "food": 17,
+      "ground": false,
+      "loadedHazardCount": 1,
+      "entities": [
+        {
+          "id": 1001,
+          "name": "area_effect_cloud",
+          "p": {
+            "x": -15.3,
+            "y": 57,
+            "z": -14.577678806937461
+          }
+        }
+      ]
+    }
+  ],
+  "limits": "Retained public output only. Unobserved events are unknown. Effect candidate is NOT score or sufficient live adoption.",
+  "fired": false,
+  "targetPresent": true,
+  "postDimension": "the_end",
+  "postHp": 6,
+  "postPosition": {
+    "x": -10.3,
+    "y": 50,
+    "z": -10.517644940059975
+  },
+  "flightSamples": 0,
+  "postLoadedCrystalCount": 9,
+  "crystalGoneObserved": false,
+  "sameLifeEndEffectCandidate": false
+}

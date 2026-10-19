@@ -1,0 +1,91 @@
+{
+  "actualVelocityReplayErrors": [
+    {
+      "tick": 0,
+      "distance": 0.0
+    },
+    {
+      "tick": 10,
+      "distance": 0.0007928003565901867
+    },
+    {
+      "tick": 20,
+      "distance": 0.0015104566394811706
+    },
+    {
+      "tick": 30,
+      "distance": 0.0020736051568172303
+    },
+    {
+      "tick": 40,
+      "distance": 0.0027896078073109914
+    },
+    {
+      "tick": 50,
+      "distance": 0.0032993602076195885
+    },
+    {
+      "tick": 60,
+      "distance": 0.0037286004869918937
+    },
+    {
+      "tick": 70,
+      "distance": 0.004090576553598393
+    },
+    {
+      "tick": 80,
+      "distance": 0.00459035659848702
+    }
+  ],
+  "scope": "ONE actual shot, fitted vertical residual may combine player motion and random dispersion; no actual player vertical velocity logged",
+  "origin": {
+    "x": -17.50882924406227,
+    "y": 60.68610926421647,
+    "z": -15.499426966958698
+  },
+  "R": 18.350145968592958,
+  "actualCameraDegrees": 67.50000038146369,
+  "actualProjectileVelocity": {
+    "x": -0.49625,
+    "y": 1.56275,
+    "z": -0.261875
+  },
+  "projectedHorizontalVelocity": 0.5609025436788394,
+  "hypotheticalSpeedAlongCamera": 1.4657090045102976,
+  "hypotheticalVerticalResidual": 0.20861144638106732,
+  "dragAssumed": 0.99,
+  "gravityIncrementAssumed": 0.03,
+  "hypotheticalRoots": [
+    {
+      "targetY": 86.5,
+      "cameraDegreesApprox": 59.6,
+      "previousDegrees": 59.59
+    },
+    {
+      "targetY": 86.5,
+      "cameraDegreesApprox": 75.16,
+      "previousDegrees": 75.15
+    },
+    {
+      "targetY": 87.0,
+      "cameraDegreesApprox": 60.32,
+      "previousDegrees": 60.31
+    },
+    {
+      "targetY": 87.0,
+      "cameraDegreesApprox": 75.02,
+      "previousDegrees": 75.01
+    },
+    {
+      "targetY": 87.5,
+      "cameraDegreesApprox": 61.04,
+      "previousDegrees": 61.03
+    },
+    {
+      "targetY": 87.5,
+      "cameraDegreesApprox": 74.86,
+      "previousDegrees": 74.85
+    }
+  ],
+  "requiredAdoptionTest": "Log actual player velocity, actual camera and fresh projectile trajectory from same stance; one real target effect plus retained ending. Do not infer safety or visibility."
+}

@@ -18,3 +18,9 @@ G27-4 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_4.txt", "g
 
 G27-5 launch 2026-10-19T00:36:35.999382+00:00: P2 preserved151/death and released10486/87 at00:35:19; P1 no currentrun/resetdependency10489/90 at00:35:51; own allrunssaved/idle/no dependency. Bothstatus snapshotsidle. P1requested20sreadonlycensus/watcherafterready; thenP2nexttoken, noreplacingactiverun. LIVE50/10/Snow4copyexpected.
 G27-5 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_5.txt", "generation": "G27-5", "copySeconds": 0.7, "totalSeconds": 21.4, "exactCopyInstant": "unknown", "completed": true}
+
+G27-6 launch 2026-10-19T00:47:58.079329+00:00: P2 requestedG6afterP1release10495-97, own156preserved/tokenreleased; P1 explicitsequence-ended/statusesidle/resultsrawsaved+release10498 at00:47:40. OutcomeP1pendingreview, nofoodclaim. Bothstatusesidlepreserved, P4 noactiveprogram/dependency. CopyLIVE50/10/Snow4.
+G27-6 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_6.txt", "generation": "G27-6", "copySeconds": 0.8, "totalSeconds": 22.8, "exactCopyInstant": "unknown", "completed": true}
+
+G27-7 launch 2026-10-19T00:54:45.211318+00:00: P2 actualeffect161+ending/rawpreserved and explicitresetrelease10504-06 at00:53:29; P1 lastG5release/results beforeG6, noG6calls/dependency; ownidle/allresults161independentlysaved/no dependency. Bothstatusesidlepreserved. FreshLIVE50/10HP/Snow4/endstone62 expected. OwnerwantsentirecorrectedcallerCOLDqualification, originalgate56:30unchanged.
+G27-7 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_7.txt", "generation": "G27-7", "copySeconds": 0.6, "totalSeconds": 15.6, "exactCopyInstant": "unknown", "completed": true}
