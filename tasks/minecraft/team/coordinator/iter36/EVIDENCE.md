@@ -31,3 +31,5 @@
 | Official EVAL_FIRST_DAMAGE 18:28 |dragon0/milestones11/deaths217; savefailed; savedHP182/crystals0 informational| Objective incomplete despite actualdamage |
 | Persistent P1 LIVE13964 18:32:59 |Accepted Sword/hurt/Sword2→3; HP182.104599→179.854599; healthy11.5 full10 return, food16/Pick98| Second distinct pass achieved. Cursor65 again, so undefined-cursor branch remains untested by this success |
 | Official EVAL_SECOND_DAMAGE 18:34 |dragon0/milestones11/deaths217; save failed; saved HP182| Saved information stale after actual second hit; no victory |
+| Persistent P1 LIVE13969 |Two accepted hits179.854599→174.729599; third ordinaryactionREFUSEDsameWestcell atcandidate2.640m; healthy11.5return/Pick106| Batch effect+ending qualified; diagnostic-only cursor did not guarantee permitted action |
+| Persistent P1 LIVE13972 |Changed observedcells;3acceptedhits174.729599→167.979599, no refusal/hurt;174.7s; healthy11.5/food16/Pick116 lowerreturn | Qualified repeated package, no universal safety. Full-run throughput2.3HP/min before gaps |

@@ -1,0 +1,11 @@
+# ~18:45 review: repeated effects, ending qualified, throughput unresolved
+
+Actual Dragon HP167.979599 after seven accepted P1 hits this iteration (184.979599 opening minus17 damage). First two isolated cycles dealt5.125; batch13969 dealt5.125, then stopped on repeated West visibility refusal; changed batch13972 dealt6.75 with no new refusal or injury and a healthy lower return. P1 current0/50/4 HP11.5 food16/Sword8/Pick116, P3heldlow50HP20. One new live death remainsP4 deliberatePvP recovery, no other live death observed.
+
+13969 is important negative evidence: third candidate2.640m/ownrayclear/looktick was REFUSEDsameWestEndstone(-6,57,4), so cursor source artifact did not prove a usable action in that case. Players changed actual observed obstruction cells rather than continuing tick/cursor-only tweaks. 13972 three accepted hits+ending qualifies that package for bounded reuse, not universal visibility/safety. Both final states independently inspected in canonical1839_programs/1843_programs, not reports alone.
+
+Timing: 13972 lasted174.7s, lastdamage18:41:13 then no-progress stop/return18:42:31; no implication whole180s was productive. ~60min remain/~168HP, required overall2.8HP/min including gaps. Recent fullrun2.3HP/min before gaps is useful accounting, not impossibility. Lead already proposed longer bounded same-controller execution; operators choose scope/alternative after considering current no-progress condition. No additional documentation gate. Main blocker now sustained useful execution and finite tool budget, not first damage proof or closed transfers.
+
+Structure has produced actual adaptation and retained effects: leadP3heldcurrentconfiguration/enabledP1, researcherP1executedlive; coordinatorcaught context/visibility claim issues and confirmed outcomes. P2providedearlieracceptedwatch/support then no active accepted tasks; don'tclaim continuous three-player activity. Tool116 has15uses left; Wood17/oldpicks finite. Support must name next blocked action and acceptance, no speculative rebuild.
+
+Official EVAL_1845 is separate, last-saved if save fails. See exactfile; no victory from liveHP reduction. Next review18:55 or actualeffect/contradiction. Deadline19:44:24, handoffs~19:40 while play continues. No gameplay by coordinator; token usage unavailable.

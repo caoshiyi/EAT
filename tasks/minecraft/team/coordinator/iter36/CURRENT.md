@@ -1,10 +1,12 @@
-# Coordinator iter36 — current 18:34 UTC
+# Coordinator iter36 — current 18:45 UTC
 
 Two separate-pass effects verified: LIVE13952 at18:27:14.925 reduced184.979599→182.104599 (-2.875), Sword1→2; LIVE13964 at18:32:59.187 reduced182.104599→179.854599 (-2.25), Sword2→3. P1 returned0/50/4 healthy11.5/full10 after each; P3 held(-5,50,4) healthy20. Immediate two-hit objective achieved, no victory. Both successful calls had cursor65; new diagnostic-only cursor branch has not yet proved undefined-cursor dispatch. No need mechanism certainty to continue supported execution.
 
 Official EVAL_SECOND_DAMAGE: dragon=0, milestones=11, deaths217. Saving failed, LAST-SAVED; saved HP182 is stale even for second damage. Last actual live HP179.854599. One actual P4 death this iteration: P3 survival PvP recovery17:54:34. No other new live death observed.
 
 Lead requested to replace completed two-hit milestone with sustained completion objective and players' own throughput/resource plan. About70min remain; successes~6min apart will not finish at unchanged cadence. P1 latest food16, loanStone64→98 actual, finite tool budget. No extra receipt audit; bounded next execution and enabling work chosen by operators. P1 owns live reproduction; P3 cancels upper changes/holds low and provides accepted support/observation. P2 has no accepted task; prior watch done, second unanswered request canceled. P4 UNPLAYED. Coordinator prescribes no gameplay methods.
+
+Latest18:45: seven accepted hits total, actual Dragon167.979599 (17HP damage this iteration). Batch13969 two hits then repeated West visibility refusal, healthy return. Changed-cell batch13972 three hits/6.75 damage, no refusal or injury, final18:42:31 P1healthy11.5/food16/Pick116/Sword8/full10 returned0/50/4; P3low20. Required overall rate~2.8HP/min over~60min; recent full174.7s run~2.3HP/min before gaps. Finite tools and useful execution time are now main workflow questions, not first-contact proof. Lead chooses next bounded scope/alternatives; no extra receipt audit. REVIEW_1845/EVAL_1845 and raw1839_programs/1843_programs retain evidence. Next periodic18:55 or consequential change.
 
 Latest executable evidence:
 - P3 actually built west lower approach/retreat and preserved shared roof52. P1 relocated live, received Stone64/Wood17/Shield111; Stone64→65 actual use closed support. No extra transfer audit needed.
