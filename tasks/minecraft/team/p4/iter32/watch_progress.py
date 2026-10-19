@@ -1,15 +1,16 @@
 """Bounded read-only arena monitor; preserved raws are evidence, summaries are navigation aids."""
 import datetime,json,pathlib,re,subprocess,sys,time
 root=pathlib.Path('tasks/minecraft/team/p4/iter32');duration=min(45,max(1,int(sys.argv[1]) if len(sys.argv)>1 else 30))
-dest=root/('watch_'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'));dest.mkdir()
+sandbox='--sandbox' in sys.argv[2:];env='SANDBOX' if sandbox else 'LIVE'
+dest=root/('watch_'+env+'_'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ'));dest.mkdir()
 start=time.monotonic();last_p2='';last_record='';manifest=[]
 while time.monotonic()-start<duration:
- at=datetime.datetime.now(datetime.timezone.utc).isoformat();i=len(manifest);entry={'at':at}
+ at=datetime.datetime.now(datetime.timezone.utc).isoformat();i=len(manifest);entry={'at':at,'environment':env}
  for name,args in [('status',['status']),('chat',['chat','--last','8']),('p2',['programs','--player','p2','--last','1','--full'])]:
-  p=subprocess.run([sys.executable,'tools/mc_arena.py']+args,text=True,capture_output=True,timeout=8);raw=p.stdout+p.stderr;(dest/f'{i}_{name}.txt').write_text(raw);entry[name+'_rc']=p.returncode
+  p=subprocess.run([sys.executable,'tools/mc_arena.py']+(['--sandbox'] if sandbox else [])+args,text=True,capture_output=True,timeout=8);raw=p.stdout+p.stderr;(dest/f'{i}_{name}.txt').write_text(raw);entry[name+'_rc']=p.returncode
   if name=='status':
    line=next((x for x in raw.splitlines() if x.startswith('p2:')),'MISSING P2')
-   if line!=last_p2:print(at,line,flush=True);last_p2=line
+   if line!=last_p2:print(env,at,line,flush=True);last_p2=line
   if name=='p2':
    header=raw.splitlines()[0] if raw else 'EMPTY'
    if header!=last_record:

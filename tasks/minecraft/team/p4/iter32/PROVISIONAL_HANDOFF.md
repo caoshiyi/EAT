@@ -1,3 +1,25 @@
+# Iteration32 CRITICAL LOSS override —10:39 UTC October19
+
+Objective NOT achieved. LIVE Endaccess/Dragon damage/defeat NOTverified32. CanonicalnewLIVEdeathONE: **P2 Creeper10:37:02 at(148.2,63,1463)**. Sourceworldstat197+oneevent=198EVENT-DERIVED, NOTnewofficialscore; openingofficialSAVEFAILED LAST-SAVEDdragon0/milestones11/deaths197. Closingevalstillrequired. NoP4death; noSBdeathobservedthroughlatestcanonicalcheck.
+
+FreshP2status10:37:10: **NEWLIFE OW(7.5,73,−25.5),20HP20food,EMPTY**. AllformerStonekit/Snow26/CookedBeef2/Table/food retained-bodyclaimsSUPERSEDEDbydeath. G4practicecopycannotrestoreLIVEassets. Currentdroppositions/loadedage/livingthreats/recoverabilityUNKNOWN; deathcoordinateisnotitemlocationoritemage. OnlyP2ownerexecutesP2programs.
+
+**Decisivefailedchain12147:** SOURCE10:36:19.228 P2(166.536,65,1383.501),20HP20food/retainedkit. TRAVEL_EFFECT10:36:50.172(145.371,64,1459.507),13.566HP20food,reasonhealth. No actualsoil/carvedendingadmitted; `box material exhausted`10:36:51.124 andsameRECOVERY_FAILURE, nofundedcapbecausecarriedsolidsZEROafterascent. Terminalbodyexposed~146.5/64/1461.5/12.1HP. Death10:37:02 AFTERcompletedrun. LaterCreeperkillerdoesNOTidentifyinitialdamagecause. Actualsource/effect/failedending/deatharestoredP2_12147_canonical.txt/P2_12147_loss_canonical.txt/loss1037_*/events. Thisrepeatsunfundedending/idleexposurefailure; no healthyterminalorpassedpreviouslegpromotestoend-to-endsuccess.
+
+EarlierrealgainsremainDATEDfacts: jointfoodhandoff2→P2actualfoodrestoration12079/12078/12080; P2meat3Cow7707/12137, actualcooking3thenportableTable; wet+carvedbankLIVE12125/nextSOURCE12128; longLIVE12142 SOURCE10:26:46.468(150.531,76,547.503)20HP/food18→END_OPERATION10:31:53.940(166.536,65,1383.501)20HP20food/TENFULL/CookedBeef2/Snow26/Table1/Dirt2. ThoseassetswereLOSTlater, notnowheld. Original09:31handoffwholegate/09:45P4food30/10:20physicalEndgateFAILED, deadlinesnotreset.
+
+**P4current:** lastactualaudit12146 10:34:02–03/threeTENFULL: OW(49.509335,66,113.499976),5.911HP17food/nofood,Dirt5/Planks3/Sticks3/Sapling1/WoodSword1/Shovel1, allcontrolsfalse/goalnull. Chat12149samebody10:38:50. P4hasNOactiveprogramLIVEorSB/reset. Stayssealedperownerrole; noP4recoverytriporindependentwoodchain. Actualassetoffer12149forP2pickupatpodifownerchooses, nohandoff/route/receiptclaimed; allocationpendingownerdecision. Newdonoroperationwouldrequireactualvisiblepeer+normaltoss/receiverretention/use, bounded2minfromactualarrival, reserveowncapmaterial. DoNOTassumeavailableofferisdelivered.
+
+**G32-4:** reset10:15:06 total23.5s/copy0.9swithin06–29.5exactinstantunknown; allSBidle+G3evidencepreserved. LastP2SB346 TARGETnull/noSkeleton UNTESTED; healthyclosed159.556/77/532.55620HP19food/berries7/kitcopy. NotLIVE, noSwordchasequalificationfromunreachedbranch. NoresetuntilactiveSBfinished/preservedandownercoordinated.
+
+**Independentreviewrequirement fulfilled BEFORE85:** firstcompletePROVISIONAL_HANDOFF.md actualmtime09:53:37.831958(checkpoint e0b1b06509:55), materialrefreshed10:16/f8d746c2; THIScriticaloverride10:39isbeforeowner10:41andneararena+85. Usefulworkcontinues; noearlyfinal.20jointreview09:36:40/40joint09:56:06done. Finalhandoff/events/eval/decisiveLIVEinspection10:55–10:59(common100–105window), continueownerbudgetthrough10:56, finalownedclosureby11:01/own10511:02. DoNOTleaveclosuredependentononelastcommand.
+
+EntryreviewENTRY_ADMISSION.md + permitted16/20/28rawsready: oldbed146 supersededbyactualnew142foot2232placement9312 +reportedactivation; CURRENTbed/shaft/portal/Endstep97/caps75remainunqualified. Actual20#9559 historicalwholeEndarrival100/49→97/50→79/50→visible78door→7/50/3.5 demonstrated; newer11609pod75 EASTcaps76/50cobble+76/51netherrackneedfreshnormalcuts/routeadmission. Portal/currentbedNOTownedbycoordinates. NoEnd32actualadoptionofpacketoccurred.
+
+OnlyP4controlled; P1/P3unplayed; noagents/server/.work/toolsedits/internet/excluded17–19/ENCOUNTER/rawpackets/partsIDs/push. Newtoolsqualifiedsmallandcapturefactualtimestamps/canonicalIDs/raws; CLIrc0/syntaxsuccessisNOTworldsuccess. Allkeptfailures/unexecutedstaleTableproposalretirementremaininownedlogs. Lastownedcheckpointf8d746c2 at10:16; criticaloverridecheckpointfollows.
+
+--- Earlierdatedindependentreview follows; currentbody/kitclaimsaboveoverrideit ---
+
 # Iteration32 independent provisional — published09:53UTC October19
 
 Objective remains unmet. Opening evaluator SAVEFAILED(connectionrefused): LAST-SAVED dragon0/milestones11/deaths197. No iteration32 LIVE Endentry, crystalremoval, dragon damage or victory verified throughthisreview. Current scoreboardclosurestillrequired; savedDragon200/sixcrystalsinformational only. Canonicaldeathauditthrough09:52 findsNONEnew inLIVE/SB; thisincludesidledeaths bydatedevents, notprogram-count assumption.
