@@ -14,5 +14,5 @@ sandbox=len(sys.argv)>3 and sys.argv[3]=='sandbox'
 meta={'player':'p3','environment':'sandbox' if sandbox else 'live','source':program.name,'sha256':hashlib.sha256(source.encode()).hexdigest()}
 (owned/(name+'.json')).write_text(json.dumps(meta,indent=2)+'\n')
 p=subprocess.run([sys.executable,'tools/mc_arena.py']+(['--sandbox'] if sandbox else [])+['run','--player','p3','--timeout',sys.argv[2] if len(sys.argv)>2 else '60',str(program.relative_to(root))],text=True,capture_output=True)
-receipt.write_text(p.stdout+p.stderr);print('RECEIPT',receipt.relative_to(root));print(p.stdout+p.stderr)
+receipt.write_text(p.stdout+p.stderr);print('RECEIPT',receipt.relative_to(root));print(p.stdout+p.stderr if len(p.stdout+p.stderr)<7000 else (p.stdout+p.stderr)[:500]+'\n[FULL RAW RETAINED; last6000chars below]\n'+(p.stdout+p.stderr)[-6000:])
 raise SystemExit(p.returncode)

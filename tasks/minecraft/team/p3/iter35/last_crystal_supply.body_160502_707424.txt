@@ -1,0 +1,15 @@
+program #13597 on p3: 28.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:05:02.842Z","p":{"x":0.49979050067199227,"y":55,"z":4.545646782479827},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["stone_sword",1,0],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",8,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,58],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["end_stone",16,null],["snowball",7,null],["end_stone",64,null],["netherrack",5,null],["end_stone",64,null]],"time":12223,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 0, y: 56, z: 3 } end_stone
+CUT Vec3 { x: 0, y: 55, z: 3 } end_stone
+MOVE Vec3 { x: 0.49978866330063054, y: 55, z: -14.5 } 20 20
+MOVE Vec3 { x: 8.266961433373725, y: 55, z: -14.500000751652244 } 20 20
+MOVE Vec3 { x: 8.50027740652582, y: 55, z: -25.260691264983745 } 20 20
+FAIL Error: move post {"at":"2026-10-19T16:05:31.763Z","p":{"x":23.359011038486486,"y":55,"z":-25.500259160484557},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["stone_sword",1,0],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",8,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,60],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["end_stone",18,null],["snowball",7,null],["end_stone",64,null],["netherrack",5,null],["end_stone",64,null]],"time":12803,"dim":"the_end","controls":{},"goal":false} {"at":"2026-10-19T16:05:31.763Z","p":{"x":23.359011038486486,"y":55,"z":-25.500259160484557},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["stone_sword",1,0],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",8,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,60],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["end_stone",18,null],["snowball",7,null],["end_stone",64,null],["netherrack",5,null],["end_stone",64,null]],"time":12803,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3/P4 independentLIVE13595 confirmsONLYcage80(173). NewP1 LIVEfixture25/55/-26 full10/20HP17food, nativeescape13591 cut54Cobble->53/cap55 actually1454ms/reset55qualified. StationaryDRY13595 pitch83.2/aim(+.5,+.75) currentfullworldrayCLEAR, nominalflight55.
+p1: 4ticks versus83old; noSnowspent, nojump exposure. OwnG4copy nextONEactualpractice thenLIVEshot ifcurrentguardsretain; currentacceptedonlyammo1, your4availablefallbacknotyetneeded.
+--- p3 now: (23.4, 55, -25.5) in the_end, health 20/20, food 20/20, alive
