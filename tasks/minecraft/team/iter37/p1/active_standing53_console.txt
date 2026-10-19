@@ -1,0 +1,35 @@
+program #14182 on p1: 96.1 s
+--- output ---
+SOURCE {"environment":"LIVE","player":"p1","state":{"at":"2026-10-19T20:07:58.469Z","p":{"x":0.5513578597979686,"y":50,"z":4.49999999999911},"hp":20,"food":19,"ground":true,"inv":[["netherrack",13,null],["stone_sword",1,60],["end_stone",51,null],["dirt",4,null]],"time":7882},"dragon":{"p":{"x":-6.91831632643764,"y":64.14350553973605,"z":20.808783267890718},"hp":47.85459899902344,"phase":1},"baitP1":{"x":-4.530623641205308,"y":50,"z":4.500062052813514},"baitHP":20}
+CUT Vec3 { x: -1, y: 51, z: 4 } end_stone
+CUT Vec3 { x: -1, y: 50, z: 4 } end_stone
+MOVE Vec3 { x: -0.2735783169391703, y: 50, z: 4.49999999999911 } 20 19
+MOVE Vec3 { x: -1.351002911659943, y: 50, z: 4.49999999999911 } 20 19
+MOVE Vec3 { x: -2.215991488414123, y: 50, z: 4.49999999999911 } 20 19
+CUT Vec3 { x: -4, y: 51, z: 4 } end_stone
+CUT Vec3 { x: -4, y: 50, z: 4 } end_stone
+MOVE Vec3 { x: -3.287582341437789, y: 50, z: 4.49999999999911 } 20 19
+DIG Vec3 { x: -4, y: 52, z: 4 } end_stone undefined 15000
+PLACE Vec3 { x: -4, y: 50, z: 4 } netherrack
+PLACE Vec3 { x: -4, y: 51, z: 4 } netherrack
+PLACE Vec3 { x: -4, y: 52, z: 4 } end_stone
+CUT Vec3 { x: -5, y: 53, z: 4 } dirt
+MOVE Vec3 { x: -4.340620486993562, y: 53, z: 4.49999999999911 } 20 19
+READY {"at":"2026-10-19T20:09:20.429Z","ownHP":20,"p":{"x":-4.502758119870273,"y":53,"z":4.49999999999911},"dragon":{"p":{"x":-0.8810550277863314,"y":63.43437765023933,"z":23.06264355173817},"hp":47.85459899902344,"phase":1},"point":{"x":-2.8310550277863316,"y":63.484377650239324,"z":21.11264355173817},"dist":18.90374852063164,"clear":false,"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514}}
+FAIL Error: OWN_HP_DROP {"at":"2026-10-19T20:09:31.990Z","ownHP":16.5,"p":{"x":-4.502758119870273,"y":53,"z":4.49999999999911},"dragon":{"p":{"x":-6.010087085225216,"y":56.24330900639619,"z":2.753833318445672},"hp":47.85459899902344,"phase":1},"point":{"x":-4.502758119870273,"y":56.293309006396186,"z":4.49999999999911},"dist":1.6733090063961882,"clear":true}
+OWN_HURT_SHIELD_REQUEST {"at":"2026-10-19T20:09:32.160Z","p":{"x":-4.253250021766316,"y":53,"z":4.499999999999071},"hp":16.5,"velocity":{"x":0.08272340052596974,"y":-0.0784000015258789,"z":-1.0465256568857115e-14},"using":true}
+NATIVE_DAMAGE_EVENT {"at":"2026-10-19T20:09:32.160Z","packet":{"entityId":36,"sourceTypeId":25,"sourceCauseId":134,"sourceDirectId":134},"sources":[{"rawId":134,"minusOne":"ender_dragon"},{"rawId":134,"minusOne":"ender_dragon"}],"hp":16.5,"p":{"x":-4.253250021766316,"y":53,"z":4.499999999999071}}
+OWN_HURT_SHIELD_REQUEST {"at":"2026-10-19T20:09:32.652Z","p":{"x":-3.879745220766983,"y":53,"z":4.319159031488089},"hp":13,"velocity":{"x":0.024093296920675068,"y":-0.0784000015258789,"z":-0.009378138669832826},"using":false}
+NATIVE_DAMAGE_EVENT {"at":"2026-10-19T20:09:32.653Z","packet":{"entityId":36,"sourceTypeId":25,"sourceCauseId":134,"sourceDirectId":134},"sources":[{"rawId":134,"minusOne":"ender_dragon"},{"rawId":134,"minusOne":"ender_dragon"}],"hp":13,"p":{"x":-3.879745220766983,"y":53,"z":4.319159031488089}}
+RETREATFAIL Error: move post {"at":"2026-10-19T20:09:33.093Z","p":{"x":-4.617409075676736,"y":53.22973722881507,"z":4.309780892818257},"hp":9.5,"food":19,"ground":false,"inv":[["netherrack",11,null],["stone_sword",1,60],["end_stone",50,null],["dirt",5,null]],"time":9762} {"at":"2026-10-19T20:09:33.093Z","p":{"x":-4.617409075676736,"y":53.22973722881507,"z":4.309780892818257},"hp":9.5,"food":19,"ground":false,"inv":[["netherrack",11,null],["stone_sword",1,60],["end_stone",50,null],["dirt",5,null]],"time":9762}
+[output truncated]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: ACK14171 actualdamage2.25+injury+regen; immediateACK51mswasstale. ACKnext53standing/P2telemetry adoption, P3fixed-5. OptionalNEXTendingoptimization(notcurrentchange): useDIRTforprivatewestgate-1(y50/51), keepfull10 geometry; hand15sEcuts nowprep bottleneck
+p3: , Dirt.75s/recoverable. Shared-4gate/cap52onlyifnotified; roof-5/52alwaysintact.
+p2: P1 actualsource adoption SEEN live_paired53_standing.js installContactTelemetry/handFlags/40tickring +healthDROP/unfiltereddamage/detachfinally. No duplicateP2watch needed. Iwillverify actualCONTACT_TELEMETRY receipt+ending after14182 and report capturedvs
+p2: uncapturedpath; no extra combatgate, no injuryqualification fromparseralone. Thanks forrevisingfilters tocurrentneed.
+p3: WhileP1standing53 continues, P3 optional OWN-SB smallslabmechanics test (~2min): jump-placebottomslab atOWNlowpod andverifyphysical+.5/removal/roofreclose, nootherbodyprograms. LIVEP3stays-5/noedits. If53rangecensored/54injury thisprepares53.5optiononly, n
+p3: oattack/safetyclaim orprimarygate;6slabsnative.
+--- p1 now: (-4.7, 53, 4.3) in the_end, health 9.5/20, food 19/20, alive
