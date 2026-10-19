@@ -1,0 +1,33 @@
+program #13444 on p3: 29.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:43:13.580Z","p":{"x":2.5,"y":55,"z":-14.49928441640968},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",1,null],["stone_pickaxe",1,108],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",56,null]],"time":10043,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 2, y: 56, z: -16 } end_stone
+CUT Vec3 { x: 2, y: 55, z: -16 } end_stone
+MOVE Vec3 { x: 2.4999999164831195, y: 55, z: -15.356454136246109 } 20 20
+CUT Vec3 { x: 1, y: 56, z: -16 } end_stone
+CUT Vec3 { x: 1, y: 55, z: -16 } end_stone
+MOVE Vec3 { x: 1.6515407963243358, y: 55, z: -15.473742702377189 } 20 20
+CUT Vec3 { x: 0, y: 56, z: -16 } end_stone
+CUT Vec3 { x: 0, y: 55, z: -16 } end_stone
+MOVE Vec3 { x: 0.5, y: 55, z: -15.48631276914335 } 20 20
+CUT Vec3 { x: -1, y: 56, z: -16 } end_stone
+CUT Vec3 { x: -1, y: 55, z: -16 } end_stone
+MOVE Vec3 { x: -0.35708019497259363, y: 55, z: -15.491956882779576 } 20 20
+CUT Vec3 { x: -1, y: 56, z: -15 } cobblestone
+CUT Vec3 { x: -1, y: 55, z: -15 } cobblestone
+MOVE Vec3 { x: -0.47494261426333056, y: 55, z: -14.643578459109373 } 20 20
+MOVE Vec3 { x: -27.5, y: 55, z: -14.499532471452673 } 20 20
+MOVE Vec3 { x: -27.499998663731013, y: 55, z: -0.688304461486037 } 20 20
+MOVE Vec3 { x: -27.499998559335, y: 55, z: 0.3844468571431756 } 20 20
+PLACE Vec3 { x: -28, y: 55, z: -1 } end_stone
+PLACE Vec3 { x: -28, y: 56, z: -1 } end_stone
+SEALED [{"q":{"x":-28,"y":54,"z":0},"n":"cobblestone","full":true},{"q":{"x":-28,"y":57,"z":0},"n":"end_stone","full":true},{"q":{"x":-27,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":-27,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":-29,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":-29,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":-28,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":-28,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":-28,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":-28,"y":56,"z":-1},"n":"end_stone","full":true}]
+FIXTURE {"at":"2026-10-19T15:43:43.338Z","p":{"x":-27.49999854680748,"y":55,"z":0.509104250046287},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",19,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",1,null],["stone_pickaxe",1,118],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",61,null]],"time":10643,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":-28,"y":54,"z":0},"n":"cobblestone","full":true},{"q":{"x":-28,"y":57,"z":0},"n":"end_stone","full":true},{"q":{"x":-27,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":-27,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":-29,"y":55,"z":0},"n":"end_stone","full":true},{"q":{"x":-29,"y":56,"z":0},"n":"end_stone","full":true},{"q":{"x":-28,"y":55,"z":1},"n":"end_stone","full":true},{"q":{"x":-28,"y":56,"z":1},"n":"end_stone","full":true},{"q":{"x":-28,"y":55,"z":-1},"n":"end_stone","full":true},{"q":{"x":-28,"y":56,"z":-1},"n":"end_stone","full":true}],"below":[[53,"air"],[52,"end_stone"]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 E1 independent fit: recorded13372 flight at10/20/30ticks fits .99drag/.03gravity within.0012/.0023/.0034m. Supports terrain+spread explanation, not wrong vertical model. Your78.25 correction remains justified but not guaranteed. Investigating actual cag
+p1: ed80/83 bars openings from current client shapes next; no duplicate West.
+p2: P2 food acceptance confirmed; 12berries retained HP20 current Nether upperroute result being reconciled. 15:55 delivery target, no P4 interception/backtrack. Step test fixed old jump via SOURCE ceiling clearance; 7UP and portal crossing actually succeeded.
+p2:  Fountain/perch damage investigation remains my independent branch after delivery; P1 please focus high104/cages rather than duplicate fountain.
+--- p3 now: (-27.5, 55, 0.5) in the_end, health 20/20, food 20/20, alive
