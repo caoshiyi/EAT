@@ -1,0 +1,29 @@
+program #11877 on p4: 3.6 s
+--- output ---
+FRESH_RESPAWN_SOURCE {"at":"2026-10-19T07:12:07.214Z","p":{"x":6.5,"y":68,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+ACTUAL_SOIL_SHELTER_CHOICE {"depth":2,"floors":[{"d":1,"n":"grass_block"},{"d":2,"n":"dirt"},{"d":3,"n":"dirt"},{"d":4,"n":"stone"},{"d":5,"n":"air"}]}
+ACTUAL_NEW_SHELTER {"at":"2026-10-19T07:12:10.521Z","p":{"x":6.5,"y":66,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]}
+FRESH_SHELTER_END {"state":{"at":"2026-10-19T07:12:10.773Z","p":{"x":6.5,"y":66,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]]},"faces":[{"p":{"x":6,"y":65,"z":-37},"n":"dirt","full":true},{"p":{"x":6,"y":68,"z":-37},"n":"dirt","full":true},{"p":{"x":7,"y":66,"z":-37},"n":"dirt","full":true},{"p":{"x":7,"y":67,"z":-37},"n":"dirt","full":true},{"p":{"x":5,"y":66,"z":-37},"n":"dirt","full":true},{"p":{"x":5,"y":67,"z":-37},"n":"grass_block","full":true},{"p":{"x":6,"y":66,"z":-36},"n":"dirt","full":true},{"p":{"x":6,"y":67,"z":-36},"n":"grass_block","full":true},{"p":{"x":6,"y":66,"z":-38},"n":"dirt","full":true},{"p":{"x":6,"y":67,"z":-38},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T07:12:10.773Z",
+ "p": {
+  "x": 6.5,
+  "y": 66,
+  "z": -36.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p4 tried to swim in lava
+--- p4 now: (6.5, 66, -36.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: final_respawn_shelter.js

@@ -1,0 +1,77 @@
+program #11872 on p4: 17.3 s
+--- output ---
+PREFIX_ROUTE_SOURCE {"at":"2026-10-19T07:07:46.557Z","p":{"x":4.531267890737829,"y":65,"z":2.3},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]}
+ACTUAL_ROOM_FLAT {"at":"2026-10-19T07:07:47.211Z","p":{"x":6.656030745541932,"y":65,"z":2.512689349093267},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]}
+ACTUAL_CAP_CUT {"q":{"x":6,"y":66,"z":3},"state":{"at":"2026-10-19T07:07:48.968Z","p":{"x":6.675203914104354,"y":65,"z":2.512689349093267},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,1]]}}
+ACTUAL_CAP_CUT {"q":{"x":6,"y":65,"z":3},"state":{"at":"2026-10-19T07:07:50.723Z","p":{"x":6.675203914104354,"y":65,"z":2.512689349093267},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,2]]}}
+ACTUAL_ROOM_FLAT {"at":"2026-10-19T07:07:51.223Z","p":{"x":6.451630206260268,"y":65,"z":3.7655922736580303},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,2],["cobblestone",1,null]]}
+ACTUAL_ROOM_FLAT {"at":"2026-10-19T07:07:51.775Z","p":{"x":7.904553012774358,"y":65,"z":3.4230337091149616},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,2],["cobblestone",1,null]]}
+PUBLIC_PREFIX_PLAN {"leg":0,"status":"partial","len":64,"first":[{"x":6.5,"y":65,"z":2.5},{"x":5.5,"y":65,"z":2.5},{"x":4.5,"y":65,"z":2.5}],"selected":{"x":0.5,"y":67,"z":13.5}}
+PREFIX_ROUTE_FAILURE Error: localprefix12s {"at":"2026-10-19T07:08:03.821Z","p":{"x":4.547998186800701,"y":65.2,"z":2.3},"hp":20,"food":20,"dim":"the_nether","ground":false,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,2],["cobblestone",1,null]]}
+PREFIX_ROUTE_END {"state":{"at":"2026-10-19T07:08:03.821Z","p":{"x":4.547998186800701,"y":65.2,"z":2.3},"hp":20,"food":20,"dim":"the_nether","ground":false,"inv":[["stick",3,null],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null],["wooden_pickaxe",1,2],["cobblestone",1,null]]},"stops":[],"elapsedMs":17264,"portals":[{"x":4,"y":65,"z":3},{"x":3,"y":65,"z":3},{"x":4,"y":66,"z":3},{"x":3,"y":66,"z":3},{"x":4,"y":67,"z":3},{"x":3,"y":67,"z":3}],"hazards":[]}
+--- returned ---
+{
+ "at": "2026-10-19T07:08:03.871Z",
+ "p": {
+  "x": 4.547998186800701,
+  "y": 65.2,
+  "z": 2.3
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "the_nether",
+ "ground": false,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   35
+  ],
+  [
+   "spruce_planks",
+   3,
+   null
+  ],
+  [
+   "dirt",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   2
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: 288 mobilecontactFAILED/execution NOT mobileproof: source58 exitworked, reached-5.61/60/-10.5 thennever reached fixedY58 waypoint, stationarycloud60 hit9→5, canonical07:03:19MAGICdeath; attacks0/best7.864/Boss1. EIGHTH P2SBdeath, copykitgone, noresetneeded
+p2: . GroundSnow287effectstillvaliddated. P4 CURRENT11870 prefixsource4.53/65/2.3 jumpstalls underterrain withcanDigFALSE, firstplannedstep4.5/66/1.5. Small DISTINGUISHING headroomcut(4,67,1) ifACTUALvisibleNetherrack+normalreach, thennative1UP; canDigfalse/he
+p2: ight8 are policies. Inspectactualceiling beforecut, doNOT digobsidianframe. AlternativefixedheightcorridorSouth65 using2visiblecuts+fullfloor ratherthanrepeatjump. Remaining~8min; testactualphysicalprogress notprefixplan.
+--- p4 now: (4.5, 65.2, 2.3) in the_nether, health 20/20, food 20/20, alive
+syntax-only PASS: nether_cap_then_route.js

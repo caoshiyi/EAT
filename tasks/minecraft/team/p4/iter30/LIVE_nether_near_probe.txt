@@ -1,0 +1,29 @@
+program #11869 on p4: 0.2 s
+--- output ---
+NEAR_GOAL_SOURCE {"at":"2026-10-19T07:01:23.160Z","p":{"x":4.499999999999883,"y":65,"z":2.3},"hp":20,"food":20,"ground":true,"dim":"the_nether","controls":{"forward":false,"jump":false,"sneak":false}}
+ACTUAL_EXIT_BLOCKS [{"x":3,"z":0,"n":["basalt","basalt","air","air"]},{"x":3,"z":1,"n":["basalt","air","air","air"]},{"x":3,"z":2,"n":["obsidian","obsidian","obsidian","obsidian"]},{"x":3,"z":3,"n":["obsidian","nether_portal","nether_portal","nether_portal"]},{"x":4,"z":0,"n":["basalt","lava","air","air"]},{"x":4,"z":1,"n":["basalt","basalt","air","air"]},{"x":4,"z":2,"n":["basalt","air","air","air"]},{"x":4,"z":3,"n":["obsidian","nether_portal","nether_portal","nether_portal"]},{"x":5,"z":0,"n":["basalt","basalt","air","air"]},{"x":5,"z":1,"n":["basalt","cobblestone","cobblestone","air"]},{"x":5,"z":2,"n":["basalt","air","air","dirt"]},{"x":5,"z":3,"n":["obsidian","obsidian","obsidian","obsidian"]},{"x":6,"z":0,"n":["basalt","basalt","basalt","air"]},{"x":6,"z":1,"n":["basalt","basalt","basalt","dirt"]},{"x":6,"z":2,"n":["basalt","air","air","dirt"]},{"x":6,"z":3,"n":["basalt","cobblestone","cobblestone","air"]},{"x":7,"z":0,"n":["basalt","magma_block","air","air"]},{"x":7,"z":1,"n":["basalt","basalt","basalt","air"]},{"x":7,"z":2,"n":["basalt","basalt","dirt","air"]},{"x":7,"z":3,"n":["basalt","air","air","air"]}]
+LOCAL_PLANNER_ONLY {"status":"success","len":1,"path":[{"x":5.5,"y":65,"z":2.5}]}
+NEAR_GOAL_ARRIVAL {"at":"2026-10-19T07:01:23.372Z","p":{"x":5.5,"y":65,"z":2.4598270662978914},"hp":20,"food":20,"ground":true,"dim":"the_nether","controls":{"forward":false,"jump":false,"sneak":false}}
+NEAR_GOAL_END {"state":{"at":"2026-10-19T07:01:23.372Z","p":{"x":5.5,"y":65,"z":2.4598270662978914},"hp":20,"food":20,"ground":true,"dim":"the_nether","controls":{"forward":false,"jump":false,"sneak":false}},"rows":[{"status":"success","path":[{"x":5.5,"y":65,"z":2.5}]}],"elapsedMs":212}
+--- returned ---
+{
+ "at": "2026-10-19T07:01:23.372Z",
+ "p": {
+  "x": 5.5,
+  "y": 65,
+  "z": 2.4598270662978914
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "dim": "the_nether",
+ "controls": {
+  "forward": false,
+  "jump": false,
+  "sneak": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (5.5, 65, 2.5) in the_nether, health 20/20, food 20/20, alive
+syntax-only PASS: nether_near_probe.js
