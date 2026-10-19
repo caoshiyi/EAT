@@ -1,0 +1,96 @@
+{
+  "evidence": "Actual 318/319 actor/ref observations; third pose is a prediction, not a world position",
+  "width": 0.6,
+  "height": 1.8,
+  "dimension_limit": "P4 actual vanilla player dimensions; P2 must print own actual dimensions",
+  "scope": "Projected destination unit cell, NOT observed boat bounds; does not prove server refusal cause or permission for interaction",
+  "cases": [
+    {
+      "case": "SB318_placeEntity",
+      "actor": [
+        17.398558824483153,
+        63,
+        154.8013017340242
+      ],
+      "projected_spawn_cell": [
+        17,
+        63,
+        155
+      ],
+      "body_min": [
+        17.098558824483153,
+        63,
+        154.5013017340242
+      ],
+      "body_max": [
+        17.698558824483154,
+        64.8,
+        155.10130173402422
+      ],
+      "overlap_lengths": [
+        0.6000000000000014,
+        1,
+        0.1013017340242186
+      ],
+      "intersects_all_axes": true
+    },
+    {
+      "case": "SB319_activateItem",
+      "actor": [
+        17.39997492976662,
+        63,
+        154.75863028388778
+      ],
+      "projected_spawn_cell": [
+        17,
+        63,
+        155
+      ],
+      "body_min": [
+        17.09997492976662,
+        63,
+        154.45863028388777
+      ],
+      "body_max": [
+        17.699974929766622,
+        64.8,
+        155.0586302838878
+      ],
+      "overlap_lengths": [
+        0.6000000000000014,
+        1,
+        0.05863028388779412
+      ],
+      "intersects_all_axes": true
+    },
+    {
+      "case": "hypothetical_back_pose",
+      "actor": [
+        17.5,
+        63,
+        153.5
+      ],
+      "projected_spawn_cell": [
+        17,
+        63,
+        155
+      ],
+      "body_min": [
+        17.2,
+        63,
+        153.2
+      ],
+      "body_max": [
+        17.8,
+        64.8,
+        153.8
+      ],
+      "overlap_lengths": [
+        0.6000000000000014,
+        1,
+        0
+      ],
+      "intersects_all_axes": false
+    }
+  ]
+}
