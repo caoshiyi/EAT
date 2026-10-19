@@ -1,0 +1,34 @@
+program #13351 on p3: 26.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:07:34.641Z","p":{"x":6.5,"y":55,"z":-25.480232582330324},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",2,null],["stone_pickaxe",1,104],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",56,null]],"time":19591,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 7, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 7, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 7.356969335758196, y: 55, z: -25.488698514058513 } 20 20
+MOVE Vec3 { x: 8.5, y: 55, z: -25.49408623591656 } 20 20
+MOVE Vec3 { x: 8.500000000000004, y: 55, z: -14.704885845897104 } 20 20
+MOVE Vec3 { x: 7.660187666833971, y: 55, z: -14.536214922570753 } 20 20
+MOVE Vec3 { x: 6.5, y: 55, z: -14.51877250507136 } 20 20
+MOVE Vec3 { x: 5.643008547523117, y: 55, z: -14.51081960128846 } 20 20
+MOVE Vec3 { x: 4.5, y: 55, z: -14.505431879430505 } 20 20
+MOVE Vec3 { x: 3.6428456751893377, y: 55, z: -14.503122822869079 } 20 20
+MOVE Vec3 { x: 2.5, y: 55, z: -14.501583445380465 } 20 20
+MOVE Vec3 { x: 1.6428332176361946, y: 55, z: -14.500557192549085 } 20 20
+MOVE Vec3 { x: 2.2846520945052275, y: 55, z: -14.500557192549143 } 20 20
+DONOR {"at":"2026-10-19T15:07:49.663Z","p":{"x":2.2846520945052275,"y":55,"z":-14.500557192549143},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",1,null],["stone_pickaxe",1,106],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",58,null]],"time":19891,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 3.3574034131344646, y: 55, z: -14.500557192549241 } 20 20
+MOVE Vec3 { x: 4.5, y: 55, z: -14.500557192549339 } 20 20
+MOVE Vec3 { x: 5.357169719836447, y: 55, z: -14.500557192549417 } 20 20
+MOVE Vec3 { x: 6.5, y: 55, z: -14.500557192549515 } 20 20
+MOVE Vec3 { x: 7.357169719836447, y: 55, z: -14.500557192549593 } 20 20
+MOVE Vec3 { x: 8.5, y: 55, z: -14.50055719254969 } 20 20
+MOVE Vec3 { x: 8.499999999999556, y: 55, z: -25.289757582569145 } 20 20
+MOVE Vec3 { x: 7.661097801569784, y: 55, z: -25.462747731581757 } 20 20
+MOVE Vec3 { x: 6.5, y: 55, z: -25.480190149081153 } 20 20
+PLACE Vec3 { x: 7, y: 55, z: -26 } end_stone
+PLACE Vec3 { x: 7, y: 56, z: -26 } end_stone
+END {"at":"2026-10-19T15:08:00.733Z","p":{"x":6.5,"y":55,"z":-25.480190149081153},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",1,null],["stone_pickaxe",1,106],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",56,null]],"time":20131,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":6,"y":54,"z":-26},"n":"cobblestone","full":true},{"q":{"x":6,"y":57,"z":-26},"n":"end_stone","full":true},{"q":{"x":7,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":7,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-27},"n":"end_stone","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 55, -25.5) in the_end, health 20/20, food 20/20, alive
