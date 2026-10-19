@@ -1,28 +1,19 @@
-# Mission35 — P3 execution, opened15:42 UTC
-Objective defeat Dragon. Next decision16:30 actualDragoncontact/BedG3; review16:42; evaluator16:38 or major objective change.
+# Mission35 — current17:07 UTC
+Goal actual Dragon defeat. ZERO crystals verified13605 and saved evaluator. FIRST LIVE DAMAGE: P3 Sword13717 Dragon200→197.75, Swordwear1, returned55/full20HP20food. Evaluator17:04 saveFAILED/LAST-SAVED dragon0,milestones11,deaths210,Dragon198. No LIVE death this iteration.
 
-Evidence: live13431 P3 healthy20/20 covered6/55/-26 Snow1, five live crystals; p1 HP1.452 protected0/55/-15; p2 Home healthy Berry12; p4 Nether-30/63/47 healthy Snow16/Table. Opening python unavailable→python3. Evaluator15:38 forcedsaveFAILED, LAST-SAVED dragon0/11 milestones/deaths210, five crystals/Dragon200. No active P3 program at opening.
+| Owner | Current evidence | Next desired world result |
+|---|---|---|
+| P3 execution | South14/55/25; healthy20/20; Sword1; active90s/12hit batch field59 | Repeated clear physical BODY<=3m hits reducing actual HP; damage-budget retreat55 |
+| P1 experiments/execution | Actual South18/55/25, healthy20/17, Sword0 | Independent actual reachable-body damage; shared observed Hurt>=600ms |
+| P2 continuity | Actual fountain0/55/4, healthy20/19, Sword0/loanShield0 | Normal physical reach strike if dragon actually lands; preserve backup |
+| P4 integration | South12/55/25, healthy20/20, Picks; private boundedcontact trial | Evidence for alternate contact window; no courier/bed gate |
 
-Actual world result: West98 destroyed13449 at15:43:58;13451 confirms FOURlive. P3 full20/20/Snow0/full10. Evaluator15:44saveFAILED stillLAST-SAVEDFIVE, no freshscorechange.
+Next decision after current batch~17:08; review17:22 or any damage/failed escape; evaluator~17:30 or major HP change. Two equivalent failures require changed method. P3 personally executes repeated proven damage; independent work released.
 
-Actual next result: South101 destroyed13509 at15:51:23; THREElive. P3 Snow14/20HP20food, immediate57→55retreat/cap. P4 actual15Snowreceipt13501→ordinaryuse13509→targetgone closesintegration early. EVAL_SOUTH15:51forcedsaveFAILED LAST-SAVEDFOUR/Dragon200/score0/11/210, currentliveTHREE.
+Accepted dependencies:
+- P1→P3 inner5x3BODY/current clear<=3m facts ADOPTED and actual damage verified. No pending supply needed. Shared damage windows acceptance actual HP decreases; fallback independent coverage without assuming additive nearby same-pass damage.
+- P2→team fountain backup: accepted actual arrival/source seal. Acceptance actual contact then HP evidence if landing; fallback P3/P1 field damage continues without waiting. No duplicate South14 pod.
+- P4→team own-practice alternative contact evidence: accepted optional, not critical path. Acceptance normal attack+actualHP+surviving ending; late fallback continued proven P3Sword batch. Prior bed and far-cue visibility gates released.
 
-Next result North104 destroyed; P3 executes bounded raisedshot after currentgeometry/escape review. P1 cage/104 evidence; P2 foodP1 thenprotectedperchdamage. P4 proposed independent cage execution afterP1supply, notyetaccepted. P3 returns2/55/-15 for Pickloan and resource integration.
-
-Dependencies:
-- P4 → P3 Snow/Table at End donor1/55/-15, recipient2/55/-15, donor3/55/-15 (P1 remains0/55/-15); exact doors only on actual arrival. Accept actual recipient inventory, then actual shot use. P4 proposed ETA~16:00; P3 accepts supply route, final exact pose reconcile on arrival. Late fallback own Snow1 attempt + independent experiment, no idle exposed waits.
-- P2 → P1 >=6 berries at same protected interface; P1 explicitly accepted13431 chat. Accept recipient eat + health gain. Time15:55 proposal (old15:50 not inherited obligation); fallback P1 stays protected and experiments only. P2 owns route decisions.
-- P1 → P3 corrected West evidence and high104/cage alternatives; evidence must include real spread/terrain limits, actual world effects separate. P1 accepted West fit and current cage investigation chat12565; high104 experiment also announced12561. Next decision15:52; fallback P3 selects own next discriminating operation. P2 independently investigates protected fountain/perch damage downstream.
-
-Roles: P1 experiment_owner, P2 continuity_operator, P3 mission execution/coordinator, P4 integration_operator. No additional agents. Reversible local choices delegated to existing peers via arena only.
-Detailed evidence: [P3 log](p3/iter35/WORK_LOG.md), canonical arena13431 and iter34 BOARD/NOTES.
-
-Dependency update15:52: P1ONE Snow native receipt nowpendingownconfirm; TableStick2 donorstillactive. P2 actualfoodcourier enteringEnd,15:55target accepted, nofoodreceiptcredit. P3 Pickloan accepted afterfood; canpool ownPlank1+P4Plank1→Stick4→twofreshPicks ifactualtransferfunds, proposal notobligation.
-
-15:57 accepted state: P4 NATIVE13552 Snow5, funded CAGE83 independent South55 operation by16:12 (changed from80 toavoidP1duplicate); latefallback capped55/reportactualmiss andnewhypothesis. P1 cage80practice135?miss/roofbar, nextcenteredgapaim, North62boundedproof afteronecagetestaccepted. P2 foodACTUALreceived10+consumed/HPgain15:55:48, deliveryuse deadline15:55missed<1min; Pick87/Sword0 native13561 received, independentfountaincontactdiscovery nowfunded. P3 donatedfreshPick0 after13565twocraft, recipientusepending; P3retainsfreshPick1+Pick71/123 Snow8. MovingNorth55, nohighwaiting. Sharedreceiverroom internal1/3doorsremainOPEN untiltransferscomplete. Freshroles/receipts inWORK_LOG.
-
-16:02 actual13577 North104 destroyed16:00:31.509→TWOcaged80/83 currentlive; P3full20/20/Snow7/full10. EVAL_NORTH saveFAILED LAST-SAVEDTHREE/Dragon200/score0/11/210. AllfourLIVEhealthy20HP/noiteration35death. P1cage80closer55mine active, P4cage83South57practiceactualgone→LIVEadopting, P2fountainphase/contactpractice. P3Sword0actual13586 thenprotectedfountainSOUTH55access(0,55,4) currentoperation, mining90sreserve/120sbudget. [Review20](p3/iter35/REVIEW20.md) containsassumptions/workflow, noobjectiveeffectclaimedforrunningaccess.
-
-16:08 objectivechange: P1actual13601last80destroyed16:06:23.901; P3independent13605ZERO/Dragon200phase1, EVAL_ZEROsaveFAILED LAST-SAVEDZERO/200/0dragon11milestones210deaths. Snow3fallbackunneeded/released, P3retains7. Newdesiredworldresult actualDragonHPdamage thenrepeatuntilkill. P3returnsactualcentralfountainSouth55source0/4 (personalSword0/Shield); P2normalflybycontactSBchangedaftertwo8/-15negatives; P4BEDblastSB; P1phase/targetvisibilityexperimentrequested. No newmaterialproductiongate, noDragonhurtclaim. Nextcontactdecision16:15; latefallback changedintercept/AIhypothesis whileindependentalternativescontinue.
-
-16:22 change: actualDragon200/phase1, noSwordattempt from13638wait70s; P3changesprimaryLOW57undersideintercept27/-26 (modelphysicalpoint~2.95m frommeasured61.5pass), currentprotected55bypassactiveviaz-28. Fountaintube/center63/retreat55actual13618/13621 remainsbackup, noexposedwaiting. P1short57LIVEvisibilityplanned16:23 afterqualifiednegativecontroller, P2Shieldactualequip/privateblockscope, P4BedG3offcorridorvoid/floorguards16:30researchgate; noLIVEbedremoval. [Review40](p3/iter35/REVIEW40.md) recordsnegativephase/contactresults andchangedbodyreachhypothesis.
+All five opening crystals removed: P3West98/South101/North104, P4Cage83, P1Cage80. Actual transfers followed by recipient use preserved in detailed logs. Victory NOT claimed.
+Details [WORK_LOG](p3/iter35/WORK_LOG.md), [current body](p3/iter35/CURRENT.md), canonical arena results.

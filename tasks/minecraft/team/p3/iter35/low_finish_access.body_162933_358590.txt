@@ -1,0 +1,42 @@
+program #13665 on p3: 31.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:29:33.500Z","p":{"x":21.499999814175016,"y":55,"z":-27.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["netherrack",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,90],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",11,null],["end_stone",64,null],["cobblestone",5,null],["end_stone",64,null]],"time":17643,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 22, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 22, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 22.357169534011444, y: 55, z: -27.500000083516923 } 20 20
+PLACE Vec3 { x: 22, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 23, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 23, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 23.5, y: 55, z: -27.500000187913077 } 20 20
+PLACE Vec3 { x: 23, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 24, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 24, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 24.357169719836428, y: 55, z: -27.50000027143 } 20 20
+PLACE Vec3 { x: 24, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 25, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 25, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 25.5, y: 55, z: -27.500000375826154 } 20 20
+PLACE Vec3 { x: 25, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 26, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 26, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 26.357169719836428, y: 55, z: -27.500000459343077 } 20 20
+PLACE Vec3 { x: 26, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 27, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 27, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 27.5, y: 55, z: -27.50000056373923 } 20 20
+PLACE Vec3 { x: 27, y: 57, z: -28 } end_stone
+CUT Vec3 { x: 27, y: 56, z: -27 } end_stone
+CUT Vec3 { x: 27, y: 55, z: -27 } end_stone
+MOVE Vec3 { x: 27.500000083516845, y: 55, z: -26.642830843902804 } 20 20
+CUT Vec3 { x: 27, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 27, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 27.500000187912857, y: 55, z: -25.5 } 20 20
+PLACE Vec3 { x: 27, y: 55, z: -27 } end_stone
+PLACE Vec3 { x: 27, y: 56, z: -27 } end_stone
+SEALED [{"q":{"x":27,"y":54,"z":-26},"n":"end_stone","full":true},{"q":{"x":27,"y":57,"z":-26},"n":"end_stone","full":true},{"q":{"x":28,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":28,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":26,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":26,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":27,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":27,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":27,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":27,"y":56,"z":-27},"n":"end_stone","full":true}]
+LOW_POD_READY {"at":"2026-10-19T16:30:04.951Z","p":{"x":27.500000187912857,"y":55,"z":-25.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["netherrack",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,106],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",19,null],["end_stone",64,null],["cobblestone",5,null],["end_stone",64,null]],"time":18263,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":27,"y":54,"z":-26},"n":"end_stone","full":true},{"q":{"x":27,"y":57,"z":-26},"n":"end_stone","full":true},{"q":{"x":28,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":28,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":26,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":26,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":27,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":27,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":27,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":27,"y":56,"z":-27},"n":"end_stone","full":true}],"column":[[55,"air"],[56,"air"],[57,"end_stone"],[58,"air"],[59,"air"],[60,"air"],[61,"air"],[62,"air"]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (27.5, 55, -25.5) in the_end, health 20/20, food 20/20, alive

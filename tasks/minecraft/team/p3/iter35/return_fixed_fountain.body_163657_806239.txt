@@ -1,0 +1,38 @@
+program #13679 on p3: 28.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:36:57.956Z","p":{"x":27.500000187912857,"y":55,"z":-25.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,111],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",15,null],["netherrack",4,null],["end_stone",63,null],["end_stone",64,null]],"time":2523,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 27, y: 56, z: -27 } end_stone
+CUT Vec3 { x: 27, y: 55, z: -27 } end_stone
+MOVE Vec3 { x: 27.499999999999876, y: 55, z: -27.5 } 20 20
+MOVE Vec3 { x: 21.5, y: 55, z: -27.499999415382135 } 20 20
+CUT Vec3 { x: 21, y: 56, z: -27 } end_stone
+CUT Vec3 { x: 21, y: 55, z: -27 } end_stone
+MOVE Vec3 { x: 21.500000083516845, y: 55, z: -26.642829695545707 } 20 20
+MOVE Vec3 { x: 21.500000187912857, y: 55, z: -25.5 } 20 20
+CUT Vec3 { x: 20, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 20, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 8.5, y: 55, z: -25.49999874724743 } 20 20
+MOVE Vec3 { x: 8.500001043960069, y: 55, z: -14.71079835722821 } 20 20
+MOVE Vec3 { x: 0.5, y: 55, z: -14.49973609596416 } 20 20
+MOVE Vec3 { x: 0.500001816490509, y: 55, z: 4.276251575344669 } 20 20
+PLACE Vec3 { x: 0, y: 55, z: 3 } end_stone
+PLACE Vec3 { x: 0, y: 56, z: 3 } end_stone
+SEALED [{"q":{"x":0,"y":54,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":57,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":55,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":56,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":55,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":56,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":55,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":56,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":55,"z":3},"n":"end_stone","full":true},{"q":{"x":0,"y":56,"z":3},"n":"end_stone","full":true}]
+FOUNTAIN_READY_ACTUAL {"at":"2026-10-19T16:37:26.366Z","p":{"x":0.5000018415455502,"y":55,"z":4.528976167333307},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,111],["stone_pickaxe",1,77],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",19,null],["netherrack",4,null],["end_stone",63,null],["end_stone",64,null]],"time":3103,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":0,"y":54,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":57,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":55,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":56,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":55,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":56,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":55,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":56,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":55,"z":3},"n":"end_stone","full":true},{"q":{"x":0,"y":56,"z":3},"n":"end_stone","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 SouthLIVEpeekaccepted: desiredactualphase0/2+retainedbody, P4source12/55/25 HP20food20 Snow4 C3/Endstone8/Picks88+5 noactiveLIVEprogram. OnequalifiedtwoUP57/firstjump/recap59/IMMEDIATEDOWN55/cap57, NOitemuse/NOattack. Currentcloud/physicalheight/phase g
+p4: uards+55timingcue, announcephasechangesINSIDErunner. ETA16:38 includescode/prep/cue<=20s/exposure/40scensus/retainedending; fallbackcap55/noeffectreport. NEXTACTOR P3 onACTUALphase2/3: ownfountaincontact, doNOTwaitforP4programcompletion. BEDG3repair28 lost
+p4: HP20->12.3 then55closure; Bedstillunplaced/unqualified, privatepausedforLIVEdependency.
+p2: P3/P1/P4 consequentialLIVEreconcile: parsedP3low_attack_real13668 actual50s trace NOATTACK/nolowwindow becauseROOTPATHISNOWSOUTH (e.g16:31:31 root10.24/63.10/20.32; 16:31:33 root32.63/64.06/25.34), NOT nearNorth27pod. OldNorth61.3tracebecamestaleafterphase
+p2: 0retarget. MyG3privateSouth14 trialalsozeroHP/zeroWear, noShieldblockproof. P4 isONLYLIVEbodySouth12/55/25; likelychosen-target hypothesis(notIDproof). RecommendONEP4boundedSouthvisibilitypoke viaP1packet/ownfreshmap, actualphase0/2/3 recipientP3 confirms;
+p2:  nojourney/bedremoval. P1Northpokesmaynowbenontarget. P4decidesownmethod/acceptance.
+p4: P4 LIVE actualDragonphase1 at2026-10-19T16:36:51.153Z HP20; P3acton2/3withoutwaitingforrunnerend.
+p1: P3/P2/P4 CONSEQUENTIALLIVEcurrentmap13674: 20s16:35:38->58 ALL80phase1, LOWESTroot(11.377,60.647,+23.811), repeatedlownear+Z SOUTH, NOToldNorth25/-26! Physicalbodycoremodel57existingSouth12.5/+25.5 vsoldNorth27.5/-25.5 differ; raw E5_CURRENT_CONTACT_MAP.js
+p1: on. ThisEXPLAINSyour13671 no-low-window atNorth withoutAPIattack. Currentfoot57coreclearbest28.5/+22.5 min2.355m/hits2/80 winggap+.125 ONLYmodel; useexistingSouthP4podifcurrentgeometryclear. NoHP/attackproof. AIpathshift after0->1 plausible, targetIDunprov
+p1: ed; doNOTkeepoldNorthtraceascurrent.
+p2: P1/P3 actualShieldSMOKE finding: protected11s22samples nativehandFlags[8]=3 persisted while bot.usingHeldItem becameFALSE20/22; propertyaloneunreliable foroffhand. Earlierwear0stillNO blockproof. CurrentSouth58private closestrootY62.227 -> wingbboxmodelbot
+p2: tom60.227 ABOVEplayerbodytop59.8, so nohazardexpected atthatheight. ChangedONEprivateSouth60 test/nativeflags3+wear/HP/hazardtrace then55ending; source58wear0windowretired. P2acceptsEXISTINGfountainS0/4backupownershipafterthisboundedtest, no newconstructio
+p2: n; P3LOW27primary remainsseparate.
+--- p3 now: (0.5, 55, 4.5) in the_end, health 20/20, food 20/20, alive

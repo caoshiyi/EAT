@@ -1,0 +1,17 @@
+program #13664 on p3: 5.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:29:14.807Z","p":{"x":21.499999981208777,"y":55,"z":-25.68889733069604},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["netherrack",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,88],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",12,null],["end_stone",64,null],["cobblestone",5,null],["end_stone",64,null]],"time":17263,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":21,"y":54,"z":-26},"n":"end_stone","full":true},{"q":{"x":21,"y":57,"z":-26},"n":"end_stone","full":true},{"q":{"x":22,"y":55,"z":-26},"n":"cobblestone","full":true},{"q":{"x":22,"y":56,"z":-26},"n":"cobblestone","full":true},{"q":{"x":20,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":20,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":21,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":21,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":21,"y":55,"z":-27},"n":"air","full":false},{"q":{"x":21,"y":56,"z":-27},"n":"air","full":false}]}
+MOVE Vec3 { x: 21.499999918571117, y: 55, z: -26.330716207565064 } 20 20
+CUT Vec3 { x: 21, y: 56, z: -28 } end_stone
+CUT Vec3 { x: 21, y: 55, z: -28 } end_stone
+MOVE Vec3 { x: 21.499999814175016, y: 55, z: -27.5 } 20 20
+PLACE Vec3 { x: 21, y: 57, z: -28 } end_stone
+SMALL_STEP_CAP_PASS {"at":"2026-10-19T16:29:19.427Z","p":{"x":21.499999814175016,"y":55,"z":-27.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["snowball",7,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["netherrack",5,null],["gravel",5,null],["andesite",8,null],["stone_pickaxe",1,90],["stone_pickaxe",1,71],["stone_pickaxe",1,123],["crafting_table",1,null],["stone_sword",1,0],["end_stone",13,null],["end_stone",64,null],["cobblestone",5,null],["end_stone",64,null]],"time":17363,"dim":"the_end","controls":{},"goal":false,"roof":"end_stone"}
+PLACE Vec3 { x: 21, y: 55, z: -27 } end_stone
+PLACE Vec3 { x: 21, y: 56, z: -27 } end_stone
+SEALED [{"q":{"x":21,"y":54,"z":-28},"n":"end_stone","full":true},{"q":{"x":21,"y":57,"z":-28},"n":"end_stone","full":true},{"q":{"x":22,"y":55,"z":-28},"n":"end_stone","full":true},{"q":{"x":22,"y":56,"z":-28},"n":"end_stone","full":true},{"q":{"x":20,"y":55,"z":-28},"n":"end_stone","full":true},{"q":{"x":20,"y":56,"z":-28},"n":"end_stone","full":true},{"q":{"x":21,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":21,"y":56,"z":-27},"n":"end_stone","full":true},{"q":{"x":21,"y":55,"z":-29},"n":"end_stone","full":true},{"q":{"x":21,"y":56,"z":-29},"n":"end_stone","full":true}]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (21.5, 55, -27.5) in the_end, health 20/20, food 20/20, alive
