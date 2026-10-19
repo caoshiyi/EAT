@@ -1,0 +1,11 @@
+program #14293 on p2: 4.3 s
+--- output ---
+CURRENT_PLAN {"state":{"at":"2026-10-19T20:43:18.930Z","p":{"x":44.82877637826448,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":2282,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false},"status":"success","next":[[45.5,50,1.5],[46.5,50,1.5],[47.5,50,0.5],[48.5,50,0.5],[49.5,50,0.5],[50.5,50,0.5]]}
+NATIVE_MOVE {"at":"2026-10-19T20:43:19.433Z","p":{"x":44.502626419948626,"y":50,"z":2.49559447422419},"hp":20,"food":20,"ground":true,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":2302,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAIL Error: native move post {"at":"2026-10-19T20:43:23.196Z","p":{"x":45.10508883409364,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":2382,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false} {"at":"2026-10-19T20:43:23.197Z","p":{"x":45.10508883409364,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":2382,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 OBSERVED P1health/discontinuity 20->16.5 at(-4.5, 54, 4.5002881838532325); checkingactualworld before action.
+p1: P1 COMBATending HP6.5 y50 fulltrue P320 issueError: OWN_HP_DROP_OR_GRACE_END; actualstateauthority.
+--- p2 now: (45.1, 50, 2.3) in the_end, health 20/20, food 20/20, alive

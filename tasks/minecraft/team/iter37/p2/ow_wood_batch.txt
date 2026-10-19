@@ -1,0 +1,13 @@
+program #14313 on p2: 11.3 s
+--- output ---
+CUT Vec3 { x: 148, y: -32, z: 2235 } oak_planks
+WOOD_COUNT 2 20
+CUT Vec3 { x: 149, y: -32, z: 2235 } oak_planks
+WOOD_COUNT 3 20
+FAIL Error: NO_NEXT_REACHABLE_CEILING {"at":"2026-10-19T20:53:36.784Z","p":{"x":149.35539240039503,"y":-36,"z":2235.4867870114126},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",3,null]],"time":14641}
+WOOD_BATCH_END {"state":{"at":"2026-10-19T20:53:37.038Z","p":{"x":149.6070507971607,"y":-36,"z":2235.497577933826},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",3,null]],"time":14641},"faces":[{"q":{"x":149,"y":-37,"z":2235},"n":"stone_bricks","full":true},{"q":{"x":149,"y":-34,"z":2235},"n":"cave_air","full":false},{"q":{"x":150,"y":-36,"z":2235},"n":"cave_air","full":false},{"q":{"x":150,"y":-35,"z":2235},"n":"cave_air","full":false},{"q":{"x":148,"y":-36,"z":2235},"n":"cave_air","full":false},{"q":{"x":148,"y":-35,"z":2235},"n":"cave_air","full":false},{"q":{"x":149,"y":-36,"z":2236},"n":"cave_air","full":false},{"q":{"x":149,"y":-35,"z":2236},"n":"cave_air","full":false},{"q":{"x":149,"y":-36,"z":2234},"n":"cave_air","full":false},{"q":{"x":149,"y":-35,"z":2234},"n":"cave_air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (149.6, -36, 2235.5) in overworld, health 20/20, food 20/20, alive

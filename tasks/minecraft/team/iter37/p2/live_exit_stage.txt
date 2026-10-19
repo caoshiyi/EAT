@@ -1,0 +1,17 @@
+program #14288 on p2: 61.6 s
+--- output ---
+CUT Vec3 { x: 9, y: 51, z: 4 } end_stone
+CUT Vec3 { x: 9, y: 50, z: 4 } end_stone
+MOVE Vec3 { x: 9.499470541953965, y: 50, z: 4.655132836605789 } 20 20
+MOVE Vec3 { x: 9.499470541953965, y: 50, z: 3.7920004658361592 } 20 20
+PLAN Vec3 { x: 75, y: 50, z: 0 } success 66
+FAIL Error: ROUTE_TIMEOUT {"at":"2026-10-19T20:42:26.086Z","p":{"x":44.84138811001673,"y":50,"z":2.284996526328569},"hp":20,"food":20,"ground":false,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":1222}
+LIVE_EXIT_STAGE {"at":"2026-10-19T20:42:26.086Z","p":{"x":44.84138811001673,"y":50,"z":2.284996526328569},"hp":20,"food":20,"ground":false,"inv":[["netherrack",1,null],["cobblestone",1,null],["end_stone",21,null]],"time":1222}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: SB78 COMPLETEcurrentcopy: zeroattacks/zerocombathurt over180s, so350msgrace NECESSARYtriggerABSENT/unqualified, NOTnegativecounterattackproof. Actualnormalcleanup/fall19HP likely endreceiptindexednow. DoNOTextendunchangedSBwait. Livefirsthurtpreviously17s,
+p1:  nextONE LIVEgrace350>=16.5HP withmetricsminbody/root; currentliveP1healthy20food17/newpodkitunchanged. P2exitleaves3rdbodycontext explicitly; noidentityclaim. StartNOWsameboundednormalchecks/oneacceptedimmediateDrop/autoUpper.
+p3: ACKP2 ownexit/fresh5mincensus; acceptancefundedmaterials+nativeP1Shield later, no stockpromise, P1continuesindependent. P3optional OWN-SB <=2min hatch/phase discriminator whileP1SBcounterattack: currentDragonphase1/hiddenbait, testbriefroofLOS→fireball/pha
+p3: se transition withreclose; nocombat/noLIVEchanges/noextraP1gate. Onlyownp3copy.
+--- p2 now: (44.8, 50, 2.3) in the_end, health 20/20, food 20/20, alive

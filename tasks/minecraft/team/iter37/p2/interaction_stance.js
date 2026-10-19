@@ -1,0 +1,7 @@
+// Public client-shape stance finder, including slab/chest-top heights. Query only.
+function interactionStances(bot,target,radius=4){
+ const v=target.constructor,make=(x,y,z)=>new v(x,y,z),points=[[.5,.5,.5],[.5,.1,.5],[.5,.85,.5],[.1,.5,.5],[.85,.5,.5],[.5,.5,.1],[.5,.5,.85]].map(a=>target.offset(...a)),out=[];
+ function clear(p){const lo=[p.x-.299,p.y+.001,p.z-.299],hi=[p.x+.299,p.y+1.799,p.z+.299];for(let x=Math.floor(lo[0]);x<=Math.floor(hi[0]);x++)for(let y=Math.floor(lo[1]);y<=Math.floor(hi[1]);y++)for(let z=Math.floor(lo[2]);z<=Math.floor(hi[2]);z++){const b=bot.blockAt(make(x,y,z));if(!b||['water','lava'].includes(b.name))return false;for(const s of b.shapes||[])if(x+s[3]>lo[0]&&x+s[0]<hi[0]&&y+s[4]>lo[1]&&y+s[1]<hi[1]&&z+s[5]>lo[2]&&z+s[2]<hi[2])return false;}return true;}
+ for(let x=target.x-radius;x<=target.x+radius;x++)for(let z=target.z-radius;z<=target.z+radius;z++)for(let y=target.y-6;y<=target.y+2;y++){const b=bot.blockAt(make(x,y,z));if(!b?.shapes?.length)continue;let top=0;for(const s of b.shapes)if(s[0]<=.5&&s[3]>=.5&&s[2]<=.5&&s[5]>=.5)top=Math.max(top,s[4]);if(!top)continue;const p=make(x+.5,y+top,z+.5);if(!clear(p))continue;const eye=p.offset(0,1.62,0);let visible=false;for(const aim of points){const d=aim.minus(eye),n=d.norm();if(n<.01||n>4.4)continue;const h=bot.world.raycast(eye,d.scaled(1/n),n+.02);if(h?.position.equals(target)){visible=true;break;}}if(visible)out.push({p,score:p.distanceTo(bot.entity.position)});}
+ return out.sort((a,b)=>a.score-b.score);
+}

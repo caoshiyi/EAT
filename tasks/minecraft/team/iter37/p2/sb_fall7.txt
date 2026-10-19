@@ -1,0 +1,29 @@
+[sandbox] program #54 on p2: 124.4 s
+--- output ---
+CUT Vec3 { x: 10, y: 51, z: 5 } dirt
+CUT Vec3 { x: 10, y: 50, z: 5 } dirt
+MOVE Vec3 { x: 10.271735495252056, y: 50, z: 5.500105794391354 } 20 20
+CUT Vec3 { x: 9, y: 52, z: 5 } end_stone
+CUT Vec3 { x: 10, y: 52, z: 5 } dirt
+PLACE Vec3 { x: 10, y: 50, z: 5 } dirt
+CUT Vec3 { x: 10, y: 53, z: 5 } cobblestone
+PLACE Vec3 { x: 10, y: 51, z: 5 } dirt
+PLACE Vec3 { x: 10, y: 52, z: 5 } dirt
+PLACE Vec3 { x: 10, y: 53, z: 5 } cobblestone
+CUT Vec3 { x: 9, y: 56, z: 5 } end_stone
+CUT Vec3 { x: 10, y: 56, z: 5 } end_stone
+PLACE Vec3 { x: 10, y: 54, z: 5 } cobblestone
+CUT Vec3 { x: 9, y: 57, z: 5 } end_stone
+CUT Vec3 { x: 10, y: 57, z: 5 } end_stone
+PLACE Vec3 { x: 10, y: 55, z: 5 } cobblestone
+CUT Vec3 { x: 9, y: 58, z: 5 } end_stone
+CUT Vec3 { x: 10, y: 58, z: 5 } end_stone
+PLACE Vec3 { x: 10, y: 56, z: 5 } cobblestone
+FALL7_RESULT {"fromY":57,"toY":50,"hpBefore":20,"hpMin":16,"hpAfter":16,"ms":1204,"rows":[[51,20,10.408654655098776,57,true],[101,20,10.257146595527402,57,true],[151,20,10.076423156468849,57,true],[200,20,9.879748120210296,57,true],[251,20,9.674363511880543,57,true],[301,20,9.464223477199916,56.92159999847412,false],[351,20,9.349487018264293,56.76636799395752,false],[402,20,9.3,56.53584062504456,false],[452,20,9.319600000000001,56.231523797587016,false],[503,20,9.357036,55.85489329934836,false],[553,20,9.410702760000001,55.40739540236494,false],[604,20,9.459539511600001,54.890447453259966,false],[654,20,9.503980955556,54.305438451751215,false],[704,20,9.544422669555962,53.653729617588596,false],[754,20,9.581224629295926,52.93665494615299,false],[804,20,9.614714412659293,52.15552175294311,false],[854,20,9.625590115519957,51.31161120717261,false],[904,20,9.615887005123161,50.40617885469533,false],[954,20,9.587457174662077,50,true],[1004,16,9.587457174662077,50,true],[1054,16,9.587457174662077,50,true],[1104,16,9.587457174662077,50,true],[1153,16,9.587457174662077,50,true],[1204,16,9.587457174662077,50,true]]}
+PLACE Vec3 { x: 9, y: 52, z: 5 } end_stone
+FALL7_END {"issue":null,"state":{"at":"2026-10-19T20:40:00.239Z","p":{"x":9.587457174662077,"y":50,"z":5.500028825428916},"hp":16.5,"food":20,"ground":true,"inv":[["mossy_stone_bricks",4,null],["sandstone",4,null],["gravel",5,null],["granite",17,null],["snowball",9,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",6,null],["stone_bricks",11,null],["basalt",5,null],["stone_shovel",1,29],["cracked_stone_bricks",7,null],["blackstone",42,null],["torch",1,null],["netherrack",5,null],["cobblestone",47,null],["end_stone",53,null],["end_stone",64,null],["end_stone",64,null],["stone_shovel",1,10],["crafting_table",2,null],["stone_sword",1,11],["end_stone",26,null]],"time":22105},"faces":[{"q":{"x":9,"y":49,"z":5},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":5},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":5},"n":"dirt","full":true},{"q":{"x":10,"y":51,"z":5},"n":"dirt","full":true},{"q":{"x":8,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":8,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":6},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":6},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":4},"n":"end_stone","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (9.6, 50, 5.5) in the_end, health 16.5/20, food 20/20, alive

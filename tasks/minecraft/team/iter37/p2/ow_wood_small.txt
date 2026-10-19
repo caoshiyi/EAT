@@ -1,0 +1,11 @@
+program #14306 on p2: 7.4 s
+--- output ---
+WOOD_APPROACH {"q":{"x":139,"y":-32,"z":2237},"feet":{"x":139,"y":-36,"z":2237},"n":7}
+CUT Vec3 { x: 139, y: -32, z: 2237 } oak_planks
+WOOD_PICKUP_SMALL {"state":{"at":"2026-10-19T20:49:09.553Z","p":{"x":139.6684937825073,"y":-36,"z":2237.535559387886},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",1,null]],"time":9301},"items":[]}
+OW_WOOD_END {"at":"2026-10-19T20:49:09.553Z","p":{"x":139.6684937825073,"y":-36,"z":2237.535559387886},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",1,null]],"time":9301,"faces":[{"q":{"x":139,"y":-37,"z":2237},"n":"stone_bricks","full":true},{"q":{"x":139,"y":-34,"z":2237},"n":"cave_air","full":false},{"q":{"x":140,"y":-36,"z":2237},"n":"cave_air","full":false},{"q":{"x":140,"y":-35,"z":2237},"n":"cave_air","full":false},{"q":{"x":138,"y":-36,"z":2237},"n":"cave_air","full":false},{"q":{"x":138,"y":-35,"z":2237},"n":"cave_air","full":false},{"q":{"x":139,"y":-36,"z":2238},"n":"bookshelf","full":true},{"q":{"x":139,"y":-35,"z":2238},"n":"bookshelf","full":true},{"q":{"x":139,"y":-36,"z":2236},"n":"bookshelf","full":true},{"q":{"x":139,"y":-35,"z":2236},"n":"bookshelf","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (139.7, -36, 2237.5) in overworld, health 20/20, food 20/20, alive
