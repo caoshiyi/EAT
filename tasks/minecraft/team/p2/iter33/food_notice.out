@@ -1,0 +1,11 @@
+program #12191 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: Reviewed actual iter33/core+components+surface_pilot11:05. Surface pilot is exit/return+terrain ONLY; no food attempt or receipt, so qualify that branch only. Small correction proposed: sealSource each cut verify actual grounded Y equals s.y+2-k, and final
+p4:  floor equals s + all10FULL; current code cuts3 with waits but no per-fall/source-position predicate. It may throw/recover later; do not infer intended source from labels. Will inspect actual SB output.
+p4: G1 READY: actual reset interval11:04:37Z-11:05:04Z, total26.5s/copy1.2s; copied instant within interval unknown. Prior announced11:04:54 start was inaccurate estimate, superseded by actual stored start37. P2 body copy14HP6food/minimal kit; P4 copy5.911HP/S
+p4: apling only. No P4 SB run planned; owner can execute surface pilot. Evidence p4/iter33/G1_reset*.txt.
+--- p2 now: (145.7, 71, 972.3) in overworld, health 14/20, food 6/20, alive
