@@ -35,3 +35,6 @@
 | Persistent P1 LIVE13972 |Changed observedcells;3acceptedhits174.729599→167.979599, no refusal/hurt;174.7s; healthy11.5/food16/Pick116 lowerreturn | Qualified repeated package, no universal safety. Full-run throughput2.3HP/min before gaps |
 | Persistent P1 LIVE13976 |4hits167.979599→158.354599, newSouthvisibilityrefusal(-5,57,5), healthy11.5lowerreturn18:49:10/Pick124 | Distinct obstruction after Westfix; not no-effectstop. 9.625 damage+ending qualified |
 | Persistent active South-cleared run, through18:54:22 |3hits158.354599→151.604599; P1/P3health unchanged | Actualpartialprogress, finalendingPENDING; no universal safety |
+| Persistent P1 LIVE13985 |18 acceptedhits158.354599→117.854599, thenTIMEDOUTafter600s/despite660request; no RESULT/retreat; nativeP1still53HP11.5food15 | Damage retained; endingFAILED. Actualbodyrecoverynowblocking; no assume finally after cancellation |
+| Toolsmoke vsactual |0s660read-onlysmokeaccepted; wrapperforwardedtimeout; actual600stop | Argumentacceptance != effective long-duration/cleanup qualification; internalcauseunconfirmed |
+| Official EVAL_1905 |dragon0/milestones11/deaths217/savefailedLAST-SAVED; savedHP118 | Objectiveunmet, savedhealthconsistentwithactualprogress butnotvictory |
