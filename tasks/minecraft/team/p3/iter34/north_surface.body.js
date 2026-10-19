@@ -1,0 +1,1 @@
+console.log('SOURCE',JSON.stringify(state()));let rows=[];for(let x of[-18,-15,-13,-12,-10,-8])for(let z of[-25,-28,-31,-34]){let column=[];for(let y=54;y<=72;y++){const b=bot.blockAt(v(x,y,z));if(!b){column.push([y,'UNLOADED']);break;}if(b.name!=='air')column.push([y,b.name]);}rows.push({x,z,column});}console.log('SURFACE',JSON.stringify(rows));stop();

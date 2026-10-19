@@ -1,0 +1,22 @@
+program #13337 on p3: 13.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:01:57.722Z","p":{"x":6.5,"y":55,"z":-25.500000000000096},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["stone_pickaxe",1,0],["snowball",2,null],["stone_pickaxe",1,103],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",56,null]],"time":12871,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 7, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 7, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 7.357169719836447, y: 55, z: -25.500000000000167 } 20 20
+MOVE Vec3 { x: 8.5, y: 55, z: -25.500000000000256 } 20 20
+MOVE Vec3 { x: 8.500000000000004, y: 55, z: -14.710799609980798 } 20 20
+MOVE Vec3 { x: 7.661212883262294, y: 55, z: -14.537283369524818 } 20 20
+MOVE Vec3 { x: 6.5, y: 55, z: -14.519584573433473 } 20 20
+MOVE Vec3 { x: 5.643019595020692, y: 55, z: -14.511375155677966 } 20 20
+MOVE Vec3 { x: 4.5, y: 55, z: -14.50598743382001 } 20 20
+MOVE Vec3 { x: 3.642849344635877, y: 55, z: -14.503421819326093 } 20 20
+MOVE Vec3 { x: 2.5, y: 55, z: -14.501882441837479 } 20 20
+MOVE Vec3 { x: 1.6428332176361946, y: 55, z: -14.500856189006099 } 20 20
+GIFT_PEER Vec3 { x: 7.531028385226528, y: 55, z: -14.499894083175866 }
+FAIL Error: recipient not adjacent {"at":"2026-10-19T15:02:11.408Z","p":{"x":1.6428332176361946,"y":55,"z":-14.500856189006099},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["cobblestone",17,null],["gravel",5,null],["spruce_planks",1,null],["stick",3,null],["snowball",2,null],["stone_pickaxe",1,104],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["stone_pickaxe",1,1],["end_stone",58,null]],"time":13131,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (1.6, 55, -14.5) in the_end, health 20/20, food 20/20, alive
