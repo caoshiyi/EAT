@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const out=[];for(let z=2231;z<=2237;z++)for(let x=140;x<=143;x++)out.push([x,z,[-37,-36,-35,-34,-33].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]);return{p:bot.entity.position,out,webs:bot.findBlocks({matching:bot.registry.blocksByName.cobweb.id,maxDistance:20,count:10}).map(p=>p.toArray())};

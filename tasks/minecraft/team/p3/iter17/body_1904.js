@@ -1,3 +1,0 @@
-const {Vec3}=require('vec3');
-const coords=[[6,67,81],[6,68,81],[5,68,82],[6,68,84],[7,69,82],[7,69,83]];
-return {at:new Date().toISOString(),world:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:bot.controlState,goal:bot.pathfinder.goal,cursor:bot.inventory.selectedItem,inv:bot.inventory.items().map(i=>[i.name,i.count]),cover:coords.map(q=>{let b=bot.blockAt(new Vec3(...q));return {q,name:b?.name,shape:b?.shapes,properties:b?.getProperties()}}),hostiles:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<8).map(e=>({id:e.id,name:e.name,p:e.position}))};

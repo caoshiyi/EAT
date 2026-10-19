@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const a=[];for(let x=146;x<=150;x++)for(let z=2243;z<=2246;z++)a.push([x,z,[-37,-36,-35,-34,-33].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]);return{p:bot.entity.position,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),cols:a};

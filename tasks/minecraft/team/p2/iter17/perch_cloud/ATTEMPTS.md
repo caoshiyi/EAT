@@ -1,1 +1,0 @@
-Publicmatched cba class reused from perch_availability; exact new classes LevelReader/Level/Mth/DragonFireball SHA1+size verified by trusted extractor with parserfixture. One read mistakenly expected p1/.../blv_bytecode.txt and failedENOENT; discovered actual public blv.class, extracted getY fragment with javap to OWN directory. No gameplay/serveraccess.

@@ -1,6 +1,0 @@
-const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),before=count('arrow');let issued=false,endingIssue=null;try{
-if(!life.position.floored().equals(V(132,-36,2276))||!closed(life.position.floored())||before!==2)throw Error('ACTUAL_STAGE_ARROW');
-if(Date.now()-readyEvidence.at>120000||Date.now()<readyEvidence.at)throw Error('STALE_READY');trace.push(['CANONICAL_READY',readyEvidence]);
-for(let x=133;x<=135;x++)for(let z=2275;z<=2277;z++)if(bot.blockAt(V(x,-38,z))?.name!=='end_portal')throw Error('PORTAL9');
-await step(V(133,-36,2276));await cut(V(134,-35,2276));await cut(V(134,-36,2276));if(!air(V(134,-37,2276)))throw Error('CENTER_FLOOR');await bot.lookAt(V(134.8,-37.6,2276.5),true);await tick(4);await bot.toss(bot.registry.itemsByName.arrow.id,null,2);issued=true;trace.push(['ARROW_ISSUED',Date.now(),before,count('arrow')]);bot.chat('P4 iteration18 TWO arrows ISSUED '+new Date().toISOString()+' donor2→'+count('arrow')+' aftercurrentREADY; ordinaryP1receipt stillrequired.');await move(V(132,-36,2276));await tick(20);
-}catch(e){issue=e.message}finally{escaping=true;stop();try{await cover()}catch(e){endingIssue=e.message}cleanup()}return{...snap(),issued,before,after:count('arrow'),endingIssue,readyEvidence};

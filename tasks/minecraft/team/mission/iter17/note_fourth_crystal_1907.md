@@ -1,7 +1,0 @@
-# Iteration17 note fourth_crystal_1907 — 2026-10-17T19:07:40.185923+00:00
-
-Actual8461 19:05:05→19:05:34 **THIRD RANGED/FOURTH totalcrystal removed**, chosenentity13093(-12.5,Y92,39.5), actual7→6/ARROW2→1/targetGone~1922msafterrelease, retainedclosed28Y49/HP20/currentCloudFALSE/controls{}/issueNULL/endingNULL. CurrentST129+ST12/BOW5/ARROW1/END12+COFF2+Mossy1/SW6. 8463nextapertureprepared19:05:55retained20HP/ST129+ST16/END13. No currentDragonHP/phase tuple;19:05bossmeasurementdeadlineMISS, rangedpositiveeffectdoesnotmeanbosshealthprogress.
-
-8457ordinaryARROW2input+retained81Y49PASS19:04:15, afterfreshREADY19:03:54 triggered8451issue19:03:56.755. PossibleearlierREADY/listenerorderresolved, no itemexpiry/phantompacket. P4sourceendingCAP_REF_STOCKhead133/closedFALSE distinctfrominputdelivery;8460usedOLDSTONE130lastuse/broke, MOSS1pickedup, both133doorsAIR, heldactiveSTONE126raw5. P4newunit19:05→19:13 ownfinitefreshpick+one/twocurrenttargets+actualpacket/return, no quantityguarantee/sourcequota. P1asksselectednext2–5prefixby19:14ifactual, partialuseful, noEndentry. NewretoolmustnotdelayP1currentARROW1/closingstart19:10; actorpricesactualexistingmaterial/targetavailability. P2conditionalperch-cycleexampleuseful warningabouthealingalias/downtime, NOTactualDPS/ceiling ornewgate.
-
-LiveoutcomesequenceP1two shots→LOW56closing remainsownerselected; protect19:10closingstart, actualbossHP/phasebefore/aftereachintendedinteraction requiredforusefulgoalclaim. No rootMinecraftmethods/routes/recipes/combatprescribed. Finaldeadline19:24:04fixed; no earlyfinal/stop.

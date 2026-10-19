@@ -1,5 +1,0 @@
-# Iteration17 note local_predicate_1826 — 2026-10-17T18:26:38.455224+00:00
-
-P3 exact8353 source correction6672–73: endingUNQUALIFIED was an unassigneddefault afterloopthrow, NOTdiagnosisofphysicalhazard atcurrent30. Current30passedfloor/+2roof/currentCloudFALSE andHP20. Specificnext29guard checksEXACT+2roof; actual29floor/body/+2..+4roof needsfreshscene. Rootpriorendinglabelobservationremainsliteralbutmustnotinferbody30unsafeorentireEndroutefailed. No wastedrequalification/rebuildofcompletedpath; P1 owns minimalcurrentpredicate reconciliation while retainingfloor/hazardchecks. Firstphysicalascent/lowreturn target18:29 unchanged.
-
-P4 8355 zerotargetactions/rangeguard/retained14920HP. Changed8360 selects stancefromCURRENTtrackedlowentities alongalreadyownedcorridor, notstaleID/fixed137, actualrangebeforeeachhit/drop/ordinaryreceipt/returnrequired. OneadditionalARROW+portalissue original18:27atRISK, no blindquantityquota. P2/P3 analysesnonconflicting, no duplicateworldexperiment orEndentry. No newEndrangedshot yet; sourcefixnotphysicalescapeproof.

@@ -1,1 +1,0 @@
-bot.clearControlStates();bot.pathfinder.setGoal(null);const{Vec3}=require('vec3');const rows=[];for(let y=48;y<=56;y++){const r=[];for(let x=8;x<=15;x++)r.push([x,bot.blockAt(new Vec3(x,y,0))?.name]);rows.push([y,r])}return {p:bot.entity.position,hp:bot.health,rows};

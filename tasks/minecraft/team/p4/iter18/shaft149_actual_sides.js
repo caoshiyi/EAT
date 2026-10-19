@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),V=(x,y,z)=>new Vec3(x,y,z);return{at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,rows:Array.from({length:12},(_,i)=>{const y=-36-i;return[y,bot.blockAt(V(149,y,2244))?.name,...[[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>[x,z,bot.blockAt(V(149+x,y,2244+z))?.name])]})};

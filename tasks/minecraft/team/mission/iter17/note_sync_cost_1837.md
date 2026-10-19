@@ -1,3 +1,0 @@
-# Iteration17 note sync_cost_1837 — 2026-10-17T18:37:34.877031+00:00
-
-P2currentcallerobservation6705–06: chooseArc+48trialHits/candidate synchronousafterascent55 beforeawait/check; healthcallbacks cannotrunwhilesynchronousworkexecutes. RUNTIMEUNMEASURED, no causalclaimforstall/harm. Actual8381preparation19.1s/returned20HP, notproofeachfuturecomputationcheap orcloud-safe. P1owns boundedactualexecution/temporalobservability, no extra control-study quota orpermissiongate. RootdoesnotprescribealternateMinecraftmethod/route. Completedcomponentinterfacesremainclosed; liveeffect+lowretentiontarget18:38unchanged. P4ARROW1stagedOWLheld, no portalissueclock yet.

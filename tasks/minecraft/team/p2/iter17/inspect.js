@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3');
-bot.clearControlStates();bot.pathfinder.setGoal(null);
-const p=bot.entity.position;
-return {now:new Date().toISOString(),id:bot.entity.id,p:p.clone(),hp:bot.health,food:bot.food,dimension:bot.game.dimension,ground:bot.entity.onGround,cursor:bot.inventory.selectedItem,controls:bot.controlState,goal:bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),faces:[[0,-1,0],[0,2,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]].map(a=>{const q=p.floored().offset(...a),b=bot.blockAt(q);return[q,b?.name,b?.shapes]}),peers:Object.values(bot.entities).filter(e=>e.username&&e.id!==bot.entity.id).map(e=>[e.username,e.position]),hazards:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','silverfish','spider','enderman'].includes(e.name)&&e.position.distanceTo(p)<24).map(e=>[e.name,e.position])};

@@ -1,6 +1,0 @@
-
-## Iteration19 21:36 result-gated evidence
-Execution steward exacttimeout reconciliation adopted as evidence:8895TIMEDOUT/returnUNKNOWN, fresh8899 oneheadcutREAL/footstillpresent;8900 completedremainingfootcut, issueNULL/closedFALSE20HP, no claimtimeoutcompletedboth. Ownertransit8903retained20HP/library/routeRELEASED.
-P3sourceentrysharedwallfinding adopted7284; tunnel interrupted-firstmove reverse-list bug source/syntheticonly7288 adoptedP17291, timingreducedwork145/155s vs240caller/230endingguard. No fieldfix/safetycertification. P1run_once.py smallsmoke8915 printsendingimmediately, actual20HP/EMPTY/closedFALSEalcove.
-P2reserve8909 donatedBASALT1+COFF1 at21:35:12.851/returnedSOUTHsamefootcellHP11.5, exactpositionpredicateFALSEby.185m notfailedreturn. P4canonical8911 actualordinaryBASALT1+COFF1 confirmsreceipt, body20HP/ground/controls{}; supportCLOSED, notnewP1stock.
-P4source8911completed21:36:18.530: WOOD_NOT_PICKED_1, actualWOOD_CUT thenentity1139/oak_planks1observedY-33 whilebodyY-36, planksinventory0. Harvestinteractioneffect REAL, ordinarypickup UNMET; routecuts REAL, no genericsourceimpossibility/lootfailureclaim. Ownernextdecisionpending/immediateresulthandlingexpected. Support21:40prefix/21:44receipt+wholegoal22:06:50remainunchanged.

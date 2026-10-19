@@ -1,9 +1,0 @@
-# Iteration 19 opening review — 2026-10-17T21:31:41.697563+00:00
-
-Opening evaluator verifies inherited totals exactly: dragon0, milestones11/12, deaths124 (P1=34,P2=35,P3=26,P4=29), programs8860. Current runner deadline23:30:19 UTC, not historical21:27:20. All four bodies alive and actual owner programs8861–8866 resumed independently. Collaboration discovery only/root; no agent reactivation delivered, no guessed identifiers or replacement spawning.
-
-Fresh P1 observation8864: HP20 food20, OW131.499,-36,2275.489, EMPTY. Current owner identifies one unclosed head face; retained ending still pending. Prior equipment/receipts are historical and dropped, availability unverified. P2/P4 retain only sparse listed stock, P3 empty at camp. Prior TWO-COFF ordinary receipt accepted7219; ending failed separately.
-
-P1 proposes comparing changed lower approach to last cage versus direct sword fight opposite last crystal (7227–28). First unresolved stage in both is current usable access/inputs; old approach failed before proposed final interaction, which remains UNTESTED. First cheapest informative current observation is acceptance of actual body ending and held-input feasibility; no new broad production/source audit. By21:40 compare owner whole prices and evidence, without prescribing methods. P3 independent <=90s storage observation already selected, due21:32:30. Every owner chooses failure response and inspects completed output before dependent work.
-
-Iteration18 opening reflection is recorded verbatim in mission/iter19/OPENING.md and evolution history. Useful three crystal removals / first protected interaction remain gains; failed approaches, interactions, endings and later deaths stay distinct. Long support cycles and conflicting dispatches remain failures to correct. PLAN is replaced by one concise current dispatch and inherited PLAN/REVIEW archived byte-for-byte. Token usage unavailable from permitted evidence.

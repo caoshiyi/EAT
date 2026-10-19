@@ -1,3 +1,0 @@
-const {Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);for(const k of Object.keys(global))if(/^P1/.test(k))delete global[k];
-const p=bot.entity.position.floored(),blocks=[];for(let x=-3;x<=3;x++)for(let y=-2;y<=3;y++)for(let z=-3;z<=3;z++){const q=p.offset(x,y,z),b=bot.blockAt(q);if(b)blocks.push([q.toArray(),b.name,b.shapes]);}
-return {at:Date.now(),p:bot.entity.position,hp:bot.health,food:bot.food,dimension:bot.game.dimension,ground:bot.entity.onGround,inventory:bot.inventory.items(),controls:bot.controlState,blocks,entities:Object.values(bot.entities).map(e=>[e.id,e.name,e.username,e.position,e.health]).filter(e=>e[3].distanceTo(bot.entity.position)<30)};

@@ -1,5 +1,0 @@
-# Iteration17 note courier_clock_1847 — 2026-10-17T18:46:57.375914+00:00
-
-P2actualclock correction6724–25 SUPERSEDESrootrounded18:45→18:53/cutoff18:49: **accepted18:44:27→18:52:27WHOLE, packetcutoff18:48:27**. No actualnextpacket/P4source-benefitACKyet, P2stillOWsouth/no movement. 8398preflightactualclosedCOFF131/133foot+head; AIR/fullfloor/roof50nodesbeforeportalpod. No assumedopenapproach/toolcapacity/courieracceptance, no unpricedemptytrip. P4may selfdeliverifcheaper; onejointchoice. Expirywithoutpacket is dependency/proposal failure, notsource/RNG/Endfailure. No automaticextension/rearmclock orrenewedP2source.
-
-P1actual8393currentARROW1+ST1ordinary/low20HP, nextEndunitindependent ofP2futureproposal. **NextusefulEndeffect+retainedending orpreciseactualblockerby18:50**, usesclosedpositivecomponents/freshtarget; no newgenericcontrol/inputgate. Currentpacketinterfacecomplete; firstgoal remainsdragon, notstock/crystalcount. Whole-objectivebossprogressestimate/actualHPphase stillpending, collectroutinevisiblefieldswithoutnewwait/task. Nextreview18:49/soonercriticalresult/death.

@@ -1,9 +1,0 @@
-# Follow-up closes prior retained-artifact gaps
-
-P1 follow-up7133–34 at20:56:50 liftedexisting-only fortargetedpearlclass/90sec. P3 already extractingexactclass+ancestry/tagfrom20:55:45; P2ACKcanonical8781 (pearl_followup_ack.out), reusednewfiles insteadduplicateextract. Firstanswer8783 by20:58:08=78sec/90. Detailedfollowupfilepublishedlater; do notconflate.
-
-New SHA1matched public1.20.4 artifacts: `p3/iter18/public_pearl/`. Pearl.onHit first invokes super.onHit; Projectile.onHit synchronously dispatches virtualonHitEntity; pearl override invokes entity.hurt(thrownDamage,0). AcceptedEndCrystalhurt synchronously removescrystal/power6explosion; this completes BEFORE pearl.onHit then tests !clientSide && !pearl.isRemoved. It then requiresvalidplayerconnection/sameworld/notSleeping; teleportsownertopearlCURRENTposition, resetsfalldistance and invokes5fall/pearlDamage, finallydiscardspearl. Not crystalcentre/oldaimpoint.
-
-No hurt override in retained pearl/ThrowableItemProjectile/ThrowableProjectile/Projectile hierarchy (explicitabsencecheck passed); Entity.hurt merelychecks invulnerability/marksHurt/returnsfalse, doesnotdiscard. Thus explosionDAMAGEalone doesnotremovepearlviahurt, and the normalpostexplosionteleportcodepath is supported, conditionalonowner/removedguard/currentcollision. This isnotuniversal survivability or actualeffect/route/landingproof. P1holdsnopearl; no production/highentrybyP2.
-
-New exactpublicdragon_immune.json includesminecraft:end_stone ANDminecraft:iron_bars. This closesmembershipquestion forstandardmatchedassets/checkWallsremoval, NOTblastresistance/contact/knockbackimmunity or proofcurrentserverblocktagsareunchanged. Currentworldsurvivalstilldecisive. Priorpartialanswer remainsaccurateundertheearlierexisting-onlyconstraint; newevidenceclosedgaps, no retroactivefullproofclaim.

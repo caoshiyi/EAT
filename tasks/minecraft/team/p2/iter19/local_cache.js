@@ -1,4 +1,0 @@
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);
-const names=['chest','trapped_chest','barrel','furnace','crafting_table'];const ids=names.map(n=>bot.registry.blocksByName[n]?.id).filter(n=>n!==undefined);const blocks=bot.findBlocks({matching:ids,maxDistance:45,count:35}).map(p=>bot.blockAt(p));const observations=[];
-for(const b of blocks){const distance=b.position.offset(.5,.5,.5).distanceTo(bot.entity.position.offset(0,1.62,0));let items=null,issue=null;if(distance<4.4&&b.name!=='crafting_table'){try{const c=await bot.openContainer(b);items=c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]);bot.closeWindow(c)}catch(e){issue=e.message}}observations.push({name:b.name,p:b.position,distance,items,issue})}
-return{observations,pos:bot.entity.position,hp:bot.health,food:bot.food,inventory:bot.inventory.items().map(i=>[i.name,i.count]),window:bot.currentWindow?.type||null,controls:bot.controlState};

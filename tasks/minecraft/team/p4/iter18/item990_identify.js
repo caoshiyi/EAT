@@ -1,1 +1,0 @@
-return{at:new Date().toISOString(),id990:bot.registry.items[990],p:bot.entity.position.clone(),hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),controls:bot.controlState};

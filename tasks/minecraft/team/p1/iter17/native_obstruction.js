@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,rows:[28,29,30].map(x=>[x,Array.from({length:8},(_,i)=>[48+i,bot.blockAt(new Vec3(x,48+i,0))?.name])]),clouds:Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud').map(e=>[e.position,e.metadata])};

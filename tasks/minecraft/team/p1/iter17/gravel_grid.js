@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const out=[];for(let y=-36;y>=-43;y--){const rows=[];for(let z=2243;z<=2248;z++){const r=[];for(let x=147;x<=150;x++)r.push(bot.blockAt(new Vec3(x,y,z))?.name);rows.push([z,r])}out.push([y,rows])}return out;
