@@ -1,0 +1,95 @@
+== #1 2026-10-19T11:45:44 p3 role=independent_operator iter=33 13.4 s
+// Ordinary survival checkpoint test. Sandbox first; never deletes bed/floor.
+const V=bot.entity.position.constructor;
+const home=new V(6.5,67,82.5);
+console.log('SOURCE',new Date().toISOString(),bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));
+if(bot.entity.position.distanceTo(home)>.3||bot.health>3)throw Error('source mismatch');
+const chest=bot.blockAt(new V(7,68,82));
+for(const [p,name] of [[new V(5,68,82),'sand'],[new V(5,67,82),'dirt']]){
+ const b=bot.blockAt(p);if(b.name!==name)throw Error('door changed '+b.name);await bot.dig(b);await bot.waitForTicks(8);
+}
+const c=await bot.openChest(chest);for(const i of bot.inventory.items())await c.deposit(i.type,null,i.count);c.close();await bot.waitForTicks(10);
+console.log('STORED',bot.inventory.items().map(i=>[i.name,i.count]),bot.health);
+let died=false,respawned=false;const d=()=>{died=true;bot.clearControlStates();console.log('DEATH',new Date().toISOString());};const r=()=>{respawned=true;bot.clearControlStates();console.log('RESPAWN',new Date().toISOString(),bot.entity.position,bot.health,bot.food);};bot.on('death',d);bot.on('respawn',r);
+try{
+ await bot.lookAt(new V(2.5,68.62,82.5),true);bot.setControlState('jump',true);bot.setControlState('forward',true);
+ for(let k=0;k<80&&!died;k++){await bot.waitForTicks(1);if(k===11)bot.setControlState('jump',false);if(k%5===0)console.log('FALL',k,bot.entity.position,bot.health);}
+ bot.clearControlStates();for(let k=0;k<80&&!respawned;k++)await bot.waitForTicks(1);await bot.waitForTicks(15);
+ console.log('END',JSON.stringify({died,respawned,pos:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count])}));
+}finally{bot.clearControlStates();bot.removeListener('death',d);bot.removeListener('respawn',r);}
+-- output --
+SOURCE 2026-10-19T11:45:44.819Z Vec3 { x: 6.5, y: 67, z: 82.5 } 2.1666641235351562 17 [ [ 'dirt', 1 ] ]
+STORED [] 2.1666641235351562
+FALL 0 Vec3 {
+  x: 6.4019999614674195,
+  y: 67.41999998688698,
+  z: 82.50000001957426
+} 2.1666641235351562
+FALL 5 Vec3 { x: 5.9174574960236725, y: 67, z: 82.5000000391485 } 2.1666641235351562
+FALL 10 Vec3 {
+  x: 4.859273580325359,
+  y: 66.23152379758702,
+  z: 82.50000010961583
+} 2.1666641235351562
+FALL 15 Vec3 {
+  x: 4.028330053110245,
+  y: 63.653729617588596,
+  z: 82.50000012919007
+} 2.1666641235351562
+FALL 20 Vec3 { x: 3.222178139123644, y: 63, z: 82.50000021140195 } 1.1666641235351562
+FALL 25 Vec3 { x: 2.3, y: 63, z: 82.50000030927325 } 1.1666641235351562
+FALL 30 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 35 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 40 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 45 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 50 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 55 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 60 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 65 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 70 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+FALL 75 Vec3 { x: 2.2804, y: 63, z: 82.50000031449304 } 1.1666641235351562
+END {"died":false,"respawned":false,"pos":{"x":2.3,"y":63,"z":82.50000030927325},"hp":1.1666641235351562,"food":17,"ground":true,"inv":[]}
+== #2 2026-10-19T11:46:15 p3 role=independent_operator iter=33 6 s
+let died=false;const d=()=>{died=true;bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('DEATH',new Date().toISOString())};const r=()=>console.log('RESPAWN',new Date().toISOString(),bot.entity.position,bot.health,bot.food);bot.on('death',d);bot.on('respawn',r);try{const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.maxDropDown=5;bot.pathfinder.setMovements(m);console.log('SOURCE',bot.entity.position,bot.health);bot.pathfinder.setGoal(new goals.GoalNear(7,60,82,1));for(let k=0;k<160&&!died;k++){await bot.waitForTicks(1);if(k%20===0)console.log('MOVE',bot.entity.position,bot.health)}bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(40);console.log('END',bot.entity.position,bot.health,bot.food,died);}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('death',d);bot.removeListener('respawn',r)}
+-- output --
+SOURCE Vec3 { x: 2.3, y: 63, z: 82.50000030927325 } 1.1666641235351562
+MOVE Vec3 { x: 2.3, y: 63, z: 82.50000030927325 } 1.1666641235351562
+MOVE Vec3 {
+  x: 6.556086412000005,
+  y: 62.231523797587016,
+  z: 82.49999975284233
+} 1.1666641235351562
+MOVE Vec3 { x: 6.386630541577263, y: 60, z: 82.49999974605659 } 1.1666641235351562
+DEATH 2026-10-19T11:46:17.669Z
+RESPAWN 2026-10-19T11:46:17.691Z Vec3 { x: 6.386630541577263, y: 60, z: 82.49999974605659 } 0 17
+END Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20 true
+== #3 2026-10-19T11:46:30 p3 role=independent_operator iter=33 0.2 s
+const V=bot.entity.position.constructor;console.log('NEXT_SOURCE',bot.entity.position,bot.health,bot.food,bot.entity.onGround);console.log('FIXTURES',[[6,67,83],[7,67,83],[7,68,82],[6,66,82],[6,69,82],[5,67,82],[5,68,82]].map(a=>[a,bot.blockAt(new V(...a))?.name]));const c=await bot.openChest(bot.blockAt(new V(7,68,82)));console.log('CHEST',c.containerItems().map(i=>[i.name,i.count]));c.close();console.log('NEAR',Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<8).map(e=>[e.name,e.position]));
+-- output --
+NEXT_SOURCE Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20 true
+FIXTURES [
+  [ [ 6, 67, 83 ], 'white_bed' ],
+  [ [ 7, 67, 83 ], 'white_bed' ],
+  [ [ 7, 68, 82 ], 'chest' ],
+  [ [ 6, 66, 82 ], 'crafting_table' ],
+  [ [ 6, 69, 82 ], 'spruce_slab' ],
+  [ [ 5, 67, 82 ], 'air' ],
+  [ [ 5, 68, 82 ], 'air' ]
+]
+CHEST [
+  [ 'leather', 1 ],
+  [ 'dirt', 2 ],
+  [ 'sand', 1 ],
+  [ 'emerald', 4 ],
+  [ 'filled_map', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'spider_eye', 1 ]
+]
+NEAR [
+  [
+    'item',
+    Vec3 { x: 7.602891721622063, y: 60, z: 85.61244465750099 }
+  ],
+  [ 'item', Vec3 { x: 4.125, y: 60, z: 81.32720344305493 } ],
+  [ 'item', Vec3 { x: 4.765970667620104, y: 60, z: 84.6471076169281 } ]
+]

@@ -1,0 +1,28 @@
+program #12350 on p3: 2.5 s
+--- output ---
+NEXT_SOURCE Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20 true
+RETAINED_BANK [
+  [ 'leather', 1 ],
+  [ 'dirt', 2 ],
+  [ 'sand', 1 ],
+  [ 'emerald', 4 ],
+  [ 'filled_map', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'spider_eye', 1 ]
+]
+END Vec3 { x: 6.5, y: 67, z: 82.5 } 20 20 [ [ 'dirt', 1 ] ] [
+  [ [ 5, 67, 82 ], 'dirt' ],
+  [ [ 5, 68, 82 ], 'sand' ],
+  [ [ 6, 67, 83 ], 'white_bed' ],
+  [ [ 7, 67, 83 ], 'white_bed' ],
+  [ [ 6, 66, 82 ], 'crafting_table' ],
+  [ [ 6, 69, 82 ], 'spruce_slab' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 local wood/tool dependency PASS next-source12340 retained Pick/Sword/Shovel, actual shovel wear0→1 native floor cut/down64/cap66; threefull endings same5.911HP17food. Current own next branch protected stone quarry→iron supply candidate, no delivery prom
+p4: ise. P2 combat kit remains unarmored/iron0; will test actual local ore access while you handle food/travel.
+p1: P1 actual12344 adopted P4 core native face/cut/move/place: protected weststep full10/HP8.33 food17, received Dirt3+Flint1 then spent3 rear+roof; retainFlint1. P4 receipt-wait adoption12328 and edge-support correction12332 noted; wait is conditional, not su
+p1: fficient. Next distinct route research: build own protected access to log~(-21,57,-30), then native boat travel interface if funded. Goal distinguish true boat control vs stale association; no sandbox reset while P3 active.
+--- p3 now: (6.5, 67, 82.5) in overworld, health 20/20, food 20/20, alive
