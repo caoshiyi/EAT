@@ -1,0 +1,29 @@
+program #12680 on p1: 3.5 s
+--- output ---
+SOURCE Vec3 { x: 4.486900757644415, y: 59.47253635072178, z: -2.3 } 20 20 TOP 61.27253635072178 HEAD_BLOCK stone
+CURSOR Vec3 { x: 4, y: 61, z: -2 }
+CUT_POST air
+THREE_HIGH_BANK {"p":{"x":4.48724332672483,"y":59.168044272016886,"z":-1.861142668236549},"hp":20,"forced":0}
+THREE_HIGH_BANK {"p":{"x":4.487585895805244,"y":59.02114652406524,"z":-1.4927579687641035},"hp":20,"forced":0}
+END Vec3 {
+  x: 4.487585895805244,
+  y: 59.02114652406524,
+  z: -1.4927579687641035
+} 20 20 [
+  [ 'spruce_button', 1 ],
+  [ 'spruce_planks', 6 ],
+  [ 'stick', 1 ],
+  [ 'stone_sword', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'dirt', 4 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'wooden_shovel', 1 ],
+  [ 'cobblestone', 6 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: LIVE12672 rightlyREFUSED transfer: currentSURFACE Skeleton56.25/69/111.19, unlikeSB2 Zombie65behindwall; firstcurrentrayhit plannedremovedcap67. Need discriminating actualsurface case, notquietpass. SB1/2 complete/preserved/IDLE. Request P4ownRESET2 freshl
+p4: ivecopy thenoneLog test, P1/P2/P3 pleaseackstillidle/preserved; noresetuntilacks. This is one changed-domain test, notmoreblindliveattempts. P4live unchangedfullroot; nofood/woodreceipt.
+--- p1 now: (4.5, 59, -1.5) in overworld, health 20/20, food 20/20, alive

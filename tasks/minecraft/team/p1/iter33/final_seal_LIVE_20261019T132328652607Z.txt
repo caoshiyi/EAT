@@ -1,0 +1,113 @@
+program #12805 on p1: 2 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:23:28.760Z","p":{"x":8.7,"y":55,"z":87.73433871415064},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",60,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19244,"faces":[{"q":{"x":8,"y":54,"z":87},"n":"cobblestone","full":true},{"q":{"x":8,"y":57,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":56,"z":87},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":7,"y":56,"z":87},"n":"stone","full":true},{"q":{"x":8,"y":55,"z":88},"n":"air","full":false},{"q":{"x":8,"y":56,"z":88},"n":"air","full":false},{"q":{"x":8,"y":55,"z":86},"n":"air","full":false},{"q":{"x":8,"y":56,"z":86},"n":"air","full":false}]}
+PEER Vec3 { x: 8.49999999999923, y: 55, z: 89.7 }
+PLACE {"q":{"x":8,"y":56,"z":88},"name":"cobblestone","state":{"at":"2026-10-19T13:23:29.165Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",59,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19244}}
+PLACE {"q":{"x":8,"y":55,"z":88},"name":"cobblestone","state":{"at":"2026-10-19T13:23:29.466Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",58,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19244}}
+PLACE {"q":{"x":8,"y":56,"z":86},"name":"cobblestone","state":{"at":"2026-10-19T13:23:29.971Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",57,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19264}}
+PLACE {"q":{"x":8,"y":55,"z":86},"name":"cobblestone","state":{"at":"2026-10-19T13:23:30.270Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",56,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19264}}
+FINAL_CONTROLS [
+  [ 'forward', false ],
+  [ 'back', false ],
+  [ 'left', false ],
+  [ 'right', false ],
+  [ 'jump', false ],
+  [ 'sprint', false ],
+  [ 'sneak', false ]
+] GOAL null
+ENDING {"at":"2026-10-19T13:23:30.271Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",56,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19264,"faces":[{"q":{"x":8,"y":54,"z":87},"n":"cobblestone","full":true},{"q":{"x":8,"y":57,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":56,"z":87},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":7,"y":56,"z":87},"n":"stone","full":true},{"q":{"x":8,"y":55,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":55,"z":86},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":86},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T13:23:30.422Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",56,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19264,"faces":[{"q":{"x":8,"y":54,"z":87},"n":"cobblestone","full":true},{"q":{"x":8,"y":57,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":56,"z":87},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":7,"y":56,"z":87},"n":"stone","full":true},{"q":{"x":8,"y":55,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":55,"z":86},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":86},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T13:23:30.573Z","p":{"x":8.563430703254376,"y":55,"z":87.5746275330706},"hp":20,"food":20,"ground":true,"inv":[["spruce_button",1,null],["coal",5,null],["stick",1,null],["stone_sword",1,0],["flint_and_steel",1,0],["andesite",8,null],["cobblestone",56,null],["spruce_sapling",1,null],["raw_copper",8,null],["cobblestone",40,null],["wooden_shovel",1,24],["stone_pickaxe",1,38],["cobblestone",64,null],["diorite",19,null],["cobblestone",64,null]],"time":19284,"faces":[{"q":{"x":8,"y":54,"z":87},"n":"cobblestone","full":true},{"q":{"x":8,"y":57,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":9,"y":56,"z":87},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":87},"n":"stone","full":true},{"q":{"x":7,"y":56,"z":87},"n":"stone","full":true},{"q":{"x":8,"y":55,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":88},"n":"cobblestone","full":true},{"q":{"x":8,"y":55,"z":86},"n":"cobblestone","full":true},{"q":{"x":8,"y":56,"z":86},"n":"cobblestone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T13:23:30.723Z",
+ "p": {
+  "x": 8.563430703254376,
+  "y": 55,
+  "z": 87.5746275330706
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "coal",
+   5,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "flint_and_steel",
+   1,
+   0
+  ],
+  [
+   "andesite",
+   8,
+   null
+  ],
+  [
+   "cobblestone",
+   56,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "raw_copper",
+   8,
+   null
+  ],
+  [
+   "cobblestone",
+   40,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   24
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   38
+  ],
+  [
+   "cobblestone",
+   64,
+   null
+  ],
+  [
+   "diorite",
+   19,
+   null
+  ],
+  [
+   "cobblestone",
+   64,
+   null
+  ]
+ ],
+ "time": 19284
+}
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (8.6, 55, 87.6) in overworld, health 20/20, food 20/20, alive

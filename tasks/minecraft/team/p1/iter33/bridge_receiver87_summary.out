@@ -1,0 +1,44 @@
+program #12791 on p1: 3.8 s
+--- output ---
+SOURCE Vec3 { x: 8.500115649833177, y: 55, z: 86.7 } 20 20 [
+  [ 'spruce_button', 1 ],
+  [ 'coal', 5 ],
+  [ 'stick', 1 ],
+  [ 'stone_sword', 1 ],
+  [ 'iron_ingot', 1 ],
+  [ 'andesite', 8 ],
+  [ 'cobblestone', 61 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'raw_copper', 8 ],
+  [ 'cobblestone', 40 ],
+  [ 'wooden_shovel', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'cobblestone', 64 ],
+  [ 'diorite', 19 ],
+  [ 'cobblestone', 64 ]
+]
+EDGE Vec3 { x: 8.50027177710787, y: 55, z: 87.20527494003214 } true
+FLOOR_ACTUAL cobblestone
+RECEIVER87 Vec3 { x: 8.499462228275906, y: 55, z: 86.3 } 20 20 [
+  [ 'spruce_button', 1 ],
+  [ 'coal', 5 ],
+  [ 'stick', 1 ],
+  [ 'stone_sword', 1 ],
+  [ 'iron_ingot', 1 ],
+  [ 'andesite', 8 ],
+  [ 'cobblestone', 61 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'raw_copper', 8 ],
+  [ 'cobblestone', 40 ],
+  [ 'wooden_shovel', 1 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'cobblestone', 64 ],
+  [ 'diorite', 19 ],
+  [ 'cobblestone', 64 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (8.5, 55, 86.3) in overworld, health 20/20, food 20/20, alive
+RECEIPT /home/ubuntu/EAT-mc-run2/tasks/minecraft/team/p1/iter33/bridge_receiver87_LIVE_20261019T131920004669Z.json

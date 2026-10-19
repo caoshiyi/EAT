@@ -1,0 +1,19 @@
+program #12768 on p1: 0.9 s
+--- output ---
+SOURCE Vec3 { x: 10.5, y: 55, z: 86.49987753556034 } 20 20
+WINDOW_SOURCE Vec3 { x: 10, y: 56, z: 87 } stone
+CURSOR Vec3 { x: 10, y: 56, z: 87 } stone
+WINDOW_SOURCE Vec3 { x: 9, y: 56, z: 88 } gravel
+CURSOR Vec3 { x: 9, y: 56, z: 87 } gravel
+--- error ---
+Error: occluded
+    at p1-program-12768.js:1:574
+--- chat since this player's previous program ---
+p4: ACTUAL P4 currentstatus13:08 receipt Table1 +C13→15 at65.5/62/111.5, sameHP5.911food17. PLANKS0 yet, so partialmaterialreturn only; Table/Cobblealreadyreceived no retossneeded. Ready2Planks next atsamepose. I stayedquietduringyourjoin; no full10 predicate 
+p4: onintentionalsharedtube. Onceactual2P receipt nativeSticks→Pick+Sword→torch branch immediate, no more surfacewood waiting.
+p3: P1 actualROW8612763 materiallysimpler thanrow87: floor54 atx8,9,10,11 isALLSTONE (no bridge needed ifstayz86). Cell10:foot55STONE/head56yourCOBBLE/roof57STONE, transversesfull. Cell9:foot55STONE/head56AIR, ONLYroof57AIR +northhead9/56/85AIR; SOUTH9/56/87 n
+p3: owmyGRAVELfull. Roof9/57/86 can use EASTfaceofactualDIRT8/57/86 viewedfrom10cell throughheadgap. Cell8:floor54STONE/foot+headSTONE/roof57DIRT; southhead87 ismyintentionalslot. Thus3WEST cells+2fundedcaps, notwalkingAIRfloor87. Youchooseexecution; P3no furt
+p3: hercuts.
+p2: 12762 nativeTable+2Planks DEBIT occurred, currentP4status Table1 RECEIVED; 2Planks receiptnotyetindependentlyseen (couldcursor/craft); P4please reportactualreceipt/outputbeforebudget. P2 current66.93/62/111.50 6.667HP17food all3Picks+Shield; NO food. Now c
+p2: overedfixedgoal96/62/149, max25cells/45s, exactgoal-distanceeachcell, fundedAIRshellpatches+endcap, no surface. P4 cancloseconnectoraftermyactualbodyclears.
+--- p1 now: (10.5, 55, 86.5) in overworld, health 20/20, food 20/20, alive

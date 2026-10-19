@@ -1,0 +1,78 @@
+program #12622 on p1: 2.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:26:49.119Z","p":{"x":4.486900757644415,"y":59.47253635072178,"z":-2.3},"hp":20,"food":20,"ground":false,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["stick",1,null],["stone_sword",1,0],["wooden_pickaxe",1,5],["spruce_sapling",1,null],["dirt",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,23],["cobblestone",1,null]],"time":23244,"faces":[{"q":{"x":4,"y":58,"z":-3},"n":"stone","full":true},{"q":{"x":4,"y":61,"z":-3},"n":"air","full":false},{"q":{"x":5,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":5,"y":60,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":60,"z":-3},"n":"dirt","full":true},{"q":{"x":4,"y":59,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":60,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":59,"z":-4},"n":"dirt","full":true},{"q":{"x":4,"y":60,"z":-4},"n":"water","full":false}]}
+WATER_UP {"at":"2026-10-19T12:26:50.926Z","p":{"x":4.486900757644415,"y":59.50263685578517,"z":-2.2901005050633882},"hp":20,"food":20,"ground":false,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["stick",1,null],["stone_sword",1,0],["wooden_pickaxe",1,5],["spruce_sapling",1,null],["dirt",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,23],["cobblestone",1,null]],"time":23284}
+DRY_FAILURE Error: retreat height
+ENDING {"at":"2026-10-19T12:26:50.926Z","p":{"x":4.486900757644415,"y":59.50263685578517,"z":-2.2901005050633882},"hp":20,"food":20,"ground":false,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["stick",1,null],["stone_sword",1,0],["wooden_pickaxe",1,5],["spruce_sapling",1,null],["dirt",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,23],["cobblestone",1,null]],"time":23284,"faces":[{"q":{"x":4,"y":58,"z":-3},"n":"stone","full":true},{"q":{"x":4,"y":61,"z":-3},"n":"air","full":false},{"q":{"x":5,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":5,"y":60,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":60,"z":-3},"n":"dirt","full":true},{"q":{"x":4,"y":59,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":60,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":59,"z":-4},"n":"dirt","full":true},{"q":{"x":4,"y":60,"z":-4},"n":"water","full":false}]}
+ENDING {"at":"2026-10-19T12:26:51.076Z","p":{"x":4.486900757644415,"y":59.46263685578517,"z":-2.2901005050633882},"hp":20,"food":20,"ground":false,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["stick",1,null],["stone_sword",1,0],["wooden_pickaxe",1,5],["spruce_sapling",1,null],["dirt",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,23],["cobblestone",1,null]],"time":23284,"faces":[{"q":{"x":4,"y":58,"z":-3},"n":"stone","full":true},{"q":{"x":4,"y":61,"z":-3},"n":"air","full":false},{"q":{"x":5,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":5,"y":60,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":60,"z":-3},"n":"dirt","full":true},{"q":{"x":4,"y":59,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":60,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":59,"z":-4},"n":"dirt","full":true},{"q":{"x":4,"y":60,"z":-4},"n":"water","full":false}]}
+ENDING {"at":"2026-10-19T12:26:51.226Z","p":{"x":4.486900757644415,"y":59.46263685578517,"z":-2.2901005050633882},"hp":20,"food":20,"ground":false,"inv":[["spruce_button",1,null],["spruce_planks",6,null],["stick",1,null],["stone_sword",1,0],["wooden_pickaxe",1,5],["spruce_sapling",1,null],["dirt",3,null],["stone_pickaxe",1,1],["wooden_shovel",1,23],["cobblestone",1,null]],"time":23284,"faces":[{"q":{"x":4,"y":58,"z":-3},"n":"stone","full":true},{"q":{"x":4,"y":61,"z":-3},"n":"air","full":false},{"q":{"x":5,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":5,"y":60,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":59,"z":-3},"n":"stone","full":true},{"q":{"x":3,"y":60,"z":-3},"n":"dirt","full":true},{"q":{"x":4,"y":59,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":60,"z":-2},"n":"stone","full":true},{"q":{"x":4,"y":59,"z":-4},"n":"dirt","full":true},{"q":{"x":4,"y":60,"z":-4},"n":"water","full":false}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:26:51.376Z",
+ "p": {
+  "x": 4.486900757644415,
+  "y": 59.46263685578517,
+  "z": -2.2901005050633882
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": false,
+ "inv": [
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   6,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   5
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   3,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ],
+  [
+   "wooden_shovel",
+   1,
+   23
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ]
+ ],
+ "time": 23284
+}
+--- chat since this player's previous program ---
+p2: 40min REVIEW CHANGE: latestP3 alsoSkeletondeath after12604 failedending; no26food/currentcarrier. P3 allocation now immediate localbody ending then independent stronghold SURFACE→bed descent evidence (arena/team), not another wholefood/courier rebuild. P2 
+p2: foodrescue/harvest owns current item9388 actual26berries107.03/68/144.125 at12:23:36, no near-surfacehostilethere then; loadedage/expiryunknown. P2 cannot surface now: actual source skeleton/zombie within8m ABOVEpod. Productive protected easttunnel towardf
+p2: ield, then refresh day/threats; no blindUP. P1 actualNetherportalaccess stilldistinct, nextobservable dimension/physicalportal; P4 forgeprotected work untilactualfood.
+--- p1 now: (4.5, 59.5, -2.3) in overworld, health 20/20, food 20/20, alive

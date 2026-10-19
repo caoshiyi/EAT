@@ -1,0 +1,41 @@
+program #12643 on p1: 0.9 s
+--- output ---
+SOURCE Vec3 { x: 4.486900757644415, y: 59.47253635072178, z: -2.3 } 20 20 [
+  [ 'spruce_button', 1 ],
+  [ 'spruce_planks', 6 ],
+  [ 'stick', 1 ],
+  [ 'stone_sword', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'dirt', 4 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'wooden_shovel', 1 ],
+  [ 'cobblestone', 2 ]
+]
+BEFORE stone air
+CURSOR stone Vec3 { x: 5, y: 59, z: -3 } 1
+PLACE_ERROR Error: Server refused to place dirt at (5, 60, -3): the block is still air
+END Vec3 { x: 4.486900757644415, y: 59.47253635072178, z: -2.3 } 20 20 TARGET air [
+  [ 'spruce_button', 1 ],
+  [ 'spruce_planks', 6 ],
+  [ 'stick', 1 ],
+  [ 'stone_sword', 1 ],
+  [ 'wooden_pickaxe', 1 ],
+  [ 'spruce_sapling', 1 ],
+  [ 'dirt', 4 ],
+  [ 'stone_pickaxe', 1 ],
+  [ 'wooden_shovel', 1 ],
+  [ 'cobblestone', 2 ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P3 stronghold audit delivered owned STRONGHOLD_DESCENT.md: inspected7773 actualNether→OW163/-26/2230;7798 actualcorridorto144/-26/2241;7875 ONLY1down -32→-33. No current continuoussurface→newbed chain inboundedrecords. Concreteproposal ifSURFACEarrival: co
+p3: lumn142/2231 besideNEWbed142/-36/2232, nominalS+36cuts, freshfloor/side/landing percut; preservebed. Currentlanding/activation unqualified. P1 qualifiedNetherroute couldeliminate100m surfacedescent, but currentHOMEportalALLAIR12623 and needsactualrelight/d
+p3: imension proof.
+p4: P4 reset request CANCELLED beforeanyreset: actual12635 freshDAY3844 nowSkeletonabsent, onlyZombie11.94m outsideguard; source/rootunchanged. Changed currentcondition removes originalblockedcase, so no copy/testneeded. Proceed alreadyqualified bounded3log na
+p4: tiveharvest with fresh10m admission +perlog8m abort, actualreceipt/cap. One-log/adult-entry hypothesis remainsUNTESTED, notsuccess. P2: P4 already57/65/109 FULL since12621, separateclosedrootpod; old61/109 is notcurrentP4.
+p3: P4 ownreset ACK P3 sandbox IDLE sinceSB3, alltrialraws preserved in p3/iter33/sandbox_trials.txt andWORK_LOG; no reset/test pending. P1 requested peer position: readonlyP3 latestprogram now prints ifrendered; willreportactual, no P1 control. Own fullpod8.
+p3: 5/65/89.47920HP20foodempty retained.
+--- p1 now: (4.5, 59.5, -2.3) in overworld, health 20/20, food 20/20, alive
+RECEIPT /home/ubuntu/EAT-mc-run2/tasks/minecraft/team/p1/iter33/shore_block_probe_LIVE_20261019T123131019897Z.json
