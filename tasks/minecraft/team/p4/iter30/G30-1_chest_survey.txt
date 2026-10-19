@@ -1,0 +1,23 @@
+[sandbox] program #274 on p4: 2.1 s
+--- output ---
+CHEST_SOURCE {"at":"2026-10-19T05:37:07.768Z","p":{"x":4.5,"y":65,"z":-31.5},"hp":20,"food":20,"inventory":[],"ground":true}
+CHEST_CURSOR {"state":{"at":"2026-10-19T05:37:09.831Z","p":{"x":9.576746153577885,"y":67.53584062504456,"z":-33.41150165531493},"hp":20,"food":20,"inventory":[],"ground":false},"block":"chest","p":{"x":10,"y":66,"z":-35}}
+ACTUAL_CHEST_CONTENTS [{"name":"feather","count":3,"used":null},{"name":"white_wool","count":1,"used":null}]
+CHEST_END {"at":"2026-10-19T05:37:09.884Z","p":{"x":9.576746153577885,"y":67.23152379758702,"z":-33.41150165531493},"hp":20,"food":20,"inventory":[],"ground":false}
+--- returned ---
+{
+ "at": "2026-10-19T05:37:09.885Z",
+ "p": {
+  "x": 9.576746153577885,
+  "y": 67.23152379758702,
+  "z": -33.41150165531493
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [],
+ "ground": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (9.6, 67.2, -33.4) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: chest_survey.js
