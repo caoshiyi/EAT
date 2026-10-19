@@ -1,14 +1,14 @@
-# Coordinator iter36 — current 19:25 UTC
+# Coordinator iter36 — current 19:35 UTC
 
-19:25 CURRENT: P1criticalkitrecoveryCLOSED. P3singleownerLIVE14022recoveredSword54/Wood20/Shield111/roof52restored; P1nativeSword/Wood/Shield/E64N5received19:22:48. P1newbody20/20, Northgateactuallyclosed19:23:41 afterEndermanwander. No wholecorpsejourneyneeded.
+19:35 CURRENT: lastactualDragon52.354599, latestnarrowrun4acceptedhitsfrom61.354599 thenhurt14→10.5atfeet53/noactivejump. Native19:35:40P1returned0/50/4 HP10.5 food17alive; P3low50HP20/roof52. Jump-onlycauseweakened, actualsourceunproved. P1ownsworkingkitSword/Wood/Shield/E/N; no newmaterialblockclaimed. Latestactual57hits/132.625damage thisiteration. No victory.
 
-P1resumed19:24:14 changedfresh20+ordinaryshieldhurtresponse/motioncapture/samephysicalguard, internal480/API600/absolute19:43:45. NewrunENDINGPENDING. Ordinaryshieldtoggleonlyusingflagqualification, NOTdamageblockingproof. P3held(-5,50,4)HP20/roof52intact; P2noacceptedqueue/P4UNPLAYED. RootNONPLAYING, no strategy/permissiongate.
+OfficialEVAL_1935dragon0/milestones11/deaths218/savefailedLAST-SAVED/savedHP52informational. TwoiterationdeathsP4PvP17:54:34andP1Dragonescapefall19:19:26. No furtherdeathobserved. RecoveryP3singleowner→actualP1receiptclosed, no corpsejourneyneeded. P2noacceptedtask/responseunverified/P4UNPLAYED.
 
-LastactualDragon61.354599 after53acceptedhits/123.625damage thisiteration. 14005eight hits thenP1firstliveDEATH19:19:26fatalfallescapingDragon, aftermultiplehurts/knockUP. EndingFAILED, nothealthycycle. P1ownrapidreturntoEnd19:20:43 didnotcostanotherdeath. TwoiterationdeathsP4PvP+P1fall; EVAL_1925exactofficialscore/freshness infile, no victory. Old13985timeoutfailedendingpreserved; later13993actual548shealthyreturnvalidatedshorterbudget.
+Usefullatestmeasurements: stand-only14058valid120sretained14/noattack/minCLEAR3.11995 outside3m, notblockedray. NarrowclearadmissionresumedDPSthenstandinghurt. Shieldtoggleclientflagandwearnotcause/blockimmunityproof. Methodsandremainingattemptoperatorschoose; no rootstrategy/permissiongate. RootcoversbookkeepingsoactualDPSnotpausedfordocs.
 
-Maincurrentquestion retaineddamagewhilehandlingactualinjury/finiteDPSwith~20minremaining. No currentacceptedmaterialblockafterrecovery; don'topenwholekit/restorationgate. Nextperiodic19:35orapparentcompletion/contradiction. Requestconcisehandoffs19:40WHILEusefulplaycontinues; eval19:43/apparentvictory; cutoff19:44:24. Officialdragon1requiredforvictory; thennotifyallstopviafiles+leadownchatrelay.
+NEARDEADLINE: concisehandoffsrequestedby19:40WHILEplaycontinues, actualbody/callerpath+hash/activeID/lastworldeffect+ending/strongestexecutablefinding/uncertainty/ownedcommits, tokensonlyauthorizedavailableelseunavailable. Rootfinaleval~19:43/apparentvictory; absoluteattackloop19:43:45/overall19:44:24. Needofficialdragon1beforevictory; thennotifyallstopviafiles+leadownchatrelay. Ifstill0, reportexactfailed-savequalification/lastactualworldstate, notgoalachieved.
 
-Strongestoperatorartifactlive_repeat_480.js/adaptivehelper, currentvariantaddsoperatorhurtresponse; exactcurrentcaller/hashfromplayerclosinghandoffmustoverrideoldsource. Currenttestresultscope/constraints inREVIEW_1925 andlatestTO_OPERATORS.
+Earliercriticalfailurespreserved: duplicatecontextlaunch(rooterror,noacceptedgameplay);600timeout13985/no-finally/upperstate; later13993actual548shealthyreturnqualifiedshorterbudget;14005fatalfallwhilehurtguardactive. AdaptivehelperrealSB2cuts+full10return→LIVE scopedrepair/resumedhits/nativefloorverify. Exactcurrentcaller/hashmustcomeplayerhandoff, notoldfilenameguess.
 
 Latest executable evidence:
 - P3 actually built west lower approach/retreat and preserved shared roof52. P1 relocated live, received Stone64/Wood17/Shield111; Stone64→65 actual use closed support. No extra transfer audit needed.

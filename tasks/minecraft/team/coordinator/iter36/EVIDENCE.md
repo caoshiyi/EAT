@@ -44,3 +44,6 @@
 | Persistent P1 LIVE14005 |8hits79.979599→61.354599, multiplehurts/knockUP thenfatalfall19:19:26 | EndingFAILED; firsthurtstopnotdamagebound; causebeyondobservationsunproved |
 | Persistent P3LIVE14022/P1receipt |SingleownercriticalSword54/Wood20/Shield111recovered/roof52restored→nativeP1receiptE64N5 | Retainedcapabilitychainclosed, notjustvisibleloot; P1newbody20 |
 | Ordinaryshieldtoggle onnewP1 |usingflagtrue/falsePASS; noblockingdamageobserved | APIcontrolqualifiedonly; changedcombatresponseunproveduntilactualhurt/ending |
+| Persistent P1 LIVE14058 |Standonly120s/nojump/noattack/nohurt, minCLEAR3.11995m, healthy14full10return | Rangecensor, notocclusion/failedattack; nojump-safecausalitywithoutotherstatecontrols |
+| Persistent narrowed runthrough19:34:30 |4hits61.354599→52.354599 thenhurt14→10.5atfeet53; nativebelow50alive | Partialeffect+retainedending; jump-onlycauseweakened, sourceunknown |
+| Official EVAL_1935 |dragon0/milestones11/deaths218/savefailedLAST-SAVED/HP52 | Objectiveunmet; twoiterationdeathsnowinsavedstats |
