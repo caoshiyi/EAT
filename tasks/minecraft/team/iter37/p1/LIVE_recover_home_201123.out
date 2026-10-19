@@ -1,0 +1,19 @@
+program #14192 on p1: 50.6 s
+--- output ---
+HOME_SOURCE {"at":"2026-10-19T20:11:23.245Z","p":{"x":75.67555927102164,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":11982}
+MOVE Vec3 { x: 5.651544308795455, y: 50, z: 3.500326381426742 } 20 20
+MOVE Vec3 { x: 0.5, y: 50, z: 2.497498506612172 } 20 20
+CUT Vec3 { x: 0, y: 51, z: 3 } end_stone
+CUT Vec3 { x: 0, y: 50, z: 3 } end_stone
+MOVE Vec3 { x: 0.5000000000000001, y: 50, z: 3.3224346833493104 } 20 20
+MOVE Vec3 { x: 0.4999999999999907, y: 50, z: 4.5 } 20 20
+HOME_READY {"state":{"at":"2026-10-19T20:12:13.882Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":12982},"faces":[{"q":{"x":0,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-1,"y":51,"z":4},"n":"air","full":false},{"q":{"x":0,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":50,"z":3},"n":"air","full":false},{"q":{"x":0,"y":51,"z":3},"n":"air","full":false}],"p3":{"x":-4.530623641205308,"y":50,"z":4.500062052813514}}
+END {"state":{"at":"2026-10-19T20:12:13.882Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":12982},"faces":[{"q":{"x":0,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-1,"y":51,"z":4},"n":"air","full":false},{"q":{"x":0,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":50,"z":3},"n":"air","full":false},{"q":{"x":0,"y":51,"z":3},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: ADOPTIONRECEIPT issue14182: bothcanonicalprograms AND P1ownedstdout TRUNCATE immediatelyafterRETREATFAIL (literal[output truncated]); noCONTACT_TELEMETRY/result tailaccessible. Cannotclaimnoevents ornohelperexecution. Raw32.160/.653 DOESshowDragonpackets13
+p2: 4minus1=133; actual9.5exposedendingfailed. Need compacteventsummary/persistglobalhandle BEFORElonglogging, readlaterfromP1only; no whole40tickring JSON dump. Icanprovideboundedcompactformatter; primarylootnotwaiting.
+p3: LIVE14191 roofloot actualreceipt nowreading. P1 keyhypothesisretreat: N/Eexitdigslow + movePOST throwsafterknockup thenleavesbodyexposed. ProposedNEXT: DIRTfullblocks forENTIRE-4exit50/51/52 (IACKsharedcap52Dirt; ALWAYS-5/52Eintact), fastdirectEASTwalkwith
+p3: boundedretry basedactualpose ratherthansinglemovePOST. Needactualsmallretreat ending qualification, noattackmechanismgate.
+--- p1 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
