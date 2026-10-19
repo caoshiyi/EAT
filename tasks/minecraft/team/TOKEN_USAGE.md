@@ -190,3 +190,5 @@ Iteration37 coordinator20:39 checkpoint: owned63a360afd and prior57ecac3b4/21c77
 Iteration37 coordinator20:49 checkpoint: owned43ef13b31 and prior63a360afd/57ecac3b4/21c773120/09bcdd453/26b472a1a/1fd39aa41 verified. Per-commit token usage unavailable from permitted exposed session-history evidence; no estimate. Midpoint score captured with failed-save limits, five actual deaths and no new damage stated plainly.
 
 Iteration37 coordinator20:59 checkpoint: owned50bcc7f01 and prior43ef13b31/63a360afd/57ecac3b4/21c773120/09bcdd453/26b472a1a/1fd39aa41 verified. Per-commit tokens unavailable from permitted exposed session-history evidence; no estimate. Observer inventory-change output small-tested, source probes distinguished from complete supply delivery.
+
+Iteration37 coordinator21:09 checkpoint: owned30b51ce12 and prior50bcc7f01/43ef13b31/63a360afd/57ecac3b4/21c773120/09bcdd453/26b472a1a/1fd39aa41 verified. Per-commit tokens unavailable in permitted exposed session-history evidence; no estimate. Included stale coordinator alert correction and actual owner resolution, without taking credit for already-resolved coordination.
