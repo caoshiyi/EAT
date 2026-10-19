@@ -1,0 +1,216 @@
+program #11513 on p4: 0.7 s
+--- output ---
+P4_READONLY_AUDIT {"at":"2026-10-19T01:41:51.006Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"dim":"overworld","ground":true,"inventory":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"window":false,"cursor":false,"room":[{"p":{"x":-9,"y":25,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true}],"interior":[{"p":{"x":-9,"y":26,"z":-38},"name":"air"},{"p":{"x":-9,"y":27,"z":-38},"name":"air"},{"p":{"x":-8,"y":26,"z":-38},"name":"air"},{"p":{"x":-8,"y":27,"z":-38},"name":"air"}]}
+P4_READONLY_AUDIT {"at":"2026-10-19T01:41:51.157Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"dim":"overworld","ground":true,"inventory":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"window":false,"cursor":false,"room":[{"p":{"x":-9,"y":25,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true}],"interior":[{"p":{"x":-9,"y":26,"z":-38},"name":"air"},{"p":{"x":-9,"y":27,"z":-38},"name":"air"},{"p":{"x":-8,"y":26,"z":-38},"name":"air"},{"p":{"x":-8,"y":27,"z":-38},"name":"air"}]}
+P4_READONLY_AUDIT {"at":"2026-10-19T01:41:51.408Z","p":{"x":-8.5,"y":26,"z":-37.53254047072508},"hp":20,"food":20,"dim":"overworld","ground":true,"inventory":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"window":false,"cursor":false,"room":[{"p":{"x":-9,"y":25,"z":-38},"name":"gravel","full":true},{"p":{"x":-9,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-9,"y":26,"z":-37},"name":"gravel","full":true},{"p":{"x":-9,"y":27,"z":-37},"name":"gravel","full":true},{"p":{"x":-8,"y":25,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":28,"z":-38},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-39},"name":"stone","full":true},{"p":{"x":-8,"y":26,"z":-37},"name":"stone","full":true},{"p":{"x":-8,"y":27,"z":-37},"name":"stone","full":true},{"p":{"x":-10,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-10,"y":27,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":26,"z":-38},"name":"stone","full":true},{"p":{"x":-7,"y":27,"z":-38},"name":"stone","full":true}],"interior":[{"p":{"x":-9,"y":26,"z":-38},"name":"air"},{"p":{"x":-9,"y":27,"z":-38},"name":"air"},{"p":{"x":-8,"y":26,"z":-38},"name":"air"},{"p":{"x":-8,"y":27,"z":-38},"name":"air"}]}
+--- returned ---
+{
+ "at": "2026-10-19T01:41:51.659Z",
+ "p": {
+  "x": -8.5,
+  "y": 26,
+  "z": -37.53254047072508
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inventory": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null,
+ "window": false,
+ "cursor": false,
+ "room": [
+  {
+   "p": {
+    "x": -9,
+    "y": 25,
+    "z": -38
+   },
+   "name": "gravel",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 28,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -39
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 27,
+    "z": -39
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -37
+   },
+   "name": "gravel",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 27,
+    "z": -37
+   },
+   "name": "gravel",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 25,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 28,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -39
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 27,
+    "z": -39
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -37
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 27,
+    "z": -37
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -10,
+    "y": 26,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -10,
+    "y": 27,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 26,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  },
+  {
+   "p": {
+    "x": -7,
+    "y": 27,
+    "z": -38
+   },
+   "name": "stone",
+   "full": true
+  }
+ ],
+ "interior": [
+  {
+   "p": {
+    "x": -9,
+    "y": 26,
+    "z": -38
+   },
+   "name": "air"
+  },
+  {
+   "p": {
+    "x": -9,
+    "y": 27,
+    "z": -38
+   },
+   "name": "air"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 26,
+    "z": -38
+   },
+   "name": "air"
+  },
+  {
+   "p": {
+    "x": -8,
+    "y": 27,
+    "z": -38
+   },
+   "name": "air"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2PHYSICALPLAYCOMPLETE: LIVE11511 correctlyhazard-abortedDIGat55/10HP38:49.888 beforeSnow, physicallyrecentered/walkedwholeway50/10HP/full3caps/Snow3/Endstone151/onepick92, returned39:25.141 BEFORE10539:26. NOsecondLIVEcrystal, eightremain/ONElivecrystal t
+p2: otal11494. G10SB180didremove89/seven+retain50/10 butNOTliveeffect. Finalwhole30–38 MISSED85.141s, noringclock. ClosureevaluatorSAVEFAILED last-saveddragon0/milestones11/deaths180/eightinformational; objectiveUNMET. Provisional19before90; finalP2/PROVISIONA
+p2: Laddendum/raws saved, checkpointpending. AllP2RUNS/observers/resetdepsRELEASED now; no furthergameplay/reset requested. P4/P1/evidence_owner canfinishclosure, no approvalgate. FiveSBmagicdeaths/noLIVEdeath preserved.
+--- p4 now: (-8.5, 26, -37.5) in overworld, health 20/20, food 20/20, alive

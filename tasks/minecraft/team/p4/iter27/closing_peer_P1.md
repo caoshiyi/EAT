@@ -1,0 +1,47 @@
+# P1 iteration27 final — 2026-10-19 01:39:37 UTC
+
+Closure at01:39:37 UTC, after105min: required evaluator reports dragon=0, milestones=11/12, deaths=180. SAVE-ALL FAILED connection refused; LAST-SAVED score, not synchronized live dragon health. Saved informational eight crystals/dragon200. Actual live11511 independently read: digging aborted01:38:49.888 on early fireball at grounded55; fired=false, targetPresent=true, eight crystals. Returned01:39:25.140 same End at(-10.3148,50,-10.5000),10HP/17food/Snow3, controls false/goal null; no second live crystal or attack. Current live status confirms retained kit and P1 unchanged51/8.333/DIRT1; no live death this iteration. Both world status receipts saved. All P1 work complete, no outstanding program/listener/reset dependency.
+
+Full final handoff: [p1/iter27/FINAL_HANDOFF.md](p1/iter27/FINAL_HANDOFF.md). One live crystal was removed by P2 earlier (11494); final sandbox western shot succeeded but live transfer did not fire. P1 planner adopted, guard/watcher tooling qualified only to stated limits; supply fallback failed and was retired with P2 acceptance. No supplies delivered. All failures/timing corrections/raw receipts retained. Only p1 controlled, no agents spawned, no push.
+
+Earlier dated entries follow; final result above supersedes pending claims.
+
+# P1 final-window evidence note — 2026-10-19T01:31:50+00:00
+
+G9owner178report: noSnow; stance57/HP10reached, two-stepcommit exceededold1.8s beforejump. FirstDOWN56wrongXZ/ledgeendpoint, fastwalkposterrorthenPromise.allSettled waitedflightobserveruntil42.974 despiteescapeerror38.054; latermagicdeath28:45. NoLiveeffect. Actual178/deathpendingindependentrawcapture. Do notcallmotionineffectiveorSnowmiss: shotneverlaunched.
+
+Convergent implementationcue, NOTtestedfix: keepSnowflight collection passive on publicphysicsTick/entityevents whileownerawaitsescape; or cancellableobserverchecksstopflageverytick. DoNOTawaitlongobserverafterescapeerrorbeforeimmediaterecovery. P4hazardrecorderalreadyusespassivereadcallbacks. Ordinaryeventrecordermustnotperformbackgroundactions afterprogramreturn. Completeactualrecenter/ground-at-target/stairretreat remainsownerqualification, not curedbyobserverchangealone. Sourcebranchstaysretired; P1noMCprogram/resetdependency.
+
+# P1 fresh live audit — 2026-10-19T01:23:17+00:00
+
+P4'svalidregrant19:56→start22:15 wasused: **LIVE11504** readonly0.4s. Actualthreeaudits20:45.692/.798/.948: OW(0.562,51,-29.5005),8.333HP/17food/DIRT1, grounded/all7controlsfalse/no goal/window, TENdistinctfullboundaryblocks/grassroof53. No physicalchanges. Serialrunnerauto-released11505at20:46 afterbothworldsidle. Supersedesexpired-first-window/nofreshgeometryclaimabove; oldmissremainsdocumented. AllP1runsdone/noglobalwatcher/resetdependency, nofurtherP1playplanned.
+
+SourcebranchretirementacceptedbyP2; nofood/Snow/kit/courierpromise. ActualLIVEcrystaleffectstill11494/eight; dragonnotdefeated. Publicmeleeexperiment03–15neverattacked;173constructionfailedandlostHP,174laterrescue50/5.5doesnotpass173. G8freshcopyLIVE50/10/Snow3, P2nowtestsboundedSURFACE10mrun/returnbeforeanotherobjectiveaction. P1observesactualoutcomesandwillappendmaterialchangesuntil01:39:26; closingevalstillrequired.
+
+# P1 latest coordination — 2026-10-19T01:20:32+00:00
+
+Optional LIVEclosingaudit window18:45→start19:00 wasread19:09late; NO P1programstarted, no freshlyauditedshellclaim. Wholewindow19:10expired/P2reclaims. NoP1run/resetdependency; **retireoptionalMCauditrequest**, do notdelayfight. FinalarenaSTATUSandrequiredevaluatorarereadonly/noruntoken; lastactualfullgeometryaudit11467at23:56mustremainDATED. LiveP1physicallyuntouchedalliteration, currentstatusunchanged51/8.333/DIRT1.
+
+P1sourcebranchretirementacceptedbyP2. NoSnow/foodhandofffunded/promised; currentremainingbudgetcannotqualifycomplete30minchain. Read MELEE_OUTCOME_READING.md fordocumentedBossBarfraction/attempt-vs-damage distinctions. Ownsource/coordinationtimingfailuresfullypreserved, no newsourceplay.
+
+# P1 iteration27 current handoff — 2026-10-19T01:09:41+00:00
+
+Objective unmet. Official opening and post-live-crystal evaluations both reported **dragon0 / milestones11 / deaths180**, with SAVEFAILED connection refused: LAST-SAVED data. Latest evaluation at01:03:36 has saved informational eight crystals/dragon200; openingnine is superseded. Independent actualLIVE11494 confirms crystal274(-33.5,86,-24.5) disappeared00:57:55.603, eight loadedcrystals, P2retained50/10HP/Snow3 at58:06.509. No dragonvictory observed. Rawpost_live_crystal_eval.txt andP2_live_effect_recent.raw/summaryJSON.
+
+P1 LIVE remains original sheltered OW(0.562,51,-29.5005),8.333HP/17food,DIRT1/grassroof53. Actual11467 three10-full audits; currentstatusunchanged. **No live physical recovery or courier.** CurrentG7sandboxcopy alsooriginal51/8.333/DIRT1, supersedingG5failedsourceendpoint56/DIRT8. No P1program, installedwatcher or resetdependency. P2 owns token after01:03expiry; do notrun/chat overitsprograms.
+
+P2 accepted/adopted P1 empirical trajectory planner andsourceguard support. Planner fits only PUBLIC125flight; heldoutintervalerror<0.002blocks,30stepreplay<0.003802. Modeldelivery wasconditional; near60occludedproposal retired, offset68towerfailed. Actualsuccessfulcorrection was P2APEX/falling+71camera, not P1/P4unexecuted159lowerangle alternatives. SB161targetgone52:49.889/dragonHurt/eight/retained10, coldSB162alsoeffect, thenLIVE11494effect. P1'slate159fitrequestread53:17 missed52:51deadline andwasobsoleteby161; no timelyfitcredit.
+
+`operation_guard.js`:10localregressionchecks passed andP2copiedit. Fixes staleBLACKSTONEwhitelist, retiresforwardonhealthloss, alive-onlyescape. Real142 mechanicalabortretained50/10. Real144 stoppedonOWNERnearcloud at10HP, thenloss6whileinescape; P1HP-rejection not behaviorallytested. 144failedlanding60; separate146recenter+3DOWN57/6 waslaterrecovery. G5actual156repairedwholewalkingretreat50/6/fullcaps butnoSnow. No claim P1guard caused survival or qualifieddamagedBLACKSTONEescape. P4ownsfieldhazardrecorder.
+
+P1 actualsmalltests: G4#147 twoDIRTpillars51→53→51,8.333HPunchanged/DIRT1/three10full,5.9s. View failed to qualify source: allreturnedlogsoccluded/nofoodanimalswithin48. LaterreadonlyG5#152 revealed a SECONDgrasscap56/Snow57, explainingwhyfeet53wasnottrueoutdoors. Loadedberrybushes(4,67,-22),(7,67,-22),3total; chest(10,66,-35); age/contents/accessUNKNOWN. Plants/cavevines/mushrooms andsalmonareloadedleads, notsupplies. Nofoodharvested.
+
+ActualG5#153/154 passivewatcher survivedprogramreturn/fourmarks and restoredlistenershealth0/death3, unchangedbody; no actualhealth/death event tested. `run_sequence.py` firstsmallreadonlysequence152–154 passed2.03s withallCLIclosure/bothworldsidle/automaticrelease. It intentionallydoesnotclaimsuccess/safety. G5physical157sourcegateFAILED: first16s gainedfiveYlevels, thenlongstall; forwardANDreturnended(-2.3,56,-33.25)/8.333HP/DIRT8, nofood/wood/Snow/tools/fullending. Callerignoredfalsereturnbool. Frozenberry_source_trial.RETIRED.js; strongprogressguardmissing, exactobstructionnotobserved. Auto-tokenrelease47:40 before48deadline, thenrequestedreset discardedpracticeeffects. No unchangedrepeat or longcourierfunded.
+
+Changedmanualcaller has syntaxonly: manual_source_trial.UNEXECUTED.js. Preparedafter01:02startcutoff; guardpreventedANYgameprogram. End01:03expiredwithoutexplicitchatrelease; P2reclaimruleapplied, statuses03:06idle. Thisistiming/executionfailure, NOT secondgameplaytest. Staleabsolutedeadlines prohibitreplay. Source5minassessmentpublished00:21:31 was9secondslate; originalone-minutepeepgrantreadlate, butextendedbefore29windowmet. Exactfailures/delays preservedWORK_LOG.md; do notclaimon-timeorcompletedresourcegates.
+
+Currentrecommendation: no small completefood/Snowcourierqualified; speculative30minchaincouldconsume remainingfighttime. SUPPLY_DECISION_AFTER_GATES.md explainsunfundedsource/transit/pickup. Redirect evidence support to actuallegalmelee outcomes/netdamage-healing; MELEE_OUTCOME_READING.md uses documentedpublicBossBarfraction, noexcludedfieldmappings. P2ownsactualchoice; noexternalresupplypromise.
+
+Globalrulecorrection: P2acknowledgedLIVE11482chat00:27:28 overlappedP1SB14727:27.511–33.403. OwnP1callsserialdoesNOTmeanglobalnooverlap. Noownershiprefusal/lockbypass/otherplayerplay/agentspawn/ENCOUNTERoruncertaininheritedsource/internet/clientmaterial/server/.work/toolsedits/rawpackets/reach-visibilitybypass/push. Peersfilesread-only; permittedpublicMineflayerdocsread forbossbarAPIonly.
+
+Complete provisionalpublished early andrefreshed now; worldopening23:54:26 gives90/105deadlines01:24:26 /01:39:26. Continueusefulsupportthrough105, appendmaterialchanges, finalofficialevalrequired. WORK_LOG.md/raws/ownedhistorysnapshotsunderp1/iter27. Lastownedcheckpoint578ee798; newerworkcheckpointpending. All source/courieracceptancegatesremainunmet; actualoneLivecrystaleffectbelongstoP2.
