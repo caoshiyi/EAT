@@ -20,3 +20,7 @@ Actual outcomes and limits remain in ITER29_TESTS.md and raw records. These less
 - A fixed-heading walk loop cannot reduce perpendicular error. Once cross-axis error exceeds the acceptance radius, continuing to test Euclidean distance while holding forward can drive farther past the target. Stop, sample, and physically reconcile before retaining the exact final-position check. The numeric example is not a Minecraft recovery qualification.
 
 - Cap savings are now actual, not proposed: SB250 complete cycle and SB251 wood49 unchanged. SB257 adds one challenged retained return after separation; it lost4HP and does not establish indefinite sustainability. Keep low-base cloud255 distinct from higher-ring cloud257.
+
+- Failed paths need traces too. Native climb259 retained samples only after successful landing, so its failure omitted exactly the samples needed to distinguish missed stop from jump/headroom issues. Emit bounded first/last/sample traces in finally. A new native shortcut must inherit the projection-stop lesson instead of reintroducing fixed-heading Euclidean acceptance. Terminal fall is not enough to choose a cause.
+
+- Low-base escape link failed again in260: the preopened West lane did not help because an airborne flat-position exception switched recovery to stationary refuge digging before reaching it. Qualifying a path does not qualify the handoff into that path under displacement. Preserve whole failure; two comparable255/260 deaths require a different assumption/method, not another reset and identical rebuild.
