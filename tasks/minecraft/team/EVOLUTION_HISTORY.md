@@ -3651,3 +3651,15 @@ G5SB252 actual51.821s fullringreached78 at04:41:28.015; ordinarybar79actualopen3
 Returnexists but failedcontinuousfinalcell34.775 at(37.0223,73,-21.3313) offpreparedending; refugecapanchorfailed35.375; returned35.87610HP/exposed73/wood50. Latercanonicaldeath04:41:54 dragonmagic at(36.3,72,-22.5) supersedesalivepost. ThisisSECONDcurrentSBdeath after244Enderman. EmptyOW20HPstatusisrespawn, notretainedEndkit. Source/main/actualreturn/erroroutput andcanonicaldeatheventread; noevent/HP rows beforeprogramreturndoNOTprovepostreturnsafety. Fullringforward/actualbarcut real, completewholeadoptionfailed. Firstsmallcorner247andpartialreturn251donotqualifyfullroute'snewturn/landingfailure. LIVEremainsbase58/10HP/wood42/Snow1.
 
 P4pendingcapproposalchat10973–75at04:40:29wasdatedstale: actual250hadalreadycompletedwholephysicalreceipt/reinstall04:38:23.402 andownerreported10970–72. Ownindependentactualoverridealreadyrecordswholecycle; no repeatreport/approvaldependencyneeded.
+
+# Third sandbox loss: full geometry did not retain the body — 2026-10-19 04:55:48 UTC
+
+G7SB255 actual14.539s completed04:54:04.172. Buildhazardrefusal04:53:58.968 at59/10HP before projectile stage; firedSnow=false. Return reachedbase58, installedSand/table, but health10→6 at04:54:00.202,6→2 at01.213,2→0 at02.202. Three actual ten-full boundary audits01.377/.627/.877 occurred at2HP, before canonicaldragonmagicdeath04:54:02 at(30.5,58,-24.7). Playerdamage snapshots retained nearbycloud433 at(30.5011,59,-25.4094),width6. This demonstrates geometry-full is not sufficient currenthazardretention; it does not prove everyenclosure/cloudinteraction orhiddenmechanism.
+
+TargetGone at02.205 recordedplayerHp0/sameEndduringdeathunload, thenOWrespawn/emptyandallcrystalsunloaded. It is NOT a same-life crystalremoval: noSnowfired/noattack/noexplosion, no legitimateeffectclaimed. This is THIRDcurrentSBdeath(244Enderman,252magic,255magic); LIVEbase remains10HP/199stone/wood42/Snow1. NewG7copy10HPparagraphin04:54:12provisional describedcopystart, andhadnotyetinspected255; thisoverridecorrectscurrentstate toemptyOWrespawn. No livechanged-effect ordefeat.
+
+Completed255outputs,actualboundaryarrays,damageeventJSONandcanonicaldeathevent independently inspected. Earlierquietcapcycle250andnarrowreturns remain datedcapabilities, notproofthatlatestreturnpassed. NoextrapolatedeffectfromAPIlabels,metadataorentityunload.
+
+## Iteration29 complete provisional refreshed before90 — 2026-10-19 05:08:04 UTC
+
+LAST-SAVED0dragon/11milestones/182deaths afterfailedsave; LIVE11701retainedbase10HP is actualnewaccess, noobjectiveeffect. ThreeSBdeaths244/252/255;255threeTENFULLat2HPdidnotretainlife, deathunloadnotcrystalremoval. G8SB257actualinjuredhigh-routeexit/full6pod and258actuallow-fieldreturn/full6HP are meaningfulcase-limitedrepairs. Projectionstop/physicalrecenteractuallyexercised, large-crossconditionalunexercised. NoSnowfired orcrystal/dragonattack; renewablesupportchainunqualified. Completeprovisionalalready04:20 andrefreshedbefore05:09:41; final105–110checksremain. Tokenusageunavailable.

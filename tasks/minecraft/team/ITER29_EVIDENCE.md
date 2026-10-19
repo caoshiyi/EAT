@@ -17,3 +17,17 @@ Updated 2026-10-19 04:42:44 UTC . Detailed chronological audits, failures and co
 Openingreflectionwithin5min, provisional04:20:24/checkpoint79770639 before90. Minute20capture16slate+laterwritten; minute40written18slate. Final105–110 checks05:24:41–05:29:41. Historicexcludedexposure/claimednonuse andownreporting/retrieval/syntaxcorrections preserved; no ancestrycertificate. Reviewercontrolsnone/runsnoarenaprograms/chat/spawnsnone/givesnotactics/opensnoexcluded17–19/client/server/.work/internet/editsnotools/playerfiles/pushesnone. Tokenusage unavailable.
 
 04:45 correctionclosure: owner10982–84 explicitlycorrects priorstalealiveclaim to252canonicaldeath. SB253 actualOW20HPemptycorrectlyrefusedbeforemovement04:42:53.394; norescue/newdeath. G6currentLIVEbasecopyrequested, notyetqualifiedready.
+
+CURRENT SB override04:48: G6READY04:46:08(.6/17.0s) copiesLIVEbase10HP/wood42. SB254buildhazard60/noattack; perstepreturnfastwalkpostFAILED, fallback57/6HP/post04:47:21.927/wood45/Snow1/nofreshENDING. ActualobserverHurt+healthLoss10→6/cloudnear captured, cleanuptrue; changed-eventcapturequalifiedoneSBcase. LIVEunchanged.
+
+CurrentgenerationG29-7 READY04:53:06(.6copy/17.0total/exactinstantunknown) freshlycopiesLIVEbase10HP/wood42/199stone/Snow1. G6injuredfallbackdiscardednothealed. Readablecompleteprovisionalrefreshed04:54; firstpublished04:20:24before90. No newLIVEeffect; currentstatusagrees11701.
+
+IMPORTANT currentoverride04:56: G7SB255 THIRDcurrentSBdeath canonical04:54:02 dragonmagic atbase58. FiredSnowfalse/noattack. Three10FULLat2HP04:54:01.377/.627/.877 thenHP0/death; targetGone02.205 atplayerHP0isUNLOAD, notcrystalremoval. CurrentG7OW20HPemptyrespawn. Nearbycloudretainedinactualdamagesnapshots. LIVEbase10HP/wood42/199stone/Snow1unchanged.
+
+05:00 UTC currentSB override: G8READY04:58:17(.5/15.4s);256quietactual30→6/newpod10HP/post04:59:18.914/192stone/wood45/Snow1, three10FULL. challengefalse/events[]/nohazard, so incoming/cloudexitbranch NOTqualified. Livebaseunchanged; noobjectiveeffect.
+
+05:04 currentSB G8SB257: buildhazard69 beforeSnow/attack, actual10→6duringescape thenwholeWESTreturntonew6pod/fullthree05:02:54.783/55.033/.284/post56.035/6HP/173stone/wood50/Snow1. Actualdamagedhazardexit+separatedendingqualifiedonecase, notsustainable/undamagedcapability orconditionalcontrollerbranch. Sixcrystalspresent/LIVEunchanged.
+
+Pre90eval captured before05:07:23 SAVEFAILED: last-saved0dragon/11milestones/182deaths/programs11730, infosix/200notfreshHP.257projectionstop+physicalrecenterlogsactuallyobserved; tenstoprowscross<=.02608, so largecross>=.30stopstillunexercised. Earlierlabelsearchmisscorrected.
+
+Pre90 refresh05:08: SB258 independently inspected21.104s, approachhazardabort21.610/58 at05:05:30.192 BEFOREpillar/Snow, actualreturn6pod6HP/three10FULL36.053/.303/.553/post37.304/172stone/wood54/Snow1. Low-fieldretentioncase, notpointblank255case. Completereviewcurrentbefore90; ownpre90evaltimeboundedbefore05:07:23 (approx05:06), notexact05:07.
