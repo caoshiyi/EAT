@@ -152,3 +152,5 @@ Iteration34 P4 Snow16/courier checkpoint —2026-10-19 15:32UTC: token usage una
 Iteration35 P4 route checkpoint —2026-10-19 15:44UTC: token usage unavailable: permitted available session history does not expose per-retained-commit token counters. No estimates or prohibited location inspection. Retained owned records include inherited failure reconciliation, small actual descent test and accepted P3 receipt/use chain.
 
 Iteration35 P4 End recipient checkpoint —2026-10-19 15:50UTC: usage unavailable because permitted available session-history evidence exposes no per-commit token counters. No estimate. Retained records include actual stronghold checkpoint, End entry, default-timeout helper bug/fix, native one-snow recipient confirmation and bulk recipient inventory delta; shot use still pending.
+
+Iteration35 P4 live cage83 effect checkpoint —2026-10-19 16:02UTC: token usage unavailable from permitted available session-history evidence; per-commit counters are not exposed. No estimate. Retained owned work records every failed scan/interface test, one practice and one live cage83 destruction, recipient-confirmed primary ammo effect, and fresh-pick actual use.
