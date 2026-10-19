@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+from receipt_signals import inspect_output
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--grant', required=True, help='Actual peer grant receipt, recorded without inference')
@@ -45,13 +46,16 @@ try:
         path = root / f'{args.label}_{index + 1}.out'
         path.write_text(result.stdout + result.stderr)
         ledger['runs'].append({'file': name, 'returncode': result.returncode, 'raw': str(path),
-                               'header': result.stdout.splitlines()[:1]})
+                               'header': result.stdout.splitlines()[:1],
+                               'actual_output_signals': inspect_output(result.stdout + result.stderr)})
         print(json.dumps(ledger['runs'][-1]), flush=True)
         if result.returncode:
             break  # Preserve exact error. Ownership refusals need one ordinary owner retry, never a bypass.
     idle('after')
     # This says only what the wrapper checked. Human/model still reviews actual outcome/postconditions.
-    message = f'P1 sequence {args.label} arena calls ended; both world statuses confirm no running program. Shared RUN TOKEN RELEASED to P2/P4. Raw outputs saved p1/iter27; outcome pending actual review. No new P1 run queued.'
+    failed = any(run['actual_output_signals']['failure_signals'] for run in ledger['runs'])
+    signal_note = 'Actual logged failure signals present. ' if failed else ''
+    message = f'P1 sequence {args.label} arena calls ended; both world statuses confirm no running program. {signal_note}Shared RUN TOKEN RELEASED to P2/P4. Raw outputs saved p1/iter27; outcome pending actual review. No new P1 run queued.'
     release = subprocess.run(arena + ['say', '--player', 'p1', message], capture_output=True, text=True)
     (root / f'{args.label}_release.out').write_text(release.stdout + release.stderr)
     ledger['release_returncode'] = release.returncode
