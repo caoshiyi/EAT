@@ -1,12 +1,16 @@
-# Coordinator iter36 — current 19:03 UTC
+# Coordinator iter36 — current 19:15 UTC
 
-URGENT19:03: canonical13985 TIMED OUT after600s (requested660). Eighteen accepted hits158.354599→117.854599 are real, but NO final RESULT/retreat. NativeSTATUS19:03:39 P1(-4.5,53,4.5) HP11.5 food15 alive, NOTlower50; program inactive. P3held50HP20. Actual upperbody recovery is currentblockingdependency; P1alonecanrunownrecovery, coordinatorcannotplay. SharedTO_OPERATORS hasurgentstatecorrection. Do not call longrunhealthy-endingqualified.
+19:15 CURRENT: canonical13993 completed548s/16acceptedhits117.854599→79.979599 (-37.875); actualfinal19:14:01.576 P1returned0/50/4 HP11.5 food14 full10/Sword46/Wood17, P3lowHP20/roof52intact. Shortenedwarm540+cleanup ACTUALLYqualifiedinside600cap. Prior13985 timeout/failedendingpreserved, notretroactivelysafe.
 
-Read-only0s660smoke provedargumentacceptance, NOTeffectiveactualtimeout/cleanup. Player-ownedrun.py forwardsrequestedtimeoutstring; actualobservedprogramcap600, internalcauseunconfirmed. Next player-selected loopmustleavevalidatedretreatmarginBELOWobservedexecutioncap, no serverrepair/.work. New tool failuremustsurvivehandoff.
+Newcold-capable480s batch14005started19:14:24, API600/absolute19:43:45, nativeascentfrom50verified19:14:36; heldwoodenpick/no stonepicks in currentnativeinventory. NewrunendingPENDING. P3holds(-5,50,4), observes30schunks; P2noacceptedtask/P4unplayed. Noadvice/permission/reportgatebeforequalifiedexecution.
 
-Actual29 acceptedP1hits thisiteration through19:02:09 (11priorcompleted+18timedoutbatch), Dragon117.854599 vsopening184.979599 =67.125damage. Earlier11 hadhealthyendings; latest18endingFAILED/pendingownrecovery. LastofficialEVAL_1845dragon0/milestones11/deaths217/savefailed, laterliveHPseparate. No victory. OneP4PvPdeath17:54:34 onlynewlivedeathobserved.
+Actual45acceptedhitsthroughpriorend reduced184.979599→79.979599 (105damage thisiteration). OfficialEVAL_1915dragon0/milestones11/deaths217/savefailedLAST-SAVED/HP80informational. No victory. OneP4PvPdeathonlynewlivedeathobserved.
 
-~40minremain/deadline19:44:24. Nextscoreandperiodicreview19:05orimmediaterecovery/outcome. P3lowerhold/observation supportsP1, P2noacceptedqueue/unansweredwatchcanceled,P4unplayed. Methods/recoverychosenplayers,nocoordinatorgameplay. Toolloanreceiptclosed; no documentationgate beforeactualrecovery.
+Helperqualifiedsmallbeforeadoption: retainedSB_helper_physical_test_185846.out real2cuts+healthyfull10ending, thenscopedLIVE13993East57/58repair+resumedhits/P3nativeAIR+floor52verify. Notuniversalgeometry/safety. Max2newcolumns/batch remainsoperatorscope. Ordinaryactionvisibilityauthoritative; no bypass. Toolsmoke660acceptancewasnotdurationproof; actual600stopandactual548cleanuparetheevidence.
+
+Currentmainquestion sustainedcompletion/finiteusefulresources within~29min, not firstcontact/AIcausalcertainty. Previousstonepicksnowexhausted/woodprimary; P3reserveStone112availableonlyifrealcutbudgetconstraint. Confirmactualcurrentstateafterasyncops; do notfollowstalequeuedSource0adviceifalreadyvalidwarmrun. Methodsplayerschoose; coordinatorNONPLAYING.
+
+Nextreview19:25orimmediateeffect/contradiction. Nextofficialafterapparentkill/19:25. Deadline19:44:24; absoluteattackloop19:43:45; handoffs19:40whileusefulplaycontinues ifnotalreadyverifiedvictory. Afterofficialdragon1 notifyallstopviaTO_OPERATORS/CURRENT+askleadrelayownchat; rootcannotimpersonateplayers.
 
 Latest executable evidence:
 - P3 actually built west lower approach/retreat and preserved shared roof52. P1 relocated live, received Stone64/Wood17/Shield111; Stone64→65 actual use closed support. No extra transfer audit needed.

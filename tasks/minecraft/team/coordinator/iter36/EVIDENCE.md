@@ -38,3 +38,6 @@
 | Persistent P1 LIVE13985 |18 acceptedhits158.354599→117.854599, thenTIMEDOUTafter600s/despite660request; no RESULT/retreat; nativeP1still53HP11.5food15 | Damage retained; endingFAILED. Actualbodyrecoverynowblocking; no assume finally after cancellation |
 | Toolsmoke vsactual |0s660read-onlysmokeaccepted; wrapperforwardedtimeout; actual600stop | Argumentacceptance != effective long-duration/cleanup qualification; internalcauseunconfirmed |
 | Official EVAL_1905 |dragon0/milestones11/deaths217/savefailedLAST-SAVED; savedHP118 | Objectiveunmet, savedhealthconsistentwithactualprogress butnotvictory |
+| Isolated P1SB helperphysicaltest 18:58 |Restoredthen2actualEcuts, APERTURE_ACK, full10lowerreturnHP11.5, P3copy20/roof52E | Small scopedhelpercasequalifiedbeforelongadoption; distinctsandboxcontext |
+| Persistent P1 LIVE13993 |540internal,548stotal;16hits117.854599→79.979599; Eastrepair/resumedhits; healthy11.5/food14/full10lowerreturn | Actualboundedlifecycle+helperadoptionqualified; prior600timeoutfailurepreserved |
+| Official EVAL_1915 |dragon0/milestones11/deaths217/savefailedLAST-SAVED/HP80 | Objectiveincomplete despite105actualdamage thisiteration |
