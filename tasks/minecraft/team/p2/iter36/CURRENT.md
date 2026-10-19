@@ -14,3 +14,9 @@ Openedprivate9/Y50,51/z4 twice; currentlyRESEALED Endstone. Four nativebypasscut
 ## Failures/lessons
 AIR-onlyapproach firstfailedbeforemutation; bounded4cutbypass thenworked. TinyWoodpath: firstno-looksettle overshot3.634/50/2.333; secondlookAtfeet+4ticks recollectedP2; thirdpitch-1.3+vacate8/2 gotP3tiny but identicaltoolthrow endedP4. Testitemreceipt alone insufficient to exclude nearbythirdbody. Ndeliverychangedexitdistanceactuallysolvedselfpickup; recipientclosure stopsfurtherreceiptchasing.
 No newP2liveinjury/death. No sandbox reset/program, no evalcapture(P3 owns coordinatedcapture). OpeningP3eval forcedsavefailed/LASTSAVED dragon0/milestones11; notlivevictory. Onlyp2played. Onlyownediter36fileswritten; pythonabsent,usepython3; allcommands cd $EAT_ROOT. No tools/server/.work access/push.
+
+## 17:52 active independent observation
+P3 explicitly ACCEPTED observer chat13209–13210: protected50 LIVE60s record phasechanges/root minmax/P3HP; purpose distinguishliveperchcue fromprivategatecensor. P2 accepted13887, ONE active phase_watch.js LIVE #13888, shell70112 timeout70; do not overlap p2program. No gaze/movement/mutations. Inspect phase_watch.txt + summarize_watch.py output before report. Prepared earlierwatch_prepared.js NOTRUN. P3 allkitrequestsclosed.
+
+## 17:53 observation COMPLETE; no active program
+#13888 LIVE17:51:45.636–17:52:45.565, 241 samples ALLphase1; NOphase2/3/5/6/7. RootY56.367879..82.747274. Dragon184.979599 unchanged; P3metadataHP20 andP2HP20 throughout. FULL10private50ending20/20, controlsfalse/goalnull. Raw phase_watch.txt + machinechecked phase_watch_summary.json; tool summarize_watch.py smalltest completed. Lead notified exactwindow/absence, no contactnegative/noimmunity claim. One samplewindow only; no automaticrepeat withoutdecisionneed.
