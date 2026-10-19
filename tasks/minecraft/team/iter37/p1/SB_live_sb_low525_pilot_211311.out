@@ -1,0 +1,26 @@
+[sandbox] program #87 on p1: 19.9 s
+--- output ---
+LOW52_SOURCE {"scope":"P1_SANDBOX only physical floatingplatform/drop, NOattack","state":{"at":"2026-10-19T21:13:11.855Z","p":{"x":-2.5526781337595925,"y":50,"z":4.499917834500009},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,33],["end_stone",57,null],["gravel",6,null],["ender_pearl",1,null],["dirt",1,null]],"time":13923}}
+FLOAT_PLATFORM_ACK
+CUT Vec3 { x: -3, y: 52, z: 4 } end_stone
+PLACE Vec3 { x: -3, y: 50, z: 4 } gravel
+PLACE Vec3 { x: -3, y: 51, z: 4 } gravel
+RIGHT_ESCAPE_CLEARED 54
+RIGHT_ESCAPE_CLEARED 55
+RIGHT_ESCAPE_CLEARED 56
+RIGHT_ESCAPE_CLEARED 57
+RIGHT_ESCAPE_CLEARED 58
+NATIVE_HALF_STEP_ACK {"at":"2026-10-19T21:13:28.392Z","p":{"x":-3.7,"y":52.5,"z":4.499917834500067},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,33],["end_stone",57,null],["gravel",4,null],["ender_pearl",1,null],["dirt",1,null]],"time":14243}
+CUT Vec3 { x: -3, y: 51, z: 4 } gravel
+CUT Vec3 { x: -3, y: 50, z: 4 } gravel
+LOW52_FIELD_READY {"state":{"at":"2026-10-19T21:13:29.795Z","p":{"x":-3.447275408011358,"y":52.5,"z":4.499917834500032},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,35],["end_stone",57,null],["gravel",4,null],["ender_pearl",1,null],["dirt",1,null]],"time":14263},"platform":"end_stone","escape":[[50,"air"],[51,"air"],[52,"air"],[53,"air"],[54,"air"],[55,"air"],[56,"air"],[57,"air"],[58,"air"]]}
+LOW52_ARMED {"at":"2026-10-19T21:13:30.545Z","p":{"x":-3.447275408011358,"y":52.5,"z":4.499917834500032},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,35],["end_stone",57,null],["gravel",4,null],["ender_pearl",1,null],["dirt",1,null]],"time":14283}
+LOW52_DROP_ACK {"ms":650,"state":{"at":"2026-10-19T21:13:31.196Z","p":{"x":-2.54442266955596,"y":50,"z":4.4999178344998665},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,35],["end_stone",57,null],["gravel",6,null],["ender_pearl",1,null],["dirt",1,null]],"time":14303}}
+PLACE Vec3 { x: -3, y: 52, z: 4 } end_stone
+LOW52_END {"at":"2026-10-19T21:13:31.745Z","scope":"P1_SANDBOX site52.5 Slab+escape NOattack","attacks":0,"hits":[],"minBody":null,"minRoot":null,"dragonBefore":{"p":{"x":-8.148100848287264,"y":79.9960424381897,"z":3.705831611332055},"hp":47.85459899902344,"phase":1},"dragonAfter":{"p":{"x":-8.437146074390219,"y":63.86333800741549,"z":34.22518613793697},"hp":47.85459899902344,"phase":1},"issue":null,"phaseName":"cleanup","errors":[],"state":{"at":"2026-10-19T21:13:31.745Z","p":{"x":-2.621550762566318,"y":50,"z":4.4999178344998665},"hp":20,"food":20,"ground":true,"inv":[["stone_sword",1,13],["stone_shovel",1,35],["end_stone",56,null],["gravel",6,null],["ender_pearl",1,null],["dirt",1,null]],"time":14303},"full":true,"p3HP":20,"roof":"end_stone","rows":[[49,20,-3.349275369478775,52.5,4.499917834500003,true],[99,20,-3.1977673099074018,52.5,4.499917834499975,true],[599,20,-2.503980955556,50.390447453259966,4.4999178344998665,false],[649,20,-2.54442266955596,50,4.4999178344998665,true]]}
+CONTACT_COMPACT {"at":"2026-10-19T21:13:31.746Z","state":{"p":[-2.622,50,4.5],"hp":20,"food":20},"eventCount":3,"omittedEvents":0,"columns":["dtMs","hp","x","y","z","yaw","pitch","rawHandFlags","shieldWear","rootX","rootY","rootZ"],"events":[{"kind":"packet","t":1792444403561,"ownId":36,"packet":[1046,25,143,143],"at":[0,20,-2.553,50,4.5,-1.573,1.432,null,null,-4.697,64.398,-1.318],"preCount":40,"pre":[[-125,20,-2.553,50,4.5,-1.573,1.432,null,null,-6.367,64.598,-3.096],[-76,20,-2.553,50,4.5,-1.573,1.432,null,null,-4.697,64.398,-1.318],[-25,20,-2.553,50,4.5,-1.573,1.432,null,null,-4.697,64.398,-1.318]]},{"kind":"packet","t":1792444404558,"ownId":36,"packet":[1046,8,0,0],"at":[0,20,-2.553,50,4.5,-1.573,1.432,null,null,4.252,62.998,15.247],"preCount":40,"pre":[[-121,20,-2.553,50,4.5,-1.573,1.432,null,null,3.797,63.198,12.676],[-71,20,-2.553,50,4.5,-1.573,1.432,null,null,3.797,63.198,12.676],[-21,20,-2.553,50,4.5,-1.573,1.432,null,null,4.252,62.998,15.247]]},{"kind":"packet","t":1792444409509,"ownId":36,"packet":[1340,25,143,143],"at":[0,20,-3.447,52.5,4.5,-1.571,-1.275,null,null,8.77,60.96,-1.919],"preCount":40,"pre":[[-116,20,-3.447,52.5,4.5,-1.571,-1.278,null,null,8.858,60.805,-3.43],[-66,20,-3.447,52.5,4.5,-1.571,-1.275,null,null,8.858,60.805,-3.43],[-15,20,-3.447,52.5,4.5,-1.571,-1.275,null,null,8.77,60.96,-1.919]]}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (-2.6, 50, 4.5) in the_end, health 20/20, food 20/20, alive

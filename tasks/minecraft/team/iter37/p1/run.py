@@ -11,6 +11,7 @@ args=['python3','tools/mc_arena.py']+(['--sandbox'] if sandbox else [])+['run','
 meta={'args':args,'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'role':os.getenv('EAT_ROLE'),'iter':os.getenv('EAT_ITER'),'sandbox':sandbox}
 base=root/f"{'SB' if sandbox else 'LIVE'}_{file.stem}_{stamp}"
 Path(str(base)+'.json').write_text(json.dumps(meta,indent=2))
+Path(str(base)+'.submitted.js').write_text(file.read_text())
 r=subprocess.run(args,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 Path(str(base)+'.out').write_text(r.stdout)
 # Read the world immediately after return, before printing potentially large logs.
