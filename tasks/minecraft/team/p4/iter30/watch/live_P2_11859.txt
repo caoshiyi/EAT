@@ -1,0 +1,30 @@
+== #11859 2026-10-19T06:46:05 p2 role=encounter_owner iter=30 17.8 s
+const V=bot.entity.position.constructor,v=(x,y,z)=>new V(x,y,z),wait=n=>bot.waitForTicks(n);const full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');const count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])});const dirs=[v(0,-1,0),v(0,1,0),v(0,0,-1),v(0,0,1),v(-1,0,0),v(1,0,0)];
+async function centered(q){const eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),d=q.offset(.5,.5,.5).minus(eye);if(d.norm()>4.4)return null;const hit=bot.world.raycast(eye,d.scaled(1/d.norm()),d.norm()+.1);if(hit&&!hit.position.equals(q))return null;await bot.lookAt(q.offset(.5,.5,.5),true);await wait(1);const c=bot.blockAtCursor(4.5);return c?.position.equals(q)?c:null;}
+console.log('SOURCE',JSON.stringify(state()));if(bot.game.dimension!=='overworld'||bot.health!==20||bot.entity.position.distanceTo(v(-2.5,53,-29.5))>.1)throw Error('source changed');
+try{for(let level=0;level<16&&bot.entity.position.y<64;level++){if(bot.health<8)throw Error('HPstop');const a=bot.entity.position.floored();let harvested=0;for(const q of bot.findBlocks({matching:b=>['dirt','grass_block','coarse_dirt','podzol'].includes(b.name),maxDistance:4,count:32}).filter(q=>q.y>=a.y).sort((a,b)=>a.distanceTo(bot.entity.position)-b.distanceTo(bot.entity.position))){const c=await centered(q);if(!c)continue;await bot.unequip('hand');await bot.dig(bot.blockAt(q),'ignore',dirs[c.face]);await wait(2);console.log('CUT',q,JSON.stringify(state()));if(++harvested>=2)break;}await wait(10);const ref=a.offset(0,-1,0);if(!count('dirt')||!full(ref))throw Error('unfunded rise');const head=bot.blockAt(a.offset(0,2,0));if(head?.shapes?.length){const c=await centered(head.position);if(!c)throw Error('headroom invisible');await bot.unequip('hand');await bot.dig(head,'ignore',dirs[c.face]);await wait(3);}await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'hand');await bot.lookAt(ref.offset(.5,1,.5),true);bot.setControlState('jump',true);try{for(let k=0;k<12&&bot.entity.position.y<a.y+1.04;k++)await wait(1);if(bot.entity.position.y<a.y+1.04)throw Error('rise headstall');const c=bot.blockAtCursor(4.5);if(!c?.position.equals(ref)||c.face!==1)throw Error('rise cursor');await bot.placeBlock(bot.blockAt(ref),v(0,1,0));}finally{bot.setControlState('jump',false);}for(let k=0;k<20&&!bot.entity.onGround;k++)await wait(1);if(!bot.entity.onGround||Math.abs(bot.entity.position.y-a.y-1)>.03)throw Error('rise landing');console.log('UP',JSON.stringify(state()));}}
+catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));}finally{bot.clearControlStates();await wait(5);console.log('END',JSON.stringify(state()));}return state();
+-- output --
+SOURCE {"at":"2026-10-19T06:46:05.526Z","p":{"x":-2.5,"y":53,"z":-29.5},"hp":20,"food":20,"inv":[]}
+CUT Vec3 { x: -2, y: 54, z: -30 } {"at":"2026-10-19T06:46:06.339Z","p":{"x":-2.5,"y":53,"z":-29.5},"hp":20,"food":20,"inv":[]}
+CUT Vec3 { x: -2, y: 54, z: -29 } {"at":"2026-10-19T06:46:07.189Z","p":{"x":-2.5,"y":53,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+UP {"at":"2026-10-19T06:46:08.141Z","p":{"x":-2.5,"y":54,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+CUT Vec3 { x: -2, y: 55, z: -30 } {"at":"2026-10-19T06:46:09.042Z","p":{"x":-2.5,"y":54,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+CUT Vec3 { x: -2, y: 55, z: -29 } {"at":"2026-10-19T06:46:09.893Z","p":{"x":-2.5,"y":54,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",2]]}
+UP {"at":"2026-10-19T06:46:10.845Z","p":{"x":-2.5,"y":55,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",2]]}
+CUT Vec3 { x: -2, y: 56, z: -30 } {"at":"2026-10-19T06:46:11.846Z","p":{"x":-2.5,"y":55,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",2]]}
+CUT Vec3 { x: -2, y: 56, z: -29 } {"at":"2026-10-19T06:46:12.849Z","p":{"x":-2.5,"y":55,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+UP {"at":"2026-10-19T06:46:13.799Z","p":{"x":-2.5,"y":56,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+CUT Vec3 { x: -2, y: 56, z: -31 } {"at":"2026-10-19T06:46:14.804Z","p":{"x":-2.5,"y":56,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+CUT Vec3 { x: -1, y: 56, z: -30 } {"at":"2026-10-19T06:46:15.806Z","p":{"x":-2.5,"y":56,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",4]]}
+UP {"at":"2026-10-19T06:46:16.756Z","p":{"x":-2.5,"y":57,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+CUT Vec3 { x: 0, y: 57, z: -29 } {"at":"2026-10-19T06:46:17.759Z","p":{"x":-2.5,"y":57,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+CUT Vec3 { x: 0, y: 57, z: -31 } {"at":"2026-10-19T06:46:18.761Z","p":{"x":-2.5,"y":57,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",3]]}
+UP {"at":"2026-10-19T06:46:19.711Z","p":{"x":-2.5,"y":58,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",2]]}
+UP {"at":"2026-10-19T06:46:20.663Z","p":{"x":-2.5,"y":59,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+CUT Vec3 { x: 1, y: 59, z: -30 } {"at":"2026-10-19T06:46:21.664Z","p":{"x":-2.5,"y":59,"z":-29.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+UP {"at":"2026-10-19T06:46:22.615Z","p":{"x":-2.5,"y":60,"z":-29.5},"hp":20,"food":20,"inv":[]}
+FAILURE Error: unfunded rise {"at":"2026-10-19T06:46:23.118Z","p":{"x":-2.5,"y":60,"z":-29.5},"hp":20,"food":20,"inv":[]}
+END {"at":"2026-10-19T06:46:23.368Z","p":{"x":-2.5,"y":60,"z":-29.5},"hp":20,"food":20,"inv":[]}
+-- returned --
+{"at": "2026-10-19T06:46:23.368Z", "p": {"x": -2.5, "y": 60, "z": -29.5}, "hp": 20, "food": 20, "inv": []}

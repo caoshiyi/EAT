@@ -1,0 +1,21 @@
+== #11853 2026-10-19T06:39:08 p2 role=encounter_owner iter=30 0 s
+console.log('STATE',new Date().toISOString(),bot.entity.position,bot.health,bot.food,bot.entity.yaw,bot.entity.pitch,bot.entity.onGround);const a=bot.entity.position.floored();for(let y=-1;y<=3;y++){const r=[];for(let z=-1;z<=3;z++)for(let x=-1;x<=1;x++){const q=a.offset(x,y,z),b=bot.blockAt(q);if(b?.name!=='air')r.push({p:q,n:b?.name,s:b?.shapes});}console.log('LAYER',y,JSON.stringify(r));}console.log('TIME',bot.time);bot.chat('P2 ACTUALberries3/TWOstonePicks/Snow14. Portalroute11851 moved~24m thenstalled5.5/64/-2.3 withoutdamage. Inspectinglocalheadobstacle andresume, no portalentryclaimed. Provisionalpublished06:38 before90; continuingto07:14 originaldeadline. Need no resetG8SB. Netherroute8minestimateunqualifieduntilactualprogress.');
+-- output --
+STATE 2026-10-19T06:39:08.103Z Vec3 { x: 5.529796018833215, y: 64, z: -2.3 } 20 20 3.1049409490218483 0 true
+LAYER -1 [{"p":{"x":5,"y":63,"z":-4},"n":"snow","s":[]},{"p":{"x":6,"y":63,"z":-4},"n":"snow","s":[]},{"p":{"x":4,"y":63,"z":-3},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":63,"z":-3},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":63,"z":-2},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":63,"z":-2},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":63,"z":-2},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":63,"z":-1},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":63,"z":-1},"n":"stone","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":63,"z":-1},"n":"stone","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":63,"z":0},"n":"stone","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":63,"z":0},"n":"stone","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":63,"z":0},"n":"stone","s":[[0,0,0,1,1,1]]}]
+LAYER 0 [{"p":{"x":4,"y":64,"z":-3},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":64,"z":-3},"n":"snow","s":[]},{"p":{"x":4,"y":64,"z":-2},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":64,"z":-2},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":64,"z":-1},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":64,"z":-1},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":64,"z":-1},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":64,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":64,"z":0},"n":"stone","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":64,"z":0},"n":"stone","s":[[0,0,0,1,1,1]]}]
+LAYER 1 [{"p":{"x":4,"y":65,"z":-3},"n":"snow","s":[]},{"p":{"x":4,"y":65,"z":-2},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":65,"z":-2},"n":"snow","s":[]},{"p":{"x":4,"y":65,"z":-1},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":65,"z":-1},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":65,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":65,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":6,"y":65,"z":0},"n":"grass_block","s":[[0,0,0,1,1,1]]}]
+LAYER 2 [{"p":{"x":4,"y":66,"z":-2},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":4,"y":66,"z":-1},"n":"grass_block","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":66,"z":-1},"n":"snow","s":[]},{"p":{"x":4,"y":66,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":66,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]}]
+LAYER 3 [{"p":{"x":4,"y":67,"z":-2},"n":"snow","s":[]},{"p":{"x":4,"y":67,"z":-1},"n":"snow","s":[]},{"p":{"x":4,"y":67,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]},{"p":{"x":5,"y":67,"z":0},"n":"dirt","s":[[0,0,0,1,1,1]]}]
+TIME {
+  doDaylightCycle: true,
+  bigTime: 4181169n,
+  time: 4181169,
+  timeOfDay: 5169,
+  day: 174,
+  isDay: true,
+  moonPhase: 6,
+  bigAge: 4160506n,
+  age: 4160506,
+  clocks: {}
+}

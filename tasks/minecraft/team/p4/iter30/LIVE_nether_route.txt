@@ -1,0 +1,67 @@
+program #11868 on p4: 70.7 s
+--- output ---
+NETHER_ROUTE_SOURCE {"at":"2026-10-19T06:57:34.359Z","p":{"x":4.5,"y":65,"z":3.5},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]}
+ACTUAL_NETHER_EXIT {"at":"2026-10-19T06:57:34.810Z","p":{"x":4.499999999999883,"y":65,"z":2.3},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]}
+NETHER_ROUTE_FAILURE Error: 70s routepilot budget {"at":"2026-10-19T06:58:44.814Z","p":{"x":4.499999999999883,"y":65,"z":2.27452},"hp":20,"food":20,"dim":"the_nether","ground":false,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]}
+NETHER_ROUTE_END {"state":{"at":"2026-10-19T06:58:44.971Z","p":{"x":4.499999999999883,"y":65,"z":2.3},"hp":20,"food":20,"dim":"the_nether","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["wooden_shovel",1,35],["spruce_planks",3,null],["dirt",10,null],["snowball",15,null],["wooden_sword",1,0],["crafting_table",1,null]]},"planner":[{"at":"2026-10-19T06:57:34.901Z","status":"partial","len":61,"last":{"x":0.5,"y":67,"z":58.5}},{"at":"2026-10-19T06:57:34.950Z","status":"partial","len":78,"last":{"x":18.5,"y":70,"z":56.5}},{"at":"2026-10-19T06:57:35.000Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.050Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.100Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.150Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.200Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.251Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.300Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.351Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.401Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}},{"at":"2026-10-19T06:57:35.451Z","status":"partial","len":105,"last":{"x":-15.5,"y":65,"z":66.5}}],"elapsedMs":70612,"portals":[{"x":4,"y":65,"z":3},{"x":3,"y":65,"z":3},{"x":4,"y":66,"z":3},{"x":3,"y":66,"z":3},{"x":4,"y":67,"z":3},{"x":3,"y":67,"z":3}],"hazards":[]}
+--- returned ---
+{
+ "at": "2026-10-19T06:58:45.033Z",
+ "p": {
+  "x": 4.499999999999883,
+  "y": 65,
+  "z": 2.3
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "the_nether",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_shovel",
+   1,
+   35
+  ],
+  [
+   "spruce_planks",
+   3,
+   null
+  ],
+  [
+   "dirt",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: VERIFIED SB287 GROUND58firsttickjump78.76deg SnowSUCCESS! use06:54:34.327, actual95targetGone37.772, Snowgone37.788, SAMEEnd9HP retained and FOURothers (East83/South101/West98/North104). Roofrestored, source6.503/58/-25.500, wood56, Snow0. ONE8.2soperatio
+p2: n/NOhealthloss, nottower. ActualspawnSnowvy1.87825 maxobserved102.63, physicalarcgoesOVERpillar; regularheldUSEnotremoteattack. Thisestablishesgroundlobuncaged95effect/retention, notcage/allheightproof. Live6unchanged. Snow15couldfundrealcrystalclear ifyou
+p2: reachEnd; native2Sand/DirtUPraisesmaxapexfor104 ifneeded. YouractualNetherentry20HP acknowledged; route/bedendgamestillneeded.
+--- p4 now: (4.5, 65, 2.3) in the_nether, health 20/20, food 20/20, alive
+syntax-only PASS: nether_route.js
