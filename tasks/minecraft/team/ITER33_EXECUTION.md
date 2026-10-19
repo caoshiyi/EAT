@@ -33,3 +33,39 @@ Proposed correction not yet offered/deployed. No new33 effect asserted. Remainin
 ## 11:04:59 correction01 offered
 
 [Small proposal](methods/iter33/CORRECTION_01.md), [code fragment](methods/iter33/arrival_correction.js.txt), [historical replay](methods/iter33/arrival_replay.json), [exact12152](methods/iter33/canonical_12152.txt). Actual declared-goal distance=137.49m, radius2; empty recipient delta0. Correction is not adopted/validated. Current owner chat11580 selects local food/wood12min budget; p4 review offer11582–83 through11:14. Engineer does not allocate tactics. Operator may apply this postcondition directly to selected branch; current code review follows when published.
+
+## 2026-10-19T11:06:43.600128+00:00 current implementation review
+
+Owner food_pilot nav now checks original g.isEnd(actual floor) after stop and logs target-distance net progress. SB348 actual155.038/63/1009.026 matches selected155/1009 target before FISH_ADMISSION; real return145.499/74/973.5 then exact walk145.499/74/972.487. This is a demonstrated true arrival case in practice; historical false-arrival rejection/live receipt acceptance remain untested. No attribution to engineer proposal: operator independently wrote current checks; p4 proposed exact descent/position gates, actually present in executed348 source.
+
+SB347 completed ascent/return14HP6food+all10FULL, no food claim. SB348 executes nav+ice admission then digpost error11:06:09.129 before fish attack/receipt. Exact generic cut accepts only air/cave_air, but error omits actual replacement block; nonair is established, water specifically not yet independently observed. Return branch actually moved back and sealed (complete tail retained in pilot_sb_records.txt). Correction01 now retired as historical proposal; current owned defect moves to type-specific dig postcondition diagnostics after this demonstrated failure. No broad reliability or live adoption claimed.
+
+Read-only arena call initially placed --sandbox after programs and failed argument parsing; corrected global flag before subcommand; no programs executed by reviewer.
+
+## 2026-10-19T11:07:02.666044+00:00 correction02
+
+[Exact diagnostic proposal and failure acceptance](methods/iter33/CORRECTION_02.md). P4 independently reported this gap11597–99. No unique cause claimed; intended postblock still unknown. Next owner code/actual output will determine adoption.
+
+## 2026-10-19T11:09:53.714827+00:00 correction02 observed; ending failure remains
+
+SB349 changed ICE postcondition was unreached (current belowWATER rejected at admission). SB350 exact source/output in [preserved G1 records](methods/iter33/G1_350_351_records.txt) subsequently logs originalICE→AIR at127/62/1007 and originalICE→WATER at128/62/1007,127/62/1008,126/62/1007,127/62/1006. Type-specific diagnostics now useful in executed code and water acceptance actually ran; operator observed and reported outcomes. This supports a real ice/water case, does not reconstruct348 unsampled postblock. No engineer-exclusive attribution; owner/P4 independently changed it. Correction02 closed with this bounded component evidence.
+
+Whole350 FAILED: WATER_ENTRY11:08:23.841 at126.3/61/1007.3,oxygen14; no FISH_ATTACK or salmon inventory. Actual recovery nav tried (unlike prior32 missing retreat), net distance39.947→38.422 then unchanged; navigation postcondition failed11:08:33.876 at127.686/60/1006.3. Ending floorFULL but roof+sides largelyWATER; final stop clears controls. Canonical sandbox death11:08:47 DROWN reported by owner, events independently retained in G1_end_events.txt; SB351 actual empty respawn6.5/75/-40.5/20HP confirms newlife. No LIVE death/effect in current event tail. Food method retired by owner11607–09, G2 requested.
+
+Current review focus: executed ending/recovery after navigation failure. New owner travel_step includes actual source retreat plus local fallback, which is a substantive code change; neither branch is qualified until reached with an observed retained result. Inspector does not prescribe where/how to travel. Test one operator-selected failure branch and inspect actual controls/body/boundary and next-call source; source containing RETREAT_CONFIRMED is insufficient. No fishing retry requested.
+
+## 2026-10-19T11:11:22.367684+00:00 requested travel_step review
+
+For objective_owner11615–16: exact travel_step.js now has target-distance progress (5s,minimum1), goal+grounded postcondition, preselected local ending and actual retreat code in catch. On failure with incomplete boundary it executes navTo(source+3)→sealSource; if that throws it selects local burrow and attempts burrowAt. This matches a bounded attempt to return/fallback; it does NOT promise continuous successful recovery. If no fallback site exists it falls through to finally stop; if burrow fails it logs RECOVERY_FAILURE then stops. Terminal actual faces/position decide outcome. That residual limit is the demonstrated350 failure class, not a proved failure in this new land implementation.
+
+SB352 actually passed target125/63/1012→buried125.527/60/1012.5 at11:10:39.355/.506/.658, all10FULL,14HP6food, resources retained. Neither catch branch ran; no retreat/fallback validation credit. Owner now adopts small step LIVE; no review approval needed. Owner11600–01 acknowledges correction01 read and actual nav gate integration; attribution is owner-reported adoption plus inspected code, and actual true-goal case independently observed. Negative-case gate still untested. P4 dimension-gate discrepancy11619–20 is accurate static review: state logs dim but guards do not assert it; no transition case observed, so no broad dimension qualification.
+
+Narrow failure acceptance for current focus: when selected nav really fails, completed code must enter declared catch branch, actual ending must match source or selected fallback with ten full faces and grounded body, and next call must retain it. If neither ending qualifies, report operation/recovery failed and inspect actual body immediately; do not count the presence of catch code or dead:false as recovery. No new whole food/route chain requested for this test.
+
+A small offline record_digest.py was checked on347/348: detected actual digpost error and all three ten-face endings against raw. It only summarizes saved records and retains source/output; it is not a gameplay program, validator, or substitute for exact branch review.
+
+## 2026-10-19T11:12:38.631212+00:00 live transfer and source refresh
+
+Canonical LIVE12204 matches SB352 source hash, includes sourceDim equality before completed=true, and passed actual new ending125.473/60/1012.526,14HP6food/Dirt7 at11:11:11.391/.542/.741. Prior static no-dimension-guard observation is SUPERSEDED for executed352/12204; it described earlier file inspection, not final executed code. No dimension-transition test occurred. Current source remains authoritative over earlier review. [LIVE evidence](methods/iter33/current_live.txt).
+
+Wood.js selected next; exact code reads actual log inventory delta then burrow, but receipt/use not yet qualified. New12204 ending is genuine downstream traversal enabled by changed goal/ending behavior; it does not satisfy initial food gate or full route. Current review continues through execution.
