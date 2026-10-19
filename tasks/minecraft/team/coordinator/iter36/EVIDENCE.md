@@ -17,3 +17,7 @@
 | Isolated P3 SB22, iter36 |50→60→50 passed28s/HP20; down20.6s and all7N lost by handmining| One traversal qualified; stock/latency does not qualify sustainable repetition |
 | Persistent P2 LIVE13888 17:51:45–52:45 |241samples allphase1/59.929s, root56.3679..82.7473; HP184.979599; P2/P3 HP20| Relevant cue absent this live minute; no proof perpetual absence, hidden-target cause, or contact impossibility |
 | Interpretation / prior counterexample |P3 suspects hidden players sustainphase1; iter35 G5 hadphase2→3→6 beforepoke| Hypothesis not mechanism proof; discriminate spontaneous transitions/context from action-associated transition |
+| Persistent P3 LIVE13901 17:56 |Coveredlowerapproach10cuts/HP20; currentmodelmin2.784 atroot56.3456| Currentcandidate geometry and actualaccess, no contact yet |
+| Persistent P3 LIVE13908 |52stage50s healthy20, no<=3.2trigger/noattack; outputtruncated| No eligiblewindow inthat50s; aggregate loss is measurementfailure; no APInegative |
+| Isolated P1 G2 SB61 17:59–18:00 |65s52stage/nohatch/noattack; min3.597/root57.164; healthy11.5returned50| Range unavailable thiswindow; heightcoupling vs pathvariance unresolved |
+| Persistent P3 LIVE13911 18:02 |1.251sascent; predicted(-6.13,55.71,7.74) vsactual(-8.76,56.61,1.29); min3.995/noattack/healthy20ending| Lateralpredictionmiss despite lowroot; causalheightclaim weakened. Nexttestmeasuredlatencyforecast |

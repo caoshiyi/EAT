@@ -166,3 +166,5 @@ Iteration35 P4 actual kit-return checkpoint —2026-10-19 17:33UTC: token usage 
 Iteration35 P4 closing audit checkpoint —2026-10-19 17:40UTC: token usage unavailable; permitted available session-history evidence exposes no per-retained-commit counters. No estimates. Retains P2 corpse-recovery failure/expiry, tool-type transfer correction, actual P3 tool use and exact-slot P2 spare recipient use, all failed programs and final native body/evaluator capture.
 
 Iteration36 coordinator opening —2026-10-19 17:47UTC: token usage unavailable from authorized accessible session counters. No estimates; accessible budget table has no token counts. Duplicate agent launch mistake and one refused player attempt documented, with zero accepted duplicate gameplay. Opening evaluator save failed/LAST-SAVED dragon0/milestones11. Coordinator remains nonplaying.
+
+Iteration36 coordinator ~20min review —2026-10-19 18:05UTC: authorized accessible token counters unavailable; no estimates. Git verifies retained coordinator commits4d7992d03 and33bb573fc. New review/negative actual trials retained; official0dragon/11milestones remains last-saved, no objective progress claimed.
