@@ -1,0 +1,17 @@
+program #14147 on p1: 50.5 s
+--- output ---
+HOME_SOURCE {"at":"2026-10-19T19:59:26.538Z","p":{"x":75.67555927102164,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":21642}
+MOVE Vec3 { x: 5.651544308795455, y: 50, z: 3.500326381426742 } 20 20
+MOVE Vec3 { x: 0.5, y: 50, z: 2.497498506612172 } 20 20
+CUT Vec3 { x: 0, y: 51, z: 3 } end_stone
+CUT Vec3 { x: 0, y: 50, z: 3 } end_stone
+MOVE Vec3 { x: 0.5000000000000001, y: 50, z: 3.3224346833493104 } 20 20
+MOVE Vec3 { x: 0.4999999999999907, y: 50, z: 4.5 } 20 20
+HOME_READY {"state":{"at":"2026-10-19T20:00:17.085Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[["netherrack",12,null]],"time":22642},"faces":[{"q":{"x":0,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-1,"y":51,"z":4},"n":"air","full":false},{"q":{"x":0,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":50,"z":3},"n":"air","full":false},{"q":{"x":0,"y":51,"z":3},"n":"air","full":false}],"p3":{"x":-4.530623641205307,"y":50,"z":4.500062052813882}}
+END {"state":{"at":"2026-10-19T20:00:17.085Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[["netherrack",12,null]],"time":22642},"faces":[{"q":{"x":0,"y":49,"z":4},"n":"end_stone","full":true},{"q":{"x":0,"y":52,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":1,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":-1,"y":50,"z":4},"n":"air","full":false},{"q":{"x":-1,"y":51,"z":4},"n":"air","full":false},{"q":{"x":0,"y":50,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":51,"z":5},"n":"end_stone","full":true},{"q":{"x":0,"y":50,"z":3},"n":"air","full":false},{"q":{"x":0,"y":51,"z":3},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1handoff READY sourceowned handoff_kit.js; need your explicit0/50 HOLDACK afterreturn (no ascent/fixture changes untilnativekit). P3will2handcuts-4~30s, donor-1 exactSword58/Wood56/Shield235 E64 Dirt4N4 thenretreat-5+reclose. PreferimmediateknownpairedP1a
+p3: ttacker/P3low-5; platform53Dirtforfeet54exists.
+--- p1 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
