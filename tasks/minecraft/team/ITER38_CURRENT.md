@@ -1,13 +1,15 @@
-# Iteration38 current —22:05 UTC
-Objective UNMET. Official opening/repeat~21:54 **dragon0 / milestones11/12 / deaths226**, saveREFUSED/LAST-SAVED (stale after P1death). Latest native14500 **Dragon8.104599 alive22:05:13**; iteration9.75damage/threeAxe hits. Latestone-hit cycle retained healthy; no victory.
+# Iteration38 current —22:10 UTC
+**Apparent live victory; official persistence verification PENDING.** Arena advancement22:09:01 **p1 Free the End**; canonical14511 ended22:09:03 **Dragon1.604599→0**, attacks1/fullLOW20HP/food17/P320/issueNULL/errors[]. IndependentP3 nativeHP0, P2entityabsent. These are actual live evidence, not yet official score.
 
-| Owner/body | Current actual state | Active / next action |
+Immediate evaluator22:09:51 **dragon=0 / milestones=11/12 / deaths227**. ForcedsaveREFUSED, readingLAST-SAVED: infoDragon2HP shows PRE-KILL save. Coordinator retains full2209_victory_eval.txt; next verification~22:12 and after normal persistence. **No completion claim until evaluator shows victory.** No server/files/save controls permitted.
+
+| Owner/body | Actual closing observation22:09:52 | Active / next action |
 |---|---|---|
-| primary_operator/p1 | End(-3.5,52.5,4.5), HP20 food17, replacementAxe/Pick/E12/Gravel2 |14504 active;14500 oneAxe/3.25damage, fullLOW20/food17/noerrors |
-| experiment_operator/p2 | End(-2.5,50,2.3), HP20 food20, Table1/Snow1 | no active; bounded P1 question14071 (aperture vs standing opportunity); review question superseded |
-| field_partner/p3 | End(-4.6,50,4.5), HP20 food20, retained supplies |14498 native settled check22:03:12; fixedlow contract |
-| p4 UNPLAYED | OW(140.3,-35,2232.5), HP5.2 food17 empty | no controller/program; opening skeleton death |
+| primary_operator/p1 | End(-2.476,50,4.500), HP20 food17; Axe/Pick/E13/G2 | no active; final14511 healthyLOW; keep body accountable, concise handoff |
+| experiment_operator/p2 | End(-2.505,50,2.300), HP20 food20; Table1/Snow1 | no active; independent14513 noDragon, support complete |
+| field_partner/p3 | End(-4.556,50,4.500), HP20 food20; retained supplies | no active; fixedlow/healthy; concise handoff |
+| p4 UNPLAYED | OW(140.3,-35,2232.5), HP5.2 food17 empty | no controller/program; oneopening skeleton death |
 
-P1death21:57:10 followed actual healthyLOW return14481 at21:59:01. Replacement P3→P2→P1 native receipt14492/14065 verified21:59:30 after initial toss re-pickup; equipped/use underway, damage pending. Prior fatal14466 ending remains failure despite6.5damage. Immediate primary restart improved (8s after first healthy ending), but recovery cost~3min. 14500 canonical22:05:13 oneSTANDING hit11.354599→8.104599/fullLOW20/17/P320/nullissue/errors[]. Replacement recipient/use/effect/ending closed. Restart14504 at22:05:21 (~8s). Unresolved: next retained effect/end.14495 failed native visibility atE(-5,56,3), not absentopportunity; respect enforcement. No approval/proof/supply hold.
+Actual iteration: starting17.854599→0, six accepted axe hits (two fatal-ending batch + four individually retained healthy cycles). P1oneDragondeath21:57:10; P4oneSkeletondeath21:52:02. Replacement P3craft/P2courier/P1native-use chain closed. Revised workflow improved primary restarts (8–17s) and turned bounded diagnosis into changed retained endings; no universal method-safety claim.
 
-Deadline **23:51:42Z** actual env; final-five23:46:42. Coordinator eval~22:12/apparent victory/closing. Shared contract14025/27 unchanged. Evidence/review archived in iter38/coordinator/; no coordinator body programs.
+Next owner/action **coordinator official evaluator until persisted verification**, operators preserve current bodies/handoffs without new unnecessary work. Deadline23:51:42Z; no routine approval gate. Unresolved only score persistence/freshness plus final operator artifacts. Archived outcomes in iter38/coordinator/.
