@@ -26,3 +26,4 @@
 | Persistent P3 LIVE13921 + independentP1 LIVE13923 |3NUP53 latency1.704s, min3.8417/root58.4117 thenreturn50/rootmin56.3253| Same-worldcorrelation andactualverticalgap; causalheighttrackingunknown |
 | Persistent P3 LIVE13929 |54prep/15swindow/min7.007/root62.53/noattack/healthyreturn| Leadretiresstandingheightchase, selectschangedtransienttest |
 | Isolated P1 G3 SB65 |Valid53/65s/min3.134/root56.921/healthy11.5return;closestpointblocked| Universalroot>=feet+5counterexample INTHIS COPY; closestblockedpointnotwholebodyocclusionproof |
+| Persistent P1 LIVE13948 18:23–24 |Actualjumpfeet54.001/candidate2.74863m/ownrayclear; ordinaryattackREFUSEDvisibilityendstone(-6,57,4); attacks0/Dragonunchanged/Sword1; healthy11.5full10return/P3healthy20low| Newfailurepermittedvisibilityqualification, notrangecensor/attackeffect. Candidatepointclear != actualactionpermitted; noprohibitedbypass |
