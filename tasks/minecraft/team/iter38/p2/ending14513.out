@@ -1,0 +1,4 @@
+== #14513 2026-10-19T22:09:24 p2 role=experiment_operator iter=38 0 s
+console.log('P2_ENDING',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:bot.controlState,goal:bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count]),dragon:Object.values(bot.entities).filter(e=>e.name==='ender_dragon').map(e=>({id:e.id,hp:e.metadata?.[9],phase:e.metadata?.[16]})),p1:bot.players.p1?.entity?.position}));
+-- output --
+P2_ENDING {"at":"2026-10-19T22:09:24.819Z","p":{"x":-2.5051439286555293,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"controls":{},"goal":null,"inv":[["snowball",1],["crafting_table",1]],"dragon":[],"p1":{"x":-2.4760644999608514,"y":50,"z":4.499907493567231}}
