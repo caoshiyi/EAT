@@ -14,3 +14,9 @@ Coordination: user requires ONE outstanding arena run across live+sandbox includ
 23:59:48 completedP2SB130query/modeljoin invalidatesnear60recommendation: obsidianoccludesalltestedtargetheights. RETIREDproposal, no physicaltrial. Offset68/70 joinsmodelclearview+flight; sameXZ70/72insufficientflightdespiteclearview. OwnP1current/deliveryupdatedbeforeanyadoptionclaim. P2tokenheld, nochat/run.
 
 00:01:17 responseP2requestedreplancomplete. Addedmodelpathpoints; actual30stepreplayerror0.0038012 versuswithheldactualfourthposition. Newmodels are decisionaids, no projectiletrialorHPblastproof. P2SB132running at58HP10; donot interfere withtoken.
+
+00:03:30 P2accepted10minabort/recorder support. P4alreadyactualsmokedrecorder, avoidduplicate. P1operationguard/local8regressioncheckscomplete; materialcompletealive-onlyescape and damageforwardretirement delivered. No actualP2adoptionyet.
+
+00:05 guardreviewfound2edgecasesandcorrectedbeforeobservedadoption: damageafterhealingmuststopevenaboveopeningHP; groundedY62.99999mustselectfloor62not61. Addedactualcontractlocaltests,10nowpass. Thisislocalqualificationonly.
+
+2026-10-19T00:07:02+00:00 — P2 new operation_guard.js byte-identical to P1 current; rapid_shot body reviewed, no actual shot yet. Current sandbox136 approach running; live unchanged. Added UTC journal helper because manually rounded future minute labels repeatedly anticipated time by seconds; use actual stamps going forward. Small helper tested on this meaningful entry and read back; no world effect. Integration review initially labeled00:07 while clock00:06:47; current note supplies exact chronology.
