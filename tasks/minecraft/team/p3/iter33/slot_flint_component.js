@@ -1,0 +1,7 @@
+// UNEXECUTED portable component. Only the owning operator may run for their own player.
+const {Vec3}=require('vec3'),q=new Vec3(8,56,87),source=new Vec3(9,56,87),wait=n=>bot.waitForTicks(n),n=s=>bot.inventory.items().filter(i=>i.name===s).reduce((a,i)=>a+i.count,0);
+console.log('SOURCE',bot.entity.position,bot.health,bot.food,n('flint'),n('gravel'));
+if(!n('gravel')&&!n('flint')){const b=bot.blockAt(source);if(b.name!=='gravel')throw Error('block donation changed');await bot.unequip('hand');await bot.dig(b,true,'raycast');await wait(25);console.log('BLOCK_RECEIPT',n('gravel'),n('flint'));}
+for(let k=0;k<20&&!n('flint');k++){let b=bot.blockAt(q);if(b.name==='air'){if(!n('gravel'))throw Error('no actual G');await bot.equip(bot.inventory.items().find(i=>i.name==='gravel'),'hand');await bot.placeBlock(bot.blockAt(new Vec3(8,55,87)),new Vec3(0,1,0));await wait(8);b=bot.blockAt(q);}if(b.name!=='gravel')throw Error('slot changed');await bot.unequip('hand');await bot.dig(b,true,'raycast');await wait(20);console.log('TRIAL',k,n('gravel'),n('flint'));}
+if(n('flint')&&n('iron_ingot')){const r=bot.recipesFor(bot.registry.itemsByName.flint_and_steel.id,null,1,null)[0];if(!r)throw Error('no recipe');await bot.craft(r,1,null);await wait(12);console.log('STEEL_ACTUAL',n('flint_and_steel'));}
+bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));

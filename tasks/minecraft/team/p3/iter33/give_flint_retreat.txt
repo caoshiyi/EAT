@@ -1,0 +1,11 @@
+program #12786 on p3: 3.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:16:47.352Z","p":{"x":8.499999999999046,"y":55,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["gravel",11,null],["dirt",1,null]]}
+THROW_STANCE {"at":"2026-10-19T13:16:48.009Z","p":{"x":8.499999999998895,"y":55,"z":88.48072343905856},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["gravel",11,null],["dirt",1,null]]}
+COLLECT 222 p3 16852
+END {"at":"2026-10-19T13:16:51.119Z","p":{"x":8.49999999999923,"y":55,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["gravel",11,null],["dirt",1,null]]} { ok: true, cells: 7, inside: [] }
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 55, 89.7) in overworld, health 20/20, food 20/20, alive

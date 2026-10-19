@@ -142,3 +142,20 @@ Owner: p3 only; no agents. Started live 11:42 UTC. Read full program.md and requ
 -12738 freshHIGHroof pathfrom8/70/89 to8/70/82 SUCCESS7nodes via9/71/87..83; no newascent executed.12743 actualroofthreats10m[]; currenttime14644, notdayclaim. P1actualpublicpose5.499/55/70.567; matchedlevelnowcloserthanuncertainchestplan.
 -P3give_flint.js prepared; strict actualsamelevelpeer<3m/currentrayclear beforeONE native toss, thenreceiverownreceipt required. StillUNEXECUTED.
 -SharedclosingwindowconfirmedP2:13:21–13:31 UTC; stop/finishlongops by13:21, audits/eval/handoffs/commit then.
+
+## Final physical transfer boundary, still no receipt
+-P1BFSapproach reached11.4327/55/86.5 by12751, notx8. P3ROOFplan/stance alternate deferredin favorofactualclosematched55route.
+-12753 q87 floor54AIR/foot55STONE/head56STONE, headside9/56/87AIR. P3keptfoot87 full (notwalkingunsupportedfloor).
+-12758say+12759run werecompound: P1no87/Zombiecleanupmessage appearedinSAYchat AFTERlaunchcomposed; actual12759 nonethelessONLYhead8/56/87cut +fundedGravelpatch9/56/87 SUCCESS. No injury,volume5closed, F3/G11/Dirt1. P3notifiedexactmutation/latecoordination12760, retiredfurthercuts. NeedrefreshchatbetweenSAYanddependentmutation ratherthancompoundlaunch.
+-P1 actual12757 head10/56/86query Zombie9530 thenCursornull, ZEROattacks/hurt/kill; reclosedheadCOBBLE. Zombiepose9.496/56/82.749 inraw, notdeadclaim.
+-12763 PUBLIC row86 map: allfourfloors54 x8–11STONE (unlikerow87AIR); single9roof57AIR +9northhead56/85AIR; south9/56/87GRAVELfull. Passedconcrete3westcell/twofundedcap proposaltoP1; no executionclaim.
+-Closurewindowcurrent13:21–13:31, no ownlongoperationpending; F3stillactualcarriedprotectedandnotrecipientreceipt.
+
+## Closing receipt, final safety and evaluator
+- Three flint item tosses12776/12781/12786 FAILED: donor repick; original F3 retained. Changed method to separate material-block mining, not more toss retries.
+-12795 13:21:07–10 broke placed Gravel9/56/87 from donor89.7, recipient86.3; donor F3/G11 unchanged. P1 SOURCE12797 13:21:35 alreadyF1/Iron1; expired13:20:50 loop ranZEROtrials, actualnativecraft13:21:37 yieldedF&S1wear0. Actual recipientUSE acceptance passed for revised block-material donation; no originalF3transfer. Late physical operation disclosed (P3start7s/P1craft37s after13:21stop).
+-12803 13:22:49 P3actual20/20 F3G11D1, closed8AIR sharedcorridor, controlsfalse/goalnull/windowfalse. Skipped cap88 while peer body overlapped it.
+-P1 safetyseal12805 aftercentering13:23:30: ownFULL10 andz88head/footCOBBLE.12808 final P3nativeaudit13:25:11–12 verifiedsame20/20/resources, FULL10, volume2closed/noinsidehostiles, allcontrolsfalse/noGoal/window. No blocks changed by that audit. All operations stopped.
+-Closing eval EVAL_CLOSING.txt read: dragon0/milestones11/deaths206, programs12802. SAVE FAILED connectionrefused: LAST-SAVED, notfresh worldsave. SavedDragon200/200/sixcrystals informational only. No newEnd/portalrelight claim.
+-Sandbox closing audit CORRECTION: no programs since#3 doesNOTmean no deaths. Actualevents28p3sandboxdeaths = initialCreeper +27unattendedSpider12:00:03–12:07:01. ImmediateSB3healthyrespawn leftwestdoorAIR and was notdurableclosure proof. CurrentSB13.1HP17foodEMPTY0.7/66/-37.8; all preserved separately, no live effect. No reset/newSBplay.
+-FINAL_HANDOFF.md supersedes draft, identifies retainedsteel/F3, fiveLIVEdeaths, lostfoodmission, missedtiming, unresolvedportal/descent, nextexecutableprotectedfundedascent byP1. Onlyownedwork staged/committed; no push.
