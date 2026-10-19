@@ -3494,3 +3494,7 @@ Fresh retained-p2 G27-1 copy yielded actual two-step descent128 and covered rout
 
 ### Iteration27 second sandbox loss follows a full ending —00:09 UTC
 G27-2 SB136 retained actuallower58/10HP/Snow4 withthree10full at00:08:30.871–31.371/return31.621; canonicalmagicdeath00:08:33 supersedes ending. SB137 sourceadmission correctlyrefused actualOWrespawnbody at00:08:40, so changedrapidascent/shot was NOT tested. Count two sandboxkitlosses, no LIVE loss or objectiveeffect. Do not assign pre-programdeath to137 or treat sourceintegration/OWrecorder output as consequentialEndguard acceptance. Specific fullending means observedblocks/healthatthatinstant, not continuedhazard safety. Reviewer parser132negative/136positive displayslast-audit-versusreturn/clipflag, while subsequentworldevents remain decisive.
+
+
+### Iteration27 minute20 independent evidence comparison —00:14:48 UTC
+LIVE assetunchanged58/10HP/Snow4, zero newlyverifiedcrystal/dragon effects. Two sandboxkitlosses precededanyshot. Changedcontinuousoperation remainsactive141, not acompletedpass/fail; no unchangedrapidascentfailure inventedfrom137wrongsource. SB139 visibilityfailure retainedcleanup50/10HP/three10full; changed140 actualcursor/dig/reseal smallcasepassed, code+publicAPI contractinspected beforeinterpretation. P1models/guards andP4recorder actualplumbing/integration donotfulfill consequentialshot/escapeacceptance. Continueownerexecution/independentrecordchecking, not approvalqueues or resetclocks. Sourceexposurecorrection preserved; noexcludedconclusionsendorsed.
