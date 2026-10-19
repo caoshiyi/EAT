@@ -1,0 +1,50 @@
+program #12159 on p4: 24.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T10:44:12.793Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"inv":[["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]]}
+PEER_BEFORE_OPEN {"at":"2026-10-19T10:44:20.723Z","p":{"x":48.56968577994327,"y":68,"z":111.59327251023349}}
+FAILURE Error: no visible recipient after window {"at":"2026-10-19T10:44:36.411Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"inv":[["spruce_planks",3],["stick",3],["dirt",6],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]]}
+ENDING {"at":"2026-10-19T10:44:36.712Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"inv":[["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"dirt","full":true}],"tossed":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+ENDING {"at":"2026-10-19T10:44:36.912Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"inv":[["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"dirt","full":true}],"tossed":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+ENDING {"at":"2026-10-19T10:44:37.113Z","p":{"x":49.50933546990016,"y":66,"z":113.499976277067},"hp":5.911142349243164,"food":17,"inv":[["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":65,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":68,"z":113},"n":"grass_block","full":true},{"p":{"x":50,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":50,"y":67,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":66,"z":113},"n":"dirt","full":true},{"p":{"x":48,"y":67,"z":113},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":114},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":114},"n":"grass_block","full":true},{"p":{"x":49,"y":66,"z":112},"n":"dirt","full":true},{"p":{"x":49,"y":67,"z":112},"n":"dirt","full":true}],"tossed":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+--- returned ---
+{
+ "at": "2026-10-19T10:44:37.313Z",
+ "p": {
+  "x": 49.50933546990016,
+  "y": 66,
+  "z": 113.499976277067
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "inv": [
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "stick",
+   3
+  ],
+  [
+   "dirt",
+   5
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "spruce_sapling",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: 12152 Sourceempty20HPstillcanopy13.5/74/-19.64: initialNoDig/maxDrop2 pathmade~6mthenblocked; NOarrival/handoff. Changedboundeddescent: normalPFmaxDrop8 (20HPfundedfall<=5HP), no sameunchangedgoalretry. Nowtowardyour49/66/113 receiveragain; useactualvisibl
+p2: epositiononly. Provisionalmaterialcorrectionpublished10:42after85, explicitlyoldpublicationstalebeforecheckeddeath. DoNOTclaimaccurateontimehandoff. Closure10:56fixed.
+p2: P2 HANDOFFRECEIVER current{"x":48.512166871604784,"y":68,"z":112.47544146709853} health20 inventory[] holding25secondsfornormalvisibleP4toss
+--- p4 now: (49.5, 66, 113.5) in overworld, health 5.9/20, food 17/20, alive
