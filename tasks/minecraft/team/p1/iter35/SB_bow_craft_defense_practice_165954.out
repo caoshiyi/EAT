@@ -1,0 +1,18 @@
+[sandbox] program #30 on p1: 12.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:59:54.316Z","p":{"x":138.5125929635829,"y":-37,"z":2236.5323658419716},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",4,null]],"time":5809}
+TABLEPLAN success [
+  [ 140.5, -36, 2237.5 ],
+  [ 141.5, -36, 2236.5 ],
+  [ 142.5, -36, 2235.5 ],
+  [ 142.5, -36, 2234.5 ],
+  [ 142.5, -35.4375, 2233.725 ],
+  [ 141.5, -35, 2232.5 ],
+  [ 140.5, -35, 2232.5 ]
+]
+WOOD_SWORD_ACTUAL {"at":"2026-10-19T17:00:06.799Z","p":{"x":140.54636899282548,"y":-35,"z":2232.4731853585995},"hp":20,"food":20,"ground":true,"inv":[["stick",3,null],["wooden_sword",1,0]],"time":6049}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (140.5, -35, 2232.5) in overworld, health 20/20, food 20/20, alive

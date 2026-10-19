@@ -10,7 +10,7 @@ stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%H%M%S')
 args=['python3','tools/mc_arena.py']+(['--sandbox'] if sandbox else [])+['run','--player','p1','--timeout',timeout,str(file)]
 meta={'args':args,'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'role':os.getenv('EAT_ROLE'),'iter':os.getenv('EAT_ITER'),'sandbox':sandbox}
 base=root/f"{'SB' if sandbox else 'LIVE'}_{file.stem}_{stamp}"
-base.with_suffix('.json').write_text(json.dumps(meta,indent=2))
+Path(str(base)+'.json').write_text(json.dumps(meta,indent=2))
 r=subprocess.run(args,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-base.with_suffix('.out').write_text(r.stdout)
+Path(str(base)+'.out').write_text(r.stdout)
 print(r.stdout,end='');sys.exit(r.returncode)

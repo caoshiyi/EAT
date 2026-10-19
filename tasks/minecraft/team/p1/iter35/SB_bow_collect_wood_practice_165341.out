@@ -1,0 +1,17 @@
+[sandbox] program #25 on p1: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:53:42.095Z","p":{"x":140.5,"y":-35,"z":2232.4596924829516},"hp":20,"food":20,"ground":true,"inv":[],"time":22349}
+LOOTPLAN partial Vec3 { x: 139, y: -36, z: 2234 } [
+  [ 141.5, -35, 2232.5 ],
+  [ 142.5, -35.4375, 2233.725 ],
+  [ 142.5, -36, 2234.5 ],
+  [ 142.5, -36, 2235.5 ],
+  [ 141.5, -36, 2236.5 ],
+  [ 140.5, -36, 2235.5 ]
+]
+LOOTFAIL Error: nopath {"at":"2026-10-19T16:53:42.140Z","p":{"x":140.5,"y":-35,"z":2232.4596924829516},"hp":20,"food":20,"ground":true,"inv":[],"time":22349}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (140.5, -35, 2232.5) in overworld, health 20/20, food 20/20, alive

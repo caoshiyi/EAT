@@ -1,0 +1,100 @@
+program #13729 on p1: 20.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:07:30.695Z","p":{"x":18.50000000000002,"y":55,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,69],["end_stone",27,null],["end_stone",64,null],["netherrack",7,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15183} [
+  { q: Vec3 { x: 18, y: 54, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 18, y: 57, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 19, y: 55, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 19, y: 56, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 17, y: 55, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 17, y: 56, z: 25 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 18, y: 55, z: 26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 18, y: 56, z: 26 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 18, y: 55, z: 24 }, n: 'end_stone', full: true },
+  { q: Vec3 { x: 18, y: 56, z: 24 }, n: 'end_stone', full: true }
+]
+CUT Vec3 { x: 18, y: 57, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 55, z: 25 } netherrack
+ONE_UP {"ms":1752,"state":{"at":"2026-10-19T17:07:39.416Z","p":{"x":18.50000000000002,"y":56,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,70],["end_stone",28,null],["end_stone",64,null],["netherrack",6,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15363},"faces":[{"q":{"x":18,"y":55,"z":25},"n":"netherrack","full":true},{"q":{"x":18,"y":58,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":56,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":57,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":56,"z":24},"n":"end_stone","full":true},{"q":{"x":18,"y":57,"z":24},"n":"end_stone","full":true}]}
+CUT Vec3 { x: 18, y: 58, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 56, z: 25 } netherrack
+PLACE Vec3 { x: 19, y: 59, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 59, z: 25 } end_stone
+ONE_UP {"ms":2707,"state":{"at":"2026-10-19T17:07:42.124Z","p":{"x":18.50000000000002,"y":57,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,71],["end_stone",27,null],["end_stone",64,null],["netherrack",5,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15423},"faces":[{"q":{"x":18,"y":56,"z":25},"n":"netherrack","full":true},{"q":{"x":18,"y":59,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":58,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":58,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":57,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":58,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":57,"z":24},"n":"end_stone","full":true},{"q":{"x":18,"y":58,"z":24},"n":"end_stone","full":true}]}
+CUT Vec3 { x: 18, y: 59, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 57, z: 25 } netherrack
+PLACE Vec3 { x: 17, y: 59, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 59, z: 26 } end_stone
+PLACE Vec3 { x: 18, y: 59, z: 24 } end_stone
+PLACE Vec3 { x: 19, y: 60, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 60, z: 25 } end_stone
+ONE_UP {"ms":3608,"state":{"at":"2026-10-19T17:07:45.732Z","p":{"x":18.50000000000002,"y":58,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,72],["end_stone",23,null],["end_stone",64,null],["netherrack",4,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15483},"faces":[{"q":{"x":18,"y":57,"z":25},"n":"netherrack","full":true},{"q":{"x":18,"y":60,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":58,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":59,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":58,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":59,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":58,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":59,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":58,"z":24},"n":"end_stone","full":true},{"q":{"x":18,"y":59,"z":24},"n":"end_stone","full":true}]}
+CUT Vec3 { x: 18, y: 60, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 58, z: 25 } netherrack
+PLACE Vec3 { x: 17, y: 60, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 60, z: 26 } end_stone
+PLACE Vec3 { x: 18, y: 60, z: 24 } end_stone
+PLACE Vec3 { x: 19, y: 61, z: 25 } end_stone
+PLACE Vec3 { x: 18, y: 61, z: 25 } end_stone
+ONE_UP {"ms":3607,"state":{"at":"2026-10-19T17:07:49.339Z","p":{"x":18.50000000000002,"y":59,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,73],["end_stone",19,null],["end_stone",64,null],["netherrack",3,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15563},"faces":[{"q":{"x":18,"y":58,"z":25},"n":"netherrack","full":true},{"q":{"x":18,"y":61,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":59,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":60,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":59,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":60,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":59,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":60,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":59,"z":24},"n":"end_stone","full":true},{"q":{"x":18,"y":60,"z":24},"n":"end_stone","full":true}]}
+IMMUNE_TOP_READY {"at":"2026-10-19T17:07:49.339Z","p":{"x":18.50000000000002,"y":59,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,73],["end_stone",19,null],["end_stone",64,null],["netherrack",3,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15563} { roof61: 'end_stone' }
+CUT Vec3 { x: 18, y: 58, z: 25 } netherrack
+CUT Vec3 { x: 18, y: 57, z: 25 } netherrack
+CUT Vec3 { x: 18, y: 56, z: 25 } netherrack
+CUT Vec3 { x: 18, y: 55, z: 25 } netherrack
+PLACE Vec3 { x: 18, y: 57, z: 25 } end_stone
+LOW_DOWN {"at":"2026-10-19T17:07:51.339Z","p":{"x":18.50000000000002,"y":55,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,77],["end_stone",18,null],["end_stone",64,null],["netherrack",6,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15603,"faces":[{"q":{"x":18,"y":54,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":19,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":17,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":18,"y":55,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":56,"z":26},"n":"end_stone","full":true},{"q":{"x":18,"y":55,"z":24},"n":"end_stone","full":true},{"q":{"x":18,"y":56,"z":24},"n":"end_stone","full":true}]}
+PREP_END {"at":"2026-10-19T17:07:51.339Z","p":{"x":18.50000000000002,"y":55,"z":25.5},"hp":20,"food":17,"ground":true,"inv":[["basalt",38,null],["blackstone",15,null],["quartz",1,null],["ender_pearl",1,null],["cobbled_deepslate",8,null],["mossy_stone_bricks",1,null],["stone_sword",1,0],["sandstone",4,null],["torch",1,null],["sand",1,null],["stone_shovel",1,1],["stone_pickaxe",1,77],["end_stone",18,null],["end_stone",64,null],["netherrack",6,null],["stone_pickaxe",1,129],["end_stone",64,null],["crafting_table",1,null],["cobblestone",53,null],["gravel",1,null]],"time":15603} {
+  faces: [
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true },
+    { q: [Vec3], n: 'end_stone', full: true }
+  ],
+  roof61: 'end_stone',
+  outer: [
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' },
+    { q: [Vec3], full: true, n: 'end_stone' }
+  ]
+}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: ACTUAL13717 FIRSTLIVE SWORDDAMAGE16:59:47.239: realphysicalpoint2.8666m/rayclear/normalawaitattack, Hurt180 thenHP200->197.75 by47.389, Sword0->1, P3DOWN55/full20HP20food. P1independentcanonicalackaccepted. FreshcurrentHP197.75 confirmsretaineddamage; Crys
+p3: tal0/noheal. ADOPTING boundedrepeatedsamefield59attacks now, cooldown>=650ms/sharedHurt>=600ms, HPbudget/retreat unchanged. P1South18acceptedalternativecoverage, watchinvulnerabilitynotassumeadditive4mfastpass. P2fountainbackup/P4privateorchooseownreadybod
+p3: y. NoSwordcouriergate.
+p4: P3 firstdamage197.75 actual13719verified. Mainexecutionbottleneck nowmanualone-case gaps: your13716positive preserves20/20, Sword1 versus131uses (remaining>=88 needed). SuggestSMALLbatch3samevalidatedcycles, per-cycleHP/Shieldwear/resource/Full55/actualDra
+p4: gonHP checkpoints, Hurt>=600ms interferencegate, stopHPbudget/phaseDYING. P1Source18separatehealthySwordacceptedbygoal; P4holdLive12noAIconfound unlessalternatestrikeaccepted. Irunoneprivate30swindow (8snegativeRootfar) inparallel, thencanofferboundedLoopa
+p4: rtifact/testedownbody notyourplayer. P1 optionalcurrentOWNstrongholdWoodtooladvantage: Chest149/-29/2241 currentlyobservedbyP3maycontainfood/feather/iron; ifalreadyreachable/nativeLOSinspectforfuturehealing, noLive/Southpreemption/newstockclaim.
+p3: P3 VERIFIED DragonHP 197.75 -> 195.5 normalSword, batchhit 1 ownHP 20
+p3: P3 VERIFIED DragonHP 195.5 -> 193.25 normalSword, batchhit 2 ownHP 20
+p3: P3 VERIFIED DragonHP 193.25 -> 191 normalSword, batchhit 3 ownHP 20
+p3: P3 VERIFIED DragonHP 191 -> 188.75 normalSword, batchhit 4 ownHP 20
+--- p1 now: (18.5, 55, 25.5) in the_end, health 20/20, food 17/20, alive
