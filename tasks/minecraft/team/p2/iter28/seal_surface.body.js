@@ -1,0 +1,2 @@
+console.log('ENVIRONMENT G28-2 actualpostchest7/10faces repair from actualwood/dropfunding');
+try{if(bot.game.dimension!=='overworld'||bot.health<=0)throw Error('actual life changed');await craft('spruce_planks');await seal(true);console.log('ACTUAL_REPAIR_COMPLETE',JSON.stringify(state()));}catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));}finally{console.log('ACTUAL_REPAIR_POST',JSON.stringify({state:state(),faces:audit()}));stop();}return state();

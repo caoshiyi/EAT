@@ -18,7 +18,7 @@ with lockpath.open('w') as lock:
     print(('SB' if a.sandbox else 'LIVE'),'exit',r.returncode,'output',a.out)
     lines=r.stdout.splitlines()
     for line in lines:
-        if line.startswith(('program #','[sandbox] program #')) or 'FAILURE' in line or 'FAILED' in line or line.startswith(('CRAFT ','GALLERY_RECEIPT','TRAVEL_END','TRANSITION','PORTAL_NEAR')):print(line)
+        if line.startswith(('program #','[sandbox] program #')) or re.match(r'^(?:FAILURE\b|RECOVERY_FAILURE(?:_|\b)|TRANSIT_FAILURE\b|FAILED\b|ERROR\b)',line) or line.startswith(('CRAFT ','GALLERY_RECEIPT','TRAVEL_END','TRANSITION','PORTAL_NEAR')):print(line)
     state=None
     try:
         returned=r.stdout.split('--- returned ---\n',1)[1].split('\n--- ',1)[0]
@@ -27,7 +27,7 @@ with lockpath.open('w') as lock:
     print('ending_audits',sum(line.startswith('ENDING ') for line in lines))
     own_output=r.stdout.split('--- chat since',1)[0]
     truncated='[output truncated]' in own_output
-    failed=any('FAILURE' in line or 'FAILED' in line for line in own_output.splitlines())
+    failed=any(re.match(r'^(?:FAILURE\b|RECOVERY_FAILURE(?:_|\b)|TRANSIT_FAILURE\b|FAILED\b|ERROR\b)',line) for line in own_output.splitlines())
     if truncated: print('OUTPUT_TRUNCATED: missing failure markers/endings UNKNOWN; inspect actual postconditions')
     header=next((x for x in lines if re.match(r'(?:\[sandbox\] )?program #\d+ on p2:',x)),None)
     match=re.search(r'program #(\d+)',header or '')

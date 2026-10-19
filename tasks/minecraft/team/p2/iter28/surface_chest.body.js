@@ -1,0 +1,10 @@
+console.log('ENVIRONMENT G28-2 damagedsurface sheltered62/Snow8/berry1; boundednormalchest audit+retainedcover');
+let opened=false,contents=[];
+try{
+ if(bot.game.dimension!=='overworld'||bot.health<3||count('snowball')!==8)throw Error('actualchestsourcechanged');if(count('sweet_berries')&&bot.food<20){await bot.equip(bot.inventory.items().find(i=>i.name==='sweet_berries'),'hand');await bot.consume();}
+ await cut(bot.entity.position.floored().offset(0,2,0),['dirt','grass_block']);await sleep(10);while(bot.entity.position.y<65)await pillar('dirt');
+ await travel(v(10,66,-35),25000,2,false,3);const q=v(10,66,-35),block=bot.blockAt(q);if(block?.name!=='chest')throw Error('actualchest absent');await face(q);const chest=await bot.openChest(block);opened=true;contents=chest.containerItems().map(i=>({name:i.name,count:i.count,slot:i.slot}));console.log('ACTUAL_CHEST_CONTENTS',JSON.stringify({at:new Date().toISOString(),q,contents,state:state()}));
+ for(const name of ['cooked_beef','cooked_porkchop','bread','baked_potato','sweet_berries','apple','carrot','stone_pickaxe','iron_pickaxe','stone_sword','iron_sword','bow','arrow','snowball','iron_ingot','cobblestone']){for(const i of chest.containerItems().filter(i=>i.name===name)){try{await chest.withdraw(i.type,null,i.count);}catch(e){console.log('WITHDRAW_STOP',name,String(e));break;}}}chest.close();await sleep(5);
+ console.log('ACTUAL_CHEST_WITHDRAW_POST',JSON.stringify(state()));
+}catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));}
+finally{if(bot.currentWindow)bot.closeWindow(bot.currentWindow);try{const a=bot.entity.position.floored();await flat(a.offset(.5,0,.5));for(let n=0;n<3;n++){const q=bot.entity.position.floored();if(!full(q.offset(0,-2,0)))throw Error('currentcoverfloormissing');await cut(q.offset(0,-1,0),['dirt','grass_block']);await sleep(8);}await seal(true);}catch(e){console.log('RECOVERY_FAILURE',String(e),JSON.stringify(state()));}console.log('ACTUAL_CHEST_POST',JSON.stringify({state:state(),opened,contents,faces:audit()}));stop();}return state();

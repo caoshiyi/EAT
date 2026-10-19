@@ -1,0 +1,144 @@
+program #11609 on p2: 37.8 s
+--- output ---
+ENVIRONMENT LIVE actual77node5→75 pickupqualification; model6visiblecuts mustactuallypass; whole03:07–03:10
+ACTUAL_PLATFORM_APPROACH_START {"at":"2026-10-19T03:09:46.266Z","p":{"x":5.425543342347341,"y":50,"z":0.33202918733214115},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["snowball",2],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",60],["sand",2],["end_stone",63],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",15,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 5, y: 51, z: 1 } end_stone
+CUT Vec3 { x: 5, y: 50, z: 1 } end_stone
+ACTUAL_STAIR {"at":"2026-10-19T03:09:52.206Z","target":{"x":5,"y":50,"z":1},"p":{"x":5.499815840699699,"y":50,"z":1.618596177947273},"hp":10}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:09:52.561Z","start":{"x":5,"y":50,"z":1},"end":{"x":5,"y":50,"z":2},"p":{"x":5.499815840699841,"y":50,"z":2.624255793742964},"hp":10,"elapsedMs":354,"samples":[{"at":"2026-10-19T03:09:52.257Z","p":{"x":5.4998158406997275,"y":50,"z":1.716596216479856},"ground":true,"hp":10},{"at":"2026-10-19T03:09:52.307Z","p":{"x":5.499815840699756,"y":50,"z":1.8681042760512292},"ground":true,"hp":10},{"at":"2026-10-19T03:09:52.359Z","p":{"x":5.499815840699784,"y":50,"z":2.048827715109782},"ground":true,"hp":10},{"at":"2026-10-19T03:09:52.409Z","p":{"x":5.499815840699813,"y":50,"z":2.2455027513683343},"ground":true,"hp":10},{"at":"2026-10-19T03:09:52.460Z","p":{"x":5.499815840699841,"y":50,"z":2.4508873596980867},"ground":true,"hp":10}]}
+CUT Vec3 { x: 6, y: 51, z: 2 } end_stone
+CUT Vec3 { x: 6, y: 50, z: 2 } end_stone
+ACTUAL_STAIR {"at":"2026-10-19T03:09:58.442Z","target":{"x":6,"y":50,"z":2},"p":{"x":6.555529233799855,"y":50,"z":2.4937115215242867},"hp":10}
+CUT Vec3 { x: 7, y: 51, z: 2 } end_stone
+CUT Vec3 { x: 7, y: 50, z: 2 } end_stone
+ACTUAL_STAIR {"at":"2026-10-19T03:10:04.365Z","target":{"x":7,"y":50,"z":2},"p":{"x":7.6303189113194,"y":50,"z":2.4988426485231874},"hp":10}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:04.721Z","start":{"x":7,"y":50,"z":2},"end":{"x":7,"y":50,"z":3},"p":{"x":7.501664724512614,"y":50,"z":3.4962389404049157},"hp":10,"elapsedMs":355,"samples":[{"at":"2026-10-19T03:10:04.415Z","p":{"x":7.617781751562351,"y":50,"z":2.5960374383918525},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.465Z","p":{"x":7.5983993025779535,"y":50,"z":2.7463005835288086},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.515Z","p":{"x":7.575279325675424,"y":50,"z":2.925539050642252},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.565Z","p":{"x":7.550118658529593,"y":50,"z":3.120598043554857},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.617Z","p":{"x":7.523843774510921,"y":50,"z":3.3242950435538043},"ground":true,"hp":10}]}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:13.373Z","start":{"x":7,"y":50,"z":3},"end":{"x":44,"y":50,"z":3},"p":{"x":44.54262100860375,"y":50,"z":3.5627793627981466},"hp":10,"elapsedMs":8651,"samples":[{"at":"2026-10-19T03:10:04.771Z","p":{"x":7.595387965070233,"y":50,"z":3.5293949732339174},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.818Z","p":{"x":7.744560892947276,"y":50,"z":3.547498167158533},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.868Z","p":{"x":7.924009350100724,"y":50,"z":3.5573825110413537},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.919Z","p":{"x":8.11998824623909,"y":50,"z":3.5627793628013547},"ground":true,"hp":10},{"at":"2026-10-19T03:10:04.969Z","p":{"x":8.324992762063221,"y":50,"z":3.5627793628013356},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.019Z","p":{"x":8.53492526623578,"y":50,"z":3.5627793628013165},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.070Z","p":{"x":8.96164075003186,"y":50,"z":3.5627793628012783},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.120Z","p":{"x":9.176535183264406,"y":50,"z":3.562779362801259},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.170Z","p":{"x":9.391867582341959,"y":50,"z":3.56277936280124},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.220Z","p":{"x":9.607439110770885,"y":50,"z":3.562779362801221},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.271Z","p":{"x":9.823141203825662,"y":50,"z":3.562779362801202},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.321Z","p":{"x":10.038914585166152,"y":50,"z":3.562779362801183},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.371Z","p":{"x":10.254726889910643,"y":50,"z":3.5627793628011637},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.421Z","p":{"x":10.470560446833717,"y":50,"z":3.5627793628011446},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.471Z","p":{"x":10.6864056074463,"y":50,"z":3.5627793628011255},"ground":true,"hp":10},{"at":"2026-10-19T03:10:05.522Z","p":{"x":10.902257103673353,"y":50,"z":3.5627793628011064},"ground":true,"hp":10}]}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:13.775Z","start":{"x":44,"y":50,"z":3},"end":{"x":44,"y":50,"z":2},"p":{"x":44.57898207083418,"y":50,"z":2.3439060130711837},"hp":10,"elapsedMs":402,"samples":[{"at":"2026-10-19T03:10:13.424Z","p":{"x":44.57390922179855,"y":50,"z":3.4648548787436804},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.474Z","p":{"x":44.58714512274573,"y":50,"z":3.3134636263954755},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.524Z","p":{"x":44.59052446120571,"y":50,"z":3.1328795185588896},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.574Z","p":{"x":44.58667699774853,"y":50,"z":2.9363561116256474},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.623Z","p":{"x":44.582829534291356,"y":50,"z":2.731129847385631},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.673Z","p":{"x":44.57898207083418,"y":50,"z":2.5211518230561163},"ground":true,"hp":10}]}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:14.126Z","start":{"x":44,"y":50,"z":2},"end":{"x":45,"y":50,"z":2},"p":{"x":45.57055846665062,"y":50,"z":2.437424821089974},"hp":10,"elapsedMs":351,"samples":[{"at":"2026-10-19T03:10:13.825Z","p":{"x":44.675609720460066,"y":50,"z":2.3260709531246166},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.875Z","p":{"x":44.82499606678169,"y":50,"z":2.3326763539979796},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.925Z","p":{"x":45.00318866149918,"y":50,"z":2.3526262464790246},"ground":true,"hp":10},{"at":"2026-10-19T03:10:13.975Z","p":{"x":45.19710946784082,"y":50,"z":2.3798622313778637},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.025Z","p":{"x":45.39961787772924,"y":50,"z":2.4110764227368184},"ground":true,"hp":10}]}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:14.729Z","start":{"x":45,"y":50,"z":2},"end":{"x":45,"y":50,"z":0},"p":{"x":45.590442385933954,"y":50,"z":0.3686239418094005},"hp":10,"elapsedMs":603,"samples":[{"at":"2026-10-19T03:10:14.175Z","p":{"x":45.59992994621416,"y":50,"z":2.3445713756226185},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.226Z","p":{"x":45.61237568919063,"y":50,"z":2.1959391733004305},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.276Z","p":{"x":45.61557997999055,"y":50,"z":2.0168517697355037},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.327Z","p":{"x":45.61198889512532,"y":50,"z":1.8211358262920416},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.378Z","p":{"x":45.608397810260094,"y":50,"z":1.616340700074899},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.427Z","p":{"x":45.604806725394866,"y":50,"z":1.406588340063327},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.477Z","p":{"x":45.60121564052964,"y":50,"z":1.1941293303999965},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.526Z","p":{"x":45.59762455566441,"y":50,"z":0.980192490026806},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.577Z","p":{"x":45.59403347079918,"y":50,"z":0.7654487540860317},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.628Z","p":{"x":45.590442385933954,"y":50,"z":0.5502644531653569},"ground":true,"hp":10}]}
+CONTINUOUS_ACTUAL_LANDING {"at":"2026-10-19T03:10:21.782Z","start":{"x":45,"y":50,"z":0},"end":{"x":75,"y":50,"z":0},"p":{"x":75.51705787917034,"y":50,"z":0.37088532368104},"hp":10,"elapsedMs":7052,"samples":[{"at":"2026-10-19T03:10:14.780Z","p":{"x":45.688441081106255,"y":50,"z":0.3341112303195314},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.830Z","p":{"x":45.83994706384264,"y":50,"z":0.315780414503278},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.880Z","p":{"x":46.020668025589,"y":50,"z":0.30628491372481875},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.931Z","p":{"x":46.21734036587482,"y":50,"z":0.30161349495699513},"ground":true,"hp":10},{"at":"2026-10-19T03:10:14.981Z","p":{"x":46.42272215884318,"y":50,"z":0.3021266196142103},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.032Z","p":{"x":46.63285931297621,"y":50,"z":0.3026397442714254},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.082Z","p":{"x":46.84559289430514,"y":50,"z":0.3031528689286406},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.132Z","p":{"x":47.059744124883046,"y":50,"z":0.3036659935858557},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.182Z","p":{"x":47.27466939195088,"y":50,"z":0.30417911824307087},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.232Z","p":{"x":47.49001728294222,"y":50,"z":0.304692242900286},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.282Z","p":{"x":47.70559592659579,"y":50,"z":0.30520536755750116},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.331Z","p":{"x":47.92130056120295,"y":50,"z":0.3057184922147163},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.382Z","p":{"x":48.13707398687076,"y":50,"z":0.30623161687193146},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.432Z","p":{"x":48.35288497245769,"y":50,"z":0.3067447415291466},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.482Z","p":{"x":48.56871646576045,"y":50,"z":0.30725786618636175},"ground":true,"hp":10},{"at":"2026-10-19T03:10:15.532Z","p":{"x":48.78455915627607,"y":50,"z":0.3077709908435769},"ground":true,"hp":10}]}
+PUT Vec3 { x: 74, y: 50, z: 0 } end_stone
+PUT Vec3 { x: 74, y: 51, z: 0 } end_stone
+ENDING {"state":{"at":"2026-10-19T03:10:23.342Z","p":{"x":75.56189901351792,"y":50,"z":0.5792275812340604},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["snowball",2],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",63],["sand",2],["end_stone",64],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":75,"y":49,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":52,"z":0},"name":"end_stone","full":true},{"p":{"x":76,"y":50,"z":0},"name":"cobblestone","full":true},{"p":{"x":76,"y":51,"z":0},"name":"netherrack","full":true},{"p":{"x":74,"y":50,"z":0},"name":"end_stone","full":true},{"p":{"x":74,"y":51,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":-1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":-1},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:10:23.593Z","p":{"x":75.56189901351792,"y":50,"z":0.5792275812340604},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["snowball",2],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",63],["sand",2],["end_stone",64],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":75,"y":49,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":52,"z":0},"name":"end_stone","full":true},{"p":{"x":76,"y":50,"z":0},"name":"cobblestone","full":true},{"p":{"x":76,"y":51,"z":0},"name":"netherrack","full":true},{"p":{"x":74,"y":50,"z":0},"name":"end_stone","full":true},{"p":{"x":74,"y":51,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":-1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":-1},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-19T03:10:23.846Z","p":{"x":75.56189901351792,"y":50,"z":0.5792275812340604},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["snowball",2],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",63],["sand",2],["end_stone",64],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":75,"y":49,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":52,"z":0},"name":"end_stone","full":true},{"p":{"x":76,"y":50,"z":0},"name":"cobblestone","full":true},{"p":{"x":76,"y":51,"z":0},"name":"netherrack","full":true},{"p":{"x":74,"y":50,"z":0},"name":"end_stone","full":true},{"p":{"x":74,"y":51,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":-1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":-1},"name":"end_stone","full":true}]}
+ACTUAL_75_PICKUP_ROUTE_ADOPTED {"state":{"at":"2026-10-19T03:10:24.099Z","p":{"x":75.56189901351792,"y":50,"z":0.5792275812340604},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["snowball",2],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",63],["sand",2],["end_stone",64],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":75,"y":49,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":52,"z":0},"name":"end_stone","full":true},{"p":{"x":76,"y":50,"z":0},"name":"cobblestone","full":true},{"p":{"x":76,"y":51,"z":0},"name":"netherrack","full":true},{"p":{"x":74,"y":50,"z":0},"name":"end_stone","full":true},{"p":{"x":74,"y":51,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":-1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":-1},"name":"end_stone","full":true}],"scope":"actual5→75 route77nodes,6oractualvisiblecuts, allnormalcontrols; OWtransit notqualified"}
+ACTUAL_75_ROUTE_POST {"state":{"at":"2026-10-19T03:10:24.099Z","p":{"x":75.56189901351792,"y":50,"z":0.5792275812340604},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["snowball",2],["nether_bricks",6],["stone_sword",1],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["crafting_table",1],["stone_shovel",1],["basalt",21],["end_stone",63],["sand",2],["end_stone",64],["end_stone",64],["wooden_pickaxe",1]],"wear":[["stone_sword",2,131],["stone_shovel",5,131],["wooden_pickaxe",21,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":75,"y":49,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":52,"z":0},"name":"end_stone","full":true},{"p":{"x":76,"y":50,"z":0},"name":"cobblestone","full":true},{"p":{"x":76,"y":51,"z":0},"name":"netherrack","full":true},{"p":{"x":74,"y":50,"z":0},"name":"end_stone","full":true},{"p":{"x":74,"y":51,"z":0},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":1},"name":"end_stone","full":true},{"p":{"x":75,"y":50,"z":-1},"name":"end_stone","full":true},{"p":{"x":75,"y":51,"z":-1},"name":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T03:10:24.099Z",
+ "p": {
+  "x": 75.56189901351792,
+  "y": 50,
+  "z": 0.5792275812340604
+ },
+ "hp": 10,
+ "food": 17,
+ "dim": "the_end",
+ "ground": true,
+ "inv": [
+  [
+   "sandstone",
+   1
+  ],
+  [
+   "cobbled_deepslate",
+   14
+  ],
+  [
+   "blackstone",
+   30
+  ],
+  [
+   "snowball",
+   2
+  ],
+  [
+   "nether_bricks",
+   6
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   7
+  ],
+  [
+   "cracked_stone_bricks",
+   1
+  ],
+  [
+   "stone_bricks",
+   9
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "stone_shovel",
+   1
+  ],
+  [
+   "basalt",
+   21
+  ],
+  [
+   "end_stone",
+   63
+  ],
+  [
+   "sand",
+   2
+  ],
+  [
+   "end_stone",
+   64
+  ],
+  [
+   "end_stone",
+   64
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ]
+ ],
+ "wear": [
+  [
+   "stone_sword",
+   2,
+   131
+  ],
+  [
+   "stone_shovel",
+   5,
+   131
+  ],
+  [
+   "wooden_pickaxe",
+   21,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (75.6, 50, 0.6) in the_end, health 10/20, food 17/20, alive

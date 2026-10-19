@@ -1,0 +1,8 @@
+// Actual stable landing plus ordinary horizontal recenter onto a prepared supported ledge.
+async function actualPreparedIndex(route,guard){
+ guard.beginEscape('actualstableledge');bot.pathfinder.setGoal(null);bot.clearControlStates();let stable=0,lastY=null;
+ for(let k=0;k<36;k++){guard.escape('actualstableledgewait');const p=bot.entity.position;const ok=bot.entity.onGround&&Math.abs(p.y-Math.round(p.y))<.03;if(ok&&lastY!==null&&Math.abs(lastY-p.y)<.01)stable++;else stable=0;lastY=p.y;if(stable>=3)break;await sleep(1);}
+ if(stable<3||!bot.entity.onGround)throw Error('actuallandingnotstable');let q=bot.entity.position.floored(),idx=route.findIndex(r=>r.equals(q));
+ if(idx<0){const choices=route.map((r,i)=>({r,i,dist:r.offset(.5,0,.5).distanceTo(bot.entity.position)})).filter(a=>Math.abs(a.r.y-bot.entity.position.y)<.03&&a.dist<=1.25&&full(a.r.offset(0,-1,0))&&[a.r,a.r.offset(0,1,0)].every(c=>['air','cave_air'].includes(bot.blockAt(c)?.name))).sort((a,b)=>a.dist-b.dist);if(!choices.length)throw Error('no actual prepared landing candidate');const chosen=choices[0];console.log('ACTUAL_OFFROUTE_RECENTER_BEGIN',JSON.stringify({at:new Date().toISOString(),state:state(),target:chosen.r,dist:chosen.dist,floor:bot.blockAt(chosen.r.offset(0,-1,0))?.name}));await flat(chosen.r.offset(.5,0,.5));guard.escape('afteractualphysicalrecenter');q=bot.entity.position.floored();idx=route.findIndex(r=>r.equals(q));console.log('ACTUAL_OFFROUTE_RECENTER_COMPLETE',JSON.stringify({at:new Date().toISOString(),state:state(),idx}));}
+ if(idx<0||!bot.entity.onGround||Math.abs(bot.entity.position.y-route[idx].y)>.03)throw Error('actualreconciledpostcondition');console.log('ACTUAL_RECONCILED_INDEX',JSON.stringify({at:new Date().toISOString(),state:state(),idx}));return idx;
+}

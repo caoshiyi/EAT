@@ -1,0 +1,51 @@
+[sandbox] program #212 on p2: 0 s
+--- output ---
+ENVIRONMENT G28-2 surface20HP/shovel; ordinary plant interaction with current unobstructed eye ray/reach, no cursor-shape inference
+FAILURE Error: actualsourcechanged {"at":"2026-10-19T02:25:01.188Z","p":{"x":5.930880799477161,"y":66,"z":-27.976416258811156},"hp":7.666664123535156,"food":17,"dim":"overworld","ground":true,"inv":[["stick",2],["spruce_planks",1],["wooden_shovel",1]],"wear":[["wooden_shovel",0,59]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+--- returned ---
+{
+ "at": "2026-10-19T02:25:01.189Z",
+ "p": {
+  "x": 5.930880799477161,
+  "y": 66,
+  "z": -27.976416258811156
+ },
+ "hp": 7.666664123535156,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   2
+  ],
+  [
+   "spruce_planks",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_shovel",
+   0,
+   59
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (5.9, 66, -28) in overworld, health 7.7/20, food 17/20, alive

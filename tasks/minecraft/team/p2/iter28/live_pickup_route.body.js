@@ -1,0 +1,7 @@
+console.log('ENVIRONMENT LIVE physicalrecipientroute50home→5/50/0 viaexistingoldcoveredpath, no75claim/attack; whole03:02–03:05');
+const guard=makeOperationGuard(bot);const forward=l=>guard.forward(l);const paths=[];const x=[v(-11,50,-11)];for(let a=-10;a<=5;a++)x.push(v(a,50,-11));const z=[v(5,50,-11)];for(let a=-10;a<=0;a++)z.push(v(5,50,a));paths.push(x,z);
+try{if(bot.game.dimension!=='the_end'||bot.health!==10||!bot.entity.position.floored().equals(x[0])||count('snowball')!==2||!audit().every(a=>a.full))throw Error('actualrecipient sourcechanged');console.log('LIVE_RECIPIENT_SOURCE',JSON.stringify(state()));
+ for(const path of paths){let i=0;while(i<path.length-1){let j=i;while(j<path.length-1&&[path[j+1],path[j+1].offset(0,1,0)].every(q=>['air','cave_air'].includes(bot.blockAt(q)?.name))&&full(path[j+1].offset(0,-1,0)))j++;if(j>i){await continuousWalkSegment(path.slice(i,j+1),{escape:forward});i=j;}else{await stepStair(path[i+1]);i++;}}}
+ await seal(true);console.log('ACTUAL_END_PICKUP_ADOPTED',JSON.stringify({state:state(),faces:audit(),scope:'ACTUAL physical home-to5/50/0 ONLY; platform75 route NOT qualified'}));
+}catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));try{await seal(true);}catch(f){console.log('RECOVERY_FAILURE',String(f),JSON.stringify(state()));}}
+finally{console.log('ACTUAL_PICKUP_POST',JSON.stringify({state:state(),faces:audit()}));guard.close();stop();}return state();

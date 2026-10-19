@@ -1,0 +1,4 @@
+console.log('ENVIRONMENT LIVE actual5/50/0 reached11601; recenterphysicalbeforeseal; no platformrouteclaim');
+try{if(bot.game.dimension!=='the_end'||bot.health!==10||!bot.entity.position.floored().equals(v(5,50,0)))throw Error('actualpickupsourcechanged');console.log('ACTUAL_PICKUP_PRE',JSON.stringify({state:state(),faces:audit()}));await flat(v(5.5,50,.5));await seal(true);console.log('ACTUAL_PICKUP_PHYSICAL_ADOPTED',JSON.stringify({state:state(),faces:audit(),scope:'P2 actualprotectedrecipient5/50/0; actualhometube27mtraversed; Endplatformroute remainsunqualified'}));const cols=[];for(let x=5;x<=100;x+=5){const layers=[];for(const y of[49,50,51,52,57,58,59,60])layers.push([y,bot.blockAt(v(x,y,0))?.name]);cols.push([x,layers]);}console.log('ACTUAL_EAST_ROW_MODEL_ONLY',JSON.stringify(cols));}
+catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));}
+finally{stop();}return state();
