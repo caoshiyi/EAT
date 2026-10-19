@@ -1,3 +1,23 @@
+# FINAL SUPERSESSION
+
+See FINAL_HANDOFF.md forself-containedcurrentclosure. Objectiveunmet, ONEnewLIVEdeath/oldkitLOST, final12177P2closed145.7/71/972.3/14HP6food/minimalkit. Thisprovisionalwasmateriallystaleatpublicationafterdeath; correctionafter85, notontimeaccuratehandoff.
+
+---
+
+# MATERIAL CORRECTION — 2026-10-19T10:43:12.170399+00:00
+
+Dragon UNMET. P2LIVEdeath10:37:02 Creeper at148.2/63/1463 supersedes ALLretainedkit/food/Snow26/current1383claims below. Actual12147 ended10:36:51.928 exposed145.50/64/1461.5/14.57HP19food afterhealthlossandboxmaterialexhaustion, nofullending. Death10:37:02 followed. Initialhealthloss causeunsampled, laterCreeperkillerdoesnotidentifyit. Droppositions/loadedage/recoverabilityUNKNOWN; deathpointonly, noexpiryclaim. CurrentLIVEemptyP2respawn20HP20food; laststatus10:42:21 at13.5/74/-19.6 DURING12152 minimalhandofftravel toP4. No originalkitcarried.
+
+The provisionalfilewaspublishedbefore10:41 butafterthisdeath, withoutcheckingcompleted12147/currentstatus. Itsno-newdeath/currentmotionclaimsWERESTALEATPUBLICATION. ThiscorrectionisAFTER85min; doNOTclaimanaccuratecompleteprovisionalwasontime. Originalbodyworldandnewonecannotbeconflated.
+
+Deathreconcile: opening197 + ONEnewLIVEP2=198observed, playerP2total61; P1/P3/P4noNewLIVEdeathincurrentrecords. Evalclosuremandatory10:56 andsavedstatsmaylag. CurrentSBG4retainedoldkitispracticecopyonly, noassetsresurrection.
+
+Changedexecution/recoverydecision: NOwholekit/Snow rebuild/replay. Onefinite minimalhandoff/kit-rescue attempt through10:56; P4maygiveactualWoodSword/Shovel/5Dirt/3Planks/3Sticks fromsealed49/66/113 onlyifphysicallyvisible/reachablepeerwithin3. P2outstanding12152handoffprogram(PTY14775), nooverlappingP2Live/SB/chat. CurrentNoDigNoDrop2 path stuckontreecanopy; inspectactualendingbeforechangedcontrolleddescent/path. Ifresourcesreceived, actualcarriedfund/food/bodygate; targetcorpse148.2/63/1463onlyactualdropreceiptcounts. DoNOTrebuildentirefailedvoyageunchanged. Fixshoreendingdependency: supportedSand3deepcanbeusedwithNONFALLINGDirt/Tablecap; oldchosenpolicyexcludedSandandmaterial-zeroBOXfailed. Onendingfailurewiththreats retreat/moveinstead ofstationaryexposedreturn. No newtestofthiscaseyet.
+
+Allold successes belowremainDATEDhistoryonly. Livefive-minute837mrunreallyretainedoldkitbeforelaterloss; itisnotcurrentcapability. Continueusefulworkto10:56 thenfreshclosureeval/events/body/ownedcommit/nopush.
+
+---
+
 # Iteration32 complete provisional handoff — 10:37 UTC October19
 
 Objective UNMET: dragon not defeated; no live End32 entry, crystal removal, or Dragon damage. Useful execution continues until fixed10:56; update material changes afterward. Provisional published before10:41(85min fromconservative09:16launch). OriginalplannedEndadmission10:20missed, notreset. No new goal/proxy score.

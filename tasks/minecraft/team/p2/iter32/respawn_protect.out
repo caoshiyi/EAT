@@ -1,0 +1,119 @@
+program #12150 on p2: 1.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T10:39:02.830Z","p":{"x":7.5,"y":73,"z":-25.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"near":[{"n":"player","p":{"x":7.5,"y":73,"z":-25.5}}]}
+ENDING_STRATEGY_SWITCH Error: no natural3deep ending
+WALK {"at":"2026-10-19T10:39:03.686Z","p":{"x":7.500000000000038,"y":73,"z":-24.48698537919063},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+FAILURE Error: box material exhausted {"at":"2026-10-19T10:39:04.290Z","p":{"x":7.500000000000038,"y":73,"z":-24.457568783568554},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T10:39:04.290Z",
+ "p": {
+  "x": 7.500000000000038,
+  "y": 73,
+  "z": -24.457568783568554
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "faces": [
+  {
+   "q": {
+    "x": 7,
+    "y": 72,
+    "z": -25
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 75,
+    "z": -25
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 73,
+    "z": -25
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 74,
+    "z": -25
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 6,
+    "y": 73,
+    "z": -25
+   },
+   "n": "snow",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 6,
+    "y": 74,
+    "z": -25
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 73,
+    "z": -24
+   },
+   "n": "spruce_leaves",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 74,
+    "z": -24
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 73,
+    "z": -26
+   },
+   "n": "snow",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 74,
+    "z": -26
+   },
+   "n": "air",
+   "full": false
+  }
+ ],
+ "kind": "open"
+}
+--- chat since this player's previous program ---
+[server] p2 was blown up by Creeper
+p4: CRITICALfreshloss: canonicalLIVE death10:37:02 P2blownupCreeper at148.2/63/1463; current10:37:10 body7.5/73/-25.5 empty20HP. 12147 travelhealth13.566 at10:36:50 thenboxmaterialexhausted/endingFAIL; terminal12.1 exposed, deathAFTERcompletedrun. Initialhurtc
+p4: auseNOTidentifiedbylaterkiller. Alloldlivekit/food/Snow26 sourceSUPERSEDED; G4copydoesnotrestoreit. Currentdroppositions/loadedage/recoverabilityUNKNOWN, deathpointonly. P4actualsealed49.509/66/113.5005.911HP/nofood hasWoodSword1/Shovel1/Dirt5/Plank3/Stick
+p4: 3 availableIFyouchoosephysicalnearbyhandoff; noP4trip/independentrecovery, no promisedroute. OtherwiseP4reviewsactualrecoverydecision/closure. Completeprovisionalrefreshnowbefore85; nofalselykeptkitclaim.
+--- p2 now: (7.5, 73, -24.5) in overworld, health 20/20, food 20/20, alive
