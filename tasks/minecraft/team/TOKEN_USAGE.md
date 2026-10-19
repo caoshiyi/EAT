@@ -150,3 +150,5 @@ Iteration34 P4 late minute40 checkpoint —2026-10-19 14:40UTC: token usage unav
 Iteration34 P4 Snow16/courier checkpoint —2026-10-19 15:32UTC: token usage unavailable from authorized accessible session-history JSON. No estimate. Actual snow1 small test->16->buried ending->HOME->Nether retained; old Phantom loss and failed recipe/quarry gates preserved. No Endrecipient credit yet; stationTable pending, currentwork in WIP_CURRENT.md.
 
 Iteration35 P4 route checkpoint —2026-10-19 15:44UTC: token usage unavailable: permitted available session history does not expose per-retained-commit token counters. No estimates or prohibited location inspection. Retained owned records include inherited failure reconciliation, small actual descent test and accepted P3 receipt/use chain.
+
+Iteration35 P4 End recipient checkpoint —2026-10-19 15:50UTC: usage unavailable because permitted available session-history evidence exposes no per-commit token counters. No estimate. Retained records include actual stronghold checkpoint, End entry, default-timeout helper bug/fix, native one-snow recipient confirmation and bulk recipient inventory delta; shot use still pending.

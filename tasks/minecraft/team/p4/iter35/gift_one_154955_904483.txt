@@ -1,0 +1,113 @@
+program #13495 on p4: 1.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:49:56.007Z","p":{"x":3.482311594506916,"y":55,"z":-14.499838675585382},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["snowball",16,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18083,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+DROPPED snowball 1 {"at":"2026-10-19T15:49:56.462Z","p":{"x":3.482311594506916,"y":55,"z":-14.499838675585382},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18103,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: 4, y: 55, z: -15 } success
+ROUTE_WORLD {"at":"2026-10-19T15:49:57.165Z","p":{"x":4.314602776257729,"y":55,"z":-14.49983867558548},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18123,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+DONOR_RETAINED {"at":"2026-10-19T15:49:57.165Z","p":{"x":4.314602776257729,"y":55,"z":-14.49983867558548},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18123,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+ENDING {"at":"2026-10-19T15:49:57.165Z","p":{"x":4.314602776257729,"y":55,"z":-14.49983867558548},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18123,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":-15},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":-15},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":5,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":4,"y":55,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-16},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-16},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T15:49:57.316Z","p":{"x":4.314602776257729,"y":55,"z":-14.49983867558548},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18123,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":-15},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":-15},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":5,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":4,"y":55,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-16},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-16},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T15:49:57.466Z","p":{"x":4.314602776257729,"y":55,"z":-14.49983867558548},"hp":20,"food":20,"ground":true,"inv":[["stick",2,null],["spruce_planks",1,null],["netherrack",10,null],["cracked_stone_bricks",3,null],["stone_bricks",3,null],["end_stone",2,null],["snowball",15,null],["stone_shovel",1,28],["wooden_pickaxe",1,6],["dirt",6,null],["stone_pickaxe",1,76],["cobblestone",5,null],["crafting_table",1,null],["basalt",27,null],["blackstone",10,null]],"time":18123,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":4,"y":54,"z":-15},"n":"end_stone","full":true},{"q":{"x":4,"y":57,"z":-15},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":5,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":55,"z":-15},"n":"air","full":false},{"q":{"x":3,"y":56,"z":-15},"n":"air","full":false},{"q":{"x":4,"y":55,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-14},"n":"end_stone","full":true},{"q":{"x":4,"y":55,"z":-16},"n":"end_stone","full":true},{"q":{"x":4,"y":56,"z":-16},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T15:49:57.616Z",
+ "p": {
+  "x": 4.314602776257729,
+  "y": 55,
+  "z": -14.49983867558548
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   2,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "netherrack",
+   10,
+   null
+  ],
+  [
+   "cracked_stone_bricks",
+   3,
+   null
+  ],
+  [
+   "stone_bricks",
+   3,
+   null
+  ],
+  [
+   "end_stone",
+   2,
+   null
+  ],
+  [
+   "snowball",
+   15,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   28
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "dirt",
+   6,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   76
+  ],
+  [
+   "cobblestone",
+   5,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "basalt",
+   27,
+   null
+  ],
+  [
+   "blackstone",
+   10,
+   null
+  ]
+ ],
+ "time": 18123,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (4.3, 55, -14.5) in the_end, health 20/20, food 20/20, alive
