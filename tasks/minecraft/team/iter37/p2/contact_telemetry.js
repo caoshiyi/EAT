@@ -1,5 +1,7 @@
 // Read-only optional instrumentation. Install BEFORE combat listeners so pre-event ring
 // is independent of their response. Call detach() in bounded caller's finally.
+// Do NOT dump full events/rings: arena can truncate the entire remainder.
+// Save to global under the recipient's own key; use contact_compact.js after ENDSTATE.
 function installContactTelemetry(bot, limit=80) {
   const ring=[], events=[];
   const now=()=>{const p=bot.entity.position,e=Object.values(bot.entities).find(e=>e.name==='ender_dragon');return {t:Date.now(),hp:bot.health,p:[p.x,p.y,p.z],v:[bot.entity.velocity.x,bot.entity.velocity.y,bot.entity.velocity.z],yaw:bot.entity.yaw,pitch:bot.entity.pitch,using:!!bot.usingHeldItem,handFlags:bot.entity.metadata?.[8],shieldWear:bot.inventory.slots[45]?.name==='shield'?bot.inventory.slots[45].durabilityUsed:null,dragon:e?{id:e.id,p:[e.position.x,e.position.y,e.position.z],hp:e.metadata?.[9],phase:e.metadata?.[16]}:null};};
