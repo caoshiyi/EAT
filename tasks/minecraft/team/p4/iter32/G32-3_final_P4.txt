@@ -1,0 +1,6 @@
+== #338 2026-10-19T09:26:04 p4 role=execution_partner iter=32 0.4 s
+console.log('SOURCE',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])}));await bot.waitForTicks(10);return {at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])};
+-- output --
+SOURCE {"at":"2026-10-19T09:26:04.508Z","p":{"x":75.5478864501463,"y":64,"z":73.53543458621749},"hp":17.079307556152344,"food":17,"inv":[["dirt",3],["sweet_berries",2]]}
+-- returned --
+{"at": "2026-10-19T09:26:04.909Z", "p": {"x": 75.5478864501463, "y": 64, "z": 73.53543458621749}, "hp": 17.079307556152344, "food": 17, "inv": [["dirt", 3], ["sweet_berries", 2]]}

@@ -42,3 +42,27 @@ Tools p4cmd.py oneownnonblockinglockacrossworldsinclchat, statuses+syntaxcheck, 
 Continueusefulsupportuntilowner10:56(100min)/freshclosureinspect10:56–11:01(own10511:02). Minute20jointreviewpublished09:36:40;40jointreviewstillDUE09:56–57. ThiscompleteprovisionalisBEFORE85deadline10:41, notendofwork. Updatewithmaterialchangesandfreshfinaleval/status/deaths/decisiverecords. No closuredependentononelastcommand.
 
 Constraints: P4onlyLIVE/SB; P2owneronlyplaysP2;p1/p3unplayed; noagents. Requiredfilesreadfullywithboundedrereadsafterclipping. NoENCOUNTER/excluded17–19/internet/rawpackets/server/.work/toolsedits/remotepush. Onlyownedpathsmodified. Lastcheckpoint38cee6ce09:41; currentcriticalfailuresandprovisionalcheckpointfollows.
+
+## Minute40 joint review —09:56:06UTC publishedLIVE12118
+
+Actuallyused: jointfood2/P2nextactualfoodrestoration; P2direct24berrybatchthenprotectedheal20/retained14food; Snow26/livekit; soilendingandportableiceBOX/fullmaterialreclaim. P2actualcurrent12116grid distinguishesWATER61/62underplanned155/63/315 fromlandtarget, ratherthanrepeatwalkpost. SB342 Spiderkillreviewedseparately; liveSwordbranchnotreachedinthechangedlandlegs. Actualfulljourney/strongholddescent/newbed142/currentportal/Endarrival/crystals/dragon damage/deathremainmissing. No End32/scoreeffect.
+
+AllocationCHANGEDafterP4food30failure: P2directfood/currentbodyreceipts; P4sealedlowHP/entryhistoryreview/resets/independentchecks. Entryreviewactualdecisionadopted11478(newbed142 target); physicalarrivaladoptiontestSTILLPENDING. Original09:31handoffgate/09:45food30gatefailed; no deadline reset. P2routegate09:50onlypartialprogress/actual~311mZ notstronghold; current~1900mremaininggeometricnorthsouthdistanceisnotrouteproof.
+
+G32-3 requestedP2at09:55:18, allSBidle(statusfullycaptured) andG2lastP2/P4completedraws/events preserved beforecopy. NewwetPF/nativefloat→landCAP interface mustactuallyrunandendbeforeliveadoption/scaling; noboatcontrolchainreopened.
+
+10:10actualtransferappend: LIVE12122 failedactualreclaimfunding(9matvsSB13), thenfallbackexhaustion9/10faces; wetbranchUNREACHED. P4Table-roofproposal12126 wasstaleuponpublication(10:05:56 afteractual12125ending10:05:25), explicitlywithdrawn12127 andretiredruntime beforeaction; neverP2executed, noTableeffectcredited. P4shouldrefreshactualbody/programslatestatpublication, sourceguarddoesnotexcuseobsoletework. CompletedLIVE12125 wholewet+carved-bankcase10:04:53–10:05:25 ACTUALPASS at177/63/349/TENFULL20HP/14berries/Snow26. SB345priorqualifiedendingcomponent; SB343wholeendingfailurestaysfailed. Subsequentforwardprogressreportedstatus114/64/460/20HP/food20/13berries awaitscompletedrecordreview. Allold160repair/proposalsSTALE.
+
+
+# Iteration32 material status —10:16UTC (work continues)
+
+Objectiveunmet/noLIVEEnd32orDragon damageverified. OpeningofficialSAVEFAILED LAST-SAVED0dragon/11milestones/197deaths; no newLIVE/SBdeaths throughlastdatedcanonicalcapture. ActualP4audit12131 at10:13:06.404/.505/.705: same49.509/66/113.500pod,5.911HP17food/nofood,TENFULL/all7controlsfalse/goalnull. Review/resetroleonly; oldhealthyfoodbodyretired. NoP4runinSB/LIVEoutstanding.
+
+P2 actualLIVE12125 wet+carvedbanktransferPASSED10:04:53→10:05:25 at177/63/349/TENFULL20HP14berries/Snow26. Successor12128SOURCE10:08:04.169 retainedsamebody/kit/food; longlegactual114.501/64/460.499TENFULL20HP20food13berries10:09:10.132. New12130nextlegSOURCE20HP20food13berries→158.526/78/531.521TENFULL13.266HP/berries12 at10:11:52.881; ONEactualLIVEattackSkeleton9262/Swordwear1, noHurt/deadobserver/killproof. Initialhurtcause/timeunsampled; firstlowerHPobserved17.566atDEFENSE_ATTACK41.347, furtherdamagebeforeburial. P2sealedhealnow20HP19food/berries7; newSkeleton-chase/escape-bufferexperimentG4, actualtestpending.
+
+G32-4 reset10:15:06 total23.5s/copy0.9swithin06–29.5exactinstantunknown. AllSBidle+G3completedrawspreservedbeforecopy. NewSBP2matchesLIVEhealedpod158/78/531/20HP/Berries7/Snow26; P4SBcopiesLOWHPcurrentpod. Noactivetestreplaced. G3wet343movementyes/endingFAIL,345carvedendingPASS; LIVE12122fundingfailedBEFOREwetbranch/potentialending9faces, later12125actualtransferresolved. UnexecutedP4table-roofsnippetpublishedafter12125haddeparted wasSTALE, explicitlyretired12127/runtimeguardthrows; originalarchivedretired/ andneverP2executed. NoTableeffectcredit.
+
+20minjointreview09:36:40and40min09:56:06fulfilled; completeindependentprovisionalpublished09:53:37(filemtimeverified)/checkpoint e0b1b065, before85deadline10:41. Currententrieswillberefreshedagainby85. Continueusefulsupportthroughowner10:56, finalhandoff/events/eval/decisiveLIVEinspect10:56–11:01; own105ends11:02. Noearlyfinal. ENTRY_ADMISSION.md/entry_review/actual16/20/28historyready; owneradoptednewbed142decision, CURRENTphysicaldescent/bed/portal/Endstep97/75receiveradmissionPENDINGarrival. AdditionalhistoricalOWportal163/-26/2230→144/-26/2241→-33documented; NOcurrentNetherdetourqualified.
+
+Actualfood2handoff/recipientusepassedlate; original09:31handoffwholegateand09:45P4food30gateFAILED/retired. P2directfood24replacedP4supplydependency. No deadline reset/nosandboxgainscount. Current~1700mgeometricseparationtostrongholdisnotatraveledroute. Allfailures/sourcecorrectionsretainedbelow/PROVISIONAL_HANDOFF.md.
+
