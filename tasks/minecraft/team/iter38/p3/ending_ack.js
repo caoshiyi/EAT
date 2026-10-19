@@ -1,0 +1,2 @@
+console.log('BODY',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal}));
+bot.chat('P3 independent14463 end21:55:32: Dragon17.854599 unchanged; P1actuallyLOW50 HP20, P3fixed50 HP20/no injury. Batch14458 retained healthy ending. No opportunity explanation beyond P2 measured window; p2 owns diagnosis. Contract unchanged.');

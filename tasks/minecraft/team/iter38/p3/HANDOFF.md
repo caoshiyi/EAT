@@ -1,0 +1,9 @@
+# P3 iteration38 — current 21:53 UTC
+Only p3 controlled. Deadline 23:51:42Z per p1 chat14025. Objective incomplete.
+Opening native14455 at21:52:17: dragon17.854598999023438 phase3, P1/P2/P3 HP20. Own (-4.556424,50,4.500062), food20, grounded, controls{}, goalnull. Roof52/floor49 E and all six side faces E; North(-5,y50/51,z3) AIR (8/10 enclosure). Inventory E123/C45/Wood5/Table2/slab3/snow9, no tools. Arena status no active programs at opening.
+Contract proposed14023, P1 continuation14025 retains field52.5/support/escape/P3 lowbait; no shared edits planned. P1 primary axe combat, p2 opportunity investigation, coordinator official evaluator. P3 verifies settled effects and endings, provides requested practical support. Do not duplicate p2 geometry watchers.
+Numerical correction to iter37 p3 stale opening summary: canonical P1#14411 ended34.354599->27.604599 THREE sword hits (6.75), not29.854599. Canonical#14436 three axe hits27.604599->17.854599 (9.75). Iter37 total52.354599->17.854599 =34.5HP, 11 sword hits +3 axe hits =14. Last14452 no additional HP damage at this opening.
+No fresh official score yet; coordinator owns evaluation. Historical official0/11 had save refusal; preserve freshness warnings.
+Files inspect.js actually executed14455; watch30.js reduced from proven prior watcher, pending small qualification. Initial shell chained rg missing iter38 stopped before status; recovered separate commands. Overbroad config read produced truncation; use exact current sheet thereafter.
+
+21:56 update: #14463 actual native end21:55:32 HP17.854599/P1LOW50HP20/P3fixed20. P1 batch14458 retained healthy ending; next14466 live. P2I1 zero <=3m opportunities90s, not mechanism failure. Contract14027 retained. Opening official0/11, save refused/LAST-SAVED; coordinator next22:12/apparentvictory.
