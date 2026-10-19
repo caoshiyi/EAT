@@ -1,0 +1,382 @@
+program #11504 on p1: 0.4 s
+--- output ---
+P1_CLOSING_AUDIT {"at":"2026-10-19T01:20:45.692Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"window":false,"inventory":[["dirt",1]],"shell":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}
+P1_CLOSING_AUDIT {"at":"2026-10-19T01:20:45.798Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"window":false,"inventory":[["dirt",1]],"shell":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}
+P1_CLOSING_AUDIT {"at":"2026-10-19T01:20:45.948Z","p":{"x":0.5620620120488068,"y":51,"z":-29.50050049685977},"hp":8.333332061767578,"food":17,"dimension":"overworld","ground":true,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":false,"window":false,"inventory":[["dirt",1]],"shell":[{"p":{"x":0,"y":50,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":53,"z":-30},"name":"grass_block","full":true},{"p":{"x":1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":51,"z":-30},"name":"stone","full":true},{"p":{"x":-1,"y":52,"z":-30},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-29},"name":"stone","full":true},{"p":{"x":0,"y":51,"z":-31},"name":"stone","full":true},{"p":{"x":0,"y":52,"z":-31},"name":"stone","full":true}]}
+--- returned ---
+{
+ "rows": [
+  {
+   "at": "2026-10-19T01:20:45.692Z",
+   "p": {
+    "x": 0.5620620120488068,
+    "y": 51,
+    "z": -29.50050049685977
+   },
+   "hp": 8.333332061767578,
+   "food": 17,
+   "dimension": "overworld",
+   "ground": true,
+   "controls": {
+    "forward": false,
+    "back": false,
+    "left": false,
+    "right": false,
+    "jump": false,
+    "sprint": false,
+    "sneak": false
+   },
+   "goal": false,
+   "window": false,
+   "inventory": [
+    [
+     "dirt",
+     1
+    ]
+   ],
+   "shell": [
+    {
+     "p": {
+      "x": 0,
+      "y": 50,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 53,
+      "z": -30
+     },
+     "name": "grass_block",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    }
+   ]
+  },
+  {
+   "at": "2026-10-19T01:20:45.798Z",
+   "p": {
+    "x": 0.5620620120488068,
+    "y": 51,
+    "z": -29.50050049685977
+   },
+   "hp": 8.333332061767578,
+   "food": 17,
+   "dimension": "overworld",
+   "ground": true,
+   "controls": {
+    "forward": false,
+    "back": false,
+    "left": false,
+    "right": false,
+    "jump": false,
+    "sprint": false,
+    "sneak": false
+   },
+   "goal": false,
+   "window": false,
+   "inventory": [
+    [
+     "dirt",
+     1
+    ]
+   ],
+   "shell": [
+    {
+     "p": {
+      "x": 0,
+      "y": 50,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 53,
+      "z": -30
+     },
+     "name": "grass_block",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    }
+   ]
+  },
+  {
+   "at": "2026-10-19T01:20:45.948Z",
+   "p": {
+    "x": 0.5620620120488068,
+    "y": 51,
+    "z": -29.50050049685977
+   },
+   "hp": 8.333332061767578,
+   "food": 17,
+   "dimension": "overworld",
+   "ground": true,
+   "controls": {
+    "forward": false,
+    "back": false,
+    "left": false,
+    "right": false,
+    "jump": false,
+    "sprint": false,
+    "sneak": false
+   },
+   "goal": false,
+   "window": false,
+   "inventory": [
+    [
+     "dirt",
+     1
+    ]
+   ],
+   "shell": [
+    {
+     "p": {
+      "x": 0,
+      "y": 50,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 53,
+      "z": -30
+     },
+     "name": "grass_block",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 51,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": -1,
+      "y": 52,
+      "z": -30
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -29
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 51,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    },
+    {
+     "p": {
+      "x": 0,
+      "y": 52,
+      "z": -31
+     },
+     "name": "stone",
+     "full": true
+    }
+   ]
+  }
+ ],
+ "note": "Actual current readonly samples, not future safety or objective completion"
+}
+--- chat since this player's previous program ---
+p2: P1sourcebranchretirementaccepted: nofundedSnow/foodcourierthisiteration; doNOTrestartsource. GrantP1 ONE<=2sreadonlyLIVEclosingaudit NOW, startwindowends01:19:00/wholeends01:19:10 thenP2reclaimsafteridle; noSBdependencyfromLIVEaudit. P4G8freshresetstillreq
+p2: uested16:18, priorG7results/rescuepreserved/NOobserverdependencies/allP2runscomplete; coordinateREADYannouncement afterP1briefaudit ends/releaseorwindowexpiry. P2firstsurface_loop.js compiled, small10m+10mtriangle first (noSnow/attack), whole8minfromG8read
+p2: yincludesnextobjectiveattempt. P2provisionalhandoffbeingpublishedbefore24:26.
+p4: G27-8 READY freshLIVE50/10/Snow3/endstone92, exactcopy0.6s total17.5s unknowninstant; priorusersreleased/results saved/allidle. P1 requested1s LIVEaudit token GRANTEDNOW startwindowuntil01:22:15, auto-releaseaftercompletedidle; P2nextafterreleaseORexpired+
+p4: allidle. P2eightmin surfacegate originalready~01:19 remains~01:27, notresetbythisslot. P4correctedownreadonlyaudit20HPempty/16FULL/fourAIR; initialaxis-samplingmistakerawpreserved/no physicalchange. MELEE_PUBLIC_API.md containsactual167/168/172/173failurea
+p4: udit+guardlimits; no ordinaryattack yet.
+--- p1 now: (0.6, 51, -29.5) in overworld, health 8.3/20, food 17/20, alive

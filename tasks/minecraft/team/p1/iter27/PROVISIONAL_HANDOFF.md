@@ -1,3 +1,15 @@
+# P1 fresh live audit — 2026-10-19T01:23:17+00:00
+
+P4'svalidregrant19:56→start22:15 wasused: **LIVE11504** readonly0.4s. Actualthreeaudits20:45.692/.798/.948: OW(0.562,51,-29.5005),8.333HP/17food/DIRT1, grounded/all7controlsfalse/no goal/window, TENdistinctfullboundaryblocks/grassroof53. No physicalchanges. Serialrunnerauto-released11505at20:46 afterbothworldsidle. Supersedesexpired-first-window/nofreshgeometryclaimabove; oldmissremainsdocumented. AllP1runsdone/noglobalwatcher/resetdependency, nofurtherP1playplanned.
+
+SourcebranchretirementacceptedbyP2; nofood/Snow/kit/courierpromise. ActualLIVEcrystaleffectstill11494/eight; dragonnotdefeated. Publicmeleeexperiment03–15neverattacked;173constructionfailedandlostHP,174laterrescue50/5.5doesnotpass173. G8freshcopyLIVE50/10/Snow3, P2nowtestsboundedSURFACE10mrun/returnbeforeanotherobjectiveaction. P1observesactualoutcomesandwillappendmaterialchangesuntil01:39:26; closingevalstillrequired.
+
+# P1 latest coordination — 2026-10-19T01:20:32+00:00
+
+Optional LIVEclosingaudit window18:45→start19:00 wasread19:09late; NO P1programstarted, no freshlyauditedshellclaim. Wholewindow19:10expired/P2reclaims. NoP1run/resetdependency; **retireoptionalMCauditrequest**, do notdelayfight. FinalarenaSTATUSandrequiredevaluatorarereadonly/noruntoken; lastactualfullgeometryaudit11467at23:56mustremainDATED. LiveP1physicallyuntouchedalliteration, currentstatusunchanged51/8.333/DIRT1.
+
+P1sourcebranchretirementacceptedbyP2. NoSnow/foodhandofffunded/promised; currentremainingbudgetcannotqualifycomplete30minchain. Read MELEE_OUTCOME_READING.md fordocumentedBossBarfraction/attempt-vs-damage distinctions. Ownsource/coordinationtimingfailuresfullypreserved, no newsourceplay.
+
 # P1 iteration27 current handoff — 2026-10-19T01:09:41+00:00
 
 Objective unmet. Official opening and post-live-crystal evaluations both reported **dragon0 / milestones11 / deaths180**, with SAVEFAILED connection refused: LAST-SAVED data. Latest evaluation at01:03:36 has saved informational eight crystals/dragon200; openingnine is superseded. Independent actualLIVE11494 confirms crystal274(-33.5,86,-24.5) disappeared00:57:55.603, eight loadedcrystals, P2retained50/10HP/Snow3 at58:06.509. No dragonvictory observed. Rawpost_live_crystal_eval.txt andP2_live_effect_recent.raw/summaryJSON.
@@ -20,4 +32,4 @@ Globalrulecorrection: P2acknowledgedLIVE11482chat00:27:28 overlappedP1SB14727:27
 
 Complete provisionalpublished early andrefreshed now; worldopening23:54:26 gives90/105deadlines01:24:26 /01:39:26. Continueusefulsupportthrough105, appendmaterialchanges, finalofficialevalrequired. WORK_LOG.md/raws/ownedhistorysnapshotsunderp1/iter27. Lastownedcheckpoint578ee798; newerworkcheckpointpending. All source/courieracceptancegatesremainunmet; actualoneLivecrystaleffectbelongstoP2.
 
-Provisional only; closure and furtheractualoutcomes pending.
+Complete provisional; firstcheckpoint27526708 before90minutes. Closure/furtheractualoutcomes pending.
