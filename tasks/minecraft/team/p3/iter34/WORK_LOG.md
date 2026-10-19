@@ -7,7 +7,7 @@ Question: does native jump-place work with gravity gravel from a narrow, fractio
 - Intervention live12830: hand-dig dirt57, jump heights .420/.753/1.001/1.166 then place gravel on actual floor at >=1.12. Observation grounded56, gravel55, G11->10, HP20food20; dirt picked up. Implication gravity support works on full solid base, fractional z89.7 tolerated.
 - 12834: first step to57 passed, then false hidden-target guard on dirt60. Failure API assumption in own helper: Vec3.normalize mutated vector before distance measurement, making ray length1. Corrected to scaled(1/dist). No unsupported dig/HP loss.
 - 12838 changed helper; five more steps to62, removed dirt60, retained20/20/G4D3. 12844 five steps to67, hand-cut plank67 yieldedPlank1, switched from last gravel to dirt. 12849 hand-cut basalt70, one dirt pillar to68, replaced roof70 using7/70/89 sideanchor with finalDirt1. Retained20/20 F3Plank1; all actions stopped.
-- Practical recipient adoption verified: P4 canonical12856 used pillar at95/106 from62->63->64->65, grounded each, unchanged5.911HP17food; actual logs3 retained/full10 ending. Actual12876 used wood in native crafting, furnace1 retained; P4 later12881 reports shield equipped/fresh pick (canonical confirmation can be read if needed). Raw P4_ADOPTION_RECORD.txt captures123? No: canonical12820..12881 range, only P4 plays; P3 only reads.
+- Practical recipient adoption verified: P4 canonical12856 used pillar at95/106 from62->63->64->65, grounded each, unchanged5.911HP17food; actual logs3 retained/full10 ending. Actual12876 used wood in native crafting, furnace1 retained; P4 later12881 reports shield equipped/fresh pick (canonical confirmation can be read if needed). Raw P4_ADOPTION_RECORD.txt captures canonical12820..12881 range, only P4 plays; P3 only reads.
 - P1 reached own68 separately before redirect; do NOT attribute P1 ascent or portal relight to p3 physical operation.
 
 ## Discovery 2 — actionable Nether route
@@ -17,3 +17,13 @@ Question from P1: precise historical HOME station->18/8/274 link. No duplicate l
 - Changed-world inference: old45m shaft was dug to8; blind falling deadly and old fullcolumn preflight inapplicable. Fresh adjacent-column survey needed. Current state unknown until P1 observes. Adoption request pending.
 
 Current: P3 HOME8.5/68/89.7,20HP20food,F3Plank1, controls cleared. Portal active independently observed local12878, actual six nether_portal blocks. P1 actual12854 dimension transition is peer-owned; not P3 effect. No p3 deaths/sandbox runs/reset this iteration. No active p3 program. Next independent uncertainty/contribution should address current route/kit, not duplicate P1 travel or P2berries.
+
+
+## Discovery3 — projectile packet and tiny tool verification
+P1 requested executable crystal method and currentstronghold historical links. CRYSTAL_PACKET.md sends strongest actualP2SB287uncaged95 firsttick78.76 from6.503/58/-25.500 (noP3projectile). P1 explicitly adopted candidate in121? Actualchat12211/12942 read; see arena. Packet clearly separates actualLIVEalreadyremoved86/89/92 vs SB95 and unqualifiedcages. arc_model.py smallsmoke reproduced retainednominal95.074 output; notnewphysicalqualification. arc_clearance.js read-only physicalshaperaycast component smoke12939 firsttargetwasbeyondbasalt (testsetupmistake), changedclosertarget12940 passed entity-beforewall; wallbeforetarget passedboth. Noitem/moveaction. Actual287publicspawnvelocityreplay .99/.03 matchedsix10tickpositions maxerror.00512m (FLIGHT_REPLAY.json), supporting stepintegration, notnominalspreadaccuracy.
+
+## Discovery4 — stronghold packet
+STRONGHOLD_PACKET.md sent13:48:40 before13:53request. Key new actual7904three-metre finalroomdrop (-33->-36) notgeneric1step; actual9302 no-dig lowerroom146/2241->newnorth142/2231 butinternalnodesnottraced; newtable140/-36/2232 hiddenfrom142/2231, oldtable146/-34/2240cut. P1 alreadyactual12965OWuppercorridor healthy at13:50. Nativecurrentroute remainsownerP1.
+
+## Current ongoing contribution
+12906 P3 durablecaps FULL10, actualF3only afterconsumingPlank1+minedDirt1. Westfloor7/67/89 nowAIR; westcaps7/68/89Plank,7/69/89Dirt; northcaps8/68+69/88Cobble.13:46P4warned.12963 travelcore read/move-to-samecell smoke healthy20/20/F3/FULL10; controlsfalsegoalfalse. P4courier actual11.5/61/110.5 withkit, receivedP2berries andadvanced. P3 realreceipt PENDING. P1accepted13:49:35 nextmission: afteractualP4packet, secondEndentrant/cagealternative by14:15, earlierblockrefresh. OnlyP3controlled, noSBreset/run; noongoingP3controls/program.

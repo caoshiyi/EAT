@@ -1,0 +1,22 @@
+program #12940 on p3: 0 s
+--- output ---
+SMOKE_BLOCKED {
+  status: 'blocked',
+  tick: 0,
+  peak: 69.62,
+  block: 'basalt',
+  at: Vec3 { x: 8, y: 69, z: 90 },
+  intersect: Vec3 { x: 8.49999999999923, y: 69.62, z: 90 }
+}
+SMOKE_ENTITY {
+  status: 'nominal_target_intersection',
+  tick: 0.04999999999999242,
+  peak: 69.62,
+  p: Vec3 { x: 8.49999999999923, y: 69.62, z: 89.77499999999999 }
+}
+BODY {"p":{"x":8.49999999999923,"y":68,"z":89.7},"hp":20,"food":20,"controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 68, 89.7) in overworld, health 20/20, food 20/20, alive
