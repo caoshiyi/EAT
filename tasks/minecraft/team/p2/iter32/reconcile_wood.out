@@ -1,0 +1,54 @@
+program #12050 on p2: 0.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:21:55.337Z","p":{"x":11.55051690879287,"y":66,"z":-15.501718115565096},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["wooden_pickaxe",1,0],["wooden_shovel",1,7],["spruce_sapling",2,null],["flint",1,null]]}
+FUND Vec3 { x: 11, y: 67, z: -17 } grass_block
+CUT {"q":{"x":11,"y":67,"z":-17},"n":"grass_block","p":{"x":11.55051690879287,"y":66,"z":-15.501718115565096}}
+FUND Vec3 { x: 11, y: 67, z: -18 } snow
+FAILURE Error: placefund dirt
+LOGS [{"q":{"x":9,"y":72,"z":-15},"n":"spruce_log"},{"q":{"x":13,"y":70,"z":-9},"n":"spruce_log"},{"q":{"x":13,"y":71,"z":-9},"n":"spruce_log"},{"q":{"x":13,"y":72,"z":-9},"n":"spruce_log"},{"q":{"x":12,"y":74,"z":-22},"n":"spruce_log"},{"q":{"x":13,"y":73,"z":-9},"n":"spruce_log"},{"q":{"x":4,"y":71,"z":-23},"n":"spruce_log"},{"q":{"x":22,"y":69,"z":-16},"n":"spruce_log"},{"q":{"x":4,"y":72,"z":-23},"n":"spruce_log"},{"q":{"x":22,"y":70,"z":-16},"n":"spruce_log"},{"q":{"x":22,"y":71,"z":-16},"n":"spruce_log"},{"q":{"x":4,"y":73,"z":-23},"n":"spruce_log"},{"q":{"x":22,"y":72,"z":-16},"n":"spruce_log"},{"q":{"x":4,"y":74,"z":-23},"n":"spruce_log"},{"q":{"x":22,"y":73,"z":-16},"n":"spruce_log"},{"q":{"x":22,"y":74,"z":-16},"n":"spruce_log"},{"q":{"x":19,"y":69,"z":-1},"n":"spruce_log"},{"q":{"x":7,"y":74,"z":-31},"n":"spruce_log"},{"q":{"x":19,"y":70,"z":-1},"n":"spruce_log"},{"q":{"x":19,"y":71,"z":-1},"n":"spruce_log"},{"q":{"x":15,"y":73,"z":-32},"n":"spruce_log"},{"q":{"x":19,"y":72,"z":-1},"n":"spruce_log"},{"q":{"x":15,"y":74,"z":-32},"n":"spruce_log"},{"q":{"x":19,"y":73,"z":-1},"n":"spruce_log"},{"q":{"x":-7,"y":67,"z":-11},"n":"spruce_log"},{"q":{"x":-7,"y":68,"z":-11},"n":"spruce_log"},{"q":{"x":19,"y":74,"z":-1},"n":"spruce_log"},{"q":{"x":-4,"y":69,"z":-5},"n":"spruce_log"},{"q":{"x":26,"y":69,"z":-5},"n":"spruce_log"},{"q":{"x":-4,"y":70,"z":-5},"n":"spruce_log"},{"q":{"x":26,"y":70,"z":-5},"n":"spruce_log"},{"q":{"x":19,"y":75,"z":-1},"n":"spruce_log"},{"q":{"x":-4,"y":71,"z":-5},"n":"spruce_log"},{"q":{"x":26,"y":71,"z":-5},"n":"spruce_log"},{"q":{"x":-4,"y":72,"z":-5},"n":"spruce_log"},{"q":{"x":26,"y":72,"z":-5},"n":"spruce_log"},{"q":{"x":2,"y":70,"z":1},"n":"spruce_log"},{"q":{"x":2,"y":71,"z":1},"n":"spruce_log"},{"q":{"x":26,"y":73,"z":-5},"n":"spruce_log"},{"q":{"x":2,"y":72,"z":1},"n":"spruce_log"}]
+ENDING {"at":"2026-10-19T09:21:56.258Z","p":{"x":11.55051690879287,"y":66,"z":-15.501718115565096},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["wooden_pickaxe",1,0],["wooden_shovel",1,8],["spruce_sapling",2,null],["flint",1,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T09:21:56.258Z",
+ "p": {
+  "x": 11.55051690879287,
+  "y": 66,
+  "z": -15.501718115565096
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "wooden_shovel",
+   1,
+   8
+  ],
+  [
+   "spruce_sapling",
+   2,
+   null
+  ],
+  [
+   "flint",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: Food scout SB331 completed: route83/283 stopped early at75.5/67/73.5 after HP20->14.13 (initial cause unsampled). Actual soil ending at75.5/64/73.5 audited TENFULL13.13HP; berry branch unreached, no food/route success. I will inspect local food/route alter
+p4: natives within original09:31 budget, no LIVE adoption of injured branch. Independent review: LIVE12047 and12048 repeated walkpost actual y65 vs selected66; both logAIR, no pickup. Inspect actual route/input before another same correction; good retained ret
+p4: urn20HP.
+--- p2 now: (11.6, 66, -15.5) in overworld, health 20/20, food 20/20, alive

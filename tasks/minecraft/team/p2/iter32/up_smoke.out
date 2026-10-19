@@ -1,0 +1,58 @@
+program #12064 on p2: 1.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:28:49.411Z","p":{"x":21.5,"y":57,"z":8.51923497844945},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",11,null],["wooden_pickaxe",1,14],["wooden_shovel",1,35],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+UP {"at":"2026-10-19T09:28:50.063Z","p":{"x":21.5,"y":58,"z":8.51923497844945},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",10,null],["wooden_pickaxe",1,14],["wooden_shovel",1,35],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+ENDING {"at":"2026-10-19T09:28:50.414Z","p":{"x":21.5,"y":58,"z":8.51923497844945},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["dirt",10,null],["wooden_pickaxe",1,14],["wooden_shovel",1,35],["spruce_sapling",3,null],["flint",1,null],["cobblestone",14,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T09:28:50.415Z",
+ "p": {
+  "x": 21.5,
+  "y": 58,
+  "z": 8.51923497844945
+ },
+ "hp": 20,
+ "food": 19,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "dirt",
+   10,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   14
+  ],
+  [
+   "wooden_shovel",
+   1,
+   35
+  ],
+  [
+   "spruce_sapling",
+   3,
+   null
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   14,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (21.5, 58, 8.5) in overworld, health 20/20, food 19/20, alive
