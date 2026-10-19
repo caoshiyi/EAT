@@ -3721,3 +3721,30 @@ G7SB284 actual source/nativecontrols/currentvisibleface/reach checks and decisiv
 Returnfailedfirstlanding77; canonicalMAGICdeath05:58:27 supersedes0.29terminal05:58:22.909. Canonical283MAGICdeath05:54:48 independently checked too. Current30SBdeaths8(P2seven/P4one), not live losses. Live preservation remains dated independentstatus; no currentliveobjectiveeffect or Dragon damage established. This is useful discovery: specific coverprediction failed under actual hit, unlike preparation-only trials.
 
 06:02 actual LIVE adoption independently inspected: full11797 source/output ordinaryvisible soilcuts/nativewaterstep/jumpplace, ending06:01:18.964 atP4(0.459372,59,-25.728046),20HP20food/Dirt4/dry/grounded, controls cleared/goalnull incleanup. This transfers the successful285exit tolive; specific useful surfaceaccess, no acquiredwood/kit/delivery or combat effect. Prior emptyprotected55body is now stale. G8reset subsequently copied this live surface, not originalpod55. Earlier readlast2foundonlychats; widenedbounded5foundactual11797, no false inferencefrommissingfirstretrieval.
+
+# Material live-loss override — independently checked06:06:45 UTC
+
+P2 and P4 retained live bodies described in the earlier provisional are SUPERSEDED. Canonical liveP4FALL06:03:42 and P2slainbyDragon06:05:03 establish TWO currentlive deaths. Freshstatus06:06: P2emptyOW(-8.5,57,-25.5)/20HP; P4emptyOW(9.5,78,-36.5)/20HP. P1/P3unplayed. No verifiedcurrentLIVEcrystalremoval or Dragondamage. Openingofficial182deaths is stale relative to these events; do not present it as currentdeathcount.
+
+LIVE11803 completeoutput/source-diff independently inspected: successfulSB286caller plus ONLY extra exactsource/boundaryadmissionchecks. Actualcraft6slabs then nativeheight79 at06:05:03.090; during firstbarpreparationHP10→4 at03.385→0 at03.889; canonicalDragondeath03, emptyOWpost06:05:06.389. NOattack, no shieldinstallation/effect. TargetGone03.892 atHP0 withcrystals[] is deathunload, not removal. Sandboxqualification did not transfer through actualliveapproach; no inventedblastfailure or immunityclaim.
+
+LIVE11800 fullsource/output: real2logsreceived06:03:36.735 at20HP, pathfindingsoftliquidcost100 didnotexcludehazard; airborne20HPterminal41.561 at52.648 was superseded byFALL42. Prior11797surfacegainwasreal, but body/woodlaterlost. Acquisitiondidnotbecomekit/delivery. Actualpathcorrelation and softcostsemantics are visible; exactfalltrajectory not continuouslysampled.
+
+Separately, fullSB286sourcechanges/decisiveoutput verified: actualcraft6slabs, actualbottomslabshape80, ordinarypositivecursor/swordhit06:02:50.701→same-liferemoval50.703/five; only10→9HP loss50.731; wholeoldfloorcutrailreturn→24mfieldseparation→three10fullendings06:03:42.906/.408/.908, terminal45.4119HP/wood55/end162/Snow1/slabs5. This is a meaningful completeSANDBOXcase and protectiondiscovery, notLIVEeffect or guarantee. EightpriorSBdeaths remaincanonical; no laterSBdeath ininspectedlist. Reviewer didnotblockadoption or demandperfectsafety.
+
+Earlierdatedprovisional/evidencetrailfollows; usefulreviewcontinues tofinalwindow.
+
+---
+
+
+## Minute40 independent comparison — captured06:10:09; written06:10:32 UTC
+
+Since20 the team tested genuinely different explanations: directfountain283testedcontactat63(noattacks/death), fullblockcover284testedactualblast(~9.71HPloss/death), addedbottomslab286testedactualblast(1HPloss) ANDwholefundedending89.9s/9HP. Lastresultchangesadecision andjustifiedconcreteownerliveadoptionwithoutreviewerapproval. It is qualitativelymorethancontrollerrefinement. YetactualLIVE11803failedbeforefirstbar/attack/installedshield, canonicallyslainbyDragon06:05:03; noLIVEcrystaleffect. Fulloldfloorcutdescentcost13pickwear stillcannotfundunlimitedrepeatability, and noDragonhit/endgamequalified. Mechanismdiscoverystronger; executionreliabilityandcompletionopen.
+
+TWOcurrentLIVEdeaths(P4FALL06:03:42,P2Dragon06:05:03), eightSBdeaths(P2seven/P4one) independentlyverified. P4surface11797andtwoactualwoodreceipts11800wererealbeforekitloss. Fresh06:10:09status: P2OW57/20HP/Dirt1; P4OW14.3/74/-40.5/20HP17food/Log1+Plank1. Statusdoesnotprovegeometry/receiptmechanism; lastinspectedP4physical11811drop78→70lost3.5HP, subsequentstatus20HPshowslaterchange, notcontradiction. P1/P3unplayed. Openingofficialdragon0/milestones11/deaths182isLAST-SAVEDandstalefordeaths; nofreshcompletionclaimed.
+
+Branchquestion: whatwouldjustifyabandoningthecurrentrecovery/retoolbranch, includingitswholeEnd-return/usechain? Whichactualreceipt/contact/windowwouldchangeadecisionbeforeitsbudgetexpires? Worldlossrequiresreallocation; repeatedlyrepairingsameunfundedacquisitionorperfectinganEndcontrollerwithoutaccesswouldnotestablishlivecompletion. Ownersretainchoice; nopermission/perfectsafetygate. RetainG8End9HPbodyasdatedindependentpracticecapability, notliveassets.
+
+Impossibilityaudit: neitherzerofountainattacksnorprehitliveDragondeathfalsifiesweaponeffectiveness/slabprotection. Twofullshieldfailsdonotproveallcoverfails;286actuallyrefutesthatgeneralization. Softwatercostwasapreference,nothardexclusion; actualP4lossdoesnotproveallwoodunreachable. Conversely, “samekit/source”wasnot“sameDragonapproach”; currenthazards/timeareuntestedtransferassumptions. Actualeffect, retention, fundingandobjectivecontinuationremainseparateclaims.
+
+Completeprovisionalalreadycheckpointed41617b63; materiallive-loss/successoverridespersisted. Nextfinal105–110inspection07:15:20–07:20:00. Noexcludedprovenancereconstructionorplayerfileedits; tokenusageunavailable.
