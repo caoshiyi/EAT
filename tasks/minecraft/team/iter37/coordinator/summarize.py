@@ -10,12 +10,12 @@ for arg in sys.argv[1:]:
   out=block.split('-- output --',1)[1]
   for line in out.splitlines():
    key=line.split(' ',1)[0]
-   if key in ('RESULT','BATCH_SUMMARY','P1_SOURCE','SOURCE'):
+   if key in ('RESULT','BATCH_SUMMARY','P1_SOURCE','SOURCE','PILOT_END','ENDSTATE','END_STATE'):
     try: d=json.loads(line.split(' ',1)[1])
     except (ValueError,IndexError): continue
     if key=='SOURCE':
      print(key,json.dumps({k:d[k] for k in ('at','environment','player','dragon') if k in d}));continue
-    wanted=('at','environment','player','attacks','hits','issue','initialBossHP','finalBossHP','ownHP','body','full','jumped','peak','dragonAfter','min','minRoot','phases','baitRoof52','baitEastGate')
+    wanted=('at','environment','player','attacks','hits','issue','initialBossHP','finalBossHP','ownHP','body','full','jumped','peak','dragonAfter','min','minRoot','phases','baitRoof52','baitEastGate','scope','raised','atField','escapeReady')
     z={k:d[k] for k in wanted if k in d}
     if d.get('dragonBefore',{}).get('hp') is not None and d.get('dragonAfter',{}).get('hp') is not None: z['finalHealthDecrease']=d['dragonBefore']['hp']-d['dragonAfter']['hp']
     if 'state' in d: z['state']={k:d['state'][k] for k in ('at','p','hp','food') if k in d['state']}
