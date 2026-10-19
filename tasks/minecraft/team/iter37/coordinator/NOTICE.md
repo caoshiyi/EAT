@@ -1,3 +1,3 @@
-# Current21:28 — repeated retained damage VERIFIED
-Canonical14375 actual140.7s/2attacks/final45.604599→41.104599(-4.5)/Sword14→16. Nullissue/errors[], full lowerending21:27:37own20food20/P3HP20/roofintact. Totaliteration11.25damage/fivehits. Repetitioncriterionmet; no supply/extra proofgate.41.1HP/~20minneeds~2.05HP/minoverall vsbatch~1.92HP/minBEFOREturnaround. Selectcontinuousboundedcompletionwork; gameplaymethodsplayersown.
-Finalcaller work+cleanup mustfit operational21:48:21 and600smax, not cancellation/finallyassumption. Handoffs21:43:21WHILEplaycontinues. Official21:18stale0/11/deaths224; next21:33/apparentvictory. No victoryfromhealthestimates.
+# Current21:39:35 — primary restarted, supply still pending
+P1LIVE14411active17s/healthy20at52.5, selected120combat thenAxehandoff~21:42ifready, otherwiseSwordresumesimmediately. P3fixedlow20. P2route14412active/healthy20, no completedwoodreceipt/craft yet. Recipientnorthgatecuts authorized13979ONLYafterP1endedLOW; protectedroofs/fieldunchanged.
+Actualboss34.354599/iteration18damage/eighthits, official21:33:38SAVEFAILED0/11/deaths224. Finalworldgoalstillunmet. Deadline21:48:21, finalcombatmustleavecleanup(readycallerstop21:47:45); no another full540s latecall. Handoffs21:43:21WHILEusefulplaycontinues.

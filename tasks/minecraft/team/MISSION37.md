@@ -1,21 +1,21 @@
-# Mission37 — current2026-10-19 21:29 UTC
+# Mission37 — current2026-10-19 21:39 UTC
 
-Objective: verified Dragon defeat. Official21:18:27 **dragon0, milestones11/12, deaths224**, SAVE REFUSED/LAST-SAVED/potentially stale. Saved HP48 informational. **Actual last41.104599**, iteration11.25damage/five accepted hits. No victory from health estimates. Next evaluator21:33/apparent victory/closing.
+Objective: verified Dragon defeat. Official21:33:38 **dragon0/milestones11/deaths224**, SAVE REFUSED/LAST-SAVED/potentially stale. SavedHP37 informational. **Actual last34.354599**, iteration18damage/eight accepted hits. No victory from health estimates. Closing/apparent-victory evaluation next.
 
-| Fixed owner | Native21:29:18 state | Current responsibility |
+| Fixed owner | Native21:39:35 state | Current outcome |
 |---|---|---|
-| mission_lead/p3 | End(-4.6,50,4.5), HP20 food20, no active program; fighting kit loanedP1 | Agreed low hold; current completion outcome and optional wood handoff contract. |
-| execution_researcher/p1 | End(-2.5,50,4.5), HP20 food20/full enclosure, Sword16/Shovel33/E58/G6/Pearl1/D4/Sand1 | Next bounded completion run; no health or source-funding gate. |
-| readiness_operator/p2 | End(9.3,50,3.5), HP20 food20, wood7, no active program | Wood delivery accepted for P1tool craft/use viaP3; actual handoff still pending, must not interrupt primary. |
+| mission_lead/p3 | End(-4.6,50,4.5), HP20 food20, no active program | Fixed low hold; craft/courier contract for optional StoneAxe priority. |
+| execution_researcher/p1 | End(-3.4,52.5,4.5), HP20 food20; LIVE14411 active17s | Selected120combat restart; actual effect/ending pending, then brief axe handoff only if ready. |
+| readiness_operator/p2 | End(-3.5,50,2.5), HP20 food20/wood7; route14412 active7s | Acknowledged north route underway, preserve all protected cells. Wood receipt→native craft→P1receipt/hit not yet closed. |
 | p4 | OW(143.5,-36,2231.5), HP20 empty | Unplayed. |
-| coordinator | No body/player programs | Evidence, continuity, ownership; no approval or Minecraft-method gate. |
+| coordinator | No body/player programs | Observe, facilitate, preserve evidence; no approval or Minecraft-method gate. |
 
-Verified current capability:14364 one accepted2.25damage/healthyfullending;14375 repeated batch140.7s/two accepted hits,45.604599→41.104599, Sword14→16, no issue/errors, lower/full ending21:27:37 HP20food20/P3HP20/roof retained. Immediate ACK values were stale; settled final health confirms effects. New site entry and actual reach qualified. No more one-hit proof, quiet-pilot or unrelated supply prerequisite is needed before the owners' selected next scope. One package success is not universal immunity.
+Canonical14394 ended140.4s, three hits41.104599→34.354599, healthy20/20/full lower ending21:34:23/P3HP20/roof retained. Early stop was native visibility REFUSED Endstone(-4,56,5), not a time cap. Respect native enforcement; eight successful contacts do not imply all candidate rays qualify. Current14411 restart13979 is selected for120combat, then immediate existing-weapon resumption if axe late. Do not create another proof/review gap.
 
-Turnaround checkpoint: about19min remain. Current41.1HP needs~2.16HP/min overall; latest batch~1.92HP/min before turnaround. This is measured planning information, not impossibility. Caller work and cleanup must fit21:48:21 and documented600s max. Do not count on cancellation/finally. P3 already offered bounded reuse of qualified callers14372 if source rewrites delay execution; actor selects scope. Current bodies have no health reset need.
+Supply accepted: P3ACK14403 north route; P2actual cleared earlier rows and now working last cells, ready ETA~21:40:15. P3free slot/wood1pilot then6/native receipt required. StoneAxe expected advantage remains unproved until native P1hit; optionalPick only if quick. P1ACK13979 permits recipient north gate -3/z3 only AFTER P1endedLOW, preserving roofs/field supports. Targetcourier~21:42, not a delivery claim. P1explicitly continues without axe if late. Earlier Shield/Bed goals failed/unfunded; wood remains actual retained resource, not delivered combat support yet.
 
-Supply history: Shield target21:11 and continuation~21:16 missed, wood7/Iron0/no item. Bed census9<declared12; no funded bed/false census. Existing-world bed census was missed, not negative; P3 now prioritizes current DPS and told P2 not to re-exit. P2actualreturn21:21:41 changed third-body context; latest repeated14375 remained healthy with P2End. Wood-to-P1Pick acceptance13935/currentP3contract staging; receipt→craft→actualcut not yet closed.
+Deadline contract: operational21:48:21. Any final caller must leave actual cleanup margin; donated ready caller has21:47:45 combat stop. 540s API allowance cannot overrule remaining wall time. Cancellation does not guarantee finally. Latest actual bodies all healthy; no health reset gate.
 
-Five iteration deaths: two agreed PvP recoveries, two Dragon deaths after failed upper endings, one chosen P2 exit. All current bodies retained. Check native bodies immediately after abnormal endings and directly alert owners before long review. Coordinator files are not timely-notification proof. All retained coordinator commits audited/scoped to owned files.
+21:39 review: ~9min remain. Actual damage is repeatable but turnaround consumed several minutes after last ending. Need immediate bounded world outcomes/actual endings; no result inferred from prepared source/parser success or projected damage. Root will collect handoffs at21:43:21 WHILE PLAY CONTINUES, not stop for reporting.
 
-Next review21:39/or consequential change. Request concise handoffs21:43:21 WHILE PLAY CONTINUES; deadline21:48:21. Do not stop early for reporting. Per-commit token usage unavailable; no estimates.
+At victory/deadline record official score/freshness, all bodies, unfinished IDs and decisive remaining uncertainties. Five actual iteration deaths; none recent. Per-commit tokens unavailable; no estimates.
