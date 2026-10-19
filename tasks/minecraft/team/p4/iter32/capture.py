@@ -12,7 +12,7 @@ for name,args in commands:
  try:
   p=subprocess.run([sys.executable]+args,text=True,capture_output=True,timeout=40)
   raw=p.stdout+p.stderr;(dest/(name+'.txt')).write_text(raw)
-  manifest.append(dict(name=name,started=started,ended=datetime.datetime.now(datetime.timezone.utc).isoformat(),rc=p.returncode,save_failed='FAILED' in raw and name=='eval'))
+  manifest.append(dict(name=name,started=started,ended=datetime.datetime.now(datetime.timezone.utc).isoformat(),rc=p.returncode,save_failed=bool(re.search(r'\bsave(?:-all)?\s+failed\b',raw,re.I)) and name=='eval'))
  except subprocess.TimeoutExpired as e:
   (dest/(name+'.txt')).write_text(str(e));manifest.append(dict(name=name,started=started,error='timeout'))
 (dest/'manifest.json').write_text(json.dumps(manifest,indent=2))

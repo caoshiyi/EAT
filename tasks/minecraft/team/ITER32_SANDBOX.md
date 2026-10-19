@@ -17,3 +17,7 @@ G32-3 resetcanonical09:56:07, total22.5s/copy0.7within07–29.5 exactinstantunkn
 CompletedSB342 independentlyreviewedexact09:41:39.361SOURCE14.4; fourDEFENSE_ATTACK/HURT44.133/44.683/45.638/46.389,TARGET_DEAD46.392;47.190Eye1/Swordwear4/12.4HP;TENFULLEND50.154/.354/.554. NoLIVEkillcredit. RawSB342_canonical.txt.
 
 G32-4 resetcanonical10:15:06 total23.5s/copy0.9swithin06–29.5 exactinstantunknown. AllSBidle(statusfull) andG3last3P2/P4last1/events10000preservedbeforecopy; requestedP2afterLIVE12130newrangedthreatcase. NewP2SB20HP19food/Berries7/Snow26/currentstonekit/pod158.526/78/531.521; LIVEhealingcompletedbysourcecopy(readinessbothstatesmatch), old15.3/berries12notcurrent. NewP4SBsealed5.911/nofood, nothealthy20. Noactivetest replaced; noP4SBtestqueued. Readinesscanonicalreceiptinruns/.
+
+
+## Closure — 2026-10-19T10:57:33.315694+00:00
+G4 unchanged, both Sandbox players idle. No reset/test pending. Preserved G1–G3 final event files plus G4 closing events reconcile ZERO new Sandbox deaths since09:14:44 (CLOSURE_RECONCILIATION.json). LatestG4 P2 old healthy kit is a practice copy, not current live14HP donor kit or restored lost Snow. P4 sandbox old kit differs liveSapling-only. No gains transfer/count.

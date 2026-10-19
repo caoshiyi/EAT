@@ -74,7 +74,7 @@ Objective NOT achieved. LIVE Endaccess/Dragon damage/defeat NOTverified32. Canon
 
 FreshP2status10:37:10: **NEWLIFE OW(7.5,73,−25.5),20HP20food,EMPTY**. AllformerStonekit/Snow26/CookedBeef2/Table/food retained-bodyclaimsSUPERSEDEDbydeath. G4practicecopycannotrestoreLIVEassets. Currentdroppositions/loadedage/livingthreats/recoverabilityUNKNOWN; deathcoordinateisnotitemlocationoritemage. OnlyP2ownerexecutesP2programs.
 
-**Decisivefailedchain12147:** SOURCE10:36:19.228 P2(166.536,65,1383.501),20HP20food/retainedkit. TRAVEL_EFFECT10:36:50.172(145.371,64,1459.507),13.566HP20food,reasonhealth. No actualsoil/carvedendingadmitted; `box material exhausted`10:36:51.124 andsameRECOVERY_FAILURE, nofundedcapbecausecarriedsolidsZEROafterascent. Terminalbodyexposed~146.5/64/1461.5/12.1HP. Death10:37:02 AFTERcompletedrun. LaterCreeperkillerdoesNOTidentifyinitialdamagecause. Actualsource/effect/failedending/deatharestoredP2_12147_canonical.txt/P2_12147_loss_canonical.txt/loss1037_*/events. Thisrepeatsunfundedending/idleexposurefailure; no healthyterminalorpassedpreviouslegpromotestoend-to-endsuccess.
+**Decisivefailedchain12147:** SOURCE10:36:19.228 P2(166.536,65,1383.501),20HP20food/retainedkit. TRAVEL_EFFECT10:36:50.172(145.371,64,1459.507),13.566HP20food,reasonhealth. No actualsoil/carvedendingadmitted; `box material exhausted`10:36:51.124 andsameRECOVERY_FAILURE, nofundedcapbecausecarriedsolidsZEROafterascent. Canonical RETURN10:36:51.928 exposed(145.500727,64,1461.5),14.5667HP/food19. Separate idle STATUS10:36:54.762959 exposed(146.5,64,1461.5),12.1HP/food19; this later status is NOT the program terminal. Death10:37:02 AFTERcompletedrun. LaterCreeperkillerdoesNOTidentifyinitialdamagecause. Actualsource/effect/failedending/deatharestoredP2_12147_canonical.txt/P2_12147_loss_canonical.txt/loss1037_*/events. Thisrepeatsunfundedending/idleexposurefailure; no healthyterminalorpassedpreviouslegpromotestoend-to-endsuccess.
 
 EarlierrealgainsremainDATEDfacts: jointfoodhandoff2→P2actualfoodrestoration12079/12078/12080; P2meat3Cow7707/12137, actualcooking3thenportableTable; wet+carvedbankLIVE12125/nextSOURCE12128; longLIVE12142 SOURCE10:26:46.468(150.531,76,547.503)20HP/food18→END_OPERATION10:31:53.940(166.536,65,1383.501)20HP20food/TENFULL/CookedBeef2/Snow26/Table1/Dirt2. ThoseassetswereLOSTlater, notnowheld. Original09:31handoffwholegate/09:45P4food30/10:20physicalEndgateFAILED, deadlinesnotreset.
 
@@ -113,3 +113,29 @@ LIVE12168 (10:47:11.929–38.856) waited for actual receiver departure and **REC
 
 ##10:49 executed-code claim check
 Read actual current p2/iter32/rescue.py and generated kit_rescue.js (allowedpeerfiles), plus ending.js/box.js. ActualsupportedSand/Gravel-admission change exists (4full below,3full sidelevels, stableDirt/Cobblecap), new actualcase not yetqualified. Claimed continuousretreat-on-ending-failure is NOT present: catchretriesfinishShelter thenfinallyclearsgroundcontrols. makeBox hasnoall-newfundguard. Owner informed LIVE12171 10:48:33.844. This is sourcecode finding, notproofcurrentrunfailed; actualcurrentP2 still20HP food9 atz289 withdonatedtools/eight solids. Completed12169 required.
+
+
+##10:50:23 UTC exact endpoint correction
+My10:39 prose mislabeled a post-run status as12147 terminal. Re-read completed canonical12147: RETURN10:36:51.928 actual145.500727/64/1461.5,14.566665649HP/19food;9of10facesAIR, floorSandfull. Separate readonly watch manifest sample10:36:54.762959 / 3_status.txt gives146.5/64/1461.5,12.1HP/19food. Corrected all three prose copies, retained explicit mistakehere. This is actualpost-runhealthloss/displacement before canonicalCreeperdeath10:37:02, notuniquecauseproof. Owner's exactterminal145.5/14.57 iscorrect.
+
+
+##10:50:46 UTC recovery progress check
+Observed LIVE active12169 statuses:10:49:47.480 OW116.3/67/460.4;10:50:23.3 OW139.4/63/465.2;10:50:27.894 OW148.3/63/455.3, allHP20/food7. Motion occurred, no netforwardZ over40seconds. Actualcauseunsampled. Executedstallguard resetsusingdistanceFromLast>1.5 regardlesstowardgoal; sideways/backwardmotioncanpreventblocked termination. Proposedfutureguarduseactualdistancetocorpse ornetforwardZ30sec plusactualobstacleinspection; **notexecuted/qualified**. Toldowner12173, no unearned adoptioncredit. Furtherwatch10:50:50.541159.3/61.6/475.5 still20HP/food7; fractionalYdoesnotidentifyhazardblock orcause.
+
+
+## Closure independent result — 2026-10-19T10:57:33.315694+00:00
+# P4 iteration32 closure — 2026-10-19T10:57:33.315694+00:00
+
+**Dragon NOT defeated.** Closing official evaluator10:55:07–09 UTC: **dragon0, milestones11/12, deaths198**. Forced save failed(connection refused); LAST-SAVED reading. New LIVE deaths1(P2 Creeper10:37:02); P4 deaths0; Sandbox0 across four generations.
+
+Current P4 LIVE12175 three full-boundary audits10:55:03: Overworld49.509335/66/113.499976,5.911HP17food, grounded, controlsfalse/goalnull, **Sapling1 only**. No food/tools/blocks. Sealed, no outstanding P4 run in either environment or reset.
+
+P2 completed LIVE12169 END10:54:42.959:145.7/71/972.3,14HP6food,TENFULL, donor Swordwear8/Shovelwear12/Dirt7/Planks3/Stick3/String4/Eye1. Old kit/Snow/food/Table LOST12147; no old-drop recovery or End32 access. Unchanged rescue.py health>=15 guard rejects current14HP source. Only owner controls P2.
+
+P4 actual contributions:2-berry receipt+actual P2 food restoration12079/12078/12080; late native visible donor12166 -> actual Sword/Shovel/Dirt use and closed retention12169; independent current-record checks, entry review and four coordinated sandbox copies. Both supply deadlines missed; larger food30 trip failed/retired. Current End admission/real Dragon damage remain unqualified.
+
+Full self-contained evidence, failures, exact timestamps, current dependencies and next-work constraints: **[p4/iter32/FINAL_HANDOFF.md](p4/iter32/FINAL_HANDOFF.md)**. Official raw [closing eval](p4/iter32/closure1055_20261019T105504Z/eval.txt); [death reconciliation](p4/iter32/CLOSURE_RECONCILIATION.json). Earlier dated snapshots remain in PROVISIONAL_HANDOFF.md/ITER32_REVIEW.md and git history. Provisional independent review completed09:53 before85; critical loss update10:39;20/40 joint reviews completed. Final100–105 inspections continue for peer/current-state changes; later material corrections appended to final handoff.
+
+Only own paths/P4; no agents or push. No pending P4 action needed for closure.
+
+Capture metadata correction: case-sensitive FAILED missed lowercase save-all failed; actual raw always showed failure. Fixed and fixture-checked10:55:46; manifest audit trail retains originalfalse.

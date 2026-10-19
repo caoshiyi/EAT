@@ -66,3 +66,25 @@ Reclosure **FAILED**, server refused Dirt49/67/112 while P2 actual body occupied
 
 ## 10:48 UTC reclosure verified
 LIVE12168 (10:47:11.929–38.856) waited for actual receiver departure and **RECLOSE_EFFECT10:47:38.234** spent the reserved Dirt. Three complete10-FULL endings38.235/.436/.640 at unchanged49.509/66/113.500 HP5.911 food17. P4 now **Sapling1 only**, no tools, blocks or food. Earlier north-head-AIR state is superseded, no extra injury/death. Current10:47:49 P2 live motion86.7/64/146.1 HP20 food14 holding Sword and carrying donated materials during12169; completed source/ending/actual-use evidence still required for full adoption. No P4 outstanding either environment/reset. No extra lowering/carving repair was needed or attempted.
+
+
+##10:50:23 UTC exact endpoint correction
+My10:39 prose mislabeled a post-run status as12147 terminal. Re-read completed canonical12147: RETURN10:36:51.928 actual145.500727/64/1461.5,14.566665649HP/19food;9of10facesAIR, floorSandfull. Separate readonly watch manifest sample10:36:54.762959 / 3_status.txt gives146.5/64/1461.5,12.1HP/19food. Corrected all three prose copies, retained explicit mistakehere. This is actualpost-runhealthloss/displacement before canonicalCreeperdeath10:37:02, notuniquecauseproof. Owner's exactterminal145.5/14.57 iscorrect.
+
+
+## Closure independent result — 2026-10-19T10:57:33.315694+00:00
+# P4 iteration32 closure — 2026-10-19T10:57:33.315694+00:00
+
+**Dragon NOT defeated.** Closing official evaluator10:55:07–09 UTC: **dragon0, milestones11/12, deaths198**. Forced save failed(connection refused); LAST-SAVED reading. New LIVE deaths1(P2 Creeper10:37:02); P4 deaths0; Sandbox0 across four generations.
+
+Current P4 LIVE12175 three full-boundary audits10:55:03: Overworld49.509335/66/113.499976,5.911HP17food, grounded, controlsfalse/goalnull, **Sapling1 only**. No food/tools/blocks. Sealed, no outstanding P4 run in either environment or reset.
+
+P2 completed LIVE12169 END10:54:42.959:145.7/71/972.3,14HP6food,TENFULL, donor Swordwear8/Shovelwear12/Dirt7/Planks3/Stick3/String4/Eye1. Old kit/Snow/food/Table LOST12147; no old-drop recovery or End32 access. Unchanged rescue.py health>=15 guard rejects current14HP source. Only owner controls P2.
+
+P4 actual contributions:2-berry receipt+actual P2 food restoration12079/12078/12080; late native visible donor12166 -> actual Sword/Shovel/Dirt use and closed retention12169; independent current-record checks, entry review and four coordinated sandbox copies. Both supply deadlines missed; larger food30 trip failed/retired. Current End admission/real Dragon damage remain unqualified.
+
+Full self-contained evidence, failures, exact timestamps, current dependencies and next-work constraints: **[p4/iter32/FINAL_HANDOFF.md](p4/iter32/FINAL_HANDOFF.md)**. Official raw [closing eval](p4/iter32/closure1055_20261019T105504Z/eval.txt); [death reconciliation](p4/iter32/CLOSURE_RECONCILIATION.json). Earlier dated snapshots remain in PROVISIONAL_HANDOFF.md/ITER32_REVIEW.md and git history. Provisional independent review completed09:53 before85; critical loss update10:39;20/40 joint reviews completed. Final100–105 inspections continue for peer/current-state changes; later material corrections appended to final handoff.
+
+Only own paths/P4; no agents or push. No pending P4 action needed for closure.
+
+Capture metadata correction: case-sensitive FAILED missed lowercase save-all failed; actual raw always showed failure. Fixed and fixture-checked10:55:46; manifest audit trail retains originalfalse.
