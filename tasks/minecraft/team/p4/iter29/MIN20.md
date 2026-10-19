@@ -1,0 +1,11 @@
+# Minute20 P4 assessment — 03:59 UTC (opening~03:39)
+
+No live encounter action has been enabled yet; LIVEp2kit/terrain remains opening at lastownerstatus, and dragon completion is unproved. Opening official0/11/deaths182 is LAST-SAVED(savefailed).
+
+Work has resolved concrete important uncertainties, beyond preparation: P4Sandproposal was adopted and tested byP2inactualEndconditions:231oneheight and232twoheight/fullreturn withoutpickwear. P4preSandstablelanding correction was adopted and actuallyexercised in234 duringincoming-fireball abort whileairborne57.796→stable57→twoDOWN→50full10HP. This addresses a real return dependency, not a simulation/quietcase inferredfromtitle. PassiveBossBar/hurt recorder adopted and ran; actualtransientdamage notobserved. No-extra-tick aimcorrection adopted butbranchstillunexercised through234.
+
+Notresolved: legal contact/damage and sustainablewholecycle. 229/232no-window;233Sandmaterialrefusal;235doorreceipt/cleanupfailure/new49refuge;236separate49→50rescue33.3s/full10HP (ownerreport, independentauditpending). P4recommendedmissingSandreceiptlogFAILED+ordinarymasonryseal; P2adopted10859–60, branchtestpending. 237full57+currentfuturejumptrigger active at03:58:59,actual57/10HP, noending/effectyet. Gate04:00 remainsactualwholedeadline, notrolled.
+
+Continue narrowcontact measurement/retention support through this bounded decision; no supplyrestart. If237neverentersactualaim, the missingdependency is reachablewindow/position/trigger ratherthanweaponsemantics. Ifactualcursor/attackbranchoccurs, retainpairedcurrentrays/cursor/actualhurt/Bossminimum/fullending and promptownerLIVEadoptiononlywithcurrentcoldfunding. Otherwise changequestion/method ratherthanrepeat samewatch. P4doesnotrunP2 orproxyitsEndconditions. OwnP4stillOW55/20HP/Dirt2/no physicalmovement/death/delivery. G1sharedsandboxactive; noreset.
+
+03:59:55 materialcorrection:237completed03:59:11.911beforethisreportpublication03:59:24; originalusedlastobserved58:59activestatus. Actual51.225s/nojump/aim/attack, futurewatchfireballabort, full3TEN09.149/.400/.651 BUTHP10→6. CurrentSB6HP, notLIVE10. Preserveinjuryandold234narrowqualificationseparately. Contactstillunresolved; reconsiderexposedwatch/retreatlatencyaftertworelevant57hazardaborts, notautomaticrerun.

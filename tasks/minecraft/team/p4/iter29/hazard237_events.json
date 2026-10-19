@@ -1,0 +1,123 @@
+{
+  "rows": [
+    {
+      "at": "2026-10-19T03:59:04.306Z",
+      "ms": 43621,
+      "event": "entitySpawn",
+      "p": {
+        "x": -5.429999593260345,
+        "y": 57,
+        "z": -11.500100728557184
+      },
+      "hp": 10,
+      "food": 16,
+      "ground": true,
+      "loadedHazardCount": 1,
+      "entity": {
+        "id": 3201,
+        "name": "dragon_fireball",
+        "p": {
+          "x": -4.672023416054099,
+          "y": 69.32135720925044,
+          "z": -9.014201350541128
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T03:59:05.268Z",
+      "ms": 44584,
+      "event": "entitySpawn",
+      "p": {
+        "x": -5.429999593260345,
+        "y": 56,
+        "z": -11.500100728557184
+      },
+      "hp": 10,
+      "food": 16,
+      "ground": true,
+      "loadedHazardCount": 2,
+      "entity": {
+        "id": 3204,
+        "name": "area_effect_cloud",
+        "p": {
+          "x": -5.429999593260345,
+          "y": 56,
+          "z": -11.500100728557184
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T03:59:05.269Z",
+      "ms": 44584,
+      "event": "entityGone",
+      "p": {
+        "x": -5.429999593260345,
+        "y": 56,
+        "z": -11.500100728557184
+      },
+      "hp": 10,
+      "food": 16,
+      "ground": true,
+      "loadedHazardCount": 2,
+      "entity": {
+        "id": 3201,
+        "name": "dragon_fireball",
+        "p": {
+          "x": -4.914699197304099,
+          "y": 65.66290994362544,
+          "z": -9.810588069291128
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T03:59:06.268Z",
+      "ms": 45583,
+      "event": "entityHurt",
+      "p": {
+        "x": -6.4724308096917875,
+        "y": 55,
+        "z": -11.500100712897785
+      },
+      "hp": 10,
+      "food": 16,
+      "ground": true,
+      "loadedHazardCount": 1,
+      "entity": {
+        "id": 189,
+        "name": "player",
+        "p": {
+          "x": -6.4724308096917875,
+          "y": 55,
+          "z": -11.500100712897785
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T03:59:06.269Z",
+      "ms": 45584,
+      "event": "health",
+      "p": {
+        "x": -6.4724308096917875,
+        "y": 55,
+        "z": -11.500100712897785
+      },
+      "hp": 6,
+      "food": 16,
+      "ground": true,
+      "loadedHazardCount": 1,
+      "entities": [
+        {
+          "id": 3204,
+          "name": "area_effect_cloud",
+          "p": {
+            "x": -5.429999593260345,
+            "y": 56,
+            "z": -11.500100728557184
+          }
+        }
+      ]
+    }
+  ],
+  "traceDropped": 164,
+  "limits": "Only retained event rows, not exhaustive samples or causal proof."
+}
