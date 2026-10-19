@@ -1,0 +1,2 @@
+Initial11501 readonly audit inheritedroomaxisassumed1x2alongZ, yielding10/16full and2AIR+2GRAVEL; actualp4position/20HPunchanged. This is a WRONGgeometrysamplingassumption, notnewworlddamage or unsafeendingproof. Reorient16samples2x1alongX andverifyfreshactualblocks; do notrewriteinitialraw. No movement/dig/place/controlmutation.
+Corrected geometry independentlymatchesretainedallowediter26/live_room_audit.js definition(twoXcells,oneZcell). Actualfreshaudit: 2026-10-19T01:19:55.889Z,HP20,full16/16,fouractualinteriorAIR=True. Bothrawsretained, no physicalchanges.

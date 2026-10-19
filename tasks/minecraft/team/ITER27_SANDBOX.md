@@ -24,3 +24,6 @@ G27-6 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_6.txt", "g
 
 G27-7 launch 2026-10-19T00:54:45.211318+00:00: P2 actualeffect161+ending/rawpreserved and explicitresetrelease10504-06 at00:53:29; P1 lastG5release/results beforeG6, noG6calls/dependency; ownidle/allresults161independentlysaved/no dependency. Bothstatusesidlepreserved. FreshLIVE50/10HP/Snow4/endstone62 expected. OwnerwantsentirecorrectedcallerCOLDqualification, originalgate56:30unchanged.
 G27-7 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_7.txt", "generation": "G27-7", "copySeconds": 0.6, "totalSeconds": 15.6, "exactCopyInstant": "unknown", "completed": true}
+
+G27-8 launch 2026-10-19T01:18:50.676690+00:00: P2 173failure/174rescue/results preserved and explicitrelease10521-24 at01:16:18; P1 no run/resetdependency10525-27 at01:17:23; P4 readonlyLIVEauditcompleted/saved/no dependency. Bothstatusesidle. FreshLIVE50/10/Snow3/endstone92 expected. P1 requests1sLIVEauditnextslot; P4willgrantbeforeP2resumes.
+G27-8 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_8.txt", "generation": "G27-8", "copySeconds": 0.6, "totalSeconds": 17.5, "exactCopyInstant": "unknown", "completed": true}
