@@ -1,0 +1,268 @@
+program #11924 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-19T07:32:19.790Z",
+ "p": {
+  "x": -5.5,
+  "y": 30,
+  "z": -30.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "cols": [
+  {
+   "x": 0,
+   "z": 0,
+   "blocks": [
+    {
+     "y": -3,
+     "n": "stone",
+     "shapes": [
+      [
+       0,
+       0,
+       0,
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "y": -2,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -1,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 0,
+     "n": "air",
+     "shapes": []
+    },
+    {
+     "y": 1,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 2,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 1,
+   "z": 0,
+   "blocks": [
+    {
+     "y": -3,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -2,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -1,
+     "n": "snow",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 0,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 1,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 2,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": -1,
+   "z": 0,
+   "blocks": [
+    {
+     "y": -3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -2,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -1,
+     "n": "snow",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 0,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 1,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 2,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 0,
+   "z": 1,
+   "blocks": [
+    {
+     "y": -3,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -2,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -1,
+     "n": "snow",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 0,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 1,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 2,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    }
+   ]
+  },
+  {
+   "x": 0,
+   "z": -1,
+   "blocks": [
+    {
+     "y": -3,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -2,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": -1,
+     "n": "stone",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 0,
+     "n": "snow",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 1,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 2,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    },
+    {
+     "y": 3,
+     "n": "air",
+     "shapes": "[repeated reference]"
+    }
+   ]
+  }
+ ],
+ "near": [
+  {
+   "id": 1086,
+   "n": "item",
+   "p": {
+    "x": 8.318938662368344,
+    "y": 32,
+    "z": -28.125
+   },
+   "d": 14.163463233061984
+  },
+  {
+   "id": 1119,
+   "n": "item",
+   "p": {
+    "x": 9.526308037706029,
+    "y": 32,
+    "z": -29.229522188050154
+   },
+   "d": 15.21197052043836
+  },
+  {
+   "id": 1120,
+   "n": "item",
+   "p": {
+    "x": 9.297468279513932,
+    "y": 32,
+    "z": -29.190848923434984
+   },
+   "d": 14.98929431375915
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-5.5, 30, -30.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: respawn_audit.js

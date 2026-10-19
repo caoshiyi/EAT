@@ -1,0 +1,20 @@
+program #11920 on p4: 0 s
+--- output ---
+FAIL Error: no sword
+--- returned ---
+{
+ "at": "2026-10-19T07:31:47.220Z",
+ "hp": 20,
+ "p": {
+  "x": -5.5,
+  "y": 30,
+  "z": -30.5
+ },
+ "dead": false,
+ "attacks": [],
+ "inv": []
+}
+--- chat since this player's previous program ---
+[server] p4 was slain by Zombie
+--- p4 now: (-5.5, 30, -30.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: defend.js

@@ -7,7 +7,7 @@ const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour
 for(const n of['lava','water','powder_snow','sweet_berry_bush']){const b=bot.registry.blocksByName[n];if(b)m.blocksToAvoid.add(b.id);}m.exclusionAreasStep.push(b=>['water','lava','powder_snow','sweet_berry_bush'].includes(b.name)?Infinity:0);bot.pathfinder.setMovements(m);
 for(let leg=0;leg<5;leg++){
 if(bot.health<15||dead||!bot.entity.onGround)throw Error('leg admission');
-const tx=Number(global.routeX??22),tz=Math.min(2240,Math.floor(bot.entity.position.z/40+1)*40),goal=new goals.GoalXZ(tx,tz);
+const tx=Number(global.routeX??22),tz=Math.min(2240,Math.floor(bot.entity.position.z)+40),goal=new goals.GoalNearXZ(tx,tz,2);
 console.log('TARGET',JSON.stringify({tx,tz}));
 const health=()=>{if(bot.health<15)stop();};bot.on('health',health);
 try{await Promise.race([bot.pathfinder.goto(goal),new Promise((_,reject)=>timer=setTimeout(()=>{stop();reject(Error('20s leg budget'));},20000))]);}finally{clearTimeout(timer);bot.removeListener('health',health);}

@@ -1,0 +1,24 @@
+[sandbox] program #298 on p4: 6.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:29:07.239Z","p":{"x":48.19166391222761,"y":48.01124682245997,"z":257.8204699867175},"hp":2.166667938232422,"food":19,"ground":false,"water":true,"oxygen":-1}
+SURFACE {"at":"2026-10-19T07:29:13.722Z","p":{"x":-7.5,"y":28.419999986886978,"z":-29.5},"hp":20,"food":20,"ground":false,"water":false,"oxygen":373}
+SWIM {"at":"2026-10-19T07:29:13.772Z","p":{"x":-7.495874753507495,"y":28.753199980521202,"z":-29.480839041219813},"hp":20,"food":20,"ground":false,"water":false,"oxygen":373}
+END {"at":"2026-10-19T07:29:13.972Z","p":{"x":-7.485595996454268,"y":29.252203340253722,"z":-29.41995661588428},"hp":20,"food":20,"ground":false,"water":false,"oxygen":372}
+--- returned ---
+{
+ "at": "2026-10-19T07:29:13.972Z",
+ "p": {
+  "x": -7.485595996454268,
+  "y": 29.252203340253722,
+  "z": -29.41995661588428
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": false,
+ "water": false,
+ "oxygen": 372
+}
+--- chat since this player's previous program ---
+[server] p4 drowned
+--- p4 now: (-7.5, 29.3, -29.4) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: native_water_exit.js

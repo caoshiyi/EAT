@@ -1,0 +1,31 @@
+[sandbox] program #295 on p4: 23 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:26:41.563Z","p":{"x":23.30920712428439,"y":63,"z":159.30877622977795},"hp":20,"food":20,"dim":"overworld","ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"inv":[]}
+TARGET {"tx":22,"tz":199}
+ARRIVAL {"at":"2026-10-19T07:26:51.793Z","p":{"x":22.499517623597963,"y":64,"z":197.5},"hp":20,"food":20,"dim":"overworld","ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"inv":[]}
+TARGET {"tx":22,"tz":237}
+FAIL Timeout: Took to long to decide path to goal!
+END {"at":"2026-10-19T07:27:04.372Z","p":{"x":26.5,"y":63,"z":233.55428693490921},"hp":20,"food":20,"dim":"overworld","ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"inv":[],"moved":74.31404321554224,"elapsed":22960,"dead":false,"floor":"ice","feet":"air","head":"air","hazards":[]}
+--- returned ---
+{
+ "at": "2026-10-19T07:27:04.372Z",
+ "p": {
+  "x": 26.5,
+  "y": 63,
+  "z": 233.55428693490921
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "velocity": {
+  "x": 0,
+  "y": -0.0784000015258789,
+  "z": 0
+ },
+ "inv": []
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (26.5, 63, 233.6) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: scout_forward.js

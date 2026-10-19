@@ -1,0 +1,28 @@
+program #11915 on p4: 2.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:30:41.386Z","p":{"x":6.5,"y":66,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]],"sky":{"timeOfDay":14994,"isDay":false}}
+UP {"at":"2026-10-19T07:30:43.090Z","p":{"x":6.5,"y":67,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1]],"sky":{"timeOfDay":15034,"isDay":false}}
+UP {"at":"2026-10-19T07:30:43.792Z","p":{"x":6.5,"y":68,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"sky":{"timeOfDay":15034,"isDay":false}}
+END {"at":"2026-10-19T07:30:44.095Z","p":{"x":6.5,"y":68,"z":-36.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"sky":{"timeOfDay":15054,"isDay":false}}
+--- returned ---
+{
+ "at": "2026-10-19T07:30:44.095Z",
+ "p": {
+  "x": 6.5,
+  "y": 68,
+  "z": -36.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "sky": {
+  "timeOfDay": 15054,
+  "isDay": false
+ }
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (6.5, 68, -36.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: exit_pilot.js
