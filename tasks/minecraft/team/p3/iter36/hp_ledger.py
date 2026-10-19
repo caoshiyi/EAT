@@ -24,6 +24,8 @@ for p in paths:
    hp=d['dragon'].get('hp');at=d.get('at');p1=d.get('p1') or {};p3=d.get('p3') or {}
    observations.append((at,hp,p1.get('hp'),(p1.get('p') or {}).get('y'),d.get('ownHP',p3.get('hp')),p.name,tag))
   elif tag=='ENTITY_DIMENSIONS' and isinstance(d,dict):observations.append((fallback,d.get('hp'),None,None,own,p.name,tag))
+  elif tag=='VELOCITY_OBSERVATIONS' and isinstance(d,list):
+   for e in d:observations.append((e.get('at'),e.get('hp'),None,None,own,p.name,tag))
   elif tag=='CURRENT_DRAGON' and isinstance(d,list):
    for e in d:observations.append((fallback,e.get('hp'),None,None,own,p.name,tag))
 observations=sorted((o for o in observations if o[0] and isinstance(o[1],(int,float))),key=lambda o:(o[0],o[5]))
