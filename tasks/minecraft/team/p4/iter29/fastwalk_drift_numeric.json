@@ -1,0 +1,46 @@
+{
+  "kind": "numeric controller reproduction, NOT Minecraft movement qualification",
+  "target": [
+    30.5,
+    -25.5
+  ],
+  "fixedHeading": [
+    0,
+    1
+  ],
+  "rows": [
+    {
+      "x": 30.500126,
+      "z": -25.87673,
+      "oldContinue": true,
+      "crossError": 0.0001260000000016248,
+      "remaining": 0.37672999999999845,
+      "stopNew": false
+    },
+    {
+      "x": 29.515815,
+      "z": -25.7,
+      "oldContinue": true,
+      "crossError": 0.9841850000000001,
+      "remaining": 0.1999999999999993,
+      "stopNew": true
+    },
+    {
+      "x": 29.515815,
+      "z": -24.5,
+      "oldContinue": true,
+      "crossError": 0.9841850000000001,
+      "remaining": -1.0,
+      "stopNew": true
+    },
+    {
+      "x": 29.515815,
+      "z": -21.3,
+      "oldContinue": true,
+      "crossError": 0.9841850000000001,
+      "remaining": -4.199999999999999,
+      "stopNew": true
+    }
+  ],
+  "limits": "Uses final measured X error with intermediate illustrative Z samples. Does not identify knockback cause or prove subsequent physical recovery."
+}
