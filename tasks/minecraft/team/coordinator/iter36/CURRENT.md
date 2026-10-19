@@ -1,16 +1,14 @@
-# Coordinator iter36 — current 19:15 UTC
+# Coordinator iter36 — current 19:25 UTC
 
-19:15 CURRENT: canonical13993 completed548s/16acceptedhits117.854599→79.979599 (-37.875); actualfinal19:14:01.576 P1returned0/50/4 HP11.5 food14 full10/Sword46/Wood17, P3lowHP20/roof52intact. Shortenedwarm540+cleanup ACTUALLYqualifiedinside600cap. Prior13985 timeout/failedendingpreserved, notretroactivelysafe.
+19:25 CURRENT: P1criticalkitrecoveryCLOSED. P3singleownerLIVE14022recoveredSword54/Wood20/Shield111/roof52restored; P1nativeSword/Wood/Shield/E64N5received19:22:48. P1newbody20/20, Northgateactuallyclosed19:23:41 afterEndermanwander. No wholecorpsejourneyneeded.
 
-Newcold-capable480s batch14005started19:14:24, API600/absolute19:43:45, nativeascentfrom50verified19:14:36; heldwoodenpick/no stonepicks in currentnativeinventory. NewrunendingPENDING. P3holds(-5,50,4), observes30schunks; P2noacceptedtask/P4unplayed. Noadvice/permission/reportgatebeforequalifiedexecution.
+P1resumed19:24:14 changedfresh20+ordinaryshieldhurtresponse/motioncapture/samephysicalguard, internal480/API600/absolute19:43:45. NewrunENDINGPENDING. Ordinaryshieldtoggleonlyusingflagqualification, NOTdamageblockingproof. P3held(-5,50,4)HP20/roof52intact; P2noacceptedqueue/P4UNPLAYED. RootNONPLAYING, no strategy/permissiongate.
 
-Actual45acceptedhitsthroughpriorend reduced184.979599→79.979599 (105damage thisiteration). OfficialEVAL_1915dragon0/milestones11/deaths217/savefailedLAST-SAVED/HP80informational. No victory. OneP4PvPdeathonlynewlivedeathobserved.
+LastactualDragon61.354599 after53acceptedhits/123.625damage thisiteration. 14005eight hits thenP1firstliveDEATH19:19:26fatalfallescapingDragon, aftermultiplehurts/knockUP. EndingFAILED, nothealthycycle. P1ownrapidreturntoEnd19:20:43 didnotcostanotherdeath. TwoiterationdeathsP4PvP+P1fall; EVAL_1925exactofficialscore/freshness infile, no victory. Old13985timeoutfailedendingpreserved; later13993actual548shealthyreturnvalidatedshorterbudget.
 
-Helperqualifiedsmallbeforeadoption: retainedSB_helper_physical_test_185846.out real2cuts+healthyfull10ending, thenscopedLIVE13993East57/58repair+resumedhits/P3nativeAIR+floor52verify. Notuniversalgeometry/safety. Max2newcolumns/batch remainsoperatorscope. Ordinaryactionvisibilityauthoritative; no bypass. Toolsmoke660acceptancewasnotdurationproof; actual600stopandactual548cleanuparetheevidence.
+Maincurrentquestion retaineddamagewhilehandlingactualinjury/finiteDPSwith~20minremaining. No currentacceptedmaterialblockafterrecovery; don'topenwholekit/restorationgate. Nextperiodic19:35orapparentcompletion/contradiction. Requestconcisehandoffs19:40WHILEusefulplaycontinues; eval19:43/apparentvictory; cutoff19:44:24. Officialdragon1requiredforvictory; thennotifyallstopviafiles+leadownchatrelay.
 
-Currentmainquestion sustainedcompletion/finiteusefulresources within~29min, not firstcontact/AIcausalcertainty. Previousstonepicksnowexhausted/woodprimary; P3reserveStone112availableonlyifrealcutbudgetconstraint. Confirmactualcurrentstateafterasyncops; do notfollowstalequeuedSource0adviceifalreadyvalidwarmrun. Methodsplayerschoose; coordinatorNONPLAYING.
-
-Nextreview19:25orimmediateeffect/contradiction. Nextofficialafterapparentkill/19:25. Deadline19:44:24; absoluteattackloop19:43:45; handoffs19:40whileusefulplaycontinues ifnotalreadyverifiedvictory. Afterofficialdragon1 notifyallstopviaTO_OPERATORS/CURRENT+askleadrelayownchat; rootcannotimpersonateplayers.
+Strongestoperatorartifactlive_repeat_480.js/adaptivehelper, currentvariantaddsoperatorhurtresponse; exactcurrentcaller/hashfromplayerclosinghandoffmustoverrideoldsource. Currenttestresultscope/constraints inREVIEW_1925 andlatestTO_OPERATORS.
 
 Latest executable evidence:
 - P3 actually built west lower approach/retreat and preserved shared roof52. P1 relocated live, received Stone64/Wood17/Shield111; Stone64→65 actual use closed support. No extra transfer audit needed.

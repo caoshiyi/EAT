@@ -41,3 +41,6 @@
 | Isolated P1SB helperphysicaltest 18:58 |Restoredthen2actualEcuts, APERTURE_ACK, full10lowerreturnHP11.5, P3copy20/roof52E | Small scopedhelpercasequalifiedbeforelongadoption; distinctsandboxcontext |
 | Persistent P1 LIVE13993 |540internal,548stotal;16hits117.854599→79.979599; Eastrepair/resumedhits; healthy11.5/food14/full10lowerreturn | Actualboundedlifecycle+helperadoptionqualified; prior600timeoutfailurepreserved |
 | Official EVAL_1915 |dragon0/milestones11/deaths217/savefailedLAST-SAVED/HP80 | Objectiveincomplete despite105actualdamage thisiteration |
+| Persistent P1 LIVE14005 |8hits79.979599→61.354599, multiplehurts/knockUP thenfatalfall19:19:26 | EndingFAILED; firsthurtstopnotdamagebound; causebeyondobservationsunproved |
+| Persistent P3LIVE14022/P1receipt |SingleownercriticalSword54/Wood20/Shield111recovered/roof52restored→nativeP1receiptE64N5 | Retainedcapabilitychainclosed, notjustvisibleloot; P1newbody20 |
+| Ordinaryshieldtoggle onnewP1 |usingflagtrue/falsePASS; noblockingdamageobserved | APIcontrolqualifiedonly; changedcombatresponseunproveduntilactualhurt/ending |
