@@ -18,3 +18,5 @@ Actual outcomes and limits remain in ITER29_TESTS.md and raw records. These less
 
 - SB255 provided the strongest counterexample to treating cover as safety: all three full-boundary audits were at2HP, then another magic pulse killed the player. An endpoint also needs actual life/health/hazard conditions; do not stop inside a cloud merely because blocks are sealed.
 - A fixed-heading walk loop cannot reduce perpendicular error. Once cross-axis error exceeds the acceptance radius, continuing to test Euclidean distance while holding forward can drive farther past the target. Stop, sample, and physically reconcile before retaining the exact final-position check. The numeric example is not a Minecraft recovery qualification.
+
+- Cap savings are now actual, not proposed: SB250 complete cycle and SB251 wood49 unchanged. SB257 adds one challenged retained return after separation; it lost4HP and does not establish indefinite sustainability. Keep low-base cloud255 distinct from higher-ring cloud257.
