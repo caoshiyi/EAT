@@ -15,3 +15,6 @@ G27-3 exacttotalCORRECTION: CLIreset_G27_3.txt says20.9s, copy0.6s. Previousledg
 
 G27-4 launch 2026-10-19T00:24:01.611829+00:00: P2 G3results-preserved+explicitrelease10474/75 at00:23:35, P1 currentSUPPLY_ASSESSMENT noinstalledwatcher/resetdependency/noexecutedpeep, P4 allresults138saved/noactiverun/dependency. Bothworldstatusesidlepreserved. NEWcopyexpectedLIVE50/10HP/Snow4, notold58.
 G27-4 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_4.txt", "generation": "G27-4", "copySeconds": 0.7, "totalSeconds": 22.8, "exactCopyInstant": "unknown", "completed": true}
+
+G27-5 launch 2026-10-19T00:36:35.999382+00:00: P2 preserved151/death and released10486/87 at00:35:19; P1 no currentrun/resetdependency10489/90 at00:35:51; own allrunssaved/idle/no dependency. Bothstatus snapshotsidle. P1requested20sreadonlycensus/watcherafterready; thenP2nexttoken, noreplacingactiverun. LIVE50/10/Snow4copyexpected.
+G27-5 completed: {"source": "tasks/minecraft/team/p4/iter27/reset_G27_5.txt", "generation": "G27-5", "copySeconds": 0.7, "totalSeconds": 21.4, "exactCopyInstant": "unknown", "completed": true}
