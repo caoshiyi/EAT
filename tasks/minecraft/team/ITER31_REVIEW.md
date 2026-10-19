@@ -272,3 +272,17 @@ Full12019operationalbody/completeoutputread: eightactualUP46→54(consumedGravel
 ## Small software-interface probe supported a repair — 2026-10-19 08:54:18 UTC
 
 Full12021source/completedreturnread. Read-onlyfindBlocksmatcheractualcalls29011/nullPosition339; namematchthenfilterreturnedVec3positionsproduced80actualpositionsandboundedeligiblelist. Thisdirectlyshowscallbackpositionisnotuniversallyavailableandcorrectedselectioncancomplete. Itdoesnotcountnullpositionsspecificallyonspruce_logmatchesoruniquelyreconstruct12015errorstack, soexactearliercauseisstillbounded. No physicalinteraction/harvest/workstationqualified; outputexplicitlysaysthat. Usefulsoftwaremethodrepairneednotconsumeanotherfullgatherchainormasqueradeasresourceprogress. No newliveobjectivemilestone.
+
+## Actual surface adoption, delayed log receipt, changed roof — 2026-10-19 08:59:56 UTC
+
+12025operationalbody/completeoutputand12027fullreturnedcurrentauditinspected. Actual12025source54/Dirt10/Gravel3→threeUP57at08:57:16.596→actualsurfacewalk9.680/66/-14.487at28.225. Oneordinarylogcut9/71/-15; LOGS_ACTUAL31.797stillinventory0logs, subsequentWALK32.714receivedLog1. Final36.476P2(11.5,66,-15.559),20HP20food/Dirt2/Log1; threeaudits35.873/36.072/36.273tenfullusingnaturalspruce-leafroof68andthreegravelwalls. ThreeCUT/targetlogsproposedarenotactualthree-logreceipt. Currentwood1isrealrenewedresourcecapability, notfulltoolkit.
+
+12027currentaudit08:59:13.055samebody/HP/inventorybut **roof68nowAIR**, othersninefacesfull. Roofchangeoccurredbetweenauditswithoutobservedcause; don'tinventleafdecay/explosionorretainoldfullroofclaim. Thisisafirstobservedpredecessor→successordivergenceforthatending. Source-dependentnaturalgeometrycanchangeevenwhenbody/HPmatch. Noenduringfullpodclaim; ownercanobserve/fixactualconditionswithoutreviewerpermission. P4connectorproposal11393–94at08:57:58postdates12025terminal, soitisnotcausalevidenceforalreadycompletedexit. Noexclusiveattributionormisorderedhandoffclaim. No currentEnd/combat/scoreeffect.
+
+## Closure preparation: handoff corrections still owned by players — 2026-10-19 09:01:13 UTC
+
+P2.mdnowhas08:49completeprovisionalheader,butits08:47:31Gravel5/DURING12017snapshotisalreadyhistorical; actual12017terminal47:42Gravel11,12019refuge54and12025/27surfacewood1supersedeit. PleasepublishOWNfinalcurrentstatefromcompletedrecord. P4.md08:50overridehonestlyrecordsreview-onlymismatch,butworkstation44:34recordIDis **12015**, not12012; pleasecorrectOWNcitation. Independentreviewretainsbothobservedrecordsandcorrections; noeditingplayerfilesorapprovalrequest. Finalwindow09:07:04–09:12:04willreconcileactualfinalpublicationsanddecisivearenaoutputs.
+
+## One log became a real local workstation, tools still absent — 2026-10-19 09:02:35 UTC
+
+Full12030operationalbody/outputread. ActualSOURCELog1/Dirt2/20HP→normaldirtroofplacement(STABLE_ROOF09:01:49.703)→craft4planks50.052→craftTable1 at50.705, thenactualplaceAt11/67/-15completedbeforefurthercuts. PlannedtoolsrequiredtwoadditionalactualLogs; none received. Fouractualleafcutswerefollowedbycallerfacevalidationfailurebecauseleaf10/68/-15occludedtarget8/68/-14. Nothrough-blockdigattemptclaimed/authorized. FinallyactualwestresealconsumedoneDirt; terminal09:01:59.643at11.3/66/-15.323,20HP20food/Dirt1, noheldtools/Logs. Tableisplacedlocalcapability, notinventoryloss/deathnorcraft-toolqualification. Newroofrepairaddressesobservedairroof; finaltenfaces/currentcontrolsrequireclosureaudit. NoEnd/combat effect.
