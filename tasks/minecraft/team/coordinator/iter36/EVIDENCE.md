@@ -10,3 +10,10 @@
 | Official saved eval, iter36 |EVAL_OPENING dragon0/milestones11/deaths216; save failed; HP185/crystals0 information| Objective incomplete; freshness qualified |
 | Interpretation | Plateau concerns action under changed conditions, plus failed retreat assumptions| Not an established single cause; operators choose discriminating alternatives |
 | Unknown | Current contact and survival conditions that permit repeated useful action| First experiment should distinguish alternatives and produce a decision |
+| Persistent world, iter36 17:47 |P2 chat13169 actualSTATUS WoodPick in idleP4, not P3, despitetinyEnd receipt13167| Loan failed/released. Tiny fungible receipt did not prove subsequent nonfungible custody. No P4 control permitted |
+| Isolated P1 E2, iter36 17:48 |SB46 route stopped missingfloor, closed55 ending; SB47 finds Dragondeath before contact test| Preparation failed; contact hypothesis untested. Confirms existing unsafe55 boundary, does not disprove contact method |
+| Persistent world, iter36 17:48 |P3 chat13177 actualbase0/50/4 healthy20; pick loan released| Execution not blocked on restoring failed donation. Current-contact/retreat remains unresolved |
+| Persistent world, iter36 17:49 |P3 chat13195 N7→8 native receipt, closes request; initial attempt donor recollected| ONE N delivered under revised recipient scope, not N2 complete. Use/effect still pending; extra audit unnecessary |
+| Isolated P3 SB22, iter36 |50→60→50 passed28s/HP20; down20.6s and all7N lost by handmining| One traversal qualified; stock/latency does not qualify sustainable repetition |
+| Persistent P2 LIVE13888 17:51:45–52:45 |241samples allphase1/59.929s, root56.3679..82.7473; HP184.979599; P2/P3 HP20| Relevant cue absent this live minute; no proof perpetual absence, hidden-target cause, or contact impossibility |
+| Interpretation / prior counterexample |P3 suspects hidden players sustainphase1; iter35 G5 hadphase2→3→6 beforepoke| Hypothesis not mechanism proof; discriminate spontaneous transitions/context from action-associated transition |
