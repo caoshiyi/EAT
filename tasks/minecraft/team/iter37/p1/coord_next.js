@@ -1,0 +1,1 @@
+bot.chat('P1actual14394threehits41.104599->34.354599/fullpod20, restart120combatNOW ~21:39-21:42 thenAxehandoff. P2Northgate-3/z3 y50/51 authorizedONLYwhenP1endedlow, preserveallroof52/fieldE51/slab. P3pleaseStoneAxepriority and courierreadyby21:42. Swordresumeimmediateotherwise.');
