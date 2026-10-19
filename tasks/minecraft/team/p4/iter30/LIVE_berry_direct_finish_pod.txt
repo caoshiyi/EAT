@@ -1,0 +1,42 @@
+program #11826 on p4: 2.9 s
+--- output ---
+BERRY_SOURCE {"at":"2026-10-19T06:18:28.076Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null]],"time":4369}
+ACTUAL_BERRY_VIEW {"eye":{"x":7.647601550285674,"y":68.62,"z":-22.496870519044958},"aim":{"x":7.5,"y":67.45,"z":-21.5},"distance":1.5441622484012816,"name":"sweet_berry_bush","shape":[],"box":"empty","properties":{"age":"3"}}
+BERRY_AFTER_ACTUAL_USE {"properties":{"age":"1"},"state":{"at":"2026-10-19T06:18:28.935Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null],["sweet_berries",3,null]],"time":4389}}
+BERRY_CLEAR_RECEIPT {"at":"2026-10-19T06:18:29.786Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null],["sweet_berries",3,null]],"time":4409}
+ACTUAL_SHELTER {"faces":[{"p":{"x":7,"y":66,"z":-23},"n":"dirt","full":true},{"p":{"x":7,"y":69,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":8,"y":67,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":8,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-24},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-24},"n":"spruce_planks","full":true}],"state":{"at":"2026-10-19T06:18:30.991Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",4,null],["sweet_berries",3,null]],"time":4429}}
+ACQUIRE_END {"at":"2026-10-19T06:18:30.991Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",4,null],["sweet_berries",3,null]],"time":4429}
+--- returned ---
+{
+ "at": "2026-10-19T06:18:30.991Z",
+ "p": {
+  "x": 7.647601550285674,
+  "y": 67,
+  "z": -22.496870519044958
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "spruce_log",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   4,
+   null
+  ],
+  [
+   "sweet_berries",
+   3,
+   null
+  ]
+ ],
+ "time": 4429
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: berry_direct_finish_pod.js

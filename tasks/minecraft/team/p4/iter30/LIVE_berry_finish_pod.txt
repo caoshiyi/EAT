@@ -1,0 +1,35 @@
+program #11825 on p4: 0.3 s
+--- output ---
+BERRY_SOURCE {"at":"2026-10-19T06:17:54.750Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null]],"time":3709}
+ACQUIRE_FAILURE Error: not current visible (7, 67, -22)
+SHELTER_FAILURE Error: Server refused to place spruce_planks at (7, 67, -22): the block is still sweet_berry_bush {"at":"2026-10-19T06:17:55.057Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null]],"time":3709}
+ACQUIRE_END {"at":"2026-10-19T06:17:55.057Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"ground":true,"inventory":[["spruce_log",3,null],["spruce_planks",8,null]],"time":3709}
+--- returned ---
+{
+ "at": "2026-10-19T06:17:55.057Z",
+ "p": {
+  "x": 7.647601550285674,
+  "y": 67,
+  "z": -22.496870519044958
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inventory": [
+  [
+   "spruce_log",
+   3,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ]
+ ],
+ "time": 3709
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: berry_finish_pod.js

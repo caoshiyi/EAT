@@ -1,0 +1,53 @@
+program #11827 on p4: 5.5 s
+--- output ---
+CRAFT_SOURCE {"at":"2026-10-19T06:19:22.955Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",3,null],["spruce_planks",3,null],["sweet_berries",3,null]]}
+ACTUAL_CRAFT {"n":"spruce_planks","times":2,"state":{"at":"2026-10-19T06:19:23.155Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",11,null],["sweet_berries",3,null]]}}
+ACTUAL_CRAFT {"n":"crafting_table","times":1,"state":{"at":"2026-10-19T06:19:23.355Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",7,null],["crafting_table",1,null],["sweet_berries",3,null]]}}
+ACTUAL_CRAFT {"n":"stick","times":1,"state":{"at":"2026-10-19T06:19:27.219Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",6,null],["stick",4,null],["sweet_berries",3,null]]}}
+ACTUAL_CRAFT {"n":"wooden_pickaxe","times":1,"state":{"at":"2026-10-19T06:19:27.471Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["stick",2,null],["spruce_planks",3,null],["wooden_pickaxe",1,0],["sweet_berries",3,null]]}}
+ACTUAL_CRAFT {"n":"wooden_shovel","times":1,"state":{"at":"2026-10-19T06:19:27.671Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",2,null],["wooden_shovel",1,0],["wooden_pickaxe",1,0],["sweet_berries",3,null]]}}
+CRAFT_ENDING {"faces":[{"p":{"x":7,"y":66,"z":-23},"n":"grass_block","full":true},{"p":{"x":7,"y":69,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":8,"y":67,"z":-23},"n":"crafting_table","full":true},{"p":{"x":8,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-24},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-24},"n":"spruce_planks","full":true}],"state":{"at":"2026-10-19T06:19:27.872Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",2,null],["wooden_shovel",1,0],["wooden_pickaxe",1,0],["sweet_berries",3,null]]}}
+CRAFT_ENDING {"faces":[{"p":{"x":7,"y":66,"z":-23},"n":"grass_block","full":true},{"p":{"x":7,"y":69,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":8,"y":67,"z":-23},"n":"crafting_table","full":true},{"p":{"x":8,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-24},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-24},"n":"spruce_planks","full":true}],"state":{"at":"2026-10-19T06:19:28.072Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",2,null],["wooden_shovel",1,0],["wooden_pickaxe",1,0],["sweet_berries",3,null]]}}
+CRAFT_ENDING {"faces":[{"p":{"x":7,"y":66,"z":-23},"n":"grass_block","full":true},{"p":{"x":7,"y":69,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":8,"y":67,"z":-23},"n":"crafting_table","full":true},{"p":{"x":8,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":67,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":6,"y":68,"z":-23},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-22},"n":"spruce_planks","full":true},{"p":{"x":7,"y":67,"z":-24},"n":"spruce_planks","full":true},{"p":{"x":7,"y":68,"z":-24},"n":"spruce_planks","full":true}],"state":{"at":"2026-10-19T06:19:28.272Z","p":{"x":7.647601550285674,"y":67,"z":-22.496870519044958},"hp":20,"food":20,"inventory":[["spruce_log",1,null],["spruce_planks",2,null],["wooden_shovel",1,0],["wooden_pickaxe",1,0],["sweet_berries",3,null]]}}
+--- returned ---
+{
+ "at": "2026-10-19T06:19:28.272Z",
+ "p": {
+  "x": 7.647601550285674,
+  "y": 67,
+  "z": -22.496870519044958
+ },
+ "hp": 20,
+ "food": 20,
+ "inventory": [
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "sweet_berries",
+   3,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (7.6, 67, -22.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: craft_tools_pod.js
