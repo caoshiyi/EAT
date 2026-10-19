@@ -1,0 +1,49 @@
+program #12038 on p2: 0.5 s
+--- output ---
+CLOSURE_ACTUAL {"at":"2026-10-19T09:07:47.806Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,0],["spruce_planks",1,null],["dirt",1,null],["spruce_sapling",2,null]],"faces":[{"q":{"x":11,"y":65,"z":-16},"n":"grass_block","full":true},{"q":{"x":11,"y":68,"z":-16},"n":"dirt","full":true},{"q":{"x":12,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":12,"y":67,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":67,"z":-16},"n":"dirt","full":true},{"q":{"x":11,"y":66,"z":-15},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-15},"n":"crafting_table","full":true},{"q":{"x":11,"y":66,"z":-17},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-17},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"mobs":[{"n":"skeleton","p":{"x":7.4954388839505075,"y":60,"z":-12.699999988079071}},{"n":"skeleton","p":{"x":18.500596643897605,"y":62,"z":-17.699941717030626}}]}
+CLOSURE_ACTUAL {"at":"2026-10-19T09:07:47.959Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,0],["spruce_planks",1,null],["dirt",1,null],["spruce_sapling",2,null]],"faces":[{"q":{"x":11,"y":65,"z":-16},"n":"grass_block","full":true},{"q":{"x":11,"y":68,"z":-16},"n":"dirt","full":true},{"q":{"x":12,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":12,"y":67,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":67,"z":-16},"n":"dirt","full":true},{"q":{"x":11,"y":66,"z":-15},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-15},"n":"crafting_table","full":true},{"q":{"x":11,"y":66,"z":-17},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-17},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"mobs":[{"n":"skeleton","p":{"x":7.4954388839505075,"y":60,"z":-12.699999988079071}},{"n":"skeleton","p":{"x":18.500596643897605,"y":62,"z":-17.699941717030626}}]}
+CLOSURE_ACTUAL {"at":"2026-10-19T09:07:48.165Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,0],["spruce_planks",1,null],["dirt",1,null],["spruce_sapling",2,null]],"faces":[{"q":{"x":11,"y":65,"z":-16},"n":"grass_block","full":true},{"q":{"x":11,"y":68,"z":-16},"n":"dirt","full":true},{"q":{"x":12,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":12,"y":67,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":66,"z":-16},"n":"gravel","full":true},{"q":{"x":10,"y":67,"z":-16},"n":"dirt","full":true},{"q":{"x":11,"y":66,"z":-15},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-15},"n":"crafting_table","full":true},{"q":{"x":11,"y":66,"z":-17},"n":"dirt","full":true},{"q":{"x":11,"y":67,"z":-17},"n":"grass_block","full":true}],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null,"mobs":[{"n":"skeleton","p":{"x":7.4954388839505075,"y":60,"z":-12.699999988079071}},{"n":"skeleton","p":{"x":18.500596643897605,"y":62,"z":-17.699941717030626}}]}
+--- returned ---
+{
+ "at": "2026-10-19T09:07:48.316Z",
+ "p": {
+  "x": 11.5,
+  "y": 66,
+  "z": -15.525262635179981
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_sapling",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: CLOSURE09:07 captured: evaluator SAVEFAILED connectionrefused, LAST-SAVED dragon0/milestones11/deaths197. Canonical events LIVE9(P2seven/P4two),SB4allP4 incl idle; no extra deaths. P4actual12036 at09:07:08 TENFULLx3/20HP20food/Dirt4/allcontrolsfalse/goalnu
+p4: ll, no outstanding. Superseding12032:12034 actual PICKUP log09:06:10+return healthy;12035 actual woodenShovel09:07:08 YES. G4currentSBP2 10HP/food0, old healthy snapshot STALE. Handoff final being committed; no reset.
+--- p2 now: (11.5, 66, -15.5) in overworld, health 20/20, food 20/20, alive

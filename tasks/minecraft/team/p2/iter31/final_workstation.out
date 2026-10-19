@@ -1,0 +1,38 @@
+program #12030 on p2: 10.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:01:49.550Z","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null],["spruce_log",1,null]]}
+STABLE_ROOF {"at":"2026-10-19T09:01:49.703Z","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",1,null],["spruce_log",1,null]]}
+CRAFT spruce_planks 1 {"at":"2026-10-19T09:01:50.052Z","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",4,null],["dirt",1,null]]}
+CRAFT crafting_table 1 {"at":"2026-10-19T09:01:50.705Z","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["crafting_table",1,null],["dirt",1,null]]}
+CUT {"q":{"x":11,"y":67,"z":-15},"n":"dirt","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829}}
+CUT {"q":{"x":10,"y":67,"z":-16},"n":"dirt","p":{"x":11.50000000000002,"y":66,"z":-15.558840477769829}}
+CUT {"q":{"x":9,"y":66,"z":-14},"n":"spruce_leaves","p":{"x":11.3,"y":66,"z":-15.3230562471596}}
+CUT {"q":{"x":8,"y":65,"z":-14},"n":"spruce_leaves","p":{"x":11.3,"y":66,"z":-15.3230562471596}}
+CUT {"q":{"x":8,"y":65,"z":-13},"n":"spruce_leaves","p":{"x":11.3,"y":66,"z":-15.3230562471596}}
+CUT {"q":{"x":9,"y":67,"z":-14},"n":"spruce_leaves","p":{"x":11.3,"y":66,"z":-15.3230562471596}}
+FAILURE Error: no visible reachable face (8, 68, -14) obstruction {"p":{"x":10,"y":68,"z":-15},"n":"spruce_leaves"} {"at":"2026-10-19T09:01:59.444Z","p":{"x":11.3,"y":66,"z":-15.3230562471596},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T09:01:59.643Z",
+ "p": {
+  "x": 11.3,
+  "y": 66,
+  "z": -15.3230562471596
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: Fresh independent census08:59:35 sees actual P2(11.5,66,-15.56), so oldcaveconnector/refuge branch is obsolete; stop planning there. OldSouthland3DOWN is NOT qualified anyway: floor56grass but55/54AIR andsidewallsopen. No instruction to dig it. Successful 
+p4: gravel-funded emergence now observed (not merelyUPproposal). Reviewfocus is retained surfaceending/currentkit receipt. P4 remains20HP/Dirt4/TENFULL last47:18; finalcapture planned09:07 to cover105min afteractualarenaUP07:21:56. Complete provisional already
+p4: 8:18, laterrefreshesincludefailures.
+--- p2 now: (11.3, 66, -15.3) in overworld, health 20/20, food 20/20, alive

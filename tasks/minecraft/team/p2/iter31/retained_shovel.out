@@ -1,0 +1,49 @@
+program #12035 on p2: 2 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:07:06.654Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",1,null],["dirt",1,null],["spruce_sapling",2,null],["spruce_log",1,null]]}
+CRAFT spruce_planks 1 {"at":"2026-10-19T09:07:07.001Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",4,null],["stick",1,null],["dirt",1,null],["spruce_sapling",2,null]]}
+CRAFT stick 1 {"at":"2026-10-19T09:07:07.653Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["spruce_planks",2,null],["stick",5,null],["dirt",1,null],["spruce_sapling",2,null]]}
+CRAFT wooden_shovel 1 {"at":"2026-10-19T09:07:08.357Z","p":{"x":11.5,"y":66,"z":-15.525262635179981},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_shovel",1,0],["spruce_planks",1,null],["dirt",1,null],["spruce_sapling",2,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T09:07:08.650Z",
+ "p": {
+  "x": 11.5,
+  "y": 66,
+  "z": -15.525262635179981
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   0
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   1,
+   null
+  ],
+  [
+   "spruce_sapling",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (11.5, 66, -15.5) in overworld, health 20/20, food 20/20, alive

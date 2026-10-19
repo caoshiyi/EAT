@@ -1,0 +1,39 @@
+program #12023 on p2: 4.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T08:55:54.049Z","p":{"x":-3.499999999999962,"y":54,"z":-38.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3,null],["dirt",6,null]]}
+CUT {"q":{"x":-4,"y":56,"z":-39},"n":"grass_block","p":{"x":-3.499999999999962,"y":54,"z":-38.5}}
+CUT {"q":{"x":-3,"y":56,"z":-39},"n":"grass_block","p":{"x":-3.499999999999962,"y":54,"z":-38.5}}
+CUT {"q":{"x":-5,"y":56,"z":-39},"n":"grass_block","p":{"x":-3.499999999999962,"y":54,"z":-38.5}}
+CUT {"q":{"x":-4,"y":56,"z":-38},"n":"grass_block","p":{"x":-3.499999999999962,"y":54,"z":-38.5}}
+FAILURE Error: actual ending funding {"at":"2026-10-19T08:55:58.271Z","p":{"x":-3.499999999999962,"y":54,"z":-38.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3,null],["dirt",9,null]]}
+RECOVERY_FAILURE Error: no flat box footprint {"at":"2026-10-19T08:55:58.274Z","p":{"x":-3.499999999999962,"y":54,"z":-38.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["gravel",3,null],["dirt",9,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T08:55:58.274Z",
+ "p": {
+  "x": -3.499999999999962,
+  "y": 54,
+  "z": -38.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "gravel",
+   3,
+   null
+  ],
+  [
+   "dirt",
+   9,
+   null
+  ]
+ ],
+ "dead": false,
+ "boxed": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-3.5, 54, -38.5) in overworld, health 20/20, food 20/20, alive
