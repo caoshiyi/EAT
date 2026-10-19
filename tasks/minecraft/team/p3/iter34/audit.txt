@@ -1,0 +1,27 @@
+program #12823 on p3: 0 s
+--- output ---
+STATE {"p":{"x":8.49999999999923,"y":55,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",11],["dirt",1]],"controls":{}}
+ROW [[7,54,88,"stone"],[7,54,89,"stone"],[7,54,90,"stone"],[8,54,88,"stone"],[8,54,89,"stone"],[8,54,90,"stone"],[9,54,88,"stone"],[9,54,89,"stone"],[9,54,90,"stone"]]
+ROW [[7,55,88,"stone"],[7,55,89,"stone"],[7,55,90,"stone"],[8,55,88,"cobblestone"],[8,55,89,"air"],[8,55,90,"stone"],[9,55,88,"stone"],[9,55,89,"stone"],[9,55,90,"stone"]]
+ROW [[7,56,88,"stone"],[7,56,89,"stone"],[7,56,90,"stone"],[8,56,88,"cobblestone"],[8,56,89,"air"],[8,56,90,"stone"],[9,56,88,"gravel"],[9,56,89,"dirt"],[9,56,90,"stone"]]
+ROW [[7,57,88,"stone"],[7,57,89,"stone"],[7,57,90,"stone"],[8,57,88,"stone"],[8,57,89,"dirt"],[8,57,90,"stone"],[9,57,88,"air"],[9,57,89,"dirt"],[9,57,90,"stone"]]
+ROW [[7,58,88,"stone"],[7,58,89,"stone"],[7,58,90,"stone"],[8,58,88,"stone"],[8,58,89,"air"],[8,58,90,"air"],[9,58,88,"stone"],[9,58,89,"stone"],[9,58,90,"stone"]]
+ROW [[7,59,88,"sandstone"],[7,59,89,"sandstone"],[7,59,90,"sandstone"],[8,59,88,"sandstone"],[8,59,89,"air"],[8,59,90,"air"],[9,59,88,"stone"],[9,59,89,"stone"],[9,59,90,"stone"]]
+ROW [[7,60,88,"sandstone"],[7,60,89,"sandstone"],[7,60,90,"sandstone"],[8,60,88,"sandstone"],[8,60,89,"dirt"],[8,60,90,"sandstone"],[9,60,88,"sandstone"],[9,60,89,"sandstone"],[9,60,90,"sandstone"]]
+ROW [[7,61,88,"sandstone"],[7,61,89,"sandstone"],[7,61,90,"sandstone"],[8,61,88,"sandstone"],[8,61,89,"air"],[8,61,90,"sandstone"],[9,61,88,"sandstone"],[9,61,89,"sandstone"],[9,61,90,"sandstone"]]
+ROW [[7,62,88,"sand"],[7,62,89,"sand"],[7,62,90,"air"],[8,62,88,"diorite"],[8,62,89,"air"],[8,62,90,"diorite"],[9,62,88,"air"],[9,62,89,"sandstone"],[9,62,90,"sandstone"]]
+ROW [[7,63,88,"air"],[7,63,89,"sand"],[7,63,90,"air"],[8,63,88,"diorite"],[8,63,89,"air"],[8,63,90,"diorite"],[9,63,88,"air"],[9,63,89,"sand"],[9,63,90,"sand"]]
+ROW [[7,64,88,"air"],[7,64,89,"diorite"],[7,64,90,"sandstone"],[8,64,88,"diorite"],[8,64,89,"air"],[8,64,90,"sandstone"],[9,64,88,"air"],[9,64,89,"diorite"],[9,64,90,"sand"]]
+ROW [[7,65,88,"air"],[7,65,89,"diorite"],[7,65,90,"air"],[8,65,88,"diorite"],[8,65,89,"air"],[8,65,90,"diorite"],[9,65,88,"air"],[9,65,89,"diorite"],[9,65,90,"air"]]
+ROW [[7,66,88,"air"],[7,66,89,"diorite"],[7,66,90,"air"],[8,66,88,"cobblestone"],[8,66,89,"air"],[8,66,90,"diorite"],[9,66,88,"air"],[9,66,89,"diorite"],[9,66,90,"stone"]]
+ROW [[7,67,88,"basalt"],[7,67,89,"dirt"],[7,67,90,"basalt"],[8,67,88,"basalt"],[8,67,89,"spruce_planks"],[8,67,90,"basalt"],[9,67,88,"basalt"],[9,67,89,"basalt"],[9,67,90,"basalt"]]
+ROW [[7,68,88,"basalt"],[7,68,89,"air"],[7,68,90,"cobblestone"],[8,68,88,"cobblestone"],[8,68,89,"air"],[8,68,90,"basalt"],[9,68,88,"air"],[9,68,89,"cobblestone"],[9,68,90,"basalt"]]
+ROW [[7,69,88,"basalt"],[7,69,89,"air"],[7,69,90,"cobblestone"],[8,69,88,"cobblestone"],[8,69,89,"air"],[8,69,90,"basalt"],[9,69,88,"air"],[9,69,89,"cobblestone"],[9,69,90,"basalt"]]
+ROW [[7,70,88,"snow"],[7,70,89,"basalt"],[7,70,90,"cobblestone"],[8,70,88,"snow"],[8,70,89,"basalt"],[8,70,90,"snow"],[9,70,88,"basalt"],[9,70,89,"basalt"],[9,70,90,"snow"]]
+ROW [[7,71,88,"air"],[7,71,89,"snow"],[7,71,90,"snow"],[8,71,88,"air"],[8,71,89,"snow"],[8,71,90,"air"],[9,71,88,"snow"],[9,71,89,"snow"],[9,71,90,"air"]]
+ENTITIES [["bat",null,{"x":15.25,"y":59.10000002384186,"z":78.44079491260149}],["zombie",null,{"x":9.499954763299264,"y":56,"z":82.04988887463121}],["creeper",null,{"x":9.499960336872501,"y":56,"z":81.30000001192093}],["skeleton",null,{"x":7.406654797065725,"y":62,"z":98.1798081390972}],["player","p1",{"x":8.563430703254376,"y":55,"z":87.5746275330706}],["player","p3",{"x":8.49999999999923,"y":55,"z":89.7}]]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 55, 89.7) in overworld, health 20/20, food 20/20, alive

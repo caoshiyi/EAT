@@ -1,0 +1,14 @@
+program #12834 on p3: 1.1 s
+--- output ---
+SOURCE {"p":{"x":8.49999999999923,"y":56,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",10],["dirt",2]]}
+JUMP [ 56.7531999805212, 57.166109260938214 ]
+POST {"p":{"x":8.49999999999923,"y":57,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",9],["dirt",2]]} gravel
+ENDING {"p":{"x":8.49999999999923,"y":57,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",9],["dirt",2]]}
+--- error ---
+Error: hidden (8, 60, 89)
+    at face (p3-program-12834.js:5:211)
+    at cut (p3-program-12834.js:6:231)
+    at async p3-program-12834.js:11:28
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (8.5, 57, 89.7) in overworld, health 20/20, food 20/20, alive

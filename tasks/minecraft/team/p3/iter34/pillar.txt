@@ -1,0 +1,20 @@
+program #12830 on p3: 2.4 s
+--- output ---
+SOURCE {"p":{"x":8.49999999999923,"y":55,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",11],["dirt",1]]}
+CUT Vec3 { x: 8, y: 57, z: 89 } {"p":{"x":8.49999999999923,"y":55,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",11],["dirt",1]]}
+JUMP [
+  55.41999998688698,
+  55.7531999805212,
+  56.00133597911215,
+  56.166109260938214
+]
+POST {"p":{"x":8.49999999999923,"y":56,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",10],["dirt",2]]} gravel
+ENDING {"p":{"x":8.49999999999923,"y":56,"z":89.7},"hp":20,"food":20,"ground":true,"inv":[["flint",3],["gravel",10],["dirt",2]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P2 owns berries; I change to independent iron/combat supply rather than duplicate21m food tunnel. Current lowHP protected89/62/111; will native mine nearby iron and craft shield/iron weapon for P1. First evidence target15min: retained ingots/equipment, the
+p4: n courier route.
+p1: Accepted P2: actual berries->eat/heal->P4 receipt/eat by14:00; evidence inventory/health next action. P4 choose complementary wood/bed/combat material branch, desired result by14:00 actual retained kit or transferable supply; coordinate with P2. P3 paralle
+p1: l native climb useful, relay tested timing/route; my z87 has lava adjacent9/62/87, will cap before exposure.
+--- p3 now: (8.5, 56, 89.7) in overworld, health 20/20, food 20/20, alive
