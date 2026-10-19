@@ -3,6 +3,7 @@ import argparse, datetime, json, pathlib, re, subprocess
 p=argparse.ArgumentParser();p.add_argument('--sandbox',action='store_true');p.add_argument('file',type=pathlib.Path);p.add_argument('--timeout',type=int,default=60);a=p.parse_args()
 base=pathlib.Path('tasks/minecraft/team/p4/iter35');a.file=a.file.resolve()
 if base.resolve() not in a.file.parents: p.error('only own iter35 source files')
+if 'PRACTICE' in a.file.name and not a.sandbox: p.error('PRACTICE source requires --sandbox; no arena run')
 check=subprocess.run(['node','--check'],input='async function operation(bot, Movements, goals) {\n'+a.file.read_text()+'\n}',text=True,capture_output=True)
 if check.returncode: raise SystemExit(check.stderr)
 start=datetime.datetime.now(datetime.timezone.utc).isoformat();tag=datetime.datetime.now(datetime.timezone.utc).strftime('%H%M%S_%f');raw=base/(a.file.stem+'_'+tag+'.txt')

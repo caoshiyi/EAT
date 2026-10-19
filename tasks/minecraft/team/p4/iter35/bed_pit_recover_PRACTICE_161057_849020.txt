@@ -1,0 +1,35 @@
+[sandbox] program #15 on p4: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:10:57.991Z","p":{"x":-3.5,"y":62,"z":-24.5},"hp":20,"food":20,"ground":true,"inv":[],"time":19099,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+GRID [[[-4,62,-25],"snow"],[[-4,61,-25],"grass_block"],[[-4,64,-25],"air"],[[144,-37,2231],"stone_bricks"],[[144,-36,2231],"air"],[[144,-35,2231],"air"]]
+FAILURE Error: source
+ENDING {"at":"2026-10-19T16:10:57.991Z","p":{"x":-3.5,"y":62,"z":-24.5},"hp":20,"food":20,"ground":true,"inv":[],"time":19099,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-4,"y":61,"z":-25},"n":"grass_block","full":true},{"q":{"x":-4,"y":64,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":62,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-5,"y":62,"z":-25},"n":"snow","full":false},{"q":{"x":-5,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-4,"y":62,"z":-24},"n":"grass_block","full":true},{"q":{"x":-4,"y":63,"z":-24},"n":"snow","full":false},{"q":{"x":-4,"y":62,"z":-26},"n":"air","full":false},{"q":{"x":-4,"y":63,"z":-26},"n":"spruce_planks","full":true}]}
+ENDING {"at":"2026-10-19T16:10:58.093Z","p":{"x":-3.5,"y":62,"z":-24.5},"hp":20,"food":20,"ground":true,"inv":[],"time":19099,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-4,"y":61,"z":-25},"n":"grass_block","full":true},{"q":{"x":-4,"y":64,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":62,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-5,"y":62,"z":-25},"n":"snow","full":false},{"q":{"x":-5,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-4,"y":62,"z":-24},"n":"grass_block","full":true},{"q":{"x":-4,"y":63,"z":-24},"n":"snow","full":false},{"q":{"x":-4,"y":62,"z":-26},"n":"air","full":false},{"q":{"x":-4,"y":63,"z":-26},"n":"spruce_planks","full":true}]}
+ENDING {"at":"2026-10-19T16:10:58.243Z","p":{"x":-3.5,"y":62,"z":-24.5},"hp":20,"food":20,"ground":true,"inv":[],"time":19099,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":-4,"y":61,"z":-25},"n":"grass_block","full":true},{"q":{"x":-4,"y":64,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":62,"z":-25},"n":"air","full":false},{"q":{"x":-3,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-5,"y":62,"z":-25},"n":"snow","full":false},{"q":{"x":-5,"y":63,"z":-25},"n":"air","full":false},{"q":{"x":-4,"y":62,"z":-24},"n":"grass_block","full":true},{"q":{"x":-4,"y":63,"z":-24},"n":"snow","full":false},{"q":{"x":-4,"y":62,"z":-26},"n":"air","full":false},{"q":{"x":-4,"y":63,"z":-26},"n":"spruce_planks","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T16:10:58.393Z",
+ "p": {
+  "x": -3.5,
+  "y": 62,
+  "z": -24.5
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [],
+ "time": 19119,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+[server] p4 was shot by Skeleton
+--- p4 now: (-3.5, 62, -24.5) in overworld, health 20/20, food 20/20, alive

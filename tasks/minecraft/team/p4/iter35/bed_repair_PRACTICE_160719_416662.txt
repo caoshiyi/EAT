@@ -1,0 +1,51 @@
+[sandbox] program #12 on p4: 1.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T16:07:19.546Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14739,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+MOBS [
+  [
+    'skeleton',
+    Vec3 { x: 144.69982918011002, y: -36, z: 2232.180712878704 }
+  ],
+  [
+    'skeleton',
+    Vec3 { x: 146.29992934657204, y: -36, z: 2232.184621569154 }
+  ],
+  [
+    'zombie',
+    Vec3 { x: 138.585131872697, y: -38, z: 2239.9703795301493 }
+  ]
+]
+BED white_bed
+CUT {"q":{"x":142,"y":-36,"z":2232},"n":"white_bed","state":{"at":"2026-10-19T16:07:20.002Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14739,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+BED_ATTEMPT {"at":"2026-10-19T16:07:20.506Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14759,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+BED_DROPS [ [ 1089, Vec3 { x: 142.125, y: -36, z: 2232.751384844824 } ] ]
+ENDING {"at":"2026-10-19T16:07:20.507Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14759,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":140,"y":-37,"z":2231},"n":"mossy_stone_bricks","full":true},{"q":{"x":140,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":141,"y":-36,"z":2231},"n":"torch","full":false},{"q":{"x":141,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-36,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":140,"y":-36,"z":2232},"n":"crafting_table","full":true},{"q":{"x":140,"y":-35,"z":2232},"n":"air","full":false},{"q":{"x":140,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":140,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+ENDING {"at":"2026-10-19T16:07:20.657Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14759,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":140,"y":-37,"z":2231},"n":"mossy_stone_bricks","full":true},{"q":{"x":140,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":141,"y":-36,"z":2231},"n":"torch","full":false},{"q":{"x":141,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-36,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":140,"y":-36,"z":2232},"n":"crafting_table","full":true},{"q":{"x":140,"y":-35,"z":2232},"n":"air","full":false},{"q":{"x":140,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":140,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+ENDING {"at":"2026-10-19T16:07:20.808Z","p":{"x":140.54593403317403,"y":-36,"z":2231.4711161627365},"hp":15.666664123535156,"food":19,"ground":true,"inv":[],"time":14759,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":140,"y":-37,"z":2231},"n":"mossy_stone_bricks","full":true},{"q":{"x":140,"y":-34,"z":2231},"n":"cave_air","full":false},{"q":{"x":141,"y":-36,"z":2231},"n":"torch","full":false},{"q":{"x":141,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-36,"z":2231},"n":"cave_air","full":false},{"q":{"x":139,"y":-35,"z":2231},"n":"cave_air","full":false},{"q":{"x":140,"y":-36,"z":2232},"n":"crafting_table","full":true},{"q":{"x":140,"y":-35,"z":2232},"n":"air","full":false},{"q":{"x":140,"y":-36,"z":2230},"n":"bookshelf","full":true},{"q":{"x":140,"y":-35,"z":2230},"n":"bookshelf","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T16:07:20.957Z",
+ "p": {
+  "x": 140.54593403317403,
+  "y": -36,
+  "z": 2231.4711161627365
+ },
+ "hp": 15.666664123535156,
+ "food": 19,
+ "ground": true,
+ "inv": [],
+ "time": 14759,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+[server] p4 was shot by Skeleton
+--- p4 now: (140.5, -36, 2231.5) in overworld, health 15.7/20, food 19/20, alive
