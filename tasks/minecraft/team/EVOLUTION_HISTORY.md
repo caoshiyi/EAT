@@ -3635,3 +3635,19 @@ PriorSB2437.6s refusedvisibleheadroom(-12,52,-11) aftertwoactualcuts, retainedsa
 LIVE11699 fullcompletedoutput/source-diff vsG5SB246 independently inspected: onlyextraexactsourcematchingadmission differs. Actualpreparationfireballdigabort04:28:34.989 at57 BEFOREsurface, reachedfalse/no targetinteraction. Three10FULL39.912/40.162/.414, post40.664 home50/10HP16food/Snow1/203stone/wood39/shovel5. Newretainedpartialliveaccess/cuts andactualwholeescape are real; sandboxbase30/downlooksurface capability didNOTtransfer inthisattempt. No crystalremoval ordragonhit, livekitretainedandfinitewear/foodspent. Passiveplayerdamageobserver actuallyusedLIVE/rows[]/cleanuptrue; fullhelperreadconfirmedpassivestatecopyonly, no changedhealthevent qualified. No freshofficialevalneededwithoutcrediblecompletionclaim.
 
 Ownrecent1diff retrievalguardrefusedbecauseSBrecordmoved; boundedrecent5exact-IDsplitthen succeeded. No sourceexecution/worldactionbyreviewer. Original04:14–30crystalpilotbudgethasnotproducedcrystalinteraction; partialadoptionisnotwholepass.
+
+## Verified live base access — 2026-10-19 04:32:08 UTC
+
+LIVE11701 actual40.307s completed04:29:48.327 atPILLARWEST(30.568221,58,-24.550919),10HP16food/Snow1/Sand2/199stone/wood42/shovel5. Actualthree10FULL47.575/.825/48.077, noerrors/playerdamageevents. Canonicalsource diff11699changesONLYexactsourcematchingfood16/203stone/wood39. Currentstatusagrees. Newlivefieldaccess/retainedrecipient is verified, not crystal/scoreeffect orreturnhome. Prior11699forwardabortretainedpartialroute remainsfailed; totalcold+warm85.420s excludesplanning/coordination. Original04:14–30wholecrystalpilotMISSED; new04:29–40separategateprospective.
+
+Actualbase+nativecamera method used live, passiveevidencehelper usedlivebutchanged-healthbranchuntested. No claimdownlookcausedavoidanceorallfuturecrossingssafe. Nowlive/SBsameendpoint/kit after246 but independententities/hazardtiming. P4corner model mathematicalpositive/occludednegative is preconditionplanning only, notactualplace/lean/bodycollision/wholeadoptionuntilP2completed247.
+
+## Second sandbox loss and no crystal attack — 2026-10-19 04:42:44 UTC
+
+G5SB251 actual41.325s reachedpartial71.001 thenexplicitfar18sclock ended04:39:48.546; wholepreparedreturn/full58pod10HP/three10FULL56.910/57.161/.412, post58.165/Snow1/180stone/wood49. Realboundedfarhazardcase/partialroute qualified, notuniversalcloseguardreliability. Original04:29–40crystalpilotMISSED.
+
+G5SB252 actual51.821s fullringreached78 at04:41:28.015; ordinarybar79actualopen31.816. Actualcamera/cursor at31.817 targetdistance2.0623999 BUT cursornull, so sourcecorrectlyrefusedbeforeattack31.818. Nocrystalremoved/noexplosion/survivalorimmunitytest; targetPresenttrue/six,events[],Snow1retainedatreturn. Modelray/proximity didnotestablishactualeligibility.
+
+Returnexists but failedcontinuousfinalcell34.775 at(37.0223,73,-21.3313) offpreparedending; refugecapanchorfailed35.375; returned35.87610HP/exposed73/wood50. Latercanonicaldeath04:41:54 dragonmagic at(36.3,72,-22.5) supersedesalivepost. ThisisSECONDcurrentSBdeath after244Enderman. EmptyOW20HPstatusisrespawn, notretainedEndkit. Source/main/actualreturn/erroroutput andcanonicaldeatheventread; noevent/HP rows beforeprogramreturndoNOTprovepostreturnsafety. Fullringforward/actualbarcut real, completewholeadoptionfailed. Firstsmallcorner247andpartialreturn251donotqualifyfullroute'snewturn/landingfailure. LIVEremainsbase58/10HP/wood42/Snow1.
+
+P4pendingcapproposalchat10973–75at04:40:29wasdatedstale: actual250hadalreadycompletedwholephysicalreceipt/reinstall04:38:23.402 andownerreported10970–72. Ownindependentactualoverridealreadyrecordswholecycle; no repeatreport/approvaldependencyneeded.
