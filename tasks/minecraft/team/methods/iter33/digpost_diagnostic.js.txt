@@ -1,8 +1,0 @@
-// REVIEW PROPOSAL ONLY. Replace bare digpost check in selected owner helper.
-const post = bot.blockAt(q);
-if (!post || !['air','cave_air'].includes(post.name)) {
-  console.log('DIG_POST_REJECTED', JSON.stringify({at:new Date().toISOString(),
-    q, original:b.name, observed:post?.name??null,
-    properties:post?.getProperties?.()??null, state:state()}));
-  throw Error('digpost');
-}

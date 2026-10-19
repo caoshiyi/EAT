@@ -124,7 +124,3 @@ Iteration31 finalized reconciliation — 2026-10-19 09:10:51 UTC: unavailable (n
 
 
 Iteration32 opening causal reviewer — 2026-10-19: **unavailable**. No authorized available token-usage source; tool-output counts are not session/team usage.
-
-Iteration33 reviewer opening 2026-10-19T11:04:14.963510+00:00: unavailable (no authorized available usage source).
-
-Iteration33 complete provisional 2026-10-19T11:23:54.255879+00:00: unavailable (authorized usage source absent).
