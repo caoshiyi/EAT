@@ -1,0 +1,33 @@
+program #11916 on p2: 25.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:30:48.743Z","p":{"x":13.497436239389703,"y":34,"z":-1.5},"hp":19.913249969482422,"food":17,"dim":"overworld","ground":true,"inv":[["snowball",7,null],["cobblestone",2,null]]}
+FAILURE Error: walkpost {"at":"2026-10-19T07:31:13.935Z","p":{"x":13.497436239389703,"y":34,"z":-1.5},"hp":19.913249969482422,"food":17,"dim":"overworld","ground":true,"inv":[["snowball",7,null],["cobblestone",2,null]]} {"at":"2026-10-19T07:31:13.936Z","p":{"x":13.497436239389703,"y":34,"z":-1.5},"hp":19.913249969482422,"food":17,"dim":"overworld","ground":true,"inv":[["snowball",7,null],["cobblestone",2,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:31:13.936Z",
+ "p": {
+  "x": 13.497436239389703,
+  "y": 34,
+  "z": -1.5
+ },
+ "hp": 19.913249969482422,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "snowball",
+   7,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: ACK actual LIVE kit rescue is now concrete recipient need and includes boat. Retiring SB route exploration; no reset. P4 adopting qualified2UP/east22 route then actual droppeditems near3/71/12, deadline07:33:30 (~4min afterdeath). Fresh20HP sheltered; will
+p4:  verify actual pickup inventory/samelife, not label arrival as rescue.
+--- p2 now: (13.5, 34, -1.5) in overworld, health 19.9/20, food 17/20, alive

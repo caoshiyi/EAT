@@ -1,0 +1,36 @@
+program #11893 on p2: 10.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:25:10.948Z","p":{"x":5.500052088624933,"y":71,"z":6.540308842189681},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",5,null],["spruce_log",1,null]]}
+WALK {"at":"2026-10-19T07:25:11.656Z","p":{"x":4.484289097414639,"y":71,"z":8.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",5,null],["spruce_log",2,null]]}
+CUT {"q":{"x":4,"y":73,"z":8},"n":"spruce_log","p":{"x":4.484289097414639,"y":71,"z":8.5}}
+CUT {"q":{"x":4,"y":74,"z":8},"n":"spruce_log","p":{"x":4.484289097414639,"y":71,"z":8.5}}
+CUT {"q":{"x":4,"y":75,"z":8},"n":"spruce_log","p":{"x":4.484289097414639,"y":71,"z":8.5}}
+--- returned ---
+{
+ "at": "2026-10-19T07:25:21.314Z",
+ "p": {
+  "x": 4.484289097414639,
+  "y": 71,
+  "z": 8.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   5,
+   null
+  ],
+  [
+   "spruce_log",
+   4,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: G31-1 SB291 actual OW route gain47.8m: from6.5/68/-36.5 to22.68/67/8.52,20HP20food, grass floor/clear body/no queried18m threat. Native roofcut+2UP from live shelter also qualified. Continuing short ground route legs toward +Z; no kit chain. P2 may adopt e
+p4: ast22 corridor after own exit; no End-return claim.
+--- p2 now: (4.5, 71, 8.5) in overworld, health 20/20, food 20/20, alive

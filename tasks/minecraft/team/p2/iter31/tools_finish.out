@@ -1,0 +1,58 @@
+program #11896 on p2: 0.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:26:08.452Z","p":{"x":4.484289097414639,"y":71,"z":8.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["wooden_axe",1,0],["wooden_pickaxe",1,0],["spruce_log",1,null],["spruce_log",1,null],["dirt",5,null]]}
+CRAFT spruce_planks 8 {"at":"2026-10-19T07:26:08.855Z","p":{"x":4.484289097414639,"y":71,"z":8.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["wooden_axe",1,0],["wooden_pickaxe",1,0],["spruce_button",1,null],["spruce_log",1,null],["spruce_button",1,null],["spruce_planks",2,null],["dirt",5,null]]}
+FAILURE Error: Error: missing ingredient {"at":"2026-10-19T07:26:08.958Z","p":{"x":4.484289097414639,"y":71,"z":8.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["wooden_axe",1,0],["wooden_pickaxe",1,0],["spruce_button",1,null],["spruce_log",1,null],["spruce_button",1,null],["stick",4,null],["dirt",5,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:26:08.958Z",
+ "p": {
+  "x": 4.484289097414639,
+  "y": 71,
+  "z": 8.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_axe",
+   1,
+   0
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ],
+  [
+   "spruce_button",
+   1,
+   null
+  ],
+  [
+   "stick",
+   4,
+   null
+  ],
+  [
+   "dirt",
+   5,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (4.5, 71, 8.5) in overworld, health 20/20, food 20/20, alive

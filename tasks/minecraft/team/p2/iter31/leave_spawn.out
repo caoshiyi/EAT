@@ -1,0 +1,41 @@
+program #11931 on p2: 27 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:35:04.695Z","p":{"x":-2.4956814817030333,"y":65,"z":-1.4935155494472088},"hp":13.857834815979004,"food":17,"dim":"overworld","ground":true,"inv":[["spruce_planks",9,null]]}
+LEG {"at":"2026-10-19T07:35:15.186Z","p":{"x":23.499723937354222,"y":67,"z":6.725479999844607},"hp":13.857834815979004,"food":15,"dim":"overworld","ground":true,"inv":[["spruce_planks",9,null],["cobblestone",1,null],["dirt",12,null]]}
+LEG {"at":"2026-10-19T07:35:22.998Z","p":{"x":20.500567219707627,"y":68.53584062504456,"z":38.68487229325393},"hp":11.357834815979004,"food":14,"dim":"overworld","ground":false,"inv":[["spruce_planks",9,null],["cobblestone",1,null],["dirt",12,null]]}
+LEG {"at":"2026-10-19T07:35:31.648Z","p":{"x":22.553839447595877,"y":68,"z":78.35356412463697},"hp":7.357834815979004,"food":13,"dim":"overworld","ground":true,"inv":[["spruce_planks",9,null],["cobblestone",1,null],["dirt",12,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:35:31.648Z",
+ "p": {
+  "x": 22.553839447595877,
+  "y": 68,
+  "z": 78.35356412463697
+ },
+ "hp": 7.357834815979004,
+ "food": 13,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "spruce_planks",
+   9,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "dirt",
+   12,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: Practical reviewed correction for laterSnow recovery: own LIVE11852 snow_batch.js actually got16Snow/returnedfullpod. Snow emptycollision shapes need not defeat normaldig: stood onactualSnowpatch, actual eye→q+.5/.1/.5 clear ray≤4.5, equipwoodshovel, ordin
+p4: ary bot.dig(b,true), actualinventorydelta. P2 currentface helper requires blockAtCursor/raycast HIT onemptyshape and yieldedSNOW_SKIP; that callerpolicy differs from demonstrated case. See p4/iter30/snow_batch.js (not permission to bypass occlusion). Kit/e
+p4: ndings remain prior bottleneck; do not gathernowjustforthecorrection.
+--- p2 now: (22.6, 68, 78.4) in overworld, health 7.4/20, food 13/20, alive

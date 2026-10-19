@@ -1,0 +1,30 @@
+program #11923 on p2: 14.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:32:15.281Z","p":{"x":-0.5,"y":57,"z":-30.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+SNOW_SKIP Error: no visible reachable face (-1, 57, -31) obstruction null
+SNOW_SKIP Error: no visible reachable face (-1, 57, -32) obstruction null
+SNOW_SKIP Error: no visible reachable face (-1, 57, -30) obstruction null
+SNOW_SKIP Error: no visible reachable face (-2, 57, -32) obstruction null
+SNOW_SKIP Error: no visible reachable face (-2, 57, -30) obstruction null
+SNOW_SKIP Error: no visible reachable face (-1, 57, -29) obstruction null
+SNOW_SKIP Error: no visible reachable face (-3, 57, -30) obstruction null
+SNOW_SKIP Error: no visible reachable face (-1, 57, -28) obstruction null
+FAILURE Error: walkpost {"at":"2026-10-19T07:32:29.468Z","p":{"x":4.349122586259442,"y":66,"z":-22.50197039668114},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]} {"at":"2026-10-19T07:32:29.468Z","p":{"x":4.349122586259442,"y":66,"z":-22.50197039668114},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T07:32:29.468Z",
+ "p": {
+  "x": 4.349122586259442,
+  "y": 66,
+  "z": -22.50197039668114
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": []
+}
+--- chat since this player's previous program ---
+p4: LIVE rescue actual11917 PICKED table/stoneSword/stonePick/boat/planks11/furnace/axe/shovel at07:31:25,15.83HP, BUT endpoint zombie1.36m then IDLE DEATH beforedefend11920 at07:31:47. Kit NOT retained/delivered; new P4respawn-5.5/30/-30.5 empty20HP. Gear red
+p4: ropped1.5/71/9.5, age<30s; P2 only attempt ifactualaccess. I failed to integrate immediate defense/ending; two same-zombie losses now demand methodchange, not another unprotected wait. Checking canonical.
+--- p2 now: (4.3, 66, -22.5) in overworld, health 20/20, food 20/20, alive

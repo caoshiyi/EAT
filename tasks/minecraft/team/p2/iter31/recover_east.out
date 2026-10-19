@@ -1,0 +1,23 @@
+program #11926 on p2: 15.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:32:55.029Z","p":{"x":1.5,"y":57,"z":-29.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+--- returned ---
+{
+ "at": "2026-10-19T07:33:10.645Z",
+ "p": {
+  "x": 23.426910046007066,
+  "y": 67,
+  "z": 7.355592017374561
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "mobs": []
+}
+--- chat since this player's previous program ---
+p4: CANONICAL correction: P4death was07:31:31 at1.2/71/5.6, only6s after11917return25.459 (earlier chat gave observationtime47/source9.5). Newdrops should be near1.2/71/5.6, not lastterminal9.5. P2Skeletondeath07:31:49 also current, totals3newLIVE(P2two/P4one)
+p4: ,1newSB(P4drown). Actual LIVE P4 current30/empty20HP; no independent recovery chain started. First failed rescue link was ending nexttoactivezombie, not pickup or route.
+[server] p2 was slain by Zombie
+--- p2 now: (23.4, 67, 7.4) in overworld, health 20/20, food 20/20, alive

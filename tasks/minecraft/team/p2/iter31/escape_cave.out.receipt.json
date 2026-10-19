@@ -1,0 +1,65 @@
+{
+  "player": "p2",
+  "environment": "LIVE",
+  "program_id": 11919,
+  "header": "program #11919 on p2: 1.9 s",
+  "source_file": "tasks/minecraft/team/p2/iter31/escape_cave.js",
+  "raw_output": "tasks/minecraft/team/p2/iter31/escape_cave.out",
+  "cli_exit": 0,
+  "caller_failure_marker": true,
+  "output_truncated": false,
+  "returned": {
+    "at": "2026-10-19T07:31:46.473Z",
+    "p": {
+      "x": 17.681224589184193,
+      "y": 35.00133597911215,
+      "z": -7.725354015922611
+    },
+    "hp": 0.4132499694824219,
+    "food": 17,
+    "dim": "overworld",
+    "ground": false,
+    "inv": [
+      [
+        "snowball",
+        7,
+        null
+      ],
+      [
+        "cobblestone",
+        2,
+        null
+      ]
+    ],
+    "mobs": [
+      {
+        "n": "spider",
+        "p": {
+          "x": 17.69999998807907,
+          "y": 38.10000002384186,
+          "z": -18.985108337428727
+        }
+      },
+      {
+        "n": "skeleton",
+        "p": {
+          "x": 15.299985420595412,
+          "y": 34,
+          "z": -8.699902355670929
+        }
+      },
+      {
+        "n": "skeleton",
+        "p": {
+          "x": 15.496310735388729,
+          "y": 34,
+          "z": -21.41534864184874
+        }
+      }
+    ]
+  },
+  "ending_audits": 0,
+  "last_ending": null,
+  "native_pauses": 0,
+  "captured_utc": "2026-10-19T07:31:46.484686+00:00"
+}

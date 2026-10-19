@@ -1,0 +1,47 @@
+program #11954 on p2: 7.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:41:20.526Z","p":{"x":6.474501876840761,"y":62,"z":-29.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",20,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":63,"z":-29},"n":"dirt","p":{"x":6.474501876840761,"y":62,"z":-29.5}}
+CUT {"q":{"x":6,"y":62,"z":-29},"n":"dirt","p":{"x":6.474501876840761,"y":62,"z":-29.5}}
+WALK {"at":"2026-10-19T07:41:22.689Z","p":{"x":6.489123621726629,"y":62,"z":-28.668058838016247},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",22,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":63,"z":-28},"n":"dirt","p":{"x":6.489123621726629,"y":62,"z":-28.668058838016247}}
+CUT {"q":{"x":6,"y":62,"z":-28},"n":"dirt","p":{"x":6.489123621726629,"y":62,"z":-28.668058838016247}}
+WALK {"at":"2026-10-19T07:41:24.845Z","p":{"x":6.494511343584776,"y":62,"z":-27.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",24,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":63,"z":-27},"n":"dirt","p":{"x":6.494511343584776,"y":62,"z":-27.5}}
+CUT {"q":{"x":6,"y":62,"z":-27},"n":"dirt","p":{"x":6.494511343584776,"y":62,"z":-27.5}}
+WALK {"at":"2026-10-19T07:41:27.000Z","p":{"x":6.497590082736121,"y":62,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",25,null],["snowball",16,null],["spruce_planks",1,null]]}
+CUT {"q":{"x":6,"y":63,"z":-26},"n":"dirt","p":{"x":6.497590082736121,"y":62,"z":-26.667724502312893}}
+FAILURE Error: hand soil boundary diorite (6, 62, -26) {"at":"2026-10-19T07:41:27.851Z","p":{"x":6.497590082736121,"y":62,"z":-26.667724502312893},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",26,null],["snowball",16,null],["spruce_planks",1,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:41:27.851Z",
+ "p": {
+  "x": 6.497590082736121,
+  "y": 62,
+  "z": -26.667724502312893
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   26,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "spruce_planks",
+   1,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (6.5, 62, -26.7) in overworld, health 20/20, food 20/20, alive

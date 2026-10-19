@@ -1,0 +1,1 @@
+07:33 current: P2 first deathZombie07:29:32, secondSkeleton07:31:49. Newrespawn57 safelyreached66at4.35/-22.50in11923 withoutdamage; 11924 east22/67/8 travel pending, gearredroppedP4afteractualpickupnear1.5/71/9.5. No presumedP2receipt. Mustfightimmediatelyinsameprogramafterpickup, noidleexposedendpoint. Kitrescuehasnotpassedretention. SBnone/noresetdependency.

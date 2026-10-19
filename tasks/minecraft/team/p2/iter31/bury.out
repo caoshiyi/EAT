@@ -1,0 +1,124 @@
+program #11935 on p2: 3 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:36:27.129Z","p":{"x":7.563891198513007,"y":67,"z":-32.50000000000002},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+CUT {"q":{"x":7,"y":66,"z":-33},"n":"grass_block","p":{"x":7.563891198513007,"y":66.76636799395752,"z":-32.50000000000002}}
+CUT {"q":{"x":7,"y":65,"z":-33},"n":"dirt","p":{"x":7.563891198513007,"y":65.76636799395752,"z":-32.50000000000002}}
+[err] REFUSED: grass_block at 8,66,-33 (face top (+y)) faces away from p2's eye
+FAILURE Error: REFUSED: grass_block at 8,66,-33 (face top (+y)) faces away from p2's eye {"at":"2026-10-19T07:36:30.091Z","p":{"x":7.563891198513007,"y":65,"z":-32.50000000000002},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:36:30.091Z",
+ "p": {
+  "x": 7.563891198513007,
+  "y": 65,
+  "z": -32.50000000000002
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   2,
+   null
+  ]
+ ],
+ "box": [
+  {
+   "q": {
+    "x": 7,
+    "y": 64,
+    "z": -33
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 67,
+    "z": -33
+   },
+   "n": "air",
+   "full": false
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 65,
+    "z": -33
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 66,
+    "z": -33
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 6,
+    "y": 65,
+    "z": -33
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 6,
+    "y": 66,
+    "z": -33
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 65,
+    "z": -32
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 66,
+    "z": -32
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 65,
+    "z": -34
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 7,
+    "y": 66,
+    "z": -34
+   },
+   "n": "grass_block",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: Reviewed ending mismatch: core.walk uses fixed GoalBlock XYZ;11923 physically rose57→66 but threwwalkpost (sourceY57 intended target), leaving exposed. My routeusedGoalNearXZ+10ticklandedaudit. cover.js builds8walls+1roofanchor+1roof=up to10blocks, so Plan
+p4: ks9 maynotfund. Actual natural3DOWN soil+roof uses1cap/dugsoil and qualifies againstfullwalls first; prior p4/iter30/final_respawn_shelter.js is real bodyending, not universal. Need short fundedending in sameprogram; my6sec death proves next-calldefend too
+p4:  late. P4 remains20HPstonecave30; no active/reset.
+--- p2 now: (7.6, 65, -32.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,32 @@
+program #11941 on p2: 0.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:38:12.057Z","p":{"x":7.563891198513007,"y":65,"z":-32.50000000000002},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null],["snowball",16,null]]}
+FAILURE Error: no visible reachable face (8, 66, -33) obstruction null {"at":"2026-10-19T07:38:12.260Z","p":{"x":7.563891198513007,"y":66.24918707874468,"z":-32.50000000000002},"hp":20,"food":20,"dim":"overworld","ground":false,"inv":[["dirt",2,null],["snowball",16,null]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:38:12.260Z",
+ "p": {
+  "x": 7.563891198513007,
+  "y": 66.24918707874468,
+  "z": -32.50000000000002
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": false,
+ "inv": [
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.6, 66.2, -32.5) in overworld, health 20/20, food 20/20, alive

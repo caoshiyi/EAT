@@ -1,0 +1,1 @@
+bot.pathfinder.setGoal(null);bot.clearControlStates();const p=bot.entity.position,V=p.constructor,grid=[];for(const x of[6,7,8,9])for(let z=-27;z<=-14;z++){const col=[];for(let y=61;y<=69;y++){const b=bot.blockAt(new V(x,y,z));col.push(b?.name);}grid.push({x,z,col});}return{at:new Date().toISOString(),p:p.clone(),hp:bot.health,food:bot.food,time:bot.time.timeOfDay,grid};
