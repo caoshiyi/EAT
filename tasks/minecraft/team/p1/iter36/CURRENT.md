@@ -1,11 +1,15 @@
-# P1 current — iteration36, 18:40 UTC
+# P1 current — iteration36, 18:50 UTC
 
-Objective remains defeat Dragon. Official capture belongs P3/coordinator; no victory. Latest direct live HP174.729599; four accepted p1 hits this iteration, total10.25 damage. Only p1 controlled. Only this directory edited. Deadline19:44:24 UTC. Use python3; every shell command starts cd "$EAT_ROOT".
+Objective remains defeat Dragon. Official capture belongs P3/coordinator; no victory. Latest direct live HP158.354599 at18:48:28; eleven accepted p1 hits this iteration sofar (lastfour currentlongcall), noP1LIVEdeath. Only p1 controlled. Only this directory edited. Deadline19:44:24 UTC. Use python3; every shell command starts cd "$EAT_ROOT".
 
-## Active action
-`live_batch_west.js` running LIVE as p1, starts around18:39, timeout220. Current experiment E10: same successful role split but legally clear West upper blocks(-6,57,4) and(-6,58,4) before180s combat. First new refusal/ownHPdrop/P3contextchange ends loop; 70swithoutdamage ends censored. Finally returns p1 to0/50/4/full10 and restores P3 roof/gates. Read native result before next action; no overlapping LIVE p1 program.
+## Active actions (contexts separate)
+LIVE p1 program13976 `live_batch_600.js` started18:45:48, max600s field combat/no-effect150s/timeout660. FirstownHPdrop/P3contextchange/native refusal stops and returns50. Last live receipt18:48:28 HP158.354599 (four hits this call), P1HP11.5/P3HP20; p1 stands-5/53/4 above P3low50. Maxnormalreturn~18:56:10. Read BATCH_SUMMARY/RESULT/ending first before next LIVE p1 action. No overlapping LIVE program.
 
-P1 last completed live ending:0.551/50/4.5 HP11.5 food16, FULL10 Endstone. Swordwear5, borrowed freshStonewear106 (~26uses), ownStone126/129, Wood17, Shield111 offhand, N7/E~159/C50, nofood. P3 holds(-5,50,4), actual(-4.525,50,4.5) HP20 as low bait; all its upper work cancelled. P2 idle9/50/5 healthy20. P4 OW empty, NEVER played by us. P3 owns periodic independent HP watches; no need pause for them.
+Prior completed LIVE13972: three hits174.729599->167.979599, Sword5->8, no refusal/noinjury afterWest57/58cuts; ended70snoeffect andreturnedFULL50. Sevenfreshhits total through thatcall; current600adds4 sofar. Last completed p1 source0/50/4 HP11.5 food16, FULL10 E; Sword8, borrowedStone116, own126/129, Wood17, Shield111 offhand, N7/E~160/C50. Current in-field N5 includes2installedfloors, regainafterretreat. P3holds-5/50/4HP20 aslowbait, no upperwork. P2idle9/50/5healthy20; P4OWempty, neverplayed.
+
+SANDBOX p1 G3B program `axe_void_prefix.js` concurrently drills owncopy tointentionalvoid/OW for bounded supplycontingency. This is NOT a LIVEdeath orbodystate. Earlier COPIEDP3PvPdeath means thatcopy'sP3OW/p4OW andNPCsrepeatedlydieSkeleton; nevermergewithlive. Question minimum5planks->WoodPick->3cobbleddeepslate->Stoneaxe within3min afterOWprefix; no LIVEupgrade/adoption unlessactualreceipt/craft/route andcost qualify. Livecombatcontinuesuninterrupted. PriorSandboxkitcopytoolsabundant, liveinventoryindependent. Pendingresult needsactualprogramID/time.
+
+Next decision: if600qualifiedmultiplehits+healthy50end, rerunSAMEboundedcontroller tofinishDragon. No need newhypothesis whileworking. Ifnativevisibilityrefusesnewcell, stop/reconcileactualphysicalblock beforeequivalentretry. If150snoeffect, compareactualglobalrootmin/p1/p3positions andchangeadmission/role ifneeded. Ifhurt, actualbody/recoverycomesfirst. P3/coordinatorownofficialcaptures; communicateactualHPandending. NevermarkDragondeadfromhurt/dispatch alone.
 
 ## Qualified execution
 - LIVE13952 at18:27:14.925 jumpSword, 184.979599->182.104599 (-2.875), wear1->2, look1tick/currentbodypoint1.94375m/cursor65. Healthy11.5/20 and full50 ending.
