@@ -1,25 +1,23 @@
-# Mission 37 — current 2026-10-19 19:58 UTC
+# Mission37 — current 2026-10-19 20:00 UTC
 
-Objective: verified Ender Dragon defeat. Opening official evaluation at ~19:48: dragon **0**, milestones **11/12**, deaths219. Save refused; LAST-SAVED and potentially stale. P1 live14105 independently reads Dragon52.354599. Zero crystals in saved informational capture. No victory.
+Objective: verified Dragon defeat. Opening official ~19:48 dragon0/milestones11/deaths219; SAVE REFUSED, LAST-SAVED/potentially stale. Last live Dragon52.354599. No new live damage or victory this iteration yet. Coordinator owns periodic captures (~20:04, then15min), plus apparent victory/closing; avoid redundant captures.
 
-| Owner | Actual live state | Current outcome / dependencies |
+| Fixed owner | Actual state and timestamp | Next useful outcome |
 |---|---|---|
-| mission_lead / p3 | 19:49: (0.55,50,4.50), HP20 food20, Sword11, Shield235, **no pick** | Last two attempts ended healthy; next executor contract under direct discussion. Optional pick request canceled19:52:14; owner proceeds independently. |
-| execution_researcher / p1 | 14105 19:48:49: (-4.52,50,4.50), HP3.5 food17, Sword58, WoodPick56, E124/N12 | Currently low hold; offered bounded own live test following sandbox accepted effect. Copied other player configuration differs: do not infer live identity causality. |
-| readiness_operator / p2 | 14106 ~19:49: (9.5,50,5.5), HP20 food20, E21/N1/C1; no tools/food | Proposed bounded eight-minute injury evidence audit. Pick feasibility assessment ended with requester cancellation19:52:14; no transfer required. |
-| p4 | 19:49: Overworld (143.5,-36,2231.5), HP20 food20, empty | Unplayed; never assign control. |
-| coordinator | No body, no live/sandbox programs | Evidence, ownership, review and continuity only. |
+| mission_lead=p3 | 19:59:30 native: -4.5/50/4.5, HP20 food20;14144 recovered Swordx2/Wood56/Shield235/E319 | Agreed recovery complete; current kit held p3, next actual P1 receipt pending. P3 proposes low hold and P1 executor. |
+| execution_researcher=p1 | 19:59:30 native: 58/50/0.5 End, HP20 food20;14147 return continuation active | Own return then current direct handoff ACK; no old corpse-field assumption. Prepared low-health one-hit trial NOT run. |
+| readiness_operator=p2 | 19:59:30 native:9.5/50/5.5, HP20 food20/E21/N1/C1 | Own sandbox backup feasibility, ten-minute bound from19:57:14. No accepted live support queue. |
+| p4 | 19:59:30 native: OW143.5/-36/2231.5, HP20 food20 empty | Unplayed. No assignment/control. |
+| coordinator | No body/programs | Observe/facilitate/record; never approval bottleneck. |
 
-Active program IDs at19:58:26: p1 LIVE14142 observer (62s elapsed); p3 LIVE14144 player-selected health recovery (44s elapsed). P2 independent own sandbox backup feasibility; live p2 unchanged. Crossed proposals resolved chat13634–13639: P1 selected P3 recovery proposal; prepared P1 live one-hit was NOT run. No completion credit until actual world recovery, return and kit receipt.
+**Custody notice P1/P3:** canonical death19:58:45 was agreed PvP by p3, not old Dragon knockback. P3 chat13642 actual retained kit conflicts with P1 chat13644 reference to recovering knockback drops. Reconcile directly; handoff readiness13645 requires current P1 ACK and actual receipt. This is state evidence, no coordinator route/method prescription.
 
-Consequential ending history: LIVE14130 healthy20/full10/0/50, no attack, boss52.354599 unchanged. Dirt platform53 remains, roof52 intact. P2 readonly14128 completed/no HP transition (no blocking qualification). P1 SB75 accepted one copied-world Sword damage, no live credit. Direct contract now transitions toward P3 low hold/P1 actual renewed execution only after verified recovery; do not act on older crossed attack ACK.
+Active IDs at19:59:30: P1 live14147 return; p3 none; p2 own sandbox ID pending. Completed:14144 recovery/healthy lower ending and loot;14145 actual End return/fullHP;14142 observer;14130 changed-condition trial healthy/full10 but zero attacks;14128 readonly2397samples/no peerHP transition. Distinguish proposed handoff from completed receipt.
 
-Abnormal records: P314140 syntax-only failure/no action, then corrected. P1 concurrent invocation REFUSED19:57:39 because14142 already running; this is same-body concurrency, not another ownership-context attempt. Verify actual stop/ending before another invocation. Optional pick request canceled. No adopted telemetry/helper dependency required.
+Direct execution contract: crossed proposals resolved13634–13639 to selected health recovery. Current transition to P1 executor/P3 low hold requires direct owner ACK/current kit, not coordinator approval. Shared changes need affected-owner notice/ACK. No ownership changes with tactical assignments. Optional pick request canceled19:52:14; no loan/courier dependency. P2 telemetry donation not yet adopted.
 
-Direct contract ACKs chat13587–13590: p3 primary attacker, p1 exact live hold; shared changes require affected-owner notice/ACK. Owners execute selected work immediately after minimum checks. Communicate directly through own arena programs/chat and owned handoffs. Coordinator approval is not required. No ownership changes when task roles change.
+Evidence/uncertainties: two P3 profiles opportunity-censored (no accepted attack), not failed damage mechanism. P1sandbox75 accepted one copied-world Sword hit/retained ending; no live objective credit. Identity, low-player location and unequal durations confounded comparisons. P3 dirtplatform53 remains above intactroof52 after14130; do not assume original geometry. First-hurt guard does not bound in-flight harm; shield is not immunity. Actual P1 health constraint has changed from3.5 to20, but recipient kit not yet restored.
 
-Next useful outcomes: current opportunity/mechanism discriminator; actual accepted effect with retained ending; optional support only if it enables a present accepted constraint. Repeated equivalent failures call for one changed hypothesis and discriminating observation, not blind repetition. Do not infer impossibility from no eligible contact.
+Abnormal records: p3 14140 syntax-only/noaction; P1 repeat invocation refused19:57:39 because14142 already active (concurrency, not ownership change). Do not assume cleanup from error-free completion; inspect state.
 
-Uncertainties: continuity after injury; current conditions behind14100 zero attacks (minDist4.544, root>=59.094, no eligible action); actual support feasibility/acceptance; final cleanup of future programs. HP3.5 is an actual constraint, shield is not immunity. Freshness of score remains unresolved after failed save.
-
-Scheduling: iteration server up19:48:21; external120-minute allowance implies approximately21:48, exact role deadline not exposed. Coordinate one official capture around20:04 and every15min, apparent victory and closing. Coordinator opening capture already obtained; avoid duplicate periodic captures. Brief evidence review19:59 then every10min / consequential change. Refresh handoffs around21:43 while play continues. Owners should relay their actual earlier deadline if exposed.
+Next review20:09 or consequential effect/failure (first ten-minute review19:59). Approximate iteration deadline21:48 from120min allowance and19:48 launch; exact earlier role deadline not exposed. Request concise current handoffs21:43 while play continues. Do not stop early for reporting.

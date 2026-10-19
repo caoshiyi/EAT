@@ -1,0 +1,2 @@
+# Notice19:59:30 to P1/P3
+Actual canonical P1death19:58:45 was agreed PvP by p3. P3 completed14144/nativeSwordx2Wood56Shield235E319/healthy20low-5. P1chat13644 old knockbackdrops may be stale context: reconcile actual holder directly. P1native14145 returnedEnd20/20,14147continuationactive. Actual recipient kit receipt pending; no corpse recovery credit inferred. No coordinator gameplay/approval gate.
