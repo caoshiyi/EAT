@@ -1,3 +1,21 @@
+# Latest19:25UTC: healthy hurt-retreat and immediate rerun
+LIVE14042 fresh20 firstcontactownhurt3.5/zeroattack at19:24:34.716; guardretreatSUCCEEDED actualFULL10 0/50HP20food19 by19:24:45/P3HP20/roof52E/gatesE. Dragonstill61.354599. RetainedHURT_14042.json plusraw; ordinaryshieldrequestactive, noqualifiedblockingcausalclaim. Nativefreshbodyregeneratedduringexit.
+NEW same live_recovered_480.js started19:25 API600/internal480, session34392, actualHP20food19/kitintact. EndingPENDING. Ifanotherno-DPShurt thenchangedexperimentneeded; firstonewasinformative successfulhurtretreat. Noitemrecoverydependencyremaining. Wood26afterfirstfreshcall~33uses, Sword54, shieldoffhand. P3spareStone115ifcoldprepconsumesreserve.
+
+# ACTIVE recovered-body combat —19:24UTC
+live_recovered_480.js session79802 started~19:24, sourceactualprivate0/50/4 HP20/food20, Sword54/Wood20/Shield111offhand/E62/N5. North0/50+51/z3ACTUALresealedE19:23:41. P3same50HP20/roof52E. FirstP1LIVEdeath retained below; no safetyimmunityclaim.
+
+Internal480combat/600API +absolute19:43:45. SourceHP>=18/shieldoffhandrequired. FirstownentityHurt immediatelyrequests ordinaryoffhandshield, jumpkeyrelease+crouch; existingOWN_HP_DROPguard endscombat/retreat. NewshieldAPI0.5s LIVE14037 tinytestpassedusingHeldItemtrue/false, noqualifieddamageblockyet. Newmotionring60physicsframesbefore/70afterownhurt retainedresult.hurtWindows/global.p1_roleTrial, notfatalfallguess. OrdinarySwordactual3m/currentbody/view/gaze/enforcementunchanged, max2legalneighborY57/58repaircolumns. ActualendingPENDING; nativeIDpending.
+
+CurrentdirectDragon61.354599 after8hitsin14005. Deadline19:44:24, ~20minremaining. ContinueactualdamagewithoutnewDPSresearch. Need~27Swordhitsatobserved2.25/2.875; Sword54hasamplewear. Wood20~39conservativeuses, enoughremainingroundtrips. P3spareStone115onlyifneed. Rootfirstdamageheld20 butold11.5deathdoesnotprovenewfull20safe. KeepindependentP3watch.
+
+# URGENT current19:22 — supersedes older combat state below
+LIVE14005 FAILEDENDING/firstP1LIVEdeath19:19:26. Eightacceptedhits79.979599->61.354599 retained. FirstHPdrop11.5->5.5 duringjump19:19:24.828, callerstopped OWN_HP_DROP thenfailedretreat whiledying (server hitgroundtoohardescapingDragon). Exactcauseofextra/fatalfallNOTresolved; no immunityclaim. P3nativeDeathsamefield53, drops53. P1actualOWempty20/20.
+
+P3 LIVE14022 successfullyrecoveredSword54/Wood20/Shield111 bynormalbriefroof52cut/reclose19:20:51, ownHP20/floorrestored. Kitsecure. P1 LIVE14020 physicallyreturnedEnd75/50/0 healthy20 19:20:43; LIVE14024 walked5/50/3healthy, thenprivate0goalNO_PATH, unchanged. LIVE14027 read-onlynative pathend1/50/3 andblockmapidentifiedownNorthgate0/50+51/z3E blocks.
+
+ACTIVE recover_north_gate.js timeout70: ownP1walk0/50/2, handdigownNorth0/51+50/z3, walk0/3 thenprivate0/4; waitP3samekittransfer. NEW NORTHGATEOPEN mustRESEALbothcells whenEreceived, includingfutureending! OnlyownP1controlled. P3holds50, offershandofftoown0 viawestcorridor. P1willnotascenduntilactualkit/roofrestored. NeedsSword54/Wood20/Shield111+E64+N5. GoalstilldefeatDragon61.3546 with22minleft; no officialvictory. Newbody20 helps survival, but prior11.5healthybatchesdidnotproveuniversalfixture safety.
+
 # P1 current — iteration36, 19:08 UTC
 
 Only p1 controlled; only this directory edited. Objective Dragon defeat; no victory yet. Deadline19:44:24 UTC. Official captures belong P3/coordinator; last-saved eval0/11 (save failures), not a current victory assessment. Direct LIVE HP79.979599 at19:13:37, declining; P1HP11.5/food15, P3HP20. Zero P1 LIVE deaths.

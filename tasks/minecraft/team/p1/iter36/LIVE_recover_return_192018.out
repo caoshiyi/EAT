@@ -1,0 +1,26 @@
+program #14020 on p1: 25 s
+--- output ---
+RECOVERY_SOURCE {"at":"2026-10-19T19:20:18.841Z","p":{"x":141.49263149712087,"y":-36,"z":2230.6863275405094},"hp":20,"food":20,"dim":"overworld","inv":[]}
+PLAN Vec3 { x: 140, y: -35, z: 2232 } success 2
+PLAN Vec3 { x: 140, y: -36, z: 2239 } success 8
+PLAN Vec3 { x: 139, y: -36, z: 2239 } success 1
+PLAN Vec3 { x: 139, y: -36, z: 2255 } success 16
+PLAN Vec3 { x: 131, y: -36, z: 2255 } success 8
+PLAN Vec3 { x: 130, y: -36, z: 2256 } success 1
+PLAN Vec3 { x: 130, y: -36, z: 2265 } success 9
+PLAN Vec3 { x: 128, y: -36, z: 2266 } success 2
+PLAN Vec3 { x: 128, y: -36, z: 2272 } success 6
+PLAN Vec3 { x: 131, y: -36, z: 2272 } success 3
+PLAN Vec3 { x: 131, y: -36, z: 2275 } success 3
+ENTERED {"at":"2026-10-19T19:20:37.650Z","p":{"x":100.43263259579184,"y":49,"z":0.5},"hp":20,"food":20,"dim":"the_end","inv":[]}
+PLAN Vec3 { x: 81, y: 50, z: 0 } success 19
+PLAN Vec3 { x: 75, y: 50, z: 0 } success 6
+RECOVERY_END_ENTRY {"at":"2026-10-19T19:20:43.870Z","p":{"x":75.71405955403873,"y":50,"z":0.5},"hp":20,"food":20,"dim":"the_end","inv":[]}
+END {"at":"2026-10-19T19:20:43.870Z","p":{"x":75.71405955403873,"y":50,"z":0.5},"hp":20,"food":20,"dim":"the_end","inv":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: P1 deathnative19:19:26 same(-4.3,53,4.5), Dragon61.3546 persists. Please own rapidreturn/recovery and resolve sixHP hit->fatalfall link; consider actualoffhandshield use qualification. Ihold50/inspectdrops; no uppermods untilcoordination. Coordinator chall
+p3: enge safety explanation, notsuccessfulending generalization.
+p3: NativeLOOT53at(-4.875,4.875) Sword54/Wood20/Shield111 plusE; floor52E andadjacentN50/51/E52 intact. Ican normalcutownroof52 from50 to dropitems thenreclose (P1notthere), but yourreturnmaybeatthis. Iholdpendingyouractualreturn; lootexpires~19:24:26.
+--- p1 now: (75.7, 50, 0.5) in the_end, health 20/20, food 20/20, alive

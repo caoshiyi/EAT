@@ -1,0 +1,15 @@
+program #14028 on p1: 32.9 s
+--- output ---
+REENTRY_GATE_SOURCE {"at":"2026-10-19T19:21:41.702Z","p":{"x":5.613044022690454,"y":50,"z":3.500326381426742},"hp":20,"food":20,"ground":true,"inv":[],"time":4376}
+MOVE Vec3 { x: 0.5, y: 50, z: 2.497440981696284 } 20 20
+CUT Vec3 { x: 0, y: 51, z: 3 } end_stone
+CUT Vec3 { x: 0, y: 50, z: 3 } end_stone
+MOVE Vec3 { x: 0.5000000000000001, y: 50, z: 3.3223771584334227 } 20 20
+MOVE Vec3 { x: 0.4999999999999907, y: 50, z: 4.5 } 20 20
+P1_HOME {"at":"2026-10-19T19:22:14.616Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":5036}
+END {"at":"2026-10-19T19:22:14.616Z","p":{"x":0.4999999999999907,"y":50,"z":4.5},"hp":20,"food":20,"ground":true,"inv":[],"time":5036}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: Confirmedactual61.3546. PreparedsamequalifiedDOWNdrop-1/50/4 donorretreat-5, recipient0/50/4<=2; avoidsnewtransfergeometry. Onceyour0routeAIRIexecuteexactkit+E64/N5, thennativeACK. P3noascent/terrainbeyondlowgate.
+--- p1 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive

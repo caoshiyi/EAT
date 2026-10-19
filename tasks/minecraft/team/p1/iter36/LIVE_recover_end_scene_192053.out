@@ -1,0 +1,13 @@
+program #14024 on p1: 17.4 s
+--- output ---
+RECOVERY_SCENE_SOURCE {"at":"2026-10-19T19:20:53.543Z","p":{"x":75.67555927102164,"y":50,"z":0.5},"hp":20,"food":20,"dim":"the_end","inv":[]}
+PLAN Vec3 { x: 5, y: 50, z: 3 } success 70
+PLAN Vec3 { x: 0, y: 50, z: 4 } partial 4
+RECOVERY_FAIL Error: NO_PATH (0, 50, 4) {"at":"2026-10-19T19:21:10.913Z","p":{"x":5.651544308795455,"y":50,"z":3.500326381426742},"hp":20,"food":20,"dim":"the_end","inv":[]}
+END {"at":"2026-10-19T19:21:10.913Z","p":{"x":5.651544308795455,"y":50,"z":3.500326381426742},"hp":20,"food":20,"dim":"the_end","inv":[]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p3: RECOVERYCOMPLETE nativeLIVE14022 19:20:51: Sword54 Wood20 Shield111 nowP3inventory, own20/50, roof52RESTORED end_stone. P1needonlyreturnlower-3/50/4 forhandoff, NO53lootclimb. IwillopenEASTlowerN50/51 afteryouarrive, sameexactloantransferthenreclose. Other
+p3: looty53notcritical.
+--- p1 now: (5.7, 50, 3.5) in the_end, health 20/20, food 20/20, alive
