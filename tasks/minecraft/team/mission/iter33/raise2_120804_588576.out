@@ -1,0 +1,127 @@
+program #12524 on p2: 3.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:08:01.345Z","p":{"x":55.499825929746116,"y":64,"z":86.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",28,null]],"faces":[{"q":{"x":55,"y":63,"z":86},"n":"stone","full":true},{"q":{"x":55,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":56,"y":64,"z":86},"n":"stone","full":true},{"q":{"x":56,"y":65,"z":86},"n":"stone","full":true},{"q":{"x":54,"y":64,"z":86},"n":"stone","full":true},{"q":{"x":54,"y":65,"z":86},"n":"dirt","full":true},{"q":{"x":55,"y":64,"z":87},"n":"stone","full":true},{"q":{"x":55,"y":65,"z":87},"n":"stone","full":true},{"q":{"x":55,"y":64,"z":85},"n":"dirt","full":true},{"q":{"x":55,"y":65,"z":85},"n":"dirt","full":true}],"planned":[{"q":{"x":55,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":55,"y":67,"z":86},"n":"grass_block","full":true},{"q":{"x":55,"y":68,"z":86},"n":"air","full":false},{"q":{"x":56,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":56,"y":67,"z":86},"n":"dirt","full":true},{"q":{"x":56,"y":68,"z":86},"n":"grass_block","full":true},{"q":{"x":54,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":54,"y":67,"z":86},"n":"grass_block","full":true},{"q":{"x":54,"y":68,"z":86},"n":"air","full":false},{"q":{"x":55,"y":66,"z":87},"n":"dirt","full":true},{"q":{"x":55,"y":67,"z":87},"n":"dirt","full":true},{"q":{"x":55,"y":68,"z":87},"n":"grass_block","full":true},{"q":{"x":55,"y":66,"z":85},"n":"dirt","full":true},{"q":{"x":55,"y":67,"z":85},"n":"grass_block","full":true},{"q":{"x":55,"y":68,"z":85},"n":"air","full":false}]}
+DIG_POST {"q":{"x":55,"y":66,"z":86},"original":"dirt","post":"air"}
+CUT {"q":{"x":55,"y":66,"z":86},"n":"dirt","p":{"x":55.499825929746116,"y":64,"z":86.5}}
+DIG_POST {"q":{"x":55,"y":67,"z":86},"original":"grass_block","post":"air"}
+CUT {"q":{"x":55,"y":67,"z":86},"n":"grass_block","p":{"x":55.499825929746116,"y":64,"z":86.5}}
+UP {"at":"2026-10-19T12:08:03.809Z","p":{"x":55.499825929746116,"y":65,"z":86.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",29,null]]}
+UP {"at":"2026-10-19T12:08:04.411Z","p":{"x":55.499825929746116,"y":66,"z":86.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",28,null]]}
+RAISED {"at":"2026-10-19T12:08:04.562Z","p":{"x":55.499825929746116,"y":66,"z":86.5},"hp":14.166666030883789,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",27,null]],"faces":[{"q":{"x":55,"y":65,"z":86},"n":"dirt","full":true},{"q":{"x":55,"y":68,"z":86},"n":"dirt","full":true},{"q":{"x":56,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":56,"y":67,"z":86},"n":"dirt","full":true},{"q":{"x":54,"y":66,"z":86},"n":"dirt","full":true},{"q":{"x":54,"y":67,"z":86},"n":"grass_block","full":true},{"q":{"x":55,"y":66,"z":87},"n":"dirt","full":true},{"q":{"x":55,"y":67,"z":87},"n":"dirt","full":true},{"q":{"x":55,"y":66,"z":85},"n":"dirt","full":true},{"q":{"x":55,"y":67,"z":85},"n":"grass_block","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:08:04.562Z",
+ "p": {
+  "x": 55.499825929746116,
+  "y": 66,
+  "z": 86.5
+ },
+ "hp": 14.166666030883789,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   27,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 55,
+    "y": 65,
+    "z": 86
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 55,
+    "y": 68,
+    "z": 86
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 56,
+    "y": 66,
+    "z": 86
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 56,
+    "y": 67,
+    "z": 86
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 54,
+    "y": 66,
+    "z": 86
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 54,
+    "y": 67,
+    "z": 86
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 55,
+    "y": 66,
+    "z": 87
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 55,
+    "y": 67,
+    "z": 87
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 55,
+    "y": 66,
+    "z": 85
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 55,
+    "y": 67,
+    "z": 85
+   },
+   "n": "grass_block",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (55.5, 66, 86.5) in overworld, health 14.2/20, food 17/20, alive
+
+STDERR

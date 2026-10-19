@@ -1,0 +1,131 @@
+program #12466 on p2: 4 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:59:24.973Z","p":{"x":9.5,"y":66,"z":-28.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+DIG_POST {"q":{"x":9,"y":65,"z":-29},"original":"grass_block","post":"air"}
+CUT {"q":{"x":9,"y":65,"z":-29},"n":"grass_block","p":{"x":9.5,"y":65.76636799395752,"z":-28.5}}
+DIG_POST {"q":{"x":9,"y":64,"z":-29},"original":"dirt","post":"air"}
+CUT {"q":{"x":9,"y":64,"z":-29},"n":"dirt","p":{"x":9.5,"y":64.76636799395752,"z":-28.5}}
+DIG_POST {"q":{"x":9,"y":63,"z":-29},"original":"dirt","post":"air"}
+CUT {"q":{"x":9,"y":63,"z":-29},"n":"dirt","p":{"x":9.5,"y":63.76636799395752,"z":-28.5}}
+CAPPED {"at":"2026-10-19T11:59:28.946Z","p":{"x":9.5,"y":63,"z":-28.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":9,"y":62,"z":-29},"n":"stone","full":true},{"q":{"x":9,"y":65,"z":-29},"n":"dirt","full":true},{"q":{"x":10,"y":63,"z":-29},"n":"dirt","full":true},{"q":{"x":10,"y":64,"z":-29},"n":"dirt","full":true},{"q":{"x":8,"y":63,"z":-29},"n":"dirt","full":true},{"q":{"x":8,"y":64,"z":-29},"n":"dirt","full":true},{"q":{"x":9,"y":63,"z":-28},"n":"dirt","full":true},{"q":{"x":9,"y":64,"z":-28},"n":"dirt","full":true},{"q":{"x":9,"y":63,"z":-30},"n":"dirt","full":true},{"q":{"x":9,"y":64,"z":-30},"n":"grass_block","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:59:28.946Z",
+ "p": {
+  "x": 9.5,
+  "y": 63,
+  "z": -28.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   2,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 9,
+    "y": 62,
+    "z": -29
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 65,
+    "z": -29
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 10,
+    "y": 63,
+    "z": -29
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 10,
+    "y": 64,
+    "z": -29
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 63,
+    "z": -29
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 8,
+    "y": 64,
+    "z": -29
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 63,
+    "z": -28
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 64,
+    "z": -28
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 63,
+    "z": -30
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 9,
+    "y": 64,
+    "z": -30
+   },
+   "n": "grass_block",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+[server] p2 was shot by Skeleton
+p4: URGENT integration: completed P2 continuous program actual END11:59:03.639 is182.486/71.232/491.5 HP7.5 food17 AIRroof73/northhead72/southfaces, airborne, kit+15berries retained. Motion net142.6 at20HP was followed by FAILED ending/loss. Refresh/recover NO
+p4: W; old219/20HP board superseded. Global-distance guard IS actually adopted in executed code; no universal audit gate, act on present body.
+p4: SUPERSEDES urgentbody: freshstatus11:59:16/chat P2 shotbySkeleton, actualrespawn9.5/66/-28.5 20HP20food EMPTY. Entire carriedkit+15berries lost; death/drop positions/recoverability require current evidence. P4 forge remains available61/61/125, spareWoodPic
+p4: k/Sword plus Shield ownretained. Largest gap20minreview is failed ending→idle exposure despite fundedmaterials, not globalstall guard now fixed.
+--- p2 now: (9.5, 63, -28.5) in overworld, health 20/20, food 20/20, alive
+
+STDERR

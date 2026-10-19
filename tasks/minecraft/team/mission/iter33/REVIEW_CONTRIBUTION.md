@@ -1,0 +1,5 @@
+# Integration contribution, 12:09 UTC
+Opening eval failedsave LAST-SAVED0dragon/11milestones/199deaths. One new P2 death since11:41: Skeleton11:59:11 at182.3/71/491.5. Wholekitlost, no corpse receipt. Pre-restart11:18 P2 death separate.
+12454 forward142.6m/20HP FAILED ending. Exterior skeleton entered8m afterfall0→oldUP→exposed.12484 donorapproach mistakenlyreusedoldhelper, afterfall2 sameguard→UP→exposed; acknowledgedimplementationmistake.12488 separate3DOWN/cap retained14.167HP17food/full;12495nextsource→12507tunnel actualadoption. Newsecure_core automaticcatch deepen/cap implemented butUNEXERCISED; do notcertifyfromquietcase.
+Protectedtunnel12507 10m→12512 5m/full thensoilboundarySTONE stop;12524 contour2UP/cap→12526 10m/full55.5/66/96.5 same14.167HP17food/Dirt45. Actualretainedroute+funding, no transfer yet. Donorgates12:05:33 and12:08:30 FAILED; courierchangeindependentandproductive, originaltargetsupersededonlyafteractualP4endpoint.
+RunnerrejectsretiredASCENT source marker beforearena, actualoffline donor_approach rejectiontested. Noautomaticgameplaycatchproof. Otherrolefilesread-only/shared evolution/token recordsnotedited. Tokenusageunavailable.
