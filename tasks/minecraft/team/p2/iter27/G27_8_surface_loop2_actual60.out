@@ -1,0 +1,35 @@
+[sandbox] program #176 on p2: 5 s
+--- output ---
+ENVIRONMENT SANDBOX G27-8 ACTUAL175surface-source60 continuousloop/returnKNOWN58hole; noattack/noSnow
+FAILURE Error: surfacefreshsource {"at":"2026-10-19T01:22:24.717Z","state":{"at":"2026-10-19T01:22:24.717Z","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"phase":"prepare"}
+SURFACE_LOOP_POST {"at":"2026-10-19T01:22:29.686Z","state":{"at":"2026-10-19T01:22:29.686Z","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"phase":"prepare","elapsedMs":4969,"events":[]}
+OPERATION_GUARD {"startHp":20,"hp":20,"damaged":false,"dead":false,"mode":"forward","failures":[]}
+HAZARD_TRACE {"rows":[{"at":"2026-10-19T01:22:24.717Z","ms":0,"event":"start","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:24.922Z","ms":205,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:25.171Z","ms":454,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:25.423Z","ms":706,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:25.675Z","ms":958,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:25.925Z","ms":1208,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:26.176Z","ms":1459,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:26.427Z","ms":1710,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:26.677Z","ms":1960,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:26.930Z","ms":2213,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:27.179Z","ms":2462,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:27.430Z","ms":2713,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:27.681Z","ms":2964,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:27.932Z","ms":3215,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:28.183Z","ms":3466,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:28.433Z","ms":3716,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:28.684Z","ms":3967,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:28.936Z","ms":4219,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:29.186Z","ms":4469,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:29.436Z","ms":4719,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:29.686Z","ms":4969,"event":"sample","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T01:22:29.686Z","ms":4969,"event":"stop","p":{"x":10.5,"y":77,"z":-41.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]}],"dropped":0,"requestedLimit":48,"effectiveLimit":48,"elapsedMs":4969,"listenersRemoved":true}
+--- returned ---
+{
+ "at": "2026-10-19T01:22:29.686Z",
+ "p": {
+  "x": 10.5,
+  "y": 77,
+  "z": -41.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "wear": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+[server] p2 was killed by Ender Dragon using magic
+--- p2 now: (10.5, 77, -41.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,32 @@
+{
+  "environment": "G27-9 sandbox hypothesis",
+  "sources": [
+    "actual159 ordinary rising Snow flight",
+    "actual160/177 jump samples",
+    "LIVE11506 public blocks/crystal89/model-rays"
+  ],
+  "stance": [
+    -15.5,
+    57,
+    17.5
+  ],
+  "target_entity_position": [
+    -33.5,
+    89,
+    24.5
+  ],
+  "projectile_target_height": 89.8,
+  "release_feet_expected": 58.1661092609,
+  "projectile_spawn_y_expected": 59.6861092642,
+  "nominal_speed_hypothesis": 1.5,
+  "extra_vertical_hypothesis": 0.1647732818,
+  "drag_from_public_flight_fit": 0.99,
+  "gravity_from_public_flight_fit": 0.03,
+  "elevation_degrees": 72.32435482856816,
+  "visibility_point_offset": [
+    0.95,
+    1.95,
+    -0.95
+  ],
+  "scope": "MODEL ONLY. Actual camera/body/visibility/outgoing ray and actual projectile/target/ending must qualify; random launch spread and server timing are not guaranteed."
+}
