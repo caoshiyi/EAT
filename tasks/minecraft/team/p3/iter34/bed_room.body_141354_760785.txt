@@ -1,0 +1,32 @@
+program #13140 on p3: 16.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:13:54.892Z","p":{"x":150.47340424340828,"y":-36,"z":2240.6509536818867},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",2,null],["stone_bricks",5,null],["mossy_stone_bricks",2,null],["cracked_stone_bricks",3,null],["cobblestone",26,null],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["stick",3,null],["spruce_planks",3,null],["white_bed",1,null]],"time":3210,"dim":"overworld","controls":{},"goal":false}
+MOVE Vec3 { x: 151.3213785318961, y: -36, z: 2240.5304445068177 } 20 20
+MOVE Vec3 { x: 151.46217191492616, y: -36, z: 2239.6858479156035 } 20 20
+MOVE Vec3 { x: 151.47961433242534, y: -36, z: 2238.613788184651 } 20 20
+MOVE Vec3 { x: 151.48705422232948, y: -36, z: 2237.7567733318697 } 20 20
+MOVE Vec3 { x: 151.4926984898107, y: -36, z: 2236.684093998949 } 20 20
+MOVE Vec3 { x: 151.49603378689417, y: -36, z: 2235.61136838264 } 20 20
+MOVE Vec3 { x: 150.64416540584978, y: -36, z: 2235.5197567101463 } 20 20
+MOVE Vec3 { x: 149.5, y: -36, z: 2235.5100079623803 } 20 20
+MOVE Vec3 { x: 148.64288384049786, y: -36, z: 2235.5056464757686 } 20 20
+MOVE Vec3 { x: 147.5, y: -36, z: 2235.5028242945505 } 20 20
+MOVE Vec3 { x: 147.4999999999999, y: -36, z: 2234.645654574714 } 20 20
+MOVE Vec3 { x: 147.49999999999974, y: -36, z: 2233.5 } 20 20
+MOVE Vec3 { x: 147.49999999999963, y: -36, z: 2232.6428302801637 } 20 20
+MOVE Vec3 { x: 147.4999999999995, y: -36, z: 2231.5 } 20 20
+MOVE Vec3 { x: 146.64283028016305, y: -36, z: 2231.5 } 20 20
+MOVE Vec3 { x: 145.5, y: -36, z: 2231.5 } 20 20
+MOVE Vec3 { x: 144.64283028016357, y: -36, z: 2231.5 } 20 20
+MOVE Vec3 { x: 143.5, y: -36, z: 2231.5 } 20 20
+MOVE Vec3 { x: 142.64283028016357, y: -36, z: 2231.5 } 20 20
+BED_ROOM {"at":"2026-10-19T14:14:11.436Z","p":{"x":142.64283028016357,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",2,null],["cracked_stone_bricks",4,null],["cobblestone",26,null],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["stick",3,null],["spruce_planks",3,null],["white_bed",1,null]],"time":3530,"dim":"overworld","controls":{},"goal":false}
+BED_SLOTS [
+  [ 2232, 'cracked_stone_bricks', 'air' ],
+  [ 2233, 'stone_bricks', 'air' ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P2 actual native upthrow Berry1 just debited; P4 please actual receipt/eat before bulk. Current donor9.501/60/91.489. Prior message93 source was stale, actual13128 landed92 then13137 lower succeeded.
+--- p3 now: (142.6, -36, 2231.5) in overworld, health 20/20, food 20/20, alive

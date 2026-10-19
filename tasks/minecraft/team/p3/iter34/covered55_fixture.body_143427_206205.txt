@@ -1,0 +1,57 @@
+program #13242 on p3: 40.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:34:27.344Z","p":{"x":8.500334863509282,"y":55,"z":-11.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,49],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",20,null],["spruce_planks",3,null],["end_stone",25,null]],"time":3851,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 56, z: -13 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -13 } end_stone
+MOVE Vec3 { x: 8.500334863509247, y: 55, z: -12.357169719836445 } 20 20
+INDEX 15
+CUT Vec3 { x: 8, y: 56, z: -14 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -14 } end_stone
+MOVE Vec3 { x: 8.500334863509202, y: 55, z: -13.5 } 20 20
+INDEX 16
+CUT Vec3 { x: 8, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 8.500334863509167, y: 55, z: -14.357169719836445 } 20 20
+INDEX 17
+CUT Vec3 { x: 8, y: 56, z: -16 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -16 } end_stone
+MOVE Vec3 { x: 8.500334863509122, y: 55, z: -15.5 } 20 20
+INDEX 18
+CUT Vec3 { x: 8, y: 56, z: -17 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -17 } end_stone
+MOVE Vec3 { x: 8.500334863509087, y: 55, z: -16.357169719836453 } 20 20
+INDEX 19
+CUT Vec3 { x: 8, y: 56, z: -18 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -18 } end_stone
+MOVE Vec3 { x: 8.500334863509043, y: 55, z: -17.5 } 20 20
+INDEX 20
+CUT Vec3 { x: 8, y: 56, z: -19 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -19 } end_stone
+MOVE Vec3 { x: 8.500334863509007, y: 55, z: -18.357169719836453 } 20 20
+INDEX 21
+CUT Vec3 { x: 8, y: 56, z: -20 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -20 } end_stone
+MOVE Vec3 { x: 8.500334863508963, y: 55, z: -19.5 } 20 20
+INDEX 22
+CUT Vec3 { x: 8, y: 56, z: -21 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -21 } end_stone
+MOVE Vec3 { x: 8.500334863508927, y: 55, z: -20.357169719836453 } 20 20
+INDEX 23
+CUT Vec3 { x: 8, y: 56, z: -22 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -22 } end_stone
+MOVE Vec3 { x: 8.500334863508883, y: 55, z: -21.5 } 20 20
+INDEX 24
+CUT Vec3 { x: 8, y: 56, z: -23 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -23 } end_stone
+MOVE Vec3 { x: 8.500334863508847, y: 55, z: -22.357169719836453 } 20 20
+INDEX 25
+PLACE Vec3 { x: 8, y: 55, z: -22 } end_stone
+PLACE Vec3 { x: 8, y: 56, z: -22 } end_stone
+SEALED [{"q":{"x":8,"y":54,"z":-23},"n":"end_stone","full":true},{"q":{"x":8,"y":57,"z":-23},"n":"end_stone","full":true},{"q":{"x":9,"y":55,"z":-23},"n":"end_stone","full":true},{"q":{"x":9,"y":56,"z":-23},"n":"end_stone","full":true},{"q":{"x":7,"y":55,"z":-23},"n":"end_stone","full":true},{"q":{"x":7,"y":56,"z":-23},"n":"end_stone","full":true},{"q":{"x":8,"y":55,"z":-22},"n":"end_stone","full":true},{"q":{"x":8,"y":56,"z":-22},"n":"end_stone","full":true},{"q":{"x":8,"y":55,"z":-24},"n":"end_stone","full":true},{"q":{"x":8,"y":56,"z":-24},"n":"end_stone","full":true}]
+FIXTURE_PROGRESS {"at":"2026-10-19T14:35:08.026Z","p":{"x":8.50010395662178,"y":55,"z":-22.5456474160753},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,71],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",20,null],["spruce_planks",3,null],["end_stone",45,null]],"time":4671,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P4 shorterpossiblewoodsource (historicalhypothesis, inspectcurrent): replace2fullHOMEwallPlanks withDirt fromexistingroom instead2newlogs ifreachable; twoPlanks->4Sticks->StoneShovel(+2sparesticks). Chestquery negativeaccepted, so no bankammo budget. P3 na
+p1: tivevisibleface fixnoted; P1Snow4nowfresh-53/z64 shaftcandidate after-54provenAIR, LOWthencheckpointnext. Revisedammoarrival~14:38, original14:36maymiss; physicalcurrentretained4.
+--- p3 now: (8.5, 55, -22.5) in the_end, health 20/20, food 20/20, alive

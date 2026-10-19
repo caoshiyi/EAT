@@ -1,0 +1,429 @@
+program #13162 on p3: 11 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:17:20.134Z","p":{"x":131.50827419094236,"y":-36,"z":2275.272726149077},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,1],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",23,null],["spruce_planks",3,null]],"time":7310,"dim":"overworld","controls":{},"goal":false}
+END_ARRIVAL {"at":"2026-10-19T14:17:21.791Z","p":{"x":100.43263259579184,"y":49,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,1],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",23,null],["spruce_planks",3,null]],"time":7351,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 77.70446607621557, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 76.63171475758634, y: 50, z: 0.5 } 20 20
+MOVE Vec3 { x: 75.5, y: 50, z: 0.5 } 20 20
+PLACE Vec3 { x: 76, y: 50, z: 0 } cobblestone
+PLACE Vec3 { x: 74, y: 50, z: 0 } cobblestone
+PLACE Vec3 { x: 76, y: 51, z: 0 } cobblestone
+PLACE Vec3 { x: 74, y: 51, z: 0 } cobblestone
+SEALED [{"q":{"x":75,"y":49,"z":0},"n":"end_stone","full":true},{"q":{"x":75,"y":52,"z":0},"n":"end_stone","full":true},{"q":{"x":76,"y":50,"z":0},"n":"cobblestone","full":true},{"q":{"x":76,"y":51,"z":0},"n":"cobblestone","full":true},{"q":{"x":74,"y":50,"z":0},"n":"cobblestone","full":true},{"q":{"x":74,"y":51,"z":0},"n":"cobblestone","full":true},{"q":{"x":75,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":75,"y":51,"z":1},"n":"end_stone","full":true},{"q":{"x":75,"y":50,"z":-1},"n":"end_stone","full":true},{"q":{"x":75,"y":51,"z":-1},"n":"end_stone","full":true}]
+END75 {"at":"2026-10-19T14:17:31.114Z","p":{"x":75.5,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,1],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",19,null],["spruce_planks",3,null]],"time":7531,"dim":"the_end","controls":{},"goal":false}
+LOADED [
+  [
+    11226,
+    'end_crystal',
+    Vec3 { x: 33.5, y: 80, z: -24.5 },
+    undefined
+  ],
+  [
+    11227,
+    'ender_dragon',
+    Vec3 {
+      x: -47.66683753511609,
+      y: 83.0185926527689,
+      z: 11.95915545119827
+    },
+    undefined
+  ],
+  [ 11240, 'end_crystal', Vec3 { x: 33.5, y: 83, z: 24.5 }, undefined ],
+  [
+    11267,
+    'end_crystal',
+    Vec3 { x: 12.5, y: 101, z: 39.5 },
+    undefined
+  ],
+  [
+    11268,
+    'item',
+    Vec3 { x: 5.051799018751736, y: 57, z: -35.73657583798458 },
+    'sandstone'
+  ],
+  [
+    11269,
+    'item',
+    Vec3 { x: 8.06484320658786, y: 57, z: -35.62806734190565 },
+    'netherrack'
+  ],
+  [
+    11270,
+    'item',
+    Vec3 { x: 8.362130174909288, y: 57, z: -34.604417202267165 },
+    'diorite'
+  ],
+  [
+    11271,
+    'item',
+    Vec3 { x: 1.3741468682569977, y: 58, z: -33.38231672107938 },
+    'coal'
+  ],
+  [
+    11272,
+    'item',
+    Vec3 { x: 5.988656038660869, y: 57, z: -33.90050307006583 },
+    'spruce_sapling'
+  ],
+  [
+    11273,
+    'item',
+    Vec3 { x: 1.5266743468767392, y: 58, z: -33.114353733830725 },
+    'wooden_shovel'
+  ],
+  [
+    11274,
+    'item',
+    Vec3 { x: 7.048855096365555, y: 57, z: -32.73604302400741 },
+    'spruce_planks'
+  ],
+  [
+    11275,
+    'item',
+    Vec3 { x: 11.80340476212841, y: 57, z: -32.36872568677808 },
+    'cobblestone'
+  ],
+  [
+    11276,
+    'end_crystal',
+    Vec3 { x: 12.5, y: 95, z: -39.5 },
+    undefined
+  ],
+  [ 11277, 'item', Vec3 { x: 6.125, y: 57, z: -16.875 }, 'end_stone' ],
+  [
+    11278,
+    'item',
+    Vec3 { x: 6.875, y: 57, z: -16.773801664660525 },
+    'end_stone'
+  ],
+  [
+    11279,
+    'item',
+    Vec3 { x: 6.125, y: 57, z: -17.847606835843415 },
+    'end_stone'
+  ],
+  [ 11280, 'item', Vec3 { x: 6.125, y: 57, z: -18.875 }, 'end_stone' ],
+  [
+    11281,
+    'item',
+    Vec3 { x: 5.702500779230742, y: 58, z: -20.667055949892603 },
+    'end_stone'
+  ],
+  [ 11282, 'item', Vec3 { x: 6.125, y: 57, z: -20.875 }, 'end_stone' ],
+  [ 11283, 'item', Vec3 { x: 6.875, y: 57, z: -21.875 }, 'end_stone' ],
+  [ 11284, 'item', Vec3 { x: 6.125, y: 57, z: -22.875 }, 'end_stone' ],
+  [
+    11285,
+    'item',
+    Vec3 { x: 6.688878485993291, y: 57, z: -24.875 },
+    'end_stone'
+  ],
+  [
+    11286,
+    'area_effect_cloud',
+    Vec3 { x: 6.499571983200405, y: 58, z: -25.5 },
+    undefined
+  ],
+  [
+    11287,
+    'item',
+    Vec3 { x: 7.29513407538907, y: 58, z: -30.148455680499094 },
+    'cobblestone'
+  ],
+  [
+    11288,
+    'item',
+    Vec3 { x: 4.311403045572977, y: 58, z: -29.100589797200936 },
+    'cobblestone'
+  ],
+  [
+    11289,
+    'item',
+    Vec3 { x: 6.465960743785903, y: 58, z: -27.93552474227918 },
+    'stone_pickaxe'
+  ],
+  [
+    11290,
+    'item',
+    Vec3 { x: 6.023265718359105, y: 58, z: -26.125 },
+    'cobblestone'
+  ],
+  [
+    11291,
+    'item',
+    Vec3 { x: 2.132548187933636, y: 58, z: -27.319335325168588 },
+    'cobblestone'
+  ],
+  [
+    11292,
+    'item',
+    Vec3 { x: 4.33529062664337, y: 58, z: -27.693417187302483 },
+    'cobblestone'
+  ],
+  [
+    11293,
+    'item',
+    Vec3 { x: 2.9971252750577277, y: 58, z: -30.01806402671291 },
+    'stone_pickaxe'
+  ],
+  [
+    11294,
+    'item',
+    Vec3 { x: 5.979448247364309, y: 58, z: -28.861851745795896 },
+    'wooden_shovel'
+  ],
+  [
+    11295,
+    'item',
+    Vec3 { x: 9.27449816797904, y: 58, z: -29.975253515289683 },
+    'stick'
+  ],
+  [
+    11296,
+    'item',
+    Vec3 { x: 5.107184705989215, y: 58, z: -29.428613664462112 },
+    'stone_sword'
+  ],
+  [
+    11297,
+    'item',
+    Vec3 { x: 0.12505878814005697, y: 58, z: -24.790376164721614 },
+    'crafting_table'
+  ],
+  [
+    11298,
+    'item',
+    Vec3 { x: 5.911287127090062, y: 58, z: -28.24390221428774 },
+    'flint_and_steel'
+  ],
+  [
+    11299,
+    'item',
+    Vec3 { x: 4.9577634973574725, y: 58, z: -26.125 },
+    'dirt'
+  ],
+  [
+    11300,
+    'item',
+    Vec3 { x: 4.681629711648774, y: 58, z: -29.575245212135247 },
+    'basalt'
+  ],
+  [
+    11301,
+    'item',
+    Vec3 { x: 7.164884007206506, y: 58, z: -29.877741807296648 },
+    'spruce_button'
+  ],
+  [
+    11302,
+    'item',
+    Vec3 { x: 2.419685598424784, y: 58, z: -23.633985917147328 },
+    'wooden_pickaxe'
+  ],
+  [
+    11303,
+    'item',
+    Vec3 { x: 1.388633240797202, y: 58, z: -23.31235541367026 },
+    'snowball'
+  ],
+  [
+    11304,
+    'item',
+    Vec3 { x: 5.145678589836396, y: 58, z: -31.49042291166619 },
+    'blackstone'
+  ],
+  [
+    11305,
+    'item',
+    Vec3 { x: 3.4070981223208308, y: 58, z: -28.117366859941615 },
+    'moss_block'
+  ],
+  [
+    11306,
+    'item',
+    Vec3 { x: 12.174449365513658, y: 57, z: -31.67152599665637 },
+    'stone_sword'
+  ],
+  [
+    11307,
+    'item',
+    Vec3 { x: 2.2723928573753134, y: 58, z: -31.952655730667335 },
+    'cobblestone_slab'
+  ],
+  [
+    11308,
+    'item',
+    Vec3 { x: 11.282142462796813, y: 58, z: -27.978403737128833 },
+    'snowball'
+  ],
+  [
+    11309,
+    'item',
+    Vec3 { x: 2.7471388294100634, y: 58, z: -25.860611226182268 },
+    'raw_copper'
+  ],
+  [
+    11310,
+    'item',
+    Vec3 { x: 9.988527947265705, y: 58, z: -26.16706662066557 },
+    'basalt'
+  ],
+  [
+    11311,
+    'item',
+    Vec3 { x: 6.459584500184675, y: 58, z: -26.042691500323482 },
+    'stone_shovel'
+  ],
+  [
+    11312,
+    'item',
+    Vec3 { x: 5.7895012611630765, y: 58, z: -28.402011239807106 },
+    'wooden_pickaxe'
+  ],
+  [
+    11313,
+    'item',
+    Vec3 { x: 9.071767789192226, y: 58, z: -26.50764322151582 },
+    'basalt'
+  ],
+  [
+    11314,
+    'item',
+    Vec3 { x: 10.812989503309621, y: 60, z: 2.3641079336224307 },
+    'ender_pearl'
+  ],
+  [
+    11315,
+    'item',
+    Vec3 { x: 5.125, y: 57, z: 0.2452049103720844 },
+    'end_stone'
+  ],
+  [
+    11316,
+    'item',
+    Vec3 { x: 5.875, y: 57, z: 0.36106022507507096 },
+    'end_stone'
+  ],
+  [
+    11317,
+    'item',
+    Vec3 { x: 6.694177035322352, y: 57, z: 0.875 },
+    'end_stone'
+  ],
+  [ 11318, 'item', Vec3 { x: 6.875, y: 57, z: 0.125 }, 'end_stone' ],
+  [
+    11321,
+    'item',
+    Vec3 { x: 11.240767856823993, y: 61, z: -3.20027349959763 },
+    'ender_pearl'
+  ],
+  [
+    11322,
+    'item',
+    Vec3 { x: 9.701842406678827, y: 61, z: -4.239201649533591 },
+    'ender_pearl'
+  ],
+  [
+    11323,
+    'item',
+    Vec3 { x: 10.80684705388231, y: 61, z: -1.8250564158211513 },
+    'ender_pearl'
+  ],
+  [
+    11324,
+    'item',
+    Vec3 { x: 6.125, y: 57, z: -0.43740681877976745 },
+    'end_stone'
+  ],
+  [
+    11325,
+    'item',
+    Vec3 { x: 6.875, y: 57, z: -1.2639268850290697 },
+    'end_stone'
+  ],
+  [
+    11326,
+    'item',
+    Vec3 { x: 6.853326173159853, y: 57, z: -2.9330787342123656 },
+    'end_stone'
+  ],
+  [ 11327, 'item', Vec3 { x: 6.875, y: 57, z: -5.875 }, 'end_stone' ],
+  [
+    11328,
+    'item',
+    Vec3 { x: 6.755384594741317, y: 57, z: -4.286612695336889 },
+    'end_stone'
+  ],
+  [
+    11329,
+    'item',
+    Vec3 { x: 6.789444510162458, y: 57, z: -6.875 },
+    'end_stone'
+  ],
+  [
+    11330,
+    'item',
+    Vec3 { x: 6.170001464389032, y: 57, z: -8.534283337056928 },
+    'end_stone'
+  ],
+  [
+    11331,
+    'item',
+    Vec3 { x: 6.125, y: 57, z: -9.408638834132416 },
+    'end_stone'
+  ],
+  [ 11332, 'item', Vec3 { x: 6.125, y: 57, z: -10.875 }, 'end_stone' ],
+  [
+    11333,
+    'item',
+    Vec3 { x: 6.286019840951426, y: 57, z: -13.875 },
+    'end_stone'
+  ],
+  [
+    11334,
+    'item',
+    Vec3 { x: 6.661631185650819, y: 57, z: -15.510961645551943 },
+    'end_stone'
+  ],
+  [
+    11341,
+    'end_crystal',
+    Vec3 { x: -12.5, y: 104, z: -39.5 },
+    undefined
+  ],
+  [
+    11342,
+    'item',
+    Vec3 { x: -0.7513928601613137, y: 58, z: -29.27456532966022 },
+    'stone_pickaxe'
+  ],
+  [
+    11343,
+    'item',
+    Vec3 { x: -0.4720783526648218, y: 59, z: 20.19683743319406 },
+    'ender_pearl'
+  ],
+  [
+    11344,
+    'item',
+    Vec3 { x: -0.6302235796685272, y: 58, z: 26.982840792115837 },
+    'ender_pearl'
+  ],
+  [
+    11345,
+    'item',
+    Vec3 { x: -8.26430282419321, y: 57, z: 33.7458972266952 },
+    'ender_pearl'
+  ],
+  [
+    11362,
+    'end_crystal',
+    Vec3 { x: -41.5, y: 98, z: -0.5 },
+    undefined
+  ]
+]
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+[server] p3 has made the advancement [The End?]
+--- p3 now: (75.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive

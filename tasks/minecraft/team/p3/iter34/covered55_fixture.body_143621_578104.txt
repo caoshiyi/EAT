@@ -1,0 +1,33 @@
+program #13245 on p3: 18.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:36:21.716Z","p":{"x":8.50010395662178,"y":55,"z":-22.5456474160753},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,71],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",20,null],["spruce_planks",3,null],["end_stone",45,null]],"time":6131,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 8, y: 56, z: -24 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -24 } end_stone
+MOVE Vec3 { x: 8.500103956621745, y: 55, z: -23.5 } 20 20
+INDEX 26
+CUT Vec3 { x: 8, y: 56, z: -25 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -25 } end_stone
+MOVE Vec3 { x: 8.50010395662171, y: 55, z: -24.357169719836453 } 20 20
+INDEX 27
+CUT Vec3 { x: 8, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 8, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 8.500103956621665, y: 55, z: -25.5 } 20 20
+INDEX 28
+CUT Vec3 { x: 7, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 7, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 7.642934236785219, y: 55, z: -25.5 } 20 20
+INDEX 29
+CUT Vec3 { x: 6, y: 56, z: -26 } end_stone
+CUT Vec3 { x: 6, y: 55, z: -26 } end_stone
+MOVE Vec3 { x: 6.5, y: 55, z: -25.5 } 20 20
+INDEX 30
+PLACE Vec3 { x: 7, y: 55, z: -26 } end_stone
+PLACE Vec3 { x: 7, y: 56, z: -26 } end_stone
+SEALED [{"q":{"x":6,"y":54,"z":-26},"n":"end_stone","full":true},{"q":{"x":6,"y":57,"z":-26},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":7,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-27},"n":"end_stone","full":true}]
+FIXTURE_PROGRESS {"at":"2026-10-19T14:36:40.420Z","p":{"x":6.5,"y":55,"z":-25.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,81],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",20,null],["spruce_planks",3,null],["end_stone",53,null]],"time":6511,"dim":"the_end","controls":{},"goal":false}
+FIXTURE_READY {"state":{"at":"2026-10-19T14:36:40.420Z","p":{"x":6.5,"y":55,"z":-25.5},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["stone_pickaxe",1,81],["gravel",5,null],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["cobblestone",20,null],["spruce_planks",3,null],["end_stone",53,null]],"time":6511,"dim":"the_end","controls":{},"goal":false},"boundary":[{"q":{"x":6,"y":54,"z":-26},"n":"end_stone","full":true},{"q":{"x":6,"y":57,"z":-26},"n":"cobblestone","full":true},{"q":{"x":7,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":7,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":55,"z":-26},"n":"end_stone","full":true},{"q":{"x":5,"y":56,"z":-26},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-25},"n":"end_stone","full":true},{"q":{"x":6,"y":55,"z":-27},"n":"end_stone","full":true},{"q":{"x":6,"y":56,"z":-27},"n":"end_stone","full":true}],"target":[[11276,{"x":12.5,"y":95,"z":-39.5}]]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p3 now: (6.5, 55, -25.5) in the_end, health 20/20, food 20/20, alive
