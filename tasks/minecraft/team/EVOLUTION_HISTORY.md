@@ -246,3 +246,6 @@ Iteration37 retained damage and useful adoption, but execution gaps, extended pr
 
 ## Iteration38 ten-minute review —22:02 UTC
 Actual6.5damage/twoAxe hits retainedDragon11.354599, but14466 upperending ledP1Dragondeath21:57:10. Recovery/replacement resumed14495 by21:59:50; P3funded/P2courier/nativeP1receipt within2min after donor-repickup corrected. Firsthealthy restart~8s improvedcontinuity; fatalending cost~3min. P2I2 localizedE59outsidecleanupcontract, notsolvedcombatsafety. Latest14496 native22:02Dragonunchanged/peers20. Assignedp2 onebounded current opportunity-vs-execution question by22:07; no Minecraftmethod/primaryapprovalgate. SeeREVIEW_2202.
+
+## Iteration38 changed ending first retained damage —22:05 UTC
+Canonical14500 completed118.5s, oneSTANDINGaxe11.354599→8.104599(-3.25), fullLOW20HP/food17/P320/noissue/errors[]. ReplacementP3craft→P2courier→P1receipt→actualuse/effect/ending CLOSED. P1resumed14504~8s afterending, improvedcontinuity. Total9.75damage/threehits; onefatalpriorending stillretainedfailure. P2I4 custompointLOS didnotqualifynativevisibility in14495; respectnativeREFUSED/no bypass. Firstchangedhealthyhit is onecycle, notuniversalsafety orvictory.
