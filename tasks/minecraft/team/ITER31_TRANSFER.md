@@ -301,3 +301,11 @@ Full12016source/outputindependentlyread: explicitreturn-onlyfromactualsurface63,
 ## Gravel receipt became actual local ascent — 2026-10-19 08:49:16 UTC
 
 12017completeoperationalbody/outputindependentlyread: source41/Gravel4/20HP→actualwalk42thenfourordinarynativeUP43/44/45/46 by08:47:22.223,Gravel4→0. Subsequentthreeadjacentcolumnharvests yieldedactualinventory4→8→11; final08:47:42.177at-3.5/46/-38.5grounded20HP20food/Gravel11. TwelveCUTlabelsareNOTtwelveinventoryitems; terminal11istheverifiedreceipt, noflint/lostdropcauseinvented. Thisisconcretesuccessoruseofmaterialfundingandlocalascent, distinctfromemptyone-blockrepair. Itdoesnotrestorewoodtools/foodammo/routekit/Endaccess. CurrentP4separatelyretainedpod57/Dirt4.
+
+## New completed local refuge54 — 2026-10-19 08:52:54 UTC
+
+Full12019operationalbody/completeoutputread: eightactualUP46→54(consumedGravel11→3), normalvisiblegranite/dirtroofcuts, gainedDirt1. ThreeTEN_REFUGEaudits08:51:55.202/.402/.602alltenfull; terminal55.801at-3.5/54/-38.5grounded20HP20food/Gravel3/Dirt1/controlsfinallycleared. Thisqualifiesnewlocalaccessandretainedending; sourcechangefromempty38caveisreal. Actualwoodtools/stonekit/ammo/Endaccessremainunrestored. Provisionalwasalreadycomplete08:03/refreshedbefore90; thisadditionalreadat~90doesnotrestartdeadlines. LatestP4pod57/Dirt4; laterstatus/eventsstillneededforclosure.
+
+## Small software-interface probe supported a repair — 2026-10-19 08:54:18 UTC
+
+Full12021source/completedreturnread. Read-onlyfindBlocksmatcheractualcalls29011/nullPosition339; namematchthenfilterreturnedVec3positionsproduced80actualpositionsandboundedeligiblelist. Thisdirectlyshowscallbackpositionisnotuniversallyavailableandcorrectedselectioncancomplete. Itdoesnotcountnullpositionsspecificallyonspruce_logmatchesoruniquelyreconstruct12015errorstack, soexactearliercauseisstillbounded. No physicalinteraction/harvest/workstationqualified; outputexplicitlysaysthat. Usefulsoftwaremethodrepairneednotconsumeanotherfullgatherchainormasqueradeasresourceprogress. No newliveobjectivemilestone.
