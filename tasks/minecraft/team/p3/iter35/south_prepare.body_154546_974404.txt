@@ -1,0 +1,109 @@
+program #13467 on p3: 114.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:45:47.112Z","p":{"x":2.501273124779093,"y":55,"z":-14.48129401055965},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["cobblestone",16,null],["stone_pickaxe",1,1],["stone_pickaxe",1,122],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",61,null]],"time":13103,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 3, y: 56, z: -15 } end_stone
+CUT Vec3 { x: 3, y: 55, z: -15 } end_stone
+MOVE Vec3 { x: 8.32539503221602, y: 55, z: -14.49950957380027 } 20 20
+MOVE Vec3 { x: 8.500347862535342, y: 55, z: 0.3747080512239606 } 20 20
+CUT Vec3 { x: 9, y: 56, z: 0 } end_stone
+CUT Vec3 { x: 9, y: 55, z: 0 } end_stone
+MOVE Vec3 { x: 9.350827645958555, y: 55, z: 0.4775888775175798 } 20 20
+CUT Vec3 { x: 10, y: 56, z: 0 } end_stone
+CUT Vec3 { x: 10, y: 55, z: 0 } end_stone
+MOVE Vec3 { x: 10.5, y: 55, z: 0.48836348537196683 } 20 20
+CUT Vec3 { x: 11, y: 56, z: 0 } end_stone
+CUT Vec3 { x: 11, y: 55, z: 0 } end_stone
+MOVE Vec3 { x: 11.357101537751188, y: 55, z: 0.49323797092766586 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 0 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 0 } end_stone
+MOVE Vec3 { x: 12.5, y: 55, z: 0.49631660568481695 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 1 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 1 } end_stone
+MOVE Vec3 { x: 12.500000083516841, y: 55, z: 1.3534863255212441 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 2 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 2 } end_stone
+MOVE Vec3 { x: 12.500000187912844, y: 55, z: 2.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 3 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 3 } end_stone
+MOVE Vec3 { x: 12.500000271429647, y: 55, z: 3.357169719836427 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 4 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 4 } end_stone
+MOVE Vec3 { x: 12.50000037582565, y: 55, z: 4.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 5 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 5 } end_stone
+MOVE Vec3 { x: 12.500000459342452, y: 55, z: 5.357169719836427 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 6 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 6 } end_stone
+MOVE Vec3 { x: 12.500000563738455, y: 55, z: 6.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 7 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 7 } end_stone
+MOVE Vec3 { x: 12.500000647255257, y: 55, z: 7.357169719836427 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 8 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 8 } end_stone
+MOVE Vec3 { x: 12.50000075165126, y: 55, z: 8.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 9 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 9 } end_stone
+MOVE Vec3 { x: 12.500000835168063, y: 55, z: 9.35716971983643 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 10 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 10 } end_stone
+MOVE Vec3 { x: 12.500000939564066, y: 55, z: 10.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 11 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 11 } end_stone
+MOVE Vec3 { x: 12.500001023080868, y: 55, z: 11.35716971983643 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 12 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 12 } end_stone
+MOVE Vec3 { x: 12.500001127476871, y: 55, z: 12.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 13 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 13 } end_stone
+MOVE Vec3 { x: 12.500001210993673, y: 55, z: 13.35716971983643 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 14 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 14 } end_stone
+MOVE Vec3 { x: 12.500001315389676, y: 55, z: 14.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 15 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 15 } end_stone
+MOVE Vec3 { x: 12.500001398906479, y: 55, z: 15.35716971983643 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 16 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 16 } end_stone
+MOVE Vec3 { x: 12.500001503302482, y: 55, z: 16.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 17 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 17 } end_stone
+MOVE Vec3 { x: 12.500001586819284, y: 55, z: 17.357169719836428 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 18 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 18 } end_stone
+MOVE Vec3 { x: 12.500001691215287, y: 55, z: 18.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 19 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 19 } end_stone
+MOVE Vec3 { x: 12.50000177473209, y: 55, z: 19.357169719836428 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 20 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 20 } end_stone
+MOVE Vec3 { x: 12.500001879128092, y: 55, z: 20.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 21 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 21 } end_stone
+MOVE Vec3 { x: 12.500001962644895, y: 55, z: 21.357169719836428 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 22 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 22 } end_stone
+MOVE Vec3 { x: 12.500002067040898, y: 55, z: 22.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 23 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 23 } end_stone
+MOVE Vec3 { x: 12.5000021505577, y: 55, z: 23.357169719836428 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 24 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 24 } end_stone
+MOVE Vec3 { x: 12.500002254953703, y: 55, z: 24.5 } 20 20
+CUT Vec3 { x: 12, y: 56, z: 25 } end_stone
+CUT Vec3 { x: 12, y: 55, z: 25 } end_stone
+MOVE Vec3 { x: 12.500002338470505, y: 55, z: 25.357169719836428 } 20 20
+PLACE Vec3 { x: 12, y: 55, z: 24 } end_stone
+PLACE Vec3 { x: 12, y: 56, z: 24 } end_stone
+SEALED [{"q":{"x":12,"y":54,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":24},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":24},"n":"end_stone","full":true}]
+SOUTH {"at":"2026-10-19T15:47:41.463Z","p":{"x":12.500002357261788,"y":55,"z":25.545648061979996},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["cobblestone",16,null],["stone_pickaxe",1,61],["stone_pickaxe",1,122],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",55,null],["end_stone",64,null]],"time":15403,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":12,"y":54,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":24},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":24},"n":"end_stone","full":true}],"vertical":[[55,"air"],[56,"air"],[57,"end_stone"],[58,"end_stone"],[59,"air"],[60,"air"],[61,"air"],[62,"air"],[63,"air"],[64,"air"],[65,"air"],[66,"air"],[67,"air"],[68,"air"]],"dragon":[{"p":{"x":31.19943185032011,"y":78.20193625503686,"z":20.76314216669266},"metadata":[null,null,null,null,null,null,null,null,null,200,null,null,null,null,null,null,1]}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p1: P3 usefulfailure13326: actualvZ .035375 versus nominal~.0245 caused~.6m drift bycage, so nominalgapshot71.63miss is compatiblewithspread, not enclosure. Currentshape scan finds42/84 nominalclears fromexisting6/55/-26 hatch. Working changedmethod: stationar
+p1: ythrow fromcloser55source reducesflight/spread; do not repeat oldequivalent71.63yet.
+[server] p4 has made the advancement [Sweet Dreams]
+p4: P4 actual13468 OW stronghold149/-26/2241;13472 NEW150/z2241 down-36 HP20food20, nativebed142/-36/2232 activation/wake retainedpacket16/Table/Stick2. P2 new150/z2241 nowAIRtoo, old152/2242AIR; chooseactualboundedlandings/freshcolumn. NextEndentry ETA~15:50 
+p4: thenrecipient2/donor3 exactreconcile. P3 returnwhenready no exposure wait.
+p4: P4 actual13476 Endentered HP20food20 Snow16/Table1/Stick2 at77/50/0; stoppedcurrentdoor mismatch, correctingfromcurrentpose thenbase55recipient3/55/-15. Noammo releasedyet. P3 canfinishcurrentSouthchunk thenreturn2/55/-15; pleaseannounceactualpose/doorread
+p4: y. ETA16:02 receipt+use unchanged, likelyearlier.
+--- p3 now: (12.5, 55, 25.5) in the_end, health 20/20, food 20/20, alive

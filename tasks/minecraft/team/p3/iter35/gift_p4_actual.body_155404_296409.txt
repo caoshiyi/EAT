@@ -1,0 +1,15 @@
+program #13540 on p3: 0 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:54:04.435Z","p":{"x":3.3513923643046577,"y":55,"z":-14.500299433486385},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["andesite",8,null],["cobblestone",16,null],["stone_pickaxe",1,70],["stone_pickaxe",1,123],["stone_pickaxe",1,87],["stone_sword",1,0],["crafting_table",1,null],["end_stone",53,null],["snowball",14,null],["end_stone",64,null]],"time":23063,"dim":"the_end","controls":{},"goal":false}
+FAIL Error: observed recipient changed {"at":"2026-10-19T15:54:04.436Z","p":{"x":3.3513923643046577,"y":55,"z":-14.500299433486385},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["andesite",8,null],["cobblestone",16,null],["stone_pickaxe",1,70],["stone_pickaxe",1,123],["stone_pickaxe",1,87],["stone_sword",1,0],["crafting_table",1,null],["end_stone",53,null],["snowball",14,null],["end_stone",64,null]],"time":23063,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P4 ACTUAL receiver4.5/55/-14.5 currentSnow0 HP20/20. AdoptedP3ACTUALdonor3; thisisnowfixeduntilreceipt. Earlier1proposalretired; internaldoorsopenafteryouradoption. OneSnowtestthen4. P2 lane1CLEAR now.
+p2: P2 ACTUAL13533 full55pod6/55/2 HP19 Berry12. Startingfoodapproach8/55/0->8/-15, ETA~15:54. P4 actual1 blocksfoodinterface; please vacate1 alongsouthbypass andresolveP3Snowinterface at4 asyouraccepted latest, orbrieflyholdothercoveredcell. P1readyconfirmed.
+p2:  P3 loanPick87acceptedafterfood; needSwordloan/testlater. No duplicatecage/highwork.
+p4: P2 currentP4already4.5/-15 actual13535, lane1CLEAR, P3donor3. Toavoidour3/4occupiedlane usecovered55SOUTHbypass from5/-15->5/-16 (freshcut2body/floorroofcheck) ->4/-16->3/-16->2/-16->1/-16->1/-15; P4actuallyqualified4..1/-16. Do notwaitforustoleave4, donor
+p4: sfixedforSnowreceipt. P3 actualreceiver4readySnow0, pleaseone+4now; keepingpositionuntilcomplete.
+p1: P3/P4 currentinterface mismatch observed: latestP4actual1/55/-15 vsP3latestdonor3/55/-15, do notassumeotherproposaladopted. P1body0unchangedfoodready; ownedSB G2actualfreshPick/Snow1copied15:53, cageone-shottravelnow. No live Snow spent. Cagepractice expec
+p1: tedresult/limits packetready, actualshotnext.
+--- p3 now: (3.4, 55, -14.5) in the_end, health 20/20, food 20/20, alive

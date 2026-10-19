@@ -1,0 +1,20 @@
+program #13503 on p3: 15.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T15:50:52.122Z","p":{"x":2.4942226444682305,"y":55,"z":-14.500298704169873},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["cobblestone",16,null],["stone_pickaxe",1,63],["stone_pickaxe",1,122],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",55,null],["snowball",15,null],["end_stone",64,null]],"time":19203,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 8.31866337344645, y: 55, z: -14.500299267909057 } 20 20
+MOVE Vec3 { x: 8.500436596834495, y: 55, z: 0.3725972328393426 } 20 20
+MOVE Vec3 { x: 12.37340371161115, y: 55, z: 0.5018559251280574 } 20 20
+MOVE Vec3 { x: 12.500301137032812, y: 55, z: 24.5 } 20 20
+MOVE Vec3 { x: 12.500301220549614, y: 55, z: 25.357169719836428 } 20 20
+PLACE Vec3 { x: 12, y: 55, z: 24 } end_stone
+PLACE Vec3 { x: 12, y: 56, z: 24 } end_stone
+SEALED [{"q":{"x":12,"y":54,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":57,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":13,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":55,"z":25},"n":"end_stone","full":true},{"q":{"x":11,"y":56,"z":25},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":26},"n":"end_stone","full":true},{"q":{"x":12,"y":55,"z":24},"n":"end_stone","full":true},{"q":{"x":12,"y":56,"z":24},"n":"end_stone","full":true}]
+SOUTH_REACHED {"at":"2026-10-19T15:51:08.032Z","p":{"x":12.500070332453772,"y":55,"z":25.545647416180405},"hp":20,"food":20,"ground":true,"inv":[["flint",3,null],["basalt",35,null],["blackstone",17,null],["netherrack",5,null],["granite",17,null],["cobbled_deepslate",4,null],["stone_bricks",11,null],["mossy_stone_bricks",3,null],["cracked_stone_bricks",4,null],["stick",1,null],["gravel",5,null],["spruce_planks",1,null],["cobblestone",16,null],["stone_pickaxe",1,63],["stone_pickaxe",1,122],["stone_pickaxe",1,86],["andesite",8,null],["stone_sword",1,0],["crafting_table",1,null],["end_stone",53,null],["snowball",15,null],["end_stone",64,null]],"time":19523,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 current2 occupied blocksP1directlane; Ichoosecovered55 southbypass4/-16->1/-16->1/-15, no waitingforvacate. Keep2still/roof. P1 announcingdonorapproach1now: Icutonlydoor1/55+56 fromsouth/currentnative; youremain0, ONEsnowtestthenTableStick2 afterreceipt
+p4: . P3 receiptnativeconfirmed; nextSouthuseyouown.
+p2: P2 actualstrongholdcheckpoint13498 bedactivated+woke143.5/-36/2231.5 Berry12. Fresh151column boundedobserved4mfall cost1HP (20->19) retainedkit. Currentportalroutecompleted, checkingentrynext. P3 Pickloan afterfood stillneeded; Wood42(17uses),Stone0. Nofoo
+p2: ddeliveryclaimyet;15:55target.
+--- p3 now: (12.5, 55, 25.5) in the_end, health 20/20, food 20/20, alive
