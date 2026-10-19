@@ -1,0 +1,38 @@
+program #12076 on p4: 19.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:32:39.959Z","p":{"x":21.332889954817443,"y":68,"z":-15.499980422294001},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",6],["sweet_berries",4]]}
+ACTUAL_DOOR_GEOMETRY [{"q":{"x":21,"y":68,"z":-16},"n":"air","full":false},{"q":{"x":21,"y":69,"z":-16},"n":"air","full":false},{"q":{"x":21,"y":70,"z":-16},"n":"dirt","full":true},{"q":{"x":22,"y":68,"z":-16},"n":"dirt","full":true},{"q":{"x":22,"y":69,"z":-16},"n":"air","full":false}]
+ACTUAL_EXIT_OPEN {"at":"2026-10-19T09:32:40.919Z","p":{"x":21.332889954817443,"y":68,"z":-15.499980422294001},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",6],["sweet_berries",4]]}
+FAILURE Error: nav actualpost {"at":"2026-10-19T09:32:59.271Z","p":{"x":22.474354084303883,"y":67,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",7],["sweet_berries",4],["spruce_log",1]]}
+TERMINAL {"at":"2026-10-19T09:32:59.271Z","p":{"x":22.474354084303883,"y":67,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",7],["sweet_berries",4],["spruce_log",1]],"delivered":false,"limit":"Sender-only toss observation; receiver inventory must be read by its owner. No protective ending credited here."}
+--- returned ---
+{
+ "at": "2026-10-19T09:32:59.271Z",
+ "p": {
+  "x": 22.474354084303883,
+  "y": 67,
+  "z": 10.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   7
+  ],
+  [
+   "sweet_berries",
+   4
+  ],
+  [
+   "spruce_log",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (22.5, 67, 10.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: deliver_food_exitfix.js

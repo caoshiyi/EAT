@@ -1,0 +1,37 @@
+program #12067 on p4: 5.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:29:35.028Z","p":{"x":20.500599675848168,"y":69,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",9],["sweet_berries",4]]}
+ONE_DOWN {"at":"2026-10-19T09:29:36.565Z","p":{"x":20.500599675848168,"y":68,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",10],["sweet_berries",4]]}
+ROOF_ANCHOR {"anchor":{"x":21,"y":70,"z":-16},"n":"dirt","state":{"at":"2026-10-19T09:29:39.133Z","p":{"x":20.500599675848168,"y":69.24918707874468,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":false,"inv":[["dirt",6],["sweet_berries",4]]}}
+ENDING {"at":"2026-10-19T09:29:39.975Z","p":{"x":20.500599675848168,"y":68,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4],["sweet_berries",4]],"faces":[{"p":{"x":20,"y":67,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":70,"z":-16},"n":"dirt","full":true},{"p":{"x":21,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":21,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":19,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":19,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-15},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-15},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-17},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-17},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T09:29:40.125Z","p":{"x":20.500599675848168,"y":68,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4],["sweet_berries",4]],"faces":[{"p":{"x":20,"y":67,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":70,"z":-16},"n":"dirt","full":true},{"p":{"x":21,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":21,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":19,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":19,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-15},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-15},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-17},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-17},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T09:29:40.276Z","p":{"x":20.500599675848168,"y":68,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4],["sweet_berries",4]],"faces":[{"p":{"x":20,"y":67,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":70,"z":-16},"n":"dirt","full":true},{"p":{"x":21,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":21,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":19,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":19,"y":69,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-15},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-15},"n":"dirt","full":true},{"p":{"x":20,"y":68,"z":-17},"n":"grass_block","full":true},{"p":{"x":20,"y":69,"z":-17},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T09:29:40.426Z",
+ "p": {
+  "x": 20.500599675848168,
+  "y": 68,
+  "z": -15.499478262309806
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   4
+  ],
+  [
+   "sweet_berries",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 LIVE12061 actual forward leg21/67/8 then buried64 TENFULL20HP19food.12062 protectedquarry actual14Cobble, nativeUP failed earlyheight (.8), inspect57ground; changed>=1.04 smoke12064 UP58 passed20HP. Ascending to64 then surface67. Status sees you20.6/69/
+p2: -15.4 berries4: if branch currentlyrunning do not interrupt unsafe; afterending please deliver2berries AND if practical currentvisible22/69/-16 tree2logs (P2 lackswood). Receiver willsurface21/67/8, thenmeet you. Latestassignment supersedes longtrip ifnotl
+p2: aunched.
+--- p4 now: (20.5, 68, -15.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: food_box20.js

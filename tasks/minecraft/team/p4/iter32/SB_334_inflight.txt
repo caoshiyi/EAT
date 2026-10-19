@@ -1,0 +1,17 @@
+== #334 2026-10-19T09:22:51 p4 role=execution_partner iter=32 27.2 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z),began=Date.now();let dead=false,timer,ending=false,aborted=false;const die=()=>{dead=true;bot.pathfinder.setGoal(null);bot.clearControlStates();};bot.on('death',die);const snap=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count])});
+const cnt=n=>bot.inventory.items().filter(i=>i.name===n).reduce((s,i)=>s+i.count,0),full=q=>bot.blockAt(q)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
+const alive=()=>{if(dead||bot.health<(ending?1:15)||bot.game.dimension!=='overworld'||Date.now()-began>(ending?285000:205000))throw Error('life/budget');if(aborted&&!ending)throw Error('peer stop');};
+async function face(q,f=null){for(const a of[[.5,.5,.5],[.5,.99,.5],[.5,.01,.5],[.01,.5,.5],[.99,.5,.5],[.5,.5,.01],[.5,.5,.99]]){alive();await bot.lookAt(q.offset(...a),true);await bot.waitForTicks(1);alive();const c=bot.blockAtCursor(4.5);if(c?.position.equals(q)&&(f===null||c.face===f))return;}throw Error('not visible '+q);}
+async function dig(q){alive();await face(q);await bot.unequip('hand');await bot.dig(bot.blockAt(q),true,'raycast');await bot.waitForTicks(5);alive();}
+async function up(){const q=bot.entity.position.floored();if(bot.blockAt(q.offset(0,2,0))?.boundingBox!=='empty')await dig(q.offset(0,2,0));await face(q.offset(0,-1,0),1);await bot.equip(bot.inventory.items().find(i=>i.name==='dirt'),'
+... (8942 chars; --full)
+-- output --
+SOURCE {"at":"2026-10-19T09:22:51.388Z","p":{"x":75.49238081773368,"y":64,"z":73.50938272455204},"hp":15.07930850982666,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",3]],"near":[{"n":"item","p":{"x":72.59663741029388,"y":66,"z":67.125},"d":7.290107863076484},{"n":"item","p":{"x":74.08215237402362,"y":65,"z":67.125},"d":6.61430926378616}]}
+BERRY_AREA {"at":"2026-10-19T09:23:15.679Z","p":{"x":97.63669926928927,"y":67.23152379758702,"z":146.3898507569215},"hp":15.07930850982666,"food":17,"dim":"overworld","ground":false,"inv":[["dirt",1]],"near":[]}
+PLANTS [{"q":{"x":97,"y":65,"z":149},"props":{"age":"3"}},{"q":{"x":100,"y":64,"z":152},"props":{"age":"3"}}]
+BERRY_USE {"q":{"x":97,"y":65,"z":149},"props":{"age":"1"},"state":{"at":"2026-10-19T09:23:18.207Z","p":{"x":96.5,"y":65,"z":149.60720713865012},"hp":15.07930850982666,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",1],["sweet_berries",3]]}}
+ENDING_FAILURE Error: no 3soil under current ending {"at":"2026-10-19T09:23:18.608Z","p":{"x":96.49999999995106,"y":65,"z":149.54820462777255},"hp":15.07930850982666,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",1],["sweet_berries",3]]}
+TERMINAL {"at":"2026-10-19T09:23:18.608Z","p":{"x":96.49999999995106,"y":65,"z":149.54820462777255},"hp":15.07930850982666,"food":17,"dim":"overworld","ground":true,"inv":[["dirt",1],["sweet_berries",3]],"dead":false,"foodReceived":true,"phase":"harvest"}
+-- returned --
+{"at": "2026-10-19T09:23:18.609Z", "p": {"x": 96.49999999995106, "y": 65, "z": 149.54820462777255}, "hp": 15.07930850982666, "food": 17, "dim": "overworld", "ground": true, "inv": [["dirt", 1], ["sweet_berries", 3]]}

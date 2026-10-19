@@ -1,0 +1,106 @@
+[sandbox] program #330 on p4: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+{
+ "at": "2026-10-19T09:20:46.082Z",
+ "p": {
+  "x": 0.5327346695677078,
+  "y": 57,
+  "z": -23.520657648409106
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "dirt",
+   6
+  ]
+ ],
+ "column": [
+  {
+   "y": 57,
+   "center": "air",
+   "east": "stone",
+   "west": "air",
+   "north": "dirt",
+   "south": "stone"
+  },
+  {
+   "y": 58,
+   "center": "air",
+   "east": "stone",
+   "west": "air",
+   "north": "grass_block",
+   "south": "stone"
+  },
+  {
+   "y": 59,
+   "center": "dirt",
+   "east": "stone",
+   "west": "air",
+   "north": "snow",
+   "south": "stone"
+  },
+  {
+   "y": 60,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "grass_block"
+  },
+  {
+   "y": 61,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "air"
+  },
+  {
+   "y": 62,
+   "center": "air",
+   "east": "grass_block",
+   "west": "air",
+   "north": "air",
+   "south": "air"
+  },
+  {
+   "y": 63,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "grass_block"
+  },
+  {
+   "y": 64,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "snow"
+  },
+  {
+   "y": 65,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "air"
+  },
+  {
+   "y": 66,
+   "center": "air",
+   "east": "air",
+   "west": "air",
+   "north": "air",
+   "south": "air"
+  }
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (0.5, 57, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: inspect_exit.js

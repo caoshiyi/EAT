@@ -1,0 +1,1 @@
+console.log('SOURCE',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])}));await bot.waitForTicks(10);return {at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count])};

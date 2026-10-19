@@ -1,0 +1,51 @@
+program #12085 on p4: 2.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:36:02.215Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["dirt",6],["spruce_log",3]]}
+CRAFT {"n":"spruce_planks","state":{"at":"2026-10-19T09:36:02.367Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",8],["dirt",6]]}}
+CRAFT {"n":"crafting_table","state":{"at":"2026-10-19T09:36:02.519Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["crafting_table",1],["spruce_planks",8],["dirt",6]]}}
+CRAFT {"n":"stick","state":{"at":"2026-10-19T09:36:04.076Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",6],["stick",4],["dirt",7]]}}
+CRAFT {"n":"wooden_sword","state":{"at":"2026-10-19T09:36:04.275Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["stick",3],["spruce_planks",4],["wooden_sword",1],["dirt",7]]}}
+CRAFT {"n":"wooden_shovel","state":{"at":"2026-10-19T09:36:04.478Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["wooden_sword",1],["wooden_shovel",1],["dirt",7]]}}
+ENDING {"at":"2026-10-19T09:36:04.478Z","p":{"x":22.474354084303883,"y":64,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["wooden_shovel",1],["dirt",7],["wooden_sword",1]],"faces":[{"p":{"x":22,"y":63,"z":10},"n":"dirt","full":true},{"p":{"x":22,"y":66,"z":10},"n":"dirt","full":true},{"p":{"x":23,"y":64,"z":10},"n":"dirt","full":true},{"p":{"x":23,"y":65,"z":10},"n":"dirt","full":true},{"p":{"x":21,"y":64,"z":10},"n":"dirt","full":true},{"p":{"x":21,"y":65,"z":10},"n":"crafting_table","full":true},{"p":{"x":22,"y":64,"z":11},"n":"dirt","full":true},{"p":{"x":22,"y":65,"z":11},"n":"grass_block","full":true},{"p":{"x":22,"y":64,"z":9},"n":"dirt","full":true},{"p":{"x":22,"y":65,"z":9},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T09:36:04.479Z",
+ "p": {
+  "x": 22.474354084303883,
+  "y": 64,
+  "z": 10.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "dirt",
+   7
+  ],
+  [
+   "wooden_sword",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (22.5, 64, 10.5) in overworld, health 20/20, food 20/20, alive

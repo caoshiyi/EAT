@@ -1,0 +1,36 @@
+program #12079 on p4: 0.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:33:53.543Z","p":{"x":22.474354084303883,"y":67,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",7],["sweet_berries",4],["spruce_log",1]]}
+VISIBLE_PEER {"at":"2026-10-19T09:33:53.544Z","p":{"x":23.468174801831204,"y":66,"z":11.50221807877063},"sender":{"x":22.474354084303883,"y":67,"z":10.5}}
+SENDER_EFFECT {"at":"2026-10-19T09:33:54.250Z","p":{"x":22.474354084303883,"y":67,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["dirt",7],["spruce_log",1]]}
+TERMINAL {"at":"2026-10-19T09:33:54.251Z","p":{"x":22.474354084303883,"y":67,"z":10.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["dirt",7],["spruce_log",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T09:33:54.251Z",
+ "p": {
+  "x": 22.474354084303883,
+  "y": 67,
+  "z": 10.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "dirt",
+   7
+  ],
+  [
+   "spruce_log",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p2: P2 RECEIVER_READY actual23.5/66/11.5 now, holding30seconds for P4 visible ordinary toss2berries. Will consume1 then bury.
+--- p4 now: (22.5, 67, 10.5) in overworld, health 20/20, food 20/20, alive

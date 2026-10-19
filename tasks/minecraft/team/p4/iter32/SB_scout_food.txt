@@ -1,0 +1,29 @@
+[sandbox] program #329 on p4: 9.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:20:03.027Z","p":{"x":0.5327346695677078,"y":57,"z":-23.520657648409106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4]]}
+SCOUT_FAILURE {"phase":"source","error":"Error: actual bank soil","state":{"at":"2026-10-19T09:20:08.600Z","p":{"x":0.5327346695677078,"y":60,"z":-23.520657648409106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",4]]}}
+REFUGE {"at":"2026-10-19T09:20:12.159Z","p":{"x":0.5327346695677078,"y":57,"z":-23.520657648409106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",5]],"faces":[{"p":{"x":0,"y":56,"z":-24},"full":true,"n":"grass_block"},{"p":{"x":0,"y":59,"z":-24},"full":true,"n":"dirt"},{"p":{"x":1,"y":57,"z":-24},"full":true,"n":"stone"},{"p":{"x":1,"y":58,"z":-24},"full":true,"n":"stone"},{"p":{"x":-1,"y":57,"z":-24},"full":false,"n":"air"},{"p":{"x":-1,"y":58,"z":-24},"full":false,"n":"air"},{"p":{"x":0,"y":57,"z":-23},"full":true,"n":"stone"},{"p":{"x":0,"y":58,"z":-23},"full":true,"n":"stone"},{"p":{"x":0,"y":57,"z":-25},"full":true,"n":"dirt"},{"p":{"x":0,"y":58,"z":-25},"full":true,"n":"grass_block"}]}
+TERMINAL {"at":"2026-10-19T09:20:12.160Z","p":{"x":0.5327346695677078,"y":57,"z":-23.520657648409106},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",5]],"dead":false,"foodReceived":false,"phase":"source"}
+--- returned ---
+{
+ "at": "2026-10-19T09:20:12.160Z",
+ "p": {
+  "x": 0.5327346695677078,
+  "y": 57,
+  "z": -23.520657648409106
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   5
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (0.5, 57, -23.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: scout_food.js

@@ -1,0 +1,33 @@
+program #12063 on p4: 0.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:28:45.551Z","p":{"x":20.632302850631515,"y":69,"z":-15.367726708598537},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",9],["sweet_berries",4]]}
+DOWN_AUDIT [{"p":{"x":20,"y":69,"z":-16},"n":"air","full":false},{"p":{"x":20,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":20,"y":67,"z":-16},"n":"dirt","full":true},{"p":{"x":20,"y":66,"z":-16},"n":"air","full":false},{"p":{"x":20,"y":65,"z":-16},"n":"air","full":false}]
+FAILURE Error: current fullstable floors {"at":"2026-10-19T09:28:46.107Z","p":{"x":20.500599675848168,"y":69,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",9],["sweet_berries",4]]}
+ENDING {"at":"2026-10-19T09:28:46.107Z","p":{"x":20.500599675848168,"y":69,"z":-15.499478262309806},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",9],["sweet_berries",4]],"faces":[{"p":{"x":20,"y":68,"z":-16},"n":"grass_block","full":true},{"p":{"x":20,"y":71,"z":-16},"n":"air","full":false},{"p":{"x":21,"y":69,"z":-16},"n":"air","full":false},{"p":{"x":21,"y":70,"z":-16},"n":"air","full":false},{"p":{"x":19,"y":69,"z":-16},"n":"snow","full":false},{"p":{"x":19,"y":70,"z":-16},"n":"air","full":false},{"p":{"x":20,"y":69,"z":-15},"n":"air","full":false},{"p":{"x":20,"y":70,"z":-15},"n":"air","full":false},{"p":{"x":20,"y":69,"z":-17},"n":"snow","full":false},{"p":{"x":20,"y":70,"z":-17},"n":"air","full":false}]}
+--- returned ---
+{
+ "at": "2026-10-19T09:28:46.107Z",
+ "p": {
+  "x": 20.500599675848168,
+  "y": 69,
+  "z": -15.499478262309806
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   9
+  ],
+  [
+   "sweet_berries",
+   4
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (20.5, 69, -15.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: food_protect.js
