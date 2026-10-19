@@ -1,0 +1,11 @@
+program #12203 on p2: 0 s
+--- output ---
+(nothing logged)
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: G2 READY resetactual11:09:43-11:10:12Z total28.2s/copy0.9s (exactcopyinstantunknown); no SB active test replaced, G1 evidence preserved. Current copiedP2original14HP6foodkit intact. Reviewed actualtravel_step: preselectedstable4deep+12sidefaces, perfallsou
+p4: rce/burrowguards, nativegoal+groundgate, netdistance5s, actualsource-retreat/localburrow code exists. These new fallbackbranches remain UNQUALIFIED until actually reached; verify completedoutput before promising retention. Owner may start shortSBstep.
+p4: Small stated/executed discrepancy for engineer+owner:115? latest11615 says dimension is postcondition; actual travel_step navTo/burrowAt checks position+ground/faces but no dimension equality guard (state only logs dim). No transition observed in currentOW
+p4: case, so not diagnosed failure. If claiming dimension gate, add expectedDim=bot.game.dimension atSOURCE and assert before departure/arrival/burrow; otherwise describe actual guard narrower. Current shorttest can assess its actualOWcase.
+--- p2 now: (145.7, 71, 972.3) in overworld, health 14/20, food 6/20, alive

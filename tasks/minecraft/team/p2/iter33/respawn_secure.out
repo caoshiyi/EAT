@@ -1,0 +1,132 @@
+program #12224 on p2: 7.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:20:06.884Z","p":{"x":1.5,"y":63,"z":-35.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+ADMITTED {"x":4,"y":66,"z":-35}
+WALK {"at":"2026-10-19T11:20:09.382Z","p":{"x":4.499973567509321,"y":66,"z":-34.49997356750978},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[]}
+DIG_POST {"q":{"x":4,"y":65,"z":-35},"original":"grass_block","post":"air"}
+CUT {"q":{"x":4,"y":65,"z":-35},"n":"grass_block","p":{"x":4.485923084870041,"y":65.76636799395752,"z":-34.4859230848705}}
+DIG_POST {"q":{"x":4,"y":64,"z":-35},"original":"dirt","post":"air"}
+CUT {"q":{"x":4,"y":64,"z":-35},"n":"dirt","p":{"x":4.485923084870041,"y":64.76636799395752,"z":-34.4859230848705}}
+DIG_POST {"q":{"x":4,"y":63,"z":-35},"original":"dirt","post":"air"}
+CUT {"q":{"x":4,"y":63,"z":-35},"n":"dirt","p":{"x":4.485923084870041,"y":63.76636799395752,"z":-34.4859230848705}}
+ENDING {"at":"2026-10-19T11:20:13.503Z","p":{"x":4.485923084870041,"y":63,"z":-34.4859230848705},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":4,"y":62,"z":-35},"n":"stone","full":true},{"q":{"x":4,"y":65,"z":-35},"n":"dirt","full":true},{"q":{"x":5,"y":63,"z":-35},"n":"stone","full":true},{"q":{"x":5,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":63,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":64,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-36},"n":"stone","full":true},{"q":{"x":4,"y":64,"z":-36},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:20:13.654Z","p":{"x":4.485923084870041,"y":63,"z":-34.4859230848705},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":4,"y":62,"z":-35},"n":"stone","full":true},{"q":{"x":4,"y":65,"z":-35},"n":"dirt","full":true},{"q":{"x":5,"y":63,"z":-35},"n":"stone","full":true},{"q":{"x":5,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":63,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":64,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-36},"n":"stone","full":true},{"q":{"x":4,"y":64,"z":-36},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:20:13.804Z","p":{"x":4.485923084870041,"y":63,"z":-34.4859230848705},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["dirt",2,null]],"faces":[{"q":{"x":4,"y":62,"z":-35},"n":"stone","full":true},{"q":{"x":4,"y":65,"z":-35},"n":"dirt","full":true},{"q":{"x":5,"y":63,"z":-35},"n":"stone","full":true},{"q":{"x":5,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":63,"z":-35},"n":"dirt","full":true},{"q":{"x":3,"y":64,"z":-35},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":64,"z":-34},"n":"dirt","full":true},{"q":{"x":4,"y":63,"z":-36},"n":"stone","full":true},{"q":{"x":4,"y":64,"z":-36},"n":"dirt","full":true}]}
+OCCUPANTS []
+--- returned ---
+{
+ "at": "2026-10-19T11:20:13.955Z",
+ "p": {
+  "x": 4.485923084870041,
+  "y": 63,
+  "z": -34.4859230848705
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "dirt",
+   2,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 4,
+    "y": 62,
+    "z": -35
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 4,
+    "y": 65,
+    "z": -35
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 5,
+    "y": 63,
+    "z": -35
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 5,
+    "y": 64,
+    "z": -35
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 3,
+    "y": 63,
+    "z": -35
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 3,
+    "y": 64,
+    "z": -35
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 4,
+    "y": 63,
+    "z": -34
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 4,
+    "y": 64,
+    "z": -34
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 4,
+    "y": 63,
+    "z": -36
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 4,
+    "y": 64,
+    "z": -36
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: CRITICAL actual12220code+completedoutput: hostilebuffer abortedhunt50.804, finally chose nearestBURROW with NOentity exclusion/perfalloccupancy check. BODY_HURT54.325 samples Zombie3424 SAMEinterior(61.7/66/1036.7) asP2(61.3/66/1036.3), despiteALL10FULL; E
+p4: NDINGhealth6→3.5, RETURN54.7143.5HP then separateZombieDEATH56. This refutes tenfaces-alone asretention, notthrough-blockcause. Smallcorrection: beforedescent verify mob-freecurrentcolumn+closingthreatbuffer, recheckeachfall+postcapinterior/HPstability; ho
+p4: stileabort mustnotblindlyburrowbesidepursuer. Engineereviewneeded; no same night-hunt replay. Freshrespawnempty20HPstatus11:19.
+--- p2 now: (4.5, 63, -34.5) in overworld, health 20/20, food 20/20, alive

@@ -1,0 +1,11 @@
+program #12263 on p2: 0.2 s
+--- output ---
+ACTUAL {"at":"2026-10-19T11:33:34.050Z","p":{"x":30.576626035163557,"y":62,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",10,null],["crafting_table",1,null]],"faces":[{"q":{"x":30,"y":61,"z":16},"n":"dirt","full":true},{"q":{"x":30,"y":64,"z":16},"n":"air","full":false},{"q":{"x":31,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":63,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":63,"z":16},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":17},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":17},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":15},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":15},"n":"dirt","full":true}]}
+--- error ---
+Error: placeface (31, 64, 16)
+    at placeAt (p2-program-12263.js:17:832)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async p2-program-12263.js:23:168
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (30.6, 62, 16.5) in overworld, health 15.5/20, food 17/20, alive

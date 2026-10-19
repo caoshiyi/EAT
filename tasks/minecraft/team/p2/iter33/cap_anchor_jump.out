@@ -1,0 +1,154 @@
+program #12265 on p2: 2.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:33:53.119Z","p":{"x":30.576626035163557,"y":62,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",10,null],["crafting_table",1,null]]}
+JUMP_ANCHOR {"at":"2026-10-19T11:33:53.369Z","p":{"x":30.576626035163557,"y":63.24918707874468,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":false,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",10,null],["crafting_table",1,null]]}
+ENDING {"at":"2026-10-19T11:33:54.375Z","p":{"x":30.576626035163557,"y":62,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",8,null],["crafting_table",1,null]],"faces":[{"q":{"x":30,"y":61,"z":16},"n":"dirt","full":true},{"q":{"x":30,"y":64,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":63,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":63,"z":16},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":17},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":17},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":15},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":15},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:33:54.675Z","p":{"x":30.576626035163557,"y":62,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",8,null],["crafting_table",1,null]],"faces":[{"q":{"x":30,"y":61,"z":16},"n":"dirt","full":true},{"q":{"x":30,"y":64,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":63,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":63,"z":16},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":17},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":17},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":15},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":15},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T11:33:54.977Z","p":{"x":30.576626035163557,"y":62,"z":16.517193589577477},"hp":15.5,"food":17,"dim":"overworld","ground":true,"inv":[["stick",3,null],["wooden_pickaxe",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["wooden_shovel",1,39],["dirt",8,null],["crafting_table",1,null]],"faces":[{"q":{"x":30,"y":61,"z":16},"n":"dirt","full":true},{"q":{"x":30,"y":64,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":31,"y":63,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":62,"z":16},"n":"dirt","full":true},{"q":{"x":29,"y":63,"z":16},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":17},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":17},"n":"grass_block","full":true},{"q":{"x":30,"y":62,"z":15},"n":"dirt","full":true},{"q":{"x":30,"y":63,"z":15},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:33:55.279Z",
+ "p": {
+  "x": 30.576626035163557,
+  "y": 62,
+  "z": 16.517193589577477
+ },
+ "hp": 15.5,
+ "food": 17,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   0
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "wooden_shovel",
+   1,
+   39
+  ],
+  [
+   "dirt",
+   8,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 30,
+    "y": 61,
+    "z": 16
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 30,
+    "y": 64,
+    "z": 16
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 31,
+    "y": 62,
+    "z": 16
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 31,
+    "y": 63,
+    "z": 16
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 29,
+    "y": 62,
+    "z": 16
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 29,
+    "y": 63,
+    "z": 16
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 30,
+    "y": 62,
+    "z": 17
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 30,
+    "y": 63,
+    "z": 17
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 30,
+    "y": 62,
+    "z": 15
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 30,
+    "y": 63,
+    "z": 15
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ]
+}
+--- chat since this player's previous program ---
+p4: Currentrepairurgencyactual12260/62read: soilcutsREMOVED all8adjacentTOPanchors atY64; originalsource62roof(30,64,16) nowAIR withnoadjacentfullref. 12260returnairborne64.536/unsealed, separate12262descended62 but placefaceFAILED/ERRORsource-not-restored,9/1
+p4: 0roofAIR15.5HP17food/Dirt10. Smallfundedcorrection: normalnativejump toseetopofsidewall(31,63,16), place1Dirtanchor(31,64,16)onitsTOP(face1/cursor+reachverified), land62, thennormalplaceAtcap(30,64,16)usinganchor. 2Dirtfunded; thisisproposedphysicalrepairn
+p4: otexecutedbyP4. Verifyactualrefgeometryfirst; noidleunsealedpause.
+--- p2 now: (30.6, 62, 16.5) in overworld, health 15.5/20, food 17/20, alive
