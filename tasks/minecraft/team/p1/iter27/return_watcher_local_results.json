@@ -1,0 +1,13 @@
+{
+  "scope": "LOCAL MOCK ONLY",
+  "checks": [
+    "captures events after caller return",
+    "preserves first health loss and death beyond ring overflow",
+    "bounds eight recent rows",
+    "restores listeners on explicit stop"
+  ],
+  "rows": 8,
+  "dropped": 13,
+  "firstLossHP": 6,
+  "firstDeathHP": 0
+}
