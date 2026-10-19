@@ -3514,3 +3514,7 @@ Thirdsandboxkitloss confirmed151magicdeath00:33:36; earlyfireballabort/walkingre
 
 ### Iteration27 damaged walking retreat actually retains body —00:43 UTC
 155smallthreezigzagup/threeDOWN passed; actual156 revisedsettleloop completed11walkingescapesteps despiteHP10→6, ended50/6/fullcaps00:40:49.328, later42:21statusalive6/Snow4. ActualsourceincludesP1guard/P4recorderbyteexactly; countlateconsequentialretentionacceptance narrowly, notjusttoolplumbing. NoSnow/effect; original40:55effectgateMISSED. Prior151deathremainsfailed. P1readonly152addsblockedfoodmetadata (radius64vsold48);153/154watcher crossesone actualreturnbetweentwoprograms, nottwointervals. Nofood/courier/Endwatcheradoptionproved. LIVEasset50/10/Snow4unchanged; threeSBdeaths, noLIVEdeathobserved. Source/overlapdisclosuresremainexplicit; finalwindowunchanged.
+
+
+### Iteration27 source gate fails without losing LIVE capacity —00:50 UTC
+P1SB157 failedberryroute; actualend56/8.333HP/DIRT8, nothome51/nofullending/nofood. Helpertravelreturnsbooleanbutcleanupignoresit; successfulscriptreturn/absenceRETURN_FAILURE cannotprovearrival. Tokenreleased47:40before48gateandrawssaved, so do notconflate timelyautomationwithphysicalsourcepass. G6copyrestoresLIVE50/10/Snow4, notcorpse/recovery. Reviewerstatusunavailableduringreset wasreadtransportfailure; parsercorrected tocontinueotherrecords, nogameplay/ownershipclaim. Prior156narrowdamagedretentionacceptance remains; newobjectiveeffectstillzero. Currentchat-overlapdenialcorrectionpending, historicalexcludedexposurehonestlyretained.
