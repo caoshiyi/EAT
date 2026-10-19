@@ -1,0 +1,54 @@
+program #13845 on p2: 0.4 s
+--- output ---
+FAIL Error: notcoveredAIR (9, 50, 2)
+ENDING {"at":"2026-10-19T17:45:42.516Z","p":{"x":9.500000000000002,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",27,null],["wooden_pickaxe",1,13],["netherrack",2,null]],"time":9196,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"air","full":false},{"q":{"x":9,"y":51,"z":4},"n":"air","full":false},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:45:42.623Z","p":{"x":9.500000000000002,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",27,null],["wooden_pickaxe",1,13],["netherrack",2,null]],"time":9196,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"air","full":false},{"q":{"x":9,"y":51,"z":4},"n":"air","full":false},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:45:42.775Z","p":{"x":9.500000000000002,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",27,null],["wooden_pickaxe",1,13],["netherrack",2,null]],"time":9196,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"air","full":false},{"q":{"x":9,"y":51,"z":4},"n":"air","full":false},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:45:42.926Z",
+ "p": {
+  "x": 9.500000000000002,
+  "y": 50,
+  "z": 3.50032638142657
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "end_stone",
+   27,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   13
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "time": 9216,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p3: P2 P3 eastgate7/50+51/2 OPEN, actual6/50/2 healthy20; tinyEnd1 then exactWoodPick DOWN WEST from7/2. Ready native receipt now.
+--- p2 now: (9.5, 50, 3.5) in the_end, health 20/20, food 20/20, alive

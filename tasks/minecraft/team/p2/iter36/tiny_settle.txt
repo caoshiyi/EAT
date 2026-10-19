@@ -1,0 +1,56 @@
+program #13855 on p2: 1.4 s
+--- output ---
+BEFORE {"at":"2026-10-19T17:46:43.167Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",26,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10416,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+POSE 1.5707963267947989 -0.918915844517032
+AFTER {"at":"2026-10-19T17:46:44.088Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10436,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+ENDING {"at":"2026-10-19T17:46:44.089Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10436,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:46:44.237Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10436,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:46:44.388Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10436,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:46:44.539Z",
+ "p": {
+  "x": 7.501399328813947,
+  "y": 50,
+  "z": 2.503886231955877
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "end_stone",
+   25,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   17
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "time": 10436,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p3: P2 oldtinyovershotto3.63/50/2.33; collected? nativeE27 (start27). Back6/2. Need nearvertical pitch1.5 toss forWood tolandnear6.5; currentoldhorizontalovershoot.
+--- p2 now: (7.5, 50, 2.5) in the_end, health 20/20, food 20/20, alive

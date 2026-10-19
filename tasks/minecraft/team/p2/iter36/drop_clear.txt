@@ -1,0 +1,55 @@
+program #13857 on p2: 1.9 s
+--- output ---
+NATIVE_MOVE {"at":"2026-10-19T17:47:02.817Z","p":{"x":8.468969268336993,"y":50,"z":2.501346271496702},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10816,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+ITEMS [{"p":{"x":3.6342602261820858,"y":50,"z":2.332901204327953},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":376,"itemCount":1}]},{"p":{"x":7.014506243025442,"y":50,"z":2.4997103859737666},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":376,"itemCount":1}]}]
+ENDING {"at":"2026-10-19T17:47:03.117Z","p":{"x":8.468969268336993,"y":50,"z":2.501346271496702},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10816,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":8,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"air","full":false},{"q":{"x":9,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":2},"n":"air","full":false},{"q":{"x":7,"y":51,"z":2},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":8,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:47:03.268Z","p":{"x":8.468969268336993,"y":50,"z":2.501346271496702},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10816,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":8,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"air","full":false},{"q":{"x":9,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":2},"n":"air","full":false},{"q":{"x":7,"y":51,"z":2},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":8,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:47:03.418Z","p":{"x":8.468969268336993,"y":50,"z":2.501346271496702},"hp":20,"food":20,"ground":true,"inv":[["end_stone",25,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":10816,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":8,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"air","full":false},{"q":{"x":9,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":2},"n":"air","full":false},{"q":{"x":7,"y":51,"z":2},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":8,"y":51,"z":1},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:47:03.569Z",
+ "p": {
+  "x": 8.468969268336993,
+  "y": 50,
+  "z": 2.501346271496702
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "end_stone",
+   25,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   17
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "time": 10816,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (8.5, 50, 2.5) in the_end, health 20/20, food 20/20, alive

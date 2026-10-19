@@ -1,0 +1,52 @@
+program #13853 on p2: 0 s
+--- output ---
+BLOCKS [{"q":{"x":7,"y":50,"z":1},"n":"end_stone"},{"q":{"x":7,"y":51,"z":1},"n":"end_stone"},{"q":{"x":7,"y":49,"z":1},"n":"end_stone"},{"q":{"x":7,"y":52,"z":1},"n":"end_stone"},{"q":{"x":6,"y":50,"z":3},"n":"air"},{"q":{"x":6,"y":51,"z":3},"n":"air"},{"q":{"x":6,"y":50,"z":2},"n":"air"},{"q":{"x":6,"y":51,"z":2},"n":"air"}]
+ITEMS [{"p":{"x":0.14066122445997514,"y":59,"z":9.125},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]},{"p":{"x":23.317446841841797,"y":60,"z":3.445827942714387},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]},{"p":{"x":1.884302291448101,"y":60,"z":-13.017135163832398},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]},{"p":{"x":6.675596461293786,"y":60,"z":-0.3181129619768759},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]},{"p":{"x":-2.06951244948298,"y":60,"z":-4.332209688680286},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]},{"p":{"x":3.6342602261820858,"y":50,"z":2.332901204327953},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":376,"itemCount":1}]},{"p":{"x":16.326078667156494,"y":60,"z":12.805853242656204},"m":[null,null,null,null,null,null,null,null,{"present":true,"itemId":990,"itemCount":1}]}]
+--- returned ---
+{
+ "at": "2026-10-19T17:46:33.960Z",
+ "p": {
+  "x": 7.501399328813947,
+  "y": 50,
+  "z": 2.503886231955877
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "end_stone",
+   26,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   17
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "time": 10236,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (7.5, 50, 2.5) in the_end, health 20/20, food 20/20, alive

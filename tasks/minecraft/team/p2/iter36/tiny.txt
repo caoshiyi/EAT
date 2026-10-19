@@ -1,0 +1,56 @@
+program #13849 on p2: 1.1 s
+--- output ---
+BEFORE {"at":"2026-10-19T17:46:13.550Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",27,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":9816,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+AFTER {"at":"2026-10-19T17:46:14.210Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",26,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":9836,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+ENDING {"at":"2026-10-19T17:46:14.210Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",26,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":9836,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:46:14.360Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",26,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":9836,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:46:14.512Z","p":{"x":7.501399328813947,"y":50,"z":2.503886231955877},"hp":20,"food":20,"ground":true,"inv":[["end_stone",26,null],["cobblestone",1,null],["wooden_pickaxe",1,17],["netherrack",2,null]],"time":9836,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":7,"y":49,"z":2},"n":"end_stone","full":true},{"q":{"x":7,"y":52,"z":2},"n":"end_stone","full":true},{"q":{"x":8,"y":50,"z":2},"n":"air","full":false},{"q":{"x":8,"y":51,"z":2},"n":"air","full":false},{"q":{"x":6,"y":50,"z":2},"n":"air","full":false},{"q":{"x":6,"y":51,"z":2},"n":"air","full":false},{"q":{"x":7,"y":50,"z":3},"n":"air","full":false},{"q":{"x":7,"y":51,"z":3},"n":"air","full":false},{"q":{"x":7,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":7,"y":51,"z":1},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:46:14.662Z",
+ "p": {
+  "x": 7.501399328813947,
+  "y": 50,
+  "z": 2.503886231955877
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "end_stone",
+   26,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   17
+  ],
+  [
+   "netherrack",
+   2,
+   null
+  ]
+ ],
+ "time": 9836,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p1: P1 LIVE13839 17:45:13-53 read-only healthy11.5 FULL10: current flight phase2->3 HIGH~114 then descent; oldSouth61 contact not currently available. Priorhit13776 verified sword+hurt+HP-2.25, later no-range failures do not test attack reliability. Will pract
+p1: ice bounded current-flight geometry and retreat, not replay old57 hold.
+--- p2 now: (7.5, 50, 2.5) in the_end, health 20/20, food 20/20, alive
