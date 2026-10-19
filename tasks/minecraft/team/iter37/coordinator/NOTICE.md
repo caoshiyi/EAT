@@ -1,7 +1,4 @@
-# Current20:35 — injured ending retained, no Dragon damage
-Canonical14274 actual26.6s/attacks0/Dragon47.854599 unchanged. Own20→16.5 then1HP fall, ended20:33:49 lower/fulltrue/HP18.333; native20:34:52HP20 food17. Ending injury case now has one retained sample, no immunity claim. Finite food17/no food items matters to next accepted scope; no manufactured supply expedition.
-Compact packet last entity4566 is NOT ownId36. Match entityId before explaining P1 injury; unfiltered other-entity packet is not own-hit proof. Ownfall packet[36,8,0,0] matches fall1HP; P2 owncopy measured1HP separately. No current upper-body alert. Official20:33:30dragon0/11/deaths222 SAVE REFUSED; next20:48.
-
-20:36:31 support request13826: shield feasibility3min/P1 beneficiary/possible20minprocurement, optional toprimary. Not yet accepted. Shield-equipped earlysuccess does not establish causalprotection; priorproactiveshieldinjury remains counterevidence. Receipt+actualuse can close adoption, not immunity. P2 measuredfirsthurtbodyrange~3.77m, so noattack-beforeguard is opportunity-limited in this sample. Nextchangedhypothesis players choose.
-
-20:38 information-flow check: P3 shield feasibility request13826 at20:36:31 has no P2 acceptance/decline; feasibility bound reaches20:39:31. P2 new owncopy57fall task13833 at20:37:55 says no accepted material queue, which is compatible with unaccepted request but leaves dependency unresolved. Explicitly accept/decline feasibility directly; primary must not assume delivery or wait. P1 ownSB grace test announced13830–32, live body remainslow20/food17.
+# Current20:49 — halfway; actual reload next
+Latestofficial20:48:49dragon0/11/deaths224 SAVE REFUSED/LAST-SAVED; next21:03. Actualboss47.854599/4.5iterationdamage, none since20:05.
+P3 actual14300 holdsSword13/Shovel24/G6/E188/Pearl2, healthy20/full lower enclosure. P1 actualEnd75empty/healthy20, ownreturn/reloadpending. Reused returnchat13852 “oldDragonknockbackdrops” is stale purpose text, not a new corpse assignment. Nativecustody outranks it.
+No generalpermission/documentation gate: owners selected next target/position hypothesis; next useful outcome actual reload→bounded live result→retained ending, or explicit changed allocation. P2freshOWcensus not yet materials; shield/optionalbed delivery unpromised. P2 actually left End, so copiedthirdplayer conditions differ.
