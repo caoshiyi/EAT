@@ -1,0 +1,42 @@
+program #11830 on p2: 5.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T06:21:47.695Z","p":{"x":-6.421181020471286,"y":64,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_planks",12],["spruce_planks",2],["spruce_sapling",1]]}
+BRIDGE_FACE {"p":{"x":-5.8428385127924285,"y":64,"z":-25.500000000000313},"ref":{"x":-7,"y":63,"z":-26},"cursor":{"x":-7,"y":63,"z":-26},"face":5}
+BRIDGE {"at":"2026-10-19T06:21:49.296Z","p":{"x":-5.418544311961578,"y":64,"z":-25.50000000000037},"hp":20,"food":20,"inv":[["spruce_planks",11],["spruce_planks",2],["spruce_sapling",1]]}
+BRIDGE_FACE {"p":{"x":-4.832777633161969,"y":64,"z":-25.500000000000433},"ref":{"x":-6,"y":63,"z":-26},"cursor":{"x":-6,"y":63,"z":-26},"face":5}
+BRIDGE {"at":"2026-10-19T06:21:51.049Z","p":{"x":-4.408483432331119,"y":64,"z":-25.50000000000049},"hp":20,"food":20,"inv":[["spruce_planks",10],["spruce_planks",2],["spruce_sapling",1]]}
+BRIDGE_FACE {"p":{"x":-3.82271675353151,"y":64,"z":-25.500000000000554},"ref":{"x":-5,"y":63,"z":-26},"cursor":{"x":-5,"y":63,"z":-26},"face":5}
+BRIDGE {"at":"2026-10-19T06:21:52.802Z","p":{"x":-3.3984225527006586,"y":64,"z":-25.50000000000061},"hp":20,"food":20,"inv":[["spruce_planks",9],["spruce_planks",2],["spruce_sapling",1]]}
+SHORE_PATH {"status":"noPath","path":[]}
+FAILURE Error: shore path {"at":"2026-10-19T06:21:52.807Z","p":{"x":-3.3984225527006586,"y":64,"z":-25.50000000000061},"hp":20,"food":20,"inv":[["spruce_planks",9],["spruce_planks",2],["spruce_sapling",1]]}
+END {"at":"2026-10-19T06:21:52.807Z","p":{"x":-3.3984225527006586,"y":64,"z":-25.50000000000061},"hp":20,"food":20,"inv":[["spruce_planks",9],["spruce_planks",2],["spruce_sapling",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:21:52.807Z",
+ "p": {
+  "x": -3.3984225527006586,
+  "y": 64,
+  "z": -25.50000000000061
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "spruce_planks",
+   9
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "spruce_sapling",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+p4: Update BEFOREoldclaims reused: ownSECOND LIVEdeath Zombie06:11:14 afterexposednightLog1 body, emergencyarrivedafterrespawn. CurrentNEWbodyactual11823harvest6logs; initialpodblockedbyberry (not fullending).11826 normalvisibleberryuse1.544m/clearcurrentray d
+p4: espitezero collision shapes+cursorfalse: age3→1 andACTUAL3berriesreceived; ordinarydigclearedbush, completed10FULLpod7/67/-23.11827 actualcraftwallTable8/67/-23+woodPick0/woodShovel0,20HP20food/Log1/Planks2/Berries3, three10FULLendings19:27–28. Properrecip
+p4: ientrecovery nowreal, no moreexposedidle. Whole06:20 End-entry MISSED, no Snow/Endreceipt yet. Mining stone+Snow next; canofferusedwoodpickafterstoneupgrade ifactualmeeting safelyfunded. CurrentP4allcallsidle, G8neverreset/liveP2ownsitsbody.
+--- p2 now: (-3.4, 64, -25.5) in overworld, health 20/20, food 20/20, alive

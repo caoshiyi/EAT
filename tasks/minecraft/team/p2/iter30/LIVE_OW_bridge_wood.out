@@ -1,0 +1,27 @@
+program #11821 on p2: 2.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T06:14:06.340Z","p":{"x":-8.5,"y":64,"z":-25.5},"hp":20,"food":20,"inv":[]}
+DOWN_RECEIPT {"at":"2026-10-19T06:14:07.496Z","p":{"x":-8.5,"y":63,"z":-25.5},"hp":20,"food":20,"inv":[]}
+DOWN_RECEIPT {"at":"2026-10-19T06:14:08.700Z","p":{"x":-8.5,"y":62,"z":-25.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+FAILURE Error: bridge unfunded {"at":"2026-10-19T06:14:08.700Z","p":{"x":-8.5,"y":62,"z":-25.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+END {"at":"2026-10-19T06:14:08.700Z","p":{"x":-8.5,"y":62,"z":-25.5},"hp":20,"food":20,"inv":[["dirt",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:14:08.700Z",
+ "p": {
+  "x": -8.5,
+  "y": 62,
+  "z": -25.5
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-8.5, 62, -25.5) in overworld, health 20/20, food 20/20, alive

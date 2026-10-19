@@ -1,0 +1,46 @@
+program #11832 on p2: 7.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T06:23:18.540Z","p":{"x":-3.3950520428126993,"y":64,"z":-25.50000000000061},"hp":20,"food":20,"inv":[["spruce_planks",9],["spruce_planks",2],["spruce_sapling",1]]}
+SHORE_RECEIPT {"at":"2026-10-19T06:23:19.902Z","p":{"x":-3.503159532924892,"y":62,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["spruce_planks",9],["spruce_planks",2],["spruce_sapling",1]]}
+CRAFT crafting_table 1 {"at":"2026-10-19T06:23:20.153Z","p":{"x":-3.503159532924892,"y":62,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["crafting_table",1],["spruce_planks",7],["spruce_sapling",1]]}
+CRAFT stick 1 {"at":"2026-10-19T06:23:20.403Z","p":{"x":-3.503159532924892,"y":62,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["crafting_table",1],["spruce_planks",5],["stick",4],["spruce_sapling",1]]}
+CRAFT wooden_pickaxe 1 {"at":"2026-10-19T06:23:21.159Z","p":{"x":-3.503159532924892,"y":63,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",2],["spruce_sapling",1]]}
+PICK_RECEIPT {"at":"2026-10-19T06:23:21.260Z","p":{"x":-3.503159532924892,"y":63,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",2],["spruce_sapling",1]]}
+TABLE_RECLAIM {"at":"2026-10-19T06:23:25.723Z","p":{"x":-3.503159532924892,"y":62,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",2],["crafting_table",1],["spruce_sapling",1]]}
+END {"at":"2026-10-19T06:23:25.723Z","p":{"x":-3.503159532924892,"y":62,"z":-24.509653408954833},"hp":20,"food":20,"inv":[["stick",2],["wooden_pickaxe",1],["spruce_planks",2],["crafting_table",1],["spruce_sapling",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:23:25.723Z",
+ "p": {
+  "x": -3.503159532924892,
+  "y": 62,
+  "z": -24.509653408954833
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "stick",
+   2
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "spruce_planks",
+   2
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "spruce_sapling",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-3.5, 62, -24.5) in overworld, health 20/20, food 20/20, alive

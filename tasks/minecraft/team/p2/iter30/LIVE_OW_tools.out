@@ -1,0 +1,36 @@
+program #11824 on p2: 1.1 s
+--- output ---
+SOURCE {"at":"2026-10-19T06:17:32.451Z","p":{"x":-6.421181020471286,"y":62,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",3]]}
+CRAFT spruce_planks 3 {"at":"2026-10-19T06:17:32.603Z","p":{"x":-6.421181020471286,"y":62,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",1],["spruce_planks",4],["spruce_planks",3]]}
+UP {"at":"2026-10-19T06:17:33.053Z","p":{"x":-6.421181020471286,"y":63,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",1],["spruce_planks",3],["spruce_planks",3]]}
+UP {"at":"2026-10-19T06:17:33.504Z","p":{"x":-6.421181020471286,"y":64,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",1],["spruce_planks",3],["spruce_planks",2]]}
+FAILURE Error: centre occluded (-6, 67, -26) spruce_leaves {"at":"2026-10-19T06:17:33.504Z","p":{"x":-6.421181020471286,"y":64,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",1],["spruce_planks",3],["spruce_planks",2]]}
+END {"at":"2026-10-19T06:17:33.504Z","p":{"x":-6.421181020471286,"y":64,"z":-25.50000000000025},"hp":20,"food":20,"inv":[["spruce_log",1],["spruce_planks",3],["spruce_planks",2]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:17:33.504Z",
+ "p": {
+  "x": -6.421181020471286,
+  "y": 64,
+  "z": -25.50000000000025
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "spruce_log",
+   1
+  ],
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "spruce_planks",
+   2
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (-6.4, 64, -25.5) in overworld, health 20/20, food 20/20, alive
