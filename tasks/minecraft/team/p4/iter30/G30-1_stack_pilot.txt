@@ -1,0 +1,29 @@
+[sandbox] program #265 on p4: 2.2 s
+--- output ---
+STACK_SOURCE {"at":"2026-10-19T05:33:03.046Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"inventory":[["dirt",2]],"dim":"overworld"}
+VISIBLE_CAP_CUT {"p":{"x":-1,"y":57,"z":-25},"now":"air","state":{"at":"2026-10-19T05:33:04.001Z","p":{"x":-0.5833627947121038,"y":55,"z":-24.48062359791109},"hp":20,"food":20,"ground":true,"inventory":[["dirt",2]],"dim":"overworld"}}
+STACK_FAILURE {"error":"Error: actual stack postcondition","raised":0,"state":{"at":"2026-10-19T05:33:05.255Z","p":{"x":-0.3,"y":56.61610637863528,"z":-24.48062359791109},"hp":20,"food":20,"ground":false,"inventory":[["dirt",2]],"dim":"overworld"}}
+STACK_END {"raised":0,"elapsedMs":2209,"state":{"at":"2026-10-19T05:33:05.255Z","p":{"x":-0.3,"y":56.61610637863528,"z":-24.48062359791109},"hp":20,"food":20,"ground":false,"inventory":[["dirt",2]],"dim":"overworld"}}
+--- returned ---
+{
+ "at": "2026-10-19T05:33:05.255Z",
+ "p": {
+  "x": -0.3,
+  "y": 56.61610637863528,
+  "z": -24.48062359791109
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": false,
+ "inventory": [
+  [
+   "dirt",
+   2
+  ]
+ ],
+ "dim": "overworld"
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (-0.3, 56.6, -24.5) in overworld, health 20/20, food 20/20, alive
+syntax-only PASS: stack_pilot.js

@@ -3,3 +3,6 @@ G30-1: reset requested after P2 explicit release in live11755/05:30:48; own11757
 Reset receipt p4/iter30/G30-1_reset.txt: copied0.7s; total14.3s; done file mtime05:31:32.086 UTC. Exact copy instant unknown. READY chat11091–93 published05:31:39 (its05:31:xx shorthand refers to this bounded minute, NOT exact copy instant).
 Copied P2 base30.568/58/-24.551/10HP16food/Snow1/199end/wood42; copied P4 OW(-.583,55,-24.481)/20HP20food/Dirt2.
 P2 may proceed independently; P4 intends mechanics-only test in OW. Any new reset needs completed/terminated own+peer sandbox calls and evidence preserved. No automatic reset loop.
+
+G30-1 P4 mutations:265 cap57 removed, dirt55 placed, actual failure airborne56.616;266 later grounded56/20HP, current head/bodywater (269/270). Live P4 still55/20HP/Dirt2, no mutation.268 readonly survey BigInt serialization error,269 generic survey water-saturated,270 pertype read-only corrected. All completed. Native pilot not whole success/no death.
+P2 actual2643UP/return58/10HP/wood46. This is a sandbox change from copied wood42; later whole P2 current state must be read independently.
