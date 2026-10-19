@@ -1,0 +1,10 @@
+program #9312 on p1: 0.4 s
+--- output ---
+PRE {"p":{"x":142.500373177783,"y":-36,"z":2231.5},"ref":{"x":142,"y":-37,"z":2232},"cursor":{"x":142,"y":-37,"z":2232}}
+BED white_bed { part: 'foot', occupied: false, facing: 'south' }
+SET {"p":{"x":142.500373177783,"y":-36,"z":2231.5},"hp":8.893067359924316,"sleeping":false,"inv":[["book",3],["cobbled_deepslate",3],["stick",4],["rotten_flesh",1]],"bed":{"part":"foot","occupied":false,"facing":"south"}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p1 now: (142.5, -36, 2231.5) in overworld, health 8.9/20, food 17/20, alive

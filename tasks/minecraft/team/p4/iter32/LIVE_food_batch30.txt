@@ -1,0 +1,64 @@
+syntax-only PASS: food_batch30.js
+program #12094 on p4: 38.7 s
+--- output ---
+SOURCE {"at":"2026-10-19T09:41:02.759Z","p":{"x":53.46160364045724,"y":64,"z":69.46882971769882},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["dirt",7],["wooden_sword",1],["wooden_shovel",1]],"faces":[{"p":{"x":53,"y":63,"z":69},"n":"dirt","full":true},{"p":{"x":53,"y":66,"z":69},"n":"dirt","full":true},{"p":{"x":54,"y":64,"z":69},"n":"dirt","full":true},{"p":{"x":54,"y":65,"z":69},"n":"dirt","full":true},{"p":{"x":52,"y":64,"z":69},"n":"sand","full":true},{"p":{"x":52,"y":65,"z":69},"n":"sand","full":true},{"p":{"x":53,"y":64,"z":70},"n":"dirt","full":true},{"p":{"x":53,"y":65,"z":70},"n":"dirt","full":true},{"p":{"x":53,"y":64,"z":68},"n":"sand","full":true},{"p":{"x":53,"y":65,"z":68},"n":"sand","full":true}],"time":23430}
+FAILURE {"phase":"south_detour","error":"Error: nav actualpost","state":{"at":"2026-10-19T09:41:29.081Z","p":{"x":50.52404497477384,"y":69,"z":110.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["dirt",5],["wooden_sword",1],["wooden_shovel",1]]}}
+REFUGE_ADMISSION {"at":"2026-10-19T09:41:29.092Z","source":{"at":"2026-10-19T09:41:29.092Z","p":{"x":50.52404497477384,"y":69,"z":110.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["dirt",5],["wooden_sword",1],["wooden_shovel",1]]},"options":[{"x":51,"y":69,"z":110},{"x":50,"y":69,"z":110},{"x":50,"y":69,"z":110},{"x":51,"y":68,"z":111},{"x":50,"y":68,"z":111}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:31.260Z","p":{"x":50.52404497477384,"y":69,"z":110.5},"hp":9.287553787231445,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["dirt",5],["wooden_sword",1],["wooden_shovel",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":16.872837594898094},{"n":"item","p":{"x":49.353706996781355,"y":71.22212026484245,"z":109.73395406496908},"d":2.625706729383992},{"n":"item","p":{"x":52.54557830188242,"y":66.3596943624019,"z":110.33651843808202},"d":3.3293448415011286},{"n":"item","p":{"x":49.71817619230672,"y":71.56487512223407,"z":110.58130827804285},"d":2.689724878735475},{"n":"item","p":{"x":53.44160710514351,"y":69.40366112299938,"z":115.40690946469138},"d":5.723012456867992}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:31.686Z","p":{"x":49.65673644283515,"y":69,"z":110.14030750360244},"hp":9.62088680267334,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",1],["dirt",5],["wooden_sword",1],["wooden_shovel",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.957903229919346},{"n":"item","p":{"x":49.353706996781355,"y":71.22212026484245,"z":109.73395406496908},"d":2.279203464741198},{"n":"item","p":{"x":52.54557830188242,"y":66.3596943624019,"z":110.33651843808202},"d":3.918560944699648},{"n":"item","p":{"x":49.71817619230672,"y":71.56487512223407,"z":110.58130827804285},"d":2.6032366236144213},{"n":"item","p":{"x":53.44160710514351,"y":69.40366112299938,"z":115.40690946469138},"d":6.498098525658834}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:32.184Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":9.787553787231445,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.67207162696536,"y":66,"z":110.578527642077},"d":4.296137144868731},{"n":"item","p":{"x":53.85245235260139,"y":69,"z":114.84827099455195},"d":6.331342605362753}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:32.684Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":9.95422077178955,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68574350196536,"y":66,"z":110.604894829577},"d":4.308651091705743},{"n":"item","p":{"x":53.89835079010139,"y":69,"z":114.78552685392695},"d":6.315663651983672}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:33.181Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":10.120887756347656,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68574350196536,"y":66,"z":110.604894829577},"d":4.308651091705743},{"n":"item","p":{"x":53.89835079010139,"y":69,"z":114.78552685392695},"d":6.315663651983672}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:33.684Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":10.287554740905762,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68574350196536,"y":66,"z":110.604894829577},"d":4.308651091705743},{"n":"item","p":{"x":53.89835079010139,"y":69,"z":114.78552685392695},"d":6.315663651983672}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:33.736Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":10.287554740905762,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68574350196536,"y":66,"z":110.604894829577},"d":4.308651091705743},{"n":"item","p":{"x":53.89835079010139,"y":69,"z":114.78552685392695},"d":6.315663651983672}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:37.679Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":11.287554740905762,"food":20,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68672006446536,"y":66,"z":110.606359673327},"d":4.3095051905793715},{"n":"item","p":{"x":53.90005977447639,"y":69,"z":114.78332958830195},"d":6.315199955516064}]}
+HEALTH_EVENT {"at":"2026-10-19T09:41:37.733Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":11.287554740905762,"food":19,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"phase":"south_detour","near":[{"n":"creeper","p":{"x":34.494208843134274,"y":66,"z":106.17137410988322},"d":15.929811791715435},{"n":"item","p":{"x":52.68672006446536,"y":66,"z":110.606359673327},"d":4.3095051905793715},{"n":"item","p":{"x":53.90005977447639,"y":69,"z":114.78332958830195},"d":6.315199955516064}]}
+ENDING_FAILURE Error: nav actualpost {"at":"2026-10-19T09:41:41.470Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":11.287554740905762,"food":19,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":68,"z":110},"n":"grass_block","full":true},{"p":{"x":49,"y":71,"z":110},"n":"air","full":false},{"p":{"x":50,"y":69,"z":110},"n":"air","full":false},{"p":{"x":50,"y":70,"z":110},"n":"air","full":false},{"p":{"x":48,"y":69,"z":110},"n":"air","full":false},{"p":{"x":48,"y":70,"z":110},"n":"spruce_leaves","full":true},{"p":{"x":49,"y":69,"z":111},"n":"air","full":false},{"p":{"x":49,"y":70,"z":111},"n":"air","full":false},{"p":{"x":49,"y":69,"z":109},"n":"air","full":false},{"p":{"x":49,"y":70,"z":109},"n":"air","full":false}]}
+TERMINAL {"at":"2026-10-19T09:41:41.470Z","p":{"x":49.629636609705955,"y":69,"z":110.13088544871874},"hp":11.287554740905762,"food":19,"dim":"overworld","ground":true,"inv":[["sweet_berries",2],["spruce_planks",3],["stick",3],["dirt",5],["wooden_sword",1],["wooden_shovel",1],["spruce_sapling",1]],"faces":[{"p":{"x":49,"y":68,"z":110},"n":"grass_block","full":true},{"p":{"x":49,"y":71,"z":110},"n":"air","full":false},{"p":{"x":50,"y":69,"z":110},"n":"air","full":false},{"p":{"x":50,"y":70,"z":110},"n":"air","full":false},{"p":{"x":48,"y":69,"z":110},"n":"air","full":false},{"p":{"x":48,"y":70,"z":110},"n":"spruce_leaves","full":true},{"p":{"x":49,"y":69,"z":111},"n":"air","full":false},{"p":{"x":49,"y":70,"z":111},"n":"air","full":false},{"p":{"x":49,"y":69,"z":109},"n":"air","full":false},{"p":{"x":49,"y":70,"z":109},"n":"air","full":false}],"received":0}
+--- returned ---
+{
+ "at": "2026-10-19T09:41:41.470Z",
+ "p": {
+  "x": 49.629636609705955,
+  "y": 69,
+  "z": 110.13088544871874
+ },
+ "hp": 11.287554740905762,
+ "food": 19,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "sweet_berries",
+   2
+  ],
+  [
+   "spruce_planks",
+   3
+  ],
+  [
+   "stick",
+   3
+  ],
+  [
+   "dirt",
+   5
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "spruce_sapling",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (49.6, 69, 110.1) in overworld, health 11.3/20, food 19/20, alive
+CANONICAL_RECEIPT {"started": "2026-10-19T09:41:02.576339+00:00", "ended": "2026-10-19T09:41:41.485008+00:00", "environment": "LIVE", "player": "p4", "canonical_program": 12094, "rc": 0, "command": "run", "claim": "CLI receipt only; no gameplay success inferred", "source": "tasks/minecraft/team/p4/iter32/food_batch30.js", "sha256": "94d3419f44796a1aea098711d4b6f685736228e9a0396f3b8ffe6d79f081e688"}
