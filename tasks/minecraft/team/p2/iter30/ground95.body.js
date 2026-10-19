@@ -1,0 +1,16 @@
+const target=Object.values(bot.entities).find(e=>e.name==='end_crystal'&&e.position.distanceTo(v(12.5,95,-39.5))<.1);let fired=false;const ids=new Set(),flight=[],events=[],boss=[];
+const entity=e=>({id:e.id,n:e.name,p:e.position.clone(),velocity:e.velocity?.clone()});
+const spawn=e=>{if(e.name==='snowball'&&e.position.distanceTo(bot.entity.position)<4){ids.add(e.id);flight.push({at:new Date().toISOString(),event:'spawn',...entity(e)});}};
+const moved=e=>{if(ids.has(e.id)&&flight.length<30)flight.push({at:new Date().toISOString(),event:'moved',...entity(e)});};
+const gone=e=>{if(e===target||ids.has(e.id))events.push({at:new Date().toISOString(),event:'gone',e:entity(e),hp:bot.health,dim:bot.game.dimension,crystals:Object.values(bot.entities).filter(x=>x.name==='end_crystal').map(x=>({id:x.id,p:x.position}))});};
+bot.on('entitySpawn',spawn);bot.on('entityMoved',moved);bot.on('entityGone',gone);
+try{console.log('SOURCE',JSON.stringify(snap()));if(bot.game.dimension!=='the_end'||bot.health!==9||count('snowball')!==1||bot.entity.position.distanceTo(v(6.503142,58,-25.499962))>.1||!target)throw Error('current SB source');
+await cut(v(6,60,-26));const pitch=78.76*Math.PI/180,dx=target.position.x-bot.entity.position.x,dz=target.position.z-bot.entity.position.z,D=Math.hypot(dx,dz),eye=bot.entity.position.offset(0,bot.entity.eyeHeight,0),out=v(dx/D*Math.cos(pitch),Math.sin(pitch),dz/D*Math.cos(pitch));
+for(const h of[bot.entity.eyeHeight,1.8])if(bot.world.raycast(bot.entity.position.offset(0,h,0),out,3))throw Error('initial outgoingSky blocked');
+await bot.equip(bot.inventory.items().find(i=>i.name==='snowball'),'hand');await bot.lookAt(eye.plus(out.scaled(20)),true);await sleep(1);bot.setControlState('jump',true);await sleep(1);
+try{live();if(bot.entity.position.y<58.39||bot.entity.position.y>58.8)throw Error('first native jump pose');console.log('ORDINARY_GROUND_SNOW',JSON.stringify({at:new Date().toISOString(),state:snap(),eye:bot.entity.position.offset(0,bot.entity.eyeHeight,0),pitch:bot.entity.pitch,yaw:bot.entity.yaw,out,D,model:'actual11630/P4flight; prediction not permission/outcome'}));bot.activateItem();fired=true;}finally{bot.setControlState('jump',false);}
+for(let k=0;k<25&&(!bot.entity.onGround||Math.abs(bot.entity.position.y-58)>.03);k++)await sleep(1);
+live();if(!bot.entity.onGround||Math.abs(bot.entity.position.y-58)>.03)throw Error('jump return landing');await place(v(6,60,-26));
+for(let k=0;k<100&&bot.health>0;k++){if(k%10===0)boss.push({at:new Date().toISOString(),bars:Object.values(bot.bossBars||{}).map(b=>({health:b.health,title:b.title}))});await sleep(1);}
+}catch(e){console.log('FAILURE',String(e),JSON.stringify(snap()));}
+finally{try{if(!died&&bot.game.dimension==='the_end'&&bot.entity.onGround&&Math.abs(bot.entity.position.y-58)<.03&&!full(v(6,60,-26)))await place(v(6,60,-26));}catch(e){console.log('RECOVERY_FAILURE',String(e));}console.log('GROUND_SNOW_RESULT',JSON.stringify({fired,targetPresent:target?!!bot.entities[target.id]:null,flight,events,boss,crystals:Object.values(bot.entities).filter(e=>e.name==='end_crystal').map(e=>({id:e.id,p:e.position})),state:snap()}));bot.removeListener('entitySpawn',spawn);bot.removeListener('entityMoved',moved);bot.removeListener('entityGone',gone);cleanup();}return snap();

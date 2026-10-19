@@ -1,0 +1,75 @@
+program #11854 on p2: 7.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T06:40:06.417Z","p":{"x":5.529796018833215,"y":64,"z":-2.3},"hp":20,"food":20,"inv":[["stone_pickaxe",1],["spruce_planks",8],["stone_pickaxe",1],["stone_sword",1],["wooden_sword",1],["wooden_axe",1],["crafting_table",1],["spruce_sapling",1],["wooden_shovel",1],["snowball",14],["wooden_pickaxe",1],["sweet_berries",3]]}
+ACTIVE_PORTAL [{"x":6,"y":68,"z":91},{"x":7,"y":68,"z":91},{"x":6,"y":69,"z":91},{"x":7,"y":69,"z":91},{"x":6,"y":70,"z":91},{"x":7,"y":70,"z":91}]
+CLEAR_STEP_SNOW Vec3 { x: 5, y: 65, z: -2 } air
+CLEAR_STEP_SNOW Vec3 { x: 7, y: 64, z: -2 } air
+CLEAR_STEP_SNOW Vec3 { x: 7, y: 65, z: -1 } air
+CLEAR_STEP_SNOW Vec3 { x: 8, y: 65, z: -2 } air
+ROUTE {"at":"2026-10-19T06:40:10.413Z","p":{"x":5.572874081241822,"y":65.00133597911214,"z":-2.067162667091489},"hp":20,"food":20,"inv":[["stone_pickaxe",1],["spruce_planks",8],["stone_pickaxe",1],["stone_sword",1],["wooden_sword",1],["wooden_axe",1],["crafting_table",1],["spruce_sapling",1],["wooden_shovel",1],["snowball",15],["wooden_pickaxe",1],["sweet_berries",3]]}
+FAILURE Error: stalled without visibleSnow {"at":"2026-10-19T06:40:13.637Z","p":{"x":5.529796018833215,"y":64,"z":-2.3},"hp":20,"food":20,"inv":[["stone_pickaxe",1],["spruce_planks",8],["stone_pickaxe",1],["stone_sword",1],["wooden_sword",1],["wooden_axe",1],["crafting_table",1],["spruce_sapling",1],["wooden_shovel",1],["snowball",15],["wooden_pickaxe",1],["sweet_berries",3]]}
+END {"at":"2026-10-19T06:40:13.637Z","p":{"x":5.529796018833215,"y":64,"z":-2.3},"hp":20,"food":20,"inv":[["stone_pickaxe",1],["spruce_planks",8],["stone_pickaxe",1],["stone_sword",1],["wooden_sword",1],["wooden_axe",1],["crafting_table",1],["spruce_sapling",1],["wooden_shovel",1],["snowball",15],["wooden_pickaxe",1],["sweet_berries",3]]}
+--- returned ---
+{
+ "at": "2026-10-19T06:40:13.637Z",
+ "p": {
+  "x": 5.529796018833215,
+  "y": 64,
+  "z": -2.3
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "spruce_planks",
+   8
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "wooden_sword",
+   1
+  ],
+  [
+   "wooden_axe",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "spruce_sapling",
+   1
+  ],
+  [
+   "wooden_shovel",
+   1
+  ],
+  [
+   "snowball",
+   15
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "sweet_berries",
+   3
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (5.5, 64, -2.3) in overworld, health 20/20, food 20/20, alive
