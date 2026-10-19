@@ -1,0 +1,217 @@
+program #12136 on p2: 18.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T10:17:42.436Z","p":{"x":158.52619725943828,"y":78,"z":531.5207188373824},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,78],["sweet_berries",7,null]],"faces":[{"q":{"x":158,"y":77,"z":531},"n":"dirt","full":true},{"q":{"x":158,"y":80,"z":531},"n":"dirt","full":true},{"q":{"x":159,"y":78,"z":531},"n":"dirt","full":true},{"q":{"x":159,"y":79,"z":531},"n":"dirt","full":true},{"q":{"x":157,"y":78,"z":531},"n":"dirt","full":true},{"q":{"x":157,"y":79,"z":531},"n":"dirt","full":true},{"q":{"x":158,"y":78,"z":532},"n":"dirt","full":true},{"q":{"x":158,"y":79,"z":532},"n":"dirt","full":true},{"q":{"x":158,"y":78,"z":530},"n":"dirt","full":true},{"q":{"x":158,"y":79,"z":530},"n":"dirt","full":true}]}
+CUT {"q":{"x":158,"y":80,"z":531},"n":"dirt","p":{"x":158.52619725943828,"y":78,"z":531.5207188373824}}
+UP {"at":"2026-10-19T10:17:43.344Z","p":{"x":158.52619725943828,"y":79,"z":531.5207188373824},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}
+UP {"at":"2026-10-19T10:17:43.996Z","p":{"x":158.52619725943828,"y":80,"z":531.5207188373824},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",3,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}
+UP {"at":"2026-10-19T10:17:44.650Z","p":{"x":158.52619725943828,"y":81,"z":531.5207188373824},"hp":20,"food":19,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",2,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}
+NEAR [{"id":7707,"n":"cow","p":{"x":145.62575356089923,"y":76,"z":535.3108643960112}},{"id":9470,"n":"zombie","p":{"x":172.62728774567324,"y":86,"z":535.5029519011283}},{"id":9603,"n":"creeper","p":{"x":163.60566056995046,"y":83,"z":549.9356405159925}},{"id":10528,"n":"zombie","p":{"x":157.2466675863132,"y":81,"z":549.6090003561279}}]
+TARGET_RESULT {"target":{"id":7707,"n":"cow","p":{"x":146.19724689427957,"y":78,"z":540.5037534870733}},"kills":[],"state":{"at":"2026-10-19T10:17:56.840Z","p":{"x":146.33771374808933,"y":78,"z":542.3},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",2,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}}
+ACTUAL_RECEIPT {"at":"2026-10-19T10:17:56.840Z","p":{"x":146.33771374808933,"y":78,"z":542.3},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",2,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}
+BURY_ADMISSION {"q":{"x":146,"y":78,"z":542},"at":{"at":"2026-10-19T10:17:57.057Z","p":{"x":146.33771374808933,"y":78,"z":542.3},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",2,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}}
+WALK {"at":"2026-10-19T10:17:57.642Z","p":{"x":146.49154470517857,"y":78,"z":542.4898430376142},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",2,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,79],["sweet_berries",7,null]]}
+CUT {"q":{"x":146,"y":77,"z":542},"n":"grass_block","p":{"x":146.4789203289897,"y":77.76636799395752,"z":542.4743391236253}}
+CUT {"q":{"x":146,"y":76,"z":542},"n":"dirt","p":{"x":146.4789203289897,"y":76.76636799395752,"z":542.4743391236253}}
+CUT {"q":{"x":146,"y":75,"z":542},"n":"dirt","p":{"x":146.4789203289897,"y":75.76636799395752,"z":542.4743391236253}}
+ENDING {"at":"2026-10-19T10:18:00.406Z","p":{"x":146.4789203289897,"y":75,"z":542.4743391236253},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,82],["sweet_berries",7,null]],"faces":[{"q":{"x":146,"y":74,"z":542},"n":"stone","full":true},{"q":{"x":146,"y":77,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":541},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":541},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T10:18:00.606Z","p":{"x":146.4789203289897,"y":75,"z":542.4743391236253},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,82],["sweet_berries",7,null]],"faces":[{"q":{"x":146,"y":74,"z":542},"n":"stone","full":true},{"q":{"x":146,"y":77,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":541},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":541},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T10:18:00.807Z","p":{"x":146.4789203289897,"y":75,"z":542.4743391236253},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,82],["sweet_berries",7,null]],"faces":[{"q":{"x":146,"y":74,"z":542},"n":"stone","full":true},{"q":{"x":146,"y":77,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":541},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":541},"n":"dirt","full":true}]}
+ENDING_KIND buried {"at":"2026-10-19T10:18:01.007Z","p":{"x":146.4789203289897,"y":75,"z":542.4743391236253},"hp":20,"food":18,"dim":"overworld","ground":true,"inv":[["wooden_sword",1,0],["spruce_sapling",4,null],["stick",1,null],["cobblestone",1,null],["snowball",10,null],["snowball",16,null],["stone_axe",1,0],["stone_pickaxe",1,9],["wooden_pickaxe",1,15],["spruce_planks",2,null],["dirt",4,null],["flint",1,null],["stone_sword",1,1],["crafting_table",1,null],["stone_shovel",1,82],["sweet_berries",7,null]],"faces":[{"q":{"x":146,"y":74,"z":542},"n":"stone","full":true},{"q":{"x":146,"y":77,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":147,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":75,"z":542},"n":"dirt","full":true},{"q":{"x":145,"y":76,"z":542},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":543},"n":"dirt","full":true},{"q":{"x":146,"y":75,"z":541},"n":"dirt","full":true},{"q":{"x":146,"y":76,"z":541},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T10:18:01.007Z",
+ "p": {
+  "x": 146.4789203289897,
+  "y": 75,
+  "z": 542.4743391236253
+ },
+ "hp": 20,
+ "food": 18,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "spruce_sapling",
+   4,
+   null
+  ],
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "snowball",
+   10,
+   null
+  ],
+  [
+   "snowball",
+   16,
+   null
+  ],
+  [
+   "stone_axe",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   9
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   15
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   4,
+   null
+  ],
+  [
+   "flint",
+   1,
+   null
+  ],
+  [
+   "stone_sword",
+   1,
+   1
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_shovel",
+   1,
+   82
+  ],
+  [
+   "sweet_berries",
+   7,
+   null
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 146,
+    "y": 74,
+    "z": 542
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 146,
+    "y": 77,
+    "z": 542
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 147,
+    "y": 75,
+    "z": 542
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 147,
+    "y": 76,
+    "z": 542
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 145,
+    "y": 75,
+    "z": 542
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 145,
+    "y": 76,
+    "z": 542
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 146,
+    "y": 75,
+    "z": 543
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 146,
+    "y": 76,
+    "z": 543
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 146,
+    "y": 75,
+    "z": 541
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 146,
+    "y": 76,
+    "z": 541
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ],
+ "kind": "buried",
+ "kills": [],
+ "dead": false
+}
+--- chat since this player's previous program ---
+p4: Reviewed12130: END_OPERATION10:11:52.881 TENFULL13.2667HP19food/Berries12; priorPROGRESS43.047 HP17.7667, TRAVEL_EFFECT46.956 HP13.2667, WALK47.460 HP12.2667. ExactlyONE liveDEFENSE_ATTACK Skeleton9262 at41.347 +Swordwear1; noHurt/deadobserver logged, so n
+p4: oSkeletonkillclaim. Cowobservation172/85/524 atthatdateonly, notcurrentfoodreceipt. G4requestednow: verifyallSBidle/preserveG3 thenreset. NewtestmustselectfreshactualSkeleton aftercopy(notblind9262), logactualHurt/death+wholeending. Escape-bufferhypothesis
+p4: fitscodepatternbuttestactualoutwardbranch/chase, notjustnewflag.
+p4: G32-4 READY10:15:29.5approx: canonicalreset10:15:06 total23.5s/copy0.9within06–29.5 exactinstantunknown. ALLSBidleverified/G3last3P2,lastP4,events10000preservedfirst; noactivetestreplace. FreshSB P2actual158.526/78/531.521/TENFULL20HP19food/Berries7/Snow2
+p4: 6/currentstonekit; LIVEstatussameafterhealing, notold15.3source. P4SBsealed5.911HP/nofood currentcopy. NoP4testqueued. TestactualfreshSkeletonchase/Hurt/death/ending; iftargetunreachedonlybranchunqualified. OriginalCow10:11observationnotcurrentliving/foodr
+p4: eceipt. Actualfood7 sourcebudgetafterhealingneedsrecordseparatelyfromearlier14.
+--- p2 now: (146.5, 75, 542.5) in overworld, health 20/20, food 18/20, alive
