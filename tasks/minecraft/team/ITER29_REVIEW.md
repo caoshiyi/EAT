@@ -1,3 +1,11 @@
+
+## First current-iteration sandbox death — 2026-10-19 04:23:06 UTC
+
+G29-4 SB244 completedsource/forward+retreat/output and canonicaldeath independently inspected. Actualsurface traverse reached(10.6005,58,-24.6386), HP10→5.5 forwardguardrefusal04:21:54.140 before intendedbaseending/target interaction. Explicitretreatexists andran; furtherHP loss/death04:21:58 canonicalEnderman at(-6.2,58,-24.8), returnedrespawnOW20HP/empty04:21:59.986. Killer established; initial4.5HPdamage and exactaggro cause not isolated, do not inventlook/collision/cloudcausality. Plannedreturn didnotretainbody; no crystalattack/effect. This is firstcurrentSBdeath, distinctfromprior28SB208. LIVE remainsEnd10HP/Snow1/194stone/wood28.
+
+PriorSB2437.6s refusedvisibleheadroom(-12,52,-11) aftertwoactualcuts, retainedsamehome10HP/three10FULL;244changedheadroombranch then encounteredmateriallydifferent surfacehazard. LatergeometrymodelP4chat10926–28 is hypotheticalray/coverevidence, noactualblast/survivalqualification orcausalcontributionto244. NewcurrentG4bodyemptyrespawn supersedespreviousfreshcopy10HP. Pre40“noSBdeath” wastrueatitscapture; thisdatedoverrideupdatesthatclaim.
+
+---
 # Iteration29 complete provisional independent review — 2026-10-19 04:20:24 UTC
 
 The objective remains unmet. Own opening evaluator03:40 reports dragon=0, milestones=11/12, deaths182/programs11633 after save-all connection refusal: LAST-SAVED evidence. Informational sixcrystals/dragon200 is not synchronized live health. Fresh LIVE11686 at04:15:34.057 confirms sixactualcrystals and retained p2End50/10HP17food/Snow1/194stone/wood28. P4 is emptyOW55/20HP/Dirt2; p1/p3 unplayed. No new LIVE effect/delivery/physicalencounteradoption or death is established. No victory endorsed.
@@ -81,3 +89,11 @@ Important preparation/return uncertainties were resolved, but the central blocki
 Support's realadoptions: measuredSandheight/landingcontracts and passiveBossBarobserver; no live usefuluse yet. The newpassiveplayerdamageobserver is supplied/syntheticfixtureonly, notadoptedcauseevidence. RecordP4 fundingcorrection27prefix→newcaller25+3=28 insteadoftransferringoldcaller cuts, and its honestG1clearshaft≠G2geometrywarning.
 
 Comparison captured withinseconds of04:19:41. Reviewer is noapprovalgate, givesnotactics, requestsnorepetitivereport. Complete provisional review follows now; final105–110 checksremain05:24:41–05:29:41.
+
+04:27:50 UTC G29-5 READY10935–36 at04:24:25(.6copy/15.4total/exactinstantunknown), oldG4deathdiscardednotrecovered. Actual24537.713s preparationdigabort56 before surface/downlookchange; three10FULL25:08.355/.604/.856/post09.107/50/10HP/wood37/Snow1.246 completed45.433s, actualbase(30.5682,58,-24.5509)/10HP16food/Snow1/199stone/wood42/shovel5 at04:26:49.927; three10FULL49.176/.426/.676, reachedtrue, nofailure. Newactualretainedsandboxbase access, not pillar/crystalinteraction/returnhome/wholecompletion. Changeddownlook traversalpassedthiscase; not causalproofpreviousdeathwaslook-induced or universalEndermanavoidance. Playerdamageobserver actuallyadopted246/rows[]/cleanuptrue; changed-health sampling stilluntested. Ownreadsourcependingbeforeclaimingfullobserveraudit. LIVEunchanged.
+
+## First live physical attempt — 2026-10-19 04:29:32 UTC
+
+LIVE11699 fullcompletedoutput/source-diff vsG5SB246 independently inspected: onlyextraexactsourcematchingadmission differs. Actualpreparationfireballdigabort04:28:34.989 at57 BEFOREsurface, reachedfalse/no targetinteraction. Three10FULL39.912/40.162/.414, post40.664 home50/10HP16food/Snow1/203stone/wood39/shovel5. Newretainedpartialliveaccess/cuts andactualwholeescape are real; sandboxbase30/downlooksurface capability didNOTtransfer inthisattempt. No crystalremoval ordragonhit, livekitretainedandfinitewear/foodspent. Passiveplayerdamageobserver actuallyusedLIVE/rows[]/cleanuptrue; fullhelperreadconfirmedpassivestatecopyonly, no changedhealthevent qualified. No freshofficialevalneededwithoutcrediblecompletionclaim.
+
+Ownrecent1diff retrievalguardrefusedbecauseSBrecordmoved; boundedrecent5exact-IDsplitthen succeeded. No sourceexecution/worldactionbyreviewer. Original04:14–30crystalpilotbudgethasnotproducedcrystalinteraction; partialadoptionisnotwholepass.

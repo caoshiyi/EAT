@@ -3623,3 +3623,15 @@ Important preparation/return uncertainties were resolved, but the central blocki
 Support's realadoptions: measuredSandheight/landingcontracts and passiveBossBarobserver; no live usefuluse yet. The newpassiveplayerdamageobserver is supplied/syntheticfixtureonly, notadoptedcauseevidence. RecordP4 fundingcorrection27prefix→newcaller25+3=28 insteadoftransferringoldcaller cuts, and its honestG1clearshaft≠G2geometrywarning.
 
 Comparison captured withinseconds of04:19:41. Reviewer is noapprovalgate, givesnotactics, requestsnorepetitivereport. Complete provisional review follows now; final105–110 checksremain05:24:41–05:29:41.
+
+## First current-iteration sandbox death — 2026-10-19 04:23:06 UTC
+
+G29-4 SB244 completedsource/forward+retreat/output and canonicaldeath independently inspected. Actualsurface traverse reached(10.6005,58,-24.6386), HP10→5.5 forwardguardrefusal04:21:54.140 before intendedbaseending/target interaction. Explicitretreatexists andran; furtherHP loss/death04:21:58 canonicalEnderman at(-6.2,58,-24.8), returnedrespawnOW20HP/empty04:21:59.986. Killer established; initial4.5HPdamage and exactaggro cause not isolated, do not inventlook/collision/cloudcausality. Plannedreturn didnotretainbody; no crystalattack/effect. This is firstcurrentSBdeath, distinctfromprior28SB208. LIVE remainsEnd10HP/Snow1/194stone/wood28.
+
+PriorSB2437.6s refusedvisibleheadroom(-12,52,-11) aftertwoactualcuts, retainedsamehome10HP/three10FULL;244changedheadroombranch then encounteredmateriallydifferent surfacehazard. LatergeometrymodelP4chat10926–28 is hypotheticalray/coverevidence, noactualblast/survivalqualification orcausalcontributionto244. NewcurrentG4bodyemptyrespawn supersedespreviousfreshcopy10HP. Pre40“noSBdeath” wastrueatitscapture; thisdatedoverrideupdatesthatclaim.
+
+## First live physical attempt — 2026-10-19 04:29:32 UTC
+
+LIVE11699 fullcompletedoutput/source-diff vsG5SB246 independently inspected: onlyextraexactsourcematchingadmission differs. Actualpreparationfireballdigabort04:28:34.989 at57 BEFOREsurface, reachedfalse/no targetinteraction. Three10FULL39.912/40.162/.414, post40.664 home50/10HP16food/Snow1/203stone/wood39/shovel5. Newretainedpartialliveaccess/cuts andactualwholeescape are real; sandboxbase30/downlooksurface capability didNOTtransfer inthisattempt. No crystalremoval ordragonhit, livekitretainedandfinitewear/foodspent. Passiveplayerdamageobserver actuallyusedLIVE/rows[]/cleanuptrue; fullhelperreadconfirmedpassivestatecopyonly, no changedhealthevent qualified. No freshofficialevalneededwithoutcrediblecompletionclaim.
+
+Ownrecent1diff retrievalguardrefusedbecauseSBrecordmoved; boundedrecent5exact-IDsplitthen succeeded. No sourceexecution/worldactionbyreviewer. Original04:14–30crystalpilotbudgethasnotproducedcrystalinteraction; partialadoptionisnotwholepass.

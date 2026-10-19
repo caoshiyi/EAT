@@ -23,3 +23,9 @@ CurrentSB override: G29-2 SB241 reviewed04:08, hazardabort beforecontact→rapid
 Minute40 comparison04:19:41+: no newLIVEeffect/adoption/delivery/death. Real bounded SBpreparation/return gains, butcontactretiredwithoutattack; damage/repeatability unresolved. G4READY04:16:40(.6copy/16.0total) copiesLIVE10HP/wood28; G3injury discardednothealed. Newcrystalpilot is prospective, entireeffect/retention/reusechainuntested. FreshLIVE11686 at04:15:34.057 stillsix/50/10HP/Snow1/194stone/wood28.
 
 Completeprovisional published04:20 before90; final105–110 checks stilldue. Minute40written04:19:59=18slate. P4courierretirement10921–23 says2.3km is inheritednarrative, notfreshmeasurement; no wholetransport/receipt.
+
+IMPORTANT currentoverride04:23: G29-4 SB244 firstcurrentSBdeath, canonical04:21:58 Enderman(-6.2,58,-24.8). ActualsurfaceHP10→5.5 thenretreatfailed/death; no targetinteraction. ReturnedOW20HPempty, nothealthyretainedEndbody. Fullforward/retreatsourceandcanonicaleventsread; initialdamage/aggrocauseunisolated. LIVEunchanged. Prior243visibilityrefusalretainedhome10HP.
+
+04:28 currentSB: G29-5 SB246 actualretainedeastbase(30.5682,58,-24.5509)/10HP16food/Snow1/199stone/wood42, three10FULL04:26:49.176/.426/.676/post49.927. Newbaseaccess, no pillar/crystalattack/effect; previous245prepabortretainedhome10HP. Publicplayerdamageobserverusedrows[]/cleanuptrue. G5resetREADY04:24:25(.6/15.4s) replacesdeathnotrecovery. LIVEunchanged.
+
+CURRENT LIVE override04:30:11699 actualpreparationhazardabort57 BEFOREsurface, retainedhome50/10HP16food/Snow1/203stone/wood39; three10FULL04:28:39.912/40.162/.414/post40.664. SourcevsSB246onlyextraexactadmission. Partialliveaccess+escapeadopted, notbase/surface/crystalcapability orscoreeffect. ObserverusedLIVEemptyrows/cleanup, changed-eventunqualified.
