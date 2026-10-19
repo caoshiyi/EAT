@@ -1,0 +1,208 @@
+{
+  "at": "2026-10-19T01:36:32.552Z",
+  "elapsedMs": 145907,
+  "state": {
+    "at": "2026-10-19T01:36:32.552Z",
+    "p": {
+      "x": -10.31377291282555,
+      "y": 50,
+      "z": -10.49986916767467
+    },
+    "hp": 10,
+    "food": 17,
+    "dim": "the_end",
+    "ground": true,
+    "inv": [
+      [
+        "sandstone",
+        1
+      ],
+      [
+        "cobbled_deepslate",
+        14
+      ],
+      [
+        "blackstone",
+        30
+      ],
+      [
+        "wooden_pickaxe",
+        1
+      ],
+      [
+        "nether_bricks",
+        6
+      ],
+      [
+        "stone_sword",
+        1
+      ],
+      [
+        "stick",
+        1
+      ],
+      [
+        "mossy_stone_bricks",
+        7
+      ],
+      [
+        "cracked_stone_bricks",
+        1
+      ],
+      [
+        "stone_bricks",
+        9
+      ],
+      [
+        "snowball",
+        2
+      ],
+      [
+        "crafting_table",
+        1
+      ],
+      [
+        "stone_shovel",
+        1
+      ],
+      [
+        "basalt",
+        21
+      ],
+      [
+        "end_stone",
+        62
+      ],
+      [
+        "sand",
+        2
+      ],
+      [
+        "end_stone",
+        33
+      ],
+      [
+        "end_stone",
+        64
+      ],
+      [
+        "stone_pickaxe",
+        1
+      ]
+    ],
+    "wear": [
+      [
+        "wooden_pickaxe",
+        3,
+        59
+      ],
+      [
+        "stone_sword",
+        2,
+        131
+      ],
+      [
+        "stone_shovel",
+        5,
+        131
+      ],
+      [
+        "stone_pickaxe",
+        102,
+        131
+      ]
+    ],
+    "controls": {
+      "forward": false,
+      "back": false,
+      "left": false,
+      "right": false,
+      "jump": false,
+      "sprint": false,
+      "sneak": false
+    },
+    "goal": null
+  },
+  "fired": true,
+  "targetPresent": false,
+  "events": [
+    {
+      "at": "2026-10-19T01:35:58.806Z",
+      "event": "earlyfireball",
+      "player": {
+        "x": -15.499934686249462,
+        "y": 57,
+        "z": 17.46435275289747
+      },
+      "e": {
+        "id": 922,
+        "name": "dragon_fireball",
+        "p": {
+          "x": 10.105435769333885,
+          "y": 75.6322594556135,
+          "z": -0.17026392781287747
+        },
+        "velocity": {
+          "x": -0.07150000000000001,
+          "y": -0.0495,
+          "z": 0.049125
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T01:35:59.255Z",
+      "event": "snowspawn",
+      "e": {
+        "id": 924,
+        "name": "snowball",
+        "p": {
+          "x": -15.499934686249462,
+          "y": 59.68610926421647,
+          "z": 17.508832015884302
+        },
+        "velocity": {
+          "x": -0.40800000000000003,
+          "y": 1.5905,
+          "z": 0.167
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T01:36:01.926Z",
+      "event": "gone",
+      "e": {
+        "id": 262,
+        "name": "end_crystal",
+        "p": {
+          "x": -33.5,
+          "y": 89,
+          "z": 24.5
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "at": "2026-10-19T01:36:01.982Z",
+      "event": "gone",
+      "e": {
+        "id": 924,
+        "name": "snowball",
+        "p": {
+          "x": -31.620454452707623,
+          "y": 91.01075997261793,
+          "z": 24.108325150643783
+        },
+        "velocity": {
+          "x": -0.246875,
+          "y": -0.22262500000000002,
+          "z": 0.101
+        }
+      }
+    }
+  ],
+  "loaded_crystal_count": 7
+}
