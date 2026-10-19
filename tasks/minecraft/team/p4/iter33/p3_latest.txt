@@ -1,0 +1,52 @@
+== #12382 2026-10-19T11:49:56 p3 role=independent_operator iter=33 3 s
+const p=bot.entity.position,V=p.constructor;console.log('SOURCE',p,bot.health,bot.food);for(const q of [new V(2,63,89),new V(3,63,89)]){const b=bot.blockAt(q);console.log('SNOW',q,b.name,b.getProperties());if(b.name==='snow'){await bot.dig(b);await bot.waitForTicks(3);}}await bot.lookAt(new V(5.5,64.62,89.5),true);bot.setControlState('forward',true);bot.setControlState('jump',true);await bot.waitForTicks(12);bot.clearControlStates();await bot.waitForTicks(10);console.log('END',bot.entity.position,bot.health,bot.food,bot.entity.onGround);
+-- output --
+SOURCE Vec3 { x: 2.3, y: 63, z: 89.43782685611473 } 20 20
+SNOW Vec3 { x: 2, y: 63, z: 89 } snow { layers: '1' }
+SNOW Vec3 { x: 3, y: 63, z: 89 } snow { layers: '1' }
+END Vec3 { x: 4.074355034094265, y: 63, z: 89.44357348850447 } 20 20 true
+== #12383 2026-10-19T11:50:17 p3 role=independent_operator iter=33 6.2 s
+const V=bot.entity.position.constructor,target=new V(19.5,67,111.5);console.log('SOURCE',bot.entity.position,bot.health,bot.food);
+const m=new Movements(bot);m.canDig=true;m.allow1by1towers=false;m.allowParkour=true;m.allowSprinting=false;m.maxDropDown=3;m.scafoldingBlocks=[];m.entitiesToAvoid=new Set(['creeper','zombie','skeleton','witch','spider']);bot.pathfinder.setMovements(m);let reason='budget',best=bot.entity.position.distanceTo(target),bad=0;const f=r=>console.log('PATH',r.status,r.path?.length);bot.on('path_update',f);bot.pathfinder.setGoal(new goals.GoalNear(19,67,111,2));
+try{for(let k=0;k<400;k++){await bot.waitForTicks(1);if(k%40===0){const d=bot.entity.position.distanceTo(target);console.log('MOVE',k,bot.entity.position,bot.health,d);if(d<best-.5){best=d;bad=0}else bad++;if(bad>=4){reason='net_stall';break;}}if(bot.health<16){reason='hurt';break;}if(bot.entity.position.distanceTo(target)<3&&bot.entity.onGround){reason='tree';break;}}
+}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('path_update',f);}
+console.log('TRAVEL_END',reason,bot.entity.position,bot.health,bot.food);
+if(reason==='tree'){const b=bot.blockAt(new V(19,67,111));console.log('LOG_SOURCE',b.name,b.position);if(b.name==='spruce_log'&&bot.canDigBlock(b)){await bot.dig(b);await bot.waitForTicks(25);console.log('ACTUAL_INVENTORY',bot.inventory.items().map(i=>[i.name,i.count]));}}
+console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));
+-- output --
+SOURCE Vec3 { x: 4.074355034094265, y: 63, z: 89.44357348850447 } 20 20
+PATH partial 16
+PATH partial 19
+MOVE 0 Vec3 { x: 3.976814404301832, y: 63, z: 89.45305152058309 } 20 27.258709219120313
+PATH partial 23
+PATH partial 23
+PATH partial 23
+PATH success 24
+MOVE 40 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+PATH partial 19
+PATH partial 22
+PATH success 23
+MOVE 80 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+MOVE 120 Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 27.89728836532706
+TRAVEL_END net_stall Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 20
+END Vec3 {
+  x: 2.285980668359466,
+  y: 64.16610926093821,
+  z: 89.73063391214208
+} 20 20 [ [ 'dirt', 2 ], [ 'sand', 1 ] ]

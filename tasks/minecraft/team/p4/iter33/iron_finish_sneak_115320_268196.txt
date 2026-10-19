@@ -1,0 +1,104 @@
+program #12409 on p4: 16.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:53:20.386Z","p":{"x":61.500135521897946,"y":61,"z":121.27310958061138},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,46],["crafting_table",1,null],["cobblestone",7,null]],"time":7064,"faces":[{"q":{"x":61,"y":60,"z":121},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":121},"n":"stone","full":true},{"q":{"x":62,"y":61,"z":121},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":121},"n":"stone","full":true},{"q":{"x":60,"y":61,"z":121},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":121},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":122},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":122},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":120},"n":"air","full":false},{"q":{"x":61,"y":62,"z":120},"n":"air","full":false}]}
+NATIVE_MOVE {"at":"2026-10-19T11:53:20.690Z","p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,46],["crafting_table",1,null],["cobblestone",7,null]],"time":7084}
+SETTLED_BOUNDS {"p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"minZ":121.16158781492398,"maxZ":121.76158781492397}
+PLACE {"q":{"x":61,"y":62,"z":120},"name":"cobblestone","state":{"at":"2026-10-19T11:53:20.989Z","p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,46],["crafting_table",1,null],["cobblestone",6,null]],"time":7084}}
+PLACE {"q":{"x":61,"y":61,"z":120},"name":"cobblestone","state":{"at":"2026-10-19T11:53:21.288Z","p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,46],["crafting_table",1,null],["cobblestone",5,null]],"time":7084}}
+CUT {"q":{"x":61,"y":62,"z":122},"n":"stone","state":{"at":"2026-10-19T11:53:22.094Z","p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,47],["crafting_table",1,null],["cobblestone",5,null]],"time":7104}}
+CUT {"q":{"x":61,"y":61,"z":122},"n":"stone","state":{"at":"2026-10-19T11:53:22.895Z","p":{"x":61.50004117563682,"y":61,"z":121.46158781492397},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,48],["crafting_table",1,null],["cobblestone",6,null]],"time":7124}}
+NATIVE_MOVE {"at":"2026-10-19T11:53:23.949Z","p":{"x":61.4999998097342,"y":61,"z":122.4939318455399},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,48],["crafting_table",1,null],["cobblestone",7,null]],"time":7144}
+PLACE {"q":{"x":61,"y":62,"z":121},"name":"cobblestone","state":{"at":"2026-10-19T11:53:24.650Z","p":{"x":61.4999998097342,"y":61,"z":122.4939318455399},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,48],["crafting_table",1,null],["cobblestone",6,null]],"time":7164}}
+PLACE {"q":{"x":61,"y":61,"z":121},"name":"cobblestone","state":{"at":"2026-10-19T11:53:24.951Z","p":{"x":61.4999998097342,"y":61,"z":122.4939318455399},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,48],["crafting_table",1,null],["cobblestone",5,null]],"time":7164}}
+CUT {"q":{"x":61,"y":62,"z":123},"n":"stone","state":{"at":"2026-10-19T11:53:25.751Z","p":{"x":61.4999998097342,"y":61,"z":122.4939318455399},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,49],["crafting_table",1,null],["cobblestone",5,null]],"time":7184}}
+CUT {"q":{"x":61,"y":61,"z":123},"n":"stone","state":{"at":"2026-10-19T11:53:26.553Z","p":{"x":61.4999998097342,"y":61,"z":122.4939318455399},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,50],["crafting_table",1,null],["cobblestone",6,null]],"time":7204}}
+NATIVE_MOVE {"at":"2026-10-19T11:53:27.558Z","p":{"x":61.499989892585305,"y":61,"z":123.4615183745279},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,50],["crafting_table",1,null],["cobblestone",7,null]],"time":7224}
+PLACE {"q":{"x":61,"y":62,"z":122},"name":"cobblestone","state":{"at":"2026-10-19T11:53:28.259Z","p":{"x":61.499989892585305,"y":61,"z":123.4615183745279},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,50],["crafting_table",1,null],["cobblestone",6,null]],"time":7224}}
+PLACE {"q":{"x":61,"y":61,"z":122},"name":"cobblestone","state":{"at":"2026-10-19T11:53:28.559Z","p":{"x":61.499989892585305,"y":61,"z":123.4615183745279},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,50],["crafting_table",1,null],["cobblestone",5,null]],"time":7244}}
+CUT {"q":{"x":61,"y":62,"z":124},"n":"stone","state":{"at":"2026-10-19T11:53:29.312Z","p":{"x":61.499989892585305,"y":61,"z":123.4615183745279},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,51],["crafting_table",1,null],["cobblestone",5,null]],"time":7244}}
+CUT {"q":{"x":61,"y":61,"z":124},"n":"stone","state":{"at":"2026-10-19T11:53:30.116Z","p":{"x":61.499989892585305,"y":61,"z":123.4615183745279},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,52],["crafting_table",1,null],["cobblestone",6,null]],"time":7264}}
+NATIVE_MOVE {"at":"2026-10-19T11:53:31.168Z","p":{"x":61.499948526682715,"y":61,"z":124.49386240426945},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,52],["crafting_table",1,null],["cobblestone",7,null]],"time":7284}
+PLACE {"q":{"x":61,"y":62,"z":123},"name":"cobblestone","state":{"at":"2026-10-19T11:53:31.870Z","p":{"x":61.499948526682715,"y":61,"z":124.49386240426945},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,52],["crafting_table",1,null],["cobblestone",6,null]],"time":7304}}
+PLACE {"q":{"x":61,"y":61,"z":123},"name":"cobblestone","state":{"at":"2026-10-19T11:53:32.172Z","p":{"x":61.499948526682715,"y":61,"z":124.49386240426945},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,52],["crafting_table",1,null],["cobblestone",5,null]],"time":7304}}
+CUT {"q":{"x":61,"y":62,"z":125},"n":"stone","state":{"at":"2026-10-19T11:53:33.023Z","p":{"x":61.499948526682715,"y":61,"z":124.49386240426945},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,53],["crafting_table",1,null],["cobblestone",5,null]],"time":7324}}
+CUT {"q":{"x":61,"y":61,"z":125},"n":"iron_ore","state":{"at":"2026-10-19T11:53:34.424Z","p":{"x":61.499948526682715,"y":61,"z":124.49386240426945},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",6,null]],"time":7344}}
+NATIVE_MOVE {"at":"2026-10-19T11:53:35.426Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",6,null],["raw_iron",1,null]],"time":7364}
+PLACE {"q":{"x":61,"y":62,"z":124},"name":"cobblestone","state":{"at":"2026-10-19T11:53:36.143Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",5,null],["raw_iron",1,null]],"time":7384}}
+PLACE {"q":{"x":61,"y":61,"z":124},"name":"cobblestone","state":{"at":"2026-10-19T11:53:36.446Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",4,null],["raw_iron",1,null]],"time":7384}}
+IRON_ACTUAL {"at":"2026-10-19T11:53:36.446Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",4,null],["raw_iron",1,null]],"time":7384}
+ENDING {"at":"2026-10-19T11:53:36.446Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",4,null],["raw_iron",1,null]],"time":7384,"faces":[{"q":{"x":61,"y":60,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T11:53:36.597Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",4,null],["raw_iron",1,null]],"time":7404,"faces":[{"q":{"x":61,"y":60,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T11:53:36.748Z","p":{"x":61.49993860953382,"y":61,"z":125.46144893223754},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stick",1,null],["spruce_planks",2,null],["wooden_sword",1,0],["coal",3,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,54],["crafting_table",1,null],["cobblestone",4,null],["raw_iron",1,null]],"time":7404,"faces":[{"q":{"x":61,"y":60,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":61,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":61,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:53:36.897Z",
+ "p": {
+  "x": 61.49993860953382,
+  "y": 61,
+  "z": 125.46144893223754
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   1,
+   null
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   3,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   8
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   54
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   4,
+   null
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ]
+ ],
+ "time": 7404
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (61.5, 61, 125.5) in overworld, health 5.9/20, food 17/20, alive

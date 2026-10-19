@@ -128,3 +128,5 @@ Iteration32 opening causal reviewer — 2026-10-19: **unavailable**. No authoriz
 Iteration33 P4 opening checkpoint — 2026-10-19 11:43 UTC: token usage unavailable from an authorized available session-history source. No estimate.
 
 Iteration33 P4 local capability checkpoint — 2026-10-19 11:50 UTC: token usage unavailable from an authorized available session-history source. No estimate. Includes failed shovel funding, failed log pickup/wait, successful edge release, failed pathfinder pockets and successful native alternative; raw receipts retained.
+
+Iteration33 P4 shield checkpoint — 2026-10-19 11:58 UTC: token usage unavailable from an authorized available session-history source. No estimate. Actual raw→ingot→shield/equip chain retained; failures remain in owned raw receipts.

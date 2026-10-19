@@ -1,0 +1,76 @@
+program #12442 on p4: 0.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T11:56:24.364Z","p":{"x":61.498072446882894,"y":62,"z":125.49999307647789},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["coal",2,null],["iron_ingot",1,null],["cobblestone",2,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,64]],"time":10744,"faces":[{"q":{"x":61,"y":61,"z":125},"n":"cobblestone","full":true},{"q":{"x":61,"y":64,"z":125},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"crafting_table","full":true},{"q":{"x":62,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":124},"n":"stone","full":true}]}
+FAILURE Error: cut type cobblestone
+ENDING {"at":"2026-10-19T11:56:24.366Z","p":{"x":61.498072446882894,"y":62,"z":125.49999307647789},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["coal",2,null],["iron_ingot",1,null],["cobblestone",2,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,64]],"time":10744,"faces":[{"q":{"x":61,"y":61,"z":125},"n":"cobblestone","full":true},{"q":{"x":61,"y":64,"z":125},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"crafting_table","full":true},{"q":{"x":62,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":124},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T11:56:24.417Z","p":{"x":61.498072446882894,"y":62,"z":125.49999307647789},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["coal",2,null],["iron_ingot",1,null],["cobblestone",2,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,64]],"time":10744,"faces":[{"q":{"x":61,"y":61,"z":125},"n":"cobblestone","full":true},{"q":{"x":61,"y":64,"z":125},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"crafting_table","full":true},{"q":{"x":62,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":124},"n":"stone","full":true}]}
+ENDING {"at":"2026-10-19T11:56:24.569Z","p":{"x":61.498072446882894,"y":62,"z":125.49999307647789},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["stone_sword",1,0],["spruce_planks",2,null],["wooden_sword",1,0],["coal",2,null],["iron_ingot",1,null],["cobblestone",2,null],["wooden_shovel",1,8],["wooden_pickaxe",1,6],["spruce_sapling",1,null],["stone_pickaxe",1,64]],"time":10764,"faces":[{"q":{"x":61,"y":61,"z":125},"n":"cobblestone","full":true},{"q":{"x":61,"y":64,"z":125},"n":"cobblestone","full":true},{"q":{"x":62,"y":62,"z":125},"n":"crafting_table","full":true},{"q":{"x":62,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":62,"z":125},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":125},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":126},"n":"stone","full":true},{"q":{"x":61,"y":62,"z":124},"n":"cobblestone","full":true},{"q":{"x":61,"y":63,"z":124},"n":"stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T11:56:24.720Z",
+ "p": {
+  "x": 61.498072446882894,
+  "y": 62,
+  "z": 125.49999307647789
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "spruce_planks",
+   2,
+   null
+  ],
+  [
+   "wooden_sword",
+   1,
+   0
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "iron_ingot",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   2,
+   null
+  ],
+  [
+   "wooden_shovel",
+   1,
+   8
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   6
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   64
+  ]
+ ],
+ "time": 10764
+}
+--- chat since this player's previous program ---
+p2: 12426 generator actual finalstatus timeout for3candidates; east219/72/346 produced50node partial ending215/71/342 near target, west2 ended191/69/312. Selecting observed EAST detour one-hop, current geometry refreshed beforeuse,35s net guard; not declaring 
+p2: partial noPath. Current full20HP18berries retained. Small runneract.py inspected12419 passed canonicalID/raw receipts; no infrastructure modified.
+--- p4 now: (61.5, 62, 125.5) in overworld, health 5.9/20, food 17/20, alive
