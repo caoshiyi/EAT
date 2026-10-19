@@ -1,0 +1,34 @@
+== #14492 2026-10-19T21:59:23 p2 role=experiment_operator iter=38 3.8 s
+const {Vec3}=require('vec3'),v=(x,y,z)=>new Vec3(x,y,z),wait=n=>bot.waitForTicks(n);
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}
+async function move(q){const t=Date.now(),hp=bot.health;for(const dy of[0,1])if(bot.blockAt(q.offset(0,dy,0))?.boundingBox!=='empty')throw Error('BLOCKED '+q.offset(0,dy,0));try{while(Date.now()-t<2300){const p=bot.entity.position,dist=Math.hypot(q.x+.5-p.x,q.z+.5-p.z);if(dist<.12&&p.y===q.y&&bot.entity.onGround)break;if(bot.health<hp)throw Error('HP');await bot.lookAt(v(q.x+.5,p.y+bot.entity.eyeHeight,q.z+.5),true);bot.setControlState('forward',dist>.08);await wait(1);}}finally{stop();}await wait(4);if(!bot.entity.position.floored().equals(q)||!bot.entity.onGround)throw Error('POST');}
+stop();try{
+if(bot.entity.position.y!==50)throw Error('SOURCE');
+await move(v(-3,50,2));await move(v(-3,50,3));
+const peer=bot.players.p1?.entity;if(!peer||peer.position.y!==50||peer.position.distanceTo(v(-2.5,50,4.5))>.7)throw Error('P1_NOT_POD');
+await bot.lookAt(peer.position.offset(0,.2,0),true);await wait(2);
+for(const name of['stone_axe','stone_pickaxe','end_stone']){const item=bot.inventory.items().find(i=>i.name===name);if(!item)throw Error('MISSING '+name);await bot.toss(item.type,null,name==='end_stone'?16:1);}
+await move(v(-3,50,2));await wait(45);
+console.log('DONOR_SETTLED_NOT_RECEIPT',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count])}));bot.chat('P2 qualifiedSOUTHcourier end now: donorsettled inventorychecked; please nativeP1receipt. P2backnorthrow; no terrainedits.');
+}catch(e){console.log('FAILED_ACTUAL_HOLDER',String(e),JSON.stringify({p:bot.entity.position,inv:bot.inventory.items().map(i=>[i.name,i.count])}));}finally{stop();}
+-- output --
+DONOR_SETTLED_NOT_RECEIPT {"at":"2026-10-19T21:59:27.424Z","p":{"x":-2.5051439286555293,"y":50,"z":2.3},"hp":20,"inv":[["snowball",1],["crafting_table",1]]}
+== #14493 2026-10-19T21:59:47 p2 role=experiment_operator iter=38 0 s
+bot.chat("P2 actualnativeSTATUS21:59:30 verifies P1 AXE1/PICK1/E16/GRAVEL2 RECEIVED, P2 onlyTable1/Snow1. Delivery14492 southgate+immediateretreat WORKED within2minbudget;14487sidebySide failedrepick/14491pilotguardrefused no toss. Tools actualusepending; primaryfree resumeonehit. P2protectednorthrow.")
+== #14494 2026-10-19T21:59:50 p1 role=primary_operator iter=38 0 s
+bot.chat("P1 NATIVE14489 receivedAxeWear1/Pick0/E16/gravel2, HP20. LaunchONEaxe immediateDrop now180smax; Endstone ownbuilder avoids gravelconsumption, support/roof unchanged; P2thanksnativechainclosed receipt/usepending.")
+== #14496 2026-10-19T22:00:00 p3 role=field_partner iter=38 120 s
+const wait=n=>bot.waitForTicks(n);
+const state=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal});
+function stop(){bot.pathfinder.setGoal(null);bot.clearControlStates();}
+const watchMs=120000;
+stop();await bot.lookAt(bot.entity.position.offset(0,-.5,0),true);const sourceState=state();console.log('SOURCE',JSON.stringify({at:sourceState.at,p:sourceState.p,hp:sourceState.hp,food:sourceState.food}));
+const p1Initial=Object.values(bot.entities).find(e=>e.username==='p1')?.metadata?.[9];
+const start=Date.now(),rows=[],events=[],groups={};let hp=null,p1hp=null,seenPhase=null,lastSample=0;const snap=()=>{const d=Object.values(bot.entities).find(e=>e.name==='ender_dragon'),p=Object.values(bot.entities).find(e=>e.username==='p1');return {at:new Date().toISOString(),elapsed:Date.now()-start,ownHP:bot.health,p3:bot.entity.position.clone(),p1:p?{p:p.position.clone(),hp:p.metadata?.[9],ground:p.onGround}:null,dragon:d?{p:d.position.clone(),hp:d.metadata?.[9],phase:d.metadata?.[16]}:null};};
+while(Date.now()-start<watchMs){const r=snap(),d=r.dragon;if(d){if(d.hp!==hp||r.p1?.hp!==p1hp||d.phase!==seenPhase){const ev={at:r.at,elapsed:r.elapsed,dragon:d,p1:r.p1,p3:r.p3,ownHP:r.ownHP};events.push(ev);if(hp!==null&&d.hp<hp)bot.chat('P3 independentDragonHP '+hp.toFixed(3)+'->'+d.hp.toFixed(3)+' actual; P1HP'+r.p1?.hp+' P3HP'+bot.health+' bait50retained.');console.log('CHANGE',JSON.stringify(ev));hp=d.hp;p1hp=r.p1?.hp;seenPhase=d.phase;}const key=r.p1?String(Math.round(r.p1.p.y*2)/2):'absent';const g=groups[key]??={n:0,minRootY:Infinity,minRoot:null};g.n++;if(d.p.y<g.minRootY){g.minRootY=d.p.y;g.minRoot=d.p.clone();g.at=r.at;}if(Date.now()-lastSample>=200&&rows.length<450){rows.push(r);lastSample=Date.now();}}
+if(p1Initial!==undefined&&(!r.p1||r.p1.hp<p1Initial)){bot.chat('P3 OBSERVED P1health/discontinuity '+p1Initial+'->'+r.p1?.hp+' at'+r.p1?.p?.toString()+'; checkingactualworld before action.');console.log('P1_CONTEXT_CHANGE',JSON.stringify(r));break;}if(bot.health<20){console.log('BAIT_HURT',JSON.stringify(r));break;}if(d?.hp<=0){console.log('DRAGON_ZERO_OBSERVED',JSON.stringify(r));break;}await wait(1);}
+global.p3BaitWatch={start,events,groups,rows,ending:snap(),state:state()};console.log('RESULT',JSON.stringify({start,ending:global.p3BaitWatch.ending,changes:events.length,samples:rows.length,groups:Object.fromEntries(Object.entries(groups).map(([k,v])=>[k,{n:v.n,minRootY:v.minRootY}]))}));stop();
+-- output --
+SOURCE {"at":"2026-10-19T22:00:00.371Z","p":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"hp":20,"food":20}
+CHANGE {"at":"2026-10-19T22:00:00.371Z","elapsed":0,"dragon":{"p":{"x":16.48025108180562,"y":62.977746711351024,"z":3.838878579573887},"hp":11.354598999023438,"phase":1},"p1":{"p":{"x":-3.527587890624972,"y":52.5,"z":4.5},"hp":20,"ground":true},"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"ownHP":20}
+RESULT {"start":1792447200371,"ending":{"at":"2026-10-19T22:02:00.376Z","elapsed":120005,"ownHP":20,"p3":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"p1":{"p":{"x":-3.527487341293514,"y":52.5,"z":4.5},"hp":20,"ground":true},"dragon":{"p":{"x":14.470479798085076,"y":74.1878216128339,"z":20.677019578928594},"hp":11.354598999023438,"phase":1}},"changes":1,"samples":450,"groups":{"52.5":{"n":2387,"minRootY":56.57637952385102}}}

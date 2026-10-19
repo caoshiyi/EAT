@@ -1,14 +1,13 @@
-# Iteration38 current — 2026-10-19 21:54 UTC
-Objective UNMET. Opening evaluator 21:52:08: **dragon=0, milestones=11/12, deaths=225**; repeat capture~21:54: deaths226; save refused, LAST-SAVED. Saved dragon18/200 informational; latest prior native14451 measured17.854599 alive21:47:51. Current native HP reconciliation pending operators.
+# Iteration38 current —22:02 UTC
+Objective UNMET. Official opening/repeat~21:54 **dragon0 / milestones11/12 / deaths226**, saveREFUSED/LAST-SAVED (stale after P1death). Latest native14496 **Dragon11.354599 alive22:02:00**; iteration6.5damage/twoAxe hits. No additional effect or victory yet.
 
-| Actual owner/body | Latest observed state (21:53 UTC) | Active / next action |
+| Owner/body | Current actual state | Active / next action |
 |---|---|---|
-| primary_operator / p1 | End(-3.5,52.5,4.5), HP20 food20, axe/pick/sword/shovel retained |14458 active; autonomous bounded continuation underway |
-| experiment_operator / p2 | End(-2.5,50,2.3), HP20 food20, Snow1 | 14461 active at repeat snapshot; bounded diagnosis of current bottleneck |
-| field_partner / p3 | End(-4.6,50,4.5), HP20 food20, supplies retained | 14460 active at repeat snapshot; current shared contract/independent observation |
-| p4 UNPLAYED | OW(140.3,-35,2232.3), HP5.2 food17 empty (repeat snapshot) | no controller/program; skeleton death21:52:02 observed |
-| evidence_coordinator | no body or player programs | read-only monitoring; next scheduled eval~22:12 or apparent victory |
+| primary_operator/p1 | End(-3.5,52.5,4.5), HP20 food20, replacementAxe/Pick/E12/Gravel2 |14495 active134s; own changed bounded attempt/end |
+| experiment_operator/p2 | End(-2.5,50,2.3), HP20 food20, Table1/Snow1 | no active; bounded current opportunity-vs-execution question by22:07 (NOTICE.md) |
+| field_partner/p3 | End(-4.6,50,4.5), HP20 food20, retained supplies |14496 observer ended22:02; fixedlow contract |
+| p4 UNPLAYED | OW(140.3,-35,2232.5), HP5.2 food17 empty | no controller/program; opening skeleton death |
 
-Configuration verified in agent_team/iter_38/team_config.md; arena confirms all three assigned claims. Launch markers21:51:55.570Z +120min => deadline **23:51:55Z**, final-five23:46:55. No coordinator approval gate or additional agents.
+P1death21:57:10 followed actual healthyLOW return14481 at21:59:01. Replacement P3→P2→P1 native receipt14492/14065 verified21:59:30 after initial toss re-pickup; equipped/use underway, damage pending. Prior fatal14466 ending remains failure despite6.5damage. Immediate primary restart improved (8s after first healthy ending), but recovery cost~3min. Unresolved: changed attempt effect+ending; current reachable opportunity classification. No approval/proof/supply hold.
 
-Unresolved: current native dragon HP/effects and14458 ending; p1/p3 current collaboration acceptance; unplayed p4 remains exposed (observation only). Score is saved-state-limited; no victory inference from estimates. Next primary action belongs to p1 without optional-supply/review hold. Full opening reflection/evolution in coordinator/OPENING.md; earlier narrative archived there.
+Deadline **23:51:42Z** actual env; final-five23:46:42. Coordinator eval~22:12/apparent victory/closing. Shared contract14025/27 unchanged. Evidence/review archived in iter38/coordinator/; no coordinator body programs.

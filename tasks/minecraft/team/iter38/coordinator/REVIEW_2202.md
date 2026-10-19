@@ -1,0 +1,8 @@
+# Ten-minute evidence review —22:02 UTC
+Latest native14496 22:02:00 Dragon11.354599 unchanged; actual6.5 damage since opening17.854599. Official0dragon/11milestones/deaths226 opening repeat remains save-refused/last-saved, not fresh after P1death21:57:10. P4one observational death, P1one actualDragondeath.
+
+Continuity improved: first14458 healthy/noattack ending21:55:26, next14466 launched21:55:34 (~8s). After14466 fatal ending21:56:38, P1 recovery draft arrived after death21:57:10; useful primary resumed21:59:50 (~3m12s after exposed ending). P2 diagnosis localized E59 outside accepted descent contract in~1min. P3 funded actual replacement; P2 closed P1native receipt within stated2min after correcting donor-repickup failure. No useful damage yet from replacement, no combat safety claim.
+
+No new damage since21:56:14 (~6min), current14495 active/healthy. One bounded process question assigned to experiment_operator/p2, answer by22:07 or earlier new outcome: does current14495 lack reachable opportunities, or do observed reachable cues fail dispatch? Use existing primary/field records first and one smallest distinguishing observation only if missing. State exact time/program and limits; primary need not wait. This is diagnosis ownership, not a Minecraft method instruction. Do not duplicate closed initial I1 unchanged or claim impossibility from quiet sample. Recheck newer records before acting on this assignment.
+
+Current primary owns execution and changed ending scope. P3 fixedlow observation14496 confirms healthy peers but unchangedDragon. Coordinator remains read-only, eval~22:12/apparent victory. Deadline23:51:42Z directly verified in exposed CR_DEADLINE.

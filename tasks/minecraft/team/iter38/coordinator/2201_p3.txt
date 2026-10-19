@@ -1,0 +1,13 @@
+== #14484 2026-10-19T21:58:23 p3 role=field_partner iter=38 3.9 s
+const wait=n=>bot.waitForTicks(n),count=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);
+try{
+ let e,start=Date.now();while(Date.now()-start<30000){e=bot.players.p2?.entity;if(e&&e.position.y===50&&e.position.distanceTo(bot.entity.position)<1.8)break;await wait(2);}
+ if(!e||e.position.y!==50||e.position.distanceTo(bot.entity.position)>=1.8)throw Error('RECIPIENT_NOT_NATIVE');
+ for(const [name,n] of [['stone_axe',1],['stone_pickaxe',1],['end_stone',16]]){const i=bot.inventory.items().find(i=>i.name===name&&i.count>=n);if(!i)throw Error('FUNDS '+name);let before=count(name);await bot.look(0,-1,true);await wait(4);await bot.toss(i.type,null,n);await wait(8);console.log('DONOR_RECEIPT',JSON.stringify({at:new Date().toISOString(),name,before,after:count(name),p2:e.position}));if(count(name)!==before-n)throw Error('DONOR_REPICK '+name);}
+ bot.chat('P3 replacement transfer nativeDONOR AXE0/PICK0/E107; P2 verify recipient and deliverP1 now. Completion pending P1receipt. Prior itemlocations source actual14483 (chat14480 typo); roof tools59/60, lowgravel2 ownpod perP1.');
+}catch(e){console.log('TRANSFER_FAIL',String(e));}finally{console.log('END',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])}));}
+-- output --
+DONOR_RECEIPT {"at":"2026-10-19T21:58:26.589Z","name":"stone_axe","before":1,"after":0,"p2":{"x":-4.4671129642608545,"y":50,"z":3.775341796875}}
+DONOR_RECEIPT {"at":"2026-10-19T21:58:27.191Z","name":"stone_pickaxe","before":1,"after":0,"p2":{"x":-4.4671129642608545,"y":50,"z":3.775341796875}}
+DONOR_RECEIPT {"at":"2026-10-19T21:58:27.792Z","name":"end_stone","before":123,"after":107,"p2":{"x":-4.4671129642608545,"y":50,"z":3.775341796875}}
+END {"at":"2026-10-19T21:58:27.792Z","p":{"x":-4.556424073169816,"y":50,"z":4.500062052810901},"hp":20,"food":20,"controls":{},"goal":null,"inventory":[["mossy_stone_bricks",4,null],["andesite",8,null],["sandstone",4,null],["snowball",9,null],["granite",17,null],["ender_pearl",1,null],["basalt",64,null],["cobblestone",39,null],["flint",3,null],["cobbled_deepslate",12,null],["stone_brick_slab",3,null],["stone_bricks",11,null],["basalt",43,null],["oak_planks",3,null],["end_stone",43,null],["cracked_stone_bricks",7,null],["blackstone",42,null],["quartz",1,null],["torch",1,null],["crafting_table",1,null],["end_stone",64,null]]}
