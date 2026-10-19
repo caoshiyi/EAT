@@ -64,7 +64,7 @@ def crossing(radius, angle, model):
     return None
 
 
-def plan(origin, target, model):
+def plan(origin, target, model, eye_offset=.1):
     radius = math.hypot(target[0] - origin[0], target[2] - origin[2])
     if radius < .01:
         raise ValueError('Need nonzero horizontal separation')
@@ -83,8 +83,17 @@ def plan(origin, target, model):
                 else:
                     lo = mid
             angle = (lo + hi) / 2
-            roots.append({'elevation_degrees': angle, 'flight_ticks': crossing(radius, angle, model)[1],
-                          'look_point_from_eye_0_1_above_origin': [target[0], origin[1] + .1 + radius * math.tan(math.radians(angle)), target[2]]})
+            yaw_x, yaw_z = (target[0] - origin[0]) / radius, (target[2] - origin[2]) / radius
+            velocity = [model['speed'] * math.cos(math.radians(angle)) * yaw_x,
+                        model['speed'] * math.sin(math.radians(angle)),
+                        model['speed'] * math.cos(math.radians(angle)) * yaw_z]
+            flight = crossing(radius, angle, model)[1]
+            path = [advance(origin, velocity, step, model['drag'], model['gravity'])[0]
+                    for step in range(math.ceil(flight) + 1)]
+            roots.append({'elevation_degrees': angle, 'flight_ticks': flight,
+                          'eye_offset_above_projectile_origin': eye_offset,
+                          'look_point': [target[0], origin[1] + eye_offset + radius * math.tan(math.radians(angle)), target[2]],
+                          'predicted_path_points_each_model_tick': path})
     return {'origin': origin, 'target': target, 'horizontal_distance': radius, 'required_rise': dy,
             'maximum_predicted_rise_at_radius': best[1][0], 'best_angle': best[0], 'solutions': roots,
             'warning': 'Conditional on same launch speed/physics; no dispersion, block collision, reach, visibility, damage or safety proof. Owner must independently qualify actual outgoing aperture and observe one sandbox shot/retained ending.'}
@@ -95,9 +104,11 @@ if __name__ == '__main__':
     parser.add_argument('record')
     parser.add_argument('--origin', nargs=3, type=float)
     parser.add_argument('--target', nargs=3, type=float)
+    parser.add_argument('--eye-offset', type=float, default=.1,
+                        help='Observed eye height above projectile spawn origin; old trial was 0.1')
     args = parser.parse_args()
     model = load_model(args.record)
     result = {'source': args.record, 'scope': 'Public arena flight observations only', 'model': model}
     if args.origin and args.target:
-        result['plan'] = plan(args.origin, args.target, model)
+        result['plan'] = plan(args.origin, args.target, model, args.eye_offset)
     print(json.dumps(result, indent=2))
