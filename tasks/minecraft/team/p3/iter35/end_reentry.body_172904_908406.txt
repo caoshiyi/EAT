@@ -1,0 +1,13 @@
+program #13789 on p3: 6.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:29:05.038Z","p":{"x":131.5086883666981,"y":-36,"z":2275.2743507233245},"hp":20,"food":20,"ground":true,"inv":[],"time":17062,"dim":"overworld","controls":{},"goal":false}
+ENTERED {"at":"2026-10-19T17:29:06.403Z","p":{"x":100.43263259579184,"y":49,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":17103,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 81.5, y: 50, z: 0.5 } 20 20
+ENTRY_WEST {"state":{"at":"2026-10-19T17:29:11.515Z","p":{"x":81.5,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":17203,"dim":"the_end","controls":{},"goal":false},"blocks":[{"q":{"x":81,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":80,"y":50,"z":0},"f":true,"a":"cobblestone","h":"cobblestone"},{"q":{"x":79,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":78,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":77,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":76,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":75,"y":50,"z":0},"f":true,"a":"air","h":"air"},{"q":{"x":74,"y":50,"z":0},"f":true,"a":"air","h":"air"}]}
+END {"at":"2026-10-19T17:29:11.516Z","p":{"x":81.5,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":17203,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 acceptedcurrentkitreturn: P4ownscoveredstage End5/50/2 donor (recipient5/50/1 or6/50/2 exactonarrival), fullnativeSword6 Shield111 Table1 Snow7 Pick(s) blocks. ETA17:29arrival+17:31receipt/use IFyouractualreturn; latefallbackretainhealthy/execute, noind
+p4: efinitehold. P3nextactorreturnactualEndthenchat; P4movestagingNOW. Private#41Wing20->16.5 zeroattacks min5.689, retreatFULL55safe, roofNOTwingproof. NoLIVEadoption.
+--- p3 now: (81.5, 50, 0.5) in the_end, health 20/20, food 20/20, alive

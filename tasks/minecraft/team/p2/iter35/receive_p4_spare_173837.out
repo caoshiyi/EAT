@@ -1,0 +1,57 @@
+program #13822 on p2: 61.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:37:36.237Z","p":{"x":7.5,"y":50,"z":3.500326381426742},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null]],"time":3303,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PATH_STATUS Vec3 { x: 9, y: 50, z: 3 } success
+ROUTE_WORLD {"at":"2026-10-19T17:37:37.101Z","p":{"x":9.5,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null]],"time":3323,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"dim":"the_end"}
+NATIVE_RECEIPT {"at":"2026-10-19T17:38:37.120Z","p":{"x":9.5,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",1,null]],"time":4523,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAIL Error: incompletePacket
+ENDING {"at":"2026-10-19T17:38:37.120Z","p":{"x":9.5,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",1,null]],"time":4523,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:38:37.270Z","p":{"x":9.5,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",1,null]],"time":4523,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+ENDING {"at":"2026-10-19T17:38:37.419Z","p":{"x":9.5,"y":50,"z":3.50032638142657},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["end_stone",1,null]],"time":4523,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":9,"y":49,"z":3},"n":"end_stone","full":true},{"q":{"x":9,"y":52,"z":3},"n":"end_stone","full":true},{"q":{"x":10,"y":50,"z":3},"n":"air","full":false},{"q":{"x":10,"y":51,"z":3},"n":"air","full":false},{"q":{"x":8,"y":50,"z":3},"n":"air","full":false},{"q":{"x":8,"y":51,"z":3},"n":"air","full":false},{"q":{"x":9,"y":50,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":4},"n":"end_stone","full":true},{"q":{"x":9,"y":50,"z":2},"n":"end_stone","full":true},{"q":{"x":9,"y":51,"z":2},"n":"end_stone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T17:38:37.571Z",
+ "p": {
+  "x": 9.5,
+  "y": 50,
+  "z": 3.50032638142657
+ },
+ "hp": 20,
+ "food": 20,
+ "ground": true,
+ "inv": [
+  [
+   "cobblestone",
+   1,
+   null
+  ],
+  [
+   "end_stone",
+   1,
+   null
+  ]
+ ],
+ "time": 4523,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p1: Closing evaluator ownEVAL_CLOSING17:36: forcedsaveFAILED/LASTSAVED dragon0 milestones11 deaths216(p1 67/p264/p339/p446), crystals0/HP185saved. Own11.5LIVE51stable. G9practice43 deepHEADslot51 controlPASS33s/full11.5 NOATTACK, effectCENSOREDmin25.72/current
+p1: perch6->4->0/high72+ elsewhere; noqualifiedlowpass, noLiveadoption. LastnewhypclosestpointblockedvsalternativewithinREALinnercore remainsUNTESTEDcontact, notimpossible. OwnreadonlyLIVE60swatch thenactualbody/handoff/commit; healthyP3executionstillpriority.
+p4: P2 actualANYpick>=10uses ACCEPTED now: ONLYownStonePick20 (111usesleft) viaEXACTtossStack item, NOTtype-toss; giveyouStone20 +End24/Basalt24/N2 foractualnativeequip/dig/use lower50safecapability. RequiredNO55center. ActualdonorP4 at1.6/50/4.5 currently, re
+p4: cipientYOU1.5/50/3.5. P3STILL6/50/2 so6/2pickupblockedbythirdbody; useNEWquietlane1/3 avoidsP3. YOURnextactor no-digroute via5/50/2 ->1/50/2 ->1/50/3 allactualclearednew50corridor/floor49guard; arrivalchat thenDOWNpitchSnow1testnativeack. Completiongate17:
+p4: 39 inventory+USE, fallbackretainifblocked. IkeepWoodPick6 (53uses) forownhealthybody. P3 actual13807kitreceipt/Shield111offhand/Pick110->112alreadyUSEconfirmed, nofurtherrecipientwaitrequested.
+p3: P3 actual13807 COMPLETEkitnativeSword6 Shield111 Pick110->112 USED2Endstonecuts/Table/N7/E27/Snow7, healthy20/20. P1lowroot58counterexampleADOPTED: cancelUP55/old57, notqualifiedcurrent. Actualprotected50 twentysecondcurrentflightprofile NOW, chooseactualh
+p3: eight/field; roof/roomdoesNOTblockDragonwing. P4P2recoveryremainsoleownerwithactualrootguard, noUP55waiting.
+p4: P2 CROSSMSG resolvedYOURactual9/50/3 acceptancewins: P4comingDONOR8/50/3 now, deliverWoodPick6+E24+N2 exactYOURacceptedoffer; keepownStone20. Disregard1/3moveandStone20upgrade. No mutualwaiting: P4movesNOW ~15s, YOUremain9/3 throughEnd1test+bulk/use. Nativ
+p4: e50route no55room.
+p4: P2 actualdonor8/50/3 EndONEdownpitchtestDONE debit148->147; confirmnativeYOUEnd1thenWoodPick6 exacttossStack+E23+N2 bulk, stay9/3. P3noaction.
+--- p2 now: (9.5, 50, 3.5) in the_end, health 20/20, food 20/20, alive

@@ -1,0 +1,1 @@
+const {Vec3}=require('vec3');console.log('ENDERMAN_FRONT',JSON.stringify({t:new Date().toISOString(),p:bot.entity.position,rows:Object.values(bot.entities).filter(e=>e.name==='enderman'&&e.position.distanceTo(new Vec3(.5,60,4.5))<18).map(e=>({id:e.id,p:e.position,d:e.position.distanceTo(new Vec3(.5,60,4.5)),meta:e.metadata}))}));

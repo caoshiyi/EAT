@@ -1,0 +1,22 @@
+program #13800 on p3: 71.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:31:44.814Z","p":{"x":5.473174930082429,"y":50,"z":1.6008364260804342},"hp":20,"food":20,"ground":true,"inv":[],"time":20263,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 6.3333874622033335, y: 50, z: 2.5260921490006707 } 20 20
+TINY_RECEIPT {"at":"2026-10-19T17:32:11.326Z","p":{"x":6.519352870610318,"y":50,"z":2.511763844969756},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null]],"time":20803,"dim":"the_end","controls":{},"goal":false}
+BULK_RECEIPT {"at":"2026-10-19T17:32:56.378Z","p":{"x":6.519352870610318,"y":50,"z":2.511763844969756},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",1,null]],"time":21703,"dim":"the_end","controls":{},"goal":false}
+END {"at":"2026-10-19T17:32:56.378Z","p":{"x":6.519352870610318,"y":50,"z":2.511763844969756},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",1,null]],"time":21703,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: CORRECTION VOIDwarning13790: LIVE77/z0 floor49 FULL observedfoodstageandYOUR13789, LIVE75/z1 alsoNOTdug. ThoseVOIDshafts were PRIVATEG2/G3 ONLY; I mixedcontext. NoLiveintentionaldeath/noholesdug. Followactualfloorchecks. Actual13790 arrived5/50/2 HP20/20ki
+p4: t, sealFAILED Cobble at5/50/3 notfull; programENDED. Recipientyouactual46->7/3 healthyseen. Iopen6/50/2 now forYOURcoveredarrival, noDROPuntilnativewithin3 anddoorclear. Receipt17:31 stilltarget.
+p4: P4 actualdoor6/50+51/2 AIR, donor5.5/50/2.5 healthy20 kit. P3move6.5/50/2.5 coveredthenchatREADY andremainstationary; littleSnow1testnext, nootherplayernear.
+p4: P3 actualYOU at(5.473174930082429, 50, 1.6008364260804342) acceptedSTAYthere, disregard6/2suggestion. SnowONEtestthrowdirecttowardYOURcurrenteyeNOW. Youownnativeinventoryack; nootherbodypickup.
+p4: P3 Snow1DONORdebit11->10 actualthrowdone; pleaseYOURnativeSnow count beforebulk, remainactualrecipient.
+[server] p2 was slain by Ender Dragon
+p4: 17:31receiptgateMISSED tinytestnativeSnow0; BULKnotthrown. ActualdropAudit13798 Snow1LANDED5.474/50/0.125, overshotYOU5/50/1.601 beyondpickup. P3nextactor nativeONEstepNorth5/50/0 (floor49FULLactual) collectSnow1thenRETURN5/50/1 andack. BulkchangedpitchDOW
+p4: NtowardYOURfeet toshortenflight; tinytestrequiresactualnative1first. DeadlineRENEGOTIATE17:33 receipt+equip/UPuse ifready, fallbackretainkit. URGENT P2death17:31:04 Dragonat0.5/55/4.5 actualkitdropsSword0/Shield0 etc55loaded, expiry17:36:04. Afterourtest/f
+p4: ullreceipt Icanowncoveredrecoveryfrom55; P2currentOWnotassumeready.
+p4: P3 actualYOU at(6.519352870610318, 50, 2.511763844969756) acceptedSTAYthere6/2, disregardoldNorthpickuprequest. SnowONEtestthrowdirecttowardYOURcurrenteyeNOW. Youownnativeinventoryack; nootherbodypickup.
+p4: P3 Snow1DONORdebit10->9 actualthrowdone; pleaseYOURnativeSnow count beforebulk, remainactualrecipient.
+--- p3 now: (6.5, 50, 2.5) in the_end, health 20/20, food 20/20, alive

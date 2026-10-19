@@ -1,0 +1,37 @@
+program #13783 on p3: 17.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:27:52.325Z","p":{"x":143.5,"y":-36,"z":2231.5},"hp":20,"food":20,"ground":true,"inv":[],"time":15622,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 139, y: -36, z: 2255 } success 24
+LEG {"at":"2026-10-19T17:27:59.441Z","p":{"x":139.49974634086766,"y":-36,"z":2255.2475938289685},"hp":20,"food":20,"ground":true,"inv":[],"time":15762,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 131, y: -36, z: 2255 } success 8
+LEG {"at":"2026-10-19T17:28:01.650Z","p":{"x":131.5,"y":-36,"z":2255.5002519370246},"hp":20,"food":20,"ground":true,"inv":[],"time":15802,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 130, y: -36, z: 2256 } success 1
+LEG {"at":"2026-10-19T17:28:02.507Z","p":{"x":130.6675228304477,"y":-36,"z":2256.5263667382073},"hp":20,"food":20,"ground":true,"inv":[],"time":15822,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 130, y: -36, z: 2265 } success 9
+LEG {"at":"2026-10-19T17:28:04.862Z","p":{"x":130.49942949161357,"y":-36,"z":2265.3490455142005},"hp":20,"food":20,"ground":true,"inv":[],"time":15862,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 128, y: -36, z: 2266 } success 2
+LEG {"at":"2026-10-19T17:28:05.914Z","p":{"x":128.5,"y":-36,"z":2266.5630660358256},"hp":20,"food":20,"ground":true,"inv":[],"time":15882,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 128, y: -36, z: 2272 } success 6
+LEG {"at":"2026-10-19T17:28:07.567Z","p":{"x":128.49957130432648,"y":-36,"z":2272.3786642792284},"hp":20,"food":20,"ground":true,"inv":[],"time":15922,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 129, y: -36, z: 2272 } success 1
+LEG {"at":"2026-10-19T17:28:08.067Z","p":{"x":129.346231648633,"y":-36,"z":2272.483039710296},"hp":20,"food":20,"ground":true,"inv":[],"time":15922,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 131, y: -36, z: 2272 } success 2
+LEG {"at":"2026-10-19T17:28:08.818Z","p":{"x":131.2814111184288,"y":-36,"z":2272.4945564512977},"hp":20,"food":20,"ground":true,"inv":[],"time":15942,"dim":"overworld","controls":{},"goal":false}
+PLAN Vec3 { x: 131, y: -36, z: 2275 } success 3
+LEG {"at":"2026-10-19T17:28:09.770Z","p":{"x":131.5086883666981,"y":-36,"z":2275.265514686895},"hp":20,"food":20,"ground":true,"inv":[],"time":15962,"dim":"overworld","controls":{},"goal":false}
+PORTAL_NEAR [{"x":133,"y":-38,"z":2275},{"x":133,"y":-38,"z":2276},{"x":133,"y":-38,"z":2277},{"x":134,"y":-38,"z":2275},{"x":134,"y":-38,"z":2276},{"x":134,"y":-38,"z":2277},{"x":135,"y":-38,"z":2275},{"x":135,"y":-38,"z":2276},{"x":135,"y":-38,"z":2277}]
+END {"at":"2026-10-19T17:28:09.780Z","p":{"x":131.5086883666981,"y":-36,"z":2275.265514686895},"hp":20,"food":20,"ground":true,"inv":[],"time":15962,"dim":"overworld","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P1 Berryreceipt+eat+HP16.5to18.5 actual13769ADOPTED, closedaccepteddependency. P2CLEARED10/23, returnedactualfountain0/55/4 ENDSTONEsealed. FreshLIVE13777 phase1root12.8/77/29.4 HP187.23; privateperch6notLIVEproof. Iownfountainbackup readactualperchphase+g
+p2: eometry, no58/60blindwait.
+p1: P1 ordinarySwordattack CALLED source10/57/25 realbodypoint<=3; actualHP/Swordwearpending.
+[server] p3 was slain by Zombie
+p4: IndependentLIVEaudit13779 confirmsP1effect: Root187.2296->184.9796 at17:27:15.624 (2.25actualHP), phase1unchangedfull30s. P1South10/57 modeledphysicalmin2.835 atRoot11.334/61.347/27.620; P4South15/58 min1.999 Root13.801/61.519/25.266 at17:27:16.124, hypoth
+p4: eticaldistanceONLYnotclearshot. Fountain0/60/4min9.265; East4/58/0min9.631 currentpass. P4noLIVEattack. Ownprivate#40 roof60onehighslit59controlPASS feet58->55full20/20; #41actual30scontact runningprivate, nobroadqualification. Kitdelivery17:27 is CONDITIO
+p4: NALactualP3EndETA, noETAyet soP4remains15cover notmovingfar.
+p1: ACTUALSUCCESS P1LIVE13776 normalSword2.9576mclear at10/57/25 root9.7757/61.4408/28.1612, hurt17:27:15.330 Sword0->1; fresh13780actualDragon184.9796 vs187.2296, own18.5/17FULL55 healthy. LOWER57_ADOPTION_PACKET.md exactonecase south10_lower57_combat.js. P4o
+p1: ptionaladaptOWN12simple57/twoNdrop+firstHPdrop/gazecone (preserve11shared), nohalfstep/noSlabdig. Ownboundedbatch150s<=8hits>=700mslocal/650msshared now; healthyonecase NOTuniversalsafety. P2 independentPERCH_FORWARD_PACKET: OWNpracticeactual6 bodyfeet0/6
+p1: 0/4.5 modeled3.263m, onecellnorth3.5->2.416m ifactualfloor59/Endroof62/currentclear; noLiveperchclaim.
+--- p3 now: (131.5, -36, 2275.3) in overworld, health 20/20, food 20/20, alive

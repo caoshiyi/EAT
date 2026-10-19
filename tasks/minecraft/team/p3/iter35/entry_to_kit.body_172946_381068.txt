@@ -1,0 +1,26 @@
+program #13791 on p3: 40.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T17:29:46.512Z","p":{"x":81.5,"y":50,"z":0.5},"hp":20,"food":20,"ground":true,"inv":[],"time":17903,"dim":"the_end","controls":{},"goal":false}
+CUT Vec3 { x: 80, y: 51, z: 0 } cobblestone
+CUT Vec3 { x: 80, y: 50, z: 0 } cobblestone
+MOVE Vec3 { x: 75.67555927102164, y: 50, z: 0.5 } 20 20
+KIT_PATH success 70 [
+  [ 10.5, 50, 3.5 ],
+  [ 9.5, 50, 3.5 ],
+  [ 8.5, 50, 3.5 ],
+  [ 7.5, 50, 2.5 ],
+  [ 6.5, 50, 2.5 ],
+  [ 5.5, 50, 1.5 ]
+]
+END {"at":"2026-10-19T17:30:26.902Z","p":{"x":5.473174930082429,"y":50,"z":1.6095860120471261},"hp":20,"food":20,"ground":true,"inv":[],"time":18703,"dim":"the_end","controls":{},"goal":false,"faces":[{"q":{"x":5,"y":49,"z":1},"n":"end_stone","full":true},{"q":{"x":5,"y":52,"z":1},"n":"end_stone","full":true},{"q":{"x":6,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":6,"y":51,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":50,"z":1},"n":"end_stone","full":true},{"q":{"x":4,"y":51,"z":1},"n":"end_stone","full":true},{"q":{"x":5,"y":50,"z":2},"n":"air","full":false},{"q":{"x":5,"y":51,"z":2},"n":"air","full":false},{"q":{"x":5,"y":50,"z":0},"n":"air","full":false},{"q":{"x":5,"y":51,"z":0},"n":"air","full":false}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P3 actualstage13788 FAILEDdryendpoint at12/55/23 full20 kitretained, NOTstillrunning. YouractualEnd95nowseen. OwnsealedNorthcorridorblockedno-dig; clearingactual12/z22..0 nativecoveredNOW, revisedarrival17:30:30, receipt17:31samegate. YOU nextcontinueEndco
+p4: rridorto7/50/3 butSTOPthere, own5/2doorstillsealeduntilarrival. NoVOIDmain75/z1SIDESHAFTand77/z0 shaftwarn! Main75/z0fullfloor49, detour77shaft usez3corridor44..7.
+p2: P1PERCH_FORWARD_PACKET ACCEPTED privategeometryqualification only; exact G5map35 source3 floor59BEDROCK but Roof62/3 AIR and side60/61 bothAIR, notprotectedyet. Changednativeplan: closedtube5UP60 ->checkcurrentfar/noEnderman ->open3door ->onecellforwardnat
+p2: ive3/60, placeEndstoneRoof62/3 againstNOWvisibleNORTHfaceRoof62/4 ->back4/center/gates/drop55. Smallprivatecontrolonly beforeanyLIVEadoption, notblindmove. LIVE13785 model60s completed HP17.5stable, phase1ALL/noPerch; bestsource4/feet60 physical4.490m clea
+p2: r9.625m soNOattackadmissible. LiveHP184.9796 confirmsP1hit independently. P3actualEndreturnADOPTED, P4solekitcourier; P2fountainbackupdoesnotduplicate.
+p1: P1batch13786 ended62s healthy18.5/17/full55/Sword1, ZEROattacks stoppedEndermanCONEmatch; NOTproofvisiblehazard oldguardomittedblockLOS. ChangedbeforeRepeat: cameraONLYrotatetoactualclearphysical<=3 attackpoint (nevertrackfarDragon); coneFACEblockraylogged
+p1:  andabortonlyunblockedEndermanface. Retainsfirstdamage2Ndrop. New150s8hit batchnow. P3return20/20 adopted; P4donorchainnoP1dup. P2PERCH_FORWARD_PACKET currentactualperchrequired notpermissiontowaitblind.
+--- p3 now: (5.5, 50, 1.6) in the_end, health 20/20, food 20/20, alive
