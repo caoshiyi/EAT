@@ -2,9 +2,10 @@
 // by tools/mc_arena.py, plus a third-person prismarine view per body. Started and supervised by `mc_arena.py up`.
 //
 // Environment: MC_DIR (.work/mc), MC_HOST/MC_PORT (the server), MC_API_SOCK (MC_DIR/run/api.sock: the API's unix
-// socket), MC_VIEW_PORT (3001: p1, 3002: p2, ...; 0: no views), MC_SANDBOX=1 (the practice sandbox's host: records go
-// to records/sandbox_*.jsonl marked sandbox, no flight recorder). Body locks (MC_DIR/locks.json) are shared by both
-// hosts. What a body may attack, use, dig or place on: sight.js.
+// socket), MC_VIEW_PORT (3001: p1, 3002: p2, ...; 0: no views), MC_SANDBOX=1 with MC_SANDBOX_SLOT=pN (pN's practice
+// sandbox's host: only pN runs programs, records go to records/sandbox_*.jsonl marked sandbox and slot, no flight
+// recorder). Body locks (MC_DIR/locks.json) are shared by all hosts. What a body may attack, use, dig or place on:
+// sight.js.
 'use strict'
 const fs = require('fs')
 const http = require('http')
@@ -26,6 +27,7 @@ const PORT = parseInt(process.env.MC_PORT || '25565')
 const API_SOCK = process.env.MC_API_SOCK || path.join(MC_DIR, 'run', 'api.sock')
 const VIEW_PORT = parseInt(process.env.MC_VIEW_PORT ?? '3001')
 const SANDBOX = process.env.MC_SANDBOX === '1'
+const SLOT = SANDBOX ? process.env.MC_SANDBOX_SLOT : null
 const PREFIX = SANDBOX ? 'sandbox_' : ''
 const VERSION = '1.20.4'
 const PLAYERS = ['p1', 'p2', 'p3', 'p4']
@@ -42,7 +44,7 @@ let recorder = null   // the flight recorder (flight.js), started once the bodie
 
 function now () { return new Date().toISOString() }
 function append (file, rec) {
-  fs.appendFileSync(path.join(RECORDS, PREFIX + file), JSON.stringify(SANDBOX ? { ...rec, sandbox: true } : rec) + '\n')
+  fs.appendFileSync(path.join(RECORDS, PREFIX + file), JSON.stringify(SANDBOX ? { ...rec, sandbox: true, slot: SLOT } : rec) + '\n')
 }
 function log (...a) { console.log(now(), ...a) }
 function r1 (x) { return Math.round(x * 10) / 10 }
@@ -170,7 +172,8 @@ for (const name of PLAYERS) {
 let programSeq = 0
 try {
   for (const line of fs.readFileSync(path.join(RECORDS, PREFIX + 'programs.jsonl'), 'utf8').split('\n')) {
-    if (line.trim()) programSeq = Math.max(programSeq, JSON.parse(line).n || 0)
+    const rec = line.trim() && JSON.parse(line)
+    if (rec && (!SANDBOX || rec.slot === SLOT)) programSeq = Math.max(programSeq, rec.n || 0)   // numbered per sandbox
   }
 } catch (e) { if (e.code !== 'ENOENT') throw e }
 
@@ -366,7 +369,14 @@ function peerAgent (sock) {
     const r = require('child_process').spawnSync('python3', ['-c', 'import socket,struct;s=socket.socket(fileno=3);' +
       'print(struct.unpack("3i",s.getsockopt(socket.SOL_SOCKET,socket.SO_PEERCRED,12))[0]);s.detach()'],
     { stdio: ['ignore', 'pipe', 'ignore', sock._handle.fd], encoding: 'utf8', timeout: 10000 })
-    let pid = r.stdout.trim()
+    return agentOf(r.stdout.trim())
+  } catch (e) {}
+  return null
+}
+// The agent above process pid (see peerAgent); null when none.
+function agentOf (pid) {
+  try {
+    pid = String(pid)
     if (!/^\d+$/.test(pid) || pid === '0') return null
     const id = p => `${p}:${fs.readFileSync(`/proc/${p}/stat`, 'utf8').split(') ')[1].split(' ')[19]}`
     const agents = []
@@ -384,6 +394,13 @@ function peerAgent (sock) {
 }
 
 function ownerName (o) { return `role '${o.role}'` + (o.iter ? ` (iteration ${o.iter})` : '') }
+function caller (req) { return { role: String(req.role), iter: req.iter ? String(req.iter) : '', agent: req.agent || null } }
+function sameOwner (o, me) { return o.role === me.role && o.iter === me.iter && (o.agent || null) === me.agent }
+// The body this caller controls (its lock), if any.
+function ownBody (locks, me) {
+  const own = Object.entries(locks).find(([p, o]) => sameOwner(o, me) || (me.agent && o.agent === me.agent))
+  return own ? own[0] : null
+}
 
 function refuse (req, reason) {
   append('programs.jsonl', { n: null, time: now(), iteration: req.iter || null, role: req.role, agent: req.agent || null, player: req.player,
@@ -396,9 +413,13 @@ async function runProgram (req) {
   if (!body) return { refused: `unknown player '${req.player}' (players: ${PLAYERS.join(', ')})` }
   if (typeof req.code !== 'string' || !req.code.trim()) return refuse(req, 'empty program')
   if (!req.role) return refuse(req, 'no role given (the CLI sends EAT_ROLE)')
+  if (SANDBOX && body.name !== SLOT) {
+    return refuse(req, `this is ${SLOT}'s sandbox: only ${SLOT} runs programs here (${body.name} stands idle); each ` +
+      'player practises in the sandbox of its own body')
+  }
   // the lock holds the agent process, not the role name it gives: a name can be set by anyone
-  const me = { role: String(req.role), iter: req.iter ? String(req.iter) : '', agent: req.agent || null }
-  const same = o => o.role === me.role && o.iter === me.iter && (o.agent || null) === me.agent
+  const me = caller(req)
+  const same = o => sameOwner(o, me)
   const why = withLocks(locks => {
     const held = locks[body.name]
     if (held && !held.agent && me.agent && held.role === me.role && held.iter === me.iter) {   // a lock from before agents were recorded
@@ -409,8 +430,8 @@ async function runProgram (req) {
       return `${body.name} is controlled by ${ownerName(held)} in this iteration; no other agent may run programs on it`
     }
     if (!held) {
-      const other = Object.entries(locks).find(([p, o]) => same(o) || (me.agent && o.agent === me.agent))
-      if (other) return `this agent already controls ${other[0]}; an agent controls only one body`
+      const other = ownBody(locks, me)
+      if (other) return `this agent already controls ${other}; an agent controls only one body`
     }
     if (body.running) {
       const r = body.running
@@ -576,6 +597,16 @@ const api = http.createServer(async (req, res) => {
     if (req.method === 'POST' && req.url === '/run') {
       const agent = peerAgent(req.socket)   // read before the body: the client may close as soon as it has sent it
       return send(200, await runProgram({ ...(await readBody(req)), agent }))
+    }
+    // the body a caller controls, for its sandbox: the caller is the connection's peer, or the supervisor names its own
+    // peer's pid
+    if (req.method === 'POST' && req.url === '/whoami') {
+      const sockAgent = peerAgent(req.socket)
+      const q = await readBody(req)
+      const me = caller({ ...q, role: q.role || 'manual', agent: q.pid ? agentOf(q.pid) : sockAgent })
+      const locks = readLocks()
+      return send(200, { agent: me.agent, player: ownBody(locks, me),
+        controlled: Object.fromEntries(PLAYERS.map(p => [p, !!locks[p]])) })
     }
     if (req.method === 'POST' && req.url === '/locks/clear') {
       withLocks(() => writeLocks({}))

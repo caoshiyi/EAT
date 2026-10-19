@@ -9,11 +9,13 @@
     mc_arena.py events [--type T] [--last N]              deaths, advancements, joins, restarts
     mc_arena.py programs [--player p1] [--last N] [--full]  programs run so far, with their output
 
-Practice sandbox (a throwaway copy of the world; nothing in it counts or flows back):
-    mc_arena.py sandbox reset                             make the sandbox a fresh copy of the world as it is now
-                                                          (bodies, inventories, health, the End, the dragon) and
-                                                          put the four bodies in it
-    mc_arena.py --sandbox run|say|status|chat|events|programs ...   the same commands, in the sandbox
+Practice sandbox (a throwaway copy of the world; nothing in it counts or flows back). Each player has its own: the
+sandbox of the body your agent controls, where only that body runs programs (the other three stand idle in it):
+    mc_arena.py sandbox reset [--player p1]               make your sandbox a fresh copy of the world as it is now
+                                                          (bodies, inventories, health, the End, the dragon) with
+                                                          the four bodies in it; --player names your body while
+                                                          your agent controls none yet (the reset claims nothing)
+    mc_arena.py --sandbox run|say|status|chat|events|programs ...   the same commands, in your sandbox
     (mc_arena.py sandbox run|status|... is the same as --sandbox run|status|...)
 
 A program is the body of an async function `(bot, Movements, goals, require, console)`: `bot` is a mineflayer bot with
@@ -27,14 +29,15 @@ program on a body owns that body for the iteration, and a role controls one body
 Harness only (agents never run these):
     mc_arena.py up       start the server and the bot host if they are not running, wait until every body is in the
                          game, then clear the body locks (a new iteration); a supervisor restarts either after a crash
-    mc_arena.py down     save the world, stop the bot host and the server (and the sandbox's, saving nothing back),
-                         confirm all exited
+    mc_arena.py down     save the world, stop the bot host and the server (and every sandbox's, saving nothing
+                         back), confirm all exited
 
-Records (.work/mc/records/): programs.jsonl, chat.jsonl, events.jsonl (the sandbox's: sandbox_*.jsonl); server
-output in .work/mc/logs/. The sandbox (server in .work/mc/sandbox/, its bot host on run/sandbox.sock) is run by the
-supervisor; `sandbox reset` asks it through run/control.sock. It never starts on its own and stops with `down`.
-Environment: MC_DIR (.work/mc), MC_API_SOCK (.work/mc/run/api.sock), MC_JAVA_MEM (6G), MC_SANDBOX_MEM (3G),
-EAT_ROLE, EAT_ITER.
+Records (.work/mc/records/): programs.jsonl, chat.jsonl, events.jsonl (the sandboxes': sandbox_*.jsonl, each row
+with its slot); server output in .work/mc/logs/. The sandboxes (slot pN: server in .work/mc/sandbox/pN/ on the main
+ports + 1 + k for pN = p(k+1), its bot host on run/sandbox_pN.sock) are run by the supervisor; `sandbox reset` asks it
+through run/control.sock. A sandbox never starts on its own and all stop with `down`.
+Environment: MC_DIR (.work/mc), MC_API_SOCK (.work/mc/run/api.sock), MC_JAVA_MEM (6G), MC_SANDBOX_MEM (3G per
+sandbox), MC_SANDBOX_PORT / MC_SANDBOX_RCON_PORT (p1's sandbox ports; pN's are + k), EAT_ROLE, EAT_ITER.
 """
 import argparse
 import hashlib
@@ -62,11 +65,11 @@ LOGS = MC / "logs"
 RUN = MC / "run"
 HOST_DIR = ROOT / "tools" / "mc_arena"
 API_SOCK = Path(os.environ.get("MC_API_SOCK", RUN / "api.sock"))   # the bot host's API (a unix socket: see bothost.js)
-SANDBOX = MC / "sandbox"                    # the practice sandbox's server; its world is SANDBOX/world
-SANDBOX_SOCK = RUN / "sandbox.sock"         # the sandbox bot host's API
+SANDBOX = MC / "sandbox"                    # the practice sandboxes' servers: slot pN's world is SANDBOX/pN/world
 CONTROL_SOCK = RUN / "control.sock"         # the supervisor's: sandbox reset
 SANDBOX_UP_TIMEOUT = 240                    # seconds a reset waits for the sandbox server and its bodies
 PREFIX = ""                                 # "sandbox_" under --sandbox: which records the commands read
+SLOT = None                                 # under --sandbox: the caller's sandbox (the body it controls)
 PLAYERS = ("p1", "p2", "p3", "p4")
 UP_TIMEOUT = 300           # seconds `up` waits for every body to be in the game
 UNRESPONSIVE = 60          # seconds without an API answer before the supervisor restarts the bot host
@@ -87,10 +90,17 @@ def read_jsonl(name: str) -> list[dict]:
     if p.exists():
         for line in p.read_text(errors="replace").splitlines():
             try:
-                out.append(json.loads(line))
+                rec = json.loads(line)
             except ValueError:
-                pass
+                continue
+            if not PREFIX or rec.get("slot") == SLOT:     # a sandbox's commands read that sandbox's rows only
+                out.append(rec)
     return out
+
+
+def sandbox_sock(slot: str) -> Path:
+    """The API of slot's sandbox bot host."""
+    return RUN / f"sandbox_{slot}.sock"
 
 
 class _UnixHTTP(http.client.HTTPConnection):
@@ -184,19 +194,20 @@ def offline_uuid(name: str) -> str:
     return str(uuid.UUID(bytes=hashlib.md5(f"OfflinePlayer:{name}".encode()).digest(), version=3))
 
 
-def spawn_server(srv: Path, mem: str, prefix: str, ready: threading.Event) -> subprocess.Popen:
-    """A vanilla server in srv; its output goes to logs/<prefix>server.log, chat and advancements to records."""
+def spawn_server(srv: Path, mem: str, prefix: str, ready: threading.Event, slot: str | None = None) -> subprocess.Popen:
+    """A vanilla server in srv; its output goes to logs/<prefix>[<slot>_]server.log, chat and advancements to records
+    (a sandbox's rows carry its slot)."""
     ready.clear()
     proc = subprocess.Popen(["java", f"-Xms{mem}", f"-Xmx{mem}", "-jar", "server.jar", "nogui"], cwd=srv,
                             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                             text=True, errors="replace", bufsize=1)
-    threading.Thread(target=read_server, args=(proc, prefix, ready), daemon=True).start()
+    threading.Thread(target=read_server, args=(proc, prefix, ready, slot), daemon=True).start()
     return proc
 
 
-def read_server(proc: subprocess.Popen, prefix: str, ready: threading.Event) -> None:
-    mark = {"sandbox": True} if prefix else {}
-    with open(LOGS / f"{prefix}server.log", "a") as out:
+def read_server(proc: subprocess.Popen, prefix: str, ready: threading.Event, slot: str | None) -> None:
+    mark = {"sandbox": True, "slot": slot} if prefix else {}
+    with open(LOGS / f"{prefix}{slot + '_' if slot else ''}server.log", "a") as out:
         for line in proc.stdout:
             out.write(line)
             out.flush()
@@ -216,10 +227,10 @@ def read_server(proc: subprocess.Popen, prefix: str, ready: threading.Event) -> 
                                                  "player": j[1], **mark})
 
 
-def spawn_host(srv: Path, prefix: str, env: dict) -> subprocess.Popen:
+def spawn_host(srv: Path, prefix: str, env: dict, slot: str | None = None) -> subprocess.Popen:
     """A bot host whose bodies join the server in srv."""
     env = dict(os.environ, MC_DIR=str(MC), MC_PORT=props(srv).get("server-port", "25565"), **env)
-    out = open(LOGS / f"{prefix}bothost.log", "a")
+    out = open(LOGS / f"{prefix}{slot + '_' if slot else ''}bothost.log", "a")
     proc = subprocess.Popen(["node", "bothost.js"], cwd=HOST_DIR, env=env, stdin=subprocess.DEVNULL,
                             stdout=out, stderr=subprocess.STDOUT)
     out.close()
@@ -238,7 +249,7 @@ def stop_proc(proc: subprocess.Popen | None, wait: float) -> None:
 
 class Supervisor:
     """Runs the server and the bot host; restarts either after a crash (the server from its latest save). Also runs
-    the practice sandbox (Sandbox) on request through run/control.sock."""
+    the practice sandboxes (one Sandbox per player) on request through run/control.sock."""
 
     def __init__(self):
         self.stopping = False
@@ -246,7 +257,8 @@ class Supervisor:
         self.host: subprocess.Popen | None = None
         self.ready = threading.Event()
         self.crashes: dict[str, list[float]] = {"server": [], "bothost": []}
-        self.sandbox = Sandbox(self)
+        self.sandboxes = {p: Sandbox(self, p) for p in PLAYERS}
+        self.copy_lock = threading.Lock()      # one copy of the main world at a time (save-off .. save-on)
         self.control: socket.socket | None = None
 
     def log(self, msg: str) -> None:
@@ -343,11 +355,12 @@ class Supervisor:
                 return
             start = time.time()
             rec = {"time": now(), "type": "sandbox_reset", "role": req.get("role"), "iteration": req.get("iter"),
-                   "peer_pid": peer, "sandbox": True}
+                   "peer_pid": peer, "sandbox": True, "slot": None}
             try:
-                self.sandbox.reset(lambda line: send({"log": line}))
+                rec["slot"] = slot = self.reset_slot(req, peer)
+                self.sandboxes[slot].reset(lambda line: send({"log": line}))
                 rec.update(ok=True, took_s=round(time.time() - start, 1))
-                send({"ok": True, "took_s": rec["took_s"]})
+                send({"ok": True, "took_s": rec["took_s"], "slot": slot})
             except Exception as e:  # noqa: BLE001
                 rec.update(ok=False, error=str(e), took_s=round(time.time() - start, 1))
                 self.log(f"sandbox reset failed: {e!r}")
@@ -357,6 +370,28 @@ class Supervisor:
             send({"error": f"bad request: {e}"})
         finally:
             conn.close()
+
+    def reset_slot(self, req: dict, peer: int) -> str:
+        """Whose sandbox a reset is for: the body the caller's agent controls (as the bot host sees the caller), else
+        the free body it names."""
+        try:
+            who = api("POST", "/whoami", {"pid": peer, "role": req.get("role"), "iter": req.get("iter")}, timeout=20)
+        except (OSError, ValueError) as e:
+            raise RuntimeError("the main world is not up (or restarting); try again in a minute") from e
+        named = req.get("player")
+        if named is not None and named not in PLAYERS:
+            raise RuntimeError(f"unknown player {named!r} (players: {', '.join(PLAYERS)})")
+        if who.get("player"):
+            if named and named != who["player"]:
+                raise RuntimeError(f"your agent controls {who['player']}: your sandbox is {who['player']}'s "
+                                   f"(--player must be your own body)")
+            return who["player"]
+        if not named:
+            raise RuntimeError("your agent controls no body yet: name the one you will play with "
+                               "`sandbox reset --player pN` (each player has its own sandbox)")
+        if who.get("controlled", {}).get(named):
+            raise RuntimeError(f"{named} is controlled by another agent; its sandbox is that agent's")
+        return named
 
     def run(self) -> int:
         RUN.mkdir(parents=True, exist_ok=True)
@@ -377,7 +412,8 @@ class Supervisor:
             self.sleep(2)
             if self.stopping:
                 break
-            self.sandbox.check()
+            for sb in self.sandboxes.values():
+                sb.check()
             if time.time() - checked > 60:     # first sighting of stat milestones (stats carry no time)
                 checked = time.time()
                 try:
@@ -421,8 +457,9 @@ class Supervisor:
         if self.control:
             self.control.close()
         CONTROL_SOCK.unlink(missing_ok=True)
-        with self.sandbox.lock:            # a reset in progress sees `stopping` and gives up
-            self.sandbox.stop()
+        for sb in self.sandboxes.values():
+            with sb.lock:                  # a reset in progress sees `stopping` and gives up
+                sb.stop()
         self.stop_host()
         self.stop_server()
         for name in ("bothost", "server", "supervisor"):
@@ -432,13 +469,17 @@ class Supervisor:
 
 
 class Sandbox:
-    """The practice sandbox: a second server (SANDBOX, same jar and properties but its own ports, MC_SANDBOX_MEM) on a
-    copy of the world, and a second bot host for the same four bodies (run/sandbox.sock; same sight checks, same body
-    locks; records sandbox_*.jsonl; no views, no flight recorder). It starts only on a reset, stops on `down`, and a
-    crash stops it until the next reset. Nothing is ever copied back to the world."""
+    """One player's practice sandbox (slot pN): a server (SANDBOX/pN, same jar and properties but its own ports,
+    MC_SANDBOX_MEM) on a copy of the world, and a bot host for the same four bodies (run/sandbox_pN.sock; same sight
+    checks, same body locks; only pN runs programs there; records sandbox_*.jsonl with the slot; no views, no flight
+    recorder). It starts only on a reset, stops on `down`, and a crash stops it until the next reset. Nothing is ever
+    copied back to the world."""
 
-    def __init__(self, sup: Supervisor):
+    def __init__(self, sup: Supervisor, slot: str):
         self.sup = sup
+        self.slot = slot
+        self.dir = SANDBOX / slot
+        self.sock = sandbox_sock(slot)
         self.server: subprocess.Popen | None = None
         self.host: subprocess.Popen | None = None
         self.ready = threading.Event()
@@ -446,84 +487,87 @@ class Sandbox:
         self.on = False
 
     def log(self, msg: str) -> None:
-        self.sup.log(f"sandbox: {msg}")
+        self.sup.log(f"sandbox {self.slot}: {msg}")
 
     def prepare(self) -> None:
         """The sandbox server's files: the main server's properties with its own ports, the four bodies whitelisted."""
-        SANDBOX.mkdir(exist_ok=True)
+        self.dir.mkdir(parents=True, exist_ok=True)
         for name in ("server.jar", "libraries", "versions"):
-            if not (SANDBOX / name).is_symlink():
-                (SANDBOX / name).symlink_to(SRV / name)
+            if not (self.dir / name).is_symlink():
+                (self.dir / name).symlink_to(SRV / name)
         main = props()
-        port = int(os.environ.get("MC_SANDBOX_PORT", int(main.get("server-port", 25565)) + 1))
-        rport = int(os.environ.get("MC_SANDBOX_RCON_PORT", int(main.get("rcon.port", 25575)) + 1))
+        k = PLAYERS.index(self.slot)
+        port = int(os.environ.get("MC_SANDBOX_PORT", int(main.get("server-port", 25565)) + 1)) + k
+        rport = int(os.environ.get("MC_SANDBOX_RCON_PORT", int(main.get("rcon.port", 25575)) + 1)) + k
         lines = []
         for line in (SRV / "server.properties").read_text().splitlines():
             key = line.split("=", 1)[0]
             line = {"server-port": f"server-port={port}", "query.port": f"query.port={port}",
                     "rcon.port": f"rcon.port={rport}", "level-name": "level-name=world",
-                    "motd": "motd=EAT minecraft arena (practice sandbox)"}.get(key, line)
+                    "motd": f"motd=EAT minecraft arena (practice sandbox of {self.slot})"}.get(key, line)
             lines.append(line)
-        (SANDBOX / "server.properties").write_text("\n".join(lines) + "\n")
-        (SANDBOX / "eula.txt").write_text((SRV / "eula.txt").read_text())
-        (SANDBOX / "whitelist.json").write_text(json.dumps([{"uuid": offline_uuid(p), "name": p} for p in PLAYERS], indent=2))
-        (SANDBOX / "ops.json").write_text("[]")
+        (self.dir / "server.properties").write_text("\n".join(lines) + "\n")
+        (self.dir / "eula.txt").write_text((SRV / "eula.txt").read_text())
+        (self.dir / "whitelist.json").write_text(json.dumps([{"uuid": offline_uuid(p), "name": p} for p in PLAYERS], indent=2))
+        (self.dir / "ops.json").write_text("[]")
 
     def copy_world(self) -> None:
-        """SANDBOX/world := the main world as saved right now. Autosave is off during the copy so that no region file
-        is half written in the copy; a chunk the server unloads meanwhile may still be written (sandbox only)."""
-        new = SANDBOX / "world.new"
+        """SANDBOX/pN/world := the main world as saved right now. Autosave is off during the copy so that no region
+        file is half written in the copy; a chunk the server unloads meanwhile may still be written (sandbox only).
+        Copies of different slots take turns (one save-off .. save-on at a time)."""
+        new = self.dir / "world.new"
         _remove_sandbox_dir(new)
-        rcon("save-off")
-        try:
-            rcon("save-all flush", timeout=120)
-            shutil.copytree(SRV / "world", new, ignore=shutil.ignore_patterns("session.lock"), symlinks=True)
-        finally:
-            for attempt in range(5):        # the world must not stay with autosave off
-                try:
-                    rcon("save-on")
-                    break
-                except (OSError, RuntimeError) as e:
-                    self.log(f"save-on failed ({e}); retrying")
-                    time.sleep(2)
-            else:
-                self.log("SAVE-ON FAILED: the main world is not autosaving until the server restarts or saves on down")
-        _remove_sandbox_dir(SANDBOX / "world")
-        new.rename(SANDBOX / "world")
+        with self.sup.copy_lock:
+            rcon("save-off")
+            try:
+                rcon("save-all flush", timeout=120)
+                shutil.copytree(SRV / "world", new, ignore=shutil.ignore_patterns("session.lock"), symlinks=True)
+            finally:
+                for attempt in range(5):        # the world must not stay with autosave off
+                    try:
+                        rcon("save-on")
+                        break
+                    except (OSError, RuntimeError) as e:
+                        self.log(f"save-on failed ({e}); retrying")
+                        time.sleep(2)
+                else:
+                    self.log("SAVE-ON FAILED: the main world is not autosaving until the server restarts or saves on down")
+        _remove_sandbox_dir(self.dir / "world")
+        new.rename(self.dir / "world")
 
     def reset(self, out) -> None:
         with self.lock:
             if self.sup.stopping or not self.sup.ready.is_set() or not self.sup.server or self.sup.server.poll() is not None:
                 raise RuntimeError("the main world is not up (or restarting); try again in a minute")
             if self.on or self.server or self.host:
-                out("stopping the sandbox")
+                out(f"stopping {self.slot}'s sandbox")
                 self.stop()
             self.prepare()
             out("copying the world as it is now (saved first)")
             t = time.time()
             self.copy_world()
             out(f"copied in {time.time() - t:.1f} s; starting the sandbox server")
-            self.server = spawn_server(SANDBOX, os.environ.get("MC_SANDBOX_MEM", "3G"), "sandbox_", self.ready)
-            (RUN / "sandbox_server.pid").write_text(str(self.server.pid))
+            self.server = spawn_server(self.dir, os.environ.get("MC_SANDBOX_MEM", "3G"), "sandbox_", self.ready, self.slot)
+            (RUN / f"sandbox_{self.slot}_server.pid").write_text(str(self.server.pid))
             deadline = time.time() + SANDBOX_UP_TIMEOUT
             while not self.ready.wait(1):
                 if self.server.poll() is not None or self.sup.stopping or time.time() > deadline:
                     self.stop()
-                    raise RuntimeError("the sandbox server did not come up (see .work/mc/logs/sandbox_server.log)")
+                    raise RuntimeError(f"the sandbox server did not come up (see .work/mc/logs/sandbox_{self.slot}_server.log)")
             out("sandbox server up; the bodies are joining")
-            self.host = spawn_host(SANDBOX, "sandbox_", {"MC_SANDBOX": "1", "MC_API_SOCK": str(SANDBOX_SOCK),
-                                                         "MC_VIEW_PORT": "0"})
-            (RUN / "sandbox_bothost.pid").write_text(str(self.host.pid))
+            self.host = spawn_host(self.dir, "sandbox_", {"MC_SANDBOX": "1", "MC_SANDBOX_SLOT": self.slot,
+                                                          "MC_API_SOCK": str(self.sock), "MC_VIEW_PORT": "0"}, self.slot)
+            (RUN / f"sandbox_{self.slot}_bothost.pid").write_text(str(self.host.pid))
             while True:
                 try:
-                    if api("GET", "/health", timeout=5, sock=SANDBOX_SOCK)["ready"]:
+                    if api("GET", "/health", timeout=5, sock=self.sock)["ready"]:
                         break
                 except (OSError, ValueError):
                     pass
                 if self.host.poll() is not None or self.server.poll() is not None or self.sup.stopping \
                         or time.time() > deadline:
                     self.stop()
-                    raise RuntimeError("the sandbox bodies did not join (see .work/mc/logs/sandbox_bothost.log)")
+                    raise RuntimeError(f"the sandbox bodies did not join (see .work/mc/logs/sandbox_{self.slot}_bothost.log)")
                 time.sleep(1)
             self.on = True
             self.log(f"up (server pid {self.server.pid}, bot host pid {self.host.pid})")
@@ -536,7 +580,8 @@ class Sandbox:
             dead = [n for n, p in (("server", self.server), ("bot host", self.host)) if p is None or p.poll() is not None]
             if self.on and dead:
                 self.log(f"{' and '.join(dead)} exited; the sandbox is stopped until the next reset")
-                append("sandbox_events.jsonl", {"time": now(), "type": "sandbox_crash", "what": dead, "sandbox": True})
+                append("sandbox_events.jsonl", {"time": now(), "type": "sandbox_crash", "what": dead, "sandbox": True,
+                                                "slot": self.slot})
                 self.stop()
         finally:
             self.lock.release()
@@ -547,7 +592,7 @@ class Sandbox:
         stop_proc(self.host, 30)
         if self.server and self.server.poll() is None:
             try:
-                rcon("stop", timeout=10, srv=SANDBOX)
+                rcon("stop", timeout=10, srv=self.dir)
             except (OSError, RuntimeError):
                 try:
                     self.server.stdin.write("stop\n")
@@ -562,13 +607,13 @@ class Sandbox:
         if self.server or self.host:
             self.log("stopped")
         self.server = self.host = None
-        for name in ("sandbox_bothost", "sandbox_server"):
-            (RUN / f"{name}.pid").unlink(missing_ok=True)
+        for name in ("bothost", "server"):
+            (RUN / f"sandbox_{self.slot}_{name}.pid").unlink(missing_ok=True)
 
 
 def _remove_sandbox_dir(d: Path) -> None:
-    """Delete one of the sandbox's own world directories (never anything else)."""
-    if d.parent.resolve() != SANDBOX.resolve() or d.name not in ("world", "world.new"):
+    """Delete one of a sandbox's own world directories (never anything else)."""
+    if d.parent.parent.resolve() != SANDBOX.resolve() or d.parent.name not in PLAYERS or d.name not in ("world", "world.new"):
         raise ValueError(f"refusing to delete {d}")
     if d.is_symlink():
         d.unlink()
@@ -617,8 +662,8 @@ def cmd_up(args) -> int:
 
 def cmd_down(_args) -> int:
     sup = pid_of("supervisor", "_supervise")
-    pids = {n: pid_of(n, m) for n, m in (("server", "server.jar"), ("bothost", "bothost.js"),
-                                         ("sandbox_server", "server.jar"), ("sandbox_bothost", "bothost.js"))}
+    pids = {n: pid_of(n, m) for n, m in [("server", "server.jar"), ("bothost", "bothost.js")] +
+            [(f"sandbox_{p}_{n}", m) for p in PLAYERS for n, m in (("server", "server.jar"), ("bothost", "bothost.js"))]}
     if sup is None:
         stray = {n: p for n, p in pids.items() if p}
         print("down: not running" + (f" (but found {stray}: stop them by hand)" if stray else ""))
@@ -637,7 +682,7 @@ def cmd_down(_args) -> int:
         print(f"down: still running: {left}", file=sys.stderr)
         return 1
     append("events.jsonl", {"time": now(), "type": "down"})
-    print("down: bot host and server stopped, world saved (the sandbox, if it ran, stopped too; nothing saved back)")
+    print("down: bot host and server stopped, world saved (the sandboxes that ran stopped too; nothing saved back)")
     return 0
 
 
@@ -654,7 +699,7 @@ def _cam(what: str) -> str:
 
 def unreachable() -> int:
     if PREFIX:
-        print("the sandbox is not running (it starts, or comes back to the world's current state, with "
+        print(f"your sandbox ({SLOT}'s) is not running (it starts, or comes back to the world's current state, with "
               "`python3 tools/mc_arena.py sandbox reset`; it also stops whenever the world is down).", file=sys.stderr)
         return 3
     print("the game is not reachable right now (the bot host is down or restarting; it restarts by itself). "
@@ -711,7 +756,8 @@ def cmd_status(_args) -> int:
     except (OSError, ValueError):
         return unreachable()
     if PREFIX:
-        print("SANDBOX (a practice copy of the world; nothing done here counts or is kept)")
+        print(f"SANDBOX of {SLOT} (a practice copy of the world; nothing done here counts or is kept; only {SLOT} runs "
+              "programs in it)")
     for name, s in st.items():
         ctrl = s.get("controller")
         who = f"controlled by {ctrl['role']}" + (f" (iteration {ctrl['iter']})" if ctrl.get("iter") else "") if ctrl else "free"
@@ -762,7 +808,7 @@ def cmd_programs(args) -> int:
     return 0
 
 
-def cmd_sandbox_reset(_args) -> int:
+def cmd_sandbox_reset(args) -> int:
     s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
     s.settimeout(SANDBOX_UP_TIMEOUT + 300)
     try:
@@ -772,7 +818,7 @@ def cmd_sandbox_reset(_args) -> int:
         return 3
     with s:
         s.sendall((json.dumps({"op": "sandbox_reset", "role": os.environ.get("EAT_ROLE") or "manual",
-                               "iter": os.environ.get("EAT_ITER")}) + "\n").encode())
+                               "iter": os.environ.get("EAT_ITER"), "player": args.player}) + "\n").encode())
         res = {"error": "the supervisor closed the connection"}
         try:
             for line in s.makefile("r"):
@@ -787,17 +833,31 @@ def cmd_sandbox_reset(_args) -> int:
     if res.get("error"):
         print(f"sandbox reset failed: {res['error']}", file=sys.stderr)
         return 1
-    print(f"sandbox reset: done in {res['took_s']} s; the sandbox is a copy of the world as it was just now")
-    global API_SOCK, PREFIX
-    API_SOCK, PREFIX = SANDBOX_SOCK, "sandbox_"
-    return cmd_status(_args)
+    print(f"sandbox reset: done in {res['took_s']} s; your sandbox ({res['slot']}'s) is a copy of the world as it was "
+          "just now")
+    use_sandbox(res["slot"])
+    return cmd_status(args)
+
+
+def use_sandbox(slot: str) -> None:
+    global API_SOCK, PREFIX, SLOT
+    API_SOCK, PREFIX, SLOT = sandbox_sock(slot), "sandbox_", slot
+
+
+def caller_slot(named: str | None) -> str | None:
+    """The caller's sandbox: the body its agent controls (as the main bot host sees the caller), else the body it
+    names; None when it controls none and names none."""
+    who = api("POST", "/whoami", {"role": os.environ.get("EAT_ROLE") or "manual", "iter": os.environ.get("EAT_ITER")})
+    return who.get("player") or named
 
 
 def main() -> int:
     argv = sys.argv[1:]
     if argv[:1] == ["sandbox"]:          # `sandbox reset`, or `sandbox CMD ...` = `--sandbox CMD ...`
         if argv[1:2] == ["reset"]:
-            return cmd_sandbox_reset(None)
+            r = argparse.ArgumentParser(prog="mc_arena.py sandbox reset")
+            r.add_argument("--player", choices=PLAYERS, help="your body, while your agent controls none yet")
+            return cmd_sandbox_reset(r.parse_args(argv[2:]))
         argv = ["--sandbox"] + argv[1:]
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--sandbox", action="store_true", help="act in the practice sandbox (see `sandbox reset`)")
@@ -827,8 +887,15 @@ def main() -> int:
     if args.sandbox:
         if args.cmd in ("up", "down", "_supervise"):
             ap.error(f"{args.cmd} is not a sandbox command (the sandbox starts with `sandbox reset`, stops with down)")
-        global API_SOCK, PREFIX
-        API_SOCK, PREFIX = SANDBOX_SOCK, "sandbox_"
+        try:
+            slot = caller_slot(getattr(args, "player", None))
+        except (OSError, ValueError):
+            return unreachable()
+        if not slot:
+            print("your agent controls no body yet, so it has no sandbox: `sandbox reset --player pN` makes the "
+                  "sandbox of the body you will play, and `--sandbox run --player pN` acts in it", file=sys.stderr)
+            return 2
+        use_sandbox(slot)
     return {"run": cmd_run, "say": cmd_say, "status": cmd_status, "chat": cmd_chat, "events": cmd_events,
             "programs": cmd_programs, "up": cmd_up, "down": cmd_down, "_supervise": cmd_supervise}[args.cmd](args)
 

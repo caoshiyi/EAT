@@ -144,8 +144,8 @@ DENIED = r"child_process|cluster|worker_threads|net|tls|https?|http2|dgram|dns|f
 AUDIT = [
     ("command", re.compile(r"""(chat|whisper)\s*\(\s*[`'"]\s*/|['"`]/(give|tp|teleport|gamemode|op|summon|kill|setblock|fill|effect|enchant|xp|experience|time|weather|locate|difficulty|gamerule|clear|item|data|execute|spawnpoint|setworldspawn|seed|stop|save-all|whitelist|deop|ban|kick|tell|msg|w|me)\b|chat_command|tabComplete\s*\(\s*['"`]/""")),
     ("server files / rcon", re.compile(r"\brcon\b|server\.properties|rcon\.secret|level\.dat|usercache|ops\.json|whitelist\.json|\.work/|"
-                                     r"world/(region|playerdata|advancements|stats|data|DIM)|25575|25576|25580|"
-                                     r"api\.sock|sandbox\.sock|control\.sock")),
+                                     r"world/(region|playerdata|advancements|stats|data|DIM)|2557[5-9]|25580|"
+                                     r"api\.sock|sandbox(_p\d)?\.sock|control\.sock")),
     ("forbidden require", re.compile(r"""require\s*\(\s*['"`](node:)?(""" + DENIED + r""")(/[a-z]+)?['"`]\s*\)""")),
     ("dynamic require / import", re.compile(r"""require\s*\(\s*[^'"`\s)]|\bimport\s*\(""")),
     ("sandbox escape", re.compile(r"constructor\s*\.\s*constructor|\bprocess\s*\.|globalThis\s*\.\s*process|\bFunction\s*\(|\beval\s*\(|__proto__|getPrototypeOf\s*\(\s*bot")),
@@ -158,7 +158,8 @@ def audit(everything: bool = False) -> int:
     findings = []
     ups = [e for e in read_jsonl("events.jsonl") if e.get("type") == "up"]
     since = "" if everything or not ups else ups[-1].get("time", "")
-    progs = [(p, "") for p in read_jsonl("programs.jsonl")] + [(p, "sandbox ") for p in read_jsonl("sandbox_programs.jsonl")]
+    progs = [(p, "") for p in read_jsonl("programs.jsonl")] + [(p, f"sandbox {p['slot']}: " if p.get("slot") else "sandbox ")
+                                                         for p in read_jsonl("sandbox_programs.jsonl")]
     for p, where in progs:
         if (p.get("time") or "") < since:
             continue
