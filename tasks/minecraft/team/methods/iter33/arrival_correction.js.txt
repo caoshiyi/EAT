@@ -1,0 +1,22 @@
+// REVIEW PROPOSAL ONLY: owner integrates into selected program; engineer never executes.
+// Replace the unconditional ARRIVAL -> receiver chat -> handoff wait in12152.
+// Keep original g from the movement attempt and observe AFTER stopping/settling.
+stop();
+await wait(6);
+const arrived = g.isEnd(bot.entity.position.floored()) && bot.entity.onGround;
+console.log('APPROACH_RESULT', JSON.stringify({ ...state(), arrived,
+  elapsedMs: Date.now()-t, goal: {x:49,y:67,z:113,radius:2} }));
+if (!arrived) {
+  // Owner catch/ending remains responsible for actual body. No arrival claim or handoff wait.
+  throw Error('approach postcondition failed');
+}
+const swordBefore = bot.inventory.items().filter(i=>i.name==='wooden_sword').reduce((s,i)=>s+i.count,0);
+bot.chat('P2 approach goal reached; donor must independently check current visible receiver before toss');
+const h=Date.now();
+while(Date.now()-h<25000 &&
+      bot.inventory.items().filter(i=>i.name==='wooden_sword').reduce((s,i)=>s+i.count,0)<=swordBefore) await wait(5);
+const swordAfter=bot.inventory.items().filter(i=>i.name==='wooden_sword').reduce((s,i)=>s+i.count,0);
+console.log('HANDOFF_RESULT',JSON.stringify({...state(),swordBefore,swordAfter,
+  receivedSword:swordAfter>swordBefore}));
+if(swordAfter<=swordBefore) throw Error('recipient receipt absent');
+// Full kit receipt/retention and next intended use need their own observed postconditions.
