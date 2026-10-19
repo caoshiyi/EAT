@@ -1,9 +1,25 @@
-# Iteration33 independent review (provisional)
+# Iteration33 independent review — complete provisional
 
-As of 2026-10-19T11:04:14.963510+00:00. Objective unmet at opening: evaluator SAVE FAILED, LAST-SAVED dragon0/milestones11/deaths198. No current33 victory evidence. Prior32 losses9→1 and real partner adoption did not complete recovery/traversal or produce End effects. Exact record defect and acceptance test are maintained in ITER33_EXECUTION.md.
+Published 2026-10-19T11:23:54.255879+00:00 (minute20, before minute90 deadline); remains live through closure. Objective unmet: no credible live End/dragon effect. Opening official evaluator **SAVE FAILED(connection refused), LAST-SAVED dragon0/milestones11/deaths198**. New live death below postdates that reading. Saved6crystals/Dragon200 are informational, not current encounter evidence.
 
-Scope: controls no player, runs no arena programs or chat-only JavaScript; p2/p4 operators own all execution. No agents, prohibited sources, server/.work access, tool/player-file modifications or push. Source boundaries preserved; history read is bounded, not exhaustive.
+## What changed and what happened
 
-Pending: minute20/40 downstream-use assessments; current33 canonical deaths/effects, final player handoffs and decisive live records; final failed-save labeling; independent closure105–110. This is an opening provisional, not the required complete minute90 review.
+Exact source/output confirms prior32 false arrival/handoff12152: radius2goal but137.49m away, empty inventory after purported handoff. Rescue catch lacked promised continuousretreat. Provisionalhandoff was stale after death. Live losses32 fell9→1 and partner supplies actuallyused; no objectiveeffect. Opening-only review missed execution gaps. Reflection/evolution appended within5min; thisreviewer remains embedded.
 
-Token usage: unavailable.
+33 actual LIVE12204 smallstep retained14HP6food+fullending;12209received5Logs;12210NEXTused2Logs→planks/Table/Pick.12212stone8receipt real, endingfailed afterserverplacementrefusal;12214returned64butcutroof66andlogged9faces; separate12215recappedroofthenFurnace/Tableuse/fullending. Nofoodreceipt.12218huntlost3HPwithoutsampledcause, noattack/meat, localendingfull.12220hostilebufferabort→geometricburrowsealedwithZombie3424inside; health6→3.5during10FULLaudits54.274–.577;return54.714, death11:18:56. Oldkitlost, not current. Newbodyquietenclosure20HP20food/Dirt2 at4.5/63/-34.5 (11:23read-onlystatus), p4unchanged5.911HP17food/Saplingat49.509/66/113.5. P1/P3unplayed.
+
+Sandbox:347surface/return,348digpostfailure+actualreturn,349newicebranchunreached,350actualICE→WATERdiagnosticsbutnofood/failedwaterreturnthenidleDROWN11:08:47;351emptynewlife;352smallstep,353failedwood+actualsource-return,354NEXTretainedsource→6Logs+fullending. Practice gainsneverLIVE. ResetG1events preserved beforeG2.
+
+## Independent assessment and correction status
+
+Correction01offeredactualgoal/receiptgate; ownerreportsread/adoption, inspectednavimplementsoriginalgoalcheck; truearrivalcasesactualSB348/LIVE12204. Historicalfalsearrivalreplayrejectslabels, but newnegative/livehandofftestabsent. Correction02postblockdiagnosticactuallyusedbyowner350(typecaseconfirmed); noexclusivecausalcredit and348postblockstillunknown. Correction03roofrestore+assertproposalpublishedafterowneralreadyrepaired12215; noadoptioncredit.12218NEXTfullsourcequalifiesactualseparateroofretention/use. Correction04currentowneddefect: geometry-onlyendingignoresactualoccupantsandhealthloss. Actual12220replayrejects; currentquiet12224onlychecksposthoc. Before/perfall/postcapexecutionandrejected-conditionrecovery remainunqualified. Smallreviewableproposals/acceptancetestsunder methods/iter33; nopeerprogramedits.
+
+Changedexecution hasenabledrealdownstreamcomponents but lostthem beforefood/objectiveuse. Minute20reformulation: targetfailed-operation→unoccupiedretainedsuccessor, notanotheruncheckedrebuild/fullchain. Missedinitialfoodgate11:13remainsfailed. Actualcomponentcreditdoesnotimplyroute/combatreadiness. Independentreviewaddshelpwithoutapprovalqueue/tactics.
+
+## Evidence, compliance and remaining work
+
+ITER33_EXECUTION.md holdsdatedclaim→code→result→limitation links. Canonical12152/12147/12220, LIVE12209/10/15, SB352–354, G1deathevents, currentliveevents and openingeval are preserved under methods/iter33. Exactlyone33LIVEdeathp2Zombie11:18:56 andoneG1SBp2Drown11:08:47 atthisaudit; latestsaved198doesnotincludeLIVEnewdeath. Latergeneration/currenteventchecksrequired.
+
+Readprogram.mdandITER32_OPENINGinfull,bothfinal32handoffs,boundedpermittedevolutionentries; broadhistoryreadclipped,nocompletehistoryauditclaimed. Noagent_team/ENCOUNTER/excluded17–19/internet/clientmaterialinvestigation, server/.workaccess, servercommands,toolsmodifications,push. Reviewercontrolsnone/ran noarena programs(includingchat/sandbox), noreset,noagents. Editedonlyassignedreview/execution/evolution/token/methods paths. Tokenusage **unavailable** fromauthorizedavailablesource.
+
+Pendingminute40downstreamassessment, ongoingfocusedreview, crediblecompletionevalifany, finalhandoff+decisiverecordinspectionandclosureevalduring105–110. Thiscompleteprovisionalwillberefreshedaftermaterialchangesandbyminute90; victoryrequiresofficialworldevidenceandcompliantdecisiveactions.

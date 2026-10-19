@@ -1,0 +1,16 @@
+// REVIEW PROPOSAL ONLY; integrate with owner ending. This is qualification, not a rescue method.
+const endingHP = bot.health;
+const endingThreats = () => Object.values(bot.entities).filter(e =>
+  ['zombie','spider','skeleton','creeper','witch'].includes(e.name) &&
+  Math.abs(e.position.y-bot.entity.position.y)<3 &&
+  Math.hypot(e.position.x-bot.entity.position.x,e.position.z-bot.entity.position.z)<2);
+for(let k=0;k<3;k++) {
+  const faces=boundary(), threats=endingThreats();
+  console.log('ENDING_OBSERVATION',JSON.stringify({...state(),faces,
+    threats:threats.map(e=>({id:e.id,n:e.name,p:e.position})),endingHP}));
+  if(!faces.every(f=>f.full) || threats.length || bot.health<endingHP)
+    throw Error('ending postcondition rejected');
+  await wait(3);
+}
+// Existing owner recovery must really handle this rejection; do not call it retained yet.
+// Next-source checks remain necessary; no durable safety follows from a short empty sample.

@@ -1,0 +1,14 @@
+// REVIEW PROPOSAL ONLY. Intended source comes from completed quarry SOURCE, not current floor.
+const intended = v(98,64,1033);
+if (!bot.entity.onGround || !bot.entity.position.floored().equals(intended))
+  throw Error('return source position/ground postcondition');
+const roof = intended.offset(0,2,0);
+if (!full(roof)) await placeAt(roof,'dirt'); // existing visible/reach-checked helper
+for (let k=0;k<3;k++) {
+  const faces=boundary();
+  console.log('RETURN_END_OBSERVATION',JSON.stringify({...state(),faces}));
+  if(!bot.entity.onGround || !bot.entity.position.floored().equals(intended) || !faces.every(f=>f.full))
+    throw Error('return ending incomplete');
+  await wait(3);
+}
+// Successor independently re-observes source/inventory before claiming actual use.

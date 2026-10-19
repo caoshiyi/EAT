@@ -69,3 +69,35 @@ A small offline record_digest.py was checked on347/348: detected actual digpost 
 Canonical LIVE12204 matches SB352 source hash, includes sourceDim equality before completed=true, and passed actual new ending125.473/60/1012.526,14HP6food/Dirt7 at11:11:11.391/.542/.741. Prior static no-dimension-guard observation is SUPERSEDED for executed352/12204; it described earlier file inspection, not final executed code. No dimension-transition test occurred. Current source remains authoritative over earlier review. [LIVE evidence](methods/iter33/current_live.txt).
 
 Wood.js selected next; exact code reads actual log inventory delta then burrow, but receipt/use not yet qualified. New12204 ending is genuine downstream traversal enabled by changed goal/ending behavior; it does not satisfy initial food gate or full route. Current review continues through execution.
+
+## 2026-10-19T11:13:59.283563+00:00 actual failed-operation recovery
+
+SB353 exact source/output inspected in [352–354 records](methods/iter33/SB352_354.txt). Wood root cut producedAIR; actual walkpost failed11:12:01.484 with no log inventory. Catch really navigated98.5/67/1032.503→source125/63/1012, then3DOWN+cap. ENDING11:12:13.944/.094/.245 and return14.395 show125.5/60/1012.500,14HP6food,Dirt7,all10FULL. SB354 SOURCE11:13:05.248 retained that body/materials and used it for changed operation. This qualifies actual source-return recovery for this small land/wood failure plus next-call use. It does not qualify water recovery or local fallback. Focused ending review has a demonstrated bounded success; no general reliable-retreat claim.
+
+Owner changed first-root movement admission to clear measured headroom; SB354 actually received6Logs11:13:34.969, sealed98.5/64/1033.54611:13:38.077/.227/.378,retained14HP6food. No LIVE wood yet at this audit; practice gains cannot supply live. Initial food deadline11:13 (owner clock) missed and acknowledged11627–28, not restarted.
+
+## 2026-10-19T11:16:11.744711+00:00 live wood successor use
+
+[LIVE12209/12210 canonical](methods/iter33/LIVE12209_12210.txt):12209 actual5Logs retained, all10FULL98.5/64/1033.546/14HP6food;12210 NEXTSOURCEsame5Logs then actual planks/Table placement and woodenPick receipt, retained full ending. Real downstream adoption; no food/End effect. LIVE event death tail still latest32 death10:37:02, hence zero new33 live deaths at this audit. G1 one SB drowning11:08:47 independently verified; later generations require preserved/reset-separated events.
+
+## 2026-10-19T11:16:52.053421+00:00 correction03: nine-face recovered source
+
+[Small correction and actual-failure acceptance](methods/iter33/CORRECTION_03.md). Exact LIVE12212/quarry and12214/quarry_reconcile sources+completed outputs inspected.12212 receiptCobble8 is real; ending failed after ordinaryUP server refusal.12214 actual returnY64 succeeded14HP6food but finalUP cut roof66 and no subsequent roof restore/guard exists; all threeENDING samples9/10FULL, return9/10. RECOVERED_SOURCE means location here, not restored ending. Proposed restore+assert after ascent, verify actual current9face case then successor retained use. No explanation of original server refusal claimed. No broad recovery certificate from prior353 pass.
+
+## 2026-10-19T11:18:04.957826+00:00 roof already repaired by owner
+
+Canonical12215 SOURCE11:16:34.283 is already10FULL after actual roof cap;8Cobble→Furnace receipt35.743, Table physically reclaimed, ten-face endings40.517/.668/.81914HP6food. [Evidence](methods/iter33/LIVE12215_roof_and_furnace.txt). This occurred before correction03 publication, so NO causal credit or adoption attribution to engineer. Owner independently repaired the exact defect; separate repair/use is real,12212/12214 remain failed endings. Next-call physical retention is pending, rather than inferred from labels.
+
+## 2026-10-19T11:20:59.942701+00:00 material live loss overrides retained kit
+
+CanonicalLIVE12220 [exact source/output](methods/iter33/canonical_12220.txt): hostilebuffer failure50.804 then fallback nearest geometric burial; Zombie3424 physically co-occupies final column54.325, ten-face ending6→3.5HP, return54.714 followed11:18:56Zombie death. Current oldFurnace/Table/toolkit LOST. No food/objective effect occurred. Initial12218 injurycause remains unsampled; this later zombie does not identify it. Current33 deaths: oneLIVEp2, oneG1SBp2; latestemptyrespawn is a new life, not healed old kit. Events in min17_live_events.txt/G1_end_events.txt independently verify.
+
+[Correction04](methods/iter33/CORRECTION_04.md) owns one recurring defect: block geometry alone qualifies unsafe ending, ignoring actual occupant/declininghealth. Small reviewable guard+actual failure replay provided; no peer edits/exec. Full recovery alternative remains owner work, so this is not claimed fixed. P4 independently found same case11643–45 before this proposal; no exclusive causal credit.
+
+## Minute20 assessment — 2026-10-19T11:23:54.255879+00:00
+
+Changed execution enabled actual downstream use:12204smallLIVEtraversal+fullending→12209wood5receipt+ending→12210NEXTretainedwood used forPick/Table→12212actualstone8→separate12215roofrepair/Furnace/Tableuse. Those are real gains; neither reports nor sandbox effects. But they did not enable retained food or live End effects and were LOST to12220Zombie11:18:56. Initialfoodgate11:13FAILED, not renewed. Currentfreshrespawn20HP20food/Dirt2 is not healed or retained oldkit.
+
+Unresolved link is **failed-operation recovery→actually retained, unoccupied next source**, now narrowed by exact12220 co-occupancy and health loss despite tenfullfaces. Current12224 quiet enclosure emptyOccupants is useful but its entity check occurs after descent/threeendingaudits; not the proposed before/perfall fix. P4BURROW_OCCUPANCY_REVIEW independentlyagrees andoffers11:22–30 review/use budget. Correction04 remains unvalidated beyond offline actualfailure replay. No deliberateZombie/livehunt reproduction requested. Reformulated next experiment: one already-needed owner-selected bounded operation must execute changed phase/health/occupancy checks, show any rejected condition handled by actual declared recovery, and then show retained successor source/use. A quiet case establishes only quietcase; missing dangerous branch remains explicitlyuntested.
+
+Owner currentlyselects observed nearbychest inspection before rebuild. This is prospective: actualcontents/receipt/use unknown at11:23. No tactical allocation/reviewerpermission imposed. Significantclaims/deaths reconciled canonically:one33LIVEp2Zombie,oneG1SBp2Drown; no objectiveevent. Openingofficial0dragon/11milestones/198deaths isLAST-SAVED/saveFAILED; not synchronized with newdeath.
