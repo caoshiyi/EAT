@@ -1,0 +1,67 @@
+program #12717 on p4: 6.9 s
+--- output ---
+SOURCE {"at":"2026-10-19T12:49:25.625Z","p":{"x":60.4665588855351,"y":63,"z":109.5013820396226},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["dirt",1,null],["cobblestone",12,null],["spruce_sapling",1,null],["stone_pickaxe",1,83]],"time":2384,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":60,"y":62,"z":109},"n":"stone","full":true},{"q":{"x":60,"y":65,"z":109},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":109},"n":"dirt","full":true},{"q":{"x":61,"y":64,"z":109},"n":"dirt","full":true},{"q":{"x":59,"y":63,"z":109},"n":"dirt","full":true},{"q":{"x":59,"y":64,"z":109},"n":"dirt","full":true},{"q":{"x":60,"y":63,"z":110},"n":"stone","full":true},{"q":{"x":60,"y":64,"z":110},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":108},"n":"stone","full":true},{"q":{"x":60,"y":64,"z":108},"n":"stone","full":true}]}
+CUT {"q":{"x":60,"y":64,"z":110},"n":"stone","state":{"at":"2026-10-19T12:49:26.379Z","p":{"x":60.4665588855351,"y":63,"z":109.5013820396226},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["dirt",1,null],["cobblestone",12,null],["spruce_sapling",1,null],["stone_pickaxe",1,84]],"time":2384,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":60,"y":63,"z":110},"n":"stone","state":{"at":"2026-10-19T12:49:27.181Z","p":{"x":60.4665588855351,"y":63,"z":109.5013820396226},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["dirt",1,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,85]],"time":2404,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+NATIVE_MOVE {"at":"2026-10-19T12:49:28.186Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["dirt",1,null],["cobblestone",14,null],["spruce_sapling",1,null],["stone_pickaxe",1,85]],"time":2424,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PLACE {"q":{"x":60,"y":64,"z":109},"name":"dirt","state":{"at":"2026-10-19T12:49:28.488Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",14,null],["spruce_sapling",1,null],["stone_pickaxe",1,85]],"time":2424,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":60,"y":63,"z":109},"name":"cobblestone","state":{"at":"2026-10-19T12:49:28.789Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,85]],"time":2444,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+DETOUR_PROGRESS {"at":"2026-10-19T12:49:28.789Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,85]],"time":2444,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CUT {"q":{"x":60,"y":64,"z":111},"n":"stone","state":{"at":"2026-10-19T12:49:29.639Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,86]],"time":2464,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CUT {"q":{"x":60,"y":63,"z":111},"n":"stone","state":{"at":"2026-10-19T12:49:30.442Z","p":{"x":60.487550614313285,"y":63,"z":110.4677580404445},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",14,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2464,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+NATIVE_MOVE {"at":"2026-10-19T12:49:31.492Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",15,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2484,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+PLACE {"q":{"x":60,"y":64,"z":110},"name":"cobblestone","state":{"at":"2026-10-19T12:49:31.792Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",14,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":60,"y":63,"z":110},"name":"cobblestone","state":{"at":"2026-10-19T12:49:32.093Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+DETOUR_PROGRESS {"at":"2026-10-19T12:49:32.093Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAILURE Error: domain (61, 63, 111)
+ENDING {"at":"2026-10-19T12:49:32.094Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":60,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":59,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":59,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":64,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":110},"n":"cobblestone","full":true},{"q":{"x":60,"y":64,"z":110},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T12:49:32.243Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":60,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":59,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":59,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":64,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":110},"n":"cobblestone","full":true},{"q":{"x":60,"y":64,"z":110},"n":"cobblestone","full":true}]}
+ENDING {"at":"2026-10-19T12:49:32.393Z","p":{"x":60.4959751601459,"y":63,"z":111.49991389211422},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["cobblestone",13,null],["spruce_sapling",1,null],["stone_pickaxe",1,87]],"time":2504,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":60,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":60,"y":65,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":63,"z":111},"n":"stone","full":true},{"q":{"x":61,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":59,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":59,"y":64,"z":111},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":64,"z":112},"n":"stone","full":true},{"q":{"x":60,"y":63,"z":110},"n":"cobblestone","full":true},{"q":{"x":60,"y":64,"z":110},"n":"cobblestone","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:49:32.544Z",
+ "p": {
+  "x": 60.4959751601459,
+  "y": 63,
+  "z": 111.49991389211422
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "cobblestone",
+   13,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   87
+  ]
+ ],
+ "time": 2524,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (60.5, 63, 111.5) in overworld, health 5.9/20, food 17/20, alive

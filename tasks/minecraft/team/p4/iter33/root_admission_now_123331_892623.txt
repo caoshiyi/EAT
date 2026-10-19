@@ -1,0 +1,59 @@
+[sandbox] program #1 on p4: 0.4 s
+--- output ---
+ROOT_NOW {"at":"2026-10-19T12:33:32.100Z","p":{"x":57.50033634955496,"y":65,"z":109.5320984368938},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",6,null],["coal",2,null],["dirt",7,null],["spruce_sapling",1,null],["stone_pickaxe",1,77]],"time":6962,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"mobs":[{"n":"zombie","p":{"x":61.473138960538655,"y":65,"z":110.30038164550118},"h":1.95,"d":4.046408243673255}],"column":[{"q":{"x":57,"y":67,"z":109},"n":"dirt"},{"q":{"x":57,"y":68,"z":109},"n":"dirt"},{"q":{"x":57,"y":69,"z":109},"n":"spruce_log"},{"q":{"x":57,"y":70,"z":109},"n":"spruce_log"},{"q":{"x":57,"y":71,"z":109},"n":"spruce_log"},{"q":{"x":57,"y":72,"z":109},"n":"spruce_log"}]}
+ENDING {"at":"2026-10-19T12:33:32.103Z","p":{"x":57.50033634955496,"y":65,"z":109.5320984368938},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",6,null],["coal",2,null],["dirt",7,null],["spruce_sapling",1,null],["stone_pickaxe",1,77]],"time":6962,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":57,"y":64,"z":109},"n":"stone","full":true},{"q":{"x":57,"y":67,"z":109},"n":"dirt","full":true},{"q":{"x":58,"y":65,"z":109},"n":"stone","full":true},{"q":{"x":58,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":65,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":66,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":108},"n":"stone","full":true},{"q":{"x":57,"y":66,"z":108},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:33:32.155Z","p":{"x":57.50033634955496,"y":65,"z":109.5320984368938},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",6,null],["coal",2,null],["dirt",7,null],["spruce_sapling",1,null],["stone_pickaxe",1,77]],"time":6962,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":57,"y":64,"z":109},"n":"stone","full":true},{"q":{"x":57,"y":67,"z":109},"n":"dirt","full":true},{"q":{"x":58,"y":65,"z":109},"n":"stone","full":true},{"q":{"x":58,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":65,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":66,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":108},"n":"stone","full":true},{"q":{"x":57,"y":66,"z":108},"n":"dirt","full":true}]}
+ENDING {"at":"2026-10-19T12:33:32.305Z","p":{"x":57.50033634955496,"y":65,"z":109.5320984368938},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",6,null],["coal",2,null],["dirt",7,null],["spruce_sapling",1,null],["stone_pickaxe",1,77]],"time":6962,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":57,"y":64,"z":109},"n":"stone","full":true},{"q":{"x":57,"y":67,"z":109},"n":"dirt","full":true},{"q":{"x":58,"y":65,"z":109},"n":"stone","full":true},{"q":{"x":58,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":65,"z":109},"n":"dirt","full":true},{"q":{"x":56,"y":66,"z":109},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":66,"z":110},"n":"dirt","full":true},{"q":{"x":57,"y":65,"z":108},"n":"stone","full":true},{"q":{"x":57,"y":66,"z":108},"n":"dirt","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T12:33:32.455Z",
+ "p": {
+  "x": 57.50033634955496,
+  "y": 65,
+  "z": 109.5320984368938
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "cobblestone",
+   6,
+   null
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   7,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   77
+  ]
+ ],
+ "time": 6982,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (57.5, 65, 109.5) in overworld, health 5.9/20, food 17/20, alive
