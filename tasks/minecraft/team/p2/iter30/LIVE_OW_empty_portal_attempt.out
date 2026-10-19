@@ -1,0 +1,35 @@
+program #11875 on p2: 19.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T07:10:10.356Z","p":{"x":0.45435114631285933,"y":57,"z":-29.50000000000038},"hp":20,"food":20,"inv":[["dirt",1]]}
+ACTIVE_PORTAL [{"x":6,"y":68,"z":91},{"x":7,"y":68,"z":91},{"x":6,"y":69,"z":91},{"x":7,"y":69,"z":91},{"x":6,"y":70,"z":91},{"x":7,"y":70,"z":91}]
+CLEAR_STEP_SNOW Vec3 { x: 0, y: 57, z: -30 } air
+CLEAR_STEP_SNOW Vec3 { x: -1, y: 57, z: -29 } air
+CLEAR_STEP_SNOW Vec3 { x: 0, y: 58, z: -28 } air
+CLEAR_STEP_SNOW Vec3 { x: -1, y: 57, z: -28 } air
+CLEAR_STEP_SNOW Vec3 { x: 0, y: 58, z: -27 } air
+CLEAR_STEP_SNOW Vec3 { x: -2, y: 57, z: -28 } air
+ROUTE {"at":"2026-10-19T07:10:16.379Z","p":{"x":0.4587112860867107,"y":57,"z":-29.402097003450017},"hp":20,"food":20,"inv":[["dirt",1]]}
+ROUTE {"at":"2026-10-19T07:10:21.452Z","p":{"x":4.503982325486839,"y":66,"z":-20.622857013403195},"hp":20,"food":20,"inv":[["dirt",1]]}
+ROUTE {"at":"2026-10-19T07:10:26.463Z","p":{"x":5.444128871529657,"y":64.41999998688698,"z":-2.2021775675983117},"hp":20,"food":20,"inv":[["dirt",1]]}
+FAILURE Error: stalled without safe flatobstacle {"at":"2026-10-19T07:10:29.706Z","p":{"x":5.451137989785884,"y":64,"z":-2.3},"hp":20,"food":20,"inv":[["dirt",1]]}
+END {"at":"2026-10-19T07:10:29.706Z","p":{"x":5.451137989785884,"y":64,"z":-2.3},"hp":20,"food":20,"inv":[["dirt",1]]}
+--- returned ---
+{
+ "at": "2026-10-19T07:10:29.706Z",
+ "p": {
+  "x": 5.451137989785884,
+  "y": 64,
+  "z": -2.3
+ },
+ "hp": 20,
+ "food": 20,
+ "inv": [
+  [
+   "dirt",
+   1
+  ]
+ ]
+}
+--- chat since this player's previous program ---
+[server] p4 tried to swim in lava
+--- p2 now: (5.5, 64, -2.3) in overworld, health 20/20, food 20/20, alive
