@@ -1,0 +1,15 @@
+# Iteration 31 plan — 2026-10-19 07:23 UTC
+
+Opening ~07:20 UTC; provisional due08:50, useful execution through09:05 (105 minutes), then closure. Opening evaluator dragon0/milestones11/deaths188; SAVE FAILED(connection refused), last-saved. Fresh status P2 OW(5.5,64,6.5),20HP20food,Dirt7. Old End access/kit lost.
+
+Selected completion chain: restore Overworld tools/food/projectile ammunition and physical End access, use demonstrated ground Snow crystal removal rather than the tall exposed melee ascent, then establish actual ordinary Dragon attacks and defeat it. Six crystals and Dragon200 are saved information, not a fresh encounter reading. Missing: wood/tools/food/ammo, a traveled return route to stronghold/End, a current End launch position, shots for other geometry and actual Dragon damage.
+
+Transfer investigation: SB287 ground Snow. Observed source End(6.503,58,-25.500),9HP16food, wooden pick/roof access, Snow1; uncaged target(12.5,95,-39.5), actual first-tick jump and pitch78.76 ordinary use; projectile spawned, same-life target disappeared, retained9HP and roof restored. Current live lacks dimension/location, kit/ammo, tested roof/launch geometry, encounter timing. Source is a single qualified shot, not cage/highest-target qualification.
+
+SB286 slab melee remains a useful demonstrated blast-cover component. LIVE11803 reached79 and died before first bar preparation completed/attack/shield installation. First consequential observed difference was Dragon contact during exposed ascent/preparation: same source/caller did not reproduce the encounter. Slab protection was never tested live; attacked:false means no blast conclusion. Exact earlier timing comparison remains to inspect.
+
+Bounded next operation: fresh short P2 eye/local terrain/resource audit, then <=45s physical route/resource step toward wood/surface and inspect terminal. Within15min establish usable wooden/stone tools and an actual traversable local route, accepting only actual inventory and grounded endpoint. Coordinate P4 on route qualification (least-established End transport link) before extensive supplies. Success enables short separated travel segments; every segment must observe its predecessor's postcondition.
+
+Fallback: if local route/tool dependency fails twice comparably or 15min elapses, change terrain approach and allocation; use P4's separately qualified route if actual recipient travel can adopt it. If End transport cannot be established within40min, stop speculative Nether shortcut repairs and use direct Overworld stronghold travel with short observed legs. Do not keep adding combat alternatives while access is missing.
+
+Mandatory rules: p2 only; one outstanding p2 call across worlds; no agents, server access/commands, excluded sources, raw packets, bypasses, internet, tool edits or pushes. Actual eye visibility/reach required. Chosen policies: short segments, health stop and projectile-first approach; full enclosures, exact centers, all-crystals-first and zero-risk are not rule requirements. Reviewer supplies evidence, no approval gate. Resets through integration_partner only.
