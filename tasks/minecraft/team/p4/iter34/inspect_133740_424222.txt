@@ -1,0 +1,75 @@
+program #12820 on p4: 0.1 s
+--- output ---
+STATE {"at":"2026-10-19T13:37:40.525Z","p":{"x":89.46258943983688,"y":62,"z":111.50002601977707},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["crafting_table",1,null],["cobblestone",11,null],["dirt",2,null],["spruce_sapling",1,null],["stone_pickaxe",1,97]],"time":7710,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+BOUNDARY [{"q":{"x":89,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":89,"y":64,"z":111},"n":"dirt","full":true},{"q":{"x":90,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":90,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":88,"y":62,"z":111},"n":"cobblestone","full":true},{"q":{"x":88,"y":63,"z":111},"n":"cobblestone","full":true},{"q":{"x":89,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":89,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":89,"y":62,"z":110},"n":"stone","full":true},{"q":{"x":89,"y":63,"z":110},"n":"coal_ore","full":true}]
+LAYER 61 [{"z":108,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":109,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":110,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":111,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":112,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":113,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":114,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","air"]},{"z":115,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","air","air"]},{"z":116,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","air","air"]}]
+LAYER 62 [{"z":108,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":109,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":110,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","stone"]},{"z":111,"row":["air","cobblestone","air","cobblestone","air","air","air","air","air","air","stone","stone"]},{"z":112,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","stone","stone"]},{"z":113,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","stone","stone"]},{"z":114,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","stone","air"]},{"z":115,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","dirt","air"]},{"z":116,"row":["stone","stone","stone","stone","stone","stone","stone","stone","dirt","air","dirt","air"]}]
+LAYER 63 [{"z":108,"row":["stone","stone","stone","stone","stone","stone","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":109,"row":["stone","coal_ore","coal_ore","coal_ore","coal_ore","coal_ore","stone","stone","dirt","dirt","dirt","dirt"]},{"z":110,"row":["stone","coal_ore","coal_ore","coal_ore","coal_ore","coal_ore","stone","stone","stone","dirt","dirt","dirt"]},{"z":111,"row":["air","cobblestone","air","cobblestone","air","air","air","air","air","air","dirt","stone"]},{"z":112,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","stone","dirt"]},{"z":113,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","stone","dirt"]},{"z":114,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","grass_block","air"]},{"z":115,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","air","grass_block","air"]},{"z":116,"row":["stone","stone","stone","stone","stone","stone","stone","stone","dirt","air","dirt","air"]}]
+LAYER 64 [{"z":108,"row":["stone","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":109,"row":["stone","dirt","dirt","dirt","dirt","coal_ore","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":110,"row":["stone","coal_ore","coal_ore","dirt","coal_ore","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":111,"row":["stone","stone","dirt","stone","stone","stone","stone","dirt","dirt","dirt","dirt","dirt"]},{"z":112,"row":["stone","stone","stone","stone","stone","stone","stone","dirt","dirt","dirt","dirt","dirt"]},{"z":113,"row":["stone","stone","stone","stone","stone","stone","stone","dirt","stone","dirt","dirt","dirt"]},{"z":114,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","stone","air","air"]},{"z":115,"row":["stone","stone","stone","stone","stone","stone","stone","stone","stone","grass_block","air","air"]},{"z":116,"row":["air","stone","stone","stone","stone","stone","stone","air","air","dirt","air","air"]}]
+LAYER 65 [{"z":108,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":109,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":110,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":111,"row":["stone","stone","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":112,"row":["stone","stone","stone","stone","dirt","stone","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":113,"row":["dirt","stone","stone","dirt","stone","stone","dirt","dirt","dirt","dirt","dirt","dirt"]},{"z":114,"row":["stone","dirt","dirt","stone","stone","stone","stone","dirt","dirt","dirt","dirt","air"]},{"z":115,"row":["grass_block","dirt","dirt","stone","stone","stone","stone","stone","stone","air","air","air"]},{"z":116,"row":["air","dirt","grass_block","stone","stone","grass_block","air","air","air","air","air","air"]}]
+LAYER 66 [{"z":108,"row":["dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block"]},{"z":109,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","dirt","dirt","grass_block"]},{"z":110,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block","grass_block"]},{"z":111,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block"]},{"z":112,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block"]},{"z":113,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block"]},{"z":114,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block"]},{"z":115,"row":["air","dirt","dirt","dirt","dirt","dirt","dirt","air","dirt","dirt","dirt","air"]},{"z":116,"row":["air","dirt","air","air","dirt","air","air","air","air","air","air","air"]}]
+LAYER 67 [{"z":108,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air","air","air","air"]},{"z":109,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","grass_block","grass_block","air"]},{"z":110,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air","air"]},{"z":111,"row":["dirt","dirt","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air"]},{"z":112,"row":["dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block","air","air","air"]},{"z":113,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block","grass_block","air"]},{"z":114,"row":["dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block","grass_block","air"]},{"z":115,"row":["air","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","dirt","grass_block","grass_block"]},{"z":116,"row":["air","dirt","air","air","dirt","dirt","dirt","dirt","dirt","air","air","grass_block"]}]
+LAYER 68 [{"z":108,"row":["air","air","air","air","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","air"]},{"z":109,"row":["air","air","air","air","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","air"]},{"z":110,"row":["air","air","air","air","air","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","air","air"]},{"z":111,"row":["grass_block","grass_block","air","air","air","air","air","air","air","air","air","air"]},{"z":112,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air","air","air","air"]},{"z":113,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air","air","air"]},{"z":114,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air","air","air"]},{"z":115,"row":["grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","grass_block","air","air"]},{"z":116,"row":["air","grass_block","air","air","grass_block","grass_block","grass_block","dirt","grass_block","grass_block","air","air"]}]
+LAYER 69 [{"z":108,"row":["air","air","air","air","air","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","spruce_leaves","air","air"]},{"z":109,"row":["air","air","air","air","air","air","spruce_leaves","spruce_leaves","spruce_leaves","air","air","air"]},{"z":110,"row":["air","air","air","air","air","air","air","air","air","air","air","spruce_leaves"]},{"z":111,"row":["air","air","air","air","air","air","air","air","air","air","spruce_leaves","spruce_leaves"]},{"z":112,"row":["air","air","air","air","air","air","air","air","air","air","spruce_leaves","spruce_leaves"]},{"z":113,"row":["air","air","air","air","air","air","air","air","air","air","spruce_leaves","spruce_leaves"]},{"z":114,"row":["air","air","air","air","air","air","air","air","air","air","air","spruce_leaves"]},{"z":115,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":116,"row":["air","air","air","air","air","air","air","spruce_log","air","air","air","air"]}]
+LAYER 70 [{"z":108,"row":["air","air","air","air","air","air","air","spruce_leaves","air","air","air","air"]},{"z":109,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":110,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":111,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":112,"row":["air","air","air","air","air","air","air","air","air","air","air","spruce_leaves"]},{"z":113,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":114,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":115,"row":["air","air","air","air","air","air","air","air","air","air","air","air"]},{"z":116,"row":["air","air","air","air","air","air","air","spruce_log","air","air","air","air"]}]
+BERRIES []
+MOBS [{"n":"creeper","p":{"x":80.14146299260902,"y":64,"z":129.86263002422876}},{"n":"player","p":{"x":89.46258943983688,"y":62,"z":111.50002601977707}},{"n":"player","p":{"x":96.4999900441492,"y":62,"z":128.54243121643148}}]
+--- returned ---
+{
+ "at": "2026-10-19T13:37:40.612Z",
+ "p": {
+  "x": 89.46258943983688,
+  "y": 62,
+  "z": 111.50002601977707
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   11,
+   null
+  ],
+  [
+   "dirt",
+   2,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   97
+  ]
+ ],
+ "time": 7710,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p2: P2 iter34 opening: actual96.5/62/128.5 HP6.67 food17 shield/tools nofood. Propose root-window berry test via covered21m extension, then retained eat/heal enabling local supply and food delivery. Mission_owner please accept/name dependency; independent fres
+p2: h observation underway.
+--- p4 now: (89.5, 62, 111.5) in overworld, health 5.9/20, food 17/20, alive

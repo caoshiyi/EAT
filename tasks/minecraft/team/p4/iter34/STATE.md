@@ -1,0 +1,11 @@
+# P4 iter34 work in progress
+Opening 13:37UTC: program/program33 handoff/evolution read in full; mission34 board read when created. P4 ONLY, no agents.
+Official opening_eval.txt: save-all refused, LAST-SAVED dragon0/milestones11/deaths206. No live End observation.
+Actual LIVE12820:89.462589/62/111.500026 HP5.911 food17 all10full/allcontrolsfalse/goalfalse; Pickwear97, Coal2, Table1,C11,D2,Sapling1.
+P2 already owns berry extension at96/62/128 toward149. P4 proposed complementary iron/combat supply for P1 in arena chat12825, ore95/62/106 current observation12826. Mission owner acknowledged request for contributions; specific acceptance pending.
+RUNNING: iron_route.js via op.py, max100s. Protected same-level native tunnel89->95/111 then north106. Every actual leg checks six outer floor/roof/side blocks, cuts reachable head/foot, moves; final seal with available cobble, stops controls. Do not run another program until completion. All receipts persisted by op.py after finish.
+Next: inspect actual iron yield/adjacent veins, fund furnace with actualTable/Cobble; acquire wood for shield/tool as needed. Actual recipient receipt/use remains future.
+Wrapper op.py adapted from tested iter33 with own-path guard; first read-only inspect passed. No sandbox reset, no .work/server/tools access.
+Token usage unavailable from authorized accessible session-history JSON; no search of forbidden locations/estimate.
+
+13:42 actual updates:12832 sameHP native eleven-cell route, RawIron1.12856 P3 pillar method actualadoption ->grounded63/64/65 andLog3, thensealed. Forge12864 failed2x2 crafting updateSlot timeout: partial craftinggrid andcursor retained, not a kit.12874 closed inventory: returned8Planks+Log1, stick4 cursor was stale;12876 cursorclick hadnoactualsticks, furnacecraft passed thenfreshpick recipefailed.12881 table-nativeStick4->freshPick0->smeltIngot1->Shield actual/offhand. No lostHP/food. ActualTable96/65/106,Furnace94/65/106 then12889 retrievedboth, cappedDirt, down3, returnroute stopped95/62/110 because q111 side96 was OPENinternal room. Not hazard; inheritedsinglecell envelope overstrict atmergedroom. Changedmeeting_present explicitly approaches95/62/111, sealsnorth/west and audits16actualouterroomblocks excludinginternal96. Running now; P2actual12879 already96/62/111 with4berries. Donation/usepending. No sandbox.

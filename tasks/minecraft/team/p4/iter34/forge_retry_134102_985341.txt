@@ -1,0 +1,85 @@
+program #12876 on p4: 2.8 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:41:03.122Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",8,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11770,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CURSOR_DEPOSIT 43 stick
+CURSOR_POST {"s":{"at":"2026-10-19T13:41:03.481Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",8,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11770,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false},"cursor":null}
+CUT {"q":{"x":96,"y":65,"z":106},"n":"dirt","state":{"at":"2026-10-19T13:41:04.434Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",8,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11790,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+PLACE {"q":{"x":96,"y":65,"z":106},"name":"crafting_table","state":{"at":"2026-10-19T13:41:04.734Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",8,null],["coal",2,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}}
+CRAFT furnace {"at":"2026-10-19T13:41:05.516Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",4,null],["spruce_planks",8,null],["furnace",1,null],["coal",2,null],["dirt",10,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAILURE Error: recipe stone_pickaxe
+ENDING {"at":"2026-10-19T13:41:05.517Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",4,null],["spruce_planks",8,null],["furnace",1,null],["coal",2,null],["dirt",10,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"crafting_table","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+ENDING {"at":"2026-10-19T13:41:05.667Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",4,null],["spruce_planks",8,null],["furnace",1,null],["coal",2,null],["dirt",10,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11810,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"crafting_table","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+ENDING {"at":"2026-10-19T13:41:05.820Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["cobblestone",4,null],["spruce_planks",8,null],["furnace",1,null],["coal",2,null],["dirt",10,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",1,null]],"time":11830,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"crafting_table","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T13:41:05.969Z",
+ "p": {
+  "x": 95.49988426728217,
+  "y": 65,
+  "z": 106.53435772637468
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "cobblestone",
+   4,
+   null
+  ],
+  [
+   "spruce_planks",
+   8,
+   null
+  ],
+  [
+   "furnace",
+   1,
+   null
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "dirt",
+   10,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   105
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ],
+  [
+   "spruce_log",
+   1,
+   null
+  ]
+ ],
+ "time": 11830,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+(none)
+--- p4 now: (95.5, 65, 106.5) in overworld, health 5.9/20, food 17/20, alive

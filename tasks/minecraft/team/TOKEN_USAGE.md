@@ -138,3 +138,5 @@ Iteration33 P4 actual donation checkpoint — 2026-10-19 12:19 UTC: token usage 
 Iteration33 P4 final checkpoint — 2026-10-19 13:29 UTC: token usage unavailable from an authorized available session-history source. No estimate or prohibited history-path inspection. Actual operations, failures, closure evaluator/failed-save warning and idle-loss reconciliation retained in owned handoff.
 
 Iteration33 P4 freshness seal commit — 2026-10-19 13:30 UTC: token usage unavailable from an authorized available session-history source. No estimate. LIVE12815 refreshed/verified all three final world samples before publication.
+
+Iteration34 P4 capability checkpoint —2026-10-19 13:42UTC: token usage unavailable from an authorized accessible session-history JSON source. No estimate. Failed partial crafts, recovery, actual retained shield/freshpick and inherited merged-room guard failure logged in owned receipts.

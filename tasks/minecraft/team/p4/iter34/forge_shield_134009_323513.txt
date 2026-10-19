@@ -1,0 +1,79 @@
+program #12864 on p4: 20.5 s
+--- output ---
+SOURCE {"at":"2026-10-19T13:40:09.455Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null],["spruce_log",3,null]],"time":10690,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+CRAFT spruce_planks {"at":"2026-10-19T13:40:09.560Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",4,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null]],"time":10690,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
+FAILURE Error: Error: Event updateSlot:0 did not fire within timeout of 20000ms
+ENDING {"at":"2026-10-19T13:40:29.567Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",6,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null]],"time":11090,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+ENDING {"at":"2026-10-19T13:40:29.691Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",6,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null]],"time":11110,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+ENDING {"at":"2026-10-19T13:40:29.841Z","p":{"x":95.49988426728217,"y":65,"z":106.53435772637468},"hp":5.911142349243164,"food":17,"ground":true,"inv":[["spruce_planks",6,null],["coal",2,null],["crafting_table",1,null],["cobblestone",12,null],["dirt",9,null],["spruce_sapling",1,null],["stone_pickaxe",1,105],["raw_iron",1,null]],"time":11110,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"faces":[{"q":{"x":95,"y":64,"z":106},"n":"cobblestone","full":true},{"q":{"x":95,"y":67,"z":106},"n":"cobblestone","full":true},{"q":{"x":96,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":96,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":94,"y":65,"z":106},"n":"dirt","full":true},{"q":{"x":94,"y":66,"z":106},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":107},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":107},"n":"grass_block","full":true},{"q":{"x":95,"y":65,"z":105},"n":"dirt","full":true},{"q":{"x":95,"y":66,"z":105},"n":"grass_block","full":true}]}
+--- returned ---
+{
+ "at": "2026-10-19T13:40:29.992Z",
+ "p": {
+  "x": 95.49988426728217,
+  "y": 65,
+  "z": 106.53435772637468
+ },
+ "hp": 5.911142349243164,
+ "food": 17,
+ "ground": true,
+ "inv": [
+  [
+   "spruce_planks",
+   6,
+   null
+  ],
+  [
+   "coal",
+   2,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "cobblestone",
+   12,
+   null
+  ],
+  [
+   "dirt",
+   9,
+   null
+  ],
+  [
+   "spruce_sapling",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   105
+  ],
+  [
+   "raw_iron",
+   1,
+   null
+  ]
+ ],
+ "time": 11110,
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goalPresent": false
+}
+--- chat since this player's previous program ---
+p2: P2 actual12851 berries2 retained from root-drop, sameHP cap restored;12855 consumed1 HP6.667->7.667 food17->18,1left. P4 please concrete covered meeting for receipt/eat (can return96/62/111). Second mature bush100/64/152 only5m nearby; harvesting small ext
+p2: ra before return. P1 accepted dependency proceeding.
+p3: Focused lookup: actual11334 station1/65/4 ->1/65/5 ->1/66/6 ->0/67/6 ->0/67/57 ->-19/65/48. Cut table1/66/5 + blackstone1/65/5; restored behind. Literal11338 FAILED at-32/63/46, cleanup landed-32/59/46. Changed live11344 dug down there to53;11349..52 cover
+p3: ed bypass to-54/53/62. Fresh shaft ACTUAL -56/53/64 -> down45 ->-56/8/64 ->-54/8/64. Pulling exact bypass actual nodes now; avoid blind upper literal.
+--- p4 now: (95.5, 65, 106.5) in overworld, health 5.9/20, food 17/20, alive
