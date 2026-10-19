@@ -1,0 +1,18 @@
+program #13137 on p2: 4.4 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:13:47.403Z","p":{"x":10.5,"y":61,"z":92.5},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["sweet_berries",2,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",20,null],["dirt",54,null],["cobblestone",35,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,35],["stone_sword",1,0],["stone_pickaxe",1,1]],"column":[[59,"stone"],[60,"cobblestone"],[61,"air"],[62,"air"],[63,"cobblestone"]],"peer":{"x":8.531987001876656,"y":61,"z":90.7}}
+DIG_POST {"q":{"x":10,"y":60,"z":92},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":10,"y":60,"z":92},"n":"cobblestone","p":{"x":10.5,"y":60.76636799395752,"z":92.5}}
+DIG_POST {"q":{"x":9,"y":61,"z":92},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":9,"y":61,"z":92},"n":"cobblestone","p":{"x":10.5,"y":60,"z":92.5}}
+DIG_POST {"q":{"x":9,"y":60,"z":92},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":9,"y":60,"z":92},"n":"cobblestone","p":{"x":10.5,"y":60,"z":92.5}}
+WALK {"at":"2026-10-19T14:13:51.140Z","p":{"x":9.486985379190632,"y":60,"z":92.49999999999991},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["sweet_berries",2,null],["torch",3,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",20,null],["dirt",54,null],["cobblestone",38,null],["cobblestone",63,null],["crafting_table",1,null],["stone_pickaxe",1,38],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+WALK {"at":"2026-10-19T14:13:51.757Z","p":{"x":9.501038556635375,"y":60,"z":91.48885867995313},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["sweet_berries",2,null],["torch",3,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",20,null],["dirt",54,null],["cobblestone",38,null],["cobblestone",63,null],["crafting_table",1,null],["stone_pickaxe",1,38],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+ENDING {"at":"2026-10-19T14:13:51.757Z","p":{"x":9.501038556635375,"y":60,"z":91.48885867995313},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["sweet_berries",2,null],["torch",3,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",20,null],["dirt",54,null],["cobblestone",38,null],["cobblestone",63,null],["crafting_table",1,null],["stone_pickaxe",1,38],["stone_sword",1,0],["stone_pickaxe",1,1]],"faces":[{"q":{"x":9,"y":59,"z":91},"n":"stone","full":true},{"q":{"x":9,"y":62,"z":91},"n":"sandstone","full":true},{"q":{"x":10,"y":60,"z":91},"n":"sandstone","full":true},{"q":{"x":10,"y":61,"z":91},"n":"sand","full":true},{"q":{"x":8,"y":60,"z":91},"n":"cobblestone","full":true},{"q":{"x":8,"y":61,"z":91},"n":"air","full":false},{"q":{"x":9,"y":60,"z":92},"n":"air","full":false},{"q":{"x":9,"y":61,"z":92},"n":"air","full":false},{"q":{"x":9,"y":60,"z":90},"n":"air","full":false},{"q":{"x":9,"y":61,"z":90},"n":"air","full":false}],"peer":{"x":8.531987001876656,"y":61,"z":90.7}}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P2 receiver13130 exact8.5/61/90.700 HP9.911/17 stable, southwindow8/61/91AIR withSandstone62kept. SourceC23/D69. OneBerrytest canland+consume; programwaiting25s now, sameposeasqualifiedP3. Afteractualreceipt Table+Stick3+Torch1+seedBerry1 fundHOMEfarm/tool
+p4: s, retainyourP1Shield/freshPickpacket untilnamedrecipientnear.
+--- p2 now: (9.5, 60, 91.5) in overworld, health 12.7/20, food 16/20, alive

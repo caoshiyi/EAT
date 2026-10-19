@@ -1,0 +1,14 @@
+program #13105 on p2: 4.3 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:09:24.833Z","p":{"x":96.50000995585421,"y":62,"z":111.45756878356855},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",47,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["sweet_berries",3,null],["dirt",42,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+DIG_POST {"q":{"x":95,"y":63,"z":111},"original":"dirt","post":"air"}
+CUT {"q":{"x":95,"y":63,"z":111},"n":"dirt","p":{"x":96.50000995585421,"y":62,"z":111.45756878356855}}
+DIG_POST {"q":{"x":95,"y":62,"z":111},"original":"dirt","post":"air"}
+CUT {"q":{"x":95,"y":62,"z":111},"n":"dirt","p":{"x":96.50000995585421,"y":62,"z":111.45756878356855}}
+WALK {"at":"2026-10-19T14:09:28.695Z","p":{"x":95.48898452210967,"y":62,"z":111.5010362086855},"hp":10.666666030883789,"food":18,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",47,null],["sweet_berries",2,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",44,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+ENDING {"at":"2026-10-19T14:09:29.146Z","p":{"x":95.45973722391878,"y":62,"z":111.5010362086855},"hp":10.666666030883789,"food":18,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["sweet_berries",2,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",45,null],["dirt",44,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"faces":[{"q":{"x":95,"y":61,"z":111},"n":"stone","full":true},{"q":{"x":95,"y":64,"z":111},"n":"dirt","full":true},{"q":{"x":96,"y":62,"z":111},"n":"dirt","full":true},{"q":{"x":96,"y":63,"z":111},"n":"dirt","full":true},{"q":{"x":94,"y":62,"z":111},"n":"air","full":false},{"q":{"x":94,"y":63,"z":111},"n":"air","full":false},{"q":{"x":95,"y":62,"z":112},"n":"stone","full":true},{"q":{"x":95,"y":63,"z":112},"n":"stone","full":true},{"q":{"x":95,"y":62,"z":110},"n":"cobblestone","full":true},{"q":{"x":95,"y":63,"z":110},"n":"cobblestone","full":true}],"crop":{"age":"1"},"above":"air","torch":"torch"}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (95.5, 62, 111.5) in overworld, health 10.7/20, food 18/20, alive

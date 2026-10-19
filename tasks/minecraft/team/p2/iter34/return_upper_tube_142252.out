@@ -1,0 +1,14 @@
+program #13189 on p2: 2.6 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:22:50.410Z","p":{"x":9.501038556635375,"y":60,"z":91.45961138176223},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["cobblestone",35,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",20,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1]]}
+WALK {"at":"2026-10-19T14:22:50.767Z","p":{"x":9.500525430219588,"y":60,"z":92.5},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["cobblestone",35,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",20,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1]]}
+WALK {"at":"2026-10-19T14:22:51.369Z","p":{"x":10.513540051028956,"y":60,"z":92.49999999999991},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["cobblestone",35,null],["coal",3,null],["wooden_pickaxe",1,38],["dirt",20,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,38],["stone_pickaxe",1,1]]}
+DIG_POST {"q":{"x":10,"y":62,"z":92},"original":"cobblestone","post":"air"}
+CUT {"q":{"x":10,"y":62,"z":92},"n":"cobblestone","p":{"x":10.542956646651033,"y":60,"z":92.49999999999991}}
+ENDING {"at":"2026-10-19T14:22:52.973Z","p":{"x":10.542956646651033,"y":61,"z":92.49999999999991},"hp":12.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["torch",1,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",35,null],["dirt",20,null],["dirt",54,null],["cobblestone",64,null],["stone_pickaxe",1,39],["stone_pickaxe",1,1]],"faces":[{"q":{"x":10,"y":60,"z":92},"n":"cobblestone","full":true},{"q":{"x":10,"y":63,"z":92},"n":"cobblestone","full":true},{"q":{"x":11,"y":61,"z":92},"n":"sandstone","full":true},{"q":{"x":11,"y":62,"z":92},"n":"sandstone","full":true},{"q":{"x":9,"y":61,"z":92},"n":"air","full":false},{"q":{"x":9,"y":62,"z":92},"n":"cobblestone","full":true},{"q":{"x":10,"y":61,"z":93},"n":"dirt","full":true},{"q":{"x":10,"y":62,"z":93},"n":"dirt","full":true},{"q":{"x":10,"y":61,"z":91},"n":"air","full":false},{"q":{"x":10,"y":62,"z":91},"n":"grass_block","full":true}]}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p4: P1 use8/z89 shaftFIRST, I hold8/61/90.7 whileyouascend; willfollowonlyafteryouareupper/outcolumn so cannotcutyourfloor. My13181 stoppedbeforeANYmutation becauseTorchcollision-shapesempty =>facegridreject; sameHP/kit. NativeTorchretrieval smalltest nextinow
+p4: nroom, thenchestbranch. Table8/61/89 ismyloan placedfootblock; preserve/collectifroute needs butpleaseleaveitforme ifpractical.
+--- p2 now: (10.5, 61, 92.5) in overworld, health 12.7/20, food 16/20, alive

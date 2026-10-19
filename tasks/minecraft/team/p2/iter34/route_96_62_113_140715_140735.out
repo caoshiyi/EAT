@@ -1,0 +1,257 @@
+program #13090 on p2: 20.2 s
+--- output ---
+SOURCE {"at":"2026-10-19T14:07:15.522Z","p":{"x":96.45756878356855,"y":62,"z":148.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",53,null],["dirt",35,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"target":{"x":96,"y":62,"z":113},"distance":35.50294873938918,"faces":[{"q":{"x":96,"y":61,"z":148},"n":"grass_block","full":true},{"q":{"x":96,"y":64,"z":148},"n":"dirt","full":true},{"q":{"x":97,"y":62,"z":148},"n":"dirt","full":true},{"q":{"x":97,"y":63,"z":148},"n":"dirt","full":true},{"q":{"x":95,"y":62,"z":148},"n":"sand","full":true},{"q":{"x":95,"y":63,"z":148},"n":"sand","full":true},{"q":{"x":96,"y":62,"z":149},"n":"sand","full":true},{"q":{"x":96,"y":63,"z":149},"n":"sand","full":true},{"q":{"x":96,"y":62,"z":147},"n":"dirt","full":true},{"q":{"x":96,"y":63,"z":147},"n":"dirt","full":true}]}
+DIG_POST {"q":{"x":96,"y":63,"z":147},"original":"dirt","post":"air"}
+CUT {"q":{"x":96,"y":63,"z":147},"n":"dirt","p":{"x":96.45756878356855,"y":62,"z":148.5}}
+DIG_POST {"q":{"x":96,"y":62,"z":147},"original":"dirt","post":"air"}
+CUT {"q":{"x":96,"y":62,"z":147},"n":"dirt","p":{"x":96.45756878356855,"y":62,"z":148.5}}
+WALK {"at":"2026-10-19T14:07:17.786Z","p":{"x":96.50103620868558,"y":62,"z":147.48897456625545},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:17.786Z","p":{"x":96.50103620868558,"y":62,"z":147.48897456625545},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":1,"target":{"x":96,"y":62,"z":113},"distance":34.49261375880681,"gain":1.0103349805823711}
+WALK {"at":"2026-10-19T14:07:18.237Z","p":{"x":96.5005230822699,"y":62,"z":146.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:18.237Z","p":{"x":96.5005230822699,"y":62,"z":146.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":2,"target":{"x":96,"y":62,"z":113},"distance":33.503738945912964,"gain":1.9992097934762185}
+WALK {"at":"2026-10-19T14:07:18.839Z","p":{"x":96.50000995585421,"y":62,"z":145.4869863343604},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:18.839Z","p":{"x":96.50000995585421,"y":62,"z":145.4869863343604},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":3,"target":{"x":96,"y":62,"z":113},"distance":32.4908339542843,"gain":3.0121147851048846}
+WALK {"at":"2026-10-19T14:07:19.301Z","p":{"x":96.50000995585421,"y":62,"z":144.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:19.301Z","p":{"x":96.50000995585421,"y":62,"z":144.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":4,"target":{"x":96,"y":62,"z":113},"distance":31.503968162057827,"gain":3.9989805773313556}
+WALK {"at":"2026-10-19T14:07:19.901Z","p":{"x":96.50000995585421,"y":62,"z":143.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:19.901Z","p":{"x":96.50000995585421,"y":62,"z":143.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":5,"target":{"x":96,"y":62,"z":113},"distance":30.49108537699076,"gain":5.011863362398422}
+WALK {"at":"2026-10-19T14:07:20.353Z","p":{"x":96.50000995585421,"y":62,"z":142.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:20.353Z","p":{"x":96.50000995585421,"y":62,"z":142.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":6,"target":{"x":96,"y":62,"z":113},"distance":29.504237152584597,"gain":5.9987115868045855}
+WALK {"at":"2026-10-19T14:07:20.955Z","p":{"x":96.50000995585421,"y":62,"z":141.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:20.955Z","p":{"x":96.50000995585421,"y":62,"z":141.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":7,"target":{"x":96,"y":62,"z":113},"distance":28.491373184705875,"gain":7.011575554683308}
+WALK {"at":"2026-10-19T14:07:21.406Z","p":{"x":96.50000995585421,"y":62,"z":140.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:21.406Z","p":{"x":96.50000995585421,"y":62,"z":140.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":8,"target":{"x":96,"y":62,"z":113},"distance":27.504545259937554,"gain":7.998403479451628}
+WALK {"at":"2026-10-19T14:07:22.006Z","p":{"x":96.50000995585421,"y":62,"z":139.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:22.006Z","p":{"x":96.50000995585421,"y":62,"z":139.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":9,"target":{"x":96,"y":62,"z":113},"distance":26.491704445607393,"gain":9.01124429378179}
+WALK {"at":"2026-10-19T14:07:22.456Z","p":{"x":96.50000995585421,"y":62,"z":138.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:22.456Z","p":{"x":96.50000995585421,"y":62,"z":138.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":10,"target":{"x":96,"y":62,"z":113},"distance":25.50490168489095,"gain":9.998047054498233}
+WALK {"at":"2026-10-19T14:07:23.059Z","p":{"x":96.50000995585421,"y":62,"z":137.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:23.059Z","p":{"x":96.50000995585421,"y":62,"z":137.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":11,"target":{"x":96,"y":62,"z":113},"distance":24.492089802968056,"gain":11.010858936421126}
+WALK {"at":"2026-10-19T14:07:23.509Z","p":{"x":96.50000995585421,"y":62,"z":136.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:23.509Z","p":{"x":96.50000995585421,"y":62,"z":136.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":12,"target":{"x":96,"y":62,"z":113},"distance":23.50531875886718,"gain":11.997629980522003}
+WALK {"at":"2026-10-19T14:07:24.112Z","p":{"x":96.50000995585421,"y":62,"z":135.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:24.113Z","p":{"x":96.50000995585421,"y":62,"z":135.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":13,"target":{"x":96,"y":62,"z":113},"distance":22.49254368451663,"gain":13.010405054872553}
+WALK {"at":"2026-10-19T14:07:24.563Z","p":{"x":96.50000995585421,"y":62,"z":134.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:24.563Z","p":{"x":96.50000995585421,"y":62,"z":134.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":14,"target":{"x":96,"y":62,"z":113},"distance":21.50581339907778,"gain":13.997135340311402}
+WALK {"at":"2026-10-19T14:07:25.164Z","p":{"x":96.50000995585421,"y":62,"z":133.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:25.164Z","p":{"x":96.50000995585421,"y":62,"z":133.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",37,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":15,"target":{"x":96,"y":62,"z":113},"distance":20.49308614833613,"gain":15.009862591053054}
+DIG_POST {"q":{"x":96,"y":63,"z":132},"original":"dirt","post":"air"}
+CUT {"q":{"x":96,"y":63,"z":132},"n":"dirt","p":{"x":96.50000995585421,"y":62,"z":133.4575687835686}}
+DIG_POST {"q":{"x":96,"y":62,"z":132},"original":"dirt","post":"air"}
+CUT {"q":{"x":96,"y":62,"z":132},"n":"dirt","p":{"x":96.50000995585421,"y":62,"z":133.4575687835686}}
+WALK {"at":"2026-10-19T14:07:27.419Z","p":{"x":96.50000995585421,"y":62,"z":132.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",38,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:27.419Z","p":{"x":96.50000995585421,"y":62,"z":132.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",38,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":16,"target":{"x":96,"y":62,"z":113},"distance":19.506409458328136,"gain":15.996539281061047}
+WALK {"at":"2026-10-19T14:07:28.020Z","p":{"x":96.50000995585421,"y":62,"z":131.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:28.020Z","p":{"x":96.50000995585421,"y":62,"z":131.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":17,"target":{"x":96,"y":62,"z":113},"distance":18.493745925754563,"gain":17.00920281363462}
+WALK {"at":"2026-10-19T14:07:28.472Z","p":{"x":96.50000995585421,"y":62,"z":130.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:28.472Z","p":{"x":96.50000995585421,"y":62,"z":130.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":18,"target":{"x":96,"y":62,"z":113},"distance":17.50714168435137,"gain":17.99580705503781}
+WALK {"at":"2026-10-19T14:07:29.073Z","p":{"x":96.50000995585421,"y":62,"z":129.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:29.073Z","p":{"x":96.50000995585421,"y":62,"z":129.48698537919068},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":19,"target":{"x":96,"y":62,"z":113},"distance":16.494565676294744,"gain":19.00838306309444}
+WALK {"at":"2026-10-19T14:07:29.524Z","p":{"x":96.50000995585421,"y":62,"z":128.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:29.524Z","p":{"x":96.50000995585421,"y":62,"z":128.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":20,"target":{"x":96,"y":62,"z":113},"distance":15.508062740263638,"gain":19.994885999125543}
+WALK {"at":"2026-10-19T14:07:30.127Z","p":{"x":96.50000995585421,"y":62,"z":127.48698537919064},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:30.127Z","p":{"x":96.50000995585421,"y":62,"z":127.48698537919064},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":21,"target":{"x":96,"y":62,"z":113},"distance":14.495611588782198,"gain":21.007337150606986}
+WALK {"at":"2026-10-19T14:07:30.528Z","p":{"x":96.50000995585421,"y":62,"z":126.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:30.528Z","p":{"x":96.50000995585421,"y":62,"z":126.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":22,"target":{"x":96,"y":62,"z":113},"distance":13.509256454592657,"gain":21.993692284796523}
+WALK {"at":"2026-10-19T14:07:31.129Z","p":{"x":96.50000995585421,"y":62,"z":125.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:31.129Z","p":{"x":96.50000995585421,"y":62,"z":125.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":23,"target":{"x":96,"y":62,"z":113},"distance":12.496992190766283,"gain":23.005956548622898}
+WALK {"at":"2026-10-19T14:07:31.579Z","p":{"x":96.50000995585421,"y":62,"z":124.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:31.579Z","p":{"x":96.50000995585421,"y":62,"z":124.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":24,"target":{"x":96,"y":62,"z":113},"distance":11.510864865680308,"gain":23.992083873708875}
+WALK {"at":"2026-10-19T14:07:32.180Z","p":{"x":96.50000995585421,"y":62,"z":123.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:32.180Z","p":{"x":96.50000995585421,"y":62,"z":123.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":25,"target":{"x":96,"y":62,"z":113},"distance":10.498898623156194,"gain":25.00405011623299}
+WALK {"at":"2026-10-19T14:07:32.632Z","p":{"x":96.50000995585421,"y":62,"z":122.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:32.632Z","p":{"x":96.50000995585421,"y":62,"z":122.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":26,"target":{"x":96,"y":62,"z":113},"distance":9.513149318493499,"gain":25.989799420895686}
+WALK {"at":"2026-10-19T14:07:33.233Z","p":{"x":96.50000995585421,"y":62,"z":121.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:33.233Z","p":{"x":96.50000995585421,"y":62,"z":121.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":27,"target":{"x":96,"y":62,"z":113},"distance":8.50170164040991,"gain":27.00124709897927}
+WALK {"at":"2026-10-19T14:07:33.683Z","p":{"x":96.50000995585421,"y":62,"z":120.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:33.683Z","p":{"x":96.50000995585421,"y":62,"z":120.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":28,"target":{"x":96,"y":62,"z":113},"distance":7.516648851446589,"gain":27.986299887942593}
+WALK {"at":"2026-10-19T14:07:34.284Z","p":{"x":96.50000995585421,"y":62,"z":119.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:34.284Z","p":{"x":96.50000995585421,"y":62,"z":119.48698537919061},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":29,"target":{"x":96,"y":62,"z":113},"distance":6.506226960826536,"gain":28.996721778562645}
+WALK {"at":"2026-10-19T14:07:34.735Z","p":{"x":96.50000995585421,"y":62,"z":118.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]]}
+FOOD_NET_PROGRESS {"at":"2026-10-19T14:07:34.735Z","p":{"x":96.50000995585421,"y":62,"z":118.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["dirt",53,null],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"steps":30,"target":{"x":96,"y":62,"z":113},"distance":5.522681409963219,"gain":29.980267329425963}
+ENDING {"at":"2026-10-19T14:07:35.688Z","p":{"x":96.50000995585421,"y":62,"z":118.5},"hp":10.666666030883789,"food":16,"dim":"overworld","ground":true,"inv":[["stick",5,null],["stone_pickaxe",1,0],["cobblestone",64,null],["coal",3,null],["wooden_pickaxe",1,38],["cobblestone",64,null],["dirt",49,null],["dirt",39,null],["cobblestone",16,null],["torch",3,null],["crafting_table",1,null],["stone_pickaxe",1,16],["stone_sword",1,0],["stone_pickaxe",1,1]],"faces":[{"q":{"x":96,"y":61,"z":118},"n":"stone","full":true},{"q":{"x":96,"y":64,"z":118},"n":"grass_block","full":true},{"q":{"x":97,"y":62,"z":118},"n":"dirt","full":true},{"q":{"x":97,"y":63,"z":118},"n":"grass_block","full":true},{"q":{"x":95,"y":62,"z":118},"n":"dirt","full":true},{"q":{"x":95,"y":63,"z":118},"n":"grass_block","full":true},{"q":{"x":96,"y":62,"z":119},"n":"dirt","full":true},{"q":{"x":96,"y":63,"z":119},"n":"dirt","full":true},{"q":{"x":96,"y":62,"z":117},"n":"dirt","full":true},{"q":{"x":96,"y":63,"z":117},"n":"dirt","full":true}],"steps":30,"reason":"budget"}
+--- returned ---
+{
+ "at": "2026-10-19T14:07:35.688Z",
+ "p": {
+  "x": 96.50000995585421,
+  "y": 62,
+  "z": 118.5
+ },
+ "hp": 10.666666030883789,
+ "food": 16,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [
+  [
+   "stick",
+   5,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   0
+  ],
+  [
+   "cobblestone",
+   64,
+   null
+  ],
+  [
+   "coal",
+   3,
+   null
+  ],
+  [
+   "wooden_pickaxe",
+   1,
+   38
+  ],
+  [
+   "cobblestone",
+   64,
+   null
+  ],
+  [
+   "dirt",
+   49,
+   null
+  ],
+  [
+   "dirt",
+   39,
+   null
+  ],
+  [
+   "cobblestone",
+   16,
+   null
+  ],
+  [
+   "torch",
+   3,
+   null
+  ],
+  [
+   "crafting_table",
+   1,
+   null
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   16
+  ],
+  [
+   "stone_sword",
+   1,
+   0
+  ],
+  [
+   "stone_pickaxe",
+   1,
+   1
+  ]
+ ],
+ "faces": [
+  {
+   "q": {
+    "x": 96,
+    "y": 61,
+    "z": 118
+   },
+   "n": "stone",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 96,
+    "y": 64,
+    "z": 118
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 97,
+    "y": 62,
+    "z": 118
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 97,
+    "y": 63,
+    "z": 118
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 95,
+    "y": 62,
+    "z": 118
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 95,
+    "y": 63,
+    "z": 118
+   },
+   "n": "grass_block",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 96,
+    "y": 62,
+    "z": 119
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 96,
+    "y": 63,
+    "z": 119
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 96,
+    "y": 62,
+    "z": 117
+   },
+   "n": "dirt",
+   "full": true
+  },
+  {
+   "q": {
+    "x": 96,
+    "y": 63,
+    "z": 117
+   },
+   "n": "dirt",
+   "full": true
+  }
+ ],
+ "steps": 30,
+ "reason": "budget",
+ "net": 29.980267329425963
+}
+--- chat since this player's previous program ---
+p3: 13086 freshnewshaftsurvey: -55/z64 centre10..52 FULL/no cardinalfluids, AIR8+9 withFULL7 =>final3mroomdrop willrequirelandingreconcile. -55/z63same; -53/z64fullinclQuartzOre. Chosen-55/64. ENTRY-55/53/62 hasFLOOR52AIR42m oldshaft, willcutbodythenbridgefloo
+p3: rBEFOREmove. No claimsourceuntilpost. Bed1safe20/20at-54/53/62.
+[server] p1 was shot by Skeleton
+--- p2 now: (96.5, 62, 118.5) in overworld, health 10.7/20, food 16/20, alive
