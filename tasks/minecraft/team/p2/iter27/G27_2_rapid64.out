@@ -1,0 +1,36 @@
+[sandbox] program #137 on p2: 1 s
+--- output ---
+ENVIRONMENT SANDBOX G27-2 rapid transient ascent/one Snow/soft-spine retreat; LIVE effect NONE
+FAILURE Error: source changed {"p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"fired":false}
+RECOVERY_FAILURE Error: retreat life/dimension/budget {"at":"2026-10-19T00:08:40.055Z","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+RAPID_POST {"at":"2026-10-19T00:08:41.010Z","elapsedMs":957,"state":{"at":"2026-10-19T00:08:41.010Z","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"dim":"overworld","ground":true,"inv":[],"wear":[],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"fired":false,"cleared":false,"beforeSnow":0,"afterSnow":0,"targetPresent":null,"flight":[],"events":[],"crystals":[]}
+OPERATION_GUARD {"startHp":20,"hp":20,"damaged":false,"dead":false,"mode":"escape","failures":[]}
+HAZARD_TRACE {"rows":[{"at":"2026-10-19T00:08:40.053Z","ms":0,"event":"start","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:08:40.257Z","ms":204,"event":"sample","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:08:40.508Z","ms":455,"event":"sample","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:08:40.759Z","ms":706,"event":"sample","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:08:41.009Z","ms":956,"event":"sample","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]},{"at":"2026-10-19T00:08:41.010Z","ms":957,"event":"stop","p":{"x":-6.5,"y":69,"z":-23.5},"hp":20,"food":20,"ground":true,"loadedHazardCount":0,"entities":[]}],"dropped":0,"elapsedMs":957,"listenersRemoved":true}
+--- returned ---
+{
+ "at": "2026-10-19T00:08:41.010Z",
+ "p": {
+  "x": -6.5,
+  "y": 69,
+  "z": -23.5
+ },
+ "hp": 20,
+ "food": 20,
+ "dim": "overworld",
+ "ground": true,
+ "inv": [],
+ "wear": [],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+[server] p2 was killed by Ender Dragon using magic
+--- p2 now: (-6.5, 69, -23.5) in overworld, health 20/20, food 20/20, alive

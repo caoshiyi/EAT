@@ -1,0 +1,140 @@
+[sandbox] program #128 on p2: 5.1 s
+--- output ---
+ENVIRONMENT SANDBOX G27-1 freshly copied LIVE58/10HP/Snow4; provenance clarification ITER27_EVIDENCE read; helper claims independently rechecked here
+START {"at":"2026-10-18T23:56:54.083Z","p":{"x":5.5,"y":58,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",13],["end_stone",4],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",10,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 5, y: 57, z: 3 } basalt {"at":"2026-10-18T23:56:55.250Z","p":{"x":5.5,"y":57,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",13],["end_stone",4],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",11,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+CUT Vec3 { x: 5, y: 56, z: 3 } basalt {"at":"2026-10-18T23:56:56.905Z","p":{"x":5.5,"y":56,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",14],["end_stone",4],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",12,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+PUT Vec3 { x: 6, y: 56, z: 3 } end_stone
+PUT Vec3 { x: 4, y: 56, z: 3 } end_stone
+PUT Vec3 { x: 5, y: 58, z: 3 } end_stone
+ENDING {"state":{"at":"2026-10-18T23:56:58.468Z","p":{"x":5.5,"y":56,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",15],["end_stone",1],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",12,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":5,"y":55,"z":3},"name":"basalt","full":true},{"p":{"x":5,"y":58,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":57,"z":3},"name":"netherrack","full":true},{"p":{"x":4,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":4,"y":57,"z":3},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":2},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":2},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-18T23:56:58.722Z","p":{"x":5.5,"y":56,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",15],["end_stone",1],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",12,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":5,"y":55,"z":3},"name":"basalt","full":true},{"p":{"x":5,"y":58,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":57,"z":3},"name":"netherrack","full":true},{"p":{"x":4,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":4,"y":57,"z":3},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":2},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":2},"name":"end_stone","full":true}]}
+ENDING {"state":{"at":"2026-10-18T23:56:58.973Z","p":{"x":5.5,"y":56,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",15],["end_stone",1],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",12,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null},"faces":[{"p":{"x":5,"y":55,"z":3},"name":"basalt","full":true},{"p":{"x":5,"y":58,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":6,"y":57,"z":3},"name":"netherrack","full":true},{"p":{"x":4,"y":56,"z":3},"name":"end_stone","full":true},{"p":{"x":4,"y":57,"z":3},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":4},"name":"end_stone","full":true},{"p":{"x":5,"y":56,"z":2},"name":"end_stone","full":true},{"p":{"x":5,"y":57,"z":2},"name":"end_stone","full":true}]}
+TRIAL_DESCENT_RETAINED {"at":"2026-10-18T23:56:59.227Z","p":{"x":5.5,"y":56,"z":3.500129490718575},"hp":10,"food":17,"dim":"the_end","ground":true,"inv":[["sandstone",1],["cobbled_deepslate",14],["blackstone",30],["wooden_pickaxe",1],["nether_bricks",6],["snowball",4],["stick",1],["mossy_stone_bricks",7],["cracked_stone_bricks",1],["stone_bricks",9],["stone_sword",1],["crafting_table",1],["stone_shovel",1],["basalt",15],["end_stone",1],["sand",2],["stone_pickaxe",1],["stone_pickaxe",1]],"wear":[["wooden_pickaxe",3,59],["stone_sword",2,131],["stone_shovel",5,131],["stone_pickaxe",12,131],["stone_pickaxe",52,131]],"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goal":null}
+--- returned ---
+{
+ "at": "2026-10-18T23:56:59.227Z",
+ "p": {
+  "x": 5.5,
+  "y": 56,
+  "z": 3.500129490718575
+ },
+ "hp": 10,
+ "food": 17,
+ "dim": "the_end",
+ "ground": true,
+ "inv": [
+  [
+   "sandstone",
+   1
+  ],
+  [
+   "cobbled_deepslate",
+   14
+  ],
+  [
+   "blackstone",
+   30
+  ],
+  [
+   "wooden_pickaxe",
+   1
+  ],
+  [
+   "nether_bricks",
+   6
+  ],
+  [
+   "snowball",
+   4
+  ],
+  [
+   "stick",
+   1
+  ],
+  [
+   "mossy_stone_bricks",
+   7
+  ],
+  [
+   "cracked_stone_bricks",
+   1
+  ],
+  [
+   "stone_bricks",
+   9
+  ],
+  [
+   "stone_sword",
+   1
+  ],
+  [
+   "crafting_table",
+   1
+  ],
+  [
+   "stone_shovel",
+   1
+  ],
+  [
+   "basalt",
+   15
+  ],
+  [
+   "end_stone",
+   1
+  ],
+  [
+   "sand",
+   2
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ],
+  [
+   "stone_pickaxe",
+   1
+  ]
+ ],
+ "wear": [
+  [
+   "wooden_pickaxe",
+   3,
+   59
+  ],
+  [
+   "stone_sword",
+   2,
+   131
+  ],
+  [
+   "stone_shovel",
+   5,
+   131
+  ],
+  [
+   "stone_pickaxe",
+   12,
+   131
+  ],
+  [
+   "stone_pickaxe",
+   52,
+   131
+  ]
+ ],
+ "controls": {
+  "forward": false,
+  "back": false,
+  "left": false,
+  "right": false,
+  "jump": false,
+  "sprint": false,
+  "sneak": false
+ },
+ "goal": null
+}
+--- chat since this player's previous program ---
+(none)
+--- p2 now: (5.5, 56, 3.5) in the_end, health 10/20, food 17/20, alive
