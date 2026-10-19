@@ -1,0 +1,10 @@
+# Materially changed experiment — natural-ground shot and walking retreat
+Actual drafting00:25 UTC. G3 tall64column method RETIRED after observed incoming fireball/cloud/failed mining retreat; third originaleffectgate00:21missed. No Snow fired yet. LIVE retains deep50/10HP/Snow4/Endstone62 and coveredroute.
+
+New empirical premises: G3publicactualcrystal width2,height2 supports looking at visiblefront-topcorner (+.9,+1.8,+.9), not requiringcenterray throughpillar. Actual loaded publicblock map gives NATURALfoot60 at(-17.5,-15.5), futurefront-toprayclear and public-flight model reachescrystalY87 with0.92m predictedheadroom/lookY104.100444. MODELnotvisibility/action/safetyproof. This is ground-level ridge access, no64tower.
+
+Smallest wholetrial after G27-4 freshcopy ofactualLIVE50: carve supported diagonal stairs towardnaturalground60, eachactualfloor/visibility/cellchecked; oneordinarySnow onlywhenactualfront-top+outgoingraysclear. ImmediatelywalkdownALREADYcarvedstairs forhorizontal+verticalseparation, nofloor-mining escape. On ANYactualnearbydragonfireballwithin48m, retireforward work immediately (cancelcurrentordinarydig throughpublicstopDigging), walkretreatalive-only. This differs from old9mguard, which firstactedaftercloudappeared. Guard nevercancelsescapingcontrols. Actualhealth/positions/projectile/cloud/targetevents determine result.
+
+Whole budget12min from firstG4run, includingrouteconstruction/oneShot/retreat/postconditionwatch. At mosttwo comparable failures; afterthatchangeassumption/method. Afterasafeactualconstructionabort, partialclearedstairsare physicalworldprogress; do not reset them away automatically or callthemshotqualification. FreshLIVEstartcomparisonrequired beforetransfer. Actualsafeshot+crystalremoval is combateffectgate. SandboxdoesnotcountLIVE.
+
+Newstep route fromLIVEdeepblock(-11,50,-11): twoflatwest to(-13,50,-11), thenalternatingnorth/westrise tensteps to(-18,60,-16). Allsupport/readability mustbeactuallychecked; mapdoesnotcertifyeachfuturecell. Ifrouteunsupported, abortandrevisebeforemutation. Lowerexistingstairsprovidewalkingescape; noassumedroofimmunity.
