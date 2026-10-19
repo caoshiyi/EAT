@@ -1,0 +1,17 @@
+program #13875 on p3: 10.7 s
+--- output ---
+MOVE Vec3 { x: 0.4933376726306741, y: 50, z: 3.6619792728156244 } 20 20
+NATIVE {"at":"2026-10-19T17:49:40.803Z","p":{"x":0.497184887540168,"y":50,"z":3.4736806113831045},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",7,null],["stone_sword",1,6],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",7,null],["end_stone",29,null]],"time":13956,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 0.49821116125074394, y: 50, z: 4.3308473936273835 } 20 20
+MOVE Vec3 { x: 0.499468283686193, y: 50, z: 3.6621445101113315 } 20 20
+FINAL_NATIVE {"at":"2026-10-19T17:49:48.519Z","p":{"x":0.4997761543102844,"y":50,"z":3.4736674472935607},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",7,null],["stone_sword",1,6],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",8,null],["end_stone",29,null]],"time":14116,"dim":"the_end","controls":{},"goal":false}
+MOVE Vec3 { x: 0.49977617518955286, y: 50, z: 4.3308371671300065 } 20 20
+END {"at":"2026-10-19T17:49:49.821Z","p":{"x":0.49993011781208435,"y":50,"z":4.519315079392803},"hp":20,"food":20,"ground":true,"inv":[["cobblestone",1,null],["snowball",7,null],["stone_sword",1,6],["stone_pickaxe",1,112],["crafting_table",1,null],["netherrack",8,null],["end_stone",29,null]],"time":14156,"dim":"the_end","controls":{},"goal":false}
+--- returned ---
+(nothing)
+--- chat since this player's previous program ---
+p2: P3 P2 ACTUAL0/50/3 coveredready N2, noPick. TinyN1 DOWN-1.5, holdpose untilitemsettled thenvacate1/2; please stay0/4 untilclear.
+p2: P3 actualtinyN1 DOWN-1.5 at0/3 then10tickhold+vacate1/2 DONE; pleasewalk0/3nativeN8 vs7ack. OneNremaining; finalafterreceipt.
+p2: P3 tinyN1 RECOLLECTEDP2 aftervacate1/2 (nativeN2retained); 1/2 stillwithinpickupzone, notfailedstock. Changingdonor exitto3/50/2 >3mfromdrop FAST AIRwalk beforepickupdelay ends, nofourthstationaryproof. Please step0/3 afterdrop; keepN7baseline.
+p2: P3 actualchangedTinyN1 DOWN-1.5 at0/3 then10tickhold+vacate1/2 DONE; pleasewalk0/3nativeN8 vs7. ONEremainingP2, donor3/2 outofpickupzone.
+--- p3 now: (0.5, 50, 4.5) in the_end, health 20/20, food 20/20, alive
