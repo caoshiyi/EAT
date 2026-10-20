@@ -1,5 +1,0 @@
-const V=require('vec3').Vec3,old=new Set(Object.keys(bot.entities)),p0=bot.entity.position.clone();
-await bot.lookAt(p0.offset(.001,-1,.001),true);await bot.waitForTicks(3);const sword=bot.inventory.items().find(i=>i.name==='stone_sword');if(sword)await bot.tossStack(sword);
-const e=bot.inventory.items().find(i=>i.name==='end_stone');if(e&&e.count>=32)await bot.toss(e.type,null,32);await bot.waitForTicks(3);console.log('BIRTH',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&!old.has(String(e.id))).map(e=>({id:e.id,p:e.position,meta:e.metadata}))));
-const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);try{await bot.pathfinder.goto(new goals.GoalBlock(50,50,0));await bot.waitForTicks(12);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();}
-return {p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed})),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(p0)<5).map(e=>({id:e.id,p:e.position,meta:e.metadata}))};

@@ -1,9 +1,0 @@
-# P2 detour continuation — actual5711, 07:16 UTC
-
-Named operation: P2 reaches camp for expedition kit after completed two-gap bridge. First failed stage: movement toward native route nextcell(20,68,89), DAMAGE_END at(20.5001,68,90.2088),19HP, no campending. Earlier actualbridge8,67,89=MOSS/9,67,89=BASALT + crossing10,68,89 was successful; don't erase it or call whole detour complete.
-
-Caller5711 `empty(q)` accepts `boundingBox==='empty'` and rejects only lava/water/fire. Its BFS and `move` therefore admit SWEET_BERRY_BUSH as traversable. Owner actual5719 identifies bush(20,68,89); callerfinalroute records(20,68,90) accepted before next89. Bodywidth0.6 atz90.2088 extends to89.9088, insidebushcell89..90. This matches berrycontact but doesnot isolate all damage sources. Owner #4407 already independently diagnosed berry overlap; no specialist credit.
-
-Smallest correction: exclude `sweet_berry_bush` in this caller's empty/traversability predicate, shared by BFS+move; before reusing route, check current berry target and side cells intersected by the0.6m body (or keep center>=90.3 for this berry boundary and choose actual supported alternative). Do not dig/rewrite broad path framework to prove this. In particular source empty-shape is not touch-safety. Owners inspect and decide current escape themselves.
-
-Acceptance: same life/dimension, actual body clear of this berry cell, HP stabilized, guarded chosen short traversal then actual camp entry/ending. No software-only proof or new route immunity. Observed failed bridge+21completedroute entries18.5s; full39step detour/endhandling uncompleted. P1's separate39step eastdetour27.5s passed normal movement; not a currentP2 returntime or berry qualification. Reserve changed route, failure handling, and final kit/ending receipt separately.

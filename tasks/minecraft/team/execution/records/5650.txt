@@ -1,4 +1,0 @@
-== #5650 2026-10-17T07:10:45 p4 role=integration_operator iter=12 0 s
-const{Vec3}=require('vec3');let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const i=c.containerItems().find(i=>i.name==='sandstone');if(!i||i.count<1)throw Error('NO_RESERVE');await c.withdraw(i.type,null,1);return{heldReserve:bot.inventory.items().filter(i=>i.name==='sandstone').map(i=>[i.name,i.count]),bankSandstone:c.containerItems().filter(i=>i.name==='sandstone').map(i=>i.count),p:bot.entity.position,hp:bot.health}}finally{if(c)c.close();bot.clearControlStates()}
--- returned --
-{"heldReserve": [], "bankSandstone": [1], "p": {"x": 7.605734476923773, "y": 67.5625, "z": 83.69999984340599}, "hp": 14.926748275756836}

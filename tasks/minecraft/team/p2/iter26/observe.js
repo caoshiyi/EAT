@@ -1,3 +1,0 @@
-console.log('P2_OBSERVE',new Date().toISOString(),bot.entity.position,bot.health,bot.food,bot.game.dimension,bot.controlState,bot.pathfinder.goal,bot.currentWindow?.type,bot.inventory.items().map(i=>[i.name,i.count]));
-for(const d of [[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]]){const b=bot.blockAt(bot.entity.position.floored().offset(...d));console.log('FACE',d,b?.name,b?.boundingBox,b?.position)}
-console.log('ENTITIES',Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<20).map(e=>[e.name,e.type,e.position]));

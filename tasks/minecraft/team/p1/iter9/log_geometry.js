@@ -1,1 +1,0 @@
-const {Vec3}=require('vec3');console.log('COLUMN',Array.from({length:14},(_,i)=>{let p=new Vec3(34,64+i,94),b=bot.blockAt(p);return[p,b?.name,b?.shapes]}));console.log('drops',Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<15).map(e=>[e.id,e.position,e.getDroppedItem()?.name,e.getDroppedItem()?.count]));

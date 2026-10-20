@@ -1,1 +1,0 @@
-console.log('GRAVEL',JSON.stringify(bot.findBlocks({matching:bot.registry.blocksByName.gravel.id,maxDistance:64,count:20}).map(p=>[p.x,p.y,p.z])));console.log('NEAR_WARPED_STEMS',JSON.stringify(bot.findBlocks({matching:bot.registry.blocksByName.warped_stem.id,maxDistance:64,count:20}).map(p=>[p.x,p.y,p.z])));

@@ -1,1 +1,0 @@
-const V=bot.entity.position.constructor;for(let z=-4;z<=1;z++)for(let x=-2;x<=1;x++){let r=[];for(let y=63;y<=71;y++){let b=bot.blockAt(new V(x,y,z));r.push([y,b?.name]);}console.log('COL',x,z,JSON.stringify(r));}return {p:bot.entity.position,hp:bot.health,food:bot.food};

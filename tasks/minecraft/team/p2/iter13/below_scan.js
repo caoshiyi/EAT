@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const q=bot.entity.position.floored();return{p:bot.entity.position,hp:bot.health,rows:[-1,-2,-3].map(y=>({y:y+q.y,cells:[[0,0],[1,0],[-1,0],[0,1],[0,-1],[0,-2],[0,-3],[0,-4]].map(([x,z])=>[x,z,bot.blockAt(q.offset(x,y,z))?.name])}))};

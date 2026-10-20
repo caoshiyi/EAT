@@ -1,2 +1,0 @@
-bot.pathfinder.setGoal(null); bot.clearControlStates(); await bot.waitForTicks(10);
-console.log("CLOSING_ACTUAL",JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,inventory:bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed})),entities:Object.values(bot.entities).filter(e=>e.name==="ender_dragon"||e.name==="end_crystal").map(e=>({id:e.id,name:e.name,p:e.position,health:e.health,metadata:e.metadata}))}));

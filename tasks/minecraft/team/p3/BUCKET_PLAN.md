@@ -1,5 +1,0 @@
-# Upcoming bucket/casting experiment (unverified)
-Task bottleneck: portal requires survivally cast obsidian without diamond pick. Have7iron in furnace(10,69,-35) and goal2buckets+flintsteel; p1 has13extrairon.
-Permitted Mineflayer API docs: activateItem() for item use, lookAt(pos,true) for aim; activateBlock(block,direction,cursorPos) if direct block interaction. Need small test water capture, verify inventory water_bucket and source-state change. Do NOT assume activateItem return proves capture.
-Lava pool p2 verified 94 sources x10..16,z85..94,y64..66, western safe ledge(8,67,90); water(2,62,121). We need confirm route and safe fluid manipulation before full frame.
-Proposed frame west of pool, plane x6, z88..91, bottom inner z89..90 at y67, sides z88/91 at y68..70, top z89..90 at y71; empty inner2x3. Unverified geometry/collision, survey first. Cast one obsidian by source lava+neighbor water, inspect obsidian, recover water. Need support mold cobble. Water can cap lava pool; preserve distant sources. No requirement to use this plan; adapt from actual terrain.

@@ -1,5 +1,0 @@
-== #3812 2026-10-17T01:06:39 p2 role=acquisition_owner iter=9 0 s
-const{Vec3}=require('vec3');const q=new Vec3(-317,62,-317);console.log('OBSTRUCTION',JSON.stringify([[0,-1,0],[0,0,0],[0,1,0],[0,2,0],[1,0,0],[-1,0,0],[0,0,-1],[1,1,0],[-1,1,0],[0,1,-1]].map(d=>{const p=q.offset(...d),b=bot.blockAt(p);return[p.toString(),b?.name,b?.shapes]})));console.log('FOES',JSON.stringify(Object.values(bot.entities).filter(e=>['piglin','magma_cube','blaze','ghast','hoglin'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<16).map(e=>[e.id,e.name,e.position,e.equipment?.[0]?.name])));
--- output --
-OBSTRUCTION [["(-317, 61, -317)","netherrack",[[0,0,0,1,1,1]]],["(-317, 62, -317)","nether_bricks",[[0,0,0,1,1,1]]],["(-317, 63, -317)","nether_bricks",[[0,0,0,1,1,1]]],["(-317, 64, -317)","air",[]],["(-316, 62, -317)","air",[]],["(-318, 62, -317)","netherrack",[[0,0,0,1,1,1]]],["(-317, 62, -318)","air",[]],["(-316, 63, -317)","air",[]],["(-318, 63, -317)","air",[]],["(-317, 63, -318)","air",[]]]
-FOES []

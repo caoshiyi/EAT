@@ -1,1 +1,0 @@
-bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,world:bot.game.dimension,hp:bot.health,food:bot.food,controls:bot.controlState,inventory:bot.inventory.items().map(i=>[i.name,i.count]),cursor:bot.inventory.selectedItem};

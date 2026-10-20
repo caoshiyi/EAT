@@ -1,4 +1,0 @@
-== #5062 2026-10-17T05:13:56 p3 role=continuity_owner iter=11 1.8 s
-const before=bot.food,foods=bot.inventory.items().find(i=>i.name==='sweet_berries');await bot.equip(foods,'hand');await bot.consume();await bot.waitForTicks(5);return{foodBefore:before,foodNow:bot.food,berryNow:bot.inventory.items().filter(i=>i.name==='sweet_berries').reduce((a,i)=>a+i.count,0),hp:bot.health,p:bot.entity.position};
--- returned --
-{"foodBefore": 19, "foodNow": 20, "berryNow": 3, "hp": 20, "p": {"x": 1.5034131651394302, "y": 66, "z": 6.517579303880908}}

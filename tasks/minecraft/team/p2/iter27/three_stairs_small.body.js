@@ -1,4 +1,0 @@
-console.log('ENVIRONMENT SANDBOX G27-5 SMALL threezigzagstairs and WHOLE3DOWN; groundedATtargetY settlefix; noSnow/exposure');
-const guard=makeOperationGuard(bot),forward=l=>guard.forward(l),walkCheck=l=>guard.escape(l);
-const path=[v(-11,50,-11),v(-12,51,-11),v(-12,52,-12),v(-13,53,-12)];
-try{if(bot.game.dimension!=='the_end'||!bot.entity.position.floored().equals(path[0])||bot.health!==10)throw Error('smallsource');for(const q of path.slice(1))await stepStair(q);guard.beginEscape('whole3down');for(const q of path.slice(0,-1).reverse())await fastWalkStep(q);await seal(true);console.log('THREE_STAIRS_RETAINED',JSON.stringify(state()));}catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));try{await seal(true);}catch(f){console.log('RECOVERY_FAILURE',String(f));}}finally{console.log('OPERATION_GUARD',JSON.stringify(guard.report()));guard.close();stop();}return state();

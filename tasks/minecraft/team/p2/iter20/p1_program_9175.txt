@@ -1,4 +1,0 @@
-== #9175 2026-10-18T09:52:09 p1 role=objective_owner iter=20 0.9 s
-await bot.waitForTicks(20); console.log('RECEIPT',JSON.stringify({p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),nearitems:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>({p:e.position,metadata:e.metadata}))}));
--- output --
-RECEIPT {"p":{"x":131.5,"y":-36,"z":2272.511145183323},"hp":20,"inventory":[],"nearitems":[{"p":{"x":133.125,"y":-37.1875,"z":2274.5623174681414},"metadata":[null,null,null,null,null,null,null,null,{"present":true,"itemId":327,"itemCount":1}]}]}

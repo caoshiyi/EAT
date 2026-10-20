@@ -1,8 +1,0 @@
-# Iteration 28 practical lessons
-- A terminal forward failure field can be null while recovery failed. Read recovery markers and actual full boundary checks. Future programs should separately report forward failure, return failure and observed shelter.
-- Keep a small current path back to the shelter. Reversing every exploration movement repeats already completed branches and expands exposure. This diagnosis follows11622'sactualhistory; a changed shortest-path return remains untested.
-- Normal soft-plant/Snow APIs can work despite empty collision shapes and cursor-null. Current clear eye ray, legal reach, normal enforcer and actual inventory pickup were demonstrated in SB214 and narrow LIVE11619. This does not grant arbitrary reach or through-block actions.
-- Center the full footprint before digging a floor. An AIR floor under the center can leave the player supported by neighboring blocks. Actual11611 ordinarycentering/fall restored shelter; don't infer body descent from AIR alone.
-- Inventory admission matters after death.11623 mistook a respawned20HP emptybody for the damaged equippedbody and moved it. Require expected current source, kit and life evidence before a recovery; later safe shelter doesn't erase that failure.
-- A distant courier remains unfunded despite a qualified recipient. P2 actuallyqualified5→75 and adopted75; P4neverqualified2.3kmOWtransit orEndentry100→75, neverdelivered.
-- Reset helper's first physical executionG4 succeeded with explicitreleases/statuses,0.6scopy/29.1stotal/immediateREADY11617. Preserve before/after snapshots and record which assumptions change aftercopy.

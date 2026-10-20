@@ -1,4 +1,0 @@
-== #5592 2026-10-17T07:03:55 p4 role=integration_operator iter=11 0.2 s
-const{Vec3}=require('vec3');let c;try{const i=bot.inventory.items().find(i=>i.name==='sandstone');if(i){c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));await c.deposit(i.type,null,i.count);c.close();c=null;await bot.waitForTicks(3)}return{utc:new Date().toISOString(),upper:bot.blockAt(new Vec3(7,68,81))?.name,lower:bot.blockAt(new Vec3(7,67,81))?.name,p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count])}}finally{if(c)c.close();bot.clearControlStates()}
--- returned --
-{"utc": "2026-10-17T07:03:55.292Z", "upper": "sandstone", "lower": "air", "p": {"x": 7.605734476923773, "y": 67.5625, "z": 83.69999984340599}, "hp": 12.926748275756836, "own": [["spider_eye", 1], ["string", 1], ["sweet_berries", 1]]}

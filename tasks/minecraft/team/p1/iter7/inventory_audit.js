@@ -1,1 +1,0 @@
-console.log('FULLSLOTS',bot.inventory.slots.map((i,s)=>i&&[s,i.name,i.count]).filter(Boolean));console.log('CURSOR',bot.inventory.selectedItem&&[bot.inventory.selectedItem.name,bot.inventory.selectedItem.count]);console.log('WINDOW',bot.currentWindow?.id,bot.currentWindow?.type);console.log('BODY',bot.entity.position,bot.health,bot.food);

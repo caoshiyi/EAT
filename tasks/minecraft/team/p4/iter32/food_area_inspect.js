@@ -1,2 +1,0 @@
-const p=bot.entity.position.clone(),q=p.floored();
-return {at:new Date().toISOString(),p,hp:bot.health,food:bot.food,time:bot.time,berries:bot.findBlocks({matching:bot.registry.blocksByName.sweet_berry_bush.id,maxDistance:128,count:80}).map(q=>({q,props:bot.blockAt(q)?.getProperties()})),near:Object.values(bot.entities).filter(e=>e.position.distanceTo(p)<50).map(e=>({n:e.name,id:e.id,p:e.position,d:e.position.distanceTo(p)})),roof:bot.blockAt(q.offset(0,2,0))?.name};

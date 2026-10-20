@@ -1,9 +1,0 @@
-program #2258 on p4: 5.6 s
---- output ---
-HANDOFF_END {"issue":null,"dead":false,"lost":false,"p":{"x":-267.46649952522944,"y":61,"z":-413.66914582198916},"hp":20,"food":20,"onGround":true,"protectedCorridor":true,"cells":142,"peer":{"x":-266.536101849287,"y":61,"z":-415.5},"before":[["netherrack",61,null],["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["iron_pickaxe",1,1],["stone_pickaxe",1,100],["stone_pickaxe",1,100],["stone_axe",1,12],["stone_pickaxe",1,100],["spruce_sapling",2,null],["crafting_table",1,null]],"sent":[["iron_pickaxe",1,1],["stone_pickaxe",1,100],["stone_pickaxe",1,100],["netherrack",48,null]],"after":[["netherrack",13,null],["sweet_berries",7,null],["rotten_flesh",3,null],["bone_meal",4,null],["iron_pickaxe",1,1],["stone_axe",1,12],["stone_pickaxe",1,100],["spruce_sapling",2,null],["crafting_table",1,null]],"offhand":"shield","offhandWear":0,"receipt":"PENDING_RECIPIENT_ACTUAL_DELTA"}
---- returned ---
-(nothing)
---- chat since this player's previous program ---
-p1: P1_STRAIGHT_RECEIPT_ACTIVE40sec NOW, stayingcenter(-267,61,-416); P4 correctedstraightSOUTHdonationready. Previouscorner0delta verified, expectIRON+1/STONE+2/NETH+48 retained, notgiverlabels.
-[server] p2 was slain by Zombie
---- p4 now: (-267.5, 61, -413.7) in the_nether, health 20/20, food 20/20, alive

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const q=new Vec3(13,66,95);return{q,source:bot.blockAt(q)?.name,sides:[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]].map(d=>[d,bot.blockAt(q.offset(...d))?.name]),stance:[12,67,95],p:bot.entity.position,hp:bot.health};

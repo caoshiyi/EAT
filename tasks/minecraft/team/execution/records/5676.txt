@@ -1,4 +1,0 @@
-== #5676 2026-10-17T07:12:45 p1 role=experiment_owner iter=12 0 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);console.log('BODY',bot.entity.position,bot.health,'FLOOR',bot.blockAt(bot.entity.position.floored().offset(0,-1,0))?.name);bot.chat('P4/P3 actual5673 correction BODY(11.3986,67,83.5007)20HP, NOTexpectedx9.4. Controlclearedlateafter8tickpickup causedovershoot, nowallfalse. EHEAD68=SANDSTONE, ROOF69=SPRUCE_PLANKS/gateCLOSED actual, exitdemonstrated. P3 BANK8 receiptaccepted; youownnextEASTentry. Iremainoutsideclear9,83.');
--- output --
-BODY Vec3 { x: 11.398573261079603, y: 67, z: 83.50071900104332 } 20 FLOOR sand

@@ -1,4 +1,0 @@
-bot.clearControlStates();bot.pathfinder.setGoal(null);const V=bot.entity.position.constructor,b=bot.entity.position.floored(),full=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1');
-if(bot.health!==20||bot.game.dimension!=='overworld'||!b.equals(new V(-9,26,-38)))throw Error('freshbody');
-const cols=[];for(const[dx,dz]of[[0,0],[0,-2],[2,0],[0,2],[-2,0]]){const rows=[];let prev=null;for(let y=25;y<=80;y++){const p=b.offset(dx,y-b.y,dz),n=bot.blockAt(p)?.name??'UNLOADED';if(n!==prev){rows.push({y,n,full:full(p)});prev=n;}}cols.push({x:b.x+dx,z:b.z+dz,runs:rows});}
-console.log(JSON.stringify({env:'LIVE_ITER25',MODEL_ONLY:true,at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,cols,logs:bot.findBlocks({matching:q=>q.name.endsWith('_log'),maxDistance:32,count:15}).map(p=>({p,n:bot.blockAt(p)?.name})),near:Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<16).map(e=>({n:e.name,p:e.position}))}));

@@ -1,4 +1,0 @@
-== #4987 2026-10-17T05:06:59 p3 role=continuity_owner iter=11 0 s
-const {Vec3}=require('vec3');const b=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));let items;try{items=b.containerItems().map(i=>[i.name,i.count])}finally{b.close()}return{bank:items,p:bot.entity.position,hp:bot.health,doors:[6,7].map(x=>bot.blockAt(new Vec3(x,67,81)).getProperties().open),inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:bot.controlState};
--- returned --
-{"bank": [["spruce_planks", 2], ["wooden_sword", 1], ["flint_and_steel", 1], ["gold_ingot", 1], ["gold_nugget", 6], ["ender_pearl", 3], ["arrow", 1], ["spruce_boat", 1]], "p": {"x": 7.631753829507174, "y": 67.5625, "z": 83.7}, "hp": 20, "doors": [false, false], "inv": [["stick", 1], ["wooden_pickaxe", 1], ["wooden_shovel", 1], ["warped_nylium", 1], ["basalt", 8], ["stone_sword", 1], ["blackstone", 1]], "controls": {}}

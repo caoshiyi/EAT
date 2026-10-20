@@ -1,3 +1,0 @@
-bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);
-async function craft(name,table=null){const r=bot.recipesFor(bot.registry.itemsByName[name].id,null,1,table)[0];if(!r)throw Error('missing recipe '+name+' inv '+bot.inventory.items().map(i=>i.name+':'+i.count));await bot.craft(r,1,table);await bot.waitForTicks(4);console.log(name,bot.inventory.items().map(i=>[i.name,i.count]));}
-await craft('spruce_planks');await craft('spruce_planks');await craft('stick');const {Vec3}=require('vec3');await craft('wooden_axe',bot.blockAt(new Vec3(17,70,-32)));await bot.equip(bot.inventory.items().find(i=>i.name==='wooden_axe'),'hand');

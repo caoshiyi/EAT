@@ -1,1 +1,0 @@
-console.log('FOOD_ENTITIES',Object.values(bot.entities).filter(e=>['salmon','cod','cow','pig','sheep','chicken','rabbit'].includes(e.name)).map(e=>[e.id,e.name,e.position.toString()]));console.log('LOGS',bot.findBlocks({matching:bot.registry.blocksByName.spruce_log.id,maxDistance:48,count:30}).map(p=>p.toString()));console.log('BODY',bot.entity.position,bot.health);

@@ -1,3 +1,0 @@
-const p=bot.entity.position.floored(),ds=[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]];
-const out=()=>({at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:bot.controlState,goal:bot.pathfinder.goal,faces:ds.map(d=>{const q=p.offset(...d),b=bot.blockAt(q);return{q,name:b?.name,full:!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')}})});
-for(let k=0;k<3;k++){console.log('P4_CURRENT_AUDIT',JSON.stringify(out()));await bot.waitForTicks(5);}return out();

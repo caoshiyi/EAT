@@ -1,4 +1,0 @@
-const V=require('vec3').Vec3,m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];m.maxDropDown=1;
-const here=bot.entity.position.floored(),smoke=bot.pathfinder.getPathTo(m,new goals.GoalBlock(here.x,here.y,here.z),250),p=bot.pathfinder.getPathTo(m,new goals.GoalBlock(75,50,0),800);
-function cell(q){const c=[-1,0,1,2].map(d=>{const b=bot.blockAt(new V(q.x,q.y+d,q.z));return{y:q.y+d,n:b?.name,full:b?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1'),empty:b?.boundingBox==='empty'}});return{p:{x:q.x,y:q.y,z:q.z},c};}
-return{body:bot.entity.position,hp:bot.health,smoke:{status:smoke.status,length:smoke.path.length},status:p.status,path:p.path.map(cell),bridge:[75,78,80,83,84,85].map(x=>cell(new V(x,50,0))),controls:bot.controlState};

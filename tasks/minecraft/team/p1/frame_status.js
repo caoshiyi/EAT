@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const coords=[[6,67],[7,67],...[68,69,70].flatMap(y=>[[5,y],[8,y]]),[6,71],[7,71]];let n=0;for(const[x,y]of coords){const b=bot.blockAt(new Vec3(x,y,91));if(b.name==='obsidian')n++;console.log(x,y,91,b.name)}console.log('FRAME',n,'/10','interior',bot.blockAt(new Vec3(6,68,91)).name,'p',bot.entity.position.toString(),bot.health,bot.food);

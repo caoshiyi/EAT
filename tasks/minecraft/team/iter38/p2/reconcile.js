@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3');
-const dragon=Object.values(bot.entities).filter(e=>e.name==='ender_dragon').map(e=>({id:e.id,p:e.position,h:e.metadata?.[9],meta:e.metadata}));
-console.log('P2_CURRENT',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,onGround:bot.entity.onGround,controls:bot.controlState,goal:bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count]),floor:bot.blockAt(bot.entity.position.offset(0,-1,0))?.name,roof:bot.blockAt(new Vec3(-3,52,2))?.name,dragon,peers:Object.values(bot.players).filter(p=>p.entity).map(p=>({name:p.username,p:p.entity.position}))}));
-bot.chat('P2 opening: live reconciliation only; healthy north corridor, no shared edits. Hypothesis attack opportunity frequency limits current DPS; uncertainty fresh pass geometry. Five-minute read-only investigation; primary need not wait.');

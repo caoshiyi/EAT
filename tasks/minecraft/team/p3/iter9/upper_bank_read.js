@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,68,82)));return{items:c.containerItems().map(i=>[i.name,i.count]),p:bot.entity.position.clone(),hp:bot.health}}finally{if(c)c.close();bot.clearControlStates();bot.pathfinder.setGoal(null)};

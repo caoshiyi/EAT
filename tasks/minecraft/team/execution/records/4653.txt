@@ -1,4 +1,0 @@
-== #4653 2026-10-17T03:43:46 p1 role=lead_converter iter=10 2.3 s
-const cnt=n=>bot.inventory.items().filter(i=>i.name===n).reduce((a,i)=>a+i.count,0);for(let k=0;k<9;k++){const before=cnt('sandstone'),r=bot.recipesFor(bot.registry.itemsByName.sandstone.id,null,1,null)[0];if(!r)throw Error('RECIPE');await bot.craft(r,1,null);await bot.waitForTicks(5);if(bot.currentWindow)bot.closeWindow(bot.currentWindow);if(bot.inventory.selectedItem){const s=bot.inventory.slots.findIndex((v,k)=>k>=9&&k<=44&&!v);await bot.clickWindow(s,0,0);await bot.waitForTicks(2);}if(cnt('sandstone')!==before+1)throw Error('ORDINARY_RECEIPT_'+cnt('sandstone'));}console.log('CAPS_ACTUAL',bot.inventory.items().map(i=>[i.name,i.count]),bot.health,bot.food);
--- output --
-CAPS_ACTUAL [ [ 'sand', 2 ], [ 'sweet_berries', 2 ], [ 'sandstone', 9 ] ] 20 20

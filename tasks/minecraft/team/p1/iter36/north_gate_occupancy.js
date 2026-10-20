@@ -1,1 +1,0 @@
-console.log('OCCUPANCY',JSON.stringify({at:new Date().toISOString(),hp:bot.health,p:bot.entity.position,near:Object.values(bot.entities).filter(e=>e.id!==bot.entity.id&&e.position.distanceTo(bot.entity.position)<5).map(e=>({id:e.id,n:e.name,p:e.position,h:e.height,w:e.width})),blocks:[50,51].map(y=>({y,n:bot.blockAt(bot.entity.position.floored().offset(0,y-50,-1))?.name}))}));

@@ -1,6 +1,0 @@
-== #9931 2026-10-18T13:47:38 p1 role=objective_owner iter=21 1.9 s
-const p=bot.entity.position.clone(),hp=bot.health; console.log('START',JSON.stringify({p,hp,food:bot.food,dimension:bot.game.dimension,inv:bot.inventory.items().map(i=>[i.name,i.count])})); await bot.waitForTicks(40); const q=bot.entity.position.floored(); return {p:bot.entity.position,hp:bot.health,food:bot.food,stableHP:bot.health===hp,ground:bot.entity.onGround,goal:bot.pathfinder.goal,controls:bot.controlState,dimension:bot.game.dimension,inv:bot.inventory.items().map(i=>[i.name,i.count]),floor:bot.blockAt(q.offset(0,-1,0))?.name,roof:bot.blockAt(q.offset(0,2,0))?.name,foes:Object.values(bot.entities).filter(e=>['skeleton','zombie','creeper','silverfish','enderman'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<8).map(e=>({id:e.id,n:e.name,p:e.position}))};
--- output --
-START {"p":{"x":135.66773510641806,"y":-38,"z":2233.502508889393},"hp":20,"food":20,"dimension":"overworld","inv":[]}
--- returned --
-{"p": {"x": 135.66773510641806, "y": -38, "z": 2233.502508889393}, "hp": 20, "food": 20, "stableHP": true, "ground": true, "goal": null, "controls": {}, "dimension": "overworld", "inv": [], "floor": "deepslate", "roof": "deepslate", "foes": []}

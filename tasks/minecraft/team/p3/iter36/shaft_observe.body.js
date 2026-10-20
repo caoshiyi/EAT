@@ -1,1 +1,0 @@
-stop();console.log('COLUMN',JSON.stringify(Array.from({length:15},(_,i)=>({y:49+i,n:bot.blockAt(v(-5,49+i,4))?.name,side:[[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>bot.blockAt(v(-5+x,49+i,4+z))?.name)}))));console.log('STATE',JSON.stringify(state()));

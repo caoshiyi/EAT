@@ -1,1 +1,0 @@
-console.log('EXACT_ITEMS',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&e.getDroppedItem).map(e=>({id:e.id,item:e.getDroppedItem(),p:e.position,dist:e.position.distanceTo(bot.entity.position)}))));console.log('COUNT_NOW',bot.inventory.items().map(i=>[i.name,i.count]),'BODY',bot.entity.position,bot.health);

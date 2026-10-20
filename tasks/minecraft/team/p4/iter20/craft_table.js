@@ -1,1 +1,0 @@
-const item=bot.registry.itemsByName.crafting_table;const recipes=bot.recipesFor(item.id,null,1,null);if(!recipes.length)return {refused:'no table recipe'};const before=bot.inventory.items().map(i=>({n:i.name,c:i.count}));await bot.craft(recipes[0],1,null);return {before,after:bot.inventory.items().map(i=>({n:i.name,c:i.count})),hp:bot.health,pos:bot.entity.position};

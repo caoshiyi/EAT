@@ -1,1 +1,0 @@
-stop();const a=[];for(let k=0;k<7;k++){const e=Object.values(bot.entities).find(e=>e.name==='ender_dragon');a.push({at:new Date().toISOString(),p:e?.position.clone(),velocity:e?.velocity?.clone(),hp:e?.metadata?.[9],phase:e?.metadata?.[16]});await wait(10);}console.log('VELOCITY_OBSERVATIONS',JSON.stringify(a));console.log('STATE',JSON.stringify(state()));

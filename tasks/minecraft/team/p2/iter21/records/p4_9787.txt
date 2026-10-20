@@ -1,4 +1,0 @@
-== #9787 2026-10-18T12:26:11 p4 role=experiment_owner iter=21 0 s
-return{p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed})),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>({id:e.id,p:e.position,n:bot.registry.items[e.metadata?.[8]?.itemId]?.name,c:e.metadata?.[8]?.itemCount})),players:Object.values(bot.players).filter(p=>p.entity).map(p=>({n:p.username,p:p.entity.position}))};
--- returned --
-{"p": {"x": 148.45008622581494, "y": -36, "z": 2231.4982091133147}, "hp": 14.166664123535156, "ground": true, "inv": [{"n": "wooden_sword", "c": 1, "wear": 0}, {"n": "oak_planks", "c": 3, "wear": null}, {"n": "stick", "c": 5, "wear": null}], "items": [], "players": [{"n": "p4", "p": "[repeated reference]"}, {"n": "p1", "p": {"x": 148.38654482332726, "y": -36, "z": 2234.362680609928}}]}

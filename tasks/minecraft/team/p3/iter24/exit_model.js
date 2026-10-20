@@ -1,1 +1,0 @@
-for (const allow of [false,true]) {const m=new Movements(bot);m.canDig=allow;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false; m.maxDropDown=3;const g=new goals.GoalNear(10,67,-18,2); const r=bot.pathfinder.getPathTo(m,g,2000);console.log('MODEL',allow,r.status,r.path?.length,JSON.stringify(r.path?.slice(0,18)));}

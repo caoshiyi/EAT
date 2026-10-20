@@ -1,4 +1,0 @@
-== #6610 2026-10-17T10:15:30 p4 role=integration_operator iter=13 0 s
-const{Vec3}=require('vec3');return{snow:bot.findBlocks({matching:bot.registry.blocksByName.snow.id,maxDistance:16,count:100}).filter(p=>p.x>=1&&p.x<=6&&p.z>=74&&p.z<=80).map(p=>[p,bot.blockAt(p.offset(0,-1,0))?.name,bot.blockAt(p)?.getProperties()]),landing:bot.blockAt(new Vec3(4,66,80))?.name,magmas:Object.values(bot.entities).filter(e=>e.name==='magma_cube').map(e=>[e.id,e.position]),time:bot.time.timeOfDay};
--- returned --
-{"snow": [[{"x": 5, "y": 67, "z": 80}, "furnace", {"layers": "1"}], [{"x": 4, "y": 65, "z": 80}, "sand", {"layers": "1"}], [{"x": 3, "y": 64, "z": 80}, "sand", {"layers": "1"}], [{"x": 2, "y": 64, "z": 80}, "sand", {"layers": "1"}], [{"x": 1, "y": 65, "z": 80}, "sand", {"layers": "1"}]], "landing": "air", "magmas": [[99, {"x": 9.162735214926418, "y": 65, "z": 78.1738415150892}]], "time": 4903}

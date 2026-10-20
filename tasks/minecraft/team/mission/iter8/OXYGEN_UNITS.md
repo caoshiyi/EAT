@@ -1,1 +1,0 @@
-Iteration8 correction 00:45 UTC: mineflayer/docs/api.md oxygenLevel is [0,20]; entities.js rounds air_supply/15. oxygen20 full. Raw air299/400 is another namespace, never directly compare. P1 abort3621 at7 recovered3626 at20/HP20. Earlier coordinator low-air20 wording was wrong.

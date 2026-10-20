@@ -1,1 +1,0 @@
-stop();console.log('SMOKE',JSON.stringify({...state(),faces:boundary()}));

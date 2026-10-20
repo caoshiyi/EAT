@@ -1,5 +1,0 @@
-== #4070 2026-10-17T01:56:26 p1 role=lead_converter iter=9 0 s
-const{Vec3}=require('vec3');const p=bot.entity.position,roof=global.P1Overland?.roof;console.log('EXIT_FORECAST',p,bot.health,bot.time.timeOfDay,'roof',roof,'above',roof&&[1,2].map(y=>bot.blockAt(roof.offset(0,y,0))?.name));console.log('THREATS',JSON.stringify(Object.values(bot.entities).filter(e=>['skeleton','zombie','creeper','witch','spider'].includes(e.name)&&e.position.distanceTo(p)<32).map(e=>[e.name,e.position,roof&&e.position.distanceTo(roof.offset(0,1,0))])));
--- output --
-EXIT_FORECAST Vec3 { x: 40.49953874991042, y: 65, z: 94.52282729373263 } 20 20082 roof Vec3 { x: 40, y: 67, z: 94 } above [ 'air', 'air' ]
-THREATS [["skeleton",{"x":62.246426535107496,"y":69,"z":85.27797109442581},23.916046533898673],["witch",{"x":59.964782265506955,"y":69,"z":93.56737768097469},19.994491565929348],["zombie",{"x":57.506103515625,"y":69,"z":102.233154296875},19.371331652107173]]

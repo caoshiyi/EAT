@@ -1,5 +1,0 @@
-== #5325 2026-10-17T06:14:52 p1 role=experiment_owner iter=11 0 s
-console.log('LOOT_NOW',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&e.getDroppedItem?.()?.name==='spruce_log').map(e=>[e.id,e.position,e.getDroppedItem().count])));console.log('BODY',bot.entity.position,bot.entity.height,bot.entity.eyeHeight,bot.inventory.items().map(i=>[i.name,i.count]));
--- output --
-LOOT_NOW [[12312,{"x":2.2462282611881887,"y":63,"z":83.22228435055509},1]]
-BODY Vec3 { x: 6.305702416511219, y: 67, z: 82.63120620804968 } 1.8 1.62 [ [ 'stick', 2 ], [ 'wooden_pickaxe', 1 ], [ 'spruce_planks', 3 ] ]

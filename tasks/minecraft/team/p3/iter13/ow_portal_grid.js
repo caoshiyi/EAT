@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');let grid=[];for(let x=5;x<=9;x++)for(let z=87;z<=94;z++){let col=[];for(let y=65;y<=71;y++)col.push(bot.blockAt(new Vec3(x,y,z))?.name);grid.push([x,z,col]);}return{at:new Date().toISOString(),grid};

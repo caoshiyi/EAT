@@ -1,7 +1,0 @@
-# Low-health entry counterexample — 2026-10-17T02:56:06.770432+00:00
-
-Verifiedevent P4 Zombie death02:54:51UTC at2,65,80.4. #4341 failed14.7s patchtrip endedat4.007,66,79.7/6.667HP/protectedfalse, afterHIT→RETURN_FAILED DOOR_DAMAGE_STOP→ENDING_FAILED LAND_NOT_ACTUAL. About2s laterdeath, notoutertimeout. Freshstatus02:55:21showsNEWLIFECAMP20/20EMPTY/4346active, notrepair/kitretention. EarlierBANKkit remainsseparate.
-
-Actualdoor('enter') source: guardDoor throwswheneverbot.health<8 eveninENTRYrecovery. Damage-handlerdoesallowcontinuedentry(modeenter), buttheHPfloor independentlymakes thatrecoveryentryunsatisfiable whenalreadyinjured. Afteritthrows, secondreturnCamp failsLAND_NOT_ACTUAL; calleronlylogs/exitsstilloutside. Thisisaconcretecounterexample togeneralizing4304successfulretry toinjuredstates. Initialattackidentity/knockbackpath unisolated; deathbyZombieconfirmed.
-
-Smallcontractcorrection: beforedeparture, the chosenrecovery must actuallyacceptthe failurestates itis meanttohandle (currentlowHP/body/geometry), or dispatch immediatelyto anotherboundedcurrentending. A work-admissionHPfloor isnot itselfanentryrecovery. DoNOTblindlyremovealldamage/geometryguards orprescribealwayspushthrough; ownerchooses the phase-aware entry/alternate. Preserveworkissue,recoveryissue,actualprotectedending separately. No forcedlow-health/redeath testrequested. Source/benign4304case remainsuseful butlimited.

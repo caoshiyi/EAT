@@ -1,9 +1,0 @@
-# 19:35 review — current retained outcome and deadline
-
-Official EVAL_1935 dragon0/milestones11/deaths218, savefailedLAST-SAVED/savedHP52. Lastactual52.354599. Actual57 acceptedhits/132.625damage thisiteration; ultimateobjectiveunmet. Latestnarrowrun4hits61.354599→52.354599 thenhurt14→10.5 atfeet53/noactivejump, nativehealthyretreat0/50/4. This weakensjump-onlycause, notactualsourceproof. Noadditionaldeathobserved.
-
-Usefuluncertainty resolved: stand-only14058 valid120s/nojump/noattack/nohurt, nearestCLEAR3.11995 outside3m. That isrange-censored, notblockedray/failedattack; noaperturecutjustifiedfromthatminimum. Actorsnarrowedjumpadmissiontocurrentclear/nearverticalcandidate andresumed4actualhits, thenstandinghurt. ProactiveShield/blockeffect/sourcequestionstillunproved; togglesandwearnotcausality. P3keptslabalternativeoptional/canceledratherthanholdingexecutionforuntestedchange. Rootchallengedassumedsolebaitmechanics onlyasallocationconstraint, prescribednofightingmethod.
-
-Context: priorP1death19:19:26, P3single-ownerrecovery→actualP1receiptclosed, currentbody10.5/17below50; old20/14HPstatessuperseded. P3low20/roof52retained; P2noacceptedwork, P4unplayed. Newresourcewoodprimaryfinite, nowholekitrestoregate. Currentquestionhow toobtainremaining52.35legitimateretaineddamagewith~9min, methodsplayerschoose; noactualmaterialblockclaimed. No twoinformationlesswindows, but cannotclaimcompletionfromsubstantialpartialprogress.
-
-Requestedconcisehandoffsby19:40whileusefulworkcontinues:actualstate/callerhash/activeID/strongestfinding/uncertainty/ownedcommits; no inventedtokenusage. Absoluteattackloop19:43:45/overall19:44:24. Rootcaptures19:43/apparentvictory andconsolidatesofficialoutcome; ifofficialdragon1notifyallstop. Failure/truncation/timeout/duplicatespawnentriespreserved. Nextclosingreview19:40orconsequentialchange.

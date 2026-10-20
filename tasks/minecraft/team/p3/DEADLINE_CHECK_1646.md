@@ -1,8 +1,0 @@
-# Deadline state check — 2026-10-16 16:46 UTC
-Read full program.md and PLAN/P3/REVIEW/KNOWLEDGE before acting. Clock already past recorded actual16:42:32 deadline. Read-only arena status/programs and official evaluator only; no player program executed. python failed command lookup twice; switched to python3 successfully.
-
-Latest #1969 attempted two window cells, including originally-air (5,66,1). Target magma was 8.526 blocks away; no attack/hurt/kill receipt. Reverse cleanup tried remote cell first; server refused placement and exception prevented restoring immediate shelter face in that same program. #1973 independently restored immediate face5,66,2 using forceLook and verified full immediate closure, health20 and retained tools. This demonstrates one successful repair after failure, not an integrated correction or reliable magma operation. Distinguish concrete cleanup ordering/exception defect from uncertain reason for server refusal; do not infer it is only timing.
-
-Proposed smallest follow-up: track only cells actually changed by operation; always independently attempt immediate body-boundary closure before optional remote geometry, isolating each placement exception. Validate real closure and assets after all attempts. This is a proposal, not adopted code or completed world test. No new implementation tested after deadline.
-
-Evaluator: dragon0/milestones5/deaths43/programs1974/restarts1; p1deaths10, p2/p3/p4deaths11 each. Current status p3 Nether6.3,65,2.5 hp20 food20, cobble6, cod1, table1,dirt1,gravel1,stonepick1,woodpick2,no armor/shield. Last program observed stonewear34, wood45+2. World status confirms assets; does not itself verify geometry. No new capabilities or objective success claimed.

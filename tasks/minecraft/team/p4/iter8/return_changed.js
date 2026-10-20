@@ -1,9 +1,0 @@
-const{Vec3}=require('vec3');let lost=false;const stop=()=>{lost=true;bot.clearControlStates();bot.pathfinder.setGoal(null);};bot.on('death',stop);bot.on('respawn',stop);function check(){if(lost||bot.health<16||bot.game.dimension!=='overworld')throw Error('LIFE');}async function ticks(n){check();await bot.waitForTicks(n);check();}
-try{
- bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('START',bot.entity.position,bot.entity.onGround,bot.entity.isInWater,bot.vehicle?.id);
- console.log('LOCAL',JSON.stringify([-1,0,1].flatMap(dx=>[-1,0,1].flatMap(dz=>[0,1,2].map(dy=>{const p=bot.entity.position.floored().offset(dx,dy-1,dz),b=bot.blockAt(p);return[p,b?.name,b?.shapes]})))));
- await bot.lookAt(new Vec3(-1.5,bot.entity.position.y+1.4,92.5),true);await ticks(2);bot.setControlState('forward',true);for(let i=0;i<35&&bot.entity.position.z>93.7;i++){await ticks(1);}bot.clearControlStates();await ticks(4);console.log('MANUAL_ACTUAL',bot.entity.position);
- const m=new Movements(bot);m.canDig=false;m.canOpenDoors=false;m.allowSprinting=false;m.allowParkour=false;m.allow1by1towers=false;m.scafoldingBlocks=[];m.maxDropDown=3;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=1000;
- for(const[x,z]of[[-3,85],[0,79],[6,79]]){let timer;try{await Promise.race([bot.pathfinder.goto(new goals.GoalXZ(x,z)),new Promise((_,r)=>timer=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('NAV_BOUND'))},7000))]);}finally{clearTimeout(timer);bot.pathfinder.setGoal(null);bot.clearControlStates();}await ticks(4);console.log('LEG',x,z,bot.entity.position);if(Math.hypot(bot.entity.position.x-x-.5,bot.entity.position.z-z-.5)>1)throw Error('LEG_FALSE');}
- console.log('FRONT_READY',bot.entity.position);
-}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('death',stop);bot.removeListener('respawn',stop);console.log('END',bot.entity.position,bot.health,lost);}

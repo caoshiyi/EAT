@@ -1,4 +1,0 @@
-== #9666 2026-10-18T11:58:13 p1 role=objective_owner iter=21 0 s
-const V=bot.entity.position.constructor,p=new V(147,-33,2232),b=bot.blockAt(p);await bot.lookAt(p.offset(.5,.5,.5),true);console.log(JSON.stringify({p:bot.entity.position,eyeHeight:bot.entity.eyeHeight,b:{name:b.name,shapes:b.shapes,boundingBox:b.boundingBox,transparent:b.transparent,canDig:bot.canDigBlock(b)},yaw:bot.entity.yaw,pitch:bot.entity.pitch,cursor:bot.blockAtCursor(4.5)&&{p:bot.blockAtCursor(4.5).position,n:bot.blockAtCursor(4.5).name},distance:bot.entity.position.offset(0,1.62,0).distanceTo(p.offset(.5,.5,.5))}));
--- output --
-{"p":{"x":144.5,"y":-35,"z":2231.500182242191},"eyeHeight":1.62,"b":{"name":"cobweb","shapes":[],"boundingBox":"empty","transparent":true,"canDig":true},"yaw":-1.8925504282397356,"pitch":0.27227136331109847,"cursor":{"p":{"x":148,"y":-32,"z":2232},"n":"oak_planks"},"distance":3.2823826024445046}

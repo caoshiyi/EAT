@@ -1,5 +1,0 @@
-== #4081 2026-10-17T01:59:24 p1 role=lead_converter iter=9 0 s
-const p=bot.entity.position;console.log('MORNING_CHECK',bot.time.timeOfDay,p,bot.health);console.log('FOES_XYZ',JSON.stringify(Object.values(bot.entities).filter(e=>['skeleton','creeper','witch','zombie','spider'].includes(e.name)&&e.position.distanceTo(p)<28).map(e=>[e.name,e.position])));
--- output --
-MORNING_CHECK 23642 Vec3 { x: 36.5, y: 65, z: 94.50102156034461 } 20
-FOES_XYZ [["skeleton",{"x":57.48758697839405,"y":69,"z":89.31562592415168}],["skeleton",{"x":27.21587603980683,"y":64,"z":111.33785179894267}],["skeleton",{"x":58.41344350074471,"y":69,"z":85.734132280706}]]

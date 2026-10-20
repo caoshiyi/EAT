@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{roof:[[6,69,83],[6,69,82],[7,69,83]].map(a=>{const b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.getProperties()]}),target:Object.values(bot.entities).filter(e=>e.name==='spider').map(e=>[e.id,e.isValid,e.position.clone(),e.metadata?.[9]]),p:bot.entity.position,hp:bot.health,day:bot.time.timeOfDay};

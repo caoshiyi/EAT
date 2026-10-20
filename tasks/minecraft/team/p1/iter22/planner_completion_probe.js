@@ -1,6 +1,0 @@
-const V=bot.entity.position.constructor;bot.pathfinder.setGoal(null);bot.clearControlStates();const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];m.maxDropDown=2;
-function plan(start,goal){const begin=Date.now(),gen=bot.pathfinder.getPathFromTo(m,start,goal,{timeout:2500,tickTimeout:250}),statuses=[];let result=null;for(let n=0;n<12;n++){const next=gen.next(),v=next.value,r=v?.result||v;if(r?.status){statuses.push(r.status);result=r;}if(next.done||r?.status!=='partial')break;}return {elapsed:Date.now()-begin,statuses,status:result?.status,path:result?.path?.map(p=>[p.x,p.y,p.z,p.toBreak?.length,p.toPlace?.length])};}
-console.log('SMALL_CURRENT_GOAL',JSON.stringify(plan(bot.entity.position.clone(),new goals.GoalBlock(0,66,-41))));
-console.log('HYPOTHETICAL_SURFACE_TO_OLD_SHORE',JSON.stringify(plan(new V(10.5,73,-39.5),new goals.GoalBlock(7,63,-10))));
-console.log('HYPOTHETICAL_HOME_BANK',JSON.stringify(plan(new V(.5,68,-40.5),new goals.GoalNear(7,68,82,2))));
-return {p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,dim:bot.game.dimension,controls:bot.controlState,goal:bot.pathfinder.goal,inv:bot.inventory.items().map(i=>[i.name,i.count]),clock:bot.time.timeOfDay};

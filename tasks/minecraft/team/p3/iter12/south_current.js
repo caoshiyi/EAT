@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,cells:[[1,65,6],[1,66,6],[1,67,6],[1,68,6],[2,67,6],[2,68,6],[0,66,6],[0,67,6],[1,66,7],[1,67,7],[1,65,5],[1,66,5],[1,67,5]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])};

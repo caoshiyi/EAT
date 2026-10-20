@@ -1,1 +1,0 @@
-const start=Date.now(),initialIndex=plan.index;try{while(plan.index<plan.path.length-1&&plan.index-initialIndex<15&&Date.now()-start<50000)await stepOne();console.log('BATCH_ACCEPTED',initialIndex,plan.index,plan.accepted,'ELAPSED',Date.now()-start);}catch(e){console.log('BATCH_ISSUE',e.message)}finally{recoveryMode=true;await ending()}

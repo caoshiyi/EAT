@@ -1,4 +1,0 @@
-== #4878 2026-10-17T04:43:26 p3 role=reliability_builder iter=10 0 s
-const{Vec3}=require('vec3');return{p:bot.entity.position.clone(),entityId:bot.entity.id,hp:bot.health,faces:[[-99,64,86],[-99,63,86],[-99,65,86],[-99,62,86]].map(a=>[a,bot.blockAt(new Vec3(...a)).name]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
--- returned --
-{"p": {"x": -97.46196794510723, "y": 63, "z": 86.5026739401111}, "entityId": 170, "hp": 20, "faces": [[[-99, 64, 86], "dirt"], [[-99, 63, 86], "cobblestone"], [[-99, 65, 86], "cobblestone"], [[-99, 62, 86], "cobblestone"]], "inv": [["wooden_sword", 1, 2], ["stick", 1, null], ["wooden_pickaxe", 1, 58], ["wooden_shovel", 1, 5], ["dirt", 1, null], ["basalt", 30, null], ["stone_sword", 1, 28], ["blackstone", 2, null], ["sweet_berries", 3, null], ["ender_pearl", 1, null]]}

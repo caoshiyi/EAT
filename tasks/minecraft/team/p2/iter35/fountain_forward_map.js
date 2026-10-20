@@ -1,1 +1,0 @@
-const {Vec3}=require('vec3');const rows=[];for(let x=-1;x<=1;x++)for(let z=2;z<=5;z++)rows.push({x,z,blocks:Array.from({length:5},(_,i)=>[59+i,bot.blockAt(new Vec3(x,59+i,z))?.name])});console.log('FORWARD_MAP',JSON.stringify({t:new Date().toISOString(),p:bot.entity.position,hp:bot.health,rows}));

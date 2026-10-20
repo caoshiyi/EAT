@@ -1,8 +1,0 @@
-const {Vec3}=require('vec3');const m=new Movements(bot);m.canDig=false;m.maxDropDown=3;m.infiniteLiquidDropdownDistance=false;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=2500;
-for(const g of [new goals.GoalNear(17,68,82,1),new goals.GoalBlock(16,65,82)]){let t;try{await Promise.race([bot.pathfinder.goto(g),new Promise((_,r)=>t=setTimeout(()=>{bot.pathfinder.setGoal(null);r(Error('recovery bound'))},6000))])}catch(e){console.log(e.message)}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates()}await bot.waitForTicks(10);console.log('pickup',bot.entity.position,bot.inventory.items().map(i=>[i.name,i.count]));}
-if(bot.entity.position.y<67){
- const r=bot.recipesFor(bot.registry.itemsByName.spruce_planks.id,null,1,null)[0];if(r)await bot.craft(r,1,null);
- bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);
- for(let n=0;n<3;n++){const p=bot.entity.position.floored();const head=bot.blockAt(p.offset(0,2,0));if(head.boundingBox==='block')throw Error('head column no longer clear');const base=bot.blockAt(p.offset(0,-1,0));if(base.boundingBox!=='block')throw Error('no floor');const block=bot.inventory.items().find(i=>['spruce_planks','sandstone','cobblestone','dirt'].includes(i.name));if(!block)throw Error('no pillar block');await bot.equip(block,'hand');await bot.lookAt(base.position.offset(.5,1,.5),true);await bot.waitForTicks(4);bot.setControlState('jump',true);await bot.waitForTicks(4);try{await bot.placeBlock(base,new Vec3(0,1,0))}finally{bot.setControlState('jump',false)}await bot.waitForTicks(12);console.log('pillar',bot.entity.position.y)}
-}
-console.log('recovered',bot.inventory.items().map(i=>[i.name,i.count]),'p',bot.entity.position,'hp',bot.health,'food',bot.food);

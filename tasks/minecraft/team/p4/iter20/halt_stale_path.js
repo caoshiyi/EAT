@@ -1,1 +1,0 @@
-const samples=[];for(let i=0;i<5;i++){bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(3);samples.push({i,p:bot.entity.position.clone(),goal:bot.pathfinder.goal?String(bot.pathfinder.goal):null,controls:{...bot.controlState}});}return {samples,p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround};

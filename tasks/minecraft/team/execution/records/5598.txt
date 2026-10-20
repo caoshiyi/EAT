@@ -1,4 +1,0 @@
-== #5598 2026-10-17T07:04:43 p1 role=experiment_owner iter=11 0 s
-const{Vec3}=require("vec3");bot.clearControlStates();bot.pathfinder.setGoal(null);console.log("FINAL_WORLD_BODY",JSON.stringify({world:bot.game.dimension,p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,right:[67,68].map(y=>{const b=bot.blockAt(new Vec3(7,y,81));return[y,b?.name,b?.shapes]}),left:bot.blockAt(new Vec3(6,67,81))?.getProperties(),inventory:bot.inventory.items().map(i=>[i.name,i.count])}));
--- output --
-FINAL_WORLD_BODY {"world":"overworld","p":{"x":6.500000076339715,"y":67.5625,"z":83.33807287126218},"hp":20,"food":20,"controls":{},"right":[[67,"sandstone",[[0,0,0,1,1,1]]],[68,"sandstone",[[0,0,0,1,1,1]]]],"left":{"powered":false,"open":false,"hinge":"left","half":"lower","facing":"north"},"inventory":[]}

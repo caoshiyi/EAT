@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const cols=[];for(let x=51;x<=55;x++)for(let z=151;z<=154;z++){cols.push({x,z,a:[59,60,61,62,63,64,65].map(y=>[y,bot.blockAt(new Vec3(x,y,z))?.name])});}return{cols,hp:bot.health,p:bot.entity.position,eye:bot.entities[13940]?.position};

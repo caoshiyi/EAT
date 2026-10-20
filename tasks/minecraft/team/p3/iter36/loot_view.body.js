@@ -1,3 +1,0 @@
-const e=Object.values(bot.entities).find(e=>e.name==='ender_dragon'),p=Object.values(bot.entities).find(e=>e.username==='p1');const r={at:new Date().toISOString(),dragon:e?{p:e.position.clone(),hp:e.metadata?.[9],phase:e.metadata?.[16]}:null,p1:p?{p:p.position.clone(),hp:p.metadata?.[9]}:null,p3:{p:bot.entity.position.clone(),hp:bot.health,food:bot.food}};console.log('EFFECT',JSON.stringify(r));
-
-console.log('LOOT_VIEW',JSON.stringify({at:new Date().toISOString(),entities:Object.values(bot.entities).filter(e=>e.name==='item'||e.name==='experience_orb').map(e=>({id:e.id,n:e.name,p:e.position,meta:e.metadata})),cells:[v(-5,52,4),v(-4,52,4),v(-4,51,4),v(-4,50,4)].map(q=>({q,n:bot.blockAt(q)?.name}))}));

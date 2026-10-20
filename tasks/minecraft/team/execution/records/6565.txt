@@ -1,4 +1,0 @@
-== #6565 2026-10-17T10:02:58 p2 role=independent_operator iter=13 0 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count]),cells:[[8,67,83],[8,68,83],[8,69,83]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name])};
--- returned --
-{"p": {"x": 7.51774774701206, "y": 67.5625, "z": 83.50112208416678}, "hp": 20, "food": 20, "inv": [], "items": [[10097, {"x": 9.565642754277588, "y": 67, "z": 84.07654775416614}, "spruce_planks", 1]], "cells": [[[8, 67, 83], "cobblestone"], [[8, 68, 83], "dirt"], [[8, 69, 83], "air"]]}

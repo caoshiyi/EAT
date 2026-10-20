@@ -1,1 +1,0 @@
-bot.chat('P3 accepts14443 replacement kit: nativeWood5/C45 funds AXE+PICK+E16 now; ETA craft/table removal <=45s, recipient receipt via existing northcourier <=2min if P2 available. No dirt/gravel in P3 inventory; cannot promise those. P2 please courier from ownNorthgate-5/z3 to P1low; preserve49/52/support.');

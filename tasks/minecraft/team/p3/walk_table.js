@@ -1,3 +1,0 @@
-bot.pathfinder.setGoal(null);bot.clearControlStates();const {Vec3}=require('vec3');
-try{for(let n=0;n<4;n++){const p=bot.entity.position.clone();await bot.lookAt(new Vec3(10,p.y+1.62,-35),true);bot.setControlState('forward',true);bot.setControlState('jump',true);await bot.waitForTicks(35);console.log('walk',n,bot.entity.position);if(bot.entity.position.distanceTo(p)<1)break;if(Math.hypot(bot.entity.position.x-10,bot.entity.position.z+35)<2)break;}}finally{bot.clearControlStates();}
-console.log('furnace distance',bot.entity.position.distanceTo(new Vec3(10,69,-35)));return bot.inventory.items().map(i=>[i.name,i.count]);

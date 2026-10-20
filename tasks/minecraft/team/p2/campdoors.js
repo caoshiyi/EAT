@@ -1,6 +1,0 @@
-const {Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);
-const ch=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const log=ch.containerItems().find(i=>i.name==='spruce_log');await ch.withdraw(log.type,null,2);ch.close();await bot.waitForTicks(4);
-async function c(name,table=null){const r=bot.recipesFor(bot.registry.itemsByName[name].id,null,1,table)[0];if(!r)throw Error('no '+name);await bot.craft(r,1,table);await bot.waitForTicks(4);}
-await c('spruce_planks');await c('spruce_planks');await c('spruce_door',bot.blockAt(new Vec3(6,66,82)));console.log('door inv',bot.inventory.items().map(i=>[i.name,i.count]));
-for(const x of [6,7]){const base=bot.blockAt(new Vec3(x,66,81));console.log('base',x,base.name);if(base.boundingBox!=='block')continue;const d=bot.inventory.items().find(i=>i.name==='spruce_door');await bot.equip(d,'hand');await bot.waitForTicks(4);try{await bot.placeBlock(base,new Vec3(0,1,0));}catch(e){console.log('place',e.message);}await bot.waitForTicks(6);console.log('door',x,bot.blockAt(new Vec3(x,67,81)).name,bot.blockAt(new Vec3(x,67,81)).getProperties());}
-console.log('inside',bot.entity.position,'health',bot.health);

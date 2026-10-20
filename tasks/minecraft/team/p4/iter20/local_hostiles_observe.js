@@ -1,1 +1,0 @@
-return {pos:bot.entity.position,hp:bot.health,food:bot.food,entities:Object.values(bot.entities).filter(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<20).map(e=>({id:e.id,n:e.name,p:e.position.clone(),w:e.width,h:e.height,eyeDistance:bot.entity.position.offset(0,1.62,0).distanceTo(e.position),meta:e.metadata}))};

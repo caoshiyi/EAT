@@ -1,3 +1,0 @@
-console.log('ENVIRONMENT SANDBOX G27-4 one supportedUP then SMALL ordinary continuous DOWNwalk; noSnow/exposure');
-const guard=makeOperationGuard(bot),forward=l=>guard.forward(l),walkCheck=l=>guard.escape(l);
-try{if(bot.game.dimension!=='the_end'||!bot.entity.position.floored().equals(v(-11,50,-11))||bot.health!==10)throw Error('smallsource');await stepStair(v(-12,51,-11));guard.beginEscape('smallfastwalk');await fastWalkStep(v(-11,50,-11));await seal(true);console.log('FASTWALK_SMALL_RETAINED',JSON.stringify(state()));}catch(e){console.log('FAILURE',String(e),JSON.stringify(state()));try{await seal(true);}catch(f){console.log('RECOVERY_FAILURE',String(f));}}finally{console.log('OPERATION_GUARD',JSON.stringify(guard.report()));guard.close();stop();}return state();

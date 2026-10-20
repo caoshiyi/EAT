@@ -1,1 +1,0 @@
-return{p:bot.entity.position,hp:bot.health,magmas:Object.values(bot.entities).filter(e=>e.name==='magma_cube').map(e=>({id:e.id,p:e.position,width:e.width,height:e.height,meta:e.metadata})),time:bot.time.timeOfDay};

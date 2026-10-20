@@ -1,1 +1,0 @@
-const r=global.p2ContactRaw;console.log('READBACK',JSON.stringify({present:!!r,samples:r?.tail?.length,events:r?.events?.length,last:r?.tail?.at(-1),hp:bot.health,p:bot.entity.position}));if(!r||r.tail.length!==8)throw Error('PERSISTENCE_FAILED');

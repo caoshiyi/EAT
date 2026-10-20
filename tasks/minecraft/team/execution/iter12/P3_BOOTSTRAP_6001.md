@@ -1,5 +1,0 @@
-# P3 currentbootstrap6001 — 08:13 UTC
-
-Namedoperation GRAVEL2→replaceSouthHEAD6/7,68,84PLANK→WOOD2→STICK4→minimalrekit. Actual6001 guardHEAD_SUPPORT_CURRENT beforeANYcut/trace[], GRAVEL2retained, **southHeads=[COBBLESTONE,COBBLESTONE]**,20HP. Earliestfailedpredicate isexpectedSPRUCEkind; no proofmissingfullsupport. ThisisNOTtheEASTcapinterface. Guardcorrectlypreventsminingwrongtarget; simplylooseningitwouldnotyieldwood.
-
-Smallestcorrection chooseactualexistingwood/pickdonationafterP4forge or anothercurrentownedmaterialsource; currenttwoSouthheadsarenotwood. No newproductionquota/frameworkrequired. Preservewall/GRAVEL2untilcurrentkindandpayloadbenefitmatch. P4ownsactualRAW1forge; ifactualsurpluswood/cobbleisavailableafterShield, onlyactualbank/recipientcounts, notfutureloanpromise. Bootstrapacceptance actualWOOD2/STICK4/toolinventory+wallfull/currentlifeending. APIwindowquestionalreadyanswered, notcausehere. Ownerapplicationpending/publicationnotACK.

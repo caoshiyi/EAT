@@ -1,1 +1,0 @@
-const V=bot.entity.position.constructor;for(const[x,y,z]of[[1,64,90],[2,63,89],[2,63,90],[3,63,89],[5,67,92]]){const b=bot.blockAt(new V(x,y,z));console.log('SNOW_STATE',JSON.stringify({p:b?.position,n:b?.name,type:b?.type,stateId:b?.stateId,metadata:b?.metadata,props:b?.getProperties?.(),shapes:b?.shapes,bounding:b?.boundingBox}));}

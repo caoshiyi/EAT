@@ -1,4 +1,0 @@
-== #5257 2026-10-17T05:52:22 p4 role=integration_operator iter=11 0.3 s
-const{Vec3}=require('vec3');const w=bot.findBlocks({matching:b=>b.name==='water'&&b.getProperties().level==='0',maxDistance:48,count:2000}).filter(q=>['air','cave_air'].includes(bot.blockAt(q.offset(0,1,0))?.name)).slice(0,12);return{utc:new Date().toISOString(),p:bot.entity.position,hp:bot.health,time:bot.time.timeOfDay,water:w.map(q=>({q:[q.x,q.y,q.z],above:[1,2,3,4,5].map(y=>bot.blockAt(q.offset(0,y,0))?.name),neighbor:[[1,0],[-1,0],[0,1],[0,-1]].map(([x,z])=>[x,z,[0,1,2].map(y=>bot.blockAt(q.offset(x,y,z))?.name)])}))};
--- returned --
-{"utc": "2026-10-17T05:52:22.578Z", "p": {"x": 7.572751710114903, "y": 67.5625, "z": 83.69999994127718}, "hp": 12.366665840148926, "time": 7983, "water": []}

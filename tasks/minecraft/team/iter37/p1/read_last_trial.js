@@ -1,1 +1,0 @@
-const r=global.p1_roleTrial;console.log('LAST_NATIVE_TRIAL',JSON.stringify(r&&{at:r.at,attacks:r.attacks,issue:r.issue,dragonBefore:r.dragonBefore,dragonAfter:r.dragonAfter,state:r.state,faces:r.faces,damagePackets:r.damagePackets,motionTail:r.motionTail?.slice(-6),hurtWindows:r.hurtWindows?.map(w=>({at:w.at,before:w.before?.slice(-5),after:w.after?.slice(0,6)}))}));

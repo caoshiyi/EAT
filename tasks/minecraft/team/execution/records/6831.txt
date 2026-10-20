@@ -1,4 +1,0 @@
-== #6831 2026-10-17T11:05:04 p4 role=integration_operator iter=13 1 s
-const{Vec3}=require('vec3');await bot.waitForTicks(20);return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,entity99:!!bot.entities[99],magma:Object.values(bot.entities).filter(e=>e.name==='magma_cube').map(e=>[e.id,e.position,e.metadata]),sand61:bot.blockAt(new Vec3(4,61,82))?.name,wall:[67,68].map(y=>[y,bot.blockAt(new Vec3(5,y,82))?.name]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};
--- returned --
-{"at": "2026-10-17T11:05:05.510Z", "p": {"x": 6.589878890827309, "y": 67.5625, "z": 83.41170537584493}, "hp": 20, "food": 20, "entity99": false, "magma": [], "sand61": "sand", "wall": [[67, "dirt"], [68, "dirt"]], "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}}

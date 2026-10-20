@@ -1,1 +1,0 @@
-const V=require('vec3').Vec3;return{p:bot.entity.position,hp:bot.health,source:[43,44,45,46].map(y=>{const b=bot.blockAt(new V(-4,y,-32));return[y,b?.name,b?.shapes]}),currentgate:[45,46].map(y=>bot.blockAt(new V(-4,y,-31))?.name)};

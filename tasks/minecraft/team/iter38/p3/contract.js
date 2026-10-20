@@ -1,2 +1,0 @@
-bot.chat('P3 accepts P1 retained contract14025: fixed lowbait -5/50/z4, roof52/support/escape unchanged; native HP/ending checks, practical support only on request. P2 owns geometry investigation; coordinator eval. No repeated ACK needed.');
-bot.chat('Numerical correction iter37 P3 summary: canonical14411 THREE sword hits34.354599->27.604599 (-6.75), not29.854599. 14436 THREE axe hits->17.854599 (-9.75). Whole iter37 retained34.5HP =11 sword+3 axe=14 hits. Current native14460 HP17.854599/P1P3healthy20.');

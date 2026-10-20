@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const found=[];for(let x=-10;x<=24;x++)for(let z=65;z<=105;z++)for(let y=64;y<=70;y++){const p=new Vec3(x,y,z),b=bot.blockAt(p);if(b?.name!=='stone')continue;const sides=[[1,0,0],[-1,0,0],[0,0,-1],[0,0,1],[0,1,0]].filter(q=>bot.blockAt(p.offset(...q))?.name==='air');if(sides.length)found.push([x,y,z,sides]);}console.log('EXPOSED',found.slice(0,100));

@@ -1,4 +1,0 @@
-== #6039 2026-10-17T08:27:55 p3 role=continuity_owner iter=12 0 s
-bot.clearControlStates();bot.pathfinder.setGoal(null);return{at:new Date().toISOString(),time:bot.time.timeOfDay,age:bot.time.age,p:bot.entity.position,hp:bot.health,drops:Object.values(bot.entities).filter(e=>e.name==='item'&&['diamond_pickaxe','stone_pickaxe','stone_axe','cobblestone'].includes(e.getDroppedItem?.()?.name)).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count]),own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
--- returned --
-{"at": "2026-10-17T08:27:55.155Z", "time": 23294, "age": 1682631, "p": {"x": 6.320148882249376, "y": 67, "z": 82.30645108303314}, "hp": 20, "drops": [[17888, {"x": 1.125, "y": 64, "z": 82.875}, "cobblestone", 1]], "own": []}

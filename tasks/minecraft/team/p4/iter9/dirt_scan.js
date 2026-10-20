@@ -1,2 +1,0 @@
-const {Vec3}=require('vec3');
-return {p:bot.entity.position,ground:bot.findBlocks({matching:b=>['grass_block','dirt','podzol'].includes(b.name),maxDistance:18,count:250}).filter(p=>p.x>=9&&p.z<81&&p.z>68&&['air','short_grass','fern','snow'].includes(bot.blockAt(p.offset(0,1,0))?.name)).slice(0,20).map(p=>[p,bot.blockAt(p).name,bot.blockAt(p.offset(0,-1,0))?.name,bot.blockAt(p.offset(0,2,0))?.name])};

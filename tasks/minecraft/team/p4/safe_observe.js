@@ -1,3 +1,0 @@
-bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);console.log('pos',bot.entity.position.toString(),'health',bot.health,'food',bot.food,'oxygen',bot.oxygenLevel,'at',bot.blockAt(bot.entity.position).name,'head',bot.blockAt(bot.entity.position.offset(0,1,0)).name);
-console.log('inventory',bot.inventory.items().map(i=>[i.name,i.count]));console.log('drops',Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<30).map(e=>({name:e.getDroppedItem?.()?.name,p:e.position.toString()})));
-if(bot.blockAt(bot.entity.position.offset(0,1,0)).name==='water'){bot.setControlState('jump',true);await bot.waitForTicks(40);bot.clearControlStates();console.log('surfaced',bot.entity.position.toString());}

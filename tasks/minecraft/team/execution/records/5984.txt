@@ -1,4 +1,0 @@
-== #5984 2026-10-17T08:05:34 p4 role=integration_operator iter=12 0 s
-return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),upperMobs:Object.values(bot.entities).filter(e=>['zombie','zombie_villager','spider','skeleton','creeper'].includes(e.name)&&e.position.y>63&&e.position.distanceTo(bot.entity.position)<25).map(e=>[e.id,e.name,e.position,e.metadata?.[9]])};
--- returned --
-{"at": "2026-10-17T08:05:34.853Z", "p": {"x": 24.495512404705014, "y": 64, "z": 81.44477193826978}, "hp": 20, "food": 20, "own": [["furnace", 1, null], ["coal", 1, null], ["gravel", 4, null], ["stone_axe", 1, 64], ["spruce_planks", 6, null], ["warped_planks", 1, null], ["sand", 2, null], ["stone_pickaxe", 1, 101], ["sandstone", 1, null]], "upperMobs": []}

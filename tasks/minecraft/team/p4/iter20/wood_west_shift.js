@@ -1,2 +1,0 @@
-const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);
-try{await bot.pathfinder.goto(new goals.GoalBlock(140,-36,2231));await bot.waitForTicks(8);}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();return {p:bot.entity.position,hp:bot.health,wood:bot.inventory.items().map(i=>({n:i.name,c:i.count})),hostiles:Object.values(bot.entities).filter(e=>e.type==='hostile'&&e.position.distanceTo(bot.entity.position)<6).map(e=>({n:e.name,p:e.position}))};}

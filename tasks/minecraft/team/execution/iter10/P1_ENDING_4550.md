@@ -1,3 +1,0 @@
-# Reported ending4550 — current body first
-
-Actual4550(03:22:12,7.7s) issueTHREAT/ENDING_FAILED BURY_CAP/endingUNRESOLVED, p137.497,65,178.522/HP19food17/lostfalse/7controlsfalse. Failedending, notobservedprotectedbody. Owner should handle immediatecurrentbody/geometry before report/newexpedition. Scope: actualrecord may be superseded by currentrepair; no uniqueinjury/capcause or stationarybodyclaim from this report. Specialist runsno playerprogram. Read-onlyalertpredicate previously missed enumUNRESOLVED; corrected narrowreplay4550PASS againstprotected4517/qualified4499nonalerts,4487failedalert. Alertremains reportedending, notphysicalexposurecertificate/rescue.

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position.clone(),entityId:bot.entity.id,hp:bot.health,faces:[[-99,64,86],[-99,63,86],[-99,65,86],[-99,62,86]].map(a=>[a,bot.blockAt(new Vec3(...a)).name]),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};

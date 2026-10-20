@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,cells:[6,7].flatMap(x=>[84,85,86,87].map(z=>[x,z,[63,64,65,66,67,68,69].map(y=>[y,bot.blockAt(new Vec3(x,y,z))?.name])])),near:Object.values(bot.entities).filter(e=>e.position.distanceTo(new Vec3(6.5,67,85.5))<12).map(e=>[e.id,e.name,e.position])};

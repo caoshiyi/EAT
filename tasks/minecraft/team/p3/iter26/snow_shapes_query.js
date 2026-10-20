@@ -1,2 +1,0 @@
-const V=bot.entity.position.constructor;
-return {at:new Date().toISOString(),blocks:[new V(6,68,84),new V(6,68,93),new V(8,67,92)].map(p=>{const b=bot.blockAt(p);return {p,name:b?.name,shapes:b?.shapes,properties:b?.getProperties?.()};}),tools:['stone_pickaxe','stone_shovel','wooden_shovel'].map(n=>({n,item:bot.registry.itemsByName[n]})),p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count])};

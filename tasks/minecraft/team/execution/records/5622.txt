@@ -1,8 +1,0 @@
-== #5622 2026-10-17T07:09:19 p2 role=independent_operator iter=12 0 s
-bot.clearControlStates();bot.pathfinder.setGoal(null);const start=bot.entity.position.clone();try{if(bot.game.dimension!=='the_nether'||start.distanceTo(require('vec3').Vec3(1.5,65,4.5))>1)throw Error('START');await bot.look(Math.PI/2,0,true);bot.setControlState('sneak',true);bot.setControlState('forward',true);for(let i=0;i<15&&bot.entity.position.x>1.32;i++)await bot.waitForTicks(1);}finally{bot.clearControlStates();}await bot.waitForTicks(3);bot.chat('P3 P2 actualWESTx'+bot.entity.position.x.toFixed(3)+' z'+bot.entity.position.z.toFixed(3)+' HP'+bot.health+'; E/S no cuts. Your Sbench/head write ACK, handoff2caps then P2exit after yourOW.');return{p:bot.entity.position,hp:bot.health};
--- error --
-TypeError: Class constructor Vec3 cannot be invoked without 'new'
-    at p2-program-5622.js:1:170
-    at runProgram (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:386:17)
-    at Server.<anonymous> (/home/ubuntu/EAT-mc-run2/tools/mc_arena/bothost.js:510:30)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

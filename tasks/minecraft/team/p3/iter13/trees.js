@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),m={};for(const p of bot.findBlocks({matching:b=>b.name==='spruce_log',maxDistance:50,count:200})){const k=p.x+','+p.z;(m[k]||=[]).push(p.y);}return{trees:Object.entries(m).map(([k,ys])=>[k,ys.sort((a,b)=>a-b)]).slice(0,15)};

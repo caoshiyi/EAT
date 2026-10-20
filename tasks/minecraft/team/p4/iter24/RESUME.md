@@ -1,2 +1,0 @@
-# P4 closure complete20:05 UTC
-Read P4.md and ITER24_REVIEW.md for current final observations. Own10838 three16FULL/20HP20food/EMPTY/all7FALSE20:04:04. Independent20:04 evaluator0/11/177 SAVEFAILED/lastsaved. FinalFULL10834 primaryretained148.528896,-36,2242.309549/17.2667HP17food/three10FULL, noFRAME/End. Actualcatch/cook/use twice verified10812/15/19/23, UP4 10826; H12operational/adoptioncomplete10767/10787. No physicalqueue orpendingpermission. Adjustedfinalwindow20:04–09 checkedafteroperator20minstop; originalbudgetsunchanged. Commitonlyownedfiles/no push.

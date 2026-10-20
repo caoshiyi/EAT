@@ -1,9 +1,0 @@
-program #9271 on p1: 3.9 s
---- output ---
-{"p":{"x":146.50695725040333,"y":-36,"z":2241.6866731197133},"hp":20,"inv":[["oak_planks",8],["torch",1]]}
---- returned ---
-(nothing)
---- chat since this player's previous program ---
-p4: P4 FIELD FAILED9264/9267: actual End arrivalHP16 insideoldcloud radius4.22; east sprint reached103.03,49,-1.519 HP16 outsideoldcloud, but first side-ray NULL→zero placements. Error ending cleared sneak on overhang without retreat (my error); before resume9
-p4: 267 P4 VOID death, nowOWbed1462241 EMPTY20. Oldcloud NOT expired/proven, hold0s. Changed assumption required: fail-closed interaction must retreat to fullsupport INSIDE SAME program before clearing sneak. No unchanged repeat.
---- p1 now: (146.5, -36, 2241.7) in overworld, health 20/20, food 20/20, alive

@@ -1,6 +1,0 @@
-# Normal survival inventory support
-When P3 is low bait beside P1's escape tower, dropped dirt can otherwise auto-pick up into the wrong body. P3 can fill its own storage with single endstone stacks through normal inventory clicks. This consumes no items and moves no body. No existing dirt stack may remain, or incoming dirt can merge.
-
-LIVE14216 one-slot split test: E62→61+1, cursor null/body20 unchanged. LIVE14221 filled remaining10 slots: storage9..44 all36 occupied/free0/Dirt0. LIVE14223 one-merge test freed1 with cursor null; LIVE14224 refilled. P1 subsequentpilot dug/preopenedDirt and P3stillDirt0/free0. No unique pickup-causality claim beyond actual inventory precondition.
-
-Programs inventory_split_one.js, inventory_fill.js, inventory_unfill_one.js, inventory_unfill.js use ONLY normal bot.clickWindow in own player inventory. Before new corpse recovery RUN inventory_unfill.js to free space; otherwise critical sword/shield will remain on ground. Merge operation tested small before relying on it. If any cursor/slot count check fails, inspect native inventory before further clicks. Current LIVEP3inventory remains full at20:22/HP20/exactlow50; ongoing escape support, not stash loss.

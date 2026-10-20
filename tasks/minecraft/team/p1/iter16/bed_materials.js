@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const a=[];for(let x=145;x<=147;x++)for(let z=2240;z<=2242;z++)for(let y of[-34,-33,-32]){const q=new Vec3(x,y,z),b=bot.blockAt(q);a.push([q.toArray(),b?.name])}return{p:bot.entity.position,hp:bot.health,food:bot.food,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),a};

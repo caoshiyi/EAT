@@ -1,2 +1,0 @@
-const V=require('vec3').Vec3,st=global.P4Spiral20;bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(10);
-return {p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,velocity:bot.entity.velocity,nearSteps:st.steps.filter(p=>p.y>=57&&p.y<=64).map(p=>({p,floor:bot.blockAt(new V(p.x,p.y-1,p.z)).name,foot:bot.blockAt(new V(p.x,p.y,p.z)).name,head:bot.blockAt(new V(p.x,p.y+1,p.z)).name})),inventory:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed}))};

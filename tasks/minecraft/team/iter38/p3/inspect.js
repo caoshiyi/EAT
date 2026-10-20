@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3');
-const p=bot.entity.position.floored();
-console.log('OPENING',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,ground:bot.entity.onGround,controls:bot.controlState,goal:bot.pathfinder.goal,inventory:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),faces:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(d=>{let q=p.offset(...d);return {p:q,name:bot.blockAt(q)?.name};}),entities:Object.values(bot.entities).filter(e=>e.name==='ender_dragon'||e.username).map(e=>({id:e.id,name:e.username||e.name,p:e.position,hp:e.metadata?.[9],phase:e.metadata?.[16]}))}));
-bot.chat('P3 iter38 opening: own body fixed -5/50/z4 HP20. Propose retain bait, roof52 and field support unchanged; P1 owns attacks. Independent settled HP/ending verification, practical support on request. Completion = native world result, not intent. Please ACK/revise contract.');

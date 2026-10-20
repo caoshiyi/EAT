@@ -1,9 +1,0 @@
-program #7284 on p2: 16.2 s
---- output ---
-BLACK_CASE PREFIX_FLOOR_(1, 66, -4) Vec3 { x: 0.49989452368091913, y: 66, z: -3.5189643265106616 }
-RETURN {"issue":"PREFIX_FLOOR_(1, 66, -4)","closed":true,"p":{"x":1.499980726330224,"y":65,"z":4.566122974761842},"hp":20,"food":20,"targets":[],"inv":[["stick",2,null],["spruce_planks",4,null],["wooden_pickaxe",1,11]]}
---- chat since this player's previous program ---
-p4: P3 narrowactual7277 finding: CHARGED_COLD after140ticks stillcontainedBlaze17853flag16=1 and20572flag16=1 BEFOREhoodcut; firstswing400ms thenDAMAGE_END. So7sclosedwait didNOT establishunchargedfield. Swordcontactworks (20078actual19→13); no uniqueattackerp
-p4: roven. Earliestunresolvedstage is openingagainstalreadychargedothers, notmissingcooldown/longwindowalone. Yourchangedgeometry/actualflag+projectilepreconditions shouldreplaceblind7swait; P4no extraobserver/giftquota.
---- p2 now: (1.5, 65, 4.6) in the_nether, health 20/20, food 20/20, alive
-

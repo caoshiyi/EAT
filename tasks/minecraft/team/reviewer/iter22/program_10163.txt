@@ -1,4 +1,0 @@
-== #10163 2026-10-18T14:55:03 p4 role=discovery_owner iter=22 0 s
-const V=require('vec3').Vec3;return{p:bot.entity.position,hp:bot.health,source:[43,44,45,46].map(y=>{const b=bot.blockAt(new V(-4,y,-32));return[y,b?.name,b?.shapes]}),currentgate:[45,46].map(y=>bot.blockAt(new V(-4,y,-31))?.name)};
--- returned --
-{"p": {"x": -2.3, "y": 45, "z": -30.501469049792853}, "hp": 20, "source": [[43, "andesite", [[0, 0, 0, 1, 1, 1]]], [44, "dirt", "[repeated reference]"], [45, "air", []], [46, "air", "[repeated reference]"]], "currentgate": ["dirt", "air"]}

@@ -1,2 +1,0 @@
-# Coordinator-spawned execution delegate (stopped)
-Read program.md fully. No gameplay mutations performed. Initial `python` absent; use python3. Status at observation: p1 empty, health/food 20, at (9.5,73,-21.5). A read-only run #13 listed spruce logs around (7,73,-23), (12,73,-22), (4,73,-23); ground spruce_leaves. This delegate was stopped by coordinator because externally assigned execution_lead already exists. Do not duplicate its control.

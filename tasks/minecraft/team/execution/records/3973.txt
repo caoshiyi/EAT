@@ -1,6 +1,0 @@
-== #3973 2026-10-17T01:31:25 p1 role=lead_converter iter=9 0.2 s
-const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const p=bot.entity.position.floored();console.log('EMERGENCY',bot.entity.position,bot.health,bot.oxygenLevel,bot.blockAt(p.offset(0,-1,0))?.name);await bot.equip(bot.inventory.items().find(i=>i.name==='spruce_door'),'hand');await bot.look(0,-1.5,true);try{await bot._placeBlockWithOptions(bot.blockAt(p.offset(0,-1,0)),new Vec3(0,1,0),{forceLook:'ignore'})}catch(e){console.log('DOORFAIL',e.message)}await bot.waitForTicks(4);console.log('AIR_REPAIR',bot.entity.position,bot.health,bot.oxygenLevel,bot.blockAt(p)?.name,bot.blockAt(p.offset(0,1,0))?.name);
--- output --
-EMERGENCY Vec3 { x: 132.3, y: 58, z: 1501.4688926228453 } 7.361976623535156 20 sand
-DOORFAIL Server refused to place spruce_door at (132, 58, 1501): the block is still air
-AIR_REPAIR Vec3 { x: 132.3, y: 58, z: 1501.4688926228453 } 7.361976623535156 20 air air

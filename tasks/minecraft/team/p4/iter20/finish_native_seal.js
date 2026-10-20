@@ -1,8 +1,0 @@
-const V=require('vec3').Vec3,m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.scafoldingBlocks=[];bot.pathfinder.setMovements(m);const hp=bot.health;let issue=null,ray=null;
-try{
- await bot.pathfinder.goto(new goals.GoalBlock(76,50,0));bot.pathfinder.setGoal(null);bot.clearControlStates();
- const refp=new V(78,50,0),dest=refp.offset(0,1,0),b=bot.blockAt(refp);
- for(const [a,c,d] of [[.35,.985,.65],[.65,.985,.35],[.35,.90,.65],[.65,.80,.35],[.35,.70,.65]]){await bot.lookAt(refp.offset(a,c,d),true);await bot.waitForTicks(2);const h=bot.blockAtCursor(4.5);console.log('TRY',JSON.stringify({aim:refp.offset(a,c,d),hit:h&&{p:h.position,face:h.face,intersect:h.intersect}}));if(h&&h.position.equals(refp)&&h.face===1){ray={p:h.position,face:h.face,intersect:h.intersect};break;}}
- if(!ray)throw Error('no direct lowerseal TOP');await bot.equip(bot.inventory.items().find(i=>['end_stone','tuff'].includes(i.name)),'hand');await bot.placeBlock(b,new V(0,1,0));await bot.waitForTicks(2);if(bot.blockAt(dest).boundingBox!=='block')throw Error('upper absent');
-}catch(e){issue=String(e);}finally{await bot.pathfinder.goto(new goals.GoalBlock(75,50,0));bot.pathfinder.setGoal(null);bot.clearControlStates();}
-await bot.waitForTicks(60);return {issue,ray,p:bot.entity.position,hpBefore:hp,hp:bot.health,ground:bot.entity.onGround,lower:bot.blockAt(new V(78,50,0)).name,upper:bot.blockAt(new V(78,51,0)).name,floor:bot.blockAt(new V(75,49,0)).name,roof:bot.blockAt(new V(75,52,0)).name,clouds:Object.values(bot.entities).filter(e=>e.name==='area_effect_cloud').map(e=>({p:e.position,h:e.height,r:e.metadata?.[8]})),inv:bot.inventory.items().map(i=>({n:i.name,c:i.count,wear:i.durabilityUsed}))};

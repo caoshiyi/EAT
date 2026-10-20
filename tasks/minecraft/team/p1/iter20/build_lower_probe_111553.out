@@ -1,9 +1,0 @@
-program #9535 on p1: 6 s
---- output ---
-LOWER_RECEIPT {"route":[[0,50,3],[1,51,3]],"p":{"x":1.5,"y":51,"z":3.499999999999957},"hp0":11.29306697845459,"hp":11.29306697845459,"floor":"end_stone","roof":"end_stone"}
-END {"phase":"LOWER_RETAIN","p":{"x":1.5,"y":51,"z":3.499999999999957},"hp":11.29306697845459,"food":16,"ground":true,"velocity":{"x":0,"y":-0.0784000015258789,"z":0},"cuts":[{"p":{"x":0,"y":52,"z":3},"ray":{"p":{"x":0,"y":52,"z":3},"f":0,"intersect":{"x":0.4241947228816099,"y":52,"z":3.5761067888960545}},"tool":"wooden_pickaxe"},{"p":{"x":1,"y":52,"z":3},"ray":{"p":{"x":1,"y":52,"z":3},"f":4,"intersect":{"x":1,"y":52.507818013779506,"z":3.6450597536699676}},"tool":"stone_pickaxe"}],"places":[{"p":{"x":1,"y":50,"z":3},"ray":{"p":{"x":1,"y":50,"z":2},"f":3,"intersect":{"x":1.3262991826160868,"y":50.85974319162638,"z":3}}}],"moves":[[1,51,3]],"clouds":[],"inventory":[["book",3,null],["wooden_pickaxe",1,33],["blackstone",1,null],["stone_pickaxe",1,87],["cobbled_deepslate",3,null],["end_stone",64,null],["stone_sword",1,0],["end_stone",64,null],["end_stone",8,null]]}
---- returned ---
-(nothing)
---- chat since this player's previous program ---
-(none)
---- p1 now: (1.5, 51, 3.5) in the_end, health 11.3/20, food 16/20, alive

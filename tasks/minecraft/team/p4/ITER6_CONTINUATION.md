@@ -1,6 +1,0 @@
-# Current continuation, iteration6
-Current journal P4.md supersedes all olderheaders. Deadline20:49:37UTC sourceCR_DEADLINE1792183777.
-ACTIVE2461 receiver uses p4/iter6_receive_courier_near.js, logiter6_logs/receive_courier_near.txt, hostPTYsession64315. WaitONLYonexisting execsession; no secondprogramonp4 whileactive. ItstaysFULLuntilactualP1near, zero transfers yet. IfendsNO_DONOR remain243FULL, doNOTrepeatthirdtokenwindow; blockerP1exit. Continueusefulverification/lastactualstate untildeadline, notearlyfinal.
-P4actual24360-430 FULL20/20, kitstone1256uses/axe18/shield12/NETH1/berries7/table/bone4/sapling2/rotten3, noowniterationdeath. Wither22632 DEADverified2438 after3totalhurt, minHP20, cornercapsN+Erecapped. Roofsupport24262AIRfromresource2427, ownroof24362full. Localpathindicesdifferentfromoldhistorical route; doNOTrestoreoldindex740.
-P1rod1 towardfirstuse, pearl1bank. CurrentP1at14360-430 afterexplicit2cellWestshieldtestFULL20HP, actualnomorehandoffyet. DoNOTstallfirstuseforP4gift. IfpassingP4cage243, E242/W244blocksbodyrow430: bypasscoldNorthlane432 ifsafe, or actualcoordinatedheadwindowdonationfrom241 thenretreat239. No diggingthroughP4body.
-No victory.20:43official8milestones/dragon0/deaths57(10,22,13,12). Finalevalnearcurrentdeadline. Preserveacceptedendsandallfailedbudgets/0receipts; neverreportkillasitemorhealthyrespawnasretention.

@@ -1,4 +1,0 @@
-== #4622 2026-10-17T03:34:40 p4 role=capability_operator iter=10 0.1 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(3);const p=bot.entity.position;return{test:'CONTROLLED_INSIDE_CAMP_FALLBACK_DISPATCH',protectedEnd:false,actuallyInside:bot.game.dimension==='overworld'&&p.x>5.5&&p.x<8&&p.z>82.15&&p.z<84&&p.y>=67&&p.y<=67.65,p:p.clone(),hp:bot.health,lifeToken:global.P4LifeTracker&&[global.P4LifeTracker.started,global.P4LifeTracker.life].join(':')};
--- returned --
-{"test": "CONTROLLED_INSIDE_CAMP_FALLBACK_DISPATCH", "protectedEnd": false, "actuallyInside": true, "p": {"x": 7.690050424769173, "y": 67.5625, "z": 83.69999999999997}, "hp": 20, "lifeToken": "1792208042861:0"}

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const out=[];for(let x=20;x<=22;x++)for(let z=87;z<=89;z++)for(let y=64;y<=68;y++){const b=bot.blockAt(new Vec3(x,y,z));out.push([x,y,z,b?.name,b?.boundingBox,b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')]);}return {out,hp:bot.health};

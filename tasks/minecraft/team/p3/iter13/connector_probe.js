@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed]),cells:[[8,68,89],[8,69,89],[7,68,89],[7,69,89],[6,68,89],[6,69,89],[6,68,90],[6,69,90],[9,68,88],[9,69,88]].map(a=>[a,bot.blockAt(new Vec3(...a))?.name]),p2:bot.players.p2?.entity?.position};

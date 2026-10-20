@@ -1,4 +1,0 @@
-== #4320 2026-10-17T02:50:41 p3 role=reliability_builder iter=9 0 s
-return{p:bot.entity.position.clone(),hp:bot.health,players:Object.values(bot.entities).filter(e=>e.username||e.name==='player'||e.type==='player').map(e=>[e.username,e.id,e.position.clone()]),air:bot.entity.metadata?.[1],controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};
--- returned --
-{"p": {"x": 7.631754220992469, "y": 67.5625, "z": 83.69999994127718}, "hp": 20, "players": [["p2", 146, {"x": 7.631754220992469, "y": 67.5625, "z": 83.69999994127718}], ["p1", 147, {"x": 7.631754220992469, "y": 67.5625, "z": 83.69999994127718}], ["p4", 148, {"x": 6.608344589778917, "y": 67.5625, "z": 82.73413176923765}], ["p3", 155, {"x": 7.631754220992469, "y": 67.5625, "z": 83.69999994127718}]], "air": 300, "controls": {"forward": false, "back": false, "left": false, "right": false, "jump": false, "sprint": false, "sneak": false}}

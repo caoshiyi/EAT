@@ -1,4 +1,0 @@
-== #4762 2026-10-17T04:18:18 p4 role=capability_operator iter=10 0 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);return{p:bot.entity.position,hp:bot.health,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<12).map(e=>({id:e.id,p:e.position,meta:e.metadata})),roof:[4,5,6,7].flatMap(x=>[82,83,84].map(z=>[x,z,bot.blockAt(new Vec3(x,69,z))?.name])),own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};
--- returned --
-{"p": {"x": 6.3, "y": 67.5625, "z": 83.7}, "hp": 20, "items": [], "roof": [[4, 82, "air"], [4, 83, "air"], [4, 84, "air"], [5, 82, "dirt"], [5, 83, "air"], [5, 84, "snow"], [6, 82, "spruce_slab"], [6, 83, "spruce_slab"], [6, 84, "dirt"], [7, 82, "spruce_slab"], [7, 83, "spruce_slab"], [7, 84, "dirt"]], "own": [["stick", 3, null], ["bone_meal", 2, null], ["wooden_axe", 1, 1], ["spruce_log", 1, null]]}

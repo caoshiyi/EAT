@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3'); bot.pathfinder.setGoal(null);bot.clearControlStates();bot.deactivateItem();
-const q=bot.entity.position.floored();console.log('BODY',bot.entity.position.toString(),bot.game.dimension,bot.health,bot.food,bot.entity.onGround);console.log('ITEMS',JSON.stringify(bot.inventory.items().map(i=>({name:i.name,count:i.count,wear:i.durabilityUsed}))));console.log('OFFHAND',bot.inventory.slots[45]?.name);
-for(let x=q.x-2;x<=q.x+2;x++)for(let z=q.z-1;z<=q.z+1;z++)console.log('COLUMN',x,z,[62,63,64,65].map(y=>bot.blockAt(new Vec3(x,y,z))?.name));
-console.log('NEAR',JSON.stringify(Object.values(bot.entities).filter(e=>e.position&&e.position.distanceTo(bot.entity.position)<32).map(e=>({name:e.name,kind:e.kind,pos:e.position.toString(),d:e.position.distanceTo(bot.entity.position)}))));

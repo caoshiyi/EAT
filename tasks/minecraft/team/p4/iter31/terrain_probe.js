@@ -1,2 +1,0 @@
-const {Vec3}=require('vec3'),p=bot.entity.position.clone(),q=p.floored();const rows=[];for(let dz=-2;dz<=6;dz++)for(let dx=-3;dx<=3;dx++){const a=q.offset(dx,0,dz),col=[];for(let dy=-2;dy<=3;dy++){const b=bot.blockAt(a.offset(0,dy,0));if(b&&b.name!=='air')col.push([dy,b.name,b.shapes]);}rows.push({x:a.x,z:a.z,col});}
-console.log(JSON.stringify({at:new Date().toISOString(),p,hp:bot.health,food:bot.food,ground:bot.entity.onGround,rows}));

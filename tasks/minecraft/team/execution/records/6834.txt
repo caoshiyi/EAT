@@ -1,4 +1,0 @@
-== #6834 2026-10-17T11:05:14 p2 role=independent_operator iter=13 0 s
-const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,blocks:[62,63,64,65].map(y=>{const b=bot.blockAt(new Vec3(-253,y,-189));return[y,b?.name,b?.boundingBox,b?.shapes]}),near:Object.values(bot.entities).filter(e=>e.type==='mob'&&e.position.distanceTo(bot.entity.position)<20).map(e=>[e.id,e.name,e.position])};
--- returned --
-{"p": {"x": -251.50005833097677, "y": 63, "z": -188.4961274093323}, "hp": 20, "blocks": [[62, "basalt", "block", [[0, 0, 0, 1, 1, 1]]], [63, "basalt", "block", "[repeated reference]"], [64, "basalt", "block", "[repeated reference]"], [65, "netherrack", "block", "[repeated reference]"]], "near": []}

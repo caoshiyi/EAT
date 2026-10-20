@@ -1,2 +1,0 @@
-# Opening evaluator, actual invocation23:54 UTC Oct18
-`python3 tools/eval_minecraft.py` ran after full program/P2/review reads. Save-allFAILED connection refused; reported LAST-SAVED dragon=0/milestones=11/deaths=180, ninecrystals/dragon200 informational. These values are not a freshsave. Original stdout is in the session tool transcript; this file is a labeled summary, not rawstdout. Freshread-only LIVE11460 observesbody58/10HP/Snow4 and ninecrystalentities. No crediblecompletionyet.

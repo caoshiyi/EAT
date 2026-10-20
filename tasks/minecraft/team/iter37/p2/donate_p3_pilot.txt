@@ -1,9 +1,0 @@
-program #14417 on p2: 2.9 s
---- output ---
-DONOR_PRE {"at":"2026-10-19T21:40:47.902Z","p":{"x":-4.450613810751251,"y":50,"z":3.7634266921495776},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",7,null]],"time":23262,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false}
-DONOR_POST_NOT_RECEIPT {"at":"2026-10-19T21:40:50.762Z","p":{"x":-4.502243333941269,"y":50,"z":2.3},"hp":20,"food":20,"ground":true,"inv":[["oak_planks",6,null]],"time":23322,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sprint":false,"sneak":false},"goalPresent":false,"drops":[{"id":11054,"p":{"x":-2.125,"y":50,"z":4.125},"metadata":[null,null,null,null,null,null,null,null,{"present":true,"itemId":61,"itemCount":2}]}]}
---- returned ---
-(nothing)
---- chat since this player's previous program ---
-(none)
---- p2 now: (-4.5, 50, 2.3) in the_end, health 20/20, food 20/20, alive

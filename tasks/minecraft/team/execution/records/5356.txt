@@ -1,7 +1,0 @@
-== #5356 2026-10-17T06:25:46 p1 role=experiment_owner iter=11 0.2 s
-const{Vec3}=require('vec3'),q=new Vec3(8,68,83);bot.clearControlStates();bot.pathfinder.setGoal(null);if(bot.blockAt(q)?.name!=='air')throw Error('HEAD_ALREADY_'+bot.blockAt(q)?.name);const i=bot.inventory.items().find(i=>i.name==='spruce_planks');if(!i)throw Error('NO_CAP');await bot.equip(i,'hand');bot.setControlState('sneak',true);await bot.waitForTicks(4);await bot._placeBlockWithOptions(bot.blockAt(q.offset(0,1,0)),new Vec3(0,-1,0),{forceLook:true});bot.clearControlStates();await bot.waitForTicks(4);console.log('HEAD_REPAIR_ACTUAL',JSON.stringify({head:bot.blockAt(q)?.name,upper:bot.blockAt(q.offset(0,1,0))?.name,gate:bot.blockAt(q.offset(0,-1,0))?.getProperties(),p:bot.entity.position,hp:bot.health,planks:bot.inventory.items().filter(i=>i.name==='spruce_planks').map(i=>i.count)}));
--- error --
-Error: Server refused to place spruce_planks at (8, 68, 83): the block is still air
-    at Proxy.placeBlockWithOptions (/home/ubuntu/EAT-mc-run2/tools/mc_arena/node_modules/mineflayer/lib/plugins/place_block.js:42:13)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-    at async p1-program-5356.js:1:363

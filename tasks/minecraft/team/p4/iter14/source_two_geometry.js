@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{column:[63,64,65,66,67,68].map(y=>[y,bot.blockAt(new Vec3(8,y,118))?.name]),stance:[63,64,65,66].map(y=>[y,bot.blockAt(new Vec3(8,y,117))?.name]),foes:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider'].includes(e.name)&&e.position.distanceTo(new Vec3(8.5,64,117.5))<18).map(e=>[e.id,e.name,e.position.clone()])};

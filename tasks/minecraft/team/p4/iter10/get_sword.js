@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));try{const it=c.containerItems().find(i=>i.name==='wooden_sword');if(!it)throw Error('NO_BANK_SWORD');await c.withdraw(it.type,null,1)}finally{c.close()}await bot.waitForTicks(3);return{p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));for(const n of['spruce_planks','cobblestone','stick','arrow']){const i=bot.inventory.items().find(i=>i.name===n);if(i)await c.deposit(i.type,null,i.count);}console.log('BLOCKS BANKED',c.containerItems().map(i=>[i.name,i.count]));c.close();global.p4guardMs=35000;

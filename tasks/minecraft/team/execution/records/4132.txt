@@ -1,6 +1,0 @@
-== #4132 2026-10-17T02:18:41 p1 role=lead_converter iter=9 0 s
-const{Vec3}=require('vec3');console.log('ROOT_NOW',bot.blockAt(new Vec3(35,71,111))?.name,bot.blockAt(new Vec3(35,72,111))?.name);console.log('ITEMS',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<12).map(e=>[e.id,e.position,e.getDroppedItem()?.name,e.getDroppedItem()?.count])));console.log('HP',bot.health,bot.food);
--- output --
-ROOT_NOW air spruce_log
-ITEMS [[28160,{"x":34.33267649172306,"y":68,"z":113.14124020948242},"spruce_log",1]]
-HP 6.2641448974609375 17

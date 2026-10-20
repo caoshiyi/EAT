@@ -1,4 +1,0 @@
-const m=new Movements(bot);m.canDig=false;m.allow1by1towers=false;m.allowParkour=false;m.allowSprinting=false;m.scafoldingBlocks=[];m.maxDropDown=1;m.blocksToAvoid.add(bot.registry.blocksByName.sweet_berry_bush.id);bot.pathfinder.setMovements(m);
-try{await bot.pathfinder.goto(new goals.GoalBlock(11,67,-19));await bot.waitForTicks(20);console.log('RECEIPT',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));
-for(let k=0;k<2&&bot.food<20;k++){const f=bot.inventory.items().find(i=>i.name==='sweet_berries');if(!f)break;console.log('PRE_EAT',bot.health,bot.food,f.count);await bot.equip(f,'hand');await bot.consume();await bot.waitForTicks(20);console.log('POST_EAT',bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));}
-}finally{bot.pathfinder.setGoal(null);bot.clearControlStates();console.log('END',bot.entity.position,bot.health,bot.food);}

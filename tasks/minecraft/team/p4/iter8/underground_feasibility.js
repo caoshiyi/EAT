@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');console.log('STATE',bot.entity.position,bot.health,bot.food);let a=[];for(let y=60;y<=67;y++){let b=bot.blockAt(new Vec3(6,y,82));a.push([6,y,82,b?.name,b&&bot.digTime(b)]);}for(let z=83;z<=115;z+=2)for(let y=61;y<=64;y++){let b=bot.blockAt(new Vec3(3,y,z));a.push([3,y,z,b?.name,b&&bot.digTime(b)]);}console.log('MATERIALS',JSON.stringify(a));

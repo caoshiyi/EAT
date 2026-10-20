@@ -1,5 +1,0 @@
-const {Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const food=bot.inventory.items().find(i=>i.name==='cooked_chicken');if(food&&bot.food<20){await bot.equip(food,'hand');await bot.consume();await bot.waitForTicks(8);}
-const c=await bot.openContainer(bot.blockAt(new Vec3(10,66,-35)));const cob=c.containerItems().find(i=>i.name==='cobblestone');if(cob)await c.withdraw(cob.type,null,3);await c.deposit(bot.registry.itemsByName.feather.id,null,3);await c.deposit(bot.registry.itemsByName.white_wool.id,null,1);c.close();
-const table=bot.blockAt(new Vec3(10,66,-36));let r=bot.recipesFor(bot.registry.itemsByName.stone_axe.id,null,1,table)[0];if(r)await bot.craft(r,1,table);const axe=bot.inventory.items().find(i=>i.name==='stone_axe');if(axe)await bot.equip(axe,'hand');
-const f=await bot.openFurnace(bot.blockAt(new Vec3(11,66,-35)));if(f.outputItem())await f.takeOutput();f.close();
-console.log('health',bot.health,'food',bot.food,'inventory',bot.inventory.items().map(i=>[i.name,i.count]));

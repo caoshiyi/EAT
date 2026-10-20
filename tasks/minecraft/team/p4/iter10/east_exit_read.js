@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position,hp:bot.health,peers:Object.values(bot.entities).filter(e=>e.type==='player').map(e=>[e.username,e.id,e.position]),east:[79,80,81,82,83].map(z=>[z,[65,66,67,68,69].map(y=>{const b=bot.blockAt(new Vec3(7,y,z));return[y,b?.name,b?.getProperties(),b?.shapes]})])};

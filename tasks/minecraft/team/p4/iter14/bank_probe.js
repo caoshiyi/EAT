@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');bot.clearControlStates();let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,68,82)));await bot.waitForTicks(5);return{bank:c.containerItems().map(i=>[i.name,i.count,i.durabilityUsed]),own:bot.inventory.items().map(i=>[i.name,i.count]),cursor:bot.currentWindow?.selectedItem,p:bot.entity.position,hp:bot.health}}finally{if(c)c.close()}

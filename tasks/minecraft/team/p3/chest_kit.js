@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();const cb=bot.blockAt(new Vec3(10,66,-35));if(cb.name!=='chest')throw Error('chest missing');const ch=await bot.openChest(cb);console.log('chest',ch.containerItems().map(i=>[i.name,i.count]));await ch.withdraw(bot.registry.itemsByName.iron_ingot.id,null,7);const cob=bot.inventory.items().find(i=>i.name==='cobblestone');if(cob?.count>=6)await ch.deposit(cob.type,null,6);ch.close();
-const t=bot.findBlock({matching:bot.registry.blocksByName.crafting_table.id,maxDistance:4});console.log('table',t?.position);if(!t)throw Error('table missing');
-for(const[n,c]of[['bucket',2],['flint_and_steel',1]]){const r=bot.recipesFor(bot.registry.itemsByName[n].id,null,1,t)[0];if(!r)throw Error('no recipe '+n);await bot.craft(r,c,t);}
-return bot.inventory.items().map(i=>[i.name,i.count]);

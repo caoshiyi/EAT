@@ -1,1 +1,0 @@
-const V=bot.entity.position.constructor;for(const [x,y,z]of[[1,64,90],[2,64,89],[2,64,90],[1,65,90],[3,64,89],[3,64,90]]){console.log('EXACT_CELL',JSON.stringify({x,y,z,cells:[-1,0,1,2].map(d=>{const b=bot.blockAt(new V(x,y+d,z));return{p:b?.position,n:b?.name,shapes:b?.shapes};})}));}

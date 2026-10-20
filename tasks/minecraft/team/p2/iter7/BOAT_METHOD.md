@@ -1,9 +1,0 @@
-# Physical boat method, iteration7
-- Normal main-hand bot.activateItem() after equip+lookAt(actual floor top)+6 ticks placed boat2717, after full 3D terrain-shape and entity AABB clearance. No process/network/server access; ordinary Mineflayer.
-- Success center76.5,25,113.5; support76,24,113. Failed center75.5,25,113.5 clips STONE74,25,113 because boat width1.375. 75.5,25,112.5 also clips that corner. Empty target block or entity-only AABB is insufficient.
-- Collision precheck tests boat box centerX/Z +/-0.6875, baseY..baseY+0.5625 against every intersecting block shape. Check actual ray and reach too. Platform must support boat after movement, not just at spawn.
-- 2717 actual spawned8593 + target1798.vehicle8593/passenger list, carry1->0. 2724 actual chargedaxeHURT/DEAD1798 (remaining health1), no pearl/drop observed. This is capture+kill proof, not pearl pipeline completion.
-- Vehicle.passengers kept stale dead1798 object (health0, absent bot.entities). Newcapture requires bot.entities[id] exists + livehealth>0 + current vehicle ID; list alone false-positive2731.
-- Ownboat recovery2746 actual boat entityGONE + item9846(76.974,25,113.512), but stand75.5,25,113.5 was1.47m away and receipt0. Changed exact-cell2753 to76,25,113 gave actual collect9846/boat0->1, returnFULLrear75,26,11620HP/inside[].
-- Old lower/front geometry: upper podrear75,26,116 protected by mid75,26/27,115. Outside old front75,25/26/27,114 removed for boat ray; don't assume old gate floor25 exists. Certified pickup path rear26->mid26->gate75,25,114->75,25,113->76,25,113 then reverse.
-- 2694 took4.5HP and action-healthguard ALSO aborted finallyclosure. Separate2697 resealed. mine_lib now recoveryMode bypasses ACTION_HP during cleanup while still enforcing actual death/dimension; new finally must set mode BEFORE fallback go/close. Source+healthycleanup exercised; real injuredcleanup fix not yet proven. Every ending also observes inside hostile AABBs, not hull alone.

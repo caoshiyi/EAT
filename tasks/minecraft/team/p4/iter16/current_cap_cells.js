@@ -1,1 +1,0 @@
-bot.clearControlStates();const{Vec3}=require('vec3'),rows=[];for(let x=145;x<=148;x++)for(let z=2241;z<=2245;z++)for(const y of[-37,-36,-35,-34]){const q=new Vec3(x,y,z),b=bot.blockAt(q);rows.push([q.toArray(),b?.name])}return{p:bot.entity.position.clone(),hp:bot.health,rows};

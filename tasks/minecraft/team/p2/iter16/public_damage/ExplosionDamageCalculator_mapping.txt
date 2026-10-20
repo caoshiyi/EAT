@@ -1,7 +1,0 @@
-net.minecraft.world.level.ExplosionDamageCalculator -> cti:
-# {"fileName":"ExplosionDamageCalculator.java","id":"sourceFile"}
-    11:11:void <init>() -> <init>
-    13:16:java.util.Optional getBlockExplosionResistance(net.minecraft.world.level.Explosion,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.level.block.state.BlockState,net.minecraft.world.level.material.FluidState) -> a
-    20:20:boolean shouldBlockExplode(net.minecraft.world.level.Explosion,net.minecraft.world.level.BlockGetter,net.minecraft.core.BlockPos,net.minecraft.world.level.block.state.BlockState,float) -> a
-    24:24:boolean shouldDamageEntity(net.minecraft.world.level.Explosion,net.minecraft.world.entity.Entity) -> a
-    28:34:float getEntityDamageAmount(net.minecraft.world.level.Explosion,net.minecraft.world.entity.Entity) -> b

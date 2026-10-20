@@ -1,1 +1,0 @@
-console.log('CLIENT_CURSOR_API',bot.entityAtCursor.toString());console.log('BODY',JSON.stringify({p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal}));

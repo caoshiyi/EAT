@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),q=new Vec3(-19,62,60);return{p:bot.entity.position.clone(),hp:bot.health,air:bot.entity.metadata?.[1],water:Array.from({length:7},(_,k)=>{const b=bot.blockAt(q.offset(0,-k,0));return[b.position.clone(),b.name,b.getProperties()]}),fish:Object.values(bot.entities).filter(e=>e.name==='salmon'&&e.position.y>60).map(e=>[e.id,e.position.clone()])};

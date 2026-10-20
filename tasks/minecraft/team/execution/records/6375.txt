@@ -1,4 +1,0 @@
-== #6375 2026-10-17T09:24:01 p2 role=independent_operator iter=13 0 s
-if(typeof bot._syncWindow==='function')await bot._syncWindow(bot.inventory);return{slots:bot.inventory.slots.map((i,s)=>i&&[s,i.name,i.count]).filter(Boolean),cursor:bot.inventory.selectedItem&&[bot.inventory.selectedItem.name,bot.inventory.selectedItem.count],items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<5).map(e=>[e.id,e.position,e.getDroppedItem?.()?.name,e.getDroppedItem?.()?.count])};
--- returned --
-{"slots": [[0, "stick", 4], [1, "spruce_planks", 1], [3, "spruce_planks", 1], [9, "spruce_planks", 4], [11, "crafting_table", 1]], "cursor": null, "items": []}

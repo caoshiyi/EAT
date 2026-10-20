@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),q=new Vec3(1,65,4);return{p:bot.entity.position,dimension:bot.game.dimension,faces:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(a=>{const b=bot.blockAt(q.offset(...a));return[b.position,b.name,b.shapes]}),gate:[65,66,67].map(y=>{const b=bot.blockAt(new Vec3(1,y,3));return[b.position,b.name,b.shapes]})};

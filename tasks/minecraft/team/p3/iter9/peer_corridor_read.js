@@ -1,1 +1,0 @@
-return{p:bot.entity.position.clone(),hp:bot.health,players:Object.values(bot.entities).filter(e=>e.username||e.name==='player'||e.type==='player').map(e=>[e.username,e.id,e.position.clone()]),air:bot.entity.metadata?.[1],controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)]))};

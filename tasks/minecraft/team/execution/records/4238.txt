@@ -1,4 +1,0 @@
-== #4238 2026-10-17T02:39:38 p3 role=reliability_builder iter=9 0.6 s
-const{Vec3}=require('vec3');let c;try{c=await bot.openChest(bot.blockAt(new Vec3(7,68,82)));return{items:c.containerItems().map(i=>[i.name,i.count]),p:bot.entity.position.clone(),hp:bot.health}}finally{if(c)c.close();bot.clearControlStates();bot.pathfinder.setGoal(null)};
--- returned --
-{"items": [["leather", 1], ["arrow", 4], ["spruce_sapling", 3], ["feather", 6], ["emerald", 4], ["filled_map", 1]], "p": {"x": 7.7, "y": 67.5625, "z": 83.69999990212864}, "hp": 20}

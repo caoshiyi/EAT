@@ -1,5 +1,0 @@
-== #5596 2026-10-17T07:04:22 p1 role=experiment_owner iter=11 0.4 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);let c;try{c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));let i=c.containerItems().find(i=>i.name==='sandstone');if(!i)throw Error('NO_SS');await c.withdraw(i.type,null,1);}finally{if(c)c.close();}
-await bot.equip(bot.inventory.items().find(i=>i.name==='sandstone'),'hand');bot.setControlState('sneak',true);try{if(bot.blockAt(new Vec3(7,68,81))?.name!=='sandstone')throw Error('REF');await bot.placeBlock(bot.blockAt(new Vec3(7,68,81)),new Vec3(0,-1,0));}catch(e){console.log('CAP_ISSUE',e.message)}finally{bot.clearControlStates();}console.log('CAP_ACTUAL',bot.blockAt(new Vec3(7,67,81))?.name,bot.entity.position,bot.health);
--- output --
-CAP_ACTUAL sandstone Vec3 { x: 6.500000076339715, y: 67.5625, z: 83.33807287126218 } 20

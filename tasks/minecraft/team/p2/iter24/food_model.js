@@ -1,4 +1,0 @@
-const m=new Movements(bot);m.canDig=true;m.allowParkour=false;m.allowSprinting=false;m.allow1by1towers=false;m.canOpenDoors=false;m.maxDropDown=1;m.scafoldingBlocks=[];m.exclusionAreasBreak.push(b=>['dirt','grass_block','snow','spruce_leaves'].includes(b.name)?0:100);m.blocksToAvoid.add(bot.registry.blocksByName.sweet_berry_bush.id);
-const p=bot.entity.position; console.log('time',new Date().toISOString(),'body',p,'hp',bot.health);
-for(const t of [[9,67,-18],[4,66,-19],[-8,59,-25],[-6,57,-25]]) {const r=bot.pathfinder.getPathTo(m,new goals.GoalBlock(...t),1500);console.log('MODEL',t,r.status,r.path.length,r.path.map(n=>({x:n.x,y:n.y,z:n.z,break:n.toBreak,place:n.toPlace})));}
-console.log('hostiles',Object.values(bot.entities).filter(e=>e!==bot.entity&&p.distanceTo(e.position)<18).map(e=>({name:e.name,p:e.position})));

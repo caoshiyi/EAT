@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{blocks:[2,3].flatMap(z=>[61,62,63,64,65,66].map(y=>[[1,y,z],bot.blockAt(new Vec3(1,y,z))?.name])),near:bot.findBlocks({matching:b=>['basalt','blackstone','netherrack','sandstone'].includes(b.name),maxDistance:4,count:50}).map(q=>[q.toArray(),bot.blockAt(q)?.name])};

@@ -1,2 +1,0 @@
-bot.pathfinder.setGoal(null);bot.clearControlStates();const b=Object.values(bot.entities).find(e=>e.name==='boat'&&bot.entity.position.distanceTo(e.position)<8);if(!b)throw Error('no boat');bot.mount(b);await bot.waitForTicks(10);console.log('mounted',!!bot.vehicle,bot.entity.position);if(!bot.vehicle)return;
-await bot.lookAt(bot.entity.position.offset(-2,0,20),true);bot.moveVehicle(0,1);await bot.waitForTicks(100);bot.moveVehicle(0,0);console.log('p',bot.entity.position,'v',bot.vehicle?.position);console.log('inventory',bot.inventory.items().map(i=>[i.name,i.count]));

@@ -1,4 +1,0 @@
-== #6336 2026-10-17T09:19:11 p1 role=experiment_owner iter=13 0 s
-const{Vec3}=require('vec3');bot.clearControlStates();let eye=bot.entity.position.offset(0,1.62,0);return{hp:bot.health,p:bot.entity.position,mobs:Object.values(bot.entities).filter(e=>['zombie','skeleton','creeper','spider','enderman'].includes(e.name)&&e.position.distanceTo(bot.entity.position)<10).map(e=>{let d=e.position.offset(0,1,0).minus(eye),h=bot.world.raycast(eye,d.unit(),d.norm());return[e.id,e.name,e.position,h&&[h.name,h.position]]})};
--- returned --
-{"hp": 12.510251998901367, "p": {"x": 141.54187541716044, "y": -36, "z": 2240.4995971358553}, "mobs": [[970, "skeleton", {"x": 143.6504687415963, "y": -39, "z": 2247.336101337708}, ["basalt", {"x": 141, "y": -35, "z": 2241}]]]}

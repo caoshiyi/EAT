@@ -1,8 +1,0 @@
-== #1927 2026-10-16T16:19:08 p1 role=objective_lead iter=4 0 s
-const{Vec3}=require('vec3');global.P1SearchGoal={kind:'FORTRESS_APPROACH',target:[-327,58,-410],fortress:[-269,57,-429]};console.log('ACTUAL_BODY',bot.entity.position.toString(),bot.health,bot.food);for(const p of[new Vec3(-269,57,-429),new Vec3(-269,58,-429),new Vec3(-269,59,-429)])console.log('FORTRESS_BLOCK',p.toString(),bot.blockAt(p)?.name);console.log('GOAL_SET',JSON.stringify(global.P1SearchGoal));
--- output --
-ACTUAL_BODY (-326.5, 57, -306.39129369262844) 20 19
-FORTRESS_BLOCK (-269, 57, -429) nether_bricks
-FORTRESS_BLOCK (-269, 58, -429) nether_bricks
-FORTRESS_BLOCK (-269, 59, -429) nether_bricks
-GOAL_SET {"kind":"FORTRESS_APPROACH","target":[-327,58,-410],"fortress":[-269,57,-429]}

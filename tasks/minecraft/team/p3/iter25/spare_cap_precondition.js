@@ -1,3 +1,0 @@
-// P3 only; read-only query usable in LIVE and SANDBOX. Label launcher environment.
-const V=bot.entity.position.constructor,base=new V(6.5,67,82.5);if(bot.game.dimension!=='overworld'||bot.entity.position.distanceTo(base)>.05)throw Error('donor body changed');
-return{at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count]),rows:[[6,68,83],[6,68,84],[6,68,85],[6,67,84],[6,67,85],[6,69,83],[6,69,84]].map(a=>{const p=new V(...a),b=bot.blockAt(p);return{p,n:b?.name,full:!!b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')};}),near:Object.values(bot.entities).filter(e=>e.id!==bot.entity.id&&e.position.distanceTo(base)<16).map(e=>({n:e.name,p:e.position.clone(),type:e.type}))};

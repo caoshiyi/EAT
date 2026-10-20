@@ -1,2 +1,0 @@
-const p=bot.entity.position.clone(),q=p.floored();
-return {at:new Date().toISOString(),p,hp:bot.health,food:bot.food,inv:bot.inventory.items().map(i=>[i.name,i.count]),column:Array.from({length:10},(_,i)=>{let y=57+i;return {y,center:bot.blockAt(q.offset(0,y-q.y,0))?.name,east:bot.blockAt(q.offset(1,y-q.y,0))?.name,west:bot.blockAt(q.offset(-1,y-q.y,0))?.name,north:bot.blockAt(q.offset(0,y-q.y,-1))?.name,south:bot.blockAt(q.offset(0,y-q.y,1))?.name}})};

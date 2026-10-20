@@ -1,7 +1,0 @@
-const V=bot.entity.position.constructor,target=new V(19.5,67,111.5);console.log('SOURCE',bot.entity.position,bot.health,bot.food);
-const m=new Movements(bot);m.canDig=true;m.allow1by1towers=false;m.allowParkour=true;m.allowSprinting=false;m.maxDropDown=3;m.scafoldingBlocks=[];m.entitiesToAvoid=new Set(['creeper','zombie','skeleton','witch','spider']);bot.pathfinder.setMovements(m);let reason='budget',best=bot.entity.position.distanceTo(target),bad=0;const f=r=>console.log('PATH',r.status,r.path?.length);bot.on('path_update',f);bot.pathfinder.setGoal(new goals.GoalNear(19,67,111,2));
-try{for(let k=0;k<400;k++){await bot.waitForTicks(1);if(k%40===0){const d=bot.entity.position.distanceTo(target);console.log('MOVE',k,bot.entity.position,bot.health,d);if(d<best-.5){best=d;bad=0}else bad++;if(bad>=4){reason='net_stall';break;}}if(bot.health<16){reason='hurt';break;}if(bot.entity.position.distanceTo(target)<3&&bot.entity.onGround){reason='tree';break;}}
-}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);bot.removeListener('path_update',f);}
-console.log('TRAVEL_END',reason,bot.entity.position,bot.health,bot.food);
-if(reason==='tree'){const b=bot.blockAt(new V(19,67,111));console.log('LOG_SOURCE',b.name,b.position);if(b.name==='spruce_log'&&bot.canDigBlock(b)){await bot.dig(b);await bot.waitForTicks(25);console.log('ACTUAL_INVENTORY',bot.inventory.items().map(i=>[i.name,i.count]));}}
-console.log('END',bot.entity.position,bot.health,bot.food,bot.inventory.items().map(i=>[i.name,i.count]));

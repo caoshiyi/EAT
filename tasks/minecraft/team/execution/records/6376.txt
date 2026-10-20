@@ -1,4 +1,0 @@
-== #6376 2026-10-17T09:24:09 p2 role=independent_operator iter=13 0.3 s
-bot.clearControlStates();bot.pathfinder.setGoal(null);const w=bot.inventory,n=name=>w.items().filter(i=>i.name===name).reduce((s,i)=>s+i.count,0);await bot._syncWindow(w);const before=n('stick');if(w.slots[0]?.name!=='stick'||w.slots[0]?.count!==4||w.selectedItem)throw Error('PRE_GRID');await bot.clickWindow(0,0,1);await bot.waitForTicks(5);await bot._syncWindow(w);return{gain:n('stick')-before,own:w.items().map(i=>[i.name,i.count]),grid:[0,1,2,3,4].map(s=>[s,w.slots[s]?.name,w.slots[s]?.count]),cursor:w.selectedItem?.name,p:bot.entity.position,hp:bot.health};
--- returned --
-{"gain": 4, "own": [["spruce_planks", 4], ["crafting_table", 1], ["stick", 4]], "grid": [[0, null, null], [1, null, null], [2, null, null], [3, null, null], [4, null, null]], "p": {"x": 7.583158954516695, "y": 67.5625, "z": 83.51311185160603}, "hp": 20}

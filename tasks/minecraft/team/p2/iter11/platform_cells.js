@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');return{p:bot.entity.position,time:bot.time.timeOfDay,columns:[...Array(9)].flatMap((_,i)=>[...Array(9)].map((_,j)=>{const x=6+i,z=85+j,a=[];for(let y=63;y<=68;y++){const b=bot.blockAt(new Vec3(x,y,z));if(b?.boundingBox==='block')a.push([y,b.name]);}return[x,z,a]}))};

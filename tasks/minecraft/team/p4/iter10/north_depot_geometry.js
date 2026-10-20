@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const rows=[];for(const[x,z]of[[10,-35],[11,-35],[10,-34],[11,-34],[9,-35],[12,-35],[10,-36]])rows.push([x,z,[64,65,66,67,68,69,70,71].map(y=>[y,bot.blockAt(new Vec3(x,y,z))?.name])]);return{rows,p:bot.entity.position,hp:bot.health,day:bot.time.timeOfDay};

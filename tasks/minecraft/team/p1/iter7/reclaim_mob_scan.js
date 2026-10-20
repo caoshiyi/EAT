@@ -1,1 +1,0 @@
-console.log('BODY',bot.entity.position,bot.health);console.log('FOES',Object.values(bot.entities).filter(e=>['ghast','blaze','skeleton','wither_skeleton','magma_cube','hoglin','piglin_brute','fireball','small_fireball'].includes(e.name)).map(e=>({id:e.id,name:e.name,p:e.position,d:e.position.distanceTo(bot.entity.position),height:e.height,top:e.position.y+(e.height||2)})));

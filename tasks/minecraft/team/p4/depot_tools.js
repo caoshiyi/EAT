@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));console.log('DEPOT',c.containerItems().map(i=>[i.name,i.count]));const axe=c.containerItems().find(i=>i.name.endsWith('_axe'));if(axe)await c.withdraw(axe.type,null,1);c.close();console.log('own',bot.inventory.items().map(i=>[i.name,i.count]));

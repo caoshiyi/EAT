@@ -1,2 +1,0 @@
-# Iteration27 closed
-Objective unachieved: official dragon=0/milestones=11/deaths=180, savefailed=True. Actual verified live crystals destroyed=1; final same-End loaded count=8, body{'x': -10.314757365153469, 'y': 50, 'z': -10.500003862151654}/HP10/Snow3. All P2 calls complete; no gameplay/reset/observer dependency queued. Read P2.md + final provisional addendum and exact LIVE_western89 receipts. Continue from actual retained End access, not old58source or fresh Overworld prep. No remote push.

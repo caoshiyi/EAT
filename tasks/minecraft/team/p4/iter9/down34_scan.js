@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),p=bot.entity.position.floored();return{p,hp:bot.health,target:bot.entities[304]?[bot.entities[304].position,bot.entities[304].metadata?.[9]]:null,rows:[...Array(15)].map((_,i)=>{let y=44-i;return[y,...[[p.x,p.z],[p.x-1,p.z],[p.x+1,p.z],[p.x,p.z-1],[p.x,p.z+1],[-53,82],[-52,82],[-51,83],[-50,83]].map(([x,z])=>bot.blockAt(new Vec3(x,y,z))?.name)]})};

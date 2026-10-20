@@ -1,8 +1,0 @@
-program #7347 on p2: 4.6 s
---- output ---
-(nothing logged)
-RETURN {"issue":null,"endingIssue":null,"mode":"in","opened":true,"out":false,"campEnd":false,"hallEnd":false,"initial":{"head":"dirt","roof":"basalt","foot":"cobblestone","target":[[{"x":9,"y":67,"z":83},"basalt",true],[{"x":9,"y":70,"z":83},"basalt",true],[{"x":10,"y":68,"z":83},"basalt",true],[{"x":10,"y":69,"z":83},"basalt",true],[{"x":8,"y":68,"z":83},"dirt",true],[{"x":8,"y":69,"z":83},"basalt",true],[{"x":9,"y":68,"z":84},"air",false],[{"x":9,"y":69,"z":84},"air",false],[{"x":9,"y":68,"z":82},"basalt",true],[{"x":9,"y":69,"z":82},"basalt",true]]},"actual":{"head":"basalt","roof":"basalt","foot":"cobblestone"},"trace":[["CUT",{"x":8,"y":68,"z":83},"dirt"],["CUT",{"x":8,"y":69,"z":83},"basalt"],["SOURCE_OWN",[["spruce_planks",4,null],["wooden_pickaxe",1,25],["basalt",4,null],["stone_pickaxe",1,3]]],["RESTORED","[repeated reference]","basalt","dirt",false],["RESTORED","[repeated reference]","basalt","basalt",true]],"p":{"x":7.497127188018914,"y":67.5625,"z":83.50192884285809},"hp":20,"pose":5,"height":1.5,"physics":1.8,"forcedMoves":0,"controls":{"forward":false,"back":false,"left":false,"right":false,"jump":false,"sneak":false,"sprint":false},"own":[["spruce_planks",4,null],["wooden_pickaxe",1,25],["basalt",2,null],["stone_pickaxe",1,3]]}
---- chat since this player's previous program ---
-(none)
---- p2 now: (7.5, 67.6, 83.5) in overworld, health 20/20, food 20/20, alive
-

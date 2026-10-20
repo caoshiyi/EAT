@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');for(const [x,z]of [[1,92],[0,90],[-1,87],[3,88],[4,86],[9,88],[9,89],[9,90],[3,80],[-1,77]]){console.log('COL',x,z,Array.from({length:15},(_,i)=>{const y=68-i;return[y,bot.blockAt(new Vec3(x,y,z))?.name]}));}

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');console.log('STATE',bot.entity.position,bot.health,bot.inventory.items().map(i=>[i.name,i.count]));let a=[];for(const x of[3,4,5,6])for(let z=82;z<=115;z++)for(let y=58;y<=64;y++){let b=bot.blockAt(new Vec3(x,y,z));a.push([x,y,z,b?.name]);}console.log(JSON.stringify(a));

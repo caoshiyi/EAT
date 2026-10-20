@@ -1,1 +1,0 @@
-bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(6);console.log('FRESH',JSON.stringify({window:bot.currentWindow?.id,selected:bot.inventory.selectedItem,slots:bot.inventory.slots.map((i,s)=>i&&[s,i.name,i.count]).filter(Boolean),p:bot.entity.position,hp:bot.health,food:bot.food}));

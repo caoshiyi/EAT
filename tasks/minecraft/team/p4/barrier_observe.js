@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');for(const z of[90,91,92])console.log('barrier',z,[67,68,69,70,71].map(y=>{const b=bot.blockAt(new Vec3(9,y,z));return[y,b.name,b.getProperties()]}));console.log('fire',bot.findBlocks({matching:bot.registry.blocksByName.fire.id,maxDistance:25,count:20}).map(p=>p.toString()));console.log('p3',bot.players.p3?.entity?.position.toString());

@@ -1,6 +1,0 @@
-const {Vec3}=require('vec3');
-const p=bot.entity.position.clone(),q=p.floored();
-const state={at:new Date().toISOString(),p,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inv:bot.inventory.items().map(i=>[i.name,i.count]),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),goal:bot.pathfinder.goal,faces:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(o=>{const b=bot.blockAt(q.offset(...o));return {p:b?.position,n:b?.name,full:b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')||false}})};
-console.log('OPENING32',JSON.stringify(state));
-bot.chat('P4 iter32 opening: current pod audit complete. I propose a bounded decision contribution for P2: qualify your next travel ending (retained inventory, actual enclosure/current hazards and next-call source), not duplicate wood recovery. Budget 8min including actual adoption review; otherwise choose one needed component. P4 reset coordinator; no SB running now. Please name next practical component or accept ending review.');
-return state;

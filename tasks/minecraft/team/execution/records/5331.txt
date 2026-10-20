@@ -1,4 +1,0 @@
-== #5331 2026-10-17T06:17:41 p3 role=continuity_owner iter=11 0 s
-return{p:bot.entity.position,hp:bot.health,food:bot.food,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<7).map(e=>[e.id,e.getDroppedItem?.()?.name,e.position]),near:Object.values(bot.entities).filter(e=>e.name==='enderman'&&e.position.distanceTo(bot.entity.position)<7).map(e=>[e.id,e.position,e.metadata?.[9],e.metadata?.[17],e.metadata?.[18]])};
--- returned --
-{"p": {"x": -106.50334584096063, "y": 56, "z": 109.4999565529214}, "hp": 20, "food": 19, "items": [[12730, "ender_pearl", {"x": -104.875, "y": 56, "z": 111.30043428181655}]], "near": []}

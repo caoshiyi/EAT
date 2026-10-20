@@ -1,1 +1,0 @@
-return{p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<20).map(e=>({id:e.id,p:e.position,item:e.getDroppedItem?.()?.name,count:e.getDroppedItem?.()?.count}))};

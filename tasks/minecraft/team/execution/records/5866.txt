@@ -1,4 +1,0 @@
-== #5866 2026-10-17T07:36:05 p2 role=independent_operator iter=12 0 s
-return{p:bot.entity.position,hp:bot.health,near:Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<8).map(e=>({id:e.id,name:e.name,type:e.type,p:e.position,width:e.width,height:e.height,hp:e.metadata?.[9],gear:e.equipment?.map(i=>i?.name)}))};
--- returned --
-{"p": {"x": -203.49775582072098, "y": 63, "z": -179.50004463309565}, "hp": 20, "near": [{"id": 5122, "name": "zombified_piglin", "type": "hostile", "p": {"x": -199.81141682021757, "y": 63, "z": -179.57227920423966}, "width": 0.6, "height": 1.95, "hp": 20, "gear": ["golden_sword", null, null, null, null]}, {"id": 5315, "name": "zombified_piglin", "type": "hostile", "p": {"x": -203.98163471299634, "y": 63, "z": -179.5010190278289}, "width": 0.6, "height": 1.95, "hp": 20, "gear": ["golden_sword", null, null, null, null]}]}

@@ -1,8 +1,0 @@
-== #9246 2026-10-18T09:59:42 p4 role=exploration_partner iter=20 4.6 s
-const V=require('vec3').Vec3;const p=new V(133,-37,2272),b=bot.blockAt(p);
-if(b.name!=='oak_planks'||bot.entity.position.x>132.7)return {refused:'not safe original stance'};
-await bot.lookAt(p.offset(.35,.95,.65),true);await bot.waitForTicks(2);const h=bot.blockAtCursor(4.5);if(!h||!h.position.equals(p))return {refused:'not visible',hit:h&&h.position};
-await bot.dig(b,false,'raycast');await bot.waitForTicks(30);
-return {block:bot.blockAt(p).name,pos:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>({n:i.name,c:i.count})),items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<3).map(e=>({id:e.id,p:e.position,meta:e.metadata}))};
--- returned --
-{"block": "air", "pos": {"x": 132.46890781080123, "y": -36, "z": 2272.499943007753}, "hp": 20, "inv": [{"n": "cobblestone_stairs", "c": 2}, {"n": "bone", "c": 4}, {"n": "tuff", "c": 1}, {"n": "oak_planks", "c": 2}, {"n": "book", "c": 51}], "items": [{"id": 3115, "p": {"x": 133.125, "y": -37.5, "z": 2271.899772605607}, "meta": [null, null, null, null, null, null, null, null, {"present": true, "itemId": 36, "itemCount": 1}]}]}

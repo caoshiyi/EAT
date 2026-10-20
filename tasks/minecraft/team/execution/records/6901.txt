@@ -1,4 +1,0 @@
-== #6901 2026-10-17T11:15:53 p4 role=integration_operator iter=14 0 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const q=new Vec3(6,67,81);for(let k=0;k<3;k++){let b=bot.blockAt(q);if(!b||b.name!=='spruce_door')throw Error('DOOR_KIND');if(!b.getProperties().open)break;await bot.lookAt(b.position.offset(.5,.5,.5),true);await bot.waitForTicks(3);await bot.activateBlock(b);await bot.waitForTicks(10);}return{door:bot.blockAt(q)?.getProperties(),p:bot.entity.position.clone(),hp:bot.health};
--- returned --
-{"door": {"powered": false, "open": false, "hinge": "left", "half": "lower", "facing": "north"}, "p": {"x": 6.59001147641076, "y": 67, "z": 82.43822707828308}, "hp": 20}

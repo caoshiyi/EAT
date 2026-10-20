@@ -1,1 +1,0 @@
-console.log('SOURCE',JSON.stringify(state()));const p=v(8,61,90);console.log('SUPPORT',[-1,-2,-3].map(y=>[p.offset(0,y,0),bot.blockAt(p.offset(0,y,0))?.name]));if(bot.blockAt(p)?.name==='sandstone'&&full(v(8,62,90))){await cut(p);console.log('WINDOW',bot.blockAt(p)?.name,JSON.stringify(state()));}else console.log('CHANGED',bot.blockAt(p)?.name);stop();

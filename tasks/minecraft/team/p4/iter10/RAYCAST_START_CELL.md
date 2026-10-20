@@ -1,9 +1,0 @@
-# Partial starting cell raycast — scoped actual counterexample
-
-Installed prismarine-world/src/worldsync.js raycast sets `pos=from`; first `position` remains fractional. getBlock(position) assigns block.position=pos.floored(), but default iter.intersect(block.shapes,position) uses the fractional position as shape offset. Later iter.next positions are integral. This matters when eye starts in AIR portion of a partial collision block, e.g. under a TOP slab, not ordinary AIR first cells. No tools/server/library files edited.
-
-Actual #4887 eye(7.419,69.1825,83.519) below TOPslab(7,69,83): default ray to shape center(7.5,69.75,83.5) returnedNULL; matcher iter.intersect(shapes,b.position) hit actualBOTTOMY69.5. Vertical default hit69.6825, corrected69.5. RealDIRTheadwall control agreed, finite .1 range negative returnedNULL. This is read-only client geometry evidence, not a server hit receipt or a cause of P4 combat/return deaths.
-
-Scoped matcher in top_log_repair_corrected_ray.js/top_log_leaf_clear.js uses integer block.position, rejects intersections behind origin and beyond explicit range. Actual #4899 then used correct block-shape points (TOPslab .75/BOTTOM .25), guarded visibility+4.5mreach, normal dig API, native jump/grounded68.5, one actualLEAF occluder removal, ordinaryLOG+1 and restoredroof/step. This caller physically passed; publication is not other-caller adoption or general raycast proof.
-
-Caveat for reuse: iter.intersect can return negative entry distances when origin is inside a solid shape. An apparently empty forward result must not certify a bad/inside-solid origin; explicitly detect that case rather than blindly rejecting a negative hit and calling it clear. Own actual tested eye lay in AIR half-slab. Never mutate installed libraries or discard real occluders.

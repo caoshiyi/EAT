@@ -1,3 +1,0 @@
-stop();const q=v(-5,52,4),before=state();if(bot.entity.position.distanceTo(v(-4.5,50,4.5))>.2||bot.health!==20||!full(q))throw Error('source mismatch');console.log('SOURCE',JSON.stringify(before));
-try{await cut(q);await wait(15);}finally{await place(q,'end_stone');stop();await bot.lookAt(bot.entity.position.offset(0,-.5,0),true);}
-console.log('LOOT_RECOVERY',JSON.stringify({at:new Date().toISOString(),before:before.inv,after:state(),roof:bot.blockAt(q)?.name,items:Object.values(bot.entities).filter(e=>e.name==='item'&&e.position.distanceTo(bot.entity.position)<8).map(e=>({id:e.id,p:e.position,meta:e.metadata?.[8]}))}));

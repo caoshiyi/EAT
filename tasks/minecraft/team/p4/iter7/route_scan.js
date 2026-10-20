@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3'),q=bot.entity.position.floored();for(let z=-431;z<=-425;z++){console.log('ROW',z,JSON.stringify(Array.from({length:16},(_,i)=>{const x=-242+i;return[x,[59,60,61,62].map(y=>bot.blockAt(new Vec3(x,y,z))?.name)]})));}console.log('P',q,bot.health,'PEER',bot.players.p1?.entity?.position);

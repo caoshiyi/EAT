@@ -1,1 +1,0 @@
-const e=bot.entities[99];return{at:new Date().toISOString(),version:bot.version,dim:bot.game.dimension,p:bot.entity.position,e:e&&{id:e.id,name:e.name,type:e.type,entityType:e.entityType,uuid:e.uuid,valid:e.isValid,p:e.position,height:e.height,width:e.width,meta:e.metadata},registryMagma:bot.registry.entitiesByName.magma_cube};

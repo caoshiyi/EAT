@@ -1,1 +1,0 @@
-const qs=bot.findBlocks({matching:bot.registry.blocksByName.cobweb.id,maxDistance:48,count:64});console.log('WEB48_NATIVE',JSON.stringify({at:new Date().toISOString(),n:qs.length,positions:qs.map(q=>[q.x,q.y,q.z]),p:bot.entity.position,hp:bot.health,inventory:bot.inventory.items().map(i=>[i.name,i.count])}));

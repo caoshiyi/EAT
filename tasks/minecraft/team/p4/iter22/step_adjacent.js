@@ -1,1 +1,0 @@
-const V=require('vec3').Vec3;const target=new V(148,-35,2231);console.log('CURRENT',JSON.stringify({p:bot.entity.position,hp:bot.health,inv:bot.inventory.items().map(i=>[i.name,i.count]),cells:[[149,-36,2232],[149,-35,2232],[149,-34,2232],[148,-35,2232],[148,-35,2230],[148,-34,2231],[148,-36,2231]].map(a=>{const b=bot.blockAt(new V(...a));return[a,b?.name,b?.shapes]})}));

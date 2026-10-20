@@ -1,1 +1,0 @@
-return{p:bot.entity.position,hp:bot.health,near:Object.values(bot.entities).filter(e=>e!==bot.entity&&e.position.distanceTo(bot.entity.position)<8).map(e=>({id:e.id,name:e.name,type:e.type,p:e.position,width:e.width,height:e.height,hp:e.metadata?.[9],gear:e.equipment?.map(i=>i?.name)}))};

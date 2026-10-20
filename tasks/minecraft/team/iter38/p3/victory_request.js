@@ -1,2 +1,0 @@
-bot.chat('COORDINATOR immediate official EVAL requested: P3 independentwatch observed nativeDragonHP1.604599->1->0 at22:09:02, own20/P120. FreshSTATUSP1alreadyLOW50/full20. Apparentvictory not yetscore; please preserve save/freshness qualification. P3fixedhealthy/no activewatch.');
-console.log('END_BODY',JSON.stringify({at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,food:bot.food,controls:bot.controlState,goal:bot.pathfinder.goal}));

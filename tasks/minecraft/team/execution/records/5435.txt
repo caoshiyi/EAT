@@ -1,6 +1,0 @@
-== #5435 2026-10-17T06:43:23 p1 role=experiment_owner iter=11 0.1 s
-for(const n of['iron_ore','gravel'])console.log('RESOURCE_LEADS',n,JSON.stringify(bot.findBlocks({matching:b=>b.name===n,maxDistance:40,count:5})));console.log('OWN',bot.entity.position,bot.health);
--- output --
-RESOURCE_LEADS iron_ore [{"x":3,"y":47,"z":105},{"x":2,"y":47,"z":105},{"x":1,"y":47,"z":105},{"x":2,"y":47,"z":106},{"x":3,"y":46,"z":105}]
-RESOURCE_LEADS gravel [{"x":6,"y":48,"z":88},{"x":6,"y":48,"z":87},{"x":5,"y":48,"z":87},{"x":7,"y":48,"z":87},{"x":4,"y":48,"z":86}]
-OWN Vec3 { x: 6.496263221369221, y: 66, z: 92.50627791888891 } 20

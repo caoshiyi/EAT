@@ -1,7 +1,0 @@
-# Ordinary transfer qualified iteration20
-
-Physical evidence: failed #9170 (donor re-picked, recipient#9175empty); changed #9180 single + independent recipient#9182; bulk#9183 with independent recipient status9187/chat7619. Full interval request09:51:26 through recipient receipt09:52:57 =1m31s, including failure. P1 received basalt6/woodpick1wear14/sticks2.
-
-Use an actually open, same-height corridor, recipient ~1m ahead, donor with a checked full-floor/empty-body retreat ~1m behind. Confirm recipient present/current before dropping. Aim ordinary `lookAt(recipient.position.offset(.05,.6,.05))`, then normal `toss`/`tossStack`. Immediately retreat donor outside shared pickup range (qualified ending2.25m from recipient); do not wait beside recipient. After~50ticks, record donor ordinary stock, exact item entities and ending body. Independently ask recipient owner to inspect ordinary inventory. Stock loss and entity absence alone never establish receipt.
-
-Qualified north/south positions: recipient131.5,-36,2272.51; donor drop131.5,-36,2273.47; donor retreat131.5,-36,2274.56..76. Coordinates are specific observed geometry, not a general safe route. Freshly verify full floors/empty body; do not reproduce if occupied or changed. The straight corridor had no intervening blocks. Code gift_retreat_test.js and gift_bulk.js were freshly written for this iteration, no inherited helpers/raw packets. Small test before bulk avoided silently losing a pick.

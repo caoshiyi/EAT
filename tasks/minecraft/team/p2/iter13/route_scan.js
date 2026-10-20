@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');let q=bot.entity.position.floored();return{p:bot.entity.position,hp:bot.health,food:bot.food,rows:[-252,-253,-254,-255].map(x=>({x,cells:[61,62,63,64,65,66].map(y=>[y,bot.blockAt(new Vec3(x,y,-189))?.name])})),inv:bot.inventory.items().map(i=>[i.name,i.count,i.durabilityUsed])};

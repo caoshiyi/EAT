@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const r=[];for(const[x,z]of[[19,89],[18,89],[19,88],[20,90],[21,88]])for(let y=63;y<=69;y++){const b=bot.blockAt(new Vec3(x,y,z));r.push([x,y,z,b?.name,b?.boundingBox]);}return{r,hp:bot.health,p:bot.entity.position,day:bot.time.timeOfDay};

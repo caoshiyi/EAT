@@ -1,4 +1,0 @@
-const {Vec3}=require('vec3');
-const snap=()=>{const p=bot.entity.position.clone(),q=p.floored(); return {at:new Date().toISOString(),p,hp:bot.health,food:bot.food,dim:bot.game.dimension,ground:bot.entity.onGround,inventory:bot.inventory.items().map(i=>({name:i.name,count:i.count,used:i.durabilityUsed})),controls:Object.fromEntries(['forward','back','left','right','jump','sprint','sneak'].map(k=>[k,bot.getControlState(k)])),goal:bot.pathfinder.goal,faces:[[0,-1,0],[0,2,0],[1,0,0],[1,1,0],[-1,0,0],[-1,1,0],[0,0,1],[0,1,1],[0,0,-1],[0,1,-1]].map(o=>{const b=bot.blockAt(q.offset(...o));return {p:b?.position,n:b?.name,full:b?.shapes?.some(s=>s.join(',')==='0,0,0,1,1,1')||false}}),near:Object.values(bot.entities).filter(e=>e.id!==bot.entity.id&&e.position.distanceTo(p)<15).map(e=>({id:e.id,n:e.name,p:e.position.clone(),width:e.width,height:e.height}))}};
-for(let i=0;i<3;i++){console.log('P4_RECONCILE',JSON.stringify(snap()));await bot.waitForTicks(4);}
-return snap();

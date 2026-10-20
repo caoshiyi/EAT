@@ -1,9 +1,0 @@
-const V=require('vec3').Vec3;const hp0=bot.health,begin=Date.now();let issue=null,path=[];
-function full(p){return bot.blockAt(p)?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')}
-function safe(x,z){return full(new V(x,49,z))&&full(new V(x,52,z))&&[50,51].every(y=>bot.blockAt(new V(x,y,z))?.boundingBox==='empty')}
-const start=bot.entity.position.floored(),queue=[[start.x,start.z]],prev=new Map([[`${start.x},${start.z}`,null]]);let end=null;
-for(let n=0;n<queue.length;n++){const [x,z]=queue[n];if(x===7&&z===3){end=[x,z];break}for(const [dx,dz]of[[1,0],[-1,0],[0,1],[0,-1]]){const a=x+dx,b=z+dz,k=`${a},${b}`;if(a<0||a>76||b< -5||b>6||prev.has(k)||!safe(a,b))continue;prev.set(k,[x,z]);queue.push([a,b]);}}
-if(end){for(let a=end;a;a=prev.get(a.join(',')))path.push(a);path.reverse()}console.log('PLAN',JSON.stringify(path));
-try{if(!path.length)throw Error('no covered path');bot.pathfinder.setGoal(null);bot.clearControlStates();for(const[x,z]of path.slice(1)){const until=Date.now()+1800;try{while(Math.hypot(bot.entity.position.x-x-.5,bot.entity.position.z-z-.5)>.12){if(Date.now()>until||bot.health<hp0-.01||Math.abs(bot.entity.position.y-50)>.1||!safe(x,z))throw Error('movement guard');await bot.lookAt(new V(x+.5,51.62,z+.5),true);bot.setControlState('forward',true);await bot.waitForTicks(1)}}finally{bot.clearControlStates()}await bot.waitForTicks(6);if(!bot.entity.onGround||Math.abs(bot.entity.position.y-50)>.1)throw Error('post landing');} }
-catch(e){issue=String(e)}finally{bot.clearControlStates();bot.pathfinder.setGoal(null);await bot.waitForTicks(10)}
-return{issue,p:bot.entity.position,hp:bot.health,ground:bot.entity.onGround,elapsed:Date.now()-begin,roof:bot.blockAt(bot.entity.position.floored().offset(0,2,0))?.name,inventory:bot.inventory.items().map(i=>({n:i.name,c:i.count,w:i.durabilityUsed}))};

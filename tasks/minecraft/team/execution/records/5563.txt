@@ -1,4 +1,0 @@
-== #5563 2026-10-17T07:01:01 p4 role=integration_operator iter=11 0.8 s
-const{Vec3}=require('vec3');let c;try{const i=bot.inventory.items().find(i=>i.name==='iron_pickaxe');if(!i)throw Error('NO_LOAN');c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));const before=c.containerItems().filter(i=>i.name==='iron_pickaxe').map(i=>[i.count,i.durabilityUsed]);await c.deposit(i.type,null,1);c.close();c=null;await bot.waitForTicks(5);c=await bot.openChest(bot.blockAt(new Vec3(7,67,82)));return{utc:new Date().toISOString(),before,after:c.containerItems().filter(i=>i.name==='iron_pickaxe').map(i=>[i.count,i.durabilityUsed]),own:bot.inventory.items().map(i=>[i.name,i.count]),hp:bot.health,food:bot.food}}finally{if(c)c.close();bot.clearControlStates()}
--- returned --
-{"utc": "2026-10-17T07:01:02.189Z", "before": [], "after": [[1, 207]], "own": [["spider_eye", 1], ["string", 1], ["sweet_berries", 1]], "hp": 12.926748275756836, "food": 16}

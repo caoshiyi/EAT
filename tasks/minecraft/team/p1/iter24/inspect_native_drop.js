@@ -1,1 +1,0 @@
-const V=bot.entity.position.constructor;const columns=[];for(let x=145;x<=151;x++)for(let z=2242;z<=2245;z++){const col=[];for(let y=-27;y>=-38;y--){const b=bot.blockAt(new V(x,y,z));col.push([y,b?.name,!!b?.shapes.some(s=>s.join(',')==='0,0,0,1,1,1')]);}columns.push({x,z,col});}return{at:new Date().toISOString(),p:bot.entity.position,hp:bot.health,columns};

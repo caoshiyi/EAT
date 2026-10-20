@@ -1,1 +1,0 @@
-console.log('ALL_ENDERS',JSON.stringify(Object.values(bot.entities).filter(e=>e.name==='enderman').map(e=>({id:e.id,p:e.position,hp:e.metadata?.[9],d:e.position.distanceTo(bot.entity.position)})).sort((a,b)=>a.d-b.d)));console.log('STATE',bot.entity.position,bot.health,bot.food,bot.time.timeOfDay);

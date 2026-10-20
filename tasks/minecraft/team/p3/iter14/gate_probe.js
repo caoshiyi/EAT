@@ -1,1 +1,0 @@
-const {Vec3}=require("vec3");let b=bot.blockAt(new Vec3(8,67,83));return {p:bot.entity.position,hp:bot.health,gate:b&&{name:b.name,props:b.getProperties(),shapes:b.shapes},near:[...[67,68,69].map(y=>[7,y,83]),...[67,68,69].map(y=>[8,y,83])].map(a=>{let b=bot.blockAt(new Vec3(...a));return[a,b?.name,b?.shapes]})};

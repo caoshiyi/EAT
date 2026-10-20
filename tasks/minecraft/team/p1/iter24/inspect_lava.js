@@ -1,1 +1,0 @@
-const V=bot.entity.position.constructor;let cells=[];for(let x=34;x<=38;x++)for(let z=84;z<=88;z++){let col=[];for(let y=7;y<=10;y++){const b=bot.blockAt(new V(x,y,z));col.push(b?.name??null);}cells.push({x,z,y7to10:col});}return{p:bot.entity.position,hp:bot.health,cells};

@@ -1,4 +1,0 @@
-== #6128 2026-10-17T08:53:39 p3 role=continuity_owner iter=12 0 s
-const{Vec3}=require("vec3"); const c=await bot.openContainer(bot.blockAt(new Vec3(7,68,82)));const moved=[];for(const name of ["spruce_planks","cobblestone"]){const i=bot.inventory.items().find(i=>i.name===name);if(i){await c.deposit(i.type,null,i.count);moved.push([name,i.count]);}}const bank=c.containerItems().filter(i=>["spruce_planks","cobblestone","ender_pearl"].includes(i.name)).map(i=>[i.name,i.count]);c.close();return{moved,bank,own:bot.inventory.items().map(i=>[i.name,i.count]),p:bot.entity.position,hp:bot.health};
--- returned --
-{"moved": [["spruce_planks", 1], ["cobblestone", 1]], "bank": [["ender_pearl", 8], ["spruce_planks", 1], ["cobblestone", 1]], "own": [], "p": {"x": 6.320148882249376, "y": 67, "z": 82.30645108303314}, "hp": 20}

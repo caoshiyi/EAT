@@ -1,5 +1,0 @@
-const{Vec3}=require('vec3');bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);const m=new Movements(bot);m.canDig=false;m.maxDropDown=3;bot.pathfinder.setMovements(m);bot.pathfinder.thinkTimeout=2000;
-async function go(g){const t=setTimeout(()=>bot.pathfinder.setGoal(null),5000);try{await bot.pathfinder.goto(g);}catch(e){console.log('path',e.message);}finally{clearTimeout(t);bot.pathfinder.setGoal(null);bot.clearControlStates();await bot.waitForTicks(4);}}
-await go(new goals.GoalNear(6,66,80,1));for(const x of [6,7]){const b=bot.blockAt(new Vec3(x,67,81));if(b.name.endsWith('_door')&&!b.getProperties().open){await bot.activateBlock(b);await bot.waitForTicks(4);}}
-await go(new goals.GoalBlock(6,67,82));console.log('position',bot.entity.position.toString());
-if(bot.entity.position.x>5&&bot.entity.position.x<8&&bot.entity.position.z>81&&bot.entity.position.z<84){for(const x of [6,7]){const b=bot.blockAt(new Vec3(x,67,81));if(b.name.endsWith('_door')&&b.getProperties().open){await bot.activateBlock(b);await bot.waitForTicks(4);}}console.log('INSIDE CLOSED',bot.health,bot.food);}else console.log('NOT INSIDE');

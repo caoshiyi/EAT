@@ -1,1 +1,0 @@
-return{at:new Date().toISOString(),p:bot.entity.position.clone(),hp:bot.health,food:bot.food,jump:bot.getControlState('jump'),ground:bot.entity.onGround,water:bot.entity.isInWater,eyeBlock:bot.blockAt(bot.entity.position.offset(0,bot.entity.eyeHeight,0).floored())?.name,oxygen:bot.oxygenLevel};

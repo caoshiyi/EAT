@@ -1,1 +1,0 @@
-bot.clearControlStates();bot.pathfinder.setGoal(null);const{Vec3}=require("vec3"),f=p=>bot.blockAt(p)?.shapes?.some(s=>s.join(",")==="0,0,0,1,1,1");return [-3,-2,-1,0,1,2,3,4].map(z=>({z,cells:[4,5,6,7,8,9,10,11,12].map(x=>{let p=new Vec3(x,65,z);return{x,body:[0,1].map(y=>bot.blockAt(p.offset(0,y,0))?.name),floor:f(p.offset(0,-1,0)),roof:f(p.offset(0,2,0))}})}));

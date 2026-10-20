@@ -1,2 +1,0 @@
-const items=Object.values(bot.entities).filter(e=>e.name==='item').map(e=>({id:e.id,p:e.position,metadata:e.metadata}));console.log('ITEM_LOCATIONS',JSON.stringify({at:new Date().toISOString(),items}));
-bot.chat('P3 nativeitem positions '+items.map(e=>e.id+'@'+e.p.x.toFixed(1)+','+e.p.y.toFixed(1)+','+e.p.z.toFixed(1)).join(';')+'. Item names inspect14480metadata if needed; no assumption all deathfield. Replacement AXE/PICK ready north.');

@@ -1,1 +1,0 @@
-const me=bot.entity.position;console.log('P2_ITEMS',JSON.stringify({at:new Date().toISOString(),own:{p:me,hp:bot.health,food:bot.food},items:Object.values(bot.entities).filter(e=>e.name==='item').map(e=>({id:e.id,p:e.position,dist:e.position.distanceTo(me),item:e.getDroppedItem?.()??e.metadata?.[8]}))}));

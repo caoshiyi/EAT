@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');let a=[];for(let x=3;x<=7;x++)for(let z=78;z<=81;z++){let col=[];for(let y=64;y<=69;y++){let b=bot.blockAt(new Vec3(x,y,z));col.push([y,b?.name,b?.shapes])}a.push([x,z,col])}return a;

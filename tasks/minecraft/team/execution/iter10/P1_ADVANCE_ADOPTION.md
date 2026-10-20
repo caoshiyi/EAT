@@ -1,7 +1,0 @@
-# Actual successor caller4517 — reviewed03:19 UTC
-
-Exact executed bounded traversal consumes subjectscoped observation in productionwork, beyond standaloneprobe: onAir filtersCURRENTselfID+registryairkey, packetreceipttimestamp+id copied; air() returnsnull after2s orIDmismatch; death/respawn/end setlost andstop; check enforcesworld+positiveHP+harddeadline. Duringactualwetbranch it requires surfacegeometry first, then if knownselfair<230 invokes surfaceRecover/SELF_AIR_MARGIN. Unknown air does not certify thresholdpass; route still requires observed surfacehead/height and clear nextcolumn.
-
-Physical4517 is dryroute: actual100.47m displacement, post-awaitprotectedshaftending/20HP18food/7false, airNULL/packetNULL/headAIR/wetfalse. It verifies the adopted code is actually executed and dryunknown does not deadlock travel, but does NOT exercise low-air branch or qualify futurewetrecovery. Sourceincludes independentstop andlistenercleanup; no listenercount receipt. Localpacket has no explicitlifeepoch/dimensionfield, but scope ends onlife/worldfailure; no persistentcachedcarry claimed.
-
-FINDING: this successor restores anagefilter absentfrom4499probe. Therefore use exactcallerIDs instead of saying either 'allcallersfixed' or 'ageguardpermanentlylost'. Originalfataltravel source remainsretired; successoractual4517 useda differentbody. Protectedsamebodyendingconsumesactualhullpredicate, not just issueNULL.

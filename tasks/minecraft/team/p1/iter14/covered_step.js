@@ -1,1 +1,0 @@
-async function step(q){const p=bot.entity.position.floored(),d=q.minus(p);if(Math.abs(d.x)+Math.abs(d.z)!==1||d.y)throw Error('ADJ');if(threat())throw Error('THREAT_LOS');if(capCount()<16)throw Error('CAP_END_RESERVE');await put(q.offset(0,-1,0));await put(q.offset(0,2,0));await move(q);console.log('COVERED_STEP_ACTUAL',q);}

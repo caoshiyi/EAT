@@ -1,4 +1,0 @@
-== #6318 2026-10-17T09:17:39 p3 role=continuity_owner iter=13 1 s
-const{Vec3}=require('vec3');bot.clearControlStates();bot.pathfinder.setGoal(null);const self=bot.entity,hp=bot.health;try{for(const [x,z] of [[6.32,83.5],[7.3,83.5]]){for(let k=0;k<60;k++){const p=bot.entity.position,dx=x-p.x,dz=z-p.z;bot.clearControlStates();if(Math.hypot(dx,dz)<.07)break;if(p.x<6.28||p.x>7.73||p.z<82.15||p.z>83.75||bot.health<hp||bot.entity!==self)throw Error('GUARD');await bot.lookAt(new Vec3(x,p.y+1.4,z),true);bot.setControlState('sneak',true);bot.setControlState('forward',true);await bot.waitForTicks(1);}}}finally{bot.clearControlStates()}return{p:bot.entity.position,hp:bot.health,own:bot.inventory.items().map(i=>[i.name,i.count])};
--- returned --
-{"p": {"x": 7.234932502135301, "y": 67.5625, "z": 83.49825131358737}, "hp": 20, "own": [["wooden_pickaxe", 1]]}

@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));const s=bot.inventory.items().find(i=>i.name==='sandstone');if(s)await c.deposit(s.type,null,s.count);console.log('bank',c.containerItems().map(i=>[i.name,i.count]));c.close();

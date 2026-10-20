@@ -1,2 +1,0 @@
-const{Vec3}=require('vec3');const bs=bot.findBlocks({matching:bot.registry.blocksByName.stone.id,maxDistance:25,count:1000}).filter(p=>p.y>=62&&p.x<8);console.log('STONE',bs.slice(0,90).map(p=>[p.toString(),['north','above'].map((n,i)=>bot.blockAt(p.offset(0,i===1?1:0,i===0?-1:0)).name)]));
-const c=await bot.openContainer(bot.blockAt(new Vec3(7,67,82)));const i=c.containerItems().find(i=>i.name==='wooden_pickaxe');if(i)await c.withdraw(i.type,null,1);c.close();await bot.waitForTicks(5);console.log('PICK',bot.inventory.items().map(i=>[i.name,i.count]));

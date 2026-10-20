@@ -1,1 +1,0 @@
-const{Vec3}=require('vec3');for(let z=82;z<=86;z++){let row=[];for(let x=10;x<=17;x++){let a=[];for(let y=63;y<=72;y++){let b=bot.blockAt(new Vec3(x,y,z));if(b?.boundingBox!=='empty')a.push(y+':'+b?.name)}row.push(x+'='+a.join(','))}console.log(z,row.join(' | '))}
