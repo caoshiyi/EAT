@@ -1,0 +1,11 @@
+#!/bin/bash
+# Official eval of chess, run by the harness after each team; the last line is "SCORE: <x>" (elo).
+cd "$(dirname "$0")/.."
+source eat/env.sh
+LOG=$(mktemp); trap 'rm -f "$LOG"' EXIT
+{ python tools/eval_chess.py --end-iteration; } 2>&1 | tee "$LOG"
+python3 - "$LOG" <<'PY'
+import re, sys
+m = re.findall(r"^elo = (-?[0-9.]+)", open(sys.argv[1]).read(), re.M)
+print(f"SCORE: {float(m[-1]) if m else 0.0}")
+PY

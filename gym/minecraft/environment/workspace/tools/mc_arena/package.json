@@ -1,0 +1,13 @@
+{
+  "name": "mc-arena",
+  "private": true,
+  "description": "Bot host of the minecraft task: four mineflayer bodies and the program runner behind tools/mc_arena.py",
+  "main": "bothost.js",
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "mineflayer": "4.39.0",
+    "mineflayer-pathfinder": "2.4.5",
+    "prismarine-viewer": "1.33.0",
+    "vec3": "0.1.10"
+  }
+}

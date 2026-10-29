@@ -1,0 +1,27 @@
+schema_version = "1.4"
+source = "https://huggingface.co/datasets/eva98/eat-gym/tree/main/chess"
+artifacts = ["/app/tasks/chess"]
+
+[task]
+name = "eat-gym/chess"
+version = "1.0"
+description = "Get better at chess over 200 rated games against Stockfish at hidden levels, no engine help"
+authors = [{ name = "the EAT authors" }]
+keywords = ["chess", "game", "long-horizon", "continual-learning"]
+
+[metadata]
+category = "game"
+hardware = "any machine with Python 3.11+ and Stockfish 17 (CPU)"
+baseline = "a single Claude Code agent over the same 200 games"
+score = "elo: the rating over the last 50 rated games (python tools/eval_chess.py)"
+readable_sources = "none: no web access; the task's own records and the team's notes"
+eat_result = "Elo 2460 after 75 games (Claude Opus 5.5; a single agent reached 2090 after 200)"
+eat_eval_cmd = "bash eat/eval.sh"
+difficulty = "hard"
+
+[agent]
+user = "agent"
+
+[verifier]
+timeout_sec = 3600.0
+environment_mode = "same"

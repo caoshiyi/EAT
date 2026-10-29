@@ -1,0 +1,9 @@
+{
+ "note": "naive (this repo before the PR) on an AWS EC2 Mac M4 Pro 48 GB, model on the internal SSD; mean of two full runs. Measure your own with --write-baseline on a naive checkout.",
+ "session_wall_s": {
+  "scheduler_admission": 228.9,
+  "sampler_test": 301.3,
+  "offload_eviction": 220.4,
+  "decode_aime25": 25.2
+ }
+}
