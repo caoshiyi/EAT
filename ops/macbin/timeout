@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""GNU timeout's subset EAT uses, for macOS: timeout [--signal=SIG] [--kill-after=DUR] DUR CMD [ARGS...]."""
+import os, signal, subprocess, sys, time
+
+def seconds(text):
+    units = {"s": 1, "m": 60, "h": 3600, "d": 86400}
+    return float(text[:-1]) * units[text[-1]] if text[-1] in units else float(text)
+
+args = sys.argv[1:]
+sig, kill_after = signal.SIGTERM, None
+while args and args[0].startswith("--"):
+    option = args.pop(0)
+    if option.startswith("--signal="):
+        name = option.split("=", 1)[1]
+        sig = getattr(signal, name if name.startswith("SIG") else "SIG" + name)
+    elif option.startswith("--kill-after="):
+        kill_after = seconds(option.split("=", 1)[1])
+    else:
+        sys.exit(f"timeout: unsupported option {option}")
+limit = seconds(args.pop(0))
+proc = subprocess.Popen(args)
+try:
+    sys.exit(proc.wait(timeout=limit))
+except subprocess.TimeoutExpired:
+    proc.send_signal(sig)
+    try:
+        proc.wait(timeout=kill_after)
+    except subprocess.TimeoutExpired:
+        proc.kill()
+        proc.wait()
+    sys.exit(124)
