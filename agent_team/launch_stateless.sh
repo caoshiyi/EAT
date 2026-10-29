@@ -11,7 +11,8 @@
 #   --persistent: supervisor keeps conversation history across iterations
 #   --stateless:  supervisor gets a fresh session each iteration (default)
 #   The task repository provides eat/task.md (the rules put into every agent's prompt), eat/eval.sh (the official eval,
-#   ending with a line "SCORE: <x>") and optionally eat/env.sh (sourced first: venv, paths, GPUs). The run's record
+#   ending with a line "SCORE: <x>") and optionally eat/env.sh (sourced first: venv, paths, GPUs, TEAM_WALL_MIN),
+#   eat/pre_team.sh (run before each team), eat/snapshot.sh (after it) and eat/done.sh (exit 0 ends the run). The run's record
 #   (team configs, agent outputs, evals, BUDGET.md) goes to eat/log/.
 #   max_iterations: max supervisor turns (default: 20)
 #   max_team_size: max agents per iteration (default: 3)
@@ -47,6 +48,8 @@ REQUIREMENTS="$PROJECT_DIR/eat/task.md"
 [ -f "$REQUIREMENTS" ] || { echo "$REQUIREMENTS not found: set the task up first (the eat skill, or ops/fetch_task.sh)" >&2; exit 1; }
 [ -f "$PROJECT_DIR/eat/env.sh" ] && source "$PROJECT_DIR/eat/env.sh"
 export EAT_HOME="$(cd "$SCRIPT_DIR/.." && pwd)" EAT_ROOT="$PROJECT_DIR"
+# macOS has no GNU timeout: use the harness's shim
+command -v timeout >/dev/null || export PATH="$EAT_HOME/ops/macbin:$PATH"
 export TASK="${EAT_TASK:-$(basename "$PROJECT_DIR")}"
 export EAT_RUN="$PROJECT_DIR/eat/log"
 mkdir -p "$EAT_RUN"
@@ -423,6 +426,12 @@ RETRY_PROMPT
     echo "[git] Committing iteration $ITER results..."
     git add -A || echo "[git] add failed; continuing"
     git commit -m "iter $ITER: task=$TASK cost=\$$TEAM_COST cumulative=\$$CUMULATIVE_COST score=$CURRENT_SCORE" --allow-empty 2>/dev/null || true
+
+    # A task with an end (the game is won, all games are played) says so through eat/done.sh exiting 0
+    if [ -f eat/done.sh ] && bash eat/done.sh >/dev/null 2>&1; then
+        echo "[loop] eat/done.sh reports the task is finished. Stopping."
+        break
+    fi
 
     if [ "$SUPERVISOR_MODE" = "persistent" ] \
             && python3 -c "import sys; sys.exit(0 if 0 < $SUPERVISOR_REFRESH_COST < ${TURN_COST:-0} else 1)"; then

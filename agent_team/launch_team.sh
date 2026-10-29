@@ -27,7 +27,8 @@ cp "$TEAM_CONFIG" "$ITER_DIR/team_config.md"
 # Parse roles, prompts, timeouts and phases structurally (prompts may contain their own
 # "## Workflow" / "## Success Criteria" / "Phase N:" text)
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-mapfile -t PHASE_LINES < <(python3 "$SCRIPT_DIR/parse_team_config.py" "$TEAM_CONFIG" "$ITER_DIR" "$TASK" "$MAX_TEAM_SIZE")
+PHASE_LINES=()   # a read loop, not mapfile: macOS ships bash 3.2
+while IFS= read -r LINE; do PHASE_LINES+=("$LINE"); done < <(python3 "$SCRIPT_DIR/parse_team_config.py" "$TEAM_CONFIG" "$ITER_DIR" "$TASK" "$MAX_TEAM_SIZE")
 ROLES=()
 for PHASE_ROLES_CSV in "${PHASE_LINES[@]}"; do
     IFS=',' read -ra PHASE_ROLES <<< "$PHASE_ROLES_CSV"
@@ -36,15 +37,25 @@ done
 
 echo "[launch_team] Iteration $ITER — launching ${#ROLES[@]} agent(s): ${ROLES[*]}" >&2
 
+# TEAM_WALL_MIN (e.g. from eat/env.sh): the team's wall-clock limit in minutes; agents still running then are stopped
+TEAM_DEADLINE=""
+[ -n "${TEAM_WALL_MIN:-}" ] && TEAM_DEADLINE=$(( $(date +%s) + TEAM_WALL_MIN * 60 ))
+
 # Set AGENT_TIMEOUT_ENFORCE=1 to kill an agent after the Timeout its role declares
 launch_agent() {
     local ROLE="$1"
     local PROMPT_FILE="$ITER_DIR/${ROLE}_prompt.txt"
     local AGENT_OUTPUT="$ITER_DIR/${ROLE}_output.json"
-    local LIMIT=()
+    local LIMIT=() SECONDS_LEFT=""
     if [ "${AGENT_TIMEOUT_ENFORCE:-0}" = "1" ] && [ -f "$ITER_DIR/${ROLE}_timeout" ]; then
-        LIMIT=(timeout --signal=TERM --kill-after=60 "$(< "$ITER_DIR/${ROLE}_timeout")m")
+        SECONDS_LEFT=$(( $(< "$ITER_DIR/${ROLE}_timeout") * 60 ))
     fi
+    if [ -n "$TEAM_DEADLINE" ]; then
+        local TEAM_LEFT=$(( TEAM_DEADLINE - $(date +%s) ))
+        (( TEAM_LEFT < 1 )) && TEAM_LEFT=1
+        [ -z "$SECONDS_LEFT" ] || (( TEAM_LEFT < SECONDS_LEFT )) && SECONDS_LEFT=$TEAM_LEFT
+    fi
+    [ -n "$SECONDS_LEFT" ] && LIMIT=(timeout --signal=TERM --kill-after=60 "${SECONDS_LEFT}s")
 
     # AGENT_MODELS (comma-separated) lists the models a role may pick with **Model:**; otherwise the default model runs
     local MODEL=() WANT=""
@@ -61,7 +72,7 @@ launch_agent() {
     SID="$(python3 -c 'import uuid; print(uuid.uuid4())')"
     echo "[launch_team] Starting agent: $ROLE (session $SID${MODEL:+, model ${MODEL[1]}})" >&2
     # Prompt goes through stdin: argv breaks on prompts starting with '-' and on >128KB prompts
-    EAT_AGENT_TAG="$TAG" "${LIMIT[@]}" claude --print --session-id "$SID" "${MODEL[@]}" --dangerously-skip-permissions --output-format json \
+    EAT_AGENT_TAG="$TAG" ${LIMIT[@]+"${LIMIT[@]}"} claude --print --session-id "$SID" ${MODEL[@]+"${MODEL[@]}"} --dangerously-skip-permissions --output-format json \
         ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"} \
         < "$PROMPT_FILE" > "$AGENT_OUTPUT" 2> "$ITER_DIR/${ROLE}_stderr.txt"
     local RC=$?
@@ -70,7 +81,7 @@ launch_agent() {
     if ! python3 -c 'import json, sys; json.load(open(sys.argv[1]))' "$AGENT_OUTPUT" 2>/dev/null; then
         echo "[launch_team] Agent '$ROLE' left no result; resuming it for a final report." >&2
         printf '%s\n' "Your time limit has been reached and your session was stopped. Do not start new experiments, evals or edits. Reply now with your final report: what you changed, the measured results with their run ids, what is still unfinished, and where your notes and candidate files are." \
-            | EAT_AGENT_TAG="$TAG" timeout --signal=TERM --kill-after=30 15m claude --print --resume "$SID" "${MODEL[@]}" --max-turns 6 \
+            | EAT_AGENT_TAG="$TAG" timeout --signal=TERM --kill-after=30 15m claude --print --resume "$SID" ${MODEL[@]+"${MODEL[@]}"} --max-turns 6 \
                 --dangerously-skip-permissions --output-format json ${CLAUDE_EXTRA_DISALLOWED:+--disallowedTools "$CLAUDE_EXTRA_DISALLOWED"} \
                 > "$AGENT_OUTPUT" 2>> "$ITER_DIR/${ROLE}_stderr.txt"
         echo "[launch_team] Agent '$ROLE' final report done (exit $?)." >&2
@@ -85,6 +96,8 @@ launch_agent() {
 
 # Launch agents in phases (disable set -e to prevent agent failures from killing the loop)
 set +e
+# A task's own step right before its agents start (e.g. start a game server, restart a game clock)
+[ -f eat/pre_team.sh ] && { bash eat/pre_team.sh >&2 || echo "[launch_team] eat/pre_team.sh failed" >&2; }
 PHASE_NUM=0
 for PHASE_ROLES_CSV in "${PHASE_LINES[@]}"; do
     [ -z "$PHASE_ROLES_CSV" ] && continue
@@ -107,6 +120,8 @@ done
 set -e
 
 echo "[launch_team] All phases finished." >&2
+# A task's record of its state after the team (e.g. the game world), kept with the iteration
+[ -f eat/snapshot.sh ] && { bash eat/snapshot.sh > "$ITER_DIR/snapshot.txt" 2>&1 || true; }
 
 # Official score of what the team left in place, independent of agents' self-reports
 EVAL_CMD="${EVAL_CMD:-bash eat/eval.sh}"
