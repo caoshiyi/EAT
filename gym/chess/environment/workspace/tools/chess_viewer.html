@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EAT · Chess</title>
+<style>
+:root{--surface-0:#f4f3f0;--surface-1:#fcfcfb;--line:#e3e2dd;--text-primary:#0b0b0b;--text-secondary:#52514e;--text-muted:#85847e;
+  --series-1:#2a78d6;--good:#0ca30c;--critical:#d03b3b;--sq-light:#ecebe6;--sq-dark:#b9b6ab;--sq-mark:#f1d06a}
+@media (prefers-color-scheme:dark){:root{--surface-0:#111110;--surface-1:#1a1a19;--line:#30302d;--text-primary:#fff;--text-secondary:#c3c2b7;--text-muted:#8b8a82;
+  --series-1:#3987e5;--sq-light:#8f8d84;--sq-dark:#55534c;--sq-mark:#b9972e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-0);color:var(--text-primary);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1240px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+h1{font-size:20px;margin:0;font-weight:650}
+h2{font-size:14px;margin:0 0 2px;font-weight:650}
+.sub{color:var(--text-secondary);font-size:13px}
+.live{margin-left:auto;color:var(--text-secondary);font-size:13px;display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--text-muted)}
+.dot.on{background:var(--good)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.tile,.card{background:var(--surface-1);border:1px solid var(--line);border-radius:10px}
+.tile{padding:12px 14px}
+.tile .k{color:var(--text-secondary);font-size:12px}
+.tile .v{font-size:24px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.2}
+.tile .n{color:var(--text-muted);font-size:12px;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);gap:14px;margin-bottom:14px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.card{padding:14px 16px}
+.chart{position:relative;margin-top:8px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--surface-1);border:1px solid var(--line);border-radius:8px;padding:6px 9px;
+  font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.14);white-space:nowrap;display:none;font-variant-numeric:tabular-nums}
+.tip b{font-weight:650}
+.board{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);aspect-ratio:1;border-radius:6px;overflow:hidden;margin:10px 0;max-width:420px}
+.sq{display:flex;align-items:center;justify-content:center;aspect-ratio:1;min-width:0;min-height:0;overflow:hidden;font-size:clamp(22px,4.4vw,40px);line-height:1;user-select:none}
+.sq.l{background:var(--sq-light)}.sq.d{background:var(--sq-dark)}.sq.m{box-shadow:inset 0 0 0 100px color-mix(in srgb,var(--sq-mark) 55%,transparent)}
+.pw{color:#fff;text-shadow:0 0 1px #000,0 0 1px #000,0 1px 2px #000}.pb{color:#111;text-shadow:0 0 1px rgba(255,255,255,.5)}
+.ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+button,select{font:inherit;color:inherit;background:var(--surface-0);border:1px solid var(--line);border-radius:7px;padding:4px 9px;cursor:pointer}
+button:disabled{opacity:.4;cursor:default}
+.moves{color:var(--text-secondary);font-size:12.5px;max-height:92px;overflow:auto;margin-top:8px;font-variant-numeric:tabular-nums}
+.moves b{color:var(--text-primary);font-weight:650}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th{text-align:left;color:var(--text-secondary);font-weight:500;border-bottom:1px solid var(--line);padding:6px 8px;white-space:nowrap}
+td{padding:5px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr.pick{cursor:pointer}tr.pick:hover td{background:var(--surface-0)}
+.scroll{overflow:auto;max-height:420px}
+.res{display:inline-block;min-width:44px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 8px;margin:1px 4px 1px 0;font-size:12px;color:var(--text-secondary)}
+.empty{color:var(--text-muted);padding:18px 0}
+#runs a{color:var(--text-secondary);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 11px;font-size:13px}
+#runs a.on{color:var(--text-primary);border-color:var(--series-1);font-weight:650}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>EAT · Chess</h1>
+  <span class="sub">a supervisor-evolved agent team learning chess over 200 rated games against Stockfish</span>
+  <nav class="ctl" id="runs" aria-label="Runs"></nav>
+  <span class="live"><span class="dot" id="dot"></span><span id="upd">connecting…</span></span>
+</header>
+<section class="tiles" id="tiles"></section>
+<section class="grid">
+  <div class="card">
+    <h2>Rating after each rated game</h2>
+    <div class="sub">Elo over the last 50 rated games, with its 95% range. Dashed lines: the two rated opponents. Ticks on the axis: iteration boundaries.</div>
+    <div class="chart" id="chart"></div>
+  </div>
+  <div class="card">
+    <div class="ctl">
+      <h2 id="gtitle" style="margin-right:auto">Game</h2>
+      <select id="gsel" aria-label="Game"></select>
+      <button id="follow" title="Follow the game in progress">Live</button>
+    </div>
+    <div class="sub" id="gsub"></div>
+    <div class="board" id="board" role="img" aria-label="Chess board"></div>
+    <div class="ctl">
+      <button id="first" aria-label="First move">⏮</button><button id="prev" aria-label="Previous move">◀</button>
+      <button id="next" aria-label="Next move">▶</button><button id="last" aria-label="Last move">⏭</button>
+      <span class="sub" id="ply"></span>
+    </div>
+    <div class="moves" id="moves"></div>
+  </div>
+</section>
+<section class="grid">
+  <div class="card"><h2>Rated games</h2><div class="scroll" id="games"></div></div>
+  <div class="card"><h2>Teams by iteration</h2><div class="sub" id="spent"></div><div class="scroll" id="teams"></div></div>
+</section>
+</main>
+<script>
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const GLYPH={k:'♚',q:'♛',r:'♜',b:'♝',n:'♞',p:'♟'};
+const OPP=new Proxy({},{get:(_,k)=>k});   // the server sends display names
+let D=null, G=null, sel=null, live=true, ply=null;
+
+function tile(k,v,n){return `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${n||'&nbsp;'}</div></div>`}
+function pct(o){return o&&o.n?Math.round(100*o.score/o.n)+'%':'–'}
+function renderTiles(){
+  const r=D.rating, done=D.wdl[0]+D.wdl[1]+D.wdl[2], it=D.blocks_closed.length+1, b=D.by_opponent;
+  $('tiles').innerHTML=
+    tile('Elo',r.window?r.estimate.toLocaleString():'–',r.window?`95% range ${r.lower}–${r.upper} · ${r.window} games`:'no rated games yet')+
+    tile('Rated games',`${done} / ${D.total}`,`${D.wdl[0]} W · ${D.wdl[1]} D · ${D.wdl[2]} L`)+
+    tile('Score',done?Math.round(100*(D.wdl[0]+D.wdl[1]/2)/done)+'%':'–',`${D.wdl[0]+D.wdl[1]/2} of ${done} points`)+
+    `<div class="tile" style="grid-column:span 2"><div class="k">By opponent${D.ladder?' (levels hidden from the agents)':''}</div><div class="n" style="font-size:12.5px;line-height:1.7;color:var(--text-secondary)">${(D.order||[]).map(o=>{const x=b[o];return x&&x.n?`${o}: <b style="color:var(--text-primary)">${x.score}/${x.n}</b>`:`${o}: –`}).join(' · ')}</div></div>`+
+    tile('Iteration',it,`${D.teams.length?(n=>n+(n===1?' agent':' agents')+' in the latest team')(D.teams[D.teams.length-1].roles.length):'no team yet'}`)+
+    tile('Practice games',D.practice.games,`${D.practice.plies} plies · ${D.illegal} illegal moves in rated games`);
+}
+
+function renderChart(){
+  const el=$('chart'), H=D.history;
+  if(!H.length){el.innerHTML='<div class="empty">No rated game has finished yet.</div>';return}
+  const W=720,Ht=470,m={l:46,r:56,t:12,b:30}, iw=W-m.l-m.r, ih=Ht-m.t-m.b;
+  const est=H.map(h=>h.estimate);
+  let y0=Math.floor((Math.min(1250,...est)-100)/100)*100, y1=Math.ceil((Math.max(1850,...est)+100)/100)*100;
+  const x=g=>m.l+iw*g/D.total, y=v=>m.t+ih*(1-(Math.min(y1,Math.max(y0,v))-y0)/(y1-y0));
+  let s=`<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Rating after each rated game">`;
+  for(let v=y0;v<=y1;v+=(y1-y0)>1400?400:200) s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--text-muted)">${v}</text>`;
+  for(let g=0;g<=D.total;g+=25) s+=`<text x="${x(g)}" y="${Ht-8}" text-anchor="middle" font-size="11" fill="var(--text-muted)">${g}</text>`;
+  for(const g of D.blocks_closed) s+=`<line x1="${x(g)}" x2="${x(g)}" y1="${m.t+ih}" y2="${m.t+ih+5}" stroke="var(--text-muted)"/>`;
+  for(const [o,v] of Object.entries(D.opp_rating)) s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--text-muted)" stroke-dasharray="3 4"/><text x="${W-m.r+6}" y="${y(v)+4}" font-size="11" fill="var(--text-muted)">${o}</text>`;
+  const up=H.map(h=>`${x(h.game)},${y(h.upper)}`), lo=H.map(h=>`${x(h.game)},${y(h.lower)}`).reverse();
+  s+=`<polygon points="${up.concat(lo).join(' ')}" fill="var(--series-1)" opacity=".14"/>`;
+  s+=`<polyline points="${H.map(h=>`${x(h.game)},${y(h.estimate)}`).join(' ')}" fill="none" stroke="var(--series-1)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+  const L=H[H.length-1];
+  s+=`<circle cx="${x(L.game)}" cy="${y(L.estimate)}" r="4.5" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>`;
+  s+=`<text x="${x(L.game)+8}" y="${y(L.estimate)-8}" font-size="12" font-weight="650" fill="var(--text-primary)">${L.estimate}</text>`;
+  s+=`<line id="xh" y1="${m.t}" y2="${m.t+ih}" stroke="var(--text-muted)" visibility="hidden"/><circle id="xd" r="4.5" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2" visibility="hidden"/>`;
+  s+=`<rect id="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg><div class="tip" id="tip"></div>`;
+  el.innerHTML=s;
+  const svg=el.querySelector('svg'), tip=$('tip'), xh=svg.querySelector('#xh'), xd=svg.querySelector('#xd');
+  const move=ev=>{
+    const r=svg.getBoundingClientRect(), gx=(ev.clientX-r.left)/r.width*W, g=(gx-m.l)/iw*D.total;
+    let h=H[0]; for(const c of H) if(Math.abs(c.game-g)<Math.abs(h.game-g)) h=c;
+    xh.setAttribute('x1',x(h.game));xh.setAttribute('x2',x(h.game));xh.setAttribute('visibility','visible');
+    xd.setAttribute('cx',x(h.game));xd.setAttribute('cy',y(h.estimate));xd.setAttribute('visibility','visible');
+    tip.innerHTML=`<b>Game ${h.game}</b> · ${OPP[h.opponent]} as ${h.color} · ${h.result}<br>Elo <b>${h.estimate}</b> (${h.lower}–${h.upper}, ${h.window} games)`;
+    tip.style.display='block';
+    const px=x(h.game)/W*r.width; tip.style.left=Math.min(r.width-tip.offsetWidth-4,Math.max(0,px+10))+'px'; tip.style.top=(y(h.estimate)/Ht*r.height-48)+'px';
+  };
+  const hit=svg.querySelector('#hit');
+  hit.addEventListener('pointermove',move);
+  hit.addEventListener('pointerleave',()=>{tip.style.display='none';xh.setAttribute('visibility','hidden');xd.setAttribute('visibility','hidden')});
+  hit.addEventListener('click',ev=>{const r=svg.getBoundingClientRect(),g=((ev.clientX-r.left)/r.width*W-m.l)/iw*D.total;let h=H[0];for(const c of H)if(Math.abs(c.game-g)<Math.abs(h.game-g))h=c;pick(String(h.game))});
+}
+
+function resTxt(g){if(!g.end)return 'in progress';const s=g.end.score;return (s===1?'Win':s===0.5?'Draw':'Loss')}
+function renderGames(){
+  const rows=D.games.filter(g=>g.kind==='rated').sort((a,b)=>b.id-a.id);
+  if(!rows.length){$('games').innerHTML='<div class="empty">No games yet.</div>';return}
+  $('games').innerHTML='<table><thead><tr><th>#</th><th>Opponent</th><th>Colour</th><th>Result</th><th>How</th><th>Plies</th><th>Illegal</th></tr></thead><tbody>'+
+    rows.map(g=>`<tr class="pick" data-g="${g.id}"><td>${g.id}</td><td>${OPP[g.opponent]}</td><td>${g.color}</td><td><span class="res">${resTxt(g)}</span></td><td>${g.end?esc(g.end.reason.replace(/_/g,' ')):''}</td><td>${g.plies}</td><td>${g.illegal||''}</td></tr>`).join('')+'</tbody></table>';
+  $('games').querySelectorAll('tr.pick').forEach(tr=>tr.onclick=()=>pick(tr.dataset.g));
+}
+function renderTeams(){
+  $('spent').textContent=D.spent?`$${D.spent.toFixed(2)} spent so far`:'';
+  if(!D.teams.length){$('teams').innerHTML='<div class="empty">No team has been launched yet.</div>';return}
+  $('teams').innerHTML='<table><thead><tr><th>Iter</th><th>Roles</th><th>Cost</th><th>Elo after</th></tr></thead><tbody>'+
+    D.teams.slice().reverse().map(t=>`<tr><td>${t.iter}</td><td style="white-space:normal">${t.roles.map(r=>`<span class="tag">${esc(r)}</span>`).join('')}</td><td>${t.cost!=null?'$'+t.cost.toFixed(2):''}</td><td>${t.score&&t.score!=='N/A'?esc(t.score):''}</td></tr>`).join('')+'</tbody></table>';
+}
+function renderSelect(){
+  const cur=$('gsel').value, gs=D.games.slice().sort((a,b)=>(a.kind===b.kind?parseInt(b.id.replace('p',''))-parseInt(a.id.replace('p','')):a.kind==='rated'?-1:1));
+  $('gsel').innerHTML=gs.map(g=>`<option value="${g.id}">${g.kind==='rated'?'Game '+g.id:'Practice '+g.id.slice(1)} · ${OPP[g.opponent]}${g.end?'':' · live'}</option>`).join('');
+  if(sel) $('gsel').value=sel; else if(cur) $('gsel').value=cur;
+}
+function liveId(){const r=D.games.filter(g=>g.kind==='rated');const a=r.find(g=>!g.end);if(a)return a.id;const any=D.games.find(g=>!g.end);if(any)return any.id;return r.length?String(Math.max(...r.map(g=>+g.id))):null}
+function pick(id){live=false;sel=id;ply=null;$('gsel').value=id;loadGame()}
+async function loadGame(){
+  const id=live?liveId():sel; if(!id){$('board').innerHTML='';$('gsub').textContent='No game yet.';return}
+  sel=id; try{const r=await fetch(`game/${id}.json`,{cache:'no-store'}); if(!r.ok)return; G=await r.json()}catch(e){return}
+  if(live||ply===null||ply>G.fens.length-1) ply=G.fens.length-1;
+  renderBoard();
+}
+function renderBoard(){
+  if(!G)return; const fen=G.fens[ply], flip=G.color==='black', mv=ply>0?G.ucis[ply-1]:null, marks=mv?[mv.slice(0,2),mv.slice(2,4)]:[];
+  const rows=fen.split('/').map(r=>{const o=[];for(const c of r){if(/\d/.test(c))for(let i=0;i<+c;i++)o.push('');else o.push(c)}return o});
+  let h='';
+  for(let i=0;i<64;i++){const rr=flip?7-Math.floor(i/8):Math.floor(i/8), cc=flip?7-i%8:i%8, p=rows[rr][cc], name='abcdefgh'[cc]+(8-rr);
+    h+=`<div class="sq ${(rr+cc)%2?'d':'l'}${marks.includes(name)?' m':''}">${p?`<span class="${p===p.toUpperCase()?'pw':'pb'}">${GLYPH[p.toLowerCase()]}</span>`:''}</div>`}
+  $('board').innerHTML=h;
+  $('gtitle').textContent=(G.kind==='rated'?'Game '+G.id:'Practice '+G.id.slice(1));
+  if($('gsel').value!==G.id) $('gsel').value=G.id;
+  $('gsub').textContent=`vs ${OPP[G.opponent]} · team plays ${G.color}`+(G.end?` · ${G.end.result} by ${G.end.reason.replace(/_/g,' ')}`:' · in progress');
+  $('ply').textContent=`move ${Math.ceil(ply/2)} · ply ${ply} of ${G.fens.length-1}`;
+  $('moves').innerHTML=G.sans.map((s,i)=>(i%2?'':`${i/2+1}. `)+(i===ply-1?`<b>${esc(s)}</b>`:esc(s))).join(' ')||'no moves yet';
+  $('first').disabled=$('prev').disabled=ply<=0; $('next').disabled=$('last').disabled=ply>=G.fens.length-1;
+  $('follow').style.borderColor=live?'var(--series-1)':'';
+}
+$('first').onclick=()=>{live=false;ply=0;renderBoard()}; $('prev').onclick=()=>{live=false;ply=Math.max(0,ply-1);renderBoard()};
+$('next').onclick=()=>{ply=Math.min(G.fens.length-1,ply+1);renderBoard()}; $('last').onclick=()=>{ply=G.fens.length-1;renderBoard()};
+$('gsel').onchange=e=>pick(e.target.value); $('follow').onclick=()=>{live=true;sel=null;loadGame()};
+
+async function poll(){
+  try{
+    const r=await fetch('data.json',{cache:'no-store'}); D=await r.json();
+    renderTiles();renderChart();renderGames();renderTeams();renderSelect();
+    $('runs').innerHTML=D.runs.length>1?'<a href="../../">All runs</a>'+D.runs.map(n=>`<a href="../${encodeURIComponent(n)}/" class="${n===D.run?'on':''}">${esc(n)}</a>`).join(''):'';
+    document.title='EAT · Chess · '+D.run;
+    $('dot').classList.add('on'); $('upd').textContent=D.updated?'last move recorded '+D.updated.replace('T',' ').replace('Z',' UTC'):'waiting for the first game';
+    if(live||!G||(G&&!G.end)) await loadGame();
+  }catch(e){$('dot').classList.remove('on');$('upd').textContent='connection lost — retrying'}
+}
+poll(); setInterval(poll,3000);
+</script>
+</body>
+</html>

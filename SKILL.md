@@ -13,7 +13,8 @@ it runs from inside the task's git repository and needs three files there:
 |---|---|
 | `eat/task.md` | the rules the supervisor puts into every agent's prompt (task, goal, eval, files, resources, limits) |
 | `eat/eval.sh` | the official eval of the committed state; prints a line `SCORE: <x>` (higher is better, 0 on any correctness failure) |
-| `eat/env.sh` | optional: sourced before anything runs (venv, paths, `EAT_GPUS`) |
+| `eat/env.sh` | optional: sourced before anything runs (venv, paths, `EAT_GPUS`, `TEAM_WALL_MIN`: a team's wall-clock limit in minutes) |
+| `eat/pre_team.sh`, `eat/snapshot.sh`, `eat/done.sh` | optional: run before each team (e.g. start a game server), after it (its output is kept with the iteration), and after each iteration (exit 0 ends the run: the task is finished) |
 
 A `CLAUDE.md` in the repository is read by every agent. The run's record goes to `eat/log/` (team configs, every
 agent's prompt and output, the official eval of each iteration, `BUDGET.md`), and each iteration ends with a commit
@@ -21,7 +22,8 @@ agent's prompt and output, the official eval of each iteration, `BUDGET.md`), an
 
 ## 1. Check the machine
 
-- Linux with `claude`, `git`, `tmux`, `python3` (3.11+); for Gym tasks also `uv` and `hf` (`pip install -U huggingface_hub`).
+- Linux or macOS with `claude`, `git`, `tmux`, `python3` (3.11+); for Gym tasks also `uv` and `hf` (`pip install -U huggingface_hub`).
+  On macOS the harness brings its own `timeout` (`ops/macbin`).
 - Claude auth for non-interactive runs: the harness unsets `ANTHROPIC_API_KEY`, so `claude` must be logged in, or
   `CLAUDE_CODE_OAUTH_TOKEN` set (`claude setup-token`). Check with `claude --print "reply ok"`.
 - Agents run with `--dangerously-skip-permissions`. Tell the user and get their OK for this machine (or use

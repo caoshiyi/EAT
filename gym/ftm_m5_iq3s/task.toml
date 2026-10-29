@@ -1,0 +1,27 @@
+schema_version = "1.4"
+source = "https://huggingface.co/datasets/eva98/eat-gym/tree/main/ftm_m5_iq3s"
+artifacts = ["/app/tasks/ftm_m5_iq3s"]
+
+[task]
+name = "eat-gym/ftm_m5_iq3s"
+version = "1.0"
+description = "Serve Qwen3.8-Flash-Next from ISTA-DASLab's GSQ-RCO IQ3_S GGUF (84 GB, 13 GGML types) on an Apple M5 Pro 48 GB"
+authors = [{ name = "the EAT authors" }]
+keywords = ["llm-serving", "apple-silicon", "metal", "mlx", "moe", "expert-offload", "gguf"]
+
+[metadata]
+category = "llm-serving"
+hardware = "Apple M5 Pro, 48 GB unified memory, macOS 26 (bare metal)"
+baseline = "the UD-IQ4_XS engine's speed on this machine (score 1.0 = as fast as the 4-bit engine)"
+score = "sqrt(D * P): decode and prefill speedups over the baseline, 0 on any correctness or memory gate (bash eat/eval.sh)"
+readable_sources = "the engine, llama.cpp at fae9ac5, the public web"
+eat_result = "1.07x vs the 4-bit engine, 1.75x vs the starting engine (12 iterations); m5/iq3s afe5e6c"
+eat_eval_cmd = "bash eat/eval.sh"
+difficulty = "hard"
+
+[agent]
+user = "agent"
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "same"

@@ -86,11 +86,60 @@ the leaderboard (55.3, Oct 26, 2026)**. Same scene, left: Pi_05; right: the team
 </tr>
 </table>
 
-### Coming soon: Qwen3.8-Flash-Next serving on an Apple M5 Pro
+### Qwen3.8-Flash-Next served from a laptop
 
-A frontier MoE model served from a laptop, with the expert-offload engine written by an EAT team. On an M4 Pro with 48 GB,
-the team's engine is 3.32× faster than the naive offload engine on recorded coding-agent sessions (batch-1 decode
-13.4 → 30.3 tokens/s). The M5 Pro serving demo is next.
+One MacBook Pro (M5 Pro, 48 GB) serves Qwen3.8-Flash-Next from an 84-94 GB GGUF with its full 262K context: the file
+does not fit in memory, so the routed experts stream from the SSD within a 37 GiB budget. The teams evolved
+[FreeToken-metal](https://github.com/caoshiyi/FreeToken-metal) under strict rules: the GGUF is served exactly as
+quantized, every kept change is checked position by position against llama.cpp on recorded coding-agent sessions and
+gives identical outputs whatever the expert cache size, and speculative decoding is allowed only if lossless. They put
+the GGUF matmuls on the M5's matrix units, gave each expert one SSD read, lent idle KV memory to the expert cache and
+chained two MTP drafts: **1.61× on Unsloth's UD-IQ4_XS, then 1.75× on ISTA-DASLab's 3.5-bit GSQ-RCO IQ3_S** (five new
+quantization formats), over the starting engine. Against Strata on the same machine and file, with memory matched and
+its MTP on, FreeToken-metal reads a 61K-token codebase 2.4-3.2× faster and answers in about half the time.
+
+<p align="center"><img alt="Per-iteration speed: decode, prefill at 4K / 32K / 250K, score" src="assets/m5_speed_iterations.png" width="100%"></p>
+<table>
+<tr>
+<td width="50%"><img alt="61K-token codebase question, 4-bit: FreeToken-metal vs Strata" src="assets/m5_longctx_iq4.gif" width="100%"></td>
+<td width="50%"><img alt="61K-token codebase question, 3-bit: FreeToken-metal vs Strata" src="assets/m5_longctx_iq3s.gif" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><sub>4-bit (FreeToken-metal UD-IQ4_XS, Strata UD-Q4_K_XL): prompt 818 vs 256 tokens/s, done in 172 s vs 367 s.
+<a href="assets/m5_longctx_iq4.mp4">Full video</a></sub></td>
+<td align="center"><sub>3-bit (both GSQ-RCO IQ3_S): prompt 891 vs 370 tokens/s, done in 134 s vs 252 s.
+<a href="assets/m5_longctx_iq3s.mp4">Full video</a></sub></td>
+</tr>
+</table>
+<p align="center"><sub>A 61K-token question about FreeToken-metal's own source, greedy, the same prompt for both engines.</sub></p>
+
+### Four agents defeat the Ender Dragon
+
+A shared Minecraft 1.20.4 survival world (Easy, no cheats, no server commands) with four fixed players, each acting
+only through short Mineflayer programs an agent writes: no pixels, no keyboard. The world persists from team to team,
+and the only other thing a team inherits is a notes folder it keeps itself. The score is read from the world's own
+advancements: 12 milestones from bare hands to the dragon. In 38 iterations the teams went from bare hands through
+iron, the Nether, blaze rods, eyes of ender and the stronghold to the End, and **defeated the Ender Dragon at 85.6
+hours**, with no human play.
+
+<p align="center"><img alt="Milestones over time" src="assets/minecraft_dragon_milestones.png" width="80%"></p>
+<p align="center"><img alt="The four hits that ended the dragon fight" src="assets/minecraft_dragon.gif" width="100%"></p>
+<p align="center"><sub>The four hits that ended the fight, re-enacted from the arena's records in the vanilla client.
+<a href="assets/minecraft_dragon.mp4">Full video</a></sub></p>
+
+### Learning chess over 200 games
+
+A public continuous-learning benchmark found that a single agent playing 200 games against Stockfish does not improve.
+The team plays one stream of 200 rated games against Stockfish at levels it is never shown, Elo 1500 to 2400 in
+shuffled rotations; with no engine, opening database or web, every move is the agents' own, and unrated practice games
+are free. Once the team beat most of that range, the opponents moved up to 2000 to 2900 from game 62 on. Claude Opus
+5.5 as a single agent rose to **2090 after 200 games**; as an EAT team, keeping and revising a shared record of its
+games, it reached **2460 after 75**.
+
+<p align="center"><img alt="Elo over games: EAT team vs single agent" src="assets/chess_elo.png" width="80%"></p>
+<p align="center"><img alt="Same opponent (Stockfish 2500), three players" src="assets/chess_vs2500.gif" width="100%"></p>
+<p align="center"><sub>Stockfish at Elo 2500 against a fresh agent, the single agent after 200 games and the EAT team.
+<a href="assets/chess_vs2500.mp4">Full video</a></sub></p>
 
 ## Everything is released
 
