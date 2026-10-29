@@ -1,0 +1,16 @@
+{
+ "decode": {
+  "decode_tok_s": 40.16470450259758
+ },
+ "prefill_4k": {
+  "prompt_tok_s": 989.3620290355377
+ },
+ "prefill_32k": {
+  "prompt_tok_s": 1053.133541420051
+ },
+ "long_256k": {
+  "prompt_tok_s": 1015.214072323937,
+  "decode_tok_s": 38.71778145803969
+ },
+ "note": "reference speed: the UD-IQ4_XS engine m5/iq4 95c2d59 on this M5 Pro (full eval 20261026-122258, all gates passed); score > 1 = faster than that configuration"
+}

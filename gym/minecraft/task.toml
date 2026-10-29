@@ -1,0 +1,27 @@
+schema_version = "1.4"
+source = "https://huggingface.co/datasets/eva98/eat-gym/tree/main/minecraft"
+artifacts = ["/app/tasks/minecraft"]
+
+[task]
+name = "eat-gym/minecraft"
+version = "1.0"
+description = "Defeat the Ender Dragon in a shared Minecraft 1.20.4 survival world with four Mineflayer players"
+authors = [{ name = "the EAT authors" }]
+keywords = ["minecraft", "game", "long-horizon", "continual-learning"]
+
+[metadata]
+category = "game"
+hardware = "any machine with Java 21, Node.js 20+ and uv (CPU)"
+baseline = "bare hands at the world spawn (0 of 12 milestones)"
+score = "milestones (0-12) reached in the world, read from its advancements; dragon = 1 at the end"
+readable_sources = "none: no web access; the task's own records and the team's notes"
+eat_result = "dragon defeated at 85.6 h (38 iterations)"
+eat_eval_cmd = "bash eat/eval.sh"
+difficulty = "hard"
+
+[agent]
+user = "agent"
+
+[verifier]
+timeout_sec = 3600.0
+environment_mode = "same"

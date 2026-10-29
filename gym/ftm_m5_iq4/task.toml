@@ -1,0 +1,27 @@
+schema_version = "1.4"
+source = "https://huggingface.co/datasets/eva98/eat-gym/tree/main/ftm_m5_iq4"
+artifacts = ["/app/tasks/ftm_m5_iq4"]
+
+[task]
+name = "eat-gym/ftm_m5_iq4"
+version = "1.0"
+description = "Serve Qwen3.8-Flash-Next from Unsloth's UD-IQ4_XS GGUF (94 GB) on an Apple M5 Pro 48 GB, experts streamed from the SSD"
+authors = [{ name = "the EAT authors" }]
+keywords = ["llm-serving", "apple-silicon", "metal", "mlx", "moe", "expert-offload", "gguf"]
+
+[metadata]
+category = "llm-serving"
+hardware = "Apple M5 Pro, 48 GB unified memory, macOS 26 (bare metal)"
+baseline = "the starting FreeToken-metal GGUF engine on this file and machine (score 1.0)"
+score = "sqrt(D * P): decode and prefill speedups over the baseline, 0 on any correctness or memory gate (bash eat/eval.sh)"
+readable_sources = "the engine, llama.cpp at fae9ac5, the public web"
+eat_result = "1.61x (8 iterations); m5/iq4 95c2d59"
+eat_eval_cmd = "bash eat/eval.sh"
+difficulty = "hard"
+
+[agent]
+user = "agent"
+
+[verifier]
+timeout_sec = 7200.0
+environment_mode = "same"
