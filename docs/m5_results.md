@@ -137,30 +137,47 @@ IQ3_S, decode and ~4K / ~32K prompt, tokens/s, with one mechanism off at a time.
 **Decode:**
 - Without MTP, FreeToken-metal decodes 32% faster than Strata in the speed suite (35.9 vs 27.2).
 - Strata's MTP adds more (+45% against +26-34%), so with MTP on both sides the gap narrows.
-- The second draft, KV lending, expert records, split reads and router hints are within noise on IQ3_S. On the larger UD-IQ4_XS experts, an earlier ablation measured 3-8% each for the second draft and KV lending.
+- In the quick suite above, the second draft, KV lending, expert records, split reads and router hints are within noise. The decode probe below, with five prompts per point, does resolve KV lending.
 
 ## Decode, split into compute and SSD reads
 
 IQ3_S, client-side decode tokens/s.
-- **Normal:** a fresh ~3K-token prompt, then 256 tokens; experts stream from the SSD as needed.
-- **All in cache:** the same ~3K-token prompt sent six times, 128 tokens each, median of the last five. From the second
-  time on, the same tokens use the same experts, which are already in each engine's cache, so this is compute only.
+- **Normal:** five fresh ~3K-token prompts, 256 tokens each, median. Experts stream from the SSD as needed.
+- **All in cache:** one ~3K-token prompt sent six times, 128 tokens each, median of the last five. From the second time
+  on, the same tokens use the same experts, which are already in each engine's cache, so this is compute only.
 
-| | normal | all in cache | lost to SSD reads | tokens per verify step |
-|---|---|---|---|---|
-| FreeToken-metal, MTP on | 48.5 | 54.0 | 10% | 2.3 |
-| Strata, MTP on | 39.1 | 50.2 | 22% | 2.4 |
-| FreeToken-metal, MTP off | 33.7 | 37.1 | 9% | 1 |
-| Strata, MTP off | 24.5 | 32.1 | 24% | 1 |
+Two rounds each, alternating engines:
 
-**Reading:**
-- **Compute only:** with MTP off, a FreeToken-metal token is 16% faster. With MTP on the gap is 8%, because Strata's
-  MTP accepts slightly more drafts.
-- **SSD reads:** Strata loses 22-24% of its decode speed to reads, FreeToken-metal 9-10%. Strata's expert cache is the
-  larger of the two, so cache size is not the cause. None of Strata's settings for reads changed this: arena size,
-  read-ahead depth, split reads, I/O threads.
-- **4-bit:** with every expert in cache, Strata decodes UD-Q4_K_XL at 28-29 tokens/s, against 50.8 for FreeToken-metal on
-  UD-IQ4_XS. The 4-bit gap is in compute on that file.
+| | normal | all in cache | lost to SSD reads |
+|---|---|---|---|
+| FreeToken-metal, MTP on | 50.2-52.1 | 53.1-53.9 | 2-7% |
+| Strata, MTP on | 35.8-39.4 | 48.6-50.8 | 22-26% |
+| FreeToken-metal, MTP off | 34.9 | 37.0 | 6% |
+| Strata, MTP off | 25.4 | 32.2 | 21% |
+| Strata, MTP on, 1024-token prompt chunks | 35.9 | 50.1 | 28% |
+
+- **Compute:** with every expert in cache, FreeToken-metal is 5% faster with MTP and 15% faster without it.
+- **SSD reads:** most of the decode gap is here. Strata loses 21-28% of its speed to reads, FreeToken-metal 2-7%.
+  - Strata holds more experts than FreeToken-metal: 13,660 slots against 13,258.
+  - None of Strata's settings for reads changed its loss: arena size, read-ahead depth, split reads, I/O threads,
+    prompt chunk size.
+- **4-bit:** with every expert in cache, Strata decodes UD-Q4_K_XL at 28-29 tokens/s, against 50.8 for FreeToken-metal
+  on UD-IQ4_XS. The 4-bit gap is in compute on that file.
+
+FreeToken-metal with its read-side mechanisms off (same probe, normal decode, against a control of 50.2-52.1):
+
+| off | normal | expert slots |
+|---|---|---|
+| host victim cache | 51.8 | 13,258 |
+| LRFU eviction (plain LRU instead) | 50.2 | 13,258 |
+| router look-ahead hints | 49.9 | 13,258 |
+| contiguous records, split reads, deferred stores | 51.2 | 13,258 |
+| KV lent to the expert cache | 41.1 | 9,527 |
+| all of the above | 42.4 | 9,527 |
+
+- **KV lending** is the one that matters: without it, 3,700 fewer experts fit and decode drops by a fifth.
+- **The other mechanisms** are within noise on IQ3_S.
+- **Everything off:** with 9,527 slots, FreeToken-metal still decodes faster than Strata does with 13,660.
 
 ## Long-prompt demo
 
