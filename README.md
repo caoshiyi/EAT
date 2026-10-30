@@ -88,39 +88,48 @@ the leaderboard (55.3, Oct 26, 2026)**. Same scene, left: Pi_05; right: the team
 
 ### Qwen3.8-Flash-Next served from a laptop
 
-One MacBook Pro (M5 Pro, 48 GB) serves Qwen3.8-Flash-Next from an 84-94 GB GGUF with its full 262K context: the file
-does not fit in memory, so the routed experts stream from the SSD within a 37 GiB budget. The teams evolved
-[FreeToken-metal](https://github.com/caoshiyi/FreeToken-metal) under strict rules: the GGUF is served exactly as
-quantized, every kept change is checked position by position against llama.cpp on recorded coding-agent sessions and
-gives identical outputs whatever the expert cache size, and speculative decoding is allowed only if lossless. They put
-the GGUF matmuls on the M5's matrix units, gave each expert one SSD read, lent idle KV memory to the expert cache and
-chained two MTP drafts: **1.61× on Unsloth's UD-IQ4_XS, then 1.75× on ISTA-DASLab's 3.5-bit GSQ-RCO IQ3_S** (five new
-quantization formats), over the starting engine. Against Strata on the same machine and file, with memory matched and
-its MTP on, FreeToken-metal reads a 61K-token codebase 2.4-3.2× faster and answers in about half the time.
+One MacBook Pro (M5 Pro, 48 GB) serves Qwen3.8-Flash-Next from an 84-94 GB GGUF with its full 262K context. The file does
+not fit in memory, so the routed experts stream from the SSD.
 
-| tokens/s, one M5 Pro 48 GB | decode | prefill 4K / 32K / 250K | decode after 250K |
+The teams evolved [FreeToken-metal](https://github.com/caoshiyi/FreeToken-metal) under strict rules:
+- the GGUF is served exactly as quantized;
+- every kept change is checked position by position against llama.cpp on recorded coding-agent sessions;
+- outputs are identical whatever the expert cache size;
+- speculative decoding is allowed only if it is lossless.
+
+They put the GGUF matmuls on the M5's matrix units, moved to longer prompt chunks and chained two MTP drafts. Over the
+starting engine, that gives **1.62× on Unsloth's UD-IQ4_XS, then 1.73× on ISTA-DASLab's 3.5-bit GSQ-RCO IQ3_S** (which
+needed five new quantization formats).
+
+We also compared against Strata on the same machine. Strata ran with its MTP on, a larger expert cache than ours and
+longer prompt chunks; its own defaults on this Mac are slower. On the same IQ3_S file, FreeToken-metal decodes 1.25×
+faster and reads prompts 1.4× faster.
+
+| tokens/s, one M5 Pro 48 GB | decode | prompt 4K / 32K / 250K | decode after 250K |
 |---|---|---|---|
 | FreeToken-metal at the start, UD-IQ4_XS | 34.3 | 451 / 456 / 425 | 31.4 |
-| FreeToken-metal, UD-IQ4_XS | 42.3 | 988 / 1022 / 953 | 37.8 |
-| Strata, UD-Q4_K_XL (MTP on, 37 GiB) | 29.8 | 238 / 249 / 226 | 24.6 |
-| FreeToken-metal, GSQ-RCO IQ3_S | 45.9 | 985 / 984 / 937 | 43.9 |
-| Strata, GSQ-RCO IQ3_S (MTP on, 37 GiB) | 36.7 | 347 / 338 / 310 | 33.9 |
+| FreeToken-metal, UD-IQ4_XS | 42.1 | 974 / 1034 / 1005 | 38.7 |
+| Strata, UD-Q4_K_XL | 23.7 | 637 / 672 / 613 | 26.4 |
+| FreeToken-metal, GSQ-RCO IQ3_S | 47.5 | 1027 / 1010 / 946 | 46.4 |
+| Strata, GSQ-RCO IQ3_S | 38.0 | 718 / 742 / 660 | 36.1 |
 
-<p align="center"><sub>The same speed suite on the same day, greedy, batch 1, peak wired memory 37-40 GiB for both engines. Strata
-has no UD-IQ4_XS build on the Mac.</sub></p>
+<p align="center"><sub>Medians of three runs (four for Strata UD-Q4_K_XL, whose decode varied from 13 to 30), greedy, batch 1.
+Strata: MTP on, a 29-30 GB expert arena (FreeToken-metal's expert cache is 25 GiB), 4096-token prompt chunks. Strata has
+no UD-IQ4_XS build for the Mac, so its 4-bit row uses a different file. Details: <a href="docs/m5_results.md">docs/m5_results.md</a>.</sub></p>
 <table>
 <tr>
 <td width="50%"><img alt="61K-token codebase question, 4-bit: FreeToken-metal vs Strata" src="assets/m5_longctx_iq4.gif" width="100%"></td>
-<td width="50%"><img alt="61K-token codebase question, 3-bit: FreeToken-metal vs Strata" src="assets/m5_longctx_iq3s.gif" width="100%"></td>
+<td width="50%"><img alt="61K-token codebase question, 3.5-bit: FreeToken-metal vs Strata" src="assets/m5_longctx_iq3s.gif" width="100%"></td>
 </tr>
 <tr>
-<td align="center"><sub>4-bit (FreeToken-metal UD-IQ4_XS, Strata UD-Q4_K_XL): prompt 818 vs 256 tokens/s, done in 172 s vs 367 s.
+<td align="center"><sub>4-bit (FreeToken-metal UD-IQ4_XS, Strata UD-Q4_K_XL): prompt 927 vs 709 tokens/s, decode 32.6 vs 21.9 tokens/s.
 <a href="assets/m5_longctx_iq4.mp4">Full video</a></sub></td>
-<td align="center"><sub>3-bit (both GSQ-RCO IQ3_S): prompt 891 vs 370 tokens/s, done in 134 s vs 252 s.
+<td align="center"><sub>3.5-bit (both GSQ-RCO IQ3_S): prompt 925 vs 750 tokens/s, decode 45.1 vs 39.9 tokens/s.
 <a href="assets/m5_longctx_iq3s.mp4">Full video</a></sub></td>
 </tr>
 </table>
-<p align="center"><sub>A 61K-token question about FreeToken-metal's own source, greedy, the same prompt for both engines.</sub></p>
+<p align="center"><sub>One 61K-token prompt, nine of FreeToken-metal's source files followed by four questions about them, greedy,
+the same prompt for both engines, played back at 2× speed.</sub></p>
 
 ### Four agents defeat the Ender Dragon
 
@@ -138,12 +147,12 @@ hours**, with no human play.
 
 ### Learning chess over 200 games
 
-A public continuous-learning benchmark found that a single agent playing 200 games against Stockfish does not improve.
-The team plays one stream of 200 rated games against Stockfish at levels it is never shown, Elo 1500 to 2400 in
-shuffled rotations; with no engine, opening database or web, every move is the agents' own, and unrated practice games
-are free. Once the team beat most of that range, the opponents moved up to 2000 to 2900 from game 62 on. Claude Opus
-5.5 as a single agent rose to **2090 after 200 games**; as an EAT team, keeping and revising a shared record of its
-games, it reached **2460 after 75**.
+A public continuous-learning benchmark reports that a single agent playing 200 games against Stockfish does not
+improve. Here the team plays one stream of 200 rated games against Stockfish at levels it is never shown, Elo 1500 to
+2400 in shuffled rotations; with no engine, opening database or web, every move is the agents' own, and unrated
+practice games are free. Once the team was beating most of that range, the opponents moved up to 2000 to 2900, from
+around game 60. Rated over its last 40 games, Claude Opus 5.5 as a single agent reached **2090 after 200 games**; as an
+EAT team, keeping and revising a shared record of its games, it reached **2460 after 75**.
 
 <p align="center"><img alt="Elo over games: EAT team vs single agent" src="assets/chess_elo.png" width="80%"></p>
 <p align="center"><img alt="Same opponent (Stockfish 2500), three players" src="assets/chess_vs2500.gif" width="100%"></p>
