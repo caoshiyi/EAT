@@ -164,6 +164,20 @@ Two rounds each, alternating engines:
 - **4-bit:** with every expert in cache, Strata decodes UD-Q4_K_XL at 28-29 tokens/s, against 50.8 for FreeToken-metal
   on UD-IQ4_XS. The 4-bit gap is in compute on that file.
 
+Disk reads per decoded token (system-wide `iostat` on the SSD, cold prompts, median of five, two rounds):
+
+| | read per token | normal decode | all in cache | stall per token |
+|---|---|---|---|---|
+| FreeToken-metal | 26 MB | 49.1-52.5 | 52.8-54.2 | ~0.6 ms |
+| FreeToken-metal, no KV lending | 54 MB | 44.4 | 51.2 | ~3.0 ms |
+| Strata | 43 MB | 34.0-38.9 | 40.2-48.1 | ~4.9 ms |
+
+Stall per token is 1 / normal - 1 / all in cache, using the round where both were measured together.
+
+- **Strata misses more.** It reads 1.6× as many bytes per token as FreeToken-metal, although it holds more experts.
+- **Each Strata read costs more.** Without KV lending, FreeToken-metal reads more per token than Strata (54 MB) and
+  still stalls less (3.0 ms against 4.9 ms), because its reads overlap the GPU's work better.
+
 FreeToken-metal with its read-side mechanisms off (same probe, normal decode, against a control of 50.2-52.1):
 
 | off | normal | expert slots |
