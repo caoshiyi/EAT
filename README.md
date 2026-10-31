@@ -97,6 +97,13 @@ starting from a naive port. On an Apple M4 Pro with 48 GB:
 
 <p align="center"><img alt="Qwen3.8-Flash-Next on an M4 Pro: EAT's engine vs Strata and the naive engine, tokens/s" src="assets/eat_mac_serving.png" width="100%"></p>
 
+The same model driving Claude Code locally: each engine serves Claude Code v2.1.296 on the same Mac and GGUF (MTP on
+for both), with the same bug to fix in a small project. Both find the same one-line fix; EAT's engine finishes in
+**2 min 46 s**, Strata in **6 min 39 s** (Claude Code's ~18K-token system prompt alone takes Strata about 3 minutes).
+
+<p align="center"><img alt="Claude Code on a local Qwen3.8-Flash-Next: EAT's engine vs Strata" src="assets/mac_claude_code_race.gif" width="100%"></p>
+<p align="center"><sub>Each engine recorded alone, replayed side by side at 6× speed; the clock shows real time. <a href="assets/mac_claude_code_race.mp4">Full video (3×)</a></sub></p>
+
 **Coming soon:** serving on an Apple M5 Pro.
 
 ## Everything is released
