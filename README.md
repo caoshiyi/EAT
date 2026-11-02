@@ -92,7 +92,8 @@ The model does not fit in the Mac's memory, so its experts stream from the SSD. 
 starting from a naive port.
 
 - **Apple M5 Pro, 48 GB, GGUF UD-IQ4_XS**, against Strata on the same file at the same memory (peak 37.0 vs
-  37.2 GiB, both with MTP speculation, 262K context): prefill **~3.3× faster** at every prompt length from 4K to 250K
+  37.2 GiB, both with MTP speculation, 262K context), **while keeping the KV cache in bf16 where Strata quantizes it
+  to int8**: prefill **~3.3× faster** at every prompt length from 4K to 250K
   tokens (e.g. **910 vs 274 tokens/s** at 250K), decode **1.22× faster** after a short prompt (**43.7 vs 35.4 tokens/s**)
   and **1.21×** on AIME-25 requests; after a 250K-token prompt, decode is close (32.8 vs 30.1 tokens/s).
 - **Apple M4 Pro, 48 GB, MLX 4-bit** (the paper's task), against the naive engine: batch-1 decode
@@ -110,7 +111,7 @@ engine takes **233 s** on average and Strata **386 s** (**1.66×**).
 On the M4 Pro (GGUF, default memory settings, peak 40 GiB), the same engine decodes at 33.4 tokens/s after a short
 prompt and 26.1 tokens/s after a 250K-token prompt, and prefills at ~355 tokens/s from 4K to 250K tokens.
 
-## Everything is released
+## What is released
 
 - **Kernels**, packaged for inference engines (vLLM-style serving interface with paged state and prefix-cache
   checkpoints; MI350X 3.04× prefill and 1.69× decode, B200 2.57× on 26 serving workloads):
@@ -119,6 +120,9 @@ prompt and 26.1 tokens/s after a 250K-token prompt, and prefills at ~355 tokens/
 - **Every supervisor and agent transcript**, team config, note and per-iteration kernel or policy:
   [eva98/eat-evolution-traces](https://huggingface.co/datasets/eva98/eat-evolution-traces).
 - **The tasks**, at the state each run started from: [EAT Gym](https://huggingface.co/datasets/eva98/eat-gym).
+
+The Mac serving engine is not released yet: it is built on FreeToken-metal, which is not public; its code will
+follow once FreeToken-metal is open-sourced.
 
 ## How it works
 
