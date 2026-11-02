@@ -108,8 +108,9 @@ engine takes **233 s** on average and Strata **386 s** (**1.66×**).
 <p align="center"><img alt="Claude Code on a local Qwen3.8-Flash-Next, Apple M5 Pro: EAT's engine vs Strata" src="assets/mac_m5_claude_code.gif" width="100%"></p>
 <p align="center"><sub>First run of each engine (3 min 29 s vs 5 min 49 s), each recorded alone and replayed side by side at 20× speed; the clock shows recorded time. <a href="assets/mac_m5_claude_code.mp4">Video</a></sub></p>
 
-On the M4 Pro (GGUF, default memory settings, peak 40 GiB), the same engine decodes at 33.4 tokens/s after a short
-prompt and 26.1 tokens/s after a 250K-token prompt, and prefills at ~355 tokens/s from 4K to 250K tokens.
+On the M4 Pro (GGUF, with the expert victim cache pinned and the host tier locked in memory, peak 44 GiB), the same
+engine decodes at 34.7 tokens/s after a short prompt and 30.2 tokens/s after a 250K-token prompt, and prefills at
+350–375 tokens/s from 4K to 250K tokens.
 
 ## What is released
 
