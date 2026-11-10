@@ -112,11 +112,25 @@ On the M4 Pro (GGUF, with the expert victim cache pinned and the host tier locke
 engine decodes at 34.7 tokens/s after a short prompt and 30.2 tokens/s after a 250K-token prompt, and prefills at
 350–375 tokens/s from 4K to 250K tokens.
 
+### Pika H3 Flex video generation on 8 AMD GPUs
+
+[Pika H3 Flex](https://github.com/Pika-Labs/Pika-H3-Flex) generates 768p video with synchronized audio. Its released
+code runs on one GPU. An EAT team ported it to 8 AMD MI350X GPUs. By default the port keeps the original's precision
+and is checked step by step against it: a 5 / 10 / 15 s clip takes **3.3 / 8.7 / 17.0 s** instead of 46 / 113 / 210 s
+on one GPU (**13× faster**). Two opt-in lossy settings use lower precision in later sampling steps and reach
+**2.4 / 5.6 / 10.2 s (20×)**. The port is merged into Pika's
+[`contrib/amd-mi350x`](https://github.com/Pika-Labs/Pika-H3-Flex/tree/contrib/amd-mi350x) branch.
+
+<p align="center"><img alt="Pika H3 Flex, same prompt and seed: the original on 1 GPU vs EAT's default and two lossy settings on 8 MI350X GPUs" src="assets/pika_mi350x.gif" width="100%"></p>
+<p align="center"><sub>Same prompt and seed: the original on 1 GPU (top left) vs EAT's default and two lossy settings on 8× MI350X. <a href="assets/pika_mi350x.mp4">Full video</a> (5, 10 and 15 s clips, with audio)</sub></p>
+
 ## What is released
 
 - **Kernels**, packaged for inference engines (vLLM-style serving interface with paged state and prefix-cache
   checkpoints; MI350X 3.04× prefill and 1.69× decode, B200 2.57× on 26 serving workloads):
   [eat-kernels](https://github.com/caoshiyi/eat-kernels).
+- **Pika H3 Flex on 8× AMD MI350X**, merged into Pika's
+  [`contrib/amd-mi350x`](https://github.com/Pika-Labs/Pika-H3-Flex/tree/contrib/amd-mi350x) branch.
 - **The RoboDojo policy**, with its eval fleet setup: [eat-robodojo-policy](https://github.com/caoshiyi/eat-robodojo-policy).
 - **Every supervisor and agent transcript**, team config, note and per-iteration kernel or policy:
   [eva98/eat-evolution-traces](https://huggingface.co/datasets/eva98/eat-evolution-traces).
