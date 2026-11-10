@@ -121,8 +121,8 @@ on one GPU (**13× faster**). Two opt-in lossy settings use lower precision in l
 **2.4 / 5.6 / 10.2 s (20×)**. The port is merged into Pika's
 [`contrib/amd-mi350x`](https://github.com/Pika-Labs/Pika-H3-Flex/tree/contrib/amd-mi350x) branch.
 
-<p align="center"><img alt="Pika H3 Flex, same prompt and seed: the original on 1 GPU vs EAT's default and two lossy settings on 8 MI350X GPUs" src="assets/pika_mi350x.gif" width="100%"></p>
-<p align="center"><sub>Same prompt and seed: the original on 1 GPU (top left) vs EAT's default and two lossy settings on 8× MI350X. <a href="assets/pika_mi350x.mp4">Full video</a> (5, 10 and 15 s clips, with audio)</sub></p>
+<p align="center"><img alt="Pika H3 Flex, same prompt and seed: the original on 1 GPU vs EAT's default and two lossy settings on 8 MI350X GPUs" src="assets/pika_mi350x.jpg" width="100%"></p>
+<p align="center"><sub>A 15 s clip, same prompt and seed: the original on 1 GPU (top left) vs EAT's default and two lossy settings on 8× MI350X.</sub></p>
 
 ## What is released
 
